@@ -1,6 +1,7 @@
 import Map from "./Map";
 import Chrome from "./Chrome";
 import Ruler from "./Ruler";
+import ZoomControl from "./ZoomControl";
 
 export default function Page() {
   return (
@@ -8,6 +9,7 @@ export default function Page() {
       <Map />
       <Chrome />
       <Ruler />
+      <ZoomControl />
     </main>
   );
 }

@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
+import { applyAllLayers } from "./useLayers";
 
 export default function Map() {
   const ref = useRef<HTMLDivElement>(null);
@@ -89,7 +90,8 @@ export default function Map() {
             'Data © <a href="https://dh.gu.se/dare/" target="_blank">DARE</a> · <a href="https://pelagios.org" target="_blank">Pelagios</a>',
         }),
       );
-      map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "bottom-right");
+      // No default NavigationControl — its bottom-right slot is CSS-hidden (custom attribution
+      // lives there instead), and app/ZoomControl.tsx renders our own Google-style +/- buttons.
       (window as any).__map = map;
 
       const kick = () => map && map.resize();
@@ -317,6 +319,9 @@ export default function Map() {
             .addTo(map);
         });
         kick();
+
+        // Apply any persisted Layers-panel visibility (all groups default visible).
+        applyAllLayers();
       });
     })();
 

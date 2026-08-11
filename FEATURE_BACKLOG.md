@@ -23,8 +23,8 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
 - [ ] **Right-click context menu** — "What's here?" (lat/lng + nearest known Roman place), "Directions from here", "Directions to here", "Measure distance" (triggers ruler).
 - [ ] **Share button** — copies a URL that restores center/zoom + selected POI + active route.
 - [ ] **Coordinates URL sync** — `#12.4964,41.9028,5z` in the hash; back/forward buttons work.
-- [ ] **Layers menu** — the ▨ button at bottom-right opens a panel; toggles for Roads, Rivers, Provinces, Cities, POIs, Fortifications, Aqueducts, Legions.
-- [ ] **Zoom controls polish** — bigger +/– stacked buttons bottom-right, Google-style shadow. *(Observed 2026-08-11, Shift 2: currently there's no visible zoom control at all — `globals.css` has `.maplibregl-ctrl-bottom-right { display: none; }` which hides the default MapLibre `NavigationControl` added in Map.tsx. Left as-is since fixing it means either removing that CSS rule or building the custom control this item asks for, and this shift's Track B time went to units/ruler/search — a good next pick for Shift 3.)*
+- [x] **Layers menu** — the ▨ button at bottom-right opens a panel; toggles for Roads, Rivers, Provinces, Cities, POIs, Fortifications, Aqueducts, Legions. *(2026-08-11, Shift 3: `app/useLayers.ts` + panel in Chrome.tsx. Real toggles for the 5 layer groups that actually exist on the map today — Roads, Rivers & lakes, Province borders, Cities & towns, Landmarks (POIs) — persisted to `localStorage` under `roman-maps:layers`, `useSyncExternalStore`-backed like `useUnits`. Fortifications/Aqueducts/Legions aren't checkboxes yet because there's no dedicated layer/data for them — POIs already includes forts/aqueducts as point features, so add real toggles for those once the data + dedicated map layers exist.)*
+- [x] **Zoom controls polish** — bigger +/– stacked buttons bottom-right, Google-style shadow. *(2026-08-11, Shift 3: `app/ZoomControl.tsx`. Removed the dead/hidden default `NavigationControl` from Map.tsx and replaced it with a real custom control — stacked +/– buttons, card shadow matching the search box, disabled state at minZoom/maxZoom, calls `map.zoomTo` with a short animation.)*
 - [ ] **Keyboard shortcuts** — arrow keys pan, +/– zoom, `/` focuses search, `M` opens ruler, `L` opens layers.
 - [ ] **Mobile bottom sheet** — on mobile, place details come up as a bottom sheet, drag-to-expand like Google Maps mobile.
 - [ ] **Compass** — appears when map is rotated; click to reset north.
@@ -47,12 +47,14 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
 
 ## New ideas spotted this shift (2026-08-11, Shift 2)
 
-- [ ] **POI category icons + legend** — `pois-dot` is currently a single flat maroon circle for every category (temple, bath, amphitheater...). Google-Maps-style would give each category its own glyph/icon and a small legend, and tie into the future Layers panel (toggle POI categories independently).
-- [ ] **Layers panel POI toggles** — the Layers button (bottom-right) is still a non-functional mock; now that `pois.geojson` exists, wiring real Roads/Rivers/Provinces/POI toggles is higher value than before.
+- [ ] **POI category icons + legend** — `pois-dot` is currently a single flat maroon circle for every category (temple, bath, amphitheater...). Google-Maps-style would give each category its own glyph/icon and a small legend. Now that the Layers panel exists (Shift 3), a natural extension is per-category POI toggles inside it — worth designing together.
+- [x] **Layers panel POI toggles** — done in Shift 3, see P1 "Layers menu" above.
 - [ ] **Replace POI click-popup with the real details panel** — see the note on "Place details panel" above.
 
 ## Shipped (moved from above; newest on top)
 
+- 2026-08-11 — Shift 3: Layers panel (Roads/Rivers/Provinces/Cities/POIs toggles, persisted)
+- 2026-08-11 — Shift 3: Zoom control polish (custom stacked +/– buttons)
 - 2026-08-11 — Shift 2: Search bar wired to the 16k-place gazetteer (fuzzy match, keyboard nav, fly-to)
 - 2026-08-11 — Shift 2: Ruler / measure-distance tool
 - 2026-08-11 — Shift 2: Units toggle (km ⇄ mi), `useUnits()` hook, localStorage-persisted

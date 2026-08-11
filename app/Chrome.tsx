@@ -4,11 +4,16 @@ import { useEffect, useRef, useState } from "react";
 import type { Map as MLMap } from "maplibre-gl";
 import { useUnits } from "./useUnits";
 import { loadPlaces, searchPlaces, type Place } from "./places";
+import { LAYER_GROUPS, toggleLayer, useLayers } from "./useLayers";
 
 export default function Chrome() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [units, setUnits] = useUnits();
   const menuRef = useRef<HTMLDivElement>(null);
+
+  const [layersOpen, setLayersOpen] = useState(false);
+  const layers = useLayers();
+  const layersRef = useRef<HTMLDivElement>(null);
 
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<Place[]>([]);
@@ -39,6 +44,22 @@ export default function Chrome() {
     document.addEventListener("mousedown", onDocClick);
     return () => document.removeEventListener("mousedown", onDocClick);
   }, [resultsOpen]);
+
+  useEffect(() => {
+    if (!layersOpen) return;
+    const onDocClick = (e: MouseEvent) => {
+      if (layersRef.current && !layersRef.current.contains(e.target as Node)) setLayersOpen(false);
+    };
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setLayersOpen(false);
+    };
+    document.addEventListener("mousedown", onDocClick);
+    window.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.removeEventListener("mousedown", onDocClick);
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [layersOpen]);
 
   const onQueryChange = (value: string) => {
     setQuery(value);
@@ -259,27 +280,66 @@ export default function Chrome() {
         <span style={{ color: "#5f6368" }}>· The Empire at its peak</span>
       </div>
 
-      {/* Bottom-right: layers button (above zoom controls) */}
-      <button
-        title="Layers"
-        style={{
-          position: "absolute",
-          right: 12,
-          bottom: 118,
-          width: 40,
-          height: 40,
-          borderRadius: 8,
-          background: "#fff",
-          boxShadow: "0 1px 3px rgba(0,0,0,.2)",
-          display: "grid",
-          placeItems: "center",
-          zIndex: 5,
-        }}
-      >
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="#5f6368">
-          <path d="M11.99 18.54l-7.37-5.73L3 14.07l9 7 9-7-1.63-1.27-7.38 5.74zM12 16l7.36-5.73L21 9l-9-7-9 7 1.63 1.27L12 16z" />
-        </svg>
-      </button>
+      {/* Bottom-right: layers button (above zoom controls) + panel */}
+      <div ref={layersRef} style={{ position: "absolute", right: 12, bottom: 118, zIndex: 5 }}>
+        {layersOpen && (
+          <div
+            style={{
+              position: "absolute",
+              right: 0,
+              bottom: 48,
+              background: "#fff",
+              borderRadius: 8,
+              boxShadow: "0 1px 4px -1px rgba(0,0,0,.3), 0 3px 8px rgba(0,0,0,.15)",
+              padding: "8px 0",
+              width: 220,
+            }}
+          >
+            <div style={{ padding: "6px 16px 10px", fontSize: 13, fontWeight: 600, color: "#3c4043" }}>
+              Layers
+            </div>
+            {LAYER_GROUPS.map((g) => (
+              <label
+                key={g.id}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 10,
+                  padding: "7px 16px",
+                  fontSize: 13,
+                  color: "#3c4043",
+                  cursor: "pointer",
+                }}
+              >
+                <input
+                  type="checkbox"
+                  checked={layers[g.id]}
+                  onChange={() => toggleLayer(g.id)}
+                  style={{ width: 16, height: 16, cursor: "pointer" }}
+                />
+                {g.label}
+              </label>
+            ))}
+          </div>
+        )}
+        <button
+          title="Layers"
+          onClick={() => setLayersOpen((o) => !o)}
+          style={{
+            width: 40,
+            height: 40,
+            borderRadius: 8,
+            background: layersOpen ? "#e8f0fe" : "#fff",
+            boxShadow: "0 1px 3px rgba(0,0,0,.2)",
+            display: "grid",
+            placeItems: "center",
+          }}
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill={layersOpen ? "#1a73e8" : "#5f6368"}>
+            <path d="M11.99 18.54l-7.37-5.73L3 14.07l9 7 9-7-1.63-1.27-7.38 5.74zM12 16l7.36-5.73L21 9l-9-7-9 7 1.63 1.27L12 16z" />
+          </svg>
+        </button>
+      </div>
 
       {/* Bottom-right: mini attribution / brand */}
       <div
