@@ -7,6 +7,58 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 4 — 2026-08-11 (18:00–00:00 UTC block)
+
+Read the prior two entries before starting. Shift 3's "Next shift should pick up" pointed at provincial capitals (priority queue item 4) for Track A and either POI icons/legend or the Place details panel for Track B — did both, plus an unplanned but higher-leverage Track A find (see below).
+
+### Track A — Research & data
+
+**Before picking a scope**, verified Shift 2's "Londinium missing from the gazetteer" note myself by bounding-box-searching `public/data/places_medium.geojson` (16,315 pts) and `places_high.geojson` (9,844 pts, still unwired/unused) around the real coordinates of several major cities. Found it wasn't a Londinium-specific gap: **Roma, Alexandria, Ephesus, Corinthus, and Lugdunum(-Lyon) were all completely absent as named points too** — only minor satellite settlements/villas/temples near each survive in this particular DARE export. Worse, the file *does* contain a feature literally named `"Lugdunum"` — but at `[4.394802, 52.225647]`, which is Lugdunum Batavorum near Katwijk, Netherlands, a much more minor town, not Lyon. A real "search returns the wrong Lugdunum" trap. Re-scoped this shift's Track A around fixing this + provincial capitals together, since they're the same underlying task.
+
+**Gazetteer fix** (`public/data/places_medium.geojson`, 16,315 → 16,324 features, commit `95ab620`): added 9 Point features — Roma, Londinium, Alexandria, Ephesus, Corinthus, Lugdunum (the real Gallic one, Fourvière hill, Lyon), Carthago Nova, Antiochia, Colonia Claudia Ara Agrippinensium (Cologne) — ids `900001`–`900009` (a block well outside the DARE import's own id range, to avoid ever colliding with a future re-import). Set `major: 1` on all nine — the first real use of that field anywhere in the file (all 16,315 prior entries have `major: 0`), which directly boosts these in `app/places.ts`'s search ranking. The pre-existing Batavian `Lugdunum` was left completely untouched. **Verified live**: searching "Roma" now surfaces Roma/Today: Rome top-of-list; "Londinium" flies to London; "Lugdunum" now returns the real Lyon capital *first* (major-boosted) with the Batavian one second, instead of only the wrong one.
+
+**30 landmark POIs for 8 of those 9 capitals** (`public/data/pois.geojson`, 54 → 84, pure append, commit `7de1b03`) — Rome itself got no new POIs (already has 35 from Shift 2; only its gazetteer point was missing). Delegated the research to a sub-agent scoped strictly to the two data files (no `app/` access) so it could run in parallel with Track B; reviewed its output before folding in — valid JSON, 84/84 unique ids, full schema conformance, pure-append diff (813 insertions, 0 deletions/modifications against the existing 54), coordinates sanity-checked per city.
+
+Coverage: **Londinium** — Forum/Basilica, Governor's palace (Praetorium), Cripplegate fort, the Thames bridge crossing. **Alexandria** — Pharos lighthouse, Serapeum, Library/Mouseion, Heptastadion. **Ephesus** — Great Theatre, Library of Celsus, Temple of Artemis, Temple of Hadrian. **Corinthus** — Temple of Apollo, Fountain of Peirene, Julian Basilica, Isthmian sanctuary of Poseidon. **Lugdunum** — Amphitheatre of the Three Gauls, theatre, Altar of Rome and Augustus, Aqueduc du Gier. **Carthago Nova** — theatre, augusteum, forum, the imperial silver/lead mines. **Antiochia** — Circus, theatre, Temple of Apollo at Daphne. **Colonia Agrippinensis** — Praetorium, city wall, Ubii watchtower/monument.
+
+**`extant_117ce: false` calls (4), all explained in-feature notes:**
+- **Londinium Forum-Basilica** — dating evidence puts completion ~122 CE, plausibly timed to Hadrian's visit that year; almost certainly still under construction at Trajan's death. Kept per the Pantheon-precedent the last two shifts established.
+- **Cripplegate Fort** — stone fort dated c. 120 CE (Hadrianic), no attested earlier phase on the site.
+- **Library of Celsus (Ephesus)** — genuine source disagreement on exact completion (some say functionally done by 117, others say full completion with facade sculpture wasn't until ~135 under Aquila's heirs); followed the cautious read, `confidence: medium`, both sides cited in notes.
+- **Temple of Hadrian (Ephesus)** — can't predate Hadrian's accession (8 Aug 117) under any reading; kept on the map anyway since it's directly tied to the snapshot's pivot event, same logic as Shift 2's Mausoleum of Hadrian call.
+
+**Notable research finds:** Alexandria was mid-suppression of the **Kitos War** revolt at the literal moment of the snapshot — Cassius Dio records Marcius Turbo putting it down in August 117, the same month as Trajan's death; flagged as context on the Library/Mouseion entry without overclaiming specific building damage (no source tied the revolt's destruction to named landmarks). Antioch's Circus entry is directly attested by **Cassius Dio 68.25** — Trajan sheltered there during the 13 Dec 115 CE earthquake, escaping through a window — bumped to `confidence: high` on that primary-source basis; the adjacent theatre entry notes the city was still only ~20 months into earthquake recovery at 117 CE. The Aqueduc du Gier's construction date is a genuine decades-long French-scholarship dispute (Claudian → Hadrianic → Claudian again → a 2018 dendrochronology study back to Trajanic c. 110 CE) — kept `true`/`confidence: low` rather than picking a side.
+
+**Deliberately excluded** (researched, not enough to stand up a record): Cologne's Ara Ubiorum (sources say it's untraceable in later Roman Cologne, too speculative to pin a point), a separate Antioch forum/bath complex (no verifiable coordinates found), Corinth's Herodes Atticus-era Peirene facade (that's a 150s CE remodel, not what stood in 117 — kept the earlier fountain-house phase instead and said so in the note).
+
+**Schema note:** three more categories introduced (`bridge`, `fountain`, `wall`), plus first real use of `fort` and `mine` from the brief's own example list. Nothing enforces a closed enum, consistent with Shift 3's precedent.
+
+**Egress**: same `EGRESS_BLOCKED` pattern on WebFetch as the last three shifts (Pleiades, Wikipedia, LacusCurtius, etc. all unreachable) — this is now 4 for 4 shifts today. Went straight to WebSearch's synthesized snippets, same fallback as before. **Escalating again**: if a fifth shift starts and this is still blocked, it's worth someone outside the shift loop actually fixing the egress policy rather than each shift re-discovering and re-logging the same workaround.
+
+### Track B — Features & UI/UX
+
+Shipped the P0 **Place details panel** (`app/PlaceDetails.tsx` + `app/usePoiPanel.ts`, commit `be052c6`) — the last unchecked P0 item, flagged as the natural next step by both Shift 2 and Shift 3. Replaced the Maplibre click-popup on `pois-dot` entirely with a real React panel: slides in from the left on desktop (positioned below the search card — not yet a full search-bar-becomes-header merge like real Google Maps, flagged as a follow-up idea below), becomes a non-draggable bottom sheet on mobile (`<640px`). Shows a category chip (small per-category color dot — a lightweight stopgap for the still-open "POI category icons + legend" item, not the full icon/legend system), built/destroyed dates, an "Not standing in 117 CE" badge when `extant_117ce: false`, province/modern-location line, notes, linked sources, and a sourcing-confidence line. Clicking empty map space or pressing Esc closes it (verified no race with the `pois-dot`-specific click handler — both query the render state at the same point, so selection always wins over the close-on-empty-click handler when a POI is actually hit). "Directions to here" is present but honestly disabled with a "coming soon" tooltip, since Directions itself hasn't shipped — didn't fake a route. Wired via a new tiny `usePoiPanel` store (`useSyncExternalStore`, same pattern as `useUnits`/`useLayers`) so `Map.tsx` and the new panel component stay decoupled.
+
+**Verified in a real browser**, not just typecheck/build: ran `next dev`, drove it with Playwright + the pre-installed Chromium (`/opt/pw-browsers/chromium-1194/chrome-linux/chrome`), on both 1280×800 desktop and 390×844 mobile viewports. Screenshotted: panel opening with real content (Circus Flaminius), closing on outside-click, closing on Esc, the mobile bottom-sheet variant (Synagoga Ostiensis), and — after Track A landed — the new Londinium POIs opening correctly with the new "Bridge" category. Regression-checked ruler (still measures correctly, no interference from the new map click handler) and zoom/layers controls (unaffected). `npx tsc --noEmit` and `npm run build` both clean. Reverted a spurious `package-lock.json` diff from `npm install` under a different npm version (same non-issue Shift 3 flagged and fixed once already — happens every time `npm install` runs fresh in a new container; a future shift shouldn't need to re-discover this, just always diff-check `package-lock.json` before committing).
+
+**Observed but not fixed:** several `pois-dot` points sit almost exactly on top of dense road convergences at low zoom (e.g. Forum Romanum right at Rome's road-network hub) and are visually hard to spot despite rendering above the roads in z-order — noted as a backlog item, natural to pair with the category-icon work.
+
+### Commits this shift
+
+1. `Place details slide-in panel (Track B)` (`be052c6`)
+2. `Fix missing imperial-capital entries in the search gazetteer (Track A)` (`95ab620`)
+3. `Add 30 landmark POIs for 8 provincial capitals (Track A)` (`7de1b03`)
+
+All pushed to `main` mid-shift as each piece was verified, not batched to the end.
+
+### Next shift should pick up
+
+- **Track A:** Only 9 of the provincial-capital-tier gazetteer gaps were checked and fixed this shift (the ones on the brief's own priority-queue item-4 list). A systematic audit — script-check every notable ancient-city name against the gazetteer rather than discovering gaps one city at a time — is still worth doing. Otherwise: the three great baths of Rome (priority queue item 5, still untouched), legionary fortresses (item 7, 28 legions, still untouched), or Pompeii/Herculaneum (item 3, `public/data/pompeii.geojson` is still a 0-byte placeholder).
+- **Track B:** POI category icons + legend (now has a natural seed — the details panel's per-category color-dot mapping in `PlaceDetails.tsx`), the POI-dots-buried-under-roads visibility issue noted above, "Directions" itself (the other still-open P0 — bigger scope, road-network routing), or right-click context menu (P1, includes a "Measure distance" trigger for the existing ruler).
+- **General:** WebFetch egress has now been blocked for 4 consecutive shifts across at least 3 different administrators' worth of research — worth escalating outside the shift loop rather than continuing to route around it silently.
+
+---
+
 ## Shift 3 — 2026-08-11 (12:00–18:00 UTC block)
 
 Read the last two shift entries before starting; picked up exactly where Shift 2 left off (its `Next shift should pick up` pointed at Ostia for Track A and the Layers panel / zoom fix for Track B — did both).
