@@ -736,6 +736,430 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.267, 41.785] },
+      "properties": {
+        "id": "poi_portus_claudii_basin",
+        "category": "port",
+        "name_latin": "Portus Claudii",
+        "name_english": "Harbour basin of Claudius",
+        "province": "Italia",
+        "modern_location": "Fiumicino, Italy (Portus archaeological area)",
+        "built": 42,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Rome's first purpose-built imperial harbor at the Tiber mouth, begun by Claudius in 42 CE to supplement the silting river-mouth port at Ostia; two long curving moles enclosed roughly 200 ha of open water, with an artificial mole-top island carrying the Pharos at the seaward entrance. Nero completed associated works and issued sestertii celebrating the harbor's operation at its ceremonial opening in 64 CE. Exposed to open-sea swell and prone to storm damage (part of the reason Trajan later built the sheltered hexagonal basin inland of it), but the basin itself, its moles, and surrounding quays were still functioning port infrastructure in 117 CE, working alongside Trajan's newer basin. Coordinates mark the approximate center of the basin as reconstructed from excavation/LIDAR plans (Keay et al., Portus Project); exact mole outlines are better attested than this single representative point, so treat coordinates as approximate (\u00b1300 m).",
+        "sources": [
+          "Suetonius, Divus Claudius 20",
+          "Cassius Dio 60.11",
+          "https://www.ostia-antica.org/introduction/portus-claudius.htm",
+          "https://en.wikipedia.org/wiki/Portus",
+          "Simon Keay, Martin Millett, Kristian Strutt, Portus: An Archaeological Survey of the Port of Imperial Rome (British School at Rome, 2005)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.26, 41.7791] },
+      "properties": {
+        "id": "poi_portus_trajani_hexagon",
+        "category": "port",
+        "name_latin": "Portus Traiani (Portus Traiani Felicis)",
+        "name_english": "Hexagonal basin of Trajan, Portus",
+        "province": "Italia",
+        "modern_location": "Fiumicino, Italy (Portus archaeological area)",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Trajan's inland hexagonal harbor basin, roughly 32 ha in area and about 716 m across, dug inland (southeast) of the exposed Claudian basin and connected to it and to the Tiber by canals, giving ships a sheltered anchorage safe from the open-sea storms that had damaged Portus Claudii. Construction ran c. 100-112 CE; the basin and its surrounding warehouse quays were functional and in full operation well before Trajan's death, squarely extant and in active use at the 117 CE snapshot. Together with the older Claudian basin it formed 'Portus Augusti et Traiani Felicis.' Coordinates from Pleiades' place record for the Trajanic harbor.",
+        "sources": [
+          "https://pleiades.stoa.org/places/927235843",
+          "https://www.ostia-antica.org/introduction/portus-trajan.htm",
+          "https://www.ostia-antica.org/portus/t001.htm",
+          "https://www.portusproject.org/periods/trajanic/",
+          "Russell Meiggs, Roman Ostia (Oxford, 2nd ed. 1973), ch. on Portus"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.255, 41.7815] },
+      "properties": {
+        "id": "poi_portus_pharos",
+        "category": "lighthouse",
+        "name_latin": "Pharos Portus",
+        "name_english": "Lighthouse of Portus",
+        "province": "Italia",
+        "modern_location": "Fiumicino, Italy (Portus archaeological area)",
+        "built": 64,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Monumental lighthouse modeled on the Pharos of Alexandria, built on an artificial mole-top island at the seaward mouth of the Claudian basin as part of Claudius's harbor project; functioning and celebrated on Nero's sestertii minted for the harbor's 64 CE dedication (obverse/reverse harbor scene showing the lighthouse between the two curving moles). A functioning aid to navigation still in active use in 117 CE, guiding shipping into both the Claudian and the newer Trajanic basin. Later depicted again on coinage under Trajan and subsequent emperors. Exact structure position is reconstructed from excavation on the mole between the two basins; treat this point as approximate (\u00b1200-300 m) pending direct access to Portus Project survey plans.",
+        "sources": [
+          "https://www.ostia-antica.org/portus/lighthouse-alexandria.htm",
+          "https://www.pharology.eu/history/antiquity/A10_portusromanus.html",
+          "https://kinzercoins.com/blogs/kinzer-coins-journal/neros-port-of-ostia-coin-how-the-roman-empire-fed-its-capital",
+          "Russell Meiggs, Roman Ostia (Oxford, 2nd ed. 1973)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.256, 41.7745] },
+      "properties": {
+        "id": "poi_fossa_traiana",
+        "category": "canal",
+        "name_latin": "Fossa Traiana",
+        "name_english": "Trajan's Canal (Canale di Fiumicino)",
+        "province": "Italia",
+        "modern_location": "Fiumicino, Italy, between Portus and Ostia",
+        "built": 42,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Artificial canal (c. 90 m wide) linking the Portus basins to the Tiber and the sea, cutting off the wedge of land between it and the river's main channel to create the Isola Sacra. Sources disagree on strict attribution: despite the name 'Fossa Traiana,' the canal's origin is tied to Claudius's flood-relief/harbor-access works of the 40s CE (an inscription of 46 CE mentions it), though tradition and its surviving name credit Trajan, whose hexagonal-basin project of c. 100-112 CE certainly reused, enlarged, and depended on it as the link to the Tiber and sea. Whichever emperor's work is emphasized, the canal was long-since dug and functioning by 117 CE. Medieval Fiumicino ('little river') preserves its name. Coordinates are an approximate midpoint of the canal's course between Portus and the river; low positional precision.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Fiumicino",
+          "https://www.ostia-antica.org/portus/t001.htm",
+          "Russell Meiggs, Roman Ostia (Oxford, 2nd ed. 1973)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.2625, 41.7788] },
+      "properties": {
+        "id": "poi_palazzo_imperiale_portus",
+        "category": "palace",
+        "name_latin": "Palazzo Imperiale",
+        "name_english": "Imperial Palace, Portus",
+        "province": "Italia",
+        "modern_location": "Fiumicino, Italy (Portus archaeological area)",
+        "built": 112,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Judgment call, flagged per brief guardrail: a large (c. 2 ha), three-story administrative/residential complex on the east side of the hexagonal basin, used for imperial visits and by officials of the praefectus annonae (grain supply). Brick-stamp evidence (Portus Project fieldwork) dates it predominantly to the Trajanic period, built 112/114-120 CE, with renovations continuing under Hadrian and the Antonines -- i.e., construction spans across Trajan's 117 CE death and was not complete until c. 120. Set extant_117ce:false, treating it like the Pantheon/Mausoleum-of-Hadrian precedent in this file (major structure demonstrably under active construction at the snapshot moment, not certainly usable/finished). A case could reasonably be made the other way (majority of an 8-year build likely stood by year 5), so this is a genuine judgment call worth a second look.",
+        "sources": [
+          "https://www.portusproject.org/fieldwork/buildings/palazzo-imperiale-ii/",
+          "http://moocs.southampton.ac.uk/portus/glossary/palazzo-imperiale/",
+          "https://www.ostia-antica.org/portus/t026.htm"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.26389, 41.76944] },
+      "properties": {
+        "id": "poi_isola_sacra_necropolis",
+        "category": "necropolis",
+        "name_latin": "Necropolis Isolae Sacrae",
+        "name_english": "Isola Sacra Necropolis",
+        "province": "Italia",
+        "modern_location": "Fiumicino, Italy, on the artificial island between Ostia and Portus",
+        "built": 70,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Port-workers' cemetery strung for roughly 1.5 km along the road linking Ostia and Portus, on the 'sacred island' created by the Fossa Traiana canal. Burials began in the later 1st century CE and the necropolis was in continuous, active use through the 2nd-4th centuries; predominantly freedmen, merchants, sailors, and craftsmen tied to the port economy, with a documented shift from cremation to inhumation over the period. Squarely in active use at 117 CE, though its best-known monumental tomb facades and the bulk of excavated structures date to the 2nd-early 3rd century expansion (Hadrianic-Severan), i.e. after this snapshot -- included here as an active, populated burial ground already established by 117, not for its later, more famous phase.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Isola_Sacra_Necropolis",
+          "https://ostiaantica.cultura.gov.it/en/sites/necropolis-of-portus-in-the-isola-sacra/",
+          "http://www.ostia-antica.org/dahp/cd2/cementum/projectt.htm"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.288414, 41.75394] },
+      "properties": {
+        "id": "poi_ostia_forum",
+        "category": "forum",
+        "name_latin": "Forum Ostiense",
+        "name_english": "Forum of Ostia",
+        "province": "Italia",
+        "modern_location": "Ostia Antica, Italy",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The civic and religious center of Ostia, at the crossing of the Decumanus Maximus and Cardo, in use since the late Republic and continuously monumentalized under the early Empire (Tiberius built the Temple of Rome and Augustus here; a Republican-era predecessor temple to the Capitoline triad also stood at the forum's north end). By 117 CE the forum was a fully developed civic square, though its most famous surviving monument -- the great brick Capitolium -- was still a few years from completion under Hadrian (see separate entry). Point marks the forum's approximate center.",
+        "sources": [
+          "https://www.romeartlover.it/Newosti3.html",
+          "https://www.ostia-antica.org/introduction/ostia-early-imperial.htm",
+          "Russell Meiggs, Roman Ostia (Oxford, 2nd ed. 1973), ch. 4-5"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.28855, 41.7543] },
+      "properties": {
+        "id": "poi_ostia_capitolium",
+        "category": "temple",
+        "name_latin": "Capitolium Ostiense",
+        "name_english": "Capitolium of Ostia (Temple of Jupiter, Juno, Minerva)",
+        "province": "Italia",
+        "modern_location": "Ostia Antica, Italy, north side of the Forum",
+        "built": 120,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Judgment call, verified carefully per brief: the large brick-built, marble-clad Capitolium visible today, on a high podium at the north end of the Forum, is a Hadrianic building dated to c. 120 CE -- after Trajan's death (8 Aug 117) and Hadrian's accession the same day. Set extant_117ce:false because the standing monument postdates the snapshot. However, it stands directly above an earlier cult building of the 1st century BCE (probably dedicated to the same Capitoline triad) which was itself built over an even older public structure -- so the site had *a* temple to Jupiter/Juno/Minerva at 117 CE, just not the one now visible; the Hadrianic rebuild was very likely already underway (Hadrian's building program at Ostia is well documented as beginning right at his accession) but not complete. Kept in the file per the guardrail (don't drop, flag clearly) rather than omitted.",
+        "sources": [
+          "https://ostiaantica.cultura.gov.it/en/educational-panels-and-maps/the-central-area-and-the-official-complexes/capitolium/",
+          "https://www.ostia-antica.org/dict/topics/golden/golden-5.htm",
+          "https://ostiaforumproject.com/2021-2022-chapter-1/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.28855, 41.7535] },
+      "properties": {
+        "id": "poi_ostia_temple_rome_augustus",
+        "category": "temple",
+        "name_latin": "Templum Romae et Augusti",
+        "name_english": "Temple of Rome and Augustus, Ostia",
+        "province": "Italia",
+        "modern_location": "Ostia Antica, Italy, south end of the Forum",
+        "built": 14,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Podium temple (c. 24.4 x 13.7 m) closing the south end of the Forum, built early in Tiberius's reign, shortly after Augustus's death and deification in 14 CE, as part of Tiberius's broader building program at Ostia (which also gave the town its first fully monumental forum). Only the opus-reticulatum substructure survives today, but the temple was a standing, functioning cult building at 117 CE, over a century old by the snapshot date.",
+        "sources": [
+          "https://www.ostia-antica.org/regio1/forum/temprom.htm",
+          "https://ostiaantica.cultura.gov.it/en/educational-panels-and-maps/the-central-area-and-the-official-complexes/tempio-di-roma-e-augusto/",
+          "Russell Meiggs, Roman Ostia (Oxford, 2nd ed. 1973)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.29111, 41.75639] },
+      "properties": {
+        "id": "poi_ostia_piazzale_corporazioni",
+        "category": "market",
+        "name_latin": "Piazzale delle Corporazioni",
+        "name_english": "Square/Forum of the Corporations",
+        "province": "Italia",
+        "modern_location": "Ostia Antica, Italy, behind the Theatre",
+        "built": -18,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Large colonnaded square behind Ostia's theatre, designed together with the theatre in the Augustan period; its double-row Doric portico was added under Claudius (mid-1st century CE), giving it the form -- rows of small rooms (stationes) opening off the colonnade, used as offices by roughly 40 shipping and trade guilds (navicularii, negotiantes) -- that was substantially in place by 117 CE. The black-and-white mosaics identifying individual guilds by trade/origin (grain shippers, Sardinian and North African traders, ropemakers, etc.) that make the site famous today were laid in overlapping phases from the later 1st into the 2nd century CE, so some of the surviving mosaic pavement likely postdates 117; the square, portico, and guild-office function were established well before then. A small central temple (deity uncertain -- Ceres, Annona, and the deified emperors have all been proposed) was added around the end of the 1st century CE, also pre-117.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Piazzale_delle_Corporazioni",
+          "https://parcoarcheologicostiantica.it/en/educational-panels/the-area-of-the-theatre/piazzale-delle-corporazioni/",
+          "Russell Meiggs, Roman Ostia (Oxford, 2nd ed. 1973), ch. 6"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.2902, 41.756] },
+      "properties": {
+        "id": "poi_ostia_theatre",
+        "category": "theater",
+        "name_latin": "Theatrum Ostiense",
+        "name_english": "Theatre of Ostia",
+        "province": "Italia",
+        "modern_location": "Ostia Antica, Italy",
+        "built": -18,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Ostia's theatre was built at the end of the 1st century BCE under Augustus (constructed by his son-in-law and deputy Agrippa), originally seating around 3,000. This Augustan-era theatre was the standing structure at 117 CE. Its well-known enlargement to c. 4,000 seats -- the brick-faced form visible today -- was begun under Commodus (r. 176-192 CE) and completed/dedicated under Septimius Severus and Caracalla per an inscription of 196 CE, all well after this snapshot; per the brief's instruction, only the original Augustan-phase theatre is treated as extant in 117 CE, not its later Severan-period form.",
+        "sources": [
+          "https://www.romeartlover.it/Newostid.html",
+          "https://www.ostia-antica.org/regio2/7/7-2.htm",
+          "https://ancienttheatrescom.wpcomstaging.com/theatre/ostia-ostia-antica-rome-italy/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.2896, 41.7557] },
+      "properties": {
+        "id": "poi_ostia_baths_neptune",
+        "category": "bathhouse",
+        "name_latin": "Thermae Neptuni",
+        "name_english": "Baths of Neptune",
+        "province": "Italia",
+        "modern_location": "Ostia Antica, Italy, near the Decumanus Maximus",
+        "built": 139,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Verified carefully per brief instruction, and excluded from the 117 CE snapshot as a result: the famous mosaic-floored Baths of Neptune were a Hadrianic project, built c. 117-138 CE in a wave of renovation Hadrian promoted at Ostia, with masonry confirmed Hadrianic by brick stamps and an inauguration inscription dated to late December 138 or 139 CE (i.e. completed under Antoninus Pius). Construction essentially began at, or just after, the moment of this map's snapshot, so it is not counted as standing on 8 August 117. It replaced an earlier, late-1st-century CE bath complex from Domitian's reign on the same footprint (a large Domitianic cistern beneath the palaestra survives, reused/then abandoned when the Hadrianic baths were built) -- that Domitianic bath building, not the one usually meant by 'Baths of Neptune,' is what was actually standing on this spot in 117 CE, but it isn't independently well enough attested by name/plan to warrant its own separate entry. Kept per guardrail rather than dropped, with extant_117ce:false and this explanation.",
+        "sources": [
+          "https://ostiaantica.cultura.gov.it/en/educational-panels-and-maps/larea-a-servizio-del-fiume/terme-di-nettuno-i-mosaici/",
+          "https://www.ostia-antica.org/regio2/4/4-2.htm",
+          "https://en.wikipedia.org/wiki/Baths_at_Ostia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.2879, 41.7546] },
+      "properties": {
+        "id": "poi_ostia_grandi_horrea",
+        "category": "warehouse",
+        "name_latin": "Horrea Grandi",
+        "name_english": "Great Warehouse (Grandi Horrea)",
+        "province": "Italia",
+        "modern_location": "Ostia Antica, Italy, near the Forum",
+        "built": 41,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Ostia's largest and most important grain warehouse, with storage capacity for an estimated 6,000 metric tons of grain (about a year's dole for 16,000 people). Original construction begun under Claudius (reign 41-54 CE) -- identifiable by the characteristic rough-faced opus rusticum tufa-block east and west walls -- with expansion under Nero. That Julio-Claudian building, central to Rome's grain-supply chain (annona), was standing and in active use at 117 CE. It was substantially rebuilt in brick with an added first floor and extra storage cells in a later phase spanning the late 2nd-early 3rd centuries CE (Commodan/Severan), which postdates this snapshot and is not what's being marked extant here.",
+        "sources": [
+          "https://www.ostia-antica.org/regio2/9/9-7.htm",
+          "https://dererumgestarum.tumblr.com/post/620798587139506176/the-horrea-grandi-of-ostia",
+          "https://www.ostia-antica.org/dict/topics/horrea/intro.htm",
+          "Russell Meiggs, Roman Ostia (Oxford, 2nd ed. 1973), ch. 15"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.2907, 41.7529] },
+      "properties": {
+        "id": "poi_ostia_horrea_hortensius",
+        "category": "warehouse",
+        "name_latin": "Horrea Hortensiana",
+        "name_english": "Warehouse of Hortensius",
+        "province": "Italia",
+        "modern_location": "Ostia Antica, Italy, Regio V",
+        "built": -30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "One of Ostia's oldest surviving warehouses, built around a large tufa-columned courtyard with storage cellae, and traditionally attributed by name to a Lucius Hortensius (a fleet prefect at Misenum). Dating is genuinely a little uncertain and sources disagree: it is usually described as a late-Republican (1st century BCE) structure, but the earliest surviving masonry (opus reticulatum with sparse brick coursing) has independently been dated to roughly 25-50 CE, i.e. early Julio-Claudian rather than strictly Republican. Either dating puts it comfortably standing by 117 CE; the spread is noted here rather than resolved, per the brief's guidance to mark uncertainty rather than drop or fake precision.",
+        "sources": [
+          "https://ostia-antica.org/regio5/12/12-1.htm",
+          "https://www.hmdb.org/m.asp?m=281213",
+          "https://www.ostia-antica.org/dict/topics/horrea/intro.htm"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.2884, 41.7544] },
+      "properties": {
+        "id": "poi_ostia_decumanus_maximus",
+        "category": "road",
+        "name_latin": "Decumanus Maximus",
+        "name_english": "Decumanus Maximus, Ostia",
+        "province": "Italia",
+        "modern_location": "Ostia Antica, Italy",
+        "built": -300,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Ostia's main east-west street, running from the Porta Romana through the Forum to the Porta Marina near the ancient shoreline, and continuing beyond the walls toward Rome as the Via Ostiensis. Its line goes back to the original castrum (fortified settlement, traditionally 4th century BCE, precise founding date disputed) and it remained the town's principal commercial and processional axis throughout antiquity, lined by shops, baths, and civic buildings by 117 CE. Point marks a representative location on the street near its crossing with the Cardo Maximus at the Forum, not the whole route (a single Point cannot represent a linear street; treat this as an anchor/label point only).",
+        "sources": [
+          "https://www.ostia-antica.org/dict/topics/walls/walls.htm",
+          "https://www.romeartlover.it/Ostia1.html",
+          "Russell Meiggs, Roman Ostia (Oxford, 2nd ed. 1973), ch. 2"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.2846, 41.7563] },
+      "properties": {
+        "id": "poi_ostia_porta_romana",
+        "category": "gate",
+        "name_latin": "Porta Romana",
+        "name_english": "Porta Romana (Rome Gate), Ostia",
+        "province": "Italia",
+        "modern_location": "Ostia Antica, Italy, northeast circuit",
+        "built": -80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Northeastern gate of Ostia's Republican-era city walls, opening onto the Via Ostiensis toward Rome, at the start (from Rome's direction) of the Decumanus Maximus. The larger walled circuit that replaced Ostia's original small castrum is generally dated to the late 2nd-early 1st century BCE (often attributed to Sulla's era, c. 87-82 BCE, though scholars note the Sullan attribution itself lacks hard proof); a statue of Minerva excavated at the site is associated with the gate's decoration. Definitely standing and in use as the city's principal landward entrance at 117 CE.",
+        "sources": [
+          "https://www.ostia-antica.org/dict/topics/walls/walls.htm",
+          "https://brewminate.com/the-city-walls-of-ancient-ostia/",
+          "Russell Meiggs, Roman Ostia (Oxford, 2nd ed. 1973), ch. 2"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.2815, 41.7495] },
+      "properties": {
+        "id": "poi_ostia_porta_marina",
+        "category": "gate",
+        "name_latin": "Porta Marina",
+        "name_english": "Porta Marina (Sea Gate), Ostia",
+        "province": "Italia",
+        "modern_location": "Ostia Antica, Italy, southwest circuit, near the ancient shoreline",
+        "built": -50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Southwestern gate of Ostia's Republican walls, where the Decumanus Maximus left the walled town toward the ancient coastline (the sea has since retreated several km from this point due to Tiber siltation). Belonged to the Republican-era wall circuit, usually dated to around the middle of the 1st century BCE; its remains lie at a lower level than the present Decumanus surface. In use as the city's seaward gate at 117 CE, before the Hadrianic-Antonine bath and residential district later built up outside it (Terme di Porta Marina, synagogue vicinity) reached its later monumental form.",
+        "sources": [
+          "https://www.ostia-antica.org/regio4/10/10-1.htm",
+          "https://www.romeartlover.it/Newostip.html",
+          "Russell Meiggs, Roman Ostia (Oxford, 2nd ed. 1973), ch. 2"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.28861, 41.74889] },
+      "properties": {
+        "id": "poi_ostia_synagogue",
+        "category": "synagogue",
+        "name_latin": "Synagoga Ostiensis",
+        "name_english": "Synagogue of Ostia",
+        "province": "Italia",
+        "modern_location": "Ostia Antica, Italy, outside Porta Marina, near the ancient shoreline",
+        "built": 41,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Verified carefully per brief instruction -- this is a genuinely contested date, not a settled one. Excavator M. Floriani Squarciapino (1961 discovery, publishing through the 1960s-70s) argued for a purpose-built synagogue on this site as early as the reign of Claudius (41-54 CE), which would make it the oldest known synagogue building in Europe/the Diaspora. That early dating has been directly challenged: L. Michael White has argued the original structure was a private house only later converted for Jewish communal/synagogue use, with the building's clearest synagogue-specific features (aedicula for the Torah shrine, etc.) belonging to a 2nd-4th century remodeling; A. Runesson and others have offered further alternative readings. Given the live scholarly dispute (Squarciapino vs. White vs. Runesson, argued out in journals including Harvard Theological Review), confidence is kept low rather than asserting the Claudian date as fact -- but even under the more cautious readings, some structure at this location in communal/religious use by the local Jewish population is plausible by the early-to-mid 2nd century at the latest, so it is kept as extant_117ce:true with a wide date/confidence caveat rather than dropped, per the guardrail.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ostia_Synagogue",
+          "https://www.romanports.org/en/articles/ports-in-focus/25-the-synagogue.html",
+          "L. Michael White, 'Synagogue and Society in Imperial Ostia: Archaeological and Epigraphic Evidence', Harvard Theological Review 90 (1997)",
+          "M. Floriani Squarciapino, excavation reports on the Ostia synagogue (1961-64)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.281, 41.7498] },
+      "properties": {
+        "id": "poi_ostia_terme_porta_marina",
+        "category": "bathhouse",
+        "name_latin": "Thermae Portus Marinae",
+        "name_english": "Baths of the Marine Gate (Terme di Porta Marina)",
+        "province": "Italia",
+        "modern_location": "Ostia Antica, Italy, just outside Porta Marina",
+        "built": 139,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A second Ostia bath complex checked carefully for dating alongside the Baths of Neptune, and excluded for the same reason: construction of this large spa complex outside the Porta Marina began under Trajan around 110 CE but continued through Hadrian's entire reign, with a dedicatory inscription dated to December 138 or 139 CE (possibly the 'lavacrum Ostiense' mentioned in the Historia Augusta as a project of Antoninus Pius). Because it was demonstrably still an active construction site spanning the 117 CE snapshot and not completed/dedicated until roughly two decades later, it is marked extant_117ce:false rather than counted as standing infrastructure at Trajan's death, even though ground was broken in his reign.",
+        "sources": [
+          "https://www.ostia-antica.org/regio4/10/10-1.htm",
+          "https://www.culturalheritageonline.com/location-4888_Terme-di-Porta-Marina---Scavi-di-Ostia-Antica---Domus-Romana.php"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }

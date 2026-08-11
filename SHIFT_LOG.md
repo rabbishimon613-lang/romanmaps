@@ -7,6 +7,52 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 3 — 2026-08-11 (12:00–18:00 UTC block)
+
+Read the last two shift entries before starting; picked up exactly where Shift 2 left off (its `Next shift should pick up` pointed at Ostia for Track A and the Layers panel / zoom fix for Track B — did both).
+
+### Track A — Research & data
+
+**Ostia Antica + Portus, 19 new POI features** (`public/data/pois.geojson`, 35 → 54 total, pure append — the existing 35 Rome features are untouched). Delegated to a sub-agent scoped strictly to that one file so it could run in parallel with Track B; reviewed and spot-checked its output (JSON validity, unique IDs, sourcing, coordinate sanity against the real Ostia/Portus archaeological areas, live in-browser render + popup check) before folding it in.
+
+Coverage: **Portus** — Claudian harbor basin (42 CE), Trajan's hexagonal inner basin (~100–112 CE, high confidence via Pleiades), the Portus lighthouse/Pharos, the Fossa Traiana canal, Isola Sacra necropolis. **Ostia** — Forum, Temple of Rome and Augustus, Piazzale delle Corporazioni, the Augustan-phase Theatre, Grandi Horrea, Horrea of L. Hortensius, the Decumanus Maximus, Porta Romana and Porta Marina gates, the Ostia synagogue.
+
+**Judgment calls, all logged in-feature (`notes`):**
+- **Baths of Neptune** and **Terme di Porta Marina** → both `extant_117ce: false`. Verified via brick-stamp/dedication evidence that the famous mosaic-floored Baths of Neptune are Hadrianic (started ~117–120, dedicated 138/139 under Antoninus Pius), not the Domitianic-era bath that actually stood on the same footprint in 117 — a real and easy trap (most casual sources just say "Baths of Neptune, Ostia" without the date caveat).
+- **Ostia Capitolium** → `extant_117ce: false` (Hadrianic, c. 120 CE), noting an earlier Republican-era Capitoline-triad temple occupied the site at 117.
+- **Palazzo Imperiale (Portus)** → `extant_117ce: false`, flagged as the most debatable call: built 112/114–120 CE, spanning Trajan's death, treated like the Pantheon precedent (not certainly finished) but a good-faith case exists for the other read since a majority of an 8-year build was probably standing by year 5.
+- **Ostia synagogue** → kept `extant_117ce: true` but `confidence: low` — genuine scholarly dispute on founding date (Squarciapino's Claudian-era dating vs. L. Michael White's private-house-first argument vs. Runesson's alternative), didn't pick a side, said so.
+- Researched but deliberately **excluded** (postdate 117, not padded in): Mithraeum of the Seven Spheres (~160–170 CE), Mitreo di Fructosus (~120–125 CE), the Portus amphitheater (2nd–early 3rd c.), and the Commodus/Severus-era enlargement of Ostia's theatre.
+
+Sources: Pleiades, Suetonius, Cassius Dio, Meiggs *Roman Ostia* (cited by author/title, couldn't fetch full text), the Portus Project (Keay, Millett, Strutt), Squarciapino/White/Runesson on the synagogue question, Wikipedia only as a cross-check pointer. **Network egress blocked WebFetch for essentially every relevant domain this shift** — pleiades.stoa.org, ostia-antica.org, portusproject.org, ostiaantica.cultura.gov.it, en.wikipedia.org, britannica.com, romanports.org all returned `EGRESS_BLOCKED` — so citations to those are real URLs surfaced by WebSearch's synthesized snippets, not independently re-verified by direct fetch. This is the third consecutive shift to hit this (Shift 2 had the same issue with LacusCurtius/Platner) — **worth a future shift checking whether egress can be opened for at least the core reference domains** (Pleiades, ostia-antica.org, LacusCurtius), since it's now a recurring tax on every Track A shift's confidence levels.
+
+**Schema note:** the new Ostia/Portus features introduced a few categories not in SHIFT_BRIEF.md's example list (`canal`, `palace`, `necropolis`, `market`, `warehouse`, `road`, `gate`, `synagogue`) — reasonable since nothing in the app enforces a closed enum (Map.tsx only filters on `extant_117ce`), but flagging in case a future shift wants to formalize the category list once POI category icons (see below) start depending on it.
+
+### Track B — Features & UI/UX
+
+Shipped the two P1 items Shift 2 flagged as next-up:
+
+1. **Zoom control polish** (`app/ZoomControl.tsx`) — Shift 2 had found that `globals.css`'s `.maplibregl-ctrl-bottom-right { display: none }` was hiding the default MapLibre `NavigationControl`, leaving no visible zoom UI at all. Removed the now-dead `NavigationControl` from `Map.tsx` (it was invisible and did nothing) and built a real custom control: stacked +/− buttons, same card shadow as the search box, disabled/dimmed state at min/max zoom, animated `zoomTo`. Sits at bottom-right, below the Layers button.
+2. **Layers panel** (`app/useLayers.ts` + panel wired into `Chrome.tsx`) — the Layers button was a non-functional mock; it now opens a real Google-Maps-style checklist panel toggling five layer groups — Roads, Rivers & lakes, Province borders, Cities & towns, Landmarks (POIs) — each backed by real `map.setLayoutProperty` visibility changes, persisted to `localStorage` under `roman-maps:layers` via a `useSyncExternalStore` store (same pattern as `useUnits`). Fortifications/Aqueducts/Legions aren't toggles yet since there's no dedicated data/layer for them independent of the general POI layer.
+
+**Verified both in a real browser** (not just typecheck/build): ran `next dev`, drove it with Playwright + the pre-installed Chromium, screenshotted zoom in/out, the Layers panel open/closed and each checkbox actually hiding/showing its layer (screenshotted roads disappearing on uncheck), on both a 1280×800 desktop viewport and a 390×844 mobile viewport. Also regression-checked the existing units toggle, ruler, and search bar — all still work, no console errors introduced (one pre-existing `favicon.ico` 404 unrelated to this shift's changes, left alone). Fixed one `useSyncExternalStore` `getServerSnapshot`-should-be-cached warning in `useLayers.ts` while building it (was allocating a new object every call; now a stable module-level constant). `npx tsc --noEmit` and `npm run build` both clean.
+
+**Also fixed in passing:** `package-lock.json` picked up spurious diff noise from a local `npm install` under a different npm version (dropped `libc` fields from optional-dependency entries) — reverted, not a real dependency change, and per the brief deps aren't something to touch unilaterally. Added `tsconfig.tsbuildinfo` (a local build artifact, was untracked and about to get committed accidentally) to `.gitignore`.
+
+**Didn't touch:** the `next@14.2.5` security advisory Shift 2 flagged (still someone's deliberate call to make, not a Track A/B task); POI category icons + legend (backlog item, still open — flagged as a good next pairing now that Ostia/Portus roughly doubles the POI categories in play); the dead "Directions" button in the search bar chrome (that's the unshipped P0 "Directions" feature, out of scope this shift).
+
+### Commits this shift
+
+1. `Zoom control polish + Layers panel toggles` (Track B, pushed mid-shift once verified)
+2. `Add 19 Ostia/Portus POIs (Track A)` (this commit — see diff)
+
+### Next shift should pick up
+
+- **Track A:** Provincial capitals (priority queue item 4 — Lugdunum, Carthago Nova, Alexandria, Antiochia, Ephesus, Corinth, Londinium, Colonia Agrippinensis) is the next unclaimed priority-queue item; recall Londinium is still missing from the `places_medium.geojson` gazetteer (Shift 2's finding, still unfixed) so budget time to source it directly from Pleiades if picking that city. Alternatively, the three great baths of Rome (priority queue item 5) or legionary fortresses (item 7) are still untouched. Also worth escalating the recurring WebFetch egress block (now 2-3 shifts running) to whoever administers this environment.
+- **Track B:** POI category icons + legend (color-coded or glyph dots per category, tied to a small legend UI — natural next step now that Layers panel exists and POI categories have grown past the original 14), the "Place details panel" P0 item (replace the Maplibre click-popup with a real slide-in left panel + wire "Directions to here"), or right-click context menu (P1).
+
+---
+
 ## Shift 2 — 2026-08-11 (00:00–06:00 UTC block, run started ~06:xx UTC)
 
 SHIFT_LOG.md had no prior entries when this shift started (only the header), so I followed the brief's "no prior shift log" priority queue and started at item 1 (Rome itself).
