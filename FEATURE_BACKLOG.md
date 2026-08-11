@@ -12,10 +12,10 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
 
 ## P0 — foundational
 
-- [ ] **Units toggle (miles ⇄ kilometers)** — settings panel item; default km; persist to `localStorage`. Every other feature reads from a small hook `useUnits()`.
-- [ ] **Ruler tool** — click a start point, click subsequent points, live distance readout in current unit (great-circle for now, road-snap later). Show total + segment. Right-click / double-click ends. Copy-to-clipboard the total. UI: a small floating card top-right when active.
-- [ ] **Search bar actually works** — types into the top-left card, fuzzy-matches the gazetteer (16k places, Latin + modern), shows a dropdown of matches with province + modern name, click to fly there. Google-Maps-style suggestions.
-- [ ] **Place details panel** — click a POI → slide-in left panel with name, category, dates, photo (later), notes, sources, "Directions to here" button. Mirror Google Maps' left panel layout.
+- [x] **Units toggle (miles ⇄ kilometers)** — settings panel item; default km; persist to `localStorage`. Every other feature reads from a small hook `useUnits()`. *(2026-08-11, Shift 2: hamburger menu → "Distance units" panel; `app/useUnits.ts` exposes `useUnits()` + `formatDistance()`, backed by a module-level store + `useSyncExternalStore` so it stays in sync across components without prop drilling. Key: `roman-maps:units`.)*
+- [x] **Ruler tool** — click a start point, click subsequent points, live distance readout in current unit (great-circle for now, road-snap later). Show total + segment. Right-click / double-click ends. Copy-to-clipboard the total. UI: a small floating card top-right when active. *(2026-08-11, Shift 2: `app/Ruler.tsx`. Great-circle haversine, per-leg breakdown when >1 segment, Esc/right-click/dblclick-suppressed to end, Copy total + Clear buttons. Road-snapped distance is a future upgrade.)*
+- [x] **Search bar actually works** — types into the top-left card, fuzzy-matches the gazetteer (16k places, Latin + modern), shows a dropdown of matches with province + modern name, click to fly there. Google-Maps-style suggestions. *(2026-08-11, Shift 2: `app/places.ts` loads+flattens `places_medium.geojson` once (module-level cache), `searchPlaces()` scores exact/startsWith/includes matches with a `major` boost. Chrome.tsx wires the dropdown with mouse + arrow-key/Enter/Esc nav, flies the map via the existing `window.__map` handle. NOTE: this dataset (DARE-derived, ~16.3k points) is missing some very major cities we'd expect — e.g. no "Londinium" entry at all under that name or "London" — flagging as a data gap for a future Track A shift, not something to patch by hand in this file.)*
+- [ ] **Place details panel** — click a POI → slide-in left panel with name, category, dates, photo (later), notes, sources, "Directions to here" button. Mirror Google Maps' left panel layout. *(Partial: POIs from `pois.geojson` now show a click popup with name/dates/notes — see Map.tsx `pois-dot` click handler — but it's a Maplibre popup, not the Google-Maps-style slide-in left panel the backlog asks for. Left this item unchecked; a future shift should replace the popup with a real panel + wire "Directions to here".)*
 - [ ] **Directions** — pick A and B, route along the Roman road network (ORBIS-style routing, but road-only for MVP), show total distance + estimated days-on-foot (assume 25 Roman miles/day for a legion, 15 for a merchant). Route as red line on top of the roads.
 
 ## P1 — parity with Google Maps
@@ -24,7 +24,7 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
 - [ ] **Share button** — copies a URL that restores center/zoom + selected POI + active route.
 - [ ] **Coordinates URL sync** — `#12.4964,41.9028,5z` in the hash; back/forward buttons work.
 - [ ] **Layers menu** — the ▨ button at bottom-right opens a panel; toggles for Roads, Rivers, Provinces, Cities, POIs, Fortifications, Aqueducts, Legions.
-- [ ] **Zoom controls polish** — bigger +/– stacked buttons bottom-right, Google-style shadow.
+- [ ] **Zoom controls polish** — bigger +/– stacked buttons bottom-right, Google-style shadow. *(Observed 2026-08-11, Shift 2: currently there's no visible zoom control at all — `globals.css` has `.maplibregl-ctrl-bottom-right { display: none; }` which hides the default MapLibre `NavigationControl` added in Map.tsx. Left as-is since fixing it means either removing that CSS rule or building the custom control this item asks for, and this shift's Track B time went to units/ruler/search — a good next pick for Shift 3.)*
 - [ ] **Keyboard shortcuts** — arrow keys pan, +/– zoom, `/` focuses search, `M` opens ruler, `L` opens layers.
 - [ ] **Mobile bottom sheet** — on mobile, place details come up as a bottom sheet, drag-to-expand like Google Maps mobile.
 - [ ] **Compass** — appears when map is rotated; click to reset north.
@@ -42,11 +42,21 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
 
 - [ ] **Roman-style typography for POI labels** — Cinzel or Trajan Pro (open-source alternative) for major place labels.
 - [ ] **Terrain shading** — subtle hillshade under the parchment layer (Alps, Pyrenees, Anatolian plateau visible).
-- [ ] **Onboarding hint** — first-visit tooltip on the search bar: "Try 'Londinium' or 'Ephesus'."
+- [ ] **Onboarding hint** — first-visit tooltip on the search bar: "Try 'Londinium' or 'Ephesus'." *(Careful: "Londinium" isn't in `places_medium.geojson` today — see Track A gap note in SHIFT_LOG.md 2026-08-11. Pick example names that are actually in the gazetteer, or wait until that gap is filled.)*
 - [ ] **Dark mode / night-map style** — parchment → dark leather, water dark blue.
+
+## New ideas spotted this shift (2026-08-11, Shift 2)
+
+- [ ] **POI category icons + legend** — `pois-dot` is currently a single flat maroon circle for every category (temple, bath, amphitheater...). Google-Maps-style would give each category its own glyph/icon and a small legend, and tie into the future Layers panel (toggle POI categories independently).
+- [ ] **Layers panel POI toggles** — the Layers button (bottom-right) is still a non-functional mock; now that `pois.geojson` exists, wiring real Roads/Rivers/Provinces/POI toggles is higher value than before.
+- [ ] **Replace POI click-popup with the real details panel** — see the note on "Place details panel" above.
 
 ## Shipped (moved from above; newest on top)
 
+- 2026-08-11 — Shift 2: Search bar wired to the 16k-place gazetteer (fuzzy match, keyboard nav, fly-to)
+- 2026-08-11 — Shift 2: Ruler / measure-distance tool
+- 2026-08-11 — Shift 2: Units toggle (km ⇄ mi), `useUnits()` hook, localStorage-persisted
+- 2026-08-11 — Shift 2: First `pois.geojson` layer — 35 Rome landmarks, wired into Map.tsx with click popups
 - 2026-08-11 — Google-Maps-style search bar chrome (mock only, no search yet)
 - 2026-08-11 — 117 CE epoch pill
 - 2026-08-11 — Base map: land/coasts/provinces/rivers/lakes/roads deployed
