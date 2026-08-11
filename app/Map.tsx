@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { applyAllLayers } from "./useLayers";
+import { selectPoi, clearPoi } from "./usePoiPanel";
 
 export default function Map() {
   const ref = useRef<HTMLDivElement>(null);
@@ -288,7 +289,8 @@ export default function Map() {
           },
         });
 
-        const poiPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: true, offset: 10, maxWidth: "280px" });
+        // Click a POI -> open the slide-in Place details panel (app/PlaceDetails.tsx),
+        // driven by the shared usePoiPanel store rather than a Maplibre popup.
         map.on("mouseenter", "pois-dot", () => {
           if (!map) return;
           map.getCanvas().style.cursor = "pointer";
@@ -298,25 +300,19 @@ export default function Map() {
           map.getCanvas().style.cursor = "";
         });
         map.on("click", "pois-dot", (e) => {
-          if (!map) return;
           const f = e.features?.[0];
           if (!f) return;
           const props: any = f.properties || {};
           // @ts-ignore
           const coords = (f.geometry.type === "Point" && f.geometry.coordinates) || null;
           if (!coords) return;
-          const built = props.built ? (props.built < 0 ? `${-props.built} BCE` : `${props.built} CE`) : "";
-          poiPopup
-            .setLngLat(coords as [number, number])
-            .setHTML(
-              `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
-                 <div style="font-weight: 600; font-size: 14px;">${props.name_latin || props.name_english}</div>
-                 ${props.name_english && props.name_english !== props.name_latin ? `<div style="color:#5f6368; font-size:12px;">${props.name_english}</div>` : ""}
-                 ${built ? `<div style="color:#5f6368; font-size:11px; margin-top:4px;">Built ${built}</div>` : ""}
-                 ${props.notes ? `<div style="margin-top:6px; font-size:12px; line-height:1.4;">${props.notes}</div>` : ""}
-               </div>`,
-            )
-            .addTo(map);
+          selectPoi(props, coords as [number, number]);
+        });
+        // Clicking empty map space (no POI under the cursor) closes the panel, Google-Maps-style.
+        map.on("click", (e) => {
+          if (!map) return;
+          const hits = map.queryRenderedFeatures(e.point, { layers: ["pois-dot"] });
+          if (hits.length === 0) clearPoi();
         });
         kick();
 
