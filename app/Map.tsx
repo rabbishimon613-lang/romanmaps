@@ -247,6 +247,76 @@ export default function Map() {
           map.getCanvas().style.cursor = "";
           popup.remove();
         });
+
+        // Phase 4: curated POIs (temples, baths, monuments...) — richer than the raw gazetteer dots.
+        const pois = await fetch("/data/pois.geojson").then((r) => r.json());
+        if (cancelled || !map) return;
+        map.addSource("pois", { type: "geojson", data: pois });
+        map.addLayer({
+          id: "pois-dot",
+          type: "circle",
+          source: "pois",
+          filter: ["==", ["get", "extant_117ce"], true],
+          paint: {
+            "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3, 8, 7],
+            "circle-color": "#8b1a1a",
+            "circle-stroke-color": "#f4ead5",
+            "circle-stroke-width": 1.5,
+          },
+        });
+        map.addLayer({
+          id: "pois-label",
+          type: "symbol",
+          source: "pois",
+          filter: ["==", ["get", "extant_117ce"], true],
+          minzoom: 6,
+          layout: {
+            "text-field": ["coalesce", ["get", "name_latin"], ["get", "name_english"]],
+            "text-font": ["Noto Sans Regular"],
+            "text-size": 12,
+            "text-offset": [0, 1],
+            "text-anchor": "top",
+            "text-optional": true,
+            "text-allow-overlap": false,
+          },
+          paint: {
+            "text-color": "#5c1414",
+            "text-halo-color": "#f4ead5",
+            "text-halo-width": 1.6,
+          },
+        });
+
+        const poiPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: true, offset: 10, maxWidth: "280px" });
+        map.on("mouseenter", "pois-dot", () => {
+          if (!map) return;
+          map.getCanvas().style.cursor = "pointer";
+        });
+        map.on("mouseleave", "pois-dot", () => {
+          if (!map) return;
+          map.getCanvas().style.cursor = "";
+        });
+        map.on("click", "pois-dot", (e) => {
+          if (!map) return;
+          const f = e.features?.[0];
+          if (!f) return;
+          const props: any = f.properties || {};
+          // @ts-ignore
+          const coords = (f.geometry.type === "Point" && f.geometry.coordinates) || null;
+          if (!coords) return;
+          const built = props.built ? (props.built < 0 ? `${-props.built} BCE` : `${props.built} CE`) : "";
+          poiPopup
+            .setLngLat(coords as [number, number])
+            .setHTML(
+              `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                 <div style="font-weight: 600; font-size: 14px;">${props.name_latin || props.name_english}</div>
+                 ${props.name_english && props.name_english !== props.name_latin ? `<div style="color:#5f6368; font-size:12px;">${props.name_english}</div>` : ""}
+                 ${built ? `<div style="color:#5f6368; font-size:11px; margin-top:4px;">Built ${built}</div>` : ""}
+                 ${props.notes ? `<div style="margin-top:6px; font-size:12px; line-height:1.4;">${props.notes}</div>` : ""}
+               </div>`,
+            )
+            .addTo(map);
+        });
+        kick();
       });
     })();
 

@@ -1,0 +1,741 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.487194, 41.891616] },
+      "properties": {
+        "id": "poi_forum_romanum",
+        "category": "forum",
+        "name_latin": "Forum Romanum",
+        "name_english": "Roman Forum",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "built": -700,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The civic, religious, and commercial heart of Rome since the archaic period; by 117 CE it was ringed by the Curia, basilicas, temples, and the Rostra. Point marks the representative centroid of the forum valley between the Capitoline and Palatine.",
+        "sources": [
+          "https://pleiades.stoa.org/places/502866838",
+          "https://en.wikipedia.org/wiki/Roman_Forum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.485490, 41.892960] },
+      "properties": {
+        "id": "poi_curia_julia",
+        "category": "curia",
+        "name_latin": "Curia Iulia",
+        "name_english": "Curia Julia (Senate House)",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Roman Forum",
+        "built": -44,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Third permanent Senate House on this site, begun by Julius Caesar in 44 BCE to replace the Curia Cornelia/Hostilia, completed and dedicated by Augustus in 29 BCE; rebuilt again after a fire under Domitian c. 94 CE. Standing and in use as the meeting hall of the Senate in 117 CE. Survives today largely intact because it was converted into the church of Sant'Adriano in 630 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Curia_Julia",
+          "https://topostext.org/place/419125BCJu"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.484780, 41.891950] },
+      "properties": {
+        "id": "poi_basilica_julia",
+        "category": "basilica",
+        "name_latin": "Basilica Iulia",
+        "name_english": "Basilica Julia",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Roman Forum",
+        "built": -46,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Civil law-court basilica on the south side of the Forum, begun by Caesar in 54 BCE, dedicated unfinished in 46 BCE, completed by Augustus and rededicated in 12 CE to Gaius and Lucius Caesar after a fire. Housed the centumviral court; standing in 117 CE (it burned again only in 283 CE under Carinus).",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Basilica_Julia",
+          "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/Basilica_Julia.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.486230, 41.892554] },
+      "properties": {
+        "id": "poi_basilica_aemilia",
+        "category": "basilica",
+        "name_latin": "Basilica Aemilia (Basilica Pauli)",
+        "name_english": "Basilica Aemilia",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Roman Forum",
+        "built": -179,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "North side of the Forum, opposite the Basilica Julia; first built by the censors M. Aemilius Lepidus and M. Fulvius Nobilior in 179 BCE, rebuilt after fires under Augustus (14 BCE) and again after a fire in 22 CE under Tiberius, with continuing Julio-Claudian era repairs. Pliny (NH 36.24) counted it among the most beautiful buildings in the world; standing in 117 CE (it was finally destroyed by the Visigothic sack of 410 CE).",
+        "sources": [
+          "Pliny, Natural History 36.24",
+          "https://en.wikipedia.org/wiki/Basilica_Aemilia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.484170, 41.892500] },
+      "properties": {
+        "id": "poi_temple_saturn",
+        "category": "temple",
+        "name_latin": "Aedes Saturni",
+        "name_english": "Temple of Saturn",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Roman Forum",
+        "built": -497,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "One of the oldest temples in the Forum, dedicated 497 BCE at the foot of the Capitoline; rebuilt by L. Munatius Plancus c. 42 BCE. Doubled as the state treasury (Aerarium Populi Romani), standing and functioning as such in 117 CE (the surviving columned facade dates from a later, post-283 CE, rebuild).",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Saturn",
+          "https://topostext.org/place/419125SSat"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.486200, 41.891700] },
+      "properties": {
+        "id": "poi_temple_vesta",
+        "category": "temple",
+        "name_latin": "Aedes Vestae",
+        "name_english": "Temple of Vesta",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Roman Forum",
+        "built": -700,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Round temple housing Rome's sacred hearth-fire, tended by the Vestal Virgins; rebuilt repeatedly after fires (most famously by Augustus c. 12 BCE, and later again under Julia Domna in 191 CE, after our snapshot date). The 117 CE-era structure was the Augustan-period rebuild; in continuous cult use.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Vesta",
+          "https://penelope.uchicago.edu/~grout/encyclopaedia_romana/romanforum/vesta.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.486400, 41.891600] },
+      "properties": {
+        "id": "poi_atrium_vestae",
+        "category": "monument",
+        "name_latin": "Atrium Vestae",
+        "name_english": "House of the Vestals",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Roman Forum",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Residence of the six Vestal Virgins adjoining the Temple of Vesta; the building visible today is largely a 2nd-century CE Hadrianic/Trajanic-era rebuild replacing earlier structures. Occupied and in continuous use in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/House_of_the_Vestals",
+          "https://colosseo.it/en/marvels/temple-of-vesta-and-vestal-house-atrium-vestae/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.485560, 41.891670] },
+      "properties": {
+        "id": "poi_temple_castor_pollux",
+        "category": "temple",
+        "name_latin": "Aedes Castoris et Pollucis",
+        "name_english": "Temple of Castor and Pollux",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Roman Forum",
+        "built": -484,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Vowed 499/496 BCE after the Battle of Lake Regillus, dedicated 484 BCE; rebuilt by Tiberius after a fire, rededicated 6 CE in the names of Tiberius and his late brother Drusus. Standing in 117 CE; three Corinthian columns of this Tiberian rebuild survive today.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Castor_and_Pollux",
+          "https://penelope.uchicago.edu/encyclopaedia_romana/romanforum/castor.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.486246, 41.891943] },
+      "properties": {
+        "id": "poi_temple_divus_julius",
+        "category": "temple",
+        "name_latin": "Aedes Divi Iulii",
+        "name_english": "Temple of Divus Julius",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Roman Forum",
+        "built": -29,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Built on the site of Julius Caesar's funeral pyre, authorized by the Second Triumvirate in 42 BCE and dedicated by Augustus on 18 August 29 BCE; the first temple in Rome dedicated to a deified mortal Roman. Standing in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Caesar",
+          "https://www.judaism-and-rome.org/temple-divus-iulius-and-actian-and-parthian-triumphal-arches-29-bce"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.484245, 41.892930] },
+      "properties": {
+        "id": "poi_temple_concord",
+        "category": "temple",
+        "name_latin": "Aedes Concordiae Augustae",
+        "name_english": "Temple of Concord",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Roman Forum",
+        "built": -121,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Original temple vowed 367 BCE, rebuilt 121 BCE by L. Opimius; completely rebuilt on a larger scale by the future emperor Tiberius between 7 BCE and 10 CE and rededicated as the Aedes Concordiae Augustae on 16 January 10 CE. This Tiberian-era temple was standing at the west end of the Forum in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Concord",
+          "https://www.digitalaugustanrome.org/records/concordia-augusta-aedes/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.486400, 41.891900] },
+      "properties": {
+        "id": "poi_regia",
+        "category": "monument",
+        "name_latin": "Regia",
+        "name_english": "Regia",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Roman Forum",
+        "built": -715,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Traditionally the residence of the kings of Rome, later the official headquarters of the Pontifex Maximus and seat of the pontifical archives; rebuilt in stone/marble after a fire in 36 BCE by Cn. Domitius Calvinus. Standing and functioning as the pontifical office in 117 CE (in this period the emperor himself held the office of Pontifex Maximus).",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Regia",
+          "https://www.digitalaugustanrome.org/records/regia/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.485300, 41.892850] },
+      "properties": {
+        "id": "poi_rostra",
+        "category": "monument",
+        "name_latin": "Rostra Augusti",
+        "name_english": "Rostra (Speakers' Platform)",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Roman Forum",
+        "built": -44,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Public oratory platform at the northwest end of the Forum square, decorated with captured ships' prows (rostra); rebuilt by Caesar in 44 BCE as a curved 'hemicycle' and extended by Augustus with a rectangular marble-faced platform c. 24 m wide. In active use for public speeches in 117 CE. Coordinates are approximate (no precisely surveyed findspot published for the platform's exact footprint independent of later Severan-era rebuilding).",
+        "sources": [
+          "https://www.digitalaugustanrome.org/records/rostra-augustus/",
+          "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/Rostra_Augusti.html"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.488585, 41.890717] },
+      "properties": {
+        "id": "poi_arch_titus",
+        "category": "arch",
+        "name_latin": "Arcus Titi",
+        "name_english": "Arch of Titus",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Via Sacra, Roman Forum",
+        "built": 81,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Triumphal arch on the Via Sacra commemorating the deified Titus and the joint Flavian victory in the Jewish War (70 CE); erected by Domitian shortly after Titus's death, c. 81-82 CE. Standing in 117 CE; famous for its relief panels of the spoils of the Jerusalem Temple.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Arch_of_Titus",
+          "https://www.worldhistory.org/article/499/the-arch-of-titus-rome/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.481670, 41.892220] },
+      "properties": {
+        "id": "poi_temple_jupiter_optimus_maximus",
+        "category": "temple",
+        "name_latin": "Aedes Iovis Optimi Maximi Capitolini",
+        "name_english": "Temple of Jupiter Optimus Maximus",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Capitoline Hill",
+        "built": -509,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Chief state temple of Rome atop the Capitoline, originally dedicated 509 BCE; destroyed and rebuilt three times (83 BCE fire, Vitellian-era fire 69 CE, Titus-era fire 80 CE), with the final Domitianic reconstruction in gleaming Pentelic marble dedicated c. 82 CE. This was the temple standing in 117 CE, the terminus of every triumphal procession.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Jupiter_Optimus_Maximus",
+          "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/Aedes_Jovis_Capitolini.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.483611, 41.892778] },
+      "properties": {
+        "id": "poi_tabularium",
+        "category": "monument",
+        "name_latin": "Tabularium",
+        "name_english": "Tabularium",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Capitoline Hill",
+        "built": -78,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Rome's public records office, built into the Capitoline slope above the Forum, ordered under Sulla and completed 78 BCE by consul Q. Lutatius Catulus following the fire of 83 BCE. Standing and in use in 117 CE; its lower arcades survive intact within the modern Capitoline Museums.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tabularium",
+          "https://www.museicapitolini.org/en/collezioni/percorsi_per_sale/tabularium"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.486600, 41.887700] },
+      "properties": {
+        "id": "poi_domus_augustana",
+        "category": "palace",
+        "name_latin": "Domus Augustana",
+        "name_english": "Domus Augustana (Imperial Palace, private wing)",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Palatine Hill",
+        "built": 92,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Private residential wing of Domitian's vast Flavian imperial palace on the Palatine, completed 92 CE by his architect Rabirius; from this point the main imperial residence of Rome through the 2nd century. In use as the emperor's palace in 117 CE (Trajan died in Cilicia, but Rome's imperial household still resided here).",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Domus_Augustana",
+          "https://en.wikipedia.org/wiki/Palace_of_Domitian"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.486750, 41.888920] },
+      "properties": {
+        "id": "poi_domus_flavia",
+        "category": "palace",
+        "name_latin": "Domus Flavia",
+        "name_english": "Domus Flavia (Imperial Palace, public wing)",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Palatine Hill",
+        "built": 92,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Official/public wing of Domitian's Palatine palace complex (audience hall, basilica, triclinium, and a large peristyle with an octagonal island fountain), completed 92 CE, architect Rabirius. Standing and in use for imperial ceremony and state banquets in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Flavian_Palace",
+          "https://www.hmdb.org/m.asp?m=84247"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.485133, 41.886131] },
+      "properties": {
+        "id": "poi_circus_maximus",
+        "category": "circus",
+        "name_latin": "Circus Maximus",
+        "name_english": "Circus Maximus",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "built": -600,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Rome's great chariot-racing stadium in the valley between the Palatine and Aventine, traditionally founded under the kings; rebuilt in stone/monumentalized under Julius Caesar and Augustus, and rebuilt again by Trajan after a fire under Domitian, with Trajan's reconstruction completed c. 103 CE. This Trajanic-era Circus, capable of holding well over 150,000 spectators, was in full use in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Circus_Maximus",
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0054:entry%3Dcircus-maximus"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.492200, 41.890200] },
+      "properties": {
+        "id": "poi_colosseum",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum Flavium",
+        "name_english": "Colosseum (Flavian Amphitheatre)",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Rome's great amphitheater, begun under Vespasian on the drained lake of Nero's Domus Aurea, dedicated by Titus in 80 CE with 100 days of games, and completed with a fourth story added by Domitian c. 82 CE. Fully standing and hosting spectacles in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Colosseum",
+          "http://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/Amphitheatrum_Flavium.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.485870, 41.895420] },
+      "properties": {
+        "id": "poi_forum_traiani",
+        "category": "forum",
+        "name_latin": "Forum Traiani",
+        "name_english": "Trajan's Forum",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "built": 112,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Last and largest of the Imperial Fora, built with the spoils of the Dacian Wars, designed by Apollodorus of Damascus, construction begun c. 105-107 CE and formally dedicated 112 CE; the Basilica Ulpia, twin libraries, and Column followed by 113 CE. Newly completed and the showpiece of the city in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Trajan%27s_Forum",
+          "https://smarthistory.org/forum-and-markets-of-trajan/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.486190, 41.895610] },
+      "properties": {
+        "id": "poi_trajan_markets",
+        "category": "market",
+        "name_latin": "Mercatus Traiani",
+        "name_english": "Trajan's Markets",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "built": 110,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Multi-level complex of shops, offices, and market halls built into the excavated Quirinal slope beside Trajan's Forum, constructed c. 100-110 CE by Apollodorus of Damascus, inaugurated 113 CE. Fully functioning commercial complex in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Trajan%27s_Market",
+          "https://structurae.net/en/structures/trajan-s-market"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.484170, 41.895830] },
+      "properties": {
+        "id": "poi_trajan_column",
+        "category": "column",
+        "name_latin": "Columna Traiani",
+        "name_english": "Trajan's Column",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Forum of Trajan",
+        "built": 113,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "38 m (with pedestal) freestanding marble victory column between the Basilica Ulpia and the twin libraries, its shaft wrapped in a continuous helical relief depicting the Dacian Wars; dedicated 12 May 113 CE. Newly erected and gleaming in 117 CE; Trajan's ashes were interred in its base after his death in August 117.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Trajan%27s_Column",
+          "https://www.britannica.com/topic/Trajans-Column"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.486300, 41.895500] },
+      "properties": {
+        "id": "poi_bibliotheca_ulpia",
+        "category": "library",
+        "name_latin": "Bibliotheca Ulpia",
+        "name_english": "Ulpian Library",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Forum of Trajan",
+        "built": 114,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Twin library halls (one Latin, one Greek), each holding an estimated 20,000 scrolls, flanking Trajan's Column within the Forum of Trajan; founded by Trajan c. 114 CE. One of the great libraries of the ancient world, newly opened and functioning in 117 CE. Coordinates approximate the space between the Basilica Ulpia and the Temple of the Deified Trajan.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ulpian_Library",
+          "https://www.historyofinformation.com/detail.php?id=154"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.497039, 41.892151] },
+      "properties": {
+        "id": "poi_baths_trajan",
+        "category": "bathhouse",
+        "name_latin": "Thermae Traiani",
+        "name_english": "Baths of Trajan",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Oppian Hill",
+        "built": 109,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The first of Rome's monumental 'imperial' bath complexes, built on the Oppian Hill over part of the buried Domus Aurea; designed by Apollodorus of Damascus and formally inaugurated on 22 June (Kalends of July) 109 CE. Covering roughly 330 x 340 m, it was operating at full scale in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Baths_of_Trajan",
+          "https://www.turismoroma.it/en/places/trajans-baths"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.496541, 41.893413] },
+      "properties": {
+        "id": "poi_baths_titus",
+        "category": "bathhouse",
+        "name_latin": "Thermae Titi",
+        "name_english": "Baths of Titus",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Esquiline/Oppian Hill",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Public bath complex built quickly by Titus and dedicated in 80 or 81 CE alongside the newly opened Colosseum, incorporating part of Nero's former Domus Aurea. One of the earliest 'imperial thermae' establishing the symmetrical plan later copied at the Baths of Trajan next door; still in operation in 117 CE, though already overshadowed by Trajan's larger complex.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Baths_of_Titus",
+          "https://www.globalsecurity.org/military/world/spqr/rome-baths-titus.htm"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.475800, 41.898700] },
+      "properties": {
+        "id": "poi_baths_nero",
+        "category": "bathhouse",
+        "name_latin": "Thermae Neronianae",
+        "name_english": "Baths of Nero",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Campus Martius",
+        "built": 62,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Public baths in the Campus Martius near the Pantheon and Saepta, built by Nero c. 62-64 CE (the earliest of Rome's grand imperial thermae, predating even Titus's); listed among the notable buildings of the city by Martial and later authors. Still standing and in use in 117 CE under its original name (it was only enlarged and renamed Thermae Alexandrinae after Severus Alexander's restoration in the 3rd century).",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Baths_of_Nero",
+          "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/Thermae_Neronianae.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.476900, 41.898600] },
+      "properties": {
+        "id": "poi_pantheon",
+        "category": "temple",
+        "name_latin": "Pantheon",
+        "name_english": "Pantheon",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Campus Martius",
+        "built": 114,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "COMPLICATED CASE - marked NOT extant/complete as of August 117 CE, deliberately, per snapshot rules. Agrippa's original rectangular Pantheon (27 BCE) burned in the great fire of 80 CE; Domitian's rebuild burned again after a lightning strike, per Cassius Dio 66.24 (dated to 110 CE under Trajan). Brick-stamp analysis by Lise Hetland ('Dating the Pantheon', JRA 2007) argues the great rotunda now standing was begun by Trajan shortly after the 110 CE fire, with site clearance and material orders underway by c. 114 CE, and was structurally advanced but very likely still an active construction site at Trajan's death in August 117 -- Hadrian (who acceded 11 August 117) gets conventional credit for the building and it was not dedicated until after 125 CE. Because it was not a complete, functioning temple on 8 August 117 CE, extant_117ce is set false; kept on the map (per project guardrails for commissioned-but-unfinished works) flagged as an active building site at the moment of the snapshot.",
+        "sources": [
+          "Cassius Dio, Roman History 66.24",
+          "Lise Hetland, 'Dating the Pantheon', Journal of Roman Archaeology 20 (2007), summarized at https://erenow.org/ancient/the-pantheon-from-antiquity-to-the-present/3.php",
+          "https://en.wikipedia.org/wiki/Pantheon,_Rome"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.479480, 41.891910] },
+      "properties": {
+        "id": "poi_theatre_marcellus",
+        "category": "theater",
+        "name_latin": "Theatrum Marcelli",
+        "name_english": "Theatre of Marcellus",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "built": -13,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Permanent stone theater begun by Julius Caesar and completed/dedicated by Augustus in 13 BCE, named for his deceased nephew and heir-apparent Marcellus; one of the earliest permanent theaters in Rome, seating roughly 11,000-20,000. Standing and in use in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Theatre_of_Marcellus",
+          "https://ancienttheatrearchive.com/theatre/marcellus-theatre-rome-italy/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.476500, 41.892800] },
+      "properties": {
+        "id": "poi_circus_flaminius",
+        "category": "circus",
+        "name_latin": "Circus Flaminius",
+        "name_english": "Circus Flaminius",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Campus Martius",
+        "built": -221,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Open consecrated ground in the southern Campus Martius, laid out by censor Gaius Flaminius in 221 BCE; unlike the Circus Maximus it was never a fully enclosed monumental racetrack, functioning more as a public square used for games, assemblies, and triumphal musters, surrounded over time by temples and porticoes (e.g. Porticus Octaviae). Still an active open space in 117 CE. Its exact perimeter is not archaeologically fixed, so the point is an approximate centroid.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Circus_Flaminius",
+          "https://www.digitalaugustanrome.org/records/circus-flaminius/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.476400, 41.906100] },
+      "properties": {
+        "id": "poi_mausoleum_augustus",
+        "category": "mausoleum",
+        "name_latin": "Mausoleum Augusti",
+        "name_english": "Mausoleum of Augustus",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Campus Martius",
+        "built": -28,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Vast circular tomb (90 m diameter, c. 42 m tall) built by Augustus in 28 BCE in the northern Campus Martius as the dynastic tomb for himself and the Julio-Claudian family, planted with cypresses and topped by his statue. Standing and receiving imperial burials (it remained the resting place of the Julio-Claudians and was still an active monument, though Trajan himself was interred instead at the base of his own Column) in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Mausoleum_of_Augustus",
+          "https://www.worldhistory.org/article/657/mausoleum-of-augustus/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.466300, 41.903100] },
+      "properties": {
+        "id": "poi_mausoleum_hadrian",
+        "category": "mausoleum",
+        "name_latin": "Mausoleum Hadriani",
+        "name_english": "Mausoleum of Hadrian (future Castel Sant'Angelo)",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, right bank of the Tiber",
+        "built": 123,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "NOT standing in 117 CE - included on the map anyway (per project guardrails for a site of major later significance under construction near the snapshot date) because Hadrian's accession is literally the event that closes this snapshot (Trajan died 8 August 117; Hadrian, acclaimed emperor days later, is traditionally credited as planner of this tomb). Brick-stamp evidence gives a terminus post quem of 123 CE for construction, with most scholarship favoring an actual building start c. 125-130 CE; it was completed and dedicated only in 139 CE under Antoninus Pius, after Hadrian's own death. In August 117 CE this was simply open ground on the right bank of the Tiber -- no construction had yet begun.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Castel_Sant%27Angelo",
+          "https://www.open.edu/openlearn/history-the-arts/hadrians-rome/content-section-5.6"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.477600, 41.903300] },
+      "properties": {
+        "id": "poi_ara_pacis",
+        "category": "monument",
+        "name_latin": "Ara Pacis Augustae",
+        "name_english": "Ara Pacis (Altar of Augustan Peace)",
+        "province": "Italia",
+        "modern_location": "Rome, Italy (original site near Piazza San Lorenzo in Lucina; monument now displayed ~350m away near the Mausoleum of Augustus)",
+        "built": -9,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Marble altar within a sculpted precinct wall commemorating the Pax Romana established by Augustus, commissioned by the Senate in 13 BCE and consecrated 30 January 9 BCE, sited on the west side of the Via Flaminia in the Campus Martius. Standing and in cult use in 117 CE. Coordinates mark the approximate ancient findspot beneath the later Palazzo Fiano-Almagia (excavated 1937-38); the monument was moved and reassembled at its current Richard Meier museum site near Augustus's Mausoleum only in the 20th century.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ara_Pacis",
+          "https://ajaonline.org/online-museum-review/370/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.495280, 41.891390] },
+      "properties": {
+        "id": "poi_domus_aurea",
+        "category": "palace",
+        "name_latin": "Domus Aurea",
+        "name_english": "Domus Aurea (Nero's Golden House)",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Oppian/Esquiline/Palatine/Caelian slopes",
+        "built": 64,
+        "destroyed": 104,
+        "extant_117ce": false,
+        "notes": "NOT extant as a functioning palace in 117 CE - kept on the map for context because it directly underlies two extant POIs. Nero's sprawling post-fire palace complex (64 CE) was disowned by the Flavians: its lake was drained for the Colosseum, and its Esquiline wing was deliberately buried under earthen fill to serve as the foundation for the Baths of Titus (80 CE) and then the much larger Baths of Trajan (104-109 CE). By 117 CE the site was entirely subsumed beneath Trajan's bathing complex; the buried frescoed halls survived underground and were not rediscovered until the Renaissance.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Domus_Aurea",
+          "https://en.wikipedia.org/wiki/Baths_of_Titus"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.515242, 41.891457] },
+      "properties": {
+        "id": "poi_porta_maggiore_aqueducts",
+        "category": "aqueduct",
+        "name_latin": "Aquae Claudia et Anio Novus (ad Portam Maiorem)",
+        "name_english": "Aqua Claudia / Anio Novus crossing at Porta Maggiore",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "built": 52,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Monumental double-arched travertine structure built by Claudius in 52 CE to carry the Aqua Claudia and (stacked above it) the Anio Novus aqueduct channels across the Via Praenestina and Via Labicana as they entered the city; restored under Vespasian and Titus. This arched aqueduct crossing was fully functional in 117 CE, supplying two of Rome's principal aqueducts (it was only incorporated as a city gate, Porta Maggiore, into the Aurelian Walls in the 270s CE, after our snapshot).",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Porta_Maggiore",
+          "http://www.romanaqueducts.info/aquasite/romaclaudia/index.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.483300, 41.900900] },
+      "properties": {
+        "id": "poi_aqua_virgo_terminus",
+        "category": "aqueduct",
+        "name_latin": "Aqua Virgo",
+        "name_english": "Aqua Virgo terminus (later site of the Trevi Fountain)",
+        "province": "Italia",
+        "modern_location": "Rome, Italy, Campus Martius",
+        "built": -19,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Aqueduct completed by Agrippa in 19 BCE, running c. 20.5 km mostly underground from springs east of Rome, built specifically to feed Agrippa's Baths and the pools/canal (Euripus) of the Campus Martius. Fully operational and delivering water into central Rome in 117 CE; its terminal distribution point in antiquity lay near where the Baroque Trevi Fountain now stands (the fountain itself is an 18th-century addition, included here only to mark the ancient terminus location).",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Aqua_Virgo",
+          "https://romanhistory.org/structures/aqua-virgo"
+        ],
+        "confidence": "medium"
+      }
+    }
+  ]
+}
