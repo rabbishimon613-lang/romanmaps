@@ -1160,6 +1160,819 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0838,
+          51.5132
+        ]
+      },
+      "properties": {
+        "id": "poi_londinium_forum_basilica",
+        "category": "basilica",
+        "name_latin": "Forum et Basilica Londinii",
+        "name_english": "Forum and Basilica of Londinium",
+        "province": "Britannia",
+        "modern_location": "London, UK",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The second, much larger forum-basilica complex, rebuilt on the site of a smaller Flavian-era predecessor (c. 70-80 CE, demolished c. 100 CE). At roughly 167m long the basilica was the largest Roman building north of the Alps, but excavation/dating work (Leadenhall Court excavations 1984-86; reassessed in Britannia) places its construction across c. 100-125 CE, with several sources giving a completion date around 122 CE -- plausibly timed to Hadrian's visit to Britain that year. At the moment of this snapshot (Trajan's death, Aug 117) it was very likely still an active building site, not a finished civic building, so marked extant_117ce:false on the same 'commissioned but unfinished' logic Shift 2 applied to the Pantheon. Point marks the Leadenhall Market/Gracechurch Street site of the basilica's east end.",
+        "sources": [
+          "https://www.cambridge.org/core/journals/britannia/article/reassessment-of-the-second-basilica-in-london-ad-100400-excavations-at-leadenhall-court-198486/B68344E4B64EE6D6750782B1F308BB1A",
+          "https://en.wikipedia.org/wiki/Londinium"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0904,
+          51.5111
+        ]
+      },
+      "properties": {
+        "id": "poi_londinium_governors_palace",
+        "category": "palace",
+        "name_latin": "Praetorium Londinii",
+        "name_english": "Governor's Palace (Cannon Street)",
+        "province": "Britannia",
+        "modern_location": "London, UK",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A large official residence and administrative complex on the north bank of the Thames, built c. 80-100 CE, with offices, reception halls, private quarters and an ornamental pool; identified with the site now under Cannon Street station. Plausibly the residence/office of the governor of Britannia. Definitely standing and in continuous official use by 117 CE.",
+        "sources": [
+          "https://knowyourlondon.wordpress.com/2023/11/22/roman-governors-palace/",
+          "https://londonguidedwalks.co.uk/cannon-street-station/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0933,
+          51.5177
+        ]
+      },
+      "properties": {
+        "id": "poi_londinium_cripplegate_fort",
+        "category": "fort",
+        "name_latin": "Castra Londinii",
+        "name_english": "Cripplegate Fort",
+        "province": "Britannia",
+        "modern_location": "London, UK",
+        "built": 120,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A stone-walled 'playing-card' fort (c. 220m x 215m, ~4.7ha) in the northwest corner of Londinium, garrisoning roughly 1,000 troops including the governor's ceremonial guard. Archaeological consensus (Grimes excavations 1947-68; Britannia journal, 'London's Hadrianic War') dates the stone fort to c. 120 CE, plausibly connected to Hadrian's AD 122 visit to the province -- i.e. built after Trajan's death. No securely attested earlier (timber) fort phase on this exact site predates 117 CE, so marked extant_117ce:false; kept on the map since it's one of the most significant military structures in Roman London and its absence at the snapshot moment is itself a notable fact about 117 CE Londinium (still an undefended civilian town).",
+        "sources": [
+          "https://www.cambridge.org/core/journals/britannia/article/londons-hadrianic-war/BBA576C72A2E609CA16733B5B52A8B2D",
+          "https://en.wikipedia.org/wiki/London_Wall"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0876,
+          51.5079
+        ]
+      },
+      "properties": {
+        "id": "poi_londinium_bridge",
+        "category": "bridge",
+        "name_latin": "Pons Londinii",
+        "name_english": "Roman London Bridge crossing",
+        "province": "Britannia",
+        "modern_location": "London, UK",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The original Roman timber bridge across the Thames, close to the modern London Bridge site, around which Londinium's settlement first grew from c. 47-50 CE. Roman bridges at this crossing were periodically rebuilt in timber throughout the occupation, so the exact physical structure standing in 117 CE is not separately dated in the sources found this shift -- but a bridge at this crossing point is universally agreed to have been continuously in place and in use since the mid-1st century CE. Confidence kept low because of that structural-continuity uncertainty, not because the crossing's existence is in doubt. New 'bridge' category introduced (schema has no existing bridge entry); nothing in Map.tsx enforces a closed category enum.",
+        "sources": [
+          "https://www.londonmuseum.org.uk/collections/london-stories/timeline-roman-london-londinium/",
+          "https://en.wikipedia.org/wiki/Londinium"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.886,
+          31.2148
+        ]
+      },
+      "properties": {
+        "id": "poi_alexandria_pharos",
+        "category": "lighthouse",
+        "name_latin": "Pharos Alexandriae",
+        "name_english": "Lighthouse of Alexandria (Pharos)",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "built": -280,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "One of the Seven Wonders of the Ancient World; construction begun under Ptolemy I Soter, completed under Ptolemy II Philadelphus (traditionally dated 247/246 BCE), on the island of Pharos at the harbor mouth. Described in detail by Pliny (who gives its architect, Sostratus of Cnidus) and Strabo. Still standing and functioning as an active lighthouse throughout the Roman imperial period at the 117 CE snapshot; it survived until a series of medieval earthquakes felled it between the 11th and 14th centuries CE (long after our snapshot). Point is the traditional site, now occupied by the 15th-century Qaitbay Citadel.",
+        "sources": [
+          "Pliny NH 36.83",
+          "Strabo Geography 17.1.6",
+          "https://www.worldhistory.org/Lighthouse_of_Alexandria/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9075,
+          31.2033
+        ]
+      },
+      "properties": {
+        "id": "poi_alexandria_library_mouseion",
+        "category": "library",
+        "name_latin": "Bibliotheca Alexandrina et Mouseion",
+        "name_english": "Great Library / Mouseion of Alexandria",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "built": -295,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Founded under Ptolemy I/II as part of the royal Mouseion research institute in the Bruchion (royal quarter). Its status by 117 CE is genuinely contested and this entry follows the guardrail for ambiguous cases: the institution's academic prestige had already been damaged by Ptolemy VIII's purge of scholars (145 BCE) and a portion of its holdings/buildings burned during Caesar's siege in 48 BCE (Roman civil-war fire that spread from the docks) -- but ancient sources (e.g. Athenaeus, writing in the later 2nd century CE) still describe scholarly activity in Alexandria, so the institution had not vanished outright by 117. Additionally, Alexandria itself was significantly damaged in the Kitos War / Jewish diaspora revolt of 115-117 CE -- the revolt was suppressed by Trajan's general Marcius Turbo in August 117 CE, essentially the same month as Trajan's death -- and Cassius Dio records major destruction of temples and public buildings in the city during that fighting, though no source found this shift specifically ties Library/Mouseion buildings to that damage. Kept extant_117ce:true (the institution demonstrably still existed) but confidence low given the compounding uncertainty about the physical building's exact condition at the snapshot moment. Coordinates are an approximate representative point in the former royal quarter (no precisely excavated Mouseion structure survives); wider tolerance intended.",
+        "sources": [
+          "https://www.worldhistory.org/Library_of_Alexandria/",
+          "https://www.badancient.com/claims/julius-caesar-burn-library-of-alexandria/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.8915,
+          31.1758
+        ]
+      },
+      "properties": {
+        "id": "poi_alexandria_serapeum",
+        "category": "temple",
+        "name_latin": "Serapeum Alexandriae",
+        "name_english": "Serapeum of Alexandria",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "built": -246,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Great Greco-Egyptian temple to Serapis built under Ptolemy III Euergetes (r. 246-222 BCE), housing a 'daughter library' subordinate to the main Mouseion collection. Sited on Alexandria's only natural hill, in the Rhakotis quarter. Standing and functioning at 117 CE; it was later destroyed by a Christian mob in 391 CE under Theophilus of Alexandria -- well after this snapshot.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Serapeum_of_Alexandria",
+          "https://www.worldhistory.org/alexandria/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.885,
+          31.1994
+        ]
+      },
+      "properties": {
+        "id": "poi_alexandria_heptastadion",
+        "category": "road",
+        "name_latin": "Heptastadion",
+        "name_english": "Heptastadion causeway",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "built": -300,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A roughly seven-stadia (c. 1,300m) mole/causeway built under Ptolemy I connecting the mainland to Pharos island, dividing Alexandria's harbor into the Great Harbor and the harbor of Eunostos. Functioned as both a dam and a road; still in use in 117 CE. Later silted up and built over, forming the base of the modern city's Ras el-Tin peninsula neighborhood, so its exact ancient course is only approximately reconstructable -- point marks the traditional midpoint. Used 'road' as the closest existing category rather than adding a new one for a single feature.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Heptastadion",
+          "https://www.britannica.com/place/Heptastadion"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.3417,
+          37.9391
+        ]
+      },
+      "properties": {
+        "id": "poi_ephesus_great_theatre",
+        "category": "theater",
+        "name_latin": "Theatrum Ephesi",
+        "name_english": "Great Theatre of Ephesus",
+        "province": "Asia",
+        "modern_location": "Selçuk, Turkey",
+        "built": -200,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Originally cut into the west slope of Panayır Dağ (Mt Pion) in the Hellenistic period (c. 200 BCE), the theatre was progressively enlarged in the Roman period: the stage building (scaenae frons) was completed under Nero (by 66 CE), the north analemma wall added under Domitian (92 CE), and the south analemma completed under Trajan (102-114 CE) -- meaning the theatre reached essentially its final, largest form (142m diameter, capacity c. 24,000) only shortly before the 117 CE snapshot. Definitely standing and in active use at Trajan's death.",
+        "sources": [
+          "https://ancienttheatrescom.wpcomstaging.com/theatre/ephesus-modern-selcuk-turkey/",
+          "https://en.wikipedia.org/wiki/Ephesus"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.3407497,
+          37.9393592
+        ]
+      },
+      "properties": {
+        "id": "poi_ephesus_library_celsus",
+        "category": "library",
+        "name_latin": "Bibliotheca Celsi",
+        "name_english": "Library of Celsus",
+        "province": "Asia",
+        "modern_location": "Selçuk, Turkey",
+        "built": 110,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Funerary library commissioned by Tiberius Julius Aquila (consul 110 CE) in honor of his father Tiberius Julius Celsus Polemaeanus, a former proconsul of Asia; Celsus is entombed in a sarcophagus beneath the structure. Construction began c. 110 CE. Completion date is genuinely disputed in the sources found this shift: some (including several tourism/reference sites) state the building was 'completed in 117 CE,' but the more detailed accounts note Aquila himself died before the project finished and it was completed by his heirs, with the facade's full sculptural decoration not finished until c. 135 CE under Hadrian. Given that split and following the same cautious 117-snapshot logic Shift 2 applied to the Pantheon (a monument documented as 'still under construction' at Trajan's death even when some popular sources round its completion to the nearer date), this entry is marked extant_117ce:false -- the building was very plausibly still an active, unfinished construction/decoration site at the exact moment of the snapshot. A future shift with better access to Hueber/Thür's excavation publications should revisit this call.",
+        "sources": [
+          "https://pleiades.stoa.org/places/165409128",
+          "https://www.worldhistory.org/Library_of_Celsus/",
+          "https://www.historyofinformation.com/detail.php?id=4192"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.363816,
+          37.9498235
+        ]
+      },
+      "properties": {
+        "id": "poi_ephesus_temple_artemis",
+        "category": "temple",
+        "name_latin": "Templum Artemidis Ephesiae",
+        "name_english": "Temple of Artemis (Artemision)",
+        "province": "Asia",
+        "modern_location": "Selçuk, Turkey",
+        "built": -250,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "One of the Seven Wonders of the Ancient World. The temple burned in 356 BCE (in a fire ancient writers synchronized with Alexander the Great's birth) and was rebuilt on an even grander scale over the following century, with the reconstruction generally dated complete by the mid-3rd century BCE. That Hellenistic-era structure -- described in detail by Pliny -- remained standing and was a major pilgrimage/cult site throughout the Roman period, including at 117 CE; it was eventually destroyed by a Gothic raid in 268 CE, well after this snapshot. Coordinates match the point already present in this repo's places_medium.geojson gazetteer for consistency.",
+        "sources": [
+          "Pliny NH 36.95-97",
+          "https://www.britannica.com/topic/Temple-of-Artemis-temple-Ephesus-Turkey"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.3413,
+          37.9398
+        ]
+      },
+      "properties": {
+        "id": "poi_ephesus_temple_hadrian",
+        "category": "temple",
+        "name_latin": "Templum Hadriani",
+        "name_english": "Temple of Hadrian",
+        "province": "Asia",
+        "modern_location": "Selçuk, Turkey",
+        "built": 118,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Small but richly decorated temple on Curetes Street dedicated to (and named for) the emperor Hadrian. Because Hadrian's reign only began with his accession in August 117 CE -- the very event that closes this map's snapshot -- a temple dedicated in his honor cannot, under any dating given in the sources found this shift (which range from shortly after 117 to as late as the 130s CE), have existed at the 117 CE moment itself. Marked extant_117ce:false on that basis; kept on the map per the brief's guidance to record commissioned/imminent structures with the caveat explained, since it is one of Ephesus's best-known surviving Roman monuments and its story is directly tied to the exact turning point this whole map is built around.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Hadrian",
+          "https://www.worldhistory.org/ephesus/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.879189,
+          37.906033
+        ]
+      },
+      "properties": {
+        "id": "poi_corinth_temple_apollo",
+        "category": "temple",
+        "name_latin": "Templum Apollinis Corinthi",
+        "name_english": "Temple of Apollo, Corinth",
+        "province": "Achaea",
+        "modern_location": "Ancient Corinth, Greece",
+        "built": -560,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Archaic Doric temple built c. 560 BCE, one of the oldest stone temples in mainland Greece; seven of its original 38 monolithic limestone columns still stand. It survived the Roman sack of Corinth under Mummius in 146 BCE and remained a landmark when Julius Caesar refounded the city as Colonia Laus Iulia Corinthiensis in 44 BCE, still dominating the Roman forum in 117 CE. Pausanias (writing mid-2nd century CE, i.e. shortly after this snapshot) describes it standing over the marketplace.",
+        "sources": [
+          "Pausanias Description of Greece 2.3.6",
+          "https://pleiades.stoa.org/places/570500582/imagery-location"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.8785,
+          37.9063
+        ]
+      },
+      "properties": {
+        "id": "poi_corinth_peirene",
+        "category": "fountain",
+        "name_latin": "Fons Peirene",
+        "name_english": "Fountain of Peirene",
+        "province": "Achaea",
+        "modern_location": "Ancient Corinth, Greece",
+        "built": -400,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Monumental spring-fed fountain house at the heart of Roman Corinth, immediately north of the Bema (rostra); one of the city's principal water sources since the Archaic period, associated in myth with the winged horse Pegasus. The elaborate two-story marble facade famously attributed to Herodes Atticus is a Antonine-era remodel (c. 150s CE, well after this snapshot) -- a simpler Hellenistic/early-Roman fountain house occupied the site and was functioning at 117 CE. New 'fountain' category introduced this shift; no closed enum enforced elsewhere in the app.",
+        "sources": [
+          "Pausanias Description of Greece 2.3.2-3",
+          "https://www.worldhistory.org/corinth/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.8797,
+          37.9063
+        ]
+      },
+      "properties": {
+        "id": "poi_corinth_julian_basilica",
+        "category": "basilica",
+        "name_latin": "Basilica Iulia Corinthi",
+        "name_english": "Julian Basilica",
+        "province": "Achaea",
+        "modern_location": "Ancient Corinth, Greece",
+        "built": -1,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman civic basilica at the east end of the Corinthian forum/agora, dedicated to the Julio-Claudian imperial family and generally dated to the late 1st century BCE/early 1st century CE building phase of the refounded Roman colony. Standing and in use by 117 CE as part of the forum's administrative complex.",
+        "sources": [
+          "https://bmcr.brynmawr.edu/2018/2018.12.05/",
+          "https://www.allovergreece.com/Archaeological-Site/Descr/74/en"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.992664,
+          37.9158514
+        ]
+      },
+      "properties": {
+        "id": "poi_corinth_isthmia",
+        "category": "temple",
+        "name_latin": "Sanctuarium Poseidonis Isthmiae",
+        "name_english": "Sanctuary of Poseidon at Isthmia",
+        "province": "Achaea",
+        "modern_location": "Isthmia, Greece",
+        "built": -700,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Panhellenic sanctuary of Poseidon on the Isthmus east of Corinth, seat of the biennial Isthmian Games (one of the four Panhellenic 'crown' games), administered by Corinth throughout the Roman period. The Archaic temple (c. 690 BCE) burned in 470 BCE and was rebuilt; the sanctuary remained active and the games continued to be celebrated under Roman rule, including at 117 CE. Coordinates reuse the 'Isthmia' point already present in this repo's places_medium.geojson gazetteer for consistency.",
+        "sources": [
+          "Pausanias Description of Greece 2.1.7-2.2.2",
+          "https://en.wikipedia.org/wiki/Isthmia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.832,
+          45.7681
+        ]
+      },
+      "properties": {
+        "id": "poi_lugdunum_amphitheatre",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum Trium Galliarum",
+        "name_english": "Amphitheatre of the Three Gauls",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Lyon, France",
+        "built": 19,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Built at the foot of the Croix-Rousse hill, at the historical confluence of the Rhône and Saône, funded by C. Julius Rufus (a priest of the imperial cult) per a surviving dedicatory inscription (CIL XIII 1698) dated 19 CE; it was the site of the annual Concilium Galliarum, the federal assembly of the 'Three Gauls' provinces. Enlarged early in the 2nd century CE with two added galleries, raising capacity to roughly 20,000 -- the precise date of that expansion relative to 117 CE was not pinned down this shift, so it is noted here rather than asserted either way, but the core 19 CE amphitheatre was unambiguously standing and in use at the 117 CE snapshot regardless.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Amphitheatre_of_the_Three_Gauls",
+          "https://www.historyhit.com/locations/amphitheatre-of-the-three-gauls/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8188,
+          45.7616
+        ]
+      },
+      "properties": {
+        "id": "poi_lugdunum_theatre",
+        "category": "theater",
+        "name_latin": "Theatrum Lugdunense",
+        "name_english": "Roman Theatre of Fourvière",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Lyon, France",
+        "built": -15,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Built into the slope of the Fourvière hill (site of the original Roman colonia founded 43 BCE) under Augustus, c. 15 BCE, with a capacity of roughly 10,000; enlarged under Hadrian later in the 2nd century. Definitely standing and in use as of 117 CE, prior to the Hadrianic enlargement.",
+        "sources": [
+          "https://lugdunum.grandlyon.com/en/a-museum-of-sites/lyon-s-origins",
+          "https://traveltolyon.com/lyon-roman-ruins-france/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8315,
+          45.7686
+        ]
+      },
+      "properties": {
+        "id": "poi_lugdunum_sanctuary_three_gauls",
+        "category": "temple",
+        "name_latin": "Ara Romae et Augusti",
+        "name_english": "Federal Altar / Sanctuary of the Three Gauls",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Lyon, France",
+        "built": -12,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Altar to the cult of Roma and Augustus dedicated in 12 BCE at the confluence of the Rhône and Saône, the ritual and political center of the Concilium Galliarum -- the annual gathering of representatives from the 60 civitates of the Three Gauls to elect the high priest of the imperial cult (the first was Gaius Julius Vercondaridubnus, an Aeduan) and celebrate games. Continuously in use throughout the early Empire, including 117 CE. Located adjacent to (and administratively linked with) the Amphitheatre of the Three Gauls built nearby a generation later; exact footprint of the altar precinct itself is only approximately reconstructed archaeologically, hence medium rather than high confidence on the point location.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sanctuary_of_the_Three_Gauls",
+          "https://www.academia.edu/14145003/The_1st_of_August_at_Lugdunum_Astronomy_and_Imperial_Cult_in_Galia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7369,
+          45.6789
+        ]
+      },
+      "properties": {
+        "id": "poi_lugdunum_aqueduct_gier",
+        "category": "aqueduct",
+        "name_latin": "Aquaeductus Gerapedus",
+        "name_english": "Aqueduct of the Gier",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Lyon, France",
+        "built": 110,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The longest of Lugdunum's four aqueducts (c. 86km, from the Gier valley near Saint-Chamond), famous for the Beaunant and Chaponost inverted-siphon sections. Its dating has been a long-running scholarly controversy: early lead-pipe evidence pointed to Claudius (mid-1st c. CE), an 1887 inscription (the 'pierre de Chagnon') pointed to Hadrian, and a 1982 find of a Claudian-dedication fountain pointed back to Claudius again. A 2018 dendrochronological study of the Beaunant bridge-siphon's timber foundations dated them to 110 CE, placing the engineering work under Trajan with 'possible finalization under Hadrian' per the excavators. Given that direct physical dating (110 CE, seven years before this snapshot) and absent evidence the system was non-functional at 117, this entry is kept extant_117ce:true, but confidence is set low given how contested the aqueduct's dating remains in the literature -- a future shift with direct access to the Revue archéologique de l'Est article should revisit. Point marks the well-preserved Chaponost arcade section.",
+        "sources": [
+          "https://www.academia.edu/24047463/La_datation_de_laqueduc_du_Gier_%C3%A0_Lyon_%C3%A9tat_dune_question_controvers%C3%A9e",
+          "https://en.wikipedia.org/wiki/Aqueduct_of_the_Gier"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9842,
+          37.5994
+        ]
+      },
+      "properties": {
+        "id": "poi_carthagonova_theatre",
+        "category": "theater",
+        "name_latin": "Theatrum Carthaginis Novae",
+        "name_english": "Roman Theatre of Cartagena",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Cartagena, Spain",
+        "built": -5,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Built between 5 and 1 BCE under the patronage of Augustus's heirs Gaius and Lucius Caesar (named in the dedicatory inscription), seating c. 6,000; rediscovered beneath the old town only in 1988. Standing and in use at 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_Theatre_(Cartagena)",
+          "https://www.wonderfulmuseums.com/museum/cartagena-roman-theatre-museum/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9857,
+          37.6021
+        ]
+      },
+      "properties": {
+        "id": "poi_carthagonova_augusteum",
+        "category": "temple",
+        "name_latin": "Augusteum Carthaginis Novae",
+        "name_english": "Augusteum (Imperial Cult Building)",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Cartagena, Spain",
+        "built": -20,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Part temple, part college for the imperial cult, built as part of Augustus's extensive redesign of Carthago Nova alongside its new forum, streets and theatre; sits within the Molinete hill archaeological park in the heart of the old town. Exact construction date within the Augustan period and full identification of the structure's function are still debated in the Spanish excavation literature, hence medium confidence, but the building's Augustan-era existence and continuity into the 2nd century CE are not in dispute.",
+        "sources": [
+          "https://www.worldhistory.org/Carthago_Nova/",
+          "https://murciatoday.com/the-roman-city-of-carthago-nova-forerunner-of-cartagena_1227675-a.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9857,
+          37.6021
+        ]
+      },
+      "properties": {
+        "id": "poi_carthagonova_forum",
+        "category": "forum",
+        "name_latin": "Forum Carthaginis Novae",
+        "name_english": "Forum of Carthago Nova (Molinete)",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Cartagena, Spain",
+        "built": -1,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Civic and religious center of the Augustan-refounded colony, on the Molinete hill; excavated and now presented in the Molinete Roman Forum Museum. Established as part of the same 1st-century BCE/CE urban redevelopment as the theatre and Augusteum, standing at 117 CE.",
+        "sources": [
+          "https://www.timetravelrome.com/2023/12/04/carthago-nova-molinete-roman-forum-museum/",
+          "https://www.wikidata.org/wiki/Q5721119"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.8167,
+          37.6167
+        ]
+      },
+      "properties": {
+        "id": "poi_carthagonova_mines",
+        "category": "mine",
+        "name_latin": "Metalla Carthaginis Novae",
+        "name_english": "Sierra Minera silver/lead mining district",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "La Unión / Cartagena, Spain",
+        "built": -210,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Not a single structure but the vast silver-and-lead mining district in the hills immediately east of the city, worked intensively from the Carthaginian period (Hasdrubal and Hannibal both drew on its silver from the 220s BCE) and massively expanded under Rome; Strabo (writing around the turn of the era) reports roughly 40,000 workers, mostly enslaved, active in the mines. This revenue was a primary reason Carthago Nova mattered to Rome and remained a major economic engine of Hispania Tarraconensis through the 2nd century CE. Point is a representative centroid of the Sierra Minera de Cartagena-La Unión district, not a single excavated site -- confidence marked low and coordinates should be read as 'somewhere across this district' per the brief's guidance for wide-tolerance features.",
+        "sources": [
+          "Strabo Geography 3.2.10",
+          "https://www.worldhistory.org/Carthago_Nova/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.1694,
+          36.225
+        ]
+      },
+      "properties": {
+        "id": "poi_antioch_circus",
+        "category": "circus",
+        "name_latin": "Circus Antiochiae",
+        "name_english": "Circus (Hippodrome) of Antioch",
+        "province": "Syria",
+        "modern_location": "Antakya, Turkey",
+        "built": -50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "One of the largest circuses in the Roman world (over 490m long, capacity up to c. 80,000), modeled on the Circus Maximus. Its founding date is debated in the sources found this shift (a first structure c. 50 BCE, with substantial rebuilding credited to Trajan's reign, 98-117 CE), but its existence and use by 117 CE is directly attested by a primary source: Cassius Dio (68.25) records that Trajan himself took shelter in the circus during the catastrophic Antioch earthquake of 13 December 115 CE, escaping through a window as aftershocks continued for days. The earthquake (est. M7.5, Mercalli X-XI) caused near-total destruction across the city and killed an estimated tens of thousands; Antioch -- one of the four largest cities of the empire -- was still very much in a state of post-earthquake reconstruction at the moment of this map's 117 CE snapshot, only about 20 months later.",
+        "sources": [
+          "Cassius Dio Roman History 68.25",
+          "https://en.wikipedia.org/wiki/Circus_of_Antioch",
+          "https://en.wikipedia.org/wiki/115_Antioch_earthquake"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.175,
+          36.203
+        ]
+      },
+      "properties": {
+        "id": "poi_antioch_theatre",
+        "category": "theater",
+        "name_latin": "Theatrum Antiochiae",
+        "name_english": "Theatre of Antioch",
+        "province": "Syria",
+        "modern_location": "Antakya, Turkey",
+        "built": -47,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A theatre 'under the rocks of Silpius' is attributed by ancient sources to works undertaken during Julius Caesar's visits to the city (mid-1st century BCE); it was expanded by later emperors. The site has not been excavated, so its precise location and condition are not well documented -- coordinates here are approximate, on the flank of Mt Silpius above the city center. Kept extant_117ce:true since there is no evidence the structure ceased to exist, but flagged low confidence for two compounding reasons: the imprecise location, and the fact that Antioch was still recovering from the devastating December 115 CE earthquake (see Circus of Antioch entry) at the moment of this snapshot, so the theatre's exact condition in 117 specifically is uncertain even though the building itself was not newly destroyed or newly built in that window.",
+        "sources": [
+          "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry%3Dantiocheia-geo",
+          "https://en.wikipedia.org/wiki/Antioch"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.142802,
+          36.130422
+        ]
+      },
+      "properties": {
+        "id": "poi_antioch_daphne_apollo",
+        "category": "temple",
+        "name_latin": "Templum Apollinis Daphnaei",
+        "name_english": "Sanctuary of Apollo at Daphne",
+        "province": "Syria",
+        "modern_location": "Harbiye (Antakya), Turkey",
+        "built": -300,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Famous oracular sanctuary and sacred grove of Apollo and Artemis at Daphne, a suburb roughly 8km southwest of Antioch, established alongside the city's founding tradition under Seleucus I (c. 300 BCE) and described by Strabo as one of the most celebrated sanctuaries of the ancient world. A major pilgrimage and recreational site throughout the Roman period, including 117 CE. Point uses the same Harbiye/Daphne location already present in this repo's places_medium.geojson gazetteer for consistency.",
+        "sources": [
+          "Strabo Geography 16.2.6",
+          "https://en.wikipedia.org/wiki/Daphne_(Antioch)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9585,
+          50.9375
+        ]
+      },
+      "properties": {
+        "id": "poi_ccaa_praetorium",
+        "category": "palace",
+        "name_latin": "Praetorium Coloniae Agrippinensis",
+        "name_english": "Praetorium (Governor's Palace)",
+        "province": "Germania Inferior",
+        "modern_location": "Cologne, Germany",
+        "built": 85,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Residence and administrative seat of the governor of Germania Inferior, its remains (including a sewer system) lie beneath Cologne's medieval/modern city hall (Rathaus); recent MiQua excavations near the site uncovered a 1st-century staircase and later building phases. Originally built as army headquarters for the Lower Rhine command, it became the governor's palace once Germania Inferior was formally organized as a province (83/84 CE). Standing and functioning as the seat of provincial government at 117 CE. Exact original 1st-century construction phase/date is not precisely fixed in the sources found this shift, hence medium confidence.",
+        "sources": [
+          "https://allthatsinteresting.com/cologne-germany-ancient-roman-ruins",
+          "https://www.livius.org/articles/place/colonia-claudia-ara-agrippinensium-koln/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9578,
+          50.9394
+        ]
+      },
+      "properties": {
+        "id": "poi_ccaa_city_wall",
+        "category": "wall",
+        "name_latin": "Murus Coloniae Agrippinensis",
+        "name_english": "City Wall of the Colonia",
+        "province": "Germania Inferior",
+        "modern_location": "Cologne, Germany",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roughly 4km circuit of stone fortification with at least 9 gates and 19 round towers, enclosing the colonia founded in 50 CE; construction is generally placed at the end of the 1st century CE (c. 89-91 CE). Standing and defining the city's built-up extent at 117 CE. New 'wall' category introduced this shift (parallels the London Wall case flagged in the backlog/SHIFT_LOG, which is deliberately NOT included here since it postdates 117 by nearly a century).",
+        "sources": [
+          "https://www.roemisch-germanisches-museum.de/THE-ROMAN-CITY-WALL",
+          "https://imperiumromanum.pl/en/guest-posts/roman-walls-in-cologne/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9611,
+          50.9358
+        ]
+      },
+      "properties": {
+        "id": "poi_ccaa_ubiermonument",
+        "category": "wall",
+        "name_latin": "Turris Portus Ubiorum",
+        "name_english": "Ubiermonument (harbor defense tower)",
+        "province": "Germania Inferior",
+        "modern_location": "Cologne, Germany",
+        "built": 5,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The oldest known stone structure in Cologne: a roughly 9x9m tuff-stone tower (originally c. 12m tall, c. 6m survive today) built on an oak-pile foundation dendrochronologically dated to the winter of 4/5 CE, marking the entrance to the Rhine harbor of the pre-colonia settlement (Oppidum Ubiorum). It was partly demolished when the later stone city wall was built (c. 90 CE), so what stood at 117 CE was already a reduced remnant of the original Augustan-era tower rather than the complete structure -- kept extant_117ce:true since a fragment did remain in place (consistent with what is visible on-site today), but confidence is low given the compounding uncertainty about exactly how much of it was still standing at the specific 117 CE moment.",
+        "sources": [
+          "https://www.cologne-tourism.com/arts-culture/sights/detail/ubier-monument",
+          "https://www.megalithic.co.uk/article.php?sid=47168"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
