@@ -1,0 +1,14 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #__next { height: 100%; width: 100%; }
+body {
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #202124;
+  background: #e8eaed;
+  -webkit-font-smoothing: antialiased;
+}
+button { font-family: inherit; cursor: pointer; border: 0; background: none; }
+input { font-family: inherit; }
+
+/* MapLibre overrides — hide default attribution box a bit */
+.maplibregl-ctrl-attrib { font-size: 10px !important; }
+.maplibregl-ctrl-bottom-right { display: none; }
