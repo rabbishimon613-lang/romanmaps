@@ -13,11 +13,17 @@ Empire-level layers already live: land polygons (Natural Earth), coastlines, pro
 **The current 40 sites** — you can grep them from `app/sites.ts::SITES[]`, but at time of writing:
 Ostia · Pompeii · Herculaneum · Ephesus · Timgad · Djemila · Volubilis · Leptis Magna · Sabratha · Jerash · Palmyra · Baalbek · Rome · Aquincum · Carnuntum · Vindolanda · Trier · Xanten · Corinth · Athens · Delphi · Mérida · Italica · Aquileia · Verona · Ravenna · Portus · Tivoli · Palestrina · Puteoli · Baiae · Cumae · Capua · Beneventum · Paestum · Brescia · Milan · Rimini · Ancona · Luni.
 
-## Where we're going — three parallel expansion axes
+## Where we're going — six parallel expansion axes
 
-Every shift picks ONE axis (and often ONE sub-category inside it) and pushes it forward. Don't try all three in one shift; don't try all nine micro sub-categories in one shift. Depth beats breadth.
+Every shift picks ONE axis (and often ONE sub-category inside it) and pushes it forward. Don't try to touch multiple axes in one shift; don't try all sub-categories inside one axis in one shift. **Depth beats breadth.**
 
-The three axes: **(1) more cities**, **(2) sites along the roads**, **(3) micro-level POIs** — the last of which is a big menu (see Axis 3 for its 9 sub-categories: military, sacred, economic, villae, tombs, water, games, battlefields, shipwrecks).
+The six axes:
+1. **More cities**
+2. **Sites along the roads**
+3. **Micro-level POIs** (9 sub-categories: military, sacred, economic, villae, tombs, water, games, battlefields, shipwrecks)
+4. **The living empire in 117 CE** (people, events, ongoing wars, political moment)
+5. **Peoples, cultures, client states** (language belts, ethnic groups, non-Roman neighbors)
+6. **Systems overlay** (trade routes, intellectual centers, religious communities, natural landmarks)
 
 ### Axis 1 — MORE CITIES beyond the current 40
 
@@ -183,6 +189,162 @@ Use a `shipwreck` category, muted blue, tiny anchor glyph.
 **Where micro-POIs go:** `public/data/pois.geojson` (already used for empire-wide POIs). Point geometry, existing schema. LineStrings (aqueducts, frontier lines) go in `public/data/lines.geojson` (create if missing).
 
 **New POI categories may need new visual families** in `app/poiCategories.ts`. If it doesn't slot into the current 15, add one with a matching color + short glyph — keep the total under ~22 so the category chips row doesn't wrap.
+
+### Axis 4 — THE LIVING EMPIRE IN 117 CE (people, events, political moment)
+
+This axis makes the map *time-stamped* instead of just a static gazetteer. The empire on 11 August 117 CE is in the middle of dramatic events. Pin them.
+
+#### 4a — People alive right now, geolocated
+
+Not just emperors — writers, philosophers, generals, bishops, rabbis, doctors. Pin each with their known 117 CE location. Rich-hover shows their one-sentence bio.
+
+- **Trajan (Marcus Ulpius Traianus)** — 63, ill, on his way back from the Parthian campaign. Dies at Selinus in Cilicia (modern Gazipaşa, Turkey) on 11 August 117. **The map's timestamp.** Pin Selinus with a special "final act" marker.
+- **Hadrian** — 41, legate of Syria at Antioch. About to be declared emperor there (Aug 11) as soon as Trajan's death is confirmed. Pin Antioch.
+- **Plotina** — Trajan's widow, with him at Selinus. Instrumental in Hadrian's accession.
+- **Pliny the Younger** — probably dead by now (last dated letter ~113 CE from Bithynia). Log as `died 113` but pin his Laurentine + Tuscan villas.
+- **Tacitus** — ~61, in Rome writing the *Annals*. Just published the *Histories*.
+- **Suetonius** — Hadrian's imperial secretary shortly, right now attached to court. Pin Antioch/Rome.
+- **Plutarch** — ~71, priest at Delphi (pin Delphi), lives at Chaeronea (pin).
+- **Epictetus** — 62, running his Stoic school at Nikopolis in Epirus. Pin.
+- **Juvenal** — writing satires in Rome.
+- **Rufus of Ephesus** — physician, active at Ephesus.
+- **Rabbi Akiva** — active in Judaea, gathering pupils; Bar Kokhba revolt is 15 years off but Kitos War is happening now.
+- **Ignatius of Antioch** — bishop, martyred at Rome ~108 (dead, but his letters just landed).
+- **Polycarp of Smyrna** — bishop, ~48, active.
+- **Lucius Quietus** — Trajan's Berber general, at this exact moment putting down the Kitos War in Judaea, will be governor of Judaea briefly. Pin his campaign locations.
+- **Publius Aelius Hadrianus's inner circle** — Attianus (praetorian prefect), Marcius Turbo (Kitos War general in Egypt/Cyrenaica).
+
+Store in `public/data/people_117.geojson`. Schema:
+
+```json
+{"type":"Feature","geometry":{"type":"Point","coordinates":[LNG,LAT]},
+ "properties":{
+   "id":"person_trajan",
+   "name":"Trajan",
+   "role":"Emperor",
+   "location_117":"Selinus, Cilicia (dies here 11 August)",
+   "one_line":"63-year-old emperor returning ill from the Parthian campaign.",
+   "sources":["Cass. Dio 68.33","HA Hadr. 4.7"]
+ }}
+```
+
+Render as small portrait-medallion markers (colored ring by role: purple=imperial, red=military, blue=writer/philosopher, gold=religious).
+
+#### 4b — Events happening in 117 CE
+
+Overlay the actual news of the year.
+
+- **Kitos War (115–117)** — Jewish revolts against Rome in Cyrenaica, Egypt, Cyprus, and Mesopotamia. Massive death toll. Being put down right now by Lucius Quietus (Judaea), Marcius Turbo (Egypt/Cyrenaica), Lusius Quietus (Mesopotamia). Pin the four revolt zones as areas.
+- **Parthian War (114–117)** — Trajan's biggest campaign. He captured Ctesiphon in 116, formed the province of Mesopotamia briefly. In 117 the position is collapsing — Hadrian will abandon it. Pin Ctesiphon, the Parthian front, Trajan's line of retreat.
+- **Dacian settlement (post-106)** — new colonies being founded (Sarmizegetusa Ulpia Traiana just built), Roman gold rush at Alburnus Maior, veterans settling. Pin.
+- **Nabataean absorption (106)** — Arabia Petraea only 11 years old as a province in 117. Pin Petra + Bostra as freshly Roman.
+- **Trajan's Column dedicated 113** — pin at Trajan's Forum in Rome with narrative "just finished".
+- **Aqua Traiana opened 109** — pin along its route.
+- **Trajan's Forum + Market dedicated 112** — pin.
+
+Store as a mixture of point events + polygon zones (`public/data/events_117.geojson`). Give each a `date_iso` field.
+
+#### 4c — Emperor travel routes
+
+Trajan's final journey: **Antioch → Ctesiphon (advance 114-116) → retreat 117 → Selinus (dies)**. Draw as an animated LineString with dated waypoints.
+
+Hadrian's own travels (mostly post-117) start soon: log the 118 return-to-Rome route as a "coming next" preview line.
+
+### Axis 5 — PEOPLES, CULTURES, CLIENT STATES
+
+The map should show that Rome was a top layer over a very heterogeneous world. Add overlays.
+
+#### 5a — Language belts
+
+The empire in 117 CE has: Latin (Italy, Africa, western provinces, army), Greek (all East + educated everywhere), Punic (Africa, still spoken in towns), Berber/Libyan (Africa interior), Aramaic + Syriac (Syria, Judaea, Mesopotamia), Egyptian/Coptic (rural Egypt), Celtic (rural Gaul + Britain + Galatia), Iberian + Basque + Celtiberian (Iberia interior), Illyrian (Dalmatia + Pannonia interior), Thracian (Balkans), Punic-Phoenician descendants (Spain, Malta), Aramaic-derived (Nabataean).
+
+Draw as soft polygon overlays in `public/data/languages.geojson`. Toggleable overlay in the Layers panel. Reference: **The Cambridge Encyclopedia of the World's Ancient Languages**; **J. N. Adams, *Bilingualism and the Latin Language***.
+
+#### 5b — Client kingdoms + neighbors just outside the empire
+
+Rome in 117 CE has ~40 million people; the surrounding world matters. Label the neighbors on the map — visible outside the border.
+
+- **Client kingdoms inside the frontier** — Bosporan Kingdom (Crimea), Iberia + Albania (Caucasus, clients), Osroene (Edessa), Armenia (briefly Roman under Trajan, being lost 117), Nabataea (annexed 106 — already in), Palmyrene semi-autonomy.
+- **Free Germans** — Cherusci, Chatti, Marcomanni, Quadi. Label the tribal territories.
+- **Sarmatians** — Iazyges, Roxolani, Alans. Label north-of-Danube.
+- **Caledonii + northern British tribes** — north of the not-yet-built Wall.
+- **Parthian Empire** — the main rival. Label capital Ctesiphon, satrapies.
+- **Kushan Empire (Kanishka's era imminent)** — northwestern India. Silk Road partner.
+- **Han Dynasty (Emperor An)** — China. Silk Road terminal.
+- **Aksum forming** — Ethiopia, early days.
+- **Meroë (Kush)** — Sudan. Still a kingdom.
+- **Garamantes** — Fezzan, Sahara. Trade partners, sometimes raiders.
+- **Sabaeans + Himyarites** — Arabia Felix. Incense trade.
+- **Sassanid precursors** — not yet.
+
+Store in `public/data/neighbors_117.geojson` as polygons with `name`, `type: kingdom | tribe | confederation | empire`, `relation_to_rome: client | ally | trading_partner | rival | enemy`.
+
+#### 5c — Ethnic/cultural pockets inside the empire
+
+Fine-grained. Places where a non-Roman identity remained visible.
+
+- **Gauls** — Druids officially outlawed under Claudius but continued in remote areas. Grand sanctuary. Alesia memory.
+- **Jewish diaspora communities** — Alexandria (a third of the city, before Kitos War devastated them), Rome (Trastevere), Cyrenaica, Antioch, Sardis, Delos, Ostia (synagogue possibly built by 100 CE), Puteoli.
+- **Egyptian priesthoods** — Karnak, Philae, Dendera. Still fully operational.
+- **Nabataean identity** — freshly conquered, still Aramaic-speaking.
+- **Basques (Vascones)** — Iberian mountains, holding out.
+- **Berber tribes** — Africa interior.
+- **Isaurian brigands** — Cilicia mountains, famously ungovernable.
+
+### Axis 6 — SYSTEMS OVERLAY (trade, learning, religion, nature)
+
+Continuous systems that span the empire and beyond.
+
+#### 6a — Trade routes as line features
+
+- **Silk Road** — western end at Antioch → via Palmyra → through Parthian Persia → via Kushan → to Han China. Draw the Roman side.
+- **Incense Road** — Arabia Felix → Petra → Gaza / Alexandria. Frankincense + myrrh.
+- **Amber Road** — Baltic → down through Germania → Aquileia → onward to Rome.
+- **Grain routes** — Egypt → Rome (via Alexandria → Puteoli/Portus), Africa → Rome, Sicily → Rome.
+- **Olive oil route** — Baetica → Rome (Monte Testaccio built from these amphorae), Africa → Rome.
+- **Tin route** — Cornwall → Massilia → Rome.
+- **Slave routes** — Delos declined by 117; active from Danube, Britain, Judaea (Kitos War producing many right now).
+- **Wine routes** — Gaul → North Sea + Rhineland, Italy → Egypt.
+
+Store in `public/data/trade_routes.geojson` as LineStrings with `commodity`, `direction`, `notes`.
+
+#### 6b — Religious communities (beyond the temple points)
+
+- **Christian communities in 117 CE** — Pliny's Bithynia letter (~112) tells us Christianity was disturbingly common in Pontus-Bithynia. Firm attestation: Rome, Antioch, Alexandria, Corinth, Ephesus, Smyrna, Philippi, Thessalonica, Jerusalem area, some Bithynian towns. Pin as small crosses with confidence bands (attested / probable / claimed).
+- **Jewish diaspora communities** — big and geographically dispersed. Pin.
+- **Isis cult centers** — from Alexandria outward; big in Pompeii (buried), Rome, Ostia, Delos, Baiae. Isis was empire-wide.
+- **Mithraea** — barely started in 117. Log only what's securely dated.
+- **Cybele (Magna Mater) centers** — Rome (Palatine sanctuary), Pessinus (Anatolia, home shrine), Ostia.
+- **Sol Invictus, Sabazios, various eastern mystery cults** — pin known centers.
+
+Store in `public/data/religions_117.geojson` with `tradition`, `attestation` (attested_117 | probable | claimed).
+
+#### 6c — Intellectual + educational centers
+
+- **Alexandria** — Museion + Great Library (still going, though smaller than Ptolemaic peak). Serapeum library annex.
+- **Athens** — the four philosophy schools all still teaching (Platonic Academy, Aristotelian Lyceum, Stoic Stoa Poikile, Epicurean Garden).
+- **Rhodes** — rhetoric school (where Julius Caesar and Cicero once studied).
+- **Berytus (Beirut)** — law school forming, will become the empire's premier law school in the 3rd century.
+- **Nicopolis** — Epictetus's Stoic school.
+- **Pergamon** — Asklepieion + library.
+- **Antioch** — literary + Christian intellectual scene.
+- **Massilia** — Greek education outpost.
+- **Rome** — grammar + rhetoric schools, though secondary to Athens philosophically.
+
+Store in `public/data/learning_117.geojson`. Category: `library | philosophy_school | rhetoric_school | law_school | medical_school | scriptorium`.
+
+#### 6d — Natural landmarks people knew and revered
+
+The Roman world had a rich sacred + practical geography of natural features.
+
+- **Active volcanoes** — Vesuvius (erupted 79 within living memory), Aetna, Stromboli, Vulcano.
+- **Sacred mountains** — Olympus (Greek), Argaeus (Cappadocia), Zaphon (Syrian), Ida (Trojan), Kithairon, Helicon, Parnassus (all Greek + already partly covered by Delphi).
+- **Sacred islands** — Delos (Apollo's birth), Samothrace (mysteries), Ortygia at Syracuse.
+- **Legendary sea-hazards** — Scylla + Charybdis (Straits of Messina), Cape Malea storms, the Pillars of Hercules (Gibraltar/Ceuta, edge of the known world).
+- **River sources** treated as sacred — Fontes Sequanae (Seine source, Gaul), Fontes Aponi (Padua thermal springs), Fons Bandusiae (Horace).
+- **Notable geological wonders** — Naples's Solfatara sulfur field (Baiae), Pamukkale's travertine (Hierapolis), Petra's ravines.
+
+Store in `public/data/landmarks_117.geojson` with `type: volcano | sacred_mountain | sacred_island | sea_hazard | sacred_spring | wonder`.
 
 ---
 
