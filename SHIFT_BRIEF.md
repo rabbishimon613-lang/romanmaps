@@ -13,11 +13,11 @@ Empire-level layers already live: land polygons (Natural Earth), coastlines, pro
 **The current 40 sites** — you can grep them from `app/sites.ts::SITES[]`, but at time of writing:
 Ostia · Pompeii · Herculaneum · Ephesus · Timgad · Djemila · Volubilis · Leptis Magna · Sabratha · Jerash · Palmyra · Baalbek · Rome · Aquincum · Carnuntum · Vindolanda · Trier · Xanten · Corinth · Athens · Delphi · Mérida · Italica · Aquileia · Verona · Ravenna · Portus · Tivoli · Palestrina · Puteoli · Baiae · Cumae · Capua · Beneventum · Paestum · Brescia · Milan · Rimini · Ancona · Luni.
 
-## Where we're going — ten parallel expansion axes
+## Where we're going — twenty parallel expansion axes
 
-Ten axes. Each shift touches **at least TWO axes** and ships **quantitative minimums** (see "Per-shift throughput" below). Depth still matters — no fake features — but throughput matters too. The empire's big; we're not going to finish it dabbling.
+Twenty axes. Each shift touches **at least TWO axes** and ships **quantitative minimums** (see "Per-shift throughput" below). Depth still matters — no fake features — but throughput matters too. The empire's big; we're not going to finish it dabbling.
 
-The ten axes:
+The twenty axes:
 1. **More cities**
 2. **Sites along the roads** (mansiones, mutationes, milestones)
 3. **Micro-level POIs** — 9 sub-categories: military, sacred, economic, villae, tombs, water, games, battlefields, shipwrecks
@@ -28,6 +28,16 @@ The ten axes:
 8. **Money, administration, communication** — mints, provincial fiscal boundaries, conventus assize centers
 9. **Daily life patterns** — housing, cuisine, clothing, spectacle, sexuality, death ritual regions
 10. **Historical substrate** — pre-Roman layers still visible (Greek, Etruscan, Phoenician, Celtic, Iberian, Egyptian pharaonic)
+11. **Disasters + memory** — earthquakes, eruptions, fires, floods, famines
+12. **Imperial cult + ceremony** — sebasteia, provincial altars, processional routes
+13. **Political apparatus + factions** — senate composition, chariot factions, praetorians, vigiles
+14. **Foreign relations + embassies** — hostages, treaties, embassies inbound and outbound
+15. **Welfare + euergetism** — alimenta towns, grain doles, benefactor inscriptions
+16. **Textile + luxury craft geography** — purple dye, silk, wool, linen, amber, pearls
+17. **Exile + penal geography** — exile islands, penal mines, quarry work camps
+18. **Health, medicine, spa culture** — Aquae towns, mineral springs, malaria zones, doctors
+19. **Correspondence networks** — Pliny's letters mapped, Ignatius's route, imperial rescripts
+20. **Sports + athletic culture** — panhellenic games (in 3g), gymnasia empire-wide, chariot faction reach
 
 ### Axis 1 — MORE CITIES beyond the current 40
 
@@ -492,6 +502,134 @@ Freshly relevant since Trajan's conquest. Babylon (in ruins, but still visited),
 
 Store all substrate features in `public/data/substrate.geojson` with `culture` field. Render as ghosted markers with dashed outline.
 
+### Axis 11 — DISASTERS + MEMORY
+
+Events people are still talking about in 117 CE, plus what's just happened.
+
+- **Antioch earthquake, 13 December 115** — massive, killed thousands, Trajan himself was there and barely escaped. Pin Antioch with a fresh-scar marker.
+- **Vesuvius eruption, 79** — Pompeii + Herculaneum buried. 38 years ago in 117; survivors and their kids still alive.
+- **Great Fire of Rome, 64** — Nero's fire. 53 years old memory. Reconstructed districts still visible in 117.
+- **Rome flooded, 15 CE + 69 CE** — Tiber floods, especially bad ones remembered.
+- **Fires in the Forum + Campus Martius under Titus (80) + Domitian** — reconstruction under way through Trajan.
+- **Famines** — Egyptian Nile-flood failures triggered grain crises; 6 CE, 41 CE remembered.
+- **Plagues** — pre-Antonine world; localized epidemics only.
+- **Barbarian raids in memory** — Cimbri + Teutones (late 2nd c. BCE) still cited, Boudica's revolt (60 CE) recent in Britain, Batavian revolt (69 CE).
+- **Ships lost** — the Alexandrian grain fleet losses were periodic tragedies; Josephus was on one wreck.
+
+Store in `public/data/disasters.geojson` with `year`, `type`, and a `still_visible_in_117` flag (survivors' generation, ruins, etc). Render with a fault-line/flame icon by type.
+
+### Axis 12 — IMPERIAL CULT + CEREMONY
+
+The state religion of empire worship — geographic layer, distinct from the temples of Olympian gods.
+
+- **Provincial imperial cult centers.** Each province has a primary altar/temple to Roma and the Augusti. Lugdunum (Ara Romae et Augusti, Gallic capital), Colonia Camulodunum (Britannic center), Tarraco (Hispania), Pergamon (Asia, first provincial cult temple in the East 29 BCE), Nicomedia + Ephesus (secondary Asian centers), Ancyra (Galatia — the Res Gestae inscribed there).
+- **Sebasteia** — dedicated shrines. Sebasteion at Aphrodisias (Julio-Claudian, extensively decorated — still standing in 117).
+- **Ara Pacis Augustae** — Rome, still on display; annual sacrifice.
+- **Divi (deified emperors)** temples — Divus Iulius, Divus Augustus, Divus Vespasianus, Divus Titus, Divus Nerva. Each has a temple in Rome.
+- **Processional routes** — Roman triumphs took a fixed route (Porta Triumphalis → Campus Martius → Circus Maximus → Via Sacra → Capitoline). Trajan's Parthian triumph would have been about to happen; Hadrian gives a post-mortem one to Trajan.
+- **Imperial birthday festivals + accession anniversaries** — celebrated empire-wide with dated altars.
+
+Store in `public/data/imperial_cult.geojson`. Rich hover shows first-emperor-worshipped and current status.
+
+### Axis 13 — POLITICAL APPARATUS + FACTIONS
+
+The mechanics of empire.
+
+- **Senate composition** — ~600 senators in 117 CE. Trajan was the first non-Italian emperor (Spanish, from Italica — in). Roughly 15–20% of the senate is now provincial (Spanish, Gallic, African, one or two Asian). Pin senators' home cities.
+- **Chariot factions.** By 117 CE the four factions are established: Reds (Russata), Whites (Albata), Blues (Veneta), Greens (Prasina). Each has stables (stationes) in Rome — pin locations. Domitian added Purples + Golds; discontinued. Rich passionate followings especially for Blues + Greens.
+- **Praetorian Guard.** ~10 cohorts of ~1,000 each. Barracks: Castra Praetoria (Rome), plus small detachments at Alba Longa. Prefect in 117: Attianus (Hadrian's ally). Pin.
+- **Equites singulares Augusti** — imperial horse guard, ~1,000 strong. Cavalry barracks near the Lateran.
+- **Urban cohorts** (III–VI, urban police): ~6,000 total, at Rome + Lugdunum + Carthage + Ostia.
+- **Vigiles** — 7 cohorts of ~1,000 each, firefighters + night watch, split across Rome's 14 regions. Each cohort has 2 excubitoria (guardhouses).
+- **Provincial armies** — 28 legions in 117 CE with fortresses (see Axis 3a). Pin.
+
+Store in `public/data/politics.geojson` grouped by `category: senator_hometown | chariot_faction_HQ | praetorian_barrack | urban_cohort_HQ | vigiles_station | legion_HQ`.
+
+### Axis 14 — FOREIGN RELATIONS + EMBASSIES
+
+Rome as a diplomatic center.
+
+- **Princely hostages at Rome.** Long tradition — Parthian princes, Armenian princes, German nobles, Nabataean princes (before annexation), British chieftains' sons. Each hostage has a documented Roman residence.
+- **Embassies inbound.** Documented visits: Indian embassy to Augustus, Han Chinese contact attempted 97 CE by Gan Ying (didn't cross), Aksumite delegations, Nabataean pre-annexation, Parthian truce embassies. Each embassy has a route + destination.
+- **Embassies outbound.** Roman traders in India (Muziris port well-attested via Muziris papyrus + Periplus Maris Erythraei ~50 CE), Roman envoys to Parthia periodically. Pin known Roman-goods-found sites in South India + Sri Lanka.
+- **Treaty locations.** Rhandeia (63 CE, with Parthia over Armenia), Colchis, Nisibis — border-negotiation sites.
+- **Diplomatic gifts routes.** Ivory + silk + exotic animals flowed into Rome as tribute + gift; drew on trade routes.
+
+Store in `public/data/diplomacy_117.geojson`. Include a `direction` (inbound|outbound|treaty) and `polity` (Parthia, Han, Aksum, India, etc.).
+
+### Axis 15 — WELFARE + EUERGETISM (public benefaction)
+
+Where imperial and private largesse landed on the ground.
+
+- **Alimenta towns** — Trajan's welfare program funding grain for Italian orphans. ~50 known Italian towns received alimenta. Full list attested through inscriptions (the Ligures Baebiani + Veleia bronze tables are the two main sources). Pin each town.
+- **Grain dole (annona)** distribution points — Rome's Porticus Minucia Frumentaria distributed to ~200,000 male citizens monthly. Ostia + Portus handled receipt.
+- **Aqueduct dedications** — private + imperial benefactions. Trajan personally funded Aqua Traiana (109 CE) — pin route as Axis 6a covers water.
+- **Benefactor inscriptions** — Plancia Magna at Perge (Trajanic, rebuilt city gate), Herodes Atticus is later, but earlier benefactors documented at Aphrodisias, Ephesus, Prusa. Pin known Trajanic-era benefactors.
+- **Congiaria (imperial cash handouts)** — periodic emperor-to-people distributions. Trajan did several; Hadrian will do more.
+
+Store in `public/data/euergetism.geojson`.
+
+### Axis 16 — TEXTILE + LUXURY CRAFT GEOGRAPHY
+
+- **Tyrian purple dye works** — Tyre + Sidon primary; also Meninx (Djerba), Kaudos (Cythera). Murex-shell mounds at each site.
+- **Chinese silk arrival points** — enters via Palmyra + Petra + Alexandria. Pin caravan endpoints.
+- **Coan silk (Cos)** — famous transparent gauze fabric.
+- **Egyptian linen** — Alexandria + upriver Delta towns.
+- **Wool centers** — Miletus, Tarentum (Apulian sheep), Padua, Baetican wool, Britain (introduced under Rome).
+- **Amber crafting** — Aquileia (in, workshops process Baltic amber for the imperial market), Rome shops.
+- **Pearl fisheries** — Persian Gulf (Charax Spasinou), Red Sea, Britain (yes, Britons dive for freshwater pearls).
+- **Perfume/cosmetics** — Cyprus (rose water), Arabia (frankincense + myrrh — already in Axis 6a).
+- **Glass** — Sidon + Alexandria (blown glass), Cologne emerging as western center.
+- **Bronze workshops** — Corinth (famous "Corinthian bronze"), Capua, Aegina.
+- **Jewelry centers** — Alexandria + Antioch specialize in fine gold work.
+
+Store in `public/data/crafts.geojson`.
+
+### Axis 17 — EXILE + PENAL GEOGRAPHY
+
+- **Exile islands.** Pandateria (Ventotene) — Julia the Elder banished there by Augustus. Pontia (Ponza), Planasia (elder Agrippa Postumus), Trimerus (Julia the Younger), Rhodes (Tiberius's voluntary exile), Aegina, Gyaros (barren island east of Athens — feared exile destination). Pin each.
+- **Penal mines (damnatio ad metalla)** — condemnation to hard labor in mines. Sardinia notoriously deadly (silver mines). Danube salt mines. Egyptian Eastern Desert quarries — Mons Claudianus + Mons Porphyrites (Axis 3c) had penal + free labor mixed.
+- **Quarry work camps.** Same principle — condemned worked stone.
+- **Prison Rome** — Tullianum (still standing on Capitoline slope). Saint Peter tradition later; in 117 it's just Rome's execution room.
+- **Beast-fights ad bestias** — condemned to the arena. Executions at Colosseum, provincial amphitheatres.
+
+Store in `public/data/penal.geojson`.
+
+### Axis 18 — HEALTH, MEDICINE, SPA CULTURE
+
+- **Aquae towns** — every place called Aquae X is a hot/mineral spring. Aquae Sulis (Bath), Aquae Mattiacae (Wiesbaden), Aquae Cutiliae (near Rome), Aquae Statiellae (Acqui Terme), Aquae Baiae (in as Baiae), Aquae Ciceronianae (Baiae area), Aquae Herculis, Aquae Segestae, Aquae Aureliae (Baden-Baden). Dozens more. Pin each — Roman spa culture is empire-wide.
+- **Asklepieia (temple-clinics)** — already covered in Axis 3b, but add smaller ones: Corinth's Asklepieion, Athens's, Rome's Tiber Island.
+- **Malaria zones** — Pontine marshes south of Rome, Sardinia (notorious), Etruria wetlands. Pin as zones.
+- **Named doctors** — Rufus of Ephesus (Ephesus, active), Archigenes of Apameia (writing in Rome now), Soranus of Ephesus a bit later (gynecology). Pin their bases.
+- **Medical schools** — Alexandria (dominant), Kos + Knidos (rival traditions), Rome (public teaching hospitals began under Vespasian).
+- **Herbal + drug centers** — Cyrene (silphium's last stand), Crete (herbal reputation), Attica.
+
+Store in `public/data/health.geojson`.
+
+### Axis 19 — CORRESPONDENCE NETWORKS
+
+Turn preserved letter corpuses into map data.
+
+- **Pliny the Younger's letters** — his correspondence network is a snapshot of elite Rome ~100–113 CE. Every named recipient with a known location becomes a pin. Draw lines from Pliny's estates to each recipient. Multiple estates (Laurentine, Tuscan, Como) as origin nodes.
+- **Cicero's letters** — earlier (mid-1st c. BCE) but still-cited literary reference. Pin.
+- **Ignatius of Antioch's route** — his seven surviving letters were written on his journey to martyrdom at Rome (~108 CE): Antioch → Smyrna (letters to Ephesus, Magnesia, Tralles, Rome from here) → Troas → Rome. Draw the route.
+- **Imperial rescripts** — emperor's replies to provincial governors' queries. Pin known Trajanic ones by requesting city.
+- **Fronto** — later (Marcus Aurelius era), but pin his students' network as it forms.
+
+Store in `public/data/letters.geojson` — points for people + LineStrings for routes.
+
+### Axis 20 — SPORTS + ATHLETIC CULTURE
+
+Beyond spectacle sites (Axis 3g).
+
+- **Gymnasia** — every self-respecting Greek/Hellenized city has one. Naked exercise culture. Pin.
+- **Athletic guilds** — the Herakleistai + Xystic Synod of Athletes had HQs (Ephesus, Rome, Alexandria). Pin.
+- **Athletic festival circuit** — the "sacred crown" games (Olympia, Pythia, Nemea, Isthmia) plus dozens of periodic games at Athens (Panathenaia), Ephesus, Pergamon, Actia, Sebasta at Naples, Capitolia at Rome. Overlay as a circuit map.
+- **Chariot faction reach** — the Roman factions (Axis 13) had followings in every hippodrome city (Antioch's is the biggest outside Rome). Pin faction supporter concentrations.
+- **Gladiator schools (ludi)** — see Axis 9d.
+
+Store in `public/data/sports.geojson`.
+
 ---
 
 ## The two invariants that override everything
@@ -549,6 +687,16 @@ Each 6-hour shift MUST touch at least TWO axes and MUST hit the following per-ax
 | 8 — Money/admin | **1 mint OR 1 province's conventus centers OR 20 beneficiarii stations** |
 | 9 — Daily life | **1 complete regional overlay** (housing typology, cuisine map, gladiator schools, sarcophagus workshops, etc.) |
 | 10 — Historical substrate | **20 pre-Roman substrate points** in one culture layer |
+| 11 — Disasters + memory | **15 events** pinned with year + still-visible-in-117 note |
+| 12 — Imperial cult | **1 province's complete cult centers OR 12 sebasteia/altars** |
+| 13 — Political apparatus | **30 senators' hometowns OR 4 chariot faction HQs + all vigiles stations OR full praetorian layout** |
+| 14 — Foreign relations | **15 hostage residences, embassy routes, or treaty sites** |
+| 15 — Welfare + euergetism | **All 50 alimenta towns OR 20 named benefactor inscriptions** |
+| 16 — Textile + luxury craft | **25 workshop/production sites** |
+| 17 — Exile + penal | **1 complete category** (all exile islands OR all penal mines OR all penal quarries) |
+| 18 — Health + spa | **All Aquae towns in one province OR 25 mineral springs + doctors** |
+| 19 — Correspondence networks | **1 corpus fully mapped** (Pliny OR Ignatius OR imperial rescripts) |
+| 20 — Sports + athletic | **25 gymnasia + 1 athletic festival circuit** |
 
 **Rule of thumb:** if you're not committing at least 30–100 new features per shift, you're going too slow. The empire is enormous. The user built this for scale.
 
