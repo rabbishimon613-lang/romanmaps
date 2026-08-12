@@ -7,6 +7,58 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 5 — 2026-08-12 (00:00–06:00 UTC block)
+
+Read the last two entries before starting. Shift 4's "Next shift should pick up" left Track A pointing at Pompeii/Herculaneum (priority queue item 3, `public/data/pompeii.geojson` still a 0-byte placeholder) or legionary fortresses (item 7), and Track B pointing at POI category icons + legend plus the POI-dots-buried-under-roads visibility bug. Did both, paired directly — the visibility fix and the icon/legend work share the same underlying color-mapping change, so did them as one Track B unit rather than two.
+
+### Track A — Research & data
+
+**Pompeii & Herculaneum, 16 new POI features** (`public/data/pois.geojson`, 84 → 100, pure append — verified programmatically: all 84 pre-existing features byte-identical, zero removed, 16 new unique ids, no duplicate ids across the whole file). Delegated to a sub-agent scoped strictly to that one file (no `app/` access) so it could run in parallel with Track B; reviewed and validated its output before folding in.
+
+Every new feature has `"extant_117ce": false, "destroyed": 79` — both cities were buried in the 79 CE eruption of Vesuvius, 38 years before this map's 117 CE snapshot, so per the brief's own priority-queue item 3 framing they're geographically pinned as context but correctly filtered out of the live `pois-dot` render (the layer's existing `extant_117ce == true` filter handles this with no code change needed).
+
+Coverage — **Pompeii** (10): city-center pin, Forum, Amphitheatre (~70 BCE, one of the oldest known Roman amphitheaters), Temple of Jupiter (Capitolium), Temple of Apollo, Basilica, Stabian Baths, the Large Theatre (Teatro Grande), House of the Vettii, Villa of the Mysteries, Porta Marina gate. **Herculaneum** (6): city-center pin, College of the Augustales, Suburban Baths, House of the Deer, Villa of the Papyri.
+
+**Sourcing:** primary-source anchor is Pliny the Younger's eyewitness letters to Tacitus (*Epistulae* 6.16 and 6.20) on both city-level entries, cross-referenced with archaeological literature (Pompeii Archaeological Park's official site, Herculaneum Society/Oxford, Britannica, Madain Project) — 2+ sources per feature. WebFetch to the usual reference domains was untested-but-assumed-blocked given the unbroken run of prior shifts hitting `EGRESS_BLOCKED`; went straight to WebSearch's synthesized results, same fallback as every prior shift.
+
+**Judgment calls (logged in-feature):**
+- Added a general "city center" pin for both Pompeii and Herculaneum, not just individual landmarks — reasoned useful for search/wayfinding since every other POI in the file is a specific building with no anchor for the settlement itself. New `city` category, only used here so far.
+- **Villa of the Papyri** → `confidence: low`, explicit coordinate caveat: most of the villa is unexcavated or below the water table; the pin marks the excavated-atrium area reached via Bourbon-era tunnels, not a confirmed full-villa centroid.
+- Temple of Apollo, Large Theatre, House of the Vettii, Villa of the Mysteries, Porta Marina → `confidence: medium` (real scholarly spread on exact construction phasing for several; coordinates not independently re-verified against Pleiades given the egress situation).
+- Deliberately skipped a separate Forum Baths entry (brief said "Stabian and/or Forum") to stay inside a 12–18 feature target without padding — one bathhouse per city plus Herculaneum's Suburban Baths felt sufficient.
+- Left `public/data/pompeii.geojson` (the pre-existing 0-byte placeholder flagged by Shifts 2–4) untouched — the brief's schema puts POI data in `pois.geojson`, and every prior shift's Pompeii-adjacent work already follows that, so the placeholder is dead weight, not a gap. A future shift could just delete it, or repurpose it for something else — flagging rather than deleting unilaterally.
+
+**Schema note:** three more categories introduced — `house` (private domus), `villa` (suburban/extramural villas), `collegium` (civic/cult-association hall, distinct from a standalone `temple`) — plus first real use of `city` for settlement-level pins. Nothing enforces a closed enum, same as every prior shift's practice; Track B below finally gives every category a defined color via a shared module, so any future new category needs a line added there (falls back to a default maroon otherwise, doesn't break).
+
+**Deliberately excluded** (researched, judged not to add): the Mithraeum of the Seven Spheres and Mitreo di Fructosus at Ostia are a different site (already correctly excluded by Shift 3, not re-litigated here); no Pompeii/Herculaneum equivalent mithraea were added since none turned up with 117 CE-relevant framing distinct from the eruption-destruction story already told by the city-level pins.
+
+### Track B — Features & UI/UX
+
+Shipped **POI category icons + legend**, and folded in the **POI-dots-buried-under-roads** visibility fix Shift 4 flagged, since both are one underlying change:
+
+1. **`app/poiCategories.ts`** (new) — single source of truth for category → color, replacing the duplicate `CATEGORY_COLORS` maps that had drifted slightly between `app/Map.tsx` (didn't have one — flat maroon) and `app/PlaceDetails.tsx` (had one, chip-only). Groups ~30 raw `pois.geojson` categories into 15 visual families (Temples & shrines, Baths, Theatres & arenas, Civic & government, Palaces, Ports & harbors, Aqueducts, Forts, Mines, Libraries, Monuments, Tombs, Markets, Roads/bridges/gates, Fountains) so the legend stays short and legible even as categories keep growing shift over shift. `PlaceDetails.tsx`'s chip now imports `colorForCategory()` from here instead of keeping its own copy.
+2. **`app/Map.tsx`** — `pois-dot` layer's `circle-color` is now a MapLibre `match` expression driven by category (was a flat `#8b1a1a` for every single POI regardless of type). Also bumped `circle-radius` (3→4 at zoom 3, 7→8.5 at zoom 8) and `circle-stroke-width` (1.5→2.2) — directly fixes Shift 4's "POI dots buried at dense road intersections" note (Forum Romanum sitting right on Rome's road hub was nearly invisible before). Verified in-browser: the Rome road-convergence cluster and the Ostia/Portus cluster both now show clearly differentiated, legible colored dots (green aqueducts, blue ports/baths, maroon temples/monuments) instead of a single indistinguishable maroon smear.
+3. **`app/Legend.tsx`** (new) — collapsible Google-Maps-style legend panel, bottom-right FAB stacked above the Ruler button (Zoom → Layers → Ruler → Legend, bottom-to-top), lists all 15 category groups with color swatches. Closed by default so it doesn't compete with the epoch pill for attention on first load. Wired into `app/page.tsx`.
+
+**Verified in a real browser**, not just typecheck/build: ran `next dev`, drove it with Playwright + the pre-installed Chromium. Confirmed the legend opens/closes on both desktop (1280×800) and mobile (390×844) viewports with the full 15-item color-swatch list; confirmed clicking a POI still opens the details panel with a chip color that matches its legend/map-dot color (spot-checked "Aquae Claudia et Anio Novus" → green Aqueduct chip, matching the map dot and legend swatch); confirmed the new larger/colored dots render correctly over dense road convergences at Rome and Ostia via real mouse-wheel zoom interaction. `npx tsc --noEmit` and `npm run build` both clean.
+
+**Found and ruled out, not a regression:** while testing, `map.queryRenderedFeatures()` calls made immediately after a programmatic `map.jumpTo()` intermittently returned 0 features for `pois-dot` even though the layer, source, filter, and paint were all provably correct (confirmed via `getPaintProperty`/raw-source-data checks, and via a screenshot that *did* show correctly-colored dots). Isolated this by `git stash`-ing back to the untouched Shift-4 `HEAD` and reproducing the identical 0-rendered result there — so it predates this shift and isn't caused by this change. A real mouse-wheel zoom sequence (instead of instant `jumpTo`) reliably rendered 47/47 expected features every time. Read as headless/software-WebGL query-timing flakiness specific to this sandboxed test environment (console logs show `Automatic fallback to software WebGL` + `GPU stall due to ReadPixels` on every run) rather than a real user-facing bug — real interaction (wheel/drag) always triggers the repaints `jumpTo`-then-immediately-query does not reliably wait for. Not fixed (nothing in shipped code to fix), just documented here in case a future shift's browser-testing hits the same false alarm.
+
+**Didn't touch:** the mobile bottom-sheet Place Details panel spans full viewport width when open (`left:0, right:0`) and, at `maxHeight: 55vh`, can sit on top of the FAB stack (Legend/Ruler/Layers/Zoom) on short mobile viewports — noticed while testing, pre-existing since Shift 4 shipped the panel, not introduced this shift. Logged as a new backlog item below rather than fixed inline, since fixing it well probably means the FABs move above the sheet or into it, a small design call worth its own pass. Right-click context menu and Directions remain untouched, same as every prior shift's notes.
+
+### Commits this shift
+
+1. `Add 16 Pompeii/Herculaneum POIs (Track A)` — `public/data/pois.geojson`
+2. `POI category icons + legend, fix dots buried under roads (Track B)` — `app/poiCategories.ts`, `app/Map.tsx`, `app/PlaceDetails.tsx`, `app/Legend.tsx`, `app/page.tsx`
+
+### Next shift should pick up
+
+- **Track A:** Legionary fortresses (priority queue item 7 — 28 legions, still fully untouched) is the largest remaining priority-queue item. Amphitheaters beyond the Colosseum (item 6 — Verona, Nîmes, El Djem, Pula, Pozzuoli) is a smaller, well-bounded alternative. The systematic gazetteer audit Shift 4 flagged (script-check every notable ancient-city name against `places_medium.geojson` rather than discovering gaps one city at a time) is still worth doing and hasn't been picked up by anyone yet.
+- **Track B:** Mobile bottom-sheet-vs-FAB-stack overlap (new note above — Place Details panel can cover the Legend/Ruler/Layers/Zoom buttons on short mobile viewports when open), Directions (the other still-open P0, bigger scope — road-network routing), or right-click context menu (P1). The Layers panel could also grow real per-category POI toggles now that `app/poiCategories.ts` gives every category a stable group id — currently Layers only has one blanket "Landmarks" toggle for all POIs.
+- **General:** WebFetch egress has now been blocked (or assumed blocked, going straight to the WebSearch fallback) across 5 consecutive shifts — still worth someone outside the shift loop actually looking at the network policy rather than every shift re-logging the same workaround.
+
+---
+
 ## Shift 4 — 2026-08-11 (18:00–00:00 UTC block)
 
 Read the prior two entries before starting. Shift 3's "Next shift should pick up" pointed at provincial capitals (priority queue item 4) for Track A and either POI icons/legend or the Place details panel for Track B — did both, plus an unplanned but higher-leverage Track A find (see below).
