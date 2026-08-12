@@ -5,13 +5,19 @@ import maplibregl from "maplibre-gl";
 import { CATEGORY_GROUPS, colorForCategory, glyphForCategory, groupIdForCategory } from "./poiCategories";
 import { useCategoryFilters } from "./CategoryChips";
 import { selectPoi } from "./usePoiPanel";
+import { useLayers } from "./useLayers";
 
 type PoiFeature = GeoJSON.Feature<GeoJSON.Point, Record<string, any>>;
 
 /** Renders POIs as Google-Maps-style pill markers (colored circle w/ glyph) via HTML markers.
- * Category chip filter (top row) toggles which categories are visible. */
+ * Category chip filter (top row) toggles which categories are visible. The Layers panel's
+ * "Landmarks" toggle also gates this component directly (same pattern as PeopleMarkers.tsx) —
+ * the native pois-dot/pois-label map layers that toggle used to point at are vestigial
+ * (radius/opacity forced to 0), so before this fix the toggle did nothing visible. */
 export default function PoiMarkers() {
   const filters = useCategoryFilters();
+  const layers = useLayers();
+  const visible = layers["pois"];
   const markersRef = useRef<maplibregl.Marker[]>([]);
   const featuresRef = useRef<PoiFeature[] | null>(null);
 
@@ -42,6 +48,7 @@ export default function PoiMarkers() {
       // Clear existing
       markersRef.current.forEach((m) => m.remove());
       markersRef.current = [];
+      if (!visible) return;
 
       const activeGroups = Object.keys(filters).filter((k) => filters[k]);
       const anyActive = activeGroups.length > 0;
@@ -92,7 +99,7 @@ export default function PoiMarkers() {
       markersRef.current.forEach((m) => m.remove());
       markersRef.current = [];
     };
-  }, [filters]);
+  }, [filters, visible]);
 
   return null;
 }

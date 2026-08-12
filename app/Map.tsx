@@ -19,6 +19,8 @@ export default function Map() {
     let map: maplibregl.Map | null = null;
     let ro: ResizeObserver | null = null;
     let onWinResize: (() => void) | null = null;
+    let onPopState: (() => void) | null = null;
+    let pushTimer: ReturnType<typeof setTimeout> | null = null;
 
     (async () => {
       // Phase 1: light sources first — small enough to render fast.
@@ -30,6 +32,9 @@ export default function Map() {
         fetch("/data/ancient_sea.geojson").then((r) => r.json()),
       ]);
       if (cancelled || !ref.current) return;
+
+      // Coordinates URL sync — restore #lng,lat,zoomz from a shared/bookmarked link if present.
+      const initialView = parseHash(window.location.hash);
 
       map = new maplibregl.Map({
         container: ref.current,
@@ -93,8 +98,8 @@ export default function Map() {
             { id: "lakes", type: "fill", source: "lakes", paint: { "fill-color": "#b8dbe6" } },
           ],
         },
-        center: [12.4964, 41.9028],
-        zoom: 4.2,
+        center: initialView ? [initialView.lng, initialView.lat] : [12.4964, 41.9028],
+        zoom: initialView ? initialView.zoom : 4.2,
         minZoom: 2.5,
         maxZoom: 19,
         attributionControl: false,
@@ -115,9 +120,11 @@ export default function Map() {
 
       const kick = () => map && map.resize();
       setTimeout(kick, 100);
-      // Real animated flyTo — forces rAF frames the whole way, which paints.
+      // Real animated flyTo — forces rAF frames the whole way, which paints. Skipped when the
+      // page loaded with a coordinates hash (shared link / back-forward) — land directly there
+      // instead of flying past it into the default Rome view.
       const openingFly = () => {
-        if (!map) return;
+        if (!map || initialView) return;
         map.jumpTo({ center: [15, 43], zoom: 3.8 });
         setTimeout(() => {
           if (!map) return;
@@ -129,6 +136,41 @@ export default function Map() {
       ro.observe(ref.current);
       onWinResize = kick;
       window.addEventListener("resize", onWinResize);
+
+      // Coordinates URL sync — keep #lng,lat,zoomz in the hash as the user pans/zooms/flies
+      // anywhere (search, site jump, context menu), and make back/forward retrace those stops.
+      // The very first write replaces the current history entry rather than pushing a new one,
+      // so loading the app doesn't itself consume a "back" step.
+      let firstHashWrite = true;
+      let suppressNextPush = !!initialView;
+      const writeHash = () => {
+        if (!map) return;
+        const c = map.getCenter();
+        const hash = formatHash(c.lng, c.lat, map.getZoom());
+        if (window.location.hash === hash) return;
+        if (firstHashWrite) {
+          firstHashWrite = false;
+          history.replaceState(null, "", hash);
+        } else {
+          history.pushState(null, "", hash);
+        }
+      };
+      map.on("moveend", () => {
+        if (suppressNextPush) {
+          suppressNextPush = false;
+          return;
+        }
+        if (pushTimer) clearTimeout(pushTimer);
+        pushTimer = setTimeout(writeHash, 400);
+      });
+      onPopState = () => {
+        if (!map) return;
+        const view = parseHash(window.location.hash);
+        if (!view) return;
+        suppressNextPush = true;
+        map.flyTo({ center: [view.lng, view.lat], zoom: view.zoom, duration: 600 });
+      };
+      window.addEventListener("popstate", onPopState);
 
       // Phase 2: roads — Itiner-e dataset, split into Main (viae) and Secondary.
       // Google-Maps-like hierarchy: Main = highway (thicker, brighter), Secondary = local street.
@@ -752,12 +794,32 @@ export default function Map() {
     return () => {
       cancelled = true;
       if (onWinResize) window.removeEventListener("resize", onWinResize);
+      if (onPopState) window.removeEventListener("popstate", onPopState);
+      if (pushTimer) clearTimeout(pushTimer);
       if (ro) ro.disconnect();
       if (map) map.remove();
     };
   }, []);
 
   return <div ref={ref} style={{ position: "absolute", inset: 0 }} />;
+}
+
+/** Parses a `#lng,lat,zoomz` location hash (e.g. `#12.4964,41.9028,4.20z`) into a view, or null
+ * if the hash is empty/malformed. */
+function parseHash(hash: string): { lng: number; lat: number; zoom: number } | null {
+  const raw = hash.startsWith("#") ? hash.slice(1) : hash;
+  const m = raw.match(/^(-?\d+\.?\d*),(-?\d+\.?\d*),(-?\d+\.?\d*)z$/);
+  if (!m) return null;
+  const lng = parseFloat(m[1]);
+  const lat = parseFloat(m[2]);
+  const zoom = parseFloat(m[3]);
+  if (!isFinite(lng) || !isFinite(lat) || !isFinite(zoom)) return null;
+  if (lng < -180 || lng > 180 || lat < -90 || lat > 90) return null;
+  return { lng, lat, zoom };
+}
+
+function formatHash(lng: number, lat: number, zoom: number): string {
+  return `#${lng.toFixed(4)},${lat.toFixed(4)},${zoom.toFixed(2)}z`;
 }
 
 function escapeHtml(s: string): string {
