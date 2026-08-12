@@ -5,6 +5,7 @@ import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { applyAllLayers } from "./useLayers";
 import { selectPoi, clearPoi } from "./usePoiPanel";
+import { categoryColorMatchPairs, DEFAULT_COLOR } from "./poiCategories";
 
 export default function Map() {
   const ref = useRef<HTMLDivElement>(null);
@@ -261,10 +262,13 @@ export default function Map() {
           source: "pois",
           filter: ["==", ["get", "extant_117ce"], true],
           paint: {
-            "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3, 8, 7],
-            "circle-color": "#8b1a1a",
+            // Slightly larger + a thicker halo than the base gazetteer's places-dot layer, so POI
+            // markers stay legible where they sit on top of dense roads-main convergences (e.g.
+            // Forum Romanum at Rome's road hub) — flagged as a visibility bug by Shift 4.
+            "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 4, 8, 8.5],
+            "circle-color": ["match", ["get", "category"], ...categoryColorMatchPairs(), DEFAULT_COLOR] as any,
             "circle-stroke-color": "#f4ead5",
-            "circle-stroke-width": 1.5,
+            "circle-stroke-width": 2.2,
           },
         });
         map.addLayer({

@@ -3,37 +3,7 @@
 import { useEffect, useState } from "react";
 import type { Map as MLMap } from "maplibre-gl";
 import { usePoiPanel, clearPoi } from "./usePoiPanel";
-
-const CATEGORY_COLORS: Record<string, string> = {
-  temple: "#8b1a1a",
-  bathhouse: "#1a6b8b",
-  amphitheater: "#7a4a1a",
-  theater: "#7a4a1a",
-  circus: "#7a4a1a",
-  forum: "#b0431a",
-  basilica: "#b0431a",
-  curia: "#b0431a",
-  palace: "#6a1a8b",
-  port: "#1a5c8b",
-  lighthouse: "#1a5c8b",
-  canal: "#1a5c8b",
-  aqueduct: "#1a6b46",
-  fort: "#3c4043",
-  mansio: "#3c4043",
-  mine: "#3c4043",
-  library: "#8b6a1a",
-  arch: "#8b1a1a",
-  column: "#8b1a1a",
-  monument: "#8b1a1a",
-  mausoleum: "#5c1414",
-  market: "#8b6a1a",
-  warehouse: "#8b6a1a",
-  road: "#5f6368",
-  gate: "#5f6368",
-  synagogue: "#1a6b8b",
-  necropolis: "#5c1414",
-};
-const DEFAULT_COLOR = "#8b1a1a";
+import { colorForCategory } from "./poiCategories";
 
 const CONFIDENCE_COLOR: Record<string, string> = {
   high: "#188038",
@@ -93,7 +63,7 @@ export default function PlaceDetails() {
   const name = p.name_latin || p.name_english || "Unknown";
   const subtitle = p.name_english && p.name_english !== p.name_latin ? p.name_english : "";
   const category: string = p.category || "";
-  const color = CATEGORY_COLORS[category] || DEFAULT_COLOR;
+  const color = colorForCategory(category);
 
   const built = formatYear(p.built);
   const destroyed = formatYear(p.destroyed);
