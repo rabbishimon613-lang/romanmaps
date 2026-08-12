@@ -1,0 +1,346 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [0.9019, 51.8890] },
+      "properties": {
+        "id": "cult_camulodunum",
+        "name": "Colchester",
+        "category": "provincial_cult_center",
+        "first_worshipped": "Divus Claudius",
+        "one_line": "Britannia's first provincial temple, dedicated to the deified Claudius soon after the conquest, was the grandest building in the new colonia. Boudica's rebels burned it to its podium in 60 CE, trapping the last defenders inside for two days before the walls fell. Rome rebuilt the temple on the same massive podium, which still underlies Colchester Castle today.",
+        "province": "Britannia",
+        "modern_location": "Colchester, United Kingdom",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Claudius,_Colchester",
+          "https://imperiumromanum.pl/en/roman-art-and-culture/roman-architecture/roman-buildings/temple-of-claudius-in-colonia-claudia-victricensis-camulodunum/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [1.2581, 41.1192] },
+      "properties": {
+        "id": "cult_tarraco",
+        "name": "Tarragona",
+        "category": "provincial_cult_center",
+        "first_worshipped": "Divus Augustus",
+        "one_line": "The provincial council of Hispania Citerior petitioned Rome for a temple to the deified Augustus, and Tacitus later called the grant the precedent every other province followed. Dedicated under Tiberius around 15 CE, it stood at the center of a 7.5-hectare forum complex crowning Tarraco's acropolis and hosted the province's annual assembly. Hadrian would rebuild the temple in 123 CE, but in 117 it was already a century into continuous use.",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Tarragona, Spain",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.tarragonaturisme.cat/en/monument/temple-imperial-cult-complex",
+          "https://followinghadrian.com/2023/01/23/winter-ad-122-3-hadrian-stays-in-tarraco-and-rebuilds-the-temple-of-augustus-hadrian1900/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [27.1847, 39.1325] },
+      "properties": {
+        "id": "cult_pergamon",
+        "name": "Pergamon",
+        "category": "provincial_cult_center",
+        "first_worshipped": "Augustus (with Roma)",
+        "one_line": "Pergamon became the first city in Asia Minor allowed a temple to a living emperor when Augustus granted the province's request in 29 BCE. The temple to Roma and Augustus crowned the acropolis beside the older sanctuary of Athena and made Pergamon the political and religious capital of the koinon of Asia. Trajan added a second temple on the same acropolis, still unfinished at his death in 117 CE and completed by Hadrian.",
+        "province": "Asia",
+        "modern_location": "Bergama, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Roma_and_Augustus",
+          "https://imperiumromanum.pl/en/article/augustus-and-beginnings-of-imperial-cult/",
+          "https://en.wikipedia.org/wiki/Temple_of_Trajan"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [29.9408, 40.7654] },
+      "properties": {
+        "id": "cult_nicomedia",
+        "name": "Izmit",
+        "category": "provincial_cult_center",
+        "first_worshipped": "Divus Julius Caesar (with Roma)",
+        "one_line": "Nicomedia earned the same honor as Pergamon in the same year, 29 BCE, when Augustus authorized a temple to Roma and the deified Julius Caesar for the province's Roman-citizen population. It served for decades as a meeting place of Bithynia's provincial assembly, alongside Pergamon's temple for Asia. Modern Izmit sits directly over the ancient city, and the temple itself has never been relocated archaeologically.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "Izmit, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.academia.edu/2348885/Religion_and_religious_buildings_of_Nicomedia_in_the_time_of_Augustus",
+          "https://www.bestephesustours.com/blog/the-temple-of-dea-roma-and-divus-julius-caesar-in-ephesus.html"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [27.3426, 37.9365] },
+      "properties": {
+        "id": "cult_ephesus_sebastoi",
+        "name": "Ephesus",
+        "category": "sebasteion",
+        "first_worshipped": "Domitian and Domitia (now venerated as Divus Vespasianus)",
+        "one_line": "Dedicated in 89-90 CE, this temple made Ephesus the first city in the province to hold the title neokoros, temple-warden of an emperor, under a colossal cult statue that stood well over 6 meters tall. After Domitian's assassination and damnatio memoriae in 96 CE, the sanctuary was quietly rededicated to his deified father Vespasian rather than torn down. In 117 CE it still closed the south side of Domitian Square between the State Agora and Curetes Street.",
+        "province": "Asia",
+        "modern_location": "Selcuk, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_the_Sebastoi",
+          "https://www.judaism-and-rome.org/aphrodisias-and-imperial-temple-ephesus-under-domitian"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [32.8583, 39.9444] },
+      "properties": {
+        "id": "cult_ancyra",
+        "name": "Ankara",
+        "category": "provincial_cult_center",
+        "first_worshipped": "Augustus (with Roma)",
+        "one_line": "Built soon after Rome annexed Galatia in 25 BCE, this temple to Roma and Augustus carries the most complete surviving copy of the Res Gestae Divi Augusti, Augustus's own account of his career, cut into its interior walls in Latin with a Greek translation running along the exterior. Scholars still call it the Monumentum Ancyranum for that inscription. The text remained legible on the temple walls in 117 CE, more than a century after it was carved.",
+        "province": "Galatia",
+        "modern_location": "Ankara, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Augustus_and_Rome",
+          "https://www.britannica.com/topic/Monumentum-Ancyranum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [28.7258, 37.7085] },
+      "properties": {
+        "id": "cult_aphrodisias_sebasteion",
+        "name": "Aphrodisias",
+        "category": "sebasteion",
+        "first_worshipped": "Augustus, Tiberius, Claudius and Nero (the Julio-Claudian dynasty)",
+        "one_line": "Local families funded this three-story processional complex across three generations, lining its two 90-meter porticoes with more than 190 carved relief panels celebrating the Julio-Claudian emperors as conquerors and gods. Completed under Nero around 60 CE, it linked a monumental gate to a temple of Aphrodite at its western end. The reliefs and colonnades still stood complete in 117 CE.",
+        "province": "Asia",
+        "modern_location": "Aphrodisias, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.judaism-and-rome.org/sebasteion-aphrodisias-20-60-ce",
+          "https://www.aphrodisias.org/en/sebasteion-2"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.1892, 38.3061] },
+      "properties": {
+        "id": "cult_pisidian_antioch",
+        "name": "Pisidian Antioch",
+        "category": "sebasteion",
+        "first_worshipped": "Augustus",
+        "one_line": "A triple-arched gateway opened onto this hillside sanctuary, its temple to Augustus set on a high podium and framed by a two-story colonnaded courtyard cut into the slope. The propylon carried a Latin copy of the Res Gestae Divi Augusti, one of only three copies of the text known from the ancient world. Roman veteran colonists settled here by Augustus kept the sanctuary in continuous use through 117 CE.",
+        "province": "Galatia",
+        "modern_location": "Yalvac, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://vici.org/vici/12017/",
+          "https://vici.org/vici/32727/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [3.0044, 43.1841] },
+      "properties": {
+        "id": "cult_narbo",
+        "name": "Narbonne",
+        "category": "provincial_cult_center",
+        "first_worshipped": "Numen Augusti (the divine power of the living Augustus)",
+        "one_line": "The people of Narbo vowed this altar to the numen of Augustus in 11 CE, five years after Rome itself set up an altar to the same cult, and dedicated it the following year in the city's forum. Its inscribed rules for sacrifice survive nearly complete, laying out an annual calendar of offerings on Augustus's birthday and accession day. Narbo, capital of the senatorial province Gallia Narbonensis, kept the cult running through 117 CE, separate from the federal altar the three Gauls shared at Lugdunum.",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Narbonne, France",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.judaism-and-rome.org/dedication-imperial-cult-narbo-cil-xii-4333",
+          "https://www.judaism-and-rome.org/altar-augustan-peace-narbo-cil-xii-4335"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [22.2000, 40.5236] },
+      "properties": {
+        "id": "cult_beroea",
+        "name": "Veria",
+        "category": "provincial_cult_center",
+        "first_worshipped": "Augustus and the imperial family",
+        "one_line": "Beroea hosted the koinon of Macedonians, the province's federal council, and its Sebasteion made the city Macedonia's religious center of emperor worship. Nerva granted Beroea the coveted neokoros title only two decades before this snapshot, a fresh honor Macedonians were still celebrating in 117 CE. A Macedoniarch presided each year over the games and sacrifices held there.",
+        "province": "Macedonia",
+        "modern_location": "Veria, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Beroea",
+          "https://en.wikipedia.org/wiki/Macedoniarch"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [10.3236, 36.8513] },
+      "properties": {
+        "id": "cult_carthage_gens_augusta",
+        "name": "Carthage",
+        "category": "provincial_cult_center",
+        "first_worshipped": "the Gens Augusta (Augustus's family)",
+        "one_line": "A freedman named Perelius Hedulus, serving as Carthage's lifetime priest of the imperial cult, dedicated this marble altar to the Gens Augusta on the slopes of Byrsa hill, inside the colony Caesar and Augustus had refounded on Carthage's ruins in 29 BCE. Its carved reliefs of Roma and Apollo echoed the Ara Pacis back in Rome. As capital of Africa Proconsularis, Carthage remained the province's foremost center of emperor worship when Trajan died in 117 CE.",
+        "province": "Africa Proconsularis",
+        "modern_location": "Carthage, Tunisia",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Altar_of_the_Gens_Augusta",
+          "https://www.academia.edu/34710817/An_Augustan_Period_Altar_at_Carthage_Freedman_Status_and_Roman_Provincial_Identity"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-4.7742, 37.8829] },
+      "properties": {
+        "id": "cult_corduba",
+        "name": "Cordoba",
+        "category": "provincial_cult_center",
+        "first_worshipped": "Augustus and the imperial family",
+        "one_line": "Corduba, capital of Hispania Baetica, raised this Corinthian temple on a terraced platform beside its provincial forum, a project begun under Claudius that took roughly forty years to finish under Domitian. Six columns crossed its front and ten ran down each side, making it one of the largest temples ever built in Roman Spain. It hosted Baetica's annual provincial assembly and imperial cult through 117 CE.",
+        "province": "Hispania Baetica",
+        "modern_location": "Cordoba, Spain",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.artencordoba.com/en/roman-cordoba/monuments-of-roman-cordoba/roman-temple-claudio-marcelo/",
+          "https://www.academia.edu/35324531/T%C3%A1cito_el_templo_romano_de_la_c_Morer%C3%ADa_C%C3%B3rdoba_y_el_origen_del_culto_provincial_en_Baetica"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [29.8975, 31.2013] },
+      "properties": {
+        "id": "cult_alexandria_caesareum",
+        "name": "Alexandria",
+        "category": "provincial_cult_center",
+        "first_worshipped": "Divus Julius Caesar, completed as a temple of Augustus",
+        "one_line": "Cleopatra began this harborside sanctuary to honor Mark Antony or Julius Caesar; after her defeat at Actium, Augustus finished it instead as his own temple of the imperial cult. Twin obelisks over 20 meters tall, dragged from Heliopolis, flanked its entrance and were later carried off to London and New York as Cleopatra's Needles. Philo of Alexandria, writing within a generation of 117 CE, called it unmatched anywhere in the world for its size and beauty.",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.cealex.org/research/excavations-in-the-process-of-being-published/caesareum/",
+          "https://alexander-the-great.org/structures/caesareum-of-alexandria"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [34.8930, 32.5013] },
+      "properties": {
+        "id": "cult_caesarea_maritima",
+        "name": "Caesarea",
+        "category": "provincial_cult_center",
+        "first_worshipped": "Roma and Augustus",
+        "one_line": "Herod the Great built this temple on a raised platform overlooking the artificial harbor he had just engineered, dedicating it jointly to the goddess Roma and to Augustus around 10 BCE. Visible far out at sea, it announced Caesarea as a thoroughly Roman city before a ship ever reached the breakwater. Caesarea had served as the seat of Judaea's Roman governors for more than a century by 117 CE, and the temple still crowned the city center.",
+        "province": "Iudaea",
+        "modern_location": "Caesarea, Israel",
+        "extant_117ce": true,
+        "sources": [
+          "https://ferrelljenkins.blog/2015/02/11/herods-temple-to-roma-and-augustus-at-caesarea-maritima/",
+          "https://en.wikipedia.org/wiki/Caesarea_Maritima"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.1950, 32.2764] },
+      "properties": {
+        "id": "cult_sebaste",
+        "name": "Sebastia",
+        "category": "provincial_cult_center",
+        "first_worshipped": "Augustus",
+        "one_line": "Herod the Great rebuilt the old Israelite capital of Samaria, renamed it Sebaste, Greek for Augustus, and crowned its acropolis with a temple to his patron measuring roughly 35 by 24 meters. The temple sat directly over the ruins of the biblical kings' palace complex on the hilltop. It remained the ceremonial center of Herodian loyalty to Rome through 117 CE, a debt written into the very name of the city.",
+        "province": "Iudaea",
+        "modern_location": "Sebastia, West Bank",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.bibleplaces.com/blog/2009/09/herods-temple-at-sebaste-then-and-now/",
+          "https://ferrelljenkins.blog/2015/02/16/herod-built-a-temple-to-augustus-at-samaria/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.484471, 41.891616] },
+      "properties": {
+        "id": "cult_rome_divus_augustus",
+        "name": "Rome",
+        "category": "divus_temple",
+        "first_worshipped": "Divus Augustus",
+        "one_line": "Tiberius and Livia built this temple over the house where Augustus had lived before entering public life, establishing Rome's own cult of its first deified emperor. Caligula finished the dedication and, according to Suetonius, used its roof as a bridge to visit the Capitoline as though he were the god's equal. Domitian rebuilt the temple after a fire around 89-90 CE, and it stood between the Palatine and Capitoline hills in full cult use in 117 CE.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Divus_Augustus"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.483891, 41.892727] },
+      "properties": {
+        "id": "cult_rome_divus_vespasian_titus",
+        "name": "Rome",
+        "category": "divus_temple",
+        "first_worshipped": "Divus Vespasianus and Divus Titus",
+        "one_line": "Titus began this temple for his deified father Vespasian in 79 CE, and after Titus himself died and was deified the next year, Domitian rededicated it to both of them jointly around 87 CE. Three of its Corinthian columns still stand today at over 15 meters tall. It closed the western end of the Roman Forum between the Temple of Concord and the Temple of Saturn, in active cult use in 117 CE.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Vespasian_and_Titus"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.4934, 41.8876] },
+      "properties": {
+        "id": "cult_rome_divus_claudius",
+        "name": "Rome",
+        "category": "divus_temple",
+        "first_worshipped": "Divus Claudius",
+        "one_line": "Agrippina began this temple on the Caelian Hill for her poisoned and deified husband Claudius in 54 CE, raising a podium roughly 180 by 200 meters, one of the largest temple platforms in Rome. Her son Nero abandoned the project and carved a monumental nymphaeum into its unfinished eastern wall instead. Vespasian finally completed the temple decades later, and it stood finished and in cult use in 117 CE.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Claudius",
+          "https://renatoprosciutto.com/temple-divus-claudius-celio-rome/"
+        ],
+        "confidence": "high"
+      }
+    }
+  ]
+}

@@ -12,7 +12,10 @@ export type LayerGroupId =
   | "road-stations"
   | "living-empire"
   | "trade-routes"
-  | "disasters";
+  | "disasters"
+  | "health"
+  | "mints"
+  | "imperial-cult";
 
 export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: string[] }[] = [
   { id: "roads", label: "Roads", mapLayerIds: ["roads-main", "roads-secondary"] },
@@ -27,6 +30,9 @@ export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: strin
   { id: "living-empire", label: "117 CE — people & events", mapLayerIds: ["events-point", "events-polygon-fill", "events-polygon-line"] },
   { id: "trade-routes", label: "Trade routes", mapLayerIds: ["trade-routes-line", "trade-routes-node"] },
   { id: "disasters", label: "Disasters & memory", mapLayerIds: ["disasters-point"] },
+  { id: "health", label: "Health & spa culture", mapLayerIds: ["health-point"] },
+  { id: "mints", label: "Mints", mapLayerIds: ["mints-point"] },
+  { id: "imperial-cult", label: "Imperial cult", mapLayerIds: ["imperial-cult-point"] },
 ];
 
 type LayerState = Record<LayerGroupId, boolean>;

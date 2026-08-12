@@ -1,0 +1,749 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.359,
+     51.3811
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_sulis",
+    "name": "Bath",
+    "category": "aquae_town",
+    "one_line": "The Romans built a temple and bathing complex over a natural hot spring that fed 1,170,000 liters of 46-degree water a day into a lead-lined reservoir. Dedicated to Sulis Minerva, a fusion of the local Celtic goddess and Roman Minerva, the site drew pilgrims from across Britannia seeking cures and cursing thieves on lead tablets thrown into the sacred spring.",
+    "province": "Britannia",
+    "modern_location": "Bath, United Kingdom",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Roman_Baths_(Bath)",
+     "https://pleiades.stoa.org/places/79495"
+    ],
+    "confidence": "high"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.2398,
+     50.0782
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_mattiacae",
+    "name": "Wiesbaden",
+    "category": "aquae_town",
+    "one_line": "A garrison town grew up around 26 mineral springs on the edge of the Rhine frontier, first mentioned by Pliny the Elder around 77 CE for the heat of its waters. Auxiliary troops guarding the limes bathed here before it developed into a full spa settlement under the Flavians and Trajan.",
+    "province": "Germania Superior",
+    "modern_location": "Wiesbaden, Germany",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Wiesbaden",
+     "https://en.wikipedia.org/wiki/Aquae_Mattiacorum"
+    ],
+    "confidence": "high"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.9727,
+     42.4394
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_cutiliae",
+    "name": "Terme di Cotilia",
+    "category": "aquae_town",
+    "one_line": "A sulfurous spring resort in the Sabine hills with a rock-cut pool 60 by 24 meters, favored every summer by the emperor Vespasian, who bathed in its cold waters and died there on 24 June 79 CE. His son Titus kept the family tradition of taking the cure at the same springs.",
+    "province": "Italia",
+    "modern_location": "Cittaducale, Italy",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Aquae_Cutiliae",
+     "https://www.visitlazio.com/en/the-vespasian-baths-in-rieti/"
+    ],
+    "confidence": "high"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4634,
+     44.6773
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_statiellae",
+    "name": "Acqui Terme",
+    "category": "aquae_town",
+    "one_line": "Pliny the Elder praised the sulfur springs here as the most famous in Liguria, and the Romans built a bathhouse whose brick arches, the Bollente arcade, still carry near-boiling water into the town center today. The resort sat on the road linking Genoa to the Po valley, a convenient stop for travelers taking the cure.",
+    "province": "Italia",
+    "modern_location": "Acqui Terme, Italy",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Acqui_Terme",
+     "https://en.wikipedia.org/wiki/Aquae_Statiellae"
+    ],
+    "confidence": "high"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.24,
+     48.7606
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_aureliae",
+    "name": "Baden-Baden",
+    "category": "aquae_town",
+    "one_line": "Roman soldiers stationed on the upper Rhine frontier built bathhouses over the hot springs here in the late first century CE, part of a small garrison settlement of around 8 hectares. The waters, still around 68 degrees Celsius at the source, would later draw emperors including Caracalla for their arthritis.",
+    "province": "Germania Superior",
+    "modern_location": "Baden-Baden, Germany",
+    "extant_117ce": true,
+    "sources": [
+     "http://oppidaimperiiromani.blogspot.com/2010/08/aqvae-avreliae-baden-baden.html",
+     "https://www.greatspatownsofeurope.eu/discover-experience/baden-baden/spa-history/"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0839,
+     50.7753
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_granni",
+    "name": "Aachen",
+    "category": "aquae_town",
+    "one_line": "Legionaries channeled the hot sulfur springs at B\u00fcchel into a bathing complex at the start of the first century CE, later adding a second bath house, the M\u00fcnstertherme, along with a forum and aqueducts. By Trajan's reign the settlement covered some 25 hectares and was being groomed for city status.",
+    "province": "Germania Inferior",
+    "modern_location": "Aachen, Germany",
+    "extant_117ce": true,
+    "sources": [
+     "http://ancientworld.hansotten.com/germany/aachen-aquae-granni/",
+     "https://www.viabelgica.nl/en/plek/aquae-granni-roman-aachen-at-the-centre-charlemagne/"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -7.4699,
+     41.7402
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_flaviae",
+    "name": "Chaves",
+    "category": "aquae_town",
+    "one_line": "A garrison town on the Braga-Astorga road grew around hot springs that still surface at 73 degrees Celsius, one of the hottest in Europe. Its 140-meter, eleven-arch bridge over the Tamega, begun under Vespasian and finished under Trajan by 104 CE, still carries an inscription naming ten dependent tribal communities.",
+    "province": "Hispania Tarraconensis",
+    "modern_location": "Chaves, Portugal",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Aquae_Flaviae",
+     "https://en.wikipedia.org/wiki/Roman_Bridge_of_Chaves"
+    ],
+    "confidence": "high"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     27.3932,
+     42.6109
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_calidae_thrace",
+    "name": "Aquae Calidae",
+    "category": "aquae_town",
+    "one_line": "Thermal baths beside the Black Sea coast tapped hot springs that had already been in use for thousands of years before Rome arrived. The waters ran continuously through baths on this spot for over 1,700 years, later drawing emperors, Bulgarian khans, and an Ottoman sultan to the same basin.",
+    "province": "Thracia",
+    "modern_location": "Burgas, Bulgaria",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Aquae_Calidae,_Bulgaria",
+     "https://www.burgasmuseums.bg/en/encdetail/moved-24"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.3097,
+     47.4739
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_helveticae",
+    "name": "Baden",
+    "category": "aquae_town",
+    "one_line": "A spa settlement grew up beside the Limmat a few miles from the legionary camp at Vindonissa, its 47-degree waters credited with healing powers by soldiers and settlers alike. Tacitus described it as a small town valued above all for the pleasant setting of its warm springs.",
+    "province": "Germania Superior",
+    "modern_location": "Baden, Switzerland",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Aquae_Helveticae",
+     "https://blog.nationalmuseum.ch/en/2022/03/the-baths-at-baden-switzerlands-first-tourist-hotspot/"
+    ],
+    "confidence": "high"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4474,
+     43.5297
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_sextiae",
+    "name": "Aix-en-Provence",
+    "category": "aquae_town",
+    "one_line": "Founded in 122 BCE by the proconsul Gaius Sextius Calvinus around a warm mineral spring, this was the first Roman settlement in Gaul. Its baths, built in the later first century CE, drew on water still flowing today at a constant 33 degrees Celsius, prized for treating rheumatism and skin ailments.",
+    "province": "Gallia Narbonensis",
+    "modern_location": "Aix-en-Provence, France",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Aix-en-Provence",
+     "https://www.roamintheempire.com/index.php/2019/11/06/aquae-sextiae/"
+    ],
+    "confidence": "high"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     16.4213,
+     46.208
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_iasae",
+    "name": "Varazdinske Toplice",
+    "category": "aquae_town",
+    "one_line": "Roman settlers built a bathhouse, forum, and small capitol over sulfur springs already sacred to the local Iasi tribe, whose name gave the site its Latin title. The complex sat on the road network of southern Pannonia, drawing bathers to its warm, sulfurous pools through the second century and beyond.",
+    "province": "Pannonia Superior",
+    "modern_location": "Varazdinske Toplice, Croatia",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Aquae_Iasae",
+     "https://vici.org/vici/11789/"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     17.2261,
+     45.5964
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_balissae",
+    "name": "Daruvar",
+    "category": "aquae_town",
+    "one_line": "A bathing complex rose beside mineral-rich hot springs in Roman Pannonia, its warm and cold pools built for soldiers to rest and recover as well as for civilian bathers seeking relief from skin and joint ailments. Dedications found at the site name the local healing deities Sedatus and Silvanus alongside the springs.",
+    "province": "Pannonia Superior",
+    "modern_location": "Daruvar, Croatia",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Aquae_Balissae",
+     "https://www.hotspringsguides.com/hot-springs/aquae-balissae-daruvar-croatia"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.75,
+     47.95
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_borvonis",
+    "name": "Bourbonne-les-Bains",
+    "category": "aquae_town",
+    "one_line": "A shrine and bathing establishment grew around hot springs sacred to Borvo and Damona, Gallic healing deities the Romans absorbed rather than replaced. Sick visitors threw thousands of coins and inscribed lead tablets into the spring asking the gods for cures, many of which archaeologists later recovered from the basin.",
+    "province": "Gallia Belgica",
+    "modern_location": "Bourbonne-les-Bains, France",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Bourbonne-les-Bains",
+     "https://en.wikipedia.org/wiki/Borvo"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.6667,
+     46.2864
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_neri",
+    "name": "Neris-les-Bains",
+    "category": "aquae_town",
+    "one_line": "A spa town of some size took shape around mineral springs in the territory of the Bituriges Cubi, complete with an amphitheater seating several thousand for entertainment between treatments. More than 4,000 coins and dozens of carved gemstones recovered from its pools attest to centuries of grateful visitors.",
+    "province": "Gallia Aquitania",
+    "modern_location": "Neris-les-Bains, France",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/N%C3%A9ris-les-Bains",
+     "https://en.wikipedia.org/wiki/Aquae_Neri"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0553,
+     43.7102
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_tarbellicae",
+    "name": "Dax",
+    "category": "aquae_town",
+    "one_line": "A spa town developed under Augustus around hot springs that still discharge over 2 million liters of 64-degree water a day, among the most productive thermal sources in Gaul. Its baths served the Tarbelli tribe's chief settlement and travelers moving along the Atlantic coast road toward Hispania.",
+    "province": "Gallia Aquitania",
+    "modern_location": "Dax, France",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Dax,_Landes",
+     "https://en.wikipedia.org/wiki/Aquae_Tarbellicae"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.2183,
+     42.1053
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_apollinares_vicarello",
+    "name": "Vicarello",
+    "category": "aquae_town",
+    "one_line": "Pilgrims seeking cures at this spring on the shore of Lake Bracciano left behind one of the richest votive deposits in the Roman world: over 5,000 bronze coins and four inscribed silver cups mapping the entire road from Cadiz to Rome. The waters were dedicated to Apollo, patron of healing, and drew visitors for centuries.",
+    "province": "Italia",
+    "modern_location": "Vicarello, Italy",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Vicarello_Cups",
+     "http://www.imperium-romana.org/vicarello-cup.html"
+    ],
+    "confidence": "high"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     27.3417,
+     37.9395
+    ]
+   },
+   "properties": {
+    "id": "health_doctor_rufus_ephesus",
+    "name": "Rufus of Ephesus",
+    "category": "doctor",
+    "one_line": "A physician trained in Alexandria who returned to practice in his home city, Rufus wrote influential treatises on anatomy, the pulse, gout, and jaundice that later doctors like Galen quoted at length. He was a contemporary of the physician Statilius Criton, who served Trajan, placing his career squarely in this reign.",
+    "province": "Asia",
+    "modern_location": "Ephesus (Selcuk), Turkey",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Rufus_of_Ephesus",
+     "https://acnr.co.uk/articles/rufus-of-ephesus/"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.4964,
+     41.9028
+    ]
+   },
+   "properties": {
+    "id": "health_doctor_archigenes",
+    "name": "Archigenes of Apamea",
+    "category": "doctor",
+    "one_line": "A Syrian-born physician who practiced medicine in Rome during Trajan's reign, Archigenes led the eclectic Pneumatic school and wrote on fevers, pulse diagnosis, and surgery for aneurysms. His detailed clinical descriptions of headache and vertigo symptoms were still being cited by physicians centuries later.",
+    "province": "Italia",
+    "modern_location": "Rome, Italy",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Archigenes",
+     "https://link.springer.com/article/10.1007/s00381-016-3191-2"
+    ],
+    "confidence": "high"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.4864,
+     41.8992
+    ]
+   },
+   "properties": {
+    "id": "health_doctor_soranus_ephesus",
+    "name": "Soranus of Ephesus",
+    "category": "doctor",
+    "one_line": "Trained in Alexandria and born in Ephesus, Soranus practiced medicine in Rome across the reigns of Trajan and Hadrian, making him active in the capital in 117 CE. His four-book treatise on gynecology, covering pregnancy, midwifery, and infant care, remained the standard reference in the field for over a thousand years.",
+    "province": "Italia",
+    "modern_location": "Rome, Italy",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Soranus_of_Ephesus",
+     "https://oxfordre.com/classics/display/10.1093/acrefore/9780199381135.001.0001/acrefore-9780199381135-e-6002"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     29.9187,
+     31.2001
+    ]
+   },
+   "properties": {
+    "id": "health_school_alexandria",
+    "name": "Alexandria",
+    "category": "medical_school",
+    "one_line": "The Museion and its associated medical faculty remained the dominant training ground for physicians across the Roman world, carrying forward a tradition of human dissection pioneered here by Herophilus and Erasistratus four centuries earlier. Physicians from Ephesus to Rome, including Soranus, traveled to Alexandria to study before setting up practice elsewhere.",
+    "province": "Aegyptus",
+    "modern_location": "Alexandria, Egypt",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Medicine_in_ancient_Rome",
+     "https://www.hellenicaworld.com/Greece/LX/en/AlexandrianAnatomy.html"
+    ],
+    "confidence": "high"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     27.288,
+     36.8933
+    ]
+   },
+   "properties": {
+    "id": "health_school_kos",
+    "name": "Kos",
+    "category": "medical_school",
+    "one_line": "The birthplace of Hippocrates kept its name as medicine's founding school five centuries after his death, its teaching tradition built around careful bedside observation and the Hippocratic Corpus of case histories. Physicians across the empire still trained in the Hippocratic method that traced its roots to this island.",
+    "province": "Asia",
+    "modern_location": "Kos, Greece",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Hippocrates",
+     "https://link.springer.com/article/10.1007/s00381-010-1271-2"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     27.3737,
+     36.6857
+    ]
+   },
+   "properties": {
+    "id": "health_school_knidos",
+    "name": "Cnidus",
+    "category": "medical_school",
+    "one_line": "A rival tradition to Kos across the water, the Cnidian school built its reputation on detailed classification of diseases by organ, producing the influential text known as the Cnidian Sentences. Its early physician Chrysippus of Cnidus trained Erasistratus, who went on to found the great anatomical school at Alexandria.",
+    "province": "Asia",
+    "modern_location": "Datca, Turkey",
+    "extant_117ce": true,
+    "sources": [
+     "https://link.springer.com/article/10.1007/s00381-010-1271-2",
+     "https://journals.sagepub.com/doi/10.1177/007327537801600103"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.5064,
+     41.9128
+    ]
+   },
+   "properties": {
+    "id": "health_school_rome",
+    "name": "Rome",
+    "category": "medical_school",
+    "one_line": "Vespasian created the first state-funded teaching chairs in the capital in 71 CE and exempted physicians from billeting soldiers and paying taxes, formalizing medical practice as a protected profession. By Trajan's reign Rome hosted a resident community of prominent doctors, including Archigenes and Soranus, teaching and treating patients at the empire's political center.",
+    "province": "Italia",
+    "modern_location": "Rome, Italy",
+    "extant_117ce": true,
+    "sources": [
+     "https://philipharland.com/greco-roman-associations/letters-of-vespasian-and-domitian-on-physicians-and-instructors-74-ce-93-94-ce/",
+     "https://www.richardcarrier.info/archives/16051"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.0733,
+     37.5967
+    ]
+   },
+   "properties": {
+    "id": "health_asklepieion_epidaurus",
+    "name": "Sanctuary of Asklepios at Epidaurus",
+    "category": "asklepieion",
+    "one_line": "The most famous healing sanctuary in the Greek world drew the sick from every province to sleep in its abaton dormitory, where priests interpreted dreams as messages from Asklepios prescribing a cure. Nearly a thousand years after its founding, the sanctuary's theater, Tholos rotunda, and temple were still receiving pilgrims under Roman rule.",
+    "province": "Achaea",
+    "modern_location": "Epidaurus, Greece",
+    "extant_117ce": true,
+    "sources": [
+     "https://whc.unesco.org/en/list/491/",
+     "https://www.visitgreece.gr/experiences/culture/archaeological-sites-and-monuments/the-sanctuary-of-asklepios-at-epidaurus/"
+    ],
+    "confidence": "high"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     27.2984,
+     36.8794
+    ]
+   },
+   "properties": {
+    "id": "health_asklepieion_kos",
+    "name": "Asklepieion of Kos",
+    "category": "asklepieion",
+    "one_line": "Built on three rising terraces on a hillside outside town, this sanctuary paired temple worship with practical treatment rooms, medicinal spring-fed fountains, and Roman-era baths on its lowest level. Physicians here practiced as priests, treating patients in the tradition attributed to their most famous predecessor, Hippocrates.",
+    "province": "Asia",
+    "modern_location": "Kos, Greece",
+    "extant_117ce": true,
+    "sources": [
+     "https://www.greeka.com/dodecanese/kos/sightseeing/kos-asklepieion/",
+     "https://www.discovergreece.com/experiences/feel-healing-energy-asclepion-kos"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.7257,
+     37.9701
+    ]
+   },
+   "properties": {
+    "id": "health_asklepieion_athens",
+    "name": "Asklepieion of Athens",
+    "category": "asklepieion",
+    "one_line": "An Athenian citizen named Telemachos founded this sanctuary on the Acropolis's south slope in 420 BCE, bringing the cult of Asklepios to the city during a devastating plague. The complex held a sacred spring, an altar, and stoas for pilgrims, and remained in active worship on the same terrace beside the Theatre of Dionysos into the second century CE.",
+    "province": "Achaea",
+    "modern_location": "Athens, Greece",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Asclepieion_of_Athens",
+     "https://www.theacropolismuseum.gr/en/sanctuaries/sanctuary-asklepios"
+    ],
+    "confidence": "high"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.8794,
+     37.9061
+    ]
+   },
+   "properties": {
+    "id": "health_asklepieion_corinth",
+    "name": "Asklepieion of Corinth",
+    "category": "asklepieion",
+    "one_line": "Set against the north city wall with a view over the Corinthian Gulf, this sanctuary combined a temple to Asklepios with an adjoining dining hall and a spring-fed courtyard where patients bathed as part of treatment. Terracotta votive offerings shaped like healed body parts, arms, legs, and eyes, still line the site's storerooms from centuries of grateful dedications.",
+    "province": "Achaea",
+    "modern_location": "Corinth, Greece",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Asclepeion_of_Corinth",
+     "https://www.ascsa.edu.gr/excavations/corinth/corinth-excavations-overview/asklepieion"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.4778,
+     41.8894
+    ]
+   },
+   "properties": {
+    "id": "health_asklepieion_tiber_island",
+    "name": "Temple of Aesculapius",
+    "category": "asklepieion",
+    "one_line": "After a plague struck Rome in 293 BCE, priests fetched a sacred snake from Epidaurus to found this healing shrine; the animal swam ashore at this island and marked the spot itself. The Tiber Island temple, its edges carved to resemble a ship's prow in honor of the myth, still functioned as a center of healing in 117 CE and remains a hospital site today.",
+    "province": "Italia",
+    "modern_location": "Rome, Italy",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Temple_of_Asclepius,_Rome",
+     "https://imperiumromanum.pl/en/roman-geography/tiber-island/"
+    ],
+    "confidence": "high"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.03,
+     41.45
+    ]
+   },
+   "properties": {
+    "id": "health_malaria_pontine_marshes",
+    "name": "Pontine Marshes",
+    "category": "malaria_zone",
+    "one_line": "A belt of stagnant lowland south of Rome along the Via Appia bred malarial mosquitoes so persistently that the marsh blocked Roman expansion southward for centuries. Julius Caesar planned a drainage scheme that was never finished, and the swamp remained a byword for fever until Mussolini's engineers finally reclaimed it in the twentieth century.",
+    "province": "Italia",
+    "modern_location": "Agro Pontino, Lazio, Italy",
+    "extant_117ce": true,
+    "sources": [
+     "https://www.britannica.com/place/Pontine-Marshes",
+     "https://academic.oup.com/book/9850/chapter/157116505"
+    ],
+    "confidence": "low"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.9,
+     39.7
+    ]
+   },
+   "properties": {
+    "id": "health_malaria_sardinia",
+    "name": "Sardinia's malarial coast",
+    "category": "malaria_zone",
+    "one_line": "Ancient DNA recovered from Roman-period burials on Sardinia's coast carries a genetic mutation that offers protection against malaria, confirming the disease was already entrenched on the island under Roman rule. The low coastal plains were considered so unhealthy that Rome used the island as a place of banishment, expecting the climate itself to punish exiles.",
+    "province": "Sardinia et Corsica",
+    "modern_location": "Sardinia, Italy",
+    "extant_117ce": true,
+    "sources": [
+     "https://www.sciencedaily.com/releases/2017/07/170727103035.htm",
+     "https://www.news.uzh.ch/en/articles/2017/Malaria_Sardinia.html"
+    ],
+    "confidence": "low"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.1,
+     42.6
+    ]
+   },
+   "properties": {
+    "id": "health_malaria_etruria_maremma",
+    "name": "Etruria's coastal marshes",
+    "category": "malaria_zone",
+    "one_line": "Poor drainage along Etruria's coastal plain left standing water that bred fever-carrying mosquitoes across a stretch of lowland later known as the Maremma, contributing to the decline of once-thriving Etruscan port cities like Vulci and Vetulonia. Roman-era writers associated the coast's summer air with sickness long before the cause was understood.",
+    "province": "Italia",
+    "modern_location": "Maremma, Tuscany, Italy",
+    "extant_117ce": true,
+    "sources": [
+     "https://academic.oup.com/book/9850/chapter/157116505",
+     "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12407210/"
+    ],
+    "confidence": "low"
+   }
+  }
+ ]
+}

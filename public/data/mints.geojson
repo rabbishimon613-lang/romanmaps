@@ -1,0 +1,413 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.4853, 41.8925] },
+      "properties": {
+        "id": "mint_rome",
+        "name": "Rome",
+        "category": "mint",
+        "metal": "gold, silver, bronze",
+        "role": "imperial_primary",
+        "one_line": "Trajan's moneyers struck the gold aurei, silver denarii, and bronze sestertii that funded the Dacian and Parthian wars from the mint near the Capitoline. Every provincial city that struck its own coin copied the portrait these dies set. In 117 CE it was the single busiest mint in the Mediterranean world.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "RIC II (Roman Imperial Coinage, Trajan)",
+          "NGC Ancients: Mints of the Roman Empire, ngccoin.com/news/article/8151",
+          "Ostia-Antica.org, 'The Maxentian Mint at Ostia' (Rome mint topography note)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.8262, 45.7589] },
+      "properties": {
+        "id": "mint_lugdunum",
+        "name": "Lyon",
+        "category": "mint",
+        "metal": "none (dormant since the Flavian period)",
+        "role": "imperial_provincial",
+        "one_line": "Augustus opened Lugdunum as the empire's second mint in 15 BCE, and for nearly a century it struck gold and silver alongside Rome. Its last major precious-metal issue ran under Vespasian in the 70s CE, and by Trajan's reign the workshop sat dormant, its output folded entirely into Rome. It stayed idle for another 180 years, until Diocletian revived it in 297 CE.",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Lyon, France",
+        "extant_117ce": false,
+        "sources": [
+          "NGC Ancients: Mints of the Roman Empire, ngccoin.com/news/article/8151",
+          "Aeternitas Numismatics, 'Knowing the Roman imperial mints: VIII - Lugdunum', aeternitas-numismatics.com",
+          "Cambridge, Journal of Roman Studies, 'The Mints of the Empire: Vespasian to Diocletian'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [36.1613, 36.2023] },
+      "properties": {
+        "id": "mint_antioch",
+        "name": "Antioch",
+        "category": "mint",
+        "metal": "silver, bronze",
+        "role": "imperial_provincial",
+        "one_line": "Antioch struck silver tetradrachms bearing Trajan's portrait to pay the legions massing for his Parthian invasion, each coin stamped with an eagle gripping a club on the reverse. With Hadrian stationed here as governor of Syria, the city functioned as the empire's forward capital in 117 CE.",
+        "province": "Syria",
+        "modern_location": "Antakya, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Antioch, Syria",
+          "McAlee, R., The Coinage of Antioch",
+          "Ancient Coin Traders, Trajan AR Tetradrachm, Antioch 98-99 CE, RPC/Prieur plate coin"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [29.9187, 31.2001] },
+      "properties": {
+        "id": "mint_alexandria",
+        "name": "Alexandria",
+        "category": "mint",
+        "metal": "billon, bronze",
+        "role": "imperial_provincial",
+        "one_line": "Alexandria ran Egypt's closed currency system, striking billon tetradrachms that were illegal to carry across the province's border. Anyone arriving had to trade denarii for local coin at the frontier. Trajan's tetradrachm issue turned out to be the only major Egyptian silver coinage of the entire second century.",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "extant_117ce": true,
+        "sources": [
+          "Howgego, C., 'Coinage and the Roman Economy in the Antonine Period: the view from Egypt', Oxford Roman Economy Project, oxrep.classics.ox.ac.uk",
+          "Bryn Mawr Classical Review 2005.07.64, 'Coinage in Roman Egypt: The Hoard Evidence'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [34.8913, 32.5000] },
+      "properties": {
+        "id": "mint_caesarea_maritima",
+        "name": "Caesarea",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "imperial_provincial",
+        "one_line": "Caesarea, seat of Judaea's Roman governor, struck its own bronze coinage showing Tyche crowned with a city wall and altars to the emperor. A dated issue from around 115 CE proves the mint was still running just before the Kitos War tore through the province.",
+        "province": "Judaea",
+        "modern_location": "Caesarea, Israel",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 3954, Trajan, Caesarea Maritima AE",
+          "Wikipedia, 'Procuratorial coinage of Roman Judaea'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.4787, 38.7312] },
+      "properties": {
+        "id": "mint_caesarea_cappadociae",
+        "name": "Kayseri",
+        "category": "mint",
+        "metal": "silver",
+        "role": "imperial_provincial",
+        "one_line": "Caesarea in Cappadocia ran the largest provincial mint outside Alexandria, striking silver drachms and didrachms to pay the legions guarding the Armenian frontier. Its heaviest Trajanic issue, three light tetradrachm types struck in 112-114 CE during his sixth consulship, pictured Mount Argaeus and a kneeling camel of Arabia.",
+        "province": "Cappadocia",
+        "modern_location": "Kayseri, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Butcher, K. & Ponting, M., Numismatic Chronicle 175 (2015), silver coinage of Cappadocia, warwick.ac.uk offprint",
+          "Vcoins, Trajan AR Drachm, Caesarea Cappadocia, Arabia standing type"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [29.9408, 40.7654] },
+      "properties": {
+        "id": "mint_nicomedia",
+        "name": "Izmit",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Nicomedia, metropolis of Bithynia, was one of about fourteen city mints striking bronze coin across the province under Trajan. Each coin carried the emperor's portrait on one face and a local civic type on the other, part of a regional currency system that ran parallel to Rome's.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "Izmit, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Bryn Mawr Classical Review 2024.07.03, 'Between Roman culture and local tradition: Roman provincial coinage of Bithynia and Pontus during the reign of Trajan (98-117 AD)'",
+          "Academia.edu, 'The Roman Imperial Coinage Model for Some Provincial Coins of Bithynia and Pontus Struck During the Reign of Trajan (98-117)'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [27.1848, 39.1325] },
+      "properties": {
+        "id": "mint_pergamon",
+        "name": "Pergamon",
+        "category": "mint",
+        "metal": "silver, bronze",
+        "role": "imperial_provincial",
+        "one_line": "Pergamon's mint had struck the broad silver cistophorus since the 2nd century BCE, and Rome kept the coin alive as Asia's standard high-value currency, worth three denarii. Trajan's moneyers continued the type through his reign, carrying forward a design older than the province itself.",
+        "province": "Asia",
+        "modern_location": "Bergama, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Wikipedia, 'Cistophorus'",
+          "American Numismatic Society, 'Attalid Cistophori and Roman Foreign Affairs in Asia Minor', numismatics.org/pocketchange/attalids",
+          "Academia.edu, 'The Introduction of Roman Coinages in Asia (133 BC-1st Century AD)'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [27.3416, 37.9396] },
+      "properties": {
+        "id": "mint_ephesus",
+        "name": "Ephesus",
+        "category": "mint",
+        "metal": "silver, bronze",
+        "role": "imperial_provincial",
+        "one_line": "Ephesus shared cistophorus production with Pergamon as one of only two workshops supplying Asia's silver currency, its busy harbor making it the easiest point to ship new coin around the province. Its own civic bronze ran alongside, stamped with the names of local magistrates each year.",
+        "province": "Asia",
+        "modern_location": "Selcuk, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Forum Ancient Coins discussion board, 'The Coinage of Ephesus'",
+          "Coin World, 'Cistophori of Roman emperor Hadrian began with overstriking of older coins'",
+          "Wikipedia, 'Cistophorus'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [27.1381, 38.4192] },
+      "properties": {
+        "id": "mint_smyrna",
+        "name": "Smyrna",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Smyrna ran a civic bronze mint under local magistrates and sophists, its dies carrying Zeus Akraios from his temple on Mount Pagus and the city's twin patron goddesses, the Nemeses. The mint's output continued without interruption through Trajan's nineteen-year reign.",
+        "province": "Asia",
+        "modern_location": "Izmir, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Smyrna civic issues, Nerva-Hadrian)",
+          "Art Institute of Chicago, 'Coin Depicting the God Zeus Akraios'",
+          "Museum of Fine Arts Boston, 'Coin of Smyrna with bust of Zeus Akraios'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [28.0433, 38.4886] },
+      "properties": {
+        "id": "mint_sardis",
+        "name": "Sardis",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Sardis, where Lydian kings first struck coinage some seven centuries earlier, kept its own civic bronze mint running through the Roman principate. Its Roman-era coins paired the emperor's portrait with local Lydian imagery, a small echo of the city's ancient monetary fame.",
+        "province": "Asia",
+        "modern_location": "Sart, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Bryn Mawr Classical Review 2019.06.19, 'Coins from the Excavations at Sardis'",
+          "RPC Online I 2997a",
+          "Numista, 'The Bronze Coinage of Lydia, Sardes (Sardis), Tripolis'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [34.8958, 36.9167] },
+      "properties": {
+        "id": "mint_tarsus",
+        "name": "Tarsus",
+        "category": "mint",
+        "metal": "silver, bronze",
+        "role": "civic",
+        "one_line": "Tarsus struck silver tetradrachms under Trajan pairing the emperor's bust with Tyche and the river-god Cydnus, the waterway running through the city's center. Cilicia's leading city was one of the few provincial mints trusted with silver rather than bronze alone.",
+        "province": "Cilicia",
+        "modern_location": "Tarsus, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC II 754, Trajan, Tarsus AR Tetradrachm",
+          "Ancient Numismatic Mythology, 'Coinage of Cilicia', ancientcoinage.org"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [29.7192, 40.4297] },
+      "properties": {
+        "id": "mint_nicaea",
+        "name": "Iznik",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Nicaea struck bronze coins under Trajan showing an altar on the reverse, one of roughly a dozen Bithynian cities licensed to mint their own small change. The city's rivalry with neighboring Nicomedia for the title of Bithynia's leading city played out partly through competing coin types.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "Iznik, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 1154 and 1059, Trajan, Nicaea",
+          "Academia.edu, 'Coins of the Bithynian Mint of Nicaea from the Viminacium Necropolis of Pecine'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [30.1614, 38.0642] },
+      "properties": {
+        "id": "mint_apamea_phrygia",
+        "name": "Apamea Cibotus",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Apamea, founded around 270 BCE by the Seleucid king Antiochus I and known to Romans as Cibotus, kept a civic bronze mint running into Trajan's reign under local high priests named on the coin legends. The city sat at a major road junction in Phrygia, feeding the wider trade that filled its treasury.",
+        "province": "Asia",
+        "modern_location": "Dinar, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Numista, 'Items from Apamea (Phrygia)'",
+          "Forum Ancient Coins, 'Ancient Greek Coins of Phrygia'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [29.1097, 37.8386] },
+      "properties": {
+        "id": "mint_laodicea_ad_lycum",
+        "name": "Laodicea on the Lycus",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Laodicea, a wool and banking city so wealthy it rebuilt itself after a major earthquake without imperial aid, struck civic bronze honoring Trajan's wife Plotina as Augusta, a title she held from 105 CE. That dated issue fixes the mint's activity squarely within Trajan's reign.",
+        "province": "Asia",
+        "modern_location": "Denizli, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 2320, Plotina, Laodicea ad Lycum",
+          "Numista, 'Items from Laodicea ad Lycum'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.8362, 34.4368] },
+      "properties": {
+        "id": "mint_tripolis_phoenicia",
+        "name": "Tripoli",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Tripolis took its name from the three Phoenician cities, Tyre, Sidon, and Arados, that jointly founded it, and it kept a semi-autonomous civic mint striking small bronze coin for local trade. Its types carried Tyche and the twin caps of the Dioskuri, symbols the city had used since the Hellenistic era.",
+        "province": "Syria",
+        "modern_location": "Tripoli, Lebanon",
+        "extant_117ce": true,
+        "sources": [
+          "WildWinds.com, 'Phoenicia, Tripolis'",
+          "Forum Ancient Coins, 'Tripolis'"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.2038, 33.2704] },
+      "properties": {
+        "id": "mint_tyre",
+        "name": "Tyre",
+        "category": "mint",
+        "metal": "silver, bronze",
+        "role": "imperial_provincial",
+        "one_line": "Tyre's mint had gone silent for silver since Nero ended its famous shekel series in 65 CE, but Trajan revived it, striking tetradrachms again through his reign and into Hadrian's first year. The renewed coins carried an eagle gripping a club, no longer branded as an independent city issue but struck explicitly for the emperor.",
+        "province": "Syria",
+        "modern_location": "Tyre, Lebanon",
+        "extant_117ce": true,
+        "sources": [
+          "Coin World, 'The Shekels of Tyre: Ancients Today'",
+          "WildWinds.com, 'Phoenicia, Tyre'",
+          "Grokipedia, 'Tyrian shekel'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.3758, 33.5606] },
+      "properties": {
+        "id": "mint_sidon",
+        "name": "Sidon",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Sidon struck civic bronze without a break for close to a century and a half, from Augustus through Hadrian, naming itself sacred and inviolate in its coin legends. Its types ranged from Tyche and Zeus to war galleys and Astarte riding in her sacred cart.",
+        "province": "Syria",
+        "modern_location": "Saida, Lebanon",
+        "extant_117ce": true,
+        "sources": [
+          "Forum Ancient Coins NumisWiki, 'phoenicia'",
+          "WildWinds.com, 'Sidon, Phoenicia'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.4784, 33.8959] },
+      "properties": {
+        "id": "mint_berytus",
+        "name": "Beirut",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Berytus, a Roman colony settled by veterans of two legions under Augustus and grown to roughly 50,000 people by Trajan's reign, struck its own bronze coinage showing a priest yoking oxen, the standard emblem of a newly founded colony. A dated issue survives from within Trajan's 98-117 reign.",
+        "province": "Syria",
+        "modern_location": "Beirut, Lebanon",
+        "extant_117ce": true,
+        "sources": [
+          "WildWinds.com, 'Berytos, Phoenicia'",
+          "Forum Ancient Coins NumisWiki, 'berytus'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [34.5479, 31.6693] },
+      "properties": {
+        "id": "mint_ascalon",
+        "name": "Ashkelon",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Ascalon opened Trajan's reign with a fresh bronze issue in its own civic year 129, equal to 98 CE, showing Nike striding with a palm branch and wreath. The free city counted its years from its own charter of freedom rather than Rome's calendar, advertising the autonomy its coinage represented.",
+        "province": "Judaea",
+        "modern_location": "Ashkelon, Israel",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 3998, 4004, 4014, 4018, Ascalon",
+          "Forum Ancient Coins, 'Pseudo-Autonomous Roman Provincial Coins'"
+        ],
+        "confidence": "high"
+      }
+    }
+  ]
+}
