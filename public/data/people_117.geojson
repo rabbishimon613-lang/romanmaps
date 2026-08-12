@@ -3,7 +3,13 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [32.2815, 36.2619] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.2815,
+          36.2619
+        ]
+      },
       "properties": {
         "id": "person_trajan",
         "name": "Trajan",
@@ -11,12 +17,22 @@
         "role_group": "imperial",
         "location_117": "Selinus, Cilicia (modern Gazipaşa, Turkey)",
         "one_line": "The 63-year-old emperor died here around 8-9 August, worn out and dropsical after abandoning the failed siege of Hatra; the news broke at Antioch on 11 August, the day this map is set.",
-        "sources": ["Cass. Dio 68.33", "HA Hadr. 4.7", "https://en.wikipedia.org/wiki/Trajan"]
+        "sources": [
+          "Cass. Dio 68.33",
+          "HA Hadr. 4.7",
+          "https://en.wikipedia.org/wiki/Trajan"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [36.1613, 36.2023] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.1613,
+          36.2023
+        ]
+      },
       "properties": {
         "id": "person_hadrian",
         "name": "Hadrian",
@@ -24,12 +40,22 @@
         "role_group": "imperial",
         "location_117": "Antioch, Syria",
         "one_line": "The 41-year-old legate of Syria was acclaimed emperor by the legions at Antioch on 11 August, the exact day this map is frozen on.",
-        "sources": ["HA Hadr. 4.6-4.7", "Cass. Dio 69.1", "https://en.wikipedia.org/wiki/Hadrian"]
+        "sources": [
+          "HA Hadr. 4.6-4.7",
+          "Cass. Dio 69.1",
+          "https://en.wikipedia.org/wiki/Hadrian"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [32.2815, 36.2619] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.2815,
+          36.2619
+        ]
+      },
       "properties": {
         "id": "person_plotina",
         "name": "Plotina",
@@ -37,12 +63,22 @@
         "role_group": "imperial",
         "location_117": "Selinus, Cilicia",
         "one_line": "Trajan's widow stood at his deathbed at Selinus and, according to hostile later gossip, helped secure Hadrian's succession in the confused hours afterward.",
-        "sources": ["HA Hadr. 4.1-4.10", "Cass. Dio 69.1.2-4", "https://en.wikipedia.org/wiki/Pompeia_Plotina"]
+        "sources": [
+          "HA Hadr. 4.1-4.10",
+          "Cass. Dio 69.1.2-4",
+          "https://en.wikipedia.org/wiki/Pompeia_Plotina"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [32.2815, 36.2619] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.2815,
+          36.2619
+        ]
+      },
       "properties": {
         "id": "person_matidia",
         "name": "Matidia",
@@ -50,12 +86,21 @@
         "role_group": "imperial",
         "location_117": "Selinus, Cilicia",
         "one_line": "Trajan's niece traveled with the imperial party and was present when he died at Selinus, then accompanied his ashes back toward Rome.",
-        "sources": ["HA Hadr. 4.1", "https://en.wikipedia.org/wiki/Salonia_Matidia"]
+        "sources": [
+          "HA Hadr. 4.1",
+          "https://en.wikipedia.org/wiki/Salonia_Matidia"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [36.1613, 36.2023] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.1613,
+          36.2023
+        ]
+      },
       "properties": {
         "id": "person_sabina",
         "name": "Vibia Sabina",
@@ -63,12 +108,21 @@
         "role_group": "imperial",
         "location_117": "Antioch, Syria (probable location, traveling with Hadrian's household)",
         "one_line": "Hadrian's wife, married to him since 100, became empress this year as part of a household that had been based with him in the eastern provinces.",
-        "sources": ["https://en.wikipedia.org/wiki/Sabina_(empress)", "HA Hadr. 2.10"]
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sabina_(empress)",
+          "HA Hadr. 2.10"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [32.2815, 36.2619] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.2815,
+          36.2619
+        ]
+      },
       "properties": {
         "id": "person_attianus",
         "name": "Publius Acilius Attianus",
@@ -76,12 +130,21 @@
         "role_group": "imperial",
         "location_117": "Selinus, Cilicia",
         "one_line": "Hadrian's former guardian and joint praetorian prefect stood at Trajan's deathbed and announced Hadrian's adoption and succession on 9 August.",
-        "sources": ["HA Hadr. 4.10", "https://en.wikipedia.org/wiki/Publius_Acilius_Attianus"]
+        "sources": [
+          "HA Hadr. 4.10",
+          "https://en.wikipedia.org/wiki/Publius_Acilius_Attianus"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.2833, 41.7167] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2833,
+          41.7167
+        ]
+      },
       "properties": {
         "id": "person_pliny_younger",
         "name": "Pliny the Younger",
@@ -89,25 +152,43 @@
         "role_group": "writer",
         "location_117": "Laurentine villa, near Ostia (probable site near modern Castel Fusano)",
         "one_line": "Pliny was already dead by this year, his last securely dated letters written from Bithynia-Pontus around 113; his seaside villa near Ostia stood empty of him in 117.",
-        "sources": ["Pliny, Ep. 2.17", "https://en.wikipedia.org/wiki/Pliny_the_Younger"]
+        "sources": [
+          "Pliny, Ep. 2.17",
+          "https://en.wikipedia.org/wiki/Pliny_the_Younger"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.2358, 43.4595] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2358,
+          43.4595
+        ]
+      },
       "properties": {
         "id": "person_pliny_younger_tuscan",
-        "name": "Pliny the Younger (Tuscan villa)",
+        "name": "Pliny the Younger",
         "role": "Senator, lawyer, letter-writer",
         "role_group": "writer",
         "location_117": "Tuscan villa near Tifernum Tiberinum (modern Città di Castello)",
         "one_line": "Pliny's inland estate above the Tiber, described lovingly in his letters, sat unattended in 117, its owner already several years dead.",
-        "sources": ["Pliny, Ep. 5.6", "https://en.wikipedia.org/wiki/Pliny_the_Younger"]
+        "sources": [
+          "Pliny, Ep. 5.6",
+          "https://en.wikipedia.org/wiki/Pliny_the_Younger"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.4853, 41.8925] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4853,
+          41.8925
+        ]
+      },
       "properties": {
         "id": "person_tacitus",
         "name": "Tacitus",
@@ -115,12 +196,21 @@
         "role_group": "writer",
         "location_117": "Rome",
         "one_line": "The 61-year-old former consul and proconsul of Asia was in Rome working on the Annals, having recently finished circulating the Histories.",
-        "sources": ["https://en.wikipedia.org/wiki/Tacitus", "https://en.wikipedia.org/wiki/Annals_(Tacitus)"]
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tacitus",
+          "https://en.wikipedia.org/wiki/Annals_(Tacitus)"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.4853, 41.8925] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4853,
+          41.8925
+        ]
+      },
       "properties": {
         "id": "person_suetonius",
         "name": "Suetonius",
@@ -128,12 +218,21 @@
         "role_group": "writer",
         "location_117": "Rome",
         "one_line": "Suetonius held the posts of director of the imperial libraries and keeper of the archives under Trajan and continued in the post as Hadrian's reign opened, based in Rome rather than at the front.",
-        "sources": ["https://en.wikipedia.org/wiki/Suetonius", "https://www.academia.edu/34388553/Suetonius_as_ab_epistulis_to_Hadrian_and_the_Early_History_of_the_Imperial_Correspondence"]
+        "sources": [
+          "https://en.wikipedia.org/wiki/Suetonius",
+          "https://www.academia.edu/34388553/Suetonius_as_ab_epistulis_to_Hadrian_and_the_Early_History_of_the_Imperial_Correspondence"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [22.8380, 38.4939] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.838,
+          38.4939
+        ]
+      },
       "properties": {
         "id": "person_plutarch",
         "name": "Plutarch",
@@ -141,12 +240,21 @@
         "role_group": "writer",
         "location_117": "Chaeronea, Boeotia (holding a lifelong priesthood at nearby Delphi since c. 95)",
         "one_line": "The 71-year-old author of the Parallel Lives lived out his final years in his native Chaeronea while still holding his Delphic priesthood.",
-        "sources": ["https://en.wikipedia.org/wiki/Plutarch", "https://plato.stanford.edu/entries/plutarch/"]
+        "sources": [
+          "https://en.wikipedia.org/wiki/Plutarch",
+          "https://plato.stanford.edu/entries/plutarch/"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [20.7367, 39.0203] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.7367,
+          39.0203
+        ]
+      },
       "properties": {
         "id": "person_epictetus",
         "name": "Epictetus",
@@ -154,12 +262,21 @@
         "role_group": "writer",
         "location_117": "Nicopolis, Epirus",
         "one_line": "The formerly enslaved Stoic, about 62 this year, ran his well-known philosophical school at Nicopolis, drawing students from across the Greek and Roman elite.",
-        "sources": ["https://en.wikipedia.org/wiki/Epictetus", "https://plato.stanford.edu/entries/epictetus/"]
+        "sources": [
+          "https://en.wikipedia.org/wiki/Epictetus",
+          "https://plato.stanford.edu/entries/epictetus/"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.4964, 41.9028] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      },
       "properties": {
         "id": "person_juvenal",
         "name": "Juvenal",
@@ -167,12 +284,20 @@
         "role_group": "writer",
         "location_117": "Rome",
         "one_line": "Juvenal was in Rome finishing Book Two of his Satires, including Satire 6, published around this year.",
-        "sources": ["https://en.wikipedia.org/wiki/Juvenal"]
+        "sources": [
+          "https://en.wikipedia.org/wiki/Juvenal"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [27.3417, 37.9395] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.3417,
+          37.9395
+        ]
+      },
       "properties": {
         "id": "person_rufus_ephesus",
         "name": "Rufus of Ephesus",
@@ -180,12 +305,20 @@
         "role_group": "writer",
         "location_117": "Ephesus",
         "one_line": "Rufus practiced and wrote medical treatises at Ephesus; ancient sources place his active years under Trajan, though his exact dates remain debated among historians of medicine.",
-        "sources": ["https://en.wikipedia.org/wiki/Rufus_of_Ephesus"]
+        "sources": [
+          "https://en.wikipedia.org/wiki/Rufus_of_Ephesus"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.4964, 41.9028] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      },
       "properties": {
         "id": "person_soranus_ephesus",
         "name": "Soranus of Ephesus",
@@ -193,12 +326,20 @@
         "role_group": "writer",
         "location_117": "Rome",
         "one_line": "The Ephesus-born physician practiced medicine in Rome across the reigns of Trajan and Hadrian, later writing the influential Gynaecology.",
-        "sources": ["https://en.wikipedia.org/wiki/Soranus_of_Ephesus"]
+        "sources": [
+          "https://en.wikipedia.org/wiki/Soranus_of_Ephesus"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [20.7367, 39.0203] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.7367,
+          39.0203
+        ]
+      },
       "properties": {
         "id": "person_arrian",
         "name": "Arrian",
@@ -206,12 +347,21 @@
         "role_group": "writer",
         "location_117": "Nicopolis, Epirus",
         "one_line": "The roughly 31-year-old Bithynian was studying under Epictetus at Nicopolis around this time, taking the notes that would become the Discourses, decades before his own career as historian and general.",
-        "sources": ["https://en.wikipedia.org/wiki/Arrian", "https://www.livius.org/sources/content/arrian/"]
+        "sources": [
+          "https://en.wikipedia.org/wiki/Arrian",
+          "https://www.livius.org/sources/content/arrian/"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.4964, 41.9028] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      },
       "properties": {
         "id": "person_favorinus",
         "name": "Favorinus of Arles",
@@ -219,25 +369,42 @@
         "role_group": "writer",
         "location_117": "Rome",
         "one_line": "The Gaulish-born sophist had already built a reputation in Rome and Athens by this year and was moving in the circle that would soon include the new emperor Hadrian.",
-        "sources": ["https://en.wikipedia.org/wiki/Favorinus"]
+        "sources": [
+          "https://en.wikipedia.org/wiki/Favorinus"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [32.2815, 36.2619] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.2815,
+          36.2619
+        ]
+      },
       "properties": {
         "id": "person_statilius_crito",
-        "name": "Titus Statilius Crito (Criton of Heraclea)",
+        "name": "Titus Statilius Crito",
         "role": "Trajan's personal physician",
         "role_group": "writer",
         "location_117": "Selinus, Cilicia (probable, attending the dying emperor)",
-        "one_line": "Trajan's own physician since the Dacian campaigns, and author of a lost history of those wars called the Getica, was probably still attending the emperor when he died at Selinus.",
-        "sources": ["https://en.wikipedia.org/wiki/Criton_of_Heraclea", "Suda s.v. Kriton"]
+        "one_line": "Trajan's own physician since the Dacian campaigns, known to the Suda as Criton of Heraclea and author of a lost history of those wars called the Getica, was probably still attending the emperor when he died at Selinus.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Criton_of_Heraclea",
+          "Suda s.v. Kriton"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [34.8338, 32.0807] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8338,
+          32.0807
+        ]
+      },
       "properties": {
         "id": "person_rabbi_akiva",
         "name": "Rabbi Akiva",
@@ -245,12 +412,20 @@
         "role_group": "religious",
         "location_117": "Bnei Brak, Judaea",
         "one_line": "In his sixties, Akiva ran his academy at Bnei Brak while the Kitos War burned through nearby Lydda and the wider Jewish diaspora.",
-        "sources": ["https://en.wikipedia.org/wiki/Akiva_ben_Yosef"]
+        "sources": [
+          "https://en.wikipedia.org/wiki/Akiva_ben_Yosef"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [34.8854, 31.9515] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8854,
+          31.9515
+        ]
+      },
       "properties": {
         "id": "person_gamaliel_ii",
         "name": "Rabban Gamaliel II",
@@ -258,12 +433,21 @@
         "role_group": "religious",
         "location_117": "Lydda, Judaea",
         "one_line": "The patriarch of the Sanhedrin was caught up in the distress at Lydda during Lusius Quietus's siege of the town, and would die within the year.",
-        "sources": ["https://www.jewishencyclopedia.com/articles/11897-pappus", "https://en.wikipedia.org/wiki/Gamaliel_II"]
+        "sources": [
+          "https://www.jewishencyclopedia.com/articles/11897-pappus",
+          "https://en.wikipedia.org/wiki/Gamaliel_II"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.4964, 41.9028] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      },
       "properties": {
         "id": "person_ignatius_antioch",
         "name": "Ignatius of Antioch",
@@ -271,12 +455,21 @@
         "role_group": "religious",
         "location_117": "Rome (site of martyrdom; died c. 108, roughly a decade before this snapshot)",
         "one_line": "Ignatius was already dead by this year, condemned to the beasts in Rome's arena around 108 after writing his seven letters on the journey from Antioch.",
-        "sources": ["Eusebius, Hist. Eccl. 3.36", "https://en.wikipedia.org/wiki/Ignatius_of_Antioch"]
+        "sources": [
+          "Eusebius, Hist. Eccl. 3.36",
+          "https://en.wikipedia.org/wiki/Ignatius_of_Antioch"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [27.1287, 38.4192] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1287,
+          38.4192
+        ]
+      },
       "properties": {
         "id": "person_polycarp_smyrna",
         "name": "Polycarp of Smyrna",
@@ -284,12 +477,21 @@
         "role_group": "religious",
         "location_117": "Smyrna",
         "one_line": "About 48 years old, Polycarp was already established as bishop of Smyrna, a position he is attested to have held by this year at the latest.",
-        "sources": ["https://en.wikipedia.org/wiki/Polycarp", "Irenaeus, Adv. Haer. 3.3.4"]
+        "sources": [
+          "https://en.wikipedia.org/wiki/Polycarp",
+          "Irenaeus, Adv. Haer. 3.3.4"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [34.8933, 32.5000] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8933,
+          32.5
+        ]
+      },
       "properties": {
         "id": "person_lusius_quietus",
         "name": "Lusius Quietus",
@@ -297,12 +499,21 @@
         "role_group": "military",
         "location_117": "Caesarea Maritima / Judaea",
         "one_line": "Trajan's Berber cavalry commander, fresh off crushing the Jewish revolt in Mesopotamia, was appointed governor of Judaea in 117 and moved to besiege the rebels holding Lydda.",
-        "sources": ["https://en.wikipedia.org/wiki/Lusius_Quietus", "Eusebius, Hist. Eccl. 4.2"]
+        "sources": [
+          "https://en.wikipedia.org/wiki/Lusius_Quietus",
+          "Eusebius, Hist. Eccl. 4.2"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [29.9187, 31.2001] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9187,
+          31.2001
+        ]
+      },
       "properties": {
         "id": "person_marcius_turbo",
         "name": "Quintus Marcius Turbo",
@@ -310,20 +521,33 @@
         "role_group": "military",
         "location_117": "Alexandria, Egypt",
         "one_line": "Marcius Turbo led a combined land and naval force that crushed the Jewish revolt in Egypt and Cyrenaica through 117, driving the rebel Lukuas out of Alexandria.",
-        "sources": ["Cass. Dio 68.32", "https://en.wikipedia.org/wiki/Quintus_Marcius_Turbo"]
+        "sources": [
+          "Cass. Dio 68.32",
+          "https://en.wikipedia.org/wiki/Quintus_Marcius_Turbo"
+        ]
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [34.8854, 31.9515] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8854,
+          31.9515
+        ]
+      },
       "properties": {
         "id": "person_lukuas",
-        "name": "Lukuas (Andreas)",
+        "name": "Lukuas",
         "role": "Rebel leader, self-proclaimed king",
         "role_group": "military",
         "location_117": "Fleeing toward Judaea after the fall of the Cyrenaica-Egypt revolt",
         "one_line": "The Jewish rebel leader Cassius Dio calls Andreas, and Eusebius calls a self-styled king, burned Alexandria before being driven out by Marcius Turbo and fleeing east toward Judaea in 117.",
-        "sources": ["Cass. Dio 68.32", "Eusebius, Hist. Eccl. 4.2", "https://en.wikipedia.org/wiki/Lukuas"]
+        "sources": [
+          "Cass. Dio 68.32",
+          "Eusebius, Hist. Eccl. 4.2",
+          "https://en.wikipedia.org/wiki/Lukuas"
+        ]
       }
     }
   ]

@@ -123,7 +123,7 @@
       "properties": {
         "id": "node_amber_baltic_source",
         "route": "Amber Road",
-        "name": "Sambia Amber Coast (Baltic terminus)",
+        "name": "Sambia Peninsula",
         "role": "The Sambia Peninsula and its adjoining shore were the source zone where the Aesti people gathered raw amber from the shallows and beach, according to Tacitus, lying entirely outside Roman territory as a trading-partner region rather than annexed land.",
         "sources": [
           "Tac. Germania 45",
@@ -164,7 +164,7 @@
       "properties": {
         "id": "node_scarbantia",
         "route": "Amber Road",
-        "name": "Scarbantia (Sopron)",
+        "name": "Sopron",
         "role": "Scarbantia grew from an early trading post on the Amber Road into Municipium Flavium Scarbantia under the Flavian emperors, standing in Pannonia Superior midway between Savaria and Carnuntum.",
         "sources": [
           "https://en.wikipedia.org/wiki/Sopron",
@@ -184,7 +184,7 @@
       "properties": {
         "id": "node_savaria",
         "route": "Amber Road",
-        "name": "Savaria (Szombathely)",
+        "name": "Szombathely",
         "role": "Savaria was founded as Colonia Claudia Savariensium for army veterans under Claudius in 43 CE and grew into the junction where the Amber Road met roads running west into Noricum.",
         "sources": [
           "https://en.wikipedia.org/wiki/Szombathely",
@@ -204,7 +204,7 @@
       "properties": {
         "id": "node_sala",
         "route": "Amber Road",
-        "name": "Sala (Zalalövő)",
+        "name": "Sala",
         "role": "Sala was a Pannonian road station between Poetovio and Savaria recorded in the Itinerarium Antonini, identified today with the archaeological site at Zalalövő, Hungary.",
         "sources": [
           "Itin. Ant.",
@@ -224,7 +224,7 @@
       "properties": {
         "id": "node_poetovio",
         "route": "Amber Road",
-        "name": "Poetovio (Ptuj)",
+        "name": "Ptuj",
         "role": "Poetovio grew from a legionary base into Colonia Ulpia Traiana Poetovio under Trajan and served as headquarters of the portorium Illyrici, the customs office that taxed goods, including amber, moving along the Danube frontier.",
         "sources": [
           "https://en.wikipedia.org/wiki/Ptuj",
@@ -244,7 +244,7 @@
       "properties": {
         "id": "node_celeia",
         "route": "Amber Road",
-        "name": "Celeia (Celje)",
+        "name": "Celje",
         "role": "Celeia became Municipium Claudium Celeia under Claudius, one of the first towns in Noricum to gain that status, and stood on the Amber Road between Emona and Poetovio.",
         "sources": [
           "https://en.wikipedia.org/wiki/Celje",
@@ -264,7 +264,7 @@
       "properties": {
         "id": "node_emona",
         "route": "Amber Road",
-        "name": "Emona (Ljubljana)",
+        "name": "Ljubljana",
         "role": "Emona was founded as a Roman colony under Augustus at the head of the Ljubljanica valley, the first major town the Amber Road reached after crossing the Julian Alps from Aquileia.",
         "sources": [
           "https://en.wikipedia.org/wiki/Emona",

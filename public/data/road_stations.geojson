@@ -109,7 +109,7 @@
       "properties": {
         "id": "station_terracina_anxur",
         "category": "mansio",
-        "name": "Tarracina (Anxur)",
+        "name": "Terracina",
         "road": "Via Appia",
         "distance_from_previous_mp": 18,
         "identified": true,
