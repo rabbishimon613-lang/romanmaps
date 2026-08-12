@@ -1,0 +1,162 @@
+{"type":"FeatureCollection","features":[
+{"type":"Feature","geometry":{"type":"Point","coordinates":[36.1603,36.2021]},
+ "properties":{
+   "id":"disaster_antioch_earthquake_115",
+   "name":"Antioch earthquake",
+   "year":115,
+   "type":"earthquake",
+   "still_visible_in_117":true,
+   "one_line":"An earthquake flattened much of Antioch on 13 December 115 while Trajan wintered there for the Parthian campaign, killing the consul Marcus Pedo Vergilianus and forcing Trajan himself to escape through a window; the city was still under reconstruction when he died two years later.",
+   "sources":["Cass. Dio 68.24-25","John Malalas, Chronographia 11.276"]
+ }},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[14.4260,40.8214]},
+ "properties":{
+   "id":"disaster_vesuvius_eruption_79",
+   "name":"Vesuvius eruption",
+   "year":79,
+   "type":"volcanic_eruption",
+   "still_visible_in_117":true,
+   "one_line":"Mount Vesuvius erupted on 24 August 79, burying Pompeii under ash and pumice and Herculaneum under volcanic mud within a day, an event Pliny the Younger described in two letters to Tacitus after watching from Misenum across the bay.",
+   "sources":["Plin. Ep. 6.16","Plin. Ep. 6.20"]
+ }},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[12.4853,41.8858]},
+ "properties":{
+   "id":"disaster_great_fire_rome_64",
+   "name":"Great Fire of Rome",
+   "year":64,
+   "type":"fire",
+   "still_visible_in_117":true,
+   "one_line":"The Great Fire of Rome broke out near the Circus Maximus on 19 July 64 and burned for six days, destroying three of Rome's fourteen districts outright and badly damaging seven more, after which Nero cleared the land for his Domus Aurea.",
+   "sources":["Tac. Ann. 15.38-44","Suet. Nero 38"]
+ }},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[12.4788,41.8894]},
+ "properties":{
+   "id":"disaster_tiber_flood_15",
+   "name":"Tiber flood of 15 CE",
+   "year":15,
+   "type":"flood",
+   "still_visible_in_117":true,
+   "one_line":"The Tiber, swollen by relentless rain, burst its banks across Rome's low ground in 15 CE and destroyed buildings and lives, prompting the Senate to create a standing board of curators to manage the river's banks and channel.",
+   "sources":["Tac. Ann. 1.76","Cass. Dio 57.14.7-8"]
+ }},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[12.4828,41.8933]},
+ "properties":{
+   "id":"disaster_tiber_flood_69",
+   "name":"Tiber flood of 69 CE",
+   "year":69,
+   "type":"flood",
+   "still_visible_in_117":true,
+   "one_line":"In early March 69, amid the civil wars of the Year of the Four Emperors, the Tiber flooded parts of Rome that had never before been touched by high water, an inundation contemporaries read as an omen of that year's turmoil.",
+   "sources":["Tac. Hist. 1.86"]
+ }},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[12.4769,41.8986]},
+ "properties":{
+   "id":"disaster_rome_fire_80",
+   "name":"Fire of Rome under Titus",
+   "year":80,
+   "type":"fire",
+   "still_visible_in_117":true,
+   "one_line":"A three-day fire swept Rome in 80 CE, burning from the Capitol to the Pantheon and destroying the Temple of Jupiter Capitolinus and Agrippa's Pantheon, after which Titus and then Domitian rebuilt the district over the following years.",
+   "sources":["Suet. Titus 8","Cass. Dio 66.24"]
+ }},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[12.4924,41.8933]},
+ "properties":{
+   "id":"disaster_rome_plague_80",
+   "name":"Plague of Rome",
+   "year":80,
+   "type":"plague",
+   "still_visible_in_117":true,
+   "one_line":"A plague Suetonius called among the worst Rome had ever known killed as many as ten thousand people a day in 80 CE, striking the city the same year as a major fire and overwhelming Titus's relief efforts.",
+   "sources":["Suet. Titus 8"]
+ }},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[12.4853,41.8925]},
+ "properties":{
+   "id":"disaster_rome_famine_6",
+   "name":"Rome grain famine of 6 CE",
+   "year":6,
+   "type":"famine",
+   "still_visible_in_117":true,
+   "one_line":"A severe grain shortage struck Rome in 6 CE, forcing Augustus to expel gladiators and slaves up to a hundred miles from the city, ration the grain dole, and double free distributions from his own funds to quell the unrest it caused.",
+   "sources":["Cass. Dio 55.26-27"]
+ }},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[0.9035,51.8959]},
+ "properties":{
+   "id":"disaster_camulodunum_sack_60",
+   "name":"Sack of Camulodunum",
+   "year":60,
+   "type":"barbarian_raid",
+   "still_visible_in_117":true,
+   "one_line":"Boudica's Iceni and Trinovantian allies overran Camulodunum in 60 or 61 CE, massacring the population and burning the Temple of Claudius after a garrison of only two hundred men failed to hold the undefended colony.",
+   "sources":["Tac. Ann. 14.31-33"]
+ }},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[6.4404,51.6553]},
+ "properties":{
+   "id":"disaster_castra_vetera_siege_69",
+   "name":"Siege of Castra Vetera",
+   "year":69,
+   "type":"barbarian_raid",
+   "still_visible_in_117":true,
+   "one_line":"Julius Civilis and his Batavian rebels besieged the legionary fortress of Castra Vetera from September 69 into 70, starved its two trapped legions into surrender, and burned the camp along with every Roman post north of Mainz.",
+   "sources":["Tac. Hist. 4.21-4.60"]
+ }},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[18.5,40.0]},
+ "properties":{
+   "id":"disaster_grain_ship_wreck_63",
+   "name":"Josephus's shipwreck en route to Rome",
+   "year":63,
+   "type":"shipwreck_disaster",
+   "still_visible_in_117":true,
+   "one_line":"The ship carrying a 26-year-old Josephus toward Rome sank in the Adriatic Sea around 63 CE with roughly six hundred people aboard; he swam through the night until a passing ship from Cyrene picked up him and eighty other survivors.",
+   "sources":["Joseph. Vita 3.13-16"]
+ }},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[8.4210,45.3204]},
+ "properties":{
+   "id":"disaster_vercellae_101bce",
+   "name":"Battle of Vercellae",
+   "year":-101,
+   "type":"barbarian_raid",
+   "still_visible_in_117":true,
+   "one_line":"Gaius Marius and Quintus Lutatius Catulus annihilated the invading Cimbri at Vercellae on 30 July 101 BCE, ending a migration crisis that had already destroyed four Roman armies and stood for generations afterward as the empire's benchmark for a near-catastrophic barbarian invasion.",
+   "sources":["Plut. Mar. 25-27","Livy, Periochae 68"]
+ }},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[8.1614,52.3966]},
+ "properties":{
+   "id":"disaster_teutoburg_forest_9",
+   "name":"Teutoburg Forest disaster",
+   "year":9,
+   "type":"military_disaster",
+   "still_visible_in_117":true,
+   "one_line":"Arminius and an alliance of Germanic tribes annihilated three Roman legions under Publius Quinctilius Varus in the Teutoburg Forest in September 9 CE; when Germanicus's troops reached the site six years later they found the legions' bones and Varus's altars still scattered across the ground.",
+   "sources":["Tac. Ann. 1.61-62","Cass. Dio 56.18-22","Suet. Aug. 23"]
+ }},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[10.0227,45.1335]},
+ "properties":{
+   "id":"disaster_cremona_destruction_69",
+   "name":"Destruction of Cremona",
+   "year":69,
+   "type":"fire",
+   "still_visible_in_117":true,
+   "one_line":"Vespasian's Danubian legions stormed Cremona over four days in late October 69 during the civil war against Vitellius, burning the wealthy city to its temple of Mefitis alone; Vespasian later funded its rebuilding, but Tacitus still described it as diminished.",
+   "sources":["Tac. Hist. 3.32-34"]
+ }},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[4.8357,45.7640]},
+ "properties":{
+   "id":"disaster_lugdunum_fire_65",
+   "name":"Fire of Lugdunum",
+   "year":65,
+   "type":"fire",
+   "still_visible_in_117":true,
+   "one_line":"A fire destroyed the Roman colony of Lugdunum in a single night around 65 CE, and Nero sent four million sesterces in relief, repaying the city for the money it had earlier donated toward rebuilding Rome after its own great fire.",
+   "sources":["Sen. Ep. 91","Tac. Ann. 16.13"]
+ }},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[35.2354,31.7767]},
+ "properties":{
+   "id":"disaster_jerusalem_temple_destruction_70",
+   "name":"Destruction of the Second Temple",
+   "year":70,
+   "type":"siege",
+   "still_visible_in_117":true,
+   "one_line":"Roman soldiers under Titus burned the Second Temple on 30 August 70, against his own orders according to Josephus, and by the war's end had leveled most of Jerusalem, leaving only three towers and a stretch of wall standing over a garrison post.",
+   "sources":["Joseph. BJ 6.249-266","Joseph. BJ 7.1-4"]
+ }}
+]}

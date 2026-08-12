@@ -615,6 +615,135 @@ export default function Map() {
           kick();
         }
 
+        // Phase 8: Trade routes (public/data/trade_routes.geojson) — long-distance commodity
+        // routes as dashed amber LineStrings, with small diamond markers at named waypoint nodes.
+        const tradeRoutes = await fetch("/data/trade_routes.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && tradeRoutes) {
+          map.addSource("trade-routes", { type: "geojson", data: tradeRoutes });
+
+          map.addLayer({
+            id: "trade-routes-line",
+            type: "line",
+            source: "trade-routes",
+            filter: ["==", ["geometry-type"], "LineString"],
+            paint: {
+              "line-color": "#b8860b",
+              "line-width": ["interpolate", ["linear"], ["zoom"], 3, 1.4, 8, 2.6],
+              "line-dasharray": [2, 1.5],
+              "line-opacity": 0.85,
+            },
+            layout: { "line-cap": "round", "line-join": "round" },
+          });
+          map.addLayer({
+            id: "trade-routes-node",
+            type: "circle",
+            source: "trade-routes",
+            filter: ["==", ["geometry-type"], "Point"],
+            paint: {
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3, 8, 5.5],
+              "circle-color": "#b8860b",
+              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-width": 1.6,
+            },
+          });
+
+          const routePopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          const onRouteLineEnter = (e: any) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const noteLine = p.notes ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.notes)}</div>` : "";
+            routePopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.commodity || "")} · ${escapeHtml(p.direction || "")}</div>
+                   ${noteLine}
+                 </div>`,
+              )
+              .addTo(map);
+          };
+          const onRouteNodeEnter = (e: any) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            routePopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.route || "")}</div>
+                   <div style="margin-top:4px; max-width:220px;">${escapeHtml(p.role || "")}</div>
+                 </div>`,
+              )
+              .addTo(map);
+          };
+          map.on("mouseenter", "trade-routes-line", onRouteLineEnter);
+          map.on("mouseleave", "trade-routes-line", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          map.on("mouseenter", "trade-routes-node", onRouteNodeEnter);
+          map.on("mouseleave", "trade-routes-node", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          kick();
+        }
+
+        // Phase 9: Disasters + memory (public/data/disasters.geojson) — events still felt or
+        // remembered in 117 CE (earthquakes, fires, floods, revolts), colored distinctly from the
+        // current-year events layer so past trauma reads differently from unfolding news.
+        const disasters = await fetch("/data/disasters.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && disasters) {
+          map.addSource("disasters", { type: "geojson", data: disasters });
+          map.addLayer({
+            id: "disasters-point",
+            type: "circle",
+            source: "disasters",
+            paint: {
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+              "circle-color": "#5c3a21",
+              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-width": 1.6,
+            },
+          });
+
+          const disasterPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          map.on("mouseenter", "disasters-point", (e) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const badge = p.still_visible_in_117
+              ? `<div style="color:#a1442e; font-size:11px; margin-top:4px; font-weight:600;">Still felt in 117 CE</div>`
+              : "";
+            disasterPopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 220px;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(String(p.year ?? ""))} CE · ${escapeHtml(p.type || "")}</div>
+                   <div style="margin-top:4px;">${escapeHtml(p.one_line || "")}</div>
+                   ${badge}
+                 </div>`,
+              )
+              .addTo(map);
+          });
+          map.on("mouseleave", "disasters-point", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          kick();
+        }
+
         // Apply any persisted Layers-panel visibility (all groups default visible).
         applyAllLayers();
       });

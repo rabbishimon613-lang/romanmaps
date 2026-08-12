@@ -1,0 +1,296 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            19.9166,
+            54.8667
+          ],
+          [
+            18.604,
+            53.01
+          ],
+          [
+            18.083,
+            51.762
+          ],
+          [
+            18.282,
+            49.835
+          ],
+          [
+            16.877,
+            48.116
+          ],
+          [
+            16.8541,
+            48.0902
+          ],
+          [
+            16.7922,
+            48.0634
+          ],
+          [
+            16.5845,
+            47.6817
+          ],
+          [
+            16.6218,
+            47.2307
+          ],
+          [
+            16.5824,
+            46.8656
+          ],
+          [
+            15.988,
+            46.6913
+          ],
+          [
+            15.87,
+            46.4198
+          ],
+          [
+            15.2683,
+            46.2311
+          ],
+          [
+            14.5442,
+            46.1049
+          ],
+          [
+            14.5058,
+            46.0569
+          ],
+          [
+            14.3704,
+            46.008
+          ],
+          [
+            14.1891,
+            45.8947
+          ],
+          [
+            13.9098,
+            45.887
+          ],
+          [
+            13.7147,
+            45.8895
+          ],
+          [
+            13.5561,
+            45.9064
+          ],
+          [
+            13.4726,
+            45.8814
+          ],
+          [
+            13.372,
+            45.77
+          ]
+        ]
+      },
+      "properties": {
+        "id": "route_amber_road",
+        "name": "Amber Road",
+        "commodity": "amber",
+        "direction": "Baltic coast → Aquileia → Italy",
+        "notes": "Pliny the Elder records a Roman knight sent north under Nero to buy amber directly at the source, a round trip of some 600 Roman miles from Carnuntum that returned with enough amber to decorate the netting, weapons, and biers used in a single day of gladiatorial games. From Carnuntum south to Aquileia the route followed the empire's own paved road network through Scarbantia, Savaria, Sala, Poetovio, Celeia, and Emona, not through Vindobona, which lay upstream on a separate Danube road. North of Carnuntum the road crossed unannexed Germania to the Baltic amber coast; no continuous ancient road bed survives there, so this stretch is drawn as a reasonable line between attested anchor points rather than a mapped road.",
+        "sources": [
+          "Plin. NH 37.45",
+          "Tac. Germania 45",
+          "https://en.wikipedia.org/wiki/Amber_Road",
+          "https://bernsteinstrasse-burgenland.at/en/the-roman-amber-road-from-the-adriatic-to-the-danube-region/",
+          "Itin. Ant.; Tabula Peutingeriana (Aquileia-Emona-Celeia-Poetovio-Sala-Savaria-Scarbantia-Carnuntum road geometry per Barrington Atlas 20, Löhberg 2010, Visy 2011, as used in this site's roads_main/roads_secondary layers)"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.9166,
+          54.8667
+        ]
+      },
+      "properties": {
+        "id": "node_amber_baltic_source",
+        "route": "Amber Road",
+        "name": "Sambia Amber Coast (Baltic terminus)",
+        "role": "The Sambia Peninsula and its adjoining shore were the source zone where the Aesti people gathered raw amber from the shallows and beach, according to Tacitus, lying entirely outside Roman territory as a trading-partner region rather than annexed land.",
+        "sources": [
+          "Tac. Germania 45",
+          "https://en.wikipedia.org/wiki/Amber_Road",
+          "https://en.wikipedia.org/wiki/Aesti"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.877,
+          48.116
+        ]
+      },
+      "properties": {
+        "id": "node_carnuntum_amber",
+        "route": "Amber Road",
+        "name": "Carnuntum",
+        "role": "Carnuntum was the Danube crossing and legionary base where the Amber Road entered firmly Roman territory, lying some 600 Roman miles south of the Baltic amber coast by Pliny's count. This node duplicates the town's full site entry elsewhere on the map; here it marks its role as an Amber Road station.",
+        "sources": [
+          "Plin. NH 37.45",
+          "https://en.wikipedia.org/wiki/Carnuntum"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.5845,
+          47.6817
+        ]
+      },
+      "properties": {
+        "id": "node_scarbantia",
+        "route": "Amber Road",
+        "name": "Scarbantia (Sopron)",
+        "role": "Scarbantia grew from an early trading post on the Amber Road into Municipium Flavium Scarbantia under the Flavian emperors, standing in Pannonia Superior midway between Savaria and Carnuntum.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sopron",
+          "Itin. Ant."
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.6218,
+          47.2307
+        ]
+      },
+      "properties": {
+        "id": "node_savaria",
+        "route": "Amber Road",
+        "name": "Savaria (Szombathely)",
+        "role": "Savaria was founded as Colonia Claudia Savariensium for army veterans under Claudius in 43 CE and grew into the junction where the Amber Road met roads running west into Noricum.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Szombathely",
+          "Itin. Ant."
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.5824,
+          46.8656
+        ]
+      },
+      "properties": {
+        "id": "node_sala",
+        "route": "Amber Road",
+        "name": "Sala (Zalalövő)",
+        "role": "Sala was a Pannonian road station between Poetovio and Savaria recorded in the Itinerarium Antonini, identified today with the archaeological site at Zalalövő, Hungary.",
+        "sources": [
+          "Itin. Ant.",
+          "https://en.wikipedia.org/wiki/Zalal%C3%B6v%C5%91"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.87,
+          46.4198
+        ]
+      },
+      "properties": {
+        "id": "node_poetovio",
+        "route": "Amber Road",
+        "name": "Poetovio (Ptuj)",
+        "role": "Poetovio grew from a legionary base into Colonia Ulpia Traiana Poetovio under Trajan and served as headquarters of the portorium Illyrici, the customs office that taxed goods, including amber, moving along the Danube frontier.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ptuj",
+          "Itin. Ant."
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.2683,
+          46.2311
+        ]
+      },
+      "properties": {
+        "id": "node_celeia",
+        "route": "Amber Road",
+        "name": "Celeia (Celje)",
+        "role": "Celeia became Municipium Claudium Celeia under Claudius, one of the first towns in Noricum to gain that status, and stood on the Amber Road between Emona and Poetovio.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Celje",
+          "Itin. Ant."
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5058,
+          46.0569
+        ]
+      },
+      "properties": {
+        "id": "node_emona",
+        "route": "Amber Road",
+        "name": "Emona (Ljubljana)",
+        "role": "Emona was founded as a Roman colony under Augustus at the head of the Ljubljanica valley, the first major town the Amber Road reached after crossing the Julian Alps from Aquileia.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Emona",
+          "Itin. Ant."
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.372,
+          45.77
+        ]
+      },
+      "properties": {
+        "id": "node_aquileia",
+        "route": "Amber Road",
+        "name": "Aquileia",
+        "role": "Aquileia was the Amber Road's southern terminus and the empire's chief Adriatic gateway for northern trade, home to workshops that carved raw Baltic amber into finished ornaments. This node duplicates the town's full site entry elsewhere on the map; here it marks its role as the Amber Road's terminus.",
+        "sources": [
+          "Plin. NH 37.45",
+          "https://en.wikipedia.org/wiki/Aquileia"
+        ]
+      }
+    }
+  ]
+}

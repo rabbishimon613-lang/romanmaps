@@ -3,7 +3,16 @@
 import { useSyncExternalStore } from "react";
 import type { Map as MLMap } from "maplibre-gl";
 
-export type LayerGroupId = "roads" | "rivers" | "provinces" | "places" | "pois" | "road-stations" | "living-empire";
+export type LayerGroupId =
+  | "roads"
+  | "rivers"
+  | "provinces"
+  | "places"
+  | "pois"
+  | "road-stations"
+  | "living-empire"
+  | "trade-routes"
+  | "disasters";
 
 export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: string[] }[] = [
   { id: "roads", label: "Roads", mapLayerIds: ["roads-main", "roads-secondary"] },
@@ -16,6 +25,8 @@ export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: strin
   // component reads this same group's boolean directly via useLayers() to decide whether to
   // render. The native event layers still get their visibility applied the normal way.
   { id: "living-empire", label: "117 CE — people & events", mapLayerIds: ["events-point", "events-polygon-fill", "events-polygon-line"] },
+  { id: "trade-routes", label: "Trade routes", mapLayerIds: ["trade-routes-line", "trade-routes-node"] },
+  { id: "disasters", label: "Disasters & memory", mapLayerIds: ["disasters-point"] },
 ];
 
 type LayerState = Record<LayerGroupId, boolean>;
