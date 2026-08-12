@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Deploy Council gate: block pushes that would bomb Vercel.
+# Runs the same build Vercel runs. Fails fast if TS/lint/compile breaks.
+# To bypass in a true emergency: git push --no-verify (document why in SHIFT_LOG).
+set -e
+echo "[pre-push] running next build before pushing to origin..."
+npm run build --silent
+echo "[pre-push] build clean. pushing."

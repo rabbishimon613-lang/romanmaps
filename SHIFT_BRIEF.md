@@ -31,6 +31,7 @@ Priorities beyond Google-Maps parity:
 ### End of shift
 
 6. **Commit and push** to `main`. Vercel auto-deploys.
+   - **Deploy Council rule:** a `pre-push` hook runs `npm run build` before every push. If it fails, the push is blocked. Fix the error or revert your last commit — do **not** `--no-verify` around it unless the failure is unrelated infra (in that case, note why in SHIFT_LOG). Green-build-before-push is non-negotiable; a red build on Vercel breaks the site for everyone.
 7. **Log your shift** at the top of SHIFT_LOG.md: what you added under each track, sources, decisions, what's next.
 8. **Update `FEATURE_BACKLOG.md`** — check off shipped items, add new ideas you spotted mid-shift.
 
