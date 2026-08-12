@@ -33,8 +33,10 @@ function subscribe(cb: () => void) {
 function getSnapshot() {
   return state;
 }
+// Must return a stable reference — React re-renders on !== and would loop otherwise.
+const EMPTY: FilterState = Object.freeze({});
 function getServerSnapshot(): FilterState {
-  return {};
+  return EMPTY;
 }
 
 export function toggleCategory(id: string) {
