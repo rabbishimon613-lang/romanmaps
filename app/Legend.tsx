@@ -2,12 +2,19 @@
 
 import { useState } from "react";
 import { CATEGORY_GROUPS } from "./poiCategories";
+import { useIsMobile } from "./useIsMobile";
+import { usePoiPanel } from "./usePoiPanel";
 
 /** Google-Maps-style legend: small collapsible panel explaining what each POI dot color means.
  * Sits above the Layers button, bottom-right. Closed by default so it doesn't compete with the
  * epoch pill / attribution for space on first load. */
 export default function Legend() {
   const [open, setOpen] = useState(false);
+  const isMobile = useIsMobile();
+  const poiOpen = !!usePoiPanel();
+
+  // Hidden while the mobile Place details bottom sheet covers this corner of the screen.
+  if (isMobile && poiOpen) return null;
 
   return (
     <div style={{ position: "absolute", right: 12, bottom: 214, zIndex: 5 }}>

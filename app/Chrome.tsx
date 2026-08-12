@@ -5,6 +5,8 @@ import type { Map as MLMap } from "maplibre-gl";
 import { useUnits } from "./useUnits";
 import { loadPlaces, searchPlaces, type Place } from "./places";
 import { LAYER_GROUPS, toggleLayer, useLayers } from "./useLayers";
+import { useIsMobile } from "./useIsMobile";
+import { usePoiPanel } from "./usePoiPanel";
 
 export default function Chrome() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,6 +16,11 @@ export default function Chrome() {
   const [layersOpen, setLayersOpen] = useState(false);
   const layers = useLayers();
   const layersRef = useRef<HTMLDivElement>(null);
+  const isMobile = useIsMobile();
+  const poiOpen = !!usePoiPanel();
+  // Hidden while the mobile Place details bottom sheet covers this corner of the screen —
+  // same fix applied to ZoomControl/Ruler/Legend, the rest of the bottom-right FAB stack.
+  const hideLayersForSheet = isMobile && poiOpen;
 
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<Place[]>([]);
@@ -281,6 +288,7 @@ export default function Chrome() {
       </div>
 
       {/* Bottom-right: layers button (above zoom controls) + panel */}
+      {!hideLayersForSheet && (
       <div ref={layersRef} style={{ position: "absolute", right: 12, bottom: 118, zIndex: 5 }}>
         {layersOpen && (
           <div
@@ -340,6 +348,7 @@ export default function Chrome() {
           </svg>
         </button>
       </div>
+      )}
 
       {/* Bottom-right: mini attribution / brand */}
       <div

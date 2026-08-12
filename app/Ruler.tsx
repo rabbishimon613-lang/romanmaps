@@ -3,6 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 import type { Map as MLMap, MapMouseEvent, GeoJSONSource } from "maplibre-gl";
 import { useUnits, formatDistance } from "./useUnits";
+import { useIsMobile } from "./useIsMobile";
+import { usePoiPanel } from "./usePoiPanel";
 
 const EARTH_RADIUS_M = 6371008.8;
 const LINE_SOURCE = "ruler-line";
@@ -48,6 +50,11 @@ export default function Ruler() {
   const [units] = useUnits();
   const pointsRef = useRef<LngLat[]>([]);
   pointsRef.current = points;
+  const isMobile = useIsMobile();
+  const poiOpen = !!usePoiPanel();
+  // Hidden while the mobile Place details bottom sheet covers this corner — unless the user is
+  // mid-measurement, in which case keep the readout card visible so they don't lose their points.
+  const hideForSheet = isMobile && poiOpen && !active;
 
   useEffect(() => {
     if (!active) {
@@ -131,6 +138,8 @@ export default function Ruler() {
       navigator.clipboard.writeText(formatDistance(total, units)).catch(() => {});
     }
   };
+
+  if (hideForSheet) return null;
 
   return (
     <>

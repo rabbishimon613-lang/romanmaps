@@ -2,14 +2,18 @@
 
 import { useEffect, useState } from "react";
 import type { Map as MLMap } from "maplibre-gl";
+import { useIsMobile } from "./useIsMobile";
+import { usePoiPanel } from "./usePoiPanel";
 
 const MIN_ZOOM = 2.5;
-const MAX_ZOOM = 10;
+const MAX_ZOOM = 19;
 
 /** Google-Maps-style stacked +/- zoom buttons, bottom-right. Replaces MapLibre's default
  * NavigationControl, whose slot is CSS-hidden in favor of our own attribution text there. */
 export default function ZoomControl() {
   const [zoom, setZoom] = useState<number | null>(null);
+  const isMobile = useIsMobile();
+  const poiOpen = !!usePoiPanel();
 
   useEffect(() => {
     let map: MLMap | undefined;
@@ -49,6 +53,11 @@ export default function ZoomControl() {
 
   const atMin = zoom !== null && zoom <= MIN_ZOOM + 0.01;
   const atMax = zoom !== null && zoom >= MAX_ZOOM - 0.01;
+
+  // On mobile, the Place details bottom sheet (PlaceDetails.tsx) covers the bottom of the
+  // viewport where this FAB stack lives — hide it while the sheet is open rather than let it
+  // float on top, same fix applied to Ruler/Legend/the Layers button in Chrome.tsx.
+  if (isMobile && poiOpen) return null;
 
   return (
     <div

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import type { Map as MLMap } from "maplibre-gl";
 import { usePoiPanel, clearPoi } from "./usePoiPanel";
 import { colorForCategory } from "./poiCategories";
+import { useIsMobile } from "./useIsMobile";
 
 const CONFIDENCE_COLOR: Record<string, string> = {
   high: "#188038",
@@ -20,18 +21,6 @@ function formatYear(y: any): string {
 
 function titleCase(s: string): string {
   return s.replace(/(^|\s|-)\w/g, (c) => c.toUpperCase());
-}
-
-function useIsMobile(breakpoint = 640): boolean {
-  const [mobile, setMobile] = useState(false);
-  useEffect(() => {
-    const mq = window.matchMedia(`(max-width: ${breakpoint}px)`);
-    const update = () => setMobile(mq.matches);
-    update();
-    mq.addEventListener("change", update);
-    return () => mq.removeEventListener("change", update);
-  }, [breakpoint]);
-  return mobile;
 }
 
 /** Google-Maps-style place details panel: click a POI (app/Map.tsx pois-dot layer) to open,
