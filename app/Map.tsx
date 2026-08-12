@@ -427,16 +427,19 @@ export default function Map() {
           const f = e.features?.[0];
           if (!f) return;
           const p: any = f.properties || {};
-          selectPoi({
-            id: `ostia-${p.osm_id}`,
-            name_latin: p.name || `Building ${p.osm_id}`,
-            name_english: p.name || undefined,
-            category: p.category || "archaeological",
-            notes: `${p.category === "archaeological" ? "Archaeological structure" : p.category} in Ostia Antica. Regio-Insula addressing from OpenStreetMap contributors.`,
-            sources: [p.source],
-            extant_117ce: p.category !== "medieval",
-            modern_location: "Ostia Antica, Italy",
-          } as any);
+          selectPoi(
+            {
+              id: `ostia-${p.osm_id}`,
+              name_latin: p.name || `Building ${p.osm_id}`,
+              name_english: p.name || undefined,
+              category: p.category || "archaeological",
+              notes: `${p.category === "archaeological" ? "Archaeological structure" : p.category} in Ostia Antica. Regio-Insula addressing from OpenStreetMap contributors.`,
+              sources: [p.source],
+              extant_117ce: p.category !== "medieval",
+              modern_location: "Ostia Antica, Italy",
+            } as any,
+            [e.lngLat.lng, e.lngLat.lat],
+          );
         });
         map.on("mouseenter", "ostia-buildings-fill", () => {
           if (map) map.getCanvas().style.cursor = "pointer";
