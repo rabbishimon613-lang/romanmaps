@@ -8,6 +8,7 @@ import Ruler from "./Ruler";
 import ZoomControl from "./ZoomControl";
 import PlaceDetails from "./PlaceDetails";
 import Legend from "./Legend";
+import ContextMenu from "./ContextMenu";
 
 export default function Page() {
   return (
@@ -21,6 +22,7 @@ export default function Page() {
       <Legend />
       <ZoomControl />
       <PlaceDetails />
+      <ContextMenu />
       <MapAttribution />
     </main>
   );

@@ -5,6 +5,7 @@ import type { Map as MLMap, MapMouseEvent, GeoJSONSource } from "maplibre-gl";
 import { useUnits, formatDistance } from "./useUnits";
 import { useIsMobile } from "./useIsMobile";
 import { usePoiPanel } from "./usePoiPanel";
+import { activateRuler, deactivateRuler, useRulerState } from "./useRuler";
 
 const EARTH_RADIUS_M = 6371008.8;
 const LINE_SOURCE = "ruler-line";
@@ -45,7 +46,8 @@ function paintLayers(map: MLMap, points: LngLat[]) {
 }
 
 export default function Ruler() {
-  const [active, setActive] = useState(false);
+  const { active, seedPoint } = useRulerState();
+  const seedKey = seedPoint ? seedPoint.join(",") : "";
   const [points, setPoints] = useState<LngLat[]>([]);
   const [units] = useUnits();
   const pointsRef = useRef<LngLat[]>([]);
@@ -93,6 +95,13 @@ export default function Ruler() {
       });
     }
 
+    // Seed with a starting point (e.g. right-click "Measure distance") — resets the measurement
+    // to start fresh from that point even if a session was already in progress.
+    const initial = seedPoint ? [seedPoint] : [];
+    pointsRef.current = initial;
+    setPoints(initial);
+    paintLayers(map, initial);
+
     map.doubleClickZoom.disable();
     const prevCursor = map.getCanvas().style.cursor;
     map.getCanvas().style.cursor = "crosshair";
@@ -108,10 +117,10 @@ export default function Ruler() {
     };
     const onContextMenu = (e: MapMouseEvent) => {
       e.preventDefault();
-      setActive(false);
+      deactivateRuler();
     };
     const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setActive(false);
+      if (e.key === "Escape") deactivateRuler();
     };
 
     map.on("click", onClick);
@@ -127,7 +136,8 @@ export default function Ruler() {
       map.doubleClickZoom.enable();
       map.getCanvas().style.cursor = prevCursor;
     };
-  }, [active]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [active, seedKey]);
 
   const segments: number[] = [];
   for (let i = 1; i < points.length; i++) segments.push(haversineMeters(points[i - 1], points[i]));
@@ -145,7 +155,7 @@ export default function Ruler() {
     <>
       <button
         title="Measure distance"
-        onClick={() => setActive((a) => !a)}
+        onClick={() => (active ? deactivateRuler() : activateRuler())}
         style={{
           position: "absolute",
           right: 12,
@@ -186,7 +196,7 @@ export default function Ruler() {
             <strong style={{ fontSize: 14 }}>Measure distance</strong>
             <button
               title="Close"
-              onClick={() => setActive(false)}
+              onClick={() => deactivateRuler()}
               style={{ width: 24, height: 24, display: "grid", placeItems: "center", borderRadius: 999 }}
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#5f6368">
