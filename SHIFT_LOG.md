@@ -7,6 +7,56 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 6 — 2026-08-12 (06:00–12:00 UTC block)
+
+Started by reading the last three log entries per the brief, but found the repo had moved significantly past what SHIFT_LOG.md described: five commits landed after Shift 5's own log entry (`f271dd3`) without ever getting logged — `813333f` (Ostia street-level: 1,266 buildings + 251 park paths), `6362bde` (fix selectPoi signature), `1c52cb4` (Ostia/Portus gazetteer fix), `76ceecd` (Deploy Council pre-push build-gate hook, `.githooks/pre-push` + `postinstall` wiring), and `2649fae` (Italia batch — expanded street-level detail from Ostia-only to **40 archaeological sites** across the empire, plus a new `CategoryChips.tsx`/`LeftRail.tsx`/`SitesPanel.tsx`/`PoiMarkers.tsx` UI layer replacing the old flat MapLibre POI dots with clickable pill markers and an "Explore" site-jump panel). Author on those commits is a human (`Pedro Parga Bastos`, co-authored `Claude Opus 4.7`), not a shift session — logging retroactively here since nobody else did, so the next shift isn't confused the way this one briefly was. **Read `app/Map.tsx`, `app/sites.ts`, `app/SitesPanel.tsx`, `app/CategoryChips.tsx`, `app/PoiMarkers.tsx`, `app/LeftRail.tsx` before touching UI code** — the architecture has moved on from what Shifts 2-5 described (POI markers are now HTML `maplibregl.Marker` pins driven by `PoiMarkers.tsx`, not the old flat `pois-dot` MapLibre circle layer, though that layer object still exists in the style with radius/opacity forced to 0 — vestigial, safe to ignore or clean up later). New source files: `public/data/sites_buildings.geojson` (~20MB, all 40 sites' building footprints, OSM-derived) and `public/data/sites_streets.geojson` (~7MB). `public/data/pompeii.geojson` is *still* the original 0-byte placeholder (now doubly dead — Pompeii has both a `pois.geojson` entry from Shift 5 *and* full street-level building detail from the Italia batch, neither of which uses this file).
+
+### Track A — Research & data
+
+**All 28 legionary fortresses for the legions Rome had in 117 CE** (`public/data/pois.geojson`, 100 → 128 features) — priority-queue item 7, the largest item on SHIFT_BRIEF.md's list, untouched since Shift 2 first logged the queue. Delegated to a sub-agent scoped strictly to `pois.geojson` (no `app/` access) so it ran in parallel with this shift's Track B; verified its output before folding in — valid JSON, 128/128 unique ids, full schema conformance, pure-append diff (763 insertions, 0 deletions against the existing 100), spot-checked 6 of the trickier entries' sourcing personally.
+
+Correctly excludes **Legio III Italica** (not raised until c. 165 CE, Marcus Aurelius) and **Legio XXI Rapax** (destroyed c. 92 CE) — neither existed in 117 CE despite being on some casual "28 legions" lists that don't account for the exact year.
+
+**Two corrections to the brief's own starting assumptions** (the brief's priority-queue item 7 listed rough guesses for research to verify, not ground truth — worth noting since a future shift skimming an old brief draft could make the same starting error):
+- **Legio III Augusta** — Trajan had already moved it to **Lambaesis** by c. 100 CE, not Theveste.
+- **Legio XXX Ulpia Victrix** — its 117 CE base was **Brigetio**, not Vetera; it didn't take over Vetera until 122 CE when Hadrian sent VI Victrix to Britain.
+
+**Genuine transitional-year uncertainty, all flagged in-feature rather than papered over** — several legions were mid-movement during Trajan's Parthian War (114-117 CE) and the Kitos War side-revolt it triggered:
+- **I Adiutrix** and **XXX Ulpia Victrix** both pinned at Brigetio (same coordinates) — XXX Ulpia Victrix was the actual 117 CE occupant; I Adiutrix was still returning from the eastern campaign and likely didn't physically reoccupy its long-term fortress until c. 118. `confidence: medium` on I Adiutrix with the gap fully explained.
+- **II Traiana Fortis** and **VI Ferrata** both pinned at Caparcotna/Legio (Judaea, near Megiddo) — plausible brief overlap in the same Jezreel Valley camp during this transitional year before II Traiana Fortis continued toward its later Egyptian base. `confidence: low`/`medium`.
+- **III Cyrenaica** at Bostra kept `confidence: low` — real scholarly dispute over whether its main body was there in 117 or still on Kitos War suppression duty in Egypt.
+- **IX Hispana** kept at Eboracum/York (well-attested for 117 CE itself) with its disputed post-117 fate (traditional "wiped out" story vs. the modern Nijmegen-transfer theory) explicitly left unresolved in the notes — the map only needs to be right about 117, not adjudicate a 1,900-year-old historiographical argument.
+
+Confidence distribution: 16 high, 10 medium, 2 low. 2+ sources per fortress. Sourcing note: this environment's WebFetch egress has apparently opened back up somewhat since the string of `EGRESS_BLOCKED` reports from Shifts 2-5 (no fresh report of it this shift, but the sub-agent still leaned on WebSearch-synthesized citations as its primary method, consistent with prior practice — didn't specifically stress-test direct fetches).
+
+### Track B — Features & UI/UX
+
+Found and fixed two real bugs by reading through the (undocumented, per above) new architecture before adding to it:
+
+1. **Zoom control capped at zoom 10** (`app/ZoomControl.tsx`) — `MAX_ZOOM` was still `10`, a leftover from before the map's own `maxZoom` was raised to `19` for the new street-level site detail (which needs zoom 12-18 to render buildings at all). The on-screen `+` button disabled itself at 10 and lied about being maxed out — scroll/pinch still worked past it, but the primary on-screen control for the app's own flagship new feature couldn't reach the zoom levels that feature needs. One-line fix: `MAX_ZOOM = 19`, matching `Map.tsx`'s real `maxZoom: 19`.
+2. **Mobile bottom sheet burying the FAB stack** (new `app/useIsMobile.ts`, used by `ZoomControl.tsx`/`Ruler.tsx`/`Legend.tsx`/`Chrome.tsx`'s Layers button) — flagged as an open bug by Shift 5 ("Mobile bottom-sheet can cover the FAB stack") and still unfixed. The Place details sheet (`zIndex: 7`) sat visually on top of the Zoom/Ruler/Legend/Layers buttons (`zIndex: 5`) on narrow viewports without covering them edge-to-edge, so they looked present but were actually unreachable underneath the sheet. Fix: those four controls now hide themselves while the mobile sheet is open and reappear when it closes, via a small shared `useIsMobile()` hook (deduped out of a private copy that was already living in `PlaceDetails.tsx`). Ruler keeps its measurement readout card visible if the user is mid-measurement rather than yanking it away.
+
+**Verified both in a real browser**, not just typecheck/build: ran `next dev`, drove it with Playwright + the pre-installed Chromium, on both 1280×800 desktop and 390×844 mobile viewports. Desktop: jumped to Ostia at zoom 12, clicked the zoom-in button 8 times, confirmed it climbs cleanly to 19 and disables exactly there (previously would've disabled at 10); confirmed Ostia's street-level buildings (colored building-footprint polygons, previously unreachable via the on-screen control) render correctly once past zoom 12. Mobile: confirmed all four FABs are present before opening a POI, all four disappear the instant the bottom sheet opens, and all four reappear on Esc-close. `npx tsc --noEmit` and `npm run build` both clean before and after.
+
+**Also hit and worked around, not a regression:** my first Playwright pass showed 0 rendered `ostia-buildings-fill` features immediately after a `jumpTo` even at valid zoom — reproduced the exact same false-alarm pattern Shift 5 already diagnosed and documented (`map.queryRenderedFeatures()` right after a programmatic `jumpTo` under headless/software-WebGL doesn't reliably reflect the freshly-loaded tile state). A small `panBy([1,1])` nudge after settling fixed it in my own test; not a code bug, just confirming Shift 5's finding held up under a different scenario.
+
+**Didn't touch:** the vestigial `pois-dot`/`pois-label` MapLibre layers in `Map.tsx` (radius/opacity forced to 0, superseded by `PoiMarkers.tsx`'s HTML markers per the Italia-batch UI rework — dead code, safe to remove but out of scope for a bug-fix-focused Track B pass); Directions (still the only unshipped P0); the `next@14.2.5` security advisory (still flagged every shift since Shift 2, still someone's deliberate off-shift call).
+
+### Commits this shift
+
+1. `Fix zoom cap stuck at 10 and mobile bottom-sheet burying the FAB stack` (Track B)
+2. `Legionary fortresses: all 28 legions Rome had in 117 CE (Track A)`
+
+Both pushed to `main`; pre-push build gate (new since last logged shift — see architecture note above) ran clean on both.
+
+### Next shift should pick up
+
+- **Track A:** Amphitheaters beyond the Colosseum (priority queue item 6 — Verona, Nîmes, El Djem, Pula, Pozzuoli; note Verona and Pozzuoli/Puteoli now have street-level site detail from the Italia batch but likely still need individual `pois.geojson` landmark entries the same way other sites do) is the last fully-untouched priority-queue item. Otherwise: the systematic gazetteer audit flagged by Shifts 3-4 (script-check every notable ancient-city name against `places_medium.geojson`) is still open, and a full research pass on the 40-site `sites.ts` roster for cited `pois.geojson` landmark entries (most of those 40 sites currently only have the OSM-derived building layer + a one-line blurb in `sites.ts`, not proper cited POI records) would meaningfully deepen what's already the app's biggest visual feature.
+- **Track B:** Directions (the only unshipped P0, road-network routing — biggest remaining scope item), Coordinates URL sync or Keyboard shortcuts (both P1, well-bounded, didn't get to them this shift after the bug-fix detour), right-click context menu (P1), or cleaning up the vestigial `pois-dot`/`pois-label` MapLibre layers noted above now that `PoiMarkers.tsx` has fully superseded them.
+- **General:** whoever does hands-on UI work next should budget time to actually read through `app/Map.tsx`, `app/sites.ts`, `app/SitesPanel.tsx`, `app/CategoryChips.tsx`, `app/PoiMarkers.tsx` first — the architecture changed more between Shift 5's log entry and now than in the four shifts before it combined, and none of it was logged until this entry. Also: **update `FEATURE_BACKLOG.md`** to reflect the Italia-batch UI work (Explore panel, category filter chips, HTML pill markers) — none of it is listed there either, despite being shipped and live.
+
+---
+
 ## Shift 5 — 2026-08-12 (00:00–06:00 UTC block)
 
 Read the last two entries before starting. Shift 4's "Next shift should pick up" left Track A pointing at Pompeii/Herculaneum (priority queue item 3, `public/data/pompeii.geojson` still a 0-byte placeholder) or legionary fortresses (item 7), and Track B pointing at POI category icons + legend plus the POI-dots-buried-under-roads visibility bug. Did both, paired directly — the visibility fix and the icon/legend work share the same underlying color-mapping change, so did them as one Track B unit rather than two.
