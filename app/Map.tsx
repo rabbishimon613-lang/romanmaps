@@ -6,6 +6,8 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import { applyAllLayers } from "./useLayers";
 import { selectPoi, clearPoi } from "./usePoiPanel";
 import { categoryColorMatchPairs, DEFAULT_COLOR } from "./poiCategories";
+import { ostiaEntry } from "./ostiaDescriptions";
+import { SITE_META } from "./sites";
 
 export default function Map() {
   const ref = useRef<HTMLDivElement>(null);
@@ -20,11 +22,12 @@ export default function Map() {
 
     (async () => {
       // Phase 1: light sources first — small enough to render fast.
-      const [land, provinces, lakes, rivers] = await Promise.all([
+      const [land, provinces, lakes, rivers, ancientSea] = await Promise.all([
         fetch("/data/land.geojson").then((r) => r.json()),
         fetch("/data/provinces.geojson").then((r) => r.json()),
         fetch("/data/10m_lakes.geojson").then((r) => r.json()),
         fetch("/data/10m_rivers_lake_centerlines.geojson").then((r) => r.json()),
+        fetch("/data/ancient_sea.geojson").then((r) => r.json()),
       ]);
       if (cancelled || !ref.current) return;
 
@@ -38,6 +41,7 @@ export default function Map() {
             provinces: { type: "geojson", maxzoom: 14, buffer: 128, tolerance: 0.375, data: provinces },
             lakes: { type: "geojson", maxzoom: 14, buffer: 128, tolerance: 0.375, data: lakes },
             rivers: { type: "geojson", maxzoom: 14, buffer: 128, tolerance: 0.375, data: rivers },
+            "ancient-sea": { type: "geojson", maxzoom: 18, buffer: 128, tolerance: 0.1, data: ancientSea },
           },
           layers: [
             { id: "bg", type: "background", paint: { "background-color": "#a9d1e3" } },
@@ -48,10 +52,23 @@ export default function Map() {
               paint: { "fill-color": "#f4ead5" },
             },
             {
+              id: "ancient-sea",
+              type: "fill",
+              source: "ancient-sea",
+              paint: { "fill-color": "#a9d1e3" },
+            },
+            {
+              id: "ancient-sea-outline",
+              type: "line",
+              source: "ancient-sea",
+              minzoom: 11,
+              paint: { "line-color": "#7fb0c9", "line-width": 0.8, "line-dasharray": [4, 3], "line-opacity": 0.6 },
+            },
+            {
               id: "provinces-fill",
               type: "fill",
               source: "provinces",
-              paint: { "fill-color": "#ecdfbf", "fill-opacity": 0.55 },
+              paint: { "fill-color": "#ecdfbf", "fill-opacity": 0.18 },
             },
             {
               id: "provinces-line",
@@ -158,25 +175,13 @@ export default function Map() {
         const places = await fetch("/data/places_medium.geojson").then((r) => r.json());
         if (cancelled || !map) return;
         map.addSource("places", { type: "geojson", maxzoom: 14, buffer: 128, tolerance: 0.375, data: places });
+        // No place dots at all — labels only, Google-Maps style.
         map.addLayer({
           id: "places-dot",
           type: "circle",
           source: "places",
-          filter: ["==", ["get", "ancient"], 1],
-          paint: {
-            "circle-radius": [
-              "interpolate",
-              ["linear"],
-              ["zoom"],
-              3,
-              ["case", ["==", ["get", "major"], 1], 2.4, 0.8],
-              8,
-              ["case", ["==", ["get", "major"], 1], 4.5, 2.4],
-            ],
-            "circle-color": "#3b2a17",
-            "circle-stroke-color": "#f4ead5",
-            "circle-stroke-width": 1,
-          },
+          filter: ["==", ["get", "ancient"], -1],
+          paint: { "circle-opacity": 0 },
         });
         map.addLayer({
           id: "places-label-major",
@@ -204,13 +209,14 @@ export default function Map() {
           type: "symbol",
           source: "places",
           filter: ["all", ["==", ["get", "ancient"], 1], ["!=", ["get", "major"], 1]],
-          minzoom: 5.5,
+          minzoom: 6.5,
+          maxzoom: 11,
           layout: {
             "text-field": ["coalesce", ["get", "latin"], ["get", "modern"]],
             "text-font": ["Noto Sans Regular"],
-            "text-size": ["interpolate", ["linear"], ["zoom"], 5.5, 10, 9, 13],
-            "text-offset": [0, 0.8],
-            "text-anchor": "top",
+            "text-size": ["interpolate", ["linear"], ["zoom"], 6.5, 10, 9, 12],
+            "text-offset": [0, 0.4],
+            "text-anchor": "center",
             "text-optional": true,
             "text-allow-overlap": false,
           },
@@ -265,7 +271,8 @@ export default function Map() {
             // Slightly larger + a thicker halo than the base gazetteer's places-dot layer, so POI
             // markers stay legible where they sit on top of dense roads-main convergences (e.g.
             // Forum Romanum at Rome's road hub) — flagged as a visibility bug by Shift 4.
-            "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 4, 8, 8.5],
+            "circle-radius": 0,
+            "circle-opacity": 0,
             "circle-color": ["match", ["get", "category"], ...categoryColorMatchPairs(), DEFAULT_COLOR] as any,
             "circle-stroke-color": "#f4ead5",
             "circle-stroke-width": 2.2,
@@ -275,22 +282,10 @@ export default function Map() {
           id: "pois-label",
           type: "symbol",
           source: "pois",
-          filter: ["==", ["get", "extant_117ce"], true],
-          minzoom: 6,
-          layout: {
-            "text-field": ["coalesce", ["get", "name_latin"], ["get", "name_english"]],
-            "text-font": ["Noto Sans Regular"],
-            "text-size": 12,
-            "text-offset": [0, 1],
-            "text-anchor": "top",
-            "text-optional": true,
-            "text-allow-overlap": false,
-          },
-          paint: {
-            "text-color": "#5c1414",
-            "text-halo-color": "#f4ead5",
-            "text-halo-width": 1.6,
-          },
+          // Labels rendered by app/PoiMarkers.tsx HTML markers; disable this layer.
+          filter: ["==", ["get", "extant_117ce"], "__disabled__"],
+          minzoom: 24,
+          layout: { "text-field": "" },
         });
 
         // Click a POI -> open the slide-in Place details panel (app/PlaceDetails.tsx),
@@ -323,8 +318,8 @@ export default function Map() {
         // Phase 5: Ostia Antica street-level detail (1,266 building outlines + 251 park paths).
         // Only visible at zoom 13+ so it doesn't pollute regional views.
         const [ostiaBuildings, ostiaStreets] = await Promise.all([
-          fetch("/data/ostia_buildings.geojson").then((r) => r.json()),
-          fetch("/data/ostia_streets.geojson").then((r) => r.json()),
+          fetch("/data/sites_buildings.geojson").then((r) => r.json()),
+          fetch("/data/sites_streets.geojson").then((r) => r.json()),
         ]);
         if (cancelled || !map) return;
 
@@ -348,11 +343,34 @@ export default function Map() {
           id: "ostia-streets",
           type: "line",
           source: "ostia-streets",
-          minzoom: 13,
+          minzoom: 12,
           paint: {
             "line-color": "#8a6a3a",
             "line-width": ["interpolate", ["linear"], ["zoom"], 13, 0.4, 17, 2],
             "line-opacity": 0.6,
+          },
+        });
+        // Street name labels — italic like Google Maps' street names
+        map.addLayer({
+          id: "ostia-street-labels",
+          type: "symbol",
+          source: "ostia-streets",
+          minzoom: 15,
+          filter: ["all", ["has", "name"], ["!=", ["get", "name"], ""]],
+          layout: {
+            "text-field": ["get", "name"],
+            "text-font": ["Noto Sans Regular"],
+            "text-size": ["interpolate", ["linear"], ["zoom"], 15, 10, 18, 13],
+            "symbol-placement": "line",
+            "text-max-angle": 25,
+            "text-letter-spacing": 0.02,
+            "text-optional": true,
+            "text-allow-overlap": false,
+          },
+          paint: {
+            "text-color": "#5f6368",
+            "text-halo-color": "#f4ead5",
+            "text-halo-width": 1.6,
           },
         });
 
@@ -361,7 +379,7 @@ export default function Map() {
           id: "ostia-buildings-fill",
           type: "fill",
           source: "ostia-buildings",
-          minzoom: 13,
+          minzoom: 12,
           paint: {
             "fill-color": [
               "match",
@@ -392,7 +410,7 @@ export default function Map() {
           id: "ostia-buildings-line",
           type: "line",
           source: "ostia-buildings",
-          minzoom: 13,
+          minzoom: 12,
           paint: {
             "line-color": "#3b2a17",
             "line-width": ["interpolate", ["linear"], ["zoom"], 13, 0.2, 17, 0.8],
@@ -422,21 +440,34 @@ export default function Map() {
           },
         });
 
-        // Click a building → open the PoI panel with its info
+        // Click a building → open the PoI panel with its info (enriched from curated lookup).
         map.on("click", "ostia-buildings-fill", (e) => {
           const f = e.features?.[0];
           if (!f) return;
           const p: any = f.properties || {};
+          const rawName = p.name || "";
+          const site: string = p.site || "ostia";
+          const siteMeta = SITE_META[site] || { display: site, province: "" };
+          // Strip Regio.Insula parenthetical for a cleaner display name
+          const displayName = rawName.replace(/\s*\([^)]*\)\s*$/, "").trim() || rawName || `Building ${p.osm_id}`;
+          const entry = site === "ostia" ? ostiaEntry(rawName) : undefined;
           selectPoi(
             {
-              id: `ostia-${p.osm_id}`,
-              name_latin: p.name || `Building ${p.osm_id}`,
-              name_english: p.name || undefined,
-              category: p.category || "archaeological",
-              notes: `${p.category === "archaeological" ? "Archaeological structure" : p.category} in Ostia Antica. Regio-Insula addressing from OpenStreetMap contributors.`,
-              sources: [p.source],
-              extant_117ce: p.category !== "medieval",
-              modern_location: "Ostia Antica, Italy",
+              id: `${site}-${p.osm_id}`,
+              name_latin: displayName,
+              name_english: entry?.english,
+              category: entry?.category || p.category || "archaeological",
+              notes:
+                entry?.description ||
+                (rawName
+                  ? `Excavated ${p.category === "archaeological" ? "structure" : p.category} at ${siteMeta.display}. Detailed archaeology in progress.`
+                  : `Unidentified structure in the ${siteMeta.display} archaeological zone.`),
+              built: entry?.built,
+              destroyed: entry?.destroyed,
+              extant_117ce: entry?.extant_117ce ?? (p.category !== "medieval"),
+              province: siteMeta.province,
+              modern_location: siteMeta.display,
+              sources: ["OpenStreetMap contributors"],
             } as any,
             [e.lngLat.lng, e.lngLat.lat],
           );

@@ -1,0 +1,442 @@
+[
+  {
+    "slug": "ostia",
+    "name": "Ostia Antica",
+    "center": [
+      12.291,
+      41.755
+    ],
+    "zoom": 16.5,
+    "buildings": 1204,
+    "streets": 213
+  },
+  {
+    "slug": "pompeii",
+    "name": "Pompeii",
+    "center": [
+      14.485,
+      40.749
+    ],
+    "zoom": 16.5,
+    "buildings": 773,
+    "streets": 375
+  },
+  {
+    "slug": "herculaneum",
+    "name": "Herculaneum",
+    "center": [
+      14.348,
+      40.806
+    ],
+    "zoom": 16.5,
+    "buildings": 246,
+    "streets": 97
+  },
+  {
+    "slug": "ephesus",
+    "name": "Ephesus",
+    "center": [
+      27.341,
+      37.94
+    ],
+    "zoom": 16.5,
+    "buildings": 95,
+    "streets": 111
+  },
+  {
+    "slug": "timgad",
+    "name": "Timgad",
+    "center": [
+      6.469,
+      35.484
+    ],
+    "zoom": 16.5,
+    "buildings": 252,
+    "streets": 50
+  },
+  {
+    "slug": "volubilis",
+    "name": "Volubilis",
+    "center": [
+      -5.554,
+      34.075
+    ],
+    "zoom": 16.5,
+    "buildings": 11,
+    "streets": 80
+  },
+  {
+    "slug": "leptismagna",
+    "name": "Leptis Magna",
+    "center": [
+      14.293,
+      32.638
+    ],
+    "zoom": 16.5,
+    "buildings": 78,
+    "streets": 75
+  },
+  {
+    "slug": "sabratha",
+    "name": "Sabratha",
+    "center": [
+      12.485,
+      32.804
+    ],
+    "zoom": 16.5,
+    "buildings": 113,
+    "streets": 53
+  },
+  {
+    "slug": "jerash",
+    "name": "Jerash (Gerasa)",
+    "center": [
+      35.892,
+      32.278
+    ],
+    "zoom": 16.5,
+    "buildings": 211,
+    "streets": 215
+  },
+  {
+    "slug": "palmyra",
+    "name": "Palmyra",
+    "center": [
+      38.269,
+      34.55
+    ],
+    "zoom": 16.5,
+    "buildings": 92,
+    "streets": 105
+  },
+  {
+    "slug": "baalbek",
+    "name": "Baalbek",
+    "center": [
+      36.204,
+      34.006
+    ],
+    "zoom": 16.5,
+    "buildings": 1179,
+    "streets": 32
+  },
+  {
+    "slug": "rome",
+    "name": "Rome (city center)",
+    "center": [
+      12.487,
+      41.892
+    ],
+    "zoom": 16.5,
+    "buildings": 3557,
+    "streets": 5003
+  },
+  {
+    "slug": "aquincum",
+    "name": "Aquincum",
+    "center": [
+      19.048,
+      47.567
+    ],
+    "zoom": 16.5,
+    "buildings": 649,
+    "streets": 638
+  },
+  {
+    "slug": "vindolanda",
+    "name": "Vindolanda",
+    "center": [
+      -2.361,
+      54.991
+    ],
+    "zoom": 16.5,
+    "buildings": 44,
+    "streets": 98
+  },
+  {
+    "slug": "trier",
+    "name": "Trier (Augusta Treverorum)",
+    "center": [
+      6.644,
+      49.752
+    ],
+    "zoom": 16.5,
+    "buildings": 3875,
+    "streets": 2608
+  },
+  {
+    "slug": "xanten",
+    "name": "Xanten (CUT)",
+    "center": [
+      6.4415,
+      51.66
+    ],
+    "zoom": 16.5,
+    "buildings": 1544,
+    "streets": 309
+  },
+  {
+    "slug": "athens",
+    "name": "Athens (Roman Agora)",
+    "center": [
+      23.726,
+      37.975
+    ],
+    "zoom": 16.5,
+    "buildings": 1261,
+    "streets": 355
+  },
+  {
+    "slug": "delphi",
+    "name": "Delphi",
+    "center": [
+      22.501,
+      38.482
+    ],
+    "zoom": 16.5,
+    "buildings": 93,
+    "streets": 50
+  },
+  {
+    "slug": "italica",
+    "name": "Italica",
+    "center": [
+      -6.045,
+      37.442
+    ],
+    "zoom": 16.5,
+    "buildings": 398,
+    "streets": 81
+  },
+  {
+    "slug": "djemila",
+    "name": "Djemila (Cuicul)",
+    "center": [
+      5.735,
+      36.32
+    ],
+    "zoom": 16.5,
+    "buildings": 222,
+    "streets": 43
+  },
+  {
+    "slug": "carnuntum",
+    "name": "Carnuntum",
+    "center": [
+      16.877,
+      48.116
+    ],
+    "zoom": 16.5,
+    "buildings": 254,
+    "streets": 51
+  },
+  {
+    "slug": "corinth",
+    "name": "Corinth",
+    "center": [
+      22.888,
+      37.907
+    ],
+    "zoom": 16.5,
+    "buildings": 20,
+    "streets": 8
+  },
+  {
+    "slug": "merida",
+    "name": "Emerita Augusta",
+    "center": [
+      -6.339,
+      38.916
+    ],
+    "zoom": 16.5,
+    "buildings": 2821,
+    "streets": 328
+  },
+  {
+    "slug": "aquileia",
+    "name": "Aquileia",
+    "center": [
+      13.372,
+      45.77
+    ],
+    "zoom": 16.5,
+    "buildings": 624,
+    "streets": 279
+  },
+  {
+    "slug": "verona",
+    "name": "Verona (city center)",
+    "center": [
+      10.998,
+      45.44
+    ],
+    "zoom": 16.5,
+    "buildings": 5868,
+    "streets": 1750
+  },
+  {
+    "slug": "ravenna",
+    "name": "Ravenna",
+    "center": [
+      12.198,
+      44.418
+    ],
+    "zoom": 16.5,
+    "buildings": 6241,
+    "streets": 1147
+  },
+  {
+    "slug": "portus",
+    "name": "Portus",
+    "center": [
+      12.257,
+      41.778
+    ],
+    "zoom": 16.5,
+    "buildings": 832,
+    "streets": 194
+  },
+  {
+    "slug": "tivoli",
+    "name": "Tibur (Tivoli)",
+    "center": [
+      12.798,
+      41.964
+    ],
+    "zoom": 16.5,
+    "buildings": 711,
+    "streets": 324
+  },
+  {
+    "slug": "palestrina",
+    "name": "Praeneste (Palestrina)",
+    "center": [
+      12.897,
+      41.837
+    ],
+    "zoom": 16.5,
+    "buildings": 1217,
+    "streets": 693
+  },
+  {
+    "slug": "pozzuoli",
+    "name": "Puteoli (Pozzuoli)",
+    "center": [
+      14.121,
+      40.826
+    ],
+    "zoom": 16.5,
+    "buildings": 2161,
+    "streets": 541
+  },
+  {
+    "slug": "baiae",
+    "name": "Baiae",
+    "center": [
+      14.075,
+      40.822
+    ],
+    "zoom": 16.5,
+    "buildings": 1014,
+    "streets": 265
+  },
+  {
+    "slug": "cumae",
+    "name": "Cumae",
+    "center": [
+      14.052,
+      40.848
+    ],
+    "zoom": 16.5,
+    "buildings": 414,
+    "streets": 74
+  },
+  {
+    "slug": "capua",
+    "name": "Capua (S. M. Capua Vetere)",
+    "center": [
+      14.259,
+      41.083
+    ],
+    "zoom": 16.5,
+    "buildings": 415,
+    "streets": 292
+  },
+  {
+    "slug": "beneventum",
+    "name": "Beneventum (Benevento)",
+    "center": [
+      14.777,
+      41.13
+    ],
+    "zoom": 16.5,
+    "buildings": 704,
+    "streets": 526
+  },
+  {
+    "slug": "paestum",
+    "name": "Paestum",
+    "center": [
+      15.006,
+      40.421
+    ],
+    "zoom": 16.5,
+    "buildings": 169,
+    "streets": 217
+  },
+  {
+    "slug": "brescia",
+    "name": "Brixia (Brescia)",
+    "center": [
+      10.222,
+      45.539
+    ],
+    "zoom": 16.5,
+    "buildings": 1853,
+    "streets": 2072
+  },
+  {
+    "slug": "milan",
+    "name": "Mediolanum (Milan center)",
+    "center": [
+      9.187,
+      45.463
+    ],
+    "zoom": 16.5,
+    "buildings": 1518,
+    "streets": 3758
+  },
+  {
+    "slug": "rimini",
+    "name": "Ariminum (Rimini)",
+    "center": [
+      12.573,
+      44.058
+    ],
+    "zoom": 16.5,
+    "buildings": 4411,
+    "streets": 1233
+  },
+  {
+    "slug": "ancona",
+    "name": "Ancona",
+    "center": [
+      13.51,
+      43.622
+    ],
+    "zoom": 16.5,
+    "buildings": 701,
+    "streets": 835
+  },
+  {
+    "slug": "luni",
+    "name": "Luna (Luni)",
+    "center": [
+      10.02,
+      44.062
+    ],
+    "zoom": 16.5,
+    "buildings": 725,
+    "streets": 89
+  }
+]

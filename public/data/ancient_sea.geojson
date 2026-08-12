@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tyrrhenian Sea (117 CE reconstruction)",
+        "note": "Approximate ancient shoreline in 117 CE. Silting has pushed the modern coast ~3 km west. In 117 CE the sea reached Ostia's Porta Marina and enclosed Trajan's hexagonal harbor at Portus. Sources: Simon Keay (Portus Project, British School at Rome); Le Gall (Le Tibre, 1953); Meiggs (Roman Ostia, 1973). Bounds cut short of Ostia's westernmost excavated building (Porta Marina at 12.283 E) to avoid overlap with the archaeological site polygons."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [12.230, 41.800],
+            [12.238, 41.800],
+            [12.245, 41.795],
+            [12.253, 41.788],
+            [12.260, 41.782],
+            [12.268, 41.778],
+            [12.275, 41.774],
+            [12.279, 41.768],
+            [12.280, 41.760],
+            [12.279, 41.752],
+            [12.277, 41.744],
+            [12.273, 41.738],
+            [12.265, 41.735],
+            [12.255, 41.733],
+            [12.240, 41.734],
+            [12.230, 41.736],
+            [12.225, 41.750],
+            [12.223, 41.770],
+            [12.226, 41.790],
+            [12.230, 41.800]
+          ]
+        ]
+      }
+    }
+  ]
+}

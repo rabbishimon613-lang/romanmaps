@@ -108,7 +108,7 @@ export default function Chrome() {
         style={{
           position: "absolute",
           top: 10,
-          left: 10,
+          left: 70,
           width: 408,
           maxWidth: "calc(100vw - 20px)",
           zIndex: 5,

@@ -1,5 +1,9 @@
 import Map from "./Map";
 import Chrome from "./Chrome";
+import LeftRail from "./LeftRail";
+import CategoryChips from "./CategoryChips";
+import PoiMarkers from "./PoiMarkers";
+import MapAttribution from "./MapAttribution";
 import Ruler from "./Ruler";
 import ZoomControl from "./ZoomControl";
 import PlaceDetails from "./PlaceDetails";
@@ -9,11 +13,15 @@ export default function Page() {
   return (
     <main style={{ position: "fixed", inset: 0 }}>
       <Map />
+      <PoiMarkers />
+      <LeftRail />
       <Chrome />
+      <CategoryChips />
       <Ruler />
       <Legend />
       <ZoomControl />
       <PlaceDetails />
+      <MapAttribution />
     </main>
   );
 }
