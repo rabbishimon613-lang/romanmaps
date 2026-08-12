@@ -15,7 +15,9 @@ Ostia · Pompeii · Herculaneum · Ephesus · Timgad · Djemila · Volubilis · 
 
 ## Where we're going — three parallel expansion axes
 
-Every shift picks ONE axis and pushes it forward. Don't try all three in one shift.
+Every shift picks ONE axis (and often ONE sub-category inside it) and pushes it forward. Don't try all three in one shift; don't try all nine micro sub-categories in one shift. Depth beats breadth.
+
+The three axes: **(1) more cities**, **(2) sites along the roads**, **(3) micro-level POIs** — the last of which is a big menu (see Axis 3 for its 9 sub-categories: military, sacred, economic, villae, tombs, water, games, battlefields, shipwrecks).
 
 ### Axis 1 — MORE CITIES beyond the current 40
 
@@ -73,23 +75,114 @@ The Roman road network was punctuated with staging posts. **These matter as much
 
 Target for a shift: **one entire road** with all its stations, or **50+ stations** across several roads.
 
-### Axis 3 — MICRO-LEVEL: villae, sanctuaries, forts, mines, quarries, lighthouses
+### Axis 3 — MICRO-LEVEL POIs (not cities, not road stations)
 
-Below city level, above road-station level. Real historical/archaeological sites that aren't full cities but matter to the map.
+Below city level, above road-station level. Real archaeological sites, one point each, that populate the map between the cities and along the roads. These are what make the empire feel *lived-in* on the map.
 
-**Categories to hunt:**
+Below is the full hunting list — nine sub-categories, roughly ordered by how much they'd change the map right now. Pick ONE sub-category per shift and go deep. Don't dabble across all nine.
 
-- **Imperial villae** — Hadrian's Villa (Tibur, still being built at our snapshot), Villa of the Papyri (Herculaneum, buried), villa dei Quintili (Via Appia), villa Adriana precursors. Pliny the Younger's letters describe several by location.
-- **Rural sanctuaries** — Delphi/Baalbek are already in as cities; but Apollo Grannus at Grand, Sequana at Fontes Sequanae, the Tetrapylon at Portus Iulius, Nemi (Diana), Segeda (Iberia). Pausanias catalogs the Greek ones.
-- **Auxiliary forts on the limes** — Every fort along Hadrian's Wall (Vindolanda is done; do Chesters, Housesteads, Wallsend), the Rhine (Saalburg, Neuss, Xanten, Nijmegen), the Danube, the Fossatum Africae. **Roman Fort Locator** tools + Ordnance Survey / RCAHMS records are your friends.
-- **Mines and quarries** — Rio Tinto (Hispania silver), Las Médulas (gold), Docimeium (Phrygian marble), Mons Porphyrites (Egyptian porphyry), Mons Claudianus (granite), Carrara/Luna already in. Ancient Mining Wiki + specific archaeological reports.
-- **Lighthouses (pharos)** — Alexandria (still standing 117), Ostia (rebuilt under Trajan), Dover (Roman pharos still stands), La Coruña (Tower of Hercules, still working today).
-- **Amphitheaters, aqueducts, bridges not attached to a listed city** — Pont du Gard, Segovia aqueduct, Alcántara bridge, Ponte di Tiberio.
-- **Villas that were productive units** — olive-oil villae in North Africa, wine villae in Gaul. Each represents a named archaeological find.
+#### 3a — Military infrastructure
 
-**Where they go:** `public/data/pois.geojson` (already used for empire-wide POIs). Schema is the existing one — add `category` from the list above.
+The 117 CE army has ~28 legions plus roughly twice that in auxiliary units. Each of those units has a fixed base. Also frontier lines, signal towers, naval bases.
 
-Wire a filter category if not already covered by the current 15 (see `app/poiCategories.ts` for the current families). New categories may need a new family — coordinate with a matching color + short glyph.
+- **Legionary fortresses (castra legionis).** 28 in 117 CE — every legion had one. Examples: II Augusta at Isca Silurum (Caerleon), XX Valeria Victrix at Deva (Chester), VI Ferrata at Judea, III Cyrenaica at Bostra, X Fretensis at Aelia Capitolina area. Full list is on Wikipedia + Ritterling's *Legio* article (1925, still the reference).
+- **Auxiliary forts.** Hundreds. Concentrate on frontier zones — Hadrian's Wall is being planned (not built until 122) but many pre-existing forts on that line already existed (Vindolanda is one, already in). Rhine limes: Saalburg, Zugmantel, Kapersburg. Danube limes: Regensburg (Castra Regina, Trajanic), Aquincum (in), Carnuntum (in), Viminacium. Fossatum Africae is Trajanic so it's fresh.
+- **Signal towers (burgi / turres).** Chains of watchtowers between forts. Well-documented on Hadrian's Wall line pre-wall, on the Rhine, and in Wales.
+- **Naval bases (classis stations).** Misenum (Classis Misenensis), Ravenna (in, Classis Ravennas), Forum Iulii/Fréjus (Classis Gallica), Alexandria (Classis Alexandrina), Seleucia Pieria (Classis Syriaca), Boulogne (Classis Britannica), Cologne (Classis Germanica). Each has excavated harbor works.
+- **Frontier lines as continuous features.** Fossatum Africae (Trajanic), Limes Germanicus (extended by Domitian, still going in 117), Dacian ripa (Trajan just built it 105–117 — brand new). Draw as `LineString` in a new `frontiers.geojson`.
+
+#### 3b — Sacred sites beyond city temples
+
+Every big temple in a city already gets picked up by the city Overpass fetch. What we're missing: rural sanctuaries, oracles, healing shrines, sacred groves.
+
+- **Panhellenic sanctuaries.** Olympia (Zeus, games), Nemea (Zeus, games), Isthmia (Poseidon, games), Delphi (in as city), Dodona (Zeus oracle in Epirus), Nikopolis' Actia. Pausanias catalogs every one.
+- **Oracles.** Claros (near Colophon), Didyma (near Miletus), Siwa (Ammon, in Egyptian desert — Alexander visited), Praeneste (already in as city, Fortuna).
+- **Healing sanctuaries (Asklepieia).** Epidaurus, Pergamon (in as city), Kos, Corinth (in). Include drinking basins, sleep halls (abaton), snake pits.
+- **Rural sanctuaries.** Apollo Grannus at Grand (Gaul), Sequana at Fontes Sequanae (river-source shrine), Nemi (Diana Nemorensis, lakeshore grove south of Rome), Sulis Minerva at Aquae Sulis/Bath, Nodens at Lydney.
+- **Mystery cult sites.** Eleusis (Demeter mysteries, still active), Samothrace (Great Gods).
+- **Egyptian temples still functioning in 117 CE** — Karnak, Luxor, Philae, Dendera, Edfu. All operational under Roman imperial patronage.
+- **Punic/Semitic sanctuaries absorbed by Rome** — Tophet at Carthage, Hierapolis Bambyce (Atargatis), Tyre (Melqart/Herakles).
+
+**Careful with Mithraea.** Mithraism peaked 2nd–3rd century. A handful of Mithraea existed by 117 (Sidon, one in Rome, possibly Ostia's earliest) but most on the map today are 130+. Log carefully.
+
+#### 3c — Economic infrastructure
+
+Mines, quarries, factories, imperial estates. The dots that show how the empire made its money.
+
+- **Mines.** Rio Tinto (Iberian silver/copper — huge Roman operation), Las Médulas (León, gold, worked with hydraulic mining Pliny describes), Alburnus Maior (Roșia Montană in Dacia, gold — Trajan grabbed it after conquest), Wadi Faynan (Jordan, copper), Wroxeter/Halkyn (Britain, lead), Dolaucothi (Wales, gold).
+- **Quarries.** Docimium/İscehisar (Phrygian pavonazzetto marble), Mons Porphyrites (imperial porphyry, Eastern Desert Egypt), Mons Claudianus (granite, ditto), Chemtou (Numidian giallo antico), Carrara/Luni (in as city, but the quarries themselves are separate points inland).
+- **Garum factories.** Baelo Claudia (Iberia), Neapolis in Sardinia, Cotta (Morocco), Lixus (Morocco). Salted fish + fermented fish sauce, industrial scale.
+- **Salinae.** Ostia's salt pans (probably in Ostia bbox already), Cervia, Halae in Boeotia, plus dozens along Adriatic + Iberian coasts.
+- **Amphora kilns / pottery workshops.** La Graufesenque (Millau, terra sigillata factory — millions of stamps recovered), Arretium (in Etruria, samian ware), Rheinzabern (Rhine sigillata).
+- **Imperial estates (praedia Caesaris).** Traceable through stamped tiles + inscriptions. North African olive-oil villae belong here.
+- **Wine + olive-oil villae rusticae** — productive, not luxury. Settefinestre (Etruria), Villa Regina at Boscoreale.
+
+#### 3d — Villae (residential + productive)
+
+Named individual villas, either imperial retreats or aristocratic country houses.
+
+- Hadrian's Villa (Tibur) — foundations laid ~117, mostly post-snapshot but log with a note.
+- Domitian's Alban villa (Castel Gandolfo).
+- Nero's Sublaqueum (Subiaco) — lakeside pleasure complex.
+- Villa dei Quintili (Via Appia).
+- Pliny the Younger's Laurentine + Tuscan villas — he describes both in letters; coords approximate.
+- Sperlonga — Tiberius's cave-grotto with the Odyssey sculptures.
+- Villa Adriana precursors, Anguillara, Baia (Baiae already in as city, but individual villas on the shore).
+- Fishbourne (Britain, post-conquest palatial complex).
+- Chedworth, Bignor (Britain), Piazza Armerina (Sicily, later but shell may exist).
+
+#### 3e — Necropoleis + isolated tombs
+
+Roman roads leaving cities were lined with tombs. Some are major individual monuments.
+
+- **Named tomb monuments** — Mausoleum of Augustus (Rome), Castel Sant'Angelo (Hadrian's Mausoleum, not yet — 135), Pyramid of Cestius, Cecilia Metella (Via Appia), Munatius Plancus at Gaeta, Eurysaces at Porta Maggiore (baker's tomb), Poblicius at Cologne.
+- **Necropolis complexes** — Isola Sacra between Ostia and Portus (huge — hundreds of tombs), Vatican Necropolis (already exists in 117, later covered by St Peter's), Alyscamps at Arelate, Fidenae, Puteoli necropolis, Petra's rock-cut royal tombs.
+- **Via Appia tomb corridor** — first 5 miles south of Rome, dense with named tombs.
+
+Add as a new `tombs` POI category (color it purple/plum, glyph = urn or obelisk).
+
+#### 3f — Water infrastructure (beyond city aqueducts)
+
+- **Aqueducts as line features.** Aqua Claudia, Aqua Anio Novus, Aqua Marcia, Aqua Traiana (opened 109 CE — very fresh in 117). Nemausus's aqueduct (Pont du Gard). Segovia. Carthage. Draw as LineStrings.
+- **Roman dams.** Prosperina & Cornalvo (Emerita Augusta), Homs dam (Syria), Subiaco (Nero's).
+- **Standalone bridges.** Alcántara (Trajanic, completed 106 — perfectly on-snapshot), Ponte di Tiberio (in as Rimini), Puente Romano at Merida (in), Trajan's Bridge over the Danube (finished 105 — huge, longest Roman bridge, doesn't survive but coords documented).
+- **Watermills.** Barbegal (near Arles, 16-wheel industrial complex, dated Trajanic/Hadrianic). Only a handful of others survive.
+- **Cisterns** — Yerebatan later, but Constantinople not yet. Alexandria, Ptolemais, Carthage have monumental Roman cisterns.
+
+#### 3g — Games + festivals sites
+
+- **Panhellenic games** — Olympia, Nemea, Isthmia, Delphi (Pythian). All active.
+- **Roman games sites** — Actia at Nikopolis (in Trajan's day), Capitoline Games at Rome (started 86 CE by Domitian).
+- **Chariot circuses** — Circus Maximus (Rome), Circus of Nero (Vatican area), Antioch circus, Carthage circus.
+
+Some overlap cities — pin them anyway; a great sanctuary is its own entity even if inside a city zone.
+
+#### 3h — Battlefields
+
+Not new in 117 CE (Trajan's Parthian campaigns are ongoing) but pin the famous ones as historical markers with a `battle` category. Even pre-Trajan sites are relevant — the empire has memory.
+
+- **Recent (still in living memory 117 CE):** Teutoburg (9 CE), Mons Graupius (83 CE), Sarmizegetusa (fall of Dacia, 106), Cremona battles (69, Year of Four Emperors), various Trajanic Dacian sites.
+- **Classical:** Cannae, Zama, Alesia, Pharsalus, Philippi, Actium.
+- **Traianic Parthian campaign is unfolding in 117** — Ctesiphon captured 116. Include with an `active` flag.
+
+#### 3i — Shipwrecks with cargo
+
+The Oxford Roman Economy Project catalogs ~1,600 known Roman shipwrecks. Each identifies a trade route. Show the biggest/most-famous.
+
+- Madrague de Giens (wine, 70 BCE — pre-snapshot but relevant).
+- Antikythera (60 BCE, mechanism ship).
+- Uluburun is Bronze Age — skip.
+- Comacchio (1st c. BCE, Adriatic).
+- Grado (Trajanic era).
+- La Roche Fouras (olive oil amphorae).
+
+Use a `shipwreck` category, muted blue, tiny anchor glyph.
+
+---
+
+**Where micro-POIs go:** `public/data/pois.geojson` (already used for empire-wide POIs). Point geometry, existing schema. LineStrings (aqueducts, frontier lines) go in `public/data/lines.geojson` (create if missing).
+
+**New POI categories may need new visual families** in `app/poiCategories.ts`. If it doesn't slot into the current 15, add one with a matching color + short glyph — keep the total under ~22 so the category chips row doesn't wrap.
 
 ---
 
