@@ -34,10 +34,10 @@ export default function Map() {
           version: 8,
           glyphs: "https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf",
           sources: {
-            land: { type: "geojson", maxzoom: 8, buffer: 128, tolerance: 1, data: land },
-            provinces: { type: "geojson", maxzoom: 8, buffer: 128, tolerance: 1, data: provinces },
-            lakes: { type: "geojson", maxzoom: 8, buffer: 128, tolerance: 1, data: lakes },
-            rivers: { type: "geojson", maxzoom: 8, buffer: 128, tolerance: 1, data: rivers },
+            land: { type: "geojson", maxzoom: 14, buffer: 128, tolerance: 0.375, data: land },
+            provinces: { type: "geojson", maxzoom: 14, buffer: 128, tolerance: 0.375, data: provinces },
+            lakes: { type: "geojson", maxzoom: 14, buffer: 128, tolerance: 0.375, data: lakes },
+            rivers: { type: "geojson", maxzoom: 14, buffer: 128, tolerance: 0.375, data: rivers },
           },
           layers: [
             { id: "bg", type: "background", paint: { "background-color": "#a9d1e3" } },
@@ -79,7 +79,7 @@ export default function Map() {
         center: [12.4964, 41.9028],
         zoom: 4.2,
         minZoom: 2.5,
-        maxZoom: 10,
+        maxZoom: 19,
         attributionControl: false,
         preserveDrawingBuffer: true,
         fadeDuration: 0,
@@ -123,7 +123,7 @@ export default function Map() {
         if (cancelled || !map) return;
 
         map.addSource("roads-secondary", {
-          type: "geojson", maxzoom: 8, buffer: 128, tolerance: 1, data: secondaryRoads,
+          type: "geojson", maxzoom: 14, buffer: 128, tolerance: 0.375, data: secondaryRoads,
         });
         map.addLayer({
           id: "roads-secondary",
@@ -139,7 +139,7 @@ export default function Map() {
         });
 
         map.addSource("roads-main", {
-          type: "geojson", maxzoom: 8, buffer: 128, tolerance: 1, data: mainRoads,
+          type: "geojson", maxzoom: 14, buffer: 128, tolerance: 0.375, data: mainRoads,
         });
         map.addLayer({
           id: "roads-main",
@@ -157,7 +157,7 @@ export default function Map() {
         // Phase 3: places (last, biggest).
         const places = await fetch("/data/places_medium.geojson").then((r) => r.json());
         if (cancelled || !map) return;
-        map.addSource("places", { type: "geojson", maxzoom: 8, buffer: 128, tolerance: 1, data: places });
+        map.addSource("places", { type: "geojson", maxzoom: 14, buffer: 128, tolerance: 0.375, data: places });
         map.addLayer({
           id: "places-dot",
           type: "circle",
@@ -318,6 +318,133 @@ export default function Map() {
           const hits = map.queryRenderedFeatures(e.point, { layers: ["pois-dot"] });
           if (hits.length === 0) clearPoi();
         });
+        kick();
+
+        // Phase 5: Ostia Antica street-level detail (1,266 building outlines + 251 park paths).
+        // Only visible at zoom 13+ so it doesn't pollute regional views.
+        const [ostiaBuildings, ostiaStreets] = await Promise.all([
+          fetch("/data/ostia_buildings.geojson").then((r) => r.json()),
+          fetch("/data/ostia_streets.geojson").then((r) => r.json()),
+        ]);
+        if (cancelled || !map) return;
+
+        map.addSource("ostia-buildings", {
+          type: "geojson",
+          maxzoom: 18,
+          buffer: 128,
+          tolerance: 0.25,
+          data: ostiaBuildings,
+        });
+        map.addSource("ostia-streets", {
+          type: "geojson",
+          maxzoom: 18,
+          buffer: 128,
+          tolerance: 0.25,
+          data: ostiaStreets,
+        });
+
+        // Street/path outlines inside the park
+        map.addLayer({
+          id: "ostia-streets",
+          type: "line",
+          source: "ostia-streets",
+          minzoom: 13,
+          paint: {
+            "line-color": "#8a6a3a",
+            "line-width": ["interpolate", ["linear"], ["zoom"], 13, 0.4, 17, 2],
+            "line-opacity": 0.6,
+          },
+        });
+
+        // Building fills — color-coded per category, Google-Maps-of-antiquity style.
+        map.addLayer({
+          id: "ostia-buildings-fill",
+          type: "fill",
+          source: "ostia-buildings",
+          minzoom: 13,
+          paint: {
+            "fill-color": [
+              "match",
+              ["get", "category"],
+              "bath", "#5aa3c8",
+              "temple", "#c94b4b",
+              "theater", "#7a4bc9",
+              "basilica", "#c9a24b",
+              "basilica_christian", "#a866d9",
+              "warehouse", "#8c6b3a",
+              "domus", "#d99a55",
+              "insula", "#e0b070",
+              "mithraeum", "#5f4a8c",
+              "fullery", "#4a9d6b",
+              "barracks", "#7a1f1f",
+              "taberna", "#c96b3a",
+              "tomb", "#5a5a5a",
+              "forum", "#c98d3a",
+              "plaza", "#e5c88c",
+              "medieval", "#9a9a9a",
+              "archaeological", "#c9b394",
+              "#b8a180",
+            ],
+            "fill-opacity": ["interpolate", ["linear"], ["zoom"], 13, 0.4, 16, 0.85],
+          },
+        });
+        map.addLayer({
+          id: "ostia-buildings-line",
+          type: "line",
+          source: "ostia-buildings",
+          minzoom: 13,
+          paint: {
+            "line-color": "#3b2a17",
+            "line-width": ["interpolate", ["linear"], ["zoom"], 13, 0.2, 17, 0.8],
+            "line-opacity": 0.75,
+          },
+        });
+
+        // Building labels at high zoom
+        map.addLayer({
+          id: "ostia-buildings-label",
+          type: "symbol",
+          source: "ostia-buildings",
+          minzoom: 15.5,
+          filter: ["all", ["has", "name"], ["!=", ["get", "category"], "archaeological"]],
+          layout: {
+            "text-field": ["get", "name"],
+            "text-font": ["Noto Sans Regular"],
+            "text-size": ["interpolate", ["linear"], ["zoom"], 15.5, 9, 18, 13],
+            "text-max-width": 8,
+            "text-optional": true,
+            "text-allow-overlap": false,
+          },
+          paint: {
+            "text-color": "#2a1e10",
+            "text-halo-color": "#f4ead5",
+            "text-halo-width": 1.4,
+          },
+        });
+
+        // Click a building → open the PoI panel with its info
+        map.on("click", "ostia-buildings-fill", (e) => {
+          const f = e.features?.[0];
+          if (!f) return;
+          const p: any = f.properties || {};
+          selectPoi({
+            id: `ostia-${p.osm_id}`,
+            name_latin: p.name || `Building ${p.osm_id}`,
+            name_english: p.name || undefined,
+            category: p.category || "archaeological",
+            notes: `${p.category === "archaeological" ? "Archaeological structure" : p.category} in Ostia Antica. Regio-Insula addressing from OpenStreetMap contributors.`,
+            sources: [p.source],
+            extant_117ce: p.category !== "medieval",
+            modern_location: "Ostia Antica, Italy",
+          } as any);
+        });
+        map.on("mouseenter", "ostia-buildings-fill", () => {
+          if (map) map.getCanvas().style.cursor = "pointer";
+        });
+        map.on("mouseleave", "ostia-buildings-fill", () => {
+          if (map) map.getCanvas().style.cursor = "";
+        });
+
         kick();
 
         // Apply any persisted Layers-panel visibility (all groups default visible).
