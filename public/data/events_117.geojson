@@ -1,0 +1,201 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [36.1613, 36.2023] },
+      "properties": {
+        "id": "event_hadrian_acclamation_antioch",
+        "name": "Hadrian acclaimed emperor at Antioch",
+        "date_iso": "117-08-11",
+        "one_line": "The legions at Antioch proclaimed Hadrian emperor on 11 August, the exact day this map is set — news of Trajan's death two days earlier having just reached the city.",
+        "sources": ["HA Hadr. 4.7", "https://en.wikipedia.org/wiki/Hadrian"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[20.0, 30.8], [24.5, 30.8], [24.5, 33.2], [20.0, 33.2], [20.0, 30.8]]]
+      },
+      "properties": {
+        "id": "event_kitos_war_cyrenaica",
+        "name": "Kitos War — Cyrenaica revolt",
+        "date_iso": "115/117",
+        "one_line": "Jewish rebels under Lukuas devastated Cyrenaica so thoroughly that Hadrian later had to send fresh colonists to resettle the depopulated province.",
+        "sources": ["Cass. Dio 68.32", "https://en.wikipedia.org/wiki/Kitos_War"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [29.9187, 31.2001] },
+      "properties": {
+        "id": "event_kitos_war_egypt",
+        "name": "Kitos War — Egypt suppression",
+        "date_iso": "116/117",
+        "one_line": "Marcius Turbo's combined land and naval force retook Alexandria from Lukuas's rebels and pacified the Egyptian countryside by autumn 117.",
+        "sources": ["Cass. Dio 68.32", "Eusebius, Hist. Eccl. 4.2", "https://en.wikipedia.org/wiki/Kitos_War"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [33.9036, 35.1856] },
+      "properties": {
+        "id": "event_kitos_war_cyprus",
+        "name": "Kitos War — Cyprus revolt at Salamis",
+        "date_iso": "116",
+        "one_line": "Jewish rebels under Artemion razed Salamis, the provincial capital of Cyprus, prompting Rome to ban Jews from the island afterward, even shipwreck survivors.",
+        "sources": ["Cass. Dio 68.32", "https://en.wikipedia.org/wiki/Kitos_War"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[41.5, 32.5], [45.5, 32.5], [45.5, 37.5], [41.5, 37.5], [41.5, 32.5]]]
+      },
+      "properties": {
+        "id": "event_kitos_war_mesopotamia",
+        "name": "Kitos War — Mesopotamia and Babylonia revolt",
+        "date_iso": "116/117",
+        "one_line": "Jewish communities across newly-conquered Mesopotamia rose against Rome in the rear of Trajan's Parthian campaign, and were suppressed by Lusius Quietus before he moved on to Judaea.",
+        "sources": ["Eusebius, Hist. Eccl. 4.2", "https://en.wikipedia.org/wiki/Lusius_Quietus"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [34.8854, 31.9515] },
+      "properties": {
+        "id": "event_kitos_war_lydda_siege",
+        "name": "Siege of Lydda",
+        "date_iso": "117",
+        "one_line": "Lusius Quietus besieged the Judaean town of Lydda, where rebels had gathered under Julianus and Pappus and Rabban Gamaliel II was trapped inside.",
+        "sources": ["https://www.jewishencyclopedia.com/articles/11897-pappus"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [34.8854, 31.9515] },
+      "properties": {
+        "id": "event_martyrs_of_lydda",
+        "name": "Execution of the Martyrs of Lydda",
+        "date_iso": "117",
+        "one_line": "Rebel leaders Julianus and Pappus were captured and executed at Lydda, remembered afterward in rabbinic sources as the \"slain of Lydda.\"",
+        "sources": ["https://www.jewishencyclopedia.com/articles/11897-pappus", "b. Ta'anit 18b"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [44.5800, 33.0936] },
+      "properties": {
+        "id": "event_parthian_ctesiphon_capture",
+        "name": "Trajan captures Ctesiphon",
+        "date_iso": "116",
+        "one_line": "Trajan took the Parthian capital Ctesiphon in 116, briefly installing a puppet king and forming the short-lived province of Mesopotamia.",
+        "sources": ["Cass. Dio 68.28", "https://en.wikipedia.org/wiki/Trajan%27s_Parthian_campaign"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[40.5, 32.0], [45.5, 32.0], [45.5, 36.5], [40.5, 36.5], [40.5, 32.0]]]
+      },
+      "properties": {
+        "id": "event_parthian_collapse_117",
+        "name": "Parthian War — Roman position collapses",
+        "date_iso": "117",
+        "one_line": "By 117 the failed siege of Hatra and renewed Parthian resistance had unraveled Trajan's conquests, and Rome's brief hold on Mesopotamia was already being abandoned as the emperor withdrew toward Syria.",
+        "sources": ["Cass. Dio 68.31", "https://en.wikipedia.org/wiki/Trajan%27s_Parthian_campaign"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [22.7873, 45.5130] },
+      "properties": {
+        "id": "event_dacia_sarmizegetusa_colonia",
+        "name": "Colonia Ulpia Traiana Augusta Dacica Sarmizegetusa founded",
+        "date_iso": "108/117",
+        "one_line": "The new provincial capital of Dacia, built from scratch after the 106 conquest and named for Trajan, was by 117 a going colonia with forum, amphitheater, and governor's palace.",
+        "sources": ["https://en.wikipedia.org/wiki/Ulpia_Traiana_Sarmizegetusa"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [23.1303, 46.3061] },
+      "properties": {
+        "id": "event_dacia_alburnus_maior_gold",
+        "name": "Gold rush at Alburnus Maior",
+        "date_iso": "106/117",
+        "one_line": "Illyrian colonists worked Rome's new Dacian gold mines at Alburnus Maior, the wealth that had driven Trajan's two Dacian wars in the first place.",
+        "sources": ["https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0006%3Aentry%3Dalburnus-maior"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.4444, 30.3285] },
+      "properties": {
+        "id": "event_nabataea_petra",
+        "name": "Petra under Roman rule",
+        "date_iso": "106",
+        "one_line": "The former Nabataean royal capital lost its political status when Trajan annexed the kingdom in 106, though it remained the province's religious center.",
+        "sources": ["https://en.wikipedia.org/wiki/Arabia_Petraea"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [36.4811, 32.5175] },
+      "properties": {
+        "id": "event_nabataea_bostra_capital",
+        "name": "Bostra made capital of Arabia Petraea",
+        "date_iso": "106",
+        "one_line": "Trajan made Bostra the new capital and legionary base of the province of Arabia Petraea after annexing the Nabataean kingdom in 106.",
+        "sources": ["https://en.wikipedia.org/wiki/Arabia_Petraea", "https://grokipedia.com/page/Bosra"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.4853, 41.8957] },
+      "properties": {
+        "id": "event_trajans_column_dedicated",
+        "name": "Trajan's Column dedicated",
+        "date_iso": "113-05-12",
+        "one_line": "The 30-meter marble column narrating the Dacian Wars in a spiraling relief was dedicated in Trajan's new forum on 12 May 113.",
+        "sources": ["https://en.wikipedia.org/wiki/Trajan%27s_Column"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.4867, 41.8958] },
+      "properties": {
+        "id": "event_trajans_forum_markets_dedicated",
+        "name": "Forum and Markets of Trajan dedicated",
+        "date_iso": "112-01",
+        "one_line": "Apollodorus of Damascus's vast new forum complex, funded by the spoils of the Dacian Wars, was dedicated in January 112 alongside its adjoining market halls.",
+        "sources": ["https://en.wikipedia.org/wiki/Trajan%27s_Forum", "https://en.wikipedia.org/wiki/Trajan%27s_Market"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.4661, 41.8908] },
+      "properties": {
+        "id": "event_aqua_traiana_opened",
+        "name": "Aqua Traiana opened",
+        "date_iso": "109",
+        "one_line": "Trajan's new aqueduct began delivering spring water from Lake Bracciano, 57 kilometers away, into the Trastevere district and the Janiculum in 109.",
+        "sources": ["https://en.wikipedia.org/wiki/Aqua_Traiana"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [36.1613, 36.2023] },
+      "properties": {
+        "id": "event_antioch_earthquake_115",
+        "name": "Antioch earthquake",
+        "date_iso": "115-12-13",
+        "one_line": "A massive earthquake leveled much of Antioch while Trajan was wintering there for the Parthian campaign, killing the consul Marcus Pedo Vergilianus and nearly the emperor himself.",
+        "sources": ["Cass. Dio 68.24-25", "https://en.wikipedia.org/wiki/115_Antioch_earthquake"]
+      }
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 import { useSyncExternalStore } from "react";
 import type { Map as MLMap } from "maplibre-gl";
 
-export type LayerGroupId = "roads" | "rivers" | "provinces" | "places" | "pois";
+export type LayerGroupId = "roads" | "rivers" | "provinces" | "places" | "pois" | "road-stations" | "living-empire";
 
 export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: string[] }[] = [
   { id: "roads", label: "Roads", mapLayerIds: ["roads-main", "roads-secondary"] },
@@ -11,6 +11,11 @@ export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: strin
   { id: "provinces", label: "Province borders", mapLayerIds: ["provinces-fill", "provinces-line"] },
   { id: "places", label: "Cities & towns", mapLayerIds: ["places-dot", "places-label-major", "places-label-minor"] },
   { id: "pois", label: "Landmarks", mapLayerIds: ["pois-dot", "pois-label"] },
+  { id: "road-stations", label: "Road stations", mapLayerIds: ["road-stations"] },
+  // People/event markers are HTML overlays (app/PeopleMarkers.tsx), not native map layers — that
+  // component reads this same group's boolean directly via useLayers() to decide whether to
+  // render. The native event layers still get their visibility applied the normal way.
+  { id: "living-empire", label: "117 CE — people & events", mapLayerIds: ["events-point", "events-polygon-fill", "events-polygon-line"] },
 ];
 
 type LayerState = Record<LayerGroupId, boolean>;

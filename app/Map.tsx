@@ -481,6 +481,140 @@ export default function Map() {
 
         kick();
 
+        // Phase 6: Road stations (mansiones/mutationes/stationes) — small square markers, dim
+        // gray, deliberately not shaped like the round POI pins so the road network's own rhythm
+        // reads distinctly from city/landmark POIs. Hover for name/road/distance tooltip.
+        const roadStations = await fetch("/data/road_stations.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && roadStations) {
+          const sq = 10;
+          const canvas = document.createElement("canvas");
+          canvas.width = sq;
+          canvas.height = sq;
+          const ctx2d = canvas.getContext("2d");
+          if (ctx2d) {
+            ctx2d.fillStyle = "#6b6f76";
+            ctx2d.fillRect(1, 1, sq - 2, sq - 2);
+            ctx2d.strokeStyle = "#f4ead5";
+            ctx2d.lineWidth = 1;
+            ctx2d.strokeRect(1, 1, sq - 2, sq - 2);
+            const imgData = ctx2d.getImageData(0, 0, sq, sq);
+            if (!map.hasImage("road-station-square")) {
+              map.addImage("road-station-square", { width: sq, height: sq, data: imgData.data });
+            }
+          }
+
+          map.addSource("road-stations", { type: "geojson", data: roadStations });
+          map.addLayer({
+            id: "road-stations",
+            type: "symbol",
+            source: "road-stations",
+            minzoom: 5,
+            layout: { "icon-image": "road-station-square", "icon-size": 1, "icon-allow-overlap": false },
+          });
+
+          const stationPopup = new maplibregl.Popup({ closeButton: false, closeOnClick: false, offset: 8 });
+          map.on("mouseenter", "road-stations", (e) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            // @ts-ignore
+            const coords = (f.geometry.type === "Point" && f.geometry.coordinates) || null;
+            if (!coords) return;
+            const distLine =
+              p.distance_from_previous_mp != null
+                ? `<div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(String(p.distance_from_previous_mp))} Roman mi from previous stop</div>`
+                : "";
+            stationPopup
+              .setLngLat(coords as [number, number])
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                   <div style="color:#5f6368; font-size:11px;">${escapeHtml(p.road || "")} · ${escapeHtml(p.category || "")}</div>
+                   ${distLine}
+                 </div>`,
+              )
+              .addTo(map);
+          });
+          map.on("mouseleave", "road-stations", () => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "";
+            stationPopup.remove();
+          });
+          kick();
+        }
+
+        // Phase 7: Events in 117 CE (public/data/events_117.geojson) — the year's news, drawn as
+        // point markers (a dedication, a death, a battle) and translucent polygons (a war front,
+        // a revolt zone). People markers are a separate HTML overlay, app/PeopleMarkers.tsx.
+        const events117 = await fetch("/data/events_117.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && events117) {
+          map.addSource("events-117", { type: "geojson", data: events117 });
+
+          map.addLayer({
+            id: "events-polygon-fill",
+            type: "fill",
+            source: "events-117",
+            filter: ["==", ["geometry-type"], "Polygon"],
+            paint: { "fill-color": "#a1442e", "fill-opacity": 0.15 },
+          });
+          map.addLayer({
+            id: "events-polygon-line",
+            type: "line",
+            source: "events-117",
+            filter: ["==", ["geometry-type"], "Polygon"],
+            paint: { "line-color": "#a1442e", "line-width": 1.2, "line-dasharray": [3, 2], "line-opacity": 0.7 },
+          });
+          map.addLayer({
+            id: "events-point",
+            type: "circle",
+            source: "events-117",
+            filter: ["==", ["geometry-type"], "Point"],
+            paint: {
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+              "circle-color": "#a1442e",
+              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-width": 1.6,
+            },
+          });
+
+          const eventPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          const onEventEnter = (e: any) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const dateLine = p.date_iso ? `<div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(String(p.date_iso))} CE</div>` : "";
+            const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.one_line)}</div>` : "";
+            const lngLat = e.lngLat;
+            eventPopup
+              .setLngLat(lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                   ${dateLine}
+                   ${noteLine}
+                 </div>`,
+              )
+              .addTo(map);
+          };
+          map.on("mouseenter", "events-point", onEventEnter);
+          map.on("mouseleave", "events-point", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          map.on("click", "events-polygon-fill", onEventEnter);
+          map.on("mouseenter", "events-polygon-fill", () => {
+            if (map) map.getCanvas().style.cursor = "pointer";
+          });
+          kick();
+        }
+
         // Apply any persisted Layers-panel visibility (all groups default visible).
         applyAllLayers();
       });
@@ -495,4 +629,10 @@ export default function Map() {
   }, []);
 
   return <div ref={ref} style={{ position: "absolute", inset: 0 }} />;
+}
+
+function escapeHtml(s: string): string {
+  return s.replace(/[&<>"']/g, (c) =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" } as any)[c],
+  );
 }

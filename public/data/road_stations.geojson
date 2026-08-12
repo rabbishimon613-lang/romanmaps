@@ -1,0 +1,627 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6165,
+          41.7666
+        ]
+      },
+      "properties": {
+        "id": "station_bovillae",
+        "category": "mansio",
+        "name": "Bovillae",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 11,
+        "identified": true,
+        "notes": "Bovillae stood 11 Roman miles from Rome on the Via Appia and was the first major stop travelers reached leaving the city. It was an old Latin League town and the seat of a cult the Julian family kept up because they claimed descent from its Alban founders.",
+        "sources": [
+          "Itin. Ant. (Roma-Aricia stage)",
+          "https://en.wikipedia.org/wiki/Bovillae"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6634,
+          41.7243
+        ]
+      },
+      "properties": {
+        "id": "station_aricia",
+        "category": "mansio",
+        "name": "Aricia",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 5,
+        "identified": true,
+        "notes": "Aricia sat at the 16th milestone of the Via Appia below the Alban Hills and marked the end of the road's first climb out of Rome. The town held the famous grove and lake sanctuary of Diana Nemorensis nearby and was a well-known overnight halt for travelers.",
+        "sources": [
+          "Itin. Ant. 16 m.p. ab Urbe",
+          "https://www.livius.org/articles/place/aricia/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8742823,
+          41.5616751
+        ]
+      },
+      "properties": {
+        "id": "station_tres_tabernae",
+        "category": "mansio",
+        "name": "Tres Tabernae",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 17,
+        "identified": true,
+        "notes": "Tres Tabernae, Three Taverns, sat 33 miles from Rome where the Via Appia met the branch road running up from Antium. The Book of Acts records that believers from Rome walked out to meet Paul here as he traveled to the city under guard.",
+        "sources": [
+          "Itin. Ant. 33 m.p. ab Urbe",
+          "https://pleiades.stoa.org/places/423106"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9937,
+          41.468
+        ]
+      },
+      "properties": {
+        "id": "station_forum_appii",
+        "category": "mansio",
+        "name": "Forum Appii",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Forum Appii stood 43 miles from Rome at the head of a canal that ran alongside the road through the Pontine Marshes. Horace described it as crowded with bargemen and overpriced innkeepers when he stopped there on his journey to Brundisium in 37 BCE.",
+        "sources": [
+          "Itin. Ant. 43 m.p. ab Urbe",
+          "https://en.wikipedia.org/wiki/Forum_Appii"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.24885,
+          41.291169
+        ]
+      },
+      "properties": {
+        "id": "station_terracina_anxur",
+        "category": "mansio",
+        "name": "Tarracina (Anxur)",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Tarracina, called Anxur by the Volscians who built it, occupied a limestone bluff overlooking the point where the Via Appia rejoined the coast after the Pontine Marshes crossing. A temple to Jupiter Anxur crowned the height above the town and the harbor, later improved under Trajan, served coastal traffic.",
+        "sources": [
+          "Itin. Ant. 61 m.p. ab Urbe",
+          "https://pleiades.stoa.org/places/433143"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.43237,
+          41.355167
+        ]
+      },
+      "properties": {
+        "id": "station_fundi",
+        "category": "mansio",
+        "name": "Fundi",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Fundi sat on a shelf of the Via Appia above the Fondi plain, sixteen miles beyond Tarracina by the itinerary's count. Horace and Martial both mention it as a stop on the road south, and the town later supplied its own line of Roman consuls.",
+        "sources": [
+          "Itin. Ant. 77 m.p. ab Urbe",
+          "https://pleiades.stoa.org/places/432855"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.605914,
+          41.256351
+        ]
+      },
+      "properties": {
+        "id": "station_formiae",
+        "category": "mansio",
+        "name": "Formiae",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 13,
+        "identified": true,
+        "notes": "Formiae lay on the Gulf of Gaeta and served travelers on the Via Appia as well as wealthy Romans who built villas along its shore. Cicero owned a villa here and was murdered nearby in 43 BCE while trying to flee by sea.",
+        "sources": [
+          "Itin. Ant. 90 m.p. ab Urbe",
+          "https://en.wikipedia.org/wiki/Formia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.76846,
+          41.24197
+        ]
+      },
+      "properties": {
+        "id": "station_minturnae",
+        "category": "mansio",
+        "name": "Minturnae",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Minturnae stood where the Via Appia crossed the Liris river on a bridge just above the ancient port, and Rome planted a citizen colony there in 296 BCE to hold the crossing. The forum, theater, and baths uncovered at the site show a substantial road town rather than a simple waystop.",
+        "sources": [
+          "Itin. Ant. 99 m.p. ab Urbe",
+          "https://pleiades.stoa.org/places/438787"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.9122,
+          41.1226
+        ]
+      },
+      "properties": {
+        "id": "station_sinuessa",
+        "category": "mansio",
+        "name": "Sinuessa",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Sinuessa marked the point where the Via Appia left the Tyrrhenian coast for good and turned inland toward Capua. Its inn, the Tabernae Caediciae, was well known enough that Horace mentioned staying there, and the town's warm sulfur springs drew visitors on top of road traffic.",
+        "sources": [
+          "Itin. Ant. 108 m.p. ab Urbe",
+          "https://topostext.org/place/411139USin"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0315,
+          41.1151
+        ]
+      },
+      "properties": {
+        "id": "station_pons_campanus",
+        "category": "mutatio",
+        "name": "Pons Campanus",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 9,
+        "identified": false,
+        "notes": "Pons Campanus carried the Via Appia over the Savone stream on the stretch between Sinuessa and Casilinum. No excavated remains have been tied to it with certainty, so this point is placed by interpolating along the known road corridor between its two identified neighbors.",
+        "sources": [
+          "Itin. Ant. (Sinuessa-Capua stage)",
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry%3Dvia-appia-geo"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1508,
+          41.1076
+        ]
+      },
+      "properties": {
+        "id": "station_ad_octavum",
+        "category": "mutatio",
+        "name": "Ad Octavum",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 9,
+        "identified": false,
+        "notes": "Ad Octavum took its name from standing at the eighth Roman milestone out of Capua on the Via Appia toward Sinuessa. Its exact spot has not been pinned down archaeologically, so it is placed here by that mile-marker distance along the known road corridor.",
+        "sources": [
+          "Itin. Ant. (Sinuessa-Capua stage)",
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry%3Dvia-appia-geo"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2170763,
+          41.1034594
+        ]
+      },
+      "properties": {
+        "id": "station_casilinum",
+        "category": "vicus",
+        "name": "Casilinum",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 5,
+        "identified": true,
+        "notes": "Casilinum sat three miles northwest of Capua where the Via Appia crossed the Volturnus river and met the Via Latina coming down from the north. Hannibal besieged the town in 216 BCE and its garrison held out on a starvation diet until Roman relief broke through the following year.",
+        "sources": [
+          "Itin. Ant. (Sinuessa-Capua stage)",
+          "https://pleiades.stoa.org/places/432763"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.3625,
+          41.0439
+        ]
+      },
+      "properties": {
+        "id": "station_calatia",
+        "category": "statio",
+        "name": "Calatia",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 6,
+        "identified": true,
+        "notes": "Calatia stood six miles southeast of Capua on the Via Appia at the point where the road to Beneventum bent east toward the mountains. Its history ran alongside Capua's own and it lost its independent status once Rome brought the region firmly under control.",
+        "sources": [
+          "Itin. Ant. (Capua-Beneventum stage)",
+          "https://topostext.org/place/410144UCal"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.641278,
+          41.06414
+        ]
+      },
+      "properties": {
+        "id": "station_caudium",
+        "category": "mansio",
+        "name": "Caudium",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 15,
+        "identified": true,
+        "notes": "Caudium controlled the narrow pass of the Caudine Forks, where a Roman army was trapped and forced under the yoke by the Samnites in 321 BCE. By the imperial period it was a regular mansio on the Via Appia, 21 miles from Capua and 11 from Beneventum.",
+        "sources": [
+          "Itin. Ant. (Capua-Beneventum stage)",
+          "https://pleiades.stoa.org/places/432773"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.9294,
+          41.088
+        ]
+      },
+      "properties": {
+        "id": "station_ad_calorem",
+        "category": "mutatio",
+        "name": "Ad Calorem",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 10,
+        "identified": false,
+        "notes": "Ad Calorem stood where the Via Appia crossed the Calore river ten miles out of Beneventum on the way to Aeclanum, at a bridge later called Ponte Appiano. No confirmed find marks the station itself, so it is placed here along the known road corridor at its recorded mile distance.",
+        "sources": [
+          "Itin. Ant. 120 (Beneventum-Aeclanum stage)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.0050312,
+          41.0503026
+        ]
+      },
+      "properties": {
+        "id": "station_aeclanum",
+        "category": "mansio",
+        "name": "Aeclanum",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 5,
+        "identified": true,
+        "notes": "Aeclanum was the chief town of the Hirpini and stood 15 miles from Beneventum on the Via Appia's route toward Venusia and Tarentum. The emperor Trajan had the stretch of road between the two towns repaired, and the site today is an open archaeological park at Passo di Mirabella.",
+        "sources": [
+          "Itin. Ant. 120 (Beneventum-Tarentum stage)",
+          "https://pleiades.stoa.org/places/442451"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.4245616,
+          41.052268
+        ]
+      },
+      "properties": {
+        "id": "station_sub_romula",
+        "category": "statio",
+        "name": "Sub Romula",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 21,
+        "identified": true,
+        "notes": "Sub Romula was the next stage on the Via Appia after Aeclanum, 21 miles along the road toward the Ofanto crossing and Venusia. Scholars place it at modern Lacedonia, identified in Pleiades as ancient Aquilonia, on the Samnite border in the hill country east of Aeclanum.",
+        "sources": [
+          "Itin. Ant. 120 (Beneventum-Tarentum stage)",
+          "https://pleiades.stoa.org/places/442471"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.554295,
+          41.019689
+        ]
+      },
+      "properties": {
+        "id": "station_pons_aufidi",
+        "category": "mutatio",
+        "name": "Pons Aufidi",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 22,
+        "identified": true,
+        "notes": "Pons Aufidi carried the Via Appia over the Aufidus river, today's Ofanto, on the last stretch before Venusia. Both the Peutinger Table and the Antonine Itinerary record the crossing, and it has traditionally been identified with the bridge known as Ponte San Venere, though some recent surveys favor a Roman bridge further south instead.",
+        "sources": [
+          "Itin. Ant. 120 (Beneventum-Tarentum stage)",
+          "https://pleiades.stoa.org/places/442727"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8272682,
+          40.9688992
+        ]
+      },
+      "properties": {
+        "id": "station_venusia",
+        "category": "mansio",
+        "name": "Venusia",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 19,
+        "identified": true,
+        "notes": "Venusia became a Latin colony in 291 BCE after Rome's victory in the Third Samnite War and grew into a major stop on the Via Appia, 77 miles out of Beneventum by the itinerary's count. The poet Horace was born there in 65 BCE, the son of a freedman auctioneer.",
+        "sources": [
+          "Itin. Ant. 120 (Beneventum-Tarentum stage)",
+          "https://pleiades.stoa.org/places/442847"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3998,
+          40.8196
+        ]
+      },
+      "properties": {
+        "id": "station_silvium",
+        "category": "mansio",
+        "name": "Silvium",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "Silvium was the first stage the Via Appia reached after Venusia on the direct route toward Tarentum, sited on the high ground near modern Gravina in Puglia. Recent fieldwork by Luciano Piepoli has proposed pinning the station more precisely to the Santo Staso area just outside Gravina rather than the older Botromagno identification.",
+        "sources": [
+          "Itin. Ant. 121 (Beneventum-Tarentum stage)",
+          "https://www.wikidata.org/wiki/Q3974278"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.6193,
+          40.7388
+        ]
+      },
+      "properties": {
+        "id": "station_blera_apulia",
+        "category": "statio",
+        "name": "Blera",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 13,
+        "identified": false,
+        "notes": "Blera was a station on the Apulian stretch of the Via Appia, 13 miles beyond Silvium on the way to Tarentum. Its site has not been securely fixed on the ground, though Luciano Piepoli's fieldwork has proposed the masseria Castello locality as a candidate, so this point is interpolated along the known road corridor.",
+        "sources": [
+          "Itin. Ant. 121.4",
+          "https://www.academia.edu/30258300"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8385,
+          40.6543
+        ]
+      },
+      "properties": {
+        "id": "station_sub_lupatia",
+        "category": "statio",
+        "name": "Sub Lupatia",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 14,
+        "identified": false,
+        "notes": "Sub Lupatia followed Blera on the Via Appia's Apulian stretch, 14 miles further toward Tarentum. Luciano Piepoli's fieldwork has proposed the masseria Caione locality as its site, but without a secure identification this point is interpolated along the known road corridor.",
+        "sources": [
+          "Itin. Ant. 121.5",
+          "https://www.academia.edu/30258300"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.0419,
+          40.5761
+        ]
+      },
+      "properties": {
+        "id": "station_canales",
+        "category": "statio",
+        "name": "Canales",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 13,
+        "identified": false,
+        "notes": "Canales was the last named stage of the Via Appia before Tarentum, 13 miles beyond Sub Lupatia. Its exact site remains unfixed, so this point is interpolated along the known road corridor between Sub Lupatia and Tarentum.",
+        "sources": [
+          "Itin. Ant. 121 (Beneventum-Tarentum stage)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.228553,
+          40.476034
+        ]
+      },
+      "properties": {
+        "id": "station_tarentum",
+        "category": "vicus",
+        "name": "Tarentum",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "Tarentum was the great Greek colony of Magna Graecia on the gulf that bore its name, and the Via Appia reached it 157 miles out of Beneventum by the itinerary's reckoning. From here the road turned east across the heel of Italy toward Brundisium.",
+        "sources": [
+          "Itin. Ant. 121 (Beneventum-Tarentum stage, 157 m.p.)",
+          "https://en.wikipedia.org/wiki/Taranto"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.642349,
+          40.497834
+        ]
+      },
+      "properties": {
+        "id": "station_uria",
+        "category": "mansio",
+        "name": "Uria",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "Uria, modern Oria, was a Messapian town the Via Appia passed through on its way from Tarentum to Brundisium, a stretch the itinerary gives as 44 miles in total. The split of that total between Tarentum and Uria is estimated here from the towns' known positions, since the itinerary records only the combined figure.",
+        "sources": [
+          "Itin. Ant. 119 (Tarentum-Brundisium ad latus, 44 m.p.)",
+          "https://pleiades.stoa.org/places/442839"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.946867,
+          40.641136
+        ]
+      },
+      "properties": {
+        "id": "station_brundisium",
+        "category": "vicus",
+        "name": "Brundisium",
+        "road": "Via Appia",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "Brundisium was the Via Appia's terminus and Rome's principal naval harbor on the Adriatic, reached from Tarentum by 44 miles of road according to the itinerary. Its double-armed natural harbor made it the standard crossing point to Greece and the eastern provinces, and Horace's own journey along this road, described in his Satires, ended here.",
+        "sources": [
+          "Itin. Ant. 119 (Tarentum-Brundisium ad latus, 44 m.p.)",
+          "https://en.wikipedia.org/wiki/Brindisi"
+        ],
+        "confidence": "high"
+      }
+    }
+  ]
+}
