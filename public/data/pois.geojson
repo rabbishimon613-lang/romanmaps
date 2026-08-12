@@ -2733,6 +2733,769 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.1352,
+          47.7314
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_i_adiutrix_brigetio",
+        "category": "fort",
+        "name_latin": "Castra Brigetio",
+        "name_english": "Fortress of Legio I Adiutrix (Brigetio)",
+        "province": "Pannonia Superior",
+        "modern_location": "Szőny district, Komárom, Hungary",
+        "built": 92,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio I Adiutrix ('Loyal and Faithful'), raised by Nero/Galba from Ravenna fleet marines in 68 CE, was moved from Moguntiacum (Mainz) to Pannonia c. 86-92 CE under Domitian and Brigetio became its long-term home (into the 4th c.). CAVEAT: the legion fought in Trajan's Dacian and Parthian Wars (101-106, 114-117), and multiple sources state it was 'sent back to Pannonia, with base in Brigetio' specifically by Hadrian after Trajan's death (r. from 8 Aug 117) — meaning that at the exact 117 CE snapshot the legion itself was very likely still with the field army in the East (Syria/Mesopotamia/Cappadocia, exact camp unattested) or in transit, only physically reoccupying Brigetio c. 118 CE. Brigetio's garrison in 117 CE proper was Legio XXX Ulpia Victrix (see separate entry), which held the fortress from 105 until it ceded it to the returning I Adiutrix and moved to Vetera in 122. Pinned here as I Adiutrix's essentially-continuous permanent fortress (pre- and post-Parthian War) with the transfer gap flagged.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Legio_I_Adiutrix",
+          "https://www.worldhistory.org/Legio_I_Adiutrix/",
+          "https://www.livius.org/articles/legion/legio-i-adiutrix/ (cross-referenced via search synthesis, direct fetch blocked)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.0947,
+          50.7359
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_i_minervia_bonna",
+        "category": "fort",
+        "name_latin": "Castra Bonnensia",
+        "name_english": "Fortress of Legio I Minervia (Bonna)",
+        "province": "Germania Inferior",
+        "modern_location": "Bonn, Germany",
+        "built": 83,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio I Minervia was levied by Domitian in 82-83 CE for the Chattian War and based at Bonna (Bonn) from its founding; it remained the legion's home fortress for the rest of its existence (with a brief detachment fighting for Trajan in the Dacian Wars). The legion's legate c. 101-106 CE was the future emperor Hadrian. By 117 CE the legion had long since returned to and was firmly garrisoned at Bonna.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Legio_I_Minervia",
+          "https://www.livius.org/articles/legion/legio-i-minervia/ (cross-referenced via search synthesis)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.3936,
+          43.6203
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_i_italica_novae",
+        "category": "fort",
+        "name_latin": "Castra Novae",
+        "name_english": "Fortress of Legio I Italica (Novae)",
+        "province": "Moesia Inferior",
+        "modern_location": "near Svishtov, Bulgaria",
+        "built": 69,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio I Italica, raised by Nero in 66-67 CE from Italian recruits, was posted to Novae on the lower Danube by Vespasian in 69-70 CE and remained there for the rest of its long service (into the 5th century). Its timber-and-earth camp was rebuilt in stone during the Trajanic period (98-117 CE), so by the 117 CE snapshot the legion occupied a substantially stone fortress. Detachments served in Trajan's Dacian and Parthian campaigns, but the main base stayed at Novae throughout.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Novae_(fortress)",
+          "https://canabaenovae.wordpress.com/novae/legio-i-italica/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0508,
+          47.5651
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_ii_adiutrix_aquincum",
+        "category": "fort",
+        "name_latin": "Castra Aquincum",
+        "name_english": "Fortress of Legio II Adiutrix (Aquincum)",
+        "province": "Pannonia Inferior",
+        "modern_location": "Óbuda, Budapest, Hungary",
+        "built": 106,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio II Adiutrix, like I Adiutrix raised from fleet marines (68-70 CE), fought in Trajan's Dacian Wars based temporarily at Singidunum, then was permanently transferred to Aquincum in 106 CE once the new province of Pannonia Inferior was organized, becoming that province's senior garrison and the anchor of what grew into Aquincum's civilian town (later Pannonia Inferior's capital). Its earlier wood-and-earth camp was under stone reconstruction during Hadrian's reign, begun essentially at the 117 CE snapshot.",
+        "sources": [
+          "https://military-history.fandom.com/wiki/Legio_II_Adiutrix",
+          "https://www.ancient-history-sites.com/sites/aquincum/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.958,
+          51.6117
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_ii_augusta_isca",
+        "category": "fort",
+        "name_latin": "Isca Augusta",
+        "name_english": "Fortress of Legio II Augusta (Caerleon)",
+        "province": "Britannia",
+        "modern_location": "Caerleon, Newport, Wales, UK",
+        "built": -70,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio II Augusta, one of Claudius's original invasion legions of 43 CE, moved to a new purpose-built fortress at Isca Silurum (Caerleon) in South Wales c. 74-75 CE under governor Sextus Julius Frontinus, replacing timber defenses in stone c. 99-100 CE per a Trajanic building inscription. The legion was still garrisoned there in 117 CE and would remain for roughly two more centuries.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Isca_Augusta",
+          "https://www.roman-britain.co.uk/places/isca_silurum/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.171,
+          32.5715
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_ii_traiana_fortis_caparcotna",
+        "category": "fort",
+        "name_latin": "Castra apud Caparcotna",
+        "name_english": "Camp of Legio II Traiana Fortis (Judaea)",
+        "province": "Iudaea",
+        "modern_location": "Kefar 'Otnay / Legio junction, near Megiddo, Israel",
+        "built": 117,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio II Traiana Fortis was raised by Trajan c. 101-105 CE for the Dacian Wars and fought in his Parthian campaign (114-117). Multiple sources place it 'in Iudaea, to ensure peace' specifically in 117 CE, immediately after the Kitos War/Jewish diaspora revolt (115-117) — i.e. present in the same province, and very plausibly the same Jezreel Valley camp at Caparcotna/Legio, as VI Ferrata (see that entry) during this transitional year. GENUINE UNCERTAINTY: the legion's permanent post-117 home was Nicopolis near Alexandria, Egypt, but sources disagree on whether it arrived there by c. 119-120 or only by 125 CE. Pinned here at the Judaean camp for the 117 CE snapshot specifically, distinct from its later Egyptian base (not shown, since it postdates 117).",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Legio_II_Traiana_Fortis",
+          "https://www.worldhistory.org/article/1943/legions-of-judea/",
+          "http://cogito.ucdc.ro/n4e/LEGIO-II-TRAIANA-FORTIS-AND-JUDAEA-UNDER-HADRIAN-REIGN.pdf (Radu Urloiu)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2611,
+          35.4936
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_iii_augusta_lambaesis",
+        "category": "fort",
+        "name_latin": "Castra Lambaesis",
+        "name_english": "Fortress of Legio III Augusta (Lambaesis)",
+        "province": "Africa Proconsularis (Numidia military district)",
+        "modern_location": "Tazoult-Lambèse, Algeria",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "CORRECTION TO INITIAL BRIEF: III Augusta's base in 117 CE was Lambaesis, not Theveste. The legion was transferred from Ammaedara to Theveste under Vespasian (75 CE), then Trajan relocated it further into the Aurès foothills to Lambaesis c. 100 CE for better control of Berber/Musulamian tribal territory — a full generation before 117. The famous monumental stone camp visible today (and Hadrian's personal 128 CE address to the assembled troops, recorded on the 'Adlocutio' inscription) reflects a Hadrianic rebuilding in stone (123-129 CE) of an already-occupied Trajanic-era timber/earth base, so the legion was present at Lambaesis, just not yet in its famous stone form, at the 117 CE snapshot.",
+        "sources": [
+          "https://www.ancient-history-sites.com/sites/lambaesis/",
+          "https://followinghadrianphotography.com/2025/01/26/lambaesis/",
+          "https://en.wikipedia.org/wiki/Legio_III_Augusta"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.4817,
+          32.5177
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_iii_cyrenaica_bostra",
+        "category": "fort",
+        "name_latin": "Castra Bostra",
+        "name_english": "Fortress of Legio III Cyrenaica (Bostra)",
+        "province": "Arabia",
+        "modern_location": "Bosra, Syria",
+        "built": 106,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio III Cyrenaica moved from Egypt to garrison the newly annexed province of Arabia (106 CE) after Trajan's peaceful annexation of the Nabataean kingdom, founding a fortress at Bostra, the new provincial capital. GENUINE UNCERTAINTY FOR THE 117 CE SNAPSHOT: sources indicate the legion (or a large detachment) was pulled back to Egypt around 116-117 CE to help suppress the Kitos War/Jewish diaspora revolt, is attested together with XXII Deiotariana in Egypt in 119 CE, and only clearly returned to Bostra c. 120-127 CE. It is therefore genuinely unclear whether the legion's main body was physically at Bostra or in Egypt at the exact moment of Trajan's death in August 117. Pinned at Bostra as its official provincial post (both immediately before and after this disruption).",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Legio_III_Cyrenaica",
+          "https://www.livius.org/articles/legion/legio-iii-cyrenaica/ (cross-referenced via search synthesis)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.3727,
+          34.9263
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_iii_gallica_raphanaea",
+        "category": "fort",
+        "name_latin": "Raphanaea",
+        "name_english": "Fortress of Legio III Gallica (Raphanaea)",
+        "province": "Syria",
+        "modern_location": "Rafniye, Hama Governorate, Syria",
+        "built": -30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio III Gallica, an old Caesarian-era legion long stationed in Syria, was based at Raphanaea (modern Rafniye) in the Orontes valley through the late Republic and into the imperial period, continuing under Trajan and Hadrian. The site is only lightly excavated (limited visible remains, walled-enclosure traces from 1930s aerial survey), so the coordinate is a settlement-level approximation rather than an excavated principia point.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Raphanea",
+          "https://topostext.org/place/349364URap",
+          "https://www.livius.org/articles/legion/legio-iii-gallica/ (cross-referenced via search synthesis)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4487,
+          44.8225
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_iv_flavia_felix_singidunum",
+        "category": "fort",
+        "name_latin": "Castra Singidunum",
+        "name_english": "Fortress of Legio IV Flavia Felix (Singidunum)",
+        "province": "Moesia Superior",
+        "modern_location": "Kalemegdan, Belgrade, Serbia",
+        "built": 86,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio IV Flavia Felix was raised by Vespasian in 70 CE from the cadre of the disbanded IV Macedonica, and was moved to Singidunum (modern Belgrade) by Domitian in 86 CE to shore up the Danube frontier after the Dacian invasion that destroyed V Alaudae. It remained Singidunum's garrison through 117 CE and for centuries after (into the 5th century).",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Legio_IV_Flavia_Felix",
+          "https://military-history.fandom.com/wiki/Legio_IV_Flavia_Felix"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.8658,
+          37.0586
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_iv_scythica_zeugma",
+        "category": "fort",
+        "name_latin": "Castra Zeugma",
+        "name_english": "Fortress of Legio IV Scythica (Zeugma)",
+        "province": "Syria",
+        "modern_location": "Belkis, Gaziantep Province, Turkey",
+        "built": 66,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio IV Scythica was stationed at Zeugma, guarding the strategic Euphrates crossing on the Syria-Parthia frontier, from 66 CE onward for roughly a century, including through Trajan's Parthian War (114-117), in which the legion took part. Recent excavation (Zeugma archaeological project) places the actual legionary camp on the plateau west of the town proper (the 'Meydani' sector), rather than directly on the riverbank city site itself; the point given here marks the town/site as commonly plotted, with that camp-vs-town nuance noted.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Legio_IV_Scythica",
+          "https://www.academia.edu/47569170/The_Roman_Army_at_Zeugma_recent_research_results"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.1951,
+          45.1432
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_v_macedonica_troesmis",
+        "category": "fort",
+        "name_latin": "Castra Troesmis",
+        "name_english": "Fortress of Legio V Macedonica (Troesmis)",
+        "province": "Moesia Inferior",
+        "modern_location": "Turcoaia (Iglița), Tulcea County, Romania",
+        "built": 107,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio V Macedonica, veteran of Trajan's Dacian Wars, was transferred to Troesmis on the lower Danube in 107 CE to guard against the Roxolani Sarmatians and the Black Sea Greek cities' hinterland. It remained based there through 117 CE and until the 160s, though a vexillation was sent east for Trajan's Parthian campaign (115-117).",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Troesmis",
+          "https://www.livius.org/articles/legion/legio-v-macedonica/ (cross-referenced via search synthesis)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1703,
+          32.5722
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_vi_ferrata_caparcotna",
+        "category": "fort",
+        "name_latin": "Castra apud Caparcotna",
+        "name_english": "Fortress of Legio VI Ferrata (Legio/Caparcotna)",
+        "province": "Iudaea",
+        "modern_location": "Legio/Kefar 'Otnay, near Megiddo Junction, Israel",
+        "built": 117,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio VI Ferrata was brought into Judaea as its second permanent legion (alongside X Fretensis at Jerusalem) in the aftermath of the Kitos War, founding a camp on a hill above the Jezreel Valley near Kefar 'Otnay/Caparcotna (which gave the later settlement its name, 'Legio', and eventually modern Lajjun/Megiddo). Sources consistently cite 117 CE for this establishment, though the user's brief flags — and archaeological/epigraphic work (Tel Aviv University/Jezreel Valley Regional Project excavations) leaves open — that the stone fortress construction and full garrison strength may date slightly later, c. 117-120 CE, into Hadrian's reign. May have briefly overlapped in the area with II Traiana Fortis (see separate entry) during this same transitional year before that legion moved on toward Egypt.",
+        "sources": [
+          "https://popular-archaeology.com/article/the-legionary-base-of-the-roman-sixth-ferrata-legion-at-legio-israel/",
+          "https://www.biblicalarchaeology.org/daily/biblical-sites-places/biblical-archaeology-sites/legio/",
+          "https://www.worldhistory.org/article/1943/legions-of-judea/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4515,
+          51.6672
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_vi_victrix_vetera",
+        "category": "fort",
+        "name_latin": "Vetera II",
+        "name_english": "Fortress of Legio VI Victrix (Vetera)",
+        "province": "Germania Inferior",
+        "modern_location": "Birten, near Xanten, Germany",
+        "built": 71,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio VI Victrix moved from its older camp at Novaesium (Neuss) to the single-legion fortress Vetera II near Xanten around the turn of the 1st/2nd century CE, and was still garrisoned there in 117 CE, forming (with X Gemina) the backbone of the lower Rhine defense. It stayed at Vetera II until 122 CE, when Hadrian personally brought it to Britain to help build Hadrian's Wall, at which point XXX Ulpia Victrix took over Vetera II — a transfer that postdates this map's 117 CE snapshot, so VI Victrix (not XXX Ulpia Victrix) is the correct 117 CE occupant of this site.",
+        "sources": [
+          "https://www.roemercohorte.de/en/history/legio-vi-victrix",
+          "https://en.wikipedia.org/wiki/Vetera"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.2214,
+          44.7369
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_vii_claudia_viminacium",
+        "category": "fort",
+        "name_latin": "Castra Viminacium",
+        "name_english": "Fortress of Legio VII Claudia (Viminacium)",
+        "province": "Moesia Superior",
+        "modern_location": "near Kostolac, Serbia",
+        "built": 86,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio VII Claudia had been in the Moesian theatre since the mid-1st century and became the fixed garrison and namesake military anchor of Viminacium once Domitian split Moesia into two provinces in 86 CE, with Viminacium as Moesia Superior's capital and governor's seat. The legion was still there in 117 CE (Viminacium was elevated toward municipium status right around Hadrian's accession) and remained for centuries.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Legio_VII_Claudia",
+          "https://en.wikipedia.org/wiki/Viminacium"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7455,
+          48.5839
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_viii_augusta_argentorate",
+        "category": "fort",
+        "name_latin": "Argentorate",
+        "name_english": "Fortress of Legio VIII Augusta (Argentorate)",
+        "province": "Germania Superior",
+        "modern_location": "Strasbourg, France",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio VIII Augusta was permanently stationed at Argentorate (Strasbourg), guarding a key Rhine crossing, from c. 90 CE and remained there for over three centuries. By 117 CE the fortress's defenses were being reinforced as part of Hadrian's broader consolidation of the German limes.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Argentoratum",
+          "https://www.livius.org/articles/legion/legio-viii-augusta/ (cross-referenced via search synthesis)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0873,
+          53.96
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_ix_hispana_eboracum",
+        "category": "fort",
+        "name_latin": "Eboracum",
+        "name_english": "Fortress of Legio IX Hispana (York)",
+        "province": "Britannia",
+        "modern_location": "York, England, UK",
+        "built": 71,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio IX Hispana founded the legionary fortress at Eboracum (York) in 71 CE and was recorded rebuilding it in stone in 107-108 CE. It was still based there in 117 CE; a later, much-debated tradition (going back to Mommsen) has the legion wiped out fighting a Brigantian/Caledonian uprising around 117-120 CE, but this is now widely doubted — inscriptions from Nijmegen suggest elements of IX Hispana were redeployed to the Rhine by c. 120 CE rather than destroyed, with the legion's actual disappearance from the record more plausibly explained by later events (a Rhine posting, or loss during the Parthian War of Lucius Verus or the Bar Kokhba Revolt). FLAGGED PER BRIEF: this entry reflects only the well-attested 117 CE status (still garrisoned at York); its subsequent fate is a genuine, unresolved scholarly dispute, not a 117 CE fact.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Legio_IX_Hispana",
+          "https://www.heritagedaily.com/2020/10/legio-ix-hispana-the-lost-roman-legion/135890",
+          "https://militaryhistorynow.com/2021/03/21/the-missing-legion-romes-lego-ix-hispana-disappears-from-history-in-the-2nd-century-ad-was-it-wiped-out-in-britain/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.227,
+          31.7739
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_x_fretensis_jerusalem",
+        "category": "fort",
+        "name_latin": "Castra Hierosolyma",
+        "name_english": "Fortress of Legio X Fretensis (Jerusalem)",
+        "province": "Iudaea",
+        "modern_location": "Old City (Armenian Quarter/Citadel area), Jerusalem",
+        "built": 70,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio X Fretensis garrisoned the ruins of Jerusalem continuously from the city's destruction in 70 CE, encamped on the southwestern hill (the former Herodian Upper City), incorporating the Phasael/Hippicus/Mariamne towers of Herod's palace into its camp wall. It was still Jerusalem's sole legionary garrison in 117 CE; the refoundation of the city as the colony Aelia Capitolina is usually dated c. 130 CE under Hadrian (one late source, Epiphanius, gives 117, but mainstream scholarship treats that as a chronological error), so at the 117 CE snapshot this is still a legionary camp on Jerusalem's ruins, not yet the colonia.",
+        "sources": [
+          "https://www.cambridge.org/core/books/rome-an-empire-of-many-nations/camp-of-the-legion-x-fretensis-and-the-starting-point-of-aelia-capitolina/AF8DA85224D4C1F7AC1A180A2CA7B3E3",
+          "https://www.worldhistory.org/article/1943/legions-of-judea/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3728,
+          48.2094
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_x_gemina_vindobona",
+        "category": "fort",
+        "name_latin": "Vindobona",
+        "name_english": "Fortress of Legio X Gemina (Vindobona)",
+        "province": "Pannonia Superior",
+        "modern_location": "Vienna city center (Hoher Markt area), Austria",
+        "built": 114,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio X Gemina, long stationed at Noviomagus (Nijmegen) in Germania Inferior (71-103 CE), was transferred east to Aquincum in 103 CE and then to a new permanent fortress at Vindobona (Vienna) in 114 CE, where it remained the garrison through 117 CE and for centuries afterward, anchoring the Danube frontier opposite the Marcomanni and Quadi.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Legio_X_Gemina",
+          "https://www.livius.org/articles/place/vindobona-vienna/ (cross-referenced via search synthesis)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2622,
+          44.1175
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_xi_claudia_durostorum",
+        "category": "fort",
+        "name_latin": "Castra Durostorum",
+        "name_english": "Fortress of Legio XI Claudia (Durostorum)",
+        "province": "Moesia Inferior",
+        "modern_location": "Silistra, Bulgaria",
+        "built": 106,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio XI Claudia was transferred to Durostorum on the lower Danube between 104 and 114 CE (sources vary on the exact year within that window, but agree it predates 117), evacuating Brigetio for XXX Ulpia Victrix in the process. It remained Durostorum's garrison through 117 CE and for roughly three more centuries, guarding the Danube against the Getae/Roxolani.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Legio_XI_Claudia",
+          "https://www.livius.org/articles/place/durostorum-silistra/ (cross-referenced via search synthesis)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.3612,
+          38.3822
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_xii_fulminata_melitene",
+        "category": "fort",
+        "name_latin": "Melitene",
+        "name_english": "Fortress of Legio XII Fulminata (Melitene)",
+        "province": "Cappadocia",
+        "modern_location": "Battalgazi (Eski Malatya), near Malatya, Turkey",
+        "built": 72,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio XII Fulminata was posted to Melitene on the upper Euphrates after the First Jewish-Roman War (from 71-72 CE), guarding the crossing into Armenia and the end of the road east from Caesarea. It took part in Trajan's Armenian campaign (114) and remained based at Melitene through 117 CE and for centuries after (attested there in the Notitia Dignitatum).",
+        "sources": [
+          "https://pleiades.stoa.org/places/629040",
+          "https://en.wikipedia.org/wiki/Melitene (via search synthesis)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.5808,
+          46.0733
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_xiii_gemina_apulum",
+        "category": "fort",
+        "name_latin": "Castra Apulum",
+        "name_english": "Fortress of Legio XIII Gemina (Apulum)",
+        "province": "Dacia",
+        "modern_location": "Alba Iulia, Romania",
+        "built": 106,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio XIII Gemina stayed behind in the newly conquered province after Trajan's Second Dacian War, founding its fortress at Apulum (modern Alba Iulia) in 106-108 CE and becoming the senior garrison of the new province. It remained Dacia's principal legion through 117 CE, even as sub-units were pulled for Trajan's simultaneous Parthian campaign (115-117).",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Apulum_(castra)",
+          "https://www.livius.org/articles/legion/legio-xiii-gemina/ (cross-referenced via search synthesis)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8614,
+          48.1133
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_xiv_gemina_carnuntum",
+        "category": "fort",
+        "name_latin": "Carnuntum",
+        "name_english": "Fortress of Legio XIV Gemina (Carnuntum)",
+        "province": "Pannonia Superior",
+        "modern_location": "Petronell-Carnuntum / Bad Deutsch-Altenburg, Austria",
+        "built": 106,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio XIV Gemina was sent to Pannonia in 92 CE to replace the destroyed XXI Rapax, initially camping at Vindobona, then relocated to Carnuntum after Trajan's Dacian Wars. Sources vary on the precise year of the Carnuntum move (given variously as 106, 114, or 117-118), but agree the legion was there by, or essentially at, the 117 CE snapshot and remained for the next three centuries as the provincial capital's garrison and headquarters of the Pannonian fleet.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Carnuntum",
+          "https://romanhistory.org/roman-military/legio-XIV-gemina"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.5979,
+          40.0277
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_xv_apollinaris_satala",
+        "category": "fort",
+        "name_latin": "Satala",
+        "name_english": "Fortress of Legio XV Apollinaris (Satala)",
+        "province": "Cappadocia",
+        "modern_location": "Sadak, Gümüşhane Province, Turkey",
+        "built": 117,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio XV Apollinaris fought in Trajan's Parthian War (114-117) and was in Egypt in the war's immediate aftermath; scholarship on its movements (Speidel) dates its departure for its new permanent post at Satala, on the Cappadocian-Armenian frontier, to around August 117 CE (i.e., essentially at Trajan's death/Hadrian's accession), arriving and establishing its castrum stativum there by summer 118. At the exact 117 CE snapshot the legion was thus most likely already marching toward, or just arriving at, Satala rather than fully garrisoned in its permanent stone fortress — flagged accordingly.",
+        "sources": [
+          "https://www.academia.edu/2483838/The_Movements_of_Legio_XV_Apollinaris_under_Trajan_and_Hadrian",
+          "https://www.academia.edu/4104216/Legio_XV_Apollinaris_From_Carnuntum_to_Satala_and_beyond"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8908,
+          53.1917
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_xx_valeria_victrix_deva",
+        "category": "fort",
+        "name_latin": "Deva Victrix",
+        "name_english": "Fortress of Legio XX Valeria Victrix (Chester)",
+        "province": "Britannia",
+        "modern_location": "Chester, England, UK",
+        "built": 88,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Deva was first built by Legio II Adiutrix c. 70 CE, but II Adiutrix left Britain in the mid-80s and Legio XX Valeria Victrix took over the fortress c. 88 CE, rebuilding it in stone. XX Valeria Victrix remained Deva's garrison through 117 CE and for the following two centuries.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Deva_Victrix",
+          "https://www.heritagedaily.com/2020/04/deva-victrix-the-legionary-fortress/128052"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.95,
+          31.2333
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_xxii_deiotariana_nicopolis",
+        "category": "fort",
+        "name_latin": "Nicopolis",
+        "name_english": "Fortress of Legio XXII Deiotariana (Alexandria)",
+        "province": "Aegyptus",
+        "modern_location": "Sidi Gaber area, east Alexandria, Egypt",
+        "built": -30,
+        "destroyed": 136,
+        "extant_117ce": true,
+        "notes": "Legio XXII Deiotariana (descended from client-king Deiotarus of Galatia's forces, absorbed by Augustus) was one of Egypt's two permanent legions, based with III Cyrenaica at the double-legion fortress of Nicopolis just east of Alexandria. Elements were used to suppress the Kitos War/Jewish diaspora revolt in Egypt and Cyrenaica (115-117), so the legion (or most of it) was in the immediate Alexandria area through 117 CE; it is attested there again with III Cyrenaica in 119. It was later destroyed or disbanded during the Bar Kokhba Revolt (132-136 CE), long after this map's snapshot. No visible remains of the fortress survive and its precise footprint is unexcavated, so the point is a settlement-level approximation.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Legio_XXII_Deiotariana",
+          "http://www.legionaryfortresses.info/alexandria.htm"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2705,
+          49.9987
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_xxii_primigenia_mogontiacum",
+        "category": "fort",
+        "name_latin": "Mogontiacum",
+        "name_english": "Fortress of Legio XXII Primigenia (Mainz)",
+        "province": "Germania Superior",
+        "modern_location": "Mainz, Germany",
+        "built": 92,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio XXII Primigenia, raised by Caligula in 39 CE, was stationed at Mogontiacum (Mainz) from 92 CE onward (having shared earlier Rhine postings with other legions), guarding the Rhine and the Mainz bridge. It remained Mainz's garrison through 117 CE and for the following two centuries; the future emperor Hadrian served as one of its military tribunes in 97-98 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Legio_XXII_Primigenia",
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0006%3Aentry%3Dmogontiacum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.1352,
+          47.7314
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_xxx_ulpia_victrix_brigetio",
+        "category": "fort",
+        "name_latin": "Castra Brigetio",
+        "name_english": "Fortress of Legio XXX Ulpia Victrix (Brigetio)",
+        "province": "Pannonia Superior",
+        "modern_location": "Szőny district, Komárom, Hungary",
+        "built": 105,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "CORRECTION TO INITIAL BRIEF: Legio XXX Ulpia Victrix's 117 CE base was Brigetio, not Vetera. The legion was raised by Trajan (c. 101-105 CE, sources vary) for the Dacian Wars and, once XI Claudia vacated Brigetio for Durostorum, took over that Pannonian fortress from 105 CE. It held Brigetio through the entire 117 CE snapshot and only moved to Vetera (Xanten) in 122 CE, when Hadrian sent VI Victrix (Vetera's prior occupant) to Britain and reassigned XXX Ulpia Victrix into the vacated fortress — coincidentally the same year Legio I Adiutrix returned from the East to reclaim Brigetio (see that entry's note on the same swap).",
+        "sources": [
+          "https://www.livius.org/articles/legion/legio-xxx-ulpia-victrix/ (cross-referenced via search synthesis)",
+          "https://en.wikipedia.org/wiki/Legio_XXX_Ulpia_Victrix",
+          "https://principialegionis.org/lxxxvvhistory.html"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
