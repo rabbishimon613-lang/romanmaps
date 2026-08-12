@@ -13,17 +13,21 @@ Empire-level layers already live: land polygons (Natural Earth), coastlines, pro
 **The current 40 sites** — you can grep them from `app/sites.ts::SITES[]`, but at time of writing:
 Ostia · Pompeii · Herculaneum · Ephesus · Timgad · Djemila · Volubilis · Leptis Magna · Sabratha · Jerash · Palmyra · Baalbek · Rome · Aquincum · Carnuntum · Vindolanda · Trier · Xanten · Corinth · Athens · Delphi · Mérida · Italica · Aquileia · Verona · Ravenna · Portus · Tivoli · Palestrina · Puteoli · Baiae · Cumae · Capua · Beneventum · Paestum · Brescia · Milan · Rimini · Ancona · Luni.
 
-## Where we're going — six parallel expansion axes
+## Where we're going — ten parallel expansion axes
 
-Every shift picks ONE axis (and often ONE sub-category inside it) and pushes it forward. Don't try to touch multiple axes in one shift; don't try all sub-categories inside one axis in one shift. **Depth beats breadth.**
+Ten axes. Each shift touches **at least TWO axes** and ships **quantitative minimums** (see "Per-shift throughput" below). Depth still matters — no fake features — but throughput matters too. The empire's big; we're not going to finish it dabbling.
 
-The six axes:
+The ten axes:
 1. **More cities**
-2. **Sites along the roads**
-3. **Micro-level POIs** (9 sub-categories: military, sacred, economic, villae, tombs, water, games, battlefields, shipwrecks)
-4. **The living empire in 117 CE** (people, events, ongoing wars, political moment)
-5. **Peoples, cultures, client states** (language belts, ethnic groups, non-Roman neighbors)
-6. **Systems overlay** (trade routes, intellectual centers, religious communities, natural landmarks)
+2. **Sites along the roads** (mansiones, mutationes, milestones)
+3. **Micro-level POIs** — 9 sub-categories: military, sacred, economic, villae, tombs, water, games, battlefields, shipwrecks
+4. **The living empire in 117 CE** — people, events, ongoing wars
+5. **Peoples, cultures, client states** — language belts, ethnic groups, non-Roman neighbors
+6. **Systems overlay** — trade routes, intellectual centers, religious communities, natural landmarks
+7. **Environment, climate, agriculture** — crops, wine + olive belts, grain zones, sailing seasons
+8. **Money, administration, communication** — mints, provincial fiscal boundaries, conventus assize centers
+9. **Daily life patterns** — housing, cuisine, clothing, spectacle, sexuality, death ritual regions
+10. **Historical substrate** — pre-Roman layers still visible (Greek, Etruscan, Phoenician, Celtic, Iberian, Egyptian pharaonic)
 
 ### Axis 1 — MORE CITIES beyond the current 40
 
@@ -346,6 +350,148 @@ The Roman world had a rich sacred + practical geography of natural features.
 
 Store in `public/data/landmarks_117.geojson` with `type: volcano | sacred_mountain | sacred_island | sea_hazard | sacred_spring | wonder`.
 
+### Axis 7 — ENVIRONMENT, CLIMATE, AGRICULTURE
+
+The economic map of the empire is agrarian. Zones + specialties matter.
+
+#### 7a — Crop zones as polygons
+- **Grain belts** — Egypt (Nile flood, three months a year of harvest), Africa Proconsularis (rain-fed wheat), Sicily (Ceres's island), Baetica (wheat + barley), Pannonia. Egypt + Africa together fed Rome — 400,000 tonnes/year through Portus.
+- **Olive belt** — everywhere the frost line permits: Baetica (oil that filled Monte Testaccio), Africa (Tripolitania olive villae), Istria, Attica, Syria.
+- **Wine regions** — Falernian (Campania), Setine, Caecuban, Massic (all central Italy), Chian + Lesbian (Aegean), Rhaetic (Alps), Vienne (Gaul, wine boom underway), Baetica.
+- **Fruit + specialty** — dates (Nabataea, Egypt), silphium (Cyrene — probably extinct by 117 per Pliny, log the last-mentioned area), figs (Caria), pomegranates (Judaea).
+- **Timber zones** — Silva Hercynia (Germania), Alpine forests, Lebanon cedars, Corsica pine, Bruttium fir.
+- **Livestock** — Apulian sheep transhumance corridors, Numidian horses, Cisalpine cattle, Britannia hunting dogs.
+
+Store in `public/data/agriculture.geojson`.
+
+#### 7b — Sailing seasons + mare clausum
+Mediterranean commercial shipping was seasonal: `mare apertum` roughly May–September, `mare clausum` Nov–March (Vegetius codifies later but the practice is old). Riskier shoulder months in between. Overlay this as an animated seasonal indicator on the map header — winter mode shows Med grey/hazardous, summer shows blue/open.
+
+#### 7c — Notable winds + currents
+- **Etesian winds** (northerlies, July–September) — helped ships sail Alexandria→Rome, hindered the return.
+- **Aquilo** (northeast wind) — feared on the Adriatic.
+- **Auster** (south wind) — hot, bad weather.
+- **Nile flood** — annual, June–October, life-and-death for Egypt.
+
+Points + arrows in `public/data/wind_currents.geojson`.
+
+#### 7d — Wild fauna sourcing
+The Colosseum + provincial arenas demand exotic animals: elephants from Ethiopia + Mauretania, tigers from India (via Parthian brokers), lions from Numidia + Syria, bears from Caledonia + Dalmatia, giraffes from Sudan (Nubia), rhinoceroses. Pin the source regions with `fauna` markers and arrows to the biggest amphitheatre destinations.
+
+### Axis 8 — MONEY, ADMINISTRATION, COMMUNICATION
+
+The state's fiscal + bureaucratic footprint.
+
+#### 8a — Mints
+Coin production locations in 117 CE:
+- **Rome mint** (primary) — silver denarii + gold aurei.
+- **Lugdunum** (Gaul) — imperial provincial coinage.
+- **Antioch** — silver tetradrachms for the East.
+- **Alexandria** — closed monetary system, tetradrachms for Egypt only.
+- **Caesarea Maritima, Caesarea Cappadociae, Nicomedia, Pergamon, Ephesus, Smyrna** — provincial mints striking bronze.
+- **~120 civic mints** across Asia Minor + Levant striking their own small change under license.
+
+Pin each with a `mint` marker showing metal + volume estimate. Reference: RIC (*Roman Imperial Coinage*) volumes.
+
+#### 8b — Provincial fiscal boundaries + capitals
+Every province has:
+- A **provincial capital** (governor's seat).
+- A **procurator's seat** (financial officer — often not the same city).
+- **Conventus juridici** — assize centers where the governor held court. Well-attested for Asia (~13 conventus), Baetica, Tarraconensis. Ephesus, Pergamon, Smyrna, Sardis, Ephesus, Miletus, Halicarnassus, Alabanda, Apameia, Synnada, Cibyra, Adramyttium, Kyzikos, Philadelphia. Add these as `conventus` markers.
+- **Boundary stones** — provinces marked their borders; some inscribed stones survive. Pin.
+
+#### 8c — Cursus publicus + imperial post
+The state courier system uses the road stations (Axis 2). Add on top of that:
+- **Beneficiarii stations** — soldiers detached to policing + tax duties. Well-attested by inscriptions.
+- **Statores** — imperial couriers.
+- **Speculatores** — intelligence corps.
+
+Category: `beneficiarii_station | courier_post`. Sources: EDCS epigraphy database.
+
+#### 8d — Tax + census
+- **Portoria stations** — customs posts at provincial + imperial boundaries. Corpus in France + Rhine well-documented (Zoll-Rhine).
+- **Publican company HQs** — tax farmers. Rome-based but with regional offices.
+
+### Axis 9 — DAILY LIFE PATTERNS (regional variation)
+
+Instead of city dots, pattern overlays. Where did Romans live differently?
+
+#### 9a — Housing typologies
+- **Atrium-domus** — Italy, Sicily.
+- **Peristyle houses** — Hellenistic east, Baetica.
+- **Insula apartment blocks** — Rome, Ostia, Puteoli.
+- **Rond-house survivals** — rural Britain, Gaul.
+- **Trulli / mudbrick vaulted** — Apulia, North Africa interior.
+- **Cave dwellings** — Cappadocia (already carving churches into rock).
+- **Rectangular Egyptian mudbrick** — Fayum, rural Egypt.
+
+Overlay soft polygons in `public/data/housing_styles.geojson`.
+
+#### 9b — Cuisine regions
+Food is one of the strongest cultural signals. Overlay:
+- **Bread cultures** — wheat everywhere, but barley bread staple in poor Iberia + Egypt, spelt in Alpine + Rhine.
+- **Fish sauce (garum) regions** — Iberia + Africa + Bosporus produced; consumed everywhere.
+- **Wine vs beer belt** — Mediterranean drinks wine, northern Gaul + Britannia + Germania drink cervesia (beer) though wine trade is pushing north.
+- **Olive oil vs animal fat** — same divide.
+- **Silphium extinction** — Cyrenaica, iconic 117 CE moment: Pliny (writing later but describing this era) says the last-known stalk was sent to Nero.
+- **Roman "Spice trade"** — pepper (via Muziris in India → Alexandria → Rome), cinnamon, cassia. Pin arrivals.
+
+#### 9c — Clothing + fashion by region
+- **Toga territory** — legal Roman citizens only, ceremonial garment. Everyday wear is the tunica.
+- **Gallic bracae (trousers)** — barbaric to Romans but universal in Gaul, Britain, Germania.
+- **Greek chiton + himation** — East.
+- **Egyptian linen kilt** — rural Egypt.
+- **Palmyrene silk textiles** — hybrid Parthian-Greek styles.
+- **Berber tribal dress** — Africa interior.
+
+#### 9d — Spectacle + gladiator geography
+- **Gladiator schools (ludi)** — Rome (Ludus Magnus, Dacicus, Gallicus, Matutinus), Capua (in), Ravenna (in), Alexandria, Pergamon.
+- **Amphitheatre density** — West (Italia, Gaul, Africa) LOVED gladiatorial games; East preferred Greek athletic games + theatre.
+- **Ludi calendar** — approximate: 176 days a year of state games at Rome by our snapshot (Fasti Ostienses).
+
+#### 9e — Death rituals by region
+Transition from cremation → inhumation is JUST BEGINNING in 117 CE. Log the shift as a heat-map:
+- **Predominantly cremation** — Italy, Gaul (still).
+- **Predominantly inhumation** — Egypt (always), Judaea (always), some pockets in the East.
+- **Mixed / transitioning** — provinces catching the shift 2nd–3rd century.
+- **Sarcophagus workshops** — Docimium, Athens, Aphrodisias (sarcophagus industry booming).
+
+#### 9f — Sexuality + gender geography (contextual, historical)
+- **Pompeii lupanaria + graffiti** — buried but documented.
+- **Baiae's reputation** — resort of hedonism per Seneca.
+- **Priestesses of Isis + Vestals** — female religious roles.
+- **Vestals in Rome** — sacred college.
+- **Galli (Cybele priests) — self-castrated, based at Rome + Pessinus** — pinned as religious markers.
+
+Treat this axis carefully — informational, no crude language, contextualize as social history.
+
+### Axis 10 — HISTORICAL SUBSTRATE (pre-Roman layers still visible)
+
+The Roman empire in 117 CE is layered over 3000+ years of prior civilizations. Show those layers as toggleable overlays.
+
+#### 10a — Greek substrate (Magna Graecia + Aegean + Ionia)
+Colonies of the 8th–6th c. BCE. Many still culturally Greek in 117: Syracusa, Neapolis (Naples), Massilia, Emporion (in Iberia), Cumae (in), Paestum (in as Poseidonia), Croton, Sybaris ruins.
+
+#### 10b — Etruscan substrate (central Italy)
+Etruscan cities that became Roman: Volsinii (Bolsena), Tarquinia, Veii (destroyed 396 BCE — pin the ruined city), Cerveteri, Vulci, Populonia, Roselle, Vetulonia, Chiusi (Camars).
+
+#### 10c — Phoenician / Punic substrate (Africa + Iberia + Sardinia)
+Phoenician then Carthaginian settlements. Carthage (destroyed 146 BCE, refounded 46 BCE by Caesar — Roman by 117 but Punic still spoken), Utica, Gades (Cadiz — one of the oldest cities in Iberia, still Phoenician-culture), Motya (Sicily), Nora + Tharros + Sulci (Sardinia), Baria (SE Iberia).
+
+#### 10d — Celtic substrate (Gaul + Britain + Iberia + Galatia + Danube)
+Iron Age oppida still often occupied: Alesia, Bibracte (moved to Autun), Gergovia (moved to Clermont), Avaricum (Bourges), Vercingetorix's memory sites. Also British hillforts, Iberian castros, and Galatian centers in Anatolia.
+
+#### 10e — Iberian + Basque substrate
+Iberian city-states, Vascones territory in the Pyrenees, Cantabrian resistance sites.
+
+#### 10f — Egyptian pharaonic substrate
+Pyramids of Giza (already ~2500 years old in 117, tourist attraction — graffiti of Roman visitors survives), Sphinx, Valley of the Kings (already tomb-robbed), Karnak + Luxor + Thebes ruins + Roman restorations. Roman tourists at the Colossi of Memnon left graffiti.
+
+#### 10g — Mesopotamian / Mesopotamian-adjacent
+Freshly relevant since Trajan's conquest. Babylon (in ruins, but still visited), Assyria's Nineveh (long ruins), Ur (ancient), Hatra (independent, Parthian ally). All briefly in Roman hands 116–117.
+
+Store all substrate features in `public/data/substrate.geojson` with `culture` field. Render as ghosted markers with dashed outline.
+
 ---
 
 ## The two invariants that override everything
@@ -387,19 +533,37 @@ Full skill spec at `~/.claude/skills/city-mapper/SKILL.md` on the developer mach
 
 ---
 
-## Two tracks per shift
+## Per-shift throughput — MINIMUMS, not maximums
 
-Every shift picks **one** of the three axes and does BOTH tracks against it:
+Each 6-hour shift MUST touch at least TWO axes and MUST hit the following per-axis minimums for whichever axes it touches. These are floors — go over if you have material. **Do not stop early.** If you finish minimums with time left, keep going on the same axes or open a third.
 
-### Track A — Data (60% of shift)
-Add features, cities, road stations, POIs. Real research, cited. Push clean JSON.
+| Axis | Per-shift minimum output |
+|---|---|
+| 1 — Cities | **5 new cities** wired end-to-end (Overpass fetch + `sites.ts` row + blurb) |
+| 2 — Roadside | **1 complete road's mansiones + mutationes** (typically 20–50 stations) OR 60 miscellaneous stations from Itinerary sources |
+| 3 — Micro-POIs | **40 new features** in the chosen sub-category, all with sources |
+| 4 — Living empire | **20 people or events** geolocated with one-line bios and sources |
+| 5 — Peoples/cultures | **1 complete overlay populated** (e.g., all client kingdoms; OR all Germanic tribes; OR full language belt map) |
+| 6 — Systems overlay | **1 complete trade route** (LineString + all named nodes) OR 25 religious communities + attestation OR full learning-center set |
+| 7 — Environment/climate | **1 complete crop or wind overlay** with source citations |
+| 8 — Money/admin | **1 mint OR 1 province's conventus centers OR 20 beneficiarii stations** |
+| 9 — Daily life | **1 complete regional overlay** (housing typology, cuisine map, gladiator schools, sarcophagus workshops, etc.) |
+| 10 — Historical substrate | **20 pre-Roman substrate points** in one culture layer |
 
-### Track B — Feature/UI polish (40% of shift)
-Read `FEATURE_BACKLOG.md`. Pick the top unblocked item. Ship.
+**Rule of thumb:** if you're not committing at least 30–100 new features per shift, you're going too slow. The empire is enormous. The user built this for scale.
+
+### Two tracks per shift
+
+Track A — data (70–80% of shift): the axis minimums above.
+Track B — one UI/feature backlog item (20–30% of shift): pick top unblocked item in `FEATURE_BACKLOG.md`, ship it. If you don't have time for track B, that's fine — data wins.
 
 **Do NOT touch:** deploy config, package.json deps, or the locked UI patterns (60px dark left rail, no dots — pill markers only, no shift-author voice in copy, no Street View, no sourcing-confidence badge in UI).
 
 **Category filter chips** at top of screen filter POIs by family — click to isolate, click again to un-isolate. Wire new POI categories through `app/poiCategories.ts`.
+
+### Batch commits, not one-at-a-time
+
+Don't commit one feature at a time. Batch: fetch 5 cities → one commit. Compile 60 mansiones → one commit. Add 40 mines → one commit. Faster, cleaner log, easier to review + revert.
 
 ---
 
