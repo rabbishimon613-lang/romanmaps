@@ -644,6 +644,22 @@ Trajan's death, 11 August 117 CE. Every record: `extant_117ce: true | false`.
 
 **When in doubt: `false` and explain in notes.**
 
+### 1.5 Display-name rule — English-standard, uniform, legible
+
+**Every `display` field, every marker label, every search-panel row uses the name a general English-speaking Google-Maps user would recognise.** Ancient/Roman names live in the blurb or in the details panel body, never in the display name.
+
+- **Living modern city on the Roman core → modern city name.** "Milan", not "Mediolanum". "Trier", not "Augusta Treverorum". "Merida", not "Emerita Augusta". "Rimini", not "Ariminum".
+- **Pure archaeological park → the site name people search for.** "Timgad", "Volubilis", "Palmyra", "Vindolanda", "Palestrina" (not "Praeneste"), "Tivoli" (not "Tibur").
+- **No parenthetical alternates in the display name.** Never `"Trier (Augusta Treverorum)"` or `"Milan (Mediolanum)"`. Put the Roman name inline in the blurb where it enriches the story: `"Roman Mediolanum, the largest city in northern Italy..."`.
+- **No diacritics in the display.** Write `"Merida"` not `"Mérida"`. Accented form may live in the blurb text.
+- **No abbreviations.** Never `"S. Maria Capua Vetere"` — just `"Capua"`.
+- **No qualifiers like `"(city center)"` or `"(Roman Agora)"`.** The map already centers on the right place; the display is the name, not the framing.
+- **Provinces stay in Latin.** `province: "Africa Proconsularis"`, not `"Africa"`. English scholarship standard.
+- **`modernCountry` in plain English.** `"United Kingdom"`, not `"UK"`. `"United States"` if it ever comes up. `"Czech Republic"` not `"Czechia"` unless the Wikipedia article is currently at Czechia (check).
+- **Slugs stay lowercase, unchanged once set.** Slug is the routing key inside the geojson `site` property — never rename it after data is committed.
+
+This applies to *every* feature type across all 20 axes: cities, road stations, POIs, people, embassies, mints, gladiator schools — all of them. Uniform, legible, English-first.
+
 ### 2. Voice = Google Business, not scholar footnote
 
 Every description is read by a stranger on their phone. Banned phrases (each one has been screenshotted at me by the user): "per the brief", "per the guardrail", "extant_117ce: true", "confidence: low/medium/high", "cf.", scholar-name-drops like "Squarciapino says" or "White vs. Runesson", parenthetical citation notes like "(Meiggs 1973 p. 240)".
