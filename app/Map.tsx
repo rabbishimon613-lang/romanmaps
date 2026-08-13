@@ -982,6 +982,51 @@ export default function Map() {
           kick();
         }
 
+        // Phase 14: Frontier lines (public/data/lines.geojson) — Fossatum Africae, the Upper
+        // Germanic-Raetian Limes, and the Dacian Olt river frontier as of 117 CE (axis 3a).
+        const lines = await fetch("/data/lines.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && lines) {
+          map.addSource("frontier-lines", { type: "geojson", data: lines });
+          map.addLayer({
+            id: "frontier-lines-line",
+            type: "line",
+            source: "frontier-lines",
+            paint: {
+              "line-color": "#6a5f4a",
+              "line-width": ["interpolate", ["linear"], ["zoom"], 3, 1.2, 8, 2.4],
+              "line-dasharray": [3, 2],
+              "line-opacity": 0.85,
+            },
+            layout: { "line-cap": "round", "line-join": "round" },
+          });
+
+          const frontierPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          map.on("mouseenter", "frontier-lines-line", (e) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const noteLine = p.notes ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.notes)}</div>` : "";
+            frontierPopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name_english || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.province || "")}</div>
+                   ${noteLine}
+                 </div>`,
+              )
+              .addTo(map);
+          });
+          map.on("mouseleave", "frontier-lines-line", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          kick();
+        }
+
         // Apply any persisted Layers-panel visibility (all groups default visible).
         applyAllLayers();
       });

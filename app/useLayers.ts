@@ -16,7 +16,8 @@ export type LayerGroupId =
   | "health"
   | "mints"
   | "imperial-cult"
-  | "politics";
+  | "politics"
+  | "frontier-lines";
 
 export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: string[] }[] = [
   { id: "roads", label: "Roads", mapLayerIds: ["roads-main", "roads-secondary"] },
@@ -35,6 +36,7 @@ export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: strin
   { id: "mints", label: "Mints", mapLayerIds: ["mints-point"] },
   { id: "imperial-cult", label: "Imperial cult", mapLayerIds: ["imperial-cult-point"] },
   { id: "politics", label: "Political apparatus", mapLayerIds: ["politics-point"] },
+  { id: "frontier-lines", label: "Frontier lines", mapLayerIds: ["frontier-lines-line"] },
 ];
 
 type LayerState = Record<LayerGroupId, boolean>;

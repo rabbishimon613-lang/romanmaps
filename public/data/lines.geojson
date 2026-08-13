@@ -1,0 +1,133 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            5.346,
+            35.348
+          ],
+          [
+            5.7104,
+            35.2166
+          ],
+          [
+            5.733,
+            34.833
+          ],
+          [
+            5.5228,
+            34.6367
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_fossatum_africae",
+        "category": "frontier_line",
+        "name_latin": "Fossatum Africae",
+        "name_english": "Fossatum Africae",
+        "province": "Numidia",
+        "extant_117ce": true,
+        "notes": "The Fossatum Africae was a fortified ditch-and-wall system that ran for hundreds of kilometers along Rome's southern North African frontier, channeling nomadic herders through controlled gates and separating farmland from the pre-desert steppe. This central Numidian stretch, mapped in detail from the air by French archaeologist Jean Baradez in the 1940s, runs through the El Kantara gorge that Trajan's Third Augustan Legion nicknamed the Kick of Hercules and down toward Biskra. Building began under Trajan and continued under Hadrian, with earthen banks three to six meters wide and forts and watchtowers at intervals along its length.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Fossatum_Africae",
+          "https://www.heritagedaily.com/2021/09/the-limes-africanus/141417"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            7.3347,
+            50.495
+          ],
+          [
+            8.5667,
+            50.2714
+          ],
+          [
+            9.2559,
+            49.7019
+          ],
+          [
+            9.4261,
+            49.4308
+          ],
+          [
+            9.6883,
+            48.7983
+          ],
+          [
+            11.771,
+            48.8502
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_limes_germanicus_upper",
+        "category": "frontier_line",
+        "name_latin": "Limes Germanicus",
+        "name_english": "Upper Germanic-Raetian Limes",
+        "province": "Germania Superior",
+        "extant_117ce": true,
+        "notes": "By 117 CE the Limes Germanicus ran as a cleared forest road studded with wooden watchtowers roughly every seven hundred meters, linking the Rhine at Rheinbrohl across the Taunus hills, down to the Main near Miltenberg, and on in a near-ruler-straight line to Lorch before joining the Danube frontier further east. Domitian cut the first clearings here in the 80s CE and Trajan filled out the tower chain and forts through his reign; the continuous timber palisade that later connected the towers was a Hadrianic addition of 119-120 CE, and so did not yet exist at this snapshot.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Limes_Germanicus",
+          "https://followinghadrian.com/2020/09/23/ad-120-the-army-erects-a-wooden-palisade-on-the-german-frontier-hadrian1900/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            24.306776,
+            45.509468
+          ],
+          [
+            24.3772,
+            45.2092
+          ],
+          [
+            24.3042,
+            45.0339
+          ],
+          [
+            24.217,
+            44.867
+          ],
+          [
+            24.25,
+            44.65
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_limes_alutanus",
+        "category": "frontier_line",
+        "name_latin": "Limes Alutanus",
+        "name_english": "Dacian Olt River Frontier",
+        "province": "Dacia",
+        "extant_117ce": true,
+        "notes": "The Limes Alutanus was Trajan's new eastern frontier for Dacia, a line of forts and an earthwork vallum running up the Olt river valley to seal the province's border against the Roxolani and other groups beyond. Building began immediately after the province's conquest in 106 CE; this stretch links the fort chain from the mountain gateway at Pons Vetus down through Castra Traiana, Buridava, Pons Aluti, and Rusidava as the valley opens onto the Wallachian plain. Hadrian later thickened the same line with additional forts at Arutela and Praetorium.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Buridava_(castra)",
+          "https://en.wikipedia.org/wiki/Castra_Traiana",
+          "https://en.wikipedia.org/wiki/Pons_Aluti_(castra)",
+          "https://ro.wikipedia.org/wiki/Castrul_roman_de_la_C%C3%A2ineni"
+        ],
+        "confidence": "medium"
+      }
+    }
+  ]
+}

@@ -3496,6 +3496,1081 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0841,
+          40.7867
+        ]
+      },
+      "properties": {
+        "id": "poi_naval_misenum",
+        "category": "naval_base",
+        "name_latin": "Portus Misenensis",
+        "name_english": "Misenum",
+        "province": "Italia",
+        "modern_location": "Bacoli, Italy",
+        "built": -27,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Misenum was home to the classis Misenensis, the senior fleet of the Roman navy, founded by Augustus in 27 BCE to command the western Mediterranean. Up to 10,000 sailors and marines were based on the peninsula, drawing fresh water from the vast vaulted cistern known as the Piscina Mirabilis. Pliny the Elder commanded the fleet from here in 79 CE and sailed from this harbor to his death during the eruption of Vesuvius. In 2023 archaeologists uncovered a monumental harborside villa believed to belong to the fleet's prefect.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Classis_Misenensis",
+          "https://en.wikipedia.org/wiki/Portus_Julius",
+          "https://arkeonews.net/ancient-roman-breakwater-discovered-underwater-in-misenum-sculptures-and-architecture-reused-to-tame-the-sea/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.22,
+          44.395
+        ]
+      },
+      "properties": {
+        "id": "poi_naval_classis_ravennas",
+        "category": "naval_base",
+        "name_latin": "Classis Ravennas",
+        "name_english": "Classe",
+        "province": "Italia",
+        "modern_location": "Classe, Ravenna, Italy",
+        "built": -12,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Classe was the harbor of the classis Ravennas, the second of Augustus's two main Italian fleets, guarding the Adriatic. The base held up to 250 ships and 10,000 marines, linked to Ravenna itself and to the Po by the Fossa Augusta canal, with naval yards and docks stretching some 22 kilometers along the waterway. Silting has since pushed the coastline nine kilometers east of the ancient shoreline.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Classe,_ancient_port_of_Ravenna",
+          "https://en.wikipedia.org/wiki/Classis_Ravennas",
+          "https://www.romanports.org/en/the-ports/110-ravenna-civitas-classis-italy.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.736,
+          43.4325
+        ]
+      },
+      "properties": {
+        "id": "poi_naval_forum_iulii",
+        "category": "naval_base",
+        "name_latin": "Portus Forum Iulii",
+        "name_english": "Frejus",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Frejus, France",
+        "built": -31,
+        "destroyed": 69,
+        "extant_117ce": false,
+        "notes": "Forum Iulii's stone harbor, nicknamed Claustra Maris or Sea Bolt, was built by Octavian after Actium as a third great naval base alongside Misenum and Ravenna, guarding the northwest Mediterranean. Its fleet, the classis Gallica, stayed active through the Julio-Claudian era but lost its standing amid the civil wars of 69 CE, after which its ships were reassigned toward Misenum and the Adriatic. The hexagonal harbor basin, once ringed by warehouses and now landlocked more than a kilometer from the sea, still survives as the Lanterne d'Auguste monument marking its ancient entrance.",
+        "sources": [
+          "https://www.romanports.org/en/articles/ports-in-focus/806-forum-iulii-frejus-english.html",
+          "https://www.romanports.org/en/the-ports/107-forum-iulii.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.8994,
+          31.2138
+        ]
+      },
+      "properties": {
+        "id": "poi_naval_classis_alexandrina",
+        "category": "naval_base",
+        "name_latin": "Classis Alexandrina",
+        "name_english": "Alexandria",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "built": -30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The classis Alexandrina was established after Actium to guard Rome's most vital grain route, escorting the Alexandrian corn fleet across the Mediterranean and patrolling the Nile. Its ships moored in the Great Harbor below the royal quarter on the Lochias peninsula, close by the Pharos lighthouse that already marked the port for the ancient world.",
+        "sources": [
+          "https://www.romanports.org/en/the-ports/77-alexandria.html",
+          "https://www.romanports.org/en/articles/ports-in-focus/527-alexandria-the-largest-port-of-all.html",
+          "https://en.wikipedia.org/wiki/Alexandria"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.9219,
+          36.1239
+        ]
+      },
+      "properties": {
+        "id": "poi_naval_seleucia_pieria",
+        "category": "naval_base",
+        "name_latin": "Portus Seleuciae Pieriae",
+        "name_english": "Seleucia Pieria",
+        "province": "Syria",
+        "modern_location": "Cevlik, near Samandag, Turkey",
+        "built": 70,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Seleucia Pieria served as the seaport of Antioch and home of the classis Syriaca, the Roman navy's main eastern fleet. Vespasian rebuilt the harbor around 70 CE with an inner and outer basin fed by a canal cut partly through solid rock, a feat of engineering still visible today as the Titus Tunnel, designed to flush silt from the port entrance.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Seleucia_Pieria",
+          "https://www.britannica.com/place/Seleucia-Pieria",
+          "https://www.livius.org/articles/place/seleucia-in-pieria/monuments/canal-and-tunnel-of-titus/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.6147,
+          50.7264
+        ]
+      },
+      "properties": {
+        "id": "poi_naval_classis_britannica_gesoriacum",
+        "category": "naval_base",
+        "name_latin": "Portus Gesoriacensis",
+        "name_english": "Boulogne-sur-Mer",
+        "province": "Gallia Belgica",
+        "modern_location": "Boulogne-sur-Mer, France",
+        "built": 43,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Gesoriacum was the Channel headquarters of the classis Britannica, the fleet Claudius built to launch and then supply the conquest of Britain from 43 CE onward. The fortified port sat on the cliff above the Liane estuary, doubling as the customs post for cross-Channel trade and the usual embarkation point for emperors and officials bound for Britannia.",
+        "sources": [
+          "https://www.heritagedaily.com/2020/10/the-classis-britannica-the-roman-navy-of-britannia/135939",
+          "https://www.roman-britain.co.uk/military/military-units-of-roman-britain/classis/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.972,
+          50.885
+        ]
+      },
+      "properties": {
+        "id": "poi_naval_classis_germanica_alteburg",
+        "category": "naval_base",
+        "name_latin": "Castra Alteburg",
+        "name_english": "Cologne Fleet Base",
+        "province": "Germania Inferior",
+        "modern_location": "Marienburg district, Cologne, Germany",
+        "built": 10,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The Alteburg fort on a low bluff south of Cologne was the headquarters of the classis Germanica, the Rhine fleet and the largest of Rome's provincial navies. More than a thousand marines were garrisoned here to patrol the river from the Rhine-Meuse delta up past the legionary fortresses, keeping the frontier's supply lines and communications running.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Classis_Germanica",
+          "https://www.roemer.nrw/en/koln-alteburg",
+          "https://www.koeln-lotse.de/2020/02/29/das-kastell-alteburg-hauptquartier-der-roemischen-kriegsflotte-in-germanien/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4152,
+          44.8387
+        ]
+      },
+      "properties": {
+        "id": "poi_naval_classis_pannonica_taurunum",
+        "category": "naval_base",
+        "name_latin": "Taurunum",
+        "name_english": "Zemun",
+        "province": "Pannonia Inferior",
+        "modern_location": "Zemun, Belgrade, Serbia",
+        "built": 45,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Taurunum stood at the meeting of the Sava and Danube rivers and served as the main base of the classis Flavia Pannonica, the fleet that patrolled the upper and middle Danube from Regensburg down to Belgrade. Flotillas based here ferried troops and supplies to the string of forts along the river frontier.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Classis_Pannonica",
+          "https://topostext.org/place/448204FTau"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.4597,
+          45.2697
+        ]
+      },
+      "properties": {
+        "id": "poi_naval_classis_moesica_noviodunum",
+        "category": "naval_base",
+        "name_latin": "Noviodunum",
+        "name_english": "Isaccea",
+        "province": "Moesia Inferior",
+        "modern_location": "Isaccea, Romania",
+        "built": 46,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Noviodunum guarded the last narrow crossing of the Danube before the river fans into its delta and the Black Sea beyond. It headquartered the classis Flavia Moesica, the fleet that policed the lower Danube from the Iron Gates to Crimea, and gained extra importance as a logistics hub during Trajan's Dacian campaigns.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Classis_Flavia_Moesica",
+          "https://www.sciencedirect.com/science/article/abs/pii/S2352409X22002772",
+          "https://en.wikipedia.org/wiki/Isaccea"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.662937,
+          54.975955
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_pike_hill",
+        "category": "signal_tower",
+        "name_latin": "Turris Pike Hill",
+        "name_english": "Pike Hill Signal Tower",
+        "province": "Britannia",
+        "modern_location": "near Banks, Cumbria, England",
+        "built": 105,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Pike Hill stood on high ground overlooking the Stanegate road, one of a chain of signal towers built in the early second century to watch the frontier before Hadrian's Wall existed. Its foundations run unusually deep for a 6-meter-square tower, suggesting real height, and the site kept turning up soldiers' gear into the fourth century. When the Wall was built two decades later, its line was bent slightly off-axis just to incorporate this older tower.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pike_Hill_Signal_Tower",
+          "https://www.english-heritage.org.uk/visit/places/pike-hill-signal-tower-hadrians-wall/history/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.340718,
+          54.995506
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_barcombe_hill",
+        "category": "signal_tower",
+        "name_latin": "Turris Barcombe Hill",
+        "name_english": "Barcombe Hill Signal Station",
+        "province": "Britannia",
+        "modern_location": "near Vindolanda, Northumberland, England",
+        "built": 105,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Set on the northern edge of Barcombe Hill above Vindolanda, this signal post gave the Stanegate garrison a clear line of sight across the valley toward the fort below and toward the next tower down the frontier road. Excavations here in 1939 and 1950 uncovered the tower's stone footings inside an earlier Iron Age enclosure.",
+        "sources": [
+          "https://co-curate.ncl.ac.uk/roman-signal-station-barcombe",
+          "http://heddonhistory.weebly.com/blog/barcombe-hill-above-vindolanda-roman-fort"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.612186,
+          54.969157
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_mains_rigg",
+        "category": "signal_tower",
+        "name_latin": "Turris Mains Rigg",
+        "name_english": "Mains Rigg Signal Station",
+        "province": "Britannia",
+        "modern_location": "Upper Denton, Cumbria, England",
+        "built": 105,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Mains Rigg's watch tower sat roughly halfway between the Stanegate forts at Nether Denton and Throp, its turf-covered stone footings tracing a tower about six and a half meters square with walls a meter thick. It formed part of the relay of signal posts that let messages travel the length of the frontier road faster than any horse could ride it.",
+        "sources": [
+          "https://ancientmonuments.uk/111820-roman-signal-station-on-mains-rigg-upper-denton",
+          "https://historicengland.org.uk/listing/the-list/list-entry/1013605"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.71387,
+          50.51779
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_wp4_49",
+        "category": "signal_tower",
+        "name_latin": "Limeswachturm Wp 4/49",
+        "name_english": "Limes Watchtower 4-49",
+        "province": "Germania Superior",
+        "modern_location": "near Gruningen, Pohlheim, Germany",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Watchtower 4/49 stood on the Wetterau stretch of the Limes Germanicus, part of a chain of roughly nine hundred wooden lookout posts spaced under a kilometer apart along the cleared frontier road between the Rhine and the Danube. Its original timber tower predates Hadrian's later wooden palisade by two decades; a full-scale reconstruction now stands on the excavated stone footings near Giessen.",
+        "sources": [
+          "https://de.wikipedia.org/wiki/Limeswachturm_Wp_4/49",
+          "https://followinghadrian.com/2020/09/23/ad-120-the-army-erects-a-wooden-palisade-on-the-german-frontier-hadrian1900/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.3611,
+          54.9915
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_vindolanda",
+        "category": "auxiliary_fort",
+        "name_latin": "Vindolanda",
+        "name_english": "Vindolanda",
+        "province": "Britannia",
+        "modern_location": "Chesterholm, near Bardon Mill, Northumberland, England",
+        "built": 85,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Vindolanda anchored the Stanegate frontier decades before Hadrian's Wall was built alongside it. Its timber-and-turf forts were rebuilt at least nine times, and the waterlogged ground beneath preserved hundreds of ink writing tablets from around 100 CE, including a soldier's letter recording the oldest known handwritten Latin by a woman, Claudia Severa's birthday invitation to a friend.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Vindolanda",
+          "https://en.wikipedia.org/wiki/Vindolanda_tablets"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.03316,
+          54.9784
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_corbridge",
+        "category": "auxiliary_fort",
+        "name_latin": "Coria",
+        "name_english": "Corbridge Roman Fort",
+        "province": "Britannia",
+        "modern_location": "Corbridge, Northumberland, England",
+        "built": 103,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Corbridge guarded the point where the Stanegate road crossed the River Tyne, on the main route north into Scotland. A Trajanic coin sealed beneath its rampart dates this second fort on the site to 103 CE or later, built just as Trajan was pulling troops out of Britain for his second Dacian campaign. The fort later grew into one of the best-supplied garrison towns on the whole northern frontier.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Coria_(Corbridge)",
+          "https://www.english-heritage.org.uk/visit/places/corbridge-roman-town-hadrians-wall/history-and-stories/history/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4513,
+          54.9887
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_haltwhistle_burn",
+        "category": "auxiliary_fort",
+        "name_latin": "Fortlet ad Haltwhistle Burn",
+        "name_english": "Haltwhistle Burn Fortlet",
+        "province": "Britannia",
+        "modern_location": "near Haltwhistle, Northumberland, England",
+        "built": 105,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This small fortlet guarded the crossing where the Stanegate road forded Haltwhistle Burn, holding a single century of about eighty men behind an earth rampart with a stone face. It was one of the first fortlets built anywhere in Roman Britain, part of a new tactic of splitting garrisons into small posts to watch the frontier road closely.",
+        "sources": [
+          "https://www.roman-britain.co.uk/places/haltwhistle_burn/",
+          "https://www.u3ahadrianswall.co.uk/haltwhistle-burn-fortlet/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.5782,
+          54.9887
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_throp",
+        "category": "auxiliary_fort",
+        "name_latin": "Fortlet ad Throp",
+        "name_english": "Throp Fortlet",
+        "province": "Britannia",
+        "modern_location": "Upper Denton, Cumbria, England",
+        "built": 105,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Throp's fortlet sat on a spur above the Poltross Burn, its square turf-and-stone ramparts enclosing barely a quarter of a hectare. Like its sister post at Haltwhistle Burn, its whole purpose was watching a single river crossing on the Stanegate road, decades before Hadrian's Wall's own milecastles took over the job a few hundred meters to the north.",
+        "sources": [
+          "https://historicengland.org.uk/listing/the-list/list-entry/1010611",
+          "https://ancientmonuments.uk/108826-throp-roman-fortlet-upper-denton"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.219,
+          55.0041
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_newbrough",
+        "category": "auxiliary_fort",
+        "name_latin": "Fortlet ad Novum Vadum",
+        "name_english": "Newbrough Fortlet",
+        "province": "Britannia",
+        "modern_location": "Newbrough, Northumberland, England",
+        "built": 103,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Newbrough's fortlet sat on the Stanegate road between Corbridge and Vindolanda, roughly equidistant from both, holding a small garrison of around 160 men. St Peter's church now occupies the site of its later stone-built successor in the village churchyard, though the original earthwork fortlet predates the church by centuries.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Newbrough",
+          "https://www.u3ahadrianswall.co.uk/newbrough-roman-fort-on-the-stanegate/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7119,
+          54.9595
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_boothby",
+        "category": "auxiliary_fort",
+        "name_latin": "Fortlet ad Boothby",
+        "name_english": "Boothby Fortlet",
+        "province": "Britannia",
+        "modern_location": "near Brampton, Cumbria, England",
+        "built": 105,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Boothby's fortlet overlooked the River Irthing from the north, built in the late first or early second century when the river itself still marked the edge of Roman control in this sector. A single ditch and clay rampart enclosed just under half a hectare, big enough for a small detachment watching the crossing below.",
+        "sources": [
+          "https://historicengland.org.uk/listing/the-list/list-entry/1014585",
+          "https://co-curate.ncl.ac.uk/boothby-roman-fort"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5667,
+          50.2714
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_saalburg",
+        "category": "auxiliary_fort",
+        "name_latin": "Castellum Saalburg",
+        "name_english": "Saalburg Fort",
+        "province": "Germania Superior",
+        "modern_location": "Bad Homburg vor der Hohe, Germany",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The Saalburg guarded a key pass through the Taunus hills on the Limes Germanicus, built up from earlier Domitianic earthworks into a timber-and-earth numerus fort around 90 CE. It housed roughly 160 auxiliary troops through Trajan's reign. Hadrian rebuilt it in stone as a full cohort fort a generation later, and it stands today as the most completely reconstructed Roman fort anywhere on the former frontier.",
+        "sources": [
+          "https://www.labrujulaverde.com/en/2025/01/saalburg-the-largest-roman-fort-of-the-limes-germanicus/",
+          "https://www.saalburgmuseum.de/en/angebote-2/roemerkastell-saalburg/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.20344,
+          50.1897
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_zugmantel",
+        "category": "auxiliary_fort",
+        "name_latin": "Castellum Zugmantel",
+        "name_english": "Zugmantel Fort",
+        "province": "Germania Superior",
+        "modern_location": "Taunusstein-Orlen, Germany",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Zugmantel sat on the western Taunus stretch of the limes, built under the Flavians around 90 CE and rebuilt through four distinct phases over the century and a half it stayed garrisoned. It anchored one end of a dense chain of wooden watchtowers running through the forest toward Saalburg.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kastell_Zugmantel"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.78424,
+          50.48734
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_arnsburg",
+        "category": "auxiliary_fort",
+        "name_latin": "Castellum Arnsburg",
+        "name_english": "Arnsburg Fort",
+        "province": "Germania Superior",
+        "modern_location": "near Lich, Hesse, Germany",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Arnsburg held the northernmost bend of the limes as it curved through the Wetterau plain, built under Domitian before 90 CE to anchor the frontier's most exposed salient. A cohort of auxiliary infantry was based here for the better part of two centuries, watching the open farmland beyond the frontier line.",
+        "sources": [
+          "https://www.deutsche-limeskommission.de/?id=59",
+          "https://de.wikipedia.org/wiki/Kastell_Arnsburg"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.88322,
+          50.39312
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_echzell",
+        "category": "auxiliary_fort",
+        "name_latin": "Castellum Echzell",
+        "name_english": "Echzell Fort",
+        "province": "Germania Superior",
+        "modern_location": "Echzell, Wetteraukreis, Germany",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Echzell was one of the largest auxiliary forts on the Wetterau limes, its earth-and-timber defenses enclosing more than five hectares on the edge of the modern village that still bears its name. Troops here watched the open frontier plain that Domitian's campaigns against the Chatti had brought under Roman control a decade earlier.",
+        "sources": [
+          "https://de.wikipedia.org/wiki/Kastell_Echzell",
+          "https://www.deutsche-limeskommission.de/orl/obergermanischer-limes-hessen/20-echzell/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.9842,
+          50.2226
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_markoebel",
+        "category": "auxiliary_fort",
+        "name_latin": "Castellum Markobel",
+        "name_english": "Markobel Fort",
+        "province": "Germania Superior",
+        "modern_location": "Markobel, Hammersbach, Hesse, Germany",
+        "built": 95,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Markobel held the southeastern end of the Wetterau limes near where it met the Main valley. Pottery finds and brick stamps from Legio XIIII Gemina, withdrawn from Mainz to the Danube around 97 CE, point to an early foundation date under Domitian or Trajan, making it one of the first forts built along this stretch of frontier.",
+        "sources": [
+          "https://de.wikipedia.org/wiki/Kastell_Mark%C3%B6bel"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.98202,
+          50.15362
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_rueckingen",
+        "category": "auxiliary_fort",
+        "name_latin": "Castellum Rueckingen",
+        "name_english": "Ruckingen Fort",
+        "province": "Germania Superior",
+        "modern_location": "Erlensee, Hesse, Germany",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Ruckingen held the southeastern corner of the Wetterau limes where it met the River Kinzig. Archaeological dating places its construction somewhere between 110 and 125 CE, a window that straddles Trajan's death on 11 August 117 CE. Since the fort cannot be confirmed complete by that exact date, it is marked absent from this snapshot rather than assumed finished.",
+        "sources": [
+          "https://de.wikipedia.org/wiki/Kastell_R%C3%BCckingen"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.63677,
+          50.31276
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_kapersburg",
+        "category": "auxiliary_fort",
+        "name_latin": "Castellum Kapersburg",
+        "name_english": "Kapersburg Fort",
+        "province": "Germania Superior",
+        "modern_location": "Wehrheim, Hochtaunuskreis, Germany",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Kapersburg sheltered a mounted scout unit on the Taunus limes, in front of a hill the locals called the Sow's Head. While a Roman military presence in this sector goes back to the first century, the numerus fort whose stone walls are visible today belongs to the limes reinforcement of the later second century, after Trajan's death, so it is excluded from this 117 CE snapshot pending firmer dating of an earlier phase.",
+        "sources": [
+          "https://www.schloesser-hessen.de/en/roemerkastell-kapersburg",
+          "https://naturpark-taunus.de/sehenswertes/historische-staetten/roemerkastell-kapersburg/2254/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.602,
+          48.927
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_munningen",
+        "category": "auxiliary_fort",
+        "name_latin": "Castellum Munningen",
+        "name_english": "Munningen Fort",
+        "province": "Raetia",
+        "modern_location": "Munningen, Donau-Ries, Bavaria, Germany",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Munningen was part of the Alblimes, the chain of forts Domitian pushed north of the Danube into the Nordlingen Ries basin after his Chattian campaigns. Excavations date its founding to around 90 CE, making it one of the earliest Roman military footholds in this stretch of Raetia.",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q27926486"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9625,
+          49.0308
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_weissenburg_biriciana",
+        "category": "auxiliary_fort",
+        "name_latin": "Biriciana",
+        "name_english": "Weissenburg Fort",
+        "province": "Raetia",
+        "modern_location": "Weissenburg in Bayern, Germany",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Biriciana was raised in timber around 90 CE to hold the ground Domitian had newly won north of the Danube, garrisoning roughly three hectares behind earth ramparts. The fort was rebuilt in stone in the mid-second century, well after the 117 CE snapshot, and its museum today displays one of the best-preserved collections of Roman cavalry parade armor ever found.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Biriciana",
+          "https://followinghadrianphotography.com/2017/03/28/biriciana-kastell-weisenburg/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7045,
+          49.0572
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_gnotzheim_mediana",
+        "category": "auxiliary_fort",
+        "name_latin": "Castra Mediana",
+        "name_english": "Gnotzheim Fort",
+        "province": "Raetia",
+        "modern_location": "Gnotzheim, Bavaria, Germany",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Mediana was among the oldest forts on the Raetian limes, raised in wood and earth under Domitian in the late first century. A military diploma confirms a cavalry cohort, the Cohors V Bracaraugustanorum, garrisoned here by 107 CE. Its stone rebuild, dated by inscription to 144 CE, came decades after the 117 CE snapshot.",
+        "sources": [
+          "https://edh.ub.uni-heidelberg.de/edh/geographie/G024466"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.1497,
+          48.0561
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_gerulata",
+        "category": "auxiliary_fort",
+        "name_latin": "Gerulata",
+        "name_english": "Gerulata Fort",
+        "province": "Pannonia Superior",
+        "modern_location": "Rusovce, Bratislava, Slovakia",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Gerulata held a bend of the Danube just downstream from Carnuntum, its earth-and-timber fort raised under Domitian in the late first century. During Trajan's reign the cavalry unit Ala I Cannanefatium took over the garrison, part of the general strengthening of the Danube frontier during the Dacian Wars.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Gerulata",
+          "https://www.visitbratislava.com/places/ancient-gerulata-rusovce/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.74167,
+          47.79556
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_solva",
+        "category": "auxiliary_fort",
+        "name_latin": "Solva",
+        "name_english": "Esztergom Roman Fort",
+        "province": "Pannonia Inferior",
+        "modern_location": "Esztergom, Hungary",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Solva watched a strategic bend of the Danube on the Pannonian frontier, garrisoned by the thousand-strong Cohors I Ulpia Pannoniorum. The settlement grew enough around its military camp that Hadrian granted it town status in 121 CE, a step that presumes a well-established fort already standing here by the 117 CE snapshot.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Solva_(Hungary)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.4926,
+          34.4452
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_ad_maiores",
+        "category": "auxiliary_fort",
+        "name_latin": "Ad Maiores",
+        "name_english": "Besseriani Fort",
+        "province": "Numidia",
+        "modern_location": "Henchir Besseriani, near Negrine, Algeria",
+        "built": 105,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Ad Maiores was built in 104 or 105 CE on the orders of Minicius Natalis, legate of the Third Augustan Legion, to anchor the desert edge of Numidia's frontier southeast of the Aures mountains. It marks the Trajanic-era origin of the fortified line that would later be extended and consolidated as the Fossatum Africae.",
+        "sources": [
+          "https://journals.openedition.org/encyclopedieberbere/1701?lang=en",
+          "https://en.wikipedia.org/wiki/Fossatum_Africae"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5228,
+          34.6367
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_gemellae",
+        "category": "auxiliary_fort",
+        "name_latin": "Gemellae",
+        "name_english": "Gemellae Fort",
+        "province": "Numidia",
+        "modern_location": "near Biskra, Algeria",
+        "built": 126,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Gemellae was the best-studied strongpoint of the Fossatum Africae, its ditch and rampart mapped in detail by aerial photography on the edge of the Sahara. It was established around 126 CE under Hadrian, roughly a decade after Trajan's death, so it falls outside this snapshot even though it anchors the frontier system the Trajanic sections fed into.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Gemellae",
+          "https://en.wikipedia.org/wiki/Fossatum_Africae"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.3042,
+          45.0339
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_buridava",
+        "category": "auxiliary_fort",
+        "name_latin": "Buridava",
+        "name_english": "Buridava Fort",
+        "province": "Dacia",
+        "modern_location": "Stolniceni, Valcea County, Romania",
+        "built": 103,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Buridava was raised soon after Trajan's First Dacian War, part of the new chain of forts strung along the east bank of the Olt river to hold the freshly won province. Three successive auxiliary cohorts garrisoned it over the following decades, and it briefly served as headquarters for the governor of Moesia Inferior's forces during the Dacian campaigns.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Buridava_(castra)",
+          "https://www.academia.edu/11391784/The_end_of_the_Roman_habitation_at_Buridava_Stolniceni_V%C3%A2lcea_County_"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.3772,
+          45.2092
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_castra_traiana",
+        "category": "auxiliary_fort",
+        "name_latin": "Castra Traiana",
+        "name_english": "Castra Traiana Fort",
+        "province": "Dacia",
+        "modern_location": "Sambotin, Valcea County, Romania",
+        "built": 103,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Castra Traiana takes its name directly from its builder: an earthwork fort with double ditches raised between 102 and 105 CE during Trajan's Dacian Wars, part of the Limes Alutanus running up the Olt river valley. Brick stamps from the Cohors Hispanorum mark its first garrison.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Castra_Traiana"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.217,
+          44.867
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_pons_aluti",
+        "category": "auxiliary_fort",
+        "name_latin": "Pons Aluti",
+        "name_english": "Pons Aluti Fort",
+        "province": "Dacia",
+        "modern_location": "Ionestii Govorei, Valcea County, Romania",
+        "built": 102,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Pons Aluti controlled a crossing of the Olt river on the new Dacian frontier road, its name meaning simply Bridge over the Aluta. An inscription dated to 102 CE names it as a customs post, making it one of the earliest firmly dated points on the entire Limes Alutanus.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pons_Aluti_(castra)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.306776,
+          45.509468
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_pons_vetus",
+        "category": "auxiliary_fort",
+        "name_latin": "Pons Vetus",
+        "name_english": "Pons Vetus Fort",
+        "province": "Dacia",
+        "modern_location": "Cainenii Mici, Valcea County, Romania",
+        "built": 102,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Pons Vetus sat on the left bank of the Olt at the mountain gateway into Dacia, recorded on the Tabula Peutingeriana and by the geographer of Ravenna as a customs station. An inscription of 102 CE naming it a statio vamalis places it firmly in the opening years of Trajan's Dacian frontier.",
+        "sources": [
+          "https://ro.wikipedia.org/wiki/Castrul_roman_de_la_C%C3%A2ineni",
+          "https://vici.org/vici/3298/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.25,
+          44.65
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_rusidava",
+        "category": "auxiliary_fort",
+        "name_latin": "Rusidava",
+        "name_english": "Rusidava Fort",
+        "province": "Dacia",
+        "modern_location": "Momotesti, Draganesti, Olt County, Romania",
+        "built": 105,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Rusidava held the southern stretch of the Limes Alutanus where the Olt valley opens onto the Wallachian plain, part of the same wave of fort-building that followed Trajan's conquest of Dacia. Its precise foundation year is not pinned down as tightly as its neighbors up the valley, but it belongs to the same early Trajanic chain along the river.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Rusidava_(castra)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.3139,
+          45.3944
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_praetorium_i",
+        "category": "auxiliary_fort",
+        "name_latin": "Praetorium",
+        "name_english": "Praetorium Fort",
+        "province": "Dacia",
+        "modern_location": "Copaceni, Racovita, Valcea County, Romania",
+        "built": 138,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Praetorium reinforced the Limes Alutanus roughly midway up the Olt valley, garrisoned by a unit of couriers and border guards known as the numerus Burgariorum et Veredariorum. Construction is dated to 138 CE, two decades after Trajan's death, so it postdates this snapshot even though it filled a gap in the same Trajanic-era frontier line.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Praetorium_I_(Cop%C4%83ceni)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.348,
+          45.238
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_arutela",
+        "category": "auxiliary_fort",
+        "name_latin": "Arutela",
+        "name_english": "Arutela Fort",
+        "province": "Dacia",
+        "modern_location": "Caciulata, Calimanesti, Valcea County, Romania",
+        "built": 138,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Arutela stood where the Olt river valley narrows into the Carpathian foothills, a strongpoint on the Limes Alutanus later famous for its attached bath complex. It was founded in 138 CE, during Hadrian's reign, so despite anchoring the same river-line frontier that Trajan began, it did not yet exist at the 117 CE snapshot.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Arutela"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
