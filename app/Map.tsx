@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { applyAllLayers } from "./useLayers";
-import { selectPoi, clearPoi } from "./usePoiPanel";
+import { selectPoi, clearPoi, getSelectedPoi, subscribeSelectedPoi } from "./usePoiPanel";
 import { categoryColorMatchPairs, DEFAULT_COLOR } from "./poiCategories";
 import { ostiaEntry } from "./ostiaDescriptions";
 import { SITE_META } from "./sites";
@@ -68,6 +68,12 @@ export default function Map() {
     let onWinResize: (() => void) | null = null;
     let onPopState: (() => void) | null = null;
     let pushTimer: ReturnType<typeof setTimeout> | null = null;
+    let unsubPoi: (() => void) | null = null;
+    // Populated once pois.geojson loads (Phase 4 below) so a shared #lng,lat,zoomz:poiId link —
+    // or a back/forward step onto one — can look the place back up and reopen its panel.
+    // (Plain object, not a `Map` instance — this component is itself named `Map`, which shadows
+    // the built-in class inside this function body.)
+    let poiIndex: Record<string, { props: Record<string, any>; coords: [number, number] }> | null = null;
     const P: Palette = prefersDark() ? DARK : LIGHT;
 
     (async () => {
@@ -189,16 +195,20 @@ export default function Map() {
       onWinResize = kick;
       window.addEventListener("resize", onWinResize);
 
-      // Coordinates URL sync — keep #lng,lat,zoomz in the hash as the user pans/zooms/flies
-      // anywhere (search, site jump, context menu), and make back/forward retrace those stops.
-      // The very first write replaces the current history entry rather than pushing a new one,
-      // so loading the app doesn't itself consume a "back" step.
+      // Coordinates + selected-place URL sync — keep #lng,lat,zoomz[:poiId] in the hash as the
+      // user pans/zooms/flies anywhere (search, site jump, context menu) or opens/closes a place
+      // panel, and make back/forward retrace those stops. The very first write replaces the
+      // current history entry rather than pushing a new one, so loading the app doesn't itself
+      // consume a "back" step. This is what makes the Place details panel's "Copy link" button
+      // (app/PlaceDetails.tsx) share a URL that reopens the same place, not just the same view.
       let firstHashWrite = true;
       let suppressNextPush = !!initialView;
       const writeHash = () => {
         if (!map) return;
         const c = map.getCenter();
-        const hash = formatHash(c.lng, c.lat, map.getZoom());
+        const sel = getSelectedPoi();
+        const poiId = sel && typeof sel.props?.id === "string" ? sel.props.id : undefined;
+        const hash = formatHash(c.lng, c.lat, map.getZoom(), poiId);
         if (window.location.hash === hash) return;
         if (firstHashWrite) {
           firstHashWrite = false;
@@ -215,12 +225,20 @@ export default function Map() {
         if (pushTimer) clearTimeout(pushTimer);
         pushTimer = setTimeout(writeHash, 400);
       });
+      // Selecting/clearing a place is a discrete user action (click a pin, click a building, hit
+      // Esc) — write immediately rather than debouncing like the continuous pan/zoom stream above.
+      unsubPoi = subscribeSelectedPoi(() => writeHash());
       onPopState = () => {
         if (!map) return;
         const view = parseHash(window.location.hash);
         if (!view) return;
         suppressNextPush = true;
         map.flyTo({ center: [view.lng, view.lat], zoom: view.zoom, duration: 600 });
+        if (view.poiId && poiIndex && poiIndex[view.poiId]) {
+          selectPoi(poiIndex[view.poiId].props, poiIndex[view.poiId].coords);
+        } else {
+          clearPoi();
+        }
       };
       window.addEventListener("popstate", onPopState);
 
@@ -356,6 +374,20 @@ export default function Map() {
         // Phase 4: curated POIs (temples, baths, monuments...) — richer than the raw gazetteer dots.
         const pois = await fetch("/data/pois.geojson").then((r) => r.json());
         if (cancelled || !map) return;
+
+        // Index by id for the shareable-URL restore below (initial load here; back/forward via
+        // the popstate handler wired earlier, which reads this same index once populated).
+        poiIndex = {};
+        for (const f of pois.features || []) {
+          const id = f?.properties?.id;
+          if (typeof id === "string" && f.geometry?.type === "Point") {
+            poiIndex[id] = { props: f.properties, coords: f.geometry.coordinates as [number, number] };
+          }
+        }
+        if (initialView?.poiId && poiIndex[initialView.poiId]) {
+          selectPoi(poiIndex[initialView.poiId].props, poiIndex[initialView.poiId].coords);
+        }
+
         map.addSource("pois", { type: "geojson", data: pois });
         map.addLayer({
           id: "pois-dot",
@@ -1089,6 +1121,7 @@ export default function Map() {
       cancelled = true;
       if (onWinResize) window.removeEventListener("resize", onWinResize);
       if (onPopState) window.removeEventListener("popstate", onPopState);
+      if (unsubPoi) unsubPoi();
       if (pushTimer) clearTimeout(pushTimer);
       if (ro) ro.disconnect();
       if (map) map.remove();
@@ -1100,20 +1133,23 @@ export default function Map() {
 
 /** Parses a `#lng,lat,zoomz` location hash (e.g. `#12.4964,41.9028,4.20z`) into a view, or null
  * if the hash is empty/malformed. */
-function parseHash(hash: string): { lng: number; lat: number; zoom: number } | null {
+function parseHash(hash: string): { lng: number; lat: number; zoom: number; poiId?: string } | null {
   const raw = hash.startsWith("#") ? hash.slice(1) : hash;
-  const m = raw.match(/^(-?\d+\.?\d*),(-?\d+\.?\d*),(-?\d+\.?\d*)z$/);
+  // Optional trailing `:<poiId>` shares which place's panel was open, on top of the camera view
+  // the coordinates-sync already covered. `poiId` matches a pois.geojson feature's own `id`.
+  const m = raw.match(/^(-?\d+\.?\d*),(-?\d+\.?\d*),(-?\d+\.?\d*)z(?::([\w-]+))?$/);
   if (!m) return null;
   const lng = parseFloat(m[1]);
   const lat = parseFloat(m[2]);
   const zoom = parseFloat(m[3]);
   if (!isFinite(lng) || !isFinite(lat) || !isFinite(zoom)) return null;
   if (lng < -180 || lng > 180 || lat < -90 || lat > 90) return null;
-  return { lng, lat, zoom };
+  return { lng, lat, zoom, poiId: m[4] || undefined };
 }
 
-function formatHash(lng: number, lat: number, zoom: number): string {
-  return `#${lng.toFixed(4)},${lat.toFixed(4)},${zoom.toFixed(2)}z`;
+function formatHash(lng: number, lat: number, zoom: number, poiId?: string): string {
+  const base = `#${lng.toFixed(4)},${lat.toFixed(4)},${zoom.toFixed(2)}z`;
+  return poiId ? `${base}:${poiId}` : base;
 }
 
 function escapeHtml(s: string): string {
