@@ -25,8 +25,16 @@ function titleCase(s: string): string {
 
 /** Google-Maps-style place details panel: click a POI (app/Map.tsx pois-dot layer) to open,
  * slides in from the left on desktop / up from the bottom on mobile. Replaces the old Maplibre
- * click-popup. Drag-to-expand bottom sheet + "Directions to here" wiring are future upgrades
- * (Directions itself hasn't shipped yet). */
+ * click-popup. On mobile the sheet snaps between a half-height and a full-height state via the
+ * drag handle at its top edge; dragging well below half height dismisses it. "Directions to here"
+ * wiring is a future upgrade (Directions itself hasn't shipped yet). */
+// Mobile bottom-sheet snap heights, as vh. Drag the handle to move between them; dragging well
+// below the half height dismisses the panel (mirrors Google Maps mobile's sheet behavior).
+const SHEET_HALF_VH = 55;
+const SHEET_FULL_VH = 92;
+const SHEET_MIN_PX = 80;
+const SHEET_DISMISS_SLACK_PX = 120;
+
 export default function PlaceDetails() {
   const selected = usePoiPanel();
   const [rendered, setRendered] = useState<{ props: Record<string, any>; lngLat: [number, number] } | null>(null);
@@ -35,9 +43,53 @@ export default function PlaceDetails() {
   const [copied, setCopied] = useState(false);
   const copyTimer = useRef<number | undefined>(undefined);
 
+  // Drag-to-expand bottom sheet (mobile only). `sheetState` is the committed snap point;
+  // `dragPx` is a live height override while a drag gesture is in progress (null when idle).
+  const [sheetState, setSheetState] = useState<"half" | "full">("half");
+  const [dragPx, setDragPx] = useState<number | null>(null);
+
   useEffect(() => {
-    if (selected) setRendered(selected);
+    if (selected) {
+      setRendered(selected);
+      setSheetState("half");
+      setDragPx(null);
+    }
   }, [selected]);
+
+  const heightPxFor = (state: "half" | "full") => (state === "full" ? SHEET_FULL_VH : SHEET_HALF_VH) / 100 * window.innerHeight;
+
+  // Window-level listeners (not element-level) so the drag tracks the pointer even once it leaves
+  // the small handle's own bounds. All state for one gesture lives in this closure — added and
+  // removed as a matched pair per pointerdown, so there's no stale-listener risk across re-renders.
+  const onHandlePointerDown = (e: React.PointerEvent) => {
+    if (!isMobile) return;
+    const startY = e.clientY;
+    const startHeightPx = heightPxFor(sheetState);
+    let currentPx = startHeightPx;
+
+    const onMove = (ev: PointerEvent) => {
+      const delta = startY - ev.clientY; // drag up = positive = taller
+      const maxPx = heightPxFor("full");
+      currentPx = Math.min(maxPx, Math.max(SHEET_MIN_PX, startHeightPx + delta));
+      setDragPx(currentPx);
+    };
+    const onUp = () => {
+      window.removeEventListener("pointermove", onMove);
+      window.removeEventListener("pointerup", onUp);
+      window.removeEventListener("pointercancel", onUp);
+      setDragPx(null);
+      const halfPx = heightPxFor("half");
+      const fullPx = heightPxFor("full");
+      if (currentPx < halfPx - SHEET_DISMISS_SLACK_PX) {
+        clearPoi();
+        return;
+      }
+      setSheetState(currentPx >= (halfPx + fullPx) / 2 ? "full" : "half");
+    };
+    window.addEventListener("pointermove", onMove);
+    window.addEventListener("pointerup", onUp);
+    window.addEventListener("pointercancel", onUp);
+  };
 
   useEffect(() => {
     if (!open) return;
@@ -104,15 +156,17 @@ export default function PlaceDetails() {
     }).catch(() => {});
   };
 
+  const isDragging = dragPx !== null;
   const panelStyle: React.CSSProperties = isMobile
     ? {
         position: "absolute",
         left: 0,
         right: 0,
         bottom: 0,
-        maxHeight: "55vh",
+        maxHeight: isDragging ? `${dragPx}px` : `${sheetState === "full" ? SHEET_FULL_VH : SHEET_HALF_VH}vh`,
         borderRadius: "12px 12px 0 0",
         transform: open ? "translateY(0)" : "translateY(110%)",
+        transition: isDragging ? "transform 220ms ease" : "transform 220ms ease, max-height 200ms ease",
       }
     : {
         position: "absolute",
@@ -123,6 +177,7 @@ export default function PlaceDetails() {
         maxWidth: "calc(100vw - 20px)",
         borderRadius: 8,
         transform: open ? "translateX(0)" : "translateX(-120%)",
+        transition: "transform 220ms ease",
       };
 
   return (
@@ -135,7 +190,6 @@ export default function PlaceDetails() {
         background: "#fff",
         boxShadow: "0 1px 4px -1px rgba(0,0,0,.3), 0 4px 16px rgba(0,0,0,.2)",
         zIndex: 7,
-        transition: "transform 220ms ease",
         display: "flex",
         flexDirection: "column",
         overflow: "hidden",
@@ -143,6 +197,22 @@ export default function PlaceDetails() {
       role="dialog"
       aria-label="Place details"
     >
+      {isMobile && (
+        <div
+          onPointerDown={onHandlePointerDown}
+          style={{
+            flexShrink: 0,
+            width: "100%",
+            padding: "9px 0 7px",
+            display: "flex",
+            justifyContent: "center",
+            touchAction: "none",
+            cursor: "grab",
+          }}
+        >
+          <div style={{ width: 36, height: 4, borderRadius: 999, background: "#dadce0" }} />
+        </div>
+      )}
       {/* Hero band: an artist rendering / engraving / reconstruction (image_url on the POI).
        * When no image is supplied we fall back to a thin category-tinted rail — no empty gray
        * slab. Image credit renders under the picture, kept small so it doesn't crowd the title. */}
