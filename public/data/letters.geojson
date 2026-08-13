@@ -1,0 +1,586 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3464,
+          41.7083
+        ]
+      },
+      "properties": {
+        "id": "letters_node_pliny_laurentum",
+        "name": "Pliny's Laurentine Villa",
+        "node_type": "origin",
+        "person": "Pliny the Younger",
+        "one_line": "Pliny the Younger built this seaside retreat just seventeen Roman miles from the city and mapped its heated baths, sea-facing dining hall, and book-lined tower in a letter to a friend. He wintered here to write undisturbed, boasting he could hunt wild boar without ever leaving his desk. Archaeologists have proposed the Villa della Palombara ruins in the Castel Fusano pine forest as its site, though the identification remains debated.",
+        "province": "Italia",
+        "modern_location": "Castel Fusano, Ostia, Rome, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "Plin. Ep. 2.17",
+          "https://en.wikipedia.org/wiki/Villa_della_Palombara",
+          "https://www.romanports.org/en/articles/human-interest/167-a-country-house-with-a-view.html",
+          "https://www.gardenvisit.com/gardens/plinys_villa_at_laurentinum"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa_della_Palombara.png?width=800",
+        "image_credit": "Plan of the Villa della Palombara, a candidate site for Pliny's Laurentine villa · Wikimedia Commons",
+        "image_alt": "Archaeological plan of the Villa della Palombara near Castel Fusano"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1765,
+          43.5485
+        ]
+      },
+      "properties": {
+        "id": "letters_node_pliny_tuscis",
+        "name": "Pliny's Tuscan Villa",
+        "node_type": "origin",
+        "person": "Pliny the Younger",
+        "one_line": "Pliny the Younger ran this hillside estate above the Tiber valley near Tifernum Tiberinum, describing box hedges clipped into animal shapes and even his own name spelled out in topiary. He served as the nearby town's civic patron and retreated here for months of grape harvests, hunting, and writing. Archaeologists excavated its baths, granary, and wine-press rooms at Colle Plinio between 1986 and 2003.",
+        "province": "Italia",
+        "modern_location": "San Giustino, Umbria, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "Plin. Ep. 5.6",
+          "https://en.wikipedia.org/wiki/Roman_Villa_of_Pliny_%22in_Tuscis%22",
+          "https://muamuseiumbria.it/en/musei/villa-graziani-e-museo-archeologico-della-villa-di-plinio-il-giovane-2/",
+          "https://www.keytoumbria.com/Citta_di_Castello/Pliny_Villa.html"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/San_Giustino_-_Villa_Magherini_Graziani_e_Museo_archeologico_della_Villa_di_Plinio_il_Giovane_-_2025-09-03_14-01-12_002.jpeg?width=800",
+        "image_credit": "Villa Magherini Graziani, home of the Museo Pliniano near Colle Plinio · Wikimedia Commons",
+        "image_alt": "Villa Magherini Graziani, which houses finds from Pliny's Tuscan villa excavation"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0852,
+          45.8081
+        ]
+      },
+      "properties": {
+        "id": "letters_node_pliny_comum",
+        "name": "Pliny's Villa at Como",
+        "node_type": "origin",
+        "person": "Pliny the Younger",
+        "one_line": "Pliny the Younger grew up in this lakeside town and later paid 1 million sesterces of his own money to build it a public library, then endowed a school so local boys would not have to study away from home. He owned several villas around the lake, nicknaming two of them Comedy and Tragedy for how one perched on a ridge and the other sat right at the water's edge. A carved stone statue of him still flanks the doorway of Como's cathedral.",
+        "province": "Italia",
+        "modern_location": "Como, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "Plin. Ep. 1.8",
+          "Plin. Ep. 4.13",
+          "Plin. Ep. 9.7",
+          "https://en.wikipedia.org/wiki/Pliny%27s_Comedy_and_Tragedy_villas",
+          "https://en.wikipedia.org/wiki/Pliny_the_Younger"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Como_Plinio_Nepote_sulla_facciata_del_Duomo.jpg?width=800",
+        "image_credit": "Statue of Pliny the Younger on the facade of Como Cathedral · Wikimedia Commons",
+        "image_alt": "Stone statue of Pliny the Younger on Como Cathedral's facade"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      },
+      "properties": {
+        "id": "letters_node_tacitus_rome",
+        "name": "Tacitus",
+        "node_type": "recipient",
+        "person": "Cornelius Tacitus",
+        "one_line": "Pliny the Younger once wrote to the historian Tacitus bragging that he had bagged three wild boars while sitting by the hunting nets with a stylus and tablets instead of a spear. When Tacitus later asked for an eyewitness account of the eruption that killed Pliny's uncle, Pliny answered with two of his most famous letters. The two traded courtroom gossip, book recommendations, and mutual literary flattery for nearly two decades.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 1.6",
+          "Plin. Ep. 6.16",
+          "Plin. Ep. 6.20",
+          "Plin. Ep. 7.20",
+          "https://dcc.dickinson.edu/tacitus-agricola/pearce-intro/tacitus-in-pliny-letters"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Statue_of_Gaius_Cornelius_Tacitus_in_front_of_the_austrian_parliament.jpg?width=800",
+        "image_credit": "Modern statue of Cornelius Tacitus, Austrian Parliament Building · Wikimedia Commons",
+        "image_alt": "19th-century statue of Cornelius Tacitus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      },
+      "properties": {
+        "id": "letters_node_suetonius_rome",
+        "name": "Suetonius",
+        "node_type": "recipient",
+        "person": "Suetonius",
+        "one_line": "Pliny the Younger mentored the young biographer Suetonius, once asking a friend to negotiate a fair price on a small country property Suetonius wanted to buy. In another letter Pliny begged a magistrate to postpone a court date because Suetonius had been rattled by a bad dream. While governing Bithynia, Pliny personally asked Emperor Trajan to grant Suetonius the legal privileges reserved for fathers of three children, even though he had none.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 1.18",
+          "Plin. Ep. 1.24",
+          "Plin. Ep. 5.10",
+          "Plin. Ep. 10.94",
+          "Plin. Ep. 10.95",
+          "https://en.wikipedia.org/wiki/Suetonius"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Suetonius_etching_(cropped).jpg?width=800",
+        "image_credit": "19th-century etched portrait of Suetonius · Wikimedia Commons",
+        "image_alt": "Etched portrait of the biographer Suetonius"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      },
+      "properties": {
+        "id": "letters_node_trajan_rome",
+        "name": "Trajan",
+        "node_type": "recipient",
+        "person": "Emperor Trajan",
+        "one_line": "Pliny the Younger sent Emperor Trajan 121 official letters while governing Bithynia-Pontus, and Trajan wrote back to nearly all of them, leaving the only surviving governor-emperor correspondence from the Roman world. Their exchange covered a runaway municipal budget, a dangerous fire brigade request, and what to do with Christians who refused to curse Christ's name. Pliny sent the most famous of these letters, on the Christians, from the province around AD 112.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 10.96",
+          "Plin. Ep. 10.97",
+          "Plin. Ep. 10.33",
+          "Plin. Ep. 10.34",
+          "https://www.albert.io/blog/pliny-trajan-correspondence-ap-latin-review/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Traianus_Glyptothek_Munich_336.jpg?width=800",
+        "image_credit": "Marble portrait bust of Trajan, Glyptothek Munich · Wikimedia Commons",
+        "image_alt": "Marble bust of the emperor Trajan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0852,
+          45.8081
+        ]
+      },
+      "properties": {
+        "id": "letters_node_calpurnia_comum",
+        "name": "Calpurnia",
+        "node_type": "recipient",
+        "person": "Calpurnia",
+        "one_line": "Pliny the Younger married Calpurnia, the orphaned granddaughter of a wealthy Comum landowner, and stayed devoted through years of separation for his official travels. While she recovered from illness at her grandfather's estate near the lake, Pliny wrote that he kept picking her letters back up and reading them again 'as though they were new.' She set his speeches and poems to music without ever having had a singing lesson.",
+        "province": "Italia",
+        "modern_location": "Como, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 6.4",
+          "Plin. Ep. 6.7",
+          "Plin. Ep. 7.5",
+          "Plin. Ep. 4.19",
+          "https://en.wikipedia.org/wiki/Calpurnia_(wife_of_Pliny_the_Younger)"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lago_di_Como_2016-06-25_pano_Perledo_Vezio.jpg?width=800",
+        "image_credit": "Lake Como, viewed near Perledo · Wikimedia Commons",
+        "image_alt": "Panorama of Lake Como near the shoreline"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2775,
+          39.6797
+        ]
+      },
+      "properties": {
+        "id": "letters_node_voconius_romanus_saguntum",
+        "name": "Voconius Romanus",
+        "node_type": "recipient",
+        "person": "Voconius Romanus",
+        "one_line": "Pliny the Younger befriended Voconius Romanus as a schoolboy and stayed loyal for life, first winning him senatorial-rank honors and then personally asking Emperor Trajan to promote him to equestrian status. Romanus came from Saguntum, the town that endured an eight-month siege by Hannibal in 219 BC rather than surrender to Carthage. Pliny called their friendship one that time and distance had never touched.",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Sagunto, Valencia, Spain",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 2.13",
+          "Plin. Ep. 10.4",
+          "Plin. Ep. 9.28",
+          "https://www.oxfordreference.com/display/10.1093/acref/9780198606413.001.0001/acref-9780198606413-e-6843"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sagunto_Teatro.JPG?width=800",
+        "image_credit": "Roman theatre of Saguntum, Sagunto · Wikimedia Commons",
+        "image_alt": "Roman theatre at Sagunto, ancient Saguntum"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      },
+      "properties": {
+        "id": "letters_node_septicius_clarus_rome",
+        "name": "Septicius Clarus",
+        "node_type": "recipient",
+        "person": "Septicius Clarus",
+        "one_line": "Pliny the Younger published his nine books of private letters at the urging of his friend Septicius Clarus, opening the whole collection with a letter addressed directly to him. Clarus later commanded the Praetorian Guard under Hadrian, before being dismissed alongside the biographer Suetonius around AD 122. Pliny once teased him in a letter for skipping a modest home dinner of lettuce and snails to feast on oysters, sow's womb, and dancing girls elsewhere.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 1.1",
+          "Plin. Ep. 1.15",
+          "Plin. Ep. 7.28",
+          "https://en.wikipedia.org/wiki/Gaius_Septicius_Clarus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Forum_Romanum_panorama_2.jpg?width=800",
+        "image_credit": "The Roman Forum · Wikimedia Commons",
+        "image_alt": "Panorama of the Roman Forum"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      },
+      "properties": {
+        "id": "letters_node_arrius_antoninus_rome",
+        "name": "Arrius Antoninus",
+        "node_type": "recipient",
+        "person": "Gnaeus Arrius Antoninus",
+        "one_line": "Pliny the Younger admired the twice-consul Gnaeus Arrius Antoninus enough to translate some of his Greek epigrams into Latin, then admitted the exercise only proved how much better the originals were. Antoninus served as proconsul of Asia and held the consulship twice, in AD 69 and again in 97. He later became step-grandfather to a future emperor, Antoninus Pius.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 4.3",
+          "Plin. Ep. 4.18",
+          "Plin. Ep. 5.15",
+          "https://en.wikipedia.org/wiki/Gnaeus_Arrius_Antoninus"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Forum_West_end_panorama.jpg?width=800",
+        "image_credit": "The west end of the Roman Forum · Wikimedia Commons",
+        "image_alt": "View across the western end of the Roman Forum"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0852,
+          45.8081
+        ]
+      },
+      "properties": {
+        "id": "letters_node_caninius_rufus_comum",
+        "name": "Caninius Rufus",
+        "node_type": "recipient",
+        "person": "Caninius Rufus",
+        "one_line": "Pliny the Younger nagged his boyhood friend Caninius Rufus, a fellow Comum landowner, to stop lounging beside his lakeside villa and finally write the epic poem he had long been planning about Trajan's Dacian Wars of AD 101 to 106. Pliny teased that Rufus's plane trees, spring-fed pool, and sun-warmed baths made idling far too easy. Whether Rufus ever finished the poem is unknown.",
+        "province": "Italia",
+        "modern_location": "Como, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 1.3",
+          "Plin. Ep. 8.4",
+          "Plin. Ep. 3.7",
+          "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bellagio,_Lake_Como,_Italy_(51180622244).jpg?width=800",
+        "image_credit": "Bellagio on Lake Como · Wikimedia Commons",
+        "image_alt": "View of a Lake Como shoreline town"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0852,
+          45.8081
+        ]
+      },
+      "properties": {
+        "id": "letters_node_calvisius_rufus_comum",
+        "name": "Calvisius Rufus",
+        "node_type": "recipient",
+        "person": "Calvisius Rufus",
+        "one_line": "Pliny the Younger leaned on his fellow townsman Calvisius Rufus, a Comum-born Roman knight, for investment advice before buying a farm bordering his own land. The estate had once sold for 5 million sesterces but was going for 3 million because hard times had stripped it of tenants. Calvisius also served as Pliny's sounding board for Senate gossip and courtroom drama back in Rome.",
+        "province": "Italia",
+        "modern_location": "Como, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 3.19",
+          "Plin. Ep. 2.20",
+          "Plin. Ep. 3.1",
+          "https://www.bartleby.com/9/4/1036.html"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Il_lago_di_Como_visto_dai_monti.JPG?width=800",
+        "image_credit": "Lake Como seen from the surrounding hills · Wikimedia Commons",
+        "image_alt": "Lake Como landscape viewed from the hills above"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6624,
+          45.7051
+        ]
+      },
+      "properties": {
+        "id": "letters_node_cornelius_minicianus_bergomum",
+        "name": "Cornelius Minicianus",
+        "node_type": "recipient",
+        "person": "Cornelius Minicianus",
+        "one_line": "Pliny the Younger called his friend Cornelius Minicianus 'the ornament of his region,' the Roman town of Bergomum in the Alpine foothills. He tried and failed to win Minicianus a military tribunate, then kept him updated for months on the sensational Senate trial of Caecilius Classicus, a former governor of Baetica accused of provincial corruption. Pliny once turned down one of Minicianus's own invitations only because he had already promised to attend a friend's recitation.",
+        "province": "Italia",
+        "modern_location": "Bergamo, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 3.9",
+          "Plin. Ep. 4.11",
+          "Plin. Ep. 8.12",
+          "https://www.humot.it/archives/1472"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bergamo_Citt%C3%A0_Alta.JPG?width=800",
+        "image_credit": "Città Alta, the historic upper town of Bergamo · Wikimedia Commons",
+        "image_alt": "View of Bergamo's historic upper town"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            9.0852,
+            45.8081
+          ],
+          [
+            12.4964,
+            41.9028
+          ]
+        ]
+      },
+      "properties": {
+        "id": "letters_route_comum_rome_tacitus",
+        "from": "Como",
+        "to": "Rome",
+        "note": "Pliny and Tacitus exchanged letters across the length of Italy for close to two decades, including the two famous eyewitness letters describing the eruption of Vesuvius.",
+        "sources": [
+          "Plin. Ep. 1.6",
+          "Plin. Ep. 6.16",
+          "Plin. Ep. 6.20",
+          "Plin. Ep. 7.20"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            12.3464,
+            41.7083
+          ],
+          [
+            29.9167,
+            40.7667
+          ]
+        ]
+      },
+      "properties": {
+        "id": "letters_route_laurentum_bithynia",
+        "from": "Pliny's Laurentine Villa",
+        "to": "Nicomedia",
+        "note": "Traces the roughly 1,500-mile span of Book 10: official dispatches Pliny sent from his governor's seat at Nicomedia in Bithynia-Pontus, and Trajan's replies, shown here against Pliny's usual Italian home base.",
+        "sources": [
+          "Plin. Ep. 10.15-10.121",
+          "https://www.livius.org/articles/person/pliny-the-younger/pliny-the-younger-10/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            9.0852,
+            45.8081
+          ],
+          [
+            12.4964,
+            41.9028
+          ]
+        ]
+      },
+      "properties": {
+        "id": "letters_route_comum_rome_suetonius",
+        "from": "Como",
+        "to": "Rome",
+        "note": "Pliny mentored the young biographer Suetonius from early in his career, helping him buy property in Italy and later asking Trajan to grant him special legal privileges.",
+        "sources": [
+          "Plin. Ep. 1.24",
+          "Plin. Ep. 10.94",
+          "Plin. Ep. 10.95"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            9.0852,
+            45.8081
+          ],
+          [
+            -0.2775,
+            39.6797
+          ]
+        ]
+      },
+      "properties": {
+        "id": "letters_route_comum_saguntum",
+        "from": "Como",
+        "to": "Saguntum",
+        "note": "Pliny stayed in lifelong contact with his schoolboy friend Voconius Romanus in Spain, campaigning twice to raise his official rank.",
+        "sources": [
+          "Plin. Ep. 2.13",
+          "Plin. Ep. 10.4"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            9.0852,
+            45.8081
+          ],
+          [
+            12.4964,
+            41.9028
+          ]
+        ]
+      },
+      "properties": {
+        "id": "letters_route_comum_rome_septicius",
+        "from": "Como",
+        "to": "Rome",
+        "note": "Septicius Clarus's urging is credited with persuading Pliny to publish his letter collection, which opens with a letter addressed to him.",
+        "sources": [
+          "Plin. Ep. 1.1"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            9.0852,
+            45.8081
+          ],
+          [
+            9.6624,
+            45.7051
+          ]
+        ]
+      },
+      "properties": {
+        "id": "letters_route_comum_bergomum",
+        "from": "Como",
+        "to": "Bergamo",
+        "note": "Pliny corresponded with Cornelius Minicianus, a leading citizen of nearby Bergomum, about patronage requests and the Classicus corruption trial.",
+        "sources": [
+          "Plin. Ep. 3.9",
+          "Plin. Ep. 4.11"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            12.4964,
+            41.9028
+          ],
+          [
+            9.0852,
+            45.8081
+          ]
+        ]
+      },
+      "properties": {
+        "id": "letters_route_rome_comum_calpurnia",
+        "from": "Rome",
+        "to": "Como",
+        "note": "Pliny wrote his wife Calpurnia longing letters from Rome while she recovered from illness at her grandfather's estate near Comum.",
+        "sources": [
+          "Plin. Ep. 6.4",
+          "Plin. Ep. 6.7",
+          "Plin. Ep. 7.5"
+        ]
+      }
+    }
+  ]
+}

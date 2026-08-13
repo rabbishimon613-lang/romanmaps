@@ -1455,6 +1455,95 @@ export default function Map() {
           kick();
         }
 
+        // Phase 21: Correspondence networks (public/data/letters.geojson) — Pliny the Younger's
+        // letter-writing network: his own villas as origin nodes, named correspondents as
+        // recipient nodes, and route LineStrings for the best-documented exchanges (axis 19).
+        const letters = await fetch("/data/letters.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && letters) {
+          map.addSource("letters", { type: "geojson", data: letters });
+
+          map.addLayer({
+            id: "letters-route-line",
+            type: "line",
+            source: "letters",
+            filter: ["==", ["geometry-type"], "LineString"],
+            paint: {
+              "line-color": "#5c7a3a",
+              "line-width": ["interpolate", ["linear"], ["zoom"], 3, 1.2, 8, 2.2],
+              "line-dasharray": [1.5, 1.5],
+              "line-opacity": 0.75,
+            },
+            layout: { "line-cap": "round", "line-join": "round" },
+          });
+          map.addLayer({
+            id: "letters-node-point",
+            type: "circle",
+            source: "letters",
+            filter: ["==", ["geometry-type"], "Point"],
+            paint: {
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+              "circle-color": [
+                "match",
+                ["get", "node_type"],
+                "origin",
+                "#8b5a2b",
+                "#5c7a3a",
+              ],
+              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-width": 1.6,
+            },
+          });
+
+          const lettersPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          const onLettersNodeEnter = (e: any) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const subLine = p.node_type === "origin" ? "Pliny's own estate" : `Correspondent of Pliny the Younger`;
+            const noteLine = p.one_line ? `<div style="margin-top:4px;">${escapeHtml(p.one_line)}</div>` : "";
+            lettersPopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(subLine)}</div>
+                   ${noteLine}
+                 </div>`,
+              )
+              .addTo(map);
+          };
+          const onLettersLineEnter = (e: any) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const noteLine = p.note ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.note)}</div>` : "";
+            lettersPopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124;">
+                   <div style="font-weight: 600;">${escapeHtml(p.from || "")} &rarr; ${escapeHtml(p.to || "")}</div>
+                   ${noteLine}
+                 </div>`,
+              )
+              .addTo(map);
+          };
+          map.on("mouseenter", "letters-node-point", onLettersNodeEnter);
+          map.on("mouseleave", "letters-node-point", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          map.on("mouseenter", "letters-route-line", onLettersLineEnter);
+          map.on("mouseleave", "letters-route-line", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          kick();
+        }
+
         // Apply any persisted Layers-panel visibility (all groups default visible).
         applyAllLayers();
       });

@@ -24,7 +24,8 @@ export type LayerGroupId =
   | "religions"
   | "sports"
   | "diplomacy"
-  | "crafts";
+  | "crafts"
+  | "letters";
 
 export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: string[] }[] = [
   { id: "roads", label: "Roads", mapLayerIds: ["roads-main", "roads-secondary"] },
@@ -51,6 +52,7 @@ export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: strin
   { id: "sports", label: "Sports & athletic culture", mapLayerIds: ["sports-point"] },
   { id: "diplomacy", label: "Foreign relations & embassies", mapLayerIds: ["diplomacy-point"] },
   { id: "crafts", label: "Textile & luxury craft", mapLayerIds: ["crafts-point"] },
+  { id: "letters", label: "Correspondence networks", mapLayerIds: ["letters-node-point", "letters-route-line"] },
 ];
 
 type LayerState = Record<LayerGroupId, boolean>;
