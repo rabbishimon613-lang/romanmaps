@@ -930,6 +930,58 @@ export default function Map() {
           kick();
         }
 
+        // Phase 13: Political apparatus (public/data/politics.geojson) — chariot faction HQs,
+        // praetorian/urban-cohort/vigiles/equites-singulares barracks, senator hometowns (axis 13).
+        const politics = await fetch("/data/politics.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && politics) {
+          map.addSource("politics", { type: "geojson", data: politics });
+          map.addLayer({
+            id: "politics-point",
+            type: "circle",
+            source: "politics",
+            paint: {
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+              "circle-color": "#a1442e",
+              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-width": 1.6,
+            },
+          });
+
+          const politicsPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          map.on("mouseenter", "politics-point", (e) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const catLabel: Record<string, string> = {
+              chariot_faction_HQ: "Chariot faction headquarters",
+              praetorian_barrack: "Praetorian barracks",
+              equites_singulares_barrack: "Imperial horse guard barracks",
+              urban_cohort_HQ: "Urban cohort",
+              vigiles_station: "Vigiles station",
+              senator_hometown: "Senator's hometown",
+            };
+            const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.one_line)}</div>` : "";
+            politicsPopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(catLabel[p.category] || p.category || "")}</div>
+                   ${noteLine}
+                 </div>`,
+              )
+              .addTo(map);
+          });
+          map.on("mouseleave", "politics-point", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          kick();
+        }
+
         // Apply any persisted Layers-panel visibility (all groups default visible).
         applyAllLayers();
       });

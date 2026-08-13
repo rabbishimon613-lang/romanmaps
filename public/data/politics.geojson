@@ -1,0 +1,325 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.4720, 41.8968] },
+      "properties": {
+        "id": "politics_faction_prasina",
+        "category": "chariot_faction_HQ",
+        "name": "Green Faction Headquarters",
+        "one_line": "The Greens ran their Circus Maximus chariot team from a headquarters here, marked by a dedication stone that named the spot the statio Prasina. A medieval church later built on the site kept the memory alive as San Lorenzo in Prasino.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "notes": "The inscription CIL VI 10058 was found in situ near the present church of San Lorenzo in Damaso, whose medieval alternate name, S. Laurentii in Prasino, preserves the faction's color. Of the four factions, the Greens are the only one with a securely located statio in the city center rather than just the general stable district near the Circus Flaminius.",
+        "sources": ["Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stabula IIII Factionum", "CIL VI 10058", "Digital Augustan Rome, s.v. Stabula Factionum"],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.4712, 41.8951] },
+      "properties": {
+        "id": "politics_faction_veneta",
+        "category": "chariot_faction_HQ",
+        "name": "Blue Faction Headquarters",
+        "one_line": "Excavators found possible traces of the Blues' faction headquarters beneath the later Palazzo Farnese, in the stable district south of the Campus Martius where all four racing factions kept their operations near the Circus Flaminius.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "notes": "Remains attributed to the factio Veneta were reported beneath Palazzo Farnese and the neighboring Palazzo Regis, but the identification rests on find circumstances rather than an in-situ dedication like the Greens' statio, so the exact footprint of the Blues' complex is less certain.",
+        "sources": ["Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stabula IIII Factionum", "Digital Augustan Rome, s.v. Stabula Factionum"],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.4685, 41.8985] },
+      "properties": {
+        "id": "politics_faction_russata",
+        "category": "chariot_faction_HQ",
+        "name": "Red Faction Headquarters",
+        "one_line": "The Reds, one of the two oldest racing factions along with the Whites, kept a headquarters somewhere in the cluster of stables south of the Campus Martius near the Circus Flaminius and the Trigarium training ground.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "notes": "No excavated building has been tied to the Reds specifically. This point marks the general stabula factionum district near the Trigarium and the Circus Flaminius rather than a confirmed findspot; treat it as a district-level approximation only.",
+        "sources": ["Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stabula IIII Factionum", "John H. Humphrey, Roman Circuses: Arenas for Chariot Racing (1986)"],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.4695, 41.8975] },
+      "properties": {
+        "id": "politics_faction_albata",
+        "category": "chariot_faction_HQ",
+        "name": "White Faction Headquarters",
+        "one_line": "The Whites, paired with the Reds as the oldest of the racing factions, based their Rome operation in the same stable district near the Circus Flaminius, though its exact footprint has never been excavated.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "notes": "No excavated building has been tied to the Whites specifically. This point marks the general stabula factionum district near the Trigarium and the Circus Flaminius rather than a confirmed findspot; treat it as a district-level approximation only.",
+        "sources": ["Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stabula IIII Factionum", "John H. Humphrey, Roman Circuses: Arenas for Chariot Racing (1986)"],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.5061, 41.9058] },
+      "properties": {
+        "id": "politics_castra_praetoria",
+        "category": "praetorian_barrack",
+        "name": "Castra Praetoria",
+        "one_line": "The praetorian prefect Sejanus built this walled camp in 23 CE to concentrate the emperor's nine Praetorian cohorts in one fortified barracks for the first time, enclosing roughly 440 by 380 meters whose masonry walls later became part of the Aurelian Walls. Its joint prefect in August 117, Publius Acilius Attianus, had been Hadrian's boyhood guardian and helped secure his succession the moment Trajan died.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "notes": "Attianus served as joint praetorian prefect alongside Servius Sulpicius Similis at Trajan's death; Hadrian pushed Attianus into retirement in 119. The Biblioteca Nazionale Centrale now stands on part of the site, and stretches of the camp's north and east walls remain visible as part of the later Aurelian Walls.",
+        "sources": ["Tacitus, Annals 4.2", "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Castra Praetoria", "Historia Augusta, Hadrian 4, 9"],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.5063, 41.8886] },
+      "properties": {
+        "id": "politics_castra_priora_equites",
+        "category": "equites_singulares_barrack",
+        "name": "Castra Priora",
+        "one_line": "This camp housed the emperor's mounted bodyguard, the roughly 1,500-strong equites singulares Augusti, in a fort near the Lateran built under Domitian in the late first century. An 1885 excavation on Via Tasso uncovered its walls and inscribed pedestals naming the fort.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "notes": "A larger second camp, the Castra Nova, was built close by only in 193 CE under Septimius Severus to house an enlarged 2,000-man guard, so it did not yet exist in 117 CE and is excluded from this map. The Castra Priora's exact perimeter has not been fully traced; this point follows the 1885 Via Tasso findspot.",
+        "sources": ["Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Castra Equitum Singularium", "Wikipedia, Castra Nova equitum singularium"],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.5061, 41.9058] },
+      "properties": {
+        "id": "politics_urban_cohorts_rome",
+        "category": "urban_cohort_HQ",
+        "name": "Urban Cohorts Headquarters",
+        "one_line": "Rome's urban cohorts, the city's day-to-day police force created by Augustus as a counterweight to the Praetorian Guard, shared the Guard's fortified camp here rather than keeping a barracks of their own. They would not get a dedicated camp until Aurelian built the Castra Urbana more than 150 years later.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "notes": "By 117 CE Rome most likely had four urban cohorts, numbered in continuation of the nine Praetorian cohorts (broadly X through XIII in the surviving epigraphic record), each about 500 men strong. Two further cohorts of the same series were permanently detached to Lugdunum and Carthage.",
+        "sources": ["Oxford Classical Dictionary, s.v. cohortes urbanae", "Cassius Dio, Roman History 55.24", "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Castra (Urbana)"],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.8222, 45.7631] },
+      "properties": {
+        "id": "politics_urban_cohort_lugdunum",
+        "category": "urban_cohort_HQ",
+        "name": "Lugdunum Urban Cohort",
+        "one_line": "A single urban cohort, eventually numbered XIII, garrisoned Lugdunum for roughly two centuries to guard the city's imperial mint, one of the empire's most important.",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Lyon, France",
+        "extant_117ce": true,
+        "notes": "Detached from Rome's urban cohort series under the Flavian emperors. No barracks building has been excavated; this point marks the Fourvière hill, the core of Roman Lugdunum, as a district-level approximation rather than a confirmed camp site.",
+        "sources": ["Musee Gallo-Romain de Lyon-Fourviere, epitaph of an optio of the cohors XIII urbana", "Oxford Classical Dictionary, s.v. cohortes urbanae"],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [10.3210, 36.8513] },
+      "properties": {
+        "id": "politics_urban_cohort_carthage",
+        "category": "urban_cohort_HQ",
+        "name": "Carthage Urban Cohort",
+        "one_line": "Carthage hosted its own detached urban cohort, unusual for including mounted troops alongside infantry, the only such unit outside Rome and Lugdunum.",
+        "province": "Africa Proconsularis",
+        "modern_location": "Carthage, Tunisia",
+        "extant_117ce": true,
+        "notes": "Detached from Rome's urban cohort series under the Flavian emperors, likely to help oversee the African grain fleet feeding Rome. No specific barracks site has been excavated; this point marks the Byrsa hill, the historic center of Roman Carthage, as a district-level approximation.",
+        "sources": ["Oxford Classical Dictionary, s.v. cohortes urbanae", "World History Encyclopedia, Cohortes Urbanae"],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.2911, 41.7564] },
+      "properties": {
+        "id": "politics_urban_cohort_ostia",
+        "category": "urban_cohort_HQ",
+        "name": "Ostia Urban Cohort",
+        "one_line": "Rome stationed a detachment of an urban cohort at its port city of Ostia to help protect the grain fleets that fed the capital.",
+        "province": "Italia",
+        "modern_location": "Ostia Antica, Italy",
+        "extant_117ce": true,
+        "notes": "Attested by inscriptions rather than an excavated barracks. This point marks the forum area of Ostia as a district-level approximation; the detachment's actual quarters have not been identified archaeologically.",
+        "sources": ["Oxford Classical Dictionary, s.v. cohortes urbanae"],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.4825, 41.8984] },
+      "properties": {
+        "id": "politics_vigiles_i",
+        "category": "vigiles_station",
+        "name": "First Cohort of the Vigiles",
+        "one_line": "The First Cohort of Rome's fire brigade and night watch covered the Via Lata district near the Corso, with a guardhouse a seventeenth-century excavation found packed with statues honoring the unit's guardian spirit.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "notes": "Located near Piazza dei Santi Apostoli based on a 1644 antiquarian report of vaulted halls with columns, mosaics, and statues of the Genius cohortis primae vigilum; no modern excavation has confirmed the guardhouse's exact footprint.",
+        "sources": ["Ostia-Antica.org, Vigiles: The Barracks in Rome", "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stationes Vigilum"],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.5092, 41.8956] },
+      "properties": {
+        "id": "politics_vigiles_ii",
+        "category": "vigiles_station",
+        "name": "Second Cohort of the Vigiles",
+        "one_line": "The Second Cohort's guardhouse stood in the area later occupied by the church of Santa Bibiana, near where Termini station now stands.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "notes": "Location based on inscriptions found in the area rather than an excavated barracks building; treat this as a district-level approximation.",
+        "sources": ["Ostia-Antica.org, Vigiles: The Barracks in Rome", "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stationes Vigilum"],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.4938, 41.9008] },
+      "properties": {
+        "id": "politics_vigiles_iii",
+        "category": "vigiles_station",
+        "name": "Third Cohort of the Vigiles",
+        "one_line": "The Third Cohort watched over the Alta Semita district on the Quirinal, its guardhouse placed by scholars just south of where the Baths of Diocletian would later rise.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "notes": "No excavated guardhouse has been identified; this point is a district-level approximation south of the later Baths of Diocletian, which were not built until the early fourth century.",
+        "sources": ["Ostia-Antica.org, Vigiles: The Barracks in Rome", "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stationes Vigilum"],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.4855, 41.8786] },
+      "properties": {
+        "id": "politics_vigiles_iv",
+        "category": "vigiles_station",
+        "name": "Fourth Cohort of the Vigiles",
+        "one_line": "The Fourth Cohort's guardhouse stood on the Aventine near where the church of San Saba now stands, its location fixed by inscriptions found in the area.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "notes": "Inscriptions naming the cohort's Genius Centuriae were found around San Saba, giving a more confident district fix than most of the other cohorts, though no barracks structure itself has been excavated.",
+        "sources": ["Ostia-Antica.org, Vigiles: The Barracks in Rome", "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stationes Vigilum"],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.4956, 41.8847] },
+      "properties": {
+        "id": "politics_vigiles_v",
+        "category": "vigiles_station",
+        "name": "Fifth Cohort of the Vigiles",
+        "one_line": "The Fifth Cohort's guardhouse stood on the Caelian Hill, and excavation beneath the later church of Santa Maria in Domnica uncovered part of its courtyard and portico.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "notes": "Two inscriptions mentioning the Genius Centuriae were found below and beside the church, and partial excavation revealed a courtyard and porticus belonging to the guardhouse, giving this cohort one of the better-supported locations short of the excavated Trastevere excubitorium.",
+        "sources": ["Ostia-Antica.org, Vigiles: The Barracks in Rome", "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stationes Vigilum"],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.4859, 41.8954] },
+      "properties": {
+        "id": "politics_vigiles_vi",
+        "category": "vigiles_station",
+        "name": "Sixth Cohort of the Vigiles",
+        "one_line": "The Sixth Cohort covered the Forum district, its guardhouse placed by the ancient regionary catalogues near Trajan's Forum.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "notes": "Location is a district-level approximation drawn from the regionary catalogues rather than an excavated building.",
+        "sources": ["Ostia-Antica.org, Vigiles: The Barracks in Rome", "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stationes Vigilum"],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.4746, 41.8887] },
+      "properties": {
+        "id": "politics_vigiles_vii",
+        "category": "vigiles_station",
+        "name": "Excubitorium of the Seventh Cohort",
+        "one_line": "This guardhouse for Trastevere's night watch and firefighters survives eight meters underground, complete with a hexagonal fountain, a black-and-white marine mosaic, and walls covered in graffiti the watchmen scratched during their shifts.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "notes": "Discovered in 1865-66 beneath a private garden on what is now Via della Settima Coorte; it is the best-preserved and most precisely located vigiles guardhouse known, giving a hard anchor point missing for the other six cohorts.",
+        "sources": ["Turismo Roma, Excubitorium of the VII Cohort of the Vigiles", "Ostia-Antica.org, Vigiles: A Guardhouse in Rome"],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [27.1842, 39.1325] },
+      "properties": {
+        "id": "politics_senator_pergamon",
+        "category": "senator_hometown",
+        "name": "Pergamon",
+        "one_line": "This Greek city was the hometown of Gaius Julius Quadratus Bassus, a senator descended from the old Attalid and Galatian royal houses, who reached the consulship in 105 CE and was still commanding Trajan's armies in Dacia when he died there in 117.",
+        "province": "Asia",
+        "modern_location": "Bergama, Turkey",
+        "extant_117ce": true,
+        "notes": "One of the most prominent easterners in the Trajanic-Hadrianic senate; his career spanned governorships of Judea, Cappadocia-Galatia, Syria, and Dacia.",
+        "sources": ["Prosopographia Imperii Romani, I 507", "Wikipedia, Gaius Julius Quadratus Bassus"],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-4.5500, 37.6830] },
+      "properties": {
+        "id": "politics_senator_ucubi",
+        "category": "senator_hometown",
+        "name": "Espejo",
+        "one_line": "This small Baetican town was the hometown of Marcus Annius Verus, a senator who reached the consulship in 97 CE, served as Hadrian's prefect of the city, and raised his grandson, the future emperor Marcus Aurelius.",
+        "province": "Baetica",
+        "modern_location": "Espejo, Spain",
+        "extant_117ce": true,
+        "notes": "Ancient Ucubi, in Baetica near Corduba. Verus held a second consulship in 121 and a third in 126, cementing his family among the most influential Spanish-provincial houses in the Hadrianic senate.",
+        "sources": ["Oxford Classical Dictionary, s.v. Annius Verus, Marcus", "Historia Augusta, Marcus Aurelius 1"],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [11.8833, 44.2856] },
+      "properties": {
+        "id": "politics_senator_faventia",
+        "category": "senator_hometown",
+        "name": "Faenza",
+        "one_line": "This northern Italian town was the birthplace of the senator Gaius Avidius Nigrinus, consul in 110 CE, who returned home only to be executed there in 118 as one of the four ex-consuls purged at the start of Hadrian's reign.",
+        "province": "Italia",
+        "modern_location": "Faenza, Italy",
+        "extant_117ce": true,
+        "notes": "Ancient Faventia. Nigrinus was still a leading senator in good standing on 11 August 117; his fall came the following year, when the Senate had him and three other consulars killed on suspicion of plotting against Hadrian.",
+        "sources": ["Wikipedia, Gaius Avidius Nigrinus", "Historia Augusta, Hadrian 7"],
+        "confidence": "high"
+      }
+    }
+  ]
+}
