@@ -1,0 +1,457 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7257,
+          37.9715
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_indian_embassy_augustus",
+        "name": "Athens",
+        "direction": "inbound",
+        "polity": "India",
+        "one_line": "An Indian king named Porus sent ambassadors to Augustus around 20 BCE, bearing tigers and a nine-cubit snake as gifts after a journey of several years. One envoy, the philosopher Zarmanochegas, burned himself alive in Athens, and Romans raised him a tomb inscribed with his name and home city of Bargosa. Strabo and Cassius Dio both recorded the embassy in detail.",
+        "province": "Achaea",
+        "modern_location": "Athens, Greece",
+        "extant_117ce": false,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Zarmanochegas",
+          "https://en.wikipedia.org/wiki/Indo-Roman_trade_relations"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Acropolis_Parthenon_Athens_Greece.jpg?width=800",
+        "image_credit": "Acropolis of Athens, where the Indian envoy Zarmanochegas died · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.7804,
+          30.5085
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_gan_ying_han_mission",
+        "name": "Charax Spasinu",
+        "direction": "inbound",
+        "polity": "Han China",
+        "one_line": "Han general Gan Ying reached the Persian Gulf coast in 97 CE on a mission to reach Rome, the farthest west any Chinese envoy had traveled. Parthian sailors warned him the sea crossing could take two years and cost his life, so he turned back without ever setting foot on Roman soil. His report still gave China its earliest detailed written account of the Roman Empire.",
+        "modern_location": "Near Basra, Iraq",
+        "extant_117ce": false,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Gan_Ying",
+          "https://depts.washington.edu/silkroad/texts/hhshu/notes10.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shatt_Al_Arab_Basra_1.jpg?width=800",
+        "image_credit": "Shatt al-Arab waterway near the Persian Gulf coast Gan Ying reached in 97 CE · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.2264,
+          38.681
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_rhandeia_treaty",
+        "name": "Rhandeia",
+        "direction": "treaty",
+        "polity": "Parthia",
+        "one_line": "Roman general Corbulo and the Parthian prince Tiridates met at Rhandeia in 63 CE and ended five years of war over Armenia's throne. Tiridates laid his diadem before a statue of Nero and agreed to receive his crown only from Roman hands afterward. The settlement held for about fifty years, until Trajan annexed Armenia outright in 114 CE.",
+        "modern_location": "Elazig, Turkey",
+        "extant_117ce": false,
+        "sources": [
+          "https://www.britannica.com/topic/Treaty-of-Rhandeia",
+          "https://en.wikipedia.org/wiki/Treaty_of_Rhandeia"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Euphrates_River_in_Turkey,_Rumkale_(52031477798).jpg?width=800",
+        "image_credit": "The Euphrates River in eastern Turkey, near the historic Rhandeia region (representative image) · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.487,
+          41.8894
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_parthian_princes_hostages_rome",
+        "name": "Rome",
+        "direction": "hostage",
+        "polity": "Parthia",
+        "one_line": "Parthian king Phraates IV sent four of his own sons to Rome around 10 BCE as hostages, cementing peace and letting Augustus boast of Parthia's submission in his Res Gestae. One son, Vonones, grew up in Rome and later returned east to briefly rule as Parthia's king before his Roman manners cost him the throne. Augustus displayed the arrangement as one of the great diplomatic triumphs of his reign.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "https://ecommons.cornell.edu/server/api/core/bitstreams/f976f6cb-0710-47d3-b793-3831bdcb59a1/content",
+          "https://en.wikipedia.org/wiki/Vonones_I"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palatino_(Palatine_Hill,_Rome).jpg?width=800",
+        "image_credit": "Palatine Hill, Rome, seat of the imperial household that hosted foreign princes · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4853,
+          41.8925
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_tiridates_coronation_rome",
+        "name": "Rome",
+        "direction": "treaty",
+        "polity": "Armenia",
+        "one_line": "Nero crowned the Parthian prince Tiridates king of Armenia in the Roman Forum in 66 CE, closing out years of war with a public spectacle. Tiridates arrived after a nine-month overland journey with 3,000 horsemen rather than cross the sea, and Nero replaced his tiara with a Roman diadem before a cheering crowd. Trajan ended the arrangement by annexing Armenia outright in 114 CE.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "https://www.worldhistory.org/Tiridates_I_of_Armenia/",
+          "https://en.wikipedia.org/wiki/Tiridates_I_of_Armenia"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Forum,_Rome.jpg?width=800",
+        "image_credit": "The Roman Forum, site of Tiridates I's coronation by Nero in 66 CE · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1997,
+          44.4184
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_thumelicus_ravenna",
+        "name": "Ravenna",
+        "direction": "hostage",
+        "polity": "Germania",
+        "one_line": "Thumelicus, the young son of the Germanic chieftain Arminius, was paraded as a three-year-old captive in Germanicus's Roman triumph of 17 CE and then sent to live out his life in exile at Ravenna. His father had destroyed three Roman legions at the Teutoburg Forest less than a decade before. Ancient sources leave his later years obscure, recording only that he never returned to Germania.",
+        "province": "Italia",
+        "modern_location": "Ravenna, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "https://penelope.uchicago.edu/encyclopaedia_romana/miscellanea/teutoburg/thusnelda.html",
+          "https://en.wikipedia.org/wiki/Thumelicus"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Frammenti_della_porta_aurea_di_ravenna,_43_dc,_01.jpg?width=800",
+        "image_credit": "Fragments of Ravenna's Porta Aurea, built in 42 CE during Thumelicus's lifetime there · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.8511,
+          37.059
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_gaius_caesar_euphrates_treaty",
+        "name": "Zeugma",
+        "direction": "treaty",
+        "polity": "Parthia",
+        "one_line": "Augustus's grandson Gaius Caesar met the Parthian king Phraates V on an island in the Euphrates in 2 CE, each bringing an equal armed escort to the meeting. The two feasted together afterward and confirmed the river as the boundary between their empires, recognizing Parthia as Rome's sovereign equal for the first time in decades. The peace this summit secured lasted through the rest of Augustus's reign.",
+        "province": "Syria",
+        "modern_location": "Zeugma, Gaziantep Province, Turkey",
+        "extant_117ce": false,
+        "sources": [
+          "https://www.livius.org/articles/person/gaius-caesar/",
+          "https://en.wikipedia.org/wiki/Augustus%27_Eastern_policy"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Euphrates_River_in_Turkey,_Rumkale_(52031477798).jpg?width=800",
+        "image_credit": "The Euphrates River near the Roman-Parthian frontier crossing at Zeugma (representative image) · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2012,
+          10.1685
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_muziris_trade",
+        "name": "Muziris",
+        "direction": "outbound",
+        "polity": "India",
+        "one_line": "Roman ships sailed directly to the Indian port of Muziris on the monsoon winds, a route the Periplus of the Erythraean Sea described in detail around 40 to 70 CE. A surviving papyrus contract records a single ship's cargo of pepper and ivory valued at nearly 7 million sesterces. Pliny the Elder complained this eastern trade drained 50 million sesterces a year out of the Roman economy.",
+        "modern_location": "Pattanam, Kerala, India",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Muziris",
+          "https://en.wikipedia.org/wiki/Periplus_of_the_Erythraean_Sea"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pattanam_Excavation_Museum,_Kottappuram_(2018).jpg?width=800",
+        "image_credit": "Pattanam Excavation Museum, near the site of ancient Muziris · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.8283,
+          11.8964
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_arikamedu_trade",
+        "name": "Arikamedu",
+        "direction": "outbound",
+        "polity": "India",
+        "one_line": "Roman merchants established a trading settlement at Arikamedu on India's Coromandel coast, where archaeologists later excavated Italian wine amphorae and Arretine tableware stamped with Roman potters' names. British archaeologist Mortimer Wheeler's 1945 excavation confirmed direct Roman contact continuing into the 1st and 2nd centuries CE. Pottery from the site traces a trade network reaching as far as Southeast Asia.",
+        "modern_location": "Arikamedu, near Puducherry, India",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Arikamedu",
+          "https://ar.unesco.org/silkroad/sites/default/files/knowledge-bank-article/roman_contacts_with_tamilnadu.pdf"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arikamedu,_archaeological_site_near_Puducherry,_India_19.jpg?width=800",
+        "image_credit": "Arikamedu archaeological site, a Roman-era trading settlement on India's Coromandel coast · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.4037,
+          8.3114
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_taprobane_embassy_claudius",
+        "name": "Anuradhapura",
+        "direction": "inbound",
+        "polity": "Taprobane (Sri Lanka)",
+        "one_line": "A freedman of the Roman tax collector Annius Plocamus was blown off course and landed in Sri Lanka around 45 CE, and the curious king sent four ambassadors back to Rome with him. They spent months reaching Emperor Claudius and described their island's customs to Pliny the Elder, who recorded it as Rome's fullest account of Taprobane. The mission marked the first direct diplomatic contact between Rome and Sri Lanka.",
+        "modern_location": "Anuradhapura, Sri Lanka",
+        "extant_117ce": false,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Annius_Plocamus",
+          "https://worldpolitics.substack.com/p/roman-empire-sri-lanka-ancient"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sri_Lanka_-_Anuradhapura_-_Ruwanweliseya.JPG?width=800",
+        "image_credit": "Ruwanwelisaya stupa at Anuradhapura, capital of the Sinhalese king who sent envoys to Claudius · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4444,
+          30.3223
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_petra_nabataea",
+        "name": "Petra",
+        "direction": "treaty",
+        "polity": "Nabataea",
+        "one_line": "Nabataean kings ruled from Petra as Roman clients for over a century, paying tribute after Pompey's general Aemilius Scaurus besieged the city in 62 BCE and Aretas III bought him off with 300 talents of silver. That relationship held through decades of diplomacy until Trajan annexed the kingdom outright in 106 CE, absorbing it as the province of Arabia. Petra's rock-cut Treasury facade still stands as the monument of that vanished independent kingdom.",
+        "province": "Arabia",
+        "modern_location": "Petra, Jordan",
+        "extant_117ce": false,
+        "sources": [
+          "https://scholarworks.brandeis.edu/view/pdfCoverPage?instCode=01BRAND_INST&filePid=13475711340001921&download=true",
+          "https://www.worldhistory.org/timeline/Kingdom_of_Nabatea/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Al_Khazneh_(The_Treasury)_in_Petra.jpg?width=800",
+        "image_credit": "Al-Khazneh, the Treasury facade at Petra, capital of the Nabataean kingdom · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.47,
+          45.3567
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_panticapaeum_bosporan",
+        "name": "Panticapaeum",
+        "direction": "treaty",
+        "polity": "Bosporan Kingdom",
+        "one_line": "The Bosporan Kingdom on the Crimean peninsula became a Roman client state in 63 CE and kept its own line of kings for nearly four centuries under Roman oversight. Its capital, Panticapaeum, minted coins stamped with both its own rulers and the reigning Roman emperor. Roman garrison troops, including Thracian and Cypriot cohorts, were stationed there to secure the Black Sea's northern approach.",
+        "modern_location": "Kerch, Crimea",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Bosporan_Kingdom",
+          "https://worldhistoryedu.com/the-bosporan-kingdom/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Panticapaeum.Prytaneion-2.jpg?width=800",
+        "image_credit": "Ruins of Panticapaeum, capital of the Roman client Bosporan Kingdom · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4763,
+          41.906
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_british_kings_augustus",
+        "name": "Rome",
+        "direction": "hostage",
+        "polity": "Britannia",
+        "one_line": "Two British kings, Dumnobellaunus and Tincomarus, fled to Rome as suppliants around 7 CE after losing their thrones at home, and Augustus named them among the foreign rulers who sought his protection in his Res Gestae. Their arrival let Augustus claim influence over Britain decades before Claudius's actual conquest in 43 CE. Neither man is known to have returned home to rule again.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Dubnovellaunus",
+          "https://en.wikipedia.org/wiki/Tincomarus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ara_Pacis_(SW).jpg?width=800",
+        "image_credit": "The Ara Pacis in Rome, an Augustan monument from the era the British kings sought refuge there · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.8113,
+          50.8386
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_cogidubnus_fishbourne",
+        "name": "Fishbourne",
+        "direction": "treaty",
+        "polity": "Britannia",
+        "one_line": "Rome installed Togidubnus as a client king over several southern British territories after the invasion of 43 CE, and the historian Tacitus recorded that he stayed loyal down to his own time, around 98 CE. His likely residence at Fishbourne grew into a palace of more than 100 rooms with early mosaic floors, the largest Roman residence known north of the Alps. The palace remained in use into the 2nd century CE.",
+        "province": "Britannia",
+        "modern_location": "Fishbourne, West Sussex, England",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tiberius_Claudius_Cogidubnus",
+          "https://en.wikipedia.org/wiki/Fishbourne_Roman_Palace"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dolphin_mosaic.JPG?width=800",
+        "image_credit": "Cupid on a Dolphin mosaic floor at Fishbourne Roman Palace · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.5222,
+          9.5916
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_kottayam_coin_hoard",
+        "name": "Kottayam",
+        "direction": "outbound",
+        "polity": "India",
+        "one_line": "Villagers near Kottayam in Kerala unearthed a brass vessel packed with Roman gold coins in 1847, a hoard so large that witnesses described it as five porters' loads, close to 8,000 aurei. Local jewelers melted most of it down before officials could intervene, but 74 surviving coins reached museum collections in Madras and Kolkata. The find is one of dozens of Roman coin hoards recovered across southern India, physical proof of centuries of direct trade.",
+        "modern_location": "Kottayam, Kerala, India",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kottayam_coin_hoard",
+          "https://historicalleys.blogspot.com/2025/06/the-fabulous-kottayam-hoard.html"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Akki_Alur_Roman_gold_coins_from_a_hoard.jpg?width=800",
+        "image_credit": "Roman gold coins from a southern Indian hoard (representative image, not the Kottayam coins themselves) · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.8511,
+          37.059
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_vitellius_artabanus_euphrates_treaty",
+        "name": "Zeugma",
+        "direction": "treaty",
+        "polity": "Parthia",
+        "one_line": "Roman governor Lucius Vitellius met Parthian king Artabanus II on a bridge over the Euphrates in 37 CE, each walking to the middle with his own bodyguard. Artabanus sacrificed to the Roman standards and sent his son Darius to Rome as a hostage, along with a seven-cubit-tall Jewish giant named Eleazar as a gift. The meeting secured peace on the eastern frontier for the rest of Tiberius's reign.",
+        "province": "Syria",
+        "modern_location": "Zeugma, Gaziantep Province, Turkey",
+        "extant_117ce": false,
+        "sources": [
+          "https://www.iranicaonline.org/articles/darius-viii/",
+          "https://www.livius.org/articles/person/vitellius-lucius/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Gypsy_Girl_Mosaic_of_Zeugma_with_bg.jpg?width=800",
+        "image_credit": "Mosaic from Zeugma, the Roman frontier city near the Euphrates bridge where Vitellius met Artabanus · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4853,
+          41.8925
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_darius_hostage_rome",
+        "name": "Rome",
+        "direction": "hostage",
+        "polity": "Parthia",
+        "one_line": "Darius, son of the Parthian king Artabanus II, arrived in Rome as a hostage in 37 CE after his father's peace meeting with the Roman governor Vitellius on the Euphrates. He lived on in the city for years afterward, recorded only once more riding in Caligula's entourage across the emperor's bridge of boats at Baiae. His presence in Rome stood as a guarantee of Parthian good faith won without a single battle.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "https://www.iranicaonline.org/articles/darius-viii/",
+          "https://en.wikipedia.org/wiki/Artabanus_II_of_Parthia"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Roman_Forum_Rome_italy.jpg?width=800",
+        "image_credit": "The Roman Forum, Rome, where foreign hostage princes lived under the emperor's watch · Wikimedia Commons"
+      }
+    }
+  ]
+}

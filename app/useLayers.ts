@@ -22,7 +22,8 @@ export type LayerGroupId =
   | "euergetism"
   | "penal"
   | "religions"
-  | "sports";
+  | "sports"
+  | "diplomacy";
 
 export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: string[] }[] = [
   { id: "roads", label: "Roads", mapLayerIds: ["roads-main", "roads-secondary"] },
@@ -47,6 +48,7 @@ export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: strin
   { id: "penal", label: "Exile & penal geography", mapLayerIds: ["penal-point"] },
   { id: "religions", label: "Religious communities", mapLayerIds: ["religions-point"] },
   { id: "sports", label: "Sports & athletic culture", mapLayerIds: ["sports-point"] },
+  { id: "diplomacy", label: "Foreign relations & embassies", mapLayerIds: ["diplomacy-point"] },
 ];
 
 type LayerState = Record<LayerGroupId, boolean>;

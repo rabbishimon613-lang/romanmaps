@@ -1346,6 +1346,58 @@ export default function Map() {
           kick();
         }
 
+        // Phase 19: Foreign relations + embassies (public/data/diplomacy_117.geojson) — hostage
+        // princes at Rome, inbound/outbound embassies, and treaty sites with Parthia, Armenia,
+        // India, Han China, Britannia, and the empire's client kingdoms (axis 14).
+        const diplomacy = await fetch("/data/diplomacy_117.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && diplomacy) {
+          map.addSource("diplomacy", { type: "geojson", data: diplomacy });
+          map.addLayer({
+            id: "diplomacy-point",
+            type: "circle",
+            source: "diplomacy",
+            paint: {
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+              "circle-color": "#3a6b91",
+              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-width": 1.6,
+            },
+          });
+
+          const diplomacyPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          map.on("mouseenter", "diplomacy-point", (e) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const directionLabel: Record<string, string> = {
+              inbound: "Inbound embassy",
+              outbound: "Outbound trade/contact",
+              treaty: "Treaty site",
+              hostage: "Hostage residence",
+            };
+            const subLine = [directionLabel[p.direction] || p.direction, p.polity].filter(Boolean).join(" · ");
+            const noteLine = p.one_line ? `<div style="margin-top:4px;">${escapeHtml(p.one_line)}</div>` : "";
+            diplomacyPopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(subLine)}</div>
+                   ${noteLine}
+                 </div>`,
+              )
+              .addTo(map);
+          });
+          map.on("mouseleave", "diplomacy-point", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          kick();
+        }
+
         // Apply any persisted Layers-panel visibility (all groups default visible).
         applyAllLayers();
       });
