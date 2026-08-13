@@ -1398,6 +1398,63 @@ export default function Map() {
           kick();
         }
 
+        // Phase 20: Textile + luxury craft geography (public/data/crafts.geojson) — purple dye
+        // works, silk endpoints, linen and wool centers, amber working, pearl fisheries,
+        // perfume, glass, bronze, and jewelry production (axis 16).
+        const crafts = await fetch("/data/crafts.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && crafts) {
+          map.addSource("crafts", { type: "geojson", data: crafts });
+          map.addLayer({
+            id: "crafts-point",
+            type: "circle",
+            source: "crafts",
+            paint: {
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+              "circle-color": "#8a5a8f",
+              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-width": 1.6,
+            },
+          });
+
+          const craftsPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          map.on("mouseenter", "crafts-point", (e) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const craftLabel: Record<string, string> = {
+              purple_dye: "Purple dye works",
+              silk: "Silk trade",
+              linen: "Linen weaving",
+              wool: "Wool production",
+              amber: "Amber working",
+              pearl: "Pearl fishery",
+              perfume: "Perfume production",
+              glass: "Glassmaking",
+              bronze: "Bronze working",
+              jewelry: "Jewelry / goldsmithing",
+            };
+            const noteLine = p.one_line ? `<div style="margin-top:4px;">${escapeHtml(p.one_line)}</div>` : "";
+            craftsPopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(craftLabel[p.craft] || p.craft || "")}</div>
+                   ${noteLine}
+                 </div>`,
+              )
+              .addTo(map);
+          });
+          map.on("mouseleave", "crafts-point", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          kick();
+        }
+
         // Apply any persisted Layers-panel visibility (all groups default visible).
         applyAllLayers();
       });

@@ -1,0 +1,761 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2038,
+          33.2704
+        ]
+      },
+      "properties": {
+        "id": "craft_purple_tyre",
+        "name": "Tyre",
+        "craft": "purple_dye",
+        "one_line": "Tyre's dye works crushed roughly 10,000 murex shells to yield a single gram of true purple. Workers cracked open each snail by hand and left the glands to ferment in vats along the shore for days. The stench was so strong that Roman law banned dye works from town centers. Excavators in 1909 uncovered mounds of blackened, broken shell outside the city, waste from a trade that had run for over a thousand years.",
+        "province": "Syria",
+        "modern_location": "Tyre, Lebanon",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.historyskills.com/classroom/ancient-history/tyrian-purple/",
+          "https://archaeology.org/issues/november-december-2020/letters-from/israel-purple-dye/",
+          "https://www.researchgate.net/publication/258419462_Shells_From_Sarepta_Lebanon_And_East_Mediterranean_Purple-_Dye_Production"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20Hippodrome,%20Tyre,%20Lebanon.jpg?width=800",
+        "image_credit": "Roman Hippodrome, Tyre, Lebanon, by Vyacheslav Argenberg · Wikimedia Commons",
+        "image_alt": "Roman ruins at Tyre, Lebanon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3758,
+          33.5606
+        ]
+      },
+      "properties": {
+        "id": "craft_purple_sidon",
+        "name": "Sidon",
+        "craft": "purple_dye",
+        "one_line": "Sidon manufactured purple dye before Tyre ever took the credit for it. Its garbage dump grew into an entire hill of crushed murex shell, a rise still called Murex Hill south of the old castle. Between 10,000 and 20,000 snails went into a single gram of dye, making a robe worth more than a house. Greeks called the Phoenicians who ran this trade the 'purple people.'",
+        "province": "Syria",
+        "modern_location": "Saida, Lebanon",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.worldhistory.org/sidon/",
+          "https://www.middleeasteye.net/discover/colour-purple-dyeing-techniques-phoenician-sea-snails",
+          "https://www.nationalgeographic.com/history/history-magazine/article/purple-reign-passion-phoenician-dye-built-vast-trading-empire"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/SidonSeaCastle.jpg?width=800",
+        "image_credit": "Sidon Sea Castle · Wikimedia Commons",
+        "image_alt": "Sea Castle at Sidon, Lebanon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9833,
+          33.7167
+        ]
+      },
+      "properties": {
+        "id": "craft_purple_meninx",
+        "name": "Meninx",
+        "craft": "purple_dye",
+        "one_line": "Meninx turned the island of Djerba into North Africa's biggest purple-dye metropolis. Pliny the Elder and Strabo both singled the town out for its wealth from murex trunculus shell. Unlike other dye sites, Meninx dyed the cloth itself on-site rather than shipping raw dye elsewhere. Geophysical surveys since 2015 have traced its baths, theater, and warehouses beneath the sand.",
+        "province": "Africa Proconsularis",
+        "modern_location": "Henchir El Kantara, Djerba, Tunisia",
+        "extant_117ce": true,
+        "sources": [
+          "https://archaeology.org/news/2020/01/16/200116-djerba-meninx-survey/",
+          "https://www.academia.edu/44563762/New_insights_into_the_urban_history_of_Meninx_Jerba_Preliminary_report_on_the_Tunisian_German_investigations_in_2017_and_2018"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Archaeological%20Site%20meninx.JPG?width=800",
+        "image_credit": "Archaeological Site, Meninx · Wikimedia Commons",
+        "image_alt": "Ruins at the Meninx archaeological site, Djerba"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.2746,
+          34.5508
+        ]
+      },
+      "properties": {
+        "id": "craft_silk_palmyra",
+        "name": "Palmyra",
+        "craft": "silk",
+        "one_line": "Palmyra sat squarely on the desert route silk had to cross to reach the Mediterranean, and its merchants grew rich charging for the privilege. Tomb excavations turned up actual fragments of Han-dynasty Chinese silk alongside silk thread meant for local reweaving. From this caravan city, cloth moved onward to the dye works of Tyre, Sidon, and Antioch. Palmyrene traders called their oasis home the 'Venice of the Sands.'",
+        "province": "Syria",
+        "modern_location": "Tadmur, Syria",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.historytoday.com/archive/feature/when-all-roads-led-palmyra",
+          "https://www.researchgate.net/publication/342349414_Palmyra_at_the_Silk_Road_Terrestrial_and_Maritime_Trading_Routes_from_China_to_the_Mediterranean"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20ruins,%20Palmyra,%20Syria.jpg?width=800",
+        "image_credit": "Roman ruins, Palmyra, Syria · Wikimedia Commons",
+        "image_alt": "Colonnaded ruins at Palmyra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4444,
+          30.3285
+        ]
+      },
+      "properties": {
+        "id": "craft_silk_petra",
+        "name": "Petra",
+        "craft": "silk",
+        "one_line": "Petra's rock-cut capital grew wealthy as a clearinghouse where Chinese silk, Indian spice, and Arabian incense all changed hands before heading to Gaza and the Mediterranean. Rome annexed the Nabataean kingdom in 106 CE, folding this caravan hub directly into its new province of Arabia. From here, camel trains split toward Damascus, Gaza, and the Red Sea. Long-distance trade through the city hit its peak in the decades right after annexation.",
+        "province": "Arabia",
+        "modern_location": "Petra, Jordan",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.unesco.org/silkroad/silk-road-themes/world-heritage-sites/petra",
+          "https://www.metmuseum.org/essays/trade-between-the-romans-and-the-empires-of-asia"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Al-Khazneh%20(The%20Treasury),%20Petra,%20Jordan.jpg?width=800",
+        "image_credit": "Al-Khazneh (The Treasury), Petra, Jordan, by Vyacheslav Argenberg · Wikimedia Commons",
+        "image_alt": "The Treasury facade at Petra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9187,
+          31.2001
+        ]
+      },
+      "properties": {
+        "id": "craft_silk_alexandria",
+        "name": "Alexandria",
+        "craft": "silk",
+        "one_line": "Alexandria was the Mediterranean's other silk door, the one reached by sea rather than camel. Cargo landed at Red Sea ports, crossed the desert by caravan to the Nile, and floated downriver into the city's warehouses. From there, ships carried Chinese and Indian silk on to Rome and the rest of the empire. The route made Alexandria one of the two great funnels through which Chinese silk entered the Roman economy.",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.metmuseum.org/essays/trade-between-the-romans-and-the-empires-of-asia",
+          "https://www.orientations.com.hk/highlights/rome-and-china-endpoints-of-the-ancient-silk-roads"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexandria%20-%20Pompey's%20Pillar%20-%20view%20of%20ruins.JPG?width=800",
+        "image_credit": "Pompey's Pillar, Alexandria · Wikimedia Commons",
+        "image_alt": "Pompey's Pillar in Alexandria, Egypt"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2877,
+          36.8931
+        ]
+      },
+      "properties": {
+        "id": "craft_silk_cos",
+        "name": "Kos",
+        "craft": "silk",
+        "one_line": "Kos wove its own gauzy fabric from a wild Mediterranean moth, not imported Chinese silk, and Roman patricians loved it anyway. Aristotle described the process back in the 4th century BC; Pliny the Elder credited a Coan woman named Pamphila with discovering it. Weavers on the island unwound cocoons of Pachypasa otus, spinning them into cloth so thin it could be dyed vivid purple and striped with gold. Roman writers still spoke of vestes Coae, garments from Kos, into the early empire.",
+        "province": "Asia",
+        "modern_location": "Kos, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Coa_vestis",
+          "https://hex.ink/coan-silk/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancient%20Agora%20Kos%20Columns.jpg?width=800",
+        "image_credit": "Ancient Agora of Kos · Wikimedia Commons",
+        "image_alt": "Columns of the ancient agora on Kos"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9187,
+          31.2001
+        ]
+      },
+      "properties": {
+        "id": "craft_linen_alexandria",
+        "name": "Alexandria",
+        "craft": "linen",
+        "one_line": "Alexandria's looms turned Egyptian flax into linen fine enough for aristocrats and coarse enough for everyday tunics, selling both across the empire. The city held onto its lead in light textile production straight through pharaonic, Greek, and Roman rule alike. Weavers combined a linen base with dyed wool bands called clavi to finish a standard Roman tunic. Markets from Rome to Athens stocked Alexandrian linen by the bolt.",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "extant_117ce": true,
+        "sources": [
+          "https://harvardartmuseums.org/article/unraveling-the-production-secrets-of-an-egyptian-textile",
+          "https://www.academia.edu/43559760/Wool_and_the_City_Wool_and_Linen_Textile_Trade_in_Hellenistic_Egypt"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Catacombs%20Kom%20al%20Shugafa%205.jpg?width=800",
+        "image_credit": "Catacombs of Kom El Shoqafa, Alexandria, by Leon Petrosyan · Wikimedia Commons",
+        "image_alt": "Catacombs of Kom El Shoqafa in Alexandria"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.7444,
+          26.5624
+        ]
+      },
+      "properties": {
+        "id": "craft_linen_panopolis",
+        "name": "Akhmim",
+        "craft": "linen",
+        "one_line": "Akhmim wove linen for so long that the geographer Strabo already called it an ancient industry in his own lifetime. Under its Greek name, Panopolis, the town supplied fine flax cloth from the pharaohs' era straight through Roman rule. Its cemeteries later preserved hundreds of tunics, hangings, and shrouds, giving Egyptology some of its richest surviving Roman-era textiles. Strabo named only two industries here: linen-weaving and stone-cutting.",
+        "province": "Aegyptus",
+        "modern_location": "Akhmim, Egypt",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.researchgate.net/publication/339274724_Akhmim_Panopolis_in_the_Graeco-Roman_Period_a_Historical_Archaeological_Study_and_Local_Touristic_Development",
+          "https://www.britannica.com/place/Akhmim"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/AkhmimOpenAirMuseum.jpg?width=800",
+        "image_credit": "Open-air museum at the Temple of Min, Akhmim · Wikimedia Commons",
+        "image_alt": "Open-air museum at the Temple of Min in Akhmim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2769,
+          37.5297
+        ]
+      },
+      "properties": {
+        "id": "craft_wool_miletus",
+        "name": "Miletus",
+        "craft": "wool",
+        "one_line": "Miletus grazed its flocks on wide upland pasture and turned the fleece into a wool so soft it became a byword for luxury across the ancient Mediterranean. Roman writers ranked Milesian wool alongside the finest that Attica or Tarentum could produce. Garments cut from it counted as a mark of refinement rather than mere warmth. The city's long-running textile trade helped keep it among Ionia's wealthiest ports well into the Roman period.",
+        "province": "Asia",
+        "modern_location": "Balat, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.wikidata.org/wiki/Q3826614",
+          "https://www.attalus.org/names/m/miletus.html"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Agora%20of%20Miletus.jpg?width=800",
+        "image_credit": "Agora of Miletus · Wikimedia Commons",
+        "image_alt": "Ruins of the agora at Miletus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.247,
+          40.4644
+        ]
+      },
+      "properties": {
+        "id": "craft_wool_tarentum",
+        "name": "Taranto",
+        "craft": "wool",
+        "one_line": "Tarentum bred sheep so prized for their fleece that shepherds dressed the animals in leather jackets just to keep the wool clean while grazing. Pliny the Elder singled the local breed out for its exceptionally fine, soft, pure-white fiber. Cloaks cut from Tarentine and Apulian wool set the standard the rest of Roman Italy's textile trade measured itself against. The city built a Mediterranean-facing wool economy on top of its famous harbor and fisheries.",
+        "province": "Italia",
+        "modern_location": "Taranto, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.worldhistory.org/tarentum/",
+          "https://www.researchgate.net/publication/309667162_The_Wool_Economy_of_Roman_Italy"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Colonne%20Doriche%20Tempio%20di%20Poseidone%20Taranto.jpg?width=800",
+        "image_credit": "Doric columns of the Temple of Poseidon, Taranto · Wikimedia Commons",
+        "image_alt": "Doric columns of an ancient temple in Taranto"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8768,
+          45.4064
+        ]
+      },
+      "properties": {
+        "id": "craft_wool_patavium",
+        "name": "Padua",
+        "craft": "wool",
+        "one_line": "Patavium turned the wool from its surrounding hills into carpets and cloaks that traveled straight to Augustus-era Rome. The geographer Strabo called it the wealthiest city in northern Italy and counted no fewer than five hundred Roman knights among its citizens, wealth he traced directly to its wool trade. Textiles, not farmland alone, made the city rich. Rough cloaks and fine hangings both left Patavium's workshops for markets across Italy.",
+        "province": "Italia",
+        "modern_location": "Padua, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.ebsco.com/research-starters/history/patavium",
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0006%3Aentry%3Dpatavium"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arena%20Romana%20di%20Padova%20-%20panoramio%20(1).jpg?width=800",
+        "image_credit": "Roman Arena, Padua · Wikimedia Commons",
+        "image_alt": "Remains of the Roman Arena in Padua"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7794,
+          37.8882
+        ]
+      },
+      "properties": {
+        "id": "craft_wool_corduba",
+        "name": "Cordoba",
+        "craft": "wool",
+        "one_line": "Corduba spun and exported the pale golden wool of Baetica, a fleece the poet Martial praised by name as a river gilded by its own sheep. Roman Spain shipped this wool alongside olive oil and garum as one of Baetica's signature exports. Andalusian flocks kept their yellow-toned wool while black wool dominated the rest of the peninsula, a distinction ancient writers noted specifically. Cordoba's position on the Guadalquivir made it a natural spinning and export point for the trade.",
+        "province": "Baetica",
+        "modern_location": "Cordoba, Spain",
+        "extant_117ce": true,
+        "sources": [
+          "https://bmcr.brynmawr.edu/2004/2004.03.50/",
+          "https://en.wikipedia.org/wiki/Hispania_Baetica"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20Bridge.%20C%C3%B3rdoba.%20Andaluc%C3%ADa.%20Spain.jpg?width=800",
+        "image_credit": "Roman Bridge, Cordoba, Andalucia, Spain · Wikimedia Commons",
+        "image_alt": "Roman bridge over the Guadalquivir at Cordoba"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3711,
+          45.7686
+        ]
+      },
+      "properties": {
+        "id": "craft_amber_aquileia",
+        "name": "Aquileia",
+        "craft": "amber",
+        "one_line": "Aquileia sat at the southern end of the Amber Road, the overland route that carried raw Baltic amber down the Vistula and over the Alps to the Adriatic. Workshops in the city cut and polished that raw material into jewelry, carved ornaments, and medicinal preparations sold across the empire. Archaeologists have found that unworked amber, not finished pieces, arrived here, meaning the carving itself happened locally. The trade helped make Aquileia one of the richest cities in Roman Italy.",
+        "province": "Italia",
+        "modern_location": "Aquileia, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://geographyworlds.com/blog/amber-road-trade-route-guide/",
+          "https://www.researchgate.net/publication/325619900_From_Aquileia_to_CarnuntumGeographical_Mobility_Along_the_Amber_Road"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Foro%20Romano%20Aquileia.jpg?width=800",
+        "image_credit": "Roman Forum, Aquileia · Wikimedia Commons",
+        "image_alt": "Remains of the Roman forum at Aquileia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.578,
+          30.895
+        ]
+      },
+      "properties": {
+        "id": "craft_pearl_charax",
+        "name": "Charax Spasinou",
+        "craft": "pearl",
+        "one_line": "Charax Spasinou sat at the head of the Persian Gulf and controlled the gateway through which Gulf pearls reached Roman buyers. Isidorus of Charax documented pearl fishing here in the 1st century BC, and Palmyrene merchants kept permanent trading posts in the city to move the catch onward. Local kings minted their own coinage for over three centuries, a run that speaks to the port's lasting wealth. Pliny the Elder later called the Gulf pearl fishery the most productive in the world.",
+        "modern_location": "Jabal Khayabir, Basra Governorate, Iraq",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.livius.org/articles/place/charax/",
+          "https://ancientarabia.huma-num.fr/dictionary/definition/pearl"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Coin%20of%20Hyspaosines,%20minted%20at%20Charax%20Spasinu%20in%20129-8%20BC.jpg?width=800",
+        "image_credit": "Coin of Hyspaosines, minted at Charax Spasinu · Wikimedia Commons",
+        "image_alt": "Ancient coin minted at Charax Spasinu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.1,
+          16.7
+        ]
+      },
+      "properties": {
+        "id": "craft_pearl_farasan",
+        "name": "Farasan Islands",
+        "craft": "pearl",
+        "one_line": "The Farasan Islands guarded the strait leading to the Red Sea's richest pearl beds, near the Bab-el-Mandeb chokepoint Roman traders had to pass. A Roman garrison stationed here, recorded in Latin inscriptions cut into the rock, protected shipping lanes and nearby pearling grounds from pirates. Pliny the Elder, writing in the 70s CE, already described pearl fisheries working this stretch of the Red Sea. The islands doubled as a customs checkpoint for Indian Ocean trade passing beneath them.",
+        "modern_location": "Farasan Islands, Saudi Arabia",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.tabulae-geographicae.de/2017/03/31/new-inscriptions-from-saudi-arabia-and-the-extent-of-roman-rule-along-the-red-sea/",
+          "https://short-history.com/the-farthest-roman-military-outpost-the-fascinating-farasan-islands-in-the-red-sea-432dd06f6304"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Farasan%20Island%203.jpg?width=800",
+        "image_credit": "Farasan Island · Wikimedia Commons",
+        "image_alt": "Coastline of Farasan Island, Saudi Arabia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.8286,
+          53.2799
+        ]
+      },
+      "properties": {
+        "id": "craft_pearl_conwy",
+        "name": "Conwy",
+        "craft": "pearl",
+        "one_line": "Conwy's river held freshwater pearl mussels that ancient writers linked to one of Rome's most famous jewels. Pliny the Elder reported that Julius Caesar dedicated a breastplate set with British pearls to Venus Genetrix in her Roman temple, and Suetonius names pearls among Caesar's reasons for eyeing Britain at all. Modern historians trace those pearls to the mussel beds around Conwy on the north Welsh coast. By the 16th century the same river still yielded up to 4 kilograms of pearls a week.",
+        "province": "Britannia",
+        "modern_location": "Conwy, Wales, United Kingdom",
+        "extant_117ce": true,
+        "sources": [
+          "https://sublimewales.wordpress.com/material-culture/occupations/gathering-pearls/",
+          "https://www.conwypearls.co.uk/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Conwy%20Castle,%20North%20Wales.jpg?width=800",
+        "image_credit": "Conwy Castle, North Wales · Wikimedia Commons",
+        "image_alt": "Conwy Castle on the river Conwy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.4066,
+          34.7571
+        ]
+      },
+      "properties": {
+        "id": "craft_perfume_paphos",
+        "name": "Paphos",
+        "craft": "perfume",
+        "one_line": "Paphos processed island flowers into scented oils at a scale that left presses, perfumery vessels, and residue for archaeologists to find. As Roman Cyprus's capital and the legendary birthplace of Aphrodite, the city tied its perfume trade to the goddess's own myth. Pliny the Elder, Theophrastus, and Dioscorides all wrote about Cypriot scent production in the same breath as its temples. Cyprus's rose-based perfumes carried a reputation across the Roman world for centuries.",
+        "province": "Cyprus",
+        "modern_location": "Paphos, Cyprus",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.academia.edu/34788906/the_perfume_of_cyprus_revised_edition",
+          "https://yourcyprusguide.com/en/review/perfumes-cyprus"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/House%20of%20Dionysus,%20Paphos%20Archaeological%20Park,%20Cyprus%20(22454798110).jpg?width=800",
+        "image_credit": "House of Dionysus, Paphos Archaeological Park · Wikimedia Commons",
+        "image_alt": "Mosaic floor at the House of Dionysus, Paphos"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3888,
+          31.4618
+        ]
+      },
+      "properties": {
+        "id": "craft_perfume_engedi",
+        "name": "Ein Gedi",
+        "craft": "perfume",
+        "one_line": "Ein Gedi grew the one plant Rome prized above every other scent: balsam, a resin Pliny the Elder said Judaea alone could produce. Growing it was a royal monopoly, and after 70 CE the emperor's treasury took it over, displaying a balsam bush in Vespasian and Titus's triumph through Rome. Jewish rebels reportedly tried burning the groves rather than let Rome seize them, while Roman troops fought to save the trees. By 117 CE the oasis supplied the empire's single most exclusive perfume ingredient.",
+        "province": "Judaea",
+        "modern_location": "Ein Gedi, Israel",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.researchgate.net/publication/288307676_The_Balsam_'Afarsemon'_and_Ein_Gedi_during_the_Roman-Byzantine_period",
+          "https://onlinelibrary.wiley.com/doi/10.1002/cbdv.201900506"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dead%20sea,%20Ein%20Gedi%20beach.JPG?width=800",
+        "image_credit": "Ein Gedi beach on the Dead Sea · Wikimedia Commons",
+        "image_alt": "Ein Gedi oasis on the shore of the Dead Sea"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3758,
+          33.5606
+        ]
+      },
+      "properties": {
+        "id": "craft_glass_sidon",
+        "name": "Sidon",
+        "craft": "glass",
+        "one_line": "Sidon gave the ancient world glassblowing itself, a technique its craftsmen developed around 50 BCE by inflating molten glass through a hollow tube. Pliny the Elder credited the city by name for the innovation he called flatu figurae, shaping by breath. The Sidonian glassmaker Ennion signed his own mold-blown jugs and cups in the 1st century CE, some of the earliest branded luxury goods in history. His work traveled and was copied as far away as Italy within his own lifetime.",
+        "province": "Syria",
+        "modern_location": "Saida, Lebanon",
+        "extant_117ce": true,
+        "sources": [
+          "https://mariamilani.com/ancient_rome/ancient-roman-glass.htm",
+          "https://en.wikipedia.org/wiki/Ennion"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jug%20MET%20142757.jpg?width=800",
+        "image_credit": "Mold-blown glass jug signed by Ennion of Sidon, Metropolitan Museum of Art · Wikimedia Commons",
+        "image_alt": "Roman mold-blown glass jug signed by Ennion"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9187,
+          31.2001
+        ]
+      },
+      "properties": {
+        "id": "craft_glass_alexandria",
+        "name": "Alexandria",
+        "craft": "glass",
+        "one_line": "Alexandria's glassmakers perfected mosaic and millefiori techniques, fusing bundles of colored glass rods into canes that revealed flower-like patterns when sliced crosswise. The city had already led the Mediterranean in specialized glass techniques since the 1st century BCE, and one Roman writer described its finest pieces as nearly indistinguishable from rock crystal. Alexandrian glass traveled to Italy and beyond as some of the most prized tableware in the Roman world.",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.realclearscience.com/quick_and_clear_science/2020/07/13/where_did_romes_famous_alexandrian_glass_come_from.html",
+          "https://www.britannica.com/art/glassware/The-Roman-Empire"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Egypt,%20Pompey's%20Pillar,%20Alexandria.jpg?width=800",
+        "image_credit": "Pompey's Pillar, Alexandria · Wikimedia Commons",
+        "image_alt": "Pompey's Pillar in Alexandria"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1225,
+          40.8267
+        ]
+      },
+      "properties": {
+        "id": "craft_glass_puteoli",
+        "name": "Pozzuoli",
+        "craft": "glass",
+        "one_line": "Puteoli turned Campania's coastal sand into glassware, using the same littoral sand deposits Pliny the Elder named as a glassmaking source. Workshops around the Bay of Naples remelted imported Levantine raw glass alongside local material to finish vessels close to the capital. Its harbor, already Italy's busiest commercial port, made it a natural secondary hub for luxury glass. Pliny's Natural History, published in 77 CE, is the best-surviving ancient account of how that glass was made.",
+        "province": "Italia",
+        "modern_location": "Pozzuoli, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.academia.edu/4590969/Pliny_on_Roman_Glassmaking",
+          "https://www.researchgate.net/publication/229506634_Sand_for_Roman_glass_production_An_experimental_and_philological_study_on_source_of_supply"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Serapium%20pozzuoli%202005.jpg?width=800",
+        "image_credit": "Macellum of Pozzuoli (Temple of Serapis) · Wikimedia Commons",
+        "image_alt": "Ruins of the Macellum of Pozzuoli"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9603,
+          50.9375
+        ]
+      },
+      "properties": {
+        "id": "craft_glass_cologne",
+        "name": "Cologne",
+        "craft": "glass",
+        "one_line": "Cologne began making glass almost as soon as Rome founded it as a colony in 50 CE, with 1st-century pieces already turning up beneath the modern city. Its industry expanded through the Flavian and Trajanic decades but only reached its real peak in the 2nd and 3rd centuries, producing the elaborate cage cups it's now famous for. At 117 CE the workshops were still young and growing, not yet the mature industry they later became.",
+        "province": "Germania Inferior",
+        "modern_location": "Cologne, Germany",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.megalithic.co.uk/article.php?sid=18208",
+          "https://en.wikipedia.org/wiki/Colonia_Claudia_Ara_Agrippinensium"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B6misch-Germanisches%20Museum%20K%C3%B6ln%20(2514-16).jpg?width=800",
+        "image_credit": "Romisch-Germanisches Museum, Cologne · Wikimedia Commons",
+        "image_alt": "Romano-Germanic Museum in Cologne"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.8781,
+          37.9061
+        ]
+      },
+      "properties": {
+        "id": "craft_bronze_corinth",
+        "name": "Corinth",
+        "craft": "bronze",
+        "one_line": "Corinth once produced a bronze alloy so prized that Pliny the Elder ranked it above silver, mixed with gold and silver for a shimmer no other metalwork could match. Rome's sack of the city in 146 BCE scattered its workshops and killed off the artisans who knew the formula, and within a generation the alloy could no longer be reliably made. By Pliny's own day, genuine Corinthian bronze was already a rarity chased by collectors, with fakes far more common than the real thing.",
+        "province": "Achaea",
+        "modern_location": "Ancient Corinth, Greece",
+        "extant_117ce": false,
+        "sources": [
+          "https://worldpolitics.substack.com/p/corinthian-bronze-ancient-rome-greece",
+          "https://www.ascsa.edu.gr/uploads/media/hesperia/148011.pdf"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Apollo%20(Corinth).JPG?width=800",
+        "image_credit": "Temple of Apollo, Corinth · Wikimedia Commons",
+        "image_alt": "Doric columns of the Temple of Apollo at Corinth"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2483,
+          41.0864
+        ]
+      },
+      "properties": {
+        "id": "craft_bronze_capua",
+        "name": "Capua",
+        "craft": "bronze",
+        "one_line": "Capua ranked as the second city of Italy in wealth, built in large part on bronze vases and vessels its workshops had turned out since at least the 6th century BCE. Both Cato the Elder and Pliny the Elder praised the city's bronzework by name. Etruscan metalworking know-how, absorbed early in Capua's history, kept its foundries running through Samnite, Roman, and imperial rule alike. Its amphitheater, the second-largest in the Roman world, still stands as a monument to that trade wealth.",
+        "province": "Italia",
+        "modern_location": "Capua, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.romeartlover.it/Capua3.html",
+          "https://www.britannica.com/place/Capua-ancient-city-Italy"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Amphitheatre%20of%20Santa%20Maria%20Capua%20Vetere%20003.jpg?width=800",
+        "image_credit": "Amphitheatre of Santa Maria Capua Vetere · Wikimedia Commons",
+        "image_alt": "Roman amphitheatre at Santa Maria Capua Vetere"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.4281,
+          37.7462
+        ]
+      },
+      "properties": {
+        "id": "craft_bronze_aegina",
+        "name": "Aegina",
+        "craft": "bronze",
+        "one_line": "Aegina's bronze once rivaled Corinth's for prestige, with Pliny the Elder ranking Aeginetan alloy among the finest the ancient world produced. That fame belonged mostly to the island's Classical and Hellenistic heyday, not a thriving Roman-period workshop. By 117 CE Aegina had long faded from its old naval and commercial power, eclipsed by Athens and folded quietly into Roman Achaea. It kept minting its own bronze coinage, a faint echo of a fame that was by then mostly historical.",
+        "province": "Achaea",
+        "modern_location": "Aegina, Greece",
+        "extant_117ce": false,
+        "sources": [
+          "https://www.ebsco.com/research-starters/history/aegina-ancient-world",
+          "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/SMIGRA*/Aes.html"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aegina%20-%20Temple%20of%20Aphaia%2003.jpg?width=800",
+        "image_credit": "Temple of Aphaia, Aegina · Wikimedia Commons",
+        "image_alt": "Temple of Aphaia on the island of Aegina"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9187,
+          31.2001
+        ]
+      },
+      "properties": {
+        "id": "craft_jewelry_alexandria",
+        "name": "Alexandria",
+        "craft": "jewelry",
+        "one_line": "Alexandria ranked alongside Rome and Antioch as one of the empire's three great centers for fine goldsmithing. Its workshops built on Hellenistic Egyptian techniques, setting gold jewelry with garnets and emeralds mined from Egypt's own eastern desert. The city's location made it the natural place where Egyptian gold, Nubian imports, and Greek design sense all met on the same workbench. Alexandrian goldwork traveled the Mediterranean as a mark of Roman-Egyptian luxury.",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.langantiques.com/university/roman-jewelry/",
+          "https://www.academia.edu/111902300/Gold_jewellery_in_Ptolemaic_Roman_and_Byzantine_Egypt"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexandria%20-%20Pompey's%20Pillar%20with%20sphinx.JPG?width=800",
+        "image_credit": "Pompey's Pillar with sphinx, Alexandria · Wikimedia Commons",
+        "image_alt": "Pompey's Pillar and a sphinx statue in Alexandria"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.1603,
+          36.2021
+        ]
+      },
+      "properties": {
+        "id": "craft_jewelry_antioch",
+        "name": "Antioch",
+        "craft": "jewelry",
+        "one_line": "Antioch stood beside Rome and Alexandria as one of the empire's three main jewelry centers, fed by wealthy Syria around it. Goldsmiths worked gold, gemstones, and glass into pieces sold across the eastern Mediterranean. As Syria's capital and one of the empire's largest cities, Antioch had the wealth and trade links to run goldsmithing at real scale. A dining-room mosaic made there around 115-150 CE, now in the Louvre, shows the craftsmanship its workshops produced in this exact period.",
+        "province": "Syria",
+        "modern_location": "Antakya, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.langantiques.com/university/roman-jewelry/",
+          "https://commons.wikimedia.org/wiki/Category:Mosaics_from_Antioch"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mosaic%20of%20the%20Judgment%20of%20Paris,%20115%20-%20150%20AD,%20from%20Antioch%20on%20the%20Orontes%20(Antakya,%20Turkey),%20Louvre%20Museum%20(23707580825).jpg?width=800",
+        "image_credit": "Mosaic of the Judgment of Paris, from Antioch, Louvre Museum · Wikimedia Commons",
+        "image_alt": "Roman mosaic from Antioch depicting the Judgment of Paris"
+      }
+    }
+  ]
+}
