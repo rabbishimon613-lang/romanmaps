@@ -20,7 +20,8 @@ export type LayerGroupId =
   | "frontier-lines"
   | "aqueduct-lines"
   | "euergetism"
-  | "penal";
+  | "penal"
+  | "religions";
 
 export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: string[] }[] = [
   { id: "roads", label: "Roads", mapLayerIds: ["roads-main", "roads-secondary"] },
@@ -43,6 +44,7 @@ export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: strin
   { id: "aqueduct-lines", label: "Aqueducts (major lines)", mapLayerIds: ["aqueduct-lines-line"] },
   { id: "euergetism", label: "Welfare & benefaction", mapLayerIds: ["euergetism-point"] },
   { id: "penal", label: "Exile & penal geography", mapLayerIds: ["penal-point"] },
+  { id: "religions", label: "Religious communities", mapLayerIds: ["religions-point"] },
 ];
 
 type LayerState = Record<LayerGroupId, boolean>;

@@ -1235,6 +1235,64 @@ export default function Map() {
           kick();
         }
 
+        // Phase 17: Religious communities (public/data/religions_117.geojson) — Christian and
+        // Jewish diaspora communities, Isis/Cybele cult centers, and mystery-cult sanctuaries
+        // active by 117 CE, each tagged with an attestation confidence band (axis 6b).
+        const religions = await fetch("/data/religions_117.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && religions) {
+          map.addSource("religions", { type: "geojson", data: religions });
+          map.addLayer({
+            id: "religions-point",
+            type: "circle",
+            source: "religions",
+            paint: {
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+              "circle-color": "#a63d6b",
+              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-width": 1.6,
+            },
+          });
+
+          const religionPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          map.on("mouseenter", "religions-point", (e) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const traditionLabel: Record<string, string> = {
+              christian: "Christian community",
+              jewish: "Jewish diaspora community",
+              isis: "Isis cult center",
+              mithraic: "Mithraic community",
+              cybele: "Cybele (Magna Mater) center",
+              other_mystery: "Mystery cult sanctuary",
+            };
+            const attestationLabel: Record<string, string> = {
+              attested_117: "Attested by 117 CE",
+              probable: "Probable by 117 CE",
+              claimed: "Claimed in later sources",
+            };
+            const noteLine = p.one_line ? `<div style="margin-top:4px;">${escapeHtml(p.one_line)}</div>` : "";
+            religionPopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(traditionLabel[p.tradition] || p.tradition || "")}${p.attestation ? " · " + escapeHtml(attestationLabel[p.attestation] || p.attestation) : ""}</div>
+                   ${noteLine}
+                 </div>`,
+              )
+              .addTo(map);
+          });
+          map.on("mouseleave", "religions-point", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          kick();
+        }
+
         // Apply any persisted Layers-panel visibility (all groups default visible).
         applyAllLayers();
       });

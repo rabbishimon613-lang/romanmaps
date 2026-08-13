@@ -1,0 +1,753 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      },
+      "properties": {
+        "id": "religion_christian_rome",
+        "name": "Rome",
+        "tradition": "christian",
+        "attestation": "attested_117",
+        "one_line": "Paul's letter to the Romans reached this community around 57 CE, and by 117 CE Rome held one of the empire's largest Christian populations. Nero blamed the group for the great fire of 64 CE and executed many in his own gardens. Ignatius of Antioch wrote ahead to Rome's believers in 107 CE, begging them not to intervene in his coming martyrdom. Its catacombs would later preserve some of the earliest surviving Christian burial art in the city.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Epistle_to_the_Romans",
+          "https://en.wikipedia.org/wiki/Ignatius_of_Antioch",
+          "https://en.wikipedia.org/wiki/Catacomb_of_Priscilla"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Good%20Shepherd%20Catacomb%20of%20Priscilla.jpg?width=800",
+        "image_credit": "Good Shepherd fresco, Catacomb of Priscilla, Rome · Wikimedia Commons",
+        "image_alt": "Early Christian fresco of the Good Shepherd in the Catacomb of Priscilla, Rome"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.1613,
+          36.2023
+        ]
+      },
+      "properties": {
+        "id": "religion_christian_antioch",
+        "name": "Antioch",
+        "tradition": "christian",
+        "attestation": "attested_117",
+        "one_line": "Antioch's believers were the first anywhere called Christians, a name the Book of Acts records taking hold in this city. Peter and Paul both preached here before it became a missionary base for the wider Mediterranean. Ignatius served as its bishop until Trajan condemned him around 107 CE and shipped him to Rome for execution. His seven surviving letters, written en route, give historians their clearest window into a Christian community of this exact period.",
+        "province": "Syria",
+        "modern_location": "Antakya, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ignatius_of_Antioch",
+          "https://en.wikipedia.org/wiki/Antioch"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mosaic%20of%20the%20Judgment%20of%20Paris%2C%20115%20-%20150%20AD%2C%20from%20Antioch%20on%20the%20Orontes%20(Antakya%2C%20Turkey)%2C%20Louvre%20Museum%20(23707580825).jpg?width=800",
+        "image_credit": "Mosaic from Antioch on the Orontes, 115-150 CE, Louvre Museum · Wikimedia Commons",
+        "image_alt": "Roman-period mosaic excavated at ancient Antioch, dated close to 117 CE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9187,
+          31.2001
+        ]
+      },
+      "properties": {
+        "id": "religion_christian_alexandria",
+        "name": "Alexandria",
+        "tradition": "christian",
+        "attestation": "attested_117",
+        "one_line": "Tradition holds that Mark the Evangelist founded Alexandria's church around 42 CE, preaching among the city's huge Jewish population. By 117 CE the community stayed small and out of public view, decades before producing theologians like Origen. The Kitos War tore through the city in 115-117 CE as Jewish and Greek residents fought street battles that Rome's general Quintus Marcius Turbo took months to suppress. Alexandria's Christians later traced their bishops back to this decade.",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Mark_the_Evangelist",
+          "https://en.wikipedia.org/wiki/Kitos_War"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kom%20el-Dikka%2C%20Alexandria.jpg?width=800",
+        "image_credit": "Roman-period Alexandria, Kom el-Dikka · Wikimedia Commons",
+        "image_alt": "Roman-era ruins in Alexandria, Egypt"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.8781,
+          37.9058
+        ]
+      },
+      "properties": {
+        "id": "religion_christian_corinth",
+        "name": "Corinth",
+        "tradition": "christian",
+        "attestation": "attested_117",
+        "one_line": "Paul spent eighteen months building this congregation around 50 CE, drawing converts from Corinth's dockworkers, merchants, and freed slaves. His two surviving letters to the community argue over lawsuits, factions, and who could eat meat sold near pagan temples. Corinth's mixed Roman colony setting made it one of the best-documented Christian communities of the first century. By 117 CE its members had already weathered a generation of internal disputes.",
+        "province": "Achaea",
+        "modern_location": "Corinth, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Church_of_Corinth",
+          "https://en.wikipedia.org/wiki/First_Epistle_to_the_Corinthians"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Temple%20of%20Apollo%20(6th%20century%20B.C.)%20in%20Corinth%20on%203%20June%202018.jpg?width=800",
+        "image_credit": "Temple of Apollo, ancient Corinth · Wikimedia Commons",
+        "image_alt": "Ruins of the Temple of Apollo at ancient Corinth"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.3639,
+          37.9495
+        ]
+      },
+      "properties": {
+        "id": "religion_christian_ephesus",
+        "name": "Ephesus",
+        "tradition": "christian",
+        "attestation": "attested_117",
+        "one_line": "Paul preached in Ephesus for roughly two years around 53-55 CE, long enough to provoke a riot from silversmiths who sold statuettes of Artemis. The city's Christians later received a letter in the Book of Revelation warning they had abandoned their first love. Ignatius of Antioch wrote to them around 107 CE while under armed guard, praising their unity around a single bishop. Ephesus ranked alongside Rome, Antioch, and Alexandria as one of early Christianity's four major centers.",
+        "province": "Asia",
+        "modern_location": "Selcuk, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ignatius_of_Antioch",
+          "https://www.eerdmans.com/9780802807694/the-early-christians-in-ephesus-from-paul-to-ignatius/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great%20Theatre%2C%20Ephesus.jpg?width=800",
+        "image_credit": "Great Theatre of Ephesus · Wikimedia Commons",
+        "image_alt": "The Great Theatre at ancient Ephesus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1428,
+          38.4237
+        ]
+      },
+      "properties": {
+        "id": "religion_christian_smyrna",
+        "name": "Smyrna",
+        "tradition": "christian",
+        "attestation": "attested_117",
+        "one_line": "Smyrna's Christians received one of the seven letters in the Book of Revelation, promising a martyr's crown to the faithful. Around 107 CE, Ignatius of Antioch stopped here and befriended its young bishop, Polycarp, later writing him a personal letter. Polycarp, born around 69 CE, led this congregation for decades before his own execution in the city's stadium. By 117 CE Smyrna was already a recognized center of orthodoxy in Roman Asia.",
+        "province": "Asia",
+        "modern_location": "Izmir, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Polycarp",
+          "https://en.wikipedia.org/wiki/Ignatius_of_Antioch"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Agora%20of%20Smyrna.jpg?width=800",
+        "image_credit": "Agora of ancient Smyrna, Izmir · Wikimedia Commons",
+        "image_alt": "Ruins of the agora of ancient Smyrna"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.2874,
+          41.0139
+        ]
+      },
+      "properties": {
+        "id": "religion_christian_philippi",
+        "name": "Philippi",
+        "tradition": "christian",
+        "attestation": "attested_117",
+        "one_line": "Philippi became the first Christian community founded on European soil when Paul baptized the merchant Lydia around 50 CE. A Roman colony strung along the Via Egnatia trade road, the city gave Paul's letter to its congregation an unusually warm, personal tone. Ignatius of Antioch's own letters passed through Philippi around 107 CE, and its bishop later collected copies for Polycarp in Smyrna. The community endured as a stronghold of Pauline Christianity into the second century.",
+        "province": "Macedonia",
+        "modern_location": "Filippoi, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Epistle_to_the_Philippians",
+          "https://en.wikipedia.org/wiki/Philippi"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancient%20Philippi.jpg?width=800",
+        "image_credit": "Archaeological site of ancient Philippi · Wikimedia Commons",
+        "image_alt": "Ruins of ancient Philippi, Greece"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9444,
+          40.6401
+        ]
+      },
+      "properties": {
+        "id": "religion_christian_thessalonica",
+        "name": "Thessaloniki",
+        "tradition": "christian",
+        "attestation": "attested_117",
+        "one_line": "Paul founded this congregation around 50 CE after only a few weeks of preaching, then wrote what may be the earliest surviving Christian text to its Jewish and Greek converts. His first letter praised their courage under harassment; a jealous crowd had already dragged one host before the city's magistrates. Thessalonica's spot on the Via Egnatia kept it in close contact with Rome and Corinth. By 117 CE its believers had outlasted two generations of persecution.",
+        "province": "Macedonia",
+        "modern_location": "Thessaloniki, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/First_Epistle_to_the_Thessalonians"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Roman%20forum.jpg?width=800",
+        "image_credit": "Roman Forum of Thessaloniki · Wikimedia Commons",
+        "image_alt": "Roman Forum of ancient Thessalonica"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2137,
+          31.7683
+        ]
+      },
+      "properties": {
+        "id": "religion_christian_jerusalem",
+        "name": "Jerusalem",
+        "tradition": "christian",
+        "attestation": "claimed",
+        "one_line": "Jerusalem's first Christians, led by James the brother of Jesus, formed the mother church that Paul and Peter both answered to in the movement's earliest years. Rome besieged and destroyed the city in 70 CE, killing or scattering its population. Later church historians recorded that believers had fled beforehand across the Jordan River to Pella. By 117 CE Jerusalem itself lay in ruins, with no rebuilt city standing until Hadrian founded a colony there after 130 CE.",
+        "province": "Iudaea",
+        "modern_location": "Jerusalem",
+        "extant_117ce": false,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Flight_to_Pella",
+          "https://library.biblicalarchaeology.org/article/the-christian-flight-to-pella-true-or-tale/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jerusalem-2013-Aerial-Temple%20Mount%2003.jpg?width=800",
+        "image_credit": "Temple Mount, Jerusalem · Wikimedia Commons",
+        "image_alt": "Aerial view of the Temple Mount in Jerusalem"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.33,
+          41.2867
+        ]
+      },
+      "properties": {
+        "id": "religion_christian_bithynia",
+        "name": "Samsun",
+        "tradition": "christian",
+        "attestation": "attested_117",
+        "one_line": "Governor Pliny the Younger wrote Trajan around 112 CE asking how to handle the growing number of Christians in this province, the earliest outside account of Christian worship. Pliny reported that accused believers met before dawn to sing hymns and share a meal, then dispersed peacefully. He noted temples had emptied as the new faith spread through cities and countryside alike. Trajan's reply, ordering Pliny to punish only those formally denounced, became imperial policy for decades.",
+        "province": "Pontus et Bithynia",
+        "modern_location": "Samsun, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pliny_the_Younger_on_Christians",
+          "https://faculty.georgetown.edu/jod/texts/pliny.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Karaburun%20-%20Black%20Sea%20-%20Turkey.jpg?width=800",
+        "image_credit": "Black Sea coast of Pontus, northern Turkey · Wikimedia Commons",
+        "image_alt": "Black Sea coastline near ancient Pontus and Bithynia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9187,
+          31.2001
+        ]
+      },
+      "properties": {
+        "id": "religion_jewish_alexandria",
+        "name": "Alexandria",
+        "tradition": "jewish",
+        "attestation": "attested_117",
+        "one_line": "Alexandria's Jewish community filled two of the city's five districts, the largest Jewish population outside Judaea. Philo, writing in the 30s CE, described its Greek-speaking members worshipping from the Septuagint. The Kitos War erupted here in 115 CE, and by the time Trajan's general Quintus Marcius Turbo crushed the revolt in 117 CE, this ancient community lay devastated. Alexandria's synagogues, once so vast they inspired a Jewish proverb about their size, took generations to recover.",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kitos_War",
+          "https://en.wikipedia.org/wiki/Philo"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Catacombs%20of%20Kom%20El%20Shoqafa%2C%20Alexandria%2C%20Egypt%20-%2050852698532.jpg?width=800",
+        "image_credit": "Catacombs of Kom El Shoqafa, Roman-period Alexandria · Wikimedia Commons",
+        "image_alt": "Roman-era catacombs in Alexandria, Egypt"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4692,
+          41.8896
+        ]
+      },
+      "properties": {
+        "id": "religion_jewish_rome",
+        "name": "Rome",
+        "tradition": "jewish",
+        "attestation": "attested_117",
+        "one_line": "Jewish merchants and freed slaves settled across the Tiber in Trastevere by the second century BCE, Rome's oldest diaspora community. Julius Caesar granted the community formal protections, and by the first century CE it supported multiple synagogues serving thousands. Claudius expelled agitating Jews from Rome around 49 CE, a move Suetonius linked to disputes over a figure named Chrestus. The Arch of Titus, dedicated in 81 CE, displayed the Temple's captured menorah as a permanent trophy.",
+        "province": "Italia",
+        "modern_location": "Trastevere, Rome, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Jews_in_the_Roman_Empire",
+          "https://en.wikipedia.org/wiki/Arch_of_Titus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Menorah%20(Arc%20de%20Titus%2C%20Rome).jpg?width=800",
+        "image_credit": "Menorah relief, Arch of Titus, Rome · Wikimedia Commons",
+        "image_alt": "Relief of the Jerusalem Temple menorah on the Arch of Titus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8583,
+          32.825
+        ]
+      },
+      "properties": {
+        "id": "religion_jewish_cyrenaica",
+        "name": "Cyrene",
+        "tradition": "jewish",
+        "attestation": "attested_117",
+        "one_line": "Cyrene's Jewish community dated to the Ptolemaic era and won legal equality from Augustus and Agrippa around 14 BCE, recorded on a stone inscribed with five imperial edicts. A separate Jewish politeuma with its own archons governed nearby Berenice by 24 CE. In 115 CE this community launched the opening revolt of the Kitos War under a leader named Lukuas, marching on Alexandria and burning temples along the way. Rome's suppression by 117 CE ended organized Jewish life here for a generation.",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Shahhat, Libya",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kitos_War",
+          "https://www.judaism-and-rome.org/cyrene-edicts-augustus-i-and-iii"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Archaeological%20Site%20of%20Cyrene-109025.jpg?width=800",
+        "image_credit": "Archaeological site of Cyrene, Libya · Wikimedia Commons",
+        "image_alt": "Ruins of the ancient city of Cyrene"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.1613,
+          36.2023
+        ]
+      },
+      "properties": {
+        "id": "religion_jewish_antioch",
+        "name": "Antioch",
+        "tradition": "jewish",
+        "attestation": "attested_117",
+        "one_line": "Antioch's Jewish community was old enough that Josephus called it one of the largest in the diaspora, with roots reaching back to the city's founding under the Seleucids. Its members won bronze tablets recording their civic privileges, kept on public display. Antioch avoided the worst of the Kitos War violence that tore through Cyrenaica, Egypt, and Cyprus in 115-117 CE. Its synagogue and Jewish quarter kept functioning through Trajan's reign undisturbed.",
+        "province": "Syria",
+        "modern_location": "Antakya, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Antioch",
+          "https://en.wikipedia.org/wiki/Kitos_War"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Antiochia%20-%20House%20of%20the%20Evil%20Eye.jpg?width=800",
+        "image_credit": "Mosaic from Roman Antioch · Wikimedia Commons",
+        "image_alt": "Ancient mosaic from the ruins of Antioch"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.0403,
+          38.488
+        ]
+      },
+      "properties": {
+        "id": "religion_jewish_sardis",
+        "name": "Sardis",
+        "tradition": "jewish",
+        "attestation": "attested_117",
+        "one_line": "Sardis had Jewish residents since the Persian period, and a Roman decree cited by Josephus confirmed their right to assemble and keep their own laws by 49 BCE. The community held a recognized meeting place for over 150 years before 117 CE, long before its synagogue hall was carved from the city's Roman gymnasium in the third century. Inscriptions from the site number more than eighty in Greek, evidence of a wealthy congregation. Sardis remains the largest Jewish site known from antiquity.",
+        "province": "Asia",
+        "modern_location": "Sart, Manisa Province, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sardis_Synagogue",
+          "http://www.philipharland.com/associations/sardis.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sardis%20Synagogue%2C%20late%203rd%20century%20AD%2C%20Sardis%2C%20Lydia%2C%20Turkey%20(19331773400).jpg?width=800",
+        "image_credit": "Sardis Synagogue site, Lydia, Turkey · Wikimedia Commons",
+        "image_alt": "Remains of the synagogue complex at Sardis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.2686,
+          37.3963
+        ]
+      },
+      "properties": {
+        "id": "religion_jewish_delos",
+        "name": "Delos",
+        "tradition": "jewish",
+        "attestation": "probable",
+        "one_line": "A building on Delos's eastern shore, raised as early as 150 BCE, is identified by most excavators as one of the oldest Jewish meeting halls outside Judaea. Excavators found a marble seat known as the Throne of Moses against its back wall, alongside dedications to God Most High. The structure sat apart from Delos's crowded harbor district, facing east toward Jerusalem. By 117 CE the community had worshipped on this spot for over two centuries.",
+        "province": "Achaea",
+        "modern_location": "Delos, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Delos_Synagogue"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancient%20Delos.jpg?width=800",
+        "image_credit": "Archaeological site of ancient Delos · Wikimedia Commons",
+        "image_alt": "Ruins on the island of Delos"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2917,
+          41.7551
+        ]
+      },
+      "properties": {
+        "id": "religion_jewish_ostia",
+        "name": "Ostia",
+        "tradition": "jewish",
+        "attestation": "probable",
+        "one_line": "Ostia's Jewish community organized around a synagogue near the city walls, serving Rome's busy port from at least the first century CE onward. Excavators found a marble screen carved with menorahs, a shofar, and a citron, among the clearest Jewish symbols found anywhere in the western Mediterranean. Dockworkers and merchants passing through Ostia linked this congregation to Jewish communities across the empire. The building stayed in use as a synagogue for over four centuries.",
+        "province": "Italia",
+        "modern_location": "Ostia Antica, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ostia_Synagogue"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Menorah%20symbol%20at%20Ostia%20Antica%20synagogue.jpg?width=800",
+        "image_credit": "Menorah relief, Ostia Synagogue · Wikimedia Commons",
+        "image_alt": "Menorah carving at the ancient synagogue of Ostia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1219,
+          40.8236
+        ]
+      },
+      "properties": {
+        "id": "religion_jewish_puteoli",
+        "name": "Pozzuoli",
+        "tradition": "jewish",
+        "attestation": "attested_117",
+        "one_line": "Josephus described a Jewish colony already settled at Puteoli under its older name, Dicaearchia, and used the port himself to reach Rome in the 60s CE. Funerary inscriptions near the city name a gerusiarch, a leader of Jewish elders who maintained the community's burial ground. One tombstone commemorated Claudia Aster, a twenty-five-year-old captive from Jerusalem sold into slavery after 70 CE. Puteoli's harbor was the first Italian soil many Jewish travelers, Paul included, ever touched.",
+        "province": "Italia",
+        "modern_location": "Pozzuoli, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Claudia_Aster_inscription",
+          "http://www.ostia-antica.org/dict/topics/puteoli/presentation/puteoli-paulus.htm"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Serapium%20pozzuoli%202005.jpg?width=800",
+        "image_credit": "Macellum (market) of ancient Puteoli, Pozzuoli · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman market of Puteoli"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.8917,
+          31.1789
+        ]
+      },
+      "properties": {
+        "id": "religion_isis_alexandria",
+        "name": "Alexandria",
+        "tradition": "isis",
+        "attestation": "attested_117",
+        "one_line": "Isis worship began at Alexandria's founding and by 117 CE anchored one of the ancient world's most influential cults. Sailors credited Isis Pharia, guardian of the harbor beside the great lighthouse, and inscriptions record a shrine built near the Pharos itself. Ptolemy I created the linked cult of Serapis here to unite Greek and Egyptian worshippers under one divine pair. From this city, devotion to Isis spread to Rome, Pompeii, and Delos within two centuries.",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Isis",
+          "https://en.wikipedia.org/wiki/Serapeum_of_Alexandria"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Serapeum%20of%20Alexandria%20(X).jpg?width=800",
+        "image_credit": "Serapeum of Alexandria, home of the city's Egyptian cults · Wikimedia Commons",
+        "image_alt": "Remains of the Serapeum at Alexandria"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4909,
+          40.7495
+        ]
+      },
+      "properties": {
+        "id": "religion_isis_pompeii",
+        "name": "Pompeii",
+        "tradition": "isis",
+        "attestation": "attested_117",
+        "one_line": "Pompeii's Temple of Isis arrived around 100 BCE and stood until Vesuvius buried the city in 79 CE, thirty-eight years before this map's date. An earthquake in 62 CE had already damaged the shrine, and a freedman named Numerius Popidius Ampliatus paid to rebuild it in his son's name. Excavators in 1764 found it still standing with painted walls intact, the first religious building unearthed at Pompeii. Its frescoes gave eighteenth-century Europe its first look at a Roman mystery cult in ruins.",
+        "province": "Italia",
+        "modern_location": "Pompeii, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Isis_(Pompeii)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pompeii%20-%20Temple%20of%20Isis%20-%20Io%20and%20Isis%20-%20MAN.jpg?width=800",
+        "image_credit": "Fresco of Io and Isis from the Temple of Isis, Pompeii · Wikimedia Commons",
+        "image_alt": "Fresco from the Temple of Isis at Pompeii, buried in 79 CE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4783,
+          41.8986
+        ]
+      },
+      "properties": {
+        "id": "religion_isis_rome",
+        "name": "Rome",
+        "tradition": "isis",
+        "attestation": "attested_117",
+        "one_line": "The Senate first vowed a temple to Isis and Serapis in the Campus Martius in 43 BCE, giving the cult an official foothold in the city. Fire destroyed it in 80 CE, and Domitian rebuilt it on a lavish scale. Its precinct held genuine Egyptian obelisks, sphinxes, and granite columns carved with priests holding canopic jars, later dragged across Rome to decorate Renaissance piazzas. By 117 CE the Iseum Campense was the largest Isis temple in the western Mediterranean.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Isis_and_Serapis"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sphinx%20from%20the%20Iseum%20Campense%20(Rome%2C%20Mus%20Cap%2035)%2002.jpg?width=800",
+        "image_credit": "Sphinx from the Iseum Campense, Musei Capitolini, Rome · Wikimedia Commons",
+        "image_alt": "Egyptian-style sphinx sculpture from Rome's Temple of Isis and Serapis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.2703,
+          37.3971
+        ]
+      },
+      "properties": {
+        "id": "religion_isis_delos",
+        "name": "Delos",
+        "tradition": "isis",
+        "attestation": "attested_117",
+        "one_line": "Egyptian traders brought Isis worship to Delos by the third century BCE, and the island produced more dedications to Egyptian gods than anywhere outside Egypt. Three linked sanctuaries rose on a terrace above the island's reservoir, the largest covering some six thousand square meters with temples to Isis, Serapis, and Anubis. Worshippers abstained from wine inside the precinct, following rules imported from Egypt. The sanctuaries kept functioning even as Delos's slave market faded after 88 BCE.",
+        "province": "Achaea",
+        "modern_location": "Delos, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://open.library.ubc.ca/cIRcle/collections/ubccommunityandpartnerspublicati/52387/items/1.0401706"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temples%20Hera%20Isis%20Egyptian%20Syrian%20gods%20Delos%2C%20143520.jpg?width=800",
+        "image_credit": "Sanctuary of the Egyptian gods, Delos · Wikimedia Commons",
+        "image_alt": "Remains of the temples to Isis and other Egyptian gods on Delos"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4886,
+          41.8894
+        ]
+      },
+      "properties": {
+        "id": "religion_cybele_rome",
+        "name": "Rome",
+        "tradition": "cybele",
+        "attestation": "attested_117",
+        "one_line": "Rome imported Cybele's sacred black stone from Anatolia in 204 BCE on a Sibylline oracle's promise it would help defeat Hannibal. The Senate dedicated a full temple to her on the Palatine in 191 BCE, making Cybele the first eastern deity granted official Roman state cult status. Her spring festival, the Megalesia, filled Rome's calendar with games for over a week every April. By 117 CE the cult had stood at the city's religious center for over three centuries.",
+        "province": "Italia",
+        "modern_location": "Palatine Hill, Rome, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Cybele_(Palatine)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2017-03-23%20On%20the%20Palatine%20Hill.jpg?width=800",
+        "image_credit": "Palatine Hill, Rome, site of the Temple of Magna Mater · Wikimedia Commons",
+        "image_alt": "Ruins on the Palatine Hill in Rome"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.5833,
+          39.3167
+        ]
+      },
+      "properties": {
+        "id": "religion_cybele_pessinus",
+        "name": "Pessinus",
+        "tradition": "cybele",
+        "attestation": "attested_117",
+        "one_line": "Pessinus was Cybele's original home shrine, the Anatolian sanctuary that supplied Rome with her sacred stone in 204 BCE. Galatian tribes ruled the surrounding highlands by the second century BCE, yet the temple kept drawing pilgrims from across Asia Minor. Tiberius financed a new temple on the site between 25 and 35 CE, rebuilding Pessinus as a Greco-Roman city around its ancient cult. By 117 CE the sanctuary remained the mother-shrine for every Cybele temple in the empire.",
+        "province": "Galatia",
+        "modern_location": "Ballihisar, Eskisehir Province, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pessinus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/3D%20reconstruction%20temple%20Pessinus%20Angelo%20Verlinde.jpg?width=800",
+        "image_credit": "Reconstruction of the Cybele temple at Pessinus · Wikimedia Commons",
+        "image_alt": "3D reconstruction of the temple complex at Pessinus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2892,
+          41.7546
+        ]
+      },
+      "properties": {
+        "id": "religion_cybele_ostia",
+        "name": "Ostia",
+        "tradition": "cybele",
+        "attestation": "probable",
+        "one_line": "Cybele's cult reached Ostia by the first century CE, taking root in a triangular field inside the city walls called the Campo della Magna Mater. Worshippers there also kept a shrine to Attis, the god's mythical consort, and a corps of lance-bearing priests called Hastiferi who danced in processions. Initiation rites reportedly included the taurobolium, a bull sacrifice whose blood was sprinkled over devotees. Ostia's role as Rome's port made this field a gateway for eastern cults entering Italy.",
+        "province": "Italia",
+        "modern_location": "Ostia Antica, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.ostia-antica.org/regio4/1/1.htm",
+          "https://www.ostiaantica.beniculturali.it/en/educational-panels/the-area-of-the-eastern-cults-and-the-porta-laurentina-district/campo-della-magna-mater/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sacrifice%20to%20Cybele%20-%20Ostia%20Antica.JPG?width=800",
+        "image_credit": "Relief depicting a sacrifice to Cybele, Ostia Antica · Wikimedia Commons",
+        "image_alt": "Ancient relief of a sacrifice to Cybele found at Ostia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.5445,
+          38.041
+        ]
+      },
+      "properties": {
+        "id": "religion_other_eleusis",
+        "name": "Eleusis",
+        "tradition": "other_mystery",
+        "attestation": "attested_117",
+        "one_line": "The Eleusinian Mysteries initiated worshippers into secret rites of Demeter and Persephone from the second millennium BCE, promising a better fate after death. Roman citizens sought initiation as eagerly as Greeks did; Cicero and Augustus both reportedly underwent it. Hadrian's rebuilding of the sanctuary began only a few years after 117 CE, but its Telesterion initiation hall was already centuries old by this date. No initiate could describe what happened inside, on pain of death.",
+        "province": "Achaea",
+        "modern_location": "Elefsina, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Eleusinian_Mysteries"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/General%20view%20of%20sanctuary%20of%20Demeter%20and%20Kore%20and%20the%20Telesterion%20(Initiation%20Hall)%2C%20center%20for%20the%20Eleusinian%20Mysteries%2C%20Eleusis%20(8191841684).jpg?width=800",
+        "image_credit": "Sanctuary of Demeter and Kore and the Telesterion, Eleusis · Wikimedia Commons",
+        "image_alt": "The Telesterion initiation hall at the sanctuary of Eleusis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.5289,
+          40.4903
+        ]
+      },
+      "properties": {
+        "id": "religion_other_samothrace",
+        "name": "Samothrace",
+        "tradition": "other_mystery",
+        "attestation": "attested_117",
+        "one_line": "The Sanctuary of the Great Gods on Samothrace hosted mystery rites honoring the Kabeiroi, deities whose true names initiates were forbidden to speak. Unlike Eleusis, initiation here was open to anyone regardless of citizenship, gender, or status, one of antiquity's most inclusive rites. The Arsinoeion, a rotunda funded by Ptolemaic queen Arsinoe II, still dominated the sanctuary's skyline by 117 CE. Sailors credited the cult's twin gods with power to calm storms at sea.",
+        "province": "Thracia",
+        "modern_location": "Samothrace, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Samothrace_temple_complex",
+          "https://www.gtp.gr/SanctuaryoftheGreatGodsonSamothrace"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samothrake%20arsinoeion.jpg?width=800",
+        "image_credit": "The Arsinoeion, Sanctuary of the Great Gods, Samothrace · Wikimedia Commons",
+        "image_alt": "Remains of the Arsinoeion rotunda at the Samothrace sanctuary"
+      }
+    }
+  ]
+}
