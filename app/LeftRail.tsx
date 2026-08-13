@@ -2,10 +2,15 @@
 
 import { useState } from "react";
 import SitesPanel from "./SitesPanel";
+import { useIsMobile } from "./useIsMobile";
 
-/** 60px-wide dark left rail, styled after Google Maps' side icons column. */
+/** 60px-wide dark left rail, styled after Google Maps' side icons column. Hidden on mobile —
+ * the top-left search card's hamburger is the entry point there. */
 export default function LeftRail() {
   const [sitesOpen, setSitesOpen] = useState(false);
+  const isMobile = useIsMobile();
+
+  if (isMobile) return null;
 
   return (
     <>

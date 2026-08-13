@@ -7,6 +7,8 @@ import PeopleMarkers from "./PeopleMarkers";
 import MapAttribution from "./MapAttribution";
 import Ruler from "./Ruler";
 import ZoomControl from "./ZoomControl";
+import HomeButton from "./HomeButton";
+import LoadingBar from "./LoadingBar";
 import PlaceDetails from "./PlaceDetails";
 import Legend from "./Legend";
 import ContextMenu from "./ContextMenu";
@@ -22,10 +24,12 @@ export default function Page() {
       <CategoryChips />
       <Ruler />
       <Legend />
+      <HomeButton />
       <ZoomControl />
       <PlaceDetails />
       <ContextMenu />
       <MapAttribution />
+      <LoadingBar />
     </main>
   );
 }

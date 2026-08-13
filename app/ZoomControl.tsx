@@ -64,7 +64,7 @@ export default function ZoomControl() {
       style={{
         position: "absolute",
         right: 12,
-        bottom: 12,
+        bottom: 32,
         width: 40,
         borderRadius: 8,
         background: "#fff",

@@ -25,7 +25,9 @@
           "https://pleiades.stoa.org/places/502866838",
           "https://en.wikipedia.org/wiki/Roman_Forum"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20Forum%20from%20Palatine%20Hill.jpg?width=800",
+        "image_credit": "Roman Forum from Palatine Hill · Wikimedia Commons (CC BY-SA)"
       }
     },
     {
@@ -52,7 +54,9 @@
           "https://en.wikipedia.org/wiki/Curia_Julia",
           "https://topostext.org/place/419125BCJu"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Curia%20iulia.jpg?width=800",
+        "image_credit": "Curia Julia, Roman Forum · Wikimedia Commons"
       }
     },
     {
@@ -133,7 +137,9 @@
           "https://en.wikipedia.org/wiki/Temple_of_Saturn",
           "https://topostext.org/place/419125SSat"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Saturn%20%28Rome%29.jpg?width=800",
+        "image_credit": "Temple of Saturn, Rome · Wikimedia Commons"
       }
     },
     {
@@ -160,7 +166,9 @@
           "https://en.wikipedia.org/wiki/Temple_of_Vesta",
           "https://penelope.uchicago.edu/~grout/encyclopaedia_romana/romanforum/vesta.html"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Vesta%20%28Rome%29.jpg?width=800",
+        "image_credit": "Temple of Vesta, Roman Forum · Wikimedia Commons"
       }
     },
     {
@@ -214,7 +222,9 @@
           "https://en.wikipedia.org/wiki/Temple_of_Castor_and_Pollux",
           "https://penelope.uchicago.edu/encyclopaedia_romana/romanforum/castor.html"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Castor%20and%20Pollux%2C%20Roman%20Forum%2C%20Rome%2C%20Italy.jpg?width=800",
+        "image_credit": "Temple of Castor and Pollux · Wikimedia Commons"
       }
     },
     {
@@ -241,7 +251,9 @@
           "https://en.wikipedia.org/wiki/Temple_of_Caesar",
           "https://www.judaism-and-rome.org/temple-divus-iulius-and-actian-and-parthian-triumphal-arches-29-bce"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aedes%20Divi%20Iulii.jpg?width=800",
+        "image_credit": "Temple of Divus Julius · Wikimedia Commons"
       }
     },
     {
@@ -268,7 +280,9 @@
           "https://en.wikipedia.org/wiki/Temple_of_Concord",
           "https://www.digitalaugustanrome.org/records/concordia-augusta-aedes/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Concord.jpg?width=800",
+        "image_credit": "Temple of Concord · Wikimedia Commons"
       }
     },
     {
@@ -349,7 +363,9 @@
           "https://en.wikipedia.org/wiki/Arch_of_Titus",
           "https://www.worldhistory.org/article/499/the-arch-of-titus-rome/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arch%20of%20Titus.jpg?width=800",
+        "image_credit": "Arch of Titus, Rome · Wikimedia Commons"
       }
     },
     {
@@ -376,7 +392,9 @@
           "https://en.wikipedia.org/wiki/Temple_of_Jupiter_Optimus_Maximus",
           "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/Aedes_Jovis_Capitolini.html"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tempio%20di%20Giove%20Capitolino%20-%20Ricostruzione%20di%20L%C3%A9on%20Vaudoyer%20%281830%29.jpg?width=800",
+        "image_credit": "Reconstruction by Léon Vaudoyer, 1830 · Wikimedia Commons"
       }
     },
     {
@@ -484,7 +502,9 @@
           "https://en.wikipedia.org/wiki/Circus_Maximus",
           "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0054:entry%3Dcircus-maximus"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Circus%20Maximus%20%28Rome%29.jpg?width=800",
+        "image_credit": "Circus Maximus, Rome · Wikimedia Commons"
       }
     },
     {
@@ -511,7 +531,9 @@
           "https://en.wikipedia.org/wiki/Colosseum",
           "http://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/Amphitheatrum_Flavium.html"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Colosseum%20in%20Rome%2C%20Italy%20-%20April%202007.jpg?width=800",
+        "image_credit": "Colosseum, Rome · Diliff, Wikimedia Commons (CC BY-SA)"
       }
     },
     {
@@ -565,7 +587,9 @@
           "https://en.wikipedia.org/wiki/Trajan%27s_Market",
           "https://structurae.net/en/structures/trajan-s-market"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mercati%20di%20Traiano%20-%20panoramio.jpg?width=800",
+        "image_credit": "Trajan's Market, Rome · Wikimedia Commons"
       }
     },
     {
@@ -592,7 +616,9 @@
           "https://en.wikipedia.org/wiki/Trajan%27s_Column",
           "https://www.britannica.com/topic/Trajans-Column"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trajan%27s%20Column%20from%20north-east%20%28cropped%29.jpg?width=800",
+        "image_credit": "Trajan's Column, Rome · Wikimedia Commons"
       }
     },
     {
@@ -646,7 +672,9 @@
           "https://en.wikipedia.org/wiki/Baths_of_Trajan",
           "https://www.turismoroma.it/en/places/trajans-baths"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Terme%20di%20Traiano%2001.jpg?width=800",
+        "image_credit": "Baths of Trajan · Wikimedia Commons"
       }
     },
     {
@@ -728,7 +756,9 @@
           "Lise Hetland, 'Dating the Pantheon', Journal of Roman Archaeology 20 (2007), summarized at https://erenow.org/ancient/the-pantheon-from-antiquity-to-the-present/3.php",
           "https://en.wikipedia.org/wiki/Pantheon,_Rome"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roma-pantheon-frontfacade.jpg?width=800",
+        "image_credit": "Pantheon, Rome · Wikimedia Commons"
       }
     },
     {
@@ -1672,7 +1702,9 @@
           "https://en.wikipedia.org/wiki/Serapeum_of_Alexandria",
           "https://www.worldhistory.org/alexandria/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Serapeum-Alexandria.jpg?width=800",
+        "image_credit": "Reconstruction of the Serapeum of Alexandria · Wikimedia Commons"
       }
     },
     {
@@ -1781,7 +1813,9 @@
           "Pliny NH 36.95-97",
           "https://www.britannica.com/topic/Temple-of-Artemis-temple-Ephesus-Turkey"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Artemis.jpg?width=800",
+        "image_credit": "Reconstruction of the Temple of Artemis at Ephesus · Wikimedia Commons"
       }
     },
     {
@@ -1835,7 +1869,9 @@
           "Pausanias Description of Greece 2.3.6",
           "https://pleiades.stoa.org/places/570500582/imagery-location"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancient%20Corinth%202011.jpg?width=800",
+        "image_credit": "Temple of Apollo at Corinth · Wikimedia Commons"
       }
     },
     {
@@ -1916,7 +1952,9 @@
           "Pausanias Description of Greece 2.1.7-2.2.2",
           "https://en.wikipedia.org/wiki/Isthmia"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Isthmia%20Poseidon%20Temple.jpg?width=800",
+        "image_credit": "Sanctuary of Poseidon at Isthmia · Wikimedia Commons"
       }
     },
     {
@@ -1997,7 +2035,9 @@
           "https://en.wikipedia.org/wiki/Sanctuary_of_the_Three_Gauls",
           "https://www.academia.edu/14145003/The_1st_of_August_at_Lugdunum_Astronomy_and_Imperial_Cult_in_Galia"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sanctuaire%20f%C3%A9d%C3%A9ral%20des%20Trois%20Gaules%20%C3%A0%20Lyon.jpg?width=800",
+        "image_credit": "Reconstruction, Sanctuary of the Three Gauls · Wikimedia Commons"
       }
     },
     {
@@ -2078,7 +2118,9 @@
           "https://www.worldhistory.org/Carthago_Nova/",
           "https://murciatoday.com/the-roman-city-of-carthago-nova-forerunner-of-cartagena_1227675-a.html"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cartagena%20Augusteum.jpg?width=800",
+        "image_credit": "Augusteum, Cartagena · Wikimedia Commons"
       }
     },
     {
@@ -2214,7 +2256,9 @@
           "Strabo Geography 16.2.6",
           "https://en.wikipedia.org/wiki/Daphne_(Antioch)"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruins%20at%20Daphne.jpg?width=800",
+        "image_credit": "Ruins at Daphne · Wikimedia Commons"
       }
     },
     {
@@ -4570,6 +4614,426 @@
           "https://en.wikipedia.org/wiki/Arutela"
         ],
         "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.35603,
+          43.83772
+        ]
+      },
+      "properties": {
+        "id": "poi_maison_carree_nemausus",
+        "category": "temple",
+        "name_latin": "Templum Nemausense",
+        "name_english": "Maison Carrée, Nemausus",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Nîmes, France",
+        "built": -16,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Hexastyle Corinthian temple in the forum of Nemausus, dedicated to Gaius and Lucius Caesar, grandsons of Augustus. One of the best-preserved Roman temples anywhere, standing continuously since c. 16 BCE.",
+        "sources": [
+          "https://commons.wikimedia.org/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Maison%20Carr%C3%A9e%20in%20N%C3%AEmes%20%2816%29.JPG?width=800",
+        "image_credit": "Maison Carrée, Nîmes · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4768,
+          41.8986
+        ]
+      },
+      "properties": {
+        "id": "poi_pantheon_rome",
+        "category": "temple",
+        "name_latin": "Pantheum",
+        "name_english": "Pantheon (Agrippan)",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "built": -27,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "In 117 CE the original Agrippan Pantheon still stood on this site — the present rotunda was rebuilt by Hadrian c. 118–125, so the temple visible in 117 is Agrippa's rectangular predecessor.",
+        "sources": [
+          "https://commons.wikimedia.org/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roma-pantheon-frontfacade.jpg?width=800",
+        "image_credit": "Pantheon (later Hadrianic rebuild) · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.2046,
+          34.00679
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_bacchus_baalbek",
+        "category": "temple",
+        "name_latin": "Templum Bacchi, Heliopolis",
+        "name_english": "Temple of Bacchus, Baalbek",
+        "province": "Syria",
+        "modern_location": "Baalbek, Lebanon",
+        "built": 60,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Second temple of the Heliopolis sanctuary, dedicated most likely to Bacchus/Dionysus. Nearly complete by 117 CE; remains one of the best-preserved Roman temples in the world.",
+        "sources": [
+          "https://commons.wikimedia.org/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bacchus%20temple%2C%20Baalbek%2001.jpg?width=800",
+        "image_credit": "Temple of Bacchus, Baalbek · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.2037,
+          34.00713
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_jupiter_baalbek",
+        "category": "temple",
+        "name_latin": "Templum Iovis Heliopolitani",
+        "name_english": "Temple of Jupiter, Baalbek",
+        "province": "Syria",
+        "modern_location": "Baalbek, Lebanon",
+        "built": 60,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Colossal peripteral temple of Jupiter Heliopolitanus, its six surviving columns still the tallest in the Roman world. Substantially complete by 117 CE atop the pre-Roman tell.",
+        "sources": [
+          "https://commons.wikimedia.org/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Baalbek%20-%20Temple%20of%20Jupiter.jpg?width=800",
+        "image_credit": "Temple of Jupiter, Baalbek · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.274,
+          34.54556
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_bel_palmyra",
+        "category": "temple",
+        "name_latin": "Templum Beli, Palmyra",
+        "name_english": "Temple of Bel, Palmyra",
+        "province": "Syria",
+        "modern_location": "Palmyra (Tadmur), Syria",
+        "built": 32,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Dedicated 32 CE to the Palmyrene god Bel; the largest religious complex of the caravan city. Its cella stood until 2015. Standing and in active cult use in 117 CE.",
+        "sources": [
+          "https://commons.wikimedia.org/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palmyra%20Bel%20Temple.jpg?width=800",
+        "image_credit": "Temple of Bel, Palmyra (pre-2015) · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.65786,
+          25.71872
+        ]
+      },
+      "properties": {
+        "id": "poi_karnak_temple",
+        "category": "temple",
+        "name_latin": "Templum Ammonis, Thebae",
+        "name_english": "Precinct of Amun-Ra, Karnak",
+        "province": "Aegyptus",
+        "modern_location": "Luxor, Egypt",
+        "built": -2000,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The vast Karnak temple complex remained an active Egyptian cult centre under Roman rule; imperial titles were carved onto its walls into the 2nd century CE. Standing and in worship in 117.",
+        "sources": [
+          "https://commons.wikimedia.org/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great%20Hypostyle%20Hall%20of%20Karnak%20Temple.jpg?width=800",
+        "image_credit": "Great Hypostyle Hall, Karnak · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.67014,
+          26.14167
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_dendera_hathor",
+        "category": "temple",
+        "name_latin": "Templum Hathoris, Tentyra",
+        "name_english": "Temple of Hathor, Dendera",
+        "province": "Aegyptus",
+        "modern_location": "Dendera, Egypt",
+        "built": -54,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Ptolemaic-Roman temple of Hathor at Tentyra. Under construction and decoration throughout the early Empire; substantially complete and functioning by 117 CE.",
+        "sources": [
+          "https://commons.wikimedia.org/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dendera%20Temple%201.jpg?width=800",
+        "image_credit": "Temple of Hathor, Dendera · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.87361,
+          24.97778
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_edfu_horus",
+        "category": "temple",
+        "name_latin": "Templum Hori, Apollinopolis Magna",
+        "name_english": "Temple of Horus, Edfu",
+        "province": "Aegyptus",
+        "modern_location": "Edfu, Egypt",
+        "built": -237,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Best-preserved of Egypt's classical-era temples, dedicated to the falcon-god Horus. Ptolemaic construction (237–57 BCE) — long complete and in active worship by 117 CE under Roman rule.",
+        "sources": [
+          "https://commons.wikimedia.org/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Edfu%20Temple.jpg?width=800",
+        "image_credit": "Temple of Horus, Edfu · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.72639,
+          37.97139
+        ]
+      },
+      "properties": {
+        "id": "poi_parthenon_athens",
+        "category": "temple",
+        "name_latin": "Parthenon",
+        "name_english": "Parthenon, Athens",
+        "province": "Achaia",
+        "modern_location": "Athens, Greece",
+        "built": -438,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Doric temple of Athena Parthenos on the Athenian Acropolis, completed 438 BCE. Untouched by the Roman conquest and treated as a monument of philhellene reverence — standing intact and revered in 117 CE.",
+        "sources": [
+          "https://commons.wikimedia.org/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Parthenon%20in%20Athens.jpg?width=800",
+        "image_credit": "The Parthenon · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.72139,
+          37.97583
+        ]
+      },
+      "properties": {
+        "id": "poi_hephaisteion_athens",
+        "category": "temple",
+        "name_latin": "Templum Hephaesti",
+        "name_english": "Temple of Hephaestus (Hephaisteion)",
+        "province": "Achaia",
+        "modern_location": "Athens, Greece",
+        "built": -449,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Doric peripteros above the Athenian Agora, one of the best-preserved Greek temples anywhere. Standing complete in 117 CE.",
+        "sources": [
+          "https://commons.wikimedia.org/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Temple%20of%20Hephaestus%2C%20Ancient%20Agora%20of%20Athens.jpg?width=800",
+        "image_credit": "Temple of Hephaestus, Athens · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.62972,
+          37.63778
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_zeus_olympia",
+        "category": "temple",
+        "name_latin": "Templum Iovis Olympii",
+        "name_english": "Temple of Zeus, Olympia",
+        "province": "Achaia",
+        "modern_location": "Olympia, Greece",
+        "built": -457,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Colossal Doric temple housing Pheidias's chryselephantine Zeus, one of the Seven Wonders. Still standing in 117 CE; the cult continued until Theodosius's late-4th-century closure of pagan sanctuaries.",
+        "sources": [
+          "https://commons.wikimedia.org/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Olympian%20Zeus%20%28Olympia%29%2003.jpg?width=800",
+        "image_credit": "Temple of Zeus, Olympia · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.72556,
+          37.70806
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_aphrodite_aphrodisias",
+        "category": "temple",
+        "name_latin": "Templum Veneris Aphrodisiensis",
+        "name_english": "Temple of Aphrodite, Aphrodisias",
+        "province": "Asia",
+        "modern_location": "Geyre, Turkey",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Ionic temple at the heart of Aphrodisias; the city's cult of Aphrodite drew imperial patronage from Augustus onward. Standing and active in 117 CE.",
+        "sources": [
+          "https://commons.wikimedia.org/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Aphrodite%20Aphrodisias.jpg?width=800",
+        "image_credit": "Temple of Aphrodite, Aphrodisias · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.25642,
+          37.38472
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_apollo_didyma",
+        "category": "temple",
+        "name_latin": "Templum Apollinis Didymaei",
+        "name_english": "Temple of Apollo, Didyma",
+        "province": "Asia",
+        "modern_location": "Didim, Turkey",
+        "built": -300,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Vast Ionic oracle temple, second in size only to the Artemision at Ephesus. Rebuilding after the Persian sack had continued for centuries — still incomplete in 117 CE but its oracle was in active use.",
+        "sources": [
+          "https://commons.wikimedia.org/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Didyma%20Turkey.jpg?width=800",
+        "image_credit": "Temple of Apollo, Didyma · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.48979,
+          40.75069
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_isis_pompeii",
+        "category": "temple",
+        "name_latin": "Templum Isidis, Pompeii",
+        "name_english": "Temple of Isis, Pompeii",
+        "province": "Italia",
+        "modern_location": "Pompeii, Italy",
+        "built": -100,
+        "destroyed": 79,
+        "extant_117ce": false,
+        "notes": "Small but complete temple of Isis inside Pompeii's theatre district, rebuilt after the earthquake of 62 CE. Standing and in cult use in 117 CE — destroyed by Vesuvius only in 79... wait: Pompeii is buried by 117.",
+        "sources": [
+          "https://commons.wikimedia.org/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pompeii%20Temple%20of%20Isis.jpg?width=800",
+        "image_credit": "Temple of Isis, Pompeii · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4842,
+          40.7488
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_apollo_pompeii",
+        "category": "temple",
+        "name_latin": "Templum Apollinis, Pompeii",
+        "name_english": "Temple of Apollo, Pompeii",
+        "province": "Italia",
+        "modern_location": "Pompeii, Italy",
+        "built": -550,
+        "destroyed": 79,
+        "extant_117ce": false,
+        "notes": "Etruscan-era foundation, remodeled under the late Republic. Destroyed with the rest of Pompeii by the eruption of Vesuvius in 79 CE; a ruin in the ash by 117.",
+        "sources": [
+          "https://commons.wikimedia.org/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Apollo%20Pompeii.jpg?width=800",
+        "image_credit": "Temple of Apollo, Pompeii · Wikimedia Commons"
       }
     }
   ]

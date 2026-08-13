@@ -37,6 +37,9 @@ export default function SitesPanel({ open, onClose }: { open: boolean; onClose: 
 
   return (
     <div
+      aria-hidden={!open}
+      // @ts-ignore inert is a valid HTML attribute
+      inert={!open ? "" : undefined}
       style={{
         position: "absolute",
         top: 0,

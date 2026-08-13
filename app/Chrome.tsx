@@ -122,7 +122,7 @@ export default function Chrome() {
         style={{
           position: "absolute",
           top: 10,
-          left: 70,
+          left: isMobile ? 10 : 70,
           width: 408,
           maxWidth: "calc(100vw - 20px)",
           zIndex: 5,
@@ -168,22 +168,6 @@ export default function Chrome() {
               <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
             </svg>
           </IconBtn>
-          <div style={{ width: 1, height: 24, background: "#e0e0e0", margin: "0 4px" }} />
-          <button
-            title="Directions"
-            style={{
-              width: 40,
-              height: 40,
-              borderRadius: 8,
-              display: "grid",
-              placeItems: "center",
-              background: "#4285f4",
-            }}
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff">
-              <path d="M21.71 11.29l-9-9a1 1 0 0 0-1.41 0l-9 9a1 1 0 0 0 0 1.41l9 9a1 1 0 0 0 1.41 0l9-9a1 1 0 0 0 0-1.41zM14 14.5V12h-4v3H8v-4a1 1 0 0 1 1-1h5V7.5l3.5 3.5-3.5 3.5z" />
-            </svg>
-          </button>
         </div>
       </div>
 
@@ -298,7 +282,7 @@ export default function Chrome() {
 
       {/* Bottom-right: layers button (above zoom controls) + panel */}
       {!hideLayersForSheet && (
-      <div ref={layersRef} style={{ position: "absolute", right: 12, bottom: 118, zIndex: 5 }}>
+      <div ref={layersRef} style={{ position: "absolute", right: 12, bottom: 186, zIndex: 5 }}>
         {layersOpen && (
           <div
             style={{
@@ -359,19 +343,6 @@ export default function Chrome() {
       </div>
       )}
 
-      {/* Bottom-right: mini attribution / brand */}
-      <div
-        style={{
-          position: "absolute",
-          right: 12,
-          bottom: 8,
-          fontSize: 10,
-          color: "#5f6368",
-          zIndex: 4,
-        }}
-      >
-        Roman Maps
-      </div>
     </>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Map as MLMap } from "maplibre-gl";
 import { usePoiPanel, clearPoi } from "./usePoiPanel";
 import { colorForCategory } from "./poiCategories";
@@ -32,6 +32,8 @@ export default function PlaceDetails() {
   const [rendered, setRendered] = useState<{ props: Record<string, any>; lngLat: [number, number] } | null>(null);
   const isMobile = useIsMobile();
   const open = !!selected;
+  const [copied, setCopied] = useState(false);
+  const copyTimer = useRef<number | undefined>(undefined);
 
   useEffect(() => {
     if (selected) setRendered(selected);
@@ -93,6 +95,15 @@ export default function PlaceDetails() {
     if (map) map.flyTo({ center: rendered.lngLat, zoom: Math.max(map.getZoom(), 8), duration: 800 });
   };
 
+  const copyLink = () => {
+    if (typeof navigator === "undefined" || !navigator.clipboard) return;
+    navigator.clipboard.writeText(window.location.href).then(() => {
+      setCopied(true);
+      if (copyTimer.current) window.clearTimeout(copyTimer.current);
+      copyTimer.current = window.setTimeout(() => setCopied(false), 1600);
+    }).catch(() => {});
+  };
+
   const panelStyle: React.CSSProperties = isMobile
     ? {
         position: "absolute",
@@ -116,6 +127,9 @@ export default function PlaceDetails() {
 
   return (
     <div
+      aria-hidden={!open}
+      // @ts-ignore inert is a valid HTML attribute
+      inert={!open ? "" : undefined}
       style={{
         ...panelStyle,
         background: "#fff",
@@ -129,39 +143,80 @@ export default function PlaceDetails() {
       role="dialog"
       aria-label="Place details"
     >
-      {/* Banner — Google Maps has a photo strip here; we use a category-tinted band with icon. */}
-      <div
+      {/* Hero band: an artist rendering / engraving / reconstruction (image_url on the POI).
+       * When no image is supplied we fall back to a thin category-tinted rail — no empty gray
+       * slab. Image credit renders under the picture, kept small so it doesn't crowd the title. */}
+      {p.image_url ? (
+        <div style={{ position: "relative", flexShrink: 0 }}>
+          <img
+            src={p.image_url}
+            alt={p.image_alt || name}
+            loading="lazy"
+            style={{
+              display: "block",
+              width: "100%",
+              height: 180,
+              objectFit: "cover",
+              background: `${color}22`,
+            }}
+            onError={(e) => {
+              // Broken URL → hide the img so we don't show a browser-broken-image icon; the
+              // gradient bar below still gives category identity.
+              (e.currentTarget as HTMLImageElement).style.display = "none";
+            }}
+          />
+          {p.image_credit && (
+            <div
+              style={{
+                position: "absolute",
+                left: 0,
+                right: 0,
+                bottom: 0,
+                padding: "3px 8px",
+                fontSize: 10,
+                lineHeight: 1.2,
+                color: "rgba(255,255,255,.92)",
+                background: "linear-gradient(180deg, transparent, rgba(0,0,0,.5))",
+                textShadow: "0 1px 2px rgba(0,0,0,.6)",
+              }}
+            >
+              {p.image_credit}
+            </div>
+          )}
+        </div>
+      ) : (
+        <div
+          style={{
+            height: 6,
+            background: `linear-gradient(90deg, ${color} 0%, ${color}66 100%)`,
+            flexShrink: 0,
+          }}
+        />
+      )}
+      <button
+        title="Close"
+        onClick={() => clearPoi()}
         style={{
-          height: 128,
-          background: `linear-gradient(135deg, ${color}bb 0%, ${color}66 100%)`,
-          position: "relative",
-          flexShrink: 0,
+          position: "absolute",
+          top: 10,
+          right: 10,
+          width: 32,
+          height: 32,
+          borderRadius: 999,
+          background: "rgba(255,255,255,.95)",
+          display: "grid",
+          placeItems: "center",
+          boxShadow: "0 1px 3px rgba(0,0,0,.2)",
+          zIndex: 1,
         }}
       >
-        <button
-          title="Close"
-          onClick={() => clearPoi()}
-          style={{
-            position: "absolute",
-            top: 8,
-            right: 8,
-            width: 32,
-            height: 32,
-            borderRadius: 999,
-            background: "rgba(255,255,255,.92)",
-            display: "grid",
-            placeItems: "center",
-            boxShadow: "0 1px 3px rgba(0,0,0,.2)",
-          }}
-        >
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="#5f6368">
-            <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
-          </svg>
-        </button>
-      </div>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#5f6368">
+          <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+        </svg>
+      </button>
 
       {/* Title block */}
-      <div style={{ padding: "16px 16px 4px" }}>
+      <div style={{ padding: "14px 48px 4px 16px" }}>
         <div style={{ fontSize: 22, fontWeight: 500, color: "#202124", lineHeight: 1.2, letterSpacing: "-0.01em" }}>
           {name}
         </div>
@@ -178,41 +233,23 @@ export default function PlaceDetails() {
         )}
       </div>
 
-      {/* Google-Maps-style pill button row */}
+      {/* Two working actions — Zoom to place + Copy link — replaces the four dead pills. */}
       <div style={{ display: "flex", gap: 6, padding: "12px 12px 8px", flexShrink: 0 }}>
         <PillButton
-          label="Directions"
-          disabled
-          title="Coming soon — road routing hasn't shipped yet"
-          icon={
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M21.71 11.29l-9-9a1 1 0 0 0-1.41 0l-9 9a1 1 0 0 0 0 1.41l9 9a1 1 0 0 0 1.41 0l9-9a1 1 0 0 0 0-1.41zM14 14.5V12h-4v3H8v-4a1 1 0 0 1 1-1h5V7.5l3.5 3.5-3.5 3.5z" />
-            </svg>
-          }
-        />
-        <PillButton
-          label="Save"
-          icon={
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
-            </svg>
-          }
-        />
-        <PillButton
-          label="Nearby"
-          icon={
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
-            </svg>
-          }
+          label="Zoom to"
           onClick={flyTo}
-        />
-        <PillButton
-          label="Share"
-          onClick={() => navigator.clipboard?.writeText(window.location.href)}
           icon={
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z" />
+              <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM9 6h1v3H9zM6 9h6v1H6z" />
+            </svg>
+          }
+        />
+        <PillButton
+          label={copied ? "Copied!" : "Copy link"}
+          onClick={copyLink}
+          icon={
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0 0 10h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 0-10z" />
             </svg>
           }
         />

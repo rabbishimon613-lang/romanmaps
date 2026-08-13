@@ -2,6 +2,7 @@
 
 import { useSyncExternalStore } from "react";
 import { CATEGORY_GROUPS } from "./poiCategories";
+import { useIsMobile } from "./useIsMobile";
 
 const KEY = "roman-maps:category-filters";
 type FilterState = Record<string, boolean>;
@@ -59,6 +60,11 @@ export function activeGroupIds(): string[] {
 export default function CategoryChips() {
   const filters = useCategoryFilters();
   const activeCount = Object.values(filters).filter(Boolean).length;
+  const isMobile = useIsMobile();
+
+  // On mobile, the top-left search card is full-width and the chips would collide with the map
+  // controls. Hide them until we have a mobile-first chip UX (bottom sheet handle).
+  if (isMobile) return null;
 
   return (
     <div
@@ -66,13 +72,12 @@ export default function CategoryChips() {
         position: "absolute",
         top: 10,
         left: 480,
-        right: 10,
+        right: 60,
         zIndex: 6,
         display: "flex",
         gap: 8,
-        overflowX: "auto",
+        flexWrap: "wrap",
         alignItems: "center",
-        scrollbarWidth: "none",
       }}
     >
       {activeCount > 0 && (

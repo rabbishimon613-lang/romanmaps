@@ -9,6 +9,53 @@ import { categoryColorMatchPairs, DEFAULT_COLOR } from "./poiCategories";
 import { ostiaEntry } from "./ostiaDescriptions";
 import { SITE_META } from "./sites";
 
+// Palette — light + dark variants. Both palettes are calibrated so that the sea/land/roads/labels
+// stay legible at every zoom and so ancient-sea and modern-sea read as the same water tone.
+type Palette = {
+  sea: string;
+  land: string;
+  provinceFill: string;
+  provinceLine: string;
+  river: string;
+  lake: string;
+  roadMain: string;
+  roadSecondary: string;
+  placeLabelMajor: string;
+  placeLabelMinor: string;
+  labelHalo: string;
+};
+const LIGHT: Palette = {
+  sea: "#a9d1e3",
+  land: "#f4ead5",
+  provinceFill: "#ecdfbf",
+  provinceLine: "#a58a5a",
+  river: "#7fb0c9",
+  lake: "#b8dbe6",
+  roadMain: "#a12b0d",
+  roadSecondary: "#c17a4d",
+  placeLabelMajor: "#2a1e10",
+  placeLabelMinor: "#5c4326",
+  labelHalo: "#f4ead5",
+};
+const DARK: Palette = {
+  sea: "#0f2233",
+  land: "#232628",
+  provinceFill: "#2c2f31",
+  provinceLine: "#6a5b3a",
+  river: "#3d6885",
+  lake: "#1f3c4d",
+  roadMain: "#c9573b",
+  roadSecondary: "#8a5636",
+  placeLabelMajor: "#e6dcc4",
+  placeLabelMinor: "#a89b7f",
+  labelHalo: "#111315",
+};
+
+function prefersDark(): boolean {
+  if (typeof window === "undefined" || !window.matchMedia) return false;
+  return window.matchMedia("(prefers-color-scheme: dark)").matches;
+}
+
 export default function Map() {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -21,6 +68,7 @@ export default function Map() {
     let onWinResize: (() => void) | null = null;
     let onPopState: (() => void) | null = null;
     let pushTimer: ReturnType<typeof setTimeout> | null = null;
+    const P: Palette = prefersDark() ? DARK : LIGHT;
 
     (async () => {
       // Phase 1: light sources first — small enough to render fast.
@@ -36,6 +84,12 @@ export default function Map() {
       // Coordinates URL sync — restore #lng,lat,zoomz from a shared/bookmarked link if present.
       const initialView = parseHash(window.location.hash);
 
+      // Sea mask — one big world-bbox polygon with every land ring cut out as a hole. Painted
+      // above rivers/provinces so any linework that leaks past the coast (Natural Earth 10m
+      // rivers over-extending into estuaries; province polygons buffered into the sea) is
+      // occluded by water. Cheap: one polygon, ~O(N) coords, tessellated once by MapLibre.
+      const seaMask = buildSeaMask(land);
+
       map = new maplibregl.Map({
         container: ref.current,
         style: {
@@ -47,40 +101,28 @@ export default function Map() {
             lakes: { type: "geojson", maxzoom: 14, buffer: 128, tolerance: 0.375, data: lakes },
             rivers: { type: "geojson", maxzoom: 14, buffer: 128, tolerance: 0.375, data: rivers },
             "ancient-sea": { type: "geojson", maxzoom: 18, buffer: 128, tolerance: 0.1, data: ancientSea },
+            "sea-mask": { type: "geojson", maxzoom: 14, buffer: 128, tolerance: 0.5, data: seaMask },
           },
           layers: [
-            { id: "bg", type: "background", paint: { "background-color": "#a9d1e3" } },
+            { id: "bg", type: "background", paint: { "background-color": P.sea } },
             {
               id: "land",
               type: "fill",
               source: "land",
-              paint: { "fill-color": "#f4ead5" },
-            },
-            {
-              id: "ancient-sea",
-              type: "fill",
-              source: "ancient-sea",
-              paint: { "fill-color": "#a9d1e3" },
-            },
-            {
-              id: "ancient-sea-outline",
-              type: "line",
-              source: "ancient-sea",
-              minzoom: 11,
-              paint: { "line-color": "#7fb0c9", "line-width": 0.8, "line-dasharray": [4, 3], "line-opacity": 0.6 },
+              paint: { "fill-color": P.land },
             },
             {
               id: "provinces-fill",
               type: "fill",
               source: "provinces",
-              paint: { "fill-color": "#ecdfbf", "fill-opacity": 0.18 },
+              paint: { "fill-color": P.provinceFill, "fill-opacity": 0.18 },
             },
             {
               id: "provinces-line",
               type: "line",
               source: "provinces",
               paint: {
-                "line-color": "#a58a5a",
+                "line-color": P.provinceLine,
                 "line-width": 0.6,
                 "line-dasharray": [2, 2],
                 "line-opacity": 0.6,
@@ -91,11 +133,23 @@ export default function Map() {
               type: "line",
               source: "rivers",
               paint: {
-                "line-color": "#7fb0c9",
+                "line-color": P.river,
                 "line-width": ["interpolate", ["linear"], ["zoom"], 3, 0.3, 8, 1.4],
               },
             },
-            { id: "lakes", type: "fill", source: "lakes", paint: { "fill-color": "#b8dbe6" } },
+            {
+              id: "sea-mask",
+              type: "fill",
+              source: "sea-mask",
+              paint: { "fill-color": P.sea },
+            },
+            {
+              id: "ancient-sea",
+              type: "fill",
+              source: "ancient-sea",
+              paint: { "fill-color": P.sea },
+            },
+            { id: "lakes", type: "fill", source: "lakes", paint: { "fill-color": P.lake } },
           ],
         },
         center: initialView ? [initialView.lng, initialView.lat] : [12.4964, 41.9028],
@@ -103,15 +157,13 @@ export default function Map() {
         minZoom: 2.5,
         maxZoom: 19,
         attributionControl: false,
-        preserveDrawingBuffer: true,
-        fadeDuration: 0,
       });
 
       map.addControl(
         new maplibregl.AttributionControl({
           compact: true,
           customAttribution:
-            'Data © <a href="https://dh.gu.se/dare/" target="_blank">DARE</a> · <a href="https://pelagios.org" target="_blank">Pelagios</a>',
+            'Data © <a href="https://itiner-e.org" target="_blank">Itiner-e</a> · <a href="https://dh.gu.se/dare/" target="_blank">DARE</a> · <a href="https://pelagios.org" target="_blank">Pelagios</a> · <a href="https://www.naturalearthdata.com/" target="_blank">Natural Earth</a> · <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>',
         }),
       );
       // No default NavigationControl — its bottom-right slot is CSS-hidden (custom attribution
@@ -188,11 +240,11 @@ export default function Map() {
           id: "roads-secondary",
           type: "line",
           source: "roads-secondary",
-          minzoom: 4.5,
+          minzoom: 5.5,
           paint: {
-            "line-color": "#c17a4d",
-            "line-width": ["interpolate", ["linear"], ["zoom"], 4.5, 0.5, 7, 1.2, 10, 2.4],
-            "line-opacity": 0.75,
+            "line-color": P.roadSecondary,
+            "line-width": ["interpolate", ["linear"], ["zoom"], 5.5, 0.3, 7, 1.0, 10, 2.2],
+            "line-opacity": ["interpolate", ["linear"], ["zoom"], 5.5, 0.35, 7, 0.7, 10, 0.8],
           },
           layout: { "line-cap": "round", "line-join": "round" },
         });
@@ -204,10 +256,11 @@ export default function Map() {
           id: "roads-main",
           type: "line",
           source: "roads-main",
+          minzoom: 3.5,
           paint: {
-            "line-color": "#a12b0d",
-            "line-width": ["interpolate", ["linear"], ["zoom"], 3, 1.4, 5, 2.4, 7, 3.4, 10, 4.4],
-            "line-opacity": 0.95,
+            "line-color": P.roadMain,
+            "line-width": ["interpolate", ["linear"], ["zoom"], 3.5, 0.25, 5, 1.1, 7, 2.4, 10, 3.6],
+            "line-opacity": ["interpolate", ["linear"], ["zoom"], 3.5, 0.35, 5, 0.7, 7, 0.9, 10, 0.95],
           },
           layout: { "line-cap": "round", "line-join": "round" },
         });
@@ -241,8 +294,8 @@ export default function Map() {
             "text-allow-overlap": false,
           },
           paint: {
-            "text-color": "#2a1e10",
-            "text-halo-color": "#f4ead5",
+            "text-color": P.placeLabelMajor,
+            "text-halo-color": P.labelHalo,
             "text-halo-width": 1.6,
           },
         });
@@ -263,8 +316,8 @@ export default function Map() {
             "text-allow-overlap": false,
           },
           paint: {
-            "text-color": "#5c4326",
-            "text-halo-color": "#f4ead5",
+            "text-color": P.placeLabelMinor,
+            "text-halo-color": P.labelHalo,
             "text-halo-width": 1.4,
           },
         });
@@ -471,7 +524,7 @@ export default function Map() {
             "text-field": ["get", "name"],
             "text-font": ["Noto Sans Regular"],
             "text-size": ["interpolate", ["linear"], ["zoom"], 15.5, 9, 18, 13],
-            "text-max-width": 8,
+            "text-max-width": 12,
             "text-optional": true,
             "text-allow-overlap": false,
           },
@@ -1067,4 +1120,39 @@ function escapeHtml(s: string): string {
   return s.replace(/[&<>"']/g, (c) =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" } as any)[c],
   );
+}
+
+/** Build a "sea mask" FeatureCollection: one polygon covering the whole world with every land
+ * outer ring cut out as a hole. Painted over rivers/provinces so Natural Earth linework that
+ * over-extends into water (river estuaries past ancient coastlines, province polygons buffered
+ * a few kilometers offshore) is occluded. Interior rings of land features (real lakes inside
+ * a continent) are ignored — the `lakes` layer paints them explicitly and they're rare enough
+ * that leaving them in the mask would just add coordinate weight for no visual gain. */
+function buildSeaMask(land: any): GeoJSON.FeatureCollection {
+  // Full-world outer ring, wound CCW. MapLibre uses non-zero fill so winding doesn't strictly
+  // matter, but we keep GeoJSON right-hand-rule so the mask serializes cleanly if we ever
+  // move this to a build-time file.
+  const worldRing: [number, number][] = [
+    [-180, -85], [180, -85], [180, 85], [-180, 85], [-180, -85],
+  ];
+  const holes: [number, number][][] = [];
+  for (const f of land.features || []) {
+    const g = f.geometry;
+    if (!g) continue;
+    if (g.type === "Polygon") {
+      holes.push(g.coordinates[0]);
+    } else if (g.type === "MultiPolygon") {
+      for (const poly of g.coordinates) holes.push(poly[0]);
+    }
+  }
+  return {
+    type: "FeatureCollection",
+    features: [
+      {
+        type: "Feature",
+        properties: {},
+        geometry: { type: "Polygon", coordinates: [worldRing, ...holes] },
+      },
+    ],
+  };
 }

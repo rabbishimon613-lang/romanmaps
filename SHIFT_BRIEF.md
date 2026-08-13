@@ -660,6 +660,28 @@ Trajan's death, 11 August 117 CE. Every record: `extant_117ce: true | false`.
 
 This applies to *every* feature type across all 20 axes: cities, road stations, POIs, people, embassies, mints, gladiator schools — all of them. Uniform, legible, English-first.
 
+### 1.6 Every new POI ships with an image_url
+
+The PlaceDetails panel now shows a hero image at the top of every place — modeled after the way Google Business listings put a photograph above the name. **Every POI you add MUST carry an `image_url` field**, or the panel falls back to a slim tinted rail and looks worse than the ones already on the map.
+
+- **Preferred source: Wikimedia Commons.** Use the canonical hotlink URL format:
+  `https://commons.wikimedia.org/wiki/Special:FilePath/<FILENAME>?width=800`
+  Substitute the exact file name from the Commons page (spaces are fine — URL-encode if you write it by hand, but this exact pattern is stable across Wikimedia's file-rotation and cache layers).
+- **What to pick.** In order of preference: (a) a well-known artist rendering or 19th-c. engraving (Piranesi, David Roberts, Léon Vaudoyer reconstructions, Alma-Tadema), (b) a scholarly reconstruction drawing, (c) a modern photograph of the ruin/monument. Never use a screenshot, a modern illustration behind a paywall, or an AI-generated image.
+- **Every image needs an `image_credit` field** — one line naming the source and, if applicable, the artist and license (e.g. `"Reconstruction by Léon Vaudoyer, 1830 · Wikimedia Commons"`). Renders quietly at the bottom of the hero.
+- **Broken URLs degrade gracefully.** `PlaceDetails.tsx` hides the `<img>` on load error and shows the fallback rail — so a wrong filename is a soft failure, not a broken layout. That is NOT permission to skip due diligence; verify the Commons page loads before pasting the filename.
+- **Optional `image_alt`** — short alt text if the name alone doesn't convey what the image shows. Omit if unsure.
+
+Schema addition (applies to every axis that pins places — cities, road stations, POIs, people, mints, embassies, everything):
+
+```json
+"image_url":    "https://commons.wikimedia.org/wiki/Special:FilePath/Roma-pantheon-frontfacade.jpg?width=800",
+"image_credit": "Pantheon, Rome · Wikimedia Commons (public domain)",
+"image_alt":    "Front façade of the Pantheon"
+```
+
+Missing an image_url is treated the same as missing a `notes` blurb — the feature is incomplete and does not count toward the per-shift throughput minimums.
+
 ### 2. Voice = Google Business, not scholar footnote
 
 Every description is read by a stranger on their phone. Banned phrases (each one has been screenshotted at me by the user): "per the brief", "per the guardrail", "extant_117ce: true", "confidence: low/medium/high", "cf.", scholar-name-drops like "Squarciapino says" or "White vs. Runesson", parenthetical citation notes like "(Meiggs 1973 p. 240)".
