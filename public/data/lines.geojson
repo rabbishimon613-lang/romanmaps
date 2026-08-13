@@ -128,6 +128,308 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            13.0954,
+            41.9204
+          ],
+          [
+            12.7955,
+            41.9633
+          ],
+          [
+            12.562,
+            41.847
+          ],
+          [
+            12.5152,
+            41.8915
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_aqua_claudia_anio_novus",
+        "category": "aqueduct_line",
+        "name_latin": "Aqua Claudia et Anio Novus",
+        "name_english": "Aqua Claudia and Anio Novus Aqueduct",
+        "province": "Italia",
+        "extant_117ce": true,
+        "notes": "The Aqua Claudia and Anio Novus ran side by side from springs near Subiaco to Rome, entering the city on a shared double-tier arcade at Porta Maggiore. Claudius dedicated the line in 52 CE after Caligula began it, carrying water some 69 kilometers to the Esquiline tanks. Both channels stayed in full service in 117 CE, still visible today where their arches cross the Parco degli Acquedotti. This route traces springs, Tivoli, and the surviving arcade, not a fully surveyed channel.",
+        "sources": [
+          "http://www.romanaqueducts.info/aquasite/romaclaudia/index.html",
+          "https://en.wikipedia.org/wiki/Aqua_Claudia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            12.9917,
+            42.0084
+          ],
+          [
+            12.7955,
+            41.9633
+          ],
+          [
+            12.562,
+            41.847
+          ],
+          [
+            12.5094,
+            41.9057
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_aqua_marcia",
+        "category": "aqueduct_line",
+        "name_latin": "Aqua Marcia",
+        "name_english": "Aqua Marcia Aqueduct",
+        "province": "Italia",
+        "extant_117ce": true,
+        "notes": "The Aqua Marcia ran roughly 91 kilometers from springs near Arsoli in the upper Anio valley, staying underground for 80 kilometers before rising onto arches into Rome. The praetor Quintus Marcius Rex built it between 144 and 140 BCE, and it was prized above every other aqueduct for the coldness of its water. By 117 CE it had carried that spring water into the city for over two and a half centuries, entering near the Porta Tiburtina on its stacked arcade.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Aqua_Marcia",
+          "https://www.britannica.com/topic/Aqua-Marcia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            12.135,
+            42.135
+          ],
+          [
+            12.1806,
+            42.1022
+          ],
+          [
+            12.465,
+            41.8895
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_aqua_traiana",
+        "category": "aqueduct_line",
+        "name_latin": "Aqua Traiana",
+        "name_english": "Aqua Traiana Aqueduct",
+        "province": "Italia",
+        "extant_117ce": true,
+        "notes": "Trajan inaugurated this aqueduct on 24 June 109 CE, tapping springs on Lake Bracciano's northwest shore and running some 57 kilometers southeast into Rome. It crossed the Tiber and climbed the Janiculum, becoming the only aqueduct serving Trastevere, and it fed Trajan's new baths on the Oppian Hill. At this map's snapshot the line was barely eight years old. It later powered the Janiculum's flour mills, which briefly decided Rome's fate during the Gothic siege of 537.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Aqua_Traiana",
+          "https://archaeology.org/issues/march-april-2012/features/romes-lost-aqueduct/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.4194,
+            44.0122
+          ],
+          [
+            4.5355,
+            43.9473
+          ],
+          [
+            4.356,
+            43.8424
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_aqueduct_nemausus",
+        "category": "aqueduct_line",
+        "name_latin": "Aqueductus Nemausensis",
+        "name_english": "Nimes Aqueduct",
+        "province": "Gallia Narbonensis",
+        "extant_117ce": true,
+        "notes": "This aqueduct carried water from springs at Uzes to the colony of Nemausus, winding about 50 kilometers to cover a straight-line distance of only 20 while dropping just 17 meters. Built in the first century CE, its most famous stretch is the Pont du Gard, a three-tiered bridge nearly 49 meters high that still carries visitors across the Gardon. Water reaching the city was split at the castellum divisorium, a round stone tank. The system was fully operational in 117 CE.",
+        "sources": [
+          "https://whc.unesco.org/en/list/344/",
+          "https://en.wikipedia.org/wiki/Pont_du_Gard"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -4.013,
+            40.769
+          ],
+          [
+            -4.1181,
+            40.9479
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_aqueduct_segovia",
+        "category": "aqueduct_line",
+        "name_latin": "Aqueductus Segoviensis",
+        "name_english": "Segovia Aqueduct",
+        "province": "Hispania Tarraconensis",
+        "extant_117ce": true,
+        "notes": "The Segovia aqueduct carried water some 17 kilometers from the Fuenfria spring into the city, finishing with granite arches through the Plaza del Azoguejo that stack two tiers and reach nearly 29 meters. It was built without mortar, its blocks held by precise cutting and gravity alone. A fragmentary inscription names Trajan ordering restoration, and a Trajanic coin turned up in its arches, so it was very likely already running by 117 CE despite the debated exact date.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Aqueduct_of_Segovia",
+          "https://whc.unesco.org/en/list/311/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            10.1425,
+            36.4025
+          ],
+          [
+            10.2167,
+            36.6167
+          ],
+          [
+            10.3189,
+            36.8593
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_aqueduct_zaghouan_carthage",
+        "category": "aqueduct_line",
+        "name_latin": "Aqua Zeugitana",
+        "name_english": "Zaghouan-Carthage Aqueduct",
+        "province": "Africa Proconsularis",
+        "extant_117ce": false,
+        "notes": "This 132-kilometer aqueduct carried water from Djebel Zaghouan north to Carthage, ending in the La Malga cisterns, which could hold roughly 50,000 cubic meters. Hadrian ordered its construction after a drought, with work starting around 128 CE and its water temple dedicated in 139 CE. That places the system after this map's snapshot: on 11 August 117 CE, Trajan had just died and the project still lay a decade off, so Carthage still relied on older wells and cisterns.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Zaghouan_Aqueduct",
+          "https://en.wikipedia.org/wiki/Cisterns_of_La_Malga"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            14.83,
+            40.83
+          ],
+          [
+            14.49,
+            40.75
+          ],
+          [
+            14.0865,
+            40.7877
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_aqua_augusta_serino",
+        "category": "aqueduct_line",
+        "name_latin": "Aqua Augusta",
+        "name_english": "Serino Aqueduct",
+        "province": "Italia",
+        "extant_117ce": true,
+        "notes": "Augustus built this aqueduct between 33 and 12 BCE to supply his fleet at Misenum, running roughly 100 kilometers from springs at Serino down to the Gulf of Naples. It branched to serve at least ten towns, including Pompeii and Herculaneum, before ending at the vast Piscina Mirabilis reservoir. It was the only Roman aqueduct built at this scale for both military and civilian use, and by 117 CE had delivered water for a century and a half. This route traces springs, towns, and terminus only.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Aqua_Augusta_(Naples)",
+          "https://www.labrujulaverde.com/en/2024/03/aqua-augusta-the-great-work-of-roman-hydraulic-engineering-that-supplied-more-than-10-cities-including-pompeii-and-herculaneum/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3664,
+            38.9695
+          ],
+          [
+            -6.3437,
+            38.9161
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_aqueduct_miracles_merida",
+        "category": "aqueduct_line",
+        "name_latin": "Aquaeductus Emeritensis",
+        "name_english": "Aqueduct of the Miracles",
+        "province": "Lusitania",
+        "extant_117ce": true,
+        "notes": "This aqueduct carried water 6 kilometers from the Proserpina reservoir into Emerita Augusta, arriving on arches later nicknamed the Aqueduct of the Miracles, since locals assumed only divine help explained such tall piers. Thirty-eight pillars still stand up to 25 meters high, in alternating bands of brick and stone. It formed one of three aqueduct systems feeding the colony founded for Augustus's veterans in 25 BCE, and was fully functioning in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Acueducto_de_los_Milagros",
+          "https://en.wikipedia.org/wiki/Proserpina_Dam"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            34.945,
+            32.52
+          ],
+          [
+            34.8917,
+            32.5
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_aqueduct_caesarea",
+        "category": "aqueduct_line",
+        "name_latin": "Aquaeductus Caesariensis",
+        "name_english": "Caesarea Maritima Aqueduct",
+        "province": "Iudaea",
+        "extant_117ce": true,
+        "notes": "Herod the Great built this aqueduct to supply his new harbor city of Caesarea, channeling springs near Shuni by Mount Carmel some 23 kilometers down the coast on a raised stone channel. Construction began around 22 BCE, alternating buried sections with arched crossings. In 117 CE only this single Herodian channel ran; the parallel channel that doubled its capacity was a Hadrianic addition built after Trajan's death. Its arches still frame the beach north of the ancient city today.",
+        "sources": [
+          "https://www.worldhistory.org/image/18114/high-level-aqueduct-of-caesarea-maritima/",
+          "https://followinghadrian.com/2015/01/05/the-hadrianic-aqueduct-of-caesarea-maritima-israel/"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }

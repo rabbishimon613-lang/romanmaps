@@ -1,0 +1,475 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.7215,
+          44.7854
+        ]
+      },
+      "properties": {
+        "id": "euerg_veleia",
+        "name": "Veleia",
+        "category": "alimenta_town",
+        "one_line": "Trajan secured 1,044,000 sesterces in mortgage loans against 46 local estates here, and the 5% interest fed and educated 253 boys and 77 girls of the ager Veleias every month. The bronze tablet recording every loan and every pledged farm, turned up by ploughmen in 1747, is the largest inscribed bronze plaque to survive from the ancient world.",
+        "province": "Italia",
+        "modern_location": "Lugagnano Val d'Arda, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "CIL XI 1147 (Tabula Alimentaria Traianea)",
+          "R. Duncan-Jones, 'The Purpose and Organisation of the Alimenta', PBSR 32 (1964)",
+          "R. Duncan-Jones, The Economy of the Roman Empire (1974)",
+          "https://en.wikipedia.org/wiki/Veleia_(Italy)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tabula alimentaria per un prestito ipotecario imperiale, da veleia, II secolo, 01.jpg?width=800",
+        "image_credit": "Tabula Alimentaria of Veleia, Museo Archeologico Nazionale di Parma — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.811051,
+          41.319407
+        ]
+      },
+      "properties": {
+        "id": "euerg_ligures_baebiani",
+        "name": "Circello",
+        "category": "alimenta_town",
+        "one_line": "Trajan lent roughly 400,000 sesterces to 51 landowners of this farming community in 101 CE, and the 5% interest fed 286 boys and girls of a population still known by the name of their Ligurian ancestors, deported here two centuries earlier. The bronze ledger recording every loan and every pledged farm was found at the community's forum near modern Circello.",
+        "province": "Italia",
+        "modern_location": "Circello, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "CIL IX 1455 (Tabula Alimentaria Ligurum Baebianorum)",
+          "Museo Nazionale Romano — Terme di Diocleziano, Rome",
+          "https://en.wikipedia.org/wiki/Ligures_Baebiani"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The Arch of Trajan, Institutio Alimenta relief, Benevento, Italy - 49866556976.jpg?width=800",
+        "image_credit": "Institutio Alimenta relief, Arch of Trajan, Benevento — Carole Raddato via Wikimedia Commons, CC BY-SA 2.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2531,
+          41.6912
+        ]
+      },
+      "properties": {
+        "id": "euerg_ferentino",
+        "name": "Ferentino",
+        "category": "alimenta_town",
+        "one_line": "The senator Titus Pomponius Bassus, Trajan's first curator of the alimenta, personally set up the child-welfare fund in this Hernican hill town, and the citizens honored him with a bronze tablet of patronage. Ferentino's Roman terraces and gates, raised from massive polygonal blocks, still carry the town above the Via Casilina.",
+        "province": "Italia",
+        "modern_location": "Ferentino, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "CIL VI 1492 (Tabula patronatus of T. Pomponius Bassus)",
+          "https://www.judaism-and-rome.org/pomponius-bassus-administers-alimenta-cil-vi-1492"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ferentino - Salendo verso l'Acropoli - panoramio.jpg?width=800",
+        "image_credit": "Approach to the acropolis, Ferentino — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0852,
+          45.8081
+        ]
+      },
+      "properties": {
+        "id": "euerg_comum",
+        "name": "Como",
+        "category": "alimenta_town",
+        "one_line": "Pliny the Younger, grown rich in Rome but still Comum's most devoted son, deeded a farm to his hometown and leased it back for an annual payment that funded food and schooling for freeborn boys and girls, copying the mortgage method Trajan used for the state alimenta. He set out the whole arrangement, sums included, in a letter to a friend he was recruiting to do the same.",
+        "province": "Italia",
+        "modern_location": "Como, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "Pliny the Younger, Epistulae 7.18",
+          "https://en.wikipedia.org/wiki/Pliny_the_Younger"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Como Lake view from Narro.jpg?width=800",
+        "image_credit": "Lake Como from Narro — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.8156,
+          41.6423
+        ]
+      },
+      "properties": {
+        "id": "euerg_atina",
+        "name": "Atina",
+        "category": "alimenta_town",
+        "one_line": "A local benefactor endowed Atina's own alimentary fund decades before Trajan expanded the program across Italy, and the town kept his memory in stone long after. Perched on a Volscian hilltop above the upper Liri valley, Atina's Roman circuit walls still ring the old acropolis.",
+        "province": "Italia",
+        "modern_location": "Atina, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "CIL X 5056 (Atina)",
+          "R. Duncan-Jones, The Economy of the Roman Empire (1974)"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Atina - Cattedrale.JPG?width=800",
+        "image_credit": "Cathedral of Atina — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6244,
+          42.0089
+        ]
+      },
+      "properties": {
+        "id": "euerg_nomentum",
+        "name": "Mentana",
+        "category": "alimenta_town",
+        "one_line": "Nomentum sits on the short epigraphic list of Italian towns with a confirmed state alimenta fund, a Trajanic welfare grant layered onto a town already known for its wine and for Martial's country villa nearby. Little of Roman Nomentum shows above ground beneath the modern town of Mentana today.",
+        "province": "Italia",
+        "modern_location": "Mentana, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "ILS 4378",
+          "R. Duncan-Jones, 'The Purpose and Organisation of the Alimenta', PBSR 32 (1964)"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mentana.JPG?width=800",
+        "image_credit": "Mentana — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9133,
+          43.9102
+        ]
+      },
+      "properties": {
+        "id": "euerg_pisaurum",
+        "name": "Pesaro",
+        "category": "alimenta_town",
+        "one_line": "Pisaurum, a Roman colony on the Adriatic coast road, is named among the Italian towns that ran a state alimenta scheme under Trajan, funded like every other town's by interest on mortgaged farmland. The colony's grid-planned Roman core still lies beneath the streets of central Pesaro.",
+        "province": "Italia",
+        "modern_location": "Pesaro, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "CIL XI (Pisaurum epigraphic corpus)",
+          "R. Duncan-Jones, The Economy of the Roman Empire (1974)"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Piazza del Popolo, Pesaro, Italy.jpg?width=800",
+        "image_credit": "Piazza del Popolo, Pesaro — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.50417,
+          42.66639
+        ]
+      },
+      "properties": {
+        "id": "euerg_saturnia",
+        "name": "Saturnia",
+        "category": "alimenta_town",
+        "one_line": "Saturnia, an old Etruscan town built over sulfur springs in southern Tuscany, is recorded among the Italian communities that drew on Trajan's alimenta fund for its poorer children. Its Roman-era hot springs still cascade over travertine terraces just outside the walls today.",
+        "province": "Italia",
+        "modern_location": "Saturnia, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "ILS 6596",
+          "R. Duncan-Jones, The Economy of the Roman Empire (1974)"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Terme di Saturnia - Cascate del Mulino-0518.jpg?width=800",
+        "image_credit": "Cascate del Mulino thermal terraces, Saturnia — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0185,
+          45.1592
+        ]
+      },
+      "properties": {
+        "id": "euerg_industria",
+        "name": "Monteu da Po",
+        "category": "alimenta_town",
+        "one_line": "Industria, a river-port colony on the Po that traded in Alpine copper and iron, is counted among the towns with a documented Trajanic alimenta fund. Excavated foundations of its temple to Isis and Serapis, proof of the town's trade ties to Egypt, still stand in the fields outside modern Monteu da Po.",
+        "province": "Italia",
+        "modern_location": "Monteu da Po, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "ILS 6745",
+          "R. Duncan-Jones, The Economy of the Roman Empire (1974)"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Industria veduta aerea.jpg?width=800",
+        "image_credit": "Aerial view of the Industria archaeological site — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.6053,
+          41.2566
+        ]
+      },
+      "properties": {
+        "id": "euerg_formiae",
+        "name": "Formia",
+        "category": "alimenta_town",
+        "one_line": "Formiae, a coastal stop on the Appian Way famous for its oyster beds and seaside villas, is documented among the Italian municipalities running Trajan's alimenta program. Cicero owned a villa here and was killed nearby in 43 BCE, a story every Roman visitor to the town already knew.",
+        "province": "Italia",
+        "modern_location": "Formia, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "ILS 4378",
+          "R. Duncan-Jones, The Economy of the Roman Empire (1974)"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Formia - Panorama al Tramonto da Castellonorato.JPG?width=800",
+        "image_credit": "Formia at sunset from Castellonorato — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.54028,
+          42.14028
+        ]
+      },
+      "properties": {
+        "id": "euerg_capena",
+        "name": "Capena",
+        "category": "alimenta_town",
+        "one_line": "Capena, a Faliscan town drawn early into Rome's orbit and known for its cult of the goddess Feronia, is named among the Italian communities running Trajan's alimenta program for poor children. The ancient town site lies a few kilometers from the modern hilltop settlement that still carries its name.",
+        "province": "Italia",
+        "modern_location": "Capena, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "ILS 4378",
+          "R. Duncan-Jones, The Economy of the Roman Empire (1974)"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Via Fausto Cecconi.jpg?width=800",
+        "image_credit": "Street in Capena — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1156,
+          43.4456
+        ]
+      },
+      "properties": {
+        "id": "euerg_cupra_montana",
+        "name": "Cupramontana",
+        "category": "alimenta_town",
+        "one_line": "The children of Cupra Montana who drew Trajan's alimenta grants set up their own inscription honoring the emperor, calling themselves the 'pueri et puellae alimentari Cuprenses Montani.' The Picene hill town, still ringed by the vineyards that give its Verdicchio wine its name, sits above the Esino valley.",
+        "province": "Italia",
+        "modern_location": "Cupramontana, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "CIL IX 5700",
+          "https://en.wikipedia.org/wiki/Cupramontana"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Verdicchio vines in Cupramontana.jpg?width=800",
+        "image_credit": "Verdicchio vines at Cupramontana — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6167,
+          43.6167
+        ]
+      },
+      "properties": {
+        "id": "euerg_pitinum_mergens",
+        "name": "Acqualagna",
+        "category": "alimenta_town",
+        "one_line": "Pitinum Mergens, a small hill town on the Via Flaminia in the Candigliano valley, appears in the alimenta record through an inscription once wrongly assigned to neighboring Urbinum before scholars reattributed it here. The Roman settlement's remains lie scattered through the countryside around modern Acqualagna, now better known for its truffles than its ruins.",
+        "province": "Italia",
+        "modern_location": "Acqualagna, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "CIL XI 5957",
+          "R. Duncan-Jones, The Economy of the Roman Empire (1974)"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Acqualagna veduta interna del Passo del Furlo.jpg?width=800",
+        "image_credit": "Furlo Pass gorge near Acqualagna — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.08906,
+          41.92619
+        ]
+      },
+      "properties": {
+        "id": "euerg_sublaqueum",
+        "name": "Subiaco",
+        "category": "alimenta_town",
+        "one_line": "An inscription raised by the 'pueri et puellae alimentarii' of Sublaqueum records a local branch of the child-welfare program in the Aniene valley above Rome, a town Nero had earlier dammed into a chain of ornamental lakes. The Roman dams that gave the town its name, sub lacu, 'below the lake,' still show along the riverbed today.",
+        "province": "Italia",
+        "modern_location": "Subiaco, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "CIL XIV 3458"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Monastero del Sacro Speco in Subiaco.jpg?width=800",
+        "image_credit": "Subiaco, view toward the Sacro Speco — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2489,
+          41.2911
+        ]
+      },
+      "properties": {
+        "id": "euerg_tarracina",
+        "name": "Terracina",
+        "category": "alimenta_town",
+        "one_line": "The wealthy Tarracina native Caelia Macrina left the town 1,300,000 sesterces in her will: 300,000 for a new public building and 1,000,000 to fund monthly alimenta payments to 100 boys and 100 girls in memory of her son. Her private foundation began in the 150s CE, decades after this snapshot, though it followed a model Trajan had already made famous at Tarracina's neighboring towns.",
+        "province": "Italia",
+        "modern_location": "Terracina, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "CIL X 6328 = ILS 6278",
+          "https://en.wikipedia.org/wiki/Caelia_Macrina"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tempio di Giove Anxur - Galleria.JPG?width=800",
+        "image_credit": "Temple of Jupiter Anxur, Terracina — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.3416,
+          37.9396
+        ]
+      },
+      "properties": {
+        "id": "euerg_ephesus_nymphaeum_traiani",
+        "name": "Ephesus",
+        "category": "benefactor_inscription",
+        "one_line": "The Ephesian aristocrat Tiberius Claudius Aristion and his wife built this fountain between 102 and 114 CE, channeling water 210 stadia, roughly 24 miles, into a two-story marble facade with a statue of Trajan in the central niche. The building inscription dedicates it to Artemis of Ephesus, to Trajan, and to the city itself.",
+        "province": "Asia",
+        "modern_location": "Selcuk, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "IvE 424-425 (building inscription of the Nymphaeum Traiani)",
+          "https://www.judaism-and-rome.org/nymphaeum-trajan-ephesus-102-114-ce"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Efez Nymphaeum of Trajan RB.jpg?width=800",
+        "image_credit": "Nymphaeum of Trajan, Ephesus — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.3411,
+          37.9407
+        ]
+      },
+      "properties": {
+        "id": "euerg_ephesus_salutaris_foundation",
+        "name": "Ephesus",
+        "category": "benefactor_inscription",
+        "one_line": "The equestrian financier Gaius Vibius Salutaris endowed a foundation of 21,500 denarii and 31 gold and silver statuettes in 104 CE, funding a procession that carried images of Artemis, the emperors, and the city itself from the Artemision to the theatre at every major festival. The 568-line inscription recording his gift once covered an entire theatre wall and is now in the British Museum.",
+        "province": "Asia",
+        "modern_location": "Selcuk, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "IEph 1a 27 (Salutaris foundation dossier)",
+          "G. M. Rogers, The Sacred Identity of Ephesos: Foundation Myths of a Roman City (1991)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great Theatre, Ephesus.jpg?width=800",
+        "image_credit": "Great Theatre of Ephesus — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2372,
+          43.4586
+        ]
+      },
+      "properties": {
+        "id": "euerg_tifernum_tiberinum",
+        "name": "Citta di Castello",
+        "category": "benefactor_inscription",
+        "one_line": "Pliny the Younger, patron and native benefactor of Tifernum Tiberinum, paid for a temple at his own expense and wrote to Trajan asking permission to add a statue of the deified Nerva beside the older emperors already displayed inside it. His letters describe choosing the site and commissioning the work in his own words.",
+        "province": "Italia",
+        "modern_location": "Citta di Castello, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "Pliny the Younger, Epistulae 4.1, 10.8",
+          "https://www.keytoumbria.com/Citta_di_Castello/Roman_History.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Duomo di città di castello, facciata.JPG?width=800",
+        "image_credit": "Cathedral facade, Città di Castello — Wikimedia Commons"
+      }
+    }
+  ]
+}

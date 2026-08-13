@@ -5035,6 +5035,325 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Apollo%20Pompeii.jpg?width=800",
         "image_credit": "Temple of Apollo, Pompeii · Wikimedia Commons"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.366433,
+          38.969544
+        ]
+      },
+      "properties": {
+        "id": "poi_proserpina_dam",
+        "category": "dam",
+        "name_latin": "Proserpina",
+        "name_english": "Proserpina Dam",
+        "province": "Lusitania",
+        "modern_location": "Merida, Spain",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The Proserpina Dam held back a reservoir north of Emerita Augusta, an earthen embankment fronted by stone buttresses that still stretches 427 meters across the valley. Water released from its sluices fed the Aqueduct of the Miracles into the city below. Roman engineers built it in the first or second century CE alongside the nearby Cornalvo dam, and it has never stopped holding water since. Local swimmers still use its reservoir as a summer bathing spot today.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Proserpina_Dam",
+          "https://andaluciarustica.com/en/proserpina-dam-and-reservoir.htm"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Embalse%20de%20Proserpina%2C%20M%C3%A9rida%20(2015).JPG?width=800",
+        "image_credit": "Embalse de Proserpina, Mérida · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.19111,
+          38.98833
+        ]
+      },
+      "properties": {
+        "id": "poi_cornalvo_dam",
+        "category": "dam",
+        "name_latin": "Cornalvo",
+        "name_english": "Cornalvo Dam",
+        "province": "Lusitania",
+        "modern_location": "Merida, Spain",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The Cornalvo Dam still backs a reservoir east of Merida behind packed earth and rubble faced with dressed stone, standing 194 meters long and up to 24 meters high. It formed a second water source for Emerita Augusta alongside Proserpina, feeding the city through its own aqueduct and a sluice tower that still works. Most scholarship dates it to the first or second century CE, though a few Spanish studies argue for a later Hadrianic date near 130 CE. Water still flows to Merida from it today.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cornalvo_Dam",
+          "https://www.power-technology.com/features/feature-the-worlds-oldest-dams-still-in-use/"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20Cornalvo%20dam%2C%20Extremadura%2C%20Spain.%20Pic%2001.jpg?width=800",
+        "image_credit": "Roman Cornalvo dam, Extremadura · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0954,
+          41.9204
+        ]
+      },
+      "properties": {
+        "id": "poi_subiaco_dams",
+        "category": "dam",
+        "name_latin": "Sublaqueum",
+        "name_english": "Subiaco Dams",
+        "province": "Italia",
+        "modern_location": "Subiaco, Italy",
+        "built": 60,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Nero dammed the Aniene river in three places above Subiaco, creating the Simbruina Stagna lakes that fronted his 75-hectare villa in the gorge. The tallest of the three dams reached roughly 50 meters, briefly the highest dam in the Roman world, and it kept holding its lake for over a millennium after Nero's death. Even after the emperor's fall in 68 CE, the lakes stayed intact in 117 CE. The largest dam finally failed in a 1305 flood; only Lago di San Benedetto survives today.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Subiaco_Dams",
+          "https://en.wikipedia.org/wiki/Villa_of_Nero"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/San%20Benedetto%20-%20Subiaco.JPG?width=800",
+        "image_credit": "San Benedetto, Subiaco (site of Nero's dammed lakes) · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.789,
+          41.2748
+        ]
+      },
+      "properties": {
+        "id": "poi_almonacid_de_la_cuba_dam",
+        "category": "dam",
+        "name_latin": "Almonacid de la Cuba Dam",
+        "name_english": "Almonacid de la Cuba Dam",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Almonacid de la Cuba, Spain",
+        "built": 10,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman engineers raised this dam across the Aguasvivas river under Augustus or Tiberius, building it 34 meters tall, the tallest Roman dam known to survive anywhere. It stored water for irrigation across the dry Aragonese plain and remained Spain's tallest dam for over 1,500 years, only surpassed in 1590. Its rubble-and-mortar core, faced with cut stone, was already a century old by 117 CE and still holding back its reservoir, showing how far provincial engineers pushed dam technology.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Almonacid_de_la_Cuba_Dam",
+          "https://patrimonioculturaldearagon.es/patrimonio/presa-romana/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Almonacid%20de%20la%20Cuba%20presa%20romana%2063781ddrawGL.jpg?width=800",
+        "image_credit": "Roman dam at Almonacid de la Cuba · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.452,
+          30.3255
+        ]
+      },
+      "properties": {
+        "id": "poi_petra_dam",
+        "category": "dam",
+        "name_latin": "Petra",
+        "name_english": "Petra Dam",
+        "province": "Arabia",
+        "modern_location": "Petra, Jordan",
+        "built": -50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Nabataean engineers built this dam across the Siq's mouth around the mid-first century BCE, sealing Petra's main entrance from flash floods and diverting water through a tunnel cut nearly 90 meters through rock. Standing about 13 meters high, it protected the processional approach for centuries. Trajan annexed the Nabataean kingdom as Arabia in 106 CE, just eleven years before this map's snapshot, so by 117 CE the dam guarded a new Roman province rather than an independent kingdom.",
+        "sources": [
+          "https://www.gju.edu.jo/content/restoration-ancient-nabatean-flood-control-system-wadi-madras-petra-7803",
+          "https://universes.art/en/art-destinations/jordan/petra/siq/dam-tunnel"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Petra%20Dam.jpg?width=800",
+        "image_credit": "Petra Dam at entrance to the Siq · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.721439,
+          43.704336
+        ]
+      },
+      "properties": {
+        "id": "poi_barbegal_watermill",
+        "category": "watermill",
+        "name_latin": "Barbegal",
+        "name_english": "Barbegal Watermills",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Fontvieille, France",
+        "built": 120,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Sixteen waterwheels arranged in two rows down a hillside at Barbegal drove what is considered the largest concentration of mechanical power in the ancient world, grinding flour for a small city. A dedicated aqueduct branch fed the wheels in sequence, each turning a pair of millstones before passing water on. Carbonate deposits point to that branch being built around 120 to 130 CE, just after Trajan's death, though a Trajanic coin found on site keeps the exact date genuinely debated.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Barbegal_aqueduct_and_mills",
+          "https://www.science.org/doi/10.1126/sciadv.aar3620"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aqueduc%20barbegal%20fontvieille.jpg?width=800",
+        "image_credit": "Barbegal aqueduct and mill remains, Fontvieille · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9529,
+          32.7069
+        ]
+      },
+      "properties": {
+        "id": "poi_ptolemais_cisterns",
+        "category": "cistern",
+        "name_latin": "Ptolemais",
+        "name_english": "Ptolemais Cisterns",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Tolmeita, Libya",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Seventeen barrel-vaulted cisterns lie beneath a colonnaded plaza at Ptolemais known as the Square of the Cisterns, together holding some 7,000 cubic meters of water for a city with no spring of its own. Roman engineers carried water in from the surrounding hills to fill them, expanding what may have begun as a smaller Hellenistic reservoir. A 2025 excavation even found a human face carved into the plaster on one wall. The system was already old and in continuous use by 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ptolemais,_Cyrenaica",
+          "https://www.thehistoryblog.com/archives/72185"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ptolemais%20(5283376622).jpg?width=800",
+        "image_credit": "Ptolemais archaeological site, Tolmeita · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3189,
+          36.8593
+        ]
+      },
+      "properties": {
+        "id": "poi_la_malga_cisterns",
+        "category": "cistern",
+        "name_latin": "La Malga",
+        "name_english": "La Malga Cisterns",
+        "province": "Africa Proconsularis",
+        "modern_location": "Carthage, Tunisia",
+        "built": 128,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "At least two dozen vaulted cisterns once stood in a line at La Malga, each roughly 130 Roman paces long, storing tens of thousands of cubic meters piped in from the Zaghouan aqueduct to supply Carthage and its baths. Hadrian ordered that aqueduct built starting around 128 CE, so these cisterns could not yet have held water at this map's 117 CE snapshot. Carthage instead relied on wells and smaller cisterns at Trajan's death. The ruins, later stables, are now overgrown with fig trees.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cisterns_of_La_Malga",
+          "https://en.wikipedia.org/wiki/Zaghouan_Aqueduct"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Citernes%20romaines%20de%20La%20Malga.JPG?width=800",
+        "image_credit": "Roman cisterns of La Malga, Carthage · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0865,
+          40.7877
+        ]
+      },
+      "properties": {
+        "id": "poi_piscina_mirabilis",
+        "category": "cistern",
+        "name_latin": "Piscina Mirabilis",
+        "name_english": "Piscina Mirabilis",
+        "province": "Italia",
+        "modern_location": "Bacoli, Italy",
+        "built": -20,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Carved into volcanic tuff above Misenum, the Piscina Mirabilis held up to 12,600 cubic meters of fresh water under a vaulted roof on 48 cross-shaped pillars in five aisles. Augustus had it built between 33 and 12 BCE as the final reservoir of the Aqua Augusta, giving the navy's fleet at Misenum water for its base and ships. Sailors nicknamed it the water cathedral, and by 117 CE it had supplied the fleet for over a century. It remains one of Rome's largest cisterns.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Piscina_Mirabilis",
+          "https://www.labrujulaverde.com/en/2024/02/piscina-mirabilis-the-impressive-roman-water-reservoir-as-large-as-a-basilica/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Piscina%20Mirabilis%202010-by-RaBoe-13.jpg?width=800",
+        "image_credit": "Piscina Mirabilis, Bacoli · photo by RaBoe, Wikimedia Commons (CC BY-SA 3.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.8924,
+          39.7224
+        ]
+      },
+      "properties": {
+        "id": "poi_alcantara_bridge",
+        "category": "bridge",
+        "name_latin": "Pons Alcantarae",
+        "name_english": "Alcantara Bridge",
+        "province": "Lusitania",
+        "modern_location": "Alcantara, Spain",
+        "built": 106,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Gaius Julius Lacer built this granite bridge across the Tagus between 104 and 106 CE, financed by eleven nearby Lusitanian towns and dedicated to Trajan. Its six arches carry the roadway 194 meters across the gorge and rise 45 meters above the water, fitted from massive blocks without mortar. An inscription boasts its builder raised a bridge that would last forever, and in 117 CE it was barely a decade old, already carrying imperial traffic. It still carries traffic nineteen centuries later.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Alc%C3%A1ntara_Bridge",
+          "https://www.thearchaeologist.org/blog/the-roman-bridge-of-alcantara-1900-years-of-service"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alcantara%20roman%20bridge.jpg?width=800",
+        "image_credit": "Alcántara Bridge over the Tagus · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.6671,
+          44.6238
+        ]
+      },
+      "properties": {
+        "id": "poi_trajans_danube_bridge",
+        "category": "bridge",
+        "name_latin": "Pons Traiani",
+        "name_english": "Trajan's Bridge",
+        "province": "Dacia",
+        "modern_location": "Drobeta-Turnu Severin, Romania",
+        "built": 105,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Apollodorus of Damascus built this bridge across the Danube in just two years, finishing in 105 CE so Trajan's legions could cross freely during the Dacian conquest. Twenty stone piers over 40 meters tall carried wooden arches spanning 1,135 meters in total, the longest bridge built anywhere for a thousand years afterward. It still stood at full length in 117 CE. Hadrian later dismantled its wooden superstructure, but the stone piers endured, and several still break the Danube's surface today.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Trajan%27s_Bridge",
+          "https://www.icpdr.org/publications/danube-watch-2-2018-rediscovering-trajans-bridge-over-danube"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trajan%27s%20Bridge%20Across%20the%20Danube%2C%20Modern%20Reconstruction.jpg?width=800",
+        "image_credit": "Trajan's Bridge over the Danube, 1907 reconstruction drawing by E. Duperrex · Wikimedia Commons"
+      }
     }
   ]
 }

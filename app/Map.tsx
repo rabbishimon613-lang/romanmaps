@@ -1067,17 +1067,22 @@ export default function Map() {
           kick();
         }
 
-        // Phase 14: Frontier lines (public/data/lines.geojson) — Fossatum Africae, the Upper
-        // Germanic-Raetian Limes, and the Dacian Olt river frontier as of 117 CE (axis 3a).
+        // Phase 14: Long line features (public/data/lines.geojson) — frontier lines (Fossatum
+        // Africae, the Upper Germanic-Raetian Limes, the Dacian Olt river frontier, axis 3a) and
+        // major aqueducts (Aqua Claudia, Aqua Traiana, the Pont du Gard route and more, axis 3f).
+        // One shared source, two filtered layers so the two feature families read distinctly —
+        // frontiers stay dashed earth-brown, aqueducts get a solid line in the same green already
+        // used for aqueduct POI pins (app/poiCategories.ts's "infrastructure" group).
         const lines = await fetch("/data/lines.geojson")
           .then((r) => (r.ok ? r.json() : null))
           .catch(() => null);
         if (!cancelled && map && lines) {
-          map.addSource("frontier-lines", { type: "geojson", data: lines });
+          map.addSource("lines", { type: "geojson", data: lines });
           map.addLayer({
             id: "frontier-lines-line",
             type: "line",
-            source: "frontier-lines",
+            source: "lines",
+            filter: ["==", ["get", "category"], "frontier_line"],
             paint: {
               "line-color": "#6a5f4a",
               "line-width": ["interpolate", ["linear"], ["zoom"], 3, 1.2, 8, 2.4],
@@ -1086,27 +1091,93 @@ export default function Map() {
             },
             layout: { "line-cap": "round", "line-join": "round" },
           });
+          map.addLayer({
+            id: "aqueduct-lines-line",
+            type: "line",
+            source: "lines",
+            filter: ["==", ["get", "category"], "aqueduct_line"],
+            paint: {
+              "line-color": "#3a9a6a",
+              "line-width": ["interpolate", ["linear"], ["zoom"], 3, 1, 8, 2.2],
+              "line-opacity": 0.85,
+            },
+            layout: { "line-cap": "round", "line-join": "round" },
+          });
 
-          const frontierPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "frontier-lines-line", (e) => {
+          const linePopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          const onLineEnter = (e: any) => {
             if (!map) return;
             map.getCanvas().style.cursor = "pointer";
             const f = e.features?.[0];
             if (!f) return;
             const p: any = f.properties || {};
             const noteLine = p.notes ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.notes)}</div>` : "";
-            frontierPopup
+            linePopup
               .setLngLat(e.lngLat)
               .setHTML(
                 `<div style="font: 13px Roboto, sans-serif; color: #202124;">
                    <div style="font-weight: 600;">${escapeHtml(p.name_english || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.province || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.province || "")}${p.extant_117ce === false ? " · not yet built in 117 CE" : ""}</div>
+                   ${noteLine}
+                 </div>`,
+              )
+              .addTo(map);
+          };
+          const onLineLeave = () => {
+            if (map) map.getCanvas().style.cursor = "";
+          };
+          map.on("mouseenter", "frontier-lines-line", onLineEnter);
+          map.on("mouseleave", "frontier-lines-line", onLineLeave);
+          map.on("mouseenter", "aqueduct-lines-line", onLineEnter);
+          map.on("mouseleave", "aqueduct-lines-line", onLineLeave);
+          kick();
+        }
+
+        // Phase 15: Welfare + euergetism (public/data/euergetism.geojson) — Trajan's alimenta
+        // child-welfare towns (Veleia and Ligures Baebiani's bronze tables, and individually
+        // attested towns beyond those two) plus a handful of Trajanic-era benefactor endowments
+        // (axis 15).
+        const euergetism = await fetch("/data/euergetism.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && euergetism) {
+          map.addSource("euergetism", { type: "geojson", data: euergetism });
+          map.addLayer({
+            id: "euergetism-point",
+            type: "circle",
+            source: "euergetism",
+            paint: {
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+              "circle-color": "#c98a2e",
+              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-width": 1.6,
+            },
+          });
+
+          const euergetismPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          map.on("mouseenter", "euergetism-point", (e) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const catLabel: Record<string, string> = {
+              alimenta_town: "Alimenta welfare town",
+              benefactor_inscription: "Benefactor endowment",
+            };
+            const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.one_line)}</div>` : "";
+            euergetismPopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(catLabel[p.category] || p.category || "")}</div>
                    ${noteLine}
                  </div>`,
               )
               .addTo(map);
           });
-          map.on("mouseleave", "frontier-lines-line", () => {
+          map.on("mouseleave", "euergetism-point", () => {
             if (map) map.getCanvas().style.cursor = "";
           });
           kick();

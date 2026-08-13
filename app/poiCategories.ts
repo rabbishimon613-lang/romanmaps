@@ -37,7 +37,7 @@ export const CATEGORY_GROUPS: CategoryGroup[] = [
   { id: "civic",           label: "Civic & government",          short: "Civic",        color: "#b0431a", categories: ["forum","basilica","curia","collegium"], glyph: G_FORUM },
   { id: "residential",     label: "Palaces & residences",        short: "Palaces",      color: "#8859a6", categories: ["palace","house","villa","domus"], glyph: G_PALACE },
   { id: "maritime",        label: "Ports & harbors",             short: "Ports",        color: "#2a7fb5", categories: ["port","lighthouse","canal","harbor"], glyph: G_PORT },
-  { id: "infrastructure",  label: "Aqueducts",                   short: "Aqueducts",    color: "#3a9a6a", categories: ["aqueduct"], glyph: G_AQUEDUCT },
+  { id: "infrastructure",  label: "Water infrastructure",        short: "Water",        color: "#3a9a6a", categories: ["aqueduct","dam","watermill","cistern"], glyph: G_AQUEDUCT },
   { id: "military",        label: "Forts & fortifications",      short: "Forts",        color: "#4a5057", categories: ["fort","mansio","wall","barracks","naval_base","signal_tower","auxiliary_fort"], glyph: G_FORT },
   { id: "industry",        label: "Mines",                       short: "Mines",        color: "#6a5f4a", categories: ["mine"], glyph: G_MINE },
   { id: "learning",        label: "Libraries",                   short: "Libraries",    color: "#a08a2e", categories: ["library"], glyph: G_LIBRARY },
