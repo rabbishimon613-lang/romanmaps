@@ -1293,6 +1293,59 @@ export default function Map() {
           kick();
         }
 
+        // Phase 18: Sports + athletic culture (public/data/sports.geojson) — gymnasia, the
+        // sacred-crown festival circuit (periodos: Olympia, Delphi, Nemea, Isthmia), other
+        // periodic festivals, and athletic guild HQs (axis 20).
+        const sports = await fetch("/data/sports.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && sports) {
+          map.addSource("sports", { type: "geojson", data: sports });
+          map.addLayer({
+            id: "sports-point",
+            type: "circle",
+            source: "sports",
+            paint: {
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+              "circle-color": "#3f7a4f",
+              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-width": 1.6,
+            },
+          });
+
+          const sportsPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          map.on("mouseenter", "sports-point", (e) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const catLabel: Record<string, string> = {
+              gymnasium: "Gymnasium",
+              athletic_guild: "Athletic guild HQ",
+              festival_site: "Festival site",
+            };
+            const subLine = p.festival_name
+              ? p.festival_name + (p.circuit === "periodos" ? " · Sacred crown games" : "")
+              : catLabel[p.category] || p.category || "";
+            const noteLine = p.one_line ? `<div style="margin-top:4px;">${escapeHtml(p.one_line)}</div>` : "";
+            sportsPopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(subLine)}</div>
+                   ${noteLine}
+                 </div>`,
+              )
+              .addTo(map);
+          });
+          map.on("mouseleave", "sports-point", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          kick();
+        }
+
         // Apply any persisted Layers-panel visibility (all groups default visible).
         applyAllLayers();
       });

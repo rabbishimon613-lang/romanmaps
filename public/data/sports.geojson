@@ -1,0 +1,831 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.6303,
+          37.6382
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_olympia_palaestra",
+        "name": "Olympia",
+        "category": "gymnasium",
+        "one_line": "Built in the 3rd century BCE beside the Kladeos river, this square training hall gave Olympic wrestlers, boxers, and pankratiasts a roofed courtyard to prepare before entering the sanctuary of Zeus. Its Doric colonnade ran 66 meters on a side, shading oiled athletes as trainers barked instructions. It stood directly beside the Gymnasion, sharing water and staff for four centuries. Visitors today walk the same stone floor where champions once readied themselves.",
+        "province": "Achaea",
+        "modern_location": "Olympia, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Palaestra_at_Olympia",
+          "https://en.wikipedia.org/wiki/Olympia,_Greece"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palestra_d'Ol%C3%ADmpia.JPG?width=800",
+        "image_credit": "Palaestra at Olympia · Wikimedia Commons",
+        "image_alt": "Ruined colonnade of the Palaestra at Olympia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.501,
+          38.4824
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_delphi",
+        "name": "Delphi",
+        "category": "gymnasium",
+        "one_line": "Carved into a terrace below the Sanctuary of Apollo in the 4th century BCE, this gymnasium gave Pythian Games competitors a dedicated palaestra, a running track over 180 meters long, and a cold bath fed straight from the Castalian Spring. Runners used the upper terrace for the dromos and the lower one for wrestling and boxing. Two named rooms survive for undressing and ball games. It ranks among the oldest purpose-built gymnasiums anywhere in the Greek world.",
+        "province": "Achaea",
+        "modern_location": "Delphi, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Gymnasium_at_Delphi",
+          "https://en.wikipedia.org/wiki/Palaestra_at_Delphi"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Ancient_Gymnasium_at_Delphi.jpg?width=800",
+        "image_credit": "Gymnasium at Delphi · Wikimedia Commons",
+        "image_alt": "Terraced running track of the ancient gymnasium at Delphi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.0433,
+          38.4886
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_sardis",
+        "name": "Sardis",
+        "category": "gymnasium",
+        "one_line": "A gymnasium had trained young Sardians for generations, but the lavish Marble Court seen today was not finished until 211 CE, when Severan-era donors dedicated it to Empress Julia Domna. Covering 23,000 square meters, the combined bath-gymnasium ranks among the largest such complexes in the Roman world. Archaeologists pieced its two-story marble facade back together from roughly 800 shattered fragments in the 1960s. In 117 CE that rebuild still lay nearly a century in the future.",
+        "province": "Asia",
+        "modern_location": "Sart, Manisa, Turkey",
+        "extant_117ce": false,
+        "sources": [
+          "https://sardisexpedition.org/en/essays/about-bath-gym",
+          "https://en.wikipedia.org/wiki/Sardis"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Bath-Gymnasium_complex_at_Sardis,_late_2nd_-_early_3rd_century_AD,_Sardis,_Turkey_(16391012853).jpg?width=800",
+        "image_credit": "Bath-Gymnasium Complex at Sardis · Wikimedia Commons",
+        "image_alt": "Marble Court of the Sardis Bath-Gymnasium complex"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.9106,
+          37.1786
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_messene",
+        "name": "Ancient Messene",
+        "category": "gymnasium",
+        "one_line": "Messene's Stadium, Gymnasium, and Palaestra formed one interlocking athletic complex, a unified training ground rarely matched in the Greek world. Built after the city's founding in 369 BCE, the Pi-shaped gymnasium gallery held statues by Alexandrian sculptors beside a 192-meter racetrack lined with stone seating. A funerary monument with a conical roof still stands in its western wing. Archaeologists recovered the bronze Hermes of Messene from these grounds in 1996.",
+        "province": "Achaea",
+        "modern_location": "Mavromati, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Messene",
+          "https://www.efamess.gr/en/pois/gymnasio-stadio-archaia-messini/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Propylon_and_the_Stoas_of_the_Gymnasium_of_Messene_on_October_29,_2020.jpg?width=800",
+        "image_credit": "Gymnasium of Messene · Wikimedia Commons",
+        "image_alt": "Colonnaded stoas of the Gymnasium of Messene"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2967,
+          37.6592
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_priene",
+        "name": "Priene",
+        "category": "gymnasium",
+        "one_line": "Built in the 4th century BCE on a terrace above the theater, Priene's Upper Gymnasium wrapped a colonnaded courtyard with training and lecture rooms for the city's ephebes. Romans later added baths and a small imperial-cult shrine without disturbing its Hellenistic bones. Priene's gymnasiums were famous enough that families sent sons from other cities to train here. The site remains one of the best-preserved examples of Greek civic planning anywhere in Anatolia.",
+        "province": "Asia",
+        "modern_location": "Gullubahce, Aydin, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Priene",
+          "https://www.wikidata.org/wiki/Q97341078"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Upper_gymnasium_in_Priene.jpg?width=800",
+        "image_credit": "Upper Gymnasium, Priene · Wikimedia Commons",
+        "image_alt": "Columned courtyard of the Upper Gymnasium at Priene"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.0764,
+          37.5967
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_epidaurus",
+        "name": "Epidaurus",
+        "category": "gymnasium",
+        "one_line": "Pausanias listed the Gymnasium among the must-see buildings at the Sanctuary of Asclepius, where athletes competing in games honoring the healing god trained a short walk from patients seeking cures. Built in the 4th century BCE, its colonnaded courtyard sat near the 6,000-seat theater and the 181-meter stadium. A monumental propylon still marks its entrance today. The building tied athletic competition directly to the sanctuary's medical mission, a pairing unusual among Greek gymnasiums.",
+        "province": "Achaea",
+        "modern_location": "Epidaurus, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Epidaurus",
+          "https://whc.unesco.org/en/list/491/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Gymnasium,_Epidaurus,_Greece.jpg?width=800",
+        "image_credit": "The Gymnasium, Sanctuary of Asclepius, Epidaurus · Wikimedia Commons",
+        "image_alt": "Ruins of the Gymnasium at the Sanctuary of Asclepius, Epidaurus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1844,
+          39.1325
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_pergamon",
+        "name": "Pergamon",
+        "category": "gymnasium",
+        "one_line": "King Eumenes II built the largest gymnasium of the Hellenistic world at Pergamon in the 2nd century BCE, stacking it across three terraces linked by vaulted stairways. The uppermost terrace, reserved for adult men, alone measured 150 by 70 meters. Boys trained on the lowest level and ephebes in the middle, while a small theater and shrines to Hermes and Heracles rounded out the complex. Two full bath suites let athletes wash off the dust of Pergamon's steep acropolis after every session.",
+        "province": "Asia",
+        "modern_location": "Bergama, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pergamon",
+          "https://whc.unesco.org/en/list/1457/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pergamon_Gymnasium_area_086.jpg?width=800",
+        "image_credit": "Pergamon gymnasium area · Wikimedia Commons",
+        "image_alt": "Ruins of the gymnasium terraces at Pergamon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7444,
+          37.9755
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_athens_lyceum",
+        "name": "Lyceum of Athens",
+        "category": "gymnasium",
+        "one_line": "Aristotle taught his Peripatetic school for twelve years inside this public gymnasium dedicated to Apollo Lykeios, a training ground shaping Athenian youths since the 6th century BCE. Construction crews accidentally rediscovered its wrestling floor, changing rooms, and baths in 1996 while clearing ground for a modern art museum. The remains now sit in a small park off Rigillis Street. Athenian ephebes had already run and wrestled here long before Aristotle arrived.",
+        "province": "Achaea",
+        "modern_location": "Athens, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Lyceum_(classical)",
+          "https://www.ebsco.com/research-starters/education/archaeologists-announce-discovery-aristotles-lyceum"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Athens_Aristotle's_Lyceum.jpg?width=800",
+        "image_credit": "Aristotle's Lyceum (Lykeion), Athens · Wikimedia Commons",
+        "image_alt": "Excavated remains of Aristotle's Lyceum in Athens"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7972,
+          38.3966
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_eretria",
+        "name": "Eretria",
+        "category": "gymnasium",
+        "one_line": "Eretria's gymnasium paired two separate courtyards, an unusual double layout found almost nowhere else in the Greek world. Built around 330-320 BCE on the first slope of the acropolis, it served as the social and educational heart of the Hellenistic city for roughly three centuries. Excavation evidence suggests the complex fell out of active use by the end of the 1st century CE, decades before Trajan's death. By 117 CE, the building most Eretrians remembered from the classical era stood quiet.",
+        "province": "Achaea",
+        "modern_location": "Eretria, Greece",
+        "extant_117ce": false,
+        "sources": [
+          "https://www.esag.swiss/eretria/gymnasium/",
+          "https://www.archaeology.wiki/blog/agenta/the-gymnasium-of-eretria/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Theatre_of_Eretria_and_the_Gymnasium_from_the_Acropolis_on_January_16,_2020.jpg?width=800",
+        "image_credit": "Theatre and Gymnasium of Eretria from the Acropolis · Wikimedia Commons",
+        "image_alt": "View of the Gymnasium and Theatre of Eretria from the acropolis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9017,
+          35.1856
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_salamis_cyprus",
+        "name": "Salamis",
+        "category": "gymnasium",
+        "one_line": "Salamis rebuilt its gymnasium on a grand scale under Trajan and Hadrian after Jewish rebels devastated the city in the 116 CE uprising. The new colonnaded palaestra rose over an older Hellenistic gymnasium, its marble pools flanked by a public latrine seating 44 people, the largest ever found on Cyprus. Statues of Aphrodite, Hermaphroditus, and Isis once lined its stoas. In 117 CE crews were still hard at work restoring Salamis's civic pride.",
+        "province": "Cyprus",
+        "modern_location": "Famagusta, Northern Cyprus",
+        "extant_117ce": true,
+        "sources": [
+          "https://followinghadrian.com/2015/11/09/wandering-along-the-colonnade-of-the-gymnasium-of-salamis-cyprus/",
+          "https://en.wikipedia.org/wiki/Salamis,_Cyprus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Columns_in_Roman_gymnasium,_Salamis,_Northern_Cyprus.jpg?width=800",
+        "image_credit": "Columns in the Roman gymnasium, Salamis · Wikimedia Commons",
+        "image_alt": "Standing columns of the Roman gymnasium at Salamis, Cyprus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2891,
+          36.8933
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_kos",
+        "name": "Kos",
+        "category": "gymnasium",
+        "one_line": "Kos built its gymnasium in the early 2nd century BCE around an open peristyle courtyard roughly 200 meters long, anchored by a covered running track called the xystos for training through the rainy winter months. Seventeen of its original 81 Doric columns still stand today. The building trained islanders for nearly six centuries before finally collapsing in a 469 CE earthquake. In 117 CE it stood at the social center of Hippocrates' home island.",
+        "province": "Asia",
+        "modern_location": "Kos Town, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.greeka.com/dodecanese/kos/sightseeing/ancient-gymnasium/",
+          "https://en.wikipedia.org/wiki/Xystus_(architectural_term)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kos_ant_gymnasium.JPG?width=800",
+        "image_credit": "Ancient Gymnasium of Kos · Wikimedia Commons",
+        "image_alt": "Restored Doric columns of the ancient gymnasium of Kos"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8578,
+          32.8244
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_cyrene_ptolemaion",
+        "name": "Cyrene",
+        "category": "gymnasium",
+        "one_line": "Cyrenean youths once trained at the Ptolemaion, a gymnasium honoring King Ptolemy VIII around a colonnaded esplanade measuring 96 by 85 meters. Roman administrators repurposed the whole complex into a civic forum under Augustus, renaming it the Caesareum and adding a basilica where the province's major trials were heard. By 117 CE the building's wrestling floors had been silent for over a century. A temple to Dionysus still stood at its center.",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Shahhat, Libya",
+        "extant_117ce": false,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ptolemais,_Cyrenaica",
+          "https://digital.kenyon.edu/baly/1055/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Archaeological_Site_of_Cyrene-109023.jpg?width=800",
+        "image_credit": "Caesareum (Cyrene), formerly the Ptolemaion gymnasium · Wikimedia Commons",
+        "image_alt": "Ruins of the Caesareum, formerly the Ptolemaion gymnasium, at Cyrene"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.8367,
+          37.8394
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_tralles",
+        "name": "Tralles",
+        "category": "gymnasium",
+        "one_line": "Tralles built one of Anatolia's largest gymnasiums on a terrace over the Meander valley, so massive its surviving triple-arched facade still dominates the skyline of modern Aydin. Its Roman-era latrine seated 65 people around a central fountain, among the biggest public toilets ever found in Turkey. Earthquakes repeatedly damaged and rebuilt the complex. Locals nicknamed the ruin Uc Gozler, the Three Eyes, for the trio of arches still framing the sky.",
+        "province": "Asia",
+        "modern_location": "Aydin, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tralles_(Phrygia)",
+          "https://dergipark.org.tr/en/pub/amisos/article/733296"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_latrines_of_the_gymnasium,_one_the_largest_Roman_latrines_in_Turkey,_its_capacity_was_for_65_people,_Tralles,_Lydia,_Turkey_(22525806983).jpg?width=800",
+        "image_credit": "Latrines of the gymnasium, Tralles · Wikimedia Commons",
+        "image_alt": "Roman-period public latrine inside the gymnasium at Tralles"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.1275,
+          37.9239
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_hierapolis",
+        "name": "Hierapolis",
+        "category": "gymnasium",
+        "one_line": "Hierapolis built its gymnasium along the main street near the southern wall, pairing it with a matching marble stoa as twin monuments to Greek civic life in Roman Phrygia. The Hellenistic spa city, famous for its mineral hot springs and the philosopher Epictetus, gave citizens a training ground in sight of the theater and agora. Deep niches inside once held statues honoring donors and athletes. The same street led travelers past the Plutonium, Hierapolis's gateway to the underworld.",
+        "province": "Asia",
+        "modern_location": "Pamukkale, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Hierapolis",
+          "https://whc.unesco.org/en/list/485/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hierapolis_Gymnasium_4839.jpg?width=800",
+        "image_credit": "Gymnasium in Hierapolis · Wikimedia Commons",
+        "image_alt": "Ruins of the gymnasium at Hierapolis of Phrygia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.8536,
+          36.9614
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_perge",
+        "name": "Perge",
+        "category": "gymnasium",
+        "one_line": "Perge's monumental gymnasium and palaestra filled a 76-by-76-meter enclosure in the city's northwest quarter, its scale announcing imperial-era wealth. The palaestra formed the grand entrance to Perge's Southern Baths, where men wrestled and boxed before the heated pools next door. Colonnaded galleries donated by benefactor Klaudios Peison lined its western edge. The complex ranks among the best-preserved bath-gymnasium pairings on Turkey's coast.",
+        "province": "Lycia et Pamphylia",
+        "modern_location": "Antalya, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.ancient-history-sites.com/sites/perga/",
+          "https://en.wikipedia.org/wiki/Perge"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Perge_South_Baths_Palaestra_room_V_to_left,_next_IV_and_fragments_in_2012_6905.jpg?width=800",
+        "image_credit": "Perge, Roman thermae, Palaestra · Wikimedia Commons",
+        "image_alt": "Palaestra rooms of the Roman baths and gymnasium at Perge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.7256,
+          37.7086
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_aphrodisias",
+        "name": "Aphrodisias",
+        "category": "gymnasium",
+        "one_line": "Aphrodisias dedicated its grandest bathing-and-training complex to Aphrodite and emperor Hadrian, who took the throne in August 117 CE. Construction on the complex, known in antiquity as the Olympian Baths, only got underway after Trajan's reign had ended. Its colonnaded forecourt yielded some of the finest marble sculpture recovered from the city, including a dramatic Achilles and Penthesilea group. In 117 CE this monument still waited to be built.",
+        "province": "Asia",
+        "modern_location": "Geyre, Aydin, Turkey",
+        "extant_117ce": false,
+        "sources": [
+          "https://www.aphrodisias.org/en/bathrooms-and-hadrian",
+          "https://ora.ox.ac.uk/objects/uuid:6c0c643a-ce91-40b9-8b89-02b8b48f22df"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hadrians-Thermen,_Aphrodisias.jpg?width=800",
+        "image_credit": "Baths of Hadrian, Aphrodisias · Wikimedia Commons",
+        "image_alt": "Ruins of the Hadrianic Baths and gymnasium at Aphrodisias"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.3417,
+          37.9395
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_ephesus_vedius",
+        "name": "Vedius Gymnasium",
+        "category": "gymnasium",
+        "one_line": "Ephesus's grandest surviving gymnasium was not dedicated until 149 CE, when Publius Vedius Antoninus and his wife funded a 135-by-85-meter bath-and-training complex for Artemis and emperor Antoninus Pius. Its frigidarium held a marble pool where a colossal statue of the river god Kaistros poured water from an amphora. The palaestra's columned courtyard still commands the site today. In 117 CE, decades before ground broke, Ephesian athletes trained elsewhere in the city.",
+        "province": "Asia",
+        "modern_location": "Selcuk, Turkey",
+        "extant_117ce": false,
+        "sources": [
+          "https://ephesus.us/ancient-ephesus/vedius-gymnasium/",
+          "https://en.wikipedia.org/wiki/Ephesus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Reclining_colossal_river_god_Kaistros_with_a_cornucopia,_from_the_frigidarium_of_the_Vedius_Gymnasium_at_Ephesus,_2nd_century_AD,_%C4%B0zmir_Art_and_Sculpture_Museum_(17306191326).jpg?width=800",
+        "image_credit": "River god Kaistros from the Vedius Gymnasium, Ephesus · Wikimedia Commons",
+        "image_alt": "Colossal marble statue of the river god Kaistros from the Vedius Gymnasium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.2686,
+          37.3969
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_delos",
+        "name": "Delos",
+        "category": "gymnasium",
+        "one_line": "Delos built the Granite Palaestra beside its sacred lake, tapping one of the only reliable freshwater sources on this small, dry Cycladic island. Its Ionic-peristyle courtyard anchored a wider athletic quarter that grew to include two gymnasiums, a stadium, and a hippodrome. A bronze portrait head recovered from its lakeside grounds around 90 BCE now sits in Athens's National Archaeological Museum. Merchants' sons once trained here on the island that ran the busiest port in the Aegean.",
+        "province": "Achaea",
+        "modern_location": "Delos, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Delos",
+          "https://www.delostours.gr/en/sights/athletic-facilities.html"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Granite_Palaestra,_Delos,_224789.jpg?width=800",
+        "image_credit": "Granite Palaestra, Delos · Wikimedia Commons",
+        "image_alt": "Ruins of the Granite Palaestra beside the Sacred Lake at Delos"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.287,
+          37.062
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_syracuse",
+        "name": "Syracuse",
+        "category": "gymnasium",
+        "one_line": "Syracuse's so-called Roman Gymnasium rose near the Porto Grande in the second half of the 1st century CE, pairing a quadriportico courtyard with a small theater and temple in one complex. Statues that once lined its colonnades are now preserved in the Paolo Orsi Regional Archaeological Museum. Part of the site sits below modern sea level and floods on high tides. Roman Syracuse, capital of Sicilia, built the complex for its Greek-speaking elite.",
+        "province": "Sicilia",
+        "modern_location": "Syracuse, Sicily, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.enjoysicilia.it/en/siracusa-area/siracusa/ginnasio-romano-siracusa/",
+          "https://en.wikipedia.org/wiki/History_of_Syracuse,_Sicily"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ginnasio_romano7.JPG?width=800",
+        "image_credit": "Roman Gymnasium, Syracuse · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman Gymnasium in Syracuse, Sicily"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.2647,
+          37.3117
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_stratonikeia",
+        "name": "Stratonikeia",
+        "category": "gymnasium",
+        "one_line": "Stratonikeia raised one of Caria's largest gymnasiums near its northern gate in the second quarter of the 2nd century BCE, giving the facade a striking 105-meter width. Its konisterium, where wrestlers dusted themselves with sand after oiling up, survives well enough to be studied in detail today. The gymnasium anchored a city whose acropolis, theater, and bouleuterion rank among the best preserved in inland Caria. Local marble quarries, still worked today, helped pay for its scale.",
+        "province": "Asia",
+        "modern_location": "Eskihisar, Yatagan, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Stratonicea_(Caria)",
+          "https://whc.unesco.org/en/tentativelists/6041/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stratonicea_Gymnasium_Konisterium_in_2015_4080.jpg?width=800",
+        "image_credit": "Konisterium in the Gymnasium of Stratonikeia · Wikimedia Commons",
+        "image_alt": "Konisterium room of the gymnasium at Stratonikeia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4989,
+          40.7461
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_pompeii",
+        "name": "Pompeii",
+        "category": "gymnasium",
+        "one_line": "Pompeii's Great Palaestra gave the city's youth organization a vast open exercise ground bordered by trees and a covered portico next to the amphitheater. Built under Augustus after 27 BCE, its central swimming pool alone measured roughly 34 by 22 meters. Mount Vesuvius buried the complex under volcanic ash on 24 August 79 CE, thirty-eight years before Trajan's death. By 117 CE, the palaestra where Pompeian teenagers once raced and wrestled lay silent under hardened ash.",
+        "province": "Italia",
+        "modern_location": "Pompei, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pompeii",
+          "https://en.wikipedia.org/wiki/Palaestra"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palaestra_(Pompeii).jpg?width=800",
+        "image_credit": "Palaestra, Pompeii · Wikimedia Commons",
+        "image_alt": "Ruins of the Great Palaestra at Pompeii, buried by Vesuvius in 79 CE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.6303,
+          37.6382
+        ]
+      },
+      "properties": {
+        "id": "sport_festival_olympia",
+        "name": "Sanctuary of Olympia",
+        "category": "festival_site",
+        "circuit": "periodos",
+        "festival_name": "Olympic Games",
+        "one_line": "Every four years starting in 776 BCE, the sanctuary of Zeus at Olympia hosted the Greek world's most prestigious athletic festival, drawing competitors to run, wrestle, box, and race chariots for nothing more than an olive wreath. By 117 CE the Games had already run for nearly 900 years without interruption. Victors' statues packed the sacred Altis grove so densely that visitors could barely walk between them. The 220th Olympiad had been held just the previous year.",
+        "province": "Achaea",
+        "modern_location": "Olympia, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ancient_Olympic_Games",
+          "https://whc.unesco.org/en/list/517/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plan_Olympia_sanctuary-en.svg?width=800",
+        "image_credit": "Plan of the Sanctuary of Olympia · Wikimedia Commons",
+        "image_alt": "Site plan of the Altis sanctuary at Olympia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.501,
+          38.4824
+        ]
+      },
+      "properties": {
+        "id": "sport_festival_delphi",
+        "name": "Sanctuary of Delphi",
+        "category": "festival_site",
+        "circuit": "periodos",
+        "festival_name": "Pythian Games",
+        "one_line": "Delphi's Pythian Games ranked second only to Olympia, pairing footraces and wrestling with music and poetry at the sanctuary where Apollo's oracle spoke over a sacred chasm. The festival ran a four-year cycle from 582 BCE, its winners crowned in laurel cut from a tree sacred to the god. The setting, wedged into the cliffs of Mount Parnassus, made Delphi the closest thing Greece had to a spiritual capital. Pilgrims still came in 117 CE, seven centuries after the games began.",
+        "province": "Achaea",
+        "modern_location": "Delphi, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pythian_Games",
+          "https://whc.unesco.org/en/list/393/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancient_Delphi_Ruins_(5986587289).jpg?width=800",
+        "image_credit": "Ancient Delphi Ruins · Wikimedia Commons",
+        "image_alt": "Ruins of the sanctuary of Apollo at Delphi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7139,
+          37.8019
+        ]
+      },
+      "properties": {
+        "id": "sport_festival_nemea",
+        "name": "Sanctuary of Nemea",
+        "category": "festival_site",
+        "circuit": "periodos",
+        "festival_name": "Nemean Games",
+        "one_line": "Nemea's stadium, a 178-meter track set in a quiet vineyard valley, hosted the Nemean Games every two years for Zeus, with victors crowned in wreaths of wild celery instead of olive or laurel. The sanctuary's Doric temple, rebuilt around 330 BCE, could seat roughly 30,000 spectators nearby. Athletes reached the track through a vaulted stone tunnel still intact today, its walls scratched with ancient graffiti. By 117 CE, Nemea had ranked among the four sacred crown games for over 600 years.",
+        "province": "Achaea",
+        "modern_location": "Nemea, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.gtp.gr/ArchaeologicalSiteofNemea",
+          "https://topostext.org/place/378227SNem"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Zeus,_Nemea.jpg?width=800",
+        "image_credit": "Temple of Zeus, Nemea · Wikimedia Commons",
+        "image_alt": "Standing columns of the Temple of Zeus at Nemea"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9944,
+          37.9236
+        ]
+      },
+      "properties": {
+        "id": "sport_festival_isthmia",
+        "name": "Sanctuary of Isthmia",
+        "category": "festival_site",
+        "circuit": "periodos",
+        "festival_name": "Isthmian Games",
+        "one_line": "Isthmia's sanctuary of Poseidon sat on the narrow Isthmus of Corinth, between the ports of Lechaion and Kenchreai, hosting the Isthmian Games every two years starting in 582 BCE. Athenians especially prized the festival, held each spring under Poseidon's authority as sea god and earthquake-bringer. The archaic temple's foundations, laid between 690 and 650 BCE, still mark the sanctuary's core. By 117 CE the games ranked among the Empire's biggest Greek festivals.",
+        "province": "Achaea",
+        "modern_location": "Isthmia, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Isthmian_games",
+          "https://en.wikipedia.org/wiki/Isthmia_(sanctuary)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Archaic_Temple_at_Isthmia,_Greece.jpg?width=800",
+        "image_credit": "Archaic Temple at Isthmia · Wikimedia Commons",
+        "image_alt": "Foundations of the Archaic Temple of Poseidon at Isthmia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7411,
+          37.9683
+        ]
+      },
+      "properties": {
+        "id": "sport_festival_panathenaia",
+        "name": "Panathenaic Stadium",
+        "category": "festival_site",
+        "circuit": "other_festival",
+        "festival_name": "Panathenaic Games",
+        "one_line": "Athens celebrated the Great Panathenaia every four years from 566 BCE onward, honoring its patron goddess with a procession carrying a sacred robe to the Acropolis alongside wrestling and chariot races. Statesman Lycurgus built the hollow beside the Ilissos river into a limestone stadium around 330 BCE. In 117 CE the Panathenaia still ran in that same Lycurgan stadium; the famous marble rebuild by Herodes Atticus lay decades away. Prizes included amphorae of Athena's sacred olive oil.",
+        "province": "Achaea",
+        "modern_location": "Athens, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Panathenaic_Games",
+          "https://en.wikipedia.org/wiki/Panathenaic_Stadium"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Athens,_Panathenaic_Stadium_02.JPG?width=800",
+        "image_credit": "Panathenaic Stadium, Athens · Wikimedia Commons",
+        "image_alt": "The Panathenaic Stadium of Athens, built on its ancient footprint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.7314,
+          39.0092
+        ]
+      },
+      "properties": {
+        "id": "sport_festival_actia_nikopolis",
+        "name": "Nikopolis",
+        "category": "festival_site",
+        "circuit": "other_festival",
+        "festival_name": "Actian Games",
+        "one_line": "Augustus founded Nikopolis in 31 BCE to mark his win over Antony and Cleopatra at nearby Actium, then launched the Actia, a festival ranked just below the four sacred crown games. Held every five years in a sacred grove beside a stadium, gymnasium, and hippodrome, it combined athletic, musical, and nautical contests honoring Actian Apollo. The city's Roman odeon, built for its musical contests, still stands among Nikopolis's ruins. By 117 CE the Actia had drawn competitors for nearly 150 years.",
+        "province": "Epirus",
+        "modern_location": "Preveza, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Actia",
+          "http://ancientolympics.arts.kuleuven.be/eng/TB020EN.html"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_odeum_Nicopolis,_Greece.jpg?width=800",
+        "image_credit": "Roman odeon, Nikopolis · Wikimedia Commons",
+        "image_alt": "Roman odeon at Nikopolis, built for the musical contests of the Actia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4731,
+          41.8992
+        ]
+      },
+      "properties": {
+        "id": "sport_festival_capitolia_rome",
+        "name": "Stadium of Domitian",
+        "category": "festival_site",
+        "circuit": "other_festival",
+        "festival_name": "Capitoline Games",
+        "one_line": "Emperor Domitian founded the Capitolia in 86 CE, a Greek-style athletic and musical festival held in Rome every four years for Jupiter Capitolinus, scheduled for the year after each Olympiad. Competitors raced and wrestled in Domitian's brand-new stadium in the Campus Martius, a 30,000-seat arena built for Greek-style games rather than gladiators. The emperor handed out prizes himself for boxing, poetry, and music. By 117 CE the Capitolia was barely 31 years old, yet already rivaled Olympia.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Capitoline_Games",
+          "https://en.wikipedia.org/wiki/Stadium_of_Domitian"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Piazza_Navona_Underground_Ruins_of_Stadium_of_Domitian_(48492833421).jpg?width=800",
+        "image_credit": "Underground ruins of the Stadium of Domitian, Piazza Navona · Wikimedia Commons",
+        "image_alt": "Excavated substructure of the Stadium of Domitian beneath Piazza Navona"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2681,
+          40.8518
+        ]
+      },
+      "properties": {
+        "id": "sport_festival_sebasta_naples",
+        "name": "Naples",
+        "category": "festival_site",
+        "circuit": "other_festival",
+        "festival_name": "Sebasta",
+        "one_line": "Naples launched the Sebasta in 2 CE to honor Augustus, styling it an isolympic games equal in prestige to Olympia, and Augustus attended in person in 14 CE not long before his death. Held every four years, the Sebasta paired athletic and musical contests and grew into a rival of Greece's famous games. Naples remained the only western city honored with a festival modeled on the Olympics. Its underground Roman theater still preserves the space where the musical contests once rang out.",
+        "province": "Italia",
+        "modern_location": "Naples, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://archive.archaeology.org/online/features/isolympics/",
+          "https://www.uib.no/en/nia/178115/framing-sebasta-ivo-56-and-structure-isolympic-games-neapolis"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Napoli_sotterranea_21_-_teatro.jpg?width=800",
+        "image_credit": "Underground Roman theater of Naples · Wikimedia Commons",
+        "image_alt": "Remains of the underground Roman theater of Neapolis, site of the Sebasta's musical contests"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.8926
+        ]
+      },
+      "properties": {
+        "id": "sport_guild_curia_athletarum_rome",
+        "name": "Curia Athletarum",
+        "category": "athletic_guild",
+        "one_line": "The Xystic Synod, the pan-Mediterranean guild representing professional athletes from Gaul to Syria, eventually built its headquarters, the Curia Athletarum, right beside the Baths of Trajan on Rome's Oppian Hill. Emperor Antoninus Pius granted the guild this clubhouse in 143 CE, complete with a board member titled Director of the Imperial Baths. In 117 CE that headquarters still lay 26 years in the future; Trajan's baths, opened in 109 CE, stood nearby without any athletes' guild attached yet.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/curiae.html",
+          "https://en.wikipedia.org/wiki/Baths_of_Trajan"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trajansthermen.jpg?width=800",
+        "image_credit": "Baths of Trajan, Rome · Wikimedia Commons",
+        "image_alt": "Ruins of the Baths of Trajan, near the future site of the Curia Athletarum"
+      }
+    }
+  ]
+}
