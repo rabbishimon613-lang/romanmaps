@@ -1,0 +1,361 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.43,
+          40.7975
+        ]
+      },
+      "properties": {
+        "id": "penal_pandateria_ventotene",
+        "category": "exile_island",
+        "name_latin": "Pandateria",
+        "name_english": "Ventotene",
+        "province": "Italia",
+        "modern_location": "Ventotene, Lazio, Italy",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Augustus banished his own daughter Julia here in 2 BCE for adultery, confining her in an imperial summer villa with no wine and no visitors admitted without his personal approval. Her exile lasted five years before conditions eased, but she never returned to Rome. Her mother Scribonia chose to share the island with her. Later Julio-Claudian women, including Agrippina the Elder, were banished here too, cementing the island's reputation as Rome's prison for imperial women.",
+        "sources": [
+          "Tacitus, Annals 1.53",
+          "Suetonius, Augustus 65",
+          "https://en.wikipedia.org/wiki/Villa_Giulia,_Ventotene"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa_Giulia,_Ventotene,_at_sunset.jpg?width=800",
+        "image_credit": "Ruins of Villa Giulia, Punta Eolo, Ventotene · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9667,
+          40.9
+        ]
+      },
+      "properties": {
+        "id": "penal_pontia_ponza",
+        "category": "exile_island",
+        "name_latin": "Pontia",
+        "name_english": "Ponza",
+        "province": "Italia",
+        "modern_location": "Ponza, Lazio, Italy",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Tiberius's adopted grandson Nero Julius Caesar was relegated here in 29 CE after the Senate turned on him and his mother Agrippina the Elder. He died on the island two years later, starved into suicide on the emperor's orders. Agrippina the Younger was later banished here by her brother Caligula, and Octavia, Nero's discarded first wife, passed through on her own path into exile. Ponza's twin island Ventotene shared the same grim function throughout the Julio-Claudian era.",
+        "sources": [
+          "Tacitus, Annals 4.71, 5.3",
+          "Suetonius, Tiberius 54",
+          "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry=pontia"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Insula_Ponza_-_Ponza_Island.jpg?width=800",
+        "image_credit": "Ponza island coastline · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0833,
+          42.5833
+        ]
+      },
+      "properties": {
+        "id": "penal_planasia_pianosa",
+        "category": "exile_island",
+        "name_latin": "Planasia",
+        "name_english": "Pianosa",
+        "province": "Italia",
+        "modern_location": "Pianosa, Tuscan Archipelago, Italy",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Augustus exiled his own grandson Agrippa Postumus to this flat, easily-guarded island in 7 CE, posting an armed garrison and ordering the Senate never to release him. Despite his imprisonment Agrippa lived in a genuine palace, with its own baths and a small theater built into the seaside rock. Seven years later, within days of Augustus's death, an assassin sent by Tiberius killed him on the island. The ruins of his villa and theater are still visible on Pianosa's coast today.",
+        "sources": [
+          "Tacitus, Annals 1.6",
+          "Suetonius, Augustus 65",
+          "https://en.wikipedia.org/wiki/Planasia"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cala_Giovanna_Pianosa(LI).JPG?width=800",
+        "image_credit": "Cala Giovanna coastline, Pianosa · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.5083,
+          42.1206
+        ]
+      },
+      "properties": {
+        "id": "penal_trimerus_tremiti",
+        "category": "exile_island",
+        "name_latin": "Trimerus",
+        "name_english": "Tremiti Islands",
+        "province": "Italia",
+        "modern_location": "San Nicola, Tremiti Islands, Italy",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Augustus banished his granddaughter Julia the Younger to this remote Adriatic island in 8 CE for adultery with a senator, and had the newborn child of that affair exposed on a mountainside. She endured twenty years of isolation there, kept alive on secret support from her step-grandmother Livia. When Livia died a year before Julia herself, Tiberius cut off her food supply and let her starve. The island's Latin name, Trimerus, may derive from Julia's own exile there.",
+        "sources": [
+          "Tacitus, Annals 4.71",
+          "Suetonius, Augustus 65",
+          "https://en.wikipedia.org/wiki/Julia_the_Younger"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/San_Nicola_Tremiti.jpg?width=800",
+        "image_credit": "San Nicola island, Tremiti archipelago · Wikimedia Commons (CC BY-SA 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.2176,
+          36.4341
+        ]
+      },
+      "properties": {
+        "id": "penal_rhodes",
+        "category": "exile_island",
+        "name_latin": "Rhodus",
+        "name_english": "Rhodes",
+        "province": "Asia",
+        "modern_location": "Rhodes, Greece",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This was not a punitive exile: Tiberius withdrew here voluntarily in 6 BCE, walking away from a major military command at the height of his power. He lived plainly for eight years, attending philosophy lectures and strolling the gymnasium without an escort, unable to return to Rome without Augustus's consent. That decade of self-imposed isolation nearly cost him the succession before Augustus finally recalled him and named him heir in 2 CE.",
+        "sources": [
+          "Tacitus, Annals 1.4",
+          "Suetonius, Tiberius 10-13",
+          "https://www.jstor.org/stable/1086784"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rhodes_old_town_Greece_5.jpg?width=800",
+        "image_credit": "Old town of Rhodes · Wikimedia Commons (CC BY-SA 3.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.5333,
+          37.5167
+        ]
+      },
+      "properties": {
+        "id": "penal_gyaros",
+        "category": "exile_island",
+        "name_latin": "Gyaros",
+        "name_english": "Gyaros",
+        "province": "Achaea",
+        "modern_location": "Gyaros, Cyclades, Greece",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This arid, 23-square-kilometer rock in the Cyclades became proverbial in Rome for the bleakest exile imaginable. Tacitus records Tiberius himself refusing to send two separate condemned men there, once calling it harsh and devoid of human culture and once noting it lacked enough water to keep a prisoner alive. Juvenal used Gyaros in his Satires as shorthand for the worst fate a criminal could face. Even legend piled on: ancient writers claimed its rats ate iron.",
+        "sources": [
+          "Tacitus, Annals 3.68-69, 4.30",
+          "Juvenal, Satires 1.73, 10.170",
+          "https://en.wikipedia.org/wiki/Gyaros"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gyaros_Luftbild_01.jpg?width=800",
+        "image_credit": "Aerial view of Gyaros island · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.5,
+          37.1467
+        ]
+      },
+      "properties": {
+        "id": "penal_seriphos",
+        "category": "exile_island",
+        "name_latin": "Seriphus",
+        "name_english": "Serifos",
+        "province": "Achaea",
+        "modern_location": "Serifos, Cyclades, Greece",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Rome flattened Seriphos in 88 BCE during the chaos of the Mithridatic Wars, and the small Cycladic island never recovered its former standing. In the imperial period Tacitus lists it among the bare Aegean islands to which Tiberius relegated disgraced Romans, part of a network alongside Gyaros, Kythnos, and Amorgos. Ancient myth already marked the island as a place of punishment, since Perseus was said to have turned its inhabitants to stone there.",
+        "sources": [
+          "Tacitus, Annals (Cyclades exile network)",
+          "https://topostext.org/place/372245PSer"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_port_of_Serifos_island,_Greece_-_panoramio.jpg?width=800",
+        "image_credit": "Port of Serifos island · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.9,
+          36.8333
+        ]
+      },
+      "properties": {
+        "id": "penal_amorgos",
+        "category": "exile_island",
+        "name_latin": "Amorgos",
+        "name_english": "Amorgos",
+        "province": "Achaea",
+        "modern_location": "Amorgos, Cyclades, Greece",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "In 24 CE the Senate proposed confining the disgraced informer Vibius Serenus on Gyaros, the harshest of the exile islands, but Tacitus records that Tiberius intervened and sent him to Amorgos instead on grounds of humanity. That single act of imperial leniency made Amorgos the relatively survivable choice within Rome's Cycladic prison network. The island fell under Roman control after the second century BCE and never regained the independence of its classical city-states.",
+        "sources": [
+          "Tacitus, Annals 4.13",
+          "https://en.wikipedia.org/wiki/Amorgos"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amorgos-1.jpg?width=800",
+        "image_credit": "Katapola and Moundoulia hill, Amorgos · Wikimedia Commons (CC BY-SA 3.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.4308,
+          37.4053
+        ]
+      },
+      "properties": {
+        "id": "penal_kythnos",
+        "category": "exile_island",
+        "name_latin": "Cythnus",
+        "name_english": "Kythnos",
+        "province": "Achaea",
+        "modern_location": "Kythnos, Cyclades, Greece",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "In 22 CE the Senate voted to relegate the corrupt former proconsul Gaius Silanus to Gyaros, but Tiberius stepped in and softened the sentence to this milder Cycladic island instead, out of respect for Silanus's family and his Vestal sister. Tacitus preserved the exchange in detail, making Kythnos one of the best-documented stops in Rome's Aegean exile network. Its bare, hilly terrain nonetheless kept it firmly on the list of places senators dreaded to be sent.",
+        "sources": [
+          "Tacitus, Annals 3.68-69",
+          "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Annals/3D*.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kythnos04.JPG?width=800",
+        "image_credit": "Kythnos island landscape · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5,
+          39.433
+        ]
+      },
+      "properties": {
+        "id": "penal_sardinia_metalla",
+        "category": "penal_mine",
+        "name_latin": "Metalla",
+        "name_english": "Fluminimaggiore",
+        "province": "Sardinia",
+        "modern_location": "Fluminimaggiore, Sardinia, Italy",
+        "built": -238,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Rome worked Sardinia's silver and lead deposits through the mining district of Metalla, using condemned criminals and slaves under a dedicated procurator metallorum. In 19 CE Tiberius shipped 4,000 men here into Sardinia's harsh interior, a sentence ancient writers treated as barely distinguishable from a death sentence. At the probable mine site near Grugua, archaeologists found a tunnel called su presoni still fitted with iron rings for shackling the condemned to the rock they cut.",
+        "sources": [
+          "Tacitus, Annals 2.85",
+          "Josephus, Antiquities of the Jews 18.3.5",
+          "https://en.wikipedia.org/wiki/Metalla"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_quarry_near_the_Temple_of_Antas,_Sardinia_(15918497403).jpg?width=800",
+        "image_credit": "Roman quarry near the Temple of Antas, Sardinia · Wikimedia Commons (CC BY 2.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.2763,
+          37.0762
+        ]
+      },
+      "properties": {
+        "id": "penal_latomia_paradiso_syracuse",
+        "category": "penal_quarry",
+        "name_latin": "Latomiae Syracusanae",
+        "name_english": "Ear of Dionysius",
+        "province": "Sicilia",
+        "modern_location": "Syracuse, Sicily, Italy",
+        "built": -480,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This vast limestone quarry above Syracuse became a byword for imprisonment centuries before Rome arrived, holding 7,000 captured Athenian soldiers after the failed siege of 413 BCE. Rome kept the pit in the same grim use: Cicero, prosecuting the governor Verres in 70 BCE, described it as a state prison so secure that convicts were shipped there from towns across Sicily, naming a Roman citizen Verres illegally threw into its depths. The cave known today as the Ear of Dionysius sits at its heart.",
+        "sources": [
+          "Cicero, In Verrem 2.5.68",
+          "https://en.wikipedia.org/wiki/Ear_of_Dionysius"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Orecchio_di_Dionisio_(Siracusa).jpg?width=800",
+        "image_credit": "Ear of Dionysius, Latomia del Paradiso, Syracuse · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4844,
+          41.8931
+        ]
+      },
+      "properties": {
+        "id": "penal_tullianum_rome",
+        "category": "prison",
+        "name_latin": "Tullianum",
+        "name_english": "Mamertine Prison",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "built": -640,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Carved into the Capitoline slope above the Forum, this cramped underground cell was Rome's place for executing defeated enemies rather than holding ordinary prisoners. The captured Numidian king Jugurtha was thrown in after Marius's triumph in 104 BCE and starved to death within six days. Vercingetorix was held here for years before his ritual strangling, and the Catilinarian conspirators were executed inside its walls. A drain in the floor carried the bodies straight into the Cloaca Maxima.",
+        "sources": [
+          "Sallust, Bellum Catilinae 55",
+          "Plutarch, Marius 12",
+          "https://en.wikipedia.org/wiki/Mamertine_Prison"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carcere_Mamertino_Rome.JPG?width=800",
+        "image_credit": "Interior of the Mamertine Prison (Tullianum), Rome · Wikimedia Commons"
+      }
+    }
+  ]
+}

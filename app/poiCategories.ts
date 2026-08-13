@@ -39,7 +39,7 @@ export const CATEGORY_GROUPS: CategoryGroup[] = [
   { id: "maritime",        label: "Ports & harbors",             short: "Ports",        color: "#2a7fb5", categories: ["port","lighthouse","canal","harbor"], glyph: G_PORT },
   { id: "infrastructure",  label: "Water infrastructure",        short: "Water",        color: "#3a9a6a", categories: ["aqueduct","dam","watermill","cistern"], glyph: G_AQUEDUCT },
   { id: "military",        label: "Forts & fortifications",      short: "Forts",        color: "#4a5057", categories: ["fort","mansio","wall","barracks","naval_base","signal_tower","auxiliary_fort"], glyph: G_FORT },
-  { id: "industry",        label: "Mines",                       short: "Mines",        color: "#6a5f4a", categories: ["mine"], glyph: G_MINE },
+  { id: "industry",        label: "Mines & industry",            short: "Industry",     color: "#6a5f4a", categories: ["mine","quarry","garum_factory","salina","kiln","estate"], glyph: G_MINE },
   { id: "learning",        label: "Libraries",                   short: "Libraries",    color: "#a08a2e", categories: ["library"], glyph: G_LIBRARY },
   { id: "monuments",       label: "Arches, columns & monuments", short: "Monuments",    color: "#c94b4b", categories: ["arch","column","monument","obelisk"], glyph: G_MONUMENT },
   { id: "tombs",           label: "Tombs & mausolea",            short: "Tombs",        color: "#5c5c5c", categories: ["mausoleum","necropolis","tomb"], glyph: G_TOMB },

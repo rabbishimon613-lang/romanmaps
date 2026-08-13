@@ -5354,6 +5354,1052 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trajan%27s%20Bridge%20Across%20the%20Danube%2C%20Modern%20Reconstruction.jpg?width=800",
         "image_credit": "Trajan's Bridge over the Danube, 1907 reconstruction drawing by E. Duperrex · Wikimedia Commons"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.7683,
+          42.4506
+        ]
+      },
+      "properties": {
+        "id": "poi_las_medulas",
+        "category": "mine",
+        "name_latin": "Aurifodinae Medullae",
+        "name_english": "Las Medulas Gold Mines",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "El Bierzo, Leon Province, Spain",
+        "built": -26,
+        "destroyed": 250,
+        "extant_117ce": true,
+        "notes": "Augustus's engineers tore this mountainside apart to reach its gold, channeling water for miles before releasing it in one collapsing torrent Pliny called ruina montium. Five tons of gold came out of these red cliffs over two centuries of mining. In 117 CE the works were still running at full capacity, decades before exhaustion finally closed them.",
+        "sources": [
+          "Pliny the Elder, Natural History 33.66-78",
+          "https://whc.unesco.org/en/list/803/",
+          "https://www.amusingplanet.com/2019/04/las-medulas-largest-roman-gold-mine.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Panor%C3%A1mica_de_Las_M%C3%A9dulas.jpg?width=800",
+        "image_credit": "Panoramic view of the Las Medulas mining landscape · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.1319,
+          46.2975
+        ]
+      },
+      "properties": {
+        "id": "poi_alburnus_maior",
+        "category": "mine",
+        "name_latin": "Alburnus Maior",
+        "name_english": "Rosia Montana Roman Gold Mines",
+        "province": "Dacia",
+        "modern_location": "Rosia Montana, Alba County, Romania",
+        "built": 106,
+        "destroyed": 271,
+        "extant_117ce": true,
+        "notes": "Roman engineers arrived within a year of Trajan's conquest of Dacia and drove galleries deep into these gold-bearing hills, importing Illyrian miners as an entire transplanted community. Waxed writing tablets left underground recorded contracts, wages, and burial-club dues from the settlement above the shafts. By 117 CE the mine was eleven years into what became a century and a half of continuous extraction.",
+        "sources": [
+          "https://www.eagle-network.eu/story/the-wax-tablets-of-alburnus-maior/",
+          "https://whc.unesco.org/en/list/1552/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rosia_Montana_Roman_Gold_Mines_2011_-_Galleries.jpg?width=800",
+        "image_credit": "Roman gallery at the Rosia Montana gold mines · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4936,
+          30.6277
+        ]
+      },
+      "properties": {
+        "id": "poi_wadi_faynan_phaeno",
+        "category": "mine",
+        "name_latin": "Phaeno",
+        "name_english": "Wadi Faynan Copper Mines",
+        "province": "Arabia Petraea",
+        "modern_location": "Wadi Faynan, Tafilah Governorate, Jordan",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Copper had been smelted in this valley south of the Dead Sea since the Chalcolithic, but Rome turned Phaeno into an industrial-scale operation, damming wadis to cool furnace slag by the ton. Watchtowers of dressed stone still guard the approaches to the mines. The site's grim later reputation as an exile camp for condemned Christians was still two centuries away in 117 CE.",
+        "sources": [
+          "https://www.world-archaeology.com/features/wadi-faynan-copper-mine/",
+          "https://en.wikipedia.org/wiki/Khirbat_Faynan"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Khirbat_Faynan_(ancient_Phaino),_ruins_dating_from_the_Roman_and_Byzantine_period,_Wadi_Faynan,_Jordan.jpg?width=800",
+        "image_credit": "Ruins at Khirbat Faynan, ancient Phaeno · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.9498,
+          52.0446
+        ]
+      },
+      "properties": {
+        "id": "poi_dolaucothi",
+        "category": "mine",
+        "name_latin": "Aurifodinae Dolaucothi",
+        "name_english": "Dolaucothi Gold Mines",
+        "province": "Britannia",
+        "modern_location": "Pumsaint, Carmarthenshire, Wales, United Kingdom",
+        "built": 75,
+        "destroyed": 220,
+        "extant_117ce": true,
+        "notes": "Roman engineers cut miles of leats across the Cothi valley to feed hydraulic mining at Britain's only known Roman gold mine, sluicing hillsides much as Las Medulas was worked in Spain. A fort called Luentinum stood guard nearby, its garrison overseeing convict labor in the shafts. Mining here had been underway for more than forty years by 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Dolaucothi_Gold_Mines",
+          "https://www.nationaltrust.org.uk/visit/wales/dolaucothi"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pithead_gear_at_Dolaucothi_Gold_Mine_-_geograph.org.uk_-_390551.jpg?width=800",
+        "image_credit": "Pithead gear at Dolaucothi Gold Mine · Wikimedia Commons (CC BY-SA 2.0, Geograph)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.1614,
+          37.8814
+        ]
+      },
+      "properties": {
+        "id": "poi_vipasca",
+        "category": "mine",
+        "name_latin": "Vipasca",
+        "name_english": "Aljustrel Copper Mines",
+        "province": "Lusitania",
+        "modern_location": "Aljustrel, Beja District, Portugal",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Copper cementation tanks at Algares turned scrap iron and mine water into usable metal on an industrial scale at this Lusitanian mining district. Bronze tablets found here preserved the actual mining code Rome used to regulate leases, wages, and bathhouse fees at state-run mines. The workings had been active for decades by 117 CE, well before Hadrian's administration later formalized the regulations found inscribed on those tablets.",
+        "sources": [
+          "Claude Domergue, La mine antique d'Aljustrel (Portugal) et les tables de bronze de Vipasca, 1983",
+          "https://www.mindat.org/article.php/1681/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Parque_Mineiro_de_Aljustrel_-_Portugal_%F0%9F%87%B5%F0%9F%87%B9_(54713754665).jpg?width=800",
+        "image_credit": "Mining landscape of the Parque Mineiro de Aljustrel · Wikimedia Commons (CC BY 2.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7503,
+          51.3028
+        ]
+      },
+      "properties": {
+        "id": "poi_charterhouse_mendip",
+        "category": "mine",
+        "name_latin": "Metalla Mendipensia",
+        "name_english": "Charterhouse Lead Mines",
+        "province": "Britannia",
+        "modern_location": "Charterhouse, Mendip Hills, Somerset, England, United Kingdom",
+        "built": 49,
+        "destroyed": 350,
+        "extant_117ce": true,
+        "notes": "Roman lead ingots stamped from this Somerset hillside reached the legionary fortress at Chester within six years of the invasion of Britain, making Charterhouse one of the empire's fastest industrial start-ups. Silver skimmed from the ore helped pay soldiers' wages. A small amphitheatre built for the mining workforce is the only one of its kind linked to a Roman mine anywhere in southwest Britain.",
+        "sources": [
+          "https://www.roman-britain.co.uk/places/charterhouse-mine/",
+          "https://en.wikipedia.org/wiki/Charterhouse_(Roman_town)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Charterhouse_lead_mines_panorama.jpg?width=800",
+        "image_credit": "Panorama of the Charterhouse lead mines, Mendip Hills · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1912,
+          53.2266
+        ]
+      },
+      "properties": {
+        "id": "poi_halkyn_mountain",
+        "category": "mine",
+        "name_latin": "Metalla Deceanglica",
+        "name_english": "Halkyn Mountain Lead Mines",
+        "province": "Britannia",
+        "modern_location": "Halkyn, Flintshire, Wales, United Kingdom",
+        "built": 74,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Lead pigs stamped DECEANGL after the local tribe left this Flintshire mountain and turned up at the legionary works in Chester, proof that Rome had the district under military control within two decades of conquest. A private smelter run by one C. Nipius Ascanius operated alongside the army's own works. Both lead and its telltale traces of silver kept the mountain in production through 117 CE.",
+        "sources": [
+          "https://heneb.org.uk/hcla/holywell-common-and-halkyn-mountain/",
+          "https://www.mindat.org/feature-2647628.html"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Halkyn_Mountain_-_geograph.org.uk_-_99060.jpg?width=800",
+        "image_credit": "View of Halkyn Mountain · Wikimedia Commons (CC BY-SA 2.0, Geograph)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.8298,
+          38.7761
+        ]
+      },
+      "properties": {
+        "id": "poi_sisapo_almaden",
+        "category": "mine",
+        "name_latin": "Sisapo",
+        "name_english": "Almaden Mercury Mines",
+        "province": "Hispania Baetica",
+        "modern_location": "Almaden, Ciudad Real Province, Spain",
+        "built": -200,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Pliny called this the empire's most valuable mine for the revenue it brought the treasury, and its cinnabar ore supplied nearly all the vermilion pigment used to redden Roman walls, cosmetics, and ceremonial togas. A leasing company called the societas sisaponensis ran the works on the state's behalf. The deposit here remains the largest mercury reserve ever found on Earth.",
+        "sources": [
+          "Pliny the Elder, Natural History 33.118",
+          "https://fundacionpalarq.com/en/what-is-cinnabar-the-pigment-of-roman-mural-painting/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Almad%C3%A9n_en_verde_y_gris.jpg?width=800",
+        "image_credit": "View of Almaden, site of the ancient mercury mines · Wikimedia Commons (CC BY 2.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.1206,
+          37.5998
+        ]
+      },
+      "properties": {
+        "id": "poi_tharsis",
+        "category": "mine",
+        "name_latin": "Metalla Tharsensia",
+        "name_english": "Tharsis Mines",
+        "province": "Hispania Baetica",
+        "modern_location": "Tharsis, Huelva Province, Spain",
+        "built": -27,
+        "destroyed": 250,
+        "extant_117ce": true,
+        "notes": "Augustan-era coins turned up alongside Roman wells and Archimedes-screw drainage systems at this pyrite-belt mine, the second-largest mining basin in Huelva province after Rio Tinto. Copper, iron, and silver came out of the same red-stained ground worked here for nineteen more centuries after Rome fell silent. Germanic invasions, not exhaustion, eventually shut the Roman works down.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tharsis-La_Zarza_mining_basin",
+          "https://www.andalucia.com/province/huelva/el-andevalo/tharsis/home"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Embalse_y_escombreras,_Tharsis_2.jpg?width=800",
+        "image_credit": "Reservoir and slag heaps at the Tharsis mines · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.6758,
+          37.5467
+        ]
+      },
+      "properties": {
+        "id": "poi_munigua",
+        "category": "mine",
+        "name_latin": "Municipium Flavium Muniguense",
+        "name_english": "Munigua Roman Mining Town",
+        "province": "Hispania Baetica",
+        "modern_location": "Villanueva del Rio y Minas, Seville Province, Spain",
+        "built": 70,
+        "destroyed": 200,
+        "extant_117ce": true,
+        "notes": "Iron and copper drawn from the hills around this Baetican hill town paid for a hillside sanctuary to Fortuna and Hercules so grand it remains the largest terraced temple complex outside Italy. Rome granted Munigua municipal status under Vespasian in recognition of its wealth. Its mines kept supplying the empire with metal until a wave of closures swept Hispania's mining districts in the late second century.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Munigua",
+          "https://spanishberry.com/2020/12/18/munigua-a-forgotten-roman-mining-town-in-the-heart-of-sierra-morena/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Munigua_(Municipium_Flavium_Muniguensium),_Baetica,_Spain_(28161572799).jpg?width=800",
+        "image_credit": "Ruins of the Roman mining town of Munigua, Baetica · Wikimedia Commons (CC BY 2.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.8457,
+          37.5993
+        ]
+      },
+      "properties": {
+        "id": "poi_sotiel_coronada",
+        "category": "mine",
+        "name_latin": "Metalla Sotielensia",
+        "name_english": "Sotiel Coronada Copper Mines",
+        "province": "Hispania Baetica",
+        "modern_location": "Calanas, Huelva Province, Spain",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A bronze hydraulic pump recovered from these Huelva copper workings, now displayed in Madrid's national archaeological museum, shows Roman engineers draining shafts here with the same screw technology used at Rio Tinto. Tartessian miners had worked this ground centuries before Rome arrived. Roman-era slag heaps called teleras still mark the district today.",
+        "sources": [
+          "https://www.academia.edu/26019007/Miner%C3%ADa_Antigua_en_Sotiel_Coronada",
+          "https://www.wikidata.org/wiki/Q97627307"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bomba_hidr%C3%A1ulica_romana_(M.A.N._Inv.1936-39-1)_01.jpg?width=800",
+        "image_credit": "Roman bronze hydraulic pump from Sotiel Coronada, Museo Arqueologico Nacional · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.4869,
+          26.8092
+        ]
+      },
+      "properties": {
+        "id": "poi_mons_claudianus",
+        "category": "quarry",
+        "name_latin": "Mons Claudianus",
+        "name_english": "Mons Claudianus Quarries",
+        "province": "Aegyptus",
+        "modern_location": "Eastern Desert, Red Sea Governorate, Egypt",
+        "built": 41,
+        "destroyed": 250,
+        "extant_117ce": true,
+        "notes": "Named for the emperor Claudius who opened it, this Eastern Desert quarry supplied the gray granodiorite columns that still stand in the Pantheon and in Hadrian's villa at Tivoli. A fortified settlement housed the quarry workforce ninety miles from the Nile, supplied along a road guarded by watchtowers. Ostraca left by the garrison recorded rations, wages, and water deliveries in exacting detail.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Mons_Claudianus",
+          "https://imperiumromanum.pl/en/curiosities/mons-claudianus-roman-quarry-in-egypt/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/MonsClaudianus02_83.jpg?width=800",
+        "image_credit": "View of the Mons Claudianus quarry site · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5761,
+          36.4919
+        ]
+      },
+      "properties": {
+        "id": "poi_chemtou_simitthus",
+        "category": "quarry",
+        "name_latin": "Simitthus",
+        "name_english": "Chemtou Marble Quarries",
+        "province": "Africa Proconsularis",
+        "modern_location": "Chemtou, Jendouba Governorate, Tunisia",
+        "built": -27,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Numidian kings quarried this yellow marble a century before Julius Caesar's ally Lepidus first shipped blocks of it to Rome for his own doorsills. Augustus later paved his forum with giallo antico from these same Tunisian hills. By 117 CE, Simitthus had held colonial status for nearly a century and its quarries remained under direct imperial administration.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Chemtou",
+          "https://medomed.org/featured_item/the-marble-quarries-of-chimtou-and-its-archaeological-landscape-tunisia/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chemtou_Marble_Quarry.JPG?width=800",
+        "image_credit": "Ancient marble quarry at Chemtou (Simitthus) · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1267,
+          44.0925
+        ]
+      },
+      "properties": {
+        "id": "poi_carrara_luni_quarries",
+        "category": "quarry",
+        "name_latin": "Marmor Lunense",
+        "name_english": "Carrara Marble Quarries",
+        "province": "Italia",
+        "modern_location": "Carrara, Tuscany, Italy",
+        "built": -50,
+        "destroyed": 180,
+        "extant_117ce": true,
+        "notes": "Ships loaded at the nearby port of Luna carried this white and blue-grey marble to build the Pantheon, Trajan's Column, and dozens of other monuments across the capital. Large-scale quarrying began under Augustus and never really stopped for the next two centuries. More marble has come out of these Apuan Alps than any other quarry district on Earth.",
+        "sources": [
+          "https://oxrep.classics.ox.ac.uk/docs/Stone_Quarries_Database.pdf",
+          "https://www.fum.it/en/blog-en/marble-stories/carrara-marble-quarries-origin-processing-architecture/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carrara_-_Cave_di_marmo.JPG?width=800",
+        "image_credit": "Marble quarry (cave di marmo) at Carrara · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.8814,
+          24.0784
+        ]
+      },
+      "properties": {
+        "id": "poi_aswan_quarries",
+        "category": "quarry",
+        "name_latin": "Syene",
+        "name_english": "Aswan Granite Quarries",
+        "province": "Aegyptus",
+        "modern_location": "Aswan, Egypt",
+        "built": -1500,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A single abandoned obelisk still lies fused to its Aswan bedrock, cracked before workers could free it, and would have stood 137 feet tall had it ever been finished. Roman quarrymen reused these same pink granite pits, leaving wedge-and-water cracking marks unlike the hammer-dressed grooves of their pharaonic predecessors. Granite from here traveled the length of the Nile to build across the empire.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Unfinished_obelisk",
+          "https://www.sciencedaily.com/releases/2007/10/071016131326.htm"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aswan_-_Unfinished_obelisk_-_2007.jpg?width=800",
+        "image_credit": "The Unfinished Obelisk in the Aswan granite quarries · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7377,
+          40.6034
+        ]
+      },
+      "properties": {
+        "id": "poi_thasos_aliki_quarry",
+        "category": "quarry",
+        "name_latin": "Thasos",
+        "name_english": "Thasos Marble Quarries",
+        "province": "Macedonia",
+        "modern_location": "Aliki, Thasos Island, Greece",
+        "built": -600,
+        "destroyed": 700,
+        "extant_117ce": true,
+        "notes": "Marble cut from this coastal peninsula on Thasos loaded directly onto ships without ever touching a cart, a logistical advantage that kept the quarry in business for twelve straight centuries. Extraction here began in the Archaic period and only intensified as Roman demand grew. Much of the ancient quarry now lies underwater, submerged along the shoreline it once supplied by sea.",
+        "sources": [
+          "https://www.atlasobscura.com/places/aliki-ancient-marble-quarry",
+          "https://artofmaking.ac.uk/explore/monuments/311/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marble_quarry_Thasos_island.jpg?width=800",
+        "image_credit": "Ancient marble quarry on Thasos island · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.7333,
+          25.9333
+        ]
+      },
+      "properties": {
+        "id": "poi_wadi_hammamat",
+        "category": "quarry",
+        "name_latin": "Via Coptos-Berenice (Hammamat quarries)",
+        "name_english": "Wadi Hammamat Quarries",
+        "province": "Aegyptus",
+        "modern_location": "Eastern Desert, Qena Governorate, Egypt",
+        "built": -3000,
+        "destroyed": 300,
+        "extant_117ce": true,
+        "notes": "Roman soldiers built watchtowers and a fortified well along this desert road to protect greywacke quarry convoys hauling bekhen-stone the ninety miles from the Nile to the Red Sea coast. Graffiti left by travelers here name emperors from Augustus to Antoninus Pius. Quarrying at Hammamat had already run for nearly three thousand years by the time Trajan died.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Wadi_Hammamat",
+          "https://egyptsites.wordpress.com/2010/09/14/wadi-hammamat/"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Afrique_-_Afrique_du_Nord-Est_-_Egypte_-_R%C3%A9gion_de_Haute-Egypte_-_Ouadi_Hamamat_-_Route_de_Al_Qusair_-_Prise_de_vue_1-2_(M%C3%A9diHAL_1740941).jpg?width=800",
+        "image_credit": "View of Wadi Hammamat in Egypt's Eastern Desert · Wikimedia Commons (CC BY, MediHAL)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7708,
+          36.0897
+        ]
+      },
+      "properties": {
+        "id": "poi_baelo_claudia_garum",
+        "category": "garum_factory",
+        "name_latin": "Baelo Claudia",
+        "name_english": "Baelo Claudia Fish Salting Factories",
+        "province": "Hispania Baetica",
+        "modern_location": "Bolonia, Tarifa, Cadiz Province, Spain",
+        "built": 1,
+        "destroyed": 500,
+        "extant_117ce": true,
+        "notes": "A dozen salting workshops packed the shoreline of this Baetican port town, their stone vats still holding traces of the tuna-belly garum that made Baelo Claudia's fortune. Archaeologists working the site in 2015 found tuna skin fragments preserved intact in the bottom of a vat, the first such find anywhere in the empire. The Strait of Gibraltar's seasonal tuna runs kept the factories running for centuries.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Baelo_Claudia",
+          "https://arqueotrip.com/erizos-aligotes-atunes-sardinas-garum-baelo-claudia-excepcionales-hallazgos-arqueologicos-la-campana-2016/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruinas_Baelo_Claudia-IMG_20230819_111418.jpg?width=800",
+        "image_credit": "Ruins of Baelo Claudia, including the salting factories · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.0986,
+          35.2008
+        ]
+      },
+      "properties": {
+        "id": "poi_lixus_garum",
+        "category": "garum_factory",
+        "name_latin": "Lixus",
+        "name_english": "Lixus Garum Factories",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Larache, Morocco",
+        "built": 25,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Salting tanks here could hold more than a million liters of fish at once, making Lixus the largest garum producer anywhere in the western Mediterranean. The factories sat inside the lower town gate, within sight of an amphitheatre and bathhouse the fish-salters' profits helped pay for. Production peaked under Claudius and was still running strong when Trajan died in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Lixus_(ancient_city)",
+          "https://www.britannica.com/place/Lixus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruins_at_Lixus_archaeological_site_19.jpg?width=800",
+        "image_credit": "Ruins at the Lixus archaeological site · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.8849,
+          38.4861
+        ]
+      },
+      "properties": {
+        "id": "poi_troia_cetobriga_garum",
+        "category": "garum_factory",
+        "name_latin": "Cetobriga",
+        "name_english": "Troia Fish Salting Factories",
+        "province": "Lusitania",
+        "modern_location": "Troia Peninsula, Setubal District, Portugal",
+        "built": 1,
+        "destroyed": 500,
+        "extant_117ce": true,
+        "notes": "Twenty-five separate workshops packed the Troia peninsula with 182 salting tanks between them, an industrial concentration UNESCO calls unmatched anywhere else in the Roman world. Tuna and sardines came out of the Sado estuary and went into amphorae as garum bound for the length of the empire. Production here ran continuously from the 1st century into the 6th.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_ruins_of_Tr%C3%B3ia",
+          "https://selodemar.com/en/garum-em-troia/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/CetariasTroia.JPG?width=800",
+        "image_credit": "Fish-salting tanks (cetariae) at the Roman ruins of Troia · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4184,
+          36.7213
+        ]
+      },
+      "properties": {
+        "id": "poi_malaca_garum",
+        "category": "garum_factory",
+        "name_latin": "Malaca",
+        "name_english": "Malaga Roman Fish Salting Factory",
+        "province": "Hispania Baetica",
+        "modern_location": "Malaga, Spain",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Strabo singled out this Baetican port for its salt, meat, and fish trade, and its very name comes from the Phoenician word for salt. Vats now sitting beneath the University of Malaga's rectorate building once cured anchovy and sardine into garum shipped across the Mediterranean. The industry had already defined the city's economy for centuries before Rome absorbed it.",
+        "sources": [
+          "Strabo, Geography 3.4.2",
+          "https://en.wikipedia.org/wiki/Roman_fish_salting_factory"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Fish_Salting_Pools_under_the_Rectorate_of_the_University_of_Malaga_02.jpg?width=800",
+        "image_credit": "Roman fish-salting pools beneath the University of Malaga rectorate · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.4467,
+          36.1306
+        ]
+      },
+      "properties": {
+        "id": "poi_algeciras_garum",
+        "category": "garum_factory",
+        "name_latin": "Caetaria (Portus Albus)",
+        "name_english": "Algeciras Fish Salting Factory",
+        "province": "Hispania Baetica",
+        "modern_location": "Algeciras, Cadiz Province, Spain",
+        "built": 1,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A fishing settlement called Caetaria on the Strait of Gibraltar took its very name from the salting vats, or cetariae, that anchored its economy. The surviving tanks, now preserved in a public park, cured fish caught in the same strait that fed Baelo Claudia's factories just up the coast. Spain declared the site a protected cultural asset in 2002.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_fish_salting_factory",
+          "https://www.spottinghistory.com/view/9584/roman-fish-salting-factory/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Piletas_Parque_Smith_Algeciras_(1).JPG?width=800",
+        "image_credit": "Salting vats (piletas) of the Roman fish factory, Parque Smith, Algeciras · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.1173,
+          37.0805
+        ]
+      },
+      "properties": {
+        "id": "poi_cerro_da_vila_garum",
+        "category": "garum_factory",
+        "name_latin": "Villa Cerri de Vila",
+        "name_english": "Cerro da Vila Roman Villa and Fish Factory",
+        "province": "Lusitania",
+        "modern_location": "Vilamoura, Algarve, Portugal",
+        "built": -50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A wealthy family from nearby Ossonoba built salting tanks and a garum warehouse into this Algarve coastal estate, curing tuna blood, roe, and liver into a delicacy prized across the empire. The estate had already stood for over a century by 117 CE and would keep expanding for two more, adding mausoleums for its owners. Purple-dye production ran alongside the fish trade on the same grounds.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_ruins_of_Cerro_da_Vila",
+          "https://portugalconfidential.com/roman-life-in-vilamoura-cerro-da-vila/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cetaria,_watercolour_painting_of_the_fish_processing_tanks,_Ru%C3%ADnas_romanas_do_Cerro_da_Vila._20_October_2016.jpg?width=800",
+        "image_credit": "Watercolour reconstruction of the fish-processing tanks at Cerro da Vila · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.69,
+          36.7333
+        ]
+      },
+      "properties": {
+        "id": "poi_sexi_almunecar_garum",
+        "category": "garum_factory",
+        "name_latin": "Sexi Firmum Iulium",
+        "name_english": "Almunecar Garum Factory",
+        "province": "Hispania Baetica",
+        "modern_location": "Almunecar, Granada Province, Spain",
+        "built": -49,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Garum from this Phoenician-founded port carried its own brand name, garum sociorum, and fetched a thousand sesterces for barely two liters according to Pliny, more than three years of a legionary's pay. Martial name-dropped the sauce in his poetry as a status gift for Saturnalia. Excavators uncovered the salting vats at El Majuelo park in 1970, nineteen centuries after they last cured a fish.",
+        "sources": [
+          "Pliny the Elder, Natural History 31.94",
+          "Martial, Epigrams Book 13",
+          "https://en.wikipedia.org/wiki/Sexi_(Phoenician_colony)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/F%C3%A1brica_de_salaz%C3%B3n_de_pescado_(Firmun_Lulium_Sexi)._Piletas.jpg?width=800",
+        "image_credit": "Fish-salting factory (Firmum Iulium Sexi) tanks at El Majuelo, Almunecar · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.32,
+          44.235
+        ]
+      },
+      "properties": {
+        "id": "poi_cervia_salinae",
+        "category": "salina",
+        "name_latin": "Salinae Ficoclenses",
+        "name_english": "Cervia Salt Pans",
+        "province": "Italia",
+        "modern_location": "Cervia, Emilia-Romagna, Italy",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Salt pans on this Adriatic lagoon gave the town its very name, changed from Ficocle to Cervia after the acervi, or great heaps, of salt piled up in its evaporation ponds. Pliny catalogued Adriatic salinae like this one among the empire's standard methods of harvesting sea salt. Archaeologists date the excavated Roman-era saltern here to the second half of the 1st century CE.",
+        "sources": [
+          "Pliny the Elder, Natural History 31.81-87",
+          "https://en.wikipedia.org/wiki/Cervia"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Saline_di_cervia.jpg?width=800",
+        "image_credit": "Cervia salt pans, Emilia-Romagna · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.7173,
+          42.2382
+        ]
+      },
+      "properties": {
+        "id": "poi_o_areal_salinae_vigo",
+        "category": "salina",
+        "name_latin": "Salinae",
+        "name_english": "Vigo Roman Salt Works",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Vigo, Galicia, Spain",
+        "built": 1,
+        "destroyed": 250,
+        "extant_117ce": true,
+        "notes": "Stone-lined evaporation tanks stretching over half a mile of the ancient Vigo coastline made this the most sophisticated salt-works excavated anywhere in Roman Galicia. Southern Galicia holds a denser concentration of confirmed Roman salinae than any other stretch of the empire's Atlantic coast. Production here ran through the first three centuries CE before the marsh reclaimed the site.",
+        "sources": [
+          "https://journalofromanarchaeology.com/wp-content/uploads/2020/03/JRA30_14_BraisCurras.pdf",
+          "https://es.wikipedia.org/wiki/Centro_Arqueol%C3%B3gico_de_Salinae"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Salinas_do_Areal_-_Vigo.jpg?width=800",
+        "image_credit": "Excavated Roman salinae at O Areal, Vigo · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3931,
+          38.8608
+        ]
+      },
+      "properties": {
+        "id": "poi_ibiza_ses_salines",
+        "category": "salina",
+        "name_latin": "Salinae Ebusitanae",
+        "name_english": "Ibiza Salt Flats",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Ses Salines, Ibiza, Balearic Islands, Spain",
+        "built": -600,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Phoenician settlers first worked these salt flats on Ibiza's southern tip, and Rome kept the evaporation ponds running after making Ebusus a municipality under Vespasian in 70 CE. Ships from across the Mediterranean once queued to load salt harvested from these same pans, a trade that outlasted the empire itself by well over a thousand years. Flamingos now nest where Roman salt-rakers once worked.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ibiza",
+          "https://ibiza.travel/en/2020/09/a-trip-to-ibizas-salt-pans/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ses_Salines_d'Eivissa_(1).JPG?width=800",
+        "image_credit": "Ses Salines salt flats, Ibiza · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.8575,
+          46.3871
+        ]
+      },
+      "properties": {
+        "id": "poi_ocna_mures_salinae",
+        "category": "salina",
+        "name_latin": "Salinae",
+        "name_english": "Ocna Mures Salt Mines",
+        "province": "Dacia",
+        "modern_location": "Ocna Mures, Alba County, Romania",
+        "built": 106,
+        "destroyed": 271,
+        "extant_117ce": true,
+        "notes": "Brick stamps bearing the name of Legio XIII Gemina turned up at this Dacian salt works, proof the Roman army itself ran production here to keep its garrisons supplied. Rome founded the site as Salinae within a decade of conquering Dacia in 106 CE, exploiting a salt dome nearly half a mile across. Wooden tools pulled from the old workings survive today in Alba Iulia's museum.",
+        "sources": [
+          "http://www.jaha.org.ro/index.php/JAHA/article/view/347",
+          "https://en.wikipedia.org/wiki/Ocna_Mure%C8%99_mine"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alba_Iulia_National_Museum_of_the_Union_2011_-_Roman_Wooden_Tools_Used_for_Salt_Mining,_Ocna_Mures.JPG?width=800",
+        "image_credit": "Roman wooden tools used for salt mining at Ocna Mures, National Museum of the Union, Alba Iulia · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.0908,
+          44.0908
+        ]
+      },
+      "properties": {
+        "id": "poi_la_graufesenque",
+        "category": "kiln",
+        "name_latin": "Condatomagus",
+        "name_english": "La Graufesenque Pottery Workshops",
+        "province": "Gallia Aquitania",
+        "modern_location": "Millau, Aveyron, France",
+        "built": -20,
+        "destroyed": 200,
+        "extant_117ce": true,
+        "notes": "A single kiln at this Gallic pottery town could fire forty thousand vessels at once, making Condatomagus the largest ceramics factory the Roman world ever built. Terra sigillata stamped here has turned up as far away as Britain and the Danube frontier. By 117 CE the workshops had passed their peak, with the rival center at Lezoux drawing away trade, but production continued for decades more.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/La_Graufesenque",
+          "https://www.thearchaeologist.org/blog/roman-pottery-the-mass-production-of-terra-sigillata"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LaGraufesenqueGrandFourEtThermes.jpg?width=800",
+        "image_credit": "The great kiln (Grand Four) and baths at La Graufesenque · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8797,
+          43.4633
+        ]
+      },
+      "properties": {
+        "id": "poi_arretium_pottery",
+        "category": "kiln",
+        "name_latin": "Arretium",
+        "name_english": "Arezzo Arretine Ware Workshops",
+        "province": "Italia",
+        "modern_location": "Arezzo, Tuscany, Italy",
+        "built": -30,
+        "destroyed": 70,
+        "extant_117ce": false,
+        "notes": "Fine red-gloss Arretine ware first made this Etruscan hill town famous across the Roman world, its potters' stamped molds still filling the local Maecenas museum. Emigrant potters had already carried the technique to Lyon and Pisa under Augustus, and by the Flavian dynasty the industry that made Arretium's name had largely moved on. In 117 CE the city's great pottery boom was history, not headline news.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Arretine_ware",
+          "https://www.roamintheempire.com/index.php/2017/01/12/arretium/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arretine_ware_poin%C3%A7on.JPG?width=800",
+        "image_credit": "Arretine ware potter's stamp (poincon) · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.3833,
+          45.83
+        ]
+      },
+      "properties": {
+        "id": "poi_lezoux_pottery",
+        "category": "kiln",
+        "name_latin": "Lezoux",
+        "name_english": "Lezoux Pottery Workshops",
+        "province": "Gallia Aquitania",
+        "modern_location": "Lezoux, Puy-de-Dome, France",
+        "built": 1,
+        "destroyed": 250,
+        "extant_117ce": true,
+        "notes": "By the early 2nd century this Gallic town had overtaken La Graufesenque as the empire's leading source of fine red terra sigillata tableware, its sherds so distinctive they can date an archaeological layer to within a few decades. Pottery from Lezoux turned up as far as Roman Dacia, making up over half the fine ware at one excavated fort there. Production here was near its peak in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Lezoux",
+          "https://potsherd.net/atlas/ware/cgts"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lezoux_Plate_MDCL_986-04-0019.jpg?width=800",
+        "image_credit": "Lezoux plate, Musee departemental de la Ceramique · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.3333,
+          49.1167
+        ]
+      },
+      "properties": {
+        "id": "poi_rheinzabern_pottery",
+        "category": "kiln",
+        "name_latin": "Tabernae",
+        "name_english": "Rheinzabern Pottery Workshops",
+        "province": "Germania Superior",
+        "modern_location": "Rheinzabern, Rhineland-Palatinate, Germany",
+        "built": 150,
+        "destroyed": 350,
+        "extant_117ce": false,
+        "notes": "Terra sigillata from this Rhineland town would eventually reach markets from Britain to Crimea, fired in kilns hot enough to reach a thousand degrees Celsius. The great pottery works that made Rheinzabern's name as Tabernae did not begin until roughly 150 CE, more than three decades after Trajan's death. In 117 CE this stretch of the Rhine frontier had not yet become an industrial center.",
+        "sources": [
+          "https://www.terra-sigillata-museum.de/",
+          "https://potsherd.net/atlas/Ware/EGTS"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Terra_Sigillata_Museum.jpg?width=800",
+        "image_credit": "The Terra-Sigillata-Museum building in Rheinzabern · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2911,
+          42.4494
+        ]
+      },
+      "properties": {
+        "id": "poi_settefinestre",
+        "category": "estate",
+        "name_latin": "Villa Sestiana (Settefinestre)",
+        "name_english": "Settefinestre Roman Villa",
+        "province": "Italia",
+        "modern_location": "Orbetello, Tuscany, Italy",
+        "built": -50,
+        "destroyed": 250,
+        "extant_117ce": true,
+        "notes": "Slave gangs on this Etruscan estate pressed wine and processed grain across workshops arranged around a terraced courtyard, following the model Roman agronomists Varro and Columella prescribed in their farming manuals almost to the letter. Built by the wealthy Sestii family in the mid-1st century BCE, it stood just three miles from the port town of Cosa that shipped its produce onward. Excavations here in the 1970s helped found modern Roman villa archaeology.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Settefinestre",
+          "https://www.treccani.it/enciclopedia/villa-settefinestre_(Enciclopedia-dell'-Arte-Antica)/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Settefinestre_lower_terrace_wall.png?width=800",
+        "image_credit": "Lower terrace wall of the Roman villa of Settefinestre · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4714,
+          40.7614
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_regina_boscoreale",
+        "category": "estate",
+        "name_latin": "Villa Regina",
+        "name_english": "Villa Regina at Boscoreale",
+        "province": "Italia",
+        "modern_location": "Boscoreale, Naples Province, Italy",
+        "built": -30,
+        "destroyed": 79,
+        "extant_117ce": false,
+        "notes": "Eighteen wine vats filled this Campanian farmhouse's cella vinaria, the working heart of a busy wine-producing estate outside Pompeii. Mount Vesuvius buried the whole property under volcanic ash and pumice on 24 August 79 CE, entombing its dolia and its wine press mid-operation. By 117 CE the villa had lain sealed underground for thirty-eight years, its productive life already over.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Villa_Boscoreale",
+          "https://pompeiisites.org/en/boscoreale-en/villa-regina-boscoreale/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa_Regina_-_Boscoreale_-_Campania_-_Italy_-_July_9th_2013_-_02.jpg?width=800",
+        "image_credit": "Ruins of Villa Regina at Boscoreale · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7657,
+          44.926
+        ]
+      },
+      "properties": {
+        "id": "poi_val_catena_brijuni",
+        "category": "estate",
+        "name_latin": "Villa in Insulis Pullariis",
+        "name_english": "Verige Bay Roman Villa, Brijuni",
+        "province": "Italia",
+        "modern_location": "Brijuni Islands, Istria County, Croatia",
+        "built": -50,
+        "destroyed": 500,
+        "extant_117ce": true,
+        "notes": "Colonnaded promenades stretched nearly a kilometer along this Istrian bay, linking a senatorial family's seaside villa to temples of Neptune, Venus, and the Capitoline Triad. The Laecanii family, who also ran a major amphora workshop nearby at Fazana, owned the estate before it passed into imperial hands under the Flavians. Its private beach still shows traces of the multicolored mosaics that once decorated it.",
+        "sources": [
+          "https://www.np-brijuni.hr/en/explore-brijuni/sites-worth-visiting/verige-bay",
+          "https://followinghadrian.com/2013/12/18/exploring-the-roman-villa-on-brijuni-island-croatia/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Parc_national_de_Brijuni.jpg?width=800",
+        "image_credit": "Brijuni National Park, site of the Verige Bay Roman villa · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5875,
+          42.1857
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_dei_volusii",
+        "category": "estate",
+        "name_latin": "Villa Volusiorum Saturninorum",
+        "name_english": "Villa of the Volusii Saturnini",
+        "province": "Italia",
+        "modern_location": "Fiano Romano, Rome Province, Italy",
+        "built": -50,
+        "destroyed": 350,
+        "extant_117ce": true,
+        "notes": "Highway construction crews accidentally uncovered this senatorial estate in 1962 while building a tollbooth outside Rome, revealing one of the most completely excavated great villas in Italy. The powerful Volusii Saturnini family ran productive farmland here alongside a lavish peristyle residence, next to the sanctuary town of Lucus Feroniae on the Via Tiberina. Its cryptoporticus and storage ranges still stand largely intact.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Villa_dei_Volusii",
+          "https://www.discoverplaces.travel/en/experiences/culture/archaeological-areas/villa-dei-volusii"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa_dei_Volusii_Saturnini_1.jpg?width=800",
+        "image_credit": "Ruins of the Villa dei Volusii Saturnini at Lucus Feroniae · Wikimedia Commons (CC BY-SA)"
+      }
     }
   ]
 }

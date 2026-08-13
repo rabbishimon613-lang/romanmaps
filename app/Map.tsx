@@ -1183,6 +1183,58 @@ export default function Map() {
           kick();
         }
 
+        // Phase 16: Exile + penal geography (public/data/penal.geojson) — every known Roman
+        // exile island (Julio-Claudian relegation network in the Aegean and Tyrrhenian), plus a
+        // penal mine, a penal quarry, and Rome's own Tullianum execution cell (axis 17).
+        const penal = await fetch("/data/penal.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && penal) {
+          map.addSource("penal", { type: "geojson", data: penal });
+          map.addLayer({
+            id: "penal-point",
+            type: "circle",
+            source: "penal",
+            paint: {
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+              "circle-color": "#4a4a52",
+              "circle-stroke-color": "#e2ddd8",
+              "circle-stroke-width": 1.6,
+            },
+          });
+
+          const penalPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          map.on("mouseenter", "penal-point", (e) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const catLabel: Record<string, string> = {
+              exile_island: "Exile island",
+              penal_mine: "Penal mine",
+              penal_quarry: "Penal quarry",
+              prison: "Prison",
+            };
+            const name = p.name_english || p.name_latin || "";
+            const noteLine = p.notes ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.notes)}</div>` : "";
+            penalPopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                   <div style="font-weight: 600;">${escapeHtml(name)}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(catLabel[p.category] || p.category || "")}</div>
+                   ${noteLine}
+                 </div>`,
+              )
+              .addTo(map);
+          });
+          map.on("mouseleave", "penal-point", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          kick();
+        }
+
         // Apply any persisted Layers-panel visibility (all groups default visible).
         applyAllLayers();
       });
