@@ -7,11 +7,13 @@ import { loadPlaces, searchPlaces, type Place } from "./places";
 import { LAYER_GROUPS, toggleLayer, useLayers } from "./useLayers";
 import { useIsMobile } from "./useIsMobile";
 import { usePoiPanel } from "./usePoiPanel";
+import { useKeyboardShortcuts } from "./useKeyboardShortcuts";
 
 export default function Chrome() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [units, setUnits] = useUnits();
   const menuRef = useRef<HTMLDivElement>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
 
   const [layersOpen, setLayersOpen] = useState(false);
   const layers = useLayers();
@@ -107,6 +109,11 @@ export default function Chrome() {
     }
   };
 
+  useKeyboardShortcuts({
+    focusSearch: () => searchInputRef.current?.focus(),
+    toggleLayersPanel: () => setLayersOpen((o) => !o),
+  });
+
   return (
     <>
       {/* Top-left: search card, exactly like Google Maps */}
@@ -138,7 +145,9 @@ export default function Chrome() {
             </svg>
           </IconBtn>
           <input
+            ref={searchInputRef}
             placeholder="Search Roman Maps"
+            title="Search Roman Maps (press / to focus)"
             value={query}
             onChange={(e) => onQueryChange(e.target.value)}
             onFocus={() => results.length > 0 && setResultsOpen(true)}
