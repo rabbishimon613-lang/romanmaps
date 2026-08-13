@@ -12,6 +12,7 @@ import LoadingBar from "./LoadingBar";
 import PlaceDetails from "./PlaceDetails";
 import Legend from "./Legend";
 import ContextMenu from "./ContextMenu";
+import Compass from "./Compass";
 
 export default function Page() {
   return (
@@ -24,6 +25,7 @@ export default function Page() {
       <CategoryChips />
       <Ruler />
       <Legend />
+      <Compass />
       <HomeButton />
       <ZoomControl />
       <PlaceDetails />
