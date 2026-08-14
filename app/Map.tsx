@@ -1650,6 +1650,66 @@ export default function Map() {
           kick();
         }
 
+        // Phase 24: Client kingdoms + neighbors just outside the empire (public/data/
+        // neighbors_117.geojson) — the political world beyond Rome's own borders (axis 5b).
+        const neighbors = await fetch("/data/neighbors_117.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && neighbors) {
+          map.addSource("neighbors", { type: "geojson", data: neighbors });
+          map.addLayer({
+            id: "neighbors-point",
+            type: "circle",
+            source: "neighbors",
+            paint: {
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 2, 4, 7, 7],
+              "circle-color": [
+                "match",
+                ["get", "relation_to_rome"],
+                "client", "#3a6ea5",
+                "ally", "#2e8f7a",
+                "trading_partner", "#b8862e",
+                "rival", "#a05a2c",
+                "enemy", "#8b2e2e",
+                "#6a6a6a",
+              ],
+              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-width": 1.6,
+            },
+          });
+
+          const neighborsPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          map.on("mouseenter", "neighbors-point", (e) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const relationLabel: Record<string, string> = {
+              client: "Client kingdom",
+              ally: "Ally",
+              trading_partner: "Trading partner",
+              rival: "Rival",
+              enemy: "Enemy",
+            };
+            const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.one_line)}</div>` : "";
+            neighborsPopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(relationLabel[p.relation_to_rome] || p.relation_to_rome || "")}</div>
+                   ${noteLine}
+                 </div>`,
+              )
+              .addTo(map);
+          });
+          map.on("mouseleave", "neighbors-point", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          kick();
+        }
+
         // Apply any persisted Layers-panel visibility (all groups default visible).
         applyAllLayers();
       });

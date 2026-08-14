@@ -1,0 +1,577 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.47,
+          45.3567
+        ]
+      },
+      "properties": {
+        "id": "neighbor_bosporan_kingdom",
+        "name": "Bosporan Kingdom",
+        "type": "kingdom",
+        "relation_to_rome": "client",
+        "one_line": "The Bosporan Kingdom ruled Crimea from its capital Panticapaeum as a Roman client state for nearly four centuries starting in 63 BCE. Its kings kept their own throne, army, and coinage while guarding the Black Sea grain routes that fed Roman cities. Roman auxiliary troops garrisoned the capital to secure this northern frontier post.",
+        "modern_location": "Kerch, Crimea",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Bosporan_Kingdom",
+          "https://en.wikipedia.org/wiki/Panticapaeum"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Mixoparthenos_(half-maiden),_a_hybrid_creature_from_the_Black_Sea,_limestone_sculpture,_1st-2nd_century_AD,_from_Panticapaeum,_Taurica_(Crimea)_(12852697335).jpg?width=800",
+        "image_credit": "1st-2nd century CE limestone sculpture from Panticapaeum, capital of the Bosporan Kingdom \u00b7 Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.7194,
+          41.8464
+        ]
+      },
+      "properties": {
+        "id": "neighbor_kingdom_of_iberia",
+        "name": "Kingdom of Iberia",
+        "type": "kingdom",
+        "relation_to_rome": "client",
+        "one_line": "The Kingdom of Iberia controlled the Caucasus highlands from its capital Mtskheta, ruling as a Roman client since Augustus's reign. King Mihdrat I called himself friend of the Caesars in a stone inscription still standing at Mtskheta. Iberian cavalry under Prince Amazasp fought and died alongside Trajan's armies in the Parthian war that closed in 117.",
+        "modern_location": "Mtskheta, Georgia",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kingdom_of_Iberia",
+          "https://en.wikipedia.org/wiki/Pharasmanes_II"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mtskheta,_Svetitskhoveli_Cathedral_(36092332115).jpg?width=800",
+        "image_credit": "Mtskheta, capital of the ancient Kingdom of Iberia (cathedral site postdates 117 CE) \u00b7 Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8408,
+          40.9755
+        ]
+      },
+      "properties": {
+        "id": "neighbor_kingdom_of_albania",
+        "name": "Kingdom of Albania",
+        "type": "kingdom",
+        "relation_to_rome": "ally",
+        "one_line": "Caucasian Albania held the plains east of Iberia around its capital Qabala, loosely aligned with Rome while keeping its own kings. The geographer Strabo counted twenty-six different languages spoken in its markets. Rome's alliance with the Albanians grew firmer through Hadrian's reign as Alan horsemen pressed down from the northern mountain passes.",
+        "modern_location": "Qabala, Azerbaijan",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Caucasian_Albania",
+          "https://en.wikipedia.org/wiki/Roman_influence_in_Caucasian_Albania"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.784,
+          37.1454
+        ]
+      },
+      "properties": {
+        "id": "neighbor_osroene",
+        "name": "Osroene",
+        "type": "kingdom",
+        "relation_to_rome": "client",
+        "one_line": "Osroene ruled the Mesopotamian borderland from Edessa under its Abgarid dynasty, balancing between Rome and Parthia for generations. King Abgar VII hosted Trajan in person before backing a revolt that got him deposed in 116. At Trajan's death in August 117 Edessa sat under direct Roman administration, its throne empty until Rome restored an Abgarid king a few years later.",
+        "modern_location": "Sanliurfa, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Osroene",
+          "https://en.wikipedia.org/wiki/Abgar_VII"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Urfa_Castle_01.jpg?width=800",
+        "image_credit": "Urfa Castle, built on the citadel of ancient Edessa, capital of Osroene \u00b7 Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.57639,
+          39.885
+        ]
+      },
+      "properties": {
+        "id": "neighbor_armenia_117",
+        "name": "Armenia",
+        "type": "kingdom",
+        "relation_to_rome": "client",
+        "one_line": "Trajan annexed Armenia as a Roman province in 114 after storming its capital Artaxata and killing the client king Parthamasiris. By the time Trajan died in August 117, Parthian forces under Vologases III had already retaken Armenia's southeastern reaches and Roman control was unraveling. Hadrian formally abandoned the province in 118, restoring Armenia to client-kingdom status under a Roman nominee.",
+        "modern_location": "Artashat, Armenia",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_Armenia",
+          "https://en.wikipedia.org/wiki/Trajan%27s_Parthian_campaign"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Khor_Virap_Monastery_and_Mount_Ararat,_Armenia.jpg?width=800",
+        "image_credit": "The Ararat plain near Artaxata, Armenia's ancient capital (monastery postdates 117 CE) \u00b7 Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.32,
+          34.55
+        ]
+      },
+      "properties": {
+        "id": "neighbor_palmyra_customs_autonomy",
+        "name": "Palmyra Customs Zone",
+        "type": "confederation",
+        "relation_to_rome": "trading_partner",
+        "one_line": "Palmyra ran its own customs house inside Roman Syria, taxing camel caravans crossing its walls under local municipal law rather than direct provincial control. A tariff inscribed in 137 formalized rules already decades old, listing fees down to jars of unguent and hired prostitutes. This financial autonomy let the caravan city grow rich as the toll-gate between Parthia and the Mediterranean.",
+        "modern_location": "Palmyra, Syria",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Palmyra_Tariff",
+          "https://en.wikipedia.org/wiki/Palmyra"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palmyra_Tariff_col._2.png?width=800",
+        "image_credit": "Column of the Palmyrene Tax Tariff inscription, Hermitage Museum \u00b7 Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.7,
+          52.3
+        ]
+      },
+      "properties": {
+        "id": "neighbor_cherusci",
+        "name": "Cherusci",
+        "type": "tribe",
+        "relation_to_rome": "rival",
+        "one_line": "The Cherusci held the forests and plains between the Weser and Elbe rivers, a free Germanic people Rome never conquered despite repeated campaigns. A century earlier their chieftain Arminius annihilated three Roman legions at the Teutoburg Forest, ending any dream of a province beyond the Rhine. By 117 the tribe's power had faded from its Arminius-era peak, though it remained outside direct Roman rule. This point marks a general territory, not a fixed capital.",
+        "modern_location": "Lower Saxony, Germany",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cherusci",
+          "https://en.wikipedia.org/wiki/Arminius"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hermannsdenkmal_in_Detmold.jpg?width=800",
+        "image_credit": "Hermannsdenkmal, a 19th-century monument to the Cherusci chieftain Arminius near the Teutoburg Forest \u00b7 Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5,
+          51.0
+        ]
+      },
+      "properties": {
+        "id": "neighbor_chatti",
+        "name": "Chatti",
+        "type": "tribe",
+        "relation_to_rome": "enemy",
+        "one_line": "The Chatti occupied the hill country of Hesse just beyond the Roman limes, among the most persistently hostile of the free Germanic peoples. Emperor Domitian fought a hard war against them in 83 CE and still never folded their land into the empire. Rome answered by building the Saalburg and a chain of forts along the Taunus ridge, watching the Chatti raid the frontier for generations after. This point marks a general tribal territory.",
+        "modern_location": "Hesse, Germany",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Chatti",
+          "https://en.wikipedia.org/wiki/Saalburg"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Saalburg_Roman_Fort,_Limes_Germanicus,_Germania_(Germany)_(34715753056).jpg?width=800",
+        "image_credit": "The Saalburg, a Roman fort on the Taunus limes built to watch the neighboring Chatti \u00b7 Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4,
+          50.0
+        ]
+      },
+      "properties": {
+        "id": "neighbor_marcomanni",
+        "name": "Marcomanni",
+        "type": "tribe",
+        "relation_to_rome": "client",
+        "one_line": "The Marcomanni ruled the forested hills of Bohemia as a Roman client on the middle Danube frontier, drawing annual silver subsidies under a system that held for roughly 150 years. Roman traders lived openly among them, and their kings answered to Roman oversight in most matters. That arrangement would not survive the century: the Marcomannic Wars shattered it within decades. This point marks a general tribal territory.",
+        "modern_location": "Bohemia, Czech Republic",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Marcomanni",
+          "https://www.britannica.com/topic/Marcomanni"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/National_park_%C5%A0umava_(Czech_Republic).jpg?width=800",
+        "image_credit": "Forested Bohemian landscape of the kind the Marcomanni settled (representative image) \u00b7 Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.6,
+          49.2
+        ]
+      },
+      "properties": {
+        "id": "neighbor_quadi",
+        "name": "Quadi",
+        "type": "tribe",
+        "relation_to_rome": "client",
+        "one_line": "The Quadi held the lowlands of Moravia beside their Marcomanni neighbors, a fellow Suebian people bound to Rome as a client tribe under the same silver-subsidy system. Roman garrisons and traders moved freely through their territory, and their kings needed Roman backing to rule securely. The peace held for generations before finally breaking apart in Marcus Aurelius's Marcomannic Wars decades later. This point marks a general tribal territory.",
+        "modern_location": "Moravia, Czech Republic",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Quadi",
+          "https://www.academia.edu/34931729/MARCOMANNI_AND_QUADI_IN_THE_SYSTEM_OF_CLIENT_STATES_OF_THE_ROMAN_EMPIRE"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Macocha_Gorge._Moravian_Karst.jpg?width=800",
+        "image_credit": "The Moravian landscape once held by the Quadi (representative image) \u00b7 Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.8,
+          46.9
+        ]
+      },
+      "properties": {
+        "id": "neighbor_iazyges",
+        "name": "Iazyges",
+        "type": "tribe",
+        "relation_to_rome": "client",
+        "one_line": "The Iazyges grazed their herds across the plain between the Danube and Tisza rivers, a Sarmatian people who had migrated there from the Pontic steppe generations earlier. Trajan's conquest of Dacia boxed them in against Rome's new province, and by his death in 117 they held client status on the empire's Pannonian doorstep. Roman forts studded the far bank of the Danube to watch over them. This point marks a general territory.",
+        "modern_location": "Great Hungarian Plain, Hungary",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Iazyges",
+          "https://www.livius.org/articles/people/sarmatians/"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Magyar_alf%C3%B6ldi_t%C3%A1j_g%C3%A9mesk%C3%BAttal.jpg?width=800",
+        "image_credit": "The Great Hungarian Plain grazed by the Sarmatian Iazyges (representative image) \u00b7 Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.0,
+          45.5
+        ]
+      },
+      "properties": {
+        "id": "neighbor_roxolani",
+        "name": "Roxolani",
+        "type": "tribe",
+        "relation_to_rome": "client",
+        "one_line": "The Roxolani ranged the plains north of the lower Danube beside Rome's new province of Dacia, a Sarmatian people paid an annual subsidy to keep the peace. When Hadrian cut that payment right around 117 their king Rasparaganus threatened war, forcing the new emperor to personally negotiate higher terms in Moesia. Hadrian later handed back the eastern Wallachian lowlands Trajan had conquered. This point marks a general territory.",
+        "modern_location": "Wallachia and Moldova region, Romania",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roxolani",
+          "https://followinghadrian.com/2018/04/18/early-spring-118-ad-hadrian-conducts-negotiations-with-the-king-of-the-roxolani-in-moesia-inferior-hadrian1900/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Baragan.jpg?width=800",
+        "image_credit": "The Wallachian plain the Roxolani ranged north of the Danube (representative image) \u00b7 Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.5,
+          45.0
+        ]
+      },
+      "properties": {
+        "id": "neighbor_alans",
+        "name": "Alans",
+        "type": "confederation",
+        "relation_to_rome": "rival",
+        "one_line": "The Alans dominated the Pontic-Caspian steppe far to the empire's northeast, ranging the Kuban valley and lower Volga rather than the Danube frontier Rome watched most closely. Roman writers had only recently begun naming this nomadic Sarmatian people, describing formidable horse archers pressing west out of Central Asia. In 117 they remained a distant power, not yet a direct neighbor of any Roman province. This point marks a broad, approximate territory.",
+        "modern_location": "Kuban steppe, southern Russia",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Alans",
+          "https://en.wikipedia.org/wiki/Aorsi"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kuban_River_in_Ubezhenskaya,_Russia.jpg?width=800",
+        "image_credit": "The Kuban steppe of the North Caucasus, core territory of the Alans in this era \u00b7 Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.5,
+          57.2
+        ]
+      },
+      "properties": {
+        "id": "neighbor_caledonii",
+        "name": "Caledonii",
+        "type": "confederation",
+        "relation_to_rome": "enemy",
+        "one_line": "The Caledonii led a confederacy of tribes across the Scottish Highlands, the one part of Britain Rome never subdued. A generation earlier their chieftain Calgacus rallied warriors against Agricola's legions at Mons Graupius in 83 CE, a battle Rome won without ever holding the ground. In 117 no wall yet marked the frontier; Hadrian's Wall was still years away when this snapshot was taken. This point marks a broad tribal territory.",
+        "modern_location": "Scottish Highlands, United Kingdom",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Caledonians",
+          "https://en.wikipedia.org/wiki/Battle_of_Mons_Graupius"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Scottish_Highlands.jpg?width=800",
+        "image_credit": "The Scottish Highlands, heartland of the Caledonian tribal confederacy \u00b7 Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.58,
+          33.0936
+        ]
+      },
+      "properties": {
+        "id": "neighbor_parthian_empire",
+        "name": "Parthian Empire",
+        "type": "empire",
+        "relation_to_rome": "rival",
+        "one_line": "Parthia ruled the lands east of the Euphrates from its capital Ctesiphon, Rome's oldest and most persistent imperial rival. In 117 the Arsacid throne itself was split between two contending kings, Osroes I in the west and Vologases III in the east, a rivalry Trajan's invasion had deepened rather than resolved. Roman legions had taken Ctesiphon the year before, but by Trajan's death Rome's grip on Mesopotamia was already slipping away.",
+        "modern_location": "Al-Mada'in, Iraq",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Parthian_Empire",
+          "https://en.wikipedia.org/wiki/Osroes_I"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Turkmenistan,_Old_Nisa_ruins.jpg?width=800",
+        "image_credit": "Old Nisa, an early Parthian royal site (representative image; capital in 117 was Ctesiphon) \u00b7 Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.5249,
+          34.0151
+        ]
+      },
+      "properties": {
+        "id": "neighbor_kushan_empire",
+        "name": "Kushan Empire",
+        "type": "empire",
+        "relation_to_rome": "trading_partner",
+        "one_line": "The Kushan Empire stretched from Bactria to the Indus Valley under King Vima Kadphises, who reigned from about 113 to 127 and struck the first Kushan gold coinage. His son and successor Kanishka, later famous for championing Buddhism across Central Asia, had not yet taken the throne in 117. Kushan gold was minted from bullion earned through Silk Road trade that indirectly reached Rome. Peshawar marks a representative point in the empire's core, not a fixed single capital.",
+        "modern_location": "Peshawar, Pakistan",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Vima_Kadphises",
+          "https://en.wikipedia.org/wiki/Kushan_Empire"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Coin_of_the_Kushan_king_Vima_Kadphises.jpg?width=800",
+        "image_credit": "Gold coin of Vima Kadphises, the Kushan emperor who ruled in 117 CE \u00b7 Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.454,
+          34.6197
+        ]
+      },
+      "properties": {
+        "id": "neighbor_han_dynasty_china",
+        "name": "Han Dynasty China",
+        "type": "empire",
+        "relation_to_rome": "trading_partner",
+        "one_line": "Han Dynasty China ruled tens of millions of people from its capital Luoyang, governed in 117 by Emperor An, who took the throne as a teenager after a palace succession crisis. Han silk reached Roman markets along trade routes stretching across Central Asia, though the two empires never established direct diplomatic contact. Two decades earlier the general Gan Ying had come within sight of the Persian Gulf before Parthian sailors talked him out of sailing further west.",
+        "modern_location": "Luoyang, China",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Emperor_An_of_Han",
+          "https://en.wikipedia.org/wiki/Gan_Ying"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eastern_Han_tomb,_Luoyang_3.jpg?width=800",
+        "image_credit": "An Eastern Han dynasty tomb at Luoyang, capital of Emperor An's China \u00b7 Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.72337,
+          14.12109
+        ]
+      },
+      "properties": {
+        "id": "neighbor_kingdom_of_aksum",
+        "name": "Kingdom of Aksum",
+        "type": "kingdom",
+        "relation_to_rome": "trading_partner",
+        "one_line": "Aksum was still an early, formative kingdom in the Ethiopian highlands in 117, decades away from the trade empire it would later become. Greek and Roman writers already noted a thriving Aksumite trade in the 1st century, moving ivory and incense out through the Red Sea port of Adulis. The monumental stelae and far-flung Arabian conquests that later defined Aksum still lay generations in the future.",
+        "modern_location": "Axum, Ethiopia",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kingdom_of_Aksum",
+          "https://www.britannica.com/place/Aksum-ancient-kingdom-Africa"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_North_Stelae_Park,_Axum,_Ethiopia_(2812686646).jpg?width=800",
+        "image_credit": "The Stelae Park at Axum; these monumental stelae mostly postdate 117 CE's early formative kingdom \u00b7 Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.75,
+          16.94
+        ]
+      },
+      "properties": {
+        "id": "neighbor_kingdom_of_meroe",
+        "name": "Kingdom of Meroe",
+        "type": "kingdom",
+        "relation_to_rome": "trading_partner",
+        "one_line": "The Kingdom of Kush ruled Nubia from its capital Meroe, a metropolis of iron furnaces and steep royal pyramids on the Nile south of Roman Egypt. A treaty struck with Augustus in 22 BCE had kept the peace along that border for well over a century by 117. Meroe's kings and ruling queens, the Kandakes, governed independently of Rome even as goods moved steadily up and down the Nile between the two.",
+        "modern_location": "Near Shendi, Sudan",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kingdom_of_Kush",
+          "https://en.wikipedia.org/wiki/Mero%C3%AB"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sudan_Meroe_Pyramids_2001.JPG?width=800",
+        "image_credit": "The Nubian pyramids of Meroe, capital of the Kingdom of Kush \u00b7 Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.064,
+          26.544
+        ]
+      },
+      "properties": {
+        "id": "neighbor_garamantes",
+        "name": "Garamantes",
+        "type": "kingdom",
+        "relation_to_rome": "trading_partner",
+        "one_line": "The Garamantes ruled the Fezzan oasis belt from their capital Garama, engineering underground channels called foggaras that pulled fossil groundwater to the surface across the Sahara. Roman amphorae of wine and olive oil reached deep into their territory, traded for gold, ivory, and slaves brought up from across the desert. Rome would not march on Garama itself for another eighty-five years, when Septimius Severus finally took the city in 202.",
+        "modern_location": "Germa, Libya",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Garamantes",
+          "https://en.wikipedia.org/wiki/Germa"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Garma_(Garama)_-_Ruinen_der_antiken_Stadt_Garma_02.jpg?width=800",
+        "image_credit": "Ruins of Garama, capital of the Garamantian kingdom in the Fezzan \u00b7 Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.3261,
+          15.4606
+        ]
+      },
+      "properties": {
+        "id": "neighbor_sabaean_kingdom",
+        "name": "Sabaean Kingdom",
+        "type": "kingdom",
+        "relation_to_rome": "trading_partner",
+        "one_line": "The Sabaean Kingdom ruled southern Arabia from its capital Marib, home to a towering dam that had irrigated the region's terraced farmland for half a millennium. By 117 Saba shared the incense-rich highlands with a resurgent rival, the kingdom of Himyar, both claiming the old royal title of Saba and dhu-Raydan. Roman ships trading down the Red Sea toward India passed within reach of Marib's caravans without ever conquering the kingdom itself.",
+        "modern_location": "Marib, Yemen",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sheba",
+          "https://en.wikipedia.org/wiki/Marib"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Re-examining_the_Identity_of_the_great_wall_of_Awwam_in_Marib,_Yemen.jpg?width=800",
+        "image_credit": "The great wall of the Awwam Temple near Marib, the Sabaean capital \u00b7 Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.4086,
+          14.2114
+        ]
+      },
+      "properties": {
+        "id": "neighbor_himyarite_kingdom",
+        "name": "Himyarite Kingdom",
+        "type": "kingdom",
+        "relation_to_rome": "trading_partner",
+        "one_line": "Himyar ruled the highlands of southwestern Arabia from its mountain capital Zafar, having split from its old union with Saba by the end of the 1st century CE to stand as its own kingdom. By 117 Himyarite and Sabaean kings were locked in a decades-long rivalry over the shared royal title of Saba and dhu-Raydan. Himyar's incense and myrrh moved north through Red Sea ports toward Roman Mediterranean markets.",
+        "modern_location": "Near Yarim, Yemen",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Himyar",
+          "https://en.wikipedia.org/wiki/Zafar,_Yemen"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Crowned_man,_Zafar.jpg?width=800",
+        "image_credit": "Carved figure of a crowned man from Zafar, capital of the Himyarite Kingdom \u00b7 Wikimedia Commons"
+      }
+    }
+  ]
+}
