@@ -10,6 +10,7 @@ import { toggleHiddenCategory, useHiddenCategories } from "./useHiddenCategories
 import { useIsMobile } from "./useIsMobile";
 import { usePoiPanel } from "./usePoiPanel";
 import { useKeyboardShortcuts } from "./useKeyboardShortcuts";
+import EpochModal from "./EpochModal";
 
 export default function Chrome() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,6 +28,8 @@ export default function Chrome() {
   // Hidden while the mobile Place details bottom sheet covers this corner of the screen —
   // same fix applied to ZoomControl/Ruler/Legend, the rest of the bottom-right FAB stack.
   const hideLayersForSheet = isMobile && poiOpen;
+
+  const [epochModalOpen, setEpochModalOpen] = useState(false);
 
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<Place[]>([]);
@@ -261,8 +264,10 @@ export default function Chrome() {
       )}
       </div>
 
-      {/* Bottom-left: epoch pill */}
-      <div
+      {/* Bottom-left: epoch pill — click opens the "Why 117 CE?" explainer */}
+      <button
+        title="Why 117 CE?"
+        onClick={() => setEpochModalOpen(true)}
         style={{
           position: "absolute",
           left: 12,
@@ -277,12 +282,14 @@ export default function Chrome() {
           alignItems: "center",
           gap: 8,
           zIndex: 5,
+          cursor: "pointer",
         }}
       >
         <span style={{ width: 8, height: 8, borderRadius: 999, background: "#b0431a" }} />
         <strong style={{ fontWeight: 600 }}>117 CE</strong>
         <span style={{ color: "#5f6368" }}>· The Empire at its peak</span>
-      </div>
+      </button>
+      {epochModalOpen && <EpochModal onClose={() => setEpochModalOpen(false)} />}
 
       {/* Bottom-right: layers button (above zoom controls) + panel */}
       {!hideLayersForSheet && (
