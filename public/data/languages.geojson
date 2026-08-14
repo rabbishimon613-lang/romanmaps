@@ -1,0 +1,216 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lang_latin",
+        "name": "Latin",
+        "family": "Italic",
+        "provinces": "Italy (core); colonial and military corridors empire-wide",
+        "one_line": "Latin was the mother tongue of Italy and the working language of Roman law, the army, and civic life, radiating out along every road, river, and coastal town the legions built. Veteran colonies planted it amid Celtic, Iberian, and Punic-speaking countryside across the western provinces, but beyond garrison towns other tongues held on well into the second century.",
+        "sources": ["J.N. Adams, Bilingualism and the Latin Language (Cambridge, 2003)", "LatinNow project, latinnow.eu"],
+        "confidence": "high"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[7.5,44.0],[8.5,45.8],[10.5,46.5],[12.3,46.6],[13.7,46.5],[13.9,45.6],[13.6,44.8],[14.5,43.0],[15.9,40.0],[17.2,39.0],[18.5,40.3],[18.0,39.3],[16.5,38.2],[15.6,37.5],[14.0,37.5],[12.4,37.9],[12.5,38.5],[9.5,39.2],[8.0,40.9],[7.0,43.8],[7.5,44.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lang_greek",
+        "name": "Greek (Koine)",
+        "family": "Hellenic",
+        "provinces": "Achaia, Macedonia, Asia, Bithynia et Pontus, Lycia et Pamphylia, Cilicia coast, Cyprus",
+        "one_line": "Koine Greek was the mother tongue of the southern Balkans, the Aegean islands, and the coastal cities of Asia Minor, and the practical language of trade and law across the wider Roman East. Governors in Antioch and Alexandria issued edicts in Greek even where villagers at home spoke Aramaic or Egyptian. Cities like Ephesus and Smyrna kept Greek as the tongue of market and theater centuries after Rome's conquest.",
+        "sources": ["Cambridge Encyclopedia of the World's Ancient Languages (Woodard, ed., 2004)"],
+        "confidence": "high"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [[[19.3,42.6],[21.0,42.9],[23.0,41.7],[24.5,41.7],[26.5,41.5],[27.6,40.3],[27.0,39.0],[27.3,38.0],[28.0,37.0],[29.7,36.3],[32.0,36.3],[34.0,36.2],[34.6,36.8],[33.0,37.5],[30.0,37.2],[28.5,38.7],[26.5,39.5],[25.0,40.0],[24.0,40.5],[23.0,40.0],[22.0,39.0],[21.0,38.2],[20.0,38.7],[19.5,39.5],[19.0,40.5],[19.3,42.6]]],
+          [[[32.3,35.7],[32.9,35.2],[33.7,35.0],[34.3,35.2],[34.0,35.7],[33.0,35.9],[32.3,35.7]]]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lang_punic",
+        "name": "Punic",
+        "family": "Afroasiatic (Semitic)",
+        "provinces": "Africa Proconsularis (coastal Tunisia, NE Algeria), Numidia and Tripolitania's coastal towns",
+        "one_line": "Punic remained the everyday language of Roman Africa's coastal towns, spoken alongside Latin rather than replaced by it. Augustine of Hippo, writing from Numidia, defended Punic names and praised books “wisely preserved... in the Punic tongue.” Latin-Punic bilingual inscriptions from Lepcis Magna and Zliten confirm it stayed in ordinary use in market towns well past 117 CE.",
+        "sources": ["Augustine of Hippo, Letters (on Punic in Numidia)", "J.N. Adams, Bilingualism and the Latin Language, on Latino-Punic epigraphy"],
+        "confidence": "high"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[6.0,35.0],[6.5,36.2],[7.5,36.9],[8.0,37.2],[10.2,37.3],[11.5,36.9],[12.5,35.8],[13.9,32.9],[14.2,32.6],[13.0,32.0],[11.5,32.3],[10.0,34.5],[8.5,33.7],[7.0,34.0],[6.0,35.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lang_berber",
+        "name": "Berber / Libyan",
+        "family": "Berber",
+        "provinces": "Interior Numidia, Mauretania Caesariensis, Mauretania Tingitana",
+        "one_line": "Berber — “Libyan” to Greek and Roman writers — was the everyday speech of the North African interior beyond the coastal cities Carthage and Rome had urbanized. Over a thousand Libyco-Berber tomb inscriptions survive in a distinct 23-sign script unrelated to Punic or Latin. Punic-Libyan bilinguals at Dougga show the two languages sharing one community, Berber ruling the countryside even where Punic held the town.",
+        "sources": ["World History Encyclopedia, ‘Libyan’ Inscriptions in Numidia and Mauretania", "Livius.org, ‘Libyan’ Inscriptions"],
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-6.5,33.5],[-4.0,34.5],[-1.5,34.5],[0.0,34.0],[2.0,34.5],[4.5,33.0],[6.0,35.0],[8.5,33.7],[10.0,34.5],[11.5,32.3],[13.0,32.0],[12.0,29.5],[9.0,29.0],[6.0,29.5],[3.0,29.0],[0.0,29.5],[-3.0,30.0],[-6.0,30.5],[-8.0,31.5],[-8.5,32.5],[-6.5,33.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lang_aramaic",
+        "name": "Aramaic & Syriac",
+        "family": "Afroasiatic (Semitic)",
+        "provinces": "Syria, Iudaea, Armenia Mesopotamia",
+        "one_line": "Aramaic was the mother tongue of most people in Syria, Judaea, and Mesopotamia, spoken in villages and markets even where Greek ran the courts. Jewish Palestinian Aramaic was Judaea's daily language, the same dialect continuum Jesus himself spoke a generation earlier. Around Edessa a distinct dialect was already becoming Syriac, while Palmyrene and Nabataean Aramaic carried the same tongue through the desert caravan cities.",
+        "sources": ["Wikipedia, Syriac language / Jewish Palestinian Aramaic", "e-GEDSH, Syriac Language"],
+        "confidence": "high"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[35.0,37.3],[38.5,37.3],[41.0,37.0],[43.5,35.5],[44.5,33.3],[43.0,31.0],[40.0,30.0],[37.0,30.0],[35.0,31.0],[34.3,31.5],[34.5,33.0],[35.5,34.5],[36.0,35.5],[35.0,37.3]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lang_egyptian",
+        "name": "Egyptian (Demotic)",
+        "family": "Afroasiatic (Egyptian)",
+        "provinces": "Aegyptus, outside Alexandria",
+        "one_line": "Demotic Egyptian remained the language of the Nile countryside long after Rome absorbed Egypt in 30 BCE, even as Greek ran administration and city life. Temple scribes still wrote Demotic religious and legal texts through the second century, and villagers who never learned Greek spoke Egyptian at home. Bilingual scribes' struggle to render Egyptian sounds in Greek script was already sketching out what became the Coptic alphabet.",
+        "sources": ["ARCE, Demotic: Opening New Windows into Egyptian History and Culture", "Harvard Art Museums, The Multilingual Character of Roman Egypt"],
+        "confidence": "high"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[29.8,31.6],[32.5,31.6],[32.9,30.0],[32.9,27.0],[33.2,24.5],[33.0,23.8],[32.4,24.0],[32.2,25.5],[31.5,27.5],[31.0,29.0],[30.3,30.5],[29.8,31.0],[29.8,31.6]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lang_gaulish",
+        "name": "Gaulish",
+        "family": "Celtic",
+        "provinces": "Rural Lugdunensis, Belgica, Aquitania, Narbonensis",
+        "one_line": "Gaulish stayed the spoken language of the Gallic countryside long after Latin took over public inscriptions, with over 760 surviving Gaulish texts attesting a vernacular that outlived its own written record. Latin belonged to the towns, forts, and veteran colonies; Gaulish belonged to the farms and villages around them. The two languages ran side by side across rural Gaul.",
+        "sources": ["LatinNow project, Gaulish. Language, writing, epigraphy (2018)", "Languages and Communities in the Late-Roman and Post-Imperial Western Provinces"],
+        "confidence": "high"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-1.5,49.5],[2.5,51.0],[6.0,50.5],[7.5,49.0],[7.0,47.0],[6.5,45.5],[5.0,44.0],[3.0,43.5],[1.0,43.3],[-0.5,43.5],[-1.0,44.5],[-1.5,46.0],[-2.0,47.5],[-1.5,49.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lang_brittonic",
+        "name": "Brittonic",
+        "family": "Celtic",
+        "provinces": "Rural Britannia, outside towns and forts",
+        "one_line": "In Britain, Latin ruled the towns and forts while Brittonic remained the everyday tongue of farming villages and hillfort communities across the countryside, especially in the western highlands. Roman Britain was barely four decades old south of the not-yet-built Wall, and most people outside the garrison towns had never needed a word of Latin at all.",
+        "sources": ["uTalk Blog, The Brittonic Celtic Languages: A Brief Introduction"],
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-5.5,50.0],[-5.0,51.5],[-3.0,53.5],[-3.5,55.0],[-5.0,56.5],[-4.0,57.5],[-2.0,57.0],[-1.5,55.5],[0.5,53.5],[1.5,52.0],[0.8,51.0],[-1.0,50.5],[-3.0,50.0],[-5.5,50.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lang_galatian",
+        "name": "Galatian",
+        "family": "Celtic",
+        "provinces": "Interior of Galatia et Cappadocia, around Ancyra, Pessinus and Tavium",
+        "one_line": "Descendants of Celtic migrants who crossed into Asia Minor around 278 BCE still spoke a recognizably Celtic language in the highlands around Ancyra, Pessinus, and Tavium. Centuries later Jerome would note the Galatians spoke almost the same tongue as the Treveri of Gaul — a Celtic-speaking island a thousand kilometers from Gaul itself, sitting inside a thoroughly Greek-speaking province.",
+        "sources": ["Jerome, Commentary on the Epistle to the Galatians", "romaneranames.uk, Was Galatian Really Celtic?"],
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[31.0,40.2],[33.8,40.3],[35.2,39.9],[34.8,38.9],[33.0,38.7],[31.5,39.0],[30.8,39.5],[31.0,40.2]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lang_iberian_celtiberian",
+        "name": "Iberian & Celtiberian",
+        "family": "Paleo-Hispanic",
+        "provinces": "Interior Tarraconensis",
+        "one_line": "Celtiberian, a Celtic language distinct from Gaulish, was spoken across the central Iberian highlands, while Iberian — an unrelated, still only partly deciphered tongue — held on in pockets of the eastern seaboard's interior. Both sat behind the thoroughly Romanized coastal cities and river valleys of Baetica and Tarraconensis, receding only slowly as Latin spread from the coast.",
+        "sources": ["Wikipedia, Celtiberian language"],
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-4.5,42.5],[-2.0,43.0],[0.5,42.5],[1.0,41.3],[0.0,39.5],[-1.0,38.0],[-2.5,37.5],[-4.0,38.0],[-5.0,39.5],[-5.5,41.0],[-4.5,42.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lang_aquitanian",
+        "name": "Aquitanian",
+        "family": "Vasconic (proto-Basque)",
+        "provinces": "Southwestern Aquitania (later Novempopulania)",
+        "one_line": "In the far southwest, in what would become Novempopulania, Aquitanian left no connected texts but survives in roughly 200 personal names and 60 divine names carved into Latin funerary stones. Those names match modern Basque vocabulary closely enough to make Aquitanian its accepted ancestor — the one pre-Roman Iberian-peninsula language that would go on to outlive the empire itself.",
+        "sources": ["Buber's Basque Page, The Aquitanians, Ancestors of the Basques", "Larsdatter.com, Basque Onomastics"],
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-1.5,43.8],[0.0,44.0],[0.5,43.3],[0.0,42.8],[-1.0,42.8],[-1.8,43.3],[-1.5,43.8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lang_illyrian",
+        "name": "Illyrian",
+        "family": "Illyrian (with transplanted Celtic pockets)",
+        "provinces": "Interior Dalmatia, interior Pannonia Superior/Inferior",
+        "one_line": "Illyrian-speaking communities kept their own language and gods across the mountainous interior of Dalmatia and Pannonia even as Rome urbanized the Adriatic coast and the Danube frontier around them. Known only from names and place names, the evidence still maps three dialect belts — Liburnian, Delmato-Pannonian, and true Illyrian. Around the Danube bend, transplanted Celtic tribes like the Boii and Eravisci added a further layer to the mix.",
+        "sources": ["Livius.org, Dalmatia / Illyrians", "Wikipedia, Eravisci"],
+        "confidence": "low"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[15.0,46.0],[18.0,46.5],[20.5,46.0],[21.0,45.0],[20.0,44.0],[18.5,43.0],[17.0,42.5],[15.5,43.5],[14.5,44.5],[15.0,46.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lang_thracian",
+        "name": "Thracian",
+        "family": "Thracian",
+        "provinces": "Interior Thracia, interior Moesia Superior/Inferior",
+        "one_line": "Thracian remained the spoken language of the rural Balkan interior even as Latin ran the Danube garrison towns and Greek held the Black Sea coast. Known only through names, glosses, and place names rather than connected texts, it held on longest in the Rhodope and Haemus mountain villages, behind a Latin- and Greek-speaking corridor of new Roman towns.",
+        "sources": ["Palaeolexicon, The Thracians and their language", "Bryn Mawr Classical Review, Early Roman Thrace"],
+        "confidence": "low"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[22.0,43.5],[24.5,44.0],[27.0,43.7],[27.5,42.5],[26.5,41.7],[24.5,41.7],[23.0,41.9],[21.7,42.3],[22.0,43.5]]]
+      }
+    }
+  ]
+}

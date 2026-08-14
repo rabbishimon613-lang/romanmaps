@@ -1710,6 +1710,144 @@ export default function Map() {
           kick();
         }
 
+        // Phase 25: Language belts (public/data/languages.geojson) — everyday spoken-language
+        // geography in 117 CE, distinct from the Latin/Greek administrative split (axis 5a).
+        // Soft translucent fills, deliberately drawn in this late phase so they layer on top of
+        // roads/provinces/POIs without occluding anything a user is more likely to click on.
+        const languages = await fetch("/data/languages.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && languages) {
+          map.addSource("languages", { type: "geojson", data: languages });
+          map.addLayer({
+            id: "languages-fill",
+            type: "fill",
+            source: "languages",
+            paint: {
+              "fill-color": [
+                "match",
+                ["get", "id"],
+                "lang_latin", "#b0431a",
+                "lang_greek", "#3a6ea5",
+                "lang_punic", "#8b2e6e",
+                "lang_berber", "#a08a2e",
+                "lang_aramaic", "#2e8f7a",
+                "lang_egyptian", "#c9a227",
+                "lang_gaulish", "#5c8c3a",
+                "lang_brittonic", "#3a9a6a",
+                "lang_galatian", "#6a5f4a",
+                "lang_iberian_celtiberian", "#a05a2c",
+                "lang_aquitanian", "#8b5a2c",
+                "lang_illyrian", "#7a4a8c",
+                "lang_thracian", "#4a5a8c",
+                "#6a6a6a",
+              ],
+              "fill-opacity": 0.16,
+            },
+          });
+          map.addLayer({
+            id: "languages-line",
+            type: "line",
+            source: "languages",
+            paint: {
+              "line-color": [
+                "match",
+                ["get", "id"],
+                "lang_latin", "#b0431a",
+                "lang_greek", "#3a6ea5",
+                "lang_punic", "#8b2e6e",
+                "lang_berber", "#a08a2e",
+                "lang_aramaic", "#2e8f7a",
+                "lang_egyptian", "#c9a227",
+                "lang_gaulish", "#5c8c3a",
+                "lang_brittonic", "#3a9a6a",
+                "lang_galatian", "#6a5f4a",
+                "lang_iberian_celtiberian", "#a05a2c",
+                "lang_aquitanian", "#8b5a2c",
+                "lang_illyrian", "#7a4a8c",
+                "lang_thracian", "#4a5a8c",
+                "#6a6a6a",
+              ],
+              "line-width": 1,
+              "line-dasharray": [3, 2],
+              "line-opacity": 0.5,
+            },
+          });
+
+          const languagesPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          map.on("mouseenter", "languages-fill", (e) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.one_line)}</div>` : "";
+            languagesPopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.family || "")}</div>
+                   ${noteLine}
+                 </div>`,
+              )
+              .addTo(map);
+          });
+          map.on("mouseleave", "languages-fill", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          kick();
+        }
+
+        // Phase 26: Etruscan substrate (public/data/substrate.geojson) — pre-Roman Etruscan
+        // cities, necropoleis, and sanctuaries still visible under Roman rule in 117 CE (axis 10b,
+        // the first "historical substrate" culture layer). Ghosted markers with a dashed outline
+        // per the brief's own styling note for substrate features, distinct from the solid-stroke
+        // circles every other axis layer uses.
+        const substrate = await fetch("/data/substrate.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && substrate) {
+          map.addSource("substrate", { type: "geojson", data: substrate });
+          map.addLayer({
+            id: "substrate-point",
+            type: "circle",
+            source: "substrate",
+            paint: {
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3, 8, 6],
+              "circle-color": "#7a6a52",
+              "circle-opacity": 0.55,
+              "circle-stroke-color": "#7a6a52",
+              "circle-stroke-width": 1.4,
+              "circle-stroke-opacity": 0.9,
+            },
+          });
+
+          const substratePopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          map.on("mouseenter", "substrate-point", (e) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const noteLine = p.notes ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.notes)}</div>` : "";
+            substratePopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name_english || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">Etruscan ${escapeHtml(p.type || "")}</div>
+                   ${noteLine}
+                 </div>`,
+              )
+              .addTo(map);
+          });
+          map.on("mouseleave", "substrate-point", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          kick();
+        }
+
         // Apply any persisted Layers-panel visibility (all groups default visible).
         applyAllLayers();
       });

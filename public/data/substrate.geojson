@@ -1,0 +1,621 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7551,
+          42.2506
+        ]
+      },
+      "properties": {
+        "id": "substrate_tarquinia",
+        "culture": "etruscan",
+        "name_latin": "Tarquinii",
+        "name_english": "Tarquinia",
+        "type": "city",
+        "province": "Etruria",
+        "modern_location": "Tarquinia, Lazio, Italy",
+        "extant_117ce": true,
+        "notes": "Tarquinii ranked among the twelve cities of the Etruscan League and gave Rome its last royal dynasty, the Tarquins. Its hilltop circuit walls and the sprawling Ara della Regina temple, once the largest in Etruria at 77 by 34 meters, still stood in ruin under Roman rule. Terracotta winged horses from that temple's pediment counted among Etruscan art's finest survivals. By 117 CE the city had long been a quiet Roman municipium living in the shadow of its own monuments.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tarquinia",
+          "https://tarquiniaturismo.com/the-sanctuary-of-the-ara-della-regina/?lang=en"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ara della Regina Tarquinia.jpg?width=800",
+        "image_credit": "Wikimedia Commons, photo of the Ara della Regina temple ruins at Tarquinia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3897,
+          42.0233
+        ]
+      },
+      "properties": {
+        "id": "substrate_veii",
+        "culture": "etruscan",
+        "name_latin": "Veii",
+        "name_english": "Veii",
+        "type": "city",
+        "province": "Etruria",
+        "modern_location": "Isola Farnese, near Formello, Lazio, Italy",
+        "extant_117ce": true,
+        "notes": "Veii was Rome's closest Etruscan rival, holding out through a ten-year siege before Marcus Furius Camillus finally razed it in 396 BCE. Its Portonaccio sanctuary once displayed the life-size terracotta Apollo of Veii, a masterwork attributed to the sculptor Vulca. By 117 CE the site carried Emperor Augustus's small colonial town, Municipium Augustum Veiens, built directly over the vanished Etruscan capital's foundations.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Veii",
+          "https://www.khanacademy.org/humanities/ap-art-history/ancient-mediterranean-ap/ap-ancient-etruria/a/temple-of-minerva-and-the-sculpture-of-apollo-veii"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roma Museo Etrusco statua Apollo.jpg?width=800",
+        "image_credit": "Wikimedia Commons, Apollo of Veii terracotta statue from the Portonaccio sanctuary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9944,
+          42.0097
+        ]
+      },
+      "properties": {
+        "id": "substrate_cerveteri",
+        "culture": "etruscan",
+        "name_latin": "Caere",
+        "name_english": "Cerveteri",
+        "type": "city",
+        "province": "Etruria",
+        "modern_location": "Cerveteri, Lazio, Italy",
+        "extant_117ce": true,
+        "notes": "Caere ranked as one of the wealthiest Etruscan cities, its aristocrats buried under stone tumuli so grand that Rome once entrusted it with safekeeping sacred relics during the Gallic sack of 390 BCE. The famous terracotta Sarcophagus of the Spouses, sculpted around 520 BCE, came from its cemeteries. Rome absorbed Caere as a voteless civitas after 273 BCE, and by 117 CE it survived as a quiet municipium overshadowed by its own necropolis.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Caere",
+          "https://en.wikipedia.org/wiki/Cerveteri"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarcophagus of the Spouses from Villa Giulia in Rome.jpg?width=800",
+        "image_credit": "Wikimedia Commons, Sarcophagus of the Spouses from Caere, Villa Giulia, Rome"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6297,
+          42.4181
+        ]
+      },
+      "properties": {
+        "id": "substrate_vulci",
+        "culture": "etruscan",
+        "name_latin": "Vulci",
+        "name_english": "Vulci",
+        "type": "city",
+        "province": "Etruria",
+        "modern_location": "Montalto di Castro, Lazio, Italy",
+        "extant_117ce": true,
+        "notes": "Vulci controlled a stretch of the Tyrrhenian coast and grew rich exporting bronzework across the Mediterranean before Rome crushed it in 280 BCE. The François Tomb, painted with scenes of Roman legend, was cut into its necropolis rock. A bridge still spans the Fiora gorge on foundations the Etruscans first laid, later nicknamed the Devil's Bridge for its high arches. By 117 CE the once-mighty city was scattered ruins around a working river crossing.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Vulci",
+          "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Tomb"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vulci Ruins.JPG?width=800",
+        "image_credit": "Wikimedia Commons, ruins at the Vulci archaeological park"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4886,
+          42.9611
+        ]
+      },
+      "properties": {
+        "id": "substrate_populonia",
+        "culture": "etruscan",
+        "name_latin": "Populonia",
+        "name_english": "Populonia",
+        "type": "city",
+        "province": "Etruria",
+        "modern_location": "Piombino, Tuscany, Italy",
+        "extant_117ce": true,
+        "notes": "Populonia was the only major Etruscan city built directly on the sea, its furnaces smelting Elban iron ore into a fortune that funded its acropolis and walls. Slag heaps from that industry still ringed the bay in Roman times. The city sided with Marius and paid for it with a Sullan sack around 80 BCE, leaving it a shrunken hill town by the time of Trajan. Its acropolis walls remained visible landmarks in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Populonia",
+          "https://en.wikipedia.org/wiki/Baratti_and_Populonia_Archeological_Park"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rocca di populonia 02.JPG?width=800",
+        "image_credit": "Wikimedia Commons, Rocca di Populonia on the ancient acropolis site"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1634,
+          42.8276
+        ]
+      },
+      "properties": {
+        "id": "substrate_roselle",
+        "culture": "etruscan",
+        "name_latin": "Rusellae",
+        "name_english": "Roselle",
+        "type": "city",
+        "province": "Etruria",
+        "modern_location": "Roselle, near Grosseto, Tuscany, Italy",
+        "extant_117ce": true,
+        "notes": "Rusellae's massive polygonal-block walls, over three kilometers around, ranked among the best-preserved Etruscan fortifications anywhere, still standing centuries after Rome conquered the city in 294 BCE. Romans folded it into their own grid, adding a forum, baths, and an amphitheater cut into the hillside. A visitor in 117 CE would have walked past genuinely Etruscan masonry supporting a thoroughly Roman town.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Rusellae",
+          "https://commons.wikimedia.org/wiki/File:The_Etruscan_walls,_Rusellae,_Etruria,_Italy_(43188317695).jpg"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The Etruscan walls, Rusellae, Etruria, Italy (43188317695).jpg?width=800",
+        "image_credit": "Wikimedia Commons, Etruscan walls of Rusellae"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9989,
+          42.8464
+        ]
+      },
+      "properties": {
+        "id": "substrate_vetulonia",
+        "culture": "etruscan",
+        "name_latin": "Vetulonia",
+        "name_english": "Vetulonia",
+        "type": "city",
+        "province": "Etruria",
+        "modern_location": "Vetulonia, near Castiglione della Pescaia, Tuscany, Italy",
+        "extant_117ce": true,
+        "notes": "Vetulonia minted some of the earliest coinage in Etruria and, by Roman tradition, supplied the fasces and curule chairs that became symbols of Roman magisterial power. Its Orientalizing-era tumulus tombs, including the Tomba del Diavolino with its long stone dromos, held gold rivaling Cerveteri's finds. A stretch of sixth-century BCE Arce walls still crowned the hilltop in Roman times, though the town itself had shrunk to little by 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Vetulonia",
+          "https://www.visittuscany.com/en/attractions/archaeological-area-of-vetulonia/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomba del Diavolino II Vetulonia.jpg?width=800",
+        "image_credit": "Wikimedia Commons, Tomba del Diavolino II at Vetulonia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.95,
+          43.0167
+        ]
+      },
+      "properties": {
+        "id": "substrate_chiusi",
+        "culture": "etruscan",
+        "name_latin": "Clusium",
+        "name_english": "Chiusi",
+        "type": "city",
+        "province": "Etruria",
+        "modern_location": "Chiusi, Tuscany, Italy",
+        "extant_117ce": true,
+        "notes": "Clusium's King Lars Porsena marched on Rome around 508 BCE, a campaign Roman legend later spun into tales of heroic resistance rather than admitted defeat. The city's rock-cut tombs, like the Tomba della Pellegrina, still held carved sarcophagi and cinerary urns under Roman rule. Clusium also gave the world the François Vase, a Greek krater so prized it was buried with its owner. By 117 CE it was an ordinary Roman town living beside its own funerary chambers.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Clusium",
+          "https://www.livius.org/articles/place/clusium-chiusi/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomba della Pellegrina a Chiusi.JPG?width=800",
+        "image_credit": "Wikimedia Commons, Tomba della Pellegrina near Chiusi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3888,
+          43.1122
+        ]
+      },
+      "properties": {
+        "id": "substrate_perugia",
+        "culture": "etruscan",
+        "name_latin": "Perusia",
+        "name_english": "Perugia",
+        "type": "city",
+        "province": "Etruria",
+        "modern_location": "Perugia, Umbria, Italy",
+        "extant_117ce": true,
+        "notes": "Perusia counted among the twelve cities of the Etruscan League and later became the last holdout against Octavian in the Perusine War of 41 to 40 BCE, a siege that ended with the city burned. Its Etruscan travertine walls survived the fire well enough that Augustus restored one gate and renamed it Porta Augusta. That gate, carved with shield reliefs, still framed the road into the rebuilt town in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Etruscan_Arch",
+          "https://www.umbriatourism.it/en/w/etruscan-arch-of-perugia"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Perugia Arco Etrusco.jpg?width=800",
+        "image_credit": "Wikimedia Commons, the Etruscan Arch (Arco Etrusco / Porta Augusta) of Perugia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9861,
+          43.2755
+        ]
+      },
+      "properties": {
+        "id": "substrate_cortona",
+        "culture": "etruscan",
+        "name_latin": "Cortona",
+        "name_english": "Cortona",
+        "type": "city",
+        "province": "Etruria",
+        "modern_location": "Cortona, Tuscany, Italy",
+        "extant_117ce": true,
+        "notes": "Cortona sat among the twelve cities of the Etruscan League on a hilltop above the Val di Chiana, ringed by three kilometers of massive sandstone walls raised in the fourth century BCE. On the plain below, aristocratic families built tumulus tombs nicknamed meloni for their rounded shape, the largest over fifty meters across. The Porta Bifora, a rare double-arched gate, still controlled entry in 117 CE, its walls and tombs standing largely undisturbed under Roman rule.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cortona",
+          "https://www.cortonaweb.net/en/city-walls-gateways-and-fortresses/"
+        ],
+        "confidence": "high",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2953,
+          43.8074
+        ]
+      },
+      "properties": {
+        "id": "substrate_fiesole",
+        "culture": "etruscan",
+        "name_latin": "Faesulae",
+        "name_english": "Fiesole",
+        "type": "city",
+        "province": "Etruria",
+        "modern_location": "Fiesole, near Florence, Tuscany, Italy",
+        "extant_117ce": true,
+        "notes": "Faesulae was a major hill-fort of northern Etruria and briefly a rebel base for Catiline's conspirators in 62 BCE. Its Etruscan temple, first raised in the late fourth century BCE, burned down and was rebuilt on the same footprint under Augustus, so the sanctuary a visitor saw in 117 CE stood on genuinely pre-Roman foundations. The city's Etruscan wall circuit still enclosed the northern edge of the town, and Florence in the valley below had yet to eclipse it.",
+        "sources": [
+          "https://commons.wikimedia.org/wiki/Category:Etrusco-Roman_temples_(Faesulae)",
+          "https://historyandarchaeologyonline.com/etruscan-fiesole/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fiesole, area archeologica, templi 07.jpg?width=800",
+        "image_credit": "Wikimedia Commons, the Etrusco-Roman temple ruins at Fiesole"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.8606,
+          43.4013
+        ]
+      },
+      "properties": {
+        "id": "substrate_volterra",
+        "culture": "etruscan",
+        "name_latin": "Volaterrae",
+        "name_english": "Volterra",
+        "type": "city",
+        "province": "Etruria",
+        "modern_location": "Volterra, Tuscany, Italy",
+        "extant_117ce": true,
+        "notes": "Volaterrae ruled a large inland territory as one of the twelve cities of the Etruscan League and kept minting its own coinage into the Roman period. Its Porta all'Arco gate, jambs carved in the fourth century BCE with three weathered stone heads set in the arch, still stood at the southern approach. The town backed Marius against Sulla and endured a two-year siege before surrendering around 80 BCE. By 117 CE it was a settled municipium wrapped inside its Etruscan founders' walls.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Volterra",
+          "https://volterratur.it/en/poi/the-porta-all-arco/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porta all'Arco (Volterra) 01.JPG?width=800",
+        "image_credit": "Wikimedia Commons, Porta all'Arco, the Etruscan gate of Volterra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1133,
+          42.7186
+        ]
+      },
+      "properties": {
+        "id": "substrate_volsinii_orvieto",
+        "culture": "etruscan",
+        "name_latin": "Velzna (Volsinii)",
+        "name_english": "Orvieto",
+        "type": "city",
+        "province": "Etruria",
+        "modern_location": "Orvieto, Umbria, Italy",
+        "extant_117ce": true,
+        "notes": "Volsinii was one of the twelve Etruscan League cities and, by the majority scholarly view used here, occupied the volcanic plateau of modern Orvieto rather than nearby Bolsena, a matter still argued in scholarship. Rome destroyed the city in 264 BCE after crushing a slave revolt among its own aristocracy, then resettled the population at Bolsena. The rock-cut Crocifisso del Tufo necropolis, laid out in a grid of inscribed doorways, survived that destruction intact.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Volsinii",
+          "https://www.keytoumbria.com/Orvieto/Velzna.html"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Necropoli crocifisso del tufo 1.jpg?width=800",
+        "image_credit": "Wikimedia Commons, Crocifisso del Tufo necropolis at Orvieto"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9635,
+          42.0153
+        ]
+      },
+      "properties": {
+        "id": "substrate_pyrgi",
+        "culture": "etruscan",
+        "name_latin": "Pyrgi",
+        "name_english": "Santa Severa",
+        "type": "port",
+        "province": "Etruria",
+        "modern_location": "Santa Severa, Lazio, Italy",
+        "extant_117ce": true,
+        "notes": "Pyrgi served as the busy harbor of Caere and hosted a sanctuary sacred enough that Phoenician traders left offerings there beside Etruscans. Excavators in 1964 found three inscribed gold tablets buried near Temple B, a bilingual dedication from around 500 BCE by Caere's ruler Thefarie Velianas linking the goddess Uni to Phoenician Astarte. Rome sacked the port in 384 BCE and later planted a colony on the spot, but the temple foundations remained visible ruins through the imperial period.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pyrgi",
+          "https://en.wikipedia.org/wiki/Pyrgi_Tablets"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pyrgi tablets.jpg?width=800",
+        "image_credit": "Wikimedia Commons, the Pyrgi gold tablets found at the sanctuary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1025,
+          44.6943
+        ]
+      },
+      "properties": {
+        "id": "substrate_spina",
+        "culture": "etruscan",
+        "name_latin": "Spina",
+        "name_english": "Spina",
+        "type": "port",
+        "province": "Cisalpine Gaul",
+        "modern_location": "near Comacchio, Emilia-Romagna, Italy",
+        "extant_117ce": false,
+        "notes": "Spina thrived from the sixth to third centuries BCE as an Etruscan gateway to the Adriatic, trading so heavily with Greece its graves yielded more fine Attic pottery than almost anywhere outside Greece. Built on timber piles over the marshy Po delta, the city was swallowed as the river's silt advanced. By Trajan's reign the port had been gone for centuries, and it stayed hidden until 1922 land-reclamation work uncovered its necropolis.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Spina",
+          "https://disci.unibo.it/en/research/archaeological-missions/archaeological-missions-italy/comacchio-spina-ferrara"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2039,
+          44.3371
+        ]
+      },
+      "properties": {
+        "id": "substrate_marzabotto",
+        "culture": "etruscan",
+        "name_latin": "Kainua",
+        "name_english": "Marzabotto",
+        "type": "city",
+        "province": "Cisalpine Gaul",
+        "modern_location": "Marzabotto, near Bologna, Emilia-Romagna, Italy",
+        "extant_117ce": false,
+        "notes": "Kainua was a showcase of Etruscan city planning north of the Apennines, laid out around 500 BCE on a strict grid with fifteen-meter avenues crossing narrower streets at right angles. Celtic Gauls swept through the Po valley in the fourth century BCE, and the city was abandoned by roughly 350 BCE, its grid frozen rather than built over. That abandonment is why archaeologists prize the site today, but it also means no standing city remained there for anyone to see in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kainua",
+          "https://disci.unibo.it/en/research/archaeological-missions/archaeological-missions-italy/etruscan-city-kainua-marzabotto"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marzabotto citt%C3%A0 etrusca nei pressi della plateia D.jpg?width=800",
+        "image_credit": "Wikimedia Commons, the excavated street grid of Kainua at Marzabotto"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0967,
+          42.7075
+        ]
+      },
+      "properties": {
+        "id": "substrate_fanum_voltumnae",
+        "culture": "etruscan",
+        "name_latin": "Fanum Voltumnae",
+        "name_english": "Fanum Voltumnae",
+        "type": "sanctuary",
+        "province": "Etruria",
+        "modern_location": "Campo della Fiera, near Orvieto, Umbria, Italy",
+        "extant_117ce": true,
+        "notes": "Fanum Voltumnae served as the federal sanctuary of the Etruscan League, where delegates from all twelve cities gathered yearly for games and to elect a shared leader. Its location went unconfirmed until excavations starting in 2000 at Campo della Fiera, below Orvieto, uncovered temple foundations, a sacred road, and a terracotta deity's head favoring this site over rivals. The sanctuary stayed in cult use, with a temple rebuilt there as late as the first century CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Fanum_Voltumnae",
+          "https://www.world-archaeology.com/features/fanum-voltumnae-parliament-of-the-etruscan-league/"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7691,
+          42.2415
+        ]
+      },
+      "properties": {
+        "id": "substrate_monterozzi",
+        "culture": "etruscan",
+        "name_latin": "Necropolis Monterozzi",
+        "name_english": "Monterozzi Necropolis",
+        "type": "necropolis",
+        "province": "Etruria",
+        "modern_location": "east of Tarquinia, Lazio, Italy",
+        "extant_117ce": true,
+        "notes": "Monterozzi held roughly six thousand graves cut into the hillside east of Tarquinia, around two hundred painted with frescoes of banquets, dancers, and hunts dating back to the seventh century BCE. The Tomb of the Augurs, decorated around 520 BCE, preserved some of the earliest fully painted Etruscan tomb interiors known. Sealed underground rather than looted, the chambers kept their vivid color through Roman rule; a visitor in 117 CE would have seen only unmarked mounds above ground.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Monterozzi_necropolis",
+          "https://en.wikipedia.org/wiki/Tomb_of_the_Augurs"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Phersu from the painted walls of the tomb of the Augurs at Tarquinia, 525-500 BCE, Etruscan.jpg?width=800",
+        "image_credit": "Wikimedia Commons, fresco from the Tomb of the Augurs, Monterozzi necropolis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0142,
+          42.0206
+        ]
+      },
+      "properties": {
+        "id": "substrate_banditaccia",
+        "culture": "etruscan",
+        "name_latin": "Necropolis Banditaccia",
+        "name_english": "Banditaccia Necropolis",
+        "type": "necropolis",
+        "province": "Etruria",
+        "modern_location": "north of Cerveteri, Lazio, Italy",
+        "extant_117ce": true,
+        "notes": "Banditaccia was Caere's great city of the dead, laid out with streets and neighborhoods of round tumulus tombs cut from soft volcanic tufa, some over 40 meters across. Wealthy families carved tomb interiors to mimic real houses, complete with stone beds, pillars, and household objects rendered in relief. Burials had continued there since the ninth century BCE, so its monumental character was already centuries old by the time Trajan ruled, and its scale later helped earn it UNESCO recognition.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Banditaccia",
+          "https://whc.unesco.org/en/list/1158"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tufo Necropoli della Banditaccia.JPG?width=800",
+        "image_credit": "Wikimedia Commons, tufa tumulus tombs at the Banditaccia necropolis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9408,
+          42.3367
+        ]
+      },
+      "properties": {
+        "id": "substrate_norchia",
+        "culture": "etruscan",
+        "name_latin": "Necropolis Norchia",
+        "name_english": "Norchia",
+        "type": "necropolis",
+        "province": "Etruria",
+        "modern_location": "near Vetralla, Lazio, Italy",
+        "extant_117ce": true,
+        "notes": "Norchia's tombs were carved straight into cliff faces along the old Via Clodia, an unusual choice for Etruscans who typically preferred underground chambers or freestanding tumuli. Facade tombs shaped like miniature temples, some with false doors chiseled directly from the rock, date mainly to the Hellenistic fourth through second centuries BCE. The town above never grew into a major Roman settlement, leaving the cliffside tombs standing recognizable through the Roman era.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Norchia",
+          "https://commons.wikimedia.org/wiki/Category:Necropolis_of_Norchia"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Etruscan tomb Camino - Norchia Italy.jpg?width=800",
+        "image_credit": "Wikimedia Commons, rock-cut facade tomb at Norchia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6444,
+          42.6569
+        ]
+      },
+      "properties": {
+        "id": "substrate_sovana",
+        "culture": "etruscan",
+        "name_latin": "Necropolis Suana",
+        "name_english": "Sovana",
+        "type": "necropolis",
+        "province": "Etruria",
+        "modern_location": "near Sorano, Tuscany, Italy",
+        "extant_117ce": true,
+        "notes": "Sovana's necropolis cut its grandest tomb, the temple-fronted Tomba Ildebranda, directly from soft tufa cliffs in the third or second century BCE, with carved columns imitating real Hellenistic architecture. Older chamber tombs date back to the seventh century BCE, linked by deep sunken roadways still called vie cave. The necropolis lay outside the small Roman-era town of Suana and was never built over, its rock-cut monuments still visible to anyone passing through in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sovana",
+          "https://www.wikidata.org/wiki/Q3531025"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Necropoli di Sovana - Tomba Ildebranda.jpg?width=800",
+        "image_credit": "Wikimedia Commons, Tomba Ildebranda at the Sovana necropolis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.5081,
+          42.9686
+        ]
+      },
+      "properties": {
+        "id": "substrate_baratti",
+        "culture": "etruscan",
+        "name_latin": "Necropolis Populonia",
+        "name_english": "Baratti Necropolis",
+        "type": "necropolis",
+        "province": "Etruria",
+        "modern_location": "Gulf of Baratti, near Populonia, Tuscany, Italy",
+        "extant_117ce": true,
+        "notes": "The Baratti necropolis served Populonia's ironworking elite, its grandest grave the Tomba dei Carri, a chariot burial mound 28 meters across dating to the seventh century BCE. Family tumuli sat alongside smaller shrine-shaped aedicule tombs, many built atop layers of slag from the smelting works that made the city rich. Roman-era burials continued nearby even after Etruscan Populonia's peak had passed, and by 117 CE the older monumental tombs still stood as fading markers of that wealth.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Baratti_and_Populonia_Archeological_Park",
+          "https://www.parchivaldicornia.it/en/archaeological-parks/archaeological-park-of-baratti-and-populonia/the-necropoleis/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Populonia tumulo.jpg?width=800",
+        "image_credit": "Wikimedia Commons, tumulus tomb at the Baratti necropolis, Populonia"
+      }
+    }
+  ]
+}
