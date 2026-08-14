@@ -11,6 +11,7 @@ import { useIsMobile } from "./useIsMobile";
 import { usePoiPanel } from "./usePoiPanel";
 import { useKeyboardShortcuts } from "./useKeyboardShortcuts";
 import EpochModal from "./EpochModal";
+import CurrencyConverter from "./CurrencyConverter";
 
 export default function Chrome() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -260,6 +261,8 @@ export default function Chrome() {
               </button>
             ))}
           </div>
+
+          <CurrencyConverter />
         </div>
       )}
       </div>

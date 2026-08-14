@@ -29,6 +29,9 @@ const G_TOMB = "M4 22h16v-2H4v2zm2-4h12V8l-6-6-6 6v10z";
 const G_MARKET = "M4 4h16l-1 4H5L4 4zm1 6h14l-1 12H6L5 10z";
 const G_BRIDGE = "M2 12s3-6 10-6 10 6 10 6-3 6-10 6-10-6-10-6zm2 8h16v-2H4v2z";
 const G_FOUNTAIN = "M12 2a4 4 0 0 0-4 4h2a2 2 0 0 1 4 0h2a4 4 0 0 0-4-4zm-7 20h14v-2H5v2zm2-4h10v-6a5 5 0 0 0-10 0v6z";
+// Four-pointed "clash" burst — battles are events, not standing structures, so a starburst reads
+// clearer at small marker size than a literal crossed-swords glyph would.
+const G_BATTLE = "M12 2 14 10 22 12 14 14 12 22 10 14 2 12 10 10Z";
 
 export const CATEGORY_GROUPS: CategoryGroup[] = [
   { id: "religious",       label: "Temples & shrines",           short: "Temples",      color: "#c94b4b", categories: ["temple","synagogue","mithraeum","sanctuary","oracle","asklepieion"], glyph: G_TEMPLE },
@@ -46,6 +49,7 @@ export const CATEGORY_GROUPS: CategoryGroup[] = [
   { id: "commerce",        label: "Markets & warehouses",        short: "Markets",      color: "#a06b2e", categories: ["market","warehouse","taberna","macellum"], glyph: G_MARKET },
   { id: "transit",         label: "Bridges & gates",             short: "Gateways",     color: "#6a6a6a", categories: ["road","gate","bridge"], glyph: G_BRIDGE },
   { id: "water",           label: "Fountains",                   short: "Fountains",    color: "#4a8cbf", categories: ["fountain"], glyph: G_FOUNTAIN },
+  { id: "battles",         label: "Battlefields",                short: "Battles",      color: "#7a1f1f", categories: ["battle"], glyph: G_BATTLE },
 ];
 
 export const DEFAULT_COLOR = "#8b1a1a";
