@@ -31,7 +31,7 @@ const G_BRIDGE = "M2 12s3-6 10-6 10 6 10 6-3 6-10 6-10-6-10-6zm2 8h16v-2H4v2z";
 const G_FOUNTAIN = "M12 2a4 4 0 0 0-4 4h2a2 2 0 0 1 4 0h2a4 4 0 0 0-4-4zm-7 20h14v-2H5v2zm2-4h10v-6a5 5 0 0 0-10 0v6z";
 
 export const CATEGORY_GROUPS: CategoryGroup[] = [
-  { id: "religious",       label: "Temples & shrines",           short: "Temples",      color: "#c94b4b", categories: ["temple","synagogue","mithraeum"], glyph: G_TEMPLE },
+  { id: "religious",       label: "Temples & shrines",           short: "Temples",      color: "#c94b4b", categories: ["temple","synagogue","mithraeum","sanctuary","oracle","asklepieion"], glyph: G_TEMPLE },
   { id: "leisure",         label: "Baths",                       short: "Baths",        color: "#4a8cbf", categories: ["bath","bathhouse"], glyph: G_BATH },
   { id: "entertainment",   label: "Theatres & arenas",           short: "Arenas",       color: "#a05f2e", categories: ["amphitheater","theater","circus"], glyph: G_AMPHI },
   { id: "civic",           label: "Civic & government",          short: "Civic",        color: "#b0431a", categories: ["forum","basilica","curia","collegium"], glyph: G_FORUM },
