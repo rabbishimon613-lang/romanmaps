@@ -6400,6 +6400,336 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa_dei_Volusii_Saturnini_1.jpg?width=800",
         "image_credit": "Ruins of the Villa dei Volusii Saturnini at Lucus Feroniae · Wikimedia Commons (CC BY-SA)"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.520917,
+          41.852167
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_cecilia_metella",
+        "category": "mausoleum",
+        "name_latin": "Sepulcrum Caeciliae Metellae",
+        "name_english": "Tomb of Cecilia Metella",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "built": -25,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A soaring drum-shaped tomb raised at the third milestone of the Appian Way for Caecilia Metella, daughter-in-law of the general who crushed Spartacus. Its 20-meter cylinder of travertine once carried a marble frieze of ox skulls and garlands, giving the road below the nickname Capo di Bove. Sitting on a square base of solid concrete, it was built to be seen from far down the road toward Rome. By 117 CE it had already loomed over Appian traffic for close to a century.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tomb_of_Caecilia_Metella",
+          "https://www.turismoroma.it/en/places/mausoleum-caecilia-metella"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roma_Appia_Antica_-_mausoleo_Cecilia_Metella.JPG?width=800",
+        "image_credit": "Photograph of the Tomb of Cecilia Metella, Via Appia Antica, Wikimedia Commons",
+        "image_alt": "Cylindrical stone tomb of Cecilia Metella beside the Via Appia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.577325,
+          41.207037
+        ]
+      },
+      "properties": {
+        "id": "poi_mausoleum_munatius_plancus",
+        "category": "mausoleum",
+        "name_latin": "Sepulcrum Lucii Munatii Planci",
+        "name_english": "Tomb of Munatius Plancus",
+        "province": "Italia",
+        "modern_location": "Gaeta, Italy",
+        "built": -22,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A cylindrical mausoleum crowning Monte Orlando above the Gulf of Gaeta, built for Lucius Munatius Plancus, the consul and general who founded the colony of Lyon. Its drum spans nearly 30 meters and originally carried a stepped conical roof visible far out at sea. An inscription once ran the full circumference listing his offices as consul, censor, and triumphator. Ships rounding the cape had used it as a landmark for well over a century by 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Lucius_Munatius_Plancus",
+          "http://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Latina/Gaeta/Gaeta/Mausoleo_di_Planco/home.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mausoleo_di_Lucio_Munazio_Planco.JPG?width=800",
+        "image_credit": "Photograph of the Mausoleum of Lucius Munatius Plancus, Monte Orlando, Gaeta, Wikimedia Commons",
+        "image_alt": "Drum-shaped Roman tomb of Munatius Plancus on a hilltop above the sea"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5153,
+          41.891432
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_eurysaces",
+        "category": "tomb",
+        "name_latin": "Sepulcrum Eurysacis Pistoris",
+        "name_english": "Tomb of Eurysaces the Baker",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "built": -30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A wedge-shaped tomb built by a freed slave who made his fortune baking bread under state contract, standing where two busy roads met outside the city walls. Its frieze carved rows of round openings to mimic the mouths of dough-mixing machines, a boast in stone about the trade that made him rich. An inscription names him Marcus Vergilius Eurysaces, baker and contractor, beside his wife Atistia. Already close to two centuries old by 117 CE, it stood as a freedman's answer to senatorial tombs.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tomb_of_Eurysaces_the_Baker",
+          "https://www.livius.org/articles/place/rome/rome-photos/rome-tomb-of-eurysaces/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomb_of_Eurysaces_the_Baker.jpg?width=800",
+        "image_credit": "Photograph of the Tomb of Eurysaces the Baker, near Porta Maggiore, Rome, Wikimedia Commons",
+        "image_alt": "Travertine tomb of the baker Eurysaces with rows of circular relief openings"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9556,
+          50.9276
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_poblicius",
+        "category": "mausoleum",
+        "name_latin": "Sepulcrum Poblicii",
+        "name_english": "Tomb of Poblicius",
+        "province": "Germania Inferior",
+        "modern_location": "Cologne, Germany",
+        "built": 40,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A stepped tower tomb built for Lucius Poblicius, a discharged legionary who settled in the young colony of Colonia Claudia Ara Agrippinensium. Rising close to 15 meters along the road south out of the city, it carried life-sized statues of the family in togas and ranked among the largest funerary monuments raised north of the Alps. By 117 CE it had watched over that approach road for decades, a landmark of Rome's veteran-settled Rhine frontier.",
+        "sources": [
+          "https://de.wikipedia.org/wiki/Grabmal_des_Poblicius",
+          "https://www.historyhit.com/locations/romano-germanic-museum-cologne/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sepulcher_of_Poblicius_R%C3%B6misch-Germanisches_Museum_Cologne_5.jpg?width=800",
+        "image_credit": "Photograph of the reconstructed Tomb of Poblicius, Romano-Germanic Museum, Cologne, Wikimedia Commons",
+        "image_alt": "Tall stepped Roman tower tomb with statues, reconstructed in a museum hall"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4539,
+          41.9022
+        ]
+      },
+      "properties": {
+        "id": "poi_necropolis_vatican",
+        "category": "necropolis",
+        "name_latin": "Necropolis Vaticana",
+        "name_english": "Vatican Necropolis",
+        "province": "Italia",
+        "modern_location": "Vatican City",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "An open-air cemetery running along the southern slope of the Vatican Hill, next to the ruins of Nero's circus and its Egyptian obelisk. Roman families had begun raising rows of small brick mausolea here by the start of the 2nd century CE, each fronted with a doorway naming the dead inside. A modest grave among these tombs is traditionally linked to the apostle Peter, two centuries before any basilica rose above it. In 117 CE it was still an ordinary pagan burial ground.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Vatican_Necropolis",
+          "https://www.turismoroma.it/en/places/st-peter%E2%80%99s-tomb-vatican-necropolis-pre-constantinian-and-constantinian-basilica"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vatican_Necropolis_01.jpg?width=800",
+        "image_credit": "Photograph of the Vatican Necropolis beneath St. Peter's Basilica, Wikimedia Commons",
+        "image_alt": "Row of small brick mausolea in the Vatican Necropolis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.632313,
+          43.673847
+        ]
+      },
+      "properties": {
+        "id": "poi_necropolis_alyscamps",
+        "category": "necropolis",
+        "name_latin": "Elysii Campi Arelatenses",
+        "name_english": "Alyscamps Necropolis",
+        "province": "Narbonensis",
+        "modern_location": "Arles, France",
+        "built": -40,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A mile-long avenue of tombs and carved stone sarcophagi lining the road just outside the walls of Roman Arelate. Wealthy citizens of the busy river port had lined the way with monuments since Julius Caesar planted a colony of veterans here, giving the cemetery its later name, the Elysian Fields. Rows of coffins stretched toward the horizon, a sight that centuries later drew painters like Van Gogh. By 117 CE it had already served as Arelate's main burial ground for well over a century.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Alyscamps",
+          "https://www.historyhit.com/locations/les-alyscamps-arles/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Les_Alyscamps_Arles.JPG?width=800",
+        "image_credit": "Photograph of Les Alyscamps necropolis, Arles, Wikimedia Commons",
+        "image_alt": "Tree-lined avenue of ancient stone sarcophagi at the Alyscamps"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5002,
+          41.8722
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_scipios",
+        "category": "tomb",
+        "name_latin": "Sepulcrum Scipionum",
+        "name_english": "Tomb of the Scipios",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "built": -298,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "An underground family tomb cut into volcanic rock beside the Via Appia, holding generations of the Cornelii Scipiones, the clan that produced the general who first fought Hannibal in Spain. Four square pillars left in the living rock divided the burial chamber, later enlarged with a brick gallery and its own facade on the road. Burials there had stopped roughly 150 years earlier, but the carved chamber remained intact. By 117 CE the once-famous tomb sat quiet beside the city's busiest road.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tomb_of_the_Scipios",
+          "https://www.turismoroma.it/en/places/archaeological-area-tomb-scipios"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sepolcro_degli_Scipioni_001_Entrata.jpg?width=800",
+        "image_credit": "Photograph of the entrance to the Tomb of the Scipios, Rome, Wikimedia Commons",
+        "image_alt": "Entrance to the rock-cut underground Tomb of the Scipios"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.556,
+          41.821
+        ]
+      },
+      "properties": {
+        "id": "poi_mausoleum_casal_rotondo",
+        "category": "mausoleum",
+        "name_latin": "Sepulcrum Rotundum",
+        "name_english": "Casal Rotondo",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "built": -30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The largest tomb standing along the Appian Way, a drum of concrete and stone 27 meters across at the sixth milestone south of Rome. It originally rose in a cone ringed by stone seats and a carved frieze of weapons and garlands, long since built over by a small medieval farmhouse. Roman tradition connected it to the family of orator and general Valerius Messalla Corvinus, though the burial was never confirmed by inscription. By 117 CE it had watched over Appian traffic for over a century.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Casal_Rotondo",
+          "https://pleiades.stoa.org/places/422869"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Casal_rotondo1.jpg?width=800",
+        "image_credit": "Photograph of Casal Rotondo, Via Appia Antica, Wikimedia Commons",
+        "image_alt": "Large circular Roman tomb mound topped by a small farmhouse"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.480833,
+          41.876389
+        ]
+      },
+      "properties": {
+        "id": "poi_mausoleum_pyramid_cestius",
+        "category": "mausoleum",
+        "name_latin": "Pyramis Cestii",
+        "name_english": "Pyramid of Cestius",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "built": -15,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A steep marble-clad pyramid built as a tomb for Gaius Cestius, a magistrate on the priestly board that ran Rome's ritual feasts. Standing 37 meters tall and finished within 330 days by its own inscription, it borrowed the pyramid form from Rome's fascination with conquered Egypt. Its builders sealed the burial chamber with painted frescoes and left no visible door, so it stayed hidden for centuries. By 117 CE it had already stood beside the road to Ostia for over a century.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pyramid_of_Cestius",
+          "https://www.livius.org/articles/place/rome/rome-photos/rome-pyramid-of-cestius/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pyramid_of_cestius.jpg?width=800",
+        "image_credit": "Photograph of the Pyramid of Cestius, Rome, Wikimedia Commons",
+        "image_alt": "White marble pyramid tomb of Gaius Cestius in Rome"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.45145,
+          30.32206
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_al_khazneh",
+        "category": "mausoleum",
+        "name_latin": "Al-Khazneh",
+        "name_english": "The Treasury at Petra",
+        "province": "Arabia Petraea",
+        "modern_location": "Petra, Jordan",
+        "built": 20,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A towering tomb facade cut into rose sandstone at the entrance to Petra, capital of the Nabataean kings. Its columned front rises some 40 meters, blending Hellenistic style with Nabataean tradition, carved for royalty rather than built from blocks. Rome annexed the Nabataean kingdom only eleven years before 117 CE, folding this tomb and its caravan city into the new province of Arabia. Legend later credited the stone urn on its facade with hidden treasure, giving the monument its modern name.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Al-Khazneh",
+          "https://universes.art/en/art-destinations/jordan/petra/al-khazneh"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Al_Khazneh_(The_Treasury)_in_Petra.jpg?width=800",
+        "image_credit": "Photograph of Al-Khazneh (the Treasury), Petra, Wikimedia Commons",
+        "image_alt": "Rock-cut facade of Al-Khazneh at Petra, carved into pink sandstone cliffs"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4492,
+          30.3275
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_urn_petra",
+        "category": "tomb",
+        "name_latin": "Sepulcrum Regium Urnae",
+        "name_english": "Urn Tomb at Petra",
+        "province": "Arabia Petraea",
+        "modern_location": "Petra, Jordan",
+        "built": 60,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "One of Petra's grandest royal tombs, cut into the cliff face of Jabal al-Khubtha above a broad forecourt on stone arches, with a facade rising some 17 meters. A large stone urn carved atop its pediment gave the tomb its name and may mark the resting place of a Nabataean king. Vaulted chambers built beneath the terrace served for storage or further burials. Only eleven years into Roman rule over Arabia Petraea by 117 CE, it remained one of the most striking monuments in the new province.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Petra",
+          "https://www.visitpetra.jo/en/Location/119"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Urn_Tomb,_Petra_01.jpg?width=800",
+        "image_credit": "Photograph of the Urn Tomb, Petra, Wikimedia Commons",
+        "image_alt": "Rock-cut Urn Tomb facade above a vaulted terrace at Petra"
+      }
     }
   ]
 }
