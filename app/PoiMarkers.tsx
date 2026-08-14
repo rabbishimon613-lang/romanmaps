@@ -46,7 +46,11 @@ export default function PoiMarkers() {
       const fc: GeoJSON.FeatureCollection<GeoJSON.Point, Record<string, any>> = await res.json();
       const feats = (fc.features || []).filter((f) => {
         const p: any = f.properties || {};
-        return p.extant_117ce === true && f.geometry?.type === "Point";
+        if (f.geometry?.type !== "Point") return false;
+        // "extant_117ce" gates standing structures — a destroyed/not-yet-built building
+        // shouldn't get a pin. Battles are historical-memory markers, not structures (almost
+        // none are ever "extant" — they're events), so they're exempt from that gate.
+        return p.extant_117ce === true || p.category === "battle";
       });
       featuresRef.current = feats;
       return feats;

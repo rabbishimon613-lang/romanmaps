@@ -7890,6 +7890,1137 @@
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Ba'al-shamin,_Palmyra,_Syria.jpg?width=800",
     "image_credit": "Temple of Baalshamin, Palmyra, before its 2015 destruction · Wikimedia Commons"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.1261,
+     52.4073
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_teutoburg_forest",
+    "category": "battle",
+    "name_latin": "Clades Variana",
+    "name_english": "Battle of the Teutoburg Forest",
+    "province": "Free Germania",
+    "modern_location": "Kalkriese, Lower Saxony, Germany",
+    "built": 9,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Germanic tribes led by Arminius ambushed three Roman legions marching through the forest, wiping out roughly 20,000 men over three days. Governor Varus fell on his own sword rather than be captured. Rome never again pushed its permanent frontier east of the Rhine. Emperor Augustus reportedly banged his head on doors crying, 'Quintili Vare, legiones redde!'",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_the_Teutoburg_Forest",
+     "https://en.wikipedia.org/wiki/Kalkriese"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Varus01.jpg?width=800",
+    "image_credit": "Reconstructed defensive wall at the Kalkriese battlefield site, photo by Markus Schweiß · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.0,
+     56.9167
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_mons_graupius",
+    "category": "battle",
+    "name_latin": "Mons Graupius",
+    "name_english": "Battle of Mons Graupius",
+    "province": "Caledonia",
+    "modern_location": "Northeast Scotland, United Kingdom",
+    "built": 83,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Governor Agricola pushed deep into Caledonia and crushed a coalition of Caledonian tribes led by Calgacus, killing a claimed 10,000 warriors for only 360 Roman dead. It was the northernmost Roman battlefield victory in Britain. Rome still never permanently held the ground it won that day. The site itself remains unidentified among dozens of candidate hills.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Mons_Graupius",
+     "https://www.worldhistory.org/article/776/tacitus-account-of-the-battle-of-mons-graupius/"
+    ],
+    "confidence": "low",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Agricola.Campaigns.80.84.jpg?width=800",
+    "image_credit": "Map of Agricola's campaigns, 80-84 CE · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     16.135,
+     41.302
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_cannae",
+    "category": "battle",
+    "name_latin": "Cannae",
+    "name_english": "Battle of Cannae",
+    "province": "Italia",
+    "modern_location": "Near Barletta, Apulia, Italy",
+    "built": -216,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Hannibal's double-envelopment trapped and annihilated a Roman army twice the size of his own, killing an estimated 50,000 to 70,000 men in a single day. It remains one of history's bloodiest one-day battles. Rome lost more citizens here than on any other day in its history, yet refused to negotiate and eventually won the war. Military academies still teach the maneuver.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Cannae",
+     "https://www.britannica.com/event/Battle-of-Cannae"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Death_of_Paulus_Aemilius_at_the_Battle_of_Cannae.jpg?width=800",
+    "image_credit": "John Trumbull, \"The Death of Paulus Aemilius at the Battle of Cannae,\" 1773 · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.6167,
+     36.4667
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_zama",
+    "category": "battle",
+    "name_latin": "Zama",
+    "name_english": "Battle of Zama",
+    "province": "Africa Proconsularis",
+    "modern_location": "Near Sakiet Sidi Youssef, Tunisia",
+    "built": -202,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Scipio Africanus finally beat Hannibal on African soil, breaking Carthage's war elephants with disciplined gaps in the Roman line and finishing the fight with Numidian cavalry. The defeat ended the Second Punic War and Carthage's status as a great power for good. Hannibal survived and fled into exile. The battle is often staged as ancient history's classic general-versus-general showdown.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Zama",
+     "https://www.britannica.com/event/Battle-of-Zama-Roman-Carthaginian-history"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cornelis_Cort_-_The_Battle_of_Zama_-_1990.563_-_Art_Institute_of_Chicago.jpg?width=800",
+    "image_credit": "Cornelis Cort, \"The Battle of Zama,\" 1567 · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.5,
+     47.5372
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_alesia",
+    "category": "battle",
+    "name_latin": "Alesia",
+    "name_english": "Battle of Alesia",
+    "province": "Gallia Lugdunensis",
+    "modern_location": "Alise-Sainte-Reine, Burgundy, France",
+    "built": -52,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Julius Caesar trapped Vercingetorix's Gallic army inside the hilltop fortress with a double ring of siege works, then held off a Gallic relief force of some 250,000 warriors from the outside at the same time. Vercingetorix surrendered in person, laying his weapons at Caesar's feet. The siege effectively ended organized Gallic resistance to Rome. It remains one of history's most studied feats of military engineering.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Alesia",
+     "https://www.britannica.com/event/Battle-of-Alesia-52-BCE"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lionel_Royer_-_Vercingetorix_Throwing_down_His_Weapons_at_the_feet_of_Julius_Caesar.jpg?width=800",
+    "image_credit": "Lionel Royer, \"Vercingetorix Throws Down His Arms at the Feet of Julius Caesar,\" 1899 · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.3833,
+     39.3
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_pharsalus",
+    "category": "battle",
+    "name_latin": "Pharsalus",
+    "name_english": "Battle of Pharsalus",
+    "province": "Macedonia",
+    "modern_location": "Near Farsala, Thessaly, Greece",
+    "built": -48,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Julius Caesar, badly outnumbered, crushed Pompey the Great's larger army by anticipating a cavalry flanking move and countering it with hidden reserve troops. Pompey's forces suffered roughly 6,000 dead against Caesar's few hundred. Pompey fled to Egypt, where he was murdered on arrival. The battle effectively decided the Roman civil war and Caesar's path to dictatorship.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Pharsalus",
+     "https://www.worldhistory.org/article/697/the-battle-of-pharsalus/"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Apollonio_di_Giovanni_-_The_Battle_of_Pharsalus_and_the_Death_of_Pompey_-_1974.394_-_Art_Institute_of_Chicago.jpg?width=800",
+    "image_credit": "Apollonio di Giovanni, \"The Battle of Pharsalus and the Death of Pompey,\" 15th century · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.2864,
+     41.0131
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_philippi",
+    "category": "battle",
+    "name_latin": "Philippi",
+    "name_english": "Battle of Philippi",
+    "province": "Macedonia",
+    "modern_location": "Near Kavala, Macedonia, Greece",
+    "built": -42,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Mark Antony and Octavian fought Caesar's assassins Brutus and Cassius in two engagements three weeks apart on the plain west of Philippi. Cassius, wrongly believing the battle lost, took his own life; Brutus followed after the second defeat. The Liberators' cause died with them, clearing the way for the Second Triumvirate to carve up the Roman world. Tens of thousands of veterans were later resettled at the city as a reward.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Philippi",
+     "https://www.worldhistory.org/article/773/the-battle-of-philippi-42-bce/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Philippi_1st_battle_map.jpg?width=800",
+    "image_credit": "Map of the first Battle of Philippi, 42 BCE · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.7742,
+     38.9547
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_actium",
+    "category": "battle",
+    "name_latin": "Actium",
+    "name_english": "Battle of Actium",
+    "province": "Epirus",
+    "modern_location": "Gulf of Ambracia, near Preveza, Greece",
+    "built": -31,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Octavian's admiral Agrippa outmaneuvered the combined fleet of Mark Antony and Cleopatra off the Ambracian Gulf, and Cleopatra's squadron broke and fled mid-battle with Antony following. The naval defeat ended their bid for power and left Octavian sole master of Rome. Within a year both Antony and Cleopatra were dead by suicide in Egypt. Octavian founded the victory city of Nicopolis on the spot and became Augustus four years later.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Actium",
+     "https://www.britannica.com/event/Battle-of-Actium-ancient-Roman-history"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Castro_Battle_of_Actium.jpg?width=800",
+    "image_credit": "Lorenzo A. Castro, \"The Battle of Actium,\" 1672, National Maritime Museum · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     39.0311,
+     36.864
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_carrhae",
+    "category": "battle",
+    "name_latin": "Carrhae",
+    "name_english": "Battle of Carrhae",
+    "province": "Mesopotamia",
+    "modern_location": "Harran, Sanliurfa Province, Turkey",
+    "built": -53,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Parthian horse-archers and cataphracts under the general Surena wore down and destroyed seven legions under Marcus Licinius Crassus, killing roughly 20,000 Romans and capturing the legionary standards. Crassus himself died in the aftermath, reportedly with molten gold poured down his throat. It was Rome's worst defeat since Cannae and left the eastern frontier an open wound for a century. Trajan's ongoing Parthian War answers that old humiliation.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Carrhae",
+     "https://www.britannica.com/event/Battle-of-Carrhae"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Death_of_Crassus_in_the_battle_of_Carrhae_(Cassell's_Illustrated_Universal_History,_vol._3,_1882).jpg?width=800",
+    "image_credit": "\"Death of Crassus in the Battle of Carrhae,\" Cassell's Illustrated Universal History, 1882 · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.5667,
+     39.4167
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_cynoscephalae",
+    "category": "battle",
+    "name_latin": "Cynoscephalae",
+    "name_english": "Battle of Cynoscephalae",
+    "province": "Macedonia",
+    "modern_location": "Near Volos, Thessaly, Greece",
+    "built": -197,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Roman legions under Titus Quinctius Flamininus caught Philip V of Macedon's phalanx on broken hilly ground where it could not hold formation, and flanked it with a detached maniple for a decisive win. Macedonian losses ran to roughly 8,000 dead against a few hundred Romans. The battle proved the flexible legion could beat the rigid Macedonian phalanx on uneven terrain. Flamininus later declared the Greek cities free at the Isthmian Games to wide applause.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Cynoscephalae",
+     "https://www.britannica.com/event/Battle-of-Cynoscephalae"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plan_of_the_battle_of_Cynoscephalae_(179_BC).png?width=800",
+    "image_credit": "Battle plan diagram, Battle of Cynoscephalae · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     27.4167,
+     38.6333
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_magnesia",
+    "category": "battle",
+    "name_latin": "Magnesia ad Sipylum",
+    "name_english": "Battle of Magnesia",
+    "province": "Asia",
+    "modern_location": "Manisa Province, Turkey",
+    "built": -190,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "A Roman army under Lucius Cornelius Scipio, with his famous brother Africanus advising, smashed the huge Seleucid army of Antiochus III, including his scythed chariots and war elephants. Roman losses were light against tens of thousands of Seleucid dead and captured. The defeat broke Seleucid power west of the Taurus Mountains for good. Rome walked away the unrivaled power of the eastern Mediterranean.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Magnesia",
+     "https://www.ebsco.com/research-starters/history/battle-magnesia-ad-sipylum"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Magnesia_(cropped).jpg?width=800",
+    "image_credit": "Illustration of the Battle of Magnesia, 190 BCE · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.6131,
+     40.3653
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_pydna",
+    "category": "battle",
+    "name_latin": "Pydna",
+    "name_english": "Battle of Pydna",
+    "province": "Macedonia",
+    "modern_location": "Near Katerini, Central Macedonia, Greece",
+    "built": -168,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Consul Lucius Aemilius Paullus lured the Macedonian phalanx onto broken ground and picked it apart in gaps with sword-armed legionaries, killing an estimated 20,000 men in an afternoon. King Perseus fled and was later paraded in Paullus's triumph. The victory ended the four-century Antigonid dynasty and Macedon as an independent kingdom. Rome split the territory into four puppet republics rather than annex it outright.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Pydna",
+     "https://www.britannica.com/event/Battle-of-Pydna"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrea_del_Verrocchio_-_The_Battle_of_Pydna_-_WGA24993.jpg?width=800",
+    "image_credit": "Andrea del Verrocchio, \"The Battle of Pydna,\" 15th century · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.3233,
+     36.8528
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_destruction_of_carthage",
+    "category": "battle",
+    "name_latin": "Carthago Deleta",
+    "name_english": "Destruction of Carthage",
+    "province": "Africa Proconsularis",
+    "modern_location": "Carthage, Tunisia",
+    "built": -146,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "After a brutal multi-year siege, consul Scipio Aemilianus's legions stormed Carthage street by street in six days of house-to-house fighting. The survivors, some 50,000 people, were sold into slavery and the city was burned to the ground. Rome plowed the site and, by legend, salted the earth so nothing would grow. Augustus later refounded Carthage as a Roman colony, and by 117 CE it stands again as a thriving provincial capital.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Carthage_(146_BC)",
+     "https://worldhistoryedu.com/siege-of-carthage-in-149-146-bc/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Byrsa_hill_in_Carthage.jpg?width=800",
+    "image_credit": "Byrsa Hill, site of the citadel of ancient Carthage · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.8814,
+     37.9072
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_destruction_of_corinth",
+    "category": "battle",
+    "name_latin": "Corinthus Deleta",
+    "name_english": "Destruction of Corinth",
+    "province": "Achaea",
+    "modern_location": "Ancient Corinth, Peloponnese, Greece",
+    "built": -146,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Consul Lucius Mummius crushed the Achaean League's army outside Corinth, then razed the wealthy city, killed its men, and sold its women and children into slavery. Its famous bronzes and artwork were shipped back to Rome as war trophies. The destruction, in the same year as Carthage's, marked Rome's brutal final word on Greek independence. Julius Caesar refounded Corinth as a colony a century later, and by 117 CE it is again a major provincial city.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Corinth_(146_BC)",
+     "https://www.historyskills.com/classroom/ancient-history/destruction-of-corinth/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Temple_of_Apollo_(6th_century_B.C.)_in_Corinth_on_3_June_2018.jpg?width=800",
+    "image_credit": "Temple of Apollo at Ancient Corinth, photo by George E. Koronaios · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.8475,
+     38.495
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_chaeronea_86bc",
+    "category": "battle",
+    "name_latin": "Chaeronea",
+    "name_english": "Battle of Chaeronea",
+    "province": "Achaea",
+    "modern_location": "Chaeronea, Boeotia, Greece",
+    "built": -86,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Lucius Cornelius Sulla, badly outnumbered, routed the army of Mithridates VI of Pontus on the same plain where Philip II had beaten the Greeks two and a half centuries earlier. Roman sources claimed only a few dozen Roman dead against tens of thousands of Pontic casualties. The win broke Mithridates's grip on mainland Greece during the First Mithridatic War. Sulla marched the victory straight into his own bid for dictatorship back in Rome.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Chaeronea_(86_BC)",
+     "https://www.historyofwar.org/articles/battles_chaeronea_86_bc.html"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sulla_Glyptothek_Munich_309.jpg?width=800",
+    "image_credit": "Bust of Sulla, Glyptothek Munich · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.85,
+     37.55
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_munda",
+    "category": "battle",
+    "name_latin": "Munda",
+    "name_english": "Battle of Munda",
+    "province": "Baetica",
+    "modern_location": "Near Osuna, Andalusia, Spain",
+    "built": -45,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Julius Caesar fought his hardest battle here against Pompey's sons, at one point reportedly grabbing a shield and charging the front line himself to stop his men from breaking. Some 30,000 Pompeian troops were killed by the end, including Gnaeus Pompeius shortly after. It was the last pitched battle of Caesar's civil war and secured his uncontested rule. He returned to Rome to be declared dictator for life within the year.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Munda",
+     "https://www.britannica.com/event/Battle-of-Munda"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Munda,_45_BC_(Initial_deployment_of_troops).jpg?width=800",
+    "image_credit": "Battle of Munda, initial troop deployment diagram · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.0489,
+     35.6244
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_thapsus",
+    "category": "battle",
+    "name_latin": "Thapsus",
+    "name_english": "Battle of Thapsus",
+    "province": "Africa Proconsularis",
+    "modern_location": "Near Bekalta, Tunisia",
+    "built": -46,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Caesar's legions attacked before their general even gave the order, routing Metellus Scipio's Optimate army and its war elephants in a rout that turned into a massacre of surrendering troops. As many as 10,000 enemy soldiers died, many killed by Caesar's own men against his wishes. Cato the Younger, unwilling to live under Caesar's rule, took his own life at Utica soon after. The victory effectively finished organized Republican resistance in Africa.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Thapsus",
+     "https://www.britannica.com/event/Battle-of-Thapsus"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Thapsus.jpg?width=800",
+    "image_credit": "Battle of Thapsus, reproduction of a 1619 copper engraving by Andrea Palladio · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.9254,
+     44.6478
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_mutina",
+    "category": "battle",
+    "name_latin": "Mutina",
+    "name_english": "Battle of Mutina",
+    "province": "Italia",
+    "modern_location": "Modena, Emilia-Romagna, Italy",
+    "built": -43,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "The Senate's consuls Hirtius and Pansa, backed by the 19-year-old Octavian, broke Mark Antony's siege of Decimus Brutus at Mutina, forcing Antony to retreat over the Alps. Both consuls died from wounds within days, leaving Octavian holding their armies. Cicero had just delivered his blistering Philippics against Antony in the Senate. Octavian used the resulting power vacuum to force his own march on Rome and a consulship at twenty.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Mutina",
+     "https://en.wikipedia.org/wiki/War_of_Mutina"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marble_bust_of_Mark_Antony_(Vatican_Museums).jpg?width=800",
+    "image_credit": "Marble bust of Mark Antony, Vatican Museums · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.25,
+     38.2333
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_naulochus",
+    "category": "battle",
+    "name_latin": "Naulochus",
+    "name_english": "Battle of Naulochus",
+    "province": "Sicilia",
+    "modern_location": "Near Milazzo, Sicily, Italy",
+    "built": -36,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Octavian's admiral Agrippa destroyed the fleet of Sextus Pompeius off Sicily's northern coast, sinking or capturing all but seventeen of his roughly 300 ships. Sextus fled east and was hunted down and killed within a year. The victory ended the last serious naval threat to the Second Triumvirate and pushed the disgraced Lepidus out of power entirely. Octavian was left facing only Mark Antony for control of Rome.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Naulochus",
+     "https://www.ancientpages.com/2016/09/03/on-this-day-in-history-battle-of-naulochus-was-fought-off-the-coast-of-sicily-on-sep-3-36-bc/"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aureus_Sextus_Pompeius_42BC.JPG?width=800",
+    "image_credit": "Gold aureus of Sextus Pompeius, showing a warship prow, c. 42-40 BC · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.125,
+     45.7083
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_gergovia",
+    "category": "battle",
+    "name_latin": "Gergovia",
+    "name_english": "Battle of Gergovia",
+    "province": "Aquitania",
+    "modern_location": "La Roche-Blanche, near Clermont-Ferrand, France",
+    "built": -52,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Vercingetorix's Arverni handed Julius Caesar a rare defeat, holding their hilltop stronghold and killing as many as 700 Roman soldiers, including 46 centurions, when an assault got out of hand. Caesar himself admitted the loss in his own war commentaries. It was the only major setback of his Gallic campaign and forced him to lift the siege and retreat. Vercingetorix's momentum from Gergovia carried straight into the doomed stand at Alesia weeks later.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Gergovia",
+     "https://en.wikipedia.org/wiki/Gergovie_plateau"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plateau_of_Gergovia.jpg?width=800",
+    "image_credit": "The Gergovie plateau, site of Vercingetorix's victory · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.0333,
+     46.9167
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_bibracte",
+    "category": "battle",
+    "name_latin": "Bibracte",
+    "name_english": "Battle of Bibracte",
+    "province": "Gallia Lugdunensis",
+    "modern_location": "Mont Beuvray, Burgundy, France",
+    "built": -58,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Julius Caesar turned to face the pursuing Helvetii near the Aeduan capital of Bibracte and, after a long day of fighting, broke their army and forced their survivors back to their abandoned homeland in Switzerland. It was Caesar's opening battle of the Gallic Wars and set the pattern for the eight years of campaigning to follow. Roughly a quarter of the original 368,000 Helvetii migrants are said to have survived. Caesar dictated his own account of it in the Commentarii.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Bibracte",
+     "https://www.historyofwar.org/articles/battles_bibracte.html"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bibracte_(Mont_Beuvray)_17.jpg?width=800",
+    "image_credit": "Site of Bibracte on Mont Beuvray · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.175,
+     47.808
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_vosges_ariovistus",
+    "category": "battle",
+    "name_latin": "Proelium adversus Ariovistum",
+    "name_english": "Battle of Vosges",
+    "province": "Germania Superior",
+    "modern_location": "Alsace region, France",
+    "built": -58,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Julius Caesar's six legions broke the Suebian king Ariovistus's Germanic warband near the Rhine, driving the survivors into the river after a fierce close-quarters fight. Ariovistus himself escaped across the Rhine but died soon after, and his invasion of Gaul was over. It was Caesar's first battle against a Germanic force and set the Rhine as Gaul's eastern boundary for generations. The exact battlefield in modern Alsace is still debated by historians.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Vosges_(58_BC)",
+     "https://en.wikipedia.org/wiki/Ariovistus"
+    ],
+    "confidence": "low",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.725,
+     45.5056
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_first_tapae",
+    "category": "battle",
+    "name_latin": "Tapae",
+    "name_english": "First Battle of Tapae",
+    "province": "Dacia",
+    "modern_location": "Iron Gates of Transylvania, Hunedoara County, Romania",
+    "built": 87,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Dacian king Decebalus ambushed a Roman invasion force at the mountain pass of Tapae, killing the praetorian prefect Cornelius Fuscus and destroying most of his army along with a legion's eagle standard. It was one of the worst Roman defeats of Domitian's reign and forced Rome onto the defensive on the Danube. Domitian ended up paying Decebalus an annual subsidy to keep the peace. The humiliation set the stage for Trajan's later wars of conquest.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Tapae",
+     "https://www.britannica.com/topic/Battle-of-Tapae"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bust_Domitian_Musei_Capitolini_MC1156.jpg?width=800",
+    "image_credit": "Bust of Emperor Domitian, Musei Capitolini · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.725,
+     45.5056
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_second_tapae_101",
+    "category": "battle",
+    "name_latin": "Tapae",
+    "name_english": "Second Battle of Tapae",
+    "province": "Dacia",
+    "modern_location": "Iron Gates of Transylvania, Hunedoara County, Romania",
+    "built": 101,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Trajan personally led legions back through the same mountain pass where Fuscus had died fourteen years earlier, and this time broke Decebalus's Dacian army in a hard-fought win at the opening of the First Dacian War. Roman casualties were heavy enough that Trajan reportedly gave up his own clothing to bandage the wounded. The victory pushed the Dacians back toward their mountain capital. It set up the campaign that would end with Dacia's conquest five years later.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Second_Battle_of_Tapae",
+     "https://en.wikipedia.org/wiki/Tapae"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/032_Conrad_Cichorius,_Die_Reliefs_der_Traianss%C3%A4ule,_Tafel_XXXII.jpg?width=800",
+    "image_credit": "Trajan's Column relief depicting the Dacian Wars, plate XXXII, Conrad Cichorius · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.3093,
+     45.6219
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_fall_of_sarmizegetusa_regia",
+    "category": "battle",
+    "name_latin": "Excidium Sarmizegetusae Regiae",
+    "name_english": "Fall of Sarmizegetusa Regia",
+    "province": "Dacia",
+    "modern_location": "Gradistea de Munte, Hunedoara County, Romania",
+    "built": 106,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Roman legions stormed the mountaintop Dacian capital after cutting off its water supply, ending the Second Dacian War in Trajan's favor. King Decebalus escaped the fall but took his own life soon after rather than be captured, a scene later carved on Trajan's Column in Rome. The Romans burned the six-citadel fortress and built a new provincial capital 40 kilometers away. Trajan's triumph back in Rome reportedly lasted 123 days of games and celebration.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Sarmizegetusa_Regia",
+     "https://www.heritagedaily.com/2021/03/sarmizegetusa-regia-the-mountain-capital-of-the-dacians/138232"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarmizegetusa_Regia.JPG?width=800",
+    "image_credit": "Ruins of the Dacian sanctuaries at Sarmizegetusa Regia · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     27.9542,
+     44.0792
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_tropaeum_traiani",
+    "category": "battle",
+    "name_latin": "Tropaeum Traiani",
+    "name_english": "Trajan's Victory Monument",
+    "province": "Moesia Inferior",
+    "modern_location": "Adamclisi, Constanta County, Romania",
+    "built": 109,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Trajan raised this 40-meter drum-shaped monument to commemorate his hard-won Dacian War victories, ringed with 54 carved metopes of Roman soldiers battling Dacians and their allies. Unlike the battles it memorializes, the monument itself is a living structure still standing on its hilltop in 117 CE, dedicated to Mars the Avenger. It replaced an earlier altar honoring Roman dead from a costly battle fought nearby. Travelers on the road from Tomis could see it for miles.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Tropaeum_Traiani",
+     "https://www.judaism-and-rome.org/tropaeum-traiani-adamklissi-109-ce"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Monumentul_triumfal_Tropaeum_Traiani_sat_Adamclisi_-_privire_de_ansamblu_01.JPG?width=800",
+    "image_credit": "Tropaeum Traiani monument at Adamclisi, photo by Munteanu Anca · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.14,
+     45.09
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_first_bedriacum",
+    "category": "battle",
+    "name_latin": "Bedriacum",
+    "name_english": "First Battle of Bedriacum",
+    "province": "Italia",
+    "modern_location": "Near Calvatone, Lombardy, Italy",
+    "built": 69,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Vitellius's German legions broke Emperor Otho's army near this obscure Po Valley village, in the opening battle of the chaotic Year of the Four Emperors. Otho, unwilling to prolong a civil war, took his own life two days later rather than fight on. It was the first time in over a century that legion had openly fought legion for the throne. Three more emperors would rise and fall before the year was out.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/First_Battle_of_Bedriacum",
+     "https://en.wikipedia.org/wiki/Battle_of_Bedriacum"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vittoria_Alata_di_Calvatone,_Archaeological_Museum_San_Lorenzo_(Cremona)_06.jpg?width=800",
+    "image_credit": "Winged Victory of Calvatone, bronze statue found near the Bedriacum battle site, Archaeological Museum San Lorenzo, Cremona · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.14,
+     45.09
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_second_bedriacum",
+    "category": "battle",
+    "name_latin": "Bedriacum",
+    "name_english": "Second Battle of Bedriacum",
+    "province": "Italia",
+    "modern_location": "Near Calvatone, Lombardy, Italy",
+    "built": 69,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Vespasian's Danubian legions fought through the night and destroyed Vitellius's field army on the same ground where Otho had lost months earlier, then sacked and burned nearby Cremona in the aftermath. Vitellius was dragged through the streets of Rome and killed within weeks. The victory made Vespasian undisputed emperor and founder of the Flavian dynasty. It ended the bloodiest year of civil war Rome had seen since Actium.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Second_Battle_of_Bedriacum",
+     "https://en.wikipedia.org/wiki/Battle_of_Bedriacum"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rochegrosse_Vitellius_tra%C3%AEn%C3%A9_dans_les_rues_de_Rome_par_la_populace,_1883.jpg?width=800",
+    "image_credit": "Georges Rochegrosse, \"Vitellius Dragged Through the Streets of Rome by the Mob,\" 1883 · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.47,
+     51.6464
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_siege_of_vetera",
+    "category": "battle",
+    "name_latin": "Obsidio Veterae",
+    "name_english": "Siege of Vetera",
+    "province": "Germania Inferior",
+    "modern_location": "Xanten, North Rhine-Westphalia, Germany",
+    "built": 69,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Batavian rebel leader Julius Civilis, a former Roman auxiliary commander, besieged two full legions inside the fortress of Vetera for an entire autumn and winter until starvation forced their surrender. The garrison that marched out under truce was then ambushed and slaughtered anyway. It was the most dangerous native uprising Rome faced along the Rhine frontier. Roman forces crushed the revolt within a year and rebuilt Vetera as a stronger fortress.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Batavian_rebellion",
+     "https://www.livius.org/articles/place/xanten/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nordrhein-Westfalen,_Xanten,_LVR-Arch%C3%A4ologischer_Park_Xanten_NIK_4666.jpg?width=800",
+    "image_credit": "LVR-Archaologischer Park Xanten, on the site of the Roman fortress of Vetera · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.2353,
+     31.7781
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_siege_of_jerusalem_70",
+    "category": "battle",
+    "name_latin": "Obsidio Hierosolymorum",
+    "name_english": "Siege of Jerusalem",
+    "province": "Judaea",
+    "modern_location": "Jerusalem",
+    "built": 70,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Titus's legions surrounded rebel Jerusalem, breached its walls after months of starvation and infighting inside the city, and burned the Second Temple to the ground. Josephus put the dead in the hundreds of thousands, with tens of thousands more sold into slavery. It was the decisive blow of the First Jewish-Roman War and ended Temple-centered Jewish worship for good. Titus and his father Vespasian celebrated the victory with a triumph and the arch that still bears his name in Rome.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(70_CE)",
+     "https://www.worldhistory.org/article/1993/the-siege-of-jerusalem-in-70-ce/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/David_Roberts_-_The_Siege_and_Destruction_of_Jerusalem_by_the_Romans_Under_the_Command_of_Titus,_A.D._70.jpg?width=800",
+    "image_credit": "David Roberts, \"The Siege and Destruction of Jerusalem by the Romans Under the Command of Titus, A.D. 70,\" 1850 · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.2732,
+     32.826
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_siege_of_jotapata",
+    "category": "battle",
+    "name_latin": "Obsidio Iotapatae",
+    "name_english": "Siege of Jotapata",
+    "province": "Judaea",
+    "modern_location": "Yodfat, Galilee, Israel",
+    "built": 67,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Vespasian and his son Titus battered the hilltop Galilean town for 47 days before storming it, killing most of its defenders and enslaving the survivors. The Jewish commander Josephus survived by hiding in a cistern and later became a Roman client, writing the war's most detailed surviving account. It was the opening major siege of the First Jewish-Roman War. The town was never meaningfully rebuilt after its destruction.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Siege_of_Yodfat",
+     "https://www.biblewalks.com/yodfat/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/PikiWiki_Israel_34203_Yodefat_Jotapata.JPG?width=800",
+    "image_credit": "Memorial to the defenders of Yodfat at the site of ancient Jotapata · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.3536,
+     31.3156
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_siege_of_masada",
+    "category": "battle",
+    "name_latin": "Obsidio Masadae",
+    "name_english": "Siege of Masada",
+    "province": "Judaea",
+    "modern_location": "Near the Dead Sea, Israel",
+    "built": 73,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Roman legion X Fretensis built a massive earthen assault ramp up the side of Herod's clifftop fortress to reach the last holdouts of the Jewish revolt. When the defenders breached the walls, they found nearly all 960 Jewish rebels inside had reportedly taken their own lives rather than be captured, according to Josephus. It was the last act of the First Jewish-Roman War, four years after Jerusalem fell. The Roman siege ramp still climbs the fortress's western face today.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Siege_of_Masada",
+     "https://www.britannica.com/place/Masada"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Israel-2013-Aerial_18-Masada.jpg?width=800",
+    "image_credit": "Aerial view of Masada fortress above the Dead Sea, photo by Godot13 · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.53,
+     52.5697
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_watling_street",
+    "category": "battle",
+    "name_latin": "Proelium ad Viam Vitellinam",
+    "name_english": "Battle of Watling Street",
+    "province": "Britannia",
+    "modern_location": "Site disputed; candidate location near Mancetter, Warwickshire, England",
+    "built": 61,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Governor Suetonius Paulinus, with only about 10,000 legionaries against a far larger Britons force, chose a narrow defile that neutralized Queen Boudica's numbers and funneled her warriors onto Roman javelins. Tacitus claimed roughly 80,000 Britons died against fewer than 400 Romans. Boudica died soon after, ending her revolt following the burning of Camulodunum, Londinium, and Verulamium. Historians still dispute the exact battlefield among several candidate sites.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Watling_Street",
+     "https://www.britannica.com/event/Battle-of-Watling-Street"
+    ],
+    "confidence": "low",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Boudica_statue,_Westminster_(8433726848).jpg?width=800",
+    "image_credit": "Statue of Boudica and her daughters, Westminster Bridge, London (1905) · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     34.8903,
+     31.9467
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_siege_of_lydda",
+    "category": "battle",
+    "name_latin": "Obsidio Lyddae",
+    "name_english": "Siege of Lydda",
+    "province": "Judaea",
+    "modern_location": "Lod, Israel",
+    "built": 117,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Roman commanders Lusius Quietus and Marcius Turbo cornered a Jewish rebel force under Julian and Pappus inside Lydda during the empire-wide Kitos War, then stormed the town and crucified many of its defenders. Rabbi Gamaliel II was reportedly trapped inside during the siege. It was one of the closing engagements of the diaspora-wide Jewish revolt that broke out while Trajan was fighting Parthia. The uprising was fully crushed within months, right as Trajan himself lay dying.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Kitos_War",
+     "https://en.wikipedia.org/wiki/Lod"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lod_Mosaic,_12_-_Carole_Raddato.jpg?width=800",
+    "image_credit": "The Lod Mosaic, a Roman-period floor mosaic found in Lod (ancient Lydda), photo by Carole Raddato · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     33.9,
+     35.1833
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_salamis_cyprus_massacre",
+    "category": "battle",
+    "name_latin": "Excidium Salaminis",
+    "name_english": "Sack of Salamis",
+    "province": "Cyprus",
+    "modern_location": "Near Famagusta, Cyprus",
+    "built": 116,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Jewish rebels under a leader named Artemion rose up during the Kitos War and razed Cyprus's provincial capital, with the historian Cassius Dio claiming a staggering 240,000 Greek and Roman dead on the island. Roman forces eventually crushed the uprising and rebuilt the city. Afterward Rome barred Jews from Cyprus entirely, even shipwreck survivors washed ashore, on penalty of death. It stands as the most destructive single episode of the empire-wide Jewish diaspora revolt of 115-117 CE.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Kitos_War",
+     "https://en.wikipedia.org/wiki/Salamis,_Cyprus"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theater_of_Salamis,_Cyprus.jpg?width=800",
+    "image_credit": "Roman-period theatre at Salamis, Cyprus · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     44.5806,
+     33.0936
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_capture_of_ctesiphon",
+    "category": "battle",
+    "name_latin": "Ctesiphon Capta",
+    "name_english": "Capture of Ctesiphon",
+    "province": "Assyria",
+    "modern_location": "Near Salman Pak, Iraq",
+    "built": 116,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Trajan's legions marched down the Tigris and took the Parthian capital, sending the Parthian king Osroes fleeing and seating a Roman puppet, Parthamaspates, on the throne. Trajan reportedly seized the king's golden throne as a trophy and pushed as far as the Persian Gulf, farther east than any Roman army before or after. He was hailed Parthicus by the Senate for the conquest. The gains proved impossible to hold and were largely abandoned within a year of his death.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Trajan's_Parthian_campaign",
+     "https://www.livius.org/articles/place/ctesiphon/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Arch_of_Ctesiphon_at_Taq_Kisra.jpg?width=800",
+    "image_credit": "The Arch of Ctesiphon at Taq Kisra (a later Sasanian-era structure marking the site of the Parthian capital Trajan captured in 116 CE), photo by David Stanley · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     42.75,
+     35.6667
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_siege_of_hatra",
+    "category": "battle",
+    "name_latin": "Obsidio Hatrae",
+    "name_english": "Siege of Hatra",
+    "province": "Mesopotamia",
+    "modern_location": "Al-Jazira, Nineveh Governorate, Iraq",
+    "built": 117,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Trajan personally led the siege of this fortified desert city, but Hatra's archers and defenders rained down fire and arrows that reportedly wounded Trajan himself and forced a Roman withdrawal. It was the emperor's last major military operation before his death later that same year. Hatra's successful defense marked the practical limit of Rome's eastward expansion under Trajan. His successor Hadrian abandoned the eastern conquests entirely within months.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Siege_of_Hatra",
+     "https://www.britannica.com/place/Hatra"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hatra_ruins.jpg?width=800",
+    "image_credit": "Ruins of the fortified city of Hatra, Iraq · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.0206,
+     52.19
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_idistaviso",
+    "category": "battle",
+    "name_latin": "Idistaviso",
+    "name_english": "Battle of Idistaviso",
+    "province": "Free Germania",
+    "modern_location": "Weser river valley, between Minden and Hamelin, Germany",
+    "built": 16,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Germanicus led Roman legions in a punitive campaign against Arminius, the same chieftain who had destroyed Varus's legions at Teutoburg seven years earlier, and broke his army on this open plain by the Weser river. Germanic dead reportedly littered the field and river for miles as they tried to flee. It was Rome's clearest battlefield revenge for the Teutoburg disaster. Tiberius nonetheless recalled Germanicus and abandoned further conquest beyond the Rhine soon after.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Idistaviso",
+     "https://www.varuslegionen.de/en/idistaviso-battle/"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.9167,
+     52.2833
+    ]
+   },
+   "properties": {
+    "id": "poi_battle_angrivarian_wall",
+    "category": "battle",
+    "name_latin": "Pugna ad Vallum Angrivariorum",
+    "name_english": "Battle of the Angrivarian Wall",
+    "province": "Free Germania",
+    "modern_location": "Near Porta Westfalica, Lower Saxony, Germany",
+    "built": 16,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Days after Idistaviso, Arminius made a last stand behind an earthen tribal boundary wall between the Ems and Weser rivers, and Germanicus's legions stormed it in brutal close fighting. Roman accounts claimed a decisive win that scattered the remaining Germanic coalition for the season. It was the closing battle of Germanicus's three-year campaign of revenge for Teutoburg. Rome still chose to withdraw permanently to the Rhine frontier rather than hold the ground won that day.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_the_Angrivarian_Wall",
+     "https://www.varuslegionen.de/en/schlacht-am-angrivarierwall/"
+    ],
+    "confidence": "low",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porta_Westfalica_Blick_von_Kaiser-Wilhelm-Denkmal_auf_Neesen.jpg?width=800",
+    "image_credit": "View over the Porta Westfalica gorge on the Weser, near the presumed battle area, photo by Elya · Wikimedia Commons"
+   }
   }
  ]
 }
