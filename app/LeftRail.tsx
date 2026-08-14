@@ -2,12 +2,14 @@
 
 import { useState } from "react";
 import SitesPanel from "./SitesPanel";
+import LegionLocator from "./LegionLocator";
 import { useIsMobile } from "./useIsMobile";
 
 /** 60px-wide dark left rail, styled after Google Maps' side icons column. Hidden on mobile —
  * the top-left search card's hamburger is the entry point there. */
 export default function LeftRail() {
   const [sitesOpen, setSitesOpen] = useState(false);
+  const [legionsOpen, setLegionsOpen] = useState(false);
   const isMobile = useIsMobile();
 
   if (isMobile) return null;
@@ -35,8 +37,20 @@ export default function LeftRail() {
         <RailButton
           label="Explore cities"
           active={sitesOpen}
-          onClick={() => setSitesOpen((o) => !o)}
+          onClick={() => {
+            setLegionsOpen(false);
+            setSitesOpen((o) => !o);
+          }}
           glyph={<path d="M12 2 4 6v6c0 5 3.5 9.7 8 10 4.5-.3 8-5 8-10V6l-8-4z" />}
+        />
+        <RailButton
+          label="Legions"
+          active={legionsOpen}
+          onClick={() => {
+            setSitesOpen(false);
+            setLegionsOpen((o) => !o);
+          }}
+          glyph={<path d="M12 1 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4zm0 2.2 7 3.1v4.7c0 4.5-3 8.7-7 9.9-4-1.2-7-5.4-7-9.9V6.3l7-3.1zM11 7h2v6h-2zm0 8h2v2h-2z" />}
         />
         <RailButton label="Saved" glyph={<path d="M19 3H5c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />} />
         <RailButton
@@ -50,6 +64,7 @@ export default function LeftRail() {
         />
       </div>
       <SitesPanel open={sitesOpen} onClose={() => setSitesOpen(false)} />
+      <LegionLocator open={legionsOpen} onClose={() => setLegionsOpen(false)} />
     </>
   );
 }
