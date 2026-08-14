@@ -1,0 +1,359 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9187,
+          31.2001
+        ]
+      },
+      "properties": {
+        "id": "learning_alexandria_museion",
+        "name": "The Museion of Alexandria",
+        "category": "library",
+        "one_line": "Ptolemy I founded this royal research institute and library inside the palace quarter around 280 BCE, gathering scholars on a state stipend under one roof. By 117 CE its collection had shrunk from the Ptolemaic peak, but the Museion still trained physicians and grammarians from across the Mediterranean. Hadrian would visit in person within two decades and question its teachers face to face. Salaried scholars still ate for free in its communal hall, a perk satirists mocked for three centuries.",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Musaeum",
+          "https://www.britannica.com/topic/Alexandrian-Museum",
+          "https://en.wikipedia.org/wiki/Library_of_Alexandria"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Great%20Library%20of%20Alexandria%2C%20O.%20Von%20Corven%2C%2019th%20century.jpg?width=800",
+        "image_credit": "19th-century engraving by O. Von Corven, imagining the Great Library's reading hall · Wikimedia Commons",
+        "image_alt": "19th-century artist's imagining of the Great Library of Alexandria's interior"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.8964,
+          31.1825
+        ]
+      },
+      "properties": {
+        "id": "learning_alexandria_serapeum",
+        "name": "The Serapeum of Alexandria",
+        "category": "library",
+        "one_line": "Ptolemy III built this temple to Serapis on Alexandria's highest ground in the 3rd century BCE, and priests later housed an overflow book collection here once the Library ran short of shelf space. Ancient writers put its holdings near 42,800 scrolls, open to scholars willing to climb the hill. In 117 CE it still worked as both cult center and research annex, well before Diocletian's column came to dominate the site. Underground galleries stored papyri the Museion had no room for.",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Serapeum_of_Alexandria",
+          "https://en.wikipedia.org/wiki/Library_of_Alexandria"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Serapeum%20of%20Alexandria%20%28I%29.jpg?width=800",
+        "image_credit": "Ruins of the Serapeum of Alexandria, site of the ancient temple and daughter library · Wikimedia Commons",
+        "image_alt": "Modern photograph of the Serapeum of Alexandria archaeological site"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7048,
+          37.9888
+        ]
+      },
+      "properties": {
+        "id": "learning_athens_academy",
+        "name": "The Academy",
+        "category": "philosophy_school",
+        "one_line": "Plato founded his school around 387 BCE in this grove sacred to the hero Akademos, teaching students who included Aristotle. The Academy stopped meeting as a formal school after its last head, Philo of Larissa, died around 83 BCE, with no successor for two centuries. In 117 CE the grounds stood only as a public park and gymnasium thick with olive trees, the scene Pausanias later described walking through. Marcus Aurelius funded a new Platonic chair in Athens six decades on, but not here.",
+        "province": "Achaea",
+        "modern_location": "Athens, Greece",
+        "extant_117ce": false,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Platonic_Academy",
+          "https://www.newworldencyclopedia.org/entry/Platonic_Academy"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plato%27s%20Academy%2C%20Athens.jpg?width=800",
+        "image_credit": "The archaeological park of Plato's Academy, Athens · Wikimedia Commons",
+        "image_alt": "Modern photograph of the archaeological site of Plato's Academy in Athens"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7433,
+          37.974
+        ]
+      },
+      "properties": {
+        "id": "learning_athens_lyceum",
+        "name": "The Lyceum",
+        "category": "philosophy_school",
+        "one_line": "Aristotle began teaching here around 335 BCE at a gymnasium sacred to Apollo Lykeios, walking the grounds with students in the style that gave Peripatetic philosophy its name. Sulla's troops wrecked the site in 86 BCE, but Andronicus of Rhodes revived the school within a generation. By 117 CE it was again a working center of Peripatetic teaching, with its own palaestra, baths, and library rebuilt Roman-style. Archaeologists found its foundations only in 1996, buried under downtown Athens.",
+        "province": "Achaea",
+        "modern_location": "Athens, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Lyceum_(Classical)",
+          "https://nautil.us/the-accidental-discovery-of-aristotles-paradigm-shifting-school-1261603"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Athens%20Aristotle%27s%20Lyceum.jpg?width=800",
+        "image_credit": "Remains of Aristotle's Lyceum, excavated in downtown Athens in 1996 · Wikimedia Commons",
+        "image_alt": "Archaeological remains of the Lyceum of Aristotle in Athens"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.72265,
+          37.97635
+        ]
+      },
+      "properties": {
+        "id": "learning_athens_stoa_poikile",
+        "name": "The Stoa Poikile",
+        "category": "philosophy_school",
+        "one_line": "Zeno of Citium began teaching under this colonnade around 300 BCE, and the Stoics took their name from the Greek word for its painted porch. Battle murals by Polygnotus and Mikon lined its walls, alongside captured shields nailed up as trophies. Writers of the 2nd century CE still described Athenian philosophers arguing beneath its panels, sharing the space with sword-swallowers and street performers. Its foundations lay buried until archaeologists uncovered them in 1981.",
+        "province": "Achaea",
+        "modern_location": "Athens, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Stoa_Poikile",
+          "https://www.biblicalarchaeology.org/daily/news/stoa-poikile-excavations-in-the-athenian-agora/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stoa%20Poikile%201.jpg?width=800",
+        "image_credit": "Excavated foundations of the Stoa Poikile in the Athenian Agora · Wikimedia Commons",
+        "image_alt": "Foundations of the Stoa Poikile, birthplace of Stoic philosophy, in the Athenian Agora"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7125,
+          37.9835
+        ]
+      },
+      "properties": {
+        "id": "learning_athens_garden_epicurus",
+        "name": "The Garden of Epicurus",
+        "category": "philosophy_school",
+        "one_line": "Epicurus bought this house and garden between the Dipylon Gate and the Academy around 306 BCE, posting an inscription promising barley cake and water to any visitor. Unlike rival schools, the Garden admitted women and enslaved people as full members, scandalizing conservative Athenians. The community still owned and worked the property in 117 CE, carrying on an unbroken line of teachers four centuries long. Headless marble statues found nearby mark roughly where it stood.",
+        "province": "Achaea",
+        "modern_location": "Athens, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://iep.utm.edu/garden/",
+          "https://www.epicureanfriends.com/thread/2930-kepos-epicurus-garden-name-location-history/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Epicurus%20bust.jpg?width=800",
+        "image_credit": "Roman marble bust of Epicurus, copied from a Greek original · Wikimedia Commons",
+        "image_alt": "Marble portrait bust of the philosopher Epicurus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.2121,
+          36.4401
+        ]
+      },
+      "properties": {
+        "id": "learning_rhodes_rhetoric",
+        "name": "The Rhetoric School of Rhodes",
+        "category": "rhetoric_school",
+        "one_line": "The exiled Athenian orator Aeschines founded a school of rhetoric here around 330 BCE after losing his battle with Demosthenes, and Rhodes never lost the reputation he gave it. Apollonius Molon taught both Cicero and Julius Caesar here in the 70s BCE, blending Attic restraint with Asiatic flourish into the Rhodian style. Rome annexed the island outright in 70 CE, ending centuries of nominal freedom, but its teachers kept drawing students. Young Romans still sailed here for lessons in 117 CE.",
+        "province": "Lycia et Pamphylia",
+        "modern_location": "Rhodes, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Apollonius_Molon",
+          "https://en.wikipedia.org/wiki/Aeschines",
+          "https://en.wikipedia.org/wiki/Rhodes"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2023-09-18%20Glyptofreunde%20Rhodos%20Ancient%20Odeon%201.jpg?width=800",
+        "image_credit": "The ancient Odeon on the Acropolis of Rhodes, believed used for rhetoric instruction · Wikimedia Commons",
+        "image_alt": "Ruins of the ancient Odeon on the Acropolis of Rhodes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4784,
+          33.8959
+        ]
+      },
+      "properties": {
+        "id": "learning_berytus_law",
+        "name": "The Law School of Berytus",
+        "category": "law_school",
+        "one_line": "Augustus settled veterans of two legions here around 14 BCE, founding a Roman colony with full citizenship and a Latin-speaking administration on the Phoenician coast. Roman law took root over the following century, and the city's coinage under Trajan showed a priest yoking oxen, the mark of a fresh colony. No named law teacher is documented here yet in 117 CE; the earliest firm mention of a school is a jurist writing in 239 CE. Berytus would train the empire's finest jurists, but later.",
+        "province": "Syria",
+        "modern_location": "Beirut, Lebanon",
+        "extant_117ce": false,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Law_school_of_Berytus",
+          "https://brewminate.com/the-law-school-of-berytus-in-the-ancient-roman-empire/"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20bath%20Beirut%20lebanon%20026.jpg?width=800",
+        "image_credit": "Ruins of the Roman baths of Berytus, ancient Beirut · Wikimedia Commons",
+        "image_alt": "Roman-period ruins in downtown Beirut, ancient Berytus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.7314,
+          39.0092
+        ]
+      },
+      "properties": {
+        "id": "learning_nicopolis_epictetus",
+        "name": "Epictetus's School",
+        "category": "philosophy_school",
+        "one_line": "Domitian expelled all philosophers from Rome around 93 CE, and the freed slave Epictetus crossed to this Roman colony in Epirus to found his own Stoic school. In 117 CE the roughly 62-year-old philosopher still taught in person, drawing students from the Greek and Roman elite to hear lectures he refused to write down. A young officer, Arrian, sat among his pupils around 108 CE, secretly taking notes that became the Discourses. Epictetus taught on here until his death around 135 CE.",
+        "province": "Epirus",
+        "modern_location": "Preveza, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Epictetus",
+          "https://plato.stanford.edu/entries/epictetus/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_odeum_Nicopolis%2C_Greece.jpg?width=800",
+        "image_credit": "The Roman odeon at Nicopolis, capital of the province where Epictetus taught · Wikimedia Commons",
+        "image_alt": "Roman odeon at the archaeological site of Nicopolis, Epirus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1793,
+          39.1204
+        ]
+      },
+      "properties": {
+        "id": "learning_pergamon_asklepieion",
+        "name": "The Asklepieion of Pergamon",
+        "category": "medical_school",
+        "one_line": "Pilgrims seeking cures at this sanctuary of Asclepius followed a sacred way from the city, then slept inside hoping the god would prescribe a remedy in a dream. The cult had drawn the sick here since the 4th century BCE, and by 117 CE its sacred spring and dream halls already worked as something between temple, spa, and clinic. Hadrian's building program would soon add the sanctuary's grand library and rotunda. The city would produce Galen, the era's most celebrated doctor, born here in 129 CE.",
+        "province": "Asia",
+        "modern_location": "Bergama, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Asclepieion_of_Pergamon",
+          "https://en.wikipedia.org/wiki/Galen"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Asclepieion%20%28Pergamon%29.jpg?width=800",
+        "image_credit": "Ruins of the Asklepieion healing sanctuary at Pergamon · Wikimedia Commons",
+        "image_alt": "Ruins of the Asklepieion of Pergamon, ancient sanctuary of Asclepius"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.1613,
+          36.2023
+        ]
+      },
+      "properties": {
+        "id": "learning_antioch_rhetoric",
+        "name": "Antioch",
+        "category": "rhetoric_school",
+        "one_line": "Seleucus I founded Antioch in 300 BCE and filled it with Greek settlers who built a reputation Cicero later praised, calling the city rich in scholars and liberal studies. By 117 CE it ranked third in the empire behind Rome and Alexandria, its rhetoric schools drawing teachers from Roman Syria. The Kitos War tore through the province these years, yet Antioch's intellectual life carried on undisturbed. A bronze Tyche, sculpted by Eutychides generations earlier, stood over the city as its emblem.",
+        "province": "Syria",
+        "modern_location": "Antakya, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pro_Archia_Poeta",
+          "https://en.wikipedia.org/wiki/Antioch",
+          "https://en.wikipedia.org/wiki/Tyche_of_Antioch"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tyche%20Antioch%20Vatican%20Inv2672.jpg?width=800",
+        "image_credit": "Roman marble copy of Eutychides' Tyche of Antioch, Vatican Museums · Wikimedia Commons",
+        "image_alt": "Marble statue personifying the city of Antioch, crowned with a mural crown"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3708,
+          43.2947
+        ]
+      },
+      "properties": {
+        "id": "learning_massilia",
+        "name": "Massilia",
+        "category": "rhetoric_school",
+        "one_line": "Greek colonists from Phocaea founded this port around 600 BCE, and it kept its Greek language and customs long after Rome absorbed the coastline around it. The geographer Strabo, writing under Augustus, said Romans eager to study now went to Massilia instead of crossing to Athens for its schools of rhetoric and philosophy. Gallic families sent sons here to learn Greek so well some local contracts were drafted in the language. In 117 CE the city remained Gaul's leading seat of Greek education.",
+        "province": "Narbonensis",
+        "modern_location": "Marseille, France",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Strabo",
+          "https://en.wikipedia.org/wiki/Massalia"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marseille%20-%20Le%20jardin%20des%20vestiges.JPG?width=800",
+        "image_credit": "Jardin des Vestiges, remains of the ancient port of Massalia, Marseille · Wikimedia Commons",
+        "image_alt": "Archaeological remains of ancient Massalia in the Jardin des Vestiges, Marseille"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      },
+      "properties": {
+        "id": "learning_rome_schools",
+        "name": "Rome",
+        "category": "rhetoric_school",
+        "one_line": "Wealthy Roman families hired live-in Greek tutors, grammatici, to teach sons reading, myth, and poetry before a rhetor took over for public-speaking drills. Quintilian held Rome's first state-paid rhetoric chair a generation earlier, funded by Vespasian, and private schools ran across the city in 117 CE. A boy usually finished grammar around age twelve, then moved into declamation, arguing invented court cases. Athens outranked Rome in prestige, but Rome trained its lawyers and senators.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Education_in_ancient_Rome",
+          "https://en.wikipedia.org/wiki/Quintilian"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Funerary%20relief%20found%20in%20Neumagen%20near%20Trier%2C%20a%20teacher%20with%20three%20discipuli%2C%20around%20180-185%20AD%2C%20Rheinisches%20Landesmuseum%20Trier%2C%20Germany%20%2829656302165%29.jpg?width=800",
+        "image_credit": "Roman funerary relief of a teacher with three pupils, Rheinisches Landesmuseum Trier · Wikimedia Commons",
+        "image_alt": "Roman relief carving depicting a schoolteacher instructing three pupils"
+      }
+    }
+  ]
+}

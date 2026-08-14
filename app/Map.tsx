@@ -1544,6 +1544,59 @@ export default function Map() {
           kick();
         }
 
+        // Phase 22: Intellectual + educational centers (public/data/learning_117.geojson) —
+        // Alexandria's Museion/Serapeum, Athens's four philosophy schools, and the rhetoric/law/
+        // medical schools at Rhodes, Berytus, Nicopolis, Pergamon, Antioch, Massilia, Rome (axis 6c).
+        const learning = await fetch("/data/learning_117.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && learning) {
+          map.addSource("learning", { type: "geojson", data: learning });
+          map.addLayer({
+            id: "learning-point",
+            type: "circle",
+            source: "learning",
+            paint: {
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+              "circle-color": "#3b4a7a",
+              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-width": 1.6,
+            },
+          });
+
+          const learningPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          map.on("mouseenter", "learning-point", (e) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const categoryLabel: Record<string, string> = {
+              library: "Library",
+              philosophy_school: "Philosophy school",
+              rhetoric_school: "Rhetoric school",
+              law_school: "Law school",
+              medical_school: "Medical school",
+              scriptorium: "Scriptorium",
+            };
+            const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.one_line)}</div>` : "";
+            learningPopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(categoryLabel[p.category] || p.category || "")}</div>
+                   ${noteLine}
+                 </div>`,
+              )
+              .addTo(map);
+          });
+          map.on("mouseleave", "learning-point", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          kick();
+        }
+
         // Apply any persisted Layers-panel visibility (all groups default visible).
         applyAllLayers();
       });
