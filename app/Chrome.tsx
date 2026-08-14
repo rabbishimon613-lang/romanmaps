@@ -5,6 +5,8 @@ import type { Map as MLMap } from "maplibre-gl";
 import { useUnits } from "./useUnits";
 import { loadPlaces, searchPlaces, type Place } from "./places";
 import { LAYER_GROUPS, toggleLayer, useLayers } from "./useLayers";
+import { CATEGORY_GROUPS } from "./poiCategories";
+import { toggleHiddenCategory, useHiddenCategories } from "./useHiddenCategories";
 import { useIsMobile } from "./useIsMobile";
 import { usePoiPanel } from "./usePoiPanel";
 import { useKeyboardShortcuts } from "./useKeyboardShortcuts";
@@ -16,7 +18,9 @@ export default function Chrome() {
   const searchInputRef = useRef<HTMLInputElement>(null);
 
   const [layersOpen, setLayersOpen] = useState(false);
+  const [poiCategoriesExpanded, setPoiCategoriesExpanded] = useState(false);
   const layers = useLayers();
+  const hiddenCategories = useHiddenCategories();
   const layersRef = useRef<HTMLDivElement>(null);
   const isMobile = useIsMobile();
   const poiOpen = !!usePoiPanel();
@@ -282,7 +286,7 @@ export default function Chrome() {
 
       {/* Bottom-right: layers button (above zoom controls) + panel */}
       {!hideLayersForSheet && (
-      <div ref={layersRef} style={{ position: "absolute", right: 12, bottom: 186, zIndex: 5 }}>
+      <div ref={layersRef} style={{ position: "absolute", right: 12, bottom: 169, zIndex: 5 }}>
         {layersOpen && (
           <div
             style={{
@@ -294,32 +298,99 @@ export default function Chrome() {
               boxShadow: "0 1px 4px -1px rgba(0,0,0,.3), 0 3px 8px rgba(0,0,0,.15)",
               padding: "8px 0",
               width: 220,
+              maxHeight: "70vh",
+              overflowY: "auto",
             }}
           >
             <div style={{ padding: "6px 16px 10px", fontSize: 13, fontWeight: 600, color: "#3c4043" }}>
               Layers
             </div>
             {LAYER_GROUPS.map((g) => (
-              <label
-                key={g.id}
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 10,
-                  padding: "7px 16px",
-                  fontSize: 13,
-                  color: "#3c4043",
-                  cursor: "pointer",
-                }}
-              >
-                <input
-                  type="checkbox"
-                  checked={layers[g.id]}
-                  onChange={() => toggleLayer(g.id)}
-                  style={{ width: 16, height: 16, cursor: "pointer" }}
-                />
-                {g.label}
-              </label>
+              <div key={g.id}>
+                <label
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 10,
+                    padding: "7px 16px",
+                    fontSize: 13,
+                    color: "#3c4043",
+                    cursor: "pointer",
+                  }}
+                >
+                  <input
+                    type="checkbox"
+                    checked={layers[g.id]}
+                    onChange={() => toggleLayer(g.id)}
+                    style={{ width: 16, height: 16, cursor: "pointer" }}
+                  />
+                  <span style={{ flex: 1 }}>{g.label}</span>
+                  {g.id === "pois" && (
+                    <button
+                      title={poiCategoriesExpanded ? "Hide landmark categories" : "Show landmark categories"}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setPoiCategoriesExpanded((v) => !v);
+                      }}
+                      style={{
+                        width: 20,
+                        height: 20,
+                        display: "grid",
+                        placeItems: "center",
+                        borderRadius: 4,
+                        flexShrink: 0,
+                      }}
+                    >
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="#5f6368"
+                        style={{ transform: poiCategoriesExpanded ? "rotate(180deg)" : "none" }}
+                      >
+                        <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z" />
+                      </svg>
+                    </button>
+                  )}
+                </label>
+                {g.id === "pois" && poiCategoriesExpanded && (
+                  <div style={{ paddingBottom: 4 }}>
+                    {CATEGORY_GROUPS.map((c) => (
+                      <label
+                        key={c.id}
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: 8,
+                          padding: "5px 16px 5px 36px",
+                          fontSize: 12.5,
+                          color: "#3c4043",
+                          cursor: "pointer",
+                        }}
+                      >
+                        <input
+                          type="checkbox"
+                          checked={!hiddenCategories.has(c.id)}
+                          onChange={() => toggleHiddenCategory(c.id)}
+                          style={{ width: 14, height: 14, cursor: "pointer" }}
+                        />
+                        <span
+                          style={{
+                            width: 14,
+                            height: 14,
+                            borderRadius: 999,
+                            background: c.color,
+                            flexShrink: 0,
+                            display: "inline-block",
+                          }}
+                        />
+                        {c.label}
+                      </label>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
           </div>
         )}

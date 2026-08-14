@@ -17,7 +17,7 @@ export default function Legend() {
   if (isMobile && poiOpen) return null;
 
   return (
-    <div style={{ position: "absolute", right: 12, bottom: 214, zIndex: 5 }}>
+    <div style={{ position: "absolute", right: 12, bottom: 217, zIndex: 5 }}>
       {open && (
         <div
           style={{

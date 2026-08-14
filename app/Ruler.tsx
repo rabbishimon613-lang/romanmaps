@@ -159,7 +159,7 @@ export default function Ruler() {
         style={{
           position: "absolute",
           right: 12,
-          bottom: 132,
+          bottom: 121,
           width: 40,
           height: 40,
           borderRadius: 8,

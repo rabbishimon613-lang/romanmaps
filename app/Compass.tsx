@@ -65,7 +65,7 @@ export default function Compass() {
       style={{
         position: "absolute",
         right: 12,
-        bottom: 268,
+        bottom: 313,
         width: 40,
         height: 40,
         borderRadius: 8,

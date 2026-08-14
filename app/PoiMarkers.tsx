@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import maplibregl from "maplibre-gl";
 import { CATEGORY_GROUPS, colorForCategory, glyphForCategory, groupIdForCategory } from "./poiCategories";
 import { useCategoryFilters } from "./CategoryChips";
+import { useHiddenCategories } from "./useHiddenCategories";
 import { selectPoi } from "./usePoiPanel";
 import { useLayers } from "./useLayers";
 
@@ -20,12 +21,15 @@ const CLUSTER_RADIUS_PX = 28;
 const CLUSTER_DISABLE_ZOOM = 14;
 
 /** Renders POIs as Google-Maps-style pill markers (colored circle w/ glyph) via HTML markers.
- * Category chip filter (top row) toggles which categories are visible. The Layers panel's
- * "Landmarks" toggle also gates this component directly (same pattern as PeopleMarkers.tsx) —
- * the native pois-dot/pois-label map layers that toggle used to point at are vestigial
- * (radius/opacity forced to 0), so before this fix the toggle did nothing visible. */
+ * Category chip filter (top row) isolates to only the selected categories; the Layers panel's
+ * per-category checkboxes (useHiddenCategories) independently hide specific ones — both AND
+ * together, see the two `continue` guards below. The Layers panel's "Landmarks" toggle also
+ * gates this component directly (same pattern as PeopleMarkers.tsx) — the native
+ * pois-dot/pois-label map layers that toggle used to point at are vestigial (radius/opacity
+ * forced to 0), so before this fix the toggle did nothing visible. */
 export default function PoiMarkers() {
   const filters = useCategoryFilters();
+  const hiddenCategories = useHiddenCategories();
   const layers = useLayers();
   const visible = layers["pois"];
   const markersRef = useRef<maplibregl.Marker[]>([]);
@@ -69,6 +73,7 @@ export default function PoiMarkers() {
         const category: string = props.category || "";
         const groupId = groupIdForCategory(category);
         if (anyActive && !activeGroups.includes(groupId)) continue;
+        if (hiddenCategories.has(groupId)) continue;
         const [lng, lat] = f.geometry.coordinates as [number, number];
         const pt = map.project([lng, lat]);
         visible.push({ f, x: pt.x, y: pt.y });
@@ -236,7 +241,7 @@ export default function PoiMarkers() {
       markersRef.current.forEach((m) => m.remove());
       markersRef.current = [];
     };
-  }, [filters, visible]);
+  }, [filters, hiddenCategories, visible]);
 
   return null;
 }

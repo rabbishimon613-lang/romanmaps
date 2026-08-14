@@ -27,7 +27,7 @@ export default function HomeButton() {
       style={{
         position: "absolute",
         right: 12,
-        bottom: 240,
+        bottom: 265,
         width: 40,
         height: 40,
         borderRadius: 8,
