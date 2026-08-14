@@ -1,0 +1,343 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.3416,
+          37.9396
+        ]
+      },
+      "properties": {
+        "id": "conventus_ephesus",
+        "name": "Ephesus",
+        "province": "Asia",
+        "modern_location": "near Selçuk, İzmir Province, Turkey",
+        "extant_117ce": true,
+        "notes": "Ephesus headed the conventus Ephesius, the grandest of Asia's assize districts, and the proconsul heard civil and criminal cases in its Odeon and State Agora. Pliny the Elder counted it among nine cities of Asia that held court and ranked it the brightest light of the province. Litigants from Lydia and Ionia converged on its docket rather than wait for the governor's slower stops elsewhere. Serving as advocate before the Ephesus court was a mark of civic prestige.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Conventus_iuridicus",
+          "https://en.wikipedia.org/wiki/Ephesus",
+          "https://www.attalus.org/pliny/hn5b.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ephesus_odeon.JPG?width=800",
+        "image_credit": "Photo: Wikimedia Commons contributors"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1848,
+          39.1325
+        ]
+      },
+      "properties": {
+        "id": "conventus_pergamon",
+        "name": "Pergamon",
+        "province": "Asia",
+        "modern_location": "Bergama, İzmir Province, Turkey",
+        "extant_117ce": true,
+        "notes": "Pergamon headed the conventus Pergamenus, one of nine Asian assize towns Pliny the Elder named as seats of justice. The proconsul convened court beneath the Attalid acropolis, hearing cases from Mysian and Aeolian communities across the district. Pergamon was also famed for medicine and its royal library, lending its court sessions added prestige. The assize drew litigants who otherwise rarely saw a Roman magistrate face to face.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Conventus_iuridicus",
+          "https://en.wikipedia.org/wiki/Pergamon",
+          "https://www.attalus.org/pliny/hn5b.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pergamon_Acropolis.jpg?width=800",
+        "image_credit": "Photo: Wikimedia Commons contributors"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1428,
+          38.4237
+        ]
+      },
+      "properties": {
+        "id": "conventus_smyrna",
+        "name": "Smyrna",
+        "province": "Asia",
+        "modern_location": "İzmir, Turkey",
+        "extant_117ce": true,
+        "notes": "Smyrna headed the conventus Smyrnaeus, one of nine court towns Pliny the Elder named in Asia's assize system. The proconsul held sessions in a city famed for its gridded streets and busy harbor, hearing disputes carried from Ionian coastal towns and inland Lydian communities alike. Smyrna competed openly with Ephesus and Pergamon for primacy in the province, and its assize sessions were part of that rivalry for prestige. Litigants often arrived by sea rather than by the inland roads.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Conventus_iuridicus",
+          "https://en.wikipedia.org/wiki/Smyrna",
+          "https://www.attalus.org/pliny/hn5b.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Agora_of_Smyrna.jpg?width=800",
+        "image_credit": "Photo: Wikimedia Commons contributors"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.0433,
+          38.4823
+        ]
+      },
+      "properties": {
+        "id": "conventus_sardis",
+        "name": "Sardis",
+        "province": "Asia",
+        "modern_location": "near Sart, Manisa Province, Turkey",
+        "extant_117ce": true,
+        "notes": "Sardis headed the conventus Sardianus, a district Pliny the Elder counted among Asia's nine great court towns. As the former capital of Lydia's kings, it hosted the proconsul near its temple of Artemis, hearing suits from towns across the Hermus valley. Sardis later ceded part of its territory when nearby Philadelphia split off into its own assize. Even so, Sardis kept its rank as one of the busiest stops on the governor's circuit.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Conventus_iuridicus",
+          "https://en.wikipedia.org/wiki/Sardis",
+          "https://www.attalus.org/pliny/hn5b.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Artemistempel_Sardes.jpg?width=800",
+        "image_credit": "Photo: Wikimedia Commons contributors"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2775,
+          37.5292
+        ]
+      },
+      "properties": {
+        "id": "conventus_miletus",
+        "name": "Miletus",
+        "province": "Asia",
+        "modern_location": "near Balat, Aydın Province, Turkey",
+        "extant_117ce": true,
+        "notes": "Miletus headed a conventus Milesius attested since the Roman Republic and still active under the Flavian emperors. A governor's inscription from that era assigned at least five neighboring cities, including Magnesia on the Maeander, to bring cases to Miletus. The proconsul convened court near a harbor that had once launched dozens of Greek colonies. Smaller Ionian and Carian towns saved a long trip to Ephesus by having Miletus as their assigned seat instead.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Conventus_iuridicus",
+          "https://en.wikipedia.org/wiki/Miletus",
+          "https://www.cambridge.org/core/journals/journal-of-roman-studies/article/abs/proconsuls-assizes-and-the-administration-of-justice-under-the-empire/2BA772488F443259FA53611CB9A2E821"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Miletus_Buleuterion_in_2007_4593.jpg?width=800",
+        "image_credit": "Photo: Wikimedia Commons contributors"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.4242,
+          37.0381
+        ]
+      },
+      "properties": {
+        "id": "conventus_halicarnassus",
+        "name": "Halicarnassus",
+        "province": "Asia",
+        "modern_location": "Bodrum, Muğla Province, Turkey",
+        "extant_117ce": true,
+        "notes": "Halicarnassus headed a Carian assize district created after Rome stripped nearby Mylasa of conventus status following a devastating raid in 40 BC. The proconsul heard cases in the city where Mausolus once built a tomb ranked among the ancient world's seven wonders. Halicarnassus absorbed several of Mylasa's former dependent towns into its own docket, widening its reach along the Carian coast. Its harbor made the city a convenient stop on the governor's circuit of Asia's southwestern district.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Conventus_iuridicus",
+          "https://en.wikipedia.org/wiki/Halicarnassus",
+          "https://books.openedition.org/ausonius/3410?lang=en"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Halicarnassus_Mausoleum.jpg?width=800",
+        "image_credit": "Photo: Wikimedia Commons contributors"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.9854,
+          37.5918
+        ]
+      },
+      "properties": {
+        "id": "conventus_alabanda",
+        "name": "Alabanda",
+        "province": "Asia",
+        "modern_location": "near Doğanyurt (Araphisar), Çine, Aydın Province, Turkey",
+        "extant_117ce": true,
+        "notes": "Alabanda headed the conventus Alabandensis, a Carian assize district already flourishing when Rome organized the province of Asia around 50 BC. The proconsul held court in the city's bouleuterion, the same hall Alabandan citizens used for local government, hearing suits from towns across the Marsyas valley. Alabanda was known across the ancient world for its dark local marble and gem-like stones. Litigants from smaller Carian communities converged there for the governor's annual visit.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Conventus_iuridicus",
+          "https://en.wikipedia.org/wiki/Alabanda",
+          "https://books.openedition.org/ausonius/3410?lang=en"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alabanda_Bouleuterion.JPG?width=800",
+        "image_credit": "Photo: Wikimedia Commons contributors"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.1593,
+          38.0697
+        ]
+      },
+      "properties": {
+        "id": "conventus_apameia",
+        "name": "Apamea",
+        "province": "Asia",
+        "modern_location": "Dinar, Afyonkarahisar Province, Turkey",
+        "extant_117ce": true,
+        "notes": "Apamea, refounded on the site of Phrygian Celaenae, headed the conventus Apamensis, serving litigants from deep in the Anatolian interior. The proconsul held assizes in a city astride the trade route to the coast, the same standing that made it host to the 188 BC peace treaty between Rome and the Seleucid Empire. Its theater and civic inscriptions recorded generations of business alongside the governor's sessions, a lifeline for inland Phrygian towns far from the sea.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Conventus_iuridicus",
+          "https://en.wikipedia.org/wiki/Apamea_(Phrygia)",
+          "https://www.attalus.org/pliny/hn5b.html"
+        ],
+        "confidence": "high",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.55,
+          38.533
+        ]
+      },
+      "properties": {
+        "id": "conventus_synnada",
+        "name": "Synnada",
+        "province": "Asia",
+        "modern_location": "Şuhut, Afyonkarahisar Province, Turkey",
+        "extant_117ce": true,
+        "notes": "Synnada headed the conventus Synnadensis, a Phrygian assize district Pliny the Elder named among the nine court towns of Asia. The proconsul convened sessions in a city famed for the honey-and-purple marble quarried nearby at Dokimeion and shipped across the empire. Litigants from the mountainous Phrygian interior traveled to Synnada rather than cross the province to the coast. Its inland position made the assize one of the harder stops on the governor's route.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Conventus_iuridicus",
+          "https://en.wikipedia.org/wiki/Synnada",
+          "https://www.attalus.org/pliny/hn5b.html"
+        ],
+        "confidence": "high",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.4919,
+          37.1602
+        ]
+      },
+      "properties": {
+        "id": "conventus_cibyra",
+        "name": "Cibyra",
+        "province": "Asia",
+        "modern_location": "near Gölhisar, Burdur Province, Turkey",
+        "extant_117ce": true,
+        "notes": "Cibyra gave its name to the conventus Cibyraticus, though court sessions were actually held at Laodicea on the Lycus, the most prominent of roughly twenty-five member cities. Pliny the Elder recorded the arrangement, noting Laodicea's rise even as the district kept Cibyra's older name. Cibyra itself stayed wealthy, famed for gladiatorial games and swift horses, visible in its large theater and mosaic-floored odeon. A district named for one city but run from another was a genuine oddity.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Conventus_iuridicus",
+          "https://en.wikipedia.org/wiki/Cibyra",
+          "https://www.attalus.org/pliny/hn5b.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kibyra_Theatre_9919.jpg?width=800",
+        "image_credit": "Photo: Wikimedia Commons contributors"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.9358,
+          39.4989
+        ]
+      },
+      "properties": {
+        "id": "conventus_adramyttium",
+        "name": "Adramyttium",
+        "province": "Asia",
+        "modern_location": "Ören, Burhaniye, Balıkesir Province, Turkey",
+        "extant_117ce": true,
+        "notes": "Adramyttium headed the conventus Adramyttenus, the assize district covering Asia's northwestern corner across Aeolis and the Troad. The proconsul held court in a coastal city founded in the sixth century BC, hearing cases from towns across the plain of Thebe. Its harbor linked the courtroom to sea traffic bound for Troy and the Hellespont. A ship out of Adramyttium later carried the apostle Paul partway toward Rome, a sign of how the port tied local business to the wider empire.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Conventus_iuridicus",
+          "https://en.wikipedia.org/wiki/Adramyttium",
+          "https://www.attalus.org/pliny/hn5b.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%96ren-1.JPG?width=800",
+        "image_credit": "Photo: Wikimedia Commons contributors"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.8705,
+          40.3876
+        ]
+      },
+      "properties": {
+        "id": "conventus_kyzikos",
+        "name": "Cyzicus",
+        "province": "Asia",
+        "modern_location": "near Erdek, Balıkesir Province, Turkey",
+        "extant_117ce": true,
+        "notes": "Cyzicus headed the conventus Cyzicenus, one of eleven assize districts Sulla organized in Asia after defeating Mithridates in 85 BC. The proconsul convened court in a Mysian port wealthy enough to petition the Senate directly over its own privileges, a request preserved in an inscribed decree. Built on an isthmus joined to the mainland by two bridges, the city gave Rome's judges a base on the Sea of Marmara, its assize surviving swings between free-city status and provincial control.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Conventus_iuridicus",
+          "https://en.wikipedia.org/wiki/Cyzicus",
+          "https://en.wikipedia.org/wiki/Asia_(Roman_province)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_remains_of_the_Temple_of_Hadrian,_Cyzicus_(Kyzikos),_the_eighth_wonder_of_the_ancient_world,_Mysia,_Turkey_-_53075583406.jpg?width=800",
+        "image_credit": "Photo: Wikimedia Commons contributors"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.5172,
+          38.3508
+        ]
+      },
+      "properties": {
+        "id": "conventus_philadelphia",
+        "name": "Philadelphia",
+        "province": "Asia",
+        "modern_location": "Alaşehir, Manisa Province, Turkey",
+        "extant_117ce": true,
+        "notes": "Philadelphia sat inside the conventus Sardianus for its first century under Roman rule before becoming the seat of its own assize district. A Flavian-era inscription still listed it under Sardis's court, so the promotion came sometime in the second century, on a date the record never pins down. Founded around 189 BC by King Eumenes II of Pergamon, the city bridged Lydia and Phrygia. Whether its own court had opened by Trajan's death in 117 CE simply went unrecorded.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Conventus_iuridicus",
+          "https://en.wikipedia.org/wiki/Philadelphia_(Asia_Minor)",
+          "https://www.sevenchurches.org/wp-content/uploads/2020/03/Geography-Philadelphia-Wilson-LGC.pdf"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    }
+  ]
+}
