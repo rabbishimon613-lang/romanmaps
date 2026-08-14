@@ -1597,6 +1597,59 @@ export default function Map() {
           kick();
         }
 
+        // Phase 23: Natural landmarks (public/data/landmarks_117.geojson) — volcanoes, sacred
+        // mountains, sacred islands, sea-hazards, sacred springs, and geological wonders people
+        // knew and revered in 117 CE (axis 6d).
+        const landmarks = await fetch("/data/landmarks_117.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && landmarks) {
+          map.addSource("landmarks", { type: "geojson", data: landmarks });
+          map.addLayer({
+            id: "landmarks-point",
+            type: "circle",
+            source: "landmarks",
+            paint: {
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+              "circle-color": "#2e6b4f",
+              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-width": 1.6,
+            },
+          });
+
+          const landmarksPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          map.on("mouseenter", "landmarks-point", (e) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const typeLabel: Record<string, string> = {
+              volcano: "Volcano",
+              sacred_mountain: "Sacred mountain",
+              sacred_island: "Sacred island",
+              sea_hazard: "Sea hazard",
+              sacred_spring: "Sacred spring",
+              wonder: "Geological wonder",
+            };
+            const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.one_line)}</div>` : "";
+            landmarksPopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(typeLabel[p.type] || p.type || "")}</div>
+                   ${noteLine}
+                 </div>`,
+              )
+              .addTo(map);
+          });
+          map.on("mouseleave", "landmarks-point", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          kick();
+        }
+
         // Apply any persisted Layers-panel visibility (all groups default visible).
         applyAllLayers();
       });

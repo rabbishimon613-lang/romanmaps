@@ -1,0 +1,632 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.426,
+     40.8214
+    ]
+   },
+   "properties": {
+    "id": "landmark_vesuvius",
+    "name": "Vesuvius",
+    "type": "volcano",
+    "one_line": "Vesuvius erupted without warning on August 24, 79 CE, burying Pompeii and Herculaneum under volcanic debris and killing thousands nearby. Pliny the Younger watched the ash column rise from across the Bay of Naples and later described his uncle's fatal rescue attempt in two famous letters. By 117 CE farmers had already returned to plant vines on its fertile lower slopes, unaware the mountain could erupt again. No one in the region had even considered it a volcano before that day.",
+    "province": "Italia",
+    "modern_location": "near Naples, Italy",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Mount_Vesuvius",
+     "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD",
+     "https://en.wikipedia.org/wiki/Pliny_the_Younger"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vesuv%20Volaire.jpg?width=800",
+    "image_credit": "Pierre-Jacques Volaire, 18th-century painting of an eruption of Vesuvius · Wikimedia Commons",
+    "image_alt": "18th-century painting of Vesuvius erupting at night over the Bay of Naples"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.9934,
+     37.751
+    ]
+   },
+   "properties": {
+    "id": "landmark_etna",
+    "name": "Etna",
+    "type": "volcano",
+    "one_line": "Etna towered over eastern Sicily as the largest active volcano in the Mediterranean, its summit crater rarely without a plume of smoke. Ancient writers recorded a violent eruption in 122 BCE that buried nearby Catania under debris and ash. Greek and Roman myth chained the giant Typhon beneath its fires and placed Hephaestus's forge inside the mountain. Sailors used its glow as a nighttime landmark for approaching Sicily's eastern coast.",
+    "province": "Sicilia",
+    "modern_location": "near Catania, Sicily, Italy",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Mount_Etna",
+     "https://en.wikipedia.org/wiki/122_BC_eruption_of_Mount_Etna"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20eruption%20of%20Mount%20Etna%20in%201669.%20Etching.%20Wellcome%20V0025181.jpg?width=800",
+    "image_credit": "The eruption of Mount Etna, 17th-century etching, Wellcome Collection · Wikimedia Commons",
+    "image_alt": "Historical etching showing Mount Etna erupting with lava flowing toward the coast"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.2131,
+     38.7891
+    ]
+   },
+   "properties": {
+    "id": "landmark_stromboli",
+    "name": "Stromboli",
+    "type": "volcano",
+    "one_line": "Stromboli erupted in small, steady bursts every twenty minutes or so, a rhythm so constant that sailors nicknamed it the lighthouse of the Mediterranean. Greek and Roman myth placed Aeolus, keeper of the winds, on this island, ruling his floating kingdom from its shores. Ships navigating between Italy and Sicily used the glowing summit to fix their position after dark. The volcano has erupted in essentially this same pattern for over two thousand years.",
+    "province": "Sicilia",
+    "modern_location": "Stromboli, Aeolian Islands, Italy",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Stromboli",
+     "https://en.wikipedia.org/wiki/Aeolus"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stromboli%20Eruption.jpg?width=800",
+    "image_credit": "Stromboli erupting, Aeolian Islands · Wikimedia Commons",
+    "image_alt": "Photograph of Stromboli volcano erupting with glowing lava against a dark sky"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.9623,
+     38.4041
+    ]
+   },
+   "properties": {
+    "id": "landmark_vulcano",
+    "name": "Vulcano",
+    "type": "volcano",
+    "one_line": "Vulcano gave its name to every volcano on Earth, since Romans believed its sulfurous crater sat directly above the forge of Vulcan, god of fire. Thick yellow fumes and boiling mud pools surrounded the main cone, convincing ancient sailors they had found the gods' own furnace. Aeolian islanders mined sulfur and alum straight from its flanks and traded them across the Roman world. The island's Latin name, Vulcania, later gave English the word volcano itself.",
+    "province": "Sicilia",
+    "modern_location": "Vulcano, Aeolian Islands, Italy",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Vulcano",
+     "https://en.wikipedia.org/wiki/Vulcan_(mythology)"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aerial%20image%20of%20the%20La%20Fossa%20crater%20%28Vulcano%29.jpg?width=800",
+    "image_credit": "Aerial view of the La Fossa crater, Vulcano · Wikimedia Commons",
+    "image_alt": "Aerial photograph of the sulfur-stained La Fossa crater on the island of Vulcano"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.3585,
+     40.0855
+    ]
+   },
+   "properties": {
+    "id": "landmark_olympus",
+    "name": "Mount Olympus",
+    "type": "sacred_mountain",
+    "one_line": "Mount Olympus rose over 2,900 meters above the Thermaic Gulf, its jagged summit wrapped in cloud so often that Greeks and Romans placed the throne room of Zeus there. Homer described golden gates guarded by the Horae opening onto an eternal, storm-free peak reserved for the twelve Olympian gods. No ancient writer records anyone reaching the true summit, leaving the gods' exact home unconfirmed by human eyes. Farmers in its foothills watched snow cap the peak nearly year-round.",
+    "province": "Macedonia",
+    "modern_location": "near Litochoro, Greece",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Mount_Olympus",
+     "https://en.wikipedia.org/wiki/Twelve_Olympians"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Olympus%2C%20Greece.png?width=800",
+    "image_credit": "Mount Olympus seen from Litochoro, Greece · Wikimedia Commons",
+    "image_alt": "Photograph of the snow-streaked peaks of Mount Olympus rising above forested foothills"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4453,
+     38.5253
+    ]
+   },
+   "properties": {
+    "id": "landmark_argaeus",
+    "name": "Mount Argaeus",
+    "type": "sacred_mountain",
+    "one_line": "Argaeus rose to roughly 3,900 meters over the Cappadocian plain, its snow-streaked cone visible for miles across the region's volcanic landscape. The geographer Strabo wrote that no one in his lifetime had ever climbed all the way to its summit, and locals treated the peak as sacred ground. Cappadocian kings struck coins showing the mountain topped with a star, tying their dynasty's legitimacy to it. The provincial capital, Caesarea, took its skyline from Argaeus looming behind it.",
+    "province": "Cappadocia",
+    "modern_location": "near Kayseri, Turkey",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Argaeus",
+     "https://en.wikipedia.org/wiki/Mount_Erciyes"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Erciyes%20%28Argaeus%29%2C%20Turkey%20%2832530448702%29.jpg?width=800",
+    "image_credit": "Mount Erciyes, ancient Argaeus, Cappadocia, Turkey · Wikimedia Commons",
+    "image_alt": "Photograph of the snow-capped volcanic cone of Mount Argaeus over the Cappadocian plain"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.9689,
+     35.9425
+    ]
+   },
+   "properties": {
+    "id": "landmark_zaphon",
+    "name": "Mount Zaphon",
+    "type": "sacred_mountain",
+    "one_line": "Mount Zaphon rose only about 1,700 meters above the Syrian coast, yet Canaanite and Greek worshippers alike treated its summit as a divine throne, home to Baal-Hadad and later identified with Zeus Kasios. Ugaritic texts centuries older than Rome describe Baal's palace built there of silver and lapis lazuli. Hadrian would climb it within years of taking power in 117 CE to watch the sunrise from its altar. Ships approaching nearby Seleucia Pieria used its peak as a landfall marker.",
+    "province": "Syria",
+    "modern_location": "Kel Dağı / Jebel al-Aqra, Hatay Province, Turkey",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Jebel_Aqra",
+     "https://en.wikipedia.org/wiki/Mount_Casius"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jebel%20Aqra%20%28Kel%20Da%C4%9F%C4%B1%2C%20Mount%20Casius%29%2C%202008.jpg?width=800",
+    "image_credit": "Jebel Aqra (Mount Kasios / Zaphon), Syria-Turkey border, 2008 · Wikimedia Commons",
+    "image_alt": "Photograph of Mount Zaphon rising above the Syrian coastline"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     26.9006,
+     39.7014
+    ]
+   },
+   "properties": {
+    "id": "landmark_ida_troad",
+    "name": "Mount Ida",
+    "type": "sacred_mountain",
+    "one_line": "Mount Ida rose above the Troad's coastal plain, its forested slopes supplying timber for the ships Homer's heroes launched against Troy. The Iliad staged the judgment of Paris here, where a Trojan shepherd prince awarded Aphrodite a golden apple and doomed his city to war. Priests of Cybele, the Great Mother, kept a cult center on its heights that Roman poets like Virgil traced back to Aeneas's flight from Troy. Springs on the mountain fed the rivers that watered the Troad below.",
+    "province": "Asia",
+    "modern_location": "Kaz Dağı, Balıkesir Province, Turkey",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Mount_Ida_(Turkey)",
+     "https://en.wikipedia.org/wiki/Judgement_of_Paris"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kazdagi%20Sarikiz%20T%C3%BCrbesi.JPG?width=800",
+    "image_credit": "Summit shrine on Kaz Dağı, ancient Mount Ida of the Troad · Wikimedia Commons",
+    "image_alt": "Photograph of a shrine near the summit of Mount Ida in the Troad, Turkey"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.7486,
+     35.1489
+    ]
+   },
+   "properties": {
+    "id": "landmark_ida_crete",
+    "name": "Mount Ida",
+    "type": "sacred_mountain",
+    "one_line": "Mount Ida rose over 2,450 meters as Crete's highest peak, and a cave near its summit was venerated across the Greek world as the birthplace of Zeus. Priests said the infant god's cries were drowned out by clashing bronze shields so his father Cronus would not hear him. Pilgrims left bronze votive shields and figurines in the cave for centuries, many later recovered by archaeologists. Cretan coins stamped Zeus's cave onto their currency well into the Roman period.",
+    "province": "Creta et Cyrenaica",
+    "modern_location": "Psiloritis, Crete, Greece",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Mount_Ida_(Crete)",
+     "https://en.wikipedia.org/wiki/Idaean_Cave"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Olive%20trees%20and%20highest%20mountain%2CIda%20Psiloritis%2C%20on%20Crete%20-%20panoramio.jpg?width=800",
+    "image_credit": "Mount Ida (Psiloritis), Crete, seen beyond olive groves · Wikimedia Commons",
+    "image_alt": "Photograph of Mount Ida on Crete rising behind terraced olive groves"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.25,
+     38.3167
+    ]
+   },
+   "properties": {
+    "id": "landmark_kithairon",
+    "name": "Mount Kithairon",
+    "type": "sacred_mountain",
+    "one_line": "Mount Kithairon divided Boeotia from Attica, its slopes soaked in some of Greek tragedy's darkest myths. Herdsmen exposed the infant Oedipus here on his father's orders, and Euripides staged Pentheus's death at the hands of frenzied Bacchae on this same mountain. A biennial fire festival, the Daidala, once burned wooden effigies on its summit to honor Hera. Shepherds still grazed flocks across its slopes throughout the Roman period, indifferent to the mountain's grim reputation.",
+    "province": "Achaea",
+    "modern_location": "near Mandra, Attica, Greece",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Cithaeron",
+     "https://en.wikipedia.org/wiki/Daedala"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kithairon.jpg?width=800",
+    "image_credit": "Mount Kithairon, Boeotia-Attica border, Greece · Wikimedia Commons",
+    "image_alt": "Photograph of the ridgeline of Mount Kithairon between Boeotia and Attica"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.8356,
+     38.3228
+    ]
+   },
+   "properties": {
+    "id": "landmark_helicon",
+    "name": "Mount Helicon",
+    "type": "sacred_mountain",
+    "one_line": "Mount Helicon held the sacred springs of Aganippe and Hippocrene, waters said to grant poetic inspiration to anyone who drank from them. Hesiod claimed the Muses appeared to him on its slopes and handed him a laurel staff while he tended sheep, launching Greek didactic poetry. A sanctuary of the Muses stood in the mountain's Valley of the Muses, drawing poets and pilgrims for centuries. Pausanias toured its shrines within decades of 117 CE and recorded statues still standing there.",
+    "province": "Achaea",
+    "modern_location": "near Thespies, Boeotia, Greece",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Helicon_(mountain)",
+     "https://en.wikipedia.org/wiki/Valley_of_the_Muses"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Maerten%20van%20Heemskerck%20-%20Concert%20of%20Apollo%20and%20the%20Muses%20on%20Mount%20Helicon%20%28Chrysler%20Museum%20of%20Art%29.jpg?width=800",
+    "image_credit": "Maerten van Heemskerck, \"Concert of Apollo and the Muses on Mount Helicon,\" Chrysler Museum of Art · Wikimedia Commons",
+    "image_alt": "16th-century painting of Apollo and the Muses gathered on Mount Helicon"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.5875,
+     38.53
+    ]
+   },
+   "properties": {
+    "id": "landmark_parnassus",
+    "name": "Mount Parnassus",
+    "type": "sacred_mountain",
+    "one_line": "Mount Parnassus rose more than 2,450 meters above Delphi, its twin peaks called the Phaedriades framing the oracle sanctuary at its base. Greeks and Romans alike considered it Apollo's mountain and the meeting place of the nine Muses, sacred ground distinct from the temple complex below. The Corycian Cave high on its slopes held centuries of votive offerings to Pan and local nymphs. Snow crowned its summit through much of the year, visible for miles across the Gulf of Corinth.",
+    "province": "Achaea",
+    "modern_location": "near Delphi, Greece",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Mount_Parnassus",
+     "https://en.wikipedia.org/wiki/Corycian_Cave"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Parnassus%20Daulis%20-%20Skene%20James%20-%201838-1845.jpg?width=800",
+    "image_credit": "James Skene, 19th-century watercolor of Mount Parnassus near Daulis · Wikimedia Commons",
+    "image_alt": "19th-century watercolor depicting Mount Parnassus above the Greek countryside"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.2686,
+     37.3964
+    ]
+   },
+   "properties": {
+    "id": "landmark_delos",
+    "name": "Delos",
+    "type": "sacred_island",
+    "one_line": "Delos measured barely 5 square kilometers, yet Greek myth held that Leto gave birth to Apollo and Artemis here after Zeus anchored the once-floating island to the seabed. A sanctuary of temples, treasuries, and stone lions grew around the birth site over centuries. Rome declared the island a free port in 166 BCE, briefly making it one of the Mediterranean's busiest slave markets before pirates sacked it in 88 BCE. By 117 CE Delos survived mostly as a quiet pilgrimage ruin.",
+    "province": "Achaea",
+    "modern_location": "Delos, Cyclades, Greece",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Delos",
+     "https://en.wikipedia.org/wiki/Sack_of_Delos_(88_BC)"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20Apollo%20Delians%20Delos%200502227.jpg?width=800",
+    "image_credit": "Ruins of the Temple of Apollo, Delos · Wikimedia Commons",
+    "image_alt": "Photograph of the ruined Temple of Apollo on the island of Delos"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.4467,
+     40.4589
+    ]
+   },
+   "properties": {
+    "id": "landmark_samothrace",
+    "name": "Samothrace",
+    "type": "sacred_island",
+    "one_line": "Samothrace rose sharply from the northern Aegean to Mount Fengari, at nearly 1,611 meters the tallest peak in the Aegean Sea. Homer placed Poseidon on this very summit, watching the battle for Troy unfold across the water below. The island's height made it a landmark sailors used to navigate the open sea route between the Hellespont and mainland Greece. Its steep, harborless coastline kept Samothrace remote even as its famous sanctuary drew pilgrims from across the Mediterranean.",
+    "province": "Thracia",
+    "modern_location": "Samothraki, Greece",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Samothrace",
+     "https://en.wikipedia.org/wiki/Saos_(mountain)"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samothraki%20island.jpg?width=800",
+    "image_credit": "The island of Samothrace, northern Aegean Sea · Wikimedia Commons",
+    "image_alt": "Photograph of the steep, mountainous coastline of Samothrace island"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.2874,
+     37.0593
+    ]
+   },
+   "properties": {
+    "id": "landmark_ortygia",
+    "name": "Ortygia",
+    "type": "sacred_island",
+    "one_line": "Ortygia formed the small island heart of Syracuse, joined to the mainland by a short causeway and centered on the freshwater spring of Arethusa. Greek myth told how the nymph Arethusa fled the river god Alpheus under the sea from Greece and resurfaced here as a spring, fresh water yards from the saltwater harbor. Ancient writers marveled that objects dropped into Greece's Alpheus River were said to reappear at this fountain. Papyrus plants, otherwise unknown in Europe, grew wild along its banks.",
+    "province": "Sicilia",
+    "modern_location": "Syracuse, Sicily, Italy",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Ortygia",
+     "https://en.wikipedia.org/wiki/Fountain_of_Arethusa"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fonte%20Aretusa%20e%20papiro.jpg?width=800",
+    "image_credit": "The Fountain of Arethusa with papyrus plants, Ortygia, Syracuse · Wikimedia Commons",
+    "image_alt": "Photograph of the Fountain of Arethusa on Ortygia island, ringed with papyrus"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.642,
+     38.2513
+    ]
+   },
+   "properties": {
+    "id": "landmark_scylla_charybdis",
+    "name": "Scylla and Charybdis",
+    "type": "sea_hazard",
+    "one_line": "The Strait of Messina narrows to barely 3 kilometers between Italy and Sicily, its currents and whirlpools giving rise to a myth of two sea monsters devouring passing ships. Homer's Odyssey placed the six-headed Scylla on one rocky shore and the whirlpool Charybdis on the other, forcing Odysseus to choose the lesser evil. Roman sailors treated the crossing with caution, since tidal currents through the strait ran dangerously fast. The Calabrian town of Scilla still carries the monster's name.",
+    "province": "Italia",
+    "modern_location": "Strait of Messina, Italy",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Scylla_and_Charybdis",
+     "https://en.wikipedia.org/wiki/Strait_of_Messina"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Scylla%20and%20Charybdis.jpg?width=800",
+    "image_credit": "Artistic depiction of Scylla and Charybdis in the Strait of Messina · Wikimedia Commons",
+    "image_alt": "Artwork depicting the mythical sea monsters Scylla and Charybdis"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.1897,
+     36.4322
+    ]
+   },
+   "properties": {
+    "id": "landmark_cape_malea",
+    "name": "Cape Malea",
+    "type": "sea_hazard",
+    "one_line": "Cape Malea juts from the southeastern Peloponnese into open water, and ancient sailors dreaded rounding it more than almost any other point in the Mediterranean. Unpredictable winds and sudden storms off the cape wrecked so many ships that a Greek proverb urged sailors to forget their homes once they had passed it. Homer's Odyssey blew Odysseus badly off course here, delaying his return by years. Merchant ships often crossed the Corinth isthmus overland specifically to avoid this passage.",
+    "province": "Achaea",
+    "modern_location": "Laconia, Peloponnese, Greece",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Cape_Maleas",
+     "https://en.wikipedia.org/wiki/Odyssey"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cape%20Malea%20and%20Elafonissos%20island%20in%20the%20Bay%20of%20Vatika.ISS015-E-9024.JPG?width=800",
+    "image_credit": "Cape Malea and Elafonissos island, NASA ISS photograph · Wikimedia Commons",
+    "image_alt": "Satellite photograph of Cape Malea at the tip of the southeastern Peloponnese"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.3536,
+     36.1408
+    ]
+   },
+   "properties": {
+    "id": "landmark_pillars_of_hercules",
+    "name": "Pillars of Hercules",
+    "type": "sea_hazard",
+    "one_line": "The Pillars of Hercules marked the narrow strait between the Rock of Gibraltar and the North African coast, the westernmost edge of the world Greeks and Romans considered known. Myth held that Hercules split a single mountain in two, or dragged its peaks apart, to open a sea passage during his tenth labor. Beyond the pillars lay the Atlantic, called Oceanus, treated as the boundary of the habitable earth. The later motto non plus ultra, nothing further beyond, grew from this exact spot.",
+    "province": "Baetica",
+    "modern_location": "Strait of Gibraltar",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Pillars_of_Hercules",
+     "https://en.wikipedia.org/wiki/Rock_of_Gibraltar"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rock%20of%20Gibraltar%201810.jpg?width=800",
+    "image_credit": "The Rock of Gibraltar, 1810 painting · Wikimedia Commons",
+    "image_alt": "Early 19th-century painting of the Rock of Gibraltar overlooking the strait"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.728,
+     47.4622
+    ]
+   },
+   "properties": {
+    "id": "landmark_fontes_sequanae",
+    "name": "Fontes Sequanae",
+    "type": "sacred_spring",
+    "one_line": "The springs of Fontes Sequanae fed the source of the Seine River near Dijon, where Gauls and later Romans worshipped the healing goddess Sequana. Pilgrims threw more than a thousand wooden and bronze votive offerings into the sacred pool, many carved as eyes, limbs, and organs representing ailments they hoped the goddess would cure. A bronze statuette found at the site shows Sequana standing in a duck-prowed boat, arms spread in welcome. The spring still flows from the same plateau today.",
+    "province": "Gallia Belgica",
+    "modern_location": "near Saint-Germain-Source-Seine, Côte-d'Or, France",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Sequana",
+     "https://en.wikipedia.org/wiki/Source-Seine"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sequana%20in%20her%20Duckboat.jpg?width=800",
+    "image_credit": "Bronze statuette of the goddess Sequana in her duck-prowed boat, found at Fontes Sequanae · Wikimedia Commons",
+    "image_alt": "Bronze figurine of the goddess Sequana standing in a duck-shaped boat"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.786,
+     45.36
+    ]
+   },
+   "properties": {
+    "id": "landmark_fontes_aponi",
+    "name": "Fontes Aponi",
+    "type": "sacred_spring",
+    "one_line": "Fontes Aponi supplied Padua's countryside with thermal water surging out of the ground at nearly 80 degrees Celsius, among the hottest natural springs Romans knew of. Worshippers credited the healing waters to the local god Aponus and built an oracular shrine here that used lots to answer visitors' questions. The poet Martial praised the springs' curative reputation in verse during the late 1st century. Wealthy Romans built villas near the site specifically to take the waters.",
+    "province": "Italia",
+    "modern_location": "Abano Terme, Padua, Italy",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Abano_Terme",
+     "https://en.wikipedia.org/wiki/Aponus"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ingresso%20Parco%20Montirone%20%28Abano%20Terme%29%2001.JPG?width=800",
+    "image_credit": "Entrance to the Montirone archaeological park, site of the Roman-era Fontes Aponi springs, Abano Terme · Wikimedia Commons",
+    "image_alt": "Photograph of the entrance to the Montirone park at the site of ancient Fontes Aponi"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.9762,
+     42.0784
+    ]
+   },
+   "properties": {
+    "id": "landmark_fons_bandusiae",
+    "name": "Fons Bandusiae",
+    "type": "sacred_spring",
+    "one_line": "Fons Bandusiae survives today only through the ode Horace addressed to it around 23 BCE, promising the spring a sacrificed kid goat for its cool water on the hottest days. Its exact location is disputed, with the strongest tradition pointing to a site near the poet's Sabine farm outside Licenza, east of Rome. Horace boasted the spring would grow more famous than any named in Greek poetry, a claim history validated. No inscription has confirmed which spring he meant, so the site stays unsettled.",
+    "province": "Italia",
+    "modern_location": "near Licenza, Lazio, Italy (location disputed)",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Spring_of_Bandusium",
+     "https://en.wikipedia.org/wiki/Horace%27s_Villa"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fons%20bandusiae.JPG?width=800",
+    "image_credit": "The spring traditionally identified as Fons Bandusiae, near Licenza, Italy · Wikimedia Commons",
+    "image_alt": "Photograph of a small spring in the Sabine hills traditionally identified as Fons Bandusiae"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.1394,
+     40.8267
+    ]
+   },
+   "properties": {
+    "id": "landmark_solfatara",
+    "name": "Solfatara",
+    "type": "wonder",
+    "one_line": "Solfatara formed a shallow volcanic crater near Pozzuoli, its cracked yellow floor venting sulfurous steam at temperatures near 160 degrees Celsius. Romans believed the site was the entrance to Vulcan's forge and named it the Forum Vulcani, ground that seemed to breathe fire underfoot. Bathhouses nearby channeled the crater's heat into steam treatments, popular with wealthy visitors to Baiae. Ancient visitors said walking the crater floor made a hollow sound, as if the ground beneath was empty.",
+    "province": "Italia",
+    "modern_location": "Pozzuoli, near Naples, Italy",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Solfatara_(volcano)",
+     "https://en.wikipedia.org/wiki/Phlegraean_Fields"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Goethe%2C%20Die%20Solfatara%20von%20Pozzuoli%2C%201787.jpg?width=800",
+    "image_credit": "Johann Wolfgang von Goethe, drawing of the Solfatara at Pozzuoli, 1787 · Wikimedia Commons",
+    "image_alt": "18th-century drawing of the steaming sulfur crater of Solfatara near Pozzuoli"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     29.1211,
+     37.9203
+    ]
+   },
+   "properties": {
+    "id": "landmark_pamukkale",
+    "name": "Pamukkale",
+    "type": "wonder",
+    "one_line": "Hierapolis grew around white travertine terraces, formed as hot springs cascaded down a cliff nearly 200 meters high, cooling into stepped pools of mineral stone. Romans built the city above a spring called the Sacred Pool, believing its waters healed alongside a lethal cave nearby, the Plutonium, sacred to Pluto. Ancient writers described birds dropping dead from vapors at its entrance, later traced to carbon dioxide gas. The terraces gave the site its modern name, cotton castle.",
+    "province": "Asia",
+    "modern_location": "Denizli Province, Turkey",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Pamukkale",
+     "https://en.wikipedia.org/wiki/Hierapolis",
+     "https://en.wikipedia.org/wiki/Plutonium_(Hierapolis)"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pamukkale%20Hierapolis%20Travertine%20pools.JPG?width=800",
+    "image_credit": "White travertine terrace pools at Pamukkale, near Hierapolis · Wikimedia Commons",
+    "image_alt": "Photograph of white mineral travertine terraces and pools at Pamukkale"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4511,
+     30.3258
+    ]
+   },
+   "properties": {
+    "id": "landmark_petra_siq",
+    "name": "The Siq at Petra",
+    "type": "wonder",
+    "one_line": "The Siq formed a natural sandstone gorge over a kilometer long, cut by flash floods into walls that rise as high as 182 meters on either side. Nabataean engineers carved votive niches, water channels, and a dam into the rock to control flooding and guide pilgrims toward the city's facades. Walking the winding passage, visitors emerged at its far end facing Al-Khazneh, the Treasury, cut into the cliff face. Trajan had annexed the Nabataean kingdom as Roman Arabia just years before 117 CE.",
+    "province": "Arabia",
+    "modern_location": "Petra, Jordan",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Siq",
+     "https://en.wikipedia.org/wiki/Petra",
+     "https://en.wikipedia.org/wiki/Nabataean_Kingdom"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Petra%20Siq%2C%20entrance%20to%20the%20ancient%20Nabatean%20city%20of%20Petra%2C%20Jordan.jpg?width=800",
+    "image_credit": "The Siq, the narrow sandstone gorge leading into Petra, Jordan · Wikimedia Commons",
+    "image_alt": "Photograph of the narrow sandstone gorge of the Siq leading into Petra"
+   }
+  }
+ ]
+}
