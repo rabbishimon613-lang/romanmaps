@@ -32,6 +32,8 @@ const G_FOUNTAIN = "M12 2a4 4 0 0 0-4 4h2a2 2 0 0 1 4 0h2a4 4 0 0 0-4-4zm-7 20h1
 // Four-pointed "clash" burst — battles are events, not standing structures, so a starburst reads
 // clearer at small marker size than a literal crossed-swords glyph would.
 const G_BATTLE = "M12 2 14 10 22 12 14 14 12 22 10 14 2 12 10 10Z";
+// Simple ship-hull-and-mast silhouette, straight lines only for reliable small-size rendering.
+const G_SHIPWRECK = "M11 2h2v9h4l-1 2H8l-1-2h4V2zM5 16h14l-2 4H7l-2-4z";
 
 export const CATEGORY_GROUPS: CategoryGroup[] = [
   { id: "religious",       label: "Temples & shrines",           short: "Temples",      color: "#c94b4b", categories: ["temple","synagogue","mithraeum","sanctuary","oracle","asklepieion"], glyph: G_TEMPLE },
@@ -50,6 +52,7 @@ export const CATEGORY_GROUPS: CategoryGroup[] = [
   { id: "transit",         label: "Bridges & gates",             short: "Gateways",     color: "#6a6a6a", categories: ["road","gate","bridge"], glyph: G_BRIDGE },
   { id: "water",           label: "Fountains",                   short: "Fountains",    color: "#4a8cbf", categories: ["fountain"], glyph: G_FOUNTAIN },
   { id: "battles",         label: "Battlefields",                short: "Battles",      color: "#7a1f1f", categories: ["battle"], glyph: G_BATTLE },
+  { id: "shipwrecks",      label: "Shipwrecks",                  short: "Wrecks",       color: "#3d6b8c", categories: ["shipwreck"], glyph: G_SHIPWRECK },
 ];
 
 export const DEFAULT_COLOR = "#8b1a1a";

@@ -48,9 +48,9 @@ export default function PoiMarkers() {
         const p: any = f.properties || {};
         if (f.geometry?.type !== "Point") return false;
         // "extant_117ce" gates standing structures — a destroyed/not-yet-built building
-        // shouldn't get a pin. Battles are historical-memory markers, not structures (almost
-        // none are ever "extant" — they're events), so they're exempt from that gate.
-        return p.extant_117ce === true || p.category === "battle";
+        // shouldn't get a pin. Battles and shipwrecks are historical-memory event markers, not
+        // structures (almost never "extant"), so they're exempt from that gate.
+        return p.extant_117ce === true || p.category === "battle" || p.category === "shipwreck";
       });
       featuresRef.current = feats;
       return feats;

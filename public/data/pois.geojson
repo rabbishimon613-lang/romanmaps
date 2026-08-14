@@ -9021,6 +9021,294 @@
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porta_Westfalica_Blick_von_Kaiser-Wilhelm-Denkmal_auf_Neesen.jpg?width=800",
     "image_credit": "View over the Porta Westfalica gorge on the Weser, near the presumed battle area, photo by Elya · Wikimedia Commons"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.3053,
+     35.8836
+    ]
+   },
+   "properties": {
+    "id": "poi_shipwreck_antikythera",
+    "category": "shipwreck",
+    "name_latin": "Antikythera Wreck",
+    "name_english": "Antikythera Wreck",
+    "province": "Achaea",
+    "modern_location": "Off Antikythera island, Greece",
+    "built": -60,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "This merchant ship went down off Antikythera around 60 BCE carrying a plundered cargo of Greek art bound for Rome. Divers recovered 36 marble statues, bronze figures including the Antikythera Youth, and the corroded gears of the Antikythera Mechanism, an astronomical calculator centuries ahead of its time. The wreck lay at 55 meters and yielded finds still studied today.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Antikythera_wreck",
+     "https://en.wikipedia.org/wiki/Antikythera_Ephebe",
+     "https://en.wikipedia.org/wiki/Antikythera_mechanism"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Antikythera_Ephebe,_bronze,_70%E2%80%9360_BC,_NAMA_X_13396,_225684.jpg?width=800",
+    "image_credit": "Antikythera Ephebe bronze statue, National Archaeological Museum Athens · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.148,
+     43.017
+    ]
+   },
+   "properties": {
+    "id": "poi_shipwreck_madrague_de_giens",
+    "category": "shipwreck",
+    "name_latin": "Madrague de Giens Wreck",
+    "name_english": "Madrague de Giens Wreck",
+    "province": "Gallia Narbonensis",
+    "modern_location": "Giens Peninsula near Toulon, France",
+    "built": -65,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "This 40-meter Roman freighter sank off the Giens Peninsula around 65 BCE hauling roughly 6,000 Dressel 1B wine amphorae stamped by the potter Publius Veveius Papus. At 400 tons deadweight it ranks among the largest Roman shipwrecks ever excavated. French Navy divers found it in 1967, launching France's first scientific underwater excavation.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Madrague_de_Giens_(shipwreck)",
+     "https://unesdoc.unesco.org/ark:/48223/pf0000076552"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Madrague_de_Giens_Roman_shipwreck_in_the_Museum_of_Ancient_Seafaring_in_Mainz,_Germany_(48987720778).jpg?width=800",
+    "image_credit": "Madrague de Giens wreck display, Museum of Ancient Seafaring, Mainz · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.164,
+     44.706
+    ]
+   },
+   "properties": {
+    "id": "poi_shipwreck_comacchio",
+    "category": "shipwreck",
+    "name_latin": "Comacchio Wreck",
+    "name_english": "Comacchio Wreck",
+    "province": "Italia",
+    "modern_location": "Valle Ponti near Comacchio, Italy",
+    "built": -12,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "A flat-bottomed river barge sank in the Po delta lagoon near Comacchio around 12 BCE, carrying 102 lead ingots weighing 3.1 tons, boxwood logs, and amphorae of wine and oil. Waterlogged mud preserved leather sandals, a soldier's kit, and a bronze statuette of Hercules and Nereus. Drainage workers struck the hull in 1980.",
+    "sources": [
+     "https://imperiumromanum.pl/en/curiosities/wreck-of-roman-ship-from-comacchio/",
+     "https://link.springer.com/article/10.1007/s12520-021-01430-0",
+     "https://www.ferraraterraeacqua.it/en/comacchio/discover-the-area/art-and-culture/museums-and-galleries/museum-of-the-roman-ship"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Museo_Delta_Antico_(Comacchio)_03_Eracle_e_Nereo.jpg?width=800",
+    "image_credit": "Bronze Hercules and Nereus statuette from the Comacchio wreck cargo, Museo Delta Antico · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.54,
+     37.62
+    ]
+   },
+   "properties": {
+    "id": "poi_shipwreck_mazara_del_vallo",
+    "category": "shipwreck",
+    "name_latin": "Mazara del Vallo Wreck",
+    "name_english": "Mazara del Vallo Wreck",
+    "province": "Sicilia",
+    "modern_location": "Off Mazara del Vallo, Sicily, Italy",
+    "built": -100,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "A spearfisherman mistook this Republican-era wreck for a rock three nautical miles off Mazara del Vallo, at 46 meters down. Hundreds of Dressel 1A amphorae, the standard Italian wine jar of the 2nd and 1st centuries BCE, litter the seabed around two lead anchor stocks. Italy's culture minister called it one of the most important underwater finds in years.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Mazara_del_Vallo_Roman_shipwreck",
+     "https://www.cnn.com/2026/08/10/science/sicily-roman-shipwreck-scli-intl"
+    ],
+    "confidence": "high",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.475,
+     43.023
+    ]
+   },
+   "properties": {
+    "id": "poi_shipwreck_titan",
+    "category": "shipwreck",
+    "name_latin": "Titan Wreck",
+    "name_english": "Titan Wreck",
+    "province": "Gallia Narbonensis",
+    "modern_location": "Off Ile du Levant near Hyeres, France",
+    "built": -50,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "A flat-bottomed trader of 20 to 25 meters sank east of the Ile du Levant around 50 BCE with some 700 Dressel 12 amphorae of fish sauce from Baetica in its hold. A fisherman found it in 1952 while working a diving bell. Philippe Tailliez led France's second underwater archaeological excavation here in 1957, a 62-day campaign.",
+    "sources": [
+     "https://fr.wikipedia.org/wiki/Titan_(%C3%A9pave)",
+     "https://www.atlaspalm.fr/s14_titan.htm"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.106,
+     42.505
+    ]
+   },
+   "properties": {
+    "id": "poi_shipwreck_cap_bear_3",
+    "category": "shipwreck",
+    "name_latin": "Cap Bear 3 Wreck",
+    "name_english": "Cap Bear 3 Wreck",
+    "province": "Gallia Narbonensis",
+    "modern_location": "Off Port-Vendres, France",
+    "built": -100,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "This 12 to 14 meter coastal trader went down south of Port-Vendres around 100 BCE loaded with Dressel 1B, Tarraconensis 1, and Pascual 1 wine amphorae. Its hold also held Roman bronze furniture, including couch fittings inlaid with silver and a bucket stamped with a Bacchic mask. The cargo captures the moment Spanish wine began challenging Italian imports.",
+    "sources": [
+     "https://journals.openedition.org/archaeonautica/5545"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.85,
+     43.42
+    ]
+   },
+   "properties": {
+    "id": "poi_shipwreck_dramont_a",
+    "category": "shipwreck",
+    "name_latin": "Dramont A Wreck",
+    "name_english": "Dramont A Wreck",
+    "province": "Gallia Narbonensis",
+    "modern_location": "Off Saint-Raphael, France",
+    "built": -50,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Dramont A sank in the reef-strewn waters off Saint-Raphael around 50 BCE, one of more than ten wrecks charted in the Dramont anchorage alone. It carried Italian wine amphorae alongside fine Campanian black-glazed tableware bound for Roman Gaul. Archaeologists label the Dramont wrecks alphabetically from A through J for the density of losses here.",
+    "sources": [
+     "https://www.saint-raphael.com/en/discover/the-sea/the-underwater-world/shipwreck-map"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.86,
+     43.42
+    ]
+   },
+   "properties": {
+    "id": "poi_shipwreck_dramont_d",
+    "category": "shipwreck",
+    "name_latin": "Dramont D Wreck",
+    "name_english": "Dramont D Wreck",
+    "province": "Gallia Narbonensis",
+    "modern_location": "Off Saint-Raphael, France",
+    "built": 45,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "This 20-meter merchant ship sank at Dramont around 45 CE carrying a hold of Dressel 2-4 wine amphorae, the standard jar of the early Imperial wine trade. It rests among a cluster of wrecks piled on the same treacherous stretch of coast near Saint-Raphael. The Oxford Roman Economy Project catalogs it among thousands of wrecks charting Rome's seaborne wine trade.",
+    "sources": [
+     "https://oxrep.classics.ox.ac.uk/databases/sites/france/dramont/768_dramont_d/"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.689,
+     43.207
+    ]
+   },
+   "properties": {
+    "id": "poi_shipwreck_la_roche_fouras",
+    "category": "shipwreck",
+    "name_latin": "La Roche Fouras Wreck",
+    "name_english": "La Roche Fouras Wreck",
+    "province": "Gallia Narbonensis",
+    "modern_location": "Off Cap Camarat near Saint-Tropez, France",
+    "built": -110,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "A small 10-meter coastal trader wrecked off Cap Camarat near Saint-Tropez around 110 BCE, its hold packed with Dressel 1C wine amphorae. Only a compact 6 by 2 meter patch of hull survived, lashed together in the mortise-and-tenon style typical of Republican-era shipbuilding. It represents the modest coastal traffic that fed wine along the Provencal coast.",
+    "sources": [
+     "https://museum.wa.gov.au/maritime-archaeology-db/bibliography/mediterranean-hull-types-compared-1-la-roche-fouras"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.077,
+     47.0
+    ]
+   },
+   "properties": {
+    "id": "poi_shipwreck_lake_neuchatel",
+    "category": "shipwreck",
+    "name_latin": "Lake Neuchatel Wreck",
+    "name_english": "Lake Neuchatel Wreck",
+    "province": "Germania Superior",
+    "modern_location": "Lake Neuchatel near Thielle, Switzerland",
+    "built": 35,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "This Roman transport sank near the mouth of the Thielle Canal on Lake Neuchatel sometime between 20 and 50 CE, likely supplying legions on the Rhine frontier. Drone photography spotted the site in 2024, and divers raised some 600 intact objects: Spanish olive oil amphorae, gladius swords, and a dismantled wagon with its wheels. Archaeologists nicknamed it the Eagles' Wreck.",
+    "sources": [
+     "http://www.thehistoryblog.com/archives/75705",
+     "https://www.swissinfo.ch/eng/history/roman-cargo-found-at-the-bottom-of-lake-neuch%C3%A2tel/91155472"
+    ],
+    "confidence": "high",
+    "image_url": null,
+    "image_credit": null
+   }
   }
  ]
 }
