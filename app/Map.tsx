@@ -1831,12 +1831,13 @@ export default function Map() {
             if (!f) return;
             const p: any = f.properties || {};
             const noteLine = p.notes ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.notes)}</div>` : "";
+            const cultureLabel = p.culture ? p.culture.charAt(0).toUpperCase() + p.culture.slice(1) : "";
             substratePopup
               .setLngLat(e.lngLat)
               .setHTML(
                 `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
                    <div style="font-weight: 600;">${escapeHtml(p.name_english || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">Etruscan ${escapeHtml(p.type || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(cultureLabel)} ${escapeHtml(p.type || "")}</div>
                    ${noteLine}
                  </div>`,
               )

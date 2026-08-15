@@ -112,6 +112,11 @@ export default function SitesPanel({ open, onClose }: { open: boolean; onClose: 
               Province of {s.province} · Founded {s.founded}
             </div>
             <div style={{ fontSize: 12.5, color: "#3c4043", marginTop: 4, lineHeight: 1.4 }}>{s.blurb}</div>
+            {s.today && (
+              <div style={{ fontSize: 11.5, color: "#5f6368", marginTop: 4, lineHeight: 1.4, fontStyle: "italic" }}>
+                Today: {s.today}
+              </div>
+            )}
           </button>
         ))}
       </div>
