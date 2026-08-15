@@ -3471,6 +3471,678 @@
         "image_url": null,
         "image_credit": null
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.4211,
+          32.5425
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_babylon",
+        "culture": "mesopotamian",
+        "name_latin": "Babylon",
+        "name_english": "Babylon",
+        "type": "city",
+        "province": "Mesopotamia",
+        "modern_location": "Hillah, Babil Governorate, Iraq",
+        "extant_117ce": true,
+        "notes": "Trajan camped among Babylon's ruins in 116 CE and sacrificed in the room where Alexander the Great had died 439 years earlier. Nebuchadnezzar's mudbrick walls had crumbled into low mounds under two centuries of Parthian neglect by the time Roman soldiers walked the site. The Euphrates had already shifted course, stranding parts of the old city in mudflats. Trajan declared Babylonia a new Roman province from this spot before marching toward the Persian Gulf.",
+        "sources": [
+          "https://www.livius.org/articles/place/babylon/",
+          "https://imperiumromanum.pl/en/article/trajan-in-babylon-former-capital-of-middle-east-in-116-ce/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pergamonmuseum_Babylon_Ischtar-Tor.jpg?width=800",
+        "image_credit": "Babylon's Ishtar Gate, reconstructed with original excavated bricks, Pergamon Museum, Berlin. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.4206,
+          32.5363
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_etemenanki",
+        "culture": "mesopotamian",
+        "name_latin": "Belus",
+        "name_english": "Tower of Babel Ziggurat",
+        "type": "ziggurat",
+        "province": "Mesopotamia",
+        "modern_location": "Hillah, Babil Governorate, Iraq",
+        "extant_117ce": false,
+        "notes": "Alexander the Great ordered ten thousand soldiers to dismantle Etemenanki's ruined tiers in 323 BCE, intending a rebuild he never lived to see. By 117 CE the seven-stage ziggurat that inspired the Tower of Babel story survived only as a stripped platform and scattered brick, its Esagila temple beside it reduced to sporadic upkeep. Roman soldiers passing through Trajan's new province of Mesopotamia found bare foundations rather than a monument.",
+        "sources": [
+          "https://www.livius.org/articles/place/babylon/etemenanki/",
+          "https://en.wikipedia.org/wiki/Etemenanki"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Remains_of_the_foundations_of_the_Etemnanki_Zigurat.jpg?width=800",
+        "image_credit": "Surviving foundation remains of the Etemenanki ziggurat, Babylon. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.5806,
+          33.0936
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_ctesiphon",
+        "culture": "mesopotamian",
+        "name_latin": "Ctesiphon",
+        "name_english": "Ctesiphon",
+        "type": "city",
+        "province": "Mesopotamia",
+        "modern_location": "Salman Pak, Baghdad Governorate, Iraq",
+        "extant_117ce": true,
+        "notes": "Trajan captured Ctesiphon in 116 CE, becoming the first Roman emperor to seize a Parthian capital, and briefly ruled it as the seat of his new province of Mesopotamia. Roman troops crowned a puppet king, Parthamaspates, on the Parthian throne inside the city that same year. Within months Hadrian abandoned the conquest, and by later 117 the province Ctesiphon had anchored was already dissolving. The famous Sasanian arch that later made the site iconic had not yet been built.",
+        "sources": [
+          "https://www.livius.org/articles/place/ctesiphon/",
+          "https://en.wikipedia.org/wiki/Trajan%27s_Parthian_campaign"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ctesiphon-ruin 1864.jpg?width=800",
+        "image_credit": "1864 photograph of the ancient ruins near Ctesiphon, Wikimedia Commons, public domain"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.5222,
+          33.0944
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_seleucia_tigris",
+        "culture": "mesopotamian",
+        "name_latin": "Seleucia ad Tigrim",
+        "name_english": "Seleucia on the Tigris",
+        "type": "city",
+        "province": "Mesopotamia",
+        "modern_location": "Tell Umar, Babil Governorate, Iraq",
+        "extant_117ce": true,
+        "notes": "Seleucia rose as the Seleucid Empire's eastern capital and by Trajan's day held an estimated 600,000 residents across the Tigris from Ctesiphon. When the city revolted during the campaign, Roman generals Erucius Clarus and Julius Alexander stormed and burned it in 116 CE. Its Hellenistic council and Greek institutions had rivaled Parthian authority for generations. The scorched city recovered enough to be destroyed again by Avidius Cassius decades later.",
+        "sources": [
+          "https://www.britannica.com/place/Seleucia-on-the-Tigris",
+          "https://en.wikipedia.org/wiki/Trajan%27s_Parthian_campaign"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Small_statuette_of_a_naked_woman,_from_Seleucia_on_the_Tigris,_Iraq,_3rd-2nd_century_BCE._Iraq_Museum,_Baghdad.jpg?width=800",
+        "image_credit": "Terracotta figurine excavated at Seleucia on the Tigris, Iraq Museum, Baghdad. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.7183,
+          35.5881
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_hatra",
+        "culture": "mesopotamian",
+        "name_latin": "Hatra",
+        "name_english": "Hatra",
+        "type": "fortress",
+        "province": "Free Mesopotamia",
+        "modern_location": "Al-Hadr, Nineveh Governorate, Iraq",
+        "extant_117ce": true,
+        "notes": "Hatra's defenders threw back Trajan's legions in a failed siege of 117 CE, one of the last campaigns the emperor personally led before his fatal illness. Two concentric walls ran nearly six kilometers around the city, and Cassius Dio blamed the failure on shortages of water, timber, and fodder in the surrounding desert. The temple of Shamash the sun god anchored a caravan city grown rich guarding the crossroads between Rome and Parthia. Hatra's independence outlasted Trajan entirely.",
+        "sources": [
+          "https://whc.unesco.org/en/list/277/",
+          "https://en.wikipedia.org/wiki/Siege_of_Hatra"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hatra ruins.jpg?width=800",
+        "image_credit": "Photograph of the ruins of Hatra, Iraq, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.1528,
+          36.3594
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_nineveh",
+        "culture": "mesopotamian",
+        "name_latin": "Ninus",
+        "name_english": "Nineveh",
+        "type": "city",
+        "province": "Assyria",
+        "modern_location": "Mosul, Nineveh Governorate, Iraq",
+        "extant_117ce": false,
+        "notes": "Nineveh had lain in ruins for nearly seven centuries by the time Trajan's army marched through in 115 CE, sacked by a Babylonian-Median coalition in 612 BCE. Sennacherib's palace and the library of Ashurbanipal had collapsed into grass-covered mounds along the Tigris opposite modern Mosul. Xenophon's retreating Greek mercenaries had passed the site five centuries earlier without recognizing its name. Roman soldiers in Trajan's new province of Assyria found only silent hills.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Nineveh",
+          "https://www.britishmuseum.org/blog/sparking-imagination-rediscovery-assyrias-great-lost-city"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Assyrian_Relief_of_the_Banquet_of_Ashurbanipal_From_Nineveh_Gypsum_N_Palace_British_Museum_01.jpg?width=800",
+        "image_credit": "Assyrian relief from the North Palace at Nineveh, British Museum. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.3275,
+          36.0992
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_nimrud",
+        "culture": "mesopotamian",
+        "name_latin": "Calah",
+        "name_english": "Nimrud",
+        "type": "city",
+        "province": "Assyria",
+        "modern_location": "Nimrud village, Nineveh Governorate, Iraq",
+        "extant_117ce": false,
+        "notes": "Ashurnasirpal II made Nimrud the Assyrian capital around 879 BCE and threw a banquet for a reported 69,574 guests to celebrate his new palace. By Trajan's Parthian War the city had been abandoned for centuries, its winged lamassu statues buried under collapsed mudbrick since Nineveh eclipsed it as capital. Roman forces campaigning through Adiabene in 116 CE passed within a day's march of the buried ruins, leaving no record of noticing them.",
+        "sources": [
+          "https://www.livius.org/articles/place/kalhu-nimrud/",
+          "https://www.worldhistory.org/Kalhu/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lamassu Nimrud Layard 1849.png?width=800",
+        "image_credit": "1849 engraving of a lamassu excavated at Nimrud, from Austen Henry Layard's Nineveh and Its Remains, Wikimedia Commons, public domain"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.2575,
+          35.454
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_ashur",
+        "culture": "mesopotamian",
+        "name_latin": "Assur",
+        "name_english": "Ashur",
+        "type": "city",
+        "province": "Parthian Empire",
+        "modern_location": "Qal'at Sherqat, Saladin Governorate, Iraq",
+        "extant_117ce": true,
+        "notes": "Ashur served as Assyria's religious capital for centuries before Babylonian forces burned it in 614 BCE, yet a local dynasty revived the site under Parthian rule in the first century CE. Excavators found a newly built temple to the god Ashur from this revival, active only decades before Trajan's legions passed through in 116 CE. The city's own ziggurat, raised for the god Ashur, still rose in ruined form above the Tigris. Ashur stayed a Parthian vassal, never a Roman possession.",
+        "sources": [
+          "https://www.worldhistory.org/ashur/",
+          "https://whc.unesco.org/en/list/1130"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ashur (Qal'at Sherqat)-115186.jpg?width=800",
+        "image_credit": "Photograph of the ruins of Ashur (Qal'at Sherqat), Iraq, Wikimedia Commons, UNESCO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.1031,
+          30.9628
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_ur",
+        "culture": "mesopotamian",
+        "name_latin": "",
+        "name_english": "Ur",
+        "type": "ziggurat",
+        "province": "Mesopotamia",
+        "modern_location": "Tell el-Muqayyar, near Nasiriyah, Dhi Qar Governorate, Iraq",
+        "extant_117ce": false,
+        "notes": "Ur-Nammu raised Ur's Great Ziggurat around 2100 BCE as a three-tiered mountain of mudbrick dedicated to the moon god Nanna. The Euphrates had shifted more than fifteen kilometers away by Trajan's era, leaving the city's harbor dry and its population gone since the Achaemenid period. Neo-Babylonian king Nabonidus had already restored the ziggurat's crumbling terraces centuries earlier. Trajan's Parthian campaign passed well south of Ur's abandoned mound, unrecorded.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ziggurat_of_Ur",
+          "https://www.britannica.com/place/Ur"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great Ziggurat of Ur.JPG?width=800",
+        "image_credit": "Photograph of the Great Ziggurat of Ur, Iraq, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.6372,
+          31.3242
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_uruk",
+        "culture": "mesopotamian",
+        "name_latin": "Orchoe",
+        "name_english": "Uruk",
+        "type": "city",
+        "province": "Mesopotamia",
+        "modern_location": "Warka, Muthanna Governorate, Iraq",
+        "extant_117ce": true,
+        "notes": "Uruk gave humanity some of its earliest writing, producing cuneiform tablets inside its Eanna temple complex millennia before Rome existed. A brand-new shrine, the Temple of Gareus, rose at Uruk just six years before Trajan's legions swept through Parthian Babylonia in 116 CE. The ancient White Temple ziggurat, built for the sky god Anu, still stood nearby as a weathered ruin. Uruk's population had shrunk to a remnant clustered around this one working sanctuary.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Uruk",
+          "https://en.wikipedia.org/wiki/Temple_of_Gareus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Uruk Archaeological site at Warka.jpg?width=800",
+        "image_credit": "Photograph of the Uruk archaeological site at Warka, Iraq, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.2334,
+          32.1264
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_nippur",
+        "culture": "mesopotamian",
+        "name_latin": "",
+        "name_english": "Nippur",
+        "type": "temple",
+        "province": "Mesopotamia",
+        "modern_location": "Nuffar, Al-Qadisiyyah Governorate, Iraq",
+        "extant_117ce": false,
+        "notes": "Nippur never held a king's throne but anchored Mesopotamia's religious life for millennia as the sacred seat of the storm god Enlil. Its Ekur temple complex had crumbled into a twenty-meter mound by the time Trajan's forces campaigned through Babylonia in 116 CE. Sumerian and Babylonian kings alike had claimed legitimacy only after winning Enlil's blessing here. By the Parthian era, Nippur's population had thinned to almost nothing, leaving a landmark ruin.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Nippur",
+          "https://isac.uchicago.edu/research/projects/nippur-sacred-city-enlil-0"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Interior Gateway of the 19th-Century Excavation Shelter atop Nippur's Ziggurat.jpg?width=800",
+        "image_credit": "Photograph of the 19th-century excavation shelter atop Nippur's ziggurat mound, Wikimedia Commons, photo by Noemi Alzayadi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.578,
+          30.8947
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_charax_spasinou",
+        "culture": "mesopotamian",
+        "name_latin": "Charax Spasinu",
+        "name_english": "Charax Spasinou",
+        "type": "port",
+        "province": "Characene (Mesene) – Parthian vassal kingdom",
+        "modern_location": "Jebel Khayaber, Basra Governorate, Iraq",
+        "extant_117ce": true,
+        "notes": "Trajan reached Charax Spasinou in 116 CE and watched merchant ships cast off for India, reportedly weeping that he was too old to follow Alexander's path east. The port sat at the head of the Persian Gulf as capital of Characene, a Parthian vassal kingdom that grew rich taxing trade between Mesopotamia and the Indian Ocean. King Attambelos of Characene submitted to Trajan without a fight, keeping his throne under nominal Roman overlordship. Rome's grip on the port evaporated within the year.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Characene",
+          "https://kops.uni-konstanz.de/server/api/core/bitstreams/15d71f0b-4894-4eb0-9b2e-8bf914cc1ec2/content"
+        ],
+        "confidence": "high",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.4009,
+          32.0328
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_vologesias",
+        "culture": "mesopotamian",
+        "name_latin": "Vologesia",
+        "name_english": "Vologesias",
+        "type": "city",
+        "province": "Parthian Empire",
+        "modern_location": "near Kufa, Najaf Governorate, Iraq (approximate, unexcavated)",
+        "extant_117ce": true,
+        "notes": "Parthian king Vologases I founded Vologesias on a Euphrates canal south of Babylon to draw trade away from the Greek city of Seleucia. By Trajan's invasion the new town had absorbed much of Seleucia's commerce, becoming one of Parthia's busiest inland ports. Its exact ruins remain unidentified today, buried somewhere near the later Islamic city of Kufa. Vologesias stayed under Parthian control throughout Trajan's campaign, never falling within the short-lived Roman province.",
+        "sources": [
+          "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Vologaeses",
+          "https://www.britannica.com/biography/Vologeses-I"
+        ],
+        "confidence": "low",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.73,
+          34.7469
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_dura_europos",
+        "culture": "mesopotamian",
+        "name_latin": "Europus",
+        "name_english": "Dura-Europos",
+        "type": "fortress",
+        "province": "Parthian Empire",
+        "modern_location": "Salhiyah, Deir ez-Zor Governorate, Syria",
+        "extant_117ce": true,
+        "notes": "Roman troops briefly held Dura-Europos in 114 CE, raising a triumphal arch to Trajan outside its walls before withdrawing. An inscription from 117 CE records a priest restoring a temple whose doors Roman soldiers had removed, proof the garrison was gone by Trajan's death. The fortified caravan city sat ninety meters above the Euphrates and had changed hands between Parthian and Roman rule for generations. It fell under Parthian control again by mid-117, decades before Rome annexed it in 165 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Dura-Europos",
+          "https://smarthistory.org/dura-europos/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dura Europos, Euphrates (6362405375).jpg?width=800",
+        "image_credit": "Photograph of Dura-Europos overlooking the Euphrates, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2167,
+          37.0667
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_nisibis",
+        "culture": "mesopotamian",
+        "name_latin": "Nisibis",
+        "name_english": "Nusaybin",
+        "type": "city",
+        "province": "Mesopotamia",
+        "modern_location": "Nusaybin, Mardin Province, Turkey",
+        "extant_117ce": true,
+        "notes": "Trajan's forces captured Nisibis in 115 CE, and the city anchored his short-lived province of Mesopotamia. Positioned at the foot of the Tur Abdin mountains, Nisibis had already changed hands between Armenian, Parthian, and Roman rule for generations before Roman troops arrived. Hadrian abandoned the province within two years of Trajan's death, though Nisibis returned to Roman hands repeatedly over the following two centuries. Its fame as a Christian learning center still lay ahead.",
+        "sources": [
+          "https://www.livius.org/articles/place/nisibis-nusaybin/",
+          "https://en.wikipedia.org/wiki/Mesopotamia_(Roman_province)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mar Jacob Church, Nisibis.jpg?width=800",
+        "image_credit": "Photograph of the Mar Jacob church at the site of ancient Nisibis, a later Christian-era structure marking the location, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.8642,
+          36.3225
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_singara",
+        "culture": "mesopotamian",
+        "name_latin": "Singara",
+        "name_english": "Sinjar",
+        "type": "fortress",
+        "province": "Mesopotamia",
+        "modern_location": "Sinjar, Nineveh Governorate, Iraq",
+        "extant_117ce": true,
+        "notes": "Trajan's general Lusius Quietus seized Singara around 114 CE, folding the caravan town at the foot of Mount Sinjar into Rome's new Mesopotamian frontier. The city guarded a key crossing on the trade route linking Nisibis to the Tigris and later garrisoned an entire Roman legion, the First Parthica. In 117 CE Singara remained a fresh, uncertain Roman outpost, months from the abandonment Hadrian ordered after Trajan's death. Its full legionary fortification came later, under Severus.",
+        "sources": [
+          "https://www.livius.org/articles/place/singara-sinjar/",
+          "https://en.wikipedia.org/wiki/Singara"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.0092,
+          36.1908
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_arbela",
+        "culture": "mesopotamian",
+        "name_latin": "Arbela",
+        "name_english": "Erbil Citadel",
+        "type": "city",
+        "province": "Assyria",
+        "modern_location": "Erbil, Kurdistan Region, Iraq",
+        "extant_117ce": true,
+        "notes": "Trajan's forces completed the conquest of Adiabene in 116 CE by building a pontoon bridge over the Tigris and capturing Arbela, the kingdom's capital. The city's citadel already sat atop more than five thousand years of continuous settlement, among the oldest continuously inhabited places on earth. Adiabene's king had until then balanced loyalty between Parthia and Rome from this hilltop stronghold. Roman rule lasted barely two years before Hadrian released the territory back to local control.",
+        "sources": [
+          "https://www.livius.org/articles/place/arbela-erbil/",
+          "https://en.wikipedia.org/wiki/Adiabene"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Erbil Citadel, Erbil, Kurdistan Region of Iraq.jpg?width=800",
+        "image_credit": "Photograph of the Erbil Citadel, site of ancient Arbela, Wikimedia Commons, photo by MSinjari, CC BY-SA 3.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.3417,
+          32.392
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_borsippa",
+        "culture": "mesopotamian",
+        "name_latin": "Borsippa",
+        "name_english": "Borsippa",
+        "type": "ziggurat",
+        "province": "Mesopotamia",
+        "modern_location": "Birs Nimrud, Babil Governorate, Iraq",
+        "extant_117ce": false,
+        "notes": "Nebuchadnezzar II built Borsippa's ziggurat as a twin to Babylon's own tower, dedicating it to the god Nabu eighteen kilometers southwest of Babylon. A lightning strike had already fused its upper brickwork into vitrified glass-like slag centuries before Trajan's army passed nearby in 116 CE. Early modern travelers mistook the fire-scarred ruin, known locally as Birs Nimrud, for the biblical Tower of Babel itself. Nabu's temple beside it drew only sporadic offerings by then.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Borsippa",
+          "https://www.britannica.com/place/Borsippa"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The ruins of the Ziggurat of Nabu at Borsippa, Iraq.jpg?width=800",
+        "image_credit": "Photograph of the ruins of the ziggurat of Nabu at Borsippa, Iraq, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.2294,
+          36.5094
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_khorsabad",
+        "culture": "mesopotamian",
+        "name_latin": "",
+        "name_english": "Khorsabad",
+        "type": "city",
+        "province": "Assyria",
+        "modern_location": "Khorsabad village, Nineveh Governorate, Iraq",
+        "extant_117ce": false,
+        "notes": "Sargon II built Dur-Sharrukin from nothing as his new capital, finishing the entire walled city within a single decade before 706 BCE. His unexpected death in battle the following year doomed the city, as his son Sennacherib abandoned it for Nineveh and never looked back. By Trajan's Assyrian campaign of 116 CE the capital had lain empty for more than eight centuries, its colossal winged bull guardians buried under windblown sand. Roman soldiers left no record of the buried city.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Dur-Sharrukin",
+          "https://www.louvre.fr/en/explore/the-palace/the-palace-of-sargon-ii"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lamassu inscription 1 - Palace of Sargon II, Khorsabad - Oriental Institute Museum, University of Chicago - DSC07526.JPG?width=800",
+        "image_credit": "Photograph of a lamassu from the Palace of Sargon II at Khorsabad (Dur-Sharrukin), Oriental Institute Museum, University of Chicago, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.6047,
+          32.5403
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_kish",
+        "culture": "mesopotamian",
+        "name_latin": "",
+        "name_english": "Kish",
+        "type": "ziggurat",
+        "province": "Mesopotamia",
+        "modern_location": "Tell al-Uhaymir, Babil Governorate, Iraq",
+        "extant_117ce": false,
+        "notes": "Sumerian tradition named Kish the first city to hold kingship after a great flood, a claim recorded on the ancient Sumerian King List. Its Neo-Babylonian ziggurat, raised under Nebuchadnezzar II, still rose above the plain when Trajan's forces campaigned through Babylonia in 116 CE, though the city itself lay largely abandoned. Kish's ruins sprawl across forty scattered mounds east of Babylon. Occupation had faded to almost nothing, leaving only the ziggurat as a landmark.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kish_(Sumer)",
+          "https://etc.worldhistory.org/travel/visiting-ancient-city-of-kish/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruins of the ziggurat of the ancient city of Kish, Tell al-Uhaymir, Iraq.jpg?width=800",
+        "image_credit": "Photograph of the ziggurat ruins of Kish at Tell al-Uhaymir, Iraq, Wikimedia Commons, photo by Osama Shukir Muhammed Amin, CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.8536,
+          31.2858
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_larsa",
+        "culture": "mesopotamian",
+        "name_latin": "Ellasar",
+        "name_english": "Larsa",
+        "type": "temple",
+        "province": "Mesopotamia",
+        "modern_location": "Tell as-Senkereh, Dhi Qar Governorate, Iraq",
+        "extant_117ce": false,
+        "notes": "Larsa's kings once rivaled Babylon itself, ruling southern Mesopotamia from the throne of Rim-Sin before Hammurabi conquered the city in 1763 BCE. Its Ebabbar temple to the sun god Shamash had functioned for over a thousand years, among the longest-running religious institutions in Mesopotamian history. By the time Trajan's campaign reached Babylonia in 116 CE, Larsa's settlement had faded away, its temple mound reduced to a scarred ruin southeast of Uruk.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Larsa",
+          "https://www.britannica.com/place/Larsa"
+        ],
+        "confidence": "high",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.9958,
+          30.8144
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_eridu",
+        "culture": "mesopotamian",
+        "name_latin": "",
+        "name_english": "Eridu",
+        "type": "temple",
+        "province": "Mesopotamia",
+        "modern_location": "Abu Shahrain, Dhi Qar Governorate, Iraq",
+        "extant_117ce": false,
+        "notes": "Sumerian myth named Eridu the very first city, founded by the water god Enki before the gods created any other place on earth. Archaeologists found fourteen successive temples stacked atop one another at Eridu's shrine, each generation rebuilding on its predecessor's ruins. By Trajan's Parthian War the city had been abandoned for over a millennium, its ziggurat mound a bare, wind-scoured hill. No Roman source records a visit to Mesopotamia's oldest ruined city.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Eridu",
+          "https://www.worldhistory.org/eridu/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ziggurat at Eridu (30809118442).jpg?width=800",
+        "image_credit": "Photograph of the ziggurat ruins at Eridu, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.1776,
+          31.562
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_girsu",
+        "culture": "mesopotamian",
+        "name_latin": "",
+        "name_english": "Girsu",
+        "type": "city",
+        "province": "Mesopotamia",
+        "modern_location": "Tell Telloh, Dhi Qar Governorate, Iraq",
+        "extant_117ce": false,
+        "notes": "Governor Gudea rebuilt Girsu as a showcase capital around 2100 BCE, commissioning more than twenty diorite statues of himself for its temples. The city served as capital of the Lagash city-state and center of worship for the war god Ningirsu, whose temple Eninnu Gudea rebuilt with stone hauled from as far as Lebanon. By Trajan's campaign through Babylonia in 116 CE, Girsu had lain buried and forgotten for nearly two thousand years. French excavators only rediscovered it in 1877.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Girsu",
+          "https://www.britishmuseum.org/our-work/international/iraq-scheme/tello"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gudea_of_Lagash_Girsu.jpg?width=800",
+        "image_credit": "Statue of Gudea, ruler of Lagash, excavated at Girsu, Louvre Museum. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.2522,
+          33.0589
+        ]
+      },
+      "properties": {
+        "id": "substrate_mesopotamian_sippar",
+        "culture": "mesopotamian",
+        "name_latin": "Sippara",
+        "name_english": "Sippar",
+        "type": "temple",
+        "province": "Mesopotamia",
+        "modern_location": "Tell Abu Habbah, Baghdad Governorate, Iraq",
+        "extant_117ce": true,
+        "notes": "Sippar served as Mesopotamia's chief cult center for the sun god Shamash, its Ebabbar temple drawing worship for more than a thousand years. Excavators recovered tens of thousands of cuneiform tablets from the site's scribal archives, among the largest caches ever found in Mesopotamia. Occupation continued at a reduced level into the Parthian period, though by Trajan's campaign of 116 CE the once-great temple city had shrunk to a minor settlement near the Euphrates.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sippar",
+          "https://www.britannica.com/place/Sippar"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tablet_of_Shamash_relief.jpg?width=800",
+        "image_credit": "Tablet of Shamash, limestone relief recovered from Sippar, British Museum. Wikimedia Commons."
+      }
     }
   ]
 }
