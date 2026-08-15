@@ -287,7 +287,7 @@ export default function PlaceDetails() {
 
       {/* Title block */}
       <div style={{ padding: "14px 48px 4px 16px" }}>
-        <div style={{ fontSize: 22, fontWeight: 500, color: "#202124", lineHeight: 1.2, letterSpacing: "-0.01em" }}>
+        <div className="roman-label" style={{ fontSize: 22, fontWeight: 600, color: "#202124", lineHeight: 1.2 }}>
           {name}
         </div>
         {subtitle && (

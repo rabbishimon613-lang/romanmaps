@@ -135,7 +135,7 @@ export default function LegionLocator({ open, onClose }: { open: boolean; onClos
             onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
           >
             <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
-              <div style={{ fontSize: 14, fontWeight: 500, color: "#202124" }}>{l.legion}</div>
+              <div className="roman-label" style={{ fontSize: 14, fontWeight: 600, color: "#202124" }}>{l.legion}</div>
               <div style={{ fontSize: 12, color: "#5f6368" }}>· {l.fortressLatin}</div>
             </div>
             <div style={{ fontSize: 12, color: "#5f6368", marginTop: 2 }}>

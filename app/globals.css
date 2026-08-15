@@ -9,6 +9,11 @@ body {
 button { font-family: inherit; cursor: pointer; border: 0; background: none; }
 input { font-family: inherit; }
 
+/* Roman-inscription-style display serif for place-name headings — an open-source stand-in for
+   Trajan Pro (see app/layout.tsx for the font load). Used sparingly: POI panel titles, site/legion
+   list rows, map pin labels — not body text or UI chrome. */
+.roman-label { font-family: var(--font-cinzel), Georgia, "Times New Roman", serif; letter-spacing: 0.02em; }
+
 /* MapLibre overrides — hide default attribution box a bit */
 .maplibregl-ctrl-attrib { font-size: 10px !important; }
 .maplibregl-ctrl-bottom-right { display: none; }

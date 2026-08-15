@@ -131,7 +131,7 @@ export default function PoiMarkers() {
       el.style.cssText = "cursor:pointer;display:flex;flex-direction:column;align-items:center;transform:translateY(-6px);";
 
       const labelHtml = showLabel && name
-        ? `<div style="margin-top:2px;padding:1px 6px;background:rgba(255,255,255,.92);border-radius:4px;font:500 11px/1.2 Roboto,sans-serif;color:#202124;white-space:nowrap;box-shadow:0 1px 2px rgba(0,0,0,.15);max-width:160px;overflow:hidden;text-overflow:ellipsis;">${escapeHtml(name)}</div>`
+        ? `<div style="margin-top:2px;padding:1px 6px;background:rgba(255,255,255,.92);border-radius:4px;font:600 11px/1.2 var(--font-cinzel),Georgia,serif;letter-spacing:0.02em;color:#202124;white-space:nowrap;box-shadow:0 1px 2px rgba(0,0,0,.15);max-width:160px;overflow:hidden;text-overflow:ellipsis;">${escapeHtml(name)}</div>`
         : "";
 
       el.innerHTML = `
