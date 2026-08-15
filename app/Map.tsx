@@ -1831,7 +1831,9 @@ export default function Map() {
             if (!f) return;
             const p: any = f.properties || {};
             const noteLine = p.notes ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.notes)}</div>` : "";
-            const cultureLabel = p.culture ? p.culture.charAt(0).toUpperCase() + p.culture.slice(1) : "";
+            const cultureLabel = p.culture
+              ? String(p.culture).split("_").map((w: string) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ")
+              : "";
             substratePopup
               .setLngLat(e.lngLat)
               .setHTML(

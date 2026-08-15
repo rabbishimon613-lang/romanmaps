@@ -2128,6 +2128,454 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Oppidum manching osttor.JPG?width=800",
         "image_credit": "Reconstructed eastern gate of the Manching oppidum at the Kelten und Roemer Museum, Bavaria, Wikimedia Commons"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1342,
+          29.9792
+        ]
+      },
+      "properties": {
+        "id": "substrate_egyptian_great_pyramid_khufu",
+        "culture": "egyptian_pharaonic",
+        "name_latin": "Akhet Khufu",
+        "name_english": "Great Pyramid of Giza",
+        "type": "pyramid",
+        "province": "Aegyptus",
+        "modern_location": "Giza, Egypt",
+        "extant_117ce": true,
+        "notes": "The Great Pyramid rose 146 meters over Giza roughly 2,600 years before Trajan's reign, already the oldest wonder any Roman could visit. Its smooth limestone casing still gleamed in 117 CE, not stripped away until centuries later. Greek and Latin graffiti carved by ancient sightseers still mark its inner passages. Roman writers ranked it among the world's great marvels, a monument tourists traveled the Nile specifically to see.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
+          "https://colombiaone.com/2026/07/30/greek-tourists-ancient-egypt-2000-years-ago/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kheops-Pyramid.jpg?width=800",
+        "image_credit": "Photograph of the Great Pyramid of Khufu, Giza · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1308,
+          29.9761
+        ]
+      },
+      "properties": {
+        "id": "substrate_egyptian_pyramid_khafre",
+        "culture": "egyptian_pharaonic",
+        "name_latin": "Wer Khafre",
+        "name_english": "Pyramid of Khafre",
+        "type": "pyramid",
+        "province": "Aegyptus",
+        "modern_location": "Giza, Egypt",
+        "extant_117ce": true,
+        "notes": "Khafre's pyramid still wore a polished limestone cap at its summit in 117 CE, the last surviving patch of original casing anywhere at Giza. Standing 136 meters tall, it looks taller than the neighboring Great Pyramid only because it sits on higher bedrock. Its granite valley temple guarded the causeway leading straight to the Great Sphinx. Roman travelers touring the plateau found it already twenty-two centuries old.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pyramid_of_Khafre",
+          "https://egypttimetravel.com/pyramid-of-khafre"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pyramid%20of%20Khafre.jpg?width=800",
+        "image_credit": "Photograph of the Pyramid of Khafre, Giza · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1281,
+          29.9722
+        ]
+      },
+      "properties": {
+        "id": "substrate_egyptian_pyramid_menkaure",
+        "culture": "egyptian_pharaonic",
+        "name_latin": "Mykerinos",
+        "name_english": "Pyramid of Menkaure",
+        "type": "pyramid",
+        "province": "Aegyptus",
+        "modern_location": "Giza, Egypt",
+        "extant_117ce": true,
+        "notes": "Herodotus recorded this smallest of Giza's three pyramids as the tomb of Mycerinus, a king he judged more just than his predecessors. Its lower courses were sheathed in red granite instead of limestone, unfinished cladding still visible in 117 CE. At just 65 meters, it stood roughly a third the height of the Great Pyramid beside it. Three small satellite pyramids for royal women cluster at its southeast corner.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pyramid_of_Menkaure",
+          "https://www.ebsco.com/research-starters/history/menkaure"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pyramid%20of%20Menkaure%20in%20Giza%20May%202015.JPG?width=800",
+        "image_credit": "Photograph of the Pyramid of Menkaure, Giza · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1376,
+          29.9753
+        ]
+      },
+      "properties": {
+        "id": "substrate_egyptian_great_sphinx",
+        "culture": "egyptian_pharaonic",
+        "name_latin": "Sphinx",
+        "name_english": "Great Sphinx of Giza",
+        "type": "statue",
+        "province": "Aegyptus",
+        "modern_location": "Giza, Egypt",
+        "extant_117ce": true,
+        "notes": "Pliny the Elder described the Sphinx's face still painted red when he wrote about Egypt in the first century CE. Buried in sand to its shoulders for most of antiquity, it was dug clear again under Nero, when a prefect built a 12-meter stairway up to its paws. Carved from a single limestone outcrop some 2,500 years before Trajan's birth, it already ranked among Egypt's oldest curiosities. Roman emperors visited it out of both curiosity and political theater.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Great_Sphinx_of_Giza",
+          "https://www.thegreatsphinxofgiza.com/the-roman-remains-at-the-great-sphinx-of-giza"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great%20Sphinx%20of%20Giza%20-%2020080716a.jpg?width=800",
+        "image_credit": "Photograph of the Great Sphinx of Giza · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.6014,
+          25.7402
+        ]
+      },
+      "properties": {
+        "id": "substrate_egyptian_valley_of_kings",
+        "culture": "egyptian_pharaonic",
+        "name_latin": "Memnonia",
+        "name_english": "Valley of the Kings",
+        "type": "necropolis",
+        "province": "Aegyptus",
+        "modern_location": "Luxor, Egypt",
+        "extant_117ce": true,
+        "notes": "Strabo counted forty tombs worth seeing here when he toured Thebes near Augustus's reign, already a well-worn circuit of the New Kingdom's dead pharaohs. Every one of the roughly sixty royal tombs had been broken into and stripped by robbers well before Roman rule began, some within decades of burial. Priests had already moved many royal mummies to hidden caches over a thousand years earlier for safekeeping. By 117 CE the valley was a graffiti-covered curiosity, not a guarded sanctuary.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Valley_of_the_Kings",
+          "https://www.britannica.com/place/Valley-of-the-Kings"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Valley%20of%20the%20Kings%20panorama.jpg?width=800",
+        "image_credit": "Panorama of the Valley of the Kings, Luxor west bank · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.6023,
+          25.7419
+        ]
+      },
+      "properties": {
+        "id": "substrate_egyptian_kv9_ramesses_vi",
+        "culture": "egyptian_pharaonic",
+        "name_latin": "Memnoneion",
+        "name_english": "Tomb of Ramesses VI",
+        "type": "necropolis",
+        "province": "Aegyptus",
+        "modern_location": "Luxor, Egypt",
+        "extant_117ce": true,
+        "notes": "Ancient tourists believed this tomb of Ramesses VI belonged to the Trojan War hero Memnon, and pilgrims descended its 117-meter passage to see it. Visitors scratched nearly a thousand Greek, Latin, and Coptic inscriptions across its star-covered ceiling, soot from their oil lamps still darkening the stone. Open continuously since antiquity, it never needed rediscovery the way sealed tombs did centuries later. By 117 CE it had already drawn Greek and Roman sightseers for well over a century.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/KV9",
+          "https://baffledtimetravel.com/ancient-graffiti-bad-reviews-egyptian-tomb/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/KV9%20Tomb%20of%20Ramses%20V-VI%20DSCF2864.jpg?width=800",
+        "image_credit": "Entrance to KV9, the tomb of Ramesses V and VI, Valley of the Kings · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.6027,
+          25.7411
+        ]
+      },
+      "properties": {
+        "id": "substrate_egyptian_kv2_ramesses_iv",
+        "culture": "egyptian_pharaonic",
+        "name_latin": "Heqamaatre",
+        "name_english": "Tomb of Ramesses IV",
+        "type": "necropolis",
+        "province": "Aegyptus",
+        "modern_location": "Luxor, Egypt",
+        "extant_117ce": true,
+        "notes": "This tomb of Ramesses IV is one of the few whose ancient floor plan survives, a papyrus in Turin mapping its five chambers at 1:28 scale in hieratic script. Open since antiquity, its walls carry more than seven hundred Greek and Latin graffiti left by ancient sightseers. Painted ceilings of the sky goddess Nut arching over astronomical texts survived intact for visitors to admire. By 117 CE the tomb had drawn sightseers as one of the valley's busiest attractions for over a century.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/KV2",
+          "https://madainproject.com/kv2_(tomb_of_ramesses_iv)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/VdR%20KV2%20Ramses%20IV.jpg?width=800",
+        "image_credit": "Interior of KV2, the tomb of Ramesses IV, Valley of the Kings · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.6103,
+          25.7205
+        ]
+      },
+      "properties": {
+        "id": "substrate_egyptian_colossi_memnon",
+        "culture": "egyptian_pharaonic",
+        "name_latin": "Colossi Memnonis",
+        "name_english": "Colossi of Memnon",
+        "type": "statue",
+        "province": "Aegyptus",
+        "modern_location": "Luxor, Egypt",
+        "extant_117ce": true,
+        "notes": "A crack from an earthquake in 27 BCE made the northern colossus sing a haunting note each dawn, believed by visitors to be the mythical Memnon greeting his mother Eos. The prefect Gaius Vibius Maximus recorded hearing it twice at dawn on 18 April, in Trajan's seventh year, 104 CE. Visitors carved 107 inscriptions into the statue's legs and base, in Greek, Latin, and one bilingual text. Hadrian himself later traveled here to hear it sing.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Colossi_of_Memnon",
+          "https://followinghadrian.com/2021/02/18/18-february-ad-121-titus-haterius-nepos-prefect-of-egypt-visits-the-memnon-colossus-hadrian1900/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Colossi%20of%20Memnon%20R02.jpg?width=800",
+        "image_credit": "Photograph of the Colossi of Memnon, Luxor west bank · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.6108,
+          25.7281
+        ]
+      },
+      "properties": {
+        "id": "substrate_egyptian_ramesseum",
+        "culture": "egyptian_pharaonic",
+        "name_latin": "Memnonium",
+        "name_english": "Ramesseum",
+        "type": "temple",
+        "province": "Aegyptus",
+        "modern_location": "Luxor, Egypt",
+        "extant_117ce": true,
+        "notes": "Diodorus Siculus recorded the inscription on a fallen colossus here reading 'I am Ozymandias, king of kings,' a line that later inspired Shelley's poem. The temple's toppled granite giant, once about 18 meters tall, already lay broken across the sand when Greek and Roman visitors toured it. Classical writers called the ruin the Memnonium, mistaking Ramesses II's mortuary temple for a shrine to the Trojan hero. Its columns had watched over Thebes for over 1,200 years by Trajan's reign.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ramesseum",
+          "https://isac.uchicago.edu/research/publications/le/ozymandias-colossus-ramesseum"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ramesseum%2C%20Luxor%2C%20Egipto%2C%202022-04-03%2C%20DD%2008.jpg?width=800",
+        "image_credit": "Photograph of the Ramesseum, Luxor west bank · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2165,
+          29.8713
+        ]
+      },
+      "properties": {
+        "id": "substrate_egyptian_step_pyramid_djoser",
+        "culture": "egyptian_pharaonic",
+        "name_latin": "Netjerikhet",
+        "name_english": "Step Pyramid of Djoser",
+        "type": "pyramid",
+        "province": "Aegyptus",
+        "modern_location": "Saqqara, Egypt",
+        "extant_117ce": true,
+        "notes": "Imhotep's stepped limestone pyramid for King Djoser already stood as the world's oldest monumental stone building by the time Rome existed, raised some 2,700 years before Trajan. Its six stacked tiers rise 62 meters over a funerary complex of courtyards and carved dummy buildings meant to serve the king's spirit forever. Ptolemaic and Roman-era Egyptians worshipped the pyramid's architect Imhotep as a healing god. By 117 CE priests still tended shrines in the ancient necropolis around it.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pyramid_of_Djoser",
+          "https://smarthistory.org/step-pyramid-complex-saqqara/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Egypt-12B-021%20-%20Step%20Pyramid%20of%20Djoser.jpg?width=800",
+        "image_credit": "Photograph of the Step Pyramid of Djoser, Saqqara · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2103,
+          29.871
+        ]
+      },
+      "properties": {
+        "id": "substrate_egyptian_serapeum_saqqara",
+        "culture": "egyptian_pharaonic",
+        "name_latin": "Serapeum",
+        "name_english": "Serapeum of Saqqara",
+        "type": "necropolis",
+        "province": "Aegyptus",
+        "modern_location": "Saqqara, Egypt",
+        "extant_117ce": true,
+        "notes": "Strabo toured this underground gallery of Apis bull burials near Augustus's reign, already finding its sphinx-lined avenue half-swallowed by sand. Each sacred bull rested inside a granite sarcophagus weighing up to 80 tonnes, hauled through corridors cut into the Saqqara plateau. Roman rule let the structure lapse into abandonment almost immediately, even as Apis worship continued at other shrines nearby. By 117 CE the tomb complex had lain buried and unvisited for roughly a century and a half.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Serapeum_of_Saqqara",
+          "https://madainproject.com/serapeum_of_saqqara"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Serapeum,%20a%20burial%20place%20of%20Apis%20bulls,%201550-30%20BC,%20Saqqara,%20Egypt%20(50601652437).jpg?width=800",
+        "image_credit": "The Serapeum burial galleries of the Apis bulls, Saqqara · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.6258,
+          22.3372
+        ]
+      },
+      "properties": {
+        "id": "substrate_egyptian_abu_simbel",
+        "culture": "egyptian_pharaonic",
+        "name_latin": "Abu Simbel",
+        "name_english": "Abu Simbel",
+        "type": "temple",
+        "province": "Aegyptus",
+        "modern_location": "Abu Simbel, Egypt",
+        "extant_117ce": true,
+        "notes": "Ramesses II's rock-cut temple, guarded by four 20-meter seated colossi, had already vanished from view by the Roman period. Windblown desert sand had crept up to the statues' shoulders since the New Kingdom's end, and no surviving Greek or Latin author describes visiting the site. Egypt's southern garrison towns nearby left no record of tourists reaching it, unlike Philae just downriver. In 117 CE the temple stood forgotten under sand, not uncovered again until 1813.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Abu_Simbel_temples",
+          "https://www.ancient-origins.net/ancient-places-africa/abu-simbel-enormous-temple-great-ramesses-ii-was-buried-3000-years-008528"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20Roberts%20-%20The%20Hypostyle%20Hall%20of%20the%20Great%20Temple%20at%20Abu%20Simbel,%20Egypt%20-%20Google%20Art%20Project.jpg?width=800",
+        "image_credit": "David Roberts (1838), Hypostyle Hall of the Great Temple at Abu Simbel · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.8985,
+          29.2717
+        ]
+      },
+      "properties": {
+        "id": "substrate_egyptian_labyrinth_hawara",
+        "culture": "egyptian_pharaonic",
+        "name_latin": "Labyrinthus",
+        "name_english": "Labyrinth of Hawara",
+        "type": "temple",
+        "province": "Aegyptus",
+        "modern_location": "Hawara, Faiyum, Egypt",
+        "extant_117ce": true,
+        "notes": "Herodotus judged this vast maze of courts more astonishing than the pyramids, and Strabo still toured its ruins under Augustus. Pliny the Elder claimed its halls echoed with thunder whenever a door swung shut, and that each Egyptian province once kept a hall inside. Built for Amenemhat III beside Lake Moeris, the temple sprawled roughly 300 by 250 meters, larger than most buildings any Roman had seen. By 117 CE a modest Roman village sat atop part of the ruined platform where it once stood.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Labyrinth_of_Egypt",
+          "https://the-past.com/feature/the-lost-egyptian-labyrinth/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hawara-labyrinthe-photo2.jpg?width=800",
+        "image_credit": "Ruins of the Labyrinth site at Hawara · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.899,
+          29.2742
+        ]
+      },
+      "properties": {
+        "id": "substrate_egyptian_pyramid_amenemhat_iii_hawara",
+        "culture": "egyptian_pharaonic",
+        "name_latin": "Ni-Maat-Re",
+        "name_english": "Pyramid of Amenemhat III at Hawara",
+        "type": "pyramid",
+        "province": "Aegyptus",
+        "modern_location": "Hawara, Faiyum, Egypt",
+        "extant_117ce": true,
+        "notes": "Amenemhat III built this pyramid from mudbrick around a limestone core, and by Roman times its casing was long gone, leaving a crumbling mound beside the famous Labyrinth. Rising about 58 meters originally, erosion had reduced its silhouette to a rounded hill centuries before Trajan's birth. Classical writers lavished attention on the adjoining mortuary temple, rarely naming the pyramid itself. By 117 CE it stood as a weathered mound on the Faiyum's edge, overshadowed by its own temple's fame.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pyramid_of_Amenemhat_III_(Hawara)",
+          "https://www.historyhit.com/locations/hawara-pyramid/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pyramid%20of%20amenemhet%20hawarra%2001.jpg?width=800",
+        "image_credit": "Photograph of the Pyramid of Amenemhat III, Hawara · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.25,
+          29.8483
+        ]
+      },
+      "properties": {
+        "id": "substrate_egyptian_memphis_ruins",
+        "culture": "egyptian_pharaonic",
+        "name_latin": "Memphis",
+        "name_english": "Ruins of Memphis",
+        "type": "monument",
+        "province": "Aegyptus",
+        "modern_location": "Mit Rahina, Egypt",
+        "extant_117ce": true,
+        "notes": "Strabo found many of Memphis's grand temples already crumbling into ruin when he visited under Augustus, even as the city remained large and populous. Egypt's ancient capital for over two thousand years, it had ceded primacy to Alexandria under Rome, leaving monumental stonework to decay in place. A colossal fallen statue of Ramesses II, over 10 meters long, lay near the Temple of Ptah. By 117 CE Memphis was Egypt's second city, a living town wrapped around its own visible antiquity.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Memphis,_Egypt",
+          "https://www.worldhistory.org/Memphis_(Ancient_Egypt)/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruins%20at%20Mit%20Rahina.jpg?width=800",
+        "image_credit": "Ruins of ancient Memphis at Mit Rahina · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1544,
+          29.3881
+        ]
+      },
+      "properties": {
+        "id": "substrate_egyptian_meidum_pyramid",
+        "culture": "egyptian_pharaonic",
+        "name_latin": "Djed-Sneferu",
+        "name_english": "Meidum Pyramid",
+        "type": "pyramid",
+        "province": "Aegyptus",
+        "modern_location": "Meidum, Egypt",
+        "extant_117ce": true,
+        "notes": "Sneferu's pyramid at Meidum had shed its casing and partly collapsed a thousand years before Rome existed, leaving a stepped tower rising from a debris apron. New Kingdom scribes visiting around 1500 BCE left graffiti noting the structure was already ancient and ruined in their own day. Standing 65 meters tall at its core, it remains Egypt's earliest attempt at a true smooth pyramid, a design later perfected at Giza. By 117 CE the ruin looked much as it does today, unchanged for a millennium.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Meidum",
+          "https://www.ancientpages.com/2017/01/02/meidum-collapsed-pyramid-of-great-builder-pharaoh-snefru/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Meidum%20Pyramid.jpg?width=800",
+        "image_credit": "Photograph of the Meidum Pyramid · Wikimedia Commons"
+      }
     }
   ]
 }
