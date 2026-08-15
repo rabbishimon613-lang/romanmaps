@@ -10355,6 +10355,1108 @@
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grotte di Catullo - Sirmione.jpg?width=800",
     "image_credit": "Grotte di Catullo, Sirmione, Lake Garda · Wikimedia Commons"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.5975,
+     37.7017
+    ]
+   },
+   "properties": {
+    "id": "poi_rio_tinto_mines",
+    "category": "mine",
+    "name_latin": "Cotinae",
+    "name_english": "Rio Tinto Mines",
+    "province": "Hispania Baetica",
+    "modern_location": "Minas de Riotinto, Huelva Province, Spain",
+    "built": -206,
+    "destroyed": 250,
+    "extant_117ce": true,
+    "notes": "Rio Tinto's blood-red waters, stained by pyrite oxidation, marked one of the richest silver and copper districts Rome worked in Iberia. Engineers linked pairs of waterwheels to lift floodwater 30 meters from underground galleries, wooden fragments of which survive today. Two centuries of extraction had passed by 117 CE, the ore worked mostly by chained slave labor. Pliny the Elder named the mining settlement here Cotinae.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Rio_Tinto_(river)",
+     "https://www.andalucia.com/province/huelva/riotinto/history.htm"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Río Tinto, Huelva - Carretera A-461.jpg?width=800",
+    "image_credit": "The Rio Tinto mining district, Huelva province, Spain · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.5474,
+     53.0784
+    ]
+   },
+   "properties": {
+    "id": "poi_lutudarum",
+    "category": "mine",
+    "name_latin": "Lutudarum",
+    "name_english": "Lutudarum Lead Mines",
+    "province": "Britannia",
+    "modern_location": "Wirksworth area, Derbyshire, England",
+    "built": 75,
+    "destroyed": 250,
+    "extant_117ce": true,
+    "notes": "Lead pigs stamped LVTVD or SOCIORVM LVTVDARES traveled from this Derbyshire mining district to ports across Roman Britain, one inscribed pig reading British lead worked from the silver mines. Matlock, Cromford, and Wirksworth together held the densest concentration of these finds anywhere in the province. By 117 CE the works had run for four decades under an organized company of lessees, the socii Lutudarenses.",
+    "sources": [
+     "http://roman-britain.co.uk/places/crich.htm",
+     "https://www.ucl.ac.uk/archaeo-metallurgical-studies/sites/archaeo-metallurgical-studies/files/iams_21_2001_gardiner.pdf"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.5486,
+     46.9397
+    ]
+   },
+   "properties": {
+    "id": "poi_huttenberg_ferrum_noricum",
+    "category": "mine",
+    "name_latin": "Ferrum Noricum (Noreia)",
+    "name_english": "Huttenberg Iron Mines",
+    "province": "Noricum",
+    "modern_location": "Huttenberg, Carinthia, Austria",
+    "built": -50,
+    "destroyed": 400,
+    "extant_117ce": true,
+    "notes": "Ovid himself praised the hardness of the steel dug from these Carinthian hills, and Roman legions armed themselves with weapons forged from Noricum's ore for four centuries. Six smelting furnaces and ten smithing hearths excavated at the Semlach Eisner site trace an industry running continuously since the province's annexation in 16 BCE. By 117 CE ferrum Noricum was the standard steel of the Roman military, prized above every rival source.",
+    "sources": [
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC3886306/",
+     "https://en.wikipedia.org/wiki/Noric_steel"
+    ],
+    "confidence": "high",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     32.8908,
+     35.097
+    ]
+   },
+   "properties": {
+    "id": "poi_skouriotissa_mine",
+    "category": "mine",
+    "name_latin": "Skouriotissa",
+    "name_english": "Skouriotissa Copper Mines",
+    "province": "Cyprus",
+    "modern_location": "Skouriotissa, Nicosia District, Cyprus",
+    "built": -2500,
+    "destroyed": 700,
+    "extant_117ce": true,
+    "notes": "Two million tons of ancient slag still cover the ground around this copper mine in the Solea valley, half of everything Cyprus ever produced in antiquity. The Greek word for copper itself, kyprios, comes from this island's mines. Roman-period smelting here reached a scale never matched before or after, and by 117 CE the works had operated without interruption for well over a millennium.",
+    "sources": [
+     "https://www.cambridge.org/core/journals/antiquity/article/reconstructing-an-ancient-mining-landscape-a-multidisciplinary-approach-to-copper-mining-at-skouriotissa-cyprus/8A58F37422ACADDFF3B126E8D4C851DE",
+     "https://ucyweb.ucy.ac.cy/aru/documents/Projects/5._Vasiliki_Kassianidou.pdf"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     33.2167,
+     35.0167
+    ]
+   },
+   "properties": {
+    "id": "poi_tamassos_mines",
+    "category": "mine",
+    "name_latin": "Tamassos",
+    "name_english": "Tamassos Copper Mines",
+    "province": "Cyprus",
+    "modern_location": "Politiko, Nicosia District, Cyprus",
+    "built": -1000,
+    "destroyed": 400,
+    "extant_117ce": true,
+    "notes": "Sanctuaries to Aphrodite stood beside the copper workshops of this inland city-kingdom, a pairing that put commerce and divinity under one roof. Homer already knew Tamassos by name for its ore. Rome kept the district's furnaces running alongside those at nearby Mavrovouli and Kokkinopezoula, and by 117 CE the site had supplied copper to Mediterranean markets for well over a thousand years.",
+    "sources": [
+     "https://www.ancientcyprus.com/articles/copper-kingdoms-of-ancient-cyprus",
+     "https://cyprusdiscovery.com/copper-identity-of-cyprus/"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.63,
+     38.04
+    ]
+   },
+   "properties": {
+    "id": "poi_castulo_mines",
+    "category": "mine",
+    "name_latin": "Castulo",
+    "name_english": "Castulo Silver and Lead Mines",
+    "province": "Hispania Tarraconensis",
+    "modern_location": "Linares, Jaen Province, Spain",
+    "built": -300,
+    "destroyed": 300,
+    "extant_117ce": true,
+    "notes": "Silver from the seventy-hectare hillfort of Castulo was rich enough that Hannibal married a local princess, Himilce, to secure access to it before ever marching on Rome. The Guadalquivir carried copper, lead, and silver out of these Sierra Morena workings for six centuries under Roman control. By 117 CE Castulo held municipal status and its mines remained central to the economy of the upper Guadalquivir valley.",
+    "sources": [
+     "https://www.jaenparaisointerior.es/en/w/ibero-roman-city-of-castulo",
+     "https://nuttersworld.com/mining-in-andalucia/mining-in-jaen/"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     24.0828,
+     40.9169
+    ]
+   },
+   "properties": {
+    "id": "poi_pangaion_gold_mines",
+    "category": "mine",
+    "name_latin": "Mons Pangaeus",
+    "name_english": "Mount Pangaion Gold Mines",
+    "province": "Macedonia",
+    "modern_location": "Pangaion Hills, Kavala, Greece",
+    "built": -700,
+    "destroyed": 300,
+    "extant_117ce": true,
+    "notes": "Philip II conquered this mountain range specifically to seize its gold, drawing roughly a thousand talents a year that later bankrolled Alexander's conquest of Persia. Roman-period archaeology shows the old workings intensified rather than abandoned once Macedonia became a province. Veterans of the Battle of Philippi settled in the plain below, and by 117 CE the mountain's gold still fed the Roman mint two centuries after Actium.",
+    "sources": [
+     "https://www.labrujulaverde.com/en/2026/03/the-fascinating-history-of-mount-pangaion-the-gold-mountain-that-forged-empires/",
+     "https://en.wikipedia.org/wiki/Pangaion_Hills"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.2316,
+     46.1063
+    ]
+   },
+   "properties": {
+    "id": "poi_ampelum_zlatna",
+    "category": "mine",
+    "name_latin": "Ampelum",
+    "name_english": "Ampelum Gold Mining Center",
+    "province": "Dacia",
+    "modern_location": "Zlatna, Alba County, Romania",
+    "built": 107,
+    "destroyed": 270,
+    "extant_117ce": true,
+    "notes": "A Roman procurator named Marcus Ulpius Hermias ran the entire Dacian gold district from an office in this Carpathian town, backed by soldiers of the Thirteenth Legion and a staff of clerks and paymasters. Ampelum coordinated the mining settlements scattered through the Apuseni Mountains, including nearby Alburnus Maior. Founded in the years right after Trajan's conquest of Dacia in 106 CE, it was already the gold administration's headquarters by 117 CE.",
+    "sources": [
+     "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Dampelum",
+     "https://www1.leiza.de/transformation/romania/mining/miningengl.htm"
+    ],
+    "confidence": "high",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     34.7956,
+     24.6341
+    ]
+   },
+   "properties": {
+    "id": "poi_mons_smaragdus",
+    "category": "mine",
+    "name_latin": "Mons Smaragdus",
+    "name_english": "Wadi Sikait Emerald Mines",
+    "province": "Aegyptus",
+    "modern_location": "Wadi Sikait, Red Sea Governorate, Egypt",
+    "built": -30,
+    "destroyed": 400,
+    "extant_117ce": true,
+    "notes": "This stretch of Egypt's Eastern Desert held the only emerald deposits known anywhere in the Roman world, and Cleopatra's own emeralds are traced to these hills. Eleven separate extraction galleries have been mapped around the valley, cut into stone still green-flecked today. Roman mining here began under Augustus around 30 BCE, and by 117 CE the gems had traveled the length of the empire as luxury stones for imperial jewelry.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Mons_Smaragdus",
+     "https://popular-archaeology.com/article/new-evidence-regarding-emerald-production-in-roman-egypt-coming-from-wadi-sikait/"
+    ],
+    "confidence": "high",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.4272,
+     42.8144
+    ]
+   },
+   "properties": {
+    "id": "poi_elba_iron_mines",
+    "category": "mine",
+    "name_latin": "Ilva",
+    "name_english": "Elba Iron Mines",
+    "province": "Italia",
+    "modern_location": "Rio Marina, Elba Island, Italy",
+    "built": -600,
+    "destroyed": 150,
+    "extant_117ce": true,
+    "notes": "Smoke from Elba's iron furnaces gave the island its ancient Greek name, Aithale, meaning sooty. Ore dug from Rio Marina's hillsides had crossed to the mainland smelters of Populonia for five centuries by the time Augustus made the Tyrrhenian a Roman lake. The furnace and the goat, a phrase modern researchers use for the island's fuelwood economy, captures how iron production here reshaped the landscape well into the early Empire, with 117 CE falling within its documented Roman-period operation.",
+    "sources": [
+     "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0241133",
+     "https://www.infoelba.com/discovering-elba/history-of-elba/mines/"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rio Marina (Elba).jpg?width=800",
+    "image_credit": "Rio Marina, the historic center of Elba’s Roman-era iron mining district · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -7.5239,
+     41.4942
+    ]
+   },
+   "properties": {
+    "id": "poi_tres_minas",
+    "category": "mine",
+    "name_latin": "Tres Minas",
+    "name_english": "Tres Minas Gold Mines",
+    "province": "Hispania Tarraconensis",
+    "modern_location": "Vila Pouca de Aguiar, Vila Real District, Portugal",
+    "built": 50,
+    "destroyed": 200,
+    "extant_117ce": true,
+    "notes": "The largest open pit at this Portuguese gold complex runs 500 meters long and drops 100 meters deep, cut entirely by Roman hand tools and hydraulic sluicing. A full settlement grew up around the workings, complete with baths and an amphitheater for the miners. Gold, silver, and other ores came out of the Tres Minas, Gralheira, and Jales deposits together through the 1st and 2nd centuries CE, squarely spanning the year 117.",
+    "sources": [
+     "https://historylab.es/the-gold-of-tresminas-cultural-landscape-and-roman-mining-technology/",
+     "https://www.ancientportsantiques.com/wp-content/uploads/Documents/PLACES/Spain-Portugal/TresMinas-WahlClerici2013.pdf"
+    ],
+    "confidence": "high",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     34.997,
+     29.785
+    ]
+   },
+   "properties": {
+    "id": "poi_timna_copper_mines",
+    "category": "mine",
+    "name_latin": "Mons Timna",
+    "name_english": "Timna Valley Copper Mines",
+    "province": "Arabia Petraea",
+    "modern_location": "Timna Valley, Southern District, Israel",
+    "built": 100,
+    "destroyed": 300,
+    "extant_117ce": true,
+    "notes": "Copper had been dug from this desert valley north of the Red Sea since the Chalcolithic era, but Roman engineers reopened the workings in the 1st and 2nd centuries CE with refined smelting techniques the earlier miners never had. A Roman fort at nearby Yotvata guarded the route. By 117 CE the renewed operation was feeding copper into the Roman economy of the province bordering the Gulf of Aqaba.",
+    "sources": [
+     "https://www.biblewalks.com/timna/",
+     "https://www.sci.news/archaeology/pre-roman-copper-industry-timna-valley-13532.html"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The old mine a Timna.jpg?width=800",
+    "image_credit": "An ancient mine shaft in the Timna Valley copper district · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     30.75,
+     38.867
+    ]
+   },
+   "properties": {
+    "id": "poi_docimium_quarries",
+    "category": "quarry",
+    "name_latin": "Docimium",
+    "name_english": "Docimium Marble Quarries",
+    "province": "Asia",
+    "modern_location": "Iscehisar, Afyonkarahisar Province, Turkey",
+    "built": -280,
+    "destroyed": 400,
+    "extant_117ce": true,
+    "notes": "Purple-veined pavonazzetto marble from this Phrygian quarry framed the niches of Hadrian's Pantheon, cut on imperial account under a state bureau rather than sold on the open market. Columns of a size no other Anatolian quarry could match left Docimium for building projects across the Mediterranean. By 117 CE the Roman state had directly operated these workings for over a century, a monopoly documented in the quarry's own inscriptions.",
+    "sources": [
+     "https://link.springer.com/article/10.1007/s12665-020-08943-2",
+     "https://en.wikipedia.org/wiki/Docimium"
+    ],
+    "confidence": "high",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     33.3072,
+     27.2475
+    ]
+   },
+   "properties": {
+    "id": "poi_mons_porphyrites",
+    "category": "quarry",
+    "name_latin": "Mons Porphyrites",
+    "name_english": "Mons Porphyrites Quarries",
+    "province": "Aegyptus",
+    "modern_location": "Gebel Dokhan, Red Sea Governorate, Egypt",
+    "built": 18,
+    "destroyed": 335,
+    "extant_117ce": true,
+    "notes": "A soldier named Caius Cominius Leugas discovered this outcrop in 18 CE, and it turned out to be the only source of imperial purple porphyry anywhere in the Roman world. Stone hauled across the desert on the Via Porphyrites eventually clad the Pantheon and Constantinople's imperial palace. By 117 CE the quarry had operated under direct imperial control for nearly a century, its purple stone reserved exclusively for the emperor's own projects.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Mons_Porphyrites",
+     "https://www.world-archaeology.com/features/mons-porphyrites-egypt/"
+    ],
+    "confidence": "high",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     27.63,
+     40.62
+    ]
+   },
+   "properties": {
+    "id": "poi_proconnesian_quarries",
+    "category": "quarry",
+    "name_latin": "Proconnesus",
+    "name_english": "Marmara Island Marble Quarries",
+    "province": "Asia",
+    "modern_location": "Saraylar, Marmara Island, Turkey",
+    "built": -600,
+    "destroyed": 500,
+    "extant_117ce": true,
+    "notes": "Marble cut from this Sea of Marmara island loaded straight onto ships at the harbor of Saraylar, sparing haulers a single mile of overland cartage. The quarries span more than 40 square kilometers, among the largest worked surfaces in the ancient marble trade. Extraction had run since the Archaic period, but demand from Rome pushed production to its Roman-era height, with 117 CE falling in the middle of that centuries-long boom.",
+    "sources": [
+     "https://artofmaking.ac.uk/explore/materials/7/Prokonnesian-Marble",
+     "https://marmoraasiatica.uw.edu.pl/quarries/prokonnesos/"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.8831,
+     38.0807
+    ]
+   },
+   "properties": {
+    "id": "poi_pentelic_quarries",
+    "category": "quarry",
+    "name_latin": "Mons Pentelicus",
+    "name_english": "Mount Pentelicus Marble Quarries",
+    "province": "Achaea",
+    "modern_location": "Penteli, Attica, Greece",
+    "built": -570,
+    "destroyed": 200,
+    "extant_117ce": true,
+    "notes": "Twenty-five separate quarries once scarred the southern slope of this mountain overlooking Athens, the same white stone that built the Parthenon centuries earlier. Roman builders began shipping Pentelic marble to Italy in the 2nd and 1st centuries BCE for temple projects far from Greece. Pausanias later reported the veins running thin, but by 117 CE the mountain was still yielding stone for Flavian-era construction underway in Rome.",
+    "sources": [
+     "https://www.britannica.com/science/Pentelic-marble",
+     "https://en.wikipedia.org/wiki/Mount_Pentelicus"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Penteli, Spilia marble quarry (1990) 02.jpg?width=800",
+    "image_credit": "The Spilia marble quarry on Mount Pentelicus, source of Athens’s building stone · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.19,
+     37.11
+    ]
+   },
+   "properties": {
+    "id": "poi_paros_marathi_quarries",
+    "category": "quarry",
+    "name_latin": "Paros",
+    "name_english": "Paros Marble Quarries",
+    "province": "Insulae Cycladae",
+    "modern_location": "Marathi, Paros, Greece",
+    "built": -3200,
+    "destroyed": 500,
+    "extant_117ce": true,
+    "notes": "Underground galleries called the Quarry of the Nymphs and the Quarry of Pan produced lychnites, a marble so translucent that quarrymen worked by lamplight even in daytime. This stone became the Venus de Milo and Praxiteles' Hermes, prized above every rival white marble in the ancient world. Extraction on Paros had continued for nearly three thousand years by 117 CE, still shipped from this small Cycladic island to buyers across the Roman Mediterranean.",
+    "sources": [
+     "https://www.greeka.com/cyclades/paros/sightseeing/marathi-quarries/",
+     "https://depositsmag.com/2018/05/31/marble-from-the-isle-of-paros-in-ancient-greece-a-tour-of-the-ancient-quarries/"
+    ],
+    "confidence": "high",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     28.55,
+     37.35
+    ]
+   },
+   "properties": {
+    "id": "poi_goktepe_quarries",
+    "category": "quarry",
+    "name_latin": "Goktepe",
+    "name_english": "Goktepe Marble Quarries",
+    "province": "Asia",
+    "modern_location": "near Karacasu, Aydin Province, Turkey",
+    "built": 1,
+    "destroyed": 500,
+    "extant_117ce": true,
+    "notes": "Sculptors working forty kilometers from Aphrodisias found a rare two-toned black-and-white stone in this Carian plateau quarry, alongside a fine white marble that rivaled the city's own famous material. Aphrodisian workshops drew on Goktepe stone for statues that traveled as far as Rome and Gaul. Quarrying began in the early 1st century CE, and by 117 CE, just before its output peaked under Hadrian, the site was already an established alternate source for Aphrodisias.",
+    "sources": [
+     "https://www.cambridge.org/core/journals/journal-of-roman-archaeology/article/abs/quarries-in-the-region-of-aphrodisias-the-black-and-white-marbles-of-goktepe-mugla/622FD8482AEE657400F803323643D8FD",
+     "https://www.researchgate.net/publication/292711299_Discovery_and_preliminary_investigation_of_the_Goktepe_marble_quarries_Mugla_Turkey_and_their_Role_as_an_Alternative_Source_of_Aphrodisias_marbles"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     36.1988,
+     33.9988
+    ]
+   },
+   "properties": {
+    "id": "poi_baalbek_quarry",
+    "category": "quarry",
+    "name_latin": "Heliopolis",
+    "name_english": "Baalbek Quarry",
+    "province": "Syria",
+    "modern_location": "Baalbek, Bekaa Valley, Lebanon",
+    "built": -16,
+    "destroyed": 300,
+    "extant_117ce": true,
+    "notes": "Three stone blocks weighing roughly 800 tons each still sit in this Bekaa Valley quarry, cut for the podium of the Temple of Jupiter but never moved the final few hundred meters to the sanctuary. The largest uncarved stone recorded anywhere in antiquity lies here too, over 1,000 tons of solid limestone. Construction of Heliopolis's great sanctuary complex had been underway since the reign of Augustus, and by 117 CE the quarry had already supplied a century of monumental building.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Baalbek_Stones",
+     "https://www.livius.org/articles/place/heliopolis-baalbek/baalbek-photos/baalbek-quarry/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Baalbek-stoneofpregnantwoman.jpg?width=800",
+    "image_credit": "The Stone of the Pregnant Woman, an unmoved ~1,000-tonne monolith still lying in the Baalbek quarry · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.9359,
+     35.7558
+    ]
+   },
+   "properties": {
+    "id": "poi_cotta_garum",
+    "category": "garum_factory",
+    "name_latin": "Cotta",
+    "name_english": "Cotta Fish Salting Factory",
+    "province": "Mauretania Tingitana",
+    "modern_location": "near Cap Spartel, Tangier, Morocco",
+    "built": 1,
+    "destroyed": 300,
+    "extant_117ce": true,
+    "notes": "This Atlantic coastal town south of Cap Spartel existed almost entirely to make garum, its salting vats sitting alongside an olive press, temple, bathhouse, and villa. Founded early in the 1st century CE under Roman rule, Cotta shipped its fish sauce across the Strait of Gibraltar to markets on both continents. By 117 CE the factory had operated for roughly a century, drawing on tuna runs passing the Moroccan Atlantic coast.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Ancient_Cotta",
+     "https://link.springer.com/article/10.1007/s10437-025-09643-7"
+    ],
+    "confidence": "high",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.7711,
+     37.2492
+    ]
+   },
+   "properties": {
+    "id": "poi_baria_villaricos_garum",
+    "category": "garum_factory",
+    "name_latin": "Baria",
+    "name_english": "Villaricos Fish Salting Factory",
+    "province": "Hispania Tarraconensis",
+    "modern_location": "Villaricos, Almeria Province, Spain",
+    "built": -700,
+    "destroyed": 300,
+    "extant_117ce": true,
+    "notes": "Fish pools, warehouses, and wells lined the estuary shoreline at this old Phoenician trading post, declared a Roman municipality in 75 CE with its salted-fish industry already well established. Wealth from the sea here ran alongside silver drawn from the nearby Sierra Almagrera. By 117 CE Baria had spent decades as a working Roman town whose economy stood on salting vats as much as mining.",
+    "sources": [
+     "https://www.visit-andalucia.com/baria-phoenician-roman-villaricos-almeria/",
+     "https://en.wikipedia.org/wiki/Roman_fish_salting_factory"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.5552,
+     39.6875
+    ]
+   },
+   "properties": {
+    "id": "poi_neapolis_sardinia_garum",
+    "category": "garum_factory",
+    "name_latin": "Neapolis",
+    "name_english": "Neapolis Fish Salting Factory",
+    "province": "Sardinia et Corsica",
+    "modern_location": "Guspini, South Sardinia, Italy",
+    "built": -700,
+    "destroyed": 400,
+    "extant_117ce": true,
+    "notes": "Pliny the Elder named this Gulf of Oristano port among Sardinia's most important towns, its lagoon setting ideal for salting the tuna and other fish that passed along the coast. A Roman road and aqueduct once served the settlement, whose ruins remain visible at the mouth of the Pabillonis river. By 117 CE Neapolis had operated for centuries as a commercial hub within the lagoon system now called Stagno di Marceddi.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Neapolis_(Sardinia)",
+     "https://www.sardegnacultura.it/en/articles/guspini-citta-romana-di-neapolis"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     36.4069,
+     45.2769
+    ]
+   },
+   "properties": {
+    "id": "poi_tyritake_garum",
+    "category": "garum_factory",
+    "name_latin": "Tyritake",
+    "name_english": "Tyritake Fish Salting Factory",
+    "province": "Bosporus",
+    "modern_location": "near Kerch, Crimea",
+    "built": -560,
+    "destroyed": 400,
+    "extant_117ce": true,
+    "notes": "Eight shallow stone vats sat clustered together at this Bosporan Kingdom town on the Kerch Strait, built wide enough to salt whole large fish rather than fillets. Fishing and wine production carried the town's economy through the first centuries CE, once Rome extended its protection over the Bosporan kingdom. By 117 CE Tyritake had processed Black Sea fish catches for the better part of six centuries.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Tyritake",
+     "https://books.openedition.org/pccj/1746?lang=en"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.4083,
+     36.1855
+    ]
+   },
+   "properties": {
+    "id": "poi_carteia_garum",
+    "category": "garum_factory",
+    "name_latin": "Carteia",
+    "name_english": "Carteia Fish Salting Factory",
+    "province": "Hispania Baetica",
+    "modern_location": "San Roque, Cadiz Province, Spain",
+    "built": -940,
+    "destroyed": 400,
+    "extant_117ce": true,
+    "notes": "Old salt beds still line the beach at the head of the Bay of Gibraltar where this Phoenician-founded city once layered imported tuna with salt for curing. Carteia became the first Latin colony founded outside Italy in 171 BCE, and its garum trade grew alongside wine exports shipped in amphorae fired in kilns on site. By 117 CE the industry had operated continuously through more than two centuries of Roman rule.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Carteia",
+     "https://www.andalucia.com/province/cadiz/sanroque/carteia-roman-archaeological-site"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     33.4902,
+     44.6124
+    ]
+   },
+   "properties": {
+    "id": "poi_chersonesus_garum",
+    "category": "garum_factory",
+    "name_latin": "Chersonesus Taurica",
+    "name_english": "Chersonesus Fish Salting Cisterns",
+    "province": "Bosporus",
+    "modern_location": "Sevastopol, Crimea",
+    "built": -421,
+    "destroyed": 500,
+    "extant_117ce": true,
+    "notes": "Rows of cisterns for salting fish still line the ruins of this Greek colony on Crimea's southwestern tip, founded by settlers from Heraclea Pontica in the 5th century BCE. Winemaking and fishing anchored the city's economy for its entire ancient existence, trading grain, cattle, and salted fish with Scythian neighbors and Greek cities alike. Roman garrisons protected Chersonesus by the Flavian period, and its fish-salting industry was still active when Trajan died in 117 CE.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Chersonesus",
+     "https://books.openedition.org/pccj/1746?lang=en"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -7.935,
+     37.0161
+    ]
+   },
+   "properties": {
+    "id": "poi_ossonoba_garum",
+    "category": "garum_factory",
+    "name_latin": "Ossonoba",
+    "name_english": "Ossonoba Fish Salting Factory",
+    "province": "Lusitania",
+    "modern_location": "Faro, Portugal",
+    "built": -200,
+    "destroyed": 400,
+    "extant_117ce": true,
+    "notes": "The largest urban center of southern Lusitania sat where modern Faro now stands, its harbor moving salted fish and garum out to Roman markets along with agricultural goods and minerals. Mosaics of fish and marine life turn up across the surrounding Algarve coast, a sign of how central the salting industry was to the region's identity. By 117 CE Ossonoba anchored a chain of fish-processing sites running the length of the Algarve shoreline.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Ossonoba_(Roman_city)",
+     "https://www.algarvehistoryassociation.com/en/portuguese-history/algarve-history/66-fish-conservation-in-the-algarve-in-roman-times"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5624,
+     38.1917
+    ]
+   },
+   "properties": {
+    "id": "poi_portus_ilicitanus_garum",
+    "category": "garum_factory",
+    "name_latin": "Portus Ilicitanus",
+    "name_english": "La Picola Fish Salting Factory",
+    "province": "Hispania Tarraconensis",
+    "modern_location": "Santa Pola, Alicante Province, Spain",
+    "built": 1,
+    "destroyed": 300,
+    "extant_117ce": true,
+    "notes": "This harbor town served as the port outlet for the inland colony of Ilici, its cetariae vats built specifically to render tuna and mackerel into garum for export. Warehouses, a necropolis, and a mosaic-floored villa grew up around the fish-salting works over the 1st century CE. By 117 CE Portus Ilicitanus had spent decades shipping preserved fish out through the same harbor that once brought colonists to Ilici.",
+    "sources": [
+     "https://www.turismosantapola.es/stp/Web_php/index.php?contenido=subapartados_coconut&id_boto=426&title=portus-ilicitanus-site&lang=4",
+     "https://www.academia.edu/45207966/Actuaciones_arqueol%C3%B3gicas_en_la_factor%C3%ADa_de_salazones_pisc%C3%ADcolas_de_La_Picola_Portus_Ilicitanus_Santa_Pola_Alicante_Resultados_de_las_campa%C3%B1as_2017_2018"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.23,
+     38.75
+    ]
+   },
+   "properties": {
+    "id": "poi_halae_salinae",
+    "category": "salina",
+    "name_latin": "Halae",
+    "name_english": "Halae Salt Works",
+    "province": "Achaea",
+    "modern_location": "near Malesina, Central Greece",
+    "built": -600,
+    "destroyed": 400,
+    "extant_117ce": true,
+    "notes": "This coastal town on the Opuntian Gulf took its very name from the Greek word for salt, halas, after the springs found in its immediate neighborhood. Strabo and Pausanias both placed Halae at the eastern edge of Boeotian territory in their accounts of the region. Salt production tied to these springs continued through the Roman period, and by 117 CE the town's name still advertised the industry that built it.",
+    "sources": [
+     "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry%3Dhalae-geo",
+     "https://en.wikipedia.org/wiki/Halae"
+    ],
+    "confidence": "low",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.3714,
+     45.7686
+    ]
+   },
+   "properties": {
+    "id": "poi_aquileia_grado_salinae",
+    "category": "salina",
+    "name_latin": "Salinae Aquileienses",
+    "name_english": "Aquileia Salt Pans",
+    "province": "Venetia et Histria",
+    "modern_location": "Grado, Friuli-Venezia Giulia, Italy",
+    "built": -181,
+    "destroyed": 500,
+    "extant_117ce": true,
+    "notes": "Founded as a Roman colony in 181 BCE, Aquileia grew into the northern Adriatic's leading trade hub, moving glass, wine, oil, wool, and salt out through the lagoon at its doorstep. The Grado lagoon's evaporation pans supplied salt to a city Cassiodorus later praised for its saltworks near Venice. By 117 CE Aquileia had operated as a major salt-producing and salt-trading center for nearly three centuries.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Roman_Aquileia",
+     "https://link.springer.com/article/10.1007/s11457-021-09322-z"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.225,
+     41.83
+    ]
+   },
+   "properties": {
+    "id": "poi_ostia_campus_salinarum",
+    "category": "salina",
+    "name_latin": "Campus Salinarum Romanarum",
+    "name_english": "Ostia Salt Pans",
+    "province": "Italia",
+    "modern_location": "Maccarese, near Fiumicino, Italy",
+    "built": -640,
+    "destroyed": 500,
+    "extant_117ce": true,
+    "notes": "Legend credited king Ancus Marcius with founding these salt pans on the Tiber's north bank, close enough to Rome that barges moved the harvest upriver in a single day. State censors imposed a tax on the salt trade here as early as 204 BCE, and two named contractors managed the public pans under a formal lease by the 130s CE. By 117 CE the Campus Salinarum had supplied Rome's own table salt for the better part of six centuries.",
+    "sources": [
+     "https://onlinelibrary.wiley.com/doi/10.1002/gea.70038?af=R",
+     "https://visitostiaantica.org/en/the-salt-warehouses-in-ostia-antica/"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.1974,
+     36.4667
+    ]
+   },
+   "properties": {
+    "id": "poi_gades_salinae",
+    "category": "salina",
+    "name_latin": "Salinae Gaditanae",
+    "name_english": "Gades Salt Works",
+    "province": "Hispania Baetica",
+    "modern_location": "San Fernando, Cadiz Province, Spain",
+    "built": -100,
+    "destroyed": 400,
+    "extant_117ce": true,
+    "notes": "Salting factories lined the channel banks at Eritheia, the island district of ancient Gades, feeding a fishing industry already flourishing before the 1st century BCE. Almadraba tuna caught in the strait went straight from these salt pans into the garum vats that made the city's fish sauce famous across the empire. By 117 CE Gades had built two centuries of Roman-era wealth on the salt harvested from its own tidal flats.",
+    "sources": [
+     "https://marismabiomed.com/en/blogs/blog/discover-the-salt-flats-of-cadiz-a-natural-and-cultural-treasure-on-the-andalusian-coast",
+     "https://www.romanports.org/en/articles/ports-in-focus/682-gades-comes-back-to-life.html"
+    ],
+    "confidence": "low",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.1836,
+     44.6953
+    ]
+   },
+   "properties": {
+    "id": "poi_comacchio_salinae",
+    "category": "salina",
+    "name_latin": "Vicus Habentia (Comacchio)",
+    "name_english": "Comacchio Salt Pans",
+    "province": "Italia",
+    "modern_location": "Comacchio, Emilia-Romagna, Italy",
+    "built": -100,
+    "destroyed": 500,
+    "extant_117ce": true,
+    "notes": "Scattered river-mouth settlements including the vicus of Habentia dotted this Po delta lagoon system, an area recognized as a salt supplier to northern Italy since antiquity. Roman-era reclamation turned the shallow stagnant waters of the delta into a working salt landscape alongside fishing grounds. By 117 CE the lagoon communities here had produced salt for the region for generations, part of the same Adriatic tradition as nearby Cervia.",
+    "sources": [
+     "https://www.sciencedirect.com/science/article/pii/S0277379124004311",
+     "https://www.visitcomacchio.it/en/discover/the-po-delta-park/the-salt-marsh"
+    ],
+    "confidence": "low",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.8167,
+     43.8333
+    ]
+   },
+   "properties": {
+    "id": "poi_montans_pottery",
+    "category": "kiln",
+    "name_latin": "Montans",
+    "name_english": "Montans Pottery Workshops",
+    "province": "Gallia Aquitania",
+    "modern_location": "Montans, Tarn, France",
+    "built": -10,
+    "destroyed": 200,
+    "extant_117ce": true,
+    "notes": "Potters at this Tarn river workshop began stamping terra sigillata under Augustus and kept the kilns firing for two centuries, their wares reaching Britain, northern Spain, and the Rhineland. Clay-rich alluvial soil beside the river gave the workshop an easy raw-material supply that rivals like La Graufesenque lacked in the same abundance. By 117 CE Montans had been in continuous production for well over a century, one of three dominant South Gaulish sigillata centers.",
+    "sources": [
+     "https://www.researchgate.net/publication/236607378_Studies_of_the_Southern_Gaul_Sigillata_Ceramics_the_workshops_of_La_Graufesenque_and_Montans",
+     "https://potsherd.net/atlas/Ware/MOTS"
+    ],
+    "confidence": "high",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.2,
+     44.4667
+    ]
+   },
+   "properties": {
+    "id": "poi_banassac_pottery",
+    "category": "kiln",
+    "name_latin": "Banassac",
+    "name_english": "Banassac Pottery Workshops",
+    "province": "Gallia Narbonensis",
+    "modern_location": "Banassac, Lozere, France",
+    "built": 40,
+    "destroyed": 200,
+    "extant_117ce": true,
+    "notes": "Cups stamped at this Lozere workshop carried moulded drinking toasts and vine-scroll decoration, made for a Roman table culture that prized conviviality on its tableware. Banassac supplied around fifteen percent of all South Gaulish sigillata production, a smaller but steady share behind the dominant La Graufesenque. By 117 CE the workshop had been firing decorated Drag. 37 bowls for decades, distributed alongside its larger neighbors across the western provinces.",
+    "sources": [
+     "https://www.semanticscholar.org/paper/COMPOSITION-OF-THE-LA-GRAUFESENQUE,-BANASSAC-AND-Picon-Carre/67b9590c8c79294918c80b6c4cc0d3ae0407c72b",
+     "https://intarch.ac.uk/journal/issue50/5/1.html"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.3333,
+     42.6833
+    ]
+   },
+   "properties": {
+    "id": "poi_scoppieto_pottery",
+    "category": "kiln",
+    "name_latin": "Scoppieto",
+    "name_english": "Scoppieto Pottery Workshops",
+    "province": "Italia",
+    "modern_location": "Baschi, Umbria, Italy",
+    "built": -27,
+    "destroyed": 130,
+    "extant_117ce": true,
+    "notes": "More than fifty craftsmen worked side by side at this Tiber valley manufactory, the earliest fully documented case in Italy of every stage of pottery production organized under one roof. Coral-red terra sigillata cups, plates, and bowls left Scoppieto by river barge bound for Rome and Mediterranean coastal markets. Active from Augustus through Trajan, the workshop was still producing when Trajan died in 117 CE, right at the end of its two-century run.",
+    "sources": [
+     "https://www.umbriacultura.it/SebinaOpac/resource/area-archeologica-di-scoppieto-baschi-tr/SAM9000254",
+     "https://www.insegnadelgiglio.it/en/prodotto/scoppieto-i-il-territorio-e-i-materiali-lucerne-opus-doliare-metalli/"
+    ],
+    "confidence": "high",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.6167,
+     42.3833
+    ]
+   },
+   "properties": {
+    "id": "poi_tricio_pottery",
+    "category": "kiln",
+    "name_latin": "Tritium Magallum",
+    "name_english": "Tricio Pottery Workshops",
+    "province": "Hispania Tarraconensis",
+    "modern_location": "Tricio, La Rioja, Spain",
+    "built": 50,
+    "destroyed": 250,
+    "extant_117ce": true,
+    "notes": "Terra sigillata hispanica fired at this Ebro valley town under Vespasian's municipal charter reached markets across Hispania and, in smaller quantities, as far as Gaul, Germany, and North Africa. Tricio and its sister complex at Los Villares de Andujar together dominated Spanish fine-ware production for two centuries. By 117 CE the Tricio kilns were roughly midway through their peak run, which lasted from the mid-1st to the mid-2nd century CE.",
+    "sources": [
+     "https://www.researchgate.net/publication/316628338_La_terra_sigillata_hispanica_en_el_Valle_Medio_del_Ebro_El_Centro_alfarero_de_Tritium_Magallum_Tricio-La_Rioja",
+     "https://lugaresconhistoria.com/tricio-la-rioja"
+    ],
+    "confidence": "high",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.3666,
+     36.5695
+    ]
+   },
+   "properties": {
+    "id": "poi_henchir_mettich_estate",
+    "category": "estate",
+    "name_latin": "Fundus Villae Magnae Varianae",
+    "name_english": "Henchir Mettich Estate",
+    "province": "Africa Proconsularis",
+    "modern_location": "Bagradas Valley, near Testour, Tunisia",
+    "built": -50,
+    "destroyed": 300,
+    "extant_117ce": true,
+    "notes": "A four-sided limestone marker inscribed at this Bagradas valley estate in 116-117 CE laid out exactly how tenant farmers, or coloni, could bring unused imperial land under cultivation and what share of wheat, wine, and olive oil they owed in rent. The text applied the lex Manciana, a tenure code Rome used across its North African estates. Dated to the very year of this map's snapshot, the Henchir Mettich tablet is the earliest known copy of that law in force.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Henchir_Mettich",
+     "https://www.jstor.org/stable/290009"
+    ],
+    "confidence": "high",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.0836,
+     36.7664
+    ]
+   },
+   "properties": {
+    "id": "poi_saltus_burunitanus",
+    "category": "estate",
+    "name_latin": "Saltus Burunitanus",
+    "name_english": "Saltus Burunitanus Estate",
+    "province": "Africa Proconsularis",
+    "modern_location": "near Bou Salem, Jendouba Governorate, Tunisia",
+    "built": -50,
+    "destroyed": 250,
+    "extant_117ce": true,
+    "notes": "Coloni working this imperial olive and grain estate northeast of Bulla Regia later petitioned the emperor Commodus directly, complaining that the procurator's soldiers had flogged tenants who resisted demands beyond their legal quota. Their appeal, engraved on stone found near Souk el-Khmis, cites the same Mancian tenure system already in force decades earlier under Trajan. By 117 CE the estate's coloni were already farming under that established sharecropping arrangement.",
+    "sources": [
+     "https://drc.ohiolink.edu/handle/2374.OX/187562",
+     "https://www.trismegistos.org/place/20625"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
   }
  ]
 }
