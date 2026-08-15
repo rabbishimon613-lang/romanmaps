@@ -9309,6 +9309,1052 @@
     "image_url": null,
     "image_credit": null
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.2478,
+     40.5482
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_jovis_capri",
+    "category": "villa",
+    "name_latin": "Villa Iovis",
+    "name_english": "Villa Jovis",
+    "province": "Italia",
+    "modern_location": "Capri, Campania, Italy",
+    "built": 27,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Tiberius built Villa Jovis atop Monte Tiberio, 334 meters above the sea on Capri's eastern tip, completing it around 27 CE as the largest of his twelve villas on the island. He governed the entire Roman Empire from this clifftop retreat for the last decade of his reign, its cisterns storing over 2 million liters of rainwater for the isolated household. A sheer drop beside the emperor's private quarters fed rumors that disfavored courtiers were hurled into the sea below. The complex's massive vaulted substructures still stood in 117 CE.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Villa_Jovis",
+     "https://www.historyhit.com/locations/villa-jovis/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa Jovis (Capri) (3).jpg?width=800",
+    "image_credit": "Ruins of Villa Jovis, Capri · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.214,
+     40.559
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_damecuta",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Villa di Damecuta",
+    "province": "Italia",
+    "modern_location": "Anacapri, Capri, Italy",
+    "built": 27,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Tiberius raised this second grand villa directly above Capri's Blue Grotto sea cave, connecting the two with an internal passage cut through the rock. Excavations starting in 1937 uncovered marble floors and stuccoed walls, ranking Damecuta as the second-best-preserved of Tiberius's twelve island villas. Its scenic quarter let the emperor watch the sea from a shaded portico. The villa remained imperial property and still stood in 117 CE.",
+    "sources": [
+     "https://www.capri.com/en/e/villa-damecuta"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.2277,
+     40.5555
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_palazzo_a_mare",
+    "category": "villa",
+    "name_latin": "Palatium",
+    "name_english": "Palazzo a Mare",
+    "province": "Italia",
+    "modern_location": "Capri (Marina Grande), Italy",
+    "built": -27,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Augustus built this seaside palace on Capri's north shore after reputedly trading the larger island of Ischia to Naples for Capri around 29 BCE. Tiberius later enlarged it, and 20th-century excavations uncovered its scale along the harbor now called Marina Grande. Ancient writers called it simply the Palatium, \"the palace by the sea.\" It remained imperial property through the Julio-Claudian, Flavian, and Nervan-Trajanic dynasties into 117 CE.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Palazzo_a_Mare"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.6525,
+     41.7508
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_albanum_domitiani",
+    "category": "villa",
+    "name_latin": "Albanum Domitiani",
+    "name_english": "Domitian's Alban Villa",
+    "province": "Italia",
+    "modern_location": "Castel Gandolfo, Lazio, Italy",
+    "built": 85,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Domitian carved his retreat out of 14 square kilometers of the Alban Hills, terracing the slope in three tiers toward Lake Albano with a private hippodrome and a 300-meter cryptoporticus cut into the hillside. After his assassination in 96 CE his successors visited only occasionally, though Trajan and Hadrian both carried out modifications to the property in the early 2nd century. Its ruins now sit beneath the Apostolic Palace of Castel Gandolfo, the popes' summer residence.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Villa_of_Domitian"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.4322,
+     41.2547
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_sperlonga",
+    "category": "villa",
+    "name_latin": "Villa Speluncae",
+    "name_english": "Grotto Villa of Tiberius, Sperlonga",
+    "province": "Italia",
+    "modern_location": "Sperlonga, Lazio, Italy",
+    "built": -25,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "A natural sea cave at Sperlonga became the centerpiece of a Late Republican villa that Tiberius transformed into an elaborate dining grotto, staging monumental marble sculptures of Scylla and the blinding of Polyphemus around a fish pool inside the cave. Tiberius used the retreat until 26 CE, when a rockfall during a banquet nearly killed him and pushed him to withdraw permanently to Capri. Archaeologists recovered thousands of sculpture fragments from the grotto floor starting in 1957.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Sperlonga_sculptures",
+     "https://www.nationalgeographic.com/history/article/ancient-rome-sperlonga-grotto-tiberius"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grotta di Tiberio.JPG?width=800",
+    "image_credit": "The Grotto of Tiberius, Sperlonga · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.2833,
+     41.7167
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_laurentum_pliny",
+    "category": "villa",
+    "name_latin": "Villa Laurentina",
+    "name_english": "Pliny's Laurentine Villa",
+    "province": "Italia",
+    "modern_location": "Castel Fusano, Rome, Italy (identification contested)",
+    "built": 90,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Pliny the Younger devoted an entire letter (Epistulae 2.17) to this seaside retreat 17 Roman miles from the city, close enough that he could work a full day in Rome and reach it by lamplight. He described a heated bath suite, a covered winter walkway, and a tower overlooking the shore, built for year-round rather than seasonal use. Excavations near Castel Fusano since the 1930s have been proposed as the site, though the exact match is scholarly-disputed. Pliny was almost certainly still using the property when Trajan died in 117 CE.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Laurentum",
+     "https://www.gardenvisit.com/gardens/plinys_villa_at_laurentinum"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.26,
+     43.45
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_tuscis_pliny",
+    "category": "villa",
+    "name_latin": "Villa in Tuscis",
+    "name_english": "Pliny's Tuscan Villa",
+    "province": "Italia",
+    "modern_location": "Colle Plinio, near Città di Castello, Italy (scholarly estimate)",
+    "built": 90,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Pliny the Younger described this hillside estate overlooking the Tiber valley in his letters, praising its amphitheater-shaped vineyard slopes and a temple he built at his own expense for the town of Tifernum Tiberinum after its citizens made him their patron. He credited the local climate with prolonging his health. A site called Colle Plinio (\"Hill of Pliny\") has yielded walls, mosaic floors, and marble fragments matching his description. Pliny died around 113 CE while governing Bithynia-Pontus, and the estate presumably passed to heirs and stood through 117 CE.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Roman_Villa_of_Pliny_%22in_Tuscis%22",
+     "https://www.keytoumbria.com/Citta_di_Castello/Pliny_Villa.html"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.4931,
+     42.0025
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_livia_prima_porta",
+    "category": "villa",
+    "name_latin": "Villa ad Gallinas Albas",
+    "name_english": "Villa of Livia, Prima Porta",
+    "province": "Italia",
+    "modern_location": "Prima Porta, Rome, Italy",
+    "built": -25,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Livia Drusilla, Augustus's third wife, owned this villa 12 kilometers north of Rome, known in antiquity as Ad Gallinas Albas (\"at the white hens\") after a legendary omen. Its underground summer dining room was painted floor to ceiling with a single continuous garden fresco, one of the best-preserved illusionistic paintings to survive from antiquity. The marble Augustus of Prima Porta statue was unearthed here in 1863. The villa remained imperial property through the 2nd century CE.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Villa_of_Livia"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa of Livia - Garden fresco 003.jpg?width=800",
+    "image_credit": "Garden fresco from the Villa of Livia, Prima Porta (Palazzo Massimo alle Terme) · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4886,
+     40.7042
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_san_marco_stabiae",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Villa San Marco",
+    "province": "Italia",
+    "modern_location": "Castellammare di Stabia, Italy",
+    "built": -20,
+    "destroyed": 79,
+    "extant_117ce": false,
+    "notes": "Villa San Marco sprawled across 11,000 square meters on the clifftop above Stabiae, built around a tetrastyle atrium in the Augustan age and enlarged with a colonnaded swimming pool under Claudius. Its owner has never been identified, though the scale of its peristyle gardens marks it as one of the largest villas on the Bay of Naples. Vesuvius buried it on 24 August 79 CE, ending its life as a residence 38 years before this map's snapshot — included, like Pompeii's Villa of the Mysteries, as part of the story the eruption erased.",
+    "sources": [
+     "https://pompeiisites.org/en/stabiae/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa San Marco 2.JPG?width=800",
+    "image_credit": "Villa San Marco ruins, Stabiae · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4936,
+     40.7047
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_arianna_stabiae",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Villa Arianna",
+    "province": "Italia",
+    "modern_location": "Castellammare di Stabia, Italy",
+    "built": -180,
+    "destroyed": 79,
+    "extant_117ce": false,
+    "notes": "Villa Arianna took its name from a large Ariadne fresco found on its walls and ranks among the oldest villas at Stabiae, its core dating to the 2nd century BCE. Its terrace commanded views across the Bay of Naples, and excavators uncovered frescoes of Flora and Artemis now in the Naples Archaeological Museum. Vesuvius buried the villa on 24 August 79 CE, 38 years before 117 CE.",
+    "sources": [
+     "https://pompeiisites.org/en/stabiae-en-2/villa-arianna/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa Arianna (Stabia) WLM 099.JPG?width=800",
+    "image_credit": "Villa Arianna, Stabiae · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4508,
+     40.7508
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_poppaea_oplontis",
+    "category": "villa",
+    "name_latin": "Villa Poppaeana",
+    "name_english": "Villa Poppaea (Oplontis)",
+    "province": "Italia",
+    "modern_location": "Torre Annunziata, Italy",
+    "built": -50,
+    "destroyed": 79,
+    "extant_117ce": false,
+    "notes": "This luxury residence at Oplontis, traditionally linked to Poppaea Sabina, Nero's second wife, covered its walls in some of the finest Second Style frescoes surviving from Roman antiquity. An earthquake in 62 CE damaged it badly enough that repair crews were still working when Vesuvius erupted on 24 August 79 CE, burying the site mid-reconstruction. Excavation uncovered an unfinished swimming pool 61 meters long, the largest known from any Roman villa. UNESCO listed Oplontis alongside Pompeii and Herculaneum in 1997.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Villa_Poppaea"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Colonnade Villa Poppaea Oplontis Torre Annunziata Italy.jpg?width=800",
+    "image_credit": "Peristyle colonnade, Villa Poppaea, Oplontis · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4519,
+     40.7519
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_oplontis_b",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Oplontis Villa B",
+    "province": "Italia",
+    "modern_location": "Torre Annunziata, Italy",
+    "built": -20,
+    "destroyed": 79,
+    "extant_117ce": false,
+    "notes": "A few hundred meters from the Poppaea villa, this second Oplontis complex ran as a working wine business, its storerooms holding over 1,400 amphorae being readied for a new vintage when Vesuvius erupted. Excavators tied the property to a Lucius Crassius Tertius via a graffito naming him, though whether he owned or simply worked there remains debated. The complex combined cramped worker housing with a commercial packing and export operation for Vesuvian wine, ending on 24 August 79 CE.",
+    "sources": [
+     "https://pompeiisites.org/en/oplontis-en-2/villa-b-or-of-lucius-crassius-tertius/"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4816,
+     40.7484
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_diomedes_pompeii",
+    "category": "villa",
+    "name_latin": "Villa Diomedis",
+    "name_english": "Villa of Diomedes",
+    "province": "Italia",
+    "modern_location": "Pompeii, Italy",
+    "built": -70,
+    "destroyed": 79,
+    "extant_117ce": false,
+    "notes": "Built outside Pompeii's Herculaneum Gate in the final decades of the Republic, this villa ranked among the largest private residences near Pompeii, its garden framed by a colonnaded portico on three sides. It took its modern name from Marcus Arrius Diomedes, whose tomb stood across the road, though nothing ties him to actual ownership. Bourbon excavators cleared it between 1771 and 1774, among the earliest large-scale digs at Pompeii. Vesuvius buried the villa on 24 August 79 CE, 38 years before this map's snapshot.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Villa_of_Diomedes"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa di Diomede (Pompei) WLM 004.JPG?width=800",
+    "image_credit": "Villa of Diomedes, Pompeii · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4547,
+     40.7797
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_agrippa_postumus_boscotrecase",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Villa of Agrippa Postumus, Boscotrecase",
+    "province": "Italia",
+    "modern_location": "Boscotrecase, Italy",
+    "built": -19,
+    "destroyed": 79,
+    "extant_117ce": false,
+    "notes": "Augustus built this villa above Boscotrecase for his grandson Agrippa Postumus, whose exile and execution around 14 CE left the estate confiscated by the imperial family. Its black-ground and red-ground bedroom frescoes, among the earliest examples of the Third Pompeian Style, rank as some of the finest Augustan-era wall paintings ever recovered, now held in New York's Metropolitan Museum. The original 79 CE eruption ended its life as a residence 38 years before 117 CE.",
+    "sources": [
+     "https://www.metmuseum.org/essays/the-augustan-villa-at-boscotrecase",
+     "https://en.wikipedia.org/wiki/Villa_of_Agrippa_Postumus"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fresco detail - villa at Boscotrecase - MET image.jpg?width=800",
+    "image_credit": "Fresco from the Villa of Agrippa Postumus, Boscotrecase · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.4686,
+     41.8917
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_farnesina_augustan",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Augustan Villa of the Farnesina",
+    "province": "Italia",
+    "modern_location": "Trastevere, Rome, Italy",
+    "built": -20,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Workers laying Tiber embankments in 1879 struck the buried remains of a luxury villa on the river's west bank, its rooms covered floor to ceiling in Third Style frescoes and stucco reliefs from the height of the Augustan age. Scholars tie its ownership to Marcus Vipsanius Agrippa and, through him, to Augustus's daughter Julia. Its garden-room paintings and gilded stuccowork, now reassembled in Rome's Palazzo Massimo alle Terme, rank among the finest domestic decoration to survive from Augustus's reign. Note: the ancient find-site is unrelated to the 16th-century Renaissance building of the same modern name.",
+    "sources": [
+     "https://www.worldhistory.org/image/1378/roman-fresco-villa-of-the-farnesina-rome/"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fresco from the Villa Farnesina, 1st century CE; Palazzo Massimo alle Terme, Rome (29).jpg?width=800",
+    "image_credit": "Augustan fresco from the ancient Villa della Farnesina, now Palazzo Massimo alle Terme · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.6294,
+     41.4478
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_nero_antium",
+    "category": "villa",
+    "name_latin": "Villa Neroniana Antii",
+    "name_english": "Villa of Nero, Antium",
+    "province": "Italia",
+    "modern_location": "Anzio, Lazio, Italy",
+    "built": 37,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Nero was born at his family's seaside villa in Antium on 15 December 37 CE and later razed the inherited property to rebuild it on an imperial scale, adding a private theater. The estate had passed down through generations of his family, the Octavii, before Augustus himself used it around 2 BCE. Nero also built an artificial harbor at Antium, remnants of which still shape the modern port of Anzio. The property remained in imperial hands after Nero's fall in 68 CE and stood through the Trajanic reign.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Villa_of_Nero",
+     "https://www.ostia-antica.org/dict/topics/antium/presentation/antium-imperial-villa.htm"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.3611,
+     40.7853
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_sora_torre_del_greco",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Villa Sora",
+    "province": "Italia",
+    "modern_location": "Torre del Greco, Italy",
+    "built": -50,
+    "destroyed": 79,
+    "extant_117ce": false,
+    "notes": "Villa Sora occupied a coastal terrace at what is now Torre del Greco, expanding through several phases after its mid-1st-century-BCE founding into a residence with frescoed capitals and reception halls. Recent excavations found evidence a construction site was still active on the property in 79 CE, work interrupted mid-stream when Vesuvius erupted. The villa lay largely forgotten for centuries beneath the modern town that grew over it.",
+    "sources": [
+     "https://www.finestresullarte.info/en/archaeology/villa-sora-new-excavations-unearth-decorations-and-a-construction-site-active-in-79-ad"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4849,
+     40.628
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_positano",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Roman Villa of Positano",
+    "province": "Italia",
+    "modern_location": "Positano, Italy (beneath Santa Maria Assunta church)",
+    "built": 0,
+    "destroyed": 79,
+    "extant_117ce": false,
+    "notes": "A 2003 flood tore open the ground beneath Positano's Church of Santa Maria Assunta and revealed a buried Roman villa complete with painted walls and mosaic floors, hidden beneath the town's main piazza for nearly two thousand years. Its owners were mid-repair from 62 CE earthquake damage when Vesuvius erupted on 24 August 79 CE and entombed the property. The site opened as the Roman Archaeological Museum of Positano in 2018, reached by a stairway descending from the church.",
+    "sources": [
+     "https://www.albadamare.it/the-roman-villa-in-positano/"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.6323,
+     40.6503
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_minori",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Villa Romana di Minori",
+    "province": "Italia",
+    "modern_location": "Minori, Amalfi Coast, Italy",
+    "built": 10,
+    "destroyed": 79,
+    "extant_117ce": false,
+    "notes": "This two-level villa sat at the mouth of the Reginna Minor river, built in the early 1st century CE around a garden courtyard with a central pool typical of wealthy Roman residences. Ash from the 79 CE Vesuvius eruption buried the site 11 meters deep, and it lay forgotten until the collapse of nearby houses exposed it in 1932. It stands as one of the few excavated standing Roman villa complexes on the Amalfi Coast's southern side.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Villa_Romana,_Minori"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8148,
+     50.8377
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_fishbourne",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Fishbourne Roman Palace",
+    "province": "Britannia",
+    "modern_location": "Fishbourne, near Chichester, West Sussex, England",
+    "built": 75,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Fishbourne rose beside Chichester Harbour just thirty years after the Roman conquest of Britain, an extraordinarily early date for a palace of its scale, with four wings of formal rooms around a planted courtyard garden. Historians connect it to Tiberius Claudius Cogidubnus, a client king who ruled the Regni on Rome's behalf, though his ownership remains circumstantial. Excavations from 1960 uncovered more than 20 surviving mosaic floors, including the famous Cupid on a Dolphin design. It stands as the largest known Roman residence north of the Alps.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Fishbourne_Roman_Palace"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fishbourne Roman Palace.JPG?width=800",
+    "image_credit": "Fishbourne Roman Palace, West Sussex · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3617,
+     51.7554
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_gorhambury",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Gorhambury Roman Villa",
+    "province": "Britannia",
+    "modern_location": "near St Albans (Verulamium), England",
+    "built": 100,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Gorhambury grew out of a late Iron Age farmstead north of Verulamium, passing through timber buildings in the early 1st century before a small but genuinely luxurious stone villa replaced them around 100 CE. Excavations from 1972 to 1982 traced its transformation across nine distinct building periods. An aisled barn and bathhouse eventually joined the main house, serving the working side of the estate. This early stone villa stood in 117 CE, decades before its late-2nd-century rebuild.",
+    "sources": [
+     "https://www.roman-britain.co.uk/places/gorhambury-rural-villa/"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.199,
+     51.3703
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_lullingstone",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Lullingstone Roman Villa",
+    "province": "Britannia",
+    "modern_location": "Eynsford, Kent, England",
+    "built": 80,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "The first house at Lullingstone rose around 80-90 CE on the bank of the River Darent, a winged-corridor design linking two flanking wings that became one of the most common villa layouts in Roman Britain. That original building stood alone for roughly sixty years before a heated bath block was added around 150 CE, well after this map's snapshot. The site's famous 4th-century mosaics and early Christian house-church are centuries removed from this modest first-century structure — in 117 CE the villa was still in this earlier, simpler form.",
+    "sources": [
+     "https://www.english-heritage.org.uk/visit/places/lullingstone-roman-villa/history/",
+     "https://en.wikipedia.org/wiki/Lullingstone_Roman_Villa"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/External Shrine at Lullingstone Roman Villa.jpg?width=800",
+    "image_credit": "Lullingstone Roman Villa site, Kent · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.4802,
+     51.3096
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_eccles",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Eccles Roman Villa",
+    "province": "Britannia",
+    "modern_location": "Eccles, near Aylesford, Kent, England",
+    "built": 65,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Eccles ranks among the earliest high-status stone buildings raised anywhere in Roman Britain, its first structure going up around 65 CE, barely two decades after the conquest. The original house held 12 rooms, five floored with tessellated pavement, plus a veranda and possibly a second story. A large nearby bathhouse carried mosaic work reminiscent of Fishbourne Roman Palace, forty miles west. Archaeologist A.P. Detsicas excavated the site across thirteen seasons from 1963 to 1976.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Eccles_Roman_Villa"
+    ],
+    "confidence": "high",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.8112,
+     50.9518
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_rockbourne",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Rockbourne Roman Villa",
+    "province": "Britannia",
+    "modern_location": "Rockbourne, Hampshire, England",
+    "built": 50,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Rockbourne began as an Iron Age roundhouse converted into a simple three-room house in the decades after the conquest, long before it grew into the 40-plus-room complex visitors see today. That first Roman house stood for roughly a century until around 150 CE, when a larger range called the West House replaced it. A farmer plowing his field in 1942 struck the first hint of the buried ruins, setting off excavations that revealed a well yielding a haul of Roman coins. In 117 CE the estate still consisted of this earlier, modest farmhouse.",
+    "sources": [
+     "https://www.cultureoncall.com/the-history-of-rockbourne-roman-villa-lauren-smart/"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4726,
+     50.8158
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_angmering",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Angmering Roman Villa",
+    "province": "Britannia",
+    "modern_location": "Angmering, West Sussex, England",
+    "built": 65,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Angmering was one of the earliest masonry villas built anywhere in Roman Britain, going up within a generation of the Claudian conquest and decorated with marble fittings imported from Italy alongside local Sussex stone. Its bathhouse featured painted wall plaster and hypocaust underfloor heating, evidence of a wealthy, thoroughly Romanized owner just decades after the invasion. First noted by antiquarians in 1819, the site was systematically excavated between 1936 and 1946. By 117 CE the villa had already stood for roughly half a century.",
+    "sources": [
+     "https://www.aubreyresearch.com/roman-britain/sites/angmering"
+    ],
+    "confidence": "high",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2333,
+     50.8377
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_southwick",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Southwick Roman Villa",
+    "province": "Britannia",
+    "modern_location": "Southwick, West Sussex, England (site now built over)",
+    "built": 70,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Southwick ranked as the second-largest villa known in Sussex, a palatial residence built around 70-80 CE and decorated in a style closely comparable to nearby Fishbourne Roman Palace. Excavations in the 1930s found the villa had sprawled across an area now covered by a church and dozens of modern houses, and the site was largely lost to 20th-century development. Occupation there continued for nearly three centuries, from roughly 80 CE to the 340s CE — already an established estate by 117 CE.",
+    "sources": [
+     "https://www.academia.edu/29189345/The_Roman_Villa_at_Southwick_rep"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.7822,
+     43.2044
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_montmaurin",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Montmaurin Gallo-Roman Villa",
+    "province": "Gallia Aquitania",
+    "modern_location": "Montmaurin, Haute-Garonne, France",
+    "built": 50,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Montmaurin grew from modest mid-1st-century-CE beginnings into one of the largest villas ever discovered in Gaul, its later footprint sprawling across 19 hectares with roughly 200 rooms fitted with marble, mosaics, glazed windows, and running water. Archaeologist Georges Fouet uncovered the site by chance in 1946. The estate's grandest phase developed gradually until about 350 CE, but its first-century core already stood as a working residence in 117 CE.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Montmaurin",
+     "https://museedupatrimoine.fr/villa-gallo-romaine-de-montmaurin-haute-garonne/1605.html"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Atrium (Villa gallo-romaine de Montmaurin).JPG?width=800",
+    "image_credit": "Atrium, Gallo-Roman villa of Montmaurin · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.9319,
+     43.2044
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_chiragan",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Villa of Chiragan",
+    "province": "Gallia Aquitania",
+    "modern_location": "Martres-Tolosane, Haute-Garonne, France",
+    "built": -10,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "The first villa at Chiragan, on the Garonne along the road to Toulouse, rose modestly during Augustus's reign, centuries before the site became one of Gaul's grandest estates. By Trajan's reign the residence already included an atrium and two peristyle courtyards, expansion carried out as the property's wealth grew. Chiragan later yielded more than 700 sculpture fragments, including imperial portrait busts, now at the Saint-Raymond Museum in Toulouse — most of that famous sculpture collection dates generations after this snapshot.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Roman_villa_of_Chiragan"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.6928,
+     43.4497
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_loupian",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Loupian Roman Villa",
+    "province": "Gallia Narbonensis",
+    "modern_location": "Loupian, Herault, France",
+    "built": 40,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Loupian's villa began as a modest farmstead near the Via Domitia and grew during the 1st and 2nd centuries into a large patrician residence overlooking the Bassin de Thau, with its own thermal baths. Viticulture drove the estate's wealth, its cellar holding a storehouse capable of 1,500 hectoliters of wine. The site remained continuously occupied for more than 600 years, an unusually long working life, before a 5th-century rebuild reduced the main house to a smaller mansion.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Loupian_Roman_villa"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.4272,
+     41.1483
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_els_munts",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Els Munts",
+    "province": "Hispania Tarraconensis",
+    "modern_location": "Altafulla, Tarragona, Spain",
+    "built": 80,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "A Roman residence occupied this hilltop 12 kilometers from Tarraco from the 1st century CE onward, though the opulent villa whose mosaics and baths survive today was largely rebuilt starting in the mid-2nd century, a generation past this map's snapshot. Its later heyday belonged to Caius Valerius Avitus, a duumvir of Tarraco, and his wife Faustina. In 117 CE a working Roman residence stood on the site, but the grand aristocratic villa visitors see today was still a generation away.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Els_Munts_(Roman_villa)",
+     "https://www.mnat.cat/en/the-roman-villa-of-els-munts/"
+    ],
+    "confidence": "low",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa romana dels Munts-Altafulla.jpg?width=800",
+    "image_credit": "Roman villa of Els Munts, Altafulla · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5375,
+     39.4761
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_cardilio",
+    "category": "villa",
+    "name_latin": "Villa Cardilii",
+    "name_english": "Villa Cardilio",
+    "province": "Lusitania",
+    "modern_location": "Torres Novas, Portugal",
+    "built": 50,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Vila Cardilio took shape in the 1st century CE as a working Lusitanian estate, its storerooms lined with large dolia jars for fermenting and storing wine and oil. Excavations begun in 1962 uncovered colored mosaics, coins, sculpture, and Latin inscriptions naming later owners Cardilio and Avita, the source of the modern name. The estate remained in continuous use for roughly 300 years, through a second major building phase in the 4th century. Its first-century core had already stood for decades by 117 CE.",
+    "sources": [
+     "https://www.allaboutportugal.pt/en/torres-novas/monuments/ruinas-romanas-de-vila-cardilio"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.4447,
+     41.5386
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_torre_llauder",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Torre Llauder",
+    "province": "Hispania Tarraconensis",
+    "modern_location": "Mataro, Catalonia, Spain",
+    "built": -10,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Torre Llauder rose near Iluro, a Roman colony on Catalonia's coast, built around the time of Augustus with views over the Maresme shoreline. Local historian Maria Ribas discovered the buried villa in 1961, and study later connected its finest mosaic floors to a late-2nd-century refurbishment, well past this snapshot. Spain declared the site a monument of national historic-artistic interest, protecting its hypocaust and residential wings from Mataro's urban growth. By 117 CE the villa had already stood for over a century.",
+    "sources": [
+     "https://www.uab.cat/web/seus/presentacio/presentacio-1345837078007.html"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vil·la romana de Torre Llauder, Hypocaustum.jpg?width=800",
+    "image_credit": "Hypocaust, Roman villa of Torre Llauder, Mataro · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0656,
+     38.6447
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_banos_de_la_reina",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Banos de la Reina, Calpe",
+    "province": "Hispania Tarraconensis",
+    "modern_location": "Calpe, Alicante Province, Spain",
+    "built": 90,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "At the foot of the Penon de Ifach, Roman settlers built their first dwelling at Banos de la Reina toward the end of the 1st century CE, later adding baths and expanding into a coastal vicus under the jurisdiction of nearby Dianium. The site combined residential quarters with fish-salting basins cut directly into the coastal rock, exploiting Calpe's fishing grounds for garum production. Archaeologists have excavated only about a quarter of the roughly 5,000-square-meter site so far. In 117 CE this working coastal residence and fishery had operated for a generation.",
+    "sources": [
+     "https://www.calpe.es/en/discover-calpe/cultural-tourism/museums-and-monuments/monuments/banos-de-la-reina-archaelogical-site"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.1953,
+     36.6089
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_juba_caesarea",
+    "category": "villa",
+    "name_latin": "Regia Caesareae",
+    "name_english": "Royal Palace of Juba II, Caesarea",
+    "province": "Mauretania Caesariensis",
+    "modern_location": "Cherchell, Algeria",
+    "built": -25,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Juba II, the Numidian-born client king Augustus installed over Mauretania, refounded the Punic port of Iol as Caesarea around 25 BCE and built a royal palace modeled on the Hellenistic capitals of the eastern Mediterranean. He and his queen, Cleopatra Selene, daughter of Cleopatra VII and Mark Antony, filled the city with a lighthouse, theater, and amphitheater alongside their residence. After Rome annexed Mauretania as a province in 44 CE, Caesarea continued as the provincial capital, and the royal quarter remained a governing seat through 117 CE.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Juba_II",
+     "https://en.wikipedia.org/wiki/Caesarea_in_Mauretania"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.5545,
+     34.2611
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_house_of_orpheus_volubilis",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "House of Orpheus, Volubilis",
+    "province": "Mauretania Tingitana",
+    "modern_location": "Volubilis, Morocco",
+    "built": 70,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "The House of Orpheus stood among the grandest private residences at Volubilis, Mauretania Tingitana's frontier city, built in the second half of the 1st century CE. It takes its modern name from a large floor mosaic of Orpheus charming animals with his lyre, one of the finest surviving figural mosaics from Roman North Africa. The house also included private baths, a mark of the wealth Volubilis's olive-oil trade brought its elite, an established residence when Trajan died in 117 CE.",
+    "sources": [
+     "https://www.worldhistory.org/image/16791/house-of-orpheus-volubilis/"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.8722,
+     37.9058
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_anaploga_corinth",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Anaploga Villa, Corinth",
+    "province": "Achaea",
+    "modern_location": "Corinth, Greece",
+    "built": 70,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "A Roman villa at Anaploga, 750 meters from Corinth's Odeion, was excavated between 1962 and 1964 and yielded a striking still-life mosaic with elaborate geometric borders. Pottery beneath the mosaic's bedding dated its creation to the last quarter of the 1st century CE, decades after Corinth's refounding as a Roman colony. It illustrates the villa culture that took root even in this thoroughly Hellenic province by 117 CE.",
+    "sources": [
+     "https://www.ascsa.edu.gr/uploads/media/hesperia/147437.pdf"
+    ],
+    "confidence": "medium",
+    "image_url": null,
+    "image_credit": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.6062,
+     45.4989
+    ]
+   },
+   "properties": {
+    "id": "poi_villa_grotte_di_catullo_sirmione",
+    "category": "villa",
+    "name_latin": null,
+    "name_english": "Grotte di Catullo, Sirmione",
+    "province": "Italia",
+    "modern_location": "Sirmione, Lake Garda, Italy",
+    "built": -10,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Built at the northern tip of the Sirmione peninsula on Lake Garda around the turn of the millennium, this multi-story villa ranks as the most important Roman residence of its kind in northern Italy, with porticoes and terraces facing the water on every side. Its popular name, Grotte di Catullo, dates only to the 15th century, when locals linked the ruins to the poet Catullus, who died decades before the villa was actually built. The complex included its own lake-fed spa facility and remained in use until abandoned in the 3rd century CE.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Grottoes_of_Catullus"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grotte di Catullo - Sirmione.jpg?width=800",
+    "image_credit": "Grotte di Catullo, Sirmione, Lake Garda · Wikimedia Commons"
+   }
   }
  ]
 }
