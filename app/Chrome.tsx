@@ -12,6 +12,7 @@ import { usePoiPanel } from "./usePoiPanel";
 import { useKeyboardShortcuts } from "./useKeyboardShortcuts";
 import EpochModal from "./EpochModal";
 import CurrencyConverter from "./CurrencyConverter";
+import { useOnboardingHint } from "./useOnboardingHint";
 
 export default function Chrome() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -36,6 +37,7 @@ export default function Chrome() {
   const [results, setResults] = useState<Place[]>([]);
   const [resultsOpen, setResultsOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
+  const onboardingHint = useOnboardingHint();
 
   useEffect(() => {
     if (!menuOpen) return;
@@ -79,6 +81,7 @@ export default function Chrome() {
   }, [layersOpen]);
 
   const onQueryChange = (value: string) => {
+    if (onboardingHint.visible) onboardingHint.dismiss();
     setQuery(value);
     setActiveIndex(-1);
     if (!value.trim()) {
@@ -158,7 +161,10 @@ export default function Chrome() {
             title="Search Roman Maps (press / to focus)"
             value={query}
             onChange={(e) => onQueryChange(e.target.value)}
-            onFocus={() => results.length > 0 && setResultsOpen(true)}
+            onFocus={() => {
+              if (onboardingHint.visible) onboardingHint.dismiss();
+              results.length > 0 && setResultsOpen(true);
+            }}
             onKeyDown={onSearchKeyDown}
             style={{
               flex: 1,
@@ -178,6 +184,44 @@ export default function Chrome() {
           </IconBtn>
         </div>
       </div>
+
+      {onboardingHint.visible && !resultsOpen && !menuOpen && (
+        <div
+          style={{
+            marginTop: 8,
+            background: "#3c4043",
+            color: "#fff",
+            borderRadius: 8,
+            boxShadow: "0 1px 4px -1px rgba(0,0,0,.3), 0 3px 8px rgba(0,0,0,.15)",
+            padding: "10px 12px",
+            display: "flex",
+            alignItems: "center",
+            gap: 10,
+            fontSize: 13,
+          }}
+        >
+          <span style={{ flex: 1 }}>
+            Try searching &ldquo;Londinium&rdquo; or &ldquo;Ephesus&rdquo;
+          </span>
+          <button
+            title="Dismiss"
+            onClick={onboardingHint.dismiss}
+            style={{
+              width: 22,
+              height: 22,
+              flexShrink: 0,
+              borderRadius: 999,
+              display: "grid",
+              placeItems: "center",
+              color: "#fff",
+            }}
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+            </svg>
+          </button>
+        </div>
+      )}
 
       {resultsOpen && results.length > 0 && (
         <div
