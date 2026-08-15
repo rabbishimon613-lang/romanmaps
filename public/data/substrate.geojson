@@ -1400,6 +1400,734 @@
         "image_url": null,
         "image_credit": null
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.50056,
+          47.53917
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_alesia",
+        "culture": "celtic",
+        "name_latin": "Alesia",
+        "name_english": "Alesia",
+        "type": "oppidum",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Alise-Sainte-Reine, Cote-d'Or, France",
+        "extant_117ce": true,
+        "notes": "Vercingetorix surrendered his sword here in 52 BCE after Caesar's double ring of siege works starved 80,000 Gauls into submission, ending organized resistance to Rome. Unlike most defeated oppida, the hilltop itself was never abandoned. A prosperous Gallo-Roman town grew directly over the ramparts, complete with a forum, theater, and bronze workshops still busy in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Alesia_(city)",
+          "https://en.wikipedia.org/wiki/Battle_of_Alesia"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Reconstruction of the rampart of the contravallation, Alesia (7700412514).jpg?width=800",
+        "image_credit": "Reconstructed Caesarian siege rampart at the Museoparc Alesia, Alise-Sainte-Reine, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.0358,
+          46.9205
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_bibracte",
+        "culture": "celtic",
+        "name_latin": "Bibracte",
+        "name_english": "Bibracte",
+        "type": "oppidum",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Mont Beuvray, Saint-Leger-sous-Beuvray, Burgundy, France",
+        "extant_117ce": false,
+        "notes": "Bibracte ruled as capital of the Aedui, Rome's oldest Gallic allies, and hosted Caesar himself while he dictated the Commentaries on the Gallic War within its double ramparts. Its murus gallicus walls once enclosed 200 hectares of workshops and houses. Augustus lured the population down to a new city, Augustodunum, around 15 BCE, and by 117 CE the hilltop stood empty but for a shrine and a spring still visited by the faithful.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Bibracte",
+          "https://www.bibracte.fr/en/bibracte-throughout-time"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bibracte murus gallicus1.jpg?width=800",
+        "image_credit": "Reconstructed murus gallicus rampart wall at Bibracte, Mont Beuvray, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.122776,
+          45.719415
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_gergovia",
+        "culture": "celtic",
+        "name_latin": "Gergovia",
+        "name_english": "Gergovia",
+        "type": "oppidum",
+        "province": "Gallia Aquitania",
+        "modern_location": "Plateau de Gergovie, near Clermont-Ferrand, France",
+        "extant_117ce": false,
+        "notes": "Vercingetorix, an Arvernian noble raised on this very plateau, handed Caesar his only defeat of the Gallic War here in 52 BCE, driving the Roman legions off the hill with heavy losses. Excavations show dense occupation continued for another generation before the Arverni resettled downhill around 10 BCE at the new Roman town of Augustonemetum. By 117 CE the abandoned plateau stood silent, its ramparts overlooking the valley city that had replaced it.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Gergovia",
+          "https://www.clermontauvergnevolcans.com/en/pages/the-gergovie-plateau-a-historic-site/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plateau of Gergovia.jpg?width=800",
+        "image_credit": "The Plateau de Gergovie hillfort site near Clermont-Ferrand, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3987,
+          47.081
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_avaricum",
+        "culture": "celtic",
+        "name_latin": "Avaricum",
+        "name_english": "Bourges",
+        "type": "oppidum",
+        "province": "Gallia Aquitania",
+        "modern_location": "Bourges, Centre-Val de Loire, France",
+        "extant_117ce": true,
+        "notes": "Caesar called Avaricum the finest town in Gaul, and its Bituriges defenders held his legions off for twenty-five days behind walls of stone and packed earth before it fell and nearly its whole population was put to the sword in 52 BCE. Rome rebuilt directly on the same ground, and by 117 CE Avaricum was a thriving provincial town with bathhouses and temples rising over the old Gallic ramparts. A later Roman wall, three meters thick with 46 towers, still traces that same hilltop today.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Avaricum",
+          "https://www.ville-bourges.fr/_en/site/introduction_bourges-history"
+        ],
+        "confidence": "high",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.18546,
+          45.66342
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_corent",
+        "culture": "celtic",
+        "name_latin": "Corent",
+        "name_english": "Corent",
+        "type": "oppidum",
+        "province": "Gallia Aquitania",
+        "modern_location": "Corent, Puy-de-Dome, France",
+        "extant_117ce": true,
+        "notes": "Corent served as an earlier capital of the Arverni before Gergovia, its plateau centered on a vast open-air sanctuary where feasters once drained thousands of wine amphorae in ritual banquets. Rome did not abandon the site: engineers rebuilt the Gallic sanctuary in stone and raised a small theater beside it. Excavators have logged more than a hundred Iron Age grain silos here, and the rebuilt sanctuary complex was still functioning in 117 CE.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Oppidum_de_Corent",
+          "https://www.clermontauvergnevolcans.com/en/pages/archaeological-site-of-the-oppidum-of-corent/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Corent théatre.jpg?width=800",
+        "image_credit": "Excavated Gallo-Roman theater built beside the Gallic sanctuary at Corent, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.1878,
+          45.7233
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_gondole",
+        "culture": "celtic",
+        "name_latin": "Gondole",
+        "name_english": "Gondole",
+        "type": "necropolis",
+        "province": "Gallia Aquitania",
+        "modern_location": "Le Cendre, Puy-de-Dome, France",
+        "extant_117ce": false,
+        "notes": "This Arvernian oppidum guarded the Allier valley with 600 meters of rampart enclosing 28 hectares of workshops for potters and smiths. Its most startling find is a mass grave of eight warriors buried beside eight horses in matched rows, dated to the height of Caesar's Gallic War, with no weapons or grave goods to explain the ritual. The settlement did not survive into the Roman peace, and by 117 CE the site had long since emptied out.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Oppidum_de_Gondole",
+          "https://hal.science/hal-03216662/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gondole Fouilles.JPG?width=800",
+        "image_credit": "Excavations at the Arvernian oppidum of Gondole, Le Cendre, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.138,
+          43.3061
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_enserune",
+        "culture": "celtic",
+        "name_latin": "Oppidum of Enserune",
+        "name_english": "Enserune",
+        "type": "oppidum",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Nissan-lez-Enserune, Herault, France",
+        "extant_117ce": false,
+        "notes": "Enserune sat astride the Via Domitia and grew wealthy on the wine trade between Italy and Spain for seven unbroken centuries, its hillside honeycombed with hundreds of grain silos cut into bare rock. Roman-style stone townhouses replaced Gallic huts once Narbonensis became a province. Decline set in soon after, and by 117 CE the hilltop had largely emptied as its people drifted to towns on the plain below.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Oppidum_d'Ens%C3%A9rune",
+          "https://www.enserune.fr/en/discover/history-of-the-enserune-oppidum"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/F10 09.Oppidum d'Ensérune.0101.JPG?width=800",
+        "image_credit": "Excavated house foundations and silos at the Oppidum d'Enserune, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4694,
+          50.6958
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_maiden_castle",
+        "culture": "celtic",
+        "name_latin": "Dunium",
+        "name_english": "Maiden Castle",
+        "type": "hillfort",
+        "province": "Britannia",
+        "modern_location": "Winterborne St Martin, Dorset, England",
+        "extant_117ce": false,
+        "notes": "This Durotrigan stronghold ranks among the largest hillforts in Europe, its ramparts stacked in four concentric rings enclosing 19 hectares at their Iron Age peak. Suetonius records the Second Legion storming Durotrigan hillforts like this one during the 43 CE invasion, and a mass grave of war dead found at its east gate backs the memory of conquest. Rome founded Durnovaria nearby, and Maiden Castle's earthworks sat empty through 117 CE, centuries before a small Roman temple rose inside them.",
+        "sources": [
+          "https://www.english-heritage.org.uk/visit/places/maiden-castle/history/",
+          "https://en.wikipedia.org/wiki/Maiden_Castle,_Dorset"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aerial photograph of Maiden Castle, 1935.jpg?width=800",
+        "image_credit": "Aerial photograph of Maiden Castle's concentric Iron Age ramparts, Dorset, 1935, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5414,
+          51.1414
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_danebury",
+        "culture": "celtic",
+        "name_latin": "Danebury",
+        "name_english": "Danebury",
+        "type": "hillfort",
+        "province": "Britannia",
+        "modern_location": "Nether Wallop, Hampshire, England",
+        "extant_117ce": false,
+        "notes": "Twenty years of excavation at Danebury made it Britain's best-understood hillfort, revealing hundreds of grain storage pits packed inside its single circular rampart. Occupation stretched from the sixth century BCE until around 100 BCE, when burned gates and bodies dumped in the storage pits mark a violent final chapter, long before Claudius ever landed. By 117 CE only a lone farmstead lingered inside the earthwork, already a monument to a vanished age.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Danebury",
+          "https://www.hants.gov.uk/thingstodo/countryside/walking/daneburyhillfort"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Danebury Ring, Iron Age Hill Fort - geograph.org.uk - 1506378.jpg?width=800",
+        "image_credit": "The ramparts of Danebury Ring hillfort, Hampshire, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0525,
+          52.8672
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_old_oswestry",
+        "culture": "celtic",
+        "name_latin": "Old Oswestry",
+        "name_english": "Old Oswestry Hillfort",
+        "type": "hillfort",
+        "province": "Britannia",
+        "modern_location": "Oswestry, Shropshire, England",
+        "extant_117ce": false,
+        "notes": "Old Oswestry guarded the Welsh Marches for the Cornovii tribe behind seven ridged ramparts, its western entrance elaborated into a maze of stone-faced banks unmatched at any other British hillfort. People had used the hilltop since the Bronze Age, but occupation ended around the time Rome founded the tribal capital of Viroconium in the valley below. By 117 CE only scattered pottery sherds hinted that anyone still climbed the abandoned ramparts.",
+        "sources": [
+          "https://www.english-heritage.org.uk/visit/places/old-oswestry-hillfort/history/",
+          "https://en.wikipedia.org/wiki/Old_Oswestry"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/View to Old Oswestry hillfort from the outskirts of Oswestry town.jpg?width=800",
+        "image_credit": "Old Oswestry hillfort's ramparts viewed from Oswestry, Shropshire, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.5286,
+          51.0264
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_south_cadbury",
+        "culture": "celtic",
+        "name_latin": "Cadbury Castle",
+        "name_english": "South Cadbury Castle",
+        "type": "hillfort",
+        "province": "Britannia",
+        "modern_location": "South Cadbury, Somerset, England",
+        "extant_117ce": true,
+        "notes": "Four banks of rampart ring this 7-hectare hilltop, and archaeologists found a burned Iron Age gatehouse alongside scattered weapons recalling a massacre during Rome's Claudian conquest around 50 CE. Roman soldiers occupied the hill afterward, and excavators later uncovered a Roman-period shrine built on the summit. Activity thinned once the town of Lindinis grew up at nearby Ilchester, but scattered coins and pottery show the hilltop was not empty in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cadbury_Castle,_Somerset",
+          "https://www.historytools.org/stories/cadbury-castle-a-hillfort-of-legend"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cadbury Castle (geograph 3884937).jpg?width=800",
+        "image_credit": "The ramparts of Cadbury Castle hillfort, South Cadbury, Somerset, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.6683,
+          55.9611
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_traprain_law",
+        "culture": "celtic",
+        "name_latin": "Traprain Law",
+        "name_english": "Traprain Law",
+        "type": "oppidum",
+        "province": "Britannia (beyond the frontier, Votadini territory)",
+        "modern_location": "East Lothian, Scotland",
+        "extant_117ce": true,
+        "notes": "Traprain Law served as the tribal center of the Votadini, a people Rome never conquered outright but courted as allies beyond the province's northern edge. At its height the hilltop settlement sprawled across 16 hectares, and Roman brooches, glass, and coins found there show steady trade reached this far north. In 117 CE the Votadini still occupied their ancestral hill, watching a Roman frontier that had not yet hardened into Hadrian's Wall five years later.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Traprain_Law",
+          "https://www.undiscoveredscotland.co.uk/eastlinton/traprainlaw/index.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Traprain Law from Coldale - geograph.org.uk - 2878152.jpg?width=800",
+        "image_credit": "Traprain Law, the Votadini hillfort in East Lothian, Scotland, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.7275,
+          54.4363
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_stanwick",
+        "culture": "celtic",
+        "name_latin": "Stanwick",
+        "name_english": "Stanwick Fortifications",
+        "type": "oppidum",
+        "province": "Britannia",
+        "modern_location": "Stanwick St John, North Yorkshire, England",
+        "extant_117ce": false,
+        "notes": "Stanwick was the power base of Cartimandua, the Brigantian queen who kept Rome as an ally and once handed her rebel husband Venutius over in chains. Its earthworks eventually enclosed nearly 300 acres, among the largest defended areas in Iron Age Britain. When Venutius seized power and Rome intervened around 70 CE, legions moved the tribal capital to Isurium Brigantum at Aldborough. By 117 CE Stanwick's great ramparts stood empty across the Yorkshire countryside.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Stanwick_Iron_Age_Fortifications",
+          "https://www.english-heritage.org.uk/learn/histories/women-in-history/cartimandua/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stanwick Iron Age Fortifications (geograph 3685149).jpg?width=800",
+        "image_credit": "Earthwork ramparts of the Stanwick Iron Age Fortifications, North Yorkshire, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.8894,
+          51.8975
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_camulodunum_oppidum",
+        "culture": "celtic",
+        "name_latin": "Camulodunon",
+        "name_english": "Sheepen",
+        "type": "oppidum",
+        "province": "Britannia",
+        "modern_location": "Colchester, Essex, England",
+        "extant_117ce": false,
+        "notes": "Before Colchester was a Roman colonia, Camulodunon was Britain's largest native settlement, ringed by earthwork dykes running 20 kilometers, its kings Cunobelinus and Tasciovanus striking their own gold coins here. The industrial quarter at Sheepen turned out bronze goods and pottery for trade reaching across the Channel. Rome built its fortress and colonia on ground nearby rather than atop it, and after Boudica's rebels burned the district in 60 CE, only earthwork scars remained by 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Camulodunum",
+          "https://www.heritagedaily.com/2020/10/camulodunum-the-first-capital-of-britannia/135925"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lexden Earthworks.jpg?width=800",
+        "image_credit": "Surviving Iron Age dyke earthworks of pre-Roman Camulodunon, Lexden, Colchester, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3567,
+          51.7539
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_verlamion",
+        "culture": "celtic",
+        "name_latin": "Verlamion",
+        "name_english": "Prae Wood Oppidum",
+        "type": "oppidum",
+        "province": "Britannia",
+        "modern_location": "Prae Hill, St Albans, Hertfordshire, England",
+        "extant_117ce": false,
+        "notes": "King Tasciovanus founded Verlamion on Prae Hill as capital of the Catuvellauni, and coins struck here carry the earliest known use of the name that became St Albans. A five-kilometer ditch called Beech Bottom Dyke, among the largest earthworks in pre-Roman Britain, still cuts across the landscape nearby. Rome founded Verulamium in the valley below rather than on the hilltop, and by 117 CE Verlamion had been abandoned for decades, its ditches silting over as the new town flourished close by.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Verlamion",
+          "https://www.stalbanshistory.org/category/archaeology/the-iron-age-oppidum-of-verlamion"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/St Albans, Beech Bottom Dyke - geograph.org.uk - 588863.jpg?width=800",
+        "image_credit": "Beech Bottom Dyke, the great defensive ditch of the Verlamion oppidum, St Albans, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4443,
+          41.8096
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_numantia",
+        "culture": "celtic",
+        "name_latin": "Numantia",
+        "name_english": "Numantia",
+        "type": "settlement",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Garray, Soria, Castile and Leon, Spain",
+        "extant_117ce": true,
+        "notes": "This Celtiberian hilltop town humiliated a string of Roman armies before Scipio Aemilianus starved it into submission in 133 BCE, walling off six miles of countryside so thoroughly that survivors burned their own homes rather than surrender. The phrase defensa numantina still means a hopeless last stand in Spanish. Augustus resettled the site as a Roman road station, and the rebuilt town of 117 CE still followed the grid of narrow streets its Celtiberian founders had laid out.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Numantia",
+          "https://www.numanciamultimedia.com/en/chapter-7/Numantia-Transit-City-in-the-Times-of-Augustus/8"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Numancia.jpg?width=800",
+        "image_credit": "Excavated house foundations at the Celtiberian and Roman site of Numantia, Soria, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.31583,
+          41.5275
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_citania_briteiros",
+        "culture": "celtic",
+        "name_latin": "Britonio",
+        "name_english": "Citania de Briteiros",
+        "type": "settlement",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Briteiros, Guimaraes, Portugal",
+        "extant_117ce": true,
+        "notes": "This hilltop castro once housed roughly a thousand people inside a maze of stone roundhouses, its narrow paved streets fitted with a working water and drainage system before Rome ever arrived. Augustus and Tiberius's legions absorbed the settlement rather than destroying it, and Roman-style rectangular houses soon rose beside the older round ones. Roman coins and pottery mixed with local granite carvings show the community was still adapting Roman life here in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cit%C3%A2nia_de_Briteiros",
+          "https://www.archaeology.org/issues/459-2203/digs/10336-otg-citania-de-briteiros-portugal"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Castro de Briteiros.jpg?width=800",
+        "image_credit": "Stone roundhouses of the castro settlement at Citania de Briteiros, Portugal, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.8698,
+          41.8927
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_santa_tecla",
+        "culture": "celtic",
+        "name_latin": "Castro de Santa Tecla",
+        "name_english": "Monte de Santa Tecla",
+        "type": "hillfort",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "A Guarda, Pontevedra, Galicia, Spain",
+        "extant_117ce": false,
+        "notes": "Perched above the mouth of the Mino River, this castro grew into one of the largest hillfort settlements in northwest Iberia, its hundreds of round stone huts once home to an estimated 5,000 people. Roman-style square buildings appeared alongside the roundhouses as the community absorbed provincial customs under Augustus. The population drifted away as Rome's road network pulled trade toward the lowlands, and by 117 CE the hilltop had entered its final decades of abandonment.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Castro_of_Santa_Trega",
+          "https://www.turismoaguarda.es/en/monte-santa-trega/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/SantaTecla.jpg?width=800",
+        "image_credit": "Reconstructed stone roundhouses at the Castro de Santa Tecla, Galicia, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.8836,
+          40.5302
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_ulaca",
+        "culture": "celtic",
+        "name_latin": "Ulaca",
+        "name_english": "Ulaca",
+        "type": "oppidum",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Solosancho, Avila, Castile and Leon, Spain",
+        "extant_117ce": false,
+        "notes": "Ulaca was the largest oppidum the Vettones ever built, its three kilometers of granite walls enclosing more than 60 hectares and the stone foundations of over 250 houses. A rock-cut sacrificial altar hewn into the bedrock still marks the site's sanctuary. Rome's conquest of the Vettones stripped the town of independence around 133 BCE, and it was fully abandoned as the new Roman town of Obila rose nearby, leaving the hilltop empty well before 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ulaca",
+          "https://www.turismocastillayleon.com/en/heritage-culture/archaeological-routes-vettones"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Castro de Ulaca.JPG?width=800",
+        "image_credit": "Granite walls of the Vettonian oppidum of Ulaca, Avila, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.7075,
+          43.5297
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_coana",
+        "culture": "celtic",
+        "name_latin": "Castro de Coana",
+        "name_english": "Castro de Coana",
+        "type": "hillfort",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Coana, Asturias, Spain",
+        "extant_117ce": true,
+        "notes": "This walled hillfort of the Astur Albiones packs some eighty circular stone houses inside its acropolis wall, laid out along narrow paved streets that still survive underfoot. Rome prized the gold deposits in the surrounding hills, and imperial mining crews worked alongside the castro's own people, extending the settlement's life past the conquest. That mining operation ran into the second century CE, so the castro's stone houses were still occupied in 117 CE.",
+        "sources": [
+          "https://en.asturias.com/the-castro-of-coana/",
+          "https://www.turismoasturias.es/en/descubre/cultura/museos-y-espacios-culturales/castros-y-espacios-arqueologicos/castro-de-coana"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Castro de Coaña.JPG?width=800",
+        "image_credit": "Circular stone houses of the Castro de Coana hillfort, Asturias, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.865,
+          39.9417
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_ancyra",
+        "culture": "celtic",
+        "name_latin": "Ancyra",
+        "name_english": "Ankara",
+        "type": "settlement",
+        "province": "Galatia",
+        "modern_location": "Ankara, Turkey",
+        "extant_117ce": true,
+        "notes": "Celtic warbands crossed from the Balkans in the 270s BCE, and the Tectosages tribe made this fortified hilltop their capital, one of three Galatian power centers ruling deep in Anatolia by force of arms. Rome annexed the Galatian kingdom in 25 BCE and built Ancyra into the province's capital without displacing the old citadel, which still crowns the hill today. In 117 CE Roman magistrates governed Galatia from the same hilltop the Tectosages chieftains had fortified three centuries earlier.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ankara",
+          "https://en.wikipedia.org/wiki/Galatia"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ankara Castle walls.JPG?width=800",
+        "image_credit": "The citadel hill of Ankara, site of the Galatian Tectosages' fortified capital, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.5178,
+          39.8585
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_tavium",
+        "culture": "celtic",
+        "name_latin": "Tavium",
+        "name_english": "Tavium",
+        "type": "settlement",
+        "province": "Galatia",
+        "modern_location": "Buyuknefes, Yozgat Province, Turkey",
+        "extant_117ce": true,
+        "notes": "Tavium served as the tribal capital of the Trocmi, the third of the Celtic peoples who settled Galatia after crossing from the Danube, and grew rich on caravan traffic through central Anatolia. A colossal bronze statue of Zeus stood here, so revered that Strabo singled it out by name. Rome granted the settlement formal city status around 20 BCE, and by 117 CE Tavium functioned as an active Roman road town still marking the Trocmian homeland it once ruled.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tavium",
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0006%3Aentry%3Dtavium"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.5833,
+          39.3314
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_pessinus",
+        "culture": "celtic",
+        "name_latin": "Pessinus",
+        "name_english": "Pessinus",
+        "type": "sanctuary",
+        "province": "Galatia",
+        "modern_location": "Ballihisar, Eskisehir Province, Turkey",
+        "extant_117ce": true,
+        "notes": "Pessinus was already Anatolia's most celebrated shrine of the mother goddess Cybele when the Tolistobogii swept in around 270 BCE and made it their capital, ruling as overlords while leaving the priesthood its independence. Rome carried Cybele's sacred black stone to the capital in 204 BCE to help win the war against Hannibal. Tiberius finished a grand new temple here, and by 117 CE Pessinus stood as a thriving Greco-Roman city still serving as the Tolistobogii's tribal seat.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pessinus",
+          "https://www.livius.org/articles/place/pessinus-ballihisar/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pessinus theatral area from W (1993) 05.jpg?width=800",
+        "image_credit": "The theatral area of the Pessinus sanctuary complex, Ballihisar, Turkey, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4294,
+          46.7247
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_magdalensberg",
+        "culture": "celtic",
+        "name_latin": "Virunum (Magdalensberg)",
+        "name_english": "Magdalensberg",
+        "type": "oppidum",
+        "province": "Noricum",
+        "modern_location": "Magdalensberg, Carinthia, Austria",
+        "extant_117ce": false,
+        "notes": "This mountaintop settlement served as royal seat of the Celtic Kingdom of Noricum, an ally Rome never had to conquer since its kings supplied Roman legions with prized Noric steel for generations. A famous bronze youth statue found here, later copied for imperial Vienna, shows how thoroughly Roman and Celtic taste had blended on the summit before annexation in 15 BCE. Claudius moved the capital down to a new town called Virunum around 45 CE, and the mountaintop stood deserted by 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Noricum",
+          "https://en.wikipedia.org/wiki/Virunum"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Klagenfurt - Staudaerplatz - Kopie des Jüngling vom Magdalensberg.JPG?width=800",
+        "image_credit": "Copy of the bronze Youth of Magdalensberg, found at the Celtic-Roman settlement site, Klagenfurt, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4531,
+          44.8226
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_singidunum",
+        "culture": "celtic",
+        "name_latin": "Singidunum",
+        "name_english": "Belgrade Fortress",
+        "type": "oppidum",
+        "province": "Moesia Superior",
+        "modern_location": "Kalemegdan, Belgrade, Serbia",
+        "extant_117ce": true,
+        "notes": "The Celtic Scordisci fortified this bluff above the meeting of the Sava and Danube rivers in the third century BCE, and its very name is Celtic, sharing a root with Singidava elsewhere in the Balkans. Rome absorbed the Scordisci homeland by the late first century BCE and stationed the Fourth Flavian Legion on the same commanding bluff. By 117 CE a Roman legionary fortress occupied the exact hilltop the Scordisci had first fortified, guarding the Danube from that old stronghold.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Singidunum",
+          "https://www.livius.org/articles/place/singidunum-belgrade/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalemegdan, Belgrade Fortress.jpg?width=800",
+        "image_credit": "Kalemegdan fortress bluff, site of the Celtic Scordisci oppidum and later Roman legionary fortress, Belgrade, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5167,
+          48.7167
+        ]
+      },
+      "properties": {
+        "id": "substrate_celtic_manching",
+        "culture": "celtic",
+        "name_latin": "Oppidum of Manching",
+        "name_english": "Manching",
+        "type": "oppidum",
+        "province": "Raetia",
+        "modern_location": "Manching, Bavaria, Germany",
+        "extant_117ce": false,
+        "notes": "Manching ranked among the largest fortified settlements in Iron Age Europe, its 7-kilometer wall enclosing 380 hectares and a population near 10,000 at the Vindelici tribe's peak. Excavators have pulled more gold coins from its soil than from any other Celtic site north of the Alps. Caesar's conquest of neighboring Gaul wrecked the trade networks the town depended on, and Manching was largely abandoned by 30 BCE, decades before Rome annexed the region as Raetia in 15 BCE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Oppidum_of_Manching",
+          "https://www.academia.edu/20405536/Manching_A_Celtic_oppidum_between_Rescue_Excavation_and_Research"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Oppidum manching osttor.JPG?width=800",
+        "image_credit": "Reconstructed eastern gate of the Manching oppidum at the Kelten und Roemer Museum, Bavaria, Wikimedia Commons"
+      }
     }
   ]
 }
