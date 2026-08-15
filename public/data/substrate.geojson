@@ -616,6 +616,790 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Populonia tumulo.jpg?width=800",
         "image_credit": "Wikimedia Commons, tumulus tomb at the Baratti necropolis, Populonia"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.321,
+          36.8513
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_byrsa",
+        "culture": "punic",
+        "name_latin": "Byrsa",
+        "name_english": "Byrsa Hill",
+        "type": "citadel",
+        "province": "Africa Proconsularis",
+        "modern_location": "Carthage, Tunisia",
+        "extant_117ce": false,
+        "notes": "Byrsa served as Carthage's citadel, holding a temple to Eshmun and, by legend, the hill Dido won by cutting an oxhide into a thread thin enough to encircle it. Rome razed the Punic quarter in 146 BCE, and when Augustus's colonists rebuilt Carthage they leveled the summit and buried the Punic ruins under an artificial terrace to raise a new forum. By 117 CE a visitor standing on Byrsa saw Roman civic buildings, unaware a six-story Punic neighborhood lay sealed beneath their feet.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Byrsa",
+          "https://en.wikipedia.org/wiki/Archaeological_site_of_Carthage"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The Punic Quarter, Carthage.jpg?width=800",
+        "image_credit": "Wikimedia Commons, the excavated Punic Quarter atop Byrsa Hill, Carthage"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0619,
+          37.0569
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_utica",
+        "culture": "punic",
+        "name_latin": "Utica",
+        "name_english": "Utica",
+        "type": "city",
+        "province": "Africa Proconsularis",
+        "modern_location": "near Zana, Tunisia",
+        "extant_117ce": true,
+        "notes": "Utica predated Carthage itself, founded by Tyrian colonists and traditionally reckoned the first Phoenician settlement in North Africa. The city stayed loyal to Rome through the Punic Wars, opening its gates in 149 BCE and earning free-city status while Carthage burned. Cato the Younger chose to die there in 46 BCE rather than live under Caesar. By 117 CE Utica ranked among Africa Proconsularis's leading cities.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Utica,_Tunisia",
+          "https://www.britannica.com/place/Utica-Tunisia"
+        ],
+        "confidence": "high",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0992,
+          36.9464
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_kerkouane",
+        "culture": "punic",
+        "name_latin": null,
+        "name_english": "Kerkouane",
+        "type": "city",
+        "province": "Africa Proconsularis",
+        "modern_location": "Cape Bon, near Kelibia, Tunisia",
+        "extant_117ce": false,
+        "notes": "Kerkouane was a working Punic town abandoned during the First Punic War around 250 BCE and pillaged after Rome took nearby Aspis; unlike Carthage or Utica, it was never resettled. Its streets, pink-mortar bathtubs, workshops, and ramparts sat undisturbed under drifting sand for two thousand years until a 1952 rediscovery. It is the only Phoenicio-Punic city known to survive without a later town built on top, and by 117 CE it had already lain buried for over three centuries.",
+        "sources": [
+          "https://whc.unesco.org/en/list/332/",
+          "https://en.wikipedia.org/wiki/Kerkouane"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Site archéologique de Kerkouane TN 19.jpg?width=800",
+        "image_credit": "Wikimedia Commons, ruins of the Punic town of Kerkouane"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9222,
+          33.6858
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_meninx",
+        "culture": "punic",
+        "name_latin": "Meninx",
+        "name_english": "Meninx (Djerba)",
+        "type": "trading post",
+        "province": "Africa Proconsularis",
+        "modern_location": "Djerba Island, Tunisia",
+        "extant_117ce": true,
+        "notes": "Meninx began as a Phoenician trading post on Djerba and grew into one of the Mediterranean's great purple-dye centers, ranking behind only Tyre by Pliny the Elder's account. Workers crushed murex and purpura shellfish by the ton in stone vats, and shell middens from that industry still ring the site. Rome made Meninx the administrative capital of Djerba, already prosperous by 117 CE, decades before its second- and third-century building boom.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Meninx_(town)",
+          "https://www.nationalgeographic.com/history/history-magazine/article/purple-reign-passion-phoenician-dye-built-vast-trading-empire"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Djerba Meninx.JPG?width=800",
+        "image_credit": "Wikimedia Commons, the archaeological site of Meninx, Djerba"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4686,
+          37.8683
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_motya",
+        "culture": "punic",
+        "name_latin": "Motya",
+        "name_english": "Mozia (San Pantaleo Island)",
+        "type": "city (destroyed)",
+        "province": "Sicilia",
+        "modern_location": "San Pantaleo Island, Stagnone Lagoon, near Marsala, Sicily, Italy",
+        "extant_117ce": false,
+        "notes": "Motya was Carthage's principal naval stronghold on Sicily until Dionysius I of Syracuse besieged it in 397 BCE with the era's newest siege engines, crucifying defenders who survived the sack. Survivors resettled at newly founded Lilybaeum, and Motya was never rebuilt. Excavations later recovered the marble Motya Charioteer, a Greek masterwork found on Carthaginian soil. By 117 CE the island had sat empty for over five centuries.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Motya",
+          "https://en.wikipedia.org/wiki/Siege_of_Motya"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The Motya Charioteer, made by a Greek sculptor in Sicily, about 460-450 BC, found in 1979 on the Sicilian island of Motya (Mozia), Winning at the ancient Games, British Museum (7642730456).jpg?width=800",
+        "image_credit": "Wikimedia Commons, the Motya Charioteer, found on the island in 1979 (photographed at the British Museum)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5414,
+          38.0742
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_solunto",
+        "culture": "punic",
+        "name_latin": "Soluntum",
+        "name_english": "Solunto",
+        "type": "city",
+        "province": "Sicilia",
+        "modern_location": "Monte Catalfano, Santa Flavia, near Palermo, Sicily, Italy",
+        "extant_117ce": true,
+        "notes": "Solus was one of only three major Phoenician strongholds Sicily's Greek colonization left standing, alongside Panormus and Motya. Enemies destroyed the original lowland settlement around 397 BCE, and survivors rebuilt higher on Monte Catalfano's slopes. Rome absorbed Solus peacefully during the First Punic War, and the rebuilt hill town, with houses like the mosaic-floored Casa di Leda, remained a functioning municipium through Trajan's reign.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Soluntum",
+          "https://siciliasacra.net/scopri/path-and-themes/archeological-area-of-solunto/?lang=en"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Casa delle ghirlande, solunto.jpg?width=800",
+        "image_credit": "Wikimedia Commons, the House of Garlands at Solunto"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3495,
+          38.1075
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_panormus_necropolis",
+        "culture": "punic",
+        "name_latin": "Panormus",
+        "name_english": "Punic Necropolis of Palermo",
+        "type": "necropolis",
+        "province": "Sicilia",
+        "modern_location": "Corso Calatafimi, Palermo, Sicily, Italy",
+        "extant_117ce": true,
+        "notes": "Panormus began as a Phoenician colony called Ziz, \"flower,\" around the 8th century BCE, and grew alongside Motya and Solus into one of Carthage's three principal Sicilian strongholds. Its buried necropolis, first uncovered in 1746 and still being excavated as recently as 2004, has yielded more than seven hundred graves cut between the late 7th and early 3rd centuries BCE. Rome took the city in 254 BCE, and by 117 CE the old Phoenician cemetery lay forgotten underground beneath a thriving Roman Panormus.",
+        "sources": [
+          "https://www.enjoysicilia.it/en/palermo-area/palermo/necropoli-punica-palermo/",
+          "https://en.wikipedia.org/wiki/History_of_Palermo"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.94,
+          36.81
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_cossyra",
+        "culture": "punic",
+        "name_latin": "Cossyra",
+        "name_english": "Pantelleria",
+        "type": "city",
+        "province": "Sicilia",
+        "modern_location": "Pantelleria, Sicily, Italy",
+        "extant_117ce": true,
+        "notes": "Phoenician settlers reached this volcanic island by the late 8th century BCE, and Carthage later took direct control, minting its own coins stamped with a goddess's head, likely Astarte or Tanit. Twin hills called San Marco and Santa Teresa formed the acropolis, ringed by rectangular-block walls and cisterns cut to catch scarce rainwater. Rome captured Cossyra for good in 217 BCE, and its Punic-cut cisterns still held water for residents in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cossyra",
+          "https://www.megalithic.co.uk/article.php?sid=18176"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0159,
+          38.9847
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_nora",
+        "culture": "punic",
+        "name_latin": "Nora",
+        "name_english": "Nora",
+        "type": "city",
+        "province": "Sardinia et Corsica",
+        "modern_location": "Pula, Sardinia, Italy",
+        "extant_117ce": true,
+        "notes": "Nora was Sardinia's first Phoenician settlement, founded by the 8th century BCE, later growing into a full Punic and then Roman city. The Nora Stone, unearthed there in 1773, carries the oldest known Phoenician writing found on the island. A storm in 1889 exposed a buried tophet and remains of a temple to Tanit. Roman builders raised baths, a theater, and mosaic-floored houses directly over much of the old Punic quarter, so a visitor in 117 CE walked a working Roman port town built atop its Phoenician predecessor.",
+        "sources": [
+          "https://www.britannica.com/place/Nora",
+          "https://en.wikipedia.org/wiki/Nora,_Italy"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Archaeological site Nora - Pula - Sardinia - Italy - 03.jpg?width=800",
+        "image_credit": "Wikimedia Commons, the archaeological site of Nora, Sardinia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.4397,
+          39.8733
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_tharros",
+        "culture": "punic",
+        "name_latin": "Tharros",
+        "name_english": "Tharros",
+        "type": "city",
+        "province": "Sardinia et Corsica",
+        "modern_location": "San Giovanni di Sinis, Cabras, Sardinia, Italy",
+        "extant_117ce": true,
+        "notes": "Tharros was founded by Phoenician settlers in the 8th century BCE on Sardinia's Sinis peninsula and passed through Carthaginian and then Roman hands without ever being abandoned. Its tophet, atop the hill of Su Muru Mannu, held cremation urns of sacrificed infants and animals from the 7th century BCE onward. Unlike most Phoenician cities on the island, Tharros stayed continuously inhabited for another millennium, only emptying in the 11th century CE when Saracen raids drove its people inland to found Oristano.",
+        "sources": [
+          "https://www.sardegnaturismo.it/en/explore/ancient-city-tharros",
+          "https://italytripper.com/en/place/tharros-history-by-the-sea-cabras/"
+        ],
+        "confidence": "high",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.45,
+          39.0667
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_sulci_tophet",
+        "culture": "punic",
+        "name_latin": "Sulci",
+        "name_english": "Sant'Antioco Tophet",
+        "type": "sanctuary",
+        "province": "Sardinia et Corsica",
+        "modern_location": "Sant'Antioco, Sardinia, Italy",
+        "extant_117ce": true,
+        "notes": "Phoenicians founded Sulci around 770 BCE, and it grew into one of Sardinia's most important trading ports before Carthage absorbed it in the 6th century BCE. Its tophet, where cremated infant and animal remains were sealed in urns beneath carved stelae, ranks as Sardinia's best-preserved example of the practice. Rome conquered Sulci in the 3rd century BCE and joined the island to the mainland with an artificial causeway still used today. The stelae-filled sanctuary remained in the ground beneath the working Roman town in 117 CE.",
+        "sources": [
+          "https://www.sardegnacultura.it/en/articles/santantioco-citta-fenicio-punica-di-sulky",
+          "https://en.wikipedia.org/wiki/Sant%27Antioco"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tophet de Sant Antioco.JPG?width=800",
+        "image_credit": "Wikimedia Commons, the tophet of Sant'Antioco (ancient Sulci)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1011,
+          39.2289
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_tuvixeddu",
+        "culture": "punic",
+        "name_latin": "Karales",
+        "name_english": "Tuvixeddu Necropolis",
+        "type": "necropolis",
+        "province": "Sardinia et Corsica",
+        "modern_location": "Cagliari, Sardinia, Italy",
+        "extant_117ce": true,
+        "notes": "Tuvixeddu served as the burial ground of Phoenician-Punic Karales, now Cagliari, and ranks as the largest Punic necropolis in the Mediterranean. Between the 6th and 3rd centuries BCE, diggers cut close to 1,800 well-shaft tombs into the limestone hill, some eight meters deep, a handful preserving rare North African-style wall paintings. Rome took Karales in the First Punic War and built its own city on the same site, leaving Tuvixeddu's older tombs untouched on the city's edge through the imperial period.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tuvixeddu_necropolis",
+          "https://www.sardegnacultura.it/en/articles/cagliari-citta-fenicio-punica-di-karaly"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Necropoli di Tuvixeddu.jpg?width=800",
+        "image_credit": "Wikimedia Commons, the Tuvixeddu necropolis, Cagliari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.4861,
+          39.18
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_monte_sirai",
+        "culture": "punic",
+        "name_latin": null,
+        "name_english": "Monte Sirai",
+        "type": "fortress",
+        "province": "Sardinia et Corsica",
+        "modern_location": "near Carbonia, Sardinia, Italy",
+        "extant_117ce": false,
+        "notes": "Phoenician settlers built a fortified hilltop town at Monte Sirai around 750 BCE to guard the approaches to nearby Sulci, and Carthage took direct control by 520 BCE, thickening its walls and adding a tophet by the late 4th century BCE. The children's necropolis yielded urns shaped like covered pots, packed with cremated remains, amulets, and jewelry. The entire settlement was abandoned around 110 BCE, two centuries before Trajan's reign, leaving it an empty ruin rather than a living Roman-era town.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Monte_Sirai",
+          "https://www.carboniamusei.it/en/monte-sirai-archaeological-park_4.html"
+        ],
+        "confidence": "high",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8853,
+          38.8958
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_bithia",
+        "culture": "punic",
+        "name_latin": "Bithia",
+        "name_english": "Bithia (Chia)",
+        "type": "sanctuary",
+        "province": "Sardinia et Corsica",
+        "modern_location": "Chia, Domus de Maria, Sardinia, Italy",
+        "extant_117ce": true,
+        "notes": "Phoenician traders founded Bithia on Sardinia's southern tip around the 8th century BCE, and the port continued under Carthaginian and then Roman control without being abandoned in antiquity. Excavators found a monumental Punic-era statue of the dwarf god Bes near a sanctuary outside the town, alongside roughly two hundred votive clay figurines. Bes worship stayed popular into the Roman period, so the shrine that drew Punic sailors likely still drew visitors when Trajan ruled in 117 CE.",
+        "sources": [
+          "https://www.sardegnaturismo.it/en/explore/ancient-city-bithia",
+          "https://en.wikipedia.org/wiki/Bithia,_Italy"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.43,
+          38.91
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_puig_des_molins",
+        "culture": "punic",
+        "name_latin": "Necropolis Ebusitana",
+        "name_english": "Puig des Molins Necropolis",
+        "type": "necropolis",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Ibiza Town, Balearic Islands, Spain",
+        "extant_117ce": true,
+        "notes": "Puig des Molins served as the burial ground for Ebusus, modern Ibiza, from the mid-7th century BCE, staying in continuous use for over a thousand years through Phoenician, Punic, and Roman rule. Roughly 3,000 tombs honeycomb the hillside, most Carthaginian-style hypogea reached by a shaft into a square underground chamber. It remains the largest and best-preserved Phoenician-Punic necropolis in the western Mediterranean, and burials continued straight through 117 CE and for centuries afterward.",
+        "sources": [
+          "https://maef.eu/en/museo-puig-des-molins/historia-de-la-necropolis/",
+          "https://en.wikipedia.org/wiki/Puig_des_Molins"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Necropolis Del Puig des Molins, Ibiza.jpeg?width=800",
+        "image_credit": "Wikimedia Commons, the Puig des Molins necropolis, Ibiza"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.0986,
+          35.2008
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_lixus_melqart",
+        "culture": "punic",
+        "name_latin": "Templum Herculis, Lixus",
+        "name_english": "Lixus Sanctuary of Melqart",
+        "type": "sanctuary",
+        "province": "Mauretania Tingitana",
+        "modern_location": "near Larache, Morocco",
+        "extant_117ce": true,
+        "notes": "Phoenician settlers reached Lixus by the 7th century BCE, and Pliny the Elder later called it the most ancient Phoenician colony in the far west. Its acropolis carried a sanctuary to Melqart, the Tyrian god Romans equated with Hercules, and Greek writers placed the mythical Garden of the Hesperides here, imagining Hercules plucking golden apples from its slopes. In 117 CE the hilltop shrine still overlooked a busy fish-salting port below.",
+        "sources": [
+          "https://www.britannica.com/place/Lixus",
+          "https://en.wikipedia.org/wiki/Lixus_(ancient_city)"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.7867,
+          31.4972
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_mogador",
+        "culture": "punic",
+        "name_latin": "Insulae Purpurariae",
+        "name_english": "Mogador Islands, Essaouira",
+        "type": "trading post",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Essaouira, Morocco",
+        "extant_117ce": true,
+        "notes": "Phoenician traders set up an outpost on this archipelago by the 7th century BCE, the westernmost Phoenician foothold known in antiquity. Client-king Juba II later built a full purple-dye works here, crushing murex and purpura sea snails harvested from the surrounding rocks to make Tyrian purple, the dye that colored a Roman senator's toga stripe. The dye works were still operating under Roman provincial administration when Trajan died in 117 CE.",
+        "sources": [
+          "https://www.slowmorocco.com/stories/the-purple-traders",
+          "https://en.wikipedia.org/wiki/Iles_Purpuraires"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.8158,
+          35.7908
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_tingis_tombs",
+        "culture": "punic",
+        "name_latin": "Tingis",
+        "name_english": "Marshan Phoenician Tombs, Tangier",
+        "type": "necropolis",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Marshan district, Tangier, Morocco",
+        "extant_117ce": true,
+        "notes": "Phoenician traders had a presence at Tingis by around 1450 BCE, and Carthaginian colonists formally founded a counter there between 475 and 450 BCE. On the Marshan plateau above the harbor, a rock-cut necropolis of more than 100 tombs, some carved into a gorge wall, held burials in a distinctive Libyco-Phoenician style. Rome eventually made Tingis the capital of Mauretania Tingitana, and the tombs of the city's Phoenician-era predecessors remained in the ground through 117 CE.",
+        "sources": [
+          "https://www.visittanger.com/en/histoire/phoenician-tombs/5e1e897dc052b1f24c068c4a",
+          "https://en.wikipedia.org/wiki/Tingi"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.29,
+          36.525
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_cadiz_necropolis",
+        "culture": "punic",
+        "name_latin": "Gades (Gadir)",
+        "name_english": "Phoenician Necropolis of Cadiz",
+        "type": "necropolis",
+        "province": "Hispania Baetica",
+        "modern_location": "Cadiz, Spain",
+        "extant_117ce": true,
+        "notes": "Phoenician settlers from Tyre founded Gadir around the 11th century BCE; it endures as one of the oldest continuously inhabited cities in western Europe. Shipyard workers struck its necropolis in 1887, unearthing a male anthropoid marble sarcophagus, a bearded figure clutching a pomegranate, so finely Hellenized in its carving that the find prompted the founding of the Cadiz Archaeological Museum. A matching female sarcophagus, the Lady of Cadiz, turned up nearby only in 1980. The graves span the 5th through 2nd centuries BCE, already undisturbed underground by 117 CE.",
+        "sources": [
+          "https://www.labrujulaverde.com/en/2024/01/the-story-of-the-phoenician-sarcophagi-of-cadiz-and-the-man-who-was-never-thanked/",
+          "https://en.wikipedia.org/wiki/Lady_of_C%C3%A1diz"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Museo de Cádiz-Sacofagos fenicios-20110913.jpg?width=800",
+        "image_credit": "Wikimedia Commons, the Phoenician anthropoid sarcophagi in the Museum of Cadiz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4636,
+          36.6719
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_cerro_del_villar",
+        "culture": "punic",
+        "name_latin": null,
+        "name_english": "Cerro del Villar",
+        "type": "city (abandoned)",
+        "province": "Hispania Baetica",
+        "modern_location": "mouth of the Guadalhorce River, Malaga, Spain",
+        "extant_117ce": false,
+        "notes": "Phoenician colonists built this eight-hectare town on what was then an island at the Guadalhorce river mouth no later than the 8th century BCE, one of the best-preserved Phoenician settlements in the western Mediterranean. Unlike most Iron Age Phoenician towns buried under the modern cities built on top of them, Cerro del Villar was abandoned by the 6th century BCE and never resettled. By 117 CE the site had lain empty and unknown for roughly six centuries, while nearby Malaca had grown into the real Roman-era port city.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cerro_del_Villar",
+          "https://www.archaeological.org/fieldwork/cerro-del-villar-excavations-malaga-spain/"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.69,
+          36.735
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_laurita_sexi",
+        "culture": "punic",
+        "name_latin": "Sexi",
+        "name_english": "Laurita Necropolis, Almunecar",
+        "type": "necropolis",
+        "province": "Hispania Baetica",
+        "modern_location": "Almunecar, Granada Province, Spain",
+        "extant_117ce": true,
+        "notes": "The Laurita necropolis at Sexi holds the oldest Phoenician tombs found anywhere in the western Mediterranean, dated as early as 850 to 770 BCE. Among the grave goods were Egyptian alabaster jars carved with hieroglyphic names of pharaohs including Osorkon II, prestige gifts that traveled from the Nile through Phoenician trade networks. Sexi grew into the Roman colony Firmum Iulium Sexi, and its founders' necropolis remained in the hillside above the town through Trajan's reign.",
+        "sources": [
+          "https://phoenicians.es/almunecar.html",
+          "https://www.academia.edu/4046900/The_Phoenician_inscription_on_an_alabaster_urn_from_the_Laurita_Necropolis_in_Almu%C3%B1%C3%A9car_Granada_Spain_A_new_edition_and_interpretation"
+        ],
+        "confidence": "high",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.7711,
+          37.2492
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_villaricos",
+        "culture": "punic",
+        "name_latin": "Baria",
+        "name_english": "Villaricos Necropolis",
+        "type": "necropolis",
+        "province": "Hispania Baetica",
+        "modern_location": "Villaricos, Cuevas del Almanzora, Almeria, Spain",
+        "extant_117ce": true,
+        "notes": "Phoenician settlers founded Baria in the 8th century BCE, drawn by nearby silver-bearing lead deposits and rich fishing grounds. Its cemetery at Villaricos ranks among the most extensive Phoenician necropoleis on the Iberian Peninsula, with monumental rock-cut hypogea from the 7th century BCE. A limestone funerary stele found there in 1903, inscribed for a devotee of Astarte, preserves one of the clearest Phoenician religious inscriptions recovered in Spain. Burials continued without interruption from the 6th century BCE into the 2nd century CE, spanning straight through 117 CE.",
+        "sources": [
+          "https://www.visit-andalucia.com/phoenician-roman-necropolis-baria/",
+          "https://en.wikipedia.org/wiki/Villaricos_Phoenician_stele"
+        ],
+        "confidence": "high",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9786,
+          37.6042
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_cartagena_wall",
+        "culture": "punic",
+        "name_latin": "Qart Hadasht",
+        "name_english": "Punic Wall of Cartagena",
+        "type": "fortification",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Cartagena, Spain",
+        "extant_117ce": false,
+        "notes": "Hasdrubal the Fair founded Qart Hadasht around 227 BCE as Carthage's Iberian capital, naming it \"New City\" after the mother city and using its harbor to move silver from nearby mines. Two parallel ramparts of local sandstone, discovered beneath the modern city, formed the settlement's original 3rd-century-BCE wall. Rome captured the city in 209 BCE, and Augustus's later redevelopment built out well beyond this Punic perimeter, leaving the old wall's line buried and obsolete by 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Punic_wall_of_Cartagena",
+          "https://en.wikipedia.org/wiki/Qart-Hadast_(Spain)"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carthaginian wall of Cartagena.jpg?width=800",
+        "image_credit": "Wikimedia Commons, the Punic wall of Cartagena"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0161,
+          36.7478
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_abdera",
+        "culture": "punic",
+        "name_latin": "Abdera",
+        "name_english": "Adra",
+        "type": "city",
+        "province": "Hispania Baetica",
+        "modern_location": "Adra, Almeria Province, Spain",
+        "extant_117ce": true,
+        "notes": "Phoenician colonists founded Abdera in the 8th century BCE on the Cerro de Montecristo, one of a chain of trading posts alongside Malaca, Sexi, and Baria. Punic authorities took direct control by the 4th century BCE before Rome absorbed the town at the end of the 2nd century BCE. Under Roman rule Abdera shipped out lead and iron from the nearby Sierra de Gador along with salted fish, an economy built on the trade routes its Phoenician founders first established.",
+        "sources": [
+          "https://andaluciarustica.com/en/adra.htm",
+          "https://en.wikipedia.org/wiki/Adra,_Spain"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3981,
+          33.5856
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_eshmun_sidon",
+        "culture": "punic",
+        "name_latin": "Templum Eshmuni",
+        "name_english": "Temple of Eshmun, Sidon",
+        "type": "sanctuary",
+        "province": "Syria",
+        "modern_location": "Bustan el-Sheikh, near Sidon, Lebanon",
+        "extant_117ce": true,
+        "notes": "Sidonian kings Eshmunazar II and Bodashtart founded this sanctuary to Eshmun, the Phoenician god of healing, in the 7th century BCE beside the Awali river. French excavations uncovered a monumental podium, a sacred pool for pilgrims seeking cures, and a carved bull-headed capital surviving from its colonnade. The complex kept growing under Persian, Hellenistic, and Roman patronage, gaining a Roman-style nymphaeum, and stayed in active religious use from the 7th century BCE through the 8th century CE — in 117 CE, worshippers visited a healing cult already eight hundred years old.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Eshmun",
+          "https://www.livius.org/articles/place/sidon/bustan-esh-sheikh/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bull protome capital from the Temple of Eshmun.jpg?width=800",
+        "image_credit": "Wikimedia Commons, a bull-protome capital from the Temple of Eshmun, Sidon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.0585,
+          36.7763
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_icosium",
+        "culture": "punic",
+        "name_latin": "Icosium",
+        "name_english": "Algiers (Casbah)",
+        "type": "city",
+        "province": "Mauretania Caesariensis",
+        "modern_location": "Casbah of Algiers, Algeria",
+        "extant_117ce": true,
+        "notes": "Carthaginian traders rebuilt an older Phoenician counter at Icosium in the early 3rd century BCE, giving it a Punic name meaning \"Island of the Owls.\" The modern Arabic name for Algiers, al-Jazair (\"the islands\"), still echoes that ancient toponym nearly 2,300 years later. A Roman veteran colony was established under client-king Juba II, and Vespasian later elevated the town to full colonia status. By 117 CE, Icosium sat as a modest but functioning Roman port city built directly on its Phoenician-Punic predecessor.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Icosium",
+          "https://www.livius.org/articles/place/icosium-algiers/"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.187,
+          36.0366
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_ras_il_wardija",
+        "culture": "punic",
+        "name_latin": null,
+        "name_english": "Ras il-Wardija Sanctuary",
+        "type": "sanctuary",
+        "province": "Sicilia",
+        "modern_location": "San Lawrenz, Gozo, Malta",
+        "extant_117ce": true,
+        "notes": "Phoenician-Punic sailors carved a cliffside sanctuary to Astarte into the rock at Ras il-Wardija on Gozo's western tip, using it from at least the 4th century BCE to leave offerings before crossing open water toward North Africa. Cut into two terraces 120 meters above the sea, the complex held rock-hewn niches, cisterns, and a temple enclosure. Excavations found the sanctuary kept functioning under Roman rule, eventually gaining a Roman-style nymphaeum, and stayed active until roughly the 2nd century CE — sailors were very likely still leaving offerings there in 117 CE.",
+        "sources": [
+          "https://culture-malta.org/ras-il-wardija-phoenician-sanctuary/",
+          "https://open.rstfen.cnr.it/index.php/rsf/article/view/320"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.48,
+          35.3217
+        ]
+      },
+      "properties": {
+        "id": "substrate_punic_rachgoun",
+        "culture": "punic",
+        "name_latin": null,
+        "name_english": "Rachgoun Island",
+        "type": "trading post",
+        "province": "Mauretania Caesariensis",
+        "modern_location": "off Ghazaouet, Tlemcen Province, Algeria",
+        "extant_117ce": false,
+        "notes": "Phoenician traders settled this small island at the mouth of the Tafna river by the 7th century BCE, building a compact town beside a carved channel resembling the artificial cothon harbors Phoenician engineers built elsewhere. Excavators uncovered 114 graves in a cemetery nicknamed the Necropolis of the Lighthouse, its early Punic pottery showing direct trade links to Iberia. The colony lasted less than two centuries before being abandoned, likely by the 5th century BCE, and no later town replaced it. By 117 CE, Rachgoun had sat empty for roughly five hundred years.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Rachgoun",
+          "https://www.wikidata.org/wiki/Q12205453"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
     }
   ]
 }
