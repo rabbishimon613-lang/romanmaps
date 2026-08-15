@@ -2576,6 +2576,901 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Meidum%20Pyramid.jpg?width=800",
         "image_credit": "Photograph of the Meidum Pyramid · Wikimedia Commons"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.0186,
+          42.0011
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_ullastret",
+        "culture": "iberian",
+        "name_latin": "Ullastret",
+        "name_english": "Ullastret",
+        "type": "oppidum",
+        "province": "Tarraconensis",
+        "modern_location": "Ullastret, Girona, Spain",
+        "extant_117ce": true,
+        "notes": "Ullastret served as the fortified capital of the Indigetes, the Iberian people of the northeastern coast. Twin hilltop settlements, Puig de Sant Andreu and Illa d'en Reixac, housed roughly 6,000 residents behind cyclopean stone walls. Excavators uncovered grain silos, a ritual building, and lead tablets bearing the undeciphered Iberian script. Rome absorbed the Indigetes without erasing the site, and its massive walls still stood on the hilltop under imperial rule.",
+        "sources": [
+          "https://www.apd.cat/en/girona/the-iberian-settlement-of-ullastret-is-the-largest-found-so-far-in-catalonia_3779_102.html",
+          "https://patrimoni.gencat.cat/en/collection/iberian-city-ullastret"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Restes_d'un_temple_al_recinte_d'Ullastret.jpg?width=800",
+        "image_credit": "Ritual building ruins at Puig de Sant Andreu, Ullastret. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7735,
+          37.4914
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_baza",
+        "culture": "iberian",
+        "name_latin": "Basti",
+        "name_english": "Baza",
+        "type": "necropolis",
+        "province": "Baetica",
+        "modern_location": "Baza, Granada, Spain",
+        "extant_117ce": false,
+        "notes": "Basti was the Bastetani tribe's principal town, and its necropolis at Cerro del Santuario held generations of Iberian burials. Archaeologist Francisco Presedo opened a chamber tomb there in 1971 and found the Lady of Baza, a painted limestone throne-seated figure over a meter tall with a hollow torso that once held cremated remains. Small carved birds flank her seat. By the time Rome ruled Hispania the burial chambers lay sealed under earth, unseen until the twentieth-century dig.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Lady_of_Baza",
+          "http://iberiamagica.blogspot.com/2013/05/cerro-del-santuario-y-la-dama-de-baza.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dama_de_Baza_(piedra_caliza_policromada).jpg?width=800",
+        "image_credit": "Lady of Baza, polychrome limestone, National Archaeological Museum of Spain. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.63,
+          38.6
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_cancho_roano",
+        "culture": "iberian",
+        "name_latin": "Cancho Roano",
+        "name_english": "Cancho Roano",
+        "type": "sanctuary",
+        "province": "Lusitania",
+        "modern_location": "Zalamea de la Serena, Badajoz, Spain",
+        "extant_117ce": false,
+        "notes": "Cancho Roano stood as a monumental Tartessian-Iberian sanctuary on the La Serena plain, ringed by a water-filled moat. Priests raised the building around 550 BCE and rebuilt it several times over two centuries. Around 370 BCE the community set it ablaze in a ritual closing and packed the ruins under rammed earth, sealing the site so completely that archaeologists only rediscovered it in 1978. Nothing remained above ground by the time Rome governed Lusitania.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cancho_Roano",
+          "https://turismoextremadura.gobex.es/en/explora/Cancho-Roano-00001/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Yacimiento_Arqueol%C3%B3gico_de_Cancho_Roano_I_04.jpg?width=800",
+        "image_credit": "Excavated remains of the Cancho Roano sanctuary, Zalamea de la Serena. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.0333,
+          37.3833
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_carambolo",
+        "culture": "iberian",
+        "name_latin": "Carambolo",
+        "name_english": "El Carambolo",
+        "type": "sanctuary",
+        "province": "Baetica",
+        "modern_location": "Camas, Seville, Spain",
+        "extant_117ce": false,
+        "notes": "El Carambolo hill held a Phoenician-Tartessian sanctuary that construction workers stumbled onto on 30 September 1958 while digging near a pigeon-shooting club. Beneath it lay 21 pieces of solid gold jewelry, including two ox-hide-shaped pectorals, dated to the seventh century BCE. Centuries of later building buried the shrine so thoroughly that its walls left no trace above ground by the Roman period. The gold now sits on permanent display in Seville's Archaeological Museum.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Treasure_of_El_Carambolo",
+          "https://naturanda.com/en/el-carambolo-treasure/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Brazalete_del_Tesoro_del_Carambolo,_Museo_Arqueol%C3%B3gico_de_Sevilla.jpg?width=800",
+        "image_credit": "Bracelet from the Treasure of El Carambolo, Archaeological Museum of Seville. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.1833,
+          37.8667
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_porcuna",
+        "culture": "iberian",
+        "name_latin": "Ipolca",
+        "name_english": "Porcuna",
+        "type": "sanctuary",
+        "province": "Baetica",
+        "modern_location": "Porcuna, Jaen, Spain",
+        "extant_117ce": false,
+        "notes": "Ipolca's aristocracy commissioned more than 40 limestone statues at Cerrillo Blanco around 440 BCE, carving armored warriors, griffins locked in combat, and a bull-headed man. A hostile force smashed the entire ensemble and buried the fragments in a single pit, likely during a local power struggle. The statues stayed hidden underground for roughly 2,400 years until a plow struck them in 1975. Jaen's Museum now devotes an entire room to the reassembled collection.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Torito_of_Porcuna",
+          "http://www.spainisculture.com/en/obras_de_excelencia/museo_provincial_de_jaen/griphomaquia_de_cerrillo_blanco_porcuna.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Guerrero_ibero_de_Porcuna.jpg?width=800",
+        "image_credit": "Iberian warrior statue from Cerrillo Blanco, Porcuna, Museo de Jaen. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.1,
+          37.2333
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_osuna",
+        "culture": "iberian",
+        "name_latin": "Urso",
+        "name_english": "Osuna",
+        "type": "city",
+        "province": "Baetica",
+        "modern_location": "Osuna, Seville, Spain",
+        "extant_117ce": true,
+        "notes": "Urso began as a Turdetani hilltop town before Julius Caesar refounded it as the Roman colony Colonia Genetiva Iulia in 44 BCE. Iberian carvers had already produced striking funerary reliefs there, including an 82-centimeter limestone bull that once guarded a tomb. Roman builders recycled several of these older stone reliefs into their new city walls. Osuna remained an active, walled Roman town through the reign of Trajan, its Iberian foundations built directly into its fabric.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Bull_of_Osuna",
+          "https://beticaromana.org/en/municipalities/osuna/osuna-history/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Toro_ibero_de_Osuna_-_M.A.N._01.jpg?width=800",
+        "image_credit": "Bull of Osuna, Iberian limestone relief, National Archaeological Museum of Spain. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.81,
+          38.9067
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_moixent",
+        "culture": "iberian",
+        "name_latin": "Bastida (native Contestani oppidum name unattested)",
+        "name_english": "Moixent",
+        "type": "oppidum",
+        "province": "Tarraconensis",
+        "modern_location": "Moixent, Valencia, Spain",
+        "extant_117ce": true,
+        "notes": "La Bastida de les Alcusses was a fortified Contestani town abandoned so abruptly around 330 BCE that its houses were left furnished, preserving one of Iberia's clearest snapshots of daily life. Excavators working since 1928 found lead tablets inscribed in Iberian script and a 7.3-centimeter bronze warrior on horseback wielding a curved falcata sword. That tiny figure became the emblem of the Valencia Museum of Prehistory. The abandoned hilltop walls stayed exposed for centuries afterward.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/La_Bastida_de_les_Alcusses",
+          "https://www.moixent.es/va/noticia/21-julio-1931-un-miembro-del-servicio-investigacion-prehistorica-diputacion-valencia-descubrio-guerrer-moixent"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Guerrero_de_Mogente.jpg?width=800",
+        "image_credit": "Warrior of Moixent, bronze ex-voto from La Bastida de les Alcusses, Museum of Prehistory of Valencia. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.7167,
+          41.05
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_castellet_banyoles",
+        "culture": "iberian",
+        "name_latin": "Kum",
+        "name_english": "Tivissa",
+        "type": "oppidum",
+        "province": "Tarraconensis",
+        "modern_location": "Tivissa, Tarragona, Spain",
+        "extant_117ce": true,
+        "notes": "The Iberian city of Kum rose on a ridge above the lower Ebro, defended by a gate flanked by two pentagonal towers unique among Iberian fortifications. Someone hid a hoard of silver drinking vessels there, including four gilded paterae and a pair of bronze oxen, only unearthed by farmers in 1927. The Second Punic War brought the settlement's occupation to an end soon after. Its pentagonal towers and stone ramparts remained standing on the ridge for generations.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Castellet_de_Banyoles",
+          "https://patrimoni.gencat.cat/en/monuments/monuments/kum-castellet-de-banyoles-iberian-city"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Silver_plate_-_Tresor_de_Tivissa_-_Museu_d'Arqueologia_de_Catalunya_-_Barcelona_2014.JPG?width=800",
+        "image_credit": "Silver patera from the Treasure of Tivissa, Museum of Archaeology of Catalonia. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6167,
+          38.0333
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_castulo",
+        "culture": "iberian",
+        "name_latin": "Castulo",
+        "name_english": "Castulo",
+        "type": "city",
+        "province": "Tarraconensis",
+        "modern_location": "Linares, Jaen, Spain",
+        "extant_117ce": true,
+        "notes": "Castulo ruled the Oretani as their capital, sprawling across 40 hectares near the silver mines of the Sierra Morena. Hannibal married a noblewoman from Castulo before crossing the Alps, and Rome later made the city a municipium. Its Mosaic of the Amores, laid in the second century CE across a 70-square-meter hall, was ranked among National Geographic's top discoveries of 2012. Castulo remained a functioning walled city through the reign of Trajan.",
+        "sources": [
+          "http://www.spainisculture.com/en/monumentos/jaen/yacimiento_arqueologico_de_castulo.html",
+          "https://www.jaenparaisointerior.es/en/w/ibero-roman-city-of-castulo"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/C%C3%A1stulo,_Mosaico_de_los_Amores_-_%C3%81ngel_M._Felic%C3%ADsimo.jpg?width=800",
+        "image_credit": "Mosaic of the Amores, Castulo archaeological site, Linares. Photo by Angel M. Felicisimo, Wikimedia Commons, CC BY-SA."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.6425,
+          37.4714
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_carmona",
+        "culture": "iberian",
+        "name_latin": "Carmo",
+        "name_english": "Carmona",
+        "type": "necropolis",
+        "province": "Baetica",
+        "modern_location": "Carmona, Seville, Spain",
+        "extant_117ce": true,
+        "notes": "Carmo grew from a Tartessian-Turdetani hill settlement into one of Baetica's leading Roman towns after its conquest in 206 BCE. Its necropolis on the western outskirts held more than 900 family tombs cut into bedrock, among them the Elephant Tomb, named for a statuette found inside. Excavator Jorge Bonsor moved roughly 1,400 cubic meters of earth clearing the site in 1885 and 1886. The tombs were actively receiving Roman-period burials during Trajan's reign.",
+        "sources": [
+          "https://www.turismosevilla.org/en/what-see-and-do/heritage/monuments/archaeological-site-carmona",
+          "https://es.wikipedia.org/wiki/Tumba_del_Elefante"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carmona_necr%C3%B3polis_elefante82.JPG?width=800",
+        "image_credit": "Elephant Tomb, Roman necropolis of Carmona. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5675,
+          42.7719
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_irulegi",
+        "culture": "iberian",
+        "name_latin": "Irulegi (Vasconic hillfort, native name unattested)",
+        "name_english": "Irulegi",
+        "type": "hillfort",
+        "province": "Tarraconensis",
+        "modern_location": "Aranguren, Navarra, Spain",
+        "extant_117ce": true,
+        "notes": "Irulegi hillfort guarded the approach to Pamplona for the proto-Basque Vascones until the Sertorian Wars burned it down between 76 and 72 BCE. Archaeologists excavating in 2021 pulled a bronze hand from the wreckage of a house, its surface engraved with the word sorioneku, good fortune, in Vasconic script. It stands as the oldest and longest text yet found in a language ancestral to Basque. The fire-scarred hillfort walls stayed exposed on the ridge for nearly two centuries afterward.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Hand_of_Irulegi",
+          "https://www.visitnavarra.es/en/irulegi"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Irulegiko_eskua_1.jpg?width=800",
+        "image_credit": "Hand of Irulegi, bronze Vasconic inscription from the Irulegi hillfort. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2667,
+          39.6833
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_saguntum",
+        "culture": "iberian",
+        "name_latin": "Saguntum (Arse in Iberian)",
+        "name_english": "Sagunto",
+        "type": "city",
+        "province": "Tarraconensis",
+        "modern_location": "Sagunto, Valencia, Spain",
+        "extant_117ce": true,
+        "notes": "Arse minted its own bronze and silver coins on this hilltop for the Edetani before Hannibal besieged and destroyed the city in 219 BCE, an act that triggered the Second Punic War. Rome rebuilt it as Saguntum, and later coins carried both names together, Saguntum in Latin and Arse in Iberian script. Traces of the original Iberian cyclopean wall still ran along the citadel's slope beneath the later fortifications. Saguntum thrived as a Roman municipium through Trajan's reign.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sagunto_Castle",
+          "https://www.ancient-origins.net/ancient-places-europe/sagunto-castle-0015288"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Castillo_de_Sagunto,_Valencia,_Espa%C3%B1a,_2015-01-03,_DD_09-11_HDR.JPG?width=800",
+        "image_credit": "Castle hill of Sagunto, built over the Iberian city of Arse. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2214,
+          39.5192
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_kelin",
+        "culture": "iberian",
+        "name_latin": "Kelin",
+        "name_english": "Caudete de las Fuentes",
+        "type": "oppidum",
+        "province": "Tarraconensis",
+        "modern_location": "Caudete de las Fuentes, Valencia, Spain",
+        "extant_117ce": true,
+        "notes": "Kelin governed the Requena-Utiel plateau from the walled hilltop of Los Villares, striking its own bronze coinage. Iron, lead, and silver working sustained the town from the fourth century BCE onward, and archaeologists have recovered Iberian lead tablets inscribed with commercial accounts from its streets. The settlement declined through the late Iberian period as Rome extended control inland. Its stone perimeter wall, enclosing roughly 10 hectares, stayed visible on the hillside long after.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kelin",
+          "https://mupreva.org/web_mupreva/yacimientos/?id=2646"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fusaioles,_los_Villares_(Caudete_de_las_Fuentes),_museu_de_Prehist%C3%B2ria_de_Val%C3%A8ncia.JPG?width=800",
+        "image_credit": "Spindle whorls from Kelin/Los Villares, Museum of Prehistory of Valencia. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4692,
+          42.8807
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_monte_bernorio",
+        "culture": "iberian",
+        "name_latin": "Bernorio (Cantabrian oppidum, native name unattested)",
+        "name_english": "Monte Bernorio",
+        "type": "hillfort",
+        "province": "Tarraconensis",
+        "modern_location": "Villaren de Valdivia, Palencia, Spain",
+        "extant_117ce": true,
+        "notes": "Monte Bernorio's ramparts enclosed some 90 hectares, making it one of the largest fortified Iron Age sites on the Iberian Peninsula. The Cantabri held it as a stronghold guarding the route to the Bay of Biscay until Augustus's legions besieged and destroyed it around 25 BCE. Archaeologists recovered iron ballista bolts scattered where Roman artillery pounded its walls. A century and a half later its shattered ramparts still scarred the hilltop of Trajan's Hispania.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Monte_Bernorio",
+          "https://www.researchgate.net/publication/292658885_Augustan_campaigns_in_the_initial_phase_of_the_Cantabrian_War_and_Roman_artillery_projectiles_from_the_Monte_Bernorio_oppidum_Villaren_prov_Palencia"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bernorio.JPG?width=800",
+        "image_credit": "Monte Bernorio hillfort, Villaren de Valdivia, Palencia. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2119,
+          41.4536
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_puig_castellar",
+        "culture": "iberian",
+        "name_latin": "Laietani oppidum (native name unattested)",
+        "name_english": "Puig Castellar",
+        "type": "oppidum",
+        "province": "Tarraconensis",
+        "modern_location": "Santa Coloma de Gramenet, Barcelona, Spain",
+        "extant_117ce": true,
+        "notes": "Puig Castellar crowned a 303-meter hilltop as a fortified village of the Laietani, the Iberian people who once controlled the coast between the Llobregat and Tordera rivers. Excavations there in 1904 turned up carved stone heads, evidence the community once displayed severed enemy heads as trophies at its gate. The Second Punic War brought about the settlement's abandonment in the early second century BCE. Its defensive walls stayed exposed on the summit for the following three centuries.",
+        "sources": [
+          "https://visitmuseum.gencat.cat/en/museum/poblat-iberic-puig-castellar/information-and-map",
+          "https://museu.gramenet.cat/es/museo-en-el-territorio/poblado-iberico-puig-castellar/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Poblat_Iberic_Puig_Castellar.JPG?width=800",
+        "image_credit": "Iberian settlement of Puig Castellar, Santa Coloma de Gramenet. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5486,
+          41.2325
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_azaila",
+        "culture": "iberian",
+        "name_latin": "Sedetani oppidum (identification with Beligio disputed)",
+        "name_english": "Azaila",
+        "type": "oppidum",
+        "province": "Tarraconensis",
+        "modern_location": "Azaila, Teruel, Spain",
+        "extant_117ce": true,
+        "notes": "Cabezo de Alcala belonged to the Sedetani and yielded the largest cache of pre-Roman writing found in Hispania, nearly 1,000 inscriptions scratched onto everyday plates, jars, and weights. The Sertorian Wars brought the town's destruction between 76 and 72 BCE, ending nearly a millennium of settlement. A carved stone bull and a pair of sculpted heads once decorated a temple on its acropolis. The burned ruins of its walls stayed exposed on the hilltop for the following two centuries.",
+        "sources": [
+          "https://arkeonews.net/the-iberian-city-that-wrote-everything-down-how-a-forgotten-settlement-left-spains-largest-pre-roman-archive/",
+          "https://patrimonioculturaldearagon.es/patrimonio/cabezo-de-alcala/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cabezo_de_Alcal%C3%A1,_conjunto_arqueol%C3%B3gico,_Azaila,_Teruel.jpg?width=800",
+        "image_credit": "Cabezo de Alcala archaeological complex, Azaila, Teruel. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.1519,
+          38.7833
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_balazote",
+        "culture": "iberian",
+        "name_latin": "Findspot only, tribal territory disputed",
+        "name_english": "Balazote",
+        "type": "sanctuary",
+        "province": "Tarraconensis",
+        "modern_location": "Balazote, Albacete, Spain",
+        "extant_117ce": false,
+        "notes": "A Balazote resident named Isidro Lopez handed local archaeologists a strange carved beast in June 1879, a limestone chimera with a bearded human head fused onto a bull's crouching body. Carvers finished the piece, known since as the Bicha of Balazote, in the sixth century BCE from two joined limestone blocks. Whatever tomb or shrine it once guarded had already vanished by the time it turned up as reused building material. It has stood in Madrid's National Archaeological Museum since 1910.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Bicha_of_Balazote",
+          "https://kids.kiddle.co/Bicha_of_Balazote"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bicha_de_Balazote_(M.A.N._Madrid)_02.jpg?width=800",
+        "image_credit": "Bicha of Balazote, Iberian limestone chimera, National Archaeological Museum of Spain. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.4667,
+          38.75
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_cerro_de_los_santos",
+        "culture": "iberian",
+        "name_latin": "Rural sanctuary, native name unattested",
+        "name_english": "Cerro de los Santos",
+        "type": "sanctuary",
+        "province": "Tarraconensis",
+        "modern_location": "Montealegre del Castillo, Albacete, Spain",
+        "extant_117ce": true,
+        "notes": "Cerro de los Santos served worshippers of an Iberian fertility goddess for centuries on a low hill in the interior, drawing pilgrims who left behind hundreds of stone statues as offerings. Its best known piece, a robed oferente woman cradling a dove, gave the sanctuary its modern name, the Hill of Saints. Votive activity continued at the shrine into the Roman period, when Latin inscriptions joined the earlier Iberian ones. The sanctuary remained an active place of worship through Trajan's reign.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Lady_of_Cerro_de_los_Santos"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dama_oferente_del_Cerro_de_los_Santos_(16119971754).jpg?width=800",
+        "image_credit": "Oferente statue from the sanctuary of Cerro de los Santos. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.598,
+          39.635
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_edeta",
+        "culture": "iberian",
+        "name_latin": "Edeta",
+        "name_english": "Lliria",
+        "type": "oppidum",
+        "province": "Tarraconensis",
+        "modern_location": "Lliria, Valencia, Spain",
+        "extant_117ce": true,
+        "notes": "Edeta ruled the Edetani from the hilltop of Tossal de Sant Miquel above modern Lliria, its potters producing painted vessels ranked among the finest figurative art the Iberians left behind. One vase, the Vaso de los Guerreros, carries a frieze of six horsemen and six foot soldiers armed with curved falcatas. Rome's peace pulled the population down into the valley, leaving the hilltop walls standing empty above the new lowland town. The ceramics now anchor Valencia's Museum of Prehistory.",
+        "sources": [
+          "https://www.lliria.es/es/pagina/lliria-recuerda-iberos-antigua-edeta-una-exposicion-una-ruta-al-tossal-san-miguel",
+          "https://es.wikipedia.org/wiki/Edeta"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vaso_de_los_Guerreros_restaurado_(Edeta)._Museo_de_Preshistoria_de_Valencia_04.jpg?width=800",
+        "image_credit": "Vaso de los Guerreros, painted Iberian vase from Edeta/Tossal de Sant Miquel, Museum of Prehistory of Valencia. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8461,
+          42.6167
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_andelos",
+        "culture": "iberian",
+        "name_latin": "Andelos",
+        "name_english": "Mendigorria",
+        "type": "city",
+        "province": "Tarraconensis",
+        "modern_location": "Mendigorria, Navarra, Spain",
+        "extant_117ce": true,
+        "notes": "Andelos began as a Vascones settlement that Rome romanized quickly, and both Pliny and Ptolemy named it among the towns of the Vascones. It covered 18 hectares and reached its height in the first and second centuries CE, when its House of Bacchus was paved with a mosaic of the god's triumphal procession. Its water supply system, still traceable today, ranked among the best-preserved of its kind in the Roman world. Andelos flourished as a Vasconic-Roman town under Trajan.",
+        "sources": [
+          "https://es.wikipedia.org/wiki/Andelo",
+          "https://www.spain.info/en/places-of-interest/andelos-archaeological-museum/"
+        ],
+        "confidence": "high",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6432,
+          42.8184
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_pompaelo",
+        "culture": "iberian",
+        "name_latin": "Pompaelo (Vascones called it Iruna)",
+        "name_english": "Pamplona",
+        "type": "city",
+        "province": "Tarraconensis",
+        "modern_location": "Pamplona, Navarra, Spain",
+        "extant_117ce": false,
+        "notes": "A Vascones settlement called Iruna occupied this ridge above the Arga river centuries before Pompey's legions arrived. Rescue excavations beneath Pamplona's Plaza del Castillo and cathedral, run between 2001 and 2004, uncovered postholes and hut foundations of that earlier Iron Age community. Pompey founded the Roman city directly on top of it in the winter of 75 to 74 BCE, naming it after himself. Trajan-era Pompaelo buried the native huts entirely beneath its own bathhouses and streets.",
+        "sources": [
+          "https://encierro.com/blog/pamplona-travel-guide/history-of-pamplona-spain/",
+          "https://en.wikipedia.org/wiki/History_of_Pamplona"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2445,
+          41.1189
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_tarraco_kese",
+        "culture": "iberian",
+        "name_latin": "Kese (Tarraco under Rome)",
+        "name_english": "Tarragona",
+        "type": "city",
+        "province": "Tarraconensis",
+        "modern_location": "Tarragona, Catalonia, Spain",
+        "extant_117ce": true,
+        "notes": "Kese was the Cessetani capital and minted its own bronze coins bearing a horseman on the reverse and the town's Iberian name behind a male head on the obverse. Gnaeus Cornelius Scipio took the site at the Battle of Cissa in 218 BCE, and Rome rebuilt it as Tarraco, capital of Hispania Citerior. Iberian-era construction from the fifth century BCE has turned up beneath the imperial city in digs. Massive polygonal masonry from that period still formed the base of Tarraco's walls under Trajan.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tarraco",
+          "https://en.wikipedia.org/wiki/Cessetani"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7139,
+          42.8667
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_la_loma",
+        "culture": "iberian",
+        "name_latin": "Camarici hillfort, native name unattested",
+        "name_english": "Santibanez de la Pena",
+        "type": "hillfort",
+        "province": "Tarraconensis",
+        "modern_location": "Santibanez de la Pena, Palencia, Spain",
+        "extant_117ce": true,
+        "notes": "La Loma sheltered the Camarici, a Cantabrian people, in one of the final holdouts of the Cantabrian Wars. Roman forces ringed the hillfort with seven separate camps linked by siege lines and stormed it around 25 BCE with a force researchers estimate at 12,000 to 18,000 soldiers. Excavators near the northeastern gate in 2020 found a fractured skull beneath collapsed rampart stones, evidence of the final assault. The burned, demolished fortifications stayed visible on the ridge under Trajan.",
+        "sources": [
+          "https://www.cambridge.org/core/journals/journal-of-roman-archaeology/article/human-skull-from-the-siege-of-la-loma-santibanez-de-la-pena-palencia-spain/3CE5DB9721111989F7AF483E9481559F",
+          "https://www.heritagedaily.com/2026/07/new-roman-military-camp-discovery-reveals-scale-of-cantabrian-wars-siege/158688"
+        ],
+        "confidence": "high",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5,
+          38.05
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_cigarralejo",
+        "culture": "iberian",
+        "name_latin": "Sanctuary and necropolis, native name unattested",
+        "name_english": "Mula",
+        "type": "sanctuary",
+        "province": "Tarraconensis",
+        "modern_location": "Mula, Murcia, Spain",
+        "extant_117ce": false,
+        "notes": "El Cigarralejo held an Iberian necropolis and, further up the same hillside, a sanctuary where worshippers buried hundreds of votive offerings beneath its floor. Most took the form of horses carved from local sandstone, some richly harnessed, made by sculptors of clearly different skill. Emeterio Cuadrado discovered the site in 1945 and spent the next 40 years excavating it. Votive activity at the sanctuary ended in the late second century BCE, and the site lay forgotten until his dig.",
+        "sources": [
+          "https://murciatoday.com/el-cigarralejo-iberian-site-mula_12786-a.html",
+          "https://murciatoday.com/museum-of-el-cigarralejo-mula_12788-a.html"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.48,
+          38.73
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_la_serreta",
+        "culture": "iberian",
+        "name_latin": "Contestani sanctuary and settlement, native name unattested",
+        "name_english": "Alcoy",
+        "type": "sanctuary",
+        "province": "Tarraconensis",
+        "modern_location": "Alcoy, Alicante, Spain",
+        "extant_117ce": true,
+        "notes": "La Serreta sat at the heart of Contestania, its hilltop settlement and sanctuary controlling farmland and trade routes between the coast and interior. Worshippers left terracotta figurines at its shrine to a goddess known locally as the Mother Goddess of La Serreta. Weapons from its necropolis date the site's use from the early fourth century BCE through the middle of the third. The sanctuary kept receiving offerings into the Roman period, still a working rural shrine under Trajan.",
+        "sources": [
+          "https://www.comunitatvalenciana.com/en/alacant-alicante/alcoi-alcoy/monuments/la-serreta",
+          "https://contestania.wordpress.com/about/la-serreta/"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.31,
+          38.44
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_coimbra_barranco_ancho",
+        "culture": "iberian",
+        "name_latin": "Contestani village and necropolis, native name unattested",
+        "name_english": "Jumilla",
+        "type": "necropolis",
+        "province": "Tarraconensis",
+        "modern_location": "Jumilla, Murcia, Spain",
+        "extant_117ce": false,
+        "notes": "Coimbra del Barranco Ancho combined an Iberian village with three separate cemeteries on the slopes of the Sierra de Santa Ana. Archaeologist Jeronimo Molina began digging there in 1956, and later excavations by Ana Maria Munoz Amilibia ran continuously from 1980 through 1986. One grave held a fretworked ceramic vase from the third century BCE, its feet modeled as wolf heads, prized for its craftsmanship. Iberian women there were buried with weapons, an unusual funerary practice.",
+        "sources": [
+          "https://www.um.es/cepoat/schoolofarchaeology/?page_id=171",
+          "https://es.wikipedia.org/wiki/Complejo_ib%C3%A9rico_de_Coimbra_del_Barranco_Ancho"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1611,
+          37.9506
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_verdolay",
+        "culture": "iberian",
+        "name_latin": "Sanctuary of La Luz and necropolis, native name unattested",
+        "name_english": "Murcia",
+        "type": "necropolis",
+        "province": "Tarraconensis",
+        "modern_location": "Murcia, Spain",
+        "extant_117ce": false,
+        "notes": "The Cabecico del Tesoro necropolis at Verdolay ranks among the richest sources of Iberian funerary art ever excavated, tied to the nearby sanctuary of La Luz. Generations of the region's Iberian population were buried there with painted pottery and carved grave goods. A later Islamic-period fortress, the Castle of Santa Catalina, rose directly between the necropolis and the sanctuary centuries afterward. The Iberian graves and shrine had fallen out of use well before Roman Murcia grew up nearby.",
+        "sources": [
+          "https://es.wikipedia.org/wiki/Verdolay",
+          "http://lab.patrimoniointeligente.com/verdolay14/articulos/V14_JAOI.pdf"
+        ],
+        "confidence": "low",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4728,
+          38.3608
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_lucentum",
+        "culture": "iberian",
+        "name_latin": "Lucentum",
+        "name_english": "Alicante",
+        "type": "city",
+        "province": "Tarraconensis",
+        "modern_location": "Alicante, Spain",
+        "extant_117ce": true,
+        "notes": "An Iberian settlement occupied the hilltop of Tossal de Manises from around 400 BCE before Rome built Lucentum directly over it, reusing the earlier Iberian walls as its own foundation. The Roman city became a municipium under Augustus and stretched behind walls 600 meters around. Its street grid, bathhouses, forum, and a colonnaded house survive intact within that walled perimeter. Almost nothing of the Iberian layer stayed visible by Trajan's day beyond the reused wall line.",
+        "sources": [
+          "https://www.marqalicante.com/en/Paginas/es/Tossal-de-Manises-P20-M10.html/",
+          "https://en.wikipedia.org/wiki/Lucentum"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tossal-vaso-huevo.jpg?width=800",
+        "image_credit": "Egg-shaped vase excavated at Tossal de Manises, the site of Iberian and Roman Lucentum. Wikimedia Commons."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.5686,
+          41.1972
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_calafell",
+        "culture": "iberian",
+        "name_latin": "Cossetani coastal village, native name unattested",
+        "name_english": "Calafell",
+        "type": "oppidum",
+        "province": "Tarraconensis",
+        "modern_location": "Calafell, Tarragona, Spain",
+        "extant_117ce": true,
+        "notes": "A fortified Cossetani village stood on this seafront ridge from the sixth century BCE until the Second Punic War brought its abandonment. Excavations begun in the 1990s recovered the original house foundations and towers, which archaeologists rebuilt in place using experimental methods between 1992 and 1994. Visitors today climb a replica siege tower against the same walls the Cossetani once defended. The ancient ramparts' low stone footings stayed exposed for centuries after the village fell.",
+        "sources": [
+          "https://www.penedesturisme.cat/en/what-to-do/iberian-citadel-calafell",
+          "https://es.wikipedia.org/wiki/Ciudadela_ib%C3%A9rica_de_Calafell"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.4014,
+          39.6386
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_el_molon",
+        "culture": "iberian",
+        "name_latin": "Border hillfort, native name unattested",
+        "name_english": "Camporrobles",
+        "type": "hillfort",
+        "province": "Tarraconensis",
+        "modern_location": "Camporrobles, Valencia, Spain",
+        "extant_117ce": true,
+        "notes": "El Molon crowned a limestone plateau at 900 meters elevation, marking the frontier where Iberian territory met the Celtiberians to the north. Its Iberian occupants, active from the seventh through first century BCE, carved cisterns into the bedrock and built a winery on the upper terrace known as Gallarda. The fortified settlement controlled the land from three defended zones along the ridge. Its walls and rock-cut cisterns stayed exposed on the plateau for generations under Roman rule.",
+        "sources": [
+          "https://www.academia.edu/12444394/El_Mol%C3%B3n_Camporrobles_Valencia_y_su_territorio_Fortificaciones_y_paisaje_fortificado_de_un_espacio_de_frontera",
+          "https://turisme.dival.es/en/destino/camporrobles/"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.1697,
+          43.2967
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_enserune",
+        "culture": "iberian",
+        "name_latin": "Elisyces oppidum",
+        "name_english": "Enserune",
+        "type": "oppidum",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Nissan-lez-Enserune, Herault, France",
+        "extant_117ce": true,
+        "notes": "Enserune belonged to the Elisyces, an Ibero-Ligurian people whose hilltop town absorbed Greek, Iberian, Celtic, and Etruscan influence on a trade route linking Iberia to Italy. Its necropolis held roughly 500 cremation graves furnished with one of Iron Age southern Gaul's largest weapon collections. The settlement stayed occupied from the sixth century BCE into the first century CE. Its stone terraces and grain silos stayed visible as Rome's power in Gaul peaked under Trajan.",
+        "sources": [
+          "https://museedupatrimoine.fr/musee-de-l-oppidum-d-enserune-herault/34203.html",
+          "https://www.enserune.fr/en/discover/focus-on-the-collections"
+        ],
+        "confidence": "medium",
+        "image_url": null,
+        "image_credit": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.9447,
+          37.2614
+        ]
+      },
+      "properties": {
+        "id": "substrate_iberian_cabezo_san_pedro",
+        "culture": "iberian",
+        "name_latin": "Onuba",
+        "name_english": "Huelva",
+        "type": "city",
+        "province": "Baetica",
+        "modern_location": "Huelva, Spain",
+        "extant_117ce": false,
+        "notes": "Cabezo de San Pedro has been continuously inhabited since at least the first millennium BCE, one of the oldest settled spots in western Europe. Archaeologist Diego Ruiz Mata uncovered a Tartessian retaining wall at its summit in 1978, built with Phoenician construction techniques and dated to the tenth century BCE. Roman Onuba, and later an Andalusian citadel, rose directly on top of that ancient wall. By Trajan's reign the Tartessian foundations lay buried beneath the working Roman port town.",
+        "sources": [
+          "https://turismo.huelva.es/en/discover-us/san-pedros-wall",
+          "https://www.huelva24.com/cultura/cabezo-san-pedro-piedra-angular-huelva-reivindique-20260320174137-nth.html"
+        ],
+        "confidence": "low",
+        "image_url": null,
+        "image_credit": null
+      }
     }
   ]
 }
