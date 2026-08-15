@@ -1893,6 +1893,75 @@ export default function Map() {
           kick();
         }
 
+        // Phase 28: Crop/agriculture zones (public/data/agriculture.geojson) — grain, olive-oil,
+        // wine, and timber belts (axis 7a). Soft translucent fills, same visual family as the
+        // Phase 25 language belts, colored by `commodity` rather than by language.
+        const agriculture = await fetch("/data/agriculture.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && agriculture) {
+          map.addSource("agriculture", { type: "geojson", data: agriculture });
+          const agricultureColors: any = [
+            "match",
+            ["get", "commodity"],
+            "grain", "#c9a227",
+            "olive_oil", "#5c8c3a",
+            "wine", "#8b2e6e",
+            "timber", "#4a5057",
+            "#6a6a6a",
+          ];
+          map.addLayer({
+            id: "agriculture-fill",
+            type: "fill",
+            source: "agriculture",
+            paint: {
+              "fill-color": agricultureColors,
+              "fill-opacity": 0.16,
+            },
+          });
+          map.addLayer({
+            id: "agriculture-line",
+            type: "line",
+            source: "agriculture",
+            paint: {
+              "line-color": agricultureColors,
+              "line-width": 1,
+              "line-dasharray": [3, 2],
+              "line-opacity": 0.5,
+            },
+          });
+
+          const commodityLabel: Record<string, string> = {
+            grain: "Grain belt",
+            olive_oil: "Olive-oil belt",
+            wine: "Wine region",
+            timber: "Timber zone",
+          };
+          const agriculturePopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          map.on("mouseenter", "agriculture-fill", (e) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.one_line)}</div>` : "";
+            agriculturePopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(commodityLabel[p.commodity] || p.commodity || "")}</div>
+                   ${noteLine}
+                 </div>`,
+              )
+              .addTo(map);
+          });
+          map.on("mouseleave", "agriculture-fill", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          kick();
+        }
+
         // Apply any persisted Layers-panel visibility (all groups default visible).
         applyAllLayers();
       });

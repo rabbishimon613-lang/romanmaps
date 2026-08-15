@@ -1,0 +1,1044 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_egypt_grain",
+        "name": "Egypt grain belt",
+        "commodity": "grain",
+        "provinces": "Aegyptus (Nile Delta and Nile Valley)",
+        "one_line": "Egypt's Nile floodplain fed Rome for roughly four months of every year, shipped north through Alexandria's twin harbors. Grain freighters like the Isis could carry over 1,200 tons in a single hold, a capacity no ship matched again until the 1800s. Augustus made Egypt his personal province precisely to guard this lifeline, and a bad Nile flood meant hunger in the streets of Rome.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Alexandria_Port",
+          "https://en.wikipedia.org/wiki/Isis_(ship)",
+          "https://en.wikipedia.org/wiki/Cura_Annonae"
+        ],
+        "confidence": "high"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              29.8,
+              31.6
+            ],
+            [
+              32.5,
+              31.6
+            ],
+            [
+              32.9,
+              30.0
+            ],
+            [
+              32.9,
+              27.0
+            ],
+            [
+              33.2,
+              24.5
+            ],
+            [
+              33.0,
+              23.8
+            ],
+            [
+              32.4,
+              24.0
+            ],
+            [
+              32.2,
+              25.5
+            ],
+            [
+              31.5,
+              27.5
+            ],
+            [
+              31.0,
+              29.0
+            ],
+            [
+              30.3,
+              30.5
+            ],
+            [
+              29.8,
+              31.0
+            ],
+            [
+              29.8,
+              31.6
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_africa_grain",
+        "name": "Africa Proconsularis grain belt",
+        "commodity": "grain",
+        "provinces": "Africa Proconsularis (coastal and interior Tunisia, NE Algeria)",
+        "one_line": "Africa Proconsularis grew enough rain-fed wheat to feed Rome for eight months of the year, complementing Egypt's four. Strabo, Pliny, and Josephus all praised the quality of its grain, grown on latifundia across the fertile Byzacena and Zeugitana districts. Convoys of grain ships left Carthage's hinterland ports for the Tiber every sailing season.",
+        "sources": [
+          "https://www.unrv.com/articles/why-north-africa-became-romes-breadbasket.php",
+          "https://www.worldhistory.org/article/1331/north-africas-place-in-the-mediterranean-economy-o/"
+        ],
+        "confidence": "high"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.0,
+              37.2
+            ],
+            [
+              8.5,
+              37.3
+            ],
+            [
+              10.0,
+              37.0
+            ],
+            [
+              11.0,
+              36.8
+            ],
+            [
+              11.3,
+              35.5
+            ],
+            [
+              10.5,
+              34.0
+            ],
+            [
+              9.5,
+              33.5
+            ],
+            [
+              8.0,
+              34.0
+            ],
+            [
+              7.0,
+              35.0
+            ],
+            [
+              6.5,
+              36.0
+            ],
+            [
+              7.0,
+              37.2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_sicily_grain",
+        "name": "Sicily grain belt",
+        "commodity": "grain",
+        "provinces": "Sicilia",
+        "one_line": "Sicily was Rome's original grain island, feeding the city for two centuries before Egypt entered the picture. Prosecuting the corrupt governor Verres in 70 BCE, Cicero called the island 'a nurturer of our populace, a granary for our provinces.' Verres extorted so much grain from Sicilian farmers that output collapsed, a scandal serious enough to end his career.",
+        "sources": [
+          "https://www.philipharland.com/Blog/2022/10/sicilians-and-other-greeks-ciceros-praise-for-sicilians-in-the-prosecution-of-verres-mid-first-century-bce/",
+          "https://en.wikipedia.org/wiki/Gaius_Verres"
+        ],
+        "confidence": "high"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.4,
+              38.2
+            ],
+            [
+              13.5,
+              38.3
+            ],
+            [
+              15.0,
+              38.2
+            ],
+            [
+              15.6,
+              38.0
+            ],
+            [
+              15.5,
+              37.0
+            ],
+            [
+              15.1,
+              36.7
+            ],
+            [
+              14.0,
+              36.7
+            ],
+            [
+              12.7,
+              37.5
+            ],
+            [
+              12.4,
+              38.2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_baetica_grain",
+        "name": "Baetica grain belt",
+        "commodity": "grain",
+        "provinces": "Hispania Baetica (Guadalquivir valley, modern Andalusia)",
+        "one_line": "The Guadalquivir valley grew so much wheat and barley that Baetica ranked among the empire's breadbaskets by the 2nd century, alongside its famous oil and wine. Grain barges moved downriver to the Atlantic port of Hispalis (Seville) for onward shipment. Roman surveyors laid its fields out in a centuriated grid whose lines still show up in aerial photographs of Andalusia today.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Hispania_Baetica",
+          "https://www.spainthenandnow.com/spanish-culture/food-from-early-days-to-the-romans"
+        ],
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -6.3,
+              38.3
+            ],
+            [
+              -5.5,
+              38.5
+            ],
+            [
+              -4.5,
+              38.3
+            ],
+            [
+              -3.5,
+              38.0
+            ],
+            [
+              -2.8,
+              37.5
+            ],
+            [
+              -3.5,
+              36.8
+            ],
+            [
+              -5.0,
+              36.7
+            ],
+            [
+              -6.3,
+              36.9
+            ],
+            [
+              -6.8,
+              37.5
+            ],
+            [
+              -6.3,
+              38.3
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_pannonia_grain",
+        "name": "Pannonia grain belt",
+        "commodity": "grain",
+        "provinces": "Pannonia Superior, Pannonia Inferior (Danube plain)",
+        "one_line": "The Danube plains of Pannonia carried wheat, spelt, and barley from imperial estates to the legion camps strung along the frontier. Barges floated grain downriver to feed forts from Vindobona to Aquincum, tying the frontier's food supply to its own farmland. Excavated ovens at Roman Mursa (Osijek) held some 24,000 charred cereal grains, a direct snapshot of one harvest.",
+        "sources": [
+          "https://link.springer.com/article/10.1007/s00334-021-00858-7",
+          "https://www.academia.edu/43248664/The_Roman_Food_System_in_Southern_Pannonia_Croatia_From_the_1_st_4_th_Century_A_D"
+        ],
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.0,
+              47.8
+            ],
+            [
+              18.5,
+              47.9
+            ],
+            [
+              20.5,
+              46.5
+            ],
+            [
+              19.5,
+              45.2
+            ],
+            [
+              18.0,
+              45.0
+            ],
+            [
+              16.5,
+              45.8
+            ],
+            [
+              15.8,
+              46.8
+            ],
+            [
+              16.0,
+              47.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_baetica_olive",
+        "name": "Baetica olive belt",
+        "commodity": "olive_oil",
+        "provinces": "Hispania Baetica (Guadalquivir and Genil valleys)",
+        "one_line": "Baetica supplied more olive oil to Rome than any other province, shipped north in globular Dressel 20 jars stamped with the producer's name. Broken amphorae from this one trade route built Monte Testaccio, an artificial hill in Rome over 35 meters tall made of an estimated 53 million discarded oil jars. More than 80 percent of that hill came from Baetica alone.",
+        "sources": [
+          "https://www.oliveoiltimes.com/world/monte-testaccio-remnants-ancient-trade/46185",
+          "https://www.historyskills.com/classroom/ancient-history/monte-testaccio/"
+        ],
+        "confidence": "high"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -6.5,
+              38.0
+            ],
+            [
+              -5.3,
+              38.3
+            ],
+            [
+              -4.2,
+              38.0
+            ],
+            [
+              -3.3,
+              37.6
+            ],
+            [
+              -3.0,
+              37.0
+            ],
+            [
+              -4.5,
+              36.6
+            ],
+            [
+              -6.0,
+              36.7
+            ],
+            [
+              -6.8,
+              37.3
+            ],
+            [
+              -6.5,
+              38.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_tripolitania_olive",
+        "name": "Tripolitania olive belt",
+        "commodity": "olive_oil",
+        "provinces": "Africa (Tripolitania, Leptis Magna hinterland)",
+        "one_line": "The dry Tarhuna plateau behind Leptis Magna was covered in olive groves worked by tenant farmers on estates owned by the city's elite. Archaeologist Richard Goodchild counted over 200 individual olive-press ruins scattered across that one hinterland district alone. Julius Caesar once fined Leptis three million pounds of oil as a war indemnity, implying roughly a million bearing trees already stood in the ground.",
+        "sources": [
+          "https://www.romanports.org/en/articles/human-interest/337-farm-the-desert-to-illuminate-rome.html",
+          "https://erenow.org/ancient/cities-that-shaped-the-ancient-world/20.php"
+        ],
+        "confidence": "high"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.5,
+              32.9
+            ],
+            [
+              13.5,
+              33.0
+            ],
+            [
+              14.3,
+              32.7
+            ],
+            [
+              14.2,
+              31.8
+            ],
+            [
+              13.3,
+              31.5
+            ],
+            [
+              12.3,
+              31.9
+            ],
+            [
+              12.0,
+              32.5
+            ],
+            [
+              12.5,
+              32.9
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_istria_olive",
+        "name": "Istria olive belt",
+        "commodity": "olive_oil",
+        "provinces": "Italia (Regio X, Istrian peninsula)",
+        "one_line": "Istria's red soil produced an olive oil the Romans ranked among the finest in the empire, exported in amphorae made from local clay at kilns like Fazana. Villas rustica lined the peninsula's coast to process and ship the harvest straight from the groves. Sunken amphorae still turn up on the Adriatic seabed off Pula, wrecks from the oil convoys that once left its harbor.",
+        "sources": [
+          "https://www.istra.hr/en/gourmet/evoo/istrian-olive-oil",
+          "https://vjesnik.com.au/2026/07/beneath-the-pula-arena-discovering-the-ancient-world-of-amphorae-olive-oil-and-wine/"
+        ],
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.5,
+              45.7
+            ],
+            [
+              13.9,
+              45.5
+            ],
+            [
+              14.3,
+              45.3
+            ],
+            [
+              14.5,
+              44.9
+            ],
+            [
+              14.0,
+              44.8
+            ],
+            [
+              13.6,
+              45.0
+            ],
+            [
+              13.3,
+              45.3
+            ],
+            [
+              13.5,
+              45.7
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_attica_olive",
+        "name": "Attica olive belt",
+        "commodity": "olive_oil",
+        "provinces": "Achaia (Attica)",
+        "one_line": "Attica's olive groves were Athens's oldest export industry, protected since Solon banned exporting any other farm produce to preserve them for oil. The sacred olive on the Acropolis, said to be Athena's own gift to the city, stood before the Erechtheion as a living civic symbol. Victors at the Panathenaic Games still went home with amphorae brimming with Attic oil as their prize.",
+        "sources": [
+          "https://greekreporter.com/2025/11/02/how-ancient-athens-protected-olive-groves/",
+          "https://brewminate.com/olive-tree-ancient-athens/"
+        ],
+        "confidence": "high"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              23.3,
+              38.3
+            ],
+            [
+              23.9,
+              38.3
+            ],
+            [
+              24.1,
+              38.0
+            ],
+            [
+              24.0,
+              37.6
+            ],
+            [
+              23.6,
+              37.6
+            ],
+            [
+              23.3,
+              37.8
+            ],
+            [
+              23.1,
+              38.0
+            ],
+            [
+              23.3,
+              38.3
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_syria_olive",
+        "name": "Syria olive belt",
+        "commodity": "olive_oil",
+        "provinces": "Syria (coastal hinterland and northern limestone hills)",
+        "one_line": "Syria's coastal hills and the limestone uplands inland from Antioch carried olive groves worked with rock-cut presses suited to the rugged terrain. Farmers at sites like Majduliyya in the Golan cut crushing basins straight into bedrock rather than build separate press houses. Production served the province's own large population first, with Antioch itself among its biggest markets.",
+        "sources": [
+          "https://grdspublishing.org/index.php/people/article/view/3056",
+          "https://www.academia.edu/171205821/Olive_presses_from_the_Roman_period_at_Majduliyya_and_their_significance_for_understanding_olive_oil_production_in_rural_Golan"
+        ],
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.7,
+              36.2
+            ],
+            [
+              36.5,
+              36.5
+            ],
+            [
+              37.0,
+              36.2
+            ],
+            [
+              37.0,
+              35.5
+            ],
+            [
+              36.3,
+              35.2
+            ],
+            [
+              35.7,
+              35.5
+            ],
+            [
+              35.5,
+              35.9
+            ],
+            [
+              35.7,
+              36.2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_falernian_wine",
+        "name": "Falernian wine belt",
+        "commodity": "wine",
+        "provinces": "Latium/Campania border (Monte Massico)",
+        "one_line": "The slopes of Mount Falernus produced the wine Roman poets ranked above every other vintage in Italy. Pliny the Elder distinguished three separate crus by altitude on the same hillside, and Horace, Martial, and Catullus all wrote it into verse. The best vintages reportedly aged for a century and were said to be strong enough to catch fire near an open flame.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Falernian_wine",
+          "https://worldoffinewine.com/news-features/falernian-wine"
+        ],
+        "confidence": "high"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.6,
+              41.5
+            ],
+            [
+              14.1,
+              41.5
+            ],
+            [
+              14.4,
+              41.2
+            ],
+            [
+              14.3,
+              40.7
+            ],
+            [
+              14.0,
+              40.6
+            ],
+            [
+              13.6,
+              40.9
+            ],
+            [
+              13.4,
+              41.2
+            ],
+            [
+              13.6,
+              41.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_aegean_wine",
+        "name": "Chian and Lesbian wine islands",
+        "commodity": "wine",
+        "provinces": "Asia (Chios), Asia (Lesbos)",
+        "one_line": "Chios and Lesbos exported the most sought-after wines of the Greek Aegean, shipped west in amphorae stamped with each island's own seal. Chios marked its jars with a sphinx to stop mainland forgeries, and its wine was poured at four separate Roman triumphs, the first foreign vintage ever served at one. Lesbian wine had rivaled Chian since Homer's day and stayed prized through the 2nd century.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Chian_wine",
+          "https://en.wikipedia.org/wiki/Lesbian_wine"
+        ],
+        "confidence": "high"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                26.0,
+                38.6
+              ],
+              [
+                26.3,
+                38.6
+              ],
+              [
+                26.3,
+                38.2
+              ],
+              [
+                26.0,
+                38.0
+              ],
+              [
+                25.8,
+                38.3
+              ],
+              [
+                26.0,
+                38.6
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                25.9,
+                39.5
+              ],
+              [
+                26.6,
+                39.4
+              ],
+              [
+                26.6,
+                39.0
+              ],
+              [
+                26.0,
+                39.0
+              ],
+              [
+                25.8,
+                39.2
+              ],
+              [
+                25.9,
+                39.5
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_rhaetic_wine",
+        "name": "Rhaetic wine belt",
+        "commodity": "wine",
+        "provinces": "Italia (Regio X, foothills around Verona)",
+        "one_line": "The vineyards around Verona, in the Alpine foothills bordering Rhaetia, produced a wine Virgil ranked second only to Falernian in the Georgics, telling growers not to 'rival Falernian cellars' with it, high praise by that comparison alone. The grape could not be cultivated successfully outside this one hill district. Modern Refosco is thought to descend from the same vine.",
+        "sources": [
+          "https://www.poetryintranslation.com/PITBR/Latin/VirgilGeorgicsII.php",
+          "https://penelope.uchicago.edu/~grout/encyclopaedia_romana/wine/vintage.html"
+        ],
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.5,
+              45.7
+            ],
+            [
+              11.2,
+              45.9
+            ],
+            [
+              11.7,
+              45.7
+            ],
+            [
+              11.5,
+              45.3
+            ],
+            [
+              10.9,
+              45.2
+            ],
+            [
+              10.4,
+              45.4
+            ],
+            [
+              10.5,
+              45.7
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_vienne_wine",
+        "name": "Vienne wine district",
+        "commodity": "wine",
+        "provinces": "Gallia Narbonensis (Vienna/Vienne, Rhone valley)",
+        "one_line": "Vienne, once capital of the Gallic Allobroges before becoming a Roman colony, grew a black grape Pliny the Elder called the allobrogica, prized for its heavy yield and cold tolerance. Martial nicknamed the town 'wine-flavored' in his epigrams. Vineyards along the Rhone at Vienne and neighboring Seyssuel mark one of the earliest expansions of viticulture into Roman Gaul.",
+        "sources": [
+          "https://en.vienne-condrieu.com/inspiration/vineyards/",
+          "https://www.livius.org/articles/place/vienna-vienne/"
+        ],
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.7,
+              45.7
+            ],
+            [
+              5.1,
+              45.7
+            ],
+            [
+              5.3,
+              45.4
+            ],
+            [
+              5.0,
+              45.0
+            ],
+            [
+              4.6,
+              45.1
+            ],
+            [
+              4.5,
+              45.4
+            ],
+            [
+              4.7,
+              45.7
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_baetica_wine",
+        "name": "Baetica wine belt",
+        "commodity": "wine",
+        "provinces": "Hispania Baetica (Guadalquivir valley)",
+        "one_line": "Baetica exported wine alongside its famous olive oil, packed into distinctive ovoid amphorae and floated down the Guadalquivir and Genil to Atlantic ports. Residue analysis of Late Republican Baetican jars has confirmed grape derivatives sealed with pine-resin pitch, the standard Roman method for waterproofing a cask. By the 2nd century Baetica shipped wine as far as Britain and the Rhine frontier alongside its oil.",
+        "sources": [
+          "https://www.tandfonline.com/doi/abs/10.1080/14614103.2020.1867291",
+          "https://www.academia.edu/12404660/M%C3%B6ssbauer_XRD_and_XRF_Study_of_Roman_Amphorae_and_Amphora_Kilns_from_the_Roman_Provinces_of_Baetica_and_Lusitania_and_Clays"
+        ],
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -6.6,
+              38.1
+            ],
+            [
+              -5.6,
+              38.4
+            ],
+            [
+              -4.3,
+              38.1
+            ],
+            [
+              -3.2,
+              37.7
+            ],
+            [
+              -3.0,
+              37.1
+            ],
+            [
+              -4.3,
+              36.6
+            ],
+            [
+              -6.1,
+              36.6
+            ],
+            [
+              -6.9,
+              37.4
+            ],
+            [
+              -6.6,
+              38.1
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_hercynian_timber",
+        "name": "Hercynian Forest timberland",
+        "commodity": "timber",
+        "provinces": "Free Germania beyond the Rhine/Danube frontier",
+        "one_line": "Tacitus described the Hercynian Forest as a vast wooded belt running nine days' march wide and sixty long along Rome's Germanic frontier. Garrisons on the Rhine and Danube limes cut its oak and fir for fort palisades, bridge piles, and firewood. The forest marked the edge of directly governed territory, real timber wealth just beyond ground Rome never fully annexed.",
+        "sources": [
+          "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0083",
+          "https://en.wikipedia.org/wiki/Hercynian_Forest"
+        ],
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              50.5
+            ],
+            [
+              11.0,
+              51.0
+            ],
+            [
+              13.5,
+              50.5
+            ],
+            [
+              14.5,
+              49.5
+            ],
+            [
+              13.0,
+              48.0
+            ],
+            [
+              10.5,
+              47.8
+            ],
+            [
+              8.5,
+              48.5
+            ],
+            [
+              7.5,
+              49.5
+            ],
+            [
+              8.0,
+              50.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_lebanon_cedar",
+        "name": "Lebanon cedar forest",
+        "commodity": "timber",
+        "provinces": "Syria (Mount Lebanon range)",
+        "one_line": "The cedars of Mount Lebanon had supplied Mediterranean shipbuilders and temple-builders for two thousand years before Rome arrived, prized for wood that resists both rot and insects. Roman engineers cut the forest for ship timber and monumental roof beams across Syria and beyond. So much first-growth cedar was felled over the centuries that only isolated stands survive on the mountain today.",
+        "sources": [
+          "https://followinghadrian.com/2019/10/15/the-forest-inscriptions-of-hadrian-in-mount-lebanon/",
+          "https://mandalaprojects.com/ice/ice-cases/cedars.htm"
+        ],
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.8,
+              34.3
+            ],
+            [
+              36.2,
+              34.2
+            ],
+            [
+              36.3,
+              33.7
+            ],
+            [
+              36.0,
+              33.3
+            ],
+            [
+              35.7,
+              33.5
+            ],
+            [
+              35.6,
+              34.0
+            ],
+            [
+              35.8,
+              34.3
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_corsica_timber",
+        "name": "Corsica pine forest",
+        "commodity": "timber",
+        "provinces": "Corsica",
+        "one_line": "Corsica's interior mountains grew tall stands of pine and fir that Roman shipwrights prized for masts and hull timber. The naturalist Theophrastus recorded Romans hauling Corsican logs to Italy lashed into one giant raft rigged with as many as fifty masts and sails. The island's straight, resin-rich trunks kept supplying western Mediterranean fleets for centuries.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Timber_rafting",
+          "https://kosmossociety.chs.harvard.edu/trees-and-wood-part-2-theophrastus-on-the-uses-of-timber/"
+        ],
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.9,
+              42.6
+            ],
+            [
+              9.3,
+              42.6
+            ],
+            [
+              9.5,
+              42.2
+            ],
+            [
+              9.4,
+              41.7
+            ],
+            [
+              9.0,
+              41.6
+            ],
+            [
+              8.7,
+              42.0
+            ],
+            [
+              8.7,
+              42.4
+            ],
+            [
+              8.9,
+              42.6
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

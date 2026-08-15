@@ -31,7 +31,8 @@ export type LayerGroupId =
   | "neighbors"
   | "languages"
   | "substrate"
-  | "conventus";
+  | "conventus"
+  | "agriculture";
 
 export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: string[] }[] = [
   { id: "roads", label: "Roads", mapLayerIds: ["roads-main", "roads-secondary"] },
@@ -65,6 +66,7 @@ export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: strin
   { id: "languages", label: "Language belts", mapLayerIds: ["languages-fill", "languages-line"] },
   { id: "substrate", label: "Pre-Roman substrate", mapLayerIds: ["substrate-point"] },
   { id: "conventus", label: "Conventus centers (Asia)", mapLayerIds: ["conventus-point"] },
+  { id: "agriculture", label: "Crop & agriculture zones", mapLayerIds: ["agriculture-fill", "agriculture-line"] },
 ];
 
 type LayerState = Record<LayerGroupId, boolean>;
