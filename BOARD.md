@@ -107,12 +107,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       replace any modern photograph showing modern infrastructure. Cotinae is the test case.
 - [ ] `[05-P0-1]` **`places-in-view-list`** `polish` — Accessible, keyboard-navigable list of
       places in the current viewport; doubles as the browse UI.
-- [ ] `[10-P0-1]` **`tours`** `add` — Guided-tour format + player + first three tours
-      (Via Appia · A day in Ostia · What was new in 117). Skipped by cloud shift 3, 2026-08-16:
-      a new player UI + 3 curated tours is a multi-part feature with real phone-layout risk
-      (invariant 0) that didn't look finishable cleanly in the shift's remaining time; picked
-      `[14-P0-2]` instead as the safer same-priority `add` that reuses the proven `/site/[slug]`
-      pattern. Still open, still topmost `add` — next `add` turn should try it first.
+- [~] `[10-P0-1]` **`tours`** `add` — claimed by cloud shift 4, 2026-08-16 15:35. Guided-tour
+      format + player + first three tours (Via Appia · A day in Ostia · What was new in 117).
 - [x] `[14-P0-2]` **`place-pages`** `add` — Done 2026-08-16 by cloud shift 3. New
       `app/place/[slug]/page.tsx`, statically generated for all 467 `pois.geojson` records
       (`/site/[slug]`'s pattern extended — hero image + About/What-happened-here/In-ancient-
