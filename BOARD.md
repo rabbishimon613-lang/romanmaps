@@ -91,7 +91,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       written: it builds markers from a direct `fetch()` of the geojson, never from a Maplibre
       click query, so `props.sources` is always a real array on that path, never stringified.
       No other live instance found — closing rather than leaving open on a hypothetical.
-- [ ] `[12-FIX-2]` **`brigetio-stacked-pins`** `fix` — `poi_fortress_i_adiutrix_brigetio` and
+- [~] `[12-FIX-2]` **`brigetio-stacked-pins`** `fix` — claimed by cloud shift 3, 2026-08-16 12:40.
+      `poi_fortress_i_adiutrix_brigetio` and
       `poi_fortress_xxx_ulpia_victrix_brigetio` sit on the identical coordinate, so one pin is
       permanently unreachable under the other. Both records are correct; the placement is not.
       Offset one, or merge them into a single fortress record carrying both garrisons. Check
