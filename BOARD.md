@@ -140,9 +140,24 @@ to prevent. Building locally to *test* your own work is expected and fine.
       was offered for. 85 high-confidence POIs remain open — mostly tombs, villas, and
       single-purpose industrial sites with no text naming them directly; expect a continued low
       hit rate there and skip rather than stretch.*
-- [~] `[06-P0-2]` **`curate-buildings`** `deepen` — claimed by cloud shift 3, 2026-08-16 13:05
-      (Pompeii). Ostia-depth curated descriptions for the
-      other 39 sites, ~10 buildings/day. **Standing task.**
+- [x] `[06-P0-2]` **`curate-buildings`** `deepen` — Ostia-depth curated descriptions for the
+      other 39 sites, ~10 buildings/day. **Standing task, never "done".**
+      *Pompeii done 2026-08-16 by cloud shift 3: 28 buildings in `app/pompeiiDescriptions.ts`
+      (House of the Faun, Temple of Apollo, the Forum and its temples, the three bath complexes,
+      the Brothel, named houses on Via dell'Abbondanza and elsewhere), same pattern as
+      `ostiaDescriptions.ts`. 2 of 30 researched buildings dropped on review for confidence/
+      conflation reasons — see commit for specifics.*
+      **Real bug found and fixed in the same pass, site-wide, not Pompeii-only**: several sites'
+      Overpass fetches mix each park's own boundary polygon and (Ostia, Pompeii) "Regio"-numbered
+      district outlines into the *same* source as individual named buildings. Whichever renders
+      later in the source's feature array draws on top and permanently swallows clicks meant for
+      the specific building underneath — confirmed this was silently breaking the curated-Pompeii
+      content before the fix (every click returned the generic "detailed archaeology in progress"
+      fallback). Fixed at the render layer, not the data: the building-fill click handler now
+      ranks every feature under the click point by polygon area and picks the smallest, which is
+      reliably the actual building meant — future-proof against new Overpass pulls. Verified with
+      Playwright against both Pompeii's new content and three known-good Ostia buildings (no
+      regression). 39 sites still open for the standing task.
 - [ ] `[15-P0-1]` **`unattended-screenshot-gate`** `fix` — ⚠️ **This blocks the daily pass from
       taking any UI ticket at all.** The gate below requires a screenshot at 375×812 dark and at
       desktop light, but the 09:30 editorial pass runs unattended and a dev server cannot be
@@ -274,11 +289,18 @@ to prevent. Building locally to *test* your own work is expected and fine.
   `pois.geojson` records, `/site/[slug]`'s pattern extended (hero/fallback, About/What-happened/
   In-ancient-writing/Sources, JSON-LD, OG/Twitter, map round-trip link). `sitemap.ts` now lists
   507 URLs. `[10-P0-1]` tours was skipped this run — see that ticket's own note for why.
+- 2026-08-16 · `[06-P0-2]` curate-buildings (Pompeii) · cloud shift 3. 28 buildings in
+  `app/pompeiiDescriptions.ts`. Found and fixed a site-wide click-priority bug in the same pass
+  (oversized boundary/district polygons were swallowing clicks meant for the building underneath)
+  — see ticket note above.
 
 **Ratio state after this run:** cloud shift 3 shipped 1 `polish` (`[11-P0-1]` split-site-data),
-1 `deepen` (`[09-P0-1]` ancient-sources batch 2), and 1 `add` (`[14-P0-2]` place-pages) — a full
-add/deepen cycle in one run — plus one off-ratio `fix` (`[12-FIX-2]`, found while auditing for
-the polish ticket). **The next run owes a second `deepen`** to complete the 1:2:1 cycle.
+2 `deepen` (`[09-P0-1]` ancient-sources batch 2, `[06-P0-2]` curate-buildings/Pompeii), and 1
+`add` (`[14-P0-2]` place-pages) — a complete 1:2:1 cycle in one run — plus one off-ratio `fix`
+(`[12-FIX-2]`, found while auditing for the polish ticket) and a second, unplanned `fix` (the
+click-priority bug, found while verifying the second deepen ticket). **The next run starts a
+fresh cycle: topmost `add` first** (`[10-P0-1]` tours is next in priority order, per its own
+skip note above).
 
 **Note on `[15-P0-1]` for future runs:** the visual gate is only unreachable from the *Mac-side
 unattended editorial routine*, which has no way to launch a dev server or a browser. A cloud
@@ -290,9 +312,8 @@ and desktop light. Cloud shifts should treat `polish` tickets as fully available
 this run cleared one that way. `[15-P0-1]` itself stays open; it's specifically about giving the
 *unattended* routine a static harness, which is a different problem.
 
-**Skipped this run, with reason:** `[06-P0-2]` curate-buildings was next by priority among
-`deepen` tickets and was passed over. Extending Ostia's curated descriptions to a second site
-means keying new entries against OSM building names inside a 21 MB file *and* changing the
-popup path in `Map.tsx` — a UI change, and the visual gate could not be met (`[15-P0-1]`).
-Shipping that blind is exactly the failure mode the gate exists to prevent. It is untouched and
-still available.
+**`[06-P0-2]` curate-buildings, previously skipped for a visual-gate concern that no longer
+applies, cleared 2026-08-16 by cloud shift 3** — see the ticket's own note above. Since
+`[11-P0-1]`'s per-site split, the 21MB combined file this was skipped over no longer exists;
+`public/data/sites/pompeii_buildings.geojson` alone was small enough to key entries against
+directly.
