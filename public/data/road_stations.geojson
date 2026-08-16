@@ -622,6 +622,841 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.4414,
+          41.3231
+        ]
+      },
+      "properties": {
+        "id": "station_dyrrachium",
+        "category": "mansio",
+        "name": "Dyrrachium",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 0,
+        "identified": true,
+        "notes": "Dyrrachium, modern Durrës, was the Adriatic terminus of the Via Egnatia and the main port linking Italy to the Balkans; travelers from Brundisium landed here to start the overland road east. The Romans took the city (originally the Greek colony Epidamnos) under their protection in 229 BCE and it grew into a major military and commercial hub of Illyricum.",
+        "sources": [
+          "Itin. Ant. 317",
+          "https://en.wikipedia.org/wiki/Durr%C3%ABs"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.4727,
+          40.7217
+        ]
+      },
+      "properties": {
+        "id": "station_apollonia_illyria",
+        "category": "mansio",
+        "name": "Apollonia",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 0,
+        "identified": true,
+        "notes": "This Apollonia in Illyria was the road's second Adriatic starting point, a short march south of Dyrrachium, and its branch of the Via Egnatia joined the main line at Ad Quintum. The city was a renowned center of learning where the young Octavian was studying under Athenodorus when news of Caesar's assassination reached him in 44 BCE.",
+        "sources": [
+          "Strabo 7.5.8",
+          "https://en.wikipedia.org/wiki/Apollonia_(Illyria)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.017,
+          41.1
+        ]
+      },
+      "properties": {
+        "id": "station_ad_quintum",
+        "category": "mutatio",
+        "name": "Ad Quintum",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 5,
+        "identified": true,
+        "notes": "Ad Quintum, at the fifth milestone out of Dyrrachium, was the point where the Dyrrachium and Apollonia branches of the Via Egnatia physically merged into a single road. The site is identified with Bradashesh near Elbasan, where excavations have uncovered a Roman villa and a well-preserved bathhouse dated to the mid-2nd century CE.",
+        "sources": [
+          "Not in Itin. Ant. station list; attested via milestone toponym",
+          "https://en.wikipedia.org/wiki/Ad_Quintum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.75,
+          41.05
+        ]
+      },
+      "properties": {
+        "id": "station_clodiana",
+        "category": "mutatio",
+        "name": "Clodiana",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 28,
+        "identified": true,
+        "notes": "Clodiana was a horse-changing station on the Shkumbin river valley stretch of the road, now identified with modern Peqin in central Albania. A Roman-period castle foundation still stands on the site, and the station appears by name in both the Antonine Itinerary and the Peutinger Table.",
+        "sources": [
+          "Itin. Ant. 318.1",
+          "https://pleiades.stoa.org/places/481793"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.0806,
+          41.1146
+        ]
+      },
+      "properties": {
+        "id": "station_scampis",
+        "category": "mansio",
+        "name": "Scampis",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "Scampis (Mansio Scampa) sat on the Shkumbin river at the site of modern Elbasan and grew from a Roman trading post into a walled city with towers by the 3rd or 4th century CE. It appears under this name in the Antonine Itinerary and as Scampis or Hiscampis in the Peutinger Table and the Bordeaux pilgrim's account.",
+        "sources": [
+          "Itin. Ant. 318.2",
+          "https://pleiades.stoa.org/places/481982"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.433,
+          41.083
+        ]
+      },
+      "properties": {
+        "id": "station_tres_tabernae_egnatia",
+        "category": "mutatio",
+        "name": "Tres Tabernae",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 28,
+        "identified": true,
+        "notes": "This Tres Tabernae (a different place from the better-known station of the same name on the Via Appia) was the horse-changing post where the road began climbing out of the Shkumbin valley toward the Candavian mountains. It is identified with modern Qukës in Albania, where sections of the original paved road survive nearby.",
+        "sources": [
+          "Itin. Ant. 318.3",
+          "https://en.wikipedia.org/wiki/Quk%C3%ABs"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.8016,
+          41.1231
+        ]
+      },
+      "properties": {
+        "id": "station_lychnidus",
+        "category": "mansio",
+        "name": "Lychnidus",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 27,
+        "identified": true,
+        "notes": "Lychnidus, today's Ohrid, stood on the shore of the lake that still bears a version of its name and was the chief town of the mountain crossing between Illyricum and Macedonia. It later gave its name to the medieval and modern city, one of the longest continuously inhabited settlements on the whole road.",
+        "sources": [
+          "Itin. Ant. 318.4",
+          "https://en.wikipedia.org/wiki/Ohrid"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0114,
+          41.0897
+        ]
+      },
+      "properties": {
+        "id": "station_nicaea_macedonia",
+        "category": "mutatio",
+        "name": "Nicaea",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 32,
+        "identified": false,
+        "notes": "This Macedonian Nicaea (not the famous Nicaea in Bithynia) is named in the Antonine Itinerary between Lychnidus and Heraclea Lyncestis, but scholars disagree on its exact site, with the Resen basin and the Bukovo pass area the leading candidates. The coordinate given here is a rough placement near Resen, North Macedonia, along the attested road corridor rather than a confirmed excavation.",
+        "sources": [
+          "Itin. Ant. 318.5",
+          "https://www.jstor.org/stable/267240"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.3425,
+          41.0108
+        ]
+      },
+      "properties": {
+        "id": "station_heraclea_lyncestis",
+        "category": "mansio",
+        "name": "Heraclea Lyncestis",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 11,
+        "identified": true,
+        "notes": "Heraclea Lyncestis, founded by Philip II of Macedon and now an excavated site on the edge of Bitola, was the major crossroads town where the Via Egnatia met the road running south to Thessaly. Its well-preserved Roman theater and later Early Christian basilicas with mosaic floors are still visible on site today.",
+        "sources": [
+          "Itin. Ant. 318.6",
+          "https://en.wikipedia.org/wiki/Heraclea_Lyncestis"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8333,
+          40.8
+        ]
+      },
+      "properties": {
+        "id": "station_cellae",
+        "category": "mutatio",
+        "name": "Cellae",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 34,
+        "identified": false,
+        "notes": "Cellae marked the road's passage around Lake Ostrovo (modern Lake Vegoritida) on its way toward Edessa, and its precise site has been argued over since Charles Edson's 1951 study fixed the general area near Arnissa. The coordinate here sits at Arnissa as the best-supported approximate location rather than a firmly excavated find-spot.",
+        "sources": [
+          "Itin. Ant. 319.1",
+          "Edson, \"The Location of Cellae and the Route of the Via Egnatia,\" Classical Philology 46 (1951)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.05,
+          40.8
+        ]
+      },
+      "properties": {
+        "id": "station_edessa",
+        "category": "mansio",
+        "name": "Edessa",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 28,
+        "identified": true,
+        "notes": "Edessa, called Vodena for much of its later history, sits on a bluff over a dramatic set of waterfalls and controlled the western approach to the Macedonian plain.",
+        "sources": [
+          "Itin. Ant. 319.2",
+          "https://en.wikipedia.org/wiki/Edessa,_Greece"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.5211,
+          40.7547
+        ]
+      },
+      "properties": {
+        "id": "station_pella",
+        "category": "mansio",
+        "name": "Pella",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 28,
+        "identified": true,
+        "notes": "Pella was the birthplace of Alexander the Great and had served as the royal capital of Macedon before Rome absorbed the kingdom in 168 BCE. By 117 CE it was a Roman colony on the Via Egnatia, and its excavated House of Dionysos preserves some of the finest surviving pebble mosaics from the Hellenistic world.",
+        "sources": [
+          "Itin. Ant. 319.3",
+          "https://en.wikipedia.org/wiki/Pella"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9463,
+          40.6381
+        ]
+      },
+      "properties": {
+        "id": "station_thessalonica",
+        "category": "mansio",
+        "name": "Thessalonica",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 28,
+        "identified": true,
+        "notes": "Thessalonica was the provincial capital of Macedonia and the largest city the Via Egnatia passed through, straddling the road at the head of the Thermaic Gulf. Paul the Apostle preached in its synagogue on his journey along this same road, and the modern city's main street, Egnatia Street, still traces the ancient route.",
+        "sources": [
+          "Itin. Ant. 319.4",
+          "https://en.wikipedia.org/wiki/Thessaloniki"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.475,
+          40.5983
+        ]
+      },
+      "properties": {
+        "id": "station_melissourgis",
+        "category": "mutatio",
+        "name": "Melissourgis",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 20,
+        "identified": false,
+        "notes": "Melissourgis was a station east of Thessalonica on the road skirting the lakes of Koroneia and Volvi, and its name plausibly survives in the modern village of Melissourgos in the Volvi municipality. The identification rests on toponymic continuity rather than confirmed archaeological remains, so the coordinate is an approximation.",
+        "sources": [
+          "Itin. Ant. 319.5",
+          "https://en.wikipedia.org/wiki/Melissourgos"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.4697,
+          40.6237
+        ]
+      },
+      "properties": {
+        "id": "station_apollonia_mygdonia",
+        "category": "mansio",
+        "name": "Apollonia",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 17,
+        "identified": true,
+        "notes": "This second Apollonia on the route, distinct from the Adriatic city of the same name, stood on the southern shore of Lake Volvi in the district of Mygdonia. Settlers from Chalkidiki founded it around 432 BCE; Philip II later destroyed it before Rome resettled the site.",
+        "sources": [
+          "Itin. Ant. 319.6",
+          "https://pleiades.stoa.org/places/491526"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.84,
+          40.8183
+        ]
+      },
+      "properties": {
+        "id": "station_amphipolis",
+        "category": "mansio",
+        "name": "Amphipolis",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 30,
+        "identified": true,
+        "notes": "Amphipolis commanded the crossing of the Strymon river and had been fought over since classical times, most famously in the battle where the Athenian general Cleon and the Spartan Brasidas both died in 422 BCE. Its ruins, including a well-preserved Roman bridge foundation and the nearby Kasta Tomb, lie by the modern village of Amfipoli.",
+        "sources": [
+          "Itin. Ant. 320.1",
+          "https://en.wikipedia.org/wiki/Amphipolis"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.2864,
+          41.0131
+        ]
+      },
+      "properties": {
+        "id": "station_philippi",
+        "category": "mansio",
+        "name": "Philippi",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 33,
+        "identified": true,
+        "notes": "Philippi, founded by and named for Philip II of Macedon, became a Roman veteran colony after Octavian and Mark Antony crushed the assassins of Caesar just outside its walls in 42 BCE. Paul the Apostle later established the first Christian church on European soil here, and the site's forum, theater, and basilicas are exceptionally well preserved.",
+        "sources": [
+          "Itin. Ant. 320.2",
+          "https://en.wikipedia.org/wiki/Philippi"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.4025,
+          40.9397
+        ]
+      },
+      "properties": {
+        "id": "station_neapolis",
+        "category": "mansio",
+        "name": "Neapolis",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Neapolis was the Aegean port that served Philippi and the point where sea travelers from Troas, including Paul the Apostle, first stepped onto the Via Egnatia. The city sat on the peninsula now occupied by Kavala, whose old town still overlaps much of the ancient site.",
+        "sources": [
+          "Itin. Ant. 320.3",
+          "https://en.wikipedia.org/wiki/Kavala"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.51,
+          40.94
+        ]
+      },
+      "properties": {
+        "id": "station_acontisma",
+        "category": "statio",
+        "name": "Acontisma",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Acontisma was a fortified guard post on a hill east of Neapolis that controlled a narrow pass on the frontier between Macedonia and Thrace. Its walls, first built in the 4th century BCE and reused for centuries after, sit about two miles east of the modern town of Nea Karvali.",
+        "sources": [
+          "Itin. Ant. 320.4",
+          "https://en.wikipedia.org/wiki/Acontisma"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.75,
+          41.08
+        ]
+      },
+      "properties": {
+        "id": "station_topeiros",
+        "category": "mansio",
+        "name": "Topeiros",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 17,
+        "identified": true,
+        "notes": "Topeiros began as a Via Egnatia way station and was rebuilt as a proper Greek-style city under Trajan around the turn of the 2nd century CE, taking the name Ulpia Topirus. Its ruins lie between the villages of Toxotes and Paradeisos west of Xanthi, near the crossing of the Nestos river.",
+        "sources": [
+          "Itin. Ant. 320.5",
+          "https://en.wikipedia.org/wiki/Topeiros"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9,
+          41.09
+        ]
+      },
+      "properties": {
+        "id": "station_cosintos",
+        "category": "mutatio",
+        "name": "Cosintos",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 13,
+        "identified": false,
+        "notes": "Cosintos is named in the Antonine Itinerary between Topeiros and Porsulae and almost certainly marks the road's crossing of the Kosynthos river near Xanthi, but no excavated station has been firmly tied to the name. The coordinate given is an estimate along the road corridor between its two better-identified neighbors.",
+        "sources": [
+          "Itin. Ant. 320.6"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.3218,
+          41.1238
+        ]
+      },
+      "properties": {
+        "id": "station_porsulae",
+        "category": "mansio",
+        "name": "Porsulae",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 23,
+        "identified": true,
+        "notes": "Porsulae was a Thracian civitas on the Via Egnatia that later grew into the better-known Byzantine city of Maximianopolis (also called Mosynopolis), sited about seven kilometers west of modern Komotini. In 117 CE it was still known by its older name, Porsulae, recorded in the Antonine Itinerary.",
+        "sources": [
+          "Itin. Ant. 321.1",
+          "https://en.wikipedia.org/wiki/Mosynopolis"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.592,
+          41.028
+        ]
+      },
+      "properties": {
+        "id": "station_brendice",
+        "category": "mutatio",
+        "name": "Brendice",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 21,
+        "identified": false,
+        "notes": "Brendice is known only from its listing in the Antonine Itinerary between Porsulae and Milolitum, and no modern site has been securely matched to it. Its coordinate here is a rough interpolation along the attested road path between its two neighboring stations, not a confirmed find-spot.",
+        "sources": [
+          "Itin. Ant. 321.2"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.743,
+          40.974
+        ]
+      },
+      "properties": {
+        "id": "station_milolitum",
+        "category": "mutatio",
+        "name": "Milolitum",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "Milolitum appears in the Antonine Itinerary as a minor stop between Brendice and Tempyra in eastern Thrace, but like its neighbors it has no confirmed modern identification. The coordinate given is an estimate along the known road corridor rather than an excavated location.",
+        "sources": [
+          "Itin. Ant. 321.3"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.95,
+          40.9
+        ]
+      },
+      "properties": {
+        "id": "station_tempyra",
+        "category": "mutatio",
+        "name": "Tempyra",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Tempyra was the last stop before Traianopolis, sitting just west of the Evros/Hebros river in the area around modern Feres. Its distance to Traianopolis, nine Roman miles, is independently confirmed by two ancient sources that agree exactly on the figure.",
+        "sources": [
+          "Itin. Ant. 321.4"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.033,
+          40.865
+        ]
+      },
+      "properties": {
+        "id": "station_traianopolis",
+        "category": "mansio",
+        "name": "Traianopolis",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Traianopolis was founded by the emperor Trajan on the site of the ancient town of Doriscus, where Xerxes had once mustered his invasion force before marching on Greece. The new city, built directly astride the Via Egnatia, is now the archaeological site of Loutra Traianoupolis near Alexandroupoli.",
+        "sources": [
+          "Itin. Ant. 321.5",
+          "https://pleiades.stoa.org/places/501649"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.3921,
+          40.9245
+        ]
+      },
+      "properties": {
+        "id": "station_kypsela",
+        "category": "mansio",
+        "name": "Kypsela",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 29,
+        "identified": true,
+        "notes": "Kypsela stood on the Hebros (Evros) river and was already an old, well-known town by the time Strabo wrote about it, controlling the river crossing on the road into deep Thrace. It survives today as the Turkish town of İpsala, still sitting by the same river on the modern Greek-Turkish border.",
+        "sources": [
+          "Itin. Ant. 321.6",
+          "https://en.wikipedia.org/wiki/Cypsela_(Thrace)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.7784,
+          40.9258
+        ]
+      },
+      "properties": {
+        "id": "station_syracella",
+        "category": "mutatio",
+        "name": "Syracella",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 25,
+        "identified": false,
+        "notes": "Syracella is recorded in the Antonine Itinerary as a horse-changing stop between Kypsela and Apri, but no modern site has been confidently matched to it. Its coordinate is an interpolation along the road path between its two firmly identified neighbors rather than an excavated location.",
+        "sources": [
+          "Itin. Ant. 322.1"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1072,
+          40.9269
+        ]
+      },
+      "properties": {
+        "id": "station_apri",
+        "category": "mansio",
+        "name": "Apri",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 21,
+        "identified": true,
+        "notes": "Apri (Aprus) was refounded as Colonia Claudia Aprensis under Claudius as a settlement for retired Roman soldiers and became a full city on the Via Egnatia in the province of Europa. Its remains lie near the modern Turkish village of Kermeyan in Tekirdağ Province.",
+        "sources": [
+          "Itin. Ant. 322.2",
+          "https://en.wikipedia.org/wiki/Aprus_(Thrace)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.494,
+          40.947
+        ]
+      },
+      "properties": {
+        "id": "station_resistum",
+        "category": "mutatio",
+        "name": "Resistum",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 22,
+        "identified": false,
+        "notes": "Resistum is attested in both Pliny the Elder and the Antonine Itinerary as lying inland from Apri on the road toward Perinthus, with Pliny giving the distance between the two as twenty-two Roman miles. No modern excavation has been tied to the name, so its coordinate is a rough placement along the road corridor.",
+        "sources": [
+          "Itin. Ant. 322.3",
+          "Pliny, Natural History 4.18"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.9529,
+          40.9713
+        ]
+      },
+      "properties": {
+        "id": "station_perinthus",
+        "category": "mansio",
+        "name": "Perinthus",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 26,
+        "identified": true,
+        "notes": "Perinthus was one of the great cities of ancient Thrace, a flourishing Samian and Megarian colony on the Sea of Marmara that later became a key communications hub on the Via Egnatia. In 117 CE it still carried its original name; the city was only renamed Heraclea in honor of its legendary founder around the year 300.",
+        "sources": [
+          "Itin. Ant. 322.4",
+          "https://www.livius.org/articles/place/perinthus-marmara-ereglisi/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.2477,
+          41.0785
+        ]
+      },
+      "properties": {
+        "id": "station_selymbria",
+        "category": "mansio",
+        "name": "Selymbria",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 22,
+        "identified": true,
+        "notes": "Selymbria owed its importance to its natural harbor on the Sea of Marmara and its position on the coastal road toward Byzantium, twenty-two Roman miles east of Perinthus. The site is now the Turkish town of Silivri, where an open-air museum displays finds that include original Via Egnatia milestones.",
+        "sources": [
+          "Itin. Ant. 322.5",
+          "https://en.wikipedia.org/wiki/Selymbria"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.5775,
+          41.02
+        ]
+      },
+      "properties": {
+        "id": "station_athyras",
+        "category": "vicus",
+        "name": "Athyras",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "Athyras was a small Thracian coastal settlement on the road between Selymbria and Byzantium, taking its name from the river that reached the sea nearby. It survives as the Istanbul district of Büyükçekmece; the distance given here is estimated from the known total of forty-four Roman miles between Selymbria and Byzantium rather than quoted directly from a surviving itinerary.",
+        "sources": [
+          "Geographic distance estimated from Selymbria-Byzantium total (44 m.p.)",
+          "https://en.wikipedia.org/wiki/Athyras"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.8,
+          41.0
+        ]
+      },
+      "properties": {
+        "id": "station_rhegion",
+        "category": "vicus",
+        "name": "Rhegion",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 11,
+        "identified": true,
+        "notes": "Rhegion was the last staging point before Byzantium, a coastal settlement now underlying the Istanbul district of Küçükçekmece around the mouth of its namesake lake. Like the preceding leg, its distance here is estimated from the attested Selymbria-Byzantium total rather than drawn from a directly quoted itinerary figure.",
+        "sources": [
+          "Geographic distance estimated from Selymbria-Byzantium total (44 m.p.)",
+          "https://en.wikipedia.org/wiki/K%C3%BC%C3%A7%C3%BCk%C3%A7ekmece"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.9847,
+          41.0153
+        ]
+      },
+      "properties": {
+        "id": "station_byzantium",
+        "category": "mansio",
+        "name": "Byzantium",
+        "road": "Via Egnatia",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Byzantium was the eastern terminus of the Via Egnatia, an old Megarian colony commanding the Bosphorus strait between Europe and Asia. In 117 CE it was still an important but unremarkable provincial city of Thrace, two centuries away from Constantine's decision to remake it as his new capital.",
+        "sources": [
+          "Itin. Ant. 322.6",
+          "https://en.wikipedia.org/wiki/Byzantium"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
