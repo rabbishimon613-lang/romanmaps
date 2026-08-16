@@ -140,7 +140,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       was offered for. 85 high-confidence POIs remain open — mostly tombs, villas, and
       single-purpose industrial sites with no text naming them directly; expect a continued low
       hit rate there and skip rather than stretch.*
-- [ ] `[06-P0-2]` **`curate-buildings`** `deepen` — Ostia-depth curated descriptions for the
+- [~] `[06-P0-2]` **`curate-buildings`** `deepen` — claimed by cloud shift 3, 2026-08-16 13:05
+      (Pompeii). Ostia-depth curated descriptions for the
       other 39 sites, ~10 buildings/day. **Standing task.**
 - [ ] `[15-P0-1]` **`unattended-screenshot-gate`** `fix` — ⚠️ **This blocks the daily pass from
       taking any UI ticket at all.** The gate below requires a screenshot at 375×812 dark and at
