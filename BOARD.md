@@ -108,8 +108,13 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[05-P0-1]` **`places-in-view-list`** `polish` — Accessible, keyboard-navigable list of
       places in the current viewport; doubles as the browse UI.
 - [ ] `[10-P0-1]` **`tours`** `add` — Guided-tour format + player + first three tours
-      (Via Appia · A day in Ostia · What was new in 117).
-- [ ] `[14-P0-2]` **`place-pages`** `add` — `/place/[slug]` for every POI, server-rendered.
+      (Via Appia · A day in Ostia · What was new in 117). Skipped by cloud shift 3, 2026-08-16:
+      a new player UI + 3 curated tours is a multi-part feature with real phone-layout risk
+      (invariant 0) that didn't look finishable cleanly in the shift's remaining time; picked
+      `[14-P0-2]` instead as the safer same-priority `add` that reuses the proven `/site/[slug]`
+      pattern. Still open, still topmost `add` — next `add` turn should try it first.
+- [~] `[14-P0-2]` **`place-pages`** `add` — claimed by cloud shift 3, 2026-08-16 12:58.
+      `/place/[slug]` for every POI, server-rendered.
 - [ ] `[02-P0-1]` **`terrain`** `polish` — Hillshade/relief under the land fill.
 - [ ] `[02-P0-4]` **`self-host-glyphs`** `fix` — Stop depending on `demotiles.maplibre.org`;
       a single point of failure that would erase every label on the map.
