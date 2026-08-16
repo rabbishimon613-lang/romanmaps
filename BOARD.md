@@ -58,7 +58,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       ahead of the build and exposed as `npm run validate`. Runs in ~1.5s over all 40 files.
       0 errors, 14 reviewed warnings. Calibrated so base geography isn't held to the curated
       schema — otherwise it drowns and gets bypassed, which is the same as not having it.
-- [ ] `[11-P0-1]` **`split-site-data`** `polish` — Split `sites_buildings`/`sites_streets`
+- [~] `[11-P0-1]` **`split-site-data`** `polish` — claimed by cloud shift 3, 2026-08-16 12:27.
+      Split `sites_buildings`/`sites_streets`
       per-site, fetch on demand. Removes ~28MB from every cold load.
 - [ ] `[11-P0-3]` **`delete-dead-data`** `retire` — Delete `roads_high`, `roads_low`,
       `places_high` (~11MB shipped, never loaded) or wire them into a detail ladder.
@@ -104,7 +105,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[02-P0-1]` **`terrain`** `polish` — Hillshade/relief under the land fill.
 - [ ] `[02-P0-4]` **`self-host-glyphs`** `fix` — Stop depending on `demotiles.maplibre.org`;
       a single point of failure that would erase every label on the map.
-- [ ] `[09-P0-1]` **`ancient-sources`** `deepen` — `ancient_sources[]` populated for every
+- [~] `[09-P0-1]` **`ancient-sources`** `deepen` — claimed by cloud shift 3, 2026-08-16 12:27.
+      `ancient_sources[]` populated for every
       `confidence: high` POI. **Standing task — never "done", always available.**
       *Batch 1 done 2026-08-16: 108 of 221 high-confidence POIs (48.9%), 122 citations, plus an
       "In ancient writing" block on the card. Shape is `{author, work, ref, note}` — `note` says
