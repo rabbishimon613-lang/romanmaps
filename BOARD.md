@@ -91,11 +91,15 @@ to prevent. Building locally to *test* your own work is expected and fine.
       written: it builds markers from a direct `fetch()` of the geojson, never from a Maplibre
       click query, so `props.sources` is always a real array on that path, never stringified.
       No other live instance found — closing rather than leaving open on a hypothetical.
-- [~] `[12-FIX-2]` **`brigetio-stacked-pins`** `fix` — claimed by cloud shift 3, 2026-08-16 12:40.
-      `poi_fortress_i_adiutrix_brigetio` and
-      `poi_fortress_xxx_ulpia_victrix_brigetio` sit on the identical coordinate, so one pin is
-      permanently unreachable under the other. Both records are correct; the placement is not.
-      Offset one, or merge them into a single fortress record carrying both garrisons. Check
+- [x] `[12-FIX-2]` **`brigetio-stacked-pins`** `fix` — Done 2026-08-16 by cloud shift 3. Brigetio
+      itself was already fixed by cloud shift 2's audit note (confirmed distinct coordinates).
+      Ran a fresh exact-coordinate scan across every `public/data/*.geojson` Point feature and
+      found the same fixed-size-DOM-marker occlusion bug in `people_117.geojson`
+      (`PeopleMarkers.tsx`, no clustering): 6 stacked clusters, 11 markers, spread ~0.012° around
+      each cluster's first marker. Other collisions found (crafts/diplomacy/letters render as
+      MapLibre circle layers — milder "one popup wins" issue, not full occlusion; gazetteer
+      duplicates in places_high/medium pending `[12-P0-1]`'s theme merge) left alone — see the
+      commit for the full accounting. `poi_fortress_i_adiutrix_brigetio` and
       for other exact-coordinate stacks while in there.
 - [ ] `[04-P0-1]` **`sheet-detents`** `polish` — Three-detent bottom sheet (peek/half/full),
       velocity-aware.
