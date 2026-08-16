@@ -165,6 +165,17 @@ to prevent. Building locally to *test* your own work is expected and fine.
       reliably the actual building meant — future-proof against new Overpass pulls. Verified with
       Playwright against both Pompeii's new content and three known-good Ostia buildings (no
       regression). 39 sites still open for the standing task.
+- [~] `[10-P0-3]` **`flagship-depth`** `deepen` — claimed by mac editorial pass, 2026-08-16 09:58.
+      110 of 467 POIs have a `notes` field under 60 words, and `npm run metrics` shows the thin
+      tail is led by the **most famous places on the map** — Parthenon, Pantheon, Karnak, Baalbek,
+      Maison Carrée, Trajan's Markets, Temple of Zeus at Olympia. A visitor who clicks the one
+      name they recognise gets two sentences. That is the "feels empty" complaint in its purest
+      form, and it is measurable. Bring the thin tail up to real panel depth in the existing
+      `notes` field, worst-first. This is the **panel tier of `[10-P0-2]`** applied to the places
+      that need it most; the tombstone/label tiers still need that ticket's schema and UI work.
+      Renders through the card's existing "About" block, so it needs no UI change and no visual
+      gate — which makes it the one `deepen` the unattended Mac pass can fully ship while
+      `[15-P0-1]` stands. **Standing until the thin count reaches zero.**
 - [ ] `[15-P0-1]` **`unattended-screenshot-gate`** `fix` — ⚠️ **This blocks the daily pass from
       taking any UI ticket at all.** The gate below requires a screenshot at 375×812 dark and at
       desktop light, but the 09:30 editorial pass runs unattended and a dev server cannot be
