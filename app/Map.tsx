@@ -2030,6 +2030,176 @@ export default function Map() {
           kick();
         }
 
+        // Phase 30: Cuisine regions (public/data/cuisine_regions.geojson) — regional food-culture
+        // zones in 117 CE: bread grain, fish sauce, wine/oil vs. beer/fat, and two named single-
+        // place moments (Cyrenaica's silphium extinction, Alexandria's spice gateway) (axis 9b).
+        const cuisine = await fetch("/data/cuisine_regions.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && cuisine) {
+          map.addSource("cuisine", { type: "geojson", data: cuisine });
+          const cuisineColors: any = [
+            "match",
+            ["get", "typology"],
+            "bread_barley", "#b08d2e",
+            "bread_spelt", "#c9a227",
+            "garum_heartland", "#3d6b8c",
+            "wine_oil_belt", "#7a1f1f",
+            "beer_fat_belt", "#5c8c3a",
+            "extinct_luxury", "#6a5f4a",
+            "spice_gateway", "#a05f2e",
+            "#6a6a6a",
+          ];
+          map.addLayer({
+            id: "cuisine-fill",
+            type: "fill",
+            source: "cuisine",
+            paint: { "fill-color": cuisineColors, "fill-opacity": 0.16 },
+          });
+          map.addLayer({
+            id: "cuisine-line",
+            type: "line",
+            source: "cuisine",
+            paint: { "line-color": cuisineColors, "line-width": 1, "line-dasharray": [3, 2], "line-opacity": 0.5 },
+          });
+
+          const cuisinePopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          map.on("mouseenter", "cuisine-fill", (e) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const noteLine = p.notes ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.notes)}</div>` : "";
+            cuisinePopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.regions || "")}</div>
+                   ${noteLine}
+                 </div>`,
+              )
+              .addTo(map);
+          });
+          map.on("mouseleave", "cuisine-fill", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          kick();
+        }
+
+        // Phase 31: Death ritual regions (public/data/death_rituals.geojson) — the cremation-to-
+        // inhumation transition as it stood in 117 CE, still overwhelmingly cremation in the West,
+        // always inhumation in Egypt/Judaea, just beginning to shift among Rome's elite (axis 9e).
+        const deathRituals = await fetch("/data/death_rituals.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && deathRituals) {
+          map.addSource("death-rituals", { type: "geojson", data: deathRituals });
+          const deathColors: any = [
+            "match",
+            ["get", "typology"],
+            "cremation_dominant", "#a05f2e",
+            "inhumation_persistent", "#2a7fb5",
+            "mixed_transitional", "#8859a6",
+            "#6a6a6a",
+          ];
+          map.addLayer({
+            id: "death-rituals-fill",
+            type: "fill",
+            source: "death-rituals",
+            paint: { "fill-color": deathColors, "fill-opacity": 0.16 },
+          });
+          map.addLayer({
+            id: "death-rituals-line",
+            type: "line",
+            source: "death-rituals",
+            paint: { "line-color": deathColors, "line-width": 1, "line-dasharray": [3, 2], "line-opacity": 0.5 },
+          });
+
+          const deathPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          map.on("mouseenter", "death-rituals-fill", (e) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const noteLine = p.notes ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.notes)}</div>` : "";
+            deathPopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.regions || "")}</div>
+                   ${noteLine}
+                 </div>`,
+              )
+              .addTo(map);
+          });
+          map.on("mouseleave", "death-rituals-fill", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          kick();
+        }
+
+        // Phase 32: Ethnic & cultural pockets (public/data/ethnic_pockets.geojson) — living, non-
+        // Roman communities and identities still visible inside the empire's borders in 117 CE:
+        // Druids, Berber tribes, Isaurian highlanders, Punic and Syriac speakers, and more (axis 5c).
+        const ethnicPockets = await fetch("/data/ethnic_pockets.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && ethnicPockets) {
+          map.addSource("ethnic-pockets", { type: "geojson", data: ethnicPockets });
+          map.addLayer({
+            id: "ethnic-pockets-point",
+            type: "circle",
+            source: "ethnic-pockets",
+            paint: {
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+              "circle-color": "#6a5f4a",
+              "circle-stroke-color": P.labelHalo,
+              "circle-stroke-width": 1.6,
+            },
+          });
+
+          const ethnicGroupLabel: Record<string, string> = {
+            gauls_druids: "Gallic Druidic tradition",
+            gallic_identity: "Gallic identity & memory",
+            egyptian_priesthood: "Egyptian priesthood",
+            nabataean: "Nabataean community",
+            basque_vascones: "Vascones (Basque)",
+            berber_tribes: "Berber tribe",
+            isaurian: "Isaurian highlanders",
+            punic_speakers: "Punic-speaking community",
+            syriac_aramaic: "Syriac/Aramaic-speaking community",
+            thracian_bessi: "Thracian Bessi",
+            sardinian_ilienses: "Sardinian Ilienses",
+          };
+          const ethnicPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          map.on("mouseenter", "ethnic-pockets-point", (e) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.one_line)}</div>` : "";
+            ethnicPopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(ethnicGroupLabel[p.group] || p.group || "")}</div>
+                   ${noteLine}
+                 </div>`,
+              )
+              .addTo(map);
+          });
+          map.on("mouseleave", "ethnic-pockets-point", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          kick();
+        }
+
         // Apply any persisted Layers-panel visibility (all groups default visible).
         applyAllLayers();
       });

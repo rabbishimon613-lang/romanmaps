@@ -1,0 +1,390 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.488,
+     48.4467
+    ]
+   },
+   "properties": {
+    "id": "ethnic_druids_gaul",
+    "group": "gauls_druids",
+    "name": "Druidic Sanctuary of the Carnutes",
+    "province": "Gallia Lugdunensis",
+    "modern_location": "Chartres, Centre-Val de Loire, France",
+    "one_line": "Julius Caesar recorded that Gaul's druids gathered once a year at a consecrated grove in the land of the Carnutes, the tribe whose territory counted as the sacred center of all Gaul. Emperor Claudius banned Druidism for Roman citizens around 54 CE, driving the order out of public view. By 117 CE druidic rites survived only in scattered rural groves around Chartres and Orleans, hidden from magistrates but still alive among the Gallic countryside.",
+    "extant_117ce": true,
+    "sources": [
+     "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0001%3Abook%3D6%3Achapter%3D13",
+     "https://en.wikipedia.org/wiki/Carnutes",
+     "https://en.wikipedia.org/wiki/Druid"
+    ],
+    "confidence": "high"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.087,
+     45.7772
+    ]
+   },
+   "properties": {
+    "id": "ethnic_arverni_vercingetorix",
+    "group": "gallic_identity",
+    "name": "Arverni Memory of Vercingetorix",
+    "province": "Aquitania",
+    "modern_location": "Clermont-Ferrand, Auvergne-Rhone-Alpes, France",
+    "one_line": "The Arverni, the tribe that united Gaul under Vercingetorix against Caesar in 52 BCE, lived on as a distinct people governed from their own civitas capital, Augustonemetum. Rome executed Vercingetorix in 46 BCE after parading him in a triumph, yet his name stayed a marker of Gallic identity among his own tribe for generations. Augustonemetum grew into a Gallo-Roman city of temples and baths whose population still traced its lineage to the tribe that once nearly broke Caesar's army.",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Clermont-Ferrand",
+     "https://www.britannica.com/topic/Arverni"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Statue_Vercingetorix_Clermont-Ferrand.jpg?width=800",
+    "image_credit": "Equestrian statue of Vercingetorix, Place de Jaude, Clermont-Ferrand (Bartholdi, 1903) · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     32.6573,
+     25.7188
+    ]
+   },
+   "properties": {
+    "id": "ethnic_amun_priests_karnak",
+    "group": "egyptian_priesthood",
+    "name": "Priesthood of Amun at Karnak",
+    "province": "Aegyptus",
+    "modern_location": "Luxor (ancient Thebes), Egypt",
+    "one_line": "Hereditary Egyptian priests still served Karnak's temple of Amun-Ra in 117 CE, rotating through duty in four shifts called phyles just as their ancestors had for two thousand years. Rome folded the priesthood under a single Roman-appointed high priest based in Alexandria and taxed temple land, but left the clergy's own hieroglyphic rites, purity rules, and family succession intact. Papyri from this period still show Egyptian, not Greek, as the priests' working language of ritual.",
+    "extant_117ce": true,
+    "sources": [
+     "https://the-past.com/feature/rome-versus-the-egyptian-priesthood/",
+     "https://en.wikipedia.org/wiki/High_Priest_of_Amun"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Karnak_temple_of_Amun-Ra_9459.JPG?width=800",
+    "image_credit": "Temple of Amun-Ra, Karnak, Luxor · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     32.884,
+     24.0258
+    ]
+   },
+   "properties": {
+    "id": "ethnic_isis_priests_philae",
+    "group": "egyptian_priesthood",
+    "name": "Priesthood of Isis at Philae",
+    "province": "Aegyptus",
+    "modern_location": "Agilkia Island, Aswan, Egypt",
+    "one_line": "Egyptian priests kept the cult of Isis alive on the island of Philae for centuries under Roman rule, carving hieroglyphic inscriptions there until 394 CE, the last ever written in that script. In 117 CE the new emperor Hadrian added a stone gate to the temple complex, a rare case of a Roman ruler personally patronizing a fully non-Roman priesthood. Nubian pilgrims from beyond the southern frontier still crossed into Roman Egypt to worship at Philae's shrine.",
+    "extant_117ce": true,
+    "sources": [
+     "https://atworldsorigins.com/2024/11/20/the-temple-of-philae-sanctuary-of-isis-the-rosetta-stone-and-the-last-hieroglyph-of-ancient-egypt/",
+     "https://egyptianmuseum.org/explore/greco-and-roman-period-monuments-philae"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Isis_temple_Philae2.JPG?width=800",
+    "image_credit": "Temple of Isis, Philae (Agilkia Island), Aswan · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4444,
+     30.3285
+    ]
+   },
+   "properties": {
+    "id": "ethnic_nabataeans_petra",
+    "group": "nabataean",
+    "name": "Nabataean Community of Petra",
+    "province": "Arabia",
+    "modern_location": "Petra, Ma'an Governorate, Jordan",
+    "one_line": "Rome annexed the Nabataean kingdom without a fight in 106 CE, making its capital Petra the seat of a province, Arabia, only eleven years old by 117 CE. Petra's population kept worshipping the Nabataean god Dushara, whose image still appeared on coinage struck after annexation, and kept carving rock-cut tombs in the distinctive Nabataean style. Aramaic remained the everyday language of the city's streets even as Greek and Latin took over its official inscriptions.",
+    "extant_117ce": true,
+    "sources": [
+     "https://www.worldhistory.org/Kingdom_of_Nabatea/",
+     "https://en.wikipedia.org/wiki/Nabataean_Kingdom"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Al-Khazneh_(The_Treasury),_Petra,_Jordan.jpg?width=800",
+    "image_credit": "Al-Khazneh (The Treasury), Petra · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     36.4823,
+     32.5175
+    ]
+   },
+   "properties": {
+    "id": "ethnic_nabataeans_bostra",
+    "group": "nabataean",
+    "name": "Nabataean Community of Bostra",
+    "province": "Arabia",
+    "modern_location": "Bosra, Daraa Governorate, Syria",
+    "one_line": "Trajan made Bostra the capital of the new province of Arabia after 106 CE, garrisoning it with the Legio III Cyrenaica, yet the town kept counting its years from the Nabataean kingdom's fall in a local system called the Bostran era. Nabataean Aramaic inscriptions kept appearing across the surrounding Hauran region long after Rome ended the script's use at Petra itself. Local families went on writing and worshipping in their own Aramaic under a Roman garrison built on former Nabataean soil.",
+    "extant_117ce": true,
+    "sources": [
+     "https://social.vcoins.com/twih/bostran-era-march-22-106-ad/",
+     "https://en.wikipedia.org/wiki/Nabataean_inscriptions"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Theatre_in_Bosra.jpg?width=800",
+    "image_credit": "Roman theatre, Bosra, built over the Nabataean-era city · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.6458,
+     42.8125
+    ]
+   },
+   "properties": {
+    "id": "ethnic_vascones_pompaelo",
+    "group": "basque_vascones",
+    "name": "Vascones of Pompaelo",
+    "province": "Tarraconensis",
+    "modern_location": "Pamplona, Navarre, Spain",
+    "one_line": "The Vascones held the western Pyrenean valleys around Pompaelo, a town Pompey founded and named for himself around 75 BCE during the Sertorian War. They spoke a language unrelated to Latin, Celtic, or any other Indo-European tongue then used in Hispania, setting them apart from neighboring Celtiberian communities under the same province. That language never died out under Roman rule, and it survives today as Basque, the last living descendant of pre-Indo-European Iberia's tongues.",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Vascones",
+     "https://en.wikipedia.org/wiki/Pamplona"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pamplona-city-walls-baltasar-14.jpg?width=800",
+    "image_credit": "City walls of Pamplona, ancient Pompaelo · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.5,
+     34.1667
+    ]
+   },
+   "properties": {
+    "id": "ethnic_gaetuli_frontier",
+    "group": "berber_tribes",
+    "name": "Gaetulian Tribes of the Desert Fringe",
+    "province": "Mauretania Caesariensis",
+    "modern_location": "Messaad, Djelfa Province, Algeria",
+    "one_line": "Rome never conquered the Gaetuli, nomadic and semi-nomadic Berber peoples living south of the Atlas ranges on the edge of the Sahara. Under Trajan, Roman engineers pushed a frontier road south to a lonely outpost called Castellum Dimmidi, built to watch the Gaetuli rather than absorb their territory. The Gaetuli kept supplying Rome's markets with wild animals for the arena and purple dye instead of paying taxes as provincials, remaining a free people just beyond the empire's effective control.",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Gaetuli",
+     "https://en.wikipedia.org/wiki/Castellum_Dimmidi",
+     "https://countrystudies.us/algeria/6.htm"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.6833,
+     35.5667
+    ]
+   },
+   "properties": {
+    "id": "ethnic_musulamii_numidia",
+    "group": "berber_tribes",
+    "name": "Musulamii of Numidia",
+    "province": "Numidia",
+    "modern_location": "Thala, Kasserine Governorate, Tunisia",
+    "one_line": "The Musulamii, a Berber confederation on the Numidian steppe, fought Rome for seven years under the rebel chieftain Tacfarinas before their defeat in 24 CE. Rome never dissolved them as a people afterward, instead ruling them through a Roman-appointed praefectus gentis who administered Musulamian custom rather than ordinary municipal law. Inscriptions naming these prefects show the Musulamii still existed as a recognized, separately governed tribe well into the second century CE.",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Musulamii",
+     "https://en.wikipedia.org/wiki/Tacfarinas",
+     "https://www.persee.fr/doc/antaf_0066-4871_2006_num_42_1_1411"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Thala.JPG?width=800",
+    "image_credit": "Thala, Tunisia, heartland of the Musulamii · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     32.3567,
+     37.1975
+    ]
+   },
+   "properties": {
+    "id": "ethnic_isaurian_brigands",
+    "group": "isaurian",
+    "name": "Isaurian Highlanders of Cilicia",
+    "province": "Cilicia",
+    "modern_location": "Bozkir, Konya Province, Turkey",
+    "one_line": "Rome's general Publius Servilius fought a three-year war to subdue Isauria in 76-74 BCE, yet its mountain clans never settled into a peaceful province. Roman governors ringed the Taurus highlands with garrison posts as though guarding a genuine frontier, even though Isauria sat deep inside imperial territory. In 117 CE the rugged country around Isaura remained a byword for brigandage, a pocket of armed, un-Romanized highlanders the legions chose to contain rather than conquer.",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Isauria",
+     "https://www.britannica.com/place/Isauria"
+    ],
+    "confidence": "high"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.82,
+     36.0767
+    ]
+   },
+   "properties": {
+    "id": "ethnic_punic_madauros",
+    "group": "punic_speakers",
+    "name": "Punic-Speaking Community of Madauros",
+    "province": "Numidia",
+    "modern_location": "M'Daourouch (ancient Madauros), Souk Ahras Province, Algeria",
+    "one_line": "Punic, the Semitic language Carthage carried across North Africa long before Rome existed, remained the everyday speech of Numidian towns like Madauros. The writer Apuleius, raised there in the early second century CE, called himself 'half-Numidian, half-Gaetulian' and admitted his Latin still carried a local accent. Latino-Punic inscriptions from towns across the region confirm ordinary Africans kept speaking Punic generations after Carthage itself had become a Roman colony.",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Apuleius",
+     "https://www.philipharland.com/Blog/2022/10/numidian-perspectives-apuleius-on-his-barbarian-origins-mid-second-century-ce/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Madauros_(M'Daourouch),_Africa_Proconsularis,_Algeria.jpg?width=800",
+    "image_credit": "Ruins of Madauros (M'Daourouch), birthplace of Apuleius · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     38.7969,
+     37.1591
+    ]
+   },
+   "properties": {
+    "id": "ethnic_syriac_edessa",
+    "group": "syriac_aramaic",
+    "name": "Syriac-Speaking Community of Edessa",
+    "province": "Armenia Mesopotamia",
+    "modern_location": "Sanliurfa (ancient Edessa), Turkey",
+    "one_line": "Edessa's native tongue was a local Aramaic dialect that scholars later named Syriac after the city, first attested in a dated inscription from 6 CE found nearby at Birecik. Its kings had developed their own alphabet for it, distinct from the Aramaic used in Judaea or Palmyra, adapted from the older Achaemenid Persian chancery script. Trajan's general folded Edessa into a new province of Mesopotamia in 116 CE, but its people kept writing and speaking Syriac rather than Latin or Greek.",
+    "extant_117ce": true,
+    "sources": [
+     "https://hugoye.bethmardutho.org/article/hv10n2healey",
+     "https://en.wikipedia.org/wiki/Syriac_alphabet"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Urfa_Castle_01.jpg?width=800",
+    "image_credit": "Urfa Castle, built on the citadel of ancient Edessa · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     38.2762,
+     34.5509
+    ]
+   },
+   "properties": {
+    "id": "ethnic_palmyrene_aramaic",
+    "group": "syriac_aramaic",
+    "name": "Aramaic-Speaking Community of Palmyra",
+    "province": "Syria",
+    "modern_location": "Palmyra, Homs Governorate, Syria",
+    "one_line": "Palmyra's caravan merchants spoke Palmyrene, a distinct western Aramaic dialect written in its own script, even while a governor sent from Antioch administered the city as part of Roman Syria. More than 3,000 surviving Palmyrene inscriptions, some found as far away as Roman Britain, record a trading people who kept Aramaic as their working language for centuries. Priesthoods at the Temple of Bel, dedicated in 32 CE, still served Semitic and Arab gods that no Roman pantheon recognized.",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Palmyrene_Aramaic",
+     "https://en.wikipedia.org/wiki/Palmyra"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Bel_in_Palmyra.JPG?width=800",
+    "image_credit": "Temple of Bel, Palmyra · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.4386,
+     41.6975
+    ]
+   },
+   "properties": {
+    "id": "ethnic_bessi_thracian",
+    "group": "thracian_bessi",
+    "name": "Bessi Tribe of the Rhodope Mountains",
+    "province": "Thracia",
+    "modern_location": "Perperikon, Kardzhali Province, Bulgaria",
+    "one_line": "The Bessi served as hereditary priests of a mountaintop oracle of Dionysus in the Rhodope range, a sanctuary ancient writers ranked second only to Delphi. Rome folded the region into the province of Thracia after 46 CE, but the Bessi kept their priestly office and oracular rites in remote highland strongholds. Their name became Roman shorthand for the wilder Thracian tribes of the interior, a mountain people whose religion stayed stubbornly non-Roman.",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Bessi",
+     "https://www.ancient-origins.net/ancient-places-europe/altar-dionysus-0015332"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Perperikon_Nenko_Lazarov_195.JPG?width=800",
+    "image_credit": "Rock sanctuary of Perperikon, Rhodope Mountains · Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.1792,
+     40.1689
+    ]
+   },
+   "properties": {
+    "id": "ethnic_ilienses_barbagia",
+    "group": "sardinian_ilienses",
+    "name": "Ilienses of Barbagia",
+    "province": "Sardinia et Corsica",
+    "modern_location": "Ollolai, Nuoro Province, Sardinia, Italy",
+    "one_line": "The mountain people of central Sardinia, whom Roman writers called the Ilienses, fought off Carthaginian and Roman armies alike from their highland strongholds. In 177 BCE the consul Tiberius Gracchus killed or enslaved some 80,000 Sardinians trying to break their resistance, yet the interior never came under real Roman administration. Romans named the region Barbaria for its unconquered inhabitants, the root of its modern name Barbagia, still an enclave outside provincial law in 117 CE.",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Ilienses",
+     "https://en.wikipedia.org/wiki/Barbagia"
+    ],
+    "confidence": "high"
+   }
+  }
+ ]
+}

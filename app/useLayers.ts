@@ -33,7 +33,10 @@ export type LayerGroupId =
   | "substrate"
   | "conventus"
   | "agriculture"
-  | "housing";
+  | "housing"
+  | "cuisine"
+  | "death-rituals"
+  | "ethnic-pockets";
 
 /** `base: true` marks the five groups that make up the map you see on first load — the
  * equivalent of Google's default basemap. Everything else is a thematic overlay and starts
@@ -74,6 +77,9 @@ export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: strin
   { id: "conventus", label: "Conventus centers (Asia)", mapLayerIds: ["conventus-point"] },
   { id: "agriculture", label: "Crop & agriculture zones", mapLayerIds: ["agriculture-fill", "agriculture-line"] },
   { id: "housing", label: "Housing typologies", mapLayerIds: ["housing-fill", "housing-line"] },
+  { id: "cuisine", label: "Cuisine regions", mapLayerIds: ["cuisine-fill", "cuisine-line"] },
+  { id: "death-rituals", label: "Death ritual regions", mapLayerIds: ["death-rituals-fill", "death-rituals-line"] },
+  { id: "ethnic-pockets", label: "Ethnic & cultural pockets", mapLayerIds: ["ethnic-pockets-point"] },
 ];
 
 type LayerState = Record<LayerGroupId, boolean>;

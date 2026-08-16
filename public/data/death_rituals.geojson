@@ -1,0 +1,352 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        7.6,
+        45.1
+       ],
+       [
+        8.9,
+        46.1
+       ],
+       [
+        11.0,
+        46.8
+       ],
+       [
+        13.7,
+        46.5
+       ],
+       [
+        14.6,
+        42.4
+       ],
+       [
+        16.9,
+        40.8
+       ],
+       [
+        18.4,
+        40.1
+       ],
+       [
+        17.2,
+        39.8
+       ],
+       [
+        15.9,
+        38.2
+       ],
+       [
+        15.3,
+        40.0
+       ],
+       [
+        12.5,
+        38.0
+       ],
+       [
+        9.8,
+        39.2
+       ],
+       [
+        8.4,
+        40.9
+       ],
+       [
+        7.6,
+        43.5
+       ],
+       [
+        7.6,
+        45.1
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -4.5,
+        43.0
+       ],
+       [
+        -1.0,
+        43.3
+       ],
+       [
+        2.0,
+        42.3
+       ],
+       [
+        3.2,
+        43.5
+       ],
+       [
+        7.5,
+        43.9
+       ],
+       [
+        7.5,
+        47.5
+       ],
+       [
+        4.0,
+        50.5
+       ],
+       [
+        2.0,
+        51.0
+       ],
+       [
+        -1.5,
+        49.5
+       ],
+       [
+        -4.5,
+        48.5
+       ],
+       [
+        -4.8,
+        47.5
+       ],
+       [
+        -4.5,
+        43.0
+       ]
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "death_cremation_core_italy_gaul",
+    "typology": "cremation_dominant",
+    "name": "Cremation-dominant zone (Italy and Gaul)",
+    "regions": "Italia, Gallia (all provinces)",
+    "notes": "Cremation had been the standard Roman funerary rite for centuries by 117 CE, and Italy and Gaul remained its stronghold: ashes went into urns, urns into columbaria niches or small family plots, with grave goods burned alongside the body on the pyre. Rome's own columbaria, built to hold thousands of urns for freedmen and slaves of great households, were still actively filling in Trajan's reign. For the overwhelming majority of Italians and Gauls in 117 CE, cremation was still simply how the dead were buried.",
+    "sources": [
+     "https://www.catacombsociety.org/burials-in-ancient-rome/",
+     "https://www.academia.edu/9381212/Inhumation_and_cremation_in_Roman_Gaul_continuity_or_discontinuity_of_the_burial_practices"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       31.0,
+       31.5
+      ],
+      [
+       32.5,
+       31.3
+      ],
+      [
+       34.0,
+       29.5
+      ],
+      [
+       35.0,
+       27.9
+      ],
+      [
+       34.0,
+       22.0
+      ],
+      [
+       31.5,
+       22.0
+      ],
+      [
+       29.0,
+       23.5
+      ],
+      [
+       28.5,
+       29.0
+      ],
+      [
+       29.5,
+       31.0
+      ],
+      [
+       31.0,
+       31.5
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "death_inhumation_egypt",
+    "typology": "inhumation_persistent",
+    "name": "Inhumation-dominant zone (Egypt)",
+    "regions": "Aegyptus",
+    "notes": "Egypt never adopted Roman cremation practice. Mummification and inhumation, rooted in millennia of Pharaonic religion, continued unbroken through Ptolemaic and into Roman rule, with the body preserved intact for the afterlife rather than burned. Roman-period mummies from sites like Saqqara and the Fayum show Egyptian religious ritual, such as the Opening of the Mouth ceremony, still performed alongside imported Greek and Roman decorative styles like painted portrait panels.",
+    "sources": [
+     "https://www.worldhistory.org/article/44/mummification-in-ancient-egypt/",
+     "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7641350/"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       34.2,
+       33.3
+      ],
+      [
+       36.5,
+       33.5
+      ],
+      [
+       37.0,
+       31.5
+      ],
+      [
+       36.0,
+       29.5
+      ],
+      [
+       35.0,
+       29.3
+      ],
+      [
+       34.2,
+       31.0
+      ],
+      [
+       34.2,
+       33.3
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "death_inhumation_judaea",
+    "typology": "inhumation_persistent",
+    "name": "Inhumation-dominant zone (Judaea and Nabataea)",
+    "regions": "Judaea/Syria Palaestina, Arabia Petraea",
+    "notes": "Jewish burial law forbade cremation, and the region's cemeteries in 117 CE still followed the older custom of laying a body in a rock-cut tomb until the flesh decayed, then gathering the bones into a small stone ossuary for final burial. This practice, well attested around Jerusalem before the city's destruction in 70 CE, continued in Judaean and neighboring Nabataean communities into the 2nd century. As in Egypt, this was a burial tradition Roman rule did not touch, standing in sharp contrast to the cremating provinces of the Latin West.",
+    "sources": [
+     "https://www.biblicalarchaeology.org/daily/ancient-cultures/gold-tongues-discovered-on-egyptian-mummies/",
+     "https://www.cambridge.org/core/journals/harvard-theological-review/article/abs/cremation-and-burial-in-the-roman-empire/2B53C06D3063D879FDDC9672F729819F"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       11.5,
+       42.5
+      ],
+      [
+       13.0,
+       42.7
+      ],
+      [
+       14.5,
+       41.5
+      ],
+      [
+       14.0,
+       40.5
+      ],
+      [
+       12.0,
+       41.0
+      ],
+      [
+       11.0,
+       41.8
+      ],
+      [
+       11.5,
+       42.5
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "death_mixed_rome_elite",
+    "typology": "mixed_transitional",
+    "name": "Mixed and transitioning zone (Rome and central Italy, elite burial)",
+    "regions": "Italia (Rome, Latium, Campania)",
+    "notes": "The empire's great cremation-to-inhumation shift was only just becoming visible in 117 CE, and it was showing first among Rome's wealthiest families. A handful of aristocratic tombs from the closing years of Trajan's reign already hold unburned bodies in stone sarcophagi rather than ash urns, a practice that would explode into full fashion under Hadrian a generation later. In 117 CE this was still a minority elite practice layered over a city where cremation remained completely normal.",
+    "sources": [
+     "https://www.cambridge.org/core/books/abs/roman-tombs-and-the-art-of-commemoration/reviving-tradition-in-hadrianic-rome-from-incineration-to-inhumation/5B02B668B038D7FFED966CD477E8CDB7",
+     "https://bmcr.brynmawr.edu/2020/2020.10.34/"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       26.0,
+       40.5
+      ],
+      [
+       30.0,
+       41.5
+      ],
+      [
+       35.0,
+       41.0
+      ],
+      [
+       36.5,
+       38.0
+      ],
+      [
+       33.0,
+       36.0
+      ],
+      [
+       28.0,
+       36.5
+      ],
+      [
+       26.0,
+       38.5
+      ],
+      [
+       26.0,
+       40.5
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "death_mixed_asia_minor",
+    "typology": "mixed_transitional",
+    "name": "Mixed zone (Greek East and Asia Minor)",
+    "regions": "Asia, Bithynia et Pontus, Galatia, Lycia et Pamphylia, Cilicia",
+    "notes": "The Greek-speaking provinces of Asia Minor had long practiced both cremation and inhumation side by side, with local and regional custom deciding which a family used, unlike the more uniformly cremating Latin West. Rock-cut tombs, sarcophagus burial, and cremation in urns all appear in the archaeological record of this region well before Rome's own elite began favoring inhumation. This existing variety left Asia Minor primed to lead the empire-wide swing toward inhumation once it gathered pace later in the 2nd century.",
+    "sources": [
+     "https://www.cambridge.org/core/journals/harvard-theological-review/article/abs/cremation-and-burial-in-the-roman-empire/2B53C06D3063D879FDDC9672F729819F",
+     "https://en.wikipedia.org/wiki/Ancient_Roman_sarcophagus"
+    ]
+   }
+  }
+ ]
+}

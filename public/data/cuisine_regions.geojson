@@ -1,0 +1,716 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -9.5,
+        43.5
+       ],
+       [
+        -9.5,
+        36.0
+       ],
+       [
+        -7.5,
+        36.9
+       ],
+       [
+        -5.3,
+        36.0
+       ],
+       [
+        -2.0,
+        36.7
+       ],
+       [
+        0.5,
+        38.5
+       ],
+       [
+        3.3,
+        39.5
+       ],
+       [
+        3.0,
+        41.0
+       ],
+       [
+        1.5,
+        42.3
+       ],
+       [
+        -1.5,
+        43.4
+       ],
+       [
+        -5.0,
+        43.5
+       ],
+       [
+        -9.5,
+        43.5
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        31.0,
+        31.5
+       ],
+       [
+        32.5,
+        31.3
+       ],
+       [
+        34.0,
+        29.5
+       ],
+       [
+        35.0,
+        27.9
+       ],
+       [
+        34.0,
+        22.0
+       ],
+       [
+        31.5,
+        22.0
+       ],
+       [
+        29.0,
+        23.5
+       ],
+       [
+        28.5,
+        29.0
+       ],
+       [
+        29.5,
+        31.0
+       ],
+       [
+        31.0,
+        31.5
+       ]
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "cuisine_bread_barley_iberia_egypt",
+    "typology": "bread_barley",
+    "name": "Barley bread belt (Iberia and Egypt)",
+    "regions": "Hispania (all provinces), Aegyptus",
+    "notes": "Wheat bread was the aspirational standard everywhere in the empire, but the working poor of Iberia and Egypt ate mostly barley loaves and porridge, since wheat commanded a much higher price at the mill. Roman writers ranked barley bread below wheat and closer to animal fodder, yet it fed the bulk of both provinces' rural populations in 117 CE. Egypt's own poor also leaned on barley beer alongside bread, a habit inherited straight from Pharaonic diet. The gap between a legionary's wheat ration and a Baetican farmhand's barley loaf was a visible marker of status at every Roman table.",
+    "sources": [
+     "https://www.unrv.com/food/bread.php",
+     "https://europe.factsanddetails.com/article/entry-398.html"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       4.5,
+       50.5
+      ],
+      [
+       9.0,
+       52.0
+      ],
+      [
+       12.5,
+       51.0
+      ],
+      [
+       13.5,
+       48.5
+      ],
+      [
+       11.0,
+       46.3
+      ],
+      [
+       7.5,
+       45.7
+      ],
+      [
+       5.5,
+       47.0
+      ],
+      [
+       4.0,
+       49.5
+      ],
+      [
+       4.5,
+       50.5
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "cuisine_bread_spelt_alpine_rhine",
+    "typology": "bread_spelt",
+    "name": "Spelt and emmer bread belt (Alpine and Rhine provinces)",
+    "regions": "Raetia, Noricum, Germania Superior, Germania Inferior",
+    "notes": "North of the Alps, spelt displaced the emmer and barley loaves common further south, becoming the default bread and porridge grain of Raetia, Noricum, and the Rhine garrison zone by the early 2nd century CE. Archaeobotanical finds from Roman-era sites across Gaul, the Germanic provinces, and Britain confirm spelt's dominance where the growing season and soil suited it better than bread wheat. Legionaries stationed along the Rhine ate spelt porridge and bread as a matter of course, one more way frontier diet diverged from the Mediterranean core.",
+    "sources": [
+     "https://nunc.ch/en/the-hulled-wheats-rustic-ancestors-of-the-roman-cereal-system/",
+     "https://www.ancientgrains.com/blog/what-is-farro"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -7.5,
+        37.5
+       ],
+       [
+        -6.0,
+        36.0
+       ],
+       [
+        -5.0,
+        36.0
+       ],
+       [
+        -2.0,
+        36.7
+       ],
+       [
+        -1.5,
+        37.5
+       ],
+       [
+        -4.0,
+        38.0
+       ],
+       [
+        -6.5,
+        38.0
+       ],
+       [
+        -7.5,
+        37.5
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -5.5,
+        35.9
+       ],
+       [
+        -1.0,
+        35.5
+       ],
+       [
+        3.0,
+        36.8
+       ],
+       [
+        7.0,
+        37.0
+       ],
+       [
+        10.0,
+        36.8
+       ],
+       [
+        10.5,
+        35.5
+       ],
+       [
+        5.0,
+        34.5
+       ],
+       [
+        0.0,
+        34.0
+       ],
+       [
+        -4.0,
+        34.5
+       ],
+       [
+        -5.5,
+        35.9
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        32.5,
+        45.0
+       ],
+       [
+        36.5,
+        45.3
+       ],
+       [
+        36.7,
+        44.4
+       ],
+       [
+        35.0,
+        44.4
+       ],
+       [
+        33.0,
+        44.5
+       ],
+       [
+        32.5,
+        45.0
+       ]
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "cuisine_garum_heartland",
+    "typology": "garum_heartland",
+    "name": "Fish sauce heartland (Baetica, Africa, Bosporan Kingdom)",
+    "regions": "Hispania Baetica, Mauretania, Africa Proconsularis, Bosporan Kingdom (Crimea)",
+    "notes": "Garum and its cheaper cousin muria were shipped from these three coasts to every corner of the empire in sealed amphorae, but only here was fish sauce truly a daily-diet staple rather than a flavoring bought in small jars. Baelo Claudia in Baetica turned out garum sociorum, an aged premium grade made purely from mackerel and mullet viscera, while similar cetariae lined the Mauretanian and Bosporan coasts. Fish-salting vats at dozens of sites along this belt still hold the mineral residue of the fermenting fish that supplied Rome's kitchens for centuries.",
+    "sources": [
+     "https://www.nationalgeographic.com/history/history-magazine/article/what-is-garum-rome-fish-sauce",
+     "https://eleanorscottarchaeology.com/els-archaeology-blog/2025/2/1/garum-and-the-roman-world-the-fish-sauce-that-helped-to-build-an-empire"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        7.6,
+        45.1
+       ],
+       [
+        8.9,
+        46.1
+       ],
+       [
+        11.0,
+        46.8
+       ],
+       [
+        13.7,
+        46.5
+       ],
+       [
+        14.6,
+        42.4
+       ],
+       [
+        16.9,
+        40.8
+       ],
+       [
+        18.4,
+        40.1
+       ],
+       [
+        17.2,
+        39.8
+       ],
+       [
+        15.9,
+        38.2
+       ],
+       [
+        15.3,
+        40.0
+       ],
+       [
+        12.5,
+        38.0
+       ],
+       [
+        9.8,
+        39.2
+       ],
+       [
+        8.4,
+        40.9
+       ],
+       [
+        7.6,
+        43.5
+       ],
+       [
+        7.6,
+        45.1
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        19.3,
+        40.0
+       ],
+       [
+        21.5,
+        40.7
+       ],
+       [
+        23.5,
+        41.2
+       ],
+       [
+        26.5,
+        40.8
+       ],
+       [
+        26.9,
+        38.8
+       ],
+       [
+        28.0,
+        37.0
+       ],
+       [
+        26.0,
+        35.0
+       ],
+       [
+        23.5,
+        34.9
+       ],
+       [
+        21.0,
+        36.8
+       ],
+       [
+        19.6,
+        38.0
+       ],
+       [
+        19.3,
+        40.0
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -1.5,
+        37.5
+       ],
+       [
+        0.5,
+        38.5
+       ],
+       [
+        3.3,
+        39.5
+       ],
+       [
+        4.3,
+        43.3
+       ],
+       [
+        7.5,
+        43.9
+       ],
+       [
+        4.5,
+        44.5
+       ],
+       [
+        1.0,
+        42.5
+       ],
+       [
+        -1.5,
+        37.5
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -5.5,
+        35.9
+       ],
+       [
+        -1.0,
+        35.5
+       ],
+       [
+        3.0,
+        36.8
+       ],
+       [
+        7.0,
+        37.0
+       ],
+       [
+        10.0,
+        36.8
+       ],
+       [
+        10.5,
+        35.5
+       ],
+       [
+        9.0,
+        34.7
+       ],
+       [
+        5.0,
+        34.5
+       ],
+       [
+        0.0,
+        34.0
+       ],
+       [
+        -4.0,
+        34.5
+       ],
+       [
+        -5.5,
+        35.9
+       ]
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "cuisine_wine_oil_mediterranean",
+    "typology": "wine_oil_belt",
+    "name": "Wine and olive oil belt (Mediterranean core)",
+    "regions": "Italia, Graecia, Aegean islands, southern Gallia Narbonensis, coastal Hispania, coastal North Africa",
+    "notes": "Across the Mediterranean rim, wine was the standard drink and olive oil the standard cooking fat, poured over bread, mixed into sauces, and burned in every household lamp. Roman writers treated the pairing of wine and oil as the mark of civilized eating, contrasting it with the butter and beer of the frontier peoples to the north. Falernian, Chian, and Baetican vintages moved by the shipload along these same coasts, and olive presses dotted the countryside from Baetica to Syria. This zone had run on wine and oil for centuries before Trajan and would go on doing so for centuries after.",
+    "sources": [
+     "https://beer-studies.com/en/world-history/First-empires/Roman-Empire",
+     "https://lakejoyfarmstead.com/pork-fat-v-olive-oil/"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -6.0,
+        58.5
+       ],
+       [
+        -3.0,
+        58.7
+       ],
+       [
+        1.5,
+        57.5
+       ],
+       [
+        1.8,
+        52.0
+       ],
+       [
+        0.0,
+        50.7
+       ],
+       [
+        -3.0,
+        50.0
+       ],
+       [
+        -5.5,
+        50.0
+       ],
+       [
+        -6.5,
+        54.0
+       ],
+       [
+        -6.0,
+        58.5
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -1.5,
+        51.0
+       ],
+       [
+        3.0,
+        51.5
+       ],
+       [
+        7.0,
+        53.5
+       ],
+       [
+        9.5,
+        54.0
+       ],
+       [
+        12.0,
+        52.5
+       ],
+       [
+        13.5,
+        49.5
+       ],
+       [
+        11.0,
+        46.3
+       ],
+       [
+        7.5,
+        45.7
+       ],
+       [
+        3.0,
+        47.0
+       ],
+       [
+        -1.0,
+        48.5
+       ],
+       [
+        -1.5,
+        51.0
+       ]
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "cuisine_beer_fat_north",
+    "typology": "beer_fat_belt",
+    "name": "Beer and animal-fat belt (Britannia, northern Gaul, Germania)",
+    "regions": "Britannia, Gallia Belgica, Gallia Lugdunensis (north), Germania Superior, Germania Inferior",
+    "notes": "North of the wine line, cervesia, a barley or wheat beer sometimes sweetened with honey, was the everyday drink, and butter and lard stood in for olive oil in cooking. Tacitus recorded Rhineland Germans buying wine from Roman traders as a luxury while otherwise drinking their native brew, and Pliny the Elder dismissed butter as food fit only for barbarous nations. By 117 CE Roman wine was already pushing north along the Rhine in real volume, enough that Domitian had tried and failed in 92 CE to protect Italian vineyards by ordering provincial vines uprooted.",
+    "sources": [
+     "https://www.winelawonreserve.com/domitians-vine-edict-story-wine-law/",
+     "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D4%3Achapter%3D28"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       19.5,
+       32.9
+      ],
+      [
+       23.0,
+       32.9
+      ],
+      [
+       23.5,
+       31.5
+      ],
+      [
+       22.0,
+       30.5
+      ],
+      [
+       20.0,
+       30.8
+      ],
+      [
+       19.0,
+       31.8
+      ],
+      [
+       19.5,
+       32.9
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "cuisine_silphium_extinction_cyrenaica",
+    "typology": "extinct_luxury",
+    "name": "Silphium extinction zone (Cyrenaica)",
+    "regions": "Cyrenaica",
+    "notes": "Cyrenaica's silphium, a wild giant fennel prized across the Mediterranean as a seasoning, contraceptive, and cure-all, grew nowhere else on earth and had already vanished by 117 CE. Pliny the Elder recorded that the last known stalk, worth its weight in silver, was sent to the emperor Nero roughly fifty years earlier, and that within his own lifetime none could be found growing wild there. Overharvesting and overgrazing are the causes modern scholars point to, and the plant's disappearance is usually cited as history's first recorded species extinction.",
+    "sources": [
+     "https://www.worldhistory.org/Silphium/",
+     "https://en.wikipedia.org/wiki/Silphium"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       29.8,
+       31.28
+      ],
+      [
+       30.05,
+       31.28
+      ],
+      [
+       30.05,
+       31.1
+      ],
+      [
+       29.8,
+       31.1
+      ],
+      [
+       29.8,
+       31.28
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "cuisine_spice_gateway_alexandria",
+    "typology": "spice_gateway",
+    "name": "Pepper and spice trade gateway (Alexandria)",
+    "regions": "Aegyptus (Alexandria, transshipment point for the Muziris trade)",
+    "notes": "Black pepper and other Indian spices reached Roman kitchens by a single long chain: Indian Ocean monsoon ships from Muziris on India's Malabar coast to Red Sea ports, camel caravan across the Eastern Desert, then Nile barge and finally sea freight from Alexandria to Rome. A 2nd-century contract known as the Muziris papyrus values a single cargo of pepper and other Indian goods at close to seven million sesterces. Alexandria's warehouses were the empire's actual pepper gateway, the point where an Indian Ocean commodity became a Roman one.",
+    "sources": [
+     "https://global.oup.com/academic/product/the-indo-roman-pepper-trade-and-the-muziris-papyrus-9780198842347",
+     "https://factsanddetails.com/india/History/sub7_1a/entry-7123.html"
+    ]
+   }
+  }
+ ]
+}
