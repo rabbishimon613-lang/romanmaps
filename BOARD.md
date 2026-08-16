@@ -113,15 +113,21 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[02-P0-1]` **`terrain`** `polish` — Hillshade/relief under the land fill.
 - [ ] `[02-P0-4]` **`self-host-glyphs`** `fix` — Stop depending on `demotiles.maplibre.org`;
       a single point of failure that would erase every label on the map.
-- [~] `[09-P0-1]` **`ancient-sources`** `deepen` — claimed by cloud shift 3, 2026-08-16 12:27.
-      `ancient_sources[]` populated for every
+- [x] `[09-P0-1]` **`ancient-sources`** `deepen` — `ancient_sources[]` populated for every
       `confidence: high` POI. **Standing task — never "done", always available.**
       *Batch 1 done 2026-08-16: 108 of 221 high-confidence POIs (48.9%), 122 citations, plus an
       "In ancient writing" block on the card. Shape is `{author, work, ref, note}` — `note` says
       what the passage contains, in place of a quotation nobody here can check against a text.
-      Literary sources only; inscriptions belong to `[09-P1-4]`. 113 high-confidence POIs left,
-      mostly forts, villas, tombs and industrial sites where no text names the site directly —
-      expect a lower hit rate and skip rather than stretch a citation.*
+      Literary sources only; inscriptions belong to `[09-P1-4]`.*
+      *Batch 2 done 2026-08-16 by cloud shift 3: 37 more citations across the remaining 122
+      high-confidence POIs (145/221, 65.6%), via four parallel WebSearch-only research passes by
+      theme, personally reviewed and two spot-verified before merge. Hit rate ran from 2/31
+      (tombs) to 22/55 (forts and industrial — much higher than expected, since Ptolemy's
+      Geography names most legionary fortresses directly). One candidate dropped on review: a
+      citation whose own passage was actually about a neighboring POI's temple, not the site it
+      was offered for. 85 high-confidence POIs remain open — mostly tombs, villas, and
+      single-purpose industrial sites with no text naming them directly; expect a continued low
+      hit rate there and skip rather than stretch.*
 - [ ] `[06-P0-2]` **`curate-buildings`** `deepen` — Ostia-depth curated descriptions for the
       other 39 sites, ~10 buildings/day. **Standing task.**
 - [ ] `[15-P0-1]` **`unattended-screenshot-gate`** `fix` — ⚠️ **This blocks the daily pass from
@@ -241,10 +247,21 @@ to prevent. Building locally to *test* your own work is expected and fine.
   5c) — all wired into `useLayers.ts`/`Map.tsx`, defaulting OFF. Also fixed 3 same-category
   exact-coordinate marker stacks (Brigetio, Tapae, Bedriacum) found while auditing for the
   merge-themes backlog.
+- 2026-08-16 · `[11-P0-1]` split-site-data · cloud shift 3. Split the 27MB merged
+  `sites_buildings`/`sites_streets` into 80 per-site files under `public/data/sites/`
+  (`scripts/split-site-data.mjs`); `Map.tsx` now fetches a site's pair only when visited instead
+  of all 40 on every cold load. Verified with Playwright: 0 `/data/sites/*` requests on cold
+  load, correct fetch + render on Explore-panel visit and on a direct deep link.
+- 2026-08-16 · `[12-FIX-2]` brigetio-stacked-pins · cloud shift 3. Brigetio itself was already
+  fixed by shift 2's audit; found and fixed the same fixed-DOM-marker occlusion bug in
+  `people_117.geojson` (6 clusters, 11 markers offset).
+- 2026-08-16 · `[09-P0-1]` ancient-sources · Batch 2: 37 more citations, 145/221 high-confidence
+  POIs now covered (65.6%). See ticket note above for the per-theme hit-rate breakdown.
 
-**Ratio state after this run:** 1 `add` (axes 9b/9d/9e/5c) · 2 `deepen` · 1 `polish`-shaped `fix`
-(+2 more off-ratio `fix`). **The next run owes a `deepen` and a `polish`** — `[15-P0-1]`'s
-Playwright workaround below applies to `polish` tickets same as it did for this run's `fix`.
+**Ratio state after this run:** cloud shift 3 shipped 1 `polish` (`[11-P0-1]` split-site-data)
+and 1 `deepen` (`[09-P0-1]` ancient-sources batch 2) — exactly what the previous run owed —
+plus one off-ratio `fix` (`[12-FIX-2]`, found while auditing for the polish ticket). **The next
+run owes an `add`.**
 
 **Note on `[15-P0-1]` for future runs:** the visual gate is only unreachable from the *Mac-side
 unattended editorial routine*, which has no way to launch a dev server or a browser. A cloud
