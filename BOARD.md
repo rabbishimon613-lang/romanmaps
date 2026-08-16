@@ -64,6 +64,23 @@ to prevent. Building locally to *test* your own work is expected and fine.
       now starts both sources empty and fetches a site's pair only when visited (Explore-panel
       jump or a moveend proximity check, so deep links/search still work). Verified with
       Playwright: 0 requests to `/data/sites/*` on cold load, correct fetch + render on visit.
+- [ ] `[12-FIX-3]` **`duplicate-pantheon`** `retire` — `poi_pantheon` and `poi_pantheon_rome` are
+      the same building, eight metres apart, and until 2026-08-16 they said opposite things:
+      one had the site as a Trajanic construction site with `extant_117ce: false`, the other
+      claimed Agrippa's temple was still standing — which is wrong, it burned in 80 CE. The
+      contradiction is fixed and both records now read correctly, but two pins for one Pantheon
+      remain. Retire `poi_pantheon_rome` (the shallower record) and keep `poi_pantheon`.
+      **Not a silent delete:** `/place/pantheon_rome` is a generated page, so this needs a
+      redirect or a decision to accept the 404, which is why it was left rather than done in
+      passing. Worth checking the other 73 cross-file collisions the validator reports for the
+      same both-records-disagree shape while in here.
+- [ ] `[08-P1-6]` **`baalbek-dating`** `verify` — Both Baalbek temples carry `built: 60` in
+      `pois.geojson`, and the Temple of Bacchus is conventionally dated a good deal later — mid
+      2nd century, under Antoninus Pius. If that is right, the building is barely begun at the
+      117 CE snapshot rather than nearly finished. The description written on 2026-08-16 was
+      deliberately phrased to hold under either dating ("the shell is well advanced and the
+      carvers are still at work") rather than silently reverse another worker's `built` value.
+      Settle the date, then set `built` and the text to match.
 - [ ] `[11-P0-3]` **`delete-dead-data`** `retire` — Delete `roads_high`, `roads_low`,
       `places_high` (~11MB shipped, never loaded) or wire them into a detail ladder.
 - [ ] `[01-P0-1]` **`selected-marker`** `polish` — Selected POI gets an enlarged ringed marker;
@@ -186,17 +203,23 @@ to prevent. Building locally to *test* your own work is expected and fine.
       reliably the actual building meant — future-proof against new Overpass pulls. Verified with
       Playwright against both Pompeii's new content and three known-good Ostia buildings (no
       regression). 39 sites still open for the standing task.
-- [~] `[10-P0-3]` **`flagship-depth`** `deepen` — claimed by mac editorial pass, 2026-08-16 09:58.
-      110 of 467 POIs have a `notes` field under 60 words, and `npm run metrics` shows the thin
-      tail is led by the **most famous places on the map** — Parthenon, Pantheon, Karnak, Baalbek,
-      Maison Carrée, Trajan's Markets, Temple of Zeus at Olympia. A visitor who clicks the one
-      name they recognise gets two sentences. That is the "feels empty" complaint in its purest
-      form, and it is measurable. Bring the thin tail up to real panel depth in the existing
-      `notes` field, worst-first. This is the **panel tier of `[10-P0-2]`** applied to the places
-      that need it most; the tombstone/label tiers still need that ticket's schema and UI work.
-      Renders through the card's existing "About" block, so it needs no UI change and no visual
-      gate — which makes it the one `deepen` the unattended Mac pass can fully ship while
-      `[15-P0-1]` stands. **Standing until the thin count reaches zero.**
+- [ ] `[10-P0-3]` **`flagship-depth`** `deepen` — Bring POIs whose `notes` runs under 60 words up
+      to real panel depth in that same field, worst-first. This is the **panel tier of
+      `[10-P0-2]`** applied to the places that need it most; the tombstone/label tiers still need
+      that ticket's schema and UI work. Renders through the card's existing "About" block, so it
+      needs no UI change and no visual gate — which makes it the one `deepen` the unattended Mac
+      pass can fully ship while `[15-P0-1]` stands. **Standing until the thin count reaches zero;
+      `npm run metrics` prints the queue.**
+      *Batch 1 done 2026-08-16 by the mac editorial pass: 35 fields rewritten, depth 76.4% →
+      82.7%, thin tail 110 → 81. The tail was led by the most famous places on the map — the
+      Parthenon at 33 words, the Pantheon at 32, Karnak, Baalbek, the Roman Forum, the Colosseum,
+      Maison Carrée, Trajan's Markets — which is the "feels empty" complaint in its purest form.
+      Nine of the 35 were not thin but were shipping authoring scaffolding to readers: notes
+      opening "COMPLICATED CASE", "CORRECTION TO INITIAL BRIEF", "CAVEAT", "per project
+      guardrails", one naming the `extant_117ce` field outright, and the Temple of Isis at Pompeii
+      arguing with itself and trailing off in "... wait: Pompeii is buried by 117". Research
+      preserved, voice replaced. What remains in the tail is frontier forts at 44–59 words, not
+      monuments anyone came looking for — a lower-value but still real batch 2.*
 - [ ] `[15-P0-1]` **`unattended-screenshot-gate`** `fix` — ⚠️ **This blocks the daily pass from
       taking any UI ticket at all.** The gate below requires a screenshot at 375×812 dark and at
       desktop light, but the 09:30 editorial pass runs unattended and a dev server cannot be
@@ -283,8 +306,16 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[06-P2-6]` **`priority-cities`** `add` — Alexandria, Carthage, Antioch, Londinium,
       Lugdunum, Tarraco, Pergamon, Caesarea Maritima before further Italian secondary towns.
 - [ ] `[08-P2-7]` **`ancient-lakes`** `add` — Fucinus, Copais, Karla and the rest.
-- [~] `[15-P1-4]` **`metrics`** `polish` — claimed by mac editorial pass, 2026-08-16 09:34.
-      `METRICS.md`: depth %, coverage, LCP, validator warnings, recorded daily.
+- [x] `[15-P1-4]` **`metrics`** `polish` — Done 2026-08-16 by the mac editorial pass.
+      `scripts/metrics.mjs` + `npm run metrics` (`--write` rewrites `METRICS.md`, `--json` for a
+      future dashboard). Measures depth, imagery, ancient-source and per-site curation coverage
+      off `public/data/` and `app/`, and shells out to `scripts/validate.mjs` rather than
+      reimplementing "clean". Re-running on the same day replaces that day's section and history
+      row; a new day inserts above the previous one. The point of writing it: the hand-kept table
+      already read 448 POIs against 467 in the file, because the data grew while it was being
+      tallied. It also prints the thinnest fifteen descriptions, which is the work queue behind
+      the depth number and is what `[10-P0-3]` was opened from. Cold-load LCP deliberately left
+      unmeasured rather than faked — it needs a dev server, blocked by `[15-P0-1]`.
 
 ---
 
@@ -343,6 +374,13 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - 2026-08-16 · `[01-P0-2]` camera-memory · cloud shift 4. localStorage fallback for the camera
   position when no URL hash is present, so a returning visitor lands where they left off instead
   of always resetting to the empire-wide opening view. See ticket note above.
+- 2026-08-16 · `[15-P1-4]` metrics · mac editorial pass. `scripts/metrics.mjs` + `npm run
+  metrics`; the hand-kept table had already drifted 19 POIs behind the data it described.
+- 2026-08-16 · `[10-P0-3]` flagship-depth · mac editorial pass. Batch 1: 35 `notes` rewritten,
+  depth 76.4% → 82.7%, thin tail 110 → 81. The thin tail turned out to be the Parthenon, the
+  Pantheon, the Colosseum, Karnak, Baalbek and the Roman Forum; nine of the 35 were also shipping
+  authoring scaffolding ("COMPLICATED CASE", "CORRECTION TO INITIAL BRIEF", "... wait: Pompeii is
+  buried by 117") straight to readers. Ticket opened this run and stays standing.
 
 **Ratio state after this run:** cloud shift 3 shipped 1 `polish` (`[11-P0-1]` split-site-data),
 2 `deepen` (`[09-P0-1]` ancient-sources batch 2, `[06-P0-2]` curate-buildings/Pompeii), and 1
@@ -351,10 +389,27 @@ to prevent. Building locally to *test* your own work is expected and fine.
 click-priority bug, found while verifying the second deepen ticket). Cloud shift 4 opened a fresh
 cycle with `[10-P0-1]` tours (`add`), followed it with 2 `deepen` (`[09-P0-1]` ancient-sources
 batch 3, `[06-P0-2]` curate-buildings/Herculaneum), and closed it with 1 `polish`
-(`[01-P0-2]` camera-memory) — a second complete 1:2:1 cycle. **The next run starts a fresh cycle:
-topmost `add` first.** At the time this run ends the topmost unclaimed `add` is `[14-P1-4]`
-province-pages (P1) unless a P0 `add` opens up first — check the board fresh, don't assume this
-note is still current by the time you read it.
+(`[01-P0-2]` camera-memory) — a second complete 1:2:1 cycle.
+
+The 2026-08-16 mac editorial pass then ran 1 `polish` (`[15-P1-4]` metrics) and 1 `deepen`
+(`[10-P0-3]` flagship-depth). **A collision worth recording, because it will recur:** it claimed
+the polish at 09:34, when shift 4's open cycle was `add` + 2 `deepen` and owed exactly one
+polish. Shift 4 closed that slot itself with camera-memory in the meantime, so the cycle took two
+polishes and the local clone only learned about it on the rebase at the end of the run. Claiming
+prevented the duplicated *work*, which is what it is for; it does not synchronise the *ratio*.
+Treat the ratio as an estate-wide average across runs, not a contract any single run can hold.
+
+**So the open cycle owes 1 `add` and 1 `deepen`, and the next run should start with the `add`.**
+At the time this run ends the topmost unclaimed `add` is `[14-P1-4]` province-pages (P1) unless a
+P0 `add` opens up first — check the board fresh, don't assume this note is still current by the
+time you read it.
+
+**One standing constraint the mac pass re-confirmed 2026-08-16**, in case it reads as stale: it
+tried `preview_start` on the checked-in `.claude/launch.json` before choosing tickets, and got a
+hard refusal — dev servers cannot be started from an unattended session, full stop. `[15-P0-1]`
+is real and current, and it is why that run took a non-visual `polish` (a script, no chrome) and
+a `deepen` that renders through a card block that already exists. That pairing is the shape of a
+mac-pass run until `[15-P0-1]` is fixed.
 
 **Note on `[15-P0-1]` for future runs:** the visual gate is only unreachable from the *Mac-side
 unattended editorial routine*, which has no way to launch a dev server or a browser. A cloud
