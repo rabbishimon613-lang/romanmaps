@@ -6559,7 +6559,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/CetariasTroia.JPG?width=800",
-    "image_credit": "Fish-salting tanks (cetariae) at the Roman ruins of Troia · Wikimedia Commons (CC BY-SA)"
+    "image_credit": "Fish-salting tanks (cetariae) at the Roman ruins of Troia · Wikimedia Commons (CC BY-SA)",
+    "ancient_sources": [
+     {
+      "author": "Ptolemy",
+      "work": "Geography",
+      "ref": "2.5",
+      "note": "Lists Caetobrix among the coastal towns of Lusitania south of the Tagus, the ancient name conventionally identified with the fish-salting settlement on the Troia peninsula opposite Cetobriga."
+     }
+    ]
    }
   },
   {
@@ -6808,7 +6816,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alba_Iulia_National_Museum_of_the_Union_2011_-_Roman_Wooden_Tools_Used_for_Salt_Mining,_Ocna_Mures.JPG?width=800",
-    "image_credit": "Roman wooden tools used for salt mining at Ocna Mures, National Museum of the Union, Alba Iulia · Wikimedia Commons (CC BY-SA)"
+    "image_credit": "Roman wooden tools used for salt mining at Ocna Mures, National Museum of the Union, Alba Iulia · Wikimedia Commons (CC BY-SA)",
+    "ancient_sources": [
+     {
+      "author": "Ptolemy",
+      "work": "Geography",
+      "ref": "3.8",
+      "note": "Names a Dacian town called Salinae in his list of the province's settlements, conventionally identified with the salt-producing site at modern Ocna Mures."
+     }
+    ]
    }
   },
   {
@@ -14049,7 +14065,15 @@
      "https://en.wikipedia.org/wiki/Circus_of_Carthage",
      "https://www.dainst.blog/190JahreDAI/en/day-91-the-circus-of-carthage/"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Salvian",
+      "work": "De Gubernatione Dei",
+      "ref": "6.69",
+      "note": "Describes Carthage's citizens still packing the circus and shouting for the races as the Vandal army closed in on the city in 439 CE, calling it a mark of how far the city's morals had fallen even in its last hours."
+     }
+    ]
    }
   },
   {
