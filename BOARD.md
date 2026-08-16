@@ -67,7 +67,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[01-P0-2]` **`camera-memory`** `polish` — Persist and restore the last camera.
 - [ ] `[03-P0-2]` **`card-rebuild`** `polish` — Rebuild the place card to the eleven-block
       order; every block hides when empty.
-- [ ] `[03-FIX-1]` **`notes-truncation`** `fix` — `cleanNotes()` in `PlaceDetails.tsx` cuts every
+- [~] `[03-FIX-1]` **`notes-truncation`** `fix` — claimed by cloud shift 2, 2026-08-16 06:20 —
+      `cleanNotes()` in `PlaceDetails.tsx` cuts every
       description to its first two sentences or 280 characters, so **77% of POIs have a 60+ word
       description and no reader has ever seen past the opening of one.** This is a large part of
       why the product reads as empty. The truncation is there to hide shift-scholar voice in the
