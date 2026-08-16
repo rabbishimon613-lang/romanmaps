@@ -130,8 +130,7 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[02-P0-1]` **`terrain`** `polish` — Hillshade/relief under the land fill.
 - [ ] `[02-P0-4]` **`self-host-glyphs`** `fix` — Stop depending on `demotiles.maplibre.org`;
       a single point of failure that would erase every label on the map.
-- [~] `[09-P0-1]` **`ancient-sources`** `deepen` — claimed by cloud shift 4, 2026-08-16 15:50
-      (batch 3, standing task). `ancient_sources[]` populated for every
+- [x] `[09-P0-1]` **`ancient-sources`** `deepen` — `ancient_sources[]` populated for every
       `confidence: high` POI. **Standing task — never "done", always available.**
       *Batch 1 done 2026-08-16: 108 of 221 high-confidence POIs (48.9%), 122 citations, plus an
       "In ancient writing" block on the card. Shape is `{author, work, ref, note}` — `note` says
@@ -146,14 +145,28 @@ to prevent. Building locally to *test* your own work is expected and fine.
       was offered for. 85 high-confidence POIs remain open — mostly tombs, villas, and
       single-purpose industrial sites with no text naming them directly; expect a continued low
       hit rate there and skip rather than stretch.*
-- [~] `[06-P0-2]` **`curate-buildings`** `deepen` — claimed by cloud shift 4, 2026-08-16 16:05
-      (Herculaneum, standing task). Ostia-depth curated descriptions for the
+      *Batch 3 done 2026-08-16 by cloud shift 4: 3 more citations (148/230, 64.3% — the pool grew
+      to 230 as other shifts added POIs). Confirmed the board's own prediction — this remaining
+      85-POI pool is almost entirely tombs (0/29), villas/shipwrecks (0/12), and industrial sites
+      with a real but thin yield (2/21: Ptolemy on Caetobrix/Troia and on Dacian Salinae/Ocna
+      Mures) plus one civic hit (1/23: Salvian on Carthage's circus in its final Vandal-siege
+      days). One candidate dropped again for the same wrong-POI-mismatch shape batch 2 caught —
+      a Macrobius passage about Baalbek's temple oracle offered for the neighboring quarry POI.
+      82 remain open; expect a continued low hit rate.*
+- [x] `[06-P0-2]` **`curate-buildings`** `deepen` — Ostia-depth curated descriptions for the
       other 39 sites, ~10 buildings/day. **Standing task, never "done".**
       *Pompeii done 2026-08-16 by cloud shift 3: 28 buildings in `app/pompeiiDescriptions.ts`
       (House of the Faun, Temple of Apollo, the Forum and its temples, the three bath complexes,
       the Brothel, named houses on Via dell'Abbondanza and elsewhere), same pattern as
       `ostiaDescriptions.ts`. 2 of 30 researched buildings dropped on review for confidence/
       conflation reasons — see commit for specifics.*
+      *Herculaneum done 2026-08-16 by cloud shift 4: 34 buildings in
+      `app/herculaneumDescriptions.ts` — the Villa of the Papyri, the Great Palaestra, the Boat
+      Pavilion, the College of the Augustales, three bath complexes, and named houses. One
+      candidate ("Sacello") dropped as a duplicate of the Augustales hall already covered under
+      its own name. One suspiciously exact claim (a 2026 reopening date) spot-verified against
+      the Parco Archeologico di Ercolano's own site and independent press before merging — real,
+      9 July 2026. 38 sites still open for the standing task.*
       **Real bug found and fixed in the same pass, site-wide, not Pompeii-only**: several sites'
       Overpass fetches mix each park's own boundary polygon and (Ostia, Pompeii) "Regio"-numbered
       district outlines into the *same* source as individual named buildings. Whichever renders
@@ -315,13 +328,19 @@ to prevent. Building locally to *test* your own work is expected and fine.
   (Via Appia, A Day in Ostia, What Was New in 117), 54 stops total, every one built from data
   already on the map. See ticket note above for the panel-overlap bug found and fixed in the
   same pass.
+- 2026-08-16 · `[09-P0-1]` ancient-sources · Batch 3: 3 more citations, 148/230 high-confidence
+  POIs now covered (64.3%). See ticket note above for the per-theme breakdown.
+- 2026-08-16 · `[06-P0-2]` curate-buildings (Herculaneum) · cloud shift 4. 34 buildings in
+  `app/herculaneumDescriptions.ts`. See ticket note above.
 
 **Ratio state after this run:** cloud shift 3 shipped 1 `polish` (`[11-P0-1]` split-site-data),
 2 `deepen` (`[09-P0-1]` ancient-sources batch 2, `[06-P0-2]` curate-buildings/Pompeii), and 1
 `add` (`[14-P0-2]` place-pages) — a complete 1:2:1 cycle in one run — plus one off-ratio `fix`
 (`[12-FIX-2]`, found while auditing for the polish ticket) and a second, unplanned `fix` (the
 click-priority bug, found while verifying the second deepen ticket). Cloud shift 4 opened a fresh
-cycle with `[10-P0-1]` tours (`add`) — see further down for how the rest of that cycle went.
+cycle with `[10-P0-1]` tours (`add`) and followed it with 2 `deepen` (`[09-P0-1]` ancient-sources
+batch 3, `[06-P0-2]` curate-buildings/Herculaneum) — 1:2 of the cycle done, a `polish` ticket
+still owed.
 
 **Note on `[15-P0-1]` for future runs:** the visual gate is only unreachable from the *Mac-side
 unattended editorial routine*, which has no way to launch a dev server or a browser. A cloud
