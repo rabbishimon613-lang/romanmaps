@@ -38,7 +38,7 @@ const G_SHIPWRECK = "M11 2h2v9h4l-1 2H8l-1-2h4V2zM5 16h14l-2 4H7l-2-4z";
 export const CATEGORY_GROUPS: CategoryGroup[] = [
   { id: "religious",       label: "Temples & shrines",           short: "Temples",      color: "#c94b4b", categories: ["temple","synagogue","mithraeum","sanctuary","oracle","asklepieion"], glyph: G_TEMPLE },
   { id: "leisure",         label: "Baths",                       short: "Baths",        color: "#4a8cbf", categories: ["bath","bathhouse"], glyph: G_BATH },
-  { id: "entertainment",   label: "Theatres & arenas",           short: "Arenas",       color: "#a05f2e", categories: ["amphitheater","theater","circus"], glyph: G_AMPHI },
+  { id: "entertainment",   label: "Theatres & arenas",           short: "Arenas",       color: "#a05f2e", categories: ["amphitheater","theater","circus","ludus"], glyph: G_AMPHI },
   { id: "civic",           label: "Civic & government",          short: "Civic",        color: "#b0431a", categories: ["forum","basilica","curia","collegium"], glyph: G_FORUM },
   { id: "residential",     label: "Palaces & residences",        short: "Palaces",      color: "#8859a6", categories: ["palace","house","villa","domus"], glyph: G_PALACE },
   { id: "maritime",        label: "Ports & harbors",             short: "Ports",        color: "#2a7fb5", categories: ["port","lighthouse","canal","harbor"], glyph: G_PORT },
@@ -47,7 +47,7 @@ export const CATEGORY_GROUPS: CategoryGroup[] = [
   { id: "industry",        label: "Mines & industry",            short: "Industry",     color: "#6a5f4a", categories: ["mine","quarry","garum_factory","salina","kiln","estate"], glyph: G_MINE },
   { id: "learning",        label: "Libraries",                   short: "Libraries",    color: "#a08a2e", categories: ["library"], glyph: G_LIBRARY },
   { id: "monuments",       label: "Arches, columns & monuments", short: "Monuments",    color: "#c94b4b", categories: ["arch","column","monument","obelisk"], glyph: G_MONUMENT },
-  { id: "tombs",           label: "Tombs & mausolea",            short: "Tombs",        color: "#5c5c5c", categories: ["mausoleum","necropolis","tomb"], glyph: G_TOMB },
+  { id: "tombs",           label: "Tombs & mausolea",            short: "Tombs",        color: "#5c5c5c", categories: ["mausoleum","necropolis","tomb","sarcophagus_workshop"], glyph: G_TOMB },
   { id: "commerce",        label: "Markets & warehouses",        short: "Markets",      color: "#a06b2e", categories: ["market","warehouse","taberna","macellum"], glyph: G_MARKET },
   { id: "transit",         label: "Bridges & gates",             short: "Gateways",     color: "#6a6a6a", categories: ["road","gate","bridge"], glyph: G_BRIDGE },
   { id: "water",           label: "Fountains",                   short: "Fountains",    color: "#4a8cbf", categories: ["fountain"], glyph: G_FOUNTAIN },

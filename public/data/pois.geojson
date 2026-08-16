@@ -3818,8 +3818,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     18.1352,
-     47.7314
+     18.1452,
+     47.7374
     ]
    },
    "properties": {
@@ -9315,8 +9315,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     22.725,
-     45.5056
+     22.737,
+     45.4976
     ]
    },
    "properties": {
@@ -9447,8 +9447,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     10.14,
-     45.09
+     10.13,
+     45.097
     ]
    },
    "properties": {
@@ -13476,6 +13476,535 @@
     "confidence": "medium",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Manastirine_(Salona)_02.jpg?width=800",
     "image_credit": "Photo: Wikimedia Commons contributor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.4944,
+     41.8908
+    ]
+   },
+   "properties": {
+    "id": "poi_ludus_magnus_rome",
+    "category": "ludus",
+    "name_latin": "Ludus Magnus",
+    "name_english": "Great Gladiator School",
+    "province": "Italia",
+    "modern_location": "Rome, Italy",
+    "built": 81,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "The largest of Rome's four imperial gladiator schools, built by Domitian directly east of the Colosseum and linked to it by an underground tunnel so fighters could reach the arena unseen. Its own small oval training ground, ringed by barracks and cells, could hold roughly 2,000 gladiators at full capacity. Excavated remains are still visible today just off the Via Labicana. In 117 CE it was Rome's premier gladiatorial training ground, fully staffed and in daily use.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Ludus_Magnus",
+     "https://www.turismoroma.it/en/places/ludus-magnus"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ludus_magnus_Rome_2006.jpg?width=800",
+    "image_credit": "Ludus Magnus, Rome, photographed 2006 by Jastrow - Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.4975,
+     41.889
+    ]
+   },
+   "properties": {
+    "id": "poi_ludus_dacicus_rome",
+    "category": "ludus",
+    "name_latin": "Ludus Dacicus",
+    "name_english": "Dacian Gladiator School",
+    "province": "Italia",
+    "modern_location": "Rome, Italy, near the Caelian Hill",
+    "built": 81,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Founded under Domitian and completed under Trajan to train gladiators drawn from Dacian prisoners, its fighters specialized in the falx, the curved blade that had cut through Roman shields on the Danube frontier. It stood on the slope of the Caelian Hill east of the Colosseum, alongside Rome's three other imperial schools, though its exact footprint has never been pinned down by excavation. Trajan's Dacian triumph of 106 CE kept it freshly supplied with captives in the years just before 117 CE.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Ludus_Dacicus",
+     "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/ludi.html"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.496,
+     41.8886
+    ]
+   },
+   "properties": {
+    "id": "poi_ludus_gallicus_rome",
+    "category": "ludus",
+    "name_latin": "Ludus Gallicus",
+    "name_english": "Gallic Gladiator School",
+    "province": "Italia",
+    "modern_location": "Rome, Italy, near the Colosseum",
+    "built": 81,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "One of Domitian's four imperial gladiator schools, training fighters in the heavy-armored style associated with Gallic warriors, whose bulky equipment was prized for spectacle even as it slowed a fighter's footwork in the arena. Ancient sources place it in Rome's Regio II near the Colosseum alongside the Ludus Magnus, Dacicus, and Matutinus, but unlike the Ludus Magnus its precise site has never been excavated. It was still functioning as one of the four state-run schools in 117 CE.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Ludus_(ancient_Rome)",
+     "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/ludi.html"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.495,
+     41.887
+    ]
+   },
+   "properties": {
+    "id": "poi_ludus_matutinus_rome",
+    "category": "ludus",
+    "name_latin": "Ludus Matutinus",
+    "name_english": "Morning School (Beast Fighters)",
+    "province": "Italia",
+    "modern_location": "Rome, Italy, near the Colosseum",
+    "built": 81,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "The fourth of Domitian's imperial schools, training bestiarii, the men who fought and hunted wild animals in the morning program before the afternoon's gladiator bouts, hence its name. Topographers have placed it between the Claudianum and the Vicus Caput Africae, but like the Gallicus and Dacicus, no excavated structure has been firmly identified as this school. It was one of four functioning state schools supplying the Colosseum's beast hunts in 117 CE.",
+    "sources": [
+     "https://www.romeandart.eu/en/art-ludus-matutinus.html",
+     "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/ludi.html"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.2508,
+     41.0847
+    ]
+   },
+   "properties": {
+    "id": "poi_ludus_capua",
+    "category": "ludus",
+    "name_latin": "Ludus Capuanus",
+    "name_english": "Gladiator School of Capua",
+    "province": "Campania",
+    "modern_location": "Santa Maria Capua Vetere, Italy",
+    "built": -105,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "The most famous gladiator school outside Rome, and the oldest one on record: a lanista named Aurelius Scaurus was training state gladiators here around 105 BCE. It became infamous in 73 BCE when roughly 70 gladiators, led by the Thracian fighter Spartacus, broke out and touched off the Third Servile War. Its ruins lie beside Capua's amphitheater, second in size only to the Colosseum. The school was still operating, and the amphitheater still hosting games, in 117 CE.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Ludus_(ancient_Rome)",
+     "https://www.leisure-italy.com/travel-tips/amphitheatre-of-capua/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Amphitheatre_of_Santa_Maria_Capua_Vetere_003.jpg?width=800",
+    "image_credit": "Amphitheatre of Santa Maria Capua Vetere, adjacent to the gladiator school site - Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.2035,
+     44.4184
+    ]
+   },
+   "properties": {
+    "id": "poi_ludus_ravenna",
+    "category": "ludus",
+    "name_latin": "Ludus Ravennas",
+    "name_english": "Gladiator School of Ravenna",
+    "province": "Italia",
+    "modern_location": "Ravenna, Italy",
+    "built": null,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Ravenna hosted one of the handful of gladiator schools outside Rome brought under direct state administration by the early empire, alongside Praeneste, Alexandria, and Pergamon. Its exact site within the ancient city has not been located archaeologically, and its history survives mainly through epigraphic and literary mentions rather than excavated remains. Ravenna's standing as home port of Rome's Adriatic war fleet made it a natural garrison town for a state-run school of this kind.",
+    "sources": [
+     "https://www.unrv.com/entertainment/gladiator-schools-ludi.php",
+     "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/ludi.html"
+    ],
+    "confidence": "low"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     29.9187,
+     31.2001
+    ]
+   },
+   "properties": {
+    "id": "poi_ludus_alexandria",
+    "category": "ludus",
+    "name_latin": "Ludus Alexandrinus",
+    "name_english": "Gladiator School of Alexandria",
+    "province": "Aegyptus",
+    "modern_location": "Alexandria, Egypt",
+    "built": null,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Alexandria's gladiator school was one of a small group of provincial ludi absorbed into direct imperial administration by the late 1st century CE, training fighters for Egypt's amphitheaters. Its physical location within the ancient city is not archaeologically fixed, and it is known chiefly through literary references grouping it with the state schools at Pergamon, Praeneste, and Capua. Alexandria's rank as the empire's second city made it a natural site for imperial investment in the games.",
+    "sources": [
+     "https://www.unrv.com/entertainment/gladiator-schools-ludi.php"
+    ],
+    "confidence": "low"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     27.1848,
+     39.1325
+    ]
+   },
+   "properties": {
+    "id": "poi_ludus_pergamon",
+    "category": "ludus",
+    "name_latin": "Ludus Pergamenus",
+    "name_english": "Gladiator School of Pergamon",
+    "province": "Asia",
+    "modern_location": "Bergama, Turkey",
+    "built": null,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Pergamon's gladiator school was another of the provincial ludi brought under state control in the early empire, training fighters in a city also renowned for a great school of medicine. Its exact location has not been excavated or identified, and it is attested mainly alongside the other named state schools at Alexandria, Praeneste, and Capua. Pergamon sat in a province where Greek athletics, not gladiatorial games, remained the dominant public spectacle.",
+    "sources": [
+     "https://www.unrv.com/entertainment/gladiator-schools-ludi.php"
+    ],
+    "confidence": "low"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.4534,
+     41.9022
+    ]
+   },
+   "properties": {
+    "id": "poi_circus_nero_vatican",
+    "category": "circus",
+    "name_latin": "Circus Gaii et Neronis",
+    "name_english": "Circus of Nero",
+    "province": "Italia",
+    "modern_location": "Vatican City",
+    "built": 40,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Begun under Caligula on his family's estate on the Vatican Hill and finished under Claudius, this circus is separate from the Circus Maximus across the river, best known as the site of Nero's persecution of Christians after the fire of 64 CE. Its spina carried an Egyptian obelisk from Heliopolis, the same one standing today in St Peter's Square since 1586. Still active in 117 CE, it later gave its ground to the basilica of St Peter's.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Circus_of_Nero",
+     "https://www.thebyzantinelegacy.com/vatican-obelisk"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Obelisco%20Vaticano%EF%BC%88Piazza%20San%20Pietro%EF%BC%89.JPG?width=800",
+    "image_credit": "Vatican Obelisk, originally the spina obelisk of the Circus of Nero - Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.3231,
+     36.8514
+    ]
+   },
+   "properties": {
+    "id": "poi_circus_carthage",
+    "category": "circus",
+    "name_latin": "Circus Carthaginiensis",
+    "name_english": "Circus of Carthage",
+    "province": "Africa Proconsularis",
+    "modern_location": "Carthage, Tunisia",
+    "built": 90,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Built over a former necropolis at the end of the 1st century CE, Carthage's circus stretched more than 470 meters, about a third the length of the Circus Maximus, and could seat roughly 45,000 spectators for chariot races. It ranked among the largest circuses anywhere outside Rome and Antioch, reflecting Carthage's status as Africa's leading city. In use and hosting races by 117 CE, it remained active for centuries afterward, with further building work added in the early 3rd century.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Circus_of_Carthage",
+     "https://www.dainst.blog/190JahreDAI/en/day-91-the-circus-of-carthage/"
+    ],
+    "confidence": "high"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.3236,
+     36.8577
+    ]
+   },
+   "properties": {
+    "id": "poi_amphitheater_carthage",
+    "category": "amphitheater",
+    "name_latin": "Amphitheatrum Carthaginis",
+    "name_english": "Amphitheatre of Carthage",
+    "province": "Africa Proconsularis",
+    "modern_location": "Carthage, Tunisia",
+    "built": 80,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Carthage's amphitheater went up west of the Byrsa hill at the end of the 1st or start of the 2nd century CE, with an inscription confirming it was already in service by 133-139 CE, just after this map's snapshot. It seated around 30,000, one of the largest arenas in Roman Africa. Christian tradition later placed the martyrdoms of Perpetua and Felicity here in 203 CE. Under construction or newly finished as Trajan's reign closed in 117 CE.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Carthage_amphitheatre",
+     "https://commons.wikimedia.org/wiki/File:Roman_amphitheatre_of_Carthage_-_inner_view_south.jpg"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20amphitheatre%20of%20Carthage%20-%20inner%20view%20south.jpg?width=800",
+    "image_credit": "Roman amphitheatre of Carthage, interior view - Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.708,
+     35.2967
+    ]
+   },
+   "properties": {
+    "id": "poi_amphitheater_thysdrus_early",
+    "category": "amphitheater",
+    "name_latin": "Amphitheatrum Thysdri (prius)",
+    "name_english": "Early Amphitheatre of Thysdrus",
+    "province": "Africa Proconsularis",
+    "modern_location": "El Djem, Tunisia",
+    "built": 1,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Long before the massive amphitheater that made El Djem famous, Thysdrus already had a much smaller arena, an earthen structure excavated in 1973 with a capacity of around 6,000, dated by specialists to the 1st century CE. A second, intermediate amphitheater followed on the same site before the great stone amphitheater seen today rose around 238 CE, over a century after Trajan's death. In 117 CE it was this small first-generation arena serving Thysdrus, not the monumental one tourists visit now.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Amphitheatre_of_El_Jem",
+     "https://en.wikipedia.org/wiki/Thysdrus"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3608,
+     43.8073
+    ]
+   },
+   "properties": {
+    "id": "poi_amphitheater_nemausus",
+    "category": "amphitheater",
+    "name_latin": "Amphitheatrum Nemausense",
+    "name_english": "Amphitheatre of Nimes",
+    "province": "Gallia Narbonensis",
+    "modern_location": "Nimes, France",
+    "built": 90,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Built under the Flavian emperors in the closing decade of the 1st century CE, Nimes's amphitheater could seat around 24,000 spectators and remains one of the best-preserved Roman arenas anywhere, still hosting events today nearly two thousand years later. Its two tiers of arcades in dressed limestone reflect the wealth Nemausus drew from its position on the road linking Italy to Spain. Fully operational and hosting games in 117 CE, a generation or so after its completion.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Arena_of_N%C3%AEmes",
+     "https://www.thearchaeologist.org/blog/the-roman-amphitheater-of-nmes-a-marvel-of-gallic-engineering"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nimes%20arena.jpg?width=800",
+    "image_credit": "Arena of Nimes - Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.6306,
+     43.6772
+    ]
+   },
+   "properties": {
+    "id": "poi_amphitheater_arelate",
+    "category": "amphitheater",
+    "name_latin": "Amphitheatrum Arelatense",
+    "name_english": "Amphitheatre of Arles",
+    "province": "Gallia Narbonensis",
+    "modern_location": "Arles, France",
+    "built": 90,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Raised around 90 CE under Domitian, not long after the Colosseum in Rome, Arles's amphitheater measures 136 by 107 meters across two levels of arcades, 60 arches below and 34 above, and could hold roughly 20,000 spectators for gladiatorial combat, beast hunts, and public executions. Arelate's wealth as a Roman colony and river port on the Rhone funded a building program on a scale that rivaled cities twice its size. Fully active and staging games in 117 CE.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Arles_Amphitheatre",
+     "https://www.historyhit.com/locations/arles-amphitheatre/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arles-arenes.jpg?width=800",
+    "image_credit": "Arenes d'Arles (Arles Amphitheatre) - Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.9916,
+     45.4384
+    ]
+   },
+   "properties": {
+    "id": "poi_amphitheater_verona",
+    "category": "amphitheater",
+    "name_latin": "Arena Veronensis",
+    "name_english": "Verona Arena",
+    "province": "Italia",
+    "modern_location": "Verona, Italy",
+    "built": 30,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Raised outside Verona's walls in the early 1st century CE, most likely around 30 CE, in pink and white limestone, the Verona Arena could seat around 30,000, one of the largest amphitheaters in Roman Italy after the Colosseum and Capua's arena. Its outer ring mostly collapsed in a 12th-century earthquake, but the inner structure survives intact enough to still host opera today. In full use for games nearly a century before Trajan's reign closed in 117 CE.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Verona_Arena",
+     "https://www.britannica.com/topic/Verona-Arena"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Verona%20Arena.JPG?width=800",
+    "image_credit": "Verona Arena - Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.8506,
+     44.8737
+    ]
+   },
+   "properties": {
+    "id": "poi_amphitheater_pula",
+    "category": "amphitheater",
+    "name_latin": "Amphitheatrum Polense",
+    "name_english": "Pula Arena",
+    "province": "Italia",
+    "modern_location": "Pula, Croatia",
+    "built": 79,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Begun under Augustus as a smaller structure, then enlarged for gladiatorial games under Vespasian from 79 CE and finished under Titus around 81 CE, the amphitheater at Pula in Istria could hold about 23,000 spectators. Its full limestone outer wall survives intact, unlike most Roman amphitheaters, making it one of the six largest and best-preserved arenas from the ancient world. Actively hosting games as a fully finished, mature amphitheater in 117 CE, roughly one generation after completion.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Pula_Arena",
+     "https://www.historyhit.com/locations/pula-arena/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pula%20Arena.JPG?width=800",
+    "image_credit": "Pula Arena, Croatia - Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     30.5333,
+     38.7833
+    ]
+   },
+   "properties": {
+    "id": "poi_sarcophagus_workshop_docimium",
+    "category": "sarcophagus_workshop",
+    "name_latin": "Officinae Docimenses",
+    "name_english": "Docimium Sarcophagus Workshops",
+    "province": "Asia",
+    "modern_location": "Iscehisar, Afyonkarahisar Province, Turkey",
+    "built": null,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Docimium's quarries had been worked on imperial account since the 1st century BCE for their prized purple-veined marble, and would go on to become one of the empire's great sarcophagus-carving centers, exporting garland- and column-decorated coffins as far as Rome and Africa. In 117 CE that specialty hadn't started yet: the earliest dated garland sarcophagi belong to the Hadrianic period beginning in the 130s CE. Docimium was already a mature imperial marble exporter, just not yet a sarcophagus workshop.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Docimium",
+     "http://marmoraasiatica.uw.edu.pl/quarries/dokimeion/"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.7275,
+     37.9838
+    ]
+   },
+   "properties": {
+    "id": "poi_sarcophagus_workshop_athens",
+    "category": "sarcophagus_workshop",
+    "name_latin": "Officinae Atticae",
+    "name_english": "Athens Sarcophagus Workshops",
+    "province": "Achaea",
+    "modern_location": "Athens, Greece",
+    "built": null,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Athens became one of the Roman world's three major sarcophagus-exporting centers, its workshops carving Pentelic marble coffins shipped across the eastern Mediterranean. But the dating is unambiguous: surviving Attic sarcophagi run from roughly 130 to 260 CE, with output really taking off only after 200 CE. In 117 CE this industry had not yet started. Athens under Trajan still cremated its dead, a full generation before its famous sarcophagus workshops carved their first pieces.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Ancient_Roman_sarcophagus",
+     "https://commons.wikimedia.org/wiki/Category:Ancient_Roman_sarcophagi_from_Attic_workshops"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     28.7264,
+     37.7086
+    ]
+   },
+   "properties": {
+    "id": "poi_sarcophagus_workshop_aphrodisias",
+    "category": "sarcophagus_workshop",
+    "name_latin": "Officinae Aphrodisienses",
+    "name_english": "Aphrodisias Sarcophagus Workshops",
+    "province": "Asia",
+    "modern_location": "Aphrodisias, Turkey",
+    "built": null,
+    "destroyed": null,
+    "extant_117ce": false,
+    "notes": "Aphrodisias already had a thriving marble-sculpture export trade by 117 CE, with signed work by its sculptors turning up in Rome, Greece, and Africa on the strength of local quarries and a renowned sculpture school. Its columnar sarcophagi, an architectural facade with figures between the columns, are a later specialty documented from the 2nd century, with nearby Goktepe marble spreading Mediterranean-wide only from the mid-2nd century. In 117 CE it stood on the edge of its own sarcophagus boom.",
+    "sources": [
+     "https://www.researchgate.net/publication/278871207_Columnar_Sarcophagi_from_Aphrodisias_Elite_Emulation_in_the_Greek_East",
+     "http://marmoraasiatica.uw.edu.pl/quarries/aphrodisias/"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Aphrodite%20Aphrodisias.jpg?width=800",
+    "image_credit": "Aphrodisias, site of the city's marble workshops - Wikimedia Commons"
    }
   }
  ]
