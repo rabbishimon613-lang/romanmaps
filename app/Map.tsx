@@ -7,6 +7,7 @@ import { applyAllLayers } from "./useLayers";
 import { selectPoi, clearPoi, getSelectedPoi, subscribeSelectedPoi } from "./usePoiPanel";
 import { categoryColorMatchPairs, DEFAULT_COLOR } from "./poiCategories";
 import { ostiaEntry } from "./ostiaDescriptions";
+import { pompeiiEntry } from "./pompeiiDescriptions";
 import { SITE_META, SITES } from "./sites";
 
 // Palette — light + dark variants. Both palettes are calibrated so that the sea/land/roads/labels
@@ -50,6 +51,26 @@ const DARK: Palette = {
   placeLabelMinor: "#a89b7f",
   labelHalo: "#111315",
 };
+
+// Shoelace-formula ring area in raw lng/lat degrees squared — not a real physical area (no
+// projection correction), but consistent enough to rank a small building against a huge district
+// or site-boundary polygon, which is the only thing it's used for. See the click handler below.
+function ringArea(ring: [number, number][]): number {
+  let area = 0;
+  for (let i = 0; i < ring.length; i++) {
+    const [x1, y1] = ring[i];
+    const [x2, y2] = ring[(i + 1) % ring.length];
+    area += x1 * y2 - x2 * y1;
+  }
+  return Math.abs(area) / 2;
+}
+function polygonFeatureArea(f: { geometry: any }): number {
+  const g = f.geometry;
+  if (!g) return Infinity;
+  if (g.type === "Polygon") return ringArea(g.coordinates[0]);
+  if (g.type === "MultiPolygon") return g.coordinates.reduce((s: number, poly: any) => s + ringArea(poly[0]), 0);
+  return Infinity;
+}
 
 function prefersDark(): boolean {
   if (typeof window === "undefined" || !window.matchMedia) return false;
@@ -610,16 +631,28 @@ export default function Map() {
         });
 
         // Click a building → open the PoI panel with its info (enriched from curated lookup).
+        // Several sites' Overpass fetches include the whole park's own boundary polygon and, in
+        // Ostia/Pompeii's case, "Regio"-numbered district outlines alongside individual building
+        // footprints — all in the same layer, all clickable. Those cover far more area than any
+        // one building, so when they render on top (later in the source's feature array) they
+        // permanently swallow clicks meant for the specific building underneath. `e.features` is
+        // every feature under the click point, not just the topmost one — always take the one
+        // with the smallest area, which is reliably the actual building the user meant to click.
         map.on("click", "ostia-buildings-fill", (e) => {
-          const f = e.features?.[0];
-          if (!f) return;
+          const candidates = e.features;
+          if (!candidates || !candidates.length) return;
+          const f =
+            candidates.length > 1
+              ? candidates.reduce((a, b) => (polygonFeatureArea(a) <= polygonFeatureArea(b) ? a : b))
+              : candidates[0];
           const p: any = f.properties || {};
           const rawName = p.name || "";
           const site: string = p.site || "ostia";
           const siteMeta = SITE_META[site] || { display: site, province: "" };
           // Strip Regio.Insula parenthetical for a cleaner display name
           const displayName = rawName.replace(/\s*\([^)]*\)\s*$/, "").trim() || rawName || `Building ${p.osm_id}`;
-          const entry = site === "ostia" ? ostiaEntry(rawName) : undefined;
+          const entry =
+            site === "ostia" ? ostiaEntry(rawName) : site === "pompeii" ? pompeiiEntry(rawName) : undefined;
           selectPoi(
             {
               id: `${site}-${p.osm_id}`,
