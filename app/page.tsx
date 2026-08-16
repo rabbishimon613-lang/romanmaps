@@ -13,6 +13,7 @@ import PlaceDetails from "./PlaceDetails";
 import Legend from "./Legend";
 import ContextMenu from "./ContextMenu";
 import Compass from "./Compass";
+import TourPlayer from "./TourPlayer";
 
 export default function Page() {
   return (
@@ -29,6 +30,7 @@ export default function Page() {
       <HomeButton />
       <ZoomControl />
       <PlaceDetails />
+      <TourPlayer />
       <ContextMenu />
       <MapAttribution />
       <LoadingBar />

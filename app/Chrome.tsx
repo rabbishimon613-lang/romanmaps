@@ -14,6 +14,7 @@ import EpochModal from "./EpochModal";
 import CurrencyConverter from "./CurrencyConverter";
 import { useOnboardingHint } from "./useOnboardingHint";
 import { activateRuler } from "./useRuler";
+import { openTourPanel } from "./useTour";
 
 export default function Chrome() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -314,30 +315,55 @@ export default function Chrome() {
           </div>
 
           {/* The ruler's own FAB is desktop-only (the phone corner is a single button), so the
-              menu is where measuring lives on mobile. */}
+              menu is where measuring lives on mobile. Same reasoning for guided tours — desktop
+              has its own left-rail icon (LeftRail.tsx), mobile has no rail at all. */}
           {isMobile && (
-            <button
-              onClick={() => {
-                setMenuOpen(false);
-                activateRuler();
-              }}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: 12,
-                width: "100%",
-                height: 44,
-                padding: "0 16px",
-                textAlign: "left",
-                fontSize: 13,
-                color: "var(--text-strong)",
-              }}
-            >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--icon)" style={{ flexShrink: 0 }}>
-                <path d="M21.71 2.29a1 1 0 0 0-1.42 0L2.29 20.29a1 1 0 1 0 1.42 1.42L5 20.41l1.29 1.3a1 1 0 0 0 1.42-1.42L6.41 19l2-2 1.3 1.29a1 1 0 0 0 1.4-1.4L9.83 15.6l2-2 1.29 1.29a1 1 0 0 0 1.42-1.42L13.24 12.17l2-2 1.29 1.29a1 1 0 0 0 1.42-1.42L16.66 8.75l2-2 1.29 1.3a1 1 0 0 0 1.42-1.43L20.07 5.3l1.64-1.63a1 1 0 0 0 0-1.38z" />
-              </svg>
-              Measure distance
-            </button>
+            <>
+              <button
+                onClick={() => {
+                  setMenuOpen(false);
+                  activateRuler();
+                }}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 12,
+                  width: "100%",
+                  height: 44,
+                  padding: "0 16px",
+                  textAlign: "left",
+                  fontSize: 13,
+                  color: "var(--text-strong)",
+                }}
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--icon)" style={{ flexShrink: 0 }}>
+                  <path d="M21.71 2.29a1 1 0 0 0-1.42 0L2.29 20.29a1 1 0 1 0 1.42 1.42L5 20.41l1.29 1.3a1 1 0 0 0 1.42-1.42L6.41 19l2-2 1.3 1.29a1 1 0 0 0 1.4-1.4L9.83 15.6l2-2 1.29 1.29a1 1 0 0 0 1.42-1.42L13.24 12.17l2-2 1.29 1.29a1 1 0 0 0 1.42-1.42L16.66 8.75l2-2 1.29 1.3a1 1 0 0 0 1.42-1.43L20.07 5.3l1.64-1.63a1 1 0 0 0 0-1.38z" />
+                </svg>
+                Measure distance
+              </button>
+              <button
+                onClick={() => {
+                  setMenuOpen(false);
+                  openTourPanel();
+                }}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 12,
+                  width: "100%",
+                  height: 44,
+                  padding: "0 16px",
+                  textAlign: "left",
+                  fontSize: 13,
+                  color: "var(--text-strong)",
+                }}
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--icon)" style={{ flexShrink: 0 }}>
+                  <path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z" />
+                </svg>
+                Guided tours
+              </button>
+            </>
           )}
 
           <CurrencyConverter />

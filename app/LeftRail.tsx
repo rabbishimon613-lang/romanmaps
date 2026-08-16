@@ -4,12 +4,14 @@ import { useState } from "react";
 import SitesPanel from "./SitesPanel";
 import LegionLocator from "./LegionLocator";
 import { useIsMobile } from "./useIsMobile";
+import { closeTourPanel, toggleTourPanel, useTourPanel } from "./useTour";
 
 /** 60px-wide dark left rail, styled after Google Maps' side icons column. Hidden on mobile —
  * the top-left search card's hamburger is the entry point there. */
 export default function LeftRail() {
   const [sitesOpen, setSitesOpen] = useState(false);
   const [legionsOpen, setLegionsOpen] = useState(false);
+  const { open: toursOpen } = useTourPanel();
   const isMobile = useIsMobile();
 
   if (isMobile) return null;
@@ -39,6 +41,7 @@ export default function LeftRail() {
           active={sitesOpen}
           onClick={() => {
             setLegionsOpen(false);
+            closeTourPanel();
             setSitesOpen((o) => !o);
           }}
           glyph={<path d="M12 2 4 6v6c0 5 3.5 9.7 8 10 4.5-.3 8-5 8-10V6l-8-4z" />}
@@ -48,9 +51,20 @@ export default function LeftRail() {
           active={legionsOpen}
           onClick={() => {
             setSitesOpen(false);
+            closeTourPanel();
             setLegionsOpen((o) => !o);
           }}
           glyph={<path d="M12 1 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4zm0 2.2 7 3.1v4.7c0 4.5-3 8.7-7 9.9-4-1.2-7-5.4-7-9.9V6.3l7-3.1zM11 7h2v6h-2zm0 8h2v2h-2z" />}
+        />
+        <RailButton
+          label="Guided tours"
+          active={toursOpen}
+          onClick={() => {
+            setSitesOpen(false);
+            setLegionsOpen(false);
+            toggleTourPanel();
+          }}
+          glyph={<path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z" />}
         />
         <RailButton label="Saved" glyph={<path d="M19 3H5c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />} />
         <RailButton
