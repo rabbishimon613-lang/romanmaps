@@ -130,7 +130,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[02-P0-1]` **`terrain`** `polish` — Hillshade/relief under the land fill.
 - [ ] `[02-P0-4]` **`self-host-glyphs`** `fix` — Stop depending on `demotiles.maplibre.org`;
       a single point of failure that would erase every label on the map.
-- [x] `[09-P0-1]` **`ancient-sources`** `deepen` — `ancient_sources[]` populated for every
+- [~] `[09-P0-1]` **`ancient-sources`** `deepen` — claimed by cloud shift 4, 2026-08-16 15:50
+      (batch 3, standing task). `ancient_sources[]` populated for every
       `confidence: high` POI. **Standing task — never "done", always available.**
       *Batch 1 done 2026-08-16: 108 of 221 high-confidence POIs (48.9%), 122 citations, plus an
       "In ancient writing" block on the card. Shape is `{author, work, ref, note}` — `note` says
