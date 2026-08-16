@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { Map as MLMap } from "maplibre-gl";
 import { usePoiPanel, clearPoi } from "./usePoiPanel";
-import { colorForCategory } from "./poiCategories";
+import { colorForCategory, glyphForCategory } from "./poiCategories";
 import { lifeForCategory } from "./categoryLife";
 import { useIsMobile } from "./useIsMobile";
 
@@ -210,7 +210,7 @@ export default function PlaceDetails() {
       style={{
         ...panelStyle,
         background: "var(--surface)",
-        boxShadow: "0 1px 4px -1px rgba(0,0,0,.3), 0 4px 16px rgba(0,0,0,.2)",
+        boxShadow: "var(--shadow-2)",
         zIndex: 7,
         display: "flex",
         flexDirection: "column",
@@ -316,9 +316,23 @@ export default function PlaceDetails() {
           <div style={{ fontSize: 13, color: "var(--text-2)", marginTop: 4 }}>{subtitle}</div>
         )}
         {category && (
-          <div style={{ fontSize: 14, color: "var(--text-2)", marginTop: 6, display: "flex", alignItems: "center", gap: 6 }}>
-            <span style={{ width: 6, height: 6, borderRadius: 999, background: color, display: "inline-block" }} />
-            {titleCase(category)}
+          <div style={{ fontSize: 13.5, color: "var(--text-2)", marginTop: 8, display: "flex", alignItems: "center", gap: 8 }}>
+            <span
+              style={{
+                width: 20,
+                height: 20,
+                borderRadius: 999,
+                display: "grid",
+                placeItems: "center",
+                background: color,
+                flexShrink: 0,
+              }}
+            >
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="#fff">
+                <path d={glyphForCategory(category)} />
+              </svg>
+            </span>
+            <span style={{ fontWeight: 500, color: "var(--text-strong)" }}>{titleCase(category)}</span>
             {p.province && <span style={{ color: "var(--divider)" }}>·</span>}
             {p.province && <span>{p.province}</span>}
           </div>

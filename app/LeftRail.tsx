@@ -30,6 +30,7 @@ export default function LeftRail() {
           alignItems: "center",
           paddingTop: 8,
           paddingBottom: 12,
+          boxShadow: "1px 0 0 rgba(255,255,255,0.06), 2px 0 8px rgba(0,0,0,0.25)",
           zIndex: 10,
         }}
       >
@@ -84,6 +85,8 @@ function RailButton({
     <button
       title={label}
       onClick={onClick}
+      className="rail-btn"
+      data-active={active ? "true" : undefined}
       style={{
         width: 44,
         height: 44,
@@ -91,7 +94,6 @@ function RailButton({
         borderRadius: 999,
         display: "grid",
         placeItems: "center",
-        background: active ? "#3c4043" : "transparent",
       }}
     >
       <svg width="20" height="20" viewBox="0 0 24 24" fill="#e8eaed">

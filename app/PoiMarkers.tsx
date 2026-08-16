@@ -128,16 +128,20 @@ export default function PoiMarkers() {
 
       const el = document.createElement("div");
       el.className = "rm-poi-marker";
-      el.style.cssText = "cursor:pointer;display:flex;flex-direction:column;align-items:center;transform:translateY(-6px);";
+      // NB: MapLibre positions Marker elements by writing directly to *this* element's
+      // `transform` on every map move (see Marker#_update) — anything we set on `el.style.transform`
+      // ourselves gets clobbered on the next pan/zoom. So the hover "lift" below animates an
+      // inner wrapper instead, leaving the outer element's transform solely to MapLibre.
+      el.style.cssText = "cursor:pointer;display:flex;flex-direction:column;align-items:center;";
 
       const labelHtml = showLabel && name
-        ? `<div style="margin-top:2px;padding:1px 6px;background:rgba(255,255,255,.92);border-radius:4px;font:600 11px/1.2 var(--font-cinzel),Georgia,serif;letter-spacing:0.02em;color:#202124;white-space:nowrap;box-shadow:0 1px 2px rgba(0,0,0,.15);max-width:160px;overflow:hidden;text-overflow:ellipsis;">${escapeHtml(name)}</div>`
+        ? `<div style="margin-top:2px;padding:1px 6px;background:rgba(255,255,255,.92);border-radius:4px;font:600 11px/1.2 var(--font-cinzel),Georgia,serif;letter-spacing:0.02em;color:#202124;white-space:nowrap;box-shadow:var(--shadow-1);max-width:160px;overflow:hidden;text-overflow:ellipsis;">${escapeHtml(name)}</div>`
         : "";
 
       el.innerHTML = `
-        <div style="width:22px;height:30px;position:relative;filter:drop-shadow(0 1px 2px rgba(0,0,0,.35));">
+        <div class="rm-poi-pin" style="width:22px;height:30px;position:relative;filter:drop-shadow(var(--shadow-1));transform:translateY(-6px);transition:transform 120ms ease;">
           <svg viewBox="0 0 22 30" width="22" height="30" style="position:absolute;inset:0;">
-            <path fill="${color}" d="M11 0a11 11 0 0 1 11 11c0 8-11 19-11 19S0 19 0 11A11 11 0 0 1 11 0z"/>
+            <path fill="${color}" stroke="rgba(0,0,0,.18)" stroke-width="0.5" d="M11 0a11 11 0 0 1 11 11c0 8-11 19-11 19S0 19 0 11A11 11 0 0 1 11 0z"/>
             <circle cx="11" cy="11" r="7.5" fill="rgba(255,255,255,.15)"/>
           </svg>
           <svg viewBox="0 0 24 24" width="12" height="12" style="position:absolute;left:5px;top:5px;" fill="#fff">
@@ -146,6 +150,16 @@ export default function PoiMarkers() {
         </div>
         ${labelHtml}
       `;
+
+      // Subtle lift-on-hover, same affordance Google Maps gives its POI pins, so the marker
+      // reads as clickable before the cursor even lands on the click handler.
+      const pinEl = el.querySelector<HTMLElement>(".rm-poi-pin");
+      el.addEventListener("mouseenter", () => {
+        if (pinEl) pinEl.style.transform = "translateY(-9px)";
+      });
+      el.addEventListener("mouseleave", () => {
+        if (pinEl) pinEl.style.transform = "translateY(-6px)";
+      });
 
       el.addEventListener("click", (e) => {
         e.stopPropagation();
@@ -179,11 +193,21 @@ export default function PoiMarkers() {
       const el = document.createElement("div");
       el.style.cssText = "cursor:pointer;display:flex;align-items:center;justify-content:center;transform:translate(-50%,-50%);";
       el.innerHTML = `
-        <div style="width:32px;height:32px;border-radius:999px;background:${color};color:#fff;display:grid;place-items:center;font:600 13px/1 Roboto,sans-serif;box-shadow:0 1px 2px rgba(0,0,0,.35);border:2px solid #fff;">
+        <div class="rm-cluster-badge" style="width:32px;height:32px;border-radius:999px;background:${color};color:#fff;display:grid;place-items:center;font:600 13px/1 Roboto,sans-serif;box-shadow:var(--shadow-1);border:2px solid #fff;transition:transform 120ms ease;">
           ${members.length}
         </div>
       `;
       el.title = `${members.length} places — click to zoom`;
+
+      // Same hover lift as solo pins — reads as a clickable "zoom in" affordance rather than a
+      // static count badge.
+      const badgeEl = el.querySelector<HTMLElement>(".rm-cluster-badge");
+      el.addEventListener("mouseenter", () => {
+        if (badgeEl) badgeEl.style.transform = "scale(1.08)";
+      });
+      el.addEventListener("mouseleave", () => {
+        if (badgeEl) badgeEl.style.transform = "scale(1)";
+      });
 
       el.addEventListener("click", (e) => {
         e.stopPropagation();

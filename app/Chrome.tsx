@@ -144,15 +144,17 @@ export default function Chrome() {
         }}
       >
       <div
+        className="search-card"
         style={{
           background: "var(--surface)",
-          borderRadius: isMobile ? 999 : 8,
+          borderRadius: isMobile ? 999 : "var(--radius-card)",
           boxShadow: "var(--shadow-2)",
           overflow: "hidden",
+          transition: "box-shadow 120ms ease",
         }}
       >
         {/* Search row */}
-        <div style={{ display: "flex", alignItems: "center", height: isMobile ? 46 : 48, padding: isMobile ? "0 6px" : "0 4px 0 14px" }}>
+        <div style={{ display: "flex", alignItems: "center", height: isMobile ? 48 : 50, padding: isMobile ? "0 6px" : "0 6px 0 14px" }}>
           {/* Menu (hamburger) */}
           <IconBtn label="Menu" onClick={() => setMenuOpen((o) => !o)}>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--icon)">
@@ -213,11 +215,11 @@ export default function Chrome() {
           <button
             title="Dismiss"
             onClick={onboardingHint.dismiss}
+            className="ui-btn"
             style={{
               width: 22,
               height: 22,
               flexShrink: 0,
-              borderRadius: 999,
               display: "grid",
               placeItems: "center",
               color: "var(--icon)",
@@ -232,11 +234,13 @@ export default function Chrome() {
 
       {resultsOpen && results.length > 0 && (
         <div
+          onMouseLeave={() => setActiveIndex(-1)}
           style={{
             marginTop: 8,
             background: "var(--surface)",
-            borderRadius: 8,
+            borderRadius: "var(--radius-card)",
             boxShadow: "var(--shadow-2)",
+            padding: "6px 0",
             overflow: "hidden",
           }}
         >
@@ -251,17 +255,30 @@ export default function Chrome() {
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  gap: 12,
+                  gap: 14,
                   width: "100%",
-                  height: 48,
+                  height: 50,
                   padding: "0 14px",
                   textAlign: "left",
-                  background: activeIndex === i ? "var(--surface-2)" : "transparent",
+                  background: activeIndex === i ? "var(--state-hover)" : "transparent",
+                  transition: "background-color 100ms ease",
                 }}
               >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--icon)" style={{ flexShrink: 0 }}>
-                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" />
-                </svg>
+                <span
+                  style={{
+                    width: 32,
+                    height: 32,
+                    flexShrink: 0,
+                    borderRadius: 999,
+                    background: "var(--surface-2)",
+                    display: "grid",
+                    placeItems: "center",
+                  }}
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--icon)">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" />
+                  </svg>
+                </span>
                 <div style={{ overflow: "hidden" }}>
                   <div style={{ fontSize: 14, color: "var(--text)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
                     {name}
@@ -283,33 +300,19 @@ export default function Chrome() {
           style={{
             marginTop: 8,
             background: "var(--surface)",
-            borderRadius: 8,
+            borderRadius: "var(--radius-card)",
             boxShadow: "var(--shadow-2)",
-            padding: "8px 0",
+            padding: "10px 0",
             width: isMobile ? "100%" : 260,
             maxWidth: "calc(100vw - 20px)",
           }}
         >
-          <div style={{ padding: "6px 16px 10px", fontSize: 13, fontWeight: 600, color: "var(--text-strong)" }}>
-            Distance units
-          </div>
-          <div style={{ display: "flex", gap: 8, padding: "0 12px 8px" }}>
+          <SectionHeader>Distance units</SectionHeader>
+          <div style={{ display: "flex", gap: 8, padding: "0 12px 10px" }}>
             {(["km", "mi"] as const).map((u) => (
-              <button
-                key={u}
-                onClick={() => setUnits(u)}
-                style={{
-                  flex: 1,
-                  height: 34,
-                  borderRadius: 6,
-                  fontSize: 13,
-                  fontWeight: 600,
-                  background: units === u ? "var(--accent-bg)" : "var(--surface-2)",
-                  color: units === u ? "var(--accent)" : "var(--text-strong)",
-                }}
-              >
+              <UnitButton key={u} active={units === u} onClick={() => setUnits(u)}>
                 {u === "km" ? "Kilometers" : "Miles"}
-              </button>
+              </UnitButton>
             ))}
           </div>
 
@@ -321,6 +324,7 @@ export default function Chrome() {
                 setMenuOpen(false);
                 activateRuler();
               }}
+              className="ui-row"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -346,31 +350,11 @@ export default function Chrome() {
       </div>
 
       {/* Bottom-left: epoch pill — click opens the "Why 117 CE?" explainer */}
-      <button
-        title="Why 117 CE?"
+      <EpochPill
+        isMobile={isMobile}
+        hidden={hideLayersForSheet}
         onClick={() => setEpochModalOpen(true)}
-        style={{
-          position: "absolute",
-          left: isMobile ? 8 : 72,
-          bottom: isMobile ? "calc(26px + env(safe-area-inset-bottom))" : 24,
-          background: "var(--surface)",
-          borderRadius: 999,
-          padding: isMobile ? "6px 12px" : "8px 14px",
-          boxShadow: "var(--shadow-1)",
-          fontSize: isMobile ? 12 : 13,
-          color: "var(--text-strong)",
-          display: hideLayersForSheet ? "none" : "flex",
-          alignItems: "center",
-          gap: 8,
-          zIndex: 5,
-          cursor: "pointer",
-        }}
-      >
-        <span style={{ width: 8, height: 8, borderRadius: 999, background: "#b0431a" }} />
-        <strong style={{ fontWeight: 600 }}>117 CE</strong>
-        {/* The tagline is the first thing to go on a phone — the pill has to stay a pill. */}
-        {!isMobile && <span style={{ color: "var(--text-2)" }}>· The Empire at its peak</span>}
-      </button>
+      />
       {epochModalOpen && <EpochModal onClose={() => setEpochModalOpen(false)} />}
 
       {/* Layers. Desktop: bottom-right FAB stack. Mobile: the round button Google Maps parks
@@ -391,10 +375,10 @@ export default function Chrome() {
               right: 0,
               ...(isMobile ? { top: 52 } : { bottom: 48 }),
               background: "var(--surface)",
-              borderRadius: 8,
+              borderRadius: "var(--radius-card)",
               boxShadow: "var(--shadow-2)",
-              padding: "8px 0",
-              width: isMobile ? 250 : 220,
+              padding: "6px 0",
+              width: isMobile ? 260 : 230,
               maxHeight: isMobile ? "60vh" : "70vh",
               overflowY: "auto",
             }}
@@ -403,11 +387,12 @@ export default function Chrome() {
             {LAYER_GROUPS.filter((g) => g.base).map((g) => (
               <div key={g.id}>
                 <label
+                  className="ui-row"
                   style={{
                     display: "flex",
                     alignItems: "center",
                     gap: 10,
-                    padding: "7px 16px",
+                    padding: "8px 16px",
                     fontSize: 13,
                     color: "var(--text-strong)",
                     cursor: "pointer",
@@ -428,12 +413,12 @@ export default function Chrome() {
                         e.stopPropagation();
                         setPoiCategoriesExpanded((v) => !v);
                       }}
+                      className="ui-btn"
                       style={{
-                        width: 20,
-                        height: 20,
+                        width: 22,
+                        height: 22,
                         display: "grid",
                         placeItems: "center",
-                        borderRadius: 4,
                         flexShrink: 0,
                       }}
                     >
@@ -442,7 +427,7 @@ export default function Chrome() {
                         height="14"
                         viewBox="0 0 24 24"
                         fill="var(--icon)"
-                        style={{ transform: poiCategoriesExpanded ? "rotate(180deg)" : "none" }}
+                        style={{ transform: poiCategoriesExpanded ? "rotate(180deg)" : "none", transition: "transform 120ms ease" }}
                       >
                         <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z" />
                       </svg>
@@ -454,11 +439,12 @@ export default function Chrome() {
                     {CATEGORY_GROUPS.map((c) => (
                       <label
                         key={c.id}
+                        className="ui-row"
                         style={{
                           display: "flex",
                           alignItems: "center",
                           gap: 8,
-                          padding: "5px 16px 5px 36px",
+                          padding: "6px 16px 6px 36px",
                           fontSize: 12.5,
                           color: "var(--text-strong)",
                           cursor: "pointer",
@@ -488,24 +474,22 @@ export default function Chrome() {
               </div>
             ))}
 
-            <div style={{ height: 1, background: "var(--divider)", margin: "8px 0" }} />
+            <div style={{ height: 1, background: "var(--divider)", margin: "6px 16px" }} />
             <div
               style={{
                 display: "flex",
                 alignItems: "center",
-                padding: "6px 16px 10px",
-                fontSize: 13,
-                fontWeight: 600,
-                color: "var(--text-strong)",
+                padding: "8px 16px 6px",
               }}
             >
-              <span style={{ flex: 1 }}>
+              <span style={{ flex: 1, fontSize: 11, fontWeight: 700, letterSpacing: 0.6, textTransform: "uppercase", color: "var(--text-2)" }}>
                 Overlays{overlayCount > 0 ? ` · ${overlayCount}` : ""}
               </span>
               {overlayCount > 0 && (
                 <button
                   onClick={clearOverlays}
-                  style={{ fontSize: 12, fontWeight: 600, color: "var(--accent)" }}
+                  className="ui-link"
+                  style={{ fontSize: 12, fontWeight: 600, color: "var(--accent)", padding: "3px 8px", margin: "-3px -8px" }}
                 >
                   Clear
                 </button>
@@ -516,11 +500,12 @@ export default function Chrome() {
             {LAYER_GROUPS.filter((g) => !g.base).map((g) => (
               <label
                 key={g.id}
+                className="ui-row"
                 style={{
                   display: "flex",
                   alignItems: "center",
                   gap: 10,
-                  padding: "7px 16px",
+                  padding: "8px 16px",
                   fontSize: 13,
                   color: "var(--text-strong)",
                   cursor: "pointer",
@@ -537,45 +522,12 @@ export default function Chrome() {
             ))}
           </div>
         )}
-        <button
-          title="Layers"
+        <LayersFabButton
+          isMobile={isMobile}
+          open={layersOpen}
+          overlayCount={overlayCount}
           onClick={() => setLayersOpen((o) => !o)}
-          style={{
-            position: "relative",
-            width: isMobile ? 44 : 40,
-            height: isMobile ? 44 : 40,
-            borderRadius: isMobile ? 999 : 8,
-            background: layersOpen ? "var(--accent-bg)" : "var(--surface)",
-            boxShadow: "var(--shadow-1)",
-            display: "grid",
-            placeItems: "center",
-          }}
-        >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill={layersOpen ? "var(--accent)" : "var(--icon)"}>
-            <path d="M11.99 18.54l-7.37-5.73L3 14.07l9 7 9-7-1.63-1.27-7.38 5.74zM12 16l7.36-5.73L21 9l-9-7-9 7 1.63 1.27L12 16z" />
-          </svg>
-          {overlayCount > 0 && (
-            <span
-              style={{
-                position: "absolute",
-                top: -2,
-                right: -2,
-                minWidth: 16,
-                height: 16,
-                padding: "0 4px",
-                borderRadius: 999,
-                background: "var(--accent)",
-                color: "var(--on-accent)",
-                fontSize: 10,
-                fontWeight: 700,
-                display: "grid",
-                placeItems: "center",
-              }}
-            >
-              {overlayCount}
-            </span>
-          )}
-        </button>
+        />
       </div>
       )}
 
@@ -585,7 +537,16 @@ export default function Chrome() {
 
 function SectionHeader({ children }: { children: React.ReactNode }) {
   return (
-    <div style={{ padding: "6px 16px 10px", fontSize: 13, fontWeight: 600, color: "var(--text-strong)" }}>
+    <div
+      style={{
+        padding: "8px 16px 6px",
+        fontSize: 11,
+        fontWeight: 700,
+        letterSpacing: 0.6,
+        textTransform: "uppercase",
+        color: "var(--text-2)",
+      }}
+    >
       {children}
     </div>
   );
@@ -604,7 +565,142 @@ function IconBtn({
     <button
       title={label}
       onClick={onClick}
-      style={{ width: 40, height: 40, borderRadius: 999, display: "grid", placeItems: "center" }}
+      className="ui-btn"
+      style={{ width: 40, height: 40, display: "grid", placeItems: "center" }}
+    >
+      {children}
+    </button>
+  );
+}
+
+function EpochPill({
+  isMobile,
+  hidden,
+  onClick,
+}: {
+  isMobile: boolean;
+  hidden: boolean;
+  onClick: () => void;
+}) {
+  const [hover, setHover] = useState(false);
+  return (
+    <button
+      title="Why 117 CE?"
+      onClick={onClick}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      style={{
+        position: "absolute",
+        left: isMobile ? 8 : 72,
+        bottom: isMobile ? "calc(26px + env(safe-area-inset-bottom))" : 24,
+        background: hover ? "var(--surface-2)" : "var(--surface)",
+        borderRadius: 999,
+        padding: isMobile ? "6px 12px" : "8px 14px",
+        boxShadow: hover ? "var(--shadow-2)" : "var(--shadow-1)",
+        fontSize: isMobile ? 12 : 13,
+        color: "var(--text-strong)",
+        display: hidden ? "none" : "flex",
+        alignItems: "center",
+        gap: 8,
+        zIndex: 5,
+        cursor: "pointer",
+        transition: "background-color 100ms ease, box-shadow 150ms ease",
+      }}
+    >
+      <span style={{ width: 8, height: 8, borderRadius: 999, background: "#b0431a", flexShrink: 0 }} />
+      <strong style={{ fontWeight: 600 }}>117 CE</strong>
+      {/* The tagline is the first thing to go on a phone — the pill has to stay a pill. */}
+      {!isMobile && <span style={{ color: "var(--text-2)" }}>· The Empire at its peak</span>}
+    </button>
+  );
+}
+
+function LayersFabButton({
+  isMobile,
+  open,
+  overlayCount,
+  onClick,
+}: {
+  isMobile: boolean;
+  open: boolean;
+  overlayCount: number;
+  onClick: () => void;
+}) {
+  const [hover, setHover] = useState(false);
+  const bg = open ? "var(--accent-bg)" : hover ? "var(--surface-2)" : "var(--surface)";
+  return (
+    <button
+      title="Layers"
+      onClick={onClick}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      style={{
+        position: "relative",
+        width: isMobile ? 44 : 40,
+        height: isMobile ? 44 : 40,
+        borderRadius: isMobile ? 999 : 10,
+        background: bg,
+        boxShadow: "var(--shadow-1)",
+        display: "grid",
+        placeItems: "center",
+        transition: "background-color 100ms ease",
+      }}
+    >
+      <svg width="20" height="20" viewBox="0 0 24 24" fill={open ? "var(--accent)" : "var(--icon)"}>
+        <path d="M11.99 18.54l-7.37-5.73L3 14.07l9 7 9-7-1.63-1.27-7.38 5.74zM12 16l7.36-5.73L21 9l-9-7-9 7 1.63 1.27L12 16z" />
+      </svg>
+      {overlayCount > 0 && (
+        <span
+          style={{
+            position: "absolute",
+            top: -2,
+            right: -2,
+            minWidth: 16,
+            height: 16,
+            padding: "0 4px",
+            borderRadius: 999,
+            background: "var(--accent)",
+            color: "var(--on-accent)",
+            fontSize: 10,
+            fontWeight: 700,
+            display: "grid",
+            placeItems: "center",
+            boxShadow: "0 0 0 2px var(--surface)",
+          }}
+        >
+          {overlayCount}
+        </span>
+      )}
+    </button>
+  );
+}
+
+function UnitButton({
+  children,
+  active,
+  onClick,
+}: {
+  children: React.ReactNode;
+  active: boolean;
+  onClick: () => void;
+}) {
+  const [hover, setHover] = useState(false);
+  const bg = active ? "var(--accent-bg)" : hover ? "var(--state-hover)" : "var(--surface-2)";
+  return (
+    <button
+      onClick={onClick}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      style={{
+        flex: 1,
+        height: 34,
+        borderRadius: 8,
+        fontSize: 13,
+        fontWeight: 600,
+        background: bg,
+        color: active ? "var(--accent)" : "var(--text-strong)",
+        transition: "background-color 100ms ease",
+      }}
     >
       {children}
     </button>

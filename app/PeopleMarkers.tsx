@@ -12,7 +12,7 @@ const ROLE_RING: Record<string, string> = {
   writer: "#2a7fb5",
   religious: "#a08a2e",
 };
-const DEFAULT_RING = "#5f6368";
+const DEFAULT_RING = "var(--icon)";
 
 /** People alive (or just died) in 117 CE, pinned at their known location — portrait-medallion
  * markers with a colored ring by role (purple=imperial, red=military, blue=writer/philosopher,
@@ -60,28 +60,37 @@ export default function PeopleMarkers() {
         const ring = ROLE_RING[props.role_group] || DEFAULT_RING;
         const [lng, lat] = f.geometry.coordinates as [number, number];
 
+        // Outer `el` is what MapLibre positions (it rewrites `el.style.transform` on every
+        // pan/zoom), so the hover "grow" lives on an inner `.rm-person-medallion` wrapper instead
+        // — same split used for the POI pins above, for the same reason.
         const el = document.createElement("div");
-        el.style.cssText =
+        el.style.cssText = "cursor:pointer;";
+        const medallion = document.createElement("div");
+        medallion.className = "rm-person-medallion";
+        medallion.style.cssText =
           "width:22px;height:22px;border-radius:999px;background:#fff;border:3px solid " +
           ring +
-          ";box-shadow:0 1px 3px rgba(0,0,0,.4);cursor:pointer;display:flex;align-items:center;justify-content:center;font:600 10px Roboto,sans-serif;color:" +
+          ";box-shadow:var(--shadow-1);display:flex;align-items:center;justify-content:center;font:600 10px Roboto,sans-serif;color:" +
           ring +
-          ";";
-        el.textContent = (props.name || "?").slice(0, 1).toUpperCase();
+          ";transition:transform 120ms ease;";
+        medallion.textContent = (props.name || "?").slice(0, 1).toUpperCase();
+        el.appendChild(medallion);
         el.title = props.name || "";
+        el.addEventListener("mouseenter", () => { medallion.style.transform = "scale(1.12)"; });
+        el.addEventListener("mouseleave", () => { medallion.style.transform = "scale(1)"; });
 
         el.addEventListener("click", (e) => {
           e.stopPropagation();
           const sourcesLine =
             Array.isArray(props.sources) && props.sources.length
-              ? `<div style="color:#5f6368; font-size:11px; margin-top:6px;">${props.sources.map(escapeHtml).join(" · ")}</div>`
+              ? `<div style="color:var(--text-2); font-size:11px; margin-top:6px;">${props.sources.map(escapeHtml).join(" · ")}</div>`
               : "";
           popup
             .setLngLat([lng, lat])
             .setHTML(
-              `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+              `<div style="font: 13px Roboto, sans-serif; color: var(--text); max-width: 240px;">
                  <div style="font-weight: 600;">${escapeHtml(props.name || "")}</div>
-                 <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(props.role || "")} · ${escapeHtml(props.location_117 || "")}</div>
+                 <div style="color:var(--text-2); font-size:11px; margin-top:2px;">${escapeHtml(props.role || "")} · ${escapeHtml(props.location_117 || "")}</div>
                  <div style="margin-top:6px;">${escapeHtml(props.one_line || "")}</div>
                  ${sourcesLine}
                </div>`,

@@ -31,8 +31,11 @@ const LIGHT: Palette = {
   provinceLine: "#a58a5a",
   river: "#7fb0c9",
   lake: "#b8dbe6",
-  roadMain: "#a12b0d",
-  roadSecondary: "#c17a4d",
+  // Muted brick/terracotta rather than a saturated stop-sign red — a Roman via should read as a
+  // quiet historical route at empire scale and recede further once site-level building detail
+  // takes over (see the roads-main/secondary zoom tapers below), not compete with it.
+  roadMain: "#9c5738",
+  roadSecondary: "#b98a5e",
   placeLabelMajor: "#2a1e10",
   placeLabelMinor: "#5c4326",
   labelHalo: "#f4ead5",
@@ -44,8 +47,8 @@ const DARK: Palette = {
   provinceLine: "#6a5b3a",
   river: "#3d6885",
   lake: "#1f3c4d",
-  roadMain: "#c9573b",
-  roadSecondary: "#8a5636",
+  roadMain: "#c06848",
+  roadSecondary: "#9c7150",
   placeLabelMajor: "#e6dcc4",
   placeLabelMinor: "#a89b7f",
   labelHalo: "#111315",
@@ -261,8 +264,13 @@ export default function Map() {
           minzoom: 5.5,
           paint: {
             "line-color": P.roadSecondary,
-            "line-width": ["interpolate", ["linear"], ["zoom"], 5.5, 0.3, 7, 1.0, 10, 2.2],
-            "line-opacity": ["interpolate", ["linear"], ["zoom"], 5.5, 0.35, 7, 0.7, 10, 0.8],
+            // Widths/opacities taper back down past zoom 10 instead of plateauing — at
+            // site/building zoom the road network is context, not the subject, and letting it
+            // stay at peak width+opacity is what produced the "starburst" look at road hubs like
+            // the Forum (many segments converging at one node reads fine when thin/faint, garish
+            // when each leg is a thick fully-opaque line).
+            "line-width": ["interpolate", ["linear"], ["zoom"], 5.5, 0.25, 7, 0.8, 10, 1.6, 14, 1.1, 18, 0.7],
+            "line-opacity": ["interpolate", ["linear"], ["zoom"], 5.5, 0.3, 7, 0.55, 10, 0.65, 14, 0.45, 18, 0.28],
           },
           layout: { "line-cap": "round", "line-join": "round" },
         });
@@ -277,8 +285,8 @@ export default function Map() {
           minzoom: 3.5,
           paint: {
             "line-color": P.roadMain,
-            "line-width": ["interpolate", ["linear"], ["zoom"], 3.5, 0.25, 5, 1.1, 7, 2.4, 10, 3.6],
-            "line-opacity": ["interpolate", ["linear"], ["zoom"], 3.5, 0.35, 5, 0.7, 7, 0.9, 10, 0.95],
+            "line-width": ["interpolate", ["linear"], ["zoom"], 3.5, 0.25, 5, 1.0, 7, 2.0, 10, 2.6, 14, 2.0, 18, 1.3],
+            "line-opacity": ["interpolate", ["linear"], ["zoom"], 3.5, 0.3, 5, 0.6, 7, 0.75, 10, 0.8, 14, 0.55, 18, 0.35],
           },
           layout: { "line-cap": "round", "line-join": "round" },
         });
@@ -515,8 +523,11 @@ export default function Map() {
           minzoom: 12,
           paint: {
             "line-color": "#8a6a3a",
-            "line-width": ["interpolate", ["linear"], ["zoom"], 13, 0.4, 17, 2],
-            "line-opacity": 0.6,
+            "line-width": ["interpolate", ["linear"], ["zoom"], 13, 0.4, 17, 1.6],
+            // Dimmer than before — building fills below are now near-opaque at street zoom
+            // (see ostia-buildings-fill), so this no longer needs to fight for contrast under
+            // them; it only has to read clearly on open ground between buildings.
+            "line-opacity": 0.45,
           },
         });
         // Street name labels — italic like Google Maps' street names
@@ -543,7 +554,13 @@ export default function Map() {
           },
         });
 
-        // Building fills — color-coded per category, Google-Maps-of-antiquity style.
+        // Building fills — color-coded per category, Google-Maps-of-antiquity style. Colors are
+        // deliberately desaturated from the old palette (e.g. temple was a flat stop-sign
+        // "#c94b4b") — Google Maps building footprints read as soft, muted tints, never neon.
+        // fill-opacity now climbs to ~0.97 by street zoom (was capped at 0.85) so the roads and
+        // ostia-streets paths passing under a building footprint no longer show through the fill
+        // as stray diagonal lines — that bleed-through, not a real "hatch" layer, was what made a
+        // selected building look like it had cracks running through it.
         map.addLayer({
           id: "ostia-buildings-fill",
           type: "fill",
@@ -553,26 +570,26 @@ export default function Map() {
             "fill-color": [
               "match",
               ["get", "category"],
-              "bath", "#5aa3c8",
-              "temple", "#c94b4b",
-              "theater", "#7a4bc9",
-              "basilica", "#c9a24b",
-              "basilica_christian", "#a866d9",
+              "bath", "#6b9db3",
+              "temple", "#b9695a",
+              "theater", "#8770ad",
+              "basilica", "#c2a05f",
+              "basilica_christian", "#9c7bab",
               "warehouse", "#8c6b3a",
-              "domus", "#d99a55",
-              "insula", "#e0b070",
-              "mithraeum", "#5f4a8c",
-              "fullery", "#4a9d6b",
-              "barracks", "#7a1f1f",
-              "taberna", "#c96b3a",
-              "tomb", "#5a5a5a",
-              "forum", "#c98d3a",
-              "plaza", "#e5c88c",
-              "medieval", "#9a9a9a",
+              "domus", "#cf9a63",
+              "insula", "#d6ae7c",
+              "mithraeum", "#665585",
+              "fullery", "#5c9271",
+              "barracks", "#8a4a42",
+              "taberna", "#bd7249",
+              "tomb", "#6b6b68",
+              "forum", "#c2924f",
+              "plaza", "#ddc596",
+              "medieval", "#9a9690",
               "archaeological", "#c9b394",
               "#b8a180",
             ],
-            "fill-opacity": ["interpolate", ["linear"], ["zoom"], 13, 0.4, 16, 0.85],
+            "fill-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0.5, 14, 0.85, 16, 0.97],
           },
         });
         map.addLayer({
@@ -581,9 +598,11 @@ export default function Map() {
           source: "ostia-buildings",
           minzoom: 12,
           paint: {
-            "line-color": "#3b2a17",
-            "line-width": ["interpolate", ["linear"], ["zoom"], 13, 0.2, 17, 0.8],
-            "line-opacity": 0.75,
+            // A soft warm-brown border rather than a near-black one — refined footprint edge,
+            // Google-Maps style, instead of a harsh outline fighting the fill for attention.
+            "line-color": "#4a3620",
+            "line-width": ["interpolate", ["linear"], ["zoom"], 13, 0.2, 17, 0.7],
+            "line-opacity": 0.5,
           },
         });
 

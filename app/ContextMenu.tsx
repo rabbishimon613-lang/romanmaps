@@ -243,6 +243,12 @@ function MenuItem({
       onClick={onClick}
       disabled={disabled}
       title={title}
+      onMouseEnter={(e) => {
+        if (!disabled) e.currentTarget.style.background = "var(--surface-2)";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.background = "transparent";
+      }}
       style={{
         display: "block",
         width: "100%",
@@ -252,6 +258,7 @@ function MenuItem({
         color: disabled ? "var(--text-3)" : "var(--text-strong)",
         background: "transparent",
         cursor: disabled ? "default" : "pointer",
+        transition: "background 100ms ease",
       }}
     >
       {label}

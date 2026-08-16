@@ -76,7 +76,7 @@ export default function Ruler() {
         id: LINE_SOURCE,
         type: "line",
         source: LINE_SOURCE,
-        paint: { "line-color": "#4285f4", "line-width": 3 },
+        paint: { "line-color": "#1a73e8", "line-width": 3 },
         layout: { "line-cap": "round", "line-join": "round" },
       });
     }
