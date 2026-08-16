@@ -113,8 +113,15 @@ to prevent. Building locally to *test* your own work is expected and fine.
       (invariant 0) that didn't look finishable cleanly in the shift's remaining time; picked
       `[14-P0-2]` instead as the safer same-priority `add` that reuses the proven `/site/[slug]`
       pattern. Still open, still topmost `add` — next `add` turn should try it first.
-- [~] `[14-P0-2]` **`place-pages`** `add` — claimed by cloud shift 3, 2026-08-16 12:58.
-      `/place/[slug]` for every POI, server-rendered.
+- [x] `[14-P0-2]` **`place-pages`** `add` — Done 2026-08-16 by cloud shift 3. New
+      `app/place/[slug]/page.tsx`, statically generated for all 467 `pois.geojson` records
+      (`/site/[slug]`'s pattern extended — hero image + About/What-happened-here/In-ancient-
+      writing/Sources blocks, JSON-LD `Place` schema, full OG/Twitter metadata, a button back
+      into the interactive map that reopens the same panel). `sitemap.ts` now lists all 467
+      alongside the 40 site pages; the 16k-point raw gazetteer stays out of scope. Verified:
+      `next build` generates all 513 routes cleanly (~18s); Playwright at desktop + 375×812 for
+      an image-bearing page and a no-image fallback page; the map round-trip link confirmed
+      landing on the right panel.
 - [ ] `[02-P0-1]` **`terrain`** `polish` — Hillshade/relief under the land fill.
 - [ ] `[02-P0-4]` **`self-host-glyphs`** `fix` — Stop depending on `demotiles.maplibre.org`;
       a single point of failure that would erase every label on the map.
@@ -262,11 +269,15 @@ to prevent. Building locally to *test* your own work is expected and fine.
   `people_117.geojson` (6 clusters, 11 markers offset).
 - 2026-08-16 · `[09-P0-1]` ancient-sources · Batch 2: 37 more citations, 145/221 high-confidence
   POIs now covered (65.6%). See ticket note above for the per-theme hit-rate breakdown.
+- 2026-08-16 · `[14-P0-2]` place-pages · cloud shift 3. `/place/[slug]` for all 467
+  `pois.geojson` records, `/site/[slug]`'s pattern extended (hero/fallback, About/What-happened/
+  In-ancient-writing/Sources, JSON-LD, OG/Twitter, map round-trip link). `sitemap.ts` now lists
+  507 URLs. `[10-P0-1]` tours was skipped this run — see that ticket's own note for why.
 
-**Ratio state after this run:** cloud shift 3 shipped 1 `polish` (`[11-P0-1]` split-site-data)
-and 1 `deepen` (`[09-P0-1]` ancient-sources batch 2) — exactly what the previous run owed —
-plus one off-ratio `fix` (`[12-FIX-2]`, found while auditing for the polish ticket). **The next
-run owes an `add`.**
+**Ratio state after this run:** cloud shift 3 shipped 1 `polish` (`[11-P0-1]` split-site-data),
+1 `deepen` (`[09-P0-1]` ancient-sources batch 2), and 1 `add` (`[14-P0-2]` place-pages) — a full
+add/deepen cycle in one run — plus one off-ratio `fix` (`[12-FIX-2]`, found while auditing for
+the polish ticket). **The next run owes a second `deepen`** to complete the 1:2:1 cycle.
 
 **Note on `[15-P0-1]` for future runs:** the visual gate is only unreachable from the *Mac-side
 unattended editorial routine*, which has no way to launch a dev server or a browser. A cloud
