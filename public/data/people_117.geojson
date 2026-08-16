@@ -52,8 +52,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          32.2815,
-          36.2619
+          32.285208,
+          36.273313
         ]
       },
       "properties": {
@@ -75,8 +75,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          32.2815,
-          36.2619
+          32.271792,
+          36.268953
         ]
       },
       "properties": {
@@ -97,7 +97,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          36.1613,
+          36.1493,
           36.2023
         ]
       },
@@ -119,8 +119,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          32.2815,
-          36.2619
+          32.271792,
+          36.254847
         ]
       },
       "properties": {
@@ -207,7 +207,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          12.4853,
+          12.4733,
           41.8925
         ]
       },
@@ -316,7 +316,7 @@
         "type": "Point",
         "coordinates": [
           12.4964,
-          41.9028
+          41.9148
         ]
       },
       "properties": {
@@ -336,7 +336,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          20.7367,
+          20.7247,
           39.0203
         ]
       },
@@ -358,7 +358,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          12.4964,
+          12.4844,
           41.9028
         ]
       },
@@ -379,8 +379,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          32.2815,
-          36.2619
+          32.285208,
+          36.250487
         ]
       },
       "properties": {
@@ -445,7 +445,7 @@
         "type": "Point",
         "coordinates": [
           12.4964,
-          41.9028
+          41.8908
         ]
       },
       "properties": {
@@ -532,7 +532,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.8854,
+          34.8734,
           31.9515
         ]
       },
