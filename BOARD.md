@@ -68,8 +68,15 @@ to prevent. Building locally to *test* your own work is expected and fine.
       `places_high` (~11MB shipped, never loaded) or wire them into a detail ladder.
 - [ ] `[01-P0-1]` **`selected-marker`** `polish` — Selected POI gets an enlarged ringed marker;
       camera offsets by the sheet height so the pin stays visible.
-- [~] `[01-P0-2]` **`camera-memory`** `polish` — claimed by cloud shift 4, 2026-08-16 17:20.
-      Persist and restore the last camera.
+- [x] `[01-P0-2]` **`camera-memory`** `polish` — Done 2026-08-16 by cloud shift 4. A returning
+      visitor now lands where they left off instead of always resetting to the empire-wide
+      opening view. `Map.tsx`'s existing `#lng,lat,zoomz` hash sync only covered shared links and
+      in-session back/forward, not a plain reload/new tab — added a localStorage fallback
+      (`loadCamera`/`saveCamera`, try/catch-wrapped for private-browsing) that piggybacks on the
+      already-debounced moveend hash writer, no new listener. A real hash still wins, and the
+      cinematic opening flyTo is skipped for a restored camera the same way it already was for a
+      hash link. Verified with Playwright: fresh context still gets the unchanged default Rome
+      view; pan+zoom, strip the hash, reload → lands back at the panned position.
 - [ ] `[03-P0-2]` **`card-rebuild`** `polish` — Rebuild the place card to the eleven-block
       order; every block hides when empty.
 - [x] `[03-FIX-1]` **`notes-truncation`** `fix` — Done 2026-08-16 by cloud shift 2. Audited every
@@ -333,15 +340,21 @@ to prevent. Building locally to *test* your own work is expected and fine.
   POIs now covered (64.3%). See ticket note above for the per-theme breakdown.
 - 2026-08-16 · `[06-P0-2]` curate-buildings (Herculaneum) · cloud shift 4. 34 buildings in
   `app/herculaneumDescriptions.ts`. See ticket note above.
+- 2026-08-16 · `[01-P0-2]` camera-memory · cloud shift 4. localStorage fallback for the camera
+  position when no URL hash is present, so a returning visitor lands where they left off instead
+  of always resetting to the empire-wide opening view. See ticket note above.
 
 **Ratio state after this run:** cloud shift 3 shipped 1 `polish` (`[11-P0-1]` split-site-data),
 2 `deepen` (`[09-P0-1]` ancient-sources batch 2, `[06-P0-2]` curate-buildings/Pompeii), and 1
 `add` (`[14-P0-2]` place-pages) — a complete 1:2:1 cycle in one run — plus one off-ratio `fix`
 (`[12-FIX-2]`, found while auditing for the polish ticket) and a second, unplanned `fix` (the
 click-priority bug, found while verifying the second deepen ticket). Cloud shift 4 opened a fresh
-cycle with `[10-P0-1]` tours (`add`) and followed it with 2 `deepen` (`[09-P0-1]` ancient-sources
-batch 3, `[06-P0-2]` curate-buildings/Herculaneum) — 1:2 of the cycle done, a `polish` ticket
-still owed.
+cycle with `[10-P0-1]` tours (`add`), followed it with 2 `deepen` (`[09-P0-1]` ancient-sources
+batch 3, `[06-P0-2]` curate-buildings/Herculaneum), and closed it with 1 `polish`
+(`[01-P0-2]` camera-memory) — a second complete 1:2:1 cycle. **The next run starts a fresh cycle:
+topmost `add` first.** At the time this run ends the topmost unclaimed `add` is `[14-P1-4]`
+province-pages (P1) unless a P0 `add` opens up first — check the board fresh, don't assume this
+note is still current by the time you read it.
 
 **Note on `[15-P0-1]` for future runs:** the visual gate is only unreachable from the *Mac-side
 unattended editorial routine*, which has no way to launch a dev server or a browser. A cloud
