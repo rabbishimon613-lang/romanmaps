@@ -147,7 +147,8 @@ export default function PlaceDetails() {
 
   // Clean shift-scholar voice out of notes: drop bracketed asides, sourcing meta,
   // "per the brief", "guardrail", any parenthetical citations that read like margin notes.
-  // Keep only the first 1–2 clean sentences that would work as a tourist-facing description.
+  // The data itself should already be written in tourist-facing voice — this is a safety net,
+  // not the primary defense. Full text renders; nothing is cut for length.
   const cleanNotes = (raw: string): string => {
     if (!raw) return "";
     let t = String(raw);
@@ -158,16 +159,7 @@ export default function PlaceDetails() {
     // Remove scholar hedge phrases
     t = t.replace(/\b(kept as|kept per|so it is kept as|per the guardrail|per the brief|for tourists|programmatically)\b[^.]*\.?/gi, "");
     // Collapse whitespace
-    t = t.replace(/\s+/g, " ").trim();
-    // Grab first two sentences, max ~280 chars
-    const sentences = t.split(/(?<=[.!?])\s+/).filter(Boolean);
-    let out = sentences.slice(0, 2).join(" ");
-    if (out.length > 280) {
-      const cut = out.slice(0, 280);
-      const lastPeriod = Math.max(cut.lastIndexOf("."), cut.lastIndexOf("!"), cut.lastIndexOf("?"));
-      out = lastPeriod > 100 ? cut.slice(0, lastPeriod + 1) : cut + "…";
-    }
-    return out;
+    return t.replace(/\s+/g, " ").trim();
   };
   const notes = cleanNotes(p.notes || "");
   const categoryLife = lifeForCategory(category);

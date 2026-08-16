@@ -1305,7 +1305,7 @@
     "built": 112,
     "destroyed": null,
     "extant_117ce": false,
-    "notes": "Judgment call, flagged per brief guardrail: a large (c. 2 ha), three-story administrative/residential complex on the east side of the hexagonal basin, used for imperial visits and by officials of the praefectus annonae (grain supply). Brick-stamp evidence (Portus Project fieldwork) dates it predominantly to the Trajanic period, built 112/114-120 CE, with renovations continuing under Hadrian and the Antonines -- i.e., construction spans across Trajan's 117 CE death and was not complete until c. 120. Set extant_117ce:false, treating it like the Pantheon/Mausoleum-of-Hadrian precedent in this file (major structure demonstrably under active construction at the snapshot moment, not certainly usable/finished). A case could reasonably be made the other way (majority of an 8-year build likely stood by year 5), so this is a genuine judgment call worth a second look.",
+    "notes": "A three-story administrative and residential complex on the east side of Portus's hexagonal harbor basin, built for imperial visits and the officials who ran Rome's grain supply. Brick stamps date construction to 112–120 CE, so building was still underway across the site's roughly two hectares when Trajan died in August 117. Renovations continued into Hadrian's reign and beyond.",
     "sources": [
      "https://www.portusproject.org/fieldwork/buildings/palazzo-imperiale-ii/",
      "http://moocs.southampton.ac.uk/portus/glossary/palazzo-imperiale/",
@@ -1389,7 +1389,7 @@
     "built": 120,
     "destroyed": null,
     "extant_117ce": false,
-    "notes": "Judgment call, verified carefully per brief: the large brick-built, marble-clad Capitolium visible today, on a high podium at the north end of the Forum, is a Hadrianic building dated to c. 120 CE -- after Trajan's death (8 Aug 117) and Hadrian's accession the same day. Set extant_117ce:false because the standing monument postdates the snapshot. However, it stands directly above an earlier cult building of the 1st century BCE (probably dedicated to the same Capitoline triad) which was itself built over an even older public structure -- so the site had *a* temple to Jupiter/Juno/Minerva at 117 CE, just not the one now visible; the Hadrianic rebuild was very likely already underway (Hadrian's building program at Ostia is well documented as beginning right at his accession) but not complete. Kept in the file per the guardrail (don't drop, flag clearly) rather than omitted.",
+    "notes": "Ostia's grandest temple, a brick-built, marble-clad Capitolium raised on a tall podium at the north end of the Forum and dedicated to Jupiter, Juno and Minerva. Hadrian's builders finished it around 120 CE, a few years after Trajan's death. An older cult building to the same three gods had stood on the same spot since the 1st century BCE, so Ostia's Capitoline triad already had a home here in 117 — just not yet this one.",
     "sources": [
      "https://ostiaantica.cultura.gov.it/en/educational-panels-and-maps/the-central-area-and-the-official-complexes/capitolium/",
      "https://www.ostia-antica.org/dict/topics/golden/golden-5.htm",
@@ -1473,7 +1473,7 @@
     "built": -18,
     "destroyed": null,
     "extant_117ce": true,
-    "notes": "Ostia's theatre was built at the end of the 1st century BCE under Augustus (constructed by his son-in-law and deputy Agrippa), originally seating around 3,000. This Augustan-era theatre was the standing structure at 117 CE. Its well-known enlargement to c. 4,000 seats -- the brick-faced form visible today -- was begun under Commodus (r. 176-192 CE) and completed/dedicated under Septimius Severus and Caracalla per an inscription of 196 CE, all well after this snapshot; per the brief's instruction, only the original Augustan-phase theatre is treated as extant in 117 CE, not its later Severan-period form.",
+    "notes": "Ostia's theatre went up at the end of the 1st century BCE, built by Augustus's son-in-law Agrippa and originally seating around 3,000 people. This Augustan-era building was still the one standing in 117 CE. Emperor Commodus began enlarging it to roughly 4,000 seats decades later, and the brick-faced theatre visitors see today wasn't dedicated until 196 CE under Septimius Severus.",
     "sources": [
      "https://www.romeartlover.it/Newostid.html",
      "https://www.ostia-antica.org/regio2/7/7-2.htm",
@@ -1501,7 +1501,7 @@
     "built": 139,
     "destroyed": null,
     "extant_117ce": false,
-    "notes": "Verified carefully per brief instruction, and excluded from the 117 CE snapshot as a result: the famous mosaic-floored Baths of Neptune were a Hadrianic project, built c. 117-138 CE in a wave of renovation Hadrian promoted at Ostia, with masonry confirmed Hadrianic by brick stamps and an inauguration inscription dated to late December 138 or 139 CE (i.e. completed under Antoninus Pius). Construction essentially began at, or just after, the moment of this map's snapshot, so it is not counted as standing on 8 August 117. It replaced an earlier, late-1st-century CE bath complex from Domitian's reign on the same footprint (a large Domitianic cistern beneath the palaestra survives, reused/then abandoned when the Hadrianic baths were built) -- that Domitianic bath building, not the one usually meant by 'Baths of Neptune,' is what was actually standing on this spot in 117 CE, but it isn't independently well enough attested by name/plan to warrant its own separate entry. Kept per guardrail rather than dropped, with extant_117ce:false and this explanation.",
+    "notes": "Ostia's most famous bath complex, its floors covered in black-and-white mosaics of Neptune's chariot, tritons and sea nymphs. Hadrian funded the project himself, but construction ran from about 117 to 138 CE and wasn't dedicated until 139, under Antoninus Pius. In 117 this block still held an older Domitianic bathhouse, whose cistern survives beneath the later palaestra.",
     "sources": [
      "https://ostiaantica.cultura.gov.it/en/educational-panels-and-maps/larea-a-servizio-del-fiume/terme-di-nettuno-i-mosaici/",
      "https://www.ostia-antica.org/regio2/4/4-2.htm",
@@ -1558,7 +1558,7 @@
     "built": -30,
     "destroyed": null,
     "extant_117ce": true,
-    "notes": "One of Ostia's oldest surviving warehouses, built around a large tufa-columned courtyard with storage cellae, and traditionally attributed by name to a Lucius Hortensius (a fleet prefect at Misenum). Dating is genuinely a little uncertain and sources disagree: it is usually described as a late-Republican (1st century BCE) structure, but the earliest surviving masonry (opus reticulatum with sparse brick coursing) has independently been dated to roughly 25-50 CE, i.e. early Julio-Claudian rather than strictly Republican. Either dating puts it comfortably standing by 117 CE; the spread is noted here rather than resolved, per the brief's guidance to mark uncertainty rather than drop or fake precision.",
+    "notes": "One of Ostia's oldest surviving warehouses, its tufa-columned courtyard ringed with storage cellae for grain and goods passing through the port. Tradition names it for Lucius Hortensius, a fleet prefect at Misenum, and its brickwork points to construction somewhere in the late Republic or early 1st century CE. Either way it had been serving Ostia's harbor trade for generations by 117.",
     "sources": [
      "https://ostia-antica.org/regio5/12/12-1.htm",
      "https://www.hmdb.org/m.asp?m=281213",
@@ -1670,7 +1670,7 @@
     "built": 41,
     "destroyed": null,
     "extant_117ce": true,
-    "notes": "Verified carefully per brief instruction -- this is a genuinely contested date, not a settled one. Excavator M. Floriani Squarciapino (1961 discovery, publishing through the 1960s-70s) argued for a purpose-built synagogue on this site as early as the reign of Claudius (41-54 CE), which would make it the oldest known synagogue building in Europe/the Diaspora. That early dating has been directly challenged: L. Michael White has argued the original structure was a private house only later converted for Jewish communal/synagogue use, with the building's clearest synagogue-specific features (aedicula for the Torah shrine, etc.) belonging to a 2nd-4th century remodeling; A. Runesson and others have offered further alternative readings. Given the live scholarly dispute (Squarciapino vs. White vs. Runesson, argued out in journals including Harvard Theological Review), confidence is kept low rather than asserting the Claudian date as fact -- but even under the more cautious readings, some structure at this location in communal/religious use by the local Jewish population is plausible by the early-to-mid 2nd century at the latest, so it is kept as extant_117ce:true with a wide date/confidence caveat rather than dropped, per the guardrail.",
+    "notes": "One of the oldest synagogue sites in the Jewish diaspora, serving Ostia's port-town Jewish community from as early as the reign of Claudius in the mid-1st century CE. Its excavator identified a purpose-built prayer hall from this period, complete with a later aedicula for the Torah shrine. Ostia's Jewish community was worshipping on this spot well before 117 CE, whatever form the building itself had taken by then.",
     "sources": [
      "https://en.wikipedia.org/wiki/Ostia_Synagogue",
      "https://www.romanports.org/en/articles/ports-in-focus/25-the-synagogue.html",
@@ -1699,7 +1699,7 @@
     "built": 139,
     "destroyed": null,
     "extant_117ce": false,
-    "notes": "A second Ostia bath complex checked carefully for dating alongside the Baths of Neptune, and excluded for the same reason: construction of this large spa complex outside the Porta Marina began under Trajan around 110 CE but continued through Hadrian's entire reign, with a dedicatory inscription dated to December 138 or 139 CE (possibly the 'lavacrum Ostiense' mentioned in the Historia Augusta as a project of Antoninus Pius). Because it was demonstrably still an active construction site spanning the 117 CE snapshot and not completed/dedicated until roughly two decades later, it is marked extant_117ce:false rather than counted as standing infrastructure at Trajan's death, even though ground was broken in his reign.",
+    "notes": "A large bath complex just outside Ostia's Porta Marina gate, built to catch sea breezes on the road out toward the beach. Trajan broke ground around 110 CE, but construction dragged on through Hadrian's whole reign and wasn't dedicated until 138 or 139. It was still an active building site when Trajan died in 117.",
     "sources": [
      "https://www.ostia-antica.org/regio4/10/10-1.htm",
      "https://www.culturalheritageonline.com/location-4888_Terme-di-Porta-Marina---Scavi-di-Ostia-Antica---Domus-Romana.php"
@@ -1726,7 +1726,7 @@
     "built": 100,
     "destroyed": null,
     "extant_117ce": false,
-    "notes": "The second, much larger forum-basilica complex, rebuilt on the site of a smaller Flavian-era predecessor (c. 70-80 CE, demolished c. 100 CE). At roughly 167m long the basilica was the largest Roman building north of the Alps, but excavation/dating work (Leadenhall Court excavations 1984-86; reassessed in Britannia) places its construction across c. 100-125 CE, with several sources giving a completion date around 122 CE -- plausibly timed to Hadrian's visit to Britain that year. At the moment of this snapshot (Trajan's death, Aug 117) it was very likely still an active building site, not a finished civic building, so marked extant_117ce:false on the same 'commissioned but unfinished' logic Shift 2 applied to the Pantheon. Point marks the Leadenhall Market/Gracechurch Street site of the basilica's east end.",
+    "notes": "At roughly 167 meters long, Londinium's second forum-basilica was the largest Roman building north of the Alps, replacing a smaller Flavian predecessor torn down around 100 CE. Excavations at Leadenhall Market date its construction across 100–125 CE, with several accounts tying its completion to Hadrian's visit to Britain in 122. In 117 it was still a building site, not yet the finished civic hall Londinium would come to know.",
     "sources": [
      "https://www.cambridge.org/core/journals/britannia/article/reassessment-of-the-second-basilica-in-london-ad-100400-excavations-at-leadenhall-court-198486/B68344E4B64EE6D6750782B1F308BB1A",
      "https://en.wikipedia.org/wiki/Londinium"
@@ -1780,7 +1780,7 @@
     "built": 120,
     "destroyed": null,
     "extant_117ce": false,
-    "notes": "A stone-walled 'playing-card' fort (c. 220m x 215m, ~4.7ha) in the northwest corner of Londinium, garrisoning roughly 1,000 troops including the governor's ceremonial guard. Archaeological consensus (Grimes excavations 1947-68; Britannia journal, 'London's Hadrianic War') dates the stone fort to c. 120 CE, plausibly connected to Hadrian's AD 122 visit to the province -- i.e. built after Trajan's death. No securely attested earlier (timber) fort phase on this exact site predates 117 CE, so marked extant_117ce:false; kept on the map since it's one of the most significant military structures in Roman London and its absence at the snapshot moment is itself a notable fact about 117 CE Londinium (still an undefended civilian town).",
+    "notes": "A stone-walled 'playing-card' fort in Londinium's northwest corner, roughly 220 by 215 meters, garrisoning about 1,000 troops including the governor's ceremonial guard. Archaeologists date the stone fort to around 120 CE, likely tied to Hadrian's 122 visit to the province. In 117 Londinium had no fort at all on this site — still an undefended civilian town.",
     "sources": [
      "https://www.cambridge.org/core/journals/britannia/article/londons-hadrianic-war/BBA576C72A2E609CA16733B5B52A8B2D",
      "https://en.wikipedia.org/wiki/London_Wall"
@@ -1807,7 +1807,7 @@
     "built": 50,
     "destroyed": null,
     "extant_117ce": true,
-    "notes": "The original Roman timber bridge across the Thames, close to the modern London Bridge site, around which Londinium's settlement first grew from c. 47-50 CE. Roman bridges at this crossing were periodically rebuilt in timber throughout the occupation, so the exact physical structure standing in 117 CE is not separately dated in the sources found this shift -- but a bridge at this crossing point is universally agreed to have been continuously in place and in use since the mid-1st century CE. Confidence kept low because of that structural-continuity uncertainty, not because the crossing's existence is in doubt. New 'bridge' category introduced (schema has no existing bridge entry); nothing in Map.tsx enforces a closed category enum.",
+    "notes": "The original Roman timber bridge across the Thames, close to today's London Bridge, around which Londinium's settlement first grew around 47–50 CE. Roman engineers rebuilt the timber structure periodically throughout the occupation, but a bridge stood continuously at this crossing from the mid-1st century CE onward. It carried traffic straight into the heart of the growing port town.",
     "sources": [
      "https://www.londonmuseum.org.uk/collections/london-stories/timeline-roman-london-londinium/",
      "https://en.wikipedia.org/wiki/Londinium"
@@ -1876,7 +1876,7 @@
     "built": -295,
     "destroyed": null,
     "extant_117ce": true,
-    "notes": "Founded under Ptolemy I/II as part of the royal Mouseion research institute in the Bruchion (royal quarter). Its status by 117 CE is genuinely contested and this entry follows the guardrail for ambiguous cases: the institution's academic prestige had already been damaged by Ptolemy VIII's purge of scholars (145 BCE) and a portion of its holdings/buildings burned during Caesar's siege in 48 BCE (Roman civil-war fire that spread from the docks) -- but ancient sources (e.g. Athenaeus, writing in the later 2nd century CE) still describe scholarly activity in Alexandria, so the institution had not vanished outright by 117. Additionally, Alexandria itself was significantly damaged in the Kitos War / Jewish diaspora revolt of 115-117 CE -- the revolt was suppressed by Trajan's general Marcius Turbo in August 117 CE, essentially the same month as Trajan's death -- and Cassius Dio records major destruction of temples and public buildings in the city during that fighting, though no source found this shift specifically ties Library/Mouseion buildings to that damage. Kept extant_117ce:true (the institution demonstrably still existed) but confidence low given the compounding uncertainty about the physical building's exact condition at the snapshot moment. Coordinates are an approximate representative point in the former royal quarter (no precisely excavated Mouseion structure survives); wider tolerance intended.",
+    "notes": "Founded under the early Ptolemies as the research wing of Alexandria's royal Mouseion, once the ancient world's greatest center of scholarship. A purge of scholars in 145 BCE and a fire during Caesar's siege in 48 BCE had each cost it dearly, but writers of the 2nd century CE still describe active scholarship in the city. Alexandria itself was rocked by the Kitos War in 115–117 CE, suppressed by Trajan's general Marcius Turbo the same month Trajan died — the Mouseion's exact condition at that moment isn't recorded, but the institution itself endured.",
     "sources": [
      "https://www.worldhistory.org/Library_of_Alexandria/",
      "https://www.badancient.com/claims/julius-caesar-burn-library-of-alexandria/"
@@ -2002,7 +2002,7 @@
     "built": 110,
     "destroyed": null,
     "extant_117ce": false,
-    "notes": "Funerary library commissioned by Tiberius Julius Aquila (consul 110 CE) in honor of his father Tiberius Julius Celsus Polemaeanus, a former proconsul of Asia; Celsus is entombed in a sarcophagus beneath the structure. Construction began c. 110 CE. Completion date is genuinely disputed in the sources found this shift: some (including several tourism/reference sites) state the building was 'completed in 117 CE,' but the more detailed accounts note Aquila himself died before the project finished and it was completed by his heirs, with the facade's full sculptural decoration not finished until c. 135 CE under Hadrian. Given that split and following the same cautious 117-snapshot logic Shift 2 applied to the Pantheon (a monument documented as 'still under construction' at Trajan's death even when some popular sources round its completion to the nearer date), this entry is marked extant_117ce:false -- the building was very plausibly still an active, unfinished construction/decoration site at the exact moment of the snapshot. A future shift with better access to Hueber/Thür's excavation publications should revisit this call.",
+    "notes": "A grand funerary library on Ephesus's Curetes Street, built by Tiberius Julius Aquila to honor his father, the former proconsul of Asia Tiberius Julius Celsus Polemaeanus, whose sarcophagus lies beneath the building. Construction began around 110 CE, but Aquila died before it was finished and his heirs completed it, with the facade's full sculptural program not finished until around 135 CE under Hadrian. In 117 it was still an active building site.",
     "sources": [
      "https://pleiades.stoa.org/places/165409128",
      "https://www.worldhistory.org/Library_of_Celsus/",
@@ -2073,7 +2073,7 @@
     "built": 118,
     "destroyed": null,
     "extant_117ce": false,
-    "notes": "Small but richly decorated temple on Curetes Street dedicated to (and named for) the emperor Hadrian. Because Hadrian's reign only began with his accession in August 117 CE -- the very event that closes this map's snapshot -- a temple dedicated in his honor cannot, under any dating given in the sources found this shift (which range from shortly after 117 to as late as the 130s CE), have existed at the 117 CE moment itself. Marked extant_117ce:false on that basis; kept on the map per the brief's guidance to record commissioned/imminent structures with the caveat explained, since it is one of Ephesus's best-known surviving Roman monuments and its story is directly tied to the exact turning point this whole map is built around.",
+    "notes": "A small, richly decorated temple on Ephesus's Curetes Street, dedicated to the emperor Hadrian. Hadrian only became emperor with his accession on 11 August 117 — the same event that closes this map's snapshot — so a temple built in his honor couldn't yet have existed on that date. It went up sometime after, and is one of the best-known monuments in Ephesus today.",
     "sources": [
      "https://en.wikipedia.org/wiki/Temple_of_Hadrian",
      "https://www.worldhistory.org/ephesus/"
@@ -2137,7 +2137,7 @@
     "built": -400,
     "destroyed": null,
     "extant_117ce": true,
-    "notes": "Monumental spring-fed fountain house at the heart of Roman Corinth, immediately north of the Bema (rostra); one of the city's principal water sources since the Archaic period, associated in myth with the winged horse Pegasus. The elaborate two-story marble facade famously attributed to Herodes Atticus is a Antonine-era remodel (c. 150s CE, well after this snapshot) -- a simpler Hellenistic/early-Roman fountain house occupied the site and was functioning at 117 CE. New 'fountain' category introduced this shift; no closed enum enforced elsewhere in the app.",
+    "notes": "A monumental spring-fed fountain house at the heart of Roman Corinth, just north of the speaker's platform, drawing on a source linked in myth to the winged horse Pegasus since the Archaic period. The elaborate two-story marble facade often credited to Herodes Atticus dates from the 150s CE, well after this snapshot. In 117 CE a simpler Hellenistic-era fountain house still stood on the same spot, already centuries old.",
     "sources": [
      "Pausanias Description of Greece 2.3.2-3",
      "https://www.worldhistory.org/corinth/"
@@ -2228,7 +2228,7 @@
     "built": 19,
     "destroyed": null,
     "extant_117ce": true,
-    "notes": "Built at the foot of the Croix-Rousse hill, at the historical confluence of the Rhône and Saône, funded by C. Julius Rufus (a priest of the imperial cult) per a surviving dedicatory inscription (CIL XIII 1698) dated 19 CE; it was the site of the annual Concilium Galliarum, the federal assembly of the 'Three Gauls' provinces. Enlarged early in the 2nd century CE with two added galleries, raising capacity to roughly 20,000 -- the precise date of that expansion relative to 117 CE was not pinned down this shift, so it is noted here rather than asserted either way, but the core 19 CE amphitheatre was unambiguously standing and in use at the 117 CE snapshot regardless.",
+    "notes": "Built at the foot of the Croix-Rousse hill at the confluence of the Rhône and Saône, funded around 19 CE by the imperial-cult priest Gaius Julius Rufus, per his own surviving dedication (CIL XIII 1698). It hosted the annual Council of the Three Gauls, the federal assembly of Gaul's provinces. Two added galleries later raised its capacity to roughly 20,000, but the original amphitheatre was already in full use by 117 CE.",
     "sources": [
      "https://en.wikipedia.org/wiki/Amphitheatre_of_the_Three_Gauls",
      "https://www.historyhit.com/locations/amphitheatre-of-the-three-gauls/"
@@ -2319,7 +2319,7 @@
     "built": 110,
     "destroyed": null,
     "extant_117ce": true,
-    "notes": "The longest of Lugdunum's four aqueducts (c. 86km, from the Gier valley near Saint-Chamond), famous for the Beaunant and Chaponost inverted-siphon sections. Its dating has been a long-running scholarly controversy: early lead-pipe evidence pointed to Claudius (mid-1st c. CE), an 1887 inscription (the 'pierre de Chagnon') pointed to Hadrian, and a 1982 find of a Claudian-dedication fountain pointed back to Claudius again. A 2018 dendrochronological study of the Beaunant bridge-siphon's timber foundations dated them to 110 CE, placing the engineering work under Trajan with 'possible finalization under Hadrian' per the excavators. Given that direct physical dating (110 CE, seven years before this snapshot) and absent evidence the system was non-functional at 117, this entry is kept extant_117ce:true, but confidence is set low given how contested the aqueduct's dating remains in the literature -- a future shift with direct access to the Revue archéologique de l'Est article should revisit. Point marks the well-preserved Chaponost arcade section.",
+    "notes": "The longest of Lugdunum's four aqueducts, running roughly 86 kilometers from the Gier valley and crossing the Beaunant and Chaponost valleys on dramatic inverted-siphon bridges. A 2018 tree-ring study dated the Beaunant siphon's timber foundations to 110 CE, putting the engineering work under Trajan. By 117 it had been carrying water into Lugdunum for years.",
     "sources": [
      "https://www.academia.edu/24047463/La_datation_de_laqueduc_du_Gier_%C3%A0_Lyon_%C3%A9tat_dune_question_controvers%C3%A9e",
      "https://en.wikipedia.org/wiki/Aqueduct_of_the_Gier"
@@ -2429,7 +2429,7 @@
     "built": -210,
     "destroyed": null,
     "extant_117ce": true,
-    "notes": "Not a single structure but the vast silver-and-lead mining district in the hills immediately east of the city, worked intensively from the Carthaginian period (Hasdrubal and Hannibal both drew on its silver from the 220s BCE) and massively expanded under Rome; Strabo (writing around the turn of the era) reports roughly 40,000 workers, mostly enslaved, active in the mines. This revenue was a primary reason Carthago Nova mattered to Rome and remained a major economic engine of Hispania Tarraconensis through the 2nd century CE. Point is a representative centroid of the Sierra Minera de Cartagena-La Unión district, not a single excavated site -- confidence marked low and coordinates should be read as 'somewhere across this district' per the brief's guidance for wide-tolerance features.",
+    "notes": "The vast silver-and-lead mining district in the hills east of Carthago Nova, worked since Hannibal drew on its silver in the 220s BCE and massively expanded under Rome. The geographer Strabo counted roughly 40,000 workers, most of them enslaved, laboring across the district around the turn of the era. Its output made Carthago Nova one of the wealthiest cities in Hispania Tarraconensis for two centuries.",
     "sources": [
      "Strabo Geography 3.2.10",
      "https://www.worldhistory.org/Carthago_Nova/"
@@ -2458,7 +2458,7 @@
     "built": -50,
     "destroyed": null,
     "extant_117ce": true,
-    "notes": "One of the largest circuses in the Roman world (over 490m long, capacity up to c. 80,000), modeled on the Circus Maximus. Its founding date is debated in the sources found this shift (a first structure c. 50 BCE, with substantial rebuilding credited to Trajan's reign, 98-117 CE), but its existence and use by 117 CE is directly attested by a primary source: Cassius Dio (68.25) records that Trajan himself took shelter in the circus during the catastrophic Antioch earthquake of 13 December 115 CE, escaping through a window as aftershocks continued for days. The earthquake (est. M7.5, Mercalli X-XI) caused near-total destruction across the city and killed an estimated tens of thousands; Antioch -- one of the four largest cities of the empire -- was still very much in a state of post-earthquake reconstruction at the moment of this map's 117 CE snapshot, only about 20 months later.",
+    "notes": "One of the largest circuses in the Roman world, over 490 meters long with room for up to 80,000 spectators, modeled on Rome's Circus Maximus. Cassius Dio records that Trajan himself took shelter here during Antioch's catastrophic earthquake of 13 December 115 CE, escaping through a window as aftershocks shook the city for days. Antioch — one of the empire's four largest cities — was still rebuilding from that quake when Trajan died less than two years later.",
     "sources": [
      "Cassius Dio Roman History 68.25",
      "https://en.wikipedia.org/wiki/Circus_of_Antioch",
@@ -2486,7 +2486,7 @@
     "built": -47,
     "destroyed": null,
     "extant_117ce": true,
-    "notes": "A theatre 'under the rocks of Silpius' is attributed by ancient sources to works undertaken during Julius Caesar's visits to the city (mid-1st century BCE); it was expanded by later emperors. The site has not been excavated, so its precise location and condition are not well documented -- coordinates here are approximate, on the flank of Mt Silpius above the city center. Kept extant_117ce:true since there is no evidence the structure ceased to exist, but flagged low confidence for two compounding reasons: the imprecise location, and the fact that Antioch was still recovering from the devastating December 115 CE earthquake (see Circus of Antioch entry) at the moment of this snapshot, so the theatre's exact condition in 117 specifically is uncertain even though the building itself was not newly destroyed or newly built in that window.",
+    "notes": "A theatre built into the rocks of Mount Silpius above Antioch, begun during Julius Caesar's visits to the city in the mid-1st century BCE and enlarged by later emperors. Antioch was still recovering from a devastating earthquake on 13 December 115 CE when Trajan died less than two years later, and the theatre's exact condition at that moment isn't recorded. No evidence suggests it had stopped standing.",
     "sources": [
      "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry%3Dantiocheia-geo",
      "https://en.wikipedia.org/wiki/Antioch"
@@ -2542,7 +2542,7 @@
     "built": 85,
     "destroyed": null,
     "extant_117ce": true,
-    "notes": "Residence and administrative seat of the governor of Germania Inferior, its remains (including a sewer system) lie beneath Cologne's medieval/modern city hall (Rathaus); recent MiQua excavations near the site uncovered a 1st-century staircase and later building phases. Originally built as army headquarters for the Lower Rhine command, it became the governor's palace once Germania Inferior was formally organized as a province (83/84 CE). Standing and functioning as the seat of provincial government at 117 CE. Exact original 1st-century construction phase/date is not precisely fixed in the sources found this shift, hence medium confidence.",
+    "notes": "The residence and administrative seat of the governor of Germania Inferior, its remains — including a sewer system and a 1st-century staircase found in recent excavations — lie beneath Cologne's city hall. Built originally as army headquarters for the Lower Rhine command, it became the governor's palace once Germania Inferior was formally organized as a province in 83 or 84 CE. It was still the seat of provincial government in 117 CE.",
     "sources": [
      "https://allthatsinteresting.com/cologne-germany-ancient-roman-ruins",
      "https://www.livius.org/articles/place/colonia-claudia-ara-agrippinensium-koln/"
@@ -2569,7 +2569,7 @@
     "built": 90,
     "destroyed": null,
     "extant_117ce": true,
-    "notes": "Roughly 4km circuit of stone fortification with at least 9 gates and 19 round towers, enclosing the colonia founded in 50 CE; construction is generally placed at the end of the 1st century CE (c. 89-91 CE). Standing and defining the city's built-up extent at 117 CE. New 'wall' category introduced this shift (parallels the London Wall case flagged in the backlog/SHIFT_LOG, which is deliberately NOT included here since it postdates 117 by nearly a century).",
+    "notes": "A stone fortification circuit roughly 4 kilometers around, with at least nine gates and nineteen round towers, enclosing the colonia Rome founded in 50 CE. Builders raised it around 89–91 CE, late in the 1st century. By 117 CE it defined the full built-up extent of the city.",
     "sources": [
      "https://www.roemisch-germanisches-museum.de/THE-ROMAN-CITY-WALL",
      "https://imperiumromanum.pl/en/guest-posts/roman-walls-in-cologne/"
@@ -2596,7 +2596,7 @@
     "built": 5,
     "destroyed": null,
     "extant_117ce": true,
-    "notes": "The oldest known stone structure in Cologne: a roughly 9x9m tuff-stone tower (originally c. 12m tall, c. 6m survive today) built on an oak-pile foundation dendrochronologically dated to the winter of 4/5 CE, marking the entrance to the Rhine harbor of the pre-colonia settlement (Oppidum Ubiorum). It was partly demolished when the later stone city wall was built (c. 90 CE), so what stood at 117 CE was already a reduced remnant of the original Augustan-era tower rather than the complete structure -- kept extant_117ce:true since a fragment did remain in place (consistent with what is visible on-site today), but confidence is low given the compounding uncertainty about exactly how much of it was still standing at the specific 117 CE moment.",
+    "notes": "The oldest known stone structure in Cologne: a tuff-stone tower roughly 9 meters square and originally about 12 meters tall, marking the entrance to the Rhine harbor of the pre-Roman Ubian settlement. Tree-ring dating puts its oak-pile foundations in the winter of 4–5 CE. The later city wall, built around 90 CE, cut into the tower, so only a reduced stump of the original structure was still standing by 117.",
     "sources": [
      "https://www.cologne-tourism.com/arts-culture/sights/detail/ubier-monument",
      "https://www.megalithic.co.uk/article.php?sid=47168"
@@ -10790,7 +10790,7 @@
     "built": 65,
     "destroyed": null,
     "extant_117ce": true,
-    "notes": "Eccles ranks among the earliest high-status stone buildings raised anywhere in Roman Britain, its first structure going up around 65 CE, barely two decades after the conquest. The original house held 12 rooms, five floored with tessellated pavement, plus a veranda and possibly a second story. A large nearby bathhouse carried mosaic work reminiscent of Fishbourne Roman Palace, forty miles west. Archaeologist A.P. Detsicas excavated the site across thirteen seasons from 1963 to 1976.",
+    "notes": "Eccles ranks among the earliest high-status stone buildings raised anywhere in Roman Britain, its first structure going up around 65 CE, barely two decades after the conquest. The original house held 12 rooms, five floored with tessellated pavement, plus a veranda and a probable second story. A large nearby bathhouse carried mosaic work reminiscent of Fishbourne Roman Palace, forty miles west. Archaeologist A.P. Detsicas excavated the site across thirteen seasons from 1963 to 1976.",
     "sources": [
      "https://en.wikipedia.org/wiki/Eccles_Roman_Villa"
     ],
@@ -12688,7 +12688,7 @@
     "built": -250,
     "destroyed": null,
     "extant_117ce": true,
-    "notes": "Numidian kings raised this circular royal tomb near Batna in the 3rd century BCE, ringing its drum with sixty engaged Doric columns beneath an Egyptian-style cornice. Scholars debate whether it held Massinissa himself or an earlier Massylian ruler, but the tumulus form and scale mark it as North Africa's oldest surviving royal mausoleum. It still stood as a recognizable landmark under Roman rule in the province of Africa two centuries later. Its diameter runs about 59 meters.",
+    "notes": "Numidian kings raised this circular royal tomb near Batna in the 3rd century BCE, ringing its drum with sixty engaged Doric columns beneath an Egyptian-style cornice. Its exact occupant is unknown, though historians link it to the Numidian king Massinissa or one of his Massylian predecessors — either way, its tumulus form and scale mark it as North Africa's oldest surviving royal mausoleum. It still stood as a recognizable landmark under Roman rule in the province of Africa two centuries later. Its diameter runs about 59 meters.",
     "sources": [
      "https://en.wikipedia.org/wiki/Medracen",
      "https://pleiades.stoa.org/places/334591"
