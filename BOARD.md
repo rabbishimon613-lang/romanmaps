@@ -374,6 +374,12 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - 2026-08-16 · `[01-P0-2]` camera-memory · cloud shift 4. localStorage fallback for the camera
   position when no URL hash is present, so a returning visitor lands where they left off instead
   of always resetting to the empire-wide opening view. See ticket note above.
+- 2026-08-16 · SHIFT_BRIEF axis 2 (no board ticket ID — brief axis work, board had no unclaimed
+  road-stations ticket) · cloud shift 4. Via Egnatia, the empire's second complete road after
+  Via Appia: 35 new stations in `road_stations.geojson` (26 → 61), Dyrrachium to Byzantium via
+  the Antonine Itinerary. 8 of 35 shipped `identified: false` where the Itinerary names a station
+  with no securely excavated modern location. Reused the already-shipped road-stations layer, no
+  UI changes. Verified with Playwright (layer toggle + queryRenderedFeatures).
 - 2026-08-16 · `[15-P1-4]` metrics · mac editorial pass. `scripts/metrics.mjs` + `npm run
   metrics`; the hand-kept table had already drifted 19 POIs behind the data it described.
 - 2026-08-16 · `[10-P0-3]` flagship-depth · mac editorial pass. Batch 1: 35 `notes` rewritten,
