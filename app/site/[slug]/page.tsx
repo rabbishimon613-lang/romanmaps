@@ -1,0 +1,125 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { SITES } from "../../sites";
+import { SITE_URL } from "../../siteUrl";
+
+export function generateStaticParams() {
+  return SITES.map((s) => ({ slug: s.slug }));
+}
+
+function findSite(slug: string) {
+  return SITES.find((s) => s.slug === slug);
+}
+
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  const site = findSite(params.slug);
+  if (!site) return {};
+  const title = `${site.display} — Roman Maps`;
+  const description = site.blurb;
+  const url = `/site/${site.slug}`;
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      type: "article",
+      url: `${SITE_URL}${url}`,
+      siteName: "Roman Maps",
+      title,
+      description,
+      locale: "en",
+    },
+    twitter: {
+      card: "summary",
+      title,
+      description,
+    },
+  };
+}
+
+export default function SitePage({ params }: { params: { slug: string } }) {
+  const site = findSite(params.slug);
+  if (!site) notFound();
+
+  const [lng, lat] = site.center;
+  const mapHref = `/#${lng.toFixed(4)},${lat.toFixed(4)},${site.zoom.toFixed(2)}z`;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    name: site.display,
+    description: site.blurb,
+    url: `${SITE_URL}/site/${site.slug}`,
+    address: { "@type": "PostalAddress", addressCountry: site.modernCountry },
+    geo: { "@type": "GeoCoordinates", latitude: lat, longitude: lng },
+  };
+
+  return (
+    <main style={{ minHeight: "100%", background: "#f4ead5", color: "#2a2118" }}>
+      <div style={{ maxWidth: 720, margin: "0 auto", padding: "48px 24px 96px" }}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <Link
+          href="/"
+          style={{
+            display: "inline-block",
+            marginBottom: 32,
+            fontSize: 14,
+            color: "#8a5a2b",
+            textDecoration: "none",
+          }}
+        >
+          &larr; Back to the map
+        </Link>
+
+        <h1
+          className="roman-label"
+          style={{ fontSize: "clamp(32px, 6vw, 48px)", lineHeight: 1.15, margin: "0 0 12px" }}
+        >
+          {site.display}
+        </h1>
+
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "8px 16px", fontSize: 14, color: "#6b5a42", marginBottom: 28 }}>
+          <span>{site.province} &middot; Roman province</span>
+          <span>&middot;</span>
+          <span>{site.modernCountry}</span>
+          <span>&middot;</span>
+          <span>Founded {site.founded}</span>
+        </div>
+
+        <p style={{ fontSize: 19, lineHeight: 1.6, margin: "0 0 20px" }}>{site.blurb}</p>
+
+        <p style={{ fontSize: 16, lineHeight: 1.6, fontStyle: "italic", color: "#5a4c38", margin: "0 0 36px" }}>
+          {site.today}
+        </p>
+
+        <a
+          href={mapHref}
+          style={{
+            display: "inline-block",
+            padding: "12px 24px",
+            borderRadius: 8,
+            background: "#8a5a2b",
+            color: "#fdf6e8",
+            textDecoration: "none",
+            fontWeight: 600,
+            fontSize: 15,
+          }}
+        >
+          Open {site.display} on the interactive map &rarr;
+        </a>
+
+        <p style={{ marginTop: 56, fontSize: 13, color: "#8a7a60" }}>
+          Roman Maps shows the empire frozen at 11 August 117 CE, the day Trajan died — its
+          moment of greatest territorial extent.{" "}
+          <Link href="/" style={{ color: "#8a5a2b" }}>
+            Explore the full map &rarr;
+          </Link>
+        </p>
+      </div>
+    </main>
+  );
+}
