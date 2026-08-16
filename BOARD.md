@@ -146,7 +146,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       was offered for. 85 high-confidence POIs remain open — mostly tombs, villas, and
       single-purpose industrial sites with no text naming them directly; expect a continued low
       hit rate there and skip rather than stretch.*
-- [x] `[06-P0-2]` **`curate-buildings`** `deepen` — Ostia-depth curated descriptions for the
+- [~] `[06-P0-2]` **`curate-buildings`** `deepen` — claimed by cloud shift 4, 2026-08-16 16:05
+      (Herculaneum, standing task). Ostia-depth curated descriptions for the
       other 39 sites, ~10 buildings/day. **Standing task, never "done".**
       *Pompeii done 2026-08-16 by cloud shift 3: 28 buildings in `app/pompeiiDescriptions.ts`
       (House of the Faun, Temple of Apollo, the Forum and its temples, the three bath complexes,
