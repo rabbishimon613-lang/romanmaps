@@ -1964,6 +1964,72 @@ export default function Map() {
           kick();
         }
 
+        // Phase 29: Housing typologies (public/data/housing_styles.geojson) — regional
+        // house-building traditions in 117 CE (axis 9a). Same soft-fill visual family as
+        // Phase 28 agriculture zones, colored by `typology` rather than by commodity.
+        const housing = await fetch("/data/housing_styles.geojson")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null);
+        if (!cancelled && map && housing) {
+          map.addSource("housing", { type: "geojson", data: housing });
+          const housingColors: any = [
+            "match",
+            ["get", "typology"],
+            "atrium_domus", "#a1442e",
+            "peristyle_house", "#8859a6",
+            "insula", "#1f6f9e",
+            "roundhouse", "#5c8c3a",
+            "trullo_mudbrick", "#b08d2e",
+            "cave_dwelling", "#7a5a3a",
+            "egyptian_mudbrick", "#c9a227",
+            "#6a6a6a",
+          ];
+          map.addLayer({
+            id: "housing-fill",
+            type: "fill",
+            source: "housing",
+            paint: {
+              "fill-color": housingColors,
+              "fill-opacity": 0.16,
+            },
+          });
+          map.addLayer({
+            id: "housing-line",
+            type: "line",
+            source: "housing",
+            paint: {
+              "line-color": housingColors,
+              "line-width": 1,
+              "line-dasharray": [3, 2],
+              "line-opacity": 0.5,
+            },
+          });
+
+          const housingPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+          map.on("mouseenter", "housing-fill", (e) => {
+            if (!map) return;
+            map.getCanvas().style.cursor = "pointer";
+            const f = e.features?.[0];
+            if (!f) return;
+            const p: any = f.properties || {};
+            const noteLine = p.notes ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.notes)}</div>` : "";
+            housingPopup
+              .setLngLat(e.lngLat)
+              .setHTML(
+                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.regions || "")}</div>
+                   ${noteLine}
+                 </div>`,
+              )
+              .addTo(map);
+          });
+          map.on("mouseleave", "housing-fill", () => {
+            if (map) map.getCanvas().style.cursor = "";
+          });
+          kick();
+        }
+
         // Apply any persisted Layers-panel visibility (all groups default visible).
         applyAllLayers();
       });
