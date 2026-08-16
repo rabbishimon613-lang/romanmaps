@@ -110,7 +110,11 @@ export default function Map() {
       if (cancelled || !ref.current) return;
 
       // Coordinates URL sync — restore #lng,lat,zoomz from a shared/bookmarked link if present.
-      const initialView = parseHash(window.location.hash);
+      // Falls back to the last camera a returning visitor left the map at (localStorage), so
+      // landing on the bare root URL doesn't reset a repeat visitor to the empire-wide opening
+      // view every time — [01-P0-2] camera-memory. A real hash (a shared link, back/forward)
+      // always wins over the remembered camera.
+      const initialView = parseHash(window.location.hash) || loadCamera();
 
       // Sea mask — one big world-bbox polygon with every land ring cut out as a hole. Painted
       // above rivers/provinces so any linework that leaks past the coast (Natural Earth 10m
@@ -231,6 +235,7 @@ export default function Map() {
         const sel = getSelectedPoi();
         const poiId = sel && typeof sel.props?.id === "string" ? sel.props.id : undefined;
         const hash = formatHash(c.lng, c.lat, map.getZoom(), poiId);
+        saveCamera(c.lng, c.lat, map.getZoom());
         if (window.location.hash === hash) return;
         if (firstHashWrite) {
           firstHashWrite = false;
@@ -2320,6 +2325,34 @@ function parseHash(hash: string): { lng: number; lat: number; zoom: number; poiI
 function formatHash(lng: number, lat: number, zoom: number, poiId?: string): string {
   const base = `#${lng.toFixed(4)},${lat.toFixed(4)},${zoom.toFixed(2)}z`;
   return poiId ? `${base}:${poiId}` : base;
+}
+
+// [01-P0-2] camera-memory — remembers the last camera position across visits, independent of the
+// URL hash (which is reserved for shareable links and back/forward, not silent persistence).
+// Wrapped in try/catch: localStorage throws in some private-browsing modes, and a lost "remember
+// where I was" is a fine degrade, not worth a crash.
+const CAMERA_STORAGE_KEY = "romanmaps.lastCamera";
+
+function loadCamera(): { lng: number; lat: number; zoom: number; poiId?: string } | null {
+  try {
+    const raw = window.localStorage.getItem(CAMERA_STORAGE_KEY);
+    if (!raw) return null;
+    const v = JSON.parse(raw);
+    if (typeof v?.lng !== "number" || typeof v?.lat !== "number" || typeof v?.zoom !== "number") return null;
+    if (!isFinite(v.lng) || !isFinite(v.lat) || !isFinite(v.zoom)) return null;
+    if (v.lng < -180 || v.lng > 180 || v.lat < -90 || v.lat > 90) return null;
+    return { lng: v.lng, lat: v.lat, zoom: v.zoom };
+  } catch {
+    return null;
+  }
+}
+
+function saveCamera(lng: number, lat: number, zoom: number) {
+  try {
+    window.localStorage.setItem(CAMERA_STORAGE_KEY, JSON.stringify({ lng, lat, zoom }));
+  } catch {
+    // ignore — persistence is a nicety, not a requirement
+  }
 }
 
 function escapeHtml(s: string): string {
