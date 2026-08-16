@@ -75,6 +75,7 @@ export default function CurrencyConverter() {
     <div style={{ borderTop: "1px solid var(--divider)" }}>
       <button
         onClick={() => setExpanded((v) => !v)}
+        className="ui-row"
         style={{
           display: "flex",
           alignItems: "center",
@@ -110,23 +111,26 @@ export default function CurrencyConverter() {
               min={0}
               value={amountStr}
               onChange={(e) => setAmountStr(e.target.value)}
+              className="ui-field"
               style={{
                 width: 70,
                 height: 32,
-                borderRadius: 6,
+                borderRadius: 8,
                 border: "1px solid var(--divider)",
                 padding: "0 8px",
                 fontSize: 13,
                 color: "var(--text)",
+                background: "var(--surface)",
               }}
             />
             <select
               value={unit}
               onChange={(e) => setUnitPersist(e.target.value as Denomination)}
+              className="ui-field"
               style={{
                 flex: 1,
                 height: 32,
-                borderRadius: 6,
+                borderRadius: 8,
                 border: "1px solid var(--divider)",
                 padding: "0 6px",
                 fontSize: 13,

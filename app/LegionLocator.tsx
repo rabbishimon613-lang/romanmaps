@@ -78,7 +78,7 @@ export default function LegionLocator({ open, onClose }: { open: boolean; onClos
         width: 360,
         maxWidth: "calc(100vw - 60px)",
         background: "var(--surface)",
-        boxShadow: "0 1px 4px -1px rgba(0,0,0,.3), 0 4px 16px rgba(0,0,0,.2)",
+        boxShadow: "var(--shadow-3)",
         zIndex: 9,
         transform: open ? "translateX(0)" : "translateX(-110%)",
         transition: "transform 220ms ease",
@@ -86,11 +86,12 @@ export default function LegionLocator({ open, onClose }: { open: boolean; onClos
         flexDirection: "column",
       }}
     >
-      <div style={{ display: "flex", alignItems: "center", padding: "12px 12px 8px", gap: 8 }}>
+      <div style={{ display: "flex", alignItems: "center", padding: "14px 14px 10px", gap: 10 }}>
         <button
           onClick={onClose}
           title="Close"
-          style={{ width: 36, height: 36, borderRadius: 999, display: "grid", placeItems: "center" }}
+          className="ui-btn"
+          style={{ width: 36, height: 36, display: "grid", placeItems: "center" }}
         >
           <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--icon)">
             <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
@@ -103,6 +104,7 @@ export default function LegionLocator({ open, onClose }: { open: boolean; onClos
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search legions, provinces, forts…"
+          className="ui-field"
           style={{
             width: "100%",
             height: 40,
@@ -111,10 +113,12 @@ export default function LegionLocator({ open, onClose }: { open: boolean; onClos
             padding: "0 16px",
             fontSize: 14,
             outline: "none",
+            color: "var(--text)",
+            background: "var(--surface)",
           }}
         />
       </div>
-      <div style={{ fontSize: 11, fontWeight: 700, color: "var(--text-2)", textTransform: "uppercase", letterSpacing: 0.6, padding: "6px 16px" }}>
+      <div style={{ fontSize: 11, fontWeight: 700, color: "var(--text-2)", textTransform: "uppercase", letterSpacing: 0.6, padding: "0 16px 8px" }}>
         {filtered.length} of 28 legions stationed in 117 CE
       </div>
       <div style={{ flex: 1, overflowY: "auto", padding: "0 8px 12px" }}>
@@ -122,17 +126,15 @@ export default function LegionLocator({ open, onClose }: { open: boolean; onClos
           <button
             key={l.poiId}
             onClick={() => jumpTo(l)}
+            className="ui-row"
             style={{
               display: "block",
               width: "100%",
               padding: "10px 12px",
               borderRadius: 8,
-              background: "transparent",
               textAlign: "left",
               marginBottom: 2,
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.background = "var(--surface-2)")}
-            onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
           >
             <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
               <div className="roman-label" style={{ fontSize: 14, fontWeight: 600, color: "var(--text)" }}>{l.legion}</div>
