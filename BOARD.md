@@ -58,9 +58,12 @@ to prevent. Building locally to *test* your own work is expected and fine.
       ahead of the build and exposed as `npm run validate`. Runs in ~1.5s over all 40 files.
       0 errors, 14 reviewed warnings. Calibrated so base geography isn't held to the curated
       schema — otherwise it drowns and gets bypassed, which is the same as not having it.
-- [~] `[11-P0-1]` **`split-site-data`** `polish` — claimed by cloud shift 3, 2026-08-16 12:27.
-      Split `sites_buildings`/`sites_streets`
-      per-site, fetch on demand. Removes ~28MB from every cold load.
+- [x] `[11-P0-1]` **`split-site-data`** `polish` — Done 2026-08-16 by cloud shift 3. Split the
+      27MB merged `sites_buildings`/`sites_streets` into 80 per-site files under
+      `public/data/sites/` (`scripts/split-site-data.mjs`, `npm run split-site-data`); `Map.tsx`
+      now starts both sources empty and fetches a site's pair only when visited (Explore-panel
+      jump or a moveend proximity check, so deep links/search still work). Verified with
+      Playwright: 0 requests to `/data/sites/*` on cold load, correct fetch + render on visit.
 - [ ] `[11-P0-3]` **`delete-dead-data`** `retire` — Delete `roads_high`, `roads_low`,
       `places_high` (~11MB shipped, never loaded) or wire them into a detail ladder.
 - [ ] `[01-P0-1]` **`selected-marker`** `polish` — Selected POI gets an enlarged ringed marker;
