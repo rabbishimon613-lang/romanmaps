@@ -6,4 +6,22 @@ module.exports = {
   // independently by four shifts in a row. Giving dev its own dir means the two commands can
   // physically never collide, regardless of who forgets to stop the dev server first.
   distDir: process.env.NODE_ENV === "development" ? ".next-dev" : ".next",
+
+  // One site, one address. Vercel does not retire a project's own subdomain, so
+  // without this every page answers 200 on both hosts and the two compete in the
+  // index for the same corpus.
+  //
+  // The verification file is deliberately not redirected: Search Console keeps
+  // re-fetching it on the old host, and a redirect there reads as verification
+  // lost.
+  async redirects() {
+    return [
+      {
+        source: "/:path((?!google691ef6c52ff2a910\\.html).*)",
+        has: [{ type: "host", value: "romanmaps.vercel.app" }],
+        destination: "https://romanmaps.org/:path",
+        permanent: true,
+      },
+    ];
+  },
 };

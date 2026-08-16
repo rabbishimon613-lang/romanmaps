@@ -4,7 +4,8 @@
  * two addresses in Google's index. metadataBase, robots.ts and sitemap.ts all
  * derive from this constant and nothing else.
  *
- * The site currently lives on its Vercel subdomain. When a real domain is
- * attached, change it here and add a redirect from the old host — do not
- * leave both serving 200. */
-export const SITE_URL = "https://romanmaps.vercel.app";
+ * The real domain was bought on 2026-08-16 and this moved with it. The Vercel
+ * subdomain now 308s here from next.config.js rather than serving 200 — the one
+ * exception is the Search Console verification file, which has to keep answering
+ * on the old host for that property to stay verified. */
+export const SITE_URL = "https://romanmaps.org";
