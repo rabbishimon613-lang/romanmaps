@@ -91,8 +91,9 @@ to prevent. Building locally to *test* your own work is expected and fine.
 
 - [ ] `[07-P1-1]` **`travel-time`** `add` — ORBIS-style journey calculator over the existing
       road + sea network. Highest-impact single feature in the backlog.
-- [ ] `[07-P0-2]` **`category-life-writing`** `deepen` — One 120-word present-tense "what
+- [~] `[07-P0-2]` **`category-life-writing`** `deepen` — One 120-word present-tense "what
       happened here" paragraph per POI category (~20 pieces covering 448 places).
+      — claimed by editorial (mac), 2026-08-16 01:05
 - [ ] `[03-P1-4]` **`nearby-related`** `polish` — Six related-place cards on every card and page.
 - [ ] `[02-P0-2]` **`coastline`** `polish` — Coastline stroke over the sea mask.
 - [ ] `[02-P0-3]` **`road-weights`** `polish` — Raise road weights/opacity at low zoom; add
