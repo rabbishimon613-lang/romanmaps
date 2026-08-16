@@ -1,0 +1,658 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                7.6,
+                45.1
+              ],
+              [
+                8.9,
+                46.1
+              ],
+              [
+                11.0,
+                46.8
+              ],
+              [
+                13.7,
+                46.5
+              ],
+              [
+                14.6,
+                42.4
+              ],
+              [
+                16.9,
+                40.8
+              ],
+              [
+                18.4,
+                40.1
+              ],
+              [
+                17.2,
+                39.8
+              ],
+              [
+                15.9,
+                38.2
+              ],
+              [
+                15.3,
+                40.0
+              ],
+              [
+                13.9,
+                40.7
+              ],
+              [
+                12.4,
+                41.8
+              ],
+              [
+                11.0,
+                42.7
+              ],
+              [
+                10.0,
+                43.8
+              ],
+              [
+                8.9,
+                44.4
+              ],
+              [
+                7.6,
+                45.1
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                12.4,
+                38.2
+              ],
+              [
+                15.6,
+                38.2
+              ],
+              [
+                15.3,
+                37.0
+              ],
+              [
+                14.0,
+                36.7
+              ],
+              [
+                12.5,
+                37.8
+              ],
+              [
+                12.4,
+                38.2
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "housing_atrium_domus",
+        "typology": "atrium_domus",
+        "name": "Atrium-domus houses",
+        "regions": "Italy, Sicily",
+        "notes": "The classic Roman house built around a columned atrium centered on an impluvium that caught rainwater from the open compluvium above. Pompeii's House of the Faun covered nearly 3,000 square meters with two atria, two peristyle gardens, and the famous Alexander Mosaic on its floor. By 117 CE this plan defined elite housing in every city of Italy and Sicily, from Rome to Syracuse.",
+        "sources": [
+          "https://pompeiisites.org/en/pompeii-map/analysis/roman-housing/",
+          "https://en.wikipedia.org/wiki/Cavaedium",
+          "https://www.unrv.com/articles/role-of-the-atrium-in-roman-houses.php"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                19.5,
+                40.5
+              ],
+              [
+                23.5,
+                41.5
+              ],
+              [
+                26.5,
+                40.2
+              ],
+              [
+                30.5,
+                37.0
+              ],
+              [
+                34.0,
+                36.5
+              ],
+              [
+                36.0,
+                34.0
+              ],
+              [
+                35.5,
+                31.9
+              ],
+              [
+                33.0,
+                34.5
+              ],
+              [
+                28.5,
+                36.5
+              ],
+              [
+                24.0,
+                35.0
+              ],
+              [
+                21.5,
+                37.0
+              ],
+              [
+                19.5,
+                40.5
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -7.5,
+                37.2
+              ],
+              [
+                -6.0,
+                38.3
+              ],
+              [
+                -4.0,
+                38.4
+              ],
+              [
+                -2.0,
+                37.2
+              ],
+              [
+                -3.7,
+                36.0
+              ],
+              [
+                -6.3,
+                36.0
+              ],
+              [
+                -7.5,
+                37.2
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "housing_peristyle_house",
+        "typology": "peristyle_house",
+        "name": "Peristyle houses",
+        "regions": "Hellenistic East (Greece, Aegean, western Anatolia, Levant), Baetica (southern Spain)",
+        "notes": "A Greek-derived house plan wrapping rooms around a colonnaded courtyard rather than a Roman atrium, standard across the Aegean and the Levant since Hellenistic times. Delos's House of Dionysus, built in the 2nd century BCE, arranged its rooms around a mosaic-paved peristyle with a marble fountain. The same plan reached Roman Baetica, seen in the excavated peristyle villa at Salar near Granada.",
+        "sources": [
+          "https://greekreporter.com/2026/02/06/house-dionysus-delos-golden-age-ancient-greece/",
+          "https://www.andaluciamia.com/en/tourism-on-archaeological-site-andalucia-villa-of-salar/",
+          "https://en.wikipedia.org/wiki/Peristyle"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.3,
+              41.95
+            ],
+            [
+              12.55,
+              41.75
+            ],
+            [
+              12.35,
+              41.45
+            ],
+            [
+              13.25,
+              41.28
+            ],
+            [
+              13.85,
+              41.15
+            ],
+            [
+              14.25,
+              40.85
+            ],
+            [
+              14.05,
+              40.8
+            ],
+            [
+              13.6,
+              41.05
+            ],
+            [
+              12.9,
+              41.5
+            ],
+            [
+              12.3,
+              41.95
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "housing_insula",
+        "typology": "insula",
+        "name": "Insula apartment blocks",
+        "regions": "Rome, Ostia, Puteoli",
+        "notes": "Multi-story brick-and-concrete rental blocks with shops at street level and cramped apartments above, reached by narrow open stairways. Trajan capped new construction in Rome at 60 Roman feet, about 17.75 meters, after earlier building collapses and fires. Ostia's Insula of Diana still stands four stories tall, and Puteoli's volcanic concrete let builders raise equally dense blocks along that coast.",
+        "sources": [
+          "https://www.zmescience.com/feature-post/history-and-humanities/history/rome-invented-apartments-insulae/",
+          "https://www.missedhistory.com/article/roman-insulae-ancient-apartment-buildings",
+          "https://en.wikipedia.org/wiki/Insula_(building)"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -5.7,
+                50.1
+              ],
+              [
+                -5.0,
+                51.6
+              ],
+              [
+                -4.5,
+                53.4
+              ],
+              [
+                -5.0,
+                55.0
+              ],
+              [
+                -3.0,
+                58.6
+              ],
+              [
+                -1.8,
+                57.7
+              ],
+              [
+                -1.5,
+                54.5
+              ],
+              [
+                0.3,
+                52.9
+              ],
+              [
+                1.4,
+                51.4
+              ],
+              [
+                -0.5,
+                50.8
+              ],
+              [
+                -3.5,
+                50.2
+              ],
+              [
+                -5.7,
+                50.1
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -4.8,
+                48.4
+              ],
+              [
+                -1.9,
+                49.3
+              ],
+              [
+                2.3,
+                50.9
+              ],
+              [
+                5.0,
+                49.5
+              ],
+              [
+                6.8,
+                47.3
+              ],
+              [
+                4.8,
+                45.0
+              ],
+              [
+                3.0,
+                43.5
+              ],
+              [
+                -1.5,
+                43.3
+              ],
+              [
+                -2.0,
+                45.5
+              ],
+              [
+                -4.8,
+                48.4
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "housing_roundhouse",
+        "typology": "roundhouse",
+        "name": "Roundhouse survivals",
+        "regions": "Rural Britain, rural Gaul",
+        "notes": "Round, single-room houses of timber, wattle-and-daub, or stone with conical thatched roofs, the standard Iron Age dwelling across Atlantic Europe long before Rome arrived. At Chysauster in Cornwall, Britons built stone-walled courtyard roundhouses in the early 2nd century CE and kept living in them under Roman rule. In Gaul's rural interior and Atlantic fringe, wattle-and-daub round huts still stood on ordinary farms even as elites raised new rectangular villas nearby.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Chysauster_Ancient_Village",
+          "https://en.wikipedia.org/wiki/Roundhouse_(dwelling)",
+          "https://archaeology.co.uk/articles/features/romes-homes-range.htm"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                15.5,
+                41.9
+              ],
+              [
+                16.2,
+                42.1
+              ],
+              [
+                17.0,
+                41.3
+              ],
+              [
+                18.5,
+                40.1
+              ],
+              [
+                18.4,
+                39.8
+              ],
+              [
+                17.6,
+                40.0
+              ],
+              [
+                17.0,
+                40.0
+              ],
+              [
+                16.5,
+                40.5
+              ],
+              [
+                16.0,
+                40.9
+              ],
+              [
+                15.5,
+                41.4
+              ],
+              [
+                15.5,
+                41.9
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -6.0,
+                32.5
+              ],
+              [
+                2.0,
+                34.5
+              ],
+              [
+                9.0,
+                34.0
+              ],
+              [
+                13.0,
+                31.5
+              ],
+              [
+                15.0,
+                30.0
+              ],
+              [
+                12.5,
+                28.5
+              ],
+              [
+                6.0,
+                29.0
+              ],
+              [
+                0.0,
+                30.5
+              ],
+              [
+                -6.0,
+                32.5
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "housing_trullo_mudbrick",
+        "typology": "trullo_mudbrick",
+        "name": "Trulli and mudbrick vaulted dwellings",
+        "regions": "Apulia (southern Italy), North Africa interior",
+        "notes": "Dry-stone corbelling raised a conical roof without mortar or timber, a technique already used in Bronze Age tholos tombs and kept alive on Apulia's Murge plateau for field shelters and storehouses. Roman-era farms in the semi-arid North African interior built a parallel vaulted tradition in mudbrick and stone; survey work along Tripolitania's Wadi Sofeggin recorded barrel-vaulted farm buildings on the pre-desert frontier Trajan's forces were then pushing into.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Trullo",
+          "https://www.researchgate.net/publication/269507991_Farming_the_Desert_The_UNESCO_Libyan_Valleys_Archaeological_Survey",
+          "https://en.wikipedia.org/wiki/Gasr_Banat"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.4,
+              38.9
+            ],
+            [
+              35.3,
+              39.0
+            ],
+            [
+              35.4,
+              38.4
+            ],
+            [
+              34.6,
+              38.1
+            ],
+            [
+              34.0,
+              38.4
+            ],
+            [
+              34.4,
+              38.9
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "housing_cave_dwelling",
+        "typology": "cave_dwelling",
+        "name": "Cave dwellings",
+        "regions": "Cappadocia (central Anatolia)",
+        "notes": "Cappadocians carved homes, stables, and storerooms directly into the region's soft volcanic tuff, a practice already centuries old by 117 CE. The rock holds a near-constant temperature, keeping interiors cool through Anatolian summers and warm through winters. Multi-level rock-cut complexes near Goreme and Derinkuyu began as ordinary dwellings and grain stores long before later generations turned them into refuges.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Rock-cut_architecture_of_Cappadocia",
+          "https://cappadociacave.com/living-in-cappadocia-caves-history/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.0,
+              31.5
+            ],
+            [
+              32.0,
+              31.5
+            ],
+            [
+              32.5,
+              30.8
+            ],
+            [
+              31.3,
+              30.0
+            ],
+            [
+              30.6,
+              29.3
+            ],
+            [
+              29.9,
+              29.1
+            ],
+            [
+              30.6,
+              28.3
+            ],
+            [
+              30.9,
+              27.0
+            ],
+            [
+              30.6,
+              26.0
+            ],
+            [
+              31.3,
+              25.0
+            ],
+            [
+              32.6,
+              24.7
+            ],
+            [
+              32.9,
+              23.9
+            ],
+            [
+              32.4,
+              23.7
+            ],
+            [
+              31.6,
+              24.8
+            ],
+            [
+              30.9,
+              26.0
+            ],
+            [
+              30.5,
+              27.2
+            ],
+            [
+              30.7,
+              28.3
+            ],
+            [
+              30.0,
+              29.0
+            ],
+            [
+              29.4,
+              29.9
+            ],
+            [
+              30.0,
+              31.5
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "housing_egyptian_mudbrick",
+        "typology": "egyptian_mudbrick",
+        "name": "Egyptian mudbrick housing",
+        "regions": "Fayum and rural Egypt",
+        "notes": "Rural Egyptians built rectangular, flat-roofed houses of Nile mud brick packed along narrow lanes in villages up and down the river and across the Fayum depression. Karanis, a Fayum village of thousands founded under the Ptolemies, preserved mudbrick houses so completely that excavators recovered household textiles, tools, and papyri still inside them. The same building tradition, little changed by Roman rule, housed farmers from the Delta to Upper Egypt in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Karanis",
+          "https://www.tandfonline.com/doi/abs/10.1080/00934690.2015.1131109",
+          "https://www.academia.edu/22717679/Inside_and_Out_Romano_Egyptian_Housing_from_the_Fayyum_and_the_Dakhleh_Oasis"
+        ]
+      }
+    }
+  ]
+}
