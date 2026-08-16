@@ -3,6 +3,10 @@
 # Runs the same build Vercel runs. Fails fast if TS/lint/compile breaks.
 # To bypass in a true emergency: git push --no-verify (document why in SHIFT_LOG).
 set -e
+# Data first: it takes about a second and catches the corruption a build never would —
+# a POI with no sources, an off-globe coordinate, a file the drive truncated mid-write.
+echo "[pre-push] validating public/data..."
+node scripts/validate.mjs
 echo "[pre-push] running next build before pushing to origin..."
 npm run build --silent
 echo "[pre-push] build clean. pushing."

@@ -54,9 +54,10 @@ to prevent. Building locally to *test* your own work is expected and fine.
       `tags[]`, `images[]{url,credit,author,licence,kind}`, `ancient_sources[]{author,work,ref,
       quote}`, `peak`, `rediscovered`, `status`, `verified_at`, `added_by`, `added_at`.
       Migration script over all records; old fields retained.
-- [~] `[12-P0-2]` **`validator`** `fix` — `scripts/validate.mjs` in the pre-push hook: required
-      fields, unique ids, coordinate sanity, enum checks, non-empty sources, duplicate detection.
-      — claimed by editorial (mac), 2026-08-16 00:40
+- [x] `[12-P0-2]` **`validator`** `fix` — `scripts/validate.mjs`, wired into `.githooks/pre-push`
+      ahead of the build and exposed as `npm run validate`. Runs in ~1.5s over all 40 files.
+      0 errors, 14 reviewed warnings. Calibrated so base geography isn't held to the curated
+      schema — otherwise it drowns and gets bypassed, which is the same as not having it.
 - [ ] `[11-P0-1]` **`split-site-data`** `polish` — Split `sites_buildings`/`sites_streets`
       per-site, fetch on demand. Removes ~28MB from every cold load.
 - [ ] `[11-P0-3]` **`delete-dead-data`** `retire` — Delete `roads_high`, `roads_low`,
@@ -66,6 +67,25 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[01-P0-2]` **`camera-memory`** `polish` — Persist and restore the last camera.
 - [ ] `[03-P0-2]` **`card-rebuild`** `polish` — Rebuild the place card to the eleven-block
       order; every block hides when empty.
+- [ ] `[03-FIX-1]` **`notes-truncation`** `fix` — `cleanNotes()` in `PlaceDetails.tsx` cuts every
+      description to its first two sentences or 280 characters, so **77% of POIs have a 60+ word
+      description and no reader has ever seen past the opening of one.** This is a large part of
+      why the product reads as empty. The truncation is there to hide shift-scholar voice in the
+      data; the fix is to clean the prose in `notes` and then show all of it, not to keep hiding
+      it at render time. Audit `notes` for the voice the regex was written to strip, rewrite
+      those, then delete the truncation.
+- [ ] `[12-FIX-1]` **`stringified-props-audit`** `fix` — Maplibre flattens array and object
+      feature properties to JSON strings on a click query, but the same records arrive as real
+      arrays via a deep link or the legion locator. `PlaceDetails.tsx` handled only the array
+      case, so the Sources block silently rendered nothing on the normal map-click path. Fixed
+      there this run with an `asArray()` helper; the same bug shape is likely in `Map.tsx`'s
+      thematic-layer popups and anywhere else that reads `e.features[0].properties`. Audit all
+      of them.
+- [ ] `[12-FIX-2]` **`brigetio-stacked-pins`** `fix` — `poi_fortress_i_adiutrix_brigetio` and
+      `poi_fortress_xxx_ulpia_victrix_brigetio` sit on the identical coordinate, so one pin is
+      permanently unreachable under the other. Both records are correct; the placement is not.
+      Offset one, or merge them into a single fortress record carrying both garrisons. Check
+      for other exact-coordinate stacks while in there.
 - [ ] `[04-P0-1]` **`sheet-detents`** `polish` — Three-detent bottom sheet (peek/half/full),
       velocity-aware.
 - [ ] `[13-P0-2]` **`image-audit`** `illustrate` — Audit all 303 existing images; flag and
@@ -78,11 +98,27 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[02-P0-1]` **`terrain`** `polish` — Hillshade/relief under the land fill.
 - [ ] `[02-P0-4]` **`self-host-glyphs`** `fix` — Stop depending on `demotiles.maplibre.org`;
       a single point of failure that would erase every label on the map.
-- [~] `[09-P0-1]` **`ancient-sources`** `deepen` — `ancient_sources[]` populated for every
+- [ ] `[09-P0-1]` **`ancient-sources`** `deepen` — `ancient_sources[]` populated for every
       `confidence: high` POI. **Standing task — never "done", always available.**
-      — claimed by editorial (mac), 2026-08-16 00:40
+      *Batch 1 done 2026-08-16: 108 of 221 high-confidence POIs (48.9%), 122 citations, plus an
+      "In ancient writing" block on the card. Shape is `{author, work, ref, note}` — `note` says
+      what the passage contains, in place of a quotation nobody here can check against a text.
+      Literary sources only; inscriptions belong to `[09-P1-4]`. 113 high-confidence POIs left,
+      mostly forts, villas, tombs and industrial sites where no text names the site directly —
+      expect a lower hit rate and skip rather than stretch a citation.*
 - [ ] `[06-P0-2]` **`curate-buildings`** `deepen` — Ostia-depth curated descriptions for the
       other 39 sites, ~10 buildings/day. **Standing task.**
+- [ ] `[15-P0-1]` **`unattended-screenshot-gate`** `fix` — ⚠️ **This blocks the daily pass from
+      taking any UI ticket at all.** The gate below requires a screenshot at 375×812 dark and at
+      desktop light, but the 09:30 editorial pass runs unattended and a dev server cannot be
+      started from an unattended session — nobody is there to approve it. Local `file://` pages
+      render only as static snapshots the browser tools can't screenshot either. So every
+      `polish` ticket on this board is unreachable by the routine that is supposed to keep the
+      ratio, which is how the ratio quietly becomes "content only". Fix by giving the routine a
+      way to render the chrome without a dev server — a static harness page built from the real
+      components and the real theme tokens, checked in and rendered at build time — or by
+      granting the scheduled task a pre-approved server. Until then the daily pass must say in
+      its diary line that it skipped the visual gate, and must not ship UI blind.
 - [ ] `[14-P0-1]` **`gsc-verify`** `fix` — ⚠️ **BLOCKED ON PEDRO.** Verify `romanmaps.org` in
       Google Search Console. Nothing about this property is measured until this is done. Check
       which Google account holds the token first.
@@ -91,9 +127,9 @@ to prevent. Building locally to *test* your own work is expected and fine.
 
 - [ ] `[07-P1-1]` **`travel-time`** `add` — ORBIS-style journey calculator over the existing
       road + sea network. Highest-impact single feature in the backlog.
-- [~] `[07-P0-2]` **`category-life-writing`** `deepen` — One 120-word present-tense "what
-      happened here" paragraph per POI category (~20 pieces covering 448 places).
-      — claimed by editorial (mac), 2026-08-16 01:05
+- [x] `[07-P0-2]` **`category-life-writing`** `deepen` — Done 2026-08-16. All **50** POI
+      categories written (the report estimated ~20), 116–130 words each, present tense, in
+      `app/categoryLife.ts`; renders as "What happened here" on every card. Covers 448/448 POIs.
 - [ ] `[03-P1-4]` **`nearby-related`** `polish` — Six related-place cards on every card and page.
 - [ ] `[02-P0-2]` **`coastline`** `polish` — Coastline stroke over the sea mask.
 - [ ] `[02-P0-3]` **`road-weights`** `polish` — Raise road weights/opacity at low zoom; add
@@ -167,3 +203,22 @@ to prevent. Building locally to *test* your own work is expected and fine.
 
 - 2026-08-15 · `[pre-board]` · Layer defaults cut from 29-on to base-5; chrome theme tokens;
   phone layout rebuilt to the Maps shape. Invariant 0 added to the shift brief.
+- 2026-08-16 · `[12-P0-2]` validator · `scripts/validate.mjs` + pre-push hook + `npm run
+  validate`. 0 errors, 14 reviewed warnings. Dropped 212 empty `image_url`/`image_credit`/
+  `image_alt` keys across four files so the report reads clean.
+- 2026-08-16 · `[09-P0-1]` ancient-sources · Batch 1: 122 citations on 108 high-confidence POIs
+  (48.9% of the target set), plus the "In ancient writing" card block. Standing ticket reopened.
+- 2026-08-16 · `[07-P0-2]` category-life-writing · All 50 categories, 116–130 words each,
+  covering 448/448 POIs, rendering as "What happened here".
+
+**Ratio state after this run:** 0 `add` · 2 `deepen` · 0 `polish` (+1 off-ratio `fix`).
+**The next run owes an `add` and a `polish`** — but see `[15-P0-1]`: no `polish` ticket on this
+board can pass the visual gate from an unattended session until that is fixed. Take the `add`,
+and either fix `[15-P0-1]` first or run the polish from an attended session.
+
+**Skipped this run, with reason:** `[06-P0-2]` curate-buildings was next by priority among
+`deepen` tickets and was passed over. Extending Ostia's curated descriptions to a second site
+means keying new entries against OSM building names inside a 21 MB file *and* changing the
+popup path in `Map.tsx` — a UI change, and the visual gate could not be met (`[15-P0-1]`).
+Shipping that blind is exactly the failure mode the gate exists to prevent. It is untouched and
+still available.

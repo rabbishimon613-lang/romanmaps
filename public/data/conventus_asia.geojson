@@ -204,9 +204,7 @@
           "https://en.wikipedia.org/wiki/Apamea_(Phrygia)",
           "https://www.attalus.org/pliny/hn5b.html"
         ],
-        "confidence": "high",
-        "image_url": null,
-        "image_credit": null
+        "confidence": "high"
       }
     },
     {
@@ -230,9 +228,7 @@
           "https://en.wikipedia.org/wiki/Synnada",
           "https://www.attalus.org/pliny/hn5b.html"
         ],
-        "confidence": "high",
-        "image_url": null,
-        "image_credit": null
+        "confidence": "high"
       }
     },
     {
@@ -334,9 +330,7 @@
           "https://en.wikipedia.org/wiki/Philadelphia_(Asia_Minor)",
           "https://www.sevenchurches.org/wp-content/uploads/2020/03/Geography-Philadelphia-Wilson-LGC.pdf"
         ],
-        "confidence": "medium",
-        "image_url": null,
-        "image_credit": null
+        "confidence": "medium"
       }
     }
   ]

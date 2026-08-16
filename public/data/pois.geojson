@@ -27,7 +27,21 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20Forum%20from%20Palatine%20Hill.jpg?width=800",
-    "image_credit": "Roman Forum from Palatine Hill · Wikimedia Commons (CC BY-SA)"
+    "image_credit": "Roman Forum from Palatine Hill · Wikimedia Commons (CC BY-SA)",
+    "ancient_sources": [
+     {
+      "author": "Varro",
+      "work": "De lingua Latina",
+      "ref": "5.145–156",
+      "note": "Walks the Forum naming its parts and arguing where each name came from — the Comitium, the Rostra, the Lacus Curtius, the streets running off it."
+     },
+     {
+      "author": "Dionysius of Halicarnassus",
+      "work": "Roman Antiquities",
+      "ref": "3.67–68",
+      "note": "Credits Tarquin with draining the valley into the Cloaca Maxima and laying out the Forum as the city's meeting place."
+     }
+    ]
    }
   },
   {
@@ -56,7 +70,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Curia%20iulia.jpg?width=800",
-    "image_credit": "Curia Julia, Roman Forum · Wikimedia Commons"
+    "image_credit": "Curia Julia, Roman Forum · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Cassius Dio",
+      "work": "Roman History",
+      "ref": "51.22",
+      "note": "Records Augustus dedicating the Curia Julia in 29 BCE, with the altar and statue of Victory set inside it."
+     }
+    ]
    }
   },
   {
@@ -83,7 +105,15 @@
      "https://en.wikipedia.org/wiki/Basilica_Julia",
      "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/Basilica_Julia.html"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Suetonius",
+      "work": "Divus Augustus",
+      "ref": "29.4",
+      "note": "Names the basilica between the temples of Castor and Saturn as Caesar's foundation, finished by Augustus, burned down and rebuilt on a larger plan."
+     }
+    ]
    }
   },
   {
@@ -110,7 +140,15 @@
      "Pliny, Natural History 36.24",
      "https://en.wikipedia.org/wiki/Basilica_Aemilia"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Pliny the Elder",
+      "work": "Natural History",
+      "ref": "36.102",
+      "note": "Ranks it among the three most beautiful buildings the world has ever seen, alongside the Forum of Augustus and the Temple of Peace."
+     }
+    ]
    }
   },
   {
@@ -139,7 +177,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Saturn%20%28Rome%29.jpg?width=800",
-    "image_credit": "Temple of Saturn, Rome · Wikimedia Commons"
+    "image_credit": "Temple of Saturn, Rome · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Livy",
+      "work": "Ab urbe condita",
+      "ref": "2.21.2",
+      "note": "Dates the temple's dedication to the early Republic and notes the Saturnalia was instituted with it."
+     }
+    ]
    }
   },
   {
@@ -168,7 +214,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Vesta%20%28Rome%29.jpg?width=800",
-    "image_credit": "Temple of Vesta, Roman Forum · Wikimedia Commons"
+    "image_credit": "Temple of Vesta, Roman Forum · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Ovid",
+      "work": "Fasti",
+      "ref": "6.249–348",
+      "note": "Explains the round shape as an image of the earth, and that the temple holds no statue of the goddess — only the fire, which is her."
+     }
+    ]
    }
   },
   {
@@ -224,7 +278,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Castor%20and%20Pollux%2C%20Roman%20Forum%2C%20Rome%2C%20Italy.jpg?width=800",
-    "image_credit": "Temple of Castor and Pollux · Wikimedia Commons"
+    "image_credit": "Temple of Castor and Pollux · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Livy",
+      "work": "Ab urbe condita",
+      "ref": "2.20.12, 2.42.5",
+      "note": "The temple is vowed on the field at Lake Regillus when the Dioscuri are seen fighting for Rome, and dedicated by the vower's son fifteen years later."
+     }
+    ]
    }
   },
   {
@@ -253,7 +315,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aedes%20Divi%20Iulii.jpg?width=800",
-    "image_credit": "Temple of Divus Julius · Wikimedia Commons"
+    "image_credit": "Temple of Divus Julius · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Suetonius",
+      "work": "Divus Julius",
+      "ref": "84–85",
+      "note": "Describes the crowd burning Caesar's body in the Forum itself, and the column later raised on the spot where the pyre stood."
+     }
+    ]
    }
   },
   {
@@ -282,7 +352,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Concord.jpg?width=800",
-    "image_credit": "Temple of Concord · Wikimedia Commons"
+    "image_credit": "Temple of Concord · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Ovid",
+      "work": "Fasti",
+      "ref": "1.637–650",
+      "note": "Marks 16 January as the dedication day of the temple Tiberius rebuilt from German spoils, and calls Concord the goddess of the imperial house."
+     }
+    ]
    }
   },
   {
@@ -365,7 +443,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arch%20of%20Titus.jpg?width=800",
-    "image_credit": "Arch of Titus, Rome · Wikimedia Commons"
+    "image_credit": "Arch of Titus, Rome · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Josephus",
+      "work": "Jewish War",
+      "ref": "7.148–152",
+      "note": "Describes the triumph of 71 CE and the spoils carried through Rome — the golden table, the lampstand, the Law — the same objects carved on the arch's inner panel."
+     }
+    ]
    }
   },
   {
@@ -394,7 +480,21 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tempio%20di%20Giove%20Capitolino%20-%20Ricostruzione%20di%20L%C3%A9on%20Vaudoyer%20%281830%29.jpg?width=800",
-    "image_credit": "Reconstruction by Léon Vaudoyer, 1830 · Wikimedia Commons"
+    "image_credit": "Reconstruction by Léon Vaudoyer, 1830 · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Tacitus",
+      "work": "Histories",
+      "ref": "3.71–72",
+      "note": "Describes the Capitol burning in the fighting of 69 CE and calls it the worst disgrace to befall the Roman state, the temple having stood since the kings."
+     },
+     {
+      "author": "Livy",
+      "work": "Ab urbe condita",
+      "ref": "1.55–56",
+      "note": "The foundation story: the human head found in the footings, read as a sign that this hill would be the head of the empire."
+     }
+    ]
    }
   },
   {
@@ -448,7 +548,15 @@
      "https://en.wikipedia.org/wiki/Domus_Augustana",
      "https://en.wikipedia.org/wiki/Palace_of_Domitian"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Statius",
+      "work": "Silvae",
+      "ref": "4.2",
+      "note": "A guest's account of dining in Domitian's new palace: a hall so high the eye tires before it reaches the ceiling, and columns that could hold up the sky."
+     }
+    ]
    }
   },
   {
@@ -504,7 +612,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Circus%20Maximus%20%28Rome%29.jpg?width=800",
-    "image_credit": "Circus Maximus, Rome · Wikimedia Commons"
+    "image_credit": "Circus Maximus, Rome · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Dionysius of Halicarnassus",
+      "work": "Roman Antiquities",
+      "ref": "3.68",
+      "note": "Gives the circus its dimensions and describes the tiers of seating, the shops and porticoes beneath, and the euripus running down the middle."
+     }
+    ]
    }
   },
   {
@@ -533,7 +649,21 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Colosseum%20in%20Rome%2C%20Italy%20-%20April%202007.jpg?width=800",
-    "image_credit": "Colosseum, Rome · Diliff, Wikimedia Commons (CC BY-SA)"
+    "image_credit": "Colosseum, Rome · Diliff, Wikimedia Commons (CC BY-SA)",
+    "ancient_sources": [
+     {
+      "author": "Suetonius",
+      "work": "Divus Vespasianus",
+      "ref": "9.1",
+      "note": "Vespasian begins an amphitheatre in the middle of the city, on ground Augustus had wanted to use for one."
+     },
+     {
+      "author": "Cassius Dio",
+      "work": "Roman History",
+      "ref": "66.25",
+      "note": "Titus's inaugural games: a hundred days of hunts, gladiators and a flooded arena staging a sea battle."
+     }
+    ]
    }
   },
   {
@@ -560,7 +690,15 @@
      "https://en.wikipedia.org/wiki/Trajan%27s_Forum",
      "https://smarthistory.org/forum-and-markets-of-trajan/"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Ammianus Marcellinus",
+      "work": "Res Gestae",
+      "ref": "16.10.15",
+      "note": "Constantius II, shown Rome in 357, stops dead in Trajan's Forum — a structure, Ammianus says, unique under heaven and beyond description."
+     }
+    ]
    }
   },
   {
@@ -618,7 +756,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trajan%27s%20Column%20from%20north-east%20%28cropped%29.jpg?width=800",
-    "image_credit": "Trajan's Column, Rome · Wikimedia Commons"
+    "image_credit": "Trajan's Column, Rome · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Cassius Dio",
+      "work": "Roman History",
+      "ref": "68.16.3",
+      "note": "The column is set up in the forum both to mark how high the ground stood before the hill was cut away, and as the emperor's tomb."
+     }
+    ]
    }
   },
   {
@@ -701,7 +847,15 @@
      "https://en.wikipedia.org/wiki/Baths_of_Titus",
      "https://www.globalsecurity.org/military/world/spqr/rome-baths-titus.htm"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Martial",
+      "work": "Liber Spectaculorum",
+      "ref": "2",
+      "note": "Set beside the new amphitheatre as proof that ground Nero had taken for himself was being handed back to the people."
+     }
+    ]
    }
   },
   {
@@ -785,7 +939,15 @@
      "https://en.wikipedia.org/wiki/Theatre_of_Marcellus",
      "https://ancienttheatrearchive.com/theatre/marcellus-theatre-rome-italy/"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Suetonius",
+      "work": "Divus Augustus",
+      "ref": "29.4",
+      "note": "Lists the theatre among the works Augustus built in another's name, dedicating it to his dead nephew Marcellus."
+     }
+    ]
    }
   },
   {
@@ -839,7 +1001,21 @@
      "https://en.wikipedia.org/wiki/Mausoleum_of_Augustus",
      "https://www.worldhistory.org/article/657/mausoleum-of-augustus/"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Strabo",
+      "work": "Geography",
+      "ref": "5.3.8",
+      "note": "A great mound on a high white marble base by the river, planted to the top with evergreens, a bronze Augustus on the summit and the burial chambers below."
+     },
+     {
+      "author": "Suetonius",
+      "work": "Divus Augustus",
+      "ref": "100.4",
+      "note": "Records that Augustus built it between the Via Flaminia and the Tiber bank in his sixth consulship, and opened the surrounding groves to the public."
+     }
+    ]
    }
   },
   {
@@ -947,7 +1123,15 @@
      "https://en.wikipedia.org/wiki/Porta_Maggiore",
      "http://www.romanaqueducts.info/aquasite/romaclaudia/index.html"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Frontinus",
+      "work": "De aquaeductu urbis Romae",
+      "ref": "13–15",
+      "note": "Claudius's two aqueducts, the Aqua Claudia from the Caerulean and Curtian springs and the Anio Novus, brought in on the same arches and finished in 52 CE."
+     }
+    ]
    }
   },
   {
@@ -1034,7 +1218,15 @@
      "https://www.portusproject.org/periods/trajanic/",
      "Russell Meiggs, Roman Ostia (Oxford, 2nd ed. 1973), ch. on Portus"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Juvenal",
+      "work": "Satires",
+      "ref": "12.75–82",
+      "note": "A ship works its way into the inner basin past the harbour arms and the tower — water calmer, the poet says, than any lake."
+     }
+    ]
    }
   },
   {
@@ -1648,7 +1840,21 @@
      "Strabo Geography 17.1.6",
      "https://www.worldhistory.org/Lighthouse_of_Alexandria/"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Strabo",
+      "work": "Geography",
+      "ref": "17.1.6",
+      "note": "A white marble tower of many storeys on the island's tip, given by Sostratus of Cnidus for the safety of sailors on a coast with no landmarks and dangerous shoals."
+     },
+     {
+      "author": "Pliny the Elder",
+      "work": "Natural History",
+      "ref": "36.83",
+      "note": "Puts the cost at 800 talents and worries that a fire burning steadily at sea can be mistaken for a star."
+     }
+    ]
    }
   },
   {
@@ -1704,7 +1910,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Serapeum-Alexandria.jpg?width=800",
-    "image_credit": "Reconstruction of the Serapeum of Alexandria · Wikimedia Commons"
+    "image_credit": "Reconstruction of the Serapeum of Alexandria · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Ammianus Marcellinus",
+      "work": "Res Gestae",
+      "ref": "22.16.12",
+      "note": "Ranks the Serapeum second in the world only to the Capitol at Rome, for its colonnades, its statues and its halls."
+     }
+    ]
    }
   },
   {
@@ -1758,7 +1972,15 @@
      "https://ancienttheatrescom.wpcomstaging.com/theatre/ephesus-modern-selcuk-turkey/",
      "https://en.wikipedia.org/wiki/Ephesus"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Acts of the Apostles",
+      "work": "Acts",
+      "ref": "19:23–41",
+      "note": "The silversmiths' protest against Paul: the crowd sweeps into the theatre and shouts for two hours before the town clerk gets them out."
+     }
+    ]
    }
   },
   {
@@ -1815,7 +2037,21 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Artemis.jpg?width=800",
-    "image_credit": "Reconstruction of the Temple of Artemis at Ephesus · Wikimedia Commons"
+    "image_credit": "Reconstruction of the Temple of Artemis at Ephesus · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Pliny the Elder",
+      "work": "Natural History",
+      "ref": "36.95–97",
+      "note": "A hundred and twenty years in the building, 127 columns each the gift of a king, raised on marshy ground deliberately chosen to hold against earthquakes."
+     },
+     {
+      "author": "Strabo",
+      "work": "Geography",
+      "ref": "14.1.22–23",
+      "note": "The successive temples on the site, the man who burned the last one down, and the right of asylum its precinct carried."
+     }
+    ]
    }
   },
   {
@@ -1871,7 +2107,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancient%20Corinth%202011.jpg?width=800",
-    "image_credit": "Temple of Apollo at Corinth · Wikimedia Commons"
+    "image_credit": "Temple of Apollo at Corinth · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Pausanias",
+      "work": "Description of Greece",
+      "ref": "2.3.6",
+      "note": "Passed on the way up from the market place: a temple of Apollo with a bronze statue of the god in front of it."
+     }
+    ]
    }
   },
   {
@@ -1954,7 +2198,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Isthmia%20Poseidon%20Temple.jpg?width=800",
-    "image_credit": "Sanctuary of Poseidon at Isthmia · Wikimedia Commons"
+    "image_credit": "Sanctuary of Poseidon at Isthmia · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Pausanias",
+      "work": "Description of Greece",
+      "ref": "2.1.7–2.2.2",
+      "note": "The pine grove, the sanctuary of Poseidon with its team of gilded horses, and the Isthmian games held in the god's honour."
+     }
+    ]
    }
   },
   {
@@ -1981,7 +2233,15 @@
      "https://en.wikipedia.org/wiki/Amphitheatre_of_the_Three_Gauls",
      "https://www.historyhit.com/locations/amphitheatre-of-the-three-gauls/"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Strabo",
+      "work": "Geography",
+      "ref": "4.3.2",
+      "note": "The temple to Augustus at the meeting of the rivers, put up jointly by all the Gauls, with its altar and the names of sixty tribes carved on it."
+     }
+    ]
    }
   },
   {
@@ -2369,7 +2629,21 @@
      "https://pleiades.stoa.org/places/433032 (Pompeii)",
      "https://en.wikipedia.org/wiki/Pompeii"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Seneca the Younger",
+      "work": "Naturales Quaestiones",
+      "ref": "6.1.1–2",
+      "note": "Reports the earthquake of 62 CE that wrecked Pompeii and damaged the towns around it, and notes the town was still being rebuilt."
+     },
+     {
+      "author": "Pliny the Younger",
+      "work": "Letters",
+      "ref": "6.16",
+      "note": "The eruption of 79 seen from across the bay, written twenty-five years later for Tacitus: the cloud shaped like an umbrella pine, ash falling hotter and thicker as the ships close in."
+     }
+    ]
    }
   },
   {
@@ -2425,7 +2699,15 @@
      "https://latitude.to/articles-by-country/it/italy/12872/amphitheatre-of-pompeii (coordinates 40.7513, 14.4950)",
      "Tacitus, Annales 14.17 (the 59 CE riot between Pompeian and Nucerian spectators at this amphitheatre)"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Tacitus",
+      "work": "Annals",
+      "ref": "14.17",
+      "note": "A gladiatorial show in 59 CE turns into a riot between Pompeians and Nucerians; the Senate bans public gatherings at Pompeii for ten years."
+     }
+    ]
    }
   },
   {
@@ -2669,7 +2951,15 @@
      "https://en.wikipedia.org/wiki/Herculaneum",
      "https://www.nature.com/articles/s41598-023-32623-3 (Scientific Reports, 2023, on the pyroclastic surge sequence at Herculaneum)"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Strabo",
+      "work": "Geography",
+      "ref": "5.4.8",
+      "note": "Describes the town on its headland above the sea, held in turn by Oscans, Etruscans and Samnites, with air the writer thought unusually healthy."
+     }
+    ]
    }
   },
   {
@@ -3269,7 +3559,15 @@
      "https://www.cambridge.org/core/books/rome-an-empire-of-many-nations/camp-of-the-legion-x-fretensis-and-the-starting-point-of-aelia-capitolina/AF8DA85224D4C1F7AC1A180A2CA7B3E3",
      "https://www.worldhistory.org/article/1943/legions-of-judea/"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Josephus",
+      "work": "Jewish War",
+      "ref": "7.1–5",
+      "note": "Titus levels the city but leaves the towers and part of the west wall standing, to quarter the Tenth Legion behind and to show what had been taken."
+     }
+    ]
    }
   },
   {
@@ -3568,7 +3866,21 @@
      "https://en.wikipedia.org/wiki/Portus_Julius",
      "https://arkeonews.net/ancient-roman-breakwater-discovered-underwater-in-misenum-sculptures-and-architecture-reused-to-tame-the-sea/"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Tacitus",
+      "work": "Annals",
+      "ref": "4.5",
+      "note": "Sets out the standing fleets of the empire — one at Misenum for the western sea, one at Ravenna for the Adriatic."
+     },
+     {
+      "author": "Pliny the Younger",
+      "work": "Letters",
+      "ref": "6.16",
+      "note": "His uncle is in command of the fleet at Misenum when Vesuvius erupts, and orders the ships out towards the shore to take people off."
+     }
+    ]
    }
   },
   {
@@ -3924,7 +4236,15 @@
      "https://en.wikipedia.org/wiki/Vindolanda",
      "https://en.wikipedia.org/wiki/Vindolanda_tablets"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Claudia Severa",
+      "work": "Vindolanda tablets",
+      "ref": "Tab. Vindol. II 291",
+      "note": "A birthday invitation from the wife of a nearby commander, written on wood in the 90s CE — the earliest known writing in a woman's hand in Latin."
+     }
+    ]
    }
   },
   {
@@ -4671,7 +4991,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roma-pantheon-frontfacade.jpg?width=800",
-    "image_credit": "Pantheon (later Hadrianic rebuild) · Wikimedia Commons"
+    "image_credit": "Pantheon (later Hadrianic rebuild) · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Cassius Dio",
+      "work": "Roman History",
+      "ref": "53.27.2",
+      "note": "On Agrippa's building of 25 BCE and the argument over the name — either because it held images of many gods, or because its vault resembles the heavens."
+     }
+    ]
    }
   },
   {
@@ -4755,7 +5083,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palmyra%20Bel%20Temple.jpg?width=800",
-    "image_credit": "Temple of Bel, Palmyra (pre-2015) · Wikimedia Commons"
+    "image_credit": "Temple of Bel, Palmyra (pre-2015) · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Pliny the Elder",
+      "work": "Natural History",
+      "ref": "5.88",
+      "note": "Palmyra set apart by its soil and its water in a great circuit of sand, and by a position that leaves it courted by Rome and Parthia both."
+     }
+    ]
    }
   },
   {
@@ -4783,7 +5119,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great%20Hypostyle%20Hall%20of%20Karnak%20Temple.jpg?width=800",
-    "image_credit": "Great Hypostyle Hall, Karnak · Wikimedia Commons"
+    "image_credit": "Great Hypostyle Hall, Karnak · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Strabo",
+      "work": "Geography",
+      "ref": "17.1.46",
+      "note": "Thebes seen as a scatter of villages among enormous temples; Strabo measures the surviving avenues of sphinxes and the halls of columns."
+     }
+    ]
    }
   },
   {
@@ -4867,7 +5211,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Parthenon%20in%20Athens.jpg?width=800",
-    "image_credit": "The Parthenon · Wikimedia Commons"
+    "image_credit": "The Parthenon · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Pausanias",
+      "work": "Description of Greece",
+      "ref": "1.24.5–7",
+      "note": "Works through the pediments — Athena's birth, her contest with Poseidon — and the gold and ivory statue standing inside with a Victory in her hand."
+     }
+    ]
    }
   },
   {
@@ -4895,7 +5247,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Temple%20of%20Hephaestus%2C%20Ancient%20Agora%20of%20Athens.jpg?width=800",
-    "image_credit": "Temple of Hephaestus, Athens · Wikimedia Commons"
+    "image_credit": "Temple of Hephaestus, Athens · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Pausanias",
+      "work": "Description of Greece",
+      "ref": "1.14.6",
+      "note": "The temple above the Kerameikos holding Hephaestus and, beside him, Athena — placed together, he says, because of the story of Erichthonius."
+     }
+    ]
    }
   },
   {
@@ -4923,7 +5283,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Olympian%20Zeus%20%28Olympia%29%2003.jpg?width=800",
-    "image_credit": "Temple of Zeus, Olympia · Wikimedia Commons"
+    "image_credit": "Temple of Zeus, Olympia · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Pausanias",
+      "work": "Description of Greece",
+      "ref": "5.10–11",
+      "note": "Built from the spoils of Pisa, roofed in Pentelic marble cut to look like tiles, and holding Pheidias's seated Zeus — a god who, if he stood, would take the roof off."
+     }
+    ]
    }
   },
   {
@@ -4951,7 +5319,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Aphrodite%20Aphrodisias.jpg?width=800",
-    "image_credit": "Temple of Aphrodite, Aphrodisias · Wikimedia Commons"
+    "image_credit": "Temple of Aphrodite, Aphrodisias · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Tacitus",
+      "work": "Annals",
+      "ref": "3.62",
+      "note": "Aphrodisias comes before the Senate in 22 CE to defend its temple's right of asylum, producing decrees going back to the dictator Caesar."
+     }
+    ]
    }
   },
   {
@@ -4979,7 +5355,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Didyma%20Turkey.jpg?width=800",
-    "image_credit": "Temple of Apollo, Didyma · Wikimedia Commons"
+    "image_credit": "Temple of Apollo, Didyma · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Strabo",
+      "work": "Geography",
+      "ref": "14.1.5",
+      "note": "The temple left without a roof because of the sheer size of it, with a sacred grove inside and out, and works of art the writer rated the finest in Asia."
+     }
+    ]
    }
   },
   {
@@ -5354,7 +5738,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trajan%27s%20Bridge%20Across%20the%20Danube%2C%20Modern%20Reconstruction.jpg?width=800",
-    "image_credit": "Trajan's Bridge over the Danube, 1907 reconstruction drawing by E. Duperrex · Wikimedia Commons"
+    "image_credit": "Trajan's Bridge over the Danube, 1907 reconstruction drawing by E. Duperrex · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Cassius Dio",
+      "work": "Roman History",
+      "ref": "68.13",
+      "note": "Twenty piers of squared stone carrying arches across the Danube — the work Dio rates above everything else Trajan built, given the depth and the current."
+     }
+    ]
    }
   },
   {
@@ -5384,7 +5776,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Panor%C3%A1mica_de_Las_M%C3%A9dulas.jpg?width=800",
-    "image_credit": "Panoramic view of the Las Medulas mining landscape · Wikimedia Commons (CC BY-SA)"
+    "image_credit": "Panoramic view of the Las Medulas mining landscape · Wikimedia Commons (CC BY-SA)",
+    "ancient_sources": [
+     {
+      "author": "Pliny the Elder",
+      "work": "Natural History",
+      "ref": "33.66–78",
+      "note": "The ruina montium in detail — galleries driven in, the hill brought down by its own weight, and water run in from miles off to wash the gold out of the debris."
+     }
+    ]
    }
   },
   {
@@ -5529,7 +5929,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Charterhouse_lead_mines_panorama.jpg?width=800",
-    "image_credit": "Panorama of the Charterhouse lead mines, Mendip Hills · Wikimedia Commons (CC BY-SA)"
+    "image_credit": "Panorama of the Charterhouse lead mines, Mendip Hills · Wikimedia Commons (CC BY-SA)",
+    "ancient_sources": [
+     {
+      "author": "Pliny the Elder",
+      "work": "Natural History",
+      "ref": "34.164",
+      "note": "Notes that in Britannia lead is found so near the surface, and in such quantity, that a law had to be passed limiting how much could be produced."
+     }
+    ]
    }
   },
   {
@@ -5587,7 +5995,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Almad%C3%A9n_en_verde_y_gris.jpg?width=800",
-    "image_credit": "View of Almaden, site of the ancient mercury mines · Wikimedia Commons (CC BY 2.0)"
+    "image_credit": "View of Almaden, site of the ancient mercury mines · Wikimedia Commons (CC BY 2.0)",
+    "ancient_sources": [
+     {
+      "author": "Pliny the Elder",
+      "work": "Natural History",
+      "ref": "33.118–122",
+      "note": "Cinnabar from Sisapo is a state monopoly: the ore is sealed at the mine, refined only at Rome, and the price is fixed by law to stop adulteration."
+     }
+    ]
    }
   },
   {
@@ -5761,7 +6177,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carrara_-_Cave_di_marmo.JPG?width=800",
-    "image_credit": "Marble quarry (cave di marmo) at Carrara · Wikimedia Commons (CC BY-SA)"
+    "image_credit": "Marble quarry (cave di marmo) at Carrara · Wikimedia Commons (CC BY-SA)",
+    "ancient_sources": [
+     {
+      "author": "Strabo",
+      "work": "Geography",
+      "ref": "5.2.5",
+      "note": "The quarries above Luna, worked in blocks and slabs of white and blue-grey marble, loaded straight onto ships in the harbour below for Rome."
+     }
+    ]
    }
   },
   {
@@ -5877,7 +6301,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruinas_Baelo_Claudia-IMG_20230819_111418.jpg?width=800",
-    "image_credit": "Ruins of Baelo Claudia, including the salting factories · Wikimedia Commons (CC BY-SA)"
+    "image_credit": "Ruins of Baelo Claudia, including the salting factories · Wikimedia Commons (CC BY-SA)",
+    "ancient_sources": [
+     {
+      "author": "Strabo",
+      "work": "Geography",
+      "ref": "3.1.8",
+      "note": "The port opposite Africa where the crossing to Tingis is made, on a stretch of coast whose towns live off tunny fishing and salting."
+     }
+    ]
    }
   },
   {
@@ -5964,7 +6396,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Fish_Salting_Pools_under_the_Rectorate_of_the_University_of_Malaga_02.jpg?width=800",
-    "image_credit": "Roman fish-salting pools beneath the University of Malaga rectorate · Wikimedia Commons (CC BY-SA)"
+    "image_credit": "Roman fish-salting pools beneath the University of Malaga rectorate · Wikimedia Commons (CC BY-SA)",
+    "ancient_sources": [
+     {
+      "author": "Strabo",
+      "work": "Geography",
+      "ref": "3.4.2",
+      "note": "Malaca, laid out in the Phoenician manner, with large works for salting fish serving the trade with the African coast."
+     }
+    ]
    }
   },
   {
@@ -6226,7 +6666,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arretine_ware_poin%C3%A7on.JPG?width=800",
-    "image_credit": "Arretine ware potter's stamp (poincon) · Wikimedia Commons (CC BY-SA)"
+    "image_credit": "Arretine ware potter's stamp (poincon) · Wikimedia Commons (CC BY-SA)",
+    "ancient_sources": [
+     {
+      "author": "Pliny the Elder",
+      "work": "Natural History",
+      "ref": "35.160",
+      "note": "Names Arretium among the towns whose tableware is famous, in a passage arguing that earthenware still outranks silver at most Roman tables."
+     }
+    ]
    }
   },
   {
@@ -6759,7 +7207,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plan_Olympia_sanctuary-en.svg?width=800",
-    "image_credit": "Plan of the Olympia sanctuary (Altis) · Wikimedia Commons"
+    "image_credit": "Plan of the Olympia sanctuary (Altis) · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Pausanias",
+      "work": "Description of Greece",
+      "ref": "5.13–15",
+      "note": "The Altis itself: the great altar built up from the ash of burnt thighbones, the treasuries in their row, and the rule about who may climb to the top."
+     }
+    ]
    }
   },
   {
@@ -6788,7 +7244,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Olympia_-_Hera_Temple.jpg?width=800",
-    "image_credit": "Temple of Hera, Olympia · Wikimedia Commons"
+    "image_credit": "Temple of Hera, Olympia · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Pausanias",
+      "work": "Description of Greece",
+      "ref": "5.16.1, 5.20.9",
+      "note": "The oldest temple in the sanctuary, with one oak column still standing in the rear chamber in his day — the last of the originals, replaced in stone as each decayed."
+     }
+    ]
    }
   },
   {
@@ -6817,7 +7281,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Metroon_in_Olympia_2010.jpg?width=800",
-    "image_credit": "Metroon, Olympia · Wikimedia Commons"
+    "image_credit": "Metroon, Olympia · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Pausanias",
+      "work": "Description of Greece",
+      "ref": "5.20.9",
+      "note": "A Doric temple of the Mother of the Gods that by Roman times held statues of emperors instead."
+     }
+    ]
    }
   },
   {
@@ -6875,7 +7347,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dodona,_Zeus_Temple_with_(replacement)_Oracle_Oak.JPG?width=800",
-    "image_credit": "Sanctuary of Zeus, Dodona · Wikimedia Commons"
+    "image_credit": "Sanctuary of Zeus, Dodona · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Herodotus",
+      "work": "Histories",
+      "ref": "2.54–57",
+      "note": "Two accounts of the founding side by side: the priestesses' black dove that spoke from an oak, and the Egyptian priests' woman carried off from Thebes."
+     }
+    ]
    }
   },
   {
@@ -6904,7 +7384,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Apollo_in_Delphi.jpg?width=800",
-    "image_credit": "Temple of Apollo, Delphi · Wikimedia Commons"
+    "image_credit": "Temple of Apollo, Delphi · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Pausanias",
+      "work": "Description of Greece",
+      "ref": "10.24",
+      "note": "The maxims cut in the forecourt, the stone called the navel of the earth, and the inner room where the prophetess gave her answers."
+     }
+    ]
    }
   },
   {
@@ -6933,7 +7421,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Delphi_tholos.jpg?width=800",
-    "image_credit": "Tholos of Delphi, Marmaria · Wikimedia Commons"
+    "image_credit": "Tholos of Delphi, Marmaria · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Vitruvius",
+      "work": "De architectura",
+      "ref": "7.praef.12",
+      "note": "Listed among buildings whose own architects wrote them up — Theodorus of Phocaea on the round temple at Delphi."
+     }
+    ]
    }
   },
   {
@@ -6991,7 +7487,21 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Oracle_Temple_Siwa_Egypt.JPG?width=800",
-    "image_credit": "Temple of the Oracle of Amun, Siwa · Wikimedia Commons"
+    "image_credit": "Temple of the Oracle of Amun, Siwa · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Arrian",
+      "work": "Anabasis of Alexander",
+      "ref": "3.3–4",
+      "note": "Alexander's march across the desert to the oracle, the rain and the guides, and a consultation whose answer he told no one."
+     },
+     {
+      "author": "Herodotus",
+      "work": "Histories",
+      "ref": "2.32, 2.55",
+      "note": "Places the sanctuary in its oasis and gives the Theban account that a priestess carried off from Egypt founded it."
+     }
+    ]
    }
   },
   {
@@ -7049,7 +7559,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amphiareion-6.jpg?width=800",
-    "image_credit": "Amphiareion of Oropos · Wikimedia Commons"
+    "image_credit": "Amphiareion of Oropos · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Pausanias",
+      "work": "Description of Greece",
+      "ref": "1.34",
+      "note": "The rite in full: purify yourself, sacrifice a ram, sleep on its skin on the ground, and wait for the answer to come in a dream."
+     }
+    ]
    }
   },
   {
@@ -7078,7 +7596,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Epidaurus_Temple_of_Asklepios.JPG?width=800",
-    "image_credit": "Temple of Asklepios, Epidaurus · Wikimedia Commons"
+    "image_credit": "Temple of Asklepios, Epidaurus · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Pausanias",
+      "work": "Description of Greece",
+      "ref": "2.27",
+      "note": "The sacred grove with its boundary marks, the rule that no one may be born or die inside it, and the slabs recording who was healed and of what."
+     }
+    ]
    }
   },
   {
@@ -7107,7 +7633,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tholos_of_Polykleitos_Epidaurus.jpg?width=800",
-    "image_credit": "Tholos of Epidaurus · Wikimedia Commons"
+    "image_credit": "Tholos of Epidaurus · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Pausanias",
+      "work": "Description of Greece",
+      "ref": "2.27.3",
+      "note": "A round building of white marble by Polykleitos, worth going to see for the painting of Drunkenness drinking from a glass cup."
+     }
+    ]
    }
   },
   {
@@ -7194,7 +7728,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Asklepion,_Kos,_Greece_(5652978891).jpg?width=800",
-    "image_credit": "Asklepieion of Kos · Wikimedia Commons"
+    "image_credit": "Asklepieion of Kos · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Strabo",
+      "work": "Geography",
+      "ref": "14.2.19",
+      "note": "A famous sanctuary outside the town, hung with votive tablets recording cures — the same tablets Hippocrates was said to have learned from."
+     }
+    ]
    }
   },
   {
@@ -7252,7 +7794,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Asclepieion_of_Athens_from_the_Acropolis.jpg?width=800",
-    "image_credit": "Asklepieion of Athens, south slope of the Acropolis · Wikimedia Commons"
+    "image_credit": "Asklepieion of Athens, south slope of the Acropolis · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Pausanias",
+      "work": "Description of Greece",
+      "ref": "1.21.4",
+      "note": "The sanctuary on the south slope of the Acropolis, with its spring and the statues of the god and his children."
+     }
+    ]
    }
   },
   {
@@ -7339,7 +7889,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Diana_Nemorensis,_an_Italic_form_of_the_goddess,_her_sanctuary_was_on_the_northern_shore_of_Lake_Nemi,_Ny_Carlsberg_Glyptotek,_Copenhagen_(12949229403).jpg?width=800",
-    "image_credit": "Statue of Diana Nemorensis from her sanctuary at Nemi · Wikimedia Commons"
+    "image_credit": "Statue of Diana Nemorensis from her sanctuary at Nemi · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Strabo",
+      "work": "Geography",
+      "ref": "5.3.12",
+      "note": "The priest of Diana at Aricia is a runaway slave who won the office by killing the last priest, and holds it with a drawn sword against the next."
+     }
+    ]
    }
   },
   {
@@ -7368,7 +7926,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gorgon's_Head_of_the_Temple_Sulis_Minerva_at_Bath_-_Roman_Baths_(Bath).jpg?width=800",
-    "image_credit": "Gorgon's Head pediment, Temple of Sulis Minerva, Bath · Wikimedia Commons"
+    "image_credit": "Gorgon's Head pediment, Temple of Sulis Minerva, Bath · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Solinus",
+      "work": "Collectanea rerum memorabilium",
+      "ref": "22.10",
+      "note": "Britain's hot springs, fitted out for bathing and set under the protection of Minerva, where the fire in the temple burns coal rather than wood."
+     }
+    ]
    }
   },
   {
@@ -7397,7 +7963,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Archaeological_Site_of_Eleusis_-_Telesterion_05.jpg?width=800",
-    "image_credit": "Telesterion, Sanctuary of Demeter, Eleusis · Wikimedia Commons"
+    "image_credit": "Telesterion, Sanctuary of Demeter, Eleusis · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Pausanias",
+      "work": "Description of Greece",
+      "ref": "1.38.6–7",
+      "note": "He reaches the wall of the sanctuary and stops: a dream forbade him to write down what is inside, and the uninitiated may not ask."
+     }
+    ]
    }
   },
   {
@@ -7426,7 +8000,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Samothrake_arsinoeion.jpg?width=800",
-    "image_credit": "Sanctuary of the Great Gods, Samothrace · Wikimedia Commons"
+    "image_credit": "Sanctuary of the Great Gods, Samothrace · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Diodorus Siculus",
+      "work": "Library of History",
+      "ref": "5.47–49",
+      "note": "The island's mysteries, open to anyone including slaves, and the belief that initiates come off better in storms at sea."
+     }
+    ]
    }
   },
   {
@@ -7513,7 +8095,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Philae_Temple_R03.jpg?width=800",
-    "image_credit": "Temple of Isis, Philae · Wikimedia Commons"
+    "image_credit": "Temple of Isis, Philae · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Strabo",
+      "work": "Geography",
+      "ref": "17.1.49–50",
+      "note": "The island above the First Cataract, shared by Egyptians and Ethiopians, with a temple of Isis reached by ferry from the rocks below."
+     }
+    ]
    }
   },
   {
@@ -7861,7 +8451,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Petra_Qasr_al-Bint_Temple_Complex_1695.jpg?width=800",
-    "image_credit": "Qasr al-Bint, Petra · Wikimedia Commons"
+    "image_credit": "Qasr al-Bint, Petra · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Strabo",
+      "work": "Geography",
+      "ref": "16.4.21",
+      "note": "Petra reported at second hand from Athenodorus, who lived there: a rock plateau ringed by cliffs, with springs inside, and a people so orderly they barely go to law."
+     }
+    ]
    }
   },
   {
@@ -7919,7 +8517,21 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Varus01.jpg?width=800",
-    "image_credit": "Reconstructed defensive wall at the Kalkriese battlefield site, photo by Markus Schweiß · Wikimedia Commons"
+    "image_credit": "Reconstructed defensive wall at the Kalkriese battlefield site, photo by Markus Schweiß · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Tacitus",
+      "work": "Annals",
+      "ref": "1.60–62",
+      "note": "Germanicus's men reach the field six years on and bury what is left: the half-ruined rampart, the bones lying where the ranks had stood, skulls nailed to trees."
+     },
+     {
+      "author": "Cassius Dio",
+      "work": "Roman History",
+      "ref": "56.18–22",
+      "note": "The fullest narrative of the ambush — the broken country, the rain, and three legions destroyed over several days of march."
+     }
+    ]
    }
   },
   {
@@ -7927,7 +8539,7 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -3.0,
+     -3,
      56.9167
     ]
    },
@@ -7977,7 +8589,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Death_of_Paulus_Aemilius_at_the_Battle_of_Cannae.jpg?width=800",
-    "image_credit": "John Trumbull, \"The Death of Paulus Aemilius at the Battle of Cannae,\" 1773 · Wikimedia Commons"
+    "image_credit": "John Trumbull, \"The Death of Paulus Aemilius at the Battle of Cannae,\" 1773 · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Polybius",
+      "work": "Histories",
+      "ref": "3.107–117",
+      "note": "The line that bows forward and then folds in, the cavalry closing the back, and a casualty figure the author says he took from men who were there."
+     }
+    ]
    }
   },
   {
@@ -8006,7 +8626,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cornelis_Cort_-_The_Battle_of_Zama_-_1990.563_-_Art_Institute_of_Chicago.jpg?width=800",
-    "image_credit": "Cornelis Cort, \"The Battle of Zama,\" 1567 · Wikimedia Commons"
+    "image_credit": "Cornelis Cort, \"The Battle of Zama,\" 1567 · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Polybius",
+      "work": "Histories",
+      "ref": "15.9–15",
+      "note": "Scipio opens lanes through his maniples to let the elephants run through, then re-forms; the two commanders meet before the battle and neither gives ground."
+     }
+    ]
    }
   },
   {
@@ -8035,7 +8663,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lionel_Royer_-_Vercingetorix_Throwing_down_His_Weapons_at_the_feet_of_Julius_Caesar.jpg?width=800",
-    "image_credit": "Lionel Royer, \"Vercingetorix Throws Down His Arms at the Feet of Julius Caesar,\" 1899 · Wikimedia Commons"
+    "image_credit": "Lionel Royer, \"Vercingetorix Throws Down His Arms at the Feet of Julius Caesar,\" 1899 · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Caesar",
+      "work": "Bellum Gallicum",
+      "ref": "7.68–89",
+      "note": "His own account of the double ring of works — one facing the town, one facing the relief army — with the ditches, stakes and pits described piece by piece."
+     }
+    ]
    }
   },
   {
@@ -8093,7 +8729,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Philippi_1st_battle_map.jpg?width=800",
-    "image_credit": "Map of the first Battle of Philippi, 42 BCE · Wikimedia Commons"
+    "image_credit": "Map of the first Battle of Philippi, 42 BCE · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Appian",
+      "work": "Civil Wars",
+      "ref": "4.105–138",
+      "note": "Two engagements three weeks apart on the marshy plain, and the deaths of Cassius and Brutus, each after mistaking how his own wing had fared."
+     }
+    ]
    }
   },
   {
@@ -8122,7 +8766,21 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Castro_Battle_of_Actium.jpg?width=800",
-    "image_credit": "Lorenzo A. Castro, \"The Battle of Actium,\" 1672, National Maritime Museum · Wikimedia Commons"
+    "image_credit": "Lorenzo A. Castro, \"The Battle of Actium,\" 1672, National Maritime Museum · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Plutarch",
+      "work": "Antony",
+      "ref": "62–68",
+      "note": "The fleet undermanned and burning its surplus ships, and the moment Cleopatra's squadron turns for open water with Antony following."
+     },
+     {
+      "author": "Cassius Dio",
+      "work": "Roman History",
+      "ref": "50.31–35",
+      "note": "The line of battle off the promontory and the fighting at close quarters between heavy ships and light."
+     }
+    ]
    }
   },
   {
@@ -8151,7 +8809,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Death_of_Crassus_in_the_battle_of_Carrhae_(Cassell's_Illustrated_Universal_History,_vol._3,_1882).jpg?width=800",
-    "image_credit": "\"Death of Crassus in the Battle of Carrhae,\" Cassell's Illustrated Universal History, 1882 · Wikimedia Commons"
+    "image_credit": "\"Death of Crassus in the Battle of Carrhae,\" Cassell's Illustrated Universal History, 1882 · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Plutarch",
+      "work": "Crassus",
+      "ref": "23–31",
+      "note": "The Parthian horse archers and the camel train that kept them supplied with arrows, and the retreat that ended with Crassus dead under a truce."
+     }
+    ]
    }
   },
   {
@@ -8180,7 +8846,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plan_of_the_battle_of_Cynoscephalae_(179_BC).png?width=800",
-    "image_credit": "Battle plan diagram, Battle of Cynoscephalae · Wikimedia Commons"
+    "image_credit": "Battle plan diagram, Battle of Cynoscephalae · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Polybius",
+      "work": "Histories",
+      "ref": "18.20–27",
+      "note": "Two armies collide in fog on the ridge; Polybius uses the day to argue why a phalanx cannot hold formation on broken ground."
+     }
+    ]
    }
   },
   {
@@ -8209,7 +8883,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Magnesia_(cropped).jpg?width=800",
-    "image_credit": "Illustration of the Battle of Magnesia, 190 BCE · Wikimedia Commons"
+    "image_credit": "Illustration of the Battle of Magnesia, 190 BCE · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Livy",
+      "work": "Ab urbe condita",
+      "ref": "37.39–44",
+      "note": "The Seleucid line with its elephants between the phalanx blocks, and the scythed chariots that break back into their own cavalry."
+     }
+    ]
    }
   },
   {
@@ -8238,7 +8920,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrea_del_Verrocchio_-_The_Battle_of_Pydna_-_WGA24993.jpg?width=800",
-    "image_credit": "Andrea del Verrocchio, \"The Battle of Pydna,\" 15th century · Wikimedia Commons"
+    "image_credit": "Andrea del Verrocchio, \"The Battle of Pydna,\" 15th century · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Plutarch",
+      "work": "Aemilius Paullus",
+      "ref": "16–22",
+      "note": "The phalanx advances, the Roman line gives, and gaps open in the pike wall as the ground breaks up — the fighting decided in under an hour."
+     }
+    ]
    }
   },
   {
@@ -8267,7 +8957,21 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Byrsa_hill_in_Carthage.jpg?width=800",
-    "image_credit": "Byrsa Hill, site of the citadel of ancient Carthage · Wikimedia Commons"
+    "image_credit": "Byrsa Hill, site of the citadel of ancient Carthage · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Appian",
+      "work": "Punic Wars",
+      "ref": "127–132",
+      "note": "Six days of street fighting from the harbour up to the citadel, house by house, and the surrender of the last defenders from the temple of Eshmun."
+     },
+     {
+      "author": "Polybius",
+      "work": "Histories",
+      "ref": "38.19–22",
+      "note": "Scipio watches the city burn and weeps, saying to Polybius beside him that one day the same will be said of Rome."
+     }
+    ]
    }
   },
   {
@@ -8296,7 +9000,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Temple_of_Apollo_(6th_century_B.C.)_in_Corinth_on_3_June_2018.jpg?width=800",
-    "image_credit": "Temple of Apollo at Ancient Corinth, photo by George E. Koronaios · Wikimedia Commons"
+    "image_credit": "Temple of Apollo at Ancient Corinth, photo by George E. Koronaios · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Pausanias",
+      "work": "Description of Greece",
+      "ref": "7.16.7–8",
+      "note": "Mummius kills the men, sells the rest, and ships the statues and paintings to Rome; the city stands empty until Caesar refounds it."
+     }
+    ]
    }
   },
   {
@@ -8325,7 +9037,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sulla_Glyptothek_Munich_309.jpg?width=800",
-    "image_credit": "Bust of Sulla, Glyptothek Munich · Wikimedia Commons"
+    "image_credit": "Bust of Sulla, Glyptothek Munich · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Plutarch",
+      "work": "Sulla",
+      "ref": "16–19",
+      "note": "A local's own ground: Plutarch names the hills, has Sulla's men take the heights above the Pontic camp, and describes the scythed chariots failing on the level."
+     }
+    ]
    }
   },
   {
@@ -8383,7 +9103,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Thapsus.jpg?width=800",
-    "image_credit": "Battle of Thapsus, reproduction of a 1619 copper engraving by Andrea Palladio · Wikimedia Commons"
+    "image_credit": "Battle of Thapsus, reproduction of a 1619 copper engraving by Andrea Palladio · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Anonymous",
+      "work": "Bellum Africum",
+      "ref": "79–86",
+      "note": "An eyewitness campaign diary: the elephants panicked by slingers on the left, and a slaughter carried on past the point where Caesar tried to stop it."
+     }
+    ]
    }
   },
   {
@@ -8412,7 +9140,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marble_bust_of_Mark_Antony_(Vatican_Museums).jpg?width=800",
-    "image_credit": "Marble bust of Mark Antony, Vatican Museums · Wikimedia Commons"
+    "image_credit": "Marble bust of Mark Antony, Vatican Museums · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Appian",
+      "work": "Civil Wars",
+      "ref": "3.66–72",
+      "note": "Two battles round the besieged town within a week, both consuls dead, and Antony withdrawing over the Alps with his army intact."
+     }
+    ]
    }
   },
   {
@@ -8470,7 +9206,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plateau_of_Gergovia.jpg?width=800",
-    "image_credit": "The Gergovie plateau, site of Vercingetorix's victory · Wikimedia Commons"
+    "image_credit": "The Gergovie plateau, site of Vercingetorix's victory · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Caesar",
+      "work": "Bellum Gallicum",
+      "ref": "7.36–52",
+      "note": "The one clear defeat in the commentaries: the assault goes beyond its orders, and Caesar counts the centurions he lost."
+     }
+    ]
    }
   },
   {
@@ -8499,7 +9243,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bibracte_(Mont_Beuvray)_17.jpg?width=800",
-    "image_credit": "Site of Bibracte on Mont Beuvray · Wikimedia Commons"
+    "image_credit": "Site of Bibracte on Mont Beuvray · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Caesar",
+      "work": "Bellum Gallicum",
+      "ref": "1.23–26",
+      "note": "The Helvetii turn and fight on a hillside; the baggage laager behind them holds out until nightfall."
+     }
+    ]
    }
   },
   {
@@ -8526,9 +9278,7 @@
      "https://en.wikipedia.org/wiki/Battle_of_Vosges_(58_BC)",
      "https://en.wikipedia.org/wiki/Ariovistus"
     ],
-    "confidence": "low",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "low"
    }
   },
   {
@@ -8615,7 +9365,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarmizegetusa_Regia.JPG?width=800",
-    "image_credit": "Ruins of the Dacian sanctuaries at Sarmizegetusa Regia · Wikimedia Commons"
+    "image_credit": "Ruins of the Dacian sanctuaries at Sarmizegetusa Regia · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Cassius Dio",
+      "work": "Roman History",
+      "ref": "68.14",
+      "note": "The Dacian capital falls, Decebalus takes his own life rather than be captured, and his head is sent to Rome."
+     }
+    ]
    }
   },
   {
@@ -8673,7 +9431,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vittoria_Alata_di_Calvatone,_Archaeological_Museum_San_Lorenzo_(Cremona)_06.jpg?width=800",
-    "image_credit": "Winged Victory of Calvatone, bronze statue found near the Bedriacum battle site, Archaeological Museum San Lorenzo, Cremona · Wikimedia Commons"
+    "image_credit": "Winged Victory of Calvatone, bronze statue found near the Bedriacum battle site, Archaeological Museum San Lorenzo, Cremona · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Tacitus",
+      "work": "Histories",
+      "ref": "2.41–45",
+      "note": "Otho's army is broken on the road between Bedriacum and Cremona while he waits at Brixellum; the survivors go over to Vitellius the next morning."
+     }
+    ]
    }
   },
   {
@@ -8702,7 +9468,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rochegrosse_Vitellius_tra%C3%AEn%C3%A9_dans_les_rues_de_Rome_par_la_populace,_1883.jpg?width=800",
-    "image_credit": "Georges Rochegrosse, \"Vitellius Dragged Through the Streets of Rome by the Mob,\" 1883 · Wikimedia Commons"
+    "image_credit": "Georges Rochegrosse, \"Vitellius Dragged Through the Streets of Rome by the Mob,\" 1883 · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Tacitus",
+      "work": "Histories",
+      "ref": "3.15–25",
+      "note": "A night battle fought by moonlight in which a legion's soldiers salute the rising sun and are taken for the enemy's reinforcements by their own side."
+     }
+    ]
    }
   },
   {
@@ -8731,7 +9505,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nordrhein-Westfalen,_Xanten,_LVR-Arch%C3%A4ologischer_Park_Xanten_NIK_4666.jpg?width=800",
-    "image_credit": "LVR-Archaologischer Park Xanten, on the site of the Roman fortress of Vetera · Wikimedia Commons"
+    "image_credit": "LVR-Archaologischer Park Xanten, on the site of the Roman fortress of Vetera · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Tacitus",
+      "work": "Histories",
+      "ref": "4.22–23, 4.58–60",
+      "note": "The winter siege of the double fortress on the Rhine, the failed relief, and a surrender under terms that were broken as the column marched out."
+     }
+    ]
    }
   },
   {
@@ -8760,7 +9542,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/David_Roberts_-_The_Siege_and_Destruction_of_Jerusalem_by_the_Romans_Under_the_Command_of_Titus,_A.D._70.jpg?width=800",
-    "image_credit": "David Roberts, \"The Siege and Destruction of Jerusalem by the Romans Under the Command of Titus, A.D. 70,\" 1850 · Wikimedia Commons"
+    "image_credit": "David Roberts, \"The Siege and Destruction of Jerusalem by the Romans Under the Command of Titus, A.D. 70,\" 1850 · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Josephus",
+      "work": "Jewish War",
+      "ref": "6.249–266",
+      "note": "The burning of the Temple, written by a man who watched it from the Roman lines and blamed the fire on a soldier acting without orders."
+     }
+    ]
    }
   },
   {
@@ -8789,7 +9579,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/PikiWiki_Israel_34203_Yodefat_Jotapata.JPG?width=800",
-    "image_credit": "Memorial to the defenders of Yodfat at the site of ancient Jotapata · Wikimedia Commons"
+    "image_credit": "Memorial to the defenders of Yodfat at the site of ancient Jotapata · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Josephus",
+      "work": "Jewish War",
+      "ref": "3.141–408",
+      "note": "The forty-seven-day siege of the town Josephus himself commanded, ending with the suicide pact in the cistern that he alone walked out of."
+     }
+    ]
    }
   },
   {
@@ -8818,7 +9616,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Israel-2013-Aerial_18-Masada.jpg?width=800",
-    "image_credit": "Aerial view of Masada fortress above the Dead Sea, photo by Godot13 · Wikimedia Commons"
+    "image_credit": "Aerial view of Masada fortress above the Dead Sea, photo by Godot13 · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Josephus",
+      "work": "Jewish War",
+      "ref": "7.275–406",
+      "note": "The Roman camps and the ramp up the western face, and the account of the last night given to him by two women who hid in a water channel."
+     }
+    ]
    }
   },
   {
@@ -8934,7 +9740,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Arch_of_Ctesiphon_at_Taq_Kisra.jpg?width=800",
-    "image_credit": "The Arch of Ctesiphon at Taq Kisra (a later Sasanian-era structure marking the site of the Parthian capital Trajan captured in 116 CE), photo by David Stanley · Wikimedia Commons"
+    "image_credit": "The Arch of Ctesiphon at Taq Kisra (a later Sasanian-era structure marking the site of the Parthian capital Trajan captured in 116 CE), photo by David Stanley · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Cassius Dio",
+      "work": "Roman History",
+      "ref": "68.28–30",
+      "note": "Trajan takes the Parthian capital, then rides down to the Persian Gulf and says he would sail for India if he were younger."
+     }
+    ]
    }
   },
   {
@@ -8963,7 +9777,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hatra_ruins.jpg?width=800",
-    "image_credit": "Ruins of the fortified city of Hatra, Iraq · Wikimedia Commons"
+    "image_credit": "Ruins of the fortified city of Hatra, Iraq · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Cassius Dio",
+      "work": "Roman History",
+      "ref": "68.31",
+      "note": "The desert city holds out against Trajan; the heat, the flies and the sudden storms do more damage to the besiegers than the defenders."
+     }
+    ]
    }
   },
   {
@@ -8990,9 +9812,7 @@
      "https://en.wikipedia.org/wiki/Battle_of_Idistaviso",
      "https://www.varuslegionen.de/en/idistaviso-battle/"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -9051,7 +9871,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Antikythera_Ephebe,_bronze,_70%E2%80%9360_BC,_NAMA_X_13396,_225684.jpg?width=800",
-    "image_credit": "Antikythera Ephebe bronze statue, National Archaeological Museum Athens · Wikimedia Commons"
+    "image_credit": "Antikythera Ephebe bronze statue, National Archaeological Museum Athens · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Cicero",
+      "work": "De re publica",
+      "ref": "1.21–22",
+      "note": "A geared bronze sphere brought back from Syracuse that reproduces the motions of sun, moon and planets on one turn of a handle — the closest thing in any surviving text to the mechanism found in this wreck."
+     }
+    ]
    }
   },
   {
@@ -9137,9 +9965,7 @@
      "https://en.wikipedia.org/wiki/Mazara_del_Vallo_Roman_shipwreck",
      "https://www.cnn.com/2026/08/10/science/sicily-roman-shipwreck-scli-intl"
     ],
-    "confidence": "high",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "high"
    }
   },
   {
@@ -9166,9 +9992,7 @@
      "https://fr.wikipedia.org/wiki/Titan_(%C3%A9pave)",
      "https://www.atlaspalm.fr/s14_titan.htm"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -9194,9 +10018,7 @@
     "sources": [
      "https://journals.openedition.org/archaeonautica/5545"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -9222,9 +10044,7 @@
     "sources": [
      "https://www.saint-raphael.com/en/discover/the-sea/the-underwater-world/shipwreck-map"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -9250,9 +10070,7 @@
     "sources": [
      "https://oxrep.classics.ox.ac.uk/databases/sites/france/dramont/768_dramont_d/"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -9278,9 +10096,7 @@
     "sources": [
      "https://museum.wa.gov.au/maritime-archaeology-db/bibliography/mediterranean-hull-types-compared-1-la-roche-fouras"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -9289,7 +10105,7 @@
     "type": "Point",
     "coordinates": [
      7.077,
-     47.0
+     47
     ]
    },
    "properties": {
@@ -9307,9 +10123,7 @@
      "http://www.thehistoryblog.com/archives/75705",
      "https://www.swissinfo.ch/eng/history/roman-cargo-found-at-the-bottom-of-lake-neuch%C3%A2tel/91155472"
     ],
-    "confidence": "high",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "high"
    }
   },
   {
@@ -9338,7 +10152,21 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa Jovis (Capri) (3).jpg?width=800",
-    "image_credit": "Ruins of Villa Jovis, Capri · Wikimedia Commons"
+    "image_credit": "Ruins of Villa Jovis, Capri · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Tacitus",
+      "work": "Annals",
+      "ref": "4.67",
+      "note": "Tiberius withdraws to Capri and builds twelve villas there, drawn by an island with one small landing place and a sea that keeps visitors away."
+     },
+     {
+      "author": "Suetonius",
+      "work": "Tiberius",
+      "ref": "65.2",
+      "note": "Names the Villa Jovis as the house Tiberius was in when he moved against Sejanus."
+     }
+    ]
    }
   },
   {
@@ -9364,9 +10192,7 @@
     "sources": [
      "https://www.capri.com/en/e/villa-damecuta"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -9392,9 +10218,7 @@
     "sources": [
      "https://en.wikipedia.org/wiki/Palazzo_a_Mare"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -9420,9 +10244,7 @@
     "sources": [
      "https://en.wikipedia.org/wiki/Villa_of_Domitian"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -9451,7 +10273,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grotta di Tiberio.JPG?width=800",
-    "image_credit": "The Grotto of Tiberius, Sperlonga · Wikimedia Commons"
+    "image_credit": "The Grotto of Tiberius, Sperlonga · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Tacitus",
+      "work": "Annals",
+      "ref": "4.59",
+      "note": "The roof of the dining grotto at Spelunca falls in during dinner; Sejanus crouches over Tiberius to shield him, and the rescuers find him doing it."
+     }
+    ]
    }
   },
   {
@@ -9478,9 +10308,7 @@
      "https://en.wikipedia.org/wiki/Laurentum",
      "https://www.gardenvisit.com/gardens/plinys_villa_at_laurentinum"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -9507,9 +10335,7 @@
      "https://en.wikipedia.org/wiki/Roman_Villa_of_Pliny_%22in_Tuscis%22",
      "https://www.keytoumbria.com/Citta_di_Castello/Pliny_Villa.html"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -9537,7 +10363,21 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa of Livia - Garden fresco 003.jpg?width=800",
-    "image_credit": "Garden fresco from the Villa of Livia, Prima Porta (Palazzo Massimo alle Terme) · Wikimedia Commons"
+    "image_credit": "Garden fresco from the Villa of Livia, Prima Porta (Palazzo Massimo alle Terme) · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Suetonius",
+      "work": "Galba",
+      "ref": "1",
+      "note": "An eagle drops a white hen with a laurel sprig in its beak into Livia's lap at her villa on the Flaminia; the laurel grove grown from it supplied the crowns of every Julio-Claudian triumph."
+     },
+     {
+      "author": "Pliny the Elder",
+      "work": "Natural History",
+      "ref": "15.136–137",
+      "note": "Tells the same story and adds that the villa took its name from the hens — ad Gallinas Albas."
+     }
+    ]
    }
   },
   {
@@ -9647,9 +10487,7 @@
     "sources": [
      "https://pompeiisites.org/en/oplontis-en-2/villa-b-or-of-lucius-crassius-tertius/"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -9761,9 +10599,7 @@
      "https://en.wikipedia.org/wiki/Villa_of_Nero",
      "https://www.ostia-antica.org/dict/topics/antium/presentation/antium-imperial-villa.htm"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -9789,9 +10625,7 @@
     "sources": [
      "https://www.finestresullarte.info/en/archaeology/villa-sora-new-excavations-unearth-decorations-and-a-construction-site-active-in-79-ad"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -9817,9 +10651,7 @@
     "sources": [
      "https://www.albadamare.it/the-roman-villa-in-positano/"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -9845,9 +10677,7 @@
     "sources": [
      "https://en.wikipedia.org/wiki/Villa_Romana,_Minori"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -9875,7 +10705,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fishbourne Roman Palace.JPG?width=800",
-    "image_credit": "Fishbourne Roman Palace, West Sussex · Wikimedia Commons"
+    "image_credit": "Fishbourne Roman Palace, West Sussex · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Tacitus",
+      "work": "Agricola",
+      "ref": "14",
+      "note": "Certain territories are handed to king Cogidubnus, on the old Roman practice, Tacitus says, of using even kings as instruments of subjection. Whether this palace was his is argued over."
+     }
+    ]
    }
   },
   {
@@ -9901,9 +10739,7 @@
     "sources": [
      "https://www.roman-britain.co.uk/places/gorhambury-rural-villa/"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -9958,9 +10794,7 @@
     "sources": [
      "https://en.wikipedia.org/wiki/Eccles_Roman_Villa"
     ],
-    "confidence": "high",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "high"
    }
   },
   {
@@ -9986,9 +10820,7 @@
     "sources": [
      "https://www.cultureoncall.com/the-history-of-rockbourne-roman-villa-lauren-smart/"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -10014,9 +10846,7 @@
     "sources": [
      "https://www.aubreyresearch.com/roman-britain/sites/angmering"
     ],
-    "confidence": "high",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "high"
    }
   },
   {
@@ -10042,9 +10872,7 @@
     "sources": [
      "https://www.academia.edu/29189345/The_Roman_Villa_at_Southwick_rep"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -10099,9 +10927,7 @@
     "sources": [
      "https://en.wikipedia.org/wiki/Roman_villa_of_Chiragan"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -10127,9 +10953,7 @@
     "sources": [
      "https://en.wikipedia.org/wiki/Loupian_Roman_villa"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -10184,9 +11008,7 @@
     "sources": [
      "https://www.allaboutportugal.pt/en/torres-novas/monuments/ruinas-romanas-de-vila-cardilio"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -10240,9 +11062,7 @@
     "sources": [
      "https://www.calpe.es/en/discover-calpe/cultural-tourism/museums-and-monuments/monuments/banos-de-la-reina-archaelogical-site"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -10269,9 +11089,7 @@
      "https://en.wikipedia.org/wiki/Juba_II",
      "https://en.wikipedia.org/wiki/Caesarea_in_Mauretania"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -10297,9 +11115,7 @@
     "sources": [
      "https://www.worldhistory.org/image/16791/house-of-orpheus-volubilis/"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -10325,9 +11141,7 @@
     "sources": [
      "https://www.ascsa.edu.gr/uploads/media/hesperia/147437.pdf"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -10411,9 +11225,7 @@
      "http://roman-britain.co.uk/places/crich.htm",
      "https://www.ucl.ac.uk/archaeo-metallurgical-studies/sites/archaeo-metallurgical-studies/files/iams_21_2001_gardiner.pdf"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -10441,8 +11253,14 @@
      "https://en.wikipedia.org/wiki/Noric_steel"
     ],
     "confidence": "high",
-    "image_url": null,
-    "image_credit": null
+    "ancient_sources": [
+     {
+      "author": "Pliny the Elder",
+      "work": "Natural History",
+      "ref": "34.144–145",
+      "note": "Sets out why iron differs from place to place — the ore, the water it is quenched in — in the passage behind the standing reputation of Noric steel."
+     }
+    ]
    }
   },
   {
@@ -10498,9 +11316,7 @@
      "https://www.ancientcyprus.com/articles/copper-kingdoms-of-ancient-cyprus",
      "https://cyprusdiscovery.com/copper-identity-of-cyprus/"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -10556,9 +11372,7 @@
      "https://www.labrujulaverde.com/en/2026/03/the-fascinating-history-of-mount-pangaion-the-gold-mountain-that-forged-empires/",
      "https://en.wikipedia.org/wiki/Pangaion_Hills"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -10585,9 +11399,7 @@
      "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Dampelum",
      "https://www1.leiza.de/transformation/romania/mining/miningengl.htm"
     ],
-    "confidence": "high",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "high"
    }
   },
   {
@@ -10616,7 +11428,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/SikaitLargeTempleFacade.jpg?width=800",
-    "image_credit": "Roland Unger, CC BY-SA 4.0, via Wikimedia Commons — rock-cut temple facade at Sikait, the ancient Roman emerald-mining settlement of Mons Smaragdus"
+    "image_credit": "Roland Unger, CC BY-SA 4.0, via Wikimedia Commons — rock-cut temple facade at Sikait, the ancient Roman emerald-mining settlement of Mons Smaragdus",
+    "ancient_sources": [
+     {
+      "author": "Pliny the Elder",
+      "work": "Natural History",
+      "ref": "37.62–75",
+      "note": "On emeralds and the stones sold as them: Egyptian mines worked in the desert behind Coptos, and the trick of soaking poor stones in oil to deepen the colour."
+     }
+    ]
    }
   },
   {
@@ -10672,9 +11492,7 @@
      "https://historylab.es/the-gold-of-tresminas-cultural-landscape-and-roman-mining-technology/",
      "https://www.ancientportsantiques.com/wp-content/uploads/Documents/PLACES/Spain-Portugal/TresMinas-WahlClerici2013.pdf"
     ],
-    "confidence": "high",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "high"
    }
   },
   {
@@ -10731,8 +11549,14 @@
      "https://en.wikipedia.org/wiki/Docimium"
     ],
     "confidence": "high",
-    "image_url": null,
-    "image_credit": null
+    "ancient_sources": [
+     {
+      "author": "Strabo",
+      "work": "Geography",
+      "ref": "12.8.14",
+      "note": "The quarries near Synnada, once worked in small pieces, now sending blocks and columns to Rome big enough to make the haulage worth it."
+     }
+    ]
    }
   },
   {
@@ -10760,8 +11584,14 @@
      "https://www.world-archaeology.com/features/mons-porphyrites-egypt/"
     ],
     "confidence": "high",
-    "image_url": null,
-    "image_credit": null
+    "ancient_sources": [
+     {
+      "author": "Pliny the Elder",
+      "work": "Natural History",
+      "ref": "36.57",
+      "note": "Egypt's red porphyry, quarried in unlimited blocks; Vitrasius Pollio brought the first statues of it to Rome under Claudius, to a cool reception."
+     }
+    ]
    }
   },
   {
@@ -10788,9 +11618,7 @@
      "https://artofmaking.ac.uk/explore/materials/7/Prokonnesian-Marble",
      "https://marmoraasiatica.uw.edu.pl/quarries/prokonnesos/"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -10848,7 +11676,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancient_quarry,_Paros,_Greece.jpg?width=800",
-    "image_credit": "Wikimedia Commons — ancient marble quarry remains near Marathi, Paros, Greece"
+    "image_credit": "Wikimedia Commons — ancient marble quarry remains near Marathi, Paros, Greece",
+    "ancient_sources": [
+     {
+      "author": "Pliny the Elder",
+      "work": "Natural History",
+      "ref": "36.14",
+      "note": "Parian marble, the sculptors' stone, and the seam called lychnites — quarried underground by lamplight, which is where the name came from."
+     }
+    ]
    }
   },
   {
@@ -10875,9 +11711,7 @@
      "https://www.cambridge.org/core/journals/journal-of-roman-archaeology/article/abs/quarries-in-the-region-of-aphrodisias-the-black-and-white-marbles-of-goktepe-mugla/622FD8482AEE657400F803323643D8FD",
      "https://www.researchgate.net/publication/292711299_Discovery_and_preliminary_investigation_of_the_Goktepe_marble_quarries_Mugla_Turkey_and_their_Role_as_an_Alternative_Source_of_Aphrodisias_marbles"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -10933,9 +11767,7 @@
      "https://en.wikipedia.org/wiki/Ancient_Cotta",
      "https://link.springer.com/article/10.1007/s10437-025-09643-7"
     ],
-    "confidence": "high",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "high"
    }
   },
   {
@@ -10962,9 +11794,7 @@
      "https://www.visit-andalucia.com/baria-phoenician-roman-villaricos-almeria/",
      "https://en.wikipedia.org/wiki/Roman_fish_salting_factory"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -10991,9 +11821,7 @@
      "https://en.wikipedia.org/wiki/Neapolis_(Sardinia)",
      "https://www.sardegnacultura.it/en/articles/guspini-citta-romana-di-neapolis"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -11049,9 +11877,7 @@
      "https://en.wikipedia.org/wiki/Carteia",
      "https://www.andalucia.com/province/cadiz/sanroque/carteia-roman-archaeological-site"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -11078,9 +11904,7 @@
      "https://en.wikipedia.org/wiki/Chersonesus",
      "https://books.openedition.org/pccj/1746?lang=en"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -11107,9 +11931,7 @@
      "https://en.wikipedia.org/wiki/Ossonoba_(Roman_city)",
      "https://www.algarvehistoryassociation.com/en/portuguese-history/algarve-history/66-fish-conservation-in-the-algarve-in-roman-times"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -11136,9 +11958,7 @@
      "https://www.turismosantapola.es/stp/Web_php/index.php?contenido=subapartados_coconut&id_boto=426&title=portus-ilicitanus-site&lang=4",
      "https://www.academia.edu/45207966/Actuaciones_arqueol%C3%B3gicas_en_la_factor%C3%ADa_de_salazones_pisc%C3%ADcolas_de_La_Picola_Portus_Ilicitanus_Santa_Pola_Alicante_Resultados_de_las_campa%C3%B1as_2017_2018"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -11165,9 +11985,7 @@
      "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry%3Dhalae-geo",
      "https://en.wikipedia.org/wiki/Halae"
     ],
-    "confidence": "low",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "low"
    }
   },
   {
@@ -11194,9 +12012,7 @@
      "https://en.wikipedia.org/wiki/Roman_Aquileia",
      "https://link.springer.com/article/10.1007/s11457-021-09322-z"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -11223,9 +12039,7 @@
      "https://onlinelibrary.wiley.com/doi/10.1002/gea.70038?af=R",
      "https://visitostiaantica.org/en/the-salt-warehouses-in-ostia-antica/"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -11252,9 +12066,7 @@
      "https://marismabiomed.com/en/blogs/blog/discover-the-salt-flats-of-cadiz-a-natural-and-cultural-treasure-on-the-andalusian-coast",
      "https://www.romanports.org/en/articles/ports-in-focus/682-gades-comes-back-to-life.html"
     ],
-    "confidence": "low",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "low"
    }
   },
   {
@@ -11281,9 +12093,7 @@
      "https://www.sciencedirect.com/science/article/pii/S0277379124004311",
      "https://www.visitcomacchio.it/en/discover/the-po-delta-park/the-salt-marsh"
     ],
-    "confidence": "low",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "low"
    }
   },
   {
@@ -11310,9 +12120,7 @@
      "https://www.researchgate.net/publication/236607378_Studies_of_the_Southern_Gaul_Sigillata_Ceramics_the_workshops_of_La_Graufesenque_and_Montans",
      "https://potsherd.net/atlas/Ware/MOTS"
     ],
-    "confidence": "high",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "high"
    }
   },
   {
@@ -11339,9 +12147,7 @@
      "https://www.semanticscholar.org/paper/COMPOSITION-OF-THE-LA-GRAUFESENQUE,-BANASSAC-AND-Picon-Carre/67b9590c8c79294918c80b6c4cc0d3ae0407c72b",
      "https://intarch.ac.uk/journal/issue50/5/1.html"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -11368,9 +12174,7 @@
      "https://www.umbriacultura.it/SebinaOpac/resource/area-archeologica-di-scoppieto-baschi-tr/SAM9000254",
      "https://www.insegnadelgiglio.it/en/prodotto/scoppieto-i-il-territorio-e-i-materiali-lucerne-opus-doliare-metalli/"
     ],
-    "confidence": "high",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "high"
    }
   },
   {
@@ -11397,9 +12201,7 @@
      "https://www.researchgate.net/publication/316628338_La_terra_sigillata_hispanica_en_el_Valle_Medio_del_Ebro_El_Centro_alfarero_de_Tritium_Magallum_Tricio-La_Rioja",
      "https://lugaresconhistoria.com/tricio-la-rioja"
     ],
-    "confidence": "high",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "high"
    }
   },
   {
@@ -11426,9 +12228,7 @@
      "https://en.wikipedia.org/wiki/Henchir_Mettich",
      "https://www.jstor.org/stable/290009"
     ],
-    "confidence": "high",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "high"
    }
   },
   {
@@ -11455,9 +12255,7 @@
      "https://drc.ohiolink.edu/handle/2374.OX/187562",
      "https://www.trismegistos.org/place/20625"
     ],
-    "confidence": "medium",
-    "image_url": null,
-    "image_credit": null
+    "confidence": "medium"
    }
   },
   {
@@ -11483,8 +12281,7 @@
     "sources": [
      "https://en.wikipedia.org/wiki/Tomb_of_Priscilla"
     ],
-    "confidence": "high",
-    "image_url": null
+    "confidence": "high"
    }
   },
   {
@@ -11540,8 +12337,7 @@
      "https://pleiades.stoa.org/places/423083",
      "https://en.wikipedia.org/wiki/Horatii_and_Curiatii"
     ],
-    "confidence": "medium",
-    "image_url": null
+    "confidence": "medium"
    }
   },
   {
@@ -11595,8 +12391,7 @@
     "sources": [
      "https://en.wikipedia.org/wiki/Columbaria_of_Vigna_Codini"
     ],
-    "confidence": "medium",
-    "image_url": null
+    "confidence": "medium"
    }
   },
   {
@@ -11735,8 +12530,7 @@
     "sources": [
      "https://en.wikipedia.org/wiki/Aulus_Umbricius_Scaurus"
     ],
-    "confidence": "high",
-    "image_url": null
+    "confidence": "high"
    }
   },
   {
@@ -11790,8 +12584,7 @@
     "sources": [
      "https://www.wikidata.org/wiki/Q29887294"
     ],
-    "confidence": "high",
-    "image_url": null
+    "confidence": "high"
    }
   },
   {
@@ -11845,8 +12638,7 @@
     "sources": [
      "https://pafleg.cultura.gov.it/it/4388/localit/68/la-necropoli-di-via-celle"
     ],
-    "confidence": "medium",
-    "image_url": null
+    "confidence": "medium"
    }
   },
   {
@@ -11931,7 +12723,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Mausoleum_of_Mauretania_01.jpg?width=800",
-    "image_credit": "Photo: Wikimedia Commons contributor, CC BY-SA"
+    "image_credit": "Photo: Wikimedia Commons contributor, CC BY-SA",
+    "ancient_sources": [
+     {
+      "author": "Pomponius Mela",
+      "work": "De chorographia",
+      "ref": "1.31",
+      "note": "Marks the common tomb of the royal house on the coast road west of Icosium."
+     }
+    ]
    }
   },
   {
@@ -12043,8 +12843,7 @@
      "https://www.turismosevilla.org/en/what-see-and-do/heritage/monuments/archaeological-site-carmona",
      "https://www.livius.org/articles/place/carmo-carmona/carmo-carmona-necropolis/"
     ],
-    "confidence": "high",
-    "image_url": null
+    "confidence": "high"
    }
   },
   {
@@ -12098,8 +12897,7 @@
     "sources": [
      "https://www.sciencedaily.com/releases/2013/05/130510075521.htm"
     ],
-    "confidence": "medium",
-    "image_url": null
+    "confidence": "medium"
    }
   },
   {
@@ -12125,8 +12923,7 @@
     "sources": [
      "https://www.spain.info/en/places-of-interest/area-funeraria-columbarios/"
     ],
-    "confidence": "medium",
-    "image_url": null
+    "confidence": "medium"
    }
   },
   {
@@ -12154,7 +12951,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fa%C3%A7ade_of_the_Tomb_of_the_Kings.jpg?width=800",
-    "image_credit": "Photo: Wikimedia Commons contributor"
+    "image_credit": "Photo: Wikimedia Commons contributor",
+    "ancient_sources": [
+     {
+      "author": "Josephus",
+      "work": "Jewish Antiquities",
+      "ref": "20.95",
+      "note": "Queen Helena of Adiabene is buried in the three pyramids she had built three stades outside Jerusalem."
+     }
+    ]
    }
   },
   {
@@ -12208,8 +13013,7 @@
     "sources": [
      "https://en.wikipedia.org/wiki/Tomb_of_Zechariah"
     ],
-    "confidence": "medium",
-    "image_url": null
+    "confidence": "medium"
    }
   },
   {
@@ -12265,7 +13069,14 @@
      "https://www.nationalgeographic.com/history/article/herods-tomb"
     ],
     "confidence": "high",
-    "image_url": null
+    "ancient_sources": [
+     {
+      "author": "Josephus",
+      "work": "Jewish War",
+      "ref": "1.670–673",
+      "note": "The funeral procession from Jericho: the bier of gold, the guard in arms, and eight miles' march to burial at Herodium."
+     }
+    ]
    }
   },
   {
@@ -12293,7 +13104,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mausoleum_at_Halicarnassus_by_Ferdinand_Knab_(1886)_cropped.png?width=800",
-    "image_credit": "Reconstruction painting by Ferdinand Knab, 1886, Wikimedia Commons"
+    "image_credit": "Reconstruction painting by Ferdinand Knab, 1886, Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Pliny the Elder",
+      "work": "Natural History",
+      "ref": "36.30–31",
+      "note": "Gives the tomb its measurements and the four sculptors who each took a side, and says the fourth was still working when the queen who commissioned it died."
+     }
+    ]
    }
   },
   {
@@ -12515,8 +13334,7 @@
     "sources": [
      "https://en.wikipedia.org/wiki/Tomb_of_the_Roman_Soldier"
     ],
-    "confidence": "medium",
-    "image_url": null
+    "confidence": "medium"
    }
   },
   {

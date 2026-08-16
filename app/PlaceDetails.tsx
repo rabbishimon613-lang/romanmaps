@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import type { Map as MLMap } from "maplibre-gl";
 import { usePoiPanel, clearPoi } from "./usePoiPanel";
 import { colorForCategory } from "./poiCategories";
+import { lifeForCategory } from "./categoryLife";
 import { useIsMobile } from "./useIsMobile";
 
 const CONFIDENCE_COLOR: Record<string, string> = {
@@ -22,6 +23,33 @@ function formatYear(y: any): string {
 function titleCase(s: string): string {
   return s.replace(/(^|\s|-)\w/g, (c) => c.toUpperCase());
 }
+
+/** A place reaches this panel by two routes and they don't agree on types. A map click hands us
+ * Maplibre's feature properties, where every array has been flattened to a JSON string; a deep
+ * link or the legion locator hands us the GeoJSON we fetched ourselves, where it is still an
+ * array. Accept both, or the list blocks below silently render nothing on the common path. */
+function asArray<T>(v: any): T[] {
+  if (Array.isArray(v)) return v as T[];
+  if (typeof v === "string" && v.trim().startsWith("[")) {
+    try {
+      const parsed = JSON.parse(v);
+      return Array.isArray(parsed) ? (parsed as T[]) : [];
+    } catch {
+      return [];
+    }
+  }
+  return [];
+}
+
+/** One entry of `ancient_sources[]` — a classical text that describes this place. `note` says
+ * what the passage actually contains, so the citation reads as content and not as apparatus. */
+type AncientSource = {
+  author?: string;
+  work?: string;
+  ref?: string;
+  quote?: string;
+  note?: string;
+};
 
 /** Google-Maps-style place details panel: click a POI (app/Map.tsx pois-dot layer) to open,
  * slides in from the left on desktop / up from the bottom on mobile. Replaces the old Maplibre
@@ -114,7 +142,8 @@ export default function PlaceDetails() {
 
   const locationLine = [p.province, p.modern_location].filter(Boolean).join(" · ");
 
-  const sources: string[] = Array.isArray(p.sources) ? p.sources : [];
+  const sources = asArray<string>(p.sources);
+  const ancientSources = asArray<AncientSource>(p.ancient_sources).filter((s) => s && (s.author || s.work));
 
   // Clean shift-scholar voice out of notes: drop bracketed asides, sourcing meta,
   // "per the brief", "guardrail", any parenthetical citations that read like margin notes.
@@ -141,6 +170,7 @@ export default function PlaceDetails() {
     return out;
   };
   const notes = cleanNotes(p.notes || "");
+  const categoryLife = lifeForCategory(category);
 
   const flyTo = () => {
     const map = (window as any).__map as MLMap | undefined;
@@ -372,6 +402,59 @@ export default function PlaceDetails() {
           <div style={{ marginTop: 16 }}>
             <SectionHeader label="About" />
             <p style={{ fontSize: 14, lineHeight: 1.55, color: "var(--text)", margin: 0 }}>{notes}</p>
+          </div>
+        )}
+
+        {/* Written once per category and shown on every card of that category — what a place of
+         * this kind was actually like to stand in. Absent for categories not yet written. */}
+        {categoryLife && (
+          <div style={{ marginTop: 18 }}>
+            <SectionHeader label="What happened here" />
+            <p style={{ fontSize: 13.5, lineHeight: 1.6, color: "var(--text-2)", margin: 0 }}>{categoryLife}</p>
+          </div>
+        )}
+
+        {/* What the Romans wrote about this place. Sits above the modern link list because a
+         * passage of Strabo is something to read; a Pleiades URL is provenance. */}
+        {ancientSources.length > 0 && (
+          <div style={{ marginTop: 18 }}>
+            <SectionHeader label="In ancient writing" />
+            <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 12 }}>
+              {ancientSources.map((s, i) => (
+                <li key={i}>
+                  <div style={{ fontSize: 13, color: "var(--text-strong)", lineHeight: 1.35 }}>
+                    {s.author && <span style={{ fontWeight: 600 }}>{s.author}</span>}
+                    {s.work && (
+                      <>
+                        {s.author ? ", " : ""}
+                        <span style={{ fontStyle: "italic" }}>{s.work}</span>
+                      </>
+                    )}
+                    {s.ref && <span style={{ color: "var(--text-2)" }}>{` ${s.ref}`}</span>}
+                  </div>
+                  {s.quote && (
+                    <p
+                      style={{
+                        margin: "5px 0 0",
+                        paddingLeft: 10,
+                        borderLeft: "2px solid var(--divider)",
+                        fontSize: 13,
+                        fontStyle: "italic",
+                        lineHeight: 1.5,
+                        color: "var(--text)",
+                      }}
+                    >
+                      {s.quote}
+                    </p>
+                  )}
+                  {s.note && (
+                    <p style={{ margin: "4px 0 0", fontSize: 13, lineHeight: 1.5, color: "var(--text-2)" }}>
+                      {s.note}
+                    </p>
+                  )}
+                </li>
+              ))}
+            </ul>
           </div>
         )}
 
