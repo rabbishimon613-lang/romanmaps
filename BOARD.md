@@ -68,7 +68,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       `places_high` (~11MB shipped, never loaded) or wire them into a detail ladder.
 - [ ] `[01-P0-1]` **`selected-marker`** `polish` — Selected POI gets an enlarged ringed marker;
       camera offsets by the sheet height so the pin stays visible.
-- [ ] `[01-P0-2]` **`camera-memory`** `polish` — Persist and restore the last camera.
+- [~] `[01-P0-2]` **`camera-memory`** `polish` — claimed by cloud shift 4, 2026-08-16 17:20.
+      Persist and restore the last camera.
 - [ ] `[03-P0-2]` **`card-rebuild`** `polish` — Rebuild the place card to the eleven-block
       order; every block hides when empty.
 - [x] `[03-FIX-1]` **`notes-truncation`** `fix` — Done 2026-08-16 by cloud shift 2. Audited every
