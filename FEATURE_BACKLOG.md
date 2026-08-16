@@ -171,10 +171,14 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
 
 - [ ] **A real, site-wide click-priority bug — check any future multi-polygon layer for it.** Several sites' Overpass fetches mix each park's own whole-site boundary polygon and, in Ostia/Pompeii's case, "Regio"-numbered district outlines, into the *same* source and layer as individual named buildings. Whichever renders later in the source's feature array draws on top and permanently swallows clicks meant for the specific building underneath — confirmed this was silently breaking Pompeii's brand-new curated content until fixed by ranking `e.features` by polygon area and picking the smallest in `Map.tsx`'s click handler (see `[06-P0-2]` in `BOARD.md`). Any future overlay that mixes point/polygon features of very different sizes in one clickable layer should check for this same failure mode before shipping.
 - [ ] **`app/pompeiiDescriptions.ts` has real headroom left.** 28 of 30 researched buildings shipped; 332 of Pompeii's 360 named OSM buildings are still uncurated (Casa dei mosaici geometrici, Casa di Trebio Valente, Casa del Triclinio all'aperto, more named tombs on the Porta Ercolano/Porta Nocera necropolis streets, and dozens more — `python3 -c "import json; ..."` against `public/data/sites/pompeii_buildings.geojson`'s `name` field is the fastest way to pull the current uncurated list). 38 other sites in `app/sites.ts` still have zero curated buildings at all.
-- [ ] **`[10-P0-1]` tours (board P0) is the next topmost `add` ticket** — deliberately not attempted this run; see its own skip note in `BOARD.md` for the reasoning (new player UI + 3 curated tours is a bigger, phone-layout-risk-bearing lift than this run's other tickets, which all extended proven patterns). A future shift with a full runway should pick this up first.
-
 ## Shipped (moved from above; newest on top)
 
+- 2026-08-16 — Shift 23: Guided tours (`[10-P0-1]`) — format, player, and 3 starter tours (Via
+  Appia, A Day in Ostia, What Was New in 117), built entirely from data already on the map. Also:
+  camera memory (`[01-P0-2]`, a returning visitor lands where they left off), Herculaneum curated
+  buildings (`[06-P0-2]`, 34 entries), ancient-sources batch 3 (`[09-P0-1]`, 3 more citations),
+  and the Via Egnatia road (axis 2, 35 new `road_stations.geojson` entries, the empire's second
+  complete road after Via Appia).
 - 2026-08-15 — Shift 19: Onboarding hint (first-visit dismissible tooltip on the search bar, "Try Londinium or Ephesus")
 - 2026-08-15 — Shift 18: Roman-style typography for place-name labels (Cinzel display serif on panel titles, list rows, and map pin labels)
 - 2026-08-14 — Shift 16: Legion locator (search/browse all 28 legions, fly to fortress + open real detail panel)

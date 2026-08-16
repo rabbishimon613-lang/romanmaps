@@ -7,6 +7,182 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 23 — 2026-08-16 (this shift's own prompt claimed "Shift 4 of four")
+
+**Same stale-numbering mismatch every shift since Shift 13 has flagged** — SHIFT_LOG was already
+22 real shifts deep at session start, so this entry continues as Shift 23. This is the last of
+the four shifts this prompt describes; three other cloud shifts and a Mac-side 09:30 editorial
+pass had already pushed real work to `main` before this session started (`git fetch` showed
+`origin/main` well ahead of the stale first-ever-commit a plain `git branch -a` initially showed
+on the detached `HEAD` — `git checkout -B main origin/main` fixed it in one step, same recurring
+symptom every shift since #9 has flagged; nothing lost).
+
+Read `SHIFT_BRIEF.md` in full, then `BOARD.md` per its own instruction ("prefer a board ticket
+over an axis"). Two more workers pushed to `BOARD.md`/`main` mid-shift (a Mac-side editorial pass
+claiming/shipping `[15-P1-4]` metrics and `[10-P0-3]` flagship-depth) — `git pull --rebase`
+before every push caught both cleanly, no collisions.
+
+### Track B / board — a full 1:2:1 ratio cycle, twice
+
+**`[10-P0-1]` tours (`add`)** — the board's own note said this had been deliberately skipped by
+two earlier shifts over "real phone-layout risk" and "didn't look finishable cleanly." Attempted
+it this run, scoped deliberately conservative to keep that risk down: three new files
+(`app/tours.ts`, `app/useTour.ts`, `app/TourPlayer.tsx`) built entirely from data already on the
+map rather than fetching anything new — Via Appia (31 stops: 5 tomb POIs plus all 26 already-
+shipped `road_stations.geojson` mansiones), A Day in Ostia (13 stops, all named `pois.geojson`
+buildings), and What Was New in 117 (12 stops, Trajanic monuments interleaved with
+`events_117.geojson` entries, closing on `person_trajan`'s death at Selinus and
+`event_hadrian_acclamation_antioch` the same day — the map's own snapshot moment). A "poi" stop
+opens the real Place details panel via `selectPoi`, the same pattern `LegionLocator.tsx` already
+used; "station"/"event"/"person" stops have no card of their own so their sourced text renders
+inline in the player. A dashed route line + numbered stop markers draw on the map while a tour is
+active, torn down on close, mirroring `Ruler.tsx`'s imperative source/layer pattern. **Real bug
+caught before shipping, not after**: the tour panel and Place details panel occupy the same
+left-side screen slot (`left:60` vs `left:70`, z-index 9 vs 7), so clicking "Open full details"
+on a poi stop was opening the card *invisibly behind* the tour panel — first Playwright pass
+showed no visible change because of it. Added `minimizeTourPanel()` (hides the panel, keeps
+`activeTourSlug`/`stopIndex` intact) so the card becomes visible; reopening Tours resumes at the
+same stop, confirmed with a dedicated screenshot pass. Verified at 1280×800 light and 375×812
+dark (mobile gets a compact card below the search pill, not a full slide-in panel — no left rail
+to anchor to), all three stop kinds exercised, full 31-stop Via Appia run confirmed Next/Previous
+disable correctly at both ends.
+
+**`[09-P0-1]` ancient-sources, batch 3 (`deepen`)** — continued the standing citation task from
+145/221 toward the remaining pool (grown to 230 high-confidence POIs as other shifts added
+records; 85 open at claim time). Delegated to four parallel background WebSearch-only agents by
+theme, each told to report `not_found` honestly rather than stretch — and the honest result was
+3 of 85: Salvian on Carthage's circus still packed with race-goers as the Vandals closed in (439
+CE — later than most of this project's citations, but a genuine specific literary description of
+the physical building), and two Ptolemy *Geography* identifications (Caetobrix/Troia,
+Salinae/Ocna Mures). One candidate dropped on review for the same wrong-POI-mismatch shape batch
+2's log already flagged: a Macrobius passage about Baalbek's temple oracle, offered for the
+neighboring quarry POI. Villas/shipwrecks came back 0/12, tombs/necropoleis 0/29 — both matching
+the board's own prediction for this specific remaining pool. 148/230 (64.3%) now covered.
+
+**`[06-P0-2]` curate-buildings, Herculaneum (`deepen`)** — the third site to get Ostia-depth
+curated descriptions. New `app/herculaneumDescriptions.ts`, 34 buildings researched via a
+background WebSearch pass and personally reviewed before merging: the Villa of the Papyri (built
+for Calpurnius Piso, its library the only one to survive intact from antiquity), the Great
+Palaestra and its five-headed serpent fountain, the Boat Pavilion where ~300 victims sheltered
+from the pyroclastic surge, the College of the Augustales, three bath complexes, and named houses
+(the Deer, Neptune and Amphitrite, the Black Hall, the Skeleton, the Bronze Herm). One candidate
+("Sacello") dropped as a duplicate of the Augustales hall already covered under its own name. One
+claim read as suspiciously exact ("reopened in 2026") and got a dedicated spot-verification pass
+before merging rather than trusting it on the research agent's word alone — real, confirmed via
+the Parco Archeologico di Ercolano's own site plus three independent press reports: 9 July 2026,
+after nearly thirty years closed. Wired into `Map.tsx`'s existing building-click handler (one
+more ternary branch alongside `ostiaEntry`/`pompeiiEntry`); first Playwright click into
+Herculaneum's building layer surfaced the right content immediately (House of the Corinthian
+Atrium, correct "Not standing in 117 CE" badge, 150 BCE-built/79 CE-destroyed dates).
+
+**`[01-P0-2]` camera-memory (`polish`)** — closed the ratio cycle. Landing on the bare
+`romanmaps.vercel.app` root always reset to the empire-wide opening view, even for a repeat
+visitor who'd panned elsewhere on their last visit — `Map.tsx`'s existing `#lng,lat,zoomz` hash
+sync only covers shared links and in-session back/forward, not a plain reload or new tab. Added
+a localStorage fallback (`loadCamera`/`saveCamera`, try/catch-wrapped for private-browsing modes
+that throw on access) piggybacking on the already-debounced moveend hash writer — one extra
+`localStorage.setItem` call, no new listener. A real hash still always wins, and the cinematic
+opening flyTo is skipped for a restored camera exactly as it already was for a hash link.
+Verified with Playwright: a fresh browser context with no saved camera still gets the unchanged
+default Rome view; pan+zoom, strip the hash back to the bare path, reload → lands back at the
+panned position.
+
+That's a complete 1 `add` : 2 `deepen` : 1 `polish` cycle in one run, on top of the one Shift 22
+already closed — this repo has now run the board's ratio discipline through two full cycles
+back to back without a stall.
+
+### Track A — Via Egnatia, the empire's second complete road (axis 2, no board ticket)
+
+The board had nothing unclaimed that fit after the ratio cycle closed, so fell back to
+`SHIFT_BRIEF`'s own axis queue, same as Shift 21 did in an equivalent situation. Picked axis 2's
+explicit "one road per shift" playbook: Via Appia (26 stations) already shipped — turned out to
+already be on `main` before this shift started, unlogged by whichever earlier run added it — so
+took Via Egnatia next in the brief's own priority queue (Dyrrachium/Apollonia on the Adriatic,
+through Macedonia and Thrace, to Byzantium). `road_stations.geojson`: 26 → 61 features. Delegated
+to a background WebSearch agent against the Antonine Itinerary, Peutinger Table, Strabo, and
+Pliny, cross-referenced against Pleiades and modern place identifications for all 35 stations —
+Dyrrachium, the road's Adriatic-branch twin Apollonia, over the Candavian mountains via Clodiana
+and Scampis, past Lake Ohrid at Lychnidus, through Macedonia's royal cities (Heraclea Lyncestis,
+Edessa, Pella, provincial capital Thessalonica), east through Amphipolis and Philippi (Paul the
+Apostle's first European church) to the Aegean port Neapolis, across Thrace via Traianopolis (a
+fresh Trajanic foundation on the site of Xerxes' old invasion muster) and Kypsela, along the
+Marmara coast through Perinthus and Selymbria, to Byzantium — two centuries before Constantine
+remakes it. **A real gap in my own first prompt, caught before merging**: the research agent's
+first pass came back properties-only, no coordinates, because my format spec described "real
+coordinates" in prose but never included a `coordinates` field in the JSON template I gave it — a
+follow-up message to the same (already-informed) agent got clean `[lng, lat]` pairs for all 35
+without re-researching from scratch. Honest about what the Itinerary doesn't resolve: 8 of the 35
+stations (Nicaea in Macedonia, Cellae, Melissourgis, Cosintos, Brendice, Milolitum, Syracella,
+Resistum) are named in the source but have no securely excavated modern location, shipped with
+`identified: false` and a rough coordinate interpolated along the known road corridor rather than
+an invented precise one. The later Hadrianopolis branch some Itinerary manuscripts attach to this
+stretch was deliberately excluded — Hadrianopolis wasn't founded until after 117 CE. Two
+voice-rule hedges caught on my own review before merging ("may have served," "probably founded")
+and fixed — one tightened to state the fact plainly, one clause dropped where the underlying
+claim was genuinely unresolved rather than just softly worded. Reused the already-shipped
+road-stations symbol layer (`Map.tsx`, default OFF per invariant 0) — no UI changes needed.
+Verified with Playwright: toggling the layer on renders 26 of the 35 new points in a
+Balkans/Thrace viewport via `queryRenderedFeatures` filtered by `road="Via Egnatia"`.
+
+### Commits this shift
+
+1. `Claim tours [10-P0-1] — cloud shift 4, 2026-08-16` (board claim)
+2. `Guided tours: format, player, and 3 starter tours — [10-P0-1]`
+3. `Board: close tours [10-P0-1]; update ratio state`
+4. `Claim ancient-sources batch 3 — cloud shift 4, 2026-08-16` (board claim)
+5. `Claim curate-buildings (Herculaneum) — cloud shift 4, 2026-08-16` (board claim)
+6. `Ancient-sources batch 3: 3 new citations — [09-P0-1]`
+7. `Herculaneum curated buildings — [06-P0-2]`
+8. `Board: close ancient-sources batch 3 and curate-buildings/Herculaneum; update ratio state`
+9. `Claim camera-memory [01-P0-2] — cloud shift 4, 2026-08-16` (board claim)
+10. `Camera memory — remember the last camera across visits — [01-P0-2]`
+11. `Board: close camera-memory [01-P0-2]; update ratio state — second full cycle complete`
+12. `Via Egnatia — 35 road stations, Dyrrachium to Byzantium (Track A, axis 2)`
+13. `Board: log Via Egnatia axis-2 work (no ticket ID)`
+
+All pushed to `main` individually as each piece finished and was verified; pre-push `next build`
++ `npm run validate` gate ran clean on every push (0 validator errors, the same 14 pre-existing
+warnings throughout — one tracked count, cross-file name collisions within 150m, rose from 73 to
+75 with the new Via Egnatia place names, expected and not a new defect, see that ticket's own
+commit message).
+
+### Verification methodology
+
+Same as Shifts 21-22: `npm install playwright` into `/tmp/pw-scratch` (outside the repo, never
+touches `package.json`), `executablePath` pointed at
+`/opt/pw-browsers/chromium-1194/chrome-linux/chrome`, `npm run dev` in the background, screenshot
+at 1280×800 light and 375×812 dark. One new trap worth flagging for future road/POI-layer
+verification: a first pass checking whether the new Via Egnatia stations rendered came back with
+`queryRenderedFeatures`/`querySourceFeatures` both reporting 0 — looked like a real bug (or a
+data problem) before checking `getLayoutProperty('road-stations', 'visibility')` and finding
+`"none"`. The road-stations layer is a normal thematic overlay, default OFF per invariant 0, same
+as every other overlay — toggling it on via the Layers panel immediately showed 26 of the new
+points in view. Don't mistake "a togglable layer's default OFF state" for "the data didn't load."
+
+### Next shift should pick up
+
+- **Board / Track B:** two full 1 `add` : 2 `deepen` : 1 `polish` cycles are now closed back to
+  back (Shift 22, then this one). The next run should start a fresh cycle with the topmost `add`
+  in priority order — check the board fresh rather than trusting this note, since the Mac
+  editorial pass and other cloud shifts push independently and the top of the queue moves. Watch
+  for `[12-FIX-3]` duplicate-pantheon (added by another worker mid-this-shift): two pins for one
+  building, needs a retire-with-redirect decision since `/place/pantheon_rome` is a generated
+  page, not a silent delete. `[08-P1-6]` baalbek-dating also opened mid-shift and is a quick
+  `verify`.
+- **Track A:** `[09-P0-1]` ancient-sources remains standing at 82/230 open — expect a continued
+  low hit rate (this run's batch found real citations for only 3, after extensive per-theme
+  search). `[06-P0-2]` curate-buildings has real headroom: 37 of the 40 sites still have zero
+  curated content (Ostia, Pompeii, Herculaneum done). Via Egnatia is now shipped; the brief's own
+  road queue continues with Via Domitia, Via Augusta, Via Traiana Nova, Via Agrippa next.
+- **General:** the guided-tour player (`app/TourPlayer.tsx`) is a new, real UI surface — if a
+  future shift adds POIs/road stations/events that a tour references by id, double-check the
+  referenced id still resolves (the tour data in `app/tours.ts` is just a list of ids against
+  four separate geojson files; nothing enforces referential integrity at build time). The
+  panel-overlap bug this shift found and fixed (`minimizeTourPanel`) is a pattern worth
+  remembering for any future new panel sharing the left-side screen slot with Place details.
+
+---
+
 ## Shift 22 — 2026-08-16 (this shift's own prompt claimed "Shift 3 of four")
 
 **Same stale-numbering mismatch every shift since Shift 13 has flagged** — SHIFT_LOG was already 21 real shifts deep at session start, so this entry continues as Shift 22.
