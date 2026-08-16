@@ -7,7 +7,7 @@ import { applyAllLayers } from "./useLayers";
 import { selectPoi, clearPoi, getSelectedPoi, subscribeSelectedPoi } from "./usePoiPanel";
 import { categoryColorMatchPairs, DEFAULT_COLOR } from "./poiCategories";
 import { ostiaEntry } from "./ostiaDescriptions";
-import { SITE_META } from "./sites";
+import { SITE_META, SITES } from "./sites";
 
 // Palette — light + dark variants. Both palettes are calibrated so that the sea/land/roads/labels
 // stay legible at every zoom and so ancient-sea and modern-sea read as the same water tone.
@@ -442,28 +442,70 @@ export default function Map() {
         });
         kick();
 
-        // Phase 5: Ostia Antica street-level detail (1,266 building outlines + 251 park paths).
-        // Only visible at zoom 13+ so it doesn't pollute regional views.
-        const [ostiaBuildings, ostiaStreets] = await Promise.all([
-          fetch("/data/sites_buildings.geojson").then((r) => r.json()),
-          fetch("/data/sites_streets.geojson").then((r) => r.json()),
-        ]);
-        if (cancelled || !map) return;
-
+        // Phase 5: street-level detail (building outlines + park paths) for the 40 curated
+        // sites. Each site's data now lives in its own pair of files under public/data/sites/
+        // (public/data/sites_buildings.geojson and sites_streets.geojson are the ~27MB *merged*
+        // pipeline source of truth research/italia_batch.py writes to — `npm run
+        // split-site-data` regenerates the per-site pair from them; see [11-P0-1] in BOARD.md).
+        // Sources start empty and are filled in only for sites the user actually visits, instead
+        // of downloading and parsing all 40 sites on every cold load.
+        const emptyFC = { type: "FeatureCollection" as const, features: [] as any[] };
         map.addSource("ostia-buildings", {
           type: "geojson",
           maxzoom: 18,
           buffer: 128,
           tolerance: 0.25,
-          data: ostiaBuildings,
+          data: emptyFC,
         });
         map.addSource("ostia-streets", {
           type: "geojson",
           maxzoom: 18,
           buffer: 128,
           tolerance: 0.25,
-          data: ostiaStreets,
+          data: emptyFC,
         });
+
+        const loadedSiteSlugs = new Set<string>();
+        const siteBuildingsData: { type: "FeatureCollection"; features: any[] } = { type: "FeatureCollection", features: [] };
+        const siteStreetsData: { type: "FeatureCollection"; features: any[] } = { type: "FeatureCollection", features: [] };
+        const loadSiteDetail = async (slug: string) => {
+          if (loadedSiteSlugs.has(slug) || cancelled || !map) return;
+          loadedSiteSlugs.add(slug);
+          try {
+            const [b, s] = await Promise.all([
+              fetch(`/data/sites/${slug}_buildings.geojson`).then((r) => (r.ok ? r.json() : null)),
+              fetch(`/data/sites/${slug}_streets.geojson`).then((r) => (r.ok ? r.json() : null)),
+            ]);
+            if (cancelled || !map) return;
+            if (b?.features) siteBuildingsData.features.push(...b.features);
+            if (s?.features) siteStreetsData.features.push(...s.features);
+            const bSrc = map.getSource("ostia-buildings") as maplibregl.GeoJSONSource | undefined;
+            const sSrc = map.getSource("ostia-streets") as maplibregl.GeoJSONSource | undefined;
+            bSrc?.setData(siteBuildingsData as any);
+            sSrc?.setData(siteStreetsData as any);
+          } catch {
+            loadedSiteSlugs.delete(slug); // allow a retry on the next visit if the fetch failed
+          }
+        };
+        // Called from the Explore panel's jump-to-site action (flyTo lands here before moveend
+        // settles, so a direct call avoids a visible pop-in delay), and self-triggers below.
+        (window as any).__loadSiteDetail = loadSiteDetail;
+
+        // A manual pan/zoom, a deep link, or a search result can land inside a site's detail
+        // zone without going through the Explore panel — check the camera against every site's
+        // known center on every moveend and lazy-load anything now close enough to be visible.
+        const checkSitesInView = () => {
+          if (!map || map.getZoom() < 11.5) return;
+          const c = map.getCenter();
+          const latRad = (c.lat * Math.PI) / 180;
+          for (const s of SITES) {
+            const dLng = (c.lng - s.center[0]) * Math.cos(latRad);
+            const dLat = c.lat - s.center[1];
+            if (Math.sqrt(dLng * dLng + dLat * dLat) < 0.08) loadSiteDetail(s.slug);
+          }
+        };
+        map.on("moveend", checkSitesInView);
+        checkSitesInView();
 
         // Street/path outlines inside the park
         map.addLayer({

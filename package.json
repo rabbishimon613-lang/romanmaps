@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "validate": "node scripts/validate.mjs",
+    "split-site-data": "node scripts/split-site-data.mjs",
     "postinstall": "git config core.hooksPath .githooks 2>/dev/null || true"
   },
   "dependencies": {

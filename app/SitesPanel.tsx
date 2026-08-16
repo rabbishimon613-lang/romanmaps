@@ -33,6 +33,10 @@ export default function SitesPanel({ open, onClose }: { open: boolean; onClose: 
     if (!s) return;
     const map = (window as any).__map as MLMap | undefined;
     if (map) map.flyTo({ center: s.center, zoom: s.zoom, duration: 1400 });
+    // Fetch this site's building/street detail now rather than waiting for flyTo's moveend —
+    // the two run in parallel, so detail is ready by the time the camera settles. See [11-P0-1].
+    const loadSiteDetail = (window as any).__loadSiteDetail as ((slug: string) => void) | undefined;
+    loadSiteDetail?.(slug);
   };
 
   return (
