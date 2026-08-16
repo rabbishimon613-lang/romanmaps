@@ -133,9 +133,11 @@ to prevent. Building locally to *test* your own work is expected and fine.
 
 - [ ] `[07-P1-1]` **`travel-time`** `add` — ORBIS-style journey calculator over the existing
       road + sea network. Highest-impact single feature in the backlog.
-- [x] `[07-P0-2]` **`category-life-writing`** `deepen` — Done 2026-08-16. All **50** POI
+- [x] `[07-P0-2]` **`category-life-writing`** `deepen` — Done 2026-08-16. All POI
       categories written (the report estimated ~20), 116–130 words each, present tense, in
-      `app/categoryLife.ts`; renders as "What happened here" on every card. Covers 448/448 POIs.
+      `app/categoryLife.ts`; renders as "What happened here" on every card. Covered 448/448 POIs
+      at ship time; cloud shift 2 added 2 more categories (`ludus`, `sarcophagus_workshop`) the
+      same day and kept coverage at 100% — standing task, re-check the count on future adds.
 - [ ] `[03-P1-4]` **`nearby-related`** `polish` — Six related-place cards on every card and page.
 - [ ] `[02-P0-2]` **`coastline`** `polish` — Coastline stroke over the sea mask.
 - [ ] `[02-P0-3]` **`road-weights`** `polish` — Raise road weights/opacity at low zoom; add
@@ -219,9 +221,20 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - 2026-08-16 · `[03-FIX-1]` notes-truncation · cloud shift 2. Deleted the 280-char/2-sentence
   hard cut in `PlaceDetails.tsx`; audited and rewrote the 24 `pois.geojson` fields the cut was
   hiding shift-scholar voice inside. Verified in a real browser, both themes, both viewports.
+- 2026-08-16 · `[12-FIX-1]` stringified-props-audit (closing the reopened half) · cloud shift 2.
+  Audited every `e.features`/`queryRenderedFeatures` call site and every `sources`-reading
+  component; no other live instance of the bug shape found. Closed rather than left open.
+- 2026-08-16 · SHIFT_BRIEF axes 9b/9d/9e/5c (no board ticket ID — brief axis work, board had
+  nothing unclaimed that fit) · cloud shift 2. 19 new `pois.geojson` POIs (gladiator schools,
+  circuses, amphitheatres, sarcophagus workshops) plus three new thematic files — cuisine
+  regions (7), death ritual regions (5), ethnic & cultural pockets (15, first content on axis
+  5c) — all wired into `useLayers.ts`/`Map.tsx`, defaulting OFF. Also fixed 3 same-category
+  exact-coordinate marker stacks (Brigetio, Tapae, Bedriacum) found while auditing for the
+  merge-themes backlog.
 
-**Ratio state after this run:** 0 `add` · 2 `deepen` · 1 `polish`-shaped `fix` (+1 earlier
-off-ratio `fix`). **The next run owes an `add`.**
+**Ratio state after this run:** 1 `add` (axes 9b/9d/9e/5c) · 2 `deepen` · 1 `polish`-shaped `fix`
+(+2 more off-ratio `fix`). **The next run owes a `deepen` and a `polish`** — `[15-P0-1]`'s
+Playwright workaround below applies to `polish` tickets same as it did for this run's `fix`.
 
 **Note on `[15-P0-1]` for future runs:** the visual gate is only unreachable from the *Mac-side
 unattended editorial routine*, which has no way to launch a dev server or a browser. A cloud
