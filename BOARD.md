@@ -251,8 +251,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[06-P2-6]` **`priority-cities`** `add` — Alexandria, Carthage, Antioch, Londinium,
       Lugdunum, Tarraco, Pergamon, Caesarea Maritima before further Italian secondary towns.
 - [ ] `[08-P2-7]` **`ancient-lakes`** `add` — Fucinus, Copais, Karla and the rest.
-- [ ] `[15-P1-4]` **`metrics`** `polish` — `METRICS.md`: depth %, coverage, LCP, validator
-      warnings, recorded daily.
+- [~] `[15-P1-4]` **`metrics`** `polish` — claimed by mac editorial pass, 2026-08-16 09:34.
+      `METRICS.md`: depth %, coverage, LCP, validator warnings, recorded daily.
 
 ---
 
