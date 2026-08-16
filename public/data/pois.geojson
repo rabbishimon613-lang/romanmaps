@@ -387,7 +387,15 @@
      "https://en.wikipedia.org/wiki/Regia",
      "https://www.digitalaugustanrome.org/records/regia/"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Ovid",
+      "work": "Fasti",
+      "ref": "6.263-264",
+      "note": "Ovid names the Regia directly, describing the small space now holding Vesta's atrium as once having been the great palace (regia) of long-haired King Numa."
+     }
+    ]
    }
   },
   {
@@ -2464,7 +2472,15 @@
      "https://en.wikipedia.org/wiki/Circus_of_Antioch",
      "https://en.wikipedia.org/wiki/115_Antioch_earthquake"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Cassius Dio",
+      "work": "Roman History",
+      "ref": "68.25",
+      "note": "Describes how Trajan, present in Antioch during the catastrophic earthquake of December 115 CE, escaped his lodgings and then lived out of doors in the city's hippodrome (circus) for several days as aftershocks continued."
+     }
+    ]
    }
   },
   {
@@ -3122,7 +3138,15 @@
      "https://en.wikipedia.org/wiki/Legio_I_Minervia",
      "https://www.livius.org/articles/legion/legio-i-minervia/ (cross-referenced via search synthesis)"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Tacitus",
+      "work": "Histories",
+      "ref": "4.20",
+      "note": "Tacitus describes Bonna as a legionary camp fought over during the Batavian revolt of 69-70 CE, recounting the clash there between Civilis's forces and Roman troops."
+     }
+    ]
    }
   },
   {
@@ -3149,7 +3173,15 @@
      "https://en.wikipedia.org/wiki/Novae_(fortress)",
      "https://canabaenovae.wordpress.com/novae/legio-i-italica/"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Procopius",
+      "work": "Buildings (De Aedificiis)",
+      "ref": "4.6",
+      "note": "Procopius lists Novae among the Danube-line fortresses in Moesia that Justinian's engineers repaired and strengthened."
+     }
+    ]
    }
   },
   {
@@ -3176,7 +3208,15 @@
      "https://military-history.fandom.com/wiki/Legio_II_Adiutrix",
      "https://www.ancient-history-sites.com/sites/aquincum/"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Ptolemy",
+      "work": "Geography",
+      "ref": "2.15",
+      "note": "Ptolemy's gazetteer of Pannonia Inferior lists Aquincum among the province's towns with coordinates — a bare place-name entry rather than a narrative description."
+     }
+    ]
    }
   },
   {
@@ -3203,7 +3243,15 @@
      "https://en.wikipedia.org/wiki/Isca_Augusta",
      "https://www.roman-britain.co.uk/places/isca_silurum/"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Antonine Itinerary",
+      "work": "Antonine Itinerary",
+      "ref": "Iter XIV",
+      "note": "Records Isca (Legio II Augusta's fortress at Caerleon) as a station on several road routes through Roman Britain, under the name Isca Leg. II Aug."
+     }
+    ]
    }
   },
   {
@@ -3341,7 +3389,15 @@
      "https://en.wikipedia.org/wiki/Legio_IV_Flavia_Felix",
      "https://military-history.fandom.com/wiki/Legio_IV_Flavia_Felix"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Priscus of Panium",
+      "work": "History (Fragments)",
+      "ref": "fragment on the 441 CE Hunnic invasion",
+      "note": "Priscus, a 5th-century Byzantine historian, names Singidunum among the Danube cities sacked by Attila's Huns in 441 CE, alongside Viminacium and Margus — a genuine literary description, though written centuries after 117 CE."
+     }
+    ]
    }
   },
   {
@@ -3395,7 +3451,15 @@
      "https://en.wikipedia.org/wiki/Troesmis",
      "https://www.livius.org/articles/legion/legio-v-macedonica/ (cross-referenced via search synthesis)"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Ptolemy",
+      "work": "Geography",
+      "ref": "3.10.5",
+      "note": "Ptolemy's gazetteer of Moesia Inferior lists Troesmis among the region's towns with coordinates — a bare place-name entry."
+     }
+    ]
    }
   },
   {
@@ -3450,7 +3514,15 @@
      "https://www.roemercohorte.de/en/history/legio-vi-victrix",
      "https://en.wikipedia.org/wiki/Vetera"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Tacitus",
+      "work": "Histories",
+      "ref": "4.21-30",
+      "note": "Tacitus gives an extended narrative of the siege of the legionary camp at Vetera during the Batavian revolt, covering Civilis's blockade, the failed relief efforts, and the garrison's eventual surrender."
+     }
+    ]
    }
   },
   {
@@ -3477,7 +3549,15 @@
      "https://en.wikipedia.org/wiki/Legio_VII_Claudia",
      "https://en.wikipedia.org/wiki/Viminacium"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Priscus of Panium",
+      "work": "History (Fragments)",
+      "ref": "fragment on the 441 CE Hunnic invasion",
+      "note": "Priscus describes the Huns under Attila destroying Viminacium in 441 CE, naming the city directly among the Danube settlements sacked — written centuries after 117 CE."
+     }
+    ]
    }
   },
   {
@@ -3504,7 +3584,15 @@
      "https://en.wikipedia.org/wiki/Argentoratum",
      "https://www.livius.org/articles/legion/legio-viii-augusta/ (cross-referenced via search synthesis)"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Ammianus Marcellinus",
+      "work": "Res Gestae",
+      "ref": "16.12",
+      "note": "Ammianus gives a detailed narrative of the 357 CE Battle of Argentoratum (Strasbourg) between Julian's Roman army and the Alamanni, fought at this fortress site."
+     }
+    ]
    }
   },
   {
@@ -3594,7 +3682,15 @@
      "https://en.wikipedia.org/wiki/Legio_X_Gemina",
      "https://www.livius.org/articles/place/vindobona-vienna/ (cross-referenced via search synthesis)"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Aurelius Victor",
+      "work": "De Caesaribus",
+      "ref": "16.12",
+      "note": "Aurelius Victor states that Marcus Aurelius died at Vindobona in 180 CE — though other ancient authors instead give Sirmium, so the site of his death is itself disputed among ancient sources."
+     }
+    ]
    }
   },
   {
@@ -3621,7 +3717,15 @@
      "https://en.wikipedia.org/wiki/Legio_XI_Claudia",
      "https://www.livius.org/articles/place/durostorum-silistra/ (cross-referenced via search synthesis)"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Ammianus Marcellinus",
+      "work": "Res Gestae",
+      "ref": "22.8.42",
+      "note": "Ammianus names Durostorum in his geographic survey of the lower Danube/Black Sea region; Ptolemy's Geography also lists the town among Moesia Inferior's settlements."
+     }
+    ]
    }
   },
   {
@@ -3648,7 +3752,15 @@
      "https://pleiades.stoa.org/places/629040",
      "https://en.wikipedia.org/wiki/Melitene (via search synthesis)"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Tacitus",
+      "work": "Annals",
+      "ref": "Book 15",
+      "note": "Tacitus describes Corbulo massing allied cavalry, infantry, and legionary detachments at Melitene before crossing the Euphrates into Armenia during the Parthian War of the early 60s CE."
+     }
+    ]
    }
   },
   {
@@ -3675,7 +3787,15 @@
      "https://en.wikipedia.org/wiki/Apulum_(castra)",
      "https://www.livius.org/articles/legion/legio-xiii-gemina/ (cross-referenced via search synthesis)"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Ptolemy",
+      "work": "Geography",
+      "ref": "3 (Dacia)",
+      "note": "Ptolemy's gazetteer of Dacia lists Apulum among the province's towns with coordinates — a bare place-name entry."
+     }
+    ]
    }
   },
   {
@@ -3756,7 +3876,15 @@
      "https://en.wikipedia.org/wiki/Deva_Victrix",
      "https://www.heritagedaily.com/2020/04/deva-victrix-the-legionary-fortress/128052"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Ptolemy",
+      "work": "Geography",
+      "ref": "2.3",
+      "note": "Ptolemy's Geography lists Deva among the towns of the Cornovii and explicitly identifies it as the camp of Legio XX Victrix."
+     }
+    ]
    }
   },
   {
@@ -3810,7 +3938,15 @@
      "https://en.wikipedia.org/wiki/Legio_XXII_Primigenia",
      "http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0006%3Aentry%3Dmogontiacum"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Cassius Dio",
+      "work": "Roman History",
+      "ref": "67.11",
+      "note": "Cassius Dio recounts the revolt of Lucius Antonius Saturninus, governor of Germania Superior, who rose against Domitian at Mogontiacum in 89 CE with the two legions stationed there."
+     }
+    ]
    }
   },
   {
@@ -4271,7 +4407,15 @@
      "https://en.wikipedia.org/wiki/Coria_(Corbridge)",
      "https://www.english-heritage.org.uk/visit/places/corbridge-roman-town-hadrians-wall/history-and-stories/history/"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Antonine Itinerary",
+      "work": "Antonine Itinerary",
+      "ref": "Iter I",
+      "note": "Lists the station Corstopitum (Corbridge) on the road route through northern Britain, situated between Vindomora and Bremenium."
+     }
+    ]
    }
   },
   {
@@ -5055,7 +5199,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Baalbek%20-%20Temple%20of%20Jupiter.jpg?width=800",
-    "image_credit": "Temple of Jupiter, Baalbek · Wikimedia Commons"
+    "image_credit": "Temple of Jupiter, Baalbek · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Macrobius",
+      "work": "Saturnalia",
+      "ref": "1.23.10-20",
+      "note": "Macrobius gives a detailed description of the cult of Jupiter Optimus Maximus Heliopolitanus at Heliopolis (Baalbek), including the gold cult statue said to have been brought from Egypt, its iconography, and the statue-borne oracle by which the god's will was divined, citing a 114 CE prediction to Trajan."
+     }
+    ]
    }
   },
   {
@@ -5155,7 +5307,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dendera%20Temple%201.jpg?width=800",
-    "image_credit": "Temple of Hathor, Dendera · Wikimedia Commons"
+    "image_credit": "Temple of Hathor, Dendera · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Strabo",
+      "work": "Geography",
+      "ref": "17.1.45",
+      "note": "Strabo describes Tentyra (Dendera) and its people's ritual hostility toward crocodiles, unlike neighboring Egyptians, and notes that at Tentyra the goddess Aphrodite (Hathor) is worshipped, with a temple of Isis behind her shrine."
+     }
+    ]
    }
   },
   {
@@ -5183,7 +5343,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Edfu%20Temple.jpg?width=800",
-    "image_credit": "Temple of Horus, Edfu · Wikimedia Commons"
+    "image_credit": "Temple of Horus, Edfu · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Plutarch",
+      "work": "De Iside et Osiride (Moralia)",
+      "ref": "50",
+      "note": "Plutarch describes the custom at Apollonopolis (Edfu) of hunting and ritually killing crocodiles every year and casting the carcasses down opposite the temple, explained through the myth of Typhon (Set) escaping Horus in crocodile form."
+     }
+    ]
    }
   },
   {
@@ -6148,7 +6316,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chemtou_Marble_Quarry.JPG?width=800",
-    "image_credit": "Ancient marble quarry at Chemtou (Simitthus) · Wikimedia Commons (CC BY-SA)"
+    "image_credit": "Ancient marble quarry at Chemtou (Simitthus) · Wikimedia Commons (CC BY-SA)",
+    "ancient_sources": [
+     {
+      "author": "Pliny the Elder",
+      "work": "Natural History",
+      "ref": "36.49",
+      "note": "Pliny records that this Numidian yellow marble was first brought to Rome by the consular Lepidus, who used it for door-sills in his house — the earliest reference to the marble later called giallo antico that modern scholars trace to the Simitthus quarries."
+     }
+    ]
    }
   },
   {
@@ -6243,7 +6419,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marble_quarry_Thasos_island.jpg?width=800",
-    "image_credit": "Ancient marble quarry on Thasos island · Wikimedia Commons (CC BY-SA)"
+    "image_credit": "Ancient marble quarry on Thasos island · Wikimedia Commons (CC BY-SA)",
+    "ancient_sources": [
+     {
+      "author": "Pliny the Elder",
+      "work": "Natural History",
+      "ref": "36.5",
+      "note": "Pliny names Thasian marble, alongside Cycladic and Lesbian marble, among the stones ancient sculptors worked — naming Thasos as a marble source, though not describing the Aliki quarry face itself."
+     }
+    ]
    }
   },
   {
@@ -6338,7 +6522,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruins_at_Lixus_archaeological_site_19.jpg?width=800",
-    "image_credit": "Ruins at the Lixus archaeological site · Wikimedia Commons (CC BY-SA)"
+    "image_credit": "Ruins at the Lixus archaeological site · Wikimedia Commons (CC BY-SA)",
+    "ancient_sources": [
+     {
+      "author": "Strabo",
+      "work": "Geography",
+      "ref": "17.3.2-3",
+      "note": "Strabo describes Lixus as a Mauretanian town on the Atlantic coast opposite Gades, linking it to the legendary Garden of the Hesperides and the palace of Antaeus."
+     }
+    ]
    }
   },
   {
@@ -6492,7 +6684,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/F%C3%A1brica_de_salaz%C3%B3n_de_pescado_(Firmun_Lulium_Sexi)._Piletas.jpg?width=800",
-    "image_credit": "Fish-salting factory (Firmum Iulium Sexi) tanks at El Majuelo, Almunecar · Wikimedia Commons (CC BY-SA)"
+    "image_credit": "Fish-salting factory (Firmum Iulium Sexi) tanks at El Majuelo, Almunecar · Wikimedia Commons (CC BY-SA)",
+    "ancient_sources": [
+     {
+      "author": "Strabo",
+      "work": "Geography",
+      "ref": "3.4.2",
+      "note": "Strabo names Sexi among the Phoenician-founded coastal towns of southern Iberia noted for large fish-salting establishments."
+     }
+    ]
    }
   },
   {
@@ -6819,7 +7019,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Parc_national_de_Brijuni.jpg?width=800",
-    "image_credit": "Brijuni National Park, site of the Verige Bay Roman villa · Wikimedia Commons (CC BY-SA)"
+    "image_credit": "Brijuni National Park, site of the Verige Bay Roman villa · Wikimedia Commons (CC BY-SA)",
+    "ancient_sources": [
+     {
+      "author": "Pliny the Elder",
+      "work": "Natural History",
+      "ref": "3.129",
+      "note": "Pliny names the Insulae Pullariae (the Brijuni islands) among the notable islands off the Istrian coast near the mouth of the Timavus river."
+     }
+    ]
    }
   },
   {
@@ -8066,7 +8274,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Entrance_of_Luxor_Temple.JPG?width=800",
-    "image_credit": "Luxor Temple · Wikimedia Commons"
+    "image_credit": "Luxor Temple · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Strabo",
+      "work": "Geography",
+      "ref": "17.1.46",
+      "note": "Strabo, describing Thebes (Diospolis) which he visited under Roman rule, notes the city's ruins extended some eighty stadia and that several of its temples — damaged earlier by Cambyses — still stood alongside colossal statues and obelisks; a general eyewitness account of the great Theban temple precinct spanning the Luxor/Karnak area."
+     }
+    ]
    }
   },
   {
@@ -8132,7 +8348,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Kom_Ombo_at_dusk.JPG?width=800",
-    "image_credit": "Temple of Kom Ombo · Wikimedia Commons"
+    "image_credit": "Temple of Kom Ombo · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Juvenal",
+      "work": "Satires",
+      "ref": "15.33-92",
+      "note": "Juvenal's Fifteenth Satire recounts a real, violent religious riot between the neighboring Egyptian towns of Ombos (crocodile-worshippers) and Tentyra (crocodile-hunters), including a notorious act of cannibalism during the clash — cited as an eyewitness-adjacent account of the crocodile cult centered on this temple."
+     }
+    ]
    }
   },
   {
@@ -11775,7 +11999,15 @@
      "https://en.wikipedia.org/wiki/Ancient_Cotta",
      "https://link.springer.com/article/10.1007/s10437-025-09643-7"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Pliny the Elder",
+      "work": "Natural History",
+      "ref": "5.2",
+      "note": "In his geographic catalog of Mauretania beyond the Pillars of Hercules, Pliny names Lixus and Cotte (Cotta) as two towns on the Atlantic coast."
+     }
+    ]
    }
   },
   {
@@ -12221,7 +12453,15 @@
      "https://www.researchgate.net/publication/316628338_La_terra_sigillata_hispanica_en_el_Valle_Medio_del_Ebro_El_Centro_alfarero_de_Tritium_Magallum_Tricio-La_Rioja",
      "https://lugaresconhistoria.com/tricio-la-rioja"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Ptolemy",
+      "work": "Geography",
+      "ref": "2.6",
+      "note": "Ptolemy's gazetteer of the Berones lists Tritium (Tricio) among their towns — a bare place-name entry, distinct from a similarly named Tritium of the Autrigones that Pliny separately mentions (Natural History 3.27)."
+     }
+    ]
    }
   },
   {
@@ -12301,7 +12541,15 @@
     "sources": [
      "https://en.wikipedia.org/wiki/Tomb_of_Priscilla"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "ancient_sources": [
+     {
+      "author": "Statius",
+      "work": "Silvae",
+      "ref": "5.1",
+      "note": "This epicedion (funeral poem), addressed to the freedman Abascantus, mourns his wife Priscilla and describes the tomb built for her on the Via Appia, including its construction and adornment."
+     }
+    ]
    }
   },
   {
@@ -13007,7 +13255,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Absalom%27s_Tomb,_Valley_of_Jehoshaphat,_Mount_of_Olives,_Jerusalem.jpg?width=800",
-    "image_credit": "Historic photograph, Wikimedia Commons"
+    "image_credit": "Historic photograph, Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Josephus",
+      "work": "Jewish Antiquities",
+      "ref": "7.243",
+      "note": "Josephus records that Absalom built himself a marble pillar/monument in the King's Dale two stadia from Jerusalem, which by his own day (1st century CE) was popularly called 'Absalom's Hand' or monument, matching the traditional identification of this Kidron Valley tomb."
+     }
+    ]
    }
   },
   {
@@ -13524,7 +13780,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ludus_magnus_Rome_2006.jpg?width=800",
-    "image_credit": "Ludus Magnus, Rome, photographed 2006 by Jastrow - Wikimedia Commons"
+    "image_credit": "Ludus Magnus, Rome, photographed 2006 by Jastrow - Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Herodian",
+      "work": "History of the Roman Empire",
+      "ref": "1.15.8",
+      "note": "Recounts that the emperor Commodus, in his obsession with gladiatorial combat, wanted to abandon the imperial palace and live instead in the gladiators' barracks (the Ludus Magnus) next to the Colosseum."
+     }
+    ]
    }
   },
   {
@@ -13634,7 +13898,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Amphitheatre_of_Santa_Maria_Capua_Vetere_003.jpg?width=800",
-    "image_credit": "Amphitheatre of Santa Maria Capua Vetere, adjacent to the gladiator school site - Wikimedia Commons"
+    "image_credit": "Amphitheatre of Santa Maria Capua Vetere, adjacent to the gladiator school site - Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Plutarch",
+      "work": "Life of Crassus",
+      "ref": "8.1-4",
+      "note": "Describes the gladiatorial school at Capua run by Lentulus Batiatus, where about 70-78 gladiators including Spartacus broke out with kitchen implements in 73 BCE, sparking the Third Servile War."
+     }
+    ]
    }
   },
   {
@@ -13742,7 +14014,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Obelisco%20Vaticano%EF%BC%88Piazza%20San%20Pietro%EF%BC%89.JPG?width=800",
-    "image_credit": "Vatican Obelisk, originally the spina obelisk of the Circus of Nero - Wikimedia Commons"
+    "image_credit": "Vatican Obelisk, originally the spina obelisk of the Circus of Nero - Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Tacitus",
+      "work": "Annals",
+      "ref": "15.44",
+      "note": "Describes Nero's persecution of Christians after the Great Fire of 64 CE, including executions staged as spectacles in the circus on the Vatican hill where Nero's family had an estate (Pliny the Elder, Natural History 36.74, separately describes the obelisk erected there by Gaius and Nero)."
+     }
+    ]
    }
   },
   {
@@ -13798,7 +14078,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20amphitheatre%20of%20Carthage%20-%20inner%20view%20south.jpg?width=800",
-    "image_credit": "Roman amphitheatre of Carthage, interior view - Wikimedia Commons"
+    "image_credit": "Roman amphitheatre of Carthage, interior view - Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Anonymous (redactor, incorporating Perpetua's own prison diary)",
+      "work": "Passio Sanctarum Perpetuae et Felicitatis",
+      "ref": "18-21",
+      "note": "Early-3rd-century (c. 203 CE) martyrdom account that narrates in detail the execution of Perpetua, Felicity, and companions by beasts and sword in the amphitheatre of Carthage."
+     }
+    ]
    }
   },
   {
@@ -13912,7 +14200,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Verona%20Arena.JPG?width=800",
-    "image_credit": "Verona Arena - Wikimedia Commons"
+    "image_credit": "Verona Arena - Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Pliny the Younger",
+      "work": "Letters",
+      "ref": "6.34",
+      "note": "Pliny writes to Maximus praising him for giving a gladiatorial spectacle to the people of Verona as a memorial to his late wife, a Veronese woman; the letter does not name the amphitheater building itself but is about games staged at Verona."
+     }
+    ]
    }
   },
   {
