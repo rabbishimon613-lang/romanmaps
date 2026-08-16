@@ -33,7 +33,7 @@ queued for deletion under `[11-P0-3]`.
 | POIs in `pois.geojson` | 467 | the curated place canon |
 | Records in the 28 thematic files | 634 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
 | **Curated places, total** | **1,101** | |
-| Description of 60+ words | 357 · **76.4%** | measured on `notes`; 110 still thin |
+| Description of 60+ words | 386 · **82.7%** | measured on `notes`; 81 still thin |
 | Has an image | 251 · **53.7%** | |
 | Has an ancient source | 145 · **31.0%** | |
 | — of `confidence: high` POIs | 145 / 230 · **63.0%** | the target set for `[09-P0-1]` |
@@ -48,4 +48,4 @@ queued for deletion under `[11-P0-3]`.
 
 | Date | POIs | 60+ words | Image | Ancient source | Validator |
 |---|---:|---:|---:|---:|---:|
-| 2026-08-16 | 467 | 76.4% | 53.7% | 31.0% | 0 errors |
+| 2026-08-16 | 467 | 82.7% | 53.7% | 31.0% | 0 errors |
