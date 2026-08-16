@@ -89,7 +89,7 @@ export default function Ruler() {
         paint: {
           "circle-radius": 5,
           "circle-color": "#fff",
-          "circle-stroke-color": "#4285f4",
+          "circle-stroke-color": "var(--accent)",
           "circle-stroke-width": 2,
         },
       });
@@ -150,9 +150,13 @@ export default function Ruler() {
   };
 
   if (hideForSheet) return null;
+  // On phones the bottom-right corner is a single FAB, not a stack of five — the ruler is
+  // driven from the hamburger menu / long-press instead, but its readout card still shows.
+  const showFab = !isMobile;
 
   return (
     <>
+      {showFab && (
       <button
         title="Measure distance"
         onClick={() => (active ? deactivateRuler() : activateRuler())}
@@ -163,17 +167,18 @@ export default function Ruler() {
           width: 40,
           height: 40,
           borderRadius: 8,
-          background: active ? "#4285f4" : "#fff",
-          boxShadow: "0 1px 3px rgba(0,0,0,.2)",
+          background: active ? "var(--accent)" : "var(--surface)",
+          boxShadow: "var(--shadow-1)",
           display: "grid",
           placeItems: "center",
           zIndex: 5,
         }}
       >
-        <svg width="20" height="20" viewBox="0 0 24 24" fill={active ? "#fff" : "#5f6368"}>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill={active ? "var(--on-accent)" : "var(--icon)"}>
           <path d="M21.71 2.29a1 1 0 0 0-1.42 0L2.29 20.29a1 1 0 1 0 1.42 1.42L5 20.41l1.29 1.3a1 1 0 0 0 1.42-1.42L6.41 19l2-2 1.3 1.29a1 1 0 0 0 1.4-1.4L9.83 15.6l2-2 1.29 1.29a1 1 0 0 0 1.42-1.42L13.24 12.17l2-2 1.29 1.29a1 1 0 0 0 1.42-1.42L16.66 8.75l2-2 1.29 1.3a1 1 0 0 0 1.42-1.43L20.07 5.3l1.64-1.63a1 1 0 0 0 0-1.38z" />
         </svg>
       </button>
+      )}
 
       {active && (
         <div
@@ -183,13 +188,13 @@ export default function Ruler() {
             right: 10,
             width: 240,
             maxWidth: "calc(100vw - 20px)",
-            background: "#fff",
+            background: "var(--surface)",
             borderRadius: 8,
-            boxShadow: "0 1px 4px -1px rgba(0,0,0,.3), 0 3px 8px rgba(0,0,0,.15)",
+            boxShadow: "var(--shadow-2)",
             zIndex: 6,
             padding: "12px 14px",
             fontSize: 13,
-            color: "#202124",
+            color: "var(--text)",
           }}
         >
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
@@ -199,19 +204,19 @@ export default function Ruler() {
               onClick={() => deactivateRuler()}
               style={{ width: 24, height: 24, display: "grid", placeItems: "center", borderRadius: 999 }}
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="#5f6368">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--icon)">
                 <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
               </svg>
             </button>
           </div>
 
           {points.length === 0 ? (
-            <p style={{ color: "#5f6368", marginTop: 8 }}>Click points on the map to measure. Right-click or Esc to finish.</p>
+            <p style={{ color: "var(--text-2)", marginTop: 8 }}>Click points on the map to measure. Right-click or Esc to finish.</p>
           ) : (
             <>
               <div style={{ marginTop: 10, fontSize: 20, fontWeight: 600 }}>{formatDistance(total, units)}</div>
               {segments.length > 1 && (
-                <div style={{ marginTop: 6, color: "#5f6368", maxHeight: 96, overflowY: "auto" }}>
+                <div style={{ marginTop: 6, color: "var(--text-2)", maxHeight: 96, overflowY: "auto" }}>
                   {segments.map((s, i) => (
                     <div key={i} style={{ display: "flex", justifyContent: "space-between" }}>
                       <span>Leg {i + 1}</span>
@@ -227,8 +232,8 @@ export default function Ruler() {
                     flex: 1,
                     height: 32,
                     borderRadius: 6,
-                    background: "#f1f3f4",
-                    color: "#3c4043",
+                    background: "var(--surface-2)",
+                    color: "var(--text-strong)",
                     fontSize: 12,
                     fontWeight: 500,
                   }}
@@ -246,8 +251,8 @@ export default function Ruler() {
                     flex: 1,
                     height: 32,
                     borderRadius: 6,
-                    background: "#f1f3f4",
-                    color: "#3c4043",
+                    background: "var(--surface-2)",
+                    color: "var(--text-strong)",
                     fontSize: 12,
                     fontWeight: 500,
                   }}

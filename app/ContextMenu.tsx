@@ -157,7 +157,7 @@ export default function ContextMenu() {
     const places = await loadPlaces();
     const nearest = nearestPlace(places, point.lng, point.lat);
     const nearestLine = nearest
-      ? `<div style="color:#5f6368; font-size:12px; margin-top:4px;">Nearest known place: ${escapeHtml(
+      ? `<div style="color:var(--text-2); font-size:12px; margin-top:4px;">Nearest known place: ${escapeHtml(
           nearest.place.latin || nearest.place.modern || "Unknown",
         )} (${nearest.km < 10 ? nearest.km.toFixed(1) : Math.round(nearest.km)} km away)</div>`
       : "";
@@ -175,7 +175,7 @@ export default function ContextMenu() {
     const popup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 28 })
       .setLngLat([point.lng, point.lat])
       .setHTML(
-        `<div style="font: 13px Roboto, sans-serif; color: #202124; min-width: 160px;">
+        `<div style="font: 13px Roboto, sans-serif; color: var(--text); min-width: 160px;">
            <div style="font-weight: 600;">${point.lat.toFixed(4)}, ${point.lng.toFixed(4)}</div>
            ${nearestLine}
          </div>`,
@@ -211,9 +211,9 @@ export default function ContextMenu() {
         left,
         top,
         zIndex: 10,
-        background: "#fff",
+        background: "var(--surface)",
         borderRadius: 8,
-        boxShadow: "0 1px 4px -1px rgba(0,0,0,.3), 0 3px 8px rgba(0,0,0,.15)",
+        boxShadow: "var(--shadow-2)",
         padding: "6px 0",
         minWidth: 220,
         transform: "translate(-6px, -6px)",
@@ -249,7 +249,7 @@ function MenuItem({
         textAlign: "left",
         padding: "9px 16px",
         fontSize: 13,
-        color: disabled ? "#9aa0a6" : "#3c4043",
+        color: disabled ? "var(--text-3)" : "var(--text-strong)",
         background: "transparent",
         cursor: disabled ? "default" : "pointer",
       }}

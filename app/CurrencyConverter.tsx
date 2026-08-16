@@ -72,7 +72,7 @@ export default function CurrencyConverter() {
   };
 
   return (
-    <div style={{ borderTop: "1px solid #e8eaed" }}>
+    <div style={{ borderTop: "1px solid var(--divider)" }}>
       <button
         onClick={() => setExpanded((v) => !v)}
         style={{
@@ -83,7 +83,7 @@ export default function CurrencyConverter() {
           padding: "10px 16px",
           fontSize: 13,
           fontWeight: 600,
-          color: "#3c4043",
+          color: "var(--text-strong)",
         }}
       >
         Roman currency
@@ -91,7 +91,7 @@ export default function CurrencyConverter() {
           width="16"
           height="16"
           viewBox="0 0 24 24"
-          fill="#5f6368"
+          fill="var(--icon)"
           style={{ transform: expanded ? "rotate(180deg)" : "none", transition: "transform 120ms" }}
         >
           <path d="M7 10l5 5 5-5z" />
@@ -100,7 +100,7 @@ export default function CurrencyConverter() {
 
       {expanded && (
         <div style={{ padding: "0 16px 12px" }}>
-          <div style={{ fontSize: 11, color: "#5f6368", marginBottom: 10 }}>
+          <div style={{ fontSize: 11, color: "var(--text-2)", marginBottom: 10 }}>
             1 aureus = 25 denarii = 100 sestertii = 400 asses
           </div>
 
@@ -114,10 +114,10 @@ export default function CurrencyConverter() {
                 width: 70,
                 height: 32,
                 borderRadius: 6,
-                border: "1px solid #dadce0",
+                border: "1px solid var(--divider)",
                 padding: "0 8px",
                 fontSize: 13,
-                color: "#202124",
+                color: "var(--text)",
               }}
             />
             <select
@@ -127,11 +127,11 @@ export default function CurrencyConverter() {
                 flex: 1,
                 height: 32,
                 borderRadius: 6,
-                border: "1px solid #dadce0",
+                border: "1px solid var(--divider)",
                 padding: "0 6px",
                 fontSize: 13,
-                color: "#202124",
-                background: "#fff",
+                color: "var(--text)",
+                background: "var(--surface)",
               }}
             >
               {ORDER.map((u) => (
@@ -142,7 +142,7 @@ export default function CurrencyConverter() {
             </select>
           </div>
 
-          <div style={{ background: "#f8f9fa", borderRadius: 6, padding: "8px 10px", marginBottom: 8 }}>
+          <div style={{ background: "var(--surface-3)", borderRadius: 6, padding: "8px 10px", marginBottom: 8 }}>
             {ORDER.map((u) => {
               const val = inDenarii / IN_DENARII[u];
               const lbl = val === 1 ? LABELS[u].singular : LABELS[u].plural;
@@ -153,21 +153,21 @@ export default function CurrencyConverter() {
                     display: "flex",
                     justifyContent: "space-between",
                     fontSize: 13,
-                    color: "#202124",
+                    color: "var(--text)",
                     padding: "3px 0",
                   }}
                 >
-                  <span style={{ color: "#5f6368" }}>{lbl}</span>
+                  <span style={{ color: "var(--text-2)" }}>{lbl}</span>
                   <span style={{ fontWeight: 500 }}>{formatAmount(val)}</span>
                 </div>
               );
             })}
           </div>
 
-          <div style={{ fontSize: 13, color: "#1a73e8", fontWeight: 600, marginBottom: 4 }}>
+          <div style={{ fontSize: 13, color: "var(--accent)", fontWeight: 600, marginBottom: 4 }}>
             ≈ ${formatAmount(usdLow)}–${formatAmount(usdHigh)} today
           </div>
-          <div style={{ fontSize: 10.5, color: "#80868b", lineHeight: 1.4 }}>
+          <div style={{ fontSize: 10.5, color: "var(--text-3)", lineHeight: 1.4 }}>
             Rough estimate based on the purchasing power of wheat in 117 CE, when a modius (~6.5kg)
             cost about 3 denarii. Converting ancient money to modern dollars has no single right
             answer — treat this as a sense of scale, not an exchange rate.

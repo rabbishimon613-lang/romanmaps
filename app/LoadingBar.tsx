@@ -72,7 +72,7 @@ export default function LoadingBar() {
         style={{
           width: "40%",
           height: "100%",
-          background: "linear-gradient(90deg, transparent, #1a73e8, transparent)",
+          background: "linear-gradient(90deg, transparent, var(--accent), transparent)",
           animation: "rm-loading-bar 1.2s linear infinite",
         }}
       />

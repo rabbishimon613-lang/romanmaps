@@ -35,12 +35,17 @@ export type LayerGroupId =
   | "agriculture"
   | "housing";
 
-export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: string[] }[] = [
-  { id: "roads", label: "Roads", mapLayerIds: ["roads-main", "roads-secondary"] },
-  { id: "rivers", label: "Rivers & lakes", mapLayerIds: ["rivers", "lakes"] },
-  { id: "provinces", label: "Province borders", mapLayerIds: ["provinces-fill", "provinces-line"] },
-  { id: "places", label: "Cities & towns", mapLayerIds: ["places-dot", "places-label-major", "places-label-minor"] },
-  { id: "pois", label: "Landmarks", mapLayerIds: ["pois-dot", "pois-label"] },
+/** `base: true` marks the five groups that make up the map you see on first load — the
+ * equivalent of Google's default basemap. Everything else is a thematic overlay and starts
+ * OFF. Twenty-nine overlays all defaulting to on is how the map ended up as a plate of
+ * overlapping translucent polygons and a confetti of colored dots; a thematic layer is only
+ * readable one or two at a time. */
+export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: string[]; base?: boolean }[] = [
+  { id: "roads", label: "Roads", mapLayerIds: ["roads-main", "roads-secondary"], base: true },
+  { id: "rivers", label: "Rivers & lakes", mapLayerIds: ["rivers", "lakes"], base: true },
+  { id: "provinces", label: "Province borders", mapLayerIds: ["provinces-fill", "provinces-line"], base: true },
+  { id: "places", label: "Cities & towns", mapLayerIds: ["places-dot", "places-label-major", "places-label-minor"], base: true },
+  { id: "pois", label: "Landmarks", mapLayerIds: ["pois-dot", "pois-label"], base: true },
   { id: "road-stations", label: "Road stations", mapLayerIds: ["road-stations"] },
   // People/event markers are HTML overlays (app/PeopleMarkers.tsx), not native map layers — that
   // component reads this same group's boolean directly via useLayers() to decide whether to
@@ -73,10 +78,12 @@ export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: strin
 
 type LayerState = Record<LayerGroupId, boolean>;
 
-const STORAGE_KEY = "roman-maps:layers";
+// v2: the default flipped from "everything on" to "base map only", so the key is bumped —
+// anyone carrying a v1 blob would otherwise keep the twenty-nine-overlay version forever.
+const STORAGE_KEY = "roman-maps:layers:v2";
 
 function defaults(): LayerState {
-  return Object.fromEntries(LAYER_GROUPS.map((g) => [g.id, true])) as LayerState;
+  return Object.fromEntries(LAYER_GROUPS.map((g) => [g.id, !!g.base])) as LayerState;
 }
 
 function readStored(): LayerState {
@@ -148,6 +155,31 @@ export function toggleLayer(group: LayerGroupId) {
   const map = (window as any).__map as MLMap | undefined;
   if (map) applyGroupToMap(map, group, current[group]);
   listeners.forEach((l) => l());
+}
+
+/** Turn every non-base overlay back off in one go — the escape hatch when someone has switched
+ * on a dozen thematic layers and wants the plain map back. */
+export function clearOverlays() {
+  const state = getSnapshot();
+  const next = { ...state };
+  for (const g of LAYER_GROUPS) if (!g.base) next[g.id] = false;
+  current = next;
+  hydrated = true;
+  if (typeof window !== "undefined") {
+    try {
+      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(current));
+    } catch {
+      // ignore quota/private-mode errors
+    }
+  }
+  const map = (window as any).__map as MLMap | undefined;
+  if (map) for (const g of LAYER_GROUPS) if (!g.base) applyGroupToMap(map, g.id, false);
+  listeners.forEach((l) => l());
+}
+
+/** How many thematic overlays are currently on — drives the badge on the Layers button. */
+export function countActiveOverlays(state: LayerState): number {
+  return LAYER_GROUPS.filter((g) => !g.base && state[g.id]).length;
 }
 
 /** Persisted per-layer-group visibility, shared across every component that calls this hook. */

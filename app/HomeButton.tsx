@@ -27,18 +27,20 @@ export default function HomeButton() {
       style={{
         position: "absolute",
         right: 12,
-        bottom: 265,
-        width: 40,
-        height: 40,
-        borderRadius: 8,
-        background: "#fff",
-        boxShadow: "0 1px 3px rgba(0,0,0,.2)",
+        // On phones this is the ONE floating action button in the corner — the slot Google Maps
+        // gives to "recenter" — so it sits low, round and a size a thumb can actually hit.
+        bottom: isMobile ? "calc(24px + env(safe-area-inset-bottom))" : 265,
+        width: isMobile ? 48 : 40,
+        height: isMobile ? 48 : 40,
+        borderRadius: isMobile ? 999 : 8,
+        background: "var(--surface)",
+        boxShadow: isMobile ? "var(--shadow-2)" : "var(--shadow-1)",
         display: "grid",
         placeItems: "center",
         zIndex: 5,
       }}
     >
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="#5f6368">
+      <svg width={isMobile ? 24 : 20} height={isMobile ? 24 : 20} viewBox="0 0 24 24" fill="var(--icon)">
         <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
       </svg>
     </button>

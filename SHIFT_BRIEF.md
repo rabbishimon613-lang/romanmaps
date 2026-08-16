@@ -632,7 +632,34 @@ Store in `public/data/sports.geojson`.
 
 ---
 
-## The two invariants that override everything
+## The three invariants that override everything
+
+### 0. The map has to look like Google Maps
+
+This is the invariant that got broken hardest, so it goes first. The product promise is a
+Google-Maps-grade map of the Roman Empire — polished, quiet, easy to use. By 2026-08-15 the
+opening view was twenty-nine thematic overlays painted on top of each other, a white control
+column down the right edge of a dark map, and a full-width white credit band across the bottom
+of every phone screen. Twenty shifts each added a layer and each defaulted it ON, and no shift
+ever opened the site at phone size.
+
+Three rules follow, and they bind every future shift:
+
+1. **A new overlay defaults OFF.** Add it to `LAYER_GROUPS` in `app/useLayers.ts` *without*
+   `base: true`. Only the five base groups (roads, rivers, provinces, cities, landmarks) are on
+   at first load. A thematic layer is readable one or two at a time; the default view is the
+   base map, always. If a shift's new data is genuinely basemap-grade, say so in SHIFT_LOG and
+   argue it — don't just set the flag.
+2. **No hardcoded colors in chrome.** `app/globals.css` defines the light/dark token set
+   (`--surface`, `--text`, `--text-2`, `--icon`, `--accent`, `--divider`, `--shadow-1/2`, …).
+   UI components reference tokens; only the MapLibre paint properties in `Map.tsx` and the
+   category colors in `poiCategories.ts` carry literals. A literal `#fff` in a panel is a bug —
+   it means that panel is a white slab for every user on a dark phone.
+3. **Every shift that touches UI checks it at 375×812, in dark mode, before committing.** Not
+   a typecheck, not a desktop screenshot — a phone-width screenshot in both color schemes. And
+   count the controls: the phone gets a search pill, a layers button, one corner FAB, an epoch
+   pill and a credit chip. Anything beyond that goes in the hamburger menu, not on the map.
+
 
 ### 1. 117 CE snapshot rule
 
@@ -766,6 +793,7 @@ Don't commit one feature at a time. Batch: fetch 5 cities → one commit. Compil
 ## Guardrails
 
 - **117 CE snapshot** — see above.
+- **New overlays default OFF; chrome uses theme tokens; UI changes get a 375px dark-mode screenshot.** See invariant 0.
 - **Real data or don't include it.** Coord accuracy ≤100m for identified sites. For "somewhere in this valley" cases: `confidence: "low"`, note the tolerance in `notes`.
 - **Latin name first** in `name_latin`, modern in `name_english`. Both present.
 - **Small atomic commits.** One commit per logical batch (e.g., "Add 12 amphitheaters in Hispania" or "Via Egnatia — 34 mansiones").

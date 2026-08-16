@@ -7,9 +7,9 @@ import { colorForCategory } from "./poiCategories";
 import { useIsMobile } from "./useIsMobile";
 
 const CONFIDENCE_COLOR: Record<string, string> = {
-  high: "#188038",
-  medium: "#b06000",
-  low: "#5f6368",
+  high: "var(--ok)",
+  medium: "var(--warn-text)",
+  low: "var(--text-2)",
 };
 
 function formatYear(y: any): string {
@@ -187,7 +187,7 @@ export default function PlaceDetails() {
       inert={!open ? "" : undefined}
       style={{
         ...panelStyle,
-        background: "#fff",
+        background: "var(--surface)",
         boxShadow: "0 1px 4px -1px rgba(0,0,0,.3), 0 4px 16px rgba(0,0,0,.2)",
         zIndex: 7,
         display: "flex",
@@ -210,7 +210,7 @@ export default function PlaceDetails() {
             cursor: "grab",
           }}
         >
-          <div style={{ width: 36, height: 4, borderRadius: 999, background: "#dadce0" }} />
+          <div style={{ width: 36, height: 4, borderRadius: 999, background: "var(--divider)" }} />
         </div>
       )}
       {/* Hero band: an artist rendering / engraving / reconstruction (image_url on the POI).
@@ -276,28 +276,28 @@ export default function PlaceDetails() {
           background: "rgba(255,255,255,.95)",
           display: "grid",
           placeItems: "center",
-          boxShadow: "0 1px 3px rgba(0,0,0,.2)",
+          boxShadow: "var(--shadow-1)",
           zIndex: 1,
         }}
       >
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="#5f6368">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--icon)">
           <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
         </svg>
       </button>
 
       {/* Title block */}
       <div style={{ padding: "14px 48px 4px 16px" }}>
-        <div className="roman-label" style={{ fontSize: 22, fontWeight: 600, color: "#202124", lineHeight: 1.2 }}>
+        <div className="roman-label" style={{ fontSize: 22, fontWeight: 600, color: "var(--text)", lineHeight: 1.2 }}>
           {name}
         </div>
         {subtitle && (
-          <div style={{ fontSize: 13, color: "#5f6368", marginTop: 4 }}>{subtitle}</div>
+          <div style={{ fontSize: 13, color: "var(--text-2)", marginTop: 4 }}>{subtitle}</div>
         )}
         {category && (
-          <div style={{ fontSize: 14, color: "#5f6368", marginTop: 6, display: "flex", alignItems: "center", gap: 6 }}>
+          <div style={{ fontSize: 14, color: "var(--text-2)", marginTop: 6, display: "flex", alignItems: "center", gap: 6 }}>
             <span style={{ width: 6, height: 6, borderRadius: 999, background: color, display: "inline-block" }} />
             {titleCase(category)}
-            {p.province && <span style={{ color: "#c8ccd0" }}>·</span>}
+            {p.province && <span style={{ color: "var(--divider)" }}>·</span>}
             {p.province && <span>{p.province}</span>}
           </div>
         )}
@@ -325,7 +325,7 @@ export default function PlaceDetails() {
         />
       </div>
 
-      <div style={{ height: 1, background: "#e8eaed", margin: "4px 16px 8px" }} />
+      <div style={{ height: 1, background: "var(--divider)", margin: "4px 16px 8px" }} />
 
       <div style={{ overflowY: "auto", padding: "0 16px 20px", flex: 1 }}>
         {p.extant_117ce === false && (
@@ -333,8 +333,8 @@ export default function PlaceDetails() {
             style={{
               fontSize: 12,
               fontWeight: 500,
-              color: "#8a5a00",
-              background: "#fef7e0",
+              color: "var(--warn-text)",
+              background: "var(--warn-bg)",
               borderRadius: 8,
               padding: "8px 12px",
               marginBottom: 14,
@@ -343,7 +343,7 @@ export default function PlaceDetails() {
               gap: 8,
             }}
           >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#a06600"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--warn-text)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
             Not standing in 117 CE
           </div>
         )}
@@ -351,7 +351,7 @@ export default function PlaceDetails() {
         {/* Info rows — Google Maps' address / hours / phone list styling */}
         <InfoRow
           icon={
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="#5f6368">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--icon)">
               <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
             </svg>
           }
@@ -360,7 +360,7 @@ export default function PlaceDetails() {
         {locationLine && (
           <InfoRow
             icon={
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="#5f6368">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--icon)">
                 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
               </svg>
             }
@@ -371,7 +371,7 @@ export default function PlaceDetails() {
         {notes && (
           <div style={{ marginTop: 16 }}>
             <SectionHeader label="About" />
-            <p style={{ fontSize: 14, lineHeight: 1.55, color: "#202124", margin: 0 }}>{notes}</p>
+            <p style={{ fontSize: 14, lineHeight: 1.55, color: "var(--text)", margin: 0 }}>{notes}</p>
           </div>
         )}
 
@@ -380,9 +380,9 @@ export default function PlaceDetails() {
             <SectionHeader label="Sources" />
             <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 6 }}>
               {sources.map((s, i) => (
-                <li key={i} style={{ fontSize: 12.5, color: "#5f6368", lineHeight: 1.45 }}>
+                <li key={i} style={{ fontSize: 12.5, color: "var(--text-2)", lineHeight: 1.45 }}>
                   {/^https?:\/\//.test(s) ? (
-                    <a href={s} target="_blank" rel="noopener noreferrer" style={{ color: "#1a73e8", wordBreak: "break-all" }}>
+                    <a href={s} target="_blank" rel="noopener noreferrer" style={{ color: "var(--accent)", wordBreak: "break-all" }}>
                       {s}
                     </a>
                   ) : (
@@ -427,9 +427,9 @@ function PillButton({
         gap: 4,
         padding: "10px 4px",
         borderRadius: 10,
-        background: disabled ? "#f8f9fa" : "#fff",
-        color: disabled ? "#9aa0a6" : "#1a73e8",
-        border: `1px solid ${disabled ? "#f1f3f4" : "#dadce0"}`,
+        background: disabled ? "var(--surface-3)" : "var(--surface)",
+        color: disabled ? "var(--text-3)" : "var(--accent)",
+        border: `1px solid ${disabled ? "var(--divider)" : "var(--divider)"}`,
         cursor: disabled ? "not-allowed" : "pointer",
         fontSize: 11,
         fontWeight: 500,
@@ -444,9 +444,9 @@ function PillButton({
 
 function InfoRow({ icon, text }: { icon: React.ReactNode; text: string }) {
   return (
-    <div style={{ display: "flex", alignItems: "flex-start", gap: 12, padding: "10px 0", borderBottom: "1px solid #f1f3f4" }}>
+    <div style={{ display: "flex", alignItems: "flex-start", gap: 12, padding: "10px 0", borderBottom: "1px solid var(--divider)" }}>
       <div style={{ flexShrink: 0, width: 20, height: 20, marginTop: 1 }}>{icon}</div>
-      <div style={{ fontSize: 13.5, color: "#3c4043", lineHeight: 1.4 }}>{text}</div>
+      <div style={{ fontSize: 13.5, color: "var(--text-strong)", lineHeight: 1.4 }}>{text}</div>
     </div>
   );
 }
@@ -457,7 +457,7 @@ function SectionHeader({ label }: { label: string }) {
       style={{
         fontSize: 11,
         fontWeight: 700,
-        color: "#5f6368",
+        color: "var(--text-2)",
         textTransform: "uppercase",
         letterSpacing: 0.6,
         marginBottom: 8,

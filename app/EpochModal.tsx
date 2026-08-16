@@ -31,27 +31,27 @@ export default function EpochModal({ onClose }: { onClose: () => void }) {
       <div
         onClick={(e) => e.stopPropagation()}
         style={{
-          background: "#fff",
+          background: "var(--surface)",
           borderRadius: 12,
           boxShadow: "0 4px 24px rgba(0,0,0,.35)",
           width: "min(440px, 100%)",
           maxHeight: "85vh",
           overflowY: "auto",
           font: "14px Roboto, sans-serif",
-          color: "#3c4043",
+          color: "var(--text-strong)",
         }}
       >
         <div style={{ padding: "20px 24px 4px", display: "flex", alignItems: "flex-start", justifyContent: "space-between" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
             <span style={{ width: 10, height: 10, borderRadius: 999, background: "#b0431a" }} />
-            <h2 style={{ margin: 0, fontSize: 18, fontWeight: 600, color: "#202124" }}>Why 117 CE?</h2>
+            <h2 style={{ margin: 0, fontSize: 18, fontWeight: 600, color: "var(--text)" }}>Why 117 CE?</h2>
           </div>
           <button
             onClick={onClose}
             title="Close"
             style={{ width: 32, height: 32, borderRadius: 999, display: "grid", placeItems: "center", flexShrink: 0 }}
           >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="#5f6368">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--icon)">
               <path d="M18.3 5.71 12 12l6.3 6.29-1.41 1.42L10.59 13.4 4.3 19.7 2.88 18.3 9.17 12 2.88 5.71 4.3 4.3l6.29 6.28L16.89 4.3z" />
             </svg>
           </button>
@@ -74,7 +74,7 @@ export default function EpochModal({ onClose }: { onClose: () => void }) {
             on 117 CE, not before and not after. That discipline is what lets the map work as one
             coherent snapshot instead of a blur of centuries.
           </p>
-          <p style={{ margin: "8px 0", color: "#5f6368", fontSize: 12.5 }}>
+          <p style={{ margin: "8px 0", color: "var(--text-2)", fontSize: 12.5 }}>
             Sources: Cassius Dio, <em>Roman History</em> 68.33; <em>Historia Augusta</em>,{" "}
             <em>Hadrian</em> 4.7.
           </p>

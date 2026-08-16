@@ -2,12 +2,72 @@
 html, body, #__next { height: 100%; width: 100%; }
 body {
   font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: #202124;
-  background: #e8eaed;
+  color: var(--text);
+  background: var(--surface-3);
   -webkit-font-smoothing: antialiased;
 }
 button { font-family: inherit; cursor: pointer; border: 0; background: none; }
 input { font-family: inherit; }
+
+/* ── UI theme tokens ──────────────────────────────────────────────────────────
+   The basemap already follows prefers-color-scheme (see the LIGHT/DARK palettes in
+   Map.tsx). The chrome used to be hardcoded Google-light regardless, so on a phone
+   in dark mode you got white slabs stacked on a near-black map. These tokens are the
+   Google Maps neutral ramp in both modes; every chrome component references them
+   instead of literals. */
+:root {
+  --surface: #ffffff;
+  --surface-2: #f1f3f4;
+  --surface-3: #f8f9fa;
+  --divider: #dadce0;
+  --text: #202124;
+  --text-strong: #3c4043;
+  --text-2: #5f6368;
+  --text-3: #80868b;
+  --icon: #5f6368;
+  --accent: #1a73e8;
+  --accent-bg: #e8f0fe;
+  --accent-border: #d2e3fc;
+  --on-accent: #ffffff;
+  --ok: #188038;
+  --warn-text: #b06000;
+  --warn-bg: #fef7e0;
+  --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.2);
+  --shadow-2: 0 1px 4px -1px rgba(0, 0, 0, 0.3), 0 3px 8px rgba(0, 0, 0, 0.15);
+  --scrim: rgba(255, 255, 255, 0.9);
+  --overlay: rgba(32, 33, 36, 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #292a2d;
+    --surface-2: #3c4043;
+    --surface-3: #35363a;
+    --divider: #3c4043;
+    --text: #e8eaed;
+    --text-strong: #e8eaed;
+    --text-2: #9aa0a6;
+    --text-3: #9aa0a6;
+    --icon: #9aa0a6;
+    --accent: #8ab4f8;
+    --accent-bg: #37414f;
+    --accent-border: #45525f;
+    --on-accent: #202124;
+    --ok: #81c995;
+    --warn-text: #fdd663;
+    --warn-bg: #3a3524;
+    --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.5);
+    --shadow-2: 0 1px 4px -1px rgba(0, 0, 0, 0.6), 0 3px 8px rgba(0, 0, 0, 0.4);
+    --scrim: rgba(32, 33, 36, 0.85);
+    --overlay: rgba(0, 0, 0, 0.6);
+  }
+}
+
+/* Native controls (checkboxes, the search field's caret) follow the theme too — without
+   this a dark card gets bright white checkboxes. */
+:root { color-scheme: light; }
+@media (prefers-color-scheme: dark) { :root { color-scheme: dark; } }
+input[type="checkbox"] { accent-color: var(--accent); }
 
 /* Roman-inscription-style display serif for place-name headings — an open-source stand-in for
    Trajan Pro (see app/layout.tsx for the font load). Used sparingly: POI panel titles, site/legion
@@ -17,3 +77,17 @@ input { font-family: inherit; }
 /* MapLibre overrides — hide default attribution box a bit */
 .maplibregl-ctrl-attrib { font-size: 10px !important; }
 .maplibregl-ctrl-bottom-right { display: none; }
+
+/* Popups are MapLibre-owned DOM, so they can't take inline tokens from our components —
+   theme them here or they stay white cards floating on a dark basemap. */
+.maplibregl-popup-content {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+  border-radius: 8px !important;
+  box-shadow: var(--shadow-2) !important;
+}
+.maplibregl-popup-anchor-top .maplibregl-popup-tip { border-bottom-color: var(--surface) !important; }
+.maplibregl-popup-anchor-bottom .maplibregl-popup-tip { border-top-color: var(--surface) !important; }
+.maplibregl-popup-anchor-left .maplibregl-popup-tip { border-right-color: var(--surface) !important; }
+.maplibregl-popup-anchor-right .maplibregl-popup-tip { border-left-color: var(--surface) !important; }
+.maplibregl-popup-close-button { color: var(--text-2) !important; }

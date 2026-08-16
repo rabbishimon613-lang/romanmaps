@@ -58,6 +58,9 @@ export default function ZoomControl() {
   // viewport where this FAB stack lives — hide it while the sheet is open rather than let it
   // float on top, same fix applied to Ruler/Legend/the Layers button in Chrome.tsx.
   if (isMobile && poiOpen) return null;
+  // No +/- stack on phones — pinch is the gesture, and Google Maps has no zoom buttons on
+  // mobile either. Keeping them just made a white column down the right edge.
+  if (isMobile) return null;
 
   return (
     <div
@@ -67,8 +70,8 @@ export default function ZoomControl() {
         bottom: 32,
         width: 40,
         borderRadius: 8,
-        background: "#fff",
-        boxShadow: "0 1px 4px -1px rgba(0,0,0,.3), 0 3px 8px rgba(0,0,0,.15)",
+        background: "var(--surface)",
+        boxShadow: "var(--shadow-2)",
         overflow: "hidden",
         zIndex: 5,
       }}
@@ -87,11 +90,11 @@ export default function ZoomControl() {
           cursor: atMax ? "default" : "pointer",
         }}
       >
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3c4043" strokeWidth="2.2" strokeLinecap="round">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-strong)" strokeWidth="2.2" strokeLinecap="round">
           <path d="M12 5v14M5 12h14" />
         </svg>
       </button>
-      <div style={{ height: 1, background: "#e0e0e0" }} />
+      <div style={{ height: 1, background: "var(--divider)" }} />
       <button
         title="Zoom out"
         aria-label="Zoom out"
@@ -106,7 +109,7 @@ export default function ZoomControl() {
           cursor: atMin ? "default" : "pointer",
         }}
       >
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3c4043" strokeWidth="2.2" strokeLinecap="round">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-strong)" strokeWidth="2.2" strokeLinecap="round">
           <path d="M5 12h14" />
         </svg>
       </button>

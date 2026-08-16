@@ -15,6 +15,9 @@ export default function Legend() {
 
   // Hidden while the mobile Place details bottom sheet covers this corner of the screen.
   if (isMobile && poiOpen) return null;
+  // Folded into the Layers panel on phones (same swatches, same labels) rather than eating
+  // another slot in the FAB column.
+  if (isMobile) return null;
 
   return (
     <div style={{ position: "absolute", right: 12, bottom: 217, zIndex: 5 }}>
@@ -24,16 +27,16 @@ export default function Legend() {
             position: "absolute",
             right: 0,
             bottom: 48,
-            background: "#fff",
+            background: "var(--surface)",
             borderRadius: 8,
-            boxShadow: "0 1px 4px -1px rgba(0,0,0,.3), 0 3px 8px rgba(0,0,0,.15)",
+            boxShadow: "var(--shadow-2)",
             padding: "8px 0",
             width: 240,
             maxHeight: "60vh",
             overflowY: "auto",
           }}
         >
-          <div style={{ padding: "6px 16px 10px", fontSize: 13, fontWeight: 600, color: "#3c4043" }}>
+          <div style={{ padding: "6px 16px 10px", fontSize: 13, fontWeight: 600, color: "var(--text-strong)" }}>
             Landmarks
           </div>
           {CATEGORY_GROUPS.map((g) => (
@@ -45,7 +48,7 @@ export default function Legend() {
                 gap: 10,
                 padding: "5px 16px",
                 fontSize: 12.5,
-                color: "#3c4043",
+                color: "var(--text-strong)",
               }}
             >
               <span
@@ -55,7 +58,7 @@ export default function Legend() {
                   borderRadius: 999,
                   background: g.color,
                   flexShrink: 0,
-                  boxShadow: "0 0 0 1.5px #f4ead5, 0 0 0 2.5px rgba(0,0,0,.1)",
+                  boxShadow: "0 0 0 1.5px var(--surface), 0 0 0 2.5px rgba(0,0,0,.1)",
                 }}
               />
               {g.label}
@@ -70,13 +73,13 @@ export default function Legend() {
           width: 40,
           height: 40,
           borderRadius: 8,
-          background: open ? "#e8f0fe" : "#fff",
-          boxShadow: "0 1px 3px rgba(0,0,0,.2)",
+          background: open ? "var(--accent-bg)" : "var(--surface)",
+          boxShadow: "var(--shadow-1)",
           display: "grid",
           placeItems: "center",
         }}
       >
-        <svg width="20" height="20" viewBox="0 0 24 24" fill={open ? "#1a73e8" : "#5f6368"}>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill={open ? "var(--accent)" : "var(--icon)"}>
           <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" />
         </svg>
       </button>
