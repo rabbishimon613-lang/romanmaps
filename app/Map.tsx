@@ -8,6 +8,7 @@ import { selectPoi, clearPoi, getSelectedPoi, subscribeSelectedPoi } from "./use
 import { categoryColorMatchPairs, DEFAULT_COLOR } from "./poiCategories";
 import { ostiaEntry } from "./ostiaDescriptions";
 import { pompeiiEntry } from "./pompeiiDescriptions";
+import { herculaneumEntry } from "./herculaneumDescriptions";
 import { SITE_META, SITES } from "./sites";
 
 // Palette — light + dark variants. Both palettes are calibrated so that the sea/land/roads/labels
@@ -652,7 +653,13 @@ export default function Map() {
           // Strip Regio.Insula parenthetical for a cleaner display name
           const displayName = rawName.replace(/\s*\([^)]*\)\s*$/, "").trim() || rawName || `Building ${p.osm_id}`;
           const entry =
-            site === "ostia" ? ostiaEntry(rawName) : site === "pompeii" ? pompeiiEntry(rawName) : undefined;
+            site === "ostia"
+              ? ostiaEntry(rawName)
+              : site === "pompeii"
+                ? pompeiiEntry(rawName)
+                : site === "herculaneum"
+                  ? herculaneumEntry(rawName)
+                  : undefined;
           selectPoi(
             {
               id: `${site}-${p.osm_id}`,
