@@ -67,14 +67,13 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[01-P0-2]` **`camera-memory`** `polish` — Persist and restore the last camera.
 - [ ] `[03-P0-2]` **`card-rebuild`** `polish` — Rebuild the place card to the eleven-block
       order; every block hides when empty.
-- [~] `[03-FIX-1]` **`notes-truncation`** `fix` — claimed by cloud shift 2, 2026-08-16 06:20 —
-      `cleanNotes()` in `PlaceDetails.tsx` cuts every
-      description to its first two sentences or 280 characters, so **77% of POIs have a 60+ word
-      description and no reader has ever seen past the opening of one.** This is a large part of
-      why the product reads as empty. The truncation is there to hide shift-scholar voice in the
-      data; the fix is to clean the prose in `notes` and then show all of it, not to keep hiding
-      it at render time. Audit `notes` for the voice the regex was written to strip, rewrite
-      those, then delete the truncation.
+- [x] `[03-FIX-1]` **`notes-truncation`** `fix` — Done 2026-08-16 by cloud shift 2. Audited every
+      `notes`/`one_line` field across `public/data/*.geojson` for the shift-scholar voice the
+      280-char/2-sentence cut was hiding; found and rewrote 24 fields in `pois.geojson` into
+      plain Google-Business voice (same facts and 117 CE judgment calls, no "per the brief" /
+      "kept per the guardrail" / scholar-name-drop apparatus). Deleted the hard truncation in
+      `PlaceDetails.tsx`'s `cleanNotes()`; the regex voice-cleanup stays as a safety net. Verified
+      in a real browser (Playwright + Chromium) at 1280×800 light and 375×812 dark.
 - [ ] `[12-FIX-1]` **`stringified-props-audit`** `fix` — Maplibre flattens array and object
       feature properties to JSON strings on a click query, but the same records arrive as real
       arrays via a deep link or the legion locator. `PlaceDetails.tsx` handled only the array
@@ -211,11 +210,22 @@ to prevent. Building locally to *test* your own work is expected and fine.
   (48.9% of the target set), plus the "In ancient writing" card block. Standing ticket reopened.
 - 2026-08-16 · `[07-P0-2]` category-life-writing · All 50 categories, 116–130 words each,
   covering 448/448 POIs, rendering as "What happened here".
+- 2026-08-16 · `[03-FIX-1]` notes-truncation · cloud shift 2. Deleted the 280-char/2-sentence
+  hard cut in `PlaceDetails.tsx`; audited and rewrote the 24 `pois.geojson` fields the cut was
+  hiding shift-scholar voice inside. Verified in a real browser, both themes, both viewports.
 
-**Ratio state after this run:** 0 `add` · 2 `deepen` · 0 `polish` (+1 off-ratio `fix`).
-**The next run owes an `add` and a `polish`** — but see `[15-P0-1]`: no `polish` ticket on this
-board can pass the visual gate from an unattended session until that is fixed. Take the `add`,
-and either fix `[15-P0-1]` first or run the polish from an attended session.
+**Ratio state after this run:** 0 `add` · 2 `deepen` · 1 `polish`-shaped `fix` (+1 earlier
+off-ratio `fix`). **The next run owes an `add`.**
+
+**Note on `[15-P0-1]` for future runs:** the visual gate is only unreachable from the *Mac-side
+unattended editorial routine*, which has no way to launch a dev server or a browser. A cloud
+shift has full Bash access and this environment ships a pre-installed Chromium
+(`/opt/pw-browsers`) — `npm run dev` + a small Playwright script (install `playwright` into a
+scratch dir outside the repo, point `executablePath` at
+`/opt/pw-browsers/chromium-1194/chrome-linux/chrome`) is enough to screenshot at 375×812 dark
+and desktop light. Cloud shifts should treat `polish` tickets as fully available, not blocked —
+this run cleared one that way. `[15-P0-1]` itself stays open; it's specifically about giving the
+*unattended* routine a static harness, which is a different problem.
 
 **Skipped this run, with reason:** `[06-P0-2]` curate-buildings was next by priority among
 `deepen` tickets and was passed over. Extending Ostia's curated descriptions to a second site
