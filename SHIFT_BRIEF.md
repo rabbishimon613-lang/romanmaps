@@ -632,6 +632,23 @@ Store in `public/data/sports.geojson`.
 
 ---
 
+## There is a board now — read it before you pick anything
+
+`BOARD.md` in this repo is the prioritised work queue, built on 2026-08-16 from fifteen expert
+studies of the project in `research/reports/`. **Prefer a board ticket over an axis.** The axes
+below are still a valid source of work when the board has nothing that fits, but the board is
+where the known, argued, prioritised work lives — and its 1 `add` : 2 `deepen` : 1 `polish`
+ratio is there because twenty shifts of pure breadth is what produced a product its owner called
+empty.
+
+Two rules that bind every worker on this repo:
+
+- **Claim before you work.** Mark the ticket `[~]`, commit *only* BOARD.md, push. That push is
+  the claim. There are now four cloud shifts and a 09:30 Mac-side editorial pass on this repo;
+  the claim is the only thing keeping you off each other. Full protocol at the top of BOARD.md.
+- **Respect other workers' claims.** A `[~]` less than 24 hours old belongs to someone. Older
+  than that is stale — clear it and take it if you want it.
+
 ## The three invariants that override everything
 
 ### 0. The map has to look like Google Maps

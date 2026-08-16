@@ -4,6 +4,22 @@ The prioritised work queue. Every ticket traces to a report in `research/reports
 **This file is the daily editorial routine's only instruction set.** Shifts may also pull from
 it. Read `research/reports/15-editorial-operations.md` for why this exists.
 
+## Claiming — read this before touching anything
+
+Four cloud shifts work this repo around the clock, and a Mac-side editorial pass works it at
+09:30. Two workers on one ticket is wasted effort and a merge conflict, so **claiming is
+mandatory, and it happens before the work, not after**:
+
+1. `git pull --rebase` — the cloud shifts push straight to `origin`, and the local clone runs
+   behind by design.
+2. Change the ticket's `[ ]` to `[~]` and append ` — claimed by <worker>, <YYYY-MM-DD HH:MM>`.
+3. Commit **only BOARD.md** and push it immediately. That push is the claim.
+4. Now do the work. `git pull --rebase` again before the final push.
+5. On finish, mark `[x]`. If you ran out of time, set it back to `[ ]` with a note on what is
+   already done — never leave a `[~]` behind you.
+
+A `[~]` older than 24 hours is stale: clear it back to `[ ]` and take it if you want it.
+
 ## How to work this board
 
 1. Take the **topmost unblocked, unclaimed ticket** whose type fits the ratio below.
@@ -20,6 +36,11 @@ priority order breaks the ratio, skip to the next one that fits and note the ski
 **Gate on every ticket before commit:** screenshot at 375×812 dark **and** desktop light if the
 UI changed · data validator clean · any new layer defaults OFF · new card fields degrade when
 absent.
+
+**Who deploys:** nobody here. Commit and push with a clean tree; the 19:00 publisher is the only
+process on the Mac permitted to build and deploy, and it ships whatever changed that day. A
+Mac-side worker that runs its own production deploy is the collision the operating cycle exists
+to prevent. Building locally to *test* your own work is expected and fine.
 
 ---
 
