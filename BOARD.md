@@ -74,13 +74,19 @@ to prevent. Building locally to *test* your own work is expected and fine.
       "kept per the guardrail" / scholar-name-drop apparatus). Deleted the hard truncation in
       `PlaceDetails.tsx`'s `cleanNotes()`; the regex voice-cleanup stays as a safety net. Verified
       in a real browser (Playwright + Chromium) at 1280×800 light and 375×812 dark.
-- [ ] `[12-FIX-1]` **`stringified-props-audit`** `fix` — Maplibre flattens array and object
+- [x] `[12-FIX-1]` **`stringified-props-audit`** `fix` — Maplibre flattens array and object
       feature properties to JSON strings on a click query, but the same records arrive as real
       arrays via a deep link or the legion locator. `PlaceDetails.tsx` handled only the array
       case, so the Sources block silently rendered nothing on the normal map-click path. Fixed
-      there this run with an `asArray()` helper; the same bug shape is likely in `Map.tsx`'s
-      thematic-layer popups and anywhere else that reads `e.features[0].properties`. Audit all
-      of them.
+      there with an `asArray()` helper. **Audit completed 2026-08-16 by cloud shift 2**: grepped
+      every `e.features`/`queryRenderedFeatures` call site (`Map.tsx` only) and every place any
+      component reads a `sources`/`ancient_sources` property (`PlaceDetails.tsx`,
+      `PeopleMarkers.tsx`). `Map.tsx`'s ~25 thematic-layer hover popups never render an array
+      field — only strings (`name`, `notes`, `regions`, `category`) — so the bug shape can't
+      occur there. `PeopleMarkers.tsx`'s `Array.isArray(props.sources)` check is correct as
+      written: it builds markers from a direct `fetch()` of the geojson, never from a Maplibre
+      click query, so `props.sources` is always a real array on that path, never stringified.
+      No other live instance found — closing rather than leaving open on a hypothetical.
 - [ ] `[12-FIX-2]` **`brigetio-stacked-pins`** `fix` — `poi_fortress_i_adiutrix_brigetio` and
       `poi_fortress_xxx_ulpia_victrix_brigetio` sit on the identical coordinate, so one pin is
       permanently unreachable under the other. Both records are correct; the placement is not.
