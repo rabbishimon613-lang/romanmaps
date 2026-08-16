@@ -107,8 +107,17 @@ to prevent. Building locally to *test* your own work is expected and fine.
       replace any modern photograph showing modern infrastructure. Cotinae is the test case.
 - [ ] `[05-P0-1]` **`places-in-view-list`** `polish` — Accessible, keyboard-navigable list of
       places in the current viewport; doubles as the browse UI.
-- [~] `[10-P0-1]` **`tours`** `add` — claimed by cloud shift 4, 2026-08-16 15:35. Guided-tour
-      format + player + first three tours (Via Appia · A day in Ostia · What was new in 117).
+- [x] `[10-P0-1]` **`tours`** `add` — Done 2026-08-16 by cloud shift 4. New `app/tours.ts`
+      (54 stops), `app/useTour.ts` (shared panel state), `app/TourPlayer.tsx` (left-rail slide-in
+      on desktop, compact card on mobile). Three tours, every stop built from data already on the
+      map (pois.geojson, road_stations.geojson, events_117.geojson, people_117.geojson) rather
+      than new research: Via Appia (31 stops, Rome to Brundisium), A Day in Ostia (13 stops),
+      What Was New in 117 (12 stops, closing on Trajan's death and Hadrian's acclamation the same
+      day). Dashed route line + numbered markers draw on the map while a tour is active. Found and
+      fixed a real overlap bug before shipping — the tour panel and Place details panel share the
+      same left-side screen slot, so opening a stop's full card was rendering invisibly behind the
+      tour panel; added a minimize/resume mechanism. Verified with Playwright at 1280×800 light
+      and 375×812 dark, all three stop kinds, full 31-stop Via Appia run.
 - [x] `[14-P0-2]` **`place-pages`** `add` — Done 2026-08-16 by cloud shift 3. New
       `app/place/[slug]/page.tsx`, statically generated for all 467 `pois.geojson` records
       (`/site/[slug]`'s pattern extended — hero image + About/What-happened-here/In-ancient-
@@ -289,14 +298,17 @@ to prevent. Building locally to *test* your own work is expected and fine.
   `app/pompeiiDescriptions.ts`. Found and fixed a site-wide click-priority bug in the same pass
   (oversized boundary/district polygons were swallowing clicks meant for the building underneath)
   — see ticket note above.
+- 2026-08-16 · `[10-P0-1]` tours · cloud shift 4. Guided-tour format + player + first three tours
+  (Via Appia, A Day in Ostia, What Was New in 117), 54 stops total, every one built from data
+  already on the map. See ticket note above for the panel-overlap bug found and fixed in the
+  same pass.
 
 **Ratio state after this run:** cloud shift 3 shipped 1 `polish` (`[11-P0-1]` split-site-data),
 2 `deepen` (`[09-P0-1]` ancient-sources batch 2, `[06-P0-2]` curate-buildings/Pompeii), and 1
 `add` (`[14-P0-2]` place-pages) — a complete 1:2:1 cycle in one run — plus one off-ratio `fix`
 (`[12-FIX-2]`, found while auditing for the polish ticket) and a second, unplanned `fix` (the
-click-priority bug, found while verifying the second deepen ticket). **The next run starts a
-fresh cycle: topmost `add` first** (`[10-P0-1]` tours is next in priority order, per its own
-skip note above).
+click-priority bug, found while verifying the second deepen ticket). Cloud shift 4 opened a fresh
+cycle with `[10-P0-1]` tours (`add`) — see further down for how the rest of that cycle went.
 
 **Note on `[15-P0-1]` for future runs:** the visual gate is only unreachable from the *Mac-side
 unattended editorial routine*, which has no way to launch a dev server or a browser. A cloud
