@@ -54,8 +54,9 @@ to prevent. Building locally to *test* your own work is expected and fine.
       `tags[]`, `images[]{url,credit,author,licence,kind}`, `ancient_sources[]{author,work,ref,
       quote}`, `peak`, `rediscovered`, `status`, `verified_at`, `added_by`, `added_at`.
       Migration script over all records; old fields retained.
-- [ ] `[12-P0-2]` **`validator`** `fix` — `scripts/validate.mjs` in the pre-push hook: required
+- [~] `[12-P0-2]` **`validator`** `fix` — `scripts/validate.mjs` in the pre-push hook: required
       fields, unique ids, coordinate sanity, enum checks, non-empty sources, duplicate detection.
+      — claimed by editorial (mac), 2026-08-16 00:40
 - [ ] `[11-P0-1]` **`split-site-data`** `polish` — Split `sites_buildings`/`sites_streets`
       per-site, fetch on demand. Removes ~28MB from every cold load.
 - [ ] `[11-P0-3]` **`delete-dead-data`** `retire` — Delete `roads_high`, `roads_low`,
@@ -77,8 +78,9 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[02-P0-1]` **`terrain`** `polish` — Hillshade/relief under the land fill.
 - [ ] `[02-P0-4]` **`self-host-glyphs`** `fix` — Stop depending on `demotiles.maplibre.org`;
       a single point of failure that would erase every label on the map.
-- [ ] `[09-P0-1]` **`ancient-sources`** `deepen` — `ancient_sources[]` populated for every
+- [~] `[09-P0-1]` **`ancient-sources`** `deepen` — `ancient_sources[]` populated for every
       `confidence: high` POI. **Standing task — never "done", always available.**
+      — claimed by editorial (mac), 2026-08-16 00:40
 - [ ] `[06-P0-2]` **`curate-buildings`** `deepen` — Ostia-depth curated descriptions for the
       other 39 sites, ~10 buildings/day. **Standing task.**
 - [ ] `[14-P0-1]` **`gsc-verify`** `fix` — ⚠️ **BLOCKED ON PEDRO.** Verify `romanmaps.org` in
