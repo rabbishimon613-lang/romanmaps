@@ -11459,6 +11459,1206 @@
     "image_url": null,
     "image_credit": null
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.521,
+     41.85
+    ]
+   },
+   "properties": {
+    "id": "poi_tomb_priscilla",
+    "category": "mausoleum",
+    "name_latin": "Sepulcrum Priscillae",
+    "name_english": "Tomb of Priscilla",
+    "province": "Italia",
+    "modern_location": "Via Appia Antica, Rome, Italy",
+    "built": 90,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "A freedman named Titus Flavius Abascantus built this cylindrical tomb on the Appian Way for his wife Priscilla, who died around 90 CE. The poet Statius devoted the closing poem of his Silvae to the burial, describing thirteen niches meant for statues above a travertine base. Abascantus rejected cremation and had Priscilla's body embalmed and wrapped in Tyrian purple instead. Medieval nobles later fortified the ruin into a small stronghold.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Tomb_of_Priscilla"
+    ],
+    "confidence": "high",
+    "image_url": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.559,
+     41.809
+    ]
+   },
+   "properties": {
+    "id": "poi_torre_selce",
+    "category": "mausoleum",
+    "name_latin": "Torre Selce",
+    "name_english": "Torre Selce",
+    "province": "Italia",
+    "modern_location": "Via Appia Antica, near mile 7, Rome, Italy",
+    "built": null,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "A massive concrete Roman tomb mound, faced with travertine and marble, rose at the seventh mile of the Appian Way. Local legend once claimed it as Pompey the Great's grave, though he was actually buried in his family's mausoleum in the Alban Hills. In the 12th century the Astalli family stacked a stone-and-flint watchtower directly on top of the ruin, giving the site its name. That medieval tower still crowns the ancient burial mound.",
+    "sources": [
+     "https://www.wikidata.org/wiki/Q105046784",
+     "https://www.romeartlover.it/Appia2.html"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/TorreSelceAppiaAntica.JPG?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor, CC BY-SA 3.0"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.651,
+     41.728
+    ]
+   },
+   "properties": {
+    "id": "poi_horatii_curiatii_tumulus",
+    "category": "mausoleum",
+    "name_latin": "Sepulcrum Horatiorum et Curiatiorum",
+    "name_english": "Tomb of the Horatii and Curiatii",
+    "province": "Italia",
+    "modern_location": "Albano Laziale, Italy",
+    "built": -100,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Four truncated stone cones once rose from the corners of this massive tumulus outside ancient Alba Longa, built from huge blocks of local peperino stone in the early first century BCE. Roman legend tied it to the semi-mythical Horatii and Curiatii champions, though that duel was supposed to have happened six centuries earlier. Modern archaeology instead points to an Etruscan noble of the Arruntia family. Two of the four original corner cones still stand.",
+    "sources": [
+     "https://pleiades.stoa.org/places/423083",
+     "https://en.wikipedia.org/wiki/Horatii_and_Curiatii"
+    ],
+    "confidence": "medium",
+    "image_url": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.501,
+     41.871
+    ]
+   },
+   "properties": {
+    "id": "poi_columbarium_pomponius_hylas",
+    "category": "tomb",
+    "name_latin": "Columbarium Pomponii Hylae",
+    "name_english": "Columbarium of Pomponius Hylas",
+    "province": "Italia",
+    "modern_location": "Parco degli Scipioni, near Porta Latina, Rome, Italy",
+    "built": 14,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "This underground family tomb near Porta Latina was built between 14 and 54 CE for freedmen of the imperial household, its walls lined with niches for cremation urns. A mosaic panel over the entrance steps names Pomponius Hylas, who later bought the chamber for himself and his wife Pomponia Vitalinis. Excavators uncovering it in 1831 found the stucco and mosaic decoration almost perfectly preserved. It remains one of the best-preserved columbaria in Rome.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Columbarium_of_Pomponius_Hylas"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Interior_Of_The_Columbarium_Of_Pomponius_Hylas,_Rome.jpg?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.503,
+     41.868
+    ]
+   },
+   "properties": {
+    "id": "poi_columbaria_vigna_codini",
+    "category": "necropolis",
+    "name_latin": "Columbaria of Vigna Codini",
+    "name_english": "Columbaria of Vigna Codini",
+    "province": "Italia",
+    "modern_location": "Between Via Appia and Via Latina, Rome, Italy",
+    "built": -20,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Three vast underground burial chambers stood between the Appian and Latin Ways, their brick vaults lined floor to ceiling with niches for cinerary urns. The oldest of the three belonged to freedmen and slaves of Marcus Claudius Marcellus, brother of Tiberius, and dates to the Augustan era. Excavated in the mid-19th century, the chambers held thousands of urns for imperial household staff who could never afford solo tombs. They remain among the largest columbaria found in Rome.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Columbaria_of_Vigna_Codini"
+    ],
+    "confidence": "medium",
+    "image_url": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.549,
+     41.873
+    ]
+   },
+   "properties": {
+    "id": "poi_tomb_haterii",
+    "category": "tomb",
+    "name_latin": "Sepulcrum Hateriorum",
+    "name_english": "Tomb of the Haterii",
+    "province": "Italia",
+    "modern_location": "Via Labicana, near Porta Maggiore, Rome, Italy",
+    "built": 110,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "A family of builders raised this tomb along the Via Labicana around 100-120 CE and covered it with marble reliefs advertising their own trade. One panel shows a giant treadwheel crane hoisting stone blocks, the clearest surviving depiction of Roman construction machinery. Another shows the funeral bier of Hateria, a freedwoman and priestess, lying in state inside a miniature temple. The reliefs, unearthed in 1848, now hang in the Vatican Museums.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Tomb_of_the_Haterii"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomb_of_the_Haterii_crane_relief_(Gusman_Art_decoratif_I_pl_27).jpg?width=800",
+    "image_credit": "19th-century plate reproduction, Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4812,
+     40.7517
+    ]
+   },
+   "properties": {
+    "id": "poi_necropolis_porta_ercolano",
+    "category": "necropolis",
+    "name_latin": "Necropolis Portae Herculaneae",
+    "name_english": "Porta Ercolano Necropolis",
+    "province": "Italia",
+    "modern_location": "Pompeii, Italy",
+    "built": -80,
+    "destroyed": 79,
+    "extant_117ce": false,
+    "notes": "Dozens of tombs lined the Via dei Sepolcri just outside Pompeii's Herculaneum Gate, built between the colony's founding in 80 BCE and the eruption of 79 CE. Freedmen, magistrates, and merchants competed for plots visible to everyone entering the city, filling the road with altars, exedra benches, and aedicula shrines. Vesuvius buried the entire street under ash and pumice in 79 CE, sealing it exactly as it stood. Excavation from the 18th century onward has recovered it intact.",
+    "sources": [
+     "https://madainproject.com/necropolis_of_porta_ercolano",
+     "https://viadeisep.create.fsu.edu/the-tombs/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomb_with_covered_niche_and_planter_with_garland_in_Pompeii_necropolis_by_Luigi_Bazzani.jpg?width=800",
+    "image_credit": "19th-century watercolor by Luigi Bazzani, Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4938,
+     40.7468
+    ]
+   },
+   "properties": {
+    "id": "poi_necropolis_porta_nocera",
+    "category": "necropolis",
+    "name_latin": "Necropolis Portae Nucerinae",
+    "name_english": "Porta Nocera Necropolis",
+    "province": "Italia",
+    "modern_location": "Pompeii, Italy",
+    "built": -80,
+    "destroyed": 79,
+    "extant_117ce": false,
+    "notes": "A 250-meter stretch of road outside Pompeii's Nocera Gate held hundreds of tombs belonging to freedmen, local elites, and at least one military veteran. The priestess Eumachia received an exedra-shaped monument here, and nearby stood the high-podium tomb of magistrate Publius Vesonius Phileros. Founded when Pompeii became a Roman colony in 80 BCE, the cemetery was still filling with new burials the day Vesuvius erupted in 79 CE. Volcanic ash sealed it in that instant.",
+    "sources": [
+     "https://pompeiisites.org/en/excavations-plan-en/necropolis-of-porta-nocera/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Necropoli_di_Porta_Nocera.jpg?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor, CC BY-SA"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4808,
+     40.7519
+    ]
+   },
+   "properties": {
+    "id": "poi_tomb_mamia",
+    "category": "tomb",
+    "name_latin": "Sepulcrum Mamiae",
+    "name_english": "Tomb of Mamia",
+    "province": "Italia",
+    "modern_location": "Porta Ercolano necropolis, Pompeii, Italy",
+    "built": 1,
+    "destroyed": 79,
+    "extant_117ce": false,
+    "notes": "Pompeii's city council granted this prime plot to Mamia, a public priestess, so she could build her tomb in the form of a semicircular stone bench facing the road. Her inscription records that she paid for a temple to the emperor's Genius in the forum, generosity the decurions repaid with this burial site by public decree. Archaeologist Karl Weber uncovered it between 1758 and 1764. Vesuvius had buried it under ash in 79 CE, thirty-eight years before this map's date.",
+    "sources": [
+     "https://pompeiisites.org/en/exhibitions-and-events/mamia-en/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pompeii,_Pompey%27s_Lane,_Tomb_Monument_of_Mamia_MET_DP319714.jpg?width=800",
+    "image_credit": "Photo: Metropolitan Museum of Art collection, via Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4805,
+     40.7521
+    ]
+   },
+   "properties": {
+    "id": "poi_tomb_umbricius_scaurus",
+    "category": "tomb",
+    "name_latin": "Sepulcrum Auli Umbricii Scauri",
+    "name_english": "Tomb of Aulus Umbricius Scaurus",
+    "province": "Italia",
+    "modern_location": "Porta Ercolano necropolis, Pompeii, Italy",
+    "built": 20,
+    "destroyed": 79,
+    "extant_117ce": false,
+    "notes": "Pompeii's leading fish-sauce manufacturer got a public monument here, his father having spent it building on land the town councilors voted him. Scaurus's name appeared on roughly 29 percent of garum jars found across Pompeii and Herculaneum, making him the city's dominant exporter of the pungent condiment. The councilors also authorized 2,000 sesterces toward his funeral and a bronze equestrian statue in the forum. The 79 CE eruption sealed the tomb decades before this map's date.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Aulus_Umbricius_Scaurus"
+    ],
+    "confidence": "high",
+    "image_url": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4802,
+     40.7523
+    ]
+   },
+   "properties": {
+    "id": "poi_tomb_naevoleia_tyche",
+    "category": "tomb",
+    "name_latin": "Sepulcrum Naevoleiae Tyches",
+    "name_english": "Tomb of Naevoleia Tyche",
+    "province": "Italia",
+    "modern_location": "Porta Ercolano necropolis, Pompeii, Italy",
+    "built": 75,
+    "destroyed": 79,
+    "extant_117ce": false,
+    "notes": "A freedwoman named Naevoleia Tyche commissioned this monument for herself, her husband Gaius Munatius Faustus, and their own freed slaves while she was still living. One relief carved into the altar shows a full-sailed merchant ship with a woman at the helm, likely Tyche herself advertising the seaborne trade that made her fortune. The inscription spells out exactly who earned the right to be buried there. Vesuvius's ash sealed the tomb in 79 CE, before this map's snapshot date.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Naevoleia_Tyche"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pompeya._Tumba_de_Naevoleia_Tyche_y_C._Munatius_Faustus._01.JPG?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor, CC BY-SA 4.0"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4865,
+     40.7502
+    ]
+   },
+   "properties": {
+    "id": "poi_tomb_vestorius_priscus",
+    "category": "tomb",
+    "name_latin": "Sepulcrum Vestorii Prisci",
+    "name_english": "Tomb of Vestorius Priscus",
+    "province": "Italia",
+    "modern_location": "Porta Vesuvio necropolis, Pompeii, Italy",
+    "built": 75,
+    "destroyed": 79,
+    "extant_117ce": false,
+    "notes": "Gaius Vestorius Priscus died in office as a Pompeian aedile at just 22 years old, and his mother paid for a tufa-stone tomb near the Vesuvius Gate to mark it. Painted walls inside show him entering through a doorway, a table stacked with writing tools and coin, and a pair of gladiators he had sponsored in the amphitheater. The city had voted two thousand sesterces toward his funeral. The 79 CE eruption buried the tomb, decades ahead of this map's 117 CE date.",
+    "sources": [
+     "https://www.wikidata.org/wiki/Q29887294"
+    ],
+    "confidence": "high",
+    "image_url": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.369,
+     45.771
+    ]
+   },
+   "properties": {
+    "id": "poi_necropolis_aquileia",
+    "category": "necropolis",
+    "name_latin": "Necropolis Aquileiensis",
+    "name_english": "Aquileia Necropolis",
+    "province": "Italia",
+    "modern_location": "Aquileia, Italy",
+    "built": 50,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Five walled burial enclosures belonging to Aquileian families lined a secondary road outside the city, used from the 1st century CE onward for both cremation and inhumation. Excavators recovered 87 tombs here, packed with glass balsam-jars, stamped oil lamps, and pottery imported from the eastern Mediterranean. Roman law barred burial inside the walls, so wealthy families competed for visibility along this road instead. It remains the only Aquileian necropolis still visible in situ.",
+    "sources": [
+     "https://www.fondazioneaquileia.it/en/must-see/necropolis"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aquileia_sepolcreto.jpg?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.115,
+     40.828
+    ]
+   },
+   "properties": {
+    "id": "poi_necropolis_via_celle_puteoli",
+    "category": "necropolis",
+    "name_latin": "Via Celle Necropolis",
+    "name_english": "Via Celle Necropolis",
+    "province": "Italia",
+    "modern_location": "Pozzuoli, Italy",
+    "built": 100,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Fourteen barrel-vaulted columbaria lined the start of the consular road out of Puteoli toward Capua, most built in the 1st and 2nd centuries CE. Niches inside held cremation urns for the dead, and some chambers still carry traces of their original stucco and mosaic decoration. One building has been read as the seat of a burial club, a collegium funeraticium, that pooled dues so ordinary members could afford a decent send-off. Rediscovered in the 1930s, it opened fully to the public only in 2022.",
+    "sources": [
+     "https://pafleg.cultura.gov.it/it/4388/localit/68/la-necropoli-di-via-celle"
+    ],
+    "confidence": "medium",
+    "image_url": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8305,
+     43.7735
+    ]
+   },
+   "properties": {
+    "id": "poi_mausoleum_julii_glanum",
+    "category": "mausoleum",
+    "name_latin": "Mausoleum Iuliorum",
+    "name_english": "Mausoleum of the Julii",
+    "province": "Gallia Narbonensis",
+    "modern_location": "Saint-Remy-de-Provence, France",
+    "built": -25,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "A local Gallo-Roman family called the Julii built this three-tiered tomb outside Glanum around 30-20 BCE to honor their father and grandfather. A square base carved with battle and hunt scenes supports a miniature triumphal arch, topped by a round temple sheltering two standing statues of the deceased. It stands roughly 18 meters tall and counts among the best-preserved Roman funerary monuments anywhere. Paired with a nearby arch, the site is still known locally as Les Antiques.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Mausoleum_of_Glanum"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Mausoleum_of_the_Julii,_about_40_BC,_Glanum_(14607599677).jpg?width=800",
+    "image_credit": "Photo: Carole Raddato, Wikimedia Commons, CC BY-SA 2.0"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.33,
+     35.683
+    ]
+   },
+   "properties": {
+    "id": "poi_medracen",
+    "category": "mausoleum",
+    "name_latin": "Medracen",
+    "name_english": "Medracen",
+    "province": "Africa Proconsularis",
+    "modern_location": "Near Batna, Algeria",
+    "built": -250,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Numidian kings raised this circular royal tomb near Batna in the 3rd century BCE, ringing its drum with sixty engaged Doric columns beneath an Egyptian-style cornice. Scholars debate whether it held Massinissa himself or an earlier Massylian ruler, but the tumulus form and scale mark it as North Africa's oldest surviving royal mausoleum. It still stood as a recognizable landmark under Roman rule in the province of Africa two centuries later. Its diameter runs about 59 meters.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Medracen",
+     "https://pleiades.stoa.org/places/334591"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mausol%C3%A9e_des_Rois_numides_dit_le_Medracen_-2.JPG?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor, CC BY-SA"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.317,
+     36.583
+    ]
+   },
+   "properties": {
+    "id": "poi_royal_mausoleum_mauretania",
+    "category": "mausoleum",
+    "name_latin": "Royal Mausoleum of Mauretania",
+    "name_english": "Royal Mausoleum of Mauretania",
+    "province": "Mauretania Caesariensis",
+    "modern_location": "Near Tipaza, Algeria",
+    "built": -20,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "King Juba II and Queen Cleopatra Selene II, daughter of Cleopatra and Mark Antony, were said to be entombed beneath this vast circular monument between Tipaza and Cherchell. Sixty engaged columns ring its drum, which rises in a stepped cone roughly 40 meters high on a base over 60 meters wide. No royal remains have ever been found inside, likely lost to ancient tomb raiders. Arabic tradition later renamed it Kbor er Roumia, the tomb of the Christian woman, for the cross-shaped lines on its false door.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Royal_Mausoleum_of_Mauretania"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Mausoleum_of_Mauretania_01.jpg?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor, CC BY-SA"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.2189,
+     36.4225
+    ]
+   },
+   "properties": {
+    "id": "poi_mausoleum_dougga",
+    "category": "mausoleum",
+    "name_latin": "Libyco-Punic Mausoleum of Dougga",
+    "name_english": "Libyco-Punic Mausoleum of Dougga",
+    "province": "Africa Proconsularis",
+    "modern_location": "Dougga, Tunisia",
+    "built": -150,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "A bilingual inscription in Punic and Libyan once crowned this 21-meter royal tomb, naming the Numidian prince Ateban, son of Lepmatath, as its occupant. Built in the 2nd century BCE, it blends Numidian and Hellenistic design across three stacked levels ringed with Ionic pilasters. The inscription was so prized that a British consul dismantled part of the monument in 1842 to carry it off to the British Museum. French archaeologists rebuilt the mausoleum between 1908 and 1910.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Libyco-Punic_Mausoleum_of_Dougga"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mausol%C3%A9e_libyco-punique_de_Dougga_114.jpg?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor, CC BY-SA"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.696,
+     36.25
+    ]
+   },
+   "properties": {
+    "id": "poi_tomb_massinissa",
+    "category": "mausoleum",
+    "name_latin": "Sepulcrum Massinissae",
+    "name_english": "Tomb of Massinissa",
+    "province": "Africa Proconsularis",
+    "modern_location": "El Khroub, Algeria",
+    "built": -125,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "A 30-meter tower rises on a square plan outside El Khroub, near ancient Cirta, built in the second half of the 2nd century BCE by Greek and Carthaginian masons working for the Numidian court. Tradition names it for King Massinissa, though the balance of evidence points to his son and successor Micipsa as the actual occupant. Its mixed Greco-Punic style reflects the cosmopolitan workforce Numidian kings employed at their capital. It still stood as a visible landmark under Roman rule.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/El_Khroub",
+     "https://www.livius.org/articles/place/cirta/soumaa-del-khroub/"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Massinissa_el_khroub.JPG?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor, CC BY-SA"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.298,
+     41.093
+    ]
+   },
+   "properties": {
+    "id": "poi_torre_escipiones",
+    "category": "mausoleum",
+    "name_latin": "Turris Scipionum",
+    "name_english": "Tower of the Scipios",
+    "province": "Hispania Citerior",
+    "modern_location": "Near Tarragona, Spain",
+    "built": 25,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "A three-tiered funerary tower rose beside the Via Augusta six kilometers from Tarraco, built in the early 1st century CE for a family that owned the surrounding land. Two carved figures on its face were mistaken for the Scipio brothers by writers from the 15th to 19th centuries, giving the tower its lasting name even though the real Scipios died a century earlier. Twentieth-century research settled the dating and cleared up the misidentification. It ranks among the best-preserved Roman funerary towers on the Iberian Peninsula.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Torre_dels_Escipions"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/TarragonaTorreScipioni.jpg?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.652,
+     37.474
+    ]
+   },
+   "properties": {
+    "id": "poi_necropolis_carmona",
+    "category": "necropolis",
+    "name_latin": "Necropolis Carmonensis",
+    "name_english": "Carmona Roman Necropolis",
+    "province": "Baetica",
+    "modern_location": "Carmona, Spain",
+    "built": 50,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Wealthy families of Carmo lined this hillside along the Via Augusta toward Hispalis with rock-cut chamber tombs during the 1st and 2nd centuries CE. Cremation dominated the burial rite here, with ashes placed in holes cut directly into the bedrock beside elaborate underground chambers. Accidental discovery in 1830 led to full excavation from 1882 onward, uncovering one of the largest and best-preserved Roman burial grounds on the Iberian Peninsula. It opened to the public in 1885, the first Spanish site of its kind to do so.",
+    "sources": [
+     "https://www.turismosevilla.org/en/what-see-and-do/heritage/monuments/archaeological-site-carmona",
+     "https://www.livius.org/articles/place/carmo-carmona/carmo-carmona-necropolis/"
+    ],
+    "confidence": "high",
+    "image_url": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.6522,
+     37.4738
+    ]
+   },
+   "properties": {
+    "id": "poi_tomb_servilia_carmona",
+    "category": "tomb",
+    "name_latin": "Sepulcrum Serviliae",
+    "name_english": "Tomb of Servilia",
+    "province": "Baetica",
+    "modern_location": "Carmona Necropolis, Carmona, Spain",
+    "built": 50,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "The grandest tomb in the Carmona necropolis was built to resemble a complete Roman villa, with a colonnaded courtyard surrounded by family burial rooms. It takes its name from a statue pedestal found inside inscribed to Servilia, daughter of Lucius, marking it as the mausoleum of an aristocratic family in the 1st century CE. Excavators recovered several statues from its porticos, now displayed in Carmona's own archaeological museum. Its Hellenistic design set it apart from every other tomb on the site.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Tomb_of_Servilia"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carmona-Necr%C3%B3polis_Romana-Cabeza_de_la_estatua_de_Serviliae.-20110916.jpg?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor, CC BY-SA"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.6518,
+     37.4742
+    ]
+   },
+   "properties": {
+    "id": "poi_elephant_tomb_carmona",
+    "category": "tomb",
+    "name_latin": "Elephant Tomb",
+    "name_english": "Elephant Tomb",
+    "province": "Baetica",
+    "modern_location": "Carmona Necropolis, Carmona, Spain",
+    "built": 75,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "A multi-chambered crypt cut deep into the rock at Carmona takes its popular name from a small stone elephant statue found inside, now kept in the site museum. A window aligned to the equinox sun points to an original use as a shrine to Mithras or to Cybele and Attis, before it was pressed into use for ordinary burials alongside the rest of the necropolis. Its dual life as sanctuary and tomb makes it one of Carmona's more unusual monuments.",
+    "sources": [
+     "https://www.sciencedaily.com/releases/2013/05/130510075521.htm"
+    ],
+    "confidence": "medium",
+    "image_url": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -6.346,
+     38.916
+    ]
+   },
+   "properties": {
+    "id": "poi_columbarios_merida",
+    "category": "necropolis",
+    "name_latin": "Los Columbarios",
+    "name_english": "Los Columbarios",
+    "province": "Lusitania",
+    "modern_location": "Merida, Spain",
+    "built": 90,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Two Roman families, the Voconii and the Julii, built open-air cremation columbaria in this funerary district southeast of Emerita Augusta. Small above-ground chambers held rows of niches for cinerary urns, several of which survive today alongside a painted family portrait of the Voconii. The site grew up around the same time as a nearby luxury villa, the House of the Mithraeum, built for the colony's upper class in the late 1st or early 2nd century CE. It now forms part of Merida's UNESCO World Heritage listing.",
+    "sources": [
+     "https://www.spain.info/en/places-of-interest/area-funeraria-columbarios/"
+    ],
+    "confidence": "medium",
+    "image_url": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.227,
+     31.789
+    ]
+   },
+   "properties": {
+    "id": "poi_tombs_of_the_kings_jerusalem",
+    "category": "mausoleum",
+    "name_latin": "Tombs of the Kings",
+    "name_english": "Tombs of the Kings",
+    "province": "Judaea",
+    "modern_location": "Sheikh Jarrah, East Jerusalem",
+    "built": 53,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Queen Helena of Adiabene, a convert to Judaism who moved her royal household to Jerusalem, was buried in this rock-cut funerary complex after her death around 50-56 CE. A monumental staircase and courtyard lead to a 28-meter facade that the historian Josephus said was once crowned by three pyramids. Underground chambers and passages inside could hold up to fifty burials, cut for her family from Assyria's Adiabene kingdom. A massive rolling stone still seals part of the original entrance.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Tombs_of_the_Kings_(Jerusalem)"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fa%C3%A7ade_of_the_Tomb_of_the_Kings.jpg?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.2378,
+     31.7765
+    ]
+   },
+   "properties": {
+    "id": "poi_tomb_absalom",
+    "category": "mausoleum",
+    "name_latin": "Tomb of Absalom",
+    "name_english": "Tomb of Absalom",
+    "province": "Judaea",
+    "modern_location": "Kidron Valley, Jerusalem",
+    "built": 30,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "A 20-meter monolithic tower rises from the floor of the Kidron Valley, its lower half carved from solid rock and its upper half built up in ashlar masonry to a concave conical roof. Tradition long linked it to Absalom, King David's rebellious son who died a thousand years earlier, but its Egyptian, Persian, and Hellenistic architectural blend points instead to the 1st century CE. Vaulted chambers cut into its square base held actual burials. It stands just meters from the tombs of Zechariah and the Bnei Hezir family.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Tomb_of_Absalom"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Absalom%27s_Tomb,_Valley_of_Jehoshaphat,_Mount_of_Olives,_Jerusalem.jpg?width=800",
+    "image_credit": "Historic photograph, Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.238,
+     31.7762
+    ]
+   },
+   "properties": {
+    "id": "poi_tomb_zechariah",
+    "category": "tomb",
+    "name_latin": "Tomb of Zechariah",
+    "name_english": "Tomb of Zechariah",
+    "province": "Judaea",
+    "modern_location": "Kidron Valley, Jerusalem",
+    "built": 1,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "This solid, uncarved block of limestone stands cut directly into the cliff face of the Kidron Valley, facing the Temple Mount from across the ravine. Jewish tradition names it for the priest Zechariah ben Jehoiada, though the monument itself is a monolith carved from the rock rather than a hollow chamber, meaning it never actually held a burial. Architectural analysis points to construction sometime in the 1st century BCE or CE. It sits just six meters from the neighboring Tomb of Benei Hezir.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Tomb_of_Zechariah"
+    ],
+    "confidence": "medium",
+    "image_url": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.2381,
+     31.7763
+    ]
+   },
+   "properties": {
+    "id": "poi_tomb_bnei_hezir",
+    "category": "tomb",
+    "name_latin": "Tomb of Benei Hezir",
+    "name_english": "Tomb of Benei Hezir",
+    "province": "Judaea",
+    "modern_location": "Kidron Valley, Jerusalem",
+    "built": -125,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "A Hebrew inscription carved above the entrance identifies this as the burial cave of the Benei Hezir, a family of priests who served in the Jerusalem Temple. Two rock-cut columns stand between pilasters below a Doric frieze, making it the oldest of the four monumental Second Temple-era tombs clustered in the Kidron Valley. Scholars date its excavation to the Hasmonean period, roughly the 2nd or early 1st century BCE. It remains a burial complex rather than a solid monument like its neighbors.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Tomb_of_Benei_Hezir"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hezir_tomb.JPG?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.2436,
+     31.6656
+    ]
+   },
+   "properties": {
+    "id": "poi_herod_tomb_herodium",
+    "category": "mausoleum",
+    "name_latin": "Sepulcrum Herodis",
+    "name_english": "Tomb of Herod",
+    "province": "Judaea",
+    "modern_location": "Herodium, West Bank",
+    "built": -15,
+    "destroyed": 70,
+    "extant_117ce": false,
+    "notes": "King Herod built himself an elaborate three-story mausoleum on the slope of his hilltop fortress south of Jerusalem, its circular tholos ringed with an Ionic colonnade beneath a conical roof. Archaeologist Ehud Netzer identified its remains in 2007, along with fragments of a reddish limestone sarcophagus smashed into pieces. Jewish rebels who despised Herod's memory tore the tomb apart during the revolt of 66-72 CE, decades before this map's 117 CE date. No trace of Herod's actual remains has ever been found.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Tomb_of_Herod",
+     "https://www.nationalgeographic.com/history/article/herods-tomb"
+    ],
+    "confidence": "high",
+    "image_url": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     27.4241,
+     37.0384
+    ]
+   },
+   "properties": {
+    "id": "poi_mausoleum_halicarnassus",
+    "category": "mausoleum",
+    "name_latin": "Mausoleum Halicarnasense",
+    "name_english": "Mausoleum at Halicarnassus",
+    "province": "Asia",
+    "modern_location": "Bodrum, Turkey",
+    "built": -350,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Queen Artemisia II built this towering tomb for her husband and brother Mausolus around 350 BCE, stacking a colonnaded temple and stepped pyramid roof atop a massive podium roughly 45 meters tall. Ancient writers counted it among the Seven Wonders of the World, and its scale gave the world the word mausoleum. The monument still stood largely intact under Roman rule in 117 CE; only earthquakes centuries later, between the 11th and 15th centuries, brought it down. Crusader knights then quarried its stones to build a nearby castle.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Mausoleum_at_Halicarnassus"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mausoleum_at_Halicarnassus_by_Ferdinand_Knab_(1886)_cropped.png?width=800",
+    "image_credit": "Reconstruction painting by Ferdinand Knab, 1886, Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     29.125,
+     37.927
+    ]
+   },
+   "properties": {
+    "id": "poi_necropolis_hierapolis",
+    "category": "necropolis",
+    "name_latin": "Necropolis Hierapolitana",
+    "name_english": "Hierapolis Necropolis",
+    "province": "Asia",
+    "modern_location": "Pamukkale, Turkey",
+    "built": -50,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "More than 1,200 tombs stretch across two kilometers on the slopes north and south of Hierapolis, making it the largest ancient burial ground in Asia Minor. Tumuli, house-shaped tombs, and elaborately carved sarcophagi span the late Hellenistic period through the early centuries of Roman rule. Visitors traveled here for the city's hot mineral springs, believed to have healing power, and many chose to be buried within sight of the sacred waters. The necropolis remains one of the best-preserved of its kind anywhere in the ancient world.",
+    "sources": [
+     "https://library.biblicalarchaeology.org/sidebar/the-necropolis-of-hierapolis/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hierapolis_tomb_18_5000.jpg?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     38.259,
+     34.549
+    ]
+   },
+   "properties": {
+    "id": "poi_valley_of_tombs_palmyra",
+    "category": "necropolis",
+    "name_latin": "Vallis Sepulcrorum",
+    "name_english": "Valley of the Tombs",
+    "province": "Syria",
+    "modern_location": "Palmyra, Syria",
+    "built": 9,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "West of Palmyra, a narrow valley filled with tower tombs rising four and five stories against the desert cliffs, the tallest funerary architecture anywhere in the Roman world. Wealthy Palmyrene families built these sandstone towers between roughly 9 BCE and 128 CE, packing each level with loculi for hundreds of family members across generations. Corinthian columns and painted coffered ceilings decorated the more elaborate interiors. Many of these towers stood until ISIL destroyed several with explosives in 2015.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Valley_of_the_Tombs"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Valley_of_the_Tombs,_Panoramic_view,_Palmyra,_Syria.jpg?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     38.258,
+     34.548
+    ]
+   },
+   "properties": {
+    "id": "poi_tower_elahbel_palmyra",
+    "category": "mausoleum",
+    "name_latin": "Tower of Elahbel",
+    "name_english": "Tower of Elahbel",
+    "province": "Syria",
+    "modern_location": "Valley of the Tombs, Palmyra, Syria",
+    "built": 103,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Four Palmyrene brothers, Elahbel, Shagai, Mogimo, and Maani, finished building this four-story sandstone tower tomb in 103 CE, an exact date recorded in its dedicatory inscription. Corinthian pilasters and painted coffered ceilings decorated burial chambers that together held more than 300 bodies across the tower's levels. It stood as one of the tallest and best-preserved tower tombs in the Valley of the Tombs for nearly two thousand years. ISIL destroyed it with explosives in August 2015.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Tower_of_Elahbel"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tower_of_Elahbel,_Palmyra.jpg?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4444,
+     30.3245
+    ]
+   },
+   "properties": {
+    "id": "poi_corinthian_tomb_petra",
+    "category": "tomb",
+    "name_latin": "Corinthian Tomb",
+    "name_english": "Corinthian Tomb",
+    "province": "Arabia Petraea",
+    "modern_location": "Royal Tombs, Petra, Jordan",
+    "built": 55,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Carved into Petra's eastern cliff face between 40 and 70 CE, this tomb takes its name from capitals loosely resembling the Corinthian order, though they're actually Nabataean floral horn designs. Its facade spans nearly 28 meters wide and 28 meters tall, modeled on the design of the famous Treasury nearby. The layout borrows heavily from Ptolemaic architecture that had developed in Alexandria. It stands directly beside the even larger Palace Tomb along the same royal cliff.",
+    "sources": [
+     "https://universes.art/en/art-destinations/jordan/petra/royal-tombs/corinthian-tomb"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palace_Tomb_and_Corinthian_Tomb,_Petra.jpg?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4448,
+     30.3242
+    ]
+   },
+   "properties": {
+    "id": "poi_palace_tomb_petra",
+    "category": "tomb",
+    "name_latin": "Palace Tomb",
+    "name_english": "Palace Tomb",
+    "province": "Arabia Petraea",
+    "modern_location": "Royal Tombs, Petra, Jordan",
+    "built": 90,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "The largest rock-cut facade in Petra spans 49 meters wide and 46 meters tall, carved into the eastern cliff toward the end of the 1st century CE. Its top story breaks with every other tomb in the city by extending beyond the cliff face as freestanding built masonry rather than carved rock. Four wide entrances on the ground floor lead into separate burial chambers behind the towering facade. Its scale and unusual construction mark it as one of Petra's grandest Nabataean monuments.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Palace_Tomb"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palace_Tomb,_Petra.jpg?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4441,
+     30.3238
+    ]
+   },
+   "properties": {
+    "id": "poi_silk_tomb_petra",
+    "category": "tomb",
+    "name_latin": "Silk Tomb",
+    "name_english": "Silk Tomb",
+    "province": "Arabia Petraea",
+    "modern_location": "Royal Tombs, Petra, Jordan",
+    "built": 30,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Swirling bands of pink, purple, gold, and orange run across this tomb's sandstone facade, carved sometime in the first half of the 1st century CE. Iron and manganese oxides trapped in the rock, polished smooth by centuries of wind and water, produced the vivid marbled effect that gives the tomb its modern nickname. Compared with its grander neighbors along the Royal Tombs cliff, its facade is modest and unadorned by columns. The colors alone have made it one of Petra's most photographed monuments.",
+    "sources": [
+     "https://universes.art/en/art-destinations/jordan/petra/royal-tombs/silk-tomb"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Tomb,_Petra.jpg?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4515,
+     30.3283
+    ]
+   },
+   "properties": {
+    "id": "poi_obelisk_tomb_petra",
+    "category": "tomb",
+    "name_latin": "Obelisk Tomb",
+    "name_english": "Obelisk Tomb",
+    "province": "Arabia Petraea",
+    "modern_location": "Bab as-Siq, Petra, Jordan",
+    "built": 55,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Four elongated pyramids carved above this facade at Petra's entrance represent nefesh, Nabataean markers for the souls of the dead, with a worn figure of a cloaked man niched between them. Most scholars date it to the reign of Malichos II, between 40 and 70 CE, built directly above a separate dining hall known as the Bab as-Siq Triclinium. An inscription at the site records details connecting the two structures. Visitors today pass beneath it on the walk into Petra's main canyon.",
+    "sources": [
+     "https://madainproject.com/obelisk_tomb"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Obelisk_Tomb_and_Bab_as-Siq_Triclinium.jpg?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor, CC BY-SA 4.0"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.446,
+     30.3195
+    ]
+   },
+   "properties": {
+    "id": "poi_roman_soldier_tomb_petra",
+    "category": "tomb",
+    "name_latin": "Sepulcrum Militis Romani",
+    "name_english": "Tomb of the Roman Soldier",
+    "province": "Arabia Petraea",
+    "modern_location": "Wadi Farasa, Petra, Jordan",
+    "built": 60,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "A carved figure wearing a muscled cuirass decorated with flowers stands at the center of this facade in the Wadi Farasa valley, its armor style so distinctly Roman that early visitors assumed it marked a soldier's grave. Archaeologists now date the complex to the third quarter of the 1st century CE, decades before Rome annexed the Nabataean kingdom in 106 CE. A carved triclinium banquet hall sits directly across a courtyard from the tomb facade. The figure was almost certainly a Nabataean official, not a Roman legionary.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Tomb_of_the_Roman_Soldier"
+    ],
+    "confidence": "medium",
+    "image_url": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.857,
+     32.823
+    ]
+   },
+   "properties": {
+    "id": "poi_necropolis_cyrene",
+    "category": "necropolis",
+    "name_latin": "Necropolis Cyrenensis",
+    "name_english": "Necropolis of Cyrene",
+    "province": "Creta et Cyrenaica",
+    "modern_location": "Shahhat, Libya",
+    "built": -500,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Rock-cut tombs spread across the hillsides ringing Cyrene, one of the largest burial landscapes to survive from the Greek and Roman world, with graves ranging from the 6th century BCE through the Roman period. The Western Necropolis holds the most monumental examples, its facades carved with Doric and Ionic porticoes along a dedicated funerary road. Temple-tombs and painted chamber tombs with rock-cut sarcophagi honeycomb the surrounding cliffs. Italian archaeologists continue to uncover previously unrecorded tombs here.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Necropolis_of_Cyrene"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Necropolis-of-Cyrene--tomb-Interior-1861.jpg?width=800",
+    "image_credit": "19th-century illustration, Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     29.118,
+     36.621
+    ]
+   },
+   "properties": {
+    "id": "poi_tomb_amyntas_fethiye",
+    "category": "tomb",
+    "name_latin": "Sepulcrum Amyntae",
+    "name_english": "Tomb of Amyntas",
+    "province": "Lycia et Pamphylia",
+    "modern_location": "Fethiye, Turkey",
+    "built": -350,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "An Ionic temple facade with columns carved straight out of the cliff, rather than built up in front of it, marks this rock-hewn tomb above ancient Telmessos. A Greek inscription beside the entrance names it for Amyntas, son of Hermagios, and dates the monument to around 350 BCE. It remains the grandest of a whole cliffside cluster of Lycian house-tombs overlooking the harbor. The city below, later renamed Fethiye, remained a landmark of Lycian territory throughout Roman rule.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Tomb_of_Amyntas"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Panoramic_view_of_Fethiye_from_Tomb_of_Amyntas_(2022).jpg?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor, CC BY-SA 4.0"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     29.998,
+     36.257
+    ]
+   },
+   "properties": {
+    "id": "poi_necropolis_myra",
+    "category": "necropolis",
+    "name_latin": "Necropolis Myrensis",
+    "name_english": "Necropolis of Myra",
+    "province": "Lycia et Pamphylia",
+    "modern_location": "Demre, Turkey",
+    "built": -350,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "More than 100 rock-cut tombs honeycomb the cliffs above Myra, most carved in the 4th century BCE in the distinctive Lycian house-tomb style that mimics timber architecture in solid stone. Stonemasons reproduced beams, joists, and doors down to the smallest detail, and traces of the original red and blue paint still survive on several facades. The River Necropolis holds the famous Painted Tomb, decorated with life-sized carved figures on both its interior and exterior walls. Myra remained a major Lycian city throughout Roman rule of the province.",
+    "sources": [
+     "https://www.petersommer.com/blog/turkey-travel/lycia-myra-tombs"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Myra_Rock_Tombs.jpg?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     29.318,
+     36.359
+    ]
+   },
+   "properties": {
+    "id": "poi_nereid_monument_xanthos",
+    "category": "tomb",
+    "name_latin": "Monumentum Nereidum",
+    "name_english": "Nereid Monument",
+    "province": "Lycia et Pamphylia",
+    "modern_location": "Xanthos, Turkey",
+    "built": -385,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "Lycian ruler Arbinas built himself a Greek temple in miniature atop an 8-meter podium at Xanthos around 390-380 BCE, its columns framing statues of sea nymphs that gave the monument its modern name. Two carved friezes wrapped the podium with scenes of sieges and battles, part biography and part legend. The design later influenced the far larger Mausoleum at Halicarnassus. Only stone blocks of the podium remain in place today, the sculpted superstructure having been removed to the British Museum in the 19th century.",
+    "sources": [
+     "https://www.britishmuseum.org/collection/galleries/nereid-monument"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Reconstruction_Nereid_Monument.jpg?width=800",
+    "image_credit": "Reconstruction drawing, Wikimedia Commons"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     16.488,
+     43.539
+    ]
+   },
+   "properties": {
+    "id": "poi_manastirine_necropolis_salona",
+    "category": "necropolis",
+    "name_latin": "Manastirine Necropolis",
+    "name_english": "Manastirine Necropolis",
+    "province": "Dalmatia",
+    "modern_location": "Solin, Croatia",
+    "built": -100,
+    "destroyed": null,
+    "extant_117ce": true,
+    "notes": "An ordinary pagan cemetery grew up on the northern edge of Salona from the 2nd century BCE onward, filling with cremation and inhumation burials for the provincial capital's residents over the following centuries. By 117 CE it functioned as a typical extramural Roman burial ground outside Dalmatia's chief city, undistinguished from dozens of similar cemeteries across the empire. Its later fame as a Christian pilgrimage site, built around the martyred bishop Domnius, only began after his execution in 304 CE. Stone sarcophagi from the Roman-era burials still scatter the site today.",
+    "sources": [
+     "https://www.croatiatraveller.com/central%20dalmatia/Solin.htm",
+     "https://vici.org/vici/44209/"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Manastirine_(Salona)_02.jpg?width=800",
+    "image_credit": "Photo: Wikimedia Commons contributor"
+   }
   }
  ]
 }
