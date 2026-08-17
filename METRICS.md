@@ -38,7 +38,7 @@ queued for deletion under `[11-P0-3]`.
 | Has an ancient source | 159 · **34.0%** | |
 | — of `confidence: high` POIs | 158 / 230 · **68.7%** | the target set for `[09-P0-1]` |
 | Categories with a "what happened here" paragraph | 52 / 52 · **100.0%** | covers 467/467 POIs |
-| Sites with curated building descriptions | 6 / 40 · **15.0%** | delphi, ephesus, herculaneum, jerash, ostia, pompeii (`[06-P0-2]`, standing) |
+| Sites with curated building descriptions | 7 / 40 · **17.5%** | delphi, ephesus, herculaneum, jerash, ostia, pompeii, trier (`[06-P0-2]`, standing) |
 | Validator errors | **0** | |
 | Validator warnings | 14 | reviewed; see the standing-warnings note |
 | Cross-file name collisions (<150 m) | 75 | the dedupe backlog `[12-P0-1]` has to resolve |
