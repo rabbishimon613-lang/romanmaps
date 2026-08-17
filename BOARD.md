@@ -136,8 +136,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       duplicates in places_high/medium pending `[12-P0-1]`'s theme merge) left alone — see the
       commit for the full accounting. `poi_fortress_i_adiutrix_brigetio` and
       for other exact-coordinate stacks while in there.
-- [ ] `[04-P0-1]` **`sheet-detents`** `polish` — Three-detent bottom sheet (peek/half/full),
-      velocity-aware.
+- [~] `[04-P0-1]` **`sheet-detents`** `polish` — Three-detent bottom sheet (peek/half/full),
+      velocity-aware. — claimed by cloud shift 27, 2026-08-17 18:12
 - [ ] `[13-P0-2]` **`image-audit`** `illustrate` — Audit all 303 existing images; flag and
       replace any modern photograph showing modern infrastructure. Cotinae is the test case.
 - [ ] `[05-P0-1]` **`places-in-view-list`** `polish` — Accessible, keyboard-navigable list of
@@ -217,7 +217,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       wall this and the last two batches hit is now well-enough documented that a batch 6 should
       probably wait for `[09-P1-4]` to open the inscription channel rather than keep re-running
       the same literary-only search against the same thin pool.*
-- [x] `[06-P0-2]` **`curate-buildings`** `deepen` — Ostia-depth curated descriptions for the
+- [~] `[06-P0-2]` **`curate-buildings`** `deepen` — claimed for Timgad by cloud shift 27,
+      2026-08-17 18:12. Ostia-depth curated descriptions for the
       other 39 sites, ~10 buildings/day. **Standing task, never "done".**
       *Pompeii done 2026-08-16 by cloud shift 3: 28 buildings in `app/pompeiiDescriptions.ts`
       (House of the Faun, Temple of Apollo, the Forum and its temples, the three bath complexes,
@@ -367,7 +368,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[06-P1-3]` **`building-typology`** `deepen` — Extend to the ~35-term standard vocabulary,
       grouped into six colour families.
 - [ ] `[06-P1-4]` **`excavation-history`** `deepen` — `excavation[]` on all 40 sites.
-- [x] `[09-P1-4]` **`epigraphy`** `deepen` — Batch 1 done 2026-08-17 by cloud shift 26. 16
+- [~] `[09-P1-4]` **`epigraphy`** `deepen` — claimed for batch 2 by cloud shift 27, 2026-08-17
+      18:12. Batch 1 done 2026-08-17 by cloud shift 26. 16
       inscriptions merged into `pois.geojson`'s `ancient_sources[]` (author = corpus siglum,
       work = inscription type, ref = date, to fit the validator's literary-source shape): the 8
       CIL leads shift 25 handed off, verified and written up, plus 8 more researched and verified
@@ -476,7 +478,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       `summary_large_image`.
 - [ ] `[05-P2-6]` **`i18n`** `polish` — `strings.ts` scaffold; English + Italian.
 - [ ] `[04-P2-9]` **`manifest`** `polish` — Web manifest + maskable icon.
-- [ ] `[14-P2-8]` **`hub-pages`** `add` — Four or five explainer hubs.
+- [~] `[14-P2-8]` **`hub-pages`** `add` — Four or five explainer hubs. — claimed by cloud shift 27,
+      2026-08-17 18:12.
 - [ ] `[09-P2-8]` **`how-we-know`** `add` — Public methodology page.
 - [ ] `[02-P1-6]` **`sea-labels`** `add` — `seas.geojson`, ~30 water names, italic letterspaced.
 - [ ] `[12-P1-4]` **`fuzzy-dates`** `fix` — `{earliest, latest, display}` date objects.
