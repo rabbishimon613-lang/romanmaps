@@ -3,6 +3,7 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 import { SITE_URL } from "./siteUrl";
 import { SITES } from "./sites";
+import { PROVINCES } from "./provinces";
 
 /** The map itself is still a single client-side route — every layer, gazetteer
  * point and non-site POI is reached through client state and a `#lng,lat,zoomz`
@@ -45,6 +46,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${SITE_URL}/place/${slug}`,
       changeFrequency: "monthly" as const,
       priority: 0.5,
+    })),
+    ...PROVINCES.map((p) => ({
+      url: `${SITE_URL}/province/${p.slug}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
     })),
   ];
 }
