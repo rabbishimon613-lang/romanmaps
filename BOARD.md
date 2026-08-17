@@ -217,9 +217,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       wall this and the last two batches hit is now well-enough documented that a batch 6 should
       probably wait for `[09-P1-4]` to open the inscription channel rather than keep re-running
       the same literary-only search against the same thin pool.*
-- [~] `[06-P0-2]` **`curate-buildings`** `deepen` — Ostia-depth curated descriptions for the
-      other 39 sites, ~10 buildings/day. **Standing task, never "done".** — next site (Delphi)
-      claimed by cloud shift 25, 2026-08-17 06:18
+- [x] `[06-P0-2]` **`curate-buildings`** `deepen` — Ostia-depth curated descriptions for the
+      other 39 sites, ~10 buildings/day. **Standing task, never "done".**
       *Pompeii done 2026-08-16 by cloud shift 3: 28 buildings in `app/pompeiiDescriptions.ts`
       (House of the Faun, Temple of Apollo, the Forum and its temples, the three bath complexes,
       the Brothel, named houses on Via dell'Abbondanza and elsewhere), same pattern as
@@ -259,6 +258,31 @@ to prevent. Building locally to *test* your own work is expected and fine.
       effectively unreachable dead code; left in as harmless rather than deleted. Verified with
       Playwright: clicking the Serapeion building surfaces the new text with the correct
       "Not standing in 117 CE" badge. 36 sites still open for the standing task.*
+      *Delphi done 2026-08-17 by cloud shift 25: 34 entries (33 distinct buildings — Delphi's OSM
+      data carries two differently-encoded Greek spellings of "Στάδιον"/stadium, both keyed to the
+      same content rather than silently dropping one) in `app/delphiDescriptions.ts`, the first
+      Panhellenic sanctuary rather than a city to get this treatment. Delphi's OSM building names
+      are in Greek, not Italian/English like the first four sites, so — unlike those files — the
+      lookup keys here are the exact Greek strings, researched via a background WebSearch pass
+      keyed against Pausanias's own 2nd-century tour of the sanctuary (book 10), Herodotus,
+      Plutarch (a working Delphic priest at the exact 117 CE snapshot date), and the Fouilles de
+      Delphes excavation reports. One candidate dropped on review: `Τέμενος Ποσειδώνος` ("Precinct
+      of Poseidon") has no known standalone structure at Delphi — the research pointed instead to
+      a Poseidon altar inside the Temple of Apollo's own cella (Pausanias 10.24.4), so curating it
+      as a second separate building would have asserted a precinct that likely doesn't exist;
+      left unentered rather than guessed. Two more (`Δελφοί`, the generic park-boundary label, and
+      `Σκαλοπάτια`, plain "steps") were out of scope from the start, not building names. One
+      genuine surprise confirmed rather than assumed: `Στοά Αττάλου` ("Stoa of Attalos") looks like
+      an OSM mix-up with the far more famous Athens Agora building of the same name, but checked
+      out as real and Delphi-specific — funded by a different Attalid king (Attalos I, not II).
+      Same duplicate-marker shadowing bug the Ephesus entry already documented recurred once: the
+      curated `Ναός Απόλλωνος` (Temple of Apollo) entry is unreachable behind a pre-existing
+      standalone `pois.geojson` POI (`poi_sanctuary_apollo_delphi`) at the same coordinates, which
+      always wins the click first — left in as harmless rather than deleted, same call as Ephesus.
+      Verified with Playwright: all 34 keys match real, distinct OSM features in the live building
+      data (confirmed via `queryRenderedFeatures`, no silent typos); clicking the Athenian Treasury
+      surfaces the authored text with no fallback message. 35 sites still open for the standing
+      task.*
 - [ ] `[10-P0-3]` **`flagship-depth`** `deepen` — Bring POIs whose `notes` runs under 60 words up
       to real panel depth in that same field, worst-first. This is the **panel tier of
       `[10-P0-2]`** applied to the places that need it most; the tombstone/label tiers still need
