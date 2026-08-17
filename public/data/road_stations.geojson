@@ -1416,7 +1416,7 @@
         "type": "Point",
         "coordinates": [
           28.8,
-          41.0
+          41
         ]
       },
       "properties": {
@@ -1454,6 +1454,533 @@
         "sources": [
           "Itin. Ant. 322.6",
           "https://en.wikipedia.org/wiki/Byzantium"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.0708,
+          45.1372
+        ]
+      },
+      "properties": {
+        "id": "station_segusio",
+        "category": "vicus",
+        "name": "Segusio",
+        "road": "Via Cottia",
+        "distance_from_previous_mp": 0,
+        "identified": true,
+        "notes": "Segusio, modern Susa, was the capital of the client kingdom of the Cottian Alps under King Cottius, who ceded it to Rome without a fight and was left ruling it as a Roman prefect. Cottius's own triumphal arch, dedicated to Augustus around 9 BCE, still stands here — one of the best-preserved Augustan monuments anywhere in the empire.",
+        "sources": [
+          "Itin. Ant. 341 (Item a Mediolano per Alpes Cottias)",
+          "https://en.wikipedia.org/wiki/Susa,_Piedmont"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.8258,
+          45.0347
+        ]
+      },
+      "properties": {
+        "id": "station_ad_martis",
+        "category": "mutatio",
+        "name": "Ad Martis",
+        "road": "Via Cottia",
+        "distance_from_previous_mp": 33,
+        "identified": true,
+        "notes": "Ad Martis, modern Oulx, sat at the foot of the Montgenevre pass and took its name from a temple to Mars raised here, tradition says, to mark a victory over the Cottian dynasty before its peaceful annexation. A small fort (castrum) guarded the station in the later empire.",
+        "sources": [
+          "Itin. Ant. 341",
+          "https://en.wikipedia.org/wiki/Oulx"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6347,
+          44.8991
+        ]
+      },
+      "properties": {
+        "id": "station_brigantio",
+        "category": "mansio",
+        "name": "Brigantio",
+        "road": "Via Cottia",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Brigantio, modern Briancon, was the highest station of consequence on the Cottian Alps crossing, guarding the approach to the Montgenevre pass into Italy. Its Celtic name, shared with several other Alpine and British sites, simply means high place.",
+        "sources": [
+          "Itin. Ant. 341",
+          "https://en.wikipedia.org/wiki/Briançon"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.55,
+          44.75
+        ]
+      },
+      "properties": {
+        "id": "station_ramae",
+        "category": "mutatio",
+        "name": "Ramae",
+        "road": "Via Cottia",
+        "distance_from_previous_mp": 18,
+        "identified": false,
+        "notes": "Ramae is named in the Antonine Itinerary's Cottian Alps stage between Brigantio and Eburodunum, but no excavated site has been securely matched to it. Placed here by interpolation along the Durance valley road at the recorded distance; the true location may be a few kilometers off.",
+        "sources": [
+          "Itin. Ant. 341"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4939,
+          44.5644
+        ]
+      },
+      "properties": {
+        "id": "station_eburodunum_gallia",
+        "category": "mansio",
+        "name": "Eburodunum",
+        "road": "Via Cottia",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Eburodunum, modern Embrun, guarded the Durance river crossing on the road down from the Cottian Alps into Gaul proper. Its Celtic name (yew-fort) points to an earlier Gallic hillfort on the same commanding site above the river.",
+        "sources": [
+          "Itin. Ant. 341",
+          "https://en.wikipedia.org/wiki/Embrun,_Hautes-Alpes"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2725,
+          44.5486
+        ]
+      },
+      "properties": {
+        "id": "station_caturrigas",
+        "category": "mansio",
+        "name": "Caturrigas",
+        "road": "Via Cottia",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Caturrigas, modern Chorges, gave its name to the Caturiges tribe whose territory it anchored, on the road linking the Cottian Alps crossing to Vapincum. Excavated remains include a substantial Roman-era settlement beside the modern town.",
+        "sources": [
+          "Itin. Ant. 341",
+          "https://en.wikipedia.org/wiki/Chorges"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0785,
+          44.5586
+        ]
+      },
+      "properties": {
+        "id": "station_vapincum",
+        "category": "vicus",
+        "name": "Vapincum",
+        "road": "Via Domitia",
+        "distance_from_previous_mp": 17,
+        "identified": true,
+        "notes": "Vapincum, modern Gap, was the junction where the Alpine road down from Italy met the true Via Domitia running west to Narbo and the Pyrenees. A civitas of the Vocontii tribal confederation, it stayed a modest town through the Roman period, not formally a colonia until far later.",
+        "sources": [
+          "Itin. Ant. 341",
+          "https://en.wikipedia.org/wiki/Gap,_France"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9421,
+          44.1955
+        ]
+      },
+      "properties": {
+        "id": "station_segustero",
+        "category": "mansio",
+        "name": "Segustero",
+        "road": "Via Domitia",
+        "distance_from_previous_mp": 32,
+        "identified": true,
+        "notes": "Segustero, modern Sisteron, commanded the narrow gorge where the Durance cuts through the last Alpine foothills, the single easiest defensive choke point on the whole road between Vapincum and the Rhone valley. The medieval citadel above the town still marks the same strategic spot.",
+        "sources": [
+          "Antonine Itinerary (Cottian Alps stage, Gallia section)",
+          "https://en.wikipedia.org/wiki/Sisteron"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8167,
+          43.9667
+        ]
+      },
+      "properties": {
+        "id": "station_alabontia",
+        "category": "mansio",
+        "name": "Alabontia",
+        "road": "Via Domitia",
+        "distance_from_previous_mp": 19,
+        "identified": true,
+        "notes": "Alabontia was the busiest crossroads station between Segustero and Apta Julia, where the Via Domitia met a north-south road into the Alpine interior. Its remains lie beneath the chapel of Notre-Dame-des-Anges near the village of Lurs, overlooking the Durance.",
+        "sources": [
+          "Antonine Itinerary (Cottian Alps stage, Gallia section)",
+          "https://en.wikipedia.org/wiki/Lurs"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5871,
+          43.8657
+        ]
+      },
+      "properties": {
+        "id": "station_catuiacia",
+        "category": "mutatio",
+        "name": "Catuiacia",
+        "road": "Via Domitia",
+        "distance_from_previous_mp": 19,
+        "identified": true,
+        "notes": "Catuiacia, identified with modern Céreste, was a minor relay station on the stretch of the Via Domitia climbing out of the Durance valley toward Apta Julia. Roman-period remains have been recorded in and around the village.",
+        "sources": [
+          "Itin. Ant. (Item a Mediolano per Alpes Cottias)",
+          "https://en.wikipedia.org/wiki/Céreste"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3957,
+          43.8763
+        ]
+      },
+      "properties": {
+        "id": "station_apta_julia",
+        "category": "vicus",
+        "name": "Apta Julia",
+        "road": "Via Domitia",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Apta Julia, modern Apt, was founded as a Roman colony under Julius Caesar beside the existing road, its forum and theatre serving the fertile Calavon valley. A 1st-century CE bridge over the Calavon still stands just outside the modern town.",
+        "sources": [
+          "Itin. Ant. 343",
+          "https://en.wikipedia.org/wiki/Apt"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0392,
+          43.8377
+        ]
+      },
+      "properties": {
+        "id": "station_cabellio",
+        "category": "vicus",
+        "name": "Cabellio",
+        "road": "Via Domitia",
+        "distance_from_previous_mp": 28,
+        "identified": true,
+        "notes": "Cabellio, modern Cavaillon, sat on the Durance where the Via Domitia crossed toward the Rhone, a Latin-rights town since Caesar's day with its own mint striking bronze coinage. A well-preserved Roman arch still stands in the old town.",
+        "sources": [
+          "Itin. Ant. 343",
+          "https://en.wikipedia.org/wiki/Cavaillon"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2011,
+          43.7132
+        ]
+      },
+      "properties": {
+        "id": "station_ambrussum",
+        "category": "statio",
+        "name": "Ambrussum",
+        "road": "Via Domitia",
+        "distance_from_previous_mp": 15,
+        "identified": true,
+        "notes": "Ambrussum, on the Vidourle river between Nemausus and Sextantio, is one of the best-excavated Via Domitia stations anywhere on the road — its Pont Ambroix bridge, paved street with cart ruts worn a foot deep, and roadside way-station foundations are all still visible. Distance given is the itinerary's own figure measured from Nemausus, itself some 30 Roman miles past Cabellio via the road's Rhone crossing near Arelate.",
+        "sources": [
+          "Itin. Ant. (Item ab Arelate Narbonem)",
+          "https://en.wikipedia.org/wiki/Ambrussum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8919,
+          43.6167
+        ]
+      },
+      "properties": {
+        "id": "station_sextantio",
+        "category": "vicus",
+        "name": "Sextantio",
+        "road": "Via Domitia",
+        "distance_from_previous_mp": 15,
+        "identified": true,
+        "notes": "Sextantio, at modern Castelnau-le-Lez across the Lez river from Montpellier, took its name from its position at the sixth Roman mile of a local distance count. It became the region's chief town in late antiquity, before medieval Montpellier eclipsed it.",
+        "sources": [
+          "Itin. Ant. (Item ab Arelate Narbonem)",
+          "https://en.wikipedia.org/wiki/Castelnau-le-Lez"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7333,
+          43.5167
+        ]
+      },
+      "properties": {
+        "id": "station_forum_domitii",
+        "category": "vicus",
+        "name": "Forum Domitii",
+        "road": "Via Domitia",
+        "distance_from_previous_mp": 15,
+        "identified": true,
+        "notes": "Forum Domitii, near modern Montbazin, was a market town founded alongside the road itself and named for its builder, Gnaeus Domitius Ahenobarbus — the clearest surviving trace of the man the whole route is named after.",
+        "sources": [
+          "Itin. Ant. (Item ab Arelate Narbonem)",
+          "https://en.wikipedia.org/wiki/Via_Domitia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.4333,
+          43.4333
+        ]
+      },
+      "properties": {
+        "id": "station_cessero",
+        "category": "vicus",
+        "name": "Cessero",
+        "road": "Via Domitia",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Cessero, modern Saint-Thibery, controlled the Via Domitia's crossing of the Herault river, with a bridge whose Roman piers still support the modern span. Excavated town remains include a forum and baths.",
+        "sources": [
+          "Itin. Ant. (Item ab Arelate Narbonem)",
+          "https://en.wikipedia.org/wiki/Saint-Thibéry"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.2149,
+          43.3442
+        ]
+      },
+      "properties": {
+        "id": "station_baeterrae",
+        "category": "vicus",
+        "name": "Baeterrae",
+        "road": "Via Domitia",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Baeterrae, modern Beziers, was settled as a colony for veterans of Caesar's Seventh Legion around 36 BCE, its name recalled in the legion's own numbering on surviving inscriptions. The Pont Vieux bridge crosses the Orb on Roman foundations.",
+        "sources": [
+          "Itin. Ant. (Item ab Arelate Narbonem)",
+          "https://en.wikipedia.org/wiki/Béziers"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.0042,
+          43.1839
+        ]
+      },
+      "properties": {
+        "id": "station_narbo",
+        "category": "vicus",
+        "name": "Narbo",
+        "road": "Via Domitia",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Narbo Martius, modern Narbonne, was Rome's first colony outside Italy, founded in 118 BCE the same year Domitius Ahenobarbus built this road, and it grew into the capital of Gallia Narbonensis. Its harbor on a Mediterranean lagoon made it one of the busiest ports in the western empire.",
+        "sources": [
+          "Itin. Ant. (Item ab Arelate Narbonem)",
+          "https://en.wikipedia.org/wiki/Narbonne"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.9214,
+          42.8258
+        ]
+      },
+      "properties": {
+        "id": "station_combusta",
+        "category": "mutatio",
+        "name": "Combusta",
+        "road": "Via Domitia",
+        "distance_from_previous_mp": 25,
+        "identified": true,
+        "notes": "Combusta, near modern Salses-le-Chateau, marked the point where the Via Domitia entered the narrow coastal corridor between the Corbieres hills and the Etang de Salses lagoon on the final approach to Ruscino.",
+        "sources": [
+          "Itin. Ant. (Narbo-Ruscino stage)",
+          "https://mediterranees.net/vagabondages/divers/domitia.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.9219,
+          42.6931
+        ]
+      },
+      "properties": {
+        "id": "station_ruscino",
+        "category": "vicus",
+        "name": "Ruscino",
+        "road": "Via Domitia",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Ruscino, at Chateau-Roussillon near modern Perpignan, was capital of the Roussillon region and gave that region its name. Excavations have uncovered its forum and a large public building, part of it now displayed under a protective shelter.",
+        "sources": [
+          "Itin. Ant. (Narbo-Ruscino stage)",
+          "https://en.wikipedia.org/wiki/Château-Roussillon"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8433,
+          42.5167
+        ]
+      },
+      "properties": {
+        "id": "station_ad_centenarium",
+        "category": "mutatio",
+        "name": "Ad Centenarium",
+        "road": "Via Domitia",
+        "distance_from_previous_mp": 13,
+        "identified": true,
+        "notes": "Ad Centenarium, near modern Le Boulou, sat on the last stretch of flat ground before the Via Domitia began its climb into the Pyrenees toward the Panissars pass and the border with Hispania.",
+        "sources": [
+          "Itin. Ant. (Ruscino-Summum Pyrenaeum stage)",
+          "https://en.wikipedia.org/wiki/Via_Domitia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8667,
+          42.4667
+        ]
+      },
+      "properties": {
+        "id": "station_summum_pyrenaeum",
+        "category": "statio",
+        "name": "Summum Pyrenaeum",
+        "road": "Via Domitia",
+        "distance_from_previous_mp": 8,
+        "identified": true,
+        "notes": "Summum Pyrenaeum, at the Col de Panissars, marked the exact boundary between Gallia Narbonensis and Hispania Tarraconensis and the end of this stage of the Via Domitia, where it continued south as the Via Augusta. Pompey raised a monumental trophy here in 71 BCE to mark his Spanish campaigns; its foundations were rediscovered in the 1980s.",
+        "sources": [
+          "Strabo, Geography 4.1.3",
+          "https://en.wikipedia.org/wiki/Trophy_of_Pompey"
         ],
         "confidence": "high"
       }
