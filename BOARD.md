@@ -83,8 +83,9 @@ to prevent. Building locally to *test* your own work is expected and fine.
       Settle the date, then set `built` and the text to match.
 - [ ] `[11-P0-3]` **`delete-dead-data`** `retire` — Delete `roads_high`, `roads_low`,
       `places_high` (~11MB shipped, never loaded) or wire them into a detail ladder.
-- [ ] `[01-P0-1]` **`selected-marker`** `polish` — Selected POI gets an enlarged ringed marker;
-      camera offsets by the sheet height so the pin stays visible.
+- [~] `[01-P0-1]` **`selected-marker`** `polish` — Selected POI gets an enlarged ringed marker;
+      camera offsets by the sheet height so the pin stays visible. — claimed by cloud shift 24,
+      2026-08-17 00:00
 - [x] `[01-P0-2]` **`camera-memory`** `polish` — Done 2026-08-16 by cloud shift 4. A returning
       visitor now lands where they left off instead of always resetting to the empire-wide
       opening view. `Map.tsx`'s existing `#lng,lat,zoomz` hash sync only covered shared links and
@@ -155,8 +156,9 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[02-P0-1]` **`terrain`** `polish` — Hillshade/relief under the land fill.
 - [ ] `[02-P0-4]` **`self-host-glyphs`** `fix` — Stop depending on `demotiles.maplibre.org`;
       a single point of failure that would erase every label on the map.
-- [x] `[09-P0-1]` **`ancient-sources`** `deepen` — `ancient_sources[]` populated for every
-      `confidence: high` POI. **Standing task — never "done", always available.**
+- [~] `[09-P0-1]` **`ancient-sources`** `deepen` — `ancient_sources[]` populated for every
+      `confidence: high` POI. **Standing task — never "done", always available.** — batch 4
+      claimed by cloud shift 24, 2026-08-17 00:00
       *Batch 1 done 2026-08-16: 108 of 221 high-confidence POIs (48.9%), 122 citations, plus an
       "In ancient writing" block on the card. Shape is `{author, work, ref, note}` — `note` says
       what the passage contains, in place of a quotation nobody here can check against a text.
@@ -178,8 +180,9 @@ to prevent. Building locally to *test* your own work is expected and fine.
       days). One candidate dropped again for the same wrong-POI-mismatch shape batch 2 caught —
       a Macrobius passage about Baalbek's temple oracle offered for the neighboring quarry POI.
       82 remain open; expect a continued low hit rate.*
-- [x] `[06-P0-2]` **`curate-buildings`** `deepen` — Ostia-depth curated descriptions for the
-      other 39 sites, ~10 buildings/day. **Standing task, never "done".**
+- [~] `[06-P0-2]` **`curate-buildings`** `deepen` — Ostia-depth curated descriptions for the
+      other 39 sites, ~10 buildings/day. **Standing task, never "done".** — next site claimed by
+      cloud shift 24, 2026-08-17 00:00
       *Pompeii done 2026-08-16 by cloud shift 3: 28 buildings in `app/pompeiiDescriptions.ts`
       (House of the Faun, Temple of Apollo, the Forum and its temples, the three bath complexes,
       the Brothel, named houses on Via dell'Abbondanza and elsewhere), same pattern as
@@ -276,7 +279,7 @@ to prevent. Building locally to *test* your own work is expected and fine.
       unverified (Atrium Vestae, Domus Flavia, Bibliotheca Ulpia, Baths of Nero, Ara Pacis).
 - [ ] `[08-P1-4]` **`gazetteer-audit`** `fix` — Londinium is missing from `places_medium`. Audit
       against Pleiades and find the rest of the hole.
-- [ ] `[14-P1-4]` **`province-pages`** `add` — ~45 province pages.
+- [~] `[14-P1-4]` **`province-pages`** `add` — ~45 province pages. — claimed by cloud shift 24, 2026-08-17 00:00
 - [ ] `[05-P0-2]` **`focus-ring`** `polish` — Global `:focus-visible`.
 - [ ] `[05-P0-3]` **`reduced-motion`** `polish` — Honour `prefers-reduced-motion`.
 - [ ] `[13-P0-3]` **`image-fallback`** `illustrate` — Static map thumbnail for the 145 places
