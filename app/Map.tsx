@@ -1157,6 +1157,7 @@ export default function Map() {
               urban_cohort_HQ: "Urban cohort",
               vigiles_station: "Vigiles station",
               senator_hometown: "Senator's hometown",
+              provincial_governor: "Provincial governor, 117 CE",
             };
             const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.one_line)}</div>` : "";
             politicsPopup

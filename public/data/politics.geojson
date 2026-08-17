@@ -320,6 +320,190 @@
         "sources": ["Wikipedia, Gaius Avidius Nigrinus", "Historia Augusta, Hadrian 7"],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-0.0895, 51.5128] },
+      "properties": {
+        "id": "politics_governor_britannia",
+        "category": "provincial_governor",
+        "name": "Marcus Appius Bradua, governor of Britannia",
+        "one_line": "A former consul of 108, Bradua has held Britain's frontier command for roughly two years and is still in post as news of Trajan's death crosses the empire — Hadrian replaces him within months.",
+        "notes": "Governed Britannia through a term modern scholarship brackets to roughly 115-118, putting him in office at the moment of the imperial transition even though no dated inscription pins him to 11 August 117 specifically.",
+        "province": "Britannia",
+        "modern_location": "London, United Kingdom",
+        "extant_117ce": true,
+        "sources": ["List of governors of Roman Britain (Wikipedia)", "roman-britain.co.uk, s.v. Marcus Appius Bradua"],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [21.2231, 44.7369] },
+      "properties": {
+        "id": "politics_governor_moesia_superior",
+        "category": "provincial_governor",
+        "name": "Lucius Tutilius Lupercus Pontianus, governor of Moesia Superior",
+        "one_line": "A senator who reached the suffect consulship around 105, Lupercus holds this Danube-frontier command opposite Dacia, the last governor of the province securely attested before a gap in the record until 120.",
+        "notes": "His governorship is attested only to around 115; nothing else is named until 120, so his presence specifically in 117 is inferred from that five-year gap rather than independently dated.",
+        "province": "Moesia Superior",
+        "modern_location": "Kostolac, Serbia",
+        "extant_117ce": true,
+        "sources": ["List of Roman governors of Upper Moesia (Wikipedia)", "Werner Eck, \"Jahres- und Provinzialfasten der senatorischen Statthalter\", Chiron 12 (1982)"],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [22.7862, 45.503] },
+      "properties": {
+        "id": "politics_governor_dacia",
+        "category": "provincial_governor",
+        "name": "Gaius Julius Quadratus Bassus, governor of Dacia",
+        "one_line": "A veteran Trajanic general of Pergamene royal descent, Quadratus Bassus governs Trajan's newest conquest as frontier unrest flares right after the emperor's death — he dies in the province this same year putting it down.",
+        "province": "Dacia",
+        "modern_location": "Sarmizegetusa, Romania",
+        "extant_117ce": true,
+        "sources": ["Wikipedia, s.v. Gaius Julius Quadratus Bassus", "IGR IV 1302 (Pergamon cursus inscription)"],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [28.6383, 44.1733] },
+      "properties": {
+        "id": "politics_governor_moesia_inferior",
+        "category": "provincial_governor",
+        "name": "Quintus Pompeius Falco, governor of Moesia Inferior",
+        "one_line": "A trusted Trajanic general whose earlier commands ran through Lycia-Pamphylia and Judaea, Falco holds this Danube-mouth frontier as Hadrian takes power, before moving on within the year to command Britannia.",
+        "province": "Moesia Inferior",
+        "modern_location": "Constanta, Romania",
+        "extant_117ce": true,
+        "sources": ["List of Roman governors of Lower Moesia (Wikipedia)", "CIL X 6321 (Tarracina cursus inscription)"],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [27.9611, 40.9686] },
+      "properties": {
+        "id": "politics_governor_thracia",
+        "category": "provincial_governor",
+        "name": "Aulus Platorius Nepos, governor of Thracia",
+        "one_line": "A rising favorite who will soon become one of Hadrian's closest confidants and later build Hadrian's Wall, Nepos governs Thracia as its praetorian legate in 117.",
+        "province": "Thracia",
+        "modern_location": "Marmara Eregli, Turkey",
+        "extant_117ce": true,
+        "sources": ["Wikipedia, s.v. Aulus Platorius Nepos", "Oxford Classical Dictionary, s.v. Platorius Nepos, Aulus"],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [32.8597, 39.9334] },
+      "properties": {
+        "id": "politics_governor_galatia_cappadocia",
+        "category": "provincial_governor",
+        "name": "Lucius Catilius Severus, governor of Galatia et Cappadocia",
+        "one_line": "A close friend of Pliny the Younger and a decorated veteran of Trajan's Parthian campaign, Catilius Severus governs the combined Cappadocia-Armenia frontier command right as Trajan dies — within weeks Hadrian promotes him again, to succeed himself as legate of Syria.",
+        "notes": "His authority also extends over the freshly-conquered, jointly-administered territory of Armenia and Mesopotamia (its own entry in this project's province registry, folded here rather than given a second, speculatively-placed marker) — a command already unraveling as the Parthian revolt spreads, which Hadrian will formally abandon within months. No separate named legate is attested for the trans-Euphrates Mesopotamian territory as distinct from Cappadocia-Armenia.",
+        "province": "Galatia et Cappadocia",
+        "modern_location": "Ankara, Turkey",
+        "extant_117ce": true,
+        "sources": ["Wikipedia, s.v. Lucius Catilius Severus", "CIL X 8291 = ILS 1041", "Wikipedia, s.v. Mesopotamia (Roman province)"],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [34.8998, 36.9214] },
+      "properties": {
+        "id": "politics_governor_cilicia",
+        "category": "provincial_governor",
+        "name": "Gaius Bruttius Praesens, governor of Cilicia",
+        "one_line": "A distinguished Trajanic general later tied by marriage into Marcus Aurelius's family, Praesens governs Cilicia as praetorian legate at the exact moment Trajan dies nearby at Selinus, putting him at the center of the succession.",
+        "province": "Cilicia",
+        "modern_location": "Tarsus, Turkey",
+        "extant_117ce": true,
+        "sources": ["Wikipedia, s.v. Gaius Bruttius Praesens Lucius Fulvius Rusticus", "List of Roman governors of Cilicia (Wikipedia)"],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [36.1603, 36.2021] },
+      "properties": {
+        "id": "politics_governor_syria",
+        "category": "provincial_governor",
+        "name": "Publius Aelius Hadrianus, governor of Syria",
+        "one_line": "Trajan's second cousin and adopted heir commands Syria's legions as consular legate when news of Trajan's death reaches Antioch on 11 August 117 — that same army immediately hails him emperor, the exact event this map is frozen on.",
+        "notes": "His successor as legate of Syria, Lucius Catilius Severus, takes over only in October 117 when Hadrian departs for Rome — after this map's snapshot date, so not given his own marker here.",
+        "province": "Syria",
+        "modern_location": "Antakya, Turkey",
+        "extant_117ce": true,
+        "sources": ["Cass. Dio 69.1-2", "HA Hadr. 4.6-4.7"],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [34.8913, 32.5] },
+      "properties": {
+        "id": "politics_governor_iudaea",
+        "category": "provincial_governor",
+        "name": "Lusius Quietus, governor of Iudaea",
+        "one_line": "A Berber prince turned Roman cavalry commander who broke Parthian siege lines for Trajan, Quietus holds Judaea as consular legate in the thick of the Kitos War — Hadrian strips him of the post within days of taking power and has him executed months later.",
+        "province": "Iudaea",
+        "modern_location": "Caesarea, Israel",
+        "extant_117ce": true,
+        "sources": ["Cass. Dio 68.32", "Eusebius, Historia Ecclesiastica 4.2.5"],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [36.4814, 32.5175] },
+      "properties": {
+        "id": "politics_governor_arabia",
+        "category": "provincial_governor",
+        "name": "Marcus Paccius Silvanus Quintus Coredius Gallus Gargilius Antiquus, governor of Arabia Petraea",
+        "one_line": "An African-born senator carrying one of the longest names in the Roman fasti, Gargilius Antiquus governs Arabia Petraea from Bostra through the Trajan-to-Hadrian transition, a tenure securely bracketed 116 to 119.",
+        "province": "Arabia Petraea",
+        "modern_location": "Bosra, Syria",
+        "extant_117ce": true,
+        "sources": ["Wikipedia, s.v. Quintus Coredius Gallus Gargilius Antiquus", "List of Roman governors of Arabia Petraea (Wikipedia)"],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [29.9187, 31.2001] },
+      "properties": {
+        "id": "politics_governor_aegyptus",
+        "category": "provincial_governor",
+        "name": "Marcus Rutilius Lupus, prefect of Aegyptus",
+        "one_line": "Egypt's equestrian prefect since 113 — a senator could not hold this post by law — Lupus is on watch when the Kitos War erupts into open Jewish revolt across Alexandria and the countryside, a crisis so severe Trajan sends the praetorian prefect Marcius Turbo to help put it down.",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "extant_117ce": true,
+        "sources": ["Wikipedia, s.v. Marcus Rutilius Lupus", "Wikipedia, s.v. Praefectus Aegypti"],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [10.3235, 36.8528] },
+      "properties": {
+        "id": "politics_governor_africa_proconsularis",
+        "category": "provincial_governor",
+        "name": "Gaius Julius Cornutus Tertullus, governor of Africa Proconsularis",
+        "one_line": "A veteran senator who once served as Pliny the Younger's colleague at the treasury and had earlier governed Bithynia-Pontus, Cornutus Tertullus caps his career as proconsul of Africa, the most senior senatorial governorship of all — and dies in office there in 117.",
+        "province": "Africa Proconsularis",
+        "modern_location": "Carthage, Tunisia",
+        "extant_117ce": true,
+        "sources": ["Wikipedia, s.v. Gaius Julius Cornutus Tertullus", "Journal of Roman Studies, \"Cornutus Tertullus and the Plancii of Perge\""],
+        "confidence": "high"
+      }
     }
   ]
 }

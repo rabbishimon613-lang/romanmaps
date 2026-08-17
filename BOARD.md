@@ -349,8 +349,36 @@ to prevent. Building locally to *test* your own work is expected and fine.
 ## P2
 
 - [ ] `[07-P1-3]` **`prices`** `deepen` — Prices and wages; extend the currency converter.
-- [~] `[07-P1-4]` **`governors`** `add` — Governor of every province in 117 CE (~45 names). —
-      claimed by cloud shift 25, 2026-08-17 06:18
+- [x] `[07-P1-4]` **`governors`** `add` — Done 2026-08-17 by cloud shift 25, with an honest
+      shortfall against the ~45 estimate — see note below. 12 governors added to
+      `public/data/politics.geojson` (`category: "provincial_governor"`, reusing the existing
+      layer/popup — no new UI surface), covering 13 of the 43 provinces (Lucius Catilius Severus
+      held both Galatia-Cappadocia and the improvised Armenia-Mesopotamia command, one marker
+      carries both). Researched via two parallel background WebSearch passes, one per half of the
+      province list, each told explicitly to report `not_found` rather than invent a name.
+      **The ~45 figure in this ticket's own text turned out to be optimistic**: named, dated
+      provincial governors for the specific year 117 CE are genuinely rare in the surviving
+      record outside the handful of provinces Trajan's Parthian War pulled into the historical
+      spotlight — both research passes came back with far more honest `not_found`s than hits (21
+      `not_found` across both batches) for the ordinary senatorial proconsulships and equestrian
+      procuratorships, where scholarship's fasti simply have gaps spanning this exact year. The
+      12 that shipped lean hard on that same War: Hadrian himself at Syria the day he's acclaimed,
+      Lusius Quietus mid-Kitos-War in Judaea, Marcus Rutilius Lupus watching Alexandria burn,
+      Quadratus Bassus dying in Dacia this same year, three more generals from the same campaign.
+      Two more provinces were reported `not_found` only because the researching agent exhausted
+      its search-tool budget before reaching them (Hispania Baetica, Lusitania, Sicilia, Dalmatia)
+      — genuinely unresearched, not confirmed-absent, and the best remaining marginal return for
+      whoever picks this back up. All entries carry real sources (ancient authors — Cassius Dio,
+      the Historia Augusta, Eusebius — plus modern fasti compilations and epigraphy) and an honest
+      `confidence` field (7 high, 4 medium, 1 low for Moesia Superior, whose only evidence is a
+      five-year gap between two other governors' securely dated terms). Verified with Playwright:
+      toggled the existing "Political apparatus" layer on, confirmed all 32 politics.geojson
+      features (20 existing + 12 new) render, hovered a new marker and confirmed the popup shows
+      the right name/bio/category label. Also confirmed, while debugging an unrelated screenshot
+      timing issue, that `applyAllLayers()` (the invariant-0 mechanism hiding non-base thematic
+      layers by default) does fire correctly on a cold load in this project's dev-server sandbox —
+      just slowly (~20-25s here, this environment's network restrictions make MapLibre's external
+      glyph-loading retries slow; not a bug, not present in production, no action needed).
 - [ ] `[07-P1-5]` **`ordinary-people`** `add` — 30–50 named non-elite people, pinned.
 - [ ] `[06-P1-5]` **`finds`** `illustrate` — 3–8 artefacts per site with images and museum.
 - [ ] `[10-P1-4]` **`entrance`** `polish` — One sentence, three doors, dismissible.
