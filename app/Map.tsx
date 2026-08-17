@@ -252,9 +252,28 @@ export default function Map() {
         if (pushTimer) clearTimeout(pushTimer);
         pushTimer = setTimeout(writeHash, 400);
       });
+      // Selecting a place opens the details panel/sheet on top of the map, and without help the
+      // pin it's showing can land right underneath it — desktop's panel covers x:[70,450],
+      // mobile's half-height sheet covers the bottom 55% of the screen. `padding` shifts where
+      // MapLibre puts `center` on screen (not the geographic center itself), so easing to the
+      // same pin with padding on the covered side reveals it in the space that's left. Clearing
+      // the selection resets padding immediately (no animation) so it doesn't linger for the next
+      // unrelated pan/zoom.
+      const applySelectionCamera = (sel: ReturnType<typeof getSelectedPoi>) => {
+        if (!map) return;
+        if (sel && sel.lngLat) {
+          const isMobile = window.innerWidth <= 640;
+          const padding = isMobile
+            ? { top: 0, right: 0, left: 0, bottom: Math.round(window.innerHeight * 0.55) }
+            : { top: 66, right: 0, left: 470, bottom: 40 };
+          map.easeTo({ center: sel.lngLat, padding, duration: 500 });
+        } else {
+          map.setPadding({ top: 0, right: 0, left: 0, bottom: 0 });
+        }
+      };
       // Selecting/clearing a place is a discrete user action (click a pin, click a building, hit
       // Esc) — write immediately rather than debouncing like the continuous pan/zoom stream above.
-      unsubPoi = subscribeSelectedPoi(() => writeHash());
+      unsubPoi = subscribeSelectedPoi((sel) => { writeHash(); applySelectionCamera(sel); });
       onPopState = () => {
         if (!map) return;
         const view = parseHash(window.location.hash);

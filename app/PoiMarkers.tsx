@@ -5,7 +5,7 @@ import maplibregl from "maplibre-gl";
 import { CATEGORY_GROUPS, colorForCategory, glyphForCategory, groupIdForCategory } from "./poiCategories";
 import { useCategoryFilters } from "./CategoryChips";
 import { useHiddenCategories } from "./useHiddenCategories";
-import { selectPoi } from "./usePoiPanel";
+import { selectPoi, usePoiPanel } from "./usePoiPanel";
 import { useLayers } from "./useLayers";
 
 type PoiFeature = GeoJSON.Feature<GeoJSON.Point, Record<string, any>>;
@@ -32,8 +32,17 @@ export default function PoiMarkers() {
   const hiddenCategories = useHiddenCategories();
   const layers = useLayers();
   const visible = layers["pois"];
+  const selected = usePoiPanel();
+  const selectedId = typeof selected?.props?.id === "string" ? selected.props.id : undefined;
   const markersRef = useRef<maplibregl.Marker[]>([]);
   const featuresRef = useRef<PoiFeature[] | null>(null);
+  // Always current, read from inside `render()` below instead of closing over `selectedId`
+  // directly — the main effect intentionally does NOT depend on selection (see the comment on
+  // its dependency array), so its closure's `selectedId` would otherwise go stale immediately.
+  const selectedIdRef = useRef<string | undefined>(undefined);
+  selectedIdRef.current = selectedId;
+  // Re-run to redraw (styling only, no data refetch) whenever the selection changes.
+  const rerenderRef = useRef<(() => void) | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -64,6 +73,7 @@ export default function PoiMarkers() {
       const zoom = map.getZoom();
       if (zoom < POI_MIN_ZOOM) return;
       const showLabel = zoom >= POI_LABEL_MIN_ZOOM;
+      const selectedId = selectedIdRef.current;
 
       const activeGroups = Object.keys(filters).filter((k) => filters[k]);
       const anyActive = activeGroups.length > 0;
@@ -107,7 +117,8 @@ export default function PoiMarkers() {
 
       for (const c of clusters) {
         if (c.members.length === 1) {
-          const marker = buildSoloMarker(c.members[0], showLabel);
+          const isSelected = (c.members[0].properties || {}).id === selectedId;
+          const marker = buildSoloMarker(c.members[0], showLabel, isSelected);
           marker.addTo(map);
           markersRef.current.push(marker);
         } else {
@@ -118,7 +129,7 @@ export default function PoiMarkers() {
       }
     }
 
-    function buildSoloMarker(f: PoiFeature, showLabel: boolean): maplibregl.Marker {
+    function buildSoloMarker(f: PoiFeature, showLabel: boolean, isSelected: boolean): maplibregl.Marker {
       const props: any = f.properties || {};
       const category: string = props.category || "";
       const color = colorForCategory(category);
@@ -126,21 +137,36 @@ export default function PoiMarkers() {
       const name = props.name_english || props.name_latin || "";
       const [lng, lat] = f.geometry.coordinates as [number, number];
 
+      // Selected pin: ~1.35x scale + a white/color ring around the head, mirroring how Google
+      // Maps distinguishes the open place from the rest of the pins on screen. Growing the pin
+      // via its width/height attrs (not a CSS transform) keeps the existing translateY nudge and
+      // anchor:"top" math untouched — the box just gets taller, same as the unselected case.
+      const scale = isSelected ? 1.35 : 1;
+      const w = Math.round(22 * scale);
+      const h = Math.round(30 * scale);
+      const glyphSize = Math.round(12 * scale);
+      const glyphOffset = Math.round(5 * scale);
+      const ring = isSelected
+        ? `<circle cx="11" cy="11" r="10" fill="none" stroke="#fff" stroke-width="2.5"/>
+           <circle cx="11" cy="11" r="10" fill="none" stroke="${color}" stroke-width="1.25"/>`
+        : "";
+
       const el = document.createElement("div");
-      el.className = "rm-poi-marker";
-      el.style.cssText = "cursor:pointer;display:flex;flex-direction:column;align-items:center;transform:translateY(-6px);";
+      el.className = isSelected ? "rm-poi-marker rm-poi-marker--selected" : "rm-poi-marker";
+      el.style.cssText = `cursor:pointer;display:flex;flex-direction:column;align-items:center;transform:translateY(${-6 * scale}px);z-index:${isSelected ? 5 : 1};`;
 
       const labelHtml = showLabel && name
         ? `<div style="margin-top:2px;padding:1px 6px;background:rgba(255,255,255,.92);border-radius:4px;font:600 11px/1.2 var(--font-cinzel),Georgia,serif;letter-spacing:0.02em;color:#202124;white-space:nowrap;box-shadow:0 1px 2px rgba(0,0,0,.15);max-width:160px;overflow:hidden;text-overflow:ellipsis;">${escapeHtml(name)}</div>`
         : "";
 
       el.innerHTML = `
-        <div style="width:22px;height:30px;position:relative;filter:drop-shadow(0 1px 2px rgba(0,0,0,.35));">
-          <svg viewBox="0 0 22 30" width="22" height="30" style="position:absolute;inset:0;">
+        <div style="width:${w}px;height:${h}px;position:relative;filter:drop-shadow(0 1px 3px rgba(0,0,0,.4));">
+          <svg viewBox="0 0 22 30" width="${w}" height="${h}" style="position:absolute;inset:0;">
             <path fill="${color}" d="M11 0a11 11 0 0 1 11 11c0 8-11 19-11 19S0 19 0 11A11 11 0 0 1 11 0z"/>
             <circle cx="11" cy="11" r="7.5" fill="rgba(255,255,255,.15)"/>
+            ${ring}
           </svg>
-          <svg viewBox="0 0 24 24" width="12" height="12" style="position:absolute;left:5px;top:5px;" fill="#fff">
+          <svg viewBox="0 0 24 24" width="${glyphSize}" height="${glyphSize}" style="position:absolute;left:${glyphOffset}px;top:${glyphOffset}px;" fill="#fff">
             <path d="${glyph}"/>
           </svg>
         </div>
@@ -229,6 +255,7 @@ export default function PoiMarkers() {
         markersRef.current = [];
         return;
       }
+      rerenderRef.current = () => render(map, feats);
       render(map, feats);
 
       onZoomEnd = () => {
@@ -241,11 +268,25 @@ export default function PoiMarkers() {
     attach();
     return () => {
       cancelled = true;
+      rerenderRef.current = null;
       if (mapRef && onZoomEnd) mapRef.off("zoomend", onZoomEnd);
       markersRef.current.forEach((m) => m.remove());
       markersRef.current = [];
     };
+    // Deliberately NOT dependent on `selectedId` — this effect fetches data, waits on the map's
+    // one-time 'load' event when it isn't ready yet, and rebuilds the zoomend listener. `'load'`
+    // only ever fires once per map instance, so re-running this whole effect on every place
+    // selection would await an event that will never come a second time and silently strand
+    // every marker at zero. Selection instead goes through the lightweight effect below, which
+    // just re-runs the already-built `render()` closure via `rerenderRef`.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filters, hiddenCategories, visible]);
+
+  // Selecting/deselecting a place only changes which pin is enlarged+ringed — redraw without
+  // touching the fetch/load-wait pipeline above.
+  useEffect(() => {
+    rerenderRef.current?.();
+  }, [selectedId]);
 
   return null;
 }
