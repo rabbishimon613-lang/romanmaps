@@ -26,6 +26,24 @@ queued for deletion under `[11-P0-3]`.
 
 ---
 
+## 2026-08-17
+
+| Measure | Value | Notes |
+|---|---:|---|
+| POIs in `pois.geojson` | 467 | the curated place canon |
+| Records in the 28 thematic files | 691 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
+| **Curated places, total** | **1,158** | |
+| Description of 60+ words | 386 · **82.7%** | measured on `notes`; 81 still thin |
+| Has an image | 251 · **53.7%** | |
+| Has an ancient source | 149 · **31.9%** | |
+| — of `confidence: high` POIs | 149 / 230 · **64.8%** | the target set for `[09-P0-1]` |
+| Categories with a "what happened here" paragraph | 52 / 52 · **100.0%** | covers 467/467 POIs |
+| Sites with curated building descriptions | 4 / 40 · **10.0%** | ephesus, herculaneum, ostia, pompeii (`[06-P0-2]`, standing) |
+| Validator errors | **0** | |
+| Validator warnings | 14 | reviewed; see the standing-warnings note |
+| Cross-file name collisions (<150 m) | 75 | the dedupe backlog `[12-P0-1]` has to resolve |
+| Cold-load LCP | not measured | needs a dev server; blocked by `[15-P0-1]` |
+
 ## 2026-08-16
 
 | Measure | Value | Notes |
@@ -49,3 +67,4 @@ queued for deletion under `[11-P0-3]`.
 | Date | POIs | 60+ words | Image | Ancient source | Validator |
 |---|---:|---:|---:|---:|---:|
 | 2026-08-16 | 467 | 82.7% | 53.7% | 31.0% | 0 errors |
+| 2026-08-17 | 467 | 82.7% | 53.7% | 31.9% | 0 errors |
