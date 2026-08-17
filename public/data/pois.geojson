@@ -828,7 +828,15 @@
     ],
     "confidence": "high",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Terme%20di%20Traiano%2001.jpg?width=800",
-    "image_credit": "Baths of Trajan · Wikimedia Commons"
+    "image_credit": "Baths of Trajan · Wikimedia Commons",
+    "ancient_sources": [
+     {
+      "author": "Cassius Dio",
+      "work": "Roman History",
+      "ref": "69.4.1",
+      "note": "names the baths among the works Apollodorus of Damascus built for Trajan in Rome, in the anecdote explaining Hadrian's later grudge against the architect"
+     }
+    ]
    }
   },
   {
