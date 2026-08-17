@@ -350,8 +350,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[06-P1-3]` **`building-typology`** `deepen` — Extend to the ~35-term standard vocabulary,
       grouped into six colour families.
 - [ ] `[06-P1-4]` **`excavation-history`** `deepen` — `excavation[]` on all 40 sites.
-- [ ] `[09-P1-4]` **`epigraphy`** `deepen` — 1–3 inscriptions per site from EDCS/EDH with text,
-      translation and reference. **Standing task.**
+- [~] `[09-P1-4]` **`epigraphy`** `deepen` — claimed by cloud shift 26, 2026-08-17 13:52. 1–3
+      inscriptions per site from EDCS/EDH with text, translation and reference. **Standing task.**
 - [ ] `[09-P1-5]` **`clear-unverified`** `verify` — Re-check the citations SHIFT_LOG recorded as
       unverified (Atrium Vestae, Domus Flavia, Bibliotheca Ulpia, Baths of Nero, Ara Pacis).
 - [ ] `[08-P1-4]` **`gazetteer-audit`** `fix` — Londinium is missing from `places_medium`. Audit
@@ -388,7 +388,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       with no image.
 - [ ] `[11-P0-2]` **`lazy-overlays`** `polish` — Fetch a thematic layer's data on first enable.
 - [ ] `[01-P0-3]` **`cluster-expand`** `polish` — Tapping a cluster badge fits to its members.
-- [ ] `[01-P0-4]` **`search-selects`** `polish` — Search result drops a pin and opens its card.
+- [~] `[01-P0-4]` **`search-selects`** `polish` — claimed by cloud shift 26, 2026-08-17 13:52.
+      Search result drops a pin and opens its card.
 
 ## P2
 
@@ -423,7 +424,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       layers by default) does fire correctly on a cold load in this project's dev-server sandbox —
       just slowly (~20-25s here, this environment's network restrictions make MapLibre's external
       glyph-loading retries slow; not a bug, not present in production, no action needed).
-- [ ] `[07-P1-5]` **`ordinary-people`** `add` — 30–50 named non-elite people, pinned.
+- [~] `[07-P1-5]` **`ordinary-people`** `add` — claimed by cloud shift 26, 2026-08-17 13:52.
+      30–50 named non-elite people, pinned.
 - [ ] `[06-P1-5]` **`finds`** `illustrate` — 3–8 artefacts per site with images and museum.
 - [ ] `[10-P1-4]` **`entrance`** `polish` — One sentence, three doors, dismissible.
 - [ ] `[03-P2-8]` **`compare-today`** `polish` — Satellite/modern toggle for the viewport.
