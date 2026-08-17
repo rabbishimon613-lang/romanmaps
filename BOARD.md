@@ -475,3 +475,29 @@ applies, cleared 2026-08-16 by cloud shift 3** — see the ticket's own note abo
 `[11-P0-1]`'s per-site split, the 21MB combined file this was skipped over no longer exists;
 `public/data/sites/pompeii_buildings.geojson` alone was small enough to key entries against
 directly.
+
+- 2026-08-17 · `[14-P1-4]` province-pages · cloud shift 24. `app/provinces.ts` (43 provinces) +
+  `app/province/[slug]/page.tsx`, wired into `sitemap.ts`. See ticket note above.
+- 2026-08-17 · `[01-P0-1]` selected-marker · cloud shift 24. Enlarged+ringed selected pin,
+  panel/sheet-aware camera padding. Found and fixed a real bug in the same pass — see ticket
+  note above.
+- 2026-08-17 · `[09-P0-1]` ancient-sources · cloud shift 24. Batch 4: 1 more citation, 149/230
+  (64.8%). See ticket note above for the diminishing-returns accounting.
+- 2026-08-17 · `[06-P0-2]` curate-buildings (Ephesus) · cloud shift 24. 33 buildings in
+  `app/ephesusDescriptions.ts`, the first living-city (not buried-in-79-CE) site to get this
+  treatment. See ticket note above.
+- 2026-08-17 · SHIFT_BRIEF axis 2 (no board ticket ID — brief axis work, board had no unclaimed
+  road-stations ticket) · cloud shift 24. Via Domitia + Via Cottia: 22 new stations in
+  `road_stations.geojson` (61 → 83), Italy to the Pyrenees. See commit for the per-station
+  identification/confidence accounting.
+
+**Ratio state after this run:** cloud shift 24 ran a complete 1:2:1 cycle — 1 `add`
+(`[14-P1-4]` province-pages), 2 `deepen` (`[09-P0-1]` ancient-sources batch 4, `[06-P0-2]`
+curate-buildings/Ephesus), 1 `polish` (`[01-P0-1]` selected-marker) — closing out the `add`+`deepen`
+debt the prior mac-pass note left open. The open cycle is clean; the next run picks whatever's
+topmost and unclaimed. At the time this run ends, the topmost unclaimed P0 tickets are
+`[12-P0-1]` merge-themes (`fix`, big — may need splitting per its own note), `[03-P0-1]` schema-v2
+(`fix`), and `[03-P0-2]` card-rebuild (`polish`) — no unclaimed P0 `add` exists; the next `add` in
+priority order is `[14-P1-4]`'s neighbor tickets in P1/P2 (`[07-P1-4]` governors, `[07-P1-5]`
+ordinary-people, `[14-P2-8]` hub-pages) unless a new P0 `add` opens up first. Check the board fresh
+— don't assume this note is still current by the time you read it.
