@@ -11,12 +11,13 @@ const ROLE_RING: Record<string, string> = {
   military: "#a1442e",
   writer: "#2a7fb5",
   religious: "#a08a2e",
+  ordinary: "#3d7a4e",
 };
 const DEFAULT_RING = "#5f6368";
 
 /** People alive (or just died) in 117 CE, pinned at their known location — portrait-medallion
  * markers with a colored ring by role (purple=imperial, red=military, blue=writer/philosopher,
- * gold=religious). Click opens a small self-contained popup (not the full PlaceDetails panel,
+ * gold=religious, green=ordinary). Click opens a small self-contained popup (not the full PlaceDetails panel,
  * whose schema is POI-shaped, not person-shaped). Shares the "117 CE — people & events" Layers
  * toggle with the native event-polygon/point map layers in app/Map.tsx. */
 export default function PeopleMarkers() {
@@ -76,6 +77,12 @@ export default function PeopleMarkers() {
             Array.isArray(props.sources) && props.sources.length
               ? `<div style="color:#5f6368; font-size:11px; margin-top:6px;">${props.sources.map(escapeHtml).join(" · ")}</div>`
               : "";
+          // Several of these people are documented by a tablet or papyrus dated a few years
+          // either side of 117 rather than on the day itself. Showing the evidence date lets the
+          // bio state plain facts instead of hedging its way through every sentence.
+          const attestedLine = props.attested
+            ? `<div style="color:#5f6368; font-size:11px; margin-top:6px; font-style:italic;">Known from: ${escapeHtml(props.attested)}</div>`
+            : "";
           popup
             .setLngLat([lng, lat])
             .setHTML(
@@ -83,6 +90,7 @@ export default function PeopleMarkers() {
                  <div style="font-weight: 600;">${escapeHtml(props.name || "")}</div>
                  <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(props.role || "")} · ${escapeHtml(props.location_117 || "")}</div>
                  <div style="margin-top:6px;">${escapeHtml(props.one_line || "")}</div>
+                 ${attestedLine}
                  ${sourcesLine}
                </div>`,
             )

@@ -549,6 +549,585 @@
           "https://en.wikipedia.org/wiki/Lukuas"
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.3612,
+          54.991
+        ]
+      },
+      "properties": {
+        "id": "person_chrauttius",
+        "name": "Chrauttius",
+        "role": "Cavalry trooper, Ninth Cohort of Batavians",
+        "role_group": "military",
+        "location_117": "Vindolanda, Britannia (modern Northumberland, England)",
+        "attested": "Vindolanda tablet, c. 97-105 CE",
+        "one_line": "A Batavian trooper on the northern British frontier who wrote to his old messmate Veldeius, then serving in London, to complain that he never wrote back, pass on greetings to their comrades, and ask him to buy a pair of shears.",
+        "sources": [
+          "Tab. Vindol. II.310",
+          "https://romaninscriptionsofbritain.org/inscriptions/TabVindol310"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.118,
+          51.509
+        ]
+      },
+      "properties": {
+        "id": "person_veldeius",
+        "name": "Veldeius",
+        "role": "Cavalry trooper, later groom to the provincial governor",
+        "role_group": "military",
+        "location_117": "Londinium, Britannia (modern London, England)",
+        "attested": "Vindolanda tablet, c. 97-105 CE",
+        "one_line": "A Batavian trooper who left the frontier for a posting on the governor's staff in London as his personal groom. A scrap of leather cut with his name was found back at Vindolanda, where his friend Chrauttius was still stationed.",
+        "sources": [
+          "Tab. Vindol. II.310",
+          "https://romaninscriptionsofbritain.org/inscriptions/TabVindol310"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.3382,
+          54.9836
+        ]
+      },
+      "properties": {
+        "id": "person_octavius_trader",
+        "name": "Octavius",
+        "role": "Trader in hides, grain and sinew",
+        "role_group": "ordinary",
+        "location_117": "Vindolanda district, Britannia (modern Northumberland, England)",
+        "attested": "Vindolanda tablet, c. 97-105 CE",
+        "one_line": "A civilian contractor supplying the frontier garrisons who wrote to his associate Candidus about 5,000 measures of grain and 170 hides waiting on a deal, and asked urgently for cash to cover the deposit he had already promised.",
+        "sources": [
+          "Tab. Vindol. II.343",
+          "https://romaninscriptionsofbritain.org/inscriptions/TabVindol343"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.3712,
+          54.9954
+        ]
+      },
+      "properties": {
+        "id": "person_masclus",
+        "name": "Masclus",
+        "role": "Decurion, Ninth Cohort of Batavians",
+        "role_group": "military",
+        "location_117": "Vindolanda, Britannia (modern Northumberland, England)",
+        "attested": "Vindolanda tablet, c. 97-105 CE",
+        "one_line": "A cavalry officer who wrote to his prefect asking for the next day's orders and whether all the men should bring the standards back to the crossroads, then added a postscript: his comrades had run out of beer, and would he please send more.",
+        "sources": [
+          "Tab. Vindol. III.628",
+          "https://romaninscriptionsofbritain.org/inscriptions/TabVindol628"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.3555,
+          54.9878
+        ]
+      },
+      "properties": {
+        "id": "person_cassius_saecularis",
+        "name": "Cassius Saecularis",
+        "role": "Officer in charge of garrison supply",
+        "role_group": "military",
+        "location_117": "Vindolanda, Britannia (modern Northumberland, England)",
+        "attested": "Vindolanda tablets, c. 97-105 CE",
+        "one_line": "The man at Vindolanda who received the letters about barley and building timber. Several correspondents wrote to him about getting supplies up to the fort, including an eagle-bearer of the Second Legion writing from South Wales.",
+        "sources": [
+          "Tab. Vindol. II.213-215",
+          "https://romaninscriptionsofbritain.org/inscriptions/TabVindol214"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.3668,
+          54.9932
+        ]
+      },
+      "properties": {
+        "id": "person_severus_cornicularius",
+        "name": "Severus",
+        "role": "Cornicularius (clerk to a centurion)",
+        "role_group": "military",
+        "location_117": "Vindolanda, Britannia (modern Northumberland, England)",
+        "attested": "Vindolanda tablet, c. 97-105 CE",
+        "one_line": "A military clerk who wrote to Candidus, another household's slave, to settle up the cost of goods bought for the Saturnalia and to ask for radishes for the feast. He addressed the enslaved man as brother.",
+        "sources": [
+          "Tab. Vindol. II.301",
+          "A. Birley et al., 'Slavery on the Northern Frontier: A Stylus Tablet from Vindolanda', Britannia (2024)"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.3486,
+          54.9894
+        ]
+      },
+      "properties": {
+        "id": "person_candidus_slave",
+        "name": "Candidus",
+        "role": "Slave of the prefect Flavius Genialis",
+        "role_group": "ordinary",
+        "location_117": "Vindolanda, Britannia (modern Northumberland, England)",
+        "attested": "Vindolanda tablet, c. 97-105 CE",
+        "one_line": "An enslaved man who ran the household purchasing for a fort commander on the edge of the empire, buying in supplies for the Saturnalia and haggling over the bill with a legionary clerk who called him brother.",
+        "sources": [
+          "Tab. Vindol. II.301",
+          "A. Birley et al., 'Slavery on the Northern Frontier: A Stylus Tablet from Vindolanda', Britannia (2024)"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.3452,
+          54.9968
+        ]
+      },
+      "properties": {
+        "id": "person_cessaucius_nigrinus",
+        "name": "Cessaucius Nigrinus",
+        "role": "Duplicarius (cavalry NCO on double pay)",
+        "role_group": "military",
+        "location_117": "Vindolanda district, Britannia (modern Northumberland, England)",
+        "attested": "Vindolanda tablet, c. 97-105 CE",
+        "one_line": "A cavalryman drawing double pay, named as the recipient of a letter from a man called Tullio. His name turns up again on the back of another tablet from the same fort, which puts him at or near Vindolanda.",
+        "sources": [
+          "Tab. Vindol. II.312",
+          "https://romaninscriptionsofbritain.org/inscriptions/TabVindol312"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.956,
+          51.614
+        ]
+      },
+      "properties": {
+        "id": "person_vittius_adiutor",
+        "name": "Vittius Adiutor",
+        "role": "Aquilifer (eagle-bearer), Second Legion Augusta",
+        "role_group": "military",
+        "location_117": "Isca Silurum, Britannia (modern Caerleon, Wales)",
+        "attested": "Vindolanda tablet, c. 97-105 CE",
+        "one_line": "The soldier who carried the eagle standard of the Second Legion Augusta, based at the great fortress in South Wales. He wrote north to Vindolanda about supplies, in the tone of one officer to an equal.",
+        "sources": [
+          "Tab. Vindol. II.214",
+          "https://romaninscriptionsofbritain.org/inscriptions/TabVindol214"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.286,
+          41.013
+        ]
+      },
+      "properties": {
+        "id": "person_tiberius_claudius_maximus",
+        "name": "Tiberius Claudius Maximus",
+        "role": "Cavalry decurion, veteran of the Dacian Wars",
+        "role_group": "military",
+        "location_117": "Philippi, Macedonia (modern Filippoi, Greece)",
+        "attested": "Funerary monument he set up himself, CIL III 14214",
+        "one_line": "The trooper who ran down the Dacian king Decebalus in 106 CE and carried his severed head to Trajan, and was promoted decurion for it. He retired to Philippi and carved the whole scene onto his own tombstone, where he was still living in 117 CE.",
+        "sources": [
+          "CIL III 14214",
+          "M. Speidel, 'The Captor of Decebalus', Journal of Roman Studies 60 (1970)",
+          "https://en.wikipedia.org/wiki/Tiberius_Claudius_Maximus"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.2951,
+          36.2703
+        ]
+      },
+      "properties": {
+        "id": "person_ulpius_phaedimus",
+        "name": "Marcus Ulpius Phaedimus",
+        "role": "Imperial freedman, Trajan's personal attendant",
+        "role_group": "ordinary",
+        "location_117": "Selinus, Cilicia (modern Gazipasa, Turkey)",
+        "attested": "Epitaph, CIL VI 1884",
+        "one_line": "Trajan's 28-year-old cupbearer, chief lictor and keeper of the register of imperial favours. He died at Selinus on 12 August 117, the day after the news of Trajan's own death reached Hadrian. His body waited twelve years for permission to come home to Rome.",
+        "sources": [
+          "CIL VI 1884",
+          "Vatican Museums, Galleria Lapidaria, 'Epitaph of a lictor'",
+          "https://followinghadrian.com/2017/08/12/12th-august-117-a-mysterious-death-occurs-in-selinus-hadrian1900/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.96,
+          31.21
+        ]
+      },
+      "properties": {
+        "id": "person_claudius_terentianus",
+        "name": "Claudius Terentianus",
+        "role": "Sailor of the Alexandrian fleet, later legionary",
+        "role_group": "military",
+        "location_117": "Nikopolis, near Alexandria, Aegyptus (modern Egypt)",
+        "attested": "Letters in the Karanis archive, P.Mich. VIII",
+        "one_line": "He enlisted in the Alexandrian fleet around 110 CE and transferred into the Twenty-Second Legion during the Jewish revolt of 115-117. His letters home to his father survive because the family kept them in a niche under the stairs.",
+        "sources": [
+          "P.Mich. VIII (archive of Claudius Terentianus)",
+          "https://en.wikipedia.org/wiki/Claudius_Terentianus"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.899,
+          29.522
+        ]
+      },
+      "properties": {
+        "id": "person_claudius_tiberianus",
+        "name": "Claudius Tiberianus",
+        "role": "Army veteran, former speculator (legionary courier)",
+        "role_group": "military",
+        "location_117": "Karanis, Aegyptus (modern Kom Aushim, Egypt)",
+        "attested": "Letters in the Karanis archive, P.Mich. VIII",
+        "one_line": "A discharged army courier settled in a Fayum village, receiving letters from his son Terentianus in the fleet. Excavators found the whole family correspondence stuffed into a niche beneath his staircase, exactly where he left it.",
+        "sources": [
+          "P.Mich. VIII (archive of Claudius Tiberianus)",
+          "https://en.wikipedia.org/wiki/Claudius_Tiberianus"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.481,
+          32.517
+        ]
+      },
+      "properties": {
+        "id": "person_julius_apollinarius",
+        "name": "Gaius Julius Apollinarius",
+        "role": "Legionary, Third Legion Cyrenaica",
+        "role_group": "military",
+        "location_117": "Bostra, Arabia Petraea (modern Bosra, Syria)",
+        "attested": "Letters, P.Mich. VIII.465-466, dated 107-108 CE",
+        "one_line": "A soldier posted to the new province of Arabia who wrote home asking his father to pull strings and get him a desk job as a company clerk, rather than the stone-cutting and quarry work the rest of the legion was doing.",
+        "sources": [
+          "P.Mich. VIII.465-466",
+          "https://aquila.zaw.uni-heidelberg.de/ddb/P.Mich.;8;;466;;"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.086,
+          40.783
+        ]
+      },
+      "properties": {
+        "id": "person_apion_antonius_maximus",
+        "name": "Apion (Antonius Maximus)",
+        "role": "Naval recruit, fleet at Misenum",
+        "role_group": "military",
+        "location_117": "Misenum, Italia (modern Miseno, Italy)",
+        "attested": "Letter, BGU II.423, dated 102-103 CE",
+        "one_line": "An Egyptian villager who crossed the sea to join the fleet and wrote home to his father the moment he landed: the voyage was safe, the emperor's travel money had come through, and he had a Roman name now.",
+        "sources": [
+          "BGU II.423",
+          "https://berlpap.smb.museum/privatbrief-eines-soldaten/?lang=en"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.55,
+          31.03
+        ]
+      },
+      "properties": {
+        "id": "person_babatha",
+        "name": "Babatha",
+        "role": "Landowner, date-palm farmer",
+        "role_group": "ordinary",
+        "location_117": "Maoza, Arabia Petraea (near modern Ghor es-Safi, Jordan)",
+        "attested": "Personal archive, P.Yadin 1-35, 94-132 CE",
+        "one_line": "A Jewish woman farming date palms on the south shore of the Dead Sea, who kept every deed, lawsuit and marriage contract of her life in a leather purse. She hid it in a cave during the revolt of 132 and never came back for it.",
+        "sources": [
+          "P.Yadin archive (Cave of Letters)",
+          "https://en.wikipedia.org/wiki/Babatha",
+          "https://jwa.org/encyclopedia/article/babatha"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5624,
+          31.0418
+        ]
+      },
+      "properties": {
+        "id": "person_shimon_ben_menahem",
+        "name": "Shimon son of Menahem",
+        "role": "Landowner, date-palm farmer",
+        "role_group": "ordinary",
+        "location_117": "Maoza, Arabia Petraea (near modern Ghor es-Safi, Jordan)",
+        "attested": "Deed of 99 CE and later documents in the Babatha archive",
+        "one_line": "Babatha's father, who bought a date-palm orchard from the Nabataean governor Archelaus in 99 CE and later signed it over to his daughter. He was still alive in 117 CE and dead by 124.",
+        "sources": [
+          "P.Yadin archive (deed of gift)",
+          "https://jwa.org/encyclopedia/article/babatha"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5388,
+          31.0186
+        ]
+      },
+      "properties": {
+        "id": "person_jesus_son_of_jesus",
+        "name": "Jesus son of Jesus",
+        "role": "Villager of Maoza, Babatha's first husband",
+        "role_group": "ordinary",
+        "location_117": "Maoza, Arabia Petraea (near modern Ghor es-Safi, Jordan)",
+        "attested": "Babatha archive, P.Yadin 1-35",
+        "one_line": "Babatha's first husband and the father of her only son. He was alive at the 117 CE snapshot and dead before 124, leaving her to fight the Petra town council for years over the boy's guardianship money.",
+        "sources": [
+          "P.Yadin archive",
+          "https://en.wikipedia.org/wiki/Babatha"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5732,
+          31.0242
+        ]
+      },
+      "properties": {
+        "id": "person_salome_komaise",
+        "name": "Salome Komaise",
+        "role": "Landowner of Maoza",
+        "role_group": "ordinary",
+        "location_117": "Maoza, Arabia Petraea (near modern Ghor es-Safi, Jordan)",
+        "attested": "Personal archive, XHev/Se papyri, c. 125-131 CE",
+        "one_line": "A second woman of the same Dead Sea village who hid a second bundle of legal papers in the same cave. Her documents cover a tax registration, a property settlement and her own marriage certificate.",
+        "sources": [
+          "XHev/Se 60-65",
+          "H. Cotton, 'The Archive of Salome Komaise Daughter of Levi'",
+          "Trismegistos archive 207"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3894,
+          31.4587
+        ]
+      },
+      "properties": {
+        "id": "person_judah_khthousion",
+        "name": "Judah Khthousion",
+        "role": "Landowner of En-Gedi",
+        "role_group": "ordinary",
+        "location_117": "En-Gedi, Judaea (modern Israel)",
+        "attested": "Babatha archive, P.Yadin 14-17",
+        "one_line": "An En-Gedi man with three date orchards who became Babatha's second husband and legal guardian. He was already married to Miriam when he married her, and his death left the two women suing each other over his estate.",
+        "sources": [
+          "P.Yadin 14, 15, 17",
+          "https://jwa.org/encyclopedia/article/babatha"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4016,
+          31.4692
+        ]
+      },
+      "properties": {
+        "id": "person_miriam_bat_beianus",
+        "name": "Miriam daughter of Beianus",
+        "role": "Householder of En-Gedi",
+        "role_group": "ordinary",
+        "location_117": "En-Gedi, Judaea (modern Israel)",
+        "attested": "Babatha archive, P.Yadin",
+        "one_line": "Judah Khthousion's first wife, who went on sharing a husband with Babatha and then went to court against her over what he left behind. Her brother Jonathan appears in the same papers.",
+        "sources": [
+          "P.Yadin archive",
+          "https://jwa.org/encyclopedia/article/babatha"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5466,
+          31.0374
+        ]
+      },
+      "properties": {
+        "id": "person_shelamzion",
+        "name": "Shelamzion daughter of Judah",
+        "role": "Bride of Maoza, Babatha's stepdaughter",
+        "role_group": "ordinary",
+        "location_117": "Maoza, Arabia Petraea (near modern Ghor es-Safi, Jordan)",
+        "attested": "Marriage contract, P.Yadin 18, dated 128 CE",
+        "one_line": "Judah Khthousion's daughter, whose Greek marriage contract of 128 CE survives in full, dowry and all. She was a child in the household at the 117 CE snapshot.",
+        "sources": [
+          "P.Yadin 18",
+          "https://cojs.org"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3768,
+          31.4478
+        ]
+      },
+      "properties": {
+        "id": "person_judah_cimber",
+        "name": "Judah Cimber",
+        "role": "Householder of En-Gedi",
+        "role_group": "ordinary",
+        "location_117": "En-Gedi, Judaea (modern Israel)",
+        "attested": "Marriage contract, P.Yadin 18, dated 128 CE",
+        "one_line": "Son of Ananias son of Somalas, of En-Gedi but living at Maoza. He married Shelamzion in 128 CE under a contract that spells out her dowry and his obligations in Greek legal formula.",
+        "sources": [
+          "P.Yadin 18",
+          "https://cojs.org"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4444,
+          30.3285
+        ]
+      },
+      "properties": {
+        "id": "person_abdoobdas",
+        "name": "Abdoobdas son of Illouthas",
+        "role": "Guardian appointed by the council of Petra",
+        "role_group": "ordinary",
+        "location_117": "Petra, Arabia Petraea (modern Jordan)",
+        "attested": "Babatha archive, P.Yadin 12-13, dated 124 CE",
+        "one_line": "A Nabataean named by the Petra town council as guardian of Babatha's orphaned son, on an allowance she thought insulting. She took the council to court over the amount and the file survives.",
+        "sources": [
+          "P.Yadin 12-13",
+          "H. Cotton, 'The Guardianship of Jesus Son of Babatha', JRS"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4568,
+          30.3392
+        ]
+      },
+      "properties": {
+        "id": "person_john_son_of_eglas",
+        "name": "John son of Eglas",
+        "role": "Guardian appointed by the council of Petra",
+        "role_group": "ordinary",
+        "location_117": "Petra, Arabia Petraea (modern Jordan)",
+        "attested": "Babatha archive, P.Yadin 12-13, dated 124 CE",
+        "one_line": "The Jewish half of the pair of guardians the Petra council put over Babatha's son. He and his Nabataean colleague between them paid the boy a monthly allowance his mother took them to court to increase.",
+        "sources": [
+          "P.Yadin 12-13",
+          "H. Cotton, 'The Guardianship of Jesus Son of Babatha', JRS"
+        ]
+      }
     }
   ]
 }
