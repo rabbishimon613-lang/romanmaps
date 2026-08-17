@@ -9,6 +9,7 @@ import { categoryColorMatchPairs, DEFAULT_COLOR } from "./poiCategories";
 import { ostiaEntry } from "./ostiaDescriptions";
 import { pompeiiEntry } from "./pompeiiDescriptions";
 import { herculaneumEntry } from "./herculaneumDescriptions";
+import { ephesusEntry } from "./ephesusDescriptions";
 import { SITE_META, SITES } from "./sites";
 
 // Palette — light + dark variants. Both palettes are calibrated so that the sea/land/roads/labels
@@ -683,7 +684,9 @@ export default function Map() {
                 ? pompeiiEntry(rawName)
                 : site === "herculaneum"
                   ? herculaneumEntry(rawName)
-                  : undefined;
+                  : site === "ephesus"
+                    ? ephesusEntry(rawName)
+                    : undefined;
           selectPoi(
             {
               id: `${site}-${p.osm_id}`,
