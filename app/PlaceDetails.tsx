@@ -56,12 +56,20 @@ type AncientSource = {
  * click-popup. On mobile the sheet snaps between a half-height and a full-height state via the
  * drag handle at its top edge; dragging well below half height dismisses it. "Directions to here"
  * wiring is a future upgrade (Directions itself hasn't shipped yet). */
-// Mobile bottom-sheet snap heights, as vh. Drag the handle to move between them; dragging well
-// below the half height dismisses the panel (mirrors Google Maps mobile's sheet behavior).
+// Mobile bottom-sheet snap heights, as vh — three detents, mirroring Google Maps mobile's
+// peek/half/full sheet. Drag the handle to move between them; dragging well below peek height
+// dismisses the panel. A fast flick jumps one detent in the flick direction regardless of how
+// far the pointer traveled — [04-P0-1] sheet-detents.
+const SHEET_PEEK_VH = 32;
 const SHEET_HALF_VH = 55;
 const SHEET_FULL_VH = 92;
 const SHEET_MIN_PX = 80;
 const SHEET_DISMISS_SLACK_PX = 120;
+const SHEET_DETENTS = ["peek", "half", "full"] as const;
+type SheetState = (typeof SHEET_DETENTS)[number];
+// Sustained release velocity, in sheet-height px/ms, above which a drag is treated as a flick
+// (snap one detent in that direction) rather than a slow drag (snap to nearest by position).
+const SHEET_FLICK_VELOCITY = 0.5;
 
 export default function PlaceDetails() {
   const selected = usePoiPanel();
@@ -70,10 +78,17 @@ export default function PlaceDetails() {
   const open = !!selected;
   const [copied, setCopied] = useState(false);
   const copyTimer = useRef<number | undefined>(undefined);
+  // A dead image_url (offline, network-blocked, wrong filename) used to leave the <img> hidden
+  // but its position:relative wrapper still in the layout — collapsed to zero height once the
+  // image was gone, which left the credit caption (position:absolute, bottom:0 *of that wrapper*)
+  // sitting right at the top of the panel, overlapping and eating pointer events meant for the
+  // mobile drag handle above it. Tracking the failure in state so a broken image degrades exactly
+  // like "no image_url" does — the fallback gradient rail, not a half-collapsed hero block.
+  const [imageFailed, setImageFailed] = useState(false);
 
   // Drag-to-expand bottom sheet (mobile only). `sheetState` is the committed snap point;
   // `dragPx` is a live height override while a drag gesture is in progress (null when idle).
-  const [sheetState, setSheetState] = useState<"half" | "full">("half");
+  const [sheetState, setSheetState] = useState<SheetState>("half");
   const [dragPx, setDragPx] = useState<number | null>(null);
 
   useEffect(() => {
@@ -81,10 +96,12 @@ export default function PlaceDetails() {
       setRendered(selected);
       setSheetState("half");
       setDragPx(null);
+      setImageFailed(false);
     }
   }, [selected]);
 
-  const heightPxFor = (state: "half" | "full") => (state === "full" ? SHEET_FULL_VH : SHEET_HALF_VH) / 100 * window.innerHeight;
+  const vhFor = (state: SheetState) => (state === "full" ? SHEET_FULL_VH : state === "half" ? SHEET_HALF_VH : SHEET_PEEK_VH);
+  const heightPxFor = (state: SheetState) => (vhFor(state) / 100) * window.innerHeight;
 
   // Window-level listeners (not element-level) so the drag tracks the pointer even once it leaves
   // the small handle's own bounds. All state for one gesture lives in this closure — added and
@@ -94,25 +111,67 @@ export default function PlaceDetails() {
     const startY = e.clientY;
     const startHeightPx = heightPxFor(sheetState);
     let currentPx = startHeightPx;
+    // Exponentially-smoothed release velocity, in sheet-height px/ms (positive = growing/dragging
+    // up). A handful of noisy per-event samples make a poor flick signal on their own; smoothing
+    // keeps the last real swipe direction dominant without needing a full sample buffer.
+    let lastY = startY;
+    let lastT = performance.now();
+    let velocityPxPerMs = 0;
 
     const onMove = (ev: PointerEvent) => {
       const delta = startY - ev.clientY; // drag up = positive = taller
       const maxPx = heightPxFor("full");
       currentPx = Math.min(maxPx, Math.max(SHEET_MIN_PX, startHeightPx + delta));
       setDragPx(currentPx);
+
+      const now = performance.now();
+      const dt = now - lastT;
+      if (dt > 0) {
+        const instantVelocity = -(ev.clientY - lastY) / dt;
+        velocityPxPerMs = velocityPxPerMs * 0.6 + instantVelocity * 0.4;
+      }
+      lastY = ev.clientY;
+      lastT = now;
     };
     const onUp = () => {
       window.removeEventListener("pointermove", onMove);
       window.removeEventListener("pointerup", onUp);
       window.removeEventListener("pointercancel", onUp);
       setDragPx(null);
-      const halfPx = heightPxFor("half");
-      const fullPx = heightPxFor("full");
-      if (currentPx < halfPx - SHEET_DISMISS_SLACK_PX) {
+
+      const idx = SHEET_DETENTS.indexOf(sheetState);
+      if (velocityPxPerMs > SHEET_FLICK_VELOCITY) {
+        // Fast upward flick — advance one detent regardless of how far the pointer traveled.
+        setSheetState(SHEET_DETENTS[Math.min(idx + 1, SHEET_DETENTS.length - 1)]);
+        return;
+      }
+      if (velocityPxPerMs < -SHEET_FLICK_VELOCITY) {
+        // Fast downward flick — retreat one detent, or dismiss from the lowest one.
+        if (idx === 0) {
+          clearPoi();
+          return;
+        }
+        setSheetState(SHEET_DETENTS[idx - 1]);
+        return;
+      }
+
+      // Slow release — snap to the nearest detent by position, or dismiss if let go well below
+      // the lowest one (peek).
+      const peekPx = heightPxFor("peek");
+      if (currentPx < peekPx - SHEET_DISMISS_SLACK_PX) {
         clearPoi();
         return;
       }
-      setSheetState(currentPx >= (halfPx + fullPx) / 2 ? "full" : "half");
+      let nearest: SheetState = "peek";
+      let nearestDist = Infinity;
+      for (const s of SHEET_DETENTS) {
+        const d = Math.abs(heightPxFor(s) - currentPx);
+        if (d < nearestDist) {
+          nearestDist = d;
+          nearest = s;
+        }
+      }
+      setSheetState(nearest);
     };
     window.addEventListener("pointermove", onMove);
     window.addEventListener("pointerup", onUp);
@@ -185,7 +244,7 @@ export default function PlaceDetails() {
         left: 0,
         right: 0,
         bottom: 0,
-        maxHeight: isDragging ? `${dragPx}px` : `${sheetState === "full" ? SHEET_FULL_VH : SHEET_HALF_VH}vh`,
+        maxHeight: isDragging ? `${dragPx}px` : `${vhFor(sheetState)}vh`,
         borderRadius: "12px 12px 0 0",
         transform: open ? "translateY(0)" : "translateY(110%)",
         transition: isDragging ? "transform 220ms ease" : "transform 220ms ease, max-height 200ms ease",
@@ -238,7 +297,7 @@ export default function PlaceDetails() {
       {/* Hero band: an artist rendering / engraving / reconstruction (image_url on the POI).
        * When no image is supplied we fall back to a thin category-tinted rail — no empty gray
        * slab. Image credit renders under the picture, kept small so it doesn't crowd the title. */}
-      {p.image_url ? (
+      {p.image_url && !imageFailed ? (
         <div style={{ position: "relative", flexShrink: 0 }}>
           <img
             src={p.image_url}
@@ -251,10 +310,10 @@ export default function PlaceDetails() {
               objectFit: "cover",
               background: `${color}22`,
             }}
-            onError={(e) => {
-              // Broken URL → hide the img so we don't show a browser-broken-image icon; the
-              // gradient bar below still gives category identity.
-              (e.currentTarget as HTMLImageElement).style.display = "none";
+            onError={() => {
+              // Broken URL → fall back to the same gradient rail "no image_url" gets, rather than
+              // leaving a collapsed wrapper with an orphaned credit caption in the layout.
+              setImageFailed(true);
             }}
           />
           {p.image_credit && (
