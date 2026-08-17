@@ -279,7 +279,16 @@ to prevent. Building locally to *test* your own work is expected and fine.
       unverified (Atrium Vestae, Domus Flavia, Bibliotheca Ulpia, Baths of Nero, Ara Pacis).
 - [ ] `[08-P1-4]` **`gazetteer-audit`** `fix` — Londinium is missing from `places_medium`. Audit
       against Pleiades and find the rest of the hole.
-- [~] `[14-P1-4]` **`province-pages`** `add` — ~45 province pages. — claimed by cloud shift 24, 2026-08-17 00:00
+- [x] `[14-P1-4]` **`province-pages`** `add` — Done 2026-08-17 by cloud shift 24. New
+      `app/provinces.ts` (43 provinces — Italy's eleven Augustan regiones fold into one Italia
+      entry, not a separate province each; a few short-lived/contested units fold into their
+      nearest real province rather than shipping an empty page) with 117 CE administrative
+      status, capital, and a sourced blurb per entry. New `app/province/[slug]/page.tsx` lists
+      every `sites.ts` city and `pois.geojson` record whose `province` field normalizes to that
+      province — the underlying data uses ~15 different spellings for the same provinces
+      (Achaea/Achaia, Judaea/Iudaea, Baetica/Hispania Baetica), absorbed by an alias table rather
+      than touching the records. Wired into `sitemap.ts`. 6 of 43 pages have no mapped content
+      yet and degrade to an honest empty state — see ticket note in the Done log below.
 - [ ] `[05-P0-2]` **`focus-ring`** `polish` — Global `:focus-visible`.
 - [ ] `[05-P0-3]` **`reduced-motion`** `polish` — Honour `prefers-reduced-motion`.
 - [ ] `[13-P0-3]` **`image-fallback`** `illustrate` — Static map thumbnail for the 145 places
