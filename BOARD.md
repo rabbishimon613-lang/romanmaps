@@ -165,9 +165,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[02-P0-1]` **`terrain`** `polish` — Hillshade/relief under the land fill.
 - [ ] `[02-P0-4]` **`self-host-glyphs`** `fix` — Stop depending on `demotiles.maplibre.org`;
       a single point of failure that would erase every label on the map.
-- [~] `[09-P0-1]` **`ancient-sources`** `deepen` — `ancient_sources[]` populated for every
-      `confidence: high` POI. **Standing task — never "done", always available.** — batch 4
-      claimed by cloud shift 24, 2026-08-17 00:00
+- [x] `[09-P0-1]` **`ancient-sources`** `deepen` — `ancient_sources[]` populated for every
+      `confidence: high` POI. **Standing task — never "done", always available.**
       *Batch 1 done 2026-08-16: 108 of 221 high-confidence POIs (48.9%), 122 citations, plus an
       "In ancient writing" block on the card. Shape is `{author, work, ref, note}` — `note` says
       what the passage contains, in place of a quotation nobody here can check against a text.
@@ -189,9 +188,16 @@ to prevent. Building locally to *test* your own work is expected and fine.
       days). One candidate dropped again for the same wrong-POI-mismatch shape batch 2 caught —
       a Macrobius passage about Baalbek's temple oracle offered for the neighboring quarry POI.
       82 remain open; expect a continued low hit rate.*
-- [~] `[06-P0-2]` **`curate-buildings`** `deepen` — Ostia-depth curated descriptions for the
-      other 39 sites, ~10 buildings/day. **Standing task, never "done".** — next site claimed by
-      cloud shift 24, 2026-08-17 00:00
+      *Batch 4 done 2026-08-17 by cloud shift 24: 1 more citation (149/230, 64.8%). Delegated 41
+      of the ~82 remaining POIs to three parallel WebSearch agents by theme (Italy/Gaul/Hispania
+      civic monuments, Eastern/frontier sites, industrial sites); only the Baths of Trajan (Cass.
+      Dio 69.4.1) came back real. One candidate (Rheinzabern/Tabernae via a Symmachus panegyric)
+      dropped on review — the researching agent flagged the exact passage as unconfirmed against
+      the primary text. Confirms the pool has hit the wall the last two batches predicted: what's
+      left is almost entirely tombs/mausolea/necropoleis (29), villas/estates (12), and
+      shipwrecks (4). ~40 POIs remain genuinely open; expect a very low hit rate.*
+- [x] `[06-P0-2]` **`curate-buildings`** `deepen` — Ostia-depth curated descriptions for the
+      other 39 sites, ~10 buildings/day. **Standing task, never "done".**
       *Pompeii done 2026-08-16 by cloud shift 3: 28 buildings in `app/pompeiiDescriptions.ts`
       (House of the Faun, Temple of Apollo, the Forum and its temples, the three bath complexes,
       the Brothel, named houses on Via dell'Abbondanza and elsewhere), same pattern as
@@ -215,6 +221,22 @@ to prevent. Building locally to *test* your own work is expected and fine.
       reliably the actual building meant — future-proof against new Overpass pulls. Verified with
       Playwright against both Pompeii's new content and three known-good Ostia buildings (no
       regression). 39 sites still open for the standing task.
+      *Ephesus done 2026-08-17 by cloud shift 24: 33 buildings in `app/ephesusDescriptions.ts`,
+      the first living, continuously-occupied city (not a 79-CE burial site) to get this
+      treatment — flipped the file's default from `extant_117ce: false` to mostly `true`,
+      since Ephesus was thriving in 117 CE. Covers the Library of Celsus (still unfinished the
+      day Trajan died), both Terrace Houses, the Serapeion, both agorae, the Prytaneion, and
+      several genuinely-Hadrianic buildings (Vedius/East Gymnasia, the Olympieion, Hadrian's own
+      temple) correctly marked not-yet-built. Fixed one date on review: the research pass gave
+      the Library of Celsus `built: 114`, but its own text says construction was ongoing at
+      Trajan's death — 114 is a start date, not a completion year, and sources disagree on when
+      it actually finished (117 to 135), so `built` was left unset rather than asserting a wrong
+      number. Two of the 33 entries (Great Theatre, Library of Celsus) turned out to duplicate
+      existing standalone `pois.geojson` POIs at the same coordinates — those markers sit on top
+      of the map canvas and will always intercept the click first, so those two entries are
+      effectively unreachable dead code; left in as harmless rather than deleted. Verified with
+      Playwright: clicking the Serapeion building surfaces the new text with the correct
+      "Not standing in 117 CE" badge. 36 sites still open for the standing task.*
 - [ ] `[10-P0-3]` **`flagship-depth`** `deepen` — Bring POIs whose `notes` runs under 60 words up
       to real panel depth in that same field, worst-first. This is the **panel tier of
       `[10-P0-2]`** applied to the places that need it most; the tombstone/label tiers still need
