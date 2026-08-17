@@ -283,6 +283,23 @@ to prevent. Building locally to *test* your own work is expected and fine.
       data (confirmed via `queryRenderedFeatures`, no silent typos); clicking the Athenian Treasury
       surfaces the authored text with no fallback message. 35 sites still open for the standing
       task.*
+      *Jerash (Gerasa) done 2026-08-17 by cloud shift 26: 30 entries in `app/jerashDescriptions.ts`,
+      the sixth site and the sharpest 117 CE snapshot case yet. Gerasa's famous silhouette — the
+      Artemis sanctuary and temple, Hadrian's Arch, the Nymphaeum, both Tetrapylons, the upper Zeus
+      temple — is Antonine through Severan (129-210s CE), a building boom that starts *after* Trajan
+      died, so 22 of the 30 entries are honestly `extant_117ce: false` (including all 14 Byzantine
+      churches, 494-611 CE, most securely dated by mosaic inscription) with descriptions that say
+      what stood on the ground in 117 rather than describe an absent monument. Marked `true` and
+      real in 117: the older Zeus sanctuary, the city wall, the two extramural market rows on the
+      Philadelphia road, and — the standout — the North Gate, dated by its own inscription to 115 CE
+      dedicated to Trajan, the single most precisely dated thing standing at the snapshot. Judgment
+      calls: the Cathedral's underlying temple is `false` because its date is unknown and the Temple
+      of Dionysus identification is unconfirmed by excavation; the Martyrion and Mortuary churches
+      carry no `built` year (none securely attested); the Agora/Civic Basilica is `false` (design
+      stage at most in 117). All 30 keys are the exact OSM strings — only the park label, visitor
+      centre and a restaurant left uncurated. Verified with Playwright: North Gate surfaces "Built
+      115 CE" and its text; Temple of Artemis shows the "Not standing in 117 CE" badge. 34 sites
+      still open for the standing task.*
 - [ ] `[10-P0-3]` **`flagship-depth`** `deepen` — Bring POIs whose `notes` runs under 60 words up
       to real panel depth in that same field, worst-first. This is the **panel tier of
       `[10-P0-2]`** applied to the places that need it most; the tombstone/label tiers still need
@@ -350,8 +367,19 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[06-P1-3]` **`building-typology`** `deepen` — Extend to the ~35-term standard vocabulary,
       grouped into six colour families.
 - [ ] `[06-P1-4]` **`excavation-history`** `deepen` — `excavation[]` on all 40 sites.
-- [~] `[09-P1-4]` **`epigraphy`** `deepen` — claimed by cloud shift 26, 2026-08-17 13:52. 1–3
-      inscriptions per site from EDCS/EDH with text, translation and reference. **Standing task.**
+- [x] `[09-P1-4]` **`epigraphy`** `deepen` — Batch 1 done 2026-08-17 by cloud shift 26. 16
+      inscriptions merged into `pois.geojson`'s `ancient_sources[]` (author = corpus siglum,
+      work = inscription type, ref = date, to fit the validator's literary-source shape): the 8
+      CIL leads shift 25 handed off, verified and written up, plus 8 more researched and verified
+      this shift (Trajan's Column VI 960, Arch of Titus VI 945, Porta Maggiore VI 1256, the Delphi
+      Gallio rescript SIG³ 801d, Philae's Cornelius Gallus stele III 14147, the Colosseum VI
+      40454a, the Nîmes amphitheatre XII 3316). Rejected on review: the Pantheon inscription
+      (belongs to the finished Hadrianic building, not the 117 construction site), Temple of Bel
+      Palmyra (text unverified), Temple of Saturn (4th-c restoration), Baths of Neptune /
+      Capitolium / Ostia synagogue (all post-117). Renders through the card's existing "In ancient
+      writing" block. **Standing task** — hundreds of curated POIs still carry no inscription.
+      *Research also surfaced two duplicate-POI pairs for `[12-FIX-3]`: `poi_pantheon` /
+      `poi_pantheon_rome`, and `poi_pompeii_temple_apollo` / `poi_temple_apollo_pompeii`.*
 - [ ] `[09-P1-5]` **`clear-unverified`** `verify` — Re-check the citations SHIFT_LOG recorded as
       unverified (Atrium Vestae, Domus Flavia, Bibliotheca Ulpia, Baths of Nero, Ara Pacis).
 - [ ] `[08-P1-4]` **`gazetteer-audit`** `fix` — Londinium is missing from `places_medium`. Audit
@@ -388,8 +416,15 @@ to prevent. Building locally to *test* your own work is expected and fine.
       with no image.
 - [ ] `[11-P0-2]` **`lazy-overlays`** `polish` — Fetch a thematic layer's data on first enable.
 - [ ] `[01-P0-3]` **`cluster-expand`** `polish` — Tapping a cluster badge fits to its members.
-- [~] `[01-P0-4]` **`search-selects`** `polish` — claimed by cloud shift 26, 2026-08-17 13:52.
-      Search result drops a pin and opens its card.
+- [x] `[01-P0-4]` **`search-selects`** `polish` — Done 2026-08-17 by cloud shift 26. Search now
+      also matches the 467 curated `pois.geojson` records (merged ahead of the DARE gazetteer so a
+      curated landmark outranks a bare dot of the same name): a POI result calls `selectPoi()` and
+      opens the full place card with the enlarged ringed marker, exactly as a map-click does; a
+      gazetteer-only result drops the red "What's here?" pin with a name popup. One ordering
+      subtlety documented in the code: `selectPoi()` fires Map.tsx's own panel-aware `easeTo`
+      (current zoom), so the search jump's zoom-in `flyTo` is issued *after* it in the same tick —
+      MapLibre cancels the earlier camera call, so the one carrying the zoom goes last. Verified
+      with Playwright at 1280×800 light and 375×812 dark.
 
 ## P2
 
@@ -424,8 +459,16 @@ to prevent. Building locally to *test* your own work is expected and fine.
       layers by default) does fire correctly on a cold load in this project's dev-server sandbox —
       just slowly (~20-25s here, this environment's network restrictions make MapLibre's external
       glyph-loading retries slow; not a bug, not present in production, no action needed).
-- [~] `[07-P1-5]` **`ordinary-people`** `add` — claimed by cloud shift 26, 2026-08-17 13:52.
-      30–50 named non-elite people, pinned.
+- [x] `[07-P1-5]` **`ordinary-people`** `add` — Done 2026-08-17 by cloud shift 26. 25 named
+      non-elite people added to `people_117.geojson` (25 → 50 features): Vindolanda-tablet troopers,
+      a slave, a supply contractor; the Karanis-papyri soldiers; the Babatha and Salome Komaise
+      Dead Sea archives; Tiberius Claudius Maximus (captor of Decebalus) and Marcus Ulpius Phaedimus
+      (Trajan's attendant, died at Selinus 12 Aug 117). New green `ordinary` role ring and an
+      `attested` field carrying the date of the evidence so bios state plain facts, not hedges.
+      **Landed at 25, short of the ticket's 30-50 estimate** — named non-elite people you can both
+      date to ~117 and place on a map are genuinely scarce; three plausible candidates (a Fayum
+      weaver, two tradeswomen) dropped for undatable evidence. Layer still defaults OFF; verified
+      with Playwright.
 - [ ] `[06-P1-5]` **`finds`** `illustrate` — 3–8 artefacts per site with images and museum.
 - [ ] `[10-P1-4]` **`entrance`** `polish` — One sentence, three doors, dismissible.
 - [ ] `[03-P2-8]` **`compare-today`** `polish` — Satellite/modern toggle for the viewport.
@@ -619,3 +662,30 @@ ordinary-people or `[14-P2-8]` hub-pages (both P2) unless a new P0 `add` opens u
 `[09-P1-4]` epigraphy is worth a look for the next `deepen` slot — see this run's ancient-sources
 note for the 8-citation head start waiting there. Check the board fresh — don't assume this note
 is still current by the time you read it.
+
+- 2026-08-17 · `[01-P0-4]` search-selects · cloud shift 26. Search now matches the 467 curated
+  `pois.geojson` records too; a POI result opens the full card + ringed marker via `selectPoi()`,
+  a gazetteer-only result drops the red "What's here?" pin. See ticket note above.
+- 2026-08-17 · `[07-P1-5]` ordinary-people · cloud shift 26. 25 named non-elite people
+  (`people_117.geojson` 25 → 50): Vindolanda troopers, Karanis-papyri soldiers, the Babatha and
+  Salome Komaise Dead Sea archives, Tiberius Claudius Maximus, Marcus Ulpius Phaedimus. New green
+  `ordinary` ring + `attested` field. Short of the 30-50 estimate — see ticket note.
+- 2026-08-17 · `[09-P1-4]` epigraphy · cloud shift 26. Batch 1: 16 inscriptions merged into
+  `pois.geojson`'s `ancient_sources[]` (the 8 shift-25 CIL leads + 8 more verified this shift),
+  rendering through the card's "In ancient writing" block. Standing ticket reopened. See note above.
+- 2026-08-17 · `[06-P0-2]` curate-buildings (Jerash) · cloud shift 26. 30 entries in
+  `app/jerashDescriptions.ts`, the sixth site and the sharpest 117 CE snapshot case yet — 22 of 30
+  honestly not-yet-built, including all 14 Byzantine churches. See ticket note above.
+
+**Ratio state after this run:** cloud shift 26 ran a complete 1:2:1 cycle — 1 `add`
+(`[07-P1-5]` ordinary-people), 2 `deepen` (`[09-P1-4]` epigraphy batch 1, `[06-P0-2]`
+curate-buildings/Jerash), 1 `polish` (`[01-P0-4]` search-selects). The open cycle is clean; the
+next run picks whatever's topmost and unclaimed. At the time this run ends, the topmost unclaimed
+P0 tickets are `[12-P0-1]` merge-themes (`fix`, big), `[03-P0-1]` schema-v2 (`fix`), `[03-P0-2]`
+card-rebuild (`polish`), `[12-FIX-3]` duplicate-pantheon (`retire` — this run's epigraphy research
+freshly confirmed the two duplicate pairs it names), `[11-P0-3]` delete-dead-data (`retire`), and
+`[08-P1-6]` baalbek-dating (`verify`) — no unclaimed P0 `add` exists; the next `add` in priority
+order is `[14-P2-8]` hub-pages (P2). For the next `deepen`, `[09-P1-4]` epigraphy is now a standing
+task with a working pipeline — hundreds of curated POIs still carry no inscription, and it renders
+with no UI work. Check the board fresh — don't assume this note is still current by the time you
+read it.
