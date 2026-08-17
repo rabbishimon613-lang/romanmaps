@@ -7,6 +7,135 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 25 — 2026-08-17 (this shift's own prompt claimed "Shift 2 of four")
+
+**Same stale-numbering mismatch every shift since Shift 13 has flagged** — the scheduled prompt
+that starts each session carries a stale "Shift N of four" count from whenever it was templated.
+SHIFT_LOG was already 24 real shifts deep at session start, so this entry continues as Shift 25.
+Session started on a detached `HEAD` pointed at an already-stale local `main` ref (one real commit
+behind, from 2026-08-11) — `git fetch` + `git reset --hard origin/main` fixed it in one step, the
+same recurring symptom every shift since #9 has flagged. `research/` (the Overpass-fetch pipeline
+for adding new cities, axis 1) is `.gitignore`d and doesn't exist in this fresh cloud clone, same
+gap Shift 24 flagged — ruled out axis 1 for this run rather than rebuild the pipeline from scratch.
+
+Read `SHIFT_BRIEF.md` in full, then `BOARD.md` per its own instruction. Claimed four tickets in
+one `BOARD.md` commit at the start (`git pull --rebase` first, per protocol): the topmost
+unclaimed `add` in priority order (`governors`), the two standing `deepen` tasks
+(`ancient-sources`, `curate-buildings`), and one self-contained `polish` ticket (`focus-ring`) —
+a full 1 `add` : 2 `deepen` : 1 `polish` cycle, matching what the board's own ratio-state note
+said the next run should open with. `git pull --rebase` before every push; no collisions this run.
+
+### Board — a full 1 `add` : 2 `deepen` : 1 `polish` cycle
+
+**`[05-P0-2]` focus-ring (`polish`)** — global `:focus-visible { outline: 2px solid var(--accent);
+outline-offset: 2px; }` in `app/globals.css`, theme-token-driven so it's correct in both color
+schemes with zero component changes. The one wrinkle: several text inputs (the search field chief
+among them) sit flush inside a rounded pill container with `overflow: hidden`, and an outward
+`outline` got visibly clipped by the pill's edge on a first pass — screenshotted the clipping,
+then switched those specific elements to an inset `box-shadow` instead, which draws inward and
+can't be clipped. Verified with Playwright (real headless Chromium, `/opt/pw-browsers`) at
+1280×800 light and 375×812 dark: tabbed through the hamburger menu, search field, search icon
+button, and the "Why 117 CE?" pill in both — clean accent-color rings everywhere, circular buttons
+get circular rings for free (modern browsers make `outline` follow an element's own
+`border-radius`). Noticed and ruled out a false alarm while testing: the MapLibre canvas itself is
+also keyboard-focusable (existing behavior, for arrow-key panning) and does pick up the ring, but
+at full-viewport size it renders just outside the visible canvas and is effectively invisible —
+not a regression, just a size where the effect doesn't show.
+
+**`[07-P1-4]` governors (`add`)** — 12 sourced provincial governors for 117 CE added to
+`public/data/politics.geojson` (`category: "provincial_governor"`, reusing the existing Political
+apparatus layer/popup rather than standing up new UI). Researched via two parallel background
+WebSearch agents split by half the province list, each explicitly told to report `not_found`
+rather than invent a name. **Shipped well short of the ticket's own "~45 names" estimate, and
+that shortfall is itself the finding**: named, year-dated provincial governors for 117 CE
+specifically are genuinely rare outside the handful of provinces Trajan's Parthian War pulled into
+the historical spotlight — both research passes came back with 21 honest `not_found`s against 12
+hits. The 12 that shipped lean hard on that same war: Hadrian himself at Syria the exact day he's
+acclaimed, Lusius Quietus mid-Kitos-War in Judaea, Marcus Rutilius Lupus watching Alexandria burn,
+Quadratus Bassus dying in Dacia this same year putting down frontier unrest, three more generals
+from the same campaign. Two of the two agents' `not_found`s were flagged honestly as
+search-budget exhaustion rather than confirmed absence (Hispania Baetica, Lusitania, Sicilia,
+Dalmatia) — real remaining upside for whoever picks this back up with fresh search quota. Every
+entry carries real sources (Cassius Dio, the *Historia Augusta*, Eusebius, plus modern fasti
+compilations and epigraphy) and an honest `confidence` field. Verified with Playwright: toggled
+the layer, confirmed all 32 politics.geojson features render (20 existing + 12 new), hovered a
+new marker and confirmed the popup shows the right name/bio. While debugging an unrelated
+screenshot-timing false alarm during this verification, confirmed `applyAllLayers()` (the
+invariant-0 mechanism that keeps thematic layers off by default) does fire correctly on a cold
+load in this sandbox — just slowly (~20-25s here, this environment's blocked external
+glyph-loading retries are the cause, not present in production, no action needed).
+
+**`[09-P0-1]` ancient-sources, batch 5 (`deepen`)** — 0 new literary citations (149/230, 64.8%,
+unchanged), and that's a real result, not a skipped batch. Deliberately targeted 19 non-tomb
+candidates this round (Tabularium, Trajan's Markets, provincial theatres, Pompeii's forum/
+temples/baths, the Maison Carrée, Baalbek's Temple of Bacchus, the Alcantara Bridge, three
+amphitheatres) on the theory that famous standalone monuments would outperform the tomb-heavy
+remaining pool — they didn't. Every real hit the research turned up was an **inscription** (CIL),
+which this ticket's own rule excludes (inscriptions belong to `[09-P1-4]` epigraphy, standing and
+still unclaimed), so nothing merged into `ancient_sources[]` this round. Real near-misses
+correctly rejected on review, the same discipline the last two batches established: Aulus Gellius
+on Trajan's Forum describes the neighboring Forum, not the separate Markets complex; Macrobius on
+Baalbek's oracle describes the neighboring Temple of Jupiter, not Bacchus. The 8 solid CIL
+citations this batch did turn up (Tabularium, Stabian Baths, Temple of Isis, Temple of Apollo,
+Alcantara Bridge, Maison Carrée, Temple of Baalshamin, Cartagena's theatre) are logged in
+`BOARD.md`'s ticket note as a ready-made head start for whoever opens the epigraphy channel next.
+
+**`[06-P0-2]` curate-buildings, Delphi (`deepen`)** — the fifth site to get Ostia-depth curated
+descriptions, and the first Panhellenic sanctuary rather than a city: new
+`app/delphiDescriptions.ts`, 34 entries (33 distinct buildings) researched via a background
+WebSearch pass keyed against Pausanias's own 2nd-century tour of the sanctuary, Herodotus,
+Plutarch — a working Delphic priest at this map's exact 117 CE snapshot date — and the Fouilles de
+Delphes excavation reports. Delphi's OSM building names are in Greek, unlike the Italian/English
+names the first four curated sites used, so the lookup keys here are exact Greek strings, a
+pattern difference worth flagging for whoever curates the next non-Latin-script site. One
+candidate dropped on review: `Τέμενος Ποσειδώνος` ("Precinct of Poseidon") has no known standalone
+structure at Delphi — research pointed instead to a Poseidon altar inside the Temple of Apollo's
+own cella (Pausanias 10.24.4), so curating it as a second separate building would have asserted a
+precinct that likely doesn't exist. One genuine surprise checked rather than assumed:
+`Στοά Αττάλου` ("Stoa of Attalos") looks like an OSM mix-up with the far more famous Athens Agora
+building of the same name, but turned out to be real and Delphi-specific, funded by a different
+Attalid king. The same duplicate-marker-shadowing bug the Ephesus entry already documented
+recurred once — the curated Temple of Apollo entry sits behind a pre-existing standalone
+`pois.geojson` POI at the same coordinates that always wins the click first — left in as harmless,
+same call as Ephesus. Verified with Playwright: all 34 keys match real, distinct OSM features in
+the live building data (no silent typos), and clicking the Athenian Treasury surfaces the authored
+text with no fallback message.
+
+That closes a complete 1 `add` : 2 `deepen` : 1 `polish` cycle.
+
+### Metrics
+
+`npm run metrics -- --write`: 467 POIs unchanged, curated-places total 1,158 → 1,170 (the 12 new
+governors), ancient-sources coverage unchanged at 149/230 (64.8%, see batch 5 above), curated
+building sites 4/40 → 5/40 (10.0% → 12.5%).
+
+### What's next
+
+- **Board, fresh cycle**: this run closed a clean 1:2:1 cycle, so the next run picks whatever's
+  topmost and unclaimed. At the time this run ends the topmost unclaimed P0 tickets are
+  `[12-P0-1]` merge-themes (`fix`, big — may need splitting), `[03-P0-1]` schema-v2 (`fix`), and
+  `[03-P0-2]` card-rebuild (`polish`); no unclaimed P0 `add` exists — the next `add` in priority
+  order is `[07-P1-5]` ordinary-people or `[14-P2-8]` hub-pages. Check the board fresh.
+- **`[09-P1-4]` epigraphy** is a strong pickup for the next `deepen` slot: this run's
+  ancient-sources batch 5 already handed it 8 verified CIL citations with real reference numbers
+  for free (see that ticket's note in `BOARD.md`), and the standing ancient-sources ticket has
+  now hit its third batch in a row with a very low literary hit rate — the epigraphy channel is
+  where the real remaining yield is.
+- **Governors**: 31 of 43 provinces still have no marker. Four (Hispania Baetica, Lusitania,
+  Sicilia, Dalmatia) are flagged as genuinely unresearched rather than confirmed-absent — the best
+  next marginal return. The rest are honest gaps in the surviving Trajanic/Hadrianic fasti; a
+  future pass with working `WebFetch` (blocked for both research agents this run — every domain,
+  even Wikipedia, failed to fetch directly; only `WebSearch`'s synthesized snippets worked) and
+  fresh search budget would likely do somewhat better, per both agents' own notes, but shouldn't
+  be expected to close the gap to anywhere near 43.
+- **Axis 2 (road stations)**: not touched this run — the board cycle filled the shift. Via Appia,
+  Via Egnatia, and Via Domitia/Via Cottia are shipped; Via Augusta (Hispania) is next in the
+  brief's own queue for whoever wants an axis-only run.
+- **`research/` (axis 1, more cities)** still doesn't exist in a fresh cloud clone — same gap
+  Shift 24 flagged, unresolved this run too.
+
+---
+
 ## Shift 24 — 2026-08-17 (this shift's own prompt claimed "Shift 1 of four")
 
 **Same stale-numbering mismatch every shift since Shift 13 has flagged** — SHIFT_LOG was already

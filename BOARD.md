@@ -592,3 +592,28 @@ topmost and unclaimed. At the time this run ends, the topmost unclaimed P0 ticke
 priority order is `[14-P1-4]`'s neighbor tickets in P1/P2 (`[07-P1-4]` governors, `[07-P1-5]`
 ordinary-people, `[14-P2-8]` hub-pages) unless a new P0 `add` opens up first. Check the board fresh
 — don't assume this note is still current by the time you read it.
+
+- 2026-08-17 · `[05-P0-2]` focus-ring · cloud shift 25. Global `:focus-visible` ring via theme
+  tokens; inset `box-shadow` on text inputs to dodge a pill-container clipping bug found while
+  screenshotting. See ticket note above.
+- 2026-08-17 · `[07-P1-4]` governors · cloud shift 25. 12 sourced provincial governors for 117 CE
+  in `public/data/politics.geojson`, well short of the ticket's own ~45 estimate — see ticket
+  note above for why that shortfall is itself the finding, not a shortcut.
+- 2026-08-17 · `[09-P0-1]` ancient-sources · cloud shift 25. Batch 5: 0 new literary citations
+  (149/230, 64.8%, unchanged) but 8 verified CIL inscriptions handed off to `[09-P1-4]`. See
+  ticket note above.
+- 2026-08-17 · `[06-P0-2]` curate-buildings (Delphi) · cloud shift 25. 34 entries in
+  `app/delphiDescriptions.ts`, the first sanctuary (not a city) to get this treatment, and the
+  first site keyed by Greek OSM names rather than Italian/English. See ticket note above.
+
+**Ratio state after this run:** cloud shift 25 ran a complete 1:2:1 cycle — 1 `add`
+(`[07-P1-4]` governors), 2 `deepen` (`[09-P0-1]` ancient-sources batch 5, `[06-P0-2]`
+curate-buildings/Delphi), 1 `polish` (`[05-P0-2]` focus-ring). The open cycle is clean; the next
+run picks whatever's topmost and unclaimed. At the time this run ends, the topmost unclaimed P0
+tickets are `[12-P0-1]` merge-themes (`fix`, big), `[03-P0-1]` schema-v2 (`fix`), `[03-P0-2]`
+card-rebuild (`polish`), `[11-P0-3]` delete-dead-data (`retire`), and `[08-P1-6]` baalbek-dating
+(`verify`) — no unclaimed P0 `add` exists; the next `add` in priority order is `[07-P1-5]`
+ordinary-people or `[14-P2-8]` hub-pages (both P2) unless a new P0 `add` opens up first.
+`[09-P1-4]` epigraphy is worth a look for the next `deepen` slot — see this run's ancient-sources
+note for the 8-citation head start waiting there. Check the board fresh — don't assume this note
+is still current by the time you read it.
