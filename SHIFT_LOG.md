@@ -7,6 +7,197 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 24 — 2026-08-17 (this shift's own prompt claimed "Shift 1 of four")
+
+**Same stale-numbering mismatch every shift since Shift 13 has flagged** — SHIFT_LOG was already
+23 real shifts deep at session start, so this entry continues as Shift 24. The session started on
+a detached `HEAD` pointed at the same commit `origin/main` was already at (`cb61cbb`, Shift 23's
+last commit) — `git checkout -B main origin/main` fixed the local branch pointer in one step, the
+same recurring symptom every shift since #9 has flagged, nothing lost. `research/` (the
+Overpass-fetch pipeline `SHIFT_BRIEF.md` describes for adding new cities) is `.gitignore`d and
+doesn't exist in a fresh cloud clone — a real gap for whichever shift next wants to pick up axis 1
+(more cities); it isn't a script this session could read or extend, only rebuild from scratch.
+
+Read `SHIFT_BRIEF.md` in full, then `BOARD.md` per its own instruction ("prefer a board ticket
+over an axis"). Claimed four tickets in one `BOARD.md` commit at the start (`git pull --rebase`
+first, per protocol), then worked them in polish → add → deepen → deepen order rather than
+strictly add-first, since the polish ticket was small and self-contained and clearing it early
+left the rest of the shift free for the two research-heavy deepen tickets to run as background
+agents while other work continued. `git pull --rebase` before every push; no collisions this run.
+
+### Board — a full 1 `add` : 2 `deepen` : 1 `polish` cycle
+
+**`[14-P1-4]` province-pages (`add`)** — new `app/provinces.ts`, a registry of 43 provinces (the
+53 polygons in `provinces.geojson` collapse to 43 real administrative units: Italy's eleven
+Augustan regiones fold into one `Italia` entry since they aren't provinces at all, and a few
+short-lived/contested units — Epirus, the Cyclades, Assyria — fold into their nearest real
+province rather than shipping an empty page), each with 117 CE administrative status
+(senatorial/imperial-consular/imperial-praetorian/imperial-procurator/prefecture), capital, and a
+sourced Google-Business-voice blurb. New `app/province/[slug]/page.tsx` (mirrors `/place/[slug]`'s
+pattern) lists every `sites.ts` city and `pois.geojson` record whose `province` field normalizes
+to that province. The underlying data turned out to use roughly fifteen different spellings for
+the same provinces (Achaea/Achaia, Judaea/Iudaea, Baetica/Hispania Baetica, Arabia/Arabia
+Petraea) — built an alias table (`provinceForField()`) to absorb this rather than touching the
+~450 records that carry those strings. Verified a handful of less-certain facts via WebSearch
+before writing (Lycia et Pamphylia's capital, Thracia's procurator-to-legate upgrade date,
+Numidia's real 117 CE status as a legionary military district rather than a separate province,
+which the page states plainly). Wired into `sitemap.ts`. 6 of 43 pages have no `sites.ts`/
+`pois.geojson` content yet (the three small Alpine provinces, Bithynia et Pontus, Cilicia,
+Thracia) and render an honest empty state rather than padding with invented content — a real gap
+for a future shift. `next build`: 43/43 new routes generate cleanly; `npm run validate` clean.
+
+**`[01-P0-1]` selected-marker (`polish`)** — the selected POI's pin now renders at ~1.35x scale
+with a white + category-color ring (`PoiMarkers.tsx`), and selecting a place eases the camera with
+MapLibre `padding` so the pin lands clear of the details panel (desktop) or bottom sheet (mobile)
+instead of landing underneath it. **Found and fixed a real bug while wiring this, not just a
+styling change**: the obvious way to redraw the selected pin — add `selectedId` to `PoiMarkers`'
+main data-fetch effect's dependency array — made that effect's one-time "await the map's `load`
+event if it isn't ready yet" guard re-run on every single place selection. `load` only ever fires
+once per `maplibregl.Map` instance, so every reselection after the first hung forever awaiting an
+event that would never come again, silently stranding every POI marker at zero. This didn't show
+up in a quick look — it took several stale-dev-server false leads (a leftover background `next
+start` process serving an old build while a rebuilt one ran on the same port, giving `0 markers`
+readings that had nothing to do with the actual bug) before a full lifecycle trace pinned it down
+to the `load`-wait. Fixed by leaving the main effect's dependencies untouched and adding a second,
+tiny effect that just re-invokes the already-built `render()` closure (via a ref) when the
+selection changes — no refetch, no load-wait, no zoomend re-registration. Verified with Playwright
+(real headless Chromium) at 1280×800 light and 375×812 dark: marker count holds at 404 through a
+select and a reselect of a different pin; exactly one marker carries the selected styling at a
+time; the panel/sheet no longer covers the open pin in either viewport.
+
+**`[09-P0-1]` ancient-sources, batch 4 (`deepen`)** — continued the standing citation task from
+148/230 (64.3%) toward the shrinking remaining pool (82 open at claim time). Delegated 41 of those
+82 to three parallel background WebSearch-only agents by theme (Italy/Gaul/Hispania civic
+monuments; Eastern/frontier sites; industrial sites), each told to report `not_found` honestly
+rather than stretch. Result: 1 real hit — the Baths of Trajan now cite Cassius Dio 69.4.1, which
+names the baths among Apollodorus of Damascus's works for Trajan in the anecdote explaining
+Hadrian's later grudge against the architect. One additional candidate (a Symmachus panegyric
+offered for Rheinzabern/Tabernae) was dropped on review — the researching agent itself flagged the
+exact oration/section as unconfirmed against the primary text, which fails this project's bar for
+a citation even though the underlying claim is plausible. 149/230 (64.8%) now covered; confirms
+the wall the last two batches predicted — what remains is almost entirely tombs/mausolea/
+necropoleis (29), villas/estates (12), and shipwrecks (4).
+
+**`[06-P0-2]` curate-buildings, Ephesus (`deepen`)** — the fourth site to get Ostia-depth curated
+descriptions, and the first *living* city rather than a site buried in 79 CE: new
+`app/ephesusDescriptions.ts`, 33 buildings researched via a background WebSearch pass and
+personally reviewed before merging — the Library of Celsus (still under construction the exact day
+Trajan died), both Terrace Houses, the Serapeion, the Tetragonos and State agorae, the Prytaneion,
+and several genuinely-Hadrianic buildings (the Vedius and East Gymnasia, the Olympieion, Hadrian's
+own temple) correctly marked `extant_117ce: false` since Hadrian wasn't yet emperor at this map's
+snapshot. Because Ephesus was thriving and continuously occupied in 117 CE rather than frozen by a
+volcano, most Augustan-through-Trajanic buildings are `extant_117ce: true` — flipped the file's
+default framing from the three buried-site precedents accordingly. One date fixed on review: the
+research pass gave the Library of Celsus `built: 114`, but its own description text says
+construction was still underway when Trajan died and finished "a few years later" — 114 is when
+work *began*, not a completion year, and scholarly sources genuinely disagree on the actual
+completion date (117 to as late as 135), so `built` was left unset rather than asserting a
+specific wrong number. Wired into `Map.tsx`'s existing building-click handler. Two of the 33
+entries (Great Theatre, Library of Celsus) turned out to duplicate content that already exists as
+standalone `pois.geojson` POIs at the same coordinates — those markers sit on top of the map
+canvas and always intercept a click before it reaches the building-fill layer underneath, so those
+two entries are effectively unreachable dead code; left in as harmless rather than deleted, and
+worth remembering for whichever site is curated next. Verified with Playwright: clicking the
+Serapeion surfaces the new text with the correct "Not standing in 117 CE" badge.
+
+That closes a complete 1 `add` : 2 `deepen` : 1 `polish` cycle, clearing the `add`+`deepen` debt
+the 2026-08-16 mac-editorial-pass note left open.
+
+### Track A — Via Domitia + Via Cottia, Italy to the Pyrenees (axis 2, no board ticket)
+
+Via Appia and Via Egnatia already shipped; next in the brief's own road queue is Via Domitia —
+Gnaeus Domitius Ahenobarbus's road, built 118 BCE, linking Italy to Spain through Gallia
+Narbonensis. `road_stations.geojson`: 61 → 83 features, compiled from the Antonine Itinerary's two
+parallel entries for this stretch (the Mediolanum–Arelate stage via the Cottian Alps; the
+Arelate–Narbo stage) plus Strabo for the Pyrenees terminus, cross-checked against modern place
+identifications via WebSearch. Split into two named roads rather than one, deliberately: **Via
+Domitia proper** (16 stations, Vapincum/Gap through Segustero, Alabontia, Catuiacia, Apta Julia,
+Cabellio, Ambrussum, Sextantio, Forum Domitii, Cessero, Baeterrae, Narbo — the provincial capital —
+Combusta, Ruscino, and Ad Centenarium, ending at the Panissars pass where Pompey raised a trophy
+in 71 BCE to mark the Gallia Narbonensis/Hispania Tarraconensis border) and **Via Cottia** (6
+stations, Segusio/Susa through Ad Martis, Brigantio, Ramae, Eburodunum, Caturrigas — the Alpine
+approach road from Italy, historically a separate named road several tourist/hiking sources blur
+into "Via Domitia" but the schema's `road` field should say what a Roman actually called it).
+Vapincum is the one station shared by both, the physical junction. Honest about resolution: Ramae
+has no secure modern identification (the Itinerary names it but no excavation has confirmed a
+site) — shipped `identified: false` with an interpolated coordinate rather than an invented
+precise one; five more stations carry `confidence: medium` where the identification rests on
+regional-heritage sources rather than the itinerary text itself, and two hop distances that aren't
+in the surviving itinerary text at the granularity searched are noted as road-distance estimates
+rather than presented as itinerary-sourced numbers. One ambiguity resolved rather than glossed
+over: the itinerary records this route via Arelate (Arles) with its own mileage figures, but
+Arelate already has standalone POIs on this map, so it wasn't re-added as a road station —
+Ambrussum's `distance_from_previous_mp` is measured from Nemausus per the source text (also not
+re-added, same reasoning) and that's spelled out in its own `notes` field rather than left
+ambiguous. Reused the already-shipped road-stations layer (default OFF per invariant 0) — no UI
+changes. Verified with Playwright: toggling the layer renders 17 of the 22 new points in a
+Gaul/Iberia-border viewport via `queryRenderedFeatures`.
+
+### Commits this shift
+
+1. `Claim province-pages, selected-marker, ancient-sources batch 4, curate-buildings — cloud shift 24, 2026-08-17` (board claim)
+2. `Province pages — 43 provinces, 117 CE administrative status + blurbs — [14-P1-4]`
+3. `Board: close province-pages [14-P1-4]`
+4. `Selected POI gets an enlarged ringed marker; camera offsets for the panel — [01-P0-1]`
+5. `Board: close selected-marker [01-P0-1]`
+6. `Ancient-sources batch 4: 1 new citation — [09-P0-1]`
+7. `Ephesus curated buildings — [06-P0-2]`
+8. `Board: close ancient-sources batch 4 and curate-buildings/Ephesus`
+9. `Via Domitia + Via Cottia — 22 road stations, Italy to the Pyrenees (Track A, axis 2)`
+10. `Board: log Via Domitia axis-2 work; update ratio state after full 1:2:1 cycle`
+11. `Metrics: refresh for 2026-08-17`
+
+All pushed to `main` individually as each piece finished and was verified; pre-push `next build` +
+`npm run validate` gate ran clean on every push (0 validator errors, the same 14 pre-existing
+warnings throughout; the cross-file name-collision count for `[12-P0-1]`'s merge backlog stayed at
+75 — the new road stations and province pages didn't add any).
+
+### Verification methodology
+
+Every UI-touching change (the selected-marker polish, the Ephesus building wiring) was checked in
+a real headless Chromium (`/opt/pw-browsers/chromium-1194`, Playwright installed into
+`/tmp/pw-scratch` outside the repo) via `npm run build && npx next start`, not `npm run dev` —
+production build mode, matching what Vercel actually ships. **One real trap hit repeatedly this
+run, worth flagging hard for future shifts**: starting a background `next start` server, then
+rebuilding the app, then testing again *without killing the old server* leaves a stale process
+still bound to the port, silently serving the *previous* build's HTML (which references JS chunk
+hashes the *current* `.next/static` directory no longer has) — the browser then 400s on its own
+main chunk and nothing on the page works, in a way that looks exactly like a real application bug
+(markers rendering then vanishing, zero markers ever appearing) rather than a test-harness mismatch.
+Symptom to watch for: compare `curl -s $URL | grep 'chunks/app/page-'` against
+`ls .next/static/chunks/app/ | grep '^page-'` before trusting *any* browser-based finding after a
+rebuild — if they don't match, kill every `next`/`next-server` process and restart before
+debugging further. Also: `(cmd &)`/`nohup cmd & disown` inside a single Bash tool call did not
+reliably keep a server alive past that tool call's return in this harness; the Bash tool's own
+`run_in_background: true` parameter did.
+
+### Next shift should pick up
+
+- **Board / Track B:** a complete 1 `add` : 2 `deepen` : 1 `polish` cycle just closed. The next
+  run should start a fresh cycle with the topmost unclaimed ticket that fits — check the board
+  fresh rather than trusting this note. No unclaimed P0 `add` exists right now; `[12-P0-1]`
+  merge-themes (`fix`, flagged as possibly needing to be split across passes) and `[03-P0-1]`
+  schema-v2 (`fix`) are the two biggest unclaimed P0s.
+- **Track A:** `[09-P0-1]` ancient-sources remains standing at ~40/230 genuinely open, almost all
+  tombs/villas/shipwrecks — expect a very low hit rate from here, this run's 41-POI push across
+  three research agents found exactly one usable citation. `[06-P0-2]` curate-buildings has real
+  headroom: 36 of the 40 sites still have zero curated content (Ostia, Pompeii, Herculaneum,
+  Ephesus done). Via Domitia is now shipped; the brief's own road queue continues with Via
+  Augusta (the natural next stage south of the Pyrenees, continuing from this run's
+  Summum Pyrenaeum terminus), then Via Traiana Nova, then Via Agrippa.
+- **Axis 1 (more cities) is still fully unstarted by any cloud shift** — the Overpass-fetch
+  pipeline `SHIFT_BRIEF.md` points to (`research/italia_batch.py`) is `.gitignore`d and doesn't
+  exist in a fresh cloud clone; a shift that wants to pick this axis up needs to write that
+  pipeline from scratch (or the Mac-side worker needs to commit a de-gitignored copy somewhere
+  cloud shifts can read it) before the first new city can be fetched.
+- **General:** two of Ephesus's 33 curated-building entries (Great Theatre, Library of Celsus)
+  are unreachable because a same-coordinate `pois.geojson` POI marker always intercepts the click
+  first — the same shape as the collision-audit findings in earlier shifts' logs. Worth a
+  dedicated pass checking all four curated-buildings files against `pois.geojson` for this
+  specific overlap before curating a fifth site, so the research isn't wasted again.
+
+---
+
 ## Shift 23 — 2026-08-16 (this shift's own prompt claimed "Shift 4 of four")
 
 **Same stale-numbering mismatch every shift since Shift 13 has flagged** — SHIFT_LOG was already
