@@ -1,14 +1,15 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import maplibregl from "maplibre-gl";
 import type { Map as MLMap } from "maplibre-gl";
 import { useUnits } from "./useUnits";
-import { loadPlaces, searchPlaces, type Place } from "./places";
+import { loadPlaces, loadPois, searchPlaces, type Place } from "./places";
 import { clearOverlays, countActiveOverlays, LAYER_GROUPS, toggleLayer, useLayers } from "./useLayers";
 import { CATEGORY_GROUPS } from "./poiCategories";
 import { toggleHiddenCategory, useHiddenCategories } from "./useHiddenCategories";
 import { useIsMobile } from "./useIsMobile";
-import { usePoiPanel } from "./usePoiPanel";
+import { usePoiPanel, selectPoi } from "./usePoiPanel";
 import { useKeyboardShortcuts } from "./useKeyboardShortcuts";
 import EpochModal from "./EpochModal";
 import CurrencyConverter from "./CurrencyConverter";
@@ -92,15 +93,72 @@ export default function Chrome() {
       setResultsOpen(false);
       return;
     }
-    loadPlaces().then((places) => {
-      setResults(searchPlaces(places, value));
+    Promise.all([loadPlaces(), loadPois()]).then(([places, pois]) => {
+      setResults(searchPlaces([...pois, ...places], value));
       setResultsOpen(true);
     });
   };
 
+  // A search hit with no `pois.geojson` record (most of the raw gazetteer) has no card to open —
+  // drop the same red "What's here?" pin ContextMenu.tsx uses on a right-click, so choosing it
+  // still visibly marks where the map just flew to instead of a silent pan. Cleared on the next
+  // selection of either kind, and on unmount.
+  const searchPinRef = useRef<maplibregl.Marker | null>(null);
+  const searchPopupRef = useRef<maplibregl.Popup | null>(null);
+  const clearSearchPin = () => {
+    searchPinRef.current?.remove();
+    searchPinRef.current = null;
+    searchPopupRef.current?.remove();
+    searchPopupRef.current = null;
+  };
+  useEffect(() => clearSearchPin, []);
+
   const flyToPlace = (p: Place) => {
     const map = (window as any).__map as MLMap | undefined;
-    if (map) map.flyTo({ center: [p.lng, p.lat], zoom: Math.max(map.getZoom(), 7.5), duration: 1000 });
+    clearSearchPin();
+    if (p.poiProps) {
+      // A curated POI — open its real card the same way clicking its marker on the map does.
+      // `selectPoi` triggers Map.tsx's own panel-aware `easeTo` (padding so the pin lands clear of
+      // the panel/sheet, current zoom unchanged) — call it FIRST, then override with our own
+      // `flyTo` that adds the zoom-in a search jump needs. Both run synchronously in the same
+      // tick, and MapLibre cancels whichever camera call came first, so the one that must win
+      // (ours, since it carries the zoom) has to be issued last. Padding mirrors Map.tsx's
+      // `applySelectionCamera` so the pin still lands clear of the panel/sheet.
+      selectPoi(p.poiProps, [p.lng, p.lat]);
+      if (map) {
+        const isMobileNow = window.innerWidth <= 640;
+        const padding = isMobileNow
+          ? { top: 0, right: 0, left: 0, bottom: Math.round(window.innerHeight * 0.55) }
+          : { top: 66, right: 0, left: 470, bottom: 40 };
+        map.flyTo({ center: [p.lng, p.lat], zoom: Math.max(map.getZoom(), 15.5), padding, duration: 900 });
+      }
+    } else {
+      if (map) {
+        map.flyTo({ center: [p.lng, p.lat], zoom: Math.max(map.getZoom(), 7.5), duration: 1000 });
+        const el = document.createElement("div");
+        el.innerHTML = `
+          <svg width="27" height="36" viewBox="0 0 27 36" style="filter:drop-shadow(0 1px 3px rgba(0,0,0,.4));">
+            <path fill="#ea4335" d="M13.5 0C6 0 0 6 0 13.5 0 24 13.5 36 13.5 36S27 24 27 13.5C27 6 21 0 13.5 0z"/>
+            <circle cx="13.5" cy="13.5" r="5.5" fill="#fff"/>
+          </svg>`;
+        el.style.cssText = "transform:translateY(-18px);cursor:default;";
+        const marker = new maplibregl.Marker({ element: el, anchor: "bottom" }).setLngLat([p.lng, p.lat]).addTo(map);
+        searchPinRef.current = marker;
+        const label = p.latin || p.modern || "Unknown place";
+        const popup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 28 })
+          .setLngLat([p.lng, p.lat])
+          .setHTML(
+            `<div style="font: 13px Roboto, sans-serif; color: var(--text); font-weight: 600;">${escapeSearchHtml(label)}</div>`,
+          )
+          .addTo(map);
+        searchPopupRef.current = popup;
+        popup.on("close", () => {
+          marker.remove();
+          if (searchPinRef.current === marker) searchPinRef.current = null;
+          if (searchPopupRef.current === popup) searchPopupRef.current = null;
+        });
+      }
+    }
     setQuery(p.latin || p.modern);
     setResultsOpen(false);
     setActiveIndex(-1);
@@ -606,6 +664,12 @@ export default function Chrome() {
       )}
 
     </>
+  );
+}
+
+function escapeSearchHtml(s: string): string {
+  return s.replace(/[&<>"']/g, (c) =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }) [c] as string,
   );
 }
 

@@ -5,10 +5,48 @@ export type Place = {
   major: boolean;
   lng: number;
   lat: number;
+  /** Present only for a result sourced from `pois.geojson` rather than the raw gazetteer — the
+   * full feature properties, ready to hand straight to `selectPoi()` so the result opens a real
+   * place card instead of just panning the camera. */
+  poiProps?: Record<string, any>;
 };
 
 let cache: Place[] | null = null;
 let inflight: Promise<Place[]> | null = null;
+
+let poiCache: Place[] | null = null;
+let poiInflight: Promise<Place[]> | null = null;
+
+/** The 467 curated landmarks in `pois.geojson`, flattened into the same shape `Place` search
+ * already understands — so a search for "Pantheon" or "Circus Maximus" can surface a result that
+ * opens its real card (hero image, notes, sources) instead of the bare gazetteer dot most place
+ * names fall back to. Merge with `loadPlaces()`'s result before calling `searchPlaces()`. */
+export function loadPois(): Promise<Place[]> {
+  if (poiCache) return Promise.resolve(poiCache);
+  if (poiInflight) return poiInflight;
+  poiInflight = fetch("/data/pois.geojson")
+    .then((r) => r.json())
+    .then((geojson: any) => {
+      const pois: Place[] = [];
+      for (const f of geojson.features as any[]) {
+        if (f.geometry?.type !== "Point") continue;
+        const props = f.properties || {};
+        const [lng, lat] = f.geometry.coordinates as [number, number];
+        pois.push({
+          id: String(props.id),
+          modern: props.name_english || "",
+          latin: props.name_latin || props.name_english || "",
+          major: true,
+          lng,
+          lat,
+          poiProps: props,
+        });
+      }
+      poiCache = pois;
+      return pois;
+    });
+  return poiInflight;
+}
 
 /** Fetches + flattens the DARE-derived gazetteer once, then serves it from memory. */
 export function loadPlaces(): Promise<Place[]> {
