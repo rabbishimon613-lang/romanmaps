@@ -11,6 +11,7 @@ import { pompeiiEntry } from "./pompeiiDescriptions";
 import { herculaneumEntry } from "./herculaneumDescriptions";
 import { ephesusEntry } from "./ephesusDescriptions";
 import { delphiEntry } from "./delphiDescriptions";
+import { jerashEntry } from "./jerashDescriptions";
 import { SITE_META, SITES } from "./sites";
 
 // Palette — light + dark variants. Both palettes are calibrated so that the sea/land/roads/labels
@@ -689,7 +690,9 @@ export default function Map() {
                     ? ephesusEntry(rawName)
                     : site === "delphi"
                       ? delphiEntry(rawName)
-                      : undefined;
+                      : site === "jerash"
+                        ? jerashEntry(rawName)
+                        : undefined;
           selectPoi(
             {
               id: `${site}-${p.osm_id}`,
