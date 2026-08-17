@@ -165,9 +165,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[02-P0-1]` **`terrain`** `polish` — Hillshade/relief under the land fill.
 - [ ] `[02-P0-4]` **`self-host-glyphs`** `fix` — Stop depending on `demotiles.maplibre.org`;
       a single point of failure that would erase every label on the map.
-- [~] `[09-P0-1]` **`ancient-sources`** `deepen` — `ancient_sources[]` populated for every
-      `confidence: high` POI. **Standing task — never "done", always available.** — batch 5
-      claimed by cloud shift 25, 2026-08-17 06:18
+- [x] `[09-P0-1]` **`ancient-sources`** `deepen` — `ancient_sources[]` populated for every
+      `confidence: high` POI. **Standing task — never "done", always available.**
       *Batch 1 done 2026-08-16: 108 of 221 high-confidence POIs (48.9%), 122 citations, plus an
       "In ancient writing" block on the card. Shape is `{author, work, ref, note}` — `note` says
       what the passage contains, in place of a quotation nobody here can check against a text.
@@ -197,6 +196,27 @@ to prevent. Building locally to *test* your own work is expected and fine.
       the primary text. Confirms the pool has hit the wall the last two batches predicted: what's
       left is almost entirely tombs/mausolea/necropoleis (29), villas/estates (12), and
       shipwrecks (4). ~40 POIs remain genuinely open; expect a very low hit rate.*
+      *Batch 5 done 2026-08-17 by cloud shift 25: 0 new literary citations (149/230, 64.8%,
+      unchanged) — the honest result of a genuine search, not a skipped batch. Deliberately
+      targeted 19 non-tomb candidates this round (Tabularium, Trajan's Markets, provincial
+      theatres, Pompeii's forum/temples/baths, the Maison Carrée, Baalbek's Temple of Bacchus,
+      the Alcantara Bridge, three amphitheatres) on the theory that famous standalone monuments
+      would outperform the tomb-heavy remaining pool — they didn't. Every "hit" the research
+      agent found turned out to be an **inscription** (CIL), not a literary passage, which this
+      ticket's own rule excludes (inscriptions belong to `[09-P1-4]` epigraphy, standing and
+      unclaimed) — so none were merged here. Real near-misses correctly rejected on review: Aulus
+      Gellius on Trajan's Forum describes the neighboring Forum, not the separate Markets complex;
+      Macrobius on Baalbek's oracle describes the neighboring Temple of Jupiter, not Bacchus;
+      Vitruvius's own basilica is at Fanum Fortunae (Fano), a different building entirely from
+      Pompeii's. 8 solid CIL citations came out of this batch with real reference numbers
+      (Tabularium CIL I² 736, Stabian Baths CIL X 829, Temple of Isis CIL X 846, Temple of Apollo
+      CIL X 787, Alcantara Bridge CIL II 759-761, Maison Carrée CIL XII 3156, Temple of
+      Baalshamin's bilingual dedication, Cartagena's theatre lintel) — a ready-made head start for
+      whoever picks up epigraphy next, not wasted effort even though nothing merged into this
+      field. 81 high-confidence POIs remain open for literary citation; the tomb/villa/shipwreck
+      wall this and the last two batches hit is now well-enough documented that a batch 6 should
+      probably wait for `[09-P1-4]` to open the inscription channel rather than keep re-running
+      the same literary-only search against the same thin pool.*
 - [~] `[06-P0-2]` **`curate-buildings`** `deepen` — Ostia-depth curated descriptions for the
       other 39 sites, ~10 buildings/day. **Standing task, never "done".** — next site (Delphi)
       claimed by cloud shift 25, 2026-08-17 06:18
