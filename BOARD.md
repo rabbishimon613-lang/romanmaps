@@ -83,9 +83,18 @@ to prevent. Building locally to *test* your own work is expected and fine.
       Settle the date, then set `built` and the text to match.
 - [ ] `[11-P0-3]` **`delete-dead-data`** `retire` — Delete `roads_high`, `roads_low`,
       `places_high` (~11MB shipped, never loaded) or wire them into a detail ladder.
-- [~] `[01-P0-1]` **`selected-marker`** `polish` — Selected POI gets an enlarged ringed marker;
-      camera offsets by the sheet height so the pin stays visible. — claimed by cloud shift 24,
-      2026-08-17 00:00
+- [x] `[01-P0-1]` **`selected-marker`** `polish` — Done 2026-08-17 by cloud shift 24. Selected
+      pin renders ~1.35x scale with a white+category-color ring (`PoiMarkers.tsx`); the camera
+      now eases with `padding` on selection so the pin lands clear of the panel (desktop) or
+      sheet (mobile), reset on deselect (`Map.tsx`). Found and fixed a real bug in the same pass:
+      naively adding `selectedId` to `PoiMarkers`' data-fetch effect's dependency array made its
+      one-time "await the map's `load` event" guard re-run on every reselection — `load` only
+      ever fires once per map instance, so every reselection after the first hung forever and
+      silently stranded every marker at zero. Fixed with a second, lightweight effect that just
+      re-invokes the already-built render closure on selection change, leaving the fetch/load-
+      wait/zoomend-registration effect's dependencies untouched. Verified with Playwright at
+      1280×800 light and 375×812 dark: marker count holds through select/reselect, exactly one
+      marker carries the selected class, panel/sheet no longer covers the open pin.
 - [x] `[01-P0-2]` **`camera-memory`** `polish` — Done 2026-08-16 by cloud shift 4. A returning
       visitor now lands where they left off instead of always resetting to the empire-wide
       opening view. `Map.tsx`'s existing `#lng,lat,zoomz` hash sync only covered shared links and
