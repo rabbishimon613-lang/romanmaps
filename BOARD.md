@@ -136,8 +136,24 @@ to prevent. Building locally to *test* your own work is expected and fine.
       duplicates in places_high/medium pending `[12-P0-1]`'s theme merge) left alone — see the
       commit for the full accounting. `poi_fortress_i_adiutrix_brigetio` and
       for other exact-coordinate stacks while in there.
-- [~] `[04-P0-1]` **`sheet-detents`** `polish` — Three-detent bottom sheet (peek/half/full),
-      velocity-aware. — claimed by cloud shift 27, 2026-08-17 18:12
+- [x] `[04-P0-1]` **`sheet-detents`** `polish` — Done 2026-08-17 by cloud shift 27. Extended
+      `PlaceDetails.tsx`'s mobile bottom sheet from two snap points (half/full) to three
+      (peek/half/full), matching Google Maps mobile. A fast flick advances or retreats one
+      detent regardless of drag distance, via an exponentially-smoothed release velocity; a slow
+      release snaps to the nearest detent by position; dragging well below peek dismisses.
+      **Found and fixed a real, independent bug while building the Playwright verification
+      harness**: when a POI's `image_url` fails to load, the old `onError` handler only hid the
+      `<img>` — the surrounding `position:relative` wrapper collapsed to zero height, and its
+      `position:absolute; bottom:0` credit-caption div slid up to sit exactly where the drag
+      handle renders, silently eating every pointer event aimed at it. The sheet was fully
+      undraggable any time an image failed — contradicting this project's own "broken URLs
+      degrade gracefully" rule (`SHIFT_BRIEF.md` §1.6), which the code never actually delivered
+      on a real image error. Now tracked in an `imageFailed` state so a broken image renders the
+      identical fallback gradient rail "no `image_url`" already gets. Verified with a Playwright
+      state-machine test driving real synthetic mouse gestures against the built production
+      bundle (not dev mode): slow small drag → nearest-snap to half; fast flick up → half→full;
+      fast flick down ×2 → full→half→peek; fast flick down from peek → dismissed. Screenshotted
+      at 375×812 in both light and dark, plus desktop light (unaffected — sheet is mobile-only).
 - [ ] `[13-P0-2]` **`image-audit`** `illustrate` — Audit all 303 existing images; flag and
       replace any modern photograph showing modern infrastructure. Cotinae is the test case.
 - [ ] `[05-P0-1]` **`places-in-view-list`** `polish` — Accessible, keyboard-navigable list of
@@ -217,8 +233,7 @@ to prevent. Building locally to *test* your own work is expected and fine.
       wall this and the last two batches hit is now well-enough documented that a batch 6 should
       probably wait for `[09-P1-4]` to open the inscription channel rather than keep re-running
       the same literary-only search against the same thin pool.*
-- [~] `[06-P0-2]` **`curate-buildings`** `deepen` — claimed for Timgad by cloud shift 27,
-      2026-08-17 18:12. Ostia-depth curated descriptions for the
+- [x] `[06-P0-2]` **`curate-buildings`** `deepen` — Ostia-depth curated descriptions for the
       other 39 sites, ~10 buildings/day. **Standing task, never "done".**
       *Pompeii done 2026-08-16 by cloud shift 3: 28 buildings in `app/pompeiiDescriptions.ts`
       (House of the Faun, Temple of Apollo, the Forum and its temples, the three bath complexes,
@@ -301,6 +316,25 @@ to prevent. Building locally to *test* your own work is expected and fine.
       centre and a restaurant left uncurated. Verified with Playwright: North Gate surfaces "Built
       115 CE" and its text; Temple of Artemis shows the "Not standing in 117 CE" badge. 34 sites
       still open for the standing task.*
+      *Trier (Augusta Treverorum) done 2026-08-17 by cloud shift 27: 12 entries in
+      `app/trierDescriptions.ts`, the seventh site — and the first where the OSM extract itself
+      was the binding constraint. Originally claimed for Timgad, which turned out to have only 7
+      named OSM building features against an earlier shift's stale "30+" claim; pivoted to Trier,
+      which has 116 named features on paper — but ~105 of those are ordinary present-day German
+      city buildings (hospital wings, tax offices, hotel chains) with no Roman-era link, and none
+      of Trier's headline Roman monuments (Porta Nigra, Amphitheater, Aula Palatina, Römerbrücke)
+      carry an OSM name tag at all, so they can't be curated here regardless of how well documented
+      they are. The 12 that do have real history are all honestly `extant_117ce: false` — Trier's
+      building boom starts once it becomes a Tetrarchic/Constantinian imperial residence from 293
+      CE, generations after this map's snapshot; several entries are medieval buildings raised over
+      Roman ground centuries later. "Roter Turm" skipped: the exact name string appears twice in
+      the geojson at two different real locations, so one lookup entry would misdescribe whichever
+      a click hit. Verified with Playwright against the built production bundle: clicking
+      Barbarathermen surfaces "Built 150 CE" and the "Not standing in 117 CE" badge with the
+      curated text. 33 sites still open for the standing task, and the finding worth flagging for
+      whoever picks the next one: check a candidate site's actual named-feature count in its own
+      `_buildings.geojson` before claiming it — this board's own site-readiness notes have gone
+      stale at least twice now (Timgad here, and see the epigraphy note below for three more).*
 - [ ] `[10-P0-3]` **`flagship-depth`** `deepen` — Bring POIs whose `notes` runs under 60 words up
       to real panel depth in that same field, worst-first. This is the **panel tier of
       `[10-P0-2]`** applied to the places that need it most; the tombstone/label tiers still need
@@ -368,8 +402,7 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[06-P1-3]` **`building-typology`** `deepen` — Extend to the ~35-term standard vocabulary,
       grouped into six colour families.
 - [ ] `[06-P1-4]` **`excavation-history`** `deepen` — `excavation[]` on all 40 sites.
-- [~] `[09-P1-4]` **`epigraphy`** `deepen` — claimed for batch 2 by cloud shift 27, 2026-08-17
-      18:12. Batch 1 done 2026-08-17 by cloud shift 26. 16
+- [x] `[09-P1-4]` **`epigraphy`** `deepen` — Batch 1 done 2026-08-17 by cloud shift 26. 16
       inscriptions merged into `pois.geojson`'s `ancient_sources[]` (author = corpus siglum,
       work = inscription type, ref = date, to fit the validator's literary-source shape): the 8
       CIL leads shift 25 handed off, verified and written up, plus 8 more researched and verified
@@ -382,6 +415,19 @@ to prevent. Building locally to *test* your own work is expected and fine.
       writing" block. **Standing task** — hundreds of curated POIs still carry no inscription.
       *Research also surfaced two duplicate-POI pairs for `[12-FIX-3]`: `poi_pantheon` /
       `poi_pantheon_rome`, and `poi_pompeii_temple_apollo` / `poi_temple_apollo_pompeii`.*
+      *Batch 2 done 2026-08-17 by cloud shift 27: 0 new citations merged — a real, honest zero,
+      not a skipped batch. Targeted the four sites the previous shift's handoff note recommended
+      (Ostia guild seats/Capitolium, Timgad arch/forum, Aquileia, Mérida theatre/amphitheatre) and
+      found the targeting itself was the problem: **three of the four sites have no matching POI
+      in `pois.geojson` at all** (Timgad, Aquileia's forum, Mérida's theatre/amphitheatre) — an
+      inscription has nowhere to attach even when it's real and verified. For the one site that
+      does have matching POIs, Ostia's Capitolium and Piazzale delle Corporazioni guild seats,
+      the genuine surviving inscriptions there are Severan-era (c. 190-210 CE) or later — a real
+      `not_found`, correctly excluded rather than forced. Did surface three well-sourced,
+      genuinely verified candidate citations with no POI yet to hold them (Aquileia's forum
+      elogium AE 1996, 685; Mérida theatre's Agrippa dedication CIL II 474; Timgad's Trajanic
+      foundation text CIL VIII 2355) — a ready-made head start for whoever adds those POIs. 149/230
+      high-confidence POIs remain at 64.8%, unchanged; the standing pipeline itself is unaffected.*
 - [ ] `[09-P1-5]` **`clear-unverified`** `verify` — Re-check the citations SHIFT_LOG recorded as
       unverified (Atrium Vestae, Domus Flavia, Bibliotheca Ulpia, Baths of Nero, Ara Pacis).
 - [ ] `[08-P1-4]` **`gazetteer-audit`** `fix` — Londinium is missing from `places_medium`. Audit
@@ -478,8 +524,23 @@ to prevent. Building locally to *test* your own work is expected and fine.
       `summary_large_image`.
 - [ ] `[05-P2-6]` **`i18n`** `polish` — `strings.ts` scaffold; English + Italian.
 - [ ] `[04-P2-9]` **`manifest`** `polish` — Web manifest + maskable icon.
-- [~] `[14-P2-8]` **`hub-pages`** `add` — Four or five explainer hubs. — claimed by cloud shift 27,
-      2026-08-17 18:12.
+- [x] `[14-P2-8]` **`hub-pages`** `add` — Done 2026-08-17 by cloud shift 27. Five explainer essays
+      at `/hub/[slug]` (`app/hubs.ts` + `app/hub/[slug]/page.tsx`, mirroring `/province/[slug]`'s
+      split between a hand-written registry and a page that aggregates real data around it): The
+      Roman Road Network, The Roman Army in 117 CE, 11 August 117 (the snapshot date itself),
+      Trade/Coinage/the Economy, and Religion & the Sacred Landscape. Each pairs 3-5 paragraphs of
+      scene-setting prose with a live-pulled slice of data already shipped — road stations grouped
+      by road, the 28 legions by province (linking to their `/place/` cards), people/events from
+      the 117 CE snapshot, mints/trade routes, and imperial-cult centers/religious communities by
+      tradition — no new atomic research, purely a reading path into content that otherwise only
+      surfaces one marker at a time on the map. Wired into `sitemap.ts`. Two real data-shape bugs
+      caught and fixed while wiring the supporting lists, not the map's own code: `events_117.geojson`
+      mixes Point and Polygon geometries (the Kitos War revolt zones) in one file, which crashed
+      static generation on `.toFixed()` until a small polygon-centroid helper was added; and
+      `trade_routes.geojson` mixes the named LineString routes with their individual Point
+      waypoints ("node_*" features) in the same FeatureCollection, which needed filtering before
+      the routes list was correct. Verified: `next build` generates all five routes cleanly;
+      screenshotted at 1280×900 light and 375×812 dark.
 - [ ] `[09-P2-8]` **`how-we-know`** `add` — Public methodology page.
 - [ ] `[02-P1-6]` **`sea-labels`** `add` — `seas.geojson`, ~30 water names, italic letterspaced.
 - [ ] `[12-P1-4]` **`fuzzy-dates`** `fix` — `{earliest, latest, display}` date objects.
@@ -692,3 +753,37 @@ order is `[14-P2-8]` hub-pages (P2). For the next `deepen`, `[09-P1-4]` epigraph
 task with a working pipeline — hundreds of curated POIs still carry no inscription, and it renders
 with no UI work. Check the board fresh — don't assume this note is still current by the time you
 read it.
+
+- 2026-08-17 · `[14-P2-8]` hub-pages · cloud shift 27. Five explainer essays at `/hub/[slug]`
+  (roads, army, 117 CE, trade/economy, religion), each paired with a live-pulled slice of data
+  already shipped. Two real geometry-shape bugs in `events_117.geojson`/`trade_routes.geojson`
+  found and fixed while wiring it. See ticket note above.
+- 2026-08-17 · `[09-P1-4]` epigraphy · cloud shift 27. Batch 2: 0 new citations merged — three of
+  the four targeted sites had no matching POI to attach a citation to, and Ostia's own surviving
+  inscriptions there postdate 117 CE. Three verified, sourced candidates handed off for whoever
+  adds the missing POIs. See ticket note above.
+- 2026-08-17 · `[06-P0-2]` curate-buildings (Trier) · cloud shift 27. 12 entries in
+  `app/trierDescriptions.ts`, the seventh site — pivoted from Timgad (only 7 real named OSM
+  features, a stale board claim) to Trier (116 named features, 12 of them genuinely Roman-era
+  and researchable, all honestly not-yet-built in 117 CE). See ticket note above.
+- 2026-08-17 · `[04-P0-1]` sheet-detents · cloud shift 27. Three-detent mobile bottom sheet
+  (peek/half/full), velocity-aware flick. Found and fixed a real, independent bug in the same
+  pass — a failed `image_url` load left the drag handle covered and undraggable. See ticket note
+  above.
+
+**Ratio state after this run:** cloud shift 27 ran a complete 1:2:1 cycle — 1 `add` (`[14-P2-8]`
+hub-pages), 2 `deepen` (`[09-P1-4]` epigraphy batch 2, `[06-P0-2]` curate-buildings/Trier), 1
+`polish` (`[04-P0-1]` sheet-detents). The open cycle is clean; the next run picks whatever's
+topmost and unclaimed. At the time this run ends, the topmost unclaimed P0 tickets are
+`[12-P0-1]` merge-themes (`fix`, big), `[03-P0-1]` schema-v2 (`fix`), `[03-P0-2]` card-rebuild
+(`polish`), `[12-FIX-3]` duplicate-pantheon (`retire`), `[11-P0-3]` delete-dead-data (`retire`),
+and `[08-P1-6]` baalbek-dating (`verify`) — no unclaimed P0 `add` exists; the next `add` in
+priority order is whatever's topmost in P1/P2 once this run's log lands (check fresh). Two notes
+worth flagging for whoever picks up next: (1) this run found the board's per-site "named feature
+count" claims can go stale — verify a candidate curate-buildings site's actual named-feature
+count in its own `_buildings.geojson` before claiming it, don't trust an old shift's log entry;
+(2) `[09-P1-4]` epigraphy's remaining pool is increasingly bottlenecked on missing POIs, not on
+unverifiable inscriptions — the three candidate citations this run surfaced (Aquileia forum,
+Mérida theatre, Timgad forum/gate) are ready to merge the moment those POIs exist, which may be
+better framed as a `[06-P2-6]`-adjacent `add` than a further epigraphy research pass. Check the
+board fresh — don't assume this note is still current by the time you read it.
