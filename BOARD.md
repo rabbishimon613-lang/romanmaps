@@ -165,8 +165,9 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[02-P0-1]` **`terrain`** `polish` — Hillshade/relief under the land fill.
 - [ ] `[02-P0-4]` **`self-host-glyphs`** `fix` — Stop depending on `demotiles.maplibre.org`;
       a single point of failure that would erase every label on the map.
-- [x] `[09-P0-1]` **`ancient-sources`** `deepen` — `ancient_sources[]` populated for every
-      `confidence: high` POI. **Standing task — never "done", always available.**
+- [~] `[09-P0-1]` **`ancient-sources`** `deepen` — `ancient_sources[]` populated for every
+      `confidence: high` POI. **Standing task — never "done", always available.** — batch 5
+      claimed by cloud shift 25, 2026-08-17 06:18
       *Batch 1 done 2026-08-16: 108 of 221 high-confidence POIs (48.9%), 122 citations, plus an
       "In ancient writing" block on the card. Shape is `{author, work, ref, note}` — `note` says
       what the passage contains, in place of a quotation nobody here can check against a text.
@@ -196,8 +197,9 @@ to prevent. Building locally to *test* your own work is expected and fine.
       the primary text. Confirms the pool has hit the wall the last two batches predicted: what's
       left is almost entirely tombs/mausolea/necropoleis (29), villas/estates (12), and
       shipwrecks (4). ~40 POIs remain genuinely open; expect a very low hit rate.*
-- [x] `[06-P0-2]` **`curate-buildings`** `deepen` — Ostia-depth curated descriptions for the
-      other 39 sites, ~10 buildings/day. **Standing task, never "done".**
+- [~] `[06-P0-2]` **`curate-buildings`** `deepen` — Ostia-depth curated descriptions for the
+      other 39 sites, ~10 buildings/day. **Standing task, never "done".** — next site (Delphi)
+      claimed by cloud shift 25, 2026-08-17 06:18
       *Pompeii done 2026-08-16 by cloud shift 3: 28 buildings in `app/pompeiiDescriptions.ts`
       (House of the Faun, Temple of Apollo, the Forum and its temples, the three bath complexes,
       the Brothel, named houses on Via dell'Abbondanza and elsewhere), same pattern as
@@ -320,7 +322,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       (Achaea/Achaia, Judaea/Iudaea, Baetica/Hispania Baetica), absorbed by an alias table rather
       than touching the records. Wired into `sitemap.ts`. 6 of 43 pages have no mapped content
       yet and degrade to an honest empty state — see ticket note in the Done log below.
-- [ ] `[05-P0-2]` **`focus-ring`** `polish` — Global `:focus-visible`.
+- [~] `[05-P0-2]` **`focus-ring`** `polish` — Global `:focus-visible`. — claimed by cloud shift
+      25, 2026-08-17 06:18
 - [ ] `[05-P0-3]` **`reduced-motion`** `polish` — Honour `prefers-reduced-motion`.
 - [ ] `[13-P0-3]` **`image-fallback`** `illustrate` — Static map thumbnail for the 145 places
       with no image.
@@ -331,7 +334,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
 ## P2
 
 - [ ] `[07-P1-3]` **`prices`** `deepen` — Prices and wages; extend the currency converter.
-- [ ] `[07-P1-4]` **`governors`** `add` — Governor of every province in 117 CE (~45 names).
+- [~] `[07-P1-4]` **`governors`** `add` — Governor of every province in 117 CE (~45 names). —
+      claimed by cloud shift 25, 2026-08-17 06:18
 - [ ] `[07-P1-5]` **`ordinary-people`** `add` — 30–50 named non-elite people, pinned.
 - [ ] `[06-P1-5]` **`finds`** `illustrate` — 3–8 artefacts per site with images and museum.
 - [ ] `[10-P1-4]` **`entrance`** `polish` — One sentence, three doors, dismissible.
