@@ -322,8 +322,23 @@ to prevent. Building locally to *test* your own work is expected and fine.
       (Achaea/Achaia, Judaea/Iudaea, Baetica/Hispania Baetica), absorbed by an alias table rather
       than touching the records. Wired into `sitemap.ts`. 6 of 43 pages have no mapped content
       yet and degrade to an honest empty state — see ticket note in the Done log below.
-- [~] `[05-P0-2]` **`focus-ring`** `polish` — Global `:focus-visible`. — claimed by cloud shift
-      25, 2026-08-17 06:18
+- [x] `[05-P0-2]` **`focus-ring`** `polish` — Done 2026-08-17 by cloud shift 25. Global
+      `:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }` in
+      `app/globals.css`, theme-token-driven so it's correct in both color schemes automatically.
+      Text inputs get an inset `box-shadow` instead of `outline` — several (the search field
+      chief among them) sit flush inside a rounded pill container with `overflow: hidden`, and an
+      outward outline got clipped by the pill's edge; verified the clipping with a screenshot
+      before switching approach. No component changes needed beyond the CSS — every `<button>`
+      already relies on the browser's native focus handling, so the rule just had nothing to
+      override except the two inline `outline: none` inputs already accounted for. Verified with
+      Playwright (real headless Chromium) at 1280×800 light and 375×812 dark: tabbed through the
+      hamburger menu, search field, search icon button, and the "Why 117 CE?" pill in both — every
+      one shows a clean ring in the accent color, circular buttons get a circular ring (modern
+      Chromium/Firefox/Safari all make `outline` follow the element's own `border-radius`
+      natively), no clipped or missing rings. The map canvas itself is also keyboard-focusable
+      (existing behavior, for arrow-key pan) and picks up the ring too, though at full-viewport
+      size the ring renders just outside the visible canvas and is effectively invisible — not a
+      regression, just a size where the effect doesn't show.
 - [ ] `[05-P0-3]` **`reduced-motion`** `polish` — Honour `prefers-reduced-motion`.
 - [ ] `[13-P0-3]` **`image-fallback`** `illustrate` — Static map thumbnail for the 145 places
       with no image.

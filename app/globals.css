@@ -69,6 +69,24 @@ input { font-family: inherit; }
 @media (prefers-color-scheme: dark) { :root { color-scheme: dark; } }
 input[type="checkbox"] { accent-color: var(--accent); }
 
+/* Keyboard focus ring, everywhere. `:focus-visible` already skips this for a mouse/touch click
+   on a button in every evergreen browser, so this is invisible until someone actually tabs —
+   no new visual noise for pointer users. Text inputs are the one exception: several sit flush
+   against a rounded pill container with `overflow: hidden` (the search field chief among them),
+   so an outward `outline` would get clipped by the pill's edge. An inset box-shadow draws inward
+   instead and never gets clipped, at the cost of not tracking the input's own corner radius —
+   fine here since every focusable input's box sits in a straight interior section of its pill,
+   never touching the actual rounded corners. */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 2px var(--accent);
+}
+
 /* Roman-inscription-style display serif for place-name headings — an open-source stand-in for
    Trajan Pro (see app/layout.tsx for the font load). Used sparingly: POI panel titles, site/legion
    list rows, map pin labels — not body text or UI chrome. */
