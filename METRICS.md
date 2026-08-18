@@ -30,14 +30,14 @@ queued for deletion under `[11-P0-3]`.
 
 | Measure | Value | Notes |
 |---|---:|---|
-| POIs in `pois.geojson` | 470 | the curated place canon |
+| POIs in `pois.geojson` | 469 | the curated place canon |
 | Records in the 29 thematic files | 780 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
-| **Curated places, total** | **1,250** | |
-| Description of 60+ words | 413 · **87.9%** | measured on `notes`; 57 still thin |
-| Has an image | 254 · **54.0%** | |
-| Has an ancient source | 173 · **36.8%** | |
-| — of `confidence: high` POIs | 159 / 231 · **68.8%** | the target set for `[09-P0-1]` |
-| Categories with a "what happened here" paragraph | 52 / 52 · **100.0%** | covers 470/470 POIs |
+| **Curated places, total** | **1,249** | |
+| Description of 60+ words | 412 · **87.8%** | measured on `notes`; 57 still thin |
+| Has an image | 253 · **53.9%** | |
+| Has an ancient source | 172 · **36.7%** | |
+| — of `confidence: high` POIs | 158 / 230 · **68.7%** | the target set for `[09-P0-1]` |
+| Categories with a "what happened here" paragraph | 52 / 52 · **100.0%** | covers 469/469 POIs |
 | Sites with curated building descriptions | 8 / 40 · **20.0%** | delphi, ephesus, herculaneum, jerash, merida, ostia, pompeii, trier (`[06-P0-2]`, standing) |
 | Validator errors | **0** | |
 | Validator warnings | 14 | reviewed; see the standing-warnings note |
@@ -86,4 +86,4 @@ queued for deletion under `[11-P0-3]`.
 |---|---:|---:|---:|---:|---:|
 | 2026-08-16 | 467 | 82.7% | 53.7% | 31.0% | 0 errors |
 | 2026-08-17 | 467 | 82.7% | 53.7% | 34.0% | 0 errors |
-| 2026-08-18 | 470 | 87.9% | 54.0% | 36.8% | 0 errors |
+| 2026-08-18 | 469 | 87.8% | 53.9% | 36.7% | 0 errors |

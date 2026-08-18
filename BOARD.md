@@ -64,16 +64,16 @@ to prevent. Building locally to *test* your own work is expected and fine.
       now starts both sources empty and fetches a site's pair only when visited (Explore-panel
       jump or a moveend proximity check, so deep links/search still work). Verified with
       Playwright: 0 requests to `/data/sites/*` on cold load, correct fetch + render on visit.
-- [~] `[12-FIX-3]` **`duplicate-pantheon`** `retire` — claimed by cloud shift 29, 2026-08-18. `poi_pantheon` and `poi_pantheon_rome` are
-      the same building, eight metres apart, and until 2026-08-16 they said opposite things:
-      one had the site as a Trajanic construction site with `extant_117ce: false`, the other
-      claimed Agrippa's temple was still standing — which is wrong, it burned in 80 CE. The
-      contradiction is fixed and both records now read correctly, but two pins for one Pantheon
-      remain. Retire `poi_pantheon_rome` (the shallower record) and keep `poi_pantheon`.
-      **Not a silent delete:** `/place/pantheon_rome` is a generated page, so this needs a
-      redirect or a decision to accept the 404, which is why it was left rather than done in
-      passing. Worth checking the other 73 cross-file collisions the validator reports for the
-      same both-records-disagree shape while in here.
+- [x] `[12-FIX-3]` **`duplicate-pantheon`** `retire` — Done 2026-08-18 by cloud shift 29.
+      `poi_pantheon` and `poi_pantheon_rome` were the same building, eight metres apart, and until
+      2026-08-16 they said opposite things (fixed then, but the duplicate pin itself remained).
+      Merged `poi_pantheon_rome`'s one distinct citation (Cassius Dio 53.27.2, on Agrippa's
+      original naming) into `poi_pantheon`, then removed the record entirely — `pois.geojson`
+      470 → 469. `/place/pantheon_rome` was a generated, plausibly-indexed page, so a permanent
+      redirect to `/place/pantheon` was added in `next.config.js` rather than letting it 404
+      silently. **Not attempted**: auditing the other 73 cross-file collisions for the same
+      both-records-disagree shape — the ticket's own "worth checking while in here" note, left
+      for a dedicated pass since it's a materially bigger scope than this one pair.
 - [ ] `[08-P1-6]` **`baalbek-dating`** `verify` — Both Baalbek temples carry `built: 60` in
       `pois.geojson`, and the Temple of Bacchus is conventionally dated a good deal later — mid
       2nd century, under Antoninus Pius. If that is right, the building is barely begun at the
