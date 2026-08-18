@@ -156,8 +156,9 @@ to prevent. Building locally to *test* your own work is expected and fine.
       at 375×812 in both light and dark, plus desktop light (unaffected — sheet is mobile-only).
 - [ ] `[13-P0-2]` **`image-audit`** `illustrate` — Audit all 303 existing images; flag and
       replace any modern photograph showing modern infrastructure. Cotinae is the test case.
-- [ ] `[05-P0-1]` **`places-in-view-list`** `polish` — Accessible, keyboard-navigable list of
-      places in the current viewport; doubles as the browse UI.
+- [~] `[05-P0-1]` **`places-in-view-list`** `polish` — claimed by cloud shift 28, 2026-08-18 00:20.
+      Accessible, keyboard-navigable list of places in the current viewport; doubles as the
+      browse UI.
 - [x] `[10-P0-1]` **`tours`** `add` — Done 2026-08-16 by cloud shift 4. New `app/tours.ts`
       (54 stops), `app/useTour.ts` (shared panel state), `app/TourPlayer.tsx` (left-rail slide-in
       on desktop, compact card on mobile). Three tours, every stop built from data already on the
@@ -335,7 +336,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       whoever picks the next one: check a candidate site's actual named-feature count in its own
       `_buildings.geojson` before claiming it — this board's own site-readiness notes have gone
       stale at least twice now (Timgad here, and see the epigraphy note below for three more).*
-- [ ] `[10-P0-3]` **`flagship-depth`** `deepen` — Bring POIs whose `notes` runs under 60 words up
+- [~] `[10-P0-3]` **`flagship-depth`** `deepen` — claimed by cloud shift 28, 2026-08-18 00:20.
+      Bring POIs whose `notes` runs under 60 words up
       to real panel depth in that same field, worst-first. This is the **panel tier of
       `[10-P0-2]`** applied to the places that need it most; the tombstone/label tiers still need
       that ticket's schema and UI work. Renders through the card's existing "About" block, so it
@@ -402,7 +404,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[06-P1-3]` **`building-typology`** `deepen` — Extend to the ~35-term standard vocabulary,
       grouped into six colour families.
 - [ ] `[06-P1-4]` **`excavation-history`** `deepen` — `excavation[]` on all 40 sites.
-- [x] `[09-P1-4]` **`epigraphy`** `deepen` — Batch 1 done 2026-08-17 by cloud shift 26. 16
+- [~] `[09-P1-4]` **`epigraphy`** `deepen` — claimed for batch 3 by cloud shift 28, 2026-08-18
+      00:20. Batch 1 done 2026-08-17 by cloud shift 26. 16
       inscriptions merged into `pois.geojson`'s `ancient_sources[]` (author = corpus siglum,
       work = inscription type, ref = date, to fit the validator's literary-source shape): the 8
       CIL leads shift 25 handed off, verified and written up, plus 8 more researched and verified
@@ -548,7 +551,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       actioned. Deliberate upgrade with a smoke test.
 - [ ] `[06-P2-6]` **`priority-cities`** `add` — Alexandria, Carthage, Antioch, Londinium,
       Lugdunum, Tarraco, Pergamon, Caesarea Maritima before further Italian secondary towns.
-- [ ] `[08-P2-7]` **`ancient-lakes`** `add` — Fucinus, Copais, Karla and the rest.
+- [~] `[08-P2-7]` **`ancient-lakes`** `add` — claimed by cloud shift 28, 2026-08-18 00:20.
+      Fucinus, Copais, Karla and the rest.
 - [x] `[15-P1-4]` **`metrics`** `polish` — Done 2026-08-16 by the mac editorial pass.
       `scripts/metrics.mjs` + `npm run metrics` (`--write` rewrites `METRICS.md`, `--json` for a
       future dashboard). Measures depth, imagery, ancient-source and per-site curation coverage
