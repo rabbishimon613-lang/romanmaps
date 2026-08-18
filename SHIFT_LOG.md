@@ -7,6 +7,129 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 31 — 2026-08-18 (this shift's own prompt claimed "Shift 4 of four")
+
+**Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt carried
+"Shift 4 of four", but `SHIFT_LOG` was 30 real shifts deep at session start, so this entry
+continues as Shift 31. Session started detached at HEAD; `git checkout -B main origin/main` put
+the local branch cleanly on the real tip (`f285d60`), no conflicts. Read `SHIFT_BRIEF.md` and
+`BOARD.md` in full per the brief's own instruction before touching anything.
+
+**Axis 1 (more cities) reconfirmed blocked** via a live `curl` test against
+`$HTTPS_PROXY/__agentproxy/status` before starting: `overpass-api.de` and `en.wikipedia.org` both
+returned an explicit `connect_rejected` (gateway 403 to CONNECT). WebSearch remained the only
+working research channel — confirmed again mid-shift when the Via Augusta research agent's
+attempted `WebFetch` calls to LacusCurtius/Pleiades/topostext all hit the same block and it fell
+back to WebSearch-only, same as every recent shift.
+
+**No board `add` ticket was claimable** — `[06-P2-6]` priority-cities is the only P2 `add` and
+needs the blocked Overpass pipeline. Per the precedent several recent shifts have set (Via
+Domitia, Via Egnatia, ancient-lakes, sea-labels), did SHIFT_BRIEF axis content work instead: the
+next complete road (Axis 2) for the `add` slot of this run's ratio cycle. `[10-P0-3]`
+flagship-depth and `[06-P0-2]` curate-buildings are both standing tasks that don't need a claim,
+per shift 30's own established practice — picked the next thinnest batch and the next site
+(checked Athens's actual named-feature count first, 78, well above the ~30 floor the board's own
+repeated lesson calls for). `[02-P0-3]` road-weights was the topmost unclaimed, unblocked `polish`
+in file order.
+
+### Board — a full 1 `add` : 2 `deepen` : 1 `polish` cycle, then Track B
+
+**`[10-P0-3]` flagship-depth, batch 4 (`deepen`)** — dispatched two parallel background WebSearch
+research agents against the exact 31 remaining sub-60-word `pois.geojson` `notes` fields (my own
+word-count script, matching the board's own `60+ words` definition scoped to `pois.geojson` only —
+a separate ad hoc script that also swept every thematic file's `notes` field for comparison
+returned 317 hits, but those files' `notes` are short-by-design hover-popup blurbs, not the
+flagship-depth ticket's target, so that number was discarded rather than chased). Every record
+picked up at least one genuinely new fact — a named excavator (W.F. Grimes at Cripplegate, Alan
+Rowe at the Serapeum, Jean Baradez at Gemellae), an exact measurement, a specific find (the 2024
+Lake Neuchâtel "Eagles' Wreck," the 2016 Antikythera skeleton, an August-2026 Mazara del Vallo
+wreck one agent flagged as very recent news worth a peer-reviewed check later) — sources merged,
+not replaced. Fixed a duplicated "buried by the eruption" sentence in the Pompeii Forum entry
+along the way. Depth 93.4% → 98.9%, thin tail 31 → 5 — the queue this ticket opened two batches
+ago is now essentially cleared; the 5 remaining are all 58-59 words and weren't in this batch's
+scope, left for a quick top-up rather than padded to hit zero.
+
+**`[06-P0-2]` curate-buildings, Athens (`deepen`)** — 28 entries in `app/athensDescriptions.ts`,
+the tenth site and the first Panhellenic-scale *living* city (as opposed to Delphi's sanctuary or
+the buried 79 CE sites) to get this treatment. Most of the Classical/Hellenistic Agora survived
+into Roman rule untouched, so most entries are honestly `extant_117ce:true` — a rarer shape than
+recent city batches. The false ones split into two genuinely different reasons: Hadrian's
+post-117 additions (Library of Hadrian 132 CE, the Nymphaeum finished ~140 CE under Antoninus
+Pius, the Southeast Temple early-2nd-c.) hadn't been built *yet*; the old Mint and South Stoa I had
+already been demolished/superseded *before* 117 (the Mint's footprint built over by the Southeast
+Temple; South Stoa I replaced by South Stoa II around 150 BCE). One candidate dropped rather than
+force-entered: "Λουτρό των Αέρηδων" is a real place but a c.1501 CE Ottoman hammam with no ancient
+identity, just sitting near the genuinely ancient Tower of the Winds. Researched via a background
+WebSearch agent (Pausanias book 1, ASCSA Agora Excavations, Wikipedia), personally reviewed;
+verified all 28 keys match real, distinct OSM features before merging (no silent typos, the same
+check Delphi/Jerash established). Verified with Playwright against the *built production bundle*:
+clicking the Odeon of Agrippa surfaces the curated text with "Built 15 BCE" and no "Not standing"
+badge — see the sandbox-verification note below for how that click was actually exercised.
+
+**`[02-P0-3]` road-weights (`polish`)** — `roads-main`/`roads-secondary` were nearly invisible at
+empire-wide zoom (0.25-0.3px width, 0.35 opacity); raised both layers' low-zoom floor, and added a
+new `roads-main-casing` layer (new `roadMainCasing` palette token, both themes) — a wider, darker
+stroke drawn beneath the bright fill so a thin border shows either side, the way Google Maps' own
+highway casings read instead of a flat single-color line. Registered the new layer id in
+`useLayers.ts`'s "roads" group alongside the two existing ones so the Layers-panel toggle still
+controls it. Screenshotted at 1280x900 light and 375x812 dark — clean in both, visibly more
+legible road network at continent zoom.
+
+**Via Augusta, 51 stations (Axis 2, this run's `add`)** — the fourth complete road after Via
+Appia, Via Egnatia, and Via Domitia+Cottia: the backbone of Roman Hispania's east/south coast, the
+Pyrenees to Gades via Tarraco, Saguntum, Carthago Nova, Castulo, Corduba, and Hispalis.
+`road_stations.geojson` 83 → 134. Extracted from the Antonine Itinerary's "Via II" plus the
+well-documented southern stretches, cross-checked against the Vicarello cups, the Ravenna
+Cosmography, and targeted academic identifications (Arasa on Ildum, an AEspA study on the
+Acci-Basti branch, a dedicated paper on Ad Aras/La Carlota). 18 of 51 are honest corridor
+estimates (`confidence: low`, `identified: false`) where the Itinerary names a station with no
+securely excavated modern site — consistent with this project's own established discipline for
+that situation. Distance figures omitted rather than invented wherever the Itinerary text didn't
+yield a clean mile count for that specific leg.
+
+**Directions — imperial-courier travel-time estimate (Track B)** — FEATURE_BACKLOG's "Time to
+travel" item asked for walking/marching/horse/sea days once Directions shipped (it has, since
+shift 29); this closes the horse leg. New `COURIER_KM_PER_DAY = 75` constant, sourced to A.M.
+Ramsay's 1925 *Journal of Roman Studies* study of the actual cursus publicus's speed (66-103
+km/day for ordinary official travel over the mutationes/mansiones relay network — 75 sits inside
+that range, deliberately not the "urgent courier" extreme Ramsay separately notes could exceed 160
+km/day). Rendered as a third row next to the existing Legion/Merchant estimates, with an explicit
+note that the state post wasn't available to ordinary travelers. Sea legs remain out of scope —
+no sailing-season-aware network exists yet, same honesty the existing "no road route found"
+message already practices for a missing sea crossing.
+
+**A sandbox-verification finding worth its own paragraph, building on shift 30's `[02-P0-4]`
+note**: the "force `map.fire('load')` to bypass the gated phase-2 handler" workaround prior shifts
+established is itself unreliable in this exact sandbox. It worked cleanly for some checks this run
+(the road-casing screenshot, the Athens building click-through) and silently broke others — an
+attempted live Directions context-menu flow (right-click → "Directions from here" → right-click →
+"Directions to here") never got a context menu to render at all, and a repeat attempt threw
+`Error: Source "roads-secondary" already exists`, meaning the forced fire had double-invoked the
+phase-2 handler and left the load chain partial. Diagnosed by attaching a counting listener before
+firing: `load` fired **twice** after a single `m.fire('load')` call in one of the failed runs, not
+once. Rather than chase this sandbox-specific flakiness further, treated a *successful* forced-load
+check as good evidence (as shift 30 did) but a *failed* one as inconclusive rather than a proven
+bug — cross-checked with a simpler, more robust method instead: a bare `fetch()` of the underlying
+`/data/road_stations.geojson` confirmed the Via Augusta data serves correctly (134 total, 51
+Via Augusta, correctly named) without needing the flaky forced-load path at all, and the Directions
+courier row was verified via `formatDays()` math sanity-checks (Rome→Ostia's real 24.9km route →
+"under a day" by courier; a ~2100km leg → ~28 days courier vs ~57 legion vs ~95 merchant, correctly
+ordered) plus reliance on the same helper already Playwright-verified for the existing rows.
+
+### Next shift
+
+Board is clean, ratio owed nothing at session end — full 1:2:1 cycle plus a real Track B ship.
+`[10-P0-3]` flagship-depth is down to its last 5 entries (58-59 words each, right at the line) —
+a quick top-up would finish the standing task's queue to zero for the first time. `[06-P0-2]`
+curate-buildings has 27 sites left; Rome carries 289 named OSM features, by far the largest
+remaining site — worth scoping deliberately (maybe a themed sub-batch: Forum only, or Palatine
+only) rather than assuming a normal ~10-30-entry batch. `[02-P0-4]` self-host-glyphs now has a
+second, independent finding attached (the forced-load double-invoke flakiness above) on top of
+shift 30's "load never fires naturally" one — worth real consideration soon, both fixes solve
+different symptoms of the same root cause. No unclaimed P0/P1 `add` exists on the board.
+
+---
+
 ## Shift 30 — 2026-08-18 (this shift's own prompt claimed "Shift 3 of four")
 
 **Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt carried

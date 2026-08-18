@@ -381,6 +381,21 @@ to prevent. Building locally to *test* your own work is expected and fine.
       certainly the same temple as معبد بل (Temple of Bel) under an alternate transliteration — no
       source describes a second, distinct Baal temple here. 31 sites still open for the standing
       task.*
+      *Athens done 2026-08-18 by cloud shift 31: 28 entries in `app/athensDescriptions.ts`, the
+      tenth site and the first Panhellenic-scale living city (not a sanctuary like Delphi, nor a
+      buried site like Pompeii/Herculaneum) to get this treatment. Most of the Classical/
+      Hellenistic Agora survived into the Roman period untouched, so most entries are honestly
+      `extant_117ce:true` — the exceptions are the handful of buildings from Hadrian's post-117
+      building campaign (the Library of Hadrian, 132 CE; the Nymphaeum, finished c. 140 CE under
+      Antoninus Pius; the Southeast Temple, first half of the 2nd c. CE) plus two buildings already
+      demolished/superseded *before* 117 CE for the opposite reason (the old Mint, built over by
+      the Southeast Temple; South Stoa I, replaced by South Stoa II c. 150 BCE). One candidate
+      dropped rather than force-entered: "Λουτρό των Αέρηδων" is a real place but a c.1501 CE
+      Ottoman hammam with no ancient identity, just sitting near the genuinely ancient Tower of the
+      Winds. Verified all 28 keys match real, distinct OSM features; verified with Playwright
+      against the built production bundle that clicking the Odeon of Agrippa surfaces the curated
+      text with "Built 15 BCE" and no "Not standing" badge. 27 sites still open for the standing
+      task.*
 - [x] `[10-P0-3]` **`flagship-depth`** `deepen` — Bring POIs whose `notes` runs under 60 words up
       to real panel depth in that same field, worst-first. This is the **panel tier of
       `[10-P0-2]`** applied to the places that need it most; the tombstone/label tiers still need
@@ -417,6 +432,13 @@ to prevent. Building locally to *test* your own work is expected and fine.
       picked up at least one genuinely new fact (a named excavator, an exact measurement, a
       specific date) beyond what the earlier text already said; sources merged, not replaced. Depth
       87.8% → 93.4%, thin tail 57 → 31.*
+      *Batch 4 done 2026-08-18 by cloud shift 31: all 31 remaining sub-60-word fields (shipwrecks,
+      Rhine/Wetterau/Danube/Dacian frontier forts, Rome monuments, naval bases, mines, quarries,
+      garum factories) rewritten via two parallel WebSearch passes, worst-first — clears the queue
+      to near-zero. Depth 93.4% → 98.9%, thin tail 31 → 5. Fixed a duplicated "buried by the
+      eruption" sentence in the Pompeii Forum entry along the way. The 5 remaining are all 58-59
+      words (right at the line) and weren't in this batch's research scope — left for a future
+      micro top-up rather than padded to clear the number.*
 - [ ] `[15-P0-1]` **`unattended-screenshot-gate`** `fix` — ⚠️ **This blocks the daily pass from
       taking any UI ticket at all.** The gate below requires a screenshot at 375×812 dark and at
       desktop light, but the 09:30 editorial pass runs unattended and a dev server cannot be
@@ -485,8 +507,17 @@ to prevent. Building locally to *test* your own work is expected and fine.
       layers added in later phases couldn't be screenshotted this session — but the coastline
       layer itself lives in the initial, ungated style, so it rendered and was confirmed correctly
       in both screenshots regardless.
-- [ ] `[02-P0-3]` **`road-weights`** `polish` — Raise road weights/opacity at low zoom; add
-      casings to main roads.
+- [x] `[02-P0-3]` **`road-weights`** `polish` — Done 2026-08-18 by cloud shift 31. Raised the
+      low-zoom width/opacity floor on both `roads-main` and `roads-secondary` (they were nearly
+      invisible at empire-wide zoom — 0.25-0.3px, 0.35 opacity) and added a `roads-main-casing`
+      layer (new `roadMainCasing` palette token, both themes): a wider, darker stroke drawn
+      beneath the bright fill so a thin border shows on either side, the way Google Maps' own
+      highway casings read. Registered in `useLayers.ts`'s "roads" group alongside the two
+      existing layer ids so the Layers-panel toggle still hides/shows the casing correctly.
+      Verified by forcing this sandbox's gated `map.on("load")` phase-2 handler to fire directly
+      (documented workaround for the `demotiles.maplibre.org` block, see `[02-P0-4]`) — both new
+      layers add with valid paint expressions, screenshotted correctly at 1280x900 light and
+      375x812 dark.
 - [ ] `[02-FIX]` **`halo-colors`** `fix` — ~12 layers in `Map.tsx` hardcode `#f4ead5` (the
       *light* land colour) as halo/stroke regardless of theme. Replace with `P.labelHalo`.
 - [ ] `[08-P0-1]` **`palaeo-coasts`** `fix` — Ancient coastline patches for Ostia/Portus,
@@ -1063,3 +1094,58 @@ unclaimed P0 `add` exists; `[06-P2-6]`
 priority-cities is the only P2 `add` and remains blocked. `[09-P1-4]` epigraphy and `[09-P0-1]`
 ancient-sources both remain standing `deepen` tasks with working pipelines. Check the board fresh
 — don't assume this note is still current by the time you read it.
+
+- 2026-08-18 · `[10-P0-3]` flagship-depth · cloud shift 31. Batch 4: all 31 remaining thin fields
+  rewritten, clearing the queue to near-zero. Depth 93.4% → 98.9%, thin tail 31 → 5. See ticket
+  note above.
+- 2026-08-18 · `[06-P0-2]` curate-buildings (Athens) · cloud shift 31. 28 entries in
+  `app/athensDescriptions.ts`, the tenth site and the first Panhellenic-scale living city to get
+  this treatment. See ticket note above.
+- 2026-08-18 · `[02-P0-3]` road-weights · cloud shift 31. Raised road weight/opacity at low zoom;
+  added a casing layer under main roads. See ticket note above.
+- 2026-08-18 · SHIFT_BRIEF axis 2 (no board ticket ID — brief axis work, board had no unclaimed
+  P0/P1 `add`) · cloud shift 31. Via Augusta, the fourth complete road: 51 new stations in
+  `road_stations.geojson` (83 → 134), the Pyrenees to Gades via Tarraco, Saguntum, Carthago Nova,
+  Castulo, Corduba, and Hispalis. 18 of 51 are honest corridor estimates (confidence:low,
+  identified:false) where the Itinerary names a station with no securely excavated modern
+  location. Reused the already-shipped road-stations layer, no UI changes.
+- 2026-08-18 · FEATURE_BACKLOG.md "Time to travel" (no board ticket ID — Track B, closes a
+  standing P2 feature-backlog item) · cloud shift 31. Directions gained a third travel-time
+  estimate — imperial courier (cursus publicus, horse relay), 75 km/day sourced to A.M. Ramsay's
+  1925 JRS study of the Roman post's real speed — alongside the existing legion/merchant rows.
+  Sea legs remain explicitly out of scope, same honesty the existing "no road route found"
+  message already practices.
+
+**Ratio state after this run:** cloud shift 31 ran a complete 1:2:1 cycle — 1 `add` (Via Augusta
+road stations, axis work since no board `add` ticket was unclaimed), 2 `deepen` (`[10-P0-3]`
+flagship-depth batch 4, `[06-P0-2]` curate-buildings/Athens), 1 `polish` (`[02-P0-3]`
+road-weights) — then used the rest of the shift on Directions' courier estimate, closing
+FEATURE_BACKLOG's "Time to travel" item, as Track B. Confirmed again this run: Axis 1 (more
+cities) and `[06-P2-6]` priority-cities remain genuinely blocked in this sandbox
+(`overpass-api.de`/`en.wikipedia.org` both `connect_rejected` via a live proxy-status check before
+starting) — WebSearch remains the only working research channel, and even WebFetch to primary
+sources like LacusCurtius/Pleiades/topostext is blocked for the same reason, confirmed again by
+the Via Augusta research pass. This run's own testing surfaced a *new* wrinkle on the
+already-documented `[02-P0-4]` sandbox limitation, worth flagging precisely: forcing the gated
+`map.on("load", ...)` handler to fire via `map.fire("load")` — the workaround prior shifts (29,
+30) used to bypass the block — is itself unreliable here. It sometimes fires the phase-2 handler
+twice, throwing `Error: Source "roads-secondary" already exists` and leaving the load chain
+partial; it worked cleanly for some checks this run (the coastline/roads screenshot, the Athens
+building click) and silently corrupted others (an attempted live Directions context-menu flow
+never got a context menu to render). Treat a *successful* forced-load check as good evidence, but
+a *failed* one as inconclusive rather than a real product bug — cross-check with a second, simpler
+script (a bare `fetch()` of the underlying data file, or `getStyle().layers` for structural
+presence) before concluding something is actually broken. The open cycle is clean; the next run
+picks whatever's topmost and unclaimed. At the time this run ends, the topmost unclaimed P0
+tickets are unchanged across many runs now — `[12-P0-1]` merge-themes (`fix`, big), `[03-P0-1]`
+schema-v2 (`fix`), `[03-P0-2]` card-rebuild (`polish`, still missing its spec), `[11-P0-3]`
+delete-dead-data (`retire`), `[08-P1-6]` baalbek-dating (`verify`), and `[02-P0-4]`
+self-host-glyphs (`fix` — this run's forced-load flakiness finding belongs on this ticket too, see
+above). No unclaimed P0/P1 `add` exists; `[06-P2-6]` priority-cities is the only P2 `add` and
+remains blocked. `[09-P1-4]` epigraphy and `[09-P0-1]` ancient-sources both remain standing
+`deepen` tasks with working pipelines; `[10-P0-3]` flagship-depth is now down to its last 5
+entries (58-59 words each) — worth a quick top-up rather than a full batch next time it's picked
+up. `[06-P0-2]` curate-buildings has 27 sites left (verify a candidate's actual named-feature
+count before claiming — Rome's 289 named features make it the biggest remaining site by far,
+worth scoping carefully rather than assuming it's a normal-sized batch). Check the board fresh —
+don't assume this note is still current by the time you read it.
