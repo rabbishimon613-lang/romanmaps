@@ -422,7 +422,15 @@
           "https://www.digitalaugustanrome.org/records/rostra-augustus/",
           "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/Rostra_Augusti.html"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "ancient_sources": [
+          {
+            "author": "Cassius Dio",
+            "work": "Roman History",
+            "ref": "47.8.3-4",
+            "note": "After Cicero's proscription in 43 BCE, his severed head and right hand were displayed on the Rostra in the Forum, the platform from which he had delivered his speeches."
+          }
+        ]
       }
     },
     {
@@ -926,7 +934,15 @@
           "https://en.wikipedia.org/wiki/Baths_of_Nero",
           "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/Thermae_Neronianae.html"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Martial",
+            "work": "Epigrams",
+            "ref": "7.34",
+            "note": "Martial jokes that nothing was worse than Nero, yet nothing better than his baths, holding up the Baths of Nero as the standard of luxury against a rival's new bathhouse."
+          }
+        ]
       }
     },
     {
@@ -956,7 +972,15 @@
         ],
         "confidence": "medium",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roma-pantheon-frontfacade.jpg?width=800",
-        "image_credit": "Pantheon, Rome · Wikimedia Commons"
+        "image_credit": "Pantheon, Rome · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "CIL VI 896",
+            "work": "dedicatory inscription",
+            "ref": "M AGRIPPA L F COS TERTIVM FECIT",
+            "note": "The Pantheon's porch frieze names Marcus Agrippa, consul for the third time, as builder - the inscription Hadrian kept from Agrippa's original temple when he rebuilt the Pantheon around it."
+          }
+        ]
       }
     },
     {
@@ -1113,7 +1137,15 @@
           "https://en.wikipedia.org/wiki/Ara_Pacis",
           "https://ajaonline.org/online-museum-review/370/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Augustus",
+            "work": "Res Gestae Divi Augusti",
+            "ref": "12.2",
+            "note": "Augustus records that on his return from Spain and Gaul the Senate voted to consecrate an altar of Augustan Peace in the Campus Martius, with magistrates, priests, and Vestals to sacrifice there yearly."
+          }
+        ]
       }
     },
     {
@@ -1140,7 +1172,15 @@
           "https://en.wikipedia.org/wiki/Domus_Aurea",
           "https://en.wikipedia.org/wiki/Baths_of_Titus"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Suetonius",
+            "work": "Divus Nero",
+            "ref": "31.2",
+            "note": "Suetonius reports Nero's only comment on dedicating his finished palace: that he could at last begin to live like a human being."
+          }
+        ]
       }
     },
     {
@@ -14474,6 +14514,119 @@
         "confidence": "medium",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Aphrodite%20Aphrodisias.jpg?width=800",
         "image_credit": "Aphrodisias, site of the city's marble workshops - Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3665,
+          45.7735
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_aquileia",
+        "category": "forum",
+        "name_latin": "Forum Aquileiae",
+        "name_english": "Forum of Aquileia",
+        "province": "Italia",
+        "modern_location": "Aquileia, Italy",
+        "built": 10,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Aquileia's forum anchored the colony's public life at the junction of the Via Iulia Augusta and the Via Sacra. Workers paved the square with pale Aurisina limestone slabs quarried from the nearby Karst hills, replacing the timber-and-rubble forum that had served the colony since its founding in 181 BCE. A civil basilica closed the square's south side, housing courts and the city council, while merchants kept shops along its east and west flanks. A canal ran beneath the pavement, channeling river water toward the port. By 117 CE the forum had stood at the heart of Aquileia for over a century, hosting markets, trials, and the colony's public assemblies beneath the Alpine sky.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_Aquileia",
+          "https://www.wikidata.org/wiki/Q3748446",
+          "https://www.fondazioneaquileia.it/en/must-see/roman-forum"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Foro%20Romano%20Aquileia.jpg?width=800",
+        "image_credit": "Roman Forum, Aquileia · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "AE 1996, 685",
+            "work": "elogium",
+            "ref": "169 BCE (content date)",
+            "note": "An honorific elogium for one of the colony's founding triumvirs recorded the powers granted him to draft Aquileia's laws, enroll its senate, and dedicate a temple during the colony's 169 BCE reinforcement."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3385,
+          38.915389
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_merida",
+        "category": "theater",
+        "name_latin": "Theatrum Augustae Emeritae",
+        "name_english": "Roman Theatre of Merida",
+        "province": "Lusitania",
+        "modern_location": "Merida, Spain",
+        "built": -16,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Marcus Agrippa financed the theatre for the new colony of Augusta Emerita, and builders finished it in 16 BCE. A two-story colonnaded stage backdrop rose behind the orchestra, its columns and marble statuary framing performances for an audience of six thousand. Veterans of the Roman legions who settled the colony filled its semicircular tiers for comedies, tragedies, and public ceremonies alike. Under Trajan, workers refaced the stage building's facade in marble and fenced a sacred precinct into the front seating rows with a marble railing. Cut into a hillside above the Guadiana River, the theatre stood 132 years old in 117 CE, still the beating heart of the colony's cultural life.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_Theatre_(M%C3%A9rida)",
+          "https://turismomerida.org/what-to-see/roman-theatre/",
+          "https://vici.org/vici/7899/?lang=en"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Merida%20Roman%20Theatre2.jpg?width=800",
+        "image_credit": "Roman Theatre, Merida · Hakan Svensson (Xauxa), Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "CIL II 474",
+            "work": "dedicatory inscription",
+            "ref": "16-15 BCE",
+            "note": "A lintel inscription over the theatre's side passages named Marcus Agrippa, three times consul, as its builder, opening with the same 'M AGRIPPA L F COS' formula he later used on Rome's Pantheon."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4687,
+          35.4851
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_timgad",
+        "category": "forum",
+        "name_latin": "Forum Thamugadis",
+        "name_english": "Forum of Timgad",
+        "province": "Numidia",
+        "modern_location": "Timgad, Algeria",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Trajan founded Timgad in 100 CE as a colony for army veterans, laying the city out as a nearly perfect grid centered on its forum. Porticoes and rows of shops framed the paved square, with the curia and a basilica standing at its heart and a small temple to Victory tucked into one corner. Retired soldiers of the Third Augustan Legion walked its colonnades to conduct civic business and hear public announcements. A dedicatory tablet found near the forum commemorated the emperor's foundation of the colony and the legionary legate who oversaw the work. Seventeen years old in 117 CE, the forum still smelled of new-cut stone from a city built at Trajan's order in the empty steppe.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Timgad",
+          "https://www.wikidata.org/wiki/Q87745332"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20forum%20de%20Timgad.JPG?width=800",
+        "image_credit": "Forum of Timgad · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "CIL VIII 2355",
+            "work": "dedicatory inscription",
+            "ref": "100 CE",
+            "note": "A fragmentary tabula found near the forum and west gate commemorated Trajan's founding of the colony of Thamugadi, carried out through his legate and the Third Augustan Legion; scholarship places it tentatively in this area rather than on any specific standing arch."
+          }
+        ]
       }
     }
   ]
