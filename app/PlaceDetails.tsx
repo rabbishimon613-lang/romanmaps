@@ -2,10 +2,12 @@
 
 import { useEffect, useRef, useState } from "react";
 import type { Map as MLMap } from "maplibre-gl";
-import { usePoiPanel, clearPoi } from "./usePoiPanel";
+import { usePoiPanel, clearPoi, selectPoi } from "./usePoiPanel";
 import { colorForCategory } from "./poiCategories";
 import { lifeForCategory } from "./categoryLife";
 import { useIsMobile } from "./useIsMobile";
+import { useNearbyPois } from "./useNearby";
+import { useUnits, formatDistance } from "./useUnits";
 
 const CONFIDENCE_COLOR: Record<string, string> = {
   high: "var(--ok)",
@@ -90,6 +92,18 @@ export default function PlaceDetails() {
   // `dragPx` is a live height override while a drag gesture is in progress (null when idle).
   const [sheetState, setSheetState] = useState<SheetState>("half");
   const [dragPx, setDragPx] = useState<number | null>(null);
+
+  // Hooks that read `rendered` must run unconditionally (before the `if (!rendered) return null`
+  // below), so they take the not-yet-selected case via optional chaining rather than being
+  // skipped on some renders — [03-P1-4] nearby-related.
+  const [units] = useUnits();
+  const nearby = useNearbyPois(
+    rendered?.props?.id,
+    rendered?.lngLat?.[0],
+    rendered?.lngLat?.[1],
+    rendered?.props?.category || "",
+    6,
+  );
 
   useEffect(() => {
     if (selected) {
@@ -525,6 +539,81 @@ export default function PlaceDetails() {
                 </li>
               ))}
             </ul>
+          </div>
+        )}
+
+        {/* Nearby/related places — proximity ranked, with a same-category boost so a relevant
+         * place a little further off can beat an unrelated one next door. Clicking a card just
+         * calls selectPoi() again, which re-renders this same panel in place — [03-P1-4]. */}
+        {nearby.length > 0 && (
+          <div style={{ marginTop: 18, marginBottom: 4 }}>
+            <SectionHeader label="Nearby" />
+            <div
+              style={{
+                display: "flex",
+                gap: 10,
+                overflowX: "auto",
+                paddingBottom: 4,
+                marginLeft: -16,
+                marginRight: -16,
+                paddingLeft: 16,
+                paddingRight: 16,
+              }}
+            >
+              {nearby.map((row) => {
+                const rowColor = colorForCategory(row.category);
+                return (
+                  <button
+                    key={row.id}
+                    onClick={() => selectPoi(row.props, [row.lng, row.lat])}
+                    style={{
+                      flexShrink: 0,
+                      width: 116,
+                      textAlign: "left",
+                      border: "1px solid var(--divider)",
+                      borderRadius: 8,
+                      overflow: "hidden",
+                      background: "var(--surface)",
+                      cursor: "pointer",
+                      padding: 0,
+                    }}
+                  >
+                    {row.imageUrl ? (
+                      <img
+                        src={row.imageUrl}
+                        alt=""
+                        loading="lazy"
+                        style={{ display: "block", width: "100%", height: 64, objectFit: "cover", background: `${rowColor}22` }}
+                        onError={(e) => {
+                          (e.currentTarget as HTMLImageElement).style.display = "none";
+                        }}
+                      />
+                    ) : (
+                      <div style={{ height: 64, background: `linear-gradient(135deg, ${rowColor}55, ${rowColor}22)` }} />
+                    )}
+                    <div style={{ padding: "6px 8px 8px" }}>
+                      <div
+                        style={{
+                          fontSize: 12,
+                          fontWeight: 500,
+                          color: "var(--text)",
+                          lineHeight: 1.3,
+                          display: "-webkit-box",
+                          WebkitLineClamp: 2,
+                          WebkitBoxOrient: "vertical",
+                          overflow: "hidden",
+                        }}
+                      >
+                        {row.name}
+                      </div>
+                      <div style={{ fontSize: 10.5, color: "var(--text-2)", marginTop: 3 }}>
+                        {formatDistance(row.distanceM, units)}
+                      </div>
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
           </div>
         )}
 

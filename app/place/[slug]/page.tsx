@@ -38,6 +38,47 @@ function loadPois(): PoiFeature[] {
   return fc.features.filter((f) => f.geometry?.type === "Point" && f.properties?.id);
 }
 
+const EARTH_RADIUS_M = 6371008.8;
+function haversineMeters(aLng: number, aLat: number, bLng: number, bLat: number): number {
+  const toRad = (d: number) => (d * Math.PI) / 180;
+  const dLat = toRad(bLat - aLat);
+  const dLng = toRad(bLng - aLng);
+  const s = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(aLat)) * Math.cos(toRad(bLat)) * Math.sin(dLng / 2) ** 2;
+  return 2 * EARTH_RADIUS_M * Math.asin(Math.min(1, Math.sqrt(s)));
+}
+// Same-category boost as the live map panel's client-side ranking (app/useNearby.ts) — kept as a
+// second copy rather than a shared import, matching this codebase's existing per-file haversine
+// convention (ContextMenu.tsx/PlacesInViewList.tsx/Ruler.tsx each keep their own too), and because
+// app/useNearby.ts is a "use client" module that a server component shouldn't reach into.
+const CATEGORY_BOOST_M = 8000;
+// Two records this close together are a near-duplicate pin (the same building recorded twice,
+// e.g. the still-open [12-FIX-3] Pantheon duplicate), not a genuinely different nearby place.
+const MIN_DISTANCE_M = 25;
+
+/** Six related places for the bottom-of-page card row — proximity ranked, same-category boosted,
+ * [03-P1-4] nearby-related. */
+function nearbyFor(all: PoiFeature[], current: PoiFeature, count = 6) {
+  const [lng, lat] = current.geometry.coordinates;
+  const category = current.properties.category || "";
+  return all
+    .filter((f) => f.properties.id !== current.properties.id)
+    .map((f) => {
+      const [flng, flat] = f.geometry.coordinates;
+      const d = haversineMeters(lng, lat, flng, flat);
+      const sameCategory = !!category && f.properties.category === category;
+      return { f, d, score: sameCategory ? d - CATEGORY_BOOST_M : d };
+    })
+    .filter(({ d }) => d >= MIN_DISTANCE_M)
+    .sort((a, b) => a.score - b.score)
+    .slice(0, count)
+    .map(({ f, d }) => ({ feature: f, distanceM: d }));
+}
+
+function formatKm(meters: number): string {
+  const km = meters / 1000;
+  return km < 1 ? `${Math.round(meters)} m` : `${km < 10 ? km.toFixed(1) : Math.round(km)} km`;
+}
+
 function slugFor(id: string): string {
   return id.replace(/^poi_/, "");
 }
@@ -113,6 +154,7 @@ export default function PlacePage({ params }: { params: { slug: string } }) {
   const sources = Array.isArray(p.sources) ? p.sources : [];
 
   const mapHref = `/#${lng.toFixed(4)},${lat.toFixed(4)},15.00z:${p.id}`;
+  const nearby = nearbyFor(loadPois(), feat);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -247,6 +289,51 @@ export default function PlacePage({ params }: { params: { slug: string } }) {
                 </li>
               ))}
             </ul>
+          </section>
+        )}
+
+        {nearby.length > 0 && (
+          <section style={{ marginBottom: 32 }}>
+            <h2 style={{ fontSize: 13, fontWeight: 700, textTransform: "uppercase", letterSpacing: 0.6, color: "#8a7a60", margin: "0 0 10px" }}>
+              Nearby
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))", gap: 12 }}>
+              {nearby.map(({ feature: f, distanceM }) => {
+                const np = f.properties;
+                const nSlug = slugFor(np.id);
+                const nName = np.name_latin || np.name_english || "Unnamed place";
+                const nColor = colorForCategory(np.category || "");
+                return (
+                  <Link
+                    key={np.id}
+                    href={`/place/${nSlug}`}
+                    style={{
+                      display: "block",
+                      border: "1px solid #e2d4b0",
+                      borderRadius: 8,
+                      overflow: "hidden",
+                      textDecoration: "none",
+                      color: "#2a2118",
+                      background: "#fdf6e8",
+                    }}
+                  >
+                    {np.image_url ? (
+                      <img
+                        src={np.image_url}
+                        alt=""
+                        style={{ display: "block", width: "100%", height: 80, objectFit: "cover" }}
+                      />
+                    ) : (
+                      <div style={{ height: 80, background: `linear-gradient(135deg, ${nColor}55, ${nColor}22)` }} />
+                    )}
+                    <div style={{ padding: "8px 10px" }}>
+                      <div style={{ fontSize: 13.5, fontWeight: 600, lineHeight: 1.3 }}>{nName}</div>
+                      <div style={{ fontSize: 11.5, color: "#8a7a60", marginTop: 3 }}>{formatKm(distanceM)}</div>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
           </section>
         )}
 
