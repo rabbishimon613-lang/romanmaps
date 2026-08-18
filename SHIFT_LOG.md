@@ -7,6 +7,162 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 28 — 2026-08-18 (this shift's own prompt claimed "Shift 1 of four")
+
+**Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt carries
+a stale "Shift N of four" count; `SHIFT_LOG` was 27 real shifts deep at session start, so this
+entry continues as Shift 28. Session started on a detached `HEAD`: the local `main` ref was stuck
+at the very first commit (2026-08-11), while `origin/main` — invisible to a shallow clone's cached
+ref — had actually moved to Shift 27's tip. `git fetch --unshallow origin` (the local clone was
+shallow, unusual for these sessions — worth flagging in case it recurs) resolved the stale ref,
+then `git branch -f main origin/main && git checkout main` landed on the real tip. Read
+`SHIFT_BRIEF.md` in full, then `BOARD.md` per its own instruction.
+
+**Axis 1 (more cities) re-confirmed blocked, with a sharper diagnosis than prior shifts had.**
+Every shift since #7 has flagged `research/` (the Overpass city-fetch pipeline) as `.gitignore`d
+and absent from a fresh cloud clone; this session went one step further and queried this specific
+environment's own egress proxy status endpoint (`$HTTPS_PROXY/__agentproxy/status`), which logs
+recent relay failures with a reason code. `overpass-api.de`, `en.wikipedia.org`,
+`commons.wikimedia.org`, and `nominatim.openstreetmap.org` all show `connect_rejected — gateway
+answered 403 to CONNECT (policy denial or upstream failure)` — a deliberate policy block, not a
+transient network fault, matching the `EGRESS_BLOCKED` WebFetch errors earlier shifts hit from a
+differently-configured sandbox. `[06-P2-6]` priority-cities (which needs Overpass) is therefore
+not pickable from this environment either; noted in the board so nobody re-discovers this from
+zero. WebSearch remains unaffected and was the only research channel used this run.
+
+Claimed four board tickets in one commit (`git pull --rebase` first, per protocol): `ancient-lakes`
+(`add`, topmost unclaimed P2 `add` that didn't need Overpass), `flagship-depth` and `epigraphy`
+(two `deepen`, both standing tasks), and `places-in-view-list` (`polish`, topmost unclaimed P0
+`polish` with a real, followable spec — `card-rebuild` above it is still missing its "eleven-block
+order" source document, same reason every prior shift has deferred it). A full 1:2:1 cycle.
+`git pull --rebase` before every push; no collisions with the other workers on this repo.
+
+### Board — a full 1 `add` : 2 `deepen` : 1 `polish` cycle
+
+**`[08-P2-7]` ancient-lakes (`add`)** — 20 named lakes as a new `lake` type on the existing
+natural-landmarks layer: Fucino (Claudius's naumachia and failed drainage tunnel), Trasimene
+(Hannibal's ambush), Avernus (Agrippa's secret fleet base cut through the underworld's mythic
+gate), Lucrinus (Sergius Orata's pioneering oyster farms), Bolsena, Albano (the Veii-siege
+emissarium), Nemi, Como (Pliny the Younger's two villas), Garda (Catullus's Sirmio), Maggiore,
+Bracciano (source of Trajan's own Aqua Traiana, a deliberate 117 CE tie-in), Geneva (Caesar's
+30km rampart against the Helvetii), Constance, Copais (Aristophanes's stock eel joke), Karla/
+Boibeis, Stymphalia (the Stymphalian birds), Moeris (Fayum irrigation engineering, pharaonic but
+still running under Roman administration), Mareotis (Alexandria's inland wine-trade harbor), the
+Sea of Galilee, and the Dead Sea. Reuses the `landmarks-point` source/layer as-is — defaults OFF,
+no new toggle, just a `lake` entry added to `Map.tsx`'s hover-popup type label. One entry (Karla)
+shipped without an `image_url`: no specific Commons filename could be confirmed with any real
+confidence, and per the project's own image invariant a missing image degrades gracefully while a
+wrong one doesn't. `landmarks_117.geojson` 24 → 44 features.
+
+**A data-pipeline mistake caught and fixed before committing, worth flagging for future batches**:
+the file's existing indent style turned out to be one space per nesting level, not the JSON
+standard two — a first pass through Python's `json.dump(feature, indent=2)` silently reformatted
+the *entire* file on write, turning a clean 20-feature addition into an 1,800-line diff that
+buried the real change in reformatting noise (the exact trap `SHIFT_LOG` #11's `append_features.js`
+note warned about, but for indent width rather than escaping). Caught it with `git diff --stat`
+looking suspiciously large for the change size, reverted, and redid it as a pure text splice —
+generate each new feature with `json.dumps(feat, indent=1)`, prefix every line by the file's own
+2-space feature-array nesting, and insert directly before the closing `]}` via string concatenation
+rather than re-parsing/re-serializing the whole document. Confirmed clean with `git diff | grep -E
+"^-[^-]"` returning nothing. `pois.geojson`, by contrast, already uses standard 2-space indent, so
+its own edits below needed no such care.
+
+**`[10-P0-3]` flagship-depth, batch 2 (`deepen`)** — the 24 thinnest `notes` fields on the whole
+map (44–53 words each), worst-first per `npm run metrics`'s own queue: mostly obscure Rhine/
+Danube/Dacian limes forts (Argentorate, Castra Traiana, Munningen, Gerulata, Newbrough, Zugmantel,
+Pons Aluti, Deva/Chester, Arnsburg, the two Danube fleet bases, Solva, Pons Vetus, Echzell) plus a
+handful of genuinely famous Rome monuments that had somehow stayed thin (Baths of Trajan, Trajan's
+Forum and Column, the Temple of Saturn, the Domus Augustana) and three miscellaneous entries
+(Corinth's Julian Basilica, the Lugdunum theatre, the Sotiel Coronada mines, the Madrague de Giens
+wreck). Rewritten to ~100–130 words each — one genuinely new researched fact per record (a named
+excavation, a specific garrison unit, a construction detail: the Cologne city wall's Black-Forest-
+felled timber shuttering dated by dendrochronology, Trajan's Column's exact relief statistics —
+2,662 figures across 155 scenes — and its pre-carved 40-tonne staircase blocks, Deva's mysterious
+paired elliptical building found in 1939) rather than padded filler, existing verified facts kept
+and rewoven rather than dropped. Sources merged, not replaced. Depth 82.7% → 87.9%, thin tail
+81 → 57. **One honest judgment call left visible rather than silently resolved**: research for
+Munningen surfaced a German-Wikipedia claim that its garrison may have been withdrawn "by around
+110 CE at the latest" — which would put the fort's active-garrison status in question right at
+this map's own 117 CE snapshot. Rather than flip `extant_117ce` on one search-snippet-derived date
+or silently ignore the finding, the rewritten note was phrased to describe the vicus outlasting
+the garrison in general terms without asserting an active 117 CE garrison — flagged here for
+whoever has time to chase down a primary source and settle it properly.
+
+**`[09-P1-4]` epigraphy, batch 3 (`deepen`)** — opened the channel batch 2 (shift 27) found
+closed. Batch 2's own honest finding was that three of its four targeted sites had no matching POI
+in `pois.geojson` to attach a citation to, even though the citations themselves were real and
+verified — an inscription with nowhere to live. This batch added those three POIs (Forum of
+Aquileia, the Roman Theatre of Merida, Forum of Timgad) with fresh Google-Business-voice
+descriptions, then attached the three citations batch 2 had already researched and handed off: the
+Aquileia forum's founding-triumvir elogium (AE 1996, 685), Agrippa's Merida theatre dedication
+(CIL II 474, sharing its opening formula with his Pantheon inscription in Rome), and Timgad's
+Trajanic foundation text (CIL VIII 2355) — deliberately attached to the forum POI rather than the
+standing "Arch of Trajan", which batch 2 had already established is actually Severan (c. 200 CE)
+and would have been a real misattribution eight years before that arch existed. With the channel
+open, also attached 5 further verified citations to famous POIs that had shipped with none: the
+Pantheon (CIL VI 896, the frieze inscription Hadrian kept from Agrippa's original temple), the Ara
+Pacis (Augustus's own *Res Gestae* 12.2), the Domus Aurea (Suetonius, *Nero* 31.2 — Nero's one
+recorded remark on finishing it), the Baths of Nero (Martial, *Epigrams* 7.34), and the Rostra
+(Cassius Dio 47.8.3-4, corroborated independently by Appian 4.20 — Cicero's head and hand displayed
+there in 43 BCE). `pois.geojson` 467 → 470 features, all three new POIs' `/place/` pages verified
+building cleanly.
+
+**`[05-P0-1]` places-in-view-list (`polish`)** — new `app/PlacesInViewList.tsx` +
+`app/usePlacesInView.ts`: an accessible, keyboard-navigable list of every curated POI and site
+inside the current map viewport, sorted by distance from the map center, live-updated 200ms after
+every `moveend`. The gap this closes: every place on the map up to now was only discoverable by
+visually scanning pins, which fails outright for a screen-reader user or a keyboard-only user, and
+is slow even for a sighted mouse user who just wants a scannable list of "what's around here."
+Full listbox semantics — `role="listbox"`/`"option"`, `aria-activedescendant` tracking the active
+row, Arrow/Home/End/Enter/Escape — and clicking or pressing Enter on a row opens the exact same
+real place card a map click would (or flies into a city and loads its street-level detail, for a
+`sites.ts` entry). Desktop gets its own FAB, the next open slot in the bottom-right stack
+(`bottom:361`, above Compass); mobile gets no new FAB at all, reached instead from the hamburger
+menu, because the phone's corner is already at the five-control budget `SHIFT_BRIEF.md`'s own
+"look like Google Maps" invariant sets (search pill, layers button, one corner FAB, epoch pill,
+credit chip) — a sixth control would be exactly the kind of accretion that invariant exists to
+stop. **A real layout bug caught in the first screenshot pass, before it ever reached a commit**:
+the FAB's `bottom:361` position is high enough in the stack that a flat `60vh` panel cap ran off
+the top of a 1280×800 window entirely, clipping the header off-screen. Fixed by bounding the
+panel's `maxHeight` with `min(60vh, calc(100vh - 429px))`, sized against the FAB's own reserved
+space rather than a fixed viewport fraction, so it can't overflow regardless of window height.
+Verified with Playwright: keyboard nav moves `aria-activedescendant` correctly and Enter opens the
+right card while closing the list (tested landing on "Trajan's Markets" after two `ArrowDown`
+presses); 1280×800 light and 375×812 dark screenshots both clean — mobile shows the panel as a
+bottom-sheet-style overlay reached through the hamburger menu, matching the rest of the app's dark
+tokens with no white slabs.
+
+### Metrics
+
+`npm run metrics -- --write`: 467 → 470 POIs (the 3 epigraphy-batch-3 additions). Depth 82.7% →
+87.9% (thin tail 81 → 57). Curated-image coverage and ancient-source coverage both nudged up from
+the new POIs shipping with real images/citations from day one. Validator: 0 errors, same 14
+pre-existing warnings, cross-file collision count unchanged at 75 — none of this run's additions
+introduced a new near-duplicate. `next build` clean throughout (564 static routes, up from 561).
+
+### What's next
+
+- **Board, fresh cycle**: this run closed a clean 1:2:1, so the next run picks whatever's topmost
+  and unclaimed. Topmost unclaimed P0 tickets are unchanged from last run — `[12-P0-1]`
+  merge-themes (`fix`, big), `[03-P0-1]` schema-v2 (`fix`), `[03-P0-2]` card-rebuild (`polish`,
+  still missing its spec), `[12-FIX-3]` duplicate-pantheon (`retire`), `[11-P0-3]`
+  delete-dead-data (`retire`), `[08-P1-6]` baalbek-dating (`verify`). The topmost unclaimed `add`
+  is now `[07-P1-1]` travel-time (P1, an ORBIS-style journey calculator) — bigger scope than a
+  data batch, a real Track B candidate for a shift with time to spare on it.
+- **Axis 1 (more cities) needs either a non-Overpass sourcing approach or a different environment**
+  — this run's proxy-status-endpoint check makes it explicit that the block is a deliberate policy
+  denial on the specific domains the existing pipeline depends on (`overpass-api.de`,
+  `nominatim.openstreetmap.org`, plus `en.wikipedia.org`/`commons.wikimedia.org` for the research
+  side), not a missing script or a flaky connection. WebSearch is unaffected and is what every
+  other axis in this project already researches through.
+- **`[10-P0-3]` flagship-depth**: 57 fields still under 60 words. **`[09-P1-4]` epigraphy**: now a
+  standing task with its POI-availability bottleneck cleared — hundreds of curated POIs still
+  carry no inscription at all, worth a batch 4 whenever there's a free `deepen` slot.
+- **Munningen's 117 CE garrison status** (see flagship-depth note above) is a real, small,
+  well-scoped follow-up if anyone has a spare half hour and a primary source.
+
+---
+
 ## Shift 27 — 2026-08-17 (this shift's own prompt claimed "Shift 4 of four")
 
 **Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt carries
