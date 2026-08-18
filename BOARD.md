@@ -245,7 +245,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       wall this and the last two batches hit is now well-enough documented that a batch 6 should
       probably wait for `[09-P1-4]` to open the inscription channel rather than keep re-running
       the same literary-only search against the same thin pool.*
-- [x] `[06-P0-2]` **`curate-buildings`** `deepen` — Ostia-depth curated descriptions for the
+- [~] `[06-P0-2]` **`curate-buildings`** `deepen` — claimed for Merida by cloud shift 29,
+      2026-08-18. Ostia-depth curated descriptions for the
       other 39 sites, ~10 buildings/day. **Standing task, never "done".**
       *Pompeii done 2026-08-16 by cloud shift 3: 28 buildings in `app/pompeiiDescriptions.ts`
       (House of the Faun, Temple of Apollo, the Forum and its temples, the three bath complexes,
@@ -400,7 +401,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       `app/categoryLife.ts`; renders as "What happened here" on every card. Covered 448/448 POIs
       at ship time; cloud shift 2 added 2 more categories (`ludus`, `sarcophagus_workshop`) the
       same day and kept coverage at 100% — standing task, re-check the count on future adds.
-- [ ] `[03-P1-4]` **`nearby-related`** `polish` — Six related-place cards on every card and page.
+- [~] `[03-P1-4]` **`nearby-related`** `polish` — claimed by cloud shift 29, 2026-08-18.
+      Six related-place cards on every card and page.
 - [ ] `[02-P0-2]` **`coastline`** `polish` — Coastline stroke over the sea mask.
 - [ ] `[02-P0-3]` **`road-weights`** `polish` — Raise road weights/opacity at low zoom; add
       casings to main roads.
@@ -426,7 +428,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[06-P1-3]` **`building-typology`** `deepen` — Extend to the ~35-term standard vocabulary,
       grouped into six colour families.
 - [ ] `[06-P1-4]` **`excavation-history`** `deepen` — `excavation[]` on all 40 sites.
-- [x] `[09-P1-4]` **`epigraphy`** `deepen` — Batch 1 done 2026-08-17 by cloud shift 26. 16
+- [~] `[09-P1-4]` **`epigraphy`** `deepen` — claimed for batch 4 by cloud shift 29, 2026-08-18.
+      Batch 1 done 2026-08-17 by cloud shift 26. 16
       inscriptions merged into `pois.geojson`'s `ancient_sources[]` (author = corpus siglum,
       work = inscription type, ref = date, to fit the validator's literary-source shape): the 8
       CIL leads shift 25 handed off, verified and written up, plus 8 more researched and verified
@@ -574,7 +577,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       the routes list was correct. Verified: `next build` generates all five routes cleanly;
       screenshotted at 1280×900 light and 375×812 dark.
 - [ ] `[09-P2-8]` **`how-we-know`** `add` — Public methodology page.
-- [ ] `[02-P1-6]` **`sea-labels`** `add` — `seas.geojson`, ~30 water names, italic letterspaced.
+- [~] `[02-P1-6]` **`sea-labels`** `add` — claimed by cloud shift 29, 2026-08-18.
+      `seas.geojson`, ~30 water names, italic letterspaced.
 - [ ] `[12-P1-4]` **`fuzzy-dates`** `fix` — `{earliest, latest, display}` date objects.
 - [ ] `[11-P2-10]` **`next-upgrade`** `fix` — `next@14.2.5` advisory flagged in shift 1 and never
       actioned. Deliberate upgrade with a smoke test.
