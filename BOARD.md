@@ -64,7 +64,7 @@ to prevent. Building locally to *test* your own work is expected and fine.
       now starts both sources empty and fetches a site's pair only when visited (Explore-panel
       jump or a moveend proximity check, so deep links/search still work). Verified with
       Playwright: 0 requests to `/data/sites/*` on cold load, correct fetch + render on visit.
-- [ ] `[12-FIX-3]` **`duplicate-pantheon`** `retire` — `poi_pantheon` and `poi_pantheon_rome` are
+- [~] `[12-FIX-3]` **`duplicate-pantheon`** `retire` — claimed by cloud shift 29, 2026-08-18. `poi_pantheon` and `poi_pantheon_rome` are
       the same building, eight metres apart, and until 2026-08-16 they said opposite things:
       one had the site as a Trajanic construction site with `extant_117ce: false`, the other
       claimed Agrippa's temple was still standing — which is wrong, it burned in 80 CE. The
