@@ -1984,6 +1984,1175 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.9622,
+          42.2662
+        ]
+      },
+      "properties": {
+        "id": "station_iuncaria",
+        "category": "mansio",
+        "name": "Iuncaria",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "First mansio south of Summus Pyrenaeus, controlling the Empordà plain approach into Hispania.",
+        "sources": [
+          "Itin. Ant. ~390s"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.9,
+          42.05
+        ]
+      },
+      "properties": {
+        "id": "station_cinniana",
+        "category": "mutatio",
+        "name": "Cinniana",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 15,
+        "identified": false,
+        "notes": "Poorly localized station between Iuncaria and the Barcino road; the Vicarello cups give a different (12 mp) figure, showing source disagreement even in antiquity.",
+        "sources": [
+          "Itin. Ant.",
+          "Vasos de Vicarello"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8072,
+          41.8364
+        ]
+      },
+      "properties": {
+        "id": "station_aquae_voconiae",
+        "category": "mansio",
+        "name": "Aquae Voconiae",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "A thermal-spring station (\"Waters of Voconius\"); Roman baths have been excavated at Caldes de Malavella, matching the name directly.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6333,
+          41.755
+        ]
+      },
+      "properties": {
+        "id": "station_seterrae",
+        "category": "mutatio",
+        "name": "Seterrae",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 15,
+        "identified": true,
+        "notes": "Minor station on the corridor between Girona and the Vallès.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3283,
+          41.5892
+        ]
+      },
+      "properties": {
+        "id": "station_praetorium",
+        "category": "mansio",
+        "name": "Praetorium",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 15,
+        "identified": true,
+        "notes": "Marks the road's entry into the Vallès plain north of Barcino.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2886,
+          41.6083
+        ]
+      },
+      "properties": {
+        "id": "station_semproniana",
+        "category": "mutatio",
+        "name": "Semproniana",
+        "road": "Via Augusta",
+        "identified": false,
+        "notes": "Named station on the Vallès stretch; some scholars treat this as an alternate/interior branch rather than the main line.",
+        "sources": [
+          "Catalan toponymic scholarship (regional reconstructions)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1086,
+          41.5463
+        ]
+      },
+      "properties": {
+        "id": "station_arrago",
+        "category": "mutatio",
+        "name": "Arrago",
+        "road": "Via Augusta",
+        "identified": false,
+        "notes": "Attested name near modern Sabadell; exact placement and route order is disputed.",
+        "sources": [
+          "modern route reconstructions"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1769,
+          41.3825
+        ]
+      },
+      "properties": {
+        "id": "station_barcino",
+        "category": "vicus",
+        "name": "Barcino",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 17,
+        "identified": true,
+        "notes": "Colonia Iulia Augusta Faventia Paterna Barcino, founded c. 15-13 BCE; a major node where the Via Augusta met the port.",
+        "sources": [
+          "Itin. Ant.",
+          "Palli Aguilera 1985"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.931,
+          41.4736
+        ]
+      },
+      "properties": {
+        "id": "station_ad_fines",
+        "category": "statio",
+        "name": "Ad Fines",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "A boundary-marker station (\"at the border\") at the Llobregat river crossing, the traditional edge of Barcino's territory.",
+        "sources": [
+          "Itin. Ant.",
+          "Catalan Via Augusta scholarship"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.667,
+          41.339
+        ]
+      },
+      "properties": {
+        "id": "station_antistiana",
+        "category": "mansio",
+        "name": "Antistiana",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 17,
+        "identified": true,
+        "notes": "Sits on the Penedès stretch, bypassing the impassable Garraf coastal cliffs.",
+        "sources": [
+          "Itin. Ant.",
+          "pleiades.stoa.org/places/246166"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.6,
+          41.27
+        ]
+      },
+      "properties": {
+        "id": "station_stabulum_novum",
+        "category": "mutatio",
+        "name": "Stabulum Novum",
+        "road": "Via Augusta",
+        "identified": false,
+        "notes": "Attested name meaning \"new stable/inn\"; no firm archaeological fix, placed on the Baix Penedès corridor.",
+        "sources": [
+          "modern route reconstructions"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.5149,
+          41.204
+        ]
+      },
+      "properties": {
+        "id": "station_palfuriana",
+        "category": "mansio",
+        "name": "Palfuriana",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 13,
+        "identified": true,
+        "notes": "Precisely located per the Digital Atlas of the Roman Empire, at the coastal approach to Tarraco.",
+        "sources": [
+          "Itin. Ant.",
+          "DARE / pleiades.stoa.org/places/246551"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2445,
+          41.1189
+        ]
+      },
+      "properties": {
+        "id": "station_tarraco",
+        "category": "vicus",
+        "name": "Tarraco",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 17,
+        "identified": true,
+        "notes": "Capital of Hispania Tarraconensis and the road's major hub; extensive Roman remains now a UNESCO World Heritage site.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.0667,
+          41.0333
+        ]
+      },
+      "properties": {
+        "id": "station_oleastrum",
+        "category": "mutatio",
+        "name": "Oleastrum",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 21,
+        "identified": false,
+        "notes": "Sits at the mountain pass (\"Sub Saltu,\" below the pass) where the road crosses from the Camp de Tarragona into the Ebro corridor.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.71,
+          40.82
+        ]
+      },
+      "properties": {
+        "id": "station_traiecta",
+        "category": "mutatio",
+        "name": "Traiecta",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 24,
+        "identified": false,
+        "notes": "Name suggests a river or lagoon crossing point in the Ebro delta; exact site not fixed.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.5211,
+          40.8126
+        ]
+      },
+      "properties": {
+        "id": "station_dertosa",
+        "category": "vicus",
+        "name": "Dertosa",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 17,
+        "identified": true,
+        "notes": "Major Ebro-crossing city and conventus-level town; the road's bridge/ferry point over the river.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1667,
+          40.5233
+        ]
+      },
+      "properties": {
+        "id": "station_intibili",
+        "category": "mutatio",
+        "name": "Intibili",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 27,
+        "identified": false,
+        "notes": "Approximately placed on the coastal-inland stretch through the Baix Maestrat; no firm modern town identification.",
+        "sources": [
+          "Itin. Ant. 399.6"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0667,
+          40.2833
+        ]
+      },
+      "properties": {
+        "id": "station_ildum",
+        "category": "mansio",
+        "name": "Ildum",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "Well-studied mansio, cited also on the Vicarello cups and in the Ravenna Cosmography.",
+        "sources": [
+          "Itin. Ant. 399.6",
+          "Arasa, \"La mansio Ildum de la Via Augusta\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2,
+          39.75
+        ]
+      },
+      "properties": {
+        "id": "station_sebelaci",
+        "category": "mutatio",
+        "name": "Sebelaci",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 24,
+        "identified": false,
+        "notes": "Distances of 24 mp from Ildum and 22 mp to Saguntum are given, but the site itself is not firmly fixed.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2775,
+          39.6797
+        ]
+      },
+      "properties": {
+        "id": "station_saguntum",
+        "category": "vicus",
+        "name": "Saguntum",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 22,
+        "identified": true,
+        "notes": "Famous Iberian/Roman city whose 219 BCE siege triggered the Second Punic War; major node on the coastal road.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3763,
+          39.4699
+        ]
+      },
+      "properties": {
+        "id": "station_valentia",
+        "category": "vicus",
+        "name": "Valentia",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 22,
+        "identified": true,
+        "notes": "Colonia founded 138 BCE for veterans of the Lusitanian Wars.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2551,
+          39.1611
+        ]
+      },
+      "properties": {
+        "id": "station_sucro",
+        "category": "mansio",
+        "name": "Sucro",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "River-mouth station at the Xúquer (ancient Sucro); the river carries the station's own name.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1183,
+          38.9236
+        ]
+      },
+      "properties": {
+        "id": "station_ad_statuas",
+        "category": "mutatio",
+        "name": "Ad Statuas",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 20,
+        "identified": false,
+        "notes": "A modern identification with Oliva appears in Valencian regional scholarship but is not firmly settled.",
+        "sources": [
+          "Itin. Ant.",
+          "regional studies"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.05,
+          38.8
+        ]
+      },
+      "properties": {
+        "id": "station_ad_turres",
+        "category": "mutatio",
+        "name": "Ad Turres",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 32,
+        "identified": false,
+        "notes": "A genuinely disputed placement on the coastal corridor south of Oliva toward Dénia.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.02,
+          38.68
+        ]
+      },
+      "properties": {
+        "id": "station_adello",
+        "category": "mutatio",
+        "name": "Adello",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 9,
+        "identified": false,
+        "notes": "A short 9-mile-pace hop from Ad Turres on the corridor near Calpe/Benissa; no reliable modern fix.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.7656,
+          38.3439
+        ]
+      },
+      "properties": {
+        "id": "station_aspis",
+        "category": "mutatio",
+        "name": "Aspis",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 24,
+        "identified": false,
+        "notes": "A name-cognate identification with modern Aspe, inland west of Elche, is suggestive but not archaeologically confirmed.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6987,
+          38.2622
+        ]
+      },
+      "properties": {
+        "id": "station_ilici",
+        "category": "vicus",
+        "name": "Ilici",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "Colonia Iulia Ilici Augusta, a major well-excavated colonia near where the Lady of Elche was found.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.85,
+          37.93
+        ]
+      },
+      "properties": {
+        "id": "station_thiar",
+        "category": "mutatio",
+        "name": "Thiar",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 24,
+        "identified": false,
+        "notes": "A genuinely unidentified station, placed here only as a corridor interpolation between Elche and Cartagena.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9862,
+          37.6051
+        ]
+      },
+      "properties": {
+        "id": "station_carthago_nova",
+        "category": "vicus",
+        "name": "Carthago Nova",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 27,
+        "identified": true,
+        "notes": "Major Punic-founded port city and capital of the Carthaginensis conventus, with an extensively excavated Roman theatre.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.7013,
+          37.6733
+        ]
+      },
+      "properties": {
+        "id": "station_eliocroca",
+        "category": "mansio",
+        "name": "Eliocroca",
+        "road": "Via Augusta",
+        "identified": true,
+        "notes": "Well-identified inland station on the branch heading toward Baetica.",
+        "sources": [
+          "Itin. Ant.",
+          "regional archaeology"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2419,
+          37.5817
+        ]
+      },
+      "properties": {
+        "id": "station_ad_morum",
+        "category": "mutatio",
+        "name": "Ad Morum",
+        "road": "Via Augusta",
+        "identified": false,
+        "notes": "A tentative identification per regional scholarship on the southern branch of the Via Augusta between Acci and Basti.",
+        "sources": [
+          "AEspA article on the Acci-Basti branch"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7674,
+          37.4907
+        ]
+      },
+      "properties": {
+        "id": "station_basti",
+        "category": "vicus",
+        "name": "Basti",
+        "road": "Via Augusta",
+        "identified": true,
+        "notes": "An important Baetican town on the Guadalquivir-basin approach, well identified archaeologically.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1361,
+          37.3006
+        ]
+      },
+      "properties": {
+        "id": "station_acci",
+        "category": "vicus",
+        "name": "Acci",
+        "road": "Via Augusta",
+        "identified": true,
+        "notes": "Iulia Gemella Acci, an Augustan veteran colonia and anchor point of the documented southern branch.",
+        "sources": [
+          "Itin. Ant.",
+          "AEspA article"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5333,
+          37.4167
+        ]
+      },
+      "properties": {
+        "id": "station_acatucci",
+        "category": "mutatio",
+        "name": "Acatucci",
+        "road": "Via Augusta",
+        "identified": false,
+        "notes": "An obscure station on the mountainous stretch toward Castulo, tentatively placed near Iznalloz.",
+        "sources": [
+          "modern reconstruction"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.3489,
+          37.8391
+        ]
+      },
+      "properties": {
+        "id": "station_mentesa_bastia",
+        "category": "mutatio",
+        "name": "Mentesa Bastia",
+        "road": "Via Augusta",
+        "identified": false,
+        "notes": "Distinct from Mentesa Oretana; a genuinely disputed placement near Jódar, Jaén.",
+        "sources": [
+          "modern reconstruction"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.628,
+          38.03
+        ]
+      },
+      "properties": {
+        "id": "station_castulo",
+        "category": "vicus",
+        "name": "Castulo",
+        "road": "Via Augusta",
+        "identified": true,
+        "notes": "A major pre-Roman and Roman mining town — Hannibal's wife Imilce was said to be from here — and an extensively excavated site.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.0333,
+          38.05
+        ]
+      },
+      "properties": {
+        "id": "station_isturgi",
+        "category": "vicus",
+        "name": "Isturgi",
+        "road": "Via Augusta",
+        "identified": true,
+        "notes": "A well-excavated Roman town famous for its terra sigillata pottery kilns, on the north-bank road to Corduba.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.3789,
+          38.0247
+        ]
+      },
+      "properties": {
+        "id": "station_epora",
+        "category": "mansio",
+        "name": "Epora",
+        "road": "Via Augusta",
+        "identified": true,
+        "notes": "On the left bank of the Baetis (Guadalquivir); the modern site preserves the Roman-era name closely.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.6764,
+          37.9128
+        ]
+      },
+      "properties": {
+        "id": "station_ad_decumum",
+        "category": "mutatio",
+        "name": "Ad Decumum",
+        "road": "Via Augusta",
+        "identified": false,
+        "notes": "A name meaning \"at the tenth milestone\" from Corduba; placed by distance logic rather than a confirmed site.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7794,
+          37.8882
+        ]
+      },
+      "properties": {
+        "id": "station_corduba",
+        "category": "vicus",
+        "name": "Corduba",
+        "road": "Via Augusta",
+        "identified": true,
+        "notes": "Capital of Hispania Baetica, one of four conventus capitals the Via Augusta is documented to have linked.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.9333,
+          37.6667
+        ]
+      },
+      "properties": {
+        "id": "station_ad_aras",
+        "category": "mansio",
+        "name": "Ad Aras",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "A dedicated modern study supports identifying this station with La Carlota, on the Corduba-Astigi stretch.",
+        "sources": [
+          "Itin. Ant. 413",
+          "academic study, \"Ad Aras y La Carlota\""
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.0827,
+          37.5361
+        ]
+      },
+      "properties": {
+        "id": "station_astigi",
+        "category": "vicus",
+        "name": "Astigi",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Colonia Augusta Firma Astigi, one of four Baetican conventus capitals, with extensively excavated Roman mosaics.",
+        "sources": [
+          "Itin. Ant. 413"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.3333,
+          37.4667
+        ]
+      },
+      "properties": {
+        "id": "station_obucla",
+        "category": "mutatio",
+        "name": "Obucla",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 15,
+        "identified": true,
+        "notes": "A minor town on the direct Astigi-Hispalis road.",
+        "sources": [
+          "Itin. Ant. 413/414"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.6425,
+          37.4708
+        ]
+      },
+      "properties": {
+        "id": "station_carmo",
+        "category": "vicus",
+        "name": "Carmo",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "A major hilltop colonia with an exceptionally well-preserved Roman necropolis, on the alternate routing via Hispalis.",
+        "sources": [
+          "Itin. Ant. 414"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9845,
+          37.3891
+        ]
+      },
+      "properties": {
+        "id": "station_hispalis",
+        "category": "vicus",
+        "name": "Hispalis",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 22,
+        "identified": true,
+        "notes": "A major Baetis-river port city and conventus capital.",
+        "sources": [
+          "Itin. Ant. 413/414"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.97,
+          37.26
+        ]
+      },
+      "properties": {
+        "id": "station_orippo",
+        "category": "mansio",
+        "name": "Orippo",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "A minor station just south of Hispalis on the road to Gades.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7742,
+          37.175
+        ]
+      },
+      "properties": {
+        "id": "station_ugia",
+        "category": "mutatio",
+        "name": "Ugia",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 24,
+        "identified": false,
+        "notes": "Location debated; placed near Utrera per modern reconstructions.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.1194,
+          36.7192
+        ]
+      },
+      "properties": {
+        "id": "station_asta_regia",
+        "category": "vicus",
+        "name": "Asta Regia",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 27,
+        "identified": true,
+        "notes": "An important pre-Roman and Roman town near modern Jerez de la Frontera; the archaeological site is well documented.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2331,
+          36.5928
+        ]
+      },
+      "properties": {
+        "id": "station_portus_gaditanus",
+        "category": "mansio",
+        "name": "Portus Gaditanus",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "A port serving Gades across the bay, also cited by Pomponius Mela and the Ravenna Cosmography.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.19,
+          36.53
+        ]
+      },
+      "properties": {
+        "id": "station_ad_pontem",
+        "category": "mutatio",
+        "name": "Ad Pontem",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 14,
+        "identified": false,
+        "notes": "A name meaning \"at the bridge,\" near the crossing toward the Cadiz peninsula; not firmly fixed.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2886,
+          36.5271
+        ]
+      },
+      "properties": {
+        "id": "station_gades",
+        "category": "vicus",
+        "name": "Gades",
+        "road": "Via Augusta",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "A Phoenician-founded city (Gadir) and the Via Augusta's southern terminus, one of the oldest continuously inhabited cities in western Europe.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
