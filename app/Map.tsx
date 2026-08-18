@@ -5,6 +5,10 @@ import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { applyAllLayers } from "./useLayers";
 import { selectPoi, clearPoi, getSelectedPoi, subscribeSelectedPoi } from "./usePoiPanel";
+import { selectProvince, clearProvince, subscribeSelectedProvince } from "./useProvincePanel";
+import { PROVINCES } from "./provinces";
+import { isRulerActive } from "./useRuler";
+import { isDirectionsActive } from "./useDirections";
 import { categoryColorMatchPairs, DEFAULT_COLOR } from "./poiCategories";
 import { ostiaEntry } from "./ostiaDescriptions";
 import { pompeiiEntry } from "./pompeiiDescriptions";
@@ -14,6 +18,7 @@ import { delphiEntry } from "./delphiDescriptions";
 import { jerashEntry } from "./jerashDescriptions";
 import { trierEntry } from "./trierDescriptions";
 import { meridaEntry } from "./meridaDescriptions";
+import { palmyraEntry } from "./palmyraDescriptions";
 import { SITE_META, SITES } from "./sites";
 
 // Palette — light + dark variants. Both palettes are calibrated so that the sea/land/roads/labels
@@ -31,6 +36,8 @@ type Palette = {
   placeLabelMinor: string;
   labelHalo: string;
   seaLabel: string;
+  coastline: string;
+  provinceHighlight: string;
 };
 const LIGHT: Palette = {
   sea: "#a9d1e3",
@@ -45,6 +52,8 @@ const LIGHT: Palette = {
   placeLabelMinor: "#5c4326",
   labelHalo: "#f4ead5",
   seaLabel: "#4a7797",
+  coastline: "#6b9cb5",
+  provinceHighlight: "#b0431a",
 };
 const DARK: Palette = {
   sea: "#0f2233",
@@ -59,6 +68,8 @@ const DARK: Palette = {
   placeLabelMinor: "#a89b7f",
   labelHalo: "#111315",
   seaLabel: "#6fa3c4",
+  coastline: "#4a7a95",
+  provinceHighlight: "#e0692f",
 };
 
 // Shoelace-formula ring area in raw lng/lat degrees squared — not a real physical area (no
@@ -99,6 +110,7 @@ export default function Map() {
     let onPopState: (() => void) | null = null;
     let pushTimer: ReturnType<typeof setTimeout> | null = null;
     let unsubPoi: (() => void) | null = null;
+    let unsubProvince: (() => void) | null = null;
     // Populated once pois.geojson loads (Phase 4 below) so a shared #lng,lat,zoomz:poiId link —
     // or a back/forward step onto one — can look the place back up and reopen its panel.
     // (Plain object, not a `Map` instance — this component is itself named `Map`, which shadows
@@ -171,6 +183,24 @@ export default function Map() {
               },
             },
             {
+              // Selected-province highlight — [Province overlay, FEATURE_BACKLOG.md P1]. Filter
+              // starts matched-to-nothing; app/Map.tsx's own subscribeSelectedProvince() listener
+              // drives it via setFilter whenever the click handler below (or the panel's own
+              // close button) changes the selection.
+              id: "provinces-selected-fill",
+              type: "fill",
+              source: "provinces",
+              filter: ["==", ["get", "name"], "__none__"],
+              paint: { "fill-color": P.provinceHighlight, "fill-opacity": 0.22 },
+            },
+            {
+              id: "provinces-selected-line",
+              type: "line",
+              source: "provinces",
+              filter: ["==", ["get", "name"], "__none__"],
+              paint: { "line-color": P.provinceHighlight, "line-width": 2 },
+            },
+            {
               id: "rivers",
               type: "line",
               source: "rivers",
@@ -190,6 +220,20 @@ export default function Map() {
               type: "fill",
               source: "ancient-sea",
               paint: { "fill-color": P.sea },
+            },
+            {
+              // Coastline stroke — a quiet line traced along the land polygon's own edge, drawn
+              // above the sea-mask/ancient-sea fills so it reads crisply right at the coast the
+              // way Google Maps' own coastline does, instead of land and sea just meeting at a
+              // hard color boundary with no line at all. [02-P0-2]
+              id: "coastline",
+              type: "line",
+              source: "land",
+              paint: {
+                "line-color": P.coastline,
+                "line-width": ["interpolate", ["linear"], ["zoom"], 3, 0.4, 8, 1, 14, 1.6],
+                "line-opacity": 0.55,
+              },
             },
             { id: "lakes", type: "fill", source: "lakes", paint: { "fill-color": P.lake } },
             {
@@ -566,8 +610,45 @@ export default function Map() {
         map.on("click", (e) => {
           if (!map) return;
           const hits = map.queryRenderedFeatures(e.point, { layers: ["pois-dot"] });
-          if (hits.length === 0) clearPoi();
+          if (hits.length === 0) {
+            clearPoi();
+            clearProvince();
+          }
         });
+
+        // Click a province (empty land, no more specific place under the cursor) -> highlight it
+        // and open app/ProvincePanel.tsx — [Province overlay, FEATURE_BACKLOG.md P1]. Registered
+        // after the generic empty-click handler above, so on a click that also hits a POI/building
+        // (both registered later still, e.g. "pois-dot" and every site's `*-buildings-fill`), the
+        // more specific handler's own selectPoi() runs last and wins, closing this panel back down
+        // via the registerPoiSelectedSideEffect wiring in useProvincePanel.ts — same last-writer-
+        // wins pattern the ostia-buildings-fill handler already relies on against this same click.
+        // Zoom-gated to the empire/region-level view: provinces-fill covers virtually all land, so
+        // without a gate every close-up click (measuring, routing, browsing a city) would also pop
+        // a province panel. Also skipped outright while the ruler or Directions is capturing clicks
+        // for its own session.
+        map.on("click", "provinces-fill", (e) => {
+          if (!map || map.getZoom() > 7.5 || isRulerActive() || isDirectionsActive()) return;
+          const name = e.features?.[0]?.properties?.name;
+          if (!name) return;
+          const province = PROVINCES.find((p) => p.polygonName === name);
+          if (province) selectProvince(province.slug);
+        });
+        map.on("mouseenter", "provinces-fill", () => {
+          if (map && map.getZoom() <= 7.5) map.getCanvas().style.cursor = "pointer";
+        });
+        map.on("mouseleave", "provinces-fill", () => {
+          if (map) map.getCanvas().style.cursor = "";
+        });
+        unsubProvince = subscribeSelectedProvince((slug) => {
+          if (!map) return;
+          const province = slug ? PROVINCES.find((p) => p.slug === slug) : null;
+          const matchName = province?.polygonName ?? "__none__";
+          const filter = ["==", ["get", "name"], matchName] as any;
+          map.setFilter("provinces-selected-fill", filter);
+          map.setFilter("provinces-selected-line", filter);
+        });
+
         kick();
 
         // Phase 5: street-level detail (building outlines + park paths) for the 40 curated
@@ -775,7 +856,9 @@ export default function Map() {
                           ? trierEntry(rawName)
                           : site === "merida"
                             ? meridaEntry(rawName)
-                            : undefined;
+                            : site === "palmyra"
+                              ? palmyraEntry(rawName)
+                              : undefined;
           selectPoi(
             {
               id: `${site}-${p.osm_id}`,
@@ -2410,6 +2493,7 @@ export default function Map() {
       if (onWinResize) window.removeEventListener("resize", onWinResize);
       if (onPopState) window.removeEventListener("popstate", onPopState);
       if (unsubPoi) unsubPoi();
+      if (unsubProvince) unsubProvince();
       if (pushTimer) clearTimeout(pushTimer);
       if (ro) ro.disconnect();
       if (map) map.remove();

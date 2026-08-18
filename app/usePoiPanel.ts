@@ -23,8 +23,18 @@ function subscribe(onStoreChange: () => void) {
   return () => listeners.delete(onStoreChange);
 }
 
+// Set once by useProvincePanel.ts so selecting a POI always closes an open province panel — the
+// two panels share the same screen slot and are mutually exclusive, same pattern as Directions/
+// Ruler's "modes". A plain callback slot (not a static import) avoids a module import cycle,
+// since useProvincePanel.ts already needs to import clearPoi from here for the reverse direction.
+let onPoiSelected: (() => void) | null = null;
+export function registerPoiSelectedSideEffect(fn: () => void) {
+  onPoiSelected = fn;
+}
+
 export function selectPoi(props: Record<string, any>, lngLat: [number, number]) {
   current = { props, lngLat };
+  onPoiSelected?.();
   listeners.forEach((l) => l());
 }
 

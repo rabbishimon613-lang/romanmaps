@@ -44,3 +44,10 @@ export function deactivateRuler() {
 export function useRulerState(): RulerState {
   return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 }
+
+/** Non-React accessor so app/Map.tsx's imperative click handlers (province panel, "what's here")
+ * can skip their own behavior while a measuring session is capturing clicks — same purpose as
+ * usePoiPanel.ts's getSelectedPoi(). */
+export function isRulerActive(): boolean {
+  return current.active;
+}

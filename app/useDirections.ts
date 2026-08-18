@@ -70,3 +70,9 @@ export function clearDirections() {
 export function useDirectionsState(): DirectionsState {
   return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 }
+
+/** Non-React accessor, same purpose as useRuler.ts's isRulerActive() — lets Map.tsx's own click
+ * handlers (province panel, "what's here") skip while a routing session is capturing clicks. */
+export function isDirectionsActive(): boolean {
+  return current.active;
+}

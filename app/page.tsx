@@ -10,6 +10,7 @@ import ZoomControl from "./ZoomControl";
 import HomeButton from "./HomeButton";
 import LoadingBar from "./LoadingBar";
 import PlaceDetails from "./PlaceDetails";
+import ProvincePanel from "./ProvincePanel";
 import Legend from "./Legend";
 import ContextMenu from "./ContextMenu";
 import Compass from "./Compass";
@@ -34,6 +35,7 @@ export default function Page() {
       <ZoomControl />
       <PlacesInViewList />
       <PlaceDetails />
+      <ProvincePanel />
       <TourPlayer />
       <ContextMenu />
       <MapAttribution />
