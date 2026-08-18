@@ -13,6 +13,7 @@ import { ephesusEntry } from "./ephesusDescriptions";
 import { delphiEntry } from "./delphiDescriptions";
 import { jerashEntry } from "./jerashDescriptions";
 import { trierEntry } from "./trierDescriptions";
+import { meridaEntry } from "./meridaDescriptions";
 import { SITE_META, SITES } from "./sites";
 
 // Palette — light + dark variants. Both palettes are calibrated so that the sea/land/roads/labels
@@ -29,6 +30,7 @@ type Palette = {
   placeLabelMajor: string;
   placeLabelMinor: string;
   labelHalo: string;
+  seaLabel: string;
 };
 const LIGHT: Palette = {
   sea: "#a9d1e3",
@@ -42,6 +44,7 @@ const LIGHT: Palette = {
   placeLabelMajor: "#2a1e10",
   placeLabelMinor: "#5c4326",
   labelHalo: "#f4ead5",
+  seaLabel: "#4a7797",
 };
 const DARK: Palette = {
   sea: "#0f2233",
@@ -55,6 +58,7 @@ const DARK: Palette = {
   placeLabelMajor: "#e6dcc4",
   placeLabelMinor: "#a89b7f",
   labelHalo: "#111315",
+  seaLabel: "#6fa3c4",
 };
 
 // Shoelace-formula ring area in raw lng/lat degrees squared — not a real physical area (no
@@ -104,12 +108,13 @@ export default function Map() {
 
     (async () => {
       // Phase 1: light sources first — small enough to render fast.
-      const [land, provinces, lakes, rivers, ancientSea] = await Promise.all([
+      const [land, provinces, lakes, rivers, ancientSea, seas] = await Promise.all([
         fetch("/data/land.geojson").then((r) => r.json()),
         fetch("/data/provinces.geojson").then((r) => r.json()),
         fetch("/data/10m_lakes.geojson").then((r) => r.json()),
         fetch("/data/10m_rivers_lake_centerlines.geojson").then((r) => r.json()),
         fetch("/data/ancient_sea.geojson").then((r) => r.json()),
+        fetch("/data/seas.geojson").then((r) => r.json()),
       ]);
       if (cancelled || !ref.current) return;
 
@@ -138,6 +143,7 @@ export default function Map() {
             rivers: { type: "geojson", maxzoom: 14, buffer: 128, tolerance: 0.375, data: rivers },
             "ancient-sea": { type: "geojson", maxzoom: 18, buffer: 128, tolerance: 0.1, data: ancientSea },
             "sea-mask": { type: "geojson", maxzoom: 14, buffer: 128, tolerance: 0.5, data: seaMask },
+            seas: { type: "geojson", data: seas },
           },
           layers: [
             { id: "bg", type: "background", paint: { "background-color": P.sea } },
@@ -186,6 +192,55 @@ export default function Map() {
               paint: { "fill-color": P.sea },
             },
             { id: "lakes", type: "fill", source: "lakes", paint: { "fill-color": P.lake } },
+            {
+              // Sea/ocean names — quiet cartographic labels over open water, always on (base
+              // geography, not a toggleable overlay — same tier as place labels). These read at
+              // the empire-wide opening view, the way "Mediterranean Sea" would on Google Maps.
+              id: "sea-labels-major",
+              type: "symbol",
+              source: "seas",
+              minzoom: 3,
+              filter: ["in", ["get", "kind"], ["literal", ["sea", "ocean"]]],
+              layout: {
+                "text-field": ["get", "name"],
+                "text-font": ["Noto Sans Regular"],
+                "text-size": ["interpolate", ["linear"], ["zoom"], 3, 10, 8, 15],
+                "text-letter-spacing": 0.08,
+                "text-transform": "uppercase",
+                "text-optional": true,
+                "text-allow-overlap": false,
+                "text-padding": 8,
+              },
+              paint: {
+                "text-color": P.seaLabel,
+                "text-halo-color": P.labelHalo,
+                "text-halo-width": 1.2,
+              },
+            },
+            {
+              // Gulf/strait names — smaller water bodies, only worth labeling once zoomed past
+              // the empire-wide view.
+              id: "sea-labels-minor",
+              type: "symbol",
+              source: "seas",
+              minzoom: 5.5,
+              filter: ["in", ["get", "kind"], ["literal", ["gulf", "strait"]]],
+              layout: {
+                "text-field": ["get", "name"],
+                "text-font": ["Noto Sans Regular"],
+                "text-size": ["interpolate", ["linear"], ["zoom"], 5.5, 10, 9, 13],
+                "text-letter-spacing": 0.06,
+                "text-transform": "uppercase",
+                "text-optional": true,
+                "text-allow-overlap": false,
+                "text-padding": 6,
+              },
+              paint: {
+                "text-color": P.seaLabel,
+                "text-halo-color": P.labelHalo,
+                "text-halo-width": 1.1,
+              },
+            },
           ],
         },
         center: initialView ? [initialView.lng, initialView.lat] : [12.4964, 41.9028],
@@ -205,6 +260,29 @@ export default function Map() {
       // No default NavigationControl — its bottom-right slot is CSS-hidden (custom attribution
       // lives there instead), and app/ZoomControl.tsx renders our own Google-style +/- buttons.
       (window as any).__map = map;
+
+      // Sea/gulf/strait labels are display-only per [1.5]'s English-first rule, so the Roman
+      // name (Mare Tyrrhenum, Fretum Gaditanum, ...) only surfaces on hover rather than on the
+      // map face itself.
+      const seaPopup = new maplibregl.Popup({ closeButton: false, closeOnClick: false, offset: 6 });
+      for (const layerId of ["sea-labels-major", "sea-labels-minor"]) {
+        map.on("mouseenter", layerId, (e) => {
+          if (!map) return;
+          map.getCanvas().style.cursor = "default";
+          const p: any = e.features?.[0]?.properties || {};
+          if (!p.name_latin) return;
+          seaPopup
+            .setLngLat(e.lngLat)
+            .setHTML(
+              `<div style="font: 12px Roboto, sans-serif; color: #5f6368; font-style: italic;">${escapeHtml(p.name_latin)}</div>`,
+            )
+            .addTo(map);
+        });
+        map.on("mouseleave", layerId, () => {
+          seaPopup.remove();
+          if (map) map.getCanvas().style.cursor = "";
+        });
+      }
 
       const kick = () => map && map.resize();
       setTimeout(kick, 100);
@@ -695,7 +773,9 @@ export default function Map() {
                         ? jerashEntry(rawName)
                         : site === "trier"
                           ? trierEntry(rawName)
-                          : undefined;
+                          : site === "merida"
+                            ? meridaEntry(rawName)
+                            : undefined;
           selectPoi(
             {
               id: `${site}-${p.osm_id}`,

@@ -1,0 +1,517 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.5,
+     34.6
+    ]
+   },
+   "properties": {
+    "id": "sea_mediterranean_sea",
+    "name": "Mediterranean Sea",
+    "name_latin": "Mare Nostrum",
+    "kind": "sea"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.6,
+     40.0
+    ]
+   },
+   "properties": {
+    "id": "sea_tyrrhenian_sea",
+    "name": "Tyrrhenian Sea",
+    "name_latin": "Mare Tyrrhenum",
+    "kind": "sea"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     17.2,
+     43.0
+    ]
+   },
+   "properties": {
+    "id": "sea_adriatic_sea",
+    "name": "Adriatic Sea",
+    "name_latin": "Mare Hadriaticum",
+    "kind": "sea"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     19.0,
+     38.1
+    ]
+   },
+   "properties": {
+    "id": "sea_ionian_sea",
+    "name": "Ionian Sea",
+    "name_latin": "Mare Ionium",
+    "kind": "sea"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.1,
+     38.6
+    ]
+   },
+   "properties": {
+    "id": "sea_aegean_sea",
+    "name": "Aegean Sea",
+    "name_latin": "Mare Aegaeum",
+    "kind": "sea"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     25.0,
+     36.1
+    ]
+   },
+   "properties": {
+    "id": "sea_sea_of_crete",
+    "name": "Sea of Crete",
+    "name_latin": "Mare Creticum",
+    "kind": "sea"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.7,
+     37.1
+    ]
+   },
+   "properties": {
+    "id": "sea_myrtoan_sea",
+    "name": "Myrtoan Sea",
+    "name_latin": "Mare Myrtoum",
+    "kind": "sea"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     26.7,
+     37.6
+    ]
+   },
+   "properties": {
+    "id": "sea_icarian_sea",
+    "name": "Icarian Sea",
+    "name_latin": "Mare Icarium",
+    "kind": "sea"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     28.2,
+     40.7
+    ]
+   },
+   "properties": {
+    "id": "sea_sea_of_marmara",
+    "name": "Sea of Marmara",
+    "name_latin": "Propontis",
+    "kind": "sea"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.0,
+     43.6
+    ]
+   },
+   "properties": {
+    "id": "sea_black_sea",
+    "name": "Black Sea",
+    "name_latin": "Pontus Euxinus",
+    "kind": "sea"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     36.8,
+     46.1
+    ]
+   },
+   "properties": {
+    "id": "sea_sea_of_azov",
+    "name": "Sea of Azov",
+    "name_latin": "Palus Maeotis",
+    "kind": "sea"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.6,
+     39.6
+    ]
+   },
+   "properties": {
+    "id": "sea_balearic_sea",
+    "name": "Balearic Sea",
+    "name_latin": "Mare Balearicum",
+    "kind": "sea"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.0,
+     43.5
+    ]
+   },
+   "properties": {
+    "id": "sea_ligurian_sea",
+    "name": "Ligurian Sea",
+    "name_latin": "Mare Ligusticum",
+    "kind": "sea"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.6,
+     40.1
+    ]
+   },
+   "properties": {
+    "id": "sea_sardinian_sea",
+    "name": "Sardinian Sea",
+    "name_latin": "Mare Sardum",
+    "kind": "sea"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     17.3,
+     40.0
+    ]
+   },
+   "properties": {
+    "id": "sea_gulf_of_taranto",
+    "name": "Gulf of Taranto",
+    "name_latin": "Sinus Tarentinus",
+    "kind": "gulf"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.98,
+     39.02
+    ]
+   },
+   "properties": {
+    "id": "sea_gulf_of_ambracia",
+    "name": "Gulf of Ambracia",
+    "name_latin": "Sinus Ambracius",
+    "kind": "gulf"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.6,
+     39.6
+    ]
+   },
+   "properties": {
+    "id": "sea_iberian_sea",
+    "name": "Iberian Sea",
+    "name_latin": "Mare Ibericum",
+    "kind": "sea"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.6,
+     35.96
+    ]
+   },
+   "properties": {
+    "id": "sea_strait_of_gibraltar",
+    "name": "Strait of Gibraltar",
+    "name_latin": "Fretum Gaditanum",
+    "kind": "strait"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.62,
+     38.22
+    ]
+   },
+   "properties": {
+    "id": "sea_strait_of_messina",
+    "name": "Strait of Messina",
+    "name_latin": "Fretum Siculum",
+    "kind": "strait"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     26.4,
+     40.22
+    ]
+   },
+   "properties": {
+    "id": "sea_dardanelles",
+    "name": "Dardanelles",
+    "name_latin": "Hellespontus",
+    "kind": "strait"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     29.02,
+     41.12
+    ]
+   },
+   "properties": {
+    "id": "sea_bosphorus",
+    "name": "Bosphorus",
+    "name_latin": "Bosporus Thracius",
+    "kind": "strait"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     51.5,
+     27.0
+    ]
+   },
+   "properties": {
+    "id": "sea_persian_gulf",
+    "name": "Persian Gulf",
+    "name_latin": "Sinus Persicus",
+    "kind": "gulf"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.8,
+     20.2
+    ]
+   },
+   "properties": {
+    "id": "sea_red_sea",
+    "name": "Red Sea",
+    "name_latin": "Mare Rubrum",
+    "kind": "sea"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     60.0,
+     15.0
+    ]
+   },
+   "properties": {
+    "id": "sea_arabian_sea",
+    "name": "Arabian Sea",
+    "name_latin": "Mare Erythraeum",
+    "kind": "sea"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -12.5,
+     36.2
+    ]
+   },
+   "properties": {
+    "id": "sea_atlantic_ocean",
+    "name": "Atlantic Ocean",
+    "name_latin": "Oceanus Atlanticus",
+    "kind": "ocean"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.0,
+     55.2
+    ]
+   },
+   "properties": {
+    "id": "sea_north_sea",
+    "name": "North Sea",
+    "name_latin": "Oceanus Germanicus",
+    "kind": "sea"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.6,
+     50.2
+    ]
+   },
+   "properties": {
+    "id": "sea_english_channel",
+    "name": "English Channel",
+    "name_latin": "Fretum Gallicum",
+    "kind": "strait"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5.2,
+     53.6
+    ]
+   },
+   "properties": {
+    "id": "sea_irish_sea",
+    "name": "Irish Sea",
+    "name_latin": "Mare Hibernicum",
+    "kind": "sea"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.1,
+     42.6
+    ]
+   },
+   "properties": {
+    "id": "sea_gulf_of_lion",
+    "name": "Gulf of Lion",
+    "name_latin": "Sinus Gallicus",
+    "kind": "gulf"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.0,
+     34.6
+    ]
+   },
+   "properties": {
+    "id": "sea_libyan_sea",
+    "name": "Libyan Sea",
+    "name_latin": "Mare Libycum",
+    "kind": "sea"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     36.05,
+     36.62
+    ]
+   },
+   "properties": {
+    "id": "sea_gulf_of_issus",
+    "name": "Gulf of Issus",
+    "name_latin": "Sinus Issicus",
+    "kind": "gulf"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.3,
+     38.32
+    ]
+   },
+   "properties": {
+    "id": "sea_gulf_of_corinth",
+    "name": "Gulf of Corinth",
+    "name_latin": "Sinus Corinthiacus",
+    "kind": "gulf"
+   }
+  }
+ ]
+}
