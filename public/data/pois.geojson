@@ -100,10 +100,11 @@
         "built": -46,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Civil law-court basilica on the south side of the Forum, begun by Caesar in 54 BCE, dedicated unfinished in 46 BCE, completed by Augustus and rededicated in 12 CE to Gaius and Lucius Caesar after a fire. Housed the centumviral court; standing in 117 CE (it burned again only in 283 CE under Carinus).",
+        "notes": "Civil law-court basilica on the south side of the Forum, begun by Caesar in 54 BCE, dedicated unfinished in 46 BCE, completed by Augustus and rededicated in 12 CE to Gaius and Lucius Caesar after a fire. Marble-faced brick columns divided the hall into five aisles beneath a nave measuring 82 by 18 meters, rising three stories within a building 101 by 49 meters overall. It housed the centumviral court, whose inheritance cases could run for days; bored litigants and spectators scratched some eighty gaming boards into the steps and pavement, including an eight-by-eight grid for a game resembling checkers. Still hosting trials in 117 CE, the basilica would not burn again until 283 CE under Carinus.",
         "sources": [
           "https://en.wikipedia.org/wiki/Basilica_Julia",
-          "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/Basilica_Julia.html"
+          "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/Basilica_Julia.html",
+          "https://www.jeffbondono.com/touristinrome/WaltersTours/BasilicaJuliaGameBoards.html"
         ],
         "confidence": "high",
         "ancient_sources": [
@@ -345,10 +346,11 @@
         "built": -121,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Original temple vowed 367 BCE, rebuilt 121 BCE by L. Opimius; completely rebuilt on a larger scale by the future emperor Tiberius between 7 BCE and 10 CE and rededicated as the Aedes Concordiae Augustae on 16 January 10 CE. This Tiberian-era temple was standing at the west end of the Forum in 117 CE.",
+        "notes": "Original temple vowed 367 BCE, rebuilt 121 BCE by L. Opimius; completely rebuilt on a larger scale by the future emperor Tiberius between 7 BCE and 10 CE and rededicated as the Aedes Concordiae Augustae on 16 January 10 CE. Pliny the Elder catalogued the treasures Tiberius installed inside: panel paintings by the Greek masters Zeuxis, Nikias, and Theoros, bronze statues of Hercules and Mercury, and Corinthian columns carved with leaping rams. Winged Victories stood at the pediment's corners, marking Tiberius and his brother Drusus's German campaigns, while two chambers in the podium likely stored treasure. This Tiberian-era temple, effectively an art gallery as much as a shrine, was standing at the west end of the Forum in 117 CE.",
         "sources": [
           "https://en.wikipedia.org/wiki/Temple_of_Concord",
-          "https://www.digitalaugustanrome.org/records/concordia-augusta-aedes/"
+          "https://www.digitalaugustanrome.org/records/concordia-augusta-aedes/",
+          "https://madainproject.com/temple_of_concord"
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Concord.jpg?width=800",
@@ -382,10 +384,11 @@
         "built": -715,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Traditionally the residence of the kings of Rome, later the official headquarters of the Pontifex Maximus and seat of the pontifical archives; rebuilt in stone/marble after a fire in 36 BCE by Cn. Domitius Calvinus. Standing and functioning as the pontifical office in 117 CE (in this period the emperor himself held the office of Pontifex Maximus).",
+        "notes": "Traditionally the residence of the kings of Rome, later the official headquarters of the Pontifex Maximus and seat of the pontifical archives, the Regia was rebuilt in stone and marble after a fire in 36 BCE by Cn. Domitius Calvinus. Excavations led by Giacomo Boni between 1899 and 1904 uncovered its trapezoidal tufo and travertine foundations, and a second campaign under archaeologist Frank Brown beginning in 1964 traced the building back through Iron Age huts on the same spot. Its western chamber, the sacrarium Martis, held the twelve sacred shields of Mars and his consecrated spears; twice a year the leaping Salii priests carried the shields in procession before returning them to their chapel. Standing and functioning as the pontifical office in 117 CE, when the emperor himself held the title of Pontifex Maximus.",
         "sources": [
           "https://en.wikipedia.org/wiki/Regia",
-          "https://www.digitalaugustanrome.org/records/regia/"
+          "https://www.digitalaugustanrome.org/records/regia/",
+          "https://sites.lsa.umich.edu/regia/"
         ],
         "confidence": "high",
         "ancient_sources": [
@@ -496,7 +499,7 @@
         "built": -509,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Chief state temple of Rome atop the Capitoline, originally dedicated 509 BCE; destroyed and rebuilt three times (83 BCE fire, Vitellian-era fire 69 CE, Titus-era fire 80 CE), with the final Domitianic reconstruction in gleaming Pentelic marble dedicated c. 82 CE. This was the temple standing in 117 CE, the terminus of every triumphal procession.",
+        "notes": "Chief state temple of Rome atop the Capitoline, originally dedicated 509 BCE; destroyed and rebuilt three times (83 BCE fire, Vitellian-era fire 69 CE, Titus-era fire 80 CE), with the final Domitianic reconstruction dedicated around 82 CE. Domitian raised it hexastyle in the Corinthian order with columns of gleaming Pentelic marble, a stone used nowhere else in Rome; its roof was sheathed in gilded tiles and its doors plated with gold, while sculpted reliefs filled the pediment and statues crowned its apex and gables. This was the temple standing in 117 CE, the terminus of every triumphal procession, where a victorious general laid his laurels in Jupiter's lap before the Senate and people of Rome.",
         "sources": [
           "https://en.wikipedia.org/wiki/Temple_of_Jupiter_Optimus_Maximus",
           "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/Aedes_Jovis_Capitolini.html"
@@ -1617,7 +1620,7 @@
         "built": 139,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "Ostia's most famous bath complex, its floors covered in black-and-white mosaics of Neptune's chariot, tritons and sea nymphs. Hadrian funded the project himself, but construction ran from about 117 to 138 CE and wasn't dedicated until 139, under Antoninus Pius. In 117 this block still held an older Domitianic bathhouse, whose cistern survives beneath the later palaestra.",
+        "notes": "Ostia's most famous bath complex sprawls across roughly 4,400 square meters, its floors covered in black-and-white mosaics of Neptune's chariot, tritons and sea nymphs. One room depicts Amphitrite riding a hippocamp; the frigidarium's mosaic shows Scylla, the ship-killing monster, ringed by marine deities. A palaestra west of the bathing rooms was bordered on three sides by a marble-columned portico for wrestling and exercise. Hadrian funded the project himself, but construction ran from about 117 to 138 CE and wasn't dedicated until 139, under Antoninus Pius. In 117 CE this block still held an older bathhouse from Domitian's reign, whose cistern survives beneath the later palaestra, the ground on which Hadrian's grand new complex would soon rise.",
         "sources": [
           "https://ostiaantica.cultura.gov.it/en/educational-panels-and-maps/larea-a-servizio-del-fiume/terme-di-nettuno-i-mosaici/",
           "https://www.ostia-antica.org/regio2/4/4-2.htm",
@@ -1815,7 +1818,7 @@
         "built": 139,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "A large bath complex just outside Ostia's Porta Marina gate, built to catch sea breezes on the road out toward the beach. Trajan broke ground around 110 CE, but construction dragged on through Hadrian's whole reign and wasn't dedicated until 138 or 139. It was still an active building site when Trajan died in 117.",
+        "notes": "A large bath complex just outside Ostia's Porta Marina gate, built to catch sea breezes on the road out toward the beach. Trajan broke ground around 110 CE, but construction dragged on through Hadrian's whole reign; a dedicatory inscription now in the Vatican Museums records that Hadrian funded the baths with two million sesterces before Antoninus Pius finished the job with further money and marble, dedicating it in December of 138 or 139. Its frigidarium held a polychrome mosaic floor, and the changing room's black-and-white mosaic depicted athletes at their exercises. Archaeologists have excavated the site in phases since Pietro Campana's dig of 1831-35, most recently in 1987. It was still an active building site when Trajan died in 117.",
         "sources": [
           "https://www.ostia-antica.org/regio4/10/10-1.htm",
           "https://www.culturalheritageonline.com/location-4888_Terme-di-Porta-Marina---Scavi-di-Ostia-Antica---Domus-Romana.php"
@@ -1869,10 +1872,11 @@
         "built": 80,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "A large official residence and administrative complex on the north bank of the Thames, built c. 80-100 CE, with offices, reception halls, private quarters and an ornamental pool; identified with the site now under Cannon Street station. Plausibly the residence/office of the governor of Britannia. Definitely standing and in continuous official use by 117 CE.",
+        "notes": "A large official residence and administrative complex on the north bank of the Thames, built c. 80-100 CE, with offices, reception halls, private quarters, and an ornamental pool; identified with the site now under Cannon Street station. Archaeologist Peter Marsden excavated the complex between 1961 and 1972 and reconstructed it as three wings enclosing a courtyard, spanning roughly 130 by 100 meters from Cannon Street down to the Thames-side wharves, and interpreted it as the governor's praetorium given its scale and fine masonry. Later reassessment by other scholars argued the site was instead several separate administrative buildings rather than one unified palace. Whichever the case, this was a substantial official complex in continuous use on the Thames waterfront in 117 CE.",
         "sources": [
           "https://knowyourlondon.wordpress.com/2023/11/22/roman-governors-palace/",
-          "https://londonguidedwalks.co.uk/cannon-street-station/"
+          "https://londonguidedwalks.co.uk/cannon-street-station/",
+          "https://londonist.com/2013/03/the-roman-civil-service-beneath-cannon-street-station"
         ],
         "confidence": "medium"
       }
@@ -2453,10 +2457,11 @@
         "built": 110,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "The longest of Lugdunum's four aqueducts, running roughly 86 kilometers from the Gier valley and crossing the Beaunant and Chaponost valleys on dramatic inverted-siphon bridges. A 2018 tree-ring study dated the Beaunant siphon's timber foundations to 110 CE, putting the engineering work under Trajan. By 117 it had been carrying water into Lugdunum for years.",
+        "notes": "The longest of Lugdunum's four aqueducts, running roughly 86 kilometers from the Gier valley to Fourvière hill. At Chaponost a run of 72 arches stretches over 550 meters, among the best-preserved arcades of any Roman aqueduct anywhere. Where the line crossed the Yzeron valley, the Beaunant siphon bridge spanned 270 meters at a height of 17 meters, carrying eleven or twelve lead pipes down a 122-meter drop across a total siphon length of 2,660 meters. A 2018 tree-ring study dated the Beaunant siphon's timber foundations to 110 CE, putting this engineering work under Trajan. By 117 CE the aqueduct had been carrying water into Lugdunum for years, its lead pipes still running full.",
         "sources": [
           "https://www.academia.edu/24047463/La_datation_de_laqueduc_du_Gier_%C3%A0_Lyon_%C3%A9tat_dune_question_controvers%C3%A9e",
-          "https://en.wikipedia.org/wiki/Aqueduct_of_the_Gier"
+          "https://en.wikipedia.org/wiki/Aqueduct_of_the_Gier",
+          "http://www.romanaqueducts.info/aquasite/gier1/index.html"
         ],
         "confidence": "low"
       }
@@ -3618,7 +3623,7 @@
         "built": 107,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Legio V Macedonica, veteran of Trajan's Dacian Wars, was transferred to Troesmis on the lower Danube in 107 CE to guard against the Roxolani Sarmatians and the Black Sea Greek cities' hinterland. It remained based there through 117 CE and until the 160s, though a vexillation was sent east for Trajan's Parthian campaign (115-117).",
+        "notes": "Legio V Macedonica, veteran of Trajan's Dacian Wars, marched to Troesmis on the lower Danube in 107 CE to guard against the Roxolani Sarmatians and the Black Sea Greek cities' hinterland. Its earthen and timber fortress covered most of the plateau overlooking the river, a stretch later subdivided between two separate stone fortresses once the legion moved on. Around its walls grew a canabae, a civilian settlement of traders and veterans' families governed by its own annually elected magistrates and quinquennial officials, attested in inscriptions the soldiers left behind. The legion remained based at Troesmis through 117 CE and on into the 160s, though a vexillation was pulled east that same year for Trajan's Parthian campaign.",
         "sources": [
           "https://en.wikipedia.org/wiki/Troesmis",
           "https://www.livius.org/articles/legion/legio-v-macedonica/ (cross-referenced via search synthesis)"
@@ -3851,7 +3856,7 @@
         "built": 114,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Legio X Gemina, long stationed at Noviomagus (Nijmegen) in Germania Inferior (71-103 CE), was transferred east to Aquincum in 103 CE and then to a new permanent fortress at Vindobona (Vienna) in 114 CE, where it remained the garrison through 117 CE and for centuries afterward, anchoring the Danube frontier opposite the Marcomanni and Quadi.",
+        "notes": "Legio X Gemina, long stationed at Noviomagus (Nijmegen) in Germania Inferior from 71 to 103 CE, was transferred east to Aquincum and then to a new permanent fortress at Vindobona (Vienna) in 114 CE, where it remained the garrison through 117 CE and for centuries afterward. The fortress covered some 20 hectares and housed roughly 6,000 men on the ground where Vienna's first district now stands. Around its walls grew the canabae legionis, a sprawling settlement of traders, veterans, and soldiers' families that would later be granted municipal rights as a full town in the early third century. In 117 CE the legion anchored the Danube frontier here, its watch posts facing the Marcomanni and Quadi across the river.",
         "sources": [
           "https://en.wikipedia.org/wiki/Legio_X_Gemina",
           "https://www.livius.org/articles/place/vindobona-vienna/ (cross-referenced via search synthesis)"
@@ -3956,10 +3961,11 @@
         "built": 106,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Legio XIII Gemina stayed behind in the newly conquered province after Trajan's Second Dacian War, founding its fortress at Apulum (modern Alba Iulia) in 106-108 CE and becoming the senior garrison of the new province. It remained Dacia's principal legion through 117 CE, even as sub-units were pulled for Trajan's simultaneous Parthian campaign (115-117).",
+        "notes": "Legio XIII Gemina stayed behind in newly conquered Dacia after Trajan's Second Dacian War, founding its fortress at Apulum, modern Alba Iulia, in 106-108 CE and becoming the province's senior garrison. Enclosing roughly 37 hectares behind walls some 750 by 500 meters, it ranks as the largest legionary fortress ever built in Romania. Excavations in its southeastern sector in 2010 uncovered a bronze breastplate scratched with a graffito of the goddess Victoria, alongside stamped roof tiles naming individual soldiers of the legion, the first such personal epigraphy found in Dacia. The fortress remained Dacia's principal legionary base through 117 CE, even as detachments were pulled away for Trajan's simultaneous Parthian campaign of 115-117.",
         "sources": [
           "https://en.wikipedia.org/wiki/Apulum_(castra)",
-          "https://www.livius.org/articles/legion/legio-xiii-gemina/ (cross-referenced via search synthesis)"
+          "https://www.livius.org/articles/legion/legio-xiii-gemina/ (cross-referenced via search synthesis)",
+          "https://apulumarchaeology.wordpress.com/2010/09/13/apvlvm-alba-carolina-citadel-st-francisc-de-paola-raveline-archaeological-project-southern-area-of-the-civil-settlement-belonging-to-the-xiiith-legion-geminas-camp-autumn-2010/"
         ],
         "confidence": "high",
         "ancient_sources": [
@@ -4267,7 +4273,7 @@
         "built": -30,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "The classis Alexandrina was established after Actium to guard Rome's most vital grain route, escorting the Alexandrian corn fleet across the Mediterranean and patrolling the Nile. Its ships moored in the Great Harbor below the royal quarter on the Lochias peninsula, close by the Pharos lighthouse that already marked the port for the ancient world.",
+        "notes": "Founded in 30 BCE after Actium to guard Rome's most vital grain route, the classis Alexandrina escorted the Alexandrian corn fleet across the Mediterranean and patrolled the Nile. Its Liburnian biremes moored in the Great Harbor below the royal quarter on the Lochias peninsula, close by the Pharos lighthouse that already marked the port for the ancient world. Command fell to a procurator paid 60,000 sesterces a year, one rung above ordinary fleet prefects, reflecting Alexandria's importance to the grain supply. Unusually for a Roman fleet, its rowers had to hold Alexandrian or full Roman citizenship rather than being drawn from the wider Egyptian population, a filter meant to keep the corn route in trusted hands. It still sailed unbroken in 117 CE.",
         "sources": [
           "https://www.romanports.org/en/the-ports/77-alexandria.html",
           "https://www.romanports.org/en/articles/ports-in-focus/527-alexandria-the-largest-port-of-all.html",
@@ -4350,7 +4356,7 @@
         "built": 10,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "The Alteburg fort on a low bluff south of Cologne was the headquarters of the classis Germanica, the Rhine fleet and the largest of Rome's provincial navies. More than a thousand marines were garrisoned here to patrol the river from the Rhine-Meuse delta up past the legionary fortresses, keeping the frontier's supply lines and communications running.",
+        "notes": "Founded in 12 BCE by Drusus at Castra Vetera to support his campaigns beyond the Rhine, the classis Germanica moved south around 30 CE to a new base at Alteburg, a fort on a low bluff south of Cologne, then the largest of Rome's provincial navies. More than a thousand marines were garrisoned here, organized into centuries under trierarchs and commanded overall by an equestrian praefectus classis answering directly to the provincial governor. Its standard vessel was the Liburnian galley, a fast two-banked warship built for river patrol rather than the open sea. The fleet policed the Rhine from the Rhine-Meuse delta up past the legionary fortresses, keeping supply lines and dispatches moving. In 117 CE it remained Rome's principal instrument of control over the river.",
         "sources": [
           "https://en.wikipedia.org/wiki/Classis_Germanica",
           "https://www.roemer.nrw/en/koln-alteburg",
@@ -4460,10 +4466,11 @@
         "built": 105,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Set on the northern edge of Barcombe Hill above Vindolanda, this signal post gave the Stanegate garrison a clear line of sight across the valley toward the fort below and toward the next tower down the frontier road. Excavations here in 1939 and 1950 uncovered the tower's stone footings inside an earlier Iron Age enclosure.",
+        "notes": "Set on the western end of an Iron Age hillfort above Vindolanda, this signal post let the Stanegate garrison relay messages by direct line of sight to Housesteads and Vindolanda, predating Hadrian's Wall by decades. Excavations in 1939 and again in 1950 uncovered a limestone-flagged rampart base 4.2 meters wide, cut directly into the older Iron Age earthwork it reused. The 1950 dig also found a small oven in the hillfort's northeast corner along with quantities of first-century Roman pottery and charcoal, evidence of a manned watch rather than a bare tower. In 117 CE the post remained active, part of the frontier's still-forming signal network, years before the Wall replaced it with a fixed line of stone.",
         "sources": [
           "https://co-curate.ncl.ac.uk/roman-signal-station-barcombe",
-          "http://heddonhistory.weebly.com/blog/barcombe-hill-above-vindolanda-roman-fort"
+          "http://heddonhistory.weebly.com/blog/barcombe-hill-above-vindolanda-roman-fort",
+          "https://historicengland.org.uk/listing/the-list/list-entry/1018536"
         ],
         "confidence": "medium"
       }
@@ -4692,7 +4699,7 @@
         "built": 105,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Boothby's fortlet overlooked the River Irthing from the north, built in the late first or early second century when the river itself still marked the edge of Roman control in this sector. A single ditch and clay rampart enclosed just under half a hectare, big enough for a small detachment watching the crossing below.",
+        "notes": "Boothby's fortlet, also known as Castle Hill, overlooked the River Irthing from a scarp edge, built in the late first or early second century when the river itself still marked the edge of Roman control in this sector. It belonged to the Stanegate frontier system alongside the confirmed fortlets at Haltwhistle Burn and Throp. A single ditch and clay rampart enclosed just under half a hectare, big enough for a small detachment watching the crossing below. Aerial photography revealed below-ground traces later confirmed by limited excavation under F.G. Simpson in 1933, though a landslip has since carried away part of the northern half of the site. In 117 CE the fortlet still anchored this stretch of the Stanegate line, five years before Hadrian's Wall would be built a few miles north and make the position obsolete.",
         "sources": [
           "https://historicengland.org.uk/listing/the-list/list-entry/1014585",
           "https://co-curate.ncl.ac.uk/boothby-roman-fort"
@@ -4960,9 +4967,11 @@
         "built": 90,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Mediana was among the oldest forts on the Raetian limes, raised in wood and earth under Domitian in the late first century. A military diploma confirms a cavalry cohort, the Cohors V Bracaraugustanorum, garrisoned here by 107 CE. Its stone rebuild, dated by inscription to 144 CE, came decades after the 117 CE snapshot.",
+        "notes": "Mediana was among the oldest forts on the Raetian limes, raised in wood and earth under Domitian in the late first century at the northern foot of the Hahnenkamm ridge, some six kilometers behind the frontier line it helped guard as a rear-guard post. Its ancient name survives on the Tabula Peutingeriana, the Roman road map that recorded troop stations across the empire. A military diploma confirms a cavalry cohort, the Cohors V Bracaraugustanorum, raised generations earlier in Lusitania, garrisoned here by 107 CE. Its stone rebuild, dated by inscription to 144 CE and garrisoned afterward by the Cohors III Thracum, came decades after the 117 CE snapshot, when the fort's timber-and-earth defenses and Lusitanian horsemen were still in place.",
         "sources": [
-          "https://edh.ub.uni-heidelberg.de/edh/geographie/G024466"
+          "https://edh.ub.uni-heidelberg.de/edh/geographie/G024466",
+          "https://de.wikipedia.org/wiki/Kastell_Gnotzheim",
+          "https://www.deutsche-limeskommission.de/en/orl/raetian-limes-bavaria/48-gnotzheim/"
         ],
         "confidence": "medium"
       }
@@ -5042,10 +5051,11 @@
         "built": 105,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Ad Maiores was built in 104 or 105 CE on the orders of Minicius Natalis, legate of the Third Augustan Legion, to anchor the desert edge of Numidia's frontier southeast of the Aures mountains. It marks the Trajanic-era origin of the fortified line that would later be extended and consolidated as the Fossatum Africae.",
+        "notes": "Ad Maiores was built in 104 or 105 CE on the orders of Minicius Natalis, legate of the Third Augustan Legion, to anchor the desert edge of Numidia's frontier southeast of the Aures mountains at Henchir Besseriani, on the Saharan piedmont of the Nemencha massif some five kilometers south of the oasis of Negrine. Two inscriptions recorded in the Corpus Inscriptionum Latinarum, CIL VIII 2478-2479, once stood on triumphal arches, one near the camp's west gate and another at a gate of the civilian settlement that grew up beside it. It marks the Trajanic-era origin of the fortified line that would later be extended and consolidated as the Fossatum Africae, and in 117 CE its garrison still watched the same stretch of desert edge.",
         "sources": [
           "https://journals.openedition.org/encyclopedieberbere/1701?lang=en",
-          "https://en.wikipedia.org/wiki/Fossatum_Africae"
+          "https://en.wikipedia.org/wiki/Fossatum_Africae",
+          "https://vici.org/vici/62640/"
         ],
         "confidence": "low"
       }
@@ -5230,7 +5240,7 @@
         "built": 138,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "Praetorium reinforced the Limes Alutanus roughly midway up the Olt valley, garrisoned by a unit of couriers and border guards known as the numerus Burgariorum et Veredariorum. Construction is dated to 138 CE, two decades after Trajan's death, so it postdates this snapshot even though it filled a gap in the same Trajanic-era frontier line.",
+        "notes": "Praetorium reinforced the Limes Alutanus roughly midway up the Olt valley, garrisoned by the numerus Burgariorum et Veredariorum, a unit of couriers and border guards. Built in 138 CE, it was strengthened with two additional corner towers two years later, and a civilian settlement with its own bathhouse grew up alongside it by the third century. The Olt has since eroded away roughly two-thirds of the fort, and what survives sits barely half a kilometer from its sister post, Praetorium II at Racovita. In 2024 UNESCO inscribed the site as part of the Frontiers of the Roman Empire World Heritage listing for Dacia. Construction here postdates Trajan's death by two decades, so despite anchoring the same Trajanic-era frontier line, it did not yet exist in 117 CE.",
         "sources": [
           "https://en.wikipedia.org/wiki/Praetorium_I_(Cop%C4%83ceni)"
         ],
@@ -5256,9 +5266,10 @@
         "built": 138,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "Arutela stood where the Olt river valley narrows into the Carpathian foothills, a strongpoint on the Limes Alutanus later famous for its attached bath complex. It was founded in 138 CE, during Hadrian's reign, so despite anchoring the same river-line frontier that Trajan began, it did not yet exist at the 117 CE snapshot.",
+        "notes": "Arutela stood on the Olt river's left bank near modern Calimanesti-Caciulata, a strongpoint on the Limes Alutanus where the valley narrows into the Carpathian foothills. It was built in 137-138 CE on the orders of Titus Flavius Constans, procurator of Dacia Inferior, and garrisoned by a numerus of Syrian archers recruited for their skill with the composite bow. Excavators uncovered an attached bath complex and a small chamber first identified as a Mithraeum, though it lacked the altars typical of Mithraic sanctuaries and more likely served another cult purpose. Despite anchoring the same river-line frontier that Trajan had begun, Arutela did not yet exist at the 117 CE snapshot; the valley crossing it would guard still lay twenty years in the future.",
         "sources": [
-          "https://en.wikipedia.org/wiki/Arutela"
+          "https://en.wikipedia.org/wiki/Arutela",
+          "https://visit-valcea.ro/en/monumente/castrul-roman-arutela/"
         ],
         "confidence": "low"
       }
@@ -6373,10 +6384,11 @@
         "built": -27,
         "destroyed": 250,
         "extant_117ce": true,
-        "notes": "Augustan-era coins turned up alongside Roman wells and Archimedes-screw drainage systems at this pyrite-belt mine, the second-largest mining basin in Huelva province after Rio Tinto. Copper, iron, and silver came out of the same red-stained ground worked here for nineteen more centuries after Rome fell silent. Germanic invasions, not exhaustion, eventually shut the Roman works down.",
+        "notes": "Augustan-era coins turned up alongside Roman wells and Archimedes-screw drainage systems at this pyrite-belt mine, the second-largest mining basin in Huelva province after Rio Tinto. Slaves worked the galleries in punishing conditions, laboring by lamplight in heat and dust, some spending their entire lives underground turning the tiered water wheels, or noria, that lifted drainage water up through as many as nine levels to an outflow adit. Spain's mines were the empire's single largest silver source, feeding an output that peaked at roughly 200 tons of silver a year across the whole Roman world in the first and second centuries CE. Copper, iron, and silver came out of the same red-stained ground worked here for nineteen more centuries after Rome fell silent. Germanic invasions, not exhaustion, eventually shut the Roman works down.",
         "sources": [
           "https://en.wikipedia.org/wiki/Tharsis-La_Zarza_mining_basin",
-          "https://www.andalucia.com/province/huelva/el-andevalo/tharsis/home"
+          "https://www.andalucia.com/province/huelva/el-andevalo/tharsis/home",
+          "https://www.visit-andalucia.com/roman-mining-rio-tinto/"
         ],
         "confidence": "medium",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Embalse_y_escombreras,_Tharsis_2.jpg?width=800",
@@ -8951,10 +8963,11 @@
         "built": 9,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "Germanic tribes led by Arminius ambushed three Roman legions marching through the forest, wiping out roughly 20,000 men over three days. Governor Varus fell on his own sword rather than be captured. Rome never again pushed its permanent frontier east of the Rhine. Emperor Augustus reportedly banged his head on doors crying, 'Quintili Vare, legiones redde!'",
+        "notes": "Germanic tribes led by Arminius ambushed three Roman legions marching through the forest, wiping out roughly 20,000 men over three days. Governor Varus fell on his own sword rather than be captured. Excavations at Kalkriese since 1987 have recovered some 5,000 to 6,000 Roman objects and 2,000 coins, including eight gold pieces found clustered together in 2016, likely spilled from a dying officer's leather pouch, and coins bearing the countermark VAR that Varus himself had issued. A silvered iron cavalry mask, its face serene and eyes closed, once graced a parade helmet rather than battle gear. Rome never again pushed its permanent frontier east of the Rhine. Emperor Augustus reportedly banged his head on doors crying, 'Quintili Vare, legiones redde!'",
         "sources": [
           "https://en.wikipedia.org/wiki/Battle_of_the_Teutoburg_Forest",
-          "https://en.wikipedia.org/wiki/Kalkriese"
+          "https://en.wikipedia.org/wiki/Kalkriese",
+          "https://www.forbes.com/sites/drsarahbond/2016/07/01/give-me-back-my-legions-discovery-of-gold-coins-confirm-battle-of-teutoburg-forest-site/"
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Varus01.jpg?width=800",
@@ -8994,7 +9007,7 @@
         "built": 83,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "Governor Agricola pushed deep into Caledonia and crushed a coalition of Caledonian tribes led by Calgacus, killing a claimed 10,000 warriors for only 360 Roman dead. It was the northernmost Roman battlefield victory in Britain. Rome still never permanently held the ground it won that day. The site itself remains unidentified among dozens of candidate hills.",
+        "notes": "Governor Agricola pushed deep into Caledonia and crushed a coalition of Caledonian tribes led by Calgacus, killing a claimed 10,000 warriors for only 360 Roman dead. It was the northernmost Roman battlefield victory in Britain. Tacitus, Agricola's own son-in-law, put a defiant speech in Calgacus's mouth before the fighting began, condemning Roman conquest in words that still echo: 'where they make a desert, they call it peace.' Rome still never permanently held the ground it won that day, and the site itself remains unidentified among dozens of candidate hills across northeast Scotland. By 117 CE, three decades on, the empire's real frontier in Britain sat far to the south, nowhere near the battlefield's forgotten ground.",
         "sources": [
           "https://en.wikipedia.org/wiki/Battle_of_Mons_Graupius",
           "https://www.worldhistory.org/article/776/tacitus-account-of-the-battle-of-mons-graupius/"
@@ -9134,10 +9147,11 @@
         "built": -48,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "Julius Caesar, badly outnumbered, crushed Pompey the Great's larger army by anticipating a cavalry flanking move and countering it with hidden reserve troops. Pompey's forces suffered roughly 6,000 dead against Caesar's few hundred. Pompey fled to Egypt, where he was murdered on arrival. The battle effectively decided the Roman civil war and Caesar's path to dictatorship.",
+        "notes": "Julius Caesar, outnumbered roughly two to one, crushed Pompey the Great's larger army on 9 August 48 BCE by anticipating a cavalry flanking move and countering it with a hidden fourth line of veteran cohorts posted behind his right flank. Caesar fielded nine legions, worn thin by years of campaigning, against Pompey's fresher 45,000 legionaries backed by 7,000 cavalry. Pompey's forces suffered roughly 6,000 dead against Caesar's few hundred, and thousands more surrendered in the following days. Pompey fled to Egypt, where he was murdered on arrival and presented to Caesar as a trophy. The battle effectively decided the Roman civil war and Caesar's path to dictatorship, a settlement still shaping the empire Trajan ruled in 117 CE.",
         "sources": [
           "https://en.wikipedia.org/wiki/Battle_of_Pharsalus",
-          "https://www.worldhistory.org/article/697/the-battle-of-pharsalus/"
+          "https://www.worldhistory.org/article/697/the-battle-of-pharsalus/",
+          "https://the-past.com/feature/the-battle-of-pharsalus-9-august-48-bc/"
         ],
         "confidence": "medium",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Apollonio_di_Giovanni_-_The_Battle_of_Pharsalus_and_the_Death_of_Pompey_-_1974.394_-_Art_Institute_of_Chicago.jpg?width=800",
@@ -10372,11 +10386,13 @@
         "built": -12,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "A flat-bottomed river barge sank in the Po delta lagoon near Comacchio around 12 BCE, carrying 102 lead ingots weighing 3.1 tons, boxwood logs, and amphorae of wine and oil. Waterlogged mud preserved leather sandals, a soldier's kit, and a bronze statuette of Hercules and Nereus. Drainage workers struck the hull in 1980.",
+        "notes": "A flat-bottomed river barge, its hull about 21 meters long and 5.6 meters wide, sank in the Po delta lagoon near Comacchio around 12 BCE while ferrying 102 lead ingots weighing 3.1 tons, 28 boxwood logs, and amphorae of wine and oil. Waterlogged mud in the Valle Ponti lagoon preserved leather sandals, a soldier's kit, a wooden shovel, and a bronze statuette of Hercules wrestling the sea god Nereus. Drainage workers struck the hull in 1980; the Soprintendenza Archeologica excavated it fully between 1986 and 1989. Scholars nicknamed the find Fortuna Maris, and its timbers and cargo now fill Comacchio's Museo Delta Antico. In 117 CE the wreck itself lay already buried and forgotten beneath a century of silt.",
         "sources": [
           "https://imperiumromanum.pl/en/curiosities/wreck-of-roman-ship-from-comacchio/",
           "https://link.springer.com/article/10.1007/s12520-021-01430-0",
-          "https://www.ferraraterraeacqua.it/en/comacchio/discover-the-area/art-and-culture/museums-and-galleries/museum-of-the-roman-ship"
+          "https://www.ferraraterraeacqua.it/en/comacchio/discover-the-area/art-and-culture/museums-and-galleries/museum-of-the-roman-ship",
+          "https://www.scubaportal.it/fortuna-maris-relitto-romano-comacchio/",
+          "https://www.museodeltaantico.com/en/"
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Museo_Delta_Antico_(Comacchio)_03_Eracle_e_Nereo.jpg?width=800",
@@ -10482,9 +10498,10 @@
         "built": -50,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "Dramont A sank in the reef-strewn waters off Saint-Raphael around 50 BCE, one of more than ten wrecks charted in the Dramont anchorage alone. It carried Italian wine amphorae alongside fine Campanian black-glazed tableware bound for Roman Gaul. Archaeologists label the Dramont wrecks alphabetically from A through J for the density of losses here.",
+        "notes": "Dramont A sank in the reef-strewn waters off Saint-Raphael around 50 BCE, one of more than ten wrecks charted in the Dramont anchorage alone. Diver Claude Santamaria discovered the site in 1956 and worked it until 1958; a 1959 campaign led by A. Sivirine of the French Underwater Research Office recovered much of the cargo and made the first study of the roughly 20-meter hull, with further excavation resuming in 1971-1974. The ship carried Italian wine amphorae alongside fine Campanian black-glazed tableware bound for Roman Gaul. Archaeologists label the Dramont wrecks alphabetically from A through J for the density of losses here, and by 117 CE this same stretch of coast had already claimed generations of merchant vessels making the run toward Massalia and Narbo.",
         "sources": [
-          "https://www.saint-raphael.com/en/discover/the-sea/the-underwater-world/shipwreck-map"
+          "https://www.saint-raphael.com/en/discover/the-sea/the-underwater-world/shipwreck-map",
+          "https://www.persee.fr/doc/ran_0557-7705_1975_num_8_1_977"
         ],
         "confidence": "medium"
       }
@@ -10534,9 +10551,10 @@
         "built": -110,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "A small 10-meter coastal trader wrecked off Cap Camarat near Saint-Tropez around 110 BCE, its hold packed with Dressel 1C wine amphorae. Only a compact 6 by 2 meter patch of hull survived, lashed together in the mortise-and-tenon style typical of Republican-era shipbuilding. It represents the modest coastal traffic that fed wine along the Provencal coast.",
+        "notes": "A small coastal trader about 10 meters long wrecked off Cap Camarat near Saint-Tropez around 110 BCE, its hold packed with Dressel 1C wine amphorae. Divers Jean-Pierre Joncheray and Rochier surveyed the site, sitting in 6 to 12 meters of water, and published their findings on the hull and the maker's stamps pressed into the amphora handles in 1976. Only a compact 6 by 2 meter patch of hull survived, its keel, planking strakes, and alternating full and half floor-timbers lashed together in the mortise-and-tenon style typical of Republican-era shipbuilding. It represents the modest coastal traffic that fed wine along the Provencal coast, and remains an active dive site today, followed by recreational divers along the same route archaeologists once mapped.",
         "sources": [
-          "https://museum.wa.gov.au/maritime-archaeology-db/bibliography/mediterranean-hull-types-compared-1-la-roche-fouras"
+          "https://museum.wa.gov.au/maritime-archaeology-db/bibliography/mediterranean-hull-types-compared-1-la-roche-fouras",
+          "https://www.divessi.com/en/mydiveguide/divesite/roche-fouras-france-312356"
         ],
         "confidence": "medium"
       }
