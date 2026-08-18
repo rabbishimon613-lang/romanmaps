@@ -991,6 +991,12 @@
             "work": "dedicatory inscription",
             "ref": "M AGRIPPA L F COS TERTIVM FECIT",
             "note": "The Pantheon's porch frieze names Marcus Agrippa, consul for the third time, as builder - the inscription Hadrian kept from Agrippa's original temple when he rebuilt the Pantheon around it."
+          },
+          {
+            "author": "Cassius Dio",
+            "work": "Roman History",
+            "ref": "53.27.2",
+            "note": "On Agrippa's original building of 25 BCE and the argument over its name - either because it held images of many gods, or because its vault resembles the heavens."
           }
         ]
       }
@@ -5290,42 +5296,6 @@
             "ref": "c. 4-7 CE",
             "quote": "C. Caesari Augusti f. co(n)s.; L. Caesari Augusti f. co(n)s. designato; principibus iuventutis",
             "note": "Dedicated to Gaius and Lucius Caesar, Augustus's grandsons and heirs. The bronze letters are long gone; the text was reconstructed from the nail-holes that once held them."
-          }
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.4768,
-          41.8986
-        ]
-      },
-      "properties": {
-        "id": "poi_pantheon_rome",
-        "category": "temple",
-        "name_latin": "Pantheum",
-        "name_english": "Pantheon (Agrippan)",
-        "province": "Italia",
-        "modern_location": "Rome, Italy",
-        "built": -27,
-        "destroyed": null,
-        "extant_117ce": false,
-        "notes": "Agrippa's Pantheon of 27 BCE burned in 80 CE, and the temple rebuilt on the same ground burned again around 110 CE after a lightning strike. So nothing complete stands here in August 117 CE: the site holds scaffolding, stacked brick and the rising drum of the great domed rotunda begun under Trajan, which will not be dedicated for another decade. The circular building the name calls to mind belongs to Hadrian's reign rather than Trajan's, though it still carries Agrippa's name across the front.",
-        "sources": [
-          "https://commons.wikimedia.org/"
-        ],
-        "confidence": "high",
-        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roma-pantheon-frontfacade.jpg?width=800",
-        "image_credit": "Pantheon (later Hadrianic rebuild) · Wikimedia Commons",
-        "ancient_sources": [
-          {
-            "author": "Cassius Dio",
-            "work": "Roman History",
-            "ref": "53.27.2",
-            "note": "On Agrippa's building of 25 BCE and the argument over the name — either because it held images of many gods, or because its vault resembles the heavens."
           }
         ]
       }

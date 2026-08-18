@@ -22,6 +22,14 @@ module.exports = {
         destination: "https://romanmaps.org/:path",
         permanent: true,
       },
+      // `poi_pantheon_rome` was a duplicate of `poi_pantheon` (same building, 8m apart) retired
+      // in pois.geojson under [12-FIX-3] — this keeps its already-generated/indexed URL landing
+      // somewhere real instead of a bare 404.
+      {
+        source: "/place/pantheon_rome",
+        destination: "/place/pantheon",
+        permanent: true,
+      },
     ];
   },
 };
