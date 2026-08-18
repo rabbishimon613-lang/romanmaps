@@ -7,6 +7,141 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 30 — 2026-08-18 (this shift's own prompt claimed "Shift 3 of four")
+
+**Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt carried
+"Shift 3 of four", but `SHIFT_LOG` was 29 real shifts deep at session start, so this entry
+continues as Shift 30. The session started detached at HEAD with `main` pointing to an older
+commit than `origin/main`; `git fetch origin main` + `git checkout -B main origin/main` put the
+local branch on the real tip cleanly, no rebase conflicts. Read `SHIFT_BRIEF.md` and `BOARD.md`
+in full per the brief's own instruction.
+
+**Axis 1 (more cities) reconfirmed blocked** via a live `curl` test against the proxy before doing
+anything else: `overpass-api.de`, `en.wikipedia.org`, and `commons.wikimedia.org` all returned an
+explicit `CONNECT tunnel failed, response 403` / `connect_rejected` (confirmed via
+`$HTTPS_PROXY/__agentproxy/status`'s `recentRelayFailures`), the same class of block every recent
+shift has documented. WebSearch remained the only working research channel and is what every data
+batch below used.
+
+Claimed two fresh board tickets (`git pull --rebase` first, per protocol): `[09-P2-8]` how-we-know
+(`add`, topmost unclaimed unblocked `add`) and `[02-P0-2]` coastline (`polish`, topmost unclaimed
+`polish` whose scope was actually deliverable — `[02-P0-1]` terrain, nominally higher priority,
+needs an external hillshade raster source this sandbox can't fetch, so it was skipped with a note
+rather than claimed). `[06-P0-2]` curate-buildings and `[10-P0-3]` flagship-depth are both standing
+tasks that don't need a claim — picked the next site (Palmyra, checked its actual named-feature
+count first per the board's own repeated lesson about stale claims) and the next thinnest-notes
+batch respectively.
+
+### Board — a full 1 `add` : 2 `deepen` : 1 `polish` cycle, then Track B
+
+**`[09-P2-8]` how-we-know (`add`)** — new `/how-we-know`, a public methodology page (mirrors
+`/hub/[slug]`'s parchment-card styling) explaining the 117 CE snapshot rule and its judgment
+calls, where the base geography comes from (Itiner-e, DARE, Pelagios, Natural Earth, OSM), the
+difference between the "Sources" and "In ancient writing" citation blocks, what
+`confidence: high/medium/low` means, the image-sourcing standard, and an honest accounting of
+what's incomplete. Every number on the page — place count, % with a modern/ancient source,
+high-confidence citation coverage, % with an image, the live thin-description count — is computed
+from `pois.geojson` at build time rather than hand-typed, the same argument `[15-P1-4]` metrics
+made for going from a hand-kept table to a generated one. Wired into `sitemap.ts`; linked from
+`EpochModal.tsx`'s existing "Why 117 CE?" popup as "How do we source the rest of the map?"
+(`target="_blank"` so the live map session isn't lost). Verified with Playwright at 1280×900 and
+375×812 dark — clean render both viewports, no client error (a first attempt against a *stale*
+running server showed one; killing and restarting the production server after the rebuild fixed
+it, a self-inflicted testing artifact rather than a real bug — worth flagging for future shifts:
+always restart `next start` after a rebuild before trusting a Playwright result against it).
+
+**`[06-P0-2]` curate-buildings, Palmyra (`deepen`)** — 12 entries in `app/palmyraDescriptions.ts`,
+the ninth site. Checked the actual named-feature count first (14 total, Arabic + English OSM
+tags) — a much smaller, denser set than a living modern city's OSM dump (Trier's 116 tags for 12
+real hits), since Palmyra's monuments are famous individually rather than numerous. The split by
+century is clean: the Temple of Bel (dedicated 32 CE), the Temple of Nabu (~80 CE), and the
+Agora/Basilica market complex (Flavian-Trajanic) were already standing in 117 CE; the Great
+Colonnade's Tetrapylon, the Theatre and its gate, the Temple of Baalshamin (dedicated for
+Hadrian's actual 129 CE visit to the city — 12 years past this map's snapshot), and the Caesareum
+are honestly `extant_117ce:false`; the Baths of Diocletian and both church buildings are 3rd-6th
+century, generations later still. Two candidates deliberately skipped rather than guessed: a bare
+"market" tag (every source treats it as a synonym for the Agora itself, not a separate structure)
+and معبد بعل ("Temple of Baal"), almost certainly the same temple as معبد بل (Temple of Bel) under
+an alternate transliteration of the same name — no source describes a second, distinct Baal
+temple at Palmyra. Researched via a background WebSearch agent (Wikipedia, madainproject.com,
+Getty, academia.edu, Smarthistory, the French Ministry of Culture's own excavation pages),
+personally reviewed before merging.
+
+**`[10-P0-3]` flagship-depth, batch 3 (`deepen`)** — 26 more of the thinnest `notes` fields
+(53-59 words, all already carrying real sources from earlier batches) expanded to ~100-130 words
+each via two parallel WebSearch research passes, worst-first: three shipwrecks, the Basilica
+Julia/Temple of Concord/Temple of Jupiter Optimus Maximus/Regia/two Ostia bathhouses (Rome-Forum-
+and-Ostia-famous but thin), five frontier forts/fortresses (Troesmis, Apulum, Vindobona, Boothby,
+Gnotzheim, Ad Maiores, Arutela), two naval bases, a signal tower, a mine, and three classical
+battles (Teutoburg Forest, Mons Graupius, Pharsalus). Every record picked up at least one
+genuinely new researched fact beyond what the existing text already said — a named excavator, an
+exact measurement, a specific inscription or date — rather than padding; sources merged, not
+replaced. Depth 87.8% → 93.4%, thin tail 57 → 31.
+
+**`[02-P0-2]` coastline (`polish`)** — a quiet line traced along the land polygon's own edge (new
+`coastline` layer + palette token in both light/dark), drawn above the sea-mask/ancient-sea fills
+so land and sea meet with a visible stroke instead of a hard color boundary, matching how Google
+Maps' own coastline reads. Verified with Playwright at 1280×900 light and 375×812 dark — visible
+in both as a subtle darker line following every coast, no regression to the phone chrome.
+
+**Province overlay (Track B, FEATURE_BACKLOG.md P1)** — click a province, at empire/region-level
+zoom, to highlight it and see a panel with its governor, legions stationed, and cities on the
+map. A prior shift's own note on this exact item had scoped it out as needing new per-province
+research (`provinces.geojson` then carried only a bare `name` field) — by the time this run
+picked it back up, `[14-P1-4]` province-pages (`app/provinces.ts`, capital/blurb/status),
+`[07-P1-4]` governors (`public/data/politics.geojson`), and the legion locator (`app/legions.ts`)
+had all shipped independently in between, so the feature became a pure lens over data that
+already exists, no new atomic research needed. New `app/useProvincePanel.ts` (a `usePoiPanel.ts`-
+style external store) and `app/ProvincePanel.tsx` (same screen slot and visual language as
+`PlaceDetails.tsx`). Click handler zoom-gated at z≤7.5 — `provinces-fill` covers virtually all
+land, so an ungated handler would pop a panel on every close-up click meant for measuring,
+routing, or browsing a city, which invariant 0's "the map has to look like Google Maps" rule would
+never accept. Mutually exclusive with the Place details panel (same pattern as Directions/the
+ruler): selecting a province clears any open place and vice versa, wired through a small
+`registerPoiSelectedSideEffect` callback slot added to `usePoiPanel.ts` rather than a circular
+import between the two stores. Also skipped outright while the ruler or Directions is capturing
+clicks for its own session — new `isRulerActive()`/`isDirectionsActive()` non-React accessors on
+those two stores, same pattern as the existing `getSelectedPoi()`.
+
+**A real, harder-than-expected finding surfaced while verifying this with Playwright, worth its
+own paragraph**: this sandbox's well-documented `demotiles.maplibre.org` block turns out to gate
+far more than glyph rendering. `app/Map.tsx`'s entire Phase 2 onward — roads, curated POIs, every
+site's building layer, all ~30 subsequent data phases — runs inside one single
+`map.on("load", async () => {...})` callback (pre-existing architecture, confirmed via `git show`
+against the commit at session start — not something this shift introduced). In this sandbox,
+MapLibre's "load" event itself never fires when the initial style's glyph fetch is permanently
+blocked: `map.loaded()` flips `true` within about a second of construction, but a freshly-bound
+`map.on("load", ...)` listener still never fires, confirmed waiting past 3 minutes across several
+separate test runs, layer count frozen at exactly the 13 layers Phase 1's ungated initial style
+defines and never growing. That means **no cloud shift, in this exact sandbox condition, can
+Playwright-verify anything past Phase 1 by actually clicking the live map** — not a regression
+from this session's changes (the gating pattern predates it), and not specific to the province
+panel either; the same block would prevent verifying a click on `pois-dot`, any site's building
+layer, or anything else added after Phase 1. Diagnosed methodically rather than assumed: confirmed
+the click→resolve→highlight logic is correct by binding the exact same handler code directly to
+the live map instance (bypassing the load-gate entirely) and firing a real synthetic click, which
+correctly resolved "Aquitania" and would have called `selectProvince()` — the logic works, only
+the live end-to-end click path is unreachable from this sandbox. Wrote this up as a sharpened
+finding on the already-open `[02-P0-4]` self-host-glyphs ticket, since fixing that ticket (or
+gating Phase 2 on something other than a `"load"` event that depends on an unreachable domain)
+would fix both the labels-disappearing failure mode it already named and this harder one.
+Structural verification was still done in full: production build succeeds cleanly, `tsc --noEmit`
+clean, `npm run validate` clean (0 errors, the same 14 reviewed warnings), and the new
+`provinces-selected-fill`/`provinces-selected-line` layers confirmed present and valid in the
+live style via `map.getStyle().layers`.
+
+### Next shift
+
+Board is clean, ratio owed nothing at session end — full 1:2:1 cycle plus a real Track B ship.
+`[02-P0-4]` self-host-glyphs just got a sharper, higher-value case made for it (see above) —
+worth strong consideration for whoever's next, both for production robustness and to unblock full
+Playwright verification in this sandbox. `[06-P0-2]` curate-buildings has 31 sites left (Timgad
+was already flagged stale by an earlier shift — verify a candidate's actual named-feature count
+before claiming, same lesson repeated across several recent shifts now). `[10-P0-3]`
+flagship-depth has 31 thin descriptions left. No unclaimed P0 `add` exists on the board.
+
+---
+
 ## Shift 29 — 2026-08-18 (this shift's own prompt claimed "Shift 2 of four")
 
 **Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt carries

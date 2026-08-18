@@ -192,7 +192,20 @@ to prevent. Building locally to *test* your own work is expected and fine.
       landing on the right panel.
 - [ ] `[02-P0-1]` **`terrain`** `polish` — Hillshade/relief under the land fill.
 - [ ] `[02-P0-4]` **`self-host-glyphs`** `fix` — Stop depending on `demotiles.maplibre.org`;
-      a single point of failure that would erase every label on the map.
+      a single point of failure that would erase every label on the map. **Sharper finding
+      2026-08-18, cloud shift 30**: in this sandbox, where that domain is blocked, the blast
+      radius is bigger than "labels disappear" — `app/Map.tsx`'s entire Phase 2 onward (roads,
+      POIs, every site's building layer, all ~30 subsequent phases) runs inside one
+      `map.on("load", async () => {...})` callback, and MapLibre's "load" event itself never
+      fires when the initial style's glyph fetch is permanently blocked (confirmed: `map.loaded()`
+      flips true within ~1s of construction, but a freshly-bound `map.on("load", ...)` listener
+      still never fires, even 3+ minutes later) — so a live user in that condition would see the
+      base map (land/sea/provinces/coastline) and nothing else, forever, not a degraded map with
+      missing text. Self-hosting glyphs (or gating Phase 2 on something other than "load", e.g.
+      `"idle"` with a timeout fallback) fixes both the labels-disappear case this ticket already
+      named AND this harder failure mode. Also blocks cloud-shift Playwright verification of
+      anything past Phase 1 whenever this exact domain is unreachable from the sandbox — worth
+      knowing before assuming a "the map never loaded" test result is a real regression.
 - [x] `[09-P0-1]` **`ancient-sources`** `deepen` — `ancient_sources[]` populated for every
       `confidence: high` POI. **Standing task — never "done", always available.**
       *Batch 1 done 2026-08-16: 108 of 221 high-confidence POIs (48.9%), 122 citations, plus an
@@ -355,6 +368,19 @@ to prevent. Building locally to *test* your own work is expected and fine.
       guess) and the "Arch of Trajan" (Tiberian, renamed after its real inscription was lost). One
       candidate ("Termas romanas") skipped — its coordinates don't match any bath complex this
       research could confidently identify. 32 sites still open for the standing task.*
+      *Palmyra done 2026-08-18 by cloud shift 30: 12 entries in `app/palmyraDescriptions.ts`, the
+      ninth site — the OSM extract carries only 14 named features total (famous individually
+      rather than numerous, the opposite shape from a living modern city's dump), keyed in Arabic
+      and English. Palmyra's monuments split cleanly by century: the Temple of Bel (dedicated 32
+      CE), the Temple of Nabu (~80 CE), and the Agora/Basilica market complex (Flavian-Trajanic)
+      were already standing in 117 CE; the Tetrapylon, the Theatre, the Temple of Baalshamin
+      (dedicated for Hadrian's 129 CE visit — 12 years off the snapshot), and the Caesareum are
+      honestly `extant_117ce:false`, and the Baths of Diocletian and both churches are 3rd-6th
+      century. Two candidates left out rather than guessed: "market" (every source treats it as a
+      synonym for the Agora, not a separate structure) and معبد بعل ("Temple of Baal"), almost
+      certainly the same temple as معبد بل (Temple of Bel) under an alternate transliteration — no
+      source describes a second, distinct Baal temple here. 31 sites still open for the standing
+      task.*
 - [x] `[10-P0-3]` **`flagship-depth`** `deepen` — Bring POIs whose `notes` runs under 60 words up
       to real panel depth in that same field, worst-first. This is the **panel tier of
       `[10-P0-2]`** applied to the places that need it most; the tombstone/label tiers still need
@@ -384,6 +410,13 @@ to prevent. Building locally to *test* your own work is expected and fine.
       outlasting the garrison rather than asserting an active 117 CE garrison) rather than
       silently flipping `extant_117ce`; worth a second look with a primary source. 57 fields
       still under 60 words for whoever picks this back up.*
+      *Batch 3 done 2026-08-18 by cloud shift 30: the 26 thinnest fields (53-59 words), all already
+      sourced from prior batches — this round expanded and enriched rather than starting cold, via
+      two parallel WebSearch passes covering shipwrecks, Rome Forum monuments, frontier forts/
+      fortresses, naval bases, a mine, a signal tower, and three classical battles. Every record
+      picked up at least one genuinely new fact (a named excavator, an exact measurement, a
+      specific date) beyond what the earlier text already said; sources merged, not replaced. Depth
+      87.8% → 93.4%, thin tail 57 → 31.*
 - [ ] `[15-P0-1]` **`unattended-screenshot-gate`** `fix` — ⚠️ **This blocks the daily pass from
       taking any UI ticket at all.** The gate below requires a screenshot at 375×812 dark and at
       desktop light, but the 09:30 editorial pass runs unattended and a dev server cannot be
@@ -441,7 +474,17 @@ to prevent. Building locally to *test* your own work is expected and fine.
       Pantheon-Rome pair. Verified with Playwright at 1280×800 light and 375×812 dark: theme
       tokens throughout (no hardcoded chrome colors), horizontal-scroll strip on the panel, grid
       on the static page, click-through re-selects correctly on both.
-- [~] `[02-P0-2]` **`coastline`** `polish` — claimed by cloud shift 30, 2026-08-18. Coastline stroke over the sea mask.
+- [x] `[02-P0-2]` **`coastline`** `polish` — Done 2026-08-18 by cloud shift 30. A quiet line
+      traced along the land polygon's own edge (new `coastline` layer + palette token in both
+      light/dark), drawn above the sea-mask/ancient-sea fills so land and sea meet with a visible
+      line instead of a hard color boundary, matching Google Maps' own coastline treatment.
+      Screenshotted at 1280×900 desktop light and 375×812 dark — visible as a subtle darker stroke
+      along every coast in both themes, no regression to the phone chrome. This sandbox's
+      demotiles.maplibre.org block (see the province-overlay ticket note below for the fuller
+      finding) means the map's own "load" event never fires here, so the roads/POI/building
+      layers added in later phases couldn't be screenshotted this session — but the coastline
+      layer itself lives in the initial, ungated style, so it rendered and was confirmed correctly
+      in both screenshots regardless.
 - [ ] `[02-P0-3]` **`road-weights`** `polish` — Raise road weights/opacity at low zoom; add
       casings to main roads.
 - [ ] `[02-FIX]` **`halo-colors`** `fix` — ~12 layers in `Map.tsx` hardcode `#f4ead5` (the
@@ -624,7 +667,17 @@ to prevent. Building locally to *test* your own work is expected and fine.
       waypoints ("node_*" features) in the same FeatureCollection, which needed filtering before
       the routes list was correct. Verified: `next build` generates all five routes cleanly;
       screenshotted at 1280×900 light and 375×812 dark.
-- [~] `[09-P2-8]` **`how-we-know`** `add` — claimed by cloud shift 30, 2026-08-18. Public methodology page.
+- [x] `[09-P2-8]` **`how-we-know`** `add` — Done 2026-08-18 by cloud shift 30. New `/how-we-know`,
+      a single static page (mirrors `/hub/[slug]`'s parchment-card styling) explaining the 117 CE
+      snapshot rule and its judgment calls, where the base geography comes from, the difference
+      between "Sources" and "In ancient writing" citations, what `confidence` means, the image-
+      sourcing standard, and an honest accounting of what's incomplete. Every number on the page
+      (place count, % with a modern/ancient source, high-confidence citation coverage, % with an
+      image, the live thin-description count) is computed from `pois.geojson` at build time rather
+      than hand-typed — same reasoning `[15-P1-4]` metrics gave for going generated. Wired into
+      `sitemap.ts`; linked from `EpochModal.tsx`'s "Why 117 CE?" popup. Screenshotted at 1280×900
+      desktop and 375×812 dark — this is a static server-rendered page, unaffected by this
+      session's map-load-gate finding (see the province-overlay note below).
 - [x] `[02-P1-6]` **`sea-labels`** `add` — Done 2026-08-18 by cloud shift 29. 32 named seas, gulfs
       and straits in `public/data/seas.geojson`, always-on cartographic labels (base geography,
       not a toggleable overlay — same tier as place labels, no `useLayers.ts` entry). Uppercase
@@ -967,3 +1020,46 @@ delete-dead-data (`retire`), and `[08-P1-6]` baalbek-dating (`verify`). The topm
 whoever wants them next: sea legs (needs a genuinely different, sailing-season-aware routing
 model, no source data for it yet) and multi-stop itineraries. Check the board fresh — don't
 assume this note is still current by the time you read it.
+
+- 2026-08-18 · `[10-P0-3]` flagship-depth · cloud shift 30. Batch 3: 26 more thinnest descriptions
+  (53-59 words, already sourced) expanded to ~100-130 words each, worst-first. Thin tail 57 → 31.
+  See ticket note above.
+- 2026-08-18 · `[06-P0-2]` curate-buildings (Palmyra) · cloud shift 30. 12 entries in
+  `app/palmyraDescriptions.ts`, the ninth site — Palmyra's monuments split cleanly by century, the
+  Temple of Bel/Nabu/Agora already standing in 117 CE, the Tetrapylon/Theatre/Baalshamin/
+  Caesareum honestly not yet built. See ticket note above.
+- 2026-08-18 · `[09-P2-8]` how-we-know · cloud shift 30. New `/how-we-know` public methodology
+  page, every number computed from `pois.geojson` at build time. See ticket note above.
+- 2026-08-18 · `[02-P0-2]` coastline · cloud shift 30. Coastline stroke traced along the land
+  polygon's edge, above the sea-mask fills. See ticket note above.
+- 2026-08-18 · FEATURE_BACKLOG.md "Province overlay" (no board ticket ID — Track B, top unblocked
+  P1 feature-backlog item) · cloud shift 30. New `app/useProvincePanel.ts` + `app/ProvincePanel.tsx`
+  — click a province at empire/region-level zoom to highlight it and see its governor/legions/
+  cities, a pure lens over data `[14-P1-4]` province-pages, `[07-P1-4]` governors, and the legion
+  locator already shipped. See FEATURE_BACKLOG.md's own entry for the full note and this run's
+  verification caveat (the `[02-P0-4]` self-host-glyphs finding above).
+
+**Ratio state after this run:** cloud shift 30 ran a complete 1:2:1 cycle — 1 `add` (`[09-P2-8]`
+how-we-know), 2 `deepen` (`[10-P0-3]` flagship-depth batch 3, `[06-P0-2]` curate-buildings/
+Palmyra), 1 `polish` (`[02-P0-2]` coastline) — then used the rest of the shift on Province
+overlay, the top unblocked P1 FEATURE_BACKLOG.md item, as Track B. This run's most consequential
+finding wasn't a data batch: this sandbox's already-well-documented `demotiles.maplibre.org`
+block turns out to gate far more than glyph rendering — `app/Map.tsx`'s entire Phase 2 onward
+(everything past the base land/sea/province/coastline layers) sits behind a single
+`map.on("load", ...)` callback, and "load" itself never fires when that domain is unreachable, so
+no cloud shift in this exact sandbox condition can Playwright-verify anything past Phase 1 by
+actually clicking the live map — confirmed by binding the Province-overlay click handler's exact
+logic directly to the live map instance (bypassing the load-gate) and firing a real synthetic
+click, which resolved correctly. Full ticket note now on `[02-P0-4]` self-host-glyphs, which this
+finding promotes from "nice to have" to "actively blocking this sandbox's own test coverage."
+Also reconfirmed: Axis 1 (more cities) and `[06-P2-6]` priority-cities remain blocked (Overpass,
+Wikipedia, Commons, Nominatim all `connect_rejected`); WebSearch is still the only working
+research channel. The open cycle is clean; the next run picks whatever's topmost and unclaimed.
+At the time this run ends, the topmost unclaimed P0 tickets are unchanged across many runs now —
+`[12-P0-1]` merge-themes (`fix`, big), `[03-P0-1]` schema-v2 (`fix`), `[03-P0-2]` card-rebuild
+(`polish`, still missing its spec), `[11-P0-3]` delete-dead-data (`retire`), `[08-P1-6]`
+baalbek-dating (`verify`), and `[02-P0-4]` self-host-glyphs (`fix`, sharper case above). No
+unclaimed P0 `add` exists; `[06-P2-6]`
+priority-cities is the only P2 `add` and remains blocked. `[09-P1-4]` epigraphy and `[09-P0-1]`
+ancient-sources both remain standing `deepen` tasks with working pipelines. Check the board fresh
+— don't assume this note is still current by the time you read it.
