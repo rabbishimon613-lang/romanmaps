@@ -401,8 +401,29 @@ to prevent. Building locally to *test* your own work is expected and fine.
 
 ## P1
 
-- [ ] `[07-P1-1]` **`travel-time`** `add` — ORBIS-style journey calculator over the existing
-      road + sea network. Highest-impact single feature in the backlog.
+- [x] `[07-P1-1]` **`travel-time`** `add` — Done 2026-08-18 by cloud shift 29, road-only (sea
+      network is a real future extension, not attempted here — see below). Highest-impact single
+      feature in the backlog. `scripts/build-route-graph.mjs` builds a routable graph from
+      `roads_main.geojson`+`roads_secondary.geojson` — 14,601 segments become edges between
+      endpoint-nodes deduped by rounded coordinate (10,214 nodes, 9,477 shared by 2+ segments, so
+      the network is genuinely connected). `public/data/route_graph.json` (~6MB), fetched only
+      when Directions opens. `app/routeGraph.ts` runs client-side Dijkstra with a binary min-heap
+      (O(E log V), not the ~100M-op naive O(V²) scan a flat array would need). `app/Directions.tsx`
+      + `app/useDirections.ts`: click A and B — via the map directly, the right-click context
+      menu's now-real "Directions from/to here" (was disabled, see `FEATURE_BACKLOG.md`), or a
+      place card's new "Directions" button — draws the real road route (not a straight line) and
+      reports distance plus legion/merchant travel-day estimates using `FEATURE_BACKLOG.md`'s own
+      25/15-Roman-mile-per-day assumptions. Two honest edge cases: two points in different
+      connected components (e.g. mainland Italy to Vindolanda — no Channel crossing in the source
+      data) report "No road route found" rather than faking a line across open sea; a click off
+      the mapped network reports its own snap-to-road distance separately instead of folding it
+      silently into the total. Directions and the ruler are mutually exclusive map "modes"
+      (starting one cancels the other). Verified with Playwright: Rome→Ostia returns a real
+      24.9 km, 18-point road-following route in well under a second; the Britain case correctly
+      reports no route; both entry points work at 1280×900 light and 375×812 dark, desktop and
+      mobile. **What's still open**: sea legs (a genuinely different routing problem — sailing-
+      season-dependent, no equivalent network file exists yet) and multi-day itinerary stops along
+      the route are both real future extensions, not attempted in this pass.
 - [x] `[07-P0-2]` **`category-life-writing`** `deepen` — Done 2026-08-16. All POI
       categories written (the report estimated ~20), 116–130 words each, present tense, in
       `app/categoryLife.ts`; renders as "What happened here" on every card. Covered 448/448 POIs
@@ -909,3 +930,40 @@ data batch, reads as a real Track B candidate for whoever picks it up with time 
 `[09-P1-4]` epigraphy remains a standing task with a working pipeline now that this run cleared
 its POI-availability bottleneck — hundreds of curated POIs still carry no inscription. Check the
 board fresh — don't assume this note is still current by the time you read it.
+
+- 2026-08-18 · `[02-P1-6]` sea-labels · cloud shift 29. 32 named seas/gulfs/straits, always-on
+  cartographic labels (base geography, not a toggle). See ticket note above.
+- 2026-08-18 · `[06-P0-2]` curate-buildings (Merida) · cloud shift 29. 10 entries in
+  `app/meridaDescriptions.ts`, the eighth site — mostly `extant_117ce:true` for once, since
+  Augusta Emerita's core was already built by 117 CE. See ticket note above.
+- 2026-08-18 · `[09-P1-4]` epigraphy · cloud shift 29. Batch 4: 6 more POIs cited (Library of
+  Celsus, Domus Flavia, Alexandria's Mouseion, the Herculaneum Augustales' hall, Circus
+  Flaminius, House of the Vettii). `pois.geojson` 167 → 173 of 470 cited. See ticket note above.
+- 2026-08-18 · `[03-P1-4]` nearby-related · cloud shift 29. Six proximity-ranked related-place
+  cards on the live panel and every `/place` page, same-category boosted, deduped against
+  near-zero-distance duplicates. See ticket note above.
+- 2026-08-18 · `[07-P1-1]` travel-time (Directions) · cloud shift 29. Road-network routing —
+  real Dijkstra shortest path over a graph built from the existing road data, not a straight
+  line. Wired into the right-click menu and place cards, which were both honestly disabled until
+  now. See ticket note above.
+
+**Ratio state after this run:** cloud shift 29 ran a complete 1:2:1 cycle — 1 `add`
+(`[02-P1-6]` sea-labels), 2 `deepen` (`[06-P0-2]` curate-buildings/Merida, `[09-P1-4]` epigraphy
+batch 4), 1 `polish` (`[03-P1-4]` nearby-related) — then used the rest of the shift on
+`[07-P1-1]` travel-time, the P1 `add` prior shifts had flagged as "a real Track B candidate for
+whoever picks it up with time to spare." Confirmed again this run: Axis 1 (more cities) and
+`[06-P2-6]` priority-cities remain genuinely blocked in this sandbox (Overpass, Wikipedia,
+Commons, Nominatim, Pleiades, and even LacusCurtius/archli.com all returned an explicit
+`EGRESS_BLOCKED`/`connect_rejected` this run — WebSearch is still the only working research
+channel). The open cycle is clean; the next run picks whatever's topmost and unclaimed. At the
+time this run ends, the topmost unclaimed P0 tickets are unchanged across several runs now —
+`[12-P0-1]` merge-themes (`fix`, big), `[03-P0-1]` schema-v2 (`fix`), `[03-P0-2]` card-rebuild
+(`polish`, still missing its spec), `[12-FIX-3]` duplicate-pantheon (`retire` — this run's
+nearby-related feature independently rediscovered the exact Pantheon/Pantheon-Rome duplicate
+while testing, worth prioritizing since it's now visibly surfacing in a second feature), `[11-P0-3]`
+delete-dead-data (`retire`), and `[08-P1-6]` baalbek-dating (`verify`). The topmost unclaimed
+`add` is now `[09-P2-8]` how-we-know (a public methodology page) or `[06-P2-6]` priority-cities
+(blocked, see above) — `[02-P1-6]` sea-labels is now closed. Directions' own two real gaps for
+whoever wants them next: sea legs (needs a genuinely different, sailing-season-aware routing
+model, no source data for it yet) and multi-stop itineraries. Check the board fresh — don't
+assume this note is still current by the time you read it.
