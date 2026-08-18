@@ -627,6 +627,543 @@
     "image_credit": "The Siq, the narrow sandstone gorge leading into Petra, Jordan · Wikimedia Commons",
     "image_alt": "Photograph of the narrow sandstone gorge of the Siq leading into Petra"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.55,
+     42.0
+    ]
+   },
+   "properties": {
+    "id": "landmark_lake_fucinus",
+    "name": "Lake Fucino",
+    "type": "lake",
+    "one_line": "Lacus Fucinus filled a landlocked mountain basin with no river outlet, so it flooded nearby farmland every hard winter. Emperor Claudius spent years driving a tunnel through the surrounding hills to drain it, then marked the unfinished project in 52 CE with one of the largest mock naval battles Rome ever staged, throwing 19,000 condemned combatants onto warships on the lake itself. A mechanical silver Triton reportedly rose from the water to signal the start. The tunnel clogged and the lake barely dropped, defeating both Claudius and, later, Hadrian; it stayed a glittering, stubborn plain of water for centuries afterward.",
+    "province": "Italia",
+    "modern_location": "Fucino plain, near Avezzano, Abruzzo, Italy",
+    "sources": [
+     "https://www.amusingplanet.com/2020/05/draining-of-fucine-lake.html",
+     "https://en.wikipedia.org/wiki/Tunnels_of_Claudius",
+     "https://the-colosseum.net/wp/en/naval-battles/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lago_Fucino_Galleria_delle_Carte_Geografiche_(Musei_Vaticani).jpg?width=800",
+    "image_credit": "Fresco map of Lake Fucino, Gallery of Maps, Vatican Museums · Wikimedia Commons",
+    "image_alt": "Historic fresco map showing Lake Fucino before its drainage"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.1167,
+     43.1333
+    ]
+   },
+   "properties": {
+    "id": "landmark_lake_trasimene",
+    "name": "Lake Trasimene",
+    "type": "lake",
+    "one_line": "Lake Trasimene's northern shore narrowed into a shelf of hills that Hannibal used to spring the deadliest ambush Rome ever walked into. On a foggy morning in 217 BCE his Carthaginian army fell on the marching column of consul Gaius Flaminius from three sides at once, pinning the Romans between the water and the slopes. Roughly 15,000 legionaries died in a few chaotic hours, some drowning in the shallows as they tried to flee, and the disaster forced Rome to appoint the dictator Fabius Maximus, whose delaying tactics later helped turn the war. Travelers in 117 CE still walked the same lakeside road past the killing ground.",
+    "province": "Italia",
+    "modern_location": "near Perugia, Umbria, Italy",
+    "sources": [
+     "https://www.historyskills.com/classroom/ancient-history/anc-trasimene-reading/",
+     "https://roman-empire.net/army/battle-of-lake-trasimene",
+     "https://warfarehistorynetwork.com/article/hannibals-cunning-ambush/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Trasimeno_-_Castiglione_del_Lago,_Perugia,_Italy_-_April_15,_2017_-_02.jpg?width=800",
+    "image_credit": "Photograph of Lake Trasimeno from Castiglione del Lago · Wikimedia Commons",
+    "image_alt": "View across Lake Trasimene toward Castiglione del Lago"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.0728,
+     40.8442
+    ]
+   },
+   "properties": {
+    "id": "landmark_lake_avernus",
+    "name": "Lake Avernus",
+    "type": "lake",
+    "one_line": "Lacus Avernus filled a volcanic crater so thick with sulfurous fumes that Romans believed no bird could fly over it, and its Greek-derived name meant roughly 'without birds.' Virgil sent his hero Aeneas down into the underworld through a cave beside its shore, cementing the lake's reputation as the gate of Hades itself. In 37 BCE Agrippa transformed this eerie, sacred water into a secret naval base for Octavian's war fleet, cutting a canal to the sea and boring a tunnel nearly one kilometer long through the hills to link it with Cumae. Warships now launched from what poets had called the mouth of the underworld.",
+    "province": "Italia",
+    "modern_location": "near Pozzuoli, Campania, Italy",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Lake_Avernus",
+     "https://en.wikipedia.org/wiki/Grotta_di_Cocceio",
+     "https://www.atlasobscura.com/places/lake-avernus-italy"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Avernus_by_Richard_Wilson_(1713-1782)_-_IMG_7297.JPG?width=800",
+    "image_credit": "Lake Avernus, oil painting by Richard Wilson (1713-1782) · Wikimedia Commons",
+    "image_alt": "18th-century painting of Lake Avernus in its volcanic crater"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.0861,
+     40.8278
+    ]
+   },
+   "properties": {
+    "id": "landmark_lake_lucrinus",
+    "name": "Lake Lucrinus",
+    "type": "lake",
+    "one_line": "Lacus Lucrinus was a shallow lagoon shut off from the Bay of Naples by a narrow causeway, and it produced the most celebrated oysters in the Roman world. Around 100 BCE the engineer Sergius Orata pioneered oyster farming there, tying young oysters to bundles of twigs so they could be lifted and moved at will, a technique that turned Lucrine oysters into a byword for luxury dining across the empire. The state leased its fisheries to contractors at steep prices, and villas belonging to men like Cicero lined its banks. Diners judged an oyster's quality simply by whether it had come from the Lucrine Lake.",
+    "province": "Italia",
+    "modern_location": "near Pozzuoli and Baiae, Campania, Italy",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Sergius_Orata",
+     "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Lucrinus_Lacus",
+     "https://www.pbs.org/wnet/secrets/baian-seafood-casserole-oyster-farming-baiae/3409/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lago_di_Lucrino.JPG?width=800",
+    "image_credit": "Photograph of Lago di Lucrino, Campania · Wikimedia Commons",
+    "image_alt": "View of Lake Lucrino near the Bay of Naples"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.93,
+     42.6
+    ]
+   },
+   "properties": {
+    "id": "landmark_lake_bolsena",
+    "name": "Lake Bolsena",
+    "type": "lake",
+    "one_line": "Lake Bolsena filled the crater of an extinct volcano and remains the largest volcanic lake in Europe, its waters wide enough to hold two wooded islands near its center. Its shoreline city, Volsinii, was the wealthiest Etruscan settlement of its day until Rome sacked it in 264 BCE for allowing enslaved rebels to seize power, then deported the survivors and forced them to rebuild an entirely new town on the eastern shore. The refounded Roman Volsinii grew a forum, amphitheater, and baths within a few generations. By 117 CE it stood as a settled municipium beside a lake Romans simply called Lacus Volsiniensis.",
+    "province": "Italia",
+    "modern_location": "near Viterbo, Lazio, Italy",
+    "sources": [
+     "https://www.britannica.com/place/Bolsena",
+     "https://en.wikipedia.org/wiki/Volsinii",
+     "https://www.ebsco.com/research-starters/history/volsinii"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lago_bolsena.jpg?width=800",
+    "image_credit": "Photograph of Lago di Bolsena · Wikimedia Commons",
+    "image_alt": "View across Lake Bolsena, the largest volcanic lake in Europe"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.7106,
+     41.7514
+    ]
+   },
+   "properties": {
+    "id": "landmark_lake_albano",
+    "name": "Lake Albano",
+    "type": "lake",
+    "one_line": "Lake Albano fills a volcanic caldera in the Alban Hills with no natural drain, and during Rome's long siege of Etruscan Veii its water level rose without explanation despite a drought. An oracle declared that Veii would fall only once the lake's waters were released, so Roman engineers cut an emissarium, a drainage tunnel more than a kilometer long, straight through solid volcanic rock to regulate the level. Veii fell soon after, in 396 BCE, and the tunnel still functions today. Latin peoples had already held the lake sacred long before Rome existed, and it remained a place of ritual reverence through the imperial period.",
+    "province": "Italia",
+    "modern_location": "Castel Gandolfo, Lazio, Italy",
+    "sources": [
+     "https://www.thearchaeologist.org/blog/roman-tunnels-the-engineering-of-the-emissarium-at-lake-albano",
+     "https://en.wikipedia.org/wiki/Lake_Albano",
+     "https://earthlymission.com/lake-albano-emissiary-tunnel-canal-channel-roman-prophecy/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lac_Albano_et_Mont_Cavo.JPG?width=800",
+    "image_credit": "Photograph of Lake Albano and Monte Cavo · Wikimedia Commons",
+    "image_alt": "Lake Albano seen with Monte Cavo rising behind it"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.7167,
+     41.7161
+    ]
+   },
+   "properties": {
+    "id": "landmark_lake_nemi",
+    "name": "Lake Nemi",
+    "type": "lake",
+    "one_line": "Lake Nemi sits in a small crater tucked inside the outer ring of the Alban volcano, its still water so mirror-flat that Romans called it Speculum Dianae, the Mirror of Diana. On its northern shore stood one of Latium's richest sanctuaries, dedicated to Diana of the Wood, where worshippers whose prayers had been answered walked a torchlit procession around the entire lake wearing wreaths. The sanctuary's priest, the Rex Nemorensis, held his position only by killing his predecessor in single combat, a grim rite that persisted into the imperial era. Decades after 117 CE, Caligula would have enormous pleasure barges built to float on this same glassy water.",
+    "province": "Italia",
+    "modern_location": "Nemi, Lazio, Italy",
+    "sources": [
+     "https://www.britannica.com/place/Lake-Nemi",
+     "https://nemitonottingham.wordpress.com/tag/the-mirror-of-diana/",
+     "https://en.wikipedia.org/wiki/Temple_of_Diana_(Nemi)"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jules_Coignet,_View_of_Lake_Nemi,_1843,_NGA_74991.jpg?width=800",
+    "image_credit": "View of Lake Nemi, 1843, painting by Jules Coignet, National Gallery of Art · Wikimedia Commons",
+    "image_alt": "19th-century painting of Lake Nemi in its wooded crater"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.2572,
+     45.986
+    ]
+   },
+   "properties": {
+    "id": "landmark_lake_como",
+    "name": "Lake Como",
+    "type": "lake",
+    "one_line": "Lacus Larius, now Lake Como, stretched in a narrow Y-shape between steep Alpine slopes that Julius Caesar's forces secured in 49 BCE. The senator and writer Pliny the Younger, who grew up on its shores, owned two villas on the lake he nicknamed Comedy and Tragedy for their contrasting settings, one perched dramatically on a ridge and the other sitting right at the water's edge. He described the lake fondly in his letters, including an account of a mysterious spring nearby that rose and fell several times a day. Wealthy Romans kept building villas along its shores well into the second century CE.",
+    "province": "Italia",
+    "modern_location": "Bellagio, Lombardy, Italy",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Pliny%27s_Comedy_and_Tragedy_villas",
+     "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry%3Dlarius-lacus-geo",
+     "https://en.wikipedia.org/wiki/Villa_Pliniana"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean-Baptiste-Camille_Corot_-_Como_and_Lake_Como.jpg?width=800",
+    "image_credit": "Como and Lake Como, painting by Jean-Baptiste-Camille Corot · Wikimedia Commons",
+    "image_alt": "19th-century painting of Lake Como with the town in the foreground"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.6089,
+     45.4944
+    ]
+   },
+   "properties": {
+    "id": "landmark_lake_garda",
+    "name": "Lake Garda",
+    "type": "lake",
+    "one_line": "Lacus Benacus, the largest lake in Roman Italy, stretched more than 50 kilometers between the Alpine foothills and the Po plain. At its southern tip the poet Catullus owned a peninsula villa at Sirmio, which he called the jewel of every island and peninsula, writing of his sheer relief at being home again and sleeping in his own bed. A grand Roman villa later built on that same peninsula, popularly but mistakenly nicknamed the Grottoes of Catullus, became one of the largest private residences in northern Italy. Wealthy Romans lined the lake's shores with villas through the first and second centuries CE.",
+    "province": "Italia",
+    "modern_location": "Sirmione, on Lake Garda, Italy",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Sirmio",
+     "https://en.wikipedia.org/wiki/Grottoes_of_Catullus",
+     "https://veronaguide.it/en/magazine-en/lake-garda-history-castles-and-landscapes-half-an-hour-from-verona/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lago_di_Garda_Panorama_001.JPG?width=800",
+    "image_credit": "Panorama of Lake Garda · Wikimedia Commons",
+    "image_alt": "Panoramic view across Lake Garda"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.6333,
+     45.9333
+    ]
+   },
+   "properties": {
+    "id": "landmark_lake_maggiore",
+    "name": "Lake Maggiore",
+    "type": "lake",
+    "one_line": "Lacus Verbanus, fed by the Alpine river Ticinus as it poured out of the mountains, linked Roman Italy to trade routes running north into Raetia. Ships crossed the lake and continued down the Ticino River to Pavia, then onward along the Po to the Adriatic, making it a working artery of commerce rather than just a beauty spot. Before Rome's arrival, the Iron Age Golasecca culture had already settled its shores for centuries, and Roman roads later threaded along the lake to move goods and legions toward the Alpine passes. By 117 CE it sat within the administrative orbit of Mediolanum, modern Milan.",
+    "province": "Italia",
+    "modern_location": "Stresa, Piedmont, Italy",
+    "sources": [
+     "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry%3Dverbanus-lacus-geo",
+     "https://www.trips2italy.com/piedmont/lake-maggiore/history-t2i",
+     "https://en.m.wikipedia.org/wiki/Lake_Maggiore"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ivan_Constantinovich_Aivazovsky_-_Lake_Maggiore_in_the_Evening.JPG?width=800",
+    "image_credit": "Lake Maggiore in the Evening, painting by Ivan Aivazovsky (1892) · Wikimedia Commons",
+    "image_alt": "19th-century painting of Lake Maggiore at dusk"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.1667,
+     42.1167
+    ]
+   },
+   "properties": {
+    "id": "landmark_lake_bracciano",
+    "name": "Lake Bracciano",
+    "type": "lake",
+    "one_line": "Lacus Sabatinus filled a volcanic caldera just northwest of Rome and, by the early second century CE, had become one of the capital's lifelines. In 109 CE Emperor Trajan opened the Aqua Traiana, an aqueduct that gathered fresh spring water from the hills around the lake and carried it many kilometers to power watermills and fill baths on Rome's Janiculum Hill. The lake itself stayed largely untouched, its springs simply tapped at the source, so it kept its wooded volcanic shoreline while feeding one of the newest aqueducts serving the capital during Trajan's reign, right around the time this map is set.",
+    "province": "Italia",
+    "modern_location": "Bracciano, Lazio, Italy",
+    "sources": [
+     "https://community.vcoins.com/aqua-traiana-fresh-water-new-rome-june-24-109-ad",
+     "https://hydriaproject.info/en/case-studies/from-alsietinus-trajan-pauline-ancient-aqueducts-to-the-modern-acea-aqueduct/setting",
+     "https://en.wikipedia.org/wiki/Lake_Bracciano"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lago_Bracciano.JPG?width=800",
+    "image_credit": "Photograph of Lake Bracciano · Wikimedia Commons",
+    "image_alt": "View across Lake Bracciano, source of the Aqua Traiana"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1432,
+     46.2044
+    ]
+   },
+   "properties": {
+    "id": "landmark_lake_geneva",
+    "name": "Lake Geneva",
+    "type": "lake",
+    "one_line": "Lacus Lemannus marked the edge of the known Roman world when Julius Caesar first campaigned in Gaul, its shoreline forming a natural wall against tribes to the north. In 58 BCE, worried that the migrating Helvetii would cross Roman territory, Caesar destroyed the bridge at Geneva and built a rampart and ditch nearly 30 kilometers long, running from the lake to the Jura mountains, to block their path. The tactic worked, forcing the Helvetii to seek another route and drawing Caesar into the wider war that conquered Gaul. By 117 CE Roman villas and vineyards lined its long crescent shore.",
+    "province": "Gallia Narbonensis",
+    "modern_location": "Geneva, Switzerland",
+    "sources": [
+     "https://fiveable.me/key-terms/ap-latin/lacus-lemannus",
+     "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry%3Dlemanus-geo",
+     "https://en.wikipedia.org/wiki/Allobroges"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lac_L%C3%A9man.jpg?width=800",
+    "image_credit": "Photograph of Lac Léman (Lake Geneva) · Wikimedia Commons",
+    "image_alt": "View across Lake Geneva toward the Alps"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.7471,
+     47.5031
+    ]
+   },
+   "properties": {
+    "id": "landmark_lake_constance",
+    "name": "Lake Constance",
+    "type": "lake",
+    "one_line": "Lacus Brigantinus took its Roman name from the tribal town of Brigantium on its northeastern shore, in the province of Raetia. In 15 BCE the future emperors Tiberius and Drusus led a Roman fleet onto the lake to crush Celtic resistance in one of the closing battles of Augustus's conquest of the Alps, a naval engagement fought at a lake few outsiders had previously known existed. Roman geographers such as Pliny the Elder recorded its waters afterward, and roads soon linked Brigantium into the network binding the Alpine provinces to Italy. By 117 CE the lake anchored a settled Roman frontier along its shores.",
+    "province": "Raetia",
+    "modern_location": "Bregenz, Austria, on Lake Constance",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Battle_of_Lake_Constance",
+     "https://en.wikipedia.org/wiki/Brigantii",
+     "https://www.alaturka.info/en/history/antiquity/4664-geographer-pomponius-mela-and-lake-constance"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bodensee_satellit.jpg?width=800",
+    "image_credit": "Satellite image of Lake Constance (Bodensee) · Wikimedia Commons",
+    "image_alt": "Satellite view of Lake Constance on the Alpine frontier"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.05,
+     38.45
+    ]
+   },
+   "properties": {
+    "id": "landmark_lake_copais",
+    "name": "Lake Copais",
+    "type": "lake",
+    "one_line": "Lake Copais spread across the Boeotian plain as a shallow, marshy expanse so famous for its eels that the comic playwright Aristophanes joked about them onstage in Athens more than once. Bronze Age engineers had already dug canals and dykes to drain parts of the basin over a thousand years earlier, one of the most ambitious hydraulic projects of the ancient Aegean. By the Roman period the lake still flooded and shrank with the seasons, and the traveler Pausanias, writing not long after 117 CE, described its fish and reed beds among the finest in Greece. Local fishermen and eel-sellers remained a fixture of Boeotian life throughout antiquity.",
+    "province": "Achaea",
+    "modern_location": "near Orchomenos, Boeotia, Greece",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Lake_Copais",
+     "https://greekreporter.com/2025/10/13/ancient-greece-draining-lake-kopaida/",
+     "https://oxfordre.com/classics/display/10.1093/acrefore/9780199381135.001.0001/acrefore-9780199381135-e-1809"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rottmann_-_Kopaissee_1839.jpg?width=800",
+    "image_credit": "Kopaissee (Lake Copais), 1839 painting by Carl Rottmann · Wikimedia Commons",
+    "image_alt": "19th-century painting of the Boeotian plain and Lake Copais"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.8333,
+     39.4333
+    ]
+   },
+   "properties": {
+    "id": "landmark_lake_karla",
+    "name": "Lake Karla",
+    "type": "lake",
+    "one_line": "Lake Boibeis spread across a low basin in Thessaly beneath Mount Pelion, a body of water old enough to appear in Homer's Iliad among the Thessalian contingents bound for Troy. Ancient poets and geographers, including Pindar, mentioned its shores and the town of Boebe beside it, and local myth held that the god Apollo had once been married there. The lake swelled and shrank unpredictably with mountain streams that had no clear outlet, flooding nearby farmland without warning. By 117 CE it lay within the Roman province of Achaea, a modest but storied lake whose name outlived most of the towns around it.",
+    "province": "Achaea",
+    "modern_location": "near Kanalia, Thessaly, Greece",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Lake_Karla",
+     "https://en.wikipedia.org/wiki/Boebeis_Lake",
+     "https://www.circleofblue.org/2009/world/project-replenishes-mythological-greek-lake/"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     22.4333,
+     37.8667
+    ]
+   },
+   "properties": {
+    "id": "landmark_lake_stymphalia",
+    "name": "Lake Stymphalia",
+    "type": "lake",
+    "one_line": "Lake Stymphalia filled a closed mountain basin in Arcadia with no river outlet, its water draining instead through underground sinkholes, a landscape strange enough to seed one of Greece's darkest myths. Ancient storytellers held that man-eating birds with bronze beaks and metal feathers nested in its marshes until Heracles drove them off with a rattle forged by the god Hephaestus, completing his sixth labor. The traveler Pausanias later described the lake and a shrine to Stymphalian Artemis on its shore during his journeys through Arcadia. The lake's unpredictable, sink-and-swell behavior kept it a source of local legend well into the Roman period.",
+    "province": "Achaea",
+    "modern_location": "Stymfalia, Peloponnese, Greece",
+    "sources": [
+     "https://www.theoi.com/Ther/OrnithesStymphalides.html",
+     "https://mythopedia.com/topics/stymphalian-birds/",
+     "https://en.wikipedia.org/wiki/Stymphalus_(Arcadia)"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gustave_Moreau_-_Hercules_at_Lake_Stymphalos.jpg?width=800",
+    "image_credit": "Hercules at Lake Stymphalos, painting by Gustave Moreau · Wikimedia Commons",
+    "image_alt": "19th-century painting of Heracles fighting the Stymphalian birds"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     30.6167,
+     29.4667
+    ]
+   },
+   "properties": {
+    "id": "landmark_lake_moeris",
+    "name": "Lake Moeris",
+    "type": "lake",
+    "one_line": "Lake Moeris filled the Faiyum depression west of the Nile, an enormous natural reservoir that pharaonic engineers had already linked to the river by canal nearly two thousand years before Rome ruled Egypt. Around 1800 BCE, Pharaoh Amenemhat III built dikes and sluices to control its water precisely, using the lake to absorb Nile flood surges and irrigate the surrounding depression even in low-flood years. Roman administrators inherited this system largely intact after annexing Egypt in 30 BCE and kept the Faiyum among the empire's most productive grain-growing regions. The historian Herodotus, writing centuries earlier, had marveled that the lake seemed too vast and well-ordered to be entirely natural.",
+    "province": "Aegyptus",
+    "modern_location": "Faiyum, Egypt",
+    "sources": [
+     "https://www.britannica.com/place/Lake-Moeris",
+     "https://qarounprotectorate.org/en/lake-mouris-a-testament-to-the-glory-of-the-pharaohs/",
+     "https://www.memphistours.co.uk/egypt/lake-moeris"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Moeris.jpg?width=800",
+    "image_credit": "Photograph of Lake Moeris (Birket Qarun), Faiyum · Wikimedia Commons",
+    "image_alt": "View of Lake Moeris in the Faiyum depression"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     29.9167,
+     31.1
+    ]
+   },
+   "properties": {
+    "id": "landmark_lake_mareotis",
+    "name": "Lake Mareotis",
+    "type": "lake",
+    "one_line": "Lake Mareotis lay just south of Alexandria, linked to the Nile's Canopic branch by canal and to the city's own harbor by another channel, making it the quieter, freshwater counterpart to the Mediterranean at the city's front door. Vineyards and olive groves covered its shores, and Mareotic wine, a pale, mild white, was exported across the Mediterranean in amphorae produced by a thriving local pottery industry. Grain barges and passenger boats crossed the lake constantly, since traffic from the Nile Valley reached Alexandria more easily by water than overland. By 117 CE the lake's harbors handled a large share of the goods flowing into one of the empire's greatest cities.",
+    "province": "Aegyptus",
+    "modern_location": "south of Alexandria, Egypt",
+    "sources": [
+     "https://www.sciencedirect.com/science/article/abs/pii/S2352409X17300962",
+     "https://archli.com/dictionary/dictionary-of-greek-and-roman-geography/Mareotis-123295",
+     "https://www.cealex.org/evenement/the-harbour-installations-of-lake-mariout-in-antiquity/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Salt_refining-Lake_Mariout.JPG?width=800",
+    "image_credit": "Photograph of Lake Mariout (Mareotis) near Alexandria · Wikimedia Commons",
+    "image_alt": "View of Lake Mareotis south of Alexandria"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.5833,
+     32.8333
+    ]
+   },
+   "properties": {
+    "id": "landmark_lake_galilee",
+    "name": "Sea of Galilee",
+    "type": "lake",
+    "one_line": "The Sea of Galilee filled a freshwater basin below sea level in northern Judaea, ringed by nine or ten thriving towns whose wharves formed an almost unbroken line around its shore. Roughly 230 fishing boats worked its waters at the height of the Roman period, and the catch was salted and exported across the empire from a town whose Greek name, Tarichaea, literally meant 'salted-fish town.' Herod Antipas founded Tiberias on its western shore and named it for the reigning emperor, and by 117 CE the lake and its fisheries anchored the region's economy and daily life alike.",
+    "province": "Iudaea",
+    "modern_location": "Tiberias, Israel",
+    "sources": [
+     "https://www.britannica.com/place/Sea-of-Galilee",
+     "https://www.newworldencyclopedia.org/entry/Sea_of_Galilee",
+     "https://www.gktoday.in/sea-of-galilee/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Panorama_of_Shore_of_Lake_Kinnaret_(Sea_of_Galilee).jpg?width=800",
+    "image_credit": "Panorama of the shore of the Sea of Galilee (Lake Kinneret) · Wikimedia Commons",
+    "image_alt": "Panoramic view along the shore of the Sea of Galilee"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.4667,
+     31.5
+    ]
+   },
+   "properties": {
+    "id": "landmark_lake_dead_sea",
+    "name": "Dead Sea",
+    "type": "lake",
+    "one_line": "The Dead Sea, called Lacus Asphaltites by Roman writers, sat so heavy with salt and minerals that nothing could sink in it and no fish could survive its water. Chunks of natural bitumen periodically floated to the surface, and locals paddled out in boats to haul the material ashore, cut it into blocks, and sell it across the eastern Mediterranean for uses ranging from shipbuilding to embalming. The historian Josephus and the geographer Strabo both described the strange lake and its floating asphalt trade in detail. Nabataean traders and Judaean rulers fought over control of this resource for generations before Rome absorbed the region into the province of Iudaea.",
+    "province": "Iudaea",
+    "modern_location": "Ein Gedi area, Israel/Jordan border",
+    "sources": [
+     "https://www.nirtopper.com/post/lacusas-phaltites",
+     "https://onomastikon.org/civilizations/dead-sea/",
+     "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7239913/"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dead_sea.jpg?width=800",
+    "image_credit": "Photograph of the Dead Sea · Wikimedia Commons",
+    "image_alt": "View across the Dead Sea"
+   }
   }
  ]
 }

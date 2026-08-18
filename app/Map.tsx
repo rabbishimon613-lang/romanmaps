@@ -1717,8 +1717,8 @@ export default function Map() {
         }
 
         // Phase 23: Natural landmarks (public/data/landmarks_117.geojson) — volcanoes, sacred
-        // mountains, sacred islands, sea-hazards, sacred springs, and geological wonders people
-        // knew and revered in 117 CE (axis 6d).
+        // mountains, sacred islands, sea-hazards, sacred springs, geological wonders, and named
+        // lakes people knew and revered in 117 CE (axis 6d; lakes are board ticket [08-P2-7]).
         const landmarks = await fetch("/data/landmarks_117.geojson")
           .then((r) => (r.ok ? r.json() : null))
           .catch(() => null);
@@ -1750,6 +1750,7 @@ export default function Map() {
               sea_hazard: "Sea hazard",
               sacred_spring: "Sacred spring",
               wonder: "Geological wonder",
+              lake: "Lake",
             };
             const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.one_line)}</div>` : "";
             landmarksPopup
