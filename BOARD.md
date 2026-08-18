@@ -441,7 +441,7 @@ to prevent. Building locally to *test* your own work is expected and fine.
       Pantheon-Rome pair. Verified with Playwright at 1280×800 light and 375×812 dark: theme
       tokens throughout (no hardcoded chrome colors), horizontal-scroll strip on the panel, grid
       on the static page, click-through re-selects correctly on both.
-- [ ] `[02-P0-2]` **`coastline`** `polish` — Coastline stroke over the sea mask.
+- [~] `[02-P0-2]` **`coastline`** `polish` — claimed by cloud shift 30, 2026-08-18. Coastline stroke over the sea mask.
 - [ ] `[02-P0-3]` **`road-weights`** `polish` — Raise road weights/opacity at low zoom; add
       casings to main roads.
 - [ ] `[02-FIX]` **`halo-colors`** `fix` — ~12 layers in `Map.tsx` hardcode `#f4ead5` (the
@@ -624,7 +624,7 @@ to prevent. Building locally to *test* your own work is expected and fine.
       waypoints ("node_*" features) in the same FeatureCollection, which needed filtering before
       the routes list was correct. Verified: `next build` generates all five routes cleanly;
       screenshotted at 1280×900 light and 375×812 dark.
-- [ ] `[09-P2-8]` **`how-we-know`** `add` — Public methodology page.
+- [~] `[09-P2-8]` **`how-we-know`** `add` — claimed by cloud shift 30, 2026-08-18. Public methodology page.
 - [x] `[02-P1-6]` **`sea-labels`** `add` — Done 2026-08-18 by cloud shift 29. 32 named seas, gulfs
       and straits in `public/data/seas.geojson`, always-on cartographic labels (base geography,
       not a toggleable overlay — same tier as place labels, no `useLayers.ts` entry). Uppercase
