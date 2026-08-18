@@ -22,6 +22,15 @@ const POINTS_SOURCE = "directions-points";
 const ROMAN_MILE_KM = 1.48;
 const LEGION_KM_PER_DAY = 25 * ROMAN_MILE_KM;
 const MERCHANT_KM_PER_DAY = 15 * ROMAN_MILE_KM;
+// Cursus publicus (imperial post, horse relay) — A.M. Ramsay, "The Speed of the Roman Imperial
+// Post," Journal of Roman Studies 15 (1925): 60-74, clocks ordinary official travel at 41-64
+// (modern) miles/day, ~66-103 km/day, over the relay network of mutationes (horse-change posts,
+// roughly every 12-15 km) and mansiones (overnight stations, roughly every 25-40 km). 75 km/day
+// sits inside that range as a representative rate — not the extreme "urgent courier" case
+// Ramsay separately notes could exceed 100 modern miles/day, which this doesn't model. Sea legs
+// are still out of scope entirely (see the no-route message below) — no sailing-season-aware
+// network exists yet to estimate them honestly.
+const COURIER_KM_PER_DAY = 75;
 
 type LngLat = [number, number];
 
@@ -262,7 +271,15 @@ export default function Directions() {
               <span>Merchant on foot</span>
               <span>{formatDays(totalKm, MERCHANT_KM_PER_DAY)}</span>
             </div>
+            <div style={{ display: "flex", justifyContent: "space-between", color: "var(--text-2)", marginTop: 4 }}>
+              <span>Imperial courier (horse relay)</span>
+              <span>{formatDays(totalKm, COURIER_KM_PER_DAY)}</span>
+            </div>
           </div>
+          <p style={{ marginTop: 6, fontSize: 10.5, color: "var(--text-3)" }}>
+            Courier estimate assumes the cursus publicus, the state post's relay of mutationes and fresh horses —
+            not available to ordinary travelers. Sea legs aren't modeled.
+          </p>
           <button
             onClick={() => clearDirections()}
             style={{
