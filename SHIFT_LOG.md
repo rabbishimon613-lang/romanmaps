@@ -182,12 +182,11 @@ routes, unchanged — Directions is client-side only, no new static pages).
 
 ### What's next
 
-- **Board, fresh cycle**: this run closed a clean 1:2:1 plus the `[07-P1-1]` stretch, so the next
-  run picks whatever's topmost and unclaimed. Topmost unclaimed P0 tickets are unchanged across
-  several runs now — `[12-P0-1]` merge-themes (`fix`, big), `[03-P0-1]` schema-v2 (`fix`),
-  `[03-P0-2]` card-rebuild (`polish`, still missing its spec), `[12-FIX-3]` duplicate-pantheon
-  (`retire` — now flagged twice by independent features, see nearby-related above; worth
-  prioritizing), `[11-P0-3]` delete-dead-data (`retire`), `[08-P1-6]` baalbek-dating (`verify`).
+- **Board, fresh cycle**: this run closed a clean 1:2:1 plus the `[07-P1-1]` stretch and a bonus
+  `[12-FIX-3]` fix (see below), so the next run picks whatever's topmost and unclaimed. Topmost
+  unclaimed P0 tickets are unchanged across several runs now — `[12-P0-1]` merge-themes (`fix`,
+  big), `[03-P0-1]` schema-v2 (`fix`), `[03-P0-2]` card-rebuild (`polish`, still missing its
+  spec), `[11-P0-3]` delete-dead-data (`retire`), `[08-P1-6]` baalbek-dating (`verify`).
   The topmost unclaimed `add` is `[09-P2-8]` how-we-know (a public methodology page) —
   `[06-P2-6]` priority-cities remains blocked on Overpass access.
 - **Directions has two real, scoped-out extensions** for whoever wants them: sea legs (a
@@ -202,6 +201,20 @@ routes, unchanged — Directions is client-side only, no new static pages).
 - **`[10-P0-3]` flagship-depth**: still 57 fields under 60 words, untouched this run.
   **`[09-P1-4]` epigraphy**: standing task, hundreds of curated POIs still carry no citation.
   **`[06-P0-2]` curate-buildings**: 32 sites still open for the standing task.
+
+### Bonus fix — `[12-FIX-3]` duplicate-pantheon (`retire`)
+
+Picked up after the planned cycle since nearby-related had independently flagged it twice as
+still open (see above). `poi_pantheon` and `poi_pantheon_rome` had already stopped disagreeing
+(fixed 2026-08-16) but the duplicate pin itself remained. Before deleting `poi_pantheon_rome`,
+checked it for anything worth keeping — it turned out to carry one real citation `poi_pantheon`
+didn't have (Cassius Dio 53.27.2, on the argument over Agrippa's original naming), merged into
+`poi_pantheon` first. `/place/pantheon_rome` was a generated, plausibly-indexed page, so a
+permanent redirect to `/place/pantheon` went into `next.config.js` rather than a silent 404.
+`pois.geojson` 470 → 469. Verified: the redirect returns 308 and lands on `/place/pantheon`,
+which now renders both citations; the merge is a clean diff (no reformatting collateral). The
+ticket's own "worth checking the other 73 collisions while in here" note was **not** acted on —
+real scope beyond this one pair, left for a dedicated audit pass.
 
 ---
 
