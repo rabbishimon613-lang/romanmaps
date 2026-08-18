@@ -156,9 +156,20 @@ to prevent. Building locally to *test* your own work is expected and fine.
       at 375×812 in both light and dark, plus desktop light (unaffected — sheet is mobile-only).
 - [ ] `[13-P0-2]` **`image-audit`** `illustrate` — Audit all 303 existing images; flag and
       replace any modern photograph showing modern infrastructure. Cotinae is the test case.
-- [~] `[05-P0-1]` **`places-in-view-list`** `polish` — claimed by cloud shift 28, 2026-08-18 00:20.
-      Accessible, keyboard-navigable list of places in the current viewport; doubles as the
-      browse UI.
+- [x] `[05-P0-1]` **`places-in-view-list`** `polish` — Done 2026-08-18 by cloud shift 28. New
+      `PlacesInViewList.tsx`: an accessible, keyboard-navigable listbox of every curated POI and
+      site inside the current viewport, sorted by distance from the map center, live-updated on
+      `moveend`. Full listbox semantics (`role="listbox"`/`"option"`, `aria-activedescendant`,
+      arrow/Home/End/Enter/Escape), click-through opens the same real card a map click does.
+      Desktop gets its own FAB in the bottom-right stack (`bottom:361`, the next open slot); the
+      panel sizes its own `maxHeight` against that FAB's position with `calc()` so it can't run
+      off the top of a short window — caught this in the first screenshot pass, where a flat
+      `60vh` cap clipped the panel header off-screen at 1280×800. Mobile gets no new FAB —
+      reached from the hamburger menu instead, since the phone's corner is already at its
+      five-control budget per invariant 0. Verified with Playwright: keyboard nav moves
+      `aria-activedescendant` correctly and Enter opens the right card while closing the list;
+      1280×800 light and 375×812 dark screenshots both clean, no regression to the existing FAB
+      stack or hamburger menu.
 - [x] `[10-P0-1]` **`tours`** `add` — Done 2026-08-16 by cloud shift 4. New `app/tours.ts`
       (54 stops), `app/useTour.ts` (shared panel state), `app/TourPlayer.tsx` (left-rail slide-in
       on desktop, compact card on mobile). Three tours, every stop built from data already on the
@@ -336,8 +347,7 @@ to prevent. Building locally to *test* your own work is expected and fine.
       whoever picks the next one: check a candidate site's actual named-feature count in its own
       `_buildings.geojson` before claiming it — this board's own site-readiness notes have gone
       stale at least twice now (Timgad here, and see the epigraphy note below for three more).*
-- [~] `[10-P0-3]` **`flagship-depth`** `deepen` — claimed by cloud shift 28, 2026-08-18 00:20.
-      Bring POIs whose `notes` runs under 60 words up
+- [x] `[10-P0-3]` **`flagship-depth`** `deepen` — Bring POIs whose `notes` runs under 60 words up
       to real panel depth in that same field, worst-first. This is the **panel tier of
       `[10-P0-2]`** applied to the places that need it most; the tombstone/label tiers still need
       that ticket's schema and UI work. Renders through the card's existing "About" block, so it
@@ -354,6 +364,18 @@ to prevent. Building locally to *test* your own work is expected and fine.
       arguing with itself and trailing off in "... wait: Pompeii is buried by 117". Research
       preserved, voice replaced. What remains in the tail is frontier forts at 44–59 words, not
       monuments anyone came looking for — a lower-value but still real batch 2.*
+      *Batch 2 done 2026-08-18 by cloud shift 28: the 24 thinnest fields (44–53 words), mostly
+      Rhine/Danube/Dacian limes forts plus a handful of Rome monuments (Baths of Trajan, Trajan's
+      Forum and Column, the Temple of Saturn, the Domus Augustana). Rewritten to ~100–130 words
+      each, one genuinely new researched fact woven into the existing text per record — a named
+      excavation, a garrison unit, a construction detail — not padding. Sources merged, not
+      replaced. Depth 82.7% → 87.9%, thin tail 81 → 57. One judgment call worth flagging: German
+      Wikipedia suggests Munningen's garrison may have been withdrawn "by around 110 CE at the
+      latest," which would put the fort's active-garrison status in question at the 117 CE
+      snapshot — the rewritten note was deliberately phrased around this (describes the vicus
+      outlasting the garrison rather than asserting an active 117 CE garrison) rather than
+      silently flipping `extant_117ce`; worth a second look with a primary source. 57 fields
+      still under 60 words for whoever picks this back up.*
 - [ ] `[15-P0-1]` **`unattended-screenshot-gate`** `fix` — ⚠️ **This blocks the daily pass from
       taking any UI ticket at all.** The gate below requires a screenshot at 375×812 dark and at
       desktop light, but the 09:30 editorial pass runs unattended and a dev server cannot be
@@ -404,8 +426,7 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[06-P1-3]` **`building-typology`** `deepen` — Extend to the ~35-term standard vocabulary,
       grouped into six colour families.
 - [ ] `[06-P1-4]` **`excavation-history`** `deepen` — `excavation[]` on all 40 sites.
-- [~] `[09-P1-4]` **`epigraphy`** `deepen` — claimed for batch 3 by cloud shift 28, 2026-08-18
-      00:20. Batch 1 done 2026-08-17 by cloud shift 26. 16
+- [x] `[09-P1-4]` **`epigraphy`** `deepen` — Batch 1 done 2026-08-17 by cloud shift 26. 16
       inscriptions merged into `pois.geojson`'s `ancient_sources[]` (author = corpus siglum,
       work = inscription type, ref = date, to fit the validator's literary-source shape): the 8
       CIL leads shift 25 handed off, verified and written up, plus 8 more researched and verified
@@ -431,6 +452,14 @@ to prevent. Building locally to *test* your own work is expected and fine.
       elogium AE 1996, 685; Mérida theatre's Agrippa dedication CIL II 474; Timgad's Trajanic
       foundation text CIL VIII 2355) — a ready-made head start for whoever adds those POIs. 149/230
       high-confidence POIs remain at 64.8%, unchanged; the standing pipeline itself is unaffected.*
+      *Batch 3 done 2026-08-18 by cloud shift 28: opened the channel batch 2 found closed. Added
+      the three missing POIs (Forum of Aquileia, Roman Theatre of Merida, Forum of Timgad) and
+      attached the three citations batch 2 had already verified and handed off (AE 1996, 685;
+      CIL II 474; CIL VIII 2355 — the Timgad text attached to the forum, not the standing Arch of
+      Trajan, which is Severan and postdates 117 CE per batch 2's own caution). Also attached 5
+      further verified citations to famous POIs that had none: Pantheon (CIL VI 896), Ara Pacis
+      (Res Gestae 12.2), Domus Aurea (Suetonius, *Nero* 31.2), Baths of Nero (Martial 7.34),
+      Rostra (Cassius Dio 47.8.3-4). `pois.geojson` 467 → 470 features.*
 - [ ] `[09-P1-5]` **`clear-unverified`** `verify` — Re-check the citations SHIFT_LOG recorded as
       unverified (Atrium Vestae, Domus Flavia, Bibliotheca Ulpia, Baths of Nero, Ara Pacis).
 - [ ] `[08-P1-4]` **`gazetteer-audit`** `fix` — Londinium is missing from `places_medium`. Audit
@@ -551,8 +580,22 @@ to prevent. Building locally to *test* your own work is expected and fine.
       actioned. Deliberate upgrade with a smoke test.
 - [ ] `[06-P2-6]` **`priority-cities`** `add` — Alexandria, Carthage, Antioch, Londinium,
       Lugdunum, Tarraco, Pergamon, Caesarea Maritima before further Italian secondary towns.
-- [~] `[08-P2-7]` **`ancient-lakes`** `add` — claimed by cloud shift 28, 2026-08-18 00:20.
-      Fucinus, Copais, Karla and the rest.
+- [x] `[08-P2-7]` **`ancient-lakes`** `add` — Done 2026-08-18 by cloud shift 28. 20 named lakes
+      added as a `lake` type on the existing natural-landmarks layer (`landmarks_117.geojson`,
+      24 → 44 features; reuses the layer/source as-is, defaults OFF, no new toggle): Fucino
+      (Claudius's naumachia and failed drainage tunnel), Trasimene (Hannibal's ambush), Avernus
+      (Agrippa's secret fleet base), Lucrinus (Sergius Orata's oyster farms), Bolsena, Albano,
+      Nemi, Como (Pliny the Younger's villas), Garda (Catullus's Sirmio), Maggiore, Bracciano
+      (source of the Aqua Traiana), Geneva (Caesar's rampart against the Helvetii), Constance,
+      Copais (Aristophanes's eel jokes), Karla/Boibeis, Stymphalia (the Stymphalian birds), Moeris
+      (pharaonic hydraulic engineering, still functioning under Rome), Mareotis (Alexandria's
+      inland harbor), the Sea of Galilee, and the Dead Sea. One entry (Karla) shipped without an
+      image — no specific Commons filename could be confirmed with confidence, and a wrong guess
+      is worse than none per the image invariant. First redo of this run's data pipeline is worth
+      noting for future shifts: the file's existing indent style is 1 space per nesting level, not
+      the standard 2 — a first pass through `json.dump(indent=2)` reformatted the whole file and
+      produced a 1,800-line diff for a 20-feature add; redone as a pure text splice matching the
+      file's own indent so the diff is a clean 537-line addition.
 - [x] `[15-P1-4]` **`metrics`** `polish` — Done 2026-08-16 by the mac editorial pass.
       `scripts/metrics.mjs` + `npm run metrics` (`--write` rewrites `METRICS.md`, `--json` for a
       future dashboard). Measures depth, imagery, ancient-source and per-site curation coverage
@@ -790,4 +833,36 @@ count in its own `_buildings.geojson` before claiming it, don't trust an old shi
 unverifiable inscriptions — the three candidate citations this run surfaced (Aquileia forum,
 Mérida theatre, Timgad forum/gate) are ready to merge the moment those POIs exist, which may be
 better framed as a `[06-P2-6]`-adjacent `add` than a further epigraphy research pass. Check the
+board fresh — don't assume this note is still current by the time you read it.
+
+- 2026-08-18 · `[08-P2-7]` ancient-lakes · cloud shift 28. 20 named lakes on the natural-landmarks
+  layer, `landmarks_117.geojson` 24 → 44. See ticket note above.
+- 2026-08-18 · `[10-P0-3]` flagship-depth · cloud shift 28. Batch 2: 24 thinnest descriptions
+  (44–53 words) rewritten to ~100–130 words each, worst-first. Thin tail 81 → 57. See ticket note
+  above.
+- 2026-08-18 · `[09-P1-4]` epigraphy · cloud shift 28. Batch 3: opened the channel batch 2 found
+  closed — added the 3 missing POIs, attached the 3 already-verified citations plus 5 more to
+  existing famous POIs. `pois.geojson` 467 → 470. See ticket note above.
+- 2026-08-18 · `[05-P0-1]` places-in-view-list · cloud shift 28. New accessible,
+  keyboard-navigable viewport browse list; desktop FAB, mobile hamburger-menu entry. See ticket
+  note above.
+
+**Ratio state after this run:** cloud shift 28 ran a complete 1:2:1 cycle — 1 `add`
+(`[08-P2-7]` ancient-lakes), 2 `deepen` (`[10-P0-3]` flagship-depth batch 2, `[09-P1-4]`
+epigraphy batch 3), 1 `polish` (`[05-P0-1]` places-in-view-list). Axis 1 (more cities) was
+checked again and remains genuinely blocked in this sandbox — this session's own probe confirmed
+`overpass-api.de`/`en.wikipedia.org`/`commons.wikimedia.org`/`nominatim.openstreetmap.org` all
+return an explicit `connect_rejected` / policy-denial at the proxy level (see
+`$HTTPS_PROXY/__agentproxy/status`), so `[06-P2-6]` priority-cities is not pickable from this
+environment; WebSearch remains the only working research channel and is what every batch this
+run used. The open cycle is clean; the next run picks whatever's topmost and unclaimed. At the
+time this run ends, the topmost unclaimed P0 tickets are unchanged from last run —
+`[12-P0-1]` merge-themes (`fix`, big), `[03-P0-1]` schema-v2 (`fix`), `[03-P0-2]` card-rebuild
+(`polish`, still missing its "eleven-block order" spec — every shift that's looked at this has
+deferred it for the same reason), `[12-FIX-3]` duplicate-pantheon (`retire`), `[11-P0-3]`
+delete-dead-data (`retire`), and `[08-P1-6]` baalbek-dating (`verify`). The topmost unclaimed
+`add` is now `[07-P1-1]` travel-time (P1, an ORBIS-style journey calculator — bigger scope than a
+data batch, reads as a real Track B candidate for whoever picks it up with time to spare).
+`[09-P1-4]` epigraphy remains a standing task with a working pipeline now that this run cleared
+its POI-availability bottleneck — hundreds of curated POIs still carry no inscription. Check the
 board fresh — don't assume this note is still current by the time you read it.
