@@ -14,6 +14,7 @@ import Legend from "./Legend";
 import ContextMenu from "./ContextMenu";
 import Compass from "./Compass";
 import TourPlayer from "./TourPlayer";
+import PlacesInViewList from "./PlacesInViewList";
 
 export default function Page() {
   return (
@@ -29,6 +30,7 @@ export default function Page() {
       <Compass />
       <HomeButton />
       <ZoomControl />
+      <PlacesInViewList />
       <PlaceDetails />
       <TourPlayer />
       <ContextMenu />

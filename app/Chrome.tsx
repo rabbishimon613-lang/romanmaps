@@ -16,6 +16,7 @@ import CurrencyConverter from "./CurrencyConverter";
 import { useOnboardingHint } from "./useOnboardingHint";
 import { activateRuler } from "./useRuler";
 import { openTourPanel } from "./useTour";
+import { openPlacesInView } from "./usePlacesInView";
 
 export default function Chrome() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -420,6 +421,28 @@ export default function Chrome() {
                   <path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z" />
                 </svg>
                 Guided tours
+              </button>
+              <button
+                onClick={() => {
+                  setMenuOpen(false);
+                  openPlacesInView();
+                }}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 12,
+                  width: "100%",
+                  height: 44,
+                  padding: "0 16px",
+                  textAlign: "left",
+                  fontSize: 13,
+                  color: "var(--text-strong)",
+                }}
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--icon)" style={{ flexShrink: 0 }}>
+                  <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z" />
+                </svg>
+                Places in view
               </button>
             </>
           )}
