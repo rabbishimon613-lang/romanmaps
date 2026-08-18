@@ -8,6 +8,7 @@ import { lifeForCategory } from "./categoryLife";
 import { useIsMobile } from "./useIsMobile";
 import { useNearbyPois } from "./useNearby";
 import { useUnits, formatDistance } from "./useUnits";
+import { setDirectionsDestination } from "./useDirections";
 
 const CONFIDENCE_COLOR: Record<string, string> = {
   high: "var(--ok)",
@@ -56,8 +57,8 @@ type AncientSource = {
 /** Google-Maps-style place details panel: click a POI (app/Map.tsx pois-dot layer) to open,
  * slides in from the left on desktop / up from the bottom on mobile. Replaces the old Maplibre
  * click-popup. On mobile the sheet snaps between a half-height and a full-height state via the
- * drag handle at its top edge; dragging well below half height dismisses it. "Directions to here"
- * wiring is a future upgrade (Directions itself hasn't shipped yet). */
+ * drag handle at its top edge; dragging well below half height dismisses it. "Directions" sets
+ * this place as the destination in the shared useDirections.ts store — [07-P1-1]. */
 // Mobile bottom-sheet snap heights, as vh — three detents, mirroring Google Maps mobile's
 // peek/half/full sheet. Drag the handle to move between them; dragging well below peek height
 // dismisses the panel. A fast flick jumps one detent in the flick direction regardless of how
@@ -398,8 +399,22 @@ export default function PlaceDetails() {
         )}
       </div>
 
-      {/* Two working actions — Zoom to place + Copy link — replaces the four dead pills. */}
+      {/* Three working actions — Directions + Zoom to place + Copy link. */}
       <div style={{ display: "flex", gap: 6, padding: "12px 12px 8px", flexShrink: 0 }}>
+        <PillButton
+          label="Directions"
+          onClick={() => {
+            // Close this panel/sheet too — on mobile the Directions readout card would otherwise
+            // render underneath the still-open bottom sheet, invisible until dismissed by hand.
+            setDirectionsDestination(rendered.lngLat, name);
+            clearPoi();
+          }}
+          icon={
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M21.71 11.29l-9-9a1 1 0 0 0-1.42 0l-9 9a1 1 0 0 0 0 1.42l9 9a1 1 0 0 0 1.42 0l9-9a1 1 0 0 0 0-1.42zM14 14.5V12h-4v3H8v-4a1 1 0 0 1 1-1h5V7.5l3.5 3.5-3.5 3.5z" />
+            </svg>
+          }
+        />
         <PillButton
           label="Zoom to"
           onClick={flyTo}

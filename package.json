@@ -9,6 +9,7 @@
     "validate": "node scripts/validate.mjs",
     "metrics": "node scripts/metrics.mjs",
     "split-site-data": "node scripts/split-site-data.mjs",
+    "build-route-graph": "node scripts/build-route-graph.mjs",
     "postinstall": "git config core.hooksPath .githooks 2>/dev/null || true"
   },
   "dependencies": {

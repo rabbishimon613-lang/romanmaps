@@ -15,6 +15,7 @@ import ContextMenu from "./ContextMenu";
 import Compass from "./Compass";
 import TourPlayer from "./TourPlayer";
 import PlacesInViewList from "./PlacesInViewList";
+import Directions from "./Directions";
 
 export default function Page() {
   return (
@@ -26,6 +27,7 @@ export default function Page() {
       <Chrome />
       <CategoryChips />
       <Ruler />
+      <Directions />
       <Legend />
       <Compass />
       <HomeButton />

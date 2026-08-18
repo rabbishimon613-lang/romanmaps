@@ -5,6 +5,7 @@ import maplibregl from "maplibre-gl";
 import type { Map as MLMap, MapMouseEvent } from "maplibre-gl";
 import { loadPlaces, type Place } from "./places";
 import { activateRuler, useRulerState } from "./useRuler";
+import { setDirectionsOrigin, setDirectionsDestination } from "./useDirections";
 
 type MenuPoint = { x: number; y: number; lng: number; lat: number };
 
@@ -30,8 +31,8 @@ function nearestPlace(places: Place[], lng: number, lat: number): { place: Place
 }
 
 /** Google-Maps-style right-click context menu: "What's here?" (drops a temporary pin with the
- * coordinates + nearest known Roman place), "Directions from/to here" (honestly disabled —
- * Directions itself hasn't shipped), "Measure distance" (hands off to the shared ruler store). */
+ * coordinates + nearest known Roman place), "Directions from/to here" (seeds the shared
+ * useDirections.ts store — [07-P1-1]), "Measure distance" (hands off to the shared ruler store). */
 export default function ContextMenu() {
   const [menu, setMenu] = useState<MenuPoint | null>(null);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -194,6 +195,27 @@ export default function ContextMenu() {
     activateRuler([point.lng, point.lat]);
   }
 
+  // Labels a clicked point with the nearest known place's name when it's genuinely close (under
+  // 300m — otherwise "Directions from Pantheon" would mislabel a point that's actually a
+  // kilometer from the Pantheon), falling back to coordinates like Directions.tsx's own click-to-
+  // set path does.
+  async function labelFor(point: MenuPoint): Promise<string> {
+    const places = await loadPlaces();
+    const nearest = nearestPlace(places, point.lng, point.lat);
+    if (nearest && nearest.km < 0.3) return nearest.place.latin || nearest.place.modern || "Unknown";
+    return `${point.lat.toFixed(4)}, ${point.lng.toFixed(4)}`;
+  }
+
+  async function onDirectionsFromHere(point: MenuPoint) {
+    setMenu(null);
+    setDirectionsOrigin([point.lng, point.lat], await labelFor(point));
+  }
+
+  async function onDirectionsToHere(point: MenuPoint) {
+    setMenu(null);
+    setDirectionsDestination([point.lng, point.lat], await labelFor(point));
+  }
+
   if (!menu) return null;
 
   // Clamp so the menu never renders off-screen — matters most on narrow mobile viewports where a
@@ -220,8 +242,8 @@ export default function ContextMenu() {
       }}
     >
       <MenuItem label="What's here?" onClick={() => onWhatsHere(menu)} />
-      <MenuItem label="Directions from here" disabled title="Coming soon — road routing hasn't shipped yet" />
-      <MenuItem label="Directions to here" disabled title="Coming soon — road routing hasn't shipped yet" />
+      <MenuItem label="Directions from here" onClick={() => onDirectionsFromHere(menu)} />
+      <MenuItem label="Directions to here" onClick={() => onDirectionsToHere(menu)} />
       <MenuItem label="Measure distance" onClick={() => onMeasureFromHere(menu)} />
     </div>
   );

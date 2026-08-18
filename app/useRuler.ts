@@ -1,6 +1,7 @@
 "use client";
 
 import { useSyncExternalStore } from "react";
+import { clearDirections } from "./useDirections";
 
 type LngLat = [number, number];
 type RulerState = { active: boolean; seedPoint?: LngLat };
@@ -27,6 +28,7 @@ function subscribe(onStoreChange: () => void) {
  * "Measure distance" context-menu item). Calling this again while already active resets to the
  * new seed point, matching "start a fresh measurement from here". */
 export function activateRuler(seedPoint?: LngLat) {
+  clearDirections(); // Directions and the ruler are mutually exclusive map "modes", same as Google Maps.
   current = { active: true, seedPoint };
   listeners.forEach((l) => l());
 }
