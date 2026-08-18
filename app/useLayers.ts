@@ -44,7 +44,7 @@ export type LayerGroupId =
  * overlapping translucent polygons and a confetti of colored dots; a thematic layer is only
  * readable one or two at a time. */
 export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: string[]; base?: boolean }[] = [
-  { id: "roads", label: "Roads", mapLayerIds: ["roads-main", "roads-secondary"], base: true },
+  { id: "roads", label: "Roads", mapLayerIds: ["roads-main-casing", "roads-main", "roads-secondary"], base: true },
   { id: "rivers", label: "Rivers & lakes", mapLayerIds: ["rivers", "lakes"], base: true },
   { id: "provinces", label: "Province borders", mapLayerIds: ["provinces-fill", "provinces-line"], base: true },
   { id: "places", label: "Cities & towns", mapLayerIds: ["places-dot", "places-label-major", "places-label-minor"], base: true },

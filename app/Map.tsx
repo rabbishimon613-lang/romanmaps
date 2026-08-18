@@ -31,6 +31,7 @@ type Palette = {
   river: string;
   lake: string;
   roadMain: string;
+  roadMainCasing: string;
   roadSecondary: string;
   placeLabelMajor: string;
   placeLabelMinor: string;
@@ -47,6 +48,7 @@ const LIGHT: Palette = {
   river: "#7fb0c9",
   lake: "#b8dbe6",
   roadMain: "#a12b0d",
+  roadMainCasing: "#5c1c0c",
   roadSecondary: "#c17a4d",
   placeLabelMajor: "#2a1e10",
   placeLabelMinor: "#5c4326",
@@ -63,6 +65,7 @@ const DARK: Palette = {
   river: "#3d6885",
   lake: "#1f3c4d",
   roadMain: "#c9573b",
+  roadMainCasing: "#100907",
   roadSecondary: "#8a5636",
   placeLabelMajor: "#e6dcc4",
   placeLabelMinor: "#a89b7f",
@@ -433,14 +436,29 @@ export default function Map() {
           minzoom: 5.5,
           paint: {
             "line-color": P.roadSecondary,
-            "line-width": ["interpolate", ["linear"], ["zoom"], 5.5, 0.3, 7, 1.0, 10, 2.2],
-            "line-opacity": ["interpolate", ["linear"], ["zoom"], 5.5, 0.35, 7, 0.7, 10, 0.8],
+            "line-width": ["interpolate", ["linear"], ["zoom"], 5.5, 0.45, 7, 1.15, 10, 2.3],
+            "line-opacity": ["interpolate", ["linear"], ["zoom"], 5.5, 0.5, 7, 0.75, 10, 0.85],
           },
           layout: { "line-cap": "round", "line-join": "round" },
         });
 
         map.addSource("roads-main", {
           type: "geojson", maxzoom: 14, buffer: 128, tolerance: 0.375, data: mainRoads,
+        });
+        // Casing under the main-road line — a slightly wider, darker stroke drawn first so a thin
+        // border shows either side of the bright fill on top, the way Google Maps' own highway
+        // casings read. Same zoom/opacity ramp as the fill layer, just wider and behind it.
+        map.addLayer({
+          id: "roads-main-casing",
+          type: "line",
+          source: "roads-main",
+          minzoom: 3.5,
+          paint: {
+            "line-color": P.roadMainCasing,
+            "line-width": ["interpolate", ["linear"], ["zoom"], 3.5, 1.0, 5, 2.0, 7, 3.6, 10, 5.2],
+            "line-opacity": ["interpolate", ["linear"], ["zoom"], 3.5, 0.4, 5, 0.55, 7, 0.65, 10, 0.7],
+          },
+          layout: { "line-cap": "round", "line-join": "round" },
         });
         map.addLayer({
           id: "roads-main",
@@ -449,8 +467,8 @@ export default function Map() {
           minzoom: 3.5,
           paint: {
             "line-color": P.roadMain,
-            "line-width": ["interpolate", ["linear"], ["zoom"], 3.5, 0.25, 5, 1.1, 7, 2.4, 10, 3.6],
-            "line-opacity": ["interpolate", ["linear"], ["zoom"], 3.5, 0.35, 5, 0.7, 7, 0.9, 10, 0.95],
+            "line-width": ["interpolate", ["linear"], ["zoom"], 3.5, 0.55, 5, 1.3, 7, 2.6, 10, 3.8],
+            "line-opacity": ["interpolate", ["linear"], ["zoom"], 3.5, 0.6, 5, 0.8, 7, 0.92, 10, 0.95],
           },
           layout: { "line-cap": "round", "line-join": "round" },
         });
