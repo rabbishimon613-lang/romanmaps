@@ -78,6 +78,14 @@ export default function EpochModal({ onClose }: { onClose: () => void }) {
             Sources: Cassius Dio, <em>Roman History</em> 68.33; <em>Historia Augusta</em>,{" "}
             <em>Hadrian</em> 4.7.
           </p>
+          <a
+            href="/how-we-know"
+            target="_blank"
+            rel="noopener"
+            style={{ display: "inline-block", marginTop: 4, fontSize: 12.5, color: "var(--accent)" }}
+          >
+            How do we source the rest of the map? &rarr;
+          </a>
         </div>
       </div>
     </div>

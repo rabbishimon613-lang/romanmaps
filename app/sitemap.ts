@@ -58,5 +58,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),
+    {
+      url: `${SITE_URL}/how-we-know`,
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    },
   ];
 }
