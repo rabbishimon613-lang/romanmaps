@@ -245,8 +245,7 @@ to prevent. Building locally to *test* your own work is expected and fine.
       wall this and the last two batches hit is now well-enough documented that a batch 6 should
       probably wait for `[09-P1-4]` to open the inscription channel rather than keep re-running
       the same literary-only search against the same thin pool.*
-- [~] `[06-P0-2]` **`curate-buildings`** `deepen` — claimed for Merida by cloud shift 29,
-      2026-08-18. Ostia-depth curated descriptions for the
+- [x] `[06-P0-2]` **`curate-buildings`** `deepen` — Ostia-depth curated descriptions for the
       other 39 sites, ~10 buildings/day. **Standing task, never "done".**
       *Pompeii done 2026-08-16 by cloud shift 3: 28 buildings in `app/pompeiiDescriptions.ts`
       (House of the Faun, Temple of Apollo, the Forum and its temples, the three bath complexes,
@@ -348,6 +347,14 @@ to prevent. Building locally to *test* your own work is expected and fine.
       whoever picks the next one: check a candidate site's actual named-feature count in its own
       `_buildings.geojson` before claiming it — this board's own site-readiness notes have gone
       stale at least twice now (Timgad here, and see the epigraphy note below for three more).*
+      *Merida done 2026-08-18 by cloud shift 29: 10 entries in `app/meridaDescriptions.ts`, the
+      eighth site to get this treatment. Augusta Emerita's monumental core was already built by
+      117 CE, so most entries are honestly `extant_117ce:true` — a rarer shape than recent Trier/
+      Jerash batches that skewed almost entirely false. Two real misattributions researched and
+      written into the copy rather than silently fixed: the "Temple of Diana" (a 17th-century
+      guess) and the "Arch of Trajan" (Tiberian, renamed after its real inscription was lost). One
+      candidate ("Termas romanas") skipped — its coordinates don't match any bath complex this
+      research could confidently identify. 32 sites still open for the standing task.*
 - [x] `[10-P0-3]` **`flagship-depth`** `deepen` — Bring POIs whose `notes` runs under 60 words up
       to real panel depth in that same field, worst-first. This is the **panel tier of
       `[10-P0-2]`** applied to the places that need it most; the tombstone/label tiers still need
@@ -401,8 +408,18 @@ to prevent. Building locally to *test* your own work is expected and fine.
       `app/categoryLife.ts`; renders as "What happened here" on every card. Covered 448/448 POIs
       at ship time; cloud shift 2 added 2 more categories (`ludus`, `sarcophagus_workshop`) the
       same day and kept coverage at 100% — standing task, re-check the count on future adds.
-- [~] `[03-P1-4]` **`nearby-related`** `polish` — claimed by cloud shift 29, 2026-08-18.
-      Six related-place cards on every card and page.
+- [x] `[03-P1-4]` **`nearby-related`** `polish` — Done 2026-08-18 by cloud shift 29. Six closest
+      curated POIs by great-circle distance, same-category boosted so a relevant place a few km
+      further off can outrank an unrelated one next door — `app/useNearby.ts` (client, shared with
+      the live map panel) and a duplicated server-side version in `place/[slug]/page.tsx` (can't
+      import a "use client" hook into a server component; matches this codebase's existing
+      per-file-haversine convention). Clicking a card in the live panel calls `selectPoi()` again
+      and re-renders in place; the static page links to the other place's own URL. Excludes
+      candidates under 25m away — without that filter every place's "Nearby" row led with its own
+      exact duplicate at "8 m", surfaced during testing by the still-open `[12-FIX-3]` Pantheon/
+      Pantheon-Rome pair. Verified with Playwright at 1280×800 light and 375×812 dark: theme
+      tokens throughout (no hardcoded chrome colors), horizontal-scroll strip on the panel, grid
+      on the static page, click-through re-selects correctly on both.
 - [ ] `[02-P0-2]` **`coastline`** `polish` — Coastline stroke over the sea mask.
 - [ ] `[02-P0-3]` **`road-weights`** `polish` — Raise road weights/opacity at low zoom; add
       casings to main roads.
@@ -428,8 +445,7 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[06-P1-3]` **`building-typology`** `deepen` — Extend to the ~35-term standard vocabulary,
       grouped into six colour families.
 - [ ] `[06-P1-4]` **`excavation-history`** `deepen` — `excavation[]` on all 40 sites.
-- [~] `[09-P1-4]` **`epigraphy`** `deepen` — claimed for batch 4 by cloud shift 29, 2026-08-18.
-      Batch 1 done 2026-08-17 by cloud shift 26. 16
+- [x] `[09-P1-4]` **`epigraphy`** `deepen` — Batch 1 done 2026-08-17 by cloud shift 26. 16
       inscriptions merged into `pois.geojson`'s `ancient_sources[]` (author = corpus siglum,
       work = inscription type, ref = date, to fit the validator's literary-source shape): the 8
       CIL leads shift 25 handed off, verified and written up, plus 8 more researched and verified
@@ -463,6 +479,17 @@ to prevent. Building locally to *test* your own work is expected and fine.
       further verified citations to famous POIs that had none: Pantheon (CIL VI 896), Ara Pacis
       (Res Gestae 12.2), Domus Aurea (Suetonius, *Nero* 31.2), Baths of Nero (Martial 7.34),
       Rostra (Cassius Dio 47.8.3-4). `pois.geojson` 467 → 470 features.*
+      *Batch 4 done 2026-08-18 by cloud shift 29: 6 more POIs cited — the Library of Celsus
+      (I.Ephesos 5113, the facade dedication from Aquila to his father), Domus Flavia (Statius,
+      *Silvae* 4.2), Alexandria's Mouseion (Strabo, *Geography* 17.1.8), the Herculaneum
+      Augustales' hall (AE 1979, 169), Circus Flaminius (Livy, *Periochae* 20 — cited to the
+      surviving summary since the full Book 20 is lost, not to a book/chapter that doesn't exist),
+      and the House of the Vettii (two electoral graffiti naming its freedman owners, CIL IV 3509
+      and 3522). Ostia's Synagogue researched and left uncited — its one attributed inscription
+      (Mindius Faustus's ark donation) dates to the second half of the 2nd century CE, not
+      contemporary with 117 CE (the same post-117 finding batch 1 had already made for Ostia's
+      Capitolium/guild seats, corroborated here independently). `pois.geojson`: 167 → 173 of 470
+      POIs now carry `ancient_sources`.*
 - [ ] `[09-P1-5]` **`clear-unverified`** `verify` — Re-check the citations SHIFT_LOG recorded as
       unverified (Atrium Vestae, Domus Flavia, Bibliotheca Ulpia, Baths of Nero, Ara Pacis).
 - [ ] `[08-P1-4]` **`gazetteer-audit`** `fix` — Londinium is missing from `places_medium`. Audit
@@ -577,8 +604,20 @@ to prevent. Building locally to *test* your own work is expected and fine.
       the routes list was correct. Verified: `next build` generates all five routes cleanly;
       screenshotted at 1280×900 light and 375×812 dark.
 - [ ] `[09-P2-8]` **`how-we-know`** `add` — Public methodology page.
-- [~] `[02-P1-6]` **`sea-labels`** `add` — claimed by cloud shift 29, 2026-08-18.
-      `seas.geojson`, ~30 water names, italic letterspaced.
+- [x] `[02-P1-6]` **`sea-labels`** `add` — Done 2026-08-18 by cloud shift 29. 32 named seas, gulfs
+      and straits in `public/data/seas.geojson`, always-on cartographic labels (base geography,
+      not a toggleable overlay — same tier as place labels, no `useLayers.ts` entry). Uppercase
+      letter-spaced text in place of italics — this sandbox couldn't confirm the demotiles glyph
+      set carries an italic face, and the project's existing street-label layers already use the
+      same letter-spacing substitution for the same reason. Latin name (Mare Tyrrhenum, Fretum
+      Gaditanum, ...) surfaces on hover rather than in the display label, per the English-first
+      display-name rule. Two-tier reveal zoom (seas/oceans from z3, gulfs/straits from z5.5) via
+      two filtered symbol layers sharing one source, since MapLibre's `minzoom` is a layer-level
+      property and can't be data-driven per feature. Verified the style is valid (layer list
+      includes both `sea-labels-major`/`-minor`, no MapLibre style errors) — this sandbox's own
+      egress block on `demotiles.maplibre.org` (same as every text layer already on this map)
+      meant the actual glyph rendering itself couldn't be screenshotted here; text-layer syntax
+      and data loading were confirmed instead.
 - [ ] `[12-P1-4]` **`fuzzy-dates`** `fix` — `{earliest, latest, display}` date objects.
 - [ ] `[11-P2-10]` **`next-upgrade`** `fix` — `next@14.2.5` advisory flagged in shift 1 and never
       actioned. Deliberate upgrade with a smoke test.
