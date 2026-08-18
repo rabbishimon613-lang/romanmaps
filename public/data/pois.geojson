@@ -616,7 +616,15 @@
           "https://en.wikipedia.org/wiki/Flavian_Palace",
           "https://www.hmdb.org/m.asp?m=84247"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Statius",
+            "work": "Silvae",
+            "ref": "4.2",
+            "note": "Statius, describing a banquet in Domitian's new palace hall, calls it vast enough to need \"as many columns as could shoulder the gods and the sky\" rather than the hundred columns of an ordinary great hall."
+          }
+        ]
       }
     },
     {
@@ -1046,7 +1054,15 @@
           "https://en.wikipedia.org/wiki/Circus_Flaminius",
           "https://www.digitalaugustanrome.org/records/circus-flaminius/"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "ancient_sources": [
+          {
+            "author": "Livy",
+            "work": "Periochae",
+            "ref": "20",
+            "note": "The surviving summary of Livy's lost Book 20 records that Gaius Flaminius, as censor in 220 BCE, paved the Via Flaminia and built the Circus Flaminius in the same term of office."
+          }
+        ]
       }
     },
     {
@@ -1975,7 +1991,15 @@
           "https://www.worldhistory.org/Library_of_Alexandria/",
           "https://www.badancient.com/claims/julius-caesar-burn-library-of-alexandria/"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "17.1.8",
+            "note": "Strabo describes the Mouseion as part of the royal quarter, with a covered walkway, a shared exedra for discussion, and a large hall where the resident scholars took their meals in common."
+          }
+        ]
       }
     },
     {
@@ -2102,7 +2126,15 @@
           "https://www.worldhistory.org/Library_of_Celsus/",
           "https://www.historyofinformation.com/detail.php?id=4192"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "I.Ephesos 5113",
+            "work": "dedicatory inscription",
+            "ref": "his consul son commissioned the library building, its decoration, statuary and books with his own wealth",
+            "note": "The library's facade inscription records that Gaius Julius Aquila built it in honor of his father Tiberius Julius Celsus Polemaeanus, a former governor of Asia, who is buried beneath the reading room."
+          }
+        ]
       }
     },
     {
@@ -2997,7 +3029,21 @@
           "https://ermakvagus.com/Europe/Italy/Pompeii/vettii.html",
           "https://pompeiiarchaeologicalpark.com/the-house-of-the-vettii-of-pompeii/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "CIL IV 3509",
+            "work": "electoral graffito",
+            "ref": "Vetti Con[vi]va, Augustalis",
+            "note": "Painted election notices on the house's own facade name Aulus Vettius Conviva, one of its two freedman owners, by his title as an Augustalis — the priesthood of the imperial cult freedmen could hold."
+          },
+          {
+            "author": "CIL IV 3522",
+            "work": "electoral graffito",
+            "ref": "Sabinum aed(ilem) Restitutus rog(at)",
+            "note": "A second painted notice on the same facade has Aulus Vettius Restitutus, the house's other owner, canvassing support for a candidate for aedile."
+          }
+        ]
       }
     },
     {
@@ -3114,7 +3160,15 @@
           "https://pleiades.stoa.org/places/925847415 (College of the Augustales)",
           "https://www.worldhistory.org/image/11794/the-so-called-college-of-the-augustales-in-hercula/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "AE 1979, 169",
+            "work": "dedication inscription",
+            "ref": "marble plaque, cella of the Augustales' hall",
+            "note": "Two brothers, Aulus Lucius Proculus and Aulus Lucius Iulianus, funded a dinner for the town councillors and the Augustales to mark the dedication of a monument to the deified Augustus, commemorated on this plaque still fixed inside the hall."
+          }
+        ]
       }
     },
     {
