@@ -7,6 +7,204 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 29 — 2026-08-18 (this shift's own prompt claimed "Shift 2 of four")
+
+**Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt carries
+a stale "Shift N of four" count; `SHIFT_LOG` was 28 real shifts deep at session start, so this
+entry continues as Shift 29. `git pull --rebase` against `origin/main` landed cleanly on the real
+tip with no ref issues this run (unlike a few recent shifts). Read `SHIFT_BRIEF.md` in full, then
+`BOARD.md` per its own instruction.
+
+**Axis 1 (more cities) re-confirmed blocked, with a wider domain sweep than any prior shift ran.**
+Beyond the four domains earlier shifts had already flagged (`overpass-api.de`,
+`en.wikipedia.org`, `commons.wikimedia.org`, `nominatim.openstreetmap.org`), this session also
+tried `pleiades.stoa.org` (the definitive ancient-gazetteer reference the brief itself points
+to), `archli.com` (a classical-geography dictionary), and `penelope.uchicago.edu` (LacusCurtius,
+hosting Strabo's full text) — all four returned an explicit `EGRESS_BLOCKED` from WebFetch. The
+`$HTTPS_PROXY/__agentproxy/status` endpoint itself reported no recent relay failures at session
+start (nothing had been attempted yet), confirming this is a live, current-session block, not a
+stale cached status. WebSearch remains completely unaffected and is what every batch below was
+researched through — search-snippet synthesis rather than primary-page reads, same constraint
+every recent shift has documented.
+
+Claimed four board tickets in one commit (`git pull --rebase` first, per protocol): `sea-labels`
+(`add`, topmost unclaimed that didn't need Overpass — `[07-P1-1]` travel-time was technically
+topmost but flagged by shift 28 as Track-B-sized, picked up separately below instead of forcing
+it into the `add` slot), `curate-buildings`/Merida and `epigraphy` batch 4 (two `deepen`, both
+standing tasks), and `nearby-related` (`polish`, topmost unclaimed unblocked ticket with a real
+spec). A full 1:2:1 cycle, then the rest of the shift went to `[07-P1-1]` travel-time (Directions)
+as the Track B stretch shift 28's own handoff note recommended.
+
+### Board — a full 1 `add` : 2 `deepen` : 1 `polish` cycle, plus a Track B stretch
+
+**`[02-P1-6]` sea-labels (`add`)** — 32 named seas, gulfs and straits (`public/data/seas.geojson`)
+as always-on cartographic labels — Mediterranean sub-seas (Tyrrhenian, Ionian, Aegean, Adriatic,
+Myrtoan, Icarian, Libyan, Sardinian, Balearic, Ligurian, Iberian), major gulfs (Taranto, Ambracia,
+Corinth, Lion, Issus, Persian), and straits (Gibraltar, Messina, the Dardanelles, the Bosphorus,
+the English Channel), plus the Black Sea, Sea of Azov, Sea of Marmara, Red Sea, Arabian Sea,
+Atlantic, North Sea and Irish Sea. Treated as base geography rather than a toggleable overlay —
+same tier as the existing place-label layers, no new `useLayers.ts` entry, since real Google Maps
+never hides ocean names behind a checkbox either. Two-tier reveal zoom (seas/oceans from z3,
+gulfs/straits from z5.5) needed two filtered symbol layers sharing one source rather than one
+layer, since MapLibre's `minzoom` is a layer property and can't be driven per-feature by a data
+expression — tried that first, it silently doesn't work as a `minzoom` value. Labels render
+uppercase and letter-spaced rather than italic: this sandbox couldn't confirm the `demotiles`
+glyph set actually carries an italic face (glyph fetches are blocked here the same way Overpass
+is, so it couldn't be tested directly), and the existing `ostia-street-labels`/similar layers
+already made the same substitution for the same reason — followed the established precedent
+rather than guess. Latin name (Mare Tyrrhenum, Fretum Gaditanum, ...) surfaces on hover, never in
+the on-map label, per the display-name rule. Coordinates and Latin names are standard classical
+geography, corroborated via WebSearch (Dictionary of Greek and Roman Geography snippets, Pleiades
+place-page titles surfaced in search results even though the pages themselves are unfetchable)
+rather than treated as needing per-item primary-source citation, the same bar `ancient-lakes`
+(shift 28) used for comparable base-geography content. `landmarks_117.geojson`-adjacent but its
+own file, since it's pure labels with no `PlaceDetails` card behind them (no `image_url` needed —
+same exemption the schema's own image-invariant note implies for non-card features).
+
+**`[06-P0-2]` curate-buildings, Merida (`deepen`)** — 10 entries in `app/meridaDescriptions.ts`,
+the eighth site to get Ostia-depth treatment. Checked the actual named-feature count before
+claiming (per shift 27's own flagged lesson that these counts go stale): 46 named features in
+`merida_buildings.geojson`, of which 10 turned out genuinely researchable and Roman. Augusta
+Emerita's monumental core was mostly built by 117 CE — a rarer shape than the last several
+batches (Trier, Jerash) which skewed almost entirely `extant_117ce: false` — so most entries here
+are honestly `true`: the Temple of Diana (Augustan-Tiberian imperial-cult temple), the Municipal
+Forum, the Arch of "Trajan," the Roman Circus, the Casa del Mitreo, the Casa del Anfiteatro, Los
+Columbarios necropolis, and the Decumanus Maximus. Two real misattributions surfaced by the
+research and written into the copy rather than silently corrected, matching this project's own
+established voice for exactly this situation: the "Temple of Diana" has nothing to do with Diana
+(a 17th-century local historian's guess), and the "Arch of Trajan" has nothing to do with Trajan
+either — it was built under Tiberius as a gateway to the Imperial cult precinct, and picked up its
+current name only after its real dedicatory inscription was lost. The Alcazaba (835 CE Islamic
+citadel built from reused Roman stone), the National Museum of Roman Art (1986, Rafael Moneo),
+and the Xenodochium (580 CE Visigothic hospital) are the three honestly `false` entries. One
+candidate ("Termas romanas") deliberately skipped rather than guessed: its coordinates cluster
+near the Circus and Xenodochium, not near any of Augusta Emerita's documented bath complexes
+(San Lázaro, the Forum baths, Huerta de Otero) this research could confidently place there —
+same call Trier's "Roter Turm" made for a different reason (an ambiguous duplicate name there;
+an ambiguous location here). Verified with Playwright against the built production bundle:
+clicking the Temple of Diana and Trajan's Arch both surface the correct curated text and dates.
+
+**`[09-P1-4]` epigraphy, batch 4 (`deepen`)** — 6 more POIs cited in `pois.geojson`'s
+`ancient_sources[]`: the Library of Celsus (I.Ephesos 5113, the facade dedication from Gaius
+Julius Aquila to his father), Domus Flavia (Statius, *Silvae* 4.2 — the banquet-hall-columns
+line), Alexandria's Mouseion (Strabo, *Geography* 17.1.8), the Herculaneum Augustales' hall
+(AE 1979, 169), Circus Flaminius (Livy, *Periochae* 20 — the full Book 20 is one of the lost
+books, so this cites the surviving summary rather than inventing a book/chapter reference that
+doesn't exist), and the House of the Vettii (two electoral graffiti naming its freedman owners by
+name, CIL IV 3509 and 3522 — a nice case where the "ancient source" is literally paint on the
+house's own facade). Ostia's Synagogue was researched and deliberately left uncited: its one
+attributed inscription (Mindius Faustus's ark donation) is dated by its own restoration to the
+second half of the 2nd century CE, not contemporary with this map's 117 CE snapshot — the same
+post-117 finding batch 1 had already made independently for Ostia's Capitolium and guild seats,
+now corroborated a second time for a third Ostia building. `pois.geojson`: 167 → 173 of 470 POIs
+now carry `ancient_sources`.
+
+**`[03-P1-4]` nearby-related (`polish`)** — new `app/useNearby.ts` (shared scoring, used by the
+live map panel) plus a duplicated server-side version in `place/[slug]/page.tsx` (a "use client"
+hook can't be imported into a server component, so this follows the codebase's own established
+per-file-haversine convention — `ContextMenu.tsx`, `PlacesInViewList.tsx` and `Ruler.tsx` each
+already keep independent copies for the same reason). Six closest curated POIs by great-circle
+distance, with a same-category boost (~8km) so a relevant temple a little further off can
+outrank an unrelated warehouse next door without ignoring proximity entirely. Clicking a card in
+the live panel calls `selectPoi()` again and the same panel re-renders in place; the static page
+links to the other place's own `/place/<slug>` URL. **A real, user-visible bug caught during
+testing, not before it**: without a minimum-distance filter, every place's own "Nearby" row led
+with its exact duplicate at "8 m" away — the still-open `[12-FIX-3]` duplicate-pantheon ticket's
+`poi_pantheon`/`poi_pantheon_rome` pair is the concrete case that surfaced this, and the fix
+(exclude candidates under 25m) is now in both the client hook and the server-side duplicate.
+Worth flagging up: this is the second independent feature (after epigraphy batch 3's citation
+research) to trip over that same known duplicate, which argues for bumping `[12-FIX-3]`'s
+priority rather than letting a third feature rediscover it. Verified with Playwright at 1280×800
+light and 375×812 dark: cards render with theme tokens throughout (caught and fixed a stray
+`next-server` process serving a stale build during testing — a `ChunkLoadError`/React error #423
+that looked like a real bug until a clean `kill` + `next start` resolved it; worth flagging for
+future shifts since it's easy to misdiagnose as a code issue), horizontal-scroll on the panel,
+grid on the static page, click-through re-selects correctly on both.
+
+**`[07-P1-1]` travel-time / Directions (`add`, Track B stretch)** — the feature FEATURE_BACKLOG.md
+has called "highest-impact single feature in the backlog" since Shift 1, previously wired
+everywhere as an honestly-disabled "coming soon." Built end-to-end this shift:
+`scripts/build-route-graph.mjs` reads the two existing Itiner-e road files (`roads_main.geojson`,
+`roads_secondary.geojson`, 14,601 LineString segments combined) and builds a routable graph by
+treating each segment as an edge between its two endpoints, deduped to shared nodes by rounding
+to 4 decimal degrees (~11m). A quick check before committing to this approach found the network
+is already almost fully connected at that precision — 9,477 of 10,214 unique rounded endpoints
+are shared by 2+ segments — so a full vertex-level topology rebuild wasn't needed; the simpler
+endpoint-graph captures the real network shape. Output is `public/data/route_graph.json` (~6MB,
+self-contained with each edge's own coordinates for rendering), fetched only when Directions is
+actually opened — never adds to the initial page load. `app/routeGraph.ts` runs Dijkstra
+client-side with a hand-written binary min-heap; a naive flat-array scan over ~10k nodes would be
+close to 100M operations and visibly janky on a click, the heap keeps it to O(E log V) and
+resolves in well under a second in testing. `app/Directions.tsx` + `app/useDirections.ts` wire
+three entry points — clicking the map directly while Directions is open, the right-click context
+menu's "Directions from/to here" (now real, was disabled since Shift 7), and a new "Directions"
+button on every place card (replacing the old two-pill row with three) — into one shared session
+that draws the real road route as a blue line and reports total distance plus legion/merchant
+travel-day estimates using FEATURE_BACKLOG's own stated assumptions (25/15 Roman miles per day,
+1 Roman mile ≈ 1.48 km). Directions and the ruler are made mutually exclusive map "modes" —
+starting one silently cancels the other via a small cross-import between `useDirections.ts` and
+`useRuler.ts` — matching how real Google Maps only ever runs one such mode at a time and avoiding
+two floating cards fighting for the same screen corner.
+
+Two edge cases were treated as real findings worth surfacing rather than smoothed over: a query
+whose two points fall in different connected components of the road network — confirmed with a
+deliberate mainland-Italy-to-Vindolanda test, since the Channel has no bridge in the source data
+— correctly reports "No road route found" instead of drawing a straight line across open sea,
+which would have been a much easier but dishonest thing to ship. And because the graph only has
+nodes where real road segments end, a click that doesn't land exactly on a mapped road reports
+its own "approach distance" to the nearest road separately in the results card, rather than
+silently folding an unstated straight-line guess into the total.
+
+**A real testing-harness gotcha worth logging for whoever writes Playwright tests against this
+map next**: simulating a right-click with `page.mouse.click(x, y, {button: 'right'})` reaches
+`document`'s own `contextmenu` listener reliably, but reaching MapLibre's internal
+canvas-container-scoped `contextmenu` emitter this way was flaky — sometimes worked, sometimes
+silently didn't, with no correlation found to click position, zoom, or nearby markers after
+several rounds of isolating variables. Calling `window.__map.fire('contextmenu', {point, lngLat,
+preventDefault(){}, originalEvent: new MouseEvent('contextmenu')})` directly against the map
+object bypassed the flakiness entirely and is what every context-menu test in this shift
+ultimately used. Verified end-to-end this way: a real Rome→Ostia query returns 24.9 km over an
+18-point road-following polyline (visibly following the actual Via Ostiensis corridor in the
+screenshot, not a straight line) in well under a second; the Britain no-route case reports
+correctly; both entry points work at 1280×900 light and 375×812 dark, desktop and mobile — the
+place-card entry point now also closes the mobile bottom sheet on click so the results card isn't
+left hidden underneath it, a fix made after first testing surfaced exactly that problem.
+
+### Metrics
+
+`npm run metrics -- --write`: 470 POIs unchanged in count but 167 → 173 now carry
+`ancient_sources` (35.5% → 36.8%). Curated-building coverage 7/40 → 8/40 sites (17.5% → 20.0%).
+29 thematic files now (seas.geojson new), 748 → 780 pre-merge thematic records. Validator: 0
+errors, same 14 reviewed warnings, cross-file collision count unchanged at 75 (none of this run's
+additions introduced a new near-duplicate — the nearby-related 25m filter catches existing ones
+at query time without touching the underlying data). `next build` clean throughout (564 static
+routes, unchanged — Directions is client-side only, no new static pages).
+
+### What's next
+
+- **Board, fresh cycle**: this run closed a clean 1:2:1 plus the `[07-P1-1]` stretch, so the next
+  run picks whatever's topmost and unclaimed. Topmost unclaimed P0 tickets are unchanged across
+  several runs now — `[12-P0-1]` merge-themes (`fix`, big), `[03-P0-1]` schema-v2 (`fix`),
+  `[03-P0-2]` card-rebuild (`polish`, still missing its spec), `[12-FIX-3]` duplicate-pantheon
+  (`retire` — now flagged twice by independent features, see nearby-related above; worth
+  prioritizing), `[11-P0-3]` delete-dead-data (`retire`), `[08-P1-6]` baalbek-dating (`verify`).
+  The topmost unclaimed `add` is `[09-P2-8]` how-we-know (a public methodology page) —
+  `[06-P2-6]` priority-cities remains blocked on Overpass access.
+- **Directions has two real, scoped-out extensions** for whoever wants them: sea legs (a
+  genuinely different routing problem — sailing-season-dependent, no equivalent maritime network
+  file exists in `public/data/` yet, would need its own research pass to build one) and
+  multi-stop itineraries (currently strictly point-to-point).
+- **Axis 1 (more cities) needs either a non-Overpass sourcing approach or a different
+  environment** — this run's wider domain sweep (Pleiades, archli.com, LacusCurtius, on top of
+  the four domains prior shifts already confirmed) makes it clear this is a deliberate, broad
+  policy block on reference/data-source domains generally, not a narrow one on a handful of
+  sites. WebSearch is unaffected and remains every axis's actual research channel.
+- **`[10-P0-3]` flagship-depth**: still 57 fields under 60 words, untouched this run.
+  **`[09-P1-4]` epigraphy**: standing task, hundreds of curated POIs still carry no citation.
+  **`[06-P0-2]` curate-buildings**: 32 sites still open for the standing task.
+
+---
+
 ## Shift 28 — 2026-08-18 (this shift's own prompt claimed "Shift 1 of four")
 
 **Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt carries
