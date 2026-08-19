@@ -634,8 +634,27 @@ to prevent. Building locally to *test* your own work is expected and fine.
       fix needed. `pois.geojson`: 173 → 178 of 469 POIs now carry `ancient_sources`.*
 - [ ] `[09-P1-5]` **`clear-unverified`** `verify` — Re-check the citations SHIFT_LOG recorded as
       unverified (Atrium Vestae, Domus Flavia, Bibliotheca Ulpia, Baths of Nero, Ara Pacis).
-- [ ] `[08-P1-4]` **`gazetteer-audit`** `fix` — Londinium is missing from `places_medium`. Audit
-      against Pleiades and find the rest of the hole.
+- [x] `[08-P1-4]` **`gazetteer-audit`** `fix` — Done 2026-08-19 by cloud shift 32. First
+      finding was a false alarm worth recording: a script searching `places_medium.geojson` for
+      Londinium by a `name` field came up empty and nearly triggered a duplicate "fix" — but the
+      file's real schema is `modern`/`latin`/`greek`, not `name`, and a corrected search found
+      Londinium already present (`id: 900002`, `major: 1`, added by an earlier shift's capital
+      sweep). Ran the same corrected search against 17 more major cities and found the real hole
+      the ticket's own text asked for: **Carthage, Thessalonica, Sirmium, Serdica, Tarraco,
+      Byzantium, Pergamum, Sardis, Nicomedia, Caesarea Maritima, and Smyrna** were all genuinely
+      missing (their only gazetteer hits were unrelated minor satellite villages, e.g.
+      Nicomedia's search only surfaced a village "10 miles E Nicomedia"). Added all 11 following
+      the exact schema and `major: 1`/id-9000xx convention the earlier capital sweep set (`id`
+      900013-900023, `type: "12"`, `accuracy: 20`, real coordinates, each city's own founding
+      year). File is a single compact JSON line with no whitespace — wrote the append with
+      `separators=(", ", ": ")` and no `indent` to keep the diff to +1/-1 lines instead of
+      reformatting all 16,326 existing features (caught and reverted a first attempt that did
+      exactly that). **Verified live**: `next dev` + Playwright, searched "Sremska Mitrovica"
+      (Sirmium's modern name) and watched it resolve to the Sirmium card with "Today: Sremska
+      Mitrovica" — same path Roma/Londinium/Alexandria already used. `npm run validate` clean.
+      Mérida and Ravenna deliberately left out of this batch — both already searchable as
+      curated `sites.ts` entries, so a second raw-gazetteer point would be redundant rather than
+      filling a real hole.
 - [x] `[14-P1-4]` **`province-pages`** `add` — Done 2026-08-17 by cloud shift 24. New
       `app/provinces.ts` (43 provinces — Italy's eleven Augustan regiones fold into one Italia
       entry, not a separate province each; a few short-lived/contested units fold into their
