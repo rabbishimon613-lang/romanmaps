@@ -19,10 +19,12 @@ the script.
 
 Kept here rather than inside a dated section, because the dated sections are regenerated and
 this reasoning would be destroyed each time. Four India trade contacts and two neighbouring
-powers (Kushan, Han) sit outside the empire envelope because that is the point of them. Seven
+powers (Kushan, Han) sit outside the empire envelope because that is the point of them. Eleven
 `letters.geojson` routes are LineStrings that name themselves through `from`/`to` rather than a
-`name` field. (The former `roads_low.geojson` empty-geometry warning is gone along with the
-file — deleted 2026-08-19 under `[11-P0-3]`, it was dead weight with zero code references.)
+`name` field — seven from Pliny's corpus, four added 2026-08-19 by cloud shift 34 for Ignatius of
+Antioch's route, same convention. (The former `roads_low.geojson` empty-geometry warning is gone
+along with the file — deleted 2026-08-19 under `[11-P0-3]`, it was dead weight with zero code
+references.)
 
 ---
 
@@ -31,8 +33,8 @@ file — deleted 2026-08-19 under `[11-P0-3]`, it was dead weight with zero code
 | Measure | Value | Notes |
 |---|---:|---|
 | POIs in `pois.geojson` | 469 | the curated place canon |
-| Records in the 29 thematic files | 875 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
-| **Curated places, total** | **1,344** | |
+| Records in the 29 thematic files | 994 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
+| **Curated places, total** | **1,463** | |
 | Description of 60+ words | 469 · **100.0%** | measured on `notes`; 0 still thin |
 | Has an image | 253 · **53.9%** | |
 | Has an ancient source | 177 · **37.7%** | |
@@ -40,8 +42,8 @@ file — deleted 2026-08-19 under `[11-P0-3]`, it was dead weight with zero code
 | Categories with a "what happened here" paragraph | 52 / 52 · **100.0%** | covers 469/469 POIs |
 | Sites with curated building descriptions | 10 / 40 · **25.0%** | athens, delphi, ephesus, herculaneum, jerash, merida, ostia, palmyra, pompeii, trier (`[06-P0-2]`, standing) |
 | Validator errors | **0** | |
-| Validator warnings | 13 | reviewed; see the standing-warnings note |
-| Cross-file name collisions (<150 m) | 78 | the dedupe backlog `[12-P0-1]` has to resolve |
+| Validator warnings | 17 | reviewed; see the standing-warnings note |
+| Cross-file name collisions (<150 m) | 111 | the dedupe backlog `[12-P0-1]` has to resolve |
 | Cold-load LCP | not measured | needs a dev server; blocked by `[15-P0-1]` |
 
 ## 2026-08-18
