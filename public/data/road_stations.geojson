@@ -4963,6 +4963,465 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.48,
+          41.998
+        ]
+      },
+      "properties": {
+        "id": "station_ad_rubras",
+        "category": "mansio",
+        "name": "Ad Rubras (Saxa Rubra)",
+        "road": "Via Flaminia",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Ad Rubras stood nine Roman miles north of Rome on the Via Flaminia, at the point where the Via Tiberina split off toward the river valley. The station took its name from the reddish volcanic outcrops (saxa rubra) along the road and later lent its name to the nearby site of Constantine's victory at the Milvian Bridge in 312 CE. The Tabula Peutingeriana marks it among the first stops leaving the city.",
+        "sources": [
+          "Tabula Peutingeriana (Segmentum V)",
+          "https://en.wikipedia.org/wiki/Saxa_Rubra"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.476,
+          42.127
+        ]
+      },
+      "properties": {
+        "id": "station_ad_vicesimum",
+        "category": "mutatio",
+        "name": "Ad Vicesimum",
+        "road": "Via Flaminia",
+        "distance_from_previous_mp": 11,
+        "identified": false,
+        "notes": "Ad Vicesimum marked the twentieth Roman mile of the Via Flaminia, named simply for its milepost like many roadside changing-stations. The Bordeaux Pilgrim's itinerary of 333 CE records it eleven miles beyond Ad Rubras and twelve short of Aqua Viva. Its exact site in the Tiber valley north of Rome, somewhere near modern Castelnuovo di Porto or Morlupo, has never been pinpointed archaeologically.",
+        "sources": [
+          "Itinerarium Burdigalense, 20 m.p. ab Urbe",
+          "https://en.wikipedia.org/wiki/Itinerarium_Burdigalense"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.475,
+          42.174
+        ]
+      },
+      "properties": {
+        "id": "station_rostrata_villa",
+        "category": "mansio",
+        "name": "Rostrata Villa",
+        "road": "Via Flaminia",
+        "distance_from_previous_mp": 4,
+        "identified": false,
+        "notes": "Rostrata Villa appeared in the Antonine Itinerary as a stage twenty-four miles from Rome, likely named for a villa decorated with ship's-beak (rostra) trophies. Gazetteers place it in the territory of Rignano Flaminio, though no excavation has fixed the exact site on the ground. It sat on the stretch of road running through the Tiber valley toward Civita Castellana.",
+        "sources": [
+          "Itin. Ant. 24 m.p. ab Urbe",
+          "https://pleiades.stoa.org/places/413287"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.472,
+          42.268
+        ]
+      },
+      "properties": {
+        "id": "station_aqua_viva",
+        "category": "mutatio",
+        "name": "Aqua Viva",
+        "road": "Via Flaminia",
+        "distance_from_previous_mp": 8,
+        "identified": false,
+        "notes": "Aqua Viva was a horse-changing mutatio recorded by the Bordeaux Pilgrim and marked on the Tabula Peutingeriana between Ad Vicesimum and Ocriculum. Its name, 'living water,' points to a spring or perennial stream that supplied travelers, a common naming pattern for Roman roadside halts. Its precise findspot in the hills near Civita Castellana has not been confirmed by excavation.",
+        "sources": [
+          "Itinerarium Burdigalense (mutatio Aqua Viva)",
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4653,
+          42.4154
+        ]
+      },
+      "properties": {
+        "id": "station_ocriculum",
+        "category": "mansio",
+        "name": "Ocriculum",
+        "road": "Via Flaminia",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Ocriculum stood forty-four Roman miles from Rome where the Flaminia ran close along the east bank of the Tiber, the first Umbrian town travelers reached heading north. The archaeological park below modern Otricoli has exposed its forum, theater, amphitheater, baths, and a stretch of the paved road itself. Both the Antonine Itinerary and the Bordeaux Pilgrim list it as a civitas stop.",
+        "sources": [
+          "Itin. Ant. 44 m.p. ab Urbe",
+          "https://en.wikipedia.org/wiki/Ocriculum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.515,
+          42.5178
+        ]
+      },
+      "properties": {
+        "id": "station_narnia",
+        "category": "mansio",
+        "name": "Narnia",
+        "road": "Via Flaminia",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Narnia occupied a defensible spur above the Nera gorge, reached by the Bridge of Augustus, and had been a Latin colony since 299 BCE, long before the road reached it. The town was where the Flaminia split into two branches to Forum Flaminii: one via Interamna and Spoletium, the other via Carsulae and Mevania. The Antonine Itinerary places it fifty-six Roman miles from Rome.",
+        "sources": [
+          "Itin. Ant. 56 m.p. ab Urbe",
+          "https://en.wikipedia.org/wiki/Narni"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6458,
+          42.5636
+        ]
+      },
+      "properties": {
+        "id": "station_interamna_nahars",
+        "category": "mansio",
+        "name": "Interamna Nahars",
+        "road": "Via Flaminia",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Interamna Nahars, 'between the rivers' for its position among branches of the Nera, lay on the eastern branch of the Flaminia that the Antonine Itinerary and the Bordeaux Pilgrim record instead of the more direct route via Carsulae. This loop was already in regular use by the later first century CE and added roughly a dozen miles to the trip to Forum Flaminii. Modern Terni preserves the ancient street grid inside its historic center.",
+        "sources": [
+          "Itin. Ant. (Narnia-Interamna stage), 9 m.p.",
+          "https://en.wikipedia.org/wiki/Terni"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7378,
+          42.7336
+        ]
+      },
+      "properties": {
+        "id": "station_spoletium",
+        "category": "mansio",
+        "name": "Spoletium",
+        "road": "Via Flaminia",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Spoletium was a Latin colony founded in 241 BCE that the eastern branch of the Flaminia later folded into its route between Interamna and Forum Flaminii. Its Roman theater, amphitheater, and the Ponte Sanguinario still stand beneath the medieval town. The Antonine Itinerary places it eighteen miles beyond Interamna on the branch line.",
+        "sources": [
+          "Itin. Ant. 83 m.p. ab Urbe (Interamna branch)",
+          "https://en.wikipedia.org/wiki/Spoleto"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7228,
+          42.9825
+        ]
+      },
+      "properties": {
+        "id": "station_forum_flaminii",
+        "category": "vicus",
+        "name": "Forum Flaminii",
+        "road": "Via Flaminia",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "Forum Flaminii owed its founding to Gaius Flaminius himself, planted as a market vicus where the road's two branches reunited before climbing into the Apennines. The Bordeaux Pilgrim's itinerary places it twenty miles beyond Spoletium; the Antonine Itinerary gives a slightly shorter eighteen, a routine discrepancy between the surviving sources. The site survives as the frazione of San Giovanni Profiamma outside Foligno, where a Roman arch still spans the old road.",
+        "sources": [
+          "Itinerarium Hierosolymitanum, civitas Foro Flaminii ~20 m.p. post Spoletium",
+          "https://en.wikipedia.org/wiki/San_Giovanni_Profiamma"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7877,
+          43.117
+        ]
+      },
+      "properties": {
+        "id": "station_nuceria_camellaria",
+        "category": "mansio",
+        "name": "Nuceria Camellaria",
+        "road": "Via Flaminia",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Nuceria Camellaria took its epithet from the camellaria, pack-mule stables serving traffic bound for the Apennine passes. The Tabula Peutingeriana and the Bordeaux Pilgrim both place it twelve miles beyond Forum Flaminii, though the surviving Antonine Itinerary text skips straight from Forum Flaminii to Helvillum without naming it. Modern Nocera Umbra continues the ancient name on the same spur above the road.",
+        "sources": [
+          "Tabula Peutingeriana; Itinerarium Hierosolymitanum, 12 m.p. post Forum Flaminii",
+          "https://en.wikipedia.org/wiki/Nocera_Umbra"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7847,
+          43.2322
+        ]
+      },
+      "properties": {
+        "id": "station_tadinum",
+        "category": "mansio",
+        "name": "Tadinum",
+        "road": "Via Flaminia",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Tadinum stood in the plain below the hill where medieval Gualdo Tadino later grew, on the stretch of the Flaminia a few miles short of Helvillum. Rome took the Umbrian settlement in 266 BCE, well before Flaminius built the road past it, and the town later gave its name to the decisive Battle of Taginae in 552 CE.",
+        "sources": [
+          "Itinerarium Burdigalense, civitas Tadinum (derived split from Nuceria)",
+          "https://en.wikipedia.org/wiki/Gualdo_Tadino"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7409,
+          43.3316
+        ]
+      },
+      "properties": {
+        "id": "station_helvillum",
+        "category": "mutatio",
+        "name": "Helvillum",
+        "road": "Via Flaminia",
+        "distance_from_previous_mp": 8,
+        "identified": false,
+        "notes": "Helvillum appears in all four surviving Roman itineraries of the Via Flaminia, making it one of the best-attested mutationes on the mountain stretch of the road, yet its exact site is disputed. Most scholars place it at Sigillo, though some argue for neighboring Fossato di Vico instead, since no inscription has fixed the station on the ground. The Antonine Itinerary places it 128 Roman miles from Rome, just before the climb to the Scheggia pass.",
+        "sources": [
+          "Itin. Ant. 128 m.p. ab Urbe",
+          "Itinerarium Burdigalense",
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6583,
+          43.4056
+        ]
+      },
+      "properties": {
+        "id": "station_ad_ensem",
+        "category": "mutatio",
+        "name": "Ad Ensem",
+        "road": "Via Flaminia",
+        "distance_from_previous_mp": 8,
+        "identified": true,
+        "notes": "Ad Ensem sat at the Passo della Scheggia, 632 meters up, where the Via Flaminia crossed the main Apennine ridge and left Umbria for the ager Gallicus. The Tabula Peutingeriana and the Bordeaux Pilgrim's itinerary both record a mutatio here between Helvillum and Cales. The frazione of Scheggia still sits just below the pass on the modern SS3.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "Itinerarium Burdigalense (route via Ad Ensem/Scheggia Pass)",
+          "https://en.wikipedia.org/wiki/Scheggia_Pass"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.633,
+          43.467
+        ]
+      },
+      "properties": {
+        "id": "station_luceoli",
+        "category": "vicus",
+        "name": "Luceoli",
+        "road": "Via Flaminia",
+        "distance_from_previous_mp": 6,
+        "identified": true,
+        "notes": "Luceoli grew as a vicus where the road descended from the Scheggia pass into the Cantiano valley, and later became a Byzantine-era diocese in its own right. A Roman milestone found at Cantiano and dated 305 CE recorded the site as the 140th mile from Rome, and the nearby frazione of Pontericcioli still preserves the name through 'Pons Luceoli.' It appears on the Tabula Peutingeriana between the Apennine crossing and Cales.",
+        "sources": [
+          "CIL milestone, Cantiano, mile CXL (dated 305 CE)",
+          "Tabula Peutingeriana",
+          "https://en.wikipedia.org/wiki/Cantiano"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6402,
+          43.5453
+        ]
+      },
+      "properties": {
+        "id": "station_cales_flaminia",
+        "category": "vicus",
+        "name": "Cales (Ad Calem)",
+        "road": "Via Flaminia",
+        "distance_from_previous_mp": 11,
+        "identified": true,
+        "notes": "Cales, 'Ad Calem' in the itineraries, was the eighth principal stage the Antonine Itinerary lists on the Via Flaminia, set on a hill between the Bosso and Burano streams. Cagli's archaeological museum displays finds from the Roman settlement, whose checkerboard street plan still shows through the medieval town above it. The Antonine Itinerary fixes it 151 Roman miles from Rome.",
+        "sources": [
+          "Itin. Ant. 151 m.p. ab Urbe",
+          "https://en.wikipedia.org/wiki/Cagli"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7137,
+          43.639
+        ]
+      },
+      "properties": {
+        "id": "station_intercisa",
+        "category": "mutatio",
+        "name": "Intercisa",
+        "road": "Via Flaminia",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Intercisa, 'the cut-through,' named the narrow gorge of the Candigliano river that the Flaminia crossed by tunnel, first bored in the third century BCE and enlarged by Vespasian in 76-77 CE, a work his own dedicatory inscription at the site still records. The Jerusalem Itinerary and the Tabula Peutingeriana both list the mutatio here, nine Roman miles short of Forum Sempronii. The tunnel remains walkable today inside the Passo del Furlo nature reserve.",
+        "sources": [
+          "Itinerarium Hierosolymitanum; Tabula Peutingeriana, mutatio Ad Intercisa, 9 m.p. a Foro Sempronii",
+          "https://en.wikipedia.org/wiki/Furlo_Pass"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8033,
+          43.6887
+        ]
+      },
+      "properties": {
+        "id": "station_forum_sempronii",
+        "category": "mansio",
+        "name": "Forum Sempronii",
+        "road": "Via Flaminia",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Forum Sempronii marked the point where the Via Flaminia emerged from the Apennine gorges into the Metauro valley, a market town the Antonine Itinerary places 169 Roman miles from Rome. Excavations at modern Fossombrone have uncovered its forum, an amphitheater, and stretches of the ancient road surface. The site controlled traffic funneling out of the Furlo pass toward the Adriatic coast.",
+        "sources": [
+          "Itin. Ant. 169 m.p. ab Urbe",
+          "https://en.wikipedia.org/wiki/Fossombrone"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0189,
+          43.8438
+        ]
+      },
+      "properties": {
+        "id": "station_fanum_fortunae",
+        "category": "mansio",
+        "name": "Fanum Fortunae",
+        "road": "Via Flaminia",
+        "distance_from_previous_mp": 17,
+        "identified": true,
+        "notes": "Fanum Fortunae, named for a temple to Fortuna near the road, was where the Via Flaminia finally reached the Adriatic after crossing the Apennines. Augustus refounded it as the colonia Iulia Fanestris and built the three-arched Arco d'Augusto that still stands as the town gate where the Flaminia entered the walls. Itinerary sources place it roughly 185 miles from Rome overall.",
+        "sources": [
+          "Itin. Ant. 185 m.p. ab Urbe",
+          "https://en.wikipedia.org/wiki/Fano"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9145,
+          43.9109
+        ]
+      },
+      "properties": {
+        "id": "station_pisaurum",
+        "category": "mansio",
+        "name": "Pisaurum",
+        "road": "Via Flaminia",
+        "distance_from_previous_mp": 8,
+        "identified": true,
+        "notes": "Pisaurum was founded as a Roman colony in 184 BCE, decades before the Via Flaminia reached it, and grew into the last major stop before the road's terminus at Ariminum. The Antonine Itinerary records it 193 Roman miles from Rome and eight beyond Fanum Fortunae. Modern Pesaro's historic center overlies the Roman street grid at the mouth of the Foglia river.",
+        "sources": [
+          "Itin. Ant. 193 m.p. ab Urbe",
+          "https://en.wikipedia.org/wiki/Pesaro"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
