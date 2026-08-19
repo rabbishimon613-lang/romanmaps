@@ -332,6 +332,259 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2926,
+          36.5297
+        ]
+      },
+      "properties": {
+        "id": "conventus_gades",
+        "name": "Cadiz",
+        "province": "Baetica",
+        "modern_location": "Cadiz, Spain",
+        "extant_117ce": true,
+        "notes": "Gades headed the conventus Gaditanus, the westernmost of Baetica's four assize districts, seated in a port city that predated Rome itself. Phoenician traders from Tyre founded Gadir around 800 BC, and after siding with Rome against Carthage the city rose to allied status before Julius Caesar granted its citizens full Roman citizenship in 49 BC. Its native son Lucius Cornelius Balbus became the first foreign-born consul in Roman history, proof of how far Gaditane wealth and connections reached into the Senate itself. Fishermen and garum merchants along the Atlantic coast brought their disputes to a court that felt as much like a trading floor as a Roman tribunal.",
+        "sources": [
+          "Pliny the Elder's Natural History 3.7 (conventus lists of Baetica)",
+          "https://en.wikipedia.org/wiki/C%C3%A1diz",
+          "https://en.wikipedia.org/wiki/Hispania_Baetica"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7794,
+          37.8882
+        ]
+      },
+      "properties": {
+        "id": "conventus_corduba",
+        "name": "Cordoba",
+        "province": "Baetica",
+        "modern_location": "Cordoba, Spain",
+        "extant_117ce": true,
+        "notes": "Corduba headed the conventus Cordubensis and doubled as the seat of Baetica's governor, making it the political capital of the entire province. Rome founded the colony in 169 BC on the Guadalquivir, and its river port anchored a district that swallowed the silver and copper workings of the Mons Marianus to the north, ground overseen by an imperial procurator answerable directly to the emperor. The city later produced the philosopher Seneca and his nephew the poet Lucan, evidence of a court culture rich enough to send its sons to Rome for the highest offices. Litigants from mining camps and river towns alike converged on a bench that mixed metal claims with the ordinary business of a provincial capital.",
+        "sources": [
+          "Pliny the Elder's Natural History 3.10 (conventus lists of Baetica)",
+          "https://en.wikipedia.org/wiki/C%C3%B3rdoba,_Spain",
+          "https://en.wikipedia.org/wiki/Hispania_Baetica"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.0793,
+          37.5354
+        ]
+      },
+      "properties": {
+        "id": "conventus_astigi",
+        "name": "Ecija",
+        "province": "Baetica",
+        "modern_location": "Ecija, Spain",
+        "extant_117ce": true,
+        "notes": "Astigi headed the conventus Astigitanus, the smallest of Baetica's four assize districts but among its wealthiest, refounded as Colonia Augusta Firma around 14 BC. The proconsul held court in a city built on olive money: river barges called lyntres worked the Genil down to the Guadalquivir loaded with amphorae stamped by Astigi's own potters, bound for legions on the Rhine. That oil trade left a physical monument in Rome itself, filling part of the broken-pottery hill of Monte Testaccio. Litigants here argued shipping contracts and production disputes as often as the crimes an assize usually handled.",
+        "sources": [
+          "Pliny the Elder's Natural History 3.11 (conventus lists of Baetica)",
+          "https://en.wikipedia.org/wiki/%C3%89cija",
+          "https://www.ancientportsantiques.com/wp-content/uploads/Documents/AUTHORS/Martin2016-OliveOil.pdf"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9845,
+          37.3891
+        ]
+      },
+      "properties": {
+        "id": "conventus_hispalis",
+        "name": "Seville",
+        "province": "Baetica",
+        "modern_location": "Seville, Spain",
+        "extant_117ce": true,
+        "notes": "Hispalis headed the conventus Hispalensis, the Baetican assize seated where the Guadalquivir stayed navigable for seagoing ships. Scipio Africanus took the city from Carthage in 206 BC, and Julius Caesar later raised it to colonial status as Colonia Iulia Romula. The proconsul's court sat inside a river port so central to Baetica's export trade that the word portus came to be applied almost exclusively to warehouses and workshops tied to Hispalis's docks. Olive oil, wine, and grain converged there from across the province before crossing the Atlantic route to Rome, and the litigation the assize handled followed that same money.",
+        "sources": [
+          "Pliny the Elder's Natural History 3.11 (conventus lists of Baetica)",
+          "https://en.wikipedia.org/wiki/Seville",
+          "https://en.wikipedia.org/wiki/Hispania_Baetica"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2445,
+          41.1189
+        ]
+      },
+      "properties": {
+        "id": "conventus_tarraco",
+        "name": "Tarragona",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Tarragona, Spain",
+        "extant_117ce": true,
+        "notes": "Tarraco headed the conventus Tarraconensis and doubled as capital of the entire province, the largest territorial command in the Roman world, covering roughly two-thirds of the Iberian peninsula. The Scipio brothers fortified the city in 217 BC at the opening of the Second Punic War, prompting Pliny the Elder, who served here as procurator in 73 CE, to call it \"Tarraco, the Scipios' work.\" Augustus himself governed the empire from Tarraco for nearly two years while recovering from illness after the Cantabrian Wars, running imperial business by courier from its forum. Litigants at the governor's own assize competed for attention with the machinery of an entire province, since Tarraco's court and its capital functions shared the same forum.",
+        "sources": [
+          "Pliny the Elder's Natural History 3.18-21 (conventus lists of Tarraconensis)",
+          "https://en.wikipedia.org/wiki/Tarraco",
+          "https://en.wikipedia.org/wiki/Hispania_Tarraconensis"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9853,
+          37.6057
+        ]
+      },
+      "properties": {
+        "id": "conventus_carthago_nova",
+        "name": "Cartagena",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Cartagena, Spain",
+        "extant_117ce": true,
+        "notes": "Carthago Nova headed the conventus Carthaginiensis, a district whose reach stretched far inland to the silver-bearing Meseta rather than staying hugged to the coast. Hasdrubal Barca founded the city around 227 BC as a Carthaginian stronghold, and Scipio Africanus seized it in 209 BC along with the mines that had drawn Carthage there in the first place. Strabo counted some 40,000 workers laboring the district's silver veins at their Republican peak, and though the richest deposits were largely exhausted by the second century CE, the assize's docket still carried mining leases and boundary disputes inherited from that industry. Its natural harbor kept the court's business flowing even after the ore ran thin.",
+        "sources": [
+          "Pliny the Elder's Natural History 3.25; Strabo's Geography 3.2.10",
+          "https://en.wikipedia.org/wiki/Carthago_Nova",
+          "https://en.wikipedia.org/wiki/Hispania_Carthaginensis"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.8891,
+          41.6488
+        ]
+      },
+      "properties": {
+        "id": "conventus_caesaraugusta",
+        "name": "Zaragoza",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Zaragoza, Spain",
+        "extant_117ce": true,
+        "notes": "Caesaraugusta headed the conventus Caesaraugustanus, a district Pliny the Elder recorded as embracing 55 separate communities along the middle Ebro valley. Augustus founded the colony around 14 BC on the site of the older Iberian town of Salduie, settling veterans of his Cantabrian campaigns and naming the city for himself. The proconsul's court sat at a crossroads linking the coastal conventus at Tarraco to the interior circuit at Clunia, giving a colony barely a century old outsized traffic through its forum. Free-colony tax privileges did nothing to slow the flow of court business routed through it.",
+        "sources": [
+          "Pliny the Elder's Natural History 3.24",
+          "https://en.wikipedia.org/wiki/Caesaraugusta",
+          "https://en.wikipedia.org/wiki/Zaragoza"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.37056,
+          41.78056
+        ]
+      },
+      "properties": {
+        "id": "conventus_clunia",
+        "name": "Clunia",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Peñalba de Castro, Burgos Province, Spain",
+        "extant_117ce": true,
+        "notes": "Clunia headed the conventus Cluniensis, covering much of the northern Meseta from a hilltop city sprawled across 130 hectares above 1,000 meters elevation. Colonia Clunia Sulpicia sat astride the roads linking Tarraco, Caesaraugusta, and Asturica Augusta, giving the proconsul a natural hub for a mountainous, thinly settled district. Roman legions stationed nearby proclaimed Galba emperor here in 68 CE, a reminder of how deep Roman military and legal authority reached into the Duero highlands. A winter assize at this altitude was no soft posting for a traveling magistrate.",
+        "sources": [
+          "Pliny the Elder's Natural History 3.26-27 (conventus lists of Tarraconensis)",
+          "https://en.wikipedia.org/wiki/Clunia",
+          "https://en.wikipedia.org/wiki/Conventus_iuridicus"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.0561,
+          42.4574
+        ]
+      },
+      "properties": {
+        "id": "conventus_asturica_augusta",
+        "name": "Astorga",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Astorga, Spain",
+        "extant_117ce": true,
+        "notes": "Asturica Augusta headed the conventus Asturum, founded near the end of Augustus's reign as a military and administrative anchor for the newly subdued Astures. A road ran straight from its gates to Las Medulas, the largest gold-mining operation in the Roman world, worked by the arrugiae and ruina montium techniques Pliny the Elder described after his own service as the province's procurator. Pliny put the combined output of Asturia, Gallaecia, and Lusitania at 20,000 Roman pounds of gold a year, with Asturia supplying the largest share, and he called Asturica itself a magnificent city. Litigants at its assize argued mining claims and labor disputes thrown up by an industry that reshaped whole mountainsides.",
+        "sources": [
+          "Pliny the Elder's Natural History 33.78 (gold output); 3.28 (conventus lists)",
+          "https://en.wikipedia.org/wiki/Asturica_Augusta",
+          "https://en.wikipedia.org/wiki/Las_M%C3%A9dulas"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.556,
+          43.0097
+        ]
+      },
+      "properties": {
+        "id": "conventus_lucus_augusti",
+        "name": "Lugo",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Lugo, Spain",
+        "extant_117ce": true,
+        "notes": "Lucus Augusti headed the conventus Lucensis, the assize district covering Gallaecia's Atlantic coast from the Verdugo river north to the Navia. Pliny the Elder counted 166,000 free persons scattered across the district's fifteen tribal peoples, communities he noted still carried names unfamiliar to Roman ears generations after conquest. The settlement grew up around hot mineral springs the Romans exploited even before the assize was formalized, giving the site its earliest reason to exist. Litigants from Celtic hill communities across Hispania's northwest corner traveled to a proconsul's court seated near the empire's Atlantic edge.",
+        "sources": [
+          "Pliny the Elder's Natural History 3.28 (conventus lists of Tarraconensis)",
+          "https://en.wikipedia.org/wiki/Lugo",
+          "https://en.wikipedia.org/wiki/Conventus_Lucensis"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.4265,
+          41.5454
+        ]
+      },
+      "properties": {
+        "id": "conventus_bracara_augusta",
+        "name": "Braga",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Braga, Portugal",
+        "extant_117ce": true,
+        "notes": "Bracara Augusta headed the conventus Bracarensis, the southernmost of Gallaecia's three Atlantic assize districts, its territory running from the Douro river north to the Sil. Pliny the Elder recorded 24 constituent civitates and roughly 385,000 free persons under its jurisdiction. Augustus founded the city around 20 BC as a garrison town for the newly conquered Callaeci, and it grew into the road hub where routes from Asturica Augusta, Lucus Augusti, and the Atlantic coast converged. Litigants from scattered hill communities across the district traveled those same roads to reach the proconsul's court.",
+        "sources": [
+          "Pliny the Elder's Natural History 3.28 (conventus lists of Tarraconensis)",
+          "https://en.wikipedia.org/wiki/Braga",
+          "https://en.wikipedia.org/wiki/Conventus_Bracarensis"
+        ]
+      }
     }
   ]
 }
