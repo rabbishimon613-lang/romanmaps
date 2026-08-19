@@ -4245,6 +4245,724 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2306,
+          45.7386
+        ]
+      },
+      "properties": {
+        "id": "station_forum_segusiavorum",
+        "category": "mansio",
+        "name": "Forum Segusiavorum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Forum Segusiavorum, modern Feurs, was the market and administrative center of the Segusiavi and the first major stage on Agrippa's road out of Lugdunum, roughly 50 km away as the crow flies. The Peutinger Table marks the start of its Gallic-league distance convention right at this stretch, noting 'usque hic legas' beside Lyon's own label. It remained the civitas capital of the Segusiavi from the late 1st century BCE into the 3rd century CE.",
+        "sources": [
+          "Tabula Peutingeriana, Segment I (Gaul)",
+          "fr.wikipedia.org/wiki/Forum_Segusiavorum"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.0725,
+          46.0356
+        ]
+      },
+      "properties": {
+        "id": "station_rodumna",
+        "category": "vicus",
+        "name": "Rodumna",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 54,
+        "identified": true,
+        "notes": "Rodumna was a Segusiavan river-crossing town on the Loire, named by Ptolemy and marked as Roidomna on the Peutinger Table on the road between Forum Segusiavorum and Augustonemetum. Roanne functioned as a crossroads linking Lyon, Feurs, Vichy, Clermont-Ferrand, and the Arroux valley, and the settlement's disputed intermediate station 'Mediolanum' may have split this stretch, a debate the Peutinger Table's own conflicting readings haven't settled.",
+        "sources": [
+          "Tabula Peutingeriana, Segment I (Gaul)",
+          "Genin & Lavendhomme, 'Rodumna (Roanne, Loire), le village gallo-romain'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8681,
+          46.1761
+        ]
+      },
+      "properties": {
+        "id": "station_ariolica",
+        "category": "mansio",
+        "name": "Ariolica",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 18,
+        "identified": false,
+        "notes": "Ariolica appears on the Peutinger Table on the road between Rodumna and Vorogium, but its modern site is unsettled. Local antiquarian tradition places it at La Pacaudiere, while a Peutinger-based topographic reconstruction favors Artaix, on the ancient Loire-valley road linking Roanne to Digoin. The station's existence and position on this itinerary are firm; only its precise footprint is disputed.",
+        "sources": [
+          "arbre-celtique.com, 'Ariolica (La Pacaudiere)'",
+          "molartaix.fr, 'Ariolica'"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.3999,
+          46.2989
+        ]
+      },
+      "properties": {
+        "id": "station_vorogium",
+        "category": "mansio",
+        "name": "Vorogium",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 28.5,
+        "identified": true,
+        "notes": "Vorogium sat on the Allier per the Peutinger Table, on the road toward the thermal station of Aquis Calidis. It is identified with modern Varennes-sur-Allier, recorded locally as Vorocium at the hamlet of Vouroux. The station lay on the direct road linking Rodumna to Augustonemetum through the Bourbonnais.",
+        "sources": [
+          "Tabula Peutingeriana, Segment I (Gaul)",
+          "arbre-celtique.com, 'Vorocium (Vouroux, Varennes-sur-Allier)'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.4264,
+          46.1284
+        ]
+      },
+      "properties": {
+        "id": "station_aquis_calidis",
+        "category": "mansio",
+        "name": "Aquis Calidis",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Aquis Calidis, 'at the warm waters,' names the thermal springs of Vichy and sat on the Peutinger Table's road toward Augustonemetum. Earlier scholars floated rival identifications at Saint-Maurice or Mont-Dore, but the genuine hot springs and proven Gallo-Roman occupation at Vichy settled the identification. The Peutinger Table marks the site with its standard thermal-establishment symbol.",
+        "sources": [
+          "Tabula Peutingeriana, Segment I (Gaul)",
+          "Princeton Encyclopedia of Classical Sites, 'Aquae Calidae (Vichy)'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.087,
+          45.7772
+        ]
+      },
+      "properties": {
+        "id": "station_augustonemetum",
+        "category": "mansio",
+        "name": "Augustonemetum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 37.5,
+        "identified": true,
+        "notes": "Augustonemetum was the Augustan-era civitas capital of the Arverni and the central hub of Agrippa's road toward Aquitania, sitting between Lugdunum and Augustoritum. It now lies beneath modern Clermont-Ferrand, whose Gallo-Roman remains are catalogued in a dedicated topographic atlas.",
+        "sources": [
+          "Tabula Peutingeriana, Segment I (Gaul)",
+          "augustonemetum.fr, 'AGRIPPA'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8333,
+          45.7167
+        ]
+      },
+      "properties": {
+        "id": "station_ubrilium",
+        "category": "mutatio",
+        "name": "Ubrilium",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 13.5,
+        "identified": false,
+        "notes": "Ubrilium was the first cursus publicus stop west of Augustonemetum on Agrippa's road. Its modern site is contested: Pierre Denimal argued for Mazaye, Frederic Trement proposed the excavated Gallo-Roman settlement at the Col de Ceyssat below Puy de Dome, and Pierre-Francois Fournier favored Olby. All three candidates sit within a few kilometers of each other on the same westward corridor.",
+        "sources": [
+          "fr.wikipedia.org/wiki/Ubrilium",
+          "fr.wikipedia.org/wiki/Agglomération_romaine_du_col_de_Ceyssat"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0567,
+          46.0742
+        ]
+      },
+      "properties": {
+        "id": "station_acitodunum",
+        "category": "mutatio",
+        "name": "Acitodunum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Acitodunum was a mutatio of the Lugdunum-Mediolanum Santonum road, sited at modern Ahun in the Creuse, within the civitas of the Lemovices. It appears by name on the Peutinger Table, though its exact distance from the previous station is disputed among the sources checked. Ahun continued as a significant Gallo-Roman vicus into Late Antiquity, with an associated necropolis nearby at Pontarion.",
+        "sources": [
+          "Persée, 'Voies romaines en Limousin'",
+          "encyclopedie.arbre-celtique.com, 'Ahun (Le Camp de César, Acitodunum)'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2611,
+          45.8336
+        ]
+      },
+      "properties": {
+        "id": "station_augustoritum",
+        "category": "mansio",
+        "name": "Augustoritum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 39,
+        "identified": true,
+        "notes": "Augustoritum was the Augustan civitas capital of the Lemovices and the last major hub before Agrippa's road descended into the Charente valley toward Cassinomagus and Saintes. Excavations under modern Limoges have traced its street grid and public buildings.",
+        "sources": [
+          "fr.wikipedia.org/wiki/Augustoritum",
+          "beauxarts.limoges.fr, 'Augustoritum, une ville gallo-romaine'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.7423,
+          45.8264
+        ]
+      },
+      "properties": {
+        "id": "station_cassinomagus",
+        "category": "vicus",
+        "name": "Cassinomagus",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 25.5,
+        "identified": true,
+        "notes": "Cassinomagus was a 130-hectare secondary agglomeration on the western edge of Lemovices territory, famous today for the exceptionally well-preserved two-story Gallo-Roman baths known as the Thermes de Longeas. Jacques Dassie's corrected reading of the Peutinger Table places it on the road from Augustoritum toward Mediolanum Santonum. The site anchors the modern Cassinomagus archaeological park at Chassenon, Charente.",
+        "sources": [
+          "Peutinger Table, corrected reading per J. Dassie (archaero.com)",
+          "cassinomagus.fr, 'Histoire et heritage'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1083,
+          45.8618
+        ]
+      },
+      "properties": {
+        "id": "station_sermanicomagus",
+        "category": "mansio",
+        "name": "Sermanicomagus",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 33,
+        "identified": false,
+        "notes": "Sermanicomagus, likely a scribal corruption of Germanicomagus, sat on the road from Cassinomagus to Mediolanum Santonum per the Peutinger Table. Aerial archaeologist Jacques Dassie locates it at La Terne, a hamlet of Luxe with Gallo-Roman paving and villa remains, while the 19th-century Abbe Michon argued for Charme based on nearby villa remains, though the known road alignment runs well south of Charme. The station is real and firmly on this itinerary; only its precise modern footprint is unresolved.",
+        "sources": [
+          "J. Dassie, Peutinger Table reading for this road (archaero.com)",
+          "charles-de-flahaut.fr, 'Histoire de Charme (Charente)'"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.34,
+          46.0281
+        ]
+      },
+      "properties": {
+        "id": "station_aunedonnacum",
+        "category": "vicus",
+        "name": "Aunedonnacum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 25.5,
+        "identified": true,
+        "notes": "Aunedonnacum was a secondary Gallo-Roman agglomeration at modern Aulnay-de-Saintonge, on the Peutinger Table's road toward Mediolanum Santonum. The Antonine Itinerary's Bordeaux route classifies settlements of this kind among its vici, distinct from full civitas capitals. The site sits at a crossing of routes linking Poitiers, Saintes, and the Limousin.",
+        "sources": [
+          "Tabula Peutingeriana, per J. Dassie's corrected reading",
+          "fr.wikipedia.org/wiki/Aunedonnacum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6333,
+          45.7467
+        ]
+      },
+      "properties": {
+        "id": "station_mediolanum_santonum",
+        "category": "mansio",
+        "name": "Mediolanum Santonum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "Mediolanum Santonum was the civitas capital of the Santones and the western anchor of Agrippa's road, standing past Aunedonnacum in the Peutinger Table's corrected reading. The town gives its name to the modern reconstruction 'Voie romaine d'Agrippa (Saintes-Lyon),' formally numbered VR 27 between Saintes and Limoges in the 19th-century K. Miller classification of French Roman roads. From here the same road network continues southwest via the Antonine Itinerary toward Novioregum and Burdigala.",
+        "sources": [
+          "fr.wikipedia.org/wiki/Voie_romaine_d'Agrippa_(Saintes-Lyon)",
+          "Tabula Peutingeriana, Segment I"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.8961,
+          45.5486
+        ]
+      },
+      "properties": {
+        "id": "station_novioregum",
+        "category": "vicus",
+        "name": "Novioregum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 15,
+        "identified": true,
+        "notes": "Novioregum was a Gallo-Roman port town on the Gironde estuary linking Mediolanum Santonum southward to Tamnum, Blavia, and Burdigala. The Antonine Itinerary places it on this stretch, an identification resting on substantial Gallo-Roman remains excavated at Barzan, between Talmont-sur-Gironde and Arces-sur-Gironde.",
+        "sources": [
+          "Itinerarium Antonini, iter a Burdigala Mediolanum Santonum",
+          "en.wikipedia.org/wiki/Novioregum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6167,
+          45.3833
+        ]
+      },
+      "properties": {
+        "id": "station_tamnum",
+        "category": "mansio",
+        "name": "Tamnum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Tamnum was a waystation on the Burdigala-Mediolanum Santonum road, conventionally identified with modern Consac in Charente-Maritime. Its coordinates here mark the commune center, since no precise archaeological footprint for the ancient station itself turned up in the sources checked. It sat on the road corridor connecting Saintes to Blaye and Bordeaux.",
+        "sources": [
+          "Itinerarium Antonini, iter a Burdigala Mediolanum Santonum"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6672,
+          45.1275
+        ]
+      },
+      "properties": {
+        "id": "station_blavia",
+        "category": "mansio",
+        "name": "Blavia",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Blavia guarded a Gironde estuary crossing on the Antonine Itinerary's road linking Bordeaux to Saintes, south of Tamnum. The identification with modern Blaye is secure, resting on continuous toponymic descent from Blavia to Blaye. In Late Antiquity the site was refortified as one of the castella listed in the Notitia Galliarum.",
+        "sources": [
+          "Itinerarium Antonini, iter a Burdigala Mediolanum Santonum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8733,
+          45.5253
+        ]
+      },
+      "properties": {
+        "id": "station_vienna",
+        "category": "mansio",
+        "name": "Vienna",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 23,
+        "identified": true,
+        "notes": "Vienna, modern Vienne, stood 23 Roman miles south of Lugdunum on the Antonine Itinerary's Rhone route and was the first major stage on the Narbonensis branch of the Via Agrippa. The road split here into two alternate courses toward Valentia, one along each bank of the Rhone, with the Itinerary recording a longer 23-mile stage and a shorter 16-mile alternative. Vienna served as the civitas capital of the Allobroges and anchored the road's southern departure point from Lugdunum's network.",
+        "sources": [
+          "Itin. Ant. (Lugdunum-Vienna stage, 23 m.p.)",
+          "Voie romaine d'Agrippa, fr.wikipedia.org"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8267,
+          45.2519
+        ]
+      },
+      "properties": {
+        "id": "station_figlinis",
+        "category": "mutatio",
+        "name": "Figlinis",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 17,
+        "identified": true,
+        "notes": "Figlinis marked the Antonine Itinerary's next stop 17 Roman miles south of Vienna. Scholars place the station at Saint-Rambert-d'Albon on the Rhone's left bank, a reading cross-checked against the original Peutinger Table. It functioned as a horse-changing point on the road linking Vienna to Valentia.",
+        "sources": [
+          "Tabula Peutingeriana (Vienna-Figlinis, 17 m.p.)",
+          "Vienne dans les textes grecs et latins, MOM Editions, books.openedition.org/momeditions/1014"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8175,
+          45.1758
+        ]
+      },
+      "properties": {
+        "id": "station_ursolis",
+        "category": "mutatio",
+        "name": "Ursolis",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 9,
+        "identified": false,
+        "notes": "Ursolis, also spelled Ursinis, appeared in the Antonine Itinerary between Figlinis and Tegna on the Vienna-Valentia stretch, cited at 26 Roman miles south of Vienna and 22 miles north of Valentia. Its modern site is disputed: a Peutinger Table-based reading places it at Saint-Vallier-sur-Rhone, while an older etymological argument instead proposed Roussillon. The station is genuinely attested in the itinerary text; only its precise findspot remains unresolved.",
+        "sources": [
+          "Itin. Ant. (Valentia-Ursolis 22 m.p.; Ursolis-Vienna 26 m.p., cumulative)",
+          "Les stations routieres dans la cite de Vienne, Revue archeologique de Narbonnaise 38 (2005), persee.fr"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8442,
+          45.0733
+        ]
+      },
+      "properties": {
+        "id": "station_tegna",
+        "category": "vicus",
+        "name": "Tegna",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 14,
+        "identified": true,
+        "notes": "Tegna sat on the Via Agrippa at modern Tain-l'Hermitage, 8 Roman miles north of Valentia according to the Antonine Itinerary's cumulative mile-count. Excavations there uncovered a temple, a taurobolium altar, a tower, and the remains of substantial dwellings, marking it as a real roadside settlement rather than a bare relay post. It depended administratively on the colony of Vienna.",
+        "sources": [
+          "Itin. Ant. (Valentia-Tegna, 8 m.p.)",
+          "Histoire de Tain-l'Hermitage, ville-tain.fr"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8924,
+          44.9334
+        ]
+      },
+      "properties": {
+        "id": "station_valentia_rhodani",
+        "category": "mansio",
+        "name": "Valentia",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 8,
+        "identified": true,
+        "notes": "Valentia, modern Valence, was recorded as a civitas stop on the Via Agrippa in both the Antonine Itinerary and the 333 CE Bordeaux pilgrim's itinerary, 8 Roman miles south of Tegna. A milestone dedicated to Antoninus Pius, found in the park of La Paillasse near Etoile-sur-Rhone, marked the sixth Roman mile south of the town and confirms the road's course out of Valentia toward Arausio.",
+        "sources": [
+          "Itin. Ant. / Itin. Burd. 554 (Tegna-Valentia stage)",
+          "Voie romaine d'Agrippa, fr.wikipedia.org (Antoninus Pius milestone, Etoile-sur-Rhone)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9153,
+          44.7967
+        ]
+      },
+      "properties": {
+        "id": "station_umbenno",
+        "category": "mutatio",
+        "name": "Umbenno",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Umbenno was a horse-changing station the Bordeaux pilgrim's itinerary placed 9 Roman miles south of Valentia. French archaeologists locate it at Les Battendons in the commune of Etoile-sur-Rhone, close to where the Antoninus Pius milestone marking the sixth Roman mile from Valence was found. It served travelers on the Via Agrippa's stretch down the Rhone's left bank toward Acunum.",
+        "sources": [
+          "Itin. Burd. 554 (Valentia-Umbenno, 9 m.p.)",
+          "Voie romaine d'Agrippa, fr.wikipedia.org"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8747,
+          44.7186
+        ]
+      },
+      "properties": {
+        "id": "station_bantiana",
+        "category": "mutatio",
+        "name": "Bantiana",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Bantiana, also written Batiana, was a relay station cited in both the Bordeaux pilgrim's itinerary and the Peutinger Table, set 12 Roman miles south of Umbenno. It stood near modern Saulce-sur-Rhone, where the toponym Bance still survives and where pottery and brick fragments have turned up in the fields. No structural remains of the road itself survive at the site today.",
+        "sources": [
+          "Itin. Burd. 554 (Umbenno-Bantiana, 12 m.p.)",
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7508,
+          44.5581
+        ]
+      },
+      "properties": {
+        "id": "station_acunum",
+        "category": "mansio",
+        "name": "Acunum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Acunum, modern Montelimar, was the only stop between Valentia and Arausio that the Bordeaux pilgrim's itinerary classed as a full mansio rather than a simple mutatio, reached 12 Roman miles south of Bantiana. The Roman settlement grew a forum, aqueducts, and baths at the confluence of the Roubion and the Rhone.",
+        "sources": [
+          "Itin. Burd. (Bantiana-Acunum, 12 m.p.)",
+          "Digital Atlas of the Roman Empire, Akousion/Acunum, dare.ht.lu.se"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7828,
+          44.4386
+        ]
+      },
+      "properties": {
+        "id": "station_novem_craris",
+        "category": "mutatio",
+        "name": "Novem Craris",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Novem Craris was a change-station the Bordeaux pilgrim's itinerary placed 10 Roman miles south of Acunum, at the point where the Via Agrippa crossed the Berre stream. French scholars locate it at Le Logis de Berre in the commune of Les Granges-Gontardes, one of the minor relay posts on the Tricastin stretch of the road toward Arausio.",
+        "sources": [
+          "Itin. Burd. (Acunum-Novem Craris, 10 m.p.)",
+          "Novem Craris, HAL hal-03035637"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7503,
+          44.2814
+        ]
+      },
+      "properties": {
+        "id": "station_ad_letoce",
+        "category": "mutatio",
+        "name": "Ad Letoce",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Ad Letoce, also called Senomagos in some sources, was a relay station the Bordeaux pilgrim's itinerary set 10 Roman miles south of Novem Craris, at the crossing of the Lez river. Researchers identify the site with Saint-Pierre-de-Senos in the commune of Bollene, one of the last stops before reaching the civitas of Arausio.",
+        "sources": [
+          "Itin. Burd. (Novem Craris-Ad Letoce, 10 m.p.)",
+          "Le Tricastin romain: evolution d'un paysage centurie, Alpara/OpenEdition, books.openedition.org/alpara/2835"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8081,
+          44.1359
+        ]
+      },
+      "properties": {
+        "id": "station_arausio",
+        "category": "mansio",
+        "name": "Arausio",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 13,
+        "identified": true,
+        "notes": "Arausio, modern Orange, was recorded as a civitas stop on the Via Agrippa in the Bordeaux pilgrim's itinerary, reached 13 Roman miles south of Ad Letoce. This entry pins it specifically as a mile-marked itinerary station on Agrippa's Rhone road rather than as a general Roman city entry. Nine Roman milestones have been found along the stretch of road between Valentia and Arausio, the earliest dedicated to Tiberius.",
+        "sources": [
+          "Itin. Burd. (Ad Letoce-Arausio, 13 m.p.)",
+          "Medieval Itineraries: Bordeaux Pilgrim, peterrobins.co.uk/itineraries/bordeaux"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8714,
+          44.0089
+        ]
+      },
+      "properties": {
+        "id": "station_cypresseta",
+        "category": "mutatio",
+        "name": "Cypresseta",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 15,
+        "identified": false,
+        "notes": "Cypresseta was a change-station the Bordeaux pilgrim's itinerary placed 15 Roman miles south of Arausio, on the road's approach to Avenione. Local tradition situates it near La Traille in the commune of Sorgues, though the identification is less firmly fixed than its neighboring stations.",
+        "sources": [
+          "Itin. Burd. (Arausio-Cypresseta, 15 m.p.)",
+          "Medieval Itineraries: Bordeaux Pilgrim, peterrobins.co.uk/itineraries/bordeaux"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8055,
+          43.9493
+        ]
+      },
+      "properties": {
+        "id": "station_avenione",
+        "category": "mansio",
+        "name": "Avenione",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 5,
+        "identified": true,
+        "notes": "Avenione, modern Avignon, appeared as a civitas stop on the Via Agrippa in the Bordeaux pilgrim's itinerary, 5 Roman miles south of Cypresseta. This entry pins Avignon specifically as a mile-marked Via Agrippa station rather than describing its later medieval fame. The road continued south from here toward Ernaginum, where it joined the Via Domitia.",
+        "sources": [
+          "Itin. Burd. (Cypresseta-Avenione, 5 m.p.)",
+          "Voie romaine d'Agrippa, fr.wikipedia.org"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6875,
+          43.7807
+        ]
+      },
+      "properties": {
+        "id": "station_ernaginum",
+        "category": "mutatio",
+        "name": "Ernaginum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Ernaginum, identified with the Saint-Gabriel chapel site in the commune of Tarascon, was the change-station where the Bordeaux pilgrim's itinerary placed the Via Agrippa's junction with the Via Domitia, south of Avenione and short of Arelate. No bridge crossed the Rhone downstream of Lugdunum in this period, so traffic bound for Arelate or west toward Nemausus and Narbo Martius funneled through this junction by road and ferry.",
+        "sources": [
+          "Itin. Burd. (Avenione-Ernaginum; Ernaginum-Arelate)",
+          "Voie romaine d'Agrippa, fr.wikipedia.org"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
