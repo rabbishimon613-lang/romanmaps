@@ -134,7 +134,7 @@
     "id": "health_aquae_granni",
     "name": "Aachen",
     "category": "aquae_town",
-    "one_line": "Legionaries channeled the hot sulfur springs at B\u00fcchel into a bathing complex at the start of the first century CE, later adding a second bath house, the M\u00fcnstertherme, along with a forum and aqueducts. By Trajan's reign the settlement covered some 25 hectares and was being groomed for city status.",
+    "one_line": "Legionaries channeled the hot sulfur springs at Büchel into a bathing complex at the start of the first century CE, later adding a second bath house, the Münstertherme, along with a forum and aqueducts. By Trajan's reign the settlement covered some 25 hectares and was being groomed for city status.",
     "province": "Germania Inferior",
     "modern_location": "Aachen, Germany",
     "extant_117ce": true,
@@ -741,6 +741,470 @@
     "sources": [
      "https://academic.oup.com/book/9850/chapter/157116505",
      "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12407210/"
+    ],
+    "confidence": "low"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.912,
+     53.259
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_arnemetiae",
+    "name": "Buxton",
+    "category": "aquae_town",
+    "one_line": "A Roman bathing establishment rose over Buxton's warm spring, dedicated to the local goddess Arnemetia and recorded in the Ravenna Cosmography as Aquis Arnemeza. Excavations in 1695 uncovered a lead-lined bath about 20 meters long beneath what's now the town's Georgian Crescent. Only Bath itself rivals Buxton among Roman Britain's confirmed spa towns.",
+    "province": "Britannia",
+    "modern_location": "Buxton, United Kingdom",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Aquae_Arnemetiae",
+     "https://www.roman-britain.co.uk/places/aquae_arnemetiae/"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.396,
+     36.379
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_calidae_mauretania",
+    "name": "Hammam Righa",
+    "category": "aquae_town",
+    "one_line": "A Roman colonia grew up around these hot springs, complete with a forum, theater, library, and an aqueduct feeding its bathhouse. The name simply means hot waters -- one of several towns called Aquae Calidae scattered across the empire's Mediterranean provinces. The springs are still in use today, two thousand years on.",
+    "province": "Mauretania Caesariensis",
+    "modern_location": "Hammam Righa, Algeria",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Aquae_Calidae,_Algeria"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -7.975,
+     42.031
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_querquennis",
+    "name": "Banos de Bande",
+    "category": "aquae_town",
+    "one_line": "A Roman army camp for soldiers of Legio VII Gemina, built here around 75 CE while they cut the Via Nova through the mountains of Gallaecia, came with its own bathhouse, barracks, and granaries. The name preserves a local water-spirit cult the legionaries found already in place. Much of the site now sits under a reservoir and only surfaces when the water drops in drought years.",
+    "province": "Hispania Tarraconensis",
+    "modern_location": "Bande, Ourense, Spain",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Aquis_Querquennis",
+     "https://www.atlasobscura.com/places/aquis-querquennis"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.639,
+     42.603
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_celenae",
+    "name": "Caldas de Reis",
+    "category": "aquae_town",
+    "one_line": "A municipium on the Antonine Itinerary's road from Bracara Augusta to Asturica Augusta, marked in the road-book as the mansio de Aquis Celenis. Its hot springs also fed the start of a second route running up the coast. The modern town's name, Caldas, still just means hot springs in Galician.",
+    "province": "Hispania Tarraconensis",
+    "modern_location": "Caldas de Reis, Pontevedra, Spain",
+    "extant_117ce": true,
+    "sources": [
+     "https://www.caldasdereis.com/historia_c.php"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.908,
+     41.306
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_bilbilitanorum",
+    "name": "Alhama de Aragon",
+    "category": "aquae_town",
+    "one_line": "The poet Martial, born in nearby Bilbilis, praised these sulphurous springs in his epigrams and recommended them to friends back in Rome. The site sat on the Antonine Itinerary's road network through the Ebro valley. Roman bath remains were reported here by antiquarians as early as the 19th century.",
+    "province": "Hispania Tarraconensis",
+    "modern_location": "Alhama de Aragon, Zaragoza, Spain",
+    "extant_117ce": true,
+    "sources": [
+     "https://www.researchgate.net/publication/348787872"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.084,
+     35.4375
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_flavianae",
+    "name": "Hammam Essalihine",
+    "category": "aquae_town",
+    "one_line": "Inscriptions here dedicate the bath complex to Vespasian and Titus, built around 76 CE not long after the two emperors returned from crushing the Jewish revolt. Septimius Severus's engineers would come back to repair it more than a century later. The spring has been in continuous use for close to two thousand years.",
+    "province": "Numidia",
+    "modern_location": "El Hamma, Khenchela Province, Algeria",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Hammam_Essalihine"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.829,
+     42.119
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_tauri",
+    "name": "Terme Taurine",
+    "category": "aquae_town",
+    "one_line": "Republican-era bathers were already soaking in these sulphurous springs by 86 BCE, long before Trajan built his new harbor town of Centumcellae just down the coast. Trajan and then Hadrian expanded the baths considerably, likely as part of Trajan's own nearby villa. The ruins are now a public archaeological park.",
+    "province": "Italia",
+    "modern_location": "Civitavecchia, Italy",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Terme_Taurine"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.791,
+     45.36
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_patavinae",
+    "name": "Abano Terme",
+    "category": "aquae_town",
+    "one_line": "Pliny the Elder, Suetonius, and Martial all wrote about the Fons Aponi, a spring hot enough -- around 80 degrees Celsius at its source -- to double as an oracle: dice thrown in were said to answer questions by how they landed. The waters still supply the modern spa town built over the site.",
+    "province": "Italia",
+    "modern_location": "Abano Terme, Italy",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Abano_Bagni",
+     "https://www.aquaepatavinae.it/portale/?lang=en"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.764,
+     41.945
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_albulae",
+    "name": "Bagni di Tivoli",
+    "category": "aquae_town",
+    "one_line": "Strabo and Pliny the Elder both described these sulphurous pools east of Rome, fed by springs so mineral-heavy they built their own travertine terraces over the centuries -- the same stone quarried nearby to build the Colosseum. Locals later nicknamed the ruins the Baths of Queen Zenobia.",
+    "province": "Italia",
+    "modern_location": "Bagni di Tivoli, Italy",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Albulae_Aquae"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     23.017,
+     45.733
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_dacia",
+    "name": "Calan",
+    "category": "aquae_town",
+    "one_line": "A thermal-bath vignette on the Tabula Peutingeriana marks this spot on the road network radiating from Sarmizegetusa, the new Dacian provincial capital Trajan founded after his conquest of 106 CE. A dedication to the 'Genius of the Aquae district' survives from a village nearby. Barely a decade old as Roman territory in 117 CE, but already plumbed into the empire's road system.",
+    "province": "Dacia",
+    "modern_location": "Calan, Hunedoara County, Romania",
+    "extant_117ce": true,
+    "sources": [
+     "https://www.researchgate.net/publication/310954082"
+    ],
+    "confidence": "low"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.596,
+     42.789
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_onesiorum",
+    "name": "Bagneres-de-Luchon",
+    "category": "aquae_town",
+    "one_line": "Strabo mentions these Pyrenean hot springs by name, and dozens of votive altars pulled from the Pique River confirm it -- local worshippers thanked the native water god Ilixo/Lixon for cures long before and after Rome arrived. Marble-lined pools with hypocaust heating have been excavated on the site.",
+    "province": "Gallia Aquitania",
+    "modern_location": "Bagneres-de-Luchon, France",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Bagneres-de-Luchon"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.314,
+     43.102
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_convenarum",
+    "name": "Capvern",
+    "category": "aquae_town",
+    "one_line": "The Antonine Itinerary places a station of this name on the road running from Aquae Tarbellicae (Dax) to Tolosa (Toulouse), serving the Convenae, a tribe Rome resettled here from across the Pyrenees. Antiquarians identified the site with modern Capvern by matching the itinerary's distances.",
+    "province": "Gallia Aquitania",
+    "modern_location": "Capvern, France",
+    "extant_117ce": true,
+    "sources": [
+     "https://pleiades.stoa.org/places/246170"
+    ],
+    "confidence": "low"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.427,
+     46.128
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_calidae_gaul",
+    "name": "Vichy",
+    "category": "aquae_town",
+    "one_line": "A Roman settlement grew up at this river crossing in Arverni territory around a warm spring, on a road junction that made it a natural stopping point. It never rivaled the grand imperial spa towns of Italy or Gaul's own Aquae Sextiae, but the waters kept drawing visitors long after Rome fell, into the resort town Vichy is today.",
+    "province": "Gallia Aquitania",
+    "modern_location": "Vichy, France",
+    "extant_117ce": true,
+    "sources": [
+     "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Daquis-calidis"
+    ],
+    "confidence": "low"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.883,
+     41.117
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_sinuessanae",
+    "name": "Mondragone",
+    "category": "aquae_town",
+    "one_line": "Livy already mentions these springs during the Second Punic War, and Pliny the Elder recommended them as a cure for barrenness and mental illness centuries later. The emperor Claudius is recorded taking the waters here, on the Campanian coast a short distance from the more famous resort of Baiae.",
+    "province": "Italia",
+    "modern_location": "Mondragone, Italy",
+    "extant_117ce": true,
+    "sources": [
+     "https://it.wikipedia.org/wiki/Aquae_Sinuessanae"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.098,
+     41.997
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_caeretanae",
+    "name": "Sasso di Furbara",
+    "category": "aquae_town",
+    "one_line": "Strabo called this spring more crowded than the old Etruscan city of Caere itself, and a much later physician, Caelius Aurelianus, ranked its water the hottest in Italy. Rediscovered in 1987, the excavated pools still show their marble thresholds and mosaic floors.",
+    "province": "Italia",
+    "modern_location": "Cerveteri, Italy",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Aquae_Caeretanae",
+     "http://imperium.ahlfeldt.se/places/26612.html"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.048,
+     35.316
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_sirenses",
+    "name": "Hammam Bou Hanifia",
+    "category": "aquae_town",
+    "one_line": "The Romans named this spring for the Sirens, and built a colonia around its waters west of Caesarea. It's one of a string of thermal towns along Mauretania Caesariensis's interior road network, most now known mainly by their still-operating modern hammams.",
+    "province": "Mauretania Caesariensis",
+    "modern_location": "Hammam Bou Hanifia, Algeria",
+    "extant_117ce": true,
+    "sources": [
+     "https://en.wikipedia.org/wiki/Aquae_Sirenses"
+    ],
+    "confidence": "low"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.597,
+     48.105
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_segetae",
+    "name": "Sceaux-du-Gatinais",
+    "category": "aquae_town",
+    "one_line": "A major Gallo-Roman pilgrimage sanctuary dedicated to the water goddess Segeta, with a monumental courtyard, colonnaded galleries, and a nymphaeum built around her sacred spring. Excavations continue at the site, protected as a French historic monument since 1986.",
+    "province": "Gallia Lugdunensis",
+    "modern_location": "Sceaux-du-Gatinais, France",
+    "extant_117ce": true,
+    "sources": [
+     "https://www.inrap.fr/fouille-de-l-agglomeration-antique-de-segeta-sceaux-du-gatinais-loiret-17261"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.7,
+     37.983
+    ]
+   },
+   "properties": {
+    "id": "health_thermae_himerenses",
+    "name": "Termini Imerese",
+    "category": "aquae_town",
+    "one_line": "Founded in the late 1st century BCE, this colony took its name -- Warm Springs -- from waters the Greek poet Pindar had already praised five centuries earlier. Its forum, amphitheater, and aqueduct-fed baths served a town that outlasted the Greek city of Himera it grew up beside; part of the ancient caldarium is now built into a modern hotel.",
+    "province": "Sicilia",
+    "modern_location": "Termini Imerese, Sicily, Italy",
+    "extant_117ce": true,
+    "sources": [
+     "https://www.researchgate.net/publication/341204100"
+    ],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.417,
+     36.45
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_thibilitanae",
+    "name": "Hammam Meskhoutine",
+    "category": "aquae_town",
+    "one_line": "Named for its ties to the nearby Numidian town of Thibilis, this bath complex drew on some of North Africa's most striking travertine terraces, built up over millennia by mineral-saturated water. The remains today are scattered and weathered, but the springs themselves are still hot enough to cook an egg.",
+    "province": "Numidia",
+    "modern_location": "Hammam Meskhoutine, Guelma Province, Algeria",
+    "extant_117ce": true,
+    "sources": [
+     "https://ilkogretim-online.org/index.php/pub/article/view/8318"
+    ],
+    "confidence": "low"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.833,
+     39.617
+    ]
+   },
+   "properties": {
+    "id": "health_aquae_neapolitanae",
+    "name": "Sardara",
+    "category": "aquae_town",
+    "one_line": "Ptolemy and the Antonine Itinerary both mark a stop on the road between Othoca and Caralis at this spring in Sardinia's interior, where ruins dated to the 1st century BCE still stand in the town's municipal park. The island's Roman-era baths are far less famous than Italy's, but the water is real and still flowing.",
+    "province": "Sardinia et Corsica",
+    "modern_location": "Sardara, Sardinia, Italy",
+    "extant_117ce": true,
+    "sources": [
+     "https://idese.cultura.gov.it/en/place/antiche-terme-aquae-neapolitanae/"
     ],
     "confidence": "low"
    }
