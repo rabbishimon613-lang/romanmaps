@@ -356,6 +356,121 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carcere_Mamertino_Rome.JPG?width=800",
         "image_credit": "Interior of the Mamertine Prison (Tullianum), Rome · Wikimedia Commons"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5761,
+          36.4919
+        ]
+      },
+      "properties": {
+        "id": "penal_simitthu_chemtou",
+        "category": "penal_quarry",
+        "name_latin": "Simitthus",
+        "name_english": "Chemtou",
+        "province": "Africa Proconsularis",
+        "modern_location": "Chemtou, Jendouba Governorate, Tunisia",
+        "built": -150,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Rome inherited this Numidian marble quarry when it annexed the kingdom in 46 BCE and turned its butter-yellow giallo antico stone into an imperial monopoly. Excavations uncovered a fortified labor camp cut directly into the quarry hillside, with barred cell blocks for confining workers beside a military guard post and a separate wing for the imperial accountants who tracked every finished block. The camp stood on the opposite side of the marble hill from the free citizens of Roman Simitthus, keeping the two communities out of each other's sight. Columns quarried here still stand in buildings across the former empire, a stone whose production this forced-labor camp made possible.",
+        "sources": [
+          "German Archaeological Institute Rome / Institut National du Patrimoine Tunis, excavations at Chemtou, 1965-1996",
+          "https://en.wikipedia.org/wiki/Chemtou",
+          "https://en.wikipedia.org/wiki/Giallo_antico"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chemtou_Marble_Quarry.JPG?width=800",
+        "image_credit": "Chemtou marble quarry face, Tunisia · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4936,
+          30.6277
+        ]
+      },
+      "properties": {
+        "id": "penal_phaeno_faynan",
+        "category": "penal_mine",
+        "name_latin": "Phaeno",
+        "name_english": "Faynan",
+        "province": "Arabia",
+        "modern_location": "Wadi Faynan, Tafilah Governorate, Jordan",
+        "built": 106,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Trajan absorbed this copper-rich valley into the new province of Arabia when Rome annexed the Nabataean kingdom in 106 CE, and mining output surged under the new administration. Its reputation as a criminal sentence rather than a job came nearly two centuries later: in 302 CE Diocletian's rescript against the Manichaeans ordered high-status converts condemned specifically to the mines of Phaeno, and the historian Eusebius catalogued dozens of Egyptian and Palestinian Christians worked to death there during the Great Persecution of 303-311. At 117 CE, this map's date, Faynan was still simply one of the empire's largest copper suppliers — its life as a penal camp belongs entirely to the late third and fourth centuries.",
+        "sources": [
+          "Diocletian's Rescript against the Manichaeans, in Collatio Legum Mosaicarum et Romanarum 15.3 (302 CE)",
+          "Eusebius, Martyrs of Palestine 7-8, 13",
+          "https://en.wikipedia.org/wiki/Khirbat_Faynan"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Byzantine_watchtower_that_used_to_guard_the_Faynan_and_its_resources,_built_in_opus_quadratum,_Khirbet_Faynan_(ancient_Phaino),_Wadi_Faynan,_Jordan_-_50866919158.jpg?width=800",
+        "image_credit": "Watchtower guarding the Faynan mining district, Khirbet Faynan, Jordan · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.3072,
+          27.2475
+        ]
+      },
+      "properties": {
+        "id": "penal_mons_porphyrites",
+        "category": "penal_quarry",
+        "name_latin": "Mons Porphyrites",
+        "name_english": "Gebel Dokhan",
+        "province": "Aegyptus",
+        "modern_location": "Gebel Dokhan, Red Sea Mountains, Eastern Desert, Egypt",
+        "built": 18,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "An imperial surveyor named Gaius Cominius Leugas discovered this purple stone deposit in 18 CE, and Rome claimed it immediately as a state monopoly since Mons Porphyrites was the empire's only known source of true imperial porphyry. Salaried quarrymen and army detachments worked the mountain through its busiest years under Trajan and Hadrian, moving stone out along the purpose-built Via Porphyritis to the Nile. Its use as a punishment began only under Diocletian: the Passion of the Four Crowned Martyrs describes condemned prisoners, damnati in metalla, working the quarries there during the early-fourth-century persecution of Christians — nearly two hundred years after 117 CE.",
+        "sources": [
+          "Passio Sanctorum Quattuor Coronatorum",
+          "Dario Del Bufalo, Red Imperial Porphyry: Power and Religion (2nd ed., Allemandi, 2018)",
+          "https://en.wikipedia.org/wiki/Mons_Porphyrites"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.6167,
+          40.6167
+        ]
+      },
+      "properties": {
+        "id": "penal_proconnesus_marmara",
+        "category": "penal_quarry",
+        "name_latin": "Proconnesus",
+        "name_english": "Marmara Island",
+        "province": "Asia",
+        "modern_location": "Marmara Island (Saraylar), Balikesir Province, Turkey",
+        "built": -550,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Greek colonists worked this island's fine white marble from at least the 6th century BCE, and Rome expanded the quarries into one of the empire's largest marble-export operations, shipping stone across the Mediterranean and Black Sea from the very island that gave the Sea of Marmara its name. Its penal use is fixed to a single, dateable event: Diocletian's 302 CE rescript against the Manichaean sect ordered high-status converts condemned to hard labor in the quarries of Proconnesus alongside the copper mines of Phaeno — one of the only surviving Roman legal texts to name a specific quarry as a criminal sentence. At 117 CE the island was purely a commercial marble source.",
+        "sources": [
+          "Diocletian's Rescript against the Manichaeans, in Collatio Legum Mosaicarum et Romanarum 15.3 (302 CE)",
+          "https://en.wikipedia.org/wiki/Proconnesus_(city)"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
