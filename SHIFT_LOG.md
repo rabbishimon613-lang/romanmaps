@@ -7,6 +7,210 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 34 — 2026-08-19 (this shift's own prompt claimed "Shift 3 of four")
+
+**Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt said
+"Shift 3 of four", but `SHIFT_LOG` was 33 real shifts deep at session start, so this entry
+continues as Shift 34. Session started `HEAD` detached one commit behind a stale local `main`;
+`git fetch origin main && git checkout -B main origin/main` put the branch cleanly on the real
+tip (`a41b6c1`), no conflicts. Read `SHIFT_BRIEF.md` and `BOARD.md` in full before touching
+anything, per the brief's own instruction.
+
+**Network block reconfirmed, and now also for WebFetch, not just raw `curl`** — `curl` to
+`overpass-api.de`/`en.wikipedia.org`/`commons.wikimedia.org`/`pleiades.stoa.org` all returned
+`CONNECT` failures via the agent proxy (`/__agentproxy/status` shows explicit `403` relay
+failures for all four). Also tried `WebFetch` directly against `commons.wikimedia.org` from the
+main session — also `EGRESS_BLOCKED`. **WebSearch remained the only working research channel
+throughout**, same as prior shifts; every research agent this shift was briefed accordingly.
+Axis 1 (more cities via Overpass) and `[06-P2-6]` priority-cities stay genuinely blocked here.
+
+### Approach: seven parallel research/build agents this shift, each independently verified before commit
+
+Rather than one research pass at a time, this shift ran up to three background agents
+concurrently on disjoint files (no two ever touched the same `public/data/*.geojson` or the same
+app file at once), reviewing and committing each batch as it landed rather than trusting agent
+self-reports. That review caught one real problem (see below) before it reached `main`.
+
+### Track A — six axes, ~140 net new features
+
+**Axis 8a (mints)**: 20 new RPC-documented civic/provincial mints striking under Trajan
+specifically — Cyzicus, Prusa, Bostra, Sepphoris, Hierapolis, Perge, Ancyra, Amisus, Sinope,
+Cyrene, the Cyprus koinon, Amastris, Prusias ad Hypium, Heraclea Pontica, Chalcedon, Philadelphia
+(Lydia), Corinth, Nicopolis, Anazarbus, Tium. `mints.geojson` 20 → 40. Rejected on research:
+Gerasa/Petra (a province-wide Arabia issue, not a distinct civic mint), Damascus/Byblos/Neapolis/
+Gaza (no confirmed Trajanic-era issues found), several Asia Minor cities where minting is only
+confirmed from Hadrian onward.
+
+**Axis 15 (welfare/euergetism)**: alimenta-town research came up empty this pass — WebFetch was
+blocked for every source tried and WebSearch snippets alone couldn't confirm a specific CIL/ILS
+reference + date for any new town beyond the 15 already mapped, so the agent correctly declined
+to guess (real leads for a future pass: Ficulea, Ameria, Tifernum Mataurense, Trebula Mutuesca,
+Sestinum, Ariminum, Superaequum, Forum Sempronii, Suasa). Pivoted fully to 13 benefactor
+inscriptions instead: Ummidia Quadratilla at Casinum, Annobal Tapapius Rufus's market at Leptis
+Magna, Sextilius Pollio's fountain and Julius Aquila's Library of Celsus at Ephesus, Iunia Rustica
+at Cartama, Claudia Severa's nymphaeum at Sagalassos, Julius Zoilos at Aphrodisias, Nonius Balbus
+at Herculaneum, Babbius Philinus at Corinth, Eumachia/Marcus Tullius/Holconius Rufus at Pompeii,
+Valerius Firmus at Munigua. `euergetism.geojson` 18 → 31.
+
+**Axis 8b (conventus)**: Baetica's 4 conventus (Gades, Corduba, Astigi, Hispalis) and Hispania
+Tarraconensis's 7 (Tarraco, Carthago Nova, Caesaraugusta, Clunia, Asturica Augusta, Lucus Augusti,
+Bracara Augusta), per Pliny the Elder's own conventus lists (NH 3.7, 3.18-24) — the axis's second
+province after Asia's 13. `conventus_asia.geojson` 13 → 24 (kept the now slightly-misnamed
+filename rather than touch `Map.tsx`'s wiring for a data-only pass; the layer keys off each
+record's own `province` field, not the filename). **Data-quality finding for a follow-up**:
+`places_medium.geojson`'s own "Clunia" gazetteer entry points at an unrelated German site
+(Altenstadt), not the real assize center near Peñalba de Castro — that file's Latin-name matching
+isn't reliable for disambiguating repeated ancient toponyms, worth a dedicated gazetteer-audit
+pass.
+
+**Axis 6a (trade routes)**: three more complete named routes on top of the existing Amber Road and
+grain routes — the Cornwall-Rome tin route (Ictis/St Michael's Mount → Armorica/Vannes → mouth of
+the Rhone → Massilia → Rome, the overland-through-Gaul path Diodorus 5.22 and Strabo both describe
+as dominant by the imperial period, not the longer Atlantic/Gades circuit), the Baetica-Rome olive
+oil route (Corduba → Hispalis → Ostia/Portus → Monte Testaccio, Rome's 53-million-amphora hill
+built almost entirely from this one trade), and a shorter Africa-Rome olive oil route. Amber
+Road's three pre-existing records got harmlessly re-serialized with escaped-unicode arrows
+(`→` for `→`) as a side effect of the agent's Python `json.dump` — confirmed byte-identical
+in meaning, not a real content change, before merging. `trade_routes.geojson` 20 → 36.
+
+**Axis 2 (road stations)**: **Via Agrippa**, the empire's seventh complete road on the map (after
+Appia, Egnatia, Domitia, Cottia, Augusta, Traiana Nova) and next in the brief's own queue. 32
+stations across two of the network's four branches out of Lugdunum — the Rhine branch (through
+Divodurum/Metz toward Augusta Treverorum/Trier, already a curated site) and the Channel branch
+(Divodurum → Durocortorum/Reims → Bagacum/Bavay → Gesoriacum/Boulogne, Classis Britannica's base
+and Claudius's 43 CE invasion port) — sharing a common trunk to the fork at Andematunnum/Langres.
+`road_stations.geojson` 148 → 180. 6 of the 32 carry `confidence: "low"` for genuinely
+unidentified/disputed stations. Left for a follow-up shift: the Aquitania (Saintes/Bordeaux) and
+Narbonensis (Vienne-Orange-Narbonne) branches — WebSearch confirmed their existence and rough
+route but not station-level mile figures; French Wikipedia's "Voie romaine d'Agrippa
+(Saintes-Lyon)" is a concrete next lead.
+
+**Axis 19 (correspondence networks)**: Ignatius of Antioch's route to martyrdom, a second complete
+corpus alongside Pliny's (already fully mapped) — both halves of the axis's per-shift minimum now
+done. 10 points + 4 route legs: Antioch and Smyrna as the two letter-writing waypoints, Ephesus/
+Magnesia/Tralles as the three churches whose delegates met him at Smyrna, Philadelphia/Smyrna-
+again/Polycarp as the three addressees from Troas, Philippi as the sea-to-land waypoint, Rome as
+the final addressee (his letter begging the Roman church not to intervene) — plotted on top of the
+existing Pliny-corpus Rome point at the same coordinates since it's a distinct fact, not a
+duplicate. The exact martyrdom venue is genuinely unattested (only "an arena under Trajan"
+survives); the Colosseum is named as the traditional guess with `confidence: "medium"` and the
+text states plainly it's a guess, not a settled fact — declarative, not hedging.
+`letters.geojson` 20 → 34.
+
+**Axis 8c (cursus publicus)**: beneficiarii stations, never on this map before. Per-shift minimum
+is 20; the research agent returned 23, **10 of which this shift caught and removed before
+committing** — see the quality-control section below. The 13 that survived review (Mogontiacum,
+Bonna, Abusina, Carnuntum, Poetovio, Aquincum, Praetorium Latobicorum, Sarmizegetusa, Apulum,
+Samum, Viminacium, Lugdunum, Genava) all have a real, specific epigraphic anchor at that exact
+site. `politics.geojson` 32 → 45. Falls short of the 20-25 target as the direct, correct
+consequence of applying "real data or don't include it" honestly, not a shortfall to fix later.
+
+### A real quality-control catch: 10 of 23 "beneficiarii stations" were inference dressed as data
+
+The research agent's own `confidence: "low"` entries mostly weren't "a real, attested station
+whose exact coordinate is uncertain" — this project's actual convention for that field, and what
+every other batch this shift used it for. Reading the `notes` field on each one showed a
+different pattern: "Legio VIII Augusta's fortress... was exactly the kind of junction beneficiarii
+were posted to watch... **no single dedication has been isolated to Argentorate's own vicus
+specifically**" — a plausible-sounding argument built entirely from the general pattern of where
+beneficiarii tended to work, with an explicit admission that no actual evidence places one at this
+site. Nine of the eleven `"low"`-confidence entries had this exact shape (Argentorate, Colonia
+Agrippina, Noviomagus Batavorum, Biriciana, Augusta Vindelicum, Iuvavum, Ovilava, Vindobona,
+Andematunnum), and a tenth at `"low"`-adjacent confidence (Ratiaria) leaned on a real inscription
+about an unrelated customs official to infer a beneficiarii presence by analogy rather than
+direct evidence. All ten were removed before the commit that shipped the other 13. **The
+takeaway for future shifts using research agents for point data**: a `confidence: "low"` label on
+its own isn't enough signal that a record is safe to ship — read what the `notes` field actually
+argues. "This is the kind of place X would be" is not the same claim as "X is attested here," and
+only the second belongs on the map. Removing the file's whole-file Python re-serialization also
+reformatted the 32 pre-existing `politics.geojson` records' `geometry`/`sources` arrays onto
+multiple lines (confirmed byte-identical in content via diff review) — cosmetic, not a regression,
+but worth a heads-up so a future shift doesn't mistake the noisy diff for lost data.
+
+### Track B — lazy-overlays `[11-P0-2]`, plus two bugs it surfaced
+
+**All 27 non-base overlay groups now load their GeoJSON on first enable, not on every page load.**
+Every thematic layer defaults OFF (invariant 0), but `Map.tsx`'s ~30-phase sequential load chain
+fetched, parsed, and added all of them regardless — pure wasted network/parse work for the large
+majority of visits that never open the Layers panel. `app/useLayers.ts` gained a loader registry
+(`registerLayerLoader`/`ensureLayerLoaded`/`resetLayerLoaders`), deduped so toggling a group off
+and back on never re-fetches and a failed fetch retries on the next toggle rather than wedging;
+`toggleLayer()` now loads on first switch-on, `applyAllLayers()` also lazily loads any group a
+returning visitor's `localStorage` already has on. `Map.tsx`'s ~27 thematic phases had their
+existing fetch+addSource+addLayer+handlers bodies handed to the registry instead of running
+unconditionally — a mechanical wrap, no logic changed inside any phase. `lines.geojson` (backs
+both `frontier-lines` and `aqueduct-lines`) uses a shared `onceLoader` so the second group to
+switch on doesn't re-fetch. New `THEMATIC_LAYER_ORDER` + `restackThematicLayers()` keep
+cross-overlay z-order canonical regardless of what order a user enables things in.
+
+**Verified independently, not just from the implementing agent's own report**: read the full diff
+of both changed files before committing; `npx tsc --noEmit`/`npm run build`/`npm run validate` all
+clean; a from-scratch Playwright run against the built production server (not the agent's own)
+confirmed cold load fetches none of the 27 thematic files; presetting `localStorage`'s
+`mints:true` before load confirmed the returning-visitor path — `mints.geojson` fetched exactly
+once, layer visible, source carrying all 40 features (this same shift's mint-data batch, correctly
+picked up through the new lazy path); 375×812 dark and 1280×800 light screenshots of the default
+view both clean, pixel-equivalent to the pre-change base map.
+
+**Two small pre-existing eager fetches the lazy-overlays agent found but correctly left out of
+its own scope, fixed separately same-shift**: `ProvincePanel.tsx` fetched `politics.geojson`
+unconditionally on mount regardless of whether a province panel was ever opened — gated behind
+the panel's own `open` flag. `PeopleMarkers.tsx` awaited `people_117.geojson` before checking its
+own `visible` flag — reordered so the visibility check runs first. A fresh Playwright cold-load
+check after both fixes: the only `/data/*.geojson` requests left on a cold load are the 10
+base-group files, zero thematic files of any kind.
+
+### Build, validate, verify
+
+`npm run validate`: 0 errors, 17 warnings (up from 13 — 4 new ones are `letters.geojson`'s
+Ignatius route LineStrings correctly missing a `name` field, same pre-existing convention as
+Pliny's 7 routes; documented in `METRICS.md`'s standing-warnings note). `npx tsc --noEmit` clean.
+`npm run build` clean on every commit this shift (one transient `ENOENT` on a `.next/export`
+rename during the very first push, resolved by `rm -rf .next` and rebuilding — looked like a
+build-cache race from a concurrent background agent also running its own build in the same
+working directory at that moment, not a real regression; every subsequent push built clean on the
+first try). `npm run metrics --write`: records in the 29 thematic files 875 → 994 (+119, matching
+this shift's additions exactly once the beneficiarii cleanup is included), 100% description depth
+holds, 0 thin.
+
+### Board
+
+Claimed and closed `[11-P0-2]` `lazy-overlays` (see BOARD.md for the full write-up merged into
+its own entry). No other board ticket touched this shift — Track A followed the brief's own axis
+queue and per-shift minimums directly, which the board's own header text allows ("still a valid
+source of work when the board has nothing that fits" for axis breadth work, though the actual
+reason this shift leaned on axis work over more board tickets was straightforwardly that the
+topmost unclaimed board P0s left by shift 33's handoff — `[12-P0-1]` merge-themes, `[03-P0-1]`
+schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terrain — are all large, architecturally
+significant changes better suited to a shift that opens with them as the sole focus rather than
+splitting attention across a data-heavy shift).
+
+### Handoff for the next shift
+
+1. **Via Agrippa has two branches left** (Aquitania: Saintes/Bordeaux; Narbonensis:
+   Vienne-Orange-Narbonne) — see the axis-2 note above for the concrete French-Wikipedia lead.
+2. **Alimenta-town research hit the same WebFetch-blocked wall this shift's predecessor also hit**
+   — the specific leads (Ficulea, Ameria, Tifernum Mataurense, Trebula Mutuesca, Sestinum,
+   Ariminum, Superaequum, Forum Sempronii, Suasa) are real candidate names, just missing a
+   confirmable CIL/ILS reference under this sandbox's search constraints. Worth a pass from an
+   environment that can actually reach Wikipedia/Commons/JSTOR-adjacent sites directly.
+3. **`places_medium.geojson`'s Latin-name matching is unreliable for disambiguating repeated
+   ancient toponyms** — "Clunia" pointed at an unrelated German site instead of the real Roman
+   assize center in Burgos, Spain. Not fixed (out of scope for the file that surfaced it); worth
+   a dedicated gazetteer-audit pass, possibly folding into `[12-P0-1]`'s merge-themes scope since
+   that ticket already owns cross-file place deduplication.
+4. **Read agent-returned "low confidence" research data before merging it, not just after** — see
+   the beneficiarii quality-control section above. This isn't specific to that one batch; any
+   future axis populated by a WebSearch-only research agent should get the same read-the-actual-
+   reasoning-not-just-the-confidence-label review before it reaches `main`.
+5. **Board fresh-check**: `[11-P0-2]` lazy-overlays is now closed. Topmost unclaimed P0s are
+   still `[12-P0-1]` merge-themes (big), `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]`
+   terrain, and `[02-P0-4]` self-host-glyphs (still needs an unblocked environment for glyph PBF
+   generation). No unclaimed P0/P1 `add` exists; `[06-P2-6]` priority-cities remains the only P2
+   `add` and stays blocked on Overpass in this sandbox.
+
+---
+
 ## Shift 33 — 2026-08-19 (this shift's own prompt claimed "Shift 2 of four")
 
 **Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt said
