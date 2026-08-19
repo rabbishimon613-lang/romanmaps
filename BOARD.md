@@ -682,7 +682,15 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[13-P0-3]` **`image-fallback`** `illustrate` — Static map thumbnail for the 145 places
       with no image.
 - [ ] `[11-P0-2]` **`lazy-overlays`** `polish` — Fetch a thematic layer's data on first enable.
-- [ ] `[01-P0-3]` **`cluster-expand`** `polish` — Tapping a cluster badge fits to its members.
+- [x] `[01-P0-3]` **`cluster-expand`** `polish` — Already implemented, just never marked —
+      found and closed 2026-08-19 by cloud shift 32. `PoiMarkers.tsx`'s cluster badges have
+      carried a click handler that `fitBounds`s to every member's coordinates (capped at
+      `maxZoom: 17`, `padding: 80`) since whenever clustering itself landed; this ticket's ask
+      was already met, just never checked off. **Verified live**, not just by reading the code —
+      this run's `[02-P0-4]` fix (see above) made a real `next dev` + Playwright session possible
+      in this sandbox for the first time: loaded the empire view, clicked a 68-member cluster
+      near Rome, watched the map ease from z6.0 to z10.0 exactly as `fitBounds` promises. No code
+      changed, just closing the loop.
 - [x] `[01-P0-4]` **`search-selects`** `polish` — Done 2026-08-17 by cloud shift 26. Search now
       also matches the 467 curated `pois.geojson` records (merged ahead of the DARE gazetteer so a
       curated landmark outranks a bare dot of the same name): a POI result calls `selectPoi()` and
