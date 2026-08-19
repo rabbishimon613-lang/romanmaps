@@ -9,6 +9,7 @@ import { useIsMobile } from "./useIsMobile";
 import { useNearbyPois } from "./useNearby";
 import { useUnits, formatDistance } from "./useUnits";
 import { setDirectionsDestination } from "./useDirections";
+import { motionDuration } from "./reducedMotion";
 
 const CONFIDENCE_COLOR: Record<string, string> = {
   high: "var(--ok)",
@@ -240,7 +241,7 @@ export default function PlaceDetails() {
 
   const flyTo = () => {
     const map = (window as any).__map as MLMap | undefined;
-    if (map) map.flyTo({ center: rendered.lngLat, zoom: Math.max(map.getZoom(), 8), duration: 800 });
+    if (map) map.flyTo({ center: rendered.lngLat, zoom: Math.max(map.getZoom(), 8), duration: motionDuration(800) });
   };
 
   const copyLink = () => {

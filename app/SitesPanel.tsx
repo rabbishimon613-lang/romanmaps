@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import type { Map as MLMap } from "maplibre-gl";
 import { SITES } from "./sites";
+import { motionDuration } from "./reducedMotion";
 
 /** Slide-in panel listing all archaeological sites with street-level detail.
  * Toggled by the "Explore" icon in the left rail. Google-Maps "Explore this area" analog. */
@@ -32,7 +33,7 @@ export default function SitesPanel({ open, onClose }: { open: boolean; onClose: 
     const s = SITES.find((x) => x.slug === slug);
     if (!s) return;
     const map = (window as any).__map as MLMap | undefined;
-    if (map) map.flyTo({ center: s.center, zoom: s.zoom, duration: 1400 });
+    if (map) map.flyTo({ center: s.center, zoom: s.zoom, duration: motionDuration(1400) });
     // Fetch this site's building/street detail now rather than waiting for flyTo's moveend —
     // the two run in parallel, so detail is ready by the time the camera settles. See [11-P0-1].
     const loadSiteDetail = (window as any).__loadSiteDetail as ((slug: string) => void) | undefined;

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import type { Map as MLMap } from "maplibre-gl";
 import { useIsMobile } from "./useIsMobile";
 import { usePoiPanel } from "./usePoiPanel";
+import { motionDuration } from "./reducedMotion";
 
 /** Google-Maps-style compass: hidden while the map points north, appears the moment the user
  * rotates it (right-click-drag or two-finger twist on touch — both are MapLibre's own default
@@ -48,7 +49,7 @@ export default function Compass() {
 
   const resetNorth = () => {
     const map = (window as any).__map as MLMap | undefined;
-    if (map) map.easeTo({ bearing: 0, duration: 300 });
+    if (map) map.easeTo({ bearing: 0, duration: motionDuration(300) });
   };
 
   // Hidden while the mobile Place details bottom sheet covers this corner — same pattern as

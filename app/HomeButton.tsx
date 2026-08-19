@@ -3,6 +3,7 @@
 import type { Map as MLMap } from "maplibre-gl";
 import { useIsMobile } from "./useIsMobile";
 import { usePoiPanel } from "./usePoiPanel";
+import { motionDuration } from "./reducedMotion";
 
 const HOME_CENTER: [number, number] = [12.4964, 41.9028];
 const HOME_ZOOM = 4.2;
@@ -16,7 +17,7 @@ export default function HomeButton() {
 
   const goHome = () => {
     const map = (window as any).__map as MLMap | undefined;
-    if (map) map.flyTo({ center: HOME_CENTER, zoom: HOME_ZOOM, duration: 900 });
+    if (map) map.flyTo({ center: HOME_CENTER, zoom: HOME_ZOOM, duration: motionDuration(900) });
   };
 
   return (

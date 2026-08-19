@@ -10,6 +10,7 @@ import { PROVINCES } from "./provinces";
 import { isRulerActive } from "./useRuler";
 import { isDirectionsActive } from "./useDirections";
 import { categoryColorMatchPairs, DEFAULT_COLOR } from "./poiCategories";
+import { motionDuration } from "./reducedMotion";
 import { ostiaEntry } from "./ostiaDescriptions";
 import { pompeiiEntry } from "./pompeiiDescriptions";
 import { herculaneumEntry } from "./herculaneumDescriptions";
@@ -342,7 +343,7 @@ export default function Map() {
         map.jumpTo({ center: [15, 43], zoom: 3.8 });
         setTimeout(() => {
           if (!map) return;
-          map.flyTo({ center: [12.4964, 41.9028], zoom: 4.2, duration: 1200 });
+          map.flyTo({ center: [12.4964, 41.9028], zoom: 4.2, duration: motionDuration(1200) });
         }, 50);
       };
       map.once("load", openingFly);
@@ -396,7 +397,7 @@ export default function Map() {
           const padding = isMobile
             ? { top: 0, right: 0, left: 0, bottom: Math.round(window.innerHeight * 0.55) }
             : { top: 66, right: 0, left: 470, bottom: 40 };
-          map.easeTo({ center: sel.lngLat, padding, duration: 500 });
+          map.easeTo({ center: sel.lngLat, padding, duration: motionDuration(500) });
         } else {
           map.setPadding({ top: 0, right: 0, left: 0, bottom: 0 });
         }
@@ -409,7 +410,7 @@ export default function Map() {
         const view = parseHash(window.location.hash);
         if (!view) return;
         suppressNextPush = true;
-        map.flyTo({ center: [view.lng, view.lat], zoom: view.zoom, duration: 600 });
+        map.flyTo({ center: [view.lng, view.lat], zoom: view.zoom, duration: motionDuration(600) });
         if (view.poiId && poiIndex && poiIndex[view.poiId]) {
           selectPoi(poiIndex[view.poiId].props, poiIndex[view.poiId].coords);
         } else {
@@ -592,7 +593,7 @@ export default function Map() {
             "circle-radius": 0,
             "circle-opacity": 0,
             "circle-color": ["match", ["get", "category"], ...categoryColorMatchPairs(), DEFAULT_COLOR] as any,
-            "circle-stroke-color": "#f4ead5",
+            "circle-stroke-color": P.labelHalo,
             "circle-stroke-width": 2.2,
           },
         });
@@ -766,7 +767,7 @@ export default function Map() {
           },
           paint: {
             "text-color": "#5f6368",
-            "text-halo-color": "#f4ead5",
+            "text-halo-color": P.labelHalo,
             "text-halo-width": 1.6,
           },
         });
@@ -832,7 +833,7 @@ export default function Map() {
           },
           paint: {
             "text-color": "#2a1e10",
-            "text-halo-color": "#f4ead5",
+            "text-halo-color": P.labelHalo,
             "text-halo-width": 1.4,
           },
         });
@@ -925,7 +926,7 @@ export default function Map() {
           if (ctx2d) {
             ctx2d.fillStyle = "#6b6f76";
             ctx2d.fillRect(1, 1, sq - 2, sq - 2);
-            ctx2d.strokeStyle = "#f4ead5";
+            ctx2d.strokeStyle = P.labelHalo;
             ctx2d.lineWidth = 1;
             ctx2d.strokeRect(1, 1, sq - 2, sq - 2);
             const imgData = ctx2d.getImageData(0, 0, sq, sq);
@@ -1007,7 +1008,7 @@ export default function Map() {
             paint: {
               "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
               "circle-color": "#a1442e",
-              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-color": P.labelHalo,
               "circle-stroke-width": 1.6,
             },
           });
@@ -1073,7 +1074,7 @@ export default function Map() {
             paint: {
               "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3, 8, 5.5],
               "circle-color": "#b8860b",
-              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-color": P.labelHalo,
               "circle-stroke-width": 1.6,
             },
           });
@@ -1140,7 +1141,7 @@ export default function Map() {
             paint: {
               "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
               "circle-color": "#5c3a21",
-              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-color": P.labelHalo,
               "circle-stroke-width": 1.6,
             },
           });
@@ -1187,7 +1188,7 @@ export default function Map() {
             paint: {
               "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
               "circle-color": "#1f9e89",
-              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-color": P.labelHalo,
               "circle-stroke-width": 1.6,
             },
           });
@@ -1238,7 +1239,7 @@ export default function Map() {
             paint: {
               "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
               "circle-color": "#b08d2e",
-              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-color": P.labelHalo,
               "circle-stroke-width": 1.6,
             },
           });
@@ -1282,7 +1283,7 @@ export default function Map() {
             paint: {
               "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
               "circle-color": "#8859a6",
-              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-color": P.labelHalo,
               "circle-stroke-width": 1.6,
             },
           });
@@ -1331,7 +1332,7 @@ export default function Map() {
             paint: {
               "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
               "circle-color": "#a1442e",
-              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-color": P.labelHalo,
               "circle-stroke-width": 1.6,
             },
           });
@@ -1452,7 +1453,7 @@ export default function Map() {
             paint: {
               "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
               "circle-color": "#c98a2e",
-              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-color": P.labelHalo,
               "circle-stroke-width": 1.6,
             },
           });
@@ -1553,7 +1554,7 @@ export default function Map() {
             paint: {
               "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
               "circle-color": "#a63d6b",
-              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-color": P.labelHalo,
               "circle-stroke-width": 1.6,
             },
           });
@@ -1611,7 +1612,7 @@ export default function Map() {
             paint: {
               "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
               "circle-color": "#3f7a4f",
-              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-color": P.labelHalo,
               "circle-stroke-width": 1.6,
             },
           });
@@ -1664,7 +1665,7 @@ export default function Map() {
             paint: {
               "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
               "circle-color": "#3a6b91",
-              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-color": P.labelHalo,
               "circle-stroke-width": 1.6,
             },
           });
@@ -1716,7 +1717,7 @@ export default function Map() {
             paint: {
               "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
               "circle-color": "#8a5a8f",
-              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-color": P.labelHalo,
               "circle-stroke-width": 1.6,
             },
           });
@@ -1794,7 +1795,7 @@ export default function Map() {
                 "#8b5a2b",
                 "#5c7a3a",
               ],
-              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-color": P.labelHalo,
               "circle-stroke-width": 1.6,
             },
           });
@@ -1862,7 +1863,7 @@ export default function Map() {
             paint: {
               "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
               "circle-color": "#3b4a7a",
-              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-color": P.labelHalo,
               "circle-stroke-width": 1.6,
             },
           });
@@ -1915,7 +1916,7 @@ export default function Map() {
             paint: {
               "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
               "circle-color": "#2e6b4f",
-              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-color": P.labelHalo,
               "circle-stroke-width": 1.6,
             },
           });
@@ -1977,7 +1978,7 @@ export default function Map() {
                 "enemy", "#8b2e2e",
                 "#6a6a6a",
               ],
-              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-color": P.labelHalo,
               "circle-stroke-width": 1.6,
             },
           });
@@ -2169,7 +2170,7 @@ export default function Map() {
             paint: {
               "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
               "circle-color": "#8a6d3b",
-              "circle-stroke-color": "#f4ead5",
+              "circle-stroke-color": P.labelHalo,
               "circle-stroke-width": 1.6,
             },
           });

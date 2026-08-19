@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import type { Map as MLMap } from "maplibre-gl";
 import { LEGIONS } from "./legions";
 import { selectPoi } from "./usePoiPanel";
+import { motionDuration } from "./reducedMotion";
 
 /** Slide-in panel listing all 28 legions of the Roman army in 117 CE, each pinned to its
  * fortress. Toggled by the left rail's "Legions" icon. Reuses the exact fortress records already
@@ -57,7 +58,7 @@ export default function LegionLocator({ open, onClose }: { open: boolean; onClos
 
   const jumpTo = (l: (typeof LEGIONS)[number]) => {
     const map = (window as any).__map as MLMap | undefined;
-    if (map) map.flyTo({ center: l.center, zoom: 12, duration: 1400 });
+    if (map) map.flyTo({ center: l.center, zoom: 12, duration: motionDuration(1400) });
     const entry = poisById?.[l.poiId];
     if (entry) selectPoi(entry.props, entry.coords);
     // Close the list so the Place details panel it just opened isn't hidden behind it — same

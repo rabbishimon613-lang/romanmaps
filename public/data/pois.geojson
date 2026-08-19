@@ -1486,7 +1486,15 @@
           "https://www.ostia-antica.org/introduction/ostia-early-imperial.htm",
           "Russell Meiggs, Roman Ostia (Oxford, 2nd ed. 1973), ch. 4-5"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "CIL XIV 375",
+            "work": "honorific/building inscription",
+            "ref": "late 1st c. BCE",
+            "note": "The local benefactor Publius Lucilius Gamala records paving a street beside the Forum in stone and funding repairs to its temples and a marble tribunal there; the original stone is lost, the text preserved through 16th-century antiquarian copies."
+          }
+        ]
       }
     },
     {
@@ -1598,7 +1606,15 @@
           "https://www.ostia-antica.org/regio2/7/7-2.htm",
           "https://ancienttheatrescom.wpcomstaging.com/theatre/ostia-ostia-antica-rome-italy/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "CIL XIV 82",
+            "work": "building inscription",
+            "ref": "18/17 BCE",
+            "note": "Names Marcus Agrippa as builder of the original theatre, dated by his tribunician power — the Augustan-era building still standing in 117 CE, decades before Commodus enlarged it."
+          }
+        ]
       }
     },
     {
@@ -2073,7 +2089,15 @@
           "https://en.wikipedia.org/wiki/Heptastadion",
           "https://www.britannica.com/place/Heptastadion"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "17.1.6-10",
+            "note": "Describes the Heptastadion as an artificial mole carrying a road and an aqueduct out to Pharos, with two bridged channels left open into the Eunostos harbor."
+          }
+        ]
       }
     },
     {
@@ -2826,7 +2850,15 @@
           "https://www.worldhistory.org/image/11271/the-basilica-of-pompeii/ (Pompeii Archaeological Park, Forum overview)",
           "https://en.wikipedia.org/wiki/Pompeii"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "CIL X 794",
+            "work": "building inscription",
+            "ref": "89-80 BCE",
+            "note": "The quaestor Vibius Popidius records having the porticoes around the Forum built, in the years after Pompeii became a Roman colony."
+          }
+        ]
       }
     },
     {
@@ -2889,7 +2921,15 @@
           "https://en.wikipedia.org/wiki/Temple_of_Jupiter_(Pompeii)",
           "Seneca, Naturales Quaestiones 6.1 (on the 62 CE earthquake damage to Pompeii's public buildings)"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "CIL X 797",
+            "work": "statue base",
+            "ref": "1st c. CE",
+            "note": "A marble base found in the temple's cella honors Spurius Turranius Proculus Gellianus and lists his priesthoods — flamen dialis, augur, pontifex — evidence of the cult still active here before the eruption."
+          }
+        ]
       }
     },
     {

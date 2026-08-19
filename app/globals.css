@@ -109,3 +109,17 @@ textarea:focus-visible {
 .maplibregl-popup-anchor-left .maplibregl-popup-tip { border-right-color: var(--surface) !important; }
 .maplibregl-popup-anchor-right .maplibregl-popup-tip { border-left-color: var(--surface) !important; }
 .maplibregl-popup-close-button { color: var(--text-2) !important; }
+
+/* [05-P0-3] Honour prefers-reduced-motion — collapses every CSS transition/animation on the site
+   (panel slides, sheet drags, hint fades, etc.) to effectively instant. MapLibre's own camera
+   flyTo/easeTo calls aren't CSS and need the separate JS-side guard in app/reducedMotion.ts. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

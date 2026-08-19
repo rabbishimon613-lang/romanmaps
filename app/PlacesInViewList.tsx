@@ -9,6 +9,7 @@ import { selectPoi, usePoiPanel } from "./usePoiPanel";
 import { closePlacesInView, openPlacesInView, usePlacesInViewOpen } from "./usePlacesInView";
 import { useIsMobile } from "./useIsMobile";
 import { useUnits, formatDistance } from "./useUnits";
+import { motionDuration } from "./reducedMotion";
 
 const EARTH_RADIUS_M = 6371008.8;
 const MAX_ROWS = 150;
@@ -124,11 +125,11 @@ export default function PlacesInViewList() {
         const padding = isMobile
           ? { top: 0, right: 0, left: 0, bottom: Math.round(window.innerHeight * 0.55) }
           : { top: 66, right: 0, left: 470, bottom: 40 };
-        map.flyTo({ center: [row.lng, row.lat], zoom: Math.max(map.getZoom(), 15.5), padding, duration: 900 });
+        map.flyTo({ center: [row.lng, row.lat], zoom: Math.max(map.getZoom(), 15.5), padding, duration: motionDuration(900) });
       }
     } else if (row.kind === "site" && row.siteSlug) {
       const s = SITES.find((x) => x.slug === row.siteSlug);
-      if (s && map) map.flyTo({ center: s.center, zoom: s.zoom, duration: 1400 });
+      if (s && map) map.flyTo({ center: s.center, zoom: s.zoom, duration: motionDuration(1400) });
       const loadSiteDetail = (window as any).__loadSiteDetail as ((slug: string) => void) | undefined;
       if (row.siteSlug) loadSiteDetail?.(row.siteSlug);
     }

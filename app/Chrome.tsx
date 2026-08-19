@@ -17,6 +17,7 @@ import { useOnboardingHint } from "./useOnboardingHint";
 import { activateRuler } from "./useRuler";
 import { openTourPanel } from "./useTour";
 import { openPlacesInView } from "./usePlacesInView";
+import { motionDuration } from "./reducedMotion";
 
 export default function Chrome() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -131,11 +132,11 @@ export default function Chrome() {
         const padding = isMobileNow
           ? { top: 0, right: 0, left: 0, bottom: Math.round(window.innerHeight * 0.55) }
           : { top: 66, right: 0, left: 470, bottom: 40 };
-        map.flyTo({ center: [p.lng, p.lat], zoom: Math.max(map.getZoom(), 15.5), padding, duration: 900 });
+        map.flyTo({ center: [p.lng, p.lat], zoom: Math.max(map.getZoom(), 15.5), padding, duration: motionDuration(900) });
       }
     } else {
       if (map) {
-        map.flyTo({ center: [p.lng, p.lat], zoom: Math.max(map.getZoom(), 7.5), duration: 1000 });
+        map.flyTo({ center: [p.lng, p.lat], zoom: Math.max(map.getZoom(), 7.5), duration: motionDuration(1000) });
         const el = document.createElement("div");
         el.innerHTML = `
           <svg width="27" height="36" viewBox="0 0 27 36" style="filter:drop-shadow(0 1px 3px rgba(0,0,0,.4));">

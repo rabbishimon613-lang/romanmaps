@@ -7,6 +7,7 @@ import { useCategoryFilters } from "./CategoryChips";
 import { useHiddenCategories } from "./useHiddenCategories";
 import { selectPoi, usePoiPanel } from "./usePoiPanel";
 import { useLayers } from "./useLayers";
+import { motionDuration } from "./reducedMotion";
 
 type PoiFeature = GeoJSON.Feature<GeoJSON.Point, Record<string, any>>;
 
@@ -222,7 +223,7 @@ export default function PoiMarkers() {
         const pad = 0.001;
         map.fitBounds(
           [[west - pad, south - pad], [east + pad, north + pad]],
-          { padding: 80, duration: 700, maxZoom: 17 },
+          { padding: 80, duration: motionDuration(700), maxZoom: 17 },
         );
       });
 

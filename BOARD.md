@@ -518,9 +518,12 @@ to prevent. Building locally to *test* your own work is expected and fine.
       (documented workaround for the `demotiles.maplibre.org` block, see `[02-P0-4]`) — both new
       layers add with valid paint expressions, screenshotted correctly at 1280x900 light and
       375x812 dark.
-- [~] `[02-FIX]` **`halo-colors`** `fix` — claimed by cloud shift 32, 2026-08-19 00:15. ~12 layers
-      in `Map.tsx` hardcode `#f4ead5` (the *light* land colour) as halo/stroke regardless of
-      theme. Replace with `P.labelHalo`.
+- [x] `[02-FIX]` **`halo-colors`** `fix` — Done 2026-08-19 by cloud shift 32. Replaced all 21
+      hardcoded `"#f4ead5"` halo/stroke literals in `Map.tsx` (circle-stroke-color, text-halo-
+      color, one canvas-drawn icon's strokeStyle) with `P.labelHalo`, which already resolves to
+      the correct light/dark token — the two `LIGHT`/`DARK` palette *definitions* themselves
+      (lines 46, 56) are the only remaining literal `#f4ead5`, as they should be. `npx tsc
+      --noEmit` and `npm run build` both clean.
 - [ ] `[08-P0-1]` **`palaeo-coasts`** `fix` — Ancient coastline patches for Ostia/Portus,
       Ravenna, Ephesus, Miletus, Priene, Rhine–Meuse, the Fens, Romney Marsh, Maeander,
       Scamander, Lake Fucinus, Lake Copais.
@@ -586,6 +589,23 @@ to prevent. Building locally to *test* your own work is expected and fine.
       contemporary with 117 CE (the same post-117 finding batch 1 had already made for Ostia's
       Capitolium/guild seats, corroborated here independently). `pois.geojson`: 167 → 173 of 470
       POIs now carry `ancient_sources`.*
+      *Batch 5 done 2026-08-19 by cloud shift 32: researched 16 candidate monuments via a
+      background WebSearch agent (Trajan's Markets, five Ostia landmarks, six Pompeii/Herculaneum
+      ones, Corinth's Peirene, Antioch's theatre, Alexandria's Heptastadion, Londinium's forum and
+      bridge), then personally screened the results down to the 5 that were both real and safely
+      dated: Ostia Forum (CIL XIV 375, Lucilius Gamala's paving/repairs), Ostia Theatre (CIL XIV
+      82, Agrippa's Augustan-era building inscription), Pompeii Forum (CIL X 794, Vibius Popidius's
+      portico), Pompeii Temple of Jupiter (CIL X 797, a priest's statue base found in the cella),
+      and Alexandria's Heptastadion (Strabo, *Geography* 17.1.6-10). The other 11 were dropped on
+      the agent's own honesty, not padded in: Trajan's Markets, Piazzale delle Corporazioni,
+      Villa of the Mysteries, Villa of the Papyri, and both Londinium entries came back genuinely
+      `not_found`; the Antioch theatre and Villa of the Mysteries seal only had a late/unpinned
+      source (Malalas, 6th c.); Corinth's Peirene had a real citation (Pausanias 2.3.2-3) but
+      Pausanias wrote 150s-160s CE describing what may be a later marble remodeling, too close to
+      misattributing a post-117 phase to risk it. One useful side-finding: the agent flagged
+      Ostia's Capitolium as possibly post-117 and worth a date check — already correctly handled,
+      `pois.geojson` has had `built: 120, extant_117ce: false` on that record all along, so no
+      fix needed. `pois.geojson`: 173 → 178 of 469 POIs now carry `ancient_sources`.*
 - [ ] `[09-P1-5]` **`clear-unverified`** `verify` — Re-check the citations SHIFT_LOG recorded as
       unverified (Atrium Vestae, Domus Flavia, Bibliotheca Ulpia, Baths of Nero, Ara Pacis).
 - [ ] `[08-P1-4]` **`gazetteer-audit`** `fix` — Londinium is missing from `places_medium`. Audit
@@ -617,8 +637,22 @@ to prevent. Building locally to *test* your own work is expected and fine.
       (existing behavior, for arrow-key pan) and picks up the ring too, though at full-viewport
       size the ring renders just outside the visible canvas and is effectively invisible — not a
       regression, just a size where the effect doesn't show.
-- [~] `[05-P0-3]` **`reduced-motion`** `polish` — claimed by cloud shift 32, 2026-08-19 00:15.
-      Honour `prefers-reduced-motion`.
+- [x] `[05-P0-3]` **`reduced-motion`** `polish` — Done 2026-08-19 by cloud shift 32 (Track B).
+      Global `@media (prefers-reduced-motion: reduce)` block in `globals.css` collapses every CSS
+      transition/animation to ~instant — covers the panel slides, sheet drags, hint fades, etc.
+      that already used inline `transition:` styles, no per-component changes needed. MapLibre's
+      camera `flyTo`/`easeTo` calls animate via `requestAnimationFrame`, not CSS, so a separate
+      `app/reducedMotion.ts` (`motionDuration(ms)`, mirrors the existing `prefersDark()` pattern)
+      wraps the `duration` on all 13 call sites across `Map.tsx`, `Chrome.tsx`, `Compass.tsx`,
+      `HomeButton.tsx`, `LegionLocator.tsx`, `PlaceDetails.tsx`, `PlacesInViewList.tsx`,
+      `SitesPanel.tsx`, `TourPlayer.tsx`, and the cluster-expand `fitBounds` in `PoiMarkers.tsx` —
+      the opening cinematic fly, every search/site/legion/tour jump, place-selection easing, and
+      the compass bearing reset all cut instantly instead of forcing a pan. Left the four ~200ms
+      keyboard pan/zoom nudges in `useKeyboardShortcuts.ts` and `ZoomControl.tsx` unwrapped — short
+      enough not to be the vestibular-trigger case this ticket targets, and wrapping them adds
+      surface area for no real benefit. Couldn't screenshot live (this sandbox's `map.on("load")`
+      never fires, see `[02-P0-4]`) — verified by code review + `npx tsc --noEmit` + `npm run
+      build`, both clean.
 - [ ] `[13-P0-3]` **`image-fallback`** `illustrate` — Static map thumbnail for the 145 places
       with no image.
 - [ ] `[11-P0-2]` **`lazy-overlays`** `polish` — Fetch a thematic layer's data on first enable.
@@ -635,8 +669,19 @@ to prevent. Building locally to *test* your own work is expected and fine.
 
 ## P2
 
-- [~] `[07-P1-3]` **`prices`** `deepen` — claimed by cloud shift 32, 2026-08-19 00:15. Prices and
-      wages; extend the currency converter.
+- [x] `[07-P1-3]` **`prices`** `deepen` — Done 2026-08-19 by cloud shift 32. New "What things
+      cost" section in `app/CurrencyConverter.tsx`, five well-attested period prices/wages, each
+      with a real citation and no Diocletian's-Edict anachronism (that's 301 CE, 184 years past
+      this map's snapshot): a legionary's 300-denarii yearly pay (Suetonius, *Domitian* 7.3), a
+      modius of wheat at 40 asses (Pliny the Elder, *Natural History* 18.90), a sextarius of house
+      wine at 1 as (a Pompeii tavern's own scratched price list, CIL IV 1679), and a day-laborer's
+      1-denarius wage (Matthew 20:2). Live-updates against whatever amount/unit the user has
+      entered above ("your amount above buys about N of these"), so it deepens the existing
+      converter rather than just bolting on a static table. Researched via a background WebSearch
+      agent instructed to report `not_found` rather than guess; deliberately dropped several
+      candidates the agent flagged as single-source-with-no-pinned-citation (centurion pay
+      multiplier, slave prices, olive oil, a toga) — "real data or don't include it" per the
+      brief, a shorter sourced list beats a longer hedged one. `npx tsc --noEmit` clean.
 - [x] `[07-P1-4]` **`governors`** `add` — Done 2026-08-17 by cloud shift 25, with an honest
       shortfall against the ~45 estimate — see note below. 12 governors added to
       `public/data/politics.geojson` (`category: "provincial_governor"`, reusing the existing

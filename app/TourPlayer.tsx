@@ -6,6 +6,7 @@ import { TOURS, type Tour, type TourStop } from "./tours";
 import { closeTourPanel, backToTourList, goToStop, minimizeTourPanel, selectTour, useTourPanel } from "./useTour";
 import { selectPoi } from "./usePoiPanel";
 import { useIsMobile } from "./useIsMobile";
+import { motionDuration } from "./reducedMotion";
 
 type LngLat = [number, number];
 type ResolvedStop = { name: string; body: string; sources: string[]; coords: LngLat; poiProps?: Record<string, any> };
@@ -172,7 +173,7 @@ export default function TourPlayer() {
     const stopDef = activeTour?.stops[i];
     if (!resolved || !stopDef) return;
     const map = (window as any).__map as MLMap | undefined;
-    if (map) map.flyTo({ center: resolved.coords, zoom: ZOOM_BY_KIND[stopDef.kind], duration: 1200 });
+    if (map) map.flyTo({ center: resolved.coords, zoom: ZOOM_BY_KIND[stopDef.kind], duration: motionDuration(1200) });
   };
 
   const openFullDetails = () => {
