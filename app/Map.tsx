@@ -102,6 +102,40 @@ function prefersDark(): boolean {
   return window.matchMedia("(prefers-color-scheme: dark)").matches;
 }
 
+/** [02-P0-4] MapLibre's "load" event is supposed to fire once the initial style — land/sea/
+ * provinces plus the two always-on symbol label layers below — is ready to render, and
+ * everything from Phase 2 on (roads, POIs, every site's building layer) waits on it. This
+ * project's own sandbox found that event never firing at all when the style's `glyphs` host
+ * (demotiles.maplibre.org) is network-blocked — not just missing labels, but Phase 2 onward
+ * never running, silently stuck at the bare base map forever — even though `map.loaded()`
+ * itself flips true within about a second regardless. Self-hosting glyph PBFs would remove the
+ * external dependency outright (a separate, bigger lift — real font assets plus a generation
+ * pipeline, both currently unavailable in this sandbox); until that lands, this races every
+ * event that normally carries readiness against a short poll of the one signal actually
+ * observed to work, so a blocked/slow glyphs host degrades to "labels arrive a beat late"
+ * instead of "nothing past the base map ever appears." Returns a disposer for effect cleanup. */
+function whenMapReady(map: maplibregl.Map, cb: () => void): () => void {
+  let fired = false;
+  const tryFire = () => {
+    if (fired || !map.loaded()) return;
+    fired = true;
+    cleanup();
+    cb();
+  };
+  const cleanup = () => {
+    map.off("load", tryFire);
+    map.off("idle", tryFire);
+    map.off("styledata", tryFire);
+    clearInterval(poll);
+  };
+  map.on("load", tryFire);
+  map.on("idle", tryFire);
+  map.on("styledata", tryFire);
+  const poll = setInterval(tryFire, 300);
+  tryFire(); // covers the rare case where the map is already loaded by the time this runs
+  return cleanup;
+}
+
 export default function Map() {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -116,6 +150,7 @@ export default function Map() {
     let pushTimer: ReturnType<typeof setTimeout> | null = null;
     let unsubPoi: (() => void) | null = null;
     let unsubProvince: (() => void) | null = null;
+    const readyDisposers: Array<() => void> = [];
     // Populated once pois.geojson loads (Phase 4 below) so a shared #lng,lat,zoomz:poiId link —
     // or a back/forward step onto one — can look the place back up and reopen its panel.
     // (Plain object, not a `Map` instance — this component is itself named `Map`, which shadows
@@ -346,7 +381,7 @@ export default function Map() {
           map.flyTo({ center: [12.4964, 41.9028], zoom: 4.2, duration: motionDuration(1200) });
         }, 50);
       };
-      map.once("load", openingFly);
+      readyDisposers.push(whenMapReady(map, openingFly));
       ro = new ResizeObserver(kick);
       ro.observe(ref.current);
       onWinResize = kick;
@@ -421,7 +456,7 @@ export default function Map() {
 
       // Phase 2: roads — Itiner-e dataset, split into Main (viae) and Secondary.
       // Google-Maps-like hierarchy: Main = highway (thicker, brighter), Secondary = local street.
-      map.on("load", async () => {
+      readyDisposers.push(whenMapReady(map, () => { (async () => {
         const [mainRoads, secondaryRoads] = await Promise.all([
           fetch("/data/roads_main.geojson").then((r) => r.json()),
           fetch("/data/roads_secondary.geojson").then((r) => r.json()),
@@ -2507,7 +2542,7 @@ export default function Map() {
 
         // Apply any persisted Layers-panel visibility (all groups default visible).
         applyAllLayers();
-      });
+      })(); }));
     })();
 
     return () => {
@@ -2517,6 +2552,7 @@ export default function Map() {
       if (unsubPoi) unsubPoi();
       if (unsubProvince) unsubProvince();
       if (pushTimer) clearTimeout(pushTimer);
+      readyDisposers.forEach((dispose) => dispose());
       if (ro) ro.disconnect();
       if (map) map.remove();
     };

@@ -196,22 +196,42 @@ to prevent. Building locally to *test* your own work is expected and fine.
       an image-bearing page and a no-image fallback page; the map round-trip link confirmed
       landing on the right panel.
 - [ ] `[02-P0-1]` **`terrain`** `polish` — Hillshade/relief under the land fill.
-- [~] `[02-P0-4]` **`self-host-glyphs`** `fix` — claimed by cloud shift 32, 2026-08-19 01:05
-      (partial scope — see note below once done). Stop depending on `demotiles.maplibre.org`;
-      a single point of failure that would erase every label on the map. **Sharper finding
-      2026-08-18, cloud shift 30**: in this sandbox, where that domain is blocked, the blast
-      radius is bigger than "labels disappear" — `app/Map.tsx`'s entire Phase 2 onward (roads,
-      POIs, every site's building layer, all ~30 subsequent phases) runs inside one
-      `map.on("load", async () => {...})` callback, and MapLibre's "load" event itself never
-      fires when the initial style's glyph fetch is permanently blocked (confirmed: `map.loaded()`
-      flips true within ~1s of construction, but a freshly-bound `map.on("load", ...)` listener
-      still never fires, even 3+ minutes later) — so a live user in that condition would see the
-      base map (land/sea/provinces/coastline) and nothing else, forever, not a degraded map with
-      missing text. Self-hosting glyphs (or gating Phase 2 on something other than "load", e.g.
-      `"idle"` with a timeout fallback) fixes both the labels-disappear case this ticket already
-      named AND this harder failure mode. Also blocks cloud-shift Playwright verification of
-      anything past Phase 1 whenever this exact domain is unreachable from the sandbox — worth
-      knowing before assuming a "the map never loaded" test result is a real regression.
+- [ ] `[02-P0-4]` **`self-host-glyphs`** `fix` — **Half done 2026-08-19 by cloud shift 32, half
+      still open — see below.** Original scope: stop depending on `demotiles.maplibre.org`, a
+      single point of failure that would erase every label on the map.
+
+      **The harder failure mode (fixed this run).** Cloud shift 30's sharper finding: in this
+      sandbox, where that domain is blocked, the blast radius was bigger than "labels disappear"
+      — `app/Map.tsx`'s entire Phase 2 onward (roads, POIs, every site's building layer, all ~30
+      subsequent phases) ran inside one `map.on("load", async () => {...})` callback, and
+      MapLibre's "load" event itself never fired when the initial style's glyph fetch was
+      permanently blocked, even though `map.loaded()` flipped true within ~1s regardless — so a
+      user in that condition saw the base map and nothing else, forever. Fixed with a new
+      `whenMapReady(map, cb)` helper that races the `load`/`idle`/`styledata` events against a
+      300ms poll of `map.loaded()` (the one signal actually observed to become true) and fires
+      once whichever comes first; both of `Map.tsx`'s "load" call sites (the opening cinematic
+      fly, and the big Phase 2+ block) now go through it, with disposers wired into the effect's
+      existing cleanup. **Verified live in this exact sandbox**, not just by code review: ran
+      `next dev` + a Playwright script against real Chromium with the same blocked
+      `demotiles.maplibre.org` — confirmed `map.on("load", ...)` truly never fires here (the new
+      poll path is what actually carries it), and that `roads-main` and 31 further layers
+      (32 total, including road-station markers and POI pins) now render successfully within
+      ~7s despite `net::ERR_TUNNEL_CONNECTION_FAILED` on every glyph-range fetch. The only
+      console errors are the expected glyph-fetch failures themselves (MapLibre attributes them
+      to the "seas" source, since that's where the two always-on sea-label symbol layers with
+      `text-font` live) — sea/gulf labels degrade to no text, exactly the originally-scoped
+      "labels disappear" case, nothing worse.
+
+      **Still open: actually self-hosting the glyph PBFs**, which removes the external
+      dependency (and the whole class of failure) outright rather than degrading gracefully from
+      it. That needs real font assets plus a PBF glyph-generation pipeline (e.g. `fontnik`/
+      `glyph-pbf-composite` over a TTF) — unavailable in this sandbox (no matching package
+      installed, and generating one would mean adding a new dependency, against the brief's
+      "don't touch package.json without a data-change justifying it"). Whoever picks this back up
+      needs either local tooling to pre-generate the PBFs once and commit the static output, or a
+      network-unblocked environment to install the generator. Reset to `[ ]` rather than left
+      `[~]`, per the board's own rule — the harder bug is fixed and verified, but the ticket's
+      original ask isn't done yet.
 - [x] `[09-P0-1]` **`ancient-sources`** `deepen` — `ancient_sources[]` populated for every
       `confidence: high` POI. **Standing task — never "done", always available.**
       *Batch 1 done 2026-08-16: 108 of 221 high-confidence POIs (48.9%), 122 citations, plus an
