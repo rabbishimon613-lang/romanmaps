@@ -7,6 +7,202 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 35 — 2026-08-19 (this shift's own prompt claimed "Shift 4 of four")
+
+**Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt said
+"Shift 4 of four," but `SHIFT_LOG` was 34 real shifts deep at session start, so this entry
+continues as Shift 35. Session started `HEAD` detached one commit behind a stale local `main`
+(same pattern Shift 34 and others documented); `git reset --hard origin/main` on the local branch
+put it cleanly on the real tip, no conflicts, no data loss (confirmed detached HEAD matched
+`origin/main` exactly before resetting). Read `SHIFT_BRIEF.md` and `BOARD.md` in full before
+touching anything.
+
+**Network block reconfirmed** — direct `curl` to `overpass-api.de`/`commons.wikimedia.org` and a
+direct `WebFetch` against a Commons file URL both failed (`CONNECT tunnel failed, response 403` /
+`EGRESS_BLOCKED`), same as every prior shift. `WebSearch` remained the only working research
+channel throughout; all seven research agents this shift were briefed accordingly.
+
+### Board check
+
+Topmost unclaimed board tickets remain the same large architectural changes shift 34 already
+declined for the same reason: `[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]`
+card-rebuild, `[02-P0-1]` terrain, `[02-P0-4]` self-host-glyphs — each better suited to a shift
+that opens with it as the sole focus. No unclaimed P0/P1 `add` ticket exists; `[06-P2-6]`
+priority-cities stays blocked on the Overpass egress block. Track A this shift followed the
+brief's own axis queue directly, same as the last several shifts.
+
+### Track B — deleted the vestigial `pois-dot`/`pois-label` map layers, flagged since Shift 6
+
+Both layers had been permanently invisible (`circle-radius`/`circle-opacity` forced to 0, a
+disabled label filter) since `PoiMarkers.tsx`'s HTML pin markers took over POI rendering; nine
+prior shifts' `FEATURE_BACKLOG.md` notes had flagged the cleanup as safe but nobody had pulled the
+trigger, because deleting the layer without fixing its one remaining dependent — the
+empty-click-closes-panel handler's `queryRenderedFeatures(..., {layers: ["pois-dot"]})` — would
+make that call throw on a now-nonexistent layer id. Removed both `addLayer` calls, their
+now-provably-dead mouseenter/mouseleave/click handlers (PoiMarkers' HTML markers already
+`stopPropagation()` before a click can reach the map, so the native click handler could never
+have fired even before deletion), and rewrote the empty-click handler to clear unconditionally —
+functionally identical to before, since the deleted layer's query always returned zero hits
+anyway. `useLayers.ts`'s "Landmarks" toggle group's `mapLayerIds` emptied to `[]` to match (that
+toggle has read `PoiMarkers`' own visibility state directly since Shift 8, so the native layer ids
+were already vestigial there too). Cleaned up four stale code comments across `PlaceDetails.tsx`,
+`usePoiPanel.ts`, and `poiCategories.ts` that still referenced the deleted layer.
+
+**Verified live, not just by inspection**: `npx tsc --noEmit` / `npm run build` / `npm run
+validate` all clean. Built the production server and drove it with Playwright — first attempt at
+verifying the empty-click-closes behavior gave a false "still open" reading twice in a row before
+the actual bug (or non-bug) became clear: `PlaceDetails.tsx`'s panel element stays mounted in the
+DOM after closing (it animates out via `transform`/`aria-hidden`/`inert` rather than unmounting,
+by design, for the close transition), so checking DOM *presence* is the wrong signal — checking
+`aria-hidden` showed the real state correctly (`false` after a marker click, `true` after a
+genuine empty-canvas click) on both desktop (1280×800) and mobile (375×812, dark). The two false
+readings were also partly caused by clicking UI chrome (a category chip, a FAB button) instead of
+the actual map canvas at the coordinates first tried — worth remembering for whoever next writes a
+Playwright click test against this map: verify the click coordinate resolves to `<canvas>` via
+`document.elementFromPoint` before trusting a "nothing happened" result.
+
+### Track A — four axes, 96 net new features, three research waves reviewed and merged by hand
+
+Ran seven background research agents in three waves (2-3 concurrent, on disjoint files), each
+reviewed and independently spot-checked before merging — not just accepting agent self-reports,
+per the standing lesson from Shift 34's beneficiarii catch. This shift's own equivalent catches
+are below.
+
+**Axis 2 (road stations) — Via Agrippa completed, plus two brand-new roads.** `road_stations.geojson`
+180 → 248 (+68).
+
+- **Via Agrippa's last two branches**, closing out all four roads radiating from Lugdunum that
+  Strabo describes: the Aquitania branch toward Burdigala/Bordeaux (16 stations, via
+  Augustonemetum/Clermont-Ferrand and Augustoritum/Limoges to Mediolanum Santonum/Saintes) and the
+  Narbonensis branch down the Rhone (14 stations, via Vienna/Vienne and Valentia/Valence to
+  Arausio/Orange and Avenione/Avignon, stopping at the Via Domitia junction rather than duplicating
+  Arelate/Nemausus/Narbo). Via Agrippa is now 62 stations total.
+- **Via Flaminia** (Rome → Ariminum, the eighth road on the map), 19 stations: Ad Rubras through
+  Pisaurum, cross-checked against the Tabula Peutingeriana and a dated 305 CE milestone at
+  Cantiano fixing Luceoli at mile 140. Deliberately excluded the older 220 BCE western branch via
+  Carsulae — a real fork the flat schema can't represent without corrupting
+  `distance_from_previous_mp` for whichever branch lists second, and one of its legs failed the
+  geodesic check below with no way to resolve it from available sources.
+- **Via Aemilia** (Ariminum → Placentia, the ninth road), 19 stations: Ad Compitum through
+  Placentia, built by cross-referencing the Antonine Itinerary's civitas backbone (~177 mp,
+  matching the road's known 176 mp length) against the denser Itinerarium Burdigalense
+  mutatio-by-mutatio list.
+
+**A real, independently-confirmed data-quality catch across all three road batches**: every
+`distance_from_previous_mp` figure was run through a straight-line geodesic sanity check (a
+claimed road distance can never be shorter than the great-circle distance between its two
+endpoints — that's a physical impossibility, not a judgment call) before merging, because this
+field renders directly in the map's hover tooltip as "X Roman mi from previous stop." The Via
+Flaminia and Via Aemilia research agents ran this check themselves and reported the results (Via
+Aemilia's table is in its own agent transcript); this shift's own manual check on the Aquitania/
+Narbonensis batch caught three sourced-but-wrong figures the research agent hadn't self-checked:
+Forum Segusiavorum's leg from Lugdunum (independently confirmed via a second search that Feurs is
+"50 km from Lyon as the crow flies," while the claimed 16 Gallic leagues converts to only ~35 km —
+geometrically impossible), Acitodunum's leg from Ubrilium (claimed distance 50% short of the real
+straight-line span across genuinely mountainous terrain, which should only make a real road longer
+relative to straight-line, not shorter), and Ernaginum's leg from Avenione (claimed distance under
+half the real straight-line span). All three shipped with `distance_from_previous_mp: null` instead
+of a wrong number, with the affected prose in each entry's `notes` field edited to match. The
+Aquitania batch's Peutinger-sourced stretch also used Gallic leagues, not Roman miles, per the
+table's own "usque hic legas" annotation — converted ×1.5 throughout so the stored numbers match
+the field's declared unit and the UI's hardcoded "Roman mi" label; the batch's Antonine-Itinerary-
+sourced legs kept their native mile figures despite one cited specialist's disputed claim that
+those are mislabeled leagues too, since overriding an itinerary's own well-established convention
+needs more than a geometric hunch.
+
+**Axis 17 (exile + penal) — 4 penal quarries/mines.** `penal.geojson` 12 → 16. Simitthu/Chemtou
+(Tunisia, `extant_117ce: true`) ships as an active penal marble quarry with excavated cell blocks;
+Phaeno/Faynan (Jordan), Mons Porphyrites (Egypt), and Proconnesus/Marmara Island (Turkey) all ship
+`extant_117ce: false` — real, well-documented penal mining/quarrying sites, but every source ties
+their *penal* use specifically to Diocletian's early-4th-century persecutions, two centuries past
+this map's snapshot. Included anyway per the project's standing convention for anachronistic-but-
+real content, honestly dated rather than dropped or silently backdated. Several strong candidates
+(Alburnus Maior/Rosia Montana, Mons Claudianus, Dolaucothi, Rio Tinto/Las Medulas, the Lex Metalli
+Vipascensis) were investigated and rejected for resting on wage-labor or free-contractor evidence
+rather than genuine condemned-labor attestation.
+
+**Axis 3i (shipwrecks) — 12 new wrecks with documented cargo.** `pois.geojson` shipwreck category
+10 → 22: Cavaliere, Planier 3, Fiumicino ships, Skerki Bank Wreck B, Mahdia, Spargi, Sud-Lavezzi 2,
+Cap Corse 2, Diano Marina, Civitavecchia, Chretienne H, Pisa San Rossore — each with a specific
+documented cargo (wine, fish sauce, raw glass, marble, ingots), not a generic "Roman-era wreck."
+**A real duplicate catch**: the research agent's own candidate list included three wrecks (Dramont
+A, Dramont D, Titan) that turned out to already be on the map under the same ids — the agent
+wasn't given the real existing-wreck list (a `EGRESS_BLOCKED`/no-file-access constraint of its own
+prompt), so every candidate was cross-checked against the live file's actual records before
+merging, and the three duplicates were dropped.
+
+**Axis 13 (political apparatus) — 12 Trajanic senators' hometowns.** `politics.geojson`
+`senator_hometown` records 3 → 15, addressing the axis's "30 senators' hometowns" alternative
+target (the chariot-faction-HQ + vigiles-station combo was already essentially complete before
+this shift — 4 factions, 7 vigiles cohorts, matching Rome's real total). Licinius Sura (Tarraco),
+Pliny the Younger (Comum), the jurist brothers Neratius Priscus and Neratius Marcellus (both
+Saepinum), Cornelius Palma (Volsinii), Cornutus Tertullus (Attaleia, disputed with Perge), Avidius
+Quietus (Faventia, father of the already-mapped Avidius Nigrinus), Bruttius Praesens (Volceii),
+Minicius Natalis (Barcino), Catilius Severus (Apamea in Bithynia), and Trajan and Hadrian
+themselves (both Italica). Investigated and rejected for lacking a genuine sourced origo: Julius
+Frontinus, Sosius Senecio, Publilius Celsus, Julius Ursus Servianus, Attius Suburanus, Fabius
+Justus, Pompeius Falco, Laberius Maximus (rests on an inferred grandfather, not the man's own
+attestation), Sextius Africanus (a cognomen alone is not an origo), Cornelius Nigrinus Maternus
+(consul under Domitian, not active under Trajan), and Julius Severus of Ancyra (adlected by
+Hadrian, after 117).
+
+**A real schema-mismatch catch on the senators batch**: the research agent wrote each record with
+the senator's own name as the map-pin `name` field and no `one_line`/`modern_location`/
+`extant_117ce` fields — reasonable on its own terms, but this category's three pre-existing records
+(checked directly against the live file, not assumed from the prompt) use the *place* name as the
+pin label with a `one_line` field carrying the senator's name and career fact, because that's
+literally what `Map.tsx`'s `politics-point` popup handler reads (`p.name` for the title, `p.one_line`
+for the subtitle — never `p.notes`). Remapped all 12 records to the established schema before
+merging rather than ship data that would silently render wrong (an empty popup subtitle, a Latin
+personal name where every other pin in the category shows a modern place name).
+
+### Build, validate, verify
+
+`npm run validate`: 0 errors, 17 warnings throughout (same pre-existing set every recent shift has
+carried — diplomacy/neighbors envelope warnings, letters.geojson route LineStrings' expected
+missing-`name` warnings). Cross-file name collision count crept 114 → 116 as expected (new senator
+hometowns landing near existing gazetteer points) — informational only, tracked as `[12-P0-1]`'s
+own backlog, not a blocker. `npx tsc --noEmit` clean. `npm run build` clean on every one of the six
+data commits plus the Track B commit. `npm run metrics --write`: 481 POIs, 100% description depth,
+0 thin.
+
+### Board
+
+No board ticket claimed or closed this shift — Track A followed the brief's own axis queue
+directly, same reasoning as Shift 34 (the topmost unclaimed P0s are all large architectural
+changes better suited to a dedicated shift). Track B's fix was pulled from `FEATURE_BACKLOG.md`'s
+own flagged-but-unclaimed items rather than the board, and checked off there.
+
+### Handoff for the next shift
+
+1. **Two more Cisalpine/Italian roads are natural next picks** given Via Flaminia and Via Aemilia
+   now meet at Ariminum/Rimini and reach Bologna/Modena/Parma/Piacenza: Via Postumia (Genua to
+   Aquileia, crossing the whole Aemilia corridor perpendicular) or Via Cassia/Via Aurelia/Via
+   Salaria (all radiating from Rome, well-documented, no station work done on any of them yet).
+2. **Axis 17's exile-island side is essentially complete** (9 islands against the brief's own
+   named list) but the penal mine/quarry side, even after this shift, sits at 4 — a future pass
+   specifically re-investigating Alburnus Maior/Dacia's gold-rush period (Trajan seized it in 106,
+   fresh territory, real wax-tablet labor-contract evidence exists, just not of the *condemned*
+   kind this shift's research confirmed) could still turn up genuine attested sites this shift's
+   search budget didn't reach.
+3. **Axis 13's `senator_hometown` category has real headroom left** toward the brief's 30-hometown
+   target (now at 15) — this shift's research agent found several senators with well-documented
+   careers but no sourced origo (Frontinus, Sosius Senecio, Publilius Celsus among them); a future
+   pass with a fresh search budget on figures from Africa Proconsularis and Gallia Narbonensis
+   specifically (both flagged in the brief as sources of early provincial senators, both
+   under-represented in what got confirmed this shift) is a concrete next lead.
+4. **Geodesic sanity-check road distances before merging, not after** — now confirmed useful on
+   two separate shifts' road-station batches (three wrong figures caught this shift alone). Any
+   future axis-2 pass should keep doing this; it would be worth writing as a small reusable script
+   rather than hand-computing it in a Python one-liner each time, since it'll recur on every future
+   road.
+5. **Board fresh-check**: still no unclaimed P0/P1 `add` ticket. Topmost unclaimed P0s unchanged
+   from Shift 34's note — `[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild,
+   `[02-P0-1]` terrain, `[02-P0-4]` self-host-glyphs — all still better suited to a shift that opens
+   with one as the sole focus rather than splitting attention across a data-heavy shift.
+
+---
+
 ## Shift 34 — 2026-08-19 (this shift's own prompt claimed "Shift 3 of four")
 
 **Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt said
