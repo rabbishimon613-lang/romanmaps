@@ -470,6 +470,344 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Duomo di città di castello, facciata.JPG?width=800",
         "image_credit": "Cathedral facade, Città di Castello — Wikimedia Commons"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.8222,
+          41.483
+        ]
+      },
+      "properties": {
+        "id": "euerg_casinum_ummidia",
+        "name": "Cassino",
+        "category": "benefactor_inscription",
+        "one_line": "Ummidia Quadratilla paid for an amphitheater seating 4,500 people and a temple in her hometown of Casinum, and the inscription she left behind names only the gift, not a reason. Pliny the Younger wrote up her death in 107 without once mentioning either building, too busy being scandalized by her private troupe of pantomime dancers. Her amphitheater still rises from the hillside above the old Via Latina.",
+        "province": "Italia",
+        "modern_location": "Cassino, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "CIL X 5183",
+          "Pliny the Younger, Epistulae 7.24",
+          "https://en.wikipedia.org/wiki/Ummidia_Quadratilla"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Teatro romano cassino.jpg?width=800",
+        "image_credit": "Roman theatre in the Casinum archaeological park, Cassino — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2906,
+          32.6392
+        ]
+      },
+      "properties": {
+        "id": "euerg_lepcis_magna_market",
+        "name": "Leptis Magna",
+        "category": "benefactor_inscription",
+        "one_line": "The Punic merchant Annobal Tapapius Rufus paid for Lepcis Magna's market out of his own pocket in 8 BCE, raising two stone tholoi ringed by forty shop counters where traders once weighed grain, oil, and purple dye. His dedication was cut in Latin above a Neo-Punic translation, announcing the gift in both languages his city actually spoke. The market still stands beside the old harbor road, one of the best-preserved Roman marketplaces anywhere.",
+        "province": "Africa Proconsularis",
+        "modern_location": "Khoms, Libya",
+        "extant_117ce": true,
+        "sources": [
+          "IRT 319",
+          "https://www.livius.org/articles/place/lepcis-magna/photos/lepcis-magna-macellum/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Leptis Magna market place April 2004.jpg?width=800",
+        "image_credit": "Market (Macellum) of Leptis Magna — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.3413,
+          37.9412
+        ]
+      },
+      "properties": {
+        "id": "euerg_ephesus_pollio_fountain",
+        "name": "Ephesus",
+        "category": "benefactor_inscription",
+        "one_line": "Gaius Sextilius Pollio built Ephesus a fountain in 97 CE at the edge of what became Domitian Square, drawing water through an aqueduct that carried his own name across the hills. His foster son finished the monument after his death, turning it into a family shrine with statues of Pollio and his wife Ofillia Bassa standing in its niches. The arched facade still frames the approach to the city's State Agora.",
+        "province": "Asia",
+        "modern_location": "Selcuk, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.worldhistory.org/image/12440/the-fountain-of-pollio-ephesus/",
+          "https://ephesus.us/ancient-ephesus/fountain-of-pollio/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pollio Fountain (Ephesus).jpg?width=800",
+        "image_credit": "Pollio Fountain, Ephesus — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.6306,
+          36.7114
+        ]
+      },
+      "properties": {
+        "id": "euerg_cartima_iunia_rustica",
+        "name": "Cartama",
+        "category": "benefactor_inscription",
+        "one_line": "Iunia Rustica, Cartima's first priestess for life, rebuilt the town's collapsing porticoes, paid off its public taxes, and donated the land for a new bathhouse, all at her own expense. She then added a private portico beside those baths with a fish pond and a statue of Cupid, and threw a public banquet the day it opened. The town council answered by voting her a bronze statue in the forum, a rare civic honor for a woman anywhere in the Roman West.",
+        "province": "Baetica",
+        "modern_location": "Cartama, Spain",
+        "extant_117ce": true,
+        "sources": [
+          "CIL II 1956",
+          "https://www.researchgate.net/publication/262079350_Iunia_Rustica_of_Cartima_Female_Munificence_in_the_Roman_West"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Castillo de Cártama.JPG?width=800",
+        "image_credit": "Hilltop of Cartama, site of Roman Cartima — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.5194,
+          37.6781
+        ]
+      },
+      "properties": {
+        "id": "euerg_sagalassos_nymphaeum",
+        "name": "Sagalassos",
+        "category": "benefactor_inscription",
+        "one_line": "Claudia Severa and her brothers Tiberius Claudius Aquila and Tiberius Claudius Pius, the richest family in Sagalassos, financed the city's first monumental fountain house around 100 CE, an apsidal marble facade wrapped in an Ionic colonnade greeting travelers entering from the south. It was the first fountain at Sagalassos actually built to move water rather than just to flatter an emperor's name. The family's gift stood at the north end of the Lower Agora for a full century before Severan builders dismantled and rebuilt it.",
+        "province": "Galatia",
+        "modern_location": "Aglasun, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Sagalassos Archaeological Research Project excavation reports",
+          "https://www.arts.kuleuven.be/sagalassos/history"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sagalassos Antik Kenti 03.jpg?width=800",
+        "image_credit": "Sagalassos archaeological site — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.3417,
+          37.9394
+        ]
+      },
+      "properties": {
+        "id": "euerg_ephesus_celsus_library",
+        "name": "Ephesus",
+        "category": "benefactor_inscription",
+        "one_line": "Gaius Julius Aquila built Ephesus a library to hold his father's remains and 12,000 scrolls, raising a two-story marble facade lined with statues personifying Wisdom, Virtue, Knowledge, and Judgment. His father, Tiberius Julius Celsus Polemaeanus, had governed the province of Asia and asked to be buried inside the very building his fortune paid for. Construction began around 110 CE and the facade stood finished by the time Trajan died in 117, one of the only libraries in the Roman world doubling as a tomb.",
+        "province": "Asia",
+        "modern_location": "Selcuk, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.worldhistory.org/Library_of_Celsus/",
+          "https://en.wikipedia.org/wiki/Library_of_Celsus"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Celsus library in Ephesus.jpg?width=800",
+        "image_credit": "Library of Celsus, Ephesus — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.7243,
+          37.7087
+        ]
+      },
+      "properties": {
+        "id": "euerg_aphrodisias_zoilos",
+        "name": "Aphrodisias",
+        "category": "benefactor_inscription",
+        "one_line": "The freed slave Gaius Julius Zoilos returned to his hometown of Aphrodisias a wealthy man and paid for the theater's stage building, part of the Temple of Aphrodite, and the north colonnade of the agora. Julius Caesar had freed him and given him Roman citizenship, and Augustus later wrote to the city that he still liked his old friend Zoilos. Reliefs from Zoilos's own tomb monument, unearthed in 1956, now fill a room in the Aphrodisias museum.",
+        "province": "Asia",
+        "modern_location": "Geyre, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.aphrodisias.org/en/ancient-theater",
+          "https://imperiumromanum.pl/en/curiosities/gaius-julius-zoilos/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aphrodisias Museum Zoilos monument part 044.jpg?width=800",
+        "image_credit": "Reliefs from the tomb monument of Gaius Julius Zoilos, Aphrodisias Museum — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.3487,
+          40.8058
+        ]
+      },
+      "properties": {
+        "id": "euerg_herculaneum_nonius_balbus",
+        "name": "Herculaneum",
+        "category": "benefactor_inscription",
+        "one_line": "Marcus Nonius Balbus paid for Herculaneum's basilica, its main gate, and a stretch of the city wall, all recorded in one blunt inscription: his name, his office, and the phrase 'with his own money.' The town council answered with at least ten statues of him scattered across the streets and a terrace with its own altar raised in his honor. Vesuvius buried every one of his gifts under volcanic material in 79 CE, and archaeologists are still pulling his statues out of the hardened ash.",
+        "province": "Italia",
+        "modern_location": "Ercolano, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "CIL X 1425",
+          "https://en.wikipedia.org/wiki/Marcus_Nonius_Balbus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marcus Nonius Balbus Herculaneum.jpg?width=800",
+        "image_credit": "Statue of Marcus Nonius Balbus, Herculaneum — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.8781,
+          37.9058
+        ]
+      },
+      "properties": {
+        "id": "euerg_corinth_babbius",
+        "name": "Ancient Corinth",
+        "category": "benefactor_inscription",
+        "one_line": "Gnaeus Babbius Philinus rose from a freedman's son to duumvir of Corinth, and along the way built the city a small round marble monument on the forum's west side entirely at his own expense. His own inscription records that he approved his own gift in his official capacity as duumvir, then went ahead and built it anyway. The monument's circular base still marks the edge of the Roman forum at ancient Corinth today.",
+        "province": "Achaea",
+        "modern_location": "Ancient Corinth, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "Corinth VIII.2, Latin Inscriptions 1896-1926",
+          "https://corinth.ascsa.net/id/corinth/monument/babbius%20monument"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancient Corinth Ruins (5987150540).jpg?width=800",
+        "image_credit": "Ruins of the Roman forum, Ancient Corinth — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4855,
+          40.7494
+        ]
+      },
+      "properties": {
+        "id": "euerg_pompeii_eumachia",
+        "name": "Pompeii",
+        "category": "benefactor_inscription",
+        "one_line": "Eumachia, Pompeii's public priestess and patron of the fullers' guild, built the largest structure on the forum's east side, a covered hall and colonnaded courtyard dedicated to Augustan Concord and Piety. She paid for it in her own name and her son's, and the fullers who used the building set up a statue of her inside in gratitude. Vesuvius buried the hall in 79 CE, but its marble doorway and dedication inscription survived intact under the ash.",
+        "province": "Italia",
+        "modern_location": "Pompeii, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "CIL X 810, 811",
+          "https://en.wikipedia.org/wiki/Eumachia"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eumachia.jpg?width=800",
+        "image_credit": "Statue of Eumachia, from her building at Pompeii — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4845,
+          40.7502
+        ]
+      },
+      "properties": {
+        "id": "euerg_pompeii_fortuna_augusta",
+        "name": "Pompeii",
+        "category": "benefactor_inscription",
+        "one_line": "Marcus Tullius, three times duumvir of Pompeii, donated both the land and the money to build the city's Temple of Fortuna Augusta at a busy crossroads north of the forum. His dedication inscription lists his whole career, ending with the title 'military tribune by the people's request,' an honor Augustus reserved for men he wanted promoted into the equestrian order. The temple's podium and altar still stand at the corner of the Via della Fortuna.",
+        "province": "Italia",
+        "modern_location": "Pompeii, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "CIL X 820"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tempio della Fortuna Augusta 1.JPG?width=800",
+        "image_credit": "Temple of Fortuna Augusta, Pompeii — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4884,
+          40.7488
+        ]
+      },
+      "properties": {
+        "id": "euerg_pompeii_holconius_theatre",
+        "name": "Pompeii",
+        "category": "benefactor_inscription",
+        "one_line": "The brothers Marcus Holconius Rufus and Marcus Holconius Celer rebuilt Pompeii's Large Theatre around 2 BCE at their own expense, adding a vaulted crypt, box seats, and new stone seating for the entire cavea. Two identical inscriptions, each over six meters long, run across the stage building recording the gift in nearly the same words. Rufus kept a reserved double seat in the theater for the rest of his life, its outline still cut into the front row.",
+        "province": "Italia",
+        "modern_location": "Pompeii, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "CIL X 833",
+          "CIL X 834"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Scavi Archeologici di Pompei - Teatro Grande.JPG?width=800",
+        "image_credit": "Large Theatre, Pompeii — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7406,
+          37.7131
+        ]
+      },
+      "properties": {
+        "id": "euerg_munigua_valerius_firmus",
+        "name": "Munigua",
+        "category": "benefactor_inscription",
+        "one_line": "Lucius Valerius Firmus served twice as duumvir of Munigua and paid for a temple, the forum itself, its porticoes, an exedra, and the town's archive building, all recorded on two matching bronze plaques. His gift helped turn a Baetican hill town into home to the largest terraced sanctuary built anywhere outside Italy, modeled on the great sanctuary of Fortuna at Praeneste. Munigua's stepped terraces still climb the hillside above the valley of the Guadalquivir's tributaries.",
+        "province": "Baetica",
+        "modern_location": "Villanueva del Rio y Minas, Spain",
+        "extant_117ce": true,
+        "sources": [
+          "CILA II, 1076",
+          "https://www.labrujulaverde.com/en/2026/04/the-enigma-of-munigua-the-spectacular-roman-city-with-the-largest-terrace-sanctuary-outside-italy/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Munigua (Municipium Flavium Muniguensium), Baetica, Spain (28161572799).jpg?width=800",
+        "image_credit": "Terrace sanctuary of Munigua — Wikimedia Commons"
+      }
     }
   ]
 }
