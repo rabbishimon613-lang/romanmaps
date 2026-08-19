@@ -408,6 +408,446 @@
         ],
         "confidence": "high"
       }
+    },
+{
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [27.8706, 40.3878] },
+      "properties": {
+        "id": "mint_cyzicus",
+        "name": "Cyzicus",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Cyzicus struck its own bronze coinage under Trajan from a mint beside the isthmus linking the Kapidag peninsula to the Mysian mainland. Its dies paired the emperor's portrait with local gods like Kore Soteira across dozens of distinct Trajanic types. The city's harbor made it one of the busiest ports on the Sea of Marmara, feeding trade for the whole province of Asia.",
+        "province": "Asia",
+        "modern_location": "Erdek, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 1485-1496, Trajan, Cyzicus AE",
+          "Aeternitas Numismatics, 'Knowing the Roman imperial mints: VII - Cyzicus'"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bandirma_Cyzicus_2874.jpg?width=800",
+        "image_credit": "Ruins of Cyzicus, Erdek, Turkey · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [29.0665, 40.1826] },
+      "properties": {
+        "id": "mint_prusa_ad_olympum",
+        "name": "Bursa",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Prusa ad Olympum, set on the northern slopes of Mount Olympus of Mysia, struck civic bronze coin under Trajan as one of fourteen minting cities across Bithynia and Pontus. Its coins carried the emperor's portrait on one face and local river gods on the other, following the same regional currency system as neighboring Nicaea and Nicomedia. The mint sat idle for long stretches before and after his reign, so its Trajanic issues survive as some of the rarest coins the city ever struck.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "Bursa, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 1035-1049, Trajan, Prusa ad Olympum",
+          "Harvard Art Museums, 'Coin of Prusa ad Olympum under Trajan'"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bursa_Archaeological_Museum_Roman_sculpture_7637.jpg?width=800",
+        "image_credit": "Roman sculpture, Bursa Archaeological Museum · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [36.4808, 32.5167] },
+      "properties": {
+        "id": "mint_bostra",
+        "name": "Bosra",
+        "category": "mint",
+        "metal": "silver",
+        "role": "imperial_provincial",
+        "one_line": "Trajan's general Cornelius Palma folded the Nabataean kingdom into Rome in 106 CE, and the new provincial capital took the name Nova Trajana Bostra in his honor. Its mint struck silver tridrachms and drachms stamped with a camel, the animal that had carried the region's incense trade for centuries. Legio III Cyrenaica garrisoned the city, guarding the new Via Traiana Nova running south all the way to the Red Sea.",
+        "province": "Arabia",
+        "modern_location": "Bosra, Syria",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 4060, 4075, 4076, Trajan, Bostra",
+          "Wikipedia, 'Via Traiana Nova'"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Theatre_in_Bosra.jpg?width=800",
+        "image_credit": "Roman theatre, Bosra, Syria · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.2894, 32.7522] },
+      "properties": {
+        "id": "mint_sepphoris",
+        "name": "Sepphoris",
+        "category": "mint",
+        "metal": "none (dormant after roughly 115 CE)",
+        "role": "civic",
+        "one_line": "Sepphoris, the largest city in Galilee, struck its first city-coinage under Trajan, stamping a palm tree flanked by two bunches of dates on the reverse of its bronze. The Greek legend on the obverse recorded that the emperor himself had granted the city this right. That grant did not last long: minting stopped before his reign ended, likely a penalty for the city's role in the 115-117 revolt, and coin did not flow from Sepphoris again until Antoninus Pius.",
+        "province": "Judaea",
+        "modern_location": "Zippori, Israel",
+        "extant_117ce": false,
+        "sources": [
+          "RPC III 3936, Trajan, Sepphoris (Diocaesarea)",
+          "Judaism and Rome, 'City-Coin of Sepphoris depicting the head of Trajan and a palm tree'",
+          "CoinWeek, David Hendin, 'Coins Tell the Story of Ancient Sepphoris'"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_%22Mona_Lisa_of_Galilee%22_(possibly_Venus),_part_of_the_Dionysus_mosaic_floor_in_Sepphoris_(Diocaesarea),_Israel.jpg?width=800",
+        "image_credit": "Dionysus mosaic floor, Sepphoris, Israel · Wikimedia Commons (photo Carole Raddato, CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [29.1275, 37.9236] },
+      "properties": {
+        "id": "mint_hierapolis_phrygia",
+        "name": "Hierapolis",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Hierapolis, famous even in antiquity for its blinding white travertine terraces, struck civic bronze under Trajan showing Athena standing beside Hermes with his money-bag and caduceus. The mint had been running since the 2nd century BCE, long before Rome arrived in Asia. A sacred hot spring fed the city's baths and gave the site its reputation as a place where gods and healing waters met.",
+        "province": "Asia",
+        "modern_location": "Pamukkale, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC I 2982 and RPC III (Trajan-period issues), Hierapolis, Phrygia",
+          "WildWinds.com, 'Phrygia, Hierapolis'"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hierapolis_Antik_Kenti.jpg?width=800",
+        "image_credit": "Ruins of Hierapolis, Pamukkale, Turkey · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [30.8508, 36.9611] },
+      "properties": {
+        "id": "mint_perge",
+        "name": "Perge",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Perge struck bronze under Trajan showing a temple front holding the cult statue of Artemis Pergaia with an eagle in the pediment, plus a smaller issue pairing his portrait with a harbor prow and lighthouse. The river Cestrus carried ships two miles inland to reach the city's gates. Perge's games and processions honoring Artemis drew visitors from across Pamphylia every year.",
+        "province": "Lycia et Pamphylia",
+        "modern_location": "Antalya, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 2689, Trajan, Perge",
+          "SNG Copenhagen 315, Trajan, Perge"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Perge_city_overview.jpg?width=800",
+        "image_credit": "Overview of the ruins of Perge, Turkey · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [32.8544, 39.9422] },
+      "properties": {
+        "id": "mint_ancyra",
+        "name": "Ankara",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Ancyra struck semi-autonomous bronze coin under Trajan, whose armies marched through the city in 113 CE on their way to the Parthian front, the first emperor known to have passed through it in person. The walls of its Temple of Augustus and Rome, built decades earlier, still carried the full engraved text of the Res Gestae, Augustus's own account of his reign, letting any literate visitor read the deified founder's memoir in stone. Galatia's capital sat at the crossroads where roads from the Bosphorus, the Black Sea, and Cappadocia all met.",
+        "province": "Galatia",
+        "modern_location": "Ankara, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 3115, Ankyra, Galatia, semi-autonomous AE",
+          "Livius.org, 'Ancyra (Ankara)'",
+          "Wikipedia, 'Temple of Augustus and Rome'"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Temple_of_Augustus_and_Rome_with_the_Res_Gestae_Divi_Augusti_(%22Deeds_of_the_Divine_Augustus%22)_inscribed_on_the_walls_of_the_cella,_Ancyra,_Ankara_(Turkey)_(25821691100).jpg?width=800",
+        "image_credit": "Temple of Augustus and Rome, Ankara, Turkey · Wikimedia Commons (photo Carole Raddato, CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [36.3300, 41.2867] },
+      "properties": {
+        "id": "mint_amisus",
+        "name": "Samsun",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Amisus struck bronze under Trajan showing Nike striding with a palm branch and wreath, coinage issued long after the mint's earlier heyday under the Kings of Pontus. The free city had kept the right to strike its own coin as a reward for backing Rome during the Mithridatic Wars two centuries before. Its harbor made it the commercial capital of the entire province of Pontus.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "Samsun, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC I 2145, 2154; RPC II 729, Trajan, Amisus",
+          "Wikipedia, 'Coinage of Amisos' (historical context)"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Display_case_Samsun_Museum_Turkey_2025.jpg?width=800",
+        "image_credit": "Display case, Samsun Archaeology Museum, Turkey · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.1531, 42.0231] },
+      "properties": {
+        "id": "mint_sinope",
+        "name": "Sinop",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Sinope, a Roman colony since Julius Caesar planted veterans there, struck bronze under Trajan alongside the dozen other city mints of Bithynia and Pontus. Its Roman-era bathhouse, later converted into the Balatlar church, still stands with walls thick enough to have survived two thousand years of Black Sea storms. Diogenes the Cynic, the philosopher who supposedly lived in a barrel, was born in this same harbor town almost five centuries earlier.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "Sinop, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 1217-1219, Trajan, Sinope",
+          "Wikipedia, 'Balatlar Church'"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Balatlarchurch.JPG?width=800",
+        "image_credit": "Balatlar Church, a Roman-era bath building, Sinop, Turkey · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [21.8554, 32.8256] },
+      "properties": {
+        "id": "mint_cyrene",
+        "name": "Cyrene",
+        "category": "mint",
+        "metal": "silver, bronze",
+        "role": "imperial_provincial",
+        "one_line": "Cyrene struck silver hemidrachms and bronze coin under Trajan pairing his portrait with the horned head of Zeus Ammon, the oracle god whose desert shrine had drawn pilgrims for seven centuries. An earthquake struck the region hard in 115 CE, badly damaging the city's Temple of Zeus even as its mint kept striking coin through the rest of the reign. Jewish rebels devastated much of Cyrenaica the following year in the Kitos War.",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Shahhat, Libya",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 3, Trajan, Cyrene AR Hemidrachm",
+          "Wikipedia, 'Temple of Zeus, Cyrene'"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Zeus_in_Cyrene.jpg?width=800",
+        "image_credit": "Temple of Zeus, Cyrene, Libya · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [32.4064, 34.7568] },
+      "properties": {
+        "id": "mint_cyprus_koinon",
+        "name": "Paphos",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "imperial_provincial",
+        "one_line": "The Koinon of Cyprus, the island's confederation of cities, struck bronze coin under Trajan stamped with the conical black stone of the Temple of Aphrodite at Paphos, the goddess's most sacred shrine anywhere in the ancient world. Metal analysis shows these Trajanic issues were struck from dies cut in Rome and shipped out for use on the island. Paphos itself served as the political capital of Roman Cyprus, and its Houses of Dionysos and Theseus already carried some of the mosaic floors still visible today.",
+        "province": "Cyprus",
+        "modern_location": "Paphos, Cyprus",
+        "extant_117ce": true,
+        "sources": [
+          "Museum of Fine Arts Boston, 'Coin of Koinon of Cyprus with bust of Trajan'",
+          "Kyprios Character, 'Cypriote coinage under Roman rule (30 BC - 3rd century AD)'"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_mosaics_at_the_Paphos_Archaeological_Park,_Cyprus_(PPL1-Corrected)_julesvernex2.jpg?width=800",
+        "image_credit": "Roman mosaics, Paphos Archaeological Park, Cyprus · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [32.3833, 41.7500] },
+      "properties": {
+        "id": "mint_amastris",
+        "name": "Amasra",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Amastris took shape when four smaller Paphlagonian towns merged under a Persian-descended queen who gave the new city her name, and it was still striking its own bronze four centuries later under Trajan. Its Trajanic issues carried the war god Ares on one type and the personification Hope on another, part of a set of motifs it shared with neighboring Nicaea and Nicomedia. Twin harbors on a narrow peninsula made the town one of the safest anchorages on the whole Black Sea coast.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "Amasra, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 1198-1208, Trajan, Amastris"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amasra.JPG?width=800",
+        "image_credit": "Amasra (ancient Amastris), Turkey · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.1611, 40.8756] },
+      "properties": {
+        "id": "mint_prusias_ad_hypium",
+        "name": "Prusias ad Hypium",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Prusias ad Hypium, renamed from Cierus for the Bithynian king who once ruled it, struck civic bronze under Trajan showing the goddess Pax on its reverse. Its Roman theater, carved into the hillside above the Hypius river valley, is still largely intact and open to visitors today. The city stood along the inland road linking the Bithynian coast to the interior of Asia Minor.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "Konuralp, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 1101-1103, Trajan, Prusias ad Hypium",
+          "Wikipedia, 'Prusias ad Hypium'"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Konuralp_theatre_7428.jpg?width=800",
+        "image_credit": "Roman theatre, Prusias ad Hypium, Konuralp, Turkey · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.4136, 41.2847] },
+      "properties": {
+        "id": "mint_heraclea_pontica",
+        "name": "Karadeniz Eregli",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Heraclea Pontica struck bronze coin under Trajan, including a dated issue from 114-116 CE that helps anchor the chronology of the whole regional currency of Bithynia and Pontus. Colonists from Megara had founded the city on this Black Sea harbor nearly seven centuries earlier, and it once ruled a wide stretch of the southern coast as an independent Hellenistic kingdom before Rome absorbed it. Under Trajan its mint output made up close to a sixth of all known coin emissions from the province's fourteen minting cities.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "Karadeniz Eregli, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 1161-1177, esp. 1176, Trajan, Heraclea Pontica",
+          "Bryn Mawr Classical Review 2024.07.03, 'Roman provincial coinage of Bithynia and Pontus during the reign of Trajan'"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Heraclea-Pontica.png?width=800",
+        "image_credit": "Historical map of Heraclea Pontica · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [29.0233, 40.9906] },
+      "properties": {
+        "id": "mint_chalcedon",
+        "name": "Kadikoy",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Chalcedon struck bronze coin under Trajan as one of Bithynia's oldest cities, founded by Greek settlers from Megara more than seven centuries before his reign. Ancient writers mocked its founders as 'the blind' for choosing this shore when the far richer harbor of Byzantium sat empty just across the strait. Excavations beneath the modern Haydarpasa train station have since turned up ancient bath complexes buried under the city for two thousand years.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "Istanbul, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 1060-1061, Trajan, Chalcedon",
+          "The Archaeologist, 'Unearthing the Secrets of Ancient Chalcedon Beneath Modern Kadikoy'"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fourth_ecumenical_council_of_chalcedon_-_1876.jpg?width=800",
+        "image_credit": "19th-century engraving of the Council of Chalcedon · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [28.5167, 38.3500] },
+      "properties": {
+        "id": "mint_philadelphia_lydia",
+        "name": "Alasehir",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Philadelphia, founded by King Attalus II and named for his devotion to his brother, struck civic bronze under Trajan showing the goddess Cybele enthroned with a lion at her feet. Frequent earthquakes had shaken the city so often in earlier centuries that Rome once excused it from paying tribute. The Book of Revelation's letter to the seven churches of Asia names Philadelphia as the one church Christ found no fault in.",
+        "province": "Asia",
+        "modern_location": "Alasehir, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 2376/2377, Trajan, Philadelphia, Lydia",
+          "GRPC Lydia III 245-248"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ala%C5%9Fehir_Church_of_St._John.jpg?width=800",
+        "image_credit": "Ruins at Alasehir (ancient Philadelphia), Turkey · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [22.8778, 37.9058] },
+      "properties": {
+        "id": "mint_corinth",
+        "name": "Corinth",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Corinth struck civic bronze under Trajan a century and a half after Julius Caesar refounded the city as a Roman colony on ground the Greeks had abandoned since 146 BCE. Its coin types pictured the temples ringing the forum, among them the Archaic Temple of Apollo, whose seven surviving Doric columns had already stood for roughly six hundred years by Trajan's reign. The colony's harbors on two seas made it one of the wealthiest trading cities in the province of Achaia.",
+        "province": "Achaia",
+        "modern_location": "Corinth, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 111-112, Trajan, Corinth",
+          "Forum Ancient Coins NumisWiki, 'Corinth Coins and Cults'"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Apollo_(Corinth).JPG?width=800",
+        "image_credit": "Temple of Apollo, Corinth, Greece · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [20.7333, 39.0167] },
+      "properties": {
+        "id": "mint_nicopolis_epirus",
+        "name": "Nicopolis",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Nicopolis, the 'City of Victory' Augustus founded on the site of his own camp before the Battle of Actium, saw its civic mint flourish anew under Trajan, whose issues hailed him as savior of the city. Sometime between 103 and 114 CE Trajan split Epirus off from Achaia as its own imperial province, with Nicopolis as capital. Actium's naval battle, fought in the straits visible from the city walls, had decided who would rule the whole Roman world a century and a half earlier.",
+        "province": "Epirus",
+        "modern_location": "Preveza, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "RPC Online, type 8948, Trajan, Nicopolis, Epirus",
+          "Academia.edu, 'Actia Nicopolis. Coinage, Currency and Civic Identity (27BC - AD268)'"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_aqueduct_of_Nicopolis,_Preveza,_Greece.jpg?width=800",
+        "image_credit": "Roman aqueduct of Nicopolis, Preveza, Greece · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.9056, 37.2639] },
+      "properties": {
+        "id": "mint_anazarbus",
+        "name": "Anazarbus",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Anazarbus, calling itself Caesarea in its own official coin legends, struck bronze under Trajan dated to civic year 132, equal to 113-114 CE, pairing his portrait with that of his wife Plotina. The city would later become metropolis of Cilicia Secunda, but even under Trajan it already ranked as Cilicia's second city after Tarsus. A ring of hills studded with a much later Armenian fortress still frames the wide plain where the ancient ruins spread today.",
+        "province": "Cilicia",
+        "modern_location": "Adana, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 3369, 3370, Trajan and Plotina, Anazarbus (as Caesarea Anazarbus)",
+          "CNG Coin Shop, 'CILICIA, Anazarbus (as Caesarea Anazarbus). Trajan, with Plotina'"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anazarbe_vue_g%C3%A9n%C3%A9rale_1.jpg?width=800",
+        "image_credit": "General view of the ruins of Anazarbus, Turkey · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [32.0344, 41.5761] },
+      "properties": {
+        "id": "mint_tium",
+        "name": "Tios",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Tium struck bronze under Trajan as a small but independent mint among the fourteen minting cities of Bithynia and Pontus, its dies skipping the shared regional designs some neighboring towns adopted. Milesian colonists had founded the city at the mouth of the Billaeus river in the 7th century BCE, centuries before Rome existed. Its harbor shipped timber cut from the forests of the Bithynian interior across the Black Sea.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "Filyos, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 1178-1190, Trajan, Tium"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Teion-Antik-Kenti-Filyos-1.jpg?width=800",
+        "image_credit": "Tios (Tium) ancient city site, Filyos, Turkey · Wikimedia Commons"
+      }
     }
   ]
 }
