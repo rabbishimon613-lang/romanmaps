@@ -7,6 +7,137 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 33 — 2026-08-19 (this shift's own prompt claimed "Shift 2 of four")
+
+**Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt said
+"Shift 2 of four", but `SHIFT_LOG` was 32 real shifts deep at session start, so this entry
+continues as Shift 33. Local `main` was 4 commits behind `origin/main` with `HEAD` detached;
+`git fetch origin main && git checkout -B main origin/main` put the branch cleanly on the real
+tip (`f87e5fa`), no conflicts — same stale-tracking-ref pattern every recent shift has documented,
+not data loss. Read `SHIFT_BRIEF.md` and `BOARD.md` in full before touching anything.
+
+**Network block reconfirmed** — direct `curl` against `overpass-api.de`, `en.wikipedia.org`,
+`pleiades.stoa.org`, and `commons.wikimedia.org` all returned `CONNECT tunnel failed, response
+403`. WebSearch remained the only working research channel throughout. `[06-P2-6]` priority-cities
+and Axis 1 (more cities via Overpass) stay genuinely blocked here.
+
+### Track A — two axes, both via parallel WebSearch research agents
+
+**Axis 6a — trade routes, first complete addition beyond the existing Amber Road.**
+`trade_routes.geojson` had exactly one populated route (Amber Road) against the brief's eight-
+route list. Researched and added the **grain supply network that fed Rome** — three LineString
+legs (Alexandria→Puteoli/Ostia→Portus; Carthage→Ostia/Portus; Syracuse/Lilybaeum→Puteoli→Ostia)
+plus 7 named node points, 10 new features total, all real citations (Josephus *BJ* 2.383-386 on
+Egypt/Africa's relative shares, Lucian's *The Ship* on the grain carrier *Isis*'s ~1,200-ton
+capacity, Cicero's *Verrines* on Sicily's older tithe system, Suetonius on Claudius's harbor
+works). One honest gap flagged by the research itself: Rickman's *The Corn Supply of Ancient Rome*
+has real per-route tonnage tables that WebSearch snippets couldn't surface (only bibliographic/
+review material) — the notes cite the commonly-repeated modern estimates (150,000-400,000 t/year)
+rather than assert false precision. Node coordinates cross-checked against the site's own
+`sites.ts`/gazetteer entries for Ostia, Portus, Pozzuoli, Alexandria, Carthage rather than the
+research agent's own estimates, for consistency with what's already on the map.
+
+**Axis 2 — Via Traiana Nova, the empire's sixth complete road (after Appia, Egnatia, Cottia,
+Domitia, Augusta).** Picked specifically because it's a near-perfect 117 CE snapshot subject —
+Trajan's own road through newly annexed Arabia, built 111-114 CE by governor Gaius Claudius
+Severus, so barely a few years old at Trajan's death. Two sequential research passes (the second
+targeting gaps and coordinate refinements the first honestly flagged) produced **14 real, sourced
+stations** — short of the brief's 20-40 floor, and logged as a deliberate honesty call rather than
+padded to a number: the richer Bostra-Philadelphia sector is documented in Thomas Bauzou's
+monograph and David Graf's original 1986-89 survey reports, neither reachable through WebSearch
+snippets (only bibliographic references surfaced). Real highlights: **Hauarra/Humayma**, a fort-
+town built 106-110 CE specifically to guard this exact road, contemporary with the 117 CE
+snapshot and intensively excavated since 1995; **Thornia/Tuwaneh**, where a milestone records this
+stretch finished 110/111 CE, 54 Roman miles north of Petra — one of the most precisely dated
+points on the whole road; **Khirbet al-Kithara**, a milestone naming both Trajan and Severus
+directly. Two stations (**Betthorus**/El-Lejjun, **Udhruh**) carry an explicit anachronism caveat
+in their notes: the monumental fortresses visible at both sites today are 3rd/4th-century
+Diocletianic-era Limes Arabicus construction, roughly two centuries past this snapshot, so their
+category is `statio`, not `fort`, and the notes say plainly nothing of that scale stood there yet.
+Three named stations (Thantia, Gadda's precise point, a disputed "Rababatora") were researched and
+explicitly left out rather than given a guessed coordinate — Thantia's identification is genuinely
+disputed between two sources that disagree by 13km, and the project's own rule is real data or
+don't include it.
+
+### Track B — long-press explicit hold feedback, closes board `[04-P0-2]`
+
+Mobile already had a 550ms touch-hold timer opening the context menu (shipped 2026-08-12), but
+gave zero visual feedback while holding — nothing told a user their touch was even being
+recognized. Added a growing ring at the touch point (`app/ContextMenu.tsx`'s new `holdPoint`
+state, a `long-press-ring` CSS keyframe in `globals.css` timed to the same `LONG_PRESS_MS` the
+existing timer uses, so the ring's fill finishes exactly as the menu opens), cleared on release/
+move/fire the same way the existing timer-cancel path already works. Automatically covered by the
+site's existing `prefers-reduced-motion` block — no separate guard needed. Verified with
+Playwright at 375×812: a synthetic touch hold shows the ring in the DOM with the correct animation
+within 80ms; 1280×800 desktop light unaffected (ring only renders on the touch-only code path).
+**Sandbox testing caveat worth flagging**: Chromium's CDP `Input.dispatchTouchEvent` synthesis
+appears to trigger the native `contextmenu` compatibility event almost immediately, independent of
+the app's own JS timer — this makes an end-to-end synthetic-touch screenshot sequence unreliable
+for confirming the exact 550ms delay visually (the menu was already open in a screenshot taken at
+both 80ms and 250ms). Verified the ring's actual presence and the unchanged timer logic directly
+instead of trusting the screenshot timing.
+
+### Standing task closed to zero — flagship-depth (`[10-P0-3]`)
+
+The last 5 sub-60-word `pois.geojson` descriptions this standing task's prior batches had left at
+58-59 words (right at the line, out of scope for the last batch) — Carrara Marble Quarries, Throp
+Fortlet, Vigo Roman Salt Works, Battle of Zama, Rusidava Fort. A dedicated research pass found one
+genuinely new fact for each (Trajan's Column's 19 marble drums at ~32 tons apiece per Pliny the
+Elder; Throp's 1910 F.G. Simpson excavation and its two occupation phases; the 1998 accidental
+discovery of the Vigo saltworks and its garum-industry link; Polybius's own troop/elephant counts
+for Zama and Scipio's counter-formation; Rusidava's direct naming on the Tabula Peutingeriana with
+exact mileage to its neighbors) and wove each into the existing text rather than padding. **Depth
+98.9% → 100.0%, thin tail 5 → 0** — `npm run metrics` confirms all 469 POIs now clear 60 words.
+
+### A near-miss worth documenting: don't trust a 2-3 second layer-visibility screenshot
+
+While verifying the new data rendered, an early Playwright check (map ready + ~2s wait) showed
+**every non-base thematic layer visible by default** — trade-routes, road-stations, even
+death-ritual regions — which would have been a real, serious invariant-0 violation if true (see
+`SHIFT_BRIEF.md` §0: "a new overlay defaults OFF"). Traced it before assuming a bug: `useLayers.ts`
+correctly computes `false` for every non-base group and `Map.tsx` correctly calls
+`applyAllLayers()` — but that call sits at the very end of the ~30-line-2500+ sequential `await`
+chain Shifts 13/16 already documented taking 15-35 seconds to fully settle in this sandbox. A
+34-second wait confirmed `trade-routes-line`/`road-stations` genuinely resolve to
+`visibility: "none"` once the chain finishes — no bug, just an easy trap for a quick smoke test to
+misdiagnose as a real defect. Adding this specific manifestation to the existing note in
+`FEATURE_BACKLOG.md` since it nearly cost real time chasing a phantom fix.
+
+### Build, validate, verify
+
+`npm run validate`: 0 errors, 13 pre-existing warnings (unchanged, all reviewed by earlier shifts —
+India/China neighbor points correctly outside the "empire envelope," `letters.geojson` route
+LineStrings correctly missing a `name` field). `npx tsc --noEmit` and `npm run build` both clean.
+Verified live against the production bundle (`next start`, not `next dev`): new road-station and
+trade-route data loads and resolves layer visibility correctly after the full chain settles;
+desktop 1280×800 light and mobile 375×812 dark screenshots both clean, no chrome regression from
+the CSS/component changes. `package-lock.json` picked up cosmetic npm-version metadata churn from
+a fresh `npm install` (no dependency changes) — reverted before committing rather than shipping
+unrelated lockfile noise.
+
+### Handoff for the next shift
+
+1. **Via Traiana Nova has real headroom left**, specifically the Bostra-Philadelphia sector.
+   Thomas Bauzou's *Sur les pas des arpenteurs romains: la Via Nova de la provincia Arabia entre
+   Bostra et Philadelphia* and David Graf's original 1986-89 survey reports almost certainly
+   document many more individual milestones than WebSearch snippets surfaced — worth a pass from
+   an environment that can actually read those sources, or a library/archive.org lookup.
+2. **Grain trade route tonnage figures are round modern estimates, not Rickman's actual tables** —
+   flagged honestly in the data's own sources. If a future session can reach
+   `ostia-antica.org/fulltext/rickman/rickman-1980.pdf` or the archive.org copy directly (this
+   session's WebFetch couldn't), the real per-route numbers would sharpen `trade_routes.geojson`'s
+   notes.
+3. **`flagship-depth` (`[10-P0-3]`) is now fully closed at 100.0%** — the standing task has no
+   backlog left until new thin POIs get added by future work. Worth watching `npm run metrics`'s
+   thin-tail count rather than assuming it stays at zero forever.
+4. **Board fresh-check note**: `[04-P0-2]` long-press is now closed. Topmost unclaimed P0s are
+   still `[12-P0-1]` merge-themes (big), `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild (still
+   missing its spec), `[02-P0-1]` terrain, and `[02-P0-4]` self-host-glyphs (glyph PBF generation
+   still needs an unblocked environment). No unclaimed P0/P1 `add` exists; `[06-P2-6]`
+   priority-cities remains the only P2 `add` and stays blocked on Overpass in this sandbox.
+
+---
+
 ## Shift 32 — 2026-08-19 (this shift's own prompt claimed "Shift 1 of four")
 
 **Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt said

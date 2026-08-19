@@ -473,6 +473,15 @@ to prevent. Building locally to *test* your own work is expected and fine.
       eruption" sentence in the Pompeii Forum entry along the way. The 5 remaining are all 58-59
       words (right at the line) and weren't in this batch's research scope — left for a future
       micro top-up rather than padded to clear the number.*
+      *Batch 5 (closing) done 2026-08-19 by cloud shift 33: the last 5 fields (Carrara Marble
+      Quarries, Throp Fortlet, Vigo Roman Salt Works, Battle of Zama, Rusidava Fort), one genuinely
+      new researched fact woven into each — Trajan's Column's 19 marble drums at ~32 tons apiece
+      (Plin. NH 36.135), Throp's 1910 Simpson excavation and its two occupation phases, the 1998
+      accidental discovery of the Vigo saltworks and its garum-industry link, Polybius's own troop
+      counts for Zama's elephant charge and Scipio's counter-formation, and Rusidava's direct
+      naming on the Tabula Peutingeriana with its mileage to neighboring stations. Depth 98.9% →
+      **100.0%, thin tail 5 → 0** — the standing task's thin-description queue is now empty.
+      `npm run metrics` confirms 469/469 at 60+ words.*
 - [ ] `[15-P0-1]` **`unattended-screenshot-gate`** `fix` — ⚠️ **This blocks the daily pass from
       taking any UI ticket at all.** The gate below requires a screenshot at 375×812 dark and at
       desktop light, but the 09:30 editorial pass runs unattended and a dev server cannot be
@@ -569,7 +578,22 @@ to prevent. Building locally to *test* your own work is expected and fine.
       Cassas, Rossini) for the 40 sites and top 100 POIs. **Standing task.**
 - [ ] `[06-P0-1]` **`phase-banners`** `fix` — Per-site phase banner; honest handling of sites
       destroyed before 117 (Pompeii, Herculaneum).
-- [ ] `[04-P0-2]` **`long-press`** `polish` — Explicit touch-hold timer → "What's here?" card.
+- [x] `[04-P0-2]` **`long-press`** `polish` — Done 2026-08-19 by cloud shift 33. Mobile already
+      had a 550ms touch-hold timer opening the context menu (`app/ContextMenu.tsx`, shipped
+      2026-08-12), but gave zero visual feedback while holding — nothing told a user their touch
+      was being recognized as a hold rather than a tap-that-hasn't-released-yet. Added a growing
+      ring at the touch point (new `holdPoint` state, a `long-press-ring` CSS keyframe in
+      `globals.css` timed to the same 550ms `LONG_PRESS_MS` the timer already uses, so the ring's
+      fill finishes right as the menu opens), cleared on release/move/fire same as the existing
+      timer-cancel path. Automatically covered by the site's existing `prefers-reduced-motion`
+      block (no separate guard needed). Verified with Playwright at 375×812: a synthetic touch
+      hold shows the ring in the DOM with the correct animation within 80ms of touchstart; desktop
+      1280×800 light unaffected (the ring only renders when `holdPoint` is set, a touch-only code
+      path). One sandbox testing caveat logged in SHIFT_LOG: Chromium's CDP touch-event synthesis
+      appears to trigger the native `contextmenu` compatibility event almost immediately,
+      independent of the app's own JS timer, which makes end-to-end synthetic-touch timing tests
+      unreliable for confirming the exact 550ms delay — the ring's own presence and the unchanged
+      timer logic were verified directly instead.
 - [ ] `[11-P1-5]` **`pmtiles`** `polish` — tippecanoe → PMTiles for roads/places/provinces/land.
 - [ ] `[11-P1-6]` **`split-map-tsx`** `fix` — Break the 2,112-line `Map.tsx` into a layer
       registry so adding an overlay is a new file, not a monolith diff.
@@ -1258,3 +1282,29 @@ up. `[06-P0-2]` curate-buildings has 27 sites left (verify a candidate's actual 
 count before claiming — Rome's 289 named features make it the biggest remaining site by far,
 worth scoping carefully rather than assuming it's a normal-sized batch). Check the board fresh —
 don't assume this note is still current by the time you read it.
+
+- 2026-08-19 · `[10-P0-3]` flagship-depth · cloud shift 33. Batch 5 (closing): the last 5
+  sub-60-word fields, one new fact each. Depth 98.9% → **100.0%, thin tail 5 → 0**. See ticket
+  note above.
+- 2026-08-19 · `[04-P0-2]` long-press · cloud shift 33. Explicit growing-ring hold feedback on the
+  existing 550ms mobile touch-hold timer, timed to finish exactly as the menu opens. See ticket
+  note above.
+
+**Ratio state after this run:** cloud shift 33 ran 2 `deepen`/`add` axis picks (Via Traiana Nova
+road stations, axis 2; the Alexandria/Africa/Sicily grain trade routes, axis 6a — no unclaimed
+board `add` ticket existed to claim instead, same situation every recent run has hit) plus 1
+`deepen` (`[10-P0-3]` flagship-depth, closed to 100.0%) and 1 `polish` (`[04-P0-2]` long-press,
+closed). Network block reconfirmed via direct `curl`: `overpass-api.de`, `en.wikipedia.org`,
+`pleiades.stoa.org`, `commons.wikimedia.org` all `CONNECT tunnel failed, response 403` — WebSearch
+remains the only working research channel. `[06-P2-6]` priority-cities stays blocked for the same
+reason. At the time this run ends, the topmost unclaimed P0 tickets are unchanged from recent
+runs — `[12-P0-1]` merge-themes (`fix`, big), `[03-P0-1]` schema-v2 (`fix`), `[03-P0-2]`
+card-rebuild (`polish`, still missing its spec), `[02-P0-1]` terrain (`polish`), and `[02-P0-4]`
+self-host-glyphs (`fix` — the glyph-PBF generation half still needs an unblocked environment). No
+unclaimed P0/P1 `add` exists. One net-new finding worth flagging precisely: a Playwright check
+that waits only for `roads-main` to exist and then asserts on layer *visibility* a couple seconds
+later will see every thematic layer still `visible` and can misdiagnose invariant 0 as broken —
+`applyAllLayers()` sits at the very end of the long sequential load chain and needs the full
+15-35s this sandbox takes to settle before visibility reflects the real default-OFF state (see
+`FEATURE_BACKLOG.md` for the full note). Check the board fresh — don't assume this note is still
+current by the time you read it.
