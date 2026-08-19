@@ -196,7 +196,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       an image-bearing page and a no-image fallback page; the map round-trip link confirmed
       landing on the right panel.
 - [ ] `[02-P0-1]` **`terrain`** `polish` — Hillshade/relief under the land fill.
-- [ ] `[02-P0-4]` **`self-host-glyphs`** `fix` — Stop depending on `demotiles.maplibre.org`;
+- [~] `[02-P0-4]` **`self-host-glyphs`** `fix` — claimed by cloud shift 32, 2026-08-19 01:05
+      (partial scope — see note below once done). Stop depending on `demotiles.maplibre.org`;
       a single point of failure that would erase every label on the map. **Sharper finding
       2026-08-18, cloud shift 30**: in this sandbox, where that domain is blocked, the blast
       radius is bigger than "labels disappear" — `app/Map.tsx`'s entire Phase 2 onward (roads,
