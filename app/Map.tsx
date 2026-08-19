@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { applyAllLayers } from "./useLayers";
+import { applyAllLayers, registerLayerLoader, resetLayerLoaders, type LayerGroupId } from "./useLayers";
 import { selectPoi, clearPoi, getSelectedPoi, subscribeSelectedPoi } from "./usePoiPanel";
 import { selectProvince, clearProvince, subscribeSelectedProvince } from "./useProvincePanel";
 import { PROVINCES } from "./provinces";
@@ -136,11 +136,86 @@ function whenMapReady(map: maplibregl.Map, cb: () => void): () => void {
   return cleanup;
 }
 
+/** Runs a loader's work at most once no matter how many layer groups ask for it —
+ * public/data/lines.geojson backs both the frontier-lines and the aqueduct-lines group, and
+ * whichever gets switched on second must not re-fetch the file or re-add the shared source. */
+function onceLoader(fn: () => Promise<void>): () => Promise<void> {
+  let started: Promise<void> | null = null;
+  return () => {
+    if (!started) started = fn();
+    return started;
+  };
+}
+
+/** [11-P0-2] Every thematic layer id, in the exact order the phases below used to add them when
+ * the whole set loaded eagerly on every page load. Now that a group's layers only arrive when
+ * someone switches it on, "order added" would otherwise be "order the user clicked", and two
+ * overlays on at once could stack differently from one session to the next. After each lazy load
+ * the thematic layers are restacked into this canonical order — all of them above the base map,
+ * exactly as before. Ids not listed here (base geography, roads, places, POIs, site buildings)
+ * are never moved. */
+const THEMATIC_LAYER_ORDER: string[] = [
+  "road-stations",
+  "events-polygon-fill",
+  "events-polygon-line",
+  "events-point",
+  "trade-routes-line",
+  "trade-routes-node",
+  "disasters-point",
+  "health-point",
+  "mints-point",
+  "imperial-cult-point",
+  "politics-point",
+  "frontier-lines-line",
+  "aqueduct-lines-line",
+  "euergetism-point",
+  "penal-point",
+  "religions-point",
+  "sports-point",
+  "diplomacy-point",
+  "crafts-point",
+  "letters-route-line",
+  "letters-node-point",
+  "learning-point",
+  "landmarks-point",
+  "neighbors-point",
+  "languages-fill",
+  "languages-line",
+  "substrate-point",
+  "conventus-point",
+  "agriculture-fill",
+  "agriculture-line",
+  "housing-fill",
+  "housing-line",
+  "cuisine-fill",
+  "cuisine-line",
+  "death-rituals-fill",
+  "death-rituals-line",
+  "ethnic-pockets-point",
+];
+
+function restackThematicLayers(map: maplibregl.Map) {
+  // Walk backwards so each present layer is moved directly beneath the next present one; the
+  // last one in the list goes to the very top (moveLayer with no `before`).
+  let before: string | undefined;
+  for (let i = THEMATIC_LAYER_ORDER.length - 1; i >= 0; i--) {
+    const id = THEMATIC_LAYER_ORDER[i];
+    if (!map.getLayer(id)) continue;
+    map.moveLayer(id, before);
+    before = id;
+  }
+}
+
 export default function Map() {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!ref.current) return;
+
+    // A fresh map means a fresh set of lazy-overlay loaders — anything registered against a
+    // previous map instance (React StrictMode's double-mount in dev, a hot reload) points at a
+    // map that has since been removed.
+    resetLayerLoaders();
 
     let cancelled = false;
     let map: maplibregl.Map | null = null;
@@ -946,465 +1021,495 @@ export default function Map() {
 
         kick();
 
+        // [11-P0-2] lazy-overlays. Everything from here on builds a thematic overlay, and every
+        // one of them starts OFF (invariant 0) — so none of it is fetched now. Each phase's body
+        // is handed to useLayers as a loader instead, and runs the first time that group is
+        // actually switched on (or straight away, if a returning visitor's persisted state
+        // already has it on). Once a group's layers exist they are only hidden and shown from
+        // then on; switching it off and back on never re-fetches. Restacking after each load
+        // keeps the cross-overlay z-order identical to the old load-everything-in-phase-order
+        // behaviour, whatever order the user happens to switch groups on in.
+        const registerThematic = (group: LayerGroupId, load: () => Promise<void>) =>
+          registerLayerLoader(group, async () => {
+            await load();
+            if (map) restackThematicLayers(map);
+          });
+
         // Phase 6: Road stations (mansiones/mutationes/stationes) — small square markers, dim
         // gray, deliberately not shaped like the round POI pins so the road network's own rhythm
         // reads distinctly from city/landmark POIs. Hover for name/road/distance tooltip.
-        const roadStations = await fetch("/data/road_stations.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && roadStations) {
-          const sq = 10;
-          const canvas = document.createElement("canvas");
-          canvas.width = sq;
-          canvas.height = sq;
-          const ctx2d = canvas.getContext("2d");
-          if (ctx2d) {
-            ctx2d.fillStyle = "#6b6f76";
-            ctx2d.fillRect(1, 1, sq - 2, sq - 2);
-            ctx2d.strokeStyle = P.labelHalo;
-            ctx2d.lineWidth = 1;
-            ctx2d.strokeRect(1, 1, sq - 2, sq - 2);
-            const imgData = ctx2d.getImageData(0, 0, sq, sq);
-            if (!map.hasImage("road-station-square")) {
-              map.addImage("road-station-square", { width: sq, height: sq, data: imgData.data });
+        registerThematic("road-stations", async () => {
+          const roadStations = await fetch("/data/road_stations.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && roadStations) {
+            const sq = 10;
+            const canvas = document.createElement("canvas");
+            canvas.width = sq;
+            canvas.height = sq;
+            const ctx2d = canvas.getContext("2d");
+            if (ctx2d) {
+              ctx2d.fillStyle = "#6b6f76";
+              ctx2d.fillRect(1, 1, sq - 2, sq - 2);
+              ctx2d.strokeStyle = P.labelHalo;
+              ctx2d.lineWidth = 1;
+              ctx2d.strokeRect(1, 1, sq - 2, sq - 2);
+              const imgData = ctx2d.getImageData(0, 0, sq, sq);
+              if (!map.hasImage("road-station-square")) {
+                map.addImage("road-station-square", { width: sq, height: sq, data: imgData.data });
+              }
             }
+
+            map.addSource("road-stations", { type: "geojson", data: roadStations });
+            map.addLayer({
+              id: "road-stations",
+              type: "symbol",
+              source: "road-stations",
+              minzoom: 5,
+              layout: { "icon-image": "road-station-square", "icon-size": 1, "icon-allow-overlap": false },
+            });
+
+            const stationPopup = new maplibregl.Popup({ closeButton: false, closeOnClick: false, offset: 8 });
+            map.on("mouseenter", "road-stations", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              // @ts-ignore
+              const coords = (f.geometry.type === "Point" && f.geometry.coordinates) || null;
+              if (!coords) return;
+              const distLine =
+                p.distance_from_previous_mp != null
+                  ? `<div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(String(p.distance_from_previous_mp))} Roman mi from previous stop</div>`
+                  : "";
+              stationPopup
+                .setLngLat(coords as [number, number])
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px;">${escapeHtml(p.road || "")} · ${escapeHtml(p.category || "")}</div>
+                     ${distLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "road-stations", () => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "";
+              stationPopup.remove();
+            });
+            kick();
           }
-
-          map.addSource("road-stations", { type: "geojson", data: roadStations });
-          map.addLayer({
-            id: "road-stations",
-            type: "symbol",
-            source: "road-stations",
-            minzoom: 5,
-            layout: { "icon-image": "road-station-square", "icon-size": 1, "icon-allow-overlap": false },
-          });
-
-          const stationPopup = new maplibregl.Popup({ closeButton: false, closeOnClick: false, offset: 8 });
-          map.on("mouseenter", "road-stations", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            // @ts-ignore
-            const coords = (f.geometry.type === "Point" && f.geometry.coordinates) || null;
-            if (!coords) return;
-            const distLine =
-              p.distance_from_previous_mp != null
-                ? `<div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(String(p.distance_from_previous_mp))} Roman mi from previous stop</div>`
-                : "";
-            stationPopup
-              .setLngLat(coords as [number, number])
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px;">${escapeHtml(p.road || "")} · ${escapeHtml(p.category || "")}</div>
-                   ${distLine}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "road-stations", () => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "";
-            stationPopup.remove();
-          });
-          kick();
-        }
+        });
 
         // Phase 7: Events in 117 CE (public/data/events_117.geojson) — the year's news, drawn as
         // point markers (a dedication, a death, a battle) and translucent polygons (a war front,
         // a revolt zone). People markers are a separate HTML overlay, app/PeopleMarkers.tsx.
-        const events117 = await fetch("/data/events_117.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && events117) {
-          map.addSource("events-117", { type: "geojson", data: events117 });
+        registerThematic("living-empire", async () => {
+          const events117 = await fetch("/data/events_117.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && events117) {
+            map.addSource("events-117", { type: "geojson", data: events117 });
 
-          map.addLayer({
-            id: "events-polygon-fill",
-            type: "fill",
-            source: "events-117",
-            filter: ["==", ["geometry-type"], "Polygon"],
-            paint: { "fill-color": "#a1442e", "fill-opacity": 0.15 },
-          });
-          map.addLayer({
-            id: "events-polygon-line",
-            type: "line",
-            source: "events-117",
-            filter: ["==", ["geometry-type"], "Polygon"],
-            paint: { "line-color": "#a1442e", "line-width": 1.2, "line-dasharray": [3, 2], "line-opacity": 0.7 },
-          });
-          map.addLayer({
-            id: "events-point",
-            type: "circle",
-            source: "events-117",
-            filter: ["==", ["geometry-type"], "Point"],
-            paint: {
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
-              "circle-color": "#a1442e",
-              "circle-stroke-color": P.labelHalo,
-              "circle-stroke-width": 1.6,
-            },
-          });
+            map.addLayer({
+              id: "events-polygon-fill",
+              type: "fill",
+              source: "events-117",
+              filter: ["==", ["geometry-type"], "Polygon"],
+              paint: { "fill-color": "#a1442e", "fill-opacity": 0.15 },
+            });
+            map.addLayer({
+              id: "events-polygon-line",
+              type: "line",
+              source: "events-117",
+              filter: ["==", ["geometry-type"], "Polygon"],
+              paint: { "line-color": "#a1442e", "line-width": 1.2, "line-dasharray": [3, 2], "line-opacity": 0.7 },
+            });
+            map.addLayer({
+              id: "events-point",
+              type: "circle",
+              source: "events-117",
+              filter: ["==", ["geometry-type"], "Point"],
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+                "circle-color": "#a1442e",
+                "circle-stroke-color": P.labelHalo,
+                "circle-stroke-width": 1.6,
+              },
+            });
 
-          const eventPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          const onEventEnter = (e: any) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const dateLine = p.date_iso ? `<div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(String(p.date_iso))} CE</div>` : "";
-            const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.one_line)}</div>` : "";
-            const lngLat = e.lngLat;
-            eventPopup
-              .setLngLat(lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   ${dateLine}
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          };
-          map.on("mouseenter", "events-point", onEventEnter);
-          map.on("mouseleave", "events-point", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          map.on("click", "events-polygon-fill", onEventEnter);
-          map.on("mouseenter", "events-polygon-fill", () => {
-            if (map) map.getCanvas().style.cursor = "pointer";
-          });
-          kick();
-        }
+            const eventPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            const onEventEnter = (e: any) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const dateLine = p.date_iso ? `<div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(String(p.date_iso))} CE</div>` : "";
+              const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.one_line)}</div>` : "";
+              const lngLat = e.lngLat;
+              eventPopup
+                .setLngLat(lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     ${dateLine}
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            };
+            map.on("mouseenter", "events-point", onEventEnter);
+            map.on("mouseleave", "events-point", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            map.on("click", "events-polygon-fill", onEventEnter);
+            map.on("mouseenter", "events-polygon-fill", () => {
+              if (map) map.getCanvas().style.cursor = "pointer";
+            });
+            kick();
+          }
+        });
 
         // Phase 8: Trade routes (public/data/trade_routes.geojson) — long-distance commodity
         // routes as dashed amber LineStrings, with small diamond markers at named waypoint nodes.
-        const tradeRoutes = await fetch("/data/trade_routes.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && tradeRoutes) {
-          map.addSource("trade-routes", { type: "geojson", data: tradeRoutes });
+        registerThematic("trade-routes", async () => {
+          const tradeRoutes = await fetch("/data/trade_routes.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && tradeRoutes) {
+            map.addSource("trade-routes", { type: "geojson", data: tradeRoutes });
 
-          map.addLayer({
-            id: "trade-routes-line",
-            type: "line",
-            source: "trade-routes",
-            filter: ["==", ["geometry-type"], "LineString"],
-            paint: {
-              "line-color": "#b8860b",
-              "line-width": ["interpolate", ["linear"], ["zoom"], 3, 1.4, 8, 2.6],
-              "line-dasharray": [2, 1.5],
-              "line-opacity": 0.85,
-            },
-            layout: { "line-cap": "round", "line-join": "round" },
-          });
-          map.addLayer({
-            id: "trade-routes-node",
-            type: "circle",
-            source: "trade-routes",
-            filter: ["==", ["geometry-type"], "Point"],
-            paint: {
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3, 8, 5.5],
-              "circle-color": "#b8860b",
-              "circle-stroke-color": P.labelHalo,
-              "circle-stroke-width": 1.6,
-            },
-          });
+            map.addLayer({
+              id: "trade-routes-line",
+              type: "line",
+              source: "trade-routes",
+              filter: ["==", ["geometry-type"], "LineString"],
+              paint: {
+                "line-color": "#b8860b",
+                "line-width": ["interpolate", ["linear"], ["zoom"], 3, 1.4, 8, 2.6],
+                "line-dasharray": [2, 1.5],
+                "line-opacity": 0.85,
+              },
+              layout: { "line-cap": "round", "line-join": "round" },
+            });
+            map.addLayer({
+              id: "trade-routes-node",
+              type: "circle",
+              source: "trade-routes",
+              filter: ["==", ["geometry-type"], "Point"],
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3, 8, 5.5],
+                "circle-color": "#b8860b",
+                "circle-stroke-color": P.labelHalo,
+                "circle-stroke-width": 1.6,
+              },
+            });
 
-          const routePopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          const onRouteLineEnter = (e: any) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const noteLine = p.notes ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.notes)}</div>` : "";
-            routePopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.commodity || "")} · ${escapeHtml(p.direction || "")}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          };
-          const onRouteNodeEnter = (e: any) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            routePopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.route || "")}</div>
-                   <div style="margin-top:4px; max-width:220px;">${escapeHtml(p.role || "")}</div>
-                 </div>`,
-              )
-              .addTo(map);
-          };
-          map.on("mouseenter", "trade-routes-line", onRouteLineEnter);
-          map.on("mouseleave", "trade-routes-line", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          map.on("mouseenter", "trade-routes-node", onRouteNodeEnter);
-          map.on("mouseleave", "trade-routes-node", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const routePopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            const onRouteLineEnter = (e: any) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const noteLine = p.notes ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.notes)}</div>` : "";
+              routePopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.commodity || "")} · ${escapeHtml(p.direction || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            };
+            const onRouteNodeEnter = (e: any) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              routePopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.route || "")}</div>
+                     <div style="margin-top:4px; max-width:220px;">${escapeHtml(p.role || "")}</div>
+                   </div>`,
+                )
+                .addTo(map);
+            };
+            map.on("mouseenter", "trade-routes-line", onRouteLineEnter);
+            map.on("mouseleave", "trade-routes-line", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            map.on("mouseenter", "trade-routes-node", onRouteNodeEnter);
+            map.on("mouseleave", "trade-routes-node", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 9: Disasters + memory (public/data/disasters.geojson) — events still felt or
         // remembered in 117 CE (earthquakes, fires, floods, revolts), colored distinctly from the
         // current-year events layer so past trauma reads differently from unfolding news.
-        const disasters = await fetch("/data/disasters.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && disasters) {
-          map.addSource("disasters", { type: "geojson", data: disasters });
-          map.addLayer({
-            id: "disasters-point",
-            type: "circle",
-            source: "disasters",
-            paint: {
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
-              "circle-color": "#5c3a21",
-              "circle-stroke-color": P.labelHalo,
-              "circle-stroke-width": 1.6,
-            },
-          });
+        registerThematic("disasters", async () => {
+          const disasters = await fetch("/data/disasters.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && disasters) {
+            map.addSource("disasters", { type: "geojson", data: disasters });
+            map.addLayer({
+              id: "disasters-point",
+              type: "circle",
+              source: "disasters",
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+                "circle-color": "#5c3a21",
+                "circle-stroke-color": P.labelHalo,
+                "circle-stroke-width": 1.6,
+              },
+            });
 
-          const disasterPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "disasters-point", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const badge = p.still_visible_in_117
-              ? `<div style="color:#a1442e; font-size:11px; margin-top:4px; font-weight:600;">Still felt in 117 CE</div>`
-              : "";
-            disasterPopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 220px;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(String(p.year ?? ""))} CE · ${escapeHtml(p.type || "")}</div>
-                   <div style="margin-top:4px;">${escapeHtml(p.one_line || "")}</div>
-                   ${badge}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "disasters-point", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const disasterPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "disasters-point", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const badge = p.still_visible_in_117
+                ? `<div style="color:#a1442e; font-size:11px; margin-top:4px; font-weight:600;">Still felt in 117 CE</div>`
+                : "";
+              disasterPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 220px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(String(p.year ?? ""))} CE · ${escapeHtml(p.type || "")}</div>
+                     <div style="margin-top:4px;">${escapeHtml(p.one_line || "")}</div>
+                     ${badge}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "disasters-point", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 10: Health, medicine + spa culture (public/data/health.geojson) — Aquae spa
         // towns, Asklepieia, medical schools, named doctors, and malaria zones (axis 18).
-        const health = await fetch("/data/health.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && health) {
-          map.addSource("health", { type: "geojson", data: health });
-          map.addLayer({
-            id: "health-point",
-            type: "circle",
-            source: "health",
-            paint: {
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
-              "circle-color": "#1f9e89",
-              "circle-stroke-color": P.labelHalo,
-              "circle-stroke-width": 1.6,
-            },
-          });
+        registerThematic("health", async () => {
+          const health = await fetch("/data/health.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && health) {
+            map.addSource("health", { type: "geojson", data: health });
+            map.addLayer({
+              id: "health-point",
+              type: "circle",
+              source: "health",
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+                "circle-color": "#1f9e89",
+                "circle-stroke-color": P.labelHalo,
+                "circle-stroke-width": 1.6,
+              },
+            });
 
-          const healthPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "health-point", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const catLabel: Record<string, string> = {
-              aquae_town: "Spa town",
-              asklepieion: "Healing sanctuary",
-              medical_school: "Medical school",
-              doctor: "Physician",
-              malaria_zone: "Malaria zone",
-            };
-            const noteLine = p.one_line ? `<div style="margin-top:4px;">${escapeHtml(p.one_line)}</div>` : "";
-            healthPopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(catLabel[p.category] || p.category || "")}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "health-point", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const healthPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "health-point", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const catLabel: Record<string, string> = {
+                aquae_town: "Spa town",
+                asklepieion: "Healing sanctuary",
+                medical_school: "Medical school",
+                doctor: "Physician",
+                malaria_zone: "Malaria zone",
+              };
+              const noteLine = p.one_line ? `<div style="margin-top:4px;">${escapeHtml(p.one_line)}</div>` : "";
+              healthPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(catLabel[p.category] || p.category || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "health-point", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 11: Mints (public/data/mints.geojson) — where the empire's coinage was struck
         // in 117 CE, imperial and civic (axis 8a).
-        const mints = await fetch("/data/mints.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && mints) {
-          map.addSource("mints", { type: "geojson", data: mints });
-          map.addLayer({
-            id: "mints-point",
-            type: "circle",
-            source: "mints",
-            paint: {
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
-              "circle-color": "#b08d2e",
-              "circle-stroke-color": P.labelHalo,
-              "circle-stroke-width": 1.6,
-            },
-          });
+        registerThematic("mints", async () => {
+          const mints = await fetch("/data/mints.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && mints) {
+            map.addSource("mints", { type: "geojson", data: mints });
+            map.addLayer({
+              id: "mints-point",
+              type: "circle",
+              source: "mints",
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+                "circle-color": "#b08d2e",
+                "circle-stroke-color": P.labelHalo,
+                "circle-stroke-width": 1.6,
+              },
+            });
 
-          const mintPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "mints-point", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const noteLine = p.one_line ? `<div style="margin-top:4px;">${escapeHtml(p.one_line)}</div>` : "";
-            mintPopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">Mint · ${escapeHtml(p.metal || "")}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "mints-point", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const mintPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "mints-point", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const noteLine = p.one_line ? `<div style="margin-top:4px;">${escapeHtml(p.one_line)}</div>` : "";
+              mintPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">Mint · ${escapeHtml(p.metal || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "mints-point", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 12: Imperial cult centers (public/data/imperial_cult.geojson) — provincial
         // Roma-et-Augusti temples, sebasteia, and Rome's temples to the deified emperors (axis 12).
-        const imperialCult = await fetch("/data/imperial_cult.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && imperialCult) {
-          map.addSource("imperial-cult", { type: "geojson", data: imperialCult });
-          map.addLayer({
-            id: "imperial-cult-point",
-            type: "circle",
-            source: "imperial-cult",
-            paint: {
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
-              "circle-color": "#8859a6",
-              "circle-stroke-color": P.labelHalo,
-              "circle-stroke-width": 1.6,
-            },
-          });
+        registerThematic("imperial-cult", async () => {
+          const imperialCult = await fetch("/data/imperial_cult.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && imperialCult) {
+            map.addSource("imperial-cult", { type: "geojson", data: imperialCult });
+            map.addLayer({
+              id: "imperial-cult-point",
+              type: "circle",
+              source: "imperial-cult",
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+                "circle-color": "#8859a6",
+                "circle-stroke-color": P.labelHalo,
+                "circle-stroke-width": 1.6,
+              },
+            });
 
-          const cultPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "imperial-cult-point", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const catLabel: Record<string, string> = {
-              provincial_cult_center: "Provincial cult center",
-              sebasteion: "Sebasteion",
-              divus_temple: "Temple of a deified emperor",
-            };
-            const noteLine = p.one_line ? `<div style="margin-top:4px;">${escapeHtml(p.one_line)}</div>` : "";
-            cultPopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(catLabel[p.category] || p.category || "")}${p.first_worshipped ? " · " + escapeHtml(p.first_worshipped) : ""}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "imperial-cult-point", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const cultPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "imperial-cult-point", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const catLabel: Record<string, string> = {
+                provincial_cult_center: "Provincial cult center",
+                sebasteion: "Sebasteion",
+                divus_temple: "Temple of a deified emperor",
+              };
+              const noteLine = p.one_line ? `<div style="margin-top:4px;">${escapeHtml(p.one_line)}</div>` : "";
+              cultPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(catLabel[p.category] || p.category || "")}${p.first_worshipped ? " · " + escapeHtml(p.first_worshipped) : ""}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "imperial-cult-point", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 13: Political apparatus (public/data/politics.geojson) — chariot faction HQs,
         // praetorian/urban-cohort/vigiles/equites-singulares barracks, senator hometowns (axis 13).
-        const politics = await fetch("/data/politics.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && politics) {
-          map.addSource("politics", { type: "geojson", data: politics });
-          map.addLayer({
-            id: "politics-point",
-            type: "circle",
-            source: "politics",
-            paint: {
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
-              "circle-color": "#a1442e",
-              "circle-stroke-color": P.labelHalo,
-              "circle-stroke-width": 1.6,
-            },
-          });
+        registerThematic("politics", async () => {
+          const politics = await fetch("/data/politics.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && politics) {
+            map.addSource("politics", { type: "geojson", data: politics });
+            map.addLayer({
+              id: "politics-point",
+              type: "circle",
+              source: "politics",
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+                "circle-color": "#a1442e",
+                "circle-stroke-color": P.labelHalo,
+                "circle-stroke-width": 1.6,
+              },
+            });
 
-          const politicsPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "politics-point", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const catLabel: Record<string, string> = {
-              chariot_faction_HQ: "Chariot faction headquarters",
-              praetorian_barrack: "Praetorian barracks",
-              equites_singulares_barrack: "Imperial horse guard barracks",
-              urban_cohort_HQ: "Urban cohort",
-              vigiles_station: "Vigiles station",
-              senator_hometown: "Senator's hometown",
-              provincial_governor: "Provincial governor, 117 CE",
-            };
-            const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.one_line)}</div>` : "";
-            politicsPopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(catLabel[p.category] || p.category || "")}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "politics-point", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const politicsPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "politics-point", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const catLabel: Record<string, string> = {
+                chariot_faction_HQ: "Chariot faction headquarters",
+                praetorian_barrack: "Praetorian barracks",
+                equites_singulares_barrack: "Imperial horse guard barracks",
+                urban_cohort_HQ: "Urban cohort",
+                vigiles_station: "Vigiles station",
+                senator_hometown: "Senator's hometown",
+                provincial_governor: "Provincial governor, 117 CE",
+              };
+              const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.one_line)}</div>` : "";
+              politicsPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(catLabel[p.category] || p.category || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "politics-point", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 14: Long line features (public/data/lines.geojson) — frontier lines (Fossatum
         // Africae, the Upper Germanic-Raetian Limes, the Dacian Olt river frontier, axis 3a) and
@@ -1412,1135 +1517,1179 @@ export default function Map() {
         // One shared source, two filtered layers so the two feature families read distinctly —
         // frontiers stay dashed earth-brown, aqueducts get a solid line in the same green already
         // used for aqueduct POI pins (app/poiCategories.ts's "infrastructure" group).
-        const lines = await fetch("/data/lines.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && lines) {
-          map.addSource("lines", { type: "geojson", data: lines });
-          map.addLayer({
-            id: "frontier-lines-line",
-            type: "line",
-            source: "lines",
-            filter: ["==", ["get", "category"], "frontier_line"],
-            paint: {
-              "line-color": "#6a5f4a",
-              "line-width": ["interpolate", ["linear"], ["zoom"], 3, 1.2, 8, 2.4],
-              "line-dasharray": [3, 2],
-              "line-opacity": 0.85,
-            },
-            layout: { "line-cap": "round", "line-join": "round" },
-          });
-          map.addLayer({
-            id: "aqueduct-lines-line",
-            type: "line",
-            source: "lines",
-            filter: ["==", ["get", "category"], "aqueduct_line"],
-            paint: {
-              "line-color": "#3a9a6a",
-              "line-width": ["interpolate", ["linear"], ["zoom"], 3, 1, 8, 2.2],
-              "line-opacity": 0.85,
-            },
-            layout: { "line-cap": "round", "line-join": "round" },
-          });
+        // Both groups share one file, so one memoised loader backs both registrations.
+        const loadLines = onceLoader(async () => {
+          const lines = await fetch("/data/lines.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && lines) {
+            map.addSource("lines", { type: "geojson", data: lines });
+            map.addLayer({
+              id: "frontier-lines-line",
+              type: "line",
+              source: "lines",
+              filter: ["==", ["get", "category"], "frontier_line"],
+              paint: {
+                "line-color": "#6a5f4a",
+                "line-width": ["interpolate", ["linear"], ["zoom"], 3, 1.2, 8, 2.4],
+                "line-dasharray": [3, 2],
+                "line-opacity": 0.85,
+              },
+              layout: { "line-cap": "round", "line-join": "round" },
+            });
+            map.addLayer({
+              id: "aqueduct-lines-line",
+              type: "line",
+              source: "lines",
+              filter: ["==", ["get", "category"], "aqueduct_line"],
+              paint: {
+                "line-color": "#3a9a6a",
+                "line-width": ["interpolate", ["linear"], ["zoom"], 3, 1, 8, 2.2],
+                "line-opacity": 0.85,
+              },
+              layout: { "line-cap": "round", "line-join": "round" },
+            });
 
-          const linePopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          const onLineEnter = (e: any) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const noteLine = p.notes ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.notes)}</div>` : "";
-            linePopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name_english || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.province || "")}${p.extant_117ce === false ? " · not yet built in 117 CE" : ""}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          };
-          const onLineLeave = () => {
-            if (map) map.getCanvas().style.cursor = "";
-          };
-          map.on("mouseenter", "frontier-lines-line", onLineEnter);
-          map.on("mouseleave", "frontier-lines-line", onLineLeave);
-          map.on("mouseenter", "aqueduct-lines-line", onLineEnter);
-          map.on("mouseleave", "aqueduct-lines-line", onLineLeave);
-          kick();
-        }
+            const linePopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            const onLineEnter = (e: any) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const noteLine = p.notes ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.notes)}</div>` : "";
+              linePopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name_english || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.province || "")}${p.extant_117ce === false ? " · not yet built in 117 CE" : ""}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            };
+            const onLineLeave = () => {
+              if (map) map.getCanvas().style.cursor = "";
+            };
+            map.on("mouseenter", "frontier-lines-line", onLineEnter);
+            map.on("mouseleave", "frontier-lines-line", onLineLeave);
+            map.on("mouseenter", "aqueduct-lines-line", onLineEnter);
+            map.on("mouseleave", "aqueduct-lines-line", onLineLeave);
+            kick();
+          }
+        });
+        registerThematic("frontier-lines", loadLines);
+        registerThematic("aqueduct-lines", loadLines);
 
         // Phase 15: Welfare + euergetism (public/data/euergetism.geojson) — Trajan's alimenta
         // child-welfare towns (Veleia and Ligures Baebiani's bronze tables, and individually
         // attested towns beyond those two) plus a handful of Trajanic-era benefactor endowments
         // (axis 15).
-        const euergetism = await fetch("/data/euergetism.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && euergetism) {
-          map.addSource("euergetism", { type: "geojson", data: euergetism });
-          map.addLayer({
-            id: "euergetism-point",
-            type: "circle",
-            source: "euergetism",
-            paint: {
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
-              "circle-color": "#c98a2e",
-              "circle-stroke-color": P.labelHalo,
-              "circle-stroke-width": 1.6,
-            },
-          });
+        registerThematic("euergetism", async () => {
+          const euergetism = await fetch("/data/euergetism.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && euergetism) {
+            map.addSource("euergetism", { type: "geojson", data: euergetism });
+            map.addLayer({
+              id: "euergetism-point",
+              type: "circle",
+              source: "euergetism",
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+                "circle-color": "#c98a2e",
+                "circle-stroke-color": P.labelHalo,
+                "circle-stroke-width": 1.6,
+              },
+            });
 
-          const euergetismPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "euergetism-point", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const catLabel: Record<string, string> = {
-              alimenta_town: "Alimenta welfare town",
-              benefactor_inscription: "Benefactor endowment",
-            };
-            const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.one_line)}</div>` : "";
-            euergetismPopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(catLabel[p.category] || p.category || "")}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "euergetism-point", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const euergetismPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "euergetism-point", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const catLabel: Record<string, string> = {
+                alimenta_town: "Alimenta welfare town",
+                benefactor_inscription: "Benefactor endowment",
+              };
+              const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.one_line)}</div>` : "";
+              euergetismPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(catLabel[p.category] || p.category || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "euergetism-point", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 16: Exile + penal geography (public/data/penal.geojson) — every known Roman
         // exile island (Julio-Claudian relegation network in the Aegean and Tyrrhenian), plus a
         // penal mine, a penal quarry, and Rome's own Tullianum execution cell (axis 17).
-        const penal = await fetch("/data/penal.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && penal) {
-          map.addSource("penal", { type: "geojson", data: penal });
-          map.addLayer({
-            id: "penal-point",
-            type: "circle",
-            source: "penal",
-            paint: {
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
-              "circle-color": "#4a4a52",
-              "circle-stroke-color": "#e2ddd8",
-              "circle-stroke-width": 1.6,
-            },
-          });
+        registerThematic("penal", async () => {
+          const penal = await fetch("/data/penal.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && penal) {
+            map.addSource("penal", { type: "geojson", data: penal });
+            map.addLayer({
+              id: "penal-point",
+              type: "circle",
+              source: "penal",
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+                "circle-color": "#4a4a52",
+                "circle-stroke-color": "#e2ddd8",
+                "circle-stroke-width": 1.6,
+              },
+            });
 
-          const penalPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "penal-point", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const catLabel: Record<string, string> = {
-              exile_island: "Exile island",
-              penal_mine: "Penal mine",
-              penal_quarry: "Penal quarry",
-              prison: "Prison",
-            };
-            const name = p.name_english || p.name_latin || "";
-            const noteLine = p.notes ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.notes)}</div>` : "";
-            penalPopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
-                   <div style="font-weight: 600;">${escapeHtml(name)}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(catLabel[p.category] || p.category || "")}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "penal-point", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const penalPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "penal-point", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const catLabel: Record<string, string> = {
+                exile_island: "Exile island",
+                penal_mine: "Penal mine",
+                penal_quarry: "Penal quarry",
+                prison: "Prison",
+              };
+              const name = p.name_english || p.name_latin || "";
+              const noteLine = p.notes ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.notes)}</div>` : "";
+              penalPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     <div style="font-weight: 600;">${escapeHtml(name)}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(catLabel[p.category] || p.category || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "penal-point", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 17: Religious communities (public/data/religions_117.geojson) — Christian and
         // Jewish diaspora communities, Isis/Cybele cult centers, and mystery-cult sanctuaries
         // active by 117 CE, each tagged with an attestation confidence band (axis 6b).
-        const religions = await fetch("/data/religions_117.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && religions) {
-          map.addSource("religions", { type: "geojson", data: religions });
-          map.addLayer({
-            id: "religions-point",
-            type: "circle",
-            source: "religions",
-            paint: {
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
-              "circle-color": "#a63d6b",
-              "circle-stroke-color": P.labelHalo,
-              "circle-stroke-width": 1.6,
-            },
-          });
+        registerThematic("religions", async () => {
+          const religions = await fetch("/data/religions_117.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && religions) {
+            map.addSource("religions", { type: "geojson", data: religions });
+            map.addLayer({
+              id: "religions-point",
+              type: "circle",
+              source: "religions",
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+                "circle-color": "#a63d6b",
+                "circle-stroke-color": P.labelHalo,
+                "circle-stroke-width": 1.6,
+              },
+            });
 
-          const religionPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "religions-point", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const traditionLabel: Record<string, string> = {
-              christian: "Christian community",
-              jewish: "Jewish diaspora community",
-              isis: "Isis cult center",
-              mithraic: "Mithraic community",
-              cybele: "Cybele (Magna Mater) center",
-              other_mystery: "Mystery cult sanctuary",
-            };
-            const attestationLabel: Record<string, string> = {
-              attested_117: "Attested by 117 CE",
-              probable: "Probable by 117 CE",
-              claimed: "Claimed in later sources",
-            };
-            const noteLine = p.one_line ? `<div style="margin-top:4px;">${escapeHtml(p.one_line)}</div>` : "";
-            religionPopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(traditionLabel[p.tradition] || p.tradition || "")}${p.attestation ? " · " + escapeHtml(attestationLabel[p.attestation] || p.attestation) : ""}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "religions-point", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const religionPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "religions-point", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const traditionLabel: Record<string, string> = {
+                christian: "Christian community",
+                jewish: "Jewish diaspora community",
+                isis: "Isis cult center",
+                mithraic: "Mithraic community",
+                cybele: "Cybele (Magna Mater) center",
+                other_mystery: "Mystery cult sanctuary",
+              };
+              const attestationLabel: Record<string, string> = {
+                attested_117: "Attested by 117 CE",
+                probable: "Probable by 117 CE",
+                claimed: "Claimed in later sources",
+              };
+              const noteLine = p.one_line ? `<div style="margin-top:4px;">${escapeHtml(p.one_line)}</div>` : "";
+              religionPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(traditionLabel[p.tradition] || p.tradition || "")}${p.attestation ? " · " + escapeHtml(attestationLabel[p.attestation] || p.attestation) : ""}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "religions-point", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 18: Sports + athletic culture (public/data/sports.geojson) — gymnasia, the
         // sacred-crown festival circuit (periodos: Olympia, Delphi, Nemea, Isthmia), other
         // periodic festivals, and athletic guild HQs (axis 20).
-        const sports = await fetch("/data/sports.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && sports) {
-          map.addSource("sports", { type: "geojson", data: sports });
-          map.addLayer({
-            id: "sports-point",
-            type: "circle",
-            source: "sports",
-            paint: {
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
-              "circle-color": "#3f7a4f",
-              "circle-stroke-color": P.labelHalo,
-              "circle-stroke-width": 1.6,
-            },
-          });
+        registerThematic("sports", async () => {
+          const sports = await fetch("/data/sports.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && sports) {
+            map.addSource("sports", { type: "geojson", data: sports });
+            map.addLayer({
+              id: "sports-point",
+              type: "circle",
+              source: "sports",
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+                "circle-color": "#3f7a4f",
+                "circle-stroke-color": P.labelHalo,
+                "circle-stroke-width": 1.6,
+              },
+            });
 
-          const sportsPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "sports-point", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const catLabel: Record<string, string> = {
-              gymnasium: "Gymnasium",
-              athletic_guild: "Athletic guild HQ",
-              festival_site: "Festival site",
-            };
-            const subLine = p.festival_name
-              ? p.festival_name + (p.circuit === "periodos" ? " · Sacred crown games" : "")
-              : catLabel[p.category] || p.category || "";
-            const noteLine = p.one_line ? `<div style="margin-top:4px;">${escapeHtml(p.one_line)}</div>` : "";
-            sportsPopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(subLine)}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "sports-point", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const sportsPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "sports-point", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const catLabel: Record<string, string> = {
+                gymnasium: "Gymnasium",
+                athletic_guild: "Athletic guild HQ",
+                festival_site: "Festival site",
+              };
+              const subLine = p.festival_name
+                ? p.festival_name + (p.circuit === "periodos" ? " · Sacred crown games" : "")
+                : catLabel[p.category] || p.category || "";
+              const noteLine = p.one_line ? `<div style="margin-top:4px;">${escapeHtml(p.one_line)}</div>` : "";
+              sportsPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(subLine)}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "sports-point", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 19: Foreign relations + embassies (public/data/diplomacy_117.geojson) — hostage
         // princes at Rome, inbound/outbound embassies, and treaty sites with Parthia, Armenia,
         // India, Han China, Britannia, and the empire's client kingdoms (axis 14).
-        const diplomacy = await fetch("/data/diplomacy_117.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && diplomacy) {
-          map.addSource("diplomacy", { type: "geojson", data: diplomacy });
-          map.addLayer({
-            id: "diplomacy-point",
-            type: "circle",
-            source: "diplomacy",
-            paint: {
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
-              "circle-color": "#3a6b91",
-              "circle-stroke-color": P.labelHalo,
-              "circle-stroke-width": 1.6,
-            },
-          });
+        registerThematic("diplomacy", async () => {
+          const diplomacy = await fetch("/data/diplomacy_117.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && diplomacy) {
+            map.addSource("diplomacy", { type: "geojson", data: diplomacy });
+            map.addLayer({
+              id: "diplomacy-point",
+              type: "circle",
+              source: "diplomacy",
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+                "circle-color": "#3a6b91",
+                "circle-stroke-color": P.labelHalo,
+                "circle-stroke-width": 1.6,
+              },
+            });
 
-          const diplomacyPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "diplomacy-point", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const directionLabel: Record<string, string> = {
-              inbound: "Inbound embassy",
-              outbound: "Outbound trade/contact",
-              treaty: "Treaty site",
-              hostage: "Hostage residence",
-            };
-            const subLine = [directionLabel[p.direction] || p.direction, p.polity].filter(Boolean).join(" · ");
-            const noteLine = p.one_line ? `<div style="margin-top:4px;">${escapeHtml(p.one_line)}</div>` : "";
-            diplomacyPopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(subLine)}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "diplomacy-point", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const diplomacyPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "diplomacy-point", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const directionLabel: Record<string, string> = {
+                inbound: "Inbound embassy",
+                outbound: "Outbound trade/contact",
+                treaty: "Treaty site",
+                hostage: "Hostage residence",
+              };
+              const subLine = [directionLabel[p.direction] || p.direction, p.polity].filter(Boolean).join(" · ");
+              const noteLine = p.one_line ? `<div style="margin-top:4px;">${escapeHtml(p.one_line)}</div>` : "";
+              diplomacyPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(subLine)}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "diplomacy-point", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 20: Textile + luxury craft geography (public/data/crafts.geojson) — purple dye
         // works, silk endpoints, linen and wool centers, amber working, pearl fisheries,
         // perfume, glass, bronze, and jewelry production (axis 16).
-        const crafts = await fetch("/data/crafts.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && crafts) {
-          map.addSource("crafts", { type: "geojson", data: crafts });
-          map.addLayer({
-            id: "crafts-point",
-            type: "circle",
-            source: "crafts",
-            paint: {
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
-              "circle-color": "#8a5a8f",
-              "circle-stroke-color": P.labelHalo,
-              "circle-stroke-width": 1.6,
-            },
-          });
+        registerThematic("crafts", async () => {
+          const crafts = await fetch("/data/crafts.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && crafts) {
+            map.addSource("crafts", { type: "geojson", data: crafts });
+            map.addLayer({
+              id: "crafts-point",
+              type: "circle",
+              source: "crafts",
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+                "circle-color": "#8a5a8f",
+                "circle-stroke-color": P.labelHalo,
+                "circle-stroke-width": 1.6,
+              },
+            });
 
-          const craftsPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "crafts-point", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const craftLabel: Record<string, string> = {
-              purple_dye: "Purple dye works",
-              silk: "Silk trade",
-              linen: "Linen weaving",
-              wool: "Wool production",
-              amber: "Amber working",
-              pearl: "Pearl fishery",
-              perfume: "Perfume production",
-              glass: "Glassmaking",
-              bronze: "Bronze working",
-              jewelry: "Jewelry / goldsmithing",
-            };
-            const noteLine = p.one_line ? `<div style="margin-top:4px;">${escapeHtml(p.one_line)}</div>` : "";
-            craftsPopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(craftLabel[p.craft] || p.craft || "")}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "crafts-point", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const craftsPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "crafts-point", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const craftLabel: Record<string, string> = {
+                purple_dye: "Purple dye works",
+                silk: "Silk trade",
+                linen: "Linen weaving",
+                wool: "Wool production",
+                amber: "Amber working",
+                pearl: "Pearl fishery",
+                perfume: "Perfume production",
+                glass: "Glassmaking",
+                bronze: "Bronze working",
+                jewelry: "Jewelry / goldsmithing",
+              };
+              const noteLine = p.one_line ? `<div style="margin-top:4px;">${escapeHtml(p.one_line)}</div>` : "";
+              craftsPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(craftLabel[p.craft] || p.craft || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "crafts-point", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 21: Correspondence networks (public/data/letters.geojson) — Pliny the Younger's
         // letter-writing network: his own villas as origin nodes, named correspondents as
         // recipient nodes, and route LineStrings for the best-documented exchanges (axis 19).
-        const letters = await fetch("/data/letters.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && letters) {
-          map.addSource("letters", { type: "geojson", data: letters });
+        registerThematic("letters", async () => {
+          const letters = await fetch("/data/letters.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && letters) {
+            map.addSource("letters", { type: "geojson", data: letters });
 
-          map.addLayer({
-            id: "letters-route-line",
-            type: "line",
-            source: "letters",
-            filter: ["==", ["geometry-type"], "LineString"],
-            paint: {
-              "line-color": "#5c7a3a",
-              "line-width": ["interpolate", ["linear"], ["zoom"], 3, 1.2, 8, 2.2],
-              "line-dasharray": [1.5, 1.5],
-              "line-opacity": 0.75,
-            },
-            layout: { "line-cap": "round", "line-join": "round" },
-          });
-          map.addLayer({
-            id: "letters-node-point",
-            type: "circle",
-            source: "letters",
-            filter: ["==", ["geometry-type"], "Point"],
-            paint: {
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
-              "circle-color": [
-                "match",
-                ["get", "node_type"],
-                "origin",
-                "#8b5a2b",
-                "#5c7a3a",
-              ],
-              "circle-stroke-color": P.labelHalo,
-              "circle-stroke-width": 1.6,
-            },
-          });
+            map.addLayer({
+              id: "letters-route-line",
+              type: "line",
+              source: "letters",
+              filter: ["==", ["geometry-type"], "LineString"],
+              paint: {
+                "line-color": "#5c7a3a",
+                "line-width": ["interpolate", ["linear"], ["zoom"], 3, 1.2, 8, 2.2],
+                "line-dasharray": [1.5, 1.5],
+                "line-opacity": 0.75,
+              },
+              layout: { "line-cap": "round", "line-join": "round" },
+            });
+            map.addLayer({
+              id: "letters-node-point",
+              type: "circle",
+              source: "letters",
+              filter: ["==", ["geometry-type"], "Point"],
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+                "circle-color": [
+                  "match",
+                  ["get", "node_type"],
+                  "origin",
+                  "#8b5a2b",
+                  "#5c7a3a",
+                ],
+                "circle-stroke-color": P.labelHalo,
+                "circle-stroke-width": 1.6,
+              },
+            });
 
-          const lettersPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          const onLettersNodeEnter = (e: any) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const subLine = p.node_type === "origin" ? "Pliny's own estate" : `Correspondent of Pliny the Younger`;
-            const noteLine = p.one_line ? `<div style="margin-top:4px;">${escapeHtml(p.one_line)}</div>` : "";
-            lettersPopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(subLine)}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          };
-          const onLettersLineEnter = (e: any) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const noteLine = p.note ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.note)}</div>` : "";
-            lettersPopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124;">
-                   <div style="font-weight: 600;">${escapeHtml(p.from || "")} &rarr; ${escapeHtml(p.to || "")}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          };
-          map.on("mouseenter", "letters-node-point", onLettersNodeEnter);
-          map.on("mouseleave", "letters-node-point", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          map.on("mouseenter", "letters-route-line", onLettersLineEnter);
-          map.on("mouseleave", "letters-route-line", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const lettersPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            const onLettersNodeEnter = (e: any) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const subLine = p.node_type === "origin" ? "Pliny's own estate" : `Correspondent of Pliny the Younger`;
+              const noteLine = p.one_line ? `<div style="margin-top:4px;">${escapeHtml(p.one_line)}</div>` : "";
+              lettersPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(subLine)}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            };
+            const onLettersLineEnter = (e: any) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const noteLine = p.note ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.note)}</div>` : "";
+              lettersPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124;">
+                     <div style="font-weight: 600;">${escapeHtml(p.from || "")} &rarr; ${escapeHtml(p.to || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            };
+            map.on("mouseenter", "letters-node-point", onLettersNodeEnter);
+            map.on("mouseleave", "letters-node-point", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            map.on("mouseenter", "letters-route-line", onLettersLineEnter);
+            map.on("mouseleave", "letters-route-line", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 22: Intellectual + educational centers (public/data/learning_117.geojson) —
         // Alexandria's Museion/Serapeum, Athens's four philosophy schools, and the rhetoric/law/
         // medical schools at Rhodes, Berytus, Nicopolis, Pergamon, Antioch, Massilia, Rome (axis 6c).
-        const learning = await fetch("/data/learning_117.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && learning) {
-          map.addSource("learning", { type: "geojson", data: learning });
-          map.addLayer({
-            id: "learning-point",
-            type: "circle",
-            source: "learning",
-            paint: {
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
-              "circle-color": "#3b4a7a",
-              "circle-stroke-color": P.labelHalo,
-              "circle-stroke-width": 1.6,
-            },
-          });
+        registerThematic("learning", async () => {
+          const learning = await fetch("/data/learning_117.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && learning) {
+            map.addSource("learning", { type: "geojson", data: learning });
+            map.addLayer({
+              id: "learning-point",
+              type: "circle",
+              source: "learning",
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+                "circle-color": "#3b4a7a",
+                "circle-stroke-color": P.labelHalo,
+                "circle-stroke-width": 1.6,
+              },
+            });
 
-          const learningPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "learning-point", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const categoryLabel: Record<string, string> = {
-              library: "Library",
-              philosophy_school: "Philosophy school",
-              rhetoric_school: "Rhetoric school",
-              law_school: "Law school",
-              medical_school: "Medical school",
-              scriptorium: "Scriptorium",
-            };
-            const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.one_line)}</div>` : "";
-            learningPopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(categoryLabel[p.category] || p.category || "")}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "learning-point", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const learningPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "learning-point", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const categoryLabel: Record<string, string> = {
+                library: "Library",
+                philosophy_school: "Philosophy school",
+                rhetoric_school: "Rhetoric school",
+                law_school: "Law school",
+                medical_school: "Medical school",
+                scriptorium: "Scriptorium",
+              };
+              const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.one_line)}</div>` : "";
+              learningPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(categoryLabel[p.category] || p.category || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "learning-point", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 23: Natural landmarks (public/data/landmarks_117.geojson) — volcanoes, sacred
         // mountains, sacred islands, sea-hazards, sacred springs, geological wonders, and named
         // lakes people knew and revered in 117 CE (axis 6d; lakes are board ticket [08-P2-7]).
-        const landmarks = await fetch("/data/landmarks_117.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && landmarks) {
-          map.addSource("landmarks", { type: "geojson", data: landmarks });
-          map.addLayer({
-            id: "landmarks-point",
-            type: "circle",
-            source: "landmarks",
-            paint: {
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
-              "circle-color": "#2e6b4f",
-              "circle-stroke-color": P.labelHalo,
-              "circle-stroke-width": 1.6,
-            },
-          });
+        registerThematic("landmarks", async () => {
+          const landmarks = await fetch("/data/landmarks_117.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && landmarks) {
+            map.addSource("landmarks", { type: "geojson", data: landmarks });
+            map.addLayer({
+              id: "landmarks-point",
+              type: "circle",
+              source: "landmarks",
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+                "circle-color": "#2e6b4f",
+                "circle-stroke-color": P.labelHalo,
+                "circle-stroke-width": 1.6,
+              },
+            });
 
-          const landmarksPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "landmarks-point", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const typeLabel: Record<string, string> = {
-              volcano: "Volcano",
-              sacred_mountain: "Sacred mountain",
-              sacred_island: "Sacred island",
-              sea_hazard: "Sea hazard",
-              sacred_spring: "Sacred spring",
-              wonder: "Geological wonder",
-              lake: "Lake",
-            };
-            const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.one_line)}</div>` : "";
-            landmarksPopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(typeLabel[p.type] || p.type || "")}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "landmarks-point", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const landmarksPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "landmarks-point", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const typeLabel: Record<string, string> = {
+                volcano: "Volcano",
+                sacred_mountain: "Sacred mountain",
+                sacred_island: "Sacred island",
+                sea_hazard: "Sea hazard",
+                sacred_spring: "Sacred spring",
+                wonder: "Geological wonder",
+                lake: "Lake",
+              };
+              const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.one_line)}</div>` : "";
+              landmarksPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(typeLabel[p.type] || p.type || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "landmarks-point", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 24: Client kingdoms + neighbors just outside the empire (public/data/
         // neighbors_117.geojson) — the political world beyond Rome's own borders (axis 5b).
-        const neighbors = await fetch("/data/neighbors_117.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && neighbors) {
-          map.addSource("neighbors", { type: "geojson", data: neighbors });
-          map.addLayer({
-            id: "neighbors-point",
-            type: "circle",
-            source: "neighbors",
-            paint: {
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 2, 4, 7, 7],
-              "circle-color": [
-                "match",
-                ["get", "relation_to_rome"],
-                "client", "#3a6ea5",
-                "ally", "#2e8f7a",
-                "trading_partner", "#b8862e",
-                "rival", "#a05a2c",
-                "enemy", "#8b2e2e",
-                "#6a6a6a",
-              ],
-              "circle-stroke-color": P.labelHalo,
-              "circle-stroke-width": 1.6,
-            },
-          });
+        registerThematic("neighbors", async () => {
+          const neighbors = await fetch("/data/neighbors_117.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && neighbors) {
+            map.addSource("neighbors", { type: "geojson", data: neighbors });
+            map.addLayer({
+              id: "neighbors-point",
+              type: "circle",
+              source: "neighbors",
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 2, 4, 7, 7],
+                "circle-color": [
+                  "match",
+                  ["get", "relation_to_rome"],
+                  "client", "#3a6ea5",
+                  "ally", "#2e8f7a",
+                  "trading_partner", "#b8862e",
+                  "rival", "#a05a2c",
+                  "enemy", "#8b2e2e",
+                  "#6a6a6a",
+                ],
+                "circle-stroke-color": P.labelHalo,
+                "circle-stroke-width": 1.6,
+              },
+            });
 
-          const neighborsPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "neighbors-point", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const relationLabel: Record<string, string> = {
-              client: "Client kingdom",
-              ally: "Ally",
-              trading_partner: "Trading partner",
-              rival: "Rival",
-              enemy: "Enemy",
-            };
-            const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.one_line)}</div>` : "";
-            neighborsPopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(relationLabel[p.relation_to_rome] || p.relation_to_rome || "")}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "neighbors-point", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const neighborsPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "neighbors-point", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const relationLabel: Record<string, string> = {
+                client: "Client kingdom",
+                ally: "Ally",
+                trading_partner: "Trading partner",
+                rival: "Rival",
+                enemy: "Enemy",
+              };
+              const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.one_line)}</div>` : "";
+              neighborsPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(relationLabel[p.relation_to_rome] || p.relation_to_rome || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "neighbors-point", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 25: Language belts (public/data/languages.geojson) — everyday spoken-language
         // geography in 117 CE, distinct from the Latin/Greek administrative split (axis 5a).
         // Soft translucent fills, deliberately drawn in this late phase so they layer on top of
         // roads/provinces/POIs without occluding anything a user is more likely to click on.
-        const languages = await fetch("/data/languages.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && languages) {
-          map.addSource("languages", { type: "geojson", data: languages });
-          map.addLayer({
-            id: "languages-fill",
-            type: "fill",
-            source: "languages",
-            paint: {
-              "fill-color": [
-                "match",
-                ["get", "id"],
-                "lang_latin", "#b0431a",
-                "lang_greek", "#3a6ea5",
-                "lang_punic", "#8b2e6e",
-                "lang_berber", "#a08a2e",
-                "lang_aramaic", "#2e8f7a",
-                "lang_egyptian", "#c9a227",
-                "lang_gaulish", "#5c8c3a",
-                "lang_brittonic", "#3a9a6a",
-                "lang_galatian", "#6a5f4a",
-                "lang_iberian_celtiberian", "#a05a2c",
-                "lang_aquitanian", "#8b5a2c",
-                "lang_illyrian", "#7a4a8c",
-                "lang_thracian", "#4a5a8c",
-                "#6a6a6a",
-              ],
-              "fill-opacity": 0.16,
-            },
-          });
-          map.addLayer({
-            id: "languages-line",
-            type: "line",
-            source: "languages",
-            paint: {
-              "line-color": [
-                "match",
-                ["get", "id"],
-                "lang_latin", "#b0431a",
-                "lang_greek", "#3a6ea5",
-                "lang_punic", "#8b2e6e",
-                "lang_berber", "#a08a2e",
-                "lang_aramaic", "#2e8f7a",
-                "lang_egyptian", "#c9a227",
-                "lang_gaulish", "#5c8c3a",
-                "lang_brittonic", "#3a9a6a",
-                "lang_galatian", "#6a5f4a",
-                "lang_iberian_celtiberian", "#a05a2c",
-                "lang_aquitanian", "#8b5a2c",
-                "lang_illyrian", "#7a4a8c",
-                "lang_thracian", "#4a5a8c",
-                "#6a6a6a",
-              ],
-              "line-width": 1,
-              "line-dasharray": [3, 2],
-              "line-opacity": 0.5,
-            },
-          });
+        registerThematic("languages", async () => {
+          const languages = await fetch("/data/languages.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && languages) {
+            map.addSource("languages", { type: "geojson", data: languages });
+            map.addLayer({
+              id: "languages-fill",
+              type: "fill",
+              source: "languages",
+              paint: {
+                "fill-color": [
+                  "match",
+                  ["get", "id"],
+                  "lang_latin", "#b0431a",
+                  "lang_greek", "#3a6ea5",
+                  "lang_punic", "#8b2e6e",
+                  "lang_berber", "#a08a2e",
+                  "lang_aramaic", "#2e8f7a",
+                  "lang_egyptian", "#c9a227",
+                  "lang_gaulish", "#5c8c3a",
+                  "lang_brittonic", "#3a9a6a",
+                  "lang_galatian", "#6a5f4a",
+                  "lang_iberian_celtiberian", "#a05a2c",
+                  "lang_aquitanian", "#8b5a2c",
+                  "lang_illyrian", "#7a4a8c",
+                  "lang_thracian", "#4a5a8c",
+                  "#6a6a6a",
+                ],
+                "fill-opacity": 0.16,
+              },
+            });
+            map.addLayer({
+              id: "languages-line",
+              type: "line",
+              source: "languages",
+              paint: {
+                "line-color": [
+                  "match",
+                  ["get", "id"],
+                  "lang_latin", "#b0431a",
+                  "lang_greek", "#3a6ea5",
+                  "lang_punic", "#8b2e6e",
+                  "lang_berber", "#a08a2e",
+                  "lang_aramaic", "#2e8f7a",
+                  "lang_egyptian", "#c9a227",
+                  "lang_gaulish", "#5c8c3a",
+                  "lang_brittonic", "#3a9a6a",
+                  "lang_galatian", "#6a5f4a",
+                  "lang_iberian_celtiberian", "#a05a2c",
+                  "lang_aquitanian", "#8b5a2c",
+                  "lang_illyrian", "#7a4a8c",
+                  "lang_thracian", "#4a5a8c",
+                  "#6a6a6a",
+                ],
+                "line-width": 1,
+                "line-dasharray": [3, 2],
+                "line-opacity": 0.5,
+              },
+            });
 
-          const languagesPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "languages-fill", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.one_line)}</div>` : "";
-            languagesPopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.family || "")}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "languages-fill", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const languagesPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "languages-fill", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.one_line)}</div>` : "";
+              languagesPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.family || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "languages-fill", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 26: Etruscan substrate (public/data/substrate.geojson) — pre-Roman Etruscan
         // cities, necropoleis, and sanctuaries still visible under Roman rule in 117 CE (axis 10b,
         // the first "historical substrate" culture layer). Ghosted markers with a dashed outline
         // per the brief's own styling note for substrate features, distinct from the solid-stroke
         // circles every other axis layer uses.
-        const substrate = await fetch("/data/substrate.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && substrate) {
-          map.addSource("substrate", { type: "geojson", data: substrate });
-          map.addLayer({
-            id: "substrate-point",
-            type: "circle",
-            source: "substrate",
-            paint: {
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3, 8, 6],
-              "circle-color": "#7a6a52",
-              "circle-opacity": 0.55,
-              "circle-stroke-color": "#7a6a52",
-              "circle-stroke-width": 1.4,
-              "circle-stroke-opacity": 0.9,
-            },
-          });
+        registerThematic("substrate", async () => {
+          const substrate = await fetch("/data/substrate.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && substrate) {
+            map.addSource("substrate", { type: "geojson", data: substrate });
+            map.addLayer({
+              id: "substrate-point",
+              type: "circle",
+              source: "substrate",
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3, 8, 6],
+                "circle-color": "#7a6a52",
+                "circle-opacity": 0.55,
+                "circle-stroke-color": "#7a6a52",
+                "circle-stroke-width": 1.4,
+                "circle-stroke-opacity": 0.9,
+              },
+            });
 
-          const substratePopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "substrate-point", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const noteLine = p.notes ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.notes)}</div>` : "";
-            const cultureLabel = p.culture
-              ? String(p.culture).split("_").map((w: string) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ")
-              : "";
-            substratePopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name_english || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(cultureLabel)} ${escapeHtml(p.type || "")}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "substrate-point", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const substratePopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "substrate-point", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const noteLine = p.notes ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.notes)}</div>` : "";
+              const cultureLabel = p.culture
+                ? String(p.culture).split("_").map((w: string) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ")
+                : "";
+              substratePopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name_english || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(cultureLabel)} ${escapeHtml(p.type || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "substrate-point", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 27: Asia's conventus centers (public/data/conventus_asia.geojson) — the province's
         // 13 assize/judicial-district capitals where the proconsul held circuit court (axis 8b).
-        const conventus = await fetch("/data/conventus_asia.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && conventus) {
-          map.addSource("conventus", { type: "geojson", data: conventus });
-          map.addLayer({
-            id: "conventus-point",
-            type: "circle",
-            source: "conventus",
-            paint: {
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
-              "circle-color": "#8a6d3b",
-              "circle-stroke-color": P.labelHalo,
-              "circle-stroke-width": 1.6,
-            },
-          });
+        registerThematic("conventus", async () => {
+          const conventus = await fetch("/data/conventus_asia.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && conventus) {
+            map.addSource("conventus", { type: "geojson", data: conventus });
+            map.addLayer({
+              id: "conventus-point",
+              type: "circle",
+              source: "conventus",
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+                "circle-color": "#8a6d3b",
+                "circle-stroke-color": P.labelHalo,
+                "circle-stroke-width": 1.6,
+              },
+            });
 
-          const conventusPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "conventus-point", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const noteLine = p.notes ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.notes)}</div>` : "";
-            conventusPopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">Conventus center · ${escapeHtml(p.province || "")}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "conventus-point", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const conventusPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "conventus-point", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const noteLine = p.notes ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.notes)}</div>` : "";
+              conventusPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">Conventus center · ${escapeHtml(p.province || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "conventus-point", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 28: Crop/agriculture zones (public/data/agriculture.geojson) — grain, olive-oil,
         // wine, and timber belts (axis 7a). Soft translucent fills, same visual family as the
         // Phase 25 language belts, colored by `commodity` rather than by language.
-        const agriculture = await fetch("/data/agriculture.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && agriculture) {
-          map.addSource("agriculture", { type: "geojson", data: agriculture });
-          const agricultureColors: any = [
-            "match",
-            ["get", "commodity"],
-            "grain", "#c9a227",
-            "olive_oil", "#5c8c3a",
-            "wine", "#8b2e6e",
-            "timber", "#4a5057",
-            "#6a6a6a",
-          ];
-          map.addLayer({
-            id: "agriculture-fill",
-            type: "fill",
-            source: "agriculture",
-            paint: {
-              "fill-color": agricultureColors,
-              "fill-opacity": 0.16,
-            },
-          });
-          map.addLayer({
-            id: "agriculture-line",
-            type: "line",
-            source: "agriculture",
-            paint: {
-              "line-color": agricultureColors,
-              "line-width": 1,
-              "line-dasharray": [3, 2],
-              "line-opacity": 0.5,
-            },
-          });
+        registerThematic("agriculture", async () => {
+          const agriculture = await fetch("/data/agriculture.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && agriculture) {
+            map.addSource("agriculture", { type: "geojson", data: agriculture });
+            const agricultureColors: any = [
+              "match",
+              ["get", "commodity"],
+              "grain", "#c9a227",
+              "olive_oil", "#5c8c3a",
+              "wine", "#8b2e6e",
+              "timber", "#4a5057",
+              "#6a6a6a",
+            ];
+            map.addLayer({
+              id: "agriculture-fill",
+              type: "fill",
+              source: "agriculture",
+              paint: {
+                "fill-color": agricultureColors,
+                "fill-opacity": 0.16,
+              },
+            });
+            map.addLayer({
+              id: "agriculture-line",
+              type: "line",
+              source: "agriculture",
+              paint: {
+                "line-color": agricultureColors,
+                "line-width": 1,
+                "line-dasharray": [3, 2],
+                "line-opacity": 0.5,
+              },
+            });
 
-          const commodityLabel: Record<string, string> = {
-            grain: "Grain belt",
-            olive_oil: "Olive-oil belt",
-            wine: "Wine region",
-            timber: "Timber zone",
-          };
-          const agriculturePopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "agriculture-fill", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.one_line)}</div>` : "";
-            agriculturePopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(commodityLabel[p.commodity] || p.commodity || "")}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "agriculture-fill", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const commodityLabel: Record<string, string> = {
+              grain: "Grain belt",
+              olive_oil: "Olive-oil belt",
+              wine: "Wine region",
+              timber: "Timber zone",
+            };
+            const agriculturePopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "agriculture-fill", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.one_line)}</div>` : "";
+              agriculturePopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(commodityLabel[p.commodity] || p.commodity || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "agriculture-fill", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 29: Housing typologies (public/data/housing_styles.geojson) — regional
         // house-building traditions in 117 CE (axis 9a). Same soft-fill visual family as
         // Phase 28 agriculture zones, colored by `typology` rather than by commodity.
-        const housing = await fetch("/data/housing_styles.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && housing) {
-          map.addSource("housing", { type: "geojson", data: housing });
-          const housingColors: any = [
-            "match",
-            ["get", "typology"],
-            "atrium_domus", "#a1442e",
-            "peristyle_house", "#8859a6",
-            "insula", "#1f6f9e",
-            "roundhouse", "#5c8c3a",
-            "trullo_mudbrick", "#b08d2e",
-            "cave_dwelling", "#7a5a3a",
-            "egyptian_mudbrick", "#c9a227",
-            "#6a6a6a",
-          ];
-          map.addLayer({
-            id: "housing-fill",
-            type: "fill",
-            source: "housing",
-            paint: {
-              "fill-color": housingColors,
-              "fill-opacity": 0.16,
-            },
-          });
-          map.addLayer({
-            id: "housing-line",
-            type: "line",
-            source: "housing",
-            paint: {
-              "line-color": housingColors,
-              "line-width": 1,
-              "line-dasharray": [3, 2],
-              "line-opacity": 0.5,
-            },
-          });
+        registerThematic("housing", async () => {
+          const housing = await fetch("/data/housing_styles.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && housing) {
+            map.addSource("housing", { type: "geojson", data: housing });
+            const housingColors: any = [
+              "match",
+              ["get", "typology"],
+              "atrium_domus", "#a1442e",
+              "peristyle_house", "#8859a6",
+              "insula", "#1f6f9e",
+              "roundhouse", "#5c8c3a",
+              "trullo_mudbrick", "#b08d2e",
+              "cave_dwelling", "#7a5a3a",
+              "egyptian_mudbrick", "#c9a227",
+              "#6a6a6a",
+            ];
+            map.addLayer({
+              id: "housing-fill",
+              type: "fill",
+              source: "housing",
+              paint: {
+                "fill-color": housingColors,
+                "fill-opacity": 0.16,
+              },
+            });
+            map.addLayer({
+              id: "housing-line",
+              type: "line",
+              source: "housing",
+              paint: {
+                "line-color": housingColors,
+                "line-width": 1,
+                "line-dasharray": [3, 2],
+                "line-opacity": 0.5,
+              },
+            });
 
-          const housingPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "housing-fill", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const noteLine = p.notes ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.notes)}</div>` : "";
-            housingPopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.regions || "")}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "housing-fill", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const housingPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "housing-fill", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const noteLine = p.notes ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.notes)}</div>` : "";
+              housingPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.regions || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "housing-fill", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 30: Cuisine regions (public/data/cuisine_regions.geojson) — regional food-culture
         // zones in 117 CE: bread grain, fish sauce, wine/oil vs. beer/fat, and two named single-
         // place moments (Cyrenaica's silphium extinction, Alexandria's spice gateway) (axis 9b).
-        const cuisine = await fetch("/data/cuisine_regions.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && cuisine) {
-          map.addSource("cuisine", { type: "geojson", data: cuisine });
-          const cuisineColors: any = [
-            "match",
-            ["get", "typology"],
-            "bread_barley", "#b08d2e",
-            "bread_spelt", "#c9a227",
-            "garum_heartland", "#3d6b8c",
-            "wine_oil_belt", "#7a1f1f",
-            "beer_fat_belt", "#5c8c3a",
-            "extinct_luxury", "#6a5f4a",
-            "spice_gateway", "#a05f2e",
-            "#6a6a6a",
-          ];
-          map.addLayer({
-            id: "cuisine-fill",
-            type: "fill",
-            source: "cuisine",
-            paint: { "fill-color": cuisineColors, "fill-opacity": 0.16 },
-          });
-          map.addLayer({
-            id: "cuisine-line",
-            type: "line",
-            source: "cuisine",
-            paint: { "line-color": cuisineColors, "line-width": 1, "line-dasharray": [3, 2], "line-opacity": 0.5 },
-          });
+        registerThematic("cuisine", async () => {
+          const cuisine = await fetch("/data/cuisine_regions.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && cuisine) {
+            map.addSource("cuisine", { type: "geojson", data: cuisine });
+            const cuisineColors: any = [
+              "match",
+              ["get", "typology"],
+              "bread_barley", "#b08d2e",
+              "bread_spelt", "#c9a227",
+              "garum_heartland", "#3d6b8c",
+              "wine_oil_belt", "#7a1f1f",
+              "beer_fat_belt", "#5c8c3a",
+              "extinct_luxury", "#6a5f4a",
+              "spice_gateway", "#a05f2e",
+              "#6a6a6a",
+            ];
+            map.addLayer({
+              id: "cuisine-fill",
+              type: "fill",
+              source: "cuisine",
+              paint: { "fill-color": cuisineColors, "fill-opacity": 0.16 },
+            });
+            map.addLayer({
+              id: "cuisine-line",
+              type: "line",
+              source: "cuisine",
+              paint: { "line-color": cuisineColors, "line-width": 1, "line-dasharray": [3, 2], "line-opacity": 0.5 },
+            });
 
-          const cuisinePopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "cuisine-fill", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const noteLine = p.notes ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.notes)}</div>` : "";
-            cuisinePopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.regions || "")}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "cuisine-fill", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const cuisinePopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "cuisine-fill", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const noteLine = p.notes ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.notes)}</div>` : "";
+              cuisinePopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.regions || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "cuisine-fill", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 31: Death ritual regions (public/data/death_rituals.geojson) — the cremation-to-
         // inhumation transition as it stood in 117 CE, still overwhelmingly cremation in the West,
         // always inhumation in Egypt/Judaea, just beginning to shift among Rome's elite (axis 9e).
-        const deathRituals = await fetch("/data/death_rituals.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && deathRituals) {
-          map.addSource("death-rituals", { type: "geojson", data: deathRituals });
-          const deathColors: any = [
-            "match",
-            ["get", "typology"],
-            "cremation_dominant", "#a05f2e",
-            "inhumation_persistent", "#2a7fb5",
-            "mixed_transitional", "#8859a6",
-            "#6a6a6a",
-          ];
-          map.addLayer({
-            id: "death-rituals-fill",
-            type: "fill",
-            source: "death-rituals",
-            paint: { "fill-color": deathColors, "fill-opacity": 0.16 },
-          });
-          map.addLayer({
-            id: "death-rituals-line",
-            type: "line",
-            source: "death-rituals",
-            paint: { "line-color": deathColors, "line-width": 1, "line-dasharray": [3, 2], "line-opacity": 0.5 },
-          });
+        registerThematic("death-rituals", async () => {
+          const deathRituals = await fetch("/data/death_rituals.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && deathRituals) {
+            map.addSource("death-rituals", { type: "geojson", data: deathRituals });
+            const deathColors: any = [
+              "match",
+              ["get", "typology"],
+              "cremation_dominant", "#a05f2e",
+              "inhumation_persistent", "#2a7fb5",
+              "mixed_transitional", "#8859a6",
+              "#6a6a6a",
+            ];
+            map.addLayer({
+              id: "death-rituals-fill",
+              type: "fill",
+              source: "death-rituals",
+              paint: { "fill-color": deathColors, "fill-opacity": 0.16 },
+            });
+            map.addLayer({
+              id: "death-rituals-line",
+              type: "line",
+              source: "death-rituals",
+              paint: { "line-color": deathColors, "line-width": 1, "line-dasharray": [3, 2], "line-opacity": 0.5 },
+            });
 
-          const deathPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "death-rituals-fill", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const noteLine = p.notes ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.notes)}</div>` : "";
-            deathPopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.regions || "")}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "death-rituals-fill", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const deathPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "death-rituals-fill", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const noteLine = p.notes ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.notes)}</div>` : "";
+              deathPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.regions || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "death-rituals-fill", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
         // Phase 32: Ethnic & cultural pockets (public/data/ethnic_pockets.geojson) — living, non-
         // Roman communities and identities still visible inside the empire's borders in 117 CE:
         // Druids, Berber tribes, Isaurian highlanders, Punic and Syriac speakers, and more (axis 5c).
-        const ethnicPockets = await fetch("/data/ethnic_pockets.geojson")
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null);
-        if (!cancelled && map && ethnicPockets) {
-          map.addSource("ethnic-pockets", { type: "geojson", data: ethnicPockets });
-          map.addLayer({
-            id: "ethnic-pockets-point",
-            type: "circle",
-            source: "ethnic-pockets",
-            paint: {
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
-              "circle-color": "#6a5f4a",
-              "circle-stroke-color": P.labelHalo,
-              "circle-stroke-width": 1.6,
-            },
-          });
+        registerThematic("ethnic-pockets", async () => {
+          const ethnicPockets = await fetch("/data/ethnic_pockets.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && ethnicPockets) {
+            map.addSource("ethnic-pockets", { type: "geojson", data: ethnicPockets });
+            map.addLayer({
+              id: "ethnic-pockets-point",
+              type: "circle",
+              source: "ethnic-pockets",
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+                "circle-color": "#6a5f4a",
+                "circle-stroke-color": P.labelHalo,
+                "circle-stroke-width": 1.6,
+              },
+            });
 
-          const ethnicGroupLabel: Record<string, string> = {
-            gauls_druids: "Gallic Druidic tradition",
-            gallic_identity: "Gallic identity & memory",
-            egyptian_priesthood: "Egyptian priesthood",
-            nabataean: "Nabataean community",
-            basque_vascones: "Vascones (Basque)",
-            berber_tribes: "Berber tribe",
-            isaurian: "Isaurian highlanders",
-            punic_speakers: "Punic-speaking community",
-            syriac_aramaic: "Syriac/Aramaic-speaking community",
-            thracian_bessi: "Thracian Bessi",
-            sardinian_ilienses: "Sardinian Ilienses",
-          };
-          const ethnicPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
-          map.on("mouseenter", "ethnic-pockets-point", (e) => {
-            if (!map) return;
-            map.getCanvas().style.cursor = "pointer";
-            const f = e.features?.[0];
-            if (!f) return;
-            const p: any = f.properties || {};
-            const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.one_line)}</div>` : "";
-            ethnicPopup
-              .setLngLat(e.lngLat)
-              .setHTML(
-                `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
-                   <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                   <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(ethnicGroupLabel[p.group] || p.group || "")}</div>
-                   ${noteLine}
-                 </div>`,
-              )
-              .addTo(map);
-          });
-          map.on("mouseleave", "ethnic-pockets-point", () => {
-            if (map) map.getCanvas().style.cursor = "";
-          });
-          kick();
-        }
+            const ethnicGroupLabel: Record<string, string> = {
+              gauls_druids: "Gallic Druidic tradition",
+              gallic_identity: "Gallic identity & memory",
+              egyptian_priesthood: "Egyptian priesthood",
+              nabataean: "Nabataean community",
+              basque_vascones: "Vascones (Basque)",
+              berber_tribes: "Berber tribe",
+              isaurian: "Isaurian highlanders",
+              punic_speakers: "Punic-speaking community",
+              syriac_aramaic: "Syriac/Aramaic-speaking community",
+              thracian_bessi: "Thracian Bessi",
+              sardinian_ilienses: "Sardinian Ilienses",
+            };
+            const ethnicPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "ethnic-pockets-point", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.one_line)}</div>` : "";
+              ethnicPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(ethnicGroupLabel[p.group] || p.group || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "ethnic-pockets-point", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
 
-        // Apply any persisted Layers-panel visibility (all groups default visible).
+        // Apply the persisted Layers-panel state now that every group has a loader registered:
+        // base groups get their visibility set, and any thematic group a returning visitor left
+        // switched on gets lazily loaded here (registerThematic above already starts most of
+        // those; this is the backstop that catches the rest).
         applyAllLayers();
       })(); }));
     })();

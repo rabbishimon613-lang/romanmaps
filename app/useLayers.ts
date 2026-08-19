@@ -139,12 +139,91 @@ function applyGroupToMap(map: MLMap, group: LayerGroupId, visible: boolean) {
   }
 }
 
-/** Call once the map has finished adding its layers (e.g. end of Map.tsx's load handler) to apply any persisted hidden groups. */
+/* ---------------------------------------------------------------------------------------------
+ * Lazy overlay loading — [11-P0-2].
+ *
+ * Every thematic group is OFF on first load (invariant 0), yet Map.tsx used to fetch, parse and
+ * add all ~27 of their GeoJSON files on every cold load, only to immediately set them to
+ * `visibility: none`. Map.tsx now hands each group's "fetch + addSource + addLayer + wire
+ * handlers" body to `registerLayerLoader` instead of running it, and the group's data is only
+ * pulled the first time something actually needs the layers on the map: the user switching the
+ * group on, or a returning visitor whose persisted state already has it on.
+ *
+ * The same pattern app/PeopleMarkers.tsx already uses for its HTML people markers, applied to
+ * the native MapLibre layers.
+ * ------------------------------------------------------------------------------------------- */
+
+type LayerLoader = () => Promise<void>;
+const loaders = new Map<LayerGroupId, LayerLoader>();
+const loadedGroups = new Set<LayerGroupId>();
+const inflightLoads = new Map<LayerGroupId, Promise<void>>();
+
+/** Re-apply every group's visibility without triggering any loading. Runs after a loader
+ * finishes because a loader adds its layers with MapLibre's default `visibility: visible`, and
+ * because one file can back two groups (lines.geojson carries both frontier and aqueduct lines) —
+ * so the group that wasn't asked for must be pushed back to hidden. */
+function applyVisibilityOnly(map: MLMap) {
+  const state = getSnapshot();
+  for (const g of LAYER_GROUPS) applyGroupToMap(map, g.id, state[g.id]);
+}
+
+/** Load a group's layers onto the map if they aren't there yet. Idempotent and de-duped: a
+ * group that has already loaded (or is mid-flight) never fetches twice, so toggling a layer off
+ * and back on is free. */
+export function ensureLayerLoaded(group: LayerGroupId): Promise<void> {
+  if (loadedGroups.has(group)) return Promise.resolve();
+  const inflight = inflightLoads.get(group);
+  if (inflight) return inflight;
+  const loader = loaders.get(group);
+  // No loader registered yet — Map.tsx registers them partway through its load chain, so a very
+  // early toggle can land here. `registerLayerLoader` re-checks the group's state on arrival and
+  // loads it then, which covers that case.
+  if (!loader) return Promise.resolve();
+  const p = loader()
+    .then(() => {
+      loadedGroups.add(group);
+    })
+    .catch(() => {
+      // A failed fetch shouldn't wedge the group forever — leaving it out of `loadedGroups`
+      // means the next toggle-on retries.
+    })
+    .finally(() => {
+      inflightLoads.delete(group);
+      const map = (window as any).__map as MLMap | undefined;
+      if (map) applyVisibilityOnly(map);
+    });
+  inflightLoads.set(group, p);
+  return p;
+}
+
+/** Map.tsx calls this once per thematic group instead of running that group's phase eagerly. */
+export function registerLayerLoader(group: LayerGroupId, loader: LayerLoader) {
+  loaders.set(group, loader);
+  // The group may already be switched on — persisted from a previous session, or toggled by the
+  // user while the base map was still loading. Either way it needs its data now.
+  if (getSnapshot()[group]) void ensureLayerLoaded(group);
+}
+
+/** Drop every registration. Called by Map.tsx when it (re)creates the map, so a remount doesn't
+ * inherit loaders pointing at a destroyed map or "already loaded" flags for layers that no
+ * longer exist. */
+export function resetLayerLoaders() {
+  loaders.clear();
+  loadedGroups.clear();
+  inflightLoads.clear();
+}
+
+/** Call once the map has finished adding its layers (e.g. end of Map.tsx's load handler) to
+ * apply any persisted hidden groups — and to lazily load any persisted-ON thematic group whose
+ * layers aren't on the map yet. */
 export function applyAllLayers() {
   const map = (window as any).__map as MLMap | undefined;
   if (!map) return;
   const state = getSnapshot();
-  for (const g of LAYER_GROUPS) applyGroupToMap(map, g.id, state[g.id]);
+  for (const g of LAYER_GROUPS) {
+    if (state[g.id]) void ensureLayerLoaded(g.id);
+    applyGroupToMap(map, g.id, state[g.id]);
+  }
 }
 
 export function toggleLayer(group: LayerGroupId) {
@@ -160,6 +239,8 @@ export function toggleLayer(group: LayerGroupId) {
   }
   const map = (window as any).__map as MLMap | undefined;
   if (map) applyGroupToMap(map, group, current[group]);
+  // Switching a thematic group on for the first time is what pulls its data down.
+  if (current[group]) void ensureLayerLoaded(group);
   listeners.forEach((l) => l());
 }
 
