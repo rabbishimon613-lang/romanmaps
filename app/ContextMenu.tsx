@@ -35,6 +35,7 @@ function nearestPlace(places: Place[], lng: number, lat: number): { place: Place
  * useDirections.ts store — [07-P1-1]), "Measure distance" (hands off to the shared ruler store). */
 export default function ContextMenu() {
   const [menu, setMenu] = useState<MenuPoint | null>(null);
+  const [holdPoint, setHoldPoint] = useState<{ x: number; y: number } | null>(null);
   const menuRef = useRef<HTMLDivElement>(null);
   const rulerActive = useRulerState().active;
   const rulerActiveRef = useRef(rulerActive);
@@ -70,14 +71,19 @@ export default function ContextMenu() {
         touchTimer = null;
       }
       touchStart = null;
+      setHoldPoint(null);
     }
     function onTouchStart(e: TouchEvent) {
-      if (e.touches.length !== 1 || !map) return;
+      if (e.touches.length !== 1 || !map || rulerActiveRef.current) return;
       const t = e.touches[0];
       const rect = map.getCanvasContainer().getBoundingClientRect();
       const point = { x: t.clientX - rect.left, y: t.clientY - rect.top };
       touchStart = point;
+      // [04-P0-2] Explicit hold feedback — a growing ring at the touch point, timed to the same
+      // LONG_PRESS_MS the timer itself uses, so the fill finishing lines up with the menu opening.
+      setHoldPoint(point);
       touchTimer = setTimeout(() => {
+        setHoldPoint(null);
         if (!map || rulerActiveRef.current) return;
         const lngLat = map.unproject([point.x, point.y]);
         setMenu({ x: point.x, y: point.y, lng: lngLat.lng, lat: lngLat.lat });
@@ -216,36 +222,59 @@ export default function ContextMenu() {
     setDirectionsDestination([point.lng, point.lat], await labelFor(point));
   }
 
-  if (!menu) return null;
-
   // Clamp so the menu never renders off-screen — matters most on narrow mobile viewports where a
   // long-press near the right/bottom edge is common.
   const MENU_WIDTH = 220;
   const MENU_HEIGHT = 168;
-  const left = typeof window !== "undefined" ? Math.min(menu.x, window.innerWidth - MENU_WIDTH - 8) : menu.x;
-  const top = typeof window !== "undefined" ? Math.min(menu.y, window.innerHeight - MENU_HEIGHT - 8) : menu.y;
+  const left = menu && typeof window !== "undefined" ? Math.min(menu.x, window.innerWidth - MENU_WIDTH - 8) : menu?.x;
+  const top = menu && typeof window !== "undefined" ? Math.min(menu.y, window.innerHeight - MENU_HEIGHT - 8) : menu?.y;
 
   return (
-    <div
-      ref={menuRef}
-      style={{
-        position: "absolute",
-        left,
-        top,
-        zIndex: 10,
-        background: "var(--surface)",
-        borderRadius: 8,
-        boxShadow: "var(--shadow-2)",
-        padding: "6px 0",
-        minWidth: 220,
-        transform: "translate(-6px, -6px)",
-      }}
-    >
-      <MenuItem label="What's here?" onClick={() => onWhatsHere(menu)} />
-      <MenuItem label="Directions from here" onClick={() => onDirectionsFromHere(menu)} />
-      <MenuItem label="Directions to here" onClick={() => onDirectionsToHere(menu)} />
-      <MenuItem label="Measure distance" onClick={() => onMeasureFromHere(menu)} />
-    </div>
+    <>
+      {holdPoint && (
+        <div
+          aria-hidden="true"
+          style={{
+            position: "absolute",
+            left: holdPoint.x,
+            top: holdPoint.y,
+            width: 44,
+            height: 44,
+            marginLeft: -22,
+            marginTop: -22,
+            borderRadius: "50%",
+            border: "2px solid var(--accent)",
+            background: "var(--accent-bg)",
+            opacity: 0.85,
+            zIndex: 9,
+            pointerEvents: "none",
+            animation: "long-press-ring 550ms ease-out",
+          }}
+        />
+      )}
+      {menu && (
+        <div
+          ref={menuRef}
+          style={{
+            position: "absolute",
+            left,
+            top,
+            zIndex: 10,
+            background: "var(--surface)",
+            borderRadius: 8,
+            boxShadow: "var(--shadow-2)",
+            padding: "6px 0",
+            minWidth: 220,
+            transform: "translate(-6px, -6px)",
+          }}
+        >
+          <MenuItem label="What's here?" onClick={() => onWhatsHere(menu)} />
+          <MenuItem label="Directions from here" onClick={() => onDirectionsFromHere(menu)} />
+          <MenuItem label="Directions to here" onClick={() => onDirectionsToHere(menu)} />
+          <MenuItem label="Measure distance" onClick={() => onMeasureFromHere(menu)} />
+        </div>
+      )}
+    </>
   );
 }
 

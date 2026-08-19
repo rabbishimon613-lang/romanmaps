@@ -110,6 +110,15 @@ textarea:focus-visible {
 .maplibregl-popup-anchor-right .maplibregl-popup-tip { border-left-color: var(--surface) !important; }
 .maplibregl-popup-close-button { color: var(--text-2) !important; }
 
+/* [04-P0-2] Long-press hold ring — grows from a small dot to full size over the same 550ms as the
+   touch-hold timer in ContextMenu.tsx, giving mobile users explicit feedback that a hold is being
+   recognized (matches Google Maps mobile's own "What's here?" affordance). Covered by the
+   prefers-reduced-motion block below like every other animation on the site. */
+@keyframes long-press-ring {
+  from { transform: scale(0.3); opacity: 0.2; }
+  to { transform: scale(1); opacity: 0.85; }
+}
+
 /* [05-P0-3] Honour prefers-reduced-motion — collapses every CSS transition/animation on the site
    (panel slides, sheet drags, hint fades, etc.) to effectively instant. MapLibre's own camera
    flyTo/easeTo calls aren't CSS and need the separate JS-side guard in app/reducedMotion.ts. */
