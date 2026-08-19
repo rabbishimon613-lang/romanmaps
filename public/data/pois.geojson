@@ -4685,10 +4685,11 @@
         "built": 105,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Throp's fortlet sat on a spur above the Poltross Burn, its square turf-and-stone ramparts enclosing barely a quarter of a hectare. Like its sister post at Haltwhistle Burn, its whole purpose was watching a single river crossing on the Stanegate road, decades before Hadrian's Wall's own milecastles took over the job a few hundred meters to the north.",
+        "notes": "Throp's fortlet sat on a spur above the Poltross Burn, its square turf-and-stone ramparts enclosing barely a quarter of a hectare. Like its sister post at Haltwhistle Burn, its whole purpose was watching a single river crossing on the Stanegate road, decades before Hadrian's Wall's own milecastles took over the job a few hundred meters to the north. F. G. Simpson excavated the fortlet for the Cumberland and Westmorland Antiquarian and Archaeological Society in 1910, uncovering timber gateways and a paved interior. Pottery from the dig showed it was first garrisoned during the building of Hadrian's Wall, then briefly reoccupied in the 4th century.",
         "sources": [
           "https://historicengland.org.uk/listing/the-list/list-entry/1010611",
-          "https://ancientmonuments.uk/108826-throp-roman-fortlet-upper-denton"
+          "https://ancientmonuments.uk/108826-throp-roman-fortlet-upper-denton",
+          "Transactions of the Cumberland and Westmorland Antiquarian and Archaeological Society, n.s. vol. 13 (1913)"
         ],
         "confidence": "low"
       }
@@ -5254,9 +5255,10 @@
         "built": 105,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Rusidava held the southern stretch of the Limes Alutanus where the Olt valley opens onto the Wallachian plain, part of the same wave of fort-building that followed Trajan's conquest of Dacia. Its precise foundation year is not pinned down as tightly as its neighbors up the valley, but it belongs to the same early Trajanic chain along the river.",
+        "notes": "Rusidava held the southern stretch of the Limes Alutanus where the Olt valley opens onto the Wallachian plain, part of the same wave of fort-building that followed Trajan's conquest of Dacia. Its precise foundation year is not pinned down as tightly as its neighbors up the valley, but it belongs to the same early Trajanic chain along the river. The 4th-century Tabula Peutingeriana names Rusidava directly, placing it on the Olt valley road 24 Roman miles from Acidava and 14 miles from Pons Aluti — official confirmation of its place in the empire's Dacian road network.",
         "sources": [
-          "https://en.wikipedia.org/wiki/Rusidava_(castra)"
+          "https://en.wikipedia.org/wiki/Rusidava_(castra)",
+          "Tabula Peutingeriana, Segment VII"
         ],
         "confidence": "low"
       }
@@ -6580,10 +6582,12 @@
         "built": -50,
         "destroyed": 180,
         "extant_117ce": true,
-        "notes": "Ships loaded at the nearby port of Luna carried this white and blue-grey marble to build the Pantheon, Trajan's Column, and dozens of other monuments across the capital. Large-scale quarrying began under Augustus and never really stopped for the next two centuries. More marble has come out of these Apuan Alps than any other quarry district on Earth.",
+        "notes": "Ships loaded at the nearby port of Luna carried this white and blue-grey marble to build the Pantheon, Trajan's Column, and dozens of other monuments across the capital. Large-scale quarrying began under Augustus and never really stopped for the next two centuries. More marble has come out of these Apuan Alps than any other quarry district on Earth. Each of the 19 marble drums forming Trajan's Column's shaft weighed close to 32 tons, and masons shipped roughly 1,100 tons of dressed Luna marble downriver to Rome to build that single monument.",
         "sources": [
           "https://oxrep.classics.ox.ac.uk/docs/Stone_Quarries_Database.pdf",
-          "https://www.fum.it/en/blog-en/marble-stories/carrara-marble-quarries-origin-processing-architecture/"
+          "https://www.fum.it/en/blog-en/marble-stories/carrara-marble-quarries-origin-processing-architecture/",
+          "Plin. NH 36.135",
+          "McMaster University Trajan's Column digital edition, Introductory Essays"
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carrara_-_Cave_di_marmo.JPG?width=800",
@@ -6985,7 +6989,7 @@
         "built": 1,
         "destroyed": 250,
         "extant_117ce": true,
-        "notes": "Stone-lined evaporation tanks stretching over half a mile of the ancient Vigo coastline made this the most sophisticated salt-works excavated anywhere in Roman Galicia. Southern Galicia holds a denser concentration of confirmed Roman salinae than any other stretch of the empire's Atlantic coast. Production here ran through the first three centuries CE before the marsh reclaimed the site.",
+        "notes": "Stone-lined evaporation tanks stretching over half a mile of the ancient Vigo coastline made this the most sophisticated salt-works excavated anywhere in Roman Galicia. Southern Galicia holds a denser concentration of confirmed Roman salinae than any other stretch of the empire's Atlantic coast. Production here ran through the first three centuries CE before the marsh reclaimed the site. Workers uncovered the saltworks by accident in 1998 while building a health center in Vigo. The site fed the region's fish-salting industry, producing salt for garum and salsamenta as Atlantic Iberia's salted-fish trade expanded through the 1st to 3rd centuries.",
         "sources": [
           "https://journalofromanarchaeology.com/wp-content/uploads/2020/03/JRA30_14_BraisCurras.pdf",
           "https://es.wikipedia.org/wiki/Centro_Arqueol%C3%B3gico_de_Salinae"
@@ -9114,10 +9118,11 @@
         "built": -202,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "Scipio Africanus finally beat Hannibal on African soil, breaking Carthage's war elephants with disciplined gaps in the Roman line and finishing the fight with Numidian cavalry. The defeat ended the Second Punic War and Carthage's status as a great power for good. Hannibal survived and fled into exile. The battle is often staged as ancient history's classic general-versus-general showdown.",
+        "notes": "Scipio Africanus finally beat Hannibal on African soil, breaking Carthage's war elephants with disciplined gaps in the Roman line and finishing the fight with Numidian cavalry. The defeat ended the Second Punic War and Carthage's status as a great power for good. Hannibal survived and fled into exile. The battle is often staged as ancient history's classic general-versus-general showdown. Polybius recorded that Hannibal massed more than 80 war elephants at the front of his line, backed by 12,000 mercenary infantry. Scipio broke from Rome's standard checkerboard formation and arranged his maniples in open lanes, funneling the elephant charge harmlessly through to his rear ranks.",
         "sources": [
           "https://en.wikipedia.org/wiki/Battle_of_Zama",
-          "https://www.britannica.com/event/Battle-of-Zama-Roman-Carthaginian-history"
+          "https://www.britannica.com/event/Battle-of-Zama-Roman-Carthaginian-history",
+          "Polyb. Hist. 15.11-12"
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cornelis_Cort_-_The_Battle_of_Zama_-_1990.563_-_Art_Institute_of_Chicago.jpg?width=800",
