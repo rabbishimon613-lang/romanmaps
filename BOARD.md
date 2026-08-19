@@ -732,7 +732,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       build`, both clean.
 - [ ] `[13-P0-3]` **`image-fallback`** `illustrate` — Static map thumbnail for the 145 places
       with no image.
-- [ ] `[11-P0-2]` **`lazy-overlays`** `polish` — Fetch a thematic layer's data on first enable.
+- [~] `[11-P0-2]` **`lazy-overlays`** `polish` — claimed by cloud shift 34, 2026-08-19 12:35 UTC.
+      Fetch a thematic layer's data on first enable.
 - [x] `[01-P0-3]` **`cluster-expand`** `polish` — Already implemented, just never marked —
       found and closed 2026-08-19 by cloud shift 32. `PoiMarkers.tsx`'s cluster badges have
       carried a click handler that `fitBounds`s to every member's coordinates (capped at
