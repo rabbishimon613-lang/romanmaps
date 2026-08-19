@@ -1126,6 +1126,309 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2545,
+          41.1189
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_tarraco",
+        "category": "senator_hometown",
+        "name": "Tarragona",
+        "one_line": "This city was the hometown of Lucius Licinius Sura, Trajan's closest confidant, who held an exceptional three consulships and advised the emperor through the Dacian Wars.",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Tarragona, Spain",
+        "extant_117ce": true,
+        "notes": "Sura's third consulship, in 107 CE, was a mark of favor almost unheard of outside the imperial family itself. Martial and Pliny the Younger both counted him as a personal friend, and Cassius Dio credited him with unmatched influence over Trajan.",
+        "sources": [
+          "Cassius Dio, Roman History 68.15",
+          "Oxford Classical Dictionary, s.v. Licinius Sura, Lucius",
+          "Pliny, Epistulae 4.30, 7.27"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0852,
+          45.8081
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_comum",
+        "category": "senator_hometown",
+        "name": "Como",
+        "one_line": "This town was the hometown of Pliny the Younger, consul in 100 CE and later Trajan's special legate to Bithynia-Pontus, who called it 'my own Comum' in his letters.",
+        "province": "Italia",
+        "modern_location": "Como, Italy",
+        "extant_117ce": true,
+        "notes": "An inscription originally set over the baths Pliny funded at Comum, later reused in Milan's Sant'Ambrogio, records his full career and the roughly 1.87 million sesterces he left the city for civic benefactions.",
+        "sources": [
+          "Pliny, Epistulae 1.8, 4.13",
+          "CIL V 5262",
+          "Pliny, Panegyricus (delivered on his consulship, 100 CE)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.6167,
+          41.4333
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_saepinum_priscus",
+        "category": "senator_hometown",
+        "name": "Sepino",
+        "one_line": "This Samnite town was the hometown of Lucius Neratius Priscus, head of the Proculian school of law, suffect consul in 97 CE, and a jurist on Hadrian's advisory council.",
+        "province": "Italia",
+        "modern_location": "Sepino, Italy",
+        "extant_117ce": true,
+        "notes": "Priscus governed Germania Inferior and Pannonia and sat on Hadrian's council into the 130s. His juristic writings, the Regulae and Membrana, survive only in excerpts quoted by the later Digest.",
+        "sources": [
+          "Oxford Classical Dictionary, s.v. Neratius Priscus, Lucius",
+          "Wikipedia, s.v. Lucius Neratius Priscus"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.6167,
+          41.4333
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_saepinum_marcellus",
+        "category": "senator_hometown",
+        "name": "Sepino",
+        "one_line": "This Samnite town also produced Lucius Neratius Marcellus, brother of the jurist Priscus, who governed Roman Britain as Trajan's consular legate around 103 CE.",
+        "province": "Italia",
+        "modern_location": "Sepino, Italy",
+        "extant_117ce": true,
+        "notes": "A military discharge diploma found near Caerleon dates Marcellus's tenure as governor of Britain precisely to 19 January 103. His childless uncle, Marcus Hirrius Fronto Neratius Pansa, had adopted him.",
+        "sources": [
+          "roman-britain.co.uk, s.v. Lucius Neratius Marcellus",
+          "Roman military discharge diploma, Caerleon, dated 19 January 103"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9897,
+          42.6398
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_volsinii",
+        "category": "senator_hometown",
+        "name": "Bolsena",
+        "one_line": "This town was the hometown of Aulus Cornelius Palma Frontonianus, who reached a second consulship in 109 CE as Trajan's reward for annexing Nabataea as the province of Arabia.",
+        "province": "Italia",
+        "modern_location": "Bolsena, Italy",
+        "extant_117ce": true,
+        "notes": "Palma also governed Hispania Tarraconensis and Syria. Hadrian, wary of his standing, had him executed in 118 as one of four ex-consuls purged at the start of the new reign.",
+        "sources": [
+          "Oxford Classical Dictionary, s.v. Cornelius Palma Frontonianus, Aulus",
+          "Historia Augusta, Hadrian 7"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.7133,
+          36.8969
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_attaleia",
+        "category": "senator_hometown",
+        "name": "Antalya",
+        "one_line": "This Pamphylian city is the disputed hometown of Gaius Julius Cornutus Tertullus, suffect consul in 100 CE alongside Pliny the Younger, who died in office governing Africa in 117.",
+        "province": "Lycia et Pamphylia",
+        "modern_location": "Antalya, Turkey",
+        "extant_117ce": true,
+        "notes": "The Oxford Classical Dictionary places Cornutus Tertullus at Attaleia, while Ronald Syme argued from his career inscription's dedicator that he actually came from neighboring Perge instead. Both are real, specific, competing identifications, not a vague guess.",
+        "sources": [
+          "Oxford Classical Dictionary, s.v. Iulius Cornutus Tertullus, Gaius",
+          "Journal of Roman Studies, \"Cornutus Tertullus and the Plancii of Perge\""
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8833,
+          44.2856
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_faventia_quietus",
+        "category": "senator_hometown",
+        "name": "Faenza",
+        "one_line": "This town also produced Titus Avidius Quietus, suffect consul in 93 CE and governor of Britain under Trajan, father of the already-mapped consul Gaius Avidius Nigrinus.",
+        "province": "Italia",
+        "modern_location": "Faenza, Italy",
+        "extant_117ce": true,
+        "notes": "Quietus was an intimate friend of the Stoic martyr Thrasea Paetus and later of Plutarch, who dedicated a treatise to him. He governed Britain roughly 98 to 101 CE.",
+        "sources": [
+          "Wikipedia, s.v. Titus Avidius Quietus",
+          "List of governors of Roman Britain (Wikipedia)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.3833,
+          40.6333
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_volceii",
+        "category": "senator_hometown",
+        "name": "Buccino",
+        "one_line": "This Lucanian town was the hometown of Gaius Bruttius Praesens, the first of his family to reach the consulship, who commanded a legion in Trajan's Parthian War.",
+        "province": "Italia",
+        "modern_location": "Buccino, Italy",
+        "extant_117ce": true,
+        "notes": "Praesens commanded Legio VI Ferrata during Trajan's Parthian campaign of 114-115 and was governing Cilicia when Trajan died at nearby Selinus in August 117. Pliny the Younger addressed him directly as a Lucanian.",
+        "sources": [
+          "Pliny, Epistulae 7.3",
+          "Wikipedia, s.v. Gaius Bruttius Praesens Lucius Fulvius Rusticus"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1734,
+          41.3851
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_barcino",
+        "category": "senator_hometown",
+        "name": "Barcelona",
+        "one_line": "This city was the hometown of Lucius Minicius Natalis, who governed Numidia and reached the suffect consulship in 106 CE after winning decorations in Trajan's Dacian Wars.",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Barcelona, Spain",
+        "extant_117ce": true,
+        "notes": "An honorific monument to Natalis's son, set up in Barcino by the colonia of Carthage, identifies the city as the family's hometown, where Natalis later served as civic patron.",
+        "sources": [
+          "Werner Eck, \"Das Ehrenmonument der Colonia Carthago fur L. Minicius Natalis Quadronius Verus in seiner Heimatstadt Barcino\"",
+          "Wikipedia, s.v. Lucius Minicius Natalis"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.0392,
+          37.4425
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_italica_traianus",
+        "category": "senator_hometown",
+        "name": "Santiponce",
+        "one_line": "This Baetican colony was the hometown of Trajan himself, who reached the suffect consulship in 91 CE and governed Germania Superior before his acclamation as emperor in 98.",
+        "province": "Baetica",
+        "modern_location": "Santiponce, Spain",
+        "extant_117ce": true,
+        "notes": "Trajan's own father, also named Marcus Ulpius Traianus, had likewise reached the consulship and governed Syria from the same hometown a generation earlier.",
+        "sources": [
+          "Epitome de Caesaribus 13.1",
+          "Cassius Dio, Roman History 68.4",
+          "Oxford Classical Dictionary, s.v. Trajan"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.0392,
+          37.4425
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_italica_hadrianus",
+        "category": "senator_hometown",
+        "name": "Santiponce",
+        "one_line": "This same colony is the disputed birthplace of Hadrian, who reached the suffect consulship in 108 CE and held the legateship of Syria when Trajan died in August 117.",
+        "province": "Baetica",
+        "modern_location": "Santiponce, Spain",
+        "extant_117ce": true,
+        "notes": "The Historia Augusta states Hadrian was born in Rome, yet the same source also quotes his own autobiography claiming Italica, his father's hometown, instead. Most modern scholarship favors Italica.",
+        "sources": [
+          "Historia Augusta, Hadrian 1.3",
+          "Wikipedia, s.v. Hadrian"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.8836,
+          40.3736
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_apamea",
+        "category": "senator_hometown",
+        "name": "Mudanya",
+        "one_line": "This Bithynian city is the scholarly-inferred hometown of Lucius Catilius Severus, who commanded Trajan's Cappadocian frontier and became consul again in 120 alongside the future emperor Antoninus Pius.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "Mudanya, Turkey",
+        "extant_117ce": true,
+        "notes": "Catilius Severus reached his first suffect consulship in 110 CE. Hadrian promoted him within weeks of Trajan's death to succeed himself as legate of Syria. The Bithynian origin rests on inference from his names rather than a direct inscription, so it is marked accordingly.",
+        "sources": [
+          "Wikipedia, s.v. Lucius Catilius Severus",
+          "R. Syme, discussion of Catilius Severus's Bithynian origins in scholarship on the career of Arrian"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
