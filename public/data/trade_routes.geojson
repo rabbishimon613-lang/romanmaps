@@ -291,6 +291,244 @@
           "https://en.wikipedia.org/wiki/Aquileia"
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            29.907914,
+            31.198245
+          ],
+          [
+            14.121,
+            40.826
+          ],
+          [
+            12.2911,
+            41.755
+          ],
+          [
+            12.257,
+            41.778
+          ]
+        ]
+      },
+      "properties": {
+        "id": "route_grain_alexandria_rome",
+        "name": "Alexandria-Rome grain route",
+        "commodity": "grain",
+        "direction": "Alexandria -> Puteoli / Ostia -> Portus",
+        "notes": "Egypt was Rome's biggest single grain source - Josephus says it fed the city for four months of the year. The Alexandria run took 10-20 days depending on wind, and the fleet's arrival at Puteoli was a public spectacle: Seneca describes crowds straining to spot the lead ships by their distinctive sail rig. The largest Alexandrian grain carriers, ships like the Isis that Lucian describes at Piraeus, ran some 55 meters long with a cargo capacity near 1,200 tons. By 117 CE most of that traffic had shifted to Trajan's new hexagonal basin at Portus, finished just a few years earlier, though Puteoli kept handling part of the fleet.",
+        "sources": [
+          "Joseph. BJ 2.383-386",
+          "Lucian, The Ship, or The Wishes",
+          "Suet. Claud. 18-20",
+          "Rickman, The Corn Supply of Ancient Rome (1980)"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            10.3233,
+            36.8528
+          ],
+          [
+            12.2911,
+            41.755
+          ],
+          [
+            12.257,
+            41.778
+          ]
+        ]
+      },
+      "properties": {
+        "id": "route_grain_africa_rome",
+        "name": "Africa-Rome grain route",
+        "commodity": "grain",
+        "direction": "Carthage -> Ostia -> Portus",
+        "notes": "Africa Proconsularis rivaled Egypt as Rome's grain basket, drawing on the rain-fed wheat estates of the Bagradas valley behind Carthage. Josephus credits Africa with feeding Rome for eight months of the year against Egypt's four - a figure modern historians treat as rounded rather than exact, but it captures how the two provinces together carried most of the city's supply. The crossing to Ostia was shorter and less wind-dependent than the Alexandria run, making African grain a steadier year-round supplement to Egypt's seasonal fleet.",
+        "sources": [
+          "Joseph. BJ 2.383-386",
+          "romanports.org, \"Eating from the African bowl\"",
+          "Rickman, The Corn Supply of Ancient Rome (1980)"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            15.2866,
+            37.0755
+          ],
+          [
+            12.4322,
+            37.7996
+          ],
+          [
+            14.121,
+            40.826
+          ],
+          [
+            12.2911,
+            41.755
+          ]
+        ]
+      },
+      "properties": {
+        "id": "route_grain_sicily_rome",
+        "name": "Sicily-Rome grain route",
+        "commodity": "grain",
+        "direction": "Syracuse / Lilybaeum -> Puteoli -> Ostia",
+        "notes": "Sicily was Rome's oldest grain province, worked under a tithe system (the decuma) that Cicero's prosecution of the governor Gaius Verres in 70 BCE exposed as riddled with extortion. By Trajan's day Egypt and Africa had eclipsed it in scale, but Sicily's short, low-risk crossing kept it feeding Rome as a standing supplement rather than the crisis-year backup it's sometimes assumed to have become.",
+        "sources": [
+          "Cic. Verr. 2.3 (De Frumento)",
+          "Bryn Mawr Classical Review 2009.02.33"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.907914,
+          31.198245
+        ]
+      },
+      "properties": {
+        "id": "node_grain_alexandria",
+        "route": "Grain routes",
+        "name": "Alexandria",
+        "role": "Alexandria was Rome's single biggest grain terminal, its harbor loading the great Egyptian fleet each sailing season. This node duplicates the city's own gazetteer entry elsewhere on the map; here it marks its role as the grain route's Egyptian terminus.",
+        "sources": [
+          "Joseph. BJ 2.383-386"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3233,
+          36.8528
+        ]
+      },
+      "properties": {
+        "id": "node_grain_carthage",
+        "route": "Grain routes",
+        "name": "Carthage",
+        "role": "Carthage shipped the wheat of the Bagradas valley's estates to Rome, making Africa Proconsularis the empire's other great grain province alongside Egypt. This node duplicates the city's own gazetteer entry elsewhere on the map; here it marks its role as the grain route's African terminus.",
+        "sources": [
+          "Joseph. BJ 2.383-386"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.2866,
+          37.0755
+        ]
+      },
+      "properties": {
+        "id": "node_grain_syracuse",
+        "route": "Grain routes",
+        "name": "Syracuse",
+        "role": "Syracuse was one of Sicily's chief grain-tithe collection ports under the Republican decuma system, the oldest link in Rome's grain supply.",
+        "sources": [
+          "Cic. Verr. 2.3"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4322,
+          37.7996
+        ]
+      },
+      "properties": {
+        "id": "node_grain_lilybaeum",
+        "route": "Grain routes",
+        "name": "Marsala",
+        "role": "Lilybaeum, at Sicily's western tip, was one of the island's main tithe-collection assize centers and a short crossing from Africa and Puteoli alike.",
+        "sources": [
+          "Cic. Verr. 2.3",
+          "Bryn Mawr Classical Review 2009.02.33"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.121,
+          40.826
+        ]
+      },
+      "properties": {
+        "id": "node_grain_puteoli",
+        "route": "Grain routes",
+        "name": "Pozzuoli",
+        "role": "Puteoli was Rome's main grain terminal before Trajan's Portus basin took over most of the traffic; Seneca describes crowds at its harbor spotting the incoming Alexandrian fleet by its sail rig. This node duplicates the town's own site entry elsewhere on the map; here it marks its role on the grain route.",
+        "sources": [
+          "Sen. Ep. 77.1-2"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2911,
+          41.755
+        ]
+      },
+      "properties": {
+        "id": "node_grain_ostia",
+        "route": "Grain routes",
+        "name": "Ostia",
+        "role": "Ostia was Rome's river-mouth port and grain-storage hub at the Tiber's silted mouth, ringed with horrea warehouses that held the city's incoming supply before barges carried it upriver. This node duplicates the town's own site entry elsewhere on the map; here it marks its role on the grain route.",
+        "sources": [
+          "Rickman, The Corn Supply of Ancient Rome (1980)"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.257,
+          41.778
+        ]
+      },
+      "properties": {
+        "id": "node_grain_portus",
+        "route": "Grain routes",
+        "name": "Portus",
+        "role": "Trajan's new hexagonal inner basin at Portus, finished only a few years before this map's 117 CE snapshot, had already taken over most of the grain fleet's big-ship traffic from Ostia's silted river channel. This node duplicates the town's own site entry elsewhere on the map; here it marks its role on the grain route.",
+        "sources": [
+          "Suet. Claud. 18-20"
+        ]
+      }
     }
   ]
 }

@@ -3153,6 +3153,341 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.1625,
+          32.1803
+        ]
+      },
+      "properties": {
+        "id": "station_hatita",
+        "category": "mansio",
+        "name": "Hatita",
+        "road": "Via Traiana Nova",
+        "distance_from_previous_mp": 11,
+        "identified": true,
+        "notes": "Hatita, at modern Khirbet es-Samra, was a mansio on the Via Traiana Nova between Bostra and Philadelphia, 11 Roman miles along the Peutinger Table's own count. The French School of Jerusalem and the CNRS have studied the site since 1981; a Journal of Roman Archaeology study of the animal bones found here reconstructs what travelers actually ate at a Roman road station.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "Journal of Roman Archaeology, \"Quid novum ad mensam hodie? The faunal remains from a Roman road station at Khirbet es-Samra, Jordan\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.088,
+          32.073
+        ]
+      },
+      "properties": {
+        "id": "station_gadda",
+        "category": "mansio",
+        "name": "Gadda",
+        "road": "Via Traiana Nova",
+        "distance_from_previous_mp": 13,
+        "identified": true,
+        "notes": "Gadda sat where modern Zarqa now stands, 13 Roman miles along the Via Traiana Nova from Hatita and 62 more to Philadelphia by the Peutinger Table's count. The Roman camp itself lay southwest of today's bus station and is now built over by the modern city.",
+        "sources": [
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.724,
+          30.749
+        ]
+      },
+      "properties": {
+        "id": "station_thornia_tuwaneh",
+        "category": "mansio",
+        "name": "Thornia",
+        "road": "Via Traiana Nova",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Thornia, known to Ptolemy as Thana and identified today with Tuwaneh in the Wadi al-Hasa, was a substantial mansio roughly 55 hectares in extent, with the Via Traiana Nova itself still traceable running through the wadi below the site. A milestone found here records this stretch of road finished in 110/111 CE, 54 Roman miles north of Petra — one of the freshest, most precisely dated points on the whole road at our 117 CE snapshot.",
+        "sources": [
+          "Tabula Peutingeriana (as Thornia)",
+          "Ptolemy, Geography (as Thana/Thoana)",
+          "\"Tuwaneh and the Via Nova Traiana in Southern Jordan,\" Department of Antiquities of Jordan, 1992 season report"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.733,
+          31.267
+        ]
+      },
+      "properties": {
+        "id": "station_rabbathmoba",
+        "category": "mansio",
+        "name": "Rabbathmoba",
+        "road": "Via Traiana Nova",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Rabbathmoba, also called Areopolis, stood at modern Rabba and was one of the region's main towns along the Via Traiana Nova. The Peutinger Table's \"Rababatora\" likely names this town, though the Princeton Encyclopedia of Classical Sites flags it as possibly a scribal conflation with the separate station of Betthorus further along the road.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "Princeton Encyclopedia of Classical Sites, s.v. \"Rabbathmoba\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.704,
+          31.181
+        ]
+      },
+      "properties": {
+        "id": "station_characmoba",
+        "category": "mansio",
+        "name": "Characmoba",
+        "road": "Via Traiana Nova",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Characmoba, recorded by Ptolemy in the 2nd century CE, stood at modern Al-Karak (Kerak) on the Via Traiana Nova's route south from Rabbathmoba, and later became a bishopric under the same name.",
+        "sources": [
+          "Ptolemy, Geography",
+          "Digital Atlas of the Roman Empire, s.v. \"Characmoba\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4877,
+          31.0369
+        ]
+      },
+      "properties": {
+        "id": "station_zoara",
+        "category": "mansio",
+        "name": "Zoara",
+        "road": "Via Traiana Nova",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Zoara, at modern Ghor es-Safi on the southeast shore of the Dead Sea, was folded into the new province of Arabia after 106 CE as a grain-producing station on the Via Traiana Nova. Centuries later the town was still important enough to be named and pictured on the 6th-century Madaba Map mosaic, next to the shrine of Saint Lot.",
+        "sources": [
+          "Wikidata (coordinates)",
+          "Madaba Map mosaic, Church of St. George, Madaba"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.599,
+          30.328
+        ]
+      },
+      "properties": {
+        "id": "station_udhruh",
+        "category": "mansio",
+        "name": "Udhruh",
+        "road": "Via Traiana Nova",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Some specialists argue a branch of the Via Traiana Nova bypassed Petra itself, running instead through Udhruh a few kilometers to its east. The monumental legionary fortress visible at Udhruh today is early 4th century, roughly two centuries past this map's 117 CE snapshot — a Trajanic-era road station may have stood here already, but nothing on the scale of the later fort.",
+        "sources": [
+          "Abudanah, Tarawneh, Twaissi, Wenner & Al-Salameen, \"The Via Nova Traiana Between Petra and Ayn al-Qana in Arabia Petraea,\" Oxford Journal of Archaeology 35 (2016), 389-412"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.62,
+          30.17
+        ]
+      },
+      "properties": {
+        "id": "station_zadagatta_sadaqa",
+        "category": "statio",
+        "name": "Zadagatta",
+        "road": "Via Traiana Nova",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Zadagatta, at modern Sadaqa southeast of Petra, sat 18 Roman miles down the Via Traiana Nova by the Peutinger Table's count. David Graf's 1986-89 survey traced two candidate alignments between Petra and Sadaqa and favored the central route through Bir Sarah and Bir Salman as the one that actually matches that distance.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "David Graf fieldwork survey 1986-89, summarized in Abudanah et al., Oxford Journal of Archaeology 35 (2016)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3469,
+          29.95
+        ]
+      },
+      "properties": {
+        "id": "station_hauarra_humayma",
+        "category": "mansio",
+        "name": "Hauarra",
+        "road": "Via Traiana Nova",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Hauarra, at modern Humayma, was a major fort-town built around 106-110 CE specifically to guard the newly built Via Traiana Nova — essentially contemporary with this map's 117 CE snapshot. Excavated since 1995 by the Humayma Excavation Project, the site has produced a military bathhouse, a community shrine, a praetorium, a horreum, and a full residential insula.",
+        "sources": [
+          "Queen's University Classics, \"Humayma Excavation Project\"",
+          "J.P. Oleson et al., \"Preliminary Report of the Humayma Excavation Project 2002, 2004-2005: The Roman Fort\"",
+          "Bryn Mawr Classical Review 2012.01.36"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.230668,
+          29.656731
+        ]
+      },
+      "properties": {
+        "id": "station_praesidium_khalde",
+        "category": "mansio",
+        "name": "Praesidium",
+        "road": "Via Traiana Nova",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Praesidium, at modern Khirbet al-Khalde in the Wadi al-Yutm, combined a fort with four corner towers, an attached caravanserai, two watchtowers, and the best-preserved Roman-period aqueduct anywhere in the wadi — a genuine waystation for travelers on the last stretch of the Via Traiana Nova into Aila. Named on both the Peutinger Table and the later Notitia Dignitatum, and resurveyed by an international team as recently as 2023.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "Notitia Dignitatum",
+          "Harvey, Intagliata & Raja, \"Broken glass on the Via Nova Traiana: Roman, Late Antique and Early Islamic activity at Khirbet al-Khalde (south Jordan),\" Antiquity"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.55778,
+          30.51889
+        ]
+      },
+      "properties": {
+        "id": "station_negla_shoubak",
+        "category": "mansio",
+        "name": "Negla",
+        "road": "Via Traiana Nova",
+        "distance_from_previous_mp": 22,
+        "identified": true,
+        "notes": "Negla, also called Nejil, stood where modern Shoubak now stands, 22 Roman miles up the Via Traiana Nova from Petra. The site is better known today for its 12th-century Crusader castle, built directly over the older Roman waystation.",
+        "sources": [
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.86667,
+          31.23333
+        ]
+      },
+      "properties": {
+        "id": "station_betthorus",
+        "category": "statio",
+        "name": "Betthorus",
+        "road": "Via Traiana Nova",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Betthorus, at modern El-Lejjun, marked a stop on the Via Traiana Nova between Rabbathmoba and Characmoba. The monumental stone legionary fortress visible at the site today, home to the Legio IV Martia, was not built until the late 3rd or early 4th century — close to two centuries after this map's 117 CE snapshot — so nothing on that scale stood here yet at Trajan's death.",
+        "sources": [
+          "Wikipedia, \"El-Lejjun\"",
+          "S. Thomas Parker, Limes Arabicus Project excavation reports (1980-89)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.133696,
+          29.543731
+        ]
+      },
+      "properties": {
+        "id": "station_khirbet_al_kithara",
+        "category": "milestone",
+        "name": "Khirbet al-Kithara",
+        "road": "Via Traiana Nova",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A small Roman military post and watchtower on the Via Traiana Nova between Sadaqa and Humayma. An inscribed milestone found here names both Trajan and Gaius Claudius Severus, the governor who built the road — a direct, dated physical link to the road's own construction.",
+        "sources": [
+          "Livius.org (Jona Lendering), \"Khirbet al-Kithara, Milestone mentioning Trajan\"",
+          "Vici.org id 7727 / Wikidata Q107257274"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.757682,
+          30.902123
+        ]
+      },
+      "properties": {
+        "id": "station_rujm_el_faridiyyeh",
+        "category": "statio",
+        "name": "Rujm el-Faridiyyeh",
+        "road": "Via Traiana Nova",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A Roman road station on the Via Traiana Nova just south of the Wadi el-Hasa, between Thornia and Rabbathmoba. The physical remains were reportedly bulldozed sometime between 2013 and 2017, but the site's location is well fixed from earlier survey work.",
+        "sources": [
+          "Pleiades place resource, id 697745"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
