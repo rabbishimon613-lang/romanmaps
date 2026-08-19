@@ -74,14 +74,18 @@ to prevent. Building locally to *test* your own work is expected and fine.
       silently. **Not attempted**: auditing the other 73 cross-file collisions for the same
       both-records-disagree shape — the ticket's own "worth checking while in here" note, left
       for a dedicated pass since it's a materially bigger scope than this one pair.
-- [~] `[08-P1-6]` **`baalbek-dating`** `verify` — claimed by cloud shift 32, 2026-08-19 00:35.
-      Both Baalbek temples carry `built: 60` in
-      `pois.geojson`, and the Temple of Bacchus is conventionally dated a good deal later — mid
-      2nd century, under Antoninus Pius. If that is right, the building is barely begun at the
-      117 CE snapshot rather than nearly finished. The description written on 2026-08-16 was
-      deliberately phrased to hold under either dating ("the shell is well advanced and the
-      carvers are still at work") rather than silently reverse another worker's `built` value.
-      Settle the date, then set `built` and the text to match.
+- [x] `[08-P1-6]` **`baalbek-dating`** `verify` — Done 2026-08-19 by cloud shift 32. Settled:
+      the Temple of Jupiter's `built: 60` holds (a stonemason's graffito on a column drum is
+      dated 2 August 60 CE — Livius.org, matches the repo's existing "columns finished, forecourt
+      still building in 117" note), but the Temple of Bacchus was never a real match for the same
+      date — its "baroque" decorative style and every serious source (Livius.org, Britannica,
+      Structurae) place its start under Antoninus Pius, c. 150 CE, 33 years past this map's
+      snapshot. `built` corrected 60 → 150, `extant_117ce` flipped true → false, and the note
+      rewritten to say plainly that the temple doesn't exist yet in 117 rather than hedge between
+      two datings the way the 2026-08-16 placeholder text did. Also swapped the record's one
+      `sources` entry — a bare `commons.wikimedia.org/` link, which is an image host, not a
+      dating source — for the two citations that actually settled the question. `npm run
+      validate` clean.
 - [ ] `[11-P0-3]` **`delete-dead-data`** `retire` — Delete `roads_high`, `roads_low`,
       `places_high` (~11MB shipped, never loaded) or wire them into a detail ladder.
 - [x] `[01-P0-1]` **`selected-marker`** `polish` — Done 2026-08-17 by cloud shift 24. Selected

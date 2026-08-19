@@ -5367,12 +5367,13 @@
         "name_english": "Temple of Bacchus, Baalbek",
         "province": "Syria",
         "modern_location": "Baalbek, Lebanon",
-        "built": 60,
+        "built": 150,
         "destroyed": null,
-        "extant_117ce": true,
-        "notes": "The smaller of Heliopolis' two great temples is smaller only next to Jupiter's. It stands on its own podium behind a screen of Corinthian columns, forty-two of them, and almost every surface that can be carved has been: vines and poppies in the ceiling coffers, a doorway framed in grapes and wheat, lions' heads along the cornice. The god is usually taken to be Bacchus, though nothing on the building says so outright, and the imagery would suit the young god of the local triad just as well. In 117 CE the shell is well advanced and the carvers are still at work.",
+        "extant_117ce": false,
+        "notes": "Heliopolis' second great temple doesn't exist yet in 117 CE — construction won't begin for another generation, around 150 CE under Antoninus Pius, tucked behind Jupiter's colossal precinct. When it finally rises, forty-two Corinthian columns will screen a podium carved almost everywhere a chisel can reach: vines and poppies in the ceiling coffers, a doorway framed in grapes and wheat, lions' heads along the cornice. The dedicatee is usually taken to be Bacchus, though nothing on the building says so outright, and the imagery would suit the young god of the local triad just as well.",
         "sources": [
-          "https://commons.wikimedia.org/"
+          "https://www.livius.org/articles/place/heliopolis-baalbek/baalbek-photos/baalbek-temple-of-bacchus/",
+          "https://en.wikipedia.org/wiki/Temple_of_Bacchus"
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bacchus%20temple%2C%20Baalbek%2001.jpg?width=800",
