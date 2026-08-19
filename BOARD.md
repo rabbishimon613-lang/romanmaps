@@ -732,8 +732,31 @@ to prevent. Building locally to *test* your own work is expected and fine.
       build`, both clean.
 - [ ] `[13-P0-3]` **`image-fallback`** `illustrate` — Static map thumbnail for the 145 places
       with no image.
-- [~] `[11-P0-2]` **`lazy-overlays`** `polish` — claimed by cloud shift 34, 2026-08-19 12:35 UTC.
-      Fetch a thematic layer's data on first enable.
+- [x] `[11-P0-2]` **`lazy-overlays`** `polish` — Done 2026-08-19 by cloud shift 34. All 27
+      non-base overlay groups (road-stations through ethnic-pockets) used to fetch, parse, and
+      add their GeoJSON on every cold load despite defaulting OFF. `app/useLayers.ts` gained a
+      loader registry (`registerLayerLoader`/`ensureLayerLoaded`/`resetLayerLoaders`), deduped so
+      toggling a group off and back on never re-fetches and a failed fetch retries on the next
+      toggle rather than wedging; `toggleLayer()` loads on first switch-on, `applyAllLayers()`
+      also lazily loads any group a returning visitor's `localStorage` already has on.
+      `app/Map.tsx`'s ~27 thematic phases had their existing fetch+addSource+addLayer+handlers
+      bodies handed to the registry instead of running unconditionally — a mechanical wrap, no
+      logic changed inside any phase. `lines.geojson` (backs both `frontier-lines` and
+      `aqueduct-lines`) uses a shared `onceLoader` so the second group to switch on doesn't
+      re-fetch. New `THEMATIC_LAYER_ORDER` + `restackThematicLayers()` keep cross-overlay z-order
+      canonical regardless of what order a user enables things in, since layers now arrive in
+      click order instead of phase order. Verified independently (not just trusting the
+      implementing agent's own report): `npx tsc --noEmit`/`npm run build`/`npm run validate` all
+      clean; a from-scratch Playwright run against the built production server confirmed cold
+      load fetches none of the 27 thematic files (only the 5 base-group files + `pois.geojson`);
+      presetting `localStorage`'s `mints:true` before load confirmed the returning-visitor path —
+      `mints.geojson` fetched exactly once, `mints-point` visible, source carrying all 40
+      features (picking up this same shift's mint-data batch correctly); 375×812 dark and
+      1280×800 light screenshots of the default view both clean, pixel-equivalent to before.
+      **Two small pre-existing eager fetches found and left out of scope, logged in
+      `FEATURE_BACKLOG.md`**: `ProvincePanel.tsx` fetches `politics.geojson` unconditionally on
+      mount, and `PeopleMarkers.tsx` awaits `people_117.geojson` before checking its own
+      visibility flag — neither is one of the 27 `Map.tsx` phases this ticket converted.
 - [x] `[01-P0-3]` **`cluster-expand`** `polish` — Already implemented, just never marked —
       found and closed 2026-08-19 by cloud shift 32. `PoiMarkers.tsx`'s cluster badges have
       carried a click handler that `fitBounds`s to every member's coordinates (capped at
