@@ -86,8 +86,16 @@ to prevent. Building locally to *test* your own work is expected and fine.
       `sources` entry — a bare `commons.wikimedia.org/` link, which is an image host, not a
       dating source — for the two citations that actually settled the question. `npm run
       validate` clean.
-- [ ] `[11-P0-3]` **`delete-dead-data`** `retire` — Delete `roads_high`, `roads_low`,
-      `places_high` (~11MB shipped, never loaded) or wire them into a detail ladder.
+- [x] `[11-P0-3]` **`delete-dead-data`** `retire` — Done 2026-08-19 by cloud shift 32. Grepped
+      `app/`, `scripts/`, `next.config.js`, and `package.json` for all three filenames first —
+      zero references anywhere except `scripts/metrics.mjs`'s `NOT_THEMATIC` exclusion set, which
+      only lists filenames to skip and never reads their content, so removing them there is
+      cosmetic cleanup, not a behavior change. Deleted `roads_high.geojson`, `roads_low.geojson`,
+      `places_high.geojson` (~11.2MB) and the three matching `NOT_THEMATIC` entries. **Verified
+      live**: `next dev` + Playwright before and after the delete both report the same 32
+      MapLibre layers rendering, confirming the files were exactly as dead as they looked.
+      `npm run validate` clean — and lost the one `roads_low.geojson: feature #2220 — geometry
+      has no coordinates` warning for free, since that record no longer exists to warn about.
 - [x] `[01-P0-1]` **`selected-marker`** `polish` — Done 2026-08-17 by cloud shift 24. Selected
       pin renders ~1.35x scale with a white+category-color ring (`PoiMarkers.tsx`); the camera
       now eases with `padding` on selection so the pin lands clear of the panel (desktop) or
