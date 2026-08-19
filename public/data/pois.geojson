@@ -14733,6 +14733,335 @@
           }
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.43,
+          43.15
+        ]
+      },
+      "properties": {
+        "id": "poi_shipwreck_cavaliere",
+        "category": "shipwreck",
+        "name_latin": "Cavaliere",
+        "name_english": "Cavaliere Wreck",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Le Lavandou, France",
+        "built": -105,
+        "destroyed": -95,
+        "extant_117ce": false,
+        "notes": "The Cavaliere wreck sank in the cove of Le Lavandou around 100-90 BCE with its oak hull sheathed in lead and its mast still standing on the seabed. Its hold mixed amphorae and black-gloss pottery with cuts of salted pork, plus coins from Numidia, Spain, and Massalia tracing the ship's trading circuit across the western Mediterranean. Excavators also raised seven bronze helmets of different styles, suggesting an armed escort rode along to guard the cargo. The wreck sank as Rome was actively Romanizing the Ligurian coast, two centuries before Trajan's empire reached its territorial height.",
+        "sources": [
+          "https://lavandou-plongee.com/en/scubadiving-spots/legendary-wrecks/",
+          "https://nuttersworld.com/shipbuilding-mediterranean/roman-era/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.225,
+          43.195
+        ]
+      },
+      "properties": {
+        "id": "poi_shipwreck_planier_3",
+        "category": "shipwreck",
+        "name_latin": "Insula Planasia (Massilia)",
+        "name_english": "Planier 3 Wreck",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Ile du Planier, Marseille, France",
+        "built": -70,
+        "destroyed": -60,
+        "extant_117ce": false,
+        "notes": "The Planier 3 wreck lies at the base of a drop-off on the Pierre-de-la-Bague reef off Marseille, found in 1961 in the strong currents that have claimed several ships at this single point. Chemical residue analysis of its amphorae detected grape and fermentation markers, confirming the ship carried wine rather than oil or fish sauce when it sank. The find sits among a cluster of wrecks at Planier that map directly onto the shipping lanes converging on Massalia, ancient Marseille's harbor. It offers direct chemical proof, not just jar shape, of what a Roman wine ship actually carried to market.",
+        "sources": [
+          "https://www.calanques-parcnational.fr/en/shipwrecks-calanques",
+          "https://www.researchgate.net/figure/Location-of-the-Planier-3-shipwreck-in-the-Mediterranean-Sea_fig1_360153078"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.245,
+          41.774
+        ]
+      },
+      "properties": {
+        "id": "poi_shipwreck_fiumicino_ships",
+        "category": "shipwreck",
+        "name_latin": "Portus Augusti et Traiani",
+        "name_english": "Fiumicino Roman Ships",
+        "province": "Italia (Regio I)",
+        "modern_location": "Fiumicino, near Rome, Italy",
+        "built": 40,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Bulldozers building Rome's Fiumicino airport in 1958 struck the hulls of five Roman vessels preserved in the silt of the harbor basin built under Claudius and later expanded under Trajan. The find included three flat-bottomed river barges that ran cargo up the Tiber to Rome, one seagoing merchant ship, and a rare fishing boat fitted with a 300-liter tank to keep its catch alive. Marble and amphorae recovered inside the hulls show these boat types were still working the harbor-to-city supply chain into the early second century CE. The fleet captures the exact logistics of feeding Rome at the height of imperial Portus traffic.",
+        "sources": [
+          "https://ostiaantica.cultura.gov.it/en/sites/museum-of-the-roman-ships-from-fiumicino/",
+          "https://it.wikipedia.org/wiki/Museo_delle_navi_romane_(Fiumicino)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Museo delle navi fiumicino.jpg?width=800",
+        "image_credit": "Museo delle Navi Romane, Fiumicino · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.76,
+          37.8
+        ]
+      },
+      "properties": {
+        "id": "poi_shipwreck_skerki_bank_wreck_b",
+        "category": "shipwreck",
+        "name_latin": "N/A (open sea)",
+        "name_english": "Skerki Bank Wreck B",
+        "province": "N/A (open sea)",
+        "modern_location": "Strait of Sicily, between Sicily and Tunisia",
+        "built": 60,
+        "destroyed": 90,
+        "extant_117ce": false,
+        "notes": "Deep-sea survey in the Strait of Sicily located Wreck B eighty kilometers northwest of Sicily at a depth of roughly eight hundred meters, undisturbed since it sank in the last quarter of the first century CE. Its amphorae came from four different origins on one voyage — Campania, Egypt, Crete, and Tripolitania — showing a single ship loading cargo across multiple ports. The 1988-97 survey that found it used deep-submergence technology more commonly associated with Titanic research to map the largest concentration of ancient shipwrecks ever found at such depth. The wreck proves Roman captains sailed the open central Mediterranean directly rather than always hugging the coast.",
+        "sources": [
+          "https://web.uvic.ca/~jpoleson/SkerkiBank/Skerkibank.html",
+          "https://ajaonline.org/book-review/535/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1244,
+          35.5319
+        ]
+      },
+      "properties": {
+        "id": "poi_shipwreck_mahdia",
+        "category": "shipwreck",
+        "name_latin": "N/A (open sea)",
+        "name_english": "Mahdia Shipwreck",
+        "province": "Africa Proconsularis",
+        "modern_location": "Mahdia, Tunisia",
+        "built": -150,
+        "destroyed": -75,
+        "extant_117ce": false,
+        "notes": "A storm drove this Greek-built ship onto rocks near Mahdia around 80-70 BCE while it hauled looted Athenian art to Italy, spoils from Sulla's sack of the city in 86 BCE. Its hold carried more than sixty marble columns weighing some 200 tons combined, together with bronze statues including a herm signed by the sculptor Boethos of Chalcedon. Salvage divers recovered the wreck's contents between 1907 and 1913, and most of the finds now fill galleries at the Bardo National Museum in Tunis. The cargo shows how thoroughly Rome's elite were draining Greece's art markets a generation after Sulla's legions marched through Athens.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Mahdia_shipwreck",
+          "https://archeologie.culture.gouv.fr/archeo-sous-marine/en/heavy-gear-and-mahdia-shipwreck"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bardo Mahdia architecture.JPG?width=800",
+        "image_credit": "Mahdia shipwreck finds, Bardo National Museum · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.348,
+          41.243
+        ]
+      },
+      "properties": {
+        "id": "poi_shipwreck_spargi",
+        "category": "shipwreck",
+        "name_latin": "Corsica et Sardinia",
+        "name_english": "Spargi Wreck",
+        "province": "Corsica et Sardinia",
+        "modern_location": "Spargi Island, La Maddalena archipelago, Sardinia, Italy",
+        "built": -130,
+        "destroyed": -110,
+        "extant_117ce": false,
+        "notes": "The Spargi wreck sank around 120-100 BCE near La Maddalena with its thirty-five-meter oak hull sheathed in lead, carrying wine amphorae, pottery, and furniture. Excavators eventually recovered roughly 400 amphorae from the site, enough to reconstruct a full cross-section of the original hold now on permanent display in the local museum. One bronze helmet turned up still holding a skull, a grim hint the ship went down in a fight rather than a simple storm. The wreck marks a well-traveled corridor through the Strait of Bonifacio linking Italy, Sardinia, and Corsica generations before Trajan's Mediterranean.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Spargi",
+          "https://www.unionesarda.it/en/sardinia/la-maddalena-the-exact-location-of-the-wreck-of-the-spargi-ship-has-been-found-h37dx4o6"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2522,
+          41.36
+        ]
+      },
+      "properties": {
+        "id": "poi_shipwreck_sud_lavezzi_2",
+        "category": "shipwreck",
+        "name_latin": "Fretum Gallicum",
+        "name_english": "Sud-Lavezzi 2 Wreck",
+        "province": "Corsica et Sardinia",
+        "modern_location": "Lavezzi Islands, Strait of Bonifacio, Corsica, France",
+        "built": 10,
+        "destroyed": 23,
+        "extant_117ce": false,
+        "notes": "The Sud-Lavezzi 2 wreck sank in the Strait of Bonifacio between 22 and 25 CE hauling a genuinely mixed Baetican cargo: olive oil, wine, and fish sauce packed across at least six distinct amphora types, plus raw copper and lead ingots. That range of goods on one ship shows how thoroughly southern Spain's Guadalquivir valley had industrialized its exports by the early first century CE. The wreck sits in the same strait where the Spargi ship also went down, a genuine bottleneck for ancient Mediterranean shipping. It captures Baetica functioning as one of Rome's most productive single-province economies less than a century before Trajan's reign.",
+        "sources": [
+          "https://honorfrostfoundation.org/wp-content/uploads/2020/08/MAGS2020_RendinaStella.pdf"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.65,
+          43.02
+        ]
+      },
+      "properties": {
+        "id": "poi_shipwreck_cap_corse_2",
+        "category": "shipwreck",
+        "name_latin": "N/A (open sea)",
+        "name_english": "Capo Corso 2 Wreck",
+        "province": "N/A (open sea)",
+        "modern_location": "Between Cap Corse, Corsica and Capraia Island, Italy",
+        "built": 90,
+        "destroyed": 105,
+        "extant_117ce": false,
+        "notes": "Divers found the Capo Corso 2 wreck in 2012 lying 350 meters deep in the channel between Corsica and the island of Capraia, dated to around the turn of the first and second centuries CE. Its hold was stacked almost entirely with glass — raw glass blocks meant for reworking plus thousands of finished bowls, cups, jugs, and bottles, some still stacked as loaded. Only one other known Roman wreck in the Mediterranean has carried a cargo this dominated by glass rather than amphorae. It documents the raw-material glass trade that fed Italian glassworking workshops in the decades just before Trajan's empire reached its greatest extent.",
+        "sources": [
+          "https://www.ancient-origins.net/news-history-archaeology/roman-glassware-wreck-0018935",
+          "https://www.academia.edu/18712535/FONTAINE_S_CIBECCHINI_F_An_Exceptional_Example_of_Maritime_Glass_Trade_The_Deep_Wreck_Cap_Corse_2_France_Corsica_in_JGS_56_2014_p_354_357"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.1,
+          43.895
+        ]
+      },
+      "properties": {
+        "id": "poi_shipwreck_diano_marina",
+        "category": "shipwreck",
+        "name_latin": "Regio IX Liguria",
+        "name_english": "Diano Marina Wreck",
+        "province": "Italia (Regio IX Liguria)",
+        "modern_location": "Diano Marina, Liguria, Italy",
+        "built": 30,
+        "destroyed": 50,
+        "extant_117ce": false,
+        "notes": "The Diano Marina wreck sank about half a mile offshore in the mid-first century CE, its hold packed with Dressel 2/4 wine amphorae loaded in and around Roman Barcino, modern Barcelona. Part of its cargo also included massive dolia, ceramic vats holding roughly 3,000 liters apiece, stacked to carry wine in bulk rather than jar by jar. Divers found the wreck lying forty meters deep, and part of its amphora cargo is now on permanent display in Diano Marina's civic museum. It shows Catalonia already exporting wine westward across the Ligurian Sea two generations before Trajan's death.",
+        "sources": [
+          "https://turismo.dianomarina.im.it/en/cultura/museo-civico/sezione-archeologica",
+          "https://www.ancientportsantiques.com/wp-content/uploads/Documents/AUTHORS/Rice2016-ShipwreckCargoes.pdf"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.55,
+          42.15
+        ]
+      },
+      "properties": {
+        "id": "poi_shipwreck_civitavecchia",
+        "category": "shipwreck",
+        "name_latin": "Centumcellae",
+        "name_english": "Civitavecchia Wreck",
+        "province": "Italia (Regio VII Etruria)",
+        "modern_location": "off Civitavecchia, Italy",
+        "built": -50,
+        "destroyed": 25,
+        "extant_117ce": false,
+        "notes": "A police patrol boat's sonar found this wreck in 2023 sitting 160 meters down off Civitavecchia, roughly eighty kilometers northwest of Rome, its hold still packed with hundreds of intact amphorae. Archaeologists dated the more-than-twenty-meter hull broadly to between the first century BCE and the first century CE based on the recovered amphorae. Italian authorities kept the exact coordinates secret after the discovery specifically to keep looters away from the intact site. The wreck marks the deep shipping lane that fed cargo up the Tyrrhenian coast toward Rome's harbors at Ostia and Portus.",
+        "sources": [
+          "https://www.agenzianova.com/en/news/civitavecchia-discovered-the-wreck-of-an-ancient-Roman-ship-hundreds-of-amphorae-at-160-meters-depth/",
+          "https://greekreporter.com/2023/07/29/ancient-roman-shipwreck-italy/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.075,
+          43.565
+        ]
+      },
+      "properties": {
+        "id": "poi_shipwreck_chretienne_h",
+        "category": "shipwreck",
+        "name_latin": "Gallia Narbonensis",
+        "name_english": "Chretienne H Wreck",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Golfe-Juan, near Antibes, France",
+        "built": 5,
+        "destroyed": 18,
+        "extant_117ce": false,
+        "notes": "The Chretienne H wreck sank off the Golfe-Juan coast around 15-20 CE carrying Pascual 1 amphorae, a distinctive wine-jar type produced in Hispania Tarraconensis in northeastern Spain. Its cargo forms part of a documented pattern of Augustan-era wrecks tracing Tarraconensian wine into Gallia Narbonensis just as Rome was consolidating its hold on southern Gaul. The reef here, La Chretienne, has claimed enough ships across the centuries that archaeologists now catalog its wrecks by letter. It captures Spanish wine displacing Italian exports along the French Riviera trade routes within a generation of Augustus's death.",
+        "sources": [
+          "https://sciencedirect.com/science/article/abs/pii/S0169131713001907",
+          "https://www.ancientportsantiques.com/wp-content/uploads/Documents/AUTHORS/Rice2016-ShipwreckCargoes.pdf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3839,
+          43.7203
+        ]
+      },
+      "properties": {
+        "id": "poi_shipwreck_pisa_san_rossore",
+        "category": "shipwreck",
+        "name_latin": "Portus Pisanus",
+        "name_english": "Pisa San Rossore Ships",
+        "province": "Italia (Regio VII Etruria)",
+        "modern_location": "Pisa, Tuscany, Italy",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Construction crews building a rail link at Pisa's San Rossore station struck a buried ship hull in 1998 and kept striking more for the next eighteen years, eventually uncovering thirty-nine vessels preserved in the silted-up channel of Pisa's ancient river harbor. The ships span roughly nine centuries of continuous use, from the second century BCE into the early medieval period, alongside ceramics, glass, rope, tools, and even human skeletons preserved by the waterlogged mud. Archaeologists nicknamed the site the 'Pompeii of the sea' for how completely the silt sealed in organic material that almost never survives elsewhere. The harbor was a working river port in continuous operation through the exact period this map depicts, though no single hull is dated precisely to the year 117 CE.",
+        "sources": [
+          "https://www.nationalgeographic.com/history/history-magazine/article/ancient-rome-shipwrecks-graveyard-pisa-sea",
+          "https://it.wikipedia.org/wiki/Museo_delle_navi_antiche_di_Pisa"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nave I Museo delle Navi Antiche di Pisa.jpg?width=800",
+        "image_credit": "Hull from the Pisa San Rossore ship graveyard · Wikimedia Commons"
+      }
     }
   ]
 }
