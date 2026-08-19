@@ -3488,6 +3488,763 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7167,
+          45.9333
+        ]
+      },
+      "properties": {
+        "id": "station_asa_paulini",
+        "category": "mansio",
+        "name": "Asa Paulini",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 15,
+        "identified": true,
+        "notes": "Asa Paulini stood at modern Anse on the Roman road running north from Lugdunum along the Saone, the first posting station travelers reached leaving the provincial capital. The Antonine Itinerary lists it 15 Roman miles out, and excavation has traced the settlement across roughly 15 hectares beneath and around the modern town, occupied into the 4th century.",
+        "sources": [
+          "Itin. Ant. (Iter a Vienna Lugdunum)",
+          "Ludna et Asa Paulini, DARA/MOM excavation reports"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7522,
+          46.1167
+        ]
+      },
+      "properties": {
+        "id": "station_lunna",
+        "category": "mutatio",
+        "name": "Lunna",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 15,
+        "identified": false,
+        "notes": "Lunna (also transmitted as Ludna) was the second relay north of Lugdunum on the road to Cabillonum, 15 Roman miles beyond Asa Paulini. Modern scholarship splits between Belleville-en-Beaujolais and neighboring Saint-Georges-de-Reneins for the exact spot, so the point marks the identified sector rather than an excavated fix.",
+        "sources": [
+          "Itin. Ant. (Iter a Vienna Lugdunum)",
+          "Le Patriote Beaujolais, \"Lunna, Ludna, Asa Paulini\""
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8286,
+          46.3069
+        ]
+      },
+      "properties": {
+        "id": "station_matiscone",
+        "category": "vicus",
+        "name": "Matiscone",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 15,
+        "identified": true,
+        "notes": "Matiscone, modern Macon, sat on the Saone 15 Roman miles past Lunna and served as a river-crossing market town on the Lugdunum-Cabillonum road. Roman-era quays and warehouse foundations have been recorded along the modern riverbank.",
+        "sources": [
+          "Itin. Ant. (Iter a Vienna Lugdunum)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9,
+          46.5667
+        ]
+      },
+      "properties": {
+        "id": "station_tinurtium",
+        "category": "mansio",
+        "name": "Tinurtium",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 19,
+        "identified": true,
+        "notes": "Tinurtium, identified with Tournus, was a Saone-side mansio 19 Roman miles north of Matiscone. Its river landing kept it busy as a transshipment point for grain and wine barges moving between Lugdunum and the north.",
+        "sources": [
+          "Itin. Ant. (Iter a Vienna Lugdunum)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.859035,
+          46.782518
+        ]
+      },
+      "properties": {
+        "id": "station_cabillonum",
+        "category": "vicus",
+        "name": "Cabillonum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 21,
+        "identified": true,
+        "notes": "Cabillonum, modern Chalon-sur-Saone, was a major Saone river port 21 Roman miles above Tinurtium and the point where the Via Agrippa network split toward the Rhine frontier. Caesar himself used it as a supply depot during the Gallic War, and its port infrastructure kept growing under Augustus and his successors.",
+        "sources": [
+          "Itin. Ant. (Iter a Vienna Lugdunum)",
+          "Caesar, Bellum Gallicum 7.90 (as Cabillonum depot)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.335,
+          47.8614
+        ]
+      },
+      "properties": {
+        "id": "station_andematunnum",
+        "category": "vicus",
+        "name": "Andematunnum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Andematunnum, modern Langres, was the civitas capital of the Lingones and the hinge of the Via Agrippa network, where the road running north from Cabillonum split toward Divodurum and the Rhine and toward Durocortorum and the Channel coast. The Roman town sat on the same defensible plateau the medieval and modern city still occupies.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "Voie romaine d'Agrippa, French road-network scholarship"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3667,
+          47.9333
+        ]
+      },
+      "properties": {
+        "id": "station_mosa",
+        "category": "mutatio",
+        "name": "Mosa",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Mosa, at the hamlet of Meuvy near Andilly-en-Bassigny, was the first relay north of Andematunnum on the road to Divodurum, 12 Roman miles out by the Antonine Itinerary's count.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4667,
+          48.0167
+        ]
+      },
+      "properties": {
+        "id": "station_noviomagus_lingonum",
+        "category": "mutatio",
+        "name": "Noviomagus",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Noviomagus, modern Nijon, was a small waystation between Mosa and Solimariaca on the Langres-Metz road. The Tabula Peutingeriana places it 7 Gallic leagues from Solimariaca; the surviving Antonine Itinerary text does not give its own mile figure from Mosa.",
+        "sources": [
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.75,
+          48.2167
+        ]
+      },
+      "properties": {
+        "id": "station_solimariaca",
+        "category": "mansio",
+        "name": "Solimariaca",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Solimariaca, identified with Soulosse-sous-Saint-Elophe, was a substantial roadside settlement 16 Roman miles from Mosa, built around a Gallo-Roman sanctuary complex that draws its own excavation literature separate from the road station itself.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8897,
+          48.6797
+        ]
+      },
+      "properties": {
+        "id": "station_tullum",
+        "category": "vicus",
+        "name": "Tullum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 15,
+        "identified": true,
+        "notes": "Tullum, modern Toul, was the civitas capital of the Leuci, 15 Roman miles past Solimariaca on the road to Divodurum. It kept its walled Roman street grid legible enough that the medieval and modern town still traces it in part.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.05,
+          48.8333
+        ]
+      },
+      "properties": {
+        "id": "station_scarponna",
+        "category": "mansio",
+        "name": "Scarponna",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 15,
+        "identified": true,
+        "notes": "Scarponna, at modern Dieulouard on the Moselle, was the last relay before Divodurum, roughly 15 Roman miles from Tullum by the Peutinger Table's count. The straight Roman alignment between Toul and Dieulouard is still traceable on the ground today, passing the Libdeau farm and a former Roman camp near Rosieres-en-Haye.",
+        "sources": [
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1758,
+          49.1193
+        ]
+      },
+      "properties": {
+        "id": "station_divodurum",
+        "category": "vicus",
+        "name": "Divodurum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Divodurum, modern Metz, was the civitas capital of the Mediomatrici and the central hub of the Via Agrippa network in eastern Gaul, where roads converged toward Augusta Treverorum, Durocortorum, Mogontiacum, and Argentorate. Its amphitheatre, one of the largest in Gaul, could seat an estimated 25,000 spectators.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "Itin. Ant."
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1667,
+          49.4667
+        ]
+      },
+      "properties": {
+        "id": "station_caranusca",
+        "category": "mutatio",
+        "name": "Caranusca",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 42,
+        "identified": true,
+        "notes": "Caranusca, tentatively placed at Hettange-Grande near Thionville, was a station on the more direct left-bank branch of the Metz-Trier road, 42 Roman miles out by the Tabula Peutingeriana's figure. Early 20th-century Luxembourgish scholarship debated the exact spot, with an alternate proposal at Garche.",
+        "sources": [
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.3167,
+          49.5167
+        ]
+      },
+      "properties": {
+        "id": "station_ricciacum",
+        "category": "vicus",
+        "name": "Ricciacum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Ricciacum, at modern Dalheim in Luxembourg, was a large Gallo-Roman vicus on the Metz-Trier road, 10 Roman miles from Caranusca and another 10 short of Augusta Treverorum. Excavations have uncovered a forum, temples, and a theatre built to seat roughly 3,500 people, among the best-preserved secondary settlements on the whole road.",
+        "sources": [
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancient%20Roman%20theatre%20in%20Dalheim.jpg?width=800",
+        "image_credit": "Roman theatre at Dalheim (Ricciacum), Luxembourg · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.81,
+          49.085
+        ]
+      },
+      "properties": {
+        "id": "station_ibliodurum",
+        "category": "mutatio",
+        "name": "Ibliodurum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 8,
+        "identified": false,
+        "notes": "Ibliodurum was the first relay west of Divodurum on the road to Durocortorum, 8 Roman miles out. Its exact location is disputed among archaeologists working the Woevre plain; a station near Vionville, on the line of an old road above the Iron river, is one candidate.",
+        "sources": [
+          "Itin. Ant. (Iter a Durocortoro Divodurum)",
+          "Revue archeologique de l'Est 61 (2012), \"Vionville: station routiere d'Ibliodurum?\""
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.61,
+          49.13
+        ]
+      },
+      "properties": {
+        "id": "station_fines",
+        "category": "statio",
+        "name": "Fines",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 6,
+        "identified": false,
+        "notes": "Fines, whose name simply means \"the boundary,\" was a mutatio 6 Roman miles from Ibliodurum, likely marking a tribal border crossed by the Reims-Metz road. French rescue archaeology places it somewhere between Haudiomont, Manheulles, and the deserted village of Aulnois, without a firm fix.",
+        "sources": [
+          "Itin. Ant. (Iter a Durocortoro Divodurum)",
+          "Revue archeologique de l'Est 61 (2012), \"Manheulles: la station routiere antique de Fines?\""
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3833,
+          49.16
+        ]
+      },
+      "properties": {
+        "id": "station_virodunum",
+        "category": "vicus",
+        "name": "Virodunum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Virodunum, modern Verdun, was a fortified river town on the Meuse 9 Roman miles from Fines, controlling the crossing on the Reims-Metz road. It kept this strategic role for the rest of antiquity, walled again as a late Roman castrum.",
+        "sources": [
+          "Itin. Ant. (Iter a Durocortoro Divodurum)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7953,
+          49.2029
+        ]
+      },
+      "properties": {
+        "id": "station_axuena",
+        "category": "mutatio",
+        "name": "Axuena",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 17,
+        "identified": false,
+        "notes": "Axuena was a relay 17 Roman miles from Virodunum on the road toward Durocortorum, in the Argonne forest corridor the modern road still follows. No modern village has been confidently matched to it, so the point is set by interpolation along the attested road line.",
+        "sources": [
+          "Itin. Ant. (Iter a Durocortoro Divodurum)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3799,
+          49.2331
+        ]
+      },
+      "properties": {
+        "id": "station_basilia",
+        "category": "mutatio",
+        "name": "Basilia",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "Basilia was the last relay before Durocortorum, 12 Roman miles out, on the Reims-Metz road through the Argonne. Like its neighbor Axuena, no secure modern identification has stuck, and the point here is interpolated along the known road corridor.",
+        "sources": [
+          "Itin. Ant. (Iter a Durocortoro Divodurum)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.0347,
+          49.2583
+        ]
+      },
+      "properties": {
+        "id": "station_durocortorum",
+        "category": "vicus",
+        "name": "Durocortorum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Durocortorum, modern Reims, was the civitas capital of the Remi and one of the largest cities in Gaul, sitting at the junction of the Via Agrippa branch to Divodurum and the road running northwest to Bagacum and the Channel. Its forum's underground gallery, the cryptoportique, still survives beneath the modern Place du Forum.",
+        "sources": [
+          "Itin. Ant. (Iter a Durocortoro Divodurum)",
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.9667,
+          50.0333
+        ]
+      },
+      "properties": {
+        "id": "station_duronum",
+        "category": "mansio",
+        "name": "Duronum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Duronum, recorded locally as \"Strata Duronum,\" was the first stage out of Durocortorum on the road to Bagacum, 12 Roman miles along. It is identified with modern Etroeungt in the Avesnois, where the old road name survived in local toponymy.",
+        "sources": [
+          "Itin. Ant. (Iter a Durocortoro Bagacum)",
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.9042,
+          49.8283
+        ]
+      },
+      "properties": {
+        "id": "station_verbinum",
+        "category": "mansio",
+        "name": "Verbinum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Verbinum (Vironum on the Antonine Itinerary), modern Vervins, sat 10 Roman miles from Duronum at the junction of the Reims-Bavay road and a secondary route toward Saint-Quentin, on the edge of Viromanduan territory.",
+        "sources": [
+          "Itin. Ant. (Iter a Durocortoro Bagacum)",
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7333,
+          49.6667
+        ]
+      },
+      "properties": {
+        "id": "station_catusiacum",
+        "category": "mutatio",
+        "name": "Catusiacum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 6,
+        "identified": true,
+        "notes": "Catusiacum was a short 6-mile hop from Verbinum, placed by local archaeology just north of the village of Chaourse in the Aisne valley.",
+        "sources": [
+          "Itin. Ant. (Iter a Durocortoro Bagacum)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.9833,
+          49.5167
+        ]
+      },
+      "properties": {
+        "id": "station_minatiacum",
+        "category": "mutatio",
+        "name": "Minatiacum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 7,
+        "identified": true,
+        "notes": "Minatiacum, called Ninittaci on the Tabula Peutingeriana, is identified with modern Nizy-le-Comte, 7 Roman miles from Catusiacum on the road north to Bagacum.",
+        "sources": [
+          "Itin. Ant. (Iter a Durocortoro Bagacum)",
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8996,
+          49.8607
+        ]
+      },
+      "properties": {
+        "id": "station_muenna",
+        "category": "mutatio",
+        "name": "Muenna",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 8,
+        "identified": false,
+        "notes": "Muenna was the last relay before Bagacum, 8 Roman miles out, but no modern village has been convincingly matched to the name. The point is interpolated along the Vervins-Bavay road corridor between its known neighbors.",
+        "sources": [
+          "Itin. Ant. (Iter a Durocortoro Bagacum)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.79316,
+          50.298592
+        ]
+      },
+      "properties": {
+        "id": "station_bagacum",
+        "category": "vicus",
+        "name": "Bagacum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Bagacum, modern Bavay, was the civitas capital of the Nervii and the busiest road junction in northern Gaul, where seven roads met including the routes to Durocortorum, Gesoriacum, Colonia Agrippina, and Samarobriva. Its excavated forum complex, over 2.5 hectares with walls still standing more than 10 meters high in places, is among the largest Roman civic sites uncovered in France.",
+        "sources": [
+          "Itin. Ant. (Iter a Durocortoro Bagacum)",
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bavay%20Forum%20Gallo%20Romain.jpg?width=800",
+        "image_credit": "Forum antique de Bavay (Bagacum) · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.5167,
+          50.4167
+        ]
+      },
+      "properties": {
+        "id": "station_pons_scaldis",
+        "category": "statio",
+        "name": "Pons Scaldis",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Pons Scaldis, \"the Scheldt bridge,\" marked the river crossing on the Bavay-Tournai road at modern Escautpont, 12 Roman miles from Bagacum. The name survives almost unchanged in the modern town's own.",
+        "sources": [
+          "Itin. Ant. (Iter a Bagaco Gesoriacum)",
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.388918,
+          50.606492
+        ]
+      },
+      "properties": {
+        "id": "station_turnacum",
+        "category": "vicus",
+        "name": "Turnacum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Turnacum, modern Tournai, was a civitas capital of the Menapii and a river port on the Scheldt, 12 Roman miles from the Pons Scaldis crossing. It later became a Merovingian royal seat, but its Roman-era street grid and cemeteries are extensively documented.",
+        "sources": [
+          "Itin. Ant. (Iter a Bagaco Gesoriacum)",
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.05,
+          50.7833
+        ]
+      },
+      "properties": {
+        "id": "station_viroviacum",
+        "category": "mutatio",
+        "name": "Viroviacum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Viroviacum, identified with Wervik on the Lys, was a relay 16 Roman miles from Turnacum on the road toward the Channel coast.",
+        "sources": [
+          "Itin. Ant. (Iter a Bagaco Gesoriacum)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4833,
+          50.8
+        ]
+      },
+      "properties": {
+        "id": "station_castellum_menapiorum",
+        "category": "vicus",
+        "name": "Castellum Menapiorum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Castellum Menapiorum, modern Cassel, stood on a striking hilltop in the flat Flanders plain, 16 Roman miles from Viroviacum, and controlled roads radiating toward Boulogne, Therouanne, Arras, and Wervik. Decades of rescue excavation there have uncovered a dense street grid, temples, and a small amphitheatre.",
+        "sources": [
+          "Itin. Ant. (Iter a Bagaco Gesoriacum)",
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2667,
+          50.6333
+        ]
+      },
+      "properties": {
+        "id": "station_tarvenna",
+        "category": "vicus",
+        "name": "Tarvenna",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Tarvenna, modern Therouanne, was the civitas capital of the Morini, 9 Roman miles from Castellum Menapiorum on the final stretch to Gesoriacum. It later grew into a major medieval bishopric before Charles V's forces razed it in 1553, which is why so little of the ancient or medieval town survives above ground today.",
+        "sources": [
+          "Itin. Ant. (Iter a Bagaco Gesoriacum)",
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.615115,
+          50.726252
+        ]
+      },
+      "properties": {
+        "id": "station_gesoriacum",
+        "category": "vicus",
+        "name": "Gesoriacum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Gesoriacum, modern Boulogne-sur-Mer, was the main crossing point to Britannia and home port of the Classis Britannica, the fleet Claudius based there for his 43 CE invasion. A lighthouse, later remembered as the Tour d'Ordre and sometimes credited to Caligula, stood over the harbor until it finally collapsed in 1644.",
+        "sources": [
+          "Itin. Ant. (Iter a Bagaco Gesoriacum)",
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
