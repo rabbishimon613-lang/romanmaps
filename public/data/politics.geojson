@@ -3,7 +3,13 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.4720, 41.8968] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.472,
+          41.8968
+        ]
+      },
       "properties": {
         "id": "politics_faction_prasina",
         "category": "chariot_faction_HQ",
@@ -13,13 +19,23 @@
         "modern_location": "Rome, Italy",
         "extant_117ce": true,
         "notes": "The inscription CIL VI 10058 was found in situ near the present church of San Lorenzo in Damaso, whose medieval alternate name, S. Laurentii in Prasino, preserves the faction's color. Of the four factions, the Greens are the only one with a securely located statio in the city center rather than just the general stable district near the Circus Flaminius.",
-        "sources": ["Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stabula IIII Factionum", "CIL VI 10058", "Digital Augustan Rome, s.v. Stabula Factionum"],
+        "sources": [
+          "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stabula IIII Factionum",
+          "CIL VI 10058",
+          "Digital Augustan Rome, s.v. Stabula Factionum"
+        ],
         "confidence": "medium"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.4712, 41.8951] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4712,
+          41.8951
+        ]
+      },
       "properties": {
         "id": "politics_faction_veneta",
         "category": "chariot_faction_HQ",
@@ -29,13 +45,22 @@
         "modern_location": "Rome, Italy",
         "extant_117ce": true,
         "notes": "Remains attributed to the factio Veneta were reported beneath Palazzo Farnese and the neighboring Palazzo Regis, but the identification rests on find circumstances rather than an in-situ dedication like the Greens' statio, so the exact footprint of the Blues' complex is less certain.",
-        "sources": ["Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stabula IIII Factionum", "Digital Augustan Rome, s.v. Stabula Factionum"],
+        "sources": [
+          "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stabula IIII Factionum",
+          "Digital Augustan Rome, s.v. Stabula Factionum"
+        ],
         "confidence": "medium"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.4685, 41.8985] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4685,
+          41.8985
+        ]
+      },
       "properties": {
         "id": "politics_faction_russata",
         "category": "chariot_faction_HQ",
@@ -45,13 +70,22 @@
         "modern_location": "Rome, Italy",
         "extant_117ce": true,
         "notes": "No excavated building has been tied to the Reds specifically. This point marks the general stabula factionum district near the Trigarium and the Circus Flaminius rather than a confirmed findspot; treat it as a district-level approximation only.",
-        "sources": ["Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stabula IIII Factionum", "John H. Humphrey, Roman Circuses: Arenas for Chariot Racing (1986)"],
+        "sources": [
+          "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stabula IIII Factionum",
+          "John H. Humphrey, Roman Circuses: Arenas for Chariot Racing (1986)"
+        ],
         "confidence": "low"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.4695, 41.8975] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4695,
+          41.8975
+        ]
+      },
       "properties": {
         "id": "politics_faction_albata",
         "category": "chariot_faction_HQ",
@@ -61,13 +95,22 @@
         "modern_location": "Rome, Italy",
         "extant_117ce": true,
         "notes": "No excavated building has been tied to the Whites specifically. This point marks the general stabula factionum district near the Trigarium and the Circus Flaminius rather than a confirmed findspot; treat it as a district-level approximation only.",
-        "sources": ["Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stabula IIII Factionum", "John H. Humphrey, Roman Circuses: Arenas for Chariot Racing (1986)"],
+        "sources": [
+          "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stabula IIII Factionum",
+          "John H. Humphrey, Roman Circuses: Arenas for Chariot Racing (1986)"
+        ],
         "confidence": "low"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.5061, 41.9058] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5061,
+          41.9058
+        ]
+      },
       "properties": {
         "id": "politics_castra_praetoria",
         "category": "praetorian_barrack",
@@ -77,13 +120,23 @@
         "modern_location": "Rome, Italy",
         "extant_117ce": true,
         "notes": "Attianus served as joint praetorian prefect alongside Servius Sulpicius Similis at Trajan's death; Hadrian pushed Attianus into retirement in 119. The Biblioteca Nazionale Centrale now stands on part of the site, and stretches of the camp's north and east walls remain visible as part of the later Aurelian Walls.",
-        "sources": ["Tacitus, Annals 4.2", "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Castra Praetoria", "Historia Augusta, Hadrian 4, 9"],
+        "sources": [
+          "Tacitus, Annals 4.2",
+          "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Castra Praetoria",
+          "Historia Augusta, Hadrian 4, 9"
+        ],
         "confidence": "high"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.5063, 41.8886] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5063,
+          41.8886
+        ]
+      },
       "properties": {
         "id": "politics_castra_priora_equites",
         "category": "equites_singulares_barrack",
@@ -93,13 +146,22 @@
         "modern_location": "Rome, Italy",
         "extant_117ce": true,
         "notes": "A larger second camp, the Castra Nova, was built close by only in 193 CE under Septimius Severus to house an enlarged 2,000-man guard, so it did not yet exist in 117 CE and is excluded from this map. The Castra Priora's exact perimeter has not been fully traced; this point follows the 1885 Via Tasso findspot.",
-        "sources": ["Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Castra Equitum Singularium", "Wikipedia, Castra Nova equitum singularium"],
+        "sources": [
+          "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Castra Equitum Singularium",
+          "Wikipedia, Castra Nova equitum singularium"
+        ],
         "confidence": "medium"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.5061, 41.9058] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5061,
+          41.9058
+        ]
+      },
       "properties": {
         "id": "politics_urban_cohorts_rome",
         "category": "urban_cohort_HQ",
@@ -109,13 +171,23 @@
         "modern_location": "Rome, Italy",
         "extant_117ce": true,
         "notes": "By 117 CE Rome most likely had four urban cohorts, numbered in continuation of the nine Praetorian cohorts (broadly X through XIII in the surviving epigraphic record), each about 500 men strong. Two further cohorts of the same series were permanently detached to Lugdunum and Carthage.",
-        "sources": ["Oxford Classical Dictionary, s.v. cohortes urbanae", "Cassius Dio, Roman History 55.24", "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Castra (Urbana)"],
+        "sources": [
+          "Oxford Classical Dictionary, s.v. cohortes urbanae",
+          "Cassius Dio, Roman History 55.24",
+          "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Castra (Urbana)"
+        ],
         "confidence": "high"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [4.8222, 45.7631] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8222,
+          45.7631
+        ]
+      },
       "properties": {
         "id": "politics_urban_cohort_lugdunum",
         "category": "urban_cohort_HQ",
@@ -125,13 +197,22 @@
         "modern_location": "Lyon, France",
         "extant_117ce": true,
         "notes": "Detached from Rome's urban cohort series under the Flavian emperors. No barracks building has been excavated; this point marks the Fourvière hill, the core of Roman Lugdunum, as a district-level approximation rather than a confirmed camp site.",
-        "sources": ["Musee Gallo-Romain de Lyon-Fourviere, epitaph of an optio of the cohors XIII urbana", "Oxford Classical Dictionary, s.v. cohortes urbanae"],
+        "sources": [
+          "Musee Gallo-Romain de Lyon-Fourviere, epitaph of an optio of the cohors XIII urbana",
+          "Oxford Classical Dictionary, s.v. cohortes urbanae"
+        ],
         "confidence": "low"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [10.3210, 36.8513] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.321,
+          36.8513
+        ]
+      },
       "properties": {
         "id": "politics_urban_cohort_carthage",
         "category": "urban_cohort_HQ",
@@ -141,13 +222,22 @@
         "modern_location": "Carthage, Tunisia",
         "extant_117ce": true,
         "notes": "Detached from Rome's urban cohort series under the Flavian emperors, likely to help oversee the African grain fleet feeding Rome. No specific barracks site has been excavated; this point marks the Byrsa hill, the historic center of Roman Carthage, as a district-level approximation.",
-        "sources": ["Oxford Classical Dictionary, s.v. cohortes urbanae", "World History Encyclopedia, Cohortes Urbanae"],
+        "sources": [
+          "Oxford Classical Dictionary, s.v. cohortes urbanae",
+          "World History Encyclopedia, Cohortes Urbanae"
+        ],
         "confidence": "low"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.2911, 41.7564] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2911,
+          41.7564
+        ]
+      },
       "properties": {
         "id": "politics_urban_cohort_ostia",
         "category": "urban_cohort_HQ",
@@ -157,13 +247,21 @@
         "modern_location": "Ostia Antica, Italy",
         "extant_117ce": true,
         "notes": "Attested by inscriptions rather than an excavated barracks. This point marks the forum area of Ostia as a district-level approximation; the detachment's actual quarters have not been identified archaeologically.",
-        "sources": ["Oxford Classical Dictionary, s.v. cohortes urbanae"],
+        "sources": [
+          "Oxford Classical Dictionary, s.v. cohortes urbanae"
+        ],
         "confidence": "low"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.4825, 41.8984] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4825,
+          41.8984
+        ]
+      },
       "properties": {
         "id": "politics_vigiles_i",
         "category": "vigiles_station",
@@ -173,13 +271,22 @@
         "modern_location": "Rome, Italy",
         "extant_117ce": true,
         "notes": "Located near Piazza dei Santi Apostoli based on a 1644 antiquarian report of vaulted halls with columns, mosaics, and statues of the Genius cohortis primae vigilum; no modern excavation has confirmed the guardhouse's exact footprint.",
-        "sources": ["Ostia-Antica.org, Vigiles: The Barracks in Rome", "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stationes Vigilum"],
+        "sources": [
+          "Ostia-Antica.org, Vigiles: The Barracks in Rome",
+          "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stationes Vigilum"
+        ],
         "confidence": "low"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.5092, 41.8956] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5092,
+          41.8956
+        ]
+      },
       "properties": {
         "id": "politics_vigiles_ii",
         "category": "vigiles_station",
@@ -189,13 +296,22 @@
         "modern_location": "Rome, Italy",
         "extant_117ce": true,
         "notes": "Location based on inscriptions found in the area rather than an excavated barracks building; treat this as a district-level approximation.",
-        "sources": ["Ostia-Antica.org, Vigiles: The Barracks in Rome", "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stationes Vigilum"],
+        "sources": [
+          "Ostia-Antica.org, Vigiles: The Barracks in Rome",
+          "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stationes Vigilum"
+        ],
         "confidence": "low"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.4938, 41.9008] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4938,
+          41.9008
+        ]
+      },
       "properties": {
         "id": "politics_vigiles_iii",
         "category": "vigiles_station",
@@ -205,13 +321,22 @@
         "modern_location": "Rome, Italy",
         "extant_117ce": true,
         "notes": "No excavated guardhouse has been identified; this point is a district-level approximation south of the later Baths of Diocletian, which were not built until the early fourth century.",
-        "sources": ["Ostia-Antica.org, Vigiles: The Barracks in Rome", "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stationes Vigilum"],
+        "sources": [
+          "Ostia-Antica.org, Vigiles: The Barracks in Rome",
+          "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stationes Vigilum"
+        ],
         "confidence": "low"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.4855, 41.8786] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4855,
+          41.8786
+        ]
+      },
       "properties": {
         "id": "politics_vigiles_iv",
         "category": "vigiles_station",
@@ -221,13 +346,22 @@
         "modern_location": "Rome, Italy",
         "extant_117ce": true,
         "notes": "Inscriptions naming the cohort's Genius Centuriae were found around San Saba, giving a more confident district fix than most of the other cohorts, though no barracks structure itself has been excavated.",
-        "sources": ["Ostia-Antica.org, Vigiles: The Barracks in Rome", "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stationes Vigilum"],
+        "sources": [
+          "Ostia-Antica.org, Vigiles: The Barracks in Rome",
+          "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stationes Vigilum"
+        ],
         "confidence": "medium"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.4956, 41.8847] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4956,
+          41.8847
+        ]
+      },
       "properties": {
         "id": "politics_vigiles_v",
         "category": "vigiles_station",
@@ -237,13 +371,22 @@
         "modern_location": "Rome, Italy",
         "extant_117ce": true,
         "notes": "Two inscriptions mentioning the Genius Centuriae were found below and beside the church, and partial excavation revealed a courtyard and porticus belonging to the guardhouse, giving this cohort one of the better-supported locations short of the excavated Trastevere excubitorium.",
-        "sources": ["Ostia-Antica.org, Vigiles: The Barracks in Rome", "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stationes Vigilum"],
+        "sources": [
+          "Ostia-Antica.org, Vigiles: The Barracks in Rome",
+          "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stationes Vigilum"
+        ],
         "confidence": "medium"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.4859, 41.8954] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4859,
+          41.8954
+        ]
+      },
       "properties": {
         "id": "politics_vigiles_vi",
         "category": "vigiles_station",
@@ -253,13 +396,22 @@
         "modern_location": "Rome, Italy",
         "extant_117ce": true,
         "notes": "Location is a district-level approximation drawn from the regionary catalogues rather than an excavated building.",
-        "sources": ["Ostia-Antica.org, Vigiles: The Barracks in Rome", "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stationes Vigilum"],
+        "sources": [
+          "Ostia-Antica.org, Vigiles: The Barracks in Rome",
+          "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stationes Vigilum"
+        ],
         "confidence": "low"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.4746, 41.8887] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4746,
+          41.8887
+        ]
+      },
       "properties": {
         "id": "politics_vigiles_vii",
         "category": "vigiles_station",
@@ -269,13 +421,22 @@
         "modern_location": "Rome, Italy",
         "extant_117ce": true,
         "notes": "Discovered in 1865-66 beneath a private garden on what is now Via della Settima Coorte; it is the best-preserved and most precisely located vigiles guardhouse known, giving a hard anchor point missing for the other six cohorts.",
-        "sources": ["Turismo Roma, Excubitorium of the VII Cohort of the Vigiles", "Ostia-Antica.org, Vigiles: A Guardhouse in Rome"],
+        "sources": [
+          "Turismo Roma, Excubitorium of the VII Cohort of the Vigiles",
+          "Ostia-Antica.org, Vigiles: A Guardhouse in Rome"
+        ],
         "confidence": "high"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [27.1842, 39.1325] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1842,
+          39.1325
+        ]
+      },
       "properties": {
         "id": "politics_senator_pergamon",
         "category": "senator_hometown",
@@ -285,13 +446,22 @@
         "modern_location": "Bergama, Turkey",
         "extant_117ce": true,
         "notes": "One of the most prominent easterners in the Trajanic-Hadrianic senate; his career spanned governorships of Judea, Cappadocia-Galatia, Syria, and Dacia.",
-        "sources": ["Prosopographia Imperii Romani, I 507", "Wikipedia, Gaius Julius Quadratus Bassus"],
+        "sources": [
+          "Prosopographia Imperii Romani, I 507",
+          "Wikipedia, Gaius Julius Quadratus Bassus"
+        ],
         "confidence": "high"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-4.5500, 37.6830] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.55,
+          37.683
+        ]
+      },
       "properties": {
         "id": "politics_senator_ucubi",
         "category": "senator_hometown",
@@ -301,13 +471,22 @@
         "modern_location": "Espejo, Spain",
         "extant_117ce": true,
         "notes": "Ancient Ucubi, in Baetica near Corduba. Verus held a second consulship in 121 and a third in 126, cementing his family among the most influential Spanish-provincial houses in the Hadrianic senate.",
-        "sources": ["Oxford Classical Dictionary, s.v. Annius Verus, Marcus", "Historia Augusta, Marcus Aurelius 1"],
+        "sources": [
+          "Oxford Classical Dictionary, s.v. Annius Verus, Marcus",
+          "Historia Augusta, Marcus Aurelius 1"
+        ],
         "confidence": "high"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [11.8833, 44.2856] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8833,
+          44.2856
+        ]
+      },
       "properties": {
         "id": "politics_senator_faventia",
         "category": "senator_hometown",
@@ -317,13 +496,22 @@
         "modern_location": "Faenza, Italy",
         "extant_117ce": true,
         "notes": "Ancient Faventia. Nigrinus was still a leading senator in good standing on 11 August 117; his fall came the following year, when the Senate had him and three other consulars killed on suspicion of plotting against Hadrian.",
-        "sources": ["Wikipedia, Gaius Avidius Nigrinus", "Historia Augusta, Hadrian 7"],
+        "sources": [
+          "Wikipedia, Gaius Avidius Nigrinus",
+          "Historia Augusta, Hadrian 7"
+        ],
         "confidence": "high"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-0.0895, 51.5128] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0895,
+          51.5128
+        ]
+      },
       "properties": {
         "id": "politics_governor_britannia",
         "category": "provincial_governor",
@@ -333,13 +521,22 @@
         "province": "Britannia",
         "modern_location": "London, United Kingdom",
         "extant_117ce": true,
-        "sources": ["List of governors of Roman Britain (Wikipedia)", "roman-britain.co.uk, s.v. Marcus Appius Bradua"],
+        "sources": [
+          "List of governors of Roman Britain (Wikipedia)",
+          "roman-britain.co.uk, s.v. Marcus Appius Bradua"
+        ],
         "confidence": "medium"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [21.2231, 44.7369] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.2231,
+          44.7369
+        ]
+      },
       "properties": {
         "id": "politics_governor_moesia_superior",
         "category": "provincial_governor",
@@ -349,13 +546,22 @@
         "province": "Moesia Superior",
         "modern_location": "Kostolac, Serbia",
         "extant_117ce": true,
-        "sources": ["List of Roman governors of Upper Moesia (Wikipedia)", "Werner Eck, \"Jahres- und Provinzialfasten der senatorischen Statthalter\", Chiron 12 (1982)"],
+        "sources": [
+          "List of Roman governors of Upper Moesia (Wikipedia)",
+          "Werner Eck, \"Jahres- und Provinzialfasten der senatorischen Statthalter\", Chiron 12 (1982)"
+        ],
         "confidence": "low"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [22.7862, 45.503] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7862,
+          45.503
+        ]
+      },
       "properties": {
         "id": "politics_governor_dacia",
         "category": "provincial_governor",
@@ -364,13 +570,22 @@
         "province": "Dacia",
         "modern_location": "Sarmizegetusa, Romania",
         "extant_117ce": true,
-        "sources": ["Wikipedia, s.v. Gaius Julius Quadratus Bassus", "IGR IV 1302 (Pergamon cursus inscription)"],
+        "sources": [
+          "Wikipedia, s.v. Gaius Julius Quadratus Bassus",
+          "IGR IV 1302 (Pergamon cursus inscription)"
+        ],
         "confidence": "high"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [28.6383, 44.1733] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.6383,
+          44.1733
+        ]
+      },
       "properties": {
         "id": "politics_governor_moesia_inferior",
         "category": "provincial_governor",
@@ -379,13 +594,22 @@
         "province": "Moesia Inferior",
         "modern_location": "Constanta, Romania",
         "extant_117ce": true,
-        "sources": ["List of Roman governors of Lower Moesia (Wikipedia)", "CIL X 6321 (Tarracina cursus inscription)"],
+        "sources": [
+          "List of Roman governors of Lower Moesia (Wikipedia)",
+          "CIL X 6321 (Tarracina cursus inscription)"
+        ],
         "confidence": "high"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [27.9611, 40.9686] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.9611,
+          40.9686
+        ]
+      },
       "properties": {
         "id": "politics_governor_thracia",
         "category": "provincial_governor",
@@ -394,13 +618,22 @@
         "province": "Thracia",
         "modern_location": "Marmara Eregli, Turkey",
         "extant_117ce": true,
-        "sources": ["Wikipedia, s.v. Aulus Platorius Nepos", "Oxford Classical Dictionary, s.v. Platorius Nepos, Aulus"],
+        "sources": [
+          "Wikipedia, s.v. Aulus Platorius Nepos",
+          "Oxford Classical Dictionary, s.v. Platorius Nepos, Aulus"
+        ],
         "confidence": "medium"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [32.8597, 39.9334] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.8597,
+          39.9334
+        ]
+      },
       "properties": {
         "id": "politics_governor_galatia_cappadocia",
         "category": "provincial_governor",
@@ -410,13 +643,23 @@
         "province": "Galatia et Cappadocia",
         "modern_location": "Ankara, Turkey",
         "extant_117ce": true,
-        "sources": ["Wikipedia, s.v. Lucius Catilius Severus", "CIL X 8291 = ILS 1041", "Wikipedia, s.v. Mesopotamia (Roman province)"],
+        "sources": [
+          "Wikipedia, s.v. Lucius Catilius Severus",
+          "CIL X 8291 = ILS 1041",
+          "Wikipedia, s.v. Mesopotamia (Roman province)"
+        ],
         "confidence": "high"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [34.8998, 36.9214] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8998,
+          36.9214
+        ]
+      },
       "properties": {
         "id": "politics_governor_cilicia",
         "category": "provincial_governor",
@@ -425,13 +668,22 @@
         "province": "Cilicia",
         "modern_location": "Tarsus, Turkey",
         "extant_117ce": true,
-        "sources": ["Wikipedia, s.v. Gaius Bruttius Praesens Lucius Fulvius Rusticus", "List of Roman governors of Cilicia (Wikipedia)"],
+        "sources": [
+          "Wikipedia, s.v. Gaius Bruttius Praesens Lucius Fulvius Rusticus",
+          "List of Roman governors of Cilicia (Wikipedia)"
+        ],
         "confidence": "high"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [36.1603, 36.2021] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.1603,
+          36.2021
+        ]
+      },
       "properties": {
         "id": "politics_governor_syria",
         "category": "provincial_governor",
@@ -441,13 +693,22 @@
         "province": "Syria",
         "modern_location": "Antakya, Turkey",
         "extant_117ce": true,
-        "sources": ["Cass. Dio 69.1-2", "HA Hadr. 4.6-4.7"],
+        "sources": [
+          "Cass. Dio 69.1-2",
+          "HA Hadr. 4.6-4.7"
+        ],
         "confidence": "high"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [34.8913, 32.5] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8913,
+          32.5
+        ]
+      },
       "properties": {
         "id": "politics_governor_iudaea",
         "category": "provincial_governor",
@@ -456,13 +717,22 @@
         "province": "Iudaea",
         "modern_location": "Caesarea, Israel",
         "extant_117ce": true,
-        "sources": ["Cass. Dio 68.32", "Eusebius, Historia Ecclesiastica 4.2.5"],
+        "sources": [
+          "Cass. Dio 68.32",
+          "Eusebius, Historia Ecclesiastica 4.2.5"
+        ],
         "confidence": "high"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [36.4814, 32.5175] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.4814,
+          32.5175
+        ]
+      },
       "properties": {
         "id": "politics_governor_arabia",
         "category": "provincial_governor",
@@ -471,13 +741,22 @@
         "province": "Arabia Petraea",
         "modern_location": "Bosra, Syria",
         "extant_117ce": true,
-        "sources": ["Wikipedia, s.v. Quintus Coredius Gallus Gargilius Antiquus", "List of Roman governors of Arabia Petraea (Wikipedia)"],
+        "sources": [
+          "Wikipedia, s.v. Quintus Coredius Gallus Gargilius Antiquus",
+          "List of Roman governors of Arabia Petraea (Wikipedia)"
+        ],
         "confidence": "high"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [29.9187, 31.2001] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9187,
+          31.2001
+        ]
+      },
       "properties": {
         "id": "politics_governor_aegyptus",
         "category": "provincial_governor",
@@ -486,13 +765,22 @@
         "province": "Aegyptus",
         "modern_location": "Alexandria, Egypt",
         "extant_117ce": true,
-        "sources": ["Wikipedia, s.v. Marcus Rutilius Lupus", "Wikipedia, s.v. Praefectus Aegypti"],
+        "sources": [
+          "Wikipedia, s.v. Marcus Rutilius Lupus",
+          "Wikipedia, s.v. Praefectus Aegypti"
+        ],
         "confidence": "high"
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [10.3235, 36.8528] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3235,
+          36.8528
+        ]
+      },
       "properties": {
         "id": "politics_governor_africa_proconsularis",
         "category": "provincial_governor",
@@ -501,8 +789,342 @@
         "province": "Africa Proconsularis",
         "modern_location": "Carthage, Tunisia",
         "extant_117ce": true,
-        "sources": ["Wikipedia, s.v. Gaius Julius Cornutus Tertullus", "Journal of Roman Studies, \"Cornutus Tertullus and the Plancii of Perge\""],
+        "sources": [
+          "Wikipedia, s.v. Gaius Julius Cornutus Tertullus",
+          "Journal of Roman Studies, \"Cornutus Tertullus and the Plancii of Perge\""
+        ],
         "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2705,
+          49.9987
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_mogontiacum",
+        "category": "beneficiarii_station",
+        "name": "Mainz",
+        "one_line": "The governor of Germania Superior ran his officium consularis from this Rhine fortress city, and the beneficiarii on his staff handled dispatches, tax oversight, and road security across the province.",
+        "province": "Germania Superior",
+        "modern_location": "Mainz, Germany",
+        "extant_117ce": true,
+        "notes": "Mogontiacum housed the governor of Germania Superior alongside the fortress of Legio XXII Primigenia, making it the natural seat of his officium consularis and its detachment of beneficiarii. A gravestone of a veteran and former beneficiarius consularis was recovered from the Roman cemetery street at Mainz-Weisenau, and other Mainz finds record men holding the related immunis consularis rank. Beneficiarii on a governor's staff served indefinitely rather than for a single term, giving Mogontiacum a standing administrative garrison distinct from the legion itself.",
+        "sources": [
+          "Wikipedia, s.v. Mogontiacum",
+          "Archäologischer Anzeiger, \"Eine neue Grabstele eines Veteranen und ehemaligen beneficiarius consularis aus Mainz-Weisenau\"",
+          "R. Haensch, \"Capita provinciarum\" (officia of provincial governors)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.0982,
+          50.7374
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_bonna",
+        "category": "beneficiarii_station",
+        "name": "Bonn",
+        "one_line": "Bonna anchored the governor of Germania Inferior's military command, and beneficiarii drawn from the legion garrisoned here staffed his officium, policing the lower Rhine road and river crossing.",
+        "province": "Germania Inferior",
+        "modern_location": "Bonn, Germany",
+        "extant_117ce": true,
+        "notes": "The legionary fortress at Bonna supplied beneficiarii to the governor of Germania Inferior's staff for as long as the province existed; a dedication catalogued as AE 1930, 26 records one such altar from the site. A later beneficiarius consularis inscription names the fortress's own garrison, Legio I Minervia, underlining how closely the officium's manpower was tied to whichever legion held Bonna. The bulk of surviving Bonna beneficiarii altars date from the later second and third centuries, so the practice at 117 CE is inferred from the standing garrison rather than a Trajanic-dated stone.",
+        "sources": [
+          "AE 1930, 26",
+          "R. Haensch, \"Capita provinciarum\" (officia of provincial governors)",
+          "Wikipedia, s.v. Bonna"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.77105,
+          48.85031
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_abusina",
+        "category": "beneficiarii_station",
+        "name": "Eining",
+        "one_line": "Abusina guarded the point where the Danube frontier road met Raetia's inland route network, and beneficiarii lance-head insignia recovered here mark it as a staffed cursus publicus checkpoint.",
+        "province": "Raetia",
+        "modern_location": "Eining, Germany",
+        "extant_117ce": true,
+        "notes": "Cohors IV Gallorum built Abusina's original earth-and-timber fort in 79-81 CE, well over a generation before this map's snapshot, at the spot where the Raetian limes road left the Danube for the interior. Excavators have recovered beneficiarius lance-head insignia from the Abusina-Eining site, physical proof of the rank's presence at what functioned as a road-security and customs checkpoint on the province's northern edge. Its position at a river-to-road junction made it exactly the kind of spot the officium consularis of Raetia would keep permanently staffed.",
+        "sources": [
+          "Wikipedia, s.v. Abusina",
+          "ResearchGate, \"Large and miniature spearshaped insignia of the Roman empire ('beneficiarius lances')\""
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8614,
+          48.1133
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_carnuntum",
+        "category": "beneficiarii_station",
+        "name": "Petronell-Carnuntum",
+        "one_line": "The governor of Pannonia Superior ran his officium consularis from Carnuntum, and an altar to Jupiter Optimus Maximus still stands built into the site's ancient masonry.",
+        "province": "Pannonia Superior",
+        "modern_location": "Petronell-Carnuntum, Austria",
+        "extant_117ce": true,
+        "notes": "Carnuntum served as the seat of the governor of Pannonia Superior as well as the fortress of Legio XIV Gemina, making the officium consularis and its beneficiarii detachment a standing feature of the site by the early second century. An altar dedicated to Jupiter Optimus Maximus, the deity beneficiarii overwhelmingly favored for their end-of-posting dedications, is set into the masonry near an entrance to the archaeological park today. As a full provincial capital rather than an outlying road station, Carnuntum's beneficiarii worked from inside the fortress and governor's residence itself rather than a separate rural shrine.",
+        "sources": [
+          "Roamin' The Empire, \"Carnuntum, Pannonia Superior\"",
+          "R. Haensch, \"Capita provinciarum\" (officia of provincial governors)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.87,
+          46.4198
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_poetovio",
+        "category": "beneficiarii_station",
+        "name": "Ptuj",
+        "one_line": "Poetovio headquartered the portorium Illyrici, the customs office taxing goods along the entire Danube frontier, making it one of the empire's busiest beneficiarii and customs-police postings.",
+        "province": "Pannonia Superior",
+        "modern_location": "Ptuj, Slovenia",
+        "extant_117ce": true,
+        "notes": "Poetovio grew from a legionary base into Colonia Ulpia Traiana Poetovio under Trajan and simultaneously served as the central administrative headquarters of the publicum portorium Illyrici, the customs district covering Noricum, both Pannonias, both Moesias, Dacia, and Thracia. The same freedman-procurator, Titus Iulius Capito, was honored for his portorium service in seven separate customs towns across this district, with Poetovio at its administrative core, and beneficiarii worked alongside the portorium's civilian slave and freedman staff to police the frontier's tax and road traffic. Few sites on the Danube combined a customs headquarters and a beneficiarii posting as thoroughly as Poetovio did in the early second century.",
+        "sources": [
+          "Oxford Classical Dictionary, s.v. Poetovio",
+          "ostia-antica.org, \"The district of the Publicum Portorii Illyrici\"",
+          "researchgate.net, \"Roman customs station from Capidava\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0508,
+          47.5651
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_aquincum",
+        "category": "beneficiarii_station",
+        "name": "Budapest",
+        "one_line": "Once Trajan split Pannonia in 107 CE, Aquincum became the governor's seat for Pannonia Inferior, and its officium consularis kept beneficiarii on hand to run the province's administration.",
+        "province": "Pannonia Inferior",
+        "modern_location": "Budapest, Hungary",
+        "extant_117ce": true,
+        "notes": "Aquincum anchored Pannonia Inferior as both the fortress of Legio II Adiutrix and, from the province's creation in 107 CE, the residence of its governor and his officium consularis. A governor's officium at a provincial capital always drew beneficiarii from the resident legion to staff his administrative, judicial, and courier needs, making their presence at Aquincum a structural certainty even where individual dedications are scarcer than at outlying road stations. The fortress was still under stone reconstruction when this map's snapshot falls, work begun essentially at the 117 CE date itself.",
+        "sources": [
+          "Wikipedia, s.v. Aquincum",
+          "R. Haensch, \"Capita provinciarum\" (officia of provincial governors)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.0122,
+          45.9058
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_praetorium_latobicorum",
+        "category": "beneficiarii_station",
+        "name": "Trebnje",
+        "one_line": "This station's very name, meaning the governor's post-house of the Latobici tribe, preserves its function as a fixed beneficiarii checkpoint on the road linking Italy to the Danube frontier.",
+        "province": "Pannonia Superior",
+        "modern_location": "Trebnje, Slovenia",
+        "extant_117ce": true,
+        "notes": "Praetorium Latobicorum sat on the route linking Italy to the Danube, close to Celeia in the southwesternmost corner of Pannonia Superior, and multiple beneficiarii consulares dedications are known from the site. Its earliest securely dated altar carries a consular date of 158 CE, decades after this map's snapshot, and the station and its counterpart at Celeia are recorded alternating in use as the beneficiarii posting shifted between them over the second century. The road itself and the strategic need for a checkpoint here plausibly predate that first dated stone, but the specific station is documented with confidence only later, so this entry is flagged accordingly.",
+        "sources": [
+          "Trismegistos, s.v. Praetorium Latobicorum (Trebnje)",
+          "Pleiades, s.v. Praetorium Latobicorum",
+          "R. L. Dise, \"The beneficiarii procuratoris of Celeia and the development of the statio network\""
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7862,
+          45.503
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_sarmizegetusa",
+        "category": "beneficiarii_station",
+        "name": "Sarmizegetusa",
+        "one_line": "Ulpia Traiana Sarmizegetusa served as the governor's capital for Rome's newest province, and beneficiarii on his staff kept watch over Dacia's roads and dispatches from the moment the province was founded.",
+        "province": "Dacia",
+        "modern_location": "Sarmizegetusa, Romania",
+        "extant_117ce": true,
+        "notes": "Founded by Trajan as Dacia's colonia and provincial capital after the conquest of 106 CE, Ulpia Traiana Sarmizegetusa housed the governor and his officium consularis for the entire life of the new province. Beneficiarii consulares are documented across Roman Dacia's road network, and a governor's own capital was the administrative hub from which those postings were assigned and staffed. The province's officium is well studied through its epigraphic record, though the bulk of individually dated Dacian beneficiarii altars cluster in the decades after 117 CE rather than at the province's very founding.",
+        "sources": [
+          "Wikipedia, s.v. Ulpia Traiana Sarmizegetusa",
+          "academia.edu, \"Officium consularis: The Evidence of Dacia\""
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.5701,
+          46.0658
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_apulum",
+        "category": "beneficiarii_station",
+        "name": "Alba Iulia",
+        "one_line": "Apulum's legionary fortress anchored Dacia's central road network, and beneficiarii drawn from its garrison, Legio XIII Gemina, staffed the province's cursus publicus and customs checkpoints.",
+        "province": "Dacia",
+        "modern_location": "Alba Iulia, Romania",
+        "extant_117ce": true,
+        "notes": "Legio XIII Gemina moved to Apulum in 106 CE at Trajan's order to garrison the newly conquered province, and the fortress grew into Dacia's largest military and civilian settlement, sitting astride the road linking Sarmizegetusa to the province's northern frontier. Commanders and officers of the Thirteenth left a substantial epigraphic record at Apulum over the following century, including, by the Severan period, no fewer than seventeen dedicatory altars from the legion's commanders alone. Beneficiarii drawn from this same legion staffed the governor's officium and the surrounding road network from the province's earliest years.",
+        "sources": [
+          "Wikipedia, s.v. Apulum (conurbation)",
+          "Wikipedia, s.v. Legio XIII Gemina"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.8374,
+          47.1862
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_samum",
+        "category": "beneficiarii_station",
+        "name": "Caseiu",
+        "one_line": "Samum's fort, raised the moment Trajan finished conquering Dacia, became one of the most thoroughly documented beneficiarii consularis postings on the province's northern frontier.",
+        "province": "Dacia",
+        "modern_location": "Caseiu, Romania",
+        "extant_117ce": true,
+        "notes": "Trajan's army built Samum's timber fort in 101-102 CE, during the Dacian Wars themselves, on the road running north through what would become Dacia Porolissensis, and the site remained garrisoned for the next century and a half. Scholarship on Roman Dacia treats Samum as one of the province's best-documented beneficiarii consularis stations, with a large epigraphic assemblage of votive dedications recovered from its sacred precinct. Its founding date, squarely within Trajan's own reign, makes it one of the more securely Trajanic-era beneficiarii postings on this map rather than a station only attested generations later.",
+        "sources": [
+          "Wikipedia, s.v. Samum (castrum)",
+          "academia.edu, \"Les beneficiarii consularis de Samum\"",
+          "academia.edu, \"Religious Manifestations of beneficiarii consularis of Roman Dacia\""
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.2231,
+          44.7369
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_viminacium",
+        "category": "beneficiarii_station",
+        "name": "Kostolac",
+        "one_line": "Viminacium anchored Moesia Superior's governor and the fleet base watching the Danube, and its officium consularis staffed beneficiarii to run the province's roads and river traffic.",
+        "province": "Moesia Superior",
+        "modern_location": "Kostolac, Serbia",
+        "extant_117ce": true,
+        "notes": "Viminacium served as the seat of the governor of Moesia Superior and the fortress of Legio VII Claudia, combining military, administrative, and river-fleet functions at a single bend of the Danube. A governor's capital of this scale required a standing officium consularis, and beneficiarii drawn from the resident legion were its natural enforcement arm for road security and customs oversight along this stretch of frontier. The city later grew into one of the largest urban centers on the Danube, with a population estimated at up to 40,000 at its height.",
+        "sources": [
+          "Wikipedia, s.v. Viminacium",
+          "R. Haensch, \"Capita provinciarum\" (officia of provincial governors)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8222,
+          45.7631
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_lugdunum",
+        "category": "beneficiarii_station",
+        "name": "Lyon",
+        "one_line": "The governor of Gallia Lugdunensis ran his officium from Lugdunum, and a beneficiarius on his staff is named on a securely dated first-century career inscription from the city.",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Lyon, France",
+        "extant_117ce": true,
+        "notes": "Lugdunum was the provincial capital of Gallia Lugdunensis and home to its governor's officium consularis for the entire life of the province. A career inscription records a soldier of the cohors I urbana, Lugdunum's own garrison unit, serving as beneficiarius to the governor Tettienus Serenus starting around 79 CE before being promoted to cornicularius under his successors in 83, giving Gaul's beneficiarii network a securely first-century anchor point. Because Lugdunum's beneficiarii worked from inside the governor's own residence rather than a separate rural shrine, no dedicated votive precinct comparable to the Rhine and Danube frontier sanctuaries has been identified in the city.",
+        "sources": [
+          "Wikipedia, s.v. cohortes urbanae",
+          "Virginia Tech Scholarly Communication, \"ElAnt v4n1 - Beneficiarius Eius\""
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1432,
+          46.2044
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_genava",
+        "category": "beneficiarii_station",
+        "name": "Geneva",
+        "one_line": "A beneficiarii detachment guarded Genava's Rhone bridge and staffed its customs post, collecting the quadragesima Galliarum, the 2.5 percent toll levied on goods crossing into and out of Gaul.",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Geneva, Switzerland",
+        "extant_117ce": true,
+        "notes": "Genava sat at the edge of the Swiss plateau where the roads from Italy and Narbonensis converged on the Rhone, and its river traffic and two harbors made it a natural collection point for the quadragesima Galliarum, the empire's Gallic customs tax. A military post staffed by beneficiarii guarded the Rhone bridge here specifically to secure this toll station, one of the clearest documented cases anywhere of beneficiarii doing customs-police duty exactly as this category describes. Though legally only a vicus within the civitas of Vienna, Genava's commercial and administrative weight far outstripped its formal status.",
+        "sources": [
+          "Roamin' The Empire, \"Genava, Gallia Narbonensis\"",
+          "Grokipedia, \"Quadragesima Galliarum\"",
+          "Perseus, Princeton Encyclopedia of Classical Sites, s.v. Genava"
+        ],
+        "confidence": "medium"
       }
     }
   ]
