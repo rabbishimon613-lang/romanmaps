@@ -47,12 +47,15 @@ export default function PeopleMarkers() {
         if (!cancelled) setTimeout(attach, 300);
         return;
       }
-      const feats = await ensureFeatures();
-      if (cancelled) return;
-
       markersRef.current.forEach((m) => m.remove());
       markersRef.current = [];
       if (!visible) return;
+
+      // Only fetch people_117.geojson once the group is actually on — previously this ran
+      // unconditionally before the visibility check above, so every page load downloaded the
+      // file even with "117 CE — people & events" off.
+      const feats = await ensureFeatures();
+      if (cancelled) return;
 
       const popup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 18 });
 

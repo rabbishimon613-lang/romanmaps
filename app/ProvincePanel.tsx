@@ -60,8 +60,13 @@ export default function ProvincePanel() {
   }, [slug]);
 
   useEffect(() => {
+    // Don't fetch politics.geojson until a province panel is actually opened — this component
+    // mounts unconditionally, so an unguarded fetch here downloaded the file on every page load
+    // regardless of whether the user ever clicked a province. loadGovernors() caches its result,
+    // so re-opening a (or another) province panel later never re-fetches.
+    if (!open) return;
     loadGovernors().then(setGovernors);
-  }, []);
+  }, [open]);
 
   if (!rendered) return null;
   const p = rendered;
