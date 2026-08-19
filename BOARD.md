@@ -518,8 +518,9 @@ to prevent. Building locally to *test* your own work is expected and fine.
       (documented workaround for the `demotiles.maplibre.org` block, see `[02-P0-4]`) — both new
       layers add with valid paint expressions, screenshotted correctly at 1280x900 light and
       375x812 dark.
-- [ ] `[02-FIX]` **`halo-colors`** `fix` — ~12 layers in `Map.tsx` hardcode `#f4ead5` (the
-      *light* land colour) as halo/stroke regardless of theme. Replace with `P.labelHalo`.
+- [~] `[02-FIX]` **`halo-colors`** `fix` — claimed by cloud shift 32, 2026-08-19 00:15. ~12 layers
+      in `Map.tsx` hardcode `#f4ead5` (the *light* land colour) as halo/stroke regardless of
+      theme. Replace with `P.labelHalo`.
 - [ ] `[08-P0-1]` **`palaeo-coasts`** `fix` — Ancient coastline patches for Ostia/Portus,
       Ravenna, Ephesus, Miletus, Priene, Rhine–Meuse, the Fens, Romney Marsh, Maeander,
       Scamander, Lake Fucinus, Lake Copais.
@@ -616,7 +617,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       (existing behavior, for arrow-key pan) and picks up the ring too, though at full-viewport
       size the ring renders just outside the visible canvas and is effectively invisible — not a
       regression, just a size where the effect doesn't show.
-- [ ] `[05-P0-3]` **`reduced-motion`** `polish` — Honour `prefers-reduced-motion`.
+- [~] `[05-P0-3]` **`reduced-motion`** `polish` — claimed by cloud shift 32, 2026-08-19 00:15.
+      Honour `prefers-reduced-motion`.
 - [ ] `[13-P0-3]` **`image-fallback`** `illustrate` — Static map thumbnail for the 145 places
       with no image.
 - [ ] `[11-P0-2]` **`lazy-overlays`** `polish` — Fetch a thematic layer's data on first enable.
@@ -633,7 +635,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
 
 ## P2
 
-- [ ] `[07-P1-3]` **`prices`** `deepen` — Prices and wages; extend the currency converter.
+- [~] `[07-P1-3]` **`prices`** `deepen` — claimed by cloud shift 32, 2026-08-19 00:15. Prices and
+      wages; extend the currency converter.
 - [x] `[07-P1-4]` **`governors`** `add` — Done 2026-08-17 by cloud shift 25, with an honest
       shortfall against the ~45 estimate — see note below. 12 governors added to
       `public/data/politics.geojson` (`category: "provincial_governor"`, reusing the existing
