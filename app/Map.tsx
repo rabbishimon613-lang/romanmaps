@@ -1491,6 +1491,8 @@ export default function Map() {
                 vigiles_station: "Vigiles station",
                 senator_hometown: "Senator's hometown",
                 provincial_governor: "Provincial governor, 117 CE",
+                beneficiarii_station: "Beneficiarius station",
+                courier_post: "Imperial courier post",
               };
               const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.one_line)}</div>` : "";
               politicsPopup
