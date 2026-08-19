@@ -55,7 +55,7 @@ type AncientSource = {
   note?: string;
 };
 
-/** Google-Maps-style place details panel: click a POI (app/Map.tsx pois-dot layer) to open,
+/** Google-Maps-style place details panel: click a POI (app/PoiMarkers.tsx HTML pin) to open,
  * slides in from the left on desktop / up from the bottom on mobile. Replaces the old Maplibre
  * click-popup. On mobile the sheet snaps between a half-height and a full-height state via the
  * drag handle at its top edge; dragging well below half height dismisses it. "Directions" sets

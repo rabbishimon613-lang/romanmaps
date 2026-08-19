@@ -25,9 +25,9 @@ const CLUSTER_DISABLE_ZOOM = 14;
  * Category chip filter (top row) isolates to only the selected categories; the Layers panel's
  * per-category checkboxes (useHiddenCategories) independently hide specific ones — both AND
  * together, see the two `continue` guards below. The Layers panel's "Landmarks" toggle also
- * gates this component directly (same pattern as PeopleMarkers.tsx) — the native
- * pois-dot/pois-label map layers that toggle used to point at are vestigial (radius/opacity
- * forced to 0), so before this fix the toggle did nothing visible. */
+ * gates this component directly (same pattern as PeopleMarkers.tsx) — there is no native
+ * pois-dot/pois-label map layer any more (removed as dead code; these HTML markers were always
+ * the only thing actually rendering POIs), so this is this group's only visibility switch. */
 export default function PoiMarkers() {
   const filters = useCategoryFilters();
   const hiddenCategories = useHiddenCategories();

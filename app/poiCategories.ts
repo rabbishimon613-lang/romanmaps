@@ -1,5 +1,5 @@
-/** Shared POI category → color/label mapping, single source of truth for both the map's
- * pois-dot layer (app/Map.tsx) and the details panel chip (app/PlaceDetails.tsx) and legend
+/** Shared POI category → color/label mapping, single source of truth for the map's HTML pin
+ * markers (app/PoiMarkers.tsx), the details panel chip (app/PlaceDetails.tsx), and the legend
  * (app/Legend.tsx). Categories are grouped into a handful of visual "families" (Google-Maps-style
  * POI icon sets group dozens of sub-types under a shared glyph+color) so the legend stays short
  * even as pois.geojson accumulates more granular categories shift over shift. */

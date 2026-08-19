@@ -9,7 +9,6 @@ import { selectProvince, clearProvince, subscribeSelectedProvince } from "./useP
 import { PROVINCES } from "./provinces";
 import { isRulerActive } from "./useRuler";
 import { isDirectionsActive } from "./useDirections";
-import { categoryColorMatchPairs, DEFAULT_COLOR } from "./poiCategories";
 import { motionDuration } from "./reducedMotion";
 import { ostiaEntry } from "./ostiaDescriptions";
 import { pompeiiEntry } from "./pompeiiDescriptions";
@@ -690,69 +689,33 @@ export default function Map() {
           selectPoi(poiIndex[initialView.poiId].props, poiIndex[initialView.poiId].coords);
         }
 
+        // Source only — no native circle/symbol layers. POI markers + labels render as HTML
+        // pins via app/PoiMarkers.tsx, which reads straight from this same source's data and
+        // already stopPropagation()s its own click handler before it can reach the map. The
+        // native "pois-dot"/"pois-label" layers this block used to add were permanently
+        // invisible (radius/opacity forced to 0, a disabled label filter) and existed only so
+        // the empty-click handler below had something to query — removed together with that
+        // handler's dependency on them, see next comment.
         map.addSource("pois", { type: "geojson", data: pois });
-        map.addLayer({
-          id: "pois-dot",
-          type: "circle",
-          source: "pois",
-          filter: ["==", ["get", "extant_117ce"], true],
-          paint: {
-            // Slightly larger + a thicker halo than the base gazetteer's places-dot layer, so POI
-            // markers stay legible where they sit on top of dense roads-main convergences (e.g.
-            // Forum Romanum at Rome's road hub) — flagged as a visibility bug by Shift 4.
-            "circle-radius": 0,
-            "circle-opacity": 0,
-            "circle-color": ["match", ["get", "category"], ...categoryColorMatchPairs(), DEFAULT_COLOR] as any,
-            "circle-stroke-color": P.labelHalo,
-            "circle-stroke-width": 2.2,
-          },
-        });
-        map.addLayer({
-          id: "pois-label",
-          type: "symbol",
-          source: "pois",
-          // Labels rendered by app/PoiMarkers.tsx HTML markers; disable this layer.
-          filter: ["==", ["get", "extant_117ce"], "__disabled__"],
-          minzoom: 24,
-          layout: { "text-field": "" },
-        });
 
-        // Click a POI -> open the slide-in Place details panel (app/PlaceDetails.tsx),
-        // driven by the shared usePoiPanel store rather than a Maplibre popup.
-        map.on("mouseenter", "pois-dot", () => {
+        // Clicking empty map space (nothing else's click handler already claimed this event)
+        // closes the panel, Google-Maps-style. HTML markers (POIs, people, sites) all call
+        // stopPropagation() before a click reaches the map, so this fires only for genuine
+        // empty-space clicks — no layer query needed.
+        map.on("click", () => {
           if (!map) return;
-          map.getCanvas().style.cursor = "pointer";
-        });
-        map.on("mouseleave", "pois-dot", () => {
-          if (!map) return;
-          map.getCanvas().style.cursor = "";
-        });
-        map.on("click", "pois-dot", (e) => {
-          const f = e.features?.[0];
-          if (!f) return;
-          const props: any = f.properties || {};
-          // @ts-ignore
-          const coords = (f.geometry.type === "Point" && f.geometry.coordinates) || null;
-          if (!coords) return;
-          selectPoi(props, coords as [number, number]);
-        });
-        // Clicking empty map space (no POI under the cursor) closes the panel, Google-Maps-style.
-        map.on("click", (e) => {
-          if (!map) return;
-          const hits = map.queryRenderedFeatures(e.point, { layers: ["pois-dot"] });
-          if (hits.length === 0) {
-            clearPoi();
-            clearProvince();
-          }
+          clearPoi();
+          clearProvince();
         });
 
         // Click a province (empty land, no more specific place under the cursor) -> highlight it
         // and open app/ProvincePanel.tsx — [Province overlay, FEATURE_BACKLOG.md P1]. Registered
-        // after the generic empty-click handler above, so on a click that also hits a POI/building
-        // (both registered later still, e.g. "pois-dot" and every site's `*-buildings-fill`), the
-        // more specific handler's own selectPoi() runs last and wins, closing this panel back down
-        // via the registerPoiSelectedSideEffect wiring in useProvincePanel.ts — same last-writer-
-        // wins pattern the ostia-buildings-fill handler already relies on against this same click.
+        // after the generic empty-click handler above, so on a click that also hits a building
+        // layer (e.g. every site's `*-buildings-fill`, registered later still), that more specific
+        // handler's own selectPoi() runs last and wins, closing this panel back down via the
+        // registerPoiSelectedSideEffect wiring in useProvincePanel.ts — same last-writer-wins
+        // pattern the ostia-buildings-fill handler already relies on against this same click. A
+        // click on an HTML POI marker never reaches either handler at all — see the comment above.
         // Zoom-gated to the empire/region-level view: provinces-fill covers virtually all land, so
         // without a gate every close-up click (measuring, routing, browsing a city) would also pop
         // a province panel. Also skipped outright while the ruler or Directions is capturing clicks

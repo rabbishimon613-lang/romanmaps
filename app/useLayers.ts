@@ -48,7 +48,8 @@ export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: strin
   { id: "rivers", label: "Rivers & lakes", mapLayerIds: ["rivers", "lakes"], base: true },
   { id: "provinces", label: "Province borders", mapLayerIds: ["provinces-fill", "provinces-line"], base: true },
   { id: "places", label: "Cities & towns", mapLayerIds: ["places-dot", "places-label-major", "places-label-minor"], base: true },
-  { id: "pois", label: "Landmarks", mapLayerIds: ["pois-dot", "pois-label"], base: true },
+  // No native map layers — app/PoiMarkers.tsx reads this group's visibility directly.
+  { id: "pois", label: "Landmarks", mapLayerIds: [], base: true },
   { id: "road-stations", label: "Road stations", mapLayerIds: ["road-stations"] },
   // People/event markers are HTML overlays (app/PeopleMarkers.tsx), not native map layers — that
   // component reads this same group's boolean directly via useLayers() to decide whether to

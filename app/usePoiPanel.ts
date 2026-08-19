@@ -44,7 +44,7 @@ export function clearPoi() {
   listeners.forEach((l) => l());
 }
 
-/** The currently-selected POI (from clicking a pois-dot on the map), shared with PlaceDetails.tsx. */
+/** The currently-selected POI (from clicking a POI marker on the map), shared with PlaceDetails.tsx. */
 export function usePoiPanel(): SelectedPoi {
   return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 }
