@@ -74,7 +74,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       silently. **Not attempted**: auditing the other 73 cross-file collisions for the same
       both-records-disagree shape — the ticket's own "worth checking while in here" note, left
       for a dedicated pass since it's a materially bigger scope than this one pair.
-- [ ] `[08-P1-6]` **`baalbek-dating`** `verify` — Both Baalbek temples carry `built: 60` in
+- [~] `[08-P1-6]` **`baalbek-dating`** `verify` — claimed by cloud shift 32, 2026-08-19 00:35.
+      Both Baalbek temples carry `built: 60` in
       `pois.geojson`, and the Temple of Bacchus is conventionally dated a good deal later — mid
       2nd century, under Antoninus Pius. If that is right, the building is barely begun at the
       117 CE snapshot rather than nearly finished. The description written on 2026-08-16 was
