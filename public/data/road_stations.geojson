@@ -5422,6 +5422,460 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3573,
+          44.1141
+        ]
+      },
+      "properties": {
+        "id": "station_ad_compitum",
+        "category": "mutatio",
+        "name": "Ad Compitum",
+        "road": "Via Aemilia",
+        "distance_from_previous_mp": 13,
+        "identified": false,
+        "notes": "Ad Compitum served as a horse-changing station on the Via Aemilia, its name simply meaning 'at the crossroads.' The Itinerarium Burdigalense recorded it as the first stop the Bordeaux pilgrim passed after leaving Ariminum in 333 CE, on the stretch running toward Caesena. No archaeological remains have been tied definitively to the site, and its precise location along the corridor east of Cesena remains unconfirmed.",
+        "sources": [
+          "Itinerarium Burdigalense, mutatio Ad Compitum"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2431,
+          44.1391
+        ]
+      },
+      "properties": {
+        "id": "station_caesena",
+        "category": "mansio",
+        "name": "Caesena",
+        "road": "Via Aemilia",
+        "distance_from_previous_mp": 7,
+        "identified": true,
+        "notes": "Caesena stood on the Via Aemilia as a river town on the Savio, appearing in the Antonine Itinerary as 'Curva Caesena' twenty Roman miles out of Ariminum. Julius Caesar named it alongside Ariminum during his march on Rome in 49 BCE, and the Itinerarium Burdigalense listed it as a civitas six miles beyond the mutatio Ad Compitum. Modern Cesena's historic center preserves the Roman street grid along the line of the ancient road.",
+        "sources": [
+          "Itin. Ant., Iter ab Arimino Placentiam (Curva Caesena)",
+          "Itinerarium Burdigalense, civitas Cesena"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1244,
+          44.1948
+        ]
+      },
+      "properties": {
+        "id": "station_forum_popilii",
+        "category": "mansio",
+        "name": "Forum Popilii",
+        "road": "Via Aemilia",
+        "distance_from_previous_mp": 8,
+        "identified": true,
+        "notes": "Forum Popilii took its name from the consul Publius Popillius Laenas, credited with founding the town around 132 BCE. Pliny the Elder listed it among the municipia of Gallia Cispadana, and both the Tabula Peutingeriana and the Itinerarium Burdigalense placed it on the Via Aemilia between Caesena and Forum Livii. Modern Forlimpopoli sits on the Roman site, roughly midway between Cesena and Forli.",
+        "sources": [
+          "Pliny, Naturalis Historia III.115",
+          "Tabula Peutingeriana",
+          "Itinerarium Burdigalense, civitas Foro Populi"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0407,
+          44.2226
+        ]
+      },
+      "properties": {
+        "id": "station_forum_livii",
+        "category": "mansio",
+        "name": "Forum Livii",
+        "road": "Via Aemilia",
+        "distance_from_previous_mp": 5,
+        "identified": true,
+        "notes": "Forum Livii arose as a forum along the Via Aemilia, most likely named for the censor Marcus Livius Salinator in the early second century BCE. The Itinerarium Burdigalense recorded it as a civitas five miles beyond Forum Popilii, and the Antonine Itinerary placed the combined stretch from Caesena at thirteen miles. Modern Forli grew directly from the Roman settlement, retaining its position astride the ancient road.",
+        "sources": [
+          "Itin. Ant., Iter ab Arimino Placentiam",
+          "Itinerarium Burdigalense, civitas Foro Livi"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8878,
+          44.2853
+        ]
+      },
+      "properties": {
+        "id": "station_faventia_aemilia",
+        "category": "mansio",
+        "name": "Faventia",
+        "road": "Via Aemilia",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Faventia sat on the Via Aemilia between Forum Livii and Forum Cornelii, a colonia by the late Republic and the site of a decisive Social War battle in 82 BCE. The Antonine Itinerary placed it ten Roman miles from Forum Livii, and the Itinerarium Burdigalense listed it as a civitas on the same stretch. Modern Faenza occupies the ancient site, later famous for the maiolica pottery that gave faience its name.",
+        "sources": [
+          "Itin. Ant., Iter ab Arimino Placentiam",
+          "Itinerarium Burdigalense, civitas Faventia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7144,
+          44.3525
+        ]
+      },
+      "properties": {
+        "id": "station_forum_cornelii",
+        "category": "mansio",
+        "name": "Forum Cornelii",
+        "road": "Via Aemilia",
+        "distance_from_previous_mp": 11,
+        "identified": true,
+        "notes": "Forum Cornelii was founded as a forum along the Via Aemilia, traditionally linked to Lucius Cornelius Sulla, who resettled veterans there after 82 BCE. The Antonine Itinerary and the Itinerarium Burdigalense both listed it as a civitas on the stretch running toward Claterna. Modern Imola preserves the Roman decumanus as its main street, with the ancient forum beneath the historic center.",
+        "sources": [
+          "Itin. Ant., Iter ab Arimino Placentiam",
+          "Itinerarium Burdigalense, civitas Foro Corneli"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5045,
+          44.4345
+        ]
+      },
+      "properties": {
+        "id": "station_claterna",
+        "category": "mansio",
+        "name": "Claterna",
+        "road": "Via Aemilia",
+        "distance_from_previous_mp": 13,
+        "identified": true,
+        "notes": "Claterna grew from a Via Aemilia waypoint into a town comparable in size to its neighbors Bononia and Forum Cornelii, founded in the first half of the second century BCE. The Antonine Itinerary and the Itinerarium Burdigalense both recorded it as a civitas on the stretch between Forum Cornelii and Bononia. Excavations at Ozzano dell'Emilia have uncovered its forum, theater, amphitheater, and a stretch of the paved road, now an archaeological park.",
+        "sources": [
+          "Itin. Ant., Iter ab Arimino Placentiam",
+          "Itinerarium Burdigalense, civitas Claterno",
+          "https://en.wikipedia.org/wiki/Claternae"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3426,
+          44.4949
+        ]
+      },
+      "properties": {
+        "id": "station_bononia_aemilia",
+        "category": "mansio",
+        "name": "Bononia",
+        "road": "Via Aemilia",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Bononia was recorded as a fixed civitas waypoint on the Via Aemilia's own itinerary listing, ten Roman miles beyond Claterna by both the Antonine Itinerary and the Itinerarium Burdigalense. Both sources used it as the point where the road from Ariminum met the routes climbing south into the Apennines. The Bordeaux pilgrim's 333 CE account measured the onward stretch toward Mutina from this point.",
+        "sources": [
+          "Itin. Ant., Iter ab Arimino Placentiam",
+          "Itinerarium Burdigalense, civitas Bononia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1018,
+          44.5827
+        ]
+      },
+      "properties": {
+        "id": "station_ad_medias",
+        "category": "mutatio",
+        "name": "Ad Medias",
+        "road": "Via Aemilia",
+        "distance_from_previous_mp": 15,
+        "identified": false,
+        "notes": "Ad Medias, 'the middle station,' served as a horse-changing point on the Via Aemilia at roughly the center of the long, straight run between Bononia and Mutina. The Itinerarium Burdigalense recorded it fifteen Roman miles out of Bononia on the pilgrim's route in 333 CE. Its exact location, likely near modern Castelfranco Emilia or Bazzano, has not been fixed by excavation.",
+        "sources": [
+          "Itinerarium Burdigalense, mutatio Ad Medias"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9734,
+          44.6295
+        ]
+      },
+      "properties": {
+        "id": "station_victoriola",
+        "category": "mutatio",
+        "name": "Victoriola",
+        "road": "Via Aemilia",
+        "distance_from_previous_mp": 8,
+        "identified": false,
+        "notes": "Victoriola functioned as a mutatio on the Via Aemilia between Ad Medias and Mutina, its diminutive name meaning 'little victory.' The Itinerarium Burdigalense placed it eight Roman miles beyond Ad Medias and three miles short of Mutina. No archaeological site has been securely matched to the station, though it likely stood near modern San Damaso on Modena's eastern approach.",
+        "sources": [
+          "Itinerarium Burdigalense, mutatio Victoriolas"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9252,
+          44.6471
+        ]
+      },
+      "properties": {
+        "id": "station_mutina_aemilia",
+        "category": "mansio",
+        "name": "Mutina",
+        "road": "Via Aemilia",
+        "distance_from_previous_mp": 3,
+        "identified": true,
+        "notes": "Mutina appeared in both the Antonine Itinerary and the Itinerarium Burdigalense as a civitas on the Via Aemilia, twenty-five Roman miles beyond Bononia by the Antonine reckoning. The town gave its name to the Mutina campaign of 43 BCE, fought along this road when Mark Antony besieged Decimus Brutus inside its walls. Both itineraries used it as a fixed waypoint for the continuing stretch toward Regium Lepidi.",
+        "sources": [
+          "Itin. Ant., Iter ab Arimino Placentiam",
+          "Itinerarium Burdigalense, civitas Mutena"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.8103,
+          44.6672
+        ]
+      },
+      "properties": {
+        "id": "station_pons_secies",
+        "category": "mutatio",
+        "name": "Pons Secies",
+        "road": "Via Aemilia",
+        "distance_from_previous_mp": 7,
+        "identified": false,
+        "notes": "Pons Secies, 'the bridge of the Secia,' marked the Via Aemilia's crossing of the river the Romans called the Secia, identified with the modern Secchia. The Itinerarium Burdigalense recorded it as a mutatio seven Roman miles out of Mutina on the way to Regium Lepidi. The crossing point corresponds closely to modern Rubiera, where the Via Emilia still bridges the Secchia, though the ancient bridge itself has not been excavated.",
+        "sources": [
+          "Itinerarium Burdigalense, mutatio Ponte Secies"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.6297,
+          44.6989
+        ]
+      },
+      "properties": {
+        "id": "station_regium_lepidi",
+        "category": "mansio",
+        "name": "Regium Lepidi",
+        "road": "Via Aemilia",
+        "distance_from_previous_mp": 11,
+        "identified": true,
+        "notes": "Regium Lepidi took its name from Marcus Aemilius Lepidus, the same consul who built the Via Aemilia, and stood as a civitas on the road on the stretch beyond Mutina according to the Antonine Itinerary. The Itinerarium Burdigalense listed it under the shortened name Regio on the same stretch of the pilgrim route to Placentia. Modern Reggio Emilia's street plan still traces the Roman layout along the ancient road.",
+        "sources": [
+          "Itin. Ant., Iter ab Arimino Placentiam",
+          "Itinerarium Burdigalense, civitas Regio"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4667,
+          44.7667
+        ]
+      },
+      "properties": {
+        "id": "station_tannetum",
+        "category": "vicus",
+        "name": "Tannetum",
+        "road": "Via Aemilia",
+        "distance_from_previous_mp": 11,
+        "identified": true,
+        "notes": "Tannetum stood on the Via Aemilia between Regium Lepidi and Parma, first mentioned by Livy as a fortified vicus near the Padus where a Roman garrison held out during the Gallic uprising of 218 BCE. The Antonine Itinerary and the Tabula Peutingeriana both placed it on this stretch. Archaeologists generally locate it at Taneto, a hamlet of Gattatico near Sant'Ilario d'Enza, though the identification rests on itinerary distances rather than an inscribed find.",
+        "sources": [
+          "Livy, Ab Urbe Condita 21.25",
+          "Itin. Ant., Iter ab Arimino Placentiam",
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3279,
+          44.8015
+        ]
+      },
+      "properties": {
+        "id": "station_parma_aemilia",
+        "category": "mansio",
+        "name": "Parma",
+        "road": "Via Aemilia",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Parma stood on the Via Aemilia as a Roman colonia founded in 183 BCE, the same year as Mutina, and appeared in the Antonine Itinerary as a civitas beyond Tannetum. The Itinerarium Burdigalense recorded it under the form Parme on the same stretch of the pilgrim road toward Placentia. Modern Parma's cardo and decumanus, still traceable in the city's street grid, run directly along the Roman colonial layout.",
+        "sources": [
+          "Itin. Ant., Iter ab Arimino Placentiam",
+          "Itinerarium Burdigalense, civitas Parme"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2112,
+          44.8297
+        ]
+      },
+      "properties": {
+        "id": "station_ad_tarum",
+        "category": "mutatio",
+        "name": "Ad Tarum",
+        "road": "Via Aemilia",
+        "distance_from_previous_mp": 7,
+        "identified": false,
+        "notes": "Ad Tarum, 'at the Tarus,' marked the Via Aemilia's crossing of the river the Romans knew as the Tarus, today's Taro. The Itinerarium Burdigalense recorded it as a mutatio seven Roman miles out of Parma on the way to Fidentia. The crossing falls near modern Fontanellato or Fontevivo, where the Via Emilia still fords the Taro, though no structure has been excavated at the site.",
+        "sources": [
+          "Itinerarium Burdigalense, mutatio Ad Tarum"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0611,
+          44.8659
+        ]
+      },
+      "properties": {
+        "id": "station_fidentia",
+        "category": "mansio",
+        "name": "Fidentia",
+        "road": "Via Aemilia",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Fidentia appeared in the Antonine Itinerary as 'Fidentiola vicus,' a settlement on the road to Placentia and the site of a battle in 82 BCE where Pompey defeated the Marian general Carrinas. The Itinerarium Burdigalense listed it as a mansio on the same stretch of the pilgrim route. Modern Fidenza grew from the Roman vicus, later renamed Borgo San Donnino in the Middle Ages before reclaiming its ancient name in 1927.",
+        "sources": [
+          "Itin. Ant., Iter ab Arimino Placentiam (Fidentiola vicus)",
+          "Itinerarium Burdigalense, mansio Fidentiae"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9287,
+          44.933
+        ]
+      },
+      "properties": {
+        "id": "station_ad_fonteclos",
+        "category": "mutatio",
+        "name": "Ad Fonteclos",
+        "road": "Via Aemilia",
+        "distance_from_previous_mp": 9,
+        "identified": false,
+        "notes": "Ad Fonteclos served as the last mutatio on the Via Aemilia before Placentia, its name pointing to an enclosed spring or fountain along the road. The Itinerarium Burdigalense recorded it on the final stretch out of Fidentia into Placentia. Its site, likely near modern Fiorenzuola d'Arda or Alseno, has not been identified archaeologically.",
+        "sources": [
+          "Itinerarium Burdigalense, mutatio Ad Fonteclos"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6933,
+          45.0522
+        ]
+      },
+      "properties": {
+        "id": "station_placentia_aemilia",
+        "category": "mansio",
+        "name": "Placentia",
+        "road": "Via Aemilia",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Placentia marked the western terminus of the Via Aemilia, standing on the south bank of the Padus where Marcus Aemilius Lepidus completed the road in 187 BCE. The Antonine Itinerary and the Itinerarium Burdigalense both closed their Via Aemilia listings here. Founded as a Latin colony in 218 BCE, Placentia had already withstood a Carthaginian siege by Hannibal before the road connected it directly to Ariminum.",
+        "sources": [
+          "Itin. Ant., Iter ab Arimino Placentiam",
+          "Itinerarium Burdigalense, civitas Placentia",
+          "https://en.wikipedia.org/wiki/Via_Aemilia"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
