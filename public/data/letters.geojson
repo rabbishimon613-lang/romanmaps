@@ -581,6 +581,395 @@
           "Plin. Ep. 7.5"
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.18167,
+          36.20472
+        ]
+      },
+      "properties": {
+        "id": "letters_ignatius_antioch",
+        "name": "Antioch",
+        "node_type": "origin",
+        "person": "Ignatius of Antioch",
+        "one_line": "Ignatius, third bishop of the church at Antioch, was arrested during a local wave of persecution and condemned to fight the beasts in Rome's arena. Ten Roman soldiers marched him out of the city in chains to begin the journey west; he later called his guards \"leopards\" for how they treated him the whole way. He would write seven letters along the road, the earliest substantial body of Christian writing outside the New Testament to survive in an author's own words.",
+        "province": "Syria",
+        "modern_location": "Antakya, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Ign. Rom. 5",
+          "Eusebius Historia Ecclesiastica 3.36",
+          "https://en.wikipedia.org/wiki/Ignatius_of_Antioch"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Antioch_on_the_Orontes,_Antakya,_Turkey_(35863345530).jpg?width=800",
+        "image_credit": "View of Antakya, site of ancient Antioch on the Orontes · Wikimedia Commons",
+        "image_alt": "Modern view over Antakya, the site of ancient Antioch"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1428,
+          38.4237
+        ]
+      },
+      "properties": {
+        "id": "letters_ignatius_smyrna",
+        "name": "Smyrna",
+        "node_type": "origin",
+        "person": "Ignatius of Antioch",
+        "one_line": "Ignatius reached Smyrna under guard and was welcomed by its bishop, Polycarp, an old friend. Delegations from the nearby churches of Ephesus, Magnesia, and Tralles came out to see him off, and from Smyrna he answered each of them with a letter, plus a fourth addressed to the church at Rome urging the Roman Christians not to intervene and rob him of his martyrdom.",
+        "province": "Asia",
+        "modern_location": "Izmir, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Ign. Eph. 1-2",
+          "Ign. Magn. 1-2",
+          "Ign. Trall. 1",
+          "Ign. Rom. 4-5",
+          "Eusebius Historia Ecclesiastica 3.36"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Agora%20of%20Smyrna.jpg?width=800",
+        "image_credit": "The Agora of Smyrna, Izmir · Wikimedia Commons",
+        "image_alt": "Colonnaded ruins of the Agora of Smyrna in modern Izmir"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.341,
+          37.94
+        ]
+      },
+      "properties": {
+        "id": "letters_ignatius_ephesus",
+        "name": "Ephesus",
+        "node_type": "recipient",
+        "person": "Church at Ephesus",
+        "one_line": "Ephesus sent a delegation led by its bishop Onesimus, a deacon, and two others out to greet Ignatius at Smyrna, and he answered with a letter thanking them by name and praising their unity. He warned the congregation against false teachers who denied Christ came in the flesh. The letter survives complete and runs longer than any of his other six.",
+        "province": "Asia",
+        "modern_location": "Selcuk, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Ign. Eph. 1-2, 9"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ephesus%20Curetes%20street.jpg?width=800",
+        "image_credit": "Curetes Street, Ephesus · Wikimedia Commons",
+        "image_alt": "The colonnaded Curetes Street running through Ephesus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.527,
+          37.853
+        ]
+      },
+      "properties": {
+        "id": "letters_ignatius_magnesia",
+        "name": "Magnesia on the Maeander",
+        "node_type": "recipient",
+        "person": "Church at Magnesia",
+        "one_line": "Magnesia on the Maeander sent its young bishop Damas along with two presbyters and a deacon to meet Ignatius at Smyrna, and he wrote back urging the congregation to respect their bishop despite his youth. He pressed them to act in harmony with their clergy \"as strings to a lyre.\" The letter gives one of the earliest outside descriptions of a church led by a single bishop, presbyters, and deacons together.",
+        "province": "Asia",
+        "modern_location": "Tekin, Germencik, Aydin Province, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Ign. Magn. 2-3, 6-7"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.8365,
+          37.8607
+        ]
+      },
+      "properties": {
+        "id": "letters_ignatius_tralles",
+        "name": "Tralles",
+        "node_type": "recipient",
+        "person": "Church at Tralles",
+        "one_line": "Tralles sent its bishop Polybius to meet Ignatius at Smyrna, and he answered with a letter warning the congregation against a teaching that denied Christ had suffered in a real, physical body. He insisted Christ was \"truly\" born of Mary, truly ate and drank, and was truly crucified under Pontius Pilate. He closed by asking the Trallians to pray for the church back in Syria, which had lost its shepherd to arrest.",
+        "province": "Asia",
+        "modern_location": "Aydin, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Ign. Trall. 1, 9-10, 13"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/TrallesGymnasium.jpg?width=800",
+        "image_credit": "The Roman gymnasium of Tralles, near Aydin · Wikimedia Commons",
+        "image_alt": "Vaulted ruins of the Roman gymnasium at Tralles"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1586,
+          39.7517
+        ]
+      },
+      "properties": {
+        "id": "letters_ignatius_troas",
+        "name": "Troas",
+        "node_type": "origin",
+        "person": "Ignatius of Antioch",
+        "one_line": "Ignatius reached Alexandria Troas on the Aegean coast and used the stopover to write three more letters -- to the churches at Philadelphia and Smyrna, and a personal note to Polycarp -- before his guards put him aboard a ship bound for Macedonia. He told the Smyrnaeans he was dictating in a rush because the boat was about to leave. From Troas his journey to Rome continued by sea rather than overland.",
+        "province": "Asia",
+        "modern_location": "Near Dalyan, Ezine, Canakkale Province, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Ign. Phld. 11",
+          "Ign. Smyrn. 12",
+          "Ign. Poly. 8",
+          "Eusebius Historia Ecclesiastica 3.36"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Roman%20Harbour%20of%20Alexandria%20Troas,%20built%20in%20the%20reign%20of%20Augustus%20and%20consisting%20of%20an%20outer%20basin%20protected%20by%20two%20breakwaters%20and%20an%20inner%20basin,%20Troad,%20Turkey%20-%2052985177481.jpg?width=800",
+        "image_credit": "The Roman harbour of Alexandria Troas · Wikimedia Commons",
+        "image_alt": "Remains of the Roman-era harbour basin at Alexandria Troas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.517,
+          38.35
+        ]
+      },
+      "properties": {
+        "id": "letters_ignatius_philadelphia",
+        "name": "Philadelphia",
+        "node_type": "recipient",
+        "person": "Church at Philadelphia",
+        "one_line": "Ignatius stopped at Philadelphia in person on his march through Asia Minor, and later reminded the congregation in a letter from Troas that he had once \"cried out\" to them mid-visit to heed their bishop. The letter addressed a faction that had caused division during his stay and urged the church to stay unified behind its bishop, deacons, and presbyters. Philadelphia was one of the seven churches of Asia already addressed a generation earlier in the Book of Revelation.",
+        "province": "Asia",
+        "modern_location": "Alasehir, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Ign. Phld. 1, 3, 7"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ala%C5%9Fehir%20Church%20of%20St.%20John.jpg?width=800",
+        "image_credit": "Ruins of the Basilica of St John, Alasehir, on the site of ancient Philadelphia · Wikimedia Commons",
+        "image_alt": "Brick ruins of a later basilica at the site of ancient Philadelphia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1428,
+          38.4237
+        ]
+      },
+      "properties": {
+        "id": "letters_ignatius_polycarp",
+        "name": "Polycarp",
+        "node_type": "recipient",
+        "person": "Polycarp of Smyrna",
+        "one_line": "Ignatius wrote a personal letter to his friend Polycarp, bishop of Smyrna, from Troas, urging him to stand firm, care for widows, and not let \"the times\" unsettle him. He asked Polycarp to write on his behalf to the other churches of Asia, since his own hands were now chained. Polycarp outlived Ignatius by decades and was himself burned at the stake in Smyrna around 155 CE.",
+        "province": "Asia",
+        "modern_location": "Izmir, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Ign. Poly. 1, 7-8"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.2864,
+          41.0131
+        ]
+      },
+      "properties": {
+        "id": "letters_ignatius_philippi",
+        "name": "Philippi",
+        "node_type": "waypoint",
+        "person": "Ignatius of Antioch",
+        "one_line": "Ignatius's ship put in at Neapolis, the port serving Philippi, and his guards marched him the short distance inland to the city itself on the road toward Italy. The Philippian church took his passage seriously enough to write to Polycarp afterward asking for copies of his letters, a request Polycarp's own surviving reply answers. Philippi already had a Christian congregation, founded by Paul roughly half a century earlier.",
+        "province": "Macedonia",
+        "modern_location": "Filippoi, near Kavala, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "Polycarp Letter to the Philippians 13",
+          "Eusebius Historia Ecclesiastica 3.36"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Archaeological%20site%20of%20Philippi%20BW%202017-10-05%2012-40-34.jpg?width=800",
+        "image_credit": "The archaeological site of Philippi · Wikimedia Commons",
+        "image_alt": "Ruins at the archaeological site of Philippi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      },
+      "properties": {
+        "id": "letters_ignatius_rome",
+        "name": "Rome",
+        "node_type": "recipient",
+        "person": "Ignatius of Antioch",
+        "one_line": "Ignatius addressed his fourth letter, written from Smyrna, to the church at Rome, begging the Roman Christians not to use their influence to spare him and so rob him of the martyrdom he wanted. Church tradition places his death in a Roman arena under Trajan, thrown to wild beasts, though which of the city's several amphitheaters hosted it was never recorded -- the Colosseum is the traditional guess, not a settled fact. Eusebius dated the event to the ninth year of Trajan's reign, around 107 CE.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "Ign. Rom. 4-5",
+          "Eusebius Historia Ecclesiastica 3.36",
+          "https://www.britannica.com/biography/Saint-Ignatius-of-Antioch"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Colosseum%20exterior.jpg?width=800",
+        "image_credit": "The Colosseum, Rome · Wikimedia Commons",
+        "image_alt": "Exterior view of the Colosseum in Rome"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            36.18167,
+            36.20472
+          ],
+          [
+            28.517,
+            38.35
+          ],
+          [
+            27.1428,
+            38.4237
+          ]
+        ]
+      },
+      "properties": {
+        "id": "letters_ignatius_route_antioch_smyrna",
+        "from": "Antioch",
+        "to": "Smyrna",
+        "note": "Ignatius marched overland under military guard from Antioch across Asia Minor, stopping to address the congregation at Philadelphia in person before reaching Smyrna, where delegates from three more churches met him.",
+        "sources": [
+          "Ign. Phld. 7",
+          "Eusebius Historia Ecclesiastica 3.36"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            27.1428,
+            38.4237
+          ],
+          [
+            26.1586,
+            39.7517
+          ]
+        ]
+      },
+      "properties": {
+        "id": "letters_ignatius_route_smyrna_troas",
+        "from": "Smyrna",
+        "to": "Troas",
+        "note": "From Smyrna, Ignatius's escort marched him north toward Alexandria Troas on the Aegean coast, where he had a brief window before his ship sailed to write three final letters.",
+        "sources": [
+          "Ign. Phld. 11",
+          "Ign. Smyrn. 12",
+          "Ign. Poly. 8"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            26.1586,
+            39.7517
+          ],
+          [
+            24.4033,
+            40.9397
+          ],
+          [
+            24.2864,
+            41.0131
+          ]
+        ]
+      },
+      "properties": {
+        "id": "letters_ignatius_route_troas_philippi",
+        "from": "Troas",
+        "to": "Philippi",
+        "note": "Ignatius sailed from Troas to Neapolis, the port of Philippi, then continued the short distance inland to Philippi itself; the Philippians later asked Polycarp to send them copies of Ignatius's letters, a request that survives in Polycarp's own reply.",
+        "sources": [
+          "Eusebius Historia Ecclesiastica 3.36",
+          "Polycarp Letter to the Philippians 13"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            24.2864,
+            41.0131
+          ],
+          [
+            12.4964,
+            41.9028
+          ]
+        ]
+      },
+      "properties": {
+        "id": "letters_ignatius_route_philippi_rome",
+        "from": "Philippi",
+        "to": "Rome",
+        "note": "From Philippi, Ignatius's guards took him overland along the Via Egnatia and on toward Italy, where he was thrown to the beasts in a Roman arena -- the exact venue was never recorded, though tradition points to the Colosseum.",
+        "sources": [
+          "Eusebius Historia Ecclesiastica 3.36",
+          "Ign. Rom. 5"
+        ]
+      }
     }
   ]
 }
