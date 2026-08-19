@@ -7,6 +7,182 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 32 — 2026-08-19 (this shift's own prompt claimed "Shift 1 of four")
+
+**Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt said
+"Shift 1 of four", but `SHIFT_LOG` was 31 real shifts deep at session start, so this entry
+continues as Shift 32. Session started detached at HEAD, one commit behind a stale local `main`;
+`git checkout -B main origin/main` put the branch cleanly on the real tip (`6df58ec`), no
+conflicts, matching the exact "stale local tracking ref, not data loss" pattern earlier shifts
+already documented. Read `SHIFT_BRIEF.md` and `BOARD.md` in full before touching anything, per
+the brief's own instruction.
+
+**Confirmed the network block still holds** — `curl` against `overpass-api.de`,
+`en.wikipedia.org`, and `pleiades.stoa.org` all still hit `CONNECT tunnel failed, response 403`.
+WebSearch remains the only working research channel; WebFetch to any of the usual reference
+sites fails and falls back automatically.
+
+### A very different kind of shift: the sandbox's core limitation got fixed mid-run
+
+Every prior shift's log carries some version of "couldn't verify live, `map.on('load')` never
+fires in this sandbox, screenshotting is blocked." This run root-caused and fixed that directly
+(`[02-P0-4]`, see below) — and the fix unlocked **real, live browser verification for the first
+time**: `next dev` + a Playwright script against real Chromium, in this exact sandbox, with this
+exact network block still in place. Screenshots, click simulation, search-result assertions, live
+layer counts — all of it now works here. This changes what a cloud shift can responsibly claim
+as "verified" going forward; see the handoff note at the bottom.
+
+### Board — a full 1 `add` : 2 `deepen` : 1 `polish` cycle, then five more fixes on top
+
+**`add` — Aquae spa towns, 20 new (Axis 18, pivoted from the intended Axis 15)**. Originally
+targeted Trajan's alimenta-town program (SHIFT_BRIEF's own suggested Axis 15 minimum, "all 50
+alimenta towns") to extend `euergetism.geojson` past its existing 15. A background WebSearch
+research agent ran ~45 queries and 91 tool calls and came back with exactly 2 low-confidence
+leads — the actual town enumeration lives in Duncan-Jones's 1964 PBSR article and CIL volumes,
+sources this sandbox's network policy blocks outright, and the town list on Wikipedia's own
+"Alimenta" article turned out to exist only as an unlabeled map graphic, invisible to
+WebSearch's snippet-only view. Rather than pad the list with the two weak leads, pivoted to
+Aquae-toponym spa towns instead: most correspond to real, identifiable modern towns (several
+still spa resorts today) attested by name in Strabo, Pliny, the Antonine Itinerary, or a
+surviving dedication — a much better fit for a WebSearch-only research channel. A second
+research pass found 23 solid candidates; added 20 to `health.geojson` (31 → 51 features) across
+Britannia, Hispania Tarraconensis, Numidia, Mauretania Caesariensis, Italia, Dacia, Gallia
+Aquitania, Gallia Lugdunensis, Sicilia, and Sardinia et Corsica, each with a real citation and
+confidence graded honestly (several `"low"` where only an itinerary placement is available).
+Dropped two more candidates the agent itself flagged as unreliable (Aquae Griselicae, Aquae
+Bormonis — real Roman baths, but sources disagree on which ancient name belongs to which modern
+town). No `image_url` on this batch: verifying a Commons filename needs WebFetch, the same
+blocked channel, and guessing one would violate the brief's own "verify the page loads first"
+rule — flagged as a follow-up for whoever next has a working WebFetch.
+
+**`deepen` #1 — epigraphy batch 5 (standing task, `[09-P1-4]`)**. Researched 16 candidate
+monuments (Trajan's Markets, five Ostia landmarks, six Pompeii/Herculaneum ones, Corinth's
+Peirene, Antioch's theatre, Alexandria's Heptastadion, both Londinium entries), personally
+screened down to 5 real, safely-dated citations: Ostia Forum (CIL XIV 375), Ostia Theatre (CIL
+XIV 82), Pompeii Forum (CIL X 794), Pompeii Temple of Jupiter (CIL X 797, a priest's statue base
+found in the cella), Alexandria's Heptastadion (Strabo, *Geography* 17.1.6-10). The other 11 were
+honest `not_found`s or too risky to attribute (Corinth's Peirene had a real Pausanias citation,
+but Pausanias wrote 150s-160s CE describing what may be a later marble remodeling — dropped
+rather than risk misattributing a post-117 phase). One side-finding: the research flagged Ostia's
+Capitolium as possibly post-117 and worth checking — already correctly `built: 120,
+extant_117ce: false` in the data, so no fix needed, just confirmed. `pois.geojson`: 173 → 178 of
+469 POIs now carry `ancient_sources`.
+
+**`deepen` #2 — prices and wages (`[07-P1-3]`)**. New "What things cost" section in
+`app/CurrencyConverter.tsx`: five well-attested period prices/wages (a legionary's 300-denarii
+yearly pay, a modius of wheat, a sextarius of house wine from a Pompeii tavern's own scratched
+price list, a day-laborer's 1-denarius wage), each cited, live-computed against whatever
+amount/unit the user has entered above. Deliberately dropped several research candidates flagged
+as single-source-with-no-pinned-citation (centurion pay multiplier, slave prices, olive oil, a
+toga) rather than ship a hedged, padded list. Explicitly avoided Diocletian's Price Edict (301
+CE) as a source — 184 years past this map's snapshot, the single most commonly misused "Roman
+prices" reference online.
+
+**`polish` — halo colors (`[02-FIX]`)**. Replaced 21 hardcoded `#f4ead5` (the light parchment
+color) halo/stroke literals across `Map.tsx` with the existing theme-aware `P.labelHalo` token —
+dark-mode users were getting a light-colored halo behind every label and dot stroke. The two
+actual palette *definitions* are the only remaining literal occurrences, as they should be.
+
+**Track B — reduced motion (`[05-P0-3]`)**. Global `prefers-reduced-motion` CSS block in
+`globals.css` collapses every transition/animation to near-instant (covers every inline
+`transition:` style already in use, no per-component changes needed). MapLibre's own camera
+`flyTo`/`easeTo` calls animate via `requestAnimationFrame`, not CSS, so a new
+`app/reducedMotion.ts` (`motionDuration(ms)`, mirrors the existing `prefersDark()` mount-time
+pattern) wraps the `duration` on all 13 call sites across the app — the opening cinematic fly,
+every search/site/legion/tour jump, place-selection easing, cluster-expand's `fitBounds`, and the
+compass bearing reset all cut instantly for a reduced-motion user instead of forcing a pan.
+
+### Five more fixes, once the ratio cycle closed
+
+**`[08-P1-6]` Baalbek dating (`verify`)**. Settled a standing question: the Temple of Jupiter's
+`built: 60` holds (a stonemason's graffito on a column drum is dated 2 August 60 CE), but the
+Temple of Bacchus was wrongly sharing that date — every serious source places its start under
+Antoninus Pius, c. 150 CE, 33 years past this map's snapshot. Corrected `built` 60 → 150,
+`extant_117ce` true → false, rewrote the note to say plainly the temple doesn't exist yet rather
+than hedge between two datings the way the placeholder text (written 2026-08-16, before the date
+was settled) had to.
+
+**`[02-P0-4]` The load-gate fix — this run's biggest find.** `app/Map.tsx` gated its entire Phase
+2 onward (roads, POIs, every site's building layer — ~30 phases) on MapLibre's `"load"` event.
+Cloud shift 30 had already found that event never fires in this sandbox when
+`demotiles.maplibre.org` (the style's `glyphs` host) is network-blocked, even though
+`map.loaded()` itself flips true within about a second regardless — so a user in that exact
+condition would see the base map and nothing else, forever. Fixed with a new `whenMapReady(map,
+cb)` helper that races the `load`/`idle`/`styledata` events against a 300ms poll of
+`map.loaded()` (the one signal actually observed to work) and fires once whichever comes first,
+with disposers wired into the existing effect cleanup. **Verified live, not just by code review**
+— ran `next dev` and a real Playwright/Chromium session against this sandbox's actual block:
+confirmed `"load"` truly never fires here, and that the poll path carries it instead, rendering
+32 layers (roads, road-stations, POI pins) within ~7 seconds despite every glyph-range fetch
+failing with `net::ERR_TUNNEL_CONNECTION_FAILED`. The only console errors left are the expected
+glyph-fetch failures themselves (MapLibre attributes them to the "seas" source, since that's
+where the two always-on sea-label symbol layers with `text-font` live) — sea/gulf labels lose
+their text, exactly the ticket's originally-scoped "labels disappear" case, nothing worse.
+**Left open**: actually self-hosting the glyph PBFs, which needs real font assets plus a
+generation pipeline (`fontnik`/`glyph-pbf-composite` or similar) this sandbox doesn't have and
+installing one would mean a new dependency, against the brief's own package.json guardrail.
+Reset the board ticket to `[ ]` rather than left `[~]` — the harder bug is fixed and verified,
+the original "stop depending on the host" ask isn't.
+
+**`[01-P0-3]` cluster-expand — found already done, just never marked.** `PoiMarkers.tsx`'s
+cluster badges already had a `fitBounds`-to-members click handler. Verified live: clicked a
+68-member cluster near Rome, watched the map ease from z6.0 to z10.0 exactly as promised. No code
+changed, just closed the ticket.
+
+**`[08-P1-4]` gazetteer audit — a self-correction worth recording.** First pass searched
+`places_medium.geojson` for a `name` field and came up empty for Londinium, nearly triggering a
+duplicate fix — the file's real schema is `modern`/`latin`/`greek`, not `name`. Corrected search
+found Londinium already present (added by an earlier shift's capital sweep). Re-ran the corrected
+search against 17 more major cities and found the real hole: **Carthage, Thessalonica, Sirmium,
+Serdica, Tarraco, Byzantium, Pergamum, Sardis, Nicomedia, Caesarea Maritima, and Smyrna** were all
+genuinely missing — their only search hits were unrelated minor satellite villages (Nicomedia's
+only match was a village "10 miles E Nicomedia"). Added all 11 following the existing
+`major:1`/`id:9000xx` capital-sweep convention. Verified live: searched "Sremska Mitrovica"
+(Sirmium's modern name), watched it resolve to the Sirmium card with "Today: Sremska Mitrovica" —
+same path Roma/Londinium already use.
+
+**`[11-P0-3]` delete dead data (`retire`)**. `roads_high.geojson`, `roads_low.geojson`,
+`places_high.geojson` (~11.2MB) had zero references anywhere in `app/`, `scripts/`,
+`next.config.js`, or `package.json` — confirmed with a grep sweep, not assumed. Deleted them and
+trimmed the three matching entries from `scripts/metrics.mjs`'s exclusion set. Verified live:
+`next dev` + Playwright report the identical 32 layers before and after the delete.
+
+### Housekeeping
+
+Checked off `"Time to travel"` in `FEATURE_BACKLOG.md` — already fully shipped piecemeal
+(`Directions.tsx`'s legion-march/merchant/courier travel-time estimates), just never marked.
+Regenerated `METRICS.md` (469 POIs unchanged, ancient-source coverage 36.7% → 37.7%, validator
+warnings 14 → 13 with the dead-data cleanup) and fixed its standing-warnings note, which still
+referenced the now-deleted `roads_low.geojson` issue.
+
+### Handoff for the next shift
+
+1. **Live verification is now real in this sandbox** — don't assume it's still blocked. The
+   pattern: `npm install` if `node_modules` is missing, `(npm run dev > /tmp/.../dev.log 2>&1 &)`,
+   wait ~6s, then a Playwright script using the global install at
+   `/opt/node22/lib/node_modules/playwright` and Chromium at
+   `/opt/pw-browsers/chromium-1194/chrome-linux/chrome` (check the exact versioned directory
+   name first, it may change). Wait for `window.__map.getLayer('roads-main')` to exist before
+   asserting anything, since Phase 2 still takes several seconds via the poll fallback. Kill the
+   dev server (`pkill -f "next dev"`) when done — don't leave it running into the next shift.
+2. **`[02-P0-4]`'s real ask — self-hosting glyph PBFs — is still open**, and now the highest-value
+   remaining P0 fix: it removes the `demotiles.maplibre.org` dependency outright instead of
+   degrading gracefully from it. Needs a `fontnik`/`glyph-pbf-composite`-style generation step
+   over a real TTF, run once, with the output committed as static files — a job for a shift or
+   local session with unrestricted network access, not this sandbox.
+3. **Alimenta towns (Axis 15) are still short of the brief's "all 50" target** (15 of ~50, per
+   Duncan-Jones's own count) — this run's research found the town enumeration isn't reachable
+   from WebSearch alone. Worth a fresh attempt only from an environment where WebFetch actually
+   reaches CIL/Duncan-Jones-adjacent sources, or via a differently-structured research prompt
+   (per-town targeted searches rather than "give me the full list" — the one lead that worked
+   this run, Beneventum's Arch of Trajan alimenta relief, came from a per-monument search, not a
+   list search).
+4. **Next board `add` in priority order**, since this run closed the open cycle: check the board
+   fresh, `[06-P2-6]` priority-cities is still blocked on Overpass (still confirmed down this
+   run).
+
+---
+
 ## Shift 31 — 2026-08-18 (this shift's own prompt claimed "Shift 4 of four")
 
 **Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt carried
