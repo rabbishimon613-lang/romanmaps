@@ -7,6 +7,172 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 38 — 2026-08-20 (this shift's own prompt claimed "Shift 3 of four")
+
+**Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt said
+"Shift 3 of four," but `SHIFT_LOG` was 37 real shifts deep at session start, so this entry
+continues as Shift 38. Session started `HEAD` detached at the real tip (`34c08ef`) with local
+`main` nine commits behind and pointing at an unrelated, non-ancestor commit (`709a480`) — not
+just "behind," the two branches had 50 different commits each per `git status`. `git ls-remote`
+wasn't needed to resolve it: the detached `HEAD` content matched a clean working tree, so
+`git reset --hard origin/main` was safe (confirmed no uncommitted work existed first). Fresh
+container needed `npm install`; reverted the resulting `package-lock.json` `hasInstallScript`/
+`libc`-field churn before touching anything else, same pattern every recent shift has documented.
+Read `SHIFT_BRIEF.md` and `BOARD.md` in full before starting. `WebFetch` to `en.wikipedia.org`
+confirmed `EGRESS_BLOCKED` directly in this session — `WebSearch` was the only working research
+channel throughout, matching every prior shift's report.
+
+### Board check
+
+Same unclaimed P0 set Shifts 34-37 all found and declined for the same reason: `[12-P0-1]`
+merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terrain,
+`[02-P0-4]` self-host-glyphs — all large, multi-file, "may take several passes" tickets that an
+unsupervised session pushing straight to production shouldn't attempt mid-refactor with nobody
+watching. Followed the brief's own axis queue and Shift 37's handoff notes instead.
+
+### Track A — three axes, 20 net new curated features, four research waves reviewed by hand
+
+**Axis 2 (road stations) — Via Traiana, the thirteenth road, per Shift 37's own handoff pick.**
+`road_stations.geojson` 312 → 326 (+14). Trajan's 109 CE Apulian shortcut, Beneventum to
+Brundisium, cross-referenced against the Antonine Itinerary (Itin. Ant. 116 — its own stated
+section total of 235 mp matches the sum of its individual station-to-station figures, a strong
+internal check on the route backbone) and the Tabula Peutingeriana for finer-grained mutationes:
+Forum Novum, Aequum Tuticum, Aecae (mod. Troia), Herdonia, Canusium, Rudas, Rubi, Butuntum,
+Barium, Turris Iuliana, Turres Aureliae, Egnatia, Ad Decimum, Speluncae. Shares its Beneventum
+origin and Brundisium terminus with the existing Via Appia entries rather than duplicating them,
+following the Luni/Aquae Cutiliae shared-node precedent.
+
+This shift ran its own independent geodesic sanity check on the research agent's output before
+merging (a claimed road distance can never be shorter than the straight-line distance between two
+points, per the standing practice Shifts 35-37 established) and found three legs where the
+agent's own draft had over-specified a number the sources don't actually support closely enough:
+Forum Novum→Aequum Tuticum (the source gives only the combined Beneventum-to-Aequum-Tuticum
+total, not this specific leg), Canusium→Rudas (Rudas is itself an unidentified, approximate-
+coordinate waypoint — the ~1 mp shortfall is very plausibly just coordinate-precision noise, not
+a real source conflict), and Turris Iuliana→Turres Aureliae (the only reliable figure found is
+the direct Barium-to-Turres distance, not this specific sub-leg). All three now ship
+`distance_from_previous_mp: null` rather than the over-precise number, plus one real numeric
+correction: Itin. Ant.'s own Canusium-Rubi figure (23 mp) is geodesically impossible against
+secure endpoint coordinates, so this entry uses the Tabula Peutingeriana's two-hop
+Canusium-Rudas-Rubi total (12+14=26 mp) instead, which checks out.
+
+**Axis 15 (welfare/euergetism) — one more alimenta town, and a real research exhaustion finding;
+5 more benefactor inscriptions, clearing the axis's 20-inscription floor.**
+`euergetism.geojson` 37 → 43 (+6).
+
+*Alimenta towns, 21 → 22*: a deep research pass targeting Shift 37's own flagged Regio I/Regio IV
+gap (~35 towns checked by name: Bovianum, Aesernia, Saepinum, Larinum, Corfinium, Sulmo, Alba
+Fucens, Cures Sabini, Reate, Casinum, Aquinum, Praeneste, Tibur, Minturnae, Puteoli, and more)
+found the axis genuinely thin there, not under-searched — every one of the seven known individual
+"pueri et puellae alimentarii" dedication inscriptions traced back to towns already on the map.
+One real new find: Cales (modern Calvi Risorta, Campania), independently cited in Greg Woolf's
+1990 PBSR survey of alimenta epigraphy (CIL X, 3910), shipped at `confidence: medium` since the
+primary inscription text itself was unreachable in this sandbox. The remaining ~28 towns toward
+the brief's 50-town ceiling most likely sit in Duncan-Jones 1964's full appendix or Woolf 1990's
+complete town list, both paywalled/unreachable here — flagged for a future shift with library or
+EDH/EDCS access rather than more WebSearch-only passes over the same ground.
+
+*Benefactor inscriptions, 16 → 21*: Como (Pliny the Younger's library + baths + child-support
+endowment to his hometown Comum, CIL V 5262 and his own *Epistulae* 1.8), Bursa (Dio Chrysostom's
+stoa-and-library rebuild of Prusa, attested in his own surviving orations and independently
+corroborated by Pliny's Bithynia governorship correspondence investigating the project — *Ep.*
+X.81-82), Saelices (Segobriga's gilded bronze-letter forum pavement), Leptis Magna (Annobal
+Tapapius Rufus's bilingual Latin/Neo-Punic theatre dedication, IRT 321-322 + IPT 24a — a second,
+distinct monument from the city's existing entry), Pozzuoli (the Temple of Augustus, CIL X
+1613-1614). The brief's own headline candidate for this axis, Plancia Magna's Perge gate complex,
+was checked and rejected: multiple independent sources converge on 119-122 CE construction, which
+is Hadrianic and postdates this map's 117 CE snapshot by 2-5 years. A dozen further candidates
+(Thugga, Tarraco's and Italica's amphitheatres, Patara, Bulla Regia, Sabratha, Cuicul, Volubilis,
+Suessa Aurunca) were researched and rejected for the same reason or for lacking a securely named
+donor.
+
+**Axis 3c (economic infrastructure) — a stale backlog note corrected, one verified image added.**
+FEATURE_BACKLOG.md had carried a note since Shift 11 flagging Docimium, Mons Porphyrites, Cotta,
+and the Henchir Mettich estate inscription as "real, sourced candidates still on the table,"
+dropped only for lack of a verified image. Checking `pois.geojson` before dispatching fresh
+research found all four already existed as full records — a later shift had committed them
+without ever updating this backlog note, so it had been silently stale for at least several
+shifts. Added a verified `image_url` to Henchir Mettich (a photo of the inscription itself,
+cross-checked against a French Wikipedia file-description page showing real dimensions, not just
+a bare search-snippet filename guess) and confirmed Mons Porphyrites' existing image is real.
+Left Cotta and Docimium without an image rather than force a fit: no confirmable Commons filename
+exists for the Cotta site itself, and the one Docimium candidate found is a Pavonazzetto marble
+sculpture in a Copenhagen museum, not a photo of the quarry.
+
+**Axis 17 (exile/penal) — real negative result, not merged.** A research pass for `penal_mine`
+entries (the brief's own flagged Danube-salt-mines and broader-Sardinia leads) came back with
+only two candidates clearing the "genuinely attested penal labor" bar, and both failed the 117 CE
+snapshot rule on inspection: the only ancient source tying either site (Cyprus's copper mines,
+Cilicia's Taurus mining district) to condemned labor is Eusebius's *Martyrs of Palestine*,
+describing events of 308-310 CE — nearly two centuries after this map's snapshot, during
+Diocletian's persecution. Declined to merge rather than stretch a genuine ancient attestation
+across two centuries it doesn't cover. Real Danube salt-mine forced labor (legio XIII Gemina
+running Dacia's Salinae with slaves/servile tenant-agents) is attested, but no source calls it a
+*judicial condemnation* specifically, so it doesn't belong in this category either. Two
+historical popes (Callixtus I, c. 186-189 CE; Pontian, 235 CE) were genuinely condemned "to the
+mines of Sardinia," but both trace to the same Metalla/Iglesiente district as the existing
+Fluminimaggiore entry — worth citing there as enrichment in a future pass rather than a new pin.
+
+### Track B — a repeatedly-flagged doc decision settled, real UI work declined for the same reason as Shifts 34-37
+
+FEATURE_BACKLOG.md's "New POI categories need a `poiCategories.ts` entry" aside, everything else
+open at P0-P3 was either already shipped, blocked on tooling/network, or one of the large
+UI/architecture items (terrain shading, dark mode) that prior shifts have consistently and
+explicitly declined to attempt unsupervised. This shift settled one smaller, repeatedly-flagged
+question instead: whether invariant 1.5's display-name rule applies to `sites_buildings.geojson`/
+`sites_streets.geojson`'s raw OSM building/street labels. Decided no — those are legitimate
+in-language source data, not the ancient/modern-name-duplication pattern the rule targets — and
+added a one-line scope note to `SHIFT_BRIEF.md` §1.5 so this stops resurfacing as an open
+question every few shifts (flagged since Shift 8, never resolved).
+
+### Build, validate, verify
+
+Fresh container needed `npm install` first; `package-lock.json` churn reverted before the first
+commit. `npm run validate` clean at every commit: 0 errors throughout, 17 pre-existing warnings
+(same standing set every recent shift has carried — the 4 diplomacy/2 neighbors "outside the
+empire envelope" warnings are expected false positives for India/China nodes deliberately outside
+Rome's borders). Cross-file name collision count moved 124 → 126 as expected (new points landing
+near existing gazetteer entries) — informational only, tracked under `[12-P0-1]`. `npm run build`
+clean on all five pushed commits. `npm run metrics -- --write`: 1,682 curated places total (+20),
+481 POIs unchanged (none of this shift's touched files are in the POI-schema count except the one
+Henchir Mettich image field, which doesn't move the count), image coverage 53.2% → 53.4%, 126
+cross-file collisions, 0 validator errors.
+
+### Handoff for the next shift
+
+1. **A fourteenth road remains open.** With Postumia, Cassia+Clodia, Aurelia, Salaria, and now
+   Traiana all done, Via Egnatia is already at 35 stations (likely near-complete), but Via
+   Domitia (16), Via Cottia (6), and Via Augusta (51, may already be thorough) haven't been
+   revisited recently — Via Cottia in particular looks thin relative to its historical length
+   (Segusio/Susa across the Cottian Alps) and is a natural next pick.
+2. **Axis 15's alimenta_town count sits at 22 of the ~50 ceiling, and this shift confirmed the
+   easy ground is gone.** Three shifts running (36, 37, 38) have now searched Regio I, IV, VI,
+   and VIII with real, targeted effort. A future pass needs either library/EDH/EDCS access to
+   Duncan-Jones 1964's full appendix, or a pivot to a different sourcing strategy entirely —
+   more WebSearch-only passes over the same ~40 towns will keep returning the same handful of
+   already-mapped names.
+3. **Axis 15's benefactor_inscription count sits at 21, past the 20-floor target** — real room
+   still exists (this shift found 5 real new ones in one pass without exhausting the search),
+   so a future shift could keep pushing this rather than treat it as done.
+4. **Axis 17's penal_mine category is genuinely thin (2 entries) and this shift confirmed why**:
+   site-specific ancient testimony naming condemned/penal labor (as opposed to generic slave/
+   war-captive labor, which nearly every major mine has) is much rarer than secondary literature
+   implies. The two Popes-condemned-to-Sardinia's-mines detail (Callixtus I, Pontian) is real and
+   citable but belongs as enrichment on the existing Fluminimaggiore entry, not a new pin — worth
+   doing in a quick follow-up pass.
+5. **Axis 20's gymnasia gap (6 sites) is still stuck on the same WebFetch-to-Commons block** every
+   shift since #14 has hit — no change this shift, not re-attempted since Shift 37 already
+   confirmed a third WebSearch-only session couldn't crack it.
+6. **Board fresh-check**: still no unclaimed P0/P1 `add` ticket smaller than a multi-pass
+   refactor. Topmost unclaimed P0s unchanged since Shift 34 — `[12-P0-1]` merge-themes,
+   `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terrain, `[02-P0-4]`
+   self-host-glyphs. Five shifts running have now made the same call on these for the same
+   reason; if a shift with genuinely dedicated multi-pass runway (not just a larger token budget)
+   picks this up, `[12-P0-1]` merge-themes unlocks the most downstream value per the board's own
+   framing ("unlocks search, cards, nearby and every content ticket below").
+
+---
+
 ## Shift 37 — 2026-08-20 (this shift's own prompt claimed "Shift 2 of four")
 
 **Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt said
