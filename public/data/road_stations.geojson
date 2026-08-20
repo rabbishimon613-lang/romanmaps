@@ -6744,6 +6744,665 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3008,
+          41.8885
+        ]
+      },
+      "properties": {
+        "id": "station_lorium",
+        "category": "mansio",
+        "name": "Lorium",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Lorium was the first posting station out of Rome on the Via Aurelia, twelve Roman miles along the coast road. Antoninus Pius later kept a country villa here and died in it in 161, a mark of how fashionable this stretch became in the following century.",
+        "sources": [
+          "Itinerarium Antonini, Via Aurelia stage",
+          "https://en.wikipedia.org/wiki/Lorium"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.147,
+          41.946
+        ]
+      },
+      "properties": {
+        "id": "station_ad_turres_aurelia",
+        "category": "mutatio",
+        "name": "Ad Turres",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 10,
+        "identified": false,
+        "notes": "A minor horse-change stop on the coast road between Lorium and Pyrgi, named for a line of watchtowers along this stretch. No structure has been excavated and identified with certainty, so its position is placed along the known road corridor rather than pinned to a specific ruin.",
+        "sources": [
+          "Itinerarium Antonini, Via Aurelia stage"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9636,
+          42.0152
+        ]
+      },
+      "properties": {
+        "id": "station_pyrgi",
+        "category": "mansio",
+        "name": "Pyrgi",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Pyrgi was the harbor of the Etruscan city of Caere, home to a sanctuary of Uni-Astarte where three gold tablets with Etruscan and Phoenician inscriptions were unearthed in 1964. A medieval castle now stands over the ancient port at Santa Severa.",
+        "sources": [
+          "Itinerarium Antonini, Via Aurelia stage",
+          "https://en.wikipedia.org/wiki/Pyrgi"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.85,
+          42.033
+        ]
+      },
+      "properties": {
+        "id": "station_castrum_novum_etruria",
+        "category": "mansio",
+        "name": "Castrum Novum",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 8,
+        "identified": true,
+        "notes": "Rome founded this coastal colony in 264 BCE alongside Pyrgi to guard Caere's shoreline during the First Punic War. Excavations at Torre Chiaruccia near Santa Marinella have uncovered its theater, curia, and public aqueduct.",
+        "sources": [
+          "Itinerarium Antonini, Via Aurelia stage",
+          "https://en.wikipedia.org/wiki/Castrum_Novum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7968,
+          42.0913
+        ]
+      },
+      "properties": {
+        "id": "station_centumcellae",
+        "category": "mansio",
+        "name": "Centumcellae",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 8,
+        "identified": true,
+        "notes": "Trajan built this artificial harbor to relieve pressure on Ostia, finishing it around 106-107. It grew into the chief town of the northern Etrurian coast, and its modern name Civitavecchia still means \"old city.\"",
+        "sources": [
+          "Itinerarium Antonini, Via Aurelia stage",
+          "https://en.wikipedia.org/wiki/Civitavecchia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7102,
+          42.2127
+        ]
+      },
+      "properties": {
+        "id": "station_graviscae",
+        "category": "mansio",
+        "name": "Graviscae",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Graviscae served as the port of Etruscan Tarquinii before Rome refounded it as a colony in 181 BCE at the mouth of the Marta river. A sanctuary here to Aphrodite-Turan drew dedications from Greek, Etruscan, and Phoenician traders alike.",
+        "sources": [
+          "Itinerarium Maritimum, Via Aurelia stage",
+          "http://imperium.ahlfeldt.se/places/21336.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.607969,
+          42.351426
+        ]
+      },
+      "properties": {
+        "id": "station_forum_aurelii",
+        "category": "mansio",
+        "name": "Forum Aurelii",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "A market town that grew up on the Via Aurelia itself, distinct from the older Etruscan city of Vulci nearby. Travelers used it as a resupply stop on the long coastal stretch toward Cosa.",
+        "sources": [
+          "Itinerarium Antonini, Via Aurelia stage"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.286503,
+          42.410919
+        ]
+      },
+      "properties": {
+        "id": "station_cosa",
+        "category": "mansio",
+        "name": "Cosa",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 25,
+        "identified": true,
+        "notes": "Rome planted this hilltop colony above the Tyrrhenian coast in 273 BCE. Its polygonal walls, forum, and capitolium still stand largely intact, alongside an artificial harbor built at the base of the hill.",
+        "sources": [
+          "Itinerarium Antonini, Via Aurelia stage",
+          "https://en.wikipedia.org/wiki/Cosa"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.132755,
+          42.555056
+        ]
+      },
+      "properties": {
+        "id": "station_telamon",
+        "category": "mansio",
+        "name": "Telamon",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Telamon's harbor sits at the foot of Monte Argentario, where a Roman army crushed a Gallic-Samnite coalition in 225 BCE. The itinerary sources for this exact stretch of coast are too damaged to fix a reliable mileage from Cosa, so no distance figure is given.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Talamone"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.49139,
+          42.98944
+        ]
+      },
+      "properties": {
+        "id": "station_populonium",
+        "category": "mansio",
+        "name": "Populonium",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Populonia is the only major Etruscan and Roman city built directly on the Tyrrhenian shore, and it smelted iron ore shipped over from Elba. Its acropolis and the Baratti necropolis below have been extensively excavated. As with Telamon, the surviving itinerary mileage for this stretch is too corrupt to give a reliable figure.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Populonia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.45583,
+          43.35167
+        ]
+      },
+      "properties": {
+        "id": "station_vada_volaterrana",
+        "category": "vicus",
+        "name": "Vada Volaterrana",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 28,
+        "identified": true,
+        "notes": "This was the port and saltworks of inland Volaterrae, with a large warehouse complex and a coastal sanctuary that stayed in use for centuries. Roman milestones found nearby confirm the coast road's course through the district.",
+        "sources": [
+          "Itinerarium Antonini, Via Aurelia stage"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4223,
+          43.5707
+        ]
+      },
+      "properties": {
+        "id": "station_ad_herculem_aurelia",
+        "category": "mutatio",
+        "name": "Ad Herculem",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 18,
+        "identified": false,
+        "notes": "A small way-station on the final leg into Pisae, named for a roadside shrine to Hercules. No ruin has been securely tied to the name, so it is placed along the known road corridor between Vada and Pisae.",
+        "sources": [
+          "Itinerarium Antonini, Via Aurelia stage"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4,
+          43.7167
+        ]
+      },
+      "properties": {
+        "id": "station_pisae",
+        "category": "mansio",
+        "name": "Pisae",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Pisae sat where the Arno and Auser rivers met the sea, an Etruscan port that became a Roman colony and naval base in 180 BCE. The Via Aurelia effectively ended here before continuing north as the Via Aemilia Scauri toward Luna and Genua.",
+        "sources": [
+          "Itinerarium Antonini, Via Aurelia stage",
+          "https://en.wikipedia.org/wiki/Pisa"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.116762,
+          44.021186
+        ]
+      },
+      "properties": {
+        "id": "station_taberna_frigida",
+        "category": "mutatio",
+        "name": "Taberna Frigida",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 28,
+        "identified": true,
+        "notes": "This station marked the crossing of the Frigidus river on the coast road north of Pisae. The medieval church of San Leonardo al Frigido, built on the site, still preserves the ancient name.",
+        "sources": [
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0202,
+          44.0648
+        ]
+      },
+      "properties": {
+        "id": "station_luna",
+        "category": "mansio",
+        "name": "Luna",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Luna was a Roman colony founded in 177 BCE at the mouth of the Magra river, built rich on the marble its quarries sent to Rome — the same quarries now called Carrara. Its amphitheater and forum survive, and the site is already on this map as the curated city of Luni.",
+        "sources": [
+          "Itinerarium Antonini, Via Aurelia stage",
+          "https://en.wikipedia.org/wiki/Luni,_Italy"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5123,
+          41.9785
+        ]
+      },
+      "properties": {
+        "id": "station_fidenae",
+        "category": "vicus",
+        "name": "Fidenae",
+        "road": "Via Salaria",
+        "distance_from_previous_mp": 7,
+        "identified": true,
+        "notes": "Fidenae stood on a plateau above the Tiber only eight kilometers from Rome, close enough that the two cities fought repeated wars over it in the earliest days of the Republic. Rock-cut tombs from the same period still line the cliffs north of the site.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "https://en.wikipedia.org/wiki/Fidenae"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.73796,
+          42.13554
+        ]
+      },
+      "properties": {
+        "id": "station_eretum",
+        "category": "mansio",
+        "name": "Eretum",
+        "road": "Via Salaria",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Eretum sat where the Via Salaria met the Via Nomentana, on a Sabine hilltop identified with modern Casacotta. The nearby Colle del Forno necropolis shows the site was lived in continuously from the Iron Age straight through the Roman period.",
+        "sources": [
+          "Itinerarium Antonini 307.1",
+          "https://en.wikipedia.org/wiki/Eretum"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.81423,
+          42.21133
+        ]
+      },
+      "properties": {
+        "id": "station_vicus_novus_salaria",
+        "category": "vicus",
+        "name": "Vicus Novus",
+        "road": "Via Salaria",
+        "distance_from_previous_mp": 14,
+        "identified": true,
+        "notes": "This road station stood at the traditional 33rd milestone of the Via Salaria, near modern Osteria Nuova. A large Roman tomb chamber known locally as \"Li Massacci\" still marks the crossroads.",
+        "sources": [
+          "Itinerarium Antonini 307.2"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.861183,
+          42.403067
+        ]
+      },
+      "properties": {
+        "id": "station_reate",
+        "category": "mansio",
+        "name": "Reate",
+        "road": "Via Salaria",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Reate was the chief town of the Sabine hill country, where the Via Salaria crossed the Velino river valley. The Flavian family kept property in the district, a connection that ran deep into local memory by 117.",
+        "sources": [
+          "Itinerarium Antonini 307.3",
+          "https://en.wikipedia.org/wiki/Rieti"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.99988,
+          42.37682
+        ]
+      },
+      "properties": {
+        "id": "station_cutiliae_salaria",
+        "category": "vicus",
+        "name": "Cutiliae",
+        "road": "Via Salaria",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "A sulfur-spring spa east of Reate on the shore of the Lacus Cutiliensis, developed as a bathing resort under the early emperors. This is the same site as this map's Aquae Cutiliae health-axis entry, listed again here as its own stage on the Via Salaria's road network.",
+        "sources": [
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.080933,
+          42.41605
+        ]
+      },
+      "properties": {
+        "id": "station_interocrium",
+        "category": "mansio",
+        "name": "Interocrium",
+        "road": "Via Salaria",
+        "distance_from_previous_mp": 6,
+        "identified": true,
+        "notes": "Interocrium sat in the narrow Velino gorge at modern Antrodoco, where the Via Salaria began its climb into the central Apennines. The name itself, \"among the peaks,\" describes the site's position at a junction of two mountain passes.",
+        "sources": [
+          "Itinerarium Antonini 307.5",
+          "https://en.wikipedia.org/wiki/Antrodoco"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1276,
+          42.5483
+        ]
+      },
+      "properties": {
+        "id": "station_forum_decii",
+        "category": "vicus",
+        "name": "Forum Decii",
+        "road": "Via Salaria",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "A market village on the road between Interocrium and Falacrinae, recorded on the Tabula Peutingeriana as \"Foroecri.\" Its exact site in the upper Velino valley near modern Bacugno has never been excavated.",
+        "sources": [
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.158724,
+          42.617277
+        ]
+      },
+      "properties": {
+        "id": "station_falacrinae",
+        "category": "vicus",
+        "name": "Falacrinae",
+        "road": "Via Salaria",
+        "distance_from_previous_mp": 6,
+        "identified": true,
+        "notes": "Falacrinae was a small village in the Sabine highlands and the birthplace of the emperor Vespasian in 9 CE, as Suetonius records. A large first-century villa complex excavated near Cittareale in 2009 is identified with the site.",
+        "sources": [
+          "Suetonius, Vespasian 2.1",
+          "Tabula Peutingeriana",
+          "https://en.wikipedia.org/wiki/Falacrine"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.25284,
+          42.73561
+        ]
+      },
+      "properties": {
+        "id": "station_ad_martis_salaria",
+        "category": "mansio",
+        "name": "Ad Martis",
+        "road": "Via Salaria",
+        "distance_from_previous_mp": 11,
+        "identified": true,
+        "notes": "A mansio named for a roadside altar to Mars, recorded on the Tabula Peutingeriana between Falacrinae and the Apennine crossing. It is identified with the modern hamlet of Tufo, a frazione of Arquata del Tronto.",
+        "sources": [
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.26479,
+          42.70297
+        ]
+      },
+      "properties": {
+        "id": "station_vicus_badies",
+        "category": "vicus",
+        "name": "Vicus Badies",
+        "road": "Via Salaria",
+        "distance_from_previous_mp": 4,
+        "identified": false,
+        "notes": "A station recorded on the road between Falacrinae and the Apennine pass into Picenum, linked in local tradition to the Fonte del Campo area near Accumoli. No structural remains have been securely tied to the name.",
+        "sources": [
+          "Itinerarium Antonini 307.7"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.385425,
+          42.762988
+        ]
+      },
+      "properties": {
+        "id": "station_ad_centesimum",
+        "category": "mutatio",
+        "name": "Ad Centesimum",
+        "road": "Via Salaria",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Named for standing roughly at the hundredth Roman mile from the city, this station covered the upper Tronto valley stretch of the Via Salaria. A Roman bridge nearby at Quintodecimo still marks the crossing, and the district's hot springs later gave the modern town its name, Acquasanta Terme.",
+        "sources": [
+          "Itinerarium Antonini 307.8"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5687,
+          42.8537
+        ]
+      },
+      "properties": {
+        "id": "station_asculum_picenum",
+        "category": "mansio",
+        "name": "Asculum Picenum",
+        "road": "Via Salaria",
+        "distance_from_previous_mp": 13,
+        "identified": true,
+        "notes": "Asculum was the chief city of the Picentes before Rome absorbed the region, and the spark of the Social War of 91 BCE began here with the massacre of Rome's officials. A Roman bridge, the Ponte di Solestà, still carries traffic across the Tronto today.",
+        "sources": [
+          "Itinerarium Antonini 307.9",
+          "https://en.wikipedia.org/wiki/Ascoli_Piceno"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.904355,
+          42.9137095
+        ]
+      },
+      "properties": {
+        "id": "station_castrum_truentinum",
+        "category": "statio",
+        "name": "Castrum Truentinum",
+        "road": "Via Salaria",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "This fortified port at the mouth of the Truentus river was the Adriatic terminus of the Via Salaria, where salt first came ashore for the long haul inland to Rome. The site is identified with modern Martinsicuro on the river's right bank.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Castrum_Truentinum"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
