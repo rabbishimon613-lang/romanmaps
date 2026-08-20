@@ -808,6 +808,144 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Munigua (Municipium Flavium Muniguensium), Baetica, Spain (28161572799).jpg?width=800",
         "image_credit": "Terrace sanctuary of Munigua — Wikimedia Commons"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.487,
+          41.671
+        ]
+      },
+      "properties": {
+        "id": "euerg_cereatae_marianae",
+        "name": "Cereatae Marianae",
+        "category": "alimenta_town",
+        "one_line": "This small Latin town in the upper Liri valley is attested as an alimenta community through an inscription in which its alimentary boys and girls dedicated a monument to Hadrian, found alongside a separate sacred dedication to Apollo in the same excavation. The find shows Trajan's welfare program still running here a generation after he founded it.",
+        "province": "Italia",
+        "modern_location": "Casamari, comune of Veroli, Frosinone, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "M. R. Picuti, Un'iscrizione sacra ad Apollo, una dedica dei pueri et puellae alimentari all'imperatore Adriano..., Atti del V Convegno epigrafico cominese (2009)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3,
+          43.717
+        ]
+      },
+      "properties": {
+        "id": "euerg_sestinum",
+        "name": "Sestinum",
+        "category": "alimenta_town",
+        "one_line": "This small Umbrian hill town on the upper Foglia river is attested as an alimenta beneficiary through a dedication its alimentary boys and girls set up to Antoninus Pius in 161. The date, the very year of that emperor's death, shows Trajan's loan scheme still paying out roughly sixty years after it began.",
+        "province": "Italia",
+        "modern_location": "Sestino, Province of Arezzo, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "CIL XI 6002"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.411,
+          43.664
+        ]
+      },
+      "properties": {
+        "id": "euerg_tifernum_mataurense",
+        "name": "Tifernum Mataurense",
+        "category": "alimenta_town",
+        "one_line": "On the upper Metauro river, this small municipium is attested as an alimenta town through a dedication its alimentary boys and girls set up to Hadrian. It sits in a tight cluster of small Regio VI towns along the upper Tiber-Metauro watershed with unusually dense alimenta epigraphy.",
+        "province": "Italia",
+        "modern_location": "Sant'Angelo in Vado, Province of Pesaro e Urbino, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "Smith's Dictionary of Greek and Roman Antiquities, Alimentarii Pueri et Puellae"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6199,
+          43.0707
+        ]
+      },
+      "properties": {
+        "id": "euerg_asisium",
+        "name": "Asisium",
+        "category": "alimenta_town",
+        "one_line": "This Umbrian town's alimentary boys and girls honored a local magistrate for administering the emperor's welfare payments to them, a rare piece of evidence for how the alimenta was run day to day rather than just how it was financed.",
+        "province": "Italia",
+        "modern_location": "Assisi, Province of Perugia, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "Smith's Dictionary of Greek and Roman Antiquities, Alimentarii Pueri et Puellae"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.619,
+          41.997
+        ]
+      },
+      "properties": {
+        "id": "euerg_ficulea",
+        "name": "Ficulea",
+        "category": "alimenta_town",
+        "one_line": "This old Latin town on the Via Nomentana, only 15 kilometers from Rome, is attested as an alimenta beneficiary through a dedication its alimentary boys and girls set up to Marcus Aurelius. It is one of the latest-dated pieces of alimenta epigraphy, showing the institution still running decades after Trajan founded it, right at the edge of Rome's own suburbs.",
+        "province": "Italia",
+        "modern_location": "Tor Lupara, comune of Fonte Nuova, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "CIL XIV 4003"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6366,
+          43.7256
+        ]
+      },
+      "properties": {
+        "id": "euerg_urbinum_mataurense",
+        "name": "Urbinum Mataurense",
+        "category": "alimenta_town",
+        "one_line": "This is the likely identification of a Metauro-valley town whose alimentary boys and girls dedicated a monument to Antoninus Pius, grouped by scholars with the nearby Sestinum and Tifernum Mataurense dedications from the same regional cluster. The identification with modern Urbino, rather than a separate unlocated town of a similar name, is the standard scholarly reading rather than a certainty.",
+        "province": "Italia",
+        "modern_location": "Urbino, Province of Pesaro e Urbino, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "CIL XI 5395"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
