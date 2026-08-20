@@ -7738,6 +7738,844 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.533,
+          44.767
+        ]
+      },
+      "properties": {
+        "id": "station_ad_sextum_moesia",
+        "category": "mutatio",
+        "name": "Ad Sextum",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": 6,
+        "identified": true,
+        "notes": "The first change of horses out of Singidunum, six Roman miles down the road and named for the milestone that marked it. The Bordeaux pilgrim swapped teams here in 333 CE before the run east along the Danube bluffs. Belgrade's Mali Mokri Lug grew over the spot, and the Ottoman road to Constantinople later reused the same line.",
+        "sources": [
+          "Itin. Burdig. 564",
+          "https://topostext.org/work/231",
+          "https://en.wikipedia.org/wiki/Tsarigrad_Road"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.6508,
+          44.7369
+        ]
+      },
+      "properties": {
+        "id": "station_tricornium",
+        "category": "mutatio",
+        "name": "Tricornium",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": 6,
+        "identified": true,
+        "notes": "A Danube fort and horse-change twelve miles out from Singidunum, garrisoned to hold the Upper Moesian frontier. Nineteenth-century antiquaries recorded the walls of Castra Tricornia on the river terrace at Ritopek. A soldier's bronze breastplate engraved with seven planetary deities came out of the site.",
+        "sources": [
+          "Itin. Burdig. 564",
+          "http://imperium.ahlfeldt.se/places/17947.html",
+          "https://en.wikipedia.org/wiki/Tricornenses"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.7167,
+          44.6667
+        ]
+      },
+      "properties": {
+        "id": "station_ad_sextum_miliarem",
+        "category": "mutatio",
+        "name": "Ad Sextum Miliarem",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": 7,
+        "identified": true,
+        "notes": "A change of horses seven miles on from Tricornium, named like its neighbour for a roadside milestone. The road ran here on the terrace above the Danube, carrying dispatches between the legionary bases at Singidunum and Viminacium. Modern Grocka covers the station.",
+        "sources": [
+          "Itin. Burdig. 564",
+          "https://topostext.org/work/231",
+          "https://en.wikipedia.org/wiki/Tsarigrad_Road"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.8186,
+          44.6364
+        ]
+      },
+      "properties": {
+        "id": "station_mons_aureus",
+        "category": "statio",
+        "name": "Mons Aureus",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": 6,
+        "identified": true,
+        "notes": "The Golden Mountain held the Danube bank six miles east of Grocka with an auxiliary fort and a civil settlement attached. The Bordeaux Itinerary ranked it a town rather than a mere relay. Its remains lie under the village of Seone in the Smederevo district.",
+        "sources": [
+          "Itin. Burdig. 564",
+          "https://en.wikipedia.org/wiki/Mons_Aureus",
+          "http://imperium.ahlfeldt.se/places/23229.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.93,
+          44.6628
+        ]
+      },
+      "properties": {
+        "id": "station_vinceia",
+        "category": "mutatio",
+        "name": "Vinceia",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": 6,
+        "identified": true,
+        "notes": "A change of horses six miles from Mons Aureus, counted among the principal towns of Moesia Superior. It stood where the Morava traffic came down to meet the Danube trunk road. Smederevo's great fortress later rose on the same strategic ground.",
+        "sources": [
+          "Itin. Burdig. 564",
+          "https://topostext.org/work/231",
+          "https://en.wikipedia.org/wiki/Viciana"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.067,
+          44.683
+        ]
+      },
+      "properties": {
+        "id": "station_margum",
+        "category": "statio",
+        "name": "Margum",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Nine miles past Vinceia the road reached Margum, the fortified town at the mouth of the Great Morava. Travellers crossed the river here before the last ten miles into Viminacium. The site lies at Dubravica outside Pozarevac, where the Roman town was refortified again under the Byzantines.",
+        "sources": [
+          "Itin. Burdig. 564",
+          "https://en.wikipedia.org/wiki/Margum_(city)",
+          "https://topostext.org/work/231"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.418,
+          44.04
+        ]
+      },
+      "properties": {
+        "id": "station_ad_octavum_moesia",
+        "category": "mutatio",
+        "name": "Ad Octavum",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "A change of horses set nine miles short of Horreum Margi, its name counting the eighth milestone from the halt behind it. The Bordeaux pilgrim passed through in 333 CE coming down the Resava valley. Here the road left the hill country of the Kucaj for the open Morava plain.",
+        "sources": [
+          "Itin. Burdig. 565",
+          "https://topostext.org/work/231"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.3728,
+          43.9256
+        ]
+      },
+      "properties": {
+        "id": "station_horreum_margi",
+        "category": "mansio",
+        "name": "Horreum Margi",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "The granary of the Morava, where the trunk road crossed the river. Rome founded it as a fort, gave it a shield factory, and raised it to municipium before 224 CE. The Bordeaux pilgrim broke his journey here for the night; the excavated remains now sit inside Cuprija.",
+        "sources": [
+          "Itin. Burdig. 565",
+          "https://pleiades.stoa.org/places/207173",
+          "https://en.wikipedia.org/wiki/Horreum_Margi"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.473,
+          43.782
+        ]
+      },
+      "properties": {
+        "id": "station_sarmatorum",
+        "category": "mutatio",
+        "name": "Sarmatorum",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "A change of horses twelve miles south of Horreum Margi, named for the Sarmatians settled along this reach of the Morava. The Bordeaux Itinerary marked the boundary between Moesia and Dacia at this point in the road. Teams were swapped here before the eleven-mile pull to Cametas.",
+        "sources": [
+          "Itin. Burdig. 565",
+          "https://topostext.org/work/231"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.5464,
+          43.6772
+        ]
+      },
+      "properties": {
+        "id": "station_cametas",
+        "category": "mutatio",
+        "name": "Cametas",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": 11,
+        "identified": true,
+        "notes": "Eleven miles on from the Sarmatian post, a change of horses on the road up the Morava corridor. The Bordeaux pilgrim counted nine more miles from here to his overnight halt at Praesidium Pompei. The station stood where the town of Razanj now sits.",
+        "sources": [
+          "Itin. Burdig. 565",
+          "https://topostext.org/work/231",
+          "https://en.wikipedia.org/wiki/Aleksinac"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.7182,
+          43.6342
+        ]
+      },
+      "properties": {
+        "id": "station_praesidium_pompei",
+        "category": "mansio",
+        "name": "Praesidium Pompei",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "An overnight halt nine miles beyond Cametas, run as a garrisoned post on the Morava road. The Antonine Itinerary placed it thirty-three miles short of Naissus. Its remains lie at Bovan near Aleksinac, in the gorge where the Moravica breaks through the hills.",
+        "sources": [
+          "Itin. Burdig. 565",
+          "https://topostext.org/work/687",
+          "https://en.wikipedia.org/wiki/Tsarigrad_Road"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.78,
+          43.49
+        ]
+      },
+      "properties": {
+        "id": "station_rappiana",
+        "category": "mutatio",
+        "name": "Rappiana",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "The last change of horses before Naissus, twelve miles out from Praesidium Pompei and twelve miles short of the city. The Bordeaux pilgrim logged it in 333 CE on the road up the South Morava. Archaeologists working the Aleksinac district have narrowed the site to a handful of candidates.",
+        "sources": [
+          "Itin. Burdig. 565",
+          "https://en.wikipedia.org/wiki/Aleksinac"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.104,
+          43.27
+        ]
+      },
+      "properties": {
+        "id": "station_redicibus",
+        "category": "mutatio",
+        "name": "Redicibus",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "Twelve miles east of Naissus the road entered the Sicevo gorge, and a change of horses waited at Redicibus. The Bordeaux pilgrim named it in 333 CE between the city and the halt at Remesiana. The Nisava cut the only practical way through these mountains, and the road clung to its bank.",
+        "sources": [
+          "Itin. Burdig. 565",
+          "https://topostext.org/work/231"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.3122,
+          43.2189
+        ]
+      },
+      "properties": {
+        "id": "station_remesiana",
+        "category": "mansio",
+        "name": "Remesiana",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "An overnight halt sixteen miles beyond Redicibus that grew into a walled town and a bishopric. Niceta of Remesiana preached and wrote here in the fourth century. Bela Palanka covers the site, where a milestone of Severus Alexander has come to light.",
+        "sources": [
+          "Itin. Burdig. 565",
+          "https://en.wikipedia.org/wiki/Remesiana",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4647,
+          43.2342
+        ]
+      },
+      "properties": {
+        "id": "station_latina",
+        "category": "mutatio",
+        "name": "Latina",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "A change of horses nine miles east of Remesiana, its name marking the stretch where Latin speech dominated the road. The Bordeaux pilgrim stopped here before the nine-mile run on to Turres. The station sits at Crnokliste in the Pirot district.",
+        "sources": [
+          "Itin. Burdig. 565",
+          "https://topostext.org/work/231",
+          "https://en.wikipedia.org/wiki/Crnokli%C5%A1te"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.5866,
+          43.1553
+        ]
+      },
+      "properties": {
+        "id": "station_turres",
+        "category": "mansio",
+        "name": "Turres",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "The Towers stood nine miles on from Latina and served as the main halt between Naissus and Serdica. This was no bare stable but a market town where the traffic of two cities met, with legionaries stationed to keep the road open. Its foundations, nearly four metres wide, survive under Pirot Fortress.",
+        "sources": [
+          "Itin. Burdig. 566",
+          "https://en.wikipedia.org/wiki/Pirot_Fortress",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.024,
+          42.891
+        ]
+      },
+      "properties": {
+        "id": "station_meldia",
+        "category": "mansio",
+        "name": "Meldia",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "An overnight halt thirty-one miles east of Turres, the last mansio before the descent into Serdica. The Bordeaux pilgrim reached it after two changes of horses at Translitis and Ballanstra. It lay in the corridor between Dragoman and Slivnitsa, where the road leaves the pass for the Sofia basin.",
+        "sources": [
+          "Itin. Burdig. 566",
+          "https://topostext.org/work/231"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.2167,
+          42.8167
+        ]
+      },
+      "properties": {
+        "id": "station_scretisca",
+        "category": "mutatio",
+        "name": "Scretisca",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "The first stop west of Serdica, twelve miles out, and far more than a stable. Constantine the Great kept a residence here, and both the palatium and the road station were excavated at Kostinbrod from 1973. The Bordeaux pilgrim changed horses here eleven miles short of the city gates.",
+        "sources": [
+          "Itin. Burdig. 566",
+          "https://en.wikipedia.org/wiki/Kostinbrod",
+          "https://topostext.org/work/231"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.462,
+          42.674
+        ]
+      },
+      "properties": {
+        "id": "station_extuomne",
+        "category": "mutatio",
+        "name": "Extuomne",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "Eight miles east of Serdica the road reached its first change of horses, logged by the Bordeaux pilgrim in 333 CE. The stop served traffic bound for the Vakarel watershed and the Thracian plain beyond. It stood on the flat ground east of the city where the road ran clear of the Iskar.",
+        "sources": [
+          "Itin. Burdig. 566",
+          "https://topostext.org/work/231"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6406,
+          42.6433
+        ]
+      },
+      "properties": {
+        "id": "station_buragara",
+        "category": "mansio",
+        "name": "Buragara",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "An overnight halt nine miles past Extuomne, substantial enough to count as a full road station. Bulgarian archaeologists excavated a road watchtower and its small attached settlement by Lesnovo, southwest of Elin Pelin. Travellers rested here before the climb toward the Sredna Gora.",
+        "sources": [
+          "Itin. Burdig. 566",
+          "https://topostext.org/work/231",
+          "https://en.wikipedia.org/wiki/Lesnovo,_Sofia_Province"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.1669,
+          42.2669
+        ]
+      },
+      "properties": {
+        "id": "station_bona_mansio",
+        "category": "mansio",
+        "name": "Bona Mansio",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "One of the very few stations on this road that archaeologists have actually found and dug. Excavation from 2016 exposed a stone-and-brick circuit wall 2.60 metres thick, standing over three metres high, with its main gate intact. The complex ran from the fourth century to the late sixth, when raiders burned it out. It sits beside Karabunar in the Septemvri district.",
+        "sources": [
+          "Itin. Burdig. 566",
+          "https://balkanheritage.org/programs/bona-mansio-roman-road-station-on-via-diagonalis-excavation-project-bulgaria/",
+          "https://en.wikipedia.org/wiki/Karabunar"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.3756,
+          42.1487
+        ]
+      },
+      "properties": {
+        "id": "station_bessapara",
+        "category": "mansio",
+        "name": "Bessapara",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "The Market of the Bessi, an overnight halt twenty-one miles beyond Bona Mansio on the Hebros plain. Rome kept the Thracian tribal name after breaking the Bessi and fixed it to the station. The record knows an Upper and a Lower Bessapara; the site lies by Sinitovo near Pazardzhik.",
+        "sources": [
+          "Itin. Burdig. 567",
+          "https://www.academia.edu/9991685/The_Ancient_Settlement_of_Bessapara",
+          "https://en.wikipedia.org/wiki/Sinitovo"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.194,
+          42.221
+        ]
+      },
+      "properties": {
+        "id": "station_cillae",
+        "category": "mansio",
+        "name": "Cillae",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "An overnight halt nine miles west of Carassura on the run from Philippopolis toward the Hebros crossings. The Bordeaux pilgrim reached it after two changes of horses out of the city, at Sernota and Paramuole. The road here ran dead straight across the open Thracian plain.",
+        "sources": [
+          "Itin. Burdig. 567",
+          "https://topostext.org/work/231"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.35,
+          42.25
+        ]
+      },
+      "properties": {
+        "id": "station_carassura",
+        "category": "mutatio",
+        "name": "Carassura",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "A change of horses nine miles east of Cillae that grew into a fortified late-antique settlement. A joint Bulgarian-German team excavated the station and its fortress at Rupkite near Chirpan. The name outlived Rome: a medieval village reoccupied the ruins and kept it.",
+        "sources": [
+          "Itin. Burdig. 567",
+          "https://pleiades.stoa.org/places/216750",
+          "http://imperium.ahlfeldt.se/places/23333.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.817,
+          41.55
+        ]
+      },
+      "properties": {
+        "id": "station_nicae",
+        "category": "mansio",
+        "name": "Nicae",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "An overnight halt east of Hadrianopolis, founded as Nike and carrying the name down to Ottoman Havsa. The battle that destroyed Valens and two-thirds of his field army in 378 CE was fought beside this station. The Bordeaux pilgrim slept here on his way to Constantinople.",
+        "sources": [
+          "Itin. Burdig. 569",
+          "https://en.wikipedia.org/wiki/Nike_(Thrace)",
+          "https://en.wikipedia.org/wiki/Havsa"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.232,
+          41.418
+        ]
+      },
+      "properties": {
+        "id": "station_urisio",
+        "category": "mutatio",
+        "name": "Urisio",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "A change of horses seven miles west of Bergule, logged by the Bordeaux pilgrim in 333 CE. It served the stretch running out of the Hebros country into the plain of eastern Thrace. The settlement was still inhabited in Byzantine times.",
+        "sources": [
+          "Itin. Burdig. 569",
+          "https://en.wikipedia.org/wiki/Urisio"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.355,
+          41.4058
+        ]
+      },
+      "properties": {
+        "id": "station_bergule",
+        "category": "mansio",
+        "name": "Bergule",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": 7,
+        "identified": true,
+        "notes": "An overnight halt seven miles east of Urisio that grew into a town and was renamed Arcadiopolis. It sat on a tributary of the Ergene, roughly halfway between Hadrianopolis and Constantinople, and became a bishopric. Luleburgaz covers the site.",
+        "sources": [
+          "Itin. Burdig. 569",
+          "https://en.wikipedia.org/wiki/Bergule",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.468,
+          41.342
+        ]
+      },
+      "properties": {
+        "id": "station_narco",
+        "category": "mutatio",
+        "name": "Narco",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": 8,
+        "identified": false,
+        "notes": "A change of horses eight miles east of Bergule on the flat Thracian road. The Bordeaux pilgrim used it in 333 CE between Bergule and the halt at Drizipara. The settlement survived into Byzantine times.",
+        "sources": [
+          "Itin. Burdig. 569",
+          "https://en.wikipedia.org/wiki/Narco_(Thrace)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.5444,
+          41.2989
+        ]
+      },
+      "properties": {
+        "id": "station_drizipara",
+        "category": "mansio",
+        "name": "Drizipara",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "An overnight halt nine miles past Narco that became a bishopric of the province of Europa. The Antonine Itinerary set it fourteen miles from Bergule on the run to Byzantium. Buyukkaristiran, in the Luleburgaz district, stands on the site.",
+        "sources": [
+          "Itin. Burdig. 569",
+          "https://en.wikipedia.org/wiki/Drizipara",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.656,
+          41.234
+        ]
+      },
+      "properties": {
+        "id": "station_tipso",
+        "category": "mutatio",
+        "name": "Tipso",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "A change of horses eight miles beyond Drizipara, on the open ground northwest of Tzurulum. The Bordeaux pilgrim named it in 333 CE. The station served the long flat crossing of the Ergene basin.",
+        "sources": [
+          "Itin. Burdig. 569",
+          "https://en.wikipedia.org/wiki/Tipaso"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.8,
+          41.15
+        ]
+      },
+      "properties": {
+        "id": "station_tzurulum",
+        "category": "mansio",
+        "name": "Tzurulum",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "The overnight halt the Bordeaux pilgrim reached on his fifth night out of Hadrianopolis. The hill town commanded the point where the road turned south for the Propontis, and Byzantine armies refortified it again and again. Corlu grew on the same ridge.",
+        "sources": [
+          "Itin. Burdig. 570",
+          "https://en.wikipedia.org/wiki/%C3%87orlu",
+          "https://topostext.org/work/231"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.8189,
+          41.0939
+        ]
+      },
+      "properties": {
+        "id": "station_beodizo",
+        "category": "mutatio",
+        "name": "Beodizo",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": 8,
+        "identified": true,
+        "notes": "The last change of horses before Heraclea, set nine miles northwest of the old Perinthus. The Bordeaux pilgrim logged it in 333 CE. The site lies by Turkgucu outside Corlu, where the road came down off the ridge toward the Marmara shore.",
+        "sources": [
+          "Itin. Burdig. 570",
+          "https://en.wikipedia.org/wiki/Beodizo",
+          "https://www.wikidata.org/wiki/Q65051976"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.149,
+          41.039
+        ]
+      },
+      "properties": {
+        "id": "station_baunne",
+        "category": "mutatio",
+        "name": "Baunne",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "A change of horses twelve miles east of Heraclea on the coastal run to Constantinople. The Bordeaux pilgrim used it in 333 CE, ten miles short of Selymbria. The road here followed the Marmara shore within sight of the water.",
+        "sources": [
+          "Itin. Burdig. 570",
+          "https://topostext.org/work/231"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.419,
+          41.045
+        ]
+      },
+      "properties": {
+        "id": "station_callum",
+        "category": "mutatio",
+        "name": "Callum",
+        "road": "Via Militaris",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "A change of horses ten miles east of Selymbria, the second-to-last relay before the capital. The Bordeaux pilgrim named it in 333 CE. A seventeenth-century traveller was still able to point out its ruins on the coast road.",
+        "sources": [
+          "Itin. Burdig. 570",
+          "https://en.wikipedia.org/wiki/Callum_(Thrace)"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
