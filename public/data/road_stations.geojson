@@ -6294,6 +6294,456 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3601,
+          42.1266
+        ]
+      },
+      "properties": {
+        "id": "station_baccanae",
+        "category": "mansio",
+        "name": "Baccanae (Ad Vacanas)",
+        "road": "Via Cassia",
+        "distance_from_previous_mp": 21,
+        "identified": true,
+        "notes": "Baccanae occupied the crater of an extinct volcano twenty-one Roman miles north of Rome on the Via Cassia, at the point where travelers could branch onto the Via Amerina toward Umbria. Archaeologists excavated a large mansio here in 1979 during roadworks, uncovering baths, stables, a portico with a fountain, shops, and barracks built in the first century CE atop Republican-era foundations. The Antonine Itinerary and the Bordeaux Pilgrim both recorded the stop, whose name survived into the Middle Ages as Baccano. The volcanic lake that once filled the crater was drained only in 1838, long after the road had gone out of Roman use.",
+        "sources": [
+          "Itinerarium Antonini (Luca-Roma stage list, Baccanas-Roma XXI)",
+          "Itinerarium Burdigalense"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2185,
+          42.2439
+        ]
+      },
+      "properties": {
+        "id": "station_sutrium",
+        "category": "mansio",
+        "name": "Sutrium",
+        "road": "Via Cassia",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Sutrium commanded the gateway into southern Etruria where the Via Cassia climbed onto the tufa plateau, a position valuable enough that Rome held it as a Latin colony from 383 BCE onward. Its amphitheater, carved directly out of the volcanic rock in the first century CE, still stands beside the ancient road along with an Etruscan-Roman necropolis of rock-cut tombs. The Antonine Itinerary's Luca-Roma stage list places it twelve miles beyond Baccanae and eleven short of Forum Cassii. Modern Sutri preserves the Roman street pattern within its historic core.",
+        "sources": [
+          "Itinerarium Antonini (Sutrium-Baccanas XII)",
+          "Livy 6.3"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1251,
+          42.299
+        ]
+      },
+      "properties": {
+        "id": "station_vicus_matrini",
+        "category": "vicus",
+        "name": "Vicus Matrini",
+        "road": "Via Cassia",
+        "distance_from_previous_mp": 7,
+        "identified": true,
+        "notes": "Vicus Matrini served travelers on the Via Cassia between Sutrium and Forum Cassii, a roadside settlement rather than a full town. Surface surveys near the Casale delle Capannacce, in the comune of Capranica, have recovered early-imperial pottery and building debris consistent with a way-station, though the site has never been formally excavated. The Tabula Peutingeriana lists it seven miles beyond Sutrium and four short of Forum Cassii, exactly matching the Antonine Itinerary's combined eleven-mile figure for that stretch. Its coordinates here are interpolated along the road corridor near Capranica rather than pinned to an excavated structure, since no single geocoded point for the site has been published.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "Itinerarium Antonini (Sutrium-Forum Cassii combined XI)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0716,
+          42.3306
+        ]
+      },
+      "properties": {
+        "id": "station_forum_cassii",
+        "category": "vicus",
+        "name": "Forum Cassii",
+        "road": "Via Cassia",
+        "distance_from_previous_mp": 4,
+        "identified": true,
+        "notes": "Forum Cassii grew as a market vicus where the Via Cassia crossed a minor stream about two kilometers northeast of modern Vetralla, forty-four Roman miles from Rome. Four separate ancient itineraries name it: the Antonine Itinerary, the Tabula Peutingeriana, the Ravenna Cosmography, and, centuries later, Archbishop Sigeric's pilgrim route of 990 CE. The medieval church of Santa Maria in Forcassi rose on the site and preserved the Roman name into the present as the frazione Forcassi. Paving slabs of the original road surface still turn up in the surrounding fields.",
+        "sources": [
+          "Itinerarium Antonini (XLIV m.p. ab Urbe)",
+          "Tabula Peutingeriana",
+          "Pleiades place 413144"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0646,
+          42.4682
+        ]
+      },
+      "properties": {
+        "id": "station_aquae_passeris",
+        "category": "mansio",
+        "name": "Aquae Passeris",
+        "road": "Via Cassia",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Aquae Passeris was a bathing mansio built around a thermal spring in the Bagnaccio area northeast of Forum Cassii, on the stretch of the Via Cassia approaching Volsinii. The Tabula Peutingeriana records it about twelve miles beyond Forum Cassii, and the sulfurous springs it served still flow today under the name Bagnaccio, just outside modern Viterbo. Travelers used its baths both for hygiene and for the therapeutic reputation Roman spa stations commonly carried on long overland routes. Combined with the following stage to Volsinii, the two legs reproduce the Antonine Itinerary's twenty-eight-mile total for Forum Cassii to Volsinii almost exactly.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "Dictionary of Greek and Roman Geography (1854), \"Via Cassia\""
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9858,
+          42.6447
+        ]
+      },
+      "properties": {
+        "id": "station_volsinii_cassia",
+        "category": "mansio",
+        "name": "Volsinii",
+        "road": "Via Cassia",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Volsinii Novi rose on the northern shore of Lake Bolsena after Rome destroyed the older Etruscan hill-city, traditionally located near modern Orvieto, during a slave revolt in 264 BCE and resettled its population at this lakeside site. The Via Cassia passed directly through the new town, seventy-two Roman miles from Rome according to the Antonine Itinerary's cumulative count, on the long stretch between Forum Cassii and Clusium. Trajan-era Volsinii had temples, baths, and an amphitheater whose remains still stand beside modern Bolsena, and its cults and elite families are well attested in inscriptions. Its most famous relic, the miracle of the bleeding host at the church of Santa Cristina, belongs to a much later, medieval layer of the site's history.",
+        "sources": [
+          "Itinerarium Antonini (Via Cassia, cumulative LXXII m.p. ab Urbe)",
+          "Pliny, Naturalis Historia 2.53.140"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9484,
+          43.017
+        ]
+      },
+      "properties": {
+        "id": "station_clusium",
+        "category": "mansio",
+        "name": "Clusium",
+        "road": "Via Cassia",
+        "distance_from_previous_mp": 30,
+        "identified": true,
+        "notes": "Clusium ranked among the twelve cities of the Etruscan league and, under its king Lars Porsenna, briefly held Rome itself at the end of the sixth century BCE. The Via Cassia reached it around the hundredth Roman mile from Rome, after descending from Volsinii through the upper Val di Chiana. Its painted tomb chambers and museum of Etruscan and Roman antiquities make it one of the best-documented stops on the entire road. From Clusium the Via Cassia continued north to Arretium, a stretch the Antonine Itinerary breaks only at the otherwise-unidentified station of Ad Statuas.",
+        "sources": [
+          "Itinerarium Antonini (Via Cassia, cumulative ~CII m.p. ab Urbe)",
+          "Livy 2.9"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9272,
+          43.1616
+        ]
+      },
+      "properties": {
+        "id": "station_ad_statuas_cassia",
+        "category": "mutatio",
+        "name": "Ad Statuas",
+        "road": "Via Cassia",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "Ad Statuas appears in the Antonine Itinerary as a stage twelve Roman miles north of Clusium and twenty-five short of Arretium, its name suggesting a roadside marker or shrine hung with statues rather than a real town. No inscription or excavated structure has ever been tied to the name, and proposals have ranged across the Val di Chiana between Chiusi and Cortona without agreement. The point plotted here is a proportional placement along the Clusium-Arretium road corridor, chosen to satisfy the itinerary's own mileage figures rather than any excavated findspot. Confidence in the exact location is accordingly low.",
+        "sources": [
+          "Itinerarium Antonini (Clusium-Ad Statuas XII)",
+          "Dictionary of Greek and Roman Geography (1854), \"Via Cassia\""
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8783,
+          43.4633
+        ]
+      },
+      "properties": {
+        "id": "station_arretium",
+        "category": "mansio",
+        "name": "Arretium",
+        "road": "Via Cassia",
+        "distance_from_previous_mp": 25,
+        "identified": true,
+        "notes": "Arretium was one of Etruria's foremost cities long before the Via Cassia reached it, famous by the early Empire for the glossy red \"Arretine ware\" pottery its workshops exported across the Mediterranean. The Antonine Itinerary places it on the Cassia's northern stretch, and travelers in 117 CE could pick up connecting roads east toward Umbria and the Via Flaminia network. Substantial Roman remains survive beneath modern Arezzo, including a well-preserved amphitheater and fragments of the forum. From here the Via Cassia turned north again for the run down the Arno valley to Florentia.",
+        "sources": [
+          "Itinerarium Antonini (Via Cassia stage)",
+          "Pliny, Naturalis Historia 35.160"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5613,
+          43.6165
+        ]
+      },
+      "properties": {
+        "id": "station_casas_caesarianas",
+        "category": "mutatio",
+        "name": "Ad Fines (Casas Caesarianas)",
+        "road": "Via Cassia",
+        "distance_from_previous_mp": 25,
+        "identified": false,
+        "notes": "The Antonine Itinerary records this stage under two alternative names, Ad Fines and Casas Caesarianas, twenty-five Roman miles north of Arretium on the road down to Florentia, but gives no further description. Neither name has been matched to a confirmed site, and the stretch runs through the upper Arno valley near modern Montevarchi and Figline Valdarno, an area of continuous medieval and modern settlement that has likely obscured any Roman remains. The point plotted here is a proportional placement along the Arretium-Florentia corridor rather than an excavated findspot. Its dual naming may reflect an imperial estate (\"Caesarian houses\") that absorbed an older boundary station on this stretch of the road.",
+        "sources": [
+          "Itinerarium Antonini (Arretium-Ad Fines/Casas Caesarianas XXV)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2558,
+          43.7696
+        ]
+      },
+      "properties": {
+        "id": "station_florentia",
+        "category": "mansio",
+        "name": "Florentia",
+        "road": "Via Cassia",
+        "distance_from_previous_mp": 25,
+        "identified": true,
+        "notes": "Florentia began as a Roman colony on the Arno in the first century BCE, planted below the older Etruscan hill-town of Faesulae, and by Trajan's reign had grown into the northern terminus the Via Cassia had been built to reach. From here roads continued on to Pistoria and Luca, linking the Cassia into the wider network of northern Italy. The colony's original street grid still underlies Florence's historic center, and fragments of its amphitheater and baths survive within later buildings. A Hadrianic milestone of 124 CE records repairs to the Via Cassia along the eighty-six-mile stretch between the territory of Clusium and Florentia.",
+        "sources": [
+          "Itinerarium Antonini (Via Cassia terminus)",
+          "CIL XI 6619 (Hadrianic milestone, 124 CE)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.305,
+          42.026
+        ]
+      },
+      "properties": {
+        "id": "station_careiae",
+        "category": "vicus",
+        "name": "Careiae",
+        "road": "Via Clodia",
+        "distance_from_previous_mp": 17,
+        "identified": true,
+        "notes": "Careiae was the first station the Via Clodia reached after it split from the Via Cassia near modern La Storta, an Etruscan-founded town whose Roman-period life is attested by inscriptions including a statue base dedicated by the local guild of dendrophori. Its ruins lie in the abandoned settlement of Galeria, about a kilometer west of the modern hamlet of Santa Maria di Galeria, on a low ridge above the Arrone stream. Surface remains of the Clodia's paving survive nearby within the site's grounds. The distance given here follows modern scholarship's roughly 25-kilometer estimate of Careiae's position from Rome rather than a directly reconciled itinerary figure.",
+        "sources": [
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.235,
+          42.0815
+        ]
+      },
+      "properties": {
+        "id": "station_ad_novas_clodia",
+        "category": "mutatio",
+        "name": "Ad Novas",
+        "road": "Via Clodia",
+        "distance_from_previous_mp": 7,
+        "identified": true,
+        "notes": "Ad Novas was a horse-changing mutatio on the Via Clodia's approach to Lake Sabatinus, sited near modern Vigna di Valle on the lake's southern shore. The Tabula Peutingeriana records it nine miles short of Forum Clodii, a figure that closely matches the measured distance between the area's thermal springs and the hill of San Liberato, where Forum Clodii stood. No structural remains have been formally excavated at the site, and its exact position is inferred from itinerary distances rather than direct archaeological confirmation.",
+        "sources": [
+          "Tabula Peutingeriana (\"Ad Novas VIIII\")"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1645,
+          42.1294
+        ]
+      },
+      "properties": {
+        "id": "station_forum_clodii",
+        "category": "mansio",
+        "name": "Forum Clodii",
+        "road": "Via Clodia",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Forum Clodii stood on the hill of San Liberato above the western shore of Lake Bracciano, a market town the Antonine Itinerary places thirty-two Roman miles from Rome on the Via Clodia. Excavations have exposed baths, a forum, and a temple complex, and the site takes its name from the road's presumed builder or patron, a member of the Claudian family. The eighth- or ninth-century church of Saints Marcus, Marcianus, and Liberatus was later built over the Roman remains, preserving the site's identity into the modern toponym San Liberato. Forum Clodii issued its own coinage under Augustus, evidence of a self-governing community rather than a mere waypoint.",
+        "sources": [
+          "Itinerarium Antonini (XXXII m.p. ab Urbe)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0325,
+          42.2733
+        ]
+      },
+      "properties": {
+        "id": "station_blera_etruria",
+        "category": "mansio",
+        "name": "Blera",
+        "road": "Via Clodia",
+        "distance_from_previous_mp": 22,
+        "identified": true,
+        "notes": "Blera perched on a narrow tufa spur between two ravines, a defensive Etruscan site whose peak came in the sixth and fifth centuries BCE, long before the Via Clodia formalized the road running past it. The Roman-era bridges known today as the Ponte della Rocca and Ponte del Diavolo carried the ancient road across the ravines flanking the town and still stand. The Tabula Peutingeriana places it twenty-two miles beyond Forum Clodii, deep in the hill country of the Tuscia. Modern Blera retains its Roman-derived name and sits directly on the identified line of the ancient road.",
+        "sources": [
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9458,
+          42.3389
+        ]
+      },
+      "properties": {
+        "id": "station_norchia",
+        "category": "mansio",
+        "name": "Marta (Norchia)",
+        "road": "Via Clodia",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "The Tabula Peutingeriana records a station called Marta nine miles beyond Blera, but that distance falls well short of the Marta river and modern town further north, leading topographers to place the ancient stage instead at Norchia, an Etruscan settlement famous for its cliffside rock-cut tomb facades. The Via Clodia crossed the Biedano river gorge nearby through the Cava Buia, a roughly 400-meter road-cutting with walls up to ten meters high, one of the most dramatic surviving stretches of the road. Norchia's necropolis, carved with temple-front tomb facades in the Hellenistic period, remained in use into the Roman era even as the settlement itself declined. The identification of this stage with the itinerary's \"Marta\" is a scholarly proposal based on mileage fit rather than an inscribed certainty.",
+        "sources": [
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8708,
+          42.4183
+        ]
+      },
+      "properties": {
+        "id": "station_tuscania",
+        "category": "mansio",
+        "name": "Tuscania",
+        "road": "Via Clodia",
+        "distance_from_previous_mp": 8,
+        "identified": true,
+        "notes": "Tuscania was a substantial Etruscan and Roman town on the Via Clodia, walled and equipped with temples whose terracotta revetments rank among the finest Etrusco-Italic architectural sculpture ever recovered. The Tabula Peutingeriana names it as a stage on the Clodia's run toward the Maremma coast, though the precise ancient mileage from the previous station has not survived and is estimated here from the road's known course rather than a cited figure. Two large Etruscan necropoleis flank the town, including the Curunas family's painted sarcophagi now in the local archaeological museum. Medieval Tuscania absorbed much of the Roman town's fabric, and its two Romanesque basilicas stand on early Christian foundations at the ancient site's edge.",
+        "sources": [
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.75,
+          42.533
+        ]
+      },
+      "properties": {
+        "id": "station_maternum",
+        "category": "vicus",
+        "name": "Maternum",
+        "road": "Via Clodia",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "Maternum appears on the Tabula Peutingeriana as a stage on the Via Clodia between Tuscania and Saturnia, roughly eighteen kilometers past the former and twenty-seven short of the latter, but no inscription or excavated site carries the name. Nineteenth-century topographers split between Canino and Ischia di Castro as the likely modern equivalent, both hill towns in the lower Fiora valley that controlled the same stretch of road, and the question remains unresolved. The coordinates plotted here follow the Ischia di Castro identification, the placement that best satisfies the itinerary's combined mileage to Saturnia; the alternative Canino site lies roughly the same distance away but fails a straight-line consistency check against the sourced distance to Saturnia. Confidence in this identification is low, and the point should be read as an approximate stage rather than a fixed archaeological findspot.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "Dictionary of Greek and Roman Geography (1854), \"Via Clodia\""
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5042,
+          42.6664
+        ]
+      },
+      "properties": {
+        "id": "station_saturnia",
+        "category": "mansio",
+        "name": "Saturnia",
+        "road": "Via Clodia",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Saturnia became a Roman colony in 183 BCE, its walls rebuilt in massive polygonal blocks that still ring the hilltop today, and the road's later medieval name, \"the road of the springs,\" refers to the sulfurous thermal waters that rise nearby. The colony marked the practical endpoint of the well-attested stretch of the Via Clodia; beyond it, the road's course toward a junction with the Via Aurelia near Cosa is inferred rather than traced on the ground. Saturnia's forum, streets, and necropolis have been partly excavated within and around the medieval walled village that now occupies the site. Its free-flowing hot springs, the Cascate del Mulino, remain a popular bathing spot fed by the same waters Roman visitors used two millennia ago.",
+        "sources": [
+          "Tabula Peutingeriana (Via Clodia terminus)",
+          "Livy 39.55"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
