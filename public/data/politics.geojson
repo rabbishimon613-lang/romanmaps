@@ -1754,6 +1754,107 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.1862,
+          37.1766
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_hierapolis_castabala",
+        "category": "senator_hometown",
+        "name": "Hierapolis Castabala",
+        "one_line": "This Cilician city was the hometown of Quintus Pompeius Falco, a senator who fought in Trajan's Dacian War as a legionary tribune before governing Lycia-Pamphylia and then Judaea.",
+        "province": "Cilicia",
+        "modern_location": "Kesmeburun, Osmaniye Province, Turkey",
+        "extant_117ce": true,
+        "notes": "Falco's career is carved on an inscription that stood in his own home city: legionary tribune in the First Dacian War (101-102), legate of Lycia-Pamphylia around 103, legate of Judaea around 104-107, and suffect consul in the last months of 108. He went on to govern Britain under Hadrian.",
+        "sources": [
+          "Prosopographia Imperii Romani, P 602",
+          "Bean & Mitford, Journeys in Rough Cilicia",
+          "OLBA 9 (2004), E. Ertekin"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2189,
+          36.4225
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_thugga",
+        "category": "senator_hometown",
+        "name": "Thugga",
+        "one_line": "This Numidian city is the likely hometown of Senecio Memmius Afer, whose cognomen and family name point to Thugga and who reached the consulship under Trajan in 99.",
+        "province": "Africa Proconsularis",
+        "modern_location": "Dougga, Tunisia",
+        "extant_117ce": true,
+        "notes": "Afer held the suffect consulship in the summer of 99, one of the earliest senators of African background attested under Trajan. His family, the Memmii, were prominent at Thugga, and his cognomen Afer marks him out explicitly as African-born, though no surviving inscription names Thugga as his birthplace outright.",
+        "sources": [
+          "Wikipedia, Senecio Memmius Afer",
+          "E. Champlin, fasti scholarship on Trajanic consuls"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.4814,
+          37.5794
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_samosata",
+        "category": "senator_hometown",
+        "name": "Samosata",
+        "one_line": "This Syrian city on the Euphrates was the hometown of Gaius Julius Antiochus Epiphanes Philopappus, grandson of Commagene's last king, who reached the consulship under Trajan in 109.",
+        "province": "Syria",
+        "modern_location": "Samsat, Adiyaman Province, Turkey",
+        "extant_117ce": true,
+        "notes": "Philopappus was born around 65 in Samosata, once the capital of the client kingdom of Commagene before Rome absorbed it into Syria. He built a full Roman senatorial career, becoming suffect consul in 109, and later settled in Athens as a citizen and archon — where the Philopappos Monument on the Mouseion Hill, completed around 116, still shows him in his consular triumphal robes.",
+        "sources": [
+          "Wikipedia, Gaius Julius Antiochus Epiphanes Philopappus",
+          "IG II2 3450"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7275,
+          37.9838
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_athens",
+        "category": "senator_hometown",
+        "name": "Athens",
+        "one_line": "Athens was the hometown of Tiberius Claudius Atticus Herodes, who bought his way back into wealth and entered the Roman Senate as praetor in 98, reportedly the first man from old Greece to sit in it.",
+        "province": "Achaea",
+        "modern_location": "Athens, Greece",
+        "extant_117ce": true,
+        "notes": "Atticus Herodes claimed descent from Miltiades and Cimon; his father had been stripped of the family fortune under Domitian, but he recovered it and was made praetor in 98, the opening year of Trajan's reign. His son, the sophist and benefactor Herodes Atticus, would become one of the wealthiest men in the empire.",
+        "sources": [
+          "Wikipedia, Tiberius Claudius Atticus Herodes (consul 133)",
+          "Oxford Classical Dictionary, Claudius Atticus Herodes"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
