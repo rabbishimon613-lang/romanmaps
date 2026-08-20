@@ -287,10 +287,12 @@
         "built": -238,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Rome worked Sardinia's silver and lead deposits through the mining district of Metalla, using condemned criminals and slaves under a dedicated procurator metallorum. In 19 CE Tiberius shipped 4,000 men here into Sardinia's harsh interior, a sentence ancient writers treated as barely distinguishable from a death sentence. At the probable mine site near Grugua, archaeologists found a tunnel called su presoni still fitted with iron rings for shackling the condemned to the rock they cut.",
+        "notes": "Rome worked Sardinia's silver and lead deposits through the mining district of Metalla, using condemned criminals and slaves under a dedicated procurator metallorum. In 19 CE Tiberius shipped 4,000 men here into Sardinia's harsh interior, a sentence ancient writers treated as barely distinguishable from a death sentence. Two bishops of Rome were later sent to these mines: Callixtus, condemned around 186 CE and freed by an imperial mistress's intervention, and Pontian, who was stripped of his office in 235 CE and died at the rock face. At the probable mine site near Grugua, archaeologists found a tunnel called su presoni still fitted with iron rings for shackling the condemned to the stone they cut.",
         "sources": [
           "Tacitus, Annals 2.85",
           "Josephus, Antiquities of the Jews 18.3.5",
+          "Hippolytus, Refutation of All Heresies 9.12 (on Callixtus in the Sardinian mines)",
+          "Liber Pontificalis, Life of Pontian (deported to Sardinia, 235 CE)",
           "https://en.wikipedia.org/wiki/Metalla"
         ],
         "confidence": "medium",
