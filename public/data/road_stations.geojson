@@ -5876,6 +5876,424 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.934,
+          44.4072
+        ]
+      },
+      "properties": {
+        "id": "station_genua",
+        "category": "mansio",
+        "name": "Genua",
+        "road": "Via Postumia",
+        "distance_from_previous_mp": 0,
+        "identified": true,
+        "notes": "Genua served as the western terminus and Tyrrhenian anchor of the Via Postumia, the road consul Spurius Postumius Albinus built in 148 BCE to link Liguria to the Adriatic. The city functioned as Rome's principal Ligurian port, exporting timber, wool, and hides north across the Apennines. A Verona milestone recorded the full Genua-Cremona distance as 122 Roman miles, confirming Genua as the road's official starting point. The road left the city along the Val Polcevera before climbing toward the Apennine passes.",
+        "sources": [
+          "CIL V (Museo Lapidario Maffeiano, Verona milestone, Genua-Cremonam m.p. CXXII)",
+          "Treccani, Enciclopedia Italiana, s.v. \"Postumia, via\"",
+          "Strabo, Geography 5.1.11"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.904,
+          44.498
+        ]
+      },
+      "properties": {
+        "id": "station_pontedecimo",
+        "category": "milestone",
+        "name": "Pons ad Decimum Miliarium",
+        "road": "Via Postumia",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Pons ad Decimum Miliarium marked the point ten Roman miles from Genua where the Via Postumia crossed the Riccio stream on a stone bridge, at the modern Genoa district still called Pontedecimo. The stop sat at the base of the Val Polcevera climb, functioning as the last way-marker before the road began its ascent toward the Apennine crossing near the Bocchetta pass. The name survived unbroken from antiquity into the modern toponym, an unusually direct case of an ancient milestone giving a settlement its permanent name. The original Roman-period bridge was destroyed by flooding in 1834 and replaced nearby.",
+        "sources": [
+          "Wikipedia (Italian), \"Pons ad Decimum Miliarium (Genova)\"",
+          "romanoimpero.com, \"Via Postumia\""
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8679,
+          44.7059
+        ]
+      },
+      "properties": {
+        "id": "station_libarna",
+        "category": "vicus",
+        "name": "Libarna",
+        "road": "Via Postumia",
+        "distance_from_previous_mp": 36,
+        "identified": true,
+        "notes": "Libarna grew into a substantial Roman town on the left bank of the Scrivia river, the only major station the Via Postumia passed between Genua and Dertona. The settlement received a theater, an amphitheater, a forum, and residential quarters, all extensively excavated at the site near modern Serravalle Scrivia. Pliny the Elder, the Antonine Itinerary, and the Tabula Peutingeriana all recorded the town by name. Its position where the road descended from the Apennine crossing made it the last stop before the flat approach to Dertona.",
+        "sources": [
+          "Pliny, Naturalis Historia 3.49",
+          "Itinerarium Antonini",
+          "Tabula Peutingeriana, segment III",
+          "Pleiades place 383694"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8656,
+          44.8942
+        ]
+      },
+      "properties": {
+        "id": "station_dertona",
+        "category": "mansio",
+        "name": "Dertona",
+        "road": "Via Postumia",
+        "distance_from_previous_mp": 14,
+        "identified": true,
+        "notes": "Dertona, modern Tortona, anchored the western sector of the Via Postumia as the road's first major junction after the Apennine crossing from Genua. The colony connected south to Liguria, west toward Gaul, and east across the Po plain toward Placentia, making it a key node in the Roman road network of Cisalpine Gaul. A Verona milestone recording the total Genua-Cremona distance as 122 Roman miles confirms the 14-mile figure for this leg over a variant manuscript reading of 35 miles. Dertona's status as a colonia gave it walls, a forum, and the administrative apparatus typical of a Roman regional capital.",
+        "sources": [
+          "Itinerarium Antonini",
+          "Tabula Peutingeriana",
+          "CIL V (Verona milestone, Genua-Cremonam m.p. CXXII)",
+          "Pleiades place 383633"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0092,
+          44.9925
+        ]
+      },
+      "properties": {
+        "id": "station_iria",
+        "category": "mansio",
+        "name": "Iria",
+        "road": "Via Postumia",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Iria stood on the Via Postumia at the crossing of the Staffora river, on the site of modern Voghera. Inscriptions from Aquileia and Dertona recorded its full colonial title as colonia Forum Iulii Iriensium, and the Antonine Itinerary placed it twelve Roman miles north of Dertona. The Roman bridge that carried the road over the Staffora left traces still visible in the modern town. The medieval name Viqueria, which evolved into Voghera, derived directly from the ancient Vicus Iriae.",
+        "sources": [
+          "Itinerarium Antonini",
+          "Tabula Peutingeriana",
+          "Treccani, Enciclopedia dell'Arte Antica, s.v. \"Voghera\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.267,
+          45.067
+        ]
+      },
+      "properties": {
+        "id": "station_camillomago",
+        "category": "mansio",
+        "name": "Camillomagus",
+        "road": "Via Postumia",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Camillomagus marked a station on the Via Postumia between Iria and Placentia, generally placed at modern Broni in the Oltrepo Pavese. The Antonine Itinerary and Tabula Peutingeriana recorded it sixteen Roman miles east of Iria and twenty-five miles short of Placentia (already mapped under the Via Aemilia). The site sat along the natural corridor later known as the Stradella strait, a narrow passage between the Apennine foothills and the Po plain that made the location strategically important for controlling east-west traffic. Modern scholarship treats the Broni identification as probable rather than certain, since the ancient settlement itself has not been definitively excavated.",
+        "sources": [
+          "Itinerarium Antonini",
+          "Tabula Peutingeriana",
+          "Treccani, Enciclopedia Italiana, s.v. \"Postumia, via\""
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0248,
+          45.1386
+        ]
+      },
+      "properties": {
+        "id": "station_cremona",
+        "category": "mansio",
+        "name": "Cremona",
+        "road": "Via Postumia",
+        "distance_from_previous_mp": 44,
+        "identified": true,
+        "notes": "Cremona anchored the Via Postumia's crossing of the Po river, standing forty-four Roman miles east of Camillomagus by way of Placentia (25 miles Camillomagus-Placentia, then 19 miles Placentia-Cremona; Placentia itself is already mapped as a station under the Via Aemilia and is not duplicated here). Founded as a Latin colony in 218 BCE as a sister settlement to Placentia, Cremona grew into one of the wealthiest cities of Cisalpine Gaul before its sack in 69 CE during the civil wars. A Verona milestone recorded the total distance from Genua to Cremona as 122 Roman miles along this road. East of the city the Via Postumia continued across the plain toward Bedriacum and Verona.",
+        "sources": [
+          "CIL V (Museo Lapidario Maffeiano, Verona milestone, Genua-Cremonam m.p. CXXII)",
+          "Tacitus, Histories 2.70",
+          "romanoimpero.com, \"Via Postumia\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.252,
+          45.1331
+        ]
+      },
+      "properties": {
+        "id": "station_locus_castorum",
+        "category": "mutatio",
+        "name": "Locus Castorum",
+        "road": "Via Postumia",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "Locus Castorum served as a way station roughly midway between Cremona and Bedriacum, taking its name from a roadside shrine to Castor and Pollux that also offered travelers a spring, a rest stop, and a horse-changing point. The location became briefly famous as the site of a battle during the civil war of 69 CE between forces loyal to Otho and Vitellius. Coordinates here are interpolated along the Cremona-Bedriacum road at the 12-mile mark cited in ancient sources, in the area of San Giovanni in Croce and Cappella de' Picenardi, since no modern village has been definitively confirmed as the exact site.",
+        "sources": [
+          "Wikipedia, \"Locus Castorum\"",
+          "Wikipedia, \"Battle of Locus Castorum\""
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4417,
+          45.1286
+        ]
+      },
+      "properties": {
+        "id": "station_bedriacum",
+        "category": "mansio",
+        "name": "Bedriacum",
+        "road": "Via Postumia",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Bedriacum stood at the confluence of the Oglio and Chiese rivers, on the site of modern Calvatone, twenty-two Roman miles east of Cremona along the Via Postumia. The settlement functioned as a major road hub, with routes branching south to Mantua and connecting toward Brescia and the Brenner corridor, in addition to carrying the main Postumia traffic toward Verona. Bedriacum entered the historical record permanently through the two battles fought near it in 69 CE, the Year of the Four Emperors, decisive engagements in the wars between Otho, Vitellius, and Vespasian. Archaeological excavations at Calvatone have uncovered the Roman settlement's street grid and public buildings.",
+        "sources": [
+          "Tacitus, Histories 2.23-2.45",
+          "Wikipedia, \"Calvatone\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.846,
+          45.3509
+        ]
+      },
+      "properties": {
+        "id": "station_villafranca_junction",
+        "category": "vicus",
+        "name": "Unnamed road junction (Villafranca di Verona)",
+        "road": "Via Postumia",
+        "distance_from_previous_mp": 30,
+        "identified": false,
+        "notes": "A road junction on the Via Postumia stood ten Roman miles short of Verona, where the branch road to Mantua split from the main line toward the city; modern Villafranca di Verona occupies this location today. The town's grid of perpendicular streets and its position astride the ancient route suggest Roman-period military or way-station origins beneath the medieval settlement founded in 1185. No ancient Latin name for this junction survives in the itinerary sources, so it is placed here as an unidentified point based on its documented position 10 Roman miles from Verona along the road, rather than as a confirmed named station. Coordinates mark the modern town center as the best available proxy for the ancient junction.",
+        "sources": [
+          "Wikipedia (Italian), \"Villafranca di Verona\""
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9928,
+          45.4386
+        ]
+      },
+      "properties": {
+        "id": "station_verona",
+        "category": "mansio",
+        "name": "Verona",
+        "road": "Via Postumia",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Verona sat at the crossing of the Via Postumia and the Adige river, forty Roman miles east of Bedriacum, and grew into one of the most important cities of Roman Cisalpine Gaul. The Postumia crossed the river here and the city became a major node linking the eastward road toward Vicetia and Aquileia with routes north toward Raetia and the Alps. A milestone preserved today in Verona's Museo Lapidario Maffeiano recorded the full Genua-Cremona distance along this road, underscoring the city's role as a keeper of the road's official record. Verona's amphitheater, forum, and city walls attest to its status as a leading regional colonia.",
+        "sources": [
+          "CIL V (Museo Lapidario Maffeiano, Verona)",
+          "Itinerarium Antonini",
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.18,
+          45.413
+        ]
+      },
+      "properties": {
+        "id": "station_calidarium",
+        "category": "mansio",
+        "name": "Calidarium",
+        "road": "Via Postumia",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Calidarium marked a stop on the Via Postumia roughly twelve Roman miles east of Verona, at a site known since antiquity for its thermal springs and preserved today in the town name Caldiero. Roman-period bathers used the warm mineral waters for their therapeutic properties, and inscriptions found at the site attest to religious dedications connected to the springs. The location made it a natural resting point for travelers on the road between Verona and Vicetia, combining bathing facilities with lodging. The modern spa at Terme di Giunone continues to draw on the same thermal source the Romans exploited.",
+        "sources": [
+          "Comune di Caldiero, \"Storia del Comune\"",
+          "Terme di Giunone, site history page"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5475,
+          45.5467
+        ]
+      },
+      "properties": {
+        "id": "station_vicetia",
+        "category": "mansio",
+        "name": "Vicetia",
+        "road": "Via Postumia",
+        "distance_from_previous_mp": 21,
+        "identified": true,
+        "notes": "Vicetia stood on the Via Postumia thirty-three Roman miles east of Verona, on the site of modern Vicenza, and functioned as a prosperous municipium in the Roman province of Venetia et Histria. The Tabula Peutingeriana and Antonine Itinerary both recorded the thirty-three mile distance from Verona, while the Itinerarium Hierosolymitanum gave a slightly shorter figure of thirty-one miles, a common variance from mile-fraction rounding in the pilgrim source. East of the city the Postumia continued in a long, almost perfectly straight line across the Veneto plain toward the Piave river. A Roman milestone was found nearby at Mason di Montebello, confirming the road's course along this stretch.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "Itinerarium Antonini",
+          "Itinerarium Burdigalense"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1511,
+          45.7197
+        ]
+      },
+      "properties": {
+        "id": "station_postioma",
+        "category": "mutatio",
+        "name": "Flumen Meduacus (Postioma)",
+        "road": "Via Postumia",
+        "distance_from_previous_mp": 33,
+        "identified": true,
+        "notes": "Flumen Meduacus marked a mutatio on the Via Postumia thirty-three Roman miles east of Vicetia, at the point the road crossed a branch of the Meduacus river system, on the site of modern Postioma, a hamlet of the comune of Paese near Treviso. The name Postioma itself preserves the road's memory, deriving from the settlement's position where the Via Postumia crossed the older Paleovenetian track along the line of the modern Feltrina road. The stop offered travelers and their horses a change of mounts partway between Vicetia and Opitergium. From here the road continued in a well-documented, nearly straight line toward the Piave crossing and Opitergium.",
+        "sources": [
+          "Wikipedia (Italian), \"Postioma\"",
+          "Itinerarium Antonini",
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4881,
+          45.78
+        ]
+      },
+      "properties": {
+        "id": "station_opitergium",
+        "category": "mansio",
+        "name": "Opitergium",
+        "road": "Via Postumia",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "Opitergium stood twenty Roman miles east of the Flumen Meduacus crossing, on the site of modern Oderzo, and served as an important Roman municipium in the Venetian plain. The Via Postumia reached the town after crossing the Piave river on a well-attested, straight alignment, and at the locality still called Tre Piere the road met branch routes running north toward Tridentum and the upper plain. On the Tabula Peutingeriana, Opitergium marks the point where the road's course toward Aquileia becomes less certain in the surviving map. The town's Roman-period street grid and forum area have been documented through excavation beneath the modern city center.",
+        "sources": [
+          "Itinerarium Antonini",
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.845,
+          45.7561
+        ]
+      },
+      "properties": {
+        "id": "station_concordia",
+        "category": "mansio",
+        "name": "Iulia Concordia",
+        "road": "Via Postumia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Iulia Concordia, founded as a Roman colony in 42 BCE at the site of modern Concordia Sagittaria, marked the point where the Via Postumia met the Via Annia running along the Adriatic coast. The town became a significant production center, especially for weapons manufacture reflected in the epithet Sagittaria (\"of the arrows\") attached to its modern name. The distance from Opitergium along the Via Postumia proper is not reliably attested: the only figure found, sixteen Roman miles via a secondary route, falls short of the straight-line distance between the two points and is therefore not usable as a confirmed mileage. Concordia's location at the junction of two major roads made it an important administrative and religious center in Roman Venetia.",
+        "sources": [
+          "Wikipedia, \"Concordia Sagittaria\"",
+          "Treccani, Enciclopedia Italiana, s.v. \"Postumia, via\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3712,
+          45.7697
+        ]
+      },
+      "properties": {
+        "id": "station_aquileia",
+        "category": "mansio",
+        "name": "Aquileia",
+        "road": "Via Postumia",
+        "distance_from_previous_mp": 31,
+        "identified": true,
+        "notes": "Aquileia served as the eastern terminus of the Via Postumia, standing thirty-one Roman miles from Concordia along the shared final stretch with the Via Annia. Founded as a Latin colony in 181 BCE, Aquileia grew into one of the largest and wealthiest cities of the Roman Empire, a major river port on the Natiso and a gateway for trade and troop movements into Illyricum, Pannonia, and Noricum. The city's forum, port structures, and extensive necropolis have been extensively excavated and form the core of the modern archaeological park. Aquileia's importance as a hub connecting the Cisalpine road network to the Balkan and Danubian provinces made it a fitting eastern anchor for the road system Spurius Postumius Albinus initiated in 148 BCE.",
+        "sources": [
+          "Itinerarium Antonini (Aquileia-Bononia route, Concordia at 31 m.p.)",
+          "Strabo, Geography 5.1.8"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
