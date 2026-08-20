@@ -100,14 +100,14 @@
         "id": "route_amber_road",
         "name": "Amber Road",
         "commodity": "amber",
-        "direction": "Baltic coast \u2192 Aquileia \u2192 Italy",
+        "direction": "Baltic coast → Aquileia → Italy",
         "notes": "Pliny the Elder records a Roman knight sent north under Nero to buy amber directly at the source, a round trip of some 600 Roman miles from Carnuntum that returned with enough amber to decorate the netting, weapons, and biers used in a single day of gladiatorial games. From Carnuntum south to Aquileia the route followed the empire's own paved road network through Scarbantia, Savaria, Sala, Poetovio, Celeia, and Emona, not through Vindobona, which lay upstream on a separate Danube road. North of Carnuntum the road crossed unannexed Germania to the Baltic amber coast; no continuous ancient road bed survives there, so this stretch is drawn as a reasonable line between attested anchor points rather than a mapped road.",
         "sources": [
           "Plin. NH 37.45",
           "Tac. Germania 45",
           "https://en.wikipedia.org/wiki/Amber_Road",
           "https://bernsteinstrasse-burgenland.at/en/the-roman-amber-road-from-the-adriatic-to-the-danube-region/",
-          "Itin. Ant.; Tabula Peutingeriana (Aquileia-Emona-Celeia-Poetovio-Sala-Savaria-Scarbantia-Carnuntum road geometry per Barrington Atlas 20, L\u00f6hberg 2010, Visy 2011, as used in this site's roads_main/roads_secondary layers)"
+          "Itin. Ant.; Tabula Peutingeriana (Aquileia-Emona-Celeia-Poetovio-Sala-Savaria-Scarbantia-Carnuntum road geometry per Barrington Atlas 20, Löhberg 2010, Visy 2011, as used in this site's roads_main/roads_secondary layers)"
         ]
       }
     },
@@ -205,7 +205,7 @@
         "id": "node_sala",
         "route": "Amber Road",
         "name": "Sala",
-        "role": "Sala was a Pannonian road station between Poetovio and Savaria recorded in the Itinerarium Antonini, identified today with the archaeological site at Zalal\u00f6v\u0151, Hungary.",
+        "role": "Sala was a Pannonian road station between Poetovio and Savaria recorded in the Itinerarium Antonini, identified today with the archaeological site at Zalalövő, Hungary.",
         "sources": [
           "Itin. Ant.",
           "https://en.wikipedia.org/wiki/Zalal%C3%B6v%C5%91"
@@ -901,6 +901,343 @@
         "role": "Portus received African oil shipments alongside the larger Baetican and Egyptian grain fleets, its Trajanic hexagonal basin only a few years old in 117 CE. This node duplicates the harbor's role on the map's other trade routes; here it marks its place in the African olive oil trade specifically.",
         "sources": [
           "Suet. Claud. 18-20"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            36.16,
+            36.2
+          ],
+          [
+            38.269,
+            34.55
+          ],
+          [
+            40.731,
+            34.747
+          ],
+          [
+            44.581,
+            33.095
+          ],
+          [
+            48.515,
+            34.799
+          ],
+          [
+            62.189,
+            37.658
+          ],
+          [
+            66.897,
+            36.756
+          ]
+        ]
+      },
+      "properties": {
+        "id": "route_silk_road",
+        "name": "Silk Road",
+        "commodity": "silk",
+        "direction": "China to Rome, via Kushan and Parthian territory",
+        "notes": "Chinese silk crossed Central Asia through Kushan territory and then Parthian Persia, whose rulers ran the middle stretch as a deliberate monopoly, taxing and re-selling raw silk to Roman buyers while keeping its source a closely guarded secret. Caravans reached Palmyra's markets before the final leg to Antioch, Rome's own gateway to eastern luxury goods. A parallel sea route through the Red Sea to Muziris on India's coast fed Alexandria with additional silk, spices, and gems.",
+        "sources": [
+          "The 4 Powerful Empires of the Silk Road, TheCollector",
+          "https://www.worldhistory.org/image/15772/map-of-the-roman-trade-with-the-east-c-1st-3rd-cen/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.29028,
+            15.36889
+          ],
+          [
+            44.12766,
+            17.49326
+          ],
+          [
+            37.922708,
+            26.6082971
+          ],
+          [
+            37.9418,
+            26.8085
+          ],
+          [
+            35.4444,
+            30.3285
+          ],
+          [
+            34.4667,
+            31.5
+          ]
+        ]
+      },
+      "properties": {
+        "id": "route_incense_road",
+        "name": "Incense Road",
+        "commodity": "frankincense and myrrh",
+        "direction": "Arabia Felix to Gaza and Alexandria",
+        "notes": "Camel caravans carried frankincense and myrrh some 1,600 miles from the harvest fields of Hadhramaut, watering and paying toll at oasis stations the whole way north. Petra, the Nabataean capital, taxed and redistributed the cargo before it reached Mediterranean shipping at Gaza and Alexandria — and by 117 CE Petra itself sat inside the Roman province of Arabia, folding the old smuggling route directly into imperial revenue.",
+        "sources": [
+          "Madain Project, Cities, Trade Points, and Nodes of the Incense Trade Route",
+          "https://www.livius.org/articles/place/incense-route/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.16,
+          36.2
+        ]
+      },
+      "properties": {
+        "id": "node_antioch_silk",
+        "route": "Silk Road",
+        "name": "Antioch",
+        "role": "Antioch was the Silk Road's Roman terminus, where caravan goods off-loaded from Palmyra entered the empire's own Mediterranean shipping network.",
+        "sources": [
+          "https://www.thecollector.com/four-empires-silk-road/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.269,
+          34.55
+        ]
+      },
+      "properties": {
+        "id": "node_palmyra_silk",
+        "route": "Silk Road",
+        "name": "Palmyra",
+        "role": "Palmyra grew rich as the last great caravan market before the Roman frontier, taxing Silk Road goods as they crossed from Parthian territory into the empire.",
+        "sources": [
+          "https://www.thecollector.com/four-empires-silk-road/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.731,
+          34.747
+        ]
+      },
+      "properties": {
+        "id": "node_dura_europos_silk",
+        "route": "Silk Road",
+        "name": "Dura-Europos",
+        "role": "This fortified Euphrates river town sat on the contested edge between Roman Syria and Parthia, changing hands repeatedly as a garrison and customs post on the eastern caravan route.",
+        "sources": [
+          "https://www.thecollector.com/four-empires-silk-road/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.581,
+          33.095
+        ]
+      },
+      "properties": {
+        "id": "node_ctesiphon_silk",
+        "route": "Silk Road",
+        "name": "Ctesiphon",
+        "role": "The Parthian capital on the Tigris controlled the silk trade's middle stretch, taxing and re-selling Chinese goods to Roman buyers without ever letting them deal directly with the source.",
+        "sources": [
+          "https://www.thecollector.com/four-empires-silk-road/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.515,
+          34.799
+        ]
+      },
+      "properties": {
+        "id": "node_ecbatana_silk",
+        "route": "Silk Road",
+        "name": "Ecbatana",
+        "role": "An old Median capital turned Parthian summer residence, Ecbatana anchored the caravan road as it climbed onto the Iranian plateau east of Mesopotamia.",
+        "sources": [
+          "https://www.thecollector.com/four-empires-silk-road/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          62.189,
+          37.658
+        ]
+      },
+      "properties": {
+        "id": "node_merv_silk",
+        "route": "Silk Road",
+        "name": "Merv",
+        "role": "Merv was a major oasis city where the Silk Road's Parthian and Kushan-controlled stretches met, a resupply point for caravans crossing Central Asia's deserts.",
+        "sources": [
+          "https://www.thecollector.com/four-empires-silk-road/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.897,
+          36.756
+        ]
+      },
+      "properties": {
+        "id": "node_bactra_silk",
+        "route": "Silk Road",
+        "name": "Bactra",
+        "role": "Bactra, in the Kushan Empire's heartland, was a crossroads city where Chinese, Indian, and Persian trade networks all converged before goods moved on toward Parthia and Rome.",
+        "sources": [
+          "https://www.thecollector.com/four-empires-silk-road/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.29028,
+          15.36889
+        ]
+      },
+      "properties": {
+        "id": "node_shabwa_incense",
+        "route": "Incense Road",
+        "name": "Shabwa",
+        "role": "Shabwa was the capital of the Hadhramaut kingdom and the collection point where frankincense harvested from the surrounding hills was weighed, taxed, and loaded onto northbound caravans.",
+        "sources": [
+          "https://madainproject.com/cities_trade_points_and_nodes_of_the_incense_trade_route"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.12766,
+          17.49326
+        ]
+      },
+      "properties": {
+        "id": "node_najran_incense",
+        "route": "Incense Road",
+        "name": "Najran",
+        "role": "Najran was a major watering stop where the incense caravan route crossed a key north-south trade axis in the Arabian interior.",
+        "sources": [
+          "https://madainproject.com/cities_trade_points_and_nodes_of_the_incense_trade_route"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.922708,
+          26.6082971
+        ]
+      },
+      "properties": {
+        "id": "node_dedan_incense",
+        "route": "Incense Road",
+        "name": "Dedan",
+        "role": "Dedan was a long-established oasis kingdom in the Hejaz, its wells and markets a fixed stop for caravans on the incense route long before Rome ever taxed the trade.",
+        "sources": [
+          "https://madainproject.com/cities_trade_points_and_nodes_of_the_incense_trade_route"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.9418,
+          26.8085
+        ]
+      },
+      "properties": {
+        "id": "node_hegra_incense",
+        "route": "Incense Road",
+        "name": "Hegra",
+        "role": "Hegra was the Nabataeans' second city after Petra, its rock-cut tombs marking the wealth the incense trade brought even to a stop deep in the desert.",
+        "sources": [
+          "https://madainproject.com/cities_trade_points_and_nodes_of_the_incense_trade_route"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4444,
+          30.3285
+        ]
+      },
+      "properties": {
+        "id": "node_petra_incense",
+        "route": "Incense Road",
+        "name": "Petra",
+        "role": "Petra was the Nabataean capital that built its fortune taxing and redistributing incense caravans, a role it kept after Rome annexed the kingdom as the province of Arabia in 106.",
+        "sources": [
+          "https://www.livius.org/articles/place/incense-route/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.4667,
+          31.5
+        ]
+      },
+      "properties": {
+        "id": "node_gaza_incense",
+        "route": "Incense Road",
+        "name": "Gaza",
+        "role": "Gaza was the Mediterranean port where incense caravans finally met Roman shipping, the end of a journey that began some 1,600 miles south in Arabia Felix.",
+        "sources": [
+          "https://www.livius.org/articles/place/incense-route/"
         ]
       }
     }
