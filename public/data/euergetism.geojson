@@ -970,6 +970,134 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0852,
+          45.8081
+        ]
+      },
+      "properties": {
+        "id": "euerg_comum_pliny_library",
+        "name": "Como",
+        "category": "benefactor_inscription",
+        "one_line": "The senator and letter-writer Pliny the Younger built his hometown a public library around 97 CE at his own expense, then endowed it with 100,000 sesterces for its permanent upkeep. He separately gave 500,000 sesterces to support the town's freeborn boys and girls, and left Comum public baths in his will along with 300,000 sesterces to furnish them. A monumental inscription once mounted above the baths listed the full record of his gifts to the city.",
+        "province": "Italia",
+        "modern_location": "Como, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "CIL V 5262 (Comum benefaction inscription, known from a 15th-century copy and one surviving fragment)",
+          "Pliny the Younger, Epistulae 1.8"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Como - Dom - Fassade - Plinius der Juengere.jpg?width=800",
+        "image_credit": "Statue of Pliny the Younger, Como Cathedral facade — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.0665,
+          40.1826
+        ]
+      },
+      "properties": {
+        "id": "euerg_prusa_dio_chrysostom",
+        "name": "Bursa",
+        "category": "benefactor_inscription",
+        "one_line": "The orator Dio Chrysostom rebuilt the center of his native Prusa with a new colonnaded stoa and library between about 100 and 112 CE, demolishing older structures along the route to make way for it. He placed a statue of Trajan inside the library and entombed his own wife and son in a monument at the center of the colonnade. The project provoked a formal inquiry after rivals accused him of destroying the city's older buildings without authorization, a dispute Pliny the Younger investigated in person as governor of Bithynia around 111 CE.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "Bursa, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Dio Chrysostom, Orationes 40, 45, 47, 48",
+          "Pliny the Younger, Epistulae X.81-82"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.813,
+          39.885
+        ]
+      },
+      "properties": {
+        "id": "euerg_segobriga_forum",
+        "name": "Saelices",
+        "category": "benefactor_inscription",
+        "one_line": "The local notable Proculus Spantamicus paid to pave Segobriga's newly built forum around 15 BCE, laying limestone slabs across the square and setting his own name into the pavement in gilded bronze letters. The dedication ranks among the longest bronze-letter pavement inscriptions known from a Roman Spanish forum. The square he financed remained the civic center of the town for the rest of its Roman history, still standing complete in 117 CE.",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Saelices, Spain",
+        "extant_117ce": true,
+        "sources": [
+          "Segobriga forum pavement inscription (Proculus Spantamicus dedication in bronze letters)",
+          "P. Pensabene, R. Mar & R. Cebrian, 'Funding of public buildings and calculation of the costs of the stone materials: the case of the Forum of Segobriga' (Tarragona, 2012)"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Segobriga, Criptoportico del Foro.jpg?width=800",
+        "image_credit": "Forum cryptoporticus, Segobriga — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2919,
+          32.6403
+        ]
+      },
+      "properties": {
+        "id": "euerg_lepcis_magna_theatre",
+        "name": "Leptis Magna",
+        "category": "benefactor_inscription",
+        "one_line": "The Punic magistrate Annobal Tapapius Rufus paid for Lepcis Magna's stone theatre out of his own funds in 1-2 CE, giving the city its first permanent venue for plays and public assemblies. He recorded the gift in matching Latin and Neo-Punic inscriptions cut above the entrance arches, the same bilingual formula he used a few years earlier on the city's market. The theatre, its seating built partly into the hillside behind a colonnaded stage building, still stands today.",
+        "province": "Africa Proconsularis",
+        "modern_location": "Khoms, Libya",
+        "extant_117ce": true,
+        "sources": [
+          "IRT 321-322 (Latin building inscriptions of Annobal Rufus)",
+          "IPT 24a (Neo-Punic parallel inscription)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theatre Leptis Magna 01.JPG?width=800",
+        "image_credit": "Roman Theatre, Leptis Magna — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1206,
+          40.8214
+        ]
+      },
+      "properties": {
+        "id": "euerg_puteoli_temple_augustus",
+        "name": "Pozzuoli",
+        "category": "benefactor_inscription",
+        "one_line": "The wealthy merchant Lucius Calpurnius built Puteoli's Temple of Augustus at his own expense in the early 1st century CE, raising a Corinthian temple with nine fluted columns down each flank and a white marble cella. His dedication survives cut into the architrave, recording that he built the temple and its ornamentation at his own cost. The temple's walls still stand today, later absorbed into the town's cathedral.",
+        "province": "Italia",
+        "modern_location": "Pozzuoli, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "CIL X 1613 (dedicatory inscription of L. Calpurnius)",
+          "CIL X 1614 (architect's inscription, L. Cocceius Auctus)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pozzuoli - Cattedrale San Procolo martire - 2023-09-20 13-01-51 001.JPG?width=800",
+        "image_credit": "Pozzuoli Cathedral, built into the Temple of Augustus — Wikimedia Commons"
+      }
     }
   ]
 }
