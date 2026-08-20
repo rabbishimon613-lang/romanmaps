@@ -3,7 +3,13 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [0.9019, 51.8890] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.9019,
+          51.889
+        ]
+      },
       "properties": {
         "id": "cult_camulodunum",
         "name": "Colchester",
@@ -22,7 +28,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [1.2581, 41.1192] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2581,
+          41.1192
+        ]
+      },
       "properties": {
         "id": "cult_tarraco",
         "name": "Tarragona",
@@ -41,7 +53,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [27.1847, 39.1325] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1847,
+          39.1325
+        ]
+      },
       "properties": {
         "id": "cult_pergamon",
         "name": "Pergamon",
@@ -61,7 +79,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [29.9408, 40.7654] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9408,
+          40.7654
+        ]
+      },
       "properties": {
         "id": "cult_nicomedia",
         "name": "Izmit",
@@ -80,7 +104,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [27.3426, 37.9365] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.3426,
+          37.9365
+        ]
+      },
       "properties": {
         "id": "cult_ephesus_sebastoi",
         "name": "Ephesus",
@@ -99,7 +129,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [32.8583, 39.9444] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.8583,
+          39.9444
+        ]
+      },
       "properties": {
         "id": "cult_ancyra",
         "name": "Ankara",
@@ -118,7 +154,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [28.7258, 37.7085] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.7258,
+          37.7085
+        ]
+      },
       "properties": {
         "id": "cult_aphrodisias_sebasteion",
         "name": "Aphrodisias",
@@ -137,7 +179,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [31.1892, 38.3061] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1892,
+          38.3061
+        ]
+      },
       "properties": {
         "id": "cult_pisidian_antioch",
         "name": "Pisidian Antioch",
@@ -156,7 +204,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [3.0044, 43.1841] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.0044,
+          43.1841
+        ]
+      },
       "properties": {
         "id": "cult_narbo",
         "name": "Narbonne",
@@ -175,7 +229,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [22.2000, 40.5236] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.2,
+          40.5236
+        ]
+      },
       "properties": {
         "id": "cult_beroea",
         "name": "Veria",
@@ -194,7 +254,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [10.3236, 36.8513] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3236,
+          36.8513
+        ]
+      },
       "properties": {
         "id": "cult_carthage_gens_augusta",
         "name": "Carthage",
@@ -213,7 +279,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-4.7742, 37.8829] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7742,
+          37.8829
+        ]
+      },
       "properties": {
         "id": "cult_corduba",
         "name": "Cordoba",
@@ -232,7 +304,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [29.8975, 31.2013] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.8975,
+          31.2013
+        ]
+      },
       "properties": {
         "id": "cult_alexandria_caesareum",
         "name": "Alexandria",
@@ -251,7 +329,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [34.8930, 32.5013] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.893,
+          32.5013
+        ]
+      },
       "properties": {
         "id": "cult_caesarea_maritima",
         "name": "Caesarea",
@@ -270,7 +354,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [35.1950, 32.2764] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.195,
+          32.2764
+        ]
+      },
       "properties": {
         "id": "cult_sebaste",
         "name": "Sebastia",
@@ -289,7 +379,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.484471, 41.891616] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.484471,
+          41.891616
+        ]
+      },
       "properties": {
         "id": "cult_rome_divus_augustus",
         "name": "Rome",
@@ -307,7 +403,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.483891, 41.892727] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.483891,
+          41.892727
+        ]
+      },
       "properties": {
         "id": "cult_rome_divus_vespasian_titus",
         "name": "Rome",
@@ -325,7 +427,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [12.4934, 41.8876] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4934,
+          41.8876
+        ]
+      },
       "properties": {
         "id": "cult_rome_divus_claudius",
         "name": "Rome",
@@ -340,6 +448,403 @@
           "https://renatoprosciutto.com/temple-divus-claudius-celio-rome/"
         ],
         "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.8414,
+          44.8692
+        ]
+      },
+      "properties": {
+        "id": "cult_pula_roma_augustus",
+        "name": "Pula",
+        "category": "augusteum",
+        "first_worshipped": "Roma and Augustus",
+        "one_line": "Pula's colonists raised this temple to Roma and Augustus on the north edge of the forum between 2 BCE and 14 CE, the eastern member of a row of three. It stands 14 metres tall on its podium behind four Corinthian columns, its frieze carved with vines and birds. An Allied bomb flattened it in 1944 and masons rebuilt it stone by stone from the rubble. By 117 it had already stood a century.",
+        "province": "Italia",
+        "modern_location": "Pula, Croatia",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Augustus,_Pula",
+          "https://www.visitpula.hr/see-do/temple-of-augustus/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Templo de Augusto, Pula, Croacia, 2017-04-17, DD 71-73 HDR.jpg?width=800",
+        "image_credit": "Diego Delso, Wikimedia Commons, CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8742,
+          45.5256
+        ]
+      },
+      "properties": {
+        "id": "cult_vienne_augustus_livia",
+        "name": "Vienne",
+        "category": "augusteum",
+        "first_worshipped": "Roma and Augustus (later Livia)",
+        "one_line": "Vienne raised this temple to Roma and Augustus at the head of its forum under Augustus, then rebuilt it around 40 CE and cut Livia's name into the architrave beside her husband's. Six Corinthian columns carry the front, and the temple still stands to its full height, one of only two in France that do. It served as a church, then a courthouse, then a museum. In 117 it was well over a century old.",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Vienne, France",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Augustus_and_Livia",
+          "https://en.vienne-condrieu.com/patrimoine-culturel/temple-of-augustus-and-livia-vienne/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple of Augustus and Livia, Vienne, France (9039439703).jpg?width=800",
+        "image_credit": "Wikimedia Commons, CC BY-SA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3604,
+          43.8386
+        ]
+      },
+      "properties": {
+        "id": "cult_nimes_maison_carree",
+        "name": "Nimes",
+        "category": "augusteum",
+        "first_worshipped": "Gaius and Lucius Caesar",
+        "one_line": "Nemausus dedicated this temple to Gaius and Lucius Caesar, Augustus's grandsons and chosen heirs, both dead before the work finished around 5 CE. Thirty engaged Corinthian columns ring the walls. Medieval hands stripped the bronze dedication letters, but in 1758 a local scholar read the text back off the nail holes left in the frieze. It has never lost its roof in twenty centuries.",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Nimes, France",
+        "extant_117ce": true,
+        "sources": [
+          "https://whc.unesco.org/en/list/1569/",
+          "https://www.ancientworldmagazine.com/articles/square-house-nimes-temple-dedicated-heirs-augustus/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Maison carree front.jpg?width=800",
+        "image_credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3447,
+          38.9169
+        ]
+      },
+      "properties": {
+        "id": "cult_merida_forum_temple",
+        "name": "Merida",
+        "category": "augusteum",
+        "first_worshipped": "Roma and Augustus",
+        "one_line": "Emerita Augusta set this temple on the east side of its civic forum in the first years of the empire and gave it to the emperor's cult, not to Diana, whose name a later antiquarian pinned on it by mistake. Six granite columns front the podium and the flanks are ringed by more. A Renaissance palace was built inside the cella and is still standing there. Lusitania's capital worshipped here for three centuries.",
+        "province": "Lusitania",
+        "modern_location": "Merida, Spain",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.livius.org/articles/place/augusta-emerita/augusta-emerita-photos/augusta-emerita-civic-forum/",
+          "https://en.wikipedia.org/wiki/Roman_Forum_(M%C3%A9rida)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Merida - templo romano de Diana - RI-51-0000118.JPG?width=800",
+        "image_credit": "Wikimedia Commons, CC BY-SA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7275,
+          37.9715
+        ]
+      },
+      "properties": {
+        "id": "cult_athens_roma_augustus",
+        "name": "Athens",
+        "category": "sebasteion",
+        "first_worshipped": "Roma and Augustus",
+        "one_line": "The Athenian people set a round temple of nine Ionic columns on the Acropolis around 19 BCE, 23 metres due east of the Parthenon and aligned exactly with its front door. The architrave inscription names the goddess Roma and Augustus Caesar Soter, along with the priest and the archon of the year. Only foundations and scattered blocks survive. For a century and a half it held the emperor's image in Greece's most sacred sightline.",
+        "province": "Achaia",
+        "modern_location": "Athens, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "IG II3 4, 10 (= IG II2 3173), architrave dedication of the temple of Roma and Augustus",
+          "https://www.atticinscriptions.com/inscription/IGII34/10",
+          "https://en.wikipedia.org/wiki/Temple_of_Roma_and_Augustus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Remains of the Temple of Rome and Augustus (Athens) on 16 April 2018.jpg?width=800",
+        "image_credit": "Wikimedia Commons, CC BY-SA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.719,
+          40.4292
+        ]
+      },
+      "properties": {
+        "id": "cult_nicaea_roma_divus_iulius",
+        "name": "Iznik",
+        "category": "provincial_cult_center",
+        "first_worshipped": "Roma and Divus Iulius",
+        "one_line": "Augustus split emperor worship in Asia Minor in two in 29 BCE: Greek communities got the living ruler, Roman citizens got the dead one. Nicaea received the precinct of Roma and Divus Iulius for the citizens resident in Bithynia, the exact counterpart of Nicomedia's temple of Roma and Augustus. Cassius Dio records both grants in the same passage. The precinct has never been found under modern Iznik.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "Iznik, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Cass. Dio 51.20.6-8",
+          "https://www.cambridge.org/core/journals/classical-quarterly/article/abs/cassius-dio-and-the-cult-of-ivlivs-and-roma-at-ephesus-and-nicaea-512068/B5E3A3D6A18B0869F6153F0DE1F4EDFC"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1386,
+          38.4183
+        ]
+      },
+      "properties": {
+        "id": "cult_smyrna_tiberius_temple",
+        "name": "Izmir",
+        "category": "provincial_cult_center",
+        "first_worshipped": "Tiberius, Livia and the Senate",
+        "one_line": "Eleven cities of Asia sent embassies to the Senate in 26 CE to compete for the province's second imperial temple, and Smyrna took it. The temple honoured Tiberius, his mother Livia and the Roman Senate together, making the Senate itself an object of worship. Tacitus reports the whole debate and the verdict. Smyrna held the title of temple warden from that day, and still held it in 117.",
+        "province": "Asia",
+        "modern_location": "Izmir, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Tac. Ann. 4.55-56",
+          "Tac. Ann. 4.15",
+          "https://www.ourcivilisation.com/smartboard/shop/tacitusc/annals/chap4.htm"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2949,
+          32.6396
+        ]
+      },
+      "properties": {
+        "id": "cult_lepcis_roma_augustus",
+        "name": "Leptis Magna",
+        "category": "augusteum",
+        "first_worshipped": "Roma and Augustus",
+        "one_line": "Leptis Magna began this temple to Roma and Augustus around 8 BCE and finished it between 14 and 19 CE, before the city was even a municipium. It measures roughly 46 by 20 metres and fills the north end of the Old Forum, and the whole community paid for it rather than one rich donor. Colossal statues of the imperial family stood inside. Second-century restorers replaced its limestone with marble.",
+        "province": "Africa Proconsularis",
+        "modern_location": "Al Khums, Libya",
+        "extant_117ce": true,
+        "sources": [
+          "IPT 22, the Neo-Punic and Latin dedication of the temple of Augustus and Roma",
+          "https://www.judaism-and-rome.org/dedication-temple-augustus-and-roma-lepcis-magna-ipt-22",
+          "https://pleiades.stoa.org/places/676148653"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9469,
+          40.6383
+        ]
+      },
+      "properties": {
+        "id": "cult_thessalonica_temple_caesar",
+        "name": "Thessaloniki",
+        "category": "sebasteion",
+        "first_worshipped": "Caesar and Augustus",
+        "one_line": "Thessalonica built a temple of Caesar under Augustus and staffed it with a priest of Imperator Caesar Augustus, son of god, recorded on a city inscription beside the older priest of the gods. Its mint dropped the local magistrates from the coinage and put Julius Caesar's head on the obverse instead. The building has never been located under the modern city. The cult was over a century old by 117.",
+        "province": "Macedonia",
+        "modern_location": "Thessaloniki, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "IG X 2.1 31, decree mentioning the temple of Caesar and the priest of Imperator Caesar Augustus",
+          "https://lextheo.edu/wp-content/uploads/2021/09/j-2-seated-in-gods-temple.pdf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2915,
+          41.7552
+        ]
+      },
+      "properties": {
+        "id": "cult_ostia_roma_augustus",
+        "name": "Ostia Antica",
+        "category": "augusteum",
+        "first_worshipped": "Roma and Augustus",
+        "one_line": "Tiberius added this temple of Roma and Augustus to the south side of Ostia's forum, facing the older Capitolium across the square so the emperor's cult looked Jupiter straight in the eye. A flamen Romae et Augusti held the priesthood for life. Foundations survive along with the marble rear pediment and a winged Victory that once crowned the roof, now displayed on site.",
+        "province": "Italia",
+        "modern_location": "Ostia Antica, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://ostiaantica.cultura.gov.it/en/educational-panels-and-maps/the-central-area-and-the-official-complexes/tempio-di-roma-e-augusto/",
+          "https://www.ostia-antica.org/regio1/forum/temprom.htm"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tempio di Augusto e Roma statua.JPG?width=800",
+        "image_credit": "Wikimedia Commons, CC BY-SA (Victory statue from the Temple of Roma and Augustus, Ostia Antica)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1194,
+          40.8236
+        ]
+      },
+      "properties": {
+        "id": "cult_puteoli_templum_augusti",
+        "name": "Pozzuoli",
+        "category": "augusteum",
+        "first_worshipped": "Augustus",
+        "one_line": "Lucius Calpurnius, a rich local, paid for Puteoli's temple of Augustus out of his own pocket and cut his name across the architrave, where it can still be read. His architect rebuilt it on the podium of a temple of 194 BCE, in white marble blocks fitted without mortar. Six Corinthian columns front the cella. A cathedral swallowed the temple in the sixth century, and a fire in 1964 burned the church back off it.",
+        "province": "Italia",
+        "modern_location": "Pozzuoli, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "Dedicatory architrave inscription: L. Calpurnius L. f. templum Augusto cum ornamentis d(e) s(ua) p(ecunia) f(ecit)",
+          "https://en.wikipedia.org/wiki/Pozzuoli_Cathedral"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pozzuoli tempio duomo 01.jpg?width=800",
+        "image_credit": "Wikimedia Commons, CC BY-SA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8586,
+          32.8244
+        ]
+      },
+      "properties": {
+        "id": "cult_cyrene_caesareum",
+        "name": "Cyrene",
+        "category": "sebasteion",
+        "first_worshipped": "Augustus",
+        "one_line": "Cyrene converted a gymnasium of the 2nd century BCE into a Caesareum in Augustus's later years, enclosing a colonnaded court with a free-standing temple at its centre and two Doric gateways opening off the main streets. Ranks of its columns still stand. The Jewish revolt of 115 to 117 wrecked the city so thoroughly that Hadrian had to fund a rebuilding programme in 118.",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Shahhat, Libya",
+        "extant_117ce": true,
+        "sources": [
+          "Princeton Encyclopedia of Classical Sites, s.v. Cyrene: https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Dcyrene",
+          "https://followinghadrian.com/2018/11/05/the-rebuilding-of-cyrene-by-hadrian-in-ad-118-9-hadrian1900/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Caesareum, Cyrene.jpg?width=800",
+        "image_credit": "Wikimedia Commons, CC BY-SA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8319,
+          43.7765
+        ]
+      },
+      "properties": {
+        "id": "cult_glanum_twin_temples",
+        "name": "Glanum",
+        "category": "augusteum",
+        "first_worshipped": "Imperial house (Gaius and Lucius Caesar)",
+        "one_line": "Two matching temples went up side by side in Glanum's forum around 20 BCE, sharing a single walled precinct and serving the imperial cult. Portrait heads of Augustus's female relatives, Octavia and Julia among them, came out of the ruins. Only the podium and a partly re-erected facade survive, the rest of the marble having gone into local walls. Glanum kept them until the town was abandoned in the third century.",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Saint-Remy-de-Provence, France",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.worldhistory.org/Glanum/",
+          "https://www.roamintheempire.com/index.php/2019/03/06/glanum-part-ii/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint-Rémy-de-Provence - Glanum from north 2.jpg?width=800",
+        "image_credit": "Wikimedia Commons, CC BY-SA (general view of the Glanum archaeological site)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.7855,
+          38.177
+        ]
+      },
+      "properties": {
+        "id": "cult_teos_roma_augustus",
+        "name": "Teos",
+        "category": "sebasteion",
+        "first_worshipped": "Roma, then Augustus",
+        "one_line": "Teos put a temple of Roma in its agora and reworked it for the emperor's cult under Augustus, a change its Greek inscriptions record. The building is small, 8 by 18 metres, with pronaos, cella and opisthodomos, and it faces southwest rather than the usual east. Excavation in 2020 found a six-by-twelve Corinthian colonnade, overturning what everyone had assumed about the order.",
+        "province": "Asia",
+        "modern_location": "Sigacik, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://teos.ankara.edu.tr/en/heritage/temples-and-sanctuaries/the-temple-of-rome-and-augustus/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.6214,
+          43.0611
+        ]
+      },
+      "properties": {
+        "id": "cult_narona_augusteum",
+        "name": "Narona",
+        "category": "augusteum",
+        "first_worshipped": "Augustus and the imperial family",
+        "one_line": "Narona built its Augusteum around 10 BCE and the governor Publius Cornelius Dolabella later rededicated it. Archaeologists digging under the village of Vid in 1995 and 1996 struck the temple floor and 17 over-lifesize marble statues of emperors and their families, toppled and beheaded where they stood. The series runs from Augustus to the Flavians, so the shrine was still taking in new emperors in the second century.",
+        "province": "Dalmatia",
+        "modern_location": "Vid, Croatia",
+        "extant_117ce": true,
+        "sources": [
+          "E. Marin, 'The temple of the imperial cult (Augusteum) at Narona and its statues: interim report', Journal of Roman Archaeology 14 (2001) 81-112",
+          "https://www.cambridge.org/core/journals/journal-of-roman-archaeology/article/abs/temple-of-the-imperial-cult-augusteum-at-narona-and-its-statues-interim-report/B31B93EFD59E9C84646EA8CE9D8597E7"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman temple Augustum in Narona, 1. cent., Vid, Metkovic, Croatia 2010.JPG?width=800",
+        "image_credit": "Wikimedia Commons, CC BY-SA 3.0"
       }
     }
   ]
