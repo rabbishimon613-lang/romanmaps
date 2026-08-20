@@ -7,6 +7,190 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 37 — 2026-08-20 (this shift's own prompt claimed "Shift 2 of four")
+
+**Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt said
+"Shift 2 of four," but `SHIFT_LOG` was 36 real shifts deep at session start, so this entry
+continues as Shift 37. Session started `HEAD` detached at the real tip (`f916956`) with local
+`main` seven commits behind (`709a480`); `git checkout -B main origin/main` put it cleanly on the
+real tip (confirmed identical to detached `HEAD` first), no data loss. Fresh container needed
+`npm install` (`node_modules` missing); reverted the resulting `package-lock.json` `libc`-field
+churn before touching anything else, same pattern every recent shift has documented. Read
+`SHIFT_BRIEF.md` and `BOARD.md` in full before starting.
+
+**Network block reconfirmed** — `WebFetch` to `commons.wikimedia.org` returned `EGRESS_BLOCKED`
+directly in this session (not just inside sub-agents), matching every prior shift's report.
+`WebSearch` remained the only working research channel throughout; all seven research agents this
+shift were briefed accordingly.
+
+### Board check
+
+Topmost unclaimed board tickets are unchanged from Shifts 34–36's notes: `[12-P0-1]` merge-themes,
+`[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terrain, `[02-P0-4]` self-host-glyphs
+— all large architectural changes. Considered actually taking one on given this session's unusually
+large token budget, but an unsupervised shift that pushes straight to production with no human
+review is the wrong place to attempt a multi-file refactor that "may take several passes" per the
+ticket's own description — a half-finished `merge-themes` pass would leave the live site's data
+pipeline in a broken intermediate state with nobody watching. Declined for that reason, not just
+"better suited to a dedicated shift" as prior shifts phrased it. Track A followed the brief's own
+axis queue and Shift 36's handoff notes, then kept going past the two-axis minimum since the
+budget allowed it.
+
+### Track A — five axes, 54 net new features, seven research waves reviewed and merged by hand
+
+Every batch below ran through this shift's own review before merging (not just the research
+agent's self-reported checks): geodesic sanity checks on road distances, ID-collision checks
+against all 42 existing data files, and a deliberate choice to leave `image_url` off six records
+this shift rather than force in an anachronistic image just to satisfy invariant 1.6's letter.
+
+**Axis 2 (road stations) — two more complete roads, per Shift 36's own handoff pick.**
+`road_stations.geojson` 284 → 312 (+28).
+
+- **Via Aurelia** (Rome → Luna via the Tyrrhenian coast, connecting to Via Postumia's Genua
+  terminus and closing the coastal road loop), 15 stations: Lorium, Ad Turres, Pyrgi, Castrum
+  Novum, Centumcellae (Trajan's new harbor, finished ~106–107), Graviscae, Forum Aurelii, Cosa,
+  Telamon, Populonium, Vada Volaterrana, Ad Herculem, Pisae, Taberna Frigida, Luna (shared node
+  with the already-curated Luni city entry, following the Verona/Placentia precedent).
+- **Via Salaria** (Rome → the Adriatic at Castrum Truentinum, the old "salt road"), 13 stations:
+  Fidenae, Eretum, Vicus Novus, Reate, Cutiliae (shared site with the health-axis Aquae Cutiliae
+  entry — different layer, different purpose, following the same shared-node precedent), Interocrium,
+  Forum Decii, Falacrinae (Vespasian's birthplace), Ad Martis, Vicus Badies, Ad Centesimum, Asculum
+  Picenum, Castrum Truentinum.
+
+**Three geodesic-check failures caught and corrected before merging** (a claimed road distance can
+never be shorter than the straight-line distance between two points, per the standing practice
+Shift 35 established and Shift 36 confirmed useful a third time): Rome→Fidenae (5 mp sourced, 7 mp
+needed), Populonium→Vada Volaterrana (25 mp sourced, 28 mp needed), Pisae→Taberna Frigida (27 mp
+sourced, 28 mp needed). Two stations (Telamon, Populonium) ship `distance_from_previous_mp: null`
+rather than a guess — the surviving Antonine Itinerary mileage for that stretch of the Aurelia is
+internally inconsistent with secure endpoint coordinates on both ends, confirmed independently by
+the research pass and by this shift's own re-check, not just taken on trust.
+
+**Axis 13 (political apparatus) — 4 more senators' hometowns, closing Shift 36's flagged
+30-hometown floor with room to spare.** `politics.geojson` senator_hometown 28 → 32.
+
+Two research waves: the first targeted Shift 36's own flagged gap (Hispania Baetica beyond Ucubi,
+Macedonia, Cilicia) and came back thin — real effort, but Baetica and Macedonia turned up nothing
+meeting the project's origo-plus-dated-Trajanic-office bar. The second wave broadened to Africa
+Proconsularis, Syria, Achaea, Numidia, Egypt, Pontus-Bithynia, Moesia, Galatia, Cappadocia, and
+Cyrenaica, and found three solid names. Net new: Hierapolis Castabala/Cilicia (Quintus Pompeius
+Falco, Dacian War tribune turned governor of Lycia-Pamphylia then Judaea, suffect consul 108),
+Thugga/Africa Proconsularis (Senecio Memmius Afer, suffect consul 99 — origo inferred from family
+name and cognomen rather than a direct inscription, shipped at `confidence: medium` and phrased as
+"likely" rather than stated flat), Samosata/Syria (Gaius Julius Antiochus Epiphanes Philopappus,
+grandson of Commagene's last king, suffect consul 109 — the Philopappos Monument on Athens's
+Mouseion Hill still shows him in his consular robes), Athens/Achaea (Tiberius Claudius Atticus
+Herodes, praetor 98, father of the sophist Herodes Atticus).
+
+**Two near-miss duplicates caught and dropped before merging**: Lucius Catilius Severus's origo
+Apamea Myrleia is the same site as the already-mapped Mudanya; Gaius Julius Cornutus Tertullus's
+origo (Attaleia, contested against Perge in the scholarship either way) is already mapped as
+Antalya regardless of which reading is right. Egypt and Numidia came back genuinely empty after
+real effort across both waves — Egypt structurally, since it was equestrian-governed and barred
+senators outright; Numidia's roughly ten known senatorial families are attested mostly without a
+specific city. Full rejected-candidate list (now ~50 names across three shifts) is in the two
+merge commits rather than repeated here — a future pass on this axis should treat Baetica,
+Macedonia, Egypt, and Numidia as thoroughly searched, not under-searched.
+
+**Axis 6a (systems overlay, trade routes) — 2 more complete routes.** `trade_routes.geojson`
+36 → 51 (+15: 2 LineStrings, 13 named nodes). Silk Road (western/Roman segment: Antioch → Palmyra
+→ Dura-Europos → Ctesiphon → Ecbatana → Merv → Bactra, tracing the route through Parthian and
+Kushan middleman territory) and Incense Road (Shabwa → Najran → Dedan → Hegra → Petra → Gaza,
+frankincense and myrrh from Hadhramaut through the Nabataean network — by 117 CE Petra itself sat
+inside the Roman province of Arabia, so the old smuggling route had become an imperial tax stream).
+Completes 5 of the brief's Axis 6a list (Amber, grain ×3, tin, olive oil ×2 were already on the
+map before this shift). Node schema matches the file's existing pattern deliberately
+(id/route/name/role/sources, no `image_url`) rather than the full POI schema, since these are
+route-line hover nodes, not place cards — same reasoning FEATURE_BACKLOG already applies to
+`penal.geojson`'s and other axis files' schema choices.
+
+**Axis 20 (sports) — 1 of the 6 (now down from 7) flagged gymnasia image-gap sites closed.**
+`sports.geojson` gymnasia 21 → 22. FEATURE_BACKLOG has carried this same 7-site image gap
+(Corinth, Termessos, Thera, Magnesia on the Maeander, Iasos, Knidos, Alinda) since Shift 14/18,
+each confirmed real and sourced but blocked purely on a verified Commons filename. This shift's
+research pass confirmed exactly one: Thera's "Cave of Hermes in the Gymnasium of the Ephebes"
+(Baud-Bovy/Boissonnas, 1919), cross-confirmed independently via two separate Commons category
+listings since direct `WebFetch` to `commons.wikimedia.org` stays blocked here. The other 6 remain
+open — Termessos's `Category:Gymnasium (Termessos)` (~28 files) is the closest to resolved, but a
+third dedicated search session still couldn't surface one individual filename from inside it, which
+increasingly looks like a hard limit of WebSearch-snippet-only research rather than something a
+fourth attempt with the same tools will crack. FEATURE_BACKLOG updated to say this plainly.
+
+**Axis 15 (welfare/euergetism) — 6 more alimenta towns, a real gap this shift found by checking
+raw feature counts against the brief's own "all 50" framing rather than assuming the axis was
+done.** `euergetism.geojson` alimenta_town 15 → 21. Sourced from the corpus of "pueri et puellae
+alimentarii" honorific dedications (Duncan-Jones, PBSR 32, 1964) — a distinct evidentiary category
+from the two big loan tables (Veleia, Ligures Baebiani) the existing 15 towns were mostly drawn
+from. Cereatae Marianae, Sestinum, Tifernum Mataurense, Asisium, and Ficulea are independently
+attested through named dedications to Hadrian, Antoninus Pius, or Marcus Aurelius. Urbinum
+Mataurense ships `confidence: low` — its CIL XI 5395 town identification is the standard scholarly
+reading but wasn't independently confirmed this shift, and the note says so rather than stating it
+flat. Pitinum Mergens was investigated and excluded as a likely duplicate of the map's existing
+Acqualagna entry (the modern antiquarium there is explicitly dedicated to Pitinum Mergens) — worth
+a follow-up check against Acqualagna's own sourcing to confirm rather than re-flagging blind.
+~23 other candidate towns checked and rejected for lacking any alimenta-specific attestation
+distinct from general town history; full list in the merge commit. All 6 ship without `image_url`
+— the only available images for these towns are later medieval/Renaissance landmarks (a basilica,
+a ducal palace) with no real connection to the Trajanic-era attestation, and using them would
+misrepresent the site more than an absent hero image would. Same shape as the pre-existing
+`health.geojson`/`imperial_cult.geojson` gap (0/51 and 0/18 have `image_url` at all) — this
+project's invariant 1.6 is aspirational and unevenly applied across 37 shifts, not a hard gate that
+blocks a commit.
+
+### Track B — deliberately skipped, and why
+
+Same reasoning as Shifts 34–36: FEATURE_BACKLOG's remaining open items are either genuinely large
+(dark mode, terrain shading, the `.next`/`next dev` collision fix) or already-logged research/image
+top-up notes rather than shippable UI work. This shift's budget went entirely into Track A given how
+much further it stretched than a typical shift's — five axes deep rather than the usual two.
+
+### Build, validate, verify
+
+Fresh container needed `npm install` first. `npm run validate`: 0 errors throughout every commit,
+17 warnings (same pre-existing set every recent shift has carried — the 4 diplomacy/2 neighbors
+"outside empire envelope" warnings are expected false positives for India/China nodes that are
+supposed to be outside Rome's borders). Cross-file name collision count crept 122 → 124 as expected
+(new points landing near existing gazetteer entries) — informational only, tracked under
+`[12-P0-1]`, not a blocker. `npm run build` clean on all six data commits before each push. `npm run
+metrics --write` (note: needs the `--` separator — `npm run metrics --write` silently no-ops, `npm
+run metrics -- --write` actually writes; wasted one round-trip catching this): 481 POIs unchanged
+(none of this shift's five axis files are in the POI-schema count), 1,662 curated places total
+(+54), 124 cross-file collisions, 0 validator errors.
+
+**One real mid-shift catch**: a routine "wrap up" pass found `FEATURE_BACKLOG.md`'s gymnasia-note
+edit sitting uncommitted after the sports.geojson push — the stop-hook's git-check flagged it before
+it could be lost. Worth restating the standing lesson: commit *every* file you touched in a batch,
+not just the data file, before moving to the next piece of work.
+
+### Handoff for the next shift
+
+1. **A fifth Etruria/Umbria-radiating road remains open**: with Postumia, Cassia+Clodia, Aurelia,
+   and Salaria all done, the Via Appia itself (only 26 stations logged against a Rome-Brundisium
+   run that historically had far more) or Via Appia Traiana (Beneventum onward, Trajan's own
+   116-completed shortcut to Brundisium — very on-snapshot) are the natural next picks; neither has
+   been touched since whatever shift first logged Via Appia's initial 26.
+2. **Axis 13 senator_hometown sits at 32, past the 30 floor** — but Baetica, Macedonia, Egypt, and
+   Numidia are now confirmed thin/empty across three shifts' worth of research, not under-searched.
+   A future pass should target genuinely fresh ground (Pannonia, Britannia, Mauretania,
+   Cappadocia-Galatia beyond what's already checked) rather than re-walking these four.
+3. **Axis 20's gymnasia gap is down to 6 sites and looks stuck on tooling, not research effort.**
+   Three separate WebSearch-only sessions (this shift included) have failed to extract an individual
+   filename from Termessos's confirmed 28-file Commons category. Whoever next has working `WebFetch`
+   to `commons.wikimedia.org`, or a differently-sandboxed environment, should be able to close most
+   of this in minutes by just opening the category page directly.
+4. **Axis 15's alimenta_town count is 21 of a ~50 ceiling** — real room left. The `pueri et puellae
+   alimentarii` dedication corpus this shift mined (via Smith's Dictionary / Duncan-Jones 1964) is
+   not exhausted; try Regio IV (Samnium) and Regio I (Latium/Campania) towns specifically next,
+   since this shift's yield concentrated in Regio VI (Umbria).
+5. **Board fresh-check**: still no unclaimed P0/P1 `add` ticket. Topmost unclaimed P0s unchanged —
+   `[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terrain,
+   `[02-P0-4]` self-host-glyphs. A shift with a full 6 hours and nothing else competing for
+   attention is still the right shape to finally take one of these on — this shift's larger budget
+   went to breadth instead because an unsupervised session mid-refactor felt like the wrong risk to
+   take with no one watching the push.
+
+---
+
 ## Shift 36 — 2026-08-20 (this shift's own prompt claimed "Shift 1 of four")
 
 **Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt said
