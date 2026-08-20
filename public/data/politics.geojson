@@ -1429,6 +1429,156 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3601,
+          43.8367
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_nemausus",
+        "category": "senator_hometown",
+        "name": "Nemausus",
+        "one_line": "This city was the hometown of Titus Julius Maximus Manlianus, who served as suffect consul in 112 CE and was decorated for valor while commanding Legio V Macedonica.",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Nimes, France",
+        "extant_117ce": true,
+        "notes": "Manlianus (c. 69 - c. 116 CE) was patron of the Hispanic city of Calagurris, which sent a delegation to erect his honorific statue at Nemausus around 108 CE, the inscription that preserves his cursus honorum and confirms his origo. His career, entirely within Trajan's reign, ended with his death around 116 CE, likely during Trajan's Parthian campaign.",
+        "sources": [
+          "Wikipedia, \"Titus Julius Maximus Manlianus\"",
+          "CIL XII 3167 (Nemausus honorific inscription)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.737,
+          43.4328
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_forumjulii",
+        "category": "senator_hometown",
+        "name": "Forum Julii",
+        "one_line": "This city was the hometown of Gaius Valerius Paullinus, a friend of Pliny the Younger who served as suffect consul in 107 CE under Trajan.",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Frejus, France",
+        "extant_117ce": true,
+        "notes": "Ronald Syme identified Paullinus as the son of the elder Gaius Valerius Paulinus, procurator of Gallia Narbonensis under Vitellius and Vespasian, whose family held property at Forum Iulii. Pliny the Younger addressed several letters to him, attesting to their friendship during Trajan's reign.",
+        "sources": [
+          "Wikipedia, \"Gaius Valerius Paullinus\"",
+          "Ronald Syme, prosopographical studies on Pliny's correspondents"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2775,
+          39.6786
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_saguntum",
+        "category": "senator_hometown",
+        "name": "Saguntum",
+        "one_line": "This city was the hometown of Voconius Romanus, whom Pliny the Younger successfully lobbied Trajan to elevate into the Roman Senate.",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Sagunto, Spain",
+        "extant_117ce": true,
+        "notes": "Born in Saguntum in 61 CE, Voconius Romanus was Pliny's lifelong schoolfellow. Pliny petitioned first Nerva and then Trajan on his behalf, and Trajan's grant of the broad purple stripe completed his adlection into the senatorial order once his mother finalized the required property transfer.",
+        "sources": [
+          "Pliny the Younger, Epistulae II.13",
+          "Oxford Reference, \"Voconius Romanus, Gaius Licinius Marinus\""
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6869,
+          45.0703
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_augustataurinorum",
+        "category": "senator_hometown",
+        "name": "Turin",
+        "one_line": "This city was the hometown of Quintus Glitius Atilius Agricola, who was twice suffect consul under Trajan (97 and 103) and governed Pannonia during Trajan's First Dacian War.",
+        "province": "Italia",
+        "modern_location": "Turin, Italy",
+        "extant_117ce": true,
+        "notes": "Known from numerous fragmentary inscriptions at Augusta Taurinorum, his home town, Agricola commanded Legio VI Ferrata, governed Belgica, and was decorated for his role as governor of Pannonia during Trajan's Dacian campaign (101-102), becoming the last man known to hold two suffect consulships. He capped his career as prefect of Rome.",
+        "sources": [
+          "Wikipedia, \"Quintus Glitius Atilius Agricola\"",
+          "Oxford Classical Dictionary, s.v. Glitius, Atilius Agricola, Quintus"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.2145,
+          42.5809
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_epidaurum",
+        "category": "senator_hometown",
+        "name": "Cavtat",
+        "one_line": "This city was the hometown of Quintus Marcius Turbo, who rose through Trajan's service to command the fleet at Misenum and put down the Jewish revolt in Cyrenaica and Egypt in 116 CE.",
+        "province": "Dalmatia",
+        "modern_location": "Cavtat, Croatia",
+        "extant_117ce": true,
+        "notes": "Rising from centurion in Legio II Adiutrix through the primipilate, Turbo became prefect of the Misene fleet under Trajan and was sent east for the Parthian War, where he was already a close friend of Hadrian. Trajan gave him the special mission of crushing the Jewish uprisings in Cyrenaica and Egypt in 116; Hadrian later made him Praetorian Prefect.",
+        "sources": [
+          "Wikipedia, \"Quintus Marcius Turbo\"",
+          "Oxford Classical Dictionary, s.v. Marcius Turbo, Quintus"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.5603,
+          39.1093
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_mytilene",
+        "category": "senator_hometown",
+        "name": "Mytilene",
+        "one_line": "This city was the hometown of Marcus Pompeius Macrinus Neos Theophanes, a descendant of the historian Theophanes of Mytilene, who served as suffect consul in 115 CE.",
+        "province": "Asia",
+        "modern_location": "Mytilene, Lesbos, Greece",
+        "extant_117ce": true,
+        "notes": "His cognomen \"Neos Theophanes\" (the New Theophanes) advertised his descent from Theophanes of Mytilene, the historian and confidant of Pompey the Great who had won Mytilene its free-city status. His entire senatorial career, from quaestor of Bithynia-Pontus around 98-100 CE through suffect consul in 115, falls within Trajan's reign; he later served as proconsul of Africa under Hadrian.",
+        "sources": [
+          "Wikipedia, \"Marcus Pompeius Macrinus Neos Theophanes\"",
+          "Werner Eck, prosopographical dating of Trajanic fasti"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
