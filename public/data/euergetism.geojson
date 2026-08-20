@@ -946,6 +946,30 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.05,
+          41.183
+        ]
+      },
+      "properties": {
+        "id": "euerg_cales",
+        "name": "Calvi Risorta",
+        "category": "alimenta_town",
+        "one_line": "Cales joined the roster of Latin colonies whose landowners took out Trajan's alimenta mortgages, pledging farmland around the old Via Latina town to seed a fund for the district's poor children. The 5 percent interest on those loans, the same rate fixed at Veleia and the Ligures Baebiani, was paid out every month as food money for boys and girls whose families could not otherwise feed them. Long before the welfare scheme arrived, Cales had already given Rome one of its favorite exports: a coarse black-glaze pottery so common in Republican-era shipwrecks that archaeologists still call the ware 'Calenian.'",
+        "province": "Italia",
+        "modern_location": "Calvi Risorta, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "CIL X, 3910",
+          "Greg Woolf, 'Food, Poverty and Patronage: The Significance of the Epigraphy of the Roman Alimentary Schemes in Early Imperial Italy,' Papers of the British School at Rome 58 (1990), pp. 197-228"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
