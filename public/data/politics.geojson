@@ -1579,6 +1579,181 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.0433,
+          38.4863
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_sardis",
+        "category": "senator_hometown",
+        "name": "Sardis",
+        "one_line": "This city was the hometown of Tiberius Julius Celsus Polemaeanus, who served as suffect consul in 92 CE and as Trajan's proconsul of Asia from 105 to 107 CE.",
+        "province": "Asia",
+        "modern_location": "Sart (near Salihli), Turkey",
+        "extant_117ce": true,
+        "notes": "Celsus's family was of Greek origin, based at Sardis, though he became closely associated with Ephesus as its great civic benefactor. His son, Tiberius Julius Aquila Polemaeanus, built the famous Library of Celsus at Ephesus as his father's funerary monument, beneath which Celsus was buried in a sarcophagus.",
+        "sources": [
+          "Prosopographia Imperii Romani, I. 260",
+          "Wikipedia, \"Tiberius Julius Celsus Polemaeanus\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.4224,
+          45.3204
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_vercellae",
+        "category": "senator_hometown",
+        "name": "Vercellae",
+        "one_line": "This city was the hometown of Lucius Domitius Apollinaris, who served as suffect consul in 97 CE and was a close literary friend of Pliny the Younger and patron of the poet Martial under Trajan.",
+        "province": "Italia",
+        "modern_location": "Vercelli, Italy",
+        "extant_117ce": true,
+        "notes": "Before his consulship Apollinaris governed Lycia et Pamphylia (93-96) and commanded two legions, including one in Syria. Martial dedicated three books of his Epigrams to him, and Pliny the Younger corresponded with him well into Trajan's reign, in one letter describing his Tuscan villa for Apollinaris's benefit.",
+        "sources": [
+          "Sigrid Mratschek, \"Images of Domitius Apollinaris in Pliny and Martial\" (2018)",
+          "Wikipedia, \"Lucius Domitius Apollinaris\""
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9667,
+          42.2333
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_trebulamutusca",
+        "category": "senator_hometown",
+        "name": "Trebula Mutusca",
+        "one_line": "This city was the hometown of Titus Prifernius Paetus, who served as suffect consul in 96 CE and founded a senatorial dynasty that remained prominent through Trajan's reign and beyond.",
+        "province": "Italia",
+        "modern_location": "Monteleone Sabino, Italy",
+        "extant_117ce": true,
+        "notes": "Paetus's origo in the Sabine town of Trebula Mutusca is well attested, and his family kept reaching the consulship for generations: his son Titus Prifernius Paetus Rosianus Geminus was consul in 123 and his grandson in 146. As a senior consular he remained an active senatorial voice throughout Trajan's reign, though no single dated Trajanic office for him personally survives.",
+        "sources": [
+          "Wikipedia, \"Titus Prifernius Paetus Rosianus Geminus\"",
+          "Wikipedia, \"Trebula Mutusca\""
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1804,
+          39.1213
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_pergamon_antius",
+        "category": "senator_hometown",
+        "name": "Pergamon",
+        "one_line": "This city was also the hometown of Gaius Antius Aulus Julius Quadratus, twice consul (94 and 105 CE) and one of Trajan's closest confidants, who governed Syria and later Asia.",
+        "province": "Asia",
+        "modern_location": "Bergama, Turkey",
+        "extant_117ce": true,
+        "notes": "Quadratus was among the first senators from the Greek East to reach an ordinary consulship, and Trajan honored him as an \"amicus clarissimus\" (most illustrious friend). He governed Syria from 100 to 104 during Trajan's eastern buildup and became proconsul of Asia around 109/110; numerous surviving inscriptions from Pergamon honor him as the city's greatest patron.",
+        "sources": [
+          "Halfmann, Die Senatoren aus dem oestlichen Teil des Imperium Romanum (1979)",
+          "Wikipedia, \"Gaius Antius Aulus Julius Quadratus\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.5717,
+          41.5108
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_pompeiopolis",
+        "category": "senator_hometown",
+        "name": "Pompeiopolis",
+        "one_line": "This city was the hometown of Gaius Claudius Severus, whom Trajan made the first governor of the new province of Arabia in 106 CE after annexing the Nabataean kingdom.",
+        "province": "Galatia",
+        "modern_location": "Tasköprü, Turkey",
+        "extant_117ce": true,
+        "notes": "Severus came from a family of Pontic Greek descent at Pompeiopolis in Paphlagonia, then administratively part of the province of Galatia. He governed Arabia from 106 to 116, overseeing construction of the Via Nova Traiana from the Gulf of Aqaba to Bostra, and reached the suffect consulship in 112. His son and grandson were prominent Peripatetic philosophers close to Marcus Aurelius.",
+        "sources": [
+          "Prosopographia Imperii Romani, C 1023",
+          "Wikipedia, \"Gaius Claudius Severus\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.83,
+          41.49
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_casinum",
+        "category": "senator_hometown",
+        "name": "Casinum",
+        "one_line": "This city was the hometown of the Ummidius Quadratus family; its scion Gaius Ummidius Quadratus Sertorius Severus began his senatorial career under Trajan before reaching the consulship in 118 CE.",
+        "province": "Italia",
+        "modern_location": "Cassino, Italy",
+        "extant_117ce": true,
+        "notes": "The Ummidii were established senatorial patrons of Casinum, described by Pliny the Younger in his letter about his relative Ummidia Quadratilla. The younger Quadratus married and held his early magistracies under Trajan before an unusually rapid path to the consulship in absentia in 118, followed by the governorship of Moesia Inferior under Hadrian.",
+        "sources": [
+          "Pliny the Younger, Epistulae 7.24",
+          "Wikipedia, \"Gaius Ummidius Quadratus Sertorius Severus\""
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.3186,
+          36.3554
+        ]
+      },
+      "properties": {
+        "id": "politics_senator_xanthos",
+        "category": "senator_hometown",
+        "name": "Xanthos",
+        "one_line": "This city was the hometown of Marcus Arruntius Claudianus, the first senator from Lycia, who rose from equestrian military service under Vespasian to senatorial rank under Domitian and Trajan.",
+        "province": "Lycia et Pamphylia",
+        "modern_location": "Kinik, Turkey",
+        "extant_117ce": true,
+        "notes": "Claudianus is commemorated by the Arruntii Monument near the Letoon sanctuary outside Xanthos, which honors him as the region's most celebrated native son and the first Lycian to enter the Roman Senate. His career, spanning Vespasian through Trajan, marked an early milestone in the integration of the provincial Lycian elite into the imperial governing class.",
+        "sources": [
+          "Halfmann, Die Senatoren aus dem oestlichen Teil des Imperium Romanum (1979), no. 15",
+          "UNESCO World Heritage listing, Xanthos-Letoon"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
