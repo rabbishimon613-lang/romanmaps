@@ -7,6 +7,157 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 39 — 2026-08-20 (this shift's own prompt claimed "Shift 4 of four")
+
+**Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt said
+"Shift 4 of four," but `SHIFT_LOG` was 38 real shifts deep at session start, so this entry
+continues as Shift 39. Session started `HEAD` detached at the real tip (`1adfd50`) with local
+`main` pointing at an old commit (`709a480`, Shift 28); a plain `git fetch origin main` updated
+`origin/main` to the real tip (it came down as a forced update, matching the detached `HEAD`
+exactly), then `git checkout -B main origin/main` put the branch cleanly on it — confirmed working
+tree clean first, no data loss. Fresh container needed `npm install`; reverted the resulting
+`package-lock.json` `hasInstallScript`/`libc`-field churn before touching anything else, same
+pattern every recent shift documents. Read `SHIFT_BRIEF.md`, `BOARD.md` and Shift 38's handoff in
+full before starting. `WebFetch` egress remained blocked (confirmed by all three research agents
+independently — Wikipedia, Commons, ToposText, Pleiades, Overpass all EGRESS_BLOCKED); `WebSearch`
+was the only working research channel, matching every prior shift.
+
+### Board check
+
+Same unclaimed P0 set Shifts 34-38 all found and declined for the same reason: `[12-P0-1]`
+merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terrain,
+`[02-P0-4]` self-host-glyphs — all large, multi-file refactors that an unsupervised session
+pushing straight to production shouldn't attempt mid-refactor with nobody watching. Followed the
+brief's axis queue and Shift 38's handoff instead. Track B this shift was a small, fully
+build-verifiable code change (below) rather than a blind UI push.
+
+### Track A — three axes, 58 net new curated features, three research waves reviewed by hand
+
+**Axis 2 (road stations) — Via Militaris, the fourteenth road, and the single largest remaining
+geographic gap in the axis closed.** `road_stations.geojson` 326 → 360 (+34). The great Balkan
+diagonal (Via Diagonalis), Singidunum/Belgrade through Naissus, Serdica, Philippopolis and
+Hadrianopolis to Constantinople — the entire corridor had **zero** stations before this shift.
+Built primarily from the Itinerarium Burdigalense (333 CE, which labels every stop mansio/mutatio
+with mileages) cross-referenced against the Antonine Itinerary. 12 securely identified and
+excavated (Bona Mansio's 2.60m circuit wall dug from 2016, Carassura at Rupkite, Scretisca's
+Constantinian palatium at Kostinbrod, Turres under Pirot Fortress); 12 interpolated corridor
+markers shipped `identified:false`/`confidence:low`.
+
+*Three shared nodes dropped rather than duplicated* (Selymbria, Athyras, Rhegion are already on the
+map as Via Egnatia entries — same real towns, same coastal approach to Byzantium, following the
+Luni/Aquae Cutiliae precedent). *Two id collisions renamed* (`station_ad_octavum` and
+`station_ad_sextum` already existed on the Via Appia / elsewhere; the Moesian ones got
+`_moesia` suffixes). *Independent geodesic check caught four failures the research pass's own
+report had not flagged as severe*: Redicibus, Extuomne, Baunne and Callum each carried a real
+sourced figure measured from a *city* (Naissus, Serdica, Heraclea, Selymbria) rather than the
+previous station in the layer, so each was ~double its geodesic floor and would have rendered a
+wrong "N Roman mi from previous stop" in the hover popup — all four nulled. 14 legs total ship
+null. Five legs remain 1-11% short of geodesic floor and were kept: genuine whole-mile Itinerary
+figures against village-level approximate coordinates, coordinate-precision noise not a source
+conflict. The weakest segment is Hadrianopolis→Bergule, where the research pass couldn't reach
+the verbatim Bordeaux Latin and the reconstructed mileage chain under-runs the straight line —
+flagged for a future revisit with library access.
+
+**Axis 15 (welfare/euergetism) — 9 more benefactor inscriptions, well past the 20-floor.**
+`euergetism.geojson` 43 → 52 (+9). Ephesus (Salutaris's 104 CE foundation cut in 568 lines on the
+theatre wall; the Mazaeus-Mithridates gate dedicated by two imperial freedmen), Miletus (Capito's
+baths), Leptis Magna (Iddibal's Chalcidicum, a Punic family's gift), Merida (Agrippa's theatre),
+Athens (Agrippa's Odeion), Assisi (the Caesii brothers' temple), Pula (Salvia Postuma Sergia's
+arch — a woman's name on the frieze c. 27 BCE), Saintes and Lyon (both C. Julius Rufus, a
+third-generation Gaulish citizen). *Filtered the research pass's 16 raw records against the file's
+own existing 43 first*: 6 were the same monument/donor already mapped under a different id
+(Ephesus's Nymphaeum Traiani, Aphrodisias's Zoilos, Munigua's forum, Corinth's Babbius, plus
+Pompeii's Eumachia and Herculaneum's Nonius Balbus which collided on id exactly), and a 7th
+(Vibius Salutaris) was caught by the append script's id-dedup. Miletus and Leptis ship without
+image_url — the only findable images were a Baths-of-Faustina (Antonine, wrong period) or an
+unconfirmable generic filename, so both went null rather than force a wrong image. Rejected on
+review: the Library of Celsus (a construction site not a standing building on 11 Aug 117, date
+genuinely unstable 114-135), and the whole Hadrianic/Antonine wave (Plancia Magna, Herodes
+Atticus, Opramoas, the Demostheneia foundation, Aspendos, Sagalassos).
+
+**Axis 12 (imperial cult) — 15 more cult centers, nearly doubling the layer.**
+`imperial_cult.geojson` 18 → 33 (+15). Pula, Vienne and Nimes (all three western Augustea that
+still stand roofed today), Merida, Athens's Acropolis rotunda 23m east of the Parthenon, Nicaea
+and Smyrna (the Roman-citizen and second-Asian provincial temples), Leptis Magna's Old Forum
+temple, Thessaloniki, Ostia (facing the Capitolium across the forum), Pozzuoli, Cyrene's
+Caesareum (wrecked in the very Kitos War unfolding at the snapshot), Glanum's twin temples, Teos,
+and Narona (17 beheaded imperial statues dug from under a Croatian village). All cross-checked
+against the file's existing 18 first — Nicomedia, Narbo, Corduba, Alexandria, Caesarea Maritima,
+Sebaste, Pisidian Antioch, Carthage and Beroea were already present and correctly skipped (the
+brief's own "already on the map" list was incomplete). *One coordinate corrected before merging*:
+the Maison Carree point was ~340m off, outside the 100m floor for a confidence:high record.
+*Five ship without image_url* (Nicaea, Smyrna, Leptis, Thessaloniki, Teos) — none of these temples
+has ever been archaeologically located, and the research pass declined to substitute a photo of a
+later rebuild on the same forum. Rejected on review: Pergamon's Traianeum (Hadrianic, built after
+Trajan's death despite the name — the classic trap), the Cyzicus temple of Divus Augustus (never
+finished, per Tacitus and Dio), and Cologne's Ara Ubiorum (real and Tacitus-attested but never
+located and no evidence it still functioned as a cult site in 117). Introduced two new categories
+to the layer, `augusteum` and `imperial_altar` — handled by the Track B popup change below.
+
+**Axis 17 (exile/penal) — Shift 38's own handoff enrichment done.** The existing Sardinia/Metalla
+(Fluminimaggiore) `penal_mine` record now carries the two bishops of Rome condemned to those mines
+that Shift 38 identified as belonging here as enrichment rather than a new pin: Callixtus (c. 186
+CE, freed by an imperial mistress's intervention) and Pontian (deported 235 CE, died at the rock
+face). Note grew 88 → 114 words; two new sources added (Hippolytus, Liber Pontificalis).
+
+### Track B — graceful category-label degradation in thematic popups
+
+`app/Map.tsx`: added a `prettyCategory()` helper and wired it as the fallback in the road-station,
+imperial-cult and euergetism hover popups. A category present in the data but absent from a popup's
+hardcoded label map now renders as words ("Imperial altar") instead of a bare snake_case
+identifier ("imperial_altar"). This shipped *before* the imperial-cult merge specifically so the
+new `augusteum` category (and any future sub-category any shift adds) reads cleanly with no popup
+edit needed. Also cleaned up the road-station popup, which had been showing its category in bare
+lowercase ("mansio"). Pure popup-text formatting, no chrome colors or layout touched, so no
+invariant-0 screenshot concern; verified via `tsc --noEmit` + `npm run build` clean. Committed and
+pushed as its own atomic commit first.
+
+Also corrected four stale FEATURE_BACKLOG notes that described already-fixed problems: the
+`pompeii.geojson` placeholder (file no longer exists), the `pois-dot`/`pois-label` dead-layer
+cleanup (already done), and the two "Map.tsx sequential await chain" performance notes (obsoleted
+by `[11-P0-2]`'s lazy `registerLayerLoader` overlay loading — thematic layers aren't fetched on
+cold load at all any more, so there's no chain to settle). Marked `[x]` with what resolved them
+rather than deleted, so the record stays legible.
+
+### Build, validate, verify
+
+`npm run validate` clean at every commit: 0 errors throughout, 17 pre-existing warnings (the
+standing diplomacy/neighbors "outside the empire envelope" false positives for India/China nodes,
+and the letters route-line "no name field" set). Caught and fixed two transient validator warnings
+mid-merge (euergetism's Miletus/Leptis empty-string image_url keys — dropped the keys rather than
+ship them empty). `npm run build` clean on all five pushed commits. `npm run metrics -- --write`:
+**1,740 curated places total (+58)**, 481 POIs unchanged, image coverage 53.4%, cross-file
+collisions 126 → 133 (expected — new points near existing gazetteer entries; informational, tracked
+under `[12-P0-1]`), 0 validator errors.
+
+### Handoff for the next shift
+
+1. **A fifteenth road, or fill the Via Militaris weak segment.** With Postumia, Cassia+Clodia,
+   Aurelia, Salaria, Traiana and now Militaris done, the obvious remaining thin road is **Via
+   Cottia** (6 stations, historically short but likely under-covered across the Cottian Alps,
+   Segusio/Susa). Alternatively the Via Militaris Hadrianopolis→Bergule segment needs the verbatim
+   Bordeaux Latin (library/ToposText-direct access) to resolve its under-running mileage chain and
+   possibly recover Ostudizo/Burtudizo/Tarpodizo, and Idimum just needs a geocode for "Medveda,
+   opstina Despotovac" to add a 35th securely-identified Balkan station.
+2. **Axis 12 (imperial cult) has real room left** — this shift found 15 without exhausting the
+   search; Barcino's four-column forum temple, Banias/Caesarea Philippi's Herodian Augusteum, and
+   the Tres Arae Sestianae are all real but were dropped for want of a securable dedication or a
+   placeable coordinate, recoverable with better sourcing access.
+3. **Axis 15 benefactor_inscription sits at 30, well clear of the 20-floor** — the Pompeii
+   amphitheatre (Quinctius Valgus / Porcius, CIL X 852, c. 70 BCE) and Holconii theatre are both
+   verified drop-in-ready records the research pass held back only under a two-Vesuvian-sites cap;
+   an easy future top-up if the axis is picked again.
+4. **Axis 15 alimenta_town still sits at 22 of the ~50 ceiling** — unchanged this shift; the
+   easy-ground-is-gone finding from Shifts 36-38 still holds, needs library/EDH access to
+   Duncan-Jones 1964 rather than more WebSearch passes.
+5. **Board fresh-check**: still no unclaimed P0/P1 `add` ticket smaller than a multi-pass refactor.
+   Topmost unclaimed P0s unchanged since Shift 34. Six shifts running (34-39) have made the same
+   decline call on `[12-P0-1]`/`[03-P0-1]` for the same "don't land a half-finished refactor on
+   prod unsupervised" reason; a shift with genuinely dedicated multi-pass runway (not just a larger
+   token budget) is what these need.
+
+---
+
 ## Shift 38 — 2026-08-20 (this shift's own prompt claimed "Shift 3 of four")
 
 **Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt said
