@@ -7,6 +7,188 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 36 — 2026-08-20 (this shift's own prompt claimed "Shift 1 of four")
+
+**Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt said
+"Shift 1 of four," but `SHIFT_LOG` was 35 real shifts deep at session start, so this entry
+continues as Shift 36. Session started `HEAD` detached at the real tip (`505d8ef`) one commit
+ahead of a stale local `main` (`709a480`, seven shifts behind) with `main`/`origin/main`
+reporting "unrelated histories" on a plain merge attempt — `git reset --hard origin/main` on the
+local branch (confirmed identical to detached `HEAD` first) put it cleanly on the real tip, no
+data loss. `node_modules` was missing on this fresh container; `npm install` restored it (also
+reverted the resulting `package-lock.json` churn — `libc` field removals from a newer local npm
+regenerating metadata, not a real dependency change — before committing anything). Read
+`SHIFT_BRIEF.md` and `BOARD.md` in full before touching anything.
+
+**Network block reconfirmed** — direct `curl` to `overpass-api.de`/`commons.wikimedia.org` both
+returned `CONNECT tunnel failed, response 403` via the agent proxy, same as every prior shift.
+WebSearch (through background research agents) remained the only working research channel.
+
+### Board check
+
+Topmost unclaimed board tickets are unchanged from Shift 34/35's notes: `[12-P0-1]` merge-themes,
+`[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terrain, `[02-P0-4]` self-host-glyphs
+— all large architectural changes better suited to a shift that opens with one as its sole focus,
+and (for terrain/glyphs specifically) likely blocked on the same egress restriction that's held
+every prior shift back from live tile/font fetches. Declined for the same reason as the last two
+shifts. Track A followed the brief's own axis queue and Shift 35's own handoff notes directly.
+
+### Track B — deliberately skipped, and why
+
+`FEATURE_BACKLOG.md`'s P0–P3 checklists are now almost entirely checked off. The few open items
+left are either genuinely large (dark mode — confirmed non-trivial by a prior shift's own note:
+`Map.tsx` hardcodes the parchment halo color inline more than a dozen times rather than reading
+a palette token; terrain shading — needs a DEM/raster tile source likely blocked by the same
+egress restriction) or already resolved without their checkbox being flipped (checked this shift:
+the "Legend/Layers buttons overlap by ~12px" note from Shift 12 turned out fixed — current FAB
+stack offsets are 32/121/169/217/313, evenly spaced; the "mobile sheet covers the FAB stack" note
+from Shift 5 turned out fixed too — `ZoomControl.tsx` and siblings already read `usePoiPanel()`
+and hide while a place is open). Rather than force a marginal UI change into the slot, this shift
+put the full budget into Track A. Per the brief's own rule ("if you don't have time for Track B,
+that's fine — data wins"), this is a deliberate call, not an oversight — logged here so it reads
+as a decision, not a skip nobody noticed.
+
+### Track A — two axes, 49 net new features, four research waves reviewed and merged by hand
+
+Ran four background research agents in two waves (2 concurrent per wave, disjoint files), each
+independently reviewed before merging — not just trusting the agent's own self-reported checks,
+per the standing lesson from Shift 34's beneficiarii catch and Shift 35's senator-schema catch.
+
+**Axis 2 (road stations) — three complete roads, all radiating from Rome's Cisalpine/Etrurian
+network Shift 35 flagged as the natural next pick.** `road_stations.geojson` 248 → 284 (+36).
+
+- **Via Postumia** (Genua/Genoa → Aquileia, the tenth road on the map), 17 stations: Genua,
+  Pontedecimo, Libarna, Dertona, Iria, Camillomagus, Cremona, Locus Castorum, Bedriacum, an
+  unidentified Villafranca di Verona junction, Verona, Calidarium, Vicetia, Postioma, Opitergium,
+  Concordia, Aquileia — sourced from the Antonine Itinerary, Tabula Peutingeriana, and a Verona
+  milestone (CIL V) fixing the Genua–Cremona total at 122 Roman miles. 148 BCE road, one of the
+  best-attested in the whole network thanks to surviving milestones.
+- **Via Cassia + Via Clodia** (Rome → Florentia/Florence, the eleventh and twelfth roads), 19
+  stations: 11 on the Cassia (Baccanae, Sutrium, Vicus Matrini, Forum Cassii, Aquae Passeris,
+  Volsinii, Clusium, Ad Statuas, Arretium, Ad Fines/Casas Caesarianas, Florentia) and 8 on the
+  Clodia, its more westerly parallel route through southern Etruria (Careiae, Ad Novas, Forum
+  Clodii, Blera, Norchia, Tuscania, Maternum, Saturnia) — reconstructed from the Antonine
+  Itinerary's "Item a Luca Romam usque" stage list, which supplied a clean, internally-consistent
+  239-mile skeleton for the whole Cassia run.
+
+**Two independently-confirmed data-quality catches, both from this shift's own manual geodesic
+check** (claimed road distance can never be shorter than the great-circle distance between two
+points — a physical impossibility, not a judgment call; every leg run through the check at
+1 Roman mile = 1.4788 km before merging, same practice Shift 35 established):
+
+1. Via Postumia's Cremona record initially carried `distance_from_previous_mp: 19` sourced as
+   "nineteen miles east of Placentia" — real, but Placentia is already a Via Aemilia station and
+   deliberately not duplicated here, so the schema field (which means "from the previous station
+   *in this list*," i.e. Camillomagus) would have understated the true gap by more than half
+   against a 40.6 mp straight-line floor. Corrected to the 44 mp through-distance
+   (Camillomagus→Placentia 25 mp + Placentia→Cremona 19 mp), with the routing spelled out in
+   Cremona's own notes rather than left as a silent number.
+2. Via Cassia's research agent caught its own near-miss during research (a search-snippet
+   coordinate for Vicus Matrini producing an impossible 6.43 mp straight-line against a sourced
+   4 mp road distance) and self-corrected by interpolating a position consistent with the
+   itinerary's own mileage split — confirmed independently this shift rather than taken on trust.
+
+One real id collision caught before merging: "Ad Statuas" is a generic Latin toponym ("at the
+statues") already used once by an unrelated Via Augusta station in Spain — the Via Cassia's own
+Ad Statuas shipped as `station_ad_statuas_cassia` to avoid overwriting the existing record.
+Two stations ship `distance_from_previous_mp: null` rather than a guess (Via Postumia's
+Opitergium→Concordia leg, Via Cassia's Statonia was excluded outright as a genuinely unresolved
+scholarly dispute with no defensible coordinate). Placentia, Verona, Cremona, Vicetia, and
+Aquileia are shared road-network nodes with other roads or curated sites by design, following the
+precedent the existing `station_placentia_aemilia`/`station_bononia_aemilia` records already set.
+
+**Axis 13 (political apparatus) — 13 more senators' hometowns, 15 → 28 against the brief's
+30-hometown floor.** Ran two research waves: first targeting Africa Proconsularis and Gallia
+Narbonensis specifically (Shift 35's own flagged gap), second broadening to every other
+under-represented province once the first wave confirmed Africa is genuinely thin, not
+under-searched.
+
+- **Wave 1 (6 net new)**: Nemausus/Nîmes and Forum Julii/Fréjus close the two real Gallia
+  Narbonensis gaps (Titus Julius Maximus Manlianus, Gaius Valerius Paullinus). Also Saguntum
+  (Voconius Romanus, personally adlected by Trajan on Pliny's lobbying), Augusta Taurinorum/Turin
+  (Quintus Glitius Atilius Agricola, twice suffect consul), Epidaurum/Cavtat (Quintus Marcius
+  Turbo, suppressed the Kitos War in Cyrenaica/Egypt in 116), and Mytilene (Marcus Pompeius
+  Macrinus Neos Theophanes). **A real duplicate catch**: the wave's own Marcus Annius Verus
+  (Ucubi/Espejo) result was already on the map under `politics_senator_ucubi` from an earlier
+  shift — checked against the live file before merging and dropped rather than double-pinned.
+- **Wave 2 (7 net new)**: Sardis (Tiberius Julius Celsus Polemaeanus, proconsul of Asia 105–107),
+  Vercellae (Lucius Domitius Apollinaris), Trebula Mutusca (Titus Prifernius Paetus), a second
+  Pergamon senator (Gaius Antius Aulus Julius Quadratus, Trajan's "amicus clarissimus," governed
+  Syria 100–104), Pompeiopolis (Gaius Claudius Severus, first governor of the new province of
+  Arabia, 106–116), Casinum (Ummidius Quadratus Sertorius Severus), Xanthos (Marcus Arruntius
+  Claudianus, first Lycian senator). **One candidate deliberately dropped**: Sextus Julius Severus
+  of Aequum (Dalmatia) — every specifically dated office in his career (cos. 127, the Bar Kokhba
+  command) falls after 117 CE, and the research pass's own summary flagged his Trajan-era
+  activity as inferred rather than independently dated. The project's standing bar, set by the
+  prior rejection of Julius Severus of Ancyra for the identical reason, asks for a Trajan-dated
+  post, not a plausible-but-undated early career stage — so he stays off the map.
+
+**Africa Proconsularis and Gallia Narbonensis are very likely near their real ceiling now**, not
+just under-searched: two independent research passes (this shift's Wave 1 and a prior shift)
+turned up only the two Narbonensis names above, and every African-connected name investigated
+(Marius Priscus, Caecilius Classicus, Titus Sextius Cornelius Africanus, Tiberius Claudius
+Sestius, Quintus Cornelius Quadratus, Publius Pactumeius Clemens, Quintus Aurelius Pactumeius
+Fronto) either lacks a *specific* city-level origo or is dated Flavian/Hadrianic-Antonine rather
+than Trajanic. This matches the scholarly consensus cited by the research pass (Ibba, "I senatori
+africani") that Africa's senatorial boom was predominantly post-Trajanic. 28/30 is a defensible
+stopping point without loosening the origo-sourcing bar.
+
+### Build, validate, verify
+
+Fresh container needed `npm install` first (`node_modules` wasn't present). `npm run validate`:
+0 errors, 17 warnings throughout (same pre-existing set every recent shift has carried).
+Cross-file name collision count crept 119 → 122 as expected (new points landing near existing
+gazetteer entries) — informational only, tracked under `[12-P0-1]`, not a blocker. `npx tsc
+--noEmit` clean. `npm run build` clean on all four data commits. `npm run metrics --write`: 481
+POIs, 100% description depth, 0 thin (road stations and politics.geojson aren't POI-schema files,
+so the count is unchanged from Shift 35's).
+
+**A formatting bug caught and fixed before it reached a commit**: the splice script used to merge
+the second senator-hometown batch initially reindented new features with a 2-space prefix instead
+of the 4-space prefix `politics.geojson`'s existing features actually use, which would have
+produced a working-but-inconsistently-indented file (valid JSON, wrong visual nesting depth for
+that one batch). Caught by diffing before staging, not after — same discipline Shift 15's own
+"reformat trap" note recommends — reverted and re-spliced with the correct indent. Worth repeating
+here since it's an easy one-line mistake to make silently: always diff a splice script's output
+against the target file's existing indent before trusting it, not just against `json.loads()`
+validity.
+
+### Board
+
+No board ticket claimed or closed this shift — same reasoning as Shifts 34/35 (the topmost
+unclaimed P0s are all large architectural changes better suited to a dedicated shift, several
+likely blocked on this environment's own egress restriction). Track B was a deliberate skip (see
+above) rather than a FEATURE_BACKLOG pull.
+
+### Handoff for the next shift
+
+1. **A fourth Etruria/Umbria-radiating road is a natural next pick**: Via Salaria (Rome →
+   Reate/Rieti → Asculum/Ascoli Piceno, well-documented, no station work done on it yet) or Via
+   Aurelia (Rome up the Tyrrhenian coast toward Pisa/Genua, connects naturally to this shift's
+   Via Postumia terminus at Genua). Neither has any stations on the map yet.
+2. **Axis 13's senator_hometown category sits at 28 of the 30-floor** — 2 away. This shift's Wave
+   2 covered Asia/Italia/Galatia/Lycia broadly but didn't exhaust them; a future pass specifically
+   on Hispania Baetica beyond Ucubi, Macedonia, and Cilicia (all untouched this shift) could
+   plausibly close the last 2 without repeating this shift's now-investigated-and-rejected list
+   (now grown to ~30 names across two shifts — worth keeping that rejection list intact in a
+   future prompt rather than re-walking it).
+3. **Geodesic sanity-check road distances before merging, not after** — now confirmed useful on
+   three separate shifts' worth of road-station batches (one wrong figure caught this shift on
+   Via Postumia's Cremona record, a mislabeled-basis error rather than a bad number). Still worth
+   writing as a small reusable script rather than hand-computing it per road, per Shift 35's own
+   note — nobody has done this yet.
+4. **`FEATURE_BACKLOG.md`'s remaining open checklist items are almost all either done-but-
+   unchecked (worth a dedicated pass to flip the boxes and delete stale notes — this shift found
+   two) or genuinely large** (dark mode, terrain shading, the `Map.tsx` await-chain-to-parallel
+   perf fix flagged by a prior shift as now taking 30-35s to settle). A future shift with a full
+   6 hours to dedicate to one of these, rather than splitting attention with Track A, is the
+   right shape for picking one up.
+5. **Board fresh-check**: still no unclaimed P0/P1 `add` ticket. Topmost unclaimed P0s unchanged
+   from Shift 35's note — `[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]`
+   card-rebuild, `[02-P0-1]` terrain, `[02-P0-4]` self-host-glyphs.
+
+---
+
 ## Shift 35 — 2026-08-19 (this shift's own prompt claimed "Shift 4 of four")
 
 **Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt said
