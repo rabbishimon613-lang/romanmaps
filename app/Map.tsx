@@ -1051,7 +1051,7 @@ export default function Map() {
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124;">
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                     <div style="color:#5f6368; font-size:11px;">${escapeHtml(p.road || "")} · ${escapeHtml(p.category || "")}</div>
+                     <div style="color:#5f6368; font-size:11px;">${escapeHtml(p.road || "")}${p.category ? " · " + escapeHtml(prettyCategory(p.category)) : ""}</div>
                      ${distLine}
                    </div>`,
                 )
@@ -1406,7 +1406,7 @@ export default function Map() {
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(catLabel[p.category] || p.category || "")}${p.first_worshipped ? " · " + escapeHtml(p.first_worshipped) : ""}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(catLabel[p.category] || (p.category ? prettyCategory(p.category) : ""))}${p.first_worshipped ? " · " + escapeHtml(p.first_worshipped) : ""}</div>
                      ${noteLine}
                    </div>`,
                 )
@@ -1581,12 +1581,13 @@ export default function Map() {
                 benefactor_inscription: "Benefactor endowment",
               };
               const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:220px;">${escapeHtml(p.one_line)}</div>` : "";
+              const cultCat = catLabel[p.category] || (p.category ? prettyCategory(p.category) : "");
               euergetismPopup
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
-                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(catLabel[p.category] || p.category || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(cultCat)}</div>
                      ${noteLine}
                    </div>`,
                 )
@@ -2728,6 +2729,14 @@ function escapeHtml(s: string): string {
   return s.replace(/[&<>"']/g, (c) =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" } as any)[c],
   );
+}
+
+/** Turn a raw snake_case category id into a readable label ("imperial_altar" → "Imperial altar").
+ * Used as the fallback for thematic popups so a category a shift adds in the data but not yet in
+ * a popup's hardcoded label map still reads as words, not a bare identifier. */
+function prettyCategory(c: string): string {
+  const words = c.replace(/_/g, " ").trim();
+  return words.charAt(0).toUpperCase() + words.slice(1);
 }
 
 /** Build a "sea mask" FeatureCollection: one polygon covering the whole world with every land
