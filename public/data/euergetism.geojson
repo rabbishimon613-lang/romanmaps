@@ -1098,6 +1098,236 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pozzuoli - Cattedrale San Procolo martire - 2023-09-20 13-01-51 001.JPG?width=800",
         "image_credit": "Pozzuoli Cathedral, built into the Temple of Augustus — Wikimedia Commons"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.3404,
+          37.9394
+        ]
+      },
+      "properties": {
+        "id": "euerg_ephesus_mazaeus_mithridates_gate",
+        "name": "Ephesus",
+        "category": "benefactor_inscription",
+        "one_line": "Two freedmen of the imperial household, Mazaeus and Mithridates, paid for the triple-arched south gate of Ephesus's commercial agora in 4/3 BCE. They dedicated it to their former owners — Augustus, Livia, Agrippa and Julia — in a bilingual Latin and Greek text running the full width of the facade. Two ex-slaves thereby signed the busiest doorway in the city. The gate still opened onto the agora in 117 CE.",
+        "province": "Asia",
+        "modern_location": "Selcuk, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Bilingual Latin/Greek dedication on the South Gate of the Tetragonos Agora, Ephesus, 4/3 BCE",
+          "https://www.livius.org/articles/place/ephesus/ephesus-photos/ephesus-gate-of-mazaeus-and-mithridates/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/16.12_Inscription_on_the_Mazeus-Mithridates_Gate_in_Ephesus.JPG?width=800",
+        "image_credit": "Inscription on the Mazeus-Mithridates Gate, Ephesus — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2779,
+          37.5309
+        ]
+      },
+      "properties": {
+        "id": "euerg_miletus_capito_baths",
+        "name": "Miletus",
+        "category": "benefactor_inscription",
+        "one_line": "Gnaeus Vergilius Capito, procurator of Asia under Claudius, gave Miletus a full Roman bath complex with a colonnaded court and an open-air swimming pool. His building inscription runs along the Ionic stoa that served as the entrance hall. Two colonnaded storeys curved around the bathing rooms, an ambitious piece of design for a provincial gift. Milesians were still bathing in it in 117 CE.",
+        "province": "Asia",
+        "modern_location": "Balat, Aydin Province, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Building inscription of the Ionic stoa fronting the Capito Baths, Miletus, c. 47-54 CE",
+          "https://www.cambridge.org/core/journals/anatolian-studies/article/abs/cosmopolitan-capito-architectural-benefaction-by-a-roman-official-in-late-julioclaudian-miletus/A55BA822B610CFC8C1DF3F303D20A408"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2937,
+          32.6376
+        ]
+      },
+      "properties": {
+        "id": "euerg_leptismagna_iddibal_chalcidicum",
+        "name": "Leptis Magna",
+        "category": "benefactor_inscription",
+        "one_line": "Iddibal Caphada Aemilius, son of Himilis, paid for the Chalcidicum at Lepcis Magna — a colonnaded market hall with its own gateway and street — and dedicated it to the divine power of Augustus in 11-12 CE. The inscription across three gables names him alone as the man who covered the cost. A local Punic family, not Rome, put up the money. The complex still traded beside the theatre in 117 CE.",
+        "province": "Africa Proconsularis",
+        "modern_location": "Khoms, Libya",
+        "extant_117ce": true,
+        "sources": [
+          "IRT 324",
+          "https://irt2021.inslib.kcl.ac.uk/en/inscriptions/IRT0324.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3386,
+          38.9153
+        ]
+      },
+      "properties": {
+        "id": "euerg_merida_agrippa_theatre",
+        "name": "Merida",
+        "category": "benefactor_inscription",
+        "one_line": "Marcus Agrippa gave the new colony of Augusta Emerita its theatre in 16-15 BCE and put his own name over the entrance passages. About 6,000 spectators sat in the tiered cavea cut into the hillside. The marble and granite stage front was rebuilt under Trajan, so the facade standing in 117 CE was barely a decade old. Emerita's citizens watched plays in a building paid for by the emperor's son-in-law.",
+        "province": "Lusitania",
+        "modern_location": "Merida, Spain",
+        "extant_117ce": true,
+        "sources": [
+          "Building inscription 'M. Agrippa L.f. cos III trib. pot. III' over the theatre entrances, Augusta Emerita",
+          "https://www.livius.org/articles/place/augusta-emerita/augusta-emerita-photos/augusta-emerita-theater/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Merida_Roman_Theatre1.jpg?width=800",
+        "image_credit": "Roman Theatre of Merida — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7233,
+          37.9752
+        ]
+      },
+      "properties": {
+        "id": "euerg_athens_agrippa_odeion",
+        "name": "Athens",
+        "category": "benefactor_inscription",
+        "one_line": "Marcus Agrippa dropped a covered concert hall into the middle of the Athenian Agora around 15 BCE, on ground that had stood deliberately open for four centuries. The two-storey auditorium seated roughly 1,000 and had a raised stage and a marble-paved orchestra. Athenians called it the Agrippeion after the man who paid. It was still hosting lectures and recitals in 117 CE.",
+        "province": "Achaia",
+        "modern_location": "Athens, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "Athenian Agora excavations, Odeion of Agrippa (ASCSA)",
+          "https://topostext.org/place/380237BOAg"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Odeon_of_Agrippa_Athens_agora.jpg?width=800",
+        "image_credit": "Odeon of Agrippa, Athenian Agora — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6156,
+          43.0708
+        ]
+      },
+      "properties": {
+        "id": "euerg_assisi_caesii_temple",
+        "name": "Assisi",
+        "category": "benefactor_inscription",
+        "one_line": "Two brothers, Gnaeus Caesius and Titus Caesius Priscus, paid for the temple that still fronts Assisi's main square while serving as the town's chief magistrates. Six Corinthian columns rise straight off the stepped podium, an unusual arrangement forced by the cramped hillside terrace. Their dedication was spelled out in bronze letters across the architrave, and only the fixing holes now survive. The temple stood complete in 117 CE.",
+        "province": "Italia",
+        "modern_location": "Assisi, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "CIL XI 5378",
+          "https://www.keytoumbria.com/Assisi/Roman_Temple.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Assisi,_tempio_di_minerva_02.JPG?width=800",
+        "image_credit": "Temple of Minerva, Assisi — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.8481,
+          44.8686
+        ]
+      },
+      "properties": {
+        "id": "euerg_pula_salvia_postuma_arch",
+        "name": "Pula",
+        "category": "benefactor_inscription",
+        "one_line": "Salvia Postuma Sergia paid for the arch that still stands at Pula's Golden Gate, raising it to three dead Sergii — among them Lucius Sergius Lepidus, tribune of the 29th legion that fought at Actium. She put her own name on the frieze, a bold claim for a woman around 27 BCE. The arch was built against the inside of the city wall, so only its front face was ever meant to be seen. It stood in 117 CE and stands today.",
+        "province": "Italia",
+        "modern_location": "Pula, Croatia",
+        "extant_117ce": true,
+        "sources": [
+          "Dedicatory inscription of Salvia Postuma Sergia on the architrave of the Arch of the Sergii, Pula",
+          "https://www.ami-pula.hr/en/locations/sites-in-pula/arch-of-the-sergii/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Inscription_Arch_of_the_Sergii_(Pula).jpg?width=800",
+        "image_credit": "Inscription, Arch of the Sergii, Pula — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6303,
+          45.7472
+        ]
+      },
+      "properties": {
+        "id": "euerg_saintes_julius_rufus_arch",
+        "name": "Saintes",
+        "category": "benefactor_inscription",
+        "one_line": "Gaius Julius Rufus, a Gaulish notable and third-generation Roman citizen, paid for the twin-bayed arch at Saintes in 18-19 CE and dedicated it to Tiberius, Germanicus and Drusus. The inscription traces his line back to a grandfather named Gedemo, a Gaul who took the citizenship a lifetime earlier. The arch stood over the terminus of the road from Lyon, where travellers entered the town. It still framed that crossing in 117 CE.",
+        "province": "Gallia Aquitania",
+        "modern_location": "Saintes, France",
+        "extant_117ce": true,
+        "sources": [
+          "CIL XIII 1036",
+          "ILTG 148"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arc_de_Germanicus.JPG?width=800",
+        "image_credit": "Arc de Germanicus, Saintes — Wikimedia Commons, CC BY-SA 2.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8306,
+          45.7717
+        ]
+      },
+      "properties": {
+        "id": "euerg_lyon_julius_rufus_amphitheatre",
+        "name": "Lyon",
+        "category": "benefactor_inscription",
+        "one_line": "Gaius Julius Rufus of the Santones paid for the amphitheatre at the federal sanctuary of the Three Gauls in 19 CE, where delegates of sixty Gallic communities assembled each year. His dedication, made for the safety of Tiberius, turned up on a single reused block in 1957 and identified the whole building. The arena was enlarged a century after he built it. In 117 CE Rufus's amphitheatre was still the assembly's arena.",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Lyon, France",
+        "extant_117ce": true,
+        "sources": [
+          "ILTG 217 (Inscriptions latines des Trois Gaules 217)",
+          "https://en.visiterlyon.com/discover/heritage-unesco/antiquity/amphitheatre-of-the-three-gauls"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lyon_3_gaules2.JPG?width=800",
+        "image_credit": "Amphitheatre of the Three Gauls, Lyon — Wikimedia Commons"
+      }
     }
   ]
 }
