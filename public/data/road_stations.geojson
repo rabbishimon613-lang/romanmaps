@@ -7403,6 +7403,341 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.8853,
+          41.1684
+        ]
+      },
+      "properties": {
+        "id": "station_forum_novum",
+        "category": "mutatio",
+        "name": "Forum Novum",
+        "road": "Via Traiana",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Excavations at Piano Sant'Arcangelo near Paduli uncovered a stone-paved stretch of the Via Traiana with cart-wheel ruts still visible in the surface, along with roadside structures belonging to this vicus. It served as the first stopping point out of Beneventum, about 10 Roman miles down the road, and forms part of the Via Appia UNESCO World Heritage listing inscribed in 2024.",
+        "sources": [
+          "Soprintendenza ABAP Caserta e Benevento — excavation report at Forum Novum, Paduli",
+          "Appia Day — Appia Traiana: Forum Novum al Miglio X, appiaday.org"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.0985,
+          41.2423
+        ]
+      },
+      "properties": {
+        "id": "station_aequum_tuticum",
+        "category": "mansio",
+        "name": "Aequum Tuticum",
+        "road": "Via Traiana",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Aequum Tuticum grew up on a plateau above the Miscano valley where the Via Traiana crossed the Via Herculia, near modern Ariano Irpino. Surveys of the site, known locally as San Eleuterio, have mapped its forum and public buildings; the Antonine Itinerary places it 21 Roman miles from Beneventum.",
+        "sources": [
+          "Antonine Itinerary 112 (Capua-Beneventum-Aequum Tuticum)",
+          "Wikipedia: Aequum Tuticum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.3167,
+          41.3667
+        ]
+      },
+      "properties": {
+        "id": "station_aecae",
+        "category": "mansio",
+        "name": "Aecae",
+        "road": "Via Traiana",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Aecae sat on a hilltop east of the Apennine watershed and gave its name directly to the medieval and modern town of Troia built on the same site. It was the first major stop the Via Traiana reached after descending from the mountains into Apulia.",
+        "sources": [
+          "Antonine Itinerary 116",
+          "Wikipedia: Via Traiana"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.6266,
+          41.3144
+        ]
+      },
+      "properties": {
+        "id": "station_herdonia",
+        "category": "mansio",
+        "name": "Herdonia",
+        "road": "Via Traiana",
+        "distance_from_previous_mp": 19,
+        "identified": true,
+        "notes": "Herdonia was sacked during the Second Punic War and later rebuilt as a Roman municipium on the Tavoliere plain. Decades of excavation there uncovered its forum, an amphitheater, and bath buildings spanning the Republican through late antique periods.",
+        "sources": [
+          "Antonine Itinerary 116",
+          "Wikipedia: Via Traiana"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.0677,
+          41.2195
+        ]
+      },
+      "properties": {
+        "id": "station_canusium",
+        "category": "mansio",
+        "name": "Canusium",
+        "road": "Via Traiana",
+        "distance_from_previous_mp": 26,
+        "identified": true,
+        "notes": "Canusium was a major wool- and textile-trading city on the Ofanto river, and the Via Traiana crossed the river there on a Roman bridge whose remains still stand. Trajan raised a monumental arch at Canusium to mark the road, part of which survives today.",
+        "sources": [
+          "Antonine Itinerary 116",
+          "Fondazione Archeologica Canosina — Percorrendo la Via Traiana, canusium.it"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.2966,
+          41.2306
+        ]
+      },
+      "properties": {
+        "id": "station_rudas",
+        "category": "statio",
+        "name": "Rudas",
+        "road": "Via Traiana",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "The Tabula Peutingeriana places Rudas as a waypoint on the Via Traiana between Canusium and Rubi, in territory later belonging to Andria. No structures have been firmly matched to the name, though researchers have proposed a location near Masseria Santa Tavella south of the road's traced course.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "andriarte.it — Rudas: Probabile Ubicazione"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.4897,
+          41.1166
+        ]
+      },
+      "properties": {
+        "id": "station_rubi",
+        "category": "mansio",
+        "name": "Rubi",
+        "road": "Via Traiana",
+        "distance_from_previous_mp": 14,
+        "identified": true,
+        "notes": "Rubi was a Peucetian town that minted its own coinage before Roman rule and later became known for the red-figure pottery recovered from its tombs. Horace called his travel party weary on reaching Rubi in 37 BCE and complained the road there had turned worse from rain, decades before Trajan paved this stretch as the Via Traiana.",
+        "sources": [
+          "Tabula Peutingeriana (Rudas-Rubos leg)",
+          "Horace, Satires 1.5.94-96"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.6909,
+          41.1101
+        ]
+      },
+      "properties": {
+        "id": "station_butuntum",
+        "category": "mansio",
+        "name": "Butuntum",
+        "road": "Via Traiana",
+        "distance_from_previous_mp": 11,
+        "identified": true,
+        "notes": "Butuntum grew into a Roman municipium on the Via Traiana between Rubi and Barium, set amid the olive-growing territory that still defines Bitonto today. The Antonine Itinerary lists it as a single day's stage short of the Adriatic coast at Barium.",
+        "sources": [
+          "Antonine Itinerary 116"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8719,
+          41.1171
+        ]
+      },
+      "properties": {
+        "id": "station_barium",
+        "category": "mansio",
+        "name": "Barium",
+        "road": "Via Traiana",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Horace called Bari's walls piscosi... moenia Bari (fish-rich Bari) when he passed through on this same coastal corridor in 37 BCE, decades before Trajan paved it as the Via Traiana in 109 CE. The new road gave the Adriatic fishing port a direct paved route back to Beneventum and on to Rome.",
+        "sources": [
+          "Antonine Itinerary 116",
+          "Horace, Satires 1.5.97"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.01,
+          41.07
+        ]
+      },
+      "properties": {
+        "id": "station_turris_iuliana",
+        "category": "mutatio",
+        "name": "Turris Iuliana",
+        "road": "Via Traiana",
+        "distance_from_previous_mp": 11,
+        "identified": false,
+        "notes": "Turris Iuliana appears in the fourth-century Itinerarium Burdigalense as a horse-changing stop on the coast road south of Barium, in the area later called Scamuso near Torre a Mare. No Roman remains at the site have been separated out from the later coastal towers built over the same ground.",
+        "sources": [
+          "Itinerarium Burdigalense (333-334 CE)",
+          "Bari Torre a Mare local history note"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.3438,
+          40.9152
+        ]
+      },
+      "properties": {
+        "id": "station_turres_aureliae",
+        "category": "mansio",
+        "name": "Turres Aureliae",
+        "road": "Via Traiana",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "The Antonine Itinerary places Turres Aureliae 21 Roman miles south of Barium, on the stretch of coast where Torre Cintola near Monopoli now stands. Excavations at Torre Cintola have documented a multi-period coastal settlement that continued to serve as a landing point on this road into the medieval era.",
+        "sources": [
+          "Antonine Itinerary 116",
+          "Il contesto pluristratificato di Torre Cintola a Monopoli (BA)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.3911,
+          40.8878
+        ]
+      },
+      "properties": {
+        "id": "station_egnatia",
+        "category": "mansio",
+        "name": "Egnatia",
+        "road": "Via Traiana",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Egnatia was a Messapian port town absorbed into Roman Apulia, and its ruins at the Savelletri archaeological park still show a forum, basilica, and an early Christian church. Horace mocked the town in the same 37 BCE satire, ridiculing a local priestly claim that incense caught fire on its altar without any flame.",
+        "sources": [
+          "Antonine Itinerary 116",
+          "Horace, Satires 1.5.97-101",
+          "Parco Archeologico di Egnazia, musei.beniculturali.it"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.5377,
+          40.8073
+        ]
+      },
+      "properties": {
+        "id": "station_ad_decimum",
+        "category": "mutatio",
+        "name": "Ad Decimum",
+        "road": "Via Traiana",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "The mutatio Ad Decimum took its name from its position at the tenth Roman mile along this stretch, now identified with Torre San Leonardo on the Apulian coast between Egnazia and Speluncae. As a mutatio it existed to change horses for the cursus publicus rather than to lodge travelers overnight.",
+        "sources": [
+          "FederArcheo — Ostuni (Br). Mutatio ad Decimum, Torre San Leonardo, Masseria Pilone"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.7014,
+          40.7577
+        ]
+      },
+      "properties": {
+        "id": "station_speluncae",
+        "category": "mansio",
+        "name": "Speluncae",
+        "road": "Via Traiana",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "The mansio Ad Speluncas has been identified with Torre Santa Sabina in the comune of Carovigno, where Roman-era structures were found in the Mezzaluna locality near the shore. It was the last overnight stop before travelers reached Brundisium, 19 Roman miles further down the coast.",
+        "sources": [
+          "Antonine Itinerary 116",
+          "Brindisiweb.it — La viabilita e le opere stradali in epoca romana"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
