@@ -704,6 +704,8 @@ Trajan's death, 11 August 117 CE. Every record: `extant_117ce: true | false`.
 
 This applies to *every* feature type across all 20 axes: cities, road stations, POIs, people, embassies, mints, gladiator schools — all of them. Uniform, legible, English-first.
 
+**Scope note (settled 2026-08-20, cloud shift 38):** this rule governs curated display names — `sites.ts`, `pois.geojson` and every other axis file's `name`/`display` field. It does **not** apply retroactively to `sites_buildings.geojson`/`sites_streets.geojson`, the raw OSM building-footprint and street-name layer underneath the 40 street-level sites. Those are legitimate in-language labels (Italian building names, German/Hungarian/Turkish/Arabic street names) sourced directly from OpenStreetMap tags, not the ancient-name/modern-name duplication this rule targets — "translating" or Anglicizing a thousand OSM-sourced strings would misrepresent the source data. If a future shift wants to give that layer curated, uniform names, that is a distinct research task (city-by-city, `[03-P0-2]`-adjacent), not an invariant-1.5 audit.
+
 ### 1.6 Every new POI ships with an image_url
 
 The PlaceDetails panel now shows a hero image at the top of every place — modeled after the way Google Business listings put a photograph above the name. **Every POI you add MUST carry an `image_url` field**, or the panel falls back to a slim tinted rail and looks worse than the ones already on the map.
