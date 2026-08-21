@@ -8863,6 +8863,239 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5719,
+          41.9089
+        ]
+      },
+      "properties": {
+        "id": "station_ponte_mammolo",
+        "category": "statio",
+        "name": "Ponte Mammolo",
+        "road": "Via Tiburtina",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A bridge over the Aniene just outside Rome's walls, the first landmark on the road out to Tibur. The modern bridge on the same site still carries the road's descendant highway.",
+        "sources": [
+          "https://www.romaincampagna.it/en/itineraristorici/la-via-tiburtina/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7267,
+          41.9394
+        ]
+      },
+      "properties": {
+        "id": "station_aquae_albulae",
+        "category": "statio",
+        "name": "Aquae Albulae",
+        "road": "Via Tiburtina",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A statio at the sulfur springs six kilometers short of Tibur, their milky-blue water so strong-smelling that Pliny, Strabo and Isidore all singled it out. Romans travelled out from the city just to bathe here, the way people still do today at the same springs.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Albulae_Aquae",
+          "http://himetop.wikidot.com/aquae-albulae-tivoli"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8631,
+          42.0
+        ]
+      },
+      "properties": {
+        "id": "station_vicus_varia",
+        "category": "vicus",
+        "name": "Vicovaro",
+        "road": "Via Valeria",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Vicus Varia sat where the road left the Aniene valley for the climb toward the Aequian hills, at the point the Via Sublacensis split off toward Subiaco. Its name survives almost unchanged in the modern town.",
+        "sources": [
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry%3Dvia-valeria-geo"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0794,
+          42.0872
+        ]
+      },
+      "properties": {
+        "id": "station_carseoli",
+        "category": "mansio",
+        "name": "Carseoli",
+        "road": "Via Valeria",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A Latin colony planted in Aequian territory in 298 BCE, well before the road that would later run through it. By 117 CE it was a working stop on the climb toward the Fucine Lake basin.",
+        "sources": [
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry%3Dvia-valeria-geo",
+          "https://www.britannica.com/topic/Via-Valeria"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4256,
+          42.0964
+        ]
+      },
+      "properties": {
+        "id": "station_alba_fucens",
+        "category": "vicus",
+        "name": "Alba Fucens",
+        "road": "Via Valeria",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A frontier colony planted in 303 BCE between the Marsi and the Aequi, high on the shoulder of Monte Velino above the Fucine Lake. Rome kept its most dangerous prisoners here -- Syphax of Numidia died in custody at Alba Fucens, and King Perseus of Macedon, the last man to rule as a Hellenistic king, ended his life here too.",
+        "sources": [
+          "https://www.historyhit.com/locations/alba-fucens/",
+          "https://en.wikipedia.org/wiki/Alba_Fucens"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5989,
+          42.0053
+        ]
+      },
+      "properties": {
+        "id": "station_marruvium",
+        "category": "vicus",
+        "name": "Marruvium",
+        "road": "Via Valeria",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "The chief town of the Marsi, on the eastern shore of the Fucine Lake -- a people Rome fought hard against in the Social War and then leaned on hard for legionaries afterward. The lake itself, since drained, made the town a lakeside stop rather than the landlocked ruin it is today.",
+        "sources": [
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry%3Dvia-valeria-geo"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.8347,
+          42.1167
+        ]
+      },
+      "properties": {
+        "id": "station_corfinium",
+        "category": "vicus",
+        "name": "Corfinio",
+        "road": "Via Valeria",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "The Italian rebels of the Social War made Corfinium their capital in 91 BCE and renamed it Italica -- a rival Rome built to hold its own name and its own senate. It lost that war and went back to being an ordinary Roman town, but the memory of the challenge stuck to the place for a long time after.",
+        "sources": [
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry%3Dvia-valeria-geo"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.95,
+          42.2667
+        ]
+      },
+      "properties": {
+        "id": "station_interpromium",
+        "category": "mansio",
+        "name": "Interpromium",
+        "road": "Via Valeria",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A relay station in the Aternus valley below modern San Valentino in Abruzzo Citeriore. The Itineraries give it as 12 Roman miles from Corfinium, but that figure doesn't square with the geodesic distance between the two identified sites closely enough to trust on this ground-coordinate precision, so it ships unclaimed here rather than forced.",
+        "sources": [
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry%3Dvia-valeria-geo"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1678,
+          42.3511
+        ]
+      },
+      "properties": {
+        "id": "station_teate",
+        "category": "vicus",
+        "name": "Chieti",
+        "road": "Via Valeria",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Teate, chief town of the Marrucini, sat on a hill above the Aternus valley -- a defensible perch that is why modern Chieti still looks down on the Pescara plain from the same spot.",
+        "sources": [
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry%3Dvia-valeria-geo"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2142,
+          42.4643
+        ]
+      },
+      "properties": {
+        "id": "station_aternum",
+        "category": "vicus",
+        "name": "Pescara",
+        "road": "Via Valeria",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "The road's Adriatic terminus, where the Aternus river reaches the sea -- 9 Roman miles past Teate by the Itineraries' own count, and 21 from Interpromium, both figures the ground still bears out. A modest port town in 117 CE, nothing like the city that grew from it.",
+        "sources": [
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry%3Dvia-valeria-geo"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
