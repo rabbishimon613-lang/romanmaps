@@ -846,6 +846,281 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman temple Augustum in Narona, 1. cent., Vid, Metkovic, Croatia 2010.JPG?width=800",
         "image_credit": "Wikimedia Commons, CC BY-SA 3.0"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1757,
+          41.3831
+        ]
+      },
+      "properties": {
+        "id": "cult_barcino_augustus",
+        "name": "Barcelona",
+        "category": "augusteum",
+        "first_worshipped": "Augustus",
+        "one_line": "A four-column temple to Augustus dominated the tiny colony of Barcino, sited deliberately at the highest point in town where the cardo and decumanus crossed. Four of its Corinthian columns still stand today, walled into a courtyard just off Barcelona's Gothic Quarter.",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Barcelona, Spain",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Augustus,_Barcelona",
+          "https://www.researchgate.net/publication/260305891_The_Augustan_Temple_and_Forum_of_the_Colony_of_Barcino_A_90_Degree_Turn"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple August Barcelona 20130905 3.JPG?width=800",
+        "image_credit": "Temple of Augustus, Barcelona · Wikimedia Commons, CC BY-SA 3.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.2879,
+          42.8805
+        ]
+      },
+      "properties": {
+        "id": "cult_tres_arae_sestianae",
+        "name": "Tres Arae Sestianae",
+        "category": "imperial_altar",
+        "first_worshipped": "Augustus",
+        "one_line": "Three open-air altars raised on the wild Atlantic headland at Cape Finisterre around 19 BCE by the legate Lucius Sestius, marking the western edge of the known world as newly Roman. No temple, no roof -- just stone altars facing the ocean where the sun was believed to set into the sea.",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Cape Finisterre, Galicia, Spain",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.adiantegalicia.es/reportaxes/2026/02/02/ara-solis-una-de-las-tres-aras-sestianas-do-cabo-finisterre.html",
+          "https://zaguan.unizar.es/record/63252/files/texto_completo.pdf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.6942,
+          33.2489
+        ]
+      },
+      "properties": {
+        "id": "cult_banias_augusteum",
+        "name": "Banias",
+        "category": "augusteum",
+        "first_worshipped": "Augustus",
+        "one_line": "Herod the Great raised a white marble temple to Augustus here, at the mouth of the cave the locals held sacred to Pan, in thanks for Augustus handing him the Golan. Its exact footprint among the sanctuary's ruins is still argued over -- one candidate sits right against the cave mouth, another lies south at Khirbet Omrit.",
+        "province": "Syria",
+        "modern_location": "Banias, Golan Heights",
+        "extant_117ce": true,
+        "sources": [
+          "https://biblearchaeology.org/research/new-testament-era/3473-the-temple-of-caesar-augustus-at-caesarea-philippi",
+          "https://www.biblewalks.com/baniastemples/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.6218,
+          47.2307
+        ]
+      },
+      "properties": {
+        "id": "cult_savaria_provincial_altar",
+        "name": "Szombathely",
+        "category": "provincial_cult_center",
+        "first_worshipped": "the imperial family of Pannonia Superior",
+        "one_line": "Savaria was Pannonia Superior's oldest colony, and its Ara Augustorum was the province's central altar -- the one place a Pannonian priest offered sacrifice on behalf of every emperor at once. Claudius founded the town; by Trajan's day it had been the seat of the provincial cult for two generations.",
+        "province": "Pannonia Superior",
+        "modern_location": "Szombathely, Hungary",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.romeartlover.it/Savaria.html",
+          "https://www1.rgzm.de/transformation/noricum/nw_pannonia_kult/kulte_pannonia_nordwest_english.htm"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9508,
+          35.0611
+        ]
+      },
+      "properties": {
+        "id": "cult_gortyn_praetorium_temple",
+        "name": "Gortyn",
+        "category": "divus_temple",
+        "first_worshipped": "the deified emperors",
+        "one_line": "A temple to the deified emperors stood inside the governor's own palace complex at Gortyn, the seat of Roman power over Crete and Cyrenaica together. An inscribed doorjamb is what nails the dedication down -- the rest of the Praetorium's marble floors and courtyards survive around it.",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Gortyn, Crete, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://crete.classics.ox.ac.uk/U3S2/U3S2L2.html",
+          "https://www.geotour.gr/listing/the-praetorium-of-gortyna/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.8767,
+          37.9058
+        ]
+      },
+      "properties": {
+        "id": "cult_corinth_achaean_koinon",
+        "name": "Corinth",
+        "category": "provincial_cult_center",
+        "first_worshipped": "Roma and Augustus, then the imperial family",
+        "one_line": "Corinth hosted the federal cult of the Achaean koinon -- the assembly of Greek cities that met here to honor Rome and its emperors collectively, decades before Paul preached in the same forum. Refounded by Julius Caesar as a colony after standing empty since 146 BCE, it became the natural seat for provincial loyalty in 117 CE Achaea.",
+        "province": "Achaea",
+        "modern_location": "Ancient Corinth, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.tyndalebulletin.org/article/30403-the-achaean-federal-imperial-cult-ii-the-corinthian-church.pdf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.4881,
+          43.5386
+        ]
+      },
+      "properties": {
+        "id": "cult_salona_augustus_temple",
+        "name": "Solin",
+        "category": "divus_temple",
+        "first_worshipped": "Augustus",
+        "one_line": "Dalmatia's provincial capital built a Temple of Augustus into its forum while the emperor was still alive, one of the earliest such temples anywhere in the western provinces. Most of Salona's forum still lies buried under the modern town of Solin, unexcavated.",
+        "province": "Dalmatia",
+        "modern_location": "Solin, Croatia",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.academia.edu/12064336/THE_IMPERIAL_CULT_IN_DALMATIA",
+          "https://www.timetravelrome.com/2022/05/28/guide-to-the-roman-dalmatia-top-destinations-hidden-gems/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.2866,
+          41.0128
+        ]
+      },
+      "properties": {
+        "id": "cult_philippi_imperial_temple",
+        "name": "Philippi",
+        "category": "divus_temple",
+        "first_worshipped": "Julius Caesar, Augustus, and Livia",
+        "one_line": "Veterans of Philippi's founding battle got their land grants from Augustus, and the colony paid him back with a temple facing the forum's curia, holding statues of Caesar, Augustus and Livia together. Paul preached in this same forum a century after it was built.",
+        "province": "Macedonia",
+        "modern_location": "Filippoi, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://biblearchaeology.org/research/new-testament-era/2343-gods-gold-and-the-glory-of-philippi",
+          "https://www.bibleodyssey.org/articles/philippi/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.7328,
+          39.0264
+        ]
+      },
+      "properties": {
+        "id": "cult_nicopolis_aedes_augustalium",
+        "name": "Nicopolis",
+        "category": "augusteum",
+        "first_worshipped": "Augustus, alongside Apollo Actius",
+        "one_line": "Augustus built his victory monument on the hill where he had camped before Actium, ringed with captured warship rams and dedicated to Apollo -- then, after his death, a dedicated wing for his own cult, the Aedes Augustalium, was added onto it. The whole complex looks out over the strait where the battle that made him sole ruler was fought.",
+        "province": "Epirus",
+        "modern_location": "Nikopolis, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://actianicopolisarchaeopark.gr/en/nikopolis/the-victory-monument-of-actium/",
+          "https://www.ancient-history-sites.com/sites/augustus-monument-nicopolis/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8022,
+          39.8508
+        ]
+      },
+      "properties": {
+        "id": "cult_segobriga_forum",
+        "name": "Segobriga",
+        "category": "augusteum",
+        "first_worshipped": "Augustus and the imperial family",
+        "one_line": "A small inland town in the Meseta built its whole forum around 15 BCE as an imperial-cult showcase, and kept it running: inscriptions name at least ten priests who served the cult here over the following century. The forum's dynastic statue cycle put the emperor's family alongside the town's own leading citizens.",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Saelices, Spain",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.segobriga.org/en/ciudad-romana/",
+          "https://www.academia.edu/18728716/J_M_Noguera_Celdr%C3%A1n_Imperial_cult_and_image_in_Hispania_the_paradigmatic_case_of_Segobriga"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5359,
+          40.9264
+        ]
+      },
+      "properties": {
+        "id": "cult_nola_divus_augustus",
+        "name": "Nola",
+        "category": "divus_temple",
+        "first_worshipped": "the deified Augustus",
+        "one_line": "Augustus died in the house his father had died in, at Nola, on 19 August 14 CE -- and the Senate voted a temple for the very spot. Tiberius and Livia (ancient sources disagree which) finished it by 26 CE, making Nola one of the first places anywhere to house a cult of the newly deified first emperor.",
+        "province": "Campania",
+        "modern_location": "Nola, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Divus_Augustus,_Nola"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
