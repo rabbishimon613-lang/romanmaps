@@ -837,7 +837,15 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[13-P2-8]` **`og-images`** `illustrate` — Generated per-place OG images;
       `summary_large_image`.
 - [ ] `[05-P2-6]` **`i18n`** `polish` — `strings.ts` scaffold; English + Italian.
-- [ ] `[04-P2-9]` **`manifest`** `polish` — Web manifest + maskable icon.
+- [x] `[04-P2-9]` **`manifest`** `polish` — Done 2026-08-21 by cloud shift 41. `app/manifest.ts`
+      + `app/icon.tsx`/`apple-icon.tsx` (Next.js file convention, 32px/180px) + two route
+      handlers `app/icon-192.png`, `app/icon-512.png` for the manifest's PWA sizes, each with
+      both `any` and `maskable` purpose entries. All five generated via `next/og`'s
+      `ImageResponse` from one shared parchment-medallion mark (`app/appIcon.tsx`, `#f4ead5`
+      matching `Map.tsx`'s own light-mode land color, not the blue chrome tokens) with the ring
+      kept to 74% of canvas so OS icon masks never clip it. `npm run build` clean, all routes
+      prerender static; fetched `/icon` and `/icon-512.png` from a local prod server and visually
+      confirmed both render correctly.
 - [x] `[14-P2-8]` **`hub-pages`** `add` — Done 2026-08-17 by cloud shift 27. Five explainer essays
       at `/hub/[slug]` (`app/hubs.ts` + `app/hub/[slug]/page.tsx`, mirroring `/province/[slug]`'s
       split between a hand-written registry and a page that aggregates real data around it): The

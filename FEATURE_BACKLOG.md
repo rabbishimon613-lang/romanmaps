@@ -199,6 +199,10 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
 - [ ] **Via Cottia was already complete (6/6 stations) when this shift checked it** — Shift 39's own handoff suggested it as the next pick, but it turned out to be done already (presumably by an untagged commit between Shift 39's research and this shift's start, or Shift 39 simply hadn't re-checked it against the live file). Worth a standing habit: verify a handoff's "still open" claim against the actual data file before spending research budget on it, not just trusting the note.
 ## Shipped (moved from above; newest on top)
 
+- 2026-08-21 — Shift 41: Web app manifest + maskable icon (board `[04-P2-9]`) — `app/manifest.ts`,
+  favicon/apple-touch-icon via Next's `icon.tsx`/`apple-icon.tsx` convention, 192/512 maskable PWA
+  icons via two `next/og` route handlers, one shared parchment-medallion mark.
+
 - 2026-08-16 — Shift 23: Guided tours (`[10-P0-1]`) — format, player, and 3 starter tours (Via
   Appia, A Day in Ostia, What Was New in 117), built entirely from data already on the map. Also:
   camera memory (`[01-P0-2]`, a returning visitor lands where they left off), Herculaneum curated
