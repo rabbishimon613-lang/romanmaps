@@ -27,6 +27,11 @@ import { volubilisEntry } from "./volubilisDescriptions";
 import { sabrathaEntry } from "./sabrathaDescriptions";
 import { baalbekEntry } from "./baalbekDescriptions";
 import { luniEntry } from "./luniDescriptions";
+import { italicaEntry } from "./italicaDescriptions";
+import { paestumEntry } from "./paestumDescriptions";
+import { portusEntry } from "./portusDescriptions";
+import { cumaeEntry } from "./cumaeDescriptions";
+import { baiaeEntry } from "./baiaeDescriptions";
 import { SITE_META, SITES } from "./sites";
 
 // Palette — light + dark variants. Both palettes are calibrated so that the sea/land/roads/labels
@@ -974,7 +979,17 @@ export default function Map() {
                                             ? baalbekEntry(rawName)
                                             : site === "luni"
                                               ? luniEntry(rawName)
-                                              : undefined;
+                                              : site === "italica"
+                                                ? italicaEntry(rawName)
+                                                : site === "paestum"
+                                                  ? paestumEntry(rawName)
+                                                  : site === "portus"
+                                                    ? portusEntry(rawName)
+                                                    : site === "cumae"
+                                                      ? cumaeEntry(rawName)
+                                                      : site === "baiae"
+                                                        ? baiaeEntry(rawName)
+                                                        : undefined;
           selectPoi(
             {
               id: `${site}-${p.osm_id}`,

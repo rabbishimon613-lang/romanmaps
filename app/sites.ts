@@ -115,7 +115,7 @@ export const SITES: SiteInfo[] = [
     today: "A living Spanish city of around 60,000, capital of Extremadura; its extensive Roman ruins, including the theatre, amphitheatre, and aqueduct, are woven through the modern town." },
   { slug: "italica",     display: "Italica",        province: "Baetica",        modernCountry: "Spain",       center: [-6.0450, 37.4420], zoom: 16.5,
     founded: "206 BCE by Scipio",
-    blurb: "Home town of Trajan and Hadrian. Trajan's expansions doubled the city just before our snapshot.",
+    blurb: "Home town of Trajan and Hadrian. In 117 CE it was still the old veteran colony — Hadrian's new quarter, which would double the city, was still to come.",
     today: "An uninhabited archaeological park near Santiponce, Spain, just outside Seville; birthplace of Trajan and Hadrian, with its older quarter still lying under the modern village." },
 
   // ── Italia batch ────────────────────────────────────────────────────────────
