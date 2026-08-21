@@ -483,6 +483,25 @@ to prevent. Building locally to *test* your own work is expected and fine.
       all standing and in daily use by 117; only the Antonine amphitheatre, the late-antique
       Christian basilica and a 3rd/4th-century domus mosaic floor postdate the snapshot. 23 sites
       left for the standing task.*
+      *Italica, Paestum, Portus, Cumae and Baiae done 2026-08-21 by cloud shift 43 (five sites in
+      one batch, four parallel research agents): 8/17/6/6/6 entries respectively —
+      `app/italicaDescriptions.ts`, `app/paestumDescriptions.ts`, `app/portusDescriptions.ts`,
+      `app/cumaeDescriptions.ts`, `app/baiaeDescriptions.ts`. Italica (Trajan's birthplace) is
+      almost entirely Hadrian's post-117 nova urbs — 7 of 8 buildings `extant_117ce:false`; caught
+      and fixed a real error in `sites.ts`'s own blurb, which credited the expansion to Trajan
+      "just before" 117 rather than Hadrian, after. Paestum is the fullest single-site haul this
+      ticket has landed (17 buildings): three Greek Doric temples already five-six centuries old
+      by 117, plus a complete Roman civic core, all standing — only the Lucanian-era
+      Ekklesiasterion was already buried under later construction. Portus caught its freshest
+      possible moment, Trajan's hexagonal basin four years old at the snapshot; one OSM tag
+      ("Tempio di Portuno") dropped as a likely misapplied name — every source places that temple
+      in Rome's Forum Boarium, not at Portus. Baiae's three domed "temples" (Diana/Mercury/Venus)
+      are a documented misnomer for an imperial bath complex's halls, not shrines — only Mercury's
+      dome predates 117. One OSM tag at Baiae ("Villa Il Soffione") dropped for the same
+      real-data-or-don't-include-it reason — every source is a modern wedding venue with no
+      archaeological attestation. All 43 keys verified with the project's own longest-key-first
+      substring matcher against every real OSM name in each site's building file. 18 sites left
+      for the standing task — `npm run metrics -- --write` now shows 22/40 (55.0%).*
 - [x] `[10-P0-3]` **`flagship-depth`** `deepen` — Bring POIs whose `notes` runs under 60 words up
       to real panel depth in that same field, worst-first. This is the **panel tier of
       `[10-P0-2]`** applied to the places that need it most; the tombstone/label tiers still need

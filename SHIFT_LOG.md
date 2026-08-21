@@ -7,6 +7,184 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 43 — 2026-08-21 (this shift's own prompt claimed "Shift 4 of four")
+
+Same stale-numbering mismatch every shift since #13 has flagged — the scheduled prompt said
+"Shift 4 of four," but `SHIFT_LOG` was 42 real shifts deep at session start, so this entry
+continues as Shift 43. Session started `HEAD` detached, matching `origin/main` exactly (`9dc9cd8`,
+Shift 42's own last commit) while local `main` was 50 commits behind at `709a480` (Shift 28) —
+same "stale local ref, not data loss" symptom nearly every shift since #9 has independently
+rediscovered; `git checkout main && git reset --hard origin/main` put the branch on the real tip
+cleanly, verified as safe first since the working tree was already clean and identical to
+`origin/main`. Fresh container needed `npm install`; reverted the resulting `package-lock.json`
+churn before committing anything, per the standing habit. Read `SHIFT_BRIEF.md` and `BOARD.md` in
+full, plus Shift 42's own handoff, before picking work. Confirmed this session's own network
+status directly: `curl` to `commons.wikimedia.org`/`overpass-api.de`/`en.wikipedia.org`/
+`pleiades.stoa.org` all return `CONNECT tunnel failed, response 403`, and `WebFetch` to
+`en.wikipedia.org` returns a hard `EGRESS_BLOCKED` — matching every recent shift's finding.
+`WebSearch` remained the only working research channel, used via four parallel background
+research agents across the shift.
+
+### Board check
+
+Same unclaimed P0 set every recent shift has found and declined for the same reason — `[12-P0-1]`
+merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild (still missing its spec), `[02-P0-1]`
+terrain, `[02-P0-4]` self-host-glyphs — all large, multi-file refactors an unsupervised session
+pushing straight to production shouldn't attempt mid-refactor with nobody watching. `[06-P0-2]`
+curate-buildings is the board's own standing `deepen` task with a proven, working pipeline, so
+Track A continued it rather than re-scoping from scratch — Shift 42's handoff didn't name specific
+next sites this time, so this shift picked by named-OSM-building count itself (checked every
+remaining `sites.ts` slug's building file first): Xanten and Aquincum both turned out to be almost
+entirely modern-city OSM clutter (grocery-store chains, school buildings, a Hungarian biotech
+office) with only one or two genuinely Roman-named tags each, too thin to be worth researching:
+skipped, noted here so a future shift doesn't re-check them expecting a normal-sized batch. Five
+other sites (Italica, Paestum, Portus, Cumae, Baiae) had real, substantial Roman-named building
+counts and became this shift's Track A batch instead. Track B came from `FEATURE_BACKLOG.md`'s own
+P1 list (`search-bar-becomes-header`) rather than the board, per the brief's standard Track B
+mechanism — a self-contained desktop UI merge with no data/network dependency, good complement to
+a network-constrained Track A. By the board's own ratio count this shift ran 2 `deepen`
+(curate-buildings, five sites in one batch) + 1 `polish` (the header merge) — short the `add` slot
+Shift 42 already covered with Britain roads two shifts ago; no unclaimed board `add` ticket existed
+to fill it, same finding as many shifts running now.
+
+### Track A — five more curate-buildings sites (Italica, Paestum, Portus, Cumae, Baiae)
+
+Board `[06-P0-2]` — 18/40 → 23/40, closing to 22/40 by `npm run metrics`'s own count (curate
+count differs slightly from the raw file-existence count above because Xanten/Aquincum were
+checked-and-skipped, not researched). Four parallel research agents (Italica solo; Paestum solo;
+Portus solo; Cumae+Baiae combined since both were small) ran against real sources — the Junta de
+Andalucía's own Conjunto Arqueológico de Itálica site, the IAPH digital repository, the ROMULA/UPO
+archaeology journal, the Parco Archeologico di Paestum e Velia's own site, vici.org, the Campania
+region's official archaeology portal, the Portus Project/University of Southampton's MOOC
+materials, ostia-antica.org's topographical dictionary, and the Parco Archeologico Campi Flegrei's
+own site for Baiae — cross-confirmed across 2+ independent search results per fact, the same
+constraint and method every recent shift's Track A work has documented.
+
+**Italica** (8 buildings) turned into the sharpest 117 CE snapshot case this ticket has hit in
+either direction: 7 of 8 researched buildings turned out `extant_117ce:false`, because nearly the
+entire visible archaeological park — every mosaic-floored domus, the Exedra and Neptune-mosaic
+guild buildings, even the cistern feeding the new quarter — belongs to Hadrian's post-117 nova
+urbs expansion, not Trajan's. Only the Lesser Baths, built under Trajan in the old quarter near
+the forum, was already standing. This surfaced a real, sourced error in `app/sites.ts`'s own
+Italica blurb, which credited "Trajan's expansions" with doubling the city "just before our
+snapshot" — backwards on both counts, since it was Hadrian, and it happened after 117, not before.
+Corrected in the same commit. The famous Italica amphitheatre (one of the largest in the Roman
+world) and the Traianeum (Hadrian's temple to the newly deified Trajan) aren't separately tagged
+as clickable OSM buildings, so they're noted in the file's header comment rather than invented as
+records — the research agent found solid "Hadrianic, 117-138 CE" dating for the amphitheatre but
+no source narrow enough to say whether it was already under construction at the exact snapshot
+date, so it stays undated rather than guessed.
+
+**Paestum** (17 buildings) is the single fullest haul this standing ticket has landed at one site.
+Three Greek Doric temples — Hera I ("the Basilica," oldest, ~550 BCE), Hera II ("Temple of
+Neptune," ~450 BCE) and Athena ("Temple of Ceres," ~500 BCE), both later misnomers corrected in
+the prose — were already five to six centuries old and still the dominant skyline by 117 CE,
+alongside a complete Roman civic core (forum, comitium, basilica, macellum, amphitheatre, forum
+shops) all comfortably pre-dating the snapshot by one to four centuries. Only the Lucanian-era
+Ekklesiasterion, a circular rock-cut assembly hall the Romans deliberately buried under a new
+sanctuary once their own comitium took over its civic role in 273 BCE, was already invisible above
+ground by 117. Two genuine source disagreements surfaced rather than papered over: one source
+calls the temple encroaching on the comitium "Mater Matuta" against the more common "Mens Bona" —
+this file follows Mens Bona, matching both the OSM tag and the park's own restoration-page usage;
+and "Sanctuary with a pool" (intra-urban, on the forum, Venus Verticordia, resting on 73 stone
+pilasters per vici.org) is a genuinely distinct site from "Sanctuary of Santa Venera"
+(extra-urban, south of the walls, an Aphrodite Urania/Venus Iovia pool running continuously since
+~600 BCE) despite some secondary sources blurring the two together — kept as separate researched
+entries since they're separate OSM-tagged buildings.
+
+**Portus** (6 buildings) caught imperial Rome's harbor at its single freshest possible moment —
+Trajan's hexagonal basin, engineered from 103 CE, had opened just four years before his death.
+One OSM-tagged building, "Tempio di Portuno," was dropped rather than guessed at: every source for
+that temple places it in central Rome beside the Forum Boarium and the old Portus Tiberinus river
+harbor, roughly 30 km upriver — a real, well-attested 117 CE monument, just not one that stood at
+this site, and no source describes a second, distinct Portunus temple actually built at Portus
+itself. It falls through to the generic archaeological description rather than being written up
+as if it belonged here — a research-quality flag worth relaying to whoever next touches this OSM
+node's coordinates. Both Christian-era basilicas on Isola Sacra (Basilica Portuense, mid-4th c.;
+Basilica di Sant'Ippolito, late 4th/early 5th c.) ship `extant_117ce:false` with the actual
+Trajanic-era harbor-side buildings on the same ground described instead.
+
+**Cumae** (6 buildings) and **Baiae** (6 buildings) both landed as clean, mostly-pre-117 batches.
+Cumae's amphitheatre (one of the oldest stone arenas in the Roman world, cut ~100 BCE), Capitolium,
+both acropolis temples, forum baths and a roadside tomb were all standing for one to several
+centuries by 117. Baiae's three famous domed "temples" — Diana, Mercury, Venus — are a
+well-documented 18th/19th-century antiquarian misnomer for free-standing halls of the resort's
+monumental bath complex, not shrines at all; only the Mercury hall's dome (the oldest large-scale
+concrete dome in the Roman world, predating the Pantheon's by roughly a century and a half)
+predates 117, while Diana (Severan, c. 230) and Venus (Hadrianic, begun after 117) postdate it.
+One OSM tag at Baiae, "Villa Il Soffione," was dropped for the same real-data-or-don't-include-it
+reason as Portus's Portunus temple — every search result is a modern wedding-venue/restaurant of
+that name, and its own marketing copy's unsourced claim to sit on "an ancient Roman structure"
+found no independent archaeological confirmation anywhere.
+
+All 43 keys across all five files verified against every real OSM name in each site's building
+file with the project's own longest-key-first substring-matcher harness (a small Python script
+mirroring the app's actual matching logic in `app/*Descriptions.ts`) — no silent typos, and every
+generic/modern OSM tag (grocery-store chains at the skipped Xanten/Aquincum checks, church names,
+museum names, "Volksbank") correctly falls through to the fallback description. `npm run metrics
+-- --write`: sites with curated building descriptions 17/40 (42.5%) → 22/40 (55.0%).
+
+### Track B — search-bar-becomes-header on place selection (desktop)
+
+`FEATURE_BACKLOG.md`'s own P1 item, open since Shift 4: real Google Maps collapses the search box
+into a back-arrow + place-name header the instant a place is selected, instead of leaving two
+disconnected floating cards. `app/Chrome.tsx`'s search card now branches on a `headerMode` flag
+(`!isMobile && a place is selected`) — swaps the hamburger+input+search-icon row for a back arrow
+(calling the existing `clearPoi()`) plus the selected place's name, ellipsis-truncated, inside the
+exact same card box so the transform reads as one continuous element rather than a jarring swap.
+The search-results dropdown and hamburger menu now force-close the instant `headerMode` turns on,
+so a place selected while either happened to be open doesn't leave it floating under the new
+header with nothing left to anchor it to. `app/PlaceDetails.tsx`'s own floating close-X (positioned
+over the hero image) is now mobile-only — on desktop the header's back arrow is the single close
+affordance, so the redundant second X button is gone. Deliberately scoped to desktop only, matching
+the backlog item's own original framing: mobile's bottom sheet (drag handle + its own X) is already
+the correct mobile interaction pattern, not something this merge needed to touch.
+
+Verified with Playwright against the dev server (killed and `.next` cleared before the final build,
+per the standing `next dev`/`next build` collision note): desktop 1280×900 light — selecting
+"Amphitheatrum Flavium" via search hides the input entirely, shows a working back arrow, and
+clicking it restores the search box with the prior query text intact and the panel closed; mobile
+375×812 dark — confirmed no regression, the search input and the sheet's own close-X both remain
+present exactly as before, since `headerMode` never activates there. Screenshots reviewed for both.
+
+### Build, validate, verify
+
+`npm run validate` clean at every commit: 0 errors, the same 17 pre-existing warnings throughout.
+`npx tsc --noEmit` clean after both the Track A and Track B changes. `npm run build` clean on
+every pushed commit — the pre-push gate never tripped. `npm run metrics -- --write`: sites with
+curated building descriptions 17/40 (42.5%) → 22/40 (55.0%); `pois.geojson`-tracked curated-place
+count unchanged (curate-buildings descriptions live in `app/*Descriptions.ts`, not `pois.geojson`,
+same as every prior shift on this ticket).
+
+### Handoff for the next shift
+
+1. **`[06-P0-2]` curate-buildings has 18 sites left.** Xanten and Aquincum are now confirmed
+   too-thin-to-be-worth-it (checked this shift, see Board check above) — don't re-check them
+   expecting a normal batch. Remaining untouched sites by named-OSM-building count, roughly
+   ranked: capua (~10 real candidates: Amfiteatro Campano, Mitreo, Macellum, Domus Romana,
+   Castellum aquae), tivoli (~7: Anfiteatro di Bleso, Tempio della Sibilla, Tempio della Tosse,
+   Tempio di Vesta, Santuario di Ercole Vincitore — all genuinely famous), palestrina (~6: Tempio
+   di Giove, Area Sacra Foro di Preneste, Basilica Civile di Praeneste, terme romane), corinth
+   (~5: Agora, Ioulia Basilica, Notia Stoa). Rome, aquincum, xanten, vindolanda, italica (done),
+   and the six modern-city-sized sites (verona/ravenna/milan/rimini/brescia/beneventum, all
+   100+ named features, almost certainly mostly modern buildings like Xanten/Aquincum) are the
+   remaining unscoped candidates — worth a real named-building count check before claiming any
+   of them, same lesson this shift's own Xanten/Aquincum dead-end reinforces.
+2. **Portus's "Tempio di Portuno" OSM tag looks misapplied** — every source for that temple
+   places it in Rome's Forum Boarium, not at Portus. Worth a future shift checking that OSM
+   node's actual coordinates and either correcting the tag or confirming it really is meant to
+   represent the Rome monument at the wrong site.
+3. **Board fresh-check**: still no unclaimed P0/P1 `add` ticket smaller than a multi-pass
+   refactor, ten shifts running now (34-43) making the same decline call for the same reason —
+   might be worth a deliberate scoping pass by whoever next has the time to split one of the big
+   P0 tickets (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2) into a smaller, claimable slice.
+4. **`FEATURE_BACKLOG.md`'s P3/polish section still has two real open items**: "Terrain shading"
+   and "Dark mode / night-map style" — both bigger, riskier UI lifts than this shift's header
+   merge (terrain needs a hillshade data source; dark mode touches every chrome color token), not
+   attempted this shift for that reason.
+
+---
+
 ## Shift 42 — 2026-08-21 (this shift's own prompt claimed "Shift 3 of four")
 
 Same stale-numbering mismatch every shift since #13 has flagged — the scheduled prompt said
