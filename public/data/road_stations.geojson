@@ -10059,6 +10059,946 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.332,
+          51.294
+        ]
+      },
+      "properties": {
+        "id": "station_rutupiae",
+        "category": "statio",
+        "name": "Rutupiae",
+        "road": "Watling Street",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "The main Roman gateway into Britain — modern Richborough, Kent. Founded as the beachhead for the 43 CE invasion, it grew into a fortified supply port with its own monumental arch, and every legion, official and letter crossing the Channel to the province passed through here.",
+        "sources": [
+          "Antonine Itinerary (Iter II)",
+          "https://en.wikipedia.org/wiki/Richborough_Roman_Fort"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.0783,
+          51.278
+        ]
+      },
+      "properties": {
+        "id": "station_durovernum_cantiacorum",
+        "category": "mansio",
+        "name": "Durovernum Cantiacorum",
+        "road": "Watling Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Canterbury, Kent — a civitas capital of the Cantiaci on the direct road between Londinium and the Channel port at Rutupiae. Excavations have found a Roman theatre and public baths beneath the later medieval city.",
+        "sources": [
+          "Antonine Itinerary (Iter II/III)",
+          "https://en.wikipedia.org/wiki/Durovernum_Cantiacorum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.87,
+          51.31
+        ]
+      },
+      "properties": {
+        "id": "station_durolevum",
+        "category": "mutatio",
+        "name": "Durolevum",
+        "road": "Watling Street",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "A staging post the Antonine Itinerary places between Durobrivae and Durovernum, but archaeologists still disagree on its exact site — candidates cluster around Ospringe and Syndale near modern Faversham.",
+        "sources": [
+          "Antonine Itinerary (Iter II/III)",
+          "https://en.wikipedia.org/wiki/Durolevum"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.5018,
+          51.3898
+        ]
+      },
+      "properties": {
+        "id": "station_durobrivae_rochester",
+        "category": "mansio",
+        "name": "Durobrivae",
+        "road": "Watling Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Rochester, Kent, where Watling Street crossed the tidal River Medway. A bridge here carried the road since at least the 1st century CE, and the crossing gave the town its name — durobrivae means roughly 'fort by the bridges.'",
+        "sources": [
+          "Antonine Itinerary (Iter II/III/IV)",
+          "https://heritage.kent.gov.uk/Monument/MKE2318"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3,
+          51.6333
+        ]
+      },
+      "properties": {
+        "id": "station_sulloniacis",
+        "category": "mansio",
+        "name": "Sulloniacis",
+        "road": "Watling Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A staging post at Brockley Hill, Stanmore, on the ridge northwest of Londinium — excavation has turned up large-scale pottery kilns here supplying the capital with tableware.",
+        "sources": [
+          "Antonine Itinerary (Iter II)",
+          "https://en.wikipedia.org/wiki/Sulloniacis"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3623,
+          51.7461
+        ]
+      },
+      "properties": {
+        "id": "station_verulamium",
+        "category": "mansio",
+        "name": "Verulamium",
+        "road": "Watling Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern St Albans, one of only three Romano-British towns granted the high status of municipium. It was sacked and burned during Boudica's revolt in 60/61 CE, then rebuilt with a forum, basilica and theatre — thriving again well before Trajan's reign.",
+        "sources": [
+          "Antonine Itinerary (Iter II)",
+          "https://pleiades.stoa.org/places/361151408",
+          "https://en.wikipedia.org/wiki/Verulamium"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.521,
+          51.886
+        ]
+      },
+      "properties": {
+        "id": "station_durocobrivis",
+        "category": "mansio",
+        "name": "Durocobrivis",
+        "road": "Watling Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A mansio at modern Dunstable, Bedfordshire, where Watling Street crosses the prehistoric Icknield Way — a road junction of real strategic value, not just a rest stop.",
+        "sources": [
+          "Antonine Itinerary (Iter II)",
+          "https://roman-britain.co.uk/places/durocobrivis"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.7167,
+          52.003
+        ]
+      },
+      "properties": {
+        "id": "station_magiovinium",
+        "category": "mansio",
+        "name": "Magiovinium",
+        "road": "Watling Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A walled way-station near modern Fenny Stratford, Milton Keynes, where excavation has recovered a defended enclosure alongside the road plus a scatter of Roman-period burials in the surrounding fields.",
+        "sources": [
+          "Antonine Itinerary (Iter II)",
+          "https://ancientmonuments.uk/105160"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.989,
+          52.131
+        ]
+      },
+      "properties": {
+        "id": "station_lactodurum",
+        "category": "mansio",
+        "name": "Lactodurum",
+        "road": "Watling Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Towcester, Northamptonshire — a defended small town that grew up around its Watling Street mansio, with a ditched enclosure still traceable in the town's later medieval street plan.",
+        "sources": [
+          "Antonine Itinerary (Iter II)",
+          "https://her.northamptonshire.gov.uk/Monument/MNN3659"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1052,
+          52.2755
+        ]
+      },
+      "properties": {
+        "id": "station_bannaventa",
+        "category": "vicus",
+        "name": "Bannaventa",
+        "road": "Watling Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A roadside settlement at Whilton Lodge, Northamptonshire, that grew into a proper small town with its own defenses by the later Roman period — one of several Watling Street vici that outgrew their original function as a simple stopping point.",
+        "sources": [
+          "Antonine Itinerary (Iter II)",
+          "https://roman-britain.co.uk/places/bannaventa"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2127,
+          52.4092
+        ]
+      },
+      "properties": {
+        "id": "station_tripontium",
+        "category": "mansio",
+        "name": "Tripontium",
+        "road": "Watling Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A mansio at Cave's Inn, Shawell, Warwickshire, named for the three bridges that once carried the road over the River Avon and its side channels here.",
+        "sources": [
+          "Antonine Itinerary (Iter II)",
+          "https://en.wikipedia.org/wiki/Tripontium"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.3053,
+          52.4935
+        ]
+      },
+      "properties": {
+        "id": "station_venonis",
+        "category": "mansio",
+        "name": "Venonis",
+        "road": "Watling Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "The junction at High Cross, Leicestershire, where Watling Street crosses the Fosse Way — the two great cross-country roads of Roman Britain meeting at a single point, making this one of the busiest crossroads in the province.",
+        "sources": [
+          "Antonine Itinerary (Iter II)",
+          "https://en.wikipedia.org/wiki/Venonis"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.52,
+          52.5669
+        ]
+      },
+      "properties": {
+        "id": "station_manduessedum",
+        "category": "mansio",
+        "name": "Manduessedum",
+        "road": "Watling Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Mancetter, Warwickshire — a mansio and small fort site, traditionally linked by local tradition (though not firmly proven) to the general area of Boudica's last battle against Rome in 60/61 CE.",
+        "sources": [
+          "Antonine Itinerary (Iter II)",
+          "https://en.wikipedia.org/wiki/Manduessedum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8569,
+          52.6576
+        ]
+      },
+      "properties": {
+        "id": "station_letocetum",
+        "category": "mansio",
+        "name": "Letocetum",
+        "road": "Watling Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Wall, Staffordshire — one of the best-excavated mansiones in Britain, with a substantial bathhouse and guest inn still standing to window height, run for travelers and imperial couriers on the road.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Letocetum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.144,
+          52.694
+        ]
+      },
+      "properties": {
+        "id": "station_pennocrucium",
+        "category": "mansio",
+        "name": "Pennocrucium",
+        "road": "Watling Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A mansio at Water Eaton, Staffordshire, where Watling Street crossed a tributary of the River Penk — the name itself is Brittonic for roughly 'chief crossing.'",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pennocrucium"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4112,
+          52.6952
+        ]
+      },
+      "properties": {
+        "id": "station_uxacona",
+        "category": "mansio",
+        "name": "Uxacona",
+        "road": "Watling Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A roadside settlement at Redhill, Shropshire, on the final stretch of Watling Street before it reached Viroconium — one of the lesser-excavated stations on this road, known mainly from itinerary sources.",
+        "sources": [
+          "Antonine Itinerary (Iter II)",
+          "https://en.wikipedia.org/wiki/Uxacona"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.6442,
+          52.6742
+        ]
+      },
+      "properties": {
+        "id": "station_viroconium",
+        "category": "mansio",
+        "name": "Viroconium Cornoviorum",
+        "road": "Watling Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Wroxeter, Shropshire — Watling Street's northwestern terminus and, by the early 2nd century, the fourth-largest city in Roman Britain, civitas capital of the Cornovii with a monumental forum and one of the largest known Roman bathhouses in the province.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Viroconium_Cornoviorum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.534,
+          50.722
+        ]
+      },
+      "properties": {
+        "id": "station_isca_dumnoniorum",
+        "category": "mansio",
+        "name": "Isca Dumnoniorum",
+        "road": "Fosse Way",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Exeter, Devon — the Fosse Way's southwestern terminus and civitas capital of the Dumnonii, built over an earlier legionary fortress once garrisoned by Legio II Augusta.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Isca_Dumnoniorum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.684,
+          51.0017
+        ]
+      },
+      "properties": {
+        "id": "station_lindinis",
+        "category": "mansio",
+        "name": "Lindinis",
+        "road": "Fosse Way",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Ilchester, Somerset — a mansio that later grew important enough to become the seat of its own civitas, the Durotriges Lendinienses, splitting administrative duties with Dorchester.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Lindinis"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.3595,
+          51.3809
+        ]
+      },
+      "properties": {
+        "id": "station_aquae_sulis",
+        "category": "mansio",
+        "name": "Aquae Sulis",
+        "road": "Fosse Way",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Bath, Somerset, where the Fosse Way met a natural hot spring sacred to the Romano-Celtic goddess Sulis Minerva — already, by Trajan's reign, drawing pilgrims and invalids to its temple and bathing complex.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Aquae_Sulis"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9682,
+          51.7185
+        ]
+      },
+      "properties": {
+        "id": "station_corinium_dobunnorum",
+        "category": "mansio",
+        "name": "Corinium Dobunnorum",
+        "road": "Fosse Way",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Cirencester, Gloucestershire — civitas capital of the Dobunni and, by the later Roman period, the second-largest town in Britain after Londinium, sitting at the crossing of the Fosse Way and Ermin Street.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cirencester"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1413,
+          52.6349
+        ]
+      },
+      "properties": {
+        "id": "station_ratae_corieltauvorum",
+        "category": "mansio",
+        "name": "Ratae Corieltauvorum",
+        "road": "Fosse Way",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Leicester — civitas capital of the Corieltauvi, with a forum-basilica complex and public baths whose Jewry Wall still stands among the tallest surviving Roman masonry in Britain.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ratae_Corieltauvorum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.06,
+          52.82
+        ]
+      },
+      "properties": {
+        "id": "station_vernemetum",
+        "category": "vicus",
+        "name": "Vernemetum",
+        "road": "Fosse Way",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "A roadside settlement at Willoughby-on-the-Wolds, Nottinghamshire, whose Brittonic name means 'great sacred grove' — a shared node linking the Fosse Way toward the Ermine Street corridor further east.",
+        "sources": [
+          "Antonine Itinerary (Iter VIII)",
+          "https://roman-britain.co.uk/places/vernemetum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9597,
+          52.9672
+        ]
+      },
+      "properties": {
+        "id": "station_margidunum",
+        "category": "statio",
+        "name": "Margidunum",
+        "road": "Fosse Way",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A defended way-station at East Bridgford/Bingham, Nottinghamshire, with its own ditched fortification — the Fosse Way here ran close enough to hostile territory in the early conquest period to need real defenses, not just an open mansio.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Margidunum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.805,
+          53.05
+        ]
+      },
+      "properties": {
+        "id": "station_ad_pontem_britannia",
+        "category": "statio",
+        "name": "Ad Pontem",
+        "road": "Fosse Way",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A fort and way-station at East Stoke, Nottinghamshire, guarding the Fosse Way's crossing of the River Trent — its very name simply means 'at the bridge.'",
+        "sources": [
+          "https://roman-britain.co.uk/places/ad_pontem",
+          "https://historicengland.org.uk/listing/the-list/list-entry/1003491"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.7473,
+          53.1187
+        ]
+      },
+      "properties": {
+        "id": "station_crococalana",
+        "category": "mansio",
+        "name": "Crococalana",
+        "road": "Fosse Way",
+        "distance_from_previous_mp": 14,
+        "identified": true,
+        "notes": "A mansio near Brough, Nottinghamshire, the last stop on the Fosse Way before it met the Ermine Street corridor and the colonia at Lindum — a genuine road junction as well as a rest station.",
+        "sources": [
+          "https://pleiades.stoa.org/places/79407"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.0332,
+          54.9784
+        ]
+      },
+      "properties": {
+        "id": "station_corstopitum",
+        "category": "statio",
+        "name": "Corstopitum",
+        "road": "Stanegate",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Corbridge, Northumberland — the Stanegate's eastern anchor and one of the largest fort-and-supply-base sites on the northern frontier, where the Stanegate met Dere Street running up from York. Granaries built here to provision Trajan's northern garrisons still stand.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Corstopitum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.181,
+          55.005
+        ]
+      },
+      "properties": {
+        "id": "station_newbrough",
+        "category": "statio",
+        "name": "Newbrough",
+        "road": "Stanegate",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A small fortlet on the Stanegate west of Corbridge, under an acre in size — one of the modest garrison posts strung along this pre-Wall frontier road roughly every few miles.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Stanegate"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4437,
+          54.9666
+        ]
+      },
+      "properties": {
+        "id": "station_haltwhistle_burn",
+        "category": "statio",
+        "name": "Haltwhistle Burn",
+        "road": "Stanegate",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A small fortlet above the Haltwhistle Burn in Northumberland, part of the same close-set chain of minor posts along the Stanegate that would later inform the spacing of milecastles on Hadrian's Wall.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Haltwhistle_Burn"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.5244,
+          54.9849
+        ]
+      },
+      "properties": {
+        "id": "station_magnis_carvoran",
+        "category": "statio",
+        "name": "Magnis",
+        "road": "Stanegate",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "The fort at Carvoran, Northumberland, guarding the point where the Stanegate crosses the Maiden Way running north from the Pennines — a genuine road-junction garrison, not just a way-station.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Magnis_(Carvoran)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.634,
+          54.974
+        ]
+      },
+      "properties": {
+        "id": "station_nether_denton",
+        "category": "statio",
+        "name": "Nether Denton",
+        "road": "Stanegate",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A fort and attached civilian vicus at Nether Denton, Cumbria, on the Stanegate's approach to the Irthing valley — one of the string of garrisons holding this frontier road two decades before Hadrian's Wall existed.",
+        "sources": [
+          "https://pleiades.stoa.org/places/24547397"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7127,
+          54.9594
+        ]
+      },
+      "properties": {
+        "id": "station_boothby",
+        "category": "mutatio",
+        "name": "Boothby",
+        "road": "Stanegate",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A small fortlet near Brampton, Cumbria, sized for a handful of soldiers rather than a full garrison — a change-of-horses post rather than a fighting position.",
+        "sources": [
+          "https://historicengland.org.uk/listing/the-list/list-entry/1014585"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7664,
+          54.9462
+        ]
+      },
+      "properties": {
+        "id": "station_brampton_old_church",
+        "category": "statio",
+        "name": "Brampton Old Church",
+        "road": "Stanegate",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A fort controlling the Stanegate's crossing of the River Irthing near Brampton, Cumbria — command of this river crossing made it one of the more substantial posts on the road's western stretch.",
+        "sources": [
+          "https://pleiades.stoa.org/places/337405873"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9417,
+          54.8969
+        ]
+      },
+      "properties": {
+        "id": "station_luguvalium",
+        "category": "mansio",
+        "name": "Luguvalium",
+        "road": "Stanegate",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Carlisle, Cumbria — the Stanegate's western terminus and, within a few years of Trajan's death, capital of the whole northern frontier zone. A fort had stood here since the Flavian conquest of the north, decades before Hadrian's Wall was ever planned.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Luguvalium"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0806,
+          53.9617
+        ]
+      },
+      "properties": {
+        "id": "station_eboracum",
+        "category": "mansio",
+        "name": "Eboracum",
+        "road": "Ermine Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern York — headquarters fortress of Legio IX Hispana and then Legio VI Victrix, and Ermine Street's northern terminus. By 117 CE it was already the military and administrative center of the whole northern frontier.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Eboracum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5921,
+          53.7221
+        ]
+      },
+      "properties": {
+        "id": "station_petuaria",
+        "category": "statio",
+        "name": "Petuaria",
+        "road": "Ermine Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Brough-on-Humber, East Yorkshire — a civitas center for the Parisi and a Humber-crossing point, on an alternate branch of the road network linking Eboracum toward Lincoln.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Petuaria"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.356,
+          53.726
+        ]
+      },
+      "properties": {
+        "id": "station_legeolium",
+        "category": "statio",
+        "name": "Legeolium",
+        "road": "Ermine Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A fort and mansio at modern Castleford, West Yorkshire, where Ermine Street crossed the River Aire — the fort guarded the crossing while the mansio served travelers on the York-Lincoln road.",
+        "sources": [
+          "Antonine Itinerary (Iter VIII)",
+          "https://en.wikipedia.org/wiki/Lagentium"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.133,
+          53.515
+        ]
+      },
+      "properties": {
+        "id": "station_danum",
+        "category": "statio",
+        "name": "Danum",
+        "road": "Ermine Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Doncaster, South Yorkshire — a fort and mansio on Ermine Street's crossing of the River Don, part of the chain of garrisons securing the road between York and Lincoln.",
+        "sources": [
+          "Antonine Itinerary (Iter VIII)",
+          "https://roman-britain.co.uk/places/danum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.7644,
+          53.3349
+        ]
+      },
+      "properties": {
+        "id": "station_segelocum",
+        "category": "mansio",
+        "name": "Segelocum",
+        "road": "Ermine Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A mansio at Littleborough, Nottinghamshire, where Ermine Street forded the River Trent — the crossing itself, more than any settlement, is what put a station here.",
+        "sources": [
+          "https://pleiades.stoa.org/places/79677"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5381,
+          53.2339
+        ]
+      },
+      "properties": {
+        "id": "station_lindum_colonia",
+        "category": "mansio",
+        "name": "Lindum Colonia",
+        "road": "Ermine Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Lincoln — a legionary fortress converted into a colonia for army veterans, and the meeting point of Ermine Street with the Fosse Way running southwest toward Exeter. One of only four such veteran coloniae in Roman Britain.",
+        "sources": [
+          "Antonine Itinerary (Iter VIII)",
+          "https://en.wikipedia.org/wiki/Lindum_Colonia"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
