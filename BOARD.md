@@ -430,6 +430,24 @@ to prevent. Building locally to *test* your own work is expected and fine.
       against the built production bundle that clicking the Odeon of Agrippa surfaces the curated
       text with "Built 15 BCE" and no "Not standing" badge. 27 sites still open for the standing
       task.*
+      *Leptis Magna done 2026-08-21 by cloud shift 41: 15 entries in `app/leptisMagnaDescriptions.ts`,
+      the eleventh site and the sharpest snapshot case yet — the Severan building boom (Forum,
+      Basilica, Arch of Septimius Severus, Hunting Baths, harborside Temple of Jupiter Dolichenus,
+      even Hadrian's own Baths) postdates Trajan's death by 80-90 years, so 9 of 15 entries ship
+      `extant_117ce:false`. What genuinely stood: the Old Forum's Augustan-era temples, its Curia
+      and Old Basilica, and the Arch of Trajan itself (c. 110 CE). Also fixed a real data error:
+      OSM tagged that arch "Arch of Marcus Aurelius" — no dated Marcus Aurelius arch is attested at
+      Leptis Magna, that name belongs to a different arch at Tripoli/ancient Oea, 120km away.
+      Corrected the OSM feature's `name` field to "Arch of Trajan" in the same commit. Verified with
+      a Python harness replicating the app's own substring matcher against every real OSM name in
+      the site's building file. 29 sites still open for the standing task.*
+      *Timgad done 2026-08-21 by cloud shift 41: 6 entries in `app/timgadDescriptions.ts`, the
+      twelfth site. Trajan founded the colony in 100 CE as a veteran-settlement grid town; by 117
+      it was only 17 years old, and every one of the six OSM-named buildings (Arch of Trajan, Great/
+      Small North Baths, East Baths, Great South Baths, the Library of Rogatianus) postdates the
+      snapshot — all six ship `extant_117ce:false`. The city's real 117 CE anchor, its freshly
+      finished forum and curia, isn't a separately tagged OSM building, so it lives in the file's
+      header note rather than an invented record. 28 sites still open for the standing task.*
 - [x] `[10-P0-3]` **`flagship-depth`** `deepen` — Bring POIs whose `notes` runs under 60 words up
       to real panel depth in that same field, worst-first. This is the **panel tier of
       `[10-P0-2]`** applied to the places that need it most; the tombstone/label tiers still need
