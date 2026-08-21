@@ -29,7 +29,7 @@ merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terra
 straight to production shouldn't attempt mid-refactor with nobody watching. Followed Shift 39's
 handoff and the axis queue instead.
 
-### Track A — three axes, 25 net new curated features
+### Track A — three axes, 37 net new curated features (two roads' worth on axis 2)
 
 **Axis 2 (road stations) — Via Claudia Augusta, the fifteenth road.** `road_stations.geojson`
 360 → 372 (+12). Shift 39's handoff suggested Via Cottia; checked first and found it already
@@ -49,6 +49,21 @@ leg mileage claimed except the one sourced Tridentum-Endidae figure; every other
 line, but this is a genuine Alpine cursus-publicus crossing with fewer waypoints than a flat
 consular road — same shape as Via Cottia's 6, and no fabricated stations were added to pad the
 count. No id collisions with any of the other 15 roads already on the map.
+
+**A second road, same axis, picking up this shift's own handoff note** — Via Tiburtina + Via
+Valeria, 10 more stations, Rome to the Adriatic at Pescara. `road_stations.geojson` 372 → 382
+(+10 more, 22 total this shift). Ponte Mammolo and the Aquae Albulae sulfur springs on the
+Tiburtina stretch (Tibur/Tivoli itself skipped, already a city); Vicovaro, Carseoli, Alba Fucens
+(where Syphax of Numidia and Perseus of Macedon both died as Roman prisoners) and Marruvium past
+the Fucine Lake on the Valeria stretch; Corfinium (capital of the Italian rebels in the Social
+War), Interpromium, Teate/Chieti and the Aternum/Pescara terminus down the Aternus valley. Ran
+this shift's own geodesic sanity check before merging (the same haversine-distance-can't-exceed-
+claimed-mileage check prior shifts established) and caught a real problem this time, not just
+noise: the Antonine Itinerary's Corfinium-Interpromium (12 mp) and the derived
+Interpromium-Teate (12 mp) both come out *shorter* than the straight-line distance between the
+identified sites — physically impossible for a road, since a road can only ever be longer than
+the straight line, never shorter. Both null rather than forced. The Teate-Aternum (9 mp) and
+Interpromium-Aternum (21 mp) figures from the same source both check out and are kept.
 
 **Axis 12 (imperial cult) — 11 more cult centers, doubling down on the room Shift 39 flagged.**
 `imperial_cult.geojson` 33 → 44 (+11). All three of Shift 39's named leads closed: Barcino's
@@ -87,12 +102,13 @@ search-result title.
 ### Build, validate, verify
 
 `npm run validate` clean at every commit: 0 errors, the same 17 pre-existing warnings throughout
-(none of this shift's additions triggered a new one). `npm run build` clean. `npm run metrics --
---write`: `pois.geojson` itself untouched this shift (all three axes are separate thematic files),
-so the headline POI/description/image numbers hold at 481/100.0%/53.4%; cross-file collisions
-133 → 142 (informational, tracked under `[12-P0-1]`, expected from new points landing near
-existing gazetteer entries — e.g. the new Via Claudia stations sitting close to Verona/Bolzano/
-Merano/Augsburg gazetteer rows).
+(none of this shift's additions triggered a new one). `npm run build` clean on every pushed
+commit. `npm run metrics -- --write`: `pois.geojson` itself untouched this shift (all three axes
+are separate thematic files), so the headline POI/description/image numbers hold at
+481/100.0%/53.4%; cross-file collisions 133 → 142 (informational, tracked under `[12-P0-1]`,
+expected from new points landing near existing gazetteer entries — e.g. the new Via Claudia
+stations sitting close to Verona/Bolzano/Merano/Augsburg gazetteer rows; the second road's stops
+are rural enough that they added no further collisions).
 
 ### Handoff for the next shift
 
@@ -101,12 +117,14 @@ Merano/Augsburg gazetteer rows).
    dated temple surfaced this pass), Viminacium's attested-but-unlocated imperial priesthood
    (Moesia Superior), and a fresh pass at Aquileia's forum with library-grade sources instead of
    WebSearch are all real leads that just didn't close this shift.
-2. **A sixteenth road** — Via Claudia Augusta closes the brief's named queue (Appia, Egnatia,
-   Domitia, Augusta, Traiana Nova, Agrippa, Flaminia, Aemilia, Postumia, Cassia+Clodia, Aurelia+
-   Salaria, Traiana, Militaris, Cottia all done). Next candidates worth a look: Via Popilia
-   (Capua south through Bruttium to the Sicily crossing), Via Nomentana/Tiburtina/Praenestina/
-   Labicana/Latina as a "several short Rome-radiating roads in one shift" batch (the brief's
-   alternate "60 miscellaneous stations" minimum), or filling Via Militaris's still-weak
+2. **A seventeenth road.** Via Claudia Augusta and Via Tiburtina+Valeria both close out this
+   shift, so the brief's named queue plus the short Rome-radiating batch are both now done
+   (Appia, Egnatia, Domitia, Augusta, Traiana Nova, Agrippa, Flaminia, Aemilia, Postumia,
+   Cassia+Clodia, Aurelia+Salaria, Traiana, Militaris, Cottia, Claudia Augusta, Tiburtina+Valeria
+   — 16 roads live). Next candidates: Via Popilia (Capua south through Bruttium to the Sicily
+   crossing), Via Praenestina+Via Labicana+Via Nomentana+Via Latina as one more Rome-radiating
+   batch (this shift found general route info via WebSearch but not station-level mileage in the
+   time available — worth a dedicated pass), or filling Via Militaris's still-weak
    Hadrianopolis-Bergule segment flagged by Shift 39.
 3. **Axis 15's 10 image-null imperial-cult records and Tres Arae/Banias's medium-confidence
    status** are both real top-up targets for a shift with a fresh WebSearch budget — see the
