@@ -8576,6 +8576,293 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4144,
+          45.5486
+        ]
+      },
+      "properties": {
+        "id": "station_altinum",
+        "category": "vicus",
+        "name": "Altinum",
+        "road": "Via Claudia Augusta",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "The eastern trailhead on the Adriatic lagoon, a wealthy trading port before Rome ever laid a road north. Two branches of the Via Claudia Augusta left the Po valley for the Alps -- this the eastern one, the other starting upriver at Hostilia -- and met again at Tridentum.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Via_Claudia_Augusta",
+          "https://www.viaclaudia.org/en/storys/the-history-of-the-via-claudia-augusta"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1339,
+          45.0664
+        ]
+      },
+      "properties": {
+        "id": "station_hostilia",
+        "category": "vicus",
+        "name": "Hostilia",
+        "road": "Via Claudia Augusta",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "The western trailhead on the Po, where boats from Ravenna and Mantua unloaded onto the new Alpine road. Drusus broke ground here in 15 BCE; his stepson Claudius finished the job and put his own name on it in 46-47 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Via_Claudia_Augusta",
+          "https://www.viaclaudia.org/en/storys/the-history-of-the-via-claudia-augusta"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.8102,
+          45.6294
+        ]
+      },
+      "properties": {
+        "id": "station_mansio_servasa",
+        "category": "mansio",
+        "name": "Mansio Servasa",
+        "road": "Via Claudia Augusta",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A rest stop dug out of the Adige gorge near Brentino, north of Verona, on the likely line of the road north to Tridentum. Excavators found a forge with its furnace still in place, guest rooms, and a marble threshold worn by centuries of travelers' feet.",
+        "sources": [
+          "https://www.outdooractive.com/en/poi/verona/mansio-servasa/808280647/",
+          "https://valdadige360.com/en/activities/mansio-servasa/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1211,
+          46.0679
+        ]
+      },
+      "properties": {
+        "id": "station_tridentum",
+        "category": "vicus",
+        "name": "Trento",
+        "road": "Via Claudia Augusta",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Both Alpine branches of the road met here, at the point where the Adige valley narrows and turns for the mountains. A Roman municipium since Claudius's day, its street grid still underlies the modern city center.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Via_Claudia_Augusta",
+          "https://www.viaclaudia.org/fileadmin/walk/salesguide/index_eng.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3548,
+          46.4983
+        ]
+      },
+      "properties": {
+        "id": "station_pons_drusi",
+        "category": "statio",
+        "name": "Pons Drusi",
+        "road": "Via Claudia Augusta",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A bridge over the Isarco/Talvera, named for Drusus, that grew into the town of Bolzano. In 117 CE it was still a road-post at a river crossing, not yet the market town it would become.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Via_Claudia_Augusta",
+          "https://kids.kiddle.co/Via_Claudia_Augusta"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2664,
+          46.3378
+        ]
+      },
+      "properties": {
+        "id": "station_endidae",
+        "category": "mansio",
+        "name": "Endidae",
+        "road": "Via Claudia Augusta",
+        "distance_from_previous_mp": 23,
+        "identified": true,
+        "notes": "A staging post on the Adige at Egna, its foundations rediscovered and restored in recent years. The Antonine Itinerary places it 23 Roman miles north of Tridentum -- exactly the modern road distance to Egna, a rare case where the ancient figure and the ground still agree.",
+        "sources": [
+          "Itin. Ant.",
+          "https://wanderlog.com/place/details/12776659/mansio-endidae"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1594,
+          46.6708
+        ]
+      },
+      "properties": {
+        "id": "station_maia",
+        "category": "mansio",
+        "name": "Maia",
+        "road": "Via Claudia Augusta",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "The statio at Merano, where the road left the Adige for the Passer valley on its climb toward the Reschen Pass. The name survives almost unchanged in the district of Maia Bassa/Untermais.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Via_Claudia_Augusta",
+          "https://www.sudtirol.com/en/val-venosta/via-claudia-augusta.htm"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9895,
+          46.6672
+        ]
+      },
+      "properties": {
+        "id": "station_rabland_milestone",
+        "category": "milestone",
+        "name": "Rabland milestone",
+        "road": "Via Claudia Augusta",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "One of only two Via Claudia Augusta milestones ever found still in something like its original setting, pulled from the Vinschgau roadbed near Naturno. Its inscription is among the oldest Roman writing recovered anywhere in the Alps.",
+        "sources": [
+          "https://www.suedtirol.info/en/en/experiences-and-events/plp-experiences/experiences-south-tyrol/pdp-experience.smgpoi87540d0f1bd3291fd3d8cca75ffb15d1.roman-milestone-of-the-via-claudia-augusta.rabla-rabland"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.5058,
+          46.8886
+        ]
+      },
+      "properties": {
+        "id": "station_inutrium",
+        "category": "statio",
+        "name": "Inutrium",
+        "road": "Via Claudia Augusta",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A post at Nauders, right at the Reschen Pass summit -- at 1,507m the highest point the road reaches. It is the only station on this whole Alpine crossing that a surviving ancient source names outright rather than leaving to archaeology.",
+        "sources": [
+          "https://www.suedtirol.info/en/",
+          "https://inntour.at/en/cycling-holidays/via-claudia-augusta"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.702,
+          47.5686
+        ]
+      },
+      "properties": {
+        "id": "station_foetibus",
+        "category": "mansio",
+        "name": "Foetibus",
+        "road": "Via Claudia Augusta",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A stop on the Lech at Fussen, where the road came down off the mountains into the province of Raetia proper before the last stretch to Augusta Vindelicum.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Via_Claudia_Augusta",
+          "https://www.romanoimpero.com/2022/04/via-claudia-augusta.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.8978,
+          48.3705
+        ]
+      },
+      "properties": {
+        "id": "station_augusta_vindelicum",
+        "category": "vicus",
+        "name": "Augusta Vindelicum",
+        "road": "Via Claudia Augusta",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Augsburg today, and the road's real destination -- the provincial capital of Raetia that Drusus and Claudius spent sixty years of road-building trying to connect to the Adriatic. Not yet on this map as a full city; the road stops here for now.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Via_Claudia_Augusta",
+          "https://www.hmdb.org/m.asp?m=217418"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7833,
+          48.6167
+        ]
+      },
+      "properties": {
+        "id": "station_submuntorium",
+        "category": "statio",
+        "name": "Submuntorium",
+        "road": "Via Claudia Augusta",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A fort and river-post on the upper Danube where a spur of the road reached the frontier, roughly 30km north of Augsburg. Some scholars place the name at nearby Neuburg instead of Burghofe -- the site is secure, the exact ancient label less so.",
+        "sources": [
+          "https://www.academia.edu/41283356/The_Late_Roman_Fort_and_vicus_of_Submuntorium_Burgh%C3%B6fe_on_the_Upper_Danube",
+          "https://vici.org/vici/9744/?lang=en"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
