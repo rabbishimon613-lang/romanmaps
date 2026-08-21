@@ -7,6 +7,116 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 40 — 2026-08-21 (this shift's own prompt claimed "Shift 1 of four")
+
+**Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt said
+"Shift 1 of four," but `SHIFT_LOG` was 39 real shifts deep at session start, so this entry
+continues as Shift 40. Session started `HEAD` detached at the real tip (`9cd8457`) with local
+`main` ten commits behind, pointing at Shift 28's `709a480`. `git fetch origin main` came down as
+a forced update matching the detached `HEAD` exactly (confirmed via `git ls-remote` logic, no
+data loss), then `git checkout -B main origin/main` put the branch cleanly on it. Fresh container
+needed `npm install`; reverted the resulting `package-lock.json` churn before touching anything
+else, same pattern every recent shift documents. Read `SHIFT_BRIEF.md`, `BOARD.md` and Shift 39's
+handoff in full before starting. `WebFetch` confirmed `EGRESS_BLOCKED` directly this session
+against `en.wikipedia.org` and `grokipedia.com` — `WebSearch` was the only working research
+channel, matching every prior shift's report.
+
+### Board check
+
+Same unclaimed P0 set Shifts 34-39 all found and declined for the same reason: `[12-P0-1]`
+merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terrain,
+`[02-P0-4]` self-host-glyphs — all large, multi-file refactors an unsupervised session pushing
+straight to production shouldn't attempt mid-refactor with nobody watching. Followed Shift 39's
+handoff and the axis queue instead.
+
+### Track A — three axes, 25 net new curated features
+
+**Axis 2 (road stations) — Via Claudia Augusta, the fifteenth road.** `road_stations.geojson`
+360 → 372 (+12). Shift 39's handoff suggested Via Cottia; checked first and found it already
+complete (6/6 stations, an earlier untogged shift's work) — picked the next open road instead.
+Built from both historical trailheads (Hostilia on the Po, Altinum on the Adriatic) converging at
+Tridentum, then north over the Alps through Pons Drusi (Bolzano), the excavated Endidae mansio at
+Egna (Itin. Ant.'s 23 mp from Tridentum matches the modern road distance almost exactly — a rare
+case where the ancient figure and the ground agree), Maia (Merano), the Rabland milestone near
+Naturno (one of only two Via Claudia Augusta milestones ever found in situ), Inutrium at Nauders
+(the Reschen Pass summit, 1,507m — the only station on this whole crossing a surviving ancient
+source names directly), Foetibus (Fussen), and the terminus at Augusta Vindelicum (Augsburg) with
+the Danube spur to Submuntorium (Burghofe, ~30km north — one source hedges toward nearby Neuburg
+instead, noted honestly rather than picking one silently). Mansio Servasa near Brentino shipped
+`confidence: medium` since its own best source calls it only "probable Via Claudia Augusta." No
+leg mileage claimed except the one sourced Tridentum-Endidae figure; every other gap ships
+`distance_from_previous_mp: null`. Twelve stations is thin against the brief's "typically 20-50"
+line, but this is a genuine Alpine cursus-publicus crossing with fewer waypoints than a flat
+consular road — same shape as Via Cottia's 6, and no fabricated stations were added to pad the
+count. No id collisions with any of the other 15 roads already on the map.
+
+**Axis 12 (imperial cult) — 11 more cult centers, doubling down on the room Shift 39 flagged.**
+`imperial_cult.geojson` 33 → 44 (+11). All three of Shift 39's named leads closed: Barcino's
+four-column Augustus temple in Barcelona (image confirmed on Commons), the Tres Arae Sestianae at
+Cape Finisterre (three open-air altars, no temple, marking the Atlantic edge of the Roman world,
+~19 BCE), and Banias's Herodian Augusteum (location still genuinely debated in the scholarship
+between a cave-mouth candidate and Khirbet Omrit — shipped `confidence: medium` rather than pick
+one). Eight more found on a fresh sweep: Savaria's central provincial altar for Pannonia Superior
+(Ara Augustorum — the one place a Pannonian priest sacrificed for every emperor at once), the
+imperial-cult temple inside Gortyn's Praetorium on Crete (nailed down by an inscribed doorjamb),
+Corinth's Achaean-koinon federal cult, Salona's Temple of Augustus (built into Dalmatia's
+provincial forum while Augustus was still alive), Philippi's forum temple (statues of Caesar,
+Augustus and Livia together), Nicopolis's Aedes Augustalium (a wing added onto Augustus's own
+Actium victory monument after his death), Segobriga's forum cult (ten priests attested by
+inscription over a century), and the Temple of Divus Augustus at Nola — built on the spot where
+Augustus actually died on 19 August 14 CE, dedicated by Tiberius in 26. Every new record
+cross-checked against the file's existing 33 first: Herod's other two attested Augustea (Caesarea
+Maritima, Sebaste) were already present, which is what confirmed Banias as the real remaining gap
+rather than an oversight. Rejected on review after a real search: Carnuntum's Pfaffenberg
+imperial monument (the specific altar arrangement dates to Marcus Aurelius, decades past this
+map's snapshot — the same wrong-period trap FEATURE_BACKLOG already flags), Cherchell/Cirta and
+Bostra/Caesarea Mazaca (real Roman cities, no specific dated temple or altar findable with a
+pinnable location), and Aquileia (forum is real but no imperial-cult-specific structure attested
+in what a WebSearch pass could surface). Only Barcino ships with an `image_url` — the other 10
+found no confirmable Commons filename in a first pass; flagged in FEATURE_BACKLOG as a real gap,
+not exhausted, same shape as the axis 20 gymnasia note.
+
+**Axis 15 (welfare/euergetism) — the two drop-in-ready records from Shift 39's own handoff.**
+`euergetism.geojson` 52 → 54 (+2). The Pompeii amphitheatre's dedication by duumvirs Gaius
+Quinctius Valgus and Marcus Porcius (CIL X 852, ~70 BCE — the oldest stone amphitheatre known
+anywhere, predating the Colosseum by more than a century) and the Holconius brothers' Augustan
+rebuild of the Large Theatre (CIL X 833-834, added the whole upper seating tier plus two
+stage-side boxes). Both images confirmed on Wikimedia Commons before use, not just matched by
+search-result title.
+
+### Build, validate, verify
+
+`npm run validate` clean at every commit: 0 errors, the same 17 pre-existing warnings throughout
+(none of this shift's additions triggered a new one). `npm run build` clean. `npm run metrics --
+--write`: `pois.geojson` itself untouched this shift (all three axes are separate thematic files),
+so the headline POI/description/image numbers hold at 481/100.0%/53.4%; cross-file collisions
+133 → 142 (informational, tracked under `[12-P0-1]`, expected from new points landing near
+existing gazetteer entries — e.g. the new Via Claudia stations sitting close to Verona/Bolzano/
+Merano/Augsburg gazetteer rows).
+
+### Handoff for the next shift
+
+1. **Axis 12 still has real room** — this shift found 11 without exhausting the search; Sicily
+   (Syracuse/Panormus/Catania — general provincial context is well documented but no specific
+   dated temple surfaced this pass), Viminacium's attested-but-unlocated imperial priesthood
+   (Moesia Superior), and a fresh pass at Aquileia's forum with library-grade sources instead of
+   WebSearch are all real leads that just didn't close this shift.
+2. **A sixteenth road** — Via Claudia Augusta closes the brief's named queue (Appia, Egnatia,
+   Domitia, Augusta, Traiana Nova, Agrippa, Flaminia, Aemilia, Postumia, Cassia+Clodia, Aurelia+
+   Salaria, Traiana, Militaris, Cottia all done). Next candidates worth a look: Via Popilia
+   (Capua south through Bruttium to the Sicily crossing), Via Nomentana/Tiburtina/Praenestina/
+   Labicana/Latina as a "several short Rome-radiating roads in one shift" batch (the brief's
+   alternate "60 miscellaneous stations" minimum), or filling Via Militaris's still-weak
+   Hadrianopolis-Bergule segment flagged by Shift 39.
+3. **Axis 15's 10 image-null imperial-cult records and Tres Arae/Banias's medium-confidence
+   status** are both real top-up targets for a shift with a fresh WebSearch budget — see the
+   commit message for the exact list.
+4. **Board fresh-check**: still no unclaimed P0/P1 `add` ticket smaller than a multi-pass
+   refactor. Topmost unclaimed P0s unchanged since Shift 34, seven shifts running now (34-40)
+   making the same decline call for the same reason.
+
+---
+
 ## Shift 39 — 2026-08-20 (this shift's own prompt claimed "Shift 4 of four")
 
 **Same stale-numbering mismatch every shift since #13 has flagged** — the scheduled prompt said
