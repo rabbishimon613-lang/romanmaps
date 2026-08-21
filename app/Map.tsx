@@ -21,6 +21,7 @@ import { meridaEntry } from "./meridaDescriptions";
 import { palmyraEntry } from "./palmyraDescriptions";
 import { athensEntry } from "./athensDescriptions";
 import { leptisMagnaEntry } from "./leptisMagnaDescriptions";
+import { timgadEntry } from "./timgadDescriptions";
 import { SITE_META, SITES } from "./sites";
 
 // Palette — light + dark variants. Both palettes are calibrated so that the sea/land/roads/labels
@@ -956,7 +957,9 @@ export default function Map() {
                                 ? athensEntry(rawName)
                                 : site === "leptismagna"
                                   ? leptisMagnaEntry(rawName)
-                                  : undefined;
+                                  : site === "timgad"
+                                    ? timgadEntry(rawName)
+                                    : undefined;
           selectPoi(
             {
               id: `${site}-${p.osm_id}`,
