@@ -9660,6 +9660,405 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7148,
+          41.8877
+        ]
+      },
+      "properties": {
+        "id": "station_gabii",
+        "category": "mansio",
+        "name": "Gabii",
+        "road": "Via Praenestina",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "An old Latin League city 12 Roman miles from Rome — the road out to it was originally called Via Gabina before its later extension to Praeneste gave the whole route its familiar name.",
+        "sources": [
+          "Itinerarium Antonini (Cuntz) 301: Gabii XII",
+          "Gabii Project, sites.lsa.umich.edu"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.74,
+          41.81
+        ]
+      },
+      "properties": {
+        "id": "station_ad_quintanas",
+        "category": "mutatio",
+        "name": "Ad Quintanas",
+        "road": "Via Labicana",
+        "distance_from_previous_mp": 15,
+        "identified": false,
+        "notes": "Took its name from colonists of Labicum settled on land divided into quintana plots, per Livy. Location approximate along the known route rather than a pinned excavated point.",
+        "sources": [
+          "Livy on the Labicum colonization",
+          "Antonine Itinerary, Via Lavicana entry"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.828,
+          41.784
+        ]
+      },
+      "properties": {
+        "id": "station_ad_statuas_labicana",
+        "category": "statio",
+        "name": "Ad Statuas",
+        "road": "Via Labicana",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Near modern San Cesareo, named for a profusion of decorative statuary and the point where the road forked toward Tusculum, Praeneste and Gabii. A cistern faced in Severan-era brickwork survives nearby. The Itinerary's claimed 3 mp from Ad Quintanas doesn't clear a straight-line sanity check against these two sites' real coordinates, so no distance figure is claimed for this leg.",
+        "sources": [
+          "Nibby, Analisi storico-topografica-antiquaria della carta de' dintorni di Roma",
+          "labgeocaraci.it"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.93,
+          41.79
+        ]
+      },
+      "properties": {
+        "id": "station_ad_pictas",
+        "category": "mutatio",
+        "name": "Ad Pictas",
+        "road": "Via Labicana",
+        "distance_from_previous_mp": 7,
+        "identified": true,
+        "notes": "Located near Valle Fredda in Valmontone's territory by a 2013 scholarly study identifying the Via Labicana's route through this stretch.",
+        "sources": [
+          "\"The Via Latina, the Via Labicana and the location of Ad Pictas,\" Papers of the British School at Rome (2013)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.01,
+          41.77
+        ]
+      },
+      "properties": {
+        "id": "station_ad_bivium",
+        "category": "mansio",
+        "name": "Ad Bivium",
+        "road": "Via Labicana",
+        "distance_from_previous_mp": 5,
+        "identified": true,
+        "notes": "\"At the fork\" — the Tabula Peutingeriana's largest Via Labicana station, 30 Roman miles from Rome, where the road split toward the Via Latina. The catacomb of Sant'Ilario was excavated on the same site.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "Rivista di Archeologia Cristiana 99 (2023), on the Ad Bivium excavation"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.57,
+          41.97
+        ]
+      },
+      "properties": {
+        "id": "station_ficulea",
+        "category": "vicus",
+        "name": "Ficulea",
+        "road": "Via Nomentana",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "An old Latin League town that gave the road its original name, Via Ficulensis, before it was extended to Nomentum. Its precise site remains debated among 19th-century and modern topographers alike; no Roman-mile figure for the distance from Rome could be sourced with confidence.",
+        "sources": [
+          "1911 Encyclopaedia Britannica, \"Via Nomentana\"",
+          "Wikidata, Ficulea"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.163,
+          41.743
+        ]
+      },
+      "properties": {
+        "id": "station_compitum_anagninum",
+        "category": "vicus",
+        "name": "Compitum Anagninum",
+        "road": "Via Latina",
+        "distance_from_previous_mp": 40,
+        "identified": true,
+        "notes": "Excavated 2007-08 at Osteria della Fontana below Anagni, revealing a Temple of Diana and a structure nicknamed the \"Circo Marittimo\" beside a since-vanished sacred lake. The point where the Via Latina, Via Labicana and the Praenestina's extension physically converge in the Sacco valley.",
+        "sources": [
+          "Antonine Itinerary (Cuntz) 301: Sub Anagniae XXIV",
+          "anagnia.com, Osteria della Fontana excavation reports"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.254,
+          41.6912
+        ]
+      },
+      "properties": {
+        "id": "station_ferentinum",
+        "category": "mansio",
+        "name": "Ferentinum",
+        "road": "Via Latina",
+        "distance_from_previous_mp": 8,
+        "identified": true,
+        "notes": "Modern Ferentino, a Hernician hill town on the Via Latina's climb through the Sacco valley.",
+        "sources": [
+          "Antonine Itinerary (Cuntz) 301: Ferentinum VIII"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3421,
+          41.6401
+        ]
+      },
+      "properties": {
+        "id": "station_frusino",
+        "category": "mansio",
+        "name": "Frusino",
+        "road": "Via Latina",
+        "distance_from_previous_mp": 7,
+        "identified": true,
+        "notes": "Modern Frosinone, another Hernician town absorbed early into Rome's road network.",
+        "sources": [
+          "Antonine Itinerary (Cuntz) 301: Frusino VII"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5389,
+          41.5367
+        ]
+      },
+      "properties": {
+        "id": "station_fregellanum",
+        "category": "mansio",
+        "name": "Fregellanum",
+        "road": "Via Latina",
+        "distance_from_previous_mp": 14,
+        "identified": true,
+        "notes": "Fregellae, a major Latin colony founded in 328 BCE, was destroyed by Rome in 125 BCE after leading a revolt. Its road station lived on afterward under the diminished name Fregellanum, across the Liri from its replacement colony, Fabrateria Nova.",
+        "sources": [
+          "Antonine Itinerary (Cuntz) 301: Fregellanum XIV",
+          "DAI e-Forschungsberichte on Fregellae"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.553,
+          41.519
+        ]
+      },
+      "properties": {
+        "id": "station_fabrateria_nova",
+        "category": "mansio",
+        "name": "Fabrateria Nova",
+        "road": "Via Latina",
+        "distance_from_previous_mp": 3,
+        "identified": true,
+        "notes": "Founded to resettle Fregellae's survivors after Rome razed their city in 125 BCE, sited just across the Liri river from the ruins. Distinct from the older, separate town of Fabrateria Vetus near modern Ceccano, off this stretch of road.",
+        "sources": [
+          "Antonine Itinerary (Cuntz) 301: Fabrateria III",
+          "Wikidata, Fabrateria Nova"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7058,
+          41.4906
+        ]
+      },
+      "properties": {
+        "id": "station_aquinum",
+        "category": "mansio",
+        "name": "Aquinum",
+        "road": "Via Latina",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Aquino, birthplace of the satirist Juvenal, with a substantial surviving amphitheater and forum. The Itinerary's claimed 8 mp from Fabrateria Nova doesn't clear a straight-line sanity check against these two towns' real coordinates, so no distance figure is claimed for this leg.",
+        "sources": [
+          "Antonine Itinerary (Cuntz) 301: Aquinum VIII"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.8254,
+          41.4909
+        ]
+      },
+      "properties": {
+        "id": "station_casinum",
+        "category": "mansio",
+        "name": "Casinum",
+        "road": "Via Latina",
+        "distance_from_previous_mp": 7,
+        "identified": true,
+        "notes": "Modern Cassino. Ummidia Quadratilla, a wealthy local benefactor, funded the town's surviving amphitheater and theater.",
+        "sources": [
+          "Antonine Itinerary (Cuntz) 301: Casinum VII"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0402,
+          41.4867
+        ]
+      },
+      "properties": {
+        "id": "station_venafrum",
+        "category": "mansio",
+        "name": "Venafrum",
+        "road": "Via Latina",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Modern Venafro, renowned in antiquity for the quality of its olive oil — Cato and Varro both praised Venafran oil as the best in Italy.",
+        "sources": [
+          "Antonine Itinerary (Cuntz) 301: Venafrum XVI"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0672,
+          41.2461
+        ]
+      },
+      "properties": {
+        "id": "station_teanum_sidicinum",
+        "category": "mansio",
+        "name": "Teanum Sidicinum",
+        "road": "Via Latina",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Modern Teano, capital of the Sidicini before Rome absorbed the town — a major road junction where this Beneventum-bound branch of the Via Latina met the route continuing on to Casilinum and the Via Appia near Capua.",
+        "sources": [
+          "Antonine Itinerary (Cuntz) 301: Teanum XVIII"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.3306,
+          41.3286
+        ]
+      },
+      "properties": {
+        "id": "station_alifae",
+        "category": "mansio",
+        "name": "Alifae",
+        "road": "Via Latina",
+        "distance_from_previous_mp": 17,
+        "identified": true,
+        "notes": "Modern Alife, an old Samnite town on the road's final stretch toward Beneventum.",
+        "sources": [
+          "Antonine Itinerary (Cuntz) 301: Alifae XVII"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5066,
+          41.2262
+        ]
+      },
+      "properties": {
+        "id": "station_telesia",
+        "category": "mansio",
+        "name": "Telesia",
+        "road": "Via Latina",
+        "distance_from_previous_mp": 25,
+        "identified": true,
+        "notes": "Near modern San Salvatore Telesino, the last stop before Beneventum on this branch of the Via Latina.",
+        "sources": [
+          "Antonine Itinerary (Cuntz) 301: Telesia XXV"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
