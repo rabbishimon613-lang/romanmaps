@@ -1328,6 +1328,58 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lyon_3_gaules2.JPG?width=800",
         "image_credit": "Amphitheatre of the Three Gauls, Lyon — Wikimedia Commons"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4936,
+          40.7513
+        ]
+      },
+      "properties": {
+        "id": "euerg_pompeii_amphitheatre",
+        "name": "Pompeii",
+        "category": "benefactor_inscription",
+        "one_line": "Gaius Quinctius Valgus and Marcus Porcius, the colony's own duumvirs, built Pompeii's amphitheatre at their own expense around 70 BCE and handed the ground over to the colonists for good. Two copies of their dedication stood over its entrances -- it is the oldest stone amphitheatre known anywhere in the Roman world, built more than a century before the Colosseum.",
+        "province": "Regio I Latium et Campania",
+        "modern_location": "Pompeii, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "CIL X 852",
+          "https://www.judaism-and-rome.org/dedication-amphitheatre-pompeii-cil-x-852"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amphitheatre of Pompeii, Exterior, Noon.jpg?width=800",
+        "image_credit": "Amphitheatre of Pompeii · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4863,
+          40.7502
+        ]
+      },
+      "properties": {
+        "id": "euerg_pompeii_large_theatre",
+        "name": "Pompeii",
+        "category": "benefactor_inscription",
+        "one_line": "The brothers Marcus Holconius Rufus and Marcus Holconius Celer paid to rebuild Pompeii's Large Theatre under Augustus, adding a whole new upper tier of seating on vaulted arcades and two private boxes flanking the stage. Twin inscriptions over six metres long, set into the stage building, made sure nobody who sat there forgot whose money it was.",
+        "province": "Regio I Latium et Campania",
+        "modern_location": "Pompeii, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "CIL X 833-834",
+          "https://ancienttheatrearchive.com/theatre/pompeii-theatre-modern-pompeii-italy/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Scavi Archeologici di Pompei - Teatro Grande.JPG?width=800",
+        "image_credit": "Teatro Grande, Pompeii · Wikimedia Commons, CC BY-SA 3.0"
+      }
     }
   ]
 }
