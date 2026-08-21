@@ -1380,6 +1380,33 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Scavi Archeologici di Pompei - Teatro Grande.JPG?width=800",
         "image_credit": "Teatro Grande, Pompeii · Wikimedia Commons, CC BY-SA 3.0"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.7826,
+          41.1296
+        ]
+      },
+      "properties": {
+        "id": "euerg_beneventum",
+        "name": "Beneventum",
+        "category": "alimenta_town",
+        "one_line": "Trajan raised a monumental arch here in 114 CE to mark the completion of his new Via Traiana, and had masons carve the alimenta program into permanent public view inside its passage — the emperor handing out food money to children while personified Italian cities look on. The arch still spans the old road into town, its 26 sculpted panels the best-preserved visual record of how the welfare scheme actually looked in practice. Beneventum stood where the old Via Appia met Trajan's new coastal shortcut, making it the obvious place to put the emperor's signature program on permanent display for every traveler heading south.",
+        "province": "Italia",
+        "modern_location": "Benevento, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "Arch of Trajan, Benevento, dedicated 114 CE — institutio alimentaria relief, inner attic passage",
+          "M. Rotili, L'arco di Traiano a Benevento (Rome, 1972)",
+          "https://en.wikipedia.org/wiki/Arch_of_Trajan_(Benevento)"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Arch_of_Trajan,_Institutio_Alimenta_relief,_Benevento,_Italy_-_49866556976.jpg?width=800",
+        "image_credit": "Institutio Alimentaria relief, Arch of Trajan, Benevento — photo by Carole Raddato, CC BY-SA 2.0, via Wikimedia Commons"
+      }
     }
   ]
 }
