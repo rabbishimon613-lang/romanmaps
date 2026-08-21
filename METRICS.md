@@ -33,14 +33,14 @@ references.)
 | Measure | Value | Notes |
 |---|---:|---|
 | POIs in `pois.geojson` | 481 | the curated place canon |
-| Records in the 29 thematic files | 1336 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
-| **Curated places, total** | **1,817** | |
+| Records in the 29 thematic files | 1376 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
+| **Curated places, total** | **1,857** | |
 | Description of 60+ words | 481 · **100.0%** | measured on `notes`; 0 still thin |
 | Has an image | 257 · **53.4%** | |
 | Has an ancient source | 177 · **36.8%** | |
 | — of `confidence: high` POIs | 160 / 238 · **67.2%** | the target set for `[09-P0-1]` |
 | Categories with a "what happened here" paragraph | 52 / 52 · **100.0%** | covers 481/481 POIs |
-| Sites with curated building descriptions | 12 / 40 · **30.0%** | athens, delphi, ephesus, herculaneum, jerash, leptisMagna, merida, ostia, palmyra, pompeii, timgad, trier (`[06-P0-2]`, standing) |
+| Sites with curated building descriptions | 14 / 40 · **35.0%** | athens, delphi, djemila, ephesus, herculaneum, jerash, leptisMagna, merida, ostia, palmyra, pompeii, timgad, trier, volubilis (`[06-P0-2]`, standing) |
 | Validator errors | **0** | |
 | Validator warnings | 17 | reviewed; see the standing-warnings note |
 | Cross-file name collisions (<150 m) | 142 | the dedupe backlog `[12-P0-1]` has to resolve |
