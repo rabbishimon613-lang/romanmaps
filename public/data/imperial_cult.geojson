@@ -921,7 +921,9 @@
           "https://biblearchaeology.org/research/new-testament-era/3473-the-temple-of-caesar-augustus-at-caesarea-philippi",
           "https://www.biblewalks.com/baniastemples/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Corinthian%20column%20at%20Omrit.jpg?width=800",
+        "image_credit": "Corinthian column, Omrit temple complex (candidate site for Herod's Augusteum) · Wikimedia Commons"
       }
     },
     {
@@ -971,7 +973,9 @@
           "https://crete.classics.ox.ac.uk/U3S2/U3S2L2.html",
           "https://www.geotour.gr/listing/the-praetorium-of-gortyna/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Praetorium%20built%20at%20the%20beginning%20of%20the%202d%20century%20AD%20during%20the%20reign%20of%20Trajan%2C%20it%20was%20the%20residence%20of%20the%20governor%20of%20the%20province%2C%20Gortyna%2C%20Crete.jpg?width=800",
+        "image_credit": "Praetorium complex, Gortyn, Crete (site of the imperial-cult shrine) · Wikimedia Commons"
       }
     },
     {
@@ -995,7 +999,9 @@
         "sources": [
           "https://www.tyndalebulletin.org/article/30403-the-achaean-federal-imperial-cult-ii-the-corinthian-church.pdf"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancient%20Corinth%20-%20Temple%20E.jpg?width=800",
+        "image_credit": "Temple E, Ancient Corinth (identified with the imperial/Octavia cult) · Wikimedia Commons"
       }
     },
     {
@@ -1045,7 +1051,9 @@
           "https://biblearchaeology.org/research/new-testament-era/2343-gods-gold-and-the-glory-of-philippi",
           "https://www.bibleodyssey.org/articles/philippi/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Forum%2C%20Philippi%20(7272451296).jpg?width=800",
+        "image_credit": "The Forum of Philippi, where the imperial-cult temple stood · Wikimedia Commons"
       }
     },
     {
@@ -1070,7 +1078,9 @@
           "https://actianicopolisarchaeopark.gr/en/nikopolis/the-victory-monument-of-actium/",
           "https://www.ancient-history-sites.com/sites/augustus-monument-nicopolis/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicopolis%2C%20Augustus%20monument.jpg?width=800",
+        "image_credit": "Augustus's Actium victory monument, Nicopolis, to which the Aedes Augustalium wing was attached · Wikimedia Commons"
       }
     },
     {
@@ -1095,7 +1105,9 @@
           "https://www.segobriga.org/en/ciudad-romana/",
           "https://www.academia.edu/18728716/J_M_Noguera_Celdr%C3%A1n_Imperial_cult_and_image_in_Hispania_the_paradigmatic_case_of_Segobriga"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Seg%C3%B3briga%2C%20Criptop%C3%B3rtico%20del%20Foro.jpg?width=800",
+        "image_credit": "Cryptoporticus of the Forum, Segobriga, Saelices · Wikimedia Commons"
       }
     },
     {
