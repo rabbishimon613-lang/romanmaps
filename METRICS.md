@@ -40,7 +40,7 @@ references.)
 | Has an ancient source | 177 · **36.8%** | |
 | — of `confidence: high` POIs | 160 / 238 · **67.2%** | the target set for `[09-P0-1]` |
 | Categories with a "what happened here" paragraph | 52 / 52 · **100.0%** | covers 481/481 POIs |
-| Sites with curated building descriptions | 14 / 40 · **35.0%** | athens, delphi, djemila, ephesus, herculaneum, jerash, leptisMagna, merida, ostia, palmyra, pompeii, timgad, trier, volubilis (`[06-P0-2]`, standing) |
+| Sites with curated building descriptions | 17 / 40 · **42.5%** | athens, baalbek, delphi, djemila, ephesus, herculaneum, jerash, leptisMagna, luni, merida, ostia, palmyra, pompeii, sabratha, timgad, trier, volubilis (`[06-P0-2]`, standing) |
 | Validator errors | **0** | |
 | Validator warnings | 17 | reviewed; see the standing-warnings note |
 | Cross-file name collisions (<150 m) | 142 | the dedupe backlog `[12-P0-1]` has to resolve |

@@ -7,6 +7,130 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 42 — 2026-08-21 (this shift's own prompt claimed "Shift 3 of four")
+
+Same stale-numbering mismatch every shift since #13 has flagged — the scheduled prompt said
+"Shift 3 of four," but `SHIFT_LOG` was 41 real shifts deep at session start, so this entry
+continues as Shift 42. Session started `HEAD` detached with local `main` reading 50 commits
+behind `origin/main` — the same "stale local ref, not data loss" symptom nearly every shift since
+#9 has independently rediscovered. `git fetch origin main` + `git checkout -B main origin/main`
+put the branch cleanly on the real tip (`4d51e4f`, Shift 41's own last commit). Fresh container
+needed `npm install`; reverted the resulting `package-lock.json` churn before touching anything
+else, per the standing habit. Read `SHIFT_BRIEF.md` and `BOARD.md` in full before picking work.
+Confirmed `WebSearch` works in this session (unlike many prior shifts' Overpass/Wikipedia/Commons
+egress blocks, not independently re-tested this run) and used it as the sole research channel via
+three parallel background research agents across the shift.
+
+### Board check
+
+`[06-P0-2]` curate-buildings is the board's own standing `deepen` task and Shift 41's handoff
+named Djemila and Volubilis as the next-easiest picks by named-OSM-building count — took both,
+then kept going on the same ticket (Sabratha, Baalbek, Luni) once the pipeline was warm, since a
+`deepen` ticket with a working research→write→wire→verify loop doesn't need re-claiming between
+sites. No unclaimed P0/P1 `add` ticket existed (same finding as every recent shift — `[12-P0-1]`
+merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terrain, `[02-P0-4]`
+self-host-glyphs all remain large, multi-file refactors an unsupervised session pushing straight
+to production shouldn't start mid-refactor with nobody watching), so Track A's `add` half came
+from Axis 2 (Roman Britain roads) directly off the brief instead, per its own "axes are still a
+valid source of work when the board has nothing that fits" rule. By the board's own ratio count
+this shift ran 2 `deepen` (5 curate-buildings sites, in two batches) + 1 `add` (Britain roads) —
+short one `polish` slot; see the Track B note below for why.
+
+### Track A — five more curate-buildings sites, Roman Britain's first road stations
+
+**Board `[06-P0-2]` (curate-buildings) — five sites, 26 named buildings, closing 12/40 → 17/40.**
+Two research agents (Djemila+Volubilis, then Sabratha+Baalbek+Luni once the first batch shipped)
+ran against real sources — World History Encyclopedia, Livius.org (via search-summary access
+only; direct `WebFetch` to it stayed blocked this session same as most prior shifts), Pleiades,
+vici.org, the Luni archaeological park's own `luni.cultura.gov.it` documentation, and this
+project's own already-settled Temple of Jupiter/Bacchus dating at Baalbek (`[08-P1-6]`, reused
+rather than re-litigated). All five sites confirm the same pattern this ticket has now found at
+Leptis Magna, Timgad, Djemila, Sabratha and Baalbek alike: North African and Levantine sites
+founded or annexed in the 1st century CE almost always show their photogenic headline monuments
+(arches, theatres, grand bath complexes) built one to three centuries *after* Trajan's death,
+while the founding-era civic core (forum, curia, an early temple) is what actually stood in 117.
+Luni broke that pattern the other way — a much older (177 BCE) Italian colony whose forum,
+theatre and shopfronts were all already old news by 117, with only its amphitheatre, a Christian
+basilica and a domus mosaic floor postdating the snapshot. One real, flagged uncertainty shipped
+rather than hidden: Djemila's generic OSM "Thermes romains" tag can't be pinned to one of the
+site's three known bath complexes with full confidence, so that entry's `built:183` date is
+explicitly framed as the best-inference match (the only complex with a secure date), not a
+certainty. Verified all 26 keys against every real OSM name in each site's building file with the
+same Python longest-key-first substring-matcher harness prior shifts built for this ticket — no
+silent typos, generic/modern OSM tags (park labels, a kindergarten at Carnuntum that ruled that
+site out entirely — see handoff) correctly fall through to the fallback.
+
+**Axis 2 (road stations) — Roman Britain, the first British material on the map.** A dedicated
+research agent covering Watling Street, Fosse Way, Stanegate and Ermine Street came back with 48
+candidate stations and — to its own credit — flagged real problems rather than papering over
+them: several claimed Antonine Itinerary mileages looked "unusually large" against known
+distances, and one entire chain (Godmanchester–Water Newton–Ancaster–Cambridge) turned out to be
+ambiguously attributed between "Ermine Street proper" and a distinct Iter V route via Colchester,
+with no primary-source access available this session to resolve which. Ran every claimed mileage
+against a geodesic sanity check (a road can only be longer than the straight line between its
+endpoints, never shorter) using this batch's own coordinates: the large majority failed, most
+likely because my own approximate coordinates for several stations (sourced only as OS grid
+references, not published decimals) aren't precise enough for the check to be meaningful rather
+than because the source mileages are wrong — shipped `distance_from_previous_mp: null` across
+nearly the whole batch rather than risk asserting a number that might not survive scrutiny. Kept
+three that passed cleanly (Durovernum→Rutupiae 12mi, Vernemetum→(prior) 12mi, Crococalana↔Lindum
+14mi). Dropped the disputed Iter V/Colchester chain (5 stations) from this batch entirely rather
+than mislabel them — a genuine gap for whoever has primary-source access next. Also excluded
+Vindolanda (already a full curated site) and Throp Fortlet (already a full `pois.geojson` record)
+from the Stanegate batch to avoid a near-duplicate pin. Final batch: Watling Street 17, Fosse Way
+9, Stanegate 8, Ermine Street 6 — `road_stations.geojson` 423 → 463, first-ever British stations
+on a layer that previously covered only continental Europe, North Africa and the Levant.
+
+### Track B — attempted and descoped: a static-thumbnail image fallback
+
+Scoped board ticket `[13-P0-3]` (`image-fallback`, a location thumbnail for the 145 POIs with no
+photo) before committing to Britain roads for the rest of the shift. Built a simplified SVG
+outline of the empire's Mediterranean-centered coastline from `public/data/land.geojson` (58,881
+source points) via a hand-written Douglas-Peucker simplifier, verified by rendering to PNG with a
+headless Chromium instance in this sandbox (`/opt/pw-browsers/chromium-1194`, since the generic
+`/opt/pw-browsers/chromium` path from the environment's own setup notes doesn't exist — the
+real, versioned directory does). First simplification pass, run without geometric clipping to a
+bounding box, rendered correctly — recognizable British Isles, Iberia, Italy, the Balkans, Crete —
+but a second pass adding Sutherland-Hodgman bbox clipping (needed to keep the SVG path small
+enough to inline) introduced self-intersecting sub-paths at several peninsulas, which the
+browser's nonzero fill rule then rendered as false "holes" in Italy, Iberia and the Balkans rather
+than solid land. This is a known hard case for naive polygon simplification+clipping without a
+real GIS library (shapely, unavailable in this sandbox) to guarantee topology-preserving output.
+Rather than ship a visibly broken map thumbnail or sink further budget into hand-rolling
+self-intersection detection, descoped this ticket back to open and spent the reclaimed time on a
+third Track A curate-buildings batch instead — matching the brief's own "if you don't have time
+for Track B, that's fine, data wins" allowance. No code from this attempt was committed.
+
+### Build, validate, verify
+
+`npm run validate` clean at every commit: 0 errors, the same 17 pre-existing warnings throughout.
+`npm run build` clean on every pushed commit — the pre-push gate never tripped, `package-lock.json`
+churn from `npm install` reverted before the first commit. `npm run metrics -- --write`: curated
+places 1,817 → 1,857; sites with curated building descriptions 12/40 (30.0%) → 17/40 (42.5%).
+
+### Handoff for the next shift
+
+1. **`[13-P0-3]` image-fallback is real, scoped, but needs either a proper polygon-simplification
+   library (shapely's `.simplify(preserve_topology=True)`, or a JS equivalent) or a much smaller
+   ROI/higher tolerance that avoids self-intersecting peninsulas — the unclipped, full-precision
+   render worked fine, so the bug is specifically in clipping-then-simplifying a global landmass
+   ring to a small bounding box, not in the SVG/rendering approach itself. Worth a second attempt
+   with real GIS tooling rather than hand-rolled Sutherland-Hodgman.
+2. **Roman Britain's Iter V/Colchester chain** (Godmanchester, Water Newton/Durobrivae, Ancaster/
+   Causennae, Cambridge/Duroliponte, the unidentified Villa Faustini) needs a primary-source read
+   of the actual Antonine Itinerary text (roadsofromanbritain.org's iter tables, or roman-
+   britain.co.uk's Antonine Itinerary page) to settle whether it belongs on Ermine Street or a
+   separate road — this session's `WebFetch` to both domains stayed blocked, `WebSearch` summaries
+   weren't enough to resolve the ambiguity confidently.
+3. **Curate-buildings has 23 sites left.** Carnuntum was checked this shift and ruled out — its
+   OSM building data is entirely modern Austrian village buildings (a kindergarten, a parish
+   office, a cultural center), no Roman-era names tagged at all, so it can't be picked up by this
+   ticket until/unless a future shift re-fetches better OSM data for that site specifically.
+4. **Board fresh-check**: still no unclaimed P0/P1 `add` ticket smaller than a multi-pass refactor,
+   nine shifts running now (34-42) making the same decline call for the same reason.
+
+---
+
 ## Shift 41 — 2026-08-21 (this shift's own prompt claimed "Shift 2 of four")
 
 Same stale-numbering mismatch every shift since #13 has flagged — the scheduled prompt said

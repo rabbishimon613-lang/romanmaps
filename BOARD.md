@@ -448,6 +448,41 @@ to prevent. Building locally to *test* your own work is expected and fine.
       snapshot — all six ship `extant_117ce:false`. The city's real 117 CE anchor, its freshly
       finished forum and curia, isn't a separately tagged OSM building, so it lives in the file's
       header note rather than an invented record. 28 sites still open for the standing task.*
+      *Djemila done 2026-08-21 by cloud shift 42: 6 entries in `app/djemilaDescriptions.ts`, the
+      thirteenth site. Nerva founded the veteran colony in 96 CE, contemporary with Timgad; only
+      the founding-era Forum and Forum Courtyard genuinely stood by 117 — the Arch of Caracalla
+      (216), Basilica of Cresconius (c. 400-411), Temple of the Severan Family (229) and Great
+      Baths (183, the likeliest match for OSM's generic "Thermes romains" tag, flagged as an
+      inference rather than a certainty) all postdate the snapshot by 66-300 years. 27 sites left.*
+      *Volubilis done 2026-08-21 by cloud shift 42: 3 entries in `app/volubilisDescriptions.ts`,
+      the fourteenth site, only 4 named OSM buildings total (thinnest yet after Timgad).
+      Volubilis split the other way from most sites this ticket has covered — the North Baths
+      (Flavian, ~70 CE) and Temple B (a Berber/Punic Saturn sanctuary reusing an indigenous
+      sanctuary plan, dated to the early 1st century CE on one 1954 excavation's stylistic
+      judgment, the single-source caveat said plainly in its own description) were both standing
+      in 117; only the famous Arch of Caracalla (217) was not. 26 sites left.*
+      *Sabratha done 2026-08-21 by cloud shift 42: 4 entries in `app/sabrathaDescriptions.ts`, the
+      fifteenth site, confirming the same Tripolitanian pattern this ticket found at Leptis Magna
+      and Timgad — the Theatre of Sabratha (Severan, c. 175-200), the Antonine Temple (c. 150-160)
+      and the Baths of Oceanus (mid-2nd c.) all postdate 117; only the Augustan-Flavian Temple of
+      Isis was standing. 25 sites left.*
+      *Baalbek done 2026-08-21 by cloud shift 42: 6 entries in `app/baalbekDescriptions.ts`, the
+      sixteenth site — reuses this project's own settled Temple of Jupiter (`built:60`, standing)
+      and Temple of Bacchus (`built:150`, not yet) dating from `[08-P1-6]` baalbek-dating rather
+      than re-litigating it, with fresh Google-Business-voice copy. New research on the four
+      approach-sequence buildings (Propylaea, Hexagonal Court, Great Court, Temple of Venus) found
+      all four postdate 117 as finished monuments — but the Great Court entry surfaces a genuine
+      117 CE anchor worth flagging: Trajan himself began its forecourt addition to Nero's older
+      altar-tower, and died with it still under construction, which is exactly what the existing
+      Temple of Jupiter record's "forecourt still building in 117" note was describing all along.
+      Two generic OSM tags ("basin", "columns of Baalbek") skipped as too vague to identify a
+      specific structure. 24 sites left.*
+      *Luni done 2026-08-21 by cloud shift 42: 6 entries in `app/luniDescriptions.ts`, the
+      seventeenth site, splitting the opposite way from most recent sites — Luna's founding-era
+      Forum (177 BCE), Julio-Claudian Theatre (c. 40 CE) and Claudian-era Tabernae shopfronts were
+      all standing and in daily use by 117; only the Antonine amphitheatre, the late-antique
+      Christian basilica and a 3rd/4th-century domus mosaic floor postdate the snapshot. 23 sites
+      left for the standing task.*
 - [x] `[10-P0-3]` **`flagship-depth`** `deepen` — Bring POIs whose `notes` runs under 60 words up
       to real panel depth in that same field, worst-first. This is the **panel tier of
       `[10-P0-2]`** applied to the places that need it most; the tombstone/label tiers still need
