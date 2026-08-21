@@ -24,6 +24,9 @@ import { leptisMagnaEntry } from "./leptisMagnaDescriptions";
 import { timgadEntry } from "./timgadDescriptions";
 import { djemilaEntry } from "./djemilaDescriptions";
 import { volubilisEntry } from "./volubilisDescriptions";
+import { sabrathaEntry } from "./sabrathaDescriptions";
+import { baalbekEntry } from "./baalbekDescriptions";
+import { luniEntry } from "./luniDescriptions";
 import { SITE_META, SITES } from "./sites";
 
 // Palette — light + dark variants. Both palettes are calibrated so that the sea/land/roads/labels
@@ -965,7 +968,13 @@ export default function Map() {
                                       ? djemilaEntry(rawName)
                                       : site === "volubilis"
                                         ? volubilisEntry(rawName)
-                                        : undefined;
+                                        : site === "sabratha"
+                                          ? sabrathaEntry(rawName)
+                                          : site === "baalbek"
+                                            ? baalbekEntry(rawName)
+                                            : site === "luni"
+                                              ? luniEntry(rawName)
+                                              : undefined;
           selectPoi(
             {
               id: `${site}-${p.osm_id}`,
