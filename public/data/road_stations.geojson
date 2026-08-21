@@ -9096,6 +9096,570 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5342,
+          40.9269
+        ]
+      },
+      "properties": {
+        "id": "station_nola",
+        "category": "mansio",
+        "name": "Nola",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "The first major stop south of Capua on the road to Rhegium, and later the town where Augustus died on 19 August 14 CE. A specific Antonine Itinerary mileage for this leg turned up in only one unreliable source, so no distance figure is claimed here.",
+        "sources": [
+          "Itinerarium Antonini, Regium-Capuam route (loose citation, exact section unconfirmed)",
+          "https://it.wikipedia.org/wiki/Via_Capua-Regium"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.6333,
+          40.7333
+        ]
+      },
+      "properties": {
+        "id": "station_nuceria_alfaterna",
+        "category": "mansio",
+        "name": "Nuceria Alfaterna",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Nocera Superiore/Inferiore. The Republican-era Lapis Pollae milestone (CIL I2 638), found at Forum Popilii, gives 51 Roman miles from there to Nuceria — the strongest single piece of evidence placing this town squarely on the Via Popilia mainline.",
+        "sources": [
+          "Lapis Pollae, CIL I2 638",
+          "https://www.robertovitogerardo.it (Via Popilia route description)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.7681,
+          40.6824
+        ]
+      },
+      "properties": {
+        "id": "station_salernum",
+        "category": "mansio",
+        "name": "Salernum",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Salerno. A Latin colony planted in 194 BCE on the Gulf of Salerno, partly to hold the coast after the Picentini were resettled inland — it sat directly on the road south toward the Vallo di Diano.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Salerno",
+          "https://en.wikipedia.org/wiki/Picentia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.8508,
+          40.6389
+        ]
+      },
+      "properties": {
+        "id": "station_picentia",
+        "category": "vicus",
+        "name": "Picentia",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Pontecagnano Faiano. Resettled with Picentes displaced from the Adriatic coast in 268 BCE; whether it sat on the Via Popilia's mainline or a coastal spur is not fully settled in the sources found.",
+        "sources": [
+          "Princeton Encyclopedia of Classical Sites, s.v. Picentia (via search)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.0578,
+          40.6177
+        ]
+      },
+      "properties": {
+        "id": "station_eburum",
+        "category": "mansio",
+        "name": "Eburum",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Eboli, the gateway from the Sele coastal plain into the Vallo di Diano interior that the road follows south.",
+        "sources": [
+          "https://www.trismegistos.org/place/14336"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.4064,
+          40.5578
+        ]
+      },
+      "properties": {
+        "id": "station_acerronia",
+        "category": "mutatio",
+        "name": "Acerronia",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Near modern Auletta, a waystation on the Vallo di Diano stretch of the road between Eburum and the Nares Lucanae narrows.",
+        "sources": [
+          "https://www.cilentano.it",
+          "https://www.robertovitogerardo.it"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.365,
+          40.52
+        ]
+      },
+      "properties": {
+        "id": "station_nares_lucanae",
+        "category": "statio",
+        "name": "Nares Lucanae",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "\"The Narrows of Lucania,\" a mountain passage near Sicignano degli Alburni whose exact location is disputed between three nearby candidate sites — shipped here as the interpolated corridor midpoint rather than a specific excavated spot.",
+        "sources": [
+          "https://pleiades.stoa.org/places/442685/nares-lucanae",
+          "https://www.trismegistos.org/place/33111"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.5311,
+          40.4008
+        ]
+      },
+      "properties": {
+        "id": "station_atina_lucana",
+        "category": "mansio",
+        "name": "Atina",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Atena Lucana, one of a tight cluster of stations serving the Vallo di Diano valley floor.",
+        "sources": [
+          "https://www.robertovitogerardo.it"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.6014,
+          40.3958
+        ]
+      },
+      "properties": {
+        "id": "station_consilinum",
+        "category": "mansio",
+        "name": "Consilinum",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Sala Consilina preserves the Roman name almost unchanged, one of the more securely identified stops in the Vallo di Diano.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sala_Consilina"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.61,
+          40.4
+        ]
+      },
+      "properties": {
+        "id": "station_marcellianum",
+        "category": "vicus",
+        "name": "Marcellianum",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A roadside settlement at San Giovanni in Fonte, later home to a paleochristian baptistery Cassiodorus is recorded visiting in the early 6th century.",
+        "sources": [
+          "Comune di Sala Consilina, local history pages (via search)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.5372,
+          40.3736
+        ]
+      },
+      "properties": {
+        "id": "station_tegianum",
+        "category": "mansio",
+        "name": "Tegianum",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Teggiano, another Vallo di Diano stop on the road south toward the Lucanian mountains.",
+        "sources": [
+          "https://www.robertovitogerardo.it"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.498879,
+          40.518218
+        ]
+      },
+      "properties": {
+        "id": "station_forum_popilii_lucania",
+        "category": "mansio",
+        "name": "Forum Popilii",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Polla — the town literally named for the consul who built this road, Publius Popillius Laenas. Site of the Lapis Pollae milestone (CIL I2 638), a Republican-era inscription recording cumulative distances from here to Nuceria, Capua, Muranum, Cosentia, Valentia and Regium — the single best source for the road's overall shape.",
+        "sources": [
+          "Lapis Pollae, CIL I2 638",
+          "https://en.wikipedia.org/wiki/Forum_Popilii",
+          "https://www.trismegistos.org/place/33069"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.05,
+          39.9667
+        ]
+      },
+      "properties": {
+        "id": "station_nerulum",
+        "category": "mansio",
+        "name": "Nerulum",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "An ancient Lucanian town taken by Rome in 317 BCE (Livy). Modern identification is contested between Rotonda and Lagonegro; the Barrington Atlas favors Rotonda, used here.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Nerulum",
+          "Barrington Atlas (via secondary citation)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.133,
+          39.85
+        ]
+      },
+      "properties": {
+        "id": "station_muranum",
+        "category": "mansio",
+        "name": "Muranum",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": 14,
+        "identified": true,
+        "notes": "Modern Morano Calabro. Fixed both by the Antonine Itinerary (14 Roman miles from Nerulum) and independently by the Lapis Pollae (74 miles from Forum Popilii) — a rare case where two ancient sources agree.",
+        "sources": [
+          "Itinerarium Antonini (Regium-Capuam route)",
+          "Lapis Pollae, CIL I2 638",
+          "https://en.wikipedia.org/wiki/Muranum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.2044,
+          39.8172
+        ]
+      },
+      "properties": {
+        "id": "station_caprasia",
+        "category": "mutatio",
+        "name": "Caprasia",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Near modern Castrovillari (contrada Ciparsia, which preserves the name). Smith's Dictionary of Greek and Roman Geography places it on this stretch, roughly 28 miles from Consentia, though its exact position relative to the next station wasn't confirmable enough to attach that figure here.",
+        "sources": [
+          "Smith's Dictionary of Greek and Roman Geography, s.v. Consentia (via search)",
+          "https://en.wikipedia.org/wiki/Caprasia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.2167,
+          39.6167
+        ]
+      },
+      "properties": {
+        "id": "station_interamnium",
+        "category": "mutatio",
+        "name": "Interamnium",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern San Lorenzo del Vallo — the name means \"between two rivers,\" describing its position between the Crati's tributaries on the way down to Consentia.",
+        "sources": [
+          "Digital Atlas of the Roman Empire (DARE), imperium.ahlfeldt.se/places/22548.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.2539,
+          39.2985
+        ]
+      },
+      "properties": {
+        "id": "station_consentia",
+        "category": "mansio",
+        "name": "Consentia",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Cosenza, capital of the Bruttii — the Lapis Pollae places it 123 Roman miles from Forum Popilii, a major waypoint on the road's long southern leg.",
+        "sources": [
+          "Lapis Pollae, CIL I2 638",
+          "https://en.wikipedia.org/wiki/Cosenza"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.15,
+          39.15
+        ]
+      },
+      "properties": {
+        "id": "station_ad_fluvium_sabatum",
+        "category": "statio",
+        "name": "Ad Fluvium Sabatum",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": 28,
+        "identified": false,
+        "notes": "A river-crossing station where the road forded the Savuto, in the Savuto-Reventino area. The exact ford location is still debated in the modern archaeological literature and has never been pinned to one excavated spot.",
+        "sources": [
+          "Roberto Spadea et al., \"La via Regio-Capuam nell'area del Savuto-Reventino,\" academia.edu/39901904"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3167,
+          38.9667
+        ]
+      },
+      "properties": {
+        "id": "station_ad_turres_bruttium",
+        "category": "mutatio",
+        "name": "Ad Turres",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Modern Sambiase, now part of Lamezia Terme, named for a pair of Roman watchtowers that once stood here. The station also appears on the Tabula Peutingeriana.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Nicastro"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.0972,
+          38.675
+        ]
+      },
+      "properties": {
+        "id": "station_vibo_valentia",
+        "category": "mansio",
+        "name": "Vibo Valentia",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A Latin colony founded in 192 BCE on the site of the Greek city of Hipponion. The Antonine Itinerary's mileage from Ad Turres to here does not clear a straight-line sanity check against these two towns' real coordinates, so no figure is claimed for this leg.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Vibo_Valentia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.933,
+          38.55
+        ]
+      },
+      "properties": {
+        "id": "station_nicotera",
+        "category": "mansio",
+        "name": "Nicotera",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "One of the few stations on this road to keep its ancient name essentially unchanged into the modern town.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Nicotera"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8028,
+          38.2853
+        ]
+      },
+      "properties": {
+        "id": "station_ad_mallias",
+        "category": "mutatio",
+        "name": "Ad Mallias",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "Modern Bagnara Calabra, on the coast road running down toward the Strait of Messina crossing.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Bagnara_Calabra"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.633,
+          38.233
+        ]
+      },
+      "properties": {
+        "id": "station_columna",
+        "category": "statio",
+        "name": "Columna",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": 14,
+        "identified": false,
+        "notes": "\"Columna Rhegia,\" a marker station near modern Cannitello at the narrowest ferry crossing to Sicily — the site was never definitively excavated, so several nearby candidate points have been proposed.",
+        "sources": [
+          "Local Calabrian antiquarian sources (via search); site position approximate"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.6619,
+          38.1113
+        ]
+      },
+      "properties": {
+        "id": "station_regium",
+        "category": "mansio",
+        "name": "Regium",
+        "road": "Via Popilia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Modern Reggio Calabria, the road's terminus at the Strait of Messina — the closest crossing point to Sicily and the end of a road that ran the full length of the Italian peninsula's toe.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Reggio_Calabria"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
