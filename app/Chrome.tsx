@@ -9,7 +9,7 @@ import { clearOverlays, countActiveOverlays, LAYER_GROUPS, toggleLayer, useLayer
 import { CATEGORY_GROUPS } from "./poiCategories";
 import { toggleHiddenCategory, useHiddenCategories } from "./useHiddenCategories";
 import { useIsMobile } from "./useIsMobile";
-import { usePoiPanel, selectPoi } from "./usePoiPanel";
+import { usePoiPanel, selectPoi, clearPoi } from "./usePoiPanel";
 import { useKeyboardShortcuts } from "./useKeyboardShortcuts";
 import EpochModal from "./EpochModal";
 import CurrencyConverter from "./CurrencyConverter";
@@ -32,10 +32,17 @@ export default function Chrome() {
   const hiddenCategories = useHiddenCategories();
   const layersRef = useRef<HTMLDivElement>(null);
   const isMobile = useIsMobile();
-  const poiOpen = !!usePoiPanel();
+  const selectedPoi = usePoiPanel();
+  const poiOpen = !!selectedPoi;
   // Hidden while the mobile Place details bottom sheet covers this corner of the screen —
   // same fix applied to ZoomControl/Ruler/Legend, the rest of the bottom-right FAB stack.
   const hideLayersForSheet = isMobile && poiOpen;
+  // Desktop-only: real Google Maps collapses the search card into a back-arrow + place name
+  // header the moment a place is selected, instead of leaving a separate details panel floating
+  // below an unrelated search box. Mobile keeps its own bottom-sheet header (drag handle + X)
+  // since that's already the correct mobile pattern — this merge is desktop-only parity work.
+  const headerMode = !isMobile && !!selectedPoi;
+  const selectedName = selectedPoi?.props?.name_latin || selectedPoi?.props?.name_english || "";
 
   const [epochModalOpen, setEpochModalOpen] = useState(false);
 
@@ -69,6 +76,16 @@ export default function Chrome() {
     document.addEventListener("mousedown", onDocClick);
     return () => document.removeEventListener("mousedown", onDocClick);
   }, [resultsOpen]);
+
+  // A place selected while the search dropdown/hamburger menu happened to be open would otherwise
+  // leave those floating below the new back-arrow + name header, disconnected from any visible
+  // search box — close both the moment the header takes over.
+  useEffect(() => {
+    if (headerMode) {
+      setResultsOpen(false);
+      setMenuOpen(false);
+    }
+  }, [headerMode]);
 
   useEffect(() => {
     if (!layersOpen) return;
@@ -212,45 +229,74 @@ export default function Chrome() {
           overflow: "hidden",
         }}
       >
-        {/* Search row */}
+        {/* Search row — becomes a back-arrow + place-name header on desktop while a place is
+            selected, exactly like real Google Maps merging the search box into the details
+            panel's own header instead of leaving two disconnected floating cards. */}
         <div style={{ display: "flex", alignItems: "center", height: isMobile ? 46 : 48, padding: isMobile ? "0 6px" : "0 4px 0 14px" }}>
-          {/* Menu (hamburger) */}
-          <IconBtn label="Menu" onClick={() => setMenuOpen((o) => !o)}>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--icon)">
-              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-            </svg>
-          </IconBtn>
-          <input
-            ref={searchInputRef}
-            placeholder="Search Roman Maps"
-            title="Search Roman Maps (press / to focus)"
-            value={query}
-            onChange={(e) => onQueryChange(e.target.value)}
-            onFocus={() => {
-              if (onboardingHint.visible) onboardingHint.dismiss();
-              results.length > 0 && setResultsOpen(true);
-            }}
-            onKeyDown={onSearchKeyDown}
-            style={{
-              flex: 1,
-              height: "100%",
-              border: 0,
-              outline: "none",
-              padding: "0 12px",
-              fontSize: 16,
-              color: "var(--text)",
-              background: "transparent",
-            }}
-          />
-          <IconBtn label="Search" onClick={() => results[0] && flyToPlace(results[0])}>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent)">
-              <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
-            </svg>
-          </IconBtn>
+          {headerMode ? (
+            <>
+              <IconBtn label="Back to search" onClick={() => clearPoi()}>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--icon)">
+                  <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
+                </svg>
+              </IconBtn>
+              <div
+                className="roman-label"
+                style={{
+                  flex: 1,
+                  fontSize: 16,
+                  fontWeight: 600,
+                  color: "var(--text)",
+                  whiteSpace: "nowrap",
+                  overflow: "hidden",
+                  textOverflow: "ellipsis",
+                  padding: "0 8px",
+                }}
+              >
+                {selectedName}
+              </div>
+            </>
+          ) : (
+            <>
+              {/* Menu (hamburger) */}
+              <IconBtn label="Menu" onClick={() => setMenuOpen((o) => !o)}>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--icon)">
+                  <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                </svg>
+              </IconBtn>
+              <input
+                ref={searchInputRef}
+                placeholder="Search Roman Maps"
+                title="Search Roman Maps (press / to focus)"
+                value={query}
+                onChange={(e) => onQueryChange(e.target.value)}
+                onFocus={() => {
+                  if (onboardingHint.visible) onboardingHint.dismiss();
+                  results.length > 0 && setResultsOpen(true);
+                }}
+                onKeyDown={onSearchKeyDown}
+                style={{
+                  flex: 1,
+                  height: "100%",
+                  border: 0,
+                  outline: "none",
+                  padding: "0 12px",
+                  fontSize: 16,
+                  color: "var(--text)",
+                  background: "transparent",
+                }}
+              />
+              <IconBtn label="Search" onClick={() => results[0] && flyToPlace(results[0])}>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent)">
+                  <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                </svg>
+              </IconBtn>
+            </>
+          )}
         </div>
       </div>
 
-      {onboardingHint.visible && !resultsOpen && !menuOpen && (
+      {onboardingHint.visible && !resultsOpen && !menuOpen && !headerMode && (
         <div
           style={{
             marginTop: 8,
@@ -291,7 +337,7 @@ export default function Chrome() {
         </div>
       )}
 
-      {resultsOpen && results.length > 0 && (
+      {resultsOpen && results.length > 0 && !headerMode && (
         <div
           style={{
             marginTop: 8,
@@ -339,7 +385,7 @@ export default function Chrome() {
         </div>
       )}
 
-      {menuOpen && (
+      {menuOpen && !headerMode && (
         <div
           style={{
             marginTop: 8,

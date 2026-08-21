@@ -360,27 +360,33 @@ export default function PlaceDetails() {
           }}
         />
       )}
-      <button
-        title="Close"
-        onClick={() => clearPoi()}
-        style={{
-          position: "absolute",
-          top: 10,
-          right: 10,
-          width: 32,
-          height: 32,
-          borderRadius: 999,
-          background: "rgba(255,255,255,.95)",
-          display: "grid",
-          placeItems: "center",
-          boxShadow: "var(--shadow-1)",
-          zIndex: 1,
-        }}
-      >
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--icon)">
-          <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
-        </svg>
-      </button>
+      {/* Desktop's close affordance now lives in the merged search-card header (the back arrow
+          Chrome.tsx renders in place of the search box) — this floating X would be a redundant
+          second close button right on top of it. Mobile keeps it: the bottom sheet has no header
+          row of its own, just the drag handle. */}
+      {isMobile && (
+        <button
+          title="Close"
+          onClick={() => clearPoi()}
+          style={{
+            position: "absolute",
+            top: 10,
+            right: 10,
+            width: 32,
+            height: 32,
+            borderRadius: 999,
+            background: "rgba(255,255,255,.95)",
+            display: "grid",
+            placeItems: "center",
+            boxShadow: "var(--shadow-1)",
+            zIndex: 1,
+          }}
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--icon)">
+            <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+          </svg>
+        </button>
+      )}
 
       {/* Title block */}
       <div style={{ padding: "14px 48px 4px 16px" }}>
