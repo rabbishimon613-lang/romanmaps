@@ -40,12 +40,18 @@ import { corinthEntry } from "./corinthDescriptions";
 import { vindolandaEntry } from "./vindolandaDescriptions";
 import { SITE_META, SITES } from "./sites";
 
-// [06-P0-2] curate-buildings: one *Entry(name) lookup fn per curated site, keyed by the site slug
-// used in each building's `site` property. A plain Record replaced a 22-deep nested ternary here —
-// see FEATURE_BACKLOG.md's "cloud shift 41" note for why. Every *Entry fn shares the same shape
-// (english?/category?/extant_117ce?/built?/destroyed?/description) even though each site's own
-// file names its type distinctly (LuniEntry, ItalicaEntry, ...) — typed loosely on purpose so
-// adding a new site is a two-line diff: one import above, one row below.
+// [06-P0-2] curate-buildings: one *Entry(name, osmId?) lookup fn per curated site, keyed by the
+// site slug used in each building's `site` property. A plain Record replaced a 22-deep nested
+// ternary here — see FEATURE_BACKLOG.md's "cloud shift 41" note for why. Every *Entry fn shares
+// the same shape (english?/category?/extant_117ce?/built?/destroyed?/description) even though
+// each site's own file names its type distinctly (LuniEntry, ItalicaEntry, ...) — typed loosely
+// on purpose so adding a new site is a two-line diff: one import above, one row below.
+//
+// The optional second `osmId` argument exists to fix a real limitation flagged by Shift 44's
+// Vindolanda batch: name-only matching can't give two identically-named polygons two different
+// answers (e.g. two "Bath House" footprints from different fort-rebuild periods). A site file's
+// `*Entry` function can ignore it (every existing file does — name alone has always been unique
+// enough for them) or key on it once a future batch has real per-osm_id research to justify it.
 type CuratedEntry = {
   english?: string;
   category?: string;
@@ -54,7 +60,7 @@ type CuratedEntry = {
   destroyed?: number;
   description: string;
 };
-const SITE_ENTRY_LOOKUP: Record<string, (name: string) => CuratedEntry | undefined> = {
+const SITE_ENTRY_LOOKUP: Record<string, (name: string, osmId?: number) => CuratedEntry | undefined> = {
   ostia: ostiaEntry,
   pompeii: pompeiiEntry,
   herculaneum: herculaneumEntry,
@@ -995,7 +1001,7 @@ export default function Map() {
           const siteMeta = SITE_META[site] || { display: site, province: "" };
           // Strip Regio.Insula parenthetical for a cleaner display name
           const displayName = rawName.replace(/\s*\([^)]*\)\s*$/, "").trim() || rawName || `Building ${p.osm_id}`;
-          const entry = SITE_ENTRY_LOOKUP[site]?.(rawName);
+          const entry = SITE_ENTRY_LOOKUP[site]?.(rawName, p.osm_id);
           selectPoi(
             {
               id: `${site}-${p.osm_id}`,
