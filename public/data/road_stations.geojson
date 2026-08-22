@@ -209,10 +209,11 @@
         "road": "Via Appia",
         "distance_from_previous_mp": 9,
         "identified": true,
-        "notes": "Sinuessa marked the point where the Via Appia left the Tyrrhenian coast for good and turned inland toward Capua. Its inn, the Tabernae Caediciae, was well known enough that Horace mentioned staying there, and the town's warm sulfur springs drew visitors on top of road traffic.",
+        "notes": "Sinuessa marked the point where the Via Appia left the Tyrrhenian coast for good and turned inland toward Capua — and, from 95 CE, the point where Domitian's new coastal Via Domitiana forked off south along the shore toward Cumae and Puteoli. Its inn, the Tabernae Caediciae, was well known enough that Horace mentioned staying there, and the town's warm sulfur springs drew visitors on top of road traffic.",
         "sources": [
           "Itin. Ant. 108 m.p. ab Urbe",
-          "https://topostext.org/place/411139USin"
+          "https://topostext.org/place/411139USin",
+          "Statius, Silvae 4.3 (Via Domitiana's construction, forking from the Appia here)"
         ],
         "confidence": "high"
       }
@@ -10998,6 +10999,102 @@
           "https://en.wikipedia.org/wiki/Lindum_Colonia"
         ],
         "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.885,
+          41.098
+        ]
+      },
+      "properties": {
+        "id": "station_ad_savonem",
+        "category": "statio",
+        "name": "Ad Savonem (Safo fl.)",
+        "road": "Via Domitiana",
+        "distance_from_previous_mp": 7,
+        "identified": false,
+        "notes": "The Tabula Peutingeriana marks the Via Domitiana's crossing of the river Savo only as \"Safo fl.\" (the river itself), about 7 Roman miles south of Sinuessa — a different crossing from the well-known Pons Campanus, which carries the inland Via Appia over the same river near Casilinum. No bridge structure or exact ford has been pinpointed archaeologically for this crossing; the point given here is an approximate placement near the modern Savone river mouth.",
+        "sources": [
+          "Tabula Peutingeriana, Segment VI (K. Miller, Itineraria Romana, entry 347, \"Safo fl.\")",
+          "Statius, Silvae 4.3 (river-crossing context of the road)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.9417,
+          41.0337
+        ]
+      },
+      "properties": {
+        "id": "station_pons_vulturni",
+        "category": "bridge",
+        "name": "Pons Vulturni (bridge over the Volturnus)",
+        "road": "Via Domitiana",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "The Via Domitiana's centerpiece engineering feat, a bridge over the Volturnus near its mouth that Statius personifies and celebrates at length — the river-god Vulturnus boasts of finally \"carrying a bridge\" instead of scattering into marshy fords, a passage written to mark the road's 95 CE dedication. The adjoining Roman colonia of Volturnum (founded 194 BCE) grew up beside the crossing; masonry from the Roman bridge was later reused as the base of the medieval Castel Volturno fortress on the same spot.",
+        "sources": [
+          "Statius, Silvae 4.3.67–94",
+          "Pleiades place 433210 (Volturnum)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0313,
+          40.9214
+        ]
+      },
+      "properties": {
+        "id": "station_liternum",
+        "category": "vicus",
+        "name": "Liternum",
+        "road": "Via Domitiana",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "A Roman colonia founded in 194 BCE on the coastal plain between the Volturnus mouth and Cumae, which the new Via Domitiana ran directly through in 95 CE. Scipio Africanus retired here after his political fall and was buried nearby, a detail Seneca later used the town to reflect on — giving the road's route through Liternum a literary weight beyond its role as a waystation.",
+        "sources": [
+          "Seneca, Epistulae 86",
+          "Pleiades/Barrington Atlas Map 44"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0977,
+          40.8338
+        ]
+      },
+      "properties": {
+        "id": "station_in_vineis",
+        "category": "mutatio",
+        "name": "In Vineis",
+        "road": "Via Domitiana",
+        "distance_from_previous_mp": 3,
+        "identified": true,
+        "notes": "A minor waystation — the name means \"among the vineyards\" — recorded on the Tabula Peutingeriana between Cumae and Puteoli, generally identified with the site of Arco Felice, where Domitian's engineers cut a dramatic passage through the hill of Monte Grillo to carry the road toward Puteoli. The still-standing arch there (Arco Felice Vecchio, roughly 20m tall) is one of the road's clearest surviving monuments.",
+        "sources": [
+          "Tabula Peutingeriana, Segment VI (K. Miller, Itineraria Romana)",
+          "archeoflegrei.it, \"I Campi Flegrei nella Tabula Peutingeriana\""
+        ],
+        "confidence": "medium"
       }
     }
   ]

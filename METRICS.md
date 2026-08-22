@@ -33,8 +33,8 @@ references.)
 | Measure | Value | Notes |
 |---|---:|---|
 | POIs in `pois.geojson` | 481 | the curated place canon |
-| Records in the 29 thematic files | 1376 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
-| **Curated places, total** | **1,857** | |
+| Records in the 29 thematic files | 1380 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
+| **Curated places, total** | **1,861** | |
 | Description of 60+ words | 481 · **100.0%** | measured on `notes`; 0 still thin |
 | Has an image | 257 · **53.4%** | |
 | Has an ancient source | 177 · **36.8%** | |
