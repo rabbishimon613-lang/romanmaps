@@ -305,6 +305,26 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
   for whoever picks this up next: don't run more than one WebSearch-heavy agent per shift if a
   prior agent in the same session may have already spent most of the budget** — this shift's own
   three research agents before this one likely account for the exhaustion.
+- [ ] **Via Herculia is Tetrarchic (built under Diocletian and Maximianus "Herculius," c. 293-305
+  CE, named after the latter), not Trajanic — do NOT add it as a 117 CE road.** This shift went
+  in on a wrong premise (conflating it with the genuinely Trajanic Via Traiana, which it happens
+  to physically cross at Aequum Tuticum) and a dedicated research pass caught the error before
+  anything was written: every source found (P.G. Buck, "The Via Herculia," *PBSR* 39 (1971) 66-87;
+  Italian Wikipedia; a 2019 MDPI/Geosciences geoarchaeological study) agrees on the Tetrarchic
+  date, with a later repair recorded under Maxentius in 311 CE. It postdates this map's snapshot
+  by 176+ years and should not be added under any name — same discipline as the project already
+  applies to Hadrian's Wall (started 122) or the Baths of Caracalla (216). The research did surface
+  three real, useful things for whoever wants to look at this road as a later-era note or picks a
+  genuinely Trajanic road instead: (1) three of its towns are already curated `road_stations.geojson`
+  entries under different, correct roads — Venusia (`station_venusia`, Via Appia), Aequum Tuticum
+  (`station_aequum_tuticum`, Via Traiana, whose own notes already mention the Herculia crossing),
+  and Nerulum/Consilinum (Via Popilia) — don't duplicate these if a later-era Herculia layer is
+  ever built; (2) Potentia (Potenza), Anxia (Anzi, under active excavation by the University of
+  Basilicata's "Ritorno ad Anxia" project) and Grumentum (Grumento Nova) are real, well-documented
+  nodes with no existing curated entry, genuinely new content if this road is revisited under its
+  correct multi-century-later date; (3) no ancient itinerary lists this road's stations in
+  sequence — everything is scattered milestones and modern survey, so most inter-station distances
+  are simply unattested and shouldn't be invented even in a later-era pass.
 
 ## Shipped (moved from above; newest on top)
 
