@@ -16,7 +16,40 @@ export type CorinthEntry = {
   description: string;
 };
 
-export const CORINTH_LOOKUP: Record<string, CorinthEntry> = {};
+export const CORINTH_LOOKUP: Record<string, CorinthEntry> = {
+  "Αγορά αρχαίας Κορίνθου": {
+    english: "Agora of Ancient Corinth (Roman Forum)",
+    category: "civic",
+    extant_117ce: true,
+    built: -44,
+    description:
+      "Julius Caesar's colonists laid out Corinth's Roman forum in 44 BCE atop the ruined Greek marketplace, and it grew into a plaza some 200 meters long, ringed by shops, temples and stoas. At its center stood the marble Bema, the raised platform where the proconsul Gallio tried the Apostle Paul around 51 CE. The forum still bustled as the marketplace of Achaea's provincial capital when Trajan died in 117.",
+  },
+  "Ιουλία βασιλική": {
+    english: "Julia Basilica",
+    category: "civic",
+    extant_117ce: true,
+    built: -1,
+    description:
+      "Corinth's colonists raised the Julian Basilica on the forum's east side around 1 BCE, dedicating it to the Julio-Claudian imperial family with more than a dozen marble statues of Augustus and his heirs. The two-story hall rose on a podium over four meters high and served as the law court for the province of Achaea. It still dominated the forum's east end when Trajan died in 117.",
+  },
+  "Νότια στοά": {
+    english: "South Stoa",
+    category: "civic",
+    extant_117ce: true,
+    built: -300,
+    description:
+      "Corinthian builders raised the South Stoa around 300 BCE as one of the largest porticoed buildings in Greece, its shaded arcade lined with wine shops cooled by individual wells behind 71 Doric columns. After Julius Caesar refounded Corinth as a Roman colony, builders converted its rooms into offices, a fountain house and the city council's meeting hall. The old Greek colonnade, stretching some 164 meters, still framed the forum's south side in 117.",
+  },
+  "Corinth amphitheater": {
+    english: "Amphitheatre of Corinth",
+    category: "amphitheater",
+    extant_117ce: true,
+    built: -40,
+    description:
+      "Corinth's Roman colonists cut an earthen amphitheatre into a ravine at the city's edge soon after Julius Caesar refounded the colony, one of only a few ever built anywhere in the Greek world. Spectators packed its sloped earthen banks, not marble tiers, to watch gladiators and beast hunts. It had entertained the city for over 150 years by the time Trajan died in 117.",
+  },
+};
 
 /** Look up a matching description for an OSM building name. */
 export function corinthEntry(name: string | null | undefined): CorinthEntry | undefined {
