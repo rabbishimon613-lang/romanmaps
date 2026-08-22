@@ -907,6 +907,78 @@
         "image_credit": "The Cave of Hermes, gymnasium of ancient Thera, 1919 (Baud-Bovy/Boissonnas) · Wikimedia Commons",
         "image_alt": "Early 20th-century photograph of the Cave of Hermes inside the gymnasium of ancient Thera"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.8768,
+          37.9104
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_corinth",
+        "name": "Corinth",
+        "category": "gymnasium",
+        "one_line": "Corinth's Roman colonists raised a new gymnasium on the city's northern edge in the 1st century CE, replacing an earlier Hellenistic training ground so completely that no trace of it has ever surfaced. The complex wrapped around the spring-fed Fountain of Lerna, drawing cold water straight from bedrock into a marble-lined pool for bathers. Archaeologists excavating the site since 1965 have pulled 126 marble sculptures spanning nine centuries from its baths and courtyards. Corinthian athletes were still training here when Trajan died in 117 CE.",
+        "province": "Achaea",
+        "modern_location": "Ancient Corinth, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.ascsa.edu.gr/uploads/media/hesperia/147615.pdf",
+          "https://corinth.ascsa.net/id/corinth/monument/gymnasium"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.4647,
+          36.9825
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_termessos",
+        "name": "Termessos",
+        "category": "gymnasium",
+        "one_line": "Termessos raised its gymnasium and attached bathhouse under Attalos II of Pergamon, between 159 and 138 BCE, one of the last grand Hellenistic athletic complexes built before Rome absorbed Anatolia. Masons framed the two-story Doric building with such imposing arches that the city built a second gymnasium nearby to match its ambitions. Perched roughly 1,000 meters up in the Taurus Mountains, the site had already turned back Alexander the Great's own army a generation before construction began. Wrestlers and boxers still trained inside its colonnades in 117 CE, nearly three centuries after it was finished.",
+        "province": "Lycia et Pamphylia",
+        "modern_location": "Antalya, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.turkishmuseums.com/museum/detail/1974-antalya-termessos-archeological-site/1974/4",
+          "http://www.dlir.org/archive/archive/files/arkeoloji_dergisi_v-5_p111-144_e7b4d32cb4.pdf"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.5272,
+          37.8528
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_magnesia_maeander",
+        "name": "Magnesia on the Maeander",
+        "category": "gymnasium",
+        "one_line": "Magnesia's builders did not raise the city's gymnasium until the 2nd or 3rd century CE, long after the city had already made its name with a lavish altar to Artemis Leucophryene two centuries earlier. The finished complex packed baths, changing rooms and a colonnaded palaestra along the Lethaios river, and it produced an ephebe statue of a boy shrugging a felt cloak over his shoulders after training, now in Istanbul's Archaeological Museum. Magnesia built a second, nearly identical gymnasium on the opposite side of the city to keep pace with demand. In 117 CE the city still had no gymnasium at all.",
+        "province": "Asia",
+        "modern_location": "Germencik, Aydin Province, Turkey",
+        "extant_117ce": false,
+        "sources": [
+          "https://turkisharchaeonews.net/site/magnesia-meander",
+          "https://kulturenvanteri.com/en/yer/magnesia/"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }

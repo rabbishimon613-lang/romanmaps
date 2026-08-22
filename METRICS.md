@@ -33,8 +33,8 @@ references.)
 | Measure | Value | Notes |
 |---|---:|---|
 | POIs in `pois.geojson` | 481 | the curated place canon |
-| Records in the 29 thematic files | 1380 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
-| **Curated places, total** | **1,861** | |
+| Records in the 29 thematic files | 1390 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
+| **Curated places, total** | **1,871** | |
 | Description of 60+ words | 481 · **100.0%** | measured on `notes`; 0 still thin |
 | Has an image | 257 · **53.4%** | |
 | Has an ancient source | 177 · **36.8%** | |
@@ -43,7 +43,7 @@ references.)
 | Sites with curated building descriptions | 32 / 40 · **80.0%** | athens, baalbek, baiae, beneventum, brixia, capua, corinth, cumae, delphi, djemila, ephesus, herculaneum, italica, jerash, leptisMagna, luni, merida, milan, ostia, paestum, palestrina, palmyra, pompeii, portus, rimini, sabratha, timgad, tivoli, trier, verona, vindolanda, volubilis (`[06-P0-2]`, standing) |
 | Validator errors | **0** | |
 | Validator warnings | 17 | reviewed; see the standing-warnings note |
-| Cross-file name collisions (<150 m) | 142 | the dedupe backlog `[12-P0-1]` has to resolve |
+| Cross-file name collisions (<150 m) | 144 | the dedupe backlog `[12-P0-1]` has to resolve |
 | Cold-load LCP | not measured | needs a dev server; blocked by `[15-P0-1]` |
 
 ## 2026-08-21
