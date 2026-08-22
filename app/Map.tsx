@@ -32,6 +32,7 @@ import { paestumEntry } from "./paestumDescriptions";
 import { portusEntry } from "./portusDescriptions";
 import { cumaeEntry } from "./cumaeDescriptions";
 import { baiaeEntry } from "./baiaeDescriptions";
+import { beneventumEntry } from "./beneventumDescriptions";
 import { capuaEntry } from "./capuaDescriptions";
 import { tivoliEntry } from "./tivoliDescriptions";
 import { palestrinaEntry } from "./palestrinaDescriptions";
@@ -75,6 +76,7 @@ const SITE_ENTRY_LOOKUP: Record<string, (name: string) => CuratedEntry | undefin
   portus: portusEntry,
   cumae: cumaeEntry,
   baiae: baiaeEntry,
+  beneventum: beneventumEntry,
   capua: capuaEntry,
   tivoli: tivoliEntry,
   palestrina: palestrinaEntry,
