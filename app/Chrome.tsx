@@ -12,8 +12,10 @@ import { useIsMobile } from "./useIsMobile";
 import { usePoiPanel, selectPoi, clearPoi } from "./usePoiPanel";
 import { useKeyboardShortcuts } from "./useKeyboardShortcuts";
 import EpochModal from "./EpochModal";
+import Entrance from "./Entrance";
 import CurrencyConverter from "./CurrencyConverter";
 import { useOnboardingHint } from "./useOnboardingHint";
+import { useEntrance } from "./useEntrance";
 import { activateRuler } from "./useRuler";
 import { openTourPanel } from "./useTour";
 import { openPlacesInView } from "./usePlacesInView";
@@ -51,6 +53,7 @@ export default function Chrome() {
   const [resultsOpen, setResultsOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
   const onboardingHint = useOnboardingHint();
+  const entrance = useEntrance();
 
   useEffect(() => {
     if (!menuOpen) return;
@@ -526,6 +529,7 @@ export default function Chrome() {
         {!isMobile && <span style={{ color: "var(--text-2)" }}>· The Empire at its peak</span>}
       </button>
       {epochModalOpen && <EpochModal onClose={() => setEpochModalOpen(false)} />}
+      {entrance.visible && <Entrance onClose={entrance.dismiss} />}
 
       {/* Layers. Desktop: bottom-right FAB stack. Mobile: the round button Google Maps parks
           under the search pill, top-right, with its panel dropping from there. */}
