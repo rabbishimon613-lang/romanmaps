@@ -208,28 +208,46 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
 
 ## New ideas spotted this shift (2026-08-22, cloud shift 44)
 
-- [ ] **The curate-buildings lookup pattern has a real architecture limitation: it matches purely
+- [x] **The curate-buildings lookup pattern has a real architecture limitation: it matches purely
   by OSM `name` string, with no way to give two identically-named polygons two different
-  answers.** Hit this concretely at Vindolanda — two "Bath House" polygons and three "Temple"
-  polygons are physically distinct structures from different fort-rebuild periods with different
-  117 CE status (one bath house pre-dates Hadrian and was standing in 117; the other is a 3rd-
-  century building). Every existing `app/*Descriptions.ts` file assumes a name is unique enough
-  within its site to carry one true answer — true for every site so far, but Vindolanda's
-  rebuilt-in-place history breaks it, and any site with two "Chiesa"-style generic-tagged
-  buildings of different eras would break it the same way. Dropped both name-families at
-  Vindolanda rather than guess wrong for whichever polygon a written entry wouldn't describe (see
-  `app/vindolandaDescriptions.ts`'s own header). A future shift wanting to unlock those entries, or
-  hitting the same wall at a new site, would need to extend the lookup to accept `osm_id` (already
-  present on every building feature) as a tiebreaker, not just name — real, bounded scope, not
-  urgent.
-- [ ] **`curate-buildings [06-P0-2]` has 12 sites left.** Rome (289 named features, by far the
+  answers.** *(2026-08-22, cloud shift 45: the plumbing half is done — every `*Entry` lookup
+  function now receives an optional `osmId` second argument (`SITE_ENTRY_LOOKUP[site]?.(rawName,
+  p.osm_id)` in `app/Map.tsx`), additive and non-breaking since every existing site file still
+  ignores it. Vindolanda's own two dropped name-families ("Bath House" x2, "Temple" x3) are
+  **still not restored** — that needs real per-osm_id research (which specific polygon is which
+  fort period) that this shift didn't attempt, not just the code change. Left open for whoever
+  wants to do that research pass.)*
+- [ ] **`curate-buildings [06-P0-2]` has 10 sites left.** Rome (289 named features, by far the
   biggest remaining site — worth scoping carefully or splitting across multiple passes rather than
   assuming a normal-sized batch), aquincum and xanten (both confirmed too-thin by Shift 43 — don't
-  re-check expecting a normal batch), and five more modern-city-sized sites (verona, ravenna,
-  milan, rimini, brescia) — worth a real named-building count check before claiming any of them.
-  Beneventum (this shift) is a useful data point that modern-city size alone doesn't predict
-  thinness the way Xanten/Aquincum suggested — it turned out to have 8 real, substantial buildings
-  including the Arch of Trajan.
+  re-check expecting a normal batch), and three more modern-city-sized sites (verona, ravenna,
+  milan) — checked this shift, all three have real named-building files worth a look: Verona has
+  Arco dei Gavi, Teatro Romano, Tempio di Giove Lustrale, Porta Borsari and Porta Leoni (Roman
+  gates — verify Porta Nuova/San Giorgio aren't Sanmicheli-era Renaissance rebuilds before
+  including them); Ravenna's named features all looked post-Roman on inspection (5th-6th c.
+  Christian basilicas, medieval gates) — worth a real research pass to confirm there's nothing
+  period-appropriate before skipping it outright, rather than assuming from names alone; Milan has
+  a real Anfiteatro Romano plus a Domus Nostra, everything else in its 138 named features is later
+  Christian basilicas or modern clutter. Brescia and Rimini (this shift) are a further data point
+  that modern-city size alone doesn't predict thinness — both had real, dateable Roman cores.
+
+## New ideas spotted this shift (2026-08-22, cloud shift 45)
+
+- [ ] **Ravenna's OSM building extract may have zero genuine 117 CE content** — every named
+  feature spotted in a quick pass (basilicas San Vitale/Sant'Apollinare Nuovo, Mausoleo di Galla
+  Placidia, seven city gates) looks 5th-century-or-later on its name alone, consistent with
+  Ravenna's own status in this project (already a full site, primarily notable as the Classis
+  Ravennas naval base in 117 CE, per `SHIFT_BRIEF.md` axis 3a) rather than a monumental early-
+  imperial core. Not confirmed by real research this shift — just flagged so whoever picks it up
+  next checks before assuming a normal curate-buildings batch is available there.
+- [ ] **Road-station additions need an exact-coordinate check against already-mapped stations and
+  full sites before adding a new point**, the same lesson `[12-FIX-2]` already taught for POIs.
+  Hit this concretely adding Via Domitiana's stations this shift: Sinuessa is both the Via
+  Domitiana's actual starting point *and* an existing `station_sinuessa` (Via Appia) at the exact
+  same coordinates — re-added as a road-station point it would have stacked a duplicate pin.
+  Enriched the existing entry's `notes` instead of adding a second point. Worth a standing habit
+  for the next road-stations batch, the same way `[06-P0-2]`'s own batches now check named-building
+  counts before claiming a site.
 
 ## Shipped (moved from above; newest on top)
 

@@ -502,6 +502,34 @@ to prevent. Building locally to *test* your own work is expected and fine.
       archaeological attestation. All 43 keys verified with the project's own longest-key-first
       substring matcher against every real OSM name in each site's building file. 18 sites left
       for the standing task — `npm run metrics -- --write` now shows 22/40 (55.0%).*
+      *Capua, Tivoli, Palestrina, Corinth, Beneventum and Vindolanda done 2026-08-22 by cloud
+      shift 44 (six sites, two batches — not previously logged here, backfilled by cloud shift 45):
+      5/6/6/4/8/5 entries respectively — `app/capuaDescriptions.ts`, `app/tivoliDescriptions.ts`,
+      `app/palestrinaDescriptions.ts`, `app/corinthDescriptions.ts`,
+      `app/beneventumDescriptions.ts`, `app/vindolandaDescriptions.ts`. Capua's Mithraeum (~100 CE)
+      is a rare case that actually clears the 117 CE bar most Mithraea miss. Beneventum turned out
+      to have real, substantial Trajanic material (the Arch of Trajan, dedicated 114 CE) despite
+      being sized like the modern-city sites this ticket had learned to expect mostly clutter from.
+      Vindolanda surfaced a real architecture limitation — three OSM names ("Bath House" x2,
+      "Temple" x3) cover physically distinct polygons from different fort-rebuild periods with
+      *different* 117 CE truth values, and the name-only lookup can't give them different answers —
+      dropped both name-families rather than guess wrong; see `[06-P0-2]`'s next batch below for
+      the fix. Same shift also converted the click-handler's 22-deep nested ternary to a
+      `Record` lookup table before wiring in these six sites. 12 sites left — 28/40 (70.0%).*
+      *Brescia (Brixia) and Rimini (Ariminum) done 2026-08-22 by cloud shift 45: 3/5 entries —
+      `app/brixiaDescriptions.ts`, `app/riminiDescriptions.ts`. Also threaded an optional `osmId`
+      parameter through every site's `*Entry` lookup function (additive, non-breaking) — the fix
+      Shift 44's Vindolanda note asked for, unblocking a future batch that wants to disambiguate
+      identically-named polygons; not yet used by any site's own entry fn. Brescia's Capitolium
+      (dedicated 73 CE under Vespasian, confirmed by its own pediment inscription) was a relatively
+      new, 44-year-old monument at the 117 CE snapshot; "Arco del Granarolo" (1822, Rodolfo Vantini)
+      and "Palazzo Martinengo da Barco" (17th-century, no ancient identity) researched and correctly
+      excluded. Rimini's Arch of Augustus (27 BCE, the oldest surviving Roman triumphal arch) and
+      Bridge of Tiberius (14-21 CE) were both well over a century old by 117; the Amphitheatre and
+      Domus del chirurgo both postdate Trajan's death. Two real name collisions ("ex Stazione di
+      Rimini Porta Montanara" vs. the actual Roman gate; "Pietre del Ponte di Tiberio non
+      rimontate" vs. the bridge itself) handled with explicit guards in `riminiEntry()` rather than
+      guessed around. 10 sites left for the standing task — 30/40 (75.0%).*
 - [x] `[10-P0-3]` **`flagship-depth`** `deepen` — Bring POIs whose `notes` runs under 60 words up
       to real panel depth in that same field, worst-first. This is the **panel tier of
       `[10-P0-2]`** applied to the places that need it most; the tombstone/label tiers still need
