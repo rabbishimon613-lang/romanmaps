@@ -7,6 +7,175 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 47 — 2026-08-22 (this shift's own prompt claimed "Shift 4 of four")
+
+Same stale-numbering mismatch every shift since #13 has flagged, most recently Shift 46's own
+entry below — the scheduled prompt said "Shift 4 of four," `SHIFT_LOG` was 46 real shifts deep at
+session start. Session started with `HEAD` detached at `fb501ec` (Shift 46's own final commit);
+`git fetch origin main` returned a stale local remote-tracking ref (`709a480`, "Shift 28") that a
+forced fetch immediately corrected to match the detached HEAD exactly — the same benign race
+several recent shifts have hit and logged, not lost work. `git checkout -B main origin/main`
+landed cleanly. Read `SHIFT_BRIEF.md` (full, all 823 lines across two reads), `BOARD.md`'s P0
+list, `METRICS.md`, and `FEATURE_BACKLOG.md`'s open items before picking work.
+
+Noted `research/` no longer exists in this checkout (gitignored and apparently never present in
+this clone — the Overpass batch-fetch tooling `SHIFT_BRIEF.md` describes lives there in theory).
+Didn't test Overpass reachability directly since neither of this shift's two Track A picks needed
+a fresh city fetch; if a future shift wants Axis 1 (more cities), check whether the tooling needs
+reconstructing from scratch or whether it's just missing from this particular container.
+
+### Board check
+
+Same large unclaimed P0 set every recent shift has found and declined for the same reason —
+`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terrain,
+`[02-P0-4]` self-host-glyphs — all big multi-file refactors an unsupervised session pushing
+straight to production shouldn't start mid-refactor with nobody watching. Picked `[10-P1-4]`
+entrance (Track B, small and well-precedented), continued `[06-P0-2]` curate-buildings (Track A
+deepen, checked named-building counts for Carnuntum/Aquileia/Ancona/Pozzuoli before claiming —
+Carnuntum turned out dead, matching the Aquincum/Xanten/Ravenna pattern), and picked axis 3f
+(water infrastructure) from `SHIFT_BRIEF.md`'s own axis list since the board had nothing else
+unclaimed that fit — same legitimate axis-pick precedent Shift 46 itself used for Via Sebaste and
+the gymnasia batch. Ratio this shift: 1 `add` (water infra top-up) + 1 `deepen` (curate-buildings)
++ 1 `polish` (Entrance) — roughly on the board's 1:2:1 line, one `deepen` light.
+
+### Track B — Entrance welcome screen (done first)
+
+Shipped board `[10-P1-4]` (`app/Entrance.tsx` + `app/useEntrance.ts`): first-visit modal, same
+chrome as `EpochModal.tsx` and the same once-per-browser localStorage pattern as
+`useOnboardingHint.ts`. One sentence framing the map, three doors — "Take a guided tour" (calls
+the already-global `openTourPanel()`), "See what's nearby" (calls the already-global
+`openPlacesInView()`), "Just start exploring" (dismiss) — deliberately reusing two existing
+global open-triggers instead of adding new cross-component state for a fourth door into the
+Sites/Explore panel (whose open state is local to `LeftRail.tsx`, not yet a shared store). Closes
+on backdrop click, Esc, or the X, matching every other modal in the app.
+
+**Verified in a real browser** (Playwright + the pre-installed Chromium, not just typecheck/
+build): screenshotted at 1280×800 light and 375×812 dark, both clean against invariant 0's theme-
+token rule (no hardcoded chrome colors). Also drove the "Take a guided tour" door end-to-end at
+the mobile viewport — screenshot confirms the modal closes and the real Guided Tours panel opens
+with its three tours, not a stub. Pushed mid-shift once verified, along with a small
+`.gitignore` addition for `.claude/worktrees/` (a local Agent-tool isolation artifact that
+appeared this shift and has no reason to ever be committed).
+
+### Track A — curate-buildings: Aquileia and Pozzuoli [06-P0-2]
+
+Checked named-building counts for four candidates before claiming any (`FEATURE_BACKLOG.md`'s own
+"check before claiming" habit, established after Shift 44/Trier's stale-count near-miss):
+**Carnuntum** — 8 named features, all modern Petronell-Carnuntum village (a kindergarten, a
+parish office), zero Roman content, skipped outright and logged as dead alongside
+Aquincum/Xanten/Ravenna. **Ancona** — 66 named features but only 2 look plausibly Roman by name
+alone ("Foro romano", "Porto traianeo"), likely a thin Trier-sized batch; flagged for a future
+shift rather than claimed this one. **Aquileia** (30 named) and **Pozzuoli** (47 named, Roman
+Puteoli) both had real, substantial Roman-era content and became this shift's two sites.
+
+Delegated the research to a background general-purpose agent, scoped strictly to writing
+`app/aquileiaDescriptions.ts` and `app/pozzuoliDescriptions.ts` (not `Map.tsx` — wired the two-line
+import + lookup-table addition myself after reviewing the output) and run in an isolated git
+worktree so it couldn't collide with the concurrent water-infra research agent. Reviewed the full
+output before merging: both files match `veronaDescriptions.ts`'s established type/lookup/matcher
+pattern exactly.
+
+**Aquileia (12 entries)** — the forum's eastern side, the river port (both the main quays and the
+eastern bank, the latter with a nice detail: hemp-retting tanks for rope-making found there), three
+elite domus (Titus Macer's, the Fondo Cal houses, the House of the Wounded Beasts — all genuinely
+1st-century BCE/CE in their earliest phase even though two of them later got the more famous
+mosaics that give them their names), a roadside mausoleum, and a necropolis. **Six real
+candidates researched and correctly marked `extant_117ce: false`** rather than guessed extant:
+the Great Baths and two more named domus turned out Constantinian-or-later despite sitting right
+by the forum; the "Decumano e mura bizantine" entry pairs a genuinely 1st-century street with
+6th-century Byzantine walls sharing the same OSM polygon. **One real correction caught, not
+applied to the geojson**: "Arco San Felice" sounds ancient but is a medieval Patriarchate-era gate
+named for a demolished 4th-century church — excluded outright rather than mis-dated as Roman.
+
+**Pozzuoli (9 entries)** — Roman Puteoli's headline monuments: both amphitheatres (the Flavian
+one, third-largest in the empire, and an older Republican-era one demolished for a 19th-century
+railway), the Macellum — still OSM-tagged "Tempio di Serapide," a genuine 18th-century antiquarian
+misnomer from a Serapis statue found on site, kept as the lookup key since that's the real OSM
+string but corrected in the prose — the old Rione Terra acropolis, two necropoleis, and a cistern.
+**Two real `extant_117ce: false` calls, both independently verified rather than assumed**: "Terme
+di Nettuno" shares its name with Ostia's already-excluded Hadrianic bath complex, and turned out
+to be independently Hadrianic too (confirmed by its own separate sourcing, not the coincidence
+alone); "Stadio di Antonino Pio" is explicitly named for an emperor who reigned 138-161 CE and was
+built to honor Hadrian's 138 CE death — both well past 117.
+
+All 21 keys verified against the two sites' own `_buildings.geojson` files with a Python harness
+replicating the app's own longest-key-first substring matcher (same method Leptis Magna's shift
+used) — every key matches exactly one real, distinct OSM feature. **Live-browser click
+verification hit a real obstacle this shift**: this app's per-site building sources load lazily
+(only when a site is "visited," per `[11-P0-1]`'s own architecture), and neither a direct URL-hash
+navigation nor a scripted search-box-then-Enter flow reliably triggered that visit logic through
+Playwright automation in the time available — `querySourceFeatures` kept returning only Ostia's
+sources regardless of which site the hash/search targeted. Fell back to the Python-harness
+verification instead of leaving it unverified; flagging the browser-automation gap for whoever
+next wants a fast scripted click-through of a curate-buildings site, since it'll hit the same
+wall. 32/40 → 34/40 sites with curated buildings (85.0%).
+
+### Track A — water infrastructure top-up, axis 3f
+
+The map's existing axis 3f coverage (24 features: 3 aqueduct points, 9 aqueduct lines, 5 dams, 3
+bridges, 3 cisterns, 1 watermill) was real but under the per-shift 40-feature floor for a
+micro-POI sub-category, and `SHIFT_BRIEF.md`'s own 3f hunting list (aqueducts as lines, dams,
+standalone bridges, watermills, cisterns) still had clear headroom. Delegated the research to a
+second background agent, run concurrently with the curate-buildings agent, scoped to write plain
+JSON to the scratchpad rather than touch `public/data/` directly — kept it from needing worktree
+isolation for file-conflict reasons, though it ran in one anyway alongside the other agent for
+process consistency. Deliberately steered away from the axis's most obvious remaining candidates
+(Aqua Marcia, Nemausus/Pont du Gard, the Merida aqueduct proper) since those are the ones most
+likely to already be on the map under a name I hadn't confirmed — the agent independently
+confirmed seven of those as already present and skipped them rather than risk a duplicate.
+
+Landed 21 new features (14 points, 7 LineStrings): Pont Julien and Pont Flavien in Gaul (the
+latter still flanked by both its original triumphal arches, a genuine Roman-bridge rarity), Rome's
+two Tiber Island bridges (Pons Fabricius — the oldest Roman bridge still standing anywhere — and
+Pons Cestius), Merida's own 790-meter Guadiana bridge (a real gap since the Proserpina/Cornalvo
+dams that fed the same city were already on the map without the aqueduct connecting them), the
+Glanum arch dam (the earliest known arch dam anywhere in the ancient world, 1st c. BCE), two
+Nabataean-built cisterns at Avdat and Mamshit still in active Roman-period use after the 106 CE
+annexation, and seven more aqueduct LineStrings (Anio Vetus, Tepula/Julia, Eifel at Cologne,
+Antioch, Frejus, Nikopolis, Pollio at Ephesus). One deliberate "near miss" kept in rather than
+dropped: the Janiculum watermill complex is `extant_117ce: false` (the mill building itself is
+late-3rd-century) but its note explains that the Aqua Traiana powering it had already been running
+past that exact hillside since 109 CE — the same "real infrastructure, wrong building" shape the
+project's Zaghouan-Carthage entry already established.
+
+Checked for ID collisions against the full existing `pois.geojson`/`lines.geojson` before
+splicing (zero) and spliced with `scripts/append-geojson-features.mjs` — both diffs are pure
+additions (one `-` line each, the closing bracket). `npm run validate` clean, 0 new warnings.
+Axis 3f: 24 → 45 features, past the 40-floor. 7 of the 14 new points shipped `image_url: null`
+after the research agent's search budget ran out — flagged in `FEATURE_BACKLOG.md` as a top-up
+target, same shape as prior axes' image gaps, not assumed unphotographable.
+
+### Verification, commits, metrics
+
+Fresh container needed `npm install`; reverted the resulting `package-lock.json` churn before
+committing, the now-standard habit. `npx tsc --noEmit` and `npm run build` both clean after every
+batch, pushed incrementally (four commits: Entrance, board-close, curate-buildings, water-infra)
+rather than batched to the end — each one passed the pre-push build gate on its own. `npm run
+metrics -- --write` refreshed automatically: 481 → 495 POIs, curated-buildings sites 32/40 →
+34/40 (85.0%), depth/image/source percentages otherwise steady.
+
+### Next shift should pick up
+
+- **Track A:** Ancona is a real but unresearched `curate-buildings` candidate (2 plausible Roman
+  names out of 66, needs verification not assumption — see `FEATURE_BACKLOG.md`). Rome itself
+  (289 named features) is the only large site left in the standing task, worth scoping carefully
+  or splitting across passes. Axis 3f's image gap (7 nulls) and its remaining researched-but-
+  excluded candidates (Kasserine Dam, Puy Foradado Dam, Karamagara Bridge — see
+  `FEATURE_BACKLOG.md`) are both fresh-budget top-up targets. Axis 1 (more cities) needs someone
+  to check whether the Overpass batch-fetch tooling (`research/*.py` per `SHIFT_BRIEF.md`) still
+  exists anywhere reachable from this container — it wasn't present in this checkout and wasn't
+  investigated further since neither of this shift's picks needed it.
+- **Track B:** Terrain shading (`[02-P0-1]`) and dark mode are both still flagged as bigger lifts
+  than a normal Track B slot (dark mode specifically needs a `Map.tsx` palette-token refactor
+  first, per Shift 46's own note). `[06-P1-3]` building-typology and `[06-P1-4]` excavation-history
+  are open `deepen` tickets on the existing 40 sites' schema, not yet picked up by anyone.
+- **General:** the live-browser click-through verification gap for `curate-buildings` (see above)
+  is worth a dedicated look — either a documented reliable Playwright recipe for triggering a
+  site's lazy building-source load, or an acknowledgment that the Python-harness substring check
+  is the accepted verification method for this specific ticket going forward.
+
+---
+
 ## Shift 46 — 2026-08-22 (this shift's own prompt claimed "Shift 3 of four")
 
 Same stale-numbering mismatch every shift since #13 has flagged — the scheduled prompt said

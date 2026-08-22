@@ -553,6 +553,28 @@ to prevent. Building locally to *test* your own work is expected and fine.
       Romano" (Milan) both literally contain their site's ancient-monument key as a substring and
       would otherwise have inherited the wrong description. 8 sites left for the standing task —
       32/40 (80.0%).*
+      *Aquileia and Pozzuoli done 2026-08-22 by a cloud shift: 12/9 entries —
+      `app/aquileiaDescriptions.ts`, `app/pozzuoliDescriptions.ts`. Aquileia's forum, river port
+      (two quays), three elite domus, a roadside mausoleum and a necropolis all genuinely predate
+      117 CE, but the city's more famous monuments — the Great Baths, two more named domus, the
+      market/wall complex — are honestly Constantinian-or-later (extant_117ce:false) despite
+      ancient-sounding OSM names; "Arco San Felice" researched and excluded outright as a medieval
+      gate, not Roman. Pozzuoli (Roman Puteoli) had the stronger haul: both amphitheatres, the
+      Macellum (still OSM-tagged "Tempio di Serapide," an 18th-century antiquarian misnomer from a
+      Serapis statue found on site — kept the OSM string as the lookup key but corrected in the
+      prose), the old Rione Terra acropolis, two necropoleis and a cistern all stood in 117.
+      Independently confirmed Terme di Nettuno is Hadrianic (not assumed from the Ostia bath of the
+      same name) and Stadio di Antonino Pio explicitly postdates Hadrian's own 138 CE death — both
+      `false` with the reasoning in the description. All 21 keys verified with a Python harness
+      replicating the app's own longest-key-first substring matcher against every real OSM name in
+      each site's building file (live-browser click verification was attempted but blocked by this
+      sandbox's per-site lazy source loading not firing reliably through automated search-then-
+      Enter navigation; flagged for whoever next needs a fast way to script it). 6 sites left for
+      the standing task — 34/40 (85.0%). Remaining: Rome (289 named features, big — split across
+      passes), Carnuntum (checked this shift: only 8 named features, all modern Petronell village,
+      zero Roman content — skip like Ravenna/Aquincum/Xanten), Ancona (checked: 66 named features
+      but only "Foro romano" and "Porto traianeo" look genuinely Roman among them, worth a look but
+      likely a thin Trier-sized batch, not researched this shift).
 - [x] `[10-P0-3]` **`flagship-depth`** `deepen` — Bring POIs whose `notes` runs under 60 words up
       to real panel depth in that same field, worst-first. This is the **panel tier of
       `[10-P0-2]`** applied to the places that need it most; the tombstone/label tiers still need

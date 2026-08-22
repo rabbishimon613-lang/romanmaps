@@ -326,8 +326,48 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
   sequence — everything is scattered milestones and modern survey, so most inter-station distances
   are simply unattested and shouldn't be invented even in a later-era pass.
 
+## New ideas spotted this shift (2026-08-22, a cloud shift, water infrastructure batch)
+
+- [ ] **Axis 3f (water infrastructure) image gap**: 7 of the 14 new point features shipped
+  `image_url: null` after the research agent's search budget ran dry — Glanum Dam, Ermita de la
+  Virgen del Pilar Dam, Faynan Reservoir/Dam, Bulla Regia Cisterns, Avdat Cisterns, Mamshit
+  Cisterns, and the Janiculum Watermills. Same "real gap, not exhausted" shape as prior axes'
+  image top-up notes (axis 20 gymnasia, axis 3c economic infrastructure) — worth a fresh-budget
+  WebSearch pass rather than assumed unphotographable; Avdat and Mamshit in particular are active
+  Israeli national park sites almost certainly on Wikimedia Commons under a slightly different
+  search term than what was tried.
+- [ ] **Axis 3f has real headroom left beyond this shift's 21 features** (24 → 45 total, past the
+  40-floor). Researched-but-excluded for postdating 117 CE: Consuegra Dam (3rd/4th c.), Cendere/
+  Severan Bridge at Commagene (198-204 CE), the Hadrianic aqueduct of Corinth, the Side aqueduct
+  (Pamphylia, late 2nd c.). Researched but dropped for too-broad dating: Kasserine Dam and Puy
+  Foradado Dam (both only "2nd or 3rd century CE" in every source found, not enough to place
+  confidently on either side of 117). Karamagara Bridge wasn't researched at all — flagged, not
+  excluded. A future pass could also look at cisterns in the Levant/Asia Minor beyond the Negev
+  (Side, Perge) and more named bridges in Britain/Germania, both thin in this batch's coverage.
+
+## New ideas spotted this shift (2026-08-22, a cloud shift, curate-buildings batch)
+
+- [x] **`curate-buildings [06-P0-2]`'s Carnuntum candidate is dead — confirmed, not just flagged.**
+  Checked before spending research budget: all 8 named features in
+  `public/data/sites/carnuntum_buildings.geojson` are modern Petronell-Carnuntum village buildings
+  (a kindergarten, a parish office, a cultural center) — zero Roman content. Skip outright, same
+  call already settled for Aquincum, Xanten, and Ravenna.
+- [ ] **Ancona is a real but likely-thin `curate-buildings` candidate, not yet researched.** 66
+  named OSM features, but a substring scan for Roman-sounding terms turned up only two plausible
+  hits: "Foro romano" (Roman forum) and "Porto traianeo" (Trajan's port — Ancona's Arch of Trajan
+  overlooks this harbor, a strong 117 CE-era anchor if the research confirms the arch itself has an
+  OSM name, which this pass didn't check). "Arco del Rastrello" looked promising by name alone but
+  needs verification — Ancona has both an ancient Arch of Trajan and unrelated later medieval/
+  early-modern arches, so don't assume the ancient-sounding OSM name is the Roman one without
+  checking, same trap Aquileia's "Arco San Felice" turned out to be this same shift.
+
 ## Shipped (moved from above; newest on top)
 
+- 2026-08-22 — a cloud shift: Entrance welcome screen (board `[10-P1-4]`) — one sentence, three
+  doors (guided tour / browse nearby / just explore), dismissible, once per browser. Water
+  infrastructure top-up (axis 3f, +21 features: 6 bridges, 3 dams, 3 cisterns, 1 watermill, 1
+  aqueduct point, 7 aqueduct lines — 24 → 45, past the 40-floor). Aquileia and Pozzuoli curated
+  buildings (`[06-P0-2]`, 12 + 9 entries, 32/40 → 34/40).
 - 2026-08-21 — Shift 41: Via Popilia (24 stations, seventeenth road) + Via Praenestina/Labicana/
   Nomentana/Latina (17 stations, eighteenth-through-twenty-first roads) — `road_stations.geojson`
   382 → 423, closing out the brief's named road queue and Shift 40's Rome-radiating handoff. Two

@@ -32,15 +32,15 @@ references.)
 
 | Measure | Value | Notes |
 |---|---:|---|
-| POIs in `pois.geojson` | 481 | the curated place canon |
-| Records in the 29 thematic files | 1390 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
-| **Curated places, total** | **1,871** | |
-| Description of 60+ words | 481 · **100.0%** | measured on `notes`; 0 still thin |
-| Has an image | 257 · **53.4%** | |
-| Has an ancient source | 177 · **36.8%** | |
-| — of `confidence: high` POIs | 160 / 238 · **67.2%** | the target set for `[09-P0-1]` |
-| Categories with a "what happened here" paragraph | 52 / 52 · **100.0%** | covers 481/481 POIs |
-| Sites with curated building descriptions | 32 / 40 · **80.0%** | athens, baalbek, baiae, beneventum, brixia, capua, corinth, cumae, delphi, djemila, ephesus, herculaneum, italica, jerash, leptisMagna, luni, merida, milan, ostia, paestum, palestrina, palmyra, pompeii, portus, rimini, sabratha, timgad, tivoli, trier, verona, vindolanda, volubilis (`[06-P0-2]`, standing) |
+| POIs in `pois.geojson` | 495 | the curated place canon |
+| Records in the 29 thematic files | 1397 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
+| **Curated places, total** | **1,892** | |
+| Description of 60+ words | 495 · **100.0%** | measured on `notes`; 0 still thin |
+| Has an image | 264 · **53.3%** | |
+| Has an ancient source | 177 · **35.8%** | |
+| — of `confidence: high` POIs | 160 / 246 · **65.0%** | the target set for `[09-P0-1]` |
+| Categories with a "what happened here" paragraph | 52 / 52 · **100.0%** | covers 495/495 POIs |
+| Sites with curated building descriptions | 34 / 40 · **85.0%** | aquileia, athens, baalbek, baiae, beneventum, brixia, capua, corinth, cumae, delphi, djemila, ephesus, herculaneum, italica, jerash, leptisMagna, luni, merida, milan, ostia, paestum, palestrina, palmyra, pompeii, portus, pozzuoli, rimini, sabratha, timgad, tivoli, trier, verona, vindolanda, volubilis (`[06-P0-2]`, standing) |
 | Validator errors | **0** | |
 | Validator warnings | 17 | reviewed; see the standing-warnings note |
 | Cross-file name collisions (<150 m) | 144 | the dedupe backlog `[12-P0-1]` has to resolve |
@@ -164,4 +164,4 @@ references.)
 | 2026-08-19 | 481 | 100.0% | 53.2% | 36.8% | 0 errors |
 | 2026-08-20 | 481 | 100.0% | 53.4% | 36.8% | 0 errors |
 | 2026-08-21 | 481 | 100.0% | 53.4% | 36.8% | 0 errors |
-| 2026-08-22 | 481 | 100.0% | 53.4% | 36.8% | 0 errors |
+| 2026-08-22 | 495 | 100.0% | 53.3% | 35.8% | 0 errors |
