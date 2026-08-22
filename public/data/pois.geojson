@@ -15064,6 +15064,398 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nave I Museo delle Navi Antiche di Pisa.jpg?width=800",
         "image_credit": "Hull from the Pisa San Rossore ship graveyard · Wikimedia Commons"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.514544,
+          42.524985
+        ]
+      },
+      "properties": {
+        "id": "poi_ponte_augusto_narni",
+        "category": "bridge",
+        "name_latin": "Pons Augusti",
+        "name_english": "Bridge of Augustus",
+        "province": "Italia",
+        "modern_location": "Narni, Italy",
+        "built": -27,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Augustus's engineers finished this bridge around 27 BCE to carry the Via Flaminia across the Nera river gorge on four soaring arches, reaching 30 meters at its highest point and stretching some 160 meters end to end, making it one of the largest bridges the Romans ever built. Its ruins later amazed the painter Corot so much that he sketched them again and again in the 1820s. Only the southernmost arch still stands today, but in 117 CE all four carried the empire's main road north from Rome toward the Adriatic. Every courier and legion marching from Rome toward Ariminum crossed this exact span leaving Umbria.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Bridge_of_Augustus_(Narni)",
+          "https://www.umbriatourism.it/en-US/web/umbria/-/il-ponte-di-augusto-a-narni"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ponte%20di%20Augusto%20-Narni-Terni-Umbria.jpg?width=800",
+        "image_credit": "Bridge of Augustus, Narni · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.30778,
+          43.8625
+        ]
+      },
+      "properties": {
+        "id": "poi_pont_julien",
+        "category": "bridge",
+        "name_latin": "Pons Iulius",
+        "name_english": "Pont Julien",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Bonnieux, France",
+        "built": -3,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman engineers raised this limestone bridge around 3 BCE to carry the Via Domitia, the oldest Roman road in Gaul, across the seasonal Calavon river. Three arches span 85 meters, with the central arch alone stretching over 16 meters, and the builders cut rectangular openings straight through the piers so floodwater could pass without toppling the structure. The design worked so well that the bridge still carried ordinary car traffic until 2005, more than two thousand years after the last Roman legionary crossed it. Travelers moving between Italy and Spain along the Via Domitia in 117 CE would have crossed this exact span west of Apt.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pont_Julien",
+          "https://www.francetraveltips.com/pont-julien-bridge/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20Julien%2C%20Bonnieux.jpg?width=800",
+        "image_credit": "Pont Julien, Bonnieux · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.043056,
+          43.541389
+        ]
+      },
+      "properties": {
+        "id": "poi_pont_flavien",
+        "category": "bridge",
+        "name_latin": "Pons Flavii",
+        "name_english": "Pont Flavien",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Saint-Chamas, France",
+        "built": -12,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A local Gallo-Roman notable named Lucius Donnius Flavos left money in his will around 12 BCE for this single-arch bridge over the Touloubre river, and his family carried out the plan, adding a matching triumphal arch at each end in his memory. Each gate stands about 7 meters tall in the Corinthian order and was originally topped with stone lions, turning an ordinary river crossing into a ceremonial gateway. It carried the Via Julia Augusta, the coastal road linking Italy to Spain through Gallia Narbonensis, and it remains the only Roman bridge anywhere still flanked by both of its original triumphal arches. Traffic used the span continuously for nearly two thousand years until a wartime bombing finally forced its closure to vehicles in 1944.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pont_Flavien",
+          "https://followinghadrianphotography.com/2016/07/22/pont-flavien/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20Flavien%20Saint%20Chamas.jpg?width=800",
+        "image_credit": "Pont Flavien, Saint-Chamas · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.47833,
+          41.89111
+        ]
+      },
+      "properties": {
+        "id": "poi_ponte_fabricio",
+        "category": "bridge",
+        "name_latin": "Pons Fabricius",
+        "name_english": "Fabrician Bridge",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "built": -62,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Lucius Fabricius, curator of Rome's roads, built this bridge in 62 BCE to replace an older wooden crossing lost to fire, linking the Campus Martius to Tiber Island on two wide arches braced by a central pier. At 62 meters long it is the oldest Roman bridge still standing anywhere in the world, and Fabricius's own inscription is still legible on the stonework today. Later generations nicknamed it Ponte dei Quattro Capi after four-headed marble herms added at one end centuries afterward. By 117 CE it had already carried foot traffic over the Tiber's eastern channel for nearly 180 years without ever needing to be rebuilt.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pons_Fabricius",
+          "https://anamericaninrome.com/2021/01/ponte-fabrico-the-oldest-bridge-in-rome/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pons%20Fabricius.jpg?width=800",
+        "image_credit": "Pons Fabricius, Rome · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4769,
+          41.8905
+        ]
+      },
+      "properties": {
+        "id": "poi_ponte_cestio",
+        "category": "bridge",
+        "name_latin": "Pons Cestius",
+        "name_english": "Cestian Bridge",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "built": -46,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A Roman magistrate named Lucius Cestius built this bridge in the mid-40s BCE to link Tiber Island to the Trastevere bank, completing the island's connection to both shores alongside its older sister crossing, the Pons Fabricius. Legend held that a sacred serpent from Epidaurus had swum ashore on the island during a 3rd-century BCE plague, prompting Rome to build a temple to the healing god Aesculapius there, and this bridge became the main route pilgrims used to reach it. The bridge would eventually need a full imperial restoration under Valentinian, Valens, and Gratian in 370 CE, but through Trajan's reign it still stood on its original Republican-era masonry. Trastevere's residents crossed it daily to reach the heart of the city.",
+        "sources": [
+          "https://www.britannica.com/place/Ponte-Cestio",
+          "https://allthingsroma.fandom.com/wiki/Ponte_Cestio"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ponte%20Cestio%2C%20Isola%20Tiberina%2C%20Roma.jpg?width=800",
+        "image_credit": "Ponte Cestio, Rome · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.35083,
+          38.91306
+        ]
+      },
+      "properties": {
+        "id": "poi_puente_romano_merida",
+        "category": "bridge",
+        "name_latin": "Pons Emeritensis",
+        "name_english": "Roman Bridge of Mérida",
+        "province": "Lusitania",
+        "modern_location": "Mérida, Spain",
+        "built": -25,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Augustus's veterans founded Emerita Augusta in 25 BCE as a retirement colony for soldiers of the Cantabrian Wars, and builders soon raised this bridge across the Guadiana to link the new Lusitanian capital to the southern road network. Including its approaches it ran nearly 790 meters on more than 60 granite arches, making it one of the longest bridges the Romans ever built and still the longest surviving bridge from the ancient world today. Trajan himself was born a few days' ride away at Italica, and by his reign the bridge had already carried Lusitania's capital's traffic for well over a century. The dams at Proserpina and Cornalvo that fed Emerita Augusta's own aqueducts stood just outside the city this bridge served.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Puente_Romano,_M%C3%A9rida",
+          "https://www.historyhit.com/locations/guadiana-bridge/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Puente%20Romano%20sobre%20el%20R%C3%ADo%20Guadiana%2C%20M%C3%A9rida.JPG?width=800",
+        "image_credit": "Roman Bridge over the Guadiana, Mérida · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8331,
+          43.7625
+        ]
+      },
+      "properties": {
+        "id": "poi_glanum_dam",
+        "category": "dam",
+        "name_latin": "Glanum",
+        "name_english": "Glanum Dam",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Saint-Rémy-de-Provence, France",
+        "built": -75,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman engineers built this dam in the 1st century BCE across the Vallon de la Baume gorge just south of Glanum to store water for the growing Gallo-Greek town below, making it the earliest known arch dam anywhere in the ancient world. Standing 12 meters high and 18 meters long, it curved against the water pressure the way modern arch dams still do, a principle later Roman engineers in Spain and North Africa would reuse for centuries. Glanum had grown up around a sacred healing spring, and this dam let the town keep both its ritual pool and its everyday water supply flowing through dry Provençal summers. The dam survived close to two thousand years before a modern replacement destroyed its remains in 1891.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Glanum_Dam",
+          "https://www.site-glanum.fr/en/discover/history-of-glanum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.009028,
+          41.077361
+        ]
+      },
+      "properties": {
+        "id": "poi_ermita_virgen_pilar_dam",
+        "category": "dam",
+        "name_latin": "Ermita de la Virgen del Pilar Dam",
+        "name_english": "Ermita de la Virgen del Pilar Dam",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Alcotas, Teruel, Spain",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman hydraulic engineers built this gravity dam in the 1st or 2nd century CE across a stream near modern Alcotas, part of a wider Roman push to dam and irrigate the drier interior valleys of Hispania Tarraconensis. Centuries later a small hermitage dedicated to the Virgen del Pilar was built directly against its ancient stonework, which is how the dam earned the name it carries today. Unlike the curved dams at Glanum or Petra, it worked as a plain gravity dam, holding back its reservoir through sheer mass and thickness rather than an arched shape. It belongs to a scattered family of small Roman dams across inland Aragon that together show how systematically Rome managed water even far from its famous city aqueducts.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ermita_de_la_Virgen_del_Pilar_Dam",
+          "https://www.wikidata.org/wiki/Q2334418"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4936,
+          30.6277
+        ]
+      },
+      "properties": {
+        "id": "poi_faynan_dam",
+        "category": "dam",
+        "name_latin": "Phaino",
+        "name_english": "Faynan Reservoir and Dam",
+        "province": "Arabia",
+        "modern_location": "Wadi Faynan, Jordan",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman administrators expanded the ancient copper mines at Phaino, tucked into the rugged Wadi Faynan south of the Dead Sea, into one of the empire's largest copper-producing districts after annexing the Nabataean kingdom in 106 CE. Engineers built a reservoir and dam here to store enough water for cooling and processing smelted ore, since the wadi itself ran dry for most of the year. Convicts and forced laborers, Christians exiled here for their faith among them in later centuries, kept the smelting furnaces running on water this system supplied. Dark slag heaps still blanket the valley floor today, physical evidence of just how much copper Rome pulled out of this remote corner of Arabia.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Khirbat_Faynan",
+          "https://www.world-archaeology.com/features/wadi-faynan-copper-mine/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7539,
+          36.5586
+        ]
+      },
+      "properties": {
+        "id": "poi_bulla_regia_cisterns",
+        "category": "cistern",
+        "name_latin": "Bulla Regia",
+        "name_english": "Cisterns of Bulla Regia",
+        "province": "Africa Proconsularis",
+        "modern_location": "Jendouba, Tunisia",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Builders at Bulla Regia raised eight massive vaulted cisterns side by side at the edge of town to store water for a wealthy trading city that shipped wheat, olive oil, and exotic circus animals to Rome. The cisterns doubled as a passive cooling system: shafts let attendants sprinkle water down onto the mosaic floors of the town's famous half-underground villas, and the evaporating water pulled the worst of the North African heat out of the rooms below. Bulla Regia's elite built their houses with an entire sunken story specifically to escape the summer sun, something almost no other Roman city bothered to do. The cisterns still stand today as the first structure visitors see walking into the site.",
+        "sources": [
+          "https://www.romeartlover.it/Bulla.html",
+          "https://travelswithsheila.com/bulla_regia_and_dougga.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.762,
+          30.791
+        ]
+      },
+      "properties": {
+        "id": "poi_avdat_cisterns",
+        "category": "cistern",
+        "name_latin": "Oboda",
+        "name_english": "Cisterns of Avdat",
+        "province": "Arabia",
+        "modern_location": "Avdat, Israel",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Nabataean traders carved and plastered rock-cut cisterns into the hillside at Avdat generations before Rome ever ruled the region, capturing the Negev's scarce winter rain to keep caravans supplied on the long haul between Petra and the Mediterranean port of Gaza. Rome annexed the Nabataean kingdom outright in 106 CE and folded Avdat into the new province of Arabia without tearing down the water system that already worked, so Roman soldiers stationed there simply kept drawing on the same cisterns their Nabataean predecessors had built. The site sits in a region that receives less than 150 millimeters of rain a year, which made every cistern the difference between a functioning waystation and an abandoned ruin. Incense and spice caravans still watered here on the road north through Arabia in the years after Trajan's death.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Avdat",
+          "https://ancientwatertechnologies.com/2014/03/24/ancient-water-technologies-of-the-nabataeans/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.064,
+          31.025
+        ]
+      },
+      "properties": {
+        "id": "poi_mamshit_cisterns",
+        "category": "cistern",
+        "name_latin": "Mampsis",
+        "name_english": "Cisterns of Mamshit",
+        "province": "Arabia",
+        "modern_location": "Mamshit, Israel",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Nabataean settlers built the first cisterns at Mamshit in the mid-1st century CE, turning a stop on the Petra-to-Gaza incense route into a real town rather than just a caravan halt. After Trajan's annexation of Arabia in 106 CE the town grew quickly under Roman rule, and residents cut new cisterns and stone channels to keep pace, catching rainwater that ran off the surrounding hillsides through carefully graded conduits. Mamshit had no natural spring of its own, so every drop its people drank had to be caught, stored, and rationed through systems exactly like these. The Negev's caravan cities depended on this kind of engineered water harvesting far more than on any river or masonry aqueduct.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Mampsis",
+          "https://www.bibleplaces.com/mampsis/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4661,
+          41.8917
+        ]
+      },
+      "properties": {
+        "id": "poi_janiculum_watermills",
+        "category": "watermill",
+        "name_latin": "Molae Ianiculenses",
+        "name_english": "Janiculum Watermills",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "built": 280,
+        "destroyed": 537,
+        "extant_117ce": false,
+        "notes": "Trajan opened the Aqua Traiana in 109 CE to serve both drinking fountains and industry, channeling fresh water down the steep slope of the Janiculum hill above Trastevere. Archaeologists excavating under the American Academy in Rome in the 1990s found a multi-wheeled flour-milling complex built astride that channel, but the mills themselves date to the late 3rd century CE, roughly a century and a half after Trajan died in 117 CE. The aqueduct he built kept powering Rome's grain mills for centuries afterward regardless: the mills became so vital to feeding the city that the Ostrogoths deliberately cut the Aqua Traiana in 537 CE hoping to starve Rome out, forcing the general Belisarius to improvise floating mills anchored in the Tiber instead. On 11 August 117 CE the aqueduct's water was already running past this exact hillside; the wheels that would one day turn on it were still a century and a half away.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Aqua_Traiana",
+          "https://www.jstor.org/stable/4238499"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.2593,
+          34.5486
+        ]
+      },
+      "properties": {
+        "id": "poi_efqa_spring_palmyra",
+        "category": "aqueduct",
+        "name_latin": "Fons Efqa",
+        "name_english": "Efqa Spring and Qanat System",
+        "province": "Syria",
+        "modern_location": "Palmyra (Tadmur), Syria",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A warm, mildly sulfurous spring called Efqa rose from a cave deep inside a mountain west of Palmyra's center and had watered the oasis for millennia before Rome ever reached the Syrian desert, but Palmyrene engineers under Roman rule refined it into a working qanat system, channeling the flow through a 400-meter hand-cut tunnel and nine wells out to the gardens and palm groves below. The spring never let up, producing roughly 5,000 cubic meters of water a day at a nearly constant rate year-round, which is exactly what let a caravan city thrive in the middle of an otherwise waterless desert. Palmyra's merchants grew enormously wealthy in the decades around Trajan's reign taxing the silk and spice caravans that crossed the desert, a business only possible because this single spring made a stopover here viable at all. Inscriptions treated Efqa as sacred, and religious rites at the spring continued alongside its everyday use for irrigation and drinking water throughout the Roman period.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Efqa_Spring",
+          "https://books.openedition.org/ifpo/1311?lang=en"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Efqa.png?width=800",
+        "image_credit": "Efqa Spring, Palmyra · Wikimedia Commons"
+      }
     }
   ]
 }

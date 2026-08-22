@@ -430,6 +430,260 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            12.8619,
+            41.9622
+          ],
+          [
+            12.7981,
+            41.9633
+          ],
+          [
+            12.9219,
+            41.8564
+          ],
+          [
+            12.85,
+            41.86
+          ],
+          [
+            12.5075,
+            41.8907
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_aqua_anio_vetus",
+        "category": "aqueduct_line",
+        "name_latin": "Aqua Anio Vetus",
+        "name_english": "Anio Vetus Aqueduct",
+        "province": "Italia",
+        "extant_117ce": true,
+        "notes": "Censor Manius Curius Dentatus funded this aqueduct in 272 BCE with plunder seized from defeating Pyrrhus of Epirus, making it Rome's second aqueduct and by far its longest yet built. It ran some 64 kilometers from a spring near Vicovaro down the Aniene valley and around toward the Alban Hills, staying almost entirely underground to protect the water from tampering and enemy attack. Sextus Julius Frontinus, the empire's water commissioner, still measured its flow in his official survey of Rome's aqueducts only a few decades before Trajan's death. Travelers along the Via Latina could see almost none of it, since staying hidden was the entire point of how it was built.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Aqua_Anio_Vetus",
+          "http://engineeringrome.org/aqueducts-in-rome/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            12.72,
+            41.75
+          ],
+          [
+            12.68,
+            41.8
+          ],
+          [
+            12.58,
+            41.85
+          ],
+          [
+            12.5,
+            41.89
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_aqua_tepula_julia",
+        "category": "aqueduct_line",
+        "name_latin": "Aqua Tepula et Aqua Julia",
+        "name_english": "Tepula and Julia Aqueducts",
+        "province": "Italia",
+        "extant_117ce": true,
+        "notes": "Censors built the Aqua Tepula in 126 BCE to tap warm springs in the Alban Hills southeast of Rome, giving the city its fourth aqueduct and, true to its name, distinctly lukewarm water. Marcus Agrippa overhauled the system in 33 BCE, laying a new 23-kilometer line called the Aqua Julia into the very same channel and stacking both aqueducts above the older Aqua Marcia so that three separate water supplies ran on one shared arcade into the city. Riders entering Rome along the Via Latina in 117 CE passed beneath this triple-decked wall of arches, each tier carrying a different aqueduct built more than a century apart from the others. All three still delivered water to fountains and bathhouses near the Porta Maggiore under Trajan.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Aqua_Tepula",
+          "https://en.wikipedia.org/wiki/Aqua_Julia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            6.6459,
+            50.5013
+          ],
+          [
+            6.5605,
+            50.5757
+          ],
+          [
+            6.7833,
+            50.6667
+          ],
+          [
+            6.8664,
+            50.8692
+          ],
+          [
+            6.9603,
+            50.9375
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_eifel_aqueduct",
+        "category": "aqueduct_line",
+        "name_latin": "Aquaeductus Coloniensis",
+        "name_english": "Eifel Aqueduct",
+        "province": "Germania Inferior",
+        "extant_117ce": true,
+        "notes": "Engineers at Colonia Claudia Ara Agrippinensium finished this aqueduct around 80 CE, tapping a spring near Nettersheim in the Eifel hills and running the water some 95 kilometers downhill by gravity alone to the Rhine frontier capital. The flowing water deposited a hard mineral crust inside the channel as it traveled, and modern quarries around Cologne still cut this fossilized calcium carbonate as polished 'Eifel marble' tabletops today. The entire route stayed buried underground rather than crossing valleys on arches, an engineering choice that helped keep it running for roughly 180 years. Hikers can still follow marked stretches of the ancient channel through the same Eifel forest Roman surveyors once walked.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Eifel_Aqueduct",
+          "https://www.cologne-tourism.com/arts-culture/sights/detail/roman-eifel-water-pipeline"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            36.141,
+            36.145
+          ],
+          [
+            36.16,
+            36.18
+          ],
+          [
+            36.1603,
+            36.2021
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_antioch_aqueduct",
+        "category": "aqueduct_line",
+        "name_latin": "Aquaeductus Antiochiae",
+        "name_english": "Antioch Aqueduct",
+        "province": "Syria",
+        "extant_117ce": true,
+        "notes": "Julius Caesar personally funded this aqueduct for Antioch on the Orontes after visiting the city in 47 BCE, making it the first Roman-built aqueduct anywhere outside Italy. It carried water roughly 11 kilometers down from springs at Daphne, the wooded sanctuary suburb where Apollo was said to have chased the nymph he loved, alternating between covered channels, tunnels, and stretches carried on two-story arcades depending on the terrain. A major earthquake struck the city in 37 CE and damaged the line, but Antioch rebuilt rather than abandon it. By 117 CE the city's abundant, well-managed water supply had helped make it one of the healthiest and most celebrated metropolises of the Roman East.",
+        "sources": [
+          "https://libaniusredux.blogspot.com/2008/05/aqueducts-water-supply.html",
+          "https://www.worldhistory.org/aqueduct/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            6.7477,
+            43.6206
+          ],
+          [
+            6.75,
+            43.5667
+          ],
+          [
+            6.737,
+            43.4331
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_frejus_aqueduct",
+        "category": "aqueduct_line",
+        "name_latin": "Aquaeductus Foroiuliensis",
+        "name_english": "Fréjus Aqueduct",
+        "province": "Gallia Narbonensis",
+        "extant_117ce": true,
+        "notes": "Forum Julii's engineers built this aqueduct in the 1st century CE, tapping the Foux spring near Montauroux and the Siagnole spring near Mons and running the combined flow nearly 40 kilometers down to the naval harbor town below. The channel supplied roughly 2,900 cubic meters of water a day, moving through vaulted underground galleries three meters wide before crossing the final stretch on arcades still visible marching toward the old Roman gate. Augustus had built Forum Julii as his purpose-made naval base for the western Mediterranean fleet, and this aqueduct kept its shipyards, baths, and growing population running for roughly four centuries. Long sections of the arcade still stand in the countryside north of modern Fréjus.",
+        "sources": [
+          "http://www.romanaqueducts.info/aquasite/frejus/index.html",
+          "https://www.athenapub.com/AR/frejus1.htm"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            20.88,
+            39.25
+          ],
+          [
+            20.8833,
+            39.2167
+          ],
+          [
+            20.755,
+            39.0089
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_nikopolis_aqueduct",
+        "category": "aqueduct_line",
+        "name_latin": "Aquaeductus Nicopolitanus",
+        "name_english": "Nikopolis Aqueduct",
+        "province": "Epirus",
+        "extant_117ce": true,
+        "notes": "Augustus founded Nikopolis in 31 BCE to commemorate his victory at Actium, and Roman engineers built this 50-kilometer aqueduct to give the new city a water supply worthy of its name, tapping the headwaters of the Louros river near the village now called Agios Georgios. The line dropped only about 80 meters in elevation across its entire length, an extraordinarily gentle gradient that surveyors held constant through tunnels, covered channels, and arcaded crossings over the hillier ground near Philippias. It fed twin cisterns at Nikopolis's monumental nymphaeum, the ornamental fountain house where the young city showed off its water supply to arrivals from the harbor. Ancient engineers likely finished the earliest phase under Augustus, and later Roman renovation kept the line running for centuries afterward.",
+        "sources": [
+          "https://www.travel.gr/en/experiences-ee/unknown-greece/roman-aqueduct-of-nikopolis-the-ancient-miracle-that-harnessed-the-springs-of-the-louros-river/",
+          "https://www.thearchaeologist.org/blog/roman-aqueduct-of-nikopolis-greece-the-ancient-technological-marvel-that-harnessed-the-headwaters-of-louros-river"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            27.35,
+            37.9
+          ],
+          [
+            27.3417,
+            37.9397
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_pollio_aqueduct_ephesus",
+        "category": "aqueduct_line",
+        "name_latin": "Aquaeductus Sextilii Pollionis",
+        "name_english": "Pollio Aqueduct",
+        "province": "Asia",
+        "extant_117ce": true,
+        "notes": "Gaius Sextilius Pollio, a wealthy local benefactor, personally financed and built this aqueduct for Ephesus sometime between 4 and 14 CE, one of several channels that fed the city's fountains from springs in the hills south of town. The line ran about 3.5 kilometers into the city center, terminating near the harbor district where Pollio's adopted son later built him a memorial fountain and heroon so residents would remember exactly who had paid for their water. Ephesus was the largest city in the province of Asia and the seat of its governor, and aqueducts like this one kept its baths, fountains, and enormous population supplied straight through the High Empire. Pollio's family fountain memorial still stands near the city's State Agora today.",
+        "sources": [
+          "https://visitephesus.org/en/where-to-visit/pollio-aqueduct/",
+          "https://www.alaturka.info/en/turkey-country/aegean/5517-ephesus-the-roman-pollio-aqueduct-at-selcuk"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
