@@ -955,7 +955,14 @@ to prevent. Building locally to *test* your own work is expected and fine.
       weaver, two tradeswomen) dropped for undatable evidence. Layer still defaults OFF; verified
       with Playwright.
 - [ ] `[06-P1-5]` **`finds`** `illustrate` — 3–8 artefacts per site with images and museum.
-- [ ] `[10-P1-4]` **`entrance`** `polish` — One sentence, three doors, dismissible.
+- [x] `[10-P1-4]` **`entrance`** `polish` — Done 2026-08-22 by a cloud shift. New `app/Entrance.tsx`
+      + `app/useEntrance.ts`, same modal chrome as `EpochModal.tsx` and the same once-per-browser
+      localStorage pattern as `useOnboardingHint.ts`. One sentence framing the map, three doors —
+      "Take a guided tour" (`openTourPanel()`), "See what's nearby" (`openPlacesInView()`), "Just
+      start exploring" (dismiss) — reusing the two already-existing global open triggers rather
+      than adding new cross-component state for a Sites-panel door. Verified with Playwright at
+      1280×800 light and 375×812 dark, plus the guided-tour door's click-through (modal closes,
+      real tour list opens).
 - [ ] `[03-P2-8]` **`compare-today`** `polish` — Satellite/modern toggle for the viewport.
 - [ ] `[13-P2-8]` **`og-images`** `illustrate` — Generated per-place OG images;
       `summary_large_image`.
