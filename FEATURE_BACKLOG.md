@@ -203,8 +203,33 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
 - [ ] **Axis 12's remaining 4 image-null cult centers**: Tres Arae Sestianae and Savaria's Ara Augustorum are known only from ancient texts/inscriptions with no excavated structure ever photographed — these may never close. Salona's Temple of Augustus and Nola's Temple of Divus Augustus have no Commons file specifically depicting the temple itself among the generic site photos available for those towns — worth one more fresh-search-budget attempt before writing them off the same way.
 - [ ] **Axis 15's alimenta-town gap (23/50) needs a source this environment can't reach, not more WebSearch effort.** A dedicated research pass this shift confirmed scholarship puts the real ceiling at 39-53 attested Italian towns, but the two catalogs that would name the rest — Ruggiero's Dizionario Epigrafico "Alimentarii" entry, R. Duncan-Jones's Appendix II in *The Economy of the Roman Empire* — sit behind fetches (Treccani, EDCS, two university institutional repositories) that returned `EGRESS_BLOCKED` even via WebSearch snippets, not just direct WebFetch. A shift with real library/database access, or a session in a different sandbox, is the actual unlock here.
 - [ ] **`curate-buildings` [06-P0-2] has 28 sites left; Djemila and Volubilis are the next-easiest picks by named-OSM-building count.** Djemila has 10 named buildings — checked this shift (`Thermes romains`, `Arc de Caracalla`, `Temple de la famille des Sévères`, `Roman Forum`, `Basilica of Cresconius`, `Roman Forum Courtyard`, plus 4 modern non-ancient tags to skip: `Djémila` itself, `Centre de santé`, `Maison de jeunes`, `Auberge Djemila`) but not researched — the Arc de Caracalla/Severan-family temple/Basilica of Cresconius all look post-117 on their names alone (Caracalla reigned 198-217; Cresconius is a Byzantine-era bishop's name) but need the same real per-building research pass Leptis Magna and Timgad got before shipping dates, not an assumption. Volubilis has only 4 named buildings — thinner but real, same treatment.
-- [ ] **The `curate-buildings` click-handler chain in `Map.tsx` is now 12 sites deep as a nested ternary** (ostia → pompeii → herculaneum → ephesus → delphi → jerash → trier → merida → palmyra → athens → leptismagna → timgad → undefined). Still readable, but worth converting to a lookup table (`Record<string, (name) => Entry | undefined>`) before a 15th or 20th site makes it genuinely hard to read — flagging now rather than letting it compound silently the way `[03-P0-2]` card-rebuild's missing spec did.
+- [x] **The `curate-buildings` click-handler chain in `Map.tsx` is now 12 sites deep as a nested ternary** (ostia → pompeii → herculaneum → ephesus → delphi → jerash → trier → merida → palmyra → athens → leptismagna → timgad → undefined). Still readable, but worth converting to a lookup table (`Record<string, (name) => Entry | undefined>`) before a 15th or 20th site makes it genuinely hard to read — flagging now rather than letting it compound silently the way `[03-P0-2]` card-rebuild's missing spec did. *(2026-08-22, cloud shift 44: done — it had reached 22 deep by the time this was picked up. `app/Map.tsx` now holds a `SITE_ENTRY_LOOKUP: Record<string, (name) => CuratedEntry | undefined>`; the click handler is a one-line `SITE_ENTRY_LOOKUP[site]?.(rawName)`. Adding a site is now a two-line diff (one import, one table row) instead of restructuring the ternary — used immediately for this same shift's own six new sites.)*
 - [ ] **Leptis Magna's OSM `name` field had a real, sourced error** (`"Arch of Marcus Aurelius"` for what every dated source calls Trajan's own arch — the Marcus Aurelius name belongs to a different arch entirely, at Tripoli/ancient Oea) — corrected this shift, one-line diff. Worth a standing habit for any future curate-buildings pass: check a monument's OSM name against its actual attested date/attribution before writing a description around it, the same way axis-file image sourcing already checks a photo's actual date against the site's founding date.
+
+## New ideas spotted this shift (2026-08-22, cloud shift 44)
+
+- [ ] **The curate-buildings lookup pattern has a real architecture limitation: it matches purely
+  by OSM `name` string, with no way to give two identically-named polygons two different
+  answers.** Hit this concretely at Vindolanda — two "Bath House" polygons and three "Temple"
+  polygons are physically distinct structures from different fort-rebuild periods with different
+  117 CE status (one bath house pre-dates Hadrian and was standing in 117; the other is a 3rd-
+  century building). Every existing `app/*Descriptions.ts` file assumes a name is unique enough
+  within its site to carry one true answer — true for every site so far, but Vindolanda's
+  rebuilt-in-place history breaks it, and any site with two "Chiesa"-style generic-tagged
+  buildings of different eras would break it the same way. Dropped both name-families at
+  Vindolanda rather than guess wrong for whichever polygon a written entry wouldn't describe (see
+  `app/vindolandaDescriptions.ts`'s own header). A future shift wanting to unlock those entries, or
+  hitting the same wall at a new site, would need to extend the lookup to accept `osm_id` (already
+  present on every building feature) as a tiebreaker, not just name — real, bounded scope, not
+  urgent.
+- [ ] **`curate-buildings [06-P0-2]` has 12 sites left.** Rome (289 named features, by far the
+  biggest remaining site — worth scoping carefully or splitting across multiple passes rather than
+  assuming a normal-sized batch), aquincum and xanten (both confirmed too-thin by Shift 43 — don't
+  re-check expecting a normal batch), and five more modern-city-sized sites (verona, ravenna,
+  milan, rimini, brescia) — worth a real named-building count check before claiming any of them.
+  Beneventum (this shift) is a useful data point that modern-city size alone doesn't predict
+  thinness the way Xanten/Aquincum suggested — it turned out to have 8 real, substantial buildings
+  including the Arch of Trajan.
 
 ## Shipped (moved from above; newest on top)
 

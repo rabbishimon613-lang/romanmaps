@@ -7,6 +7,169 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 44 — 2026-08-22 (this shift's own prompt claimed "Shift 1 of four")
+
+Same stale-numbering mismatch every shift since #13 has flagged — the scheduled prompt said
+"Shift 1 of four," but `SHIFT_LOG` was 43 real shifts deep at session start, so this entry
+continues as Shift 44. Session started with `HEAD` detached and local `main`/`origin/main` both
+reading a real 50 commits behind the detached `HEAD` — same "stale local ref, not data loss"
+symptom nearly every shift has independently rediscovered; ran `git fetch origin main` (which
+force-updated the stale `origin/main` tracking ref to the real tip) then `git checkout -B main
+origin/main`, verified `HEAD` now matched the real tip (`5e53736`, Shift 43's own last commit)
+before doing anything else. Fresh container needed `npm install`; reverted the resulting
+`package-lock.json` churn before committing, per the standing habit. Read `SHIFT_BRIEF.md` and
+`BOARD.md` in full, plus Shift 43's own handoff, before picking work. Confirmed this session's own
+network status directly: `curl` to `en.wikipedia.org`/`commons.wikimedia.org`/`overpass-api.de`
+all return `CONNECT tunnel failed, response 403`, matching every recent shift's finding —
+`WebSearch` remained the only working research channel, used via six parallel background research
+agents across the shift (four in the first batch, two more once time allowed a second round).
+
+### Board check
+
+Same unclaimed P0 set every recent shift has found and declined for the same reason — `[12-P0-1]`
+merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild (still missing its spec), `[02-P0-1]`
+terrain, `[02-P0-4]` self-host-glyphs — all large, multi-file refactors an unsupervised session
+pushing straight to production shouldn't attempt mid-refactor with nobody watching. `[06-P0-2]`
+curate-buildings is the board's own standing `deepen` task with a proven, working pipeline, so
+Track A continued it — Shift 43's handoff named capua/tivoli/palestrina/corinth as the
+next-easiest picks by named-OSM-building count, checked each against its real building file
+before claiming (all four confirmed real, non-trivial candidate counts), and became this shift's
+first Track A batch. With time left after that batch shipped, checked two more candidates from the
+same handoff's "unscoped, worth a real count" list (vindolanda, and beneventum despite being
+modern-city-sized) — both turned out to have real, substantial material and became a second batch.
+Track B came from the standing "12-deep nested ternary, worth converting before it gets worse"
+note in `FEATURE_BACKLOG.md` (cloud shift 41) rather than the board or `FEATURE_BACKLOG.md`'s P0-P3
+sections — by the time this shift started that ternary was 22 deep, not 12, so converting it
+before adding this shift's own six sites (which would have pushed it to 28) was the natural point
+to do it, and it's exactly the kind of low-risk, well-scoped code-quality item Track B calls for.
+By the board's own ratio count this shift ran 2 `deepen` (curate-buildings, two batches, six sites)
++ 1 `polish` (the lookup-table refactor) — short the `add` slot, same finding as most recent
+shifts: no unclaimed board `add` ticket existed, and this shift's own Track A picks were all
+`deepen` continuations of an existing ticket rather than a fresh `add`.
+
+### Track B — curate-buildings site lookup: nested ternary → `Record` (done first, unblocks the rest)
+
+`app/Map.tsx`'s building-click handler chained every curated site as a nested nine-level-deep
+`site === X ? xEntry(rawName) : site === Y ? ...` ternary, flagged in `FEATURE_BACKLOG.md` back
+when it was 12 sites deep (cloud shift 41) as "worth converting before a 15th or 20th site makes it
+genuinely hard to read." It was 22 deep by this shift's start. Replaced with a
+`Record<string, (name: string) => CuratedEntry | undefined>` — same behavior, verified by running
+`tsc --noEmit` clean both before and after — and adding a new site is now a two-line diff (one
+import, one lookup-table row) instead of restructuring the whole ternary. Landed as its own
+standalone commit before any of this shift's own six new sites were wired in, so the refactor's
+correctness didn't depend on unverified new content, and each new site after it was a pure
+two-line addition to the table.
+
+### Track A — six more curate-buildings sites (Capua, Tivoli, Palestrina, Corinth, Beneventum, Vindolanda)
+
+Board `[06-P0-2]` — 22/40 → 28/40 (70.0%). Six parallel research agents across two batches ran
+against real sources — the Soprintendenza ABAP Caserta e Benevento's own pages, Comune di Santa
+Maria Capua Vetere, tibursuperbum.it and archeotibur.org for Tivoli, World History Encyclopedia
+and Treccani's Enciclopedia dell'Arte Antica for Palestrina, ASCSA's own Corinth excavation
+record, the Vindolanda Trust's own site plus the Roman Inscriptions of Britain database for
+Vindolanda — cross-confirmed across 2+ independent results per fact, the same constraint and
+method every recent shift's Track A work has documented.
+
+**Capua** (5 buildings) resolved a real duplicate-or-not question with coordinates rather than
+guessing: "Resti del primo Anfiteatro" and "Amfiteatro Campano" turned out to be two genuinely
+separate physical structures roughly 20m apart — Spartacus's own smaller Republican-era training
+arena, demolished once its much larger imperial replacement (~100 CE) opened nearby. Capua's
+Mithraeum (~100 CE, the oldest known in the western Roman world) is a rare case that actually
+clears the 117 CE bar most Mithraea miss (the family as a whole peaked 2nd-3rd century, per the
+brief's own caution). Two real, confirmed sites (Domus Romana, Macellum) had no sourceable
+construction date after a full research pass — dropped rather than invented, per "real data or
+don't include it."
+
+**Tivoli** (6 buildings) resolved two identity questions a single WebSearch pass could easily have
+gotten wrong: "Tempio della Sibilla" and "Tempio di Vesta" are two separate, adjacent round-vs-
+rectangular temples on the acropolis, not the same building under two different tourist-material
+names (a genuinely common conflation in casual sources); "Tempio della Tosse" is a 4th-century
+mausoleum, not an actual temple despite its OSM tag, and ships `extant_117ce:false` accordingly.
+The Anfiteatro di Bleso's own dedicatory inscription ties it to Hadrian's court — not yet built on
+11 August 117, the exact day his reign began.
+
+**Palestrina** (6 buildings) untangled a real structural question: the Sanctuary of Fortuna
+Primigenia's terraces, the forum's "Grotto of the Lots" nymphaeum, and the civil basilica are three
+architecturally distinct late-2nd-century-BCE structures, not one complex described three
+different ways — and the "Antro delle Sorti" name is itself a misnomer, since the real oracle sat
+higher up in the sanctuary, not in this grotto. Porta San Cesareo was checked and dropped (only
+vague "since antiquity" local history, no archaeological confirmation of Roman-era origin); Porta
+del Sole was kept since 2005 excavations found a real ancient gate phase beneath the standing
+Baroque one.
+
+**Corinth** (4 buildings) — the Roman-colony civic core (forum/agora, Julia Basilica, South Stoa,
+amphitheatre) all cleanly extant by 117, a mature 160-year-old provincial capital by Trajan's
+death. The Early Christian basilica of Kraneion was checked and correctly excluded (6th century,
+per its own OSM name's implication).
+
+**Beneventum** (8 buildings) turned out to have real, substantial Trajanic-era material despite
+being sized like the modern-city sites this ticket's standing pattern has learned to expect
+mostly-modern clutter from (Xanten, Aquincum) — the Arch of Trajan (dedicated 114 CE, marking the
+start of the Via Traiana, three years old at Trajan's death, one of the best-preserved Roman
+arches anywhere), the amphitheatre (attested under Nero via Tacitus in 63 CE, correcting an
+initial hypothesis it might be the site's later Hadrianic-era building — that's a separate
+monument, the Roman Theatre, not part of this batch), the forum, the Temple of Isis obelisk
+(Domitian, 88-89 CE), and a bath complex tagged twice 155m apart in OSM, merged into one entry
+rather than duplicated. Two real, sourced post-117 structures (a late-antique wall tower, a Lombard
+necropolis) shipped as `extant_117ce:false` with their own descriptions instead of being silently
+dropped, matching this ticket's established convention for genuinely-dated post-117 finds. One
+candidate's construction date straddled 117 too closely to confirm either way — shipped `false`
+per invariant 1's own "when in doubt: false" rule.
+
+**Vindolanda** (5 buildings) corrected a research hypothesis mid-flight rather than shipping it:
+the fort standing on 11 August 117 is Period IV (Cohors I Tungrorum, timber/turf, c. 105-120 CE),
+not the famous Period III fort tied to Flavius Cerialis's Batavian cohort and the best-known
+tablet archive, which was deliberately demolished around 105 — twelve years before this map's
+snapshot date. Also surfaced and documented a genuine architecture limitation rather than papering
+over it: three OSM names at this site ("Bath House" x2, "Temple" x3) cover physically distinct
+polygons spanning different fort periods with *different* 117 CE truth values, and the
+curate-buildings lookup matches by name only — it cannot give two identically-named features two
+different answers. Dropped both name-families entirely rather than guess wrong for whichever
+polygon a written entry wouldn't describe; full note left in the file's own header and in
+`FEATURE_BACKLOG.md` for whoever wants to extend the lookup to key on `osm_id` instead of name.
+
+All 30 keys across all six files verified against every real OSM name in each site's building
+file with the project's own longest-key-first substring-matcher harness (a small Python script
+mirroring the app's actual matching logic in `app/*Descriptions.ts`) — no silent typos or
+collisions, every generic/modern OSM tag (Beneventum's ~120 modern churches/palazzi/shops,
+Vindolanda's replica ramparts and museum) correctly falls through to the fallback description.
+`npm run metrics -- --write`: sites with curated building descriptions 22/40 (55.0%) → 28/40
+(70.0%).
+
+### Build, validate, verify
+
+`npm run validate` clean at every commit: 0 errors, the same 17 pre-existing warnings throughout.
+`npx tsc --noEmit` clean after the Track B refactor and after every Track A batch. `npm run build`
+clean on every pushed commit — the pre-push gate never tripped across all six commits this shift.
+
+### Handoff for the next shift
+
+1. **`[06-P0-2]` curate-buildings has 12 sites left.** Rome, aquincum, xanten (both confirmed
+   too-thin by Shift 43), and five more modern-city-sized sites (verona, ravenna, milan, rimini,
+   brescia) are the remaining unscoped candidates — worth a real named-building count check before
+   claiming any of them, same lesson Xanten/Aquincum and this shift's own Beneventum pick (which
+   went the *other* way — real material despite the modern-city size) both reinforce. Rome's 289
+   named features make it the single biggest remaining site by a wide margin; worth scoping
+   carefully or splitting across multiple passes rather than assuming a normal-sized batch.
+2. **A real architecture limitation in the curate-buildings lookup pattern**: it matches purely by
+   OSM `name` string, with no way to disambiguate two identically-named polygons that need
+   different answers (Vindolanda's "Bath House" x2, "Temple" x3 this shift; likely to recur at any
+   site the Trust/park rebuilt in phases, or any bbox with, e.g., two separate "Chiesa" buildings
+   of different eras sharing a generic tag). A future shift wanting to unlock those specific
+   Vindolanda entries (or hit the same wall elsewhere) would need to extend the lookup to also
+   accept `osm_id` or coordinates, not just name — real scope, not urgent, flagged rather than
+   silently worked around.
+3. **Board fresh-check**: still no unclaimed P0/P1 `add` ticket smaller than a multi-pass
+   refactor, eleven shifts running now (34-44) making the same decline call for the same reason —
+   might be worth a deliberate scoping pass by whoever next has the time to split one of the big
+   P0 tickets (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2) into a smaller, claimable slice.
+4. **`FEATURE_BACKLOG.md`'s P3/polish section still has two real open items**: "Terrain shading"
+   and "Dark mode / night-map style" — both bigger, riskier UI lifts than this shift's ternary
+   refactor (terrain needs a hillshade data source; dark mode touches every chrome color token),
+   not attempted this shift for that reason.
+
+---
+
 ## Shift 43 — 2026-08-21 (this shift's own prompt claimed "Shift 4 of four")
 
 Same stale-numbering mismatch every shift since #13 has flagged — the scheduled prompt said
