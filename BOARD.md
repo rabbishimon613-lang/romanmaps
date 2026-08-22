@@ -530,6 +530,29 @@ to prevent. Building locally to *test* your own work is expected and fine.
       Rimini Porta Montanara" vs. the actual Roman gate; "Pietre del Ponte di Tiberio non
       rimontate" vs. the bridge itself) handled with explicit guards in `riminiEntry()` rather than
       guessed around. 10 sites left for the standing task — 30/40 (75.0%).*
+      *Verona and Milan done 2026-08-22 by a cloud shift: 7/7 entries — `app/veronaDescriptions.ts`
+      (5 buildings), `app/milanDescriptions.ts` (2 buildings). Also settled Shift 45's open
+      question on Ravenna: checked its `_buildings.geojson` directly (no Overpass fetch needed,
+      already on disk) and confirmed every named feature is genuinely post-Roman — 5th/6th-century
+      basilicas (San Vitale, Sant'Apollinare Nuovo), the Mausoleo di Galla Placidia, medieval city
+      gates, modern port/rail infrastructure — nothing dateable to 117 CE or earlier. Ravenna
+      dropped from the standing task's open-site list rather than left ambiguous. Verona's Arco
+      dei Gavi (early 1st c. CE, architect's own name carved into the arch), Porta Borsari, Porta
+      Leoni and Teatro Romano were all 80-150 years old by 117 CE; "Porta Nuova" (1532-40,
+      Sanmicheli) and "Porta San Giorgio" (1321, Scaliger-era, rebuilt 16th-19th c.) are both
+      post-Roman fortification gates despite sitting on the historic walls, and "Ponte Scaligero"
+      is a 14th-century medieval bridge, not the city's real Roman-era crossing (Ponte Pietra,
+      absent from this site's own OSM extract). Milan's yield was genuinely thin — only the
+      Amphitheatre and the Torre Romana del Carrobbio (part of the Augustan Porta Ticinensis) are
+      confidently pre-117 CE; every other Roman-looking candidate (the Circus, the Imperial Palace
+      misleadingly OSM-tagged "Villa Imperiale", Torre di Massimiano, Colonne di San Lorenzo) dates
+      to Maximian's reign (285-310 CE) or later, exactly the Tetrarchic-capital-era pattern
+      `FEATURE_BACKLOG.md` predicted; "Domus Nostra" turned out to be a modern university dining
+      hall, not a Roman house, a coincidental Latin-name match. Two real name collisions guarded:
+      "Museo archeologico al Teatro Romano" (Verona) and "Parco Archeologico dell'Anfiteatro
+      Romano" (Milan) both literally contain their site's ancient-monument key as a substring and
+      would otherwise have inherited the wrong description. 8 sites left for the standing task —
+      32/40 (80.0%).*
 - [x] `[10-P0-3]` **`flagship-depth`** `deepen` — Bring POIs whose `notes` runs under 60 words up
       to real panel depth in that same field, worst-first. This is the **panel tier of
       `[10-P0-2]`** applied to the places that need it most; the tombstone/label tiers still need
