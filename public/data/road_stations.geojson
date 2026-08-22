@@ -11096,6 +11096,170 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1875,
+          38.3086
+        ]
+      },
+      "properties": {
+        "id": "station_pisidian_antioch",
+        "category": "vicus",
+        "name": "Antiochia Caesarea",
+        "road": "Via Sebaste",
+        "distance_from_previous_mp": 0,
+        "identified": true,
+        "notes": "The caput viae — every milestone on the Via Sebaste counted its distance from this Augustan colony. Refounded as a Roman veteran settlement and used as the region's main garrison and administrative base, Antioch anchored the road the governor Cornutus Arruntius Aquila built in 6 BCE to move troops quickly against the Taurus hill tribes and down to the Pamphylian coast.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Via_Sebaste",
+          "https://en.wikipedia.org/wiki/Antioch_of_Pisidia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.4705,
+          38.0725
+        ]
+      },
+      "properties": {
+        "id": "station_apollonia_pisidia",
+        "category": "vicus",
+        "name": "Apollonia",
+        "road": "Via Sebaste",
+        "identified": true,
+        "notes": "A Hellenistic foundation in Pisidia (earlier called Mordiaeon) that the Via Sebaste's Augustan builders folded into the new road network as the first major stop southwest of Antioch, on the stretch that swung the route toward Lake Burdur and Comama. No individual milestone distance from Antioch survives for this stretch.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Via_Sebaste",
+          "https://pleiades.stoa.org/places/33128252"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.32,
+          37.323
+        ]
+      },
+      "properties": {
+        "id": "station_comama",
+        "category": "vicus",
+        "name": "Comama",
+        "road": "Via Sebaste",
+        "distance_from_previous_mp": 122,
+        "identified": true,
+        "notes": "An Augustan veteran colony (Colonia Iulia Augusta Prima Fida Comama), one of five planted around Antioch in 6 BCE to pin down the Pisidian mountain tribes. An Augustan milestone found on the site itself reads CXXII — 122 Roman miles from Antioch, the road's caput viae, which this figure reflects rather than a distance from Apollonia specifically. Here the road split: one branch ran west to Olbasa, another southeast to Cremna, and the mainline continued south through the Climax Pass to Perge.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Comama",
+          "https://www.anatolianroads.org/via-sebaste/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9957,
+          37.3046
+        ]
+      },
+      "properties": {
+        "id": "station_olbasa",
+        "category": "vicus",
+        "name": "Olbasa",
+        "road": "Via Sebaste",
+        "identified": true,
+        "notes": "A western branch off the Via Sebaste at Comama, roughly 25-30 km away (no surviving milestone gives an exact figure). Another of Augustus's Pisidian veteran colonies, titled Colonia Iulia Augusta like its sister foundations, planted to extend Roman control and road access into the western highlands.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Olbasa_(Pisidia)",
+          "http://imperium.ahlfeldt.se/places/21552.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.6881,
+          37.4977
+        ]
+      },
+      "properties": {
+        "id": "station_cremna",
+        "category": "vicus",
+        "name": "Cremna",
+        "road": "Via Sebaste",
+        "identified": true,
+        "notes": "A southeastern branch off the Via Sebaste at Comama, roughly 35 km away (no surviving milestone gives an exact figure). Perched on a defensible plateau above the Cestrus river gorge, Cremna was garrisoned by Augustan veterans as a forward post against the Homonadensian tribes; a century after its founding it withstood a dramatic siege by the rebel Lydius against a Roman relief force, an episode Strabo records.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cremna",
+          "https://topostext.org/place/375307UKre"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.75,
+          37.15
+        ]
+      },
+      "properties": {
+        "id": "station_mansio_klimax",
+        "category": "mansio",
+        "name": "Mansio in Klimax",
+        "road": "Via Sebaste",
+        "distance_from_previous_mp": 17,
+        "identified": true,
+        "notes": "The best-preserved Roman mansio in all of Asia Minor, still standing to roof height in the Doseme Bogazi pass with a courtyard, nine ground-floor rooms for pack animals and six upper rooms for travelers. An Augustan milestone beside it reads CXXXIX — 139 Roman miles from Antioch, 17 past Comama's own CXXII marker — fixing the mansio at the road's critical Taurus Mountains chokepoint between the Pisidian plateau and the Pamphylian coast. Coordinates are an approximate placement for the pass; no public exact figure was found for the mansio building itself.",
+        "sources": [
+          "https://www.biblicalturkey.org/post/the-via-sebaste-in-antalya",
+          "Mitchell, Wagner & Williams (2021), Roman Archaeology in a South Anatolian Landscape: The Via Sebaste, the Mansio in the Doseme Bogazi, and Regional Transhumance in Pamphylia and Pisidia, Koc University Press"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.8538,
+          36.9614
+        ]
+      },
+      "properties": {
+        "id": "station_perge_via_sebaste",
+        "category": "vicus",
+        "name": "Perge",
+        "road": "Via Sebaste",
+        "identified": true,
+        "notes": "The Via Sebaste's Mediterranean end point, giving Rome's inland Pisidian colonies a direct paved route to a Pamphylian port. Acts 13 places Paul and Barnabas landing and later re-embarking here, almost certainly using this same road on their inland leg to Pisidian Antioch. A 2008 survey documented a newly-identified stretch of the road and its roadside buildings running from here up to the Climax Pass.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Perga",
+          "https://en.wikipedia.org/wiki/Via_Sebaste"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
