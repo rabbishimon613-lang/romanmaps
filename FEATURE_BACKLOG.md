@@ -289,6 +289,22 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
   citation found (Dio Chrysostom, *Oration* 32) doesn't name a specific school. Correctly excluded
   rather than guessed — matches the brief's own framing of Alexandria as one candidate among the
   named list, not a certainty.
+- [ ] **Image top-up pass on 13 long-standing null-`image_url` POIs came back mostly empty — this
+  environment's `WebSearch` budget is per-session, not per-agent, and this shift exhausted it.**
+  Targeted the 9 remaining economic-infrastructure nulls (Lutudarum, Pangaion, Ampelum, Docimium,
+  Marmara Island, Goktepe, Montans, Banassac, Tricio) plus the 4 remaining Mesopotamian-substrate
+  nulls (Charax Spasinou, Vologesias, Singara, Larsa). Only Larsa produced even a medium-confidence
+  candidate (`Larsa Ziggurat (30897923765).jpg`, via a real `Category:Larsa` hit) — not added this
+  shift since the agent's own search budget ran out before it could open the file page to confirm
+  licensing/subject match, and a wrong image is worse than none. Four more (Docimium, Marmara
+  Island, Tricio, Charax Spasinou) have real, confirmed Commons *categories* but no specific
+  filename pinned down before the budget ran out — best next candidates for a fresh pass. The other
+  eight came back with zero usable Commons content after real searching (one near-miss caught and
+  correctly rejected: Charax Spasinou's only Commons hit is a butterfly genus of the same name, not
+  the ancient city) and may genuinely lack a photographable/identifiable site. **Worth flagging
+  for whoever picks this up next: don't run more than one WebSearch-heavy agent per shift if a
+  prior agent in the same session may have already spent most of the budget** — this shift's own
+  three research agents before this one likely account for the exhaustion.
 
 ## Shipped (moved from above; newest on top)
 
