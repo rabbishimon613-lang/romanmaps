@@ -137,7 +137,16 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
 ## New ideas spotted this shift (2026-08-14, Shift 14)
 
 - [ ] **Axis 3b coordinate precision — several entries are best-effort estimates, not gazetteer-verified.** The research session's own WebSearch budget ran out before dedicated coordinate checks for Grand (France), Fontes Sequanae, Tas-Silġ (Malta), and the pre-flooding Nile locations of the three Nubian temples (Kalabsha, Dendur, Debod). Coordinates are accurate to roughly a few kilometers — fine for the current point-marker scale, but worth tightening if a future feature (routing, precise distance measurement) needs better precision.
-- [ ] **Axis 20 — 6 of the original 9 flagged gymnasia are still unconfirmed.** Rhodes and Assos closed by an earlier shift; Thera closed 2026-08-20 (this shift), added to `sports.geojson` with a verified 1919 Baud-Bovy/Boissonnas Commons photograph of the gymnasium's Cave of Hermes, cross-confirmed via two independent Commons category listings since direct `WebFetch` to `commons.wikimedia.org` stays blocked in this environment. Corinth, Termessos, Magnesia on the Maeander, Iasos, Knidos, and Alinda still have no confirmable gymnasium-specific Commons file after three separate dedicated search sessions now. Termessos's `Category:Gymnasium (Termessos)` (~28 files) is the closest to resolved — a session with working `WebFetch` to `commons.wikimedia.org` (or a different sandbox) should be able to open the category page directly and pick one filename, which every WebSearch-only attempt so far has failed to surface.
+- [ ] **Axis 20 — Corinth, Termessos and Magnesia on the Maeander are now real features (added
+  2026-08-22 by a cloud shift), but still ship without `image_url`** — a fourth dedicated search
+  pass still couldn't confirm an exact Commons filename for any of the three (omitted the key
+  entirely rather than `null`, per the validator's own preference). Termessos's `Category:Gymnasium
+  (Termessos)` (~28 files) remains the closest to resolved — a session with working `WebFetch` to
+  `commons.wikimedia.org` (or a different sandbox) should be able to open the category page
+  directly and pick one filename, which every WebSearch-only attempt so far has failed to surface.
+  **Iasos, Knidos and Alinda are still fully unresearched** — no feature exists for any of them yet,
+  same "never actually committed" gap the rest of this note's history describes. Rhodes, Assos and
+  Thera were closed by earlier shifts.
 - [ ] **The detached-HEAD-behind-stale-main git symptom is now confirmed on 6 consecutive shifts (9 through 14).** Every shift independently rediscovers and fixes it (`git fetch origin main` + `git checkout main && git reset --hard origin/main` when a plain ff-only merge refuses due to unrelated histories). The fix is solid and well-documented in SHIFT_LOG.md at this point, but it's still costing real per-shift time — worth whoever administers these scheduled cloud sessions actually looking at why each fresh container starts with a stale local `main` pointer, rather than relying on tribal knowledge that doesn't carry across sessions.
 - [ ] **JSON file re-indentation noise.** This shift's programmatic splice-and-rewrite of `pois.geojson` and `sports.geojson` (via Python's `json.dump(..., indent=1)`) reformatted the entire file from the original 2-space indent to 1-space, inflating the git diff for those commits even though every pre-existing feature's content is byte-identical (verified before committing). Not a data problem, just diff noise — match the original file's indent width if editing these files programmatically again.
 
@@ -160,7 +169,7 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
 
 - [ ] **Axis 10c (Phoenician/Punic substrate) is now done** — `substrate.geojson` has 28 Punic features alongside Shift 16's 22 Etruscan ones. Three of the brief's five remaining substrate cultures are still fully open: 10d (Celtic), 10e (Iberian/Basque), 10f (Egyptian pharaonic), 10g (Mesopotamian) — same schema, same `Map.tsx` wiring pattern, just a new `culture` value.
 - [ ] **`Map.tsx`'s substrate-layer popup used to hardcode `"Etruscan"` as the culture label** — fixed this shift to read `p.culture` dynamically and capitalize it, since the layer now has two cultures. Worth remembering for any future per-culture styling (e.g. a legend color key) that a future shift might want to add as more cultures land.
-- [ ] **A small reusable splice-append script (`append_features.js`) can add new GeoJSON Feature objects to an existing file with a pure-addition diff**, by detecting the file's own indent width from its `"features": [` block and text-splicing before the closing bracket rather than re-parsing/re-serializing the whole file. This sidesteps the `json.dump` reformatting-noise trap Shifts 14–15 both hit. It lived in this shift's scratch directory, not the repo — worth promoting to a committed helper (e.g. `research/append_features.js`, despite `research/` being gitignored per the existing note above, or somewhere that survives) if a future shift wants it; otherwise it'll just get reinvented again.
+- [x] **A small reusable splice-append script (`append_features.js`) can add new GeoJSON Feature objects to an existing file with a pure-addition diff** — done by a cloud shift, 2026-08-22: `scripts/append-geojson-features.mjs` (`npm run append-geojson`), a committed helper rather than scratch-directory throwaway code. Detects the target file's own indent width and line ending from the bytes around its `"features": [` array (not a hardcoded guess), text-splices new Feature objects in before the closing bracket, and rolls back automatically if the resulting feature count doesn't match. Tested against 1-space, 2-space, and empty-array target files plus literal unicode content (verified un-escaped, sidestepping the separate `ensure_ascii` trap Shift 15 also flagged). Used for real the same shift: 7 Via Sebaste road stations and 3 gymnasia both went in via this script with clean pure-addition diffs.
 - [ ] **Dark mode (P3) is a bigger lift than a normal Track B slot** — confirmed this shift while scoping it before picking a different item instead. `Map.tsx` hardcodes the label-halo color `#f4ead5` inline more than a dozen times across its ~28 layer-definition blocks rather than reading from the `P` palette object already defined at the top of the file. A real "parchment → dark leather" theme swap needs either a careful multi-site refactor onto palette tokens first, or shipping a visibly inconsistent first pass. Flagging so the blocker is known going in, not discovered mid-shift.
 - [ ] **Villae (axis 3d) landed at 37 of the brief's 40-feature floor, 3 short, and it's a real gap rather than a padding decision.** The research pass tested and rejected 18 well-known "Roman villa" candidates specifically because their earliest attested phase postdates 117 CE (Hadrian's Villa foremost — construction didn't begin until late 118/early 119, a full year past Trajan's death, not the "foundations already underway" case the brief's own judgment-call language covers). A future top-up would need either a fresh, wider geographic sweep (this shift's search leaned Italy/Britain/Gaul/Hispania heavy; Africa Proconsularis's imperial olive-oil estates and Pannonia/Noricum/Syria are thin) or accepting 37 as close to the real ceiling for "genuinely pre-118, well-attested, named villa."
 - [ ] **Image gaps for a fresh-search-budget top-up**: 13 of this shift's 28 Punic substrate features and 22 of 37 villae shipped `image_url: null` after a first WebSearch pass found no confirmable Commons filename — same "real gap, not exhausted" flag prior shifts have used for similar cases (e.g. axis 20's gymnasia).
@@ -233,13 +242,12 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
 
 ## New ideas spotted this shift (2026-08-22, cloud shift 45)
 
-- [ ] **Ravenna's OSM building extract may have zero genuine 117 CE content** — every named
-  feature spotted in a quick pass (basilicas San Vitale/Sant'Apollinare Nuovo, Mausoleo di Galla
-  Placidia, seven city gates) looks 5th-century-or-later on its name alone, consistent with
-  Ravenna's own status in this project (already a full site, primarily notable as the Classis
-  Ravennas naval base in 117 CE, per `SHIFT_BRIEF.md` axis 3a) rather than a monumental early-
-  imperial core. Not confirmed by real research this shift — just flagged so whoever picks it up
-  next checks before assuming a normal curate-buildings batch is available there.
+- [x] **Ravenna's OSM building extract has zero genuine 117 CE content — confirmed, not just
+  flagged.** A cloud shift, 2026-08-22, checked all 114 named features in `ravenna_buildings.geojson`
+  directly (no Overpass fetch needed, already on disk): every one is 5th-6th-century-or-later
+  (basilicas San Vitale/Sant'Apollinare Nuovo, the Mausoleo di Galla Placidia, medieval city gates)
+  or modern port/rail infrastructure. `[06-P0-2]` curate-buildings should skip Ravenna outright —
+  don't re-check expecting a normal batch, same as the already-settled aquincum/xanten calls.
 - [ ] **Road-station additions need an exact-coordinate check against already-mapped stations and
   full sites before adding a new point**, the same lesson `[12-FIX-2]` already taught for POIs.
   Hit this concretely adding Via Domitiana's stations this shift: Sinuessa is both the Via
@@ -248,6 +256,39 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
   Enriched the existing entry's `notes` instead of adding a second point. Worth a standing habit
   for the next road-stations batch, the same way `[06-P0-2]`'s own batches now check named-building
   counts before claiming a site.
+
+## New ideas spotted this shift (2026-08-22, a cloud shift)
+
+- [x] **Axis 9d (spectacle + gladiator geography) is already fully complete — confirmed, not a
+  gap.** Dispatched a research agent to open this sub-axis fresh (it had zero prior data by this
+  shift's own read of the file layout), only to find, before writing anything, that all 7 named
+  candidates already exist as real, sourced `pois.geojson` records: `poi_ludus_magnus_rome`,
+  `poi_ludus_dacicus_rome`, `poi_ludus_gallicus_rome`, `poi_ludus_matutinus_rome`,
+  `poi_ludus_capua`, `poi_ludus_ravenna`, `poi_ludus_pergamon` — an earlier, undocumented shift
+  must have shipped this axis without a `sports.geojson`-family file of its own (it lives in the
+  main POI canon instead, category `ludus`). Caught by the standing exact-coordinate collision
+  check before any duplicate was written — no data changed. Saves a future shift the same
+  redundant research pass.
+- [ ] **A real dating question surfaced on `poi_ludus_pergamon` while checking the above, worth a
+  dedicated `[08-P1-6]`-style verify pass.** The existing record ships `extant_117ce: true` on the
+  strength of literary attestation of a state-run *institution* (unrv.com), which is a defensible
+  claim on its own — but this shift's research agent found real, independent evidence (DAI
+  Pergamon Excavation project fieldwork, 2019-2021; Archaeology Magazine May/June 2022) that the
+  *excavated amphitheatre* at Pergamon — the building where such a school's fighters would have
+  performed — was actually built under Hadrian's 120s CE program, after this map's 117 CE
+  snapshot. The clearest evidence tying a named gladiator troop to Pergamon specifically (Galen's
+  post as physician to "the gladiators of the high priest of Asia") also dates to 157-161 CE, four
+  decades past the snapshot. Not changed this shift since the existing claim (an institution, not
+  a building) isn't strictly contradicted — but a future `verify` ticket should settle whether
+  `poi_ludus_pergamon`'s `confidence: low` should also carry an explicit note about the building
+  itself postdating 117 CE, the same way Baalbek's Temple of Bacchus got corrected.
+- [ ] **Also researched but explicitly not added: a gladiator school at Alexandria.** The research
+  agent could not confirm a real, located ludus there — the one architectural candidate
+  (Kom el-Dikka's "amphitheatre") turns out on closer reading to be a small Roman theatre/odeon
+  used for music and civic gatherings, not gladiatorial combat, and the only spectacle-culture
+  citation found (Dio Chrysostom, *Oration* 32) doesn't name a specific school. Correctly excluded
+  rather than guessed — matches the brief's own framing of Alexandria as one candidate among the
+  named list, not a certainty.
 
 ## Shipped (moved from above; newest on top)
 
