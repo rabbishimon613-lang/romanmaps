@@ -42,6 +42,8 @@ import { brixiaEntry } from "./brixiaDescriptions";
 import { riminiEntry } from "./riminiDescriptions";
 import { veronaEntry } from "./veronaDescriptions";
 import { milanEntry } from "./milanDescriptions";
+import { aquileiaEntry } from "./aquileiaDescriptions";
+import { pozzuoliEntry } from "./pozzuoliDescriptions";
 import { SITE_META, SITES } from "./sites";
 
 // [06-P0-2] curate-buildings: one *Entry(name, osmId?) lookup fn per curated site, keyed by the
@@ -97,6 +99,8 @@ const SITE_ENTRY_LOOKUP: Record<string, (name: string, osmId?: number) => Curate
   rimini: riminiEntry,
   verona: veronaEntry,
   milan: milanEntry,
+  aquileia: aquileiaEntry,
+  pozzuoli: pozzuoliEntry,
 };
 
 // Palette — light + dark variants. Both palettes are calibrated so that the sea/land/roads/labels
