@@ -32,7 +32,54 @@ import { paestumEntry } from "./paestumDescriptions";
 import { portusEntry } from "./portusDescriptions";
 import { cumaeEntry } from "./cumaeDescriptions";
 import { baiaeEntry } from "./baiaeDescriptions";
+import { capuaEntry } from "./capuaDescriptions";
+import { tivoliEntry } from "./tivoliDescriptions";
+import { palestrinaEntry } from "./palestrinaDescriptions";
+import { corinthEntry } from "./corinthDescriptions";
 import { SITE_META, SITES } from "./sites";
+
+// [06-P0-2] curate-buildings: one *Entry(name) lookup fn per curated site, keyed by the site slug
+// used in each building's `site` property. A plain Record replaced a 22-deep nested ternary here —
+// see FEATURE_BACKLOG.md's "cloud shift 41" note for why. Every *Entry fn shares the same shape
+// (english?/category?/extant_117ce?/built?/destroyed?/description) even though each site's own
+// file names its type distinctly (LuniEntry, ItalicaEntry, ...) — typed loosely on purpose so
+// adding a new site is a two-line diff: one import above, one row below.
+type CuratedEntry = {
+  english?: string;
+  category?: string;
+  extant_117ce?: boolean;
+  built?: number;
+  destroyed?: number;
+  description: string;
+};
+const SITE_ENTRY_LOOKUP: Record<string, (name: string) => CuratedEntry | undefined> = {
+  ostia: ostiaEntry,
+  pompeii: pompeiiEntry,
+  herculaneum: herculaneumEntry,
+  ephesus: ephesusEntry,
+  delphi: delphiEntry,
+  jerash: jerashEntry,
+  trier: trierEntry,
+  merida: meridaEntry,
+  palmyra: palmyraEntry,
+  athens: athensEntry,
+  leptismagna: leptisMagnaEntry,
+  timgad: timgadEntry,
+  djemila: djemilaEntry,
+  volubilis: volubilisEntry,
+  sabratha: sabrathaEntry,
+  baalbek: baalbekEntry,
+  luni: luniEntry,
+  italica: italicaEntry,
+  paestum: paestumEntry,
+  portus: portusEntry,
+  cumae: cumaeEntry,
+  baiae: baiaeEntry,
+  capua: capuaEntry,
+  tivoli: tivoliEntry,
+  palestrina: palestrinaEntry,
+  corinth: corinthEntry,
+};
 
 // Palette — light + dark variants. Both palettes are calibrated so that the sea/land/roads/labels
 // stay legible at every zoom and so ancient-sea and modern-sea read as the same water tone.
@@ -944,52 +991,7 @@ export default function Map() {
           const siteMeta = SITE_META[site] || { display: site, province: "" };
           // Strip Regio.Insula parenthetical for a cleaner display name
           const displayName = rawName.replace(/\s*\([^)]*\)\s*$/, "").trim() || rawName || `Building ${p.osm_id}`;
-          const entry =
-            site === "ostia"
-              ? ostiaEntry(rawName)
-              : site === "pompeii"
-                ? pompeiiEntry(rawName)
-                : site === "herculaneum"
-                  ? herculaneumEntry(rawName)
-                  : site === "ephesus"
-                    ? ephesusEntry(rawName)
-                    : site === "delphi"
-                      ? delphiEntry(rawName)
-                      : site === "jerash"
-                        ? jerashEntry(rawName)
-                        : site === "trier"
-                          ? trierEntry(rawName)
-                          : site === "merida"
-                            ? meridaEntry(rawName)
-                            : site === "palmyra"
-                              ? palmyraEntry(rawName)
-                              : site === "athens"
-                                ? athensEntry(rawName)
-                                : site === "leptismagna"
-                                  ? leptisMagnaEntry(rawName)
-                                  : site === "timgad"
-                                    ? timgadEntry(rawName)
-                                    : site === "djemila"
-                                      ? djemilaEntry(rawName)
-                                      : site === "volubilis"
-                                        ? volubilisEntry(rawName)
-                                        : site === "sabratha"
-                                          ? sabrathaEntry(rawName)
-                                          : site === "baalbek"
-                                            ? baalbekEntry(rawName)
-                                            : site === "luni"
-                                              ? luniEntry(rawName)
-                                              : site === "italica"
-                                                ? italicaEntry(rawName)
-                                                : site === "paestum"
-                                                  ? paestumEntry(rawName)
-                                                  : site === "portus"
-                                                    ? portusEntry(rawName)
-                                                    : site === "cumae"
-                                                      ? cumaeEntry(rawName)
-                                                      : site === "baiae"
-                                                        ? baiaeEntry(rawName)
-                                                        : undefined;
+          const entry = SITE_ENTRY_LOOKUP[site]?.(rawName);
           selectPoi(
             {
               id: `${site}-${p.osm_id}`,
