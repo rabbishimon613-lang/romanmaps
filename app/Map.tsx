@@ -37,6 +37,7 @@ import { capuaEntry } from "./capuaDescriptions";
 import { tivoliEntry } from "./tivoliDescriptions";
 import { palestrinaEntry } from "./palestrinaDescriptions";
 import { corinthEntry } from "./corinthDescriptions";
+import { vindolandaEntry } from "./vindolandaDescriptions";
 import { SITE_META, SITES } from "./sites";
 
 // [06-P0-2] curate-buildings: one *Entry(name) lookup fn per curated site, keyed by the site slug
@@ -81,6 +82,7 @@ const SITE_ENTRY_LOOKUP: Record<string, (name: string) => CuratedEntry | undefin
   tivoli: tivoliEntry,
   palestrina: palestrinaEntry,
   corinth: corinthEntry,
+  vindolanda: vindolandaEntry,
 };
 
 // Palette — light + dark variants. Both palettes are calibrated so that the sea/land/roads/labels
