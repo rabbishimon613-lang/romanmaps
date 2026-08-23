@@ -7580,7 +7580,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pyramid_of_cestius.jpg?width=800",
         "image_credit": "Photograph of the Pyramid of Cestius, Rome, Wikimedia Commons",
-        "image_alt": "White marble pyramid tomb of Gaius Cestius in Rome"
+        "image_alt": "White marble pyramid tomb of Gaius Cestius in Rome",
+        "ancient_sources": [
+          {
+            "author": "Cicero",
+            "work": "Philippics",
+            "ref": "3.26",
+            "note": "Names Gaius Cestius, the praetor and priest whose tomb this pyramid became, decades before it was built — the closest thing to a literary trace of the man himself."
+          }
+        ]
       }
     },
     {

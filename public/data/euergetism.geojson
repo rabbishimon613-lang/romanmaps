@@ -1407,6 +1407,77 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Arch_of_Trajan,_Institutio_Alimenta_relief,_Benevento,_Italy_-_49866556976.jpg?width=800",
         "image_credit": "Institutio Alimentaria relief, Arch of Trajan, Benevento — photo by Carole Raddato, CC BY-SA 2.0, via Wikimedia Commons"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6995,
+          45.0526
+        ]
+      },
+      "properties": {
+        "id": "euerg_placentia",
+        "name": "Piacenza",
+        "category": "alimenta_town",
+        "one_line": "Trajan's alimenta program reached this Po Valley colony directly, one of the string of Italian towns whose councils posted bronze tablets naming every child fed on the scheme's interest payments. Placentia's own farmland, some of it recorded on the neighboring Veleia tablet, backed part of the same mortgage-loan network. The colony had already stood here since 218 BCE, long before Trajan turned its fields into a welfare fund.",
+        "province": "Italia",
+        "modern_location": "Piacenza, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "R. Duncan-Jones, The Economy of the Roman Empire (1974)",
+          "CIL XI 1147 (Tabula Alimentaria Traianea, Veleia)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5763,
+          43.3512
+        ]
+      },
+      "properties": {
+        "id": "euerg_iguvium",
+        "name": "Gubbio",
+        "category": "alimenta_town",
+        "one_line": "Gubbio's Roman town, terraced below the older Umbrian hill sanctuary that produced the bronze Iguvine Tablets, appears among the towns named in the surviving epigraphic record of Trajan's welfare program. Its council administered interest from mortgaged local farms as a monthly food stipend for freeborn children, the same mechanism recorded in exhaustive detail at nearby Veleia. A theatre built to seat nearly 6,000 still stands at the edge of the modern town.",
+        "province": "Italia",
+        "modern_location": "Gubbio, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "R. Duncan-Jones, The Economy of the Roman Empire (1974)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8558,
+          44.7367
+        ]
+      },
+      "properties": {
+        "id": "euerg_libarna",
+        "name": "Libarna",
+        "category": "alimenta_town",
+        "one_line": "This small Ligurian colony on the road linking Genoa to the Po plain appears among the towns whose farmland was mortgaged into Trajan's alimenta network. Its amphitheater, theater, and street grid are still visible today near Serravalle Scrivia, evidence that this was a working Roman town and not just a name on a bronze tablet.",
+        "province": "Italia",
+        "modern_location": "Serravalle Scrivia, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "R. Duncan-Jones, The Economy of the Roman Empire (1974)",
+          "https://en.wikipedia.org/wiki/Amphitheatre_of_Libarna"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
