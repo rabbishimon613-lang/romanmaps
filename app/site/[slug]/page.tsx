@@ -90,6 +90,28 @@ export default function SitePage({ params }: { params: { slug: string } }) {
           <span>Founded {site.founded}</span>
         </div>
 
+        {site.snapshotNote && (
+          <div
+            style={{
+              display: "flex",
+              gap: 10,
+              alignItems: "flex-start",
+              padding: "10px 14px",
+              borderRadius: 8,
+              background: "#fdf0d5",
+              color: "#8a5a2b",
+              fontSize: 14,
+              lineHeight: 1.5,
+              margin: "0 0 20px",
+            }}
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#8a5a2b" style={{ flexShrink: 0, marginTop: 1 }}>
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
+            </svg>
+            <span>{site.snapshotNote}</span>
+          </div>
+        )}
+
         <p style={{ fontSize: 19, lineHeight: 1.6, margin: "0 0 20px" }}>{site.blurb}</p>
 
         <p style={{ fontSize: 16, lineHeight: 1.6, fontStyle: "italic", color: "#5a4c38", margin: "0 0 36px" }}>

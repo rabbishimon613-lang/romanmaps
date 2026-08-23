@@ -5,6 +5,7 @@ import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { applyAllLayers, registerLayerLoader, resetLayerLoaders, type LayerGroupId } from "./useLayers";
 import { selectPoi, clearPoi, getSelectedPoi, subscribeSelectedPoi } from "./usePoiPanel";
+import { showPhaseBanner } from "./usePhaseBanner";
 import { selectProvince, clearProvince, subscribeSelectedProvince } from "./useProvincePanel";
 import { PROVINCES } from "./provinces";
 import { isRulerActive } from "./useRuler";
@@ -868,6 +869,13 @@ export default function Map() {
             const sSrc = map.getSource("ostia-streets") as maplibregl.GeoJSONSource | undefined;
             bSrc?.setData(siteBuildingsData as any);
             sSrc?.setData(siteStreetsData as any);
+            // [06-P0-1] A site whose map view doesn't represent a living 117 CE city (Pompeii,
+            // Herculaneum — buried decades before the snapshot) gets an honest one-time notice
+            // the first time its buildings actually render, not buried in a click-through panel.
+            const loadedSite = SITES.find((s) => s.slug === slug);
+            if (loadedSite?.snapshotNote) {
+              showPhaseBanner(loadedSite.slug, loadedSite.display, loadedSite.snapshotNote);
+            }
           } catch {
             loadedSiteSlugs.delete(slug); // allow a retry on the next visit if the fetch failed
           }

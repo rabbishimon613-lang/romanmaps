@@ -22,6 +22,11 @@ export type SiteInfo = {
   founded: string;       // human string (e.g., "~350 BCE" or "founded 100 CE by Trajan")
   blurb: string;         // one-liner for the panel card
   today: string;         // "On this spot today" — one sentence on the modern-day status of the site
+  /** Set only for sites whose map view does NOT represent a living 117 CE snapshot — e.g. a
+   * site destroyed before 117 (Pompeii, Herculaneum), shown here from its excavated ruin state.
+   * Triggers PhaseBanner.tsx on the map and a matching notice on /site/[slug]. Every other site
+   * is a thriving 117 CE city and needs no note — omit rather than stating the obvious. */
+  snapshotNote?: string;
 };
 
 export const SITES: SiteInfo[] = [
@@ -32,11 +37,13 @@ export const SITES: SiteInfo[] = [
   { slug: "pompeii",     display: "Pompeii",        province: "Italia",         modernCountry: "Italy",       center: [14.4853, 40.7495], zoom: 16.5,
     founded: "6th c. BCE (Oscan)",
     blurb: "Buried 79 CE by Vesuvius. Frozen at that moment — houses, shops, graffiti and all.",
-    today: "An uninhabited, fully excavated UNESCO World Heritage site and one of Italy's most-visited attractions, still yielding new discoveries from the 79 CE eruption." },
+    today: "An uninhabited, fully excavated UNESCO World Heritage site and one of Italy's most-visited attractions, still yielding new discoveries from the 79 CE eruption." ,
+    snapshotNote: "Buried by Vesuvius 38 years before this map's 117 CE snapshot. Shown here from its excavated ruins, not as a living city of the empire." },
   { slug: "herculaneum", display: "Herculaneum",    province: "Italia",         modernCountry: "Italy",       center: [14.3480, 40.8060], zoom: 17.5,
     founded: "6th c. BCE",
     blurb: "Coastal resort town buried by Vesuvius. Wood, papyri, and food survived under 20m of pyroclastic mud.",
-    today: "Only partly excavated; the modern town of Ercolano sits atop much of the unexcavated remains, UNESCO-listed jointly with Pompeii." },
+    today: "Only partly excavated; the modern town of Ercolano sits atop much of the unexcavated remains, UNESCO-listed jointly with Pompeii." ,
+    snapshotNote: "Buried by Vesuvius 38 years before this map's 117 CE snapshot. Shown here from its excavated ruins, not as a living city of the empire." },
   { slug: "ephesus",     display: "Ephesus",        province: "Asia",           modernCountry: "Turkey",      center: [27.3410, 37.9400], zoom: 16.5,
     founded: "10th c. BCE (Ionian)",
     blurb: "Capital of the province of Asia, home of the Temple of Artemis (one of the Seven Wonders) and the Library of Celsus.",

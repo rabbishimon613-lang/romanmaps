@@ -17,6 +17,7 @@ import Compass from "./Compass";
 import TourPlayer from "./TourPlayer";
 import PlacesInViewList from "./PlacesInViewList";
 import Directions from "./Directions";
+import PhaseBanner from "./PhaseBanner";
 
 export default function Page() {
   return (
@@ -39,6 +40,7 @@ export default function Page() {
       <TourPlayer />
       <ContextMenu />
       <MapAttribution />
+      <PhaseBanner />
       <LoadingBar />
     </main>
   );

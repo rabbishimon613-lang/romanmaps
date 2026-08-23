@@ -112,6 +112,22 @@ export default function SitesPanel({ open, onClose }: { open: boolean; onClose: 
             <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
               <div className="roman-label" style={{ fontSize: 14, fontWeight: 600, color: "var(--text)" }}>{s.display}</div>
               <div style={{ fontSize: 12, color: "var(--text-2)" }}>· {s.modernCountry}</div>
+              {s.snapshotNote && (
+                <div
+                  title={s.snapshotNote}
+                  style={{
+                    fontSize: 10,
+                    fontWeight: 700,
+                    color: "var(--warn-text)",
+                    background: "var(--warn-bg)",
+                    borderRadius: 4,
+                    padding: "1px 5px",
+                    letterSpacing: 0.3,
+                  }}
+                >
+                  NOT LIVING IN 117 CE
+                </div>
+              )}
             </div>
             <div style={{ fontSize: 12, color: "var(--text-2)", marginTop: 2 }}>
               Province of {s.province} · Founded {s.founded}

@@ -721,8 +721,20 @@ to prevent. Building locally to *test* your own work is expected and fine.
       (250–400w) for every place.
 - [ ] `[13-P1-4]` **`engravings`** `illustrate` — Period engravings (Piranesi, Gell, Wood,
       Cassas, Rossini) for the 40 sites and top 100 POIs. **Standing task.**
-- [~] `[06-P0-1]` **`phase-banners`** `fix` — claimed by cloud shift 49, 2026-08-23 06:20.
-      Per-site phase banner; honest handling of sites destroyed before 117 (Pompeii, Herculaneum).
+- [x] `[06-P0-1]` **`phase-banners`** `fix` — Done 2026-08-23 by cloud shift 49. Added
+      `SiteInfo.snapshotNote` (`app/sites.ts`), set only for Pompeii and Herculaneum — the two of
+      the 40 curated sites whose street-level detail shows a state that predates the 117 CE
+      snapshot by decades (buried 79 CE) rather than a living city. New `app/usePhaseBanner.ts`
+      (a `usePoiPanel.ts`-style module store) and `app/PhaseBanner.tsx`, a dismiss-once-per-
+      session bottom toast (`--warn-bg`/`--warn-text` tokens, matching `PlaceDetails.tsx`'s
+      existing per-building "Not standing in 117 CE" badge) triggered from `Map.tsx`'s
+      `loadSiteDetail` the first time a flagged site's buildings actually render. Also added a
+      matching notice block on the static `/site/[slug]` SEO page and a small
+      "NOT LIVING IN 117 CE" badge on the site's row in `SitesPanel.tsx`, so the honesty check
+      lands on all three surfaces a visitor might see the site from, not just one. Verified with
+      Playwright at 1280×800 light and 375×812 dark: the map toast fires correctly on flying to
+      Pompeii, sits clear of the epoch pill and credit chip, and the SitesPanel badge and SEO
+      notice both render with the correct theme tokens in dark mode.
 - [x] `[04-P0-2]` **`long-press`** `polish` — Done 2026-08-19 by cloud shift 33. Mobile already
       had a 550ms touch-hold timer opening the context menu (`app/ContextMenu.tsx`, shipped
       2026-08-12), but gave zero visual feedback while holding — nothing told a user their touch
