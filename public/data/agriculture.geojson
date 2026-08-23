@@ -1039,6 +1039,465 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_apulian_sheep",
+        "name": "Apulian sheep transhumance corridor",
+        "commodity": "wool",
+        "provinces": "Apulia et Calabria (Tavoliere plain)",
+        "one_line": "Every autumn hundreds of thousands of sheep flooded down the tratturi from the Samnite highlands to winter on Apulia's Tavoliere plain, and the region's wool trade was built entirely on that seasonal migration. Pliny and Columella both singled out the local breed for the fineness of its fleece. Varro wrote proudly of his own flock of 700 making the same trip every year. The drove roads mattered enough to the economy that towns aligned their streets around them.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Transumanza",
+          "https://www.fondazioneslowfood.com/en/slow-food-presidia/empty-title-20/"
+        ],
+        "confidence": "high"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.2,
+              41.7
+            ],
+            [
+              16.3,
+              41.75
+            ],
+            [
+              16.4,
+              41.35
+            ],
+            [
+              15.8,
+              41.15
+            ],
+            [
+              15.2,
+              41.3
+            ],
+            [
+              15.2,
+              41.7
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_numidian_horses",
+        "name": "Numidian horse country",
+        "commodity": "horses",
+        "provinces": "Numidia",
+        "one_line": "The plains south of Carthage bred small, wiry horses ridden bridleless with nothing but a rope around the neck, prized for speed over open ground. Livy called their riders simply the best horsemen in Africa. Hannibal's cavalry made them feared enemies of Rome; by 117 CE entire Roman auxiliary cavalry wings recruit both mounts and riders straight from these same herds.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Numidian_cavalry",
+          "https://www.britannica.com/place/Numidia"
+        ],
+        "confidence": "high"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5,
+              36.9
+            ],
+            [
+              8.5,
+              36.5
+            ],
+            [
+              8,
+              34.5
+            ],
+            [
+              5.5,
+              34.8
+            ],
+            [
+              5,
+              36.9
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_cisalpine_cattle",
+        "name": "Cisalpine cattle country",
+        "commodity": "cattle",
+        "provinces": "Regio XI Transpadana / Regio VIII Aemilia (Po valley)",
+        "one_line": "The drained floodplain of the Po produced some of Italy's richest pasture, and by Strabo's account this was one of the most prosperous regions in the whole empire. Grain, wine and cattle all thrived on marshland Roman engineers had been reclaiming since the conquest two centuries earlier. Cisalpine hides and beef helped supply the legions stationed on the nearby Danube frontier.",
+        "sources": [
+          "https://www.worldhistory.org/Roman_Gaul/",
+          "https://oxfordre.com/classics/display/10.1093/acrefore/9780199381135.001.0001/acrefore-9780199381135-e-2798"
+        ],
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.6,
+              45.2
+            ],
+            [
+              9.2,
+              45.8
+            ],
+            [
+              11.5,
+              45.6
+            ],
+            [
+              12.4,
+              45.4
+            ],
+            [
+              12.2,
+              44.7
+            ],
+            [
+              9.5,
+              44.6
+            ],
+            [
+              7.8,
+              44.8
+            ],
+            [
+              7.6,
+              45.2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_british_hunting_dogs",
+        "name": "British hunting dog country",
+        "commodity": "hunting dogs",
+        "provinces": "Britannia",
+        "one_line": "Roman writers prized one British export above almost everything else the island produced: its hunting dogs. Strabo listed them among Britannia's valuable goods even before the conquest. The poet Oppian later described the fierce, tattooed-tribe-bred Agassian breed as unmatched at tracking game, and Tacitus counted clever hunting dogs alongside grain, hides and slaves as one of the province's chief exports.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Dogs_of_Roman_Britain"
+        ],
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -5.2,
+              53.5
+            ],
+            [
+              -1.5,
+              53.6
+            ],
+            [
+              1.4,
+              52.5
+            ],
+            [
+              0.5,
+              50.7
+            ],
+            [
+              -3.5,
+              50.6
+            ],
+            [
+              -5.5,
+              51.5
+            ],
+            [
+              -5.2,
+              53.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_dead_sea_oases",
+        "name": "Jericho and Ein Gedi oases",
+        "commodity": "dates",
+        "provinces": "Iudaea (Dead Sea shore)",
+        "one_line": "The oases around Jericho and Ein Gedi grew the ancient world's most prized dates, so rich that Pliny ranked the region's soil second only to Jerusalem's own. The same narrow strip produced balsam, distilled into the most expensive perfume in antiquity, and pomegranates famous enough to make the Bible's list of the land's seven blessed crops. Roman troops burned much of the Ein Gedi balsam groves during the Jewish War, but by 117 CE the plantations are back in full production.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ein_Gedi_(archaeological_site)",
+          "https://www.researchgate.net/publication/288307676_The_Balsam_'Afarsemon'_and_Ein_Gedi_during_the_Roman-Byzantine_period"
+        ],
+        "confidence": "high"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.35,
+              31.95
+            ],
+            [
+              35.55,
+              31.75
+            ],
+            [
+              35.42,
+              31.35
+            ],
+            [
+              35.32,
+              31.45
+            ],
+            [
+              35.35,
+              31.95
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_fayum_dates",
+        "name": "Fayum date groves",
+        "commodity": "dates",
+        "provinces": "Aegyptus (Arsinoite nome)",
+        "one_line": "Egypt's Fayum oasis, watered by a channel diverted from the Nile since Pharaonic times, filled with dense palm groves alongside the grain that made the province famous. Surviving papyri from private estates like the steward Zeno's record harvest yields and land leases in exacting bureaucratic detail, and poll-tax receipts from the reigns of Augustus and Tiberius survive from the same district. Dried Fayum dates traveled well enough to reach markets across the eastern Mediterranean.",
+        "sources": [
+          "https://www.trismegistos.org/fayum/fayum2/1284.php?geo_id=1284",
+          "https://www.academia.edu/29818981/Four_Poll_Tax_Receipts_on_Papyrus_from_the_Early_Roman_Fayum"
+        ],
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              30.3,
+              29.55
+            ],
+            [
+              30.95,
+              29.55
+            ],
+            [
+              30.95,
+              29.15
+            ],
+            [
+              30.4,
+              29.15
+            ],
+            [
+              30.3,
+              29.55
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_cyrene_silphium",
+        "name": "Cyrenaican silphium coast",
+        "commodity": "silphium",
+        "provinces": "Creta et Cyrenaica",
+        "one_line": "For centuries Cyrenaica's silphium plant was the single most valuable crop in the Mediterranean, a wild herb prized as medicine and seasoning that Cyrene stamped on its own coins. It grew in only one narrow coastal strip and resisted every attempt at cultivation elsewhere. Pliny records that the very last stalk ever found was sent to the emperor Nero as a curiosity — by 117 CE the plant that built Cyrene's fortune is already a memory, not a crop.",
+        "sources": [
+          "https://www.worldhistory.org/Silphium/",
+          "https://greekreporter.com/2026/06/19/silphium-wonder-drug-ancient-greece-extinction/"
+        ],
+        "confidence": "high"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.6,
+              32.85
+            ],
+            [
+              22,
+              32.85
+            ],
+            [
+              23,
+              32.65
+            ],
+            [
+              22.9,
+              32.5
+            ],
+            [
+              21,
+              32.55
+            ],
+            [
+              20.6,
+              32.7
+            ],
+            [
+              20.6,
+              32.85
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_carian_figs",
+        "name": "Carian fig country",
+        "commodity": "figs",
+        "provinces": "Asia (Caria)",
+        "one_line": "The dried fig took its Latin name, caricae, directly from this stretch of Asia Minor's coast — proof of how completely Rome associated the fruit with Caria. The port of Kaunos shipped them out by the boatload alongside salted fish and resin, a trade already old by the time of the Delian League five centuries earlier. A Carian fig could travel to a Roman table months after harvest and still taste of home.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kaunos",
+          "https://www.romanports.org/en/articles/ports-in-focus/860-kaunos-port-city-of-green-people.html"
+        ],
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              27.9,
+              37.3
+            ],
+            [
+              28.9,
+              37.2
+            ],
+            [
+              29.1,
+              36.8
+            ],
+            [
+              28.4,
+              36.7
+            ],
+            [
+              27.8,
+              36.9
+            ],
+            [
+              27.9,
+              37.3
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_alpine_fir",
+        "name": "Alpine fir forests",
+        "commodity": "timber",
+        "provinces": "Regio XI Transpadana / Raetia (Alpine slopes)",
+        "one_line": "The high slopes of the Alps grew silver fir prized above almost any other wood for ships' masts, light and strong enough that Pliny the Elder singled it out by name as ideal for shipbuilding. Roman engineers pushed roads deep into valleys that had never carried wheeled transport just to haul the timber out. A single mast could travel hundreds of miles from an Alpine hillside to a naval shipyard on the Mediterranean coast.",
+        "sources": [
+          "https://www.pnas.org/doi/10.1073/pnas.2516240122",
+          "https://uni-freiburg.de/en/forest-exploitation-in-antiquity-roman-expansion-altered-the-forests-north-of-the-alps/"
+        ],
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.8,
+              46
+            ],
+            [
+              9.5,
+              47
+            ],
+            [
+              13.5,
+              47
+            ],
+            [
+              13,
+              46.3
+            ],
+            [
+              9,
+              45.9
+            ],
+            [
+              6.8,
+              46
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "agri_bruttium_fir",
+        "name": "Bruttium fir forest",
+        "commodity": "timber",
+        "provinces": "Regio III Lucania et Bruttii",
+        "one_line": "The mountains of Bruttium at Italy's southern tip carried one of the peninsula's last great stands of old-growth fir and pine, close enough to the coast to feed shipyards directly. Dendrochronological studies of shipwreck and building timber have traced planking back to these very slopes. By 117 CE the forest had already been logged hard enough that Rome treated what remained of the silva Sila as a resource worth guarding.",
+        "sources": [
+          "https://antikmuseet.au.dk/fileadmin/www.antikmuseet.au.dk/Pontosfiler/BSS_6/BSS6_05_hannestad.pdf",
+          "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0224077"
+        ],
+        "confidence": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.1,
+              39.5
+            ],
+            [
+              16.7,
+              39.4
+            ],
+            [
+              16.6,
+              38.9
+            ],
+            [
+              16,
+              39
+            ],
+            [
+              16.1,
+              39.5
+            ]
+          ]
+        ]
+      }
     }
   ]
 }
