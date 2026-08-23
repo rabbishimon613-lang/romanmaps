@@ -875,8 +875,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       surface area for no real benefit. Couldn't screenshot live (this sandbox's `map.on("load")`
       never fires, see `[02-P0-4]`) — verified by code review + `npx tsc --noEmit` + `npm run
       build`, both clean.
-- [ ] `[13-P0-3]` **`image-fallback`** `illustrate` — Static map thumbnail for the 145 places
-      with no image.
+- [~] `[13-P0-3]` **`image-fallback`** `illustrate` — claimed by cloud shift 48, 2026-08-23 00:15.
+      Static map thumbnail for the 145 places with no image.
 - [x] `[11-P0-2]` **`lazy-overlays`** `polish` — Done 2026-08-19 by cloud shift 34. All 27
       non-base overlay groups (road-stations through ethnic-pockets) used to fetch, parse, and
       add their GeoJSON on every cold load despite defaulting OFF. `app/useLayers.ts` gained a
