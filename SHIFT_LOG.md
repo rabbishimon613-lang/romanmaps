@@ -7,6 +7,159 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 49 — 2026-08-23 (this shift's own prompt claimed "Shift 2 of four")
+
+Same stale-numbering mismatch flagged by every shift since #13 — the scheduled prompt said
+"Shift 2 of four," `SHIFT_LOG` was 48 real shifts deep at session start. Session started with
+`HEAD` detached at `36601a6` (Shift 48's own final commit) and a stale local `main` sitting 20
+commits behind at `709a480` ("Shift 28") — same benign container-creation race every recent shift
+has hit and logged. `git fetch origin main && git reset --hard origin/main` landed cleanly with
+no local-only work at risk. Confirmed the network-egress finding every prior shift has
+independently hit still holds in this container: `overpass-api.de` and every Wikipedia/Commons/
+academic-source domain I tried to `WebFetch` directly returned `EGRESS_BLOCKED` (checked the
+agent-proxy status endpoint directly — both hosts show up in `recentRelayFailures` with a 403 from
+the gateway). `WebSearch`'s own backend stayed reachable throughout and was the only research
+channel this shift, same as prior shifts have documented. This rules out Axis 1 (more cities) for
+another shift running in this same sandbox — nobody has gotten a working Overpass fetch in eight
+shifts now, and this one is the ninth confirming it, not just re-avoiding it.
+
+### Board check
+
+Claimed `[06-P0-1]` phase-banners (Track B, `fix`, well-scoped, unclaimed) before starting. The
+same large P0 refactor set every recent shift has found and declined for the same reason —
+`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terrain,
+`[02-P0-4]` self-host-glyphs — stayed untouched; still correctly out of scope for an unsupervised
+session pushing straight to production. For Track A, the board had nothing else unclaimed that
+fit a research-only (no-Overpass) shift, so picked axis 2 (road stations, a brand-new road) and
+axis 8/6 top-ups from `SHIFT_BRIEF.md`'s own list, same legitimate axis-pick precedent recent
+shifts have documented. Ratio this shift: 1 `fix` (phase-banners) + 3 `add` (Via de la Plata,
+wine route, penal quarries) — add-heavy again; noting the skew rather than padding it with an
+unnecessary `deepen`/`polish` pick.
+
+### Track A — Axis 2: Via de la Plata (Iter ab Emerita Asturicam), a full new road
+
+`road_stations.geojson` had 27 roads already touched by prior shifts but never this one — the
+Antonine Itinerary route from Emerita Augusta to Asturica Augusta (313 Roman miles, the road the
+modern "Camino/Ruta de la Plata" is named for). Reconstructed all 8 attested mile-figures for the
+Emerita→Sentice stretch (Ad Sorores 26, Castra Caecilia 20, Turmulus 20, Rusticiana 22, Capara 22,
+Caecilius Vicus 22, Ad Lippos 12, Sentice 15) plus Sentice→Salmantica (24) and Salmantica→Sibarim→
+Ocelo Duri (21+21) via WebSearch cross-referencing multiple scholarly sources — then caught my own
+arithmetic against an independently-cited fact ("Salmantica, 183 miles from Emerita") before
+trusting it: 26+20+20+22+22+22+12+15+24 = 183, an exact match, which is the only reason I'm
+confident these figures are real Itinerarium Antonini 434 mile-stones and not search-snippet noise.
+North of Ocelo Duri the identifications get genuinely contested in the scholarship itself (one
+source's "Toro=Albocela, Tiedra=Amallobriga" against another's "Tiedra=Albocela, Montealegre=
+Amallobriga" for the same two station names) — shipped both Albocela and Amallobriga at
+`confidence: "low"` with estimated (not claimed-attested) distances, and flagged Ad Lippos/Sentice/
+Sibarim the same way where the modern find-spot is actively still being searched for (one source's
+own article title is literally "En busca de la Mansio Sentice" — the mansio is still being hunted
+today). Brigaecium (Villabrazaro, near Benavente) came out with unexpectedly good cross-validation:
+its independently-attested "40 Roman miles from Asturica" almost exactly matches the straight-line
+distance from my chosen coordinates, raising it from a guess to `confidence: "medium"`. 14 new
+stations, `road_stations.geojson` 474 → 488. Road stations don't carry `image_url` in this dataset
+(only 2/474 did before this batch) since `Map.tsx` renders them as tooltip-only markers, never the
+full `PlaceDetails` hero card — confirmed by reading the render path before skipping images rather
+than assuming.
+
+### Track A — Axis 8 + Axis 17 top-ups, with one real self-caught near-miss
+
+Set out to add Baetica's and Tarraconensis's conventus centers (`SHIFT_BRIEF.md`'s axis 8b names
+them directly: "well-attested for Asia... Baetica, Tarraconensis") — wrote and researched all 11
+entries in full Google-Business voice with verified Commons image filenames, ran the append script,
+and only then did the validator catch it: **all 11 were already in the file**, added by an earlier
+shift that named the file `conventus_asia.geojson` despite it having carried all three provinces
+since that shift. I'd checked the file's total feature count (24) at the start of the session but
+never actually printed the `province` breakdown before deciding this was a gap — a real process
+mistake, not a data problem. `git show HEAD:...` restored the file byte-identical and the 11
+duplicate entries were discarded before ever reaching a commit. What *was* real and worth keeping:
+the file's name and the Layers-panel label ("Conventus centers (Asia)") were both stale regardless
+of my mistake, so renamed `conventus_asia.geojson` → `conventus.geojson` (`git mv`, updated the two
+code references in `Map.tsx` and `scripts/validate.mjs`) and fixed the label to "Conventus centers
+(Asia, Baetica, Tarraconensis)". Lesson for future shifts logged directly in the commit message:
+check a themed file's actual property breakdown, not just its total count or its filename, before
+treating any subset of it as unclaimed work.
+
+Axis 17 (exile + penal geography) had a real, smaller gap: `SHIFT_BRIEF.md` names Docimium and
+Mons Claudianus as penal quarries alongside the four already present (Ear of Dionysius, Chemtou,
+Mons Porphyrites, Proconnesus). Added both, matching the existing `penal_quarry` entries' full
+schema (`name_latin`/`name_english`/`province`/`built`/`extant_117ce`) rather than the simpler
+schema I'd first drafted before checking a sibling entry. Mons Claudianus's note is deliberately
+honest that it ran mostly on paid skilled labor under military guard, not condemned convicts,
+matching what the sources actually say rather than assuming every axis-17 "penal quarry" was
+literally a penal colony. `penal.geojson` 21 → 23. No confirmable Commons file turned up for
+Docimium after two separate searches, so it ships with `image_url` unset — same honest-gap handling
+Shift 48 used for Halkyn Mountain, not a guessed filename.
+
+### Track A — Axis 6: Gaul-Rhine wine route
+
+`trade_routes.geojson` had five commodities (amber, grain, tin, olive oil, silk, frankincense) but
+never wine, despite `SHIFT_BRIEF.md`'s axis 6a naming "Wine routes — Gaul → North Sea + Rhineland"
+directly. Built the full LineString + 4 named-node pattern the Amber Road entry established: Vienna
+(Pliny himself names its wine among Gaul's best, NH 14.18) → Lugdunum (river hub) → Augusta
+Treverorum/Trier → Colonia Agrippina/Cologne (the Rhine garrison's own market). Deliberately did
+*not* credit Trier's own Moselle valley with vineyards at this snapshot — those are Ausonius's,
+attested nearly two centuries later, and a quick WebSearch check on "when did Moselle viticulture
+start" came back too vague ("around the 2nd century") to responsibly round down to 117 CE; the
+node's `role` text says outright that 117 CE Trier is a redistribution market, not yet a wine
+district, rather than papering over the ambiguity. `trade_routes.geojson` 51 → 56.
+
+### Track B — `[06-P0-1]` phase-banners
+
+`PlaceDetails.tsx` already flags individual buildings with `extant_117ce: false` ("Not standing in
+117 CE") when you click into one, but nothing told a visitor *before* they started clicking around
+Pompeii or Herculaneum that the whole site's street-level detail shows the 79 CE eruption's
+excavated aftermath, not a living 117 CE city — the exact gap the board ticket names. New optional
+`SiteInfo.snapshotNote` field (`app/sites.ts`), set only for these two of the 40 curated sites.
+New `app/usePhaseBanner.ts`, a module-level pub/sub store mirroring `usePoiPanel.ts`'s existing
+pattern exactly (`useSyncExternalStore`, no React context, reachable from `Map.tsx`'s imperative
+MapLibre setup code the same way `selectPoi` already is) plus dismiss-once-per-session tracking so
+panning away and back doesn't re-show a banner the user already closed. New `app/PhaseBanner.tsx`,
+a bottom-centered toast reusing the exact `--warn-bg`/`--warn-text` tokens `PlaceDetails.tsx`'s own
+per-building badge already uses, triggered from `Map.tsx`'s `loadSiteDetail` the first time a
+flagged site's buildings actually render (not on hover, not on click — the moment the misleading
+detail itself appears). Also added the same honest note to the static `/site/[slug]` SEO page and
+a small "NOT LIVING IN 117 CE" badge to `SitesPanel.tsx`'s site-list row, so a visitor gets the same
+truth whichever of the three surfaces they land on first.
+
+Verified live with Playwright against a real `next dev` server (this container's `[02-P0-4]` glyph
+fix from Shift 32 still holds — `map.on("load")` fires normally): flew to Pompeii's coordinates at
+1280×800 light and 375×812 dark, confirmed the bottom toast fires, sits clear of both the Entrance
+welcome modal above it and the epoch pill/credit chip below it, and reads correctly in both color
+schemes; opened the Explore panel and confirmed the SitesPanel badge renders; screenshotted the
+`/site/pompeii` SEO page in both viewports and confirmed the notice block matches. Fresh container
+needed `npm install` first — reverted the resulting `package-lock.json` churn before the first
+commit, same trap Shift 48 flagged.
+
+### Verification, commits, metrics
+
+`npx tsc --noEmit` and `npm run build` both clean after every batch. Four commits, each passing the
+pre-push build gate on its own: Via de la Plata, penal-quarries + conventus rename/label fix, the
+phase-banners feature, and the wine route. `npm run validate` clean (only the same 17 pre-existing
+warnings every recent shift has re-confirmed as unrelated to that shift's own work — India-coast
+diplomacy points, Han/Kushan neighbor polygons, unnamed letter-route LineStrings). `npm run metrics
+-- --write`: 497 POIs unchanged (none of this shift's four axes write to `pois.geojson`), still
+100% deep / 0 thin.
+
+### Next shift should pick up
+
+- **Track A:** Axis 1 (more cities) stays blocked in this specific sandbox — nine shifts running
+  in this environment have now independently confirmed the Overpass egress block; if a future
+  container ever gets unblocked network access, this is the single highest-value axis waiting.
+  Rome (289 named features) is still the one large site left in the standing curate-buildings task
+  per every recent handoff's note. Axis 2's other named roads (Via Traiana Nova already has
+  stations; Via Egnatia/Via Militaris/Via Augusta all do too) are mostly covered now — a genuinely
+  fresh full-road pick would need real scouting first, not just picking the next name off the
+  brief's list.
+- **Track B:** Terrain shading (`[02-P0-1]`) and `[02-P0-4]`'s remaining half (self-hosting glyphs)
+  are both still flagged as bigger lifts than a normal Track B slot. `[06-P1-3]` building-typology
+  and `[06-P1-4]` excavation-history are still open `deepen` tickets nobody's picked up.
+- **General:** Before treating any subset of an existing themed `.geojson` file as "still missing,"
+  print its actual property breakdown (province/category/whatever the relevant grouping field is),
+  not just its total feature count or what its filename implies — this shift lost time to exactly
+  that mistake on `conventus_asia.geojson` before the validator's duplicate-id check caught it.
+
+---
+
 ## Shift 48 — 2026-08-23 (this shift's own prompt claimed "Shift 1 of four")
 
 Same stale-numbering mismatch every shift since #13 has flagged — the scheduled prompt said
