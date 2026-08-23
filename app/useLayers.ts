@@ -75,7 +75,7 @@ export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: strin
   { id: "neighbors", label: "Client kingdoms & neighbors", mapLayerIds: ["neighbors-point"] },
   { id: "languages", label: "Language belts", mapLayerIds: ["languages-fill", "languages-line"] },
   { id: "substrate", label: "Pre-Roman substrate", mapLayerIds: ["substrate-point"] },
-  { id: "conventus", label: "Conventus centers (Asia)", mapLayerIds: ["conventus-point"] },
+  { id: "conventus", label: "Conventus centers (Asia, Baetica, Tarraconensis)", mapLayerIds: ["conventus-point"] },
   { id: "agriculture", label: "Crop & agriculture zones", mapLayerIds: ["agriculture-fill", "agriculture-line"] },
   { id: "housing", label: "Housing typologies", mapLayerIds: ["housing-fill", "housing-line"] },
   { id: "cuisine", label: "Cuisine regions", mapLayerIds: ["cuisine-fill", "cuisine-line"] },

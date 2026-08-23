@@ -2369,10 +2369,11 @@ export default function Map() {
           }
         });
 
-        // Phase 27: Asia's conventus centers (public/data/conventus_asia.geojson) — the province's
-        // 13 assize/judicial-district capitals where the proconsul held circuit court (axis 8b).
+        // Phase 27: conventus iuridici centers (public/data/conventus.geojson) — assize/judicial-
+        // district capitals where the governor held circuit court (axis 8b). Started with Asia's
+        // 13 (renamed from conventus_asia.geojson once Baetica's 4 and Tarraconensis's 7 joined).
         registerThematic("conventus", async () => {
-          const conventus = await fetch("/data/conventus_asia.geojson")
+          const conventus = await fetch("/data/conventus.geojson")
             .then((r) => (r.ok ? r.json() : null))
             .catch(() => null);
           if (!cancelled && map && conventus) {

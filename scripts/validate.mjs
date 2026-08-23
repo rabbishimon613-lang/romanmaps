@@ -37,7 +37,7 @@ const EMPIRE_BOX = { lngMin: -20, lngMax: 70, latMin: 10, latMax: 62 };
  * converged on (id + a name + sources), pending the merge in [12-P0-1]. */
 const PROFILES = {
   "pois.geojson": "poi",
-  "conventus_asia.geojson": "themed",
+  "conventus.geojson": "themed",
   "crafts.geojson": "themed",
   "diplomacy_117.geojson": "themed",
   "euergetism.geojson": "themed",

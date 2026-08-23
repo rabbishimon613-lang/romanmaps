@@ -616,6 +616,60 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.7482,
+          38.8633
+        ]
+      },
+      "properties": {
+        "id": "penal_docimium",
+        "category": "penal_quarry",
+        "name_latin": "Docimium",
+        "name_english": "Dokimeion",
+        "province": "Asia",
+        "modern_location": "Iscehisar, Afyonkarahisar Province, Turkey",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Docimium's quarries cut the purple-streaked white marble called pavonazzetto, an imperial favorite for columns and sarcophagi shipped out stamped with the reigning emperor's name and the year it was cut. Roman imperial quarries like this one ran as a state monopoly under a procurator, mixing paid contractors, freedmen and condemned convict labor in the same work gangs, a system already well established by Trajan's reign. Finished sarcophagus lids, abandoned mid-carving, still lie in the quarry beds today exactly where the cutters left them.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pavonazzo_marble",
+          "http://marmoraasiatica.uw.edu.pl/quarries/dokimeion/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.4869,
+          26.8092
+        ]
+      },
+      "properties": {
+        "id": "penal_mons_claudianus",
+        "category": "penal_quarry",
+        "name_latin": "Mons Claudianus",
+        "name_english": "Mons Claudianus",
+        "province": "Aegyptus",
+        "modern_location": "Eastern Desert, Red Sea Governorate, Egypt",
+        "built": 18,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Mons Claudianus cut the grey granodiorite Romans called granito del foro, hauled 120km overland from this remote desert outpost to the Nile on imperially funded wagon trains. Named for Claudius and worked continuously through Trajan's reign, the quarry ran mostly on paid skilled labor under military guard rather than convict gangs, though surviving ostraca record the workers' own complaints about short food and water rations. Unfinished columns, some over 12m long, still lie abandoned in the quarry exactly as the cutters left them.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Mons_Claudianus",
+          "https://www.trismegistos.org/place/2783"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
