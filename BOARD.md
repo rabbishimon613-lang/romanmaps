@@ -726,9 +726,22 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[08-P0-1]` **`palaeo-coasts`** `fix` — Ancient coastline patches for Ostia/Portus,
       Ravenna, Ephesus, Miletus, Priene, Rhine–Meuse, the Fens, Romney Marsh, Maeander,
       Scamander, Lake Fucinus, Lake Copais.
-- [~] `[08-P0-3]` **`province-provenance`** `verify` — claimed by cloud shift 51, 2026-08-23 18:20.
-      Date-stamp and flag province boundaries; explicit treatment for Armenia/Mesopotamia/Assyria
-      (held 114–117 only).
+- [x] `[08-P0-3]` **`province-provenance`** `verify` — Done 2026-08-23 by cloud shift 51.
+      All 43 `app/provinces.ts` entries now carry a structured `establishedYear` (negative = BCE,
+      null for Italia/Numidia which never became formal provinces) and an `establishedNote`,
+      researched via WebSearch rather than re-deriving from the existing blurb prose alone —
+      closed real gaps the blurbs left implicit (Tres Galliae's Agrippa reorganization c. 22 BCE,
+      Bithynia et Pontus's two-stage 74/63 BCE annexation, Galatia et Cappadocia's 72 CE
+      Vespasianic merger). Armenia/Mesopotamia/Assyria get the ticket's own explicitly-asked-for
+      treatment: `establishedYear: 116` (Trajan's own coinage), a new `heldOnly117` flag, and a
+      note spelling out that Hadrian ordered Assyria evacuated and abandoned the other two within
+      months of this map's snapshot. `ProvincePanel.tsx` (live map) and `/province/[slug]`
+      (static) both render "Roman since {year}" and, for the three eastern provinces, a
+      "HELD ONLY 114–117 CE" badge on the existing `--warn-bg`/`--warn-text` tokens. Verified with
+      Playwright at 1280×900 light and 375×812 dark — this sandbox's real-mouse-click path onto
+      `provinces-fill` didn't register (a pre-existing sandbox quirk cloud shift 30 already hit on
+      this exact panel, not introduced by this change), confirmed instead via the same
+      `map.fire('click', ...)` workaround shift 30 documented.
 - [ ] `[10-P0-2]` **`three-depth-labels`** `deepen` — Tombstone (10w) / label (50w) / panel
       (250–400w) for every place.
 - [ ] `[13-P1-4]` **`engravings`** `illustrate` — Period engravings (Piranesi, Gell, Wood,
@@ -770,8 +783,17 @@ to prevent. Building locally to *test* your own work is expected and fine.
       Belief · Knowledge · Danger) replacing the flat overlay checkbox list.
 - [ ] `[06-P1-3]` **`building-typology`** `deepen` — Extend to the ~35-term standard vocabulary,
       grouped into six colour families.
-- [~] `[06-P1-4]` **`excavation-history`** `deepen` — claimed by cloud shift 51, 2026-08-23 18:20.
-      `excavation[]` on all 40 sites.
+- [x] `[06-P1-4]` **`excavation-history`** `deepen` — Done 2026-08-23 by cloud shift 51.
+      Real, cited excavation/rediscovery campaigns for every one of the 40 `sites.ts` sites — 1-4
+      entries each (named excavator/institution, year, one concrete fact, source hint), researched
+      via 4 parallel WebSearch passes (10 sites each) since this sandbox blocks direct Wikipedia/
+      Commons fetch. Highlights: Vindolanda's 1973 writing-tablet discovery by Robin Birley;
+      Pompeii's 1748 Alcubierre dig through the 2012-2022 Great Pompeii Project; Herculaneum's
+      1750s Villa of the Papyri scroll recovery. New `excavation?: {year, excavator, note,
+      source}[]` field on `SiteInfo`, rendered as an "Excavation history" section on
+      `/site/[slug]`. Deliberately left off the compact `SitesPanel.tsx` browse list — a multi-
+      entry timeline doesn't fit a jump-list row. `npm run build`: all 597 routes clean;
+      Playwright-verified the rendered section on `/site/ostia` at 1280×900 and 375×812 dark.
 - [x] `[09-P1-4]` **`epigraphy`** `deepen` — Batch 1 done 2026-08-17 by cloud shift 26. 16
       inscriptions merged into `pois.geojson`'s `ancient_sources[]` (author = corpus siglum,
       work = inscription type, ref = date, to fit the validator's literary-source shape): the 8
@@ -834,8 +856,17 @@ to prevent. Building locally to *test* your own work is expected and fine.
       Ostia's Capitolium as possibly post-117 and worth a date check — already correctly handled,
       `pois.geojson` has had `built: 120, extant_117ce: false` on that record all along, so no
       fix needed. `pois.geojson`: 173 → 178 of 469 POIs now carry `ancient_sources`.*
-- [ ] `[09-P1-5]` **`clear-unverified`** `verify` — Re-check the citations SHIFT_LOG recorded as
-      unverified (Atrium Vestae, Domus Flavia, Bibliotheca Ulpia, Baths of Nero, Ara Pacis).
+- [x] `[09-P1-5]` **`clear-unverified`** `verify` — Done 2026-08-23 by cloud shift 51. Checked all
+      5 flagged citations against their primary text via WebSearch. Three already had
+      `ancient_sources` and check out accurate as written — Domus Flavia's Statius, *Silvae* 4.2
+      ("as many columns as could shoulder the gods and the sky"), Baths of Nero's Martial,
+      *Epigrams* 7.34 ("nothing worse than Nero, yet nothing better than his baths"), Ara Pacis's
+      *Res Gestae* 12 — no changes needed, no misattribution found this pass. The other two had
+      no `ancient_sources` at all; found and added real ones: Atrium Vestae gets Ovid, *Fasti*
+      6.263-265 (Numa's "small place that holds the Atria of Vesta"); Bibliotheca Ulpia gets
+      Aulus Gellius, *Attic Nights* 11.17.1, where Gellius describes sitting in the library
+      reading old praetorian edicts — a rare eyewitness account of someone actually using the
+      library's own stacks. `pois.geojson` feature count unchanged (469).
 - [x] `[08-P1-4]` **`gazetteer-audit`** `fix` — Done 2026-08-19 by cloud shift 32. First
       finding was a false alarm worth recording: a script searching `places_medium.geojson` for
       Londinium by a `name` field came up empty and nearly triggered a duplicate "fix" — but the

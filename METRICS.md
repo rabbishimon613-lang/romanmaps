@@ -37,7 +37,7 @@ references.)
 | **Curated places, total** | **1,954** | |
 | Description of 60+ words | 497 · **100.0%** | measured on `notes`; 0 still thin |
 | Has an image | 266 · **53.5%** | |
-| Has an ancient source | 179 · **36.0%** | |
+| Has an ancient source | 181 · **36.4%** | |
 | — of `confidence: high` POIs | 162 / 248 · **65.3%** | the target set for `[09-P0-1]` |
 | Categories with a "what happened here" paragraph | 52 / 52 · **100.0%** | covers 497/497 POIs |
 | Sites with curated building descriptions | 35 / 40 · **87.5%** | ancona, aquileia, athens, baalbek, baiae, beneventum, brixia, capua, corinth, cumae, delphi, djemila, ephesus, herculaneum, italica, jerash, leptisMagna, luni, merida, milan, ostia, paestum, palestrina, palmyra, pompeii, portus, pozzuoli, rimini, sabratha, timgad, tivoli, trier, verona, vindolanda, volubilis (`[06-P0-2]`, standing) |
@@ -183,4 +183,4 @@ references.)
 | 2026-08-20 | 481 | 100.0% | 53.4% | 36.8% | 0 errors |
 | 2026-08-21 | 481 | 100.0% | 53.4% | 36.8% | 0 errors |
 | 2026-08-22 | 495 | 100.0% | 53.3% | 35.8% | 0 errors |
-| 2026-08-23 | 497 | 100.0% | 53.5% | 36.0% | 0 errors |
+| 2026-08-23 | 497 | 100.0% | 53.5% | 36.4% | 0 errors |
