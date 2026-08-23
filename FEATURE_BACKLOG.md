@@ -352,14 +352,26 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
   `public/data/sites/carnuntum_buildings.geojson` are modern Petronell-Carnuntum village buildings
   (a kindergarten, a parish office, a cultural center) — zero Roman content. Skip outright, same
   call already settled for Aquincum, Xanten, and Ravenna.
-- [ ] **Ancona is a real but likely-thin `curate-buildings` candidate, not yet researched.** 66
-  named OSM features, but a substring scan for Roman-sounding terms turned up only two plausible
-  hits: "Foro romano" (Roman forum) and "Porto traianeo" (Trajan's port — Ancona's Arch of Trajan
-  overlooks this harbor, a strong 117 CE-era anchor if the research confirms the arch itself has an
-  OSM name, which this pass didn't check). "Arco del Rastrello" looked promising by name alone but
-  needs verification — Ancona has both an ancient Arch of Trajan and unrelated later medieval/
-  early-modern arches, so don't assume the ancient-sounding OSM name is the Roman one without
-  checking, same trap Aquileia's "Arco San Felice" turned out to be this same shift.
+- [x] **Ancona `curate-buildings` — done 2026-08-23 by cloud shift 48.** Confirmed: 3 of 66 named
+  OSM features (`Foro romano`, `Porto traianeo`, `Domus`) carry `historic:archaeological_site`;
+  "Arco del Rastrello" checked and confirmed a later, non-Roman arch, not the Arch of Trajan under
+  a different name. The Arch of Trajan itself has no OSM name tag at all in this extract, so it
+  couldn't be curated here — added as a standalone `pois.geojson` point instead, along with the
+  amphitheater. See `app/anconaDescriptions.ts` and `SHIFT_LOG.md` for the full writeup.
+- [ ] **Docimium (İscehisar, Phrygian pavonazzetto marble) is the one axis-17 quarry
+  `SHIFT_BRIEF.md`'s own hunting list names that still isn't on the map.** Don't confuse it with
+  the already-present Proconnesus/Marmara Island quarry (Special:FilePath aside, a genuinely
+  different stone and a different island) — that one's real, this is a separate gap. Small,
+  well-bounded, single-point addition for whoever wants to fully close axis 17's quarry side to
+  match this shift's completed mine side.
+- [ ] **`scripts/append-geojson-features.mjs`'s text-splice guarantee only holds until the next
+  thing touches the target file.** Confirmed this shift: running a Python cleanup pass with
+  `json.dump()` *after* a successful append (to drop some empty `image_url` keys) silently
+  re-serialized the entire file in Python's own indent/quoting convention — a 1,352-line diff for
+  a 14-feature cleanup, caught only because `git diff --stat` looked wrong before committing. Any
+  post-append fixup needs to happen on the *source* JSON before the splice runs, never on the
+  target `.geojson` after — the append script has no way to know or prevent a later tool from
+  reformatting its own careful text-splice.
 
 ## Shipped (moved from above; newest on top)
 

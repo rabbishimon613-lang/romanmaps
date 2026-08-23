@@ -7,6 +7,160 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 48 — 2026-08-23 (this shift's own prompt claimed "Shift 1 of four")
+
+Same stale-numbering mismatch every shift since #13 has flagged — the scheduled prompt said
+"Shift 1 of four," but `SHIFT_LOG` was 47 real shifts deep at session start, so this entry
+continues as Shift 48. Session started with `HEAD` detached and local `main` pointing at a
+completely unrelated, far older history (`709a480`, "Shift 28" — different root commit entirely,
+not just behind). `git fetch origin main` confirmed `origin/main` matched the detached `HEAD`
+exactly (`4031c05`, Shift 47's own last commit), so `git reset --hard origin/main` was safe — no
+local-only work existed to lose, just a stale mirror from container creation. Read `SHIFT_BRIEF.md`
+(all 823 lines), `BOARD.md`'s P0 list, `SHIFT_LOG.md`'s and `FEATURE_BACKLOG.md`'s handoff notes
+before picking work.
+
+### Board check
+
+Confirmed the same large unclaimed-but-declined P0 set every recent shift has found —
+`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terrain,
+`[02-P0-4]` self-host-glyphs — all big multi-file refactors, correctly left for a session with a
+human watching. Claimed and shipped `[13-P0-3]` image-fallback (Track B, unclaimed, well-scoped).
+Continued `[06-P0-2]` curate-buildings on Ancona, exactly the site Shift 47's own handoff flagged
+as "real but likely-thin, not yet researched." Picked axis 19 (correspondence networks) and axis
+17 (penal mines) from `SHIFT_BRIEF.md`'s own list since the board had nothing else unclaimed that
+fit — same legitimate axis-pick precedent recent shifts have documented. Ratio this shift: 1
+`illustrate` (image-fallback) + 3 `add`/`deepen` (Ancona, rescripts, mines) — add-heavy, no
+`polish` picked up; noting the skew rather than padding it out with an unnecessary fourth pick.
+
+### Track A — curate-buildings: Ancona [06-P0-2]
+
+Verified Ancona's own `_buildings.geojson` before claiming (Shift 47's own habit, established
+after Trier's stale-count near-miss): 66 named OSM features, but only three carry
+`historic:archaeological_site` — "Foro romano", "Porto traianeo", "Domus" — everything else is a
+modern church, ministry office, apartment block or palazzo from the living city on top of the
+ancient one. A fourth candidate, "Basamento della lanterna" (lighthouse base), is tagged plain
+`building:yes` with no historic value and was excluded rather than guessed into Roman. Wrote
+`app/anconaDescriptions.ts` for the three real entries — Ancona's forum hill, Trajan's harbor
+works, and an excavated house south of the forum, all genuinely standing in 117 CE — and wired it
+into `Map.tsx`'s `SITE_ENTRY_LOOKUP`. All three keys verified with a Python harness replicating the
+app's own longest-key-first substring matcher: each matches exactly one real, distinct OSM feature.
+
+The real find this batch: Ancona's headline monument, the **Arch of Trajan** on the harbor mole
+(115 CE, CIL IX 5894, designed by Apollodorus of Damascus, honoring Trajan for funding the port
+expansion himself) had **no OSM name tag at all** in this extract, so curate-buildings can't reach
+it regardless of how well documented it is. Added it instead as a standalone `pois.geojson` point
+— exactly the right home for a monument this well attested — alongside the Roman amphitheater
+(Augustan, enlarged under Trajan toward 10,000 seats), which was similarly absent as a standalone
+POI despite the site already being one of the 40 curated cities. `pois.geojson` 495 → 497.
+
+### Track A — Axis 19: imperial rescripts, Pliny's Bithynia governorship
+
+`letters.geojson` already had Pliny's personal letters and Ignatius of Antioch's route to
+martyrdom mapped, but axis 19's own third named target — "imperial rescripts... pin known
+Trajanic ones by requesting city" — was untouched. Added 14 points for real, dated exchanges from
+Pliny's Book 10 correspondence with Trajan during his governorship of Bithynia-Pontus (c. 111–113
+CE): the Nicomedia fire-brigade refusal, the wasted aqueduct, the Lake Sophon canal proposal,
+Nicaea's cracking theatre, Prusa's bathhouse built over a shrine to Claudius, Sinope's aqueduct,
+Amisus's mutual-aid clubs, Apamea's never-audited accounts, Byzantium's embassy costs, Juliopolis
+and its soldier request, Amastris's "beautiful but foul" open sewer, the Christians (10.96-97,
+Rome's closest thing to an official policy for the next two centuries), condemned criminals
+quietly serving as public slaves, and the status of foundlings. Every letter-pair number
+cross-checked against WebSearch results before use (a few of my own initial recollections were
+half a letter off — verified rather than trusted from memory). Cities anchored at their real
+coordinates (İzmit, İznik, Bursa, Sinop, Samsun, Mudanya, Istanbul, Amasra, and a Nallıhan-area
+approximation for submerged Juliopolis — `confidence: medium` there, everything else `high`).
+`letters.geojson` 34 → 48.
+
+**Found and fixed a real, independent bug in the same layer while wiring in this third corpus**:
+`Map.tsx`'s `letters-node-point` hover popup hardcoded every non-origin node's subtitle as
+"Correspondent of Pliny the Younger" — which silently mislabeled every one of Ignatius's own route
+stops (a `waypoint`/"Church at X" node has nothing to do with Pliny) and would have done the same
+to the new rescript nodes. Rewrote the subtitle logic to branch on `node_type`/`person` so all
+three corpora read correctly, and gave rescript nodes their own circle color (purple, vs. Pliny's
+brown and Ignatius's green) so the three are visually distinct on hover.
+
+### Track A — Axis 17 top-up: the brief's own named penal mines
+
+`penal.geojson` had exile islands well covered (9, matching the brief's 7 named ones) but only 2
+of the 6 mines `SHIFT_BRIEF.md`'s own axis 17 list names. Added the other 5: Rio Tinto (Baetica,
+Pliny's own silver/copper operation), Las Médulas (Tarraconensis, Pliny's *ruina montium* — he
+governed the region as procurator and described the hydraulic technique directly), Alburnus
+Maior/Roșia Montană (Dacia, seized within a decade of Trajan's 106 CE annexation, its wax tablets
+among the best-preserved Roman labor contracts anywhere), Dolaucothi (Britain's only confirmed
+Roman gold mine), and Halkyn Mountain (Britain, lead, `confidence: medium` — only the general
+district is fixed, not the individual Roman workings, and its image_url stayed unset after no
+confirmable Commons file turned up). `penal.geojson` 16 → 21; the brief's named-mines list is now
+complete.
+
+Every `image_url` on all three batches this shift was checked against an actual WebSearch result
+naming that exact filename (with corroborating metadata — photographer, upload date, license)
+before use, not guessed from a plausible-sounding name — this sandbox's direct `WebFetch` to
+`commons.wikimedia.org` stayed blocked (`EGRESS_BLOCKED`), matching every prior shift's finding, so
+WebSearch-surfaced confirmation is the practical substitute. Caught one near-miss this way: my
+first-guess filenames for Rio Tinto and Las Médulas turned out not to exist under those names —
+corrected to the real, WebSearch-confirmed files before shipping.
+
+### Track B — static-map image fallback [13-P0-3]
+
+`PlaceDetails.tsx`'s fallback for any POI with no `image_url` (231 of `pois.geojson`'s 495 at
+shift start) was a flat 6px category-tinted gradient bar — functional but bare. Replaced it with a
+real locator thumbnail: `app/LocatorThumbnail.tsx`, an inline SVG showing a simplified empire
+coastline with a pin at the place's own coordinates, tinted in the same per-category color the
+image hero band's background already uses. Deliberately not a raster-tile fetch — this sandbox
+blocks exactly the kind of external tile host that would need — but local vector data the map
+already ships: `scripts/generate-empire-outline.mjs` clips `land.geojson` to a Britain-to-
+Mesopotamia bounding box, keeps every 6th vertex per inside-bbox run (not true polygon clipping,
+just open-subpath fragments — fine for a stroked, unfilled thumbnail this small), and bakes the
+result into a ~9.5KB SVG path (`app/empireOutline.ts`) at generation time. Costs nothing over the
+network, can't be broken by an external host block, and reuses the exact same source of truth the
+real map renders from.
+
+Registered the generator as `npm run generate-empire-outline` alongside the project's other
+one-off data scripts (`build-route-graph`, `split-site-data`) for anyone who wants to regenerate
+it after `land.geojson` itself changes — not expected often.
+
+### Verification, commits, metrics
+
+Fresh container needed `npm install`; reverted the resulting `package-lock.json` churn before the
+first commit. Hit one real self-inflicted snag worth flagging: after appending the imperial-
+rescripts batch, I ran a quick Python cleanup pass to drop empty `image_url`/`image_credit` keys
+and used `json.dump()` to rewrite the file — which re-serializes the *entire* file with Python's
+own indent/quoting conventions, exactly the whole-file-reformat trap `scripts/append-geojson-
+features.mjs`'s own docstring warns about (confirmed by `git diff --stat` showing 1,352 insertions
+against 14 actual new features). Caught it before committing, `git checkout --` the file, and
+redid the cleanup on the *source* JSON before running the append script fresh — the real lesson
+being that the append script's own text-splice guarantee only holds if nothing touches the target
+file afterward, including a "small" cleanup pass.
+
+`npx tsc --noEmit` and `npm run build` both clean after every batch; pushed incrementally (three
+commits: Ancona + rescripts together, image-fallback, penal mines) rather than batched to the end,
+each one passing the pre-push build gate on its own. Verified the image-fallback UI change live —
+not just typecheck — with Playwright against the running dev server: 1280×800 light and 375×812
+dark on a real no-image POI (`poi_basilica_julia`), confirming the locator thumbnail renders
+cleanly in the existing 180px hero slot with no layout shift and no hardcoded chrome color.
+`npm run metrics -- --write`: 495 → 497 POIs, curated-buildings sites 34/40 → 35/40 (87.5%), image
+coverage 53.3% → 53.5%.
+
+### Next shift should pick up
+
+- **Track A:** Rome (289 named features) is the only large site left in the standing
+  curate-buildings task — worth scoping carefully or splitting across passes, per every prior
+  handoff's note. Axis 17's other named category (penal quarries — Docimium/İscehisar is a real,
+  distinct gap from the already-present Proconnesus/Marmara marble quarry) is a small, well-
+  bounded follow-up if someone wants to fully close that axis too. Axis 1 (more cities) is still
+  unconfirmed in this exact container — nobody has re-tested Overpass reachability directly in
+  several shifts, everyone has just avoided picks that needed it.
+- **Track B:** Terrain shading (`[02-P0-1]`) and dark mode are both still flagged as bigger lifts
+  than a normal Track B slot. `[06-P1-3]` building-typology and `[06-P1-4]` excavation-history are
+  open `deepen` tickets on the existing 40 sites' schema, not yet picked up by anyone as of this
+  shift either.
+- **General:** the `json.dump()`-reformats-the-whole-file trap above is worth a permanent note
+  next to `scripts/append-geojson-features.mjs`'s own docstring, not just this log entry — any
+  post-append cleanup pass needs to happen on the source JSON before the splice, never on the
+  target file after it.
+
+---
+
 ## Shift 47 — 2026-08-22 (this shift's own prompt claimed "Shift 4 of four")
 
 Same stale-numbering mismatch every shift since #13 has flagged, most recently Shift 46's own
