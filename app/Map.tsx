@@ -44,6 +44,7 @@ import { veronaEntry } from "./veronaDescriptions";
 import { milanEntry } from "./milanDescriptions";
 import { aquileiaEntry } from "./aquileiaDescriptions";
 import { pozzuoliEntry } from "./pozzuoliDescriptions";
+import { anconaEntry } from "./anconaDescriptions";
 import { SITE_META, SITES } from "./sites";
 
 // [06-P0-2] curate-buildings: one *Entry(name, osmId?) lookup fn per curated site, keyed by the
@@ -101,6 +102,7 @@ const SITE_ENTRY_LOOKUP: Record<string, (name: string, osmId?: number) => Curate
   milan: milanEntry,
   aquileia: aquileiaEntry,
   pozzuoli: pozzuoliEntry,
+  ancona: anconaEntry,
 };
 
 // Palette — light + dark variants. Both palettes are calibrated so that the sea/land/roads/labels
@@ -1977,6 +1979,8 @@ export default function Map() {
                   ["get", "node_type"],
                   "origin",
                   "#8b5a2b",
+                  "rescript",
+                  "#6b4f8f",
                   "#5c7a3a",
                 ],
                 "circle-stroke-color": P.labelHalo,
@@ -1991,7 +1995,21 @@ export default function Map() {
               const f = e.features?.[0];
               if (!f) return;
               const p: any = f.properties || {};
-              const subLine = p.node_type === "origin" ? "Pliny's own estate" : `Correspondent of Pliny the Younger`;
+              // Three corpora share this one layer (Pliny's personal letters, Ignatius of
+              // Antioch's route to martyrdom, and the Bithynia-Pontus imperial rescripts) and
+              // used to all get the same hardcoded "Correspondent of Pliny the Younger" subtitle
+              // regardless of which — a real bug for every Ignatius stop, caught while wiring in
+              // the third corpus. "waypoint" only ever appears on Ignatius's own route; a
+              // "Church at ..." person or Ignatius himself marks his other stops.
+              const isIgnatius =
+                p.node_type === "waypoint" ||
+                (typeof p.person === "string" &&
+                  (p.person.startsWith("Church at") || p.person.includes("Ignatius")));
+              let subLine: string;
+              if (p.node_type === "origin") subLine = "Pliny's own estate";
+              else if (p.node_type === "rescript") subLine = "Pliny & Trajan's correspondence, Bithynia-Pontus";
+              else if (isIgnatius) subLine = "On Ignatius of Antioch's route to martyrdom";
+              else subLine = "Correspondent of Pliny the Younger";
               const noteLine = p.one_line ? `<div style="margin-top:4px;">${escapeHtml(p.one_line)}</div>` : "";
               lettersPopup
                 .setLngLat(e.lngLat)

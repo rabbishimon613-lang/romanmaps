@@ -970,6 +970,384 @@
           "Ign. Rom. 5"
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9408,
+          40.7654
+        ]
+      },
+      "properties": {
+        "id": "letters_rescript_nicomedia_fire_brigade",
+        "name": "Nicomedia — the fire brigade",
+        "node_type": "rescript",
+        "corpus": "imperial_rescripts",
+        "person": "Pliny the Younger, governor of Bithynia-Pontus",
+        "one_line": "Pliny watched a fire tear through Nicomedia with no organized brigade to fight it and asked Trajan for permission to form one, a modest company of about 150 men drawn only from firefighting trades. Trajan refused outright, worried that any formal association in the Greek East, however useful, would drift into a political club before long, and told Pliny to rely on private citizens and portable equipment instead.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "İzmit, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 10.33",
+          "Plin. Ep. 10.34 (Trajan's reply)",
+          "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9438,
+          40.7674
+        ]
+      },
+      "properties": {
+        "id": "letters_rescript_nicomedia_aqueduct",
+        "name": "Nicomedia — the wasted aqueduct",
+        "node_type": "rescript",
+        "corpus": "imperial_rescripts",
+        "person": "Pliny the Younger, governor of Bithynia-Pontus",
+        "one_line": "Nicomedia had already sunk over three million sesterces into an aqueduct that still delivered no water, after one contractor cracked the channel and abandoned it and a second did the same on a different route. Pliny asked Trajan to send a proper engineer to find out whether the design itself was flawed before the city buried more money in the ground.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "İzmit, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 10.37",
+          "Plin. Ep. 10.38 (Trajan's reply)",
+          "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9378,
+          40.7694
+        ]
+      },
+      "properties": {
+        "id": "letters_rescript_nicomedia_canal",
+        "name": "Nicomedia — the canal to Lake Sophon",
+        "node_type": "rescript",
+        "corpus": "imperial_rescripts",
+        "person": "Pliny the Younger, governor of Bithynia-Pontus",
+        "one_line": "Pliny proposed cutting a canal to link Lake Sophon to the sea so Nicomedia's grain, timber and building stone could move by barge instead of ox cart, and asked Trajan for a surveyor to check the lake's exact height against the coastline first. Trajan liked the idea but worried the lake might simply drain away and vanish if the levels were misjudged, and offered to send an engineer from Rome once Pliny had local readings in hand.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "İzmit, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 10.41",
+          "Plin. Ep. 10.42 (Trajan's reply)",
+          "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.7217,
+          40.4272
+        ]
+      },
+      "properties": {
+        "id": "letters_rescript_nicaea_theatre",
+        "name": "Nicaea — the cracking theatre",
+        "node_type": "rescript",
+        "corpus": "imperial_rescripts",
+        "person": "Pliny the Younger, governor of Bithynia-Pontus",
+        "one_line": "Nicaea's half-built theatre had already swallowed over ten million sesterces and was splitting apart from foundations sunk into unstable, waterlogged ground, while its unfinished gymnasium next door had been demolished and restarted on a design Pliny judged wasteful and badly sited. Trajan told him to bring in an outside architect and decide on the spot whether either building was worth finishing at all.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "İznik, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 10.39",
+          "Plin. Ep. 10.40 (Trajan's reply)",
+          "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.061,
+          40.1885
+        ]
+      },
+      "properties": {
+        "id": "letters_rescript_prusa_baths",
+        "name": "Prusa — the bathhouse on Claudius's ruin",
+        "node_type": "rescript",
+        "corpus": "imperial_rescripts",
+        "person": "Pliny the Younger, governor of Bithynia-Pontus",
+        "one_line": "Trajan had already approved a new public bath for Prusa, and Pliny found the perfect site: a once-grand mansion left in ruins, willed decades earlier to the emperor Claudius by a wealthy local with instructions to raise a small temple to him in its courtyard. Trajan approved reusing the site but wanted one thing settled first — whether that temple to Claudius had ever actually been consecrated, since ground once made sacred stayed sacred even under rubble.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "Bursa, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 10.70",
+          "Plin. Ep. 10.71 (Trajan's reply)",
+          "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1531,
+          42.0231
+        ]
+      },
+      "properties": {
+        "id": "letters_rescript_sinope_aqueduct",
+        "name": "Sinope — the sixteen-mile aqueduct",
+        "node_type": "rescript",
+        "corpus": "imperial_rescripts",
+        "person": "Pliny the Younger, governor of Bithynia-Pontus",
+        "one_line": "Sinope drank from foul, unreliable local sources despite a clean, plentiful supply running just under sixteen Roman miles away, held back only by a stretch of soft, uncertain ground that needed surveying before anyone could break ground. Trajan told Pliny to see the aqueduct through, so long as the town's own treasury, not the imperial one, carried the cost.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "Sinop, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 10.90",
+          "Plin. Ep. 10.91 (Trajan's reply)",
+          "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.33,
+          41.2867
+        ]
+      },
+      "properties": {
+        "id": "letters_rescript_amisus_eranoi",
+        "name": "Amisus — the mutual-aid clubs",
+        "node_type": "rescript",
+        "corpus": "imperial_rescripts",
+        "person": "Pliny the Younger, governor of Bithynia-Pontus",
+        "one_line": "Amisus held the rarer status of a free, treaty-bound city largely exempt from provincial interference, and its residents had started forming eranoi, mutual-aid societies pooling money to help members through hardship — exactly the kind of private association Trajan had just refused Nicomedia. Trajan drew a careful line rather than a blanket rule: Amisus's own charter let it manage its own affairs, so its clubs could stand so long as they weren't used for rioting or illegal gatherings.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "Samsun, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 10.92",
+          "Plin. Ep. 10.93 (Trajan's reply)",
+          "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.8833,
+          40.3764
+        ]
+      },
+      "properties": {
+        "id": "letters_rescript_apamea_audit",
+        "name": "Apamea — the accounts no governor had ever seen",
+        "node_type": "rescript",
+        "corpus": "imperial_rescripts",
+        "person": "Pliny the Younger, governor of Bithynia-Pontus",
+        "one_line": "The colony of Apamea, on the Sea of Marmara, had never once let a Roman governor inspect its public revenue and spending, citing an old charter privilege as a free and federate community. Pliny asked to look anyway, and Trajan praised the town for its own candor in raising the objection first, agreeing to the audit at Pliny's personal request without treating it as a permanent surrender of Apamea's independence.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "Mudanya, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 10.47",
+          "Plin. Ep. 10.48 (Trajan's reply)",
+          "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.9802,
+          41.0086
+        ]
+      },
+      "properties": {
+        "id": "letters_rescript_byzantium_embassies",
+        "name": "Byzantium — the price of flattery",
+        "node_type": "rescript",
+        "corpus": "imperial_rescripts",
+        "person": "Pliny the Younger, governor of Bithynia-Pontus",
+        "one_line": "Byzantium paid 12,000 sesterces a year to send an envoy to Rome bearing nothing more than a ceremonial decree renewing its loyalty to Trajan, plus another 3,000 for a second envoy sent just to flatter the neighboring governor of Moesia. Pliny judged both expenses pure waste for a city already squeezed by its position on the Bosporus, and Trajan agreed at once — the decree alone would do, no envoy required either way.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "Istanbul, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 10.43",
+          "Plin. Ep. 10.44 (Trajan's reply)",
+          "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.5624,
+          40.1272
+        ]
+      },
+      "properties": {
+        "id": "letters_rescript_juliopolis_soldiers",
+        "name": "Juliopolis — the town every traveler crossed",
+        "node_type": "rescript",
+        "corpus": "imperial_rescripts",
+        "person": "Pliny the Younger, governor of Bithynia-Pontus",
+        "one_line": "Juliopolis was one of the smallest free towns in the province, but every official and traveler crossing Bithynia passed straight through it, and its buildings were collapsing under the weight of officials it was obliged to billet along the way. Pliny asked for a permanent soldier stationed there to keep order; Trajan refused, warning that granting even one small town a garrison would only draw a line of identical requests from every other town on the same road.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "near Nallıhan, Ankara Province, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 10.77",
+          "Plin. Ep. 10.78 (Trajan's reply)",
+          "https://en.wikipedia.org/wiki/Juliopolis"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.3903,
+          41.7458
+        ]
+      },
+      "properties": {
+        "id": "letters_rescript_amastris_sewer",
+        "name": "Amastris — the beautiful, foul street",
+        "node_type": "rescript",
+        "corpus": "imperial_rescripts",
+        "person": "Pliny the Younger, governor of Bithynia-Pontus",
+        "one_line": "Amastris had one handsome main street lined with colonnades, running the length of the town straight past an open sewer so foul that Pliny called it both a disfigurement and a health hazard in the same breath. Trajan approved covering it over without hesitation, agreeing that the town's own appearance and public health both depended on the work.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "Amasra, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 10.98",
+          "Plin. Ep. 10.99 (Trajan's reply)",
+          "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9468,
+          40.7714
+        ]
+      },
+      "properties": {
+        "id": "letters_rescript_bithynia_christians",
+        "name": "Bithynia-Pontus — the trials of the Christians",
+        "node_type": "rescript",
+        "corpus": "imperial_rescripts",
+        "person": "Pliny the Younger, governor of Bithynia-Pontus",
+        "one_line": "Pliny had never personally handled a Christian trial before reaching Bithynia and wrote to Trajan uncertain how far to press it — whether the name alone was punishable, whether age mattered, whether recanting should count. He described what he'd learned by questioning suspects and torturing two enslaved deaconesses: they met before dawn on a fixed day, sang a hymn to Christ as if to a god, and bound themselves by oath to commit no crime at all. Trajan's short reply — don't hunt them down, punish those properly accused who refuse to recant, but never act on an anonymous denunciation — became the closest thing Rome had to an official Christian policy for the next two centuries.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "İzmit, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 10.96",
+          "Plin. Ep. 10.97 (Trajan's reply)",
+          "https://en.wikipedia.org/wiki/Pliny_the_Younger_on_Christians"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9348,
+          40.7634
+        ]
+      },
+      "properties": {
+        "id": "letters_rescript_bithynia_condemned",
+        "name": "Bithynia-Pontus — the condemned turned public slaves",
+        "node_type": "rescript",
+        "corpus": "imperial_rescripts",
+        "person": "Pliny the Younger, governor of Bithynia-Pontus",
+        "one_line": "Pliny found men across Bithynia's cities who had been condemned decades earlier to the mines, the arena or other hard labor now quietly drawing a public salary as slaves of the state instead, some so long ago that no record said who had let them out or why. He asked Trajan whether to send them all back to their original sentences; Trajan split the difference, ordering anyone freed within the last ten years back to punishment while letting those released longer ago keep their civic jobs.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "İzmit, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 10.31",
+          "Plin. Ep. 10.32 (Trajan's reply)",
+          "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9508,
+          40.7734
+        ]
+      },
+      "properties": {
+        "id": "letters_rescript_bithynia_foundlings",
+        "name": "Bithynia-Pontus — the status of foundlings",
+        "node_type": "rescript",
+        "corpus": "imperial_rescripts",
+        "person": "Pliny the Younger, governor of Bithynia-Pontus",
+        "one_line": "Bithynian families had been raising abandoned newborns as slaves for a generation with no imperial ruling anywhere on whether a foundling who could later prove free birth had any claim to freedom, an obvious and recurring dispute with no local precedent to settle it. Trajan admitted no empire-wide rule existed at all, then made one on the spot: anyone who could prove they were born free could claim it back at any point in life, without ever repaying the cost of their own upbringing.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "İzmit, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Plin. Ep. 10.65",
+          "Plin. Ep. 10.66 (Trajan's reply)",
+          "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }

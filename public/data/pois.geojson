@@ -15456,6 +15456,72 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Efqa.png?width=800",
         "image_credit": "Efqa Spring, Palmyra · Wikimedia Commons"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5065,
+          43.6253
+        ]
+      },
+      "properties": {
+        "id": "poi_arch_trajan_ancona",
+        "category": "arch",
+        "name_latin": "Arcus Traiani",
+        "name_english": "Arch of Trajan",
+        "province": "Italia",
+        "modern_location": "Ancona, Italy",
+        "built": 115,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Rome's senate raised this marble arch on the mole of Ancona's harbor in 115 CE to thank Trajan for paying out of his own pocket to expand the port, calling the improved crossing a safer gateway to Italy. Apollodorus of Damascus, the same architect behind Trajan's Column and Forum, designed it: a single arched passage on a tall limestone podium, faced in imported Greek marble and originally topped with six bronze statues of the emperor's family, long since stripped for their metal. By 117 CE the arch was barely two years old, the newest monument on a harbor Trajan had just finished remaking.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Arch_of_Trajan_(Ancona)",
+          "https://www.romeartlover.it/Ancona2.html"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "CIL",
+            "work": "dedicatory inscription",
+            "ref": "IX 5894",
+            "note": "The arch's own surviving inscription honors Trajan for making 'the entrance to Italy safer' (tutiorem accessum Italiae) and names his wife Plotina and sister Marciana alongside him."
+          }
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arco%20di%20Traiano%20(Ancona).JPG?width=800",
+        "image_credit": "Arch of Trajan, Ancona · Wikimedia Commons (CC BY-SA 3.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5121,
+          43.6234
+        ]
+      },
+      "properties": {
+        "id": "poi_amphitheater_ancona",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum Anconitanum",
+        "name_english": "Roman Amphitheatre of Ancona",
+        "province": "Italia",
+        "modern_location": "Ancona, Italy",
+        "built": -30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Ancona's amphitheater rose on the hill the cathedral now occupies, its long elliptical wall built up in alternating bands of opus reticulatum and brick that still stand near Piazza del Senato. Augustan builders raised the first arena to hold a few thousand spectators, and later enlargement under Trajan pushed capacity toward ten thousand, tying the games here directly to the same imperial patronage rebuilding the harbor below. By 117 CE it had hosted the city's spectacles for close to a century and a half, only recently expanded to match Ancona's growing importance as an eastern gateway.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ancona",
+          "https://www.comuneancona.it/ankonline/cultura/anfiteatro-romano/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anfiteatro%20romano%20di%20Ancona.jpg?width=800",
+        "image_credit": "Roman Amphitheatre of Ancona · Wikimedia Commons"
+      }
     }
   ]
 }
