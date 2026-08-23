@@ -250,7 +250,15 @@
           "https://en.wikipedia.org/wiki/House_of_the_Vestals",
           "https://colosseo.it/en/marvels/temple-of-vesta-and-vestal-house-atrium-vestae/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Ovid",
+            "work": "Fasti",
+            "ref": "6.263-265",
+            "note": "Ovid calls the whole complex 'the small place that holds the Atria of Vesta' and says it was once the great palace of unshorn Numa — the legendary king who first built beside the shrine he founded."
+          }
+        ]
       }
     },
     {
@@ -849,7 +857,15 @@
           "https://en.wikipedia.org/wiki/Ulpian_Library",
           "https://www.historyofinformation.com/detail.php?id=154"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Aulus Gellius",
+            "work": "Attic Nights (Noctes Atticae)",
+            "ref": "11.17.1",
+            "note": "Gellius describes sitting in the library of Trajan's temple and, on a whim, calling for the edicts of the old Republican praetors to read and get to know them — a rare eyewitness glimpse of a scholar actually working inside the Ulpian Library's stacks."
+          }
+        ]
       }
     },
     {
