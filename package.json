@@ -11,6 +11,7 @@
     "split-site-data": "node scripts/split-site-data.mjs",
     "build-route-graph": "node scripts/build-route-graph.mjs",
     "append-geojson": "node scripts/append-geojson-features.mjs",
+    "generate-empire-outline": "node scripts/generate-empire-outline.mjs",
     "postinstall": "git config core.hooksPath .githooks 2>/dev/null || true"
   },
   "dependencies": {

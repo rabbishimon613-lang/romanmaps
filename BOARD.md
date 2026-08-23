@@ -875,8 +875,22 @@ to prevent. Building locally to *test* your own work is expected and fine.
       surface area for no real benefit. Couldn't screenshot live (this sandbox's `map.on("load")`
       never fires, see `[02-P0-4]`) — verified by code review + `npx tsc --noEmit` + `npm run
       build`, both clean.
-- [~] `[13-P0-3]` **`image-fallback`** `illustrate` — claimed by cloud shift 48, 2026-08-23 00:15.
-      Static map thumbnail for the 145 places with no image.
+- [x] `[13-P0-3]` **`image-fallback`** `illustrate` — Done 2026-08-23 by cloud shift 48. Replaced
+      `PlaceDetails.tsx`'s flat category-tinted gradient bar (the fallback for any POI with no
+      `image_url` — 231 of 495 in `pois.geojson` today, more once the other axis files are
+      counted) with a real static map thumbnail: `app/LocatorThumbnail.tsx`, an inline SVG
+      showing a heavily simplified empire coastline silhouette with a pin at the place's own
+      coordinates. Deliberately not a raster tile fetch — `scripts/generate-empire-outline.mjs`
+      clips and thins the map's own `land.geojson` (Britain to Mesopotamia, Sahara to the Rhine/
+      Danube bbox, every 6th vertex kept) into a ~9.5KB SVG path baked into `app/empireOutline.ts`
+      at build time, so the thumbnail costs nothing over the network and can't be broken by this
+      sandbox's usual external-tile-host blocks. Uses the same per-category color the real image
+      hero band already tints its background with (invariant 0's sanctioned literal-color
+      exception), so it reads as a themed extension of the existing card, not a bolted-on widget.
+      Verified with Playwright against the running dev server at 1280×800 light and 375×812 dark
+      on `poi_basilica_julia` (a real no-image POI): both render the outline + pin cleanly inside
+      the existing 180px hero slot, no layout shift, no hardcoded chrome color. `npm run build`
+      clean (467kB first-load JS, +4kB over the pre-change baseline for the embedded path data).
 - [x] `[11-P0-2]` **`lazy-overlays`** `polish` — Done 2026-08-19 by cloud shift 34. All 27
       non-base overlay groups (road-stations through ethnic-pockets) used to fetch, parse, and
       add their GeoJSON on every cold load despite defaulting OFF. `app/useLayers.ts` gained a

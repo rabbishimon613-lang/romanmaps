@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import type { Map as MLMap } from "maplibre-gl";
 import { usePoiPanel, clearPoi, selectPoi } from "./usePoiPanel";
 import { colorForCategory } from "./poiCategories";
+import { LocatorThumbnail } from "./LocatorThumbnail";
 import { lifeForCategory } from "./categoryLife";
 import { useIsMobile } from "./useIsMobile";
 import { useNearbyPois } from "./useNearby";
@@ -352,13 +353,9 @@ export default function PlaceDetails() {
           )}
         </div>
       ) : (
-        <div
-          style={{
-            height: 6,
-            background: `linear-gradient(90deg, ${color} 0%, ${color}66 100%)`,
-            flexShrink: 0,
-          }}
-        />
+        <div style={{ height: 180, flexShrink: 0, background: `${color}0d` }}>
+          <LocatorThumbnail lng={rendered.lngLat[0]} lat={rendered.lngLat[1]} color={color} />
+        </div>
       )}
       {/* Desktop's close affordance now lives in the merged search-card header (the back arrow
           Chrome.tsx renders in place of the search box) — this floating X would be a redundant
