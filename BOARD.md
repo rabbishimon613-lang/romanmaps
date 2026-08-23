@@ -726,8 +726,9 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[08-P0-1]` **`palaeo-coasts`** `fix` — Ancient coastline patches for Ostia/Portus,
       Ravenna, Ephesus, Miletus, Priene, Rhine–Meuse, the Fens, Romney Marsh, Maeander,
       Scamander, Lake Fucinus, Lake Copais.
-- [ ] `[08-P0-3]` **`province-provenance`** `verify` — Date-stamp and flag province boundaries;
-      explicit treatment for Armenia/Mesopotamia/Assyria (held 114–117 only).
+- [~] `[08-P0-3]` **`province-provenance`** `verify` — claimed by cloud shift 51, 2026-08-23 18:20.
+      Date-stamp and flag province boundaries; explicit treatment for Armenia/Mesopotamia/Assyria
+      (held 114–117 only).
 - [ ] `[10-P0-2]` **`three-depth-labels`** `deepen` — Tombstone (10w) / label (50w) / panel
       (250–400w) for every place.
 - [ ] `[13-P1-4]` **`engravings`** `illustrate` — Period engravings (Piranesi, Gell, Wood,
@@ -769,7 +770,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       Belief · Knowledge · Danger) replacing the flat overlay checkbox list.
 - [ ] `[06-P1-3]` **`building-typology`** `deepen` — Extend to the ~35-term standard vocabulary,
       grouped into six colour families.
-- [ ] `[06-P1-4]` **`excavation-history`** `deepen` — `excavation[]` on all 40 sites.
+- [~] `[06-P1-4]` **`excavation-history`** `deepen` — claimed by cloud shift 51, 2026-08-23 18:20.
+      `excavation[]` on all 40 sites.
 - [x] `[09-P1-4]` **`epigraphy`** `deepen` — Batch 1 done 2026-08-17 by cloud shift 26. 16
       inscriptions merged into `pois.geojson`'s `ancient_sources[]` (author = corpus siglum,
       work = inscription type, ref = date, to fit the validator's literary-source shape): the 8
