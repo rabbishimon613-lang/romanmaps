@@ -721,8 +721,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       (250–400w) for every place.
 - [ ] `[13-P1-4]` **`engravings`** `illustrate` — Period engravings (Piranesi, Gell, Wood,
       Cassas, Rossini) for the 40 sites and top 100 POIs. **Standing task.**
-- [ ] `[06-P0-1]` **`phase-banners`** `fix` — Per-site phase banner; honest handling of sites
-      destroyed before 117 (Pompeii, Herculaneum).
+- [~] `[06-P0-1]` **`phase-banners`** `fix` — claimed by cloud shift 49, 2026-08-23 06:20.
+      Per-site phase banner; honest handling of sites destroyed before 117 (Pompeii, Herculaneum).
 - [x] `[04-P0-2]` **`long-press`** `polish` — Done 2026-08-19 by cloud shift 33. Mobile already
       had a 550ms touch-hold timer opening the context menu (`app/ContextMenu.tsx`, shipped
       2026-08-12), but gave zero visual feedback while holding — nothing told a user their touch
