@@ -16,6 +16,10 @@ import { useIsMobile } from "./useIsMobile";
  * new atomic research: every field here is a lens on `app/provinces.ts`, `app/legions.ts` and
  * `public/data/politics.geojson`, which already ship. */
 
+function formatEra(year: number): string {
+  return year < 0 ? `${-year} BCE` : `${year} CE`;
+}
+
 const STATUS_LABEL: Record<Province["status"], string> = {
   region: "Roman heartland — not a province",
   senatorial: "Senatorial province (proconsul)",
@@ -144,9 +148,37 @@ export default function ProvincePanel() {
         <h2 className="roman-label" style={{ fontSize: 22, lineHeight: 1.2, margin: "0 0 6px", color: "var(--text)" }}>
           {p.displayName}
         </h2>
-        <div style={{ fontSize: 13, color: "var(--text-2)", marginBottom: 14 }}>{STATUS_LABEL[p.status]}</div>
+        <div style={{ fontSize: 13, color: "var(--text-2)", marginBottom: 4 }}>{STATUS_LABEL[p.status]}</div>
+        {p.establishedYear !== null && (
+          <div style={{ fontSize: 13, color: "var(--text-2)", marginBottom: 14 }}>
+            Roman since {formatEra(p.establishedYear)}
+          </div>
+        )}
+        {p.heldOnly117 && (
+          <div
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 6,
+              fontSize: 11.5,
+              fontWeight: 700,
+              color: "var(--warn-text)",
+              background: "var(--warn-bg)",
+              borderRadius: 6,
+              padding: "4px 8px",
+              marginBottom: 14,
+            }}
+          >
+            HELD ONLY 114–117 CE — ALREADY BEING ABANDONED
+          </div>
+        )}
 
         <p style={{ fontSize: 14, lineHeight: 1.55, color: "var(--text)", margin: "0 0 18px" }}>{p.blurb}</p>
+        {p.establishedNote && (
+          <p style={{ fontSize: 13, lineHeight: 1.55, color: "var(--text-2)", margin: "-10px 0 18px" }}>
+            {p.establishedNote}
+          </p>
+        )}
 
         <div style={{ fontSize: 13, color: "var(--text)", marginBottom: 18 }}>
           <strong>Capital:</strong>{" "}

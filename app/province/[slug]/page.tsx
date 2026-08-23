@@ -46,6 +46,10 @@ function titleCase(s: string): string {
   return s.replace(/_/g, " ").replace(/(^|\s)\w/g, (c) => c.toUpperCase());
 }
 
+function formatEra(year: number): string {
+  return year < 0 ? `${-year} BCE` : `${year} CE`;
+}
+
 const STATUS_LABEL: Record<Province["status"], string> = {
   region: "Roman heartland — not a province",
   senatorial: "Senatorial province (proconsul)",
@@ -124,10 +128,31 @@ export default function ProvincePage({ params }: { params: { slug: string } }) {
           <span>Capital: {p.capitalSlug ? (
             <Link href={`/site/${p.capitalSlug}`} style={{ color: "#8a5a2b" }}>{p.capital}</Link>
           ) : p.capital}</span>
+          {p.establishedYear !== null && <span>Roman since {formatEra(p.establishedYear)}</span>}
         </div>
+
+        {p.heldOnly117 && (
+          <div
+            style={{
+              display: "inline-flex",
+              fontSize: 12.5,
+              fontWeight: 700,
+              color: "#8a5a2b",
+              background: "#fdf0d5",
+              borderRadius: 6,
+              padding: "5px 10px",
+              marginBottom: 20,
+            }}
+          >
+            HELD ONLY 114–117 CE — ALREADY BEING ABANDONED
+          </div>
+        )}
 
         <section style={{ marginBottom: 32 }}>
           <p style={{ fontSize: 17, lineHeight: 1.6, margin: 0 }}>{p.blurb}</p>
+          {p.establishedNote && (
+            <p style={{ fontSize: 14.5, lineHeight: 1.6, color: "#6b5a42", margin: "10px 0 0" }}>{p.establishedNote}</p>
+          )}
         </section>
 
         {sites.length > 0 && (
@@ -193,7 +218,7 @@ export default function ProvincePage({ params }: { params: { slug: string } }) {
               Sources
             </h2>
             <ul style={{ margin: 0, paddingLeft: 18, fontSize: 13.5, lineHeight: 1.7, color: "#6b5a42" }}>
-              {p.sources.map((s, i) => (
+              {[...p.sources, ...(p.provenanceSources || [])].map((s, i) => (
                 <li key={i}>{s}</li>
               ))}
             </ul>

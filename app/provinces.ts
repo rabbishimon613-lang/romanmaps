@@ -31,6 +31,18 @@ export type Province = {
   blurb: string;
   aliases: string[];
   sources: string[];
+  /** Year Rome's control began, as this administrative unit (negative = BCE). Null when the
+   * entry never became a formal province (Italia; Numidia, still a military district in 117).
+   * Board `[08-P0-3]` province-provenance. */
+  establishedYear: number | null;
+  /** One or two sentences on when/how this territory came under Rome, independent of `blurb`'s
+   * own narrative — written to stand alone next to the establishedYear number in the UI. */
+  establishedNote: string;
+  /** Extra citations for establishedNote specifically, when they differ from `sources`. */
+  provenanceSources?: string[];
+  /** True only for units annexed so recently they were already being abandoned within days of
+   * this map's 117 CE snapshot (Armenia/Mesopotamia/Assyria). Drives a warning badge in the UI. */
+  heldOnly117?: boolean;
 };
 
 export const PROVINCES: Province[] = [
@@ -45,6 +57,9 @@ export const PROVINCES: Province[] = [
       "Italy was never a province — it was the empire's metropole, its free citizens exempt from the land tax every provincial paid. Augustus split it into eleven administrative regions for the census, from Latium et Campania around Rome to Venetia et Histria in the northeast. By 117 CE the whole peninsula had been Roman for two centuries and its cities competed for imperial building projects, not survival.",
     aliases: ["Italia", "Campania", "Venetia et Histria"],
     sources: ["Barrington Atlas of the Greek and Roman World", "Pliny the Elder, Natural History 3"],
+    establishedYear: null,
+    establishedNote:
+      "Never a province — Italy was Roman heartland since the peninsula's political unification under the Republic, well before this map's snapshot. Augustus's eleven census regions (7 BCE) organized it for administration, not conquest.",
   },
   {
     slug: "britannia",
@@ -56,6 +71,9 @@ export const PROVINCES: Province[] = [
       "Conquered from 43 CE, still only two-thirds occupied by 117 — the Scottish Highlands and most of Wales sat outside direct control. Three legions garrisoned the frontier, the highest legion-per-taxpayer ratio anywhere in the empire. Hadrian's Wall was five years off; in 117 the northern line ran along a looser chain of forts the new emperor would soon replace with stone.",
     aliases: ["Britannia"],
     sources: ["Tacitus, Agricola", "Barrington Atlas"],
+    establishedYear: 43,
+    establishedNote:
+      "Conquered by Claudius from 43 CE; occupation was still incomplete in 117 — the Scottish Highlands and most of Wales sat outside direct control.",
   },
   {
     slug: "gallia-lugdunensis",
@@ -67,6 +85,10 @@ export const PROVINCES: Province[] = [
       "Central Gaul, organized around Lugdunum's confluence of the Rhône and Saône. The city held the empire's western mint and hosted the annual assembly of Gaul's sixty tribal delegates at the altar of Roma and Augustus — the model every other province's imperial-cult center copied. A fire under Nero (65 CE) and Vitellian troops under the Year of Four Emperors (69) had both scarred the city; by 117 both were long rebuilt.",
     aliases: ["Gallia Lugdunensis", "Lugdunensis"],
     sources: ["Strabo, Geography 4", "Barrington Atlas"],
+    establishedYear: -22,
+    establishedNote:
+      "Formal division of Tres Galliae is usually dated to Marcus Agrippa's reorganization around 22 BCE, refined during Augustus's own visits to Gaul 16–13 BCE; the exact year is debated by historians.",
+    provenanceSources: ["https://en.wikipedia.org/wiki/Gallia_Lugdunensis"],
   },
   {
     slug: "gallia-belgica",
@@ -78,6 +100,10 @@ export const PROVINCES: Province[] = [
       "Northeastern Gaul, named for the Belgae Caesar called the bravest of all Gallic peoples in his own conquest narrative. Durocortorum (Reims) was its administrative capital, but Augusta Treverorum on the Moselle — modern Trier — was already growing into the region's real commercial center, on its way to becoming an imperial residence within two centuries.",
     aliases: ["Gallia Belgica"],
     sources: ["Caesar, Gallic War 1.1", "Barrington Atlas"],
+    establishedYear: -22,
+    establishedNote:
+      "Formal division of Tres Galliae is usually dated to Marcus Agrippa's reorganization around 22 BCE, refined during Augustus's own visits to Gaul 16–13 BCE; the exact year is debated by historians.",
+    provenanceSources: ["https://en.wikipedia.org/wiki/Gallia_Belgica"],
   },
   {
     slug: "germania-inferior",
@@ -89,6 +115,9 @@ export const PROVINCES: Province[] = [
       "The lower Rhine frontier, formalized as a province under Domitian in 85 CE after decades as a military district. Two legions held the river line; the provincial capital, modern Cologne, was founded as a colony for veterans and named for Agrippina the Younger, who was born there.",
     aliases: ["Germania Inferior"],
     sources: ["Tacitus, Annals 12.27", "Barrington Atlas"],
+    establishedYear: 85,
+    establishedNote:
+      "Formalized as a province by Domitian in 85 CE, after decades run as a military district along the lower Rhine.",
   },
   {
     slug: "germania-superior",
@@ -100,6 +129,9 @@ export const PROVINCES: Province[] = [
       "The upper Rhine and Main frontier, also made a formal province in 85 CE. Mogontiacum — modern Mainz — anchored two legions at the river crossing; the Taunus limes running east of the Rhine had been pushed forward under the Flavians and was still being consolidated with a chain of new forts when Trajan died.",
     aliases: ["Germania Superior"],
     sources: ["Tacitus, Germania", "Barrington Atlas"],
+    establishedYear: 85,
+    establishedNote:
+      "Formalized as a province by Domitian in 85 CE, after decades run as a military district along the upper Rhine.",
   },
   {
     slug: "gallia-aquitania",
@@ -111,6 +143,10 @@ export const PROVINCES: Province[] = [
       "Southwestern Gaul between the Garonne and the Pyrenees, the province Caesar described as ethnically distinct from the rest of Gaul — closer, he thought, to the Iberians across the mountains. Burdigala (Bordeaux) sat on the Garonne's tidal reach and was already shipping wine north by the second century, the start of a trade the region never abandoned.",
     aliases: ["Gallia Aquitania", "Aquitania"],
     sources: ["Caesar, Gallic War 1.1", "Barrington Atlas"],
+    establishedYear: -22,
+    establishedNote:
+      "Formal division of Tres Galliae is usually dated to Marcus Agrippa's reorganization around 22 BCE, refined during Augustus's own visits to Gaul 16–13 BCE; the exact year is debated by historians.",
+    provenanceSources: ["https://en.wikipedia.org/wiki/Aquitaine_Gaul"],
   },
   {
     slug: "alpes-graiae-poeninae",
@@ -122,6 +158,10 @@ export const PROVINCES: Province[] = [
       "One of three small Alpine provinces Augustus carved out to run the mountain passes directly rather than leave them to Gaul or Italy — this one covers the Great and Little St Bernard routes. An equestrian procurator, not a senator, ran it: too small and too strategically narrow a job to hand to the Senate.",
     aliases: ["Alpes Graiae et Poeninae"],
     sources: ["Barrington Atlas"],
+    establishedYear: -15,
+    establishedNote:
+      "Tiberius and Drusus's Alpine campaigns conquered the region in 16–15 BCE; formal provincial status under an equestrian procurator followed later, under Claudius (41–54 CE).",
+    provenanceSources: ["https://en.wikipedia.org/wiki/Alpes_Graiae_et_Poeninae"],
   },
   {
     slug: "alpes-cottiae",
@@ -133,6 +173,10 @@ export const PROVINCES: Province[] = [
       "Named for Cottius, the local dynast who submitted to Augustus and was left running his own mountain kingdom as a Roman client before it was annexed outright under Nero. Segusio (Susa) still carries Cottius's own triumphal arch, dedicated to Augustus around 9 BCE — one of the best-preserved Augustan monuments left standing in 117.",
     aliases: ["Alpes Cottiae"],
     sources: ["CIL V 7231 (Arch of Augustus, Susa)", "Barrington Atlas"],
+    establishedYear: 63,
+    establishedNote:
+      "Ruled by client king Cottius's line until his grandson Cottius II died in 63 CE; Nero then annexed the kingdom outright as a Roman province.",
+    provenanceSources: ["https://en.wikipedia.org/wiki/Alpes_Cottiae"],
   },
   {
     slug: "alpes-maritimae",
@@ -144,6 +188,10 @@ export const PROVINCES: Province[] = [
       "The coastal Alpine strip behind Nice, the last of Augustus's three mountain-pass provinces and the one that let Rome control the road along the Ligurian coast without routing it through client territory. Its capital Cemenelum sits just above modern Nice; the Tropaeum Alpium at La Turbie, dedicated 7/6 BCE, lists every tribe Rome claimed to have subdued to secure the pass.",
     aliases: ["Alpes Maritimae"],
     sources: ["Pliny the Elder, Natural History 3.136–137 (Tropaeum Alpium inscription)"],
+    establishedYear: -14,
+    establishedNote:
+      "A prefecture (later procuratorial province) established under Augustus shortly after the Ligurian Alpine tribes' conquest, c. 14 BCE.",
+    provenanceSources: ["https://en.wikipedia.org/wiki/Alpes_Maritimae"],
   },
   {
     slug: "gallia-narbonensis",
@@ -155,6 +203,9 @@ export const PROVINCES: Province[] = [
       "The oldest Roman territory in Gaul, organized as a province in 121 BCE — two centuries Roman by 117 CE, and it showed. Pliny the Elder called it more like Italy than a province: villas, vineyards and a Senate seat rather than a legion. Narbo (Narbonne) gave the province its name; Massilia, an older Greek colony, kept a special semi-autonomous status inside it.",
     aliases: ["Narbonensis"],
     sources: ["Pliny the Elder, Natural History 3.31"],
+    establishedYear: -121,
+    establishedNote:
+      "Organized as a province in 121 BCE after Rome's victory over the Allobroges and Arverni — the oldest Roman territory in Gaul, two centuries Roman by 117 CE.",
   },
   {
     slug: "hispania-tarraconensis",
@@ -166,6 +217,9 @@ export const PROVINCES: Province[] = [
       "By far the largest Spanish province — most of the peninsula, from the Pyrenees to the Atlantic northwest. Trajan himself was born at Italica, not here, but Tarraco's provincial forum and its temple to the deified Augustus, dedicated by Tiberius, made it the ceremonial seat for the whole Hispanic imperial cult.",
     aliases: ["Hispania Tarraconensis", "Tarraconensis", "Hispania Citerior"],
     sources: ["Strabo, Geography 3.4", "Barrington Atlas"],
+    establishedYear: -27,
+    establishedNote:
+      "Augustus split Hispania into three provinces in 27 BCE; full military pacification of the northwest (the Cantabrian Wars) followed by 19 BCE.",
   },
   {
     slug: "hispania-baetica",
@@ -177,6 +231,9 @@ export const PROVINCES: Province[] = [
       "The richest Spanish province, named for the Baetis (Guadalquivir) river that carried its olive oil to Rome — so much of it that the amphorae stamps recovered from Monte Testaccio, Rome's broken-pottery hill, are mostly Baetican. Trajan and Hadrian both had family roots here, at Italica just upriver from Corduba.",
     aliases: ["Hispania Baetica", "Baetica"],
     sources: ["Strabo, Geography 3.2", "Rodríguez-Almeida, Il Monte Testaccio"],
+    establishedYear: -27,
+    establishedNote:
+      "Created in Augustus's 27 BCE division of Hispania into three provinces.",
   },
   {
     slug: "lusitania",
@@ -189,6 +246,9 @@ export const PROVINCES: Province[] = [
       "Western Iberia, roughly modern Portugal and Spanish Extremadura, settled with veterans of Augustus's Cantabrian Wars at its capital Emerita Augusta — 'the veterans' city' — around 25 BCE. The theatre and amphitheatre built for those retired legionaries were already a century old by 117 and still in use.",
     aliases: ["Lusitania"],
     sources: ["Cassius Dio, Roman History 53.26", "Barrington Atlas"],
+    establishedYear: -27,
+    establishedNote:
+      "Created in Augustus's 27 BCE division of Hispania; its veterans' colony at Emerita Augusta was founded shortly after, c. 25 BCE.",
   },
   {
     slug: "raetia",
@@ -200,6 +260,9 @@ export const PROVINCES: Province[] = [
       "The Alpine and upper-Danube province Tiberius and Drusus conquered in a single campaigning season in 15 BCE, opening the shortest road from Italy to the Rhine. Run by an equestrian procurator rather than a senator, it garrisoned auxiliary units, not legions — the legionary muscle sat next door in the two Germanies.",
     aliases: ["Raetia"],
     sources: ["Cassius Dio, Roman History 54.22", "Barrington Atlas"],
+    establishedYear: -15,
+    establishedNote:
+      "Conquered by Tiberius and Drusus in a single campaigning season, 15 BCE, opening the shortest road from Italy to the Rhine.",
   },
   {
     slug: "noricum",
@@ -211,6 +274,9 @@ export const PROVINCES: Province[] = [
       "A former client kingdom absorbed peacefully around 15 BCE, famous in antiquity for its iron — ferrum Noricum was the standard by which Roman writers judged sword steel. Virunum, its capital on the Zollfeld plain, never needed walls: Noricum's annexation was so uncontested it kept almost no permanent garrison.",
     aliases: ["Noricum"],
     sources: ["Pliny the Elder, Natural History 34.145 (Noric iron)", "Barrington Atlas"],
+    establishedYear: -15,
+    establishedNote:
+      "A former client kingdom absorbed peacefully around 15 BCE, alongside the same Alpine campaigns that took Raetia.",
   },
   {
     slug: "sicilia",
@@ -222,6 +288,9 @@ export const PROVINCES: Province[] = [
       "Rome's first province, taken from Carthage in 241 BCE at the end of the First Punic War and still, four centuries later, one of the empire's grain baskets — Cicero's prosecution of the corrupt governor Verres, delivered from this island's own farmers' complaints, remained required reading for every Roman student.",
     aliases: ["Sicilia"],
     sources: ["Cicero, In Verrem", "Barrington Atlas"],
+    establishedYear: -241,
+    establishedNote:
+      "Rome's first province, taken from Carthage at the end of the First Punic War in 241 BCE.",
   },
   {
     slug: "pannonia-superior",
@@ -234,6 +303,9 @@ export const PROVINCES: Province[] = [
       "The western half of Pannonia, split from the single original province in 106 CE — the same year Trajan finished off Dacia across the river. Carnuntum anchored a legion on the Danube's great bend and doubled as a trading post for amber coming down from the Baltic.",
     aliases: ["Pannonia Superior"],
     sources: ["CIL III (Carnuntum inscriptions)", "Barrington Atlas"],
+    establishedYear: 106,
+    establishedNote:
+      "The region came under Roman control by roughly 9 CE, after the Great Illyrian Revolt; the single original Pannonia was split into Superior and Inferior in 106 CE, the same year Dacia was finished.",
   },
   {
     slug: "pannonia-inferior",
@@ -246,6 +318,9 @@ export const PROVINCES: Province[] = [
       "The eastern half of the 106 CE split, fronting the Sarmatian tribes across the Danube rather than the Germans further west. Aquincum — under modern Budapest — held a legion and grew a civilian town alongside its fortress; both would eventually merge into one municipality, though not yet in 117.",
     aliases: ["Pannonia Inferior"],
     sources: ["Barrington Atlas"],
+    establishedYear: 106,
+    establishedNote:
+      "The region came under Roman control by roughly 9 CE; split from the single original Pannonia into Superior and Inferior in 106 CE.",
   },
   {
     slug: "dalmatia",
@@ -257,6 +332,9 @@ export const PROVINCES: Province[] = [
       "The Adriatic's eastern coast, conquered in stages that finished only with Tiberius's brutal three-year suppression of the Great Illyrian Revolt (6–9 CE) — the hardest war Augustus ever fought, by his own account. By 117 the province was fully pacified and demilitarized, its legions long since reassigned to the Danube frontier.",
     aliases: ["Dalmatia"],
     sources: ["Suetonius, Tiberius 16", "Cassius Dio, Roman History 55–56"],
+    establishedYear: 9,
+    establishedNote:
+      "Conquest completed in 9 CE after Tiberius's three-year suppression of the Great Illyrian Revolt (6–9 CE), which Augustus called the hardest war he ever fought.",
   },
   {
     slug: "sardinia-corsica",
@@ -268,6 +346,9 @@ export const PROVINCES: Province[] = [
       "Rome's second province after Sicily, seized from Carthage in 238 BCE during the mercenary revolt that followed the First Punic War. Sardinia's interior mountains stayed lightly Romanized and malarial well into the imperial period — Cicero called exile here one of the harshest a Roman could draw.",
     aliases: ["Sardinia et Corsica"],
     sources: ["Cicero, Pro Scauro", "Barrington Atlas"],
+    establishedYear: -238,
+    establishedNote:
+      "Seized from Carthage in 238 BCE, during the mercenary revolt that followed the First Punic War — Rome's second province.",
   },
   {
     slug: "moesia-superior",
@@ -279,6 +360,9 @@ export const PROVINCES: Province[] = [
       "The western half of the middle Danube frontier, split from a single Moesia in 86 CE under Domitian to give each half its own consular legate for the Dacian wars. Viminacium's legionary fortress was Trajan's own staging base for the second Dacian campaign of 105–106 — Trajan's Bridge across the Danube starts a short march downstream from it.",
     aliases: ["Moesia Superior"],
     sources: ["Cassius Dio, Roman History 68.13 (Trajan's Danube bridge)"],
+    establishedYear: 86,
+    establishedNote:
+      "Split from a single Moesia province in 86 CE under Domitian, to give each half its own consular legate for the Dacian wars.",
   },
   {
     slug: "dacia",
@@ -290,6 +374,9 @@ export const PROVINCES: Province[] = [
       "The empire's newest province, finished in 106 CE after Trajan's two hard-fought wars against King Decebalus — commemorated the same year on the 200-foot spiral relief of Trajan's Column in Rome. A gold rush followed almost immediately at Alburnus Maior in the Apuseni mountains; veteran colonies were still being planted when Trajan died eleven years later.",
     aliases: ["Dacia"],
     sources: ["Cassius Dio, Roman History 68.6–14", "Trajan's Column reliefs"],
+    establishedYear: 106,
+    establishedNote:
+      "Finished in 106 CE after Trajan's two hard-fought Dacian Wars — the empire's newest fully-settled province in 117.",
   },
   {
     slug: "moesia-inferior",
@@ -301,6 +388,9 @@ export const PROVINCES: Province[] = [
       "The eastern half of the Danube split, fronting the Black Sea's Getic and Sarmatian frontier. Its port city Tomis is best known for a single unwilling resident: the poet Ovid, exiled here by Augustus in 8 CE for reasons he never named outright, and dead in this province a decade later without ever being recalled.",
     aliases: ["Moesia Inferior"],
     sources: ["Ovid, Tristia and Epistulae ex Ponto"],
+    establishedYear: 86,
+    establishedNote:
+      "Split from a single Moesia province in 86 CE under Domitian.",
   },
   {
     slug: "thracia",
@@ -312,6 +402,9 @@ export const PROVINCES: Province[] = [
       "A client kingdom until Claudius annexed it outright in 46 CE after the last Thracian king died without an heir the Senate trusted. Governed first by a procurator, then — from around 107 CE — by a full legatus Augusti, an upgrade in status that lands squarely inside this map's snapshot decade.",
     aliases: ["Thracia"],
     sources: ["Cassius Dio, Roman History 60.17", "Barrington Atlas"],
+    establishedYear: 46,
+    establishedNote:
+      "A client kingdom until Claudius annexed it outright in 46 CE, after the last Thracian king died without an heir the Senate trusted.",
   },
   {
     slug: "macedonia",
@@ -323,6 +416,9 @@ export const PROVINCES: Province[] = [
       "Once Alexander's homeland, a Roman province since 146 BCE — the oldest Roman foothold in the Greek-speaking world. The Via Egnatia, Rome's great east–west military road, crosses the whole province from the Adriatic to Thrace; Philippi, where Antony and Octavian crushed Caesar's assassins in 42 BCE, still sits on that road.",
     aliases: ["Macedonia"],
     sources: ["Livy, Ab Urbe Condita 45", "Cassius Dio, Roman History 47.35–49"],
+    establishedYear: -146,
+    establishedNote:
+      "A Roman province since 146 BCE, the oldest Roman foothold in the Greek-speaking world.",
   },
   {
     slug: "achaia",
@@ -335,6 +431,9 @@ export const PROVINCES: Province[] = [
       "Roman Greece — the old heartland of Classical civilization, ruled since 27 BCE from a city the Romans themselves had rebuilt: Corinth, razed by the Republic in 146 BCE and refounded as a colony a century later. Athens kept a special cultural prestige no governor's seat could match; Epirus in the northwest and the Aegean islands both fell under this same province's administration.",
     aliases: ["Achaea", "Achaia", "Epirus", "Insulae Cycladae"],
     sources: ["Pausanias, Description of Greece", "Cassius Dio, Roman History 51.4"],
+    establishedYear: -27,
+    establishedNote:
+      "Organized as its own senatorial province in 27 BCE; Greece had already been under Roman control since Macedonia's conquest in 146 BCE.",
   },
   {
     slug: "bithynia-pontus",
@@ -346,6 +445,10 @@ export const PROVINCES: Province[] = [
       "A senatorial province with an odd Trajanic exception: local finances had run so far into debt that around 110 CE Trajan sent his own trusted correspondent, Pliny the Younger, as a special imperial legate to fix it — bypassing the ordinary proconsul entirely. Pliny's surviving letters from the job, and Trajan's terse replies, are the best-documented governorship anywhere in the empire, including the famous exchange asking what to do about local Christians.",
     aliases: [],
     sources: ["Pliny the Younger, Letters Book 10"],
+    establishedYear: -74,
+    establishedNote:
+      "Bithynia was willed to Rome by its last king, Nicomedes IV, in 74 BCE; Pompey annexed and joined neighboring Pontus to it in 63 BCE.",
+    provenanceSources: ["https://en.wikipedia.org/wiki/Bithynia_and_Pontus"],
   },
   {
     slug: "galatia-cappadocia",
@@ -357,6 +460,10 @@ export const PROVINCES: Province[] = [
       "Two provinces run as one since Vespasian, and by far the empire's most important eastern staging ground in 117 — the legions at Satala and Melitene on this province's eastern edge fed Trajan's whole Armenian and Mesopotamian campaign. Ancyra's Res Gestae inscription, a full copy of Augustus's own account of his reign carved into a temple wall, still stood for every visitor to read.",
     aliases: ["Galatia et Cappadocia", "Cappadocia"],
     sources: ["Monumentum Ancyranum (Res Gestae Divi Augusti)", "CAH XI"],
+    establishedYear: 72,
+    establishedNote:
+      "Galatia was annexed in 25 BCE and Cappadocia only in 17 CE; Vespasian merged the two into one giant frontier province in 72 CE.",
+    provenanceSources: ["https://www.historyatlas.com/groups/galatia-roman-province/"],
   },
   {
     slug: "lycia-pamphylia",
@@ -368,6 +475,9 @@ export const PROVINCES: Province[] = [
       "A late annexation — Lycia ran its own federal league of cities, one of the most sophisticated pre-Roman republics in the Mediterranean, until Claudius folded it into direct rule in 43 CE, joining it to neighboring Pamphylia. Patara's harbor, since silted, made it the province's administrative anchor even after Attaleia grew into its busiest port.",
     aliases: ["Lycia et Pamphylia"],
     sources: ["Strabo, Geography 14.3", "Barrington Atlas"],
+    establishedYear: 43,
+    establishedNote:
+      "Lycia ran its own city league until Claudius annexed it directly in 43 CE, joining it to neighboring Pamphylia.",
   },
   {
     slug: "asia",
@@ -380,6 +490,10 @@ export const PROVINCES: Province[] = [
       "The single richest province in the empire, willed to Rome outright by its last king, Attalus III of Pergamon, in 133 BCE. Its governorship was the most prestigious senatorial posting a former consul could draw by lot — one rung below actually commanding an army. Ephesus outgrew the old royal capital Pergamon as the real seat of provincial business, its harbor handling trade for the whole Anatolian interior.",
     aliases: ["Asia"],
     sources: ["Strabo, Geography 13.4", "OGIS 338 (Attalus III's will)"],
+    establishedYear: -129,
+    establishedNote:
+      "Bequeathed to Rome by King Attalus III of Pergamon in 133 BCE; formally organized as a province in 129 BCE once the revolt of the pretender Aristonicus was crushed.",
+    provenanceSources: ["https://en.wikipedia.org/wiki/War_of_Aristonicus"],
   },
   {
     slug: "cilicia",
@@ -391,6 +505,10 @@ export const PROVINCES: Province[] = [
       "Once notorious as a pirate haven Pompey had to clear out by force in 67 BCE, by 117 a settled province anchoring the empire's southeastern approach to Syria and the Cilician Gates through the Taurus mountains. Trajan died at Selinus, on this province's own coast, on 11 August 117 — the exact date this whole map is frozen on.",
     aliases: ["Cilicia"],
     sources: ["Cassius Dio, Roman History 68.33", "Historia Augusta, Hadrian 4.7"],
+    establishedYear: -64,
+    establishedNote:
+      "Organized by Pompey in 64 BCE as part of his settlement of the East, after clearing the Cilician pirates in 67 BCE.",
+    provenanceSources: ["https://en.wikipedia.org/wiki/Pompey's_Eastern_Settlement"],
   },
   {
     slug: "cyprus",
@@ -402,6 +520,10 @@ export const PROVINCES: Province[] = [
       "A small senatorial province run by a proconsul, taken back from Marc Antony's old grant to Cleopatra after Actium and folded permanently into the settlement of 22 BCE. An earthquake around 76/77 CE had badly damaged Paphos; by 117 imperial funds had rebuilt its sanctuary of Aphrodite, the island's most visited shrine since Homer's day.",
     aliases: ["Cyprus"],
     sources: ["Cassius Dio, Roman History 54.4", "Barrington Atlas"],
+    establishedYear: -58,
+    establishedNote:
+      "Annexed in 58 BCE when Cato was sent to take it; folded permanently into the settled senatorial-province system in 22 BCE.",
+    provenanceSources: ["https://en.wikipedia.org/wiki/Roman_Cyprus"],
   },
   {
     slug: "syria",
@@ -413,6 +535,9 @@ export const PROVINCES: Province[] = [
       "The empire's most important eastern command — four legions at its Trajanic peak, more than any other province — because it borders Parthia. Hadrian, its sitting legate in 117, is at Antioch the moment Trajan dies at Selinus and will be acclaimed emperor here within the day, the succession settled before Rome even hears the news. A massive earthquake had struck Antioch itself just two years earlier, in December 115, with Trajan barely escaping the collapsing building he was staying in.",
     aliases: ["Syria"],
     sources: ["Cassius Dio, Roman History 68.24–25 (Antioch earthquake), 69.1–2 (accession)"],
+    establishedYear: -64,
+    establishedNote:
+      "Annexed by Pompey in 64 BCE, ending the last Seleucid remnant — by 117 the empire's most important eastern military command.",
   },
   {
     slug: "iudaea",
@@ -424,6 +549,9 @@ export const PROVINCES: Province[] = [
       "Annexed outright in 6 CE, then again after the catastrophic Jewish Revolt of 66–73 CE that ended with the Temple's destruction and Jerusalem's razing. By 117 the province is deep in a second, less-remembered crisis — the Kitos War, a wave of diaspora Jewish revolts Trajan's Berber general Lusius Quietus was actively suppressing the very month Trajan died. Legio X Fretensis garrisoned the ruins of Jerusalem itself.",
     aliases: ["Judaea", "Iudaea"],
     sources: ["Josephus, The Jewish War", "Cassius Dio, Roman History 68.32 (Kitos War)"],
+    establishedYear: 6,
+    establishedNote:
+      "Annexed outright in 6 CE, after Rome deposed the ethnarch Archelaus; reorganized after the catastrophic Jewish Revolt of 66–73 CE.",
   },
   {
     slug: "arabia",
@@ -435,6 +563,9 @@ export const PROVINCES: Province[] = [
       "The empire's newest annexation before Dacia — the Nabataean kingdom, absorbed without a real fight in 106 CE when its last king died, its famous rock-cut capital Petra becoming a Roman provincial city overnight. The Via Nova Traiana, a paved military road from Bostra clear down to the Red Sea, was under construction through most of the province's first decade as Roman territory.",
     aliases: ["Arabia Petraea", "Arabia"],
     sources: ["Cassius Dio, Roman History 68.14", "CIL III 14149 (Via Nova Traiana milestones)"],
+    establishedYear: 106,
+    establishedNote:
+      "Absorbed without a real fight in 106 CE, on the death of the last Nabataean king — the empire's newest annexation before Dacia.",
   },
   {
     slug: "aegyptus",
@@ -446,6 +577,9 @@ export const PROVINCES: Province[] = [
       "Legally unlike every other province — Augustus barred senators from even entering without his personal permission, and ran it through an equestrian prefect answerable only to the emperor, because Egypt's grain fed Rome and no ambitious senator was allowed near that lever. In 117 the province was still recovering from the Kitos War, whose Jewish-Greek communal violence had devastated Alexandria's ancient Jewish quarter.",
     aliases: ["Aegyptus"],
     sources: ["Cassius Dio, Roman History 51.17", "Tacitus, Annals 2.59 (senators barred from Egypt)"],
+    establishedYear: -30,
+    establishedNote:
+      "Annexed in 30 BCE, immediately after Actium and the deaths of Antony and Cleopatra.",
   },
   {
     slug: "creta-cyrenaica",
@@ -457,6 +591,10 @@ export const PROVINCES: Province[] = [
       "An odd pairing — Crete and the five Greek cities of Cyrenaica, on opposite sides of open sea, governed as one senatorial province since 27 BCE simply because neither was large enough to justify its own proconsul. Cyrenaica bore the worst of the Kitos War's opening massacres in 115–117; Cassius Dio's account of hundreds of thousands killed there, while likely inflated, still reflects real, near-total devastation.",
     aliases: ["Creta et Cyrenaica"],
     sources: ["Cassius Dio, Roman History 68.32", "Eusebius, Historia Ecclesiastica 4.2"],
+    establishedYear: -27,
+    establishedNote:
+      "Crete was conquered by Metellus in 67–66 BCE; Cyrenaica was bequeathed to Rome in 96 BCE and annexed in 74 BCE. Augustus combined both into one senatorial province in 27 BCE.",
+    provenanceSources: ["https://en.wikipedia.org/wiki/Crete_and_Cyrenaica"],
   },
   {
     slug: "africa-proconsularis",
@@ -468,6 +606,9 @@ export const PROVINCES: Province[] = [
       "The grandest senatorial governorship left in the empire by 117 — its proconsul outranked every other, a consolation prize for the Senate after Augustus stripped away the military provinces. Carthage, rebuilt by Julius Caesar on the site Scipio had razed in 146 BCE, had grown back into the empire's second-busiest port, its harbor feeding Rome's grain supply almost as heavily as Egypt's.",
     aliases: ["Africa Proconsularis"],
     sources: ["Cassius Dio, Roman History 53.12", "Barrington Atlas"],
+    establishedYear: -146,
+    establishedNote:
+      "Organized after Carthage's destruction in 146 BCE, at the end of the Third Punic War.",
   },
   {
     slug: "numidia",
@@ -479,6 +620,9 @@ export const PROVINCES: Province[] = [
       "Not yet a province in its own right in 117 — that formal split from Africa Proconsularis waits until Septimius Severus, around 193 CE. In practice it already ran as one: the legate commanding Legio III Augusta at Lambaesis administered this whole military district directly, building a chain of forts south from Vescera under Trajan to hold the desert frontier the Senate's Carthage-based proconsul never touched.",
     aliases: ["Numidia", "Africa Proconsularis (Numidia military district)"],
     sources: ["Tacitus, Histories 4.48 (legate's authority)", "CIL VIII (Lambaesis inscriptions)"],
+    establishedYear: null,
+    establishedNote:
+      "Not a formal province in 117 CE — run as a military district directly by the legate of Legio III Augusta. The formal split from Africa Proconsularis waits until Septimius Severus, c. 193 CE.",
   },
   {
     slug: "mauretania-caesariensis",
@@ -490,6 +634,9 @@ export const PROVINCES: Province[] = [
       "The eastern half of the old client kingdom of Mauretania, annexed by Claudius in 44 CE after its last king, Ptolemy — a grandson of Cleopatra and Mark Antony — was executed by Caligula. Its capital Caesarea kept the extravagant Hellenistic building program that Ptolemy's father Juba II, a genuine scholar-king, had lavished on it.",
     aliases: ["Mauretania Caesariensis"],
     sources: ["Cassius Dio, Roman History 59.25", "Pliny the Elder, Natural History 5.11"],
+    establishedYear: 44,
+    establishedNote:
+      "Annexed by Claudius in 44 CE, after King Ptolemy of Mauretania — a grandson of Cleopatra and Mark Antony — was executed by Caligula.",
   },
   {
     slug: "mauretania-tingitana",
@@ -501,6 +648,9 @@ export const PROVINCES: Province[] = [
       "The western sliver of old Mauretania, split off in 44 CE and run separately because its coast faced Spain across the Strait, not Numidia and Carthage further east. Volubilis, its inland showpiece city, had already built the arch, basilica and capitol its ruins are known for today — one of the best-preserved Roman city plans left standing on the African continent.",
     aliases: ["Mauretania Tingitana"],
     sources: ["Pliny the Elder, Natural History 5.2", "Barrington Atlas"],
+    establishedYear: 44,
+    establishedNote:
+      "Split off from Mauretania and administered separately from 44 CE, since its coast faced Spain rather than Numidia and Carthage further east.",
   },
   {
     slug: "armenia-mesopotamia",
@@ -512,6 +662,11 @@ export const PROVINCES: Province[] = [
       "Trajan's biggest gamble — three brand-new provinces (Armenia, Mesopotamia and Assyria) carved out of the Parthian war of 114–116, with Ctesiphon itself captured and a Parthian client king installed on the throne. By the exact week this map is frozen on, the gamble is already failing: revolts across the new territory and Trajan's own fatal illness are forcing the retreat Hadrian will make official within days of taking power, abandoning all three east of the Euphrates.",
     aliases: ["Armenia", "Mesopotamia", "Assyria"],
     sources: ["Cassius Dio, Roman History 68.26–33", "Eutropius, Breviarium 8.3"],
+    establishedYear: 116,
+    establishedNote:
+      "Trajan formally organized Armenia and Mesopotamia as provinces in early 116 CE, commemorated on his own coinage; a third province, Assyria, is claimed by ancient sources but has no confirming coin issue, so modern historians debate whether it was ever fully organized. All were held only from 114/116 to 117 CE: within months of this map's snapshot, Hadrian ordered Assyria evacuated (118) and abandoned Armenia and Mesopotamia the same year.",
+    provenanceSources: ["https://en.wikipedia.org/wiki/Assyria_(Roman_province)", "https://en.wikipedia.org/wiki/Mesopotamia_(Roman_province)"],
+    heldOnly117: true,
   },
 ];
 
