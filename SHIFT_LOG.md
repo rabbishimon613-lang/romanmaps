@@ -7,6 +7,135 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 51 — 2026-08-23 (this shift's own prompt claimed "Shift 4 of four")
+
+Same stale-numbering mismatch every shift since #13 has flagged — SHIFT_LOG was 50 real shifts
+deep at session start, not 3. Session started `HEAD` detached at `2549e4f` (Shift 50's own final
+commit) with local `main`/`origin/main` both stale at `709a480` ("Shift 28") until a fresh
+`git fetch origin main` pulled the real tip — same benign container-creation race every recent
+shift has documented, no work at risk. Confirmed the standing network finding independently:
+`curl` to `overpass-api.de` and `commons.wikimedia.org` both return `CONNECT tunnel failed,
+response 403` from the agent proxy (checked `$HTTPS_PROXY/__agentproxy/status` directly — both
+hosts show up in `recentRelayFailures`). `WebSearch` stayed reachable throughout and was the only
+research channel this shift, same as every recent shift. Axis 1 (new cities via Overpass) stayed
+off the table for the same reason it has for the last dozen-plus shifts.
+
+### Board check
+
+Read `BOARD.md`'s claiming protocol, pulled first, then claimed two unclaimed P0/P1 tickets that
+fit a research-only (no-Overpass, no-direct-fetch) shift: `[08-P0-3]` province-provenance and
+`[06-P1-4]` excavation-history — committed the claim alone, pushed immediately, then did the work.
+Left the large P0 refactors every recent shift has correctly declined untouched (`[12-P0-1]`
+merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terrain, `[13-P0-2]`
+image-audit). Picked up a third, smaller unclaimed ticket mid-shift once time allowed —
+`[09-P1-5]` clear-unverified — without a separate claim commit since it was finished start-to-
+end in one uninterrupted pass with no collision window. Ratio this shift: 2 `verify` + 1 `deepen`,
+no `add` — a deliberate correction after several recent add-heavy shifts (49: 1 fix + 3 add;
+50: research-axis-heavy) the board's own 1:2:1 ratio note flags.
+
+### Track A — `[06-P1-4]` excavation-history: all 40 `sites.ts` sites
+
+Real, cited excavation/rediscovery history for every curated site. Split the 40 sites across 4
+parallel background research agents (10 sites each) since this is exactly the kind of
+independent, WebSearch-only fan-out the token budget supports — each agent returned structured
+JSON (year, excavator/institution, one concrete fact, source hint) per site, explicitly told to
+flag rather than pad thin entries. Merged all 40 into a new `excavation?: {year, excavator, note,
+source}[]` field on `SiteInfo` (`app/sites.ts`) via a scripted text-splice (not hand-editing 40
+multi-line TS object literals) and rendered it as an "Excavation history" section on
+`/site/[slug]` between the "on this spot today" line and the map CTA button — dated, named
+entries in the same parchment styling the rest of that static page already uses. Highlights:
+Vindolanda's March 1973 writing-tablet discovery by Robin Birley (initially mistaken for wood
+shavings); Pompeii's 1748 Alcubierre dig through Fiorelli's 1860s plaster-cast technique to the
+2012-2022 EU-funded Great Pompeii Project; Herculaneum's 1750s Karl Weber tunnel campaign that
+recovered ~1,800 papyrus fragments from the Villa of the Papyri, the only library to survive
+intact from antiquity; Carnuntum's 2011 ground-penetrating-radar discovery of a previously-
+unknown gladiator school. Deliberately did **not** add this to the compact `SitesPanel.tsx`
+browse list — a multi-entry dated timeline doesn't fit a one-line jump-list row; the static SEO
+page is the right surface for it. Each research agent flagged its own thin spots honestly (a
+few Italian sites with generic "Italian state archaeologists" instead of a named individual where
+sources genuinely didn't specify one) rather than inventing a name — logged in the board entry,
+not silently padded.
+
+### Track A + Track B — `[08-P0-3]` province-provenance: established year + held-only-117 flag
+
+All 43 `app/provinces.ts` entries get a new structured `establishedYear` (negative = BCE, `null`
+for Italia and Numidia, neither of which was ever a formal province in 117) and `establishedNote`.
+Most years were extractable straight from the file's own already-well-researched blurb prose, but
+several needed real verification rather than re-deriving from memory — WebSearch confirmed Tres
+Galliae's division is usually dated to Agrippa's 22 BCE reorganization (debated 27-13 BCE range),
+Bithynia's 74 BCE bequest with Pontus joined only in 63 BCE, Galatia et Cappadocia's 72 CE
+Vespasianic merger (Galatia itself annexed 25 BCE, Cappadocia not until 17 CE), and Crete and
+Cyrenaica's separate 67/74 BCE annexations combined into one province only in 27 BCE. Armenia,
+Mesopotamia and Assyria — the ticket's own explicitly-named case — get `establishedYear: 116`
+(Trajan's own coinage marks the year, though Assyria's status as a genuinely separate third
+province is itself debated since no coin issue confirms it) and a new `heldOnly117: true` flag,
+with `establishedNote` spelling out plainly that Hadrian ordered Assyria evacuated and gave up
+Armenia and Mesopotamia within months of this map's snapshot.
+
+This is also this shift's Track B: wired the new fields into both UI surfaces that read
+`app/provinces.ts` — `ProvincePanel.tsx` (the live map's click-a-province panel) and the static
+`/province/[slug]` page now both show a "Roman since {year}" line, and the three eastern
+provinces get a "HELD ONLY 114-117 CE — ALREADY BEING ABANDONED" badge using the existing
+`--warn-bg`/`--warn-text` tokens `PhaseBanner.tsx` and the per-building "not standing in 117"
+badge already established — no new hardcoded chrome colors, no new default-on overlay (this
+enriches an existing base-layer panel, doesn't add one). Verified live with Playwright at
+1280×900 light and 375×812 dark against a real `next dev` server: the static `/province/
+armenia-mesopotamia` page's badge and the live map panel's "Roman since" line both render
+correctly in both themes. One real sandbox snag worth recording precisely: a genuine
+`page.mouse.click()` onto the `provinces-fill` layer never registered a click in this specific
+container — checked the zoom gate (4.2, well under the handler's 7.5 cutoff) and confirmed the
+layer's features query correctly, so the gate logic itself is fine; the same panel's click path
+was already flagged as untestable-by-real-click in this exact sandbox by cloud shift 30 back on
+2026-08-18 (`BOARD.md`'s `[02-P0-2]` note), for the same demotiles.maplibre.org-adjacent reason.
+Used the identical workaround shift 30 documented — `map.fire('click', {point, lngLat,
+originalEvent})` — which opened the real panel and let the new fields be confirmed visually. Not
+a regression from this change; a standing, already-documented sandbox limitation on this one
+interaction path.
+
+### Track A (small) — `[09-P1-5]` clear-unverified
+
+Picked up once the two claimed tickets were done and time remained. Re-checked all 5 citations
+`SHIFT_LOG` had previously flagged as unverified, against their primary text. Three already had
+`ancient_sources` (added by later shifts than whichever one first flagged them unverified) and
+checked out accurate on a fresh read: Domus Flavia's Statius, *Silvae* 4.2 quote about columns
+that could "shoulder the gods and the sky," Baths of Nero's Martial, *Epigrams* 7.34 ("nothing
+worse than Nero, yet nothing better than his baths"), and Ara Pacis's *Res Gestae* 12 — no
+misattribution found this pass, unlike the real Trajan's-Markets/Aulus-Gellius mixup an earlier
+shift caught and rejected for a different POI. The other two had no ancient source at all;
+research turned up real ones for both — Atrium Vestae gets Ovid, *Fasti* 6.263-265 (Numa's
+"small place that holds the Atria of Vesta"), and Bibliotheca Ulpia gets Aulus Gellius, *Attic
+Nights* 11.17.1, in which Gellius describes sitting in the library of Trajan's temple and calling
+for old praetorian edicts to read — an actual eyewitness account of a scholar working inside the
+library's stacks. `pois.geojson` feature count unchanged (469); two records go from zero literary
+citations to one.
+
+### State, verification, next
+
+`npm run validate`: 0 errors, 17 warnings, identical set to Shift 50's (no new warnings
+introduced). `npm run build`: clean, 597 static pages, both mid-shift and at the final commit.
+`npm run metrics --write`: ancient-source coverage on `pois.geojson` 179→181 (36.0%→36.4%),
+everything else unchanged (497 POIs, 100% depth). Reverted an unrelated `package-lock.json`
+metadata-only diff (`hasInstallScript`, a `libc` field) from a clean `npm install` before every
+commit, per the brief's "don't touch package.json without a data-change justifying it." Fixed one
+real bug caught mid-edit, not shipped: a careless `Edit` on `/site/[slug]/page.tsx` briefly
+truncated `<a href={mapHref}` down to a bare `<` — caught before committing by re-reading the
+file, not by the build (JSX like that doesn't always fail typecheck cleanly depending on what
+follows) — worth the reminder to re-read text-editor diffs on JSX open tags specifically, not
+just trust the tool call succeeded.
+
+**Next shift**: `excavation[]` could be extended past the 40 curated sites to major individually-
+paged POIs (Colosseum, Forum, etc.) if a future shift wants the same treatment at that scale —
+not attempted here, scoped to the board ticket's own "all 40 sites" ask. `provinces.ts`'s new
+`establishedYear`/`establishedNote` fields are unused by search/sitemap — a future shift could
+sort/filter provinces by age, or add a "youngest provinces" list, as a small follow-on Track B.
+`[09-P1-5]`'s clearance is real but thin — only 5 POIs were ever explicitly flagged unverified by
+name; a broader unverified-citation sweep across the ~318 POIs still without any `ancient_sources`
+is a bigger, separate task, not attempted here. Axis 7's 7b (sailing seasons/mare clausum) and 7c
+(named winds/currents) are still untouched, per Shift 50's own handoff note — still a good
+next pick for a research-only shift.
+
+---
+
 ## Shift 50 — 2026-08-23 (this shift's own prompt claimed "Shift 3 of four")
 
 Same stale-numbering mismatch every shift since #13 has flagged. Session started with `HEAD`

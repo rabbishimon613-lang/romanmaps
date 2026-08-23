@@ -405,6 +405,31 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
   remaining ~80-POI pool needs `[09-P1-4]` epigraphy's inscription channel, not more literary-only
   passes.
 
+## New ideas spotted this shift (2026-08-23, cloud shift 51, provenance/excavation/citations batch)
+
+- [ ] **`ProvincePanel.tsx`'s real-mouse-click path onto `provinces-fill` still doesn't register
+  in this exact sandbox**, reconfirming cloud shift 30's 2026-08-18 finding on the same panel
+  (`BOARD.md`'s `[02-P0-2]` note) two weeks later. A synthetic Playwright `page.mouse.click()` at
+  a screen point verified via `queryRenderedFeatures` to be over a real `provinces-fill` polygon,
+  at zoom 4.2 (well under the handler's 7.5 gate), simply produces no panel — `map.fire('click',
+  {point, lngLat, originalEvent})` does work and is the only verification path that's succeeded
+  twice now. Worth either a genuine root-cause dig (real click events clearly aren't reaching
+  MapLibre's internal interaction manager here, for a reason distinct from the documented
+  `demotiles.maplibre.org` glyph block) or just formalizing `map.fire('click', ...)` as this
+  project's standard way to test any layer-click handler in this sandbox, so the next shift
+  doesn't have to rediscover the same workaround from scratch.
+- [ ] **`json.dump(...)` without an explicit `indent=2` reformats `pois.geojson`'s whole-file
+  diff, same trap Shift 14/15 already flagged for `indent`/`ensure_ascii`.** Hit it directly this
+  shift: a first pass at adding two `ancient_sources` entries used Python's `indent=1` default-ish
+  habit (carried over from a different file's edit earlier the same session) and produced a
+  31,000+ line diff for what should have been a 20-line addition — caught and reverted before
+  committing by diffing first, per the standing habit those earlier shifts already established,
+  but worth restating pointedly: **check the target file's actual indent width before any
+  programmatic JSON rewrite, every time, not just for files touched for the first time.**
+- [ ] **Axis 7's 7b (sailing seasons/mare clausum) and 7c (named winds/currents) are still
+  untouched** — Shift 50 already flagged this as open, still true. WebSearch-only, no Overpass
+  or direct-fetch dependency.
+
 ## Shipped (moved from above; newest on top)
 
 - 2026-08-22 — a cloud shift: Entrance welcome screen (board `[10-P1-4]`) — one sentence, three
