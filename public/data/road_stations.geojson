@@ -11590,6 +11590,169 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.15,
+          50.4167
+        ]
+      },
+      "properties": {
+        "id": "station_vodgoriacum",
+        "category": "mansio",
+        "name": "Vodgoriacum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "A vicus at modern Waudrez, near Binche, on the stretch of road running north out of Bavay toward Tongeren. Excavation has confirmed continuous Roman-period occupation here, matching the Antonine Itinerary's placement between Bagacum and Geminiacum.",
+        "sources": [
+          "Itin. Ant. 378.10"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3722,
+          50.4794
+        ]
+      },
+      "properties": {
+        "id": "station_geminiacum",
+        "category": "vicus",
+        "name": "Geminiacum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "One of the best-excavated vici on the whole Bavay-Cologne road, at Liberchies in modern Pont-a-Celles, dug systematically since 1956. Coin finds there run continuously through the Roman period, confirming it as a real working roadside settlement rather than a guess from the text alone.",
+        "sources": [
+          "Itin. Ant. 378.11",
+          "https://www.academia.edu/123122844/Celtic_and_Roman_coins_of_the_vicus_of_Geminiacum_Liberchies._Quantitative_and_contextual_aspects"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1256,
+          50.6167
+        ]
+      },
+      "properties": {
+        "id": "station_perniciacum",
+        "category": "vicus",
+        "name": "Perniciacum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 22,
+        "identified": true,
+        "notes": "A vicus at modern Braives, named Pernaco on the Peutinger Table and Perniciacum in the Antonine Itinerary, on the long stretch of road between Liberchies and Tongeren.",
+        "sources": [
+          "Itin. Ant. 378.12",
+          "https://arbre-celtique.com/encyclopedie/perniciacum-braives-10199.htm"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4649,
+          50.7811
+        ]
+      },
+      "properties": {
+        "id": "station_aduaca_tungrorum",
+        "category": "vicus",
+        "name": "Aduaca Tungrorum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 14,
+        "identified": true,
+        "notes": "Civitas capital of the Tungri, at modern Tongeren, the largest town on this stretch of Gallia Belgica and still ringed today by its Roman-era walls. The road crossed here on its way to the Rhine frontier.",
+        "sources": [
+          "Itin. Ant. 378.13"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.977,
+          50.8882
+        ]
+      },
+      "properties": {
+        "id": "station_coriovallum",
+        "category": "vicus",
+        "name": "Coriovallum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "A road-junction settlement at modern Heerlen, where this road met the north-south route linking the Rhine legionary bases. Excavated bathhouse remains are still on public display beneath the modern town center.",
+        "sources": [
+          "Itin. Ant. 378.14"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.3606,
+          50.9219
+        ]
+      },
+      "properties": {
+        "id": "station_iuliacum",
+        "category": "vicus",
+        "name": "Iuliacum",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "A vicus at modern Julich, the last waystation before the road reached the Rhine at Cologne. Its name survives almost unchanged into the modern German town.",
+        "sources": [
+          "Itin. Ant. 378.15"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9603,
+          50.9375
+        ]
+      },
+      "properties": {
+        "id": "station_colonia_agrippina",
+        "category": "vicus",
+        "name": "Colonia Agrippina",
+        "road": "Via Agrippa",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "This branch's eastern terminus at the Rhine, modern Cologne, seat of the governor of Germania Inferior and home port of the Rhine fleet. The road tied Britannia's Channel crossing directly to this legionary frontier in one continuous line, closing out the Bavay-Cologne stretch of Via Agrippa's northern network.",
+        "sources": [
+          "Itin. Ant. 378.16"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
