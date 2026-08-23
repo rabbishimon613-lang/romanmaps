@@ -7,6 +7,116 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 50 — 2026-08-23 (this shift's own prompt claimed "Shift 3 of four")
+
+Same stale-numbering mismatch every shift since #13 has flagged. Session started with `HEAD`
+detached at `bb092a2` (Shift 49's own final commit); `git checkout main && git reset --hard
+origin/main` landed cleanly, no local-only work at risk. Re-confirmed the standing network
+finding independently: `curl` to `overpass-api.de`, `commons.wikimedia.org`, and even
+`example.com` all return `CONNECT tunnel failed, response 403` from the agent proxy, and
+`WebFetch` returns a hard `EGRESS_BLOCKED` for every domain tried, wiki or not — this sandbox's
+egress allowlist is `WebSearch`'s own backend and nothing else. Axis 1 (new cities via Overpass)
+and any direct image-URL verification stay off the table for this shift, same as the last several.
+`npm install` was needed (`node_modules` missing) before `npm run build`/`validate` would run.
+
+### Board check
+
+No `[~]` claims standing. Board's few unclaimed items are the same large P0s recent shifts have
+correctly declined (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild,
+`[02-P0-1]` terrain, `[13-P0-2]` image-audit — the last needs the blocked direct-fetch image
+verification anyway). Picked up the standing `[09-P0-1]` ancient-sources ticket for a small batch
+instead (see below), and used `SHIFT_BRIEF.md` axes for Track A research, same legitimate
+precedent documented by prior shifts when the board has nothing unclaimed that fits a
+research-only, no-Overpass, no-direct-fetch shift.
+
+### Track A — Axis 7: agriculture zones, closing out 7a
+
+`agriculture.geojson` had grain (5/5), olive (5/5) and most of wine covered but was missing two
+entire sub-lists `SHIFT_BRIEF.md`'s axis 7a names directly: fruit/specialty crops (dates, silphium,
+figs, pomegranates) and livestock (Apulian sheep, Numidian horses, Cisalpine cattle, British
+hunting dogs), plus two of five timber zones (Alpine fir, Bruttium fir). Researched and added all
+10 as polygon zones, each with a real ancient citation and one concrete number/detail in Google-
+Business voice: Cyrene's silphium (Pliny's story of the last stalk sent to Nero), the Dead Sea
+oases (dates, balsam, and pomegranates together, since all three come from the same Jericho/Ein
+Gedi strip per every source found), Carian figs (the Latin *caricae* literally named for the
+region), Numidian cavalry horses, Apulian transhumance wool, Cisalpine cattle country, British
+hunting dogs (Strabo, Oppian, and Tacitus all independently name this as a real British export),
+and Alpine/Bruttium fir forests (Pliny on fir for ship's masts, backed by a 2026 PNAS
+dendrochronology paper for the trade-distance claim). `agriculture.geojson` 18 → 28 — axis 7a is
+now complete against the brief's own named list. Appended via `scripts/append-geojson-features.mjs`
+for a pure-addition diff; `npm run validate` clean, no new warnings.
+
+### Track A — Axis 2: Via Agrippa's Bavay–Cologne branch, 7 new stations
+
+Went in planning a fresh "Via Belgica" road (Boulogne–Cologne, the Gallia Belgica corridor
+`SHIFT_BRIEF.md`'s Gaul queue names) and researched the full Antonine Itinerary chain via
+WebSearch: Gesoriacum → Tarvenna → Castellum Menapiorum → Viroviacum → Turnacum → Pons Scaldis →
+Bagacum (83 mi, matches the itinerary's own stated total exactly), then Bagacum → Vodgoriacum →
+Geminiacum → Perniciacum → Aduaca Tungrorum → Coriovallum → Iuliacum → Colonia Agrippina. Before
+writing anything, checked whether this route already existed — **it did**: the entire western leg
+(Gesoriacum through Bagacum) is already in `road_stations.geojson` under `road: "Via Agrippa"`,
+added by an earlier shift as part of the same Lugdunum-radiating network. Caught this by grepping
+matching coordinates before committing, not after — the same process discipline Shift 49's
+conventus near-miss flagged as worth repeating. Only the genuinely new eastern half (Bavay to
+Cologne, 7 stations) got added, under the same `road: "Via Agrippa"` name rather than inventing a
+second name for one continuous road. Two identifications (Vodgoriacum = Waudrez, near Binche) ship
+at `confidence: medium`; the rest are well-excavated, independently confirmed vici (Geminiacum/
+Liberchies has been dug continuously since 1956 with unbroken Roman-period coin finds; Perniciacum/
+Braives is named on both the Peutinger Table and the Antonine Itinerary). `road_stations.geojson`
+488 → 495.
+
+### Track A — Axis 15: 3 more alimenta towns
+
+`euergetism.geojson` had 23 of the brief's ~50-town target. WebSearch surfaced three more
+independently documented in the same secondary literature that named the existing 23 (R.
+Duncan-Jones's survey of the scheme): Placentia (Piacenza), Iguvium (Gubbio), and Libarna, a small
+Ligurian colony near Serravalle Scrivia whose amphitheater and forum are still standing. Shipped at
+`confidence: medium` — none has its own dedicated bronze tablet the way Veleia or Ligures Baebiani
+do, only a secondary-source mention. Real ceiling hit here, not a padding decision: several more
+WebSearch passes for named alimenta towns (Falerii, Casinum, Suessa Aurunca, Setia, Signia, Anagnia)
+came back with nothing specific enough to cite — the two big epigraphic tables (Veleia, Ligures
+Baebiani) that prior shifts already mined thoroughly are genuinely the bulk of what survives by
+name; the other ~27 towns implied by "53 towns and municipia" are attested in aggregate, not
+individually nameable from what WebSearch can surface. Flagging for whoever revisits this: it may
+need JSTOR/library access to Duncan-Jones's actual town list, not just search snippets, to close
+the rest of the gap. No `image_url` found for any of the three after a real search — shipped
+`image_url` key dropped entirely (not `null`) per the validator's own preferred pattern, since
+`null` triggers an "image_url key present but empty" warning. `euergetism.geojson` 55 → 58.
+
+### Track B — `[09-P0-1]` ancient-sources, batch 6
+
+Small and honest: 1 new literary citation (Pyramid of Cestius — Cicero, *Phil.* 3.26, naming Gaius
+Cestius decades before the pyramid was built). Nearly re-committed batch 5's own documented mistake
+in the process — a search for Trajan's Markets surfaced an Aulus Gellius passage that on a closer
+read describes the *neighboring Forum's* colonnades, not the Markets, exactly the confusion batch 5
+already flagged and rejected for this same POI. Caught it against the board's own note before
+merging and dropped it rather than shipping a wrong citation. Also researched and correctly passed
+on Piscina Mirabilis, Alburnus Maior (the Cassius Dio "hidden treasure" passage is about the
+Sargetia river hoard near Sarmizegetusa, a different place), Tomb of Eurysaces, and Lugdunum's
+theatre — no genuine literary hit for any of them. Confirms the board's own standing note: the
+remaining ~80-POI pool (tombs, villas, shipwrecks, industrial sites) has hit a real wall for
+literary-only search and needs `[09-P1-4]` epigraphy's inscription channel opened instead.
+
+### State, verification, next
+
+`npm run validate`: 0 errors, 17 warnings (all pre-existing and reviewed). `npm run build`: clean,
+597 static pages, both before and after the final pois.geojson edit. `METRICS.md` refreshed for
+today (497 POIs unchanged — this shift's Track B was a citation top-up, not new POIs; thematic
+records 1437 → 1457; ancient-source coverage on high-confidence POIs 64.9% → 65.3%). Reverted an
+unrelated `package-lock.json` diff from a clean `npm install` (metadata-only, no dependency
+change) before committing, per the brief's "don't touch package.json without a data-change
+justifying it."
+
+**Next shift**: axis 7's remaining sub-items are 7b (sailing seasons/mare clausum overlay) and 7c
+(named winds/currents), both untouched — good next pick if continuing this axis. Axis 15's alimenta
+list is at 26/~50; real headroom remains but needs a different research approach than more
+WebSearch snippet-hunting (see note above). `road_stations.geojson`'s Via Agrippa branch is now a
+complete Boulogne-to-Cologne road; a genuinely new road (not yet touched under any name) is still
+open work for axis 2. `[09-P0-1]` ancient-sources: wait for `[09-P1-4]` epigraphy before another
+literary-only pass, per this batch's own finding.
+
+---
+
 ## Shift 49 — 2026-08-23 (this shift's own prompt claimed "Shift 2 of four")
 
 Same stale-numbering mismatch flagged by every shift since #13 — the scheduled prompt said

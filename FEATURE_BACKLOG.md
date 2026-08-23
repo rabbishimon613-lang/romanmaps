@@ -373,6 +373,38 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
   target `.geojson` after — the append script has no way to know or prevent a later tool from
   reformatting its own careful text-splice.
 
+## New ideas spotted this shift (2026-08-23, a cloud shift, agriculture/roads/alimenta batch)
+
+- [ ] **Axis 7a (crop/livestock zones) is now complete against `SHIFT_BRIEF.md`'s own list** —
+  `agriculture.geojson` 18 → 28. Still fully open: 7b (sailing seasons / mare clausum, an animated
+  header overlay, not a data file) and 7c (named winds — Etesian, Aquilo, Auster — plus the Nile
+  flood, as points/arrows in a new `wind_currents.geojson`). Good next pick for whoever continues
+  this axis; neither needs Overpass or direct image fetch, both are WebSearch-only research.
+- [ ] **Before adding a "new road," check every candidate station's coordinates against the whole
+  file, not just the road name.** This shift nearly duplicated 6 stations (Gesoriacum through
+  Bagacum) that already existed under `road: "Via Agrippa"` — a different name for what turned out
+  to be the same physical route. A road name search alone (`grep road_stations.geojson`) would have
+  missed it since the existing entries use "Via Agrippa," not "Via Belgica." Caught only by
+  comparing actual coordinates before committing. `road_stations.geojson`'s Boulogne-to-Cologne
+  stretch is now complete (Via Agrippa, 495 stations total) — a genuinely untouched road is still
+  open work for axis 2.
+- [ ] **Alimenta towns (axis 15) likely can't get much past ~26/50 from WebSearch snippets alone.**
+  The two big bronze tables (Veleia, Ligures Baebiani) that prior shifts already mined are the bulk
+  of what's individually nameable from secondary-source summaries; several more towns the brief's
+  own "53 towns and municipia" figure implies are attested only in aggregate scholarship, not by
+  name, in what WebSearch surfaces. Whoever wants to close the rest of the gap likely needs direct
+  access to Duncan-Jones's full town list (a library/JSTOR source this sandbox can't reach), not
+  another round of the same search terms.
+- [ ] **`[09-P0-1]` ancient-sources batch 6 nearly repeated batch 5's own documented mistake** — a
+  search for a "Trajan's Markets ancient source" surfaced an Aulus Gellius passage that on close
+  reading is about the neighboring Forum's colonnades, not the Markets, exactly the confusion
+  batch 5 already flagged and rejected for this same POI. A general WebSearch summary can blur
+  "Forum of Trajan" and "Markets of Trajan" together even when the underlying source text
+  distinguishes them — worth reading the board's own prior-batch notes for a POI before trusting a
+  fresh search hit, not just searching cold. This ticket's own conclusion still holds: the
+  remaining ~80-POI pool needs `[09-P1-4]` epigraphy's inscription channel, not more literary-only
+  passes.
+
 ## Shipped (moved from above; newest on top)
 
 - 2026-08-22 — a cloud shift: Entrance welcome screen (board `[10-P1-4]`) — one sentence, three

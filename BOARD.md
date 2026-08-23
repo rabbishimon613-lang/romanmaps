@@ -292,6 +292,17 @@ to prevent. Building locally to *test* your own work is expected and fine.
       wall this and the last two batches hit is now well-enough documented that a batch 6 should
       probably wait for `[09-P1-4]` to open the inscription channel rather than keep re-running
       the same literary-only search against the same thin pool.*
+      *Batch 6 done 2026-08-23, this shift: 1 new citation (Pyramid of Cestius — Cicero, Phil.
+      3.26, naming Gaius Cestius decades before the tomb was built). Nearly repeated batch 5's own
+      documented mistake in the process: a search for Trajan's Markets surfaced an Aulus Gellius
+      passage that on closer read is about the neighboring Forum's colonnades, not the Markets —
+      exactly the confusion batch 5 already flagged and rejected for this same POI. Caught it
+      before merging and dropped it rather than re-committing a known error. Also checked and
+      correctly passed on: Piscina Mirabilis (no literary mention found despite Pliny the Elder's
+      own Misenum connection), Alburnus Maior (Cassius Dio's Dacian-treasure passage is about the
+      Sargetia river hoard near Sarmizegetusa, not this mine), Tomb of Eurysaces, Lugdunum's
+      theatre. Confirms the wall is real — worth waiting for `[09-P1-4]` epigraphy before another
+      literary-only pass on this pool.*
 - [x] `[06-P0-2]` **`curate-buildings`** `deepen` — Ostia-depth curated descriptions for the
       other 39 sites, ~10 buildings/day. **Standing task, never "done".**
       *Pompeii done 2026-08-16 by cloud shift 3: 28 buildings in `app/pompeiiDescriptions.ts`
