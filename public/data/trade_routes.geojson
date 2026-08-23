@@ -1240,6 +1240,119 @@
           "https://www.livius.org/articles/place/incense-route/"
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.883,
+            45.517
+          ],
+          [
+            4.836,
+            45.764
+          ],
+          [
+            6.644,
+            49.752
+          ],
+          [
+            6.957,
+            50.938
+          ]
+        ]
+      },
+      "properties": {
+        "id": "route_wine_gaul_rhine",
+        "name": "Gaul-Rhine wine route",
+        "commodity": "wine",
+        "direction": "Gallia Narbonensis -> Lugdunum -> Rhine legionary markets",
+        "notes": "By Trajan's reign Gaul had flipped from importing Italian wine to exporting its own: vineyards around Vienna and along the Rhone had matured into a major regional industry, shipped north by river barge through Lugdunum and on toward the Rhine frontier's legionary markets, where soldiers' pay and a captive garrison population made wine a dependable, high-volume trade. Amphora finds at Rhine forts as far north as Nijmegen and Xanten confirm wine reaching the frontier from multiple Mediterranean and Gallic sources at once, not from a single monopoly route. The Moselle valley's own famous vineyards around Trier, celebrated later by the poet Ausonius, were still generations away in 117 CE; this snapshot's Trier is a redistribution market on the supply road, not yet a wine-growing district itself.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Vienne,_Is%C3%A8re",
+          "https://www.academia.edu/31498553/Amphorae_from_the_Kops_Plateau_Nijmegen_trade_and_supply_to_the_Lower-Rhineland_from_the_Augustan_period_to_AD_69_70",
+          "https://en.wikipedia.org/wiki/Colonia_Claudia_Ara_Agrippinensium"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.883,
+          45.517
+        ]
+      },
+      "properties": {
+        "id": "node_wine_vienna",
+        "route": "Gaul-Rhine wine route",
+        "name": "Vienne",
+        "role": "Vienna, capital of the Allobroges before Rome and a colony after, sat on some of Gallia Narbonensis's best vine-growing slopes above the Rhone. Its wine had a strong enough reputation by the 1st century CE that Pliny the Elder singled it out by name among Gaul's best.",
+        "sources": [
+          "Plin. NH 14.18",
+          "https://en.wikipedia.org/wiki/Vienne,_Is%C3%A8re"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.836,
+          45.764
+        ]
+      },
+      "properties": {
+        "id": "node_wine_lugdunum",
+        "route": "Gaul-Rhine wine route",
+        "name": "Lyon",
+        "role": "Lugdunum, capital of Gallia Lugdunensis, sat at the Rhone and Saone's confluence, the hinge where southbound goods from the Mediterranean and northbound wine from Narbonensis both changed boats for the onward legs of their journeys. This node duplicates the city's own gazetteer entry elsewhere on the map; here it marks its role as the wine route's river hub.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Lugdunum"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.644,
+          49.752
+        ]
+      },
+      "properties": {
+        "id": "node_wine_augusta_treverorum",
+        "route": "Gaul-Rhine wine route",
+        "name": "Trier",
+        "role": "Augusta Treverorum, provincial capital of Gallia Belgica, stood on the Moselle a short haul from the Rhine and did brisk business redistributing wine to the frontier garrisons upriver. Its own famous Moselle vineyards, made legendary by Ausonius, belong to the following two centuries, not to 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Trier"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.957,
+          50.938
+        ]
+      },
+      "properties": {
+        "id": "node_wine_colonia_agrippina",
+        "route": "Gaul-Rhine wine route",
+        "name": "Cologne",
+        "role": "Colonia Claudia Ara Agrippinensium, capital of Germania Inferior and headquarters of its garrison, was the wine route's practical endpoint - a walled Rhine river port where wine, oil, and pottery from across the Mediterranean and Gaul alike reached the empire's most demanding captive market: its own soldiers.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Colonia_Claudia_Ara_Agrippinensium"
+        ]
+      }
     }
   ]
 }
