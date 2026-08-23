@@ -473,6 +473,149 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.5848,
+          37.702
+        ]
+      },
+      "properties": {
+        "id": "penal_rio_tinto",
+        "category": "penal_mine",
+        "name_latin": "Mons Marianus",
+        "name_english": "Rio Tinto Mines",
+        "province": "Baetica",
+        "modern_location": "Minas de Riotinto, Huelva, Spain",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Rome inherited a silver and copper deposit already worked for a thousand years by the time its legions reached Iberia, and turned the hills above the Rio Tinto — a river still stained blood-red by the ore running through it — into one of the largest mining operations anywhere in the empire. Thousands of workers cut galleries deep underground, many of them condemned criminals and slaves sentenced to hard labor rather than free miners, driven by overseers who expected the work to kill them. Waterwheels lifted drainage water out of shafts sunk far below the surface, a feat of engineering built to keep an operation this size running at all.",
+        "sources": [
+          "Pliny the Elder, Natural History 34.165",
+          "https://en.wikipedia.org/wiki/R%C3%ADo_Tinto_Mines"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P71012-115351%20ribera%20Rio%20Tinto%20(Huelva-Andaluc%C3%ADa.%20Spain).jpg?width=800",
+        "image_credit": "The Rio Tinto, stained by centuries of mineral runoff · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.76,
+          42.4589
+        ]
+      },
+      "properties": {
+        "id": "penal_las_medulas",
+        "category": "penal_mine",
+        "name_latin": "Ruina Montium",
+        "name_english": "Las Médulas",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Las Médulas, León, Spain",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Rome's largest open-pit gold mine anywhere in the empire tore apart an entire mountain range using nothing but water: over 300 kilometers of channels and aqueducts fed reservoirs cut high above the deposit, then released their flood in a single controlled burst to shatter the rock face and wash the gold-bearing gravel down to sluices below. Pliny the Elder, who governed this stretch of Spain as a procurator, called the technique ruina montium — the wrecking of mountains — and the eroded red spires it left standing still bear his description exactly. The operation employed thousands of workers, likely including condemned labor alongside the free miners and army detachments who ran it, and pulled an estimated five tons of gold a year out of the ground at its Trajanic-era peak.",
+        "sources": [
+          "Pliny the Elder, Natural History 33.66-78",
+          "https://en.wikipedia.org/wiki/Las_M%C3%A9dulas"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Panor%C3%A1mica%20de%20Las%20M%C3%A9dulas.jpg?width=800",
+        "image_credit": "The eroded red cliffs of Las Médulas, carved by Roman hydraulic mining · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.1303,
+          46.3061
+        ]
+      },
+      "properties": {
+        "id": "penal_alburnus_maior",
+        "category": "penal_mine",
+        "name_latin": "Alburnus Maior",
+        "name_english": "Roșia Montană",
+        "province": "Dacia",
+        "modern_location": "Roșia Montană, Alba County, Romania",
+        "built": 106,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Trajan annexed Dacia in 106 CE largely to seize exactly this: one of the richest gold deposits in the Roman world, worked so intensively that later miners rediscovering the site found entire Roman galleries still branching through the mountain. Colonists brought in from Illyria and Dalmatia, experienced miners rather than local Dacians, worked the veins under a detachment of Roman soldiers guarding the operation. Dozens of wax-coated wooden tablets recording labor contracts, loans and sale agreements survived buried in the abandoned galleries, giving historians an almost unmatched window into daily life at a Roman mining camp barely a decade into the province's existence.",
+        "sources": [
+          "CIL III, p. 924-959 (the Alburnus Maior wax tablets)",
+          "https://en.wikipedia.org/wiki/Ro%C8%99ia_Montan%C4%83"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rosia%20Montana%20Roman%20Gold%20Mines%202011%20-%20Galleries.jpg?width=800",
+        "image_credit": "Roman mining galleries at Roșia Montană, photographed 2011 · Wikimedia Commons (CC BY-SA 3.0 RO)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.9498,
+          52.0446
+        ]
+      },
+      "properties": {
+        "id": "penal_dolaucothi",
+        "category": "penal_mine",
+        "name_latin": "Dolaucothi",
+        "name_english": "Dolaucothi Gold Mines",
+        "province": "Britannia",
+        "modern_location": "Pumsaint, Carmarthenshire, Wales, United Kingdom",
+        "built": 75,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The only confirmed Roman gold mine in Britain sits in a remote Welsh valley, worked from around the 70s CE by a small garrison fort built at Pumsaint purely to guard it. Engineers cut a leat nearly 11 kilometers long to carry river water to the site, using the same hushing technique employed at Spain's much larger mines to strip soil and expose gold-bearing rock before working the veins underground with fire-setting and iron tools. A hoard of gold jewelry recovered nearby, likely smuggled out by a worker rather than officially issued, is one of the few direct traces of who actually labored here.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Dolaucothi_Gold_Mines",
+          "https://cadw.gov.wales/visit/places-to-visit/dolaucothi-gold-mines"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dolaucothi%20Gold%20Mine%20-%20geograph.org.uk%20-%2041481.jpg?width=800",
+        "image_credit": "Dolaucothi Gold Mine · Wikimedia Commons (geograph.org.uk)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1865,
+          53.2257
+        ]
+      },
+      "properties": {
+        "id": "penal_halkyn_mountain",
+        "category": "penal_mine",
+        "name_latin": "Mons Halkyn",
+        "name_english": "Halkyn Mountain",
+        "province": "Britannia",
+        "modern_location": "Halkyn, Flintshire, Wales, United Kingdom",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Rome moved fast on the lead deposits of north Wales, with military-stamped ingots from this ridge dated as early as the 70s CE — barely a generation after the conquest reached the area. Inscribed lead pigs found scattered across the region name specific companies and individual lessees who leased mining rights from the state, a rare direct trace of how Rome licensed private operators to extract a strategic metal used everywhere from water pipes to coffins. The lead here was valuable enough, and the silver traces within it profitable enough, that the mines kept working through the following two centuries of Roman rule in Britain.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Halkyn_Mountain",
+          "RIB 2404 (Roman lead pig inscriptions, north Wales)"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
