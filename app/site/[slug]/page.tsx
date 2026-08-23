@@ -118,6 +118,26 @@ export default function SitePage({ params }: { params: { slug: string } }) {
           {site.today}
         </p>
 
+        {site.excavation && site.excavation.length > 0 && (
+          <div style={{ margin: "0 0 36px" }}>
+            <h2 style={{ fontSize: 15, letterSpacing: "0.06em", textTransform: "uppercase", color: "#8a7a60", margin: "0 0 14px" }}>
+              Excavation history
+            </h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+              {site.excavation.map((e, i) => (
+                <div key={i} style={{ display: "flex", gap: 14 }}>
+                  <div style={{ flexShrink: 0, width: 92, fontSize: 13, fontWeight: 600, color: "#8a5a2b", paddingTop: 1 }}>
+                    {e.year}
+                  </div>
+                  <div style={{ fontSize: 15, lineHeight: 1.55 }}>
+                    <strong>{e.excavator}</strong> — {e.note}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         <a
           href={mapHref}
           style={{
