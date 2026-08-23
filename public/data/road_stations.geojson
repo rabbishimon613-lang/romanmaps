@@ -11260,6 +11260,336 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.283,
+          39.233
+        ]
+      },
+      "properties": {
+        "id": "station_ad_sorores",
+        "category": "mansio",
+        "name": "Ad Sorores",
+        "road": "Via de la Plata",
+        "distance_from_previous_mp": 26,
+        "identified": true,
+        "notes": "First overnight halt heading north out of Emerita Augusta on the road to Asturica, roughly where the modern village of Casas de Don Antonio now stands.",
+        "sources": [
+          "Itin. Ant. 434.1",
+          "https://digital.csic.es/handle/10261/16239"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3724,
+          39.4753
+        ]
+      },
+      "properties": {
+        "id": "station_castra_caecilia",
+        "category": "mansio",
+        "name": "Castra Caecilia",
+        "road": "Via de la Plata",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "A former Republican-era army camp on the Ribera del Marco springs, later a road station serving the site that grew into modern Caceres.",
+        "sources": [
+          "Itin. Ant. 434.2",
+          "https://pleiades.stoa.org/places/237885"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.55,
+          39.7
+        ]
+      },
+      "properties": {
+        "id": "station_turmulus",
+        "category": "mansio",
+        "name": "Turmulus",
+        "road": "Via de la Plata",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "Marked the crossing of the Tagus at Alconetar, where a Roman bridge carried the road over the river near modern Garrovillas de Alconetar.",
+        "sources": [
+          "Itin. Ant. 434.3",
+          "https://pleiades.stoa.org/places/237854"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.267,
+          39.983
+        ]
+      },
+      "properties": {
+        "id": "station_rusticiana",
+        "category": "mansio",
+        "name": "Rusticiana",
+        "road": "Via de la Plata",
+        "distance_from_previous_mp": 22,
+        "identified": true,
+        "notes": "A waystation on the plain north of the Tagus, generally placed at modern Galisteo, walled centuries later on the same defensible river bend.",
+        "sources": [
+          "Itin. Ant. 434.3"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.1025093,
+          40.1706877
+        ]
+      },
+      "properties": {
+        "id": "station_capara",
+        "category": "mansio",
+        "name": "Capara",
+        "road": "Via de la Plata",
+        "distance_from_previous_mp": 22,
+        "identified": true,
+        "notes": "A full Roman town, not just a waystation, with its own forum, baths and an amphitheater. Its four-faced arch still stands astride the old road between Guijo de Granadilla and Oliva de Plasencia, the best-preserved monument on the entire route.",
+        "sources": [
+          "Itin. Ant. 434.4",
+          "https://pleiades.stoa.org/places/237854"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arco%20de%20Caparra.jpg?width=800",
+        "image_credit": "Arch of Caparra, Extremadura · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.8578,
+          40.3176
+        ]
+      },
+      "properties": {
+        "id": "station_caecilius_vicus",
+        "category": "vicus",
+        "name": "Caecilius Vicus",
+        "road": "Via de la Plata",
+        "distance_from_previous_mp": 22,
+        "identified": true,
+        "notes": "A roadside settlement at the southern foot of the mountain pass into the Duero basin, on the site of the hot springs at modern Banos de Montemayor.",
+        "sources": [
+          "Itin. Ant. 434.4"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.8172,
+          40.4117
+        ]
+      },
+      "properties": {
+        "id": "station_ad_lippos",
+        "category": "mutatio",
+        "name": "Ad Lippos",
+        "road": "Via de la Plata",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "A short relay stage climbing through the Sierra de Bejar pass; no excavated remains confirm the exact spot, and the village of La Calzada de Bejar preserves only the road's name, not a proven station site.",
+        "sources": [
+          "Itin. Ant. 434.5"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7339,
+          40.5647
+        ]
+      },
+      "properties": {
+        "id": "station_sentice",
+        "category": "mansio",
+        "name": "Sentice",
+        "road": "Via de la Plata",
+        "distance_from_previous_mp": 15,
+        "identified": false,
+        "notes": "The highest point of the whole road between Emerita and Asturica, somewhere in the hills around modern Fuenterroble de Salvatierra. Archaeologists are still searching for its exact footprint.",
+        "sources": [
+          "Itin. Ant. 434.5"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.6635,
+          40.9701
+        ]
+      },
+      "properties": {
+        "id": "station_salmantica",
+        "category": "statio",
+        "name": "Salmantica",
+        "road": "Via de la Plata",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "A walled hilltop town on the Tormes, already old when Hannibal besieged it in 220 BCE. In 117 CE it is a working stop on the imperial road, not yet the university city its Roman bridge still carries traffic toward today.",
+        "sources": [
+          "Itin. Ant. 434.5"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7025,
+          41.0864
+        ]
+      },
+      "properties": {
+        "id": "station_sibarim",
+        "category": "mutatio",
+        "name": "Sibarim",
+        "road": "Via de la Plata",
+        "distance_from_previous_mp": 21,
+        "identified": false,
+        "notes": "Recorded as sitting almost exactly halfway between Salmantica and Ocelo Duri, in open country north of Salamanca near modern Calzada de Valdunciel, but with no confirmed archaeological footprint.",
+        "sources": [
+          "Itin. Ant. 434.5"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5892,
+          41.4944
+        ]
+      },
+      "properties": {
+        "id": "station_ocelo_duri",
+        "category": "mansio",
+        "name": "Ocelo Duri",
+        "road": "Via de la Plata",
+        "distance_from_previous_mp": 21,
+        "identified": true,
+        "notes": "Named for its position on the Duero, \"the Eye of the Duero,\" near where the Romans defeated the Lusitanian leader Viriathus. Excavated road remains survive near modern Villalazan, Zamora.",
+        "sources": [
+          "Itin. Ant. 434.6",
+          "https://en.wikipedia.org/wiki/Ocelum_Duri"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.39111,
+          41.52556
+        ]
+      },
+      "properties": {
+        "id": "station_albocela",
+        "category": "mansio",
+        "name": "Albocela",
+        "road": "Via de la Plata",
+        "distance_from_previous_mp": 11,
+        "identified": false,
+        "notes": "A Vaccaei-territory station on the Duero's north bank, generally but not conclusively placed under modern Toro; distance here is estimated from the road's known path rather than a surviving itinerary figure.",
+        "sources": [
+          "Itin. Ant. 434.6"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.267,
+          41.65
+        ]
+      },
+      "properties": {
+        "id": "station_amallobriga",
+        "category": "mansio",
+        "name": "Amallobriga",
+        "road": "Via de la Plata",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "A station on the open Tierra de Campos plain, tentatively placed near modern Tiedra though the identification is disputed among Spanish archaeologists; distance estimated from the road's known path.",
+        "sources": [
+          "Itin. Ant. 434.6"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7289,
+          42.0528
+        ]
+      },
+      "properties": {
+        "id": "station_brigaecium",
+        "category": "mansio",
+        "name": "Brigaecium",
+        "road": "Via de la Plata",
+        "distance_from_previous_mp": 40,
+        "identified": true,
+        "notes": "An Astures-territory town on the last stretch before Asturica Augusta, independently recorded as 40 Roman miles from that city. Its remains sit at the Penon de Villabrazaro, near Benavente.",
+        "sources": [
+          "Itin. Ant. 434.6",
+          "https://oppidum.es/oppidum-11-pdf/opp11.05_martino_apuntes.sobre.brigaecium.de.los.astures.pdf"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
