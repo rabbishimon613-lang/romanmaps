@@ -523,7 +523,7 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
 
 ## New ideas spotted this shift (2026-08-24, cloud shift — Djemila/Volubilis, theme toggle)
 
-- [ ] **HIGH VALUE / invariant-1.5 violation: all 545 `/place/[slug]` pages are titled with the
+- [ ] **HIGH VALUE / invariant-1.5 violation: all 576 `/place/[slug]` pages are titled with the
   LATIN name, not the English one.** `app/place/[slug]/page.tsx` lines 109 and 140 both read
   `p.name_latin || p.name_english`, so the Colosseum's page is titled *"Amphitheatrum Flavium —
   Roman Maps"*, Paestum's Temple of Neptune is *"Templum Neptuni"*, and the English name is demoted
@@ -534,11 +534,12 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
   titles, the JSON-LD `name`, and the "nearby places" list at line 304 — i.e. every string Google
   indexes and every string a shared link previews with. Nobody searches "Amphitheatrum Flavium".
   **Not fixed this shift on purpose**: flipping the fallback order is a two-line change, but it
-  rewrites 545 already-indexed page titles at once and deserves a considered pass with the SEO
+  rewrites 576 already-indexed page titles at once and deserves a considered pass with the SEO
   side thought through (`SEO-LOG.md` should probably record the change), plus a decision on whether
   the Latin name moves into the subtitle slot or into the body — not something to land in a
   shift's last stretch. Discovered while spot-checking this shift's own new pages in the build
   output; the behavior is long-standing and site-wide, not introduced by any recent data.
+  **This is the recommended next pick for whoever reads this next.**
 
 - [ ] **`next/script`'s `beforeInteractive` strategy does not run before first paint in this
   Next 14 app-router setup** — worth knowing before anyone reaches for it again. Implementing the
@@ -574,13 +575,26 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
   ~25 Legio II Traiana Fortis funerary stelae in Alexandria's Graeco-Roman Museum, published in
   academic PDFs with DAI photo credits, none of them Commons-hosted. A fourth pass along the same
   lines is unlikely to pay; treat these two as closed unless someone uploads to Commons.
+- [ ] **Image coverage on the Jerash/Trier batches (later same shift): 9 of 31 shipped with no
+  `image_url`** (5 of 16 Jerash — the city walls, both gates, the necropolis, the Temple of
+  Dionysos; 4 of 15 Trier — the two bridge phases, the Trier-Cologne road, the city wall and the
+  Ruwer aqueduct). Same "real gap, not exhausted" shape — Jerash and Trier are both
+  heavily-photographed sites, so a fresh search budget aimed at their Commons categories directly
+  should close most of this, same approach flagged for the Djemila gap above.
+- [ ] **11 of `sites.ts`'s zero-`pois.geojson`-coverage sites remain** after this shift closed
+  Djemila, Volubilis, Jerash and Trier: Leptis Magna, Sabratha, Italica, Tivoli, Palestrina, Cumae,
+  Capua, Brescia, Milan, Rimini, Luni. Same shape, pick one or two per shift — and brief the
+  research prompt with the exact category vocabulary from `app/categoryLife.ts` up front (see the
+  10-off-vocabulary-categories fix logged in SHIFT_LOG this shift — it happened because that step
+  got skipped for the first two sites and caught only by `npm run metrics`, not the validator).
 
 ## Shipped (moved from above; newest on top)
 
 - 2026-08-24 — a cloud shift: Appearance / theme toggle (System / Light / Dark in the
-  hamburger menu, live map + chrome repaint, no reload, persisted). Djemila (13) and
-  Volubilis (12) curated landmark POIs — two more zero-coverage `sites.ts` sites closed.
-  Ancient-sources batch 9 (3 POIs) and the legionary-fortress image gap down to 2 of 28.
+  hamburger menu, live map + chrome repaint, no reload, persisted). Djemila (13), Volubilis (12),
+  Jerash (16) and Trier (15) curated landmark POIs — four more zero-coverage `sites.ts` sites
+  closed, 11 remain. Ancient-sources batch 9 (3 POIs) and the legionary-fortress image gap down
+  to 2 of 28.
 - 2026-08-22 — a cloud shift: Entrance welcome screen (board `[10-P1-4]`) — one sentence, three
   doors (guided tour / browse nearby / just explore), dismissible, once per browser. Water
   infrastructure top-up (axis 3f, +21 features: 6 bridges, 3 dams, 3 cisterns, 1 watermill, 1

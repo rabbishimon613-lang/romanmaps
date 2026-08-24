@@ -17255,6 +17255,1003 @@
         "image_credit": "The Arch of Caracalla, Volubilis · Wikimedia Commons",
         "ancient_sources": []
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.8898,
+          32.277
+        ]
+      },
+      "properties": {
+        "id": "poi_gerasa_sanctuary_zeus_olympios",
+        "category": "sanctuary",
+        "name_latin": "Hieron Dios Olympiou",
+        "name_english": "Sanctuary of Zeus Olympios",
+        "province": "Arabia Petraea",
+        "modern_location": "Jerash, Jordan",
+        "built": 27,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Gerasa's oldest monumental sanctuary spread over a lower terrace 100 by 50 metres, laid out in 27/28 CE by a local architect who cut his own name into the stone. Caravan merchants paid for the work, and the vaulted substructures swallowed an older Hellenistic shrine whole. In 117 CE this terrace and its first-century naos crowned the hill above the theatre. The towering peripteral temple that replaced the shrine came 45 years later.",
+        "sources": [
+          "https://universes.art/en/art-destinations/jordan/jerash/zeus-sanctuary",
+          "https://madainproject.com/sanctuary_of_zeus_olympios_in_gerasa",
+          "https://www.archnet.org/sites/14886"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zeus_temple_back_view.jpg?width=800",
+        "image_credit": "Temple of Zeus, Jerash · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": [
+          {
+            "author": "Anonymous",
+            "work": "Greek dedicatory inscription of the lower terrace, Sanctuary of Zeus, Gerasa",
+            "ref": "dated 27/28 CE",
+            "note": "Records the enclosure of the sanctuary under Diodoros son of Zebedas, an architect of Gerasa."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.889,
+          32.2766
+        ]
+      },
+      "properties": {
+        "id": "poi_gerasa_south_theatre",
+        "category": "theater",
+        "name_latin": "Theatrum Meridionale Gerasae",
+        "name_english": "South Theatre",
+        "province": "Arabia Petraea",
+        "modern_location": "Jerash, Jordan",
+        "built": 91,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Domitian's governor of Syria dedicated this 3,000-seat theatre in 91/92 CE, and the donors who paid for it had their names carved straight into the seating. Greek numbering still marks the ringside blocks, and two vaulted passages funnelled crowds beneath the tiers. In 117 CE Gerasenes packed it, eleven years after Rome annexed Arabia. Trajan and Hadrian later dressed up the stage wall with Corinthian columns.",
+        "sources": [
+          "https://universes.art/en/art-destinations/jordan/jerash/south-theatre",
+          "https://www.archnet.org/sites/19788",
+          "https://pleiades.stoa.org/places/276676983"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jerash_South_Theatre_0788.jpg?width=800",
+        "image_credit": "South Theatre, Jerash · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": [
+          {
+            "author": "Anonymous",
+            "work": "Greek dedicatory inscription of the South Theatre, Gerasa",
+            "ref": "year 154 of the local era, 91/92 CE",
+            "note": "Dedicates the theatre to Domitian by order of the legate Lappius Maximus."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.8874,
+          32.2812
+        ]
+      },
+      "properties": {
+        "id": "poi_gerasa_city_walls",
+        "category": "wall",
+        "name_latin": "Muri Gerasae",
+        "name_english": "City Walls of Gerasa",
+        "province": "Arabia Petraea",
+        "modern_location": "Jerash, Jordan",
+        "built": 76,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "An inscription on the northwest gate recorded these walls complete in 75/76 CE, a circuit of about 3.5 kilometres looping around both banks of the Chrysorhoas. Roughly 120 towers studded the line, and the masons ran it straight across abandoned quarries and rock-cut tombs. In 117 CE the circuit already fixed limits Gerasa never outgrew. Later emperors thickened and patched it, but the Flavian trace held.",
+        "sources": [
+          "https://universes.art/en/art-destinations/jordan/jerash",
+          "https://deadseaquake.info/EarthquakeCatalogOfTheDeadSea/Sites/Archaeo/JerashCityWalls.html",
+          "https://en.wikipedia.org/wiki/Jerash"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Josephus",
+            "work": "Jewish War",
+            "ref": "4.9.1",
+            "note": "Records a Roman force under Lucius Annius storming Gerasa in 68 CE, shortly before the walls were finished."
+          },
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "5.74",
+            "note": "Lists Gerasa among the cities of the Decapolis."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.8929,
+          32.2857
+        ]
+      },
+      "properties": {
+        "id": "poi_gerasa_north_gate",
+        "category": "gate",
+        "name_latin": "Porta Septentrionalis Gerasae",
+        "name_english": "North Gate",
+        "province": "Arabia Petraea",
+        "modern_location": "Jerash, Jordan",
+        "built": 115,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A dedicatory inscription of 115 CE hails Trajan as founder and saviour of the city, dating this gate two years before the emperor died. Its builders gave it a trapezoidal plan, wedging the road in from the northwest so it lined up dead straight with the Cardo. In 117 CE it was the newest monument in Gerasa and the main entrance from Pella. The trick of the skewed walls stays invisible until you stand inside the passage.",
+        "sources": [
+          "https://universes.art/en/art-destinations/jordan/jerash/the-north",
+          "https://magazine.travel/en/urlaub/asien/jordanien/jerash/nordtor-jerash/",
+          "https://www.worldhistory.org/image/9354/the-north-gate-jerash/"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Anonymous",
+            "work": "Greek dedicatory inscription of the North Gate, Gerasa",
+            "ref": "dated 115 CE",
+            "note": "Names Trajan as founder and saviour of the city."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.8917,
+          32.282
+        ]
+      },
+      "properties": {
+        "id": "poi_gerasa_cardo_maximus",
+        "category": "road",
+        "name_latin": "Cardo Maximus Gerasae",
+        "name_english": "Cardo Maximus",
+        "province": "Arabia Petraea",
+        "modern_location": "Jerash, Jordan",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Gerasa's spine ran some 800 metres from the oval plaza to the north gate, colonnaded in the late first century CE with Ionic shafts. Chariot ruts still score paving laid at a diagonal to grip iron-shod wheels, and manholes along the kerb drop into a sewer running the full length. In 117 CE shoppers walked the Ionic version. The taller Corinthian colonnade and the widening of the roadway both came later in the second century.",
+        "sources": [
+          "https://www.archnet.org/sites/19784",
+          "https://universes.art/en/art-destinations/jordan/jerash/cardo-decumanus",
+          "https://en.wikipedia.org/wiki/Jerash"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jerash_-_Cardo_maximus_01.jpg?width=800",
+        "image_credit": "Cardo maximus, Jerash · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.8912,
+          32.269
+        ]
+      },
+      "properties": {
+        "id": "poi_gerasa_southern_necropolis",
+        "category": "necropolis",
+        "name_latin": "Necropolis Meridionalis Gerasae",
+        "name_english": "Southern Necropolis",
+        "province": "Arabia Petraea",
+        "modern_location": "Jerash, Jordan",
+        "built": -50,
+        "destroyed": 135,
+        "extant_117ce": true,
+        "notes": "Gerasa buried its dead beyond the south gate along the road to Philadelphia, sinking shaft tombs into worked-out limestone quarries. The cemetery stretched more than a mile and held intact skeletons, skull-less burials and cremated bone in the same ground. In 117 CE it was still in daily use. Hadrian's builders closed quarry and necropolis together in the 130s and drove new foundations through the tomb chambers.",
+        "sources": [
+          "https://www.ascs.org.au/news/ascs32/Kehrberg.pdf",
+          "https://jordantimes.com/news/local/archaeological-findings-gerasas-hippodrome-shed-light-roman-occupation",
+          "https://static.ngu.no/upload/publikasjoner/Special%20publication/SP12_s67-75.pdf"
+        ],
+        "confidence": "medium",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.8896,
+          32.2772
+        ]
+      },
+      "properties": {
+        "id": "poi_gerasa_temple_zeus_upper",
+        "category": "temple",
+        "name_latin": "Templum Iovis Olympii",
+        "name_english": "Temple of Zeus Olympios",
+        "province": "Arabia Petraea",
+        "modern_location": "Jerash, Jordan",
+        "built": 162,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The great peripteral temple on the upper terrace was inaugurated in 162/163 CE, reached by a grand staircase cut into the west face of the older terrace below. Columns nearly 15 metres tall fronted a chamber that stared straight down at the oval plaza. This building postdates the 117 CE snapshot by some 45 years, when the hilltop still carried only the first-century sanctuary. An earthquake later dropped its drums in neat rows where they lie today.",
+        "sources": [
+          "https://universes.art/en/art-destinations/jordan/jerash/zeus-sanctuary",
+          "https://madainproject.com/sanctuary_of_zeus_olympios_in_gerasa",
+          "https://deadseaquake.info/EarthquakeCatalogOfTheDeadSea/Sites/Archaeo/JerashTempleOfZeus.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Temple_of_Zeus,_Jerash,_14_August_2013.jpg?width=800",
+        "image_credit": "The Temple of Zeus, Jerash · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": [
+          {
+            "author": "Anonymous",
+            "work": "Greek building inscription of the Temple of Zeus, Gerasa",
+            "ref": "dated 162/163 CE",
+            "note": "Marks the inauguration of the rebuilt temple on the upper terrace."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.8904,
+          32.2779
+        ]
+      },
+      "properties": {
+        "id": "poi_gerasa_oval_plaza",
+        "category": "forum",
+        "name_latin": "Forum Ovale Gerasae",
+        "name_english": "Oval Plaza",
+        "province": "Arabia Petraea",
+        "modern_location": "Jerash, Jordan",
+        "built": 125,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Gerasa's showpiece piazza measured about 90 by 80 metres and swung an oval colonnade between the Cardo's grid and the skewed axis of the Zeus sanctuary. Engineers filled a deep hollow between two hills to flatten the ground. The plaza belongs to the great early second-century rebuilding around Hadrian's visit, so it postdates the 117 CE snapshot. Its paving curves in concentric rings toward a central pedestal.",
+        "sources": [
+          "https://universes.art/en/art-destinations/jordan/jerash/oval-plaza",
+          "https://www.archnet.org/sites/19683",
+          "https://vici.org/vici/21605/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Oval_plaza_in_Jerash.jpg?width=800",
+        "image_credit": "Oval Plaza, Jerash · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.8908,
+          32.2719
+        ]
+      },
+      "properties": {
+        "id": "poi_gerasa_arch_of_hadrian",
+        "category": "arch",
+        "name_latin": "Arcus Hadriani",
+        "name_english": "Arch of Hadrian",
+        "province": "Arabia Petraea",
+        "modern_location": "Jerash, Jordan",
+        "built": 129,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The city raised this triple arch in 129/130 CE for Hadrian's winter visit, 37 metres wide and 21 metres tall. Its Greek inscription counts the year 192 of the local era and names Flavius Agrippa as the man who willed it. Acanthus wreaths bulge from the column bases, a local flourish found nowhere in Italy. It postdates the 117 CE snapshot by twelve years and stood half a kilometre outside the walls, waiting for a city that never grew to meet it.",
+        "sources": [
+          "https://www.judaism-and-rome.org/arch-hadrian-gerasa-129-130-ce",
+          "https://www.judaism-and-rome.org/inscription-arch-hadrian-gerasa",
+          "https://universes.art/en/art-destinations/jordan/jerash/hadrians-arch"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arch_of_Hadrian._Jerash,_Jordan_06.JPG?width=800",
+        "image_credit": "Arch of Hadrian, Jerash · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": [
+          {
+            "author": "Anonymous",
+            "work": "Greek dedicatory inscription of the Arch of Hadrian, Gerasa",
+            "ref": "year 192 of the local era, 129/130 CE",
+            "note": "Dedicated by the city of the Antiochenes on the Chrysorhoas, formerly the Gerasenes, for Hadrian's safety."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.8905,
+          32.2757
+        ]
+      },
+      "properties": {
+        "id": "poi_gerasa_south_gate",
+        "category": "gate",
+        "name_latin": "Porta Meridionalis Gerasae",
+        "name_english": "South Gate",
+        "province": "Arabia Petraea",
+        "modern_location": "Jerash, Jordan",
+        "built": 130,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Gerasa's southern entrance copied the acanthus-wreathed column bases of Hadrian's arch downhill and went up around 130 CE, fifteen years after the north gate. A single arched passage pierced the wall and fed traffic straight into the oval plaza. It postdates the 117 CE snapshot. Olive presses later crowded the ground just inside the threshold, turning the ceremonial entry into a working yard.",
+        "sources": [
+          "https://universes.art/en/art-destinations/jordan/jerash",
+          "https://madainproject.com/archaeological_site_of_ancient_gerasa",
+          "https://en.wikipedia.org/wiki/Jerash"
+        ],
+        "confidence": "medium",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.8889,
+          32.282
+        ]
+      },
+      "properties": {
+        "id": "poi_gerasa_temple_artemis",
+        "category": "temple",
+        "name_latin": "Templum Artemidis",
+        "name_english": "Temple of Artemis",
+        "province": "Arabia Petraea",
+        "modern_location": "Jerash, Jordan",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Gerasa's largest temple honoured the city's patron goddess and rose between 150 and 170 CE on a huge artificial terrace. Twelve Corinthian columns front the ruin, and eleven still stand; slide a blade into a drum joint and you can watch the shafts rock in the wind. Only twelve of the thirty-two planned columns were ever raised. The whole complex postdates the 117 CE snapshot by more than three decades.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Artemis,_Jerash",
+          "https://universes.art/en/art-destinations/jordan/jerash/artemis-sanctuary",
+          "https://www.archnet.org/sites/14885"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jerash_-_The_Temple_of_Artemis.JPG?width=800",
+        "image_credit": "The Temple of Artemis, Jerash · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.8907,
+          32.2818
+        ]
+      },
+      "properties": {
+        "id": "poi_gerasa_propylaea_artemis",
+        "category": "monument",
+        "name_latin": "Propylaea Artemisii",
+        "name_english": "Propylaea of the Sanctuary of Artemis",
+        "province": "Arabia Petraea",
+        "modern_location": "Jerash, Jordan",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A dedicatory inscription dates this monumental gateway to 150 CE under the governor Attidius Cornelianus. Three doorways opened off the Cardo onto a stair of seven flights of seven steps that climbed to the goddess's terrace. The processional route behind it ran more than 400 metres back from a bridge over the wadi. It postdates the 117 CE snapshot by a generation, and its carved door frames still stand nearly full height.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Artemis,_Jerash",
+          "https://universes.art/en/art-destinations/jordan/jerash/artemis-sanctuary",
+          "https://www.archnet.org/sites/14885"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruins_of_Jerash_(Gerasa)._Gateway_to_Temple_of_Artemis._Reverse_view_of_preceeding_subject_(triple_gateway)_across_main_avenue._LOC_matpc.02748.jpg?width=800",
+        "image_credit": "Gateway to the Temple of Artemis, Jerash · Wikimedia Commons (public domain)",
+        "ancient_sources": [
+          {
+            "author": "Anonymous",
+            "work": "Greek dedicatory inscription of the Artemis propylaea, Gerasa",
+            "ref": "dated 150 CE",
+            "note": "Names Attidius Cornelianus, legate under Antoninus Pius, as patron of the gateway."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.8895,
+          32.283
+        ]
+      },
+      "properties": {
+        "id": "poi_gerasa_north_theatre",
+        "category": "theater",
+        "name_latin": "Odeum Gerasae",
+        "name_english": "North Theatre",
+        "province": "Arabia Petraea",
+        "modern_location": "Jerash, Jordan",
+        "built": 135,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Gerasa's council met here from about 135 CE in a roofed chamber whose lower seats carry Greek inscriptions naming the city's voting tribes. Builders converted it into an odeon for music and recitation in 165 CE, then enlarged it again in 235. Every phase, the original council house included, postdates the 117 CE snapshot. Carved theatrical masks and acanthus from the collapsed stage wall still litter the orchestra floor.",
+        "sources": [
+          "https://universes.art/en/art-destinations/jordan/jerash/north-theater",
+          "https://www.persee.fr/doc/topoi_1161-9473_2005_num_12_1_2013",
+          "https://madainproject.com/archaeological_site_of_ancient_gerasa"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jerash_carved_detail_at_the_North_theatre.jpg?width=800",
+        "image_credit": "Carved detail, North Theatre, Jerash · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": [
+          {
+            "author": "Anonymous",
+            "work": "Greek architrave inscription of the North Theatre, Gerasa",
+            "ref": "late second century CE",
+            "note": "Names the building an odeon and ran along the stage front."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.8908,
+          32.2814
+        ]
+      },
+      "properties": {
+        "id": "poi_gerasa_nymphaeum",
+        "category": "fountain",
+        "name_latin": "Nymphaeum Gerasae",
+        "name_english": "Nymphaeum",
+        "province": "Arabia Petraea",
+        "modern_location": "Jerash, Jordan",
+        "built": 191,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Gerasa finished this grand public fountain in 191 CE at the city's own expense, a two-storey facade with a half-domed apse opening onto the Cardo. Water spilled from seven carved lion heads into a basin at street level. Marble sheathed the lower storey and painted stucco covered the upper, traces of which survive. It postdates the 117 CE snapshot by 74 years, and the half-dome still holds its scalloped shell carving.",
+        "sources": [
+          "https://universes.art/en/art-destinations/jordan/jerash/nymphaeum",
+          "https://jerash.visitjordan.com/en/Site/77",
+          "https://www.lonelyplanet.com/jordan/jerash-and-the-north/jerash/attractions/nymphaeum/a/poi-sig/1442858/361072"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jerash_Nymphaeum.jpg?width=800",
+        "image_credit": "Nymphaeum, Jerash · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": [
+          {
+            "author": "Anonymous",
+            "work": "Greek dedicatory inscription of the Nymphaeum, Gerasa",
+            "ref": "dated 191 CE",
+            "note": "Names the city itself as the body that commissioned the fountain."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.8906,
+          32.2735
+        ]
+      },
+      "properties": {
+        "id": "poi_gerasa_hippodrome",
+        "category": "circus",
+        "name_latin": "Circus Gerasae",
+        "name_english": "Hippodrome",
+        "province": "Arabia Petraea",
+        "modern_location": "Jerash, Jordan",
+        "built": 160,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Gerasa's circus was the smallest in the Roman world, a track 245 metres long by 52 wide holding about 15,000 spectators. Work began around the middle of the second century and finished before 212 CE, so it postdates the 117 CE snapshot by decades. Its foundations cut straight through the rock-cut tombs of the earlier necropolis. By the late third century potters had moved in and were mass-producing pottery between the starting gates.",
+        "sources": [
+          "https://universes.art/en/art-destinations/jordan/jerash/hippodrome",
+          "https://jerash.visitjordan.com/en/Site/8",
+          "https://jordantimes.com/news/local/archaeological-findings-gerasas-hippodrome-shed-light-roman-occupation"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jerash_Hippodrome_0690.jpg?width=800",
+        "image_credit": "Hippodrome, Jerash · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.8901,
+          32.281
+        ]
+      },
+      "properties": {
+        "id": "poi_gerasa_temple_dionysos",
+        "category": "temple",
+        "name_latin": "Templum Dionysi",
+        "name_english": "Temple of Dionysos",
+        "province": "Arabia Petraea",
+        "modern_location": "Jerash, Jordan",
+        "built": 150,
+        "destroyed": 375,
+        "extant_117ce": false,
+        "notes": "A Roman temple to Dionysos crowned this terrace above the Cardo from the mid-second century CE, taking over a spot sacred to the Nabataean god Dushara. Christians cut it down to the podium in the fourth century and reused its columns in the basilica now called the Cathedral. The temple postdates the 117 CE snapshot; in 117 the Nabataean shrine still held the ground. A triple-arched gateway on the Cardo marks the old approach.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Jerash_Cathedral",
+          "https://www.livius.org/articles/place/gerasa-jerash/",
+          "https://madainproject.com/archaeological_site_of_ancient_gerasa"
+        ],
+        "confidence": "medium",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6398,
+          49.7527
+        ]
+      },
+      "properties": {
+        "id": "poi_treveri_forum",
+        "category": "forum",
+        "name_latin": "Forum Augustae Treverorum",
+        "name_english": "Forum of Augusta Treverorum",
+        "province": "Gallia Belgica",
+        "modern_location": "Trier, Germany",
+        "built": 30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The forum spread 275 by 135 meters across three city blocks, one of the largest public squares north of the Alps. Traders from the Moselle, the Rhine and inner Gaul struck deals under its porticoes while the procurator governing three provinces worked alongside. A modest Augustan square grew into this monumental market by the end of the first century, so anyone crossing it in 117 CE walked a finished forum. Fourth-century emperors rebuilt it yet again.",
+        "sources": [
+          "https://www.livius.org/articles/place/augusta-treverorum-trier/trier-photos/trier-forum/",
+          "https://en.wikipedia.org/wiki/Augusta_Treverorum"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Augusta_Treverorum_Stadtplan.png?width=800",
+        "image_credit": "Plan of Roman Trier showing the forum insulae · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6137,
+          49.75
+        ]
+      },
+      "properties": {
+        "id": "poi_treveri_lenus_mars_sanctuary",
+        "category": "sanctuary",
+        "name_latin": "Templum Lenus Martis",
+        "name_english": "Sanctuary of Lenus Mars",
+        "province": "Gallia Belgica",
+        "modern_location": "Trier, Germany",
+        "built": 50,
+        "destroyed": 400,
+        "extant_117ce": true,
+        "notes": "The Treveri worshipped their healing war-god Lenus Mars on the west bank of the Moselle, on a terrace fed by a spring that drew pilgrims from across Gallia Belgica. A walled precinct with two cult buildings already stood here in the first century CE, so visitors in 117 found the sanctuary busy. Parents dedicated small statues of hooded children in hope of cures. The grand 28 by 32 meter temple and its semicircular cult theater arrived later, in the second century.",
+        "sources": [
+          "https://de.wikipedia.org/wiki/Tempelbezirk_Irminenwingert",
+          "https://vici.org/vici/5714/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trier_Tempelbezirk_Irminenwingert_2024_01.jpg?width=800",
+        "image_credit": "Site of the Lenus Mars temple precinct at Irminenwingert, Trier · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6421,
+          49.7456
+        ]
+      },
+      "properties": {
+        "id": "poi_treveri_altbachtal_precinct",
+        "category": "sanctuary",
+        "name_latin": "Altbachtal Temple Precinct",
+        "name_english": "Altbachtal Temple Precinct",
+        "province": "Gallia Belgica",
+        "modern_location": "Trier, Germany",
+        "built": 50,
+        "destroyed": 400,
+        "extant_117ce": true,
+        "notes": "More than 5 hectares of the Altbach valley held dozens of small shrines packed shoulder to shoulder, the densest cult site in Roman Trier. Treveran deities such as Ritona and Aveta kept their own temples with courtyards laid out for ritual banquets and offerings. Worship ran here from the first century CE for some three hundred years, so pilgrims in 117 already climbed these slopes. Excavators in the 1920s lifted a relief of Mithras being born from the rock out of the rubble.",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q1450967",
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Daugusta-treverorum"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trier_Gelaende_ehemaliger_Tempelbezirk_Altbachtal_BW_2.jpg?width=800",
+        "image_credit": "Grounds of the former Altbachtal temple precinct, Trier · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6301,
+          49.7526
+        ]
+      },
+      "properties": {
+        "id": "poi_treveri_pons_mosellae_flavius",
+        "category": "bridge",
+        "name_latin": "Pons Mosellae",
+        "name_english": "Flavian Bridge over the Moselle",
+        "province": "Gallia Belgica",
+        "modern_location": "Trier, Germany",
+        "built": 71,
+        "destroyed": 144,
+        "extant_117ce": true,
+        "notes": "Engineers drove fresh oak into the Moselle in 71 CE, replacing the crossing of 17 BCE whose timbers effectively founded the city. Tree-ring dating pinned the new piles to that single year. The deck carried the great highway from Lyon to Cologne straight toward the forum, and it was still the working river crossing under Trajan in 117 CE. Builders replaced it a third and final time with basalt piers in the 140s.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_Bridge_(Trier)",
+          "https://www.livius.org/articles/place/augusta-treverorum-trier/trier-photos/trier-bridge/"
+        ],
+        "confidence": "medium",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6443,
+          49.7615
+        ]
+      },
+      "properties": {
+        "id": "poi_treveri_via_agrippa_colonia",
+        "category": "road",
+        "name_latin": "Via Agrippa",
+        "name_english": "Roman Road from Trier to Cologne",
+        "province": "Gallia Belgica",
+        "modern_location": "Trier, Germany",
+        "built": -20,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Agrippa's surveyors laid this highway as part of the network radiating from Lyon, and the Trier to Cologne leg ran 147 kilometers, counted locally as 66 Gallic leagues. It entered Augusta Treverorum from the north and fed straight into the Moselle bridge and the forum. Wine, Treveran cloth and army pay moved along it, and it carried heavy traffic under Trajan in 117 CE. A century later the Porta Nigra rose astride its city entrance.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_road_from_Trier_to_Cologne",
+          "https://en.wikipedia.org/wiki/Via_Agrippa"
+        ],
+        "confidence": "medium",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6299,
+          49.7524
+        ]
+      },
+      "properties": {
+        "id": "poi_treveri_roman_bridge",
+        "category": "bridge",
+        "name_latin": "Pons Mosellae",
+        "name_english": "Roman Bridge of Trier",
+        "province": "Gallia Belgica",
+        "modern_location": "Trier, Germany",
+        "built": 144,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Seven basalt piers still carry road traffic across the Moselle, quarried from Eifel volcano rock and pointed upstream to split ice floes. Masons raised them between about 144 and 152 CE, the third bridge on the spot and the only one that lasted. It postdates the 117 CE snapshot: under Trajan the crossing was the timber bridge of 71 CE. The piers have stood for more than 1,800 years, the oldest bridge structure in Germany.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_Bridge_(Trier)",
+          "https://www.livius.org/articles/place/augusta-treverorum-trier/trier-photos/trier-bridge/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roemerbruecke_trier.jpg?width=800",
+        "image_credit": "Roman bridge over the Moselle at Trier · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6492,
+          49.7481
+        ]
+      },
+      "properties": {
+        "id": "poi_treveri_amphitheater",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum Augustae Treverorum",
+        "name_english": "Trier Amphitheater",
+        "province": "Gallia Belgica",
+        "modern_location": "Trier, Germany",
+        "built": 170,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The stone arena seated roughly 18,000 and was cut into the Petrisberg slope so the hillside itself carried the seating banks. A vaulted cellar under the sand hoisted animals and fighters up through trapdoors. Older guidebooks assign it to 100 CE, but the masonry building went up in the later second century and postdates the 117 CE snapshot. A timber arena of the later first century occupied the site before it, and Trajan's citizens used that one.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Trier_Amphitheater",
+          "https://www.academia.edu/2042880/The_Trier_Amphitheatre_An_Ancient_Monument_in_the_Light_of_New_Research"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amphitheatre_Trier_1.JPG?width=800",
+        "image_credit": "Roman amphitheatre at Trier · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.644,
+          49.7597
+        ]
+      },
+      "properties": {
+        "id": "poi_treveri_porta_nigra",
+        "category": "gate",
+        "name_latin": "Porta Nigra",
+        "name_english": "Porta Nigra",
+        "province": "Gallia Belgica",
+        "modern_location": "Trier, Germany",
+        "built": 170,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Some 7,200 sandstone blocks, the heaviest around six tonnes, were stacked without a drop of mortar and locked together with iron clamps. The gate rose about 170 CE as the northern entrance of the new city wall, so it postdates the 117 CE snapshot by half a century. Rusting clamps and weathering blackened the pale stone and earned it its medieval name. A Greek hermit later walled himself inside it, which is why demolition crews spared it.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Porta_Nigra",
+          "https://www.livius.org/articles/place/augusta-treverorum-trier/trier-photos/trier-porta-nigra/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trier_Porta_Nigra_BW_1.JPG?width=800",
+        "image_credit": "Porta Nigra, Trier · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6483,
+          49.752
+        ]
+      },
+      "properties": {
+        "id": "poi_treveri_city_wall",
+        "category": "wall",
+        "name_latin": "Murus Augustae Treverorum",
+        "name_english": "City Wall of Augusta Treverorum",
+        "province": "Gallia Belgica",
+        "modern_location": "Trier, Germany",
+        "built": 170,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Builders under Marcus Aurelius ringed the city with 6.4 kilometers of wall pierced by four main gates and studded with towers. The circuit postdates the 117 CE snapshot: under Trajan, Augusta Treverorum was a rich open town with no defences whatsoever. The line swallowed the amphitheatre, whose outer wall was drafted in as a bastion. Later generations quarried most of it away, leaving only buried footings and the Porta Nigra.",
+        "sources": [
+          "https://www.livius.org/articles/place/augusta-treverorum-trier/",
+          "https://www.romeartlover.it/Trier.html"
+        ],
+        "confidence": "medium",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6335,
+          49.7519
+        ]
+      },
+      "properties": {
+        "id": "poi_treveri_barbara_baths",
+        "category": "bathhouse",
+        "name_latin": "Thermae Barbarae",
+        "name_english": "Barbara Baths",
+        "province": "Gallia Belgica",
+        "modern_location": "Trier, Germany",
+        "built": 150,
+        "destroyed": 450,
+        "extant_117ce": false,
+        "notes": "The Barbara Baths covered 42,000 square meters, ranking behind only the great imperial baths of Rome itself. Bathers moved between heated halls above a labyrinth of service tunnels tall enough to walk through upright. Construction fell in the second half of the second century, so the complex postdates the 117 CE snapshot. Stone robbers stripped the ruins for centuries until only the substructures survived.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Barbara_Baths",
+          "https://www.moselleromans.com/barbarabaths"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trier_Barbarathermen.jpg?width=800",
+        "image_credit": "Barbara Baths, Trier · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7386,
+          49.7351
+        ]
+      },
+      "properties": {
+        "id": "poi_treveri_ruwer_aqueduct",
+        "category": "aqueduct",
+        "name_latin": "Ruwer Aqueduct",
+        "name_english": "Ruwer Aqueduct",
+        "province": "Gallia Belgica",
+        "modern_location": "Trier, Germany",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A channel almost 13 kilometers long tapped the Ruwer river and pushed up to 25,000 cubic meters of water a day into the city's baths and fountains. Masons lined it with waterproof opus signinum and vaulted it over a duct barely 78 centimeters wide. It belongs to the second century and postdates the 117 CE snapshot, built to feed the huge new bathhouses. Trajan's Trier still drew on wells and the river.",
+        "sources": [
+          "http://www.romanaqueducts.info/aquasite/trier/index.html",
+          "https://en.wikipedia.org/wiki/Augusta_Treverorum"
+        ],
+        "confidence": "medium",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6452,
+          49.7505
+        ]
+      },
+      "properties": {
+        "id": "poi_treveri_circus",
+        "category": "circus",
+        "name_latin": "Circus Augustae Treverorum",
+        "name_english": "Circus of Trier",
+        "province": "Gallia Belgica",
+        "modern_location": "Trier, Germany",
+        "built": 130,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The circus stretched roughly 450 meters, long enough for chariot teams to grind out seven laps before crowds banked on the embankments. It took monumental form in the second quarter of the second century, so the building that spectators would recognise postdates the 117 CE snapshot. A plainer racetrack may have marked the same ground from the city's earliest years. Constantius Chlorus rebuilt the whole thing after 293 to serve his imperial residence.",
+        "sources": [
+          "https://www.livius.org/articles/place/augusta-treverorum-trier/trier-photos/trier-circus/",
+          "https://vici.org/vici/17731/"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2018_Trier,_scale_model_Roman_city_-_circus_%26_amphitheatre.jpg?width=800",
+        "image_credit": "Scale model of Roman Trier showing circus and amphitheatre · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.544,
+          49.706
+        ]
+      },
+      "properties": {
+        "id": "poi_treveri_igel_column",
+        "category": "tomb",
+        "name_latin": "Monumentum Secundinorum",
+        "name_english": "Igel Column",
+        "province": "Gallia Belgica",
+        "modern_location": "Trier, Germany",
+        "built": 250,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The Secundinii, a family grown rich on cloth, raised this 23 meter sandstone pillar over their tomb around 250 CE, well after the 117 CE snapshot. Reliefs on all four faces show them settling accounts with tax officials, hauling bales of fabric and dining in state, with Jupiter carrying off Ganymede at the summit. It remains the tallest Roman funerary monument standing north of the Alps. Villagers called it a wedding stone, and that legend spared it.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Igel_Column",
+          "https://www.trier-info.de/en/places-of-interest/the-igel-column"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Igeler_S%C3%A4ule_(23).jpg?width=800",
+        "image_credit": "Igel Column, funerary monument of the Secundinii · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6422,
+          49.7497
+        ]
+      },
+      "properties": {
+        "id": "poi_treveri_imperial_baths",
+        "category": "bathhouse",
+        "name_latin": "Thermae Imperiales",
+        "name_english": "Imperial Baths of Trier",
+        "province": "Gallia Belgica",
+        "modern_location": "Trier, Germany",
+        "built": 300,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Constantius Chlorus began these baths for his new imperial residence at the end of the third century, and work halted around 316 CE with the complex never finished as a bathhouse. The caldarium apses still rise 19 meters, and service tunnels run beneath the entire site like a second city. They postdate the 117 CE snapshot by nearly two centuries. Later builders converted the unfinished shell into barracks and then into a city gate.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Trier_Imperial_Baths",
+          "https://www.historyhit.com/locations/imperial-baths-of-trier/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trier_Kaiserthermen_BW_1.JPG?width=800",
+        "image_credit": "Imperial Baths, Trier · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.643,
+          49.7551
+        ]
+      },
+      "properties": {
+        "id": "poi_treveri_aula_palatina",
+        "category": "basilica",
+        "name_latin": "Aula Palatina",
+        "name_english": "Basilica of Constantine",
+        "province": "Gallia Belgica",
+        "modern_location": "Trier, Germany",
+        "built": 310,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Constantine's throne hall ran 67 meters long and 33 meters high inside, roofed in a single clear span with no columns breaking the floor. Hot air circulated under the pavement and inside the walls to warm the whole volume while the emperor received petitioners in the apse. Built about 310 CE, it postdates the 117 CE snapshot by two full centuries. The bare brick surfaces hide the fact that marble and mosaic once covered every inch.",
+        "sources": [
+          "https://www.kuladig.de/Objektansicht/O-94148-20140612-17",
+          "https://www.livius.org/articles/place/augusta-treverorum-trier/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trier_Konstantinbasilika_BW_1.JPG?width=800",
+        "image_credit": "Konstantinbasilika, Trier · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": []
+      }
     }
   ]
 }

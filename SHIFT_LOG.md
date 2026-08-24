@@ -36,9 +36,10 @@ claimed as exact 1:2:1 compliance.
 
 ### Track A — Djemila and Volubilis: first curated `pois.geojson` coverage
 
-Two more of the 16 zero-coverage `sites.ts` sites closed, taking Shift 54's list from 14 to 12
-(Leptis Magna, Sabratha, Jerash, Trier, Italica, Tivoli, Palestrina, Cumae, Capua, Brescia, Milan,
-Rimini, Luni remain — minus whichever this shift's later batch closes). 25 features total.
+Two of Shift 54's 14-name remaining list closed. This shift closed two more later in the same
+session (Jerash and Trier — see their own section below), so the list is now down to 11:
+Leptis Magna, Sabratha, Italica, Tivoli, Palestrina, Cumae, Capua, Brescia, Milan, Rimini, Luni.
+25 features total from this first batch.
 
 **Djemila** (13 features, Numidia, veteran colony founded 96 CE under Nerva): only **3** are
 correctly `extant_117ce: true` — the original polygonal defensive circuit, the Old Forum, and the
@@ -101,6 +102,41 @@ Alexandria's Graeco-Roman Museum, published in academic PDFs with DAI photo cred
 Commons-hosted. A candidate for Melitene was found and **rejected** rather than used: the only
 Roman-adjacent Commons file for Battalgazi depicts the Bronze/Iron Age Arslantepe mound, a
 different site and era from the 72 CE legionary fortress.
+
+### Track A — Jerash and Trier: two more zero-coverage sites closed
+
+Second curated-coverage batch this shift, closing 2 more of Shift 54's list (now 11 remain: Leptis
+Magna, Sabratha, Italica, Tivoli, Palestrina, Cumae, Capua, Brescia, Milan, Rimini, Luni).
+31 features total, both research passes primed with the exact allowed category vocabulary this
+time — no repeat of the invented-category fix above.
+
+**Jerash** (ancient Gerasa, 16 features, Arabia Petraea, annexed only 106 CE): a genuine 6/10
+true/false split with unusually strong epigraphic backing — Gerasa's building inscriptions are
+exceptionally well preserved and several entries carry a real in-situ dedicatory text as their
+`ancient_sources`, not a forced literary citation. The **North Gate**'s own inscription is dated
+115 CE and names Trajan directly as founder and saviour of the city, two years before his death —
+about as tight an anchor to this map's snapshot as a POI gets. The **South Theatre** (91/92 CE,
+dedicated to Domitian by the governor of Syria, donors' names cut straight into the seating), the
+first-century **Sanctuary of Zeus Olympios** lower terrace, the **city walls** (75/76 CE, ~3.5km
+circuit), the **Cardo Maximus**'s original Ionic colonnade, and the still-active **Southern
+Necropolis** round out the `true` set. The famous **Temple of Artemis**, **Oval Plaza**, **Arch of
+Hadrian**, upper **Temple of Zeus**, **Nymphaeum**, **hippodrome**, and both later theatres are all
+correctly `false` — Gerasa's postcard skyline is overwhelmingly Hadrianic-and-later, exactly the
+trap the research brief warned about, and the pass held the line rather than reaching for round
+numbers.
+
+**Trier** (ancient Augusta Treverorum, 15 features, Gallia Belgica, founded ~16 BCE): a 5/10 split
+that is the correct shape for a city whose monumental glory is Tetrarchic, two centuries past this
+snapshot. `false`, correctly: **Porta Nigra** (~170 CE), the **Imperial Baths** and **Basilica of
+Constantine** (both early 4th c.), the **Igel Column** (~250 CE), the amphitheatre, city wall, and
+circus (all 2nd-century Antonine). The `true` side required real digging past the postcard
+monuments: the Augustan-era forum, the first-century **Sanctuary of Lenus Mars** and **Altbachtal
+temple precinct** (both Treveran cult sites with an early phase predating their later monumental
+rebuilding), the Augustan **Trier–Cologne road** (part of Agrippa's network), and — the one
+genuinely non-obvious find — a **71 CE timber bridge** over the Moselle, tree-ring dated, that
+was the working river crossing under Trajan. The famous stone-pier bridge everyone photographs
+today is the *third* bridge on the same site, built 144 CE; both are logged as separate records
+with the phase distinction stated plainly rather than collapsed into one ambiguous entry.
 
 ### Fix — 10 off-vocabulary categories, caught by metrics and corrected same-shift
 
@@ -176,6 +212,36 @@ at 375×812. Screenshots at 1280×900 and 375×812 in both schemes; phone contro
 (search pill, layers button, one corner FAB, epoch pill, credit chip), per invariant 0. One
 incidental cleanup: `applyStoredTheme()` was written as a React-side backstop, then found redundant
 once the head script worked, and deleted rather than left as an unused export.
+
+### State, verification, next
+
+`npm run validate`: 0 errors, 17 warnings, identical set to Shift 54's own — no new warnings from
+either POI batch. `npm run build`: clean at every push (five separate commits, five clean pre-push
+gates), 664 static pages at the final count (up from 620). `npm run metrics --write`: 520→576 POIs,
+image coverage 60.8%→61.1%, ancient-source coverage of confidence:high POIs 73.2%→70.0% (down —
+the four new-site batches added real, research-honest `image_url`/`ancient_sources: null` gaps
+faster than this shift's smaller ancient-sources/fortress-image batches closed them, an expected
+shape when a shift leans add-heavy), "what happened here" category coverage held at 100% after the
+same-shift category-vocabulary fix, curated places total crossed 2,050 (2,056). Five commits, each pushed after a clean `git fetch origin main` (no divergence
+at any point this shift — no other worker touched `main` during this session) and a clean pre-push
+build gate.
+
+**Next shift**: the zero-`pois.geojson`-coverage list is now 11 (Leptis Magna, Sabratha, Italica,
+Tivoli, Palestrina, Cumae, Capua, Brescia, Milan, Rimini, Luni) — same well-bounded shape, pick one
+or two per shift, and brief the research prompt with the exact allowed category vocabulary from
+`app/categoryLife.ts` up front (this shift's own fix exists because that step got skipped once).
+The recommended **next pick overall** is the invariant-1.5 violation logged above and in
+`FEATURE_BACKLOG.md`: every `/place/[slug]` page titles itself in Latin
+(`name_latin || name_english`), which is backwards per the map's own display-name rule and costs
+real SEO/share-preview value across all 576 pages — a two-line fix that deserves a considered pass
+with an `SEO-LOG.md` entry, not a rushed one. `[09-P0-1]` ancient-sources is at diminishing returns
+(the pool is now almost entirely tombs/villas/shipwrecks without a real ancient source, ~3-in-15
+hit rate the last two batches running); the fortress-image gap is functionally closed at 2/28
+(Melitene, Nicopolis) after three search passes with different angles. The board's large P0
+refactors (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]`
+terrain, `[13-P0-2]` image-audit) remain the standing next pick for whichever shift gets either a
+network-unblocked environment or a dedicated multi-pass budget large enough to see one through in
+one sitting — none of that changed this shift.
 
 ---
 
