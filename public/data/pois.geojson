@@ -16545,7 +16545,7 @@
       },
       "properties": {
         "id": "poi_cuicul_walls",
-        "category": "civic",
+        "category": "wall",
         "name_latin": "Moenia Cuiculi",
         "name_english": "Ramparts of Cuicul",
         "province": "Numidia",
@@ -16715,7 +16715,7 @@
       },
       "properties": {
         "id": "poi_cuicul_great_baths",
-        "category": "bath",
+        "category": "bathhouse",
         "name_latin": "Thermae Maiores Cuiculi",
         "name_english": "Great Baths of Cuicul",
         "province": "Numidia",
@@ -16889,7 +16889,7 @@
       },
       "properties": {
         "id": "poi_cuicul_house_europa",
-        "category": "domus",
+        "category": "house",
         "name_latin": "Domus Europae",
         "name_english": "House of Europa",
         "province": "Numidia",
@@ -16947,7 +16947,7 @@
       },
       "properties": {
         "id": "poi_volubilis_flavian_baths",
-        "category": "bath",
+        "category": "bathhouse",
         "name_latin": "Flavian Baths",
         "name_english": "Flavian Baths of Volubilis",
         "province": "Mauretania Tingitana",
@@ -16975,7 +16975,7 @@
       },
       "properties": {
         "id": "poi_volubilis_house_of_orpheus",
-        "category": "domus",
+        "category": "house",
         "name_latin": "Domus Orphei",
         "name_english": "House of Orpheus",
         "province": "Mauretania Tingitana",
@@ -17005,7 +17005,7 @@
       },
       "properties": {
         "id": "poi_volubilis_house_of_venus",
-        "category": "domus",
+        "category": "house",
         "name_latin": "Domus Veneris",
         "name_english": "House of Venus",
         "province": "Mauretania Tingitana",
@@ -17033,7 +17033,7 @@
       },
       "properties": {
         "id": "poi_volubilis_decumanus_maximus",
-        "category": "civic",
+        "category": "road",
         "name_latin": "Decumanus Maximus",
         "name_english": "Decumanus Maximus of Volubilis",
         "province": "Mauretania Tingitana",
@@ -17063,7 +17063,7 @@
       },
       "properties": {
         "id": "poi_volubilis_edict_of_claudius_stela",
-        "category": "other",
+        "category": "monument",
         "name_latin": "Edictum Claudii de Civitate Volubilitanorum",
         "name_english": "Edict of Claudius Stela",
         "province": "Mauretania Tingitana",
@@ -17121,7 +17121,7 @@
       },
       "properties": {
         "id": "poi_volubilis_city_walls",
-        "category": "civic",
+        "category": "wall",
         "name_latin": "Murus Volubilitanus",
         "name_english": "City Walls of Volubilis",
         "province": "Mauretania Tingitana",
@@ -17149,7 +17149,7 @@
       },
       "properties": {
         "id": "poi_volubilis_tangier_gate",
-        "category": "civic",
+        "category": "gate",
         "name_latin": "Porta Septentrionalis",
         "name_english": "Tangier Gate",
         "province": "Mauretania Tingitana",
