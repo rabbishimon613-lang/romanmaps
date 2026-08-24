@@ -429,9 +429,29 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
   committing by diffing first, per the standing habit those earlier shifts already established,
   but worth restating pointedly: **check the target file's actual indent width before any
   programmatic JSON rewrite, every time, not just for files touched for the first time.**
-- [ ] **Axis 7's 7b (sailing seasons/mare clausum) and 7c (named winds/currents) are still
-  untouched** — Shift 50 already flagged this as open, still true. WebSearch-only, no Overpass
-  or direct-fetch dependency.
+- [x] **Axis 7's 7b (sailing seasons/mare clausum) and 7c (named winds/currents) are still
+  untouched** — resolved: 7b/7c shipped 2026-08-24 (cloud shift, `wind_currents.geojson` +
+  `SailingSeason.tsx`) and 7d (wild fauna sourcing) shipped the same day by the next shift
+  (`fauna_sourcing.geojson`). Axis 7 is now fully closed against `SHIFT_BRIEF.md`'s own named
+  list for the first time.
+
+## New ideas spotted this shift (2026-08-24, cloud shift — axis 7d/ancient-sources/images)
+
+- [ ] **`[09-P0-1]` ancient-sources' remaining ~67-POI pool is now dominated by tombs, villas,
+  shipwrecks, and industrial sites where a real ancient source is genuinely unlikely to exist** —
+  batch 7 (this shift) confirmed the pattern batches 5/6 already found: 11 of 15 researched
+  candidates came back honestly unsourced. Two near-misses caught and rejected before merging
+  (an Aulus Gellius passage about the neighboring Forum offered for Trajan's Markets; a Temple-
+  of-Augustus inscription at Pula misattributed to the neighboring amphitheatre) — worth reading
+  before trusting a fresh search hit on a POI a prior batch already checked, same lesson batch 6
+  already logged. Diminishing returns without a new source class; `[09-P1-4]` epigraphy is
+  already standing and has already absorbed the inscription-bearing wins this pool had.
+- [ ] **Image coverage for `confidence: high` POIs isn't tracked by `npm run metrics`** — only
+  overall image coverage (53.5%→57.1% this shift) is. A direct query against `pois.geojson`
+  found 67 confidence:high POIs with no `image_url` at shift start (now 49 after an 18-POI
+  batch); the 28 `poi_fortress_*` legionary-fortress records are the largest untried single
+  cluster left. Worth adding a confidence:high image-coverage row to `scripts/metrics.mjs`'s
+  output so this doesn't need re-deriving by hand each time.
 
 ## Shipped (moved from above; newest on top)
 

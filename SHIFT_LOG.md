@@ -7,6 +7,127 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 53 — 2026-08-24 (this shift's own prompt claimed "Shift 2 of four")
+
+Same stale-numbering mismatch every shift since #13 has flagged — SHIFT_LOG was 52 real shifts
+deep at session start, not 1. Session started `HEAD` detached at Shift 52's own final commit
+(`d80b343`) with local `main` diverged from `origin/main` (50/50 different commits — a stale
+tracking ref from container image build, not real conflicting work); `git reset --hard
+origin/main` synced it, same benign race every recent shift has documented, no work at risk.
+Re-confirmed the standing network finding independently: `curl` to `overpass-api.de`,
+`commons.wikimedia.org`, `en.wikipedia.org`, and `pleiades.stoa.org` all return `CONNECT tunnel
+failed, response 403` from the agent proxy. `WebSearch` stayed reachable throughout and was the
+only research channel this shift. Unlike most recent shifts, this session **could** run `npm
+run dev` + Playwright against a real Chromium install (`/opt/pw-browsers`) for live UI
+verification — used it below rather than skipping the visual gate.
+
+### Board check
+
+Read `BOARD.md`'s claiming protocol. No `[~]` claims standing. The unclaimed tickets are the
+same large P0 refactors recent shifts have correctly declined (`[12-P0-1]` merge-themes,
+`[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terrain, `[13-P0-2]` image-audit,
+`[02-P0-4]`'s still-open glyph-PBF half). Picked up Shift 52's own handoff notes instead — axis
+7d (wild fauna sourcing, the one still-untouched axis-7 sub-item) and the standing `[09-P0-1]`
+ancient-sources ticket — plus a third pick, the standing `[13-P1-4]`-adjacent image-coverage gap
+(67 confidence:high POIs had no image at all), all research-only and no-Overpass. No claim
+commit needed for standing/axis work, same precedent recent shifts have documented. Ratio this
+shift: 1 `add` (fauna_sourcing.geojson) + 2 `deepen` (ancient-sources, image top-up) — matches
+the board's own 1:2:1 ratio even though none of the three is a claimed board ticket.
+
+### Track A — Axis 7d: wild fauna sourcing for arena games
+
+New `public/data/fauna_sourcing.geojson`: 8 source-region points that supplied exotic animals
+for Roman venationes, each with a real ancient-source citation — Mauretanian elephants (Pliny,
+*NH* 8.1; a Veii mosaic shows one being loaded onto a ship), Numidian lions (Pliny *NH* 8.17;
+Sulla's 100 and Caesar's 400), Cilician panthers (Cicero's own *Ad Familiares* letters begging
+Caelius Rufus to ship him some, the most detailed procurement paper-trail in Roman literature),
+Indian tigers via Parthian middlemen (Pliny *NH* 8.65, Augustus's *Res Gestae* 31), Caledonian
+bears (Martial's Laureolus epigram from the Colosseum's 80 CE opening games — the strongest
+single citation in the set), Nile hippos/crocodiles/rhinos (Pliny *NH* 8.96, Cassius Dio
+51.22/55.10), Garamantian ostriches (Herodotus 4.183, Pliny *NH* 10.1), and Nubian
+giraffes/rhinos (Cassius Dio 43.23, on Caesar's 46 BCE triumph). Every point ships a verified
+Commons image (Zliten and Piazza Armerina mosaics, the Nile mosaic of Palestrina, a Nennig
+gladiator mosaic). 8 dashed route LineStrings converge each source on the Colosseum — the one
+amphitheatre every citation can actually be tied to as still standing and hosting games in 117
+CE (Circus Maximus and the pre-Colosseum venues these events originally happened at are noted in
+the prose, not drawn as separate destinations, to keep the layer readable). One researched
+candidate — Dalmatian bears — came back from the research pass with no real ancient citation,
+only modern secondary claims, and was dropped rather than invented; Pliny's own "Numidian bears"
+crux (zoologically odd, textually real) was considered as a replacement but left out to keep the
+set to citations with an unambiguous geographic match. Wired as a new "Arena animal sourcing"
+layer group (`Map.tsx` Phase 34, `useLayers.ts`), default OFF per invariant 0, same lazy-load-
+on-toggle pattern as every other thematic overlay. Also added `wind_currents.geojson` (shipped
+last shift without one) to `validate.mjs`'s `PROFILES` map, so it gets the same "themed" schema
+checks as every other axis file instead of silently falling back to the looser structural
+profile — passed clean with no new warnings.
+
+Verified live, not just by code review: `npm run validate` (0 errors, same 17 warnings), `npm
+run build` (597 static pages), and a real `next dev` + Playwright pass — confirmed the fauna
+source/layers genuinely don't exist until the Layers panel toggle is switched on (invariant 0,
+checked programmatically, not assumed), then render correctly (dashed lines converging on Rome,
+point markers at each source region) with zero console errors at 1280×900 light and 375×812
+dark.
+
+### Track A — `[09-P0-1]` ancient-sources: 4 more high-confidence POIs
+
+Standing ticket, continued from Shift 52's 71-POI gap. Delegated a themed batch of 15 candidates
+(bridges, amphitheatres, famous tombs, Trajan's Markets, Baalbek's Temple of Bacchus) to a
+background research pass with explicit instructions to re-verify past batches' documented
+mistakes rather than repeat them. 4 came back real: Cecilia Metella's tomb (CIL VI 1274, the
+inscription naming her that has identified the tomb since antiquity), the Fabrician Bridge
+(CIL I² 751 / CIL VI 1305, carved four times on the bridge itself, Rome's oldest surviving
+bridge), the Bridge of Augustus at Narni (Martial, *Ep.* 7.93, a passing but genuine reference),
+and Pont Flavien (CIL XII 647 — the research pass flagged a conflicting catalogue number against
+CIL XII 654, resolved with an independent follow-up search before merging). 11 of 15 came back
+honestly unsourced, two of them near-misses the research explicitly caught and rejected before
+they became this project's next wrong-neighbor citation: an Aulus Gellius passage about Trajan's
+*Forum* offered for the separate Markets complex, and a Temple-of-Augustus inscription at Pula
+misattributed to the neighboring amphitheatre. Gap now 67 confidence:high POIs (71→67).
+
+### Track A — image top-up: 18 flagship POIs
+
+`npm run metrics` doesn't track image coverage per confidence tier, but a direct query found 67
+confidence:high POIs shipping with no `image_url` at all — several of them famous monuments any
+visitor would expect a photo for (Basilica Julia, Basilica Aemilia, Trajan's Forum, the
+Mausoleum of Augustus, the Lighthouse of Alexandria, four separate Pompeii buildings). Delegated
+a themed batch of 20 to a background research pass with the same real-Commons-filename-only
+standard `[09-P0-1]` uses. 18 of 20 came back with a confirmed file: mostly modern photos of the
+surviving ruins, but several genuine period pieces — a Prosper Morey watercolor of Trajan's
+Forum, an 1804-11 reconstruction engraving of the Mausoleum of Augustus, Philip Galle's 1572
+engraving of the Lighthouse of Alexandria (nothing later exists; the structure itself is gone),
+and a Luigi Bazzani watercolor of the Stabian Baths' changing room. Misenum's naval base — no
+standalone image of the harbor exists — got the Piscina Mirabilis cistern that supplied its
+fleet, honestly credited as the adjacent structure rather than passed off as the base itself. 2
+of 20 dropped rather than force a weak fit: the Regia's only confirmed Commons file is a
+19th-century locator map, not an image of the building, and the Baths of Titus only turned up an
+unconfirmed floor plan.
+
+### State, verification, next
+
+`npm run validate`: 0 errors, 17 warnings, identical set to Shift 52's (no new warnings from
+either the new axis file or the two pois.geojson batches — image_url and ancient_sources syntax
+both checked clean). `npm run build`: clean, 597 static pages, at every commit this shift.
+Spot-checked the built static `/place/` output directly for a handful of the new images (Trajan's
+Forum, Basilica Julia, Vindolanda, Tomb of Herod, Alexandria Pharos) — credit line renders
+correctly on all five. `npm run metrics --write`: image coverage 53.5%→57.1% (266→284/497);
+ancient-source coverage of confidence:high POIs 71.4%→73.0% (177→181/248); thematic files
+30→31. Three commits, each pushed with a clean `git pull --rebase` first and a clean pre-push
+build gate.
+
+**Next shift**: `[09-P0-1]`'s gap is 67 confidence:high POIs — the pool is now almost entirely
+tombs, villas, shipwrecks, and industrial sites where a real ancient source is genuinely
+unlikely to exist; expect diminishing returns without opening a new source class (inscriptions
+already covered by `[09-P1-4]`, standing). The image-coverage gap (confidence:high POIs with no
+`image_url`) was 67 at shift start, now 49 — a direct query (not `npm run metrics`, which
+doesn't track this split) is the fastest way to find the next batch; the 28 legionary-fortress
+POIs (`poi_fortress_*`) are the largest remaining single cluster and mostly untried. Axis 7 is
+now fully closed against the brief's own named list (7a agriculture, 7b sailing seasons, 7c
+winds/Nile, 7d fauna sourcing) for the first time. The board's large P0 refactors remain the
+standing next pick for whichever shift first gets a network-unblocked environment or dedicated
+multi-pass budget.
+
+---
+
 ## Shift 52 — 2026-08-24 (this shift's own prompt claimed "Shift 1 of four")
 
 Same stale-numbering mismatch every shift since #13 has flagged — SHIFT_LOG was 51 real shifts
