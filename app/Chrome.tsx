@@ -14,6 +14,7 @@ import { useKeyboardShortcuts } from "./useKeyboardShortcuts";
 import EpochModal from "./EpochModal";
 import Entrance from "./Entrance";
 import CurrencyConverter from "./CurrencyConverter";
+import SailingSeason from "./SailingSeason";
 import { useOnboardingHint } from "./useOnboardingHint";
 import { useEntrance } from "./useEntrance";
 import { activateRuler } from "./useRuler";
@@ -498,6 +499,7 @@ export default function Chrome() {
           )}
 
           <CurrencyConverter />
+          <SailingSeason />
         </div>
       )}
       </div>

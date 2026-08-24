@@ -1,0 +1,145 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [25.45, 37.05] },
+   "properties": {
+    "id": "wind_etesian",
+    "name": "The Etesian winds",
+    "type": "wind",
+    "one_line": "Every summer the Etesians blew hard out of the north across the Aegean for about thirty days after the Dog Star's rising, cooling the islands and pushing grain ships toward Alexandria while making the return voyage a slow fight upwind. Pliny the Elder tracked their onset almost to the day. Captains built entire sailing schedules around when they would start and stop.",
+    "province": "Achaea",
+    "modern_location": "Aegean Sea, Greece",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Etesian_winds",
+     "https://www.attalus.org/pliny/hn2b.html"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Graffito%20depicting%20large%20merchant%20ship%20House%20of%20the%20Ship%20Europa%20Pompeii.jpg?width=800",
+    "image_credit": "Roman-era graffito of a merchant ship, House of the Ship Europa, Pompeii · Wikimedia Commons",
+    "image_alt": "Ancient graffito outline of a large Roman merchant sailing ship"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [16.5, 42.0] },
+   "properties": {
+    "id": "wind_aquilo",
+    "name": "Aquilo",
+    "type": "wind",
+    "one_line": "Aquilo, the sharp northeast wind, brought snow to the mountains and was one of the two or three winds a Mediterranean sailor genuinely feared at sea. Horace's farewell poem for Vergil begs Aeolus to lock every wind away except one favorable breeze, naming Aquilo among the dangers a safe crossing had to dodge. Pliny the Elder rated the north winds the healthiest to breathe on land and the roughest to sail through.",
+    "province": "Italia",
+    "modern_location": "Adriatic Sea",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Classical_compass_winds",
+     "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0024:book=1:poem=3"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Graffito%20depicting%20large%20merchant%20ship%20House%20of%20the%20Ship%20Europa%20Pompeii.jpg?width=800",
+    "image_credit": "Roman-era graffito of a merchant ship, House of the Ship Europa, Pompeii · Wikimedia Commons",
+    "image_alt": "Ancient graffito outline of a large Roman merchant sailing ship"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [12.5, 37.3] },
+   "properties": {
+    "id": "wind_auster_africus",
+    "name": "Auster and Africus",
+    "type": "wind",
+    "one_line": "Auster, the south wind, blew hot and wet and Pliny the Elder called it actively harmful to health; its southwesterly neighbor Africus, named for the coast it came from, could wreck a fleet outright. Horace pictured the two racing headlong against the north wind in open water, exactly the kind of contest no ship wanted to be caught in. Both winds meant one thing to a captain: stay in harbor.",
+    "province": "Sicilia",
+    "modern_location": "Strait of Sicily",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Classical_compass_winds",
+     "https://www.attalus.org/pliny/hn2b.html"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Graffito%20depicting%20large%20merchant%20ship%20House%20of%20the%20Ship%20Europa%20Pompeii.jpg?width=800",
+    "image_credit": "Roman-era graffito of a merchant ship, House of the Ship Europa, Pompeii · Wikimedia Commons",
+    "image_alt": "Ancient graffito outline of a large Roman merchant sailing ship"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [12.25, 41.75] },
+   "properties": {
+    "id": "wind_favonius",
+    "name": "Favonius",
+    "type": "wind",
+    "one_line": "Favonius, the gentle west wind, was expected around the eighth of February on the Roman calendar — the traditional signal that winter's grip was finally breaking. Farmers pruned their vines the day it arrived, and captains who had kept their ships pulled up on the beach all winter started loading cargo again. Its return was, in practice, what reopened the Mediterranean sailing season each year.",
+    "province": "Italia",
+    "modern_location": "Ostia, Italy",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Favonius",
+     "https://www.attalus.org/pliny/hn2b.html"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Graffito%20depicting%20large%20merchant%20ship%20House%20of%20the%20Ship%20Europa%20Pompeii.jpg?width=800",
+    "image_credit": "Roman-era graffito of a merchant ship, House of the Ship Europa, Pompeii · Wikimedia Commons",
+    "image_alt": "Ancient graffito outline of a large Roman merchant sailing ship"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [17.95, 40.63] },
+   "properties": {
+    "id": "wind_iapyx",
+    "name": "Iapyx",
+    "type": "wind",
+    "one_line": "Iapyx blew out of Apulia toward Greece — the one wind a captain leaving Brundisium actually wanted at his back. Horace names it directly as the single breeze Aeolus should leave unbound for Vergil's safe crossing to Athens, locking every other wind away. Merchants, officials and legions bound for the eastern provinces all used it to cut straight across the Adriatic instead of hugging the coast.",
+    "province": "Italia",
+    "modern_location": "Brundisium (Brindisi), Italy",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Iapyx",
+     "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0024:book=1:poem=3"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Graffito%20depicting%20large%20merchant%20ship%20House%20of%20the%20Ship%20Europa%20Pompeii.jpg?width=800",
+    "image_credit": "Roman-era graffito of a merchant ship, House of the Ship Europa, Pompeii · Wikimedia Commons",
+    "image_alt": "Ancient graffito outline of a large Roman merchant sailing ship"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [32.885, 24.09] },
+   "properties": {
+    "id": "wind_nile_flood",
+    "name": "The Nile flood",
+    "type": "flood",
+    "one_line": "Every summer, right on schedule, the Nile rose and drowned its own floodplain in silt-rich water — the single event Egypt's whole economy and tax year were built around. Pliny the Elder recorded the flood's expected height in cubits, measured against nilometers like the one carved into the rock on Elephantine Island. A poor flood meant famine; a good one filled the grain fleet that fed Rome.",
+    "province": "Aegyptus",
+    "modern_location": "Aswan, Egypt",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Flooding_of_the_Nile",
+     "https://en.wikipedia.org/wiki/Nilometer"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Assuan%20Elephantine%20Nilometer%2017.JPG?width=800",
+    "image_credit": "The nilometer on Elephantine Island, Aswan · Wikimedia Commons",
+    "image_alt": "Stone steps of the ancient nilometer on Elephantine Island, used to measure the Nile's annual flood height"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [23.7269, 37.9742] },
+   "properties": {
+    "id": "wind_tower_of_the_winds",
+    "name": "Tower of the Winds",
+    "type": "monument",
+    "one_line": "Andronicus of Cyrrhus built this octagonal marble tower in the Athens Agora with a different wind god carved in relief on each of its eight faces and a bronze Triton weathervane on the roof that once swiveled to point straight at whichever one was blowing. Vitruvius held it up as the model for laying out a city's streets against the real eight-point wind rose instead of a crude four-point compass. By 117 CE it was already close to two centuries old and still working as weathervane and water clock both.",
+    "province": "Achaea",
+    "modern_location": "Roman Agora, Athens, Greece",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Tower_of_the_Winds",
+     "https://lexundria.com/vitr/1.6/gw"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Horologion%20of%20Andronikos%20Kyrrhestes%20(Tower%20of%20the%20Winds)%20in%20the%20Roman%20Agora%20of%20Athens.jpg?width=800",
+    "image_credit": "The Tower of the Winds, Roman Agora, Athens · Wikimedia Commons",
+    "image_alt": "The octagonal marble Tower of the Winds in the Roman Agora of Athens"
+   }
+  }
+ ]
+}

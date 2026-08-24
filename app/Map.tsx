@@ -10,6 +10,7 @@ import { selectProvince, clearProvince, subscribeSelectedProvince } from "./useP
 import { PROVINCES } from "./provinces";
 import { isRulerActive } from "./useRuler";
 import { isDirectionsActive } from "./useDirections";
+import { applyStoredSailingSeason } from "./useSailingSeason";
 import { motionDuration } from "./reducedMotion";
 import { ostiaEntry } from "./ostiaDescriptions";
 import { pompeiiEntry } from "./pompeiiDescriptions";
@@ -124,6 +125,7 @@ type Palette = {
   seaLabel: string;
   coastline: string;
   provinceHighlight: string;
+  winterSea: string;
 };
 const LIGHT: Palette = {
   sea: "#a9d1e3",
@@ -141,6 +143,7 @@ const LIGHT: Palette = {
   seaLabel: "#4a7797",
   coastline: "#6b9cb5",
   provinceHighlight: "#b0431a",
+  winterSea: "#7c848c",
 };
 const DARK: Palette = {
   sea: "#0f2233",
@@ -158,6 +161,7 @@ const DARK: Palette = {
   seaLabel: "#6fa3c4",
   coastline: "#4a7a95",
   provinceHighlight: "#e0692f",
+  winterSea: "#4a4d50",
 };
 
 // Shoelace-formula ring area in raw lng/lat degrees squared — not a real physical area (no
@@ -419,6 +423,23 @@ export default function Map() {
               source: "ancient-sea",
               paint: { "fill-color": P.sea },
             },
+            // [7b] Sailing-season tint (app/SailingSeason.tsx) — off (opacity 0) until the user
+            // switches the hamburger-menu toggle to "Winter", mirroring mare clausum: the
+            // Mediterranean's Nov-Mar closed season when ancient captains kept ships in harbor.
+            // Two layers, not one, so both the sea-mask (open ocean) and ancient-sea (coastal
+            // inlets/estuaries) polygons tint together — same split the base sea fill above uses.
+            {
+              id: "sea-mask-winter-tint",
+              type: "fill",
+              source: "sea-mask",
+              paint: { "fill-color": P.winterSea, "fill-opacity": 0 },
+            },
+            {
+              id: "ancient-sea-winter-tint",
+              type: "fill",
+              source: "ancient-sea",
+              paint: { "fill-color": P.winterSea, "fill-opacity": 0 },
+            },
             {
               // Coastline stroke — a quiet line traced along the land polygon's own edge, drawn
               // above the sea-mask/ancient-sea fills so it reads crisply right at the coast the
@@ -615,6 +636,10 @@ export default function Map() {
       // Phase 2: roads — Itiner-e dataset, split into Main (viae) and Secondary.
       // Google-Maps-like hierarchy: Main = highway (thicker, brighter), Secondary = local street.
       readyDisposers.push(whenMapReady(map, () => { (async () => {
+        // [7b] Apply a returning visitor's persisted mare clausum ("Winter") tint now that the
+        // base style's sea-mask/ancient-sea tint layers exist — see app/useSailingSeason.ts.
+        applyStoredSailingSeason();
+
         const [mainRoads, secondaryRoads] = await Promise.all([
           fetch("/data/roads_main.geojson").then((r) => r.json()),
           fetch("/data/roads_secondary.geojson").then((r) => r.json()),
@@ -2733,6 +2758,59 @@ export default function Map() {
                 .addTo(map);
             });
             map.on("mouseleave", "ethnic-pockets-point", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
+
+        // Phase 33: Notable winds + the Nile flood (public/data/wind_currents.geojson) — the
+        // named winds ancient sailors planned voyages around (Etesian, Aquilo, Auster/Africus,
+        // Favonius, Iapyx), the Nile's annual flood, and the Tower of the Winds at Athens, the
+        // physical monument to the classical eight-wind system (axis 7c).
+        registerThematic("wind-currents", async () => {
+          const windCurrents = await fetch("/data/wind_currents.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && windCurrents) {
+            map.addSource("wind-currents", { type: "geojson", data: windCurrents });
+            map.addLayer({
+              id: "wind-currents-point",
+              type: "circle",
+              source: "wind-currents",
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+                "circle-color": "#3d6b8c",
+                "circle-stroke-color": P.labelHalo,
+                "circle-stroke-width": 1.6,
+              },
+            });
+
+            const windTypeLabel: Record<string, string> = {
+              wind: "Named wind",
+              flood: "Seasonal flood",
+              monument: "Wind monument",
+            };
+            const windPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "wind-currents-point", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.one_line)}</div>` : "";
+              windPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(windTypeLabel[p.type] || p.type || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "wind-currents-point", () => {
               if (map) map.getCanvas().style.cursor = "";
             });
             kick();
