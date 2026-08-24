@@ -16090,6 +16090,419 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.0054,
+          40.41991
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_neptune_paestum",
+        "category": "temple",
+        "name_latin": "Templum Neptuni",
+        "name_english": "Temple of Neptune",
+        "province": "Italia",
+        "modern_location": "Paestum, Campania, Italy",
+        "built": -450,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Six Doric columns anchor each short end of this temple, raised around 450 BCE from local travertine and ranked among the best-preserved Greek buildings on earth. Its interior colonnade rises in two stacked tiers, carrying the roof without a single central support. Eighteenth-century excavators who uncovered the ruins mistook them for a shrine to Neptune, and the name never left. By 117 CE it had already stood watch over the coastal plain for more than five centuries.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Second_Temple_of_Hera_(Paestum)",
+          "https://pleiades.stoa.org/places/433082"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Poseidon%2C%20south%20facade%20-%20Paestum%20-%20Italy%202015.JPG?width=800",
+        "image_credit": "Temple of Neptune (Hera II), south facade, Paestum · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.005401,
+          40.419268
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_hera_basilica_paestum",
+        "category": "temple",
+        "name_latin": "Heraion",
+        "name_english": "Basilica of Paestum",
+        "province": "Italia",
+        "modern_location": "Paestum, Campania, Italy",
+        "built": -550,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Nine columns line each short end of this temple instead of the usual even number, an odd count builders used nowhere else at Paestum. Raised around 550 BCE, it is one of the oldest Greek temples still standing anywhere in Italy, its columns swollen with the heavy archaic curve typical of the earliest Doric style. Eighteenth-century antiquarians mistook the roofless ruin for a Roman civic hall and called it the Basilica, a name that stuck for good. It still carried its full colonnade in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/First_Temple_of_Hera_(Paestum)",
+          "https://pleiades.stoa.org/places/433082"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paestum%20Heratempel%201.jpg?width=800",
+        "image_credit": "First Temple of Hera (the Basilica), Paestum · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.005458,
+          40.424491
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_athena_paestum",
+        "category": "temple",
+        "name_latin": "Athenaion",
+        "name_english": "Temple of Athena",
+        "province": "Italia",
+        "modern_location": "Paestum, Campania, Italy",
+        "built": -500,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Builders set this temple on the highest ground in the city and blended two architectural orders in a single design, running Ionic details along a Doric frame. Finished around 500 BCE, it is the smallest and latest of Paestum's three great temples. Excavators found dozens of small terracotta statuettes of Athena buried near its altar, evidence strong enough to overturn its old mislabeling as a temple of Ceres. Christians later used its cella as a church without tearing the columns down.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Athena_(Paestum)",
+          "https://pleiades.stoa.org/places/433082"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paestum%2C%20Tempio%20di%20Athena%20%28di%20Cerere%29.jpg?width=800",
+        "image_credit": "Temple of Athena (formerly called Temple of Ceres), Paestum · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.0065,
+          40.4213
+        ]
+      },
+      "properties": {
+        "id": "poi_paestum_forum",
+        "category": "forum",
+        "name_latin": "Forum Paestanum",
+        "name_english": "Roman Forum of Paestum",
+        "province": "Italia",
+        "modern_location": "Paestum, Campania, Italy",
+        "built": -273,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Rome laid this rectangular civic square directly over the southern half of the old Greek marketplace within a few years of planting a Latin colony here in 273 BCE. A colonnade wrapped all four sides, fronting shops, the comitium, the curia, and a row of small shrines packed shoulder to shoulder along the south end. Magistrates conducted the colony's business here for four centuries straight, and by 117 CE the square still anchored daily life in a quiet but fully functioning provincial town.",
+        "sources": [
+          "https://www.pestum.it/excavations/forum.htm",
+          "https://en.wikipedia.org/wiki/Paestum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.0057,
+          40.42195
+        ]
+      },
+      "properties": {
+        "id": "poi_paestum_curia",
+        "category": "curia",
+        "name_latin": "Curia Paestana",
+        "name_english": "Curia of Paestum",
+        "province": "Italia",
+        "modern_location": "Paestum, Campania, Italy",
+        "built": -273,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Three parallel naves divided this rectangular hall on the forum's north side, where the colony's magistrates kept their archives and heard petitions. It stood beside the comitium as part of one continuous complex, built within a generation of Rome founding its Latin colony at Paestum in 273 BCE. A row of decurions sat here to run local government the same way the Senate ran Rome, just at a fraction of the scale. The building remained the seat of that local government through the reign of Trajan.",
+        "sources": [
+          "https://www.naples-napoli.org/en/paestum-forum/",
+          "https://ancientromelive.org/the-comitium-quintessential-structure-of-republican-rome/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.00625,
+          40.42245
+        ]
+      },
+      "properties": {
+        "id": "poi_paestum_amphitheater",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum Paestanum",
+        "name_english": "Paestum Amphitheater",
+        "province": "Italia",
+        "modern_location": "Paestum, Campania, Italy",
+        "built": -50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Cut into the ground around 50 BCE, this amphitheater is one of the oldest surviving examples of the form anywhere in the Roman world, built decades before Rome's own Colosseum. A modern highway sliced straight through the site in the eighteenth century and still buries roughly half the arena today. Builders added an outer ring of seating near the end of the first century CE to pack in a bigger crowd for the gladiator games. By 117 CE it stood as the entertainment hub of a modest colonial town.",
+        "sources": [
+          "https://pleiades.stoa.org/places/569006287",
+          "https://www.pestum.it/excavations/roman-amphitheatre-paestum.htm"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.9973,
+          40.421
+        ]
+      },
+      "properties": {
+        "id": "poi_paestum_walls",
+        "category": "wall",
+        "name_latin": "Moenia Paestana",
+        "name_english": "City Walls of Paestum",
+        "province": "Italia",
+        "modern_location": "Paestum, Campania, Italy",
+        "built": -400,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Nearly 5 kilometers of limestone fortification ring the entire city, punctuated by 28 towers and four gates set at the cardinal points. Lucanian builders raised the earliest stretches in the fourth century BCE, and Roman colonists repaired and extended the circuit after taking the city in 273 BCE. Forty-seven small sally ports pierce the walls at irregular intervals, narrow enough for a single soldier to slip through on a raid. The full circuit still stood intact in 117 CE.",
+        "sources": [
+          "https://parchipaestumvelia.cultura.gov.it/en/scopri-i-parchi/the-wall-of-paestum/",
+          "https://www.pestum.it/excavations/city-walls-paestum.htm"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.01358,
+          40.42164
+        ]
+      },
+      "properties": {
+        "id": "poi_porta_sirena",
+        "category": "gate",
+        "name_latin": "Porta Sirena",
+        "name_english": "Porta Sirena",
+        "province": "Italia",
+        "modern_location": "Paestum, Campania, Italy",
+        "built": -400,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This eastern gate takes its name from a carved relief of a two-tailed siren set into its keystone, still legible after more than two thousand years of weather. It formed the main approach from the inland hills, funneling traffic from the Lucanian countryside straight toward the forum. Builders cut it into the fourth-century BCE circuit and Roman engineers kept it in service without major rebuilding. Of Paestum's four gates it survives today in the best original condition, arch and all.",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q28000651",
+          "https://parchipaestumvelia.cultura.gov.it/en/scopri-i-parchi/the-wall-of-paestum/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.9963823,
+          40.4211566
+        ]
+      },
+      "properties": {
+        "id": "poi_porta_marina_paestum",
+        "category": "gate",
+        "name_latin": "Porta Marina",
+        "name_english": "Porta Marina",
+        "province": "Italia",
+        "modern_location": "Paestum, Campania, Italy",
+        "built": -400,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This western gate opened straight onto the road to the harbor, a fifteen-minute walk from the shoreline in antiquity. It carried the heaviest commercial traffic of any gate in the circuit, funneling grain, fish, and the city's famous roses in from the coast. The gate keeps its original Hellenistic-era masonry better than any other entrance in the wall, arch and flanking towers intact. Merchants and sailors still passed through it daily when Trajan died in 117 CE.",
+        "sources": [
+          "https://pleiades.stoa.org/places/828808246",
+          "https://parchipaestumvelia.cultura.gov.it/en/scopri-i-parchi/the-wall-of-paestum/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.0035,
+          40.4145
+        ]
+      },
+      "properties": {
+        "id": "poi_porta_giustizia",
+        "category": "gate",
+        "name_latin": "Porta Iustitiae",
+        "name_english": "Porta Giustizia",
+        "province": "Italia",
+        "modern_location": "Paestum, Campania, Italy",
+        "built": -400,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The southern gate in Paestum's circuit stood where the road toward the Roman colonies of Lucania left the city, opposite Porta Aurea on the northern side. Together with three companion gates it gave access through nearly 5 kilometers of unbroken fortification. Builders set it into the fourth-century BCE Lucanian wall and Roman colonists kept it standing after 273 BCE without major redesign. It remained one of the city's four working entrances throughout the Trajanic era.",
+        "sources": [
+          "https://en.wikivoyage.org/wiki/Paestum",
+          "https://parchipaestumvelia.cultura.gov.it/en/scopri-i-parchi/the-wall-of-paestum/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.0035,
+          40.4273
+        ]
+      },
+      "properties": {
+        "id": "poi_porta_aurea",
+        "category": "gate",
+        "name_latin": "Porta Aurea",
+        "name_english": "Porta Aurea",
+        "province": "Italia",
+        "modern_location": "Paestum, Campania, Italy",
+        "built": -400,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Set at the northern point of the city walls, this gate carried its name from a golden hue ancient writers attributed to its stonework at sunrise. It anchored the northern approach along nearly 5 kilometers of fortification studded with 28 towers. Centuries of stone-robbing after antiquity left it the most fragmentary of Paestum's four gates, reduced today to scattered foundation blocks. In 117 CE it still stood as a functioning entrance in the working city wall.",
+        "sources": [
+          "https://parchipaestumvelia.cultura.gov.it/en/scopri-i-parchi/the-wall-of-paestum/",
+          "https://www.pestum.it/excavations/city-walls-paestum.htm"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.00489,
+          40.423272
+        ]
+      },
+      "properties": {
+        "id": "poi_heroon_paestum",
+        "category": "sanctuary",
+        "name_latin": "Heroon",
+        "name_english": "Heroon of Paestum",
+        "province": "Italia",
+        "modern_location": "Paestum, Campania, Italy",
+        "built": -510,
+        "destroyed": -273,
+        "extant_117ce": false,
+        "notes": "Greek colonists built this small underground shrine around 510 BCE as a symbolic tomb honoring the city's founding hero. Inside, excavators found eight bronze vases still holding traces of honey, six water amphorae, and five long iron spits laid out as an untouched funerary offering. Roman colonists buried the structure under a mound of earth around 273 BCE, sealing it out of use for over two thousand years. It stayed hidden until archaeologists reopened it in 1954.",
+        "sources": [
+          "https://commons.wikimedia.org/wiki/Category:Heroon_(Paestum)",
+          "https://pleiades.stoa.org/places/307187361"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Heroon%20a%20Paestum.jpg?width=800",
+        "image_credit": "Heroon, underground founder's shrine, Paestum · Wikimedia Commons (CC BY-SA)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.00625,
+          40.42313
+        ]
+      },
+      "properties": {
+        "id": "poi_ekklesiasterion_paestum",
+        "category": "monument",
+        "name_latin": "Ekklesiasterion",
+        "name_english": "Ekklesiasterion of Paestum",
+        "province": "Italia",
+        "modern_location": "Paestum, Campania, Italy",
+        "built": -480,
+        "destroyed": -273,
+        "extant_117ce": false,
+        "notes": "Workers cut this circular assembly hall straight into the natural rock around 480 BCE, ringing it with stone benches that seated up to 1,700 citizens for civic votes. An Oscan inscription dedicated to Zeus Agoraios found inside shows the hall stayed in use through the later Lucanian period. Roman colonists deliberately buried the whole structure around 273 BCE, erasing the city's old assembly ground rather than adapting it. It stayed sealed underground through Trajan's reign.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ekklesiasterion",
+          "https://www.roamintheempire.com/index.php/2020/10/21/paestum-ii/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.0057,
+          40.4215
+        ]
+      },
+      "properties": {
+        "id": "poi_via_sacra_paestum",
+        "category": "road",
+        "name_latin": "Via Sacra",
+        "name_english": "Via Sacra of Paestum",
+        "province": "Italia",
+        "modern_location": "Paestum, Campania, Italy",
+        "built": -273,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This paved street ran the full length of the city as its main north-south axis, linking the Temple of Athena at one end to the two temples of Hera roughly a kilometer away. Roman surveyors laid it out fresh when they founded the colony in 273 BCE, cutting through ground that had carried no road under the Greeks. Wheel ruts worn into its paving stones still mark the routes carts took past the forum on market days. It remained the city's main thoroughfare in 117 CE.",
+        "sources": [
+          "http://www.sacred-destinations.com/italy/paestum-temples",
+          "https://en.wikipedia.org/wiki/Paestum"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.00555,
+          40.421945
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_mens_bona_paestum",
+        "category": "temple",
+        "name_latin": "Aedes Mentis Bonae",
+        "name_english": "Temple of Mens Bona",
+        "province": "Italia",
+        "modern_location": "Paestum, Campania, Italy",
+        "built": -200,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Colonists raised this podium temple on the forum's north side to honor Mens Bona, goddess of sound judgment, after Paestum stayed loyal to Rome through Hannibal's invasion. Six columns crossed its facade and eight ran down each flank, set atop a tall platform reached by one central stairway. The temple's builders sliced directly into the old comitium's seating to fit it in, crowding out a piece of the colony's civic space. It still stood in active cult use in 117 CE.",
+        "sources": [
+          "https://www.roamintheempire.com/index.php/2020/10/21/paestum-ii/",
+          "https://izi.travel/en/2515-comitium-curia-temple-peace/en"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
