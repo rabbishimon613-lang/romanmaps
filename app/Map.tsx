@@ -2817,6 +2817,90 @@ export default function Map() {
           }
         });
 
+        // Phase 34: Wild fauna sourcing (public/data/fauna_sourcing.geojson) — the source
+        // regions that supplied exotic animals for arena games (axis 7d), each a Point, with
+        // dashed LineString routes to the biggest 117 CE amphitheatre destinations.
+        registerThematic("fauna-sourcing", async () => {
+          const faunaSourcing = await fetch("/data/fauna_sourcing.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && faunaSourcing) {
+            map.addSource("fauna-sourcing", { type: "geojson", data: faunaSourcing });
+            map.addLayer({
+              id: "fauna-sourcing-line",
+              type: "line",
+              source: "fauna-sourcing",
+              filter: ["==", ["geometry-type"], "LineString"],
+              paint: {
+                "line-color": "#7a5230",
+                "line-width": ["interpolate", ["linear"], ["zoom"], 3, 1.2, 8, 2.2],
+                "line-dasharray": [1, 1.5],
+                "line-opacity": 0.8,
+              },
+              layout: { "line-cap": "round", "line-join": "round" },
+            });
+            map.addLayer({
+              id: "fauna-sourcing-point",
+              type: "circle",
+              source: "fauna-sourcing",
+              filter: ["==", ["geometry-type"], "Point"],
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+                "circle-color": "#7a5230",
+                "circle-stroke-color": P.labelHalo,
+                "circle-stroke-width": 1.6,
+              },
+            });
+
+            const faunaPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            const onFaunaPointEnter = (e: any) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.one_line)}</div>` : "";
+              faunaPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.animals || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            };
+            const onFaunaLineEnter = (e: any) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const noteLine = p.notes ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.notes)}</div>` : "";
+              faunaPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.animals || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            };
+            map.on("mouseenter", "fauna-sourcing-point", onFaunaPointEnter);
+            map.on("mouseleave", "fauna-sourcing-point", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            map.on("mouseenter", "fauna-sourcing-line", onFaunaLineEnter);
+            map.on("mouseleave", "fauna-sourcing-line", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
+
         // Apply the persisted Layers-panel state now that every group has a loader registered:
         // base groups get their visibility set, and any thematic group a returning visitor left
         // switched on gets lazily loaded here (registerThematic above already starts most of

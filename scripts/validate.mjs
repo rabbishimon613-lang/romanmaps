@@ -62,6 +62,8 @@ const PROFILES = {
   "agriculture.geojson": "themed",
   "housing_styles.geojson": "themed",
   "languages.geojson": "themed",
+  "wind_currents.geojson": "themed",
+  "fauna_sourcing.geojson": "themed",
 };
 
 const errors = [];

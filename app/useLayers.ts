@@ -37,7 +37,8 @@ export type LayerGroupId =
   | "cuisine"
   | "death-rituals"
   | "ethnic-pockets"
-  | "wind-currents";
+  | "wind-currents"
+  | "fauna-sourcing";
 
 /** `base: true` marks the five groups that make up the map you see on first load — the
  * equivalent of Google's default basemap. Everything else is a thematic overlay and starts
@@ -83,6 +84,7 @@ export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: strin
   { id: "death-rituals", label: "Death ritual regions", mapLayerIds: ["death-rituals-fill", "death-rituals-line"] },
   { id: "ethnic-pockets", label: "Ethnic & cultural pockets", mapLayerIds: ["ethnic-pockets-point"] },
   { id: "wind-currents", label: "Winds & sailing seasons", mapLayerIds: ["wind-currents-point"] },
+  { id: "fauna-sourcing", label: "Arena animal sourcing", mapLayerIds: ["fauna-sourcing-line", "fauna-sourcing-point"] },
 ];
 
 type LayerState = Record<LayerGroupId, boolean>;

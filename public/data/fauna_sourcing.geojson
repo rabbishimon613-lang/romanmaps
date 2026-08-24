@@ -1,0 +1,301 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [-5.56, 34.07] },
+   "properties": {
+    "id": "fauna_mauretania_elephants",
+    "name": "Mauretanian elephant grounds",
+    "type": "source_region",
+    "animals": "African elephants",
+    "one_line": "Roman hunters drew arena and war elephants from the forested slopes of the Atlas Mountains in Mauretania, a region King Juba II documented for Roman naturalists. Pliny the Elder recorded local herds living in these same mountains. A Roman mosaic from Veii shows exactly this trade in motion — an African elephant walking a ramp onto a ship bound for Italy.",
+    "province": "Mauretania Tingitana",
+    "modern_location": "Middle Atlas, Morocco",
+    "sources": [
+     "Plin. NH 8.1",
+     "https://en.wikipedia.org/wiki/African_bush_elephant#History",
+     "https://en.wikipedia.org/wiki/Juba_II"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20mosaic%20from%20Veii%20(Isola%20Farnese%2C%20Italy)%20depicting%20an%20African%20elephant%20being%20loaded%20onto%20a%20ship%2C%203rd-4th%20century%20AD%2C%20Badisches%20Landesmuseum%20Karlsruhe%2C%20Germany%20(18025661724).jpg?width=800",
+    "image_credit": "Roman mosaic from Veii, Badisches Landesmuseum Karlsruhe · Wikimedia Commons",
+    "image_alt": "Roman mosaic showing an African elephant being loaded onto a ship"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [6.61, 36.37] },
+   "properties": {
+    "id": "fauna_numidia_lions",
+    "name": "Numidian lion country",
+    "type": "source_region",
+    "animals": "Lions",
+    "one_line": "Numidia's lions supplied Rome's arena hunts for generations — Sulla exhibited 100 as praetor in 93 BCE, and Caesar topped him with 400 in 46 BCE. Pliny the Elder catalogued the region's lions among the animal wonders of Africa, and later writers singled out a maneless local type as especially prized. By 117 CE the trade from Numidia to Rome's arenas was already two centuries old.",
+    "province": "Numidia",
+    "modern_location": "Constantine region, Algeria",
+    "sources": [
+     "Plin. NH 8.17",
+     "https://en.wikipedia.org/wiki/Barbary_lion",
+     "https://en.wikipedia.org/wiki/Numidia"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gladiators%20face%20animals%20Zliten%20mosaic.JPG?width=800",
+    "image_credit": "Zliten mosaic, gladiators facing arena animals · Wikimedia Commons",
+    "image_alt": "Roman mosaic from Zliten showing gladiators facing lions and other arena animals"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [29.98, 37.15] },
+   "properties": {
+    "id": "fauna_cilicia_panthers",
+    "name": "Cilician panther-hunting grounds",
+    "type": "source_region",
+    "animals": "Panthers and leopards",
+    "one_line": "In 51-50 BCE the Roman aedile Caelius Rufus wrote again and again to Cicero, then governing Cilicia, begging him to send panthers for his games — at one point telling him to send to Cibyra and see the animals shipped himself. Cicero's replies complain that huntable panthers had grown scarce in the province. The correspondence is the most detailed paper trail for animal procurement to survive from Roman antiquity.",
+    "province": "Cilicia",
+    "modern_location": "near Gölhisar, Turkey",
+    "sources": [
+     "Cic. Fam. 2.11, 8.9",
+     "https://en.wikipedia.org/wiki/Marcus_Caelius_Rufus",
+     "https://en.wikipedia.org/wiki/Cibyra"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sousse%20mosaic%20venatio.JPG?width=800",
+    "image_credit": "Venatio mosaic, Sousse · Wikimedia Commons",
+    "image_alt": "Roman mosaic depicting a beast hunt in the arena"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [44.6, 33.1] },
+   "properties": {
+    "id": "fauna_india_tigers_parthia",
+    "name": "Indian tigers, via Parthian middlemen",
+    "type": "source_region",
+    "animals": "Tigers",
+    "one_line": "Augustus displayed Rome's first tiger, caged, at the dedication of the Theatre of Marcellus — a gift that arrived with one of the Indian embassies his own Res Gestae boasts of receiving. No Roman fleet sailed to India for it; the animal traveled overland through Parthian-controlled territory, the same corridor Roman traders used to reach the Silk Road's western terminus at Ctesiphon. Tigers stayed rare enough in Rome that a single animal was still worth naming in the sources a century later.",
+    "province": null,
+    "modern_location": "near Ctesiphon, Iraq (Parthian trade corridor)",
+    "sources": [
+     "Plin. NH 8.65",
+     "Aug. Res Gestae 31",
+     "https://en.wikipedia.org/wiki/Tiger#History_and_evolution"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20tiger%20against%20a%20wild%20ass%2C%20the%20gladiator%20mosaic%20at%20the%20Roman%20villa%20in%20Nennig%2C%20Germany%20(9288855087).jpg?width=800",
+    "image_credit": "Gladiator mosaic, Roman villa at Nennig, Germany · Wikimedia Commons",
+    "image_alt": "Roman mosaic depicting a tiger fighting a wild ass in the arena"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [-4.2, 56.5] },
+   "properties": {
+    "id": "fauna_caledonia_bears",
+    "name": "Caledonian bear country",
+    "type": "source_region",
+    "animals": "Bears",
+    "one_line": "Martial's poems on the Colosseum's opening games in 80 CE describe a condemned man playing out the myth of Laureolus, torn apart on stage by a Caledonian bear standing in for Prometheus's eagle. It is the fullest surviving account of a staged mythological execution in the Roman arena. The bear's origin beyond Rome's northernmost frontier, before Hadrian's Wall existed, made it a byword for how far the empire's reach for spectacle already ran.",
+    "province": null,
+    "modern_location": "central Scottish Highlands",
+    "sources": [
+     "Mart. De Spect. 7 (9)",
+     "https://en.wikipedia.org/wiki/Liber_Spectaculorum",
+     "https://en.wikipedia.org/wiki/Caledonia"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Beasts%20and%20criminals%20from%20the%20Zliten%20mosaic.jpg?width=800",
+    "image_credit": "Zliten mosaic, condemned prisoners and arena beasts · Wikimedia Commons",
+    "image_alt": "Roman mosaic from Zliten showing condemned prisoners exposed to arena beasts"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [29.9, 31.2] },
+   "properties": {
+    "id": "fauna_egypt_hippo_crocodile",
+    "name": "Nile hippo and crocodile grounds",
+    "type": "source_region",
+    "animals": "Hippopotamuses, crocodiles, rhinoceroses",
+    "one_line": "Rome's first hippopotamus, shown with five crocodiles by the aedile Marcus Aemilius Scaurus in 58 BCE, lived in a channel dug specially for the games. Augustus later flooded the Circus Flaminius with 36 crocodiles for a staged mock Nile, and Cassius Dio records a rhinoceros appearing at the same time — a beast never before seen in the city. The famous Nile mosaic at Palestrina, laid not long after, shows exactly this river's hippos and crocodiles as Romans imagined them.",
+    "province": "Aegyptus",
+    "modern_location": "Alexandria, Egypt",
+    "sources": [
+     "Plin. NH 8.96",
+     "Cass. Dio 51.22, 55.10",
+     "https://en.wikipedia.org/wiki/Nile_mosaic_of_Palestrina"
+    ],
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nile%20mosaic%20in%20Palestrina.jpg?width=800",
+    "image_credit": "Nile mosaic of Palestrina · Wikimedia Commons",
+    "image_alt": "Ancient mosaic depicting hippopotamuses and crocodiles in the Nile"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [14.0, 26.3] },
+   "properties": {
+    "id": "fauna_fezzan_ostriches",
+    "name": "Garamantian ostrich and caravan routes",
+    "type": "source_region",
+    "animals": "Ostriches",
+    "one_line": "Herodotus already described the Garamantes of the Libyan desert interior hunting on chariots, and their caravan routes were still the practical way ostriches and other desert game reached Mediterranean ports for shipment to Rome. Pliny the Elder catalogued the ostrich's size, eggs, and feathers among Africa's animal wonders. A Zliten mosaic panel shows ostriches being killed in the arena, common enough a spectacle to be recorded in stone.",
+    "province": null,
+    "modern_location": "Germa, Fezzan, Libya",
+    "sources": [
+     "Hdt. 4.183",
+     "Plin. NH 10.1",
+     "https://en.wikipedia.org/wiki/Garamantes"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Killing%20ostriches%20on%20the%20Zliten%20mosaic.JPG?width=800",
+    "image_credit": "Zliten mosaic, ostriches killed in the arena · Wikimedia Commons",
+    "image_alt": "Roman mosaic from Zliten showing ostriches being hunted in the arena"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": { "type": "Point", "coordinates": [33.75, 16.9] },
+   "properties": {
+    "id": "fauna_nubia_giraffe_rhino",
+    "name": "Nubian giraffe and rhinoceros range",
+    "type": "source_region",
+    "animals": "Giraffes, rhinoceroses",
+    "one_line": "Julius Caesar showed Rome its first giraffe at his quadruple-triumph games in 46 BCE — an animal so strange that Cassius Dio described it as camel-bodied with leopard-spotted skin, and Romans named it camelopardalis for the mismatch. It reached Alexandria down the Nile from the Kingdom of Kush, Rome's most sophisticated sub-Saharan trading partner. A rhinoceros shown by Pompey a decade earlier came from the same general direction, fighting an elephant to prove the point.",
+    "province": null,
+    "modern_location": "Meroë, Sudan",
+    "sources": [
+     "Cass. Dio 43.23",
+     "Plin. NH 8.71",
+     "https://en.wikipedia.org/wiki/Kingdom_of_Kush"
+    ],
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rhyno%20-%20Big%20Game%20Hunt%20mosaic%20-%20Villa%20Romana%20del%20Casale%20-%20Italy%202015.JPG?width=800",
+    "image_credit": "Great Hunt mosaic, Villa Romana del Casale, Piazza Armerina · Wikimedia Commons",
+    "image_alt": "Roman mosaic depicting a rhinoceros being captured for the arena"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [[-5.56, 34.07], [-2.0, 36.5], [8.0, 39.0], [12.4922, 41.8902]]
+   },
+   "properties": {
+    "id": "fauna_route_mauretania_rome",
+    "name": "Mauretania → Rome",
+    "animals": "Elephants",
+    "notes": "The sea route an African elephant traveled from Mauretania's Atlantic coast to Ostia and Rome's arenas.",
+    "sources": ["Plin. NH 8.1"],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [[6.61, 36.37], [10.0, 38.5], [12.4922, 41.8902]]
+   },
+   "properties": {
+    "id": "fauna_route_numidia_rome",
+    "name": "Numidia → Rome",
+    "animals": "Lions",
+    "notes": "The Mediterranean crossing Numidian lions made from the North African coast to Rome's arenas.",
+    "sources": ["Plin. NH 8.17"],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [[29.98, 37.15], [23.7, 38.0], [16.5, 40.0], [12.4922, 41.8902]]
+   },
+   "properties": {
+    "id": "fauna_route_cilicia_rome",
+    "name": "Cilicia → Rome",
+    "animals": "Panthers",
+    "notes": "The route Cicero's Cilician panthers took across the eastern Mediterranean to Rome.",
+    "sources": ["Cic. Fam. 2.11, 8.9"],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [[44.6, 33.1], [36.0, 34.0], [23.7, 37.0], [12.4922, 41.8902]]
+   },
+   "properties": {
+    "id": "fauna_route_india_rome",
+    "name": "India (via Parthia) → Rome",
+    "animals": "Tigers",
+    "notes": "The long overland-then-sea corridor a tiger traveled from India through Parthian territory to Rome.",
+    "sources": ["Plin. NH 8.65", "Aug. Res Gestae 31"],
+    "confidence": "low"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [[-4.2, 56.5], [-1.0, 51.0], [2.5, 47.0], [7.5, 44.0], [12.4922, 41.8902]]
+   },
+   "properties": {
+    "id": "fauna_route_caledonia_rome",
+    "name": "Caledonia → Rome",
+    "animals": "Bears",
+    "notes": "The overland route a Caledonian bear traveled the length of Britannia and Gaul to reach Rome's arenas.",
+    "sources": ["Mart. De Spect. 7 (9)"],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [[29.9, 31.2], [21.0, 36.5], [16.0, 39.5], [12.4922, 41.8902]]
+   },
+   "properties": {
+    "id": "fauna_route_egypt_rome",
+    "name": "Egypt → Rome",
+    "animals": "Hippopotamuses, crocodiles, rhinoceroses",
+    "notes": "The sea route Nile animals took from Alexandria to Rome's arenas, the same shipping lane that carried Egypt's grain.",
+    "sources": ["Plin. NH 8.96", "Cass. Dio 51.22"],
+    "confidence": "medium"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [[14.0, 26.3], [11.0, 33.5], [12.4922, 41.8902]]
+   },
+   "properties": {
+    "id": "fauna_route_fezzan_rome",
+    "name": "Fezzan → Rome",
+    "animals": "Ostriches",
+    "notes": "The desert-caravan-then-sea route ostriches took from the Garamantian interior to Rome's arenas.",
+    "sources": ["Hdt. 4.183", "Plin. NH 10.1"],
+    "confidence": "low"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [[33.75, 16.9], [30.0, 27.5], [24.0, 35.5], [12.4922, 41.8902]]
+   },
+   "properties": {
+    "id": "fauna_route_nubia_rome",
+    "name": "Nubia → Rome",
+    "animals": "Giraffes, rhinoceroses",
+    "notes": "The Nile-then-Mediterranean route a Nubian giraffe or rhinoceros took to reach Rome, funneled through Alexandria.",
+    "sources": ["Cass. Dio 43.23"],
+    "confidence": "low"
+   }
+  }
+ ]
+}
