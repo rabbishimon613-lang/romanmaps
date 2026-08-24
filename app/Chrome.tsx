@@ -15,6 +15,7 @@ import EpochModal from "./EpochModal";
 import Entrance from "./Entrance";
 import CurrencyConverter from "./CurrencyConverter";
 import SailingSeason from "./SailingSeason";
+import ThemeToggle from "./ThemeToggle";
 import { useOnboardingHint } from "./useOnboardingHint";
 import { useEntrance } from "./useEntrance";
 import { activateRuler } from "./useRuler";
@@ -500,6 +501,7 @@ export default function Chrome() {
 
           <CurrencyConverter />
           <SailingSeason />
+          <ThemeToggle />
         </div>
       )}
       </div>

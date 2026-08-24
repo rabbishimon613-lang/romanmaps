@@ -11,10 +11,19 @@ input { font-family: inherit; }
 
 /* ── UI theme tokens ──────────────────────────────────────────────────────────
    The basemap already follows prefers-color-scheme (see the LIGHT/DARK palettes in
-   Map.tsx). The chrome used to be hardcoded Google-light regardless, so on a phone
-   in dark mode you got white slabs stacked on a near-black map. These tokens are the
-   Google Maps neutral ramp in both modes; every chrome component references them
-   instead of literals. */
+   Map.tsx, which also repaint live off the same source — see app/useTheme.ts). The
+   chrome used to be hardcoded Google-light regardless, so on a phone in dark mode you
+   got white slabs stacked on a near-black map. These tokens are the Google Maps
+   neutral ramp in both modes; every chrome component references them instead of
+   literals.
+
+   Three states, same shape the artifact-design convention uses: an explicit in-app
+   choice stamps `data-theme="dark"`/`data-theme="light"` on <html> (app/useTheme.ts,
+   applied before first paint by the inline script in app/layout.tsx to avoid a flash);
+   the default "system" setting stamps nothing, so only prefers-color-scheme decides.
+   The dark media block is guarded with :not([data-theme="light"]) so an explicit light
+   choice always wins even on a dark-OS device, and the explicit-dark block below wins
+   the other direction on a light-OS device. */
 :root {
   --surface: #ffffff;
   --surface-2: #f1f3f4;
@@ -39,7 +48,7 @@ input { font-family: inherit; }
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --surface: #292a2d;
     --surface-2: #3c4043;
     --surface-3: #35363a;
@@ -63,10 +72,34 @@ input { font-family: inherit; }
   }
 }
 
+:root[data-theme="dark"] {
+  --surface: #292a2d;
+  --surface-2: #3c4043;
+  --surface-3: #35363a;
+  --divider: #3c4043;
+  --text: #e8eaed;
+  --text-strong: #e8eaed;
+  --text-2: #9aa0a6;
+  --text-3: #9aa0a6;
+  --icon: #9aa0a6;
+  --accent: #8ab4f8;
+  --accent-bg: #37414f;
+  --accent-border: #45525f;
+  --on-accent: #202124;
+  --ok: #81c995;
+  --warn-text: #fdd663;
+  --warn-bg: #3a3524;
+  --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.5);
+  --shadow-2: 0 1px 4px -1px rgba(0, 0, 0, 0.6), 0 3px 8px rgba(0, 0, 0, 0.4);
+  --scrim: rgba(32, 33, 36, 0.85);
+  --overlay: rgba(0, 0, 0, 0.6);
+}
+
 /* Native controls (checkboxes, the search field's caret) follow the theme too — without
    this a dark card gets bright white checkboxes. */
 :root { color-scheme: light; }
-@media (prefers-color-scheme: dark) { :root { color-scheme: dark; } }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark; } }
+:root[data-theme="dark"] { color-scheme: dark; }
 input[type="checkbox"] { accent-color: var(--accent); }
 
 /* Keyboard focus ring, everywhere. `:focus-visible` already skips this for a mouse/touch click

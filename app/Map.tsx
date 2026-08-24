@@ -11,6 +11,7 @@ import { PROVINCES } from "./provinces";
 import { isRulerActive } from "./useRuler";
 import { isDirectionsActive } from "./useDirections";
 import { applyStoredSailingSeason } from "./useSailingSeason";
+import { getResolvedDark, subscribeThemeChange } from "./useTheme";
 import { motionDuration } from "./reducedMotion";
 import { ostiaEntry } from "./ostiaDescriptions";
 import { pompeiiEntry } from "./pompeiiDescriptions";
@@ -184,9 +185,74 @@ function polygonFeatureArea(f: { geometry: any }): number {
   return Infinity;
 }
 
-function prefersDark(): boolean {
-  if (typeof window === "undefined" || !window.matchMedia) return false;
-  return window.matchMedia("(prefers-color-scheme: dark)").matches;
+// [04-P3-1] theme-toggle — live repaint. `getResolvedDark()`/`subscribeThemeChange` (app/useTheme.ts)
+// resolve the OS-preference-vs-manual-override question; everything below just needs "is it dark
+// right now" and "tell me when that changes". No map remount: every consumer that grabs
+// `window.__map` once on its own mount (Ruler/Directions/ZoomControl/Compass/PoiMarkers/
+// PeopleMarkers/ContextMenu/ProvincePanel) keeps working exactly as before, since the map instance
+// itself never changes — only its layers' paint properties do, via `map.setPaintProperty`.
+
+// LIGHT and DARK share one color (`land`/`labelHalo` are both `#f4ead5` in LIGHT, by design — the
+// halo is meant to blend into the land fill) but diverge in DARK (`#232628` vs `#111315`), so a
+// plain value->key lookup is ambiguous for that one pair. In this codebase `land` is only ever
+// painted through fill-color/background-color, and `labelHalo` only through text-halo-color/
+// circle-stroke-color (plus the canvas-drawn road-station icon, handled separately below) — so the
+// paint property name alone disambiguates it. `swapPaletteColors` uses this to skip the
+// wrong-toned candidate before falling back to a plain value match for every other key.
+function swapPaletteColors(map: maplibregl.Map, from: Palette, to: Palette) {
+  const style = map.getStyle();
+  if (!style?.layers) return;
+  const fromEntries = (Object.entries(from) as [keyof Palette, string][]).map(
+    ([k, v]) => [k, v.toLowerCase()] as [keyof Palette, string],
+  );
+  for (const layer of style.layers as any[]) {
+    const paint = layer.paint;
+    if (!paint) continue;
+    for (const prop of Object.keys(paint)) {
+      const val = paint[prop];
+      if (typeof val !== "string") continue; // expressions/numbers never carry a Palette literal
+      const lower = val.toLowerCase();
+      const isHaloProp = prop === "text-halo-color" || prop === "circle-stroke-color";
+      const candidates = fromEntries.filter(([k]) => (isHaloProp ? k !== "land" : k !== "labelHalo"));
+      const hit = candidates.find(([, v]) => v === lower);
+      if (hit) {
+        try {
+          map.setPaintProperty(layer.id, prop, to[hit[0]]);
+        } catch {
+          // layer removed mid-scan (lazy-overlay toggled off concurrently) — safe to skip
+        }
+      }
+    }
+  }
+}
+
+const ROAD_STATION_ICON_ID = "road-station-square";
+const ROAD_STATION_ICON_SIZE = 10;
+/** Small square marker for road_stations.geojson — see the Phase 6 lazy-loader below. Pulled out
+ * to a standalone function so a live theme switch can regenerate it with the new halo color
+ * instead of leaving whatever border color was baked in when the layer was first switched on. */
+function buildRoadStationIcon(haloColor: string): ImageData {
+  const sq = ROAD_STATION_ICON_SIZE;
+  const canvas = document.createElement("canvas");
+  canvas.width = sq;
+  canvas.height = sq;
+  const ctx2d = canvas.getContext("2d")!;
+  ctx2d.fillStyle = "#6b6f76";
+  ctx2d.fillRect(1, 1, sq - 2, sq - 2);
+  ctx2d.strokeStyle = haloColor;
+  ctx2d.lineWidth = 1;
+  ctx2d.strokeRect(1, 1, sq - 2, sq - 2);
+  return ctx2d.getImageData(0, 0, sq, sq);
+}
+
+function applyThemeToMap(map: maplibregl.Map, dark: boolean) {
+  const from = dark ? LIGHT : DARK;
+  const to = dark ? DARK : LIGHT;
+  swapPaletteColors(map, from, to);
+  if (map.hasImage(ROAD_STATION_ICON_ID)) {
+    const sq = ROAD_STATION_ICON_SIZE;
+    map.updateImage(ROAD_STATION_ICON_ID, { width: sq, height: sq, data: buildRoadStationIcon(to.labelHalo).data });
+  }
 }
 
 /** [02-P0-4] MapLibre's "load" event is supposed to fire once the initial style — land/sea/
@@ -318,7 +384,11 @@ export default function Map() {
     // (Plain object, not a `Map` instance — this component is itself named `Map`, which shadows
     // the built-in class inside this function body.)
     let poiIndex: Record<string, { props: Record<string, any>; coords: [number, number] }> | null = null;
-    const P: Palette = prefersDark() ? DARK : LIGHT;
+    // `let`, not `const` — reassigned on a live theme switch (see the subscribeThemeChange wiring
+    // below) so any layer added *after* the switch (a lazy thematic overlay someone just turned on
+    // for the first time) still bakes in the correct palette instead of the one active at mount.
+    let P: Palette = getResolvedDark() ? DARK : LIGHT;
+    let unsubTheme: (() => void) | null = null;
 
     (async () => {
       // Phase 1: light sources first — small enough to render fast.
@@ -523,6 +593,20 @@ export default function Map() {
       // No default NavigationControl — its bottom-right slot is CSS-hidden (custom attribution
       // lives there instead), and app/ZoomControl.tsx renders our own Google-style +/- buttons.
       (window as any).__map = map;
+
+      // [04-P3-1] Live theme repaint — fires on an explicit Light/Dark/System switch (the
+      // hamburger menu's ThemeToggle) and on an OS-level scheme change while "System" is active.
+      // Skips the no-op case where the resolved dark/light state didn't actually change (e.g. the
+      // OS listener firing while an explicit override is set) — swapPaletteColors would be a
+      // harmless no-op there too, this just avoids the wasted style scan.
+      unsubTheme = subscribeThemeChange(() => {
+        if (!map) return;
+        const dark = getResolvedDark();
+        const nextP = dark ? DARK : LIGHT;
+        if (nextP === P) return;
+        applyThemeToMap(map, dark);
+        P = nextP;
+      });
 
       // Sea/gulf/strait labels are display-only per [1.5]'s English-first rule, so the Roman
       // name (Mare Tyrrhenum, Fretum Gaditanum, ...) only surfaces on hover rather than on the
@@ -1101,21 +1185,9 @@ export default function Map() {
             .then((r) => (r.ok ? r.json() : null))
             .catch(() => null);
           if (!cancelled && map && roadStations) {
-            const sq = 10;
-            const canvas = document.createElement("canvas");
-            canvas.width = sq;
-            canvas.height = sq;
-            const ctx2d = canvas.getContext("2d");
-            if (ctx2d) {
-              ctx2d.fillStyle = "#6b6f76";
-              ctx2d.fillRect(1, 1, sq - 2, sq - 2);
-              ctx2d.strokeStyle = P.labelHalo;
-              ctx2d.lineWidth = 1;
-              ctx2d.strokeRect(1, 1, sq - 2, sq - 2);
-              const imgData = ctx2d.getImageData(0, 0, sq, sq);
-              if (!map.hasImage("road-station-square")) {
-                map.addImage("road-station-square", { width: sq, height: sq, data: imgData.data });
-              }
+            const sq = ROAD_STATION_ICON_SIZE;
+            if (!map.hasImage(ROAD_STATION_ICON_ID)) {
+              map.addImage(ROAD_STATION_ICON_ID, { width: sq, height: sq, data: buildRoadStationIcon(P.labelHalo).data });
             }
 
             map.addSource("road-stations", { type: "geojson", data: roadStations });
@@ -2915,6 +2987,7 @@ export default function Map() {
       if (onPopState) window.removeEventListener("popstate", onPopState);
       if (unsubPoi) unsubPoi();
       if (unsubProvince) unsubProvince();
+      if (unsubTheme) unsubTheme();
       if (pushTimer) clearTimeout(pushTimer);
       readyDisposers.forEach((dispose) => dispose());
       if (ro) ro.disconnect();

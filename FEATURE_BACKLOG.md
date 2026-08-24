@@ -455,8 +455,35 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
 
 ## New ideas spotted this shift (2026-08-24, cloud shift — dark-mode verification)
 
-- [ ] **A manual light/dark/system theme toggle is a real, separate feature from the
-  "Dark mode / night-map style" item just closed above** — the map and chrome already repalette
+- [x] **A manual light/dark/system theme toggle is a real, separate feature from the
+  "Dark mode / night-map style" item just closed above** — *(Shipped 2026-08-24, the next cloud
+  shift: `app/useTheme.ts` + `app/ThemeToggle.tsx`, an "Appearance" section in the hamburger menu
+  next to Sailing season. Three states — System (the unchanged default, tracks
+  `prefers-color-scheme` live) / Light / Dark — persisted to `localStorage["roman-maps:theme"]`.
+  The scoping note below turned out right about the shape and wrong about the cost: the ~30
+  `P.<key>` callsites needed neither hand-threading nor a map remount. `swapPaletteColors()` walks
+  `map.getStyle().layers` and swaps any paint property whose literal string value matches an
+  outgoing `Palette` entry, so it covers every layer including thematic overlays switched on
+  later, with no per-layer list to keep in sync. Two real traps handled: `LIGHT.land` and
+  `LIGHT.labelHalo` are the same `#f4ead5` but diverge in `DARK`, so a naive value lookup is
+  ambiguous for that one pair — disambiguated by paint-property name (`land` only ever paints
+  fill/background, `labelHalo` only halo/stroke); and the road-station marker is a canvas-drawn
+  `addImage` icon with the halo color baked into its pixels, so it's regenerated via
+  `updateImage` on switch. `P` also became a `let`, reassigned on switch, so a lazy overlay
+  loaded after a theme change bakes in the right palette rather than the mount-time one.
+  A flash-of-wrong-theme guard runs in `app/layout.tsx` — deliberately a plain synchronous
+  `<script>`, not `next/script`'s `beforeInteractive`, which measurably runs after first paint in
+  Next 14's app router (caught by Playwright mid-implementation: `data-theme` was still null at
+  DOMContentLoaded and only appeared by `load`). `globals.css` now defines the dark token block
+  twice — guarded `@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) }` plus
+  `:root[data-theme="dark"]` — so an explicit choice wins in both directions. Verified live with
+  `next dev` + Playwright: OS-dark default still renders dark with no `data-theme` attribute;
+  toggling to Dark on a light-OS context live-repaints bg `#a9d1e3`→`#0f2233`, land
+  `#f4ead5`→`#232628`, roads `#a12b0d`→`#c9573b`, label halos `#f4ead5`→`#111315` and chrome
+  `--surface` `#ffffff`→`#292a2d` with no reload; the choice survives a reload with `data-theme`
+  set by DOMContentLoaded; and an explicit Light beats a dark OS at 375×812. Screenshots at
+  1280×900 and 375×812, both schemes.)* Original scoping note, kept for the record — the map and
+  chrome already repalette
   correctly off OS `prefers-color-scheme`, but there's no in-app override, so a user whose OS is
   stuck light (or dark) can't see the other mode. Scoping this honestly: `app/globals.css`'s
   chrome tokens could take a `:root[data-theme="dark"]` override cleanly (same pattern this repo
@@ -494,8 +521,49 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
   especially: its Capitolium, Basilica, and Arch of Caracalla are all genuinely 3rd-century, so a
   naive pass could end up with a mostly-`extant_117ce:false` set) will need more care than others.
 
+## New ideas spotted this shift (2026-08-24, cloud shift — Djemila/Volubilis, theme toggle)
+
+- [ ] **`next/script`'s `beforeInteractive` strategy does not run before first paint in this
+  Next 14 app-router setup** — worth knowing before anyone reaches for it again. Implementing the
+  theme toggle's flash guard, a `<Script id="theme-init" strategy="beforeInteractive">` compiled
+  into a `(self.__next_s=self.__next_s||[]).push(...)` queue entry that Next's runtime only
+  processes once the app-router bundle boots. Measured directly with Playwright:
+  `document.documentElement.getAttribute("data-theme")` was still `null` at `domcontentloaded`
+  and only `"dark"` by `load` — i.e. exactly the flash the guard exists to prevent. A plain
+  `<script dangerouslySetInnerHTML>` in `<head>` is parsed and executed inline by the browser and
+  measured correct (`"dark"` at `domcontentloaded`). Same applies to any future
+  before-first-paint init (a locale guess, a saved units preference used in SSR-visible chrome).
+- [ ] **`swapPaletteColors()` in `Map.tsx` is a reusable pattern for any future full-map restyle**,
+  not just light/dark — it walks `map.getStyle().layers` and swaps paint properties by matching
+  their literal string value against an outgoing palette object, so it needs no per-layer list and
+  automatically covers lazy thematic overlays added later. Its one fragile assumption is documented
+  inline: two `Palette` keys sharing a color value in one palette but not the other are ambiguous
+  by value alone (today only `LIGHT.land`/`LIGHT.labelHalo`, disambiguated by paint-property name).
+  **If a future shift adds a palette key, check for a new same-value collision first** — a silent
+  wrong-key swap would repaint the wrong layers with no error.
+- [ ] **A canvas-drawn `map.addImage` icon bakes its colors into pixels and won't follow a
+  `setPaintProperty` restyle** — the road-station square marker was the only one in the codebase
+  and is now regenerated via `updateImage` on a theme switch (`buildRoadStationIcon`). Any future
+  generated icon needs the same treatment, or it'll keep a stale halo/border color after a switch.
+- [ ] **Image coverage on the Djemila/Volubilis batches: 14 of 25 shipped with no `image_url`**
+  (9 of 13 Djemila, 5 of 12 Volubilis) after the research pass found no confirmable Commons
+  filename. Real gap, not exhausted — the Djemila side especially, since the site is a
+  well-photographed UNESCO property and a fresh search budget aimed at Commons *categories*
+  (`Category:Djémila` and its subcategories) rather than individual filenames would likely close
+  most of it. Same "real gap, not exhausted" shape as prior image-coverage notes.
+- [ ] **The 2 remaining image-null legionary fortresses (Melitene, Nicopolis/Alexandria) have now
+  survived three separate search passes** with different angles (tourism, excavation-report,
+  academic). For Nicopolis, the honest finding is that the material exists but not on Commons —
+  ~25 Legio II Traiana Fortis funerary stelae in Alexandria's Graeco-Roman Museum, published in
+  academic PDFs with DAI photo credits, none of them Commons-hosted. A fourth pass along the same
+  lines is unlikely to pay; treat these two as closed unless someone uploads to Commons.
+
 ## Shipped (moved from above; newest on top)
 
+- 2026-08-24 — a cloud shift: Appearance / theme toggle (System / Light / Dark in the
+  hamburger menu, live map + chrome repaint, no reload, persisted). Djemila (13) and
+  Volubilis (12) curated landmark POIs — two more zero-coverage `sites.ts` sites closed.
+  Ancient-sources batch 9 (3 POIs) and the legionary-fortress image gap down to 2 of 28.
 - 2026-08-22 — a cloud shift: Entrance welcome screen (board `[10-P1-4]`) — one sentence, three
   doors (guided tour / browse nearby / just explore), dismissible, once per browser. Water
   infrastructure top-up (axis 3f, +21 features: 6 bridges, 3 dams, 3 cisterns, 1 watermill, 1
