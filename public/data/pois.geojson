@@ -7372,7 +7372,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roma_Appia_Antica_-_mausoleo_Cecilia_Metella.JPG?width=800",
         "image_credit": "Photograph of the Tomb of Cecilia Metella, Via Appia Antica, Wikimedia Commons",
-        "image_alt": "Cylindrical stone tomb of Cecilia Metella beside the Via Appia"
+        "image_alt": "Cylindrical stone tomb of Cecilia Metella beside the Via Appia",
+        "ancient_sources": [
+          {
+            "author": "Inscription",
+            "work": "CIL VI 1274",
+            "ref": "on the tomb, Via Appia",
+            "note": "Names her as Caecilia, daughter of Quintus Caecilius Metellus Creticus and wife of a Crassus — the text carved into the drum that has identified the tomb ever since."
+          }
+        ]
       }
     },
     {
@@ -15239,7 +15247,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ponte%20di%20Augusto%20-Narni-Terni-Umbria.jpg?width=800",
-        "image_credit": "Bridge of Augustus, Narni · Wikimedia Commons"
+        "image_credit": "Bridge of Augustus, Narni · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Martial",
+            "work": "Epigrams",
+            "ref": "7.93",
+            "note": "Closes a poem to a friend detained at Narnia by invoking the town's bridge over the sulfurous river Nar, wishing it to stand forever."
+          }
+        ]
       }
     },
     {
@@ -15297,7 +15313,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20Flavien%20Saint%20Chamas.jpg?width=800",
-        "image_credit": "Pont Flavien, Saint-Chamas · Wikimedia Commons"
+        "image_credit": "Pont Flavien, Saint-Chamas · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Inscription",
+            "work": "CIL XII 647",
+            "ref": "on the bridge's architrave",
+            "note": "Records that L. Donnius Flavus, priest of the imperial cult at Rome and Augustus, funded the bridge by testamentary bequest around 12 BCE, built under two named supervisors."
+          }
+        ]
       }
     },
     {
@@ -15326,7 +15350,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pons%20Fabricius.jpg?width=800",
-        "image_credit": "Pons Fabricius, Rome · Wikimedia Commons"
+        "image_credit": "Pons Fabricius, Rome · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Inscription",
+            "work": "CIL I² 751 / CIL VI 1305",
+            "ref": "carved four times on the bridge itself",
+            "note": "Records L. Fabricius, curator of roads, overseeing the bridge's construction in 62 BCE, with a later restoration notice added under consuls Lepidus and Lollius in 21 BCE."
+          }
+        ]
       }
     },
     {
