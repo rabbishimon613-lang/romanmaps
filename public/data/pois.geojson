@@ -3394,7 +3394,9 @@
           "https://www.worldhistory.org/Legio_I_Adiutrix/",
           "https://www.livius.org/articles/legion/legio-i-adiutrix/ (cross-referenced via search synthesis, direct fetch blocked)"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Legionslager_Brigetio_-_%C3%9Cbersicht.png?width=800",
+        "image_credit": "Plan of the Brigetio legionary fortress, Komarom (Legio I Adiutrix base) · Wikimedia Commons"
       }
     },
     {
@@ -3429,7 +3431,9 @@
             "ref": "4.20",
             "note": "Tacitus describes Bonna as a legionary camp fought over during the Batavian revolt of 69-70 CE, recounting the clash there between Civilis's forces and Roman troops."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bonn_altar_Gebrinius.jpg?width=800",
+        "image_credit": "Roman altar found near Bonn Munster, within the Bonna (Legio I Minervia) fortress site, LVR-LandesMuseum Bonn · Wikimedia Commons"
       }
     },
     {
@@ -3464,7 +3468,9 @@
             "ref": "4.6",
             "note": "Procopius lists Novae among the Danube-line fortresses in Moesia that Justinian's engineers repaired and strengthened."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Novae_prinicipia.jpg?width=800",
+        "image_credit": "Ruins of the principia (headquarters) of the Novae legionary fortress, Svishtov, Bulgaria (Legio I Italica) · Wikimedia Commons"
       }
     },
     {
@@ -3499,7 +3505,9 @@
             "ref": "2.15",
             "note": "Ptolemy's gazetteer of Pannonia Inferior lists Aquincum among the province's towns with coordinates — a bare place-name entry rather than a narrative description."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_amphitheatre_(for_the_military),_Budapest_03.JPG?width=800",
+        "image_credit": "Aquincum military amphitheatre, Budapest, built by Legio II Adiutrix · Wikimedia Commons (CC BY-SA)"
       }
     },
     {
@@ -3534,7 +3542,9 @@
             "ref": "Iter XIV",
             "note": "Records Isca (Legio II Augusta's fortress at Caerleon) as a station on several road routes through Roman Britain, under the name Isca Leg. II Aug."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Caerleon_Roman_Amphitheatre_Artists_Impression.jpg?width=800",
+        "image_credit": "Artist's impression of the Roman amphitheatre at Isca (Caerleon), Legio II Augusta fortress · Wikimedia Commons"
       }
     },
     {
@@ -3590,7 +3600,9 @@
           "https://followinghadrianphotography.com/2025/01/26/lambaesis/",
           "https://en.wikipedia.org/wiki/Legio_III_Augusta"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Praetorium_of_Lambaesis_%E2%80%93_Headquarters_of_the_Legio_III_Augusta_in_Roman_Numidia_1.jpg?width=800",
+        "image_credit": "The Praetorium of Lambaesis, headquarters of Legio III Augusta, Tazoult, Algeria · Wikimedia Commons"
       }
     },
     {
@@ -3617,7 +3629,9 @@
           "https://en.wikipedia.org/wiki/Legio_III_Cyrenaica",
           "https://www.livius.org/articles/legion/legio-iii-cyrenaica/ (cross-referenced via search synthesis)"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Theatre_in_Bosra.jpg?width=800",
+        "image_credit": "Roman theatre at Bostra (Busra al-Sham), seat of Legio III Cyrenaica · Wikimedia Commons"
       }
     },
     {
@@ -3680,7 +3694,9 @@
             "ref": "fragment on the 441 CE Hunnic invasion",
             "note": "Priscus, a 5th-century Byzantine historian, names Singidunum among the Danube cities sacked by Attila's Huns in 441 CE, alongside Viminacium and Margus — a genuine literary description, though written centuries after 117 CE."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalemegdan,_Belgrade_Fortress.jpg?width=800",
+        "image_credit": "Kalemegdan Fortress, Belgrade, built over the Singidunum legionary fortress (Legio IV Flavia Felix) · Wikimedia Commons (CC BY-SA 4.0)"
       }
     },
     {
@@ -3707,7 +3723,9 @@
           "https://en.wikipedia.org/wiki/Legio_IV_Scythica",
           "https://www.academia.edu/47569170/The_Roman_Army_at_Zeugma_recent_research_results"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gaziantep_Zeugma_Museum_Daedalus_mosaic_1871.jpg?width=800",
+        "image_credit": "Roman mosaic from Zeugma (Legio IV Scythica garrison town), Zeugma Mosaic Museum, Gaziantep · Wikimedia Commons"
       }
     },
     {
@@ -3742,7 +3760,9 @@
             "ref": "3.10.5",
             "note": "Ptolemy's gazetteer of Moesia Inferior lists Troesmis among the region's towns with coordinates — a bare place-name entry."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Troesmis,_Moesia_Inferior,_Romania_(40628594764).jpg?width=800",
+        "image_credit": "Ruins of the Troesmis legionary fortress, Romania, base of Legio V Macedonica · Wikimedia Commons"
       }
     },
     {
@@ -3805,7 +3825,9 @@
             "ref": "4.21-30",
             "note": "Tacitus gives an extended narrative of the siege of the legionary camp at Vetera during the Batavian revolt, covering Civilis's blockade, the failed relief efforts, and the garrison's eventual surrender."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amphitheater_Xanten.jpg?width=800",
+        "image_credit": "Reconstructed Roman amphitheatre, Archaeological Park Xanten (Vetera), Legio VI Victrix base · Wikimedia Commons (CC BY-SA)"
       }
     },
     {
@@ -3840,7 +3862,9 @@
             "ref": "fragment on the 441 CE Hunnic invasion",
             "note": "Priscus describes the Huns under Attila destroying Viminacium in 441 CE, naming the city directly among the Danube settlements sacked — written centuries after 117 CE."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amphitheater_in_Viminacium,_2018,_01.jpg?width=800",
+        "image_credit": "Amphitheatre of the Viminacium legionary fortress, Serbia, base of Legio VII Claudia · Wikimedia Commons"
       }
     },
     {
@@ -3877,7 +3901,9 @@
             "ref": "16.12",
             "note": "Ammianus gives a detailed narrative of the 357 CE Battle of Argentoratum (Strasbourg) between Julian's Roman army and the Alamanni, fought at this fortress site."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Koenigshoffen_St%C3%A8le_de_Largennius.jpg?width=800",
+        "image_credit": "Roman legionary tombstone found at Koenigshoffen, the Argentoratum fortress site (Strasbourg), Musee archeologique de Strasbourg · Wikimedia Commons"
       }
     },
     {
@@ -3905,7 +3931,9 @@
           "https://www.heritagedaily.com/2020/10/legio-ix-hispana-the-lost-roman-legion/135890",
           "https://militaryhistorynow.com/2021/03/21/the-missing-legion-romes-lego-ix-hispana-disappears-from-history-in-the-2nd-century-ad-was-it-wiped-out-in-britain/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Multangular_Tower_York.jpg?width=800",
+        "image_credit": "The Multangular Tower, surviving corner of the Eboracum (York) legionary fortress walls, Legio IX Hispana base · Wikimedia Commons"
       }
     },
     {
@@ -3940,7 +3968,9 @@
             "ref": "7.1–5",
             "note": "Titus levels the city but leaves the towers and part of the west wall standing, to quarter the Tenth Legion behind and to show what had been taken."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jerusalem-Tower-of-David-KC-907.jpg?width=800",
+        "image_credit": "Phasael Tower, Citadel of Jerusalem, used as the Legio X Fretensis camp headquarters after 70 CE · Wikimedia Commons (CC BY 4.0)"
       }
     },
     {
@@ -3975,7 +4005,9 @@
             "ref": "16.12",
             "note": "Aurelius Victor states that Marcus Aurelius died at Vindobona in 180 CE — though other ancient authors instead give Sirmium, so the site of his death is itself disputed among ancient sources."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vindobona_Hoher_Markt-14.JPG?width=800",
+        "image_credit": "Roman excavation site at Hoher Markt, Vienna (Vindobona), Legio X Gemina fortress · Wikimedia Commons"
       }
     },
     {
@@ -4010,7 +4042,9 @@
             "ref": "22.8.42",
             "note": "Ammianus names Durostorum in his geographic survey of the lower Danube/Black Sea region; Ptolemy's Geography also lists the town among Moesia Inferior's settlements."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Panorama_of_Durostorum-Drastar_-_Ruins_of_Roman_Fortress_-_Silistra_-_Bulgaria_(28259819967).jpg?width=800",
+        "image_credit": "Panorama of the ruins of the Durostorum Roman fortress, Silistra, Bulgaria, base of Legio XI Claudia · Wikimedia Commons (CC BY)"
       }
     },
     {
@@ -4081,7 +4115,9 @@
             "ref": "3 (Dacia)",
             "note": "Ptolemy's gazetteer of Dacia lists Apulum among the province's towns with coordinates — a bare place-name entry."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Apulum_-_Porta_Principalis_Dextra_-_01.jpg?width=800",
+        "image_credit": "Porta Principalis Dextra, gate of the Apulum legionary fortress, Alba Iulia, Legio XIII Gemina base · Wikimedia Commons"
       }
     },
     {
@@ -4108,7 +4144,9 @@
           "https://en.wikipedia.org/wiki/Carnuntum",
           "https://romanhistory.org/roman-military/legio-XIV-gemina"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Petronell_-_Heidentor.JPG?width=800",
+        "image_credit": "Heidentor triumphal arch at Carnuntum, near the Legio XIV Gemina legionary fortress · Wikimedia Commons"
       }
     },
     {
@@ -4135,7 +4173,9 @@
           "https://www.academia.edu/2483838/The_Movements_of_Legio_XV_Apollinaris_under_Trajan_and_Hadrian",
           "https://www.academia.edu/4104216/Legio_XV_Apollinaris_From_Carnuntum_to_Satala_and_beyond"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Satala,_Roman_legionary_base,_used_by_XVI_Flavia_Firma_and_XV_Apollinaris,_Cappadocia,_Turkey_-_52933824022.jpg?width=800",
+        "image_credit": "Surviving fortress-wall remains at Satala, Sadak, Turkey, base of Legio XV Apollinaris · Wikimedia Commons (CC BY-SA 2.0)"
       }
     },
     {
@@ -4170,7 +4210,9 @@
             "ref": "2.3",
             "note": "Ptolemy's Geography lists Deva among the towns of the Cornovii and explicitly identifies it as the camp of Legio XX Victrix."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chester_amphitheatre.jpg?width=800",
+        "image_credit": "Roman amphitheatre at Deva (Chester), base of Legio XX Valeria Victrix · Wikimedia Commons (CC BY-SA 2.0)"
       }
     },
     {
@@ -4232,7 +4274,9 @@
             "ref": "67.11",
             "note": "Cassius Dio recounts the revolt of Lucius Antonius Saturninus, governor of Germania Superior, who rose against Domitian at Mogontiacum in 89 CE with the two legions stationed there."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombstone_of_a_Roman_Legionary_from_the_Legio_I_Adiutrix_called_Titus_Valerius_Montanus_who_died_in_Mongotiacum_aged_33,_1st_century_AD,_Landesmuseum,_Mainz_(18609109832).jpg?width=800",
+        "image_credit": "Roman legionary tombstone from Mogontiacum (Mainz), Landesmuseum Mainz, fortress city of Legio XXII Primigenia · Wikimedia Commons (CC BY-SA)"
       }
     },
     {
@@ -4260,7 +4304,9 @@
           "https://en.wikipedia.org/wiki/Legio_XXX_Ulpia_Victrix",
           "https://principialegionis.org/lxxxvvhistory.html"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Legionslager_Brigetio_-_%C3%9Cbersicht.png?width=800",
+        "image_credit": "Plan of the Brigetio legionary fortress, Komarom, later base of Legio XXX Ulpia Victrix · Wikimedia Commons"
       }
     },
     {
@@ -15803,6 +15849,246 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anfiteatro%20romano%20di%20Ancona.jpg?width=800",
         "image_credit": "Roman Amphitheatre of Ancona · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.7792,
+          41.1325
+        ]
+      },
+      "properties": {
+        "id": "poi_arch_of_trajan_beneventum",
+        "category": "monument",
+        "name_latin": "Arcus Traiani",
+        "name_english": "Arch of Trajan",
+        "province": "Italia",
+        "modern_location": "Benevento, Campania, Italy",
+        "built": 114,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The Senate and People of Rome dedicated this triumphal arch in 114 CE to mark the opening of Trajan's new road to Brindisi. Carved from Parian marble, the 15.6-meter gate rose exactly where the Via Traiana split from the Via Appia at the town's edge. Its reliefs show Trajan founding colonies, funding the alimenta child-support program, and receiving Dacia's submission. Only three years old at Trajan's death, it survives today essentially untouched by time.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Arch_of_Trajan_(Benevento)",
+          "https://ancientromelive.org/arcus-traiani-arch-of-trajan-benevento/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arco_di_Traiano-Benevento.JPG?width=800",
+        "image_credit": "Arch of Trajan, Benevento · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Dedicatory inscription",
+            "work": "Corpus Inscriptionum Latinarum",
+            "ref": "CIL IX 1558",
+            "note": "The arch's own attic inscription titles Trajan with his full imperial style — Germanicus Dacicus, Pontifex Maximus, holding tribunician power for the eighteenth year — and records the Senate and People of Rome as dedicators."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.7711,
+          41.1304
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_beneventum",
+        "category": "theater",
+        "name_latin": "Theatrum Beneventanum",
+        "name_english": "Roman Theatre of Benevento",
+        "province": "Italia",
+        "modern_location": "Benevento, Campania, Italy",
+        "built": 126,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Hadrian inaugurated this theatre in 126 CE, nine years after Trajan's death, on ground that held no such building in 117 CE. Its finished cavea spanned 90 meters and sat up to 15,000 spectators, rivaling any stage in southern Italy. Caracalla enlarged it further between 200 and 210 CE, an expansion recorded on a stone at the stage entrance. Buried for centuries, it was rediscovered in 1890 and reopened to the public in 1957.",
+        "sources": [
+          "https://www.opencampania.it/en/poi/Teatro-Romano-Benevento/",
+          "https://www.historyhit.com/locations/roman-theatre-of-benevento/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Benevento-Teatro%20Romano.jpg?width=800",
+        "image_credit": "Roman Theatre, Benevento · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.7674,
+          41.1324
+        ]
+      },
+      "properties": {
+        "id": "poi_amphitheatre_beneventum",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum Beneventanum",
+        "name_english": "Roman Amphitheatre of Benevento",
+        "province": "Italia",
+        "modern_location": "Benevento, Campania, Italy",
+        "built": 60,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Nero paused at Beneventum in 63 CE to watch a gladiator show staged here by the courtier Vatinius. Built at the city's edge for fast crowd access, the arena measured roughly 160 by 130 meters, rivaling the amphitheatres of Capua and Verona. A detached branch of Rome's own gladiator school trained fighters on site. Its buried remains stayed hidden until archaeologists uncovered them in 1985.",
+        "sources": [
+          "https://it.wikipedia.org/wiki/Anfiteatro_romano_di_Benevento",
+          "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Annals/15B*.html"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anfiteatro%20romano%20di%20Benevento%2006.jpg?width=800",
+        "image_credit": "Roman Amphitheatre of Benevento · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Annals",
+            "ref": "15.34",
+            "note": "Nero, travelling south, paused at Beneventum to watch a lavish gladiatorial show that the courtier Vatinius was staging there."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.777,
+          41.1316
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_isis_beneventum",
+        "category": "temple",
+        "name_latin": "Iseum Beneventanum",
+        "name_english": "Temple of Isis",
+        "province": "Italia",
+        "modern_location": "Benevento, Campania, Italy",
+        "built": 88,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Domitian founded this sanctuary to Isis around 88 CE, shipping in genuine Aswan granite rather than local stone. Twin obelisks carved with hieroglyphs flanked its entrance, one hailing the goddess as Lady of Beneventum. The find makes Beneventum home to the largest collection of original Egyptian antiquities anywhere outside Egypt. One obelisk still stands in Piazza Papiniano, moved there in 1872, while its broken twin sits in the Museo del Sannio.",
+        "sources": [
+          "https://www.getty.edu/publications/egypt-classical-world/07/",
+          "https://it.wikipedia.org/wiki/Obelischi_egizi_di_Benevento"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Benevento%20-%20Obelisco%20neoegizio%20in%20piazza%20Papiniano.jpg?width=800",
+        "image_credit": "Egyptian obelisk of the Temple of Isis, Piazza Papiniano, Benevento · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.7654,
+          41.1314
+        ]
+      },
+      "properties": {
+        "id": "poi_ponte_leproso",
+        "category": "bridge",
+        "name_latin": "Pons Lapideus",
+        "name_english": "Ponte Leproso",
+        "province": "Italia",
+        "modern_location": "Benevento, Campania, Italy",
+        "built": -268,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Beneventum's Via Appia crossed the Sabato River on this bridge, raised around the colony's founding in the 3rd century BCE. Six stone arches originally carried the road; four still stand today. Septimius Severus and Caracalla restored the span in 202 CE after centuries of heavy traffic. Its ancient paving stones stayed in use as the working roadbed into the 20th century.",
+        "sources": [
+          "https://pleiades.stoa.org/places/668784750",
+          "https://www.eptbenevento.it/en/monuments/leproso-bridge"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Benevento%20-%20Ponte%20Leproso%2001.jpg?width=800",
+        "image_credit": "Ponte Leproso, Benevento · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.7834,
+          41.1312
+        ]
+      },
+      "properties": {
+        "id": "poi_walls_beneventum",
+        "category": "wall",
+        "name_latin": "Moenia Beneventana",
+        "name_english": "City Walls of Beneventum",
+        "province": "Italia",
+        "modern_location": "Benevento, Campania, Italy",
+        "built": -268,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Rome's Latin colony at Beneventum, founded in 268 BCE, ringed its hilltop with a defensive circuit running roughly 2,100 meters around a pentagon-shaped town of nearly 30 hectares. The walls climbed the high ground between the Calore and Sabato rivers, guarding the point where the Via Appia entered from the west. Medieval fortifications nearly two miles long later rose along much of the same ancient line. Sections of the original masonry still surface beneath today's city center.",
+        "sources": [
+          "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Dbeneventum",
+          "https://italyastheromansdid.it/2025/01/18/roman-benevento-beneventum/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.7822,
+          41.13
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_beneventum",
+        "category": "forum",
+        "name_latin": "Forum Beneventanum",
+        "name_english": "Roman Forum of Benevento",
+        "province": "Italia",
+        "modern_location": "Benevento, Campania, Italy",
+        "built": -268,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Beneventum's forum anchored the Latin colony founded on this ground in 268 BCE, sitting where the town's decumanus crossed its cardo. By Trajan's reign brick civic buildings and shrines to the imperial cult ringed the square on every side. The complex sat roughly 300 meters from the new Arch of Trajan, at the heart of the colony. Wartime bombing later exposed massive brick foundations that archaeologists have only partly excavated.",
+        "sources": [
+          "https://www.roamintheempire.com/index.php/2025/01/08/beneventum-part-i/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.7825,
+          41.1299
+        ]
+      },
+      "properties": {
+        "id": "poi_baths_beneventum",
+        "category": "bathhouse",
+        "name_latin": "Thermae Beneventanae",
+        "name_english": "Roman Baths of Benevento",
+        "province": "Italia",
+        "modern_location": "Benevento, Campania, Italy",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A monumental bath complex once filled the ground beneath today's Piazza Cardinal Pacca, steps from Beneventum's forum. Brick walls and floor remains uncovered there date to the first and second centuries CE, the decades of the city's building boom under Trajan. Medieval nuns later built a convent chapel directly into one of the bathing halls, preserving its walls through reuse. Excavators have since found a mosaic floor and bathing pools beneath the piazza.",
+        "sources": [
+          "https://www.opencampania.it/en/poi/"
+        ],
+        "confidence": "medium"
       }
     }
   ]
