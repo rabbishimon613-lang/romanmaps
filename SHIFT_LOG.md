@@ -7,6 +7,158 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 54 — 2026-08-24 (this shift's own prompt claimed "Shift 3 of four")
+
+Same stale-numbering mismatch every shift since #13 has flagged, still unresolved — SHIFT_LOG
+was 53 real shifts deep at session start, not 2. Session started `HEAD` detached at Shift 53's
+own final commit (`18d7466`) with local `main` stuck at Shift 28's commit (`709a480`); a fresh
+`git fetch origin main` confirmed `origin/main` matched detached `HEAD` exactly (`git ls-remote`
+first, per the standing habit FEATURE_BACKLOG.md's own note recommends), so `git checkout -B
+main origin/main` re-pointed the local branch with zero risk — same benign container-creation
+race every recent shift has documented, no work at risk. Re-confirmed the standing network
+finding independently: `curl`/`WebFetch` to `overpass-api.de`, `commons.wikimedia.org`,
+`en.wikipedia.org`, `pleiades.stoa.org`, `penelope.uchicago.edu`, and `www.livius.org` all return
+`EGRESS_BLOCKED`/`CONNECT tunnel failed, response 403`. `WebSearch` stayed reachable and was the
+only research channel. Unlike the last few shifts, `npm run dev` + Playwright worked fine for
+the *first* live-verification pass (dark-mode check, before any data changes) but started 404ing
+on every `/place/[slug]` route — including long-established ones like `poi_forum_romanum` — after
+a `pkill`+restart later in the session; root-caused as a `next dev`-only quirk isolated to this
+sandbox (a full `npm run build` at the same commit generated and served every new page correctly
+from the static `.next/server/app/place/*.html` output, confirmed by grepping three of this
+shift's own new pages directly), not a data or code regression — flagging in FEATURE_BACKLOG for
+whoever hits it next rather than chasing it further.
+
+### Board check
+
+Read `BOARD.md`'s claiming protocol. No `[~]` claims standing. The unclaimed tickets are the same
+large P0 refactors recent shifts have correctly declined (`[12-P0-1]` merge-themes, `[03-P0-1]`
+schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terrain, `[13-P0-2]` image-audit) — still real
+multi-pass work, still not attempted solo this shift given everything else queued. Picked up two
+threads instead, no claim commit needed (same precedent recent shifts have documented for
+standing/axis work): the `[09-P0-1]` ancient-sources gap (standing) and the prior shift's own
+handoff note — the largest still-open image-coverage cluster, the 28 `poi_fortress_*` legionary
+fortresses — plus a fresh `add`: two of the sixteen `sites.ts` sites sitting at zero curated
+`pois.geojson` coverage (`FEATURE_BACKLOG.md`'s own long-standing note on this gap), picked
+Paestum and Beneventum for their well-documented, well-dated Trajanic-era-or-earlier monuments.
+Ratio this shift: 2 `add` (Paestum, Beneventum) + 2 `deepen` (ancient-sources, fortress images) +
+1 `polish` (Track B) — leans add-heavier than the board's 1:2:1 guideline, but the board ratio
+governs board tickets specifically and axis/standing work has followed a looser version of it for
+several shifts running; logging the skew rather than silently claiming exact compliance.
+
+### Track A — Beneventum + Paestum: first curated `pois.geojson` coverage
+
+Delegated two parallel research passes (WebSearch-only, no direct Commons/Wikipedia fetch
+available) for the two zero-coverage sites, cross-checked against a proximity scan of every
+`sites.ts` site's center against `pois.geojson` (16 sites at zero curated points; picked these
+two for having the strongest 117-CE-dateable monument sets, not the largest population).
+
+**Beneventum** (8 features): the **Arch of Trajan** is the flagship — dedicated 114 CE, its own
+CIL IX 1558 attic inscription cited directly, three years old at Trajan's death and the exact
+point where the Via Traiana split from the Via Appia. The Neronian-era amphitheatre carries a
+genuine Tacitus citation (*Annals* 15.34, Nero watching Vatinius's games there in 63 CE). The
+Isis sanctuary (Domitianic, ~88 CE — Beneventum holds the largest collection of original Egyptian
+antiquities outside Egypt), Ponte Leproso, the city walls, forum, and baths round out the extant
+set. The **Roman Theatre confirmed the exact trap the research brief warned about**: multiple
+independent sources agree it was a Hadrianic building, inaugurated 126 CE — nine years past this
+map's snapshot — so it's included with `extant_117ce: false` rather than assumed present because
+"Beneventum obviously had a theatre." Two candidates were researched and dropped: Ponte Corvo/
+Ponte Valentino (one source dated the latter to "the 2nd century by emperor Flavius Valens" — a
+4th-century emperor, an internal contradiction that killed the candidate outright) and a
+standalone Traianeum/temple-of-Trajan, never attested in any source found.
+
+**Paestum** (15 features): the three great Doric temples — Neptune/Hera II (~450 BCE), the
+"Basilica"/Hera I (~550 BCE, one of the oldest standing Greek temples in Italy), and Athena
+(~500 BCE) — all correctly `extant_117ce: true` with their original Greek-period build dates,
+since Roman-era Paestum lived alongside these as standing monuments rather than building new
+ones. The Roman-period layer (forum, curia, amphitheater — one of the oldest of its form anywhere,
+predating the Colosseum — via sacra) dates from the 273 BCE Latin colony. The full ~5km wall
+circuit and all four named gates (Sirena, Marina, Giustizia, Aurea) are included, plus the Temple
+of Mens Bona (a Second Punic War loyalty dedication). Two Lucanian-period structures — the Heroon
+founder's shrine and the rock-cut Ekklesiasterion assembly hall — were deliberately buried by
+Roman colonists around 273 BCE and are correctly `extant_117ce: false`, sealed underground for
+four centuries by Trajan's reign. The research pass's `province` value ("Italia (Regio III
+Lucania et Bruttii)") was corrected to plain `"Italia"` before merging — confirmed against the
+existing `paestum`/`beneventum` `sites.ts` entries, which already use unqualified `"Italia"` for
+every Italian-peninsula site regardless of Augustan regio.
+
+### Track A — `[09-P0-1]` ancient-sources: 6 more high-confidence POIs
+
+Standing ticket, continued from Shift 53's 67-POI gap. Delegated a themed batch of 18 candidates
+(bridges, amphitheatres, famous tombs, mines, pottery workshops, Palmyra/Petra tombs) to a
+background research pass instructed to reject near-misses rather than force a connection. 6 came
+back real: the Tomb of Amyntas (TAM II 30, the inscription that names the monument), the Nereid
+Monument (a fragmentary bilingual statue-base epigram, SEG 28.1245), the Basilica of Pompeii (CIL
+IV 1904, a wall graffito joking about how much writing the wall has survived), La Graufesenque
+(Marichal's published corpus of bilingual Latin/Gaulish firing-list graffiti — the single richest
+surviving body of written Gaulish), the Tower of Elahbel at Palmyra (its own 103 CE foundation
+inscription), and Villa Poppaea at Oplontis (a genuine titulus-pictus amphora label naming a
+freedman of "a Poppaea" — written up honestly as the traditional-not-certain basis for the
+villa's association with Nero's wife, not asserted as settled fact). 12 of 18 came back honestly
+unsourced, several explicitly rejected as near-misses the research caught before they became a
+misattribution: Dolaucothi (Pliny describes Spanish mining, never Britain), Trajan's Markets
+(Aulus Gellius/Cassius Dio describe the neighboring Forum, not the Markets), the Valley of the
+Tombs at Palmyra (Pliny describes Palmyra generally, never the tombs specifically), and both Petra
+tombs (Strabo covers Petra broadly, never either monument by name). Gap now 61 confidence:high
+POIs (67→61).
+
+### Track A — legionary-fortress image top-up: 23 of 28
+
+Continuing Shift 53's own handoff note — the largest single image-coverage cluster left, all 28
+`poi_fortress_*` records had zero image at all. Preferred real surviving fortress structures
+(the Multangular Tower at York, the Heidentor near Carnuntum, the Porta Principalis Dextra at
+Apulum) or an attached amphitheatre/theatre where the fortress core itself is gone (Caerleon,
+Chester, Aquincum, Xanten, Viminacium), falling back to an on-site museum artifact only where no
+structural remains exist (legionary tombstones at Bonn and Mainz, a mosaic at Zeugma). 5 of 28
+came back with no confirmable Commons filename — both Caparcotna/Legio records (the joint Judaean
+base), Raphanaea, Melitene, and Nicopolis/Alexandria — left alone rather than guessed. Gap now
+5/28.
+
+### Track B — verified and closed the "Dark mode / night-map style" backlog item
+
+`FEATURE_BACKLOG.md` had this unchecked since Shift 2, but reading `app/Map.tsx` and
+`app/globals.css` found it already fully shipped: a `LIGHT`/`DARK` `Palette` keyed off
+`prefers-color-scheme` drives every base-map paint property (parchment `#f4ead5` → dark leather
+`#232628`, sea `#a9d1e3` → dark navy `#0f2233`), and the chrome tokens follow the same media
+query. Verified live rather than trusting the code read alone: `next dev` + Playwright with
+`colorScheme: 'dark'`/`'light'` browser contexts at 1280×900 and 375×812, confirming both the
+computed chrome background AND `map.getPaintProperty()` values match the palette exactly in each
+mode. Closed the checkbox with a note rather than leaving it open or, worse, re-implementing
+something that already works. Found and logged the real remaining gap instead of attempting it in
+the same pass: no in-app manual light/dark toggle exists (OS-preference-only) — scoped it
+honestly as a separate, materially bigger feature (every `P.<key>` paint-property callsite
+grepped first: ~30 distinct layer IDs would need either a live `setPaintProperty` pass or a full
+map remount, and a remount risks breaking the ~8 components that grab a `window.__map` reference
+once on their own mount and never re-poll) and left it as a fresh backlog item for whoever has a
+full Track B slice free for it.
+
+### State, verification, next
+
+`npm run validate`: 0 errors, 17 warnings, identical set to Shift 53's own (no new warnings from
+any of the three batches). `npm run build`: clean at every push (three separate commits, three
+clean pre-push gates), 620 static pages at the final count. Spot-checked the actual generated
+`.next/server/app/place/*.html` output directly for three of this shift's new pages (Arch of
+Trajan, Temple of Neptune at Paestum, the Legio IX Hispana fortress) after `next dev` started
+404ing on every `/place/[slug]` route mid-session (see the network-and-verification note above) —
+all three render with the correct new content. `npm run metrics --write`: 497→520 POIs, image
+coverage 57.1%→60.8%, ancient-source coverage of confidence:high POIs 73.0%→73.2%, curated places
+total crossed 2,000 for the first time (2,000 exactly). Four commits, each pushed with a clean
+`git pull --rebase` first and a clean pre-push build gate.
+
+**Next shift**: `[09-P0-1]`'s gap is now 61 confidence:high POIs, same diminishing-returns shape
+Shift 53 already flagged — the pool is increasingly tombs/villas/shipwrecks/industrial sites
+without a real ancient source, and `[09-P1-4]` epigraphy is the standing channel that's already
+absorbed the inscription-bearing wins. The fortress-image gap is down to 5/28 (Caparcotna×2,
+Raphanaea, Melitene, Nicopolis) — likely needs a different search angle (an academic excavation-
+report PDF search rather than tourism-site snippets) rather than a repeat of this shift's
+approach. 14 of `sites.ts`'s 16 zero-coverage sites remain (Djemila, Volubilis, Leptis Magna,
+Sabratha, Jerash, Trier, Italica, Tivoli, Palestrina, Cumae, Capua, Brescia, Milan, Rimini, Luni —
+Beneventum and Paestum closed this shift) — same well-bounded Track A shape, pick one or two per
+shift per `FEATURE_BACKLOG.md`'s own note. The board's large P0 refactors remain the standing
+next pick for whichever shift first gets a network-unblocked environment or a dedicated
+multi-pass budget large enough to see one through in one sitting.
+
+---
+
 ## Shift 53 — 2026-08-24 (this shift's own prompt claimed "Shift 2 of four")
 
 Same stale-numbering mismatch every shift since #13 has flagged — SHIFT_LOG was 52 real shifts

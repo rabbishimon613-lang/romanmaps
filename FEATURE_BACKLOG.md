@@ -472,6 +472,28 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
   shift with a full 25-30% slice free for it — not something to rush into the same pass as the
   verification above.
 
+## New ideas spotted this shift (2026-08-24, cloud shift — Beneventum/Paestum/fortress-images)
+
+- [ ] **`next dev` started 404ing on every `/place/[slug]` route mid-session, including
+  long-established ones like `poi_forum_romanum`, not just this shift's new data.** Happened after
+  a `pkill -f "next dev"` + restart partway through the session (the first restart, right after
+  the dark-mode verification pass, worked fine — this was a *second* restart later on). Root-
+  caused as isolated to `next dev` in this sandbox: a full `npm run build` at the exact same
+  commit generated and correctly served all 620 pages, confirmed by grepping three of this shift's
+  own new pages directly out of `.next/server/app/place/*.html`. Didn't chase the dev-server root
+  cause further given production build is what Vercel actually deploys — but a future shift
+  relying on `next dev` + Playwright for live verification (per `[02-P0-4]`'s note that this
+  became possible again 2026-08-19) should know a `/place/` 404 doesn't necessarily mean the data
+  is broken; cross-check against a real `npm run build` before concluding a regression.
+- [ ] **14 of `sites.ts`'s 16 zero-`pois.geojson`-coverage sites remain** (Djemila, Volubilis,
+  Leptis Magna, Sabratha, Jerash, Trier, Italica, Tivoli, Palestrina, Cumae, Capua, Brescia, Milan,
+  Rimini, Luni) after this shift closed Beneventum and Paestum. Same well-bounded Track A shape
+  the original note (2026-08-12, Shift 6) already described — pick one or two per shift. Worth
+  checking each candidate's monument set for 117-CE datability before committing a research pass
+  to it, the way this shift did for Beneventum's theatre trap — some of these (Volubilis
+  especially: its Capitolium, Basilica, and Arch of Caracalla are all genuinely 3rd-century, so a
+  naive pass could end up with a mostly-`extant_117ce:false` set) will need more care than others.
+
 ## Shipped (moved from above; newest on top)
 
 - 2026-08-22 — a cloud shift: Entrance welcome screen (board `[10-P1-4]`) — one sentence, three
