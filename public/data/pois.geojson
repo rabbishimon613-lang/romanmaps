@@ -3046,7 +3046,15 @@
           "https://www.pompeii.org.uk/m.php/museo-basilica-pompei-it-65-m.htm",
           "https://www.planetpompeii.com/en/map/the-basilica.html"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Anonymous",
+            "work": "Wall graffito, Basilica, Pompeii",
+            "ref": "CIL IV 1904",
+            "note": "A visitor scratched a line of verse onto the Basilica's interior wall: \"Admiror, paries, te non cecidisse ruinis, qui tot scriptorum taedia sustineas\" — \"I am amazed, wall, that you haven't collapsed under the weight of so much tedious writing.\""
+          }
+        ]
       }
     },
     {
@@ -7171,7 +7179,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LaGraufesenqueGrandFourEtThermes.jpg?width=800",
-        "image_credit": "The great kiln (Grand Four) and baths at La Graufesenque · Wikimedia Commons (CC BY-SA)"
+        "image_credit": "The great kiln (Grand Four) and baths at La Graufesenque · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": [
+          {
+            "author": "Anonymous",
+            "work": "Firing-list graffiti, La Graufesenque workshop",
+            "ref": "R. Marichal, Les graffites de La Graufesenque, Gallia Supplément 47 (1988), ~250 texts",
+            "note": "Potters scratched bilingual Latin-and-Gaulish tallies onto unfired dishes before each kiln load, naming vessel types and counting them with native Gaulish numerals — cintus, allos, tritios, petuarios — the single richest surviving body of written Gaulish."
+          }
+        ]
       }
     },
     {
@@ -11088,7 +11104,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Colonnade Villa Poppaea Oplontis Torre Annunziata Italy.jpg?width=800",
-        "image_credit": "Peristyle colonnade, Villa Poppaea, Oplontis · Wikimedia Commons"
+        "image_credit": "Peristyle colonnade, Villa Poppaea, Oplontis · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Anonymous",
+            "work": "Painted amphora label (titulus pictus), Villa A, Oplontis",
+            "ref": "Reading \"Secundo Poppaeae\"",
+            "note": "A wine amphora recovered on site carries a painted label naming Secundus, a freedman of a Poppaea — the artifact that first tied the villa, by tradition rather than certain proof, to the family of Nero's wife Poppaea Sabina."
+          }
+        ]
       }
     },
     {
@@ -13963,7 +13987,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tower_of_Elahbel,_Palmyra.jpg?width=800",
-        "image_credit": "Photo: Wikimedia Commons contributor"
+        "image_credit": "Photo: Wikimedia Commons contributor",
+        "ancient_sources": [
+          {
+            "author": "Elahbel and his brothers",
+            "work": "Dedicatory inscription, Tower of Elahbel",
+            "ref": "Greek and Palmyrene text, Seleucid Era 414 (103 CE)",
+            "note": "The tower's own foundation inscription records that Marcus Ulpius Elahbel and his brothers, sons of Wahballat, built it as a family tomb in 103 CE — fourteen years before this map's snapshot."
+          }
+        ]
       }
     },
     {
@@ -14157,7 +14189,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Panoramic_view_of_Fethiye_from_Tomb_of_Amyntas_(2022).jpg?width=800",
-        "image_credit": "Photo: Wikimedia Commons contributor, CC BY-SA 4.0"
+        "image_credit": "Photo: Wikimedia Commons contributor, CC BY-SA 4.0",
+        "ancient_sources": [
+          {
+            "author": "Anonymous",
+            "work": "Dedicatory inscription, Tomb of Amyntas, Telmessos",
+            "ref": "TAM II 30",
+            "note": "The Greek inscription carved beside the tomb's entrance names its occupant — Amyntou tou Hermagiou, \"[tomb] of Amyntas, son of Hermagias\" — and its letterforms date it to around 350 BCE, which is how the monument got its name."
+          }
+        ]
       }
     },
     {
@@ -14213,7 +14253,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Reconstruction_Nereid_Monument.jpg?width=800",
-        "image_credit": "Reconstruction drawing, Wikimedia Commons"
+        "image_credit": "Reconstruction drawing, Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Anonymous",
+            "work": "Statue-base inscription, Nereid Monument, Xanthos",
+            "ref": "Greek text SEG 28.1245, Lycian text N 311",
+            "note": "A bilingual Greek-and-Lycian text on the monument's statue base survives in fragments, invoking Artemis the huntress alongside what scholars read as a record of the dynast Arbinas's campaigns."
+          }
+        ]
       }
     },
     {

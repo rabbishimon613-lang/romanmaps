@@ -67,7 +67,7 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
 - [x] **Roman-style typography for POI labels** — Cinzel or Trajan Pro (open-source alternative) for major place labels. *(2026-08-15, Shift 18: Cinzel via `next/font/google`, exposed as `--font-cinzel` and applied through a shared `.roman-label` class — Place details panel titles, `SitesPanel`/`LegionLocator` list rows, and every POI's on-map pin label (`PoiMarkers.tsx`). Deliberately scoped away from native MapLibre map text (city/place labels) — those render through a glyph-PBF pipeline that would need a whole separate generated-tileset lift to support a new font, a materially bigger job than swapping a CSS `font-family` on HTML elements. Verified in-browser at 1280x800 and 390x844: computed font-family resolves to the real Cinzel stack, renders correctly on both panel titles and map pins.)*
 - [ ] **Terrain shading** — subtle hillshade under the parchment layer (Alps, Pyrenees, Anatolian plateau visible).
 - [x] **Onboarding hint** — first-visit tooltip on the search bar: "Try 'Londinium' or 'Ephesus'." *(2026-08-15, Shift 19: `app/useOnboardingHint.ts` + wired into `app/Chrome.tsx`. Confirmed both example names now resolve in `places_medium.geojson` (Shift 4's gazetteer patch already fixed the "Londinium" gap this item used to be blocked on) before shipping. Dismissible tooltip under the search card, persists dismissal to `localStorage["roman-maps:onboarding-hint-seen"]`, dismisses on typing, focusing the search box, or an explicit close button. Verified in-browser at 1280x800 and 390x844: shows on a fresh localStorage, disappears and stays gone after typing + reload, and the close button works standalone.)*
-- [ ] **Dark mode / night-map style** — parchment → dark leather, water dark blue.
+- [x] **Dark mode / night-map style** — parchment → dark leather, water dark blue. *(Found already shipped, 2026-08-24 cloud shift: `app/Map.tsx`'s `LIGHT`/`DARK` `Palette` objects (added alongside `app/globals.css`'s chrome token set — see that file's own header comment, "the basemap already follows prefers-color-scheme") drive every base-map paint property — land `#f4ead5` → `#232628`, sea `#a9d1e3` → `#0f2233`, provinces/rivers/lakes/roads/labels all repalette too — off `prefers-color-scheme`, resolved once at map-style construction (`prefersDark()`, line 187). This item's literal ask (parchment↔dark-leather map, light↔dark water) was simply never checked off despite existing; no code changed this pass. Verified live with `next dev` + Playwright, `colorScheme: 'dark'`/`'light'` contexts: desktop 1280×900 light renders the parchment map with light chrome; mobile 375×812 dark renders `map.getPaintProperty('bg','background-color') === "#0f2233"` and `land === "#232628"` (exact `DARK` palette values) with dark chrome — screenshots confirm both. **Known gap, not this item's scope**: the palette is OS-preference-only, computed once at mount — there's no in-app manual light/dark toggle, and repainting one live would mean threading `setPaintProperty` through ~30 layer IDs that currently take their color only from the literal `P.*` value baked in at style-creation time (grepped every callsite before deciding this — MapLibre's dozen circle-layer thematic overlays included). That's a real, separate, materially bigger feature (`app/useTheme.ts` + a settings toggle + a live-repaint pass) than what this checkbox asked for — flagging as a fresh backlog item below rather than attempting it in the same pass as this verification.)*
 
 ## New ideas spotted this shift (2026-08-11, Shift 2)
 
@@ -452,6 +452,25 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
   batch); the 28 `poi_fortress_*` legionary-fortress records are the largest untried single
   cluster left. Worth adding a confidence:high image-coverage row to `scripts/metrics.mjs`'s
   output so this doesn't need re-deriving by hand each time.
+
+## New ideas spotted this shift (2026-08-24, cloud shift — dark-mode verification)
+
+- [ ] **A manual light/dark/system theme toggle is a real, separate feature from the
+  "Dark mode / night-map style" item just closed above** — the map and chrome already repalette
+  correctly off OS `prefers-color-scheme`, but there's no in-app override, so a user whose OS is
+  stuck light (or dark) can't see the other mode. Scoping this honestly: `app/globals.css`'s
+  chrome tokens could take a `:root[data-theme="dark"]` override cleanly (same pattern this repo
+  already documents for artifact theming), but `app/Map.tsx` bakes its `LIGHT`/`DARK` `Palette`
+  into every layer's paint properties once at style-construction time (`prefersDark()`, one read,
+  line 187) — grepped every `P.<key>` callsite before writing this note: it's ~30 distinct layer
+  IDs (base map, provinces, roads, every thematic circle-layer's `circle-stroke-color`, label
+  halos). A live toggle needs either a `setPaintProperty` pass over all ~30, or a full map
+  remount — and a remount is riskier than it looks, since `Ruler.tsx`/`Directions.tsx`/
+  `ZoomControl.tsx`/`Compass.tsx`/`PoiMarkers.tsx`/`PeopleMarkers.tsx`/`ContextMenu.tsx`/
+  `ProvincePanel.tsx` all grab a live reference to `window.__map` once on their own mount and
+  don't currently re-poll on a later map replacement. Real, well-scoped Track B work for a future
+  shift with a full 25-30% slice free for it — not something to rush into the same pass as the
+  verification above.
 
 ## Shipped (moved from above; newest on top)
 
