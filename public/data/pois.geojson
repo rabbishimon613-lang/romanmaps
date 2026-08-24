@@ -9960,7 +9960,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Monumentul_triumfal_Tropaeum_Traiani_sat_Adamclisi_-_privire_de_ansamblu_01.JPG?width=800",
-        "image_credit": "Tropaeum Traiani monument at Adamclisi, photo by Munteanu Anca · Wikimedia Commons"
+        "image_credit": "Tropaeum Traiani monument at Adamclisi, photo by Munteanu Anca · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Dedicatory inscription, Tropaeum Traiani, Adamclisi",
+            "work": "CIL III, 12467",
+            "ref": "12467",
+            "note": "A fragmentary but well-reconstructed inscription dedicates the monument to Mars Ultor, naming Trajan with his titles as of 109 CE -- Germanicus Dacicus, holding tribunician power for the 13th time, acclaimed imperator for the 6th time, consul for the 5th time -- commemorating the defeat of the Dacians and their Sarmatian allies."
+          }
+        ]
       }
     },
     {
@@ -12990,7 +12998,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Interior_Of_The_Columbarium_Of_Pomponius_Hylas,_Rome.jpg?width=800",
-        "image_credit": "Photo: Wikimedia Commons contributor"
+        "image_credit": "Photo: Wikimedia Commons contributor",
+        "ancient_sources": [
+          {
+            "author": "Mosaic dedicatory inscription, Columbarium of Pomponius Hylas, Rome",
+            "work": "CIL VI, 5552",
+            "ref": "5552",
+            "note": "A colored mosaic inscription set into the entrance stairway names Gnaeus Pomponius Hylas and Pomponia Vitalinis, freedwoman of Gnaeus. A V for vivit over Pomponia's name shows she was still alive when it was added; Hylas had purchased the pre-existing early-1st-century CE chamber and installed this panel."
+          }
+        ]
       }
     },
     {
@@ -13044,7 +13060,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomb_of_the_Haterii_crane_relief_(Gusman_Art_decoratif_I_pl_27).jpg?width=800",
-        "image_credit": "19th-century plate reproduction, Wikimedia Commons"
+        "image_credit": "19th-century plate reproduction, Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Inscription associated with the Tomb of the Haterii, Rome",
+            "work": "CIL VI, 607",
+            "ref": "607",
+            "note": "Names Quintus Haterius Tychicus, a freedman public building contractor, and is the textual basis scholars use to link the tomb's ownership to a Haterii family of builders -- consistent with the tomb's marble reliefs depicting monuments they built, including the Colosseum. The inscription is a scholarly attribution rather than a label found in situ on the monument itself; the tomb's own on-site inscription, if any, is lost."
+          }
+        ]
       }
     },
     {
@@ -13419,7 +13443,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mausol%C3%A9e_libyco-punique_de_Dougga_114.jpg?width=800",
-        "image_credit": "Photo: Wikimedia Commons contributor, CC BY-SA"
+        "image_credit": "Photo: Wikimedia Commons contributor, CC BY-SA",
+        "ancient_sources": [
+          {
+            "author": "Libyco-Punic bilingual dedicatory inscription, Mausoleum of Ateban, Dougga",
+            "work": "KAI 100 (Punic text; the parallel Libyan/Numidian text is KAI 101)",
+            "ref": "100",
+            "note": "Bilingual Punic/Libyan inscription from the podium frieze of the mausoleum, naming the Numidian prince Ateban son of Lepmatath as honoree; it was a key text used to decipher the Libyco-Berber script. British consul Thomas Reade removed part of it in 1842, damaging the monument, and it is now held in the British Museum."
+          }
+        ]
       }
     },
     {
@@ -13709,7 +13741,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hezir_tomb.JPG?width=800",
-        "image_credit": "Photo: Wikimedia Commons contributor"
+        "image_credit": "Photo: Wikimedia Commons contributor",
+        "ancient_sources": [
+          {
+            "author": "Hebrew funerary inscription, Tomb of Benei Hezir, Kidron Valley",
+            "work": "CIIP I/1 (Corpus Inscriptionum Iudaeae/Palaestinae, vol. I: Jerusalem, Part 1), no. 137",
+            "ref": "137",
+            "note": "Inscription carved on the architrave above the tomb's facade naming Eleazar, Hania, Jo'azar, Judah, Shimon and Johanan, sons of Joseph son of Oved, and Joseph and Eleazar sons of Hania, as priests of the sons of Hezir -- identifying the tomb as belonging to a priestly family active in the Second Temple period."
+          }
+        ]
       }
     },
     {
