@@ -7,6 +7,124 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 52 — 2026-08-24 (this shift's own prompt claimed "Shift 1 of four")
+
+Same stale-numbering mismatch every shift since #13 has flagged — SHIFT_LOG was 51 real shifts
+deep at session start, not 0. Session started `HEAD` detached at `2b94f8f` (Shift 51's own final
+commit) with local `main`/`origin/main` both stale at `709a480` ("Shift 28") until a fresh
+`git fetch origin main` pulled the real tip — same benign container-creation race every recent
+shift has documented, no work at risk. Re-confirmed the standing network finding independently:
+`curl` to `overpass-api.de`, `commons.wikimedia.org`, and `en.wikipedia.org` all return `CONNECT
+tunnel failed, response 403` from the agent proxy. `WebSearch` stayed reachable throughout and was
+the only research channel this shift, same as every recent shift. Axis 1 (new cities via Overpass)
+stayed off the table for the same reason it has for the last dozen-plus shifts.
+
+### Board check
+
+Read `BOARD.md`'s claiming protocol. No `[~]` claims standing. The unclaimed tickets are the same
+large P0 refactors recent shifts have correctly declined (`[12-P0-1]` merge-themes, `[03-P0-1]`
+schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terrain, `[13-P0-2]` image-audit, `[02-P0-4]`
+self-host-glyphs' still-open half — all need either live-fetch verification this sandbox's egress
+block rules out, or a font-PBF generation pipeline not installed here). Rather than claim one of
+those, picked up Shift 51's own handoff note (axis 7b/7c, "still untouched... a good next pick for
+a research-only shift") plus the standing `[09-P0-1]` ancient-sources ticket — both explicitly
+research-only, no-Overpass, no-direct-fetch, matching this sandbox's constraints, so no claim
+commit was needed (same precedent Shift 50/51 documented for axis/standing-ticket work). Ratio
+this shift: 1 `add` (the new wind_currents.geojson axis + its UI) + 1 `deepen` (ancient-sources) —
+a deliberate return to `add` after Shift 51's 2 `verify` + 1 `deepen`, no `add` shift.
+
+### Track A + Track B — Axis 7b/7c: sailing seasons + named winds/Nile flood
+
+New `public/data/wind_currents.geojson` (7 features, axis 7c): the Etesian winds (Pliny, *Natural
+History* 2.47; Aristotle, *Meteorologica* 2.5), Aquilo and Africus/Auster (Horace, *Odes* 1.3 —
+"praecipitem Africum decertantem Aquilonibus"), Favonius (Pliny NH 2.47's ~February 8 first
+appearance, when sailors waited for it before leaving harbor), Iapyx (the one favorable wind
+Horace names by name for Vergil's Brundisium-to-Greece crossing), the Nile's annual flood at the
+Elephantine nilometer (Pliny NH 5.10; Herodotus 2.19), and the Tower of the Winds at Athens as the
+physical monument to the whole classical eight-wind system (Vitruvius 1.6.4) — still standing and
+functioning as weathervane/water-clock in 117 CE. Wired as Phase 33 in `Map.tsx` / a new
+`wind-currents` layer group in `useLayers.ts`, default OFF per invariant 0. Image sourcing followed
+the established landmarks_117.geojson pattern for abstract phenomena (a real Pompeii ship graffito
+and the Elephantine nilometer/Tower of the Winds photos, all confirmed via WebSearch result-page
+matching — direct Commons fetch is still blocked in this sandbox).
+
+Also this shift's Track B: `app/SailingSeason.tsx` + `app/useSailingSeason.ts` — a mare
+apertum/mare clausum explainer in the hamburger menu, same expandable-card pattern as
+`CurrencyConverter.tsx`. A manual Summer/Winter toggle (deliberately not tied to the visitor's
+live calendar date, since the map itself is a frozen 117 CE snapshot, not a simulation) that tints
+the map's sea fill grey in "Mare clausum" mode via two new always-present, zero-opacity map layers
+(`sea-mask-winter-tint`, `ancient-sea-winter-tint`) toggled through `setPaintProperty`, persisted
+to `localStorage` and restored on load. Cites Vegetius, *De Re Militari* 4.39 (late source
+codifying standing Roman practice — safe late May to mid-September, risky in the shoulder months,
+closed November to March) for the actual date windows.
+
+Verified live, not just by code review: `npm run validate` (0 errors, same 17 warnings as before),
+`npm run build` (597 static pages), and a real `next dev` + Playwright pass — confirmed the wind
+layer's source/layer/features render, the season toggle tints and un-tints the sea correctly
+(`fill-opacity` 0 ↔ 0.55), and both features render correctly at 1280×900 light and 375×812 dark.
+Hit two real Playwright gotchas along the way, both now logged in `FEATURE_BACKLOG.md`'s process
+notes rather than left to rediscover next time: a plain `.click()` on some real (non-map-canvas)
+Chrome.tsx buttons silently no-ops in this sandbox where `dispatchEvent("click")` works, and
+`LeftRail.tsx` + `Chrome.tsx` both render a `title="Menu"` button, so that selector resolves to 2
+elements on desktop (1 on mobile, since the left rail is desktop-only).
+
+### Track A — `[09-P0-1]` ancient-sources: 15 more high-confidence POIs
+
+Standing ticket, continued. Split the work across 3 parallel background research agents, each
+handed a themed sub-list from the 86 confidence:high POIs still missing `ancient_sources[]` and
+told explicitly to flag rather than invent a citation. Deliberately picked candidates where a real
+primary source plausibly exists — mostly the funerary/dedicatory *inscription* a monument is
+famous for, which counts as a legitimate primary ancient source in this project's schema exactly
+like the Ligures Baebiani/Veleia bronze tables already do for the alimenta towns — rather than
+forcing citations onto purely-archaeological-discovery POIs (2024/2026-discovered shipwrecks,
+construction-crew villa finds) where no ancient text or inscription could plausibly attest them.
+
+15 applied: three Pompeii Porta Ercolano tombs with Latin excerpts (Mamia, CIL X 998; Umbricius
+Scaurus, CIL X 1024; Naevoleia Tyche, CIL X 1030), Vestorius Priscus (AE 1911, 72 — excavated 1908,
+after CIL X's 1883 cutoff, so correctly an *Année épigraphique* citation rather than a CIL one, a
+distinction the research agent caught rather than forcing), the Tomb of Eurysaces (CIL I² 1203–1205
+/ CIL VI 1958, with the "pistoris redemptoris" line), the Vipasca mining law bronze tablets (CIL II
+5181), the Alburnus Maior wax tablets (CIL III pp. 921–960 / IDR I), the Henchir Mettich estate
+inscription — dated 116–117 CE, this map's own snapshot year (CIL VIII 25902), Ampelum's procurator
+inscription (CIL III 1312), the Dougga mausoleum's Punic/Libyan bilingual (KAI 100/101, the text
+used to help decipher the Libyco-Berber script), the Benei Hezir priestly tomb's Hebrew inscription
+(CIIP I/1 no. 137), the Pomponius Hylas columbarium's mosaic dedication (CIL VI 5552), the Haterii
+relief-tomb's attribution inscription (CIL VI 607, flagged honestly as a scholarly attribution
+rather than an in-situ label — the tomb's own inscription, if any, is lost), and the Tropaeum
+Traiani's Mars Ultor dedication (CIL III 12467, datable to 109 CE from Trajan's titles).
+
+One candidate deliberately shipped *without* a source: the Tower of Elahbel at Palmyra has a real,
+well-attested 103 CE dedicatory inscription, but the research pass couldn't confirm a specific
+PAT/CIS catalogue number for it — the "CIS II 4160" a first pass turned up actually belongs to two
+different hypogeum lintel inscriptions instead. Left unsourced rather than shipping a wrong number.
+
+One real correction found along the way: Munatius Plancus's mausoleum at Gaeta had a `notes` claim
+that its inscription "ran the full circumference" of the tomb — unverifiable, and contradicted by
+every source the research agent found, which place the text on the entrance facade/architrave, not
+encircling the drum. `notes` corrected to match what the source actually shows.
+
+### State, verification, next
+
+`npm run validate`: 0 errors, 17 warnings, identical set to Shift 51's (no new warnings). `npm run
+build`: clean, 597 static pages, at every commit this shift. `npm run metrics --write`:
+ancient-source coverage of `confidence: high` POIs 65.3%→71.4% (162/248→177/248); thematic files
+29→30 (the new wind_currents.geojson); overall ancient-source coverage 36.4%→39.4%. Three commits,
+each pushed with a clean `git pull --rebase` first and a clean pre-push build gate.
+
+**Next shift**: `[09-P0-1]`'s gap is now 71 confidence:high POIs (86→71) — still a good research-
+only pick, and the remaining pool skews toward sites where a real citation is genuinely less likely
+(2020s-discovered shipwrecks, accidental construction finds) rather than the inscription-bearing
+monuments this batch prioritized, so expect a lower hit rate and more honest `no_source_found`
+flags going forward. Axis 7 is now fully closed against the brief's own named list (7a agriculture,
+7b sailing seasons, 7c winds/Nile) — 7d (wild fauna sourcing, arena-animal supply routes + arrows to
+amphitheatres) is the one still-untouched axis-7 sub-item if a future shift wants to finish the set.
+`wind_currents.geojson`'s `type: "monument"` (currently just the Tower of the Winds) could take
+more entries if a future shift finds other well-documented ancient meteorological/navigational
+monuments. The board's large P0 refactors remain the standing next pick for whichever shift first
+gets a network-unblocked environment or dedicated multi-pass budget.
+
+---
+
 ## Shift 51 — 2026-08-23 (this shift's own prompt claimed "Shift 4 of four")
 
 Same stale-numbering mismatch every shift since #13 has flagged — SHIFT_LOG was 50 real shifts
