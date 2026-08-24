@@ -16533,6 +16533,728 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7337,
+          36.3213
+        ]
+      },
+      "properties": {
+        "id": "poi_cuicul_walls",
+        "category": "civic",
+        "name_latin": "Moenia Cuiculi",
+        "name_english": "Ramparts of Cuicul",
+        "province": "Numidia",
+        "modern_location": "Djemila, Algeria",
+        "built": 96,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Nerva's veteran colonists walled their new town the moment they broke ground on its rocky spur between two ravines, ringing barely 7 hectares with a polygonal defensive circuit. The south gate, still standing in large dressed blocks, anchored one end of the cardo maximus and controlled every approach from the Sitifis road. Later prosperity outgrew this modest perimeter entirely, and by the Severan era the city had spilled far beyond it into unwalled southern suburbs. What survives is the skeleton of the original military-grade settlement plan, built for veterans who expected trouble on the Numidian frontier.",
+        "sources": [
+          "https://www.thearchaeologist.org/blog/djemila-algerias-trajan-era-mountain-city",
+          "https://www.megalithicbuilders.com/africa/algeria/djemila-cuicul"
+        ],
+        "confidence": "medium",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.735,
+          36.3218
+        ]
+      },
+      "properties": {
+        "id": "poi_cuicul_old_forum",
+        "category": "forum",
+        "name_latin": "Forum Vetus Cuiculi",
+        "name_english": "Old Forum of Cuicul",
+        "province": "Numidia",
+        "modern_location": "Djemila, Algeria",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This roughly 2,000-square-meter square sat at the crossing of the cardo and decumanus and served as the sole civic heart of Cuicul for its first century, laid out as essential founding infrastructure alongside the town's ramparts and earliest temples. Colonnaded walks and regular paving framed a space built for a walled town of barely 7 hectares, planned on a scale that fifty years of prosperity would soon outgrow. A monumental altar and further sculptural embellishment were added here more than a century later, but the pavement and portico lines a visitor walks today trace the square that Nerva's colonists actually used. It stands now as the oldest surviving public space of Roman Djemila, humbler and more compact than the grand Severan forum built beside it.",
+        "sources": [
+          "https://www.thearchaeologist.org/blog/djemila-algerias-trajan-era-mountain-city",
+          "https://en.wikipedia.org/wiki/Dj%C3%A9mila"
+        ],
+        "confidence": "medium",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7352,
+          36.322
+        ]
+      },
+      "properties": {
+        "id": "poi_cuicul_capitolium",
+        "category": "temple",
+        "name_latin": "Capitolium Cuiculi",
+        "name_english": "Capitolium of Cuicul",
+        "province": "Numidia",
+        "modern_location": "Djemila, Algeria",
+        "built": 105,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A square temple with six internal chambers and a sacrificial altar stood close by the Old Forum, dedicated to the Capitoline Triad of Jupiter, Juno, and Minerva that every Roman colony was expected to honor. A torso from a cult statue of Jupiter, recovered on the spot, confirms the identification of the god the building served. Raising a Capitolium was one of the first acts of civic religion for a new veteran colony, marking Cuicul's formal membership in the Roman world within a generation of its founding under Nerva. It remains one of the few religious buildings at the site whose core construction plausibly predates the great Antonine and Severan expansions that transformed the rest of the city.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Dj%C3%A9mila",
+          "https://www.thearchaeologist.org/blog/djemila-algerias-trajan-era-mountain-city"
+        ],
+        "confidence": "medium",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7347,
+          36.3217
+        ]
+      },
+      "properties": {
+        "id": "poi_cuicul_venus_genetrix",
+        "category": "temple",
+        "name_latin": "Templum Veneris Genetricis",
+        "name_english": "Djemila Temple of Venus Genetrix",
+        "province": "Numidia",
+        "modern_location": "Djemila, Algeria",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Granite columns and a porticoed courtyard still mark this small temple on the cardo maximus, whose surviving dedication preserves only the single word Genetrix. Its cult likely rode a wave of imperial favor under Antoninus Pius, whose court repeatedly cast the empress Faustina the Younger as an incarnation of Venus Genetrix on coinage circulating across the empire. That places its construction in the mid-2nd century, decades after Trajan's death, tucked beside an arch on the same colonnaded street. Nothing about its modest footprint hints that it once anchored one of the most photographed corners of the ancient city.",
+        "sources": [
+          "https://followinghadrianphotography.com/2025/03/26/cuicul-djemila/",
+          "https://christocentrix.over-blog.fr/article-djemila-antique-cuicul-71922125.html"
+        ],
+        "confidence": "medium",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7354,
+          36.3219
+        ]
+      },
+      "properties": {
+        "id": "poi_cuicul_market_cosinius",
+        "category": "market",
+        "name_latin": "Macellum Cosiniorum",
+        "name_english": "Market of Cosinius",
+        "province": "Numidia",
+        "modern_location": "Djemila, Algeria",
+        "built": 140,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Two brothers, Lucius and Gaius Cosinius, paid 30,000 sesterces of their own money to give Cuicul this market under Antoninus Pius, and an inscribed measuring table for grain still sits where merchants once checked their weights. Eighteen shops ringed a colonnaded courtyard whose centerpiece was a circular tholos, with stone counters carved with animal heads and garlands fronting each stall. It was a private benefaction on a civic scale, the kind of gift that let a provincial family's name outlast the empire itself. The building postdates Trajan's reign by a full generation and belongs squarely to the city's mid-2nd-century boom.",
+        "sources": [
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Dcuicul",
+          "http://worldimages.sjsu.edu/objects-1/info?page=38&query=Portfolios%3D91"
+        ],
+        "confidence": "high",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7333,
+          36.3209
+        ]
+      },
+      "properties": {
+        "id": "poi_cuicul_theatre",
+        "category": "theater",
+        "name_latin": "Theatrum Cuiculi",
+        "name_english": "Theatre of Cuicul",
+        "province": "Numidia",
+        "modern_location": "Djemila, Algeria",
+        "built": 161,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Carved directly into the hillside above the eastern ravine, this theatre seated roughly 3,000 people arranged strictly by rank, with senators and knights in a continuous front block of six rows and ordinary citizens climbing fifteen rows split into six wedges above. Two civic benefactors, Caius Julius Crescens and Caius Julius Didius Crescentianus, financed its construction and dedicated it in 161 CE, the same year Marcus Aurelius and Lucius Verus took the throne jointly. Its stone cavea remains one of the best-preserved Roman theatres in North Africa. It rose nearly half a century after Trajan's death, well outside the city's founding generation.",
+        "sources": [
+          "https://vici.org/vici/7898/?lang=en",
+          "https://www.theatrum.de/cuicul.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/GM_Djemila_Roman_Theatre01.jpg?width=800",
+        "image_credit": "Roman theatre of Cuicul, Djemila · Wikimedia Commons",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7353,
+          36.3204
+        ]
+      },
+      "properties": {
+        "id": "poi_cuicul_great_baths",
+        "category": "bath",
+        "name_latin": "Thermae Maiores Cuiculi",
+        "name_english": "Great Baths of Cuicul",
+        "province": "Numidia",
+        "modern_location": "Djemila, Algeria",
+        "built": 183,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Built in 183 CE under Commodus, Cuicul's largest bathing complex once carried the emperor's name much as its counterpart in Rome did. Fragments of marble revetment and figured mosaic floors still lie in situ across its hot, warm, and cold rooms, while the finest sculpture recovered here now stands in the site museum. It gave the growing city, by then well beyond its original walls, the kind of full-scale public bathing establishment a prosperous 2nd-century provincial capital was expected to offer. The complex belongs entirely to the later Antonine building boom, more than sixty years after Trajan's death.",
+        "sources": [
+          "https://www.romeartlover.it/Djemila2.html",
+          "https://roman-gardens.github.io/province/numidia/cuicul/small_baths/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Les_grands_thermes_de_Dj%C3%A9mila.jpg?width=800",
+        "image_credit": "Great Baths of Djemila · Wikimedia Commons",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7349,
+          36.3221
+        ]
+      },
+      "properties": {
+        "id": "poi_cuicul_civil_basilica",
+        "category": "basilica",
+        "name_latin": "Basilica Iulia Cuiculi",
+        "name_english": "Civil Basilica of Cuicul",
+        "province": "Numidia",
+        "modern_location": "Djemila, Algeria",
+        "built": 169,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "This roughly 532-square-meter hall off the Old Forum served as courtroom and exchange, funded by the city priest Caius Julius Crescens Didius Crescentianus in the year of Lucius Verus's death. Litigants and merchants shared one long colonnaded space where a magistrate could hear a property dispute in the morning and grain brokers could strike deals by afternoon. Its construction rounded out the forum precinct with the last major public building the founding-era square would ever receive intact. It arrived more than half a century after Cuicul's colonists first broke ground under Nerva.",
+        "sources": [
+          "https://www.persee.fr/doc/crai_0065-0536_1943_num_87_3_77659",
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Dcuicul"
+        ],
+        "confidence": "medium",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7352,
+          36.3187
+        ]
+      },
+      "properties": {
+        "id": "poi_cuicul_severan_forum",
+        "category": "forum",
+        "name_latin": "Forum Novum Severianum",
+        "name_english": "Severan Forum of Cuicul",
+        "province": "Numidia",
+        "modern_location": "Djemila, Algeria",
+        "built": 210,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Cuicul's population had so far outgrown its original walls by the early 3rd century that the city built an entirely second forum outside them, an irregular quadrilateral of some 3,200 square meters framed by porticoes on two sides. It gave the expanded southern districts their own civic and religious center, anchored by a monumental arch and a dynastic temple rather than retrofitting the cramped Old Forum a mile of streets away. The project reflects Cuicul near its demographic peak, a boomtown of some 12,000 people sprawling well past its founding-era footprint. It postdates Trajan's reign by nearly a century.",
+        "sources": [
+          "https://www.worldhistory.org/image/16991/severan-forum-and-temple-of-the-gens-septimia-cuic/",
+          "https://en.wikipedia.org/wiki/Arch_of_Caracalla_(Dj%C3%A9mila)"
+        ],
+        "confidence": "medium",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7353,
+          36.318
+        ]
+      },
+      "properties": {
+        "id": "poi_cuicul_arch_caracalla",
+        "category": "arch",
+        "name_latin": "Arcus Caracallae",
+        "name_english": "Djemila Arch of Caracalla",
+        "province": "Numidia",
+        "modern_location": "Djemila, Algeria",
+        "built": 216,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Standing 12.5 meters tall astride the road to Sitifis, this single-span arch formed the ceremonial gateway into Cuicul's new Severan forum. Its attic inscription, dedicated in 216 CE, honored the reigning Caracalla, his mother Julia Domna, and his deified father Septimius Severus, with pedestals on the facade once carrying their statues among Corinthian columns and niches. Townspeople raised it as a direct statement of loyalty to the ruling dynasty rather than to commemorate any local military victory. It rose exactly a century after Nerva's veterans first settled the site, making it one of the latest, not earliest, of Cuicul's great monuments.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Arch_of_Caracalla_(Dj%C3%A9mila)",
+          "https://www.worldhistory.org/image/16996/arch-of-caracalla-cuicul-djemila/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Arch_of_Caracalla,_Cuicul_(Dj%C3%A9mila),_Numidia,_Algeria.jpg?width=800",
+        "image_credit": "Arch of Caracalla, Cuicul (Djemila) · photo by Carole Raddato · Wikimedia Commons (CC BY-SA 2.0)",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7356,
+          36.3186
+        ]
+      },
+      "properties": {
+        "id": "poi_cuicul_temple_gens_septimia",
+        "category": "temple",
+        "name_latin": "Templum Gentis Septimiae",
+        "name_english": "Temple of the Gens Septimia",
+        "province": "Numidia",
+        "modern_location": "Djemila, Algeria",
+        "built": 229,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Raised on a high podium behind rows of massive Corinthian columns, this temple in the Severan Forum was dedicated in 229 CE by Emperor Alexander Severus to the Gens Septimia, his own ruling dynasty. Dedicating a temple to a living imperial family, rather than to a traditional god, was an unusually direct piece of political theater even by the standards of Roman provincial religion. It closed out Cuicul's greatest wave of monumental construction, capping a southern forum built to display loyalty to Rome's ruling house. Its dedication falls more than a century after the city's founding under Nerva.",
+        "sources": [
+          "https://www.worldhistory.org/image/16991/severan-forum-and-temple-of-the-gens-septimia-cuic/",
+          "https://www.thearchaeologist.org/blog/djemila-algerias-trajan-era-mountain-city"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Temple_of_the_Gens_Septimia,_Cuicul_(Dj%C3%A9mila),_Numidia,_Algeria_-_52663783387.jpg?width=800",
+        "image_credit": "Temple of the Gens Septimia, Cuicul (Djemila) · photo by Carole Raddato · Wikimedia Commons (CC BY-SA 2.0)",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7357,
+          36.3175
+        ]
+      },
+      "properties": {
+        "id": "poi_cuicul_christian_quarter",
+        "category": "basilica",
+        "name_latin": "Basilica et Baptisterium Christianorum Cuiculi",
+        "name_english": "Christian Quarter of Cuicul",
+        "province": "Numidia",
+        "modern_location": "Djemila, Algeria",
+        "built": 380,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "In the far south of the expanded city, late Roman Christians built a walled precinct holding three basilicas, a cathedral, a bathhouse, and a baptistery ranked among the largest of the early Christian period in North Africa. The baptistery's circular basin sat beneath a stone canopy on columns, ringed by 36 stucco seats where catechumens waited to be received into the faith. Construction clustered at the very end of the 4th century, as Christianity moved from tolerated cult to the city's dominant religion within a single lifetime. It stands about 280 years after Cuicul's founding as a pagan veteran colony under Nerva, on ground the earliest colonists never even walled.",
+        "sources": [
+          "https://www.thevintagenews.com/2017/03/03/djemila-%D0%B0ncient-city-in-algeria-which-is-one-of-the-best-preserved-roman-ruins-of-north-africa/",
+          "https://en.wikipedia.org/wiki/Dj%C3%A9mila"
+        ],
+        "confidence": "medium",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7359,
+          36.3184
+        ]
+      },
+      "properties": {
+        "id": "poi_cuicul_house_europa",
+        "category": "domus",
+        "name_latin": "Domus Europae",
+        "name_english": "House of Europa",
+        "province": "Numidia",
+        "modern_location": "Djemila, Algeria",
+        "built": 200,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "One of the wealthy peristyle townhouses that spread through Cuicul's central district as the city prospered through the 2nd and 3rd centuries, taking its modern name from a figured mosaic of Europa and the bull found in one of its rooms. That mosaic was actually laid centuries after the house was first built, when a room was remodeled into a formal dining triclinium in the 5th century, showing how long these grand African townhouses stayed in fashionable use. Rich mosaic pavements throughout the house display the domestic opulence that Cuicul's merchant and landowning families could afford at their height. Neither the house's construction nor its famous decoration belongs to the city's founding decades under Nerva and Trajan.",
+        "sources": [
+          "https://roman-gardens.github.io/province/numidia/cuicul/house_of_europa/",
+          "https://www.worldhistory.org/article/436/the-heritage-of-cuicul/"
+        ],
+        "confidence": "low",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.554,
+          34.075
+        ]
+      },
+      "properties": {
+        "id": "poi_volubilis_forum",
+        "category": "forum",
+        "name_latin": "Forum Volubilitanum",
+        "name_english": "Forum of Volubilis",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Volubilis, Morocco",
+        "built": 60,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The forum served as the civic and commercial heart of Roman Volubilis, raised during Nero's reign over the remains of the earlier Mauretanian-era town center. Colonnaded porticoes lined three sides of the open square, framing the space where the city's duumvirs and town council conducted public business. By the time Trajan died in 117 CE the forum anchored a functioning municipium of citizen-farmers, oil merchants, and Romanized Mauretanian elites. The basilica and Capitol that now flank it were still a century away, so in 117 the forum stood essentially alone as the town's monumental core.",
+        "sources": [
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Dvolubilis",
+          "https://en.wikipedia.org/wiki/Volubilis"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Volubilis_Forum_and_Basilica.jpg?width=800",
+        "image_credit": "View across the forum toward the basilica ruins, Volubilis · Wikimedia Commons",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5536,
+          34.0754
+        ]
+      },
+      "properties": {
+        "id": "poi_volubilis_flavian_baths",
+        "category": "bath",
+        "name_latin": "Flavian Baths",
+        "name_english": "Flavian Baths of Volubilis",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Volubilis, Morocco",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Volubilis built two public bathing complexes during its first Roman century, and one of them went up under the Flavian emperors in the later first century CE. Bathers moved between hot, warm, and cold rooms heated by underfloor hypocaust systems, a standard Roman comfort planted on the empire's western frontier. This Flavian-era bath predated the city's better-known Baths of Gallienus by well over a century. By 117 CE it had already served two generations of Volubilis's citizens and their Romanized Mauretanian neighbors.",
+        "sources": [
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Dvolubilis",
+          "https://en.wikipedia.org/wiki/Volubilis"
+        ],
+        "confidence": "low",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5524,
+          34.0761
+        ]
+      },
+      "properties": {
+        "id": "poi_volubilis_house_of_orpheus",
+        "category": "domus",
+        "name_latin": "Domus Orphei",
+        "name_english": "House of Orpheus",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Volubilis, Morocco",
+        "built": 75,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The House of Orpheus went up in the second half of the first century CE as one of Volubilis's substantial townhouses, later celebrated for one of the finest figural mosaics on Rome's African frontier. Its dining room floor eventually depicted Orpheus playing his lyre to a circle of six animals, from elephant to bear to bird, charmed into stillness by the music. Craftsmen set the scene in tesserae roughly one centimeter square, fine enough to render convincing muscle and shading. That famous mosaic was laid a generation later, but the house's walls and plan already stood complete when Trajan died in 117 CE.",
+        "sources": [
+          "https://www.worldhistory.org/image/16791/house-of-orpheus-volubilis/",
+          "https://www.romeartlover.it/Volubilis2.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_House_of_Orpheus_Mosaic_Volubilis_Morocco_-_panoramio.jpg?width=800",
+        "image_credit": "The Orpheus mosaic, House of Orpheus, Volubilis · Wikimedia Commons",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5517,
+          34.0767
+        ]
+      },
+      "properties": {
+        "id": "poi_volubilis_house_of_venus",
+        "category": "domus",
+        "name_latin": "Domus Veneris",
+        "name_english": "House of Venus",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Volubilis, Morocco",
+        "built": 75,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The House of Venus went up in the second half of the first century CE as one of Volubilis's grand Roman-era residences, built around a private suite of baths that set it apart from ordinary townhouses. Its dining room later gained a mosaic showing Venus riding a ship escorted by the Three Graces and nymphs on sea-horses, one of the most admired images ever pulled from Volubilis's soil. That mosaic was a second-century addition, but the house itself, its walls, baths, and plan, already stood complete when Trajan died in 117 CE. The residence anchored a quarter of the city where Volubilis's oil-wealthy elite kept building increasingly showy homes.",
+        "sources": [
+          "https://www.romeartlover.it/Volubilis2.html",
+          "https://onlinelibrary.wiley.com/doi/abs/10.1002/arp.1887"
+        ],
+        "confidence": "high",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5531,
+          34.0757
+        ]
+      },
+      "properties": {
+        "id": "poi_volubilis_decumanus_maximus",
+        "category": "civic",
+        "name_latin": "Decumanus Maximus",
+        "name_english": "Decumanus Maximus of Volubilis",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Volubilis, Morocco",
+        "built": 105,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Volubilis grew along two separate street grids laid at different orientations, evidence of a town that expanded in phases from its Mauretanian core into a full Roman street plan. The Decumanus Maximus, the city's principal east-west thoroughfare, took its paved and porticoed form under Trajan and Hadrian in the early second century CE, lined with shops sheltering beneath covered walkways. It linked the city's northern gate to the forum at the town's heart. By 117 CE the street's early paving was already carrying the daily traffic of a prosperous provincial capital.",
+        "sources": [
+          "https://madainproject.com/decumanus_maximus",
+          "https://imperiumromanum.pl/en/roman-geography/roman-cities/volubilis/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Decumanus_Maximus.jpg?width=800",
+        "image_credit": "The Decumanus Maximus, Volubilis · Wikimedia Commons",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5542,
+          34.0749
+        ]
+      },
+      "properties": {
+        "id": "poi_volubilis_edict_of_claudius_stela",
+        "category": "other",
+        "name_latin": "Edictum Claudii de Civitate Volubilitanorum",
+        "name_english": "Edict of Claudius Stela",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Volubilis, Morocco",
+        "built": 44,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "In 44 CE, Emperor Claudius rewarded Volubilis's loyalty during the revolt of Aedemon with an edict granting its people Roman citizenship, the right to intermarry with non-citizens, and claim to the estates of residents who died without heirs. The city's council had these privileges inscribed and paired them with an honorific stela to Marcus Valerius Severus, a native Mauretanian who had commanded auxiliary units in that same war and later served as duumvir. His wife, Fabia Bira, raised the monument in his honor. The inscription stands as one of the clearest records of a Berber-Punic elite family converting local prestige into Roman citizenship within a single generation of annexation.",
+        "sources": [
+          "https://www.livius.org/articles/place/volubilis/stela-of-marcus-valerius-severus/",
+          "https://www.researchgate.net/publication/311749647_'EDICTUM_CLAUDII_DE_CIVITATE_VOLUBILITANORUM'"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Inscription_avec_la_transformation_de_Volubilis_en_municipe_romain..jpg?width=800",
+        "image_credit": "Inscription recording Volubilis's transformation into a Roman municipium · Wikimedia Commons",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5554,
+          34.0738
+        ]
+      },
+      "properties": {
+        "id": "poi_volubilis_temple_of_saturn",
+        "category": "temple",
+        "name_latin": "Templum Saturni",
+        "name_english": "Temple of Saturn",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Volubilis, Morocco",
+        "built": 218,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The sanctuary on Volubilis's eastern rise began as a Punic precinct sacred to Baal, one of the oldest cult sites in the city, reaching back to the settlement's pre-Roman centuries. Romans rededicated it to Saturn, the common fate of Punic gods across Roman North Africa. An inscription dated 218 CE records the sanctuary's rebuilding, and by then the site had grown to include four smaller attendant shrines, one of them dedicated to Venus. This structure as it stands today postdates the 117 CE snapshot by a full century, even though worship on the same ground reached back to Volubilis's Punic origins.",
+        "sources": [
+          "http://ancientworld.hansotten.com/afrika/volubilis/",
+          "https://www.ebsco.com/research-starters/anthropology/volubilis"
+        ],
+        "confidence": "medium",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5565,
+          34.0762
+        ]
+      },
+      "properties": {
+        "id": "poi_volubilis_city_walls",
+        "category": "civic",
+        "name_latin": "Murus Volubilitanus",
+        "name_english": "City Walls of Volubilis",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Volubilis, Morocco",
+        "built": 168,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Volubilis raised its great defensive circuit in 168 and 169 CE under Marcus Aurelius, a direct response to the pressure Berber tribes from the Atlas Mountains kept putting on the city's Roman rulers. The rubble-and-ashlar rampart ran 2,613 meters around the city, enclosing 40 hectares and studded with six main gates and 24 towers. Builders recycled stone blocks pulled from older structures to raise it quickly. Because it postdates 117 CE by half a century, the early Roman municipium under Trajan and Hadrian actually stood open and unfortified on its Mauretanian frontier.",
+        "sources": [
+          "https://sitedevolubilis.org/map-of-volubilis/",
+          "https://www.historyhit.com/locations/volubilis/"
+        ],
+        "confidence": "high",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5508,
+          34.0774
+        ]
+      },
+      "properties": {
+        "id": "poi_volubilis_tangier_gate",
+        "category": "civic",
+        "name_latin": "Porta Septentrionalis",
+        "name_english": "Tangier Gate",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Volubilis, Morocco",
+        "built": 168,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The Tangier Gate formed the northern entrance through Volubilis's city wall, one of six main gates built into the 168-169 CE defensive circuit raised under Marcus Aurelius. Travelers and merchants passed beneath its arch on the road linking Volubilis to the coastal city of Tingis, modern Tangier, from which the gate took its name. Flanking towers gave defenders a clear line of sight down the approach road. Since the gate belongs to a wall system built roughly half a century after Trajan's death, no fortified northern entrance existed at Volubilis in 117 CE.",
+        "sources": [
+          "https://sitevolubilis.com/etape-n4-de-la-visite/",
+          "https://sitedevolubilis.org/map-of-volubilis/"
+        ],
+        "confidence": "medium",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5541,
+          34.0751
+        ]
+      },
+      "properties": {
+        "id": "poi_volubilis_basilica",
+        "category": "basilica",
+        "name_latin": "Basilica Volubilitana",
+        "name_english": "Basilica of Volubilis",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Volubilis, Morocco",
+        "built": 217,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Volubilis raised its civil basilica beside the forum in the Severan era, finishing construction under Emperor Macrinus in the early third century CE. The two-story building measured 42.2 meters long and 22.3 meters wide, giving the city's magistrates a covered hall for legal proceedings and business that no open-air forum could match through Morocco's rainy winters. Its scale ranks it among the finest Roman basilicas built anywhere in Africa. This building postdates the 117 CE snapshot by roughly a century; in Trajan's day, Volubilis conducted its legal business without it.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Volubilis",
+          "http://ancientworld.hansotten.com/afrika/volubilis/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Volubilis-basilica.jpg?width=800",
+        "image_credit": "Ruins of the civil basilica, Volubilis · Wikimedia Commons",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5539,
+          34.0753
+        ]
+      },
+      "properties": {
+        "id": "poi_volubilis_capitolium",
+        "category": "temple",
+        "name_latin": "Capitolium Volubilitanum",
+        "name_english": "Capitolium of Volubilis",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Volubilis, Morocco",
+        "built": 218,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The Capitolium of Volubilis went up in 218 CE, a tetrastyle temple raised on the city's ceremonial high ground and dedicated to the Capitoline Triad of Jupiter, Juno, and Minerva. Four columns fronted its podium, marking a temple type every Roman citizen would have recognized from a hundred provincial cities across the empire. A stork's nest now tops one of its surviving columns, a small irony atop a monument built to project Roman religious authority on the empire's western edge. Because construction began a full century after Trajan's death, Volubilis had no Capitoline temple at all during the 117 CE snapshot.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Volubilis",
+          "http://ancientworld.hansotten.com/afrika/volubilis/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Volubilis,Morocco.jpg?width=800",
+        "image_credit": "The Capitoline temple, Volubilis · Wikimedia Commons",
+        "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5546,
+          34.0745
+        ]
+      },
+      "properties": {
+        "id": "poi_volubilis_arch_of_caracalla",
+        "category": "arch",
+        "name_latin": "Arcus Caracallae",
+        "name_english": "Arch of Caracalla",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Volubilis, Morocco",
+        "built": 217,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Volubilis's council raised the Arch of Caracalla between December 216 and April 217 CE, honoring the emperor for extending Roman citizenship to the province's free population and easing certain taxes. Its dedicatory inscription named Caracalla holder of tribunician power for the twentieth time and praised his mother Julia Domna as mother of the camp, the senate, and the country. Before construction finished, both Caracalla and Julia Domna had been murdered, turning a monument to a living emperor into one honoring the dead. This arch, the site's best-known landmark today, postdates Trajan's death in 117 CE by exactly a century, making it the clearest example of a Volubilis monument that falls outside this map's snapshot.",
+        "sources": [
+          "https://www.ostia-antica.org/caracalla/travels/morocco.htm",
+          "https://vici.org/vici/7896/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Volubilis_Arch_of_Caracalla_looking_southwest.jpg?width=800",
+        "image_credit": "The Arch of Caracalla, Volubilis · Wikimedia Commons",
+        "ancient_sources": []
+      }
     }
   ]
 }
