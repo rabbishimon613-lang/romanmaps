@@ -523,6 +523,23 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
 
 ## New ideas spotted this shift (2026-08-24, cloud shift — Djemila/Volubilis, theme toggle)
 
+- [ ] **HIGH VALUE / invariant-1.5 violation: all 545 `/place/[slug]` pages are titled with the
+  LATIN name, not the English one.** `app/place/[slug]/page.tsx` lines 109 and 140 both read
+  `p.name_latin || p.name_english`, so the Colosseum's page is titled *"Amphitheatrum Flavium —
+  Roman Maps"*, Paestum's Temple of Neptune is *"Templum Neptuni"*, and the English name is demoted
+  to a grey subtitle under the heading. This inverts invariant 1.5 ("every display field ... uses
+  the name a general English-speaking Google-Maps user would recognise; ancient names live in the
+  blurb or the details panel body, never in the display name"), and it does so on exactly the
+  surface where it costs the most: the `<title>`, the `<h1>`, the OpenGraph and Twitter card
+  titles, the JSON-LD `name`, and the "nearby places" list at line 304 — i.e. every string Google
+  indexes and every string a shared link previews with. Nobody searches "Amphitheatrum Flavium".
+  **Not fixed this shift on purpose**: flipping the fallback order is a two-line change, but it
+  rewrites 545 already-indexed page titles at once and deserves a considered pass with the SEO
+  side thought through (`SEO-LOG.md` should probably record the change), plus a decision on whether
+  the Latin name moves into the subtitle slot or into the body — not something to land in a
+  shift's last stretch. Discovered while spot-checking this shift's own new pages in the build
+  output; the behavior is long-standing and site-wide, not introduced by any recent data.
+
 - [ ] **`next/script`'s `beforeInteractive` strategy does not run before first paint in this
   Next 14 app-router setup** — worth knowing before anyone reaches for it again. Implementing the
   theme toggle's flash guard, a `<Script id="theme-init" strategy="beforeInteractive">` compiled

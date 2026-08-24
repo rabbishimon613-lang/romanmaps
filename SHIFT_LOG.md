@@ -7,6 +7,178 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 55 — 2026-08-24 (this shift's own prompt claimed "Shift 4 of four")
+
+Same stale-numbering mismatch every shift since #13 has flagged, still unresolved — SHIFT_LOG was
+54 real shifts deep at session start, not 3. Session started `HEAD` detached at Shift 54's own
+final commit (`68bf8b2`) with local `main` 50/50 diverged from a stale `origin/main` tracking ref
+(pointing at Shift 28's `709a480`); a fresh `git fetch origin main` force-updated the ref to match
+detached `HEAD` exactly, confirming the divergence was the same benign container-image race every
+recent shift has documented and not real conflicting work, so `git reset --hard origin/main` synced
+it with nothing at risk. Re-confirmed the standing network finding independently: `curl` and
+`WebFetch` to `commons.wikimedia.org`, `en.wikipedia.org`, `overpass-api.de`, and
+`pleiades.stoa.org` all return `EGRESS_BLOCKED` / exit-56. `WebSearch` stayed reachable and was
+again the only research channel. `npm run dev` + Playwright against the sandbox Chromium
+(`/opt/pw-browsers/chromium-1194`, note the versioned directory — a bare `/opt/pw-browsers/chromium`
+path exists but holds no executable) worked reliably all session and carried the whole Track B
+verification gate; no repeat of Shift 54's `/place/[slug]` dev-server 404s.
+
+### Board check
+
+Read `BOARD.md`'s claiming protocol. No `[~]` claims standing. The unclaimed tickets remain the
+same large P0 refactors recent shifts have correctly declined (`[12-P0-1]` merge-themes,
+`[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terrain, `[13-P0-2]` image-audit).
+Picked up Shift 54's own handoff list instead — no claim commit needed, same precedent recent
+shifts have documented for standing/axis work. Ratio: 2 `add` (Djemila, Volubilis) + 2 `deepen`
+(ancient-sources batch 9, fortress images) + 1 `polish` (Track B) + 1 `fix` (the category remap
+below, correcting this shift's own work), same add-leaning skew as Shift 54 and logged rather than
+claimed as exact 1:2:1 compliance.
+
+### Track A — Djemila and Volubilis: first curated `pois.geojson` coverage
+
+Two more of the 16 zero-coverage `sites.ts` sites closed, taking Shift 54's list from 14 to 12
+(Leptis Magna, Sabratha, Jerash, Trier, Italica, Tivoli, Palestrina, Cumae, Capua, Brescia, Milan,
+Rimini, Luni remain — minus whichever this shift's later batch closes). 25 features total.
+
+**Djemila** (13 features, Numidia, veteran colony founded 96 CE under Nerva): only **3** are
+correctly `extant_117ce: true` — the original polygonal defensive circuit, the Old Forum, and the
+Capitolium, the founding-era infrastructure of a walled 7-hectare colony. The other 10 are
+Antonine and Severan growth postdating the snapshot by 50 to 280 years: the theatre (161), the
+Severan Forum (210), the Arch of Caracalla (216), the Temple of the Gens Septimia (229), the Great
+Baths (183), the civil basilica (169), the Temple of Venus Genetrix (150), the Market of Cosinius
+(140), the Christian quarter (380) and the House of Europa (200). That heavy `false` skew is the
+honest shape of the site, not a research shortfall — Djemila's famous monumental core exists
+precisely *because* the town later outgrew the modest perimeter Nerva's colonists walled.
+
+**Volubilis** (12 features, Mauretania Tingitana, annexed 44 CE): an even 6/6 split, and the split
+is the finding. Shift 54's handoff explicitly warned that this site's headline monuments are all
+3rd-century and a naive pass would either mis-date them or come back nearly all-`false`; the
+research pass was briefed on that trap and confirmed it — the Arch of Caracalla (217), the
+basilica (217), the Capitolium (218) and Marcus Aurelius's 168-169 CE wall circuit with its
+Tangier Gate all correctly `false`, each with a note saying so plainly rather than hedging. The
+`true` side is real and non-obvious: the Neronian forum (~60 CE), a Flavian bath complex, the
+Houses of Orpheus and Venus (the **structures** dated, deliberately not their famous mosaics,
+which are a generation later), the Trajanic/Hadrianic Decumanus Maximus, and the 44 CE **Edict of
+Claudius stela** — a genuine epigraphic record of Volubilis's citizenship grant after the Aedemon
+revolt, paired with an honorific stela that Fabia Bira raised to her husband Marcus Valerius
+Severus, a Mauretanian auxiliary commander turned duumvir. One deliberate correction before
+merging: the Temple of Saturn ships `false` on its 218 CE rebuild date even though the underlying
+Punic precinct to Baal is far older, with the earlier sanctuary noted rather than used to justify
+a `true`.
+
+Coordinates for both batches are researched estimates against each site's documented layout, not
+gazetteer-verified — good to roughly a city block, fine at the current point-marker scale, worth
+tightening if a future feature needs real precision. Logged here rather than left implicit.
+
+### Track A — `[09-P0-1]` ancient-sources batch 9: 3 of 15
+
+Continued the standing ticket against a 15-candidate themed list. **3 passed**: the Janiculum
+watermills (Procopius, *Gothic War* 5.19 — the mills fell silent when the Goths cut the Aqua
+Traiana in 537, and Belisarius rigged replacements on boats in the Tiber), the Efqa spring at
+Palmyra (Pliny, *NH* 5.21.88, on the oasis springs that made the desert city possible), and the
+Mausoleum of the Julii at Glanum (its own CIL XII 1012 dedicatory inscription naming the three
+Julius brothers who raised it). **12 rejected**, several of them near-misses the pass caught
+rather than forced: Strabo's "temple of Argive Hera" at Paestum is the separate Heraion at the
+mouth of the Sele, roughly 9km from the in-town Basilica the citation was offered for; no ancient
+author distinguishes Paestum's three temples by dedication at all, so all three modern
+identifications are archaeological, not textual; the Piscina Mirabilis's own name is a
+14th-century coinage by Petrarch and Pliny never describes the cistern despite being stationed at
+Misenum; and the Tower of the Scipios' traditional attribution is a debunked post-antique
+identification with no ancient evidence behind it. Batch 8's ~4-in-18 hit rate is holding at ~1-in-5
+— the remaining pool is exactly the tombs/villas/shipwrecks/industrial-sites shape Shifts 53 and 54
+already called diminishing.
+
+### Track A — legionary-fortress images: gap 5 → 2
+
+Closed 3 of the 5 Shift 54 left open, using an excavation-report and archaeology-news search angle
+instead of the tourism-site searches two prior passes had exhausted. Both Caparcotna records (Legio
+II Traiana Fortis and Legio VI Ferrata share the same excavated Legio/Kefar Otnay site near
+Megiddo) and Raphanaea (Legio III Gallica, via an Institut français du Proche-Orient aerial
+archive image) now carry real Commons files. **Melitene and Nicopolis/Alexandria stay null after a
+third pass** and are worth treating as closed: for Nicopolis the honest finding is that the
+material exists but not on Commons — roughly 25 Legio II Traiana Fortis funerary stelae sit in
+Alexandria's Graeco-Roman Museum, published in academic PDFs with DAI photo credits, none of them
+Commons-hosted. A candidate for Melitene was found and **rejected** rather than used: the only
+Roman-adjacent Commons file for Battalgazi depicts the Bronze/Iron Age Arslantepe mound, a
+different site and era from the 72 CE legionary fortress.
+
+### Fix — 10 off-vocabulary categories, caught by metrics and corrected same-shift
+
+`npm run metrics` (not the validator) caught that both research batches had invented four category
+values — `civic`, `bath`, `domus`, `other` — outside the established 52-key vocabulary in
+`app/categoryLife.ts`, dropping "what happened here" coverage from 100% to 92.9%. Three of the four
+were also absent from every `app/poiCategories.ts` chip group, so those records would have rendered
+as default maroon markers invisible to the category filter — exactly the trap `FEATURE_BACKLOG.md`
+has carried as a standing note since Shift 10, hit anyway because the research prompts didn't pin
+the vocabulary. Remapped onto existing keys (`civic` → `wall`/`gate`/`road`, `bath` → `bathhouse`,
+`domus` → `house`, `other` → `monument`) in a follow-up commit; coverage back to 52/52 over
+545/545. All 10 records were this shift's own, so nothing of anyone else's was touched. The later
+batches' research prompts were amended to pass the allowed category list explicitly.
+
+### Found, not fixed — every `/place/[slug]` page is titled in Latin
+
+Spot-checking this shift's own new pages in `.next/server/app/place/*.html` surfaced a long-
+standing, site-wide invariant-1.5 violation that has nothing to do with this shift's data:
+`app/place/[slug]/page.tsx` lines 109 and 140 both resolve the display name as
+`p.name_latin || p.name_english`. So the Colosseum's page is titled **"Amphitheatrum Flavium —
+Roman Maps"**, Paestum's is **"Templum Neptuni"**, the Forum Romanum keeps its Latin form, and the
+English name is demoted to a grey subtitle. Invariant 1.5 says the opposite in as many words —
+English-standard display name, ancient name in the blurb or panel body — and this breaks it on the
+surface where it costs most: `<title>`, `<h1>`, OpenGraph and Twitter card titles, the JSON-LD
+`name`, and the nearby-places list. Every one of those is a string Google indexes or a shared link
+previews with, and nobody searches "Amphitheatrum Flavium".
+
+**Deliberately not fixed here.** The code change is two lines, but it rewrites 545 already-indexed
+page titles in one push, and that deserves a considered pass — an `SEO-LOG.md` entry, and a real
+decision about whether the Latin name takes the subtitle slot or moves into the body — rather than
+a drive-by in a shift's last stretch. Logged in `FEATURE_BACKLOG.md` as the highest-value
+well-scoped item currently sitting unclaimed, and it is this shift's recommended next pick.
+
+### Track B — Appearance toggle: System / Light / Dark, live repaint
+
+Shipped the item Shift 54 opened when it verified dark mode already worked off
+`prefers-color-scheme` but found no in-app override. `app/useTheme.ts` + `app/ThemeToggle.tsx` add
+an "Appearance" section to the hamburger menu beside Sailing season; System stays the default and
+tracks the OS preference live, Light and Dark override it in either direction, persisted to
+`localStorage["roman-maps:theme"]`.
+
+Shift 54's scoping note expected this to need either hand-threading `setPaintProperty` through ~30
+layer IDs or a full map remount, and flagged the remount as risky because eight components grab a
+`window.__map` reference once on their own mount. **Neither was necessary.** `swapPaletteColors()`
+walks `map.getStyle().layers` and swaps any paint property whose literal string value matches an
+outgoing `Palette` entry — so it covers every layer including thematic overlays switched on later,
+needs no per-layer list to keep in sync, and never replaces the map instance, leaving those eight
+components untouched. Three real traps handled rather than papered over: `LIGHT.land` and
+`LIGHT.labelHalo` are both `#f4ead5` but diverge in `DARK`, making a value-only lookup ambiguous
+for that one pair (disambiguated by paint-property name — `land` only ever paints fill/background,
+`labelHalo` only halo/stroke); the road-station marker is a canvas-drawn `addImage` icon with its
+border color baked into pixels, so it is regenerated via `updateImage` on switch; and `P` became a
+`let`, reassigned on switch, so an overlay lazily loaded *after* a theme change bakes in the current
+palette rather than the mount-time one.
+
+**A real finding worth carrying forward**: the flash-of-wrong-theme guard in `app/layout.tsx` is a
+plain synchronous `<script>`, deliberately **not** `next/script`'s `beforeInteractive` strategy.
+The first implementation used `beforeInteractive` and Playwright caught it failing — Next 14's app
+router compiles it to a `(self.__next_s=...).push(...)` queue entry processed only once the router
+bundle boots, measured with `data-theme` still `null` at `domcontentloaded` and set only by `load`,
+i.e. after first paint, which is precisely the flash the guard exists to prevent. A raw script tag
+measured correct (`"dark"` at `domcontentloaded`). Flagged in FEATURE_BACKLOG for any future
+before-first-paint init. `app/globals.css` now carries the dark token block twice — guarded
+`@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) }` plus
+`:root[data-theme="dark"]` — so an explicit choice wins in both directions.
+
+Verified live rather than by typecheck alone, `next dev` + Playwright: an OS-dark context still
+renders dark with no `data-theme` attribute (System unchanged); toggling Dark on a light-OS context
+live-repaints bg `#a9d1e3`→`#0f2233`, land `#f4ead5`→`#232628`, roads `#a12b0d`→`#c9573b`, label
+halos `#f4ead5`→`#111315` and chrome `--surface` `#ffffff`→`#292a2d` with no reload; the choice
+survives a reload with `data-theme` set by `domcontentloaded`; and an explicit Light beats a dark OS
+at 375×812. Screenshots at 1280×900 and 375×812 in both schemes; phone control count unchanged
+(search pill, layers button, one corner FAB, epoch pill, credit chip), per invariant 0. One
+incidental cleanup: `applyStoredTheme()` was written as a React-side backstop, then found redundant
+once the head script worked, and deleted rather than left as an unused export.
+
+---
+
 ## Shift 54 — 2026-08-24 (this shift's own prompt claimed "Shift 3 of four")
 
 Same stale-numbering mismatch every shift since #13 has flagged, still unresolved — SHIFT_LOG
