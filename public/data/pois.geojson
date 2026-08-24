@@ -3572,7 +3572,9 @@
           "https://www.worldhistory.org/article/1943/legions-of-judea/",
           "http://cogito.ucdc.ro/n4e/LEGIO-II-TRAIANA-FORTIS-AND-JUDAEA-UNDER-HADRIAN-REIGN.pdf (Radu Urloiu)"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Legion_VI_Megiddo_070715_01.jpg?width=800",
+        "image_credit": "Excavation of the Roman legionary camp at Legio/Kefar Otnay, near Tel Megiddo (garrisoned by Legio II Traiana Fortis) · Wikimedia Commons"
       }
     },
     {
@@ -3659,7 +3661,9 @@
           "https://topostext.org/place/349364URap",
           "https://www.livius.org/articles/legion/legio-iii-gallica/ (cross-referenced via search synthesis)"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ifpo_21511_Syrie,_gouvernorat_de_Hama,_district_de_Masyaf,_r%C3%A9gion_de_Raphan%C3%A9e,_vue_a%C3%A9rienne_oblique.jpg?width=800",
+        "image_credit": "Oblique aerial view of the Raphanée (Raphanaea) region, Hama Governorate, Syria — Institut français du Proche-Orient (Ifpo) archive · Wikimedia Commons"
       }
     },
     {
@@ -3790,7 +3794,9 @@
           "https://www.biblicalarchaeology.org/daily/biblical-sites-places/biblical-archaeology-sites/legio/",
           "https://www.worldhistory.org/article/1943/legions-of-judea/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Legion_VI_Megiddo_070715_02.jpg?width=800",
+        "image_credit": "Excavation of the Legio VI Ferrata camp at Legio/Kefar Otnay, near Tel Megiddo · Wikimedia Commons"
       }
     },
     {
@@ -13476,7 +13482,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Mausoleum_of_the_Julii,_about_40_BC,_Glanum_(14607599677).jpg?width=800",
-        "image_credit": "Photo: Carole Raddato, Wikimedia Commons, CC BY-SA 2.0"
+        "image_credit": "Photo: Carole Raddato, Wikimedia Commons, CC BY-SA 2.0",
+        "ancient_sources": [
+          {
+            "author": "CIL",
+            "work": "Corpus Inscriptionum Latinarum",
+            "ref": "XII 1012",
+            "note": "The mausoleum carries its own dedicatory inscription naming Sextus, Lucius, and Marcus Julius as the sons who raised the tomb to their forebears."
+          }
+        ]
       }
     },
     {
@@ -15753,7 +15767,15 @@
           "https://en.wikipedia.org/wiki/Aqua_Traiana",
           "https://www.jstor.org/stable/4238499"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Procopius",
+            "work": "History of the Wars (Gothic War)",
+            "ref": "5.19",
+            "note": "Procopius describes the grain mills powered by the Aqua Traiana on the Janiculum falling silent when the Goths cut the aqueduct during the 537 CE siege, prompting Belisarius to rig replacement mills on boats in the Tiber."
+          }
+        ]
       }
     },
     {
@@ -15782,7 +15804,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Efqa.png?width=800",
-        "image_credit": "Efqa Spring, Palmyra · Wikimedia Commons"
+        "image_credit": "Efqa Spring, Palmyra · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "5.21.88",
+            "note": "Pliny praises Palmyra for its location, the richness of its soil, and its pleasant springs amid a vast surrounding sea of sand, the oasis water that made the desert city possible."
+          }
+        ]
       }
     },
     {
