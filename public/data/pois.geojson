@@ -6231,7 +6231,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rosia_Montana_Roman_Gold_Mines_2011_-_Galleries.jpg?width=800",
-        "image_credit": "Roman gallery at the Rosia Montana gold mines · Wikimedia Commons (CC BY-SA)"
+        "image_credit": "Roman gallery at the Rosia Montana gold mines · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": [
+          {
+            "author": "Tabulae Ceratae Dacicae (Dacian wax tablets, private legal documents)",
+            "work": "CIL III, pp. 921-960 (also IDR I)",
+            "ref": "CIL III 921-960",
+            "note": "A set of wax-coated wooden writing tablets recovered from Roman gold-mining galleries at Alburnus Maior (Rosia Montana) since the 19th century, recording everyday legal acts of the mining settlement: labor contracts, loan and sale agreements, and the charter of a funerary collegium. One well-known tablet records the founding statutes of the collegium of Jupiter Cernenus, naming officers whose dues funded members' funeral expenses."
+          }
+        ]
       }
     },
     {
@@ -6318,7 +6326,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Parque_Mineiro_de_Aljustrel_-_Portugal_%F0%9F%87%B5%F0%9F%87%B9_(54713754665).jpg?width=800",
-        "image_credit": "Mining landscape of the Parque Mineiro de Aljustrel · Wikimedia Commons (CC BY 2.0)"
+        "image_credit": "Mining landscape of the Parque Mineiro de Aljustrel · Wikimedia Commons (CC BY 2.0)",
+        "ancient_sources": [
+          {
+            "author": "Lex Metalli Vipascensis (anonymous, Roman imperial mining regulation)",
+            "work": "CIL II 5181",
+            "ref": "5181",
+            "note": "Two bronze tablets found at Aljustrel (ancient Vipasca) in 1876 and 1906 preserve mining regulations for an imperial metalla district. One concrete surviving provision fixes bathhouse admission fees and hours: men pay half an as and may bathe from the eighth hour until the second hour of night, while women pay a full as and bathe from daybreak to the seventh hour. The tablets also regulate leases (conductores), the status of coloni, slaves and free wage-laborers (mercenarii), and the sale or transfer of mining claims."
+          }
+        ]
       }
     },
     {
@@ -7378,7 +7394,7 @@
         "built": -22,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "A cylindrical mausoleum crowning Monte Orlando above the Gulf of Gaeta, built for Lucius Munatius Plancus, the consul and general who founded the colony of Lyon. Its drum spans nearly 30 meters and originally carried a stepped conical roof visible far out at sea. An inscription once ran the full circumference listing his offices as consul, censor, and triumphator. Ships rounding the cape had used it as a landmark for well over a century by 117 CE.",
+        "notes": "A cylindrical mausoleum crowning Monte Orlando above the Gulf of Gaeta, built for Lucius Munatius Plancus, the consul and general who founded the colony of Lyon. Its drum spans nearly 30 meters and originally carried a stepped conical roof visible far out at sea. Its entrance inscription lists his offices as consul, censor, and triumphator over the Raetians. Ships rounding the cape had used it as a landmark for well over a century by 117 CE.",
         "sources": [
           "https://en.wikipedia.org/wiki/Lucius_Munatius_Plancus",
           "http://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Latina/Gaeta/Gaeta/Mausoleo_di_Planco/home.html"
@@ -7386,7 +7402,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mausoleo_di_Lucio_Munazio_Planco.JPG?width=800",
         "image_credit": "Photograph of the Mausoleum of Lucius Munatius Plancus, Monte Orlando, Gaeta, Wikimedia Commons",
-        "image_alt": "Drum-shaped Roman tomb of Munatius Plancus on a hilltop above the sea"
+        "image_alt": "Drum-shaped Roman tomb of Munatius Plancus on a hilltop above the sea",
+        "ancient_sources": [
+          {
+            "author": "Funerary inscription of L. Munatius Plancus",
+            "work": "CIL X 6087 (= ILS 886)",
+            "ref": "6087",
+            "note": "The inscription on Plancus's mausoleum at Gaeta lists his career: consul, censor, imperator acclaimed twice, septemvir of the epulones, triumphator over the Raetians, builder of the Temple of Saturn from war spoils, and founder of the colonies of Lugdunum and Colonia Raurica."
+          }
+        ]
       }
     },
     {
@@ -7416,7 +7440,16 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomb_of_Eurysaces_the_Baker.jpg?width=800",
         "image_credit": "Photograph of the Tomb of Eurysaces the Baker, near Porta Maggiore, Rome, Wikimedia Commons",
-        "image_alt": "Travertine tomb of the baker Eurysaces with rows of circular relief openings"
+        "image_alt": "Travertine tomb of the baker Eurysaces with rows of circular relief openings",
+        "ancient_sources": [
+          {
+            "author": "CIL I2 1203-1205 = CIL VI 1958 (Marcus Vergilius Eurysaces, self-composed funerary inscription)",
+            "work": "Corpus Inscriptionum Latinarum I (2nd ed.) / VI",
+            "ref": "1203-1205 / 1958",
+            "note": "The inscription, repeated on multiple sides of the tomb, identifies the monument as that of Marcus Vergilius Eurysaces, a baker and public grain and bread contractor.",
+            "quote": "est hoc monimentum Marcei Vergilei Eurysacis pistoris redemptoris: apparet"
+          }
+        ]
       }
     },
     {
@@ -11933,7 +11966,15 @@
           "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Dampelum",
           "https://www1.leiza.de/transformation/romania/mining/miningengl.htm"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Funerary/honorific inscription of M. Ulpius Hermias, procurator aurariarum",
+            "work": "CIL III 1312 (= ILS 1593)",
+            "ref": "1312",
+            "note": "An inscription from Ampelum names Marcus Ulpius Hermias, an imperial freedman manumitted under Trajan, who served as procurator overseeing the Dacian gold-mining district (procurator aurariarum) from Ampelum, the administrative center of the mines."
+          }
+        ]
       }
     },
     {
@@ -12796,7 +12837,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Inscription d'Henchir-Mettich Face3.jpg?width=800",
-        "image_credit": "Henchir-Mettich inscription (Lex Manciana) · Wikimedia Commons"
+        "image_credit": "Henchir-Mettich inscription (Lex Manciana) · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Inscription of Henchir Mettich (anonymous imperial-estate regulation)",
+            "work": "CIL VIII 25902",
+            "ref": "25902",
+            "note": "A stone inscription of 116-117 CE from Henchir Mettich in the Bagradas (Medjerda) valley records terms applying the lex Manciana to the imperial estate. It permits tenant farmers to bring unused imperial land under cultivation and grants them usufruct rights, in exchange for a share of the harvest -- a third of grain, wine and oil after threshing or pressing, and a fourth of beans, plus dues on other produce."
+          }
+        ]
       }
     },
     {
@@ -13080,7 +13129,16 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pompeii,_Pompey%27s_Lane,_Tomb_Monument_of_Mamia_MET_DP319714.jpg?width=800",
-        "image_credit": "Photo: Metropolitan Museum of Art collection, via Wikimedia Commons"
+        "image_credit": "Photo: Metropolitan Museum of Art collection, via Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "CIL X 998 (unknown/anonymous, funerary inscription)",
+            "work": "Corpus Inscriptionum Latinarum X",
+            "ref": "998",
+            "note": "The inscription records that Mamia, daughter of Publius, public priestess, was given the burial place by decree of the town councillors.",
+            "quote": "Mamiae P(ubli) f(iliae) sacerdoti publicae locus sepultur(ae) datus decurionum decreto"
+          }
+        ]
       }
     },
     {
@@ -13106,7 +13164,15 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Aulus_Umbricius_Scaurus"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "CIL X 1024 (unknown/anonymous, funerary inscription)",
+            "work": "Corpus Inscriptionum Latinarum X",
+            "ref": "1024",
+            "note": "The inscription, set up by his father, records that the town decurions voted Aulus Umbricius Scaurus a burial monument site, 2,000 sesterces toward his funeral, and an equestrian statue in the forum."
+          }
+        ]
       }
     },
     {
@@ -13134,7 +13200,16 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pompeya._Tumba_de_Naevoleia_Tyche_y_C._Munatius_Faustus._01.JPG?width=800",
-        "image_credit": "Photo: Wikimedia Commons contributor, CC BY-SA 4.0"
+        "image_credit": "Photo: Wikimedia Commons contributor, CC BY-SA 4.0",
+        "ancient_sources": [
+          {
+            "author": "CIL X 1030 (unknown/anonymous, funerary inscription)",
+            "work": "Corpus Inscriptionum Latinarum X",
+            "ref": "1030",
+            "note": "The inscription records that the freedwoman Naevoleia Tyche built this monument, while still living, for herself and for Gaius Munatius Faustus, and for their own freedmen and freedwomen.",
+            "quote": "Naevoleia L(uci) lib(erta) Tyche sibi et C(aio) Munatio Fausto ... hoc monimentum Naevoleia Tyche libertis suis libertabusque et C(ai) Munati Fausti viva fecit"
+          }
+        ]
       }
     },
     {
@@ -13160,7 +13235,16 @@
         "sources": [
           "https://www.wikidata.org/wiki/Q29887294"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "AE 1911, 72 (unknown/anonymous, funerary inscription; the tomb was excavated in 1908, after CIL X's 1883 publication, so it first appeared in L'Annee epigraphique rather than CIL)",
+            "work": "L'Annee epigraphique 1911",
+            "ref": "72",
+            "note": "The inscription records that Gaius Vestorius Priscus, aedile, died at 22; the town decurions granted the burial place and 2,000 sesterces toward the funeral, and his mother Mulvia Prisca built the tomb at her own expense.",
+            "quote": "C. Vestorio Prisco Aedili vixit annis XXII locus sepulturae datus et in funere (sestertium) duo milia d(ecreto) d(ecurionum) Mulvia Prisca mater pecunia sua"
+          }
+        ]
       }
     },
     {
