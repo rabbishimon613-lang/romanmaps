@@ -22,7 +22,9 @@
      "https://en.wikipedia.org/wiki/Roman_Baths_(Bath)",
      "https://pleiades.stoa.org/places/79495"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman.baths.at.bath.exterior.arp.jpg?width=800",
+    "image_credit": "Roman Baths, Bath \u00b7 Wikimedia Commons"
    }
   },
   {
@@ -46,7 +48,10 @@
      "https://en.wikipedia.org/wiki/Wiesbaden",
      "https://en.wikipedia.org/wiki/Aquae_Mattiacorum"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kochbrunnen%20Tempel%20Wiesbaden%202024-10-05%2001.jpg?width=800",
+    "image_credit": "Kochbrunnen pavilion over the thermal spring, Wiesbaden \u00b7 Wikimedia Commons",
+    "image_alt": "Pavilion built over the ancient Aquae Mattiacae spring, not a Roman-era structure itself"
    }
   },
   {
@@ -70,7 +75,9 @@
      "https://en.wikipedia.org/wiki/Aquae_Cutiliae",
      "https://www.visitlazio.com/en/the-vespasian-baths-in-rieti/"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Terme%20Vespasiano.JPG?width=800",
+    "image_credit": "Roman bath ruins, Aquae Cutiliae \u00b7 Wikimedia Commons"
    }
   },
   {
@@ -94,7 +101,10 @@
      "https://en.wikipedia.org/wiki/Acqui_Terme",
      "https://en.wikipedia.org/wiki/Aquae_Statiellae"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Acqui%20Terme%20%E2%80%93%20La%20Bollente.jpg?width=800",
+    "image_credit": "La Bollente hot-spring fountain, Acqui Terme \u00b7 Wikimedia Commons",
+    "image_alt": "The modern fountain house over the ancient Aquae Statiellae spring"
    }
   },
   {
@@ -118,7 +128,9 @@
      "http://oppidaimperiiromani.blogspot.com/2010/08/aqvae-avreliae-baden-baden.html",
      "https://www.greatspatownsofeurope.eu/discover-experience/baden-baden/spa-history/"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Baden-Baden-Roemische%20Badruinen-02-2021-gje.jpg?width=800",
+    "image_credit": "Roman bath ruins, Baden-Baden \u00b7 Wikimedia Commons"
    }
   },
   {
@@ -142,7 +154,10 @@
      "http://ancientworld.hansotten.com/germany/aachen-aquae-granni/",
      "https://www.viabelgica.nl/en/plek/aquae-granni-roman-aachen-at-the-centre-charlemagne/"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Elisenbrunnen%2C%20Aachen.jpg?width=800",
+    "image_credit": "Elisenbrunnen pavilion, Aachen \u00b7 Wikimedia Commons",
+    "image_alt": "Neoclassical pavilion over the Roman-era thermal spring, not the Roman structure itself"
    }
   },
   {
@@ -166,7 +181,9 @@
      "https://en.wikipedia.org/wiki/Aquae_Flaviae",
      "https://en.wikipedia.org/wiki/Roman_Bridge_of_Chaves"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Termas%20Romanas%20de%20Chaves%20007.jpg?width=800",
+    "image_credit": "Roman baths of Chaves \u00b7 Wikimedia Commons"
    }
   },
   {
@@ -190,7 +207,10 @@
      "https://en.wikipedia.org/wiki/Aquae_Calidae,_Bulgaria",
      "https://www.burgasmuseums.bg/en/encdetail/moved-24"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aqua%20Calidae%20near%20Burgas%20TabulaPeutingeriana.jpg?width=800",
+    "image_credit": "Aquae Calidae on the Tabula Peutingeriana \u00b7 Wikimedia Commons",
+    "image_alt": "A detail of the ancient Roman road map showing the site, not a photograph"
    }
   },
   {
@@ -238,7 +258,10 @@
      "https://en.wikipedia.org/wiki/Aix-en-Provence",
      "https://www.roamintheempire.com/index.php/2019/11/06/aquae-sextiae/"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarcophage%20Aquae%20Sextiae.JPG?width=800",
+    "image_credit": "Roman sarcophagus found at Aquae Sextiae \u00b7 Wikimedia Commons",
+    "image_alt": "A sarcophagus recovered from the site, not the baths themselves"
    }
   },
   {
@@ -262,7 +285,9 @@
      "https://en.wikipedia.org/wiki/Aquae_Iasae",
      "https://vici.org/vici/11789/"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Terme%20Vara%C5%BEdinske%20Toplice.jpg?width=800",
+    "image_credit": "Thermal baths at Aquae Iasae, Vara\u017edinske Toplice \u00b7 Wikimedia Commons"
    }
   },
   {
@@ -358,7 +383,10 @@
      "https://en.wikipedia.org/wiki/Dax,_Landes",
      "https://en.wikipedia.org/wiki/Aquae_Tarbellicae"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dax%20-%20Crypte%20arch%C3%A9ologique%20%282%29.JPG?width=800",
+    "image_credit": "Gallo-Roman temple crypt, Dax \u00b7 Wikimedia Commons",
+    "image_alt": "The excavated temple crypt at the site, not a bathing hall"
    }
   },
   {
@@ -382,7 +410,9 @@
      "https://en.wikipedia.org/wiki/Vicarello_Cups",
      "http://www.imperium-romana.org/vicarello-cup.html"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20Terme%20Apollinari%20di%20Vicarello.jpg?width=800",
+    "image_credit": "Baths of Apollo, Vicarello \u00b7 Wikimedia Commons"
    }
   },
   {
@@ -406,7 +436,9 @@
      "https://en.wikipedia.org/wiki/Rufus_of_Ephesus",
      "https://acnr.co.uk/articles/rufus-of-ephesus/"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Wellcome%20M0000758.jpg?width=800",
+    "image_credit": "Portrait of Rufus of Ephesus, engraving \u00b7 Wellcome Collection / Wikimedia Commons"
    }
   },
   {
@@ -454,7 +486,9 @@
      "https://en.wikipedia.org/wiki/Soranus_of_Ephesus",
      "https://oxfordre.com/classics/display/10.1093/acrefore/9780199381135.001.0001/acrefore-9780199381135-e-6002"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Soranus%20of%20Ephesus%2C%20Gynaecology%2C%20Brussels%2C%20Ms.%203714.jpg?width=800",
+    "image_credit": "9th-century manuscript page, Soranus's Gynaecology \u00b7 Wikimedia Commons"
    }
   },
   {
@@ -478,7 +512,9 @@
      "https://en.wikipedia.org/wiki/Medicine_in_ancient_Rome",
      "https://www.hellenicaworld.com/Greece/LX/en/AlexandrianAnatomy.html"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Great%20Library%20of%20Alexandria%2C%20O.%20Von%20Corven%2C%2019th%20century.jpg?width=800",
+    "image_credit": "The Great Library of Alexandria, 19th-century engraving by O. Von Corven \u00b7 Wikimedia Commons"
    }
   },
   {
@@ -502,7 +538,10 @@
      "https://en.wikipedia.org/wiki/Hippocrates",
      "https://link.springer.com/article/10.1007/s00381-010-1271-2"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kos%20-%20Platane%20des%20Hippokrates%2003.jpg?width=800",
+    "image_credit": "Tree of Hippocrates, Kos \u00b7 Wikimedia Commons",
+    "image_alt": "The traditional site associated with Hippocrates's teaching, not a surviving Roman-era school building"
    }
   },
   {
@@ -550,7 +589,9 @@
      "https://philipharland.com/greco-roman-associations/letters-of-vespasian-and-domitian-on-physicians-and-instructors-74-ce-93-94-ce/",
      "https://www.richardcarrier.info/archives/16051"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20an%20unknown%20Roman%20Doctor%20Wellcome%20L0002897.jpg?width=800",
+    "image_credit": "Portrait of an unknown Roman doctor \u00b7 Wellcome Collection / Wikimedia Commons"
    }
   },
   {
@@ -574,7 +615,9 @@
      "https://whc.unesco.org/en/list/491/",
      "https://www.visitgreece.gr/experiences/culture/archaeological-sites-and-monuments/the-sanctuary-of-asklepios-at-epidaurus/"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sanctuary%20of%20Asclepius%20at%20Epidaurus%20-%20Abaton%20-%2052042245703.jpg?width=800",
+    "image_credit": "The Abaton (incubation hall), Sanctuary of Asklepios, Epidaurus \u00b7 Wikimedia Commons"
    }
   },
   {
@@ -598,7 +641,9 @@
      "https://www.greeka.com/dodecanese/kos/sightseeing/kos-asklepieion/",
      "https://www.discovergreece.com/experiences/feel-healing-energy-asclepion-kos"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Asklepieion%20panoramic%20view.jpg?width=800",
+    "image_credit": "Asklepieion of Kos, panoramic view \u00b7 Wikimedia Commons"
    }
   },
   {
@@ -622,7 +667,10 @@
      "https://en.wikipedia.org/wiki/Asclepieion_of_Athens",
      "https://www.theacropolismuseum.gr/en/sanctuaries/sanctuary-asklepios"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Athens%20acropolis%20south%20slope%204-2004%202.JPG?width=800",
+    "image_credit": "Acropolis south slope, Athens \u00b7 Wikimedia Commons",
+    "image_alt": "A general view of the south slope where the Asklepieion stood, not a close-up of the sanctuary"
    }
   },
   {
@@ -646,7 +694,10 @@
      "https://en.wikipedia.org/wiki/Asclepeion_of_Corinth",
      "https://www.ascsa.edu.gr/excavations/corinth/corinth-excavations-overview/asklepieion"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Statuette%20of%20enthroned%20Asklepios%2C%20AM%20of%20Corinth%2C%20202799.jpg?width=800",
+    "image_credit": "Statuette of enthroned Asklepios, Archaeological Museum of Corinth \u00b7 Wikimedia Commons",
+    "image_alt": "A museum statuette from Corinth's Asklepieion, not a photo of the sanctuary ruins"
    }
   },
   {
@@ -670,7 +721,10 @@
      "https://en.wikipedia.org/wiki/Temple_of_Asclepius,_Rome",
      "https://imperiumromanum.pl/en/roman-geography/tiber-island/"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Isola%20Tiberina%202014.JPG?width=800",
+    "image_credit": "Tiber Island, Rome \u00b7 Wikimedia Commons",
+    "image_alt": "A modern view of the island where the Temple of Aesculapius stood; no photo of the temple itself survives"
    }
   },
   {
@@ -694,7 +748,10 @@
      "https://www.britannica.com/place/Pontine-Marshes",
      "https://academic.oup.com/book/9850/chapter/157116505"
     ],
-    "confidence": "low"
+    "confidence": "low",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Leonardo%20da%20Vinci%20-%20RCIN%20912684%2C%20A%20map%20of%20the%20Pontine%20marshes%20c.1514-15.jpg?width=800",
+    "image_credit": "Leonardo da Vinci's map of the Pontine Marshes, c. 1514\u201315 \u00b7 Royal Collection / Wikimedia Commons",
+    "image_alt": "A Renaissance-era map of the marshes, used here for lack of an ancient depiction"
    }
   },
   {
@@ -766,7 +823,10 @@
      "https://en.wikipedia.org/wiki/Aquae_Arnemetiae",
      "https://www.roman-britain.co.uk/places/aquae_arnemetiae/"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Natural%20Mineral%20Baths%2C%20Buxton.jpg?width=800",
+    "image_credit": "Natural Mineral Baths building, Buxton \u00b7 Wikimedia Commons",
+    "image_alt": "The historic bath building over the Aquae Arnemetiae spring; no Roman-era masonry survives above ground"
    }
   },
   {
@@ -789,7 +849,9 @@
     "sources": [
      "https://en.wikipedia.org/wiki/Aquae_Calidae,_Algeria"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hammam%20Righa.JPG?width=800",
+    "image_credit": "Hammam Righa, site of Aquae Calidae Caesaris \u00b7 Wikimedia Commons"
    }
   },
   {
@@ -813,7 +875,9 @@
      "https://en.wikipedia.org/wiki/Aquis_Querquennis",
      "https://www.atlasobscura.com/places/aquis-querquennis"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Termas%20romanas%20%C3%B3%20aire%20libre%20de%20Aquis%20Querquennis.%20Ba%C3%B1os%20de%20Bande.%20Galiza.%202013-2.jpg?width=800",
+    "image_credit": "Open-air Roman baths, Aquis Querquennis, Ba\u00f1os de Bande \u00b7 Wikimedia Commons"
    }
   },
   {
@@ -836,7 +900,10 @@
     "sources": [
      "https://www.caldasdereis.com/historia_c.php"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tesoro%20de%20Caldas%20de%20Reis%20%2837624896942%29.jpg?width=800",
+    "image_credit": "Roman-era hoard found at Caldas de Reis \u00b7 Wikimedia Commons",
+    "image_alt": "A treasure hoard recovered at the site, not a photo of the baths"
    }
   },
   {
@@ -859,7 +926,9 @@
     "sources": [
      "https://www.researchgate.net/publication/348787872"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Thermal%20lake%20Alhama%20de%20Aragon.jpg?width=800",
+    "image_credit": "Thermal lake, Alhama de Arag\u00f3n \u00b7 Wikimedia Commons"
    }
   },
   {
@@ -882,7 +951,9 @@
     "sources": [
      "https://en.wikipedia.org/wiki/Hammam_Essalihine"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hammam%20Essalhine%20Aquae%20Flaviane%20Khenchela%20Mont%20View%202.jpg?width=800",
+    "image_credit": "Roman baths at Aquae Flavianae, Hammam Essalihine \u00b7 Wikimedia Commons"
    }
   },
   {
@@ -905,7 +976,9 @@
     "sources": [
      "https://en.wikipedia.org/wiki/Terme_Taurine"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Terme%20Taurine%20Republic%20era%20ruins.jpg?width=800",
+    "image_credit": "Republic-era ruins, Terme Taurine \u00b7 Wikimedia Commons"
    }
   },
   {
@@ -952,7 +1025,9 @@
     "sources": [
      "https://en.wikipedia.org/wiki/Albulae_Aquae"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tivoli%20Aquae%20Albulae%20-%20Lago%20della%20Regina.jpg?width=800",
+    "image_credit": "The Aquae Albulae springs, Bagni di Tivoli \u00b7 Wikimedia Commons"
    }
   },
   {
@@ -998,7 +1073,9 @@
     "sources": [
      "https://en.wikipedia.org/wiki/Bagneres-de-Luchon"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bagn%C3%A8res-de-Luchon%20Thermes%204723.JPG?width=800",
+    "image_credit": "Thermal baths building, Bagn\u00e8res-de-Luchon \u00b7 Wikimedia Commons"
    }
   },
   {
@@ -1044,7 +1121,10 @@
     "sources": [
      "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Daquis-calidis"
     ],
-    "confidence": "low"
+    "confidence": "low",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Hall%20Des%20Sources%20C%C3%A9lestins%20Vichy%20%28229848633%29.jpeg?width=800",
+    "image_credit": "Hall des Sources over the C\u00e9lestins spring, Vichy \u00b7 Wikimedia Commons",
+    "image_alt": "A 19th-century structure built over the ancient Aquae Calidae spring, not a Roman ruin"
    }
   },
   {
@@ -1067,7 +1147,10 @@
     "sources": [
      "https://it.wikipedia.org/wiki/Aquae_Sinuessanae"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Venere%20di%20Sinuessa%2C%20da%20Mondragone%2C%20s.n.%2C%2001.JPG?width=800",
+    "image_credit": "Venus statue found at Sinuessa, Mondragone \u00b7 Wikimedia Commons",
+    "image_alt": "A statue recovered from the site, not a photo of the baths"
    }
   },
   {
@@ -1183,7 +1266,9 @@
     "sources": [
      "https://ilkogretim-online.org/index.php/pub/article/view/8318"
     ],
-    "confidence": "low"
+    "confidence": "low",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hammam%20Meskhoutine%20vue%20g%C3%A9n%C3%A9rale%201.JPG?width=800",
+    "image_credit": "Travertine terraces, Hammam Meskhoutine (Aquae Traiani) \u00b7 Wikimedia Commons"
    }
   },
   {
@@ -1206,7 +1291,9 @@
     "sources": [
      "https://idese.cultura.gov.it/en/place/antiche-terme-aquae-neapolitanae/"
     ],
-    "confidence": "low"
+    "confidence": "low",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sardara%20-%20Terme%20romane%20%2801%29.jpg?width=800",
+    "image_credit": "Roman bath ruins, Sardara \u00b7 Wikimedia Commons"
    }
   }
  ]
