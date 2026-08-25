@@ -16759,7 +16759,10 @@
           "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Dcuicul"
         ],
         "confidence": "medium",
-        "ancient_sources": []
+        "ancient_sources": [],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arch%20on%20the%20Cardo%20Maximus%20next%20to%20the%20Basilica%20Julia%2C%20Cuicul%20(Djémila)%2C%20Numidia%2C%20Algeria.jpg?width=800",
+        "image_credit": "Arch on the Cardo Maximus beside the Basilica Julia, Djemila · photo by Carole Raddato, Wikimedia Commons (CC BY-SA)",
+        "image_alt": "The Cardo Maximus arch next to the Civil Basilica at Djemila"
       }
     },
     {
@@ -16787,7 +16790,9 @@
           "https://en.wikipedia.org/wiki/Arch_of_Caracalla_(Dj%C3%A9mila)"
         ],
         "confidence": "medium",
-        "ancient_sources": []
+        "ancient_sources": [],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Djemila%20-%20Panorama%20Temple%20Septimien%20(banner).jpg?width=800",
+        "image_credit": "Panorama of the Severan Forum and Temple of the Gens Septimia, Djemila · Wikimedia Commons"
       }
     },
     {
@@ -16903,7 +16908,10 @@
           "https://www.worldhistory.org/article/436/the-heritage-of-cuicul/"
         ],
         "confidence": "low",
-        "ancient_sources": []
+        "ancient_sources": [],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Rape%20of%20Europa%2C%20mosaic%20from%20the%20House%20of%20Europa%2C%20dated%20to%20the%20late%204th%20century%20or%205th%20century%20AD%2C%20Djemila%20Museum%2C%20Algeria%20(54411422118).jpg?width=800",
+        "image_credit": "Rape of Europa mosaic from the House of Europa, now in the Djemila Museum · Wikimedia Commons",
+        "image_alt": "Mosaic of the Rape of Europa, House of Europa, Djemila"
       }
     },
     {
@@ -17163,7 +17171,10 @@
           "https://sitedevolubilis.org/map-of-volubilis/"
         ],
         "confidence": "medium",
-        "ancient_sources": []
+        "ancient_sources": [],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Decumanus%20Maximus.jpg?width=800",
+        "image_credit": "The Decumanus Maximus leading toward the Tangier Gate, Volubilis · photo by Christian Rosenbaum, Wikimedia Commons",
+        "image_alt": "Volubilis's main street looking toward the Tangier Gate"
       }
     },
     {
@@ -18251,6 +18262,629 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trier_Konstantinbasilika_BW_1.JPG?width=800",
         "image_credit": "Konstantinbasilika, Trier · Wikimedia Commons (CC BY-SA)",
         "ancient_sources": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2949,
+          32.6396
+        ]
+      },
+      "properties": {
+        "id": "poi_lepcis_old_forum",
+        "category": "forum",
+        "name_latin": "Forum Vetus Lepcis Magnae",
+        "name_english": "Old Forum of Leptis Magna",
+        "province": "Africa Proconsularis",
+        "modern_location": "Al-Khums, Libya",
+        "built": -8,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Leptis Magna's original civic square, laid out under Augustus and still the working heart of the city in 117 CE. Three temples line its south side, to Rome and Augustus, to Liber Pater, and to Hercules, patron gods the city had honored since its Phoenician founding. Nearly a century would pass before Septimius Severus, born in this city, gave it a second, grander forum nearby.",
+        "sources": [
+          "https://vici.org/vici/55151/",
+          "https://pleiades.stoa.org/places/676148653"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.29486,
+          32.63958
+        ]
+      },
+      "properties": {
+        "id": "poi_lepcis_temple_roma_augustus",
+        "category": "temple",
+        "name_latin": "Templum Romae et Augusti",
+        "name_english": "Temple of Rome and Augustus",
+        "province": "Africa Proconsularis",
+        "modern_location": "Al-Khums, Libya",
+        "built": -8,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Begun under Augustus around 8 BCE and dedicated under Tiberius, this temple anchors the south side of the Old Forum with statues of Roma, Augustus, Tiberius, and Livia inside. Its bilingual Latin and Neo-Punic dedication names two local suffetes, magistrates the city still elected in the old Punic style even as a Roman province. A full century after Tiberius unveiled it, it remains Leptis Magna's grandest imperial-cult shrine in 117 CE.",
+        "sources": [
+          "https://pleiades.stoa.org/places/676148653",
+          "https://www.judaism-and-rome.org/dedication-temple-augustus-and-roma-lepcis-magna-ipt-22"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Anonymous",
+            "work": "Bilingual dedicatory inscription, Temple of Rome and Augustus",
+            "ref": "IPT 22",
+            "note": "Records the temple's completion under two named suffetes and lists statues of Roma, Augustus, Tiberius, and Livia placed inside."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2943,
+          32.6393
+        ]
+      },
+      "properties": {
+        "id": "poi_lepcis_market_annobal",
+        "category": "market",
+        "name_latin": "Macellum",
+        "name_english": "Market of Leptis Magna",
+        "province": "Africa Proconsularis",
+        "modern_location": "Al-Khums, Libya",
+        "built": -9,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A local benefactor, Annobal Tapapius Rufus, paid for this market out of his own pocket around 9 BCE, giving the city two elegant octagonal pavilions inside a rectangular portico. One held a stone measuring table for grain and produce; the other, built around a small pool, likely sold fish fresh off the boats from Leptis's harbor. Bilingual Latin and Neo-Punic inscriptions over its doors are among the oldest Latin texts found anywhere in the city, already more than a century old by 117 CE.",
+        "sources": [
+          "https://www.livius.org/articles/place/lepcis-magna/photos/lepcis-magna-macellum/",
+          "https://historyandarchaeologyonline.com/the-market-place-leptis-magna/"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Anonymous",
+            "work": "Bilingual dedicatory inscriptions, Market of Leptis Magna",
+            "ref": "market entrance and central tholos",
+            "note": "Latin over the entrance, Neo-Punic on the architrave of a central pavilion, naming Annobal Tapapius Rufus as founder."
+          }
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Leptis%20Magna%20market%20place%20April%202004.jpg?width=800",
+        "image_credit": "Market of Leptis Magna · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2903,
+          32.6381
+        ]
+      },
+      "properties": {
+        "id": "poi_lepcis_theatre",
+        "category": "theater",
+        "name_latin": "Theatrum",
+        "name_english": "Theatre of Leptis Magna",
+        "province": "Africa Proconsularis",
+        "modern_location": "Al-Khums, Libya",
+        "built": 2,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Dedicated around 1 or 2 CE by Annobal Tapapius Rufus, the same benefactor behind the city's market, this is the oldest stone theatre anywhere in Roman Africa. Its builders cut the curved seating bank straight into a hillside that had previously served as a cemetery. By 117 CE the theatre has staged performances for well over a century, its colonnaded stage building faced in imported marble.",
+        "sources": [
+          "https://www.livius.org/articles/place/lepcis-magna/photos/lepcis-magna-theater/"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Anonymous",
+            "work": "Bilingual dedicatory inscription, Theatre of Leptis Magna",
+            "ref": "IRT 322",
+            "note": "Names Annobal Tapapius Rufus as builder and dedicates the theatre to Augustus."
+          }
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Leptis%20Magna%20Theatre.jpg?width=800",
+        "image_credit": "Theatre of Leptis Magna · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2904,
+          32.6382
+        ]
+      },
+      "properties": {
+        "id": "poi_lepcis_temple_ceres_augusta",
+        "category": "temple",
+        "name_latin": "Templum Cereris Augustae",
+        "name_english": "Temple of Ceres Augusta",
+        "province": "Africa Proconsularis",
+        "modern_location": "Al-Khums, Libya",
+        "built": 36,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Suphunibal, daughter of the theatre's founder, funded this small shrine onto the theatre's colonnaded walk in 35 or 36 CE. Its cult statue of Ceres Augusta carried the features of Livia, Augustus's widow and Tiberius's mother, folding an old Roman grain goddess into the imperial family. In 117 CE the shrine has been a fixture of the theatre precinct for eight decades.",
+        "sources": [
+          "https://www.livius.org/articles/place/lepcis-magna/photos/lepcis-magna-theater/",
+          "https://livinglateantiquity.org/exhibits/show/entertainment/item/187"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.292,
+          32.6387
+        ]
+      },
+      "properties": {
+        "id": "poi_lepcis_arch_tiberius",
+        "category": "arch",
+        "name_latin": "Arcus Tiberii",
+        "name_english": "Arch of Tiberius",
+        "province": "Africa Proconsularis",
+        "modern_location": "Al-Khums, Libya",
+        "built": 36,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Governor Gaius Rubellius Blandus raised this limestone arch across the Cardo Maximus in 35 or 36 CE, marking a street-paving project funded with land confiscated after the Tacfarinas revolt in Numidia. Its bilingual inscription names both the governor and the deputy who oversaw the work. Eighty years on, in 117 CE, the arch still frames the city's main north-south street.",
+        "sources": [
+          "https://www.livius.org/articles/place/lepcis-magna/photos/lepcis-magna-arch-of-tiberius/",
+          "https://vici.org/vici/18031/"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Anonymous",
+            "work": "Bilingual dedicatory inscription, Arch of Tiberius, Leptis Magna",
+            "ref": "in situ",
+            "note": "Names the governor Gaius Rubellius Blandus and his legate."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2933,
+          32.6389
+        ]
+      },
+      "properties": {
+        "id": "poi_lepcis_chalcidicum",
+        "category": "market",
+        "name_latin": "Chalcidicum",
+        "name_english": "Chalcidicum of Leptis Magna",
+        "province": "Africa Proconsularis",
+        "modern_location": "Al-Khums, Libya",
+        "built": 12,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A local benefactor built this colonnaded exchange around 11 or 12 CE, dedicating it to the cult of Augustus while the emperor himself was still alive. Its name echoes the arcaded trading halls of the Greek world, though what exactly changed hands inside is still debated. By 117 CE it stands only a few paces from the Arch of Trajan, raised at the very same crossroads just seven years earlier.",
+        "sources": [
+          "https://vici.org/vici/26561/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.3092,
+          32.6322
+        ]
+      },
+      "properties": {
+        "id": "poi_lepcis_amphitheatre",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum",
+        "name_english": "Amphitheatre of Leptis Magna",
+        "province": "Africa Proconsularis",
+        "modern_location": "Al-Khums, Libya",
+        "built": 56,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Governor Marcus Pompeius Silvanus dedicated this amphitheatre to the young emperor Nero in 56 CE, cutting a natural depression above the sea into an oval arena for around 16,000 spectators. A decorative tabula ansata inscription names the governor, his deputy, and the emperor it honored. In 117 CE, six decades old, it still stands roughly a kilometer from the city center, near enough for a show and far enough that the Forum barely hears the crowd.",
+        "sources": [
+          "https://www.livius.org/articles/place/lepcis-magna/photos/lepcis-magna-amphitheater",
+          "https://pleiades.stoa.org/places/133229241"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Anonymous",
+            "work": "Dedicatory inscription, Amphitheatre of Leptis Magna",
+            "ref": "in situ, tabula ansata",
+            "note": "Names governor Marcus Pompeius Silvanus, his deputy Quintus Cassius Gratus, and Nero."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2936,
+          32.6391
+        ]
+      },
+      "properties": {
+        "id": "poi_lepcis_arch_trajan",
+        "category": "arch",
+        "name_latin": "Arcus Traiani",
+        "name_english": "Arch of Trajan",
+        "province": "Africa Proconsularis",
+        "modern_location": "Al-Khums, Libya",
+        "built": 110,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Dedicated in 110 CE, this arch is the first monument at Leptis Magna to record the city's promotion to a full Roman colony, Colonia Ulpia Traiana Lepcitanorum, named for the emperor himself. It stood at the northeast corner of the Chalcidicum, over the crossroads of the Cardo and the road to the theatre. Trajan died at Selinus in Cilicia on 11 August 117 CE, just seven years after his name went up here, making this arch one of the newest standing monuments anywhere in the empire on this map's own date.",
+        "sources": [
+          "https://www.livius.org/articles/place/lepcis-magna/photos/lepcis-magna-arch-of-trajan/"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Anonymous",
+            "work": "Dedicatory inscription, Arch of Trajan, Leptis Magna",
+            "ref": "tribunician year 14 (109/110 CE)",
+            "note": "Names the Colonia Ulpia Traiana Lepcitanorum council and assembly as dedicators, the earliest record of the city's colonial status."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2965,
+          32.6378
+        ]
+      },
+      "properties": {
+        "id": "poi_lepcis_hadrianic_baths",
+        "category": "bathhouse",
+        "name_latin": "Thermae Hadrianae",
+        "name_english": "Hadrianic Baths of Leptis Magna",
+        "province": "Africa Proconsularis",
+        "modern_location": "Al-Khums, Libya",
+        "built": 127,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Hadrian's governor Publius Valerius Priscus dedicated this vast bath complex in 127 CE, the first building at Leptis Magna to use imported marble as a structural material rather than mere decoration. In 117 CE, the year this map is frozen at, the site is still open ground; construction is a full decade away. Later generations would rank it among the largest baths anywhere in Roman Africa.",
+        "sources": [
+          "https://www.livius.org/articles/place/lepcis-magna/photos/lepcis-magna-hadrianic-baths/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.291,
+          32.64
+        ]
+      },
+      "properties": {
+        "id": "poi_lepcis_severan_forum",
+        "category": "forum",
+        "name_latin": "Forum Novum Severianum",
+        "name_english": "Severan Forum of Leptis Magna",
+        "province": "Africa Proconsularis",
+        "modern_location": "Al-Khums, Libya",
+        "built": 203,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Septimius Severus, born in Leptis Magna, gave his hometown a second forum nearly twice the size of the old one, faced in imported marble and ringed with carved Medusa heads. Ground for it was not broken until nearly a century after this map's snapshot date. In 117 CE, Leptis Magna's civic life is still entirely confined to its modest Augustan-era Old Forum.",
+        "sources": [
+          "https://www.judaism-and-rome.org/severan-forum-lepcis-magna-203-ce"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2895,
+          32.6408
+        ]
+      },
+      "properties": {
+        "id": "poi_lepcis_arch_septimius_severus",
+        "category": "arch",
+        "name_latin": "Arcus Septimii Severi",
+        "name_english": "Arch of Septimius Severus",
+        "province": "Africa Proconsularis",
+        "modern_location": "Al-Khums, Libya",
+        "built": 203,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A four-way triumphal arch raised around 203 CE to mark Septimius Severus's visit to his native city as reigning emperor, carved with reliefs of his family and their armies. It rises nearly a century past this map's 117 CE snapshot, when Leptis Magna's grandest arch is still Trajan's, dedicated only seven years before. Severus himself would not be born for another 35 years.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Arch_of_Septimius_Severus_(Leptis_Magna)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4875,
+          32.7998
+        ]
+      },
+      "properties": {
+        "id": "poi_sabratha_mausoleum_bes",
+        "category": "mausoleum",
+        "name_latin": "Mausoleum B",
+        "name_english": "Mausoleum of Bes",
+        "province": "Africa Proconsularis",
+        "modern_location": "Sabratha, Libya",
+        "built": -150,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Local Numidian and Punic craftsmen raised this tower-tomb around the mid-2nd century BCE, more than two centuries before Rome absorbed Sabratha into its African provinces. Its upper story carries reliefs of Bes, a Punic protector-god of the dead, which gave the mausoleum its modern name. By 117 CE the tomb has stood on this ground for close to 300 years, already ancient before Trajan was even born.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sabrata"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mausoleum%20of%20Bes%20(Sabratha%2C%20Az%20Zawiyah%2C%20Libya).jpg?width=800",
+        "image_credit": "Mausoleum of Bes, Sabratha · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4843,
+          32.8027
+        ]
+      },
+      "properties": {
+        "id": "poi_sabratha_temple_liber_pater",
+        "category": "temple",
+        "name_latin": "Aedes Liberi Patris",
+        "name_english": "Temple of Liber Pater",
+        "province": "Africa Proconsularis",
+        "modern_location": "Sabratha, Libya",
+        "built": 70,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Sabratha's own patron god, Shadrapa, took the Roman name Liber Pater when Augustan-era builders first raised him a temple in the forum. An earthquake around 65 or 70 CE brought that structure down; its builders re-raised it in the ringed-column form still standing in 117 CE. A restoration inscription cut two and a half centuries later still remembered the shrine as toppled by ancient collapse, proof of how old it already felt to Sabratha's own residents.",
+        "sources": [
+          "https://www.judaism-and-rome.org/restoration-temple-liber-pater-sabratha-irt-55",
+          "https://vici.org/vici/18056/?lang=en"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Anonymous",
+            "work": "Restoration inscription, Temple of Liber Pater, Sabratha",
+            "ref": "IRT 55",
+            "note": "A later restoration describes the temple as ruined by ancient collapse, attesting to its earlier, pre-117 origin."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4828,
+          32.8052
+        ]
+      },
+      "properties": {
+        "id": "poi_sabratha_baths_oceanus",
+        "category": "bathhouse",
+        "name_latin": "Thermae maritimae",
+        "name_english": "Seaward Baths of Sabratha",
+        "province": "Africa Proconsularis",
+        "modern_location": "Sabratha, Libya",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Flavian-era builders raised these baths directly on Sabratha's shoreline, close enough that bathers could hear the surf through the walls. Mosaic floors here depict Oceanus, the sea's personification, giving the baths their modern name. By 117 CE the complex is around a quarter-century old, one of the bathing houses of a Punic trading city that had become fully Roman only a few generations before.",
+        "sources": [
+          "https://vici.org/vici/18060/",
+          "https://en.wikipedia.org/wiki/File:Seaward_Baths,_Sabratha.JPG"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Seaward_Baths%2C_Sabratha.JPG?width=800",
+        "image_credit": "Seaward Baths (Baths of Oceanus), Sabratha · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4847,
+          32.8031
+        ]
+      },
+      "properties": {
+        "id": "poi_sabratha_capitolium",
+        "category": "temple",
+        "name_latin": "Capitolium",
+        "name_english": "Capitolium of Sabratha",
+        "province": "Africa Proconsularis",
+        "modern_location": "Sabratha, Libya",
+        "built": 180,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The marble Capitolium standing over Sabratha's forum today is a late-2nd-century rebuilding from the age of the Antonine emperors, roughly six decades past this map's 117 CE snapshot. An earlier, plainer temple to the Capitoline Triad may have stood on the same spot, but no securely dated evidence for it survives. In 117 CE this corner of the forum does not yet hold the building visitors see today.",
+        "sources": [
+          "https://www.cambridge.org/core/journals/journal-of-roman-studies/article/abs/capitolia/46A297EDD95F6793C26464E8129D4DDC",
+          "https://www.worldhistory.org/Sabratha/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Inscription%20Capitolium%20Sabratha.JPG?width=800",
+        "image_credit": "Inscription naming the Capitolium of Sabratha · Wikimedia Commons",
+        "image_alt": "Inscribed stone mentioning Sabratha's Capitolium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4882,
+          32.8008
+        ]
+      },
+      "properties": {
+        "id": "poi_sabratha_theatre",
+        "category": "theater",
+        "name_latin": "Theatrum",
+        "name_english": "Theatre of Sabratha",
+        "province": "Africa Proconsularis",
+        "modern_location": "Sabratha, Libya",
+        "built": 200,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Sabratha's celebrated three-story theatre, one of the largest ever built in Roman North Africa, rose under the later Antonine and Severan emperors and was finished around the start of the 3rd century CE, roughly ninety years after this map's 117 CE snapshot. In 117 CE, the ground where thousands will one day watch tragedies performed is still open land at the edge of the city.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ancient_theater_of_Sabratha",
+          "https://historyandarchaeologyonline.com/the-theatre-of-sabratha/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4905,
+          32.7978
+        ]
+      },
+      "properties": {
+        "id": "poi_sabratha_amphitheatre",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum",
+        "name_english": "Amphitheatre of Sabratha",
+        "province": "Africa Proconsularis",
+        "modern_location": "Sabratha, Libya",
+        "built": 185,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Built during the reign of Commodus at the end of the 2nd century CE, this oval arena east of the city center held several thousand spectators for beast hunts and gladiator bouts. It postdates this map's 117 CE snapshot by six decades or more. Sabratha's residents in 117 CE would have had to travel to Leptis Magna, or further, for anything resembling a permanent amphitheatre.",
+        "sources": [
+          "https://heroesofadventure.com/listing/roman-amphitheater-of-sabratha-unesco-libya/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.485,
+          32.8033
+        ]
+      },
+      "properties": {
+        "id": "poi_sabratha_temple_antoninus_pius",
+        "category": "temple",
+        "name_latin": "Templum Antonini Pii",
+        "name_english": "Temple of Antoninus Pius",
+        "province": "Africa Proconsularis",
+        "modern_location": "Sabratha, Libya",
+        "built": 145,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Sabratha's forum gained this temple only after Antoninus Pius became emperor in 138 CE, honoring the third of Rome's so-called good emperors. Trajan was already dead by then, and even Hadrian's own sixteen-year reign had years left to run before Antoninus ever took the throne he was building toward. In 117 CE this stretch of Sabratha's forum has yet to be built on at all, still bare ground waiting for a temple nobody has planned yet.",
+        "sources": [
+          "https://www.ancient-history-sites.com/sites/sabratha/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4836,
+          32.8038
+        ]
+      },
+      "properties": {
+        "id": "poi_sabratha_basilica_justinian",
+        "category": "basilica",
+        "name_latin": "Basilica Iustiniana",
+        "name_english": "Basilica of Justinian",
+        "province": "Africa Proconsularis",
+        "modern_location": "Sabratha, Libya",
+        "built": 535,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The Byzantine emperor Justinian ordered this basilica built in the 6th century, recycling columns and stone salvaged from Sabratha's older pagan temples into a Christian church. It rises more than four hundred years after this map's 117 CE snapshot, in a North Africa Rome no longer rules directly. Its scavenged marble is the closest thing left standing here to the temples its own builders tore apart to make it.",
+        "sources": [
+          "https://digital.kenyon.edu/baly/1027/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4846,
+          32.8029
+        ]
+      },
+      "properties": {
+        "id": "poi_sabratha_curia",
+        "category": "curia",
+        "name_latin": "Curia",
+        "name_english": "Curia of Sabratha",
+        "province": "Africa Proconsularis",
+        "modern_location": "Sabratha, Libya",
+        "built": 350,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Sabratha's council chamber, where the city's local senate met, is dated by the one source available to the 4th century CE, roughly two centuries after Trajan died at Selinus, the event this map is frozen at. Whatever building served the city's council under Trajan and Hadrian, if one existed yet, has left no trace that modern archaeologists have managed to recover from the site. Sabratha's civic buildings, like much of its forum, were still taking shape decades after this map's own snapshot date.",
+        "sources": [
+          "https://makedonia-alexandros.blogspot.com/2020/05/about-sabratha-libya.html"
+        ],
+        "confidence": "low"
       }
     }
   ]

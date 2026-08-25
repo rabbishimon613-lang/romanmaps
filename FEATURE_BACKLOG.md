@@ -561,12 +561,18 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
   `setPaintProperty` restyle** — the road-station square marker was the only one in the codebase
   and is now regenerated via `updateImage` on a theme switch (`buildRoadStationIcon`). Any future
   generated icon needs the same treatment, or it'll keep a stale halo/border color after a switch.
-- [ ] **Image coverage on the Djemila/Volubilis batches: 14 of 25 shipped with no `image_url`**
-  (9 of 13 Djemila, 5 of 12 Volubilis) after the research pass found no confirmable Commons
-  filename. Real gap, not exhausted — the Djemila side especially, since the site is a
-  well-photographed UNESCO property and a fresh search budget aimed at Commons *categories*
-  (`Category:Djémila` and its subcategories) rather than individual filenames would likely close
-  most of it. Same "real gap, not exhausted" shape as prior image-coverage notes.
+- [ ] **Image coverage on the Djemila/Volubilis batches: down to 10 of 25 with no `image_url`**
+  (6 of 13 Djemila, 4 of 12 Volubilis) after this shift's image-only research pass closed 4 more
+  (Civil Basilica and Severan Forum via a Carole Raddato Commons upload and a Djemila panorama
+  file, House of Europa via its Rape-of-Europa mosaic now in the Djemila Museum, Tangier Gate via
+  a Decumanus Maximus street view rather than a close-up of the gate itself — noted honestly in
+  each `image_alt`). Still not found despite a dedicated pass: the ramparts, Old Forum, Capitolium,
+  Temple of Venus Genetrix, Market of Cosinius and the Christian Quarter at Djemila; the Flavian
+  Baths (a "North Baths" file exists but its identity as the *Flavian* baths specifically is
+  unconfirmed), House of Venus (right Commons category confirmed, exact filename not — WebSearch
+  doesn't browse category contents reliably), Temple of Saturn and the city walls at Volubilis.
+  Same fix as before: someone with direct Commons category-browsing access (not WebSearch) would
+  likely close most of the rest in minutes.
 - [ ] **The 2 remaining image-null legionary fortresses (Melitene, Nicopolis/Alexandria) have now
   survived three separate search passes** with different angles (tourism, excavation-report,
   academic). For Nicopolis, the honest finding is that the material exists but not on Commons —
@@ -579,12 +585,19 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
   Ruwer aqueduct). Same "real gap, not exhausted" shape — Jerash and Trier are both
   heavily-photographed sites, so a fresh search budget aimed at their Commons categories directly
   should close most of this, same approach flagged for the Djemila gap above.
-- [ ] **11 of `sites.ts`'s zero-`pois.geojson`-coverage sites remain** after this shift closed
-  Djemila, Volubilis, Jerash and Trier: Leptis Magna, Sabratha, Italica, Tivoli, Palestrina, Cumae,
-  Capua, Brescia, Milan, Rimini, Luni. Same shape, pick one or two per shift — and brief the
-  research prompt with the exact category vocabulary from `app/categoryLife.ts` up front (see the
-  10-off-vocabulary-categories fix logged in SHIFT_LOG this shift — it happened because that step
-  got skipped for the first two sites and caught only by `npm run metrics`, not the validator).
+- [ ] **9 of `sites.ts`'s zero-`pois.geojson`-coverage sites remain** after this and the prior
+  shift closed Djemila, Volubilis, Jerash, Trier, Leptis Magna and Sabratha: Italica, Tivoli,
+  Palestrina, Cumae, Capua, Brescia, Milan, Rimini, Luni. Same shape, pick one or two per shift —
+  and brief the research prompt with the exact category vocabulary from `app/categoryLife.ts` up
+  front (see the 10-off-vocabulary-categories fix logged in SHIFT_LOG two shifts ago — it happened
+  because that step got skipped for the first two sites and caught only by `npm run metrics`, not
+  the validator). Leptis Magna and Sabratha were both genuine dating traps worth flagging for
+  whoever does the remaining nine: both cities' most-photographed monuments (Leptis's Severan
+  Forum and Arch of Septimius Severus, Sabratha's huge theatre and amphitheatre) are Severan-era,
+  80-95 years past this map's 117 CE snapshot, while the real pre-117 material is unglamorous
+  Augustan/Julio-Claudian/Flavian infrastructure — a market, a theatre, a bath house, a boundary
+  arch. Leptis Magna's Arch of Trajan (dedicated 110 CE, seven years before Trajan's death) is the
+  rare case of a famous monument that's also a tight snapshot-date anchor.
 
 ## Shipped (moved from above; newest on top)
 
