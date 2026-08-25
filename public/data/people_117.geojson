@@ -21,7 +21,9 @@
           "Cass. Dio 68.33",
           "HA Hadr. 4.7",
           "https://en.wikipedia.org/wiki/Trajan"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20bust%20of%20Trajan%2C%20British%20Museum%20%2827165700565%29.jpg?width=800",
+        "image_credit": "Bust of Trajan, British Museum \u00b7 Wikimedia Commons"
       }
     },
     {
@@ -44,7 +46,9 @@
           "HA Hadr. 4.6-4.7",
           "Cass. Dio 69.1",
           "https://en.wikipedia.org/wiki/Hadrian"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marble%20bust%20of%20the%20emperor%20Hadrian%20wearing%20military%20dress%2C%20from%20Hadrian%27s%20Villa%2C%20AD%20117-118%2C%20British%20Museum%20%2814245899524%29.jpg?width=800",
+        "image_credit": "Bust of Hadrian, AD 117-118, British Museum \u00b7 Wikimedia Commons"
       }
     },
     {
@@ -67,7 +71,9 @@
           "HA Hadr. 4.1-4.10",
           "Cass. Dio 69.1.2-4",
           "https://en.wikipedia.org/wiki/Pompeia_Plotina"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plotina%20-%20sestertius%20-%20RIC%200740.jpg?width=800",
+        "image_credit": "Sestertius of Plotina, c. 112 CE \u00b7 Wikimedia Commons"
       }
     },
     {
@@ -89,7 +95,9 @@
         "sources": [
           "HA Hadr. 4.1",
           "https://en.wikipedia.org/wiki/Salonia_Matidia"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20bust%20of%20Salonina%20Matidia%20%28mother-in-law%20of%20Hadrian%20and%20niece%20of%20Trajan%29%2C%20British%20Museum%20%2816753427981%29.jpg?width=800",
+        "image_credit": "Bust of Matidia, British Museum \u00b7 Wikimedia Commons"
       }
     },
     {
@@ -111,7 +119,9 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Sabina_(empress)",
           "HA Hadr. 2.10"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Busto%20de%20Vibia%20Sabina%20%28M.%20Prado%29%2001.jpg?width=800",
+        "image_credit": "Bust of Vibia Sabina, Museo del Prado \u00b7 Wikimedia Commons"
       }
     },
     {
@@ -155,7 +165,10 @@
         "sources": [
           "Pliny, Ep. 2.17",
           "https://en.wikipedia.org/wiki/Pliny_the_Younger"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plinio%20il%20Giovane.jpg?width=800",
+        "image_credit": "Statue of Pliny the Younger, Como Cathedral facade \u00b7 Wikimedia Commons",
+        "image_alt": "A Renaissance-era statue honoring him as a local son, not an ancient portrait \u2014 no likeness of Pliny survives from antiquity"
       }
     },
     {
@@ -177,7 +190,10 @@
         "sources": [
           "Pliny, Ep. 5.6",
           "https://en.wikipedia.org/wiki/Pliny_the_Younger"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plinio%20il%20Giovane.jpg?width=800",
+        "image_credit": "Statue of Pliny the Younger, Como Cathedral facade \u00b7 Wikimedia Commons",
+        "image_alt": "A Renaissance-era statue honoring him as a local son, not an ancient portrait \u2014 no likeness of Pliny survives from antiquity"
       }
     },
     {
@@ -199,7 +215,10 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Tacitus",
           "https://en.wikipedia.org/wiki/Annals_(Tacitus)"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gaius%20Cornelius%20Tacitus.jpg?width=800",
+        "image_credit": "Traditional portrait of Tacitus \u00b7 Wikimedia Commons",
+        "image_alt": "An imagined likeness, not an ancient portrait \u2014 no contemporary image of Tacitus survives"
       }
     },
     {
@@ -221,7 +240,10 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Suetonius",
           "https://www.academia.edu/34388553/Suetonius_as_ab_epistulis_to_Hadrian_and_the_Early_History_of_the_Imperial_Correspondence"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Suetonius%20etching%20%28cropped%29.jpg?width=800",
+        "image_credit": "Traditional portrait of Suetonius, period etching \u00b7 Wikimedia Commons",
+        "image_alt": "An imagined likeness, not an ancient portrait \u2014 no contemporary image of Suetonius survives"
       }
     },
     {
@@ -243,7 +265,10 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Plutarch",
           "https://plato.stanford.edu/entries/plutarch/"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plutarch%20of%20Chaeronea-03.jpg?width=800",
+        "image_credit": "Bust traditionally identified as Plutarch \u00b7 Wikimedia Commons",
+        "image_alt": "An ancient herm traditionally identified as Plutarch; the identification is scholarly convention, not an inscribed certainty"
       }
     },
     {
@@ -265,7 +290,10 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Epictetus",
           "https://plato.stanford.edu/entries/epictetus/"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Epictetus%20portrait%20from%20Les%20Morales%20de%20Plutarque%2C%20S%C3%A9n%C3%A8que%2C%20Socrate%20et%20Epict%C3%A8te%2C%201653%2C%20Indian%20ink.png?width=800",
+        "image_credit": "Traditional portrait of Epictetus, 1653 engraving \u00b7 Wikimedia Commons",
+        "image_alt": "An imagined 17th-century likeness, not an ancient portrait \u2014 Epictetus himself owned nothing and left no image"
       }
     },
     {
@@ -286,7 +314,10 @@
         "one_line": "Juvenal was in Rome finishing Book Two of his Satires, including Satire 6, published around this year.",
         "sources": [
           "https://en.wikipedia.org/wiki/Juvenal"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Juvenal%20portrait.jpg?width=800",
+        "image_credit": "Traditional portrait of Juvenal, 19th-century engraving \u00b7 Wikimedia Commons",
+        "image_alt": "An explicitly fictitious likeness invented by its 19th-century engraver \u2014 no ancient portrait of Juvenal exists"
       }
     },
     {
@@ -502,7 +533,10 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Lusius_Quietus",
           "Eusebius, Hist. Eccl. 4.2"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lusius%20Quietus%20on%20Column%20of%20Trajan.jpg?width=800",
+        "image_credit": "Relief scene from Trajan's Column, traditionally identified as Lusius Quietus and his Moorish cavalry \u00b7 Wikimedia Commons",
+        "image_alt": "A genuine contemporary relief, but the figures on the Column carry no inscribed labels \u2014 the identification is a modern scholarly attribution"
       }
     },
     {

@@ -17,7 +17,10 @@
    "type":"volcanic_eruption",
    "still_visible_in_117":true,
    "one_line":"Mount Vesuvius erupted on 24 August 79, burying Pompeii under ash and pumice and Herculaneum under volcanic mud within a day, an event Pliny the Younger described in two letters to Tacitus after watching from Misenum across the bay.",
-   "sources":["Plin. Ep. 6.16","Plin. Ep. 6.20"]
+   "sources":["Plin. Ep. 6.16","Plin. Ep. 6.20"],
+   "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/Destruction%20of%20Pompeii%20and%20Herculaneum.jpg?width=800",
+   "image_credit":"\"The Destruction of Pompeii and Herculaneum\", John Martin, 1822 \u00b7 Tate / Wikimedia Commons",
+   "image_alt":"A 19th-century history painting, not a contemporary depiction"
  }},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[12.4853,41.8858]},
  "properties":{
@@ -27,7 +30,10 @@
    "type":"fire",
    "still_visible_in_117":true,
    "one_line":"The Great Fire of Rome broke out near the Circus Maximus on 19 July 64 and burned for six days, destroying three of Rome's fourteen districts outright and badly damaging seven more, after which Nero cleared the land for his Domus Aurea.",
-   "sources":["Tac. Ann. 15.38-44","Suet. Nero 38"]
+   "sources":["Tac. Ann. 15.38-44","Suet. Nero 38"],
+   "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/Hubert%20Robert%20-%20The%20Fire%20of%20Rome%20-%20Google%20Art%20Project.jpg?width=800",
+   "image_credit":"\"The Fire of Rome\", Hubert Robert, 18th century \u00b7 Wikimedia Commons",
+   "image_alt":"An 18th-century history painting, not a contemporary depiction"
  }},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[12.4788,41.8894]},
  "properties":{
@@ -67,7 +73,10 @@
    "type":"plague",
    "still_visible_in_117":true,
    "one_line":"A plague Suetonius called among the worst Rome had ever known killed as many as ten thousand people a day in 80 CE, striking the city the same year as a major fire and overwhelming Titus's relief efforts.",
-   "sources":["Suet. Titus 8"]
+   "sources":["Suet. Titus 8"],
+   "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/Jules%20Elie%20Delaunay%20-%20The%20Plague%20in%20Rome%20-%2072.128%20-%20Minneapolis%20Institute%20of%20Arts.jpg?width=800",
+   "image_credit":"\"The Plague in Rome\", Jules-\u00c9lie Delaunay, 19th century \u00b7 Minneapolis Institute of Art / Wikimedia Commons",
+   "image_alt":"A 19th-century history painting, not a contemporary depiction"
  }},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[12.4853,41.8925]},
  "properties":{
@@ -117,7 +126,10 @@
    "type":"barbarian_raid",
    "still_visible_in_117":true,
    "one_line":"Gaius Marius and Quintus Lutatius Catulus annihilated the invading Cimbri at Vercellae on 30 July 101 BCE, ending a migration crisis that had already destroyed four Roman armies and stood for generations afterward as the empire's benchmark for a near-catastrophic barbarian invasion.",
-   "sources":["Plut. Mar. 25-27","Livy, Periochae 68"]
+   "sources":["Plut. Mar. 25-27","Livy, Periochae 68"],
+   "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/Tiepolo%20Vercellae.jpg?width=800",
+   "image_credit":"The Battle of Vercellae, painting by Giovanni Battista Tiepolo \u00b7 Wikimedia Commons",
+   "image_alt":"An 18th-century history painting, not a contemporary depiction"
  }},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[8.1614,52.3966]},
  "properties":{
@@ -127,7 +139,10 @@
    "type":"military_disaster",
    "still_visible_in_117":true,
    "one_line":"Arminius and an alliance of Germanic tribes annihilated three Roman legions under Publius Quinctilius Varus in the Teutoburg Forest in September 9 CE; when Germanicus's troops reached the site six years later they found the legions' bones and Varus's altars still scattered across the ground.",
-   "sources":["Tac. Ann. 1.61-62","Cass. Dio 56.18-22","Suet. Aug. 23"]
+   "sources":["Tac. Ann. 1.61-62","Cass. Dio 56.18-22","Suet. Aug. 23"],
+   "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/Hermann%20%28Arminius%29%20at%20the%20battle%20of%20the%20Teutoburg%20Forest%20in%209%20CE%20by%20Peter%20Jannsen%2C%201873%2C%20with%20painting%20creases%20and%20damage%20removed.jpg?width=800",
+   "image_credit":"\"Arminius at the Battle of the Teutoburg Forest\", Peter Janssen, 1873 \u00b7 Wikimedia Commons",
+   "image_alt":"A 19th-century history painting, not a contemporary depiction"
  }},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[10.0227,45.1335]},
  "properties":{
@@ -157,6 +172,9 @@
    "type":"siege",
    "still_visible_in_117":true,
    "one_line":"Roman soldiers under Titus burned the Second Temple on 30 August 70, against his own orders according to Josephus, and by the war's end had leveled most of Jerusalem, leaving only three towers and a stretch of wall standing over a garrison post.",
-   "sources":["Joseph. BJ 6.249-266","Joseph. BJ 7.1-4"]
+   "sources":["Joseph. BJ 6.249-266","Joseph. BJ 7.1-4"],
+   "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/Arch%20of%20Titus%20Menorah%2022.jpg?width=800",
+   "image_credit":"Arch of Titus relief, Roman soldiers carrying spoils from the Temple \u00b7 Wikimedia Commons",
+   "image_alt":"A genuine Roman relief carved c. 81 CE, soon after the event"
  }}
 ]}
