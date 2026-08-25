@@ -21336,6 +21336,737 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theatre%20of%20Pergamon.jpg?width=800",
         "image_credit": "The Hellenistic theatre of Pergamon · Wikimedia Commons"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3486,
+          43.84
+        ]
+      },
+      "properties": {
+        "id": "poi_nemausus_temple_diana",
+        "category": "temple",
+        "name_latin": "Templum Dianae (conventional)",
+        "name_english": "Temple of Diana",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Nimes, France",
+        "built": -25,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Raised around 25 BCE as part of Augustus's monumental spring sanctuary, this vaulted hall got its romantic name centuries later from visitors who mistook its coffered ceiling and wall niches for a shrine to the huntress goddess — no ancient inscription ever confirmed it. Its walls run over a meter thick and still stand two stories tall despite Huguenot troops torching it in 1577. Medieval monks folded it into their monastery, probably the only reason it survived at all. By 117 CE it had anchored the sacred precinct beside the city's founding spring for nearly a century and a half.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Diana_(N%C3%AEmes)",
+          "https://www.historyhit.com/locations/temple-of-diana-nimes/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20de%20Diane%20Nîmes.JPG?width=800",
+        "image_credit": "Temple of Diana, Nimes · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3494,
+          43.8431
+        ]
+      },
+      "properties": {
+        "id": "poi_nemausus_tour_magne",
+        "category": "monument",
+        "name_latin": "Turris Magna (conventional)",
+        "name_english": "Tour Magne",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Nimes, France",
+        "built": -15,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Standing on the highest point in Nimes, this tower was raised around 15 BCE as the tallest of fourteen towers ringing Augustus's new seven-kilometer city wall, built directly over an older Gallic tower whose height it roughly doubled. It still rises 32 meters today despite losing its upper third to centuries of stone-robbing. In 117 CE it dominated the skyline over the plain toward the Mediterranean, already well over a century old.",
+        "sources": [
+          "https://museedelaromanite.fr/en/tour-magne",
+          "https://www.historyhit.com/locations/the-magne-tower/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/MK54084%20Tour%20Magne%20(Nîmes).jpg?width=800",
+        "image_credit": "Tour Magne, Nimes · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3633,
+          43.8394
+        ]
+      },
+      "properties": {
+        "id": "poi_nemausus_porte_auguste",
+        "category": "gate",
+        "name_latin": "Porta Augusta",
+        "name_english": "Porte d'Auguste",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Nimes, France",
+        "built": -16,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Built around 16 BCE as the grand eastern gateway into Nemausus, this gate greeted every traveler arriving on the Via Domitia from Italy. Two broad carriage arches, flanked by narrower pedestrian passages topped with statue niches, still carry the dedication crediting Augustus's fortification of the colony. It originally carried twin projecting towers and an arcaded upper gallery, both long gone. By 117 CE it had been funneling trade and traffic through those arches for well over a century.",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q3399001",
+          "https://archive.archaeology.org/onsite/provence/nimes3.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porte%20d'Auguste%20in%20Nimes%2002.jpg?width=800",
+        "image_credit": "Porte d'Auguste, Nimes · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.36,
+          43.8353
+        ]
+      },
+      "properties": {
+        "id": "poi_nemausus_porte_france",
+        "category": "gate",
+        "name_latin": "Porta Hispana (conventional)",
+        "name_english": "Porte de France",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Nimes, France",
+        "built": -15,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Erected around 15 BCE on the opposite side of the city from the Porta Augusta, this gate carried the Via Domitia west toward Hispania, earning it the old local name Porte d'Espagne. A single semicircular arch, once flanked by two round towers, still frames the street that bears its name today. It's one of only two surviving gates from Augustus's original ring of fourteen towers. In 117 CE it stood as the quieter western counterpart to the Porta Augusta, still funneling travelers toward Spain.",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q3399042",
+          "https://www.persee.fr/doc/galia_0016-4119_2002_num_59_1_3050"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.356,
+          43.8424
+        ]
+      },
+      "properties": {
+        "id": "poi_nemausus_castellum_divisorium",
+        "category": "cistern",
+        "name_latin": "Castellum Divisorium",
+        "name_english": "Roman Water-Distribution Tank",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Nimes, France",
+        "built": 45,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Built around 40-50 CE at the terminus of the fifty-kilometer aqueduct that flowed from a spring near Uzes and crossed the Pont du Gard, this circular stone basin distributed water across Roman Nimes. Water entered through a single channel and left through ten pipes set into the basin wall, each feeding a different quarter of the city. It's one of only two water-distribution tanks of this kind known to survive anywhere from the Roman world, the other at Pompeii. By 117 CE it had quietly done this job for well over half a century.",
+        "sources": [
+          "https://archaeology-travel.com/france/nimes-aqueduct/",
+          "http://www.romanaqueducts.info/aquasite/nimes1/index.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Castellum%20Divisorium%20(Nîmes)05.jpg?width=800",
+        "image_credit": "Castellum Divisorium, Nimes · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3489,
+          43.8403
+        ]
+      },
+      "properties": {
+        "id": "poi_nemausus_sanctuary_spring",
+        "category": "sanctuary",
+        "name_latin": "Fanum Nemausi (conventional)",
+        "name_english": "Sanctuary of the Spring",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Nimes, France",
+        "built": -25,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Gauls gathered at this gushing spring to worship Nemausus, the native god who gave the city its name, since at least the 6th century BCE. Augustus's engineers monumentalized the site around 25 BCE, building a nymphaeum, porticoes, and altar terraces around the water and folding the old cult into the new imperial one. The spring still feeds the same pool today, exactly where the Roman altar terraces once stood. In 117 CE this was the religious and civic heart of Nemausus — the place the city's own name came from.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sanctuaire_de_la_Fontaine",
+          "https://archive.archaeology.org/onsite/provence/nimes4.html"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/MK54107%20Jardins%20de%20la%20Fontaine%20(Nîmes).jpg?width=800",
+        "image_credit": "Jardins de la Fontaine, Nimes, site of the spring sanctuary · Wikimedia Commons",
+        "image_alt": "The spring and gardens of the Roman sanctuary precinct"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6307,
+          43.6776
+        ]
+      },
+      "properties": {
+        "id": "poi_arelate_theatre",
+        "category": "theater",
+        "name_latin": "Theatrum Arelatense (conventional)",
+        "name_english": "Roman Theatre of Arles",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Arles, France",
+        "built": -30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Built between 40 and 30 BCE under Augustus, this was one of the earliest stone theatres raised anywhere in Gaul. Its stage wall once stood three stories tall, faced with over a hundred columns of colored marble, of which a single surviving pair — nicknamed \"the two widows\" — still stands today. Excavators found a colossal statue of Augustus buried near the stage, which is how the theatre's date was pinned down. By 117 CE it had staged performances and public gatherings for roughly a century and a half.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_Theatre_of_Arles",
+          "https://ancienttheatrearchive.com/theatre/arelate-modern-arles-france/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theatreantique.JPG?width=800",
+        "image_credit": "Roman Theatre of Arles · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.628,
+          43.6772
+        ]
+      },
+      "properties": {
+        "id": "poi_arelate_cryptoporticus",
+        "category": "warehouse",
+        "name_latin": "Cryptoporticus",
+        "name_english": "The Cryptoporticus of the Forum",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Arles, France",
+        "built": -25,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Built around 25-10 BCE as the load-bearing foundation for the Forum of Arelate above it, this U-shaped network of vaulted stone galleries covers roughly 3,400 square meters, six meters underground. Its narrow airshafts still ventilate the space exactly as Roman engineers designed them. It likely doubled as a grain store and administrative annex for the bustling forum overhead. By 117 CE it had spent well over a century silently holding up the civic heart of the city above it.",
+        "sources": [
+          "https://www.atlasobscura.com/places/arles-s-cryptoportico",
+          "https://www.showcaves.com/english/fr/subterranea/ArlesCryptoporticus.html"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arles%20-%20Cryptoportiques%205.jpg?width=800",
+        "image_credit": "The Cryptoporticus, Arles · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6283,
+          43.6774
+        ]
+      },
+      "properties": {
+        "id": "poi_arelate_forum",
+        "category": "forum",
+        "name_latin": "Forum Arelatense",
+        "name_english": "Roman Forum of Arelate",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Arles, France",
+        "built": -20,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Founded as the civic and commercial hub of Arelate around 25-10 BCE, the forum once filled the city center with a temple, porticoes, and a paved plaza. Only two Corinthian columns and a fragment of entablature survive today, built into the corner of a later building. The whole complex sat atop the cryptoporticus, whose vaults absorbed the weight of the sloping ground below. By 117 CE the forum was still the busy administrative and commercial center of the colony, well over a century into daily use.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Arles,_Roman_and_Romanesque_Monuments",
+          "https://www.roamintheempire.com/index.php/2019/08/28/arelate-part-i/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.627594,
+          43.67636
+        ]
+      },
+      "properties": {
+        "id": "poi_arelate_obelisk",
+        "category": "monument",
+        "name_latin": "Obeliscus",
+        "name_english": "Obelisk of Arles",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Arles, France",
+        "built": 330,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Quarried from Egyptian granite and never inscribed, this fifteen-meter obelisk was raised in the 4th century CE as the centerpiece of the spina running down the middle of the Circus of Arles. It toppled and snapped in two after the circus fell out of use in the 6th century, then lay forgotten until rediscovered in 1389. The city finally re-erected it in a main square in 1676, topped with a bronze sun. It did not exist in 117 CE — more than two centuries would pass before Constantine's family had it raised.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Ob%C3%A9lisque_d%27Arles",
+          "https://www.wikidata.org/wiki/Q44218"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arles%20obelisque.jpg?width=800",
+        "image_credit": "The Obelisk of Arles · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6168,
+          43.6727
+        ]
+      },
+      "properties": {
+        "id": "poi_arelate_circus",
+        "category": "circus",
+        "name_latin": "Circus Arelatensis",
+        "name_english": "Roman Circus of Arles",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Arles, France",
+        "built": 149,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Built around 149 CE on the west bank of the Rhone to host chariot races, this circus stretched 450 meters long and seated roughly 20,000 spectators. Its builders drove some 30,000 wooden piles into the marshy riverbank just to keep the structure from sinking. Its central spina later held the granite obelisk now standing across the river in the city's main square. In 117 CE this stretch of riverbank was still open ground — the circus wouldn't be built for another three decades, under Antoninus Pius rather than Hadrian.",
+        "sources": [
+          "https://provence-alpes-cotedazur.com/en/things-to-do/culture-and-heritage/places/the-roman-circus-arles-en-2890827/",
+          "https://www.wikidata.org/wiki/Q578826"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vestiges%20de%20la%20spina%20du%20cirque%20romain.jpg?width=800",
+        "image_credit": "Remains of the spina, Circus of Arles · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.628,
+          43.6775
+        ]
+      },
+      "properties": {
+        "id": "poi_arelate_baths_constantine",
+        "category": "bathhouse",
+        "name_latin": "Thermae Constantinianae",
+        "name_english": "Baths of Constantine",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Arles, France",
+        "built": 305,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Built in the early 4th century CE for Constantine's imperial residence at Arelate, these baths still preserve a soaring brick hall and a row of tall arched windows that once lit the hot room. Alternating bands of stone and brick decorate the surviving exterior walls in red and grey. The complex was abandoned by the early 6th century as the city's fortunes declined. In 117 CE this riverside quarter had no baths at all — Constantine wouldn't be born for another century and a half.",
+        "sources": [
+          "https://www.historyhit.com/locations/constantine-baths-arles/",
+          "https://fr.wikipedia.org/wiki/Thermes_de_Constantin"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arles%20(13)%20Thermes%20de%20Constantin%2007.JPG?width=800",
+        "image_credit": "Baths of Constantine, Arles · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8742,
+          45.5256
+        ]
+      },
+      "properties": {
+        "id": "poi_vienna_temple_augustus_livia",
+        "category": "temple",
+        "name_latin": "Templum Augusti et Liviae",
+        "name_english": "Temple of Augustus and Livia",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Vienne, France",
+        "built": -10,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This podium temple rose in the heart of Vienne to honor the emperor Augustus, later rededicated to include his deified wife Livia. Its six Corinthian columns and deep porch still stand almost fully intact, one of the best-preserved Roman temples anywhere outside Italy. Locals turned it into a church, then a Temple of Reason during the Revolution, then a library, before restorers stripped it back to its Roman skin. By 117 CE it had already stood for over a century as the religious anchor of the forum.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Augustus_and_Livia",
+          "https://en.vienne-condrieu.com/patrimoine-culturel/temple-of-augustus-and-livia-vienne/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20d'Auguste%20et%20de%20Livie%20(Vienne)%2001.JPG?width=800",
+        "image_credit": "Temple of Augustus and Livia, Vienne · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.877,
+          45.527
+        ]
+      },
+      "properties": {
+        "id": "poi_vienna_theatre",
+        "category": "theater",
+        "name_latin": "Theatrum Viennense (conventional)",
+        "name_english": "Roman Theatre of Vienne",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Vienne, France",
+        "built": 45,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Carved directly into the slope of a hill overlooking the Rhone, this theatre seated around 13,000 people, making it one of the largest in Gaul after Autun. Its curved seating bank spans some 130 meters across, terraced tier after tier up the hillside. It had been open for entertainment, oratory, and civic gatherings for roughly seventy years by the time Trajan died in 117 CE.",
+        "sources": [
+          "https://en.vienne-condrieu.com/patrimoine-culturel/roman-theatre-vienne/",
+          "https://www.historyhit.com/locations/vienne-roman-theatre/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Théâtre%20antique%20de%20Vienne.%20019.JPG?width=800",
+        "image_credit": "Roman Theatre of Vienne · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.876,
+          45.524
+        ]
+      },
+      "properties": {
+        "id": "poi_vienna_pyramid",
+        "category": "monument",
+        "name_latin": "Pyramide (local name; no ancient name survives)",
+        "name_english": "Pyramid of Vienne",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Vienne, France",
+        "built": 130,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A 23-meter stone needle rising from a four-arched base, this is the last standing \"Egyptian-style\" monument in France and once marked the centerline of Vienne's chariot-racing circus. It stood at the middle of the spina, the raised central barrier chariots looped around, originally flanked by small shrines and fountains. Sources disagree on exactly when the circus and its pyramid went up, with one strand of scholarship placing it after Trajan's reign, so this ships conservatively as not yet standing in 117 CE rather than picking a side in an unsettled argument. Rediscovered by excavators in 1852, it has been a protected monument ever since.",
+        "sources": [
+          "https://www.historyhit.com/locations/roman-pyramid-of-vienne/",
+          "https://vici.org/vici/10173/?lang=en"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.875,
+          45.525
+        ]
+      },
+      "properties": {
+        "id": "poi_vienna_forum_cybele",
+        "category": "forum",
+        "name_latin": "Forum Viennense",
+        "name_english": "Forum of Vienne (Cybele Garden)",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Vienne, France",
+        "built": 25,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This green square in the middle of modern Vienne preserves the skeleton of the Roman city's forum: two stretches of a sculpted portico decorated with a river-god relief, a massive wall from a municipal assembly hall that once seated 800 magistrates, and the foundations of a wealthy townhouse. It functioned as the administrative, economic, and political heart of the Gallo-Roman city for well over a century by 117 CE. The site's modern name comes from the later cult of Cybele, though the surviving structures are civic rather than religious.",
+        "sources": [
+          "https://en.vienne-condrieu.com/patrimoine-culturel/cybele-archaeological-garden-vienne-2/",
+          "https://www.auvergnerhonealpes-tourisme.com/en/fiches/cybele-archaeological-garden/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.874,
+          45.526
+        ]
+      },
+      "properties": {
+        "id": "poi_vienna_bridge",
+        "category": "bridge",
+        "name_latin": "Pons Viennensis (conventional)",
+        "name_english": "Roman Bridge of Vienne",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Vienne, France",
+        "built": 1,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This stone-piered bridge carried Vienne's main east-west road across the Rhone to the settlement on the opposite bank, and stayed in continuous use until the 17th century. Its piers were reinforced with driven wooden piling to anchor them into the riverbed, still visible at low water for centuries after antiquity. Sonar surveys have picked up traces of at least one other Roman-era crossing nearby, suggesting the city needed more than one bridge to manage its Rhone traffic. By 117 CE it had already carried travelers and trade across the river for well over a century.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Pont_Romain_de_Vienne",
+          "https://patrimoine.auvergnerhonealpes.fr/dossier/IA38000904"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.0039,
+          43.1839
+        ]
+      },
+      "properties": {
+        "id": "poi_narbo_horreum",
+        "category": "warehouse",
+        "name_latin": "Horreum",
+        "name_english": "The Horreum of Narbonne",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Narbonne, France",
+        "built": -30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Five meters below Narbonne's streets, these vaulted stone galleries once stored the grain, oil, and goods that moved through Rome's first colony outside Italy. It's the only Roman-era structure still visible above ground level in the city, walkable today exactly as ancient dockworkers left it. By 117 CE it had already been in continuous use as a warehouse for roughly a century and a half.",
+        "sources": [
+          "https://www.livius.org/articles/place/narbo-narbonne/narbo-narbonne-photos/narbonne-horreum/",
+          "https://www.historyhit.com/locations/horreum/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.0037,
+          43.1841
+        ]
+      },
+      "properties": {
+        "id": "poi_narbo_via_domitia_paving",
+        "category": "road",
+        "name_latin": "Via Domitia",
+        "name_english": "Via Domitia Paved Remains",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Narbonne, France",
+        "built": -118,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A sunken rectangle of massive limestone paving slabs sits below street level in the middle of Narbonne's main square — a surviving stretch of the actual road surface of the first Roman road built in Gaul. Deep wheel ruts are still cut into the stone from centuries of cart traffic. Uncovered during excavations in 1997, it lets a visitor stand on the same pavement legionaries and merchants used to cross from Italy toward Spain. By 117 CE this road had carried imperial traffic for well over two centuries.",
+        "sources": [
+          "https://www.audetourisme.com/en/fiche/narbonne/via-domitia_TFOPCULAR011FS0002G/",
+          "https://mindtrip.ai/attraction/narbonne-aude/la-via-domitia/at-BeQjZ2aA"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Via%20Domitia%20(Narbonne).jpg?width=800",
+        "image_credit": "Exposed Via Domitia paving, Narbonne · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.0044,
+          43.1836
+        ]
+      },
+      "properties": {
+        "id": "poi_narbo_pont_marchands",
+        "category": "bridge",
+        "name_latin": "Pons (over the Atax)",
+        "name_english": "Pont des Marchands",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Narbonne, France",
+        "built": -50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The Via Domitia crossed the river here on a bridge of six or seven stone arches, carrying Roman traffic straight through the middle of Narbo Martius. Only one arch is still visible today, above a later canal, but it has never stopped being a working bridge — later builders simply buried the rest under dozens of buildings of shops and houses, one of only two inhabited bridges still standing in France. In 117 CE it carried the entire commercial life of the Via Domitia across the water.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pont_des_Marchands",
+          "https://structurae.net/en/structures/pont-des-marchands"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Narbonne%20-%20Le%20pont%20des%20marchands.jpg?width=800",
+        "image_credit": "Pont des Marchands, Narbonne · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.0147,
+          43.1842
+        ]
+      },
+      "properties": {
+        "id": "poi_narbo_amphitheatre",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum Narbonense",
+        "name_english": "Amphitheatre of Narbonne",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Narbonne, France",
+        "built": 85,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Seventy-two arcades and four gated entrances once ringed this amphitheatre, built on flat ground using vaulted ring-walls rather than a natural hillside slope — a genuine feat of engineering. Nothing rises above ground today; the arena's outline survives only as a curve traced by a modern street, pinpointed by land surveys in 1838. It had likely been hosting games for at least two decades by the time Trajan died in 117 CE.",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q22953442",
+          "https://pop.culture.gouv.fr/notice/merimee/PA00102788"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.0045,
+          43.1845
+        ]
+      },
+      "properties": {
+        "id": "poi_narbo_capitolium",
+        "category": "temple",
+        "name_latin": "Capitolium Narbonense",
+        "name_english": "The Capitolium of Narbo Martius",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Narbonne, France",
+        "built": 130,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Narbo Martius's grandest temple stood on a marble-clad podium over 3 meters tall and 48 by 36 meters across, ringed by a colonnade enclosing the sanctuary of Jupiter, Juno, and Minerva. Excavators uncovered it in the late 19th century beneath the site of the city's high school. Both scholarly datings for its construction place it after Hadrian became emperor on 11 August 117 CE, so on the day Trajan died this temple didn't exist yet, even though Narbo's forum itself had already been the city's civic heart for well over two centuries.",
+        "sources": [
+          "https://www.livius.org/articles/place/narbo-narbonne/",
+          "https://fr.wikipedia.org/wiki/Narbo_Martius"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3748,
+          43.2977
+        ]
+      },
+      "properties": {
+        "id": "poi_massilia_ramparts_porte_italie",
+        "category": "wall",
+        "name_latin": "Teichea Massalias (reconstructed)",
+        "name_english": "Hellenistic Ramparts and Porte d'Italie",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Marseille, France",
+        "built": -350,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A gateway flanked by two stone towers standing up to 15 meters tall once guarded Massalia's harbor-side entrance — the oldest visible fortification anywhere in France. Pink limestone curtain walls run alongside it, laid down generations before Rome ever set foot in Gaul. Julius Caesar's legions besieged the city in 49 BCE and stripped it of its fleet and most of its territory for backing Pompey, but never tore down its walls. By 117 CE these Greek-built defenses had stood watch over the port for more than 450 years.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Jardin_des_Vestiges",
+          "https://www.atlasobscura.com/places/le-jardin-des-vestiges"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3697,
+          43.2955
+        ]
+      },
+      "properties": {
+        "id": "poi_massilia_lacydon",
+        "category": "port",
+        "name_latin": "Lacydon",
+        "name_english": "The Lacydon (ancient harbor)",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Marseille, France",
+        "built": -600,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This sheltered inlet, fed by a freshwater stream and pinched between two rocky headlands, is the reason Massalia exists at all — Phocaean sailors picked it out around 600 BCE as the perfect natural harbor and built their city on the hills around it. For over seven centuries it drew merchant ships from across the Mediterranean, its quays gradually rebuilt in stone under Roman rule after Caesar curtailed the city's independence in 49 BCE. In 117 CE it was still doing exactly the same job it does today: sheltering boats in the middle of the city.",
+        "sources": [
+          "https://www.worldhistory.org/massilia/",
+          "https://www.romanports.org/en/articles/ports-in-focus/839-massilia-la-cite-phoceenne-eng.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3737,
+          43.2965
+        ]
+      },
+      "properties": {
+        "id": "poi_massilia_docks",
+        "category": "warehouse",
+        "name_latin": "Horrea (Massiliae, conventional)",
+        "name_english": "The Roman Docks of Massilia",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Marseille, France",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Rows of dolia — massive ceramic jars taller than a person, used to store wine and oil — still sit sunk into the floor of this Roman commercial warehouse exactly where dockworkers left them. The complex was rediscovered by accident in 1947 while the district was being rebuilt after wartime destruction. Excavators only place its construction broadly in the 2nd century CE, a window that straddles this map's 117 CE cutoff too closely to call with confidence, so it ships conservatively as not yet standing rather than guessing which side of Trajan's death it falls on.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Mus%C3%A9e_des_docks_romains",
+          "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/musee-des-docks-romains-marseille-2eme-en-2791917/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3746,
+          43.2975
+        ]
+      },
+      "properties": {
+        "id": "poi_massilia_necropolis",
+        "category": "necropolis",
+        "name_latin": "Nekropolis Massalias (reconstructed)",
+        "name_english": "Necropolis of Massalia",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Marseille, France",
+        "built": -600,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Stone-lined graves and funerary enclosures uncovered during 20th-century excavations trace Massalia's burial grounds back to the earliest Greek settlers, with burial use continuing straight through the Roman centuries. At least half a dozen sarcophagi containing urns and ashes turned up in the old port district alone. By 117 CE this ground had already received the dead of the city for over seven hundred years, Greek and Roman alike buried close to the same harbor their trade had built.",
+        "sources": [
+          "https://www.archaeology.wiki/blog/2012/06/08/ancient-greek-tombs-in-marseilles/",
+          "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0006%3Aentry%3Dmassalia"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
