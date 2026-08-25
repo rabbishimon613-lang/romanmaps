@@ -181,9 +181,9 @@ export default function ProvincePage({ params }: { params: { slug: string } }) {
             <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: "10px 16px" }}>
               {pois
                 .slice()
-                .sort((a, b) => (a.properties.name_latin || a.properties.name_english || "").localeCompare(b.properties.name_latin || b.properties.name_english || ""))
+                .sort((a, b) => (a.properties.name_english || a.properties.name_latin || "").localeCompare(b.properties.name_english || b.properties.name_latin || ""))
                 .map((f) => {
-                  const name = f.properties.name_latin || f.properties.name_english || "Unnamed";
+                  const name = f.properties.name_english || f.properties.name_latin || "Unnamed";
                   const color = colorForCategory(f.properties.category || "");
                   return (
                     <li key={f.properties.id}>

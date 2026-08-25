@@ -106,7 +106,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const feat = findBySlug(params.slug);
   if (!feat) return {};
   const p = feat.properties;
-  const name = p.name_latin || p.name_english || "Unknown place";
+  const name = p.name_english || p.name_latin || "Unknown place";
   const title = `${name} — Roman Maps`;
   const description = (p.notes || "").slice(0, 300) || `${name}, on Roman Maps' 117 CE map of the empire.`;
   const url = `/place/${params.slug}`;
@@ -137,8 +137,8 @@ export default function PlacePage({ params }: { params: { slug: string } }) {
 
   const p = feat.properties;
   const [lng, lat] = feat.geometry.coordinates;
-  const name = p.name_latin || p.name_english || "Unknown place";
-  const subtitle = p.name_english && p.name_english !== p.name_latin ? p.name_english : "";
+  const name = p.name_english || p.name_latin || "Unknown place";
+  const subtitle = p.name_latin && p.name_latin !== p.name_english ? p.name_latin : "";
   const category = p.category || "";
   const color = colorForCategory(category);
   const categoryLife = lifeForCategory(category);
@@ -301,7 +301,7 @@ export default function PlacePage({ params }: { params: { slug: string } }) {
               {nearby.map(({ feature: f, distanceM }) => {
                 const np = f.properties;
                 const nSlug = slugFor(np.id);
-                const nName = np.name_latin || np.name_english || "Unnamed place";
+                const nName = np.name_english || np.name_latin || "Unnamed place";
                 const nColor = colorForCategory(np.category || "");
                 return (
                   <Link

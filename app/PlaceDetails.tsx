@@ -207,8 +207,8 @@ export default function PlaceDetails() {
   if (!rendered) return null;
   const p = rendered.props;
 
-  const name = p.name_latin || p.name_english || "Unknown";
-  const subtitle = p.name_english && p.name_english !== p.name_latin ? p.name_english : "";
+  const name = p.name_english || p.name_latin || "Unknown";
+  const subtitle = p.name_latin && p.name_latin !== p.name_english ? p.name_latin : "";
   const category: string = p.category || "";
   const color = colorForCategory(category);
 

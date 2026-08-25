@@ -523,23 +523,21 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
 
 ## New ideas spotted this shift (2026-08-24, cloud shift — Djemila/Volubilis, theme toggle)
 
-- [ ] **HIGH VALUE / invariant-1.5 violation: all 576 `/place/[slug]` pages are titled with the
-  LATIN name, not the English one.** `app/place/[slug]/page.tsx` lines 109 and 140 both read
-  `p.name_latin || p.name_english`, so the Colosseum's page is titled *"Amphitheatrum Flavium —
-  Roman Maps"*, Paestum's Temple of Neptune is *"Templum Neptuni"*, and the English name is demoted
-  to a grey subtitle under the heading. This inverts invariant 1.5 ("every display field ... uses
-  the name a general English-speaking Google-Maps user would recognise; ancient names live in the
-  blurb or the details panel body, never in the display name"), and it does so on exactly the
-  surface where it costs the most: the `<title>`, the `<h1>`, the OpenGraph and Twitter card
-  titles, the JSON-LD `name`, and the "nearby places" list at line 304 — i.e. every string Google
-  indexes and every string a shared link previews with. Nobody searches "Amphitheatrum Flavium".
-  **Not fixed this shift on purpose**: flipping the fallback order is a two-line change, but it
-  rewrites 576 already-indexed page titles at once and deserves a considered pass with the SEO
-  side thought through (`SEO-LOG.md` should probably record the change), plus a decision on whether
-  the Latin name moves into the subtitle slot or into the body — not something to land in a
-  shift's last stretch. Discovered while spot-checking this shift's own new pages in the build
-  output; the behavior is long-standing and site-wide, not introduced by any recent data.
-  **This is the recommended next pick for whoever reads this next.**
+- [x] **HIGH VALUE / invariant-1.5 violation: all 576 `/place/[slug]` pages are titled with the
+  LATIN name, not the English one.** Fixed 2026-08-25 by the following cloud shift. Turned out to
+  be five call sites sharing the same backwards `name_latin || name_english` fallback, not just
+  the two in `page.tsx`: `app/place/[slug]/page.tsx` (title/h1/OG/Twitter/JSON-LD + the nearby-
+  places row), `app/PlaceDetails.tsx` (the live map's click-through card — the single most-viewed
+  curated-POI surface on the site), `app/province/[slug]/page.tsx` (each province's "places on the
+  map" list, sort order included), and `app/Chrome.tsx`'s `selectedName`. All swapped to
+  `name_english || name_latin`, Latin name demoted to the subtitle/secondary line. Verified in a
+  clean `next build`: `colosseum.html`'s `<title>` now reads "Colosseum (Flavian Amphitheatre) —
+  Roman Maps" with "Amphitheatrum Flavium" as the subtitle. `npm run validate` unchanged (17
+  warnings, same set). Full writeup in `SEO-LOG.md`, 2026-08-25 entry. **Deliberately left alone**:
+  the raw 16k-point gazetteer's own `Place.latin`/`Place.modern` fields (`app/places.ts::
+  loadPlaces()`) and the UI surfaces reading them (search dropdown, nearby list, context-menu
+  nearest-place label, `PlacesInViewList`) — different data source without a guaranteed English
+  name per record, a separate considered pass if it's wanted at all.
 
 - [ ] **`next/script`'s `beforeInteractive` strategy does not run before first paint in this
   Next 14 app-router setup** — worth knowing before anyone reaches for it again. Implementing the

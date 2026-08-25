@@ -85,3 +85,53 @@ not a measurement.
 - If the `/site/[slug]` backlog item has shipped, the sitemap must grow from 1
   URL to 41 in the same run — a shipped feature that never reaches the sitemap
   is the failure mode to watch for.
+
+---
+
+## 2026-08-25 — every `/place/[slug]` page was titled in Latin
+
+Flagged by cloud shift 55, fixed by the following cloud shift (this run). By the time
+`app/place/[slug]/page.tsx` landed (per the 2026-08-15 sweep's own "next sweep" note above),
+its name resolution read `p.name_latin || p.name_english`, backwards from invariant 1.5's
+explicit rule (English-standard display name; ancient name lives in the subtitle/body). That
+one line drove five surfaces at once, all now swapped to `name_english || name_latin`:
+
+- `<title>` and `<h1>` on all 576 `/place/[slug]` pages — the Colosseum's page was titled
+  **"Amphitheatrum Flavium — Roman Maps"**, Paestum's **"Templum Neptuni"**. Verified in a
+  clean `next build`: `colosseum.html`'s `<title>` now reads **"Colosseum (Flavian
+  Amphitheatre) — Roman Maps"**, with `Amphitheatrum Flavium` demoted to the subtitle line
+  exactly as the Baths of Neptune / other already-correct city pages do.
+- OpenGraph and Twitter card `title`, and the JSON-LD `Place.name` — same page, same string,
+  so the same fix covers all three; these are what a shared link preview and a rich-result
+  snippet show, not just what a human reader sees on the page.
+- The "Nearby" card row on that same page (`nName`), which was showing Latin names for the six
+  related-place cards under every listing.
+- `app/PlaceDetails.tsx` — the live map's click-through card, the single most-viewed curated-POI
+  surface on the site, had the identical `name_latin || name_english` line; same swap, subtitle
+  now correctly shows the Latin name only when it differs from the English one.
+- `app/province/[slug]/page.tsx` — the "N places on the map" list on each of the 41 province
+  pages sorted and displayed by Latin name; same fix, alphabetical order changes for any
+  province page where a place's English name doesn't share its first letter with the Latin one.
+- `app/Chrome.tsx`'s `selectedName` (desktop header, once a place is selected) — same bug,
+  same fix.
+
+**Not touched, deliberately**: `app/places.ts::loadPois()` (`modern: props.name_english`) was
+already correct — the general search index's curated-result path never had this bug. The raw
+16k-point gazetteer's `Place.latin`/`Place.modern` fields (`app/places.ts::loadPlaces()`,
+`places_medium.geojson`) and every UI surface that reads them (search dropdown, nearby list,
+context-menu nearest-place label, `PlacesInViewList`) were left as-is: that is a different data
+source with no `pois.geojson`-style guaranteed English name for every record, out of this
+fix's scope, and a systemic rewrite of that fallback order needs its own considered pass rather
+than a drive-by inside an SEO fix. `Map.tsx`'s marker labels, hover popups, and `TourPlayer.tsx`
+already used the correct `name_english || name_latin` order — spot-checked while auditing, not
+part of the bug.
+
+**Verified**: clean `next build` (676 static pages, 576 of them `/place/[slug]`), `npm run
+validate` unchanged (17 warnings, same set as before this fix — nothing new). Spot-checked
+`colosseum.html`'s rendered `<title>` and `<h1>` directly out of `.next/server/app/place/`
+rather than trusting the diff alone.
+
+This was cloud shift 55's own recommended next pick (see `SHIFT_LOG.md`, "Found, not fixed"),
+logged there as the highest-value unclaimed item because it costs real value on every one of
+576 already-indexed pages: `<title>`, `<h1>`, OG/Twitter title, and JSON-LD `name` all read
+backwards from what a searcher actually types.

@@ -46,7 +46,7 @@ export default function Chrome() {
   // below an unrelated search box. Mobile keeps its own bottom-sheet header (drag handle + X)
   // since that's already the correct mobile pattern — this merge is desktop-only parity work.
   const headerMode = !isMobile && !!selectedPoi;
-  const selectedName = selectedPoi?.props?.name_latin || selectedPoi?.props?.name_english || "";
+  const selectedName = selectedPoi?.props?.name_english || selectedPoi?.props?.name_latin || "";
 
   const [epochModalOpen, setEpochModalOpen] = useState(false);
 
