@@ -7,6 +7,137 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 56 — 2026-08-25 (this shift's own prompt claimed "Shift 1 of four")
+
+Same stale-numbering mismatch every shift since #13 has flagged, still unresolved — `SHIFT_LOG.md`
+was 55 real shifts deep at session start, not 0. Session started `HEAD` detached at Shift 55's own
+final commit (`935395c`) with local `main` stuck at Shift 28's commit (`709a480`); `git fetch origin
+main` confirmed `origin/main` matched detached `HEAD` exactly, so `git checkout -B main origin/main`
+re-pointed the local branch with zero risk — same benign container-creation race every recent shift
+has documented. Confirmed the standing network finding independently: `curl` to `commons.wikimedia.org`,
+`en.wikipedia.org`, and `overpass-api.de` all return `CONNECT tunnel failed, response 403` /
+`EGRESS_BLOCKED`. `WebSearch` (via background research agents) stayed reachable and was the only
+research channel — no Overpass access this session, so Axis 1's Overpass-fetch pipeline (new cities
+from scratch) stayed out of reach, same as every recent cloud shift.
+
+### Board check
+
+Read `BOARD.md`'s claiming protocol. No `[~]` claims standing. The unclaimed tickets are the same
+large P0 refactors recent shifts have correctly declined (`[12-P0-1]` merge-themes, `[03-P0-1]`
+schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terrain, `[13-P0-2]` image-audit) — none fit a
+network-blocked, single-session budget. Picked up Shift 55's own handoff list instead, same
+precedent recent shifts have documented for standing/axis work when the board has nothing that
+fits: no claim commit needed.
+
+### Track B — invariant-1.5 fix: place pages titled in Latin, not English
+
+Shift 55's own recommended next pick, logged in `FEATURE_BACKLOG.md` as "HIGH VALUE." Turned out
+to be five call sites sharing one backwards `name_latin || name_english` fallback, not the two in
+`app/place/[slug]/page.tsx` that Shift 55 spotted: also `app/PlaceDetails.tsx` (the live map's
+click-through card — the single most-viewed curated-POI surface on the site), `app/province/[slug]/
+page.tsx` (each province's "places on the map" list, including its sort order), and `app/Chrome.tsx`'s
+`selectedName` (desktop header once a place is selected). All five swapped to `name_english ||
+name_latin`; the Latin name now only shows as a subtitle when it differs from the English one.
+Deliberately left alone: `app/places.ts::loadPois()` was already correct (`modern: props.name_english`),
+and the raw 16k-point gazetteer's own `Place.latin`/`Place.modern` fields and the UI surfaces reading
+them (search dropdown, nearby list, context-menu nearest-place label, `PlacesInViewList`) — a
+different data source without a guaranteed English name per record, out of scope for a considered
+future pass rather than a drive-by here. Verified in a clean `next build`: `colosseum.html`'s
+`<title>` now reads "Colosseum (Flavian Amphitheatre) — Roman Maps" with "Amphitheatrum Flavium"
+demoted to the subtitle. Full writeup in `SEO-LOG.md`'s 2026-08-25 entry, `FEATURE_BACKLOG.md`
+item checked off.
+
+### Track A — four more zero-coverage `sites.ts` sites closed: 39 curated POIs
+
+Continued Shift 54/55's list (Leptis Magna, Sabratha, Italica, Tivoli, Palestrina, Cumae, Capua,
+Brescia, Milan, Rimini, Luni), closing four in two research-then-write passes. Every batch was
+researched by a background agent (WebSearch only, no direct page fetches — same network
+constraint as the rest of this session) and then dated, categorized, and written up by hand against
+`app/categoryLife.ts`'s 52-key vocabulary before being spliced in with `scripts/
+append-geojson-features.mjs`.
+
+**Leptis Magna** (12 features, Africa Proconsularis) and **Sabratha** (9 features, same province)
+were both genuine dating traps, flagged going in and confirmed by research: each city's most-
+photographed monuments are Severan-era, 80–95 years past this map's 117 CE snapshot — Leptis's
+Severan Forum and Arch of Septimius Severus (both ~203 CE), Sabratha's huge three-story theatre
+(~200 CE) and Commodan amphitheatre — all shipped `extant_117ce:false` with the real date. The
+honest pre-117 material is the unglamorous early layer: Leptis's Old Forum triad, its market (9
+BCE) and theatre (1–2 CE, both funded by the same benefactor, Annobal Tapapius Rufus), the Arch of
+Tiberius (36 CE); Sabratha's Punic-era Mausoleum of Bes (c. 150 BCE, already ancient by 117 CE),
+Temple of Liber Pater, and Seaward Baths. One genuinely rare find: Leptis Magna's **Arch of
+Trajan**, dedicated 110 CE — a famous monument that's also a tight seven-year anchor to this map's
+own snapshot date, the first monument to record the city's promotion to a full Roman colony.
+
+**Tivoli** (10 features, Tibur) and **Palestrina** (8 features, Praeneste) were the opposite case —
+both hit their brief's own flagged trap correctly rather than needing one caught after the fact.
+Tivoli's **Hadrian's Villa** is explicitly called out in `SHIFT_BRIEF.md` axis 3d as "foundations
+laid ~117, mostly post-snapshot" — the research pass confirmed it more sharply than that: Hadrian
+became emperor on this map's own 11 August 117 CE snapshot date, and construction didn't start
+until 118, so not one stone was laid yet; shipped `false` with that stated plainly rather than
+hedged. The real pre-117 Tivoli is the Sanctuary of Hercules Victor (Sullan-era, the largest
+Hercules sanctuary in Italy after Cádiz), the Temple of Vesta and its neighbor on the acropolis
+above the Aniene falls, Ponte Lucano with the Tomb of the Plautii beside it, and Manlius Vopiscus's
+villa, described in full by Statius in *Silvae* 1.3. Palestrina's Sanctuary of Fortuna Primigenia
+is safely Republican (c. 100 BCE) with no confirmed Trajanic or Hadrianic rebuilding phase found in
+research — the rare zero-coverage site where the obvious answer was also the correct one, so the
+whole 8-feature batch ships `true`. Rather than one blob for "the sanctuary," it's carved into
+eight distinct features the sources actually support separately: the summit temple, the oracle's
+own Pozzo delle Sortes (Cicero, *De Divinatione* 2.85–87, and Suetonius, *Tiberius* 63, both cited
+as `ancient_sources`), the Nile Mosaic, the Cortina terrace/theater stair, the sanctuary's cistern,
+the citadel above it, and the lower forum-basilica.
+
+Coordinates for all four batches are researched estimates against each site's documented layout
+(real degrees/minutes/seconds where a source gave them — Leptis Magna's Temple of Rome and Augustus,
+Theatre, and Amphitheatre; Ponte Lucano; most others triangulated from relative position in the
+site's known layout), not gazetteer-verified — good to roughly a city block at this map's marker
+scale, same caveat every recent city batch has carried forward.
+
+### Track A — image top-up: 4 of the Djemila/Volubilis batch's 14 gaps closed
+
+A dedicated Commons-search pass (background agent, same WebSearch-only constraint) against Shift
+55's own logged image gap. Closed: the Civil Basilica and Severan Forum at Djemila (a Carole
+Raddato Commons upload of the Cardo Maximus arch beside the basilica, and a Djemila panorama file
+for the forum — both honestly captioned as near-matches rather than head-on shots), the House of
+Europa (its Rape-of-Europa mosaic, now in the Djemila Museum), and the Tangier Gate at Volubilis (a
+Decumanus Maximus street view toward the gate, not a close-up — `image_alt` says so). Left alone:
+the ramparts, Old Forum, Capitolium, Temple of Venus Genetrix, Market of Cosinius and Christian
+Quarter at Djemila, and the Flavian Baths, House of Venus, Temple of Saturn and city walls at
+Volubilis — WebSearch surfaced a right Commons *category* for a couple of these but not a specific
+filename, and guessing one risks a wrong-subject hero image on a real public page, so they stay
+null. `FEATURE_BACKLOG.md` updated with the exact remaining list.
+
+### State, verification, next
+
+`npm run validate`: 0 errors, 17 warnings throughout the session — the same standing set every
+recent shift has carried, no new warnings from any of this session's four city batches, four image
+top-ups, or the five-file display-name fix. One validator error surfaced and was fixed same-session:
+an `ancient_sources` entry for the Sanctuary of Fortuna Primigenia was missing a required `ref`
+field because the citing source (a general Pliny the Elder mention) wasn't precise enough to give
+one — rather than fabricate a book/chapter reference, the citation was dropped and the record kept
+its two real `sources` URLs instead. `npm run build`: clean at every push (three separate commits,
+three clean pre-push gates), 615 curated POIs at the final count (up from 576), 60+ static place
+pages added. `npm run metrics --write`: 576→615 POIs, description depth held at 100.0% (two
+records briefly dipped under the 60-word floor after a first draft and were lengthened before
+commit), image coverage 61.1%→59.5% (down — four new-site batches added real, research-honest
+image_url-null gaps faster than the small image top-up closed them, the same expected shape Shift
+55 called out for its own add-heavy session), ancient-source coverage of `confidence:high` POIs
+70.0%→67.9% (same reason), "what happened here" category coverage held at 100% throughout since
+every new record was written against the vocabulary list up front this time. Curated places total
+crossed 2,095. Three commits, each pushed after a clean `git fetch origin main` (no divergence at
+any point this session — no other worker touched `main`) and a clean pre-push build gate.
+
+**Next shift**: the zero-`pois.geojson`-coverage list is now 7 (Italica, Cumae, Capua, Brescia,
+Milan, Rimini, Luni), same well-bounded shape — pick one or two per shift, brief the research
+prompt with the exact category vocabulary from `app/categoryLife.ts` up front. The Djemila/Volubilis
+image gap is down to 10 of 25; the specific remaining items are listed in `FEATURE_BACKLOG.md` and
+need direct Commons category-browsing (not WebSearch, which doesn't enumerate category contents
+reliably) to close the rest. The board's large P0 refactors (`[12-P0-1]` merge-themes, `[03-P0-1]`
+schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terrain, `[13-P0-2]` image-audit) remain the
+standing next pick for whichever shift gets either a network-unblocked environment or a dedicated
+multi-pass budget large enough to see one through in one sitting — none of that changed this shift.
+
+---
+
 ## Shift 55 — 2026-08-24 (this shift's own prompt claimed "Shift 4 of four")
 
 Same stale-numbering mismatch every shift since #13 has flagged, still unresolved — SHIFT_LOG was
