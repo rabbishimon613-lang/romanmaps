@@ -20595,7 +20595,7 @@
       },
       "properties": {
         "id": "poi_carthage_antonine_baths",
-        "category": "bath",
+        "category": "bathhouse",
         "name_latin": "Thermae Antoninianae",
         "name_english": "Antonine Baths of Carthage",
         "province": "Africa Proconsularis",
