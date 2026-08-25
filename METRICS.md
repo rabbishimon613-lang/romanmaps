@@ -36,7 +36,7 @@ references.)
 | Records in the 31 thematic files | 1480 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
 | **Curated places, total** | **2,132** | |
 | Description of 60+ words | 652 · **100.0%** | measured on `notes`; 0 still thin |
-| Has an image | 387 · **59.4%** | |
+| Has an image | 389 · **59.7%** | |
 | Has an ancient source | 234 · **35.9%** | |
 | — of `confidence: high` POIs | 208 / 311 · **66.9%** | the target set for `[09-P0-1]` |
 | Categories with a "what happened here" paragraph | 52 / 52 · **100.0%** | covers 652/652 POIs |
@@ -221,4 +221,4 @@ references.)
 | 2026-08-22 | 495 | 100.0% | 53.3% | 35.8% | 0 errors |
 | 2026-08-23 | 497 | 100.0% | 53.5% | 36.4% | 0 errors |
 | 2026-08-24 | 576 | 100.0% | 61.1% | 38.2% | 0 errors |
-| 2026-08-25 | 652 | 100.0% | 59.4% | 35.9% | 0 errors |
+| 2026-08-25 | 652 | 100.0% | 59.7% | 35.9% | 0 errors |

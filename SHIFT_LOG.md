@@ -7,6 +7,153 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 58 — 2026-08-25 (this shift's own prompt claimed "Shift 3 of four")
+
+Same stale-numbering mismatch every shift since #13 has flagged — `SHIFT_LOG.md` was 57 real
+shifts deep at session start, not 2. `git status` at session start showed a clean, detached `HEAD`
+one commit behind a stale local `main`; `git checkout main && git pull` fast-forwarded cleanly to
+`origin/main` (`e8829f9`), no lost-work scare this time. Confirmed the standing network finding
+independently: direct `curl` to `commons.wikimedia.org`, `en.wikipedia.org`, `overpass-api.de`,
+and (new to this shift's own testing) `server.arcgisonline.com` all returned the same
+egress-proxy `403`/`CONNECT tunnel failed` — WebSearch via background agents remains the only
+working research channel. Also independently hit the session-wide WebSearch quota (200 calls
+shared across every agent spawned) — it ran out partway through the third of three research
+agents this shift launched, cutting that one's coverage from 15 records to 9. Same documented
+shape as Shift 57's own finding: a mid-task "quota exhausted" report is a real partial result, not
+a bug — budget future multi-agent research sessions accordingly.
+
+### Board check
+
+Read `BOARD.md`'s claiming protocol. No `[~]` claims standing at session start. The unclaimed P0
+tickets are the same large refactors recent shifts have correctly declined for a single-session,
+network-blocked budget (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild,
+`[02-P0-1]` terrain, `[13-P0-2]` image-audit). Found one genuinely-scoped, unclaimed P2 ticket —
+`[03-P2-8]` compare-today — claimed it properly (BOARD.md-only commit, pushed as the claim, per
+protocol), did the work, and marked it `[x]` on completion. Continued the standing Track A
+precedent (zero-`pois.geojson`-coverage-site closures + image top-up) for the data side, same as
+the last several shifts have when the board has no unclaimed `add`/`deepen` ticket that fits.
+
+### Track A — zero-coverage list closed: Brescia, Milan, Rimini, Luni (22 curated POIs)
+
+The last four `sites.ts` sites with no curated `pois.geojson` coverage all shipped this shift,
+closing the standing backlog item Shift 57 (and several before it) handed off. Two background
+WebSearch-only research agents (Brescia+Milan, Rimini+Luni), then hand-written, dated, sourced,
+and spliced in with `scripts/append-geojson-features.mjs`.
+
+**Brescia** (5): the Capitolium (Vespasian, dedicated 73 CE, three cellae for Jupiter/Juno/
+Minerva), the adjoining theatre, the Flavian-rebuilt forum, the Winged Victory bronze (a reworked
+Hellenistic Aphrodite, buried and rediscovered in 1826), and the Republican-era sanctuary the
+Capitolium was built directly over in 73 CE — shipped `extant_117ce:false` since it stopped being
+a standing shrine four decades before this map's snapshot, not hedged.
+
+**Milan** (6): the Augustan-era theatre (foundations under Palazzo Turati), the Flavian
+amphitheatre, the forum under Piazza San Sepolcro, the 49 BCE republican walls, and the Columns of
+San Lorenzo. The columns are a real, deliberately-caught dating trap: carved 2nd/3rd century and
+only assembled at this specific site in the 4th, so despite reading as "ancient Milan" in every
+tourist photo today, they ship `extant_117ce:false` — the research agent flagged this explicitly
+rather than the obvious-looking shortcut of treating "Roman columns in Milan" as automatically
+period-correct.
+
+**Rimini** (6): the Arch of Augustus (27 BCE, the oldest surviving Roman triumphal arch) and
+Bridge of Tiberius (14-21 CE), both still in everyday use two thousand years later; Porta
+Montanara and the forum. Two more dating traps caught and shipped honestly: the Domus del Chirurgo
+(construction now dated to the second half of the 2nd century specifically, not just "2nd
+century" loosely) and the amphitheatre (a Hadrian-portrait coin embedded in its own masonry fixes
+construction to after 11 August 117, the exact day this map is set) both ship
+`extant_117ce:false`.
+
+**Luni** (5): the Capitolium and Temple of Luna (both mid/late-2nd-century BCE, standing through
+the snapshot), the 177 BCE city walls, the forum, and the House of the Mosaics (Republican-era
+core predates 117; the famous mosaics that give the house its name are 3rd/5th-century additions,
+noted plainly rather than implied to exist yet). The amphitheatre shipped `extant_117ce:false` —
+Antonine-period construction per the more archaeologically-grounded of two conflicting source
+datings (an older, looser "1st century" claim on tourist sites vs. excavation literature's
+Antonine dating), stated plainly rather than hedged between them.
+
+Coordinates for all 22 are site-center estimates from general knowledge of each site's real
+layout, not a fresh per-building geocoding pass — the research agents returned properties, not
+geometry. Reasonable at the current marker scale (nearly everything shipped `confidence:medium`),
+same standard prior shifts have used for comparable estimates; flagged in `FEATURE_BACKLOG.md` for
+a future tightening pass. `npm run validate`: clean, same 17 standing warnings, 0 new.
+
+### Track B — board `[03-P2-8]` `compare-today`: Satellite (today) layer toggle
+
+New non-base "Satellite (today)" layer group (`app/useLayers.ts`), off by default per invariant 0,
+lazy-loaded through the same `registerLayerLoader`/`ensureLayerLoaded` pattern every other
+thematic overlay already uses. Switching it on adds an Esri World Imagery raster source
+(`app/Map.tsx`) inserted just below `roads-secondary` — above the opaque land/sea/province fills
+(which would otherwise hide it completely, they're fully opaque) but below every road, place
+label and POI pin, so the 117 CE overlay reads as an overlay on the real modern landscape instead
+of replacing the whole map. `app/MapAttribution.tsx`'s visible credit chip now lists "Esri World
+Imagery" only while the layer is actually switched on, reading `useLayers()` directly rather than
+always crediting a source that's usually not on the map.
+
+Verified with Playwright against the dev server (not just a code read): the checkbox correctly
+adds the source/layer, sets visibility, and lands at the right z-position (style index 15,
+directly below roads-secondary at 16), and stays there across other overlay toggles since it's
+deliberately left out of `THEMATIC_LAYER_ORDER` (a basemap layer, not a thematic one).
+Screenshotted at 1280×900 light and 375×812 dark — checkbox renders and toggles in both.
+
+**One real limitation, documented rather than hidden**: actual tile pixels couldn't be confirmed
+rendering in this sandbox. `server.arcgisonline.com` returns the same egress-proxy `403` already
+documented for `demotiles.maplibre.org`/`commons.wikimedia.org`/`overpass-api.de` — this
+environment blocks it, not the code. Source/layer/z-order logic was verified directly against the
+live map instance instead of relying on a visual check that can't run here. Expected to render
+normally on the real deployed site, which isn't behind this sandbox's proxy — flagged in
+`FEATURE_BACKLOG.md` for a future shift (or a check against the live production site) to confirm
+visually.
+
+### Track A continued — image top-up (11 features closed, WebSearch quota exhausted mid-pass)
+
+With both cities and the UI feature shipped, spent remaining budget on the standing image-gap
+backlog two more research passes could reach before the session's WebSearch quota ran out.
+
+**This shift's own 8 image-null POIs** (2 of 8 closed — the commit messages for this batch say
+"9," an off-by-one miscount caught only while writing this section; the real count is 8, matching
+`npm run validate`'s own warning count before the fix): a second, targeted research pass confirmed
+real Commons filenames for the Domus del Chirurgo's Orpheus mosaic (Rimini) and a forum-remains
+photo credited to Commons user Mediatus (Luni, CC BY-SA 3.0). The other 7 stayed `image_url:null`
+rather than ship a mislabeled photo — the pass explicitly caught and rejected two traps: a Milan
+"forum" file that's actually the modern Assago sports arena, and a Luni "Capitolium" candidate
+that's really the separate Grande Tempio's own pediment.
+
+**`health.geojson`'s remaining nulls** (9 of 15 closed, axis 18): Baden/Aquae Helveticae, Daruvar/
+Aquae Balissae, Bourbonne-les-Bains/Aquae Borvonis, Neris-les-Bains/Aquae Nerii (the site's
+amphitheatre standing in for the baths themselves, labeled honestly as such), Knidos/Cnidus
+medical school, Hammam Bou Hanifia/Aquae Sirenses, Capvern/Aquae Convenarum, and two malaria-zone
+entries (Sardinia's Stagno di Cabras, Etruria's Diaccia Botrona marshland) illustrated with a
+representative modern wetland rather than a named ancient structure. Archigenes of Apamea
+correctly stays image-null permanently — a physician known only from text, no surviving portrait
+or inscription should ever be expected. This pass is what exhausted the session's WebSearch quota,
+cutting it short of the remaining 5 (Sasso di Furbara, Sceaux-du-Gatinais, Abano Terme, Termini
+Imerese, Calan) — one real near-miss caught along the way: a Sceaux-du-Gatinais candidate turned
+out to depict the town's medieval church, not the Roman site, and was correctly rejected rather
+than shipped.
+
+### State, verification, next
+
+`npm run validate`: 0 errors throughout the session, same 17 standing warnings across all four
+data commits — no new warnings. `npm run build`: clean at every push (six commits, six clean
+pre-push gates). `npm run metrics --write`: 630→652 POIs, description depth held at 100.0%, image
+coverage 59.2%→59.7%, ancient-source coverage of `confidence:high` POIs 67.8%→66.9% (down
+slightly — new-site POI batches without ancient-source citations outpaced this session's own
+citation work, same expected shape prior add-heavy shifts have documented). Curated places total
+crossed 2,130.
+
+**Next shift**: `sites.ts`'s zero-`pois.geojson`-coverage list is now fully closed — the next
+natural depth pass on this batch is the 6 remaining image-null POIs from today
+(`poi_republican_sanctuary_brixia`, `poi_forum_mediolanum`, `poi_forum_rimini`,
+`poi_capitolium_luni`, `poi_walls_luni`, `poi_domus_mosaici_luni`) and tightening their
+site-center-estimate coordinates with a dedicated geocoding pass if one becomes possible. `health.geojson` has 6 image-null features left (5 a fresh search budget could
+likely close — Sasso di Furbara, Sceaux-du-Gatinais, Abano Terme, Termini Imerese, Calan — plus
+Archigenes of Apamea, which should stay null permanently). `[03-P2-8]` compare-today needs one
+thing this sandbox couldn't give it: a real visual confirmation that Esri's tiles actually render
+on the live deployed site, not just that the source/layer wiring is correct. The board's large P0
+refactors remain the standing next pick for whichever shift gets a network-unblocked environment
+or a dedicated multi-pass budget large enough to see one through in one sitting.
+
+---
+
 ## Shift 57 — 2026-08-25 (this shift's own prompt claimed "Shift 2 of four")
 
 Same stale-numbering mismatch every shift since #13 has flagged, still unresolved — `SHIFT_LOG.md`
