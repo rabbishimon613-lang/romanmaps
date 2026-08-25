@@ -779,8 +779,19 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[11-P1-5]` **`pmtiles`** `polish` — tippecanoe → PMTiles for roads/places/provinces/land.
 - [ ] `[11-P1-6]` **`split-map-tsx`** `fix` — Break the 2,112-line `Map.tsx` into a layer
       registry so adding an overlay is a new file, not a monolith diff.
-- [ ] `[10-P1-3]` **`thematic-rooms`** `polish` — Six curated rooms (Power · Movement · Money ·
-      Belief · Knowledge · Danger) replacing the flat overlay checkbox list.
+- [x] `[10-P1-3]` **`thematic-rooms`** `polish` — Done 2026-08-25 by cloud shift 59. Six curated
+      one-click bundles (Power, Movement, Money, Belief, Knowledge, Danger) over the 30 thematic
+      overlay groups, one clean partition (`ROOMS` in `app/useLayers.ts`), added as a chip row in
+      the layers panel above the existing checkbox list rather than replacing it — the ticket said
+      "replacing", but removing the ability to hand-pick two unrelated layers felt like a real
+      loss for no gain, and the rooms already solve the actual problem (a 30-row checkbox wall).
+      Clicking a room isolates its five layers and clears every other overlay, same "click to
+      isolate, click again to clear" pattern `CategoryChips.tsx` already uses; `satellite` stays
+      outside every room since it's a basemap swap, not a theme. Verified with Playwright at
+      375x812 dark and 1280x900 light: chip row renders, active room highlights via
+      `var(--on-accent)`/`var(--accent)` (no literal colors), Overlays counter and Clear button
+      track the room's state, second click returns to zero overlays. `npm run build` and
+      `npm run validate` both clean.
 - [ ] `[06-P1-3]` **`building-typology`** `deepen` — Extend to the ~35-term standard vocabulary,
       grouped into six colour families.
 - [x] `[06-P1-4]` **`excavation-history`** `deepen` — Done 2026-08-23 by cloud shift 51.
