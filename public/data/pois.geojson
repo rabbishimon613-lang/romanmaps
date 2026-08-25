@@ -20495,6 +20495,847 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.8964,
+          31.1825
+        ]
+      },
+      "properties": {
+        "id": "poi_alexandria_pompeys_pillar",
+        "category": "monument",
+        "name_latin": "Columna Pompei",
+        "name_english": "Pompey's Pillar",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "built": 297,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A single red-granite column standing 20 meters tall, one of the largest monoliths Roman engineers ever quarried. Raised around 297 CE by the prefect Publius after Diocletian crushed a local uprising — a garbled reading of his name centuries later gave the column its enduring, entirely wrong link to Pompey. It didn't exist yet in 117 CE: this spot, on the old Serapeum precinct, was still nearly two centuries away from getting its column.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pompey%27s_Pillar",
+          "https://www.britannica.com/place/Pompeys-Pillar-monument-Alexandria-Egypt"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexandria%20-%20Pompey's%20Pillar%20-%20view%20of%20ruins.JPG?width=800",
+        "image_credit": "Pompey's Pillar, Alexandria · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.893,
+          31.1786
+        ]
+      },
+      "properties": {
+        "id": "poi_alexandria_kom_el_shoqafa",
+        "category": "necropolis",
+        "name_latin": "Catacumbae Kom el-Shoqafa",
+        "name_english": "Catacombs of Kom el-Shoqafa",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "built": 130,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A three-level tomb complex cut 35 meters down into the bedrock, mixing pharaonic funerary scenes, Greek columns, and Roman portrait busts in the same burial chamber. What began as one wealthy family's vault grew into a communal necropolis for hundreds of Alexandrians. Archaeological dating puts its start in the second quarter of the 2nd century CE, so this tomb hadn't been dug yet in 117 CE — it was rediscovered by accident in 1900 when a donkey cart broke through its roof.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Catacombs_of_Kom_El_Shoqafa",
+          "https://www.heritagedaily.com/2022/04/kom-el-shoqafa-catacombs-the-theatre-of-the-dead/143464"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Catacombs%20Kom%20al%20Shugafa%205.jpg?width=800",
+        "image_credit": "Catacombs of Kom el-Shoqafa · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9004,
+          31.2015
+        ]
+      },
+      "properties": {
+        "id": "poi_alexandria_caesareum",
+        "category": "temple",
+        "name_latin": "Caesareum",
+        "name_english": "The Caesareum of Alexandria",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "built": -30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Began as a shoreline shrine Cleopatra raised, then was rededicated to the cult of the god Augustus once Egypt became a Roman province. In 13 BCE the prefect Publius Rubrius Barbarus hauled two New Kingdom obelisks — cut a millennium before Alexandria even existed — from Heliopolis to stand in its forecourt; they're known today as Cleopatra's Needles, one in London and one in New York. In 117 CE it still functioned as Alexandria's seat of imperial cult worship, its odd pairing of Ptolemaic temple and pharaonic monoliths overlooking the Great Harbor.",
+        "sources": [
+          "https://www.cealex.org/research/excavations-in-the-process-of-being-published/caesareum/",
+          "https://en.wikipedia.org/wiki/Cleopatra%27s_Needle"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Evocation%20Cesareum%20Alexandrie.jpg?width=800",
+        "image_credit": "Reconstruction of the Caesareum of Alexandria · Wikimedia Commons",
+        "image_alt": "Artist's reconstruction of the Caesareum with its two obelisks"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3351,
+          36.8543
+        ]
+      },
+      "properties": {
+        "id": "poi_carthage_antonine_baths",
+        "category": "bath",
+        "name_latin": "Thermae Antoninianae",
+        "name_english": "Antonine Baths of Carthage",
+        "province": "Africa Proconsularis",
+        "modern_location": "Carthage, Tunisia",
+        "built": 145,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Once the largest bath complex in Roman Africa, its frigidarium alone the size of a cathedral nave, held up on towering grey granite columns shipped in from as far as Anatolia. A surviving dedication fixes the start of construction at 145 CE under Antoninus Pius, finished under his successors. In 117 CE this stretch of Carthage's shoreline was still bare — the baths were a full generation away from breaking ground.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Baths_of_Antoninus",
+          "https://carthagemagazine.com/antonine-baths-of-carthage/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Antonine%20baths%20ruins%20Karthago.JPG?width=800",
+        "image_credit": "Antonine Baths, Carthage · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.325,
+          36.856
+        ]
+      },
+      "properties": {
+        "id": "poi_carthage_theatre",
+        "category": "theater",
+        "name_latin": "Theatrum Carthaginense",
+        "name_english": "Roman Theatre of Carthage",
+        "province": "Africa Proconsularis",
+        "modern_location": "Carthage, Tunisia",
+        "built": 145,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Cut into a hillside north of the old Byrsa citadel, seating at least 5,000 for tragedy, comedy, and later the novelist Apuleius reading his own work aloud to a Carthaginian crowd. Archaeological dating places its construction around the middle of the 2nd century CE. It hadn't been built yet in 117 CE — the site was still bare ground, decades before Carthage got a stone theatre of its own.",
+        "sources": [
+          "https://www.historyhit.com/locations/carthage-roman-theatre-and-odeon/",
+          "https://www.journals.uchicago.edu/doi/10.2307/507025"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20Theater%20of%20Carthage%20(Tunisia).jpg?width=800",
+        "image_credit": "Roman Theatre of Carthage · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.321,
+          36.8513
+        ]
+      },
+      "properties": {
+        "id": "poi_carthage_byrsa_forum",
+        "category": "forum",
+        "name_latin": "Forum Carthaginis",
+        "name_english": "Byrsa Hill and the Roman Forum",
+        "province": "Africa Proconsularis",
+        "modern_location": "Carthage, Tunisia",
+        "built": -29,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Carthage's rebuilt civic heart, planted directly on the ashes of the Punic citadel Rome had razed in 146 BCE. Augustus's engineers shaved roughly 15 meters off the hilltop and hauled away close to a quarter-million cubic meters of rubble to make room for a proper Roman forum. By 117 CE it had been running as the seat of provincial government in Africa Proconsularis for well over a century, government buildings and temples ringing the plateau.",
+        "sources": [
+          "https://www.historyhit.com/locations/byrsa-hill/",
+          "https://www.worldhistory.org/article/2811/treasures-of-roman-tunisia/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20site%20archéologique%20de%20Byrsa%20(Carthage,%20Tunisie)%20(49787855963).jpg?width=800",
+        "image_credit": "The Byrsa hill archaeological site, Carthage · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3283,
+          36.8586
+        ]
+      },
+      "properties": {
+        "id": "poi_carthage_punic_ports",
+        "category": "port",
+        "name_latin": "Cothon Carthaginiensis",
+        "name_english": "The Punic Ports of Carthage",
+        "province": "Africa Proconsularis",
+        "modern_location": "Carthage, Tunisia",
+        "built": -220,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Two adjoining harbors on Carthage's old lagoon — a circular naval basin 325 meters across that once sheltered over 200 Punic warships around a central island, paired with a rectangular commercial port beside it. Scipio Aemilianus filled both with rubble when he destroyed Carthage in 146 BCE, but Augustus's refounded colony dug them back out. By 117 CE they were working merchant harbors again, loading North African grain onto ships bound for Rome.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Carthage_Punic_Ports",
+          "https://www.romanports.org/en/articles/ports-in-focus/754-carthage.html"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carthage%20-%20Punic%20port.jpg?width=800",
+        "image_credit": "The Punic ports, Carthage · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.1615,
+          36.2035
+        ]
+      },
+      "properties": {
+        "id": "poi_antioch_tyche",
+        "category": "monument",
+        "name_latin": "Tyche Antiochiae",
+        "name_english": "The Tyche of Antioch",
+        "province": "Syria",
+        "modern_location": "Antakya, Turkey",
+        "built": -296,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A seated bronze goddess crowned with the city's own walls, one foot resting on the shoulder of a swimming youth who personifies the river Orontes, wheat sheaves in her lap. Sculpted around 296 BCE by Eutychides of Sicyon for Seleucus I, she became the most copied civic image in the Greek and Roman world — dozens of later replicas survive as far away as the Vatican and the Louvre. The earthquake of December 115 CE that flattened much of Antioch left her untouched, and she still stood as the city's icon on the day Trajan died.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Eutychides",
+          "https://www.livius.org/articles/concept/tyche-of-antioch/"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Small%20bronze%20statuette%20of%20the%20Tyche%20of%20Antioch,%20Roman%20copy%20of%20a%204th%20century%20BC%20bronze%20by%20Eutychides%20of%20Sicyon%20in%20Corinthia,%20from%20ancient%20Antaradus%20(modern-day%20Tartus%20in%20Syria),%20Louvre%20Museum,%20Paris%20(34749782344).jpg?width=800",
+        "image_credit": "Roman-era copy of the Tyche of Antioch · Louvre Museum · Wikimedia Commons",
+        "image_alt": "Small bronze copy of Eutychides' Tyche of Antioch"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.161,
+          36.204
+        ]
+      },
+      "properties": {
+        "id": "poi_antioch_colonnaded_street",
+        "category": "road",
+        "name_latin": "Via Triumphalis",
+        "name_english": "The Great Colonnaded Street of Antioch",
+        "province": "Syria",
+        "modern_location": "Antakya, Turkey",
+        "built": -14,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A shop-lined colonnade running roughly 3 kilometers straight through the city, 27 meters wide and financed in part by Herod the Great and the emperor Tiberius — one of the very first monumental colonnaded streets built anywhere in the Roman world. The earthquake of 13 December 115 CE tore long stretches of it apart, and Trajan himself, wintering in Antioch for the Parthian campaign, barely escaped the collapsing city. On 11 August 117 CE it stood only provisionally patched, its full rebuild still years away.",
+        "sources": [
+          "https://etc.worldhistory.org/education/the-115-ad-earthquake-in-antioch/",
+          "https://followinghadrian.com/2015/12/13/the-115-ad-earthquake-in-antioch/"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Antakya%20Archaeological%20Museum%20Yakto%20mosaic%20border%202579.jpg?width=800",
+        "image_credit": "Yakto mosaic border depicting Antioch's colonnaded streets, Hatay Archaeology Museum · Wikimedia Commons",
+        "image_alt": "Detail of the Yakto mosaic's topographical border, showing Antioch's streets and buildings"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.158,
+          36.211
+        ]
+      },
+      "properties": {
+        "id": "poi_antioch_island_palace",
+        "category": "palace",
+        "name_latin": "Palatium Antiochiae",
+        "name_english": "The Island Palace of Antioch",
+        "province": "Syria",
+        "modern_location": "Antakya, Turkey",
+        "built": 260,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A sprawling imperial residence built on Antioch's river island, eventually the main seat of Roman emperors in the East whenever they campaigned against Parthia. The chronicler Malalas credits the emperor Gallienus with starting it in the mid-3rd century CE, with Diocletian finishing the complex decades later. It didn't exist in 117 CE — the island that year held older, more modest residences instead, over a century before this palace was ever planned.",
+        "sources": [
+          "https://libaniusredux.blogspot.com/2008/03/imperial-palace.html?m=1",
+          "https://en.wikipedia.org/wiki/Antioch"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8907,
+          32.4995
+        ]
+      },
+      "properties": {
+        "id": "poi_caesarea_maritima_sebastos_harbor",
+        "category": "port",
+        "name_latin": "Portus Sebastos",
+        "name_english": "Sebastos Harbor",
+        "province": "Judaea",
+        "modern_location": "Caesarea, Israel",
+        "built": -22,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The largest artificial harbor built in the open sea anywhere in the ancient world, enclosing about 40 hectares behind breakwaters poured from hydraulic concrete shipped over 1,000 kilometers from Puteoli, Italy. Herod built it from nothing in a decade, giving Judaea a deep-water port on a coastline that had none. By 117 CE the harbor was already quietly failing — slow tectonic sinking and weak spots in the underwater concrete had begun pulling sections of both breakwaters beneath the waves.",
+        "sources": [
+          "https://web.uvic.ca/~jpoleson/ROMACONS/Caesarea2005.htm",
+          "https://www.ancientportsantiques.com/a-few-ports/caesarea-maritima/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cesarea%20Harbor%20Ruins%20עתיקות%20נמל%20קיסריה.jpg?width=800",
+        "image_credit": "Ruins of Sebastos Harbor, Caesarea · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8912,
+          32.4998
+        ]
+      },
+      "properties": {
+        "id": "poi_caesarea_maritima_temple_roma_augustus",
+        "category": "temple",
+        "name_latin": "Templum Romae et Augusti",
+        "name_english": "Temple of Roma and Augustus, Caesarea",
+        "province": "Judaea",
+        "modern_location": "Caesarea, Israel",
+        "built": -15,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Stood on a raised platform over twelve vaulted warehouses, positioned so it was the first thing any sailor saw entering the harbor. Josephus describes a colossal cult statue of Augustus inside, rivaling the scale of Olympian Zeus at Olympia, paired with an image of the goddess Roma. Built by Herod as a very public declaration of loyalty, it remained Caesarea's most visible landmark in 117 CE, towering over the harbor entrance.",
+        "sources": [
+          "https://ferrelljenkins.blog/2015/02/11/herods-temple-to-roma-and-augustus-at-caesarea-maritima/",
+          "https://www.bibleodyssey.org/articles/caesarea-maritima/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Roma%20and%20Augustus%20(Caesarea%20Maritima)%20DSC05221.JPG?width=800",
+        "image_credit": "Temple of Roma and Augustus platform, Caesarea Maritima · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8917,
+          32.4913
+        ]
+      },
+      "properties": {
+        "id": "poi_caesarea_maritima_theatre",
+        "category": "theater",
+        "name_latin": "Theatrum Caesareae",
+        "name_english": "The Herodian Theatre of Caesarea",
+        "province": "Judaea",
+        "modern_location": "Caesarea, Israel",
+        "built": -20,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Carved from local limestone with seating for roughly 3,500 people, and — unusually for a Roman theatre — built facing straight out to sea instead of inward toward the stage. Herod built it as part of his first wave of construction at Caesarea, connected directly to his palace next door. It was still hosting performances in 117 CE, and the same stage has been restored in modern times to host concerts again, two thousand years later.",
+        "sources": [
+          "https://www.worldhistory.org/image/21687/roman-theater-caesarea-maritima/",
+          "https://www.beinharimtours.com/theater-of-caesarea/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ISR-2015-Caesarea-Caesarea%20Maritima-Herodian%20Amphitheater%2002.jpg?width=800",
+        "image_credit": "The Herodian theatre, Caesarea Maritima · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.893,
+          32.493
+        ]
+      },
+      "properties": {
+        "id": "poi_caesarea_maritima_hippodrome",
+        "category": "circus",
+        "name_latin": "Hippodromus Caesareae",
+        "name_english": "Herod's Hippodrome, Caesarea",
+        "province": "Judaea",
+        "modern_location": "Caesarea, Israel",
+        "built": -10,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Stretched about 315 meters long with seating for 12,000, its stone starting gates built on the same design as the Circus Maximus in Rome. Herod opened it for the city's grand inauguration with the Actian Games, a festival he founded in Augustus's honor and held every four years with chariot racing, athletics, and combat sport on one program. In 117 CE it was still running in its original Herodian form — its later conversion into a dedicated gladiator arena was still years away.",
+        "sources": [
+          "https://www.worldhistory.org/image/18991/hippodrome-of-caesarea-maritima/",
+          "https://www.cambridge.org/core/journals/journal-of-roman-archaeology/article/abs/the-carceres-of-the-herodian-hippodromestadium-at-caesarea-maritima-and-connections-with-the-circus-maximus/B202649D2D3C539A415635987C4FEE4D"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Caesarea%20Hippodrome%20P1080584.JPG?width=800",
+        "image_credit": "Herod's Hippodrome, Caesarea Maritima · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8895,
+          32.497
+        ]
+      },
+      "properties": {
+        "id": "poi_caesarea_maritima_promontory_palace",
+        "category": "palace",
+        "name_latin": "Palatium Herodis",
+        "name_english": "Herod's Promontory Palace",
+        "province": "Judaea",
+        "modern_location": "Caesarea, Israel",
+        "built": -22,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Herod's palace jutted 100 meters out into the Mediterranean on its own rocky point, a lower terrace built almost at sea level around a large rock-cut swimming pool and an upper terrace centered on a colonnaded courtyard. It became the official residence of Rome's prefects of Judaea after Herod's death — this is very likely where Pontius Pilate governed from decades earlier. In 117 CE it was still functioning as the seat of Roman government on this stretch of coast.",
+        "sources": [
+          "https://holylandphotos.org/browse/caesarea-promontory-palace",
+          "https://israel-tourguide.info/2011/01/03/caesarea-maritima-herods-promontory-palace/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Caesarea%20-%20King%20Herod's%20Palace%20pool%20(37172710261).jpg?width=800",
+        "image_credit": "Herod's Promontory Palace, Caesarea · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.906,
+          32.517
+        ]
+      },
+      "properties": {
+        "id": "poi_caesarea_maritima_aqueduct",
+        "category": "aqueduct",
+        "name_latin": "Aquaeductus Caesareae",
+        "name_english": "The High-Level Aqueduct of Caesarea",
+        "province": "Judaea",
+        "modern_location": "Caesarea, Israel",
+        "built": -22,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Carried fresh water some 16 kilometers on raised stone arches from springs near Shuni to a city Herod had built on bare sand with no water source of its own. A long row of its arches still marches along the beach at Caesarea today, one of the most photographed Roman ruins in Israel. In 117 CE only Herod's original single channel was running — Hadrian would order a second channel built alongside it later in his reign.",
+        "sources": [
+          "https://followinghadrian.com/2015/01/05/the-hadrianic-aqueduct-of-caesarea-maritima-israel/",
+          "https://etc.worldhistory.org/travel/the-hadrianic-aqueduct-of-caesarea-maritima-israel/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20high%20level%20aqueduct%20of%20Caesarea%20built%20by%20Herod%20(37BC%20to%204BC),%20Caesarea%20Maritima,%20Israel%20(15588710799).jpg?width=800",
+        "image_credit": "High-Level Aqueduct, Caesarea · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0924,
+          51.5157
+        ]
+      },
+      "properties": {
+        "id": "poi_londinium_amphitheatre",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum Londinii",
+        "name_english": "London's Roman Amphitheatre",
+        "province": "Britannia",
+        "modern_location": "London, UK",
+        "built": 70,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Built soon after the city's founding, its timber entrance posts felled by tree-ring dating to 74 or 75 CE. Crowds packed its earthwork banks for gladiator fights and animal baiting for decades before anyone touched it again. Workers rebuilding the Guildhall Art Gallery in 1988 broke straight into its buried arena wall by accident, and its remains now sit on public view in the gallery's basement. In 117 CE it was still the original wooden arena — the stone rebuild was a few years off.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Amphitheatre_(London)",
+          "https://www.londonmuseum.org.uk/collections/london-stories/roman-amphitheatre-central-london/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Guildhall%20Roman%20Amphitheatre,%20London.JPG?width=800",
+        "image_credit": "London's Roman amphitheatre, Guildhall · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0916,
+          51.5133
+        ]
+      },
+      "properties": {
+        "id": "poi_londinium_mithraeum",
+        "category": "mithraeum",
+        "name_latin": "Mithraeum Londinii",
+        "name_english": "The London Mithraeum",
+        "province": "Britannia",
+        "modern_location": "London, UK",
+        "built": 240,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A small temple to the soldiers' god Mithras rose on the bank of the buried River Walbrook, its nave lined with columns for the cult's secret initiation rites. Worshippers later rededicated it to Bacchus and buried its Mithraic sculptures under the floor rather than hand them to a rival cult. Rediscovered by chance in 1954 during post-war rebuilding, crowds queued for hours to see it uncovered. In 117 CE this spot was still open ground beside the stream — the temple was more than a century away.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/London_Mithraeum",
+          "https://www.londonmuseum.org.uk/collections/london-stories/roman-londons-temple-mithras/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/London%20Mithraeum%20,%20interior%20view%20-%20geograph.org.uk%20-%205993845.jpg?width=800",
+        "image_credit": "The London Mithraeum · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0936,
+          51.5165
+        ]
+      },
+      "properties": {
+        "id": "poi_londinium_wall",
+        "category": "wall",
+        "name_latin": "Murus Londinii",
+        "name_english": "The London Wall",
+        "province": "Britannia",
+        "modern_location": "London, UK",
+        "built": 200,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Roman builders raised a defensive circuit three miles around Londinium using an estimated 85,000 tons of quarried Kentish ragstone, one of the largest construction projects anywhere in Roman Britain. Historians tie its building to the power struggle between the usurper Clodius Albinus and Septimius Severus in the 190s CE. Sections still stand several meters high at Tower Hill and the Barbican today. In 117 CE Londinium had no wall at all — it stood open for at least another 75 years.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/London_Wall",
+          "https://www.english-heritage.org.uk/visit/places/london-wall/history/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/London%2001%202013%20Roman%20wall%205335.JPG?width=800",
+        "image_credit": "A surviving section of the London Wall · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8203,
+          45.7593
+        ]
+      },
+      "properties": {
+        "id": "poi_lugdunum_odeon",
+        "category": "theater",
+        "name_latin": "Odeum Lugduni",
+        "name_english": "The Odeon of Lyon",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Lyon, France",
+        "built": 110,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Lugdunum built an intimate covered concert hall beside its larger open-air theatre, reserved for music and poetry readings rather than mass spectacle, seating roughly 3,000. Its floor was paved in polychrome marble shipped in from Africa, Greece and Asia Minor — an expensive touch for a room this size. Archaeologists still argue over its exact building date, clustering estimates in the Trajanic-to-Hadrianic years just after 100 CE, which puts its construction more likely just after 117 CE than before it.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Odeon_of_Lyon",
+          "https://www.historyhit.com/locations/odeon-of-lyon/"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lyon%205%20-%20Odéon%20antique%2001.jpg?width=800",
+        "image_credit": "The Odeon of Lyon · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2588,
+          41.1146
+        ]
+      },
+      "properties": {
+        "id": "poi_tarraco_amphitheatre",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum Tarraconis",
+        "name_english": "Tarragona Amphitheatre",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Tarragona, Spain",
+        "built": 122,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Workers cut this arena into the hillside overlooking the Mediterranean, seating up to 15,000 for beast hunts, executions, and gladiatorial combat. A 140-meter inscription later added around 221 CE crowning its podium remains the longest such inscription found anywhere in the empire, and a church was eventually built directly over its sand. Construction began around 122 CE, under Hadrian rather than Trajan — on 11 August 117 CE this hillside was still bare ground.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tarragona_Amphitheatre",
+          "https://www.tarragonaturisme.cat/en/monument/roman-amphitheatre-mht"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tarragona%20Amphitheatre.jpg?width=800",
+        "image_credit": "Tarragona Amphitheatre · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2568,
+          41.1158
+        ]
+      },
+      "properties": {
+        "id": "poi_tarraco_circus",
+        "category": "circus",
+        "name_latin": "Circus Tarraconensis",
+        "name_english": "The Roman Circus of Tarraco",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Tarragona, Spain",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Chariot teams thundered around a 325-meter track built under Domitian, seating up to 30,000 — likely more people than the city itself held. It ran directly beneath the terrace of the provincial forum, letting the governor watch races from his own portico above. In continuous use for chariot racing until the 5th century CE, its vaulted galleries still run beneath the streets and cafes of Tarragona's old town today. By 117 CE it had already been racing chariots for two decades.",
+        "sources": [
+          "https://www.historyhit.com/locations/tarragona-roman-circus/",
+          "https://www.tarragonaturisme.cat/en/monument/praetorium-and-roman-circus-mht"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Circ%20Romà%20de%20Tarragona-1.JPG?width=800",
+        "image_credit": "The Roman Circus of Tarraco · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2592,
+          41.1201
+        ]
+      },
+      "properties": {
+        "id": "poi_tarraco_walls",
+        "category": "wall",
+        "name_latin": "Moenia Tarraconis",
+        "name_english": "The Roman Walls of Tarragona",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Tarragona, Spain",
+        "built": -210,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman troops began raising these fortifications in the late 3rd century BCE, making them the oldest Roman walls standing anywhere outside Italy. The 3,500-meter circuit sat on megalithic Iberian foundations dressed with massive, irregular stone blocks, including the Tower of Minerva, home to the oldest Roman inscription found anywhere on the Iberian peninsula. Roughly 1,100 meters survive today along the Passeig Arqueològic. By 117 CE these walls had already guarded the provincial capital for more than three centuries.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Wall_of_Tarragona",
+          "https://www.spain.info/en/places-of-interest/walls-tarragona/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Muralles%20romanes%20(Tarragona)%20-%204.jpg?width=800",
+        "image_credit": "The Roman walls of Tarragona · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2558,
+          41.1181
+        ]
+      },
+      "properties": {
+        "id": "poi_tarraco_provincial_forum",
+        "category": "temple",
+        "name_latin": "Templum Divi Augusti",
+        "name_english": "The Provincial Forum and Temple of Divus Augustus",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Tarragona, Spain",
+        "built": 15,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Tarraco's citizens petitioned Tiberius in 15 CE for permission to build a temple to the deified Augustus, and Rome granted it — the first time any province was allowed to worship a dead emperor, a precedent Tacitus singled out as setting the pattern for the whole empire. The temple stood inside a colonnaded square nearly the size of two football pitches, ringed by a wall nine meters high. Hadrian would rebuild it during a stay in Tarraco in the winter of 122/123 CE, but in 117 CE the century-old temple still stood in its original Tiberian form.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Provincial_forum_of_Tarraco",
+          "https://followinghadrian.com/2023/01/23/winter-ad-122-3-hadrian-stays-in-tarraco-and-rebuilds-the-temple-of-augustus-hadrian1900/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2436,
+          41.1467
+        ]
+      },
+      "properties": {
+        "id": "poi_tarraco_aqueduct_ferreres",
+        "category": "aqueduct",
+        "name_latin": "Aquaeductus Tarraconensis",
+        "name_english": "Les Ferreres Aqueduct (Pont del Diable)",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Tarragona, Spain",
+        "built": -10,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Two tiers of stacked arches carry this aqueduct 249 meters across a valley four kilometers north of the city, rising 27 meters at its tallest point, with twenty-five smaller arches sitting atop eleven larger ones. It channeled water from the Francolí river fifteen kilometers away straight into Tarraco's fountains and baths. Locals later nicknamed it the Devil's Bridge, certain no human hands could have built something so precise. Already a century old by 117 CE, it had long outlasted the emperor who built it.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Les_Ferreres_Aqueduct",
+          "https://www.tarragonaturisme.cat/en/monument/les-ferreres-aqueductpont-del-diable-bridge-mht"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aqüeducte%20de%20les%20Ferreres%20Tarragona%201.jpg?width=800",
+        "image_credit": "Les Ferreres Aqueduct, Tarragona · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1836,
+          39.1305
+        ]
+      },
+      "properties": {
+        "id": "poi_pergamon_altar_zeus",
+        "category": "monument",
+        "name_latin": "Ara Pergamena",
+        "name_english": "The Great Altar of Zeus",
+        "province": "Asia",
+        "modern_location": "Bergama, Turkey",
+        "built": -175,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "King Eumenes II raised this altar on the acropolis to celebrate Pergamon's victories over the Galatians, wrapping its base in a 113-meter marble frieze of gods battling giants — one of the largest sculptural friezes to survive from antiquity. Worshippers climbed a broad staircase on its western face to reach the sacrificial table inside a colonnaded court. It had already stood for nearly three centuries by 117 CE, still in active religious use. Only its foundations remain on the hill today; 19th-century German excavators shipped the sculpted superstructure to Berlin, where it now anchors its own museum.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pergamon_Altar",
+          "https://madainproject.com/pergamon_altar"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20foundations%20of%20the%20Zeus%20Altar,%20Acropolis,%20Pergamon,%20Turkey%20(8416114389).jpg?width=800",
+        "image_credit": "Foundations of the Great Altar of Zeus, Pergamon · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1838,
+          39.1315
+        ]
+      },
+      "properties": {
+        "id": "poi_pergamon_library",
+        "category": "library",
+        "name_latin": "Bibliotheca Pergami",
+        "name_english": "The Library of Pergamon",
+        "province": "Asia",
+        "modern_location": "Bergama, Turkey",
+        "built": -180,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Eumenes II built this library beside his Temple of Athena, stacking it with an estimated 200,000 parchment scrolls that made it the greatest rival to the library at Alexandria. Egypt's Ptolemies reportedly banned papyrus exports to starve out the competition, forcing Pergamon's scribes to perfect treated animal skin as a substitute — parchment, pergamena, takes its name from this city. By 117 CE it had operated as one of the ancient world's great centers of learning for roughly three hundred years.",
+        "sources": [
+          "https://www.worldhistory.org/Library_of_Pergamon/",
+          "https://en.wikipedia.org/wiki/Library_of_Pergamum"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pergamon%20Sanctuary%20of%20Athena%20from%20SW.jpg?width=800",
+        "image_credit": "The Sanctuary of Athena, Pergamon, where the library stood · Wikimedia Commons",
+        "image_alt": "The Temple of Athena precinct, adjoining the library's former site"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1832,
+          39.133
+        ]
+      },
+      "properties": {
+        "id": "poi_pergamon_trajaneum",
+        "category": "temple",
+        "name_latin": "Trajaneum",
+        "name_english": "The Temple of Trajan",
+        "province": "Asia",
+        "modern_location": "Bergama, Turkey",
+        "built": 114,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Trajan commissioned this podium temple for the highest point of Pergamon's acropolis, ringed by Corinthian columns — six across the front, nine down each side — meant to honor Zeus Philios alongside the emperors themselves. Its platform needed an enormous vaulted substructure just to level the steep hilltop for construction. Trajan never saw it finished: on 11 August 117 CE, the day he died, his temple stood as an active building site. Hadrian completed it roughly a decade later and joined his own cult to his adoptive father's inside it.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Trajan",
+          "https://followinghadrian.com/2014/01/28/photoset-the-temple-of-trajan-on-the-upper-acropolis-of-pergamon-turkey/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Temple%20of%20Trajan,%20Pergamon.jpg?width=800",
+        "image_credit": "The Temple of Trajan, Pergamon · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1833,
+          39.1318
+        ]
+      },
+      "properties": {
+        "id": "poi_pergamon_theatre",
+        "category": "theater",
+        "name_latin": "Theatrum Pergami",
+        "name_english": "The Hellenistic Theatre of Pergamon",
+        "province": "Asia",
+        "modern_location": "Bergama, Turkey",
+        "built": -240,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Builders cut this theatre directly into the acropolis slope at close to 70 degrees, the steepest surviving seating bank from the ancient world. Eighty rows of stone seating for 10,000 spectators climb 36 meters from stage to summit, engineered so tightly against the hillside that its wooden stage building had to be assembled fresh before every performance and dismantled after. By 117 CE it had already hosted plays for roughly 350 years, one of the oldest structures still working on the acropolis.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pergamon",
+          "https://ancienttheatrescom.wpcomstaging.com/theatre/pergamum-modern-bergama/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theatre%20of%20Pergamon.jpg?width=800",
+        "image_credit": "The Hellenistic theatre of Pergamon · Wikimedia Commons"
+      }
     }
   ]
 }
