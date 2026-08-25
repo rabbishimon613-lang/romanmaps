@@ -585,9 +585,9 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
   Ruwer aqueduct). Same "real gap, not exhausted" shape — Jerash and Trier are both
   heavily-photographed sites, so a fresh search budget aimed at their Commons categories directly
   should close most of this, same approach flagged for the Djemila gap above.
-- [ ] **7 of `sites.ts`'s zero-`pois.geojson`-coverage sites remain** after this and the prior
-  shift closed Djemila, Volubilis, Jerash, Trier, Leptis Magna, Sabratha, Tivoli and Palestrina:
-  Italica, Cumae, Capua, Brescia, Milan, Rimini, Luni. Same shape, pick one or two per shift — and
+- [ ] **5 of `sites.ts`'s zero-`pois.geojson`-coverage sites remain** after this and the prior
+  shifts closed Djemila, Volubilis, Jerash, Trier, Leptis Magna, Sabratha, Tivoli, Palestrina,
+  Capua and Cumae: Italica, Brescia, Milan, Rimini, Luni. Same shape, pick one or two per shift — and
   brief the research prompt with the exact category vocabulary from `app/categoryLife.ts` up front
   (see the 10-off-vocabulary-categories fix logged in SHIFT_LOG two shifts ago — it happened
   because that step got skipped for the first two sites and caught only by `npm run metrics`, not

@@ -1056,8 +1056,16 @@ to prevent. Building locally to *test* your own work is expected and fine.
       1280×800 light and 375×812 dark, plus the guided-tour door's click-through (modal closes,
       real tour list opens).
 - [ ] `[03-P2-8]` **`compare-today`** `polish` — Satellite/modern toggle for the viewport.
-- [ ] `[13-P2-8]` **`og-images`** `illustrate` — Generated per-place OG images;
-      `summary_large_image`.
+- [x] `[13-P2-8]` **`og-images`** `illustrate` — Done 2026-08-25 by a cloud shift. Every
+      `/place/[slug]` (628 POIs) and `/site/[slug]` (40 sites) page now gets a real, generated
+      1200×630 social card via Next's `opengraph-image.tsx` file convention — category-colored
+      accent + label, place name, Latin subtitle, province/location, and the same parchment-
+      medallion mark as `app/appIcon.tsx`'s existing icon family. Deliberately text-only, no fetch
+      of the POI's own `image_url`: this route prerenders at build time and Wikimedia Commons is
+      network-blocked in this sandbox, so embedding a remote photo would break the build here.
+      Twitter card upgraded to `summary_large_image` on both routes now that a card image always
+      exists. Verified against the built production server: both routes return real 200 image/png
+      responses with the correct layout.
 - [ ] `[05-P2-6]` **`i18n`** `polish` — `strings.ts` scaffold; English + Italian.
 - [x] `[04-P2-9]` **`manifest`** `polish` — Done 2026-08-21 by cloud shift 41. `app/manifest.ts`
       + `app/icon.tsx`/`apple-icon.tsx` (Next.js file convention, 32px/180px) + two route
