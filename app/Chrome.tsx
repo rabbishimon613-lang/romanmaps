@@ -5,7 +5,7 @@ import maplibregl from "maplibre-gl";
 import type { Map as MLMap } from "maplibre-gl";
 import { useUnits } from "./useUnits";
 import { loadPlaces, loadPois, searchPlaces, type Place } from "./places";
-import { clearOverlays, countActiveOverlays, LAYER_GROUPS, toggleLayer, useLayers } from "./useLayers";
+import { activeRoom, clearOverlays, countActiveOverlays, LAYER_GROUPS, ROOMS, toggleLayer, toggleRoom, useLayers } from "./useLayers";
 import { CATEGORY_GROUPS } from "./poiCategories";
 import { toggleHiddenCategory, useHiddenCategories } from "./useHiddenCategories";
 import { useIsMobile } from "./useIsMobile";
@@ -33,6 +33,7 @@ export default function Chrome() {
   const [poiCategoriesExpanded, setPoiCategoriesExpanded] = useState(false);
   const layers = useLayers();
   const overlayCount = countActiveOverlays(layers);
+  const currentRoom = activeRoom(layers);
   const hiddenCategories = useHiddenCategories();
   const layersRef = useRef<HTMLDivElement>(null);
   const isMobile = useIsMobile();
@@ -650,6 +651,33 @@ export default function Chrome() {
               </div>
             ))}
 
+            <div style={{ height: 1, background: "var(--divider)", margin: "8px 0" }} />
+            <div style={{ padding: "0 16px 8px" }}>
+              <div style={{ fontSize: 13, fontWeight: 600, color: "var(--text-strong)", marginBottom: 6 }}>Rooms</div>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                {ROOMS.map((r) => {
+                  const on = currentRoom === r.id;
+                  return (
+                    <button
+                      key={r.id}
+                      title={r.description}
+                      onClick={() => toggleRoom(r.id)}
+                      style={{
+                        padding: "5px 10px",
+                        borderRadius: 999,
+                        fontSize: 12.5,
+                        fontWeight: 600,
+                        background: on ? "var(--accent)" : "var(--accent-bg)",
+                        color: on ? "var(--on-accent)" : "var(--accent)",
+                        cursor: "pointer",
+                      }}
+                    >
+                      {r.label}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
             <div style={{ height: 1, background: "var(--divider)", margin: "8px 0" }} />
             <div
               style={{

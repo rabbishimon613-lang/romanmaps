@@ -92,6 +92,31 @@ export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: strin
   { id: "fauna-sourcing", label: "Arena animal sourcing", mapLayerIds: ["fauna-sourcing-line", "fauna-sourcing-point"] },
 ];
 
+/** [10-P1-3] thematic-rooms. Six curated bundles over the 30 thematic (non-base) groups — one
+ * clean partition, every thematic group in exactly one room, so a first-time visitor picks "one
+ * of six things to look at" instead of scanning a 30-row checkbox list. Additive to the existing
+ * per-group checkboxes below, not a replacement — a room is a fast on-ramp, the flat list is
+ * still there for anyone who wants to hand-pick two unrelated layers. `satellite` is a basemap
+ * swap, not a theme, so it's deliberately outside every room and unaffected by them. */
+export type RoomId = "power" | "movement" | "money" | "belief" | "knowledge" | "danger";
+
+export const ROOMS: { id: RoomId; label: string; description: string; groups: LayerGroupId[] }[] = [
+  { id: "power", label: "Power", description: "Senate seats, mints, assize centers, embassies and imperial welfare — the machinery of rule.",
+    groups: ["politics", "mints", "conventus", "diplomacy", "euergetism"] },
+  { id: "movement", label: "Movement", description: "Trade routes, road stations, aqueducts, frontiers and the winds that set the sailing calendar.",
+    groups: ["trade-routes", "road-stations", "aqueduct-lines", "frontier-lines", "wind-currents"] },
+  { id: "money", label: "Money", description: "Crop and craft geography, arena-animal sourcing, housing and food — the material economy.",
+    groups: ["agriculture", "crafts", "fauna-sourcing", "housing", "cuisine"] },
+  { id: "belief", label: "Belief", description: "Temples, imperial cult, death ritual, ethnic pockets and the pre-Roman religions still visible.",
+    groups: ["religions", "imperial-cult", "death-rituals", "ethnic-pockets", "substrate"] },
+  { id: "knowledge", label: "Knowledge", description: "Libraries and schools, letter networks, language belts, sacred landmarks and Rome's neighbors.",
+    groups: ["learning", "letters", "languages", "landmarks", "neighbors"] },
+  { id: "danger", label: "Danger", description: "117 CE's live wars and revolts, disasters remembered, disease, punishment and the arena.",
+    groups: ["living-empire", "disasters", "health", "penal", "sports"] },
+];
+
+const ROOM_GROUP_IDS = new Set(ROOMS.flatMap((r) => r.groups));
+
 type LayerState = Record<LayerGroupId, boolean>;
 
 // v2: the default flipped from "everything on" to "base map only", so the key is bumped —
@@ -236,17 +261,20 @@ export function applyAllLayers() {
   }
 }
 
+function persist() {
+  if (typeof window === "undefined") return;
+  try {
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(current));
+  } catch {
+    // ignore quota/private-mode errors
+  }
+}
+
 export function toggleLayer(group: LayerGroupId) {
   const state = getSnapshot();
   current = { ...state, [group]: !state[group] };
   hydrated = true;
-  if (typeof window !== "undefined") {
-    try {
-      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(current));
-    } catch {
-      // ignore quota/private-mode errors
-    }
-  }
+  persist();
   const map = (window as any).__map as MLMap | undefined;
   if (map) applyGroupToMap(map, group, current[group]);
   // Switching a thematic group on for the first time is what pulls its data down.
@@ -262,15 +290,48 @@ export function clearOverlays() {
   for (const g of LAYER_GROUPS) if (!g.base) next[g.id] = false;
   current = next;
   hydrated = true;
-  if (typeof window !== "undefined") {
-    try {
-      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(current));
-    } catch {
-      // ignore quota/private-mode errors
-    }
-  }
+  persist();
   const map = (window as any).__map as MLMap | undefined;
   if (map) for (const g of LAYER_GROUPS) if (!g.base) applyGroupToMap(map, g.id, false);
+  listeners.forEach((l) => l());
+}
+
+/** Which room, if any, exactly matches the current state — every one of its five groups on,
+ * every other room's groups off. Used to highlight the active room chip and let a second click
+ * on it act as "turn this room off" rather than a no-op re-apply. Hand-toggling an individual
+ * checkbox inside (or outside) a room's set silently drops the highlight — there's no attempt to
+ * track "the room I last clicked", only what's actually on the map right now. */
+export function activeRoom(state: LayerState): RoomId | null {
+  for (const r of ROOMS) {
+    const matches = r.groups.every((g) => state[g]) && ROOMS
+      .filter((other) => other.id !== r.id)
+      .every((other) => other.groups.every((g) => !state[g]));
+    if (matches) return r.id;
+  }
+  return null;
+}
+
+/** One-click room isolation, the same "click to isolate, click again to clear" pattern
+ * CategoryChips.tsx already uses for POI categories. Switches on exactly this room's five groups
+ * and off every other room's groups (satellite and the five base groups are untouched — a room
+ * is a thematic bundle, not a full view reset). Clicking the already-active room clears it back
+ * to the plain base map. */
+export function toggleRoom(roomId: RoomId) {
+  const room = ROOMS.find((r) => r.id === roomId);
+  if (!room) return;
+  const state = getSnapshot();
+  const turningOn = activeRoom(state) !== roomId;
+  const next = { ...state };
+  for (const g of LAYER_GROUPS) {
+    if (g.base || !ROOM_GROUP_IDS.has(g.id)) continue;
+    next[g.id] = turningOn && room.groups.includes(g.id);
+  }
+  current = next;
+  hydrated = true;
+  persist();
+  const map = (window as any).__map as MLMap | undefined;
+  if (map) for (const g of LAYER_GROUPS) if (ROOM_GROUP_IDS.has(g.id)) applyGroupToMap(map, g.id, current[g.id]);
+  if (turningOn) for (const gid of room.groups) void ensureLayerLoaded(gid);
   listeners.forEach((l) => l());
 }
 
