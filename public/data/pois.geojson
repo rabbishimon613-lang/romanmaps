@@ -19853,6 +19853,642 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2223,
+          45.5393
+        ]
+      },
+      "properties": {
+        "id": "poi_capitolium_brixia",
+        "category": "temple",
+        "name_latin": "Capitolium Brixiae",
+        "name_english": "Capitolium of Brescia",
+        "province": "Italia",
+        "modern_location": "Brescia, Italy",
+        "built": 73,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Emperor Vespasian dedicated this Capitoline temple in 73 CE to thank Brixia for backing him against Vitellius. Three parallel cellae honored Jupiter, Juno, and Minerva behind a Corinthian portico, with polychrome marble floors still visible today. A landslide off the Cidneo hill buried the ruins in the Middle Ages, preserving them until excavation began in 1823. It stood at the north edge of the forum, the religious anchor of the whole civic square.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Capitolium_of_Brixia",
+          "https://www.bresciamusei.com/en/museums-and-venues/brixia-roman-archaeological-area/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tempio Capitolino a Brescia.jpg?width=800",
+        "image_credit": "Capitolium of Brescia · Wikimedia Commons",
+        "image_alt": "Colonnaded facade of the Capitoline temple in Brescia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2226,
+          45.5392
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_brixia",
+        "category": "theater",
+        "name_latin": "Theatrum Brixiae",
+        "name_english": "Roman Theatre of Brescia",
+        "province": "Italia",
+        "modern_location": "Brescia, Italy",
+        "built": 73,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Built directly east of the Capitolium as part of Vespasian's Flavian-era forum project, this theatre gave Brixia a stage for public performances beside its civic religious center. It was enlarged under Septimius Severus more than a century later, but the Flavian core was already standing and in use by 117 CE. Excavations resumed at the site in the 2020s to bring more of the cavea to light. It sits immediately adjacent to the Capitolium, sharing the same archaeological park.",
+        "sources": [
+          "https://corvinus.nl/2020/03/16/brescia-capitolium-and-roman-theatre/",
+          "https://ancienttheatrearchive.com/theatre/brixia-modern-brescia-italy/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Teatro Romano Piazza del Foro Brescia.jpg?width=800",
+        "image_credit": "Roman Theatre, Piazza del Foro, Brescia · Wikimedia Commons",
+        "image_alt": "Remains of the Roman theatre in Brescia's Piazza del Foro"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2219,
+          45.5389
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_brixia",
+        "category": "forum",
+        "name_latin": "Forum Brixiae",
+        "name_english": "Roman Forum of Brescia",
+        "province": "Italia",
+        "modern_location": "Brescia, Italy",
+        "built": 73,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Brixia's forum square existed from the Late Republic and gained a basilica and porticoes under Augustus, but Vespasian rebuilt it wholesale in 73 CE alongside his new Capitolium and theatre. The rebuilt square gave the colony a unified civic center on the model of Rome itself. Its footprint survives in the modern Piazza del Foro, which still carries the ancient name. By 117 CE it had been the city's political and commercial heart for over four decades in its Flavian form.",
+        "sources": [
+          "https://www.romeartlover.it/Brescia.html",
+          "https://www.researchgate.net/publication/350569333_The_Capitolium_at_Brescia_in_the_Flavian_Period"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ricostruzione del foro imperiale di Brescia.jpg?width=800",
+        "image_credit": "Reconstruction of the Imperial forum of Brescia · Wikimedia Commons",
+        "image_alt": "Reconstruction illustration of the Roman forum of Brescia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2224,
+          45.5394
+        ]
+      },
+      "properties": {
+        "id": "poi_winged_victory_brixia",
+        "category": "monument",
+        "name_latin": "Victoria Alata Brixiae",
+        "name_english": "Winged Victory of Brescia",
+        "province": "Italia",
+        "modern_location": "Brescia, Italy",
+        "built": -50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This 195-centimeter bronze started life as a Hellenistic statue of Aphrodite admiring her reflection in a shield, then got new wings and an inscribed shield to become a Victory writing a victor's name. Brixians buried it under the Capitolium floor with other precious bronzes ahead of a late-antique threat, which is exactly why it survived. Excavators found it there in 1826, still gleaming under centuries of rubble. It stood on display inside the temple complex through the 117 CE snapshot.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Winged_Victory_of_Brescia",
+          "https://the-past.com/feature/brescia-wings-of-victory/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Parco archeologico di Brescia romana Vittoria alata 8 Brescia.jpg?width=800",
+        "image_credit": "Winged Victory of Brescia · Wikimedia Commons",
+        "image_alt": "Bronze Winged Victory statue displayed at the Brescia archaeological park"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2221,
+          45.5391
+        ]
+      },
+      "properties": {
+        "id": "poi_republican_sanctuary_brixia",
+        "category": "sanctuary",
+        "name_latin": "Sanctuarium Republicanum Brixiae",
+        "name_english": "Republican Sanctuary of Brescia",
+        "province": "Italia",
+        "modern_location": "Brescia, Italy",
+        "built": -85,
+        "destroyed": 73,
+        "extant_117ce": false,
+        "notes": "Four side-by-side cult rooms with their own pronaos porticoes made up Brixia's oldest religious complex, raised around 85 BCE on a terrace above the decumanus. Vespasian's builders buried it under fill in 73 CE to raise the platform for the new Capitolium, ending its life as a standing shrine. That burial accidentally preserved some of the best-conserved Roman wall frescoes in northern Italy. One of its four halls has been open to visitors since 2015 after decades underground.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Capitolium_of_Brixia",
+          "https://paganplaces.com/places/capitolium-and-republican-sanctuary-of-brescia/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1841,
+          45.4646
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_mediolanum",
+        "category": "theater",
+        "name_latin": "Theatrum Mediolani",
+        "name_english": "Roman Theatre of Milan",
+        "province": "Italia",
+        "modern_location": "Milan, Italy",
+        "built": -10,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This was the first large public building the Romans raised at Mediolanum, going up in the Augustan era with room for up to 9,000 spectators. Its stage wall rose 20 meters and its curved cavea spanned 95 meters, a scale meant to announce the colony's ambitions. Performances continued here into the 4th or 5th century before it fell out of use. Its foundations now sit in the basement of Palazzo Turati, home to Milan's Chamber of Commerce.",
+        "sources": [
+          "https://www.in-lombardia.it/en/teatro-romano-di-milano",
+          "https://www.lombardiafood.com/milan-roman-theatre/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/I resti del Teatro Romano.jpg?width=800",
+        "image_credit": "Remains of the Roman Theatre, Milan · Wikimedia Commons",
+        "image_alt": "Excavated remains of the Roman theatre beneath Palazzo Turati in Milan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1795,
+          45.4571
+        ]
+      },
+      "properties": {
+        "id": "poi_amphitheatre_mediolanum",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum Mediolani",
+        "name_english": "Roman Amphitheatre of Milan",
+        "province": "Italia",
+        "modern_location": "Milan, Italy",
+        "built": 89,
+        "destroyed": 402,
+        "extant_117ce": true,
+        "notes": "Mediolanum's amphitheatre rose in the Flavian era, construction spanning roughly the second half of the 1st century CE, and reached 150 by 120 meters, third largest in Roman Italy after the Colosseum and Capua. Gladiator bouts and animal hunts filled the arena for over three centuries. Built outside the city walls, it later became a defensible position for attackers and was torn down for stone in the chaos of the 5th century. Excavations that began in 1931 uncovered its outer wall under Via Conca del Naviglio.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Milan_amphitheatre",
+          "https://www.domusweb.it/en/news/2025/02/11/milan-roman-amphitheater.html"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/4194 - Milano - Ruderi dell'Arena romana - Foto Giovanni Dall'Orto 14-July.2007.jpg?width=800",
+        "image_credit": "Ruins of the Roman arena, Milan · photo by Giovanni Dall'Orto, Wikimedia Commons",
+        "image_alt": "Excavated foundation ruins of the Roman amphitheatre in Milan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1855,
+          45.4638
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_mediolanum",
+        "category": "forum",
+        "name_latin": "Forum Mediolani",
+        "name_english": "Roman Forum of Milan",
+        "province": "Italia",
+        "modern_location": "Milan, Italy",
+        "built": -20,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Mediolanum's forum occupied the crossing of the cardo and decumanus, a 160 by 55 meter square laid out as the city grew into its role as a municipium after 49 BCE. It carried the basilica, market stalls, and civic offices that ran the colony's daily business. Excavations in the 1950s under Via Brisa exposed foundations of its reception halls, and paving slabs turned up again beneath the Pinacoteca Ambrosiana. Piazza San Sepolcro sits directly above it today.",
+        "sources": [
+          "https://sestertiusblog.wordpress.com/2018/06/08/milan-the-roman-forum-under-the-church-of-san-sepolcro/",
+          "https://neiade.com/en/milan-capital-of-the-roman-empire-on-the-trail-of-mediolanum/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1832,
+          45.4602
+        ]
+      },
+      "properties": {
+        "id": "poi_walls_mediolanum",
+        "category": "wall",
+        "name_latin": "Muri Mediolani",
+        "name_english": "Roman Walls of Milan",
+        "province": "Italia",
+        "modern_location": "Milan, Italy",
+        "built": -49,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Mediolanum got its first circuit of masonry walls in 49 BCE when the town became a Roman municipium, enclosing a roughly square area about 700 meters on a side. These republican walls stayed the city's only fortification until Maximian's much larger extension nearly two centuries later, in 286-305 CE, well after this snapshot. A surviving tower base near the Carrobbio marks where the Porta Ticinensis once pierced this original line. Frederick Barbarossa finally razed the masonry circuit during the 1162 siege of Milan.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Walls_of_Milan",
+          "https://it.wikipedia.org/wiki/Mura_romane_di_Milano"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Giardinetti con resti di mura nei pressi del Carrobbio, Milano.jpg?width=800",
+        "image_credit": "Remains of the Roman walls near Carrobbio, Milan · Wikimedia Commons",
+        "image_alt": "Surviving fragment of Roman-era wall masonry near Carrobbio in Milan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1798,
+          45.4581
+        ]
+      },
+      "properties": {
+        "id": "poi_columns_san_lorenzo_mediolanum",
+        "category": "column",
+        "name_latin": "Columnae ante Basilicam Sancti Laurentii",
+        "name_english": "Columns of San Lorenzo",
+        "province": "Italia",
+        "modern_location": "Milan, Italy",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "These sixteen Corinthian columns were carved in the 2nd or 3rd century CE, decades after this snapshot, for a pagan temple or bath complex elsewhere in Mediolanum. Workers salvaged and re-erected them here in the 4th century to front the newly built Basilica of San Lorenzo, giving the church a monumental Roman colonnade it never originally had. They now form the best-known Roman-looking streetscape in modern Milan, along Corso di Porta Ticinese. Because the columns postdate 117 CE, they do not belong on a snapshot of that year.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Colonne_di_San_Lorenzo",
+          "https://www.italyscapes.com/places/lombardy/milan/ancient-monuments/columns-of-san-lorenzo/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Milano ColonneSanLorenzo.03.JPG?width=800",
+        "image_credit": "Columns of San Lorenzo, Milan · Wikimedia Commons",
+        "image_alt": "Row of ancient Corinthian columns in front of the Basilica of San Lorenzo, Milan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5651,
+          44.0567
+        ]
+      },
+      "properties": {
+        "id": "poi_arch_augustus_rimini",
+        "category": "arch",
+        "name_latin": "Arcus Augusti",
+        "name_english": "Arch of Augustus",
+        "province": "Italia",
+        "modern_location": "Rimini, Italy",
+        "built": -27,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The Roman Senate dedicated this arch to Augustus in 27 BCE for restoring the Via Flaminia, and it stands today as the oldest surviving Roman triumphal arch. Carved from pale Istrian stone, it rises 9.92 meters at the point where the Via Flaminia met the Via Aemilia. Medallions of Jupiter, Apollo, Neptune, and Minerva face outward above its arch. Travelers on foot and horseback still pass beneath it, exactly as they did in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Arch_of_Augustus_(Rimini)",
+          "https://riminiturismo.it/en/what-see/art-and-culture/arches-doors-walls-porticos/arco-daugusto"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arco d'Augusto, Rimini Italy.jpg?width=800",
+        "image_credit": "Arch of Augustus, Rimini · Wikimedia Commons",
+        "image_alt": "Roman triumphal arch of pale stone with a single archway, Rimini"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5698,
+          44.0637
+        ]
+      },
+      "properties": {
+        "id": "poi_bridge_tiberius_rimini",
+        "category": "bridge",
+        "name_latin": "Pons Augusti et Tiberii",
+        "name_english": "Bridge of Tiberius",
+        "province": "Italia",
+        "modern_location": "Rimini, Italy",
+        "built": 14,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Augustus began this five-arch bridge over the Marecchia in 14 CE, and Tiberius finished it in 21 CE, giving it his name. Cut from solid Istrian stone, it has carried traffic across the river for two thousand years without a single arch collapsing. Blind aedicules frame the piers between its five spans. By 117 CE it had already linked Ariminum to the coastal road toward Ravenna for nearly a century.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ponte_di_Tiberio_(Rimini)",
+          "https://www.visitrimini.com/en/point-of-interest/tiberius-bridge/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ponte di Tiberio 4569.JPG?width=800",
+        "image_credit": "Ponte di Tiberio, Rimini · Wikimedia Commons",
+        "image_alt": "Roman stone bridge with five round arches spanning the Marecchia river"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5678,
+          44.0594
+        ]
+      },
+      "properties": {
+        "id": "poi_domus_chirurgo_rimini",
+        "category": "house",
+        "name_latin": "Domus Chirurgi",
+        "name_english": "Surgeons House",
+        "province": "Italia",
+        "modern_location": "Rimini, Italy",
+        "built": 150,
+        "destroyed": 257,
+        "extant_117ce": false,
+        "notes": "This seaside house did not yet exist in 117 CE; builders raised it in the second half of the 2nd century, decades after Trajan's death. Its last owner was a doctor whose toolkit of over 150 surgical instruments survived a fire that destroyed the house in the mid-3rd century. Excavators uncovered the site in 1989 under a modern piazza. Its mosaics and bronze scalpels now sit inside a glass-walled archaeological park.",
+        "sources": [
+          "https://www.domusrimini.com/eng/the-surgeon-house/",
+          "https://www.historyhit.com/locations/the-surgeons-house-rimini/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5715,
+          44.0577
+        ]
+      },
+      "properties": {
+        "id": "poi_amphitheater_rimini",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum Ariminense",
+        "name_english": "Roman Amphitheater of Rimini",
+        "province": "Italia",
+        "modern_location": "Rimini, Italy",
+        "built": 130,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Builders raised this amphitheater under Hadrian, so it stood unbuilt on 11 August 117 CE, the day Trajan died and Hadrian succeeded him. A coin bearing Hadrian's portrait, found embedded in its masonry, fixed the date. Two rings of arches once held more than 10,000 spectators near the harbor. Allied bombing in World War Two left only its elliptical outline and a few brick arches standing.",
+        "sources": [
+          "https://www.visitrimini.com/en/point-of-interest/anfiteatro/",
+          "https://www.historyhit.com/locations/rimini-roman-amphitheatre/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anfiteatro romano - Rimini 1.jpg?width=800",
+        "image_credit": "Roman amphitheatre ruins, Rimini · Wikimedia Commons",
+        "image_alt": "Brick ruins of the elliptical Roman amphitheatre at Rimini"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.568,
+          44.0625
+        ]
+      },
+      "properties": {
+        "id": "poi_porta_montanara_rimini",
+        "category": "gate",
+        "name_latin": "Porta Montanara",
+        "name_english": "Porta Montanara Gate",
+        "province": "Italia",
+        "modern_location": "Rimini, Italy",
+        "built": -82,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman colonists built this gate around 82 BCE, in the wall circuit raised after Sulla's civil war, giving Ariminum a fortified southern entrance still standing in 117 CE. Its arch used double rows of stone voussoirs cut from Covignano hillside sandstone. World War Two bombing tore the gate apart, but restorers rebuilt its surviving barrel vault at street level in 2004. It once carried the name Porta Sant'Andrea.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Porta_Montanara,_Rimini",
+          "https://riviera.rimini.it/en/art-and-culture/monuments/structures-dataer/1899-porta-montanara"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porta Montanara - Rimini 1.JPG?width=800",
+        "image_credit": "Porta Montanara, Rimini · Wikimedia Commons",
+        "image_alt": "Roman stone gate arch of Porta Montanara in Rimini"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5672,
+          44.0592
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_rimini",
+        "category": "forum",
+        "name_latin": "Forum Ariminense",
+        "name_english": "Roman Forum of Rimini",
+        "province": "Italia",
+        "modern_location": "Rimini, Italy",
+        "built": -268,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Colonists laid out this forum in 268 BCE at the crossing of the decumanus and cardo, and by 117 CE it had served as Ariminum's civic heart for nearly four centuries. Tradition holds that Julius Caesar addressed his soldiers here in 49 BCE after crossing the Rubicon. A theater closed the square to the north and an archway marked its southern entrance. A basilica for courts and business stood nearest the sea.",
+        "sources": [
+          "https://www.travelemiliaromagna.it/en/ancient-roman-ariminum/",
+          "https://riminiturismo.it/en/what-see/art-and-culture/piazzas-loggias-and-historical-routes/piazza-tre-martiri"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.023,
+          44.0605
+        ]
+      },
+      "properties": {
+        "id": "poi_amphitheater_luni",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum Lunense",
+        "name_english": "Roman Amphitheater of Luni",
+        "province": "Italia",
+        "modern_location": "Luni, Italy",
+        "built": 160,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "This amphitheater postdates 117 CE; excavators date its construction to the Antonine period, decades after Trajan's death, though older accounts once placed it a century earlier. Once finished, it held about 7,000 spectators for gladiatorial games and animal hunts. Archaeologists uncovered it starting in the 1950s. Its elliptical outline still sits within the walled Roman city near the Magra river mouth.",
+        "sources": [
+          "https://it.wikipedia.org/wiki/Anfiteatro_romano_di_Luni",
+          "https://discoverportovenere.com/luni-archaeology-liguria/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anfiteatro-luni.jpg?width=800",
+        "image_credit": "Roman amphitheatre ruins, Luni · Wikimedia Commons",
+        "image_alt": "Elliptical ruins of the Roman amphitheatre at Luni"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0195,
+          44.0625
+        ]
+      },
+      "properties": {
+        "id": "poi_capitolium_luni",
+        "category": "temple",
+        "name_latin": "Capitolium Lunense",
+        "name_english": "Capitolium of Luni",
+        "province": "Italia",
+        "modern_location": "Luni, Italy",
+        "built": -177,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Colonists raised this temple to Jupiter, Juno, and Minerva at the forum soon after founding Luna in 177 BCE. Terracotta architectural fragments and black-gloss pottery from the site date its earliest phase to the colony's very first years. Standing on a raised podium overlooking the forum, it anchored civic and religious life in 117 CE. Marble from the nearby imperial quarries later reinforced the site's later buildings.",
+        "sources": [
+          "https://oxfordre.com/classics/classics/view/10.1093/acrefore/9780199381135.001.0001/acrefore-9780199381135-e-3794",
+          "https://www.treccani.it/enciclopedia/luni_res-36f790db-8c62-11dc-8e9d-0016357eee51_(Enciclopedia-dell'-Arte-Antica)/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0175,
+          44.0635
+        ]
+      },
+      "properties": {
+        "id": "poi_grande_tempio_luni",
+        "category": "temple",
+        "name_latin": "Templum Lunae",
+        "name_english": "Temple of Luna",
+        "province": "Italia",
+        "modern_location": "Luni, Italy",
+        "built": -170,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Colonists first built this temple to the goddess Luna in the mid-2nd century BCE, and Augustan-age builders later rebuilt it completely, wrapping it in a triple portico. A sculpted pediment showing a council of the gods, carved around 175-150 BCE, survives from its earliest phase. The rebuilt sanctuary stood in active use in 117 CE at the city's northwest corner. A cuirassed statue from the renovation may depict Octavian himself.",
+        "sources": [
+          "https://www.digitalaugustanrome.org/records/luna-aedes/",
+          "http://www.thiasos.eu/wp-content/uploads/2020/05/03.Bozzi_.pdf"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Frontone A del grande tempio di luni con concilio degli dei, 175-150 ac. ca. 01.JPG?width=800",
+        "image_credit": "Pediment of the Temple of Luna, Luni · Wikimedia Commons",
+        "image_alt": "Carved stone pediment fragment showing a council of gods from the Temple of Luna"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0205,
+          44.064
+        ]
+      },
+      "properties": {
+        "id": "poi_walls_luni",
+        "category": "wall",
+        "name_latin": "Muri Lunenses",
+        "name_english": "City Walls of Luni",
+        "province": "Italia",
+        "modern_location": "Luni, Italy",
+        "built": -177,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman colonists enclosed their new town with defensive walls in 177 BCE, the year Luna's colony was founded on land taken from the Ligurian Apuani. The fortified circuit closed off about 39 hectares of the coastal plain along the Magra river. Poets remembered the city for its white walls centuries later. By 117 CE those walls had already sheltered five generations of colonists.",
+        "sources": [
+          "https://it.wikipedia.org/wiki/Luna_(colonia_romana)",
+          "https://www.romanports.org/en/the-ports/99-luna.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.02,
+          44.062
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_luni",
+        "category": "forum",
+        "name_latin": "Forum Lunense",
+        "name_english": "Roman Forum of Luni",
+        "province": "Italia",
+        "modern_location": "Luni, Italy",
+        "built": -177,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Luna's forum took shape in 177 BCE at the intersection of the cardo and decumanus, and Augustan-age building projects later widened it considerably. The Capitolium closed its north end while a basilica handled courts and commerce nearby. By 117 CE the city drew wealth from Carrara marble quarries just inland, some of which had become imperial property under Augustus. Excavators have since uncovered the forum, theater, and amphitheater.",
+        "sources": [
+          "https://www.romanports.org/en/articles/ports-in-focus/811-luna-english.html",
+          "https://thatsliguria.com/en/luni-the-ancientroman-town-in-liguria/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.019,
+          44.0615
+        ]
+      },
+      "properties": {
+        "id": "poi_domus_mosaici_luni",
+        "category": "house",
+        "name_latin": "Domus Mosaicorum",
+        "name_english": "House of the Mosaics",
+        "province": "Italia",
+        "modern_location": "Luni, Italy",
+        "built": -50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This house's oldest walls date to the 1st century BCE, standing on foundations of river pebbles with a crushed-terracotta floor set in a white-tessera diamond pattern. That Republican-era core already stood in 117 CE, well before the mosaics that later made the house famous. Its celebrated Circus Maximus and Dionysus mosaics belong to renovations three and five centuries after Trajan's death. Excavators still work the site today near La Spezia.",
+        "sources": [
+          "https://luni.cultura.gov.it/area-archeologica/area-archeologiche/domus-dei-mosaici",
+          "http://www.luni.beniculturali.it/index.php?it/311/domus-dei-mosaici"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
