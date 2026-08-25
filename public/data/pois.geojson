@@ -18886,6 +18886,531 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7925,
+          41.9634
+        ]
+      },
+      "properties": {
+        "id": "poi_tibur_hercules_victor",
+        "category": "sanctuary",
+        "name_latin": "Sanctuarium Herculis Victoris",
+        "name_english": "Sanctuary of Hercules Victor",
+        "province": "Italia",
+        "modern_location": "Tivoli, Italy",
+        "built": -82,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Tibur's patron god Hercules received the largest sanctuary built to him anywhere in Italy after the one at Cadiz, a terraced complex nearly 200 meters long carved into the hillside above the Aniene. A covered passage tunneled straight through the foundations, letting the Via Tiburtina run beneath the sanctuary without disturbing pilgrims overhead. By 117 CE the complex has drawn worshippers, including senators with country villas nearby, for close to two centuries.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sanctuary_of_Hercules_Victor_(Tivoli)",
+          "https://villae.cultura.gov.it/en/the-locations/santuary-of-hercules-victor/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Hercules%20Victor%20(13976241573).jpg?width=800",
+        "image_credit": "Sanctuary of Hercules Victor, Tivoli · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7981,
+          41.9598
+        ]
+      },
+      "properties": {
+        "id": "poi_tibur_temple_vesta",
+        "category": "temple",
+        "name_latin": "Templum Vestae Tiburtinum",
+        "name_english": "Temple of Vesta, Tivoli",
+        "province": "Italia",
+        "modern_location": "Tivoli, Italy",
+        "built": -80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Ten of this small round temple's original eighteen Corinthian columns still ring its drum, perched dramatically on the cliff above the Aniene's waterfalls. Renaissance visitors named it for Vesta, though no inscription confirms which goddess it actually honored, with Hercules and the local nymph Albunea both proposed instead. By 117 CE it has crowned this cliff edge for nearly two centuries, its silhouette already a fixture of the view every visitor to Tibur described.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Vesta,_Tivoli",
+          "https://vici.org/vici/4381/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tempio%20di%20Vesta%20Tivoli%2011.JPG?width=800",
+        "image_credit": "Temple of Vesta, Tivoli · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7983,
+          41.9599
+        ]
+      },
+      "properties": {
+        "id": "poi_tibur_temple_tiburnus",
+        "category": "temple",
+        "name_latin": "Templum Tiburni",
+        "name_english": "Temple of the Sibyl",
+        "province": "Italia",
+        "modern_location": "Tivoli, Italy",
+        "built": -150,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A smaller rectangular Ionic temple stands beside the round Temple of Vesta on Tibur's acropolis, most likely dedicated to Tiburnus, the legendary founder the city took its name from. Horace, who loved this stretch of the Aniene, wrote of 'the grove of Tiburnus' in the same breath as the roaring river below it. By 117 CE both temples have watched over the falls together for well over a century.",
+        "sources": [
+          "https://madainproject.com/temple_of_sibyl_(tivoli)"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Horace",
+            "work": "Odes",
+            "ref": "1.7.13",
+            "note": "Names 'the grove of Tiburnus' alongside the headlong Anio and the sanctuary of Albunea."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7618,
+          41.9549
+        ]
+      },
+      "properties": {
+        "id": "poi_tibur_ponte_lucano",
+        "category": "bridge",
+        "name_latin": "Pons Lucanus",
+        "name_english": "Ponte Lucano",
+        "province": "Italia",
+        "modern_location": "Tivoli, Italy",
+        "built": -30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Marcus Plautius Lucanus gave his name to this stone bridge carrying the Via Tiburtina across the Aniene on the approach to Tibur. Travelers from Rome crossed it for nearly two thousand years afterward; it stayed in use until the mid-20th century. By 117 CE it has carried traffic toward Tibur's sanctuaries for roughly a century, with its builder's family tomb rising beside the road just steps away.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ponte_Lucano",
+          "https://pleiades.stoa.org/places/791702428"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ponte%20Lucano.jpg?width=800",
+        "image_credit": "Ponte Lucano over the Aniene · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.762,
+          41.955
+        ]
+      },
+      "properties": {
+        "id": "poi_tibur_tomb_plautii",
+        "category": "tomb",
+        "name_latin": "Sepulcrum Plautiorum",
+        "name_english": "Tomb of the Plautii",
+        "province": "Italia",
+        "modern_location": "Tivoli, Italy",
+        "built": -2,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Consul Marcus Plautius Silvanus, a friend of Augustus, raised this cylindrical drum tomb for his family right beside the bridge that already carried his own family's name. Its design echoes the grander imperial mausolea going up in Rome at the same time, a senator's family claiming the same architectural language as the emperor's own house. By 117 CE it has stood watch over travelers crossing the Aniene for well over a century.",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q52280885"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roma%20Mausoleo%20di%20Plauzio%20Lucano.jpg?width=800",
+        "image_credit": "Tomb of the Plautii, beside Ponte Lucano · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7965,
+          41.9635
+        ]
+      },
+      "properties": {
+        "id": "poi_tibur_forum",
+        "category": "forum",
+        "name_latin": "Forum Tiburis",
+        "name_english": "Roman Forum of Tibur",
+        "province": "Italia",
+        "modern_location": "Tivoli, Italy",
+        "built": -20,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Tibur's Republican-era forum, laid out on the site of today's cathedral square, held a public weigh-house with marble tables carved with cavities for standard weights, and an Augusteum, an imperial-cult building paid for by a local freedman. Merchants settled disputes over measures at the weigh-house while priests tended the emperor's cult a few steps away. In 117 CE both buildings anchor the civic heart of the city.",
+        "sources": [
+          "https://villae.cultura.gov.it/en/the-locations/mensa-ponderaria/",
+          "https://www.tibursuperbum.it/eng/storia/periodoromano.htm"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.799,
+          41.964
+        ]
+      },
+      "properties": {
+        "id": "poi_tibur_villa_vopiscus",
+        "category": "villa",
+        "name_latin": "Villa Manli Vopisci",
+        "name_english": "Villa of Manlius Vopiscus",
+        "province": "Italia",
+        "modern_location": "Tivoli, Italy",
+        "built": 85,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The poet Statius devoted an entire poem to touring this villa, which spanned both banks of the Aniene and let its owner supposedly listen to the river's roar without it ever disturbing his sleep. Manlius Vopiscus filled it with art and gardens landscaped around the water rather than against it. By 117 CE the villa is a generation old, already famous enough that Statius's poem describing it has circulated for twenty years.",
+        "sources": [
+          "https://www.cambridge.org/core/books/abs/statius-silvae-and-the-poetics-of-empire/imperial-pastoral-vopiscus-villa-in-silvae-13/5E4DE3771357EAF0835BFD82BAC9190B"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Statius",
+            "work": "Silvae",
+            "ref": "1.3",
+            "note": "A full poem describing the villa's position spanning the Aniene, its gardens, and its art collection."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7975,
+          41.96
+        ]
+      },
+      "properties": {
+        "id": "poi_tibur_albunea_falls",
+        "category": "sanctuary",
+        "name_latin": "Domus Albuneae",
+        "name_english": "Aniene Falls and Sanctuary of Albunea",
+        "province": "Italia",
+        "modern_location": "Tivoli, Italy",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The Aniene river drops in a roaring cascade beneath Tibur's acropolis, a natural spectacle the Romans folded straight into their religious life. Horace called it the echoing home of Albunea, a water nymph some ancient writers counted as a tenth Sibyl, worshipped in a grotto above the falls. In 117 CE the falls and their sanctuary are already old beyond memory, older than Rome's own founding myths.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tiburtine_Sibyl"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Horace",
+            "work": "Odes",
+            "ref": "1.7.12-13",
+            "note": "Describes 'the echoing home of Albunea' beside the headlong Anio."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7761,
+          41.94
+        ]
+      },
+      "properties": {
+        "id": "poi_tibur_hadrians_villa",
+        "category": "villa",
+        "name_latin": "Villa Hadriana",
+        "name_english": "Hadrian's Villa",
+        "province": "Italia",
+        "modern_location": "Tivoli, Italy",
+        "built": 118,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Hadrian would spend the next two decades building the largest and most experimental villa complex the Roman world ever saw, drawing on architecture he had seen touring Egypt, Greece, and the East. On 11 August 117 CE, the day this map is frozen at, Hadrian has just become emperor and not one stone of it has been laid; brickmakers are only beginning to stockpile material nearby. The valley where it will rise is, for now, still open countryside.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Hadrian's_Villa"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.794,
+          41.967
+        ]
+      },
+      "properties": {
+        "id": "poi_tibur_amphitheatre_bleso",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum Blaesianum",
+        "name_english": "Amphitheatre of Bleso",
+        "province": "Italia",
+        "modern_location": "Tivoli, Italy",
+        "built": 130,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A local benefactor named Bleso funded this amphitheatre for Tibur sometime during Hadrian's reign, giving the city its own venue for games without a trip to Rome. It rises well after this map's 117 CE snapshot, in the same building boom that produced Hadrian's Villa nearby. In 117 CE, Tibur's citizens still have to travel to see anything resembling a proper arena.",
+        "sources": [
+          "https://www.tibursuperbum.it/eng/monumenti/Anfiteatro.htm"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8981,
+          41.8386
+        ]
+      },
+      "properties": {
+        "id": "poi_praeneste_sanctuary_fortuna",
+        "category": "sanctuary",
+        "name_latin": "Sanctuarium Fortunae Primigeniae",
+        "name_english": "Sanctuary of Fortuna Primigenia",
+        "province": "Italia",
+        "modern_location": "Palestrina, Italy",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Praeneste's hillside sanctuary to Fortuna Primigenia climbed in terraces so vast that ancient writers claimed it was visible from Rome, more than 30 kilometers away. Republican builders reshaped the entire hillside around 100 BCE, layering porticoes, ramps, and a theater-shaped stairway on top of one another to lift worshippers toward the temple at the summit. By 117 CE it has drawn pilgrims, including emperors and their families vacationing at nearby villas, for well over two centuries.",
+        "sources": [
+          "https://www.worldhistory.org/article/1643/sanctuary-of-fortuna-primigenia-at-palestrina/",
+          "https://en.wikipedia.org/wiki/Temple_of_Fortuna_Primigenia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8965,
+          41.8399
+        ]
+      },
+      "properties": {
+        "id": "poi_praeneste_temple_fortuna",
+        "category": "temple",
+        "name_latin": "Aedes Fortunae Primigeniae",
+        "name_english": "Temple of Fortuna Primigenia",
+        "province": "Italia",
+        "modern_location": "Palestrina, Italy",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A small round temple crowned the sanctuary's highest terrace, holding a gilded bronze statue of Fortuna shown as a young armed warrior rather than the usual goddess of chance. Its remains would later be built directly into a Renaissance palace, but in 117 CE it still stands alone at the summit, the goal every pilgrim climbing the terraces below was working toward. From here the whole Praenestine plain, and on a clear day Rome itself, spreads out below.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Fortuna_Primigenia",
+          "https://www.archeopalestrina.it/the-sanctuary-of-fortuna-primigenia/?lang=en"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8975,
+          41.839
+        ]
+      },
+      "properties": {
+        "id": "poi_praeneste_oracle_fortuna",
+        "category": "oracle",
+        "name_latin": "Sortes Praenestinae",
+        "name_english": "Oracle of Fortuna Primigenia",
+        "province": "Italia",
+        "modern_location": "Palestrina, Italy",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A pit on the Terrace of the Hemicycles held the oak-wood lots that made Praeneste's oracle one of the most consulted in Italy, inscribed slips a boy would draw at random in the goddess's presence. Cicero wrote skeptically about the ritual's origin myth while admitting its enormous popularity. A century later Tiberius grew wary enough of the lots' predictions that he had the entire box brought to Rome, then thought better of it and sent it straight back.",
+        "sources": [
+          "https://www.ancient-origins.net/ancient-places-europe/sanctuary-fortuna-primigenia-0013963"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Cicero",
+            "work": "De Divinatione",
+            "ref": "2.85-87",
+            "note": "Describes the founding legend and the ritual of the oak-wood lots, skeptically."
+          },
+          {
+            "author": "Suetonius",
+            "work": "Tiberius",
+            "ref": "63",
+            "note": "Records Tiberius's wariness of the Praenestine lots, brought to Rome then returned."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8989,
+          41.8385
+        ]
+      },
+      "properties": {
+        "id": "poi_praeneste_nile_mosaic",
+        "category": "monument",
+        "name_latin": "Musivum Nilo dedicatum",
+        "name_english": "Nile Mosaic of Palestrina",
+        "province": "Italia",
+        "modern_location": "Palestrina, Italy",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A vast figured floor mosaic once paved a grotto-like hall on the sanctuary's lower terrace, showing the Nile in full flood from its Ethiopian source down to Alexandria, crowded with soldiers, priests, hunters, and exotic animals. Scholars still debate whether the hall it decorated belonged to the sanctuary itself or the adjoining civic forum, but its Republican-era workmanship places it comfortably before this map's 117 CE snapshot. It survives today as one of the largest and most detailed Nilotic scenes to come down from the ancient world.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Nile_mosaic_of_Palestrina",
+          "https://the-past.com/feature/the-nile-mosaic-at-palestrina/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nile%20mosaic%20in%20Palestrina.jpg?width=800",
+        "image_credit": "Nile Mosaic of Palestrina · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8972,
+          41.8393
+        ]
+      },
+      "properties": {
+        "id": "poi_praeneste_cortina_terrace",
+        "category": "monument",
+        "name_latin": "Cortina",
+        "name_english": "Cortina Terrace",
+        "province": "Italia",
+        "modern_location": "Palestrina, Italy",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A grand terrace ringed by porticoes on three sides opened onto a monumental staircase built in the shape of a theater, rising toward the sanctuary's summit terraces. A vaulted passage ran beneath the stairs to carry foot traffic and supplies out of sight of worshippers processing up above. By 117 CE the staircase has funneled pilgrims toward Fortuna's temple for two centuries.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Fortuna_Primigenia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8995,
+          41.838
+        ]
+      },
+      "properties": {
+        "id": "poi_praeneste_cistern",
+        "category": "cistern",
+        "name_latin": "Cisterna sanctuarii",
+        "name_english": "Cistern of the Sanctuary",
+        "province": "Italia",
+        "modern_location": "Palestrina, Italy",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A multi-chambered cistern at the foot of the hillside stored water for the fountains and nymphaea running through the sanctuary's terraces, engineering as ambitious in its own way as the temple above it. Brick-faced concrete construction let Praeneste's builders vault chambers wide enough to hold a real reserve against the dry Italian summer. In 117 CE it still supplies water to a sanctuary drawing pilgrims from across Italy.",
+        "sources": [
+          "https://www.worldhistory.org/article/1643/sanctuary-of-fortuna-primigenia-at-palestrina/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8934,
+          41.8484
+        ]
+      },
+      "properties": {
+        "id": "poi_praeneste_acropolis",
+        "category": "fort",
+        "name_latin": "Arx Praenestina",
+        "name_english": "Acropolis of Praeneste",
+        "province": "Italia",
+        "modern_location": "Palestrina, Italy",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A fortified summit above the sanctuary, today the hilltop village of Castel San Pietro Romano, served as Praeneste's ancient citadel, walled like the other old Latin hill towns of Alatri and Segni. Its height let defenders watch the approach from Rome long before an enemy reached the terraced sanctuary below. By 117 CE it has guarded the city for longer than anyone in Praeneste could say.",
+        "sources": [
+          "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Praeneste",
+          "https://www.romeartlover.it/Prenest3.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.899,
+          41.8385
+        ]
+      },
+      "properties": {
+        "id": "poi_praeneste_forum",
+        "category": "forum",
+        "name_latin": "Area Sacra Praenestina",
+        "name_english": "Forum and Basilica of Praeneste",
+        "province": "Italia",
+        "modern_location": "Palestrina, Italy",
+        "built": -120,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Praeneste's civic forum and basilica sat on a lower terrace beneath the sanctuary proper, giving the city a working seat of government right at the foot of Fortuna's temple. A medieval cathedral would later rise directly on top of its foundations, but in 117 CE the Roman-era forum still functions as built, roughly two centuries after Praeneste's builders raised it alongside the sanctuary above.",
+        "sources": [
+          "https://corvinus.nl/2018/12/24/palestrina-the-duomo/",
+          "https://en.wikipedia.org/wiki/Palestrina_Cathedral"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }

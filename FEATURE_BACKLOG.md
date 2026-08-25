@@ -585,19 +585,24 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
   Ruwer aqueduct). Same "real gap, not exhausted" shape — Jerash and Trier are both
   heavily-photographed sites, so a fresh search budget aimed at their Commons categories directly
   should close most of this, same approach flagged for the Djemila gap above.
-- [ ] **9 of `sites.ts`'s zero-`pois.geojson`-coverage sites remain** after this and the prior
-  shift closed Djemila, Volubilis, Jerash, Trier, Leptis Magna and Sabratha: Italica, Tivoli,
-  Palestrina, Cumae, Capua, Brescia, Milan, Rimini, Luni. Same shape, pick one or two per shift —
-  and brief the research prompt with the exact category vocabulary from `app/categoryLife.ts` up
-  front (see the 10-off-vocabulary-categories fix logged in SHIFT_LOG two shifts ago — it happened
+- [ ] **7 of `sites.ts`'s zero-`pois.geojson`-coverage sites remain** after this and the prior
+  shift closed Djemila, Volubilis, Jerash, Trier, Leptis Magna, Sabratha, Tivoli and Palestrina:
+  Italica, Cumae, Capua, Brescia, Milan, Rimini, Luni. Same shape, pick one or two per shift — and
+  brief the research prompt with the exact category vocabulary from `app/categoryLife.ts` up front
+  (see the 10-off-vocabulary-categories fix logged in SHIFT_LOG two shifts ago — it happened
   because that step got skipped for the first two sites and caught only by `npm run metrics`, not
-  the validator). Leptis Magna and Sabratha were both genuine dating traps worth flagging for
-  whoever does the remaining nine: both cities' most-photographed monuments (Leptis's Severan
-  Forum and Arch of Septimius Severus, Sabratha's huge theatre and amphitheatre) are Severan-era,
-  80-95 years past this map's 117 CE snapshot, while the real pre-117 material is unglamorous
-  Augustan/Julio-Claudian/Flavian infrastructure — a market, a theatre, a bath house, a boundary
-  arch. Leptis Magna's Arch of Trajan (dedicated 110 CE, seven years before Trajan's death) is the
-  rare case of a famous monument that's also a tight snapshot-date anchor.
+  the validator). Two more dating traps closed this shift, both flagged in `SHIFT_BRIEF.md`
+  itself and confirmed by research: Tivoli's Hadrian's Villa had not had a single stone laid on
+  117 CE (Hadrian only became emperor that day; the villa is a 118-138 CE project, shipped
+  `extant_117ce:false` with a note), and Praeneste's Sanctuary of Fortuna Primigenia is safely
+  Republican (c. 100 BCE) with no confirmed Trajanic/Hadrianic rebuilding phase, so its whole
+  eight-feature batch shipped `true` — the rare zero-coverage site where the obvious answer was
+  also the correct one. Leptis Magna and Sabratha were the opposite case: both cities' most-
+  photographed monuments (Leptis's Severan Forum and Arch of Septimius Severus, Sabratha's huge
+  theatre and amphitheatre) are Severan-era, 80-95 years past this map's 117 CE snapshot, while the
+  real pre-117 material is unglamorous Augustan/Julio-Claudian/Flavian infrastructure. Leptis
+  Magna's Arch of Trajan (dedicated 110 CE, seven years before Trajan's death) is the rare case of
+  a famous monument that's also a tight snapshot-date anchor.
 
 ## Shipped (moved from above; newest on top)
 
