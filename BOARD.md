@@ -1055,7 +1055,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       than adding new cross-component state for a Sites-panel door. Verified with Playwright at
       1280×800 light and 375×812 dark, plus the guided-tour door's click-through (modal closes,
       real tour list opens).
-- [ ] `[03-P2-8]` **`compare-today`** `polish` — Satellite/modern toggle for the viewport.
+- [~] `[03-P2-8]` **`compare-today`** `polish` — Satellite/modern toggle for the viewport. —
+      claimed by cloud shift (2026-08-25 Shift 3), 2026-08-25 13:00.
 - [x] `[13-P2-8]` **`og-images`** `illustrate` — Done 2026-08-25 by a cloud shift. Every
       `/place/[slug]` (628 POIs) and `/site/[slug]` (40 sites) page now gets a real, generated
       1200×630 social card via Next's `opengraph-image.tsx` file convention — category-colored
