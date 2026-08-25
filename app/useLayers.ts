@@ -38,7 +38,8 @@ export type LayerGroupId =
   | "death-rituals"
   | "ethnic-pockets"
   | "wind-currents"
-  | "fauna-sourcing";
+  | "fauna-sourcing"
+  | "satellite";
 
 /** `base: true` marks the five groups that make up the map you see on first load — the
  * equivalent of Google's default basemap. Everything else is a thematic overlay and starts
@@ -52,6 +53,10 @@ export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: strin
   { id: "places", label: "Cities & towns", mapLayerIds: ["places-dot", "places-label-major", "places-label-minor"], base: true },
   // No native map layers — app/PoiMarkers.tsx reads this group's visibility directly.
   { id: "pois", label: "Landmarks", mapLayerIds: [], base: true },
+  // Modern satellite imagery under the ancient overlay — [03-P2-8] compare-today. A raster
+  // basemap swap, not a GeoJSON overlay, but it follows the same lazy-load/off-by-default
+  // pattern as every other thematic group here.
+  { id: "satellite", label: "Satellite (today)", mapLayerIds: ["satellite-raster"] },
   { id: "road-stations", label: "Road stations", mapLayerIds: ["road-stations"] },
   // People/event markers are HTML overlays (app/PeopleMarkers.tsx), not native map layers — that
   // component reads this same group's boolean directly via useLayers() to decide whether to

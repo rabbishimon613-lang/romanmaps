@@ -1177,6 +1177,34 @@ export default function Map() {
             if (map) restackThematicLayers(map);
           });
 
+        // [03-P2-8] Satellite (today) — a raster basemap swap, not a GeoJSON overlay. Esri World
+        // Imagery, free and keyless. Inserted below "roads-secondary" (already on the map by this
+        // point, added earlier in the same load chain) so it sits above the opaque land/sea/
+        // province fills — otherwise those solid colors would hide it completely — but underneath
+        // every road, place label and POI pin, so the ancient overlay still reads as an overlay
+        // on top of the real modern landscape rather than replacing it. Not part of
+        // THEMATIC_LAYER_ORDER: it's a basemap layer, not a thematic one, and it only ever needs
+        // placing once relative to "roads-secondary" — restacking the thematic layers above it
+        // never has to move it again.
+        registerThematic("satellite", async () => {
+          if (!cancelled && map && !map.getSource("satellite")) {
+            map.addSource("satellite", {
+              type: "raster",
+              tiles: [
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+              ],
+              tileSize: 256,
+              maxzoom: 19,
+              attribution: "Esri, Maxar, Earthstar Geographics",
+            });
+            map.addLayer(
+              { id: "satellite-raster", type: "raster", source: "satellite", paint: { "raster-opacity": 1 } },
+              map.getLayer("roads-secondary") ? "roads-secondary" : undefined,
+            );
+            kick();
+          }
+        });
+
         // Phase 6: Road stations (mansiones/mutationes/stationes) — small square markers, dim
         // gray, deliberately not shaped like the round POI pins so the road network's own rhythm
         // reads distinctly from city/landmark POIs. Hover for name/road/distance tooltip.

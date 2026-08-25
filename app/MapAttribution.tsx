@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useIsMobile } from "./useIsMobile";
+import { useLayers } from "./useLayers";
 
 const SOURCES: { label: string; href: string }[] = [
   { label: "Itiner-e", href: "https://itiner-e.org" },
@@ -10,6 +11,10 @@ const SOURCES: { label: string; href: string }[] = [
   { label: "Natural Earth", href: "https://www.naturalearthdata.com/" },
 ];
 
+// [03-P2-8] Only credited while the Satellite (today) layer is actually switched on — crediting
+// an imagery provider whose tiles aren't on the map would be misleading the other 99% of the time.
+const SATELLITE_SOURCE = { label: "Esri World Imagery", href: "https://www.esri.com/" };
+
 /** Bottom-of-map data-credit row. On desktop it's a thin strip inset past the LeftRail. On a
  * phone the full credit line was a solid white band across the bottom of the screen — wider and
  * louder than anything Google shows — so it collapses to a small "Data ©" chip in the corner
@@ -17,8 +22,10 @@ const SOURCES: { label: string; href: string }[] = [
 export default function MapAttribution() {
   const isMobile = useIsMobile();
   const [expanded, setExpanded] = useState(false);
+  const layers = useLayers();
 
-  const links = SOURCES.map((s, i) => (
+  const sources = layers.satellite ? [...SOURCES, SATELLITE_SOURCE] : SOURCES;
+  const links = sources.map((s, i) => (
     <span key={s.href}>
       {i > 0 ? " · " : null}
       <a
