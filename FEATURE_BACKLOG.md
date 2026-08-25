@@ -604,6 +604,33 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
   Magna's Arch of Trajan (dedicated 110 CE, seven years before Trajan's death) is the rare case of
   a famous monument that's also a tight snapshot-date anchor.
 
+## New ideas spotted this shift (2026-08-25, cloud shift — Brescia/Milan/Rimini/Luni, satellite toggle)
+
+- [ ] **`sites.ts`'s zero-`pois.geojson`-coverage list is now empty.** Brescia, Milan, Rimini and
+      Luni (the last four) all shipped curated POIs this shift — 22 features total. Every one of
+      the 40 `sites.ts` street-level sites now has at least some curated `pois.geojson` coverage.
+      The next natural depth pass is topping up the 9 of these 22 that shipped `image_url: null`
+      (Republican Sanctuary of Brescia, Milan's forum, Rimini's Domus del Chirurgo and forum,
+      Luni's Capitolium, walls, forum and House of the Mosaics) — a pure image-search top-up, same
+      shape as prior shifts' gymnasia/villae/substrate image gaps.
+- [ ] **Coordinates for this shift's 22 new features are site-center estimates, not per-building
+      geocoding.** The two research agents (background, WebSearch-only) returned properties —
+      name, dates, notes, sources, image — but no geometry, so coordinates were hand-placed near
+      each site's known real-world layout (forum/temple/theatre clusters, gate/bridge/arch
+      locations) from general knowledge rather than a fresh per-building coordinate lookup.
+      Reasonable at the current marker scale (all `confidence: medium` except the two Rimini
+      landmarks well-known enough to rate `high`), but a future shift with map/satellite-imagery
+      access could tighten these.
+- [ ] **`[03-P2-8]` compare-today (Satellite/modern toggle) shipped** — a new "Satellite (today)"
+      layer group, off by default, adds an Esri World Imagery raster layer below the roads/POI
+      layers when switched on. Tile pixels couldn't be confirmed rendering in this sandbox
+      (`server.arcgisonline.com` joins the standing list of egress-blocked hosts —
+      `demotiles.maplibre.org`, `commons.wikimedia.org`, `overpass-api.de` — all return the same
+      proxy 403); the source/layer/z-order logic was verified directly via the map instance
+      instead. A future shift with unblocked network (or testing against the real deployed site)
+      should do a real visual check that the imagery actually renders and isn't, say, silently
+      404ing per-tile.
+
 ## Shipped (moved from above; newest on top)
 
 - 2026-08-24 — a cloud shift: Appearance / theme toggle (System / Light / Dark in the
