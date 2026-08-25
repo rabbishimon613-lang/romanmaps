@@ -19799,6 +19799,60 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.0396,
+          37.4415
+        ]
+      },
+      "properties": {
+        "id": "poi_amphitheatre_italica",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum Italicense",
+        "name_english": "Amphitheatre of Italica",
+        "province": "Baetica",
+        "modern_location": "Santiponce, Spain",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "One of the largest arenas anywhere in the Roman world seated roughly 25,000 spectators, with its lower tiers cut straight into the hillside to save on masonry. Hadrian commissioned it as part of a sweeping expansion of his home city after becoming emperor. Trajan, also born in Italica, never saw it: construction fell entirely within Hadrian's reign, which began the very day this map is set.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_amphitheatre_of_Italica",
+          "https://whc.unesco.org/en/tentativelists/6376/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.0405,
+          37.4423
+        ]
+      },
+      "properties": {
+        "id": "poi_traianeum_italica",
+        "category": "temple",
+        "name_latin": "Traianeum",
+        "name_english": "Temple of the Deified Trajan",
+        "province": "Baetica",
+        "modern_location": "Santiponce, Spain",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Hadrian raised this temple at the center of a vast colonnaded square to worship his predecessor as a god, dressing it in polychrome marble hauled in from imperial quarries across the empire. Only the foundations and scattered sculptural fragments survive above ground today, but they trace out an unusually imposing footprint. A temple to a Divus cannot predate its subject's death and deification, so this one only rose after Trajan died on this map's own snapshot date.",
+        "sources": [
+          "https://pleiades.stoa.org/places/627230788",
+          "https://whc.unesco.org/en/tentativelists/6376/"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
