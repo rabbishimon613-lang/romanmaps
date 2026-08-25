@@ -20232,7 +20232,10 @@
           "https://www.domusrimini.com/eng/the-surgeon-house/",
           "https://www.historyhit.com/locations/the-surgeons-house-rimini/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Domus del chirurgo, mosaico di 'Orfeo tra gli animali'.jpg?width=800",
+        "image_credit": "Orpheus mosaic, Domus del Chirurgo, Rimini · Wikimedia Commons",
+        "image_alt": "Roman floor mosaic of Orpheus playing the lyre surrounded by animals, from the Domus del Chirurgo in Rimini"
       }
     },
     {
@@ -20460,7 +20463,10 @@
           "https://www.romanports.org/en/articles/ports-in-focus/811-luna-english.html",
           "https://thatsliguria.com/en/luni-the-ancientroman-town-in-liguria/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Luna Forum Nord.jpg?width=800",
+        "image_credit": "Forum remains, Luni archaeological park · photo by Mediatus, Wikimedia Commons (CC BY-SA 3.0)",
+        "image_alt": "View of the excavated Roman forum area at the Luni archaeological park"
       }
     },
     {
