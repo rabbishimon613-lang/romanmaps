@@ -1055,8 +1055,22 @@ to prevent. Building locally to *test* your own work is expected and fine.
       than adding new cross-component state for a Sites-panel door. Verified with Playwright at
       1280×800 light and 375×812 dark, plus the guided-tour door's click-through (modal closes,
       real tour list opens).
-- [~] `[03-P2-8]` **`compare-today`** `polish` — Satellite/modern toggle for the viewport. —
-      claimed by cloud shift (2026-08-25 Shift 3), 2026-08-25 13:00.
+- [x] `[03-P2-8]` **`compare-today`** `polish` — Done 2026-08-25 by cloud shift (Shift 3). New
+      "Satellite (today)" layer group (`app/useLayers.ts`), off by default and lazy-loaded
+      through the standard `registerLayerLoader` pattern. Switching it on adds an Esri World
+      Imagery raster source in `app/Map.tsx`, inserted just below `roads-secondary` so it covers
+      the opaque land/sea/province fills but sits under every road, label and POI pin — the
+      ancient overlay reads as an overlay on the real modern landscape rather than replacing the
+      whole map. `app/MapAttribution.tsx`'s visible credit chip now lists "Esri World Imagery"
+      only while the layer is actually on. Verified with Playwright against the dev server: the
+      checkbox correctly adds the source/layer, sets visibility, and lands at the right
+      z-position (index 15, directly below roads-secondary at 16), stable across other overlay
+      toggles since it's deliberately left out of `THEMATIC_LAYER_ORDER`. Screenshotted at
+      1280×900 light and 375×812 dark. **Known sandbox limitation, not a product bug**: actual
+      tile pixels couldn't be confirmed rendering here — `server.arcgisonline.com` returns the
+      same egress-proxy 403 already documented for `demotiles.maplibre.org`/
+      `commons.wikimedia.org`/`overpass-api.de` in this environment; expected to render normally
+      on the real deployed site, which isn't behind this sandbox's proxy.
 - [x] `[13-P2-8]` **`og-images`** `illustrate` — Done 2026-08-25 by a cloud shift. Every
       `/place/[slug]` (628 POIs) and `/site/[slug]` (40 sites) page now gets a real, generated
       1200×630 social card via Next's `opengraph-image.tsx` file convention — category-colored
