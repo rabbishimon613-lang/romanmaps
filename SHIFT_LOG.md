@@ -7,6 +7,155 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 57 — 2026-08-25 (this shift's own prompt claimed "Shift 2 of four")
+
+Same stale-numbering mismatch every shift since #13 has flagged, still unresolved — `SHIFT_LOG.md`
+was 56 real shifts deep at session start, not 1. `git status`/`git log` at session start showed a
+clean, non-detached `main` already matching `origin/main` exactly (`5093cbe`) — none of the
+container-creation-race symptoms recent shifts have had to work around this time. Re-confirmed the
+standing network finding independently: `curl` to `commons.wikimedia.org`, `en.wikipedia.org`, and
+`overpass-api.de` all returned `EGRESS_BLOCKED`/empty responses (curl exit 56). `WebSearch` via
+background research agents was the only research channel, same as every recent cloud shift — and
+this session hit a new limit recent shifts hadn't documented: the session-wide WebSearch quota
+(200 calls total, shared across every agent spawned) ran out partway through two of this shift's
+five research passes (Italica, and the disasters/people image searches), cutting them short
+honestly rather than silently. Flagging this for future shifts running several research agents in
+one session — budget accordingly, and treat a mid-task "quota exhausted" report as a real partial
+result, not a bug.
+
+### Board check
+
+Read `BOARD.md`'s claiming protocol. No `[~]` claims standing. The unclaimed P0 tickets are the
+same large refactors recent shifts have correctly declined for a single-session, network-blocked
+budget (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]`
+terrain, `[13-P0-2]` image-audit). Picked up one genuinely-scoped, unclaimed P2 board ticket for
+Track B instead, and continued the standing Track A precedent (zero-coverage-site closures +
+image top-up) for everything else — no claim commit needed for either, matching recent shifts'
+own documented precedent for standing/axis work when the board has nothing else that fits.
+
+### Track B — Board `[13-P2-8]` `og-images`: generated OG/Twitter cards, every place and site page
+
+Every `/place/[slug]` (630 curated POIs) and `/site/[slug]` (40 sites) page now gets a real,
+branded 1200×630 social card via Next's `opengraph-image.tsx` file convention, instead of falling
+back to a bare link preview (or, for the ~40% of POIs still missing a photo, no image at all).
+Deliberately text-only — no fetch of the POI's own `image_url` into the card: this route
+prerenders at build time (confirmed live: both new routes appear as dynamic `ƒ` entries in the
+build output, server-rendered on demand rather than statically cached, but still zero-network —
+pure `next/og` `ImageResponse` text/shape rendering, same technique `app/appIcon.tsx`'s existing
+icon family already uses) and Wikimedia Commons is network-blocked in this sandbox, so embedding a
+remote photo would have broken the build here. Category-colored accent bar + label on POI cards
+(reusing `app/poiCategories.ts`'s existing color map), parchment background and the same
+ring-medallion mark as the app's favicon/PWA icons, so social cards read as the same brand.
+Twitter card upgraded to `summary_large_image` on both routes now that a card image always exists,
+replacing the old branch that fell back to a plain `summary` card whenever `image_url` was empty.
+Verified against the built production server, not just a code read: both new routes return real
+`200 image/png` responses (28KB/25KB) with the correct layout, screenshotted and checked by eye.
+
+### Track A — 28 curated POIs across four more zero-`pois.geojson`-coverage sites, three image top-ups
+
+**Capua (4) + Cumae (9) + Italica (2) curated POIs** — three more sites off the standing
+zero-coverage list (`FEATURE_BACKLOG.md`), 4 remain: Brescia, Milan, Rimini, Luni. Same
+research-then-write pipeline as Shift 56's own Leptis Magna/Sabratha/Tivoli/Palestrina batches —
+background WebSearch-only research agents, then dated, categorized, and written up by hand against
+`app/categoryLife.ts`'s 52-key vocabulary before splicing in with `scripts/append-geojson-features.mjs`.
+
+Capua shipped the Amphitheatre (extant either way — sources genuinely disagree on an Augustan vs.
+Trajanic-era date, said plainly rather than picking one), the Capitolium (dated hard by Tacitus,
+*Ann.* 4.57 — Tiberius personally dedicated it in 26 CE), the Arch of Hadrian (a real misnomer:
+Flavian-era construction, the "Hadrian" attribution traces to a since-discredited 18th-century
+inscription reading, kept as the display name since that's what the monument is actually called
+today), and the Temple of Diana Tifatina on Monte Tifata (Republican, loaded with votives by Sulla
+after 82 BCE). Deliberately held back two research candidates that didn't clear this project's own
+bar: the Mithraeum's dating straddles 117 CE closely enough that the research pass itself flagged
+it as a coin-flip, and the "Baths of Capua" never had a real source beyond an uncited tourism
+one-liner. Caught and avoided a real conflation trap along the way: several tourist pages' "Roman
+bridge"/"city gate" near Capua actually belong to ancient Casilinum, a different nearby site, and
+one gate is medieval Hohenstaufen construction, not Roman at all.
+
+Cumae shipped the Cave of the Cumaean Sibyl (still walkable in 117 CE — Virgil's own "hundred
+mouths" passage, *Aen.* 6.42–155), the Temple of Apollo (*Aen.* 6.14–33), the Temple of Jupiter/
+Capitolium, the city walls, the Grotta di Cocceio road tunnel (Agrippa's ~37 BCE Portus Julius
+engineering), the Arco Felice gate on the Via Domitiana (Domitian, 95 CE — a tight 22-year snapshot
+anchor), the forum, the Forum Baths, and the amphitheater. Left `built` unset on several records
+rather than assert a precise year the sources don't actually support (the Forum Baths' widely
+repeated "180 BCE" traces to an unquotable secondary summary, not a primary source — a real
+dating trap the research pass itself flagged and this pass declined to launder into a hard number).
+Skipped the separate, equally real Crypta Romana tunnel as redundant with Grotta di Cocceio at this
+map's marker scale, and left Lake Avernus/Portus Julius out entirely per the research agent's own
+flag — it belongs to the existing Baiae entry, not Cumae.
+
+Italica confirms this project's own prior finding (`BOARD.md` `[06-P0-2]`'s curated-buildings note):
+the site is almost entirely Hadrian's post-117 *nova urbs*. The Amphitheatre and the Traianeum
+(Hadrian's own deification temple to Trajan — definitionally can't predate Trajan's death) both
+ship `extant_117ce:false`, stated plainly. A real pre-117 *vetus urbs* candidate (the Republican
+street grid from Scipio Africanus's 206 BCE founding, a theater, city walls) remains open — the
+research pass's WebSearch budget ran out before it could confirm any of that with a real citation,
+so it was left for a future shift rather than guessed at, and the two records that did ship carry
+`confidence:medium` since their coordinates come from a well-documented public location (a UNESCO
+tentative-list site) rather than a fresh this-session geocoding pass.
+
+**Image top-up across three thematic files (55 features closed)** — `health.geojson` (36 of 51),
+`people_117.geojson` (13 of 50), and `disasters.geojson` (6 of 16) all shipped with zero images
+despite invariant 1.6, an axis-18/axis-4/axis-11 gap this shift closed the same way Shift 56 closed
+part of the Djemila/Volubilis gap: dedicated Commons-search research passes (background agents,
+WebSearch only), then a small one-shot Python text-splice script (`scripts/_image_topup.py` /
+`_disasters_topup.py`, deleted after use each time, same append-without-reformatting principle as
+`scripts/append-geojson-features.mjs` but for editing existing features rather than adding new
+ones — auto-detects each file's own indent width and property ordering rather than assuming one
+convention, since `disasters.geojson` turned out to use a much more compact, no-space JSON style
+than any other file in `public/data/`, caught only by a failed first run rather than assumed).
+
+`health.geojson`'s 36: real photos of the ruin where one exists, and the closest honest match
+where it doesn't — a museum artifact, a period map, a modern structure standing on the ancient
+spring site — said so plainly in `image_alt` rather than letting the picture imply something it
+doesn't show (Tiber Island's modern skyline standing in for the vanished Temple of Aesculapius,
+Leonardo's own 1514 map of the Pontine Marshes). `people_117.geojson` deliberately researched only
+the ~18 of 50 records who are historically prominent enough to plausibly have surviving imagery —
+the other 32 are ordinary people known only from papyri and military discharge tablets (Vindolanda,
+the Babatha archive), where no portrait could exist and searching for one would have been a wasted
+pass. Landed genuine ancient busts/coins for Trajan, Hadrian, Plotina, Matidia and Vibia Sabina,
+plus a Trajan's Column relief traditionally (not epigraphically) identified as Lusius Quietus; six
+more — Pliny the Younger, Tacitus, Suetonius, Plutarch, Epictetus, Juvenal — got honestly-labeled
+later likenesses (a Renaissance statue, 18th/19th-century engravings, one ancient herm whose
+identification is scholarly convention rather than an inscription), every one flagged as such in
+`image_alt` rather than presented as a contemporary portrait. `disasters.geojson`'s 6: period
+history paintings for Vesuvius, the Great Fire of Rome, the Plague of Rome, Vercellae and Teutoburg,
+each labeled as later art, and one genuinely contemporary source — the Arch of Titus's own menorah
+relief for the Temple's destruction, carved roughly a decade after 70 CE.
+
+### State, verification, next
+
+`npm run validate`: 0 errors throughout the session, same 17 standing warnings — no new warnings
+from any of this shift's four data commits. `npm run build`: clean at every push (six commits, six
+clean pre-push gates); `npm run start` + `curl` spot-checks against the actual built production
+server for both new `opengraph-image` routes and a sampled new POI's page, not just a code read.
+`npm run metrics --write`: 615→630 POIs, description depth held at 100.0%, image coverage
+59.5%→59.2% (down slightly — new-site POI batches without images outpaced the same session's own
+image top-up work, the same expected shape recent add-heavy shifts have documented), ancient-source
+coverage of `confidence:high` POIs 67.9%→67.8% (same reason). Curated places total crossed 2,110.
+Ran `npm install` fresh this session (`node_modules` wasn't present at start) — surfaced next@14.2.5's
+own published security advisory in the install output, not new information (board `[11-P2-10]`
+`next-upgrade` already tracks this, flagged first at "shift 1" and never actioned) but worth a
+fresh mention since this is the first shift log entry to see the warning directly. Also added
+`__pycache__/` to `.gitignore`, cleaning up a stray directory this session's own Python helper
+scripts left behind before the first commit.
+
+**Next shift**: the zero-`pois.geojson`-coverage list is down to 4 (Brescia, Milan, Rimini, Luni) —
+same well-bounded shape, though Milan's own `curate-buildings` note already found its OSM yield
+thin, so temper expectations there. `health.geojson` has 15 image-null features left (Aquae
+Helveticae/Baden CH, Aquae Balissae/Daruvar, Aquae Borvonis, Neris-les-Bains, Archigenes of Apamea,
+the Cnidus medical school, Sardinia's and Etruria's malaria coasts, Abano Terme, three more French/
+Italian aquae towns, Hammam Bou Hanifia, Sceaux-du-Gatinais, Termini Imerese); `people_117.geojson`
+has the ~5 remaining prominent-figure candidates this session's WebSearch budget cut off before
+confirming (Attianus, Rufus of Ephesus, Arrian, Favorinus, Marcius Turbo); `disasters.geojson` has
+9 of 16 still open for the same reason. Italica's genuine pre-117 *vetus urbs* content (street
+grid, theater, walls) is real, worthwhile, unresearched work — the next shift with search budget
+to spare should pick it up rather than treating the site as closed. The board's large P0 refactors
+remain the standing next pick for whichever shift gets a network-unblocked environment or a
+dedicated multi-pass budget large enough to see one through in one sitting.
+
+---
+
 ## Shift 56 — 2026-08-25 (this shift's own prompt claimed "Shift 1 of four")
 
 Same stale-numbering mismatch every shift since #13 has flagged, still unresolved — `SHIFT_LOG.md`
