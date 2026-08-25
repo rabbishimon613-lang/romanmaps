@@ -7,6 +7,167 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 59 — 2026-08-25 (this shift's own prompt claimed "Shift 4 of four")
+
+Same stale-numbering mismatch every shift since #13 has flagged — `SHIFT_LOG.md` was 58 real
+shifts deep at session start, not 3. `git status` showed a clean, detached `HEAD` one commit
+behind `origin/main`; `git checkout main && git pull --rebase` fast-forwarded cleanly to
+`origin/main` (`4ca2be5`), no lost-work scare. Confirmed the standing network finding
+independently: direct `curl` to `commons.wikimedia.org`, `en.wikipedia.org`, and
+`overpass-api.de` all returned `CONNECT tunnel failed, response 403` from the egress proxy —
+`WebSearch` inside background `Agent` calls remains the only working research channel, same as
+every recent shift has documented. `npm install` was needed before anything else — `node_modules`
+wasn't present at session start (`next: not found`); installed clean, no dependency changes,
+discarded the incidental `package-lock.json` normalization diff (`hasInstallScript`/`libc` field
+churn from a newer local npm) rather than commit it, per the "don't touch package.json/deps"
+guardrail.
+
+### Board check
+
+No `[~]` claims standing at session start. All unclaimed P0 tickets are the same large,
+network-or-spec-blocked refactors recent shifts have correctly declined (`[12-P0-1]` merge-themes,
+`[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terrain, `[13-P0-2]` image-audit).
+Found one genuinely-scoped, unclaimed `polish` ticket — `[10-P1-3]` thematic-rooms — and shipped
+it as Track B. `[06-P2-6]` priority-cities is the only unclaimed P2 `add`, and — as roughly a
+dozen prior shifts have logged — its literal scope (Overpass-fetched street-level site pages) is
+genuinely blocked here. Did the part that doesn't need Overpass instead, for both `[06-P2-6]`'s
+eight named cities and the brief's Axis 1 Gallia queue, as Track A.
+
+### Track B — board `[10-P1-3]` `thematic-rooms`
+
+Six curated one-click overlay bundles — Power, Movement, Money, Belief, Knowledge, Danger — over
+the 30 thematic (non-base) layer groups, one clean partition with no group left out and none
+repeated (`ROOMS` in `app/useLayers.ts`). Rendered as a chip row in the layers panel, above the
+existing "Overlays" checkbox list. The ticket's own wording said "replacing" that list; chose not
+to — collapsing the ability to hand-pick two unrelated layers felt like a real loss for a UI that
+already has the actual problem (a 30-row checkbox wall) solved by the rooms themselves, so this
+ships additive instead, and says so on the board. Clicking a room isolates its five layers and
+clears every other overlay — the same "click to isolate, click again to clear" interaction
+`CategoryChips.tsx` already uses for POI categories, so no new interaction pattern for a returning
+user to learn. `satellite` (the `[03-P2-8]` compare-today raster basemap) stays outside every room
+since it's a basemap swap, not a theme.
+
+Verified with Playwright against the dev server at both 375×812 dark and 1280×900 light (screens
+captured, not just a code read): the chip row renders under Base Map, the active room highlights
+using `var(--on-accent)`/`var(--accent)` (no literal colors — invariant 0's chrome-token rule),
+the Overlays counter and Clear button track the room's state live, a second click on the active
+room returns cleanly to zero overlays, and toggling Power actually rendered the expected mints/
+political-apparatus POI clusters on the live map, not just a checkbox state change. `npm run
+build` and `npm run validate` both clean before every push.
+
+### Track A — priority cities (8 cities from `[06-P2-6]`) + Gallia queue (5 cities, Axis 1)
+
+29 + 26 = **55 curated `pois.geojson` features** across 13 cities this shift, all sourced,
+individually dated for the 117 CE snapshot, and in Google Business voice — the single largest
+data batch logged so far this run. Two research passes, four background `Agent` calls total (plus
+one narrow follow-up for Commons image filenames), each `WebSearch`-only per the standing network
+finding.
+
+**Batch 1 — the eight `[06-P2-6]` cities** (Alexandria, Carthage, Antioch, Caesarea Maritima,
+Londinium, Lugdunum, Tarraco, Pergamon): checked existing `pois.geojson` coverage before
+researching anything, and it mattered — several of these eight already carried thin coverage from
+earlier shifts (Alexandria 4 POIs, Londinium 4, Lugdunum 4, Carthage 2-3), so the research briefs
+were scoped to find *other* monuments, not re-cover the same ground. Caesarea Maritima had zero
+real coverage — the one existing "Caesarea" POI (`poi_villa_juba_caesarea`) turned out to be a
+*different* Caesarea, in Mauretania at modern Cherchell, Algeria — so it got a full 6-feature set
+(Sebastos harbor, Temple of Roma and Augustus, theatre, hippodrome, Herod's promontory palace, the
+high-level aqueduct).
+
+Real 117 CE dating traps caught and shipped `extant_117ce:false` rather than hedged: Alexandria's
+Pompey's Pillar (Diocletian, 297 CE — the "Pompey" name is a documented misreading of a different
+name) and the Kom el-Shoqafa catacombs (2nd-c. CE); Carthage's Antonine Baths and Roman theatre
+(both mid-2nd-c. CE); Antioch's Island Palace (3rd c. CE, Gallienus/Diocletian); Londinium's
+Mithraeum and city wall (both post-117, and already correctly dated that way by the *existing*
+Cripplegate Fort and Forum/Basilica entries this shift found and left alone rather than
+duplicating); Tarraco's amphitheatre (Hadrianic, ~122 CE); Pergamon's Temple of Trajan — a real
+find worth flagging for whoever writes copy next — literally an active building site on the day
+Trajan died, only finished a decade later by Hadrian as his adoptive father's memorial. Lugdunum's
+Odeon shipped `false` on a genuine scholarly dating split clustered right around 100-120 CE, per
+the brief's explicit "when in doubt, false" rule rather than picking a side. Antioch's Tyche statue
+and the Great Colonnaded Street both carry the 13 December 115 CE earthquake that nearly killed
+Trajan himself, twenty months before this map's snapshot — a good pair of entries for tying
+Antioch into the empire's actual news of the year (Axis 4/11 territory, even though they're filed
+as ordinary POIs).
+
+22 of 29 shipped with a Wikimedia Commons `image_url`; 7 shipped without rather than risk a wrong
+filename (same standard as shift 28's Karla lake). A dedicated follow-up `Agent` call, narrowly
+scoped to just those 7 missing images, recovered 6 of the 7 with confirmed filenames — only the
+Island Palace of Antioch (which never stood in 117 CE anyway, and has no excavated remains to
+photograph) shipped unillustrated.
+
+One small side fix found along the way: `METRICS.md`'s "categories with a what-happened-here
+paragraph" line flagged `bath` and `mithraeum` as the only 2 of 54 categories missing one. `bath`
+turned out to be this shift's own typo — the new Antonine Baths entry used `category:"bath"`
+instead of the 15-entries-strong existing convention `category:"bathhouse"` — retagged rather than
+adding a second, functionally identical category. `mithraeum` was a real gap (no prior POI had
+ever used it): wrote its paragraph in `app/categoryLife.ts`'s established present-tense/117-CE
+voice, initiation-cult detail (seven ranks, closed membership, no windows) rather than generic
+temple filler.
+
+**Batch 2 — Gallia queue** (Nemausus/Nîmes, Arelate/Arles, Vienna/Vienne, Narbo Martius/Narbonne,
+Massilia/Marseille), the brief's explicit Axis 1 regional priority. Nîmes and Arles already had
+thin single-landmark coverage (Maison Carrée, both amphitheatres, the Alyscamps necropolis) from
+earlier shifts — checked and left alone, researched other monuments instead. Vienne, Narbonne, and
+Massilia had effectively nothing before this batch.
+
+More dating traps, same honest treatment: Arles's Obelisk (4th-c. CE, moved from the Circus of
+Arles), Circus of Arles itself (149 CE, Antoninus Pius, not Trajan), and Baths of Constantine
+(4th c. CE) all `false`; Narbonne's Capitolium is the cleanest find of the batch — both competing
+scholarly datings for its construction land *after* Hadrian's accession on 11 August 117 CE, the
+exact day this map is set, a second independent echo of the Pergamon Trajaneum pattern from batch
+1. Two genuinely unsettled dates — the Pyramid of Vienne (one source strand puts the circus/
+pyramid after Trajan's reign, another during it) and the Roman Docks of Massilia (sources only
+give "2nd century CE," a window that straddles the cutoff) — both shipped `false` per the "when in
+doubt" rule, with the live scholarly disagreement stated plainly in the `notes` field rather than
+smoothed over. Massilia's Hellenistic walls and necropolis shipped `extant_117ce:true` on their
+real merits — Caesar besieged the city and stripped its fleet and most of its territory in 49 BCE
+for backing Pompey, but never razed it, so 6th–4th-c.-BCE Greek-built structures correctly count as
+standing in 117 CE; the political history (autonomous Greek ally city → punished but intact Roman
+subject city) is stated in the copy rather than glossed. 12 of 26 shipped with a confirmed Commons
+image; the rest omitted, several explicitly because the research agent's own `WebSearch` budget
+ran out mid-lookup before it could verify a filename — flagged honestly in its own report rather
+than guessed.
+
+`npm run validate`: clean both times, same 17 pre-existing warnings, 0 new — notably 0 new
+cross-file name collisions despite adding five tightly-clustered city centers' worth of points.
+`npm run build`: clean both times (55 new `/place/[slug]` routes total). One new page
+(`caesarea_maritima_sebastos_harbor`) spot-checked live against the dev server rather than just
+read from code: hero image credit, sources list, and the proximity-ranked "Nearby" card row all
+rendered correctly, and the new records cluster sensibly against each other and the pre-existing
+Judaea legion-fortress POI at the expected real-world distances (58m to the temple platform next
+door, 2.4km to the aqueduct, 27km to the fortress at Legio/Caparcotna).
+
+`METRICS.md` refreshed twice (after each batch) via `npm run metrics -- --write`: 652 → 707 POIs
+this shift (+55, +8.4%), image coverage 61.1% → holding steady since the batches' own image ratios
+tracked the file average closely.
+
+### Next shift should pick up
+
+- **`[06-P2-6]` priority-cities stays open and blocked** for whoever gets an unblocked environment
+  or a dedicated Overpass-fetch pass — the actual street-level `sites.ts` wiring (bbox → Overpass
+  fetch → categorize → wire) is still real, un-started work for all 8 named cities plus the 5
+  Gallia cities this shift covered with POIs only. The curated-POI layer this shift and prior
+  shifts have built is real and valuable, but it is not a substitute for street-level building
+  data, and the board ticket should stay open rather than be quietly declared "done enough."
+- **Coordinate tightening.** Both this shift's batches used per-monument estimates (some flagged
+  by the research agents themselves as unverified pin locations, e.g. Porte de France and the
+  Cryptoporticus at Arles, the Vienne bridge and forum) rather than a surveyed geocoding pass —
+  same standard recent shifts have used for comparable additions, but a real backlog item for
+  whoever wants to tighten precision later.
+- **Continue the Axis 1 Gallia queue** the brief lays out: Autun, Reims, Fréjus, Saintes remain
+  untouched (Fréjus has one existing naval-base POI, `poi_naval_forum_iulii`, but no city-monument
+  coverage yet). Britannia is next after Gallia per the brief's regional order.
+- **`[13-P1-4]` engravings** (period engravings/reconstructions for the 40 street-level sites and
+  top 100 POIs) is still a standing, unclaimed `illustrate` ticket with a working WebSearch-based
+  research pattern proven twice more this shift.
+- Network block reconfirmed one more time for the record: `overpass-api.de`,
+  `commons.wikimedia.org`, `en.wikipedia.org` all `CONNECT tunnel failed, response 403` via direct
+  `curl`; `WebSearch` inside background `Agent` calls stayed reachable throughout and is what every
+  research pass this shift used, with no quota exhaustion this time (4 agents, well under whatever
+  the shared per-session cap is).
+
+---
+
 ## Shift 58 — 2026-08-25 (this shift's own prompt claimed "Shift 3 of four")
 
 Same stale-numbering mismatch every shift since #13 has flagged — `SHIFT_LOG.md` was 57 real
