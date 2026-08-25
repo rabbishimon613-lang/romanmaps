@@ -234,7 +234,10 @@
      "https://en.wikipedia.org/wiki/Aquae_Helveticae",
      "https://blog.nationalmuseum.ch/en/2022/03/the-baths-at-baden-switzerlands-first-tourist-hotspot/"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Archäologische Arbeiten im Bäderviertel.JPG?width=800",
+    "image_credit": "Archaeological excavation in the Bäderviertel, Baden · Wikimedia Commons",
+    "image_alt": "Archaeological dig in Baden's bath quarter, on the site of Aquae Helveticae"
    }
   },
   {
@@ -311,7 +314,10 @@
      "https://en.wikipedia.org/wiki/Aquae_Balissae",
      "https://www.hotspringsguides.com/hot-springs/aquae-balissae-daruvar-croatia"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Daruvarske toplice.jpg?width=800",
+    "image_credit": "Daruvarske toplice spa · Wikimedia Commons",
+    "image_alt": "The modern Daruvar spa built over the ancient mineral springs of Aquae Balissae"
    }
   },
   {
@@ -335,7 +341,10 @@
      "https://en.wikipedia.org/wiki/Bourbonne-les-Bains",
      "https://en.wikipedia.org/wiki/Borvo"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vestiges des bains romains.JPG?width=800",
+    "image_credit": "Roman bath ruins, Bourbonne-les-Bains · Wikimedia Commons",
+    "image_alt": "Excavated remains of the Gallo-Roman baths at Bourbonne-les-Bains"
    }
   },
   {
@@ -359,7 +368,10 @@
      "https://en.wikipedia.org/wiki/N%C3%A9ris-les-Bains",
      "https://en.wikipedia.org/wiki/Aquae_Neri"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Théâtre-amphithéâtre gallo-romain (\"Parc des Arènes\") à Néris-les-Bains (France, Allier).jpg?width=800",
+    "image_credit": "Gallo-Roman amphitheatre, Néris-les-Bains · Wikimedia Commons",
+    "image_alt": "The amphitheatre at the Gallo-Roman spa town of Néris-les-Bains, part of the same ancient site as the baths"
    }
   },
   {
@@ -565,7 +577,10 @@
      "https://link.springer.com/article/10.1007/s00381-010-1271-2",
      "https://journals.sagepub.com/doi/10.1177/007327537801600103"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Knidos-Häfen.jpg?width=800",
+    "image_credit": "The twin harbours of ancient Knidos · Wikimedia Commons",
+    "image_alt": "The harbours of Knidos (Cnidus), Turkey, site of the rival Cnidian medical school"
    }
   },
   {
@@ -775,7 +790,10 @@
      "https://www.sciencedaily.com/releases/2017/07/170727103035.htm",
      "https://www.news.uzh.ch/en/articles/2017/Malaria_Sardinia.html"
     ],
-    "confidence": "low"
+    "confidence": "low",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fenicotteri sullo Stagno di Cabras al Tramonto.jpg?width=800",
+    "image_credit": "Stagno di Cabras wetland, Sardinia · Wikimedia Commons",
+    "image_alt": "A coastal lagoon on Sardinia's west coast, part of the historically malarial wetland belt"
    }
   },
   {
@@ -799,7 +817,10 @@
      "https://academic.oup.com/book/9850/chapter/157116505",
      "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12407210/"
     ],
-    "confidence": "low"
+    "confidence": "low",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Riserva naturale Diaccia Botrona, Grosseto.jpg?width=800",
+    "image_credit": "Diaccia Botrona wetland reserve, Grosseto · Wikimedia Commons",
+    "image_alt": "Modern remnant marshland in the Maremma, once part of Etruria's malarial coastal plain"
    }
   },
   {
@@ -1098,7 +1119,10 @@
     "sources": [
      "https://pleiades.stoa.org/places/246170"
     ],
-    "confidence": "low"
+    "confidence": "low",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Thermes2.jpg?width=800",
+    "image_credit": "Thermal baths building, Capvern-les-Bains · Wikimedia Commons",
+    "image_alt": "The modern spa at Capvern, on the site the Antonine Itinerary places as a station of the Convenae"
    }
   },
   {
@@ -1197,7 +1221,10 @@
     "sources": [
      "https://en.wikipedia.org/wiki/Aquae_Sirenses"
     ],
-    "confidence": "low"
+    "confidence": "low",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mascara Bouhanifia les baims 4.JPG?width=800",
+    "image_credit": "Hammam Bou Hanifia thermal baths · Wikimedia Commons",
+    "image_alt": "The modern hammam at Bou Hanifia, built over the Roman-era Aquae Sirenses springs"
    }
   },
   {
