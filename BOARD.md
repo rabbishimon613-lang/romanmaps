@@ -1596,3 +1596,29 @@ later will see every thematic layer still `visible` and can misdiagnose invarian
 15-35s this sandbox takes to settle before visibility reflects the real default-OFF state (see
 `FEATURE_BACKLOG.md` for the full note). Check the board fresh — don't assume this note is still
 current by the time you read it.
+
+- 2026-08-25 · `[06-P2-6]` priority-cities · cloud shift 59. Not claimed/closed — the ticket's
+  actual scope (Overpass-fetched street-level site pages for these 8 cities) is still blocked in
+  this sandbox, `overpass-api.de` returning the same proxy `403` every prior shift has hit. Did
+  the part that doesn't need Overpass instead: 29 real, dated, sourced `pois.geojson` monuments
+  across all 8 named cities (Alexandria, Carthage, Antioch, Caesarea Maritima, Londinium,
+  Lugdunum, Tarraco, Pergamon), researched via two parallel WebSearch-only background agents plus
+  a follow-up image-lookup pass. Checked existing coverage first — several of these 8 already had
+  thin `pois.geojson` presence from earlier shifts, so this added only what was missing. Caesarea
+  Maritima had zero real coverage (the one existing "Caesarea" POI is a different city, Caesarea
+  in Mauretania/Cherchell) and gets a full 6-feature set. Several genuine 117 CE dating traps
+  caught and shipped `extant_117ce:false` rather than hedged: Alexandria's Pompey's Pillar
+  (Diocletian, 297 CE) and Kom el-Shoqafa catacombs; Carthage's Antonine Baths and theatre;
+  Antioch's Island Palace (3rd c. CE); Londinium's Mithraeum and city wall; Tarraco's amphitheatre
+  (Hadrianic); Pergamon's Temple of Trajan, a real find — literally an active building site on the
+  day Trajan died, finished by Hadrian as his adoptive father's memorial. `npm run validate` and
+  `npm run build` both clean; one new page spot-checked live against the dev server (image credit,
+  sources, and the proximity-ranked "Nearby" list all render, new records cluster sensibly against
+  each other and the existing Judaea legion-fortress POI). Also shipped this run: `[10-P1-3]`
+  thematic-rooms (`polish`, closed — six curated one-click overlay-group presets, additive to the
+  existing checkbox list rather than replacing it as the ticket literally said, see the ticket
+  note for why). Network block reconfirmed: direct `curl` to `overpass-api.de` returns
+  `CONNECT tunnel failed, response 403`; WebSearch via background `Agent` calls remains the only
+  working research channel. `[06-P2-6]` stays open and blocked for whoever gets an unblocked
+  environment — the Overpass fetch + `sites.ts` wiring is still real, un-started work. Check the
+  board fresh — don't assume this note is still current by the time you read it.
