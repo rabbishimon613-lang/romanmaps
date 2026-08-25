@@ -121,10 +121,12 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       title,
       description,
       locale: "en",
-      images: p.image_url ? [{ url: p.image_url }] : undefined,
+      // No explicit `images` here — the colocated opengraph-image.tsx file convention (a
+      // generated, branded 1200x630 card) supplies it automatically for every /place/[slug]
+      // route. See that file's own header comment for why it doesn't embed the POI's real photo.
     },
     twitter: {
-      card: p.image_url ? "summary_large_image" : "summary",
+      card: "summary_large_image",
       title,
       description,
     },

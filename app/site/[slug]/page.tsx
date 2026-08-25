@@ -31,7 +31,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       locale: "en",
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title,
       description,
     },
