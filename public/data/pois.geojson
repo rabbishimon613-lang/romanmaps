@@ -19411,6 +19411,394 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.25,
+          41.0861
+        ]
+      },
+      "properties": {
+        "id": "poi_amphitheatre_capua",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum Campanum",
+        "name_english": "Amphitheatre of Capua",
+        "province": "Campania",
+        "modern_location": "Santa Maria Capua Vetere, Italy",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Second in size only to Rome's own Colosseum, this arena seated some 60,000 spectators around a floor spanning 170 meters, its four tiers of seating carried on eighty travertine arches. Underground passages threaded beneath the sand, moving animals and fighters up through trapdoors into the show above. Ancient inscriptions credit Augustus with building it; the city's own heritage authority instead dates it a century later. Either way it was already old and celebrated by 117 CE, and tradition holds Rome modeled its own Colosseum on this one, not the reverse.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Amphitheatre_of_Capua",
+          "https://reggiadicaserta.cultura.gov.it/en/discover-the-complex/the-archaeological-circuit-of-ancient-capua/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anfiteatro%20Campano%20%28Santa%20Maria%20di%20Capua%20Vetere%29%2001.jpg?width=800",
+        "image_credit": "Amphitheatre of Capua · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2521,
+          41.0802
+        ]
+      },
+      "properties": {
+        "id": "poi_capitolium_capua",
+        "category": "temple",
+        "name_latin": "Capitolium Capuanum",
+        "name_english": "Capitolium of Capua",
+        "province": "Campania",
+        "modern_location": "Santa Maria Capua Vetere, Italy",
+        "built": 26,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Capua's Capitolium gave the colony its own temple to Jupiter, built to the same pattern every Roman colony carried from Rome itself. Emperor Tiberius traveled down from Rome to dedicate it in person in the year 26, folding the ceremony into the same Campanian trip that consecrated a shrine to Augustus at nearby Nola. Magistrates and priests conducted the colony's official rites here for generations afterward. The temple stood at the heart of the colonia Julius Caesar had refounded with 20,000 resettled plebeians in 59 BCE.",
+        "sources": [
+          "https://www.poetryintranslation.com/PITBR/Latin/AnnalsBookIV-34to58.php",
+          "https://en.wikipedia.org/wiki/Ancient_Capua"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Annals",
+            "ref": "4.57",
+            "note": "Records Tiberius traveling to Campania in 26 CE 'ostensibly to consecrate a temple at Capua to Jupiter, and a shrine at Nola to Augustus.'"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2543,
+          41.0824
+        ]
+      },
+      "properties": {
+        "id": "poi_arch_hadrian_capua",
+        "category": "arch",
+        "name_latin": null,
+        "name_english": "Arch of Hadrian",
+        "province": "Campania",
+        "modern_location": "Santa Maria Capua Vetere, Italy",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A triple archway spanned the Via Appia at Capua's western approach, greeting travelers as they entered the colony. Three of its pillars and one side archway survive today, once dressed in marble reliefs and statues now lost. Built under the Flavian emperors to mark the city's rise in status, it only picked up the name Arch of Hadrian generations later, from a since-discredited dedication inscription. Locals called it Arco Felice, echoing Capua's own official name, Colonia Iulia Felix Augusta.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Arch_of_Hadrian_(Capua)",
+          "https://it.wikipedia.org/wiki/Arco_di_Adriano_(Capua)"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arco%20di%20Adriano%20dell%27antica%20Capua.jpg?width=800",
+        "image_credit": "Arch of Hadrian, Capua · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.261,
+          41.118
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_diana_tifatina",
+        "category": "temple",
+        "name_latin": "Templum Dianae Tifatinae",
+        "name_english": "Temple of Diana Tifatina",
+        "province": "Campania",
+        "modern_location": "Monte Tifata, near Capua, Italy",
+        "built": -350,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A temple to Diana crowned the western slope of Monte Tifata above Capua, drawing worshippers from the city below for centuries. Cult activity here reached back to the 6th century BCE, though the monumental temple itself rose two centuries later. The general Sulla loaded the sanctuary with rich votive offerings after defeating a rival army near the mountain in 82 BCE. A carved white doe tied to a local founding legend gave the shrine part of its enduring fame.",
+        "sources": [
+          "https://museocampanocapua.it/post/la-dea-diana-e-il-suo-tempio",
+          "https://en.wikipedia.org/wiki/Sant%27Angelo_in_Formis"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0486,
+          40.8514
+        ]
+      },
+      "properties": {
+        "id": "poi_sibyl_cave_cumae",
+        "category": "oracle",
+        "name_latin": "Antrum Sibyllae Cumanae",
+        "name_english": "Cave of the Cumaean Sibyl",
+        "province": "Italia",
+        "modern_location": "Cuma, Italy",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Workers cut this 131-meter gallery straight into the tufa flank of Cumae's acropolis, its trapezoidal cross-section engineered to survive the region's frequent earthquakes. Six openings pierced the rock along its length, throwing shafts of daylight across the floor as visitors walked toward a vaulted inner chamber. Legend held that a prophetess spoke Apollo's oracles here in a voice that echoed through a hundred mouths in the stone. Virgil sent his hero Aeneas down this same passage in the Aeneid, and a visitor in 117 CE could still walk its full length, even with the oracle's prophetic heyday long past.",
+        "sources": [
+          "https://www.heritagedaily.com/2021/08/the-cave-of-the-sibyl/140020",
+          "https://www.ancientworldmagazine.com/articles/home-sibyl-greek-colony-cumae/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cuma%20-%20Antro%20della%20Sibilla.JPG?width=800",
+        "image_credit": "Cave of the Cumaean Sibyl · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Virgil",
+            "work": "Aeneid",
+            "ref": "6.42–155",
+            "note": "Describes Aeneas entering the Sibyl's cave, its hundred mouths and hundred doors, and her prophetic frenzy."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0535,
+          40.8485
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_apollo_cumae",
+        "category": "temple",
+        "name_latin": "Templum Apollinis Cumanum",
+        "name_english": "Temple of Apollo at Cumae",
+        "province": "Italia",
+        "modern_location": "Cuma, Italy",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Cumae's Temple of Apollo crowned a terrace of the acropolis, rebuilt on a grander scale under Augustus after centuries as a Greek-style shrine. Its cella once ran some 34 meters long, facing out over the coastline toward Ischia. Priests here linked the sanctuary to the Sibyl's cave a short walk downhill, and pilgrims arriving by sea climbed the terraced slope to reach its columned front. The temple was still active in 117 CE, its tufa podium already carrying the marks of a rebuild more than a century old.",
+        "sources": [
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Dcumae",
+          "https://madainproject.com/archaeological_site_of_ancient_cuma"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cumae%20Temple%20of%20Apollo%20AvL.JPG?width=800",
+        "image_credit": "Temple of Apollo, Cumae · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Virgil",
+            "work": "Aeneid",
+            "ref": "6.14–33",
+            "note": "Describes Daedalus building the temple, its golden doors carved with the story of Minos, Pasiphaë, and the Minotaur."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0514,
+          40.8494
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_jupiter_cumae",
+        "category": "temple",
+        "name_latin": "Templum Iovis Cumanum",
+        "name_english": "Temple of Jupiter at Cumae",
+        "province": "Italia",
+        "modern_location": "Cuma, Italy",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The Temple of Jupiter occupied the highest terrace of Cumae's acropolis, raised on a Samnite-era foundation and monumentalized after Rome absorbed the city in 338 BCE, likely as its Capitolium. From its platform the sanctuary commanded a sweeping view down the Campanian coast. It served as Cumae's principal civic temple through the Roman period, still a working pagan shrine in 117 CE. Its later life as a Christian church and baptistery lay centuries in the future.",
+        "sources": [
+          "https://www.around-naples.com/en/archaeological-excavations-of-cumae.html",
+          "https://madainproject.com/archaeological_site_of_ancient_cuma"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.055,
+          40.849
+        ]
+      },
+      "properties": {
+        "id": "poi_walls_cumae",
+        "category": "wall",
+        "name_latin": "Moenia Cumana",
+        "name_english": "City Walls of Cumae",
+        "province": "Italia",
+        "modern_location": "Cuma, Italy",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Defenders raised walls of finely cut tufa along the acropolis's southeastern ridge as early as the 6th century BCE, extending the line as the lower city grew. Roman engineers later reinforced sections of the circuit, and its course went on to shape the medieval town centuries afterward. A visitor walking Cumae in 117 CE followed roughly the same defensive perimeter that had protected the city hundreds of years before, tying together the acropolis heights, the temple terraces, and the lower town's forum and harbor.",
+        "sources": [
+          "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Cumae",
+          "https://www.britannica.com/place/Cumae"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.068,
+          40.838
+        ]
+      },
+      "properties": {
+        "id": "poi_grotta_cocceio_cumae",
+        "category": "monument",
+        "name_latin": null,
+        "name_english": "Grotta di Cocceio",
+        "province": "Italia",
+        "modern_location": "near Cuma, Italy",
+        "built": -37,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman engineers bored this tunnel nearly a kilometer through Monte Grillo to link Lake Avernus with Cumae, wide enough for two wagons to pass side by side. Agrippa commissioned the work around 37 BCE while converting Avernus into a hidden naval harbor for the war against Sextus Pompeius. Six vertical shafts pierced the hillside for daylight and air, the tallest running more than 30 meters straight up through solid rock. The fleet moved on to Misenum decades before 117 CE, but the tunnel stayed open and in everyday use long after its military purpose had passed.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Grotta_di_Cocceio",
+          "https://cultura.gov.it/luogo/grotta-di-cocceio"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grotta%20di%20Cocceio%201.jpg?width=800",
+        "image_credit": "Grotta di Cocceio, the Agrippan road tunnel near Cumae · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0719,
+          40.8453
+        ]
+      },
+      "properties": {
+        "id": "poi_arco_felice_cumae",
+        "category": "arch",
+        "name_latin": null,
+        "name_english": "Arco Felice",
+        "province": "Italia",
+        "modern_location": "near Cuma, Italy",
+        "built": 95,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Domitian's road engineers cut this monumental gateway through Monte Grillo in 95 CE, opening a passage some 20 meters tall for the new Via Domitiana linking Rome to Naples and on to Cumae. Two carriageways ran side by side through the cutting, carrying imperial traffic past the hillside instead of over it. A traveler heading north from Cumae toward Rome in 117 CE passed beneath the same arch, then barely two decades old. Despite later legend crediting it with carrying an aqueduct overhead, no trace of a water channel survives along its crest.",
+        "sources": [
+          "http://www.naplesldm.com/arcofelice.php",
+          "https://www.wikidata.org/wiki/Q776548"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arco%20Felice%20%282018%29-6.jpg?width=800",
+        "image_credit": "Arco Felice, Via Domitiana near Cumae · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.05,
+          40.846
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_cumae",
+        "category": "forum",
+        "name_latin": "Forum Cumanum",
+        "name_english": "Forum of Cumae",
+        "province": "Italia",
+        "modern_location": "Cuma, Italy",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Cumae's forum formed a paved rectangular square ringed by a two-story portico, Doric below and Ionic above. The Lucceii family funded an ornate fountain house on the square once the city tapped into the Aqua Augusta aqueduct feeding water across Campania. Merchants, magistrates, and priests all passed through this plaza, which anchored the lower town beneath the acropolis's temple terraces. The forum still functioned as Cumae's civic heart in 117 CE, roughly four centuries after its first paving.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cumae",
+          "https://www.academia.edu/124574248/Il_Foro_di_Cuma_campagna_di_scavo_2022_Risultati_delle_indagini_e_analisi_di_alcuni_depositi_votivi_del_III_secolo_a_C"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0502,
+          40.8462
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_baths_cumae",
+        "category": "bathhouse",
+        "name_latin": null,
+        "name_english": "Forum Baths of Cumae",
+        "province": "Italia",
+        "modern_location": "Cuma, Italy",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Cumae's Forum Baths rank among the earliest purpose-built public bathhouses anywhere in the Roman world, tracing back to the city's early years under Roman rule. Bathers passed through a frigidarium fitted with two separate cold-water plunge pools before moving into the complex's warmer rooms. The building sat directly beside the forum, giving citizens easy access on their way through the civic center. Centuries of renovation kept the baths in active use, and Cumae's residents were still bathing on this same spot in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cumae"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Thermae%20of%20the%20Forum%2C%20Cumae%2C%20Italy%20%289042635234%29.jpg?width=800",
+        "image_credit": "The Forum Baths, Cumae · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.056,
+          40.842
+        ]
+      },
+      "properties": {
+        "id": "poi_amphitheater_cumae",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum Cumanum",
+        "name_english": "Amphitheater of Cumae",
+        "province": "Italia",
+        "modern_location": "Cuma, Italy",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Builders cut Cumae's amphitheater into the natural slope of Monte Grillo, banking up an earthen wall on the north side to complete the oval bowl. It ranks among Campania's earliest stone amphitheaters, raised alongside similar arenas at Capua and Liternum around the turn of the 2nd to 1st century BCE. The arena floor sat sunk below ground level, with much of the seating carved directly against the hillside. By 117 CE the structure had already hosted spectacles for close to two centuries.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_amphitheatre",
+          "https://www.wikidata.org/wiki/Q28977996"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
