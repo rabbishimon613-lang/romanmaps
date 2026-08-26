@@ -24104,6 +24104,303 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0806,
+          49
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_kumpfmuhl_regensburg",
+        "category": "auxiliary_fort",
+        "name_latin": "",
+        "name_english": "Kumpfmuhl Fort",
+        "province": "Raetia",
+        "modern_location": "Kumpfmuhl, Regensburg, Germany",
+        "built": 80,
+        "destroyed": 172,
+        "extant_117ce": true,
+        "notes": "A roughly 2.1-hectare cohort fort built in timber and earth around 80 CE under Vespasian or Titus, sited on a spur south of the Danube overlooking the river's bend and the mouths of the Naab and Regen — decades before the famous stone legionary fortress of Legio III Italica was founded 700 meters north of here, in 179 CE, well after this map's snapshot. A vicus with a bathhouse grew up around it. The garrison unit at 117 CE isn't securely identified: Cohors III Britannorum equitata is only epigraphically attested from 153 CE, so an earlier unit (possibly Cohors II Aquitanorum) is a plausible but unconfirmed occupant under Trajan and Hadrian. Sources also disagree on whether the defenses had already been rebuilt in stone by 117 or were still timber-and-earth, though continuous occupation through that date is well established. The fort and its vicus were destroyed in the Marcomannic Wars, c. 170-175 CE.",
+        "sources": [
+          "https://de.wikipedia.org/wiki/Kastell_Kumpfm%C3%BChl",
+          "https://vici.org/vici/9830/?lang=en"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2593,
+          49.9905
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_mogontiacum_mainz",
+        "category": "theater",
+        "name_latin": "Theatrum Mogontiacense",
+        "name_english": "Roman Theatre of Mogontiacum",
+        "province": "Germania Superior",
+        "modern_location": "Mainz, Germany",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "One of the largest Roman theatres north of the Alps, roughly 116 meters across with a 42-meter stage front and seating for about 10,000. An earlier timber theatre likely stood here from the early 1st century CE, tied to annual funerary games in honor of Drusus; the monumental stone structure whose remains survive today went up under Domitian (81-96 CE). Rediscovered in 1884 during railway construction but not correctly identified until 1914-16, then comprehensively excavated in 1998-99 under a parking area — it stayed in active use through the 4th century, when it was finally stripped for stone to build the shortened late-Roman city wall.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_Theatre_(Mainz)",
+          "https://www.livius.org/articles/place/mogontiacum-mainz/mogontiacum-mainz-photos/mainz-theater/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2696,
+          49.9968
+        ]
+      },
+      "properties": {
+        "id": "poi_jupiter_column_mogontiacum_mainz",
+        "category": "column",
+        "name_latin": "Columna Iovis Mogontiacensis",
+        "name_english": "Great Mainz Jupiter Column",
+        "province": "Germania Superior",
+        "modern_location": "Mainz, Germany",
+        "built": 67,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A towering, elaborately carved Jupiter column dedicated by the civilian canabae community of Mogontiacum to Jupiter Optimus Maximus for the emperor's wellbeing. Epigraphic and prosopographic evidence — including the tenure of governor P. Sulpicius Scribonius Proculus — dates its erection to c. 65-67 CE, plausibly commemorating Nero's survival of the Pisonian conspiracy. One of the oldest and most elaborate Jupiter columns known from the Germanic provinces; it was eventually toppled and deliberately buried (rediscovered in nearly 2,000 fragments in 1904-05), but nothing points to that happening before 117 CE, so it should still have been standing at the snapshot.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Great_Mainz_Jupiter_Column",
+          "https://www.landesmuseum-mainz.de/ueber/forschungsprojekte/die-grosse-mainzer-jupitersaeule"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2665,
+          50.0005
+        ]
+      },
+      "properties": {
+        "id": "poi_bridge_mogontiacum_mainz",
+        "category": "bridge",
+        "name_latin": "Pons Mogontiacensis",
+        "name_english": "Roman Rhine Bridge at Mogontiacum",
+        "province": "Germania Superior",
+        "modern_location": "Mainz, Germany",
+        "built": 71,
+        "destroyed": 406,
+        "extant_117ce": true,
+        "notes": "A major fixed bridge across the Rhine linking the legionary fortress and civilian settlement at Mogontiacum to the fort of Castellum Mattiacorum on the far bank. An initial pontoon or timber crossing existed from around 11 BCE, but the permanent bridge — some 21 stone piers spanning roughly 400 meters — is generally dated to c. 71 CE, in the early Flavian period after the Batavian Revolt, when Rome moved to secure the crossing permanently. It remained standing into the early 5th century, well beyond 117 CE. Some popular accounts credit Domitian, but the stone construction is more consistently dated to 71 CE under Vespasian.",
+        "sources": [
+          "https://www.livius.org/articles/place/mogontiacum-mainz/mogontiacum-mainz-photos/mainz-bridge/",
+          "https://en.wikipedia.org/wiki/Castellum_Mattiacorum"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2632,
+          49.9958
+        ]
+      },
+      "properties": {
+        "id": "poi_drusus_cenotaph_mainz",
+        "category": "monument",
+        "name_latin": "Tumulus Drusi",
+        "name_english": "Cenotaph of Drusus",
+        "province": "Germania Superior",
+        "modern_location": "Mainz Citadel, Mainz, Germany",
+        "built": -9,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A nearly 20-meter masonry cenotaph raised in 9 BCE by the Mogontiacum garrison in honor of Nero Claudius Drusus, who died from a riding accident that year returning from a campaign beyond the Elbe. Originally faced in marble, it carried a commemorative inscription reportedly composed by Augustus himself, and anchored the annual Drusus memorial games held at Mogontiacum for generations. The core masonry survives to this day, later repurposed as a medieval watchtower within the citadel, making its presence at the 117 CE snapshot essentially certain.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Drususstein",
+          "https://www.mainz.de/en/angebote-entdecken/zu-gast-in-mainz/sehenswertes/drususstein"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2508,
+          49.9838
+        ]
+      },
+      "properties": {
+        "id": "poi_aqueduct_mogontiacum_mainz",
+        "category": "aqueduct",
+        "name_latin": "Aquaeductus Mogontiacensis",
+        "name_english": "Aqueduct of Mogontiacum",
+        "province": "Germania Superior",
+        "modern_location": "Zahlbach valley, Mainz, Germany",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A roughly 9-kilometer aqueduct built in the Flavian period (69-96 CE) to carry spring water from Finthen to the legionary fortress and settlement at Mogontiacum, an estimated 30,000-plus liters a day for the two resident legions. Its final approach crossed the steep Zahlbach valley on arcades up to 30 meters high — the tallest known Roman aqueduct arcade north of the Alps — of which 58-59 tapering pillar cores still stand along the street 'An den Romersteinen.' A Flavian-era work with no attested destruction before the early empire, it was almost certainly still functioning in 117 CE.",
+        "sources": [
+          "http://www.romanaqueducts.info/aquasite/mainz/index.html",
+          "https://www.livius.org/articles/place/mogontiacum-mainz/mogontiacum-mainz-photos/mainz-aqueduct/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.103,
+          50.7415
+        ]
+      },
+      "properties": {
+        "id": "poi_canabae_bonna",
+        "category": "vicus",
+        "name_latin": "Canabae Legionis Bonnensis",
+        "name_english": "Canabae of Bonna",
+        "province": "Germania Inferior",
+        "modern_location": "Bonn, Germany",
+        "built": 40,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Immediately outside the fortress walls, a civilian settlement grew up to house soldiers' families, veterans, traders, and craftsmen dependent on the garrison. Excavations across three campaigns recovered roughly 20,000 finds — coins, bronze jewelry, glassware, roof tiles, butchered animal bone — attesting to potters, innkeepers, and metalworkers living beside the fort. Occupation runs continuously from the second half of the 1st century through the end of the 3rd, so by 117 CE, under Legio I Minervia, the canabae would have been a dense, well-established quarter.",
+        "sources": [
+          "https://www.dependency.uni-bonn.de/en/outreach/roman-bonn-site-descriptions",
+          "https://www.academia.edu/11730685/In_front_of_the_gates_of_a_roman_legion_camp_New_Roman_findings_from_the_northern_part_of_Bonn"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.129,
+          50.7085
+        ]
+      },
+      "properties": {
+        "id": "poi_vicus_gronau_bonna",
+        "category": "vicus",
+        "name_latin": "Vicus Bonnensis (ad Gronoviam)",
+        "name_english": "Vicus of Bonna at the Gronau",
+        "province": "Germania Inferior",
+        "modern_location": "Gronau, Bonn, Germany",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A second, larger civilian settlement, distinct from the canabae hugging the fortress walls, developed further upstream along the Rhine in the area of modern Gronau. Excavations there uncovered five timber-and-stone strip houses roughly 10 by 30 meters with street-facing shopfronts, alongside evidence of coin counterfeiting, craft production, and tavern life. The exact founding date isn't precisely fixed in the excavation reports, but the settlement was clearly flourishing by the early 2nd century, a plausible feature of the Trajanic-Hadrianic townscape around Bonna.",
+        "sources": [
+          "https://www.dependency.uni-bonn.de/en/outreach/roman-bonn-site-descriptions",
+          "https://dependency.blog/the-journey-of-the-tour-of-roman-bonn"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1275,
+          50.7095
+        ]
+      },
+      "properties": {
+        "id": "poi_baths_vicus_bonna",
+        "category": "bathhouse",
+        "name_latin": "Balneum Vici Bonnensis",
+        "name_english": "Bathhouse of the Bonna vicus",
+        "province": "Germania Inferior",
+        "modern_location": "Gronau, Bonn, Germany",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A public bath complex served the civilian vicus rather than the garrison itself. Excavation seasons in 2021-2022, building on 19th- and early-20th-century observations of walls at the same site, exposed roughly 1,200 square meters of the complex — cold and hot rooms, plunge pools, drains, hypocaust underfloor heating, and furnace rooms, with one hypocaust found exceptionally intact, floor tiles still resting on their pilae stacks. No source pins down an exact construction year, so while a bathing establishment on this spot by 117 CE is plausible given the vicus's growth, the precise Trajanic-era date isn't independently confirmed.",
+        "sources": [
+          "https://www.dependency.uni-bonn.de/en/outreach/roman-bonn-site-descriptions",
+          "https://www.thehistoryblog.com/archives/65670"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1055,
+          50.738
+        ]
+      },
+      "properties": {
+        "id": "poi_port_bonna",
+        "category": "port",
+        "name_latin": "Statio Naviculariorum Bonnensis",
+        "name_english": "Roman river landing stage of Bonna",
+        "province": "Germania Inferior",
+        "modern_location": "Bonn, Germany",
+        "built": 70,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Excavations in 2010-2011 at the southern edge of the canabae uncovered a Roman landing site on the Rhine bank: a shallow, gravel-surfaced slope onto which vessels could be beached and unloaded directly, with evidence the bank was artificially reinforced to let up to five ships land at once. A modest installation rather than a monumental stone harbor, reflecting Bonna's role as a supply point on the Rhine transport corridor overseen by the Classis Germanica, headquartered downriver at Cologne. A separate tradition (Florus) credits Drusus with building an actual bridge at Bonna around 11 BCE, but modern historians dispute whether this crossing ever existed beyond a temporary Augustan-era pontoon, and no archaeological remains of a bridge have been confirmed — so it is not represented here as a standing 117 CE structure.",
+        "sources": [
+          "http://www.legionaryfortresses.info/bonn.htm",
+          "https://www.livius.org/articles/place/bonna-bonn/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.0995,
+          50.7345
+        ]
+      },
+      "properties": {
+        "id": "poi_necropolis_bonna",
+        "category": "necropolis",
+        "name_latin": "Necropolis Bonnensis",
+        "name_english": "Roman cemetery south of the Bonna fortress",
+        "province": "Germania Inferior",
+        "modern_location": "Bonn Minster / Munsterplatz, Bonn, Germany",
+        "built": 40,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Along the road leaving Bonna to the south, a cemetery serving both garrison and civilian settlement was already in use by the mid-1st century CE — the tombstone of Quintus Petilius Secundus, a 25-year-old legionary of Legio XV Primigenia (garrisoned at nearby Xanten) who died in 65 CE, was recovered here, showing the site predates even Legio I Minervia's arrival. Grave goods, sarcophagi, and dozens of inscribed tombstones from this and related Bonn cemeteries are now held in the Rheinisches Landesmuseum Bonn. The same burial ground later became sacred to the cult of the martyrs Cassius and Florentius, whose veneration eventually gave rise to the church that became Bonn Minster — a Roman cemetery directly shaping the medieval and modern city.",
+        "sources": [
+          "https://www.livius.org/museum/bonn-rheinisches-landesmuseum/",
+          "https://www.dependency.uni-bonn.de/en/outreach/roman-bonn-site-descriptions"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
