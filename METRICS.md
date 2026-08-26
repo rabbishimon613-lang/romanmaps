@@ -32,14 +32,14 @@ references.)
 
 | Measure | Value | Notes |
 |---|---:|---|
-| POIs in `pois.geojson` | 725 | the curated place canon |
+| POIs in `pois.geojson` | 747 | the curated place canon |
 | Records in the 31 thematic files | 1482 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
-| **Curated places, total** | **2,207** | |
-| Description of 60+ words | 725 · **100.0%** | measured on `notes`; 0 still thin |
-| Has an image | 445 · **61.4%** | |
-| Has an ancient source | 239 · **33.0%** | |
-| — of `confidence: high` POIs | 213 / 340 · **62.6%** | the target set for `[09-P0-1]` |
-| Categories with a "what happened here" paragraph | 53 / 53 · **100.0%** | covers 725/725 POIs |
+| **Curated places, total** | **2,229** | |
+| Description of 60+ words | 747 · **100.0%** | measured on `notes`; 0 still thin |
+| Has an image | 453 · **60.6%** | |
+| Has an ancient source | 239 · **32.0%** | |
+| — of `confidence: high` POIs | 213 / 349 · **61.0%** | the target set for `[09-P0-1]` |
+| Categories with a "what happened here" paragraph | 53 / 53 · **100.0%** | covers 747/747 POIs |
 | Sites with curated building descriptions | 35 / 40 · **87.5%** | ancona, aquileia, athens, baalbek, baiae, beneventum, brixia, capua, corinth, cumae, delphi, djemila, ephesus, herculaneum, italica, jerash, leptisMagna, luni, merida, milan, ostia, paestum, palestrina, palmyra, pompeii, portus, pozzuoli, rimini, sabratha, timgad, tivoli, trier, verona, vindolanda, volubilis (`[06-P0-2]`, standing) |
 | Validator errors | **0** | |
 | Validator warnings | 17 | reviewed; see the standing-warnings note |
@@ -240,4 +240,4 @@ references.)
 | 2026-08-23 | 497 | 100.0% | 53.5% | 36.4% | 0 errors |
 | 2026-08-24 | 576 | 100.0% | 61.1% | 38.2% | 0 errors |
 | 2026-08-25 | 707 | 100.0% | 60.8% | 33.1% | 0 errors |
-| 2026-08-26 | 725 | 100.0% | 61.4% | 33.0% | 0 errors |
+| 2026-08-26 | 747 | 100.0% | 60.6% | 32.0% | 0 errors |

@@ -22617,6 +22617,608 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.3595,
+          51.3809
+        ]
+      },
+      "properties": {
+        "id": "poi_great_bath_aquae_sulis",
+        "category": "bathhouse",
+        "name_latin": "Balneum Magnum (conventional)",
+        "name_english": "The Great Bath, Bath",
+        "province": "Britannia",
+        "modern_location": "Bath, England",
+        "built": 70,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The Great Bath channeled over a million litres of naturally hot, mineral-rich water a day into a lead-lined pool 1.6 meters deep, sheathed in 45 sheets of Roman-cut lead that still line its floor today. Bathers descended four wide steps into steam rising off water heated by nothing but the earth itself. By 117 CE, the year Trajan died, the pool had already been drawing sick and hopeful travelers from across Britannia for two generations.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_Baths_(Bath)",
+          "https://www.romanbaths.co.uk/roman-bathing-complex-0"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20Baths%20in%20Bath%20Spa,%20England%20-%20July%202006.jpg?width=800",
+        "image_credit": "The Great Bath, Bath · Diliff, Wikimedia Commons (CC BY-SA 3.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.3596,
+          51.3811
+        ]
+      },
+      "properties": {
+        "id": "poi_sacred_spring_aquae_sulis",
+        "category": "sanctuary",
+        "name_latin": "Fons Sacer (conventional)",
+        "name_english": "The Sacred Spring, Bath",
+        "province": "Britannia",
+        "modern_location": "Bath, England",
+        "built": 65,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman engineers tamed a wild geothermal spring surging up at 46 degrees Celsius inside a lead-lined stone wall built over oak piles driven into the mud. Pilgrims threw curse tablets and coins into the water as offerings to the goddess Sulis, dozens of which archaeologists later pulled from the silt. By 117 CE the reservoir had stood for roughly half a century, already the ritual heart of Aquae Sulis.",
+        "sources": [
+          "https://www.romanbaths.co.uk/roman-sacred-spring",
+          "https://en.wikipedia.org/wiki/Roman_Baths_(Bath)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.3593,
+          51.381
+        ]
+      },
+      "properties": {
+        "id": "poi_east_baths_aquae_sulis",
+        "category": "bathhouse",
+        "name_latin": "Caldarium et Tepidarium (conventional)",
+        "name_english": "The East Baths, Bath",
+        "province": "Britannia",
+        "modern_location": "Bath, England",
+        "built": 70,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Underfloor hypocaust channels drove heat from wood-fired furnaces beneath a raised floor, warming bathers through rooms running from tepid to scorching hot. Water drawn straight from the adjoining Great Bath fed a lukewarm pool here before visitors worked up to the sweat rooms proper. The suite's original timber-roofed form already stood by 117 CE, part of the same first-generation building campaign as the Great Bath itself.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_Baths_(Bath)",
+          "https://www.romanbaths.co.uk/roman-bathing-complex-0"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.36,
+          51.3805
+        ]
+      },
+      "properties": {
+        "id": "poi_town_walls_aquae_sulis",
+        "category": "wall",
+        "name_latin": "Murus Aquarum Sulis (conventional)",
+        "name_english": "Roman Town Walls of Bath",
+        "province": "Britannia",
+        "modern_location": "Bath, England",
+        "built": 220,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A stone wall two meters thick eventually rose around the temple and baths, enclosing 23 acres of sacred and civic ground, though historians still argue whether it served real defense or simply dignified a famous religious site. It came more than a century after Trajan's death; in 117 CE, Aquae Sulis's bathing precinct still stood open and unwalled. Only fragments survive today, folded into Bath's later medieval fortifications.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Bath_city_walls",
+          "https://www.heritagedaily.com/2020/05/aquae-sulis-roman-bath/129611"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3561,
+          51.7529
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_basilica_verulamium",
+        "category": "forum",
+        "name_latin": "Forum et Basilica Verulamii",
+        "name_english": "Forum and Basilica of Verulamium",
+        "province": "Britannia",
+        "modern_location": "St Albans, England",
+        "built": 79,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A monumental dedication slab over four meters long once announced the completion of Verulamium's civic heart, credited to the governor Julius Agricola. The basilica anchored the largest building in Roman Britain's third city, a hall where magistrates heard cases beneath a forum lined with shops and colonnades. Already 38 years old by the time Trajan died in 117 CE, it stood as the undisputed administrative center of one of Britain's most Romanized towns; its foundations still lie beneath St Michael's Church.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Verulamium_Forum_inscription",
+          "https://romaninscriptionsofbritain.org/inscriptions/3123"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3567,
+          51.7539
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_verulamium",
+        "category": "theater",
+        "name_latin": "Theatrum Verulamii",
+        "name_english": "Roman Theatre of Verulamium",
+        "province": "Britannia",
+        "modern_location": "St Albans, England",
+        "built": 140,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Unusually for Roman Britain, this theatre was built with a raised stage rather than as a simple amphitheatre, hosting religious processions and armed combat before its auditorium was enlarged decades later. It rose beside the great road of Watling Street, on the site of an older Celtic shrine. It did not yet exist in 117 CE; construction began roughly a generation after Trajan's death, and today it remains one of only a handful of purpose-built theatres known from Roman Britain.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_Theatre,_St_Albans",
+          "https://www.roman-britain.co.uk/places/st-albans-verulamium-theatre/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Verulamium%20Roman%20Theatre%202.jpg?width=800",
+        "image_credit": "Roman Theatre of Verulamium · Rob Hinkley, Wikimedia Commons (CC BY-SA 2.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.355339,
+          51.746243
+        ]
+      },
+      "properties": {
+        "id": "poi_wall_london_gate_verulamium",
+        "category": "wall",
+        "name_latin": "Murus Verulamii",
+        "name_english": "Roman Wall of Verulamium and the London Gate",
+        "province": "Britannia",
+        "modern_location": "St Albans, England",
+        "built": 265,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Mortared flint rubble banded with red brick rose five meters high around a two-mile circuit, pierced by the London Gate's four separate passages where Watling Street, the great road from Dover to Chester, entered the city. This fortification belongs to the anxious, embattled Britain of the later 3rd century; in 117 CE, at the height of Trajan's empire, Verulamium had no stone walls at all. Its foundations are still walkable today in Verulamium Park.",
+        "sources": [
+          "https://www.english-heritage.org.uk/visit/places/roman-wall-of-st-albans/history/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.356306,
+          51.749194
+        ]
+      },
+      "properties": {
+        "id": "poi_hypocaust_mosaic_verulamium",
+        "category": "house",
+        "name_latin": "Domus cum Hypocausto",
+        "name_english": "Verulamium Hypocaust and Mosaic",
+        "province": "Britannia",
+        "modern_location": "St Albans, England",
+        "built": 190,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Roughly 200,000 individually cut tesserae form a mosaic floor laid directly over a hypocaust system whose brick pillars once channeled hot air beneath a wealthy townhouse's reception rooms. Excavators in the 1930s chose to leave it exactly where the Romans built it, now sheltered by a museum building. This particular house did not yet stand in 117 CE; it belongs to Verulamium's later, more prosperous 2nd-century building boom.",
+        "sources": [
+          "https://www.stalbansmuseums.org.uk/visit/hypocaust",
+          "https://en.wikipedia.org/wiki/Hypocaust_Museum"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/StAlbansMosaics-PS01.JPG?width=800",
+        "image_credit": "Verulamium hypocaust and mosaic · Przemyslaw Sakrajda, Wikimedia Commons (CC BY-SA 3.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.903,
+          51.8906
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_claudius_camulodunum",
+        "category": "temple",
+        "name_latin": "Templum Divi Claudii",
+        "name_english": "Temple of Claudius, Colchester",
+        "province": "Britannia",
+        "modern_location": "Colchester, England",
+        "built": 54,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The Temple of the Deified Claudius rose as Roman Britain's largest classical temple, its podium alone measuring 32 by 24 meters. Colonial elites built it to honor Rome's new god-emperor, and Boudica's rebels found it so hateful a symbol of occupation that they besieged the last defenders inside for two days before torching it in the winter of 60-61 CE. The colony rebuilt the temple on its surviving podium within a year or two, and by 117 CE it had served as Camulodunum's ceremonial heart for more than five decades; its massive foundation still survives, buried beneath Colchester Castle.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Claudius,_Colchester",
+          "https://historicengland.org.uk/listing/the-list/list-entry/1002217"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.89371,
+          51.88966
+        ]
+      },
+      "properties": {
+        "id": "poi_balkerne_gate_camulodunum",
+        "category": "gate",
+        "name_latin": "Porta Occidentalis (conventional)",
+        "name_english": "Balkerne Gate, Colchester",
+        "province": "Britannia",
+        "modern_location": "Colchester, England",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Britain's largest surviving Roman gateway opened where the road from Londinium met the town's western wall. A freestanding triumphal arch marked the new colonia around 50 CE, then was folded into a far bigger structure, two carriageways and two footways spanning 33 meters, once the town wall rose after the Boudican revolt. By 117 CE the gate had carried traffic in and out of Colonia Claudia Victricensis for decades, and its western arches still stand today as the best-preserved Roman gateway in Britain.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Balkerne_Gate",
+          "https://historicengland.org.uk/listing/the-list/list-entry/1123668"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Balkerne%20Gate,%20Colchester%20-%20geograph.org.uk%20-%20189116.jpg?width=800",
+        "image_credit": "Balkerne Gate, Colchester · Wikimedia Commons (CC BY-SA 2.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.8932,
+          51.8905
+        ]
+      },
+      "properties": {
+        "id": "poi_town_wall_camulodunum",
+        "category": "wall",
+        "name_latin": "Murus Camuloduni",
+        "name_english": "Roman Town Wall of Colchester",
+        "province": "Britannia",
+        "modern_location": "Colchester, England",
+        "built": 70,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Colchester's defenders built Britain's first town wall after Boudica's rebels burned the undefended colonia to the ground in 60-61 CE. Legionary engineers raised a 2.8-kilometer circuit of rubble and brick, standing nearly six meters high in places, over roughly two decades starting around 65 CE. By 117 CE the completed wall had ringed the colony with six gates for a generation, guaranteeing nothing like the Boudican sack could happen again; long stretches still stand today, making it the oldest complete town-wall circuit surviving in Britain.",
+        "sources": [
+          "https://colchesterheritage.co.uk/blog/town-wall"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.90538,
+          51.89282
+        ]
+      },
+      "properties": {
+        "id": "poi_duncans_gate_camulodunum",
+        "category": "gate",
+        "name_latin": "Porta Septentrionalis (conventional)",
+        "name_english": "Duncan's Gate, Colchester",
+        "province": "Britannia",
+        "modern_location": "Colchester, England",
+        "built": 70,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Duncan's Gate pierced the northeastern stretch of Colchester's new town wall, one of six gateways built into the circuit after the Boudican revolt. Unlike the grand Balkerne Gate, this was a modest single-arched entrance with a small guardroom above it, built from the same rubble as the rest of the wall in the decades after 60-61 CE. It had stood as a working gate for roughly 50 years by the time Trajan died in August 117 CE, and survives today, rediscovered in 1853, as one of only two Roman gates in Colchester still visible above ground.",
+        "sources": [
+          "https://catuk.org/the-trust-surveys-the-roman-ruins-of-duncans-gate-in-colchester/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.8945,
+          51.8844
+        ]
+      },
+      "properties": {
+        "id": "poi_roman_circus_camulodunum",
+        "category": "circus",
+        "name_latin": "Circus Camuloduni",
+        "name_english": "Colchester Roman Circus",
+        "province": "Britannia",
+        "modern_location": "Colchester, England",
+        "built": 125,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Britain's only known Roman chariot-racing circus stretched about 450 meters long and up to 74 meters wide just south of Colchester's walls. Archaeologists found its buried foundations by accident in 2004 during redevelopment of a former army barracks, making global headlines as the first circus ever confirmed in Roman Britain. Dating evidence points to construction around 120-130 CE, roughly a decade after Trajan died in 117 CE, so the circus had not yet been built at this map's snapshot moment; its outline is preserved beneath a housing estate today.",
+        "sources": [
+          "https://colchesterheritage.co.uk/blog/the-roman-circus",
+          "https://historicengland.org.uk/listing/the-list/list-entry/1021426"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Artist%27s%20impression%20of%20the%20Roman%20Circus%20of%20Camulodunum,%20Colchester%20(UK)%20(16704064685).jpg?width=800",
+        "image_credit": "Reconstruction of the Roman Circus of Camulodunum · Carole Raddato, Wikimedia Commons (CC BY-SA 2.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.8571,
+          51.8647
+        ]
+      },
+      "properties": {
+        "id": "poi_gosbecks_theatre_camulodunum",
+        "category": "theater",
+        "name_latin": "Theatrum Gosbecciense (conventional)",
+        "name_english": "Gosbecks Roman Theatre",
+        "province": "Britannia",
+        "modern_location": "Colchester, England",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The largest theatre yet found in Roman Britain was a banked earthwork auditorium seating roughly 5,000 spectators around a semicircular stage, standing beside Colchester's most important native temple complex. Excavation found that an earlier timber theatre had stood on the site before being demolished and rebuilt as a turf-and-clay bank held by a stone wall; a coin of Hadrian and pottery found in that rebuild date it to the later 2nd century, decades after Trajan's death. The site is marked out in the grass at Gosbecks Archaeological Park today.",
+        "sources": [
+          "https://colchesterheritage.co.uk/monument/mcc2831"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.8568,
+          51.8668
+        ]
+      },
+      "properties": {
+        "id": "poi_gosbecks_temple_camulodunum",
+        "category": "temple",
+        "name_latin": "Fanum Gosbecciense (conventional)",
+        "name_english": "Gosbecks Romano-Celtic Temple",
+        "province": "Britannia",
+        "modern_location": "Colchester, England",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Gosbecks' temple sat inside a monumental covered portico roughly 100 meters square, wrapped around a small cella barely 13.5 meters on a side, on ground that had served as a religious center for local Britons for a century before the Roman conquest. Excavation dates the grand stone-built portico to the mid-2nd century CE, roughly a generation after Trajan's death, so the temple in its known monumental form was not yet complete in 117 CE. Its outline, like the neighboring theatre's, is marked out in the grass of Gosbecks Archaeological Park today.",
+        "sources": [
+          "https://colchesterheritage.co.uk/monument/mcc2849",
+          "https://historicengland.org.uk/listing/the-list/list-entry/1002180"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0825,
+          51.35722
+        ]
+      },
+      "properties": {
+        "id": "poi_town_walls_calleva",
+        "category": "wall",
+        "name_latin": "Moenia Callevae",
+        "name_english": "Silchester Roman Town Walls",
+        "province": "Britannia",
+        "modern_location": "Silchester, England",
+        "built": 200,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Builders raised Calleva's first earthen rampart around 200 CE and faced it in flint and stone roughly seventy years later, eventually enclosing 2.4 kilometers of the town in a wall line that still runs almost unbroken through the Hampshire fields today. When Trajan died in 117 CE none of this existed; Calleva sat open and undefended, decades away from its first bank and ditch. Visitors today can walk the near-complete circuit past the recessed sockets where its timber gates once hung.",
+        "sources": [
+          "https://www.english-heritage.org.uk/visit/places/silchester-roman-city-walls-and-amphitheatre/history/",
+          "https://en.wikipedia.org/wiki/Calleva_Atrebatum"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Silchester%20Roman%20city%20walls%2063.jpg?width=800",
+        "image_credit": "Silchester Roman town walls · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.075284,
+          51.35885
+        ]
+      },
+      "properties": {
+        "id": "poi_amphitheater_calleva",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum Callevae",
+        "name_english": "Silchester Roman Amphitheatre",
+        "province": "Britannia",
+        "modern_location": "Silchester, England",
+        "built": 65,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Workers cut this oval arena into the earth just outside Calleva's northeast corner sometime between 55 and 75 CE, banking the spoil into raised seating that still rings the field today. By the time Trajan died on 11 August 117, this amphitheatre had already been staging fights and gatherings for more than forty years. Excavators later found traces of a small shrine to Nemesis, goddess of fate, tucked against the arena wall; it would not gain its familiar stone-faced shape for another 150 years.",
+        "sources": [
+          "https://www.english-heritage.org.uk/visit/places/silchester-roman-city-walls-and-amphitheatre/history/",
+          "https://en.wikipedia.org/wiki/Calleva_Atrebatum"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20amphitheatre,%20Silchester%2023.jpg?width=800",
+        "image_credit": "Silchester Roman amphitheatre · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0825,
+          51.3572
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_basilica_calleva",
+        "category": "forum",
+        "name_latin": "Forum et Basilica Callevae",
+        "name_english": "Silchester Forum-Basilica",
+        "province": "Britannia",
+        "modern_location": "Silchester, England",
+        "built": 135,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Calleva's civic heart began as a timber forum-basilica raised around 85 CE, then was demolished and rebuilt entirely in masonry under Hadrian; coin evidence dates the new stone hall to the 130s. That means the footings and column bases visible today did not yet exist on 11 August 117, only its wooden predecessor did. A bronze eagle recovered from the earlier building's floor in 1866 later inspired a well-known novel.",
+        "sources": [
+          "https://research.reading.ac.uk/silchester/about/history-of-the-site/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.6445,
+          52.6733
+        ]
+      },
+      "properties": {
+        "id": "poi_old_work_viroconium",
+        "category": "bathhouse",
+        "name_latin": "Thermae Viroconii",
+        "name_english": "The Old Work, Wroxeter",
+        "province": "Britannia",
+        "modern_location": "Wroxeter, England",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Builders raised this soaring wall of brick-banded stone around 150 CE as part of Viroconium's vast civic baths, and at seven meters tall it remains the largest freestanding fragment of Roman masonry anywhere in Britain. Work on the baths complex only began after Hadrian took the throne, and this section was not finished for another three decades, so it did not exist when Trajan died on 11 August 117. Rows of square sockets still visible in the stonework mark exactly where Roman masons anchored their scaffolding as they built it.",
+        "sources": [
+          "https://www.english-heritage.org.uk/visit/places/wroxeter-roman-city/history/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20%22Old%20Work%22%20at%20Viroconium%20Cornoviorum%20(Wroxeter%20Roman%20City)%20-%20geograph.org.uk%20-%204711210.jpg?width=800",
+        "image_credit": "The Old Work, Wroxeter · Jeff Buck, Wikimedia Commons (CC BY-SA 2.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.6438,
+          52.6742
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_viroconium",
+        "category": "forum",
+        "name_latin": "Forum Viroconii Cornoviorum",
+        "name_english": "Wroxeter Forum",
+        "province": "Britannia",
+        "modern_location": "Wroxeter, England",
+        "built": 130,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "An inscribed dedication slab found on site fixes the completion of Viroconium's forum to 129 or 130 CE, honoring the Cornovii tribe's new civic center. That date lands more than a decade after Trajan's death; on 11 August 117 this was still a construction site, not the colonnaded plaza that later anchored the fourth-largest town in Roman Britain. Fire swept through it later in the 2nd century, and it was rebuilt rather than abandoned; its stone footings still trace the building's outline against the Shropshire grass.",
+        "sources": [
+          "https://romaninscriptionsofbritain.org/sites/wroxeter",
+          "https://en.wikipedia.org/wiki/Viroconium_Cornoviorum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.6443,
+          52.6733
+        ]
+      },
+      "properties": {
+        "id": "poi_macellum_viroconium",
+        "category": "market",
+        "name_latin": "Macellum Viroconii",
+        "name_english": "Wroxeter Macellum",
+        "province": "Britannia",
+        "modern_location": "Wroxeter, England",
+        "built": 140,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Wroxeter's covered market hall rose alongside the town's great public baths as part of a single building programme that ran from the 120s into the 160s, replacing a row of timber shops that had fronted Watling Street since around 90 CE. None of this masonry market existed in 117 CE; Trajan was still emperor when merchants here traded out of wooden stalls, not a stone-colonnaded hall. Archaeologists spent decades, from the 1950s into the 1980s, tracing its full courtyard plan.",
+        "sources": [
+          "https://the-past.com/feature/revealing-roman-wroxeter-new-insights-from-one-of-britannias-largest-urban-centres/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.6407,
+          52.6748
+        ]
+      },
+      "properties": {
+        "id": "poi_town_defences_viroconium",
+        "category": "wall",
+        "name_latin": "Vallum Viroconii (conventional)",
+        "name_english": "Wroxeter Town Defences",
+        "province": "Britannia",
+        "modern_location": "Wroxeter, England",
+        "built": 200,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Around 200 CE, Viroconium's residents dug a bank-and-ditch circuit roughly 4 kilometers long around their town, built from earth and timber rather than faced in stone. No trace of any boundary defence existed when Trajan died in 117; for its first eight decades as a civilian town, Viroconium sat completely open. Historians read the later earthwork less as a response to any actual attack than as a statement of civic status, since no evidence of warfare near the town has ever surfaced.",
+        "sources": [
+          "https://www.english-heritage.org.uk/visit/places/wroxeter-roman-city/history/"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
