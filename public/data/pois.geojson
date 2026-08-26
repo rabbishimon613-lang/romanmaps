@@ -26477,7 +26477,9 @@
           "https://imperiumromanum.pl/en/curiosities/southern-agora-in-aphrodisias/",
           "https://artofmaking.ac.uk/explore/monuments/190/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aphrodisias_South_agora_and_pool_view_to_Hadrian_Baths_4453.jpg?width=800",
+        "image_credit": "South Agora and pool, Aphrodisias · Wikimedia Commons"
       }
     },
     {
@@ -26899,7 +26901,9 @@
           "https://www.miletgrabung.uni-hamburg.de/en/milet-tour/tour-stadtzentrum/bouleuterion.html",
           "https://www.perseus.tufts.edu/hopper/artifact?name=Miletus,+Bouleuterion&object=Building"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Miletus_Buleuterion_in_2007_4593.jpg?width=800",
+        "image_credit": "Bouleuterion of Miletus · Wikimedia Commons"
       }
     },
     {
@@ -27143,7 +27147,9 @@
           "https://sardisexpedition.org/en/essays/about-sardis",
           "https://en.wikipedia.org/wiki/Sardis_Synagogue"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Bath-Gymnasium_complex_at_Sardis,_late_2nd_-_early_3rd_century_AD,_Sardis,_Turkey_(16391012853).jpg?width=800",
+        "image_credit": "Bath-Gymnasium complex at Sardis · Wikimedia Commons"
       }
     },
     {
@@ -27200,6 +27206,8 @@
           "https://www.britannica.com/place/Sardis"
         ],
         "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sardis_acropolis.jpg?width=800",
+        "image_credit": "Acropolis of Sardis · Wikimedia Commons",
         "ancient_sources": [
           {
             "author": "Herodotus",
@@ -27955,7 +27963,9 @@
           "https://en.wikipedia.org/wiki/Red_Basilica",
           "https://www.thearchaeologist.org/blog/the-red-basilica-kzl-avlu-the-monumental-ruined-temple-in-the-heart-of-bergama-city"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bergama_-_Serapeion_-_k%C4%B1z%C4%B1l_avlu-_Red_basilica_-_panoramio.jpg?width=800",
+        "image_credit": "Red Basilica (Kızıl Avlu), Bergama · Wikimedia Commons"
       }
     },
     {
