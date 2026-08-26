@@ -7,6 +7,245 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 62 — 2026-08-26 (this shift's own prompt claimed "Shift 3 of four")
+
+Same stale-numbering mismatch shift 61 (and several before it) already flagged — continuing the
+real sequential count rather than restarting at the prompt's own claimed number. Session started
+detached at `origin/main`'s real head (`edffed1`, shift 61's own last commit), but with a stale
+*local* `main` branch cached from a much earlier point (`5093cbe`, pre-dating shift 41) — the
+first `git checkout -B main origin/main` ran before `git fetch`, so it silently recreated `main`
+at the stale cached ref instead of the real head. Caught immediately by a sanity `git log`
+mismatch against `SHIFT_LOG.md`'s own top entry; `git fetch origin main` + a second
+`git checkout -B main origin/main` fixed it cleanly, no lost work. Re-confirmed the standing
+network finding independently: direct `curl` to `en.wikipedia.org`, `overpass-api.de`,
+`commons.wikimedia.org`, `pleiades.stoa.org` all still `CONNECT tunnel failed, response 403`.
+Background `Agent` calls with `WebSearch` remained the only working research channel — used 11 of
+them this shift, all reviewed and hand-merged, nothing auto-committed.
+
+### Board check
+
+No `[~]` claims standing at session start. Reviewed `BOARD.md`'s open P0/P1 tickets — same
+conclusion recent shifts reached: `[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]`
+card-rebuild, `[02-P0-1]` terrain, `[13-P0-2]` image-audit, `[02-P0-4]` self-host-glyphs (needs
+local PBF-generation tooling), `[10-P0-2]` three-depth-labels (a genuine multi-shift project) are
+all either network-blocked or too large for one unattended session. Did claim and close one
+standing-task ticket properly scoped for this session: `[06-P0-2]` curate-buildings — see below.
+
+### Track A — Balkans + Danube queue opens (37 POIs: Salona/Split, Viminacium/Naissus, Serdica,
+### Sirmium, Butrint)
+
+Five parallel background WebSearch research agents (one per city pair/city), each hand-reviewed
+before merging via `scripts/append-geojson-features.mjs` (no full-file rewrites). Per
+`SHIFT_BRIEF.md`'s own Axis-1 order, Balkans + Danube is next after Germania + Rhine, which shift
+61 closed. Checked existing coverage first: Salona had 1 POI (a necropolis), Viminacium had 1 (its
+legionary fortress), Split/Naissus/Serdica/Sirmium/Butrint had zero.
+
+**Salona** (8): the forum, theatre, Porta Caesarea gate, Augustan aqueduct, and the "urbs vetus"
+Republican-era city wall all trace to the same Augustan-colony building push, comfortably pre-117
+— with a genuine ancient-source hit, the *Bellum Alexandrinum*'s account of a 47 BCE Pompeian
+siege the walls survived. The amphitheatre (~170 CE) and Great Thermae (~190 CE) are both real
+dating traps, correctly flagged `extant_117ce:false` — 50+ years too late for a snapshot most
+casual sources would default to "ancient enough."
+
+**Split** (1): an honest near-zero, as the brief itself anticipated. Ancient sources agree
+Spalatum was a minor fishing hamlet, unmentioned in writing before the 4th century — no forced
+"Diocletian's-Palace-adjacent" entry. The one real find: a 2,000 m² villa rustica excavated in
+2026 at Mostine, an olive-oil farm dated as early as the 1st century CE that supplied Salona,
+discovered ahead of a shopping-mall expansion. Coordinates approximate (exact dig GPS unpublished).
+
+**Viminacium** (6 new, deepening its existing fortress record) + **Naissus** (3, opening): the
+amphitheatre's Trajanic timber phase, a legionary bathhouse, and the huge excavated Vise
+Grobalja/Pecine necropolis (10,700+ graves) all cleared 117; Viminacium's famous painted vaulted
+mausoleum (~300 CE, Constantinian fresco style) and its own civic forum (chartered as a
+*municipium* "in 117 or 117-118" — but Hadrian only took the throne 11 August 117, so a forum
+built for a *fresh* charter almost certainly postdates the exact snapshot moment) are both
+correctly `false`. Naissus is genuinely thin pre-117 — its famous 22-hectare civic core with
+forum/basilica/bath is Antonine-dated (161+ CE), decades too late; what survives the cut is only
+the settlement's road-junction/military-camp function, at low-to-medium confidence since no
+excavated Roman-period fort plan has been published.
+
+**Serdica** (6): the honestly-thin result of a genuine search, not a skipped one. Sofia's famous
+"Ancient Serdica" tourist ruins — the four-gated wall circuit, the amphitheatre, the Rotunda of
+St George baths, the St Nedelya thermae — are almost entirely Marcus Aurelius-to-Constantinian
+(170-320s CE), 50-200 years too late. Only a stretch of the Trajanic Via Militaris, paved during
+the 101-106 CE Dacian Wars, clears the 117 CE bar. One record (a hypothesized "civic core" at
+Largo excavations with no pinnable single structure) was dropped on review as too vague to ship.
+
+**Sirmium** (5, opening): the future Tetrarchic capital's imperial-palace/hippodrome phase (3rd-4th
+c.) was deliberately excluded outright rather than shipped false-flagged and padding the count.
+What's real and pre-117: the Flavian-colony rampart and forum, a beneficiarii road-checkpoint
+shrine to Jupiter (80+ altars recovered), a necropolis, and the Sava river harbor — the last with
+a genuine Pliny the Elder citation (*NH* 3.148) naming Sirmium among the Pannonian towns.
+
+**Butrint** (9, opening): the strongest single-city yield this shift — 7 of 9 records clear 117,
+including the Sanctuary of Asclepius, the Roman Forum (with a real Cicero *Ad Atticum* citation on
+the Buthrotum land dispute — Atticus's estate there, threatened by Caesar's veteran-colony plan),
+the Hellenistic-then-inherited city walls, an Augustan bathhouse and aqueduct/nymphaeum pair. The
+Well of Junia Rufina (132 CE, tied to Hadrian's own attested 132 CE visit to Epirus) and the
+famous Triconch Palace (~400 CE) are both correctly excluded — the latter is the site's most
+photographed ruin and the easiest trap to fall into.
+
+**Province correction**: this shift's own initial research brief said "Achaea" for Butrint; the
+research agent corrected it to **Epirus** — Trajan split a new province of Epirus out of
+Achaea/Macedonia around 103-110 CE, so Butrint (and later Nicopolis, see below) sat in Epirus, not
+Achaea, at the exact 117 CE snapshot. Verified independently by both agents; kept.
+
+**Gazetteer fix**: none of the seven cities had any `places_medium.geojson` entry — same gap class
+prior shifts found repeatedly. Added 7 `major:1` entries (ids `900029`-`900035`).
+
+### Track A — Greece & Aegean queue opens (29 POIs: Thessaloniki, Nicopolis, Mycenae, Sparta,
+### Aegina)
+
+With the Balkans + Danube queue closed and well inside the shift, opened the brief's next Axis-1
+region (Greece & Aegean) rather than stop at the minimum — three more parallel research agents.
+
+**Thessaloniki** (8, opening): the city's single most famous ruin, the two-terraced marble "Roman
+Forum" (cryptoporticus, Caryatid stoa, odeon), is a real dating trap — Antonine-to-Severan,
+completed ~200-210 CE, 80-90 years too late — correctly `false`, with a separate, more modest
+early-Roman agora record standing in for what a 117 CE visitor actually found. The Arch of
+Galerius (298-305 CE) was excluded per the brief's own explicit warning. A less obvious trap: the
+city walls, built 315 BCE, had already fallen into disrepair under the Pax Romana by the mid-1st
+century and weren't rebuilt until the 253/4 CE Gothic siege — Thessalonica was effectively
+unwalled in 117 CE, `false` with the reasoning spelled out rather than defaulted to `true` on the
+strength of Cassander's original founding date.
+
+**Nicopolis** (8, opening — the Epirus city, not the unrelated Egyptian Nicopolis already on the
+map under a different POI): Augustus's original five-year building program (walls, the Actium
+victory monument with its 35 recovered bronze ship-rams, theatre, odeon, stadium, the Comarus
+harbor) all comfortably predate 117. The Central Baths (Severan, ~200 CE) are a clean exclusion;
+the aqueduct's date is genuinely disputed among sources (Augustan/Neronian vs. Hadrianic) and
+defaulted `false` per the "uncertain → false" rule rather than assumed early. A real ancient-source
+hit ties the theatre record to Epictetus's own school — Arrian's preface to the *Discourses*
+describes taking down the philosopher's lectures at Nicopolis as a young student around 108 CE,
+closing the loop on `SHIFT_BRIEF.md`'s own axis-4a mention of Epictetus.
+
+**Mycenae** (3, opening): an honest "ruins as tourist curiosity" result rather than a fabricated
+Roman town — the Lion Gate, the Treasury of Atreus tholos tomb, and a small Hellenistic temple all
+physically stood in 117 CE, but the site had no active Roman-period settlement, civic building, or
+functioning cult; Pausanias (touring ~150 CE) found only ruins reached by a shepherd's path. All
+three ship `extant_117ce:true` (the structures stood) with notes that say plainly they were relics,
+not a living city.
+
+**Sparta** (5, opening): real Roman-period construction exists, but the chronology is unforgiving
+to the two structures most people picture as "Roman Sparta" — the Sanctuary of Artemis Orthia's
+famous horseshoe stone grandstand (built for spectators of the ritual flogging contest, but not
+until after 225 CE) and the marble Roman Stoa (tied to a benefactor, Gaius Julius Eurycles
+Herculanus, whose own Senate career only began after Hadrian's 117 CE accession) are both
+correctly `false`. What's real and pre-117: the Augustan-built theatre with its Vespasian-gifted
+78 CE marble stage, the Artemis Orthia sanctuary itself (temple, altar, and the ritual — just not
+yet its grandstand), and the Archaic Temple of Athena Chalkioikos.
+
+**Aegina** (5, opening): a quiet, honest picture — a faded naval power coasting on Archaic-era
+monuments (the Temple of Aphaia, the Temple of Apollo at Kolona, the Aiakeion hero-shrine, the
+old harbors, a theatre/stadium complex) that all remained standing through the Roman period with
+no evidence of new Roman-era construction. No forced "Roman Aegina" narrative — the research
+explicitly declined to invent one.
+
+**Gazetteer fix**: Thessaloniki, Sparta, and Aegina already had gazetteer entries from earlier
+shifts (checked before assuming a gap); Nicopolis and Mycenae did not — added 2 `major:1` entries
+(ids `900036`-`900037`).
+
+### Track A — image top-up (4 of 27 image-less Balkans POIs closed)
+
+Two more research agents targeted the 27 of 37 new Balkans-batch POIs that shipped without an
+`image_url` (invariant 1.6 treats this as an incomplete record). Confirmed real Commons hits for
+4: Butrint's Asklepieion, city walls, and nymphaeum, plus Sirmium's city walls. The other 23 came
+back honestly empty — mostly buried excavations under modern city squares (Serdica's Via
+Militaris/thermae/temple, Sirmium's forum/beneficiarii-station/necropolis/harbor) with no
+dedicated Commons photography, one 2026 news-only find (Mostine villa) with nothing yet uploaded
+to Commons, and two cases where the only plausible candidate would have duplicated an image
+already used on a different, nearby POI (Salona's urbs-vetus-walls vs. its own Porta Caesarea
+entry; Viminacium's painted-mausoleum vs. its own necropolis entry) — declined rather than ship a
+visibly-duplicate photo across two distinct map markers.
+
+**Real bug caught applying these**: the first merge attempt used a full `json.load`/`json.dump`
+rewrite of `pois.geojson` to patch in the 4 new `image_url` fields — despite matching the file's
+own `indent=1`/`ensure_ascii=False` convention exactly, it still reformatted all ~25,000 lines of
+the file (confirmed via `git diff --stat` before committing, never pushed). Reverted with
+`git checkout --`, redone as four targeted `Edit` string replacements instead — a 16-line diff.
+Exactly the trap `FEATURE_BACKLOG.md` has flagged at least three times before for `pois.geojson`;
+this is a fourth independent confirmation that only text-splice/targeted-edit approaches are safe
+on this file, never a full re-serialize even with matching format settings.
+
+### Track B — `[06-P0-2]` curate-buildings closed: Rome, the 40th and last site (35 entries)
+
+Checked `BOARD.md`'s own note first: Rome (289 named OSM features) was the one site left of the
+standing task's 40, flagged "big — split across passes." Read `rome_buildings.geojson` directly
+(3,557 total features, no Overpass fetch needed) and pre-filtered to the 63 carrying a real OSM
+`historic` tag before handing the list to a research agent — cut the search space from "everything
+in modern Rome" to a tractable, honest set. Of those 63: 21 are churches/medieval structures
+(skipped), 21 duplicate an existing standalone `pois.geojson` marker (Colosseum, Pantheon, Forum
+Romanum, Arch of Titus, Trajan's Forum/Column/Markets, the Baths of Trajan/Titus/Nero, and more —
+those always win the click first, so curating the shadowed polygon underneath would be unreachable
+dead code, the exact shape Ephesus's and Delphi's own files already documented), and 35 are real,
+distinct, individually-dated monuments — now `app/romeDescriptions.ts`, wired into `Map.tsx`.
+
+27 of the 35 ship `extant_117ce:true` (the four Republican temples at Largo Argentina, the Forum
+Boarium/Holitorium temple row, Trajan's own Seven Halls Cistern and equestrian statue, the Servian
+Wall, the Golden Milestone); 8 ship `false` (the Arches of Constantine/Septimius Severus/Janus/the
+Argentarii — all Severan-to-Constantinian, 86-198 years too late — and the base of the Colossus of
+Nero, which Hadrian didn't move to its Colosseum-adjacent spot until ~128 CE, eleven years after
+the snapshot; on 11 August 117 the statue still stood at its original Neronian site). Three
+researched candidates were dropped rather than force-dated: "Tempio della Speranza (?)" (the "(?)"
+in its own OSM name reflects genuine unresolved scholarly dispute), "Tempio di Iside a via
+Labicana" (dating straddles 117 directly), and "insula Volusiana" (build phase starts "Hadrianic,"
+the same day as the snapshot).
+
+**Real bug caught before shipping**: verified every key with a Python replica of the app's own
+longest-key-first substring matcher run against every real OSM name in `rome_buildings.geojson` —
+caught that the short key `"Tempio D"` was a literal substring of three unrelated names ("Tempio
+**d**ella Speranza", "Tempio **d**el Divo Giulio", "Tempio **d**i Iside a via Labicana") and would
+have silently mislabeled two of the three deliberately-dropped candidates with Temple D's content.
+Fixed with an exact-match guard for the three short Tempio B/C/D keys in `romeEntry()`. Re-ran the
+harness clean: 36 real keys (35 monuments + the deliberate Apollo/Apollo Sosiano double-key), zero
+remaining false matches.
+
+`npm run metrics` confirms `[06-P0-2]`'s standing task is now complete: 40/40 sites.
+
+### Numbers
+
+`pois.geojson`: 791 → 857 (+66, +8.3%), across three commits (37 Balkans, 29 Greece, 4 image-only
+edits folded into the Greece commit). `places_medium.geojson`: 16,342 → 16,351 (+9 gazetteer
+entries). `app/romeDescriptions.ts`: new file, 35 entries, wired into `Map.tsx`. 12 cities newly
+opened or meaningfully deepened (Salona, Split, Viminacium, Naissus, Serdica, Sirmium, Butrint,
+Thessaloniki, Nicopolis, Mycenae, Sparta, Aegina) — well past the axis-1 per-shift minimum of 5.
+`npm run validate`: clean across all four pushes, same 17 pre-existing warnings, 0 errors.
+`npm run build` + `tsc --noEmit`: clean every time (857 `/place/[slug]` routes by the final push).
+METRICS.md refreshed twice.
+
+### Track B
+
+Closed `[06-P0-2]` curate-buildings — see above. First shift in four to actually land a Track B
+item rather than decline one; the difference this time was picking a ticket the board's own notes
+had already pre-scoped and partially vetted (Rome's candidate list), rather than trying to scope
+one cold from the full backlog under time pressure.
+
+### Next shift should pick up
+
+- **Next regional queue after Greece & Aegean is Asia Minor** per the brief's Axis 1 order:
+  Pergamon (already in as a full site — check for curated-POI depth rather than assuming
+  untouched), Aphrodisias, Hierapolis, Miletus, Sardis, Antalya, Nicaea, Nicomedia.
+- **Image top-up has real remaining headroom**: of this shift's 66 new `pois.geojson` records, 24
+  carry a real `image_url` (36%, mostly from the original research agents' own Commons hits plus
+  the 4-record top-up pass) and 42 still don't — Serdica's buried-excavation cluster and most of
+  Sirmium/Naissus/Viminacium's less-photographed records are the biggest remaining pool. `npm run
+  metrics` shows site-wide image coverage at 55.7% (477/857), so this shift's own batch sits below
+  the map's overall average — worth a dedicated follow-up pass, or folding image-search into the
+  research-agent prompt from the start next time rather than treating it as an afterthought.
+- **`[09-P0-1]` ancient-sources**: this shift's own research added 17 fresh `ancient_sources`
+  citations across the 66 new records — Bellum Alexandrinum (Salona's 47 BCE siege), Pliny the
+  Elder (Salona's forum, Sirmium's harbor), Cicero's Ad Atticum (Butrint's forum), Arrian's
+  Epictetus preface (Nicopolis's theatre), Cassius Dio (Nicopolis's harbor), and Pausanias
+  (Aegina x1, Mycenae x3, Sparta x2). `npm run metrics`'s site-wide ancient-source percentage
+  (29.9%, 256/857) already reflects these — confirmed directly rather than left as a todo.
+- **The full-file-rewrite trap on `pois.geojson` bit a fourth time this shift** (see the image
+  top-up section above) — worth actually enforcing this at the tooling level (a pre-commit check
+  that rejects a `pois.geojson` diff touching more than, say, 200 lines when only a handful of
+  fields changed) rather than relying on each shift's own `git diff --stat` habit to catch it
+  before pushing.
+
+---
+
 ## Shift 61 — 2026-08-26 (this shift's own prompt claimed "Shift 2 of four")
 
 Same stale-numbering mismatch every shift since #13 has flagged — `SHIFT_LOG.md` was 60 real

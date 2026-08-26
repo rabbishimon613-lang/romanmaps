@@ -672,6 +672,41 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       prior shifts already found. `[09-P1-4]` epigraphy (inscriptions rather than literary
       sources) remains the more promising untapped channel for this specific pool.
 
+## New ideas spotted this shift (2026-08-26, cloud shift — Balkans/Greece batches, Rome curate-buildings closes)
+
+- [x] **`[06-P0-2]` curate-buildings is now complete — 40/40 sites.** Rome was the last, closed this
+      shift with 35 entries (`app/romeDescriptions.ts`). Pre-filtering by OSM `historic` tag before
+      handing candidates to a research agent (rather than researching all 3,557 named features)
+      is the reusable pattern for any future site this large — see `SHIFT_LOG.md` for the full
+      breakdown of what got skipped and why.
+- [ ] **A real substring-collision bug was caught in `romeDescriptions.ts` before shipping, worth a
+      standing reminder for every future `*Descriptions.ts` file**: a short lookup key like
+      `"Tempio D"` is a literal substring of any unrelated name starting the same way (`"Tempio
+      della..."`, `"Tempio del..."`, `"Tempio di..."`), which the existing longest-key-first
+      substring matcher doesn't protect against on its own — only length ordering, not word
+      boundaries. Fixed with an exact-match-only guard for the short keys. Worth checking any
+      existing `*Descriptions.ts` file for a similarly short (under ~10 char) key that could be
+      hitting the same silent false-match today.
+- [ ] **The `pois.geojson` full-file-rewrite trap bit a fourth time this shift**, this time on a
+      4-record image-only top-up, not a big batch — confirming it's not just a large-diff problem.
+      A `json.load()`/`json.dump()` round-trip that matches the file's own `indent=1` and
+      `ensure_ascii=False` exactly *still* reformatted all ~25,000 lines (root cause not fully
+      diagnosed — possibly key-ordering or float-representation drift somewhere in the 828+
+      existing records). Caught via `git diff --stat` before committing, reverted, redone as
+      targeted `Edit` string replacements (16-line diff). Worth the tooling-level fix a prior
+      shift already proposed: a pre-commit/pre-push check that rejects a `pois.geojson` diff
+      touching more lines than the number of fields actually changed.
+- [ ] **Next Axis 1 region after Greece & Aegean is Asia Minor** per the brief's own order:
+      Pergamon (already a full `sites.ts` site — check curated-POI depth before assuming
+      untouched), Aphrodisias, Hierapolis, Miletus, Sardis, Antalya, Nicaea, Nicomedia.
+- [ ] **Image coverage on this shift's own 66 new POIs sits below the map's overall average** —
+      24/66 (36%) vs. the site-wide 55.7% (477/857). The two-pass approach (research first, hunt
+      images after in a second agent round) worked but cost real time; folding image-search
+      directly into the research-agent prompt from the start would likely close more of the gap
+      in one pass instead of two. Remaining image-less pool skews toward buried/excavated sites
+      under modern city squares (Serdica, most of Sirmium) with genuinely thin Commons coverage —
+      not every gap is closeable, but it's worth another dedicated attempt before assuming that.
+
 ## Shipped (moved from above; newest on top)
 
 - 2026-08-24 — a cloud shift: Appearance / theme toggle (System / Light / Dark in the

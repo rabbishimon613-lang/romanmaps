@@ -585,7 +585,29 @@ to prevent. Building locally to *test* your own work is expected and fine.
       passes), Carnuntum (checked this shift: only 8 named features, all modern Petronell village,
       zero Roman content — skip like Ravenna/Aquincum/Xanten), Ancona (checked: 66 named features
       but only "Foro romano" and "Porto traianeo" look genuinely Roman among them, worth a look but
-      likely a thin Trier-sized batch, not researched this shift).
+      likely a thin Trier-sized batch, not researched this shift).*
+      *Ancona done by a later shift (not separately logged here — `app/anconaDescriptions.ts`
+      confirmed on disk: 3 entries, "Foro romano"/"Porto traianeo"/"Domus", matching this note's
+      own prediction exactly).*
+      *Rome done 2026-08-26 by a cloud shift: 35 entries in `app/romeDescriptions.ts`, the largest
+      single batch this ticket has landed. Pre-filtered Rome's 3,557 named OSM building features
+      down to the 63 carrying a real `historic` tag before researching, then dropped 21 duplicating
+      an existing standalone `pois.geojson` marker (Colosseum, Pantheon, Forum Romanum, Trajan's
+      Forum/Column/Markets, and more — always win the click first) and 21 churches/medieval
+      structures, landing on 35 real, distinct, individually-dated monuments. 27 ship
+      `extant_117ce:true` (the four Largo Argentina Republican temples, the Forum Boarium/Holitorium
+      row, Trajan's Seven Halls Cistern and equestrian statue, the Servian Wall, the Golden
+      Milestone); 8 ship `false` (four Severan-to-Constantinian arches, and the base of the Colossus
+      of Nero — Hadrian didn't relocate the statue there until ~128 CE, eleven years after the
+      snapshot). Caught and fixed a real substring-collision bug before shipping: the short key
+      "Tempio D" was a literal substring of three unrelated names ("Tempio **d**ella Speranza",
+      "Tempio **d**el Divo Giulio", "Tempio **d**i Iside a via Labicana") and would have mislabeled
+      two deliberately-dropped low-confidence candidates; fixed with an exact-match guard for the
+      three short Tempio B/C/D keys. Verified every key against a Python replica of the app's own
+      longest-key-first substring matcher run over every real OSM name in the site's building file.
+      **Standing task now complete — 40/40 sites** (Carnuntum, Ravenna, Aquincum, and Xanten remain
+      permanently out of scope: all four checked and confirmed to have zero genuine Roman-era
+      content in their own OSM building extracts, same finding independently reached for each).*
 - [x] `[10-P0-3]` **`flagship-depth`** `deepen` — Bring POIs whose `notes` runs under 60 words up
       to real panel depth in that same field, worst-first. This is the **panel tier of
       `[10-P0-2]`** applied to the places that need it most; the tombstone/label tiers still need
