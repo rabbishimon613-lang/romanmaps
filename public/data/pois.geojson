@@ -16671,7 +16671,9 @@
           "http://worldimages.sjsu.edu/objects-1/info?page=38&query=Portfolios%3D91"
         ],
         "confidence": "high",
-        "ancient_sources": []
+        "ancient_sources": [],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Table%20de%20mesure%20au%20march%C3%A9%20de%20Dj%C3%A9mila.jpg?width=800",
+        "image_credit": "Measuring table, Market of Cosinius, Djemila · Wikimedia Commons"
       }
     },
     {
@@ -17614,7 +17616,9 @@
           "https://en.wikipedia.org/wiki/Jerash"
         ],
         "confidence": "medium",
-        "ancient_sources": []
+        "ancient_sources": [],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2019%20Israel%20Jordanien%200422%20Jerash%20South%20Gate.JPG?width=800",
+        "image_credit": "Steffen 962, South Gate at Jerash · Wikimedia Commons (CC BY-SA 4.0)"
       }
     },
     {
@@ -18141,6 +18145,8 @@
           "https://en.wikipedia.org/wiki/Augusta_Treverorum"
         ],
         "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roemische%20Ruwerwasserleitung%20Waldrach.jpg?width=800",
+        "image_credit": "Roman Ruwer aqueduct remains, Waldrach · Wikimedia Commons",
         "ancient_sources": []
       }
     },
@@ -18913,7 +18919,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Hercules%20Victor%20(13976241573).jpg?width=800",
-        "image_credit": "Sanctuary of Hercules Victor, Tivoli · Wikimedia Commons"
+        "image_credit": "Sanctuary of Hercules Victor, Tivoli · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "5.3.11",
+            "note": "Notes that Tibur has a notable temple of Hercules, naming it alongside the town's famous waterfall on the Anio."
+          }
+        ]
       }
     },
     {
@@ -19154,7 +19168,15 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Hadrian's_Villa"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Historia Augusta",
+            "work": "Life of Hadrian",
+            "ref": "26.5",
+            "note": "Describes how Hadrian built his villa at Tibur and named sections of it after famous places he had seen on his travels, including the Lyceum, Academy, Prytaneum, Canopus, and even a Hades."
+          }
+        ]
       }
     },
     {
@@ -19207,7 +19229,15 @@
           "https://www.worldhistory.org/article/1643/sanctuary-of-fortuna-primigenia-at-palestrina/",
           "https://en.wikipedia.org/wiki/Temple_of_Fortuna_Primigenia"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Cicero",
+            "work": "De Divinatione",
+            "ref": "2.85-87",
+            "note": "Recounts the legendary origin of the Praenestine oracle, in which Numerius Suffustius split open a rock to reveal wooden lots inscribed with letters, then argues against the validity of divination by these sortes."
+          }
+        ]
       }
     },
     {
@@ -21246,7 +21276,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20foundations%20of%20the%20Zeus%20Altar,%20Acropolis,%20Pergamon,%20Turkey%20(8416114389).jpg?width=800",
-        "image_credit": "Foundations of the Great Altar of Zeus, Pergamon · Wikimedia Commons"
+        "image_credit": "Foundations of the Great Altar of Zeus, Pergamon · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pausanias",
+            "work": "Description of Greece",
+            "ref": "5.13.8",
+            "note": "Compares the ash-built altar of Zeus at Olympia to a similarly ash-constructed altar of Zeus at Pergamon; scholars debate whether he means this monumental altar or a separate, older one on the same acropolis."
+          }
+        ]
       }
     },
     {
@@ -21984,7 +22022,15 @@
           "https://en.wikipedia.org/wiki/Jardin_des_Vestiges",
           "https://www.atlasobscura.com/places/le-jardin-des-vestiges"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Caesar",
+            "work": "Bellum Civile",
+            "ref": "2.1-16",
+            "note": "Gives a detailed account of Trebonius's siege of Massilia on Caesar's behalf, including the city's walls, siege towers, and mines, and a truce broken when the defenders burned the siege works."
+          }
+        ]
       }
     },
     {
@@ -22066,6 +22112,510 @@
           "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0006%3Aentry%3Dmassalia"
         ],
         "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.306,
+          46.9578
+        ]
+      },
+      "properties": {
+        "id": "poi_porte_saint_andre_autun",
+        "category": "gate",
+        "name_latin": "Porta Orientalis (conventional)",
+        "name_english": "Porte Saint-Andre, Autun",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Autun, France",
+        "built": -15,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman engineers raised this gate as the eastern threshold of Augustodunum around 15 BCE, cutting four passages through its face: two broad bays for cart traffic and two narrow ones for pedestrians. Large quadrangular limestone blocks from the Chalonnais quarries still lock together without mortar in the surviving arches. No other city in Gaul kept a Roman gate standing this complete above street level, and by 117 CE it had already carried two centuries of traffic in and out of the Aeduan capital.",
+        "sources": [
+          "https://www.autun-tourisme.com/en/offers/porte-saint-andre-autun-en-3456760/",
+          "https://fr.wikipedia.org/wiki/Porte_Saint-Andr%C3%A9"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Autun%20-%20Porte%20Saint-Andr%C3%A9.jpg?width=800",
+        "image_credit": "Porte Saint-Andre, Autun · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2954,
+          46.9599
+        ]
+      },
+      "properties": {
+        "id": "poi_porte_arroux_autun",
+        "category": "gate",
+        "name_latin": "Porta Senonica (conventional)",
+        "name_english": "Porte d'Arroux, Autun",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Autun, France",
+        "built": -10,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This gate marked the northern end of Augustodunum's main street and was one of the very first monuments raised when the city was founded and named for Augustus. Two large arcades once let carts roll through side by side, flanked by two smaller footpaths still visible today. Historians place its completion somewhere in the last decades of Augustus's reign, more than a century ahead of Trajan's death in 117 CE, and it has stood at this river crossing for over two thousand years.",
+        "sources": [
+          "https://www.autun-tourisme.com/en/offers/porte-darroux-autun-en-3456761/",
+          "https://fr.wikipedia.org/wiki/Porte_d%27Arroux"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porte-Arroux-Autun.jpg?width=800",
+        "image_credit": "Porte d'Arroux, Autun · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.31,
+          46.9528
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_autun",
+        "category": "theater",
+        "name_latin": "Theatrum Augustodunense (conventional)",
+        "name_english": "Roman Theatre of Autun",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Autun, France",
+        "built": 70,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Builders raised this theatre on the eastern edge of Augustodunum in the decades after 70 CE, giving it a 148-meter diameter that made it the largest theatre in Roman Gaul. Three semicircular tiers of seating, cut by radiating staircases, once held as many as 20,000 spectators for comedy, tragedy, and civic assembly. When Trajan died in 117 CE the theatre had already been staging performances for roughly two generations.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_romain_d%27Autun",
+          "https://www.autun-tourisme.com/en/offers/theatre-romain-autun-en-3456758/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theatre%20autun%20panorama.jpg?width=800",
+        "image_credit": "Roman Theatre of Autun · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2884,
+          46.9576
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_janus_autun",
+        "category": "temple",
+        "name_latin": "Fanum Augustodunense",
+        "name_english": "Temple of Janus, Autun",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Autun, France",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A Romano-Celtic sanctuary rose northwest of Augustodunum around the turn of the 2nd century CE, built around a square cella ringed by a covered walkway. Two of its four cella walls still stand more than 20 meters tall today, an unusually complete survival for this style of temple. No inscription has ever confirmed which god the sanctuary actually honored, despite the popular but almost certainly wrong \"Janus\" label attached centuries later; whichever god it was, the building was already an established local landmark well before Trajan died in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Janus_(Autun)",
+          "https://fr.wikipedia.org/wiki/Temple_de_Janus_(Autun)"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Autun%20-%20Temple%20de%20Janus%20-%202.jpg?width=800",
+        "image_credit": "Temple of Janus, Autun · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3141,
+          46.9433
+        ]
+      },
+      "properties": {
+        "id": "poi_pyramid_couhard_autun",
+        "category": "mausoleum",
+        "name_latin": "Pyramis Augustodunensis (conventional)",
+        "name_english": "Pyramid of Couhard",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Autun, France",
+        "built": 75,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Set within Augustodunum's Champ des Urnes necropolis, this square-based pyramid rose 22.65 meters on a 10.5-meter base, its outer facing stone long since stripped away. No burial chamber has ever been found inside it, leaving its exact purpose a mystery archaeologists still argue over. Most evidence points to a 1st-century CE build, so it had already watched over the Aeduan dead for decades by the time news of Trajan's death reached Gaul in August 117 CE.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Pyramide_de_Couhard",
+          "https://www.autun-tourisme.com/en/offers/pierre-de-couhard-autun-en-3456763/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Autun%20Pyramide%20de%20Couhard.jpg?width=800",
+        "image_credit": "Pyramid of Couhard, Autun · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.0246,
+          49.2564
+        ]
+      },
+      "properties": {
+        "id": "poi_porte_mars_reims",
+        "category": "gate",
+        "name_latin": "Porta Martis (conventional)",
+        "name_english": "Porte de Mars, Reims",
+        "province": "Gallia Belgica",
+        "modern_location": "Reims, France",
+        "built": 210,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A monumental triple archway rose in Durocortorum in the early 3rd century CE, stretching 32 meters long and 13 meters high, the widest triumphal arch to survive anywhere in the Roman world. Carved reliefs along its vault show Romulus and Remus nursed by the wolf and Leda with Jupiter as a swan. Built roughly a century after Trajan's death, it did not yet exist on 11 August 117 CE; later builders folded it into the medieval city wall, where it stayed hidden until demolition work fully re-exposed it in the 1840s and 50s.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Porte_de_Mars",
+          "https://followinghadrian.com/2013/10/10/picture-of-the-week-the-porte-mars-an-ancient-roman-triumphal-arch-in-reims-france-and-the-widest-arch-in-the-roman-world/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Reims%20Porte%20de%20Mars%2002.jpg?width=800",
+        "image_credit": "Porte de Mars, Reims · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.0338,
+          49.2566
+        ]
+      },
+      "properties": {
+        "id": "poi_cryptoporticus_reims",
+        "category": "forum",
+        "name_latin": "Cryptoporticus Durocortori",
+        "name_english": "Cryptoporticus of Reims",
+        "province": "Gallia Belgica",
+        "modern_location": "Reims, France",
+        "built": 95,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Workers cut a U-shaped underground gallery beneath Durocortorum's forum around the turn of the 2nd century CE, its two long arms each running 60 meters and its northern arm 100 meters, all vaulted and once covered in painted plaster. Recent archaeomagnetic testing of the brickwork dates construction to roughly 90-100 CE, so it had already been supporting the forum square above for close to two decades when Trajan died in 117 CE. It survived intact because later residents repurposed it for storage instead of tearing it apart for stone.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Cryptoportique_de_Reims",
+          "https://www.bm-reims.fr/patrimoine/le-cryptoportique-de-reims.aspx?_lg=fr-FR"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Reims%20-%20cryptoportique%20(1).JPG?width=800",
+        "image_credit": "Cryptoporticus of Reims · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.0375,
+          49.2514
+        ]
+      },
+      "properties": {
+        "id": "poi_porte_bazee_reims",
+        "category": "gate",
+        "name_latin": "Porta Meridionalis (conventional)",
+        "name_english": "Porte Bazee, Reims",
+        "province": "Gallia Belgica",
+        "modern_location": "Reims, France",
+        "built": 200,
+        "destroyed": 1752,
+        "extant_117ce": false,
+        "notes": "A monumental arch once marked the southern end of Durocortorum's main street, where the road left the city for Rome. Builders raised it in the 2nd or 3rd century CE, well after Trajan's reign had ended, so it was not part of the city Trajan's contemporaries walked through in 117 CE. City authorities tore the arch down in 1752, leaving behind just one pier and a single heavily worn column that still stand inside a school courtyard today.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Porte_Baz%C3%A9e",
+          "https://www.fondation-patrimoine.org/les-projets/porte-bazee-a-reims/85229"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.0342,
+          49.2556
+        ]
+      },
+      "properties": {
+        "id": "poi_aqueduct_reims",
+        "category": "aqueduct",
+        "name_latin": "Aquaeductus Durocortori",
+        "name_english": "Roman Aqueduct of Reims",
+        "province": "Gallia Belgica",
+        "modern_location": "Reims, France",
+        "built": 20,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman engineers built a 44-kilometer channel around 20 CE to carry water from springs at Jonchery-sur-Suippe into Durocortorum, feeding the city's public baths and fountains for roughly four centuries. A single arched masonry fragment of that system survives today beside Place Royale, though nearly everything else lies buried under the modern street grid. The channel had already been delivering water to the Remi capital for almost a century by the time Trajan died in August 117 CE.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Aqueduc_de_Reims",
+          "https://pop.culture.gouv.fr/notice/merimee/PA00097846"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.729,
+          43.434
+        ]
+      },
+      "properties": {
+        "id": "poi_amphitheater_frejus",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum Forum Iulii",
+        "name_english": "Roman Amphitheatre of Frejus",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Frejus, France",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Forum Iulii raised its amphitheatre to hold roughly 10,000 spectators around an arena floor measuring 69 by 39 meters, ringing it with tiers of Esterel sandstone seating for gladiatorial bouts and public executions. By the time Trajan died in 117 CE the arena had already been staging games for a generation. Centuries later it became a stone quarry and even a rubbish tip before archaeologists finally cleared it in 1960.",
+        "sources": [
+          "https://www.historyhit.com/locations/arenes-de-frejus/",
+          "https://fr.wikipedia.org/wiki/Amphith%C3%A9%C3%A2tre_de_Fr%C3%A9jus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Frejus-amphitheatre-05.jpg?width=800",
+        "image_credit": "Roman Amphitheatre of Frejus · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.73812,
+          43.43698
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_frejus",
+        "category": "theater",
+        "name_latin": "Theatrum Forum Iulii",
+        "name_english": "Roman Theatre of Frejus",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Frejus, France",
+        "built": 15,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Forum Iulii's theatre was the city's first purpose-built entertainment venue, raised in Esterel sandstone on a gentle hillside so around 2,000 spectators could watch actors in full view. By 117 CE it had already hosted a century of performances near the city's Gate of Rome. It later served as a defensive bastion and a stone quarry before archaeologists excavated it in the 1920s.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_romain_de_Fr%C3%A9jus"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.735,
+          43.434
+        ]
+      },
+      "properties": {
+        "id": "poi_porte_gaules_frejus",
+        "category": "gate",
+        "name_latin": "Porta Galliarum (conventional)",
+        "name_english": "Porte des Gaules, Frejus",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Frejus, France",
+        "built": 15,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Forum Iulii's western gate opened directly onto the Via Aurelia, the road linking Rome to Gaul, through a monumental semicircle 50 meters across, flanked by round towers and a wide carriageway. It is the best preserved of the four gates that once pierced the city's 4-kilometer circuit wall. In 1919 excavators found the original paving still rutted by Roman cart wheels beneath the arch, which by 117 CE had funneled traffic between Italy and Gaul for roughly a century.",
+        "sources": [
+          "https://circuits.esterel-cotedazur.com/visiter/porte-des-gaules/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Frejus%20-%20Porte%20des%20Gaules%20-%201.jpg?width=800",
+        "image_credit": "Porte des Gaules, Frejus · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7412,
+          43.4377
+        ]
+      },
+      "properties": {
+        "id": "poi_aqueduct_frejus",
+        "category": "aqueduct",
+        "name_latin": "Aquaeductus Forum Iulii",
+        "name_english": "Roman Aqueduct of Frejus",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Frejus, France",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A 42-kilometer channel once carried water from the Siagnole springs down to Forum Iulii's water tower, crossing 36 separate masonry bridges along the way. By 117 CE the system had been feeding the city's fountains and baths for decades. Geologists have measured the mineral crust left inside the channel to show it stayed in continuous use for roughly three centuries; isolated arches still march across the landscape near the modern town entrance.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Aqueduc_de_Mons_%C3%A0_Fr%C3%A9jus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arche%20de%20l%27aqueduc%20romain%20de%20Fr%C3%A9jus%20(Var),%20%C3%A0%20l%27entr%C3%A9e%20de%20la%20ville.jpg?width=800",
+        "image_credit": "Roman aqueduct of Frejus · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7368,
+          43.4318
+        ]
+      },
+      "properties": {
+        "id": "poi_porte_doree_frejus",
+        "category": "bathhouse",
+        "name_latin": "Thermae Portus (conventional)",
+        "name_english": "Porte d'Oree, Frejus",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Frejus, France",
+        "built": 175,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "This freestanding arch, popularly called a golden gate, is actually the surviving frigidarium wall of the harbor baths that once served Forum Iulii's fleet quarter. Excavation of an associated drainage sewer dates its construction to the second half of the 2nd century CE, decades after Trajan's death, so no version of it stood on 11 August 117 CE. Coordinates are approximate, placed near the ancient harbor basin the baths served.",
+        "sources": [
+          "https://www.persee.fr/doc/ran_0557-7705_1990_num_23_1_1356"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.63,
+          45.75
+        ]
+      },
+      "properties": {
+        "id": "poi_arch_germanicus_saintes",
+        "category": "arch",
+        "name_latin": "Arcus Germanici",
+        "name_english": "Arch of Germanicus, Saintes",
+        "province": "Gallia Aquitania",
+        "modern_location": "Saintes, France",
+        "built": 18,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A wealthy Santon citizen named Caius Julius Rufus paid for this arch himself, dedicating it to Tiberius, Drusus, and Germanicus to mark the completion of the road linking Lyon to the Atlantic. It originally spanned the Roman bridge over the Charente, carrying traffic for well over a millennium, and by 117 CE had already stood watch over the crossing for a full century. The bridge itself was torn down in 1843 over Victor Hugo's public protest, and the rescued arch was moved stone by stone to its present riverbank site.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Arc_de_Germanicus",
+          "https://www.historyhit.com/locations/arch-of-germanicus/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arc%20de%20Germanicus.JPG?width=800",
+        "image_credit": "Arch of Germanicus, Saintes · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.64499,
+          45.746052
+        ]
+      },
+      "properties": {
+        "id": "poi_amphitheater_saintes",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum Mediolani Santonum",
+        "name_english": "Roman Amphitheatre of Saintes",
+        "province": "Gallia Aquitania",
+        "modern_location": "Saintes, France",
+        "built": 40,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Saintes built this amphitheatre around 40 CE by cutting directly into a natural hillside, letting the terrain itself carry much of the seating for a crowd of up to 15,000 -- one of the oldest amphitheatres in Roman Gaul, predating the Colosseum by roughly 40 years. Its arena floor stretches 66 by 39 meters, ringed by underground galleries that once held animals and gladiators before their entrances. It already stood as a mature, decades-old landmark of Mediolanum Santonum by the time Trajan died in 117 CE.",
+        "sources": [
+          "https://www.historyhit.com/locations/roman-amphitheatre-saintes/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ar%C3%A8nes%20romaines%20Saintes.JPG?width=800",
+        "image_credit": "Roman Amphitheatre of Saintes · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.633,
+          45.7465
+        ]
+      },
+      "properties": {
+        "id": "poi_baths_saint_saloine_saintes",
+        "category": "bathhouse",
+        "name_latin": "Thermae Mediolani Santonum",
+        "name_english": "Saint-Saloine Baths, Saintes",
+        "province": "Gallia Aquitania",
+        "modern_location": "Saintes, France",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "These public baths once covered 8,000 square meters, making them one of the largest thermal establishments in Roman Aquitania, complete with a monumental caldarium and its own fountain. Bathers were already using the complex for decades by 117 CE, more than a century before the city abandoned it as Saintes drew back within tighter walls in the 3rd century. A Christian shrine to Saint Saloine later rose on the ruins. Coordinates are an approximate placement within the ancient city, pending a precise site geocoding.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Thermes_de_Saint-Saloine_de_Saintes"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.612,
+          45.758
+        ]
+      },
+      "properties": {
+        "id": "poi_aqueduct_saintes",
+        "category": "aqueduct",
+        "name_latin": "Aquaeductus Mediolani Santonum",
+        "name_english": "Pont des Arcs Aqueduct, Saintes",
+        "province": "Gallia Aquitania",
+        "modern_location": "Fontcouverte, near Saintes, France",
+        "built": 20,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Saintes drew its water from springs up to 15 kilometers away, and its most dramatic surviving link is the Pont des Arcs, a 160-meter masonry bridge whose 27 arches once carried the channel 16 meters above a valley floor. The system delivered as much as 120,000 cubic meters of water a day to the fountains and baths of Mediolanum Santonum, and had already been running for the better part of a century when Trajan died in 117 CE. Coordinates mark the surviving arcaded piers near Fontcouverte; farmland has swallowed most of the rest of the line.",
+        "sources": [
+          "https://en.saintes-tourisme.fr/gallo-roman-aqueducts/",
+          "https://pop.culture.gouv.fr/notice/merimee/PA00105313"
+        ],
+        "confidence": "low"
       }
     }
   ]
