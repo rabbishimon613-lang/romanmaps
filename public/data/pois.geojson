@@ -26335,6 +26335,1628 @@
           }
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.72647,
+          37.70837
+        ]
+      },
+      "properties": {
+        "id": "poi_sebasteion_aphrodisias",
+        "category": "temple",
+        "name_latin": "Sebasteion",
+        "name_english": "Aphrodisias Sebasteion",
+        "province": "Asia",
+        "modern_location": "Geyre, Aydin Province, Turkey",
+        "built": 20,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Two prominent local families funded this temple to Aphrodite and the Julio-Claudian emperors between 20 and 60 CE. A 90-meter processional avenue ran between two three-story porticoes covered in marble relief panels of gods, emperors, and conquered peoples. By 117 CE it had stood finished and in active use for over half a century. Excavators uncovered it only in 1979.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sanctuary_of_Aphrodite_Aphrodisias",
+          "https://aphrodisias-excavations.com/sebasteion/",
+          "https://www.judaism-and-rome.org/sebasteion-aphrodisias-20-60-ce"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sebasteion_-_Aphrodisias.jpg?width=800",
+        "image_credit": "Sebasteion, Aphrodisias · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.72447,
+          37.71087
+        ]
+      },
+      "properties": {
+        "id": "poi_stadium_aphrodisias",
+        "category": "monument",
+        "name_latin": "Stadium Aphrodisiense",
+        "name_english": "Aphrodisias Stadium",
+        "province": "Asia",
+        "modern_location": "Geyre, Aydin Province, Turkey",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Built in the later 1st century CE, this marble stadium ran 270 meters long with 30 tiers of seats for 30,000 spectators, closed at both ends unlike a typical Greek stadium. Its slightly elliptical sides sharpened every sightline. Inscribed seats reserved blocks for the goldsmiths' and tanners' guilds. Athletes still ran, jumped, wrestled, and threw the discus here in 117 CE.",
+        "sources": [
+          "https://www.aphrodisias.org/en/stadium",
+          "https://www.worldhistory.org/image/3793/the-stadium-of-aphrodisias/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_stadium,_Aphrodisias,_Turkey_(16911544529).jpg?width=800",
+        "image_credit": "The Stadium, Aphrodisias · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.72397,
+          37.70757
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_aphrodisias",
+        "category": "theater",
+        "name_latin": "Theatrum Aphrodisiense",
+        "name_english": "Aphrodisias Theatre",
+        "province": "Asia",
+        "modern_location": "Geyre, Aydin Province, Turkey",
+        "built": -28,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Gaius Julius Zoilos, a freedman of Octavian who returned home rich and powerful, paid for this theatre's elaborate three-story marble stage building before 28 BCE and dedicated it to Aphrodite and the people. Carved into the slope of the acropolis mound, it seated several thousand for Greek-style drama and civic assembly. It had already stood for well over a century when Hadrian became emperor.",
+        "sources": [
+          "https://www.aphrodisias.org/en/ancient-theater",
+          "https://aphrodisias-excavations.com/theatre/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aphrodisias_Theatre_Stage_edge_inscription_062.jpg?width=800",
+        "image_credit": "Aphrodisias Theatre, stage inscription · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.72367,
+          37.70737
+        ]
+      },
+      "properties": {
+        "id": "poi_sculptors_workshop_aphrodisias",
+        "category": "monument",
+        "name_latin": "Officina Sculptorum",
+        "name_english": "Aphrodisias Sculptors Workshop",
+        "province": "Asia",
+        "modern_location": "Geyre, Aydin Province, Turkey",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A cluster of small rooms behind the Bouleuterion where Aphrodisian marble was carved into portraits and gods sent across the empire. Excavators found part-finished statues abandoned mid-carving alongside older pieces brought in for repair. Sitting on its own seam of fine white and blue-grey marble, the city ran a formal sculpture school whose signed work turns up as far as Rome. It was already a working atelier well before 117 CE and stayed active into the late 4th century.",
+        "sources": [
+          "https://aphrodisias-excavations.com/sculptorsworkshop/",
+          "http://www.nyu.edu/projects/aphrodisias/sculpw.htm"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aphrodisias_sculptor's_workshop_from_E_(1991).jpg?width=800",
+        "image_credit": "Sculptor's workshop, Aphrodisias · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.72447,
+          37.70537
+        ]
+      },
+      "properties": {
+        "id": "poi_south_agora_aphrodisias",
+        "category": "forum",
+        "name_latin": "Porticus Tiberii",
+        "name_english": "Aphrodisias South Agora",
+        "province": "Asia",
+        "modern_location": "Geyre, Aydin Province, Turkey",
+        "built": 25,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Also called the Portico of Tiberius, this was Aphrodisias's second public square, laid out in the early 1st century CE under Tiberius. Recent excavation found it functioned as an urban park rather than a bare marketplace, with a long ornamental pool, fountains, and rows of planted trees behind its colonnades. It was already nearly a century old by the time Hadrian took the throne.",
+        "sources": [
+          "https://imperiumromanum.pl/en/curiosities/southern-agora-in-aphrodisias/",
+          "https://artofmaking.ac.uk/explore/monuments/190/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.72297,
+          37.70637
+        ]
+      },
+      "properties": {
+        "id": "poi_civil_basilica_aphrodisias",
+        "category": "basilica",
+        "name_latin": "Basilica",
+        "name_english": "Aphrodisias Civil Basilica",
+        "province": "Asia",
+        "modern_location": "Geyre, Aydin Province, Turkey",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The largest roofed public hall in the city center, spanning three full city blocks. Its decoration and a surviving dedication place its completion in the late 1st century CE, roughly a generation before Hadrian's reign began. Centuries later, once Aphrodisias became a provincial capital, the building may have served as the governor's administrative seat, but in 117 CE it was still a civic law-court-and-commerce hall.",
+        "sources": [
+          "https://aphrodisias-excavations.com/civilbasilica/",
+          "https://www.academia.edu/2381884/The_Civil_Basilica_of_Aphrodisias"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.72197,
+          37.70917
+        ]
+      },
+      "properties": {
+        "id": "poi_tetrapylon_aphrodisias",
+        "category": "gate",
+        "name_latin": "Tetrapylon",
+        "name_english": "Aphrodisias Tetrapylon",
+        "province": "Asia",
+        "modern_location": "Geyre, Aydin Province, Turkey",
+        "built": 200,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "This ornate ceremonial gate of sixteen Corinthian columns, blue-and-white marble, and pediments carved with Eros and Nike figures marked the processional entrance to the sanctuary of Aphrodite. Stylistically Antonine to Severan, it was built around 200 CE, roughly eighty years after Trajan's death, so it did not yet exist in 117 CE. Toppled by earthquakes, it was rebuilt stone-for-stone from original blocks in 1991.",
+        "sources": [
+          "https://www.aphrodisias.org/en/the-tetrapylon-of-aphrodisias",
+          "https://en.wikipedia.org/wiki/Tetrapylon"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aphrodisias_Tetrapylon_4593.jpg?width=800",
+        "image_credit": "Tetrapylon, Aphrodisias · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.72397,
+          37.70587
+        ]
+      },
+      "properties": {
+        "id": "poi_baths_of_hadrian_aphrodisias",
+        "category": "bath",
+        "name_latin": "Thermae Hadrianae",
+        "name_english": "Aphrodisias Baths of Hadrian",
+        "province": "Asia",
+        "modern_location": "Geyre, Aydin Province, Turkey",
+        "built": 125,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A monumental marble bath complex dedicated to the emperor Hadrian, who reigned from August 117 CE. Construction began after his accession, so the block was still occupied by older shops and houses on the day Trajan died. This is a textbook post-117 dating trap: 'Hadrianic' at Aphrodisias always means built under Hadrian, not before him.",
+        "sources": [
+          "https://followinghadrian.com/2015/04/20/the-hadrianic-baths-at-aphrodisias-caria-turkey/",
+          "https://www.aphrodisias.org/en/bathrooms-and-hadrian"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hadrians-Thermen,_Aphrodisias.jpg?width=800",
+        "image_credit": "Baths of Hadrian, Aphrodisias · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.72387,
+          37.70767
+        ]
+      },
+      "properties": {
+        "id": "poi_bouleuterion_odeon_aphrodisias",
+        "category": "curia",
+        "name_latin": "Bouleuterion / Odeum",
+        "name_english": "Aphrodisias Bouleuterion",
+        "province": "Asia",
+        "modern_location": "Geyre, Aydin Province, Turkey",
+        "built": 200,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Aphrodisias's city council chamber, seating roughly 1,750 people and doubling as a concert odeon, was funded by Attalos son of Dometeinos around 200 CE, a generation-plus after Hadrian's death, let alone Trajan's. In 117 CE the site behind the Sebasteion where it stands had not yet been built up this way. It was later refurbished around 390 CE by the Roman governor of Caria.",
+        "sources": [
+          "https://www.aphrodisias.org/en/odeon-and-bishops-palace",
+          "https://insaph.kcl.ac.uk/insaph/workspace/toc/location/Bouleuterion_OdeonArea.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aphrodisias_bouleuterion_4519.jpg?width=800",
+        "image_credit": "Bouleuterion, Aphrodisias · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.12383,
+          37.923
+        ]
+      },
+      "properties": {
+        "id": "poi_plutonium_hierapolis",
+        "category": "oracle",
+        "name_latin": "Plutonium",
+        "name_english": "Hierapolis Plutonium",
+        "province": "Asia",
+        "modern_location": "Pamukkale, Denizli Province, Turkey",
+        "built": -50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A fissure at the foot of the Temple of Apollo that vents carbon dioxide heavy enough to kill sparrows and bulls on contact, worshipped as a literal gate to the underworld of Pluto and Kore. Strabo, writing before 24 CE, described throwing sparrows in and watching them drop dead while the eunuch priests of Cybele walked through unharmed. Pilgrims and sacrificial bulls kept coming until the 4th century CE, long after it was already ancient in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ploutonion_at_Hierapolis",
+          "https://arkeonews.net/plutos-gate-to-hell-in-hierapolis/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plutonium_(Pluto's_Gate)_in_Hierapolis_01.jpg?width=800",
+        "image_credit": "Plutonium (Pluto's Gate), Hierapolis · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "13.4.14",
+            "note": "Describes the Plutonium's lethal vapor, killing sparrows and bulls thrown in while priests of Cybele entered unharmed."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.12433,
+          37.9232
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_of_apollo_hierapolis",
+        "category": "temple",
+        "name_latin": "Templum Apollinis",
+        "name_english": "Hierapolis Temple of Apollo",
+        "province": "Asia",
+        "modern_location": "Pamukkale, Denizli Province, Turkey",
+        "built": -190,
+        "destroyed": 60,
+        "extant_117ce": false,
+        "notes": "The oldest religious building in the city, raised on this podium not long after Eumenes II of Pergamon founded Hierapolis around 190 BCE, and standing directly beside the toxic Plutonium cave. The catastrophic earthquake of 60 CE under Nero shattered the Hellenistic sanctuary along with much of the city. What tourists walk through today is a 3rd-century CE Severan rebuild reusing the old blocks, so the temple was likely still a ruin, not a standing shrine, on the day Trajan died in 117 CE.",
+        "sources": [
+          "https://turkisharchaeonews.net/site/hierapolis",
+          "https://nomadicniko.com/2022/06/08/hierapolis-temple-of-apollo"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.12783,
+          37.9235
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_hierapolis",
+        "category": "theater",
+        "name_latin": "Theatrum Hierapolitanum",
+        "name_english": "Hierapolis Theatre",
+        "province": "Asia",
+        "modern_location": "Pamukkale, Denizli Province, Turkey",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The earthquake of 60 CE flattened the original Hellenistic theatre; the cavea and stage building standing today were rebuilt under the Flavian emperors in the following decades, replacing an earlier theatre slightly to the northeast. A gallery inscription records further work done under Hadrian after 117 CE, and Septimius Severus redecorated the stage front a century later, but the Flavian-era structure itself was already complete and in use well before Trajan's death.",
+        "sources": [
+          "https://www.hierapolis-info.ru/the-roman-theatre-in-hierapolis-turkey.html",
+          "https://www.worldhistory.org/image/3834/roman-theatre-of-hierapolis/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theatre_of_Hierapolis_-_scaenae_frons.jpg?width=800",
+        "image_credit": "Theatre of Hierapolis, scaenae frons · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.12833,
+          37.9265
+        ]
+      },
+      "properties": {
+        "id": "poi_agora_hierapolis",
+        "category": "market",
+        "name_latin": "Agora Hierapolitana",
+        "name_english": "Hierapolis Agora",
+        "province": "Asia",
+        "modern_location": "Pamukkale, Denizli Province, Turkey",
+        "built": 125,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "At 200 by 130 meters, this marble-paved square ranked among the largest agoras anywhere in Asia Minor and served as the city's commercial heart, ringed by a two-story stoa with Ionic and Corinthian colonnades. Its west side and eastern basilica-stoa were built during the reign of Hadrian, who took the throne in August 117 CE, so the monumental agora seen today postdates the snapshot even though Hierapolis had earlier marketplaces on the same general site.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Hierapolis",
+          "https://madainproject.com/hierapolis"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.12583,
+          37.9255
+        ]
+      },
+      "properties": {
+        "id": "poi_nymphaeum_tritons_hierapolis",
+        "category": "fountain",
+        "name_latin": "Nymphaeum Tritonum",
+        "name_english": "Hierapolis Nymphaeum of the Tritons",
+        "province": "Asia",
+        "modern_location": "Pamukkale, Denizli Province, Turkey",
+        "built": 225,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "One of the longest monumental fountains in the Roman world, stretching 60 meters along the colonnaded main street. An inscription on its architrave dates it firmly to the reign of Severus Alexander, around 222 to 235 CE, roughly a century after Trajan's death. It replaced whatever more modest water feature stood on Frontinus Street in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Hierapolis",
+          "https://madainproject.com/hierapolis"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Nymphaeum_of_the_Tritons,_a_monumental_fountain_built_during_the_reign_of_Alexander_Severus_(222-235_AD)_as_the_inscription_on_the_architrave_block_attests,_Hierapolis,_Phrygia,_Turkey_(32251072641).jpg?width=800",
+        "image_credit": "Nymphaeum of the Tritons, Hierapolis · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.11783,
+          37.917
+        ]
+      },
+      "properties": {
+        "id": "poi_travertine_terraces_hierapolis",
+        "category": "monument",
+        "name_latin": "Fontes Calidi Hierapolitani",
+        "name_english": "Pamukkale Travertine Terraces",
+        "province": "Asia",
+        "modern_location": "Pamukkale, Denizli Province, Turkey",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The blinding-white cascade of mineral pools below the city, built up over hundreds of thousands of years by calcium-laden hot springs, was the reason Hierapolis existed at all. Strabo recorded that the water hardened into stone so fast that channels dug for it turned into solid stone dams within a season. The same springs fed the city's baths and were credited with the sacred power that made the Plutonium cave next door an entrance to the underworld.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pamukkale",
+          "https://whc.unesco.org/en/list/485"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pamukkale_Hierapolis_Travertine_pools.JPG?width=800",
+        "image_credit": "Travertine pools, Pamukkale · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "13.4.14",
+            "note": "Describes the Hierapolis water as petrifying so readily that irrigation channels became solid stone dams."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.1265,
+          37.9268
+        ]
+      },
+      "properties": {
+        "id": "poi_frontinus_gate_hierapolis",
+        "category": "gate",
+        "name_latin": "Porta Domitiani / Via Frontiniana",
+        "name_english": "Hierapolis Frontinus Gate",
+        "province": "Asia",
+        "modern_location": "Pamukkale, Denizli Province, Turkey",
+        "built": 85,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A monumental triple gate flanked by two round towers, dedicated to Domitian by Sextus Julius Frontinus, proconsul of Asia, around 84 to 86 CE. It opened onto Frontinus Street, the city's 14-meter-wide colonnaded main artery running north-south through its center. Already three decades old and a fixed civic landmark by the time Trajan died in 117 CE.",
+        "sources": [
+          "https://kulturenvanteri.com/en/yer/hierapolis-frontinus-kapisi/",
+          "https://nomadicniko.com/2011/11/01/hierapolis-frontinus-street/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hierapolis_Frontinus_Gate_5035.jpg?width=800",
+        "image_credit": "Frontinus Gate, Hierapolis · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2757,
+          37.5306
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_miletus",
+        "category": "theater",
+        "name_latin": "Theatrum Milesium",
+        "name_english": "Miletus Theatre",
+        "province": "Asia",
+        "modern_location": "Balat, Didim, Aydin, Turkey",
+        "built": -300,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A Hellenistic theatre reborn as one of Roman Asia's biggest stages. Trajan's engineers spent his whole reign rebuilding it to hold 15,000 spectators, triple the old Greek capacity, with a three-story columned stage front. By 117 CE the vast Roman cavea dominated the skyline above the Theatre Harbor.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Miletus",
+          "https://www.miletgrabung.uni-hamburg.de/en/milet-tour/tour-stadtzentrum.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Miletus_-_Ancient_Greek_theatre_01.jpg?width=800",
+        "image_credit": "Theatre of Miletus · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2762,
+          37.5309
+        ]
+      },
+      "properties": {
+        "id": "poi_delphinion_miletus",
+        "category": "sanctuary",
+        "name_latin": "Delphinium",
+        "name_english": "Miletus Delphinion",
+        "province": "Asia",
+        "modern_location": "Balat, Didim, Aydin, Turkey",
+        "built": -450,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Miletus's chief civic sanctuary, sacred to Apollo Delphinios since the city's earliest days. An open courtyard ringed by Doric colonnades doubled as the state archive, holding over 150 inscribed decrees and treaties. The city's chief magistrates, the prytaneis, governed from offices inside its walls. Still the ritual heart of the city in 117 CE.",
+        "sources": [
+          "https://www.miletgrabung.uni-hamburg.de/en/milet-tour/tour-stadtzentrum/delphinion.html",
+          "https://en.wikipedia.org/wiki/Delphinion"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Miletus_Delhpinion_in_2007_4574.jpg?width=800",
+        "image_credit": "Delphinion of Miletus · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "14.1.6",
+            "note": "Describes Miletus's foundation, harbors, and civic institutions in Roman-era Ionia."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2776,
+          37.5296
+        ]
+      },
+      "properties": {
+        "id": "poi_bouleuterion_miletus",
+        "category": "curia",
+        "name_latin": "Bouleuterion Milesium",
+        "name_english": "Miletus Bouleuterion",
+        "province": "Asia",
+        "modern_location": "Balat, Didim, Aydin, Turkey",
+        "built": -175,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The council house where Miletus's civic assembly met, a gift from a foreign king rather than the city itself. Dedication inscriptions on its architrave name the donor as the Seleucid king Antiochus IV Epiphanes, reigning 175-164 BCE. A colonnaded courtyard and monumental gateway led into a roofed auditorium seating around 1,500 councilors. Still in active civic use under Roman rule in 117 CE.",
+        "sources": [
+          "https://www.miletgrabung.uni-hamburg.de/en/milet-tour/tour-stadtzentrum/bouleuterion.html",
+          "https://www.perseus.tufts.edu/hopper/artifact?name=Miletus,+Bouleuterion&object=Building"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2779,
+          37.5294
+        ]
+      },
+      "properties": {
+        "id": "poi_nymphaeum_miletus",
+        "category": "fountain",
+        "name_latin": "Nymphaeum Milesium",
+        "name_english": "Miletus Nymphaeum",
+        "province": "Asia",
+        "modern_location": "Balat, Didim, Aydin, Turkey",
+        "built": 79,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A monumental fountain house paid for by Marcus Ulpius Traianus, governor of Asia and father of the future emperor Trajan, around 79-80 CE. Its facade rose in tiers of columns and statue niches modeled on a theatre's stage front, marking the terminus of the aqueduct bringing water down from the southern hills. Already decades old and fully functioning when Trajan himself, its founder's son, visited Miletus in 117 CE. A third story was added later, under Gordian III.",
+        "sources": [
+          "https://www.academia.edu/2442247/The_Miletus_Nymphaeum",
+          "https://madainproject.com/miletus"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Miletus_Nymphaeum_in_2007_4546_01.jpg?width=800",
+        "image_credit": "Nymphaeum of Miletus · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2782,
+          37.5288
+        ]
+      },
+      "properties": {
+        "id": "poi_south_agora_miletus",
+        "category": "forum",
+        "name_latin": "Agora Meridionalis",
+        "name_english": "Miletus South Agora",
+        "province": "Asia",
+        "modern_location": "Balat, Didim, Aydin, Turkey",
+        "built": -250,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "At roughly 164 by 196 meters, the largest agora ever built in the Greek world, framing the city's civic and commercial life. Roman-period builders enclosed it further with new gateways at its corners, including an elaborate monumental market gate. By 117 CE it had been the beating commercial heart of Miletus for over three centuries, still ringed by shaded stoas full of merchants. Coordinates are approximate, estimated from the excavated city plan.",
+        "sources": [
+          "https://www.fhw.gr/choros/miletus/en/notia_agora.php?mp=map4",
+          "https://en.wikipedia.org/wiki/Miletus"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Agora_of_Miletus.jpg?width=800",
+        "image_credit": "Agora of Miletus · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2745,
+          37.5322
+        ]
+      },
+      "properties": {
+        "id": "poi_lion_harbor_monument_miletus",
+        "category": "monument",
+        "name_latin": "Monumentum Portus Leonum",
+        "name_english": "Miletus Lion Harbor Monument",
+        "province": "Asia",
+        "modern_location": "Balat, Didim, Aydin, Turkey",
+        "built": -67,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Two marble lions once flanked the mouth of Miletus's busiest port, a chain strung between them to seal the harbor in wartime. One lion's inscribed base declared it stood guard over the public harbor. Citizens raised a victory monument nearby after Pompey crushed the pirates in 67 BCE, later rededicating it to Augustus for his win at Actium. Coordinates are approximate, marking the harbor entrance near the theatre.",
+        "sources": [
+          "https://www.miletgrabung.uni-hamburg.de/en/milet-tour/tour-stadtzentrum/hafenmonumente.html",
+          "https://en.wikipedia.org/wiki/Miletus"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Chariton",
+            "work": "Chaereas and Callirhoe",
+            "ref": "3.2",
+            "note": "Early Roman-era novel referencing a Milesian harbor, thought to correspond to the Lion Harbor."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.281,
+          37.5265
+        ]
+      },
+      "properties": {
+        "id": "poi_sacred_way_ionic_stoa_miletus",
+        "category": "road",
+        "name_latin": "Via Sacra ad Didyma",
+        "name_english": "Miletus Sacred Way",
+        "province": "Asia",
+        "modern_location": "Balat, Didim, Aydin, Turkey",
+        "built": -50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The processional road out of Miletus's southeast gate, lined by an elegant Ionic colonnade, that led pilgrims 17 kilometers south to the oracle sanctuary at Didyma. Statues of seated priests and sphinxes once lined its route. In 117 CE it was still walked each year in festival processions honoring Apollo. Coordinates are approximate, marking the Ionic Stoa at its city-side start.",
+        "sources": [
+          "https://commons.wikimedia.org/wiki/Category:Ionic_Stoa_in_Miletus",
+          "https://en.wikipedia.org/wiki/Miletus"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Miletus_Ionic_Stoa_in_1999_018.jpg?width=800",
+        "image_credit": "Ionic Stoa, Miletus · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2768,
+          37.5285
+        ]
+      },
+      "properties": {
+        "id": "poi_faustina_baths_miletus",
+        "category": "bath",
+        "name_latin": "Thermae Faustinae",
+        "name_english": "Miletus Faustina Baths",
+        "province": "Asia",
+        "modern_location": "Balat, Didim, Aydin, Turkey",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Miletus's largest bathhouse, built and funded decades after Trajan's death by Faustina the Younger, wife of emperor Marcus Aurelius, around the mid-to-late 2nd century CE. Its three great halls held frigidarium, tepidarium, and caldarium beneath soaring vaults. In 117 CE this whole quarter of the city was still open ground; the empress who gave it her name would not even be born for another decade.",
+        "sources": [
+          "https://www.smb.museum/en/museums-institutions/antikensammlung/collection-research/research/thermae-of-faustina-in-miletus-turkey/",
+          "https://en.wikipedia.org/wiki/Faustina_the_Younger"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sculpture_from_the_Faustina_Baths_in_Miletus.JPG?width=800",
+        "image_credit": "Sculpture from the Faustina Baths, Miletus · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.0324,
+          38.4796
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_artemis_sardis",
+        "category": "temple",
+        "name_latin": "Templum Artemidis Sardianae",
+        "name_english": "Sardis Temple of Artemis",
+        "province": "Asia",
+        "modern_location": "Sart, Salihli, Manisa, Turkey",
+        "built": -300,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "One of the largest Ionic temples ever built, begun around 300 BCE under Seleucid patronage but never finished in antiquity. By 117 CE only the Hellenistic cella and part of its colonnade stood complete, work having stalled generations earlier as Seleucid funding dried up. The gigantic double-cella Roman rebuild, wrapping the whole structure in a forest of new columns and adding an imperial-cult chamber beside Artemis's own, did not begin until Hadrian's reign after 117.",
+        "sources": [
+          "https://sardisexpedition.org/en/essays/about-artemis-temple",
+          "https://en.wikipedia.org/wiki/Sardis"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Artemistempel_Sardes.jpg?width=800",
+        "image_credit": "Temple of Artemis, Sardis · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.0451,
+          38.5724
+        ]
+      },
+      "properties": {
+        "id": "poi_bintepe_necropolis_sardis",
+        "category": "necropolis",
+        "name_latin": "Tumuli Regum Lydiae",
+        "name_english": "Sardis Bin Tepe Necropolis",
+        "province": "Asia",
+        "modern_location": "Marmara Golu, Salihli, Manisa, Turkey",
+        "built": -560,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "\"A thousand hills\" of royal Lydian burial mounds spread across the plain north of Sardis, raised for kings including Gyges and Alyattes centuries before Rome ever ruled Asia. The tomb of Alyattes alone measures 355 meters across and rises 61 meters, one of antiquity's largest funerary monuments and already ancient when Herodotus described it. Still a famous landmark of the region in 117 CE, over 600 years after it was raised.",
+        "sources": [
+          "https://whc.unesco.org/en/list/1731/",
+          "https://en.wikipedia.org/wiki/Bin_Tepe"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomb_of_Alyattes,_August_2024.jpg?width=800",
+        "image_credit": "Tomb of Alyattes, Bin Tepe · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Herodotus",
+            "work": "Histories",
+            "ref": "1.93",
+            "note": "Describes the tomb of Alyattes at Sardis, built by the market-traders, craftsmen, and prostitutes of the city."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.043,
+          38.4895
+        ]
+      },
+      "properties": {
+        "id": "poi_bath_gymnasium_sardis",
+        "category": "bathhouse",
+        "name_latin": "Thermae et Gymnasium Sardianum",
+        "name_english": "Sardis Roman Gymnasium and Bath Complex",
+        "province": "Asia",
+        "modern_location": "Sart, Salihli, Manisa, Turkey",
+        "built": 165,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A vast bath-gymnasium covering over 5.5 acres, its famous Marble Court raised under Lucius Verus around 165 CE and lavishly rebuilt for the imperial cult in 211-213 CE under Julia Domna's patronage. In 117 CE none of this stood yet; only bare ground and perhaps early foundation work occupied the site decades before the emperors whose names it would later honor were even born. Coordinates are approximate.",
+        "sources": [
+          "https://sardisexpedition.org/en/essays/about-sardis",
+          "https://en.wikipedia.org/wiki/Sardis_Synagogue"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.0428,
+          38.4894
+        ]
+      },
+      "properties": {
+        "id": "poi_synagogue_sardis",
+        "category": "synagogue",
+        "name_latin": "Synagoga Sardiana",
+        "name_english": "Sardis Synagogue",
+        "province": "Asia",
+        "modern_location": "Sart, Salihli, Manisa, Turkey",
+        "built": 270,
+        "destroyed": 616,
+        "extant_117ce": false,
+        "notes": "The grandest ancient synagogue found outside Israel, its hall able to seat a thousand worshippers under mosaic floors and marble-paneled walls. It was carved out of rooms inside the Roman bath-gymnasium complex, work usually dated to the late 3rd century CE at the earliest, though a Jewish community is attested at Sardis for centuries before that. In 117 CE the building did not yet exist; the space was still part of an unbuilt bathhouse. Coordinates are approximate.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sardis_Synagogue",
+          "https://sardisexpedition.org/en/essays/about-synagogue"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sardis_Synagogue,_late_3rd_century_AD,_Sardis,_Lydia,_Turkey_(19331773400).jpg?width=800",
+        "image_credit": "Sardis Synagogue · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.0389,
+          38.4838
+        ]
+      },
+      "properties": {
+        "id": "poi_acropolis_sardis",
+        "category": "fort",
+        "name_latin": "Arx Sardiana",
+        "name_english": "Sardis Acropolis",
+        "province": "Asia",
+        "modern_location": "Sart, Salihli, Manisa, Turkey",
+        "built": -700,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A steep citadel rising some 300 meters above the plain, once called by Polybius the strongest fortress in the world. Croesus's Lydian kings ruled from its heights until Cyrus's Persian troops famously scaled its supposedly unclimbable cliffs by night in 546 BCE. Rome inherited it peacefully in 133 BCE, and its ancient walls still crowned the city when Trajan died in 117 CE. Coordinates are approximate, marking the fortified hilltop above the lower city.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sardis",
+          "https://www.britannica.com/place/Sardis"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Herodotus",
+            "work": "Histories",
+            "ref": "1.84",
+            "note": "Recounts the Persian capture of the Sardis acropolis under Cyrus in 546 BCE, scaled at an unguarded cliff."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.032,
+          38.479
+        ]
+      },
+      "properties": {
+        "id": "poi_pactolus_gold_sardis",
+        "category": "mine",
+        "name_latin": "Fluvius Pactolus",
+        "name_english": "Pactolus River Gold-Washing Site",
+        "province": "Asia",
+        "modern_location": "Sart Cayi, Sart, Salihli, Manisa, Turkey",
+        "built": -700,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A modest stream off Mount Tmolus that ancient writers credited with making Lydia's kings the richest men on earth. Herodotus wrote that its gold-bearing sands ran straight through the middle of the Sardis marketplace, and legend held King Midas washed away his golden touch in its waters. Excavators found 6th-century BCE workshops here for refining electrum into pure gold and silver. The dried placer deposits were long exhausted by 117 CE, but the river and its legend still ran through the city.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pactolus",
+          "https://www.theoi.com/Potamos/PotamosPaktolos.html"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Herodotus",
+            "work": "Histories",
+            "ref": "5.101",
+            "note": "States that the river Pactolus, carrying gold dust from Mount Tmolus, flowed through the middle of the Sardis marketplace."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.7155,
+          40.4272
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_nicaea",
+        "category": "theater",
+        "name_latin": "Theatrum Nicaeae",
+        "name_english": "Nicaea Theatre",
+        "province": "Bithynia et Pontus",
+        "modern_location": "İznik, Turkey",
+        "built": 105,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Nicaea's showcase theatre held roughly 10,000 spectators across a three-story, 24-meter cavea built on vaulted arches instead of a hillside, a rare flat-ground design in Anatolia. Governor Pliny the Younger inspected the unfinished building around 111 CE and found its walls already cracking and sinking, despite more than 10 million sesterces spent. He recommended tearing it down; Trajan told him to use his own judgment on the spot. Construction pressed on regardless.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Nicaea",
+          "https://www.attalus.org/old/pliny10a.html",
+          "https://hoyuk.gov.tr/tam-metin/125/eng"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Roman_Theatre_of_Nicaea_built_during_the_reign_of_Trajan,_Iznik,_Turkey_(37742971275).jpg?width=800",
+        "image_credit": "Photo via Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Younger",
+            "work": "Epistulae",
+            "ref": "10.39",
+            "note": "Reports to Trajan that Nicaea's unfinished theatre, already costing over 10 million sesterces, showed severe cracking and subsidence."
+          },
+          {
+            "author": "Trajan",
+            "work": "Epistulae (replies)",
+            "ref": "10.40",
+            "note": "Tells Pliny to decide on the spot whether to complete or demolish the half-built theatre."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.723,
+          40.431
+        ]
+      },
+      "properties": {
+        "id": "poi_gymnasium_nicaea",
+        "category": "bath",
+        "name_latin": "Gymnasium Nicaeae",
+        "name_english": "Nicaea Gymnasium",
+        "province": "Bithynia et Pontus",
+        "modern_location": "İznik, Turkey",
+        "built": 112,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Nicaea's public gymnasium had burned down, and the city rebuilt it far larger than before even as the theatre project next door ran badly over budget. Pliny reported the spending to Trajan around 111 CE, and the emperor waved it through, remarking that Greek cities could never resist a gymnasium. No excavation has pinned down the building's footprint beneath modern İznik. This marks an approximate city-center placement for a documented but unlocated project.",
+        "sources": [
+          "https://www.attalus.org/old/pliny10a.html",
+          "https://www.livius.org/articles/person/pliny-the-younger/pliny-the-younger-10/"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Younger",
+            "work": "Epistulae",
+            "ref": "10.39",
+            "note": "Reports that Nicaea's fire-damaged gymnasium was being rebuilt on a larger scale, with a considerable sum already spent."
+          },
+          {
+            "author": "Trajan",
+            "work": "Epistulae (replies)",
+            "ref": "10.40",
+            "note": "Approves continuing the gymnasium's reconstruction, remarking that Greek cities are devoted to their gymnasia."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.7195,
+          40.429
+        ]
+      },
+      "properties": {
+        "id": "poi_walls_nicaea",
+        "category": "wall",
+        "name_latin": "Moenia Nicaeae",
+        "name_english": "Nicaea City Walls",
+        "province": "Bithynia et Pontus",
+        "modern_location": "İznik, Turkey",
+        "built": 75,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Nicaea's Hellenistic walls, raised under King Lysimachus around 300 BCE, had largely disappeared by the Roman period. The Flavian emperors rebuilt the circuit from scratch in the later 1st century CE, laying out an irregular pentagon nearly 5 kilometers around with four new marble gates dedicated by the provincial governor. Little of what visitors photograph at Lefke Gate today is this Roman fabric, since most standing stonework was rebuilt again centuries later under Byzantine emperors.",
+        "sources": [
+          "https://turkisharchaeonews.net/object/fortifications-iznik-nicaea",
+          "https://www.thebyzantinelegacy.com/nicaea-walls"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Iznik_Wall_at_Lefke_Gate_8275.jpg?width=800",
+        "image_credit": "Dick Osseman · Wikimedia Commons (CC BY-SA 4.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.713,
+          40.4245
+        ]
+      },
+      "properties": {
+        "id": "poi_harbor_nicaea",
+        "category": "harbor",
+        "name_latin": "Portus Nicaeae ad Lacum Ascanium",
+        "name_english": "Nicaea Lake Harbor",
+        "province": "Bithynia et Pontus",
+        "modern_location": "İznik, Turkey (Lake İznik / Ascania shore)",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Nicaea sat inland on Lake Ascania with no direct sea access, so its trade leaned on a harbor built out from the city's eastern shore. Observers have reported extensive stone foundations visible through the clear, shallow water, substantial enough to suggest real quay infrastructure rather than a simple landing. No excavation has published a construction date for the site. This marks an approximate placement along the ancient shoreline for a documented but undated harbor.",
+        "sources": [
+          "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Dnicaea",
+          "https://www.livius.org/articles/place/nicaea-iznik"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.735,
+          40.435
+        ]
+      },
+      "properties": {
+        "id": "poi_aqueduct_nicaea",
+        "category": "aqueduct",
+        "name_latin": "Aquaeductus Nicaeae",
+        "name_english": "Nicaea Aqueduct",
+        "province": "Bithynia et Pontus",
+        "modern_location": "İznik, Turkey",
+        "built": 120,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "An inscription found along its route names Hadrian as dedicatee, dating the standing arches east of İznik's Lefke Gate to his reign rather than Trajan's. About 1.5 kilometers of the channel is still visible on the ground, though the masonry was rebuilt repeatedly under later Byzantine and Ottoman rulers, and a geophysical survey found a fault line warping its foundations. Hadrian only became emperor the day Trajan died, so this aqueduct almost certainly rose just after our snapshot.",
+        "sources": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2352409X17308337",
+          "https://followinghadrianphotography.com/2024/01/22/nicaea/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.908,
+          40.799
+        ]
+      },
+      "properties": {
+        "id": "poi_aqueduct_nicomedia",
+        "category": "aqueduct",
+        "name_latin": "Aquaeductus Nicomediae",
+        "name_english": "Nicomedia Aqueduct",
+        "province": "Bithynia et Pontus",
+        "modern_location": "İzmit, Turkey (Üçtepeler)",
+        "built": 112,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Nicomedia burned through more than 5 million sesterces on two separate aqueduct schemes, both abandoned half-built, before Pliny arrived as governor. He reported the waste to Trajan around 112 CE and asked Rome for a qualified engineer to find who was responsible. A two-story arcaded aqueduct still stands north of İzmit at Üçtepeler, traditionally linked to the working system finally completed under Pliny's own supervision. Byzantine and Ottoman repairs show it stayed in use for centuries.",
+        "sources": [
+          "https://kulturenvanteri.com/en/yer/uctepeler-su-kemeri/",
+          "https://www.worldhistory.org/image/20210/nicomedia-aqueduct/",
+          "https://www.attalus.org/pliny/ep10b.html"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicomedia_Aqueduct,_Izmit,_Turkey_(27423650659).jpg?width=800",
+        "image_credit": "Carole Raddato · Wikimedia Commons (CC BY-SA 2.0)",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Younger",
+            "work": "Epistulae",
+            "ref": "10.37",
+            "note": "Reports that Nicomedia had wasted 3,329,000 sesterces on one abandoned aqueduct and 2,000,000 more on a second, and asks for an engineer from Rome."
+          },
+          {
+            "author": "Trajan",
+            "work": "Epistulae (replies)",
+            "ref": "10.38",
+            "note": "Orders an inquiry into who was responsible for wasting so much money on the Nicomedia aqueducts."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.92,
+          40.765
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_nicomedia",
+        "category": "forum",
+        "name_latin": "Forum Novum Nicomediae",
+        "name_english": "Nicomedia Forum",
+        "province": "Bithynia et Pontus",
+        "modern_location": "İzmit, Turkey",
+        "built": 112,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Nicomedia's residents were expanding their forum with a grand new wing when a small, unconsecrated shrine to the Mother of the Gods stood in the way. Pliny asked Trajan whether it could simply be moved, since the temple predated Roman rites of consecration. Trajan approved without hesitation, and the expansion moved forward around 112 CE, giving Nicomedia a larger civic square within a few years of Trajan's death. Coordinates mark an approximate city-center placement.",
+        "sources": [
+          "https://www.attalus.org/pliny/ep10b.html",
+          "https://cmuntz.hosted.uark.edu/texts/pliny-the-younger/letters-to-trajan.html"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Younger",
+            "work": "Epistulae",
+            "ref": "10.49",
+            "note": "Reports that Nicomedia's new forum, under construction beside the old one, was obstructed by an unconsecrated shrine of the Mother of the Gods."
+          },
+          {
+            "author": "Trajan",
+            "work": "Epistulae (replies)",
+            "ref": "10.50",
+            "note": "Grants permission to relocate the temple to make way for the new forum."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.98,
+          40.755
+        ]
+      },
+      "properties": {
+        "id": "poi_canal_project_nicomedia",
+        "category": "canal",
+        "name_latin": "Fossa a Lacu Sophone ad Mare",
+        "name_english": "Nicomedia Canal Project",
+        "province": "Bithynia et Pontus",
+        "modern_location": "İzmit, Turkey (between Lake Sapanca and the Gulf of İzmit)",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Pliny proposed cutting an 18-mile canal from Lake Sophon, today's Lake Sapanca, down to the sea at Nicomedia, hoping to cut the cost of hauling marble, timber, and produce into the city. Locals told him the lake sat 40 cubits above sea level, so he asked Trajan to send a surveyor before digging began. Trajan told him to borrow an engineer from Calpurnius Macer, governor of Lower Moesia. No ancient source records the canal being dug, and no trace of it survives, so it is marked unbuilt here.",
+        "sources": [
+          "https://www.attalus.org/pliny/ep10b.html",
+          "https://topostext.org/place/408299PNik"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Younger",
+            "work": "Epistulae",
+            "ref": "10.41",
+            "note": "Proposes a canal from Lake Sophon to the sea to ease transport of stone, timber, and produce to Nicomedia, and asks for a leveling engineer."
+          },
+          {
+            "author": "Trajan",
+            "work": "Epistulae (replies)",
+            "ref": "10.42",
+            "note": "Directs Pliny to request a surveyor from Calpurnius Macer, governor of Lower Moesia."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.919,
+          40.7635
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_roma_augustus_nicomedia",
+        "category": "temple",
+        "name_latin": "Templum Romae et Augusti",
+        "name_english": "Temple of Roma and Augustus",
+        "province": "Bithynia et Pontus",
+        "modern_location": "İzmit, Turkey",
+        "built": -29,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "In 29 BCE Octavian let Bithynia's Greeks dedicate a temple to Roma and himself at Nicomedia, one of the empire's first two imperial-cult temples. It became the meeting hall of the Bithynian koinon, the provincial assembly running the emperor's cult. Eight Corinthian columns and an entablature reading 'to Rome, the Senate, the People, Augustus' survive only on coin dies; the building itself has never been excavated. A major earthquake struck Nicomedia in 120 CE, three years after our snapshot.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Roma_and_Augustus",
+          "https://www.judaism-and-rome.org/cistophorus-depicting-head-hadrian-and-provincial-imperial-temple-nicomedia-between-128-and-137%C2%A0ce"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9175,
+          40.762
+        ]
+      },
+      "properties": {
+        "id": "poi_gerusia_nicomedia",
+        "category": "curia",
+        "name_latin": "Gerusia Nicomediae",
+        "name_english": "Nicomedia Council Hall",
+        "province": "Bithynia et Pontus",
+        "modern_location": "İzmit, Turkey",
+        "built": null,
+        "destroyed": 112,
+        "extant_117ce": false,
+        "notes": "A violent fire tore through Nicomedia around 112 CE, gutting private houses and reaching the city's Gerusia hall even though a street separated it from where the blaze started. Pliny blamed the damage on a total lack of firefighting equipment and asked Trajan to authorize a 150-man brigade of tradesmen. Trajan refused, worried any organized group in Bithynia would turn into a political faction. Whether the hall was ever rebuilt went unrecorded before Trajan died, so it is marked destroyed here.",
+        "sources": [
+          "https://www.judaism-and-rome.org/pliny-younger-letters%C2%A0x33-34",
+          "https://www.worldhistory.org/article/816/collegia-stability-and-the-vox-populi/"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Younger",
+            "work": "Epistulae",
+            "ref": "10.33",
+            "note": "Reports a fire at Nicomedia that destroyed many houses and the Gerusia's hall, and requests permission to form a 150-man firefighting guild."
+          },
+          {
+            "author": "Trajan",
+            "work": "Epistulae (replies)",
+            "ref": "10.34",
+            "note": "Refuses the guild, fearing any association in Bithynia would become a political faction."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9185,
+          40.761
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_isis_nicomedia",
+        "category": "temple",
+        "name_latin": "Templum Isidis Nicomediae",
+        "name_english": "Nicomedia Temple of Isis",
+        "province": "Bithynia et Pontus",
+        "modern_location": "İzmit, Turkey",
+        "built": null,
+        "destroyed": 112,
+        "extant_117ce": false,
+        "notes": "The same fire that gutted Nicomedia's Gerusia hall around 112 CE also destroyed the city's temple of Isis, evidence the Egyptian cult had a real foothold in Roman Bithynia. Pliny listed it among the fire's public losses and pushed for a firefighting guild to prevent a repeat. Trajan turned the guild down, and no source records the temple being rebuilt before his death. Its exact location within Nicomedia is unknown, so this marker is an approximate city-center placement.",
+        "sources": [
+          "https://www.judaism-and-rome.org/pliny-younger-letters%C2%A0x33-34"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Younger",
+            "work": "Epistulae",
+            "ref": "10.33",
+            "note": "Lists the temple of Isis among the public buildings destroyed in Nicomedia's fire."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.7048,
+          36.8841
+        ]
+      },
+      "properties": {
+        "id": "poi_walls_antalya",
+        "category": "wall",
+        "name_latin": "Moenia Attaleiae",
+        "name_english": "City Walls of Antalya",
+        "province": "Lycia et Pamphylia",
+        "modern_location": "Kaleiçi, Antalya, Turkey",
+        "built": -150,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Attalus II of Pergamon ringed his new harbor city with defensive walls when he founded Attaleia around 150 BCE, cutting the cliff-top site off from the plain behind it. Roman builders thickened and repaired long stretches after Rome absorbed the city in 133 BCE, adding towers that still shape Kaleiçi's street grid. By 117 CE the walls had guarded the harbor for well over two centuries. Cut stone from this circuit still climbs the cliff above the marina beneath later Byzantine and Seljuk rebuilding.",
+        "sources": [
+          "https://turkisharchaeonews.net/object/city-walls-antalya",
+          "https://en.wikipedia.org/wiki/Antalya"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kale_Kap%C4%B1s%C4%B1,_Antalya.JPG?width=800",
+        "image_credit": "Kale Kapısı, a surviving gate of Antalya's old city walls · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.7057,
+          36.8825
+        ]
+      },
+      "properties": {
+        "id": "poi_harbor_antalya",
+        "category": "harbor",
+        "name_latin": "Portus Attaleiae",
+        "name_english": "Old Harbor of Antalya",
+        "province": "Lycia et Pamphylia",
+        "modern_location": "Kaleiçi, Antalya, Turkey",
+        "built": -150,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Attalus II picked this half-moon cove beneath the cliffs because it was the only sheltered anchorage on an otherwise harborless stretch of the Pamphylian coast. Roman engineers reinforced its breakwater with massive cut-stone blocks, some still visible underwater today. Grain, timber, and Pamphylian goods moved through its roughly 100-meter basin for more than two centuries before 117 CE. The same harbor, now a yacht marina, has stayed in continuous use for over two thousand years.",
+        "sources": [
+          "https://neristour.com/blog/the-roman-harbor-of-antalya-antalya-marina",
+          "https://turkeytravelplanner.com/go/med/Antalya/sights/harbor.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Harbour_of_Antalya_-_2014.10_-_panoramio_(1).jpg?width=800",
+        "image_credit": "The Roman-era harbor of Antalya · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.7042,
+          36.8845
+        ]
+      },
+      "properties": {
+        "id": "poi_hadrians_gate_antalya",
+        "category": "gate",
+        "name_latin": "Porta Hadriani",
+        "name_english": "Hadrian's Gate",
+        "province": "Lycia et Pamphylia",
+        "modern_location": "Kaleiçi, Antalya, Turkey",
+        "built": 130,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Antalya raised this triple-arched marble gate to honor Emperor Hadrian's visit to the city in 130 CE, more than a decade after Trajan's death. Two square towers flank three coffered arches that once carried a full second story and a row of honorific statues, now lost. It survives as the only one of the old city's original gates still standing intact. On 11 August 117 CE this gate did not yet exist and Hadrian had not yet even become emperor.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Hadrian's_Gate",
+          "https://turkisharchaeonews.net/object/hadrians-gate-antalya"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hadrian's_Gate,_Antalya_01.jpg?width=800",
+        "image_credit": "Hadrian's Gate, Antalya · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.702,
+          36.8858
+        ]
+      },
+      "properties": {
+        "id": "poi_kesik_minare_antalya",
+        "category": "temple",
+        "name_latin": "Templum Romanum Attaleiae",
+        "name_english": "Kesik Minare Temple",
+        "province": "Lycia et Pamphylia",
+        "modern_location": "Kaleiçi, Antalya, Turkey",
+        "built": 130,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Builders raised this Corinthian temple in Attaleia around 130 CE, the same year Hadrian's Gate went up to mark the emperor's tour of the city. Byzantine Christians later converted it into a church for the Virgin Mary, and Seljuk Turks topped it with a minaret that eventually snapped off in a storm, giving the ruin its modern name, the Broken Minaret. Its original dedication is disputed, with some accounts linking it to Serapis. Like the nearby Hadrian's Gate, it postdates Trajan's death by over a decade and had not been built on 11 August 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kesik_Minare",
+          "https://turkisharchaeonews.net/object/broken-minaret-antalya"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Antalya_-_Kesik_Minare_-_Temple.jpg?width=800",
+        "image_credit": "Kesik Minare, the Broken Minaret, originally a Roman temple · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.7042,
+          36.8809
+        ]
+      },
+      "properties": {
+        "id": "poi_hidirlik_tower_antalya",
+        "category": "monument",
+        "name_latin": "Turris Attaleiae",
+        "name_english": "Hidirlik Tower",
+        "province": "Lycia et Pamphylia",
+        "modern_location": "Kaleiçi, Antalya, Turkey",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Builders raised this stone tower where Antalya's old walls meet the sea cliffs, starting on a square Roman base later rebuilt into the cylindrical form still standing today. Historians debate whether Rome built it as a tomb, a harbor watchtower, or both, since Roman-era graves have turned up nearby. Byzantine engineers later topped it with a beacon, turning a tomb into a working lighthouse. Most surveys date its construction broadly to the 2nd century CE, most plausibly the decades after Trajan's death, so it most likely had not yet risen at the snapshot moment.",
+        "sources": [
+          "https://turkeytravelplanner.com/go/med/Antalya/sights/hidirlik.html",
+          "https://en.wikipedia.org/wiki/Hidirlik_Tower"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C4%B1d%C4%B1rl%C4%B1k_Tower_02.jpg?width=800",
+        "image_credit": "Hidirlik Tower, Antalya · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.8506,
+          36.9601
+        ]
+      },
+      "properties": {
+        "id": "poi_gate_perge",
+        "category": "gate",
+        "name_latin": "Porta Pergae",
+        "name_english": "Hellenistic City Gate of Perge",
+        "province": "Lycia et Pamphylia",
+        "modern_location": "Aksu, Antalya, Turkey",
+        "built": -300,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Perge's founders raised two round defensive towers flanking the city's southern gate in the 3rd century BCE, standing three stories over a horseshoe courtyard cut into the fortification line. The towers had already watched over the city for more than four centuries by 117 CE. A wealthy priestess named Plancia Magna would later fill the courtyard with imperial statues and a triple arch, but that remodeling began only after Hadrian took the throne. On 11 August 117 CE the bare Hellenistic towers, without her later decoration, were what stood here.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Perge",
+          "https://followinghadrian.com/2025/12/04/plancia-magna-and-the-role-of-a-roman-benefactress-in-perge/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Perge-02-Tor-Rundturm-1996-gje.jpg?width=800",
+        "image_credit": "The Hellenistic round towers of Perge's city gate · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.85,
+          36.9605
+        ]
+      },
+      "properties": {
+        "id": "poi_walls_perge",
+        "category": "wall",
+        "name_latin": "Moenia Pergae",
+        "name_english": "City Walls of Perge",
+        "province": "Lycia et Pamphylia",
+        "modern_location": "Aksu, Antalya, Turkey",
+        "built": -300,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Perge's Hellenistic founders enclosed the city with a wall studded with rectangular towers at even intervals across the 3rd century BCE, a circuit the city never needed to fully rebuild afterward. The eastern and western stretches still stand largely as built, running from the acropolis mound down toward the plain. Only the southern wall received a Roman-era addition, and that came in the 2nd century, decades after Trajan's reign. By 117 CE the Hellenistic walls had guarded Perge for roughly four centuries, one of Pamphylia's best-preserved fortification circuits today.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Perge",
+          "https://madainproject.com/perga"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Perge_at_eastern_wall_in_2012_3922.jpg?width=800",
+        "image_credit": "The Hellenistic eastern wall of Perge · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1697,
+          36.9358
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_aspendos",
+        "category": "theater",
+        "name_latin": "Theatrum Aspendi",
+        "name_english": "Theatre of Aspendos",
+        "province": "Lycia et Pamphylia",
+        "modern_location": "Belkis, Serik, Antalya, Turkey",
+        "built": 155,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The Aspendos-born architect Zenon, son of Theodorus, designed this theatre for two wealthy brothers who funded its construction around the mid-2nd century CE, decades after Trajan's death. Its stage building still rises unbroken to the top of the seating bank, the best-preserved example of that design anywhere in the Roman world, and it still hosts performances today. Roughly 15,000 spectators could fill its curved rows in antiquity. On 11 August 117 CE, Aspendos was still generations away from cutting the first stone for this theatre.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_Theatre_of_Aspendos",
+          "https://www.historyhit.com/locations/aspendos-roman-theatre/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theatre_Aspendos.jpg?width=800",
+        "image_credit": "The Roman theatre of Aspendos · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.184,
+          39.1317
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_athena_pergamon",
+        "category": "temple",
+        "name_latin": "Templum Athenae Nicephorae",
+        "name_english": "Temple of Athena",
+        "province": "Asia",
+        "modern_location": "Bergama, Turkey",
+        "built": -300,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Pergamon's rulers built this Doric temple on a terrace above the great theatre around 300 BCE, the oldest sanctuary standing on the acropolis. Philetaerus and his Attalid successors dedicated it to Athena Polias Nikephoros, 'bringer of victory,' and lined its stoas with captured Galatian shields as war trophies. The Library of Pergamon rose directly beside it, so scholars worked within sight of the goddess's own shrine. By 117 CE the sanctuary had anchored Pergamon's religious life for roughly four centuries, its columns among the oldest stonework on the hill.",
+        "sources": [
+          "https://turkisharchaeonews.net/site/acropolis-pergamon",
+          "https://madainproject.com/pergamon"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Temple%20of%20Athena,%20Pergamon.jpg?width=800",
+        "image_credit": "The Temple of Athena, Pergamon acropolis · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1845,
+          39.1295
+        ]
+      },
+      "properties": {
+        "id": "poi_demeter_sanctuary_pergamon",
+        "category": "sanctuary",
+        "name_latin": "Sacrarium Cereris Pergami",
+        "name_english": "Sanctuary of Demeter",
+        "province": "Asia",
+        "modern_location": "Bergama, Turkey",
+        "built": -280,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Pergamon's earliest known cult site, this open-air sanctuary to Demeter and her daughter Kore occupied a long terrace on the acropolis's southern slope, reaching back to the 4th century BCE. Philetaerus, founder of the Attalid dynasty, and his mother Boa rebuilt its Ionic temple and altar in the early 3rd century BCE, decorating the marble frieze with carved bulls' skulls. Women of the city gathered here yearly for torchlit rites echoing the Eleusinian mysteries, on stone benches still visible today. By 117 CE the sanctuary had served Pergamon's women for over four centuries.",
+        "sources": [
+          "https://d-scholarship.pitt.edu/6722/",
+          "https://en.wikipedia.org/wiki/Pergamon"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pergamon_Demeterheiligtum.JPG?width=800",
+        "image_credit": "The Sanctuary of Demeter, Pergamon · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1794,
+          39.1211
+        ]
+      },
+      "properties": {
+        "id": "poi_red_basilica_pergamon",
+        "category": "temple",
+        "name_latin": "Serapeum Pergami",
+        "name_english": "Red Basilica",
+        "province": "Asia",
+        "modern_location": "Bergama, Turkey",
+        "built": 120,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Roman builders raised this immense brick temple directly over the Selinus River in Pergamon's lower city, engineering a hidden double bridge nearly 200 meters wide just to carry the water beneath its foundations. Dedicated to the Egyptian gods Serapis and Isis, its main hall ranks among the largest Roman-era religious buildings surviving anywhere in the Greek world. Its brick construction and sculptural style point to the first half of the 2nd century CE, most likely under Hadrian rather than Trajan. On 11 August 117 CE this temple almost certainly did not yet exist.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Red_Basilica",
+          "https://www.thearchaeologist.org/blog/the-red-basilica-kzl-avlu-the-monumental-ruined-temple-in-the-heart-of-bergama-city"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
