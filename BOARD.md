@@ -1169,8 +1169,14 @@ to prevent. Building locally to *test* your own work is expected and fine.
 - [ ] `[12-P1-4]` **`fuzzy-dates`** `fix` — `{earliest, latest, display}` date objects.
 - [ ] `[11-P2-10]` **`next-upgrade`** `fix` — `next@14.2.5` advisory flagged in shift 1 and never
       actioned. Deliberate upgrade with a smoke test.
-- [ ] `[06-P2-6]` **`priority-cities`** `add` — Alexandria, Carthage, Antioch, Londinium,
-      Lugdunum, Tarraco, Pergamon, Caesarea Maritima before further Italian secondary towns.
+- [x] `[06-P2-6]` **`priority-cities`** `add` — Verified 2026-08-26 by cloud shift 63. Cloud
+      shift 59's "Priority cities: 29 curated POIs for Alexandria, Carthage, Antioch, Caesarea
+      Maritima, Londinium, Lugdunum, Tarraco, Pergamon" commit already delivered this ticket's
+      exact list; it was never checked off. Confirmed current `pois.geojson` coverage by
+      substring match on `id`/`modern_location` for all eight names: Alexandria 10, Carthage 9,
+      Antioch 6, Londinium 7, Lugdunum 5, Tarraco 5, Pergamon 6, Caesarea (Maritima) 9 — 57
+      records total, all real named monuments with sources, none a placeholder city-level stub.
+      Closing rather than leaving stale.
 - [x] `[08-P2-7]` **`ancient-lakes`** `add` — Done 2026-08-18 by cloud shift 28. 20 named lakes
       added as a `lake` type on the existing natural-landmarks layer (`landmarks_117.geojson`,
       24 → 44 features; reuses the layer/source as-is, defaults OFF, no new toggle): Fucino
