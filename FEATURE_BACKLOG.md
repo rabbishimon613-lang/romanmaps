@@ -696,9 +696,9 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       targeted `Edit` string replacements (16-line diff). Worth the tooling-level fix a prior
       shift already proposed: a pre-commit/pre-push check that rejects a `pois.geojson` diff
       touching more lines than the number of fields actually changed.
-- [ ] **Next Axis 1 region after Greece & Aegean is Asia Minor** per the brief's own order:
-      Pergamon (already a full `sites.ts` site — check curated-POI depth before assuming
-      untouched), Aphrodisias, Hierapolis, Miletus, Sardis, Antalya, Nicaea, Nicomedia.
+- [x] **Next Axis 1 region after Greece & Aegean is Asia Minor** — done 2026-08-26, cloud shift
+      63: Aphrodisias, Hierapolis, Miletus, Sardis, Nicaea, Nicomedia, Antalya/Perge/Aspendos
+      opened (52 POIs) plus 3 more Pergamon depth records. See below and `SHIFT_LOG.md`.
 - [ ] **Image coverage on this shift's own 66 new POIs sits below the map's overall average** —
       24/66 (36%) vs. the site-wide 55.7% (477/857). The two-pass approach (research first, hunt
       images after in a second agent round) worked but cost real time; folding image-search
@@ -707,8 +707,60 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       under modern city squares (Serdica, most of Sirmium) with genuinely thin Commons coverage —
       not every gap is closeable, but it's worth another dedicated attempt before assuming that.
 
+## New ideas spotted this shift (2026-08-26, cloud shift 63 — Asia Minor + Levant queues open)
+
+- [ ] **`scripts/append-geojson-features.mjs` cannot touch `places_medium.geojson`.** Its
+      bracket-depth walker counts every literal `[`/`]` character in the raw file text, including
+      ones inside JSON string values — and ~9,000 of this file's `latin` fields legitimately use
+      square brackets to mark reconstructed/uncertain ancient names (e.g. `"[Luxovium]"`). The
+      file's total `[` count (16,508) doesn't match its `]` count (16,505) somewhere inside that
+      pre-existing 9k, so the walker's depth counter never returns to zero and it throws
+      `could not find matching "]" for "features" array` before writing anything (confirmed safe —
+      it fails closed, not open). Worked around it twice this shift with a direct string splice
+      instead (the file is confirmed single-line/no-newlines, ending in a literal `]}`, so
+      `json.dumps(feature, separators=(", ", ": "))`-formatted text spliced right before that
+      suffix reproduces the same additive effect). A real fix would make the helper script
+      JSON-aware (track actual array/object nesting via a state machine that treats `"..."` string
+      literals as opaque, not char-by-char bracket counting) rather than working around it a third
+      time next time someone needs to add a gazetteer entry.
+- [ ] **Next Axis 1 region after the Levant (opened this shift — Beirut, Sidon; Tyre and Bosra
+      deepened) is Egypt & Cyrenaica** per the brief's own order: Alexandria (already has 10
+      `pois.geojson` records from an earlier priority-cities pass — check depth before assuming
+      untouched, same check this shift did for Pergamon before researching it), Karanis, Cyrene,
+      Apollonia. After that, **North Africa**: Carthage (9 records already), Utica, Dougga, Bulla
+      Regia — closing out the brief's entire named Axis-1 regional queue.
+- [ ] **Image coverage on this shift's own 73 new POIs sits well below the map's overall
+      average** — 34/73 (47%, after a dedicated top-up pass closed 5 of 29) vs. the site-wide
+      56.2% (511/930). Unlike some prior shifts' image gaps, this one came back from a genuinely
+      thorough second search rather than an exhausted budget — Nicomedia's cluster is essentially
+      unexcavated under modern İzmit, several Beirut/Sidon/Tyre harbor records are buried or
+      underwater, and two near-misses were correctly declined as wrong-site mismatches (a "Temple
+      of Dushares" file that's actually in Petra, not Bosra; a "Beirut hippodrome" file that's
+      almost certainly the modern racecourse). A third pass on this exact list probably won't move
+      the number — a future shift's search budget is better spent on a fresh region's records.
+- [ ] **`FEATURE_BACKLOG.md`'s P0-P3 sections are down to one open item: terrain shading**
+      (hillshade under the parchment layer). Confirmed still blocked the way prior shifts found
+      it — needs new hillshade tile data this sandbox can't fetch over the network, and very
+      likely a new npm dependency (a raster/DEM-processing library) against the standing "don't
+      touch package.json without a data-change justifying it" guardrail. Not a normal Track B
+      slot; whoever picks it up needs either a network-unblocked environment or a developer
+      working locally to pre-generate and commit a tileset.
+- [ ] **A real cross-record duplicate was caught and fixed this shift, worth a standing habit for
+      any future Axis-1 city research**: a research agent's new `poi_temple_of_aphrodite_aphrodisias`
+      turned out to be the exact same Temple of Aphrodite already on the map under the id
+      `poi_temple_aphrodite_aphrodisias` — different id slug, same building, same coordinates,
+      overlapping prose. A same-batch id-collision check catches an *exact* string match; it
+      doesn't catch two different id slugs describing the same real-world monument. Worth reading
+      every new batch's record titles against a quick `grep` of the destination city's existing
+      records before merging, not just diffing id strings.
+
 ## Shipped (moved from above; newest on top)
 
+- 2026-08-26 — cloud shift 63: Asia Minor queue opens — Aphrodisias, Hierapolis, Miletus, Sardis,
+  Nicaea, Nicomedia, Antalya/Perge/Aspendos (52 POIs) + 3 Pergamon depth records. Levant queue
+  opens — Berytus/Beirut, Sidon (10 POIs); Tyre + Bosra deepened (11 POIs). Image top-up (5 of 29
+  closed). Board `[06-P2-6]` priority-cities verified and closed (already delivered by shift 59).
+  `pois.geojson` 857 → 930.
 - 2026-08-24 — a cloud shift: Appearance / theme toggle (System / Light / Dark in the
   hamburger menu, live map + chrome repaint, no reload, persisted). Djemila (13), Volubilis (12),
   Jerash (16) and Trier (15) curated landmark POIs — four more zero-coverage `sites.ts` sites

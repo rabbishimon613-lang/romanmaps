@@ -7,6 +7,222 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 63 — 2026-08-26 (this shift's own prompt claimed "Shift 4 of four")
+
+Same stale-numbering mismatch every recent shift has flagged — `SHIFT_LOG.md` was 62 real shifts
+deep at session start, not 3. Session started detached at `origin/main`'s real head (`4b136d4`,
+shift 62's own last commit); `git fetch origin main` + `git checkout main && git pull` landed
+cleanly on the real head with no drift and no lost work. `node_modules` wasn't present —
+`npm install` first, same as every recent shift; the incidental `package-lock.json`
+`libc`/`hasInstallScript` diff from a newer local npm was reverted before every push rather than
+committed, per the "don't touch deps" guardrail (reverted it three separate times this shift,
+once per push — worth remembering it recurs after every `npm install`, not just the first one).
+Re-confirmed the standing network finding independently: direct `curl` to `en.wikipedia.org` and
+`overpass-api.de` both returned connection failures. Background `Agent` calls with `WebSearch`
+remained the only working research channel — used 7 of them this shift (4 for Asia Minor, 2 for
+the Levant, 1 image top-up), all reviewed and hand-merged, nothing auto-committed.
+
+### Board check
+
+No `[~]` claims standing at session start. Reviewed `BOARD.md`'s open P0/P1 tickets — same
+conclusion recent shifts reached: `[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]`
+card-rebuild, `[02-P0-1]` terrain, `[13-P0-2]` image-audit, `[02-P0-4]` self-host-glyphs,
+`[10-P0-2]` three-depth-labels are all either network-blocked or too large for one unattended
+session. Did close one small, clearly-scoped ticket: `[06-P2-6]` priority-cities — cloud shift
+59's "Priority cities" commit had already delivered its exact eight-city list (confirmed via a
+live count against `pois.geojson`: Alexandria 10, Carthage 9, Antioch 6, Londinium 7, Lugdunum 5,
+Tarraco 5, Pergamon 6, Caesarea Maritima 9 — 57 records, all real named monuments), but the board
+row was never checked off. Committed the board update alone first, per the claim protocol, before
+starting any data work.
+
+### Track A — Asia Minor queue opens (52 POIs: Aphrodisias, Hierapolis, Miletus, Sardis, Nicaea,
+### Nicomedia, Antalya/Perge/Aspendos, +3 Pergamon depth)
+
+Per `SHIFT_BRIEF.md`'s own Axis-1 order, Asia Minor is next after Greece & Aegean (shift 62).
+Pergamon was flagged by shift 62 as "already a full site — check curated-POI depth before
+assuming untouched"; confirmed it had 9 records already (Asklepieion, Altar of Zeus, Library,
+gladiator school, theatre, Trajaneum) and dispatched a depth-check agent rather than a fresh-city
+agent for it. Four parallel background research agents (one per city pair), each hand-reviewed
+before merging via `scripts/append-geojson-features.mjs`.
+
+**Aphrodisias** (10) **+ Hierapolis** (8): the Sebasteion, Stadium, Theatre, Temple of Aphrodite's
+Zoilos-funded cella, and a sculptors' workshop all clear 117 comfortably; the Tetrapylon (~200 CE),
+Baths of Hadrian (explicitly begun after Trajan's death — the exact trap the brief names), and the
+Bouleuterion/Odeon (~200 CE) are the dating traps, shipped `false` with honest notes rather than
+omitted. Hierapolis: the Plutonium/Ploutonion (a real Strabo 13.4.14 citation describing the toxic
+gas vent directly), the travertine terraces as their own natural-landmark record, the Frontinus
+Gate (84-86 CE); the Temple of Apollo's standing remains are a 3rd-century Severan rebuild (the
+Hellenistic original was wrecked in the 60 CE quake) so it ships `false` per the uncertainty rule,
+alongside the Hadrianic Agora and the Severus-Alexander-dated Nymphaeum of the Tritons.
+
+**Caught two real duplicates before merging, not after**: the research agent's
+`poi_necropolis_hierapolis` was byte-for-byte the same monument as an existing record under the
+identical id (confirmed identical coordinates and subject, different prose) — dropped the new
+copy. A second, subtler one: `poi_temple_of_aphrodite_aphrodisias` was the same Temple of Aphrodite
+already on the map as `poi_temple_aphrodite_aphrodisias` — different id string, same building —
+caught only by reading both full records side by side, not by an id-collision check alone. Kept
+the existing one (it already carries a Tacitus citation) and dropped the new duplicate.
+
+**Miletus** (8) **+ Sardis** (6): the Nymphaeum funded by Trajan's own father as governor of Asia
+(~79-80 CE, so already 35+ years old at the snapshot) is a nice research find; the Faustina Baths
+correctly ship `false` (funded by Marcus Aurelius's wife, who wasn't even born until decades after
+Trajan died). Sardis's Hellenistic Temple of Artemis cella genuinely stood in 117 (the famous
+double-cella "wrap" everyone photographs is Hadrianic, noted as a separate later layer); its
+Bath-Gymnasium/Marble Court and Synagogue are both Antonine-to-Severan and correctly `false`
+despite being the site's most-photographed ruins — the research explicitly flagged this as the
+harder part of the pass, separating Sardis's early-Roman layer from its much later fame.
+
+**Nicaea** (5) **+ Nicomedia** (6): built directly around Pliny the Younger's actual Book 10
+letters to Trajan (~110-113 CE, four years before the snapshot) rather than excavated remains,
+since both cities are thin on identifiable Trajanic-or-earlier standing structures. Nicaea's
+theatre and gymnasium trace to Epistulae 10.39 (Pliny flags the half-built theatre's cracking
+walls) and the fire-rebuilt gymnasium Trajan approved; Nicomedia's aqueduct (10.37-38, succeeding
+after two earlier wasted attempts) and forum expansion (10.49-50, displacing an old Magna Mater
+shrine) are both real, citable, period-accurate finds. The proposed Lake Sophon-to-sea canal
+(10.41-42) ships with `extant_117ce: false` since no source confirms it was ever actually dug —
+Pliny's letters describe a proposal under evaluation, not a completed work. Nicaea's own aqueduct
+is Hadrian-dedicated and correctly excluded from `true`.
+
+**Antalya/Perge/Aspendos** (8): the brief's own named trap (Hadrian's Gate, 130 CE) held, plus a
+second one the research agent found independently (Kesik Minare, same 130 CE occasion). A real
+correction to the brief itself: Plancia Magna's famous gate-rebuilding benefaction at Perge is
+early-Hadrianic (~120-122 CE per inscription evidence naming Hadrian and Sabina as the reigning
+couple), not Trajanic as `SHIFT_BRIEF.md` assumes — shipped the underlying Hellenistic gate towers
+as the `true` record instead of forcing her benefaction onto the snapshot.
+
+**Pergamon depth** (+3, zero duplicates): Temple of Athena and Sanctuary of Demeter both clear
+117; the Red Basilica (Serapis/Isis temple) ships `false` — brick and sculptural style point to
+the first half of the 2nd century CE, most likely Hadrianic. Confirmed `poi_pergamon_trajaneum`
+and `poi_pergamon_theatre` already existed from earlier shifts' work and were not touched.
+
+**Gazetteer fix**: Aphrodisias/Hierapolis/Sardis/Nicaea/Nicomedia already had `places_medium.geojson`
+entries from the raw DARE dataset; Miletus, Antalya, Perge, and Aspendos did not — added 4 entries
+(ids `900038`-`900041`).
+
+**Real tooling bug found and worked around**: `scripts/append-geojson-features.mjs` — the safe,
+established way to add features without reformatting a whole file — throws
+`could not find matching "]" for "features" array` on `places_medium.geojson` specifically. Root
+cause: its naive bracket-depth walker counts every literal `[`/`]` character in the file,
+including inside string values, and ~9,000 of this file's `latin` fields legitimately use square
+brackets to mark reconstructed/uncertain place names (e.g. `"[Luxovium]"`). Counted the file's
+total `[` (16,508) against `]` (16,505) — off by 3 somewhere in that pre-existing 9k, so the
+walker's depth counter never returns to zero and the closing bracket is never found. This is a
+pre-existing data quirk, not something to fix in a 4.6MB, 16k-feature file mid-shift. Worked
+around it with a direct string splice instead: the file is confirmed single-line
+(`json.dumps`-style, no newlines) ending in a literal `]}`, so inserting new features as
+`json.dumps(f, separators=(", ", ": "))`-formatted text right before that suffix reproduces the
+exact same additive, non-reformatting effect the helper script provides for every other file.
+Verified via `git diff --stat` (1 line changed) before each of the two commits that touched this
+file. Flagging in `FEATURE_BACKLOG.md` below so a future shift doesn't waste time on the same
+error message.
+
+### Track A — Levant queue opens (21 POIs: Berytus/Beirut + Sidon opened, Tyre + Bosra deepened)
+
+Continuing the brief's Axis-1 order past Asia Minor (Beirut, Tyre, Sidon, Caesarea Maritima,
+Bosra) with two more parallel research agents — Caesarea Maritima already had 9 records from an
+earlier priority-cities pass, so skipped straight to the four open cities.
+
+**Berytus/Beirut** (5): Roman Baths, Forum/basilica, a Trajanic-attributed Cardo Maximus
+colonnade, an Augustan-phase wooden hippodrome (sourced to a BAAL 17 excavation report), and the
+enlarged colonia-era harbor. Deliberately did **not** ship Berytus's famous "premier law school of
+antiquity" reputation at all — it's first attested only in a 238 CE panegyric and is genuinely a
+3rd-century-plus phenomenon by every source checked, not a 117 CE fact under any reasonable
+reading, so it was left out entirely rather than shipped `false` with a misleading implication it
+almost existed.
+
+**Sidon** (5): the Temple of Eshmun at Bostan esh-Sheikh (continuously used from the Persian period
+through Rome, still active in 117), the Ayaa royal necropolis (findspot of the Alexander
+Sarcophagus) and the separate Eshmunazar II sarcophagus tomb — both Phoenician-era finds that
+correctly ship `extant_117ce: true` since the objects/tombs already existed and weren't destroyed
+by the snapshot date, even though they predate Roman rule by centuries. Plus the ancient harbor and
+the Murex Hill dye-industry shell mounds (Pliny the Elder cited).
+
+**Tyre** (+6, on the existing `poi_temple_melqart_tyre`): Alexander's 332 BCE siege causeway —
+still the literal ground the city stands on in 117 CE — both ancient harbors, the Tyrian-purple
+murex industry, and the Ain Baal "Thrones of Astarte" spring sanctuary all clear 117. The famous
+Al-Bass hippodrome ships `false`: every source ties it to Hadrian's ~130 CE tour and his elevation
+of Tyre to metropolis, over a decade past the snapshot — the same "photogenic ruin is actually
+later" shape Sardis and Aphrodisias hit this shift.
+
+**Bosra** (+5, on the existing `poi_fortress_iii_cyrenaica_bostra`): the Via Nova Traiana (Trajan's
+Bostra-to-Aila highway, milestones dated 111 CE — finished just 3 years before the snapshot, a
+genuinely exciting period-accurate find), the pre-annexation Nabataean gate, and temples to Dushara
+and Ba'al-Shamin inherited from Bostra's caravan-city period before Trajan's 106 CE annexation of
+Nabataea. Bosra's famous theatre ships `false` on a real, sourced scholarly disagreement (some
+sources say Trajanic, others place its monumental construction under the Antonines) — defaulted to
+`false` per the project's own uncertain-dating rule, with the disagreement stated plainly rather
+than the research agent silently picking a side.
+
+**Gazetteer fix**: Tyre already had a "Tyrus" entry; Beirut, Sidon, and Bosra did not — added 3
+entries (ids `900042`-`900044`), same string-splice approach as the Asia Minor batch.
+
+### Track A — image top-up (5 of 29 image-less Asia Minor/Levant POIs closed)
+
+One more research agent targeted the 29 of this shift's own 73 new records that shipped without an
+`image_url`. Closed 5 with confirmed real Commons filenames (Aphrodisias South Agora, Miletus
+Bouleuterion, Sardis Bath-Gymnasium complex, Sardis Acropolis, Pergamon Red Basilica — 17%, a
+lower hit rate than shift 62's Balkans top-up but consistent with how buried/unexcavated this
+shift's own cities skew, see "Next shift" below). The other 24 came back honestly empty:
+Nicomedia's cluster (5 records) is essentially unexcavated under modern İzmit plus one genuinely
+unbuilt canal project with nothing to photograph; several Beirut/Sidon/Tyre harbor and forum
+records are buried or underwater; and a few near-misses were deliberately declined rather than
+mismatched — a "Temple of Dushares" file that turned out to be in Petra, not Bosra, and a "Beirut
+hippodrome" file that's almost certainly the modern racecourse rather than the Roman-era dig.
+Applied as 5 id-anchored string-splice insertions, confirmed via `git diff` to touch nothing else.
+
+### Numbers
+
+`pois.geojson`: 857 → 930 (+73, +8.5%), across four commits (52 Asia Minor, 21 Levant, 5
+image-only edits in their own commit). `places_medium.geojson`: 16,351 → 16,358 (+7 gazetteer
+entries). 11 cities newly opened or meaningfully deepened (Aphrodisias, Hierapolis, Miletus,
+Sardis, Nicaea, Nicomedia, Antalya, Perge, Aspendos, Berytus, Sidon) plus 3 deepened further
+(Pergamon, Tyre, Bosra) — well past the axis-1 per-shift minimum of 5. `npm run validate`: clean
+across all five pushes, same 17 pre-existing warnings, 0 errors. `npm run build` + the pre-push
+hook: clean every time (930 `/place/[slug]` routes by the final push). METRICS.md refreshed twice.
+
+### Track B
+
+Closed `[06-P2-6]` priority-cities (see "Board check" above) — a `verify`-type ticket, not new UI
+work. `FEATURE_BACKLOG.md`'s own P0-P3 sections have exactly one open item left (terrain shading),
+and it's been flagged by multiple prior shifts as a bigger lift than a normal Track B slot (needs
+new hillshade tile assets and likely a new dependency, against the "don't touch package.json"
+guardrail, and this sandbox can't fetch new tile data over the network regardless). Did not attempt
+it rather than ship a half feature — flagging again below so it doesn't get silently dropped.
+
+### Next shift should pick up
+
+- **Next regional queue after the Levant is Egypt & Cyrenaica** per the brief's own Axis-1 order:
+  Alexandria (already has 10 records from the priority-cities pass — check depth before assuming
+  untouched, same pattern as this shift's Pergamon check), Karanis, Cyrene, Apollonia. After that,
+  **North Africa**: Carthage (9 records already), Utica, Dougga, Bulla Regia.
+- **`append-geojson-features.mjs` cannot touch `places_medium.geojson`** — see the tooling-bug
+  writeup above. Either fix the helper script to ignore bracket characters inside JSON string
+  values (a proper JSON-aware splice, not a naive char-by-char bracket counter), or keep using the
+  direct-string-splice workaround this shift used twice. Either way, don't lose an hour rediscovering
+  the same error message from scratch.
+- **Image coverage on this shift's own 73 new POIs sits well below the map's overall average** —
+  34/73 (47%, after the top-up pass) vs. the site-wide 56.2% (511/930). Nicomedia's 5-record
+  cluster and most of Beirut/Sidon/Tyre's harbor infrastructure are the biggest remaining
+  image-less pool, and it's a genuinely thin one — this shift's dedicated top-up agent found real,
+  confirmed reasons (buried, underwater, or simply undocumented on Commons) for all 24 remaining
+  gaps rather than an exhausted search budget, so a third pass on the same list probably won't move
+  the number much. A future shift's search budget is better spent on a fresh region.
+- **`[09-P0-1]` ancient-sources**: this shift's research surfaced 8 fresh `ancient_sources`
+  citations across the 73 new records — Strabo (Hierapolis's Plutonium and travertine terraces,
+  cited directly for the toxic-gas description), Pliny the Younger's actual Epistulae 10.37-42
+  (Nicomedia's aqueduct and canal proposal, Nicaea's theatre), Pliny the Elder (Tyre and Sidon's
+  purple-dye industries), Tacitus (already on the existing Aphrodisias temple record, confirmed
+  not duplicated). `npm run metrics`'s site-wide ancient-source percentage now sits at 29.7%
+  (270/909 before this count included the Levant batch — re-run `npm run metrics` fresh for the
+  exact current figure).
+- **Terrain shading remains the sole open item in `FEATURE_BACKLOG.md`'s P0-P3 sections** and is
+  still blocked the same way prior shifts found it — needs new hillshade tile data this sandbox
+  can't fetch, and likely a new dependency against the "don't touch package.json" guardrail. Not a
+  normal Track B slot; whoever picks it up should budget for either a network-unblocked
+  environment or a pre-generated tileset committed by a developer working locally.
+
+---
+
 ## Shift 62 — 2026-08-26 (this shift's own prompt claimed "Shift 3 of four")
 
 Same stale-numbering mismatch shift 61 (and several before it) already flagged — continuing the
