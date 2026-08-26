@@ -11753,6 +11753,52 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.2496,
+          32.2724
+        ]
+      },
+      "properties": {
+        "id": "station_thantia",
+        "category": "mansio",
+        "name": "Thantia",
+        "road": "Via Traiana Nova",
+        "distance_from_previous_mp": 24,
+        "identified": false,
+        "notes": "A station on the Peutinger Table's Bostra-to-Hatita stretch of the Via Traiana Nova, tentatively placed near Thughrat el-Jubb. Its Peutinger mileage (24 Roman miles from Bostra, 9 more to Hatita) does not fully reconcile with Hatita's own recorded distance from Bostra elsewhere in this file, so treat the exact figures as unsettled alongside the identification. Coordinates are interpolated along the road line between Bostra and Hatita, not a surveyed find-spot.",
+        "sources": [
+          "Tabula Peutingeriana, Segment X"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1059,
+          29.5874
+        ]
+      },
+      "properties": {
+        "id": "station_ad_dianam",
+        "category": "mutatio",
+        "name": "Ad Dianam",
+        "road": "Via Traiana Nova",
+        "distance_from_previous_mp": 16,
+        "identified": false,
+        "notes": "A minor waystation, likely named for a roadside shrine to Diana, on the Peutinger Table's Via Traiana Nova sequence between Praesidium and Aila (Aqaba) at the road's southern end. The 16-Roman-mile distance from Aila recurs consistently across sources; the distance reported from Praesidium's side conflicts between different readings and is left unrecorded here rather than guessed. Coordinates are interpolated along the road line between Praesidium and Aila, not a surveyed find-spot. Not to be confused with an unrelated same-named station on the Via Egnatia in Albania.",
+        "sources": [
+          "Tabula Peutingeriana, Segment X"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
