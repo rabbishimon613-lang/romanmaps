@@ -684,6 +684,196 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            12.591,
+            41.8996
+          ],
+          [
+            12.5152,
+            41.8915
+          ],
+          [
+            12.503,
+            41.8858
+          ],
+          [
+            12.488,
+            41.8858
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_aqua_appia",
+        "category": "aqueduct_line",
+        "name_latin": "Aqua Appia",
+        "name_english": "Aqua Appia Aqueduct",
+        "province": "Italia",
+        "extant_117ce": true,
+        "notes": "Built in 312 BCE by the censor Appius Claudius Caecus (who also began the Appian Way that same year), the Aqua Appia was Rome's first aqueduct and ran almost entirely underground for its roughly 16.6-kilometer course, protecting the water from tampering and sabotage. It emerged only near its terminus, crossing a short arcade between the Caelian and Aventine hills before reaching the Porta Capena and the valley behind the future Circus Maximus. Frontinus, Rome's water commissioner writing around 97 CE, still counted it among the functioning aqueducts feeding the low city, so it remained in service through the 117 CE snapshot. Its precise spring site was already a mystery in Frontinus's own day and remains unidentified by modern archaeology, so this route is a best-guess trace along the historically attested corridor, not a surveyed line.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Aqua_Appia",
+          "http://www.romanaqueducts.info/aquasite/romappia/index.html"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            12.63,
+            41.925
+          ],
+          [
+            12.57,
+            41.91
+          ],
+          [
+            12.5,
+            41.905
+          ],
+          [
+            12.4833,
+            41.9009
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_aqua_virgo",
+        "category": "aqueduct_line",
+        "name_latin": "Aqua Virgo",
+        "name_english": "Virgo Aqueduct",
+        "province": "Italia",
+        "extant_117ce": true,
+        "notes": "Agrippa completed the Aqua Virgo in 19 BCE mainly to feed his new public baths and gardens in the Campus Martius, tapping springs at Le Colonnelle near Salone about 20 kilometers east of the city. Almost its entire course ran underground through tunnels, a low, gentle-gradient design that later let it survive when Gothic besiegers in 537 CE severed every above-ground aqueduct. Extraordinarily, the same channel, maintained and reinforced over the centuries, still delivers water to the Trevi Fountain today — the only ancient Roman aqueduct in continuous use — and it was of course in full service at the 117 CE snapshot.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Aqua_Virgo",
+          "http://www.romanaqueducts.info/aquasite/romavirgo/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            12.315,
+            42.1129
+          ],
+          [
+            12.35,
+            41.98
+          ],
+          [
+            12.45,
+            41.894
+          ],
+          [
+            12.4708,
+            41.8867
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_aqua_alsietina",
+        "category": "aqueduct_line",
+        "name_latin": "Aqua Alsietina",
+        "name_english": "Alsietina Aqueduct",
+        "province": "Italia",
+        "extant_117ce": true,
+        "notes": "Augustus built the Aqua Alsietina around 2 BCE specifically to fill his new Naumachia, a vast artificial basin in Trastevere for staging mock naval battles, drawing water from Lake Martignano over a mostly underground course of about 33 kilometers. Frontinus rated it the poorest-quality water of any Roman aqueduct and unfit for drinking, noting it was distributed to gardens and to households across the Tiber when the naumachia itself was not being filled. It remained the sole aqueduct serving Trastevere until Trajan's new line arrived in 109 CE, and Frontinus's survey confirms it was still operating in the years just before the 117 CE snapshot; its exact channel path is poorly preserved and only loosely reconstructed by modern scholars.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Aqua_Alsietina",
+          "https://www.digitalaugustanrome.org/records/aqua-alsietina/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            31.103,
+            36.982
+          ],
+          [
+            31.165,
+            36.943
+          ],
+          [
+            31.175,
+            36.937
+          ],
+          [
+            31.1789,
+            36.935
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_aqueduct_aspendos",
+        "category": "aqueduct_line",
+        "name_latin": "Aquaeductus Aspendensis",
+        "name_english": "Aqueduct of Aspendos",
+        "province": "Lycia et Pamphylia",
+        "extant_117ce": false,
+        "notes": "Aspendos has the best-preserved inverted siphon in the Roman world: two soaring stone pressure towers, still standing to about 30 meters, connect three venter bridges across a flat valley so water could be forced downhill and back up by hydrostatic pressure alone. An inscription credits a local benefactor, Tiberius Claudius Italicus, with funding it at a cost of 2 million denarii, but specialists most commonly date the surviving structure's masonry and construction technique to the middle of the 2nd century CE, with some extending the range into the 3rd century — after Trajan's death. Because the dating evidence does not converge on a pre-117 date, this is flagged as likely not yet built at the snapshot, included as a documented near-miss rather than plotted as functioning infrastructure.",
+        "sources": [
+          "http://www.romanaqueducts.info/aquasite/aspendos/index.html",
+          "https://www.waterhistory.org/histories/aspendos/aspendos.pdf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            27.05,
+            39.42
+          ],
+          [
+            27.1,
+            39.28
+          ],
+          [
+            27.155,
+            39.175
+          ],
+          [
+            27.1836,
+            39.1325
+          ]
+        ]
+      },
+      "properties": {
+        "id": "line_aqueduct_pergamon_madradag",
+        "category": "aqueduct_line",
+        "name_latin": "Aquaeductus Madradaghensis",
+        "name_english": "Madradag Aqueduct",
+        "province": "Asia",
+        "extant_117ce": true,
+        "notes": "Originally built as a triple terracotta pipeline under the Attalid king Eumenes II in the 2nd century BCE, the Madradag system was later rebuilt in its final pressurized stretch with massive lead pipes able to withstand roughly 19-20 atmospheres, forcing water up and over the last ridge into Pergamon's acropolis reservoirs from a source point some 190 meters below the delivery height. Sinter-deposit analysis correlated with regional earthquake records places this Roman lead-pipe rebuild in the Trajanic-Hadrianic period, at the very start of the 2nd century CE — plausibly, though not certainly, already in service by 117 CE. It remains one of antiquity's most technically ambitious pressurized water systems, rivaled in scale only by Aspendos and a handful of other Roman siphons.",
+        "sources": [
+          "https://www.itia.ntua.gr/ahw/work/111/",
+          "http://www.romanaqueducts.info/siphons/siphons.htm"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }

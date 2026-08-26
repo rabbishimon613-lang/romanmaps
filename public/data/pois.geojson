@@ -23219,6 +23219,891 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.1178,
+          40.9479
+        ]
+      },
+      "properties": {
+        "id": "poi_aqueduct_segovia",
+        "category": "aqueduct",
+        "name_latin": "",
+        "name_english": "Aqueduct of Segovia",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Segovia, Spain",
+        "built": 115,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "One hundred and sixty-seven dry-stone granite arches stride across the valley to the Plaza del Azoguejo, rising to 28 meters without a drop of mortar holding the ashlars together — the postcard image of Roman Hispania. For decades textbooks dated it to Domitian's reign (c. 98 CE) on the strength of a reconstructed bronze inscription, but a 2016 re-analysis of foundation fill from three pillars turned up a Trajanic sestertius struck 112-116 CE sealed in the packing — proof that at least part of the structure was still under construction well into Trajan's final years. A foundation coin only fixes when building started, not when it finished, and aqueduct bridges this scale typically took years above the footings, so this map takes the strict reading: still rising, not yet complete, at the 117 CE snapshot.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Aqueduct_of_Segovia",
+          "https://archaeology.org/news/2016/11/02/161102-segovia-aqueduct-coin/",
+          "https://imperiumromanum.pl/en/discoveries/coin-indicates-different-date-when-famous-segovia-aqueduct-was-built/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.1245,
+          40.9497
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_segovia",
+        "category": "forum",
+        "name_latin": "",
+        "name_english": "Forum of Roman Segovia",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Plaza de Guevara, Segovia, Spain",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Beneath the old Jewish quarter, a 1990 excavation in Plaza de Guevara uncovered a colonnaded public space some 100 meters across, interpreted as part of a forum or a basilica flanking one — the only real hint of civic Roman Segovia beyond the aqueduct. Coverage of the dig dates the occupation broadly to the 1st or 2nd century CE; a Flavian date around municipal promotion under Vespasian's Latin Rights edict (73-74 CE) is plausible but not fixed by any tighter excavated terminus. Coordinates approximate the find neighborhood, not a surveyed point.",
+        "sources": [
+          "https://www.fuimosroma.com/noticia/segovia-recupera-su-pasado-romano-mas-alla-del-acueducto"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.1213,
+          40.9503
+        ]
+      },
+      "properties": {
+        "id": "poi_house_segovia",
+        "category": "house",
+        "name_latin": "",
+        "name_english": "Roman House at Plaza Mayor",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Plaza Mayor, Segovia, Spain",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Under the paving of Segovia's Plaza Mayor, a 2010 dig by Arex Arqueologia hit an intact Roman living space behind the former Hotel Victoria — a beaten-earth floor, rammed-earth wall stubs, and fragments of painted plaster, stratified to the High Imperial period (1st-2nd century CE). Unglamorous next to the aqueduct, but real stratigraphy showing ordinary Segovians living in proper Roman houses on this hill well before 117 CE.",
+        "sources": [
+          "https://www.telecinco.es/noticias/cultura/Aparecen-vivienda-Plaza-Mayor-Segovia_0_1073100074.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.177,
+          41.3841
+        ]
+      },
+      "properties": {
+        "id": "poi_walls_barcino",
+        "category": "wall",
+        "name_latin": "",
+        "name_english": "Roman Walls of Barcino (first-phase circuit)",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Placa Ramon Berenguer el Gran, Barcelona, Spain",
+        "built": -15,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Barcino's first wall was a mark of civic status for a brand-new Augustan colony, not a defense against any real threat — a modest stone ring about 9 meters high and 2-3.5 meters thick, dated to the colony's founding around 15-10 BCE. The much heavier, tower-studded circuit visitors associate with Roman Barcelona today is a late-3rd/early-4th-century response to Frankish and Alemannic raids, more than a century after this snapshot — only the earlier, plainer wall stood in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_walls_of_Barcelona",
+          "https://www.barcelonaturisme.com/wv3/en/page/479/wall-and-defence-towers-of-the-roman-city-of-barcino-placa-ramon-berenguer.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1759,
+          41.3838
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_augustus_barcino",
+        "category": "temple",
+        "name_latin": "Templum Augusti",
+        "name_english": "Temple of Augustus, Barcino",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Carrer Paradis 10, Barcelona, Spain",
+        "built": -10,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Four startlingly tall, slender Corinthian columns still stand in a medieval courtyard atop Mont Taber, the hill on which Barcino's founders laid out their forum. Most sources place the temple in the Augustan founding period (c. 15-13 BCE), though the dedication to Augustus is, by Barcino's own admission, traditional rather than proven — the identification rests on the temple's prominence and style, not a surviving inscription, and at least one strand of scholarship credits its formalization to Tiberius after 14 CE. Either way it had been the colony's religious high point for well over a century by 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Augustus,_Barcelona",
+          "https://www.historyhit.com/locations/temple-of-augustus-barcelona/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1706,
+          41.384
+        ]
+      },
+      "properties": {
+        "id": "poi_necropolis_via_sepulcral_barcino",
+        "category": "necropolis",
+        "name_latin": "Via Sepulcral Romana",
+        "name_english": "Roman Sepulchral Way",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Placa de la Vila de Madrid, Barcelona, Spain",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Outside Barcino's walls, along a minor road, roughly seventy tombs survive — cupae, urns, and stelae for slaves, freedmen, and working people, in stark contrast to the marble temple up on Mont Taber. Roman law forbade burial within the walls, so anyone entering the city from this direction in 117 CE would have passed row upon row of these graves; the necropolis is documented in continuous use from the 1st through the 3rd century CE, comfortably bracketing the snapshot.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Via_Sepulcral_Romana",
+          "https://www.barcelonaturisme.com/wv3/en/page/492/muhba-via-sepulcral-romana.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1756,
+          41.3838
+        ]
+      },
+      "properties": {
+        "id": "poi_aqueduct_barcino",
+        "category": "aqueduct",
+        "name_latin": "",
+        "name_english": "Aqueduct of Barcino",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Casa de l'Ardiaca, Barcelona, Spain",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A modest masonry line, nothing on Segovia's scale, ran about 11.3 kilometers overland from springs in the Montcada hills to keep the working colony supplied; a short stretch of arcading survives beside the medieval Archdeacon's House. An inscription ties construction to Trajan's reign (98-117 CE), meaning it had already been carrying water for some years by the 117 CE snapshot at the latest. A once-proposed second line from Collserola is now considered not Roman at all, per a recent academic reassessment — this Montcada aqueduct is Barcino's one confirmed Roman line.",
+        "sources": [
+          "http://www.romanaqueducts.info/aquasite/barcino/index.html",
+          "https://link.springer.com/content/pdf/10.1007/s12685-013-0090-2.pdf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1769,
+          41.3825
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_barcino",
+        "category": "forum",
+        "name_latin": "",
+        "name_english": "Forum of Barcino",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Placa Sant Jaume, Barcelona, Spain",
+        "built": -10,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "At the crossing of Barcino's cardo and decumanus atop Mont Taber, the colony built its civic heart — courts, market stalls, and public business, packed into the space now covered by Barcelona's city and regional government buildings. General sources place construction between the 1st and 2nd centuries CE; a fragment of monumental Montjuic-stone paving recovered in a 2023-2025 excavation under a nearby hotel is described as contemporary with the colony's Augustan founding, though it is actively forcing archaeologists to rewrite the forum's exact orientation and footprint, so treat the layout as provisional even though the forum's existence by 117 CE is not in doubt.",
+        "sources": [
+          "https://en.ara.cat/culture/the-emergence-of-the-roman-forum-changed-the-history-of-urban-planning-in-barcelona_1_5657801.html",
+          "https://arkeonews.net/monumental-roman-forum-discovered-beneath-barcelona-hotel-forces-90-degree-rewrite-of-ancient-city-barcino/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7783,
+          37.8766
+        ]
+      },
+      "properties": {
+        "id": "poi_bridge_corduba",
+        "category": "bridge",
+        "name_latin": "",
+        "name_english": "Roman Bridge of Corduba",
+        "province": "Hispania Baetica",
+        "modern_location": "Cordoba, Spain",
+        "built": -8,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Sixteen arches carried the Via Augusta across the Guadalquivir, tying Corduba into the road network of the whole province. Aulus Hirtius records a temporary wooden bridge built here by Caesar's forces during the civil war against Pompey's sons (49-45 BCE); the stone bridge that replaced it belongs to Augustus's reign, though the exact decade isn't fixed in the sources. Modern surveys show only two of today's sixteen arches are genuinely Roman fabric (the rest are medieval and later flood rebuilds), but the Augustan-era stone bridge itself had already stood for over a century by 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_bridge_of_C%C3%B3rdoba",
+          "https://www.historyhit.com/locations/cordoba-roman-bridge/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.776,
+          37.8846
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_claudio_marcelo_corduba",
+        "category": "temple",
+        "name_latin": "",
+        "name_english": "Roman Temple of Calle Claudio Marcelo",
+        "province": "Hispania Baetica",
+        "modern_location": "Calle Claudio Marcelo, Cordoba, Spain",
+        "built": 41,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A hexastyle, pseudo-peripteral Corinthian temple on a grand terraced sanctuary anchoring the city's eastern edge, almost certainly tied to the provincial imperial cult of Baetica. Construction began under Claudius (41-54 CE) and was finished roughly forty years later under Domitian (81-96 CE) — a fixture of the Corduban skyline for a full generation by Trajan's death. Rediscovered only in 1951 during expansion of the town hall.",
+        "sources": [
+          "https://es.wikipedia.org/wiki/Templo_romano_de_C%C3%B3rdoba",
+          "https://dialnet.unirioja.es/servlet/articulo?codigo=5336342"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7781,
+          37.882
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_corduba",
+        "category": "theater",
+        "name_latin": "",
+        "name_english": "Roman Theatre of Corduba",
+        "province": "Hispania Baetica",
+        "modern_location": "Plaza de Jeronimo Paez, Cordoba, Spain",
+        "built": -5,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "One of the largest theatres anywhere outside Italy, seating roughly 15,000 in the city Augustus made capital of Baetica. The core structure dates to the Augustan period (before 5 BCE), with decoration extending into the Julio-Claudian era — a mature, well-established civic monument by Hadrian's day. Known only from 19th-century epigraphy until 1990s excavation beneath the modern archaeological museum rediscovered its foundations.",
+        "sources": [
+          "https://es.wikipedia.org/wiki/Teatro_romano_de_C%C3%B3rdoba",
+          "https://en.wikipedia.org/wiki/Archaeological_and_Ethnological_Museum_of_C%C3%B3rdoba"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7815,
+          37.8778
+        ]
+      },
+      "properties": {
+        "id": "poi_walls_corduba",
+        "category": "wall",
+        "name_latin": "",
+        "name_english": "City Walls of Corduba",
+        "province": "Hispania Baetica",
+        "modern_location": "Puerta de Almodovar, Cordoba, Spain",
+        "built": -152,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The original defensive circuit dates to the mid-2nd-century-BCE Republican foundation under M. Claudius Marcellus, enclosing about 48 hectares with limestone curtain walls and semicircular towers. When Augustus refounded the city as Colonia Patricia, capital of Baetica, the walled area was expanded to roughly 78 hectares. Surviving stretches near Puerta de Almodovar still show the coursed Roman masonry; by 117 CE the expanded Augustan-era walls had stood for well over a century.",
+        "sources": [
+          "https://www.castillosnet.org//monumento.php?r=CO-CAS-192",
+          "http://uhu.es/arqueohispania/index.php/2018/10/11/corduba/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.777,
+          37.8858
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_novum_corduba",
+        "category": "forum",
+        "name_latin": "Forum Novum",
+        "name_english": "Colonial Forum of Corduba",
+        "province": "Hispania Baetica",
+        "modern_location": "Calle San Alvaro / Calle Gongora area, Cordoba, Spain",
+        "built": -10,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Corduba's civic heart began as a plain rammed-earth plaza under the Republic before Augustus paved it in stone; not content with one forum, the city added a second, more lavish square nearby — the so-called Forum Novum or Forum Adiectum — late in Augustus's reign or early under Tiberius. Both spaces were long-established fixtures by Hadrian's accession. The exact intra-city footprint of the Forum Novum is not precisely pinned down in available sources; this coordinate is an approximation from described street intersections, lower-confidence than the dating.",
+        "sources": [
+          "http://uhu.es/arqueohispania/index.php/2018/10/11/corduba/",
+          "https://www.arqueocordoba.com/en/historia/romana/foros/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7836,
+          37.8797
+        ]
+      },
+      "properties": {
+        "id": "poi_mausoleums_puerta_gallegos_corduba",
+        "category": "mausoleum",
+        "name_latin": "",
+        "name_english": "Roman Mausoleums of Puerta de Gallegos",
+        "province": "Hispania Baetica",
+        "modern_location": "Jardines de la Victoria, Cordoba, Spain",
+        "built": 30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Two monumental cylindrical tombs, each roughly 13 meters across, once flanked the Via Augusta where it left the city for Hispalis — funerary showpieces for a wealthy Corduban family, their design apparently borrowed directly from Italian mausolea. The North Mausoleum is dated to Tiberius's reign (14-37 CE), well over a century before Hadrian, and both would still have greeted travelers on the road out of the city in 117 CE. Rediscovered by archaeological test pits only in 1993.",
+        "sources": [
+          "https://es.wikipedia.org/wiki/Mausoleo_romano_(C%C3%B3rdoba)",
+          "https://www.turismodecordoba.org/mausoleos-romanos-de-cordoba"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.4906,
+          40.0994
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_conimbriga",
+        "category": "forum",
+        "name_latin": "",
+        "name_english": "Flavian Forum and Imperial Cult Precinct of Conimbriga",
+        "province": "Lusitania",
+        "modern_location": "Condeixa-a-Velha, Portugal",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Conimbriga's civic center had two lives before Hadrian ever took the throne: first an Augustan-era forum with the usual senate house, law court, and shops, then a wholesale Flavian-era demolition and rebuild that turned the space into a dedicated sanctuary of the imperial cult, stripped of its civic furniture. Either way, some form of monumental forum precinct had stood at the heart of the town for well over a generation by 117 CE. Coordinates use the general site location; a forum-specific sub-site coordinate was not found in sources consulted.",
+        "sources": [
+          "https://www.academia.edu/47249288/The_rebirth_of_a_Roman_Forum_The_case_study_of_the_Flavian_Forum_of_Conimbriga"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.4653,
+          40.1066
+        ]
+      },
+      "properties": {
+        "id": "poi_aqueduct_conimbriga",
+        "category": "aqueduct",
+        "name_latin": "",
+        "name_english": "Aqueduct of Conimbriga",
+        "province": "Lusitania",
+        "modern_location": "Alcabideque, near Condeixa-a-Velha, Portugal",
+        "built": -10,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Water traveled some 3.5 kilometers from a spring at Alcabideque, partly on a raised arcade whose surviving arches are among the most photographed features of the site today. Built around 10 BCE as part of Augustus's investment in the town, it was already mature, functioning infrastructure by Hadrian's day, feeding the forum's fountains and later the bath complexes. Coordinates mark the Alcabideque source rather than the in-town arcade, the point with the most precisely documented location.",
+        "sources": [
+          "http://www.romanaqueducts.info/aquasite/conimbriga/index.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.4906,
+          40.0994
+        ]
+      },
+      "properties": {
+        "id": "poi_house_fountains_conimbriga",
+        "category": "house",
+        "name_latin": "",
+        "name_english": "House of the Fountains (Casa dos Repuxos)",
+        "province": "Lusitania",
+        "modern_location": "Condeixa-a-Velha, Portugal",
+        "built": 160,
+        "destroyed": 300,
+        "extant_117ce": false,
+        "notes": "The single most photographed house at Conimbriga — a mansion built around a formal garden threaded with fountain jets, its floors covered in some of the finest figural mosaics in Roman Iberia. A genuine dating trap: a plainer house occupied this plot from the early 1st century CE, but the fountain garden and famous mosaics that define the 'House of the Fountains' are dated by Portuguese excavation scholarship (Correia et al.) to the third quarter of the 2nd century through the early 3rd century CE — decades after Hadrian's accession, with some tourist sources pushing it as late as the Severan period. No reading puts the celebrated mansion before 117 CE. It was itself demolished, along with much of this quarter, when the town's defensive wall went up around 300 CE.",
+        "sources": [
+          "https://pt.wikipedia.org/wiki/Casa_dos_Repuxos",
+          "https://www.academia.edu/428653/A_Casa_dos_Repuxos_de_Conimbriga_Evolu%C3%A7%C3%A3o_das_solu%C3%A7%C3%B5es_de_Reabilita%C3%A7%C3%A3o_Conserva%C3%A7%C3%A3o_e_Restauro"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.4906,
+          40.0994
+        ]
+      },
+      "properties": {
+        "id": "poi_house_cantaber_conimbriga",
+        "category": "house",
+        "name_latin": "",
+        "name_english": "House of Cantaber",
+        "province": "Lusitania",
+        "modern_location": "Condeixa-a-Velha, Portugal",
+        "built": 80,
+        "destroyed": 300,
+        "extant_117ce": true,
+        "notes": "One of the largest domestic complexes excavated at Conimbriga, this peristyle mansion took its main form under the Flavian emperors (69-96 CE), replacing an earlier, less well-understood building on the plot. By 117 CE it had likely stood for a generation or more as one of the town's grander private residences — the private bath suite it is often pictured with was a later addition at the end of the 2nd century, and the house was substantially reworked again once the town wall was pushed through this district around 300 CE.",
+        "sources": [
+          "https://www.researchgate.net/publication/330952763_Conimbriga_casa_atribuida_a_Cantaber_trabalhos_arqueologicos_1995-1998"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.4906,
+          40.0994
+        ]
+      },
+      "properties": {
+        "id": "poi_walls_conimbriga",
+        "category": "wall",
+        "name_latin": "",
+        "name_english": "City Walls of Conimbriga",
+        "province": "Lusitania",
+        "modern_location": "Condeixa-a-Velha, Portugal",
+        "built": 285,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A second known dating trap for Conimbriga: for the whole of its 1st- and 2nd-century golden age, including 117 CE, the town had no defensive circuit at all — an open, confident settlement. Multiple independent sources agree the roughly 1,500-meter stone wall visitors see today, which cuts straight through the House of the Fountains and other houses (its stone quarried from their demolition), only went up hastily around the end of the 3rd century as frontier anxieties grew, abandoning the outer residential quarters. No earlier wall phase is attested.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Con%C3%ADmbriga",
+          "https://revistatemalivre.com/conimbriga07-html/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.4906,
+          40.0994
+        ]
+      },
+      "properties": {
+        "id": "poi_baths_south_conimbriga",
+        "category": "bathhouse",
+        "name_latin": "Grandes Termas do Sul",
+        "name_english": "Great South Baths of Conimbriga",
+        "province": "Lusitania",
+        "modern_location": "Condeixa-a-Velha, Portugal",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The largest bath complex in the town, fed by the aqueduct running down from Alcabideque, generally dated to the end of the 1st century CE — consistent with the town's other known Flavian-era building campaigns (forum, House of Cantaber). By Hadrian's accession this bathhouse would have been a well-worn fixture of daily civic life. Documentation pinning down its construction phase is thinner than for the town's flagship monuments, hence the lower confidence.",
+        "sources": [
+          "https://www.laaventuradelahistoria.es/conimbriga-la-ciudad-de-las-termas"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.8772734,
+          41.6525348
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_caesaraugusta",
+        "category": "theater",
+        "name_latin": "",
+        "name_english": "Roman Theatre of Caesaraugusta",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Zaragoza, Spain",
+        "built": 30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "One of the largest Roman theatres ever built in Hispania, a 6,000-seat concrete-and-marble bowl loosely modeled on Rome's Theatre of Marcellus. Work began under Tiberius (14-37 CE) and was completed and refined under Claudius (41-54 CE). It stayed in use for centuries and declined only in the 3rd century, so it was certainly standing and functioning in 117 CE, giving the frontier colonia its taste of the capital's comedies and pantomimes. Lay forgotten under the old Jewish quarter until a chance 1972 building excavation on Calle Veronica brought it back to light.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_Theater_(Zaragoza)",
+          "https://www.zaragoza.es/sede/portal/museos/teatro/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.87585,
+          41.65456
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_caesaraugusta",
+        "category": "forum",
+        "name_latin": "",
+        "name_english": "Forum of Caesaraugusta",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Plaza de la Seo, Zaragoza, Spain",
+        "built": -14,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Augustus founded the colonia around 14 BCE for veterans of the Cantabrian Wars; the forum, including its cryptoporticus — the vaulted substructure that leveled the site's slope down to the Ebro — dates to that foundation phase. New colonnades were added under Tiberius and Claudius in the 1st century CE, but the core structure was already in place well before 117 CE and remained the civic center where the colony did business, worshipped, and posted its laws under Trajan and Hadrian.",
+        "sources": [
+          "https://es.wikipedia.org/wiki/Museo_del_Foro_de_Caesaraugusta",
+          "https://www.zaragoza.es/sede/portal/museos/foro/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.8779,
+          41.6531
+        ]
+      },
+      "properties": {
+        "id": "poi_baths_caesaraugusta",
+        "category": "bathhouse",
+        "name_latin": "",
+        "name_english": "Public Baths of Caesaraugusta",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Calle San Juan y San Pedro, Zaragoza, Spain",
+        "built": 40,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A porticoed thermal pool complex built early in the Julio-Claudian era (Caligula/Claudius, c. 37-54 CE), replacing an earlier set of 1st-century-BCE public latrines demolished to make way for it. By Trajan and Hadrian's time it had been operating for the better part of a century and would keep going for two more before closing in the 4th century. Coordinates are estimated from the museum's street address; no source gave precise GPS figures.",
+        "sources": [
+          "https://es.wikipedia.org/wiki/Termas_romanas_de_Caesaraugusta",
+          "https://www.zaragoza.es/sede/portal/museos/termas/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.874617,
+          41.655236
+        ]
+      },
+      "properties": {
+        "id": "poi_port_caesaraugusta",
+        "category": "port",
+        "name_latin": "",
+        "name_english": "River Port of Caesaraugusta",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Zaragoza, Spain",
+        "built": -10,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A working river quay on the calm inside bend of the Ebro, just downstream of the forum, that took in wine, salted fish, marble, and jewelry from the coast and sent wheat, timber, iron, and hides back the other way. Founded alongside the colony at the end of the 1st century BCE, it was still one of the busiest river ports in Hispania under Trajan and Hadrian, and stayed active until roughly the mid-6th century CE.",
+        "sources": [
+          "https://es.wikipedia.org/wiki/Museo_del_Puerto_Fluvial_de_Caesaraugusta",
+          "https://www.zaragoza.es/sede/portal/museos/puerto/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.881596,
+          41.657512
+        ]
+      },
+      "properties": {
+        "id": "poi_walls_caesaraugusta",
+        "category": "wall",
+        "name_latin": "",
+        "name_english": "City Walls of Caesaraugusta (Augustan-Tiberian circuit)",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Torreon de la Zuda, Zaragoza, Spain",
+        "built": -14,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A defensive circuit roughly 3 kilometers around almost certainly enclosed the colony from soon after its Augustan founding — traces of opus caementicium from this earliest phase survive bonded into the rear face and foundations of the standing wall. But the fabric actually visible today near the Torreon de la Zuda and Calle del Coso is a major rebuild dated to the second half of the 3rd century into the 4th, well after 117 CE. Map this as the earlier, largely non-surviving Augustan-Tiberian phase, not the handsome ashlar-faced monument a visitor sees today.",
+        "sources": [
+          "https://es.wikipedia.org/wiki/Muralla_romana_de_Zaragoza",
+          "https://patrimonioculturaldearagon.es/patrimonio/muralla-romana-y-torreon-de-la-zuda/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.8865,
+          41.6528
+        ]
+      },
+      "properties": {
+        "id": "poi_coso_bridge_aqueduct_caesaraugusta",
+        "category": "aqueduct",
+        "name_latin": "",
+        "name_english": "Coso Bridge-Aqueduct",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Coso / Calle Espartero, Zaragoza, Spain",
+        "built": 15,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A very recent (March 2026) find at the corner of Coso and Calle Espartero: a concrete arcade that carried Huerva river water across the old Coso ravine into the colony while also functioning as a bridge. Press coverage dates it to the colony's earliest decades (roughly Augustan-Tiberian). Flagged low confidence — the identification is preliminary, not yet peer-reviewed, no source gives precise coordinates beyond the street corner, and no disuse date is known.",
+        "sources": [
+          "https://www.labrujulaverde.com/en/2026/03/remains-of-a-roman-concrete-bridge-aqueduct-that-supplied-water-to-first-century-caesaraugusta-found-in-zaragoza/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.34667,
+          38.92444
+        ]
+      },
+      "properties": {
+        "id": "poi_aqueduct_los_milagros_merida",
+        "category": "aqueduct",
+        "name_latin": "",
+        "name_english": "Los Milagros Aqueduct",
+        "province": "Lusitania",
+        "modern_location": "Merida, Spain",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Merida's most iconic Roman monument: an elevated aqueduct bridge of alternating brick and granite, its distinctive cross-shaped piers rising up to 25 meters, originally spanning roughly 830 meters across the Albarregas valley (37 arched piers survive). Fed by the Proserpina reservoir five kilometers north, it carried water into Emerita Augusta and is generally dated to the 1st century CE, though the exact phasing (Augustan vs. later Julio-Claudian, with a possible later repair) is debated among specialists.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Acueducto_de_los_Milagros",
+          "https://www.consorciomerida.org/conjunto/monumentos/losmilagros"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.335347,
+          38.920108
+        ]
+      },
+      "properties": {
+        "id": "poi_aqueduct_san_lazaro_merida",
+        "category": "aqueduct",
+        "name_latin": "",
+        "name_english": "San Lazaro Aqueduct",
+        "province": "Lusitania",
+        "modern_location": "Merida, Spain",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A second, less famous aqueduct into Emerita Augusta, drawing from a catchment northeast of the city (Casa Herrera, Valhondo, Las Tomas) rather than from Proserpina, and supplying among other things the baths near the civic forum. Built toward the end of the 1st century CE, crossing the Albarregas gorge on a raised arcade — only three massive buttressed pillars of the Roman structure survive today, since a 16th-century rebuild mostly replaced it along the same line. Some sources tie its ultimate source to the Cornalvo reservoir, though period evidence more directly names the local catchment.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/San_L%C3%A1zaro_Roman_aqueduct",
+          "https://penelope.uchicago.edu/encyclopaedia_romana/hispania/meridasanlazaro.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.35083,
+          38.91306
+        ]
+      },
+      "properties": {
+        "id": "poi_bridge_merida",
+        "category": "bridge",
+        "name_latin": "Pons Emeritensis",
+        "name_english": "Puente Romano de Merida",
+        "province": "Lusitania",
+        "modern_location": "Merida, Spain",
+        "built": -25,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Built alongside the founding of Emerita Augusta in 25 BCE as the colony's crossing of the Guadiana, this granite bridge is one of the longest surviving bridges from antiquity — sources give figures around 755-792 meters and roughly 60 arched spans, partly owing to a period causeway over floodplain reaches. Repaired and partly rebuilt many times over two millennia, including major 17th-century flood repairs, but its Augustan-era piers and much of its original alignment survive; it remained the city's principal river crossing into the modern era.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Puente_Romano,_M%C3%A9rida",
+          "https://pleiades.stoa.org/places/257469"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5638194,
+          44.0636417
+        ]
+      },
+      "properties": {
+        "id": "poi_bridge_tiberio_rimini",
+        "category": "bridge",
+        "name_latin": "Pons Augusti et Tiberii",
+        "name_english": "Ponte di Tiberio",
+        "province": "Italia",
+        "modern_location": "Rimini, Italy",
+        "built": 14,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Spanning the Marecchia (ancient Ariminus) at Ariminum, this five-arch bridge of Istrian stone was begun under Augustus in 14 CE and completed and dedicated under Tiberius in 21 CE, as recorded by its own dedicatory inscription naming both emperors. It marked the starting point of the Via Aemilia and connections onward toward Aquileia, cementing Ariminum's role as a road hub. Remarkably durable — it survived antiquity, the Middle Ages, and even reported German demolition charges in the Second World War, and still carries traffic today.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ponte_di_Tiberio_(Rimini)",
+          "https://www.travelemiliaromagna.it/en/bridge-of-tiberius-rimini/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.437345,
+          39.753838
+        ]
+      },
+      "properties": {
+        "id": "poi_bridge_alconetar",
+        "category": "bridge",
+        "name_latin": "",
+        "name_english": "Alconetar Bridge",
+        "province": "Lusitania",
+        "modern_location": "Near Garrovillas de Alconetar, Caceres Province, Spain",
+        "built": 106,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A roughly 300-meter segmental-arch bridge carrying the Via de la Plata across the Tagus, distinctive for its flat, shallow arches — a sophisticated design often linked stylistically to Trajan's engineer Apollodorus of Damascus, and generally dated on that basis to the early 2nd century CE. Distinct from the map's existing 'Turmulus' road-station entry, which sat beside the bridge as a mansio/checkpoint. Its remains were physically relocated about 6 kilometers in 1970 during construction of the Alcantara reservoir; coordinates here mark the relocated site, not the original crossing point.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Alcon%C3%A9tar_Bridge",
+          "https://structurae.net/en/structures/alconetar-bridge-1"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.66705,
+          44.623769
+        ]
+      },
+      "properties": {
+        "id": "poi_bridge_trajan_danube",
+        "category": "bridge",
+        "name_latin": "Pons Traiani",
+        "name_english": "Trajan's Bridge over the Danube",
+        "province": "Moesia Superior",
+        "modern_location": "Drobeta-Turnu Severin, Romania / Kladovo, Serbia",
+        "built": 105,
+        "destroyed": 117,
+        "extant_117ce": true,
+        "notes": "Designed by Trajan's chief engineer Apollodorus of Damascus and built in just two years (103-105 CE) to move Roman forces across the lower Danube for the Second Dacian War, this was for over a millennium the longest arch bridge ever built — roughly 1,135 meters long, twenty masonry piers up to 19 meters high carrying wooden arches spanning about 38 meters each. At the exact moment this map is frozen, its wooden superstructure was almost certainly still standing: Cassius Dio records that Hadrian had it dismantled shortly after becoming emperor, so its destruction falls right at or just after 11 August 117 CE. The twenty masonry piers survived far longer and remain traceable archaeologically today.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Trajan%27s_Bridge",
+          "https://penelope.uchicago.edu/Thayer/e/roman/texts/cassius_dio/68*.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.4672,
+          41.7383
+        ]
+      },
+      "properties": {
+        "id": "poi_bridge_chaves",
+        "category": "bridge",
+        "name_latin": "Pons Traiani (Aquae Flaviae)",
+        "name_english": "Roman Bridge of Chaves",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Chaves, Vila Real District, Portugal",
+        "built": 104,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A 140-meter granite bridge over the Tamega carried the road linking Bracara Augusta (Braga) and Asturica Augusta (Astorga) through Aquae Flaviae, a spa town whose thermal springs made it a municipium under Vespasian. Two inscribed columns stand on the bridge: an earlier one (79 CE) honoring Vespasian and Titus, and a Trajanic column of 104 CE recording that the local populi of the surrounding conventus paid for and dedicated the bridge — a rare direct epigraphic record of provincial communities funding Roman infrastructure. Aquae Flaviae sat in the Conventus Bracaraugustanus of Hispania Tarraconensis in 117 CE; the later separate province of Gallaecia was not split off until after Diocletian.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_Bridge_of_Chaves",
+          "https://en.wikipedia.org/wiki/Aquae_Flaviae"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
