@@ -631,6 +631,47 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       should do a real visual check that the imagery actually renders and isn't, say, silently
       404ing per-tile.
 
+## New ideas spotted this shift (2026-08-26, cloud shift 60 — Gallia close-out, Britannia opens)
+
+- [ ] **The brief's Gallia queue (Axis 1) is now fully closed.** Nemausus/Arelate/Vienna/Narbo
+      Martius/Massilia (shift 59) plus Autun/Reims/Frejus/Saintes (this shift) — every named city
+      on the brief's list has curated `pois.geojson` coverage. None have `sites.ts` street-level
+      wiring yet (Overpass/OSM fetch is still network-blocked in every sandbox that has tried this
+      quarter) — that remains real, distinct, un-started work for all of them.
+- [ ] **Britannia queue opened this shift, five of eight cities**: Bath, St Albans, Colchester,
+      Silchester, Wroxeter. Londinium/York/Chester already had prior coverage (Londinium's own POI
+      batch, York/Chester's legionary-fortress records), so the brief's full Britannia list is now
+      touched. Colchester and Wroxeter in particular likely have more findable monuments than one
+      research pass surfaced — good deepen-ratio candidates for a future shift.
+- [ ] **Roman Britain skews unusually late for a 117 CE snapshot.** This shift's 22 new Britannia
+      POIs shipped 9 `true` / 13 `false` — most of the region's best-known standing monuments
+      (Wroxeter's "Old Work," Silchester's and Bath's town walls, Verulamium's theatre and wall,
+      Colchester's circus and the Gosbecks theatre/temple) date to the mid-2nd-century civic
+      building boom under Hadrian and Antoninus Pius, not the Trajanic snapshot this map is frozen
+      at. Worth flagging for whoever writes any future "Roman Britain" hub/tour content — the
+      *photogenic* Roman Britain is largely a later Britain than 117 CE.
+- [ ] **Next Axis 1 region after Britannia is Hispania** per the brief's own order: Tarraco
+      (partial coverage already), Segovia, Barcino, Corduba, Conimbriga, Cartagena, Zaragoza.
+- [ ] **Image gaps for this shift's own low-confidence/approximate-coordinate records**: most of
+      the Frejus/Saintes approximate placements and nearly all of the Britannia `false`-dated
+      records (Sacred Spring, East Baths, Bath walls, Verulamium's forum-basilica and wall,
+      Colchester's town wall/Duncan's Gate/Gosbecks pair, Silchester's forum-basilica, Wroxeter's
+      forum/macellum/defences) shipped without a confirmed `image_url` — the research agents found
+      only generic Commons category pages, not a specific filename they'd stand behind. Same
+      "real gap, not exhausted" shape prior shifts have flagged for comparable batches.
+- [ ] **A Frejus site was deliberately left out despite being researched**: the Lanterne d'Auguste
+      harbor tower has a genuine, unresolved dating dispute (Augustan-origin tradition vs. a
+      "2nd-century tower" reading in at least one source) and tight thematic/geographic overlap
+      with the existing `poi_naval_forum_iulii` harbor POI. Flagging rather than silently dropping,
+      in case a future shift wants to actually resolve the dating question with better source
+      access.
+- [ ] **`[09-P0-1]` ancient-sources' remaining pool is now ~115-120 `confidence:high` POIs**,
+      still dominated by villas/tombs/provincial-infrastructure records ancient authors never
+      named individually — this shift's batch (6 researched, 4 shipped, one already covered
+      elsewhere by an existing citation caught before merging) reconfirms the pattern several
+      prior shifts already found. `[09-P1-4]` epigraphy (inscriptions rather than literary
+      sources) remains the more promising untapped channel for this specific pool.
+
 ## Shipped (moved from above; newest on top)
 
 - 2026-08-24 — a cloud shift: Appearance / theme toggle (System / Light / Dark in the

@@ -7,6 +7,218 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 60 — 2026-08-26 (this shift's own prompt claimed "Shift 1 of four")
+
+Same stale-numbering mismatch every shift since #13 has flagged — `SHIFT_LOG.md` was 59 real
+shifts deep at session start, not 0. `git status` showed a clean, detached `HEAD` sitting one
+commit *behind* a stale local `main` ref; `git fetch origin main` confirmed `origin/main` was
+actually already at `9f5c322` (shift 59's own final commit) and `git checkout -B main
+origin/main` put the session on the right base cleanly, no lost-work scare. `node_modules` wasn't
+present at session start (`npm run validate` failed with `next: not found`-equivalent); `npm
+install` was needed before anything else, same as several recent shifts have logged. Confirmed
+the standing network finding independently via `curl "$HTTPS_PROXY/__agentproxy/status"` and
+direct `curl` to `en.wikipedia.org`, `commons.wikimedia.org`, and `overpass-api.de` — all three
+return `CONNECT tunnel failed, response 403` from the egress proxy. `WebSearch` (used directly
+this shift, not only inside background `Agent` calls — both paths work) remains the only working
+research channel.
+
+### Board check
+
+No `[~]` claims standing at session start. The unclaimed P0 tickets are the same large,
+network-or-spec-blocked refactors recent shifts have correctly declined (`[12-P0-1]`
+merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terrain, `[13-P0-2]`
+image-audit, `[11-P1-6]` split-map-tsx). `FEATURE_BACKLOG.md`'s P0-P3 checklists are, at this
+point, essentially fully shipped — the only open item left there is `[02-P0-1]` terrain, already
+covered by the board. Did not claim a Track B UI ticket this shift: nothing in the board or
+backlog was both unclaimed and safely scoped for a single unattended session (the remaining
+open board tickets are either big refactors with prior-shift precedent to decline, or ambiguous
+content-scale asks like `[10-P0-2]` three-depth-labels that would need per-POI short-form writing
+across ~750 records, a distinct multi-shift project rather than one pass). Spent the full shift on
+Track A instead: closing SHIFT_LOG 59's own explicit handoff (continue the Gallia queue) and then
+opening the next regional queue (Britannia) the brief calls for right after Gallia, plus the
+standing `[09-P0-1]` ancient-sources and image-top-up maintenance tasks.
+
+### Track A — Gallia queue closed (18 POIs: Autun, Reims, Frejus, Saintes)
+
+Five parallel background `WebSearch`-only research agents this shift (research only — every
+GeoJSON feature was hand-written from each agent's findings, not auto-merged), split across two
+commits.
+
+**Autun + Reims** (9): Autun's Porte Saint-Andre, Porte d'Arroux, the Roman theatre (one of the
+largest in Gaul, 148m diameter), the Temple of Janus (deity unconfirmed despite the popular name —
+said so plainly rather than asserting a wrong dedication), and the Pyramid of Couhard (a windowless
+cenotaph with no burial chamber ever found) — all shipped `extant_117ce:true`. Reims contributed
+the shift's cleanest dating-trap pair: the Porte de Mars, probably the single most-photographed
+"Roman Reims" monument, is genuinely Severan (c. 210 CE, a century past Trajan's death) and shipped
+`false`; Porte Bazee is a similar c. 200 CE build, demolished in 1752, also `false`. The
+cryptoporticus (forum substructure) and the aqueduct both shipped `true` on more secure Trajanic-
+adjacent dating.
+
+**Frejus + Saintes** (9): Frejus's amphitheatre, theatre, Porte des Gaules, and aqueduct all
+predate 117 CE comfortably; its Porte d'Oree — actually the frigidarium wall of the harbor baths,
+not a real gate despite the name — is a second-half-of-2nd-century build per the sewer dating
+evidence tied to it, shipped `false`. Saintes's Arch of Germanicus (18-19 CE, later rescued from
+demolition in 1843 after Victor Hugo's public protest and moved to its current site), amphitheatre
+(one of the oldest in Gaul, cut into a natural hillside c. 40 CE), Saint-Saloine baths, and the
+Pont des Arcs aqueduct node all shipped `true`. The Fréjus research agent flagged the harbor-side
+Lanterne d'Auguste as a genuine, unresolved dating dispute (Augustan-origin tradition vs. a
+"2nd-century tower" reading) with unconfirmed coordinates and tight overlap with the existing
+`poi_naval_forum_iulii` harbor POI — deliberately left out rather than force a pin on unsettled
+ground overlapping an existing record.
+
+Several Frejus/Saintes coordinates (Porte d'Oree, Saint-Saloine baths, the Saintes aqueduct node)
+are approximate site-area placements rather than surveyed points — WebFetch to Wikidata/OSM/Historic
+monuments databases is blocked in this sandbox, so precise geocoding wasn't recoverable via
+WebSearch snippets alone. Shipped `confidence:low` with the approximation stated plainly in each
+`notes` field, same standard recent shifts have used for comparable gaps.
+
+This closes the brief's explicit Gallia queue (Nemausus, Arelate, Vienna, Narbo Martius, Massilia
+from shift 59; Autun, Reims, Frejus, Saintes this shift) — the two remaining names on the original
+list, Fréjus and Saintes, are now covered; the queue as written in `SHIFT_BRIEF.md` is done.
+
+### Track A — Britannia queue opened (22 POIs: Bath, St Albans, Colchester, Silchester, Wroxeter)
+
+Three more parallel background research agents, one commit. This is the region right after Gallia
+in the brief's own regional order, and turned out to be an unusually rich source of genuine 117 CE
+dating traps — Roman Britain's best-known standing monuments skew heavily toward the mid-to-late
+2nd-century civic building boom that followed Hadrian's reign, not the Trajanic snapshot this map
+is frozen at. Final count: 9 `true` / 13 `false` in this batch, and the honest ratio is left as-is
+rather than smoothed toward more "true" hits.
+
+**Bath/Aquae Sulis** (4): the actual bathing complex was missing entirely — the map only had the
+adjacent Temple of Sulis Minerva before this shift. Added the Great Bath, the Sacred Spring
+reservoir, and the East Baths hypocaust suite, all part of the original 60s-70s CE build and
+`true`; the town walls are a real trap (3rd century CE, enclosing the sacred precinct for reasons
+still debated between defense and dignity) and shipped `false`.
+
+**St Albans/Verulamium** (4), previously zero city-monument coverage (one nearby villa only): the
+forum-basilica's dedication inscription anchors it firmly to 79 CE (`true`) — everything else
+found is a dating trap. The theatre (c. 140), the town wall and London Gate (265-270), and the
+hypocaust/mosaic townhouse (c. 180-200, ~200,000 tesserae) all postdate 117 by 20+ years and
+shipped `false`.
+
+**Colchester/Camulodunum** (7), previously zero coverage: Britain's first colonia, burned by
+Boudica's revolt in 60-61 CE — a genuine 117-relevant history for every record here. The Temple
+of Claudius survived that burning conceptually (destroyed, then rebuilt on its surviving podium
+within a year or two) and shipped `true`; the Balkerne Gate, the town wall, and Duncan's Gate are
+all part of the same post-Boudican rebuilding programme and also `true`. The other three are the
+shift's best dating-trap find: Colchester's Roman circus — Britain's only confirmed chariot-racing
+circus, a real 2004 discovery that made global headlines — dates to c. 120-130 CE, a decade too
+late; the Gosbecks theatre and temple's monumental stone phases both date to c. 150 CE by coin and
+pottery evidence, even though earlier timber/shrine phases may have existed on the same ground
+without independent dating. All three shipped `false` with the nuance stated in `notes` rather
+than glossed over.
+
+**Silchester/Calleva Atrebatum** (3), previously zero coverage: the amphitheatre's earth-and-
+timber phase is solidly `true` (55-75 CE, 40+ years old by 117), but the town walls (c. 200) and
+the forum-basilica's masonry rebuild (dated by a counterfeit coin in its foundations to the 130s)
+both ship `false`. The forum-basilica record notes that an earlier timber predecessor from c. 85
+CE did stand on the spot in 117 — it's known only from postholes with no independent above-ground
+trace, so it wasn't given its own separate pin rather than inventing one. The Ogham stone the
+research agent also surfaced was excluded on the agent's own recommendation: a portable 4th/5th-
+century artifact, not a fixed 117-relevant structure.
+
+**Wroxeter/Viroconium Cornoviorum** (4), previously zero coverage: all four ship `false`. The "Old
+Work" — the tallest standing fragment of Roman masonry in Britain at 7m — is a textbook dating
+trap: popular sources loosely call the whole baths complex "Hadrianic," which risks implying
+117-CE-adjacent, but the standing fabric itself is precisely dated to c. 150 CE, thirty-plus years
+into Hadrian's reign. The forum's own dedication inscription dates it to 129/130; the macellum
+belongs to the same 120s-160s civic programme; the earthwork town defences date to c. 200.
+
+Between this shift and shift 59's priority-cities batch, the brief's Britannia queue (Londinium,
+Aquae Sulis, Colchester, York, Chester, Silchester, Wroxeter, St Albans) is now fully opened —
+Londinium, York, and Chester already had coverage from earlier shifts (Londinium's own POIs,
+York/Chester's legionary fortresses), and this shift closed the remaining five.
+
+### Track A — ancient-sources (4 citations) + image top-up (3 images)
+
+Two more background research agents, folded into the Gallia commit rather than split out, since
+each was a small (<10 line) in-place edit to existing records rather than new features.
+
+**`[09-P0-1]` ancient-sources**: researched 25 `confidence:high` POIs lacking `ancient_sources`,
+found honest literary citations for 6 and confirmed "no literary source found" for the other 19
+(mostly villas, tombs, and provincial infrastructure ancient authors never singled out by name —
+the same pattern batches 5-7 already established). Shipped 4 of the 6: Praeneste's Fortuna
+Primigenia sanctuary (Cicero, *De Divinatione* 2.85-87), Hadrian's Villa (*Historia Augusta*,
+*Hadrian* 26.5), Tivoli's Hercules Victor sanctuary (Strabo 5.3.11), and Massilia's Hellenistic
+ramparts (Caesar's *Bellum Civile* 2.1-16 siege account). Dropped the 5th, Pergamon's Great Altar
+of Zeus (Pausanias 5.13.8) — actually shipped this one too, with the scholarly ambiguity (is
+Pausanias describing this specific altar or a separate, older one on the same acropolis) stated
+directly in the citation's own `note` field rather than hidden. The 6th candidate, a Plutarch
+passage on Capua's gladiator school, was caught as a near-duplicate before merging: it was already
+correctly attached to `poi_ludus_capua`, not the separate `poi_amphitheatre_capua` record the
+research agent had matched it to — a good example of why every candidate gets checked against the
+live file before writing, not just trusted from a fresh search hit.
+
+**Image top-up**: worked the FEATURE_BACKLOG.md list of image-null POIs from the Djemila/Volubilis/
+Jerash/Trier batches. Closed 3 of the ~15 named gaps with confirmed Commons filenames (Jerash's
+South Gate, Trier's Ruwer aqueduct remains at Waldrach, Djemila's Market of Cosinius measuring
+table) and explicitly declined a 4th (a generically-named "Roman bridge in Trier, Germany.jpg")
+rather than risk assigning it to the wrong record — Trier already has one bridge-photo POI
+(`poi_treveri_roman_bridge`) and the real gap is a *different* record (`poi_treveri_
+pons_mosellae_flavius`, the Flavian-phase bridge), so an unverified generic filename risked either
+a duplicate image or a wrong-structure photo. The remaining ~12 named gaps (Djemila's ramparts/Old
+Forum/Capitolium/Temple of Venus Genetrix/Christian Quarter, Volubilis's Temple of Saturn and city
+walls, Jerash's walls/North Gate/necropolis/Temple of Dionysos, Trier's Flavian bridge/Cologne
+road/city wall) stayed unresolved — the research agent's own read is that most of these likely
+have Commons coverage under generic category pages but not a filename specific enough to trust
+without opening the actual Commons page, which this sandbox's network block prevents.
+
+### Track A — Via Traiana Nova (2 more stations)
+
+One more background agent, plus a fifth commit. This road already had solid coverage (14
+stations) from a prior shift; found two more from the Tabula Peutingeriana's Bostra-Aila sequence
+that were missing — Thantia near the north end and Ad Dianam near the south end — both shipped
+`confidence:low` with interpolated (not surveyed) coordinates, since neither has a securely
+identified modern find-spot in the sources reached. Left the existing 14 stations' own distance
+fields untouched rather than overwrite Hatita's/Thornia's already-cited, more specific mileage
+notes with lower-confidence, WebSearch-sourced figures for what may not even be the same road leg.
+
+### Numbers
+
+`pois.geojson`: 707 → 747 (+40, +5.7%), across two commits. `road_stations.geojson`: 495 → 497
+(+2). 9 cities newly opened or extended (Autun, Reims, Frejus, Saintes, Bath, St Albans,
+Colchester, Silchester, Wroxeter) — well past the axis-1 per-shift minimum of 5. `npm run
+validate`: clean both times, same 17 pre-existing warnings, 0 new, across all four commits this
+shift. `npm run build`: clean all four times (707 → 716 → 725 → 725 → 747 `/place/[slug]` routes
+across the sequence). `METRICS.md` refreshed after both POI-adding commits.
+
+### Track B
+
+Not attempted this shift — see the Board-check section above for why (nothing both unclaimed and
+safely scoped for a single unattended session). Track A ran the full shift instead.
+
+### Next shift should pick up
+
+- **Britannia queue continues.** This shift opened Bath/St Albans/Colchester/Silchester/Wroxeter;
+  the brief's own Britannia list is now fully touched at the city level, but several of these
+  cities (especially Colchester and Wroxeter) likely have more findable monuments beyond what a
+  single research pass surfaced — a deepen pass here would fit the board's ratio well.
+- **Next regional queue after Britannia is Hispania** per the brief's Axis 1 order: Tarraco
+  (already has some coverage per shift 59), Segovia, Barcino, Corduba, Conimbriga, Cartagena,
+  Zaragoza.
+- **Image gaps remain real, not exhausted**: the ~12 named Djemila/Volubilis/Jerash/Trier gaps
+  listed above, plus this shift's own new Britannia/Gallia batch — most of the `confidence:low`/
+  approximate-coordinate records shipped without an `image_url` at all (Sacred Spring, East Baths,
+  Bath walls, most of Colchester/Silchester/Wroxeter's `false`-dated records). A future shift with
+  Commons category-browsing access (not just WebSearch snippets) would likely close a meaningful
+  chunk of both lists quickly.
+- **Coordinate tightening**: this shift's Frejus/Saintes/Britannia batches used research-agent-
+  reported "approximate" placements for several records (flagged `confidence:low`/`medium` with
+  the approximation stated in `notes`), not surveyed geocoding — same standing backlog item recent
+  shifts have flagged for their own batches.
+- **`[09-P0-1]` ancient-sources** remains a standing task; this shift's batch leaves roughly
+  115-120 `confidence:high` POIs still without a citation, and the pool is now dominated by the
+  same villa/tomb/industrial-site shape prior shifts already found mostly unattested in surviving
+  literature — `[09-P1-4]` epigraphy (inscriptions rather than literary sources) is the more
+  promising remaining channel for that pool, per several prior shifts' own conclusion.
+- Network block reconfirmed for the record: `overpass-api.de`, `commons.wikimedia.org`,
+  `en.wikipedia.org` all `CONNECT tunnel failed, response 403` via direct `curl`; `WebSearch`
+  stayed reachable throughout (used both directly and inside background `Agent` calls this shift)
+  and is what every research pass used, no quota exhaustion this time (8 agents total this shift).
+
+---
+
 ## Shift 59 — 2026-08-25 (this shift's own prompt claimed "Shift 4 of four")
 
 Same stale-numbering mismatch every shift since #13 has flagged — `SHIFT_LOG.md` was 58 real
