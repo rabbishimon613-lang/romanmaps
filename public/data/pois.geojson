@@ -27957,6 +27957,638 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5044,
+          33.8955
+        ]
+      },
+      "properties": {
+        "id": "poi_baths_berytus",
+        "category": "bath",
+        "name_latin": "Thermae Berytenses",
+        "name_english": "Beirut Roman Baths",
+        "province": "Syria",
+        "modern_location": "Beirut, Lebanon",
+        "built": 25,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Augustus's veterans built these baths in the heart of Colonia Berytus during the 1st century AD. Bathers moved through four heated chambers warmed by a hypocaust, where furnaces pushed hot air beneath the floor through rows of terracotta pillars. The complex sat between the forum and the sea, serving the colony's Roman citizens for generations. Archaeologists uncovered the ruins in 1968, buried under Beirut's modern city center.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_Baths,_Beirut",
+          "https://www.archnet.org/sites/20313"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_bath_Beirut_lebanon_026.jpg?width=800",
+        "image_credit": "Roman bath Beirut lebanon 026 · Wikimedia Commons (CC BY-SA 2.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5052,
+          33.8961
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_basilica_berytus",
+        "category": "forum",
+        "name_latin": "Forum Berytense",
+        "name_english": "Roman Forum of Beirut",
+        "province": "Syria",
+        "modern_location": "Beirut, Lebanon",
+        "built": -10,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Augustus turned Berytus into a full Roman colonia in 14 BC and raised a forum at its civic core. A 99-meter basilica with a Corinthian portico of polychrome stone lined its north side, built within the colony's first Roman century. Veterans of two legions settled here, turning a Phoenician port into a Latin-speaking showcase of empire. Its granite columns still stand near Beirut's Place de l'Etoile.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_Forum,_Beirut",
+          "https://www.ancient-history-sites.com/sites/beirut/"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "16.2.19",
+            "note": "Describes Berytus's destruction by Tryphon and its Roman refoundation as a colonia settled with legionary veterans."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5074,
+          33.8958
+        ]
+      },
+      "properties": {
+        "id": "poi_cardo_maximus_berytus",
+        "category": "column",
+        "name_latin": "Cardo Maximus Berytensis",
+        "name_english": "Beirut Cardo Maximus Colonnade",
+        "province": "Syria",
+        "modern_location": "Beirut, Lebanon",
+        "built": 105,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Berytus laid its Cardo Maximus out as the north-south spine of the Roman colony, later dressing it in imported grandeur. Under Trajan, workers raised red granite columns quarried at Aswan in Egypt, spaced 2.5 meters apart on carved pedestals. The colonnaded street ran roughly 100 meters from the forum toward the harbor, sheltering pedestrians under a continuous portico. Five re-erected columns still mark its crossing with the Decumanus in downtown Beirut.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cardo_Decumanus_Crossing",
+          "https://www.gpsmycity.com/attractions/roman-cardo-maximus-31022.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5023,
+          33.8938
+        ]
+      },
+      "properties": {
+        "id": "poi_hippodrome_berytus",
+        "category": "circus",
+        "name_latin": "Hippodromus Berytensis",
+        "name_english": "Hippodrome of Berytus",
+        "province": "Syria",
+        "modern_location": "Beirut, Lebanon",
+        "built": -25,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Berytus built a hippodrome for chariot racing soon after Augustus founded the colony, first raising its stands and starting gates in timber. Excavators traced a central barrier, seating banks, and gate foundations across a 3,500-square-meter track near the ancient harbor. Masons rebuilt the venue in stone as the city grew through the 2nd century AD. Later writers ranked it among the finest racing circuits of the Roman Levant.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Hippodrome_of_Berytus",
+          "https://www.academia.edu/40106455/Curvers_Gans_Held_Kotitsa_Nurpetlian_Wangen_2017_The_Hippodrome_of_Berytos_Preliminary_Report_BAAL_17_7_"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5058,
+          33.9015
+        ]
+      },
+      "properties": {
+        "id": "poi_port_berytus",
+        "category": "harbor",
+        "name_latin": "Portus Berytensis",
+        "name_english": "Ancient Port of Berytus",
+        "province": "Syria",
+        "modern_location": "Beirut, Lebanon",
+        "built": -14,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Berytus grew around a natural harbor Phoenician sailors had used for over a thousand years before Rome arrived. After Augustus settled veterans there in 14 BC, Roman engineers deepened the basin and extended its seawalls to handle heavier trade. The port anchored the colony's economy, moving grain, timber, and goods along the Levantine coast. It stayed the city's commercial lifeline for centuries under Roman rule.",
+        "sources": [
+          "https://www.ancientportsantiques.com/wp-content/uploads/Documents/PLACES/Levant/Beirut-Raad2020.pdf",
+          "https://en.wikipedia.org/wiki/Berytus"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4212,
+          33.5975
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_eshmun_sidon",
+        "category": "sanctuary",
+        "name_latin": "Templum Eshmuni",
+        "name_english": "Temple of Eshmun",
+        "province": "Syria",
+        "modern_location": "Bostan esh-Sheikh, near Saida, Lebanon",
+        "built": -500,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Sidon's king Eshmunazar II founded this healing sanctuary to the god Eshmun beside the Awali River around 500 BC. Later Phoenician kings expanded it with monumental staircases, votive thrones, and sacred pools fed by the YDLL spring. Under Roman rule the sanctuary gained a colonnaded approach, a nymphaeum, and an inn for pilgrims seeking cures. Worshippers kept visiting the site for more than a thousand years, into the 8th century AD.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Eshmun",
+          "https://www.livius.org/articles/place/sidon/bustan-esh-sheikh/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eshmun_Bab_columns.JPG?width=800",
+        "image_credit": "Eshmun Bab columns · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.384444,
+          33.567333
+        ]
+      },
+      "properties": {
+        "id": "poi_royal_necropolis_ayaa_sidon",
+        "category": "necropolis",
+        "name_latin": "Necropolis Regia Sidonis",
+        "name_english": "Royal Necropolis of Ayaa",
+        "province": "Syria",
+        "modern_location": "Saida, Lebanon",
+        "built": -330,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Sidon's kings carved two vast rock-cut burial chambers into the hills south of the city, reachable only through vertical shafts. The tombs held 21 sarcophagi spanning Egyptian, Greek, Lycian, and Phoenician styles, sealed away since the late 4th century BC. Among them lay the Alexander Sarcophagus, a 15-ton limestone masterpiece carved with battle scenes of Alexander the Great. The chambers stayed hidden underground for over two thousand years, until workmen broke into them in 1887.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Royal_necropolis_of_Ayaa",
+          "https://en.wikipedia.org/wiki/Alexander_Sarcophagus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexander_Sarcophagus_2020.jpg?width=800",
+        "image_credit": "Alexander Sarcophagus, Istanbul Archaeological Museums · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.37361,
+          33.55194
+        ]
+      },
+      "properties": {
+        "id": "poi_eshmunazar_sarcophagus_sidon",
+        "category": "tomb",
+        "name_latin": "Sarcophagus Eshmunazaris II",
+        "name_english": "Tomb of Eshmunazar II",
+        "province": "Syria",
+        "modern_location": "Magharat Abloun, Saida, Lebanon",
+        "built": -460,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Sidon's own King Eshmunazar II was buried in a black stone sarcophagus inscribed with a lengthy Phoenician royal epitaph. Workers found the tomb at Magharat Abloun, a rock-cut necropolis southeast of the city, in January 1855. The inscription cursed any future violator of the grave and recorded the king's grants of land from the Persian crown. The sarcophagus lay sealed in Sidon's necropolis for roughly two thousand years before its rediscovery.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sarcophagus_of_Eshmunazar_II"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eshmunazar_II_sarcophagus_(Louvre).jpg?width=800",
+        "image_credit": "Eshmunazar II sarcophagus, Louvre · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3684,
+          33.5628
+        ]
+      },
+      "properties": {
+        "id": "poi_murex_hill_sidon",
+        "category": "kiln",
+        "name_latin": "Collis Purpurariorum",
+        "name_english": "Murex Hill",
+        "province": "Syria",
+        "modern_location": "Saida, Lebanon",
+        "built": -1500,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Generations of Sidonian dye workers crushed millions of murex sea snails along the shoreline, piling the broken shells into hills still visible today. Extracting a few drops of purple-red dye from each mollusk's gland made Tyrian purple worth more than its weight in gold. Workshops operated near Sidon's harbor and kept running straight through the Roman period. The mounds south of the later Sea Castle remain the clearest physical trace of the ancient purple trade.",
+        "sources": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S0305440306000355",
+          "https://biblearchaeology.org/research/divided-kingdom/4180-the-biblical-cities-of-tyre-and-sidon"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "9.60",
+            "note": "Describes the murex shellfish and the extraction of purple dye, the industry that produced Sidon's shell mounds."
+          },
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "16.2.25",
+            "note": "Describes sand carried to Sidon from the nearby coast and fused into glass, reflecting the city's fame as a Phoenician manufacturing center."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3697,
+          33.5661
+        ]
+      },
+      "properties": {
+        "id": "poi_harbor_sidon",
+        "category": "harbor",
+        "name_latin": "Portus Sidonis",
+        "name_english": "Ancient Harbor of Sidon",
+        "province": "Syria",
+        "modern_location": "Saida, Lebanon",
+        "built": -2500,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Sidon built one of Phoenicia's oldest working harbors, sheltered by the offshore islet of Zire and a sandstone ridge along its northern shore. Sailors had used the anchorage for well over two thousand years by the time Rome absorbed the city into the province of Syria. Roman engineers extended a 230-meter mole and reshaped the basin with heavier stonework during their occupation. The harbor kept Sidon's glass, timber, and purple-dye trade flowing across the Mediterranean.",
+        "sources": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S0305440306000355",
+          "https://www.ancientportsantiques.com/wp-content/uploads/Documents/PLACES/Levant/Sidon-Marriner2006.pdf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.185,
+          33.272
+        ]
+      },
+      "properties": {
+        "id": "poi_causeway_tyre",
+        "category": "monument",
+        "name_latin": "Choma Tyri",
+        "name_english": "Alexander's Causeway, Tyre",
+        "province": "Syria",
+        "modern_location": "Tyre (Sour), Lebanon",
+        "built": -332,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Alexander the Great's engineers built this half-mile mole of stone, timber, and rubble from the abandoned mainland town of Ushu to break the naval defenses of island Tyre during his 332 BCE siege. Centuries of silt piling against the mole steadily widened it into a true isthmus, permanently fusing the once-island city to the coast. By 117 CE Roman Tyre stood on a broad peninsula built entirely on Alexander's foundation, its main landward road running straight over ground his army had won. The causeway remains visible today as the very shape of modern Tyre's isthmus.",
+        "sources": [
+          "https://www.worldhistory.org/article/107/alexanders-siege-of-tyre-332-bce/",
+          "https://en.wikipedia.org/wiki/Siege_of_Tyre_(332_BC)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexander_at_the_Siege_of_Tyre.jpg?width=800",
+        "image_credit": "Alexander at the Siege of Tyre · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Arrian",
+            "work": "Anabasis of Alexander",
+            "ref": "2.18-2.21",
+            "note": "Describes the Macedonian army building the mole from stone, timber, and rubble taken from the abandoned mainland city."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.19,
+          33.276
+        ]
+      },
+      "properties": {
+        "id": "poi_harbor_sidonian_tyre",
+        "category": "harbor",
+        "name_latin": "Portus Sidonius",
+        "name_english": "Sidonian Harbor, Tyre",
+        "province": "Syria",
+        "modern_location": "Tyre (Sour), Lebanon",
+        "built": -1000,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Ancient writers called Tyre's north-facing harbor the Sidonian Harbor, or Port of Astronoe, and it worked as the city's main commercial port straight through the Roman period. Strabo and Arrian, writing in the first and second centuries CE, both describe Tyre as a city with two harbors, this one enclosed and defensible against enemy fleets. Merchant ships loaded grain, cedar timber, and Tyre's famous purple-dyed cloth from its quays. Archaeologists have traced ancient breakwater foundations beneath the modern fishing harbor of Sour, which still occupies roughly the same spot.",
+        "sources": [
+          "https://www.ancientportsantiques.com/a-few-ports/ancient-port-of-tyre/",
+          "https://www.researchgate.net/publication/377777064_Where_is_the_Phoenician_harbour_of_Tyre"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "16.2.23",
+            "note": "Describes Tyre's mole and its two harbors, one closable, the other called the Egyptian harbor."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.188,
+          33.267
+        ]
+      },
+      "properties": {
+        "id": "poi_harbor_egyptian_tyre",
+        "category": "harbor",
+        "name_latin": "Portus Aegyptius",
+        "name_english": "Egyptian Harbor, Tyre",
+        "province": "Syria",
+        "modern_location": "Tyre (Sour), Lebanon",
+        "built": -1000,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Tyre's southern harbor opened toward Egypt and carried the city's direct trade link to Alexandria's grain and papyrus. A stone breakwater discovered in 2019, built in the same style as Tyre's Iron Age Phoenician moles, once guarded its mouth. By the Roman period part of the basin had silted up and the reclaimed land was used for a monumental bath complex, but the port itself stayed active. Byzantine tombstones later even name local 'murex fishermen of the Egyptian port,' proving the harbor still functioned centuries after 117 CE.",
+        "sources": [
+          "https://www.researchgate.net/publication/377777064_Where_is_the_Phoenician_harbour_of_Tyre",
+          "https://www.ancientportsantiques.com/a-few-ports/ancient-port-of-tyre/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.192,
+          33.2705
+        ]
+      },
+      "properties": {
+        "id": "poi_purple_dye_tyre",
+        "category": "monument",
+        "name_latin": "Purpura Tyria",
+        "name_english": "Tyrian Purple Dye Works, Tyre",
+        "province": "Syria",
+        "modern_location": "Tyre (Sour), Lebanon",
+        "built": -1500,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Tyre gave its name to Tyrian purple, the violet-red dye pressed from the crushed glands of thousands of murex sea snails and prized as antiquity's costliest color. Shell mounds many meters deep, still visible along Tyre's shoreline, mark centuries of industrial-scale crushing and dyeing. Producing a single gram of dye took as many as twelve thousand mollusks, and under Rome the color became the exclusive mark of imperial rank, worth more than its weight in gold. By 117 CE Tyre's dye works had already supplied kings and emperors for well over a thousand years.",
+        "sources": [
+          "https://www.worldhistory.org/Tyrian_Purple/",
+          "https://www.history.com/articles/purple-ancient-phoenicians"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bolinus_brandaris_(purple_dye_murex_snail)_(24757422736).jpg?width=800",
+        "image_credit": "Bolinus brandaris, the spiny dye-murex used for Tyrian purple · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "9.60-62",
+            "note": "Describes the murex snail and the process of extracting and dyeing with Tyrian purple."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2703,
+          33.2334
+        ]
+      },
+      "properties": {
+        "id": "poi_sanctuary_astarte_ainbaal_tyre",
+        "category": "sanctuary",
+        "name_latin": "Ain el-Baal",
+        "name_english": "Thrones of Astarte Sanctuary, Ain Baal",
+        "province": "Syria",
+        "modern_location": "Ain Baal, near Tyre, Lebanon",
+        "built": -200,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "At the spring sanctuary of Ain el-Baal south of Tyre, Phoenician worshippers carved stone 'thrones of Astarte,' flanked by winged, cherub-headed lions, as offerings to the city's chief goddess. One inscribed throne excavated here, dated to the Hellenistic period, now stands in Beirut's National Museum. The shrine sat beside the same springs that fed Tyre's own water supply, tying worship of Astarte directly to the city's lifeline. These open-air Phoenician shrines carried on through the Roman period, when Astarte still appeared on Tyre's civic coinage.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Thrones_of_Astarte",
+          "https://en.wikipedia.org/wiki/Ain_Baal"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Throne_of_Astarte_from_the_region_of_Tyre_(Hellenistic_period).jpg?width=800",
+        "image_credit": "Throne of Astarte from the region of Tyre, Hellenistic period · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2115,
+          33.2705
+        ]
+      },
+      "properties": {
+        "id": "poi_hippodrome_tyre",
+        "category": "circus",
+        "name_latin": "Hippodromus Tyri",
+        "name_english": "Hippodrome of Tyre",
+        "province": "Syria",
+        "modern_location": "Al-Bass, Tyre, Lebanon",
+        "built": 130,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Tyre's hippodrome at the Al-Bass necropolis was one of antiquity's largest, nearly 480 meters long with tiered seating for tens of thousands of chariot-race spectators. It rose alongside a monumental triumphal arch and a new aqueduct as part of a building program tied to Emperor Hadrian's tour of the eastern provinces around 130 CE, when Tyre was elevated to metropolis status. Hadrian succeeded Trajan only in August 117 CE, so this entire ceremonial complex postdates the snapshot by more than a decade. In 117 CE the approach road to Al-Bass was still an ordinary Roman-period thoroughfare, not yet the grand racing venue later tourists know.",
+        "sources": [
+          "https://www.livius.org/articles/place/tyre/tyre-photos/tyre-al-bass-hippodrome/",
+          "https://whc.unesco.org/en/list/299/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Hippodrome,_Tyre,_Lebanon.jpg?width=800",
+        "image_credit": "Roman Hippodrome, Tyre, Lebanon · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.483,
+          32.513
+        ]
+      },
+      "properties": {
+        "id": "poi_via_nova_traiana_bostra",
+        "category": "road",
+        "name_latin": "Via Nova Traiana",
+        "name_english": "Via Nova Traiana",
+        "province": "Arabia Petraea",
+        "modern_location": "Bosra, Syria",
+        "built": 111,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Trajan ordered this new imperial highway built immediately after annexing the Nabataean kingdom, running 267 miles south from Bostra through Petra to the Red Sea port of Aila. Governor Gaius Claudius Severus oversaw the work, and dated milestones show the road substantially finished by 111 CE, just three years before the 117 CE snapshot. The Via Nova Traiana replaced the old caravan King's Highway with a paved, garrisoned Roman route and fixed Bostra permanently as Arabia Petraea's northern gateway and the province's chief military and trade artery.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Via_Traiana_Nova",
+          "https://www.researchgate.net/publication/309138725_The_Via_Nova_Traiana_Between_Petra_and_Ayn_Al-Qana_In_Arabia_Petraea_Via_Nova_Traiana_in_Arabia_Petraea"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.489,
+          32.5175
+        ]
+      },
+      "properties": {
+        "id": "poi_nabataean_gate_bostra",
+        "category": "gate",
+        "name_latin": "Porta Nabataea",
+        "name_english": "Nabataean Gate, Bosra",
+        "province": "Arabia Petraea",
+        "modern_location": "Bosra, Syria",
+        "built": 70,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This triple-arched gateway marked Bosra's eastern approach while the city was still a Nabataean caravan capital, decades before Trajan's legions arrived. Its carved stonework follows Nabataean decorative taste even though its arched form already matched Roman fashion current across the region. The gate opened onto a 300-meter paved processional road leading into Bosra's sacred precinct. Still standing when Rome annexed the Nabataean kingdom in 106 CE, it kept welcoming caravans and travelers into the new provincial capital straight through Trajan's reign.",
+        "sources": [
+          "https://vici.org/vici/24490/",
+          "https://historyandarchaeologyonline.com/exploring-ancient-bosra-from-the-gate-of-the-winds-to-the-roman-theatre/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nabataean_Doorway_and_Arch_at_Bosra,_Syria..jpg?width=800",
+        "image_credit": "Nabataean Doorway and Arch at Bosra, Syria · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.485,
+          32.5178
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_dushares_bostra",
+        "category": "temple",
+        "name_latin": "Dusares",
+        "name_english": "Temple of Dushares, Bosra",
+        "province": "Arabia Petraea",
+        "modern_location": "Bosra, Syria",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Dushara was the chief god of the Nabataean pantheon, and Bosra's temple to him anchored a sacred precinct of three temples reached by a monumental arch and a colonnaded processional road. Built while Bosra served as the Nabataean kingdom's northern royal seat under King Rabbel II, the temple was already old by the time Trajan's officials arrived in 106 CE. Romans elsewhere equated Dushara with Dionysus, but at Bosra his cult and shrine carried on largely unchanged through the new province's first decade of Roman rule.",
+        "sources": [
+          "https://nabataea.net/explore/cities_and_sites/bosra-syria/",
+          "https://deadseaquake.info/EarthquakeCatalogOfTheDeadSea/Sites/Archaeo/Bosra.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.4845,
+          32.518
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_baalshamin_bostra",
+        "category": "temple",
+        "name_latin": "Baal Shamin",
+        "name_english": "Temple of Ba'al-Shamin, Bosra",
+        "province": "Arabia Petraea",
+        "modern_location": "Bosra, Syria",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Beside the temple of Dushara, Bosra's sacred precinct held a second shrine to Ba'al-Shamin, 'Lord of the Heavens,' a sky god worshipped across the Nabataean and wider Semitic world. The temple formed part of an interconnected religious complex sharing the precinct's processional road and monumental gate, showing the layered pantheon Nabataean Bosra maintained before Roman annexation. When Trajan made Bosra capital of Arabia Petraea in 106 CE, this temple and its neighbors were already generations old, handing the new Roman provincial capital a religious skyline it inherited entirely from its Nabataean past.",
+        "sources": [
+          "https://nabataea.net/explore/cities_and_sites/bosra-syria/",
+          "https://deadseaquake.info/EarthquakeCatalogOfTheDeadSea/Sites/Archaeo/Bosra.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.4823,
+          32.5171
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_bostra",
+        "category": "theater",
+        "name_latin": "Theatrum Bostrense",
+        "name_english": "Roman Theatre of Bosra",
+        "province": "Arabia Petraea",
+        "modern_location": "Bosra, Syria",
+        "built": 135,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Bosra's black basalt theatre, one of the best-preserved Roman theatres anywhere, seated roughly seventeen thousand people around a stage over forty-five meters wide. Some sources link its start to Trajan's reign, but the fuller weight of archaeological scholarship places its monumental construction in the second quarter to second half of the 2nd century CE, after Trajan died in August 117. At the 117 CE snapshot Bosra was an eleven-year-old provincial capital still built mostly of inherited Nabataean structures; its famous theatre almost certainly did not yet stand in the form visitors see today.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_Theatre_at_Bosra",
+          "https://madainproject.com/roman_theatre_of_bosra"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Theatre_in_Bosra.jpg?width=800",
+        "image_credit": "Roman Theatre in Bosra · Wikimedia Commons"
+      }
     }
   ]
 }
