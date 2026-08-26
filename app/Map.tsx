@@ -48,6 +48,7 @@ import { milanEntry } from "./milanDescriptions";
 import { aquileiaEntry } from "./aquileiaDescriptions";
 import { pozzuoliEntry } from "./pozzuoliDescriptions";
 import { anconaEntry } from "./anconaDescriptions";
+import { romeEntry } from "./romeDescriptions";
 import { SITE_META, SITES } from "./sites";
 
 // [06-P0-2] curate-buildings: one *Entry(name, osmId?) lookup fn per curated site, keyed by the
@@ -106,6 +107,7 @@ const SITE_ENTRY_LOOKUP: Record<string, (name: string, osmId?: number) => Curate
   aquileia: aquileiaEntry,
   pozzuoli: pozzuoliEntry,
   ancona: anconaEntry,
+  rome: romeEntry,
 };
 
 // Palette — light + dark variants. Both palettes are calibrated so that the sea/land/roads/labels
