@@ -24623,7 +24623,9 @@
           "https://site.unibo.it/butrint/en/atlas-and-history/shrine-of-asclepius",
           "https://www.academia.edu/1364523/Roman_Butrint_the_sanctuary_of_Asclepius"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2011_Butrint_03_Prytaneion_and_Asclepios_Sanctuary.jpg?width=800",
+        "image_credit": "Prytaneion and Sanctuary of Asclepius, Butrint, Albania · Wikimedia Commons"
       }
     },
     {
@@ -24685,7 +24687,9 @@
           "https://site.unibo.it/butrint/en/atlas-and-history/hellenistic-and-roman-walls",
           "https://www.penn.museum/sites/expedition/decoding-butrints-fortifications/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Albania_121_Butrint_Lion_Gate.jpg?width=800",
+        "image_credit": "Lion Gate in the city walls of Butrint, Albania · Wikimedia Commons"
       }
     },
     {
@@ -24764,7 +24768,9 @@
           "https://www.researchgate.net/publication/236157709_The_aqueduct_of_Butrint",
           "https://www.cambridge.org/core/journals/journal-of-roman-archaeology/article/patronage-and-public-amenities-in-roman-epirus-the-well-of-junia-rufina-at-butrint/E6F059FAA7749DC76673C0F05D876D33"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2011_Butrint_26_Nymphaeum.jpg?width=800",
+        "image_credit": "Nymphaeum of Butrint, Albania · Wikimedia Commons"
       }
     },
     {
@@ -25093,7 +25099,9 @@
           "https://ai.ac.rs/en/7729/",
           "https://www.livius.org/articles/place/sirmium-sremska-mitrovica/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fired-brick_ruins_at_the_ancient_Roman_city_of_Sirmium,_Serbia.jpg?width=800",
+        "image_credit": "Fired-brick city rampart ruins, ancient Sirmium, Serbia · Wikimedia Commons"
       }
     },
     {
@@ -25445,6 +25453,887 @@
           "https://www.artnews.com/art-news/news/ancient-roman-estate-found-near-shopping-mall-croatia-1234785028/"
         ],
         "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9459,
+          40.6377
+        ]
+      },
+      "properties": {
+        "id": "poi_agora_thessalonica",
+        "category": "forum",
+        "name_latin": "Forum Thessalonicense",
+        "name_english": "Agora of Thessalonica (Early Roman Phase)",
+        "province": "Macedonia",
+        "modern_location": "Upper Aristotelous Square, Thessaloniki, Greece",
+        "built": -60,
+        "destroyed": 180,
+        "extant_117ce": true,
+        "notes": "Thessalonica's civic square sat here since a 60 BCE inscription honored public buildings on the spot, continuing a modest Roman-period marketplace through the 1st century CE. The grand two-terraced marble forum tourists see today was not yet built. In 117 CE this was still a working but architecturally unremarkable agora at the junction of the Via Egnatia and the road to the acropolis.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_Forum_(Thessaloniki)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9459,
+          40.6377
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_antonine_thessalonica",
+        "category": "forum",
+        "name_latin": "Forum Thessalonicense",
+        "name_english": "Roman Forum of Thessaloniki (Monumental Complex)",
+        "province": "Macedonia",
+        "modern_location": "Upper Aristotelous Square, Thessaloniki, Greece",
+        "built": 180,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The two-terraced forum with its cryptoporticus, Caryatid stoa, twin baths, mint and odeon was an Antonine-to-Severan building program, completed only around 200-210 CE. It stood for three centuries afterward as the city's civic heart, but at the moment of the 117 CE snapshot it simply did not exist yet — the site's most famous ruin is a genuine dating trap.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_Forum_(Thessaloniki)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Roman_forum.jpg?width=800",
+        "image_credit": "Roman Forum, Thessaloniki, Greece · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.937,
+          40.636
+        ]
+      },
+      "properties": {
+        "id": "poi_sarapeion_thessalonica",
+        "category": "temple",
+        "name_latin": "Sarapieion",
+        "name_english": "Sanctuary of Sarapis, Isis and Anubis",
+        "province": "Macedonia",
+        "modern_location": "Near Dioikitiriou Square, western Thessaloniki, Greece",
+        "built": -250,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Egyptian merchants and residents built this sanctuary to Sarapis, Isis and Anubis in the 3rd century BCE, and it remained active for over four centuries. Excavated after a 1917 fire tore through the neighborhood, it yielded a dedicatory stoa, a small prostyle temple, pebble mosaics and cult inscriptions. By 117 CE it had already served Thessalonica's Egyptian-cult community for some 350 years.",
+        "sources": [
+          "https://www.thearchaeologist.org/blog/an-egyptian-temple-in-thessaloniki-the-mystery-of-the-sarapeion"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.938,
+          40.637
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_roma_augustus_thessalonica",
+        "category": "temple",
+        "name_latin": "Templum Romae et Augusti",
+        "name_english": "Temple of Roma and Augustus, Thessalonica",
+        "province": "Macedonia",
+        "modern_location": "Western Thessaloniki, Greece",
+        "built": -27,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Thessalonica added the goddess Roma to its pantheon in the 1st century BCE and gave her a dedicated priesthood alongside a new temple to Augustus, attested by inscriptions and coinage showing Julius Caesar and Augustus as divine. As capital of Macedonia since 146 BCE, the city embraced the imperial cult early and enthusiastically. By 117 CE the cult had been running continuously for well over a century.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Roma_and_Augustus"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.945,
+          40.634
+        ]
+      },
+      "properties": {
+        "id": "poi_via_egnatia_thessalonica",
+        "category": "road",
+        "name_latin": "Via Egnatia",
+        "name_english": "Via Egnatia through Thessalonica",
+        "province": "Macedonia",
+        "modern_location": "Egnatia Street corridor, Thessaloniki, Greece",
+        "built": -140,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Gnaeus Egnatius drove this great highway through Macedonia in the 140s BCE, linking Dyrrhachium on the Adriatic to Byzantium 700 Roman miles away, and Thessalonica was its single most important station. The road ran along the city's north edge as the main east-west artery, carrying legions, governors and traders for centuries. By 117 CE it had already carried imperial traffic for over 250 years.",
+        "sources": [
+          "https://www.livius.org/articles/place/via-egnatia/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.93,
+          40.633
+        ]
+      },
+      "properties": {
+        "id": "poi_harbor_thessalonica",
+        "category": "harbor",
+        "name_latin": "Portus Thessalonicensis",
+        "name_english": "Harbor of Thessalonica",
+        "province": "Macedonia",
+        "modern_location": "Western waterfront, Thessaloniki, Greece",
+        "built": -315,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Cassander sited his new city on the Thermaic Gulf in 315 BCE precisely for its natural harbor, and the port grew into one of the busiest on the Aegean's northern rim under Roman rule. It anchored the western end of the overland Via Egnatia route to Byzantium, moving grain, timber and goods between the Aegean and inland Macedonia. In 117 CE it was still Macedonia's primary maritime gateway.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Port_of_Thessaloniki"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.949,
+          40.64
+        ]
+      },
+      "properties": {
+        "id": "poi_walls_thessalonica",
+        "category": "wall",
+        "name_latin": "Moenia Thessalonicensia",
+        "name_english": "City Walls of Thessalonica (Hellenistic Circuit)",
+        "province": "Macedonia",
+        "modern_location": "Ano Poli, city center perimeter, Thessaloniki, Greece",
+        "built": -315,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Cassander's original fortification circuit went up with the city's founding in 315 BCE, but the long Roman peace let it decay: by the mid-1st century CE the walls were already described as ruinous and unmaintained. Macedonia's demilitarized status under Rome made rebuilding unnecessary until the Gothic siege of 253/4 CE finally forced a full overhaul. At the 117 CE snapshot Thessalonica was effectively an unwalled city.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Walls_of_Thessaloniki"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9524,
+          40.6296
+        ]
+      },
+      "properties": {
+        "id": "poi_arch_galerius_thessalonica",
+        "category": "arch",
+        "name_latin": "Arcus Galerii",
+        "name_english": "Arch of Galerius (Kamara)",
+        "province": "Macedonia",
+        "modern_location": "Egnatia and Dimitriou Gounari Streets, Thessaloniki, Greece",
+        "built": 298,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "This eight-pier triumphal arch celebrated Galerius's victory over Persia in 298 CE and was raised as part of his new imperial palace complex between 298 and 305 CE. It postdates the 117 CE snapshot by nearly two centuries and belongs to a different city — a later imperial tetrarchic capital, not the Antonine-era provincial seat this map captures.",
+        "sources": [
+          "https://galeriuspalace.culture.gr/en/monuments/kamara/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.7336,
+          39.0083
+        ]
+      },
+      "properties": {
+        "id": "poi_walls_augustan_nicopolis",
+        "category": "wall",
+        "name_latin": "Moenia Nicopolitana",
+        "name_english": "Augustan City Walls of Nicopolis",
+        "province": "Epirus",
+        "modern_location": "Nicopolis archaeological site, near Preveza, Greece",
+        "built": -29,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Augustus enclosed his new Victory City with a polygonal circuit stretching roughly 5,000 meters, built within the first five years after the city's founding. The walls used a poured-concrete core faced in brick, thickening from 2.5 meters along the curtain to 4.6 meters at the five gates. They read more as a statement of Roman order than a real defensive necessity, since the victory at Actium had already made the region safe.",
+        "sources": [
+          "https://actianicopolisarchaeopark.gr/en/nikopolis/the-roman-walls/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.7402,
+          39.0217
+        ]
+      },
+      "properties": {
+        "id": "poi_victory_monument_nicopolis",
+        "category": "monument",
+        "name_latin": "Tropaeum Augusti",
+        "name_english": "Victory Monument of Actium",
+        "province": "Epirus",
+        "modern_location": "Michalitsi Hill, north of Nicopolis, near Preveza, Greece",
+        "built": -29,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Octavian raised this trophy on the hill where his own camp had stood before the battle, dedicating it two years after crushing Antony and Cleopatra's fleet at Actium in 31 BCE. A 70-meter stone podium held roughly 35 bronze rams stripped from the captured warships, wedged into carved niches alongside 1,100 sculpted marble panels of naval and Amazon battle scenes. By 117 CE it had stood as Rome's founding monument to the Augustan peace for nearly a century and a half.",
+        "sources": [
+          "https://actianicopolisarchaeopark.gr/en/nikopolis/the-victory-monument-of-actium/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicopolis,_Augustus_monument.jpg?width=800",
+        "image_credit": "Victory Monument of Augustus, Nicopolis, Greece · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.7325,
+          39.0056
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_nicopolis",
+        "category": "theater",
+        "name_latin": "Theatrum Nicopolitanum",
+        "name_english": "Theatre of Nicopolis",
+        "province": "Epirus",
+        "modern_location": "South slope of the Apollo sanctuary hill, Nicopolis, Greece",
+        "built": -27,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Built in Augustus's initial wave of public works, the theatre blended Greek and Roman technique, its cavea running up the natural hillside on one side and on built stone vaulting on the other. It hosted the dramatic and musical competitions of the Actia games alongside civic assemblies. The original Augustan structure was already a working venue during the years Epictetus's students filled Nicopolis to hear him lecture.",
+        "sources": [
+          "https://diazoma.gr/en/theaters/ancient-theater-nicopolis/"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Arrian",
+            "work": "Discourses of Epictetus",
+            "ref": "praef.",
+            "note": "Arrian records that he took down Epictetus's lectures as a young student attending his school at Nicopolis around 108 CE, under Trajan, presenting them as near-verbatim notes rather than his own composition."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.733,
+          39.0035
+        ]
+      },
+      "properties": {
+        "id": "poi_odeon_nicopolis",
+        "category": "theater",
+        "name_latin": "Odeum Nicopolitanum",
+        "name_english": "Odeon of Nicopolis",
+        "province": "Epirus",
+        "modern_location": "Nicopolis archaeological site, near Preveza, Greece",
+        "built": -27,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This smaller covered theatre went up alongside the main theatre, stadium and gymnasium in Augustus's founding building program for the new Victory City. It served musical contests tied to the Actia festival and smaller civic gatherings that didn't need the main theatre's capacity. Its Augustan core was already a century and a half old by 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Nicopolis"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.729,
+          39.001
+        ]
+      },
+      "properties": {
+        "id": "poi_stadium_nicopolis",
+        "category": "circus",
+        "name_latin": "Stadium Nicopolitanum",
+        "name_english": "Stadium of Nicopolis",
+        "province": "Epirus",
+        "modern_location": "Nicopolis archaeological site, near Preveza, Greece",
+        "built": -27,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Built into a hillside with unusual rounded ends at both extremities, this stadium held the athletic and equestrian contests of the Actia games that Augustus founded in 27 BCE to rival the Olympics in prestige. Its north bank alone seated an estimated 10,000 spectators every four years when the Panhellenic-tier games came around. By 117 CE it had hosted roughly 36 celebrations of the Actia.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Actia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.72,
+          39
+        ]
+      },
+      "properties": {
+        "id": "poi_harbor_comaros_nicopolis",
+        "category": "harbor",
+        "name_latin": "Portus Comarus",
+        "name_english": "Harbor of Comarus, Nicopolis",
+        "province": "Epirus",
+        "modern_location": "Ionian coast near Preveza, Greece",
+        "built": -29,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Cassius Dio records that Augustus fortified his victory camp and ran walls down to connect it to Comarus, the outer harbor on the open Ionian side, distinct from the calmer Ambracian Gulf anchorage. This gave the new city dual sea access — sheltered gulf trade on one side and open-water shipping on the other. It functioned as Nicopolis's working port for the whole of the early empire.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Actium"
+        ],
+        "confidence": "low",
+        "ancient_sources": [
+          {
+            "author": "Cassius Dio",
+            "work": "Roman History",
+            "ref": "51.1",
+            "note": "Describes Octavian fortifying his victory camp above Actium and connecting it by walls down to the harbor of Comarus, part of the founding of Nicopolis."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.74,
+          39.01
+        ]
+      },
+      "properties": {
+        "id": "poi_aqueduct_nicopolis",
+        "category": "aqueduct",
+        "name_latin": "Aquaeductus Nicopolitanus",
+        "name_english": "Roman Aqueduct of Nicopolis",
+        "province": "Epirus",
+        "modern_location": "Louros River to Nicopolis, near Preveza, Greece",
+        "built": 60,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "This roughly 50-kilometer channel carried water from the Louros River springs down an 80-meter elevation drop to the growing city, but its actual build date is unresolved: estimates range from the Augustan or Neronian 1st century to as late as Hadrian's reign in the 2nd century. Because a credible reading places its construction at or after 117 CE, it is marked not-yet-built here rather than assumed early.",
+        "sources": [
+          "https://thisisepirus.gr/en/roman-aqueduct-of-nicopolis-a-marvel-of-ancient-technology/"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicopolis_Roman_Aqueduct.jpg?width=800",
+        "image_credit": "Roman aqueduct of Nicopolis, Greece · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.745,
+          39.015
+        ]
+      },
+      "properties": {
+        "id": "poi_central_baths_nicopolis",
+        "category": "bath",
+        "name_latin": "Thermae Nicopolitanae",
+        "name_english": "Central Baths of Nicopolis",
+        "province": "Epirus",
+        "modern_location": "Northeast of the Nicopolis archaeological site, near Preveza, Greece",
+        "built": 190,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "This large bathing complex, with its natatio pool, frigidarium, tepidarium, caldarium and surviving hypocaust, dates on architectural grounds to the reign of Septimius Severus around the turn of the 3rd century CE. That places its construction roughly eight decades after the 117 CE snapshot — a straightforward dating trap despite being the best-preserved bath structure on the site today.",
+        "sources": [
+          "https://actianicopolisarchaeopark.gr/en/nikopolis/the-baths/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7561,
+          37.7308
+        ]
+      },
+      "properties": {
+        "id": "poi_liongate_mycenae",
+        "category": "gate",
+        "name_latin": "",
+        "name_english": "Lion Gate of Mycenae",
+        "province": "Achaea",
+        "modern_location": "Mycenae archaeological site, Mykines, Argolis, Greece",
+        "built": -1250,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The Lion Gate stood as the monumental entrance to a citadel already abandoned for over a thousand years by 117 CE, its two lionesses flanking a column above a lintel weighing roughly 20 tons. Roman-era travelers came specifically to marvel at it as a relic, believing only the mythical Cyclopes could have set such stones. No Roman structure occupied the site; visitors found only silent Bronze Age ruins reached by a shepherd's path.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Lion_Gate"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Pausanias",
+            "work": "Description of Greece",
+            "ref": "2.16",
+            "note": "Describes the Lion Gate and remaining wall circuit as the work of the Cyclopes, among the ruins of Mycenae; mentions being led to the site by local shepherds."
+          }
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lion_Gate,_Mycenae,_201507.jpg?width=800",
+        "image_credit": "Lion Gate, Mycenae, Greece · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7539,
+          37.7268
+        ]
+      },
+      "properties": {
+        "id": "poi_treasuryofatreus_mycenae",
+        "category": "tomb",
+        "name_latin": "",
+        "name_english": "Treasury of Atreus (Tomb of Agamemnon)",
+        "province": "Achaea",
+        "modern_location": "Mycenae archaeological site, Mykines, Argolis, Greece",
+        "built": -1250,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This beehive-shaped royal tholos tomb had already stood empty for well over a millennium by 117 CE, its corbelled dome rising nearly 13.5 meters above the entrance passage. Pausanias described it and similar structures near Mycenae as the underground treasure-chambers of Atreus and his sons, a detail that shows the tomb's true funerary purpose had been forgotten by his era. No priesthood or cult tended the site; it survived purely as an object of local legend and antiquarian curiosity.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Treasury_of_Atreus"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Pausanias",
+            "work": "Description of Greece",
+            "ref": "2.16",
+            "note": "Refers to \"subterraneous buildings of Atreus and his sons, in which their treasures were deposited\" among the ruins of Mycenae — the tholos tombs, misunderstood as treasuries rather than graves."
+          }
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gate_of_the_Treasury_of_Atreus,_Mycenae,_090938.jpg?width=800",
+        "image_credit": "Gate of the Treasury of Atreus, Mycenae · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7559,
+          37.7311
+        ]
+      },
+      "properties": {
+        "id": "poi_hellenistictemple_mycenae",
+        "category": "temple",
+        "name_latin": "",
+        "name_english": "Hellenistic Temple on the Acropolis of Mycenae",
+        "province": "Achaea",
+        "modern_location": "Mycenae acropolis summit, Mykines, Argolis, Greece",
+        "built": -280,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Built on the crown of the Mycenae acropolis in the early 3rd century BCE by Argive settlers who briefly revived the hilltop as a village, this small temple to Athena or Hera outlasted the settlement itself. The village was abandoned not long after, and by the time Pausanias toured the site around 150 CE he found it already in ruins with no functioning cult. Only scant foundations survive today, and no evidence points to Roman-period restoration or worship here.",
+        "sources": [
+          "https://ancient-greece.org/archaeology/acropolis-archaeological-site/",
+          "https://www.britannica.com/place/Mycenae"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Pausanias",
+            "work": "Description of Greece",
+            "ref": "2.16",
+            "note": "States plainly that Mycenae was already in ruins by the time of his visit, without describing an active temple on the acropolis."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4235,
+          37.0821
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_sparta",
+        "category": "theater",
+        "name_latin": "Theatrum Spartanum",
+        "name_english": "Ancient Theatre of Sparta",
+        "province": "Achaea",
+        "modern_location": "Acropolis hill, Sparti, Laconia, Greece",
+        "built": -25,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Carved into the slope below the Spartan acropolis around 30-20 BCE under the patronage of the Augustan-era dynast Gaius Julius Eurycles, this theatre gained its permanent two-story marble stage building as a personal gift from Emperor Vespasian in 78 CE. By 117 CE it stood as Sparta's grandest public building, its Corinthian-order skene bearing an inscribed architrave naming its imperial donor. The stone cavea and finished marble stage were both firmly in place well before Hadrian's accession.",
+        "sources": [
+          "https://diazoma.gr/en/theaters/ancient-theatre-sparta/",
+          "https://mythicalpeloponnese.gr/en/ancient-theater-of-sparta/"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Pausanias",
+            "work": "Description of Greece",
+            "ref": "3.14",
+            "note": "Notes tombs opposite the theatre, including that of Leonidas, and describes annual speeches and a Spartans-only contest held there."
+          }
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancient_sparta_theater.jpg?width=800",
+        "image_credit": "Ancient theatre of Sparta, Greece · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4352,
+          37.0828
+        ]
+      },
+      "properties": {
+        "id": "poi_artemisorthia_sparta",
+        "category": "sanctuary",
+        "name_latin": "Templum Artemidis Orthiae",
+        "name_english": "Sanctuary of Artemis Orthia",
+        "province": "Achaea",
+        "modern_location": "East bank of the Eurotas River, Sparti, Laconia, Greece",
+        "built": -160,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This riverside sanctuary of Artemis Orthia had stood on the same spot since the Archaic period, its temple rebuilt in the 2nd century BCE around an altar left untouched from far earlier. In 117 CE it remained Sparta's living heritage attraction, where boys underwent a ritualized flogging contest before the goddess's wooden cult image, said to grow unbearably heavy if the whip-bearers showed mercy. Visitors came to witness the spectacle even before any permanent seating existed.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sanctuary_of_Artemis_Orthia"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Pausanias",
+            "work": "Description of Greece",
+            "ref": "3.16",
+            "note": "Gives the origin myth of the scourging ritual at the altar of Artemis Orthia and describes the wooden cult statue known as Lygodesma."
+          }
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_remains_of_the_Temple_of_Artemis_Orthia_in_Sparta_on_15_May_2019.jpg?width=800",
+        "image_credit": "Remains of the Temple of Artemis Orthia, Sparta · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4352,
+          37.0828
+        ]
+      },
+      "properties": {
+        "id": "poi_orthiagrandstand_sparta",
+        "category": "amphitheater",
+        "name_latin": "",
+        "name_english": "Roman Grandstand at the Sanctuary of Artemis Orthia",
+        "province": "Achaea",
+        "modern_location": "East bank of the Eurotas River, Sparti, Laconia, Greece",
+        "built": 225,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "This horseshoe-shaped stone grandstand was built to seat spectators watching the ritual flogging of Spartan youths before the altar of Artemis Orthia, but not until after 225 CE, over a century past this snapshot. Its concrete platform even reused older inscribed fragments as building rubble. In 117 CE, spectators at the same ritual still stood or found informal vantage points, since no permanent seating yet existed — this is the structure most tourist guides show today when picturing Roman Sparta, but it postdates Hadrian's reign by decades.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sanctuary_of_Artemis_Orthia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4267,
+          37.0819
+        ]
+      },
+      "properties": {
+        "id": "poi_romanstoa_sparta",
+        "category": "market",
+        "name_latin": "Porticus Romana",
+        "name_english": "Roman Stoa of Sparta",
+        "province": "Achaea",
+        "modern_location": "Palaiokastro plateau, Sparti, Laconia, Greece",
+        "built": 130,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "This nearly 200-meter marble double stoa framed the southern end of Sparta's agora, but construction dates to roughly 125-150 CE, tied to renovation work by the Spartan grandee Gaius Julius Eurycles Herculanus. Herculanus only began his senatorial career after Hadrian's 117 CE accession sponsored his entry to Rome's Senate, placing this building's rise squarely after our snapshot. A visitor to Sparta's agora in 117 CE would have found an older, unmonumentalized public square rather than this colonnaded showpiece.",
+        "sources": [
+          "https://www.archaeology.wiki/blog/archaeological_site/ancient-sparta/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4234,
+          37.083
+        ]
+      },
+      "properties": {
+        "id": "poi_athenachalkioikos_sparta",
+        "category": "temple",
+        "name_latin": "Templum Minervae Chalcioeci",
+        "name_english": "Temple of Athena Chalkioikos",
+        "province": "Achaea",
+        "modern_location": "Acropolis of Sparta, Sparti, Laconia, Greece",
+        "built": -600,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Crowning the modest acropolis of Sparta since the early 6th century BCE, this temple to Athena took its name from the bronze plating that once lined its interior walls with mythological scenes. It remained a functioning civic sanctuary through the Roman period, sitting at the symbolic heart of the city's religious life alongside the agora. Its most famous historical association is grim: the Spartan general Pausanias reportedly starved to death after taking refuge inside its precinct centuries earlier.",
+        "sources": [
+          "https://www.kupi.com/en-ae/explore/greece/sparta/archaeological-site-of-sparta"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Pausanias",
+            "work": "Description of Greece",
+            "ref": "3.17",
+            "note": "Describes the sanctuary of Athena Chalkioikos on the Spartan acropolis and its bronze-relief decoration depicting mythological scenes."
+          }
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sanctuary_of_Athena_Chalkioikos,_Sparti.jpg?width=800",
+        "image_credit": "Sanctuary of Athena Chalkioikos, Sparta, Greece · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.53333,
+          37.75417
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_aphaia_aegina",
+        "category": "temple",
+        "name_latin": "",
+        "name_english": "Temple of Aphaia",
+        "province": "Achaea",
+        "modern_location": "Agia Marina, Aegina, Greece",
+        "built": -500,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This Doric limestone temple crowned a pine-covered ridge on Aegina's east coast, its 32 surviving columns marking one of the best-preserved Archaic sanctuaries in Greece. Built around 500 BCE to replace an earlier wooden shrine lost to fire, it honored the local goddess Aphaia. Worship here had faded by the late Hellenistic period, but the building itself still stood intact when Trajan died, its famous pediment sculptures still in place a century before scavengers pried out its bronze clamps.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Aphaia",
+          "https://en.wikipedia.org/wiki/Aphaia"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Pausanias",
+            "work": "Description of Greece",
+            "ref": "2.30.3",
+            "note": "Mentions the sanctuary on Aegina and identifies Aphaia with the Cretan goddess Britomartis-Diktynna, without describing the temple in detail."
+          }
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_temple_of_Aphaia.jpg?width=800",
+        "image_credit": "Temple of Aphaia, Aegina, Greece · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.4237,
+          37.7499
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_apollo_kolona_aegina",
+        "category": "temple",
+        "name_latin": "",
+        "name_english": "Temple of Apollo at Kolona",
+        "province": "Achaea",
+        "modern_location": "Kolona hill, Aegina Town, Greece",
+        "built": -520,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This Doric temple stood on the fortified acropolis hill overlooking Aegina's main harbor, built around 520 BCE on a site inhabited since the Bronze Age. Eleven columns ran along its length in local limestone, with pediments carved in Parian marble. The sanctuary and its surrounding walls, altar, and enclosure survived through the Roman period, only being pulled down for building material centuries later when the hill became a small Christian settlement. A single column still standing today gave the site its modern name, Kolona.",
+        "sources": [
+          "https://pleiades.stoa.org/places/122622385"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Pausanias",
+            "work": "Description of Greece",
+            "ref": "2.29.6",
+            "note": "Describes Apollo's temple in the city of Aegina and a naked wooden cult image of native workmanship."
+          }
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Column_Apollo_Temple_Aegina_Greece.jpg?width=800",
+        "image_credit": "Column of the Temple of Apollo at Kolona, Aegina · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.427,
+          37.7495
+        ]
+      },
+      "properties": {
+        "id": "poi_aiakeion_aegina",
+        "category": "sanctuary",
+        "name_latin": "",
+        "name_english": "Shrine and Tomb of Aeacus (Aiakeion)",
+        "province": "Achaea",
+        "modern_location": "Aegina Town, Greece",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A square white-marble enclosure roughly 30 meters on a side stood in the most prominent part of Aegina's town, marking the legendary tomb of the hero Aeacus. Old olive trees grew inside it around a low altar that doubled as his grave, with carved reliefs at the entrance showing the Greek envoys who once begged Aeacus to end a drought. The nearby barrow of his son Phocus, capped with a single rough stone, stood right beside it. This civic monument to Aegina's founding hero remained a fixture of the town when Trajan died.",
+        "sources": [
+          "https://www.theoi.com/Text/Pausanias2C.html"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Pausanias",
+            "work": "Description of Greece",
+            "ref": "2.29.6-8",
+            "note": "Describes the quadrangular marble enclosure, the altar-tomb of Aeacus, its relief carvings, and the adjacent barrow of Phocus."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.4287,
+          37.7478
+        ]
+      },
+      "properties": {
+        "id": "poi_harbor_aegina",
+        "category": "harbor",
+        "name_latin": "",
+        "name_english": "Ancient Harbor of Aegina",
+        "province": "Achaea",
+        "modern_location": "Aegina Town waterfront, Greece",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Aegina's waterfront held two harbors side by side: a commercial port used since the Bronze Age and a walled military harbor with ship sheds for triremes, described by ancient visitors as the island's secret port. Combined installations once stretched along roughly 1,600 meters of coastline, testament to Aegina's centuries as a naval power. By Trajan's death the harbors still stood but carried a fraction of their old traffic, as the island's economy had shifted toward farming and small trades.",
+        "sources": [
+          "https://institut-arkaia.univ-amu.fr/en/fieldwork/aegina"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Pausanias",
+            "work": "Description of Greece",
+            "ref": "2.29.6",
+            "note": "Notes the principal harbor near the temple of Aphrodite and a second, hidden harbor near the theater used for warships."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.425,
+          37.748
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_stadium_aegina",
+        "category": "theater",
+        "name_latin": "",
+        "name_english": "Theatre and Stadium of Aegina",
+        "province": "Achaea",
+        "modern_location": "Aegina Town, Greece",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A theater rose above Aegina's shore on a scale ancient visitors compared to the famous theater at Epidaurus, with a stadium laid out just behind it. Both stood near the town's secret harbor, part of the cluster of public buildings on the headland. No record survives of Roman-era renovation here, unlike the lavishly rebuilt theaters of Corinth or Athens, suggesting the complex simply endured from its Classical construction into the 2nd century CE as a fading but intact civic landmark.",
+        "sources": [
+          "https://www.theoi.com/Text/Pausanias2C.html"
+        ],
+        "confidence": "low",
+        "ancient_sources": [
+          {
+            "author": "Pausanias",
+            "work": "Description of Greece",
+            "ref": "2.29.6-30.1",
+            "note": "Describes a theater on Aegina rivaling Epidaurus's in size, with a stadium situated behind it."
+          }
+        ]
       }
     }
   ]
