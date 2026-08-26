@@ -7,6 +7,210 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 61 — 2026-08-26 (this shift's own prompt claimed "Shift 2 of four")
+
+Same stale-numbering mismatch every shift since #13 has flagged — `SHIFT_LOG.md` was 60 real
+shifts deep at session start, not 1. Session started on a detached `HEAD` sitting exactly at
+`origin/main` (`5646cde`, shift 60's own last commit) — `git fetch origin main` confirmed no
+drift, and `git checkout -B main origin/main` put the session on a normal branch cleanly, no
+lost-work scare. `node_modules` wasn't present (`npm run validate` would have failed without
+it); `npm install` was needed first, same as recent shifts have logged, and the incidental
+`package-lock.json` `libc`/`hasInstallScript` diff from a newer local npm was reverted rather
+than committed, per the "don't touch deps" guardrail. Re-confirmed the standing network finding
+independently via direct `curl` to `en.wikipedia.org`, `overpass-api.de`, `commons.wikimedia.org`,
+and `pleiades.stoa.org` — all four `CONNECT tunnel failed, response 403` — and via
+`curl "$HTTPS_PROXY/__agentproxy/status"`. `WebSearch` inside background `Agent` calls remained
+the only working research channel, same as every recent shift.
+
+### Board check
+
+No `[~]` claims standing at session start. Reviewed `BOARD.md`'s open P0/P1 tickets myself rather
+than trusting shift 60's read secondhand — same conclusion: `[12-P0-1]` merge-themes, `[03-P0-1]`
+schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]` terrain, `[13-P0-2]` image-audit, `[02-P0-4]`
+self-host-glyphs (needs local PBF-generation tooling unavailable here), `[10-P0-2]`
+three-depth-labels (a genuine multi-shift content-writing project across ~750 records, not a
+single-session ticket), `[13-P1-4]` engravings (needs Commons image browsing, blocked), and
+`[11-P1-5]`/`[11-P1-6]` (infra refactors) are all either network-blocked or too large for one
+unattended session, matching shifts 59 and 60's own independent conclusions. Did not force a
+Track B ticket this shift for the same reason two shifts running have declined one — spent the
+full shift on Track A instead, closing out one regional queue and opening the next.
+
+### Track A — Hispania queue closed (33 POIs: Segovia, Barcino, Corduba, Conimbriga, Caesaraugusta)
+
+Six parallel background `WebSearch`-only research agents, reviewed and hand-merged into
+`pois.geojson` (research-only agents, same pattern recent shifts have used — every feature was
+written into the file by hand after review, nothing auto-merged). `SHIFT_LOG` 60's own "Next
+regional queue after Britannia is Hispania" pointed straight at this: Tarraco and Carthago Nova
+already had curated POIs from shifts 4 and 59, so this shift targeted the five Hispania cities
+SHIFT_BRIEF.md names that had *zero* coverage — Segovia, Barcino (Barcelona), Corduba (Cordoba),
+Caesaraugusta (Zaragoza), plus Conimbriga (Portugal, Lusitania — not on the brief's own Hispania
+list but the same region and treatment). Between shifts 4/59 and this one, the brief's full
+Hispania queue (Tarraco, Segovia, Barcino, Corduba, Conimbriga, Cartagena, Zaragoza) is now closed.
+
+**Segovia** (3): the aqueduct is the shift's cleanest dating trap. The old Domitianic date
+(~98 CE, from a reconstructed inscription) was upended by a 2016 re-analysis of foundation fill
+from three pillars, which turned up a Trajanic sestertius struck 112-116 CE sealed in the
+packing — a terminus post quem, not a completion date. Since a structure this scale typically
+took years above the footings, shipped `extant_117ce:false` (still likely under construction at
+the snapshot) rather than defaulting to the postcard answer. Also added the only two other real
+Roman finds in the city: a probable forum/basilica at Plaza de Guevara and a domus under Plaza
+Mayor, both `confidence:low` on dating (broad 1st-2nd-century excavation ranges, no tight
+terminus).
+
+**Barcino** (5): the early Augustan wall (`true`, ~15 BCE) versus the much heavier late-3rd-century
+towered circuit most tourism sources picture (correctly excluded — a century-plus too late); the
+Temple of Augustus on Mont Taber (dedication "traditional but unproven" per its own scholarship,
+kept `true` either way since both candidate build windows predate 117); the Via Sepulcral Romana
+necropolis; a modest Trajanic-era aqueduct from the Montcada hills (a once-proposed second
+"Collserola aqueduct" is now considered not Roman at all per a cited academic reassessment); and
+the forum on Mont Taber, flagged as provisional since a 2023-2025 excavation under a nearby hotel
+is actively rewriting its known orientation.
+
+**Corduba** (6): the Augustan Guadalquivir bridge (Aulus Hirtius records Caesar's earlier wooden
+predecessor during the civil war against Pompey's sons), the Claudius-to-Domitian imperial-cult
+temple on Calle Claudio Marcelo, the Augustan theatre (rediscovered 1994 under the archaeological
+museum), the Republican-then-Augustan-expanded city walls, the twin Forum Novum/Forum Adiectum
+complex, and the Tiberian-era Puerta de Gallegos mausoleums — all `true`, all comfortably
+pre-117.
+
+**Conimbriga** (6): the two dating traps SHIFT_BRIEF flagged in advance both confirmed and shipped
+`false`. The House of the Fountains' famous fountain garden and mosaics are dated by Portuguese
+excavation scholarship (Correia et al.) to the third quarter of the 2nd century through the early
+3rd — decades after Hadrian, though a plainer house did occupy the plot from the early 1st
+century (not given its own record). The city walls are the cleaner trap: Conimbriga was
+deliberately unwalled through its whole 1st-2nd-century golden age, and the circuit visitors see
+today, which cuts straight through the House of the Fountains for its stone, only went up
+hastily around 300 CE. The Flavian forum/imperial-cult precinct, the Augustan aqueduct from
+Alcabideque, the House of Cantaber (Flavian core, later bath addition), and the Great South Baths
+(low confidence, thin sourcing) all shipped `true`.
+
+**Caesaraugusta** (6): the theatre, forum-with-cryptoporticus, public baths, and river port all
+`true` on solid Julio-Claudian dating. The walls are Caesaraugusta's own dating trap: a defensive
+circuit almost certainly existed from the Augustan founding (traces bonded into the standing
+wall's foundations), but the actual ashlar-faced fabric visitors see today near the Torreon de la
+Zuda is a 3rd-4th-century rebuild — shipped `true` for "a wall existed" but `confidence:medium`
+with the fabric-vs-function distinction spelled out in the notes. Also included a genuinely new
+find, the "Coso Bridge-Aqueduct," announced by Zaragoza archaeologists in March 2026 and still
+preliminary/not peer-reviewed — shipped at `confidence:low` with that caveat explicit rather than
+treated as settled.
+
+**Gazetteer fix**: none of these five cities had any entry at all in `places_medium.geojson`
+(16,337 points) — a real gap, same class of finding shift 4 made for Roma/Londinium/Alexandria.
+Added five `major:1` entries (ids `900024`-`900028`), following that shift's precedent exactly,
+so the search bar now surfaces all five.
+
+### Track A — Axis 3f (water infrastructure): 5 aqueduct LineStrings + 7 bridge/aqueduct POIs
+
+Ran three more research agents in parallel with the Hispania batch, targeting named gaps in
+`lines.geojson`'s aqueduct set and a handful of famous standalone bridges. **Before merging,
+checked every candidate against the live file first** — this caught that `lines.geojson` already
+had more coverage than expected: Aqua Anio Vetus, Aqua Tepula+Julia, and Aqua Traiana were already
+present for Rome, and Nemausus/Pont du Gard, the Eifel aqueduct, Zaghouan-Carthage, and Caesarea's
+High-Level line were already present and already correctly dated (Zaghouan and Caesarea's second
+channel both already `false`/Hadrianic, matching this shift's independent research exactly) —
+so only the genuinely missing ones shipped: **Aqua Appia, Aqua Virgo, Aqua Alsietina** completing
+Rome's aqueduct set, **Aspendos** (shipped `false` — specialist dating clusters in the mid-2nd
+century or later, no source converges on pre-117), and **Pergamon's Madradag** pressure siphon
+(`true`, Trajanic-Hadrianic sinter-deposit dating, plausibly but not certainly complete by 117).
+
+Seven standalone POIs: Los Milagros and San Lazaro aqueducts plus the Guadiana bridge at Merida,
+the Ponte di Tiberio at Rimini (a genuine Augustus-and-Tiberius joint dedication, previously only
+an unresearched OSM name in Rimini's site-level building layer, now a sourced record), the
+Alconetar bridge (a real standalone monument distinct from the existing "Turmulus" road-station
+entry), Trajan's Danube bridge (shipped `true`/`destroyed:117` — Cassius Dio has Hadrian
+dismantling its superstructure right at or just after the snapshot moment, the same
+concurrent-with-the-death-of-Trajan treatment other shifts have used for close calls), and the
+Chaves bridge in Portugal (whose research agent caught and corrected a province error in its own
+brief — Aquae Flaviae sat in the Conventus Bracaraugustanus of Hispania Tarraconensis in 117 CE,
+not Lusitania; Gallaecia wasn't split off as a separate province until after Diocletian).
+
+**One caught duplicate**: a Proserpina Dam candidate turned out to already exist as
+`poi_proserpina_dam` (same name, same coordinate) — `npm run validate`'s new pre-push check
+caught it immediately; dropped the new one rather than the existing, better-sourced record (it
+already has an image).
+
+### Track A — Germania + Rhine: Regensburg opens, Mainz + Bonn deepened (11 POIs)
+
+With Hispania's queue closed and still well inside the shift, opened the brief's next regional
+queue (Germania + Rhine) rather than stop at the minimum. Checked coverage first: Mainz and Bonn
+each had exactly *one* POI on the whole map — their own legionary fortress, added by some earlier
+shift's fortress batch — despite being real settlements with excavated civilian archaeology.
+Regensburg had zero.
+
+**Regensburg** (1): the obvious trap here is the famous stone fortress of Legio III Italica,
+which is a 179 CE Marcus Aurelius foundation — 62 years past this map's snapshot, and explicitly
+the kind of thing SHIFT_BRIEF.md's own Regensburg example could mislead a less careful pass into
+backdating. The real Trajanic/Hadrianic-era installation is the smaller Kumpfmuhl auxiliary fort,
+700m south, built in timber-and-earth around 80 CE — shipped that instead, `confidence:medium`
+since sources disagree whether its defenses were still timber-earth or already stone-rebuilt at
+the exact 117 CE moment, and the garrison unit at that date isn't securely identified (the
+commonly-cited Cohors III Britannorum is only attested there from 153 CE onward).
+
+**Mainz** (5): theatre (Domitianic stone rebuild of an earlier timber structure, tied to Drusus's
+funerary games), the Great Mainz Jupiter Column (Neronian, c. 67 CE, dedicated by the canabae
+civilian population), the Rhine bridge (correctly dated to 71 CE under Vespasian rather than the
+more commonly assumed Domitian), the Cenotaph of Drusus (9 BCE, core masonry survives to this
+day), and the Zahlbach aqueduct (Flavian, the tallest known Roman aqueduct arcade north of the
+Alps). The research agent explicitly declined the full stone city-wall circuit (mid-3rd century,
+well past 117) and the river harbor (only dated finds are 3rd-century shipwrecks) rather than pad.
+
+**Bonn** (5): the canabae legionis, a second civilian vicus upstream at Gronau with five excavated
+strip-houses, that vicus's own bathhouse (undated construction year, `confidence:medium`), a
+modest Rhine landing stage (not a monumental harbor — Bonna was a secondary frontier post, not a
+provincial capital), and the necropolis that later gave Bonn Minster its site. The research agent
+explicitly declined to invent a "Drusus bridge" POI — Florus's account of one is disputed among
+historians and no archaeological remains are confirmed — noting the rejection inside the port
+entry rather than silently dropping the finding.
+
+**Schema note**: added `vicus` to the `residential` category group in `app/poiCategories.ts` (the
+canabae/vicus civilian-settlement type didn't have a home in the existing categories).
+
+### Numbers
+
+`pois.geojson`: 747 → 791 (+44, +5.9%), across two commits (34 in the Hispania/water batch, 11 in
+the Germania batch; one Proserpina Dam duplicate caught by validate and dropped before it ever
+landed, so the real research yield was 45 candidates). `lines.geojson`: 19 → 24 (+5).
+`places_medium.geojson`: 16,337 → 16,342 (+5 gazetteer entries). 8 cities newly opened or
+meaningfully deepened (Segovia, Barcino, Corduba, Conimbriga, Caesaraugusta, Regensburg, Mainz,
+Bonn) — well past the axis-1 per-shift minimum of 5. `npm run validate`: clean both times, same
+17 pre-existing warnings, 0 errors (1 error caught and fixed mid-shift, before either push).
+`npm run build` + `tsc --noEmit`: clean both times (791 `/place/[slug]` routes). `METRICS.md`
+refreshed after both commits.
+
+### Track B
+
+Not attempted — see the Board-check section above. Third shift running to reach the same
+conclusion (nothing both unclaimed and safely scoped for one unattended session); worth someone
+outside the shift loop actually looking at whether any P2/P3 backlog item could be pre-scoped
+into shift-sized pieces, since Track B has now gone unclaimed for three shifts straight.
+
+### Next shift should pick up
+
+- **Germania + Rhine continues.** This shift opened Regensburg and deepened Mainz/Bonn: Cologne
+  still only has its shift-4 batch (Praetorium, wall, watchtower) and could take the same
+  civilian-town-beyond-the-fortress treatment; the brief's own regional list also names
+  Regensburg (done, see above) — no further named cities remain unclaimed in this queue, so a
+  future shift could either deepen Cologne or move to the next regional queue.
+- **Next regional queue after Germania + Rhine is Balkans + Danube** per the brief's Axis 1
+  order: Salona, Split, Viminacium, Serdica, Naissus, Sirmium (Sirmium already has a `major:1`
+  gazetteer entry from an earlier shift but no curated POIs — check before assuming it's
+  untouched), Butrint.
+- **Image gaps remain real, not exhausted** — this shift's entire 45-feature yield shipped with
+  zero `image_url` fields (none of the six research agents were asked to hunt Commons images;
+  worth folding image-sourcing into the next research-agent prompt directly rather than treating
+  it as a separate top-up pass, since Commons category browsing is blocked here the same way
+  direct fetches are).
+- **`[09-P0-1]` ancient-sources**: not touched this shift; the pool shift 60 left at roughly
+  115-120 open `confidence:high` POIs is now somewhat larger (more high-confidence POIs shipped
+  this shift). `[09-P1-4]` epigraphy remains the more promising untried channel per several prior
+  shifts' conclusion.
+- Network block reconfirmed for the record: `overpass-api.de`, `commons.wikimedia.org`,
+  `en.wikipedia.org`, `pleiades.stoa.org` all `CONNECT tunnel failed, response 403` via direct
+  `curl`; `WebSearch` stayed reachable throughout (9 background agents total this shift, no
+  quota exhaustion).
+
+---
+
 ## Shift 60 — 2026-08-26 (this shift's own prompt claimed "Shift 1 of four")
 
 Same stale-numbering mismatch every shift since #13 has flagged — `SHIFT_LOG.md` was 59 real
