@@ -24401,6 +24401,1051 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.323,
+          42.6978
+        ]
+      },
+      "properties": {
+        "id": "poi_viamilitaris_serdica",
+        "category": "road",
+        "name_latin": "Via Militaris",
+        "name_english": "Diagonal Road through Serdica",
+        "province": "Thracia",
+        "modern_location": "beneath Nezavisimost Square, central Sofia, Bulgaria",
+        "built": 106,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Trajan's engineers paved this stretch of the Singidunum-to-Byzantium highway with stone during the Dacian Wars of 101-106 CE to move legions north through the Balkans. Serdica's promotion to municipium in 106 CE rode on the same military logistics this road carried. It ran straight through the city as its main east-west artery and was still Serdica's principal thoroughfare on the day Trajan died in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Via_Militaris",
+          "https://www.roamintheempire.com/index.php/2021/05/05/serdica-part-i/",
+          "https://ancientbulgaria.bg/listings/serdica"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.3211,
+          42.6977
+        ]
+      },
+      "properties": {
+        "id": "poi_walls_serdica",
+        "category": "wall",
+        "name_latin": "",
+        "name_english": "First City Wall of Serdica",
+        "province": "Thracia",
+        "modern_location": "near the former TZUM department store, central Sofia, Bulgaria",
+        "built": 176,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Costoboci raiders sacked Serdica around 170 CE during the Marcomannic Wars, and Marcus Aurelius's engineers answered by raising the town's first stone circuit, four gates and all, finishing by 180 CE. This first fortification predated the far larger Constantinian-era wall tourists walk today, but it still rose six decades after Trajan's death in 117 CE.",
+        "sources": [
+          "https://archaeologyinbulgaria.com/background-infonotes/fortresses-cities/serdica-sredets-sofia-bulgaria/",
+          "https://www.roamintheempire.com/index.php/2021/05/05/serdica-part-i/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sofia-Rimskata-stena-3.jpg?width=800",
+        "image_credit": "Roman wall remains, Sofia (ancient Serdica) · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.3283,
+          42.6972
+        ]
+      },
+      "properties": {
+        "id": "poi_amphitheater_serdica",
+        "category": "amphitheater",
+        "name_latin": "",
+        "name_english": "Amphitheatre of Serdica",
+        "province": "Thracia",
+        "modern_location": "Arena di Serdica Hotel, Budapest Street, Sofia, Bulgaria",
+        "built": 300,
+        "destroyed": 447,
+        "extant_117ce": false,
+        "notes": "Serdica's amphitheater rose in the late 3rd century under Diocletian and was completed under Constantine I, its oval measuring 60 by 43 meters just outside the city walls. It sat atop an earlier, ill-dated theater that Gothic raiders had already wrecked. A hotel foundation dig accidentally rediscovered it in 2004. Every phase of it postdates Trajan's death in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Amphitheatre_of_Serdica",
+          "https://ulpiaserdica.com/amphitheatre_en.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amphitheatre_of_Serdica_-_General_view.jpg?width=800",
+        "image_credit": "Amphitheatre of Serdica, Sofia · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.3229,
+          42.6969
+        ]
+      },
+      "properties": {
+        "id": "poi_rotunda_stgeorge_serdica",
+        "category": "bath",
+        "name_latin": "",
+        "name_english": "Rotunda of St George (Serdica Baths)",
+        "province": "Thracia",
+        "modern_location": "Presidency courtyard, Dondukov Boulevard, Sofia, Bulgaria",
+        "built": 300,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Constantine's building program raised this domed red-brick hall as part of a Roman bath complex in the early 4th century, making it the oldest standing building in Sofia today. It later hosted sessions of the Council of Serdica in 343 CE after conversion to a church. Nothing about it predates Hadrian's accession, let alone Trajan's death in 117 CE.",
+        "sources": [
+          "https://www.thebyzantinelegacy.com/rotunda-serdica",
+          "https://en.wikipedia.org/wiki/Church_of_Saint_George,_Sofia"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rotunda_Sveti_Georgi,_Sofia.jpg?width=800",
+        "image_credit": "Rotunda of St George, Sofia, part of Serdica's Roman baths · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.3219,
+          42.6969
+        ]
+      },
+      "properties": {
+        "id": "poi_thermae_stnedelya_serdica",
+        "category": "bath",
+        "name_latin": "",
+        "name_english": "Serdica Public Baths (St Nedelya Square)",
+        "province": "Thracia",
+        "modern_location": "St Nedelya Square, Sofia, Bulgaria",
+        "built": 190,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A grand thermal bath complex rose south of Serdica's agora, its hypocaust floors and a sizeable pool coming to light during 2010-2012 metro excavations beneath today's St Nedelya Square. Archaeologists date the build to the late 2nd or early 3rd century, part of the city's post-Trajanic construction surge. That places it decades after the 117 CE snapshot, even on ground Trajan's own municipium had already claimed.",
+        "sources": [
+          "https://archaeologyinbulgaria.com/2015/08/06/archaeologists-discover-massive-roman-building-from-ancient-serdica-in-bulgarias-capital-sofia/",
+          "https://visitsofia.bg/en/cityinfrastructure/what-to-see/archaeological-monuments/ancient-serdica-roman-baths-and-a-temple"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.3226,
+          42.6963
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_heracles_serdica",
+        "category": "temple",
+        "name_latin": "",
+        "name_english": "Temple of Heracles (Serdica)",
+        "province": "Thracia",
+        "modern_location": "Bulbank building site, central Sofia, Bulgaria",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A temple dedicated to Heracles once stood beneath what is now Sofia's Bulbank building, one of several cult sites excavators have traced in ancient Serdica alongside a shrine to Zeus Hypsistos. No excavation report ties its construction to a specific decade, and Serdica's other dated temples cluster in the building boom that followed Trajan's reign. Absent a confirmed date, it's treated as outside the 117 CE snapshot rather than assumed early.",
+        "sources": [
+          "https://visitsofia.bg/en/cityinfrastructure/what-to-see/archaeological-monuments/ancient-serdica-roman-baths-and-a-temple"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.0198,
+          39.7454
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_butrint",
+        "category": "theater",
+        "name_latin": "",
+        "name_english": "Theatre of Butrint",
+        "province": "Epirus",
+        "modern_location": "Butrint National Park, Albania",
+        "built": -250,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Epirote builders carved this theatre into the acropolis slope around the middle of the 3rd century BCE, and its stone seats still bear manumission inscriptions freeing slaves at the adjoining shrine as early as 163 BCE. Romans kept the building in active use through the imperial period, later tying part of its structure into the neighboring bath complex. By 117 CE it had anchored the city's festivals for nearly four centuries.",
+        "sources": [
+          "https://site.unibo.it/butrint/en/atlas-and-history/theatre",
+          "https://www.worldhistory.org/Butrint/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Teatri_i_Butrintit_ne_Shqiperi.jpg?width=800",
+        "image_credit": "Theatre of Butrint, Albania · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.0197,
+          39.7454
+        ]
+      },
+      "properties": {
+        "id": "poi_asklepieion_butrint",
+        "category": "asklepieion",
+        "name_latin": "",
+        "name_english": "Sanctuary of Asclepius, Butrint",
+        "province": "Epirus",
+        "modern_location": "Butrint National Park, Albania",
+        "built": -300,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Epirotes founded this healing sanctuary to Asclepius at the foot of the acropolis around 300 BCE, and worshippers left more than 300 votive offerings in a hidden chamber behind its rear wall. Roman colonists later rebuilt the small temple, enlarging it to the west and north and roofing it in brick-faced concrete tied into the theatre above. The cult kept drawing pilgrims well past 117 CE, its festivals filling the theatre next door.",
+        "sources": [
+          "https://site.unibo.it/butrint/en/atlas-and-history/shrine-of-asclepius",
+          "https://www.academia.edu/1364523/Roman_Butrint_the_sanctuary_of_Asclepius"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.0204,
+          39.7451
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_butrint",
+        "category": "forum",
+        "name_latin": "",
+        "name_english": "Roman Forum of Butrint",
+        "province": "Epirus",
+        "modern_location": "Butrint National Park, Albania",
+        "built": -25,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Augustus's veteran colonists paved over Butrint's Hellenistic agora to lay out this forum, a roughly 20-by-72-meter plaza — the only excavated forum known from ancient Epirus. Julius Caesar had first eyed the site for settlement in the 40s BCE, a plan Cicero's letters show his friend Atticus fought to keep off his own nearby land. By 117 CE the forum anchored a thriving colonia in the freshly created province of Epirus.",
+        "sources": [
+          "https://site.unibo.it/butrint/en/atlas-and-history/agora-and-forum",
+          "https://www.academia.edu/39967164/The_Roman_Forum_at_Butrint_Epirus_and_its_Development_from_Hellenistic_to_Mediaeval_Times"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Cicero",
+            "work": "Epistulae ad Atticum",
+            "ref": "Book 16, the \"Buthrotine dossier\" letters",
+            "note": "Cicero writes repeatedly to his friend Atticus about Atticus's estate near Buthrotum, lobbying against Julius Caesar's plan to plant a veteran colony there that threatened to confiscate Atticus's land."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.021,
+          39.746
+        ]
+      },
+      "properties": {
+        "id": "poi_walls_butrint",
+        "category": "wall",
+        "name_latin": "",
+        "name_english": "City Walls of Butrint",
+        "province": "Epirus",
+        "modern_location": "Butrint National Park, Albania",
+        "built": -350,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Epirote builders raised Butrint's fortification circuit in four distinct phases across the 4th and 3rd centuries BCE, using smoothed polygonal blocks on the acropolis and massive rectangular ashlar courses around the lower town. Archaeologists label these phases Butrint I through IV, the last dated to the 3rd century BCE. Roman colonists inherited the walls rather than rebuilding them, and the same fortifications still encircled the city when Hadrian took power in August 117 CE.",
+        "sources": [
+          "https://site.unibo.it/butrint/en/atlas-and-history/hellenistic-and-roman-walls",
+          "https://www.penn.museum/sites/expedition/decoding-butrints-fortifications/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.0201,
+          39.7449
+        ]
+      },
+      "properties": {
+        "id": "poi_baths_butrint",
+        "category": "bath",
+        "name_latin": "",
+        "name_english": "Roman Baths of Butrint",
+        "province": "Epirus",
+        "modern_location": "Butrint National Park, Albania",
+        "built": -31,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Augustus's veteran colonists built this bathhouse after 31 BCE, complete with a hypocaust-heated calidarium, a semicircular plunge pool, and a frigidarium floored in a black-and-white geometric mosaic. Underfloor pillars called pilae carried hot air from a furnace beneath the heated rooms. A further renovation in brick-faced concrete followed in the mid-2nd century CE, after this snapshot, but the original Augustan bathhouse was already decades old and in daily use when Hadrian became emperor.",
+        "sources": [
+          "https://site.unibo.it/butrint/en/atlas-and-history/roman-baths"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.023,
+          39.7395
+        ]
+      },
+      "properties": {
+        "id": "poi_aqueduct_butrint",
+        "category": "aqueduct",
+        "name_latin": "",
+        "name_english": "Aqueduct of Butrint",
+        "province": "Epirus",
+        "modern_location": "Butrint National Park, Albania",
+        "built": -31,
+        "destroyed": 425,
+        "extant_117ce": true,
+        "notes": "Augustus's colonists built this 4-kilometer aqueduct to carry spring water from near modern Xarre across the Vrina plain on an arcade and over the Vivari Channel into the city. It ran continuously for over four centuries, finally failing in the late 4th or early 5th century CE. By 117 CE it had already been feeding Butrint's new bathhouse and fountains for close to a century and a half.",
+        "sources": [
+          "https://www.researchgate.net/publication/236157709_The_aqueduct_of_Butrint"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.0212,
+          39.7443
+        ]
+      },
+      "properties": {
+        "id": "poi_nymphaeum_butrint",
+        "category": "fountain",
+        "name_latin": "",
+        "name_english": "Nymphaeum of Butrint",
+        "province": "Epirus",
+        "modern_location": "Butrint National Park, Albania",
+        "built": -31,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Where the Augustan aqueduct's arcade reached the city after crossing the Vivari Channel, engineers built this nymphaeum as both a monumental public fountain and a distribution tank feeding Butrint's water network. It marked the point where spring water piped four kilometers from the hills near Xarre finally reached the colony's streets. The structure had been supplying the city's fountains and baths for roughly a century and a half by the time Hadrian took the throne in 117 CE.",
+        "sources": [
+          "https://www.researchgate.net/publication/236157709_The_aqueduct_of_Butrint",
+          "https://www.cambridge.org/core/journals/journal-of-roman-archaeology/article/patronage-and-public-amenities-in-roman-epirus-the-well-of-junia-rufina-at-butrint/E6F059FAA7749DC76673C0F05D876D33"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.0207,
+          39.7461
+        ]
+      },
+      "properties": {
+        "id": "poi_well_junia_rufina_butrint",
+        "category": "fountain",
+        "name_latin": "",
+        "name_english": "Well of Junia Rufina",
+        "province": "Epirus",
+        "modern_location": "Butrint National Park, Albania",
+        "built": 132,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A wealthy patron named Junia Rufina transformed a natural spring near the Lion Gate into a monumental public well, dressing it in stone walls and brick arches and dedicating it with a Greek inscription calling herself \"friend of the Nymphs.\" Its brick-faced concrete matches other buildings from a citywide renewal that researchers tie to Hadrian's own tour of Epirus in 132 CE — about fifteen years after the 117 CE snapshot this map captures, so the well did not yet exist when Hadrian took the throne.",
+        "sources": [
+          "https://www.cambridge.org/core/journals/journal-of-roman-archaeology/article/patronage-and-public-amenities-in-roman-epirus-the-well-of-junia-rufina-at-butrint/E6F059FAA7749DC76673C0F05D876D33"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.0198,
+          39.7445
+        ]
+      },
+      "properties": {
+        "id": "poi_triconch_palace_butrint",
+        "category": "palace",
+        "name_latin": "",
+        "name_english": "Triconch Palace, Butrint",
+        "province": "Epirus",
+        "modern_location": "Butrint National Park, Albania",
+        "built": 400,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "This lavish waterfront mansion took its name from three shell-shaped alcoves framing a grand dining room, added when the house was rebuilt into a palatial form around 400 CE. It grew out of an ordinary Roman townhouse of the 2nd or 3rd century CE, itself centuries later than this map's 117 CE snapshot. Workers finished the roof and fitted window frames but never laid the floors, apparently abandoning the project as Butrint's lake level rose.",
+        "sources": [
+          "http://ueaeprints.uea.ac.uk/9441/",
+          "https://www.albaniatravelguide.net/butrint/triconch-palace/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2011_Butrint_19_Triconch_Palace.jpg?width=800",
+        "image_credit": "Triconch Palace, Butrint · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.2245,
+          44.734
+        ]
+      },
+      "properties": {
+        "id": "poi_amphitheatre_viminacium",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum Viminacii",
+        "name_english": "Viminacium Amphitheatre",
+        "province": "Moesia Superior",
+        "modern_location": "Viminacium Archaeological Park, Stari Kostolac, Serbia",
+        "built": 105,
+        "destroyed": 320,
+        "extant_117ce": true,
+        "notes": "Legionaries and townsfolk at Viminacium first watched games in a timber amphitheatre raised outside the fortress during Trajan's reign, its arena floor packed with sand over a 55 by 45 meter oval. Trajanic coins turned up in its earliest levels. Stone-and-timber rebuilding that folded the arena into the city walls came later, at the end of the 2nd century, well after this snapshot. Excavators found bear and camel bones from its animal hunts.",
+        "sources": [
+          "https://www.academia.edu/33467042/In_the_Beginning_There_Was_a_Timber_Construction_The_Wooden_Amphitheatre_of_Viminacium",
+          "https://www.academia.edu/16436497/Recent_Excavations_on_the_Amphitheatre_of_Viminacium_Upper_Moesia_"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amphitheater_in_Viminacium,_2018,_01.jpg?width=800",
+        "image_credit": "Amphitheatre of Viminacium, Serbia · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.2205,
+          44.7325
+        ]
+      },
+      "properties": {
+        "id": "poi_legionary_baths_viminacium",
+        "category": "bath",
+        "name_latin": "Thermae",
+        "name_english": "Viminacium Legionary Baths",
+        "province": "Moesia Superior",
+        "modern_location": "Viminacium Archaeological Park, Stari Kostolac, Serbia",
+        "built": 90,
+        "destroyed": 450,
+        "extant_117ce": true,
+        "notes": "A bathhouse stood within the canabae hugging the legionary fortress from around the time Legio VII Claudia's stone camp went up, giving soldiers a steam bath with under-floor heated pools. Excavators found lanterns proving night bathing was practiced here. The building visitors see today, with its mosaic floors and six ornamented pools, reflects later 2nd-4th century remodeling that postdates this snapshot — only its earlier military-scale core belongs to 117.",
+        "sources": [
+          "https://vici.org/vici/18385/?lang=en",
+          "https://www.livius.org/pictures/serbia/kostolac-viminacium/viminacium-military-baths/viminacium-military-baths/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.211,
+          44.727
+        ]
+      },
+      "properties": {
+        "id": "poi_necropolis_vise_grobalja_pecine_viminacium",
+        "category": "necropolis",
+        "name_latin": "Necropoles Vise Grobalja et Pecine",
+        "name_english": "Vise Grobalja and Pecine Necropolis",
+        "province": "Moesia Superior",
+        "modern_location": "South of Viminacium Archaeological Park, Stari Kostolac, Serbia",
+        "built": 60,
+        "destroyed": 450,
+        "extant_117ce": true,
+        "notes": "Two adjoining cemeteries, Vise Grobalja and Pecine, grew up along Viminacium's southern approach from the mid-1st century onward, with cremation and inhumation practiced side by side from the start. Rescue digs since 1977 have logged over 10,700 graves and 7,000 coins between the two fields alone. By 117 the necropolis had already been in continuous use for roughly six decades, filled with modest cremation urns and the first brick-vaulted family tombs.",
+        "sources": [
+          "https://www.academia.edu/36797384/COINS_OF_THE_VIMINACIUM_MINT_FROM_THE_PE%C4%86INE_NECROPOLIS_VIMINACIUM_",
+          "https://www.academia.edu/30913954/COIN_FINDS_FROM_THE_VIMINACIUM_NECROPOLIS_OF_VI%C5%A0E_GROBALJA_AND_THEIR_ROLE_IN_FUNERARY_RITUAL"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mausoleum_and_cemetery_in_Viminacium,_2018,_17.jpg?width=800",
+        "image_credit": "Necropolis at Viminacium, Serbia · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.213,
+          44.7278
+        ]
+      },
+      "properties": {
+        "id": "poi_painted_mausoleum_viminacium",
+        "category": "mausoleum",
+        "name_latin": "",
+        "name_english": "Painted Vaulted Mausoleum, Viminacium",
+        "province": "Moesia Superior",
+        "modern_location": "Viminacium Archaeological Park, Stari Kostolac, Serbia",
+        "built": 300,
+        "destroyed": 450,
+        "extant_117ce": false,
+        "notes": "The trapezoidal underground tomb visitors descend into today, its walls covered in fresco painting blending Eastern and classicizing styles, is dated by art-historical analysis to around the start of the 4th century. That places it nearly two centuries after this map's snapshot, so it does not belong on the 117 CE map despite being Viminacium's best-known burial monument. Its scale shows how much grander the necropolis became under the later empire.",
+        "sources": [
+          "https://vici.org/vici/55368/",
+          "http://viminacium.org.rs/en/arheoloski-park/mauzolej-i-grobnice/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.219,
+          44.7345
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_colonia_viminacium",
+        "category": "forum",
+        "name_latin": "Forum",
+        "name_english": "Viminacium Civic Forum",
+        "province": "Moesia Superior",
+        "modern_location": "Viminacium Archaeological Park, Stari Kostolac, Serbia",
+        "built": 118,
+        "destroyed": 450,
+        "extant_117ce": false,
+        "notes": "Geophysical survey and digging since 2020 exposed a forum with tribunal, portico and heated rooms tied to Viminacium's life as a chartered town rather than a bare legionary base. That charter, elevating Viminacium to municipium, is usually dated to 117 or 117-118 under Hadrian — but Hadrian only took the throne on 11 August 117, so a forum built to serve a fresh municipium almost certainly rose just after this map's exact snapshot moment, not before it.",
+        "sources": [
+          "http://viminacium.org.rs/en/viminacium/istorija-grada-i-legijskog-logora/",
+          "https://en.wikipedia.org/wiki/Viminacium"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.235,
+          44.746
+        ]
+      },
+      "properties": {
+        "id": "poi_river_harbor_viminacium",
+        "category": "port",
+        "name_latin": "Portus classis",
+        "name_english": "Viminacium Danube Fleet Harbor",
+        "province": "Moesia Superior",
+        "modern_location": "Confluence of the Mlava and Danube, near Stari Kostolac, Serbia",
+        "built": 90,
+        "destroyed": 450,
+        "extant_117ce": true,
+        "notes": "Viminacium sat at the meeting of the Mlava and the Danube and hosted a river fleet detachment guarding this stretch of the limes, its officer titled praefectus classis at Viminacium. Excavated warship timbers, one hull carrying a ram, ran 15 to 22 meters long. The fortress and its river squadron were already established here well before 117, giving Legio VII Claudia a working harbor at its doorstep.",
+        "sources": [
+          "http://www.danubelimes-serbia.rs/en/archaeological-sites/viminacium-stari-kostolac/",
+          "https://www.rferl.org/a/serbian-coal-miners-uncover-ancient-roman-ship/32533838.html"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8958,
+          43.3238
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_naissus",
+        "category": "fort",
+        "name_latin": "Naissus",
+        "name_english": "Roman Military Camp at Naissus",
+        "province": "Moesia Superior",
+        "modern_location": "Nis Fortress hill, Nis, Serbia",
+        "built": 80,
+        "destroyed": 615,
+        "extant_117ce": true,
+        "notes": "Roman forces occupied the Nisava valley crossing by the late 1st century CE, after subduing the Dardanian tribes, planting a fortified camp on the hill later built over by the Ottoman-era Nis Fortress. This early garrison controlled the valley long before Naissus had any civic charter, holding the junction where roads split toward the Danube, the Adriatic, and Thrace. No detailed excavated plan of this earliest Roman-period fort has been published, so its exact 117 CE footprint is inferred rather than mapped.",
+        "sources": [
+          "https://ai.ac.rs/en/7660/",
+          "https://www.academia.edu/41662212/Naissus_a_Roman_and_Early_Byzantine_city"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8983,
+          43.32
+        ]
+      },
+      "properties": {
+        "id": "poi_road_junction_naissus",
+        "category": "road",
+        "name_latin": "Via Militaris (statio Naissus)",
+        "name_english": "Naissus Road Junction",
+        "province": "Moesia Superior",
+        "modern_location": "Nis, Serbia",
+        "built": 100,
+        "destroyed": 615,
+        "extant_117ce": true,
+        "notes": "Naissus stood where roads met and split four ways: north to Viminacium and Singidunum, west toward the Adriatic, south to Thessalonica, and east through Remesiana to Serdica and beyond. The Via Militaris backbone linking these routes was substantially built up under Trajan, putting a functioning road station here by 117 even though the town itself had no city charter yet. Travelers relied on it as a stopover for lodging and remounts on the long haul between the Danube and the Balkan interior.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Via_Militaris",
+          "https://www.academia.edu/5590751/The_roman_road_Naissus_Timacum_Maius_Timacum_Minus_Conbustica_Ratiaria"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8965,
+          43.323
+        ]
+      },
+      "properties": {
+        "id": "poi_civic_core_naissus",
+        "category": "forum",
+        "name_latin": "Forum, basilica, thermae",
+        "name_english": "Naissus Civic Center and City Baths",
+        "province": "Moesia Superior",
+        "modern_location": "Nis Fortress area, Nis, Serbia",
+        "built": 170,
+        "destroyed": 450,
+        "extant_117ce": false,
+        "notes": "A 22-hectare walled civic quarter with a forum, temple, basilica and a 775 square meter city bath was uncovered in 1987-88 campaigns, but Naissus only reached municipium status under Marcus Aurelius or later, decades after this map's 117 CE moment. At the snapshot date Naissus was still a road station without this civic architecture. Its later fame as Constantine's birthplace belongs to this post-117 town, not the site as it stood in 117.",
+        "sources": [
+          "https://ai.ac.rs/en/7660/",
+          "https://www.academia.edu/41662212/Naissus_a_Roman_and_Early_Byzantine_city"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.61,
+          44.967
+        ]
+      },
+      "properties": {
+        "id": "poi_walls_sirmium",
+        "category": "wall",
+        "name_latin": "",
+        "name_english": "City Walls of Sirmium",
+        "province": "Pannonia Inferior",
+        "modern_location": "old town area, Sremska Mitrovica, Serbia",
+        "built": 89,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio XIII Gemina raised Sirmium's first rampart, a stretch of earth and timber fronted by a ditch, when the settlement won status as Colonia Flavia Sirmium under the Flavian emperors. Masons rebuilt the circuit in stone by the early 2nd century as the colony grew into the city Trajan chose as capital of Pannonia Inferior around 103. Its later Tetrarchic replacement lies to the south, encasing the 4th-century imperial palace instead.",
+        "sources": [
+          "https://ai.ac.rs/en/7729/",
+          "https://www.livius.org/articles/place/sirmium-sremska-mitrovica/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.611,
+          44.9658
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_sirmium",
+        "category": "forum",
+        "name_latin": "",
+        "name_english": "Forum of Sirmium",
+        "province": "Pannonia Inferior",
+        "modern_location": "central Sremska Mitrovica, Serbia",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Colonia Flavia Sirmium's forum anchored the young colony's civic core, its colonnades carrying Corinthian capitals carved between the Flavian decades and the early 2nd century, modeled on workshops across the Adriatic in Dalmatia. This was the square where the colony's magistrates conducted business just as Trajan was naming Sirmium capital of Pannonia Inferior around 103.",
+        "sources": [
+          "https://www.researchgate.net/publication/275676603_Roman_capitals_from_Sirmium_Sremska_Mitrovica_Serbia",
+          "https://ai.ac.rs/en/7729/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.6085,
+          44.9675
+        ]
+      },
+      "properties": {
+        "id": "poi_beneficiarii_station_sirmium",
+        "category": "sanctuary",
+        "name_latin": "Statio Beneficiariorum Consularis",
+        "name_english": "Beneficiarii Station and Shrine of Jupiter, Sirmium",
+        "province": "Pannonia Inferior",
+        "modern_location": "northwestern rampart area, Sremska Mitrovica, Serbia",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Beneficiarii consulares, soldiers detached to staff a road checkpoint outside Sirmium, dedicated stone altars to Jupiter Optimus Maximus at a shrine along the city's northwestern rampart. More than eighty such altars have been recovered from the site, the earliest limestone examples carved around 100 CE. The station was already active when Trajan made Sirmium capital of Pannonia Inferior, and officers kept adding altars there for over a century afterward.",
+        "sources": [
+          "https://www.academia.edu/46493166/Stone_use_in_Roman_towns_Resources_transport_products_and_clients_Case_study_Sirmium_Second_report"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.616,
+          44.965
+        ]
+      },
+      "properties": {
+        "id": "poi_necropolis_sirmium",
+        "category": "necropolis",
+        "name_latin": "",
+        "name_english": "Eastern and Western Necropoleis of Sirmium",
+        "province": "Pannonia Inferior",
+        "modern_location": "outskirts of Sremska Mitrovica, Serbia",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Two large cemeteries flanked Colonia Flavia Sirmium outside its walls, holding family tombs of ordinary colonists rather than soldiers. Cremation was the standard rite through the 2nd century, before inhumation gradually replaced it from the later 3rd century on. These burial grounds were already in active use when Trajan elevated Sirmium to capital of Pannonia Inferior, decades before the city's famous Tetrarchic-era Christian basilica cemeteries developed nearby.",
+        "sources": [
+          "https://ai.ac.rs/en/7729/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.61,
+          44.963
+        ]
+      },
+      "properties": {
+        "id": "poi_harbor_sirmium",
+        "category": "port",
+        "name_latin": "",
+        "name_english": "River Harbor and Fleet Station on the Sava",
+        "province": "Pannonia Inferior",
+        "modern_location": "Sava riverbank, Sremska Mitrovica, Serbia",
+        "built": 70,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Sirmium's landings on the Sava served the Classis Flavia Pannonica, the river fleet that patrolled the waterway 45 Roman miles downstream to its Danube junction at Taurunum. Pliny the Elder recorded Sirmium as capital of the Sirmienses and Amantini beside the confluence of the Bacuntius and Sava. The harbor's position where roads from Italy, Dalmatia, and the Danube frontier converged was a central reason Trajan chose Sirmium as capital of Pannonia Inferior in 103.",
+        "sources": [
+          "https://www.attalus.org/translate/pliny_hn3b.html",
+          "https://en.wikipedia.org/wiki/Classis_Pannonica"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "3.148",
+            "note": "Lists Sirmium as the town of the Sirmienses and Amantini near the confluence of the Bacuntius and Sava rivers, 45 miles upstream from Taurunum where the Sava meets the Danube."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.487,
+          43.5398
+        ]
+      },
+      "properties": {
+        "id": "poi_urbs_vetus_walls_salona",
+        "category": "wall",
+        "name_latin": "",
+        "name_english": "City Walls of Salona (Urbs Vetus)",
+        "province": "Dalmatia",
+        "modern_location": "Solin, Croatia, around Porta Caesarea, Salona archaeological park",
+        "built": -150,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Massive limestone blocks ringed Salona's old town, the urbs vetus, by the 2nd century BCE, long before Rome made the city a colony. In 47 BCE the walls proved their worth: defenders posed wives and children atop the ramparts to fake round-the-clock watch, then broke a Pompeian siege under Marcus Octavius in a single sortie. Stretches of that original circuit still framed the eastern gate in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Salona",
+          "https://en.wikipedia.org/wiki/Siege_of_Salona"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Hirtius (attrib.)",
+            "work": "Bellum Alexandrinum",
+            "ref": "42-47",
+            "note": "Describes the 47 BCE siege of Salona by the Pompeian commander Marcus Octavius, repelled by the town's Caesarian defenders using its walls and a coordinated night sortie."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.487,
+          43.5395
+        ]
+      },
+      "properties": {
+        "id": "poi_porta_caesarea_salona",
+        "category": "wall",
+        "name_latin": "Porta Caesarea",
+        "name_english": "Porta Caesarea, Salona",
+        "province": "Dalmatia",
+        "modern_location": "Solin, Croatia, eastern edge of the Salona archaeological park",
+        "built": 10,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Augustus's engineers raised this gateway in large opus quadratum limestone blocks in the last years of his reign, giving Salona a ceremonial threshold into its old town. Two octagonal towers flanked a wide central carriageway plus two side passages for pedestrians. It stood in exactly this form in 117 CE, a full century before any later aqueduct piping was routed across its top.",
+        "sources": [
+          "https://imperiumromanum.pl/en/curiosities/porta-caesarea-in-salona-monumental-gate-of-roman-metropolis-of-dalmatia/amp/",
+          "https://www.alaturka.info/en/croatia/split/2948-porta-caesarea-a-city-gate-of-salona"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porta_Caesarea_(Salona).jpg?width=800",
+        "image_credit": "Porta Caesarea, Salona, Croatia · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.489,
+          43.5385
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_salona",
+        "category": "forum",
+        "name_latin": "",
+        "name_english": "Forum of Salona",
+        "province": "Dalmatia",
+        "modern_location": "Solin, Croatia, Salona archaeological park",
+        "built": -5,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Salona's forum measured 45 by 70 meters and rose as the city was promoted to Roman colony and capital of Dalmatia around the turn of the millennium. It anchored civic life here for four centuries straight, housing magistrates, temples and market stalls for the fastest-growing city on the eastern Adriatic. By 117 CE it had already served Dalmatia's governors for more than a century.",
+        "sources": [
+          "https://www.croatiatraveller.com/central%20dalmatia/Solin.htm"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "3.141-142",
+            "note": "Names Salona as the seat of a conventus (judicial assize) for the Delmatae, whose fighting men were organized into 342 decuriae, underscoring the city's role as an administrative hub centered on its forum."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.4895,
+          43.538
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_salona",
+        "category": "theater",
+        "name_latin": "",
+        "name_english": "Theatre of Salona",
+        "province": "Dalmatia",
+        "modern_location": "Solin, Croatia, Salona archaeological park",
+        "built": 10,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Salona's theatre measured 65 by 58 meters and seated around 3,500 spectators on stone benches near the forum. It went up in the decades after Augustus elevated the city to colonial status, giving Roman drama and pantomime a permanent home in Dalmatia's new capital. Danish excavators mapped its plan in the 1920s, confirming an early Imperial build well predating the city's amphitheatre.",
+        "sources": [
+          "https://www.croatiatraveller.com/central%20dalmatia/Solin.htm",
+          "https://www.romeartlover.it/Salona.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.515,
+          43.521
+        ]
+      },
+      "properties": {
+        "id": "poi_aqueduct_salona",
+        "category": "aqueduct",
+        "name_latin": "",
+        "name_english": "Aqueduct of Salona",
+        "province": "Dalmatia",
+        "modern_location": "Vrilo Jadra spring near Klis, Croatia, running to Salona",
+        "built": -15,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Augustus's engineers channeled the Jadro spring's karst water 3,850 meters downhill to Salona, sizing the line for a city of just 15 hectares. Two centuries later the same channel was still watering a metropolis nearly five times that size, before Avar and Slav raiders finally silenced it in the 7th century. In 117 CE the line had already run without a major rebuild for roughly a century.",
+        "sources": [
+          "https://iwaponline.com/ws/article/17/4/929/14946/The-aqueduct-of-the-Roman-town-Salona-Croatia",
+          "http://www.romanaqueducts.info/aquasite/salona/index.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aqueduct_of_Salona.JPG?width=800",
+        "image_credit": "Aqueduct of Salona, Croatia · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.474,
+          43.5385
+        ]
+      },
+      "properties": {
+        "id": "poi_amphitheatre_salona",
+        "category": "amphitheater",
+        "name_latin": "",
+        "name_english": "Amphitheatre of Salona",
+        "province": "Dalmatia",
+        "modern_location": "Solin, Croatia, northwestern end of the Salona archaeological park",
+        "built": 170,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Salona's amphitheatre rose only in the second half of the 2nd century, around 170 CE, roughly half a century after our snapshot date. Set partly into the hillside, its elliptical arena measured about 65 by 40 meters and the auditorium held some 17,000 spectators, folded directly into the city's fortifications. A visitor to Salona in 117 CE would have crossed open ground here, decades before construction began.",
+        "sources": [
+          "https://followinghadrian.com/2014/02/11/photoset-the-roman-amphitheatre-of-salona-croatia/",
+          "https://imperiumromanum.pl/en/curiosities/roman-amphitheater-in-salona/amp/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Salona_amphitheater.jpg?width=800",
+        "image_credit": "Amphitheatre of Salona, Croatia · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.492,
+          43.539
+        ]
+      },
+      "properties": {
+        "id": "poi_great_thermae_salona",
+        "category": "bath",
+        "name_latin": "",
+        "name_english": "Great Thermae of Salona",
+        "province": "Dalmatia",
+        "modern_location": "Solin, Croatia, eastern quarter of the Salona archaeological park",
+        "built": 190,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Salona's largest public baths, the Great Thermae, rose in the eastern quarter no earlier than the late 2nd century, decades after our 117 CE snapshot. The finished complex packed three separate frigidaria plus a caldarium, tepidarium and a massage room called the unctorium into one riverside block. A visitor touring Salona in 117 CE would have found this entire stretch of the city still undeveloped ground.",
+        "sources": [
+          "https://www.roamintheempire.com/index.php/2025/11/26/salona-part-ii/",
+          "https://en.wikipedia.org/wiki/Salona"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.463,
+          43.523
+        ]
+      },
+      "properties": {
+        "id": "poi_mostine_villa_split",
+        "category": "villa",
+        "name_latin": "",
+        "name_english": "Mostine Villa Rustica",
+        "province": "Dalmatia",
+        "modern_location": "Mostine district, Split, Croatia, near Solinska cesta, toward Salona",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Excavators working ahead of a shopping-center expansion at Mostine, on Split's edge toward Salona, uncovered a 2,000-square-meter villa rustica with stone walls still standing 1.5 meters high. Stone channels, a cistern and an oil press mark it as a working farm that shipped olive oil to Salona, just a few kilometers away. Archaeologists trace its founding to as early as the 1st century CE, making it the strongest documented Roman presence on the Split site nearly two centuries before Diocletian's palace.",
+        "sources": [
+          "https://www.croatiaweek.com/roman-complex-discovered-split-mostine/",
+          "https://www.artnews.com/art-news/news/ancient-roman-estate-found-near-shopping-mall-croatia-1234785028/"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
