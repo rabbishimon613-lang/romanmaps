@@ -7,6 +7,140 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 67 — 2026-08-27 (this shift's own prompt claimed "Shift 4 of four")
+
+Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
+count per every prior shift's own precedent (see Shift 66's note directly below).
+
+### Git state at session start
+
+`HEAD` was detached at `26214a2` (shift 66's last commit), local `main` was 10 commits stale
+(shift 56). `git fetch origin main` confirmed `origin/main` matched detached `HEAD` exactly —
+same recurring, harmless symptom every recent shift has documented. Fixed with `git checkout -B
+main origin/main`, no destructive action, nothing lost.
+
+### Board check
+
+Reviewed `BOARD.md`. Same standing P0s recent shifts have found too large for one unattended
+session (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild,
+`[02-P0-1]` terrain, `[02-P0-4]` self-host-glyphs, `[13-P0-2]` image-audit), plus the two
+explicitly human-blocked tickets (`[15-P0-1]`, `[14-P0-1]`). One genuinely single-session P0 was
+open and unclaimed: `[08-P0-1]` `palaeo-coasts` (ancient coastline patches for 12 locations) —
+claimed it, see Track B below. `FEATURE_BACKLOG.md`'s own note pointed at axis 9f (sexuality/
+gender geography) as the last open sub-axis of daily life patterns, closing out axis 9 fully.
+`[09-P1-4]` epigraphy's own batch 6 note flagged a clean, well-scoped follow-up (8 unresearched
+North Africa sites) — took that as the third work item rather than opening a fresh axis, per the
+board's "prefer a ticket over an axis" guidance.
+
+Dispatched three parallel background WebSearch research agents at the start of the shift (axis
+9f content, epigraphy batch 7, palaeo-coasts geography) so all three research tracks ran
+concurrently instead of serially — all three returned real, cross-checked findings; none came
+back empty.
+
+### Track A — Axis 9f: gender & sexuality geography (closes axis 9, all 6 sub-axes now done)
+
+New `public/data/gender_sexuality_geography.geojson`, 6 point features, wired as Phase 36 in
+`Map.tsx` (circle-point layer, same visual family as Phase 12 imperial cult) and a new
+`gender-sexuality` group in `app/useLayers.ts` (defaults OFF, filed under the "Belief" thematic
+room alongside imperial cult and religions). Covers every named candidate in the brief's own
+9f list: the Lupanar of Pompeii (brothel, buried 79 CE — pinned per the project's own
+destroyed-before-117 convention), Baiae's resort reputation (Seneca, *Epistulae* 51, "a vortex
+of luxury"), the Temple of the Vestals, the Temple of Isis at Pompeii (one of the few cults
+giving women formal priestly authority equal to men's — also buried 79 CE), and the Galli of
+Cybele at both ends of the cult's geography — the Palatine temple in Rome and the sanctuary at
+Pessinus, the cult's original Phrygian home. One candidate the brief also named (a documented
+site for the *ius trium liberorum* legal privilege) was researched and deliberately dropped —
+it's attested through scattered individual inscriptions across the empire with no single
+well-attested physical site, and forcing one would have meant guessing.
+
+Treated the brief's own "treat carefully — informational, no crude language, social-history
+framing" instruction as load-bearing, not decorative: every `one_line` field stays at
+museum-label register (concrete historical facts — what the Vestals' vow entailed, how the
+Galli's initiation worked, why Baiae had its reputation — with zero graphic description and no
+innuendo), matching the same Google-Business voice rule (past tense, one concrete number, one
+arresting detail, one 117 CE anchor, no hedge words) every other axis file follows. One image
+left `null` on review (`gender_galli_palatine`) rather than risk a wrong file — search kept
+surfacing a same-named but unrelated Cybele temple in Balchik, Bulgaria, and no confident
+Palatine-specific match came back.
+
+Verified live: `npm run validate` clean (0 new warnings), `npx tsc --noEmit` clean, `npm run
+build` clean (1115 static pages). Playwright confirmed the layer is genuinely lazy (absent from
+`map.getSource()` until the Layers-panel group is switched on, then loads all 6 features), and
+screenshotted correctly at 1280×900 light and 375×812 dark with no chrome regression.
+
+### Track A — `[09-P1-4]` epigraphy batch 7 (standing task)
+
+Closed out batch 6's own explicit follow-up: the 8 North Africa sites (Leptis Magna, Sabratha,
+Carthage, Bulla Regia, Dougga, Theveste, Thuburbo Maius, Sufetula) its research agent ran out of
+WebSearch budget on after only 8 of 26 candidates. 6 real citations merged into `pois.geojson`'s
+`ancient_sources[]` via `scripts/patch-poi-field.mjs`: Dougga's Capitol (CIL VIII 26609) and
+Forum (ILAfr 558, the city's earliest dated inscription, c. 36-37 CE); Bulla Regia's Memmian
+Baths (ILAfr 454) and Temple of Isis (AE 2005, 1690 — a later votive addition, flagged as such
+rather than misread as the founding text); Theveste's Arch of Caracalla (CIL VIII.1 7094-7098);
+Leptis Magna's Hadrianic Baths (IRT 361). Full research and rejection accounting in `BOARD.md`'s
+own ticket note — the headline finding worth repeating here: batch 6's own flagged lead, Leptis's
+Arch of Septimius Severus, turned out to have **no complete surviving dedicatory inscription** at
+all per scholarly consensus, and Sabratha's Capitolium hit the exact wrong-building trap this
+project has been burned by before (its known inscriptions are later debris dumped in the ruined
+vaults, not text about the building itself). `pois.geojson`: 315 → 321 of 1015 POIs now carry
+`ancient_sources` (31.0% → 31.6%). `npm run validate` clean; diff scoped to exactly the 6 patched
+records (verified via `git diff --stat` before committing).
+
+### Track B — `[08-P0-1]` palaeo-coasts
+
+Claimed via the board protocol before starting (commit-only-BOARD.md, push, then work). Extended
+`public/data/ancient_sea.geojson` — previously one patch (Ostia/Portus, from an earlier shift) —
+with 11 more "ancient sea/lake drawn over now-dry modern land" polygons: Ravenna's lagoon
+(Po-delta silting, now ~9km inland), Ephesus and Miletus harbors (Kraft/Bruckner geoarchaeology —
+the best-documented cases of the eleven), Priene (already mostly silted by Strabo's own time,
+~100 years before this map's snapshot — deliberately the smallest patch), a separate Latmian Gulf
+remnant near modern Lake Bafa, the Scamander plain at Troy (most silting predates Rome —
+conservative patch), the Rhine-Meuse delta (a MultiPolygon: Lacus Flevo, now the reclaimed
+Flevoland province, plus the Helinium estuary mouth, now the Hoeksche Waard/Goeree-Overflakkee
+islands), the Fens (still wild wetland in 117 CE — real large-scale reclamation is 17th-century
+Vermuyden, centuries after the snapshot, despite the genuine Roman-era Fen Causeway and Car
+Dyke), Romney Marsh (caught and corrected a real research near-miss: the "Rhee Wall" sometimes
+attributed to Rome is actually 13th-century), Lake Fucinus (Claudius's 52 CE drainage tunnel
+silted and largely failed within decades — by 117 CE the lake had substantially reflooded, not
+the dry farmland only the 1862-1875 Torlonia drainage produced), and Lake Copais (Strabo, writing
+~20 CE, describes it as still a real, seasonally fluctuating lake — no evidence of Roman-period
+draining).
+
+No new layer wiring was needed — this file already loads eagerly as part of the base map style
+(basemap-grade coastline geography, invariant-0-exempt, not a thematic overlay someone has to
+switch on), so extending it was a pure data change. Every patch is, like the pre-existing one, an
+**approximate reconstruction** — schematic polygons from landmark-relative bounding descriptions,
+not survey data — and several (Priene, Scamander, Fucinus, Copais) are explicitly flagged in
+their own `note` field as resting on thinner evidence and sized conservatively rather than padded
+to look more precise than the sources support. Verified live: `map.getSource('ancient-sea')`
+reports all 12 features present on a cold page load; screenshots confirm the Ephesus/Miletus/
+Priene/Latmian-Gulf patches render as the expected blue fill over the tan land polygon in the
+correct relative positions. `npm run validate` clean.
+
+### What's next
+
+- Axis 9 (daily life patterns) is now fully complete against the brief's own six sub-axes (9a
+  housing, 9b cuisine, 9c clothing, 9d spectacle, 9e death ritual, 9f gender/sexuality — new this
+  shift). A future shift wanting more from this axis would need to deepen an existing sub-axis
+  rather than open a new one.
+- `[09-P1-4]` epigraphy remains a standing task. Two concrete leads for a fresh-budget batch 8:
+  Thuburbo Maius's Palaestra of the Petronii and Carthage's Antonine Baths both have real,
+  quotable inscription text already found but no confirmed corpus catalog number — a targeted
+  CIL VIII/Clauss-Slaby concordance lookup (not reachable from this sandbox's blocked egress)
+  would likely close both fast. Sufetula and Carthage got the thinnest research depth this batch
+  and are the best candidates for a wider fresh pass.
+- `[08-P0-1]` palaeo-coasts is now closed against its own named 12-location list. A future pass
+  could tighten precision using the Vos & de Vries "Atlas of the Holocene Netherlands" (almost
+  certainly has an exact Roman-period shoreline GIS layer for the Rhine-Meuse delta that this
+  shift's text-only research couldn't pull coordinates from) or reconsider whether Priene/
+  Scamander are worth keeping as separate patches at all, given how little open water genuinely
+  remained at either by 117 CE.
+- Same standing flags every recent shift has repeated: axis 1 (cities) is fully closed against
+  the brief's regional queue; Overpass/Wikipedia/Commons/academic-paper direct fetch is blocked
+  at the network level in this cloud sandbox (WebSearch still works and is how every research
+  batch this shift ran got its sourcing); the board's remaining P0s are all multi-session lifts,
+  not one-shift tickets.
+
 ## Shift 66 — 2026-08-27 (this shift's own prompt claimed "Shift 3 of four")
 
 Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential

@@ -821,10 +821,13 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       likely resolve at least `poi_volubilis_house_of_venus`/`_city_walls` (well-documented site,
       just no confirmable filename via snippets alone) and a few of the unresolved Leptis Magna
       monuments. Worth lifting for a future session if the environment allows it.
-- [ ] **Axis 9 (daily life patterns) is now 5 of 6 sub-axes done** — only **9f (sexuality/gender
-      geography)** remains, and the brief's own text flags it explicitly for careful, informational,
-      non-crude, social-history-framed treatment. A deliberate pick for a future shift, not a fast
-      one.
+- [x] **Axis 9 (daily life patterns) is now complete, all 6 of 6 sub-axes done** — 9f (sexuality/
+      gender geography) closed 2026-08-27 by cloud shift 67: new `public/data/
+      gender_sexuality_geography.geojson`, 6 points (Lupanar of Pompeii, Baiae's resort
+      reputation, Temple of the Vestals, Temple of Isis at Pompeii, and the Galli of Cybele at
+      both Rome and Pessinus), museum-label register throughout per the brief's own "treat
+      carefully" instruction. A future shift wanting more from axis 9 would need to deepen an
+      existing sub-axis, not open a new one.
 
 ## Shipped (moved from above; newest on top)
 

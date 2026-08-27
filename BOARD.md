@@ -745,9 +745,39 @@ to prevent. Building locally to *test* your own work is expected and fine.
       the correct light/dark token — the two `LIGHT`/`DARK` palette *definitions* themselves
       (lines 46, 56) are the only remaining literal `#f4ead5`, as they should be. `npx tsc
       --noEmit` and `npm run build` both clean.
-- [~] `[08-P0-1]` **`palaeo-coasts`** `fix` — claimed by cloud shift 67, 2026-08-27 18:13 —
-      Ancient coastline patches for Ostia/Portus, Ravenna, Ephesus, Miletus, Priene,
-      Rhine–Meuse, the Fens, Romney Marsh, Maeander, Scamander, Lake Fucinus, Lake Copais.
+- [x] `[08-P0-1]` **`palaeo-coasts`** `fix` — Done 2026-08-27 by cloud shift 67. Extended
+      `public/data/ancient_sea.geojson` (previously one patch, Ostia/Portus) with 11 more
+      "ancient sea/lake over now-dry modern land" polygons, same file, same rendering path — no
+      new layer wiring needed, since this file already loads eagerly as part of the base map
+      (invariant-0-exempt, basemap-grade geography, not a thematic overlay). Researched via a
+      background WebSearch agent (direct Wikipedia/Commons/academic-paper fetch blocked in this
+      sandbox, as usual): Ravenna (Po-delta silting, lagoon city now ~9km inland), Ephesus and
+      Miletus (Kraft/Bruckner geoarchaeology — the best-documented cases of the eleven), Priene
+      (already mostly silted by Strabo's time, ~100 years before the snapshot — deliberately the
+      smallest patch), a separate Latmian Gulf remnant near modern Lake Bafa, Scamander plain at
+      Troy (most silting predates Rome — conservative patch), Rhine-Meuse delta (a MultiPolygon:
+      Lacus Flevo, now reclaimed Flevoland province, plus the Helinium estuary mouth, now the
+      Hoeksche Waard/Goeree-Overflakkee islands), the Fens (still wild wetland in 117 CE despite
+      the Roman-era Fen Causeway and Car Dyke — real reclamation is 17th-century Vermuyden),
+      Romney Marsh (real nuance caught and corrected: the "Rhee Wall" sometimes attributed to
+      Rome is actually 13th-century, not Roman — the Roman fort at Lympne sat directly on the
+      Trajanic-era shore, now ~5km inland), Lake Fucinus (Claudius's 52 CE drainage tunnel
+      silted and largely failed within decades, so by 117 CE the lake had substantially
+      reflooded — not the dry farmland only the 1862-1875 Torlonia drainage produced), and Lake
+      Copais (Strabo, writing ~20 CE, describes it as still a real, seasonally fluctuating lake;
+      no evidence of Roman-period draining — modern drainage is 1880s-1930s). Every patch's
+      `note` field cites its real sources inline, matching the existing Ostia/Portus entry's own
+      established convention for this one file (a technical geographic caption, not narrative
+      POI prose — the "no inline citations" voice rule governs `pois.geojson`-style fields, and
+      this file already departed from that for its one pre-existing feature). All twelve patches
+      are, like the original, **approximate reconstructions** — schematic polygons built from
+      landmark-relative bounding descriptions, not survey data; several (Priene, Scamander,
+      Fucinus, Copais) are explicitly flagged in their own note as thin/fuzzy evidence and sized
+      conservatively rather than padded to look more precise than the sources support. `npm run
+      validate` clean (no new warnings). Verified live: `map.getSource('ancient-sea')` reports
+      all 12 features loaded on cold page load (this file is not gated behind the Layers panel);
+      screenshots at 1280×900 confirm the Ephesus/Miletus/Priene/Latmian-Gulf patches render as
+      the expected blue "sea" fill over the tan land polygon, in the correct relative positions.
 - [x] `[08-P0-3]` **`province-provenance`** `verify` — Done 2026-08-23 by cloud shift 51.
       All 43 `app/provinces.ts` entries now carry a structured `establishedYear` (negative = BCE,
       null for Italia/Numidia which never became formal provinces) and an `establishedNote`,
@@ -933,6 +963,32 @@ to prevent. Building locally to *test* your own work is expected and fine.
       caught in the apply-and-verify step (`grep -c` before/after didn't match the expected count)
       and patched those six by direct array-replacement instead. `pois.geojson`: 286 → 315 of 1015
       POIs now carry `ancient_sources` (28.2% → 31.0%).*
+      *Batch 7 done 2026-08-27 by cloud shift 67: closed out batch 6's own explicit follow-up —
+      the 8 North Africa sites its research agent ran out of budget on (Leptis Magna, Sabratha,
+      Carthage, Bulla Regia, Dougga, Theveste, Thuburbo Maius, Sufetula). A fresh background
+      WebSearch agent pulled the real remaining-open POI list from `pois.geojson` first (several
+      "known building names" the ticket itself listed, like Leptis's Old Basilica and Curia,
+      turn out not to be POIs in this dataset at all), then researched only the genuinely-open
+      records. 6 real citations merged: Dougga's Capitol (CIL VIII 26609, a 166-167 CE honorary
+      base — postdates 117 but matches the POI's own `built:166`) and Forum (ILAfr 558, Thugga's
+      earliest dated inscription, c. 36-37 CE); Bulla Regia's Memmian Baths (ILAfr 454) and
+      Temple of Isis (AE 2005, 1690, a later votive altar inside the earlier temple — flagged as
+      such rather than misread as the foundation text); Theveste's Arch of Caracalla (CIL VIII.1
+      7094-7098); Leptis Magna's Hadrianic Baths (IRT 361, correcting a search-synthesis error
+      that had mislabeled Hadrian's regnal year as 137 CE instead of the correct c.127-128 CE).
+      Explicitly researched and rejected rather than silently skipped: batch 6's own flagged
+      lead, Leptis's Arch of Septimius Severus, turned out to have **no complete surviving
+      dedicatory inscription** per scholarly consensus — only fragmentary, unplaced words;
+      Sabratha's Capitolium was the exact wrong-building trap this ticket has hit before — its
+      known inscriptions are later debris dumped in the ruined vaults after a 4th-century
+      disaster, not text about the Capitolium itself. Dougga's Temple of Saturn deliberately did
+      NOT get the Postumius Chius text, even though it names "a temple of Saturn" — that POI's
+      `built:195` is the later Severan-period monumentalized temple, a different physical
+      building from the shrine the Tiberian-era inscription describes. Sabratha, Carthage,
+      Thuburbo Maius and Sufetula still returned nothing usable (2 near-misses flagged for a
+      future fresh-budget pass: Thuburbo's Palaestra of the Petronii and Carthage's Antonine
+      Baths both have real, quotable text but no confirmed corpus number). `pois.geojson`: 315 →
+      321 of 1015 POIs now carry `ancient_sources` (31.0% → 31.6%).*
 - [x] `[09-P1-5]` **`clear-unverified`** `verify` — Done 2026-08-23 by cloud shift 51. Checked all
       5 flagged citations against their primary text via WebSearch. Three already had
       `ancient_sources` and check out accurate as written — Domus Flavia's Statius, *Silvae* 4.2
