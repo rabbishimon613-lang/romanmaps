@@ -147,9 +147,17 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
   (Termessos)` (~28 files) remains the closest to resolved — a session with working `WebFetch` to
   `commons.wikimedia.org` (or a different sandbox) should be able to open the category page
   directly and pick one filename, which every WebSearch-only attempt so far has failed to surface.
-  **Iasos, Knidos and Alinda are still fully unresearched** — no feature exists for any of them yet,
-  same "never actually committed" gap the rest of this note's history describes. Rhodes, Assos and
-  Thera were closed by earlier shifts.
+  **Update, 2026-08-27, cloud shift 65**: Iasos and Knidos are now real `sports.geojson` features
+  (36 → 38), both well-corroborated by independent sources (Iasos: Roman-period inscriptions naming
+  ephebes/gymnasiarchs; Knidos: identified by C.T. Newton's 1857-58 excavation from an on-site
+  inscription). **Alinda deliberately stayed unadded** — the one research pass found no primary
+  source confirming a gymnasium building exists there at all (the site's well-documented structures
+  are its walls, theatre, and three-story Hellenistic market/agora); a Turkish-language aggregator
+  snippet mentioned "gymnasium" among the site's features but couldn't be traced to a citable source,
+  so this stays open rather than guessed. None of the three got an image — the search-tool budget
+  ran out before any image-filename search could run, same as Part 2 below, which also went
+  completely unattempted this round. Termessos's `Category:Gymnasium (Termessos)` (~28 files) is
+  still the closest lead for a future pass with search budget to spare.
 - [ ] **The detached-HEAD-behind-stale-main git symptom is now confirmed on 6 consecutive shifts (9 through 14).** Every shift independently rediscovers and fixes it (`git fetch origin main` + `git checkout main && git reset --hard origin/main` when a plain ff-only merge refuses due to unrelated histories). The fix is solid and well-documented in SHIFT_LOG.md at this point, but it's still costing real per-shift time — worth whoever administers these scheduled cloud sessions actually looking at why each fresh container starts with a stale local `main` pointer, rather than relying on tribal knowledge that doesn't carry across sessions.
 - [ ] **JSON file re-indentation noise.** This shift's programmatic splice-and-rewrite of `pois.geojson` and `sports.geojson` (via Python's `json.dump(..., indent=1)`) reformatted the entire file from the original 2-space indent to 1-space, inflating the git diff for those commits even though every pre-existing feature's content is byte-identical (verified before committing). Not a data problem, just diff noise — match the original file's indent width if editing these files programmatically again.
 

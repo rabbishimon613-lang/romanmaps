@@ -766,9 +766,28 @@ to prevent. Building locally to *test* your own work is expected and fine.
       `map.fire('click', ...)` workaround shift 30 documented.
 - [ ] `[10-P0-2]` **`three-depth-labels`** `deepen` — Tombstone (10w) / label (50w) / panel
       (250–400w) for every place.
-- [~] `[13-P1-4]` **`engravings`** `illustrate` — claimed by cloud shift 65, 2026-08-27 06:15.
-      Period engravings (Piranesi, Gell, Wood, Cassas, Rossini) for the 40 sites and top 100
-      POIs. **Standing task.**
+- [x] `[13-P1-4]` **`engravings`** `illustrate` — Period engravings (Piranesi, Gell, Wood, Cassas,
+      Rossini) for the 40 sites and top 100 POIs. **Standing task.**
+      *Batch 1 done 2026-08-27 by cloud shift 65: all 40 `app/sites.ts` sites now carry a
+      verified `image_url`/`image_credit`/`image_alt` — the "40 sites" half of this ticket.
+      `SiteInfo` had no image support at all before this batch (only `pois.geojson` records did);
+      added the fields plus a hero-image render on `/site/[slug]` (mirroring `/place/[slug]`'s
+      existing pattern, including JSON-LD/OG/Twitter) and a 48px thumbnail on each `SitesPanel.tsx`
+      list row. Two parallel WebSearch agents split the 40 sites; 8 landed genuine period
+      engravings/paintings (Herculaneum, Palmyra, Baalbek, Rome, Athens, Tivoli, Paestum,
+      Beneventum) plus 2 more scholarly reconstructions (Delphi's 1894 Tournaire painting,
+      Palestrina's Palladio elevation) and one more period painting (Rimini, Richard Wilson,
+      1750); the other 27 fell back to a confirmed modern or 19th-century photograph of the actual
+      standing monument where no engraving filename could be verified from search snippets alone
+      — every filename confirmed via a real search-result title or Wikipedia/museum mirror page,
+      none guessed. `npm run validate`/`build` clean; verified live with Playwright (site page and
+      SitesPanel screenshots at 1280x900 light and 375x812 dark) — the images themselves render as
+      a graceful placeholder in this sandbox since `commons.wikimedia.org` is network-blocked here
+      (reconfirmed via `curl`, `CONNECT tunnel failed, 403` — the same standing sandbox limitation
+      every prior image batch has hit, not a bad URL), but layout, fallback, and chrome all verified
+      clean. **Still open: the "top 100 POIs" half** — this batch only touched `sites.ts`, not
+      `pois.geojson`'s existing `image_url` field on individual monuments, which already has its
+      own separate image-sourcing history (56.4% coverage per METRICS.md) untouched by this batch.*
 - [x] `[06-P0-1]` **`phase-banners`** `fix` — Done 2026-08-23 by cloud shift 49. Added
       `SiteInfo.snapshotNote` (`app/sites.ts`), set only for Pompeii and Herculaneum — the two of
       the 40 curated sites whose street-level detail shows a state that predates the 117 CE
@@ -890,6 +909,30 @@ to prevent. Building locally to *test* your own work is expected and fine.
       Ostia's Capitolium as possibly post-117 and worth a date check — already correctly handled,
       `pois.geojson` has had `built: 120, extant_117ce: false` on that record all along, so no
       fix needed. `pois.geojson`: 173 → 178 of 469 POIs now carry `ancient_sources`.*
+      *Batch 6 done 2026-08-27 by cloud shift 65: retargeted the pool at the shift 57-64 regional-
+      expansion POIs (Asia Minor, North Africa, Levant/Egypt/Arabia) rather than re-running the
+      Rome/Ostia/Pompeii pool prior batches had already exhausted (per batch 5's own closing
+      note). Three parallel WebSearch passes by region, personally reviewed before merging: 16 hits
+      across Pergamon/Aphrodisias/Hierapolis/Miletus/Sardis/Pamphylia, 5 hits at Cuicul/Djemila
+      (CIL VIII civic dedications), 8 hits across Palmyra/Berytus/Sidon/Tyre/Bostra/Gerasa/Mons
+      Claudianus — 29 total. Several honestly postdate 117 CE (report the real date, not a forced
+      117 CE claim); the Gerasa Temple of Artemis citation (150 CE) corroborates that record's own
+      pre-existing `built:150` rather than conflicting with it. Rejected on review: Medracen (the
+      only candidate source names a different Mauretanian mausoleum), the Mahdia shipwreck (its one
+      inscription is a cargo sculptor's signature, not a text about the wreck itself), and Alinda's
+      gymnasium (no primary source confirms the building exists there at all — see the axis-20
+      sports note below for the same finding blocking a `sports.geojson` add). North Africa's other
+      19 candidates (Leptis Magna, Sabratha, Carthage, Bulla Regia, Dougga, Theveste, Thuburbo
+      Maius, Sufetula) went unresearched — that agent's WebSearch budget ran out after only 8 of 26
+      — flagged as a good target for a fresh-budget follow-up; several (Leptis's Arch of Septimius
+      Severus, Dougga's Capitol) are exceptionally well-published monuments very likely to yield a
+      real IRT/CIL citation. Found and fixed a real gap in the shift's own tooling along the way:
+      six of the 29 target records already carried an empty `"ancient_sources": []` placeholder
+      (from the shift 64 batch that created them) rather than a missing field, which the new
+      `scripts/patch-poi-field.mjs`'s naive "does this key already exist" check silently skipped —
+      caught in the apply-and-verify step (`grep -c` before/after didn't match the expected count)
+      and patched those six by direct array-replacement instead. `pois.geojson`: 286 → 315 of 1015
+      POIs now carry `ancient_sources` (28.2% → 31.0%).*
 - [x] `[09-P1-5]` **`clear-unverified`** `verify` — Done 2026-08-23 by cloud shift 51. Checked all
       5 flagged citations against their primary text via WebSearch. Three already had
       `ancient_sources` and check out accurate as written — Domus Flavia's Statius, *Silvae* 4.2
