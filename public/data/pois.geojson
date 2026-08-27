@@ -931,7 +931,7 @@
         ]
       },
       "properties": {
-        "id": "poi_baths_titus",
+        "id": "poi_baths_titus", "image_alt": "Remains of the Baths of Titus near the Colosseum", "image_credit": "Ruins of the Baths of Titus, Oppian Hill, Rome · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Terme di tito a colle oppio 051218-01.JPG?width=800",
         "category": "bathhouse",
         "name_latin": "Thermae Titi",
         "name_english": "Baths of Titus",
@@ -1259,7 +1259,7 @@
         ]
       },
       "properties": {
-        "id": "poi_porta_maggiore_aqueducts",
+        "id": "poi_porta_maggiore_aqueducts", "image_alt": "Porta Maggiore showing the twin aqueduct channels", "image_credit": "Porta Maggiore, Rome, where the Aqua Claudia and Anio Novus cross · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porta Maggiore Roma.JPG?width=800",
         "category": "aqueduct",
         "name_latin": "Aquae Claudia et Anio Novus (ad Portam Maiorem)",
         "name_english": "Aqua Claudia / Anio Novus crossing at Porta Maggiore",
@@ -1357,7 +1357,7 @@
         ]
       },
       "properties": {
-        "id": "poi_portus_trajani_hexagon",
+        "id": "poi_portus_trajani_hexagon", "image_alt": "Illustrated plan of Portus and the hexagonal basin", "image_credit": "Reconstruction plan of Portus, showing the Claudian harbor and Trajan's hexagonal basin · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Portus - Claudius first harbour and hexagonal basin extension under Trajan.jpg?width=800",
         "category": "port",
         "name_latin": "Portus Traiani (Portus Traiani Felicis)",
         "name_english": "Hexagonal basin of Trajan, Portus",
@@ -2461,7 +2461,7 @@
         ]
       },
       "properties": {
-        "id": "poi_lugdunum_theatre",
+        "id": "poi_lugdunum_theatre", "image_alt": "Ancient Roman theatre carved into Fourvière hill, Lyon", "image_credit": "Roman Theatre of Fourvière, Lyon · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lyon 5 - Théâtre antique de Fourvière 02.jpg?width=800",
         "category": "theater",
         "name_latin": "Theatrum Lugdunense",
         "name_english": "Roman Theatre of Fourvière",
@@ -2546,7 +2546,7 @@
         ]
       },
       "properties": {
-        "id": "poi_carthagonova_theatre",
+        "id": "poi_carthagonova_theatre", "image_alt": "Restored tiered seating of the Roman theatre at Cartagena", "image_credit": "Roman Theatre of Cartagena (Carthago Nova) · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Teatro romano cartagena.jpg?width=800",
         "category": "theater",
         "name_latin": "Theatrum Carthaginis Novae",
         "name_english": "Roman Theatre of Cartagena",
@@ -2839,7 +2839,7 @@
         ]
       },
       "properties": {
-        "id": "poi_pompeii_city",
+        "id": "poi_pompeii_city", "image_alt": "Overview of the Pompeii ruins with Vesuvius in the background", "image_credit": "Ruins of Pompeii with Mount Vesuvius beyond · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/View of vesuvius over the ruins of pompeii.jpg?width=800",
         "category": "city",
         "name_latin": "Pompeii",
         "name_english": "Pompeii",
@@ -3032,7 +3032,7 @@
         ]
       },
       "properties": {
-        "id": "poi_pompeii_basilica",
+        "id": "poi_pompeii_basilica", "image_alt": "Ruins of the Basilica on the Forum of Pompeii", "image_credit": "Basilica of Pompeii · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Basilica of Pompeii.jpg?width=800",
         "category": "basilica",
         "name_latin": "Basilica Pompeiana",
         "name_english": "Basilica of Pompeii",
@@ -3227,7 +3227,7 @@
         ]
       },
       "properties": {
-        "id": "poi_herculaneum_city",
+        "id": "poi_herculaneum_city", "image_alt": "Overview of the ancient city of Herculaneum", "image_credit": "General view of the Herculaneum excavations · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Antigua ciudad de Herculano, Italia, 2023-03-27, DD 141.jpg?width=800",
         "category": "city",
         "name_latin": "Herculaneum",
         "name_english": "Herculaneum",
@@ -3298,7 +3298,7 @@
         ]
       },
       "properties": {
-        "id": "poi_herculaneum_suburban_baths",
+        "id": "poi_herculaneum_suburban_baths", "image_alt": "Exterior of the Suburban Baths at Herculaneum", "image_credit": "Suburban Baths of Herculaneum, exterior · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Herculaneo-vorstadtthermen-aussen.JPG?width=800",
         "category": "bathhouse",
         "name_latin": "Thermae Suburbanae",
         "name_english": "Suburban Baths",
@@ -4738,7 +4738,7 @@
         ]
       },
       "properties": {
-        "id": "poi_fort_corbridge",
+        "id": "poi_fort_corbridge", "image_alt": "Excavated remains of Corbridge Roman fort and town", "image_credit": "Corbridge Roman Site (Coria), Northumberland · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Corbridge Roman Site - geograph.org.uk - 3653736.jpg?width=800",
         "category": "auxiliary_fort",
         "name_latin": "Coria",
         "name_english": "Corbridge Roman Fort",
@@ -16293,7 +16293,7 @@
         ]
       },
       "properties": {
-        "id": "poi_paestum_amphitheater",
+        "id": "poi_paestum_amphitheater", "image_alt": "Ruins of the Roman amphitheater at Paestum", "image_credit": "Amphitheater of Paestum · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anfiteatro Paestum 06.JPG?width=800",
         "category": "amphitheater",
         "name_latin": "Amphitheatrum Paestanum",
         "name_english": "Paestum Amphitheater",
@@ -16320,7 +16320,7 @@
         ]
       },
       "properties": {
-        "id": "poi_paestum_walls",
+        "id": "poi_paestum_walls", "image_alt": "Section of the ancient city walls of Paestum", "image_credit": "City walls of Paestum · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paestum muralla 03.JPG?width=800",
         "category": "wall",
         "name_latin": "Moenia Paestana",
         "name_english": "City Walls of Paestum",
@@ -18301,7 +18301,7 @@
         ]
       },
       "properties": {
-        "id": "poi_lepcis_old_forum",
+        "id": "poi_lepcis_old_forum", "image_alt": "Colonnaded ruins of the Old Forum at Leptis Magna", "image_credit": "Old Forum, Leptis Magna · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Forum Leptis Magna 04.JPG?width=800",
         "category": "forum",
         "name_latin": "Forum Vetus Lepcis Magnae",
         "name_english": "Old Forum of Leptis Magna",
@@ -18524,7 +18524,7 @@
         ]
       },
       "properties": {
-        "id": "poi_lepcis_amphitheatre",
+        "id": "poi_lepcis_amphitheatre", "image_alt": "Aerial view of the Roman amphitheatre at Leptis Magna", "image_credit": "Amphitheatre of Leptis Magna · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Leptis Magna amphitheatre - panoramio.jpg?width=800",
         "category": "amphitheater",
         "name_latin": "Amphitheatrum",
         "name_english": "Amphitheatre of Leptis Magna",
@@ -18645,7 +18645,7 @@
         ]
       },
       "properties": {
-        "id": "poi_lepcis_arch_septimius_severus",
+        "id": "poi_lepcis_arch_septimius_severus", "image_alt": "The tetrapylon Arch of Septimius Severus at Leptis Magna", "image_credit": "Arch of Septimius Severus, Leptis Magna · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The Arch of Septimius Severus (Leptis Magna).jpg?width=800",
         "category": "arch",
         "name_latin": "Arcus Septimii Severi",
         "name_english": "Arch of Septimius Severus",
@@ -18793,7 +18793,7 @@
         ]
       },
       "properties": {
-        "id": "poi_sabratha_theatre",
+        "id": "poi_sabratha_theatre", "image_alt": "The restored scaenae frons of the Roman theatre at Sabratha", "image_credit": "Roman Theatre of Sabratha · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theatre of Sabratha, Libya.jpg?width=800",
         "category": "theater",
         "name_latin": "Theatrum",
         "name_english": "Theatre of Sabratha",
@@ -19176,7 +19176,7 @@
         ]
       },
       "properties": {
-        "id": "poi_tibur_hadrians_villa",
+        "id": "poi_tibur_hadrians_villa", "image_alt": "The Canopus canal and Serapeum at Hadrian's Villa", "image_credit": "The Canopus and Serapeum, Hadrian's Villa, Tivoli · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The so-called Serapeum, The so-called Serapeum was a monumental summer cenatio with nymphaeum set at the southern end of the Canopus, Hadrian's Villa (37679255384).jpg?width=800",
         "category": "villa",
         "name_latin": "Villa Hadriana",
         "name_english": "Hadrian's Villa",
@@ -21897,7 +21897,7 @@
         ]
       },
       "properties": {
-        "id": "poi_narbo_horreum",
+        "id": "poi_narbo_horreum", "image_alt": "Roman underground warehouse galleries at the Horreum of Narbonne", "image_credit": "Underground galleries of the Horreum, Narbonne (Narbo Martius) · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman Horreum, Narbonne (19347913742).jpg?width=800",
         "category": "warehouse",
         "name_latin": "Horreum",
         "name_english": "The Horreum of Narbonne",
@@ -22036,7 +22036,7 @@
         ]
       },
       "properties": {
-        "id": "poi_massilia_ramparts_porte_italie",
+        "id": "poi_massilia_ramparts_porte_italie", "image_alt": "Excavated Hellenistic-era ramparts of ancient Massalia", "image_credit": "Jardin des Vestiges — Hellenistic ramparts of ancient Massalia, Marseille · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marseille - Le jardin des vestiges.JPG?width=800",
         "category": "wall",
         "name_latin": "Teichea Massalias (reconstructed)",
         "name_english": "Hellenistic Ramparts and Porte d'Italie",
@@ -22438,7 +22438,7 @@
         ]
       },
       "properties": {
-        "id": "poi_theatre_frejus",
+        "id": "poi_theatre_frejus", "image_alt": "Ruins of the Roman theatre at Fréjus", "image_credit": "Roman Theatre of Fréjus (Forum Julii) · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Théâtre romain de Fréjus et buste de Léotard.jpg?width=800",
         "category": "theater",
         "name_latin": "Theatrum Forum Iulii",
         "name_english": "Roman Theatre of Frejus",
@@ -22766,7 +22766,7 @@
         ]
       },
       "properties": {
-        "id": "poi_forum_basilica_verulamium",
+        "id": "poi_forum_basilica_verulamium", "image_alt": "Reconstruction illustration of the Roman forum at Verulamium", "image_credit": "Artist's impression of the Forum of Verulamium · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Artist impression of the Forum of Verulamium (16207649850).jpg?width=800",
         "category": "forum",
         "name_latin": "Forum et Basilica Verulamii",
         "name_english": "Forum and Basilica of Verulamium",
