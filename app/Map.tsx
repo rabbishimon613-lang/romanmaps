@@ -347,6 +347,8 @@ const THEMATIC_LAYER_ORDER: string[] = [
   "death-rituals-fill",
   "death-rituals-line",
   "ethnic-pockets-point",
+  "clothing-fill",
+  "clothing-line",
 ];
 
 function restackThematicLayers(map: maplibregl.Map) {
@@ -2997,6 +2999,73 @@ export default function Map() {
             });
             map.on("mouseenter", "fauna-sourcing-line", onFaunaLineEnter);
             map.on("mouseleave", "fauna-sourcing-line", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
+
+        // Phase 35: Clothing & fashion regions (public/data/clothing_regions.geojson) — six
+        // regional dress traditions living side by side under one empire in 117 CE (axis 9c).
+        // Same soft-fill visual family as Phase 29 housing typologies, colored by `typology`.
+        registerThematic("clothing", async () => {
+          const clothing = await fetch("/data/clothing_regions.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && clothing) {
+            map.addSource("clothing", { type: "geojson", data: clothing });
+            const clothingColors: any = [
+              "match",
+              ["get", "typology"],
+              "toga_tunic", "#a1442e",
+              "bracae", "#5c8c3a",
+              "chiton_himation", "#1f6f9e",
+              "egyptian_kilt", "#c9a227",
+              "palmyrene_dress", "#8859a6",
+              "berber_dress", "#b0662e",
+              "#6a6a6a",
+            ];
+            map.addLayer({
+              id: "clothing-fill",
+              type: "fill",
+              source: "clothing",
+              paint: {
+                "fill-color": clothingColors,
+                "fill-opacity": 0.16,
+              },
+            });
+            map.addLayer({
+              id: "clothing-line",
+              type: "line",
+              source: "clothing",
+              paint: {
+                "line-color": clothingColors,
+                "line-width": 1,
+                "line-dasharray": [3, 2],
+                "line-opacity": 0.5,
+              },
+            });
+
+            const clothingPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "clothing-fill", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const noteLine = p.notes ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.notes)}</div>` : "";
+              clothingPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.regions || "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "clothing-fill", () => {
               if (map) map.getCanvas().style.cursor = "";
             });
             kick();

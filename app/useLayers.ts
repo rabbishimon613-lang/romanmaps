@@ -39,6 +39,7 @@ export type LayerGroupId =
   | "ethnic-pockets"
   | "wind-currents"
   | "fauna-sourcing"
+  | "clothing"
   | "satellite";
 
 /** `base: true` marks the five groups that make up the map you see on first load — the
@@ -90,6 +91,7 @@ export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: strin
   { id: "ethnic-pockets", label: "Ethnic & cultural pockets", mapLayerIds: ["ethnic-pockets-point"] },
   { id: "wind-currents", label: "Winds & sailing seasons", mapLayerIds: ["wind-currents-point"] },
   { id: "fauna-sourcing", label: "Arena animal sourcing", mapLayerIds: ["fauna-sourcing-line", "fauna-sourcing-point"] },
+  { id: "clothing", label: "Clothing & fashion regions", mapLayerIds: ["clothing-fill", "clothing-line"] },
 ];
 
 /** [10-P1-3] thematic-rooms. Six curated bundles over the 30 thematic (non-base) groups — one
@@ -105,8 +107,8 @@ export const ROOMS: { id: RoomId; label: string; description: string; groups: La
     groups: ["politics", "mints", "conventus", "diplomacy", "euergetism"] },
   { id: "movement", label: "Movement", description: "Trade routes, road stations, aqueducts, frontiers and the winds that set the sailing calendar.",
     groups: ["trade-routes", "road-stations", "aqueduct-lines", "frontier-lines", "wind-currents"] },
-  { id: "money", label: "Money", description: "Crop and craft geography, arena-animal sourcing, housing and food — the material economy.",
-    groups: ["agriculture", "crafts", "fauna-sourcing", "housing", "cuisine"] },
+  { id: "money", label: "Money", description: "Crop and craft geography, arena-animal sourcing, housing, food and dress — the material economy.",
+    groups: ["agriculture", "crafts", "fauna-sourcing", "housing", "cuisine", "clothing"] },
   { id: "belief", label: "Belief", description: "Temples, imperial cult, death ritual, ethnic pockets and the pre-Roman religions still visible.",
     groups: ["religions", "imperial-cult", "death-rituals", "ethnic-pockets", "substrate"] },
   { id: "knowledge", label: "Knowledge", description: "Libraries and schools, letter networks, language belts, sacred landmarks and Rome's neighbors.",

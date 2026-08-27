@@ -1,0 +1,639 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.5,
+       44.0
+      ],
+      [
+       8.5,
+       45.8
+      ],
+      [
+       10.5,
+       46.5
+      ],
+      [
+       12.3,
+       46.6
+      ],
+      [
+       13.7,
+       46.5
+      ],
+      [
+       13.9,
+       45.6
+      ],
+      [
+       13.6,
+       44.8
+      ],
+      [
+       14.5,
+       43.0
+      ],
+      [
+       15.9,
+       40.0
+      ],
+      [
+       17.2,
+       39.0
+      ],
+      [
+       18.5,
+       40.3
+      ],
+      [
+       18.0,
+       39.3
+      ],
+      [
+       16.5,
+       38.2
+      ],
+      [
+       15.6,
+       37.5
+      ],
+      [
+       14.0,
+       37.5
+      ],
+      [
+       12.4,
+       37.9
+      ],
+      [
+       12.5,
+       38.5
+      ],
+      [
+       9.5,
+       39.2
+      ],
+      [
+       8.0,
+       40.9
+      ],
+      [
+       7.0,
+       43.8
+      ],
+      [
+       7.5,
+       44.0
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "clothing_toga_tunic",
+    "typology": "toga_tunic",
+    "name": "Toga and tunic dress",
+    "regions": "Italy (citizen dress, worn empire-wide by Roman citizens on formal occasions)",
+    "notes": "The toga was reserved by law for adult male Roman citizens — foreigners, slaves, and exiled citizens couldn't wear one. Wrapping its roughly six meters of wool took a slave's help and pinned both arms close to the body, so most citizens saved it for elections, court, and religious ceremony rather than daily wear. Underneath and every ordinary day, men and women wore a simple belted tunic instead, its color and trim marking rank — a senator's broad purple stripe announced status across a crowded Forum at a glance.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Toga",
+     "https://www.historyhit.com/togas-and-tunics-what-did-ancient-romans-wear/"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -1.5,
+        49.5
+       ],
+       [
+        2.5,
+        51.0
+       ],
+       [
+        6.0,
+        50.5
+       ],
+       [
+        7.5,
+        49.0
+       ],
+       [
+        7.0,
+        47.0
+       ],
+       [
+        6.5,
+        45.5
+       ],
+       [
+        5.0,
+        44.0
+       ],
+       [
+        3.0,
+        43.5
+       ],
+       [
+        1.0,
+        43.3
+       ],
+       [
+        -0.5,
+        43.5
+       ],
+       [
+        -1.0,
+        44.5
+       ],
+       [
+        -1.5,
+        46.0
+       ],
+       [
+        -2.0,
+        47.5
+       ],
+       [
+        -1.5,
+        49.5
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -5.5,
+        50.0
+       ],
+       [
+        -5.0,
+        51.5
+       ],
+       [
+        -3.0,
+        53.5
+       ],
+       [
+        -3.5,
+        55.0
+       ],
+       [
+        -5.0,
+        56.5
+       ],
+       [
+        -4.0,
+        57.5
+       ],
+       [
+        -2.0,
+        57.0
+       ],
+       [
+        -1.5,
+        55.5
+       ],
+       [
+        0.5,
+        53.5
+       ],
+       [
+        1.5,
+        52.0
+       ],
+       [
+        0.8,
+        51.0
+       ],
+       [
+        -1.0,
+        50.5
+       ],
+       [
+        -3.0,
+        50.0
+       ],
+       [
+        -5.5,
+        50.0
+       ]
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "clothing_bracae",
+    "typology": "bracae",
+    "name": "Gallic and British trousers",
+    "regions": "Gaul, Britain, extending into the Rhineland",
+    "notes": "Draw-string wool trousers reaching knee to ankle were everyday wear across Gaul and Britain long before Rome arrived, and Roman writers first mocked them as barbarian costume — nationes bracatae, ‘trousered peoples,’ was meant as an insult. Colder, wetter provinces made their own case: soldiers posted on the Rhine and in Britain adopted bracae under their tunics against weather no toga was built for. By 117 CE the garment had already crossed from native dress into standard-issue kit this far north, decades before Rome itself would accept it.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Braccae",
+     "https://www.wearethemighty.com/articles/pants/"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        19.3,
+        42.6
+       ],
+       [
+        21.0,
+        42.9
+       ],
+       [
+        23.0,
+        41.7
+       ],
+       [
+        24.5,
+        41.7
+       ],
+       [
+        26.5,
+        41.5
+       ],
+       [
+        27.6,
+        40.3
+       ],
+       [
+        27.0,
+        39.0
+       ],
+       [
+        27.3,
+        38.0
+       ],
+       [
+        28.0,
+        37.0
+       ],
+       [
+        29.7,
+        36.3
+       ],
+       [
+        32.0,
+        36.3
+       ],
+       [
+        34.0,
+        36.2
+       ],
+       [
+        34.6,
+        36.8
+       ],
+       [
+        33.0,
+        37.5
+       ],
+       [
+        30.0,
+        37.2
+       ],
+       [
+        28.5,
+        38.7
+       ],
+       [
+        26.5,
+        39.5
+       ],
+       [
+        25.0,
+        40.0
+       ],
+       [
+        24.0,
+        40.5
+       ],
+       [
+        23.0,
+        40.0
+       ],
+       [
+        22.0,
+        39.0
+       ],
+       [
+        21.0,
+        38.2
+       ],
+       [
+        20.0,
+        38.7
+       ],
+       [
+        19.5,
+        39.5
+       ],
+       [
+        19.0,
+        40.5
+       ],
+       [
+        19.3,
+        42.6
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        32.3,
+        35.7
+       ],
+       [
+        32.9,
+        35.2
+       ],
+       [
+        33.7,
+        35.0
+       ],
+       [
+        34.3,
+        35.2
+       ],
+       [
+        34.0,
+        35.7
+       ],
+       [
+        33.0,
+        35.9
+       ],
+       [
+        32.3,
+        35.7
+       ]
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "clothing_chiton_himation",
+    "typology": "chiton_himation",
+    "name": "Chiton and himation",
+    "regions": "Greece, the Aegean islands, western Asia Minor",
+    "notes": "Greek dress under Roman rule stayed distinctly Greek: a linen or wool chiton worn under a heavier himation, a mantle draped over one shoulder and across the body rather than tailored to it. Romans recognized the look as foreign enough to name it separately, pallium, and staged Greek-set comedies as fabulae palliatae — ‘plays in Greek dress,’ a genre defined by its costume as much as its language. Philosophers wore the himation alone, without a chiton underneath, a visual shorthand for austerity Roman intellectuals self-consciously copied.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Himation",
+     "https://en.wikipedia.org/wiki/Clothing_in_ancient_Greece"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       29.8,
+       31.6
+      ],
+      [
+       32.5,
+       31.6
+      ],
+      [
+       32.9,
+       30.0
+      ],
+      [
+       32.9,
+       27.0
+      ],
+      [
+       33.2,
+       24.5
+      ],
+      [
+       33.0,
+       23.8
+      ],
+      [
+       32.4,
+       24.0
+      ],
+      [
+       32.2,
+       25.5
+      ],
+      [
+       31.5,
+       27.5
+      ],
+      [
+       31.0,
+       29.0
+      ],
+      [
+       30.3,
+       30.5
+      ],
+      [
+       29.8,
+       31.0
+      ],
+      [
+       29.8,
+       31.6
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "clothing_egyptian_kilt",
+    "typology": "egyptian_kilt",
+    "name": "Egyptian linen kilt",
+    "regions": "Nile Delta and Nile Valley, rural Egypt",
+    "notes": "Rural Egyptian men kept wearing the same rectangular linen kilt, the shendyt, that their ancestors wore under the pharaohs two thousand years earlier — wrapped and tied at the waist, unchanged through Persian, Ptolemaic, and now Roman rule. Egypt's flax fields fed a linen industry old enough that Herodotus had praised its quality four centuries before Trajan, and the light fabric suited Nile heat far better than imported Roman wool. Fayum mummy portraits from this exact period show the everyday result: Greek-style dress in Alexandria's streets, pharaonic linen everywhere the Nile actually flowed.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Shendyt",
+     "https://en.wikipedia.org/wiki/Clothing_in_ancient_Egypt"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       36.5,
+       33.2
+      ],
+      [
+       37.0,
+       35.2
+      ],
+      [
+       38.5,
+       35.6
+      ],
+      [
+       40.3,
+       35.3
+      ],
+      [
+       40.5,
+       33.8
+      ],
+      [
+       39.0,
+       32.8
+      ],
+      [
+       37.5,
+       32.7
+      ],
+      [
+       36.5,
+       33.2
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "clothing_palmyrene",
+    "typology": "palmyrene_dress",
+    "name": "Palmyrene hybrid dress",
+    "regions": "Palmyra and the Syrian steppe",
+    "notes": "Palmyra sat at the western end of the caravan road carrying Chinese silk across Parthia, and its wealthy families dressed on the profits — Greek-cut tunics worn alongside embroidered coats and trousers borrowed from Parthian fashion just across the Euphrates. The city's funerary art hadn't yet reached the gold-threaded, fully Parthian look that would make Palmyrene tomb reliefs famous a century later, but the hybrid instinct — Greek, Roman, and Parthian elements worn together — was already Palmyra's visual signature under Trajan.",
+    "sources": [
+     "https://etc.worldhistory.org/education/ancient-people-palmyra-syria/",
+     "https://archeologie.culture.gouv.fr/palmyre/en/clothes-and-jewellery"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -6.5,
+       33.5
+      ],
+      [
+       -4.0,
+       34.5
+      ],
+      [
+       -1.5,
+       34.5
+      ],
+      [
+       0.0,
+       34.0
+      ],
+      [
+       2.0,
+       34.5
+      ],
+      [
+       4.5,
+       33.0
+      ],
+      [
+       6.0,
+       35.0
+      ],
+      [
+       8.5,
+       33.7
+      ],
+      [
+       10.0,
+       34.5
+      ],
+      [
+       11.5,
+       32.3
+      ],
+      [
+       13.0,
+       32.0
+      ],
+      [
+       12.0,
+       29.5
+      ],
+      [
+       9.0,
+       29.0
+      ],
+      [
+       6.0,
+       29.5
+      ],
+      [
+       3.0,
+       29.0
+      ],
+      [
+       0.0,
+       29.5
+      ],
+      [
+       -3.0,
+       30.0
+      ],
+      [
+       -6.0,
+       30.5
+      ],
+      [
+       -8.0,
+       31.5
+      ],
+      [
+       -8.5,
+       32.5
+      ],
+      [
+       -6.5,
+       33.5
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "id": "clothing_berber",
+    "typology": "berber_dress",
+    "name": "Berber tribal dress",
+    "regions": "Numidia and Mauretania, Africa's interior",
+    "notes": "Interior Numidia and Mauretania didn't trade the toga in: communities there kept wearing a single length of wool or hide wrapped around the body and pinned at the shoulder with a metal fibula, never cut or sewn into a fitted shape. Coin portraits of Numidia's own kings a century and a half earlier already show the same fibula-fastened wrap Berber communities were still wearing under Trajan, and Roman writers noted North African men's elaborately braided hair as its own mark of identity. A short ride away, Roman colonists in cities like Timgad and Djemila dressed exactly like Italy — one of the empire's sharpest clothing borders.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Amazigh_fibula",
+     "https://www.thearchaeologist.org/blog/daily-life-of-the-berbers-numidians-and-mauretanians"
+    ]
+   }
+  }
+ ]
+}
