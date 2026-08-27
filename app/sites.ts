@@ -31,6 +31,12 @@ export type SiteInfo = {
    * most of what's visible today, and (where relevant) an ongoing modern project. Rendered as an
    * "Excavation history" section on /site/[slug] and in SitesPanel.tsx. Board `[06-P1-4]`. */
   excavation?: { year: string; excavator: string; note: string; source: string }[];
+  /** Hero image for /site/[slug] and the SitesPanel list row — same convention as pois.geojson's
+   * image_url/image_credit (SHIFT_BRIEF.md §1.6): prefer a period engraving or reconstruction
+   * over a plain modern photo. Board [13-P1-4]. */
+  image_url?: string;
+  image_credit?: string;
+  image_alt?: string;
 };
 
 export const SITES: SiteInfo[] = [

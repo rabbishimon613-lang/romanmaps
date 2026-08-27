@@ -109,35 +109,48 @@ export default function SitesPanel({ open, onClose }: { open: boolean; onClose: 
             onMouseEnter={(e) => (e.currentTarget.style.background = "var(--surface-2)")}
             onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
           >
-            <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
-              <div className="roman-label" style={{ fontSize: 14, fontWeight: 600, color: "var(--text)" }}>{s.display}</div>
-              <div style={{ fontSize: 12, color: "var(--text-2)" }}>· {s.modernCountry}</div>
-              {s.snapshotNote && (
-                <div
-                  title={s.snapshotNote}
-                  style={{
-                    fontSize: 10,
-                    fontWeight: 700,
-                    color: "var(--warn-text)",
-                    background: "var(--warn-bg)",
-                    borderRadius: 4,
-                    padding: "1px 5px",
-                    letterSpacing: 0.3,
-                  }}
-                >
-                  NOT LIVING IN 117 CE
-                </div>
+            <div style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
+              {s.image_url ? (
+                <img
+                  src={s.image_url}
+                  alt=""
+                  style={{ width: 48, height: 48, borderRadius: 6, objectFit: "cover", flexShrink: 0, background: "var(--surface-2)" }}
+                />
+              ) : (
+                <div style={{ width: 48, height: 48, borderRadius: 6, flexShrink: 0, background: "var(--surface-2)" }} />
               )}
-            </div>
-            <div style={{ fontSize: 12, color: "var(--text-2)", marginTop: 2 }}>
-              Province of {s.province} · Founded {s.founded}
-            </div>
-            <div style={{ fontSize: 12.5, color: "var(--text-strong)", marginTop: 4, lineHeight: 1.4 }}>{s.blurb}</div>
-            {s.today && (
-              <div style={{ fontSize: 11.5, color: "var(--text-2)", marginTop: 4, lineHeight: 1.4, fontStyle: "italic" }}>
-                Today: {s.today}
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div style={{ display: "flex", alignItems: "baseline", gap: 8, flexWrap: "wrap" }}>
+                  <div className="roman-label" style={{ fontSize: 14, fontWeight: 600, color: "var(--text)" }}>{s.display}</div>
+                  <div style={{ fontSize: 12, color: "var(--text-2)" }}>· {s.modernCountry}</div>
+                  {s.snapshotNote && (
+                    <div
+                      title={s.snapshotNote}
+                      style={{
+                        fontSize: 10,
+                        fontWeight: 700,
+                        color: "var(--warn-text)",
+                        background: "var(--warn-bg)",
+                        borderRadius: 4,
+                        padding: "1px 5px",
+                        letterSpacing: 0.3,
+                      }}
+                    >
+                      NOT LIVING IN 117 CE
+                    </div>
+                  )}
+                </div>
+                <div style={{ fontSize: 12, color: "var(--text-2)", marginTop: 2 }}>
+                  Province of {s.province} · Founded {s.founded}
+                </div>
+                <div style={{ fontSize: 12.5, color: "var(--text-strong)", marginTop: 4, lineHeight: 1.4 }}>{s.blurb}</div>
+                {s.today && (
+                  <div style={{ fontSize: 11.5, color: "var(--text-2)", marginTop: 4, lineHeight: 1.4, fontStyle: "italic" }}>
+                    Today: {s.today}
+                  </div>
+                )}
               </div>
-            )}
+            </div>
           </button>
         ))}
       </div>

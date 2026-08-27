@@ -29,11 +29,13 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       title,
       description,
       locale: "en",
+      images: site.image_url ? [{ url: site.image_url }] : undefined,
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
+      images: site.image_url ? [site.image_url] : undefined,
     },
   };
 }
@@ -51,6 +53,7 @@ export default function SitePage({ params }: { params: { slug: string } }) {
     name: site.display,
     description: site.blurb,
     url: `${SITE_URL}/site/${site.slug}`,
+    image: site.image_url || undefined,
     address: { "@type": "PostalAddress", addressCountry: site.modernCountry },
     geo: { "@type": "GeoCoordinates", latitude: lat, longitude: lng },
   };
@@ -74,6 +77,17 @@ export default function SitePage({ params }: { params: { slug: string } }) {
         >
           &larr; Back to the map
         </Link>
+
+        {site.image_url && (
+          <img
+            src={site.image_url}
+            alt={site.image_alt || site.display}
+            style={{ display: "block", width: "100%", maxHeight: 360, objectFit: "cover", borderRadius: 8, marginBottom: 8 }}
+          />
+        )}
+        {site.image_url && site.image_credit && (
+          <div style={{ fontSize: 12, color: "#8a7a60", marginBottom: 24 }}>{site.image_credit}</div>
+        )}
 
         <h1
           className="roman-label"
