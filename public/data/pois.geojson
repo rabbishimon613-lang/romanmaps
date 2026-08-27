@@ -28762,7 +28762,10 @@
         "sources": [
           "Wikipedia: Bulla Regia"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Theatre_view_from_above_-_ruin_of_Bulla_Regia.jpg?width=800",
+        "image_credit": "Wikimedia Commons",
+        "image_alt": "Aerial view of the ruined Roman theatre at Bulla Regia, Tunisia"
       }
     },
     {
@@ -28954,7 +28957,10 @@
             "note": "Describes Augustus viewing Alexander's body and accidentally breaking off part of the nose."
           }
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mid-nineteenth_century_reconstruction_of_Alexander's_catafalque_based_on_the_description_by_Diodorus.jpg?width=800",
+        "image_credit": "19th-century engraving · Wikimedia Commons",
+        "image_alt": "19th-century reconstruction drawing of Alexander the Great's funeral catafalque, based on Diodorus's description, en route to his tomb in Alexandria"
       }
     },
     {
@@ -28988,7 +28994,10 @@
             "note": "Calls the Gymnasium the most beautiful of Alexandria's buildings, with porticos over a stadium in length."
           }
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ptolemaic_Alexandria_Map_-_en.svg?width=800",
+        "image_credit": "Historical map · Wikimedia Commons",
+        "image_alt": "Map of Ptolemaic Alexandria showing the ancient city's districts and monuments including the Gymnasium"
       }
     },
     {
@@ -29014,7 +29023,10 @@
         "sources": [
           "https://www.britannica.com/place/Canopic-Way"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Canopic_Street_Alexandria_1784_by_LF_Cassa.png?width=800",
+        "image_credit": "Engraving by L.F. Cassas, 1784 · Wikimedia Commons",
+        "image_alt": "1784 engraving of the Canopic Street (Canopic Way) in Alexandria by Louis-Francois Cassas"
       }
     },
     {
@@ -29048,7 +29060,10 @@
             "note": "Describes the Paneum as an artificial mound shaped like a fir cone, climbed by a spiral path, with a view over the whole city."
           }
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hellenistic_and_Roman_Alexandria_map_fi.svg?width=800",
+        "image_credit": "Historical map · Wikimedia Commons",
+        "image_alt": "Map of Hellenistic and Roman Alexandria showing the ancient city's monuments and topography including the Paneum"
       }
     },
     {
@@ -29082,7 +29097,10 @@
             "note": "Describes the Poseidium as a temple on a promontory projecting from the Emporium into the harbor."
           }
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Antikes_Alexandria_Karte.JPG?width=800",
+        "image_credit": "Historical map · Wikimedia Commons",
+        "image_alt": "Map of ancient Alexandria showing the Great Harbor area where the Poseidium stood"
       }
     },
     {
@@ -29108,7 +29126,10 @@
         "sources": [
           "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/17A1*.html"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ptolemaic_Alexandria_-_en.svg?width=800",
+        "image_credit": "Historical map · Wikimedia Commons",
+        "image_alt": "Map of Ptolemaic Alexandria showing the harbor district including the Emporium"
       }
     },
     {
@@ -29142,7 +29163,10 @@
             "note": "States that the harbor on Lake Mareotis was richer than the sea harbor."
           }
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Salt_refining-Lake_Mariout.JPG?width=800",
+        "image_credit": "Photo by Amr Fayez · Wikimedia Commons",
+        "image_alt": "Modern photo of Lake Mariout (ancient Lake Mareotis) near Alexandria, Egypt"
       }
     },
     {
@@ -29203,7 +29227,10 @@
           "https://en.wikipedia.org/wiki/Kitos_War",
           "https://jewishencyclopedia.com/articles/1171-alexandria-egypt-ancient"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jewish_quarter_in_Alexandria_1898.jpg?width=800",
+        "image_credit": "Historical photograph, 1898 · Wikimedia Commons",
+        "image_alt": "1898 photograph of the Jewish quarter (historic Delta Quarter) in Alexandria, Egypt"
       }
     },
     {
@@ -29519,7 +29546,10 @@
         "sources": [
           "https://vici.org/vici/18026/"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Baths_of_Trajan,_Cyrene_(50145099512).jpg?width=800",
+        "image_credit": "Photo via Wikimedia Commons",
+        "image_alt": "Ruins of the Roman Baths of Trajan within the Sanctuary of Apollo, Cyrene"
       }
     },
     {
@@ -29995,7 +30025,10 @@
         "sources": [
           "https://www.wikidata.org/wiki/Q2091585"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arch_of_Septimius_Severus,_Dougga,_Tunisia.jpg?width=800",
+        "image_credit": "Photo via Wikimedia Commons",
+        "image_alt": "The triumphal Arch of Septimius Severus at Dougga, Tunisia"
       }
     },
     {
@@ -30049,7 +30082,10 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Dougga"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dougga-forum.JPG?width=800",
+        "image_credit": "Photo via Wikimedia Commons",
+        "image_alt": "The Roman forum area at Dougga, Tunisia"
       }
     },
     {
@@ -30103,7 +30139,10 @@
         "sources": [
           "https://madainproject.com/dougga"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_mercure_dougga.jpg?width=800",
+        "image_credit": "Photo via Wikimedia Commons",
+        "image_alt": "Remains of the Temple of Mercury at Dougga, Tunisia"
       }
     },
     {
@@ -30129,7 +30168,10 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Dougga"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_pi%C3%A9t%C3%A9_auguste_dougga.jpg?width=800",
+        "image_credit": "Photo via Wikimedia Commons",
+        "image_alt": "The semicircular Temple of Pietas Augusta at Dougga, Tunisia"
       }
     },
     {
