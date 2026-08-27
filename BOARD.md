@@ -745,9 +745,9 @@ to prevent. Building locally to *test* your own work is expected and fine.
       the correct light/dark token — the two `LIGHT`/`DARK` palette *definitions* themselves
       (lines 46, 56) are the only remaining literal `#f4ead5`, as they should be. `npx tsc
       --noEmit` and `npm run build` both clean.
-- [ ] `[08-P0-1]` **`palaeo-coasts`** `fix` — Ancient coastline patches for Ostia/Portus,
-      Ravenna, Ephesus, Miletus, Priene, Rhine–Meuse, the Fens, Romney Marsh, Maeander,
-      Scamander, Lake Fucinus, Lake Copais.
+- [~] `[08-P0-1]` **`palaeo-coasts`** `fix` — claimed by cloud shift 67, 2026-08-27 18:13 —
+      Ancient coastline patches for Ostia/Portus, Ravenna, Ephesus, Miletus, Priene,
+      Rhine–Meuse, the Fens, Romney Marsh, Maeander, Scamander, Lake Fucinus, Lake Copais.
 - [x] `[08-P0-3]` **`province-provenance`** `verify` — Done 2026-08-23 by cloud shift 51.
       All 43 `app/provinces.ts` entries now carry a structured `establishedYear` (negative = BCE,
       null for Italia/Numidia which never became formal provinces) and an `establishedNote`,
