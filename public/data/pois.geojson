@@ -28599,6 +28599,1757 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Theatre_in_Bosra.jpg?width=800",
         "image_credit": "Roman Theatre in Bosra · Wikimedia Commons"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7547,
+          36.5581
+        ]
+      },
+      "properties": {
+        "id": "poi_bulla_regia_forum",
+        "category": "forum",
+        "name_latin": "Forum Bullae Regiae",
+        "name_english": "Forum of Bulla Regia",
+        "province": "Africa Proconsularis",
+        "modern_location": "Bulla Regia, Tunisia",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Bulla Regia's civic forum covered more than 1,000 square meters and organized the whole Roman townscape after Vespasian granted the city municipium status. Colonnaded porticoes lined every side, backed by a Capitol and a temple to Apollo. Archaeologists uncovered it in a five-year dig starting in 1949. In 117 CE this was still a modest civic square, not yet ringed by the grander facades later wheat wealth would add.",
+        "sources": [
+          "Wikipedia: Bulla Regia"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bulla_regia_forum.jpg?width=800",
+        "image_credit": "Photo via Wikimedia Commons",
+        "image_alt": "Ruins of the forum at Bulla Regia, Tunisia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7543,
+          36.558
+        ]
+      },
+      "properties": {
+        "id": "poi_bulla_regia_capitol",
+        "category": "temple",
+        "name_latin": "Capitolium Bullae Regiae",
+        "name_english": "Capitol of Bulla Regia",
+        "province": "Africa Proconsularis",
+        "modern_location": "Bulla Regia, Tunisia",
+        "built": 125,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The Capitol crowned the west side of Bulla Regia's forum, a podium roughly 16 meters long dedicated to Jupiter, Juno, and Minerva. Hadrian's reign funded its construction after the town won colonial status and the name Colonia Aelia Hadriana Augusta Bulla Regia. Steps once led worshippers up to a triple cella overlooking the civic square below. Trajan died on 11 August 117, before ground broke on this temple.",
+        "sources": [
+          "Wikipedia: Bulla Regia"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Capitole_flanc_bulla_regia.jpg?width=800",
+        "image_credit": "Photo via Wikimedia Commons",
+        "image_alt": "Side view of the Capitol podium at Bulla Regia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7548,
+          36.5585
+        ]
+      },
+      "properties": {
+        "id": "poi_bulla_regia_temple_apollo",
+        "category": "temple",
+        "name_latin": "Templum Apollinis Bullae Regiae",
+        "name_english": "Temple of Apollo",
+        "province": "Africa Proconsularis",
+        "modern_location": "Bulla Regia, Tunisia",
+        "built": 200,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "North of the forum stood a temple of Apollo built as three joined sanctuaries, its cult statue of Apollo playing the cithara now displayed at the Bardo Museum. Excavators cleared the site in 1906, finding a cella whose floor was relaid in colored opus sectile stone. That marble paving dates to the early third century, a full century after Trajan died. The temple's earlier core may be older, but no firm pre-117 construction date survives.",
+        "sources": [
+          "Wikipedia: Bulla Regia"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_d'Apollon_d%C3%A9blay%C3%A9_en_1906_par_la_Direction_des_Antiquit%C3%A9s.jpg?width=800",
+        "image_credit": "Historic 1906 excavation photograph via Wikimedia Commons",
+        "image_alt": "Temple of Apollo at Bulla Regia photographed shortly after its 1906 excavation"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7554,
+          36.559
+        ]
+      },
+      "properties": {
+        "id": "poi_bulla_regia_temple_isis",
+        "category": "temple",
+        "name_latin": "Templum Isidis Bullae Regiae",
+        "name_english": "Temple of Isis",
+        "province": "Africa Proconsularis",
+        "modern_location": "Bulla Regia, Tunisia",
+        "built": 60,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A small temple to Isis stood beside where Bulla Regia's theater would later rise, built in the 1st century against the line of an older Numidian wall. Seven steps climbed to its podium, leading through a pronaos into a cella flanked by six columns on each side. Roman builders repaired the shrine decades after Trajan's reign, well past this map's snapshot. By 11 August 117 this modest temple had already stood for generations.",
+        "sources": [
+          "Institut National du Patrimoine (INP) Tunisia: Bulla Regia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7545,
+          36.5578
+        ]
+      },
+      "properties": {
+        "id": "poi_bulla_regia_macellum",
+        "category": "market",
+        "name_latin": "Macellum Bullae Regiae",
+        "name_english": "Macellum of Bulla Regia",
+        "province": "Africa Proconsularis",
+        "modern_location": "Bulla Regia, Tunisia",
+        "built": 230,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Bulla Regia's covered market measured just 12 by 13 meters yet packed in a dozen shop stalls, six facing north and six south around a portico. Builders raised it in the third century, giving the town a dedicated food market separate from the open forum. An apse on one side likely held a shrine or the market office. Trajan had been dead for more than a century when the first stallholder set up here.",
+        "sources": [
+          "Wikipedia: Bulla Regia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7556,
+          36.5591
+        ]
+      },
+      "properties": {
+        "id": "poi_bulla_regia_theatre",
+        "category": "theater",
+        "name_latin": "Theatrum Bullae Regiae",
+        "name_english": "Theatre of Bulla Regia",
+        "province": "Africa Proconsularis",
+        "modern_location": "Bulla Regia, Tunisia",
+        "built": 165,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Bulla Regia's theater rose under co-emperors Marcus Aurelius and Lucius Verus, its cavea eventually spanning a 60 by 50 meter footprint. Marble statues of both emperors once stood near the stage and are now in the Bardo Museum. A fourth-century remodel added the orchestra's surviving mosaic of a bear. Ground broke on this theater roughly 45 years after Trajan died in 117 CE.",
+        "sources": [
+          "Wikipedia: Bulla Regia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7538,
+          36.5574
+        ]
+      },
+      "properties": {
+        "id": "poi_bulla_regia_memmian_baths",
+        "category": "bath",
+        "name_latin": "Thermae Iuliae Memmiae",
+        "name_english": "Memmian Baths",
+        "province": "Africa Proconsularis",
+        "modern_location": "Bulla Regia, Tunisia",
+        "built": 225,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Bulla Regia's largest bathing complex takes its name from Julia Memmia, daughter of a local consul, who funded its construction in the early third century. Bathers moved through a gymnasium, changing rooms, and a vaulted frigidarium. Excavators clearing the site between 1909 and 1924 uncovered a shell-shaped mosaic decorating one apse. Trajan's empire had already given way to the Severan dynasty by the time these baths opened.",
+        "sources": [
+          "Wikipedia: Bulla Regia"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Thermes,_Bulla_Regia.jpg?width=800",
+        "image_credit": "Photo via Wikimedia Commons",
+        "image_alt": "Ruins of the Memmian Baths at Bulla Regia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7541,
+          36.5572
+        ]
+      },
+      "properties": {
+        "id": "poi_bulla_regia_house_amphitrite",
+        "category": "domus",
+        "name_latin": "Domus Amphitrites",
+        "name_english": "House of Amphitrite",
+        "province": "Africa Proconsularis",
+        "modern_location": "Bulla Regia, Tunisia",
+        "built": 180,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The House of Amphitrite is one of Bulla Regia's semi-subterranean mansions, its lower rooms sunk underground and lit by a small open courtyard to escape the summer heat. A triclinium floor there carries a mosaic long nicknamed for Amphitrite, though scholars now read it as Venus rising from the sea flanked by tritons and fish. The house belongs to the 2nd-3rd century building boom that made Bulla Regia famous. Construction began decades after Trajan's death in 117 CE.",
+        "sources": [
+          "Wikipedia: Bulla Regia"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Venus_marine_dite_Amphitrite_Bulla_Regia.jpg?width=800",
+        "image_credit": "Photo via Wikimedia Commons",
+        "image_alt": "Marine Venus mosaic nicknamed Amphitrite, House of Amphitrite, Bulla Regia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7543,
+          36.5571
+        ]
+      },
+      "properties": {
+        "id": "poi_bulla_regia_house_hunt",
+        "category": "domus",
+        "name_latin": "Domus Venationis",
+        "name_english": "House of the Hunt",
+        "province": "Africa Proconsularis",
+        "modern_location": "Bulla Regia, Tunisia",
+        "built": 220,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The House of the Hunt paired a colonnaded peristyle of 19 by 13 meters above ground with a sunken underground suite for the hottest months. Eight ornamented pillars with hexagonal openings held up its underground hall to shed weight from the vault. A hunting mosaic added to the property in the 4th century gave the house its name. Builders broke ground here roughly a century after Trajan's reign ended in 117 CE.",
+        "sources": [
+          "Wikipedia: Bulla Regia"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Maison_de_la_chasse,_bulla_Regia,_Tunisie_17_ao%C3%BBt_2013.jpg?width=800",
+        "image_credit": "Photo via Wikimedia Commons",
+        "image_alt": "Underground peristyle court of the House of the Hunt, Bulla Regia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7544,
+          36.557
+        ]
+      },
+      "properties": {
+        "id": "poi_bulla_regia_house_fisherman",
+        "category": "domus",
+        "name_latin": "Domus Piscatoris",
+        "name_english": "House of the Fisherman",
+        "province": "Africa Proconsularis",
+        "modern_location": "Bulla Regia, Tunisia",
+        "built": 230,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The House of the Fisherman held a compact underground suite lit by a small courtyard fountain, its plan mirroring the larger House of the Hunt next door. One small room preserves a mosaic of a fisherman working the water. Late Roman owners later swallowed up a public street to fuse this house with its neighboring insula. None of this existed yet on the day Trajan died in August 117 CE.",
+        "sources": [
+          "Wikipedia: Bulla Regia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9187,
+          31.2001
+        ]
+      },
+      "properties": {
+        "id": "poi_kitos_war_alexandria",
+        "category": "battle",
+        "name_latin": "Seditio Iudaica Alexandriae",
+        "name_english": "Alexandria Uprising of the Kitos War",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "built": 116,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Jewish rebels under Lukuas overran Alexandria in 116 CE after the Roman governor fled, burning the tomb of Pompey and torching temples across the city. An initial clash saw Alexandria's Greek population routed before they regrouped and killed the Jews trapped inside the city. Trajan dispatched his top general Marcius Turbo with a fleet, cavalry, and infantry to retake Egypt. By August 117 Turbo had crushed the revolt and driven its survivors toward Judaea.",
+        "sources": [
+          "Eusebius, Ecclesiastical History 4.2",
+          "Cassius Dio, Roman History 68.32",
+          "Wikipedia: Kitos War"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Eusebius of Caesarea",
+            "work": "Ecclesiastical History",
+            "ref": "4.2",
+            "note": "Describes the Jewish uprising against the Greeks of Alexandria and Trajan's dispatch of Marcius Turbo with land and sea forces."
+          },
+          {
+            "author": "Cassius Dio",
+            "work": "Roman History",
+            "ref": "68.32",
+            "note": "Describes the Jewish revolts across Cyrenaica, Egypt, and Cyprus during Trajan's reign and their suppression."
+          }
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Great_Library_of_Alexandria,_O._Von_Corven,_19th_century.jpg?width=800",
+        "image_credit": "O. Von Corven, 19th-century engraving, via Wikimedia Commons",
+        "image_alt": "19th-century engraving imagining the grand public buildings of ancient Alexandria"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.8994,
+          31.1966
+        ]
+      },
+      "properties": {
+        "id": "poi_alexandria_sema_soma_tomb",
+        "category": "tomb",
+        "name_latin": "Soma",
+        "name_english": "Tomb of Alexander the Great",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "built": -215,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Ptolemy IV built this mausoleum around 215 BCE to hold Alexander's body alongside the Ptolemaic kings. Julius Caesar wept before the glass coffin in 48 BCE, and Augustus broke off part of the mummy's nose reaching in to touch its crown in 30 BCE. Caligula later took its breastplate to wear at gladiator shows. In 117 CE the tomb still stood where the Canopic Way crossed the Street of the Soma, a required stop for visiting emperors.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tomb_of_Alexander_the_Great"
+        ],
+        "ancient_sources": [
+          {
+            "author": "Suetonius",
+            "work": "Divus Augustus",
+            "ref": "18",
+            "note": "Describes Augustus viewing Alexander's body and accidentally breaking off part of the nose."
+          }
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.902,
+          31.198
+        ]
+      },
+      "properties": {
+        "id": "poi_alexandria_gymnasium",
+        "category": "gymnasium",
+        "name_latin": "Gymnasium",
+        "name_english": "Gymnasium of Alexandria",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "built": -270,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Alexandria's Gymnasium ran for over a stadium, more than 180 meters, of colonnades along the city's central avenue. Strabo called it the most beautiful of all the city's public buildings, its courtyards shaded by groves and hosting the law courts as well as athletics. Alexandrian youths trained here for citizenship status that carried real legal weight under Roman rule. It remained a working civic center through Trajan's reign.",
+        "sources": [
+          "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/17A1*.html"
+        ],
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "17.1.10",
+            "note": "Calls the Gymnasium the most beautiful of Alexandria's buildings, with porticos over a stadium in length."
+          }
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.901,
+          31.1965
+        ]
+      },
+      "properties": {
+        "id": "poi_alexandria_canopic_way",
+        "category": "monument",
+        "name_latin": "Via Canopica",
+        "name_english": "Canopic Way",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "built": -331,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Alexander's architect Dinocrates laid out this street as the city's east-west spine when Alexandria was founded in 331 BCE. Colonnaded along its full length and roughly 30 meters wide, it ran from the Gate of the Sun to the Gate of the Moon, passing the Gymnasium, the Soma, and the theater. Strabo marveled at how straight and grand it was for a working thoroughfare. By 117 CE it had carried imperial processions and daily market traffic for over four centuries.",
+        "sources": [
+          "https://www.britannica.com/place/Canopic-Way"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9057,
+          31.1957
+        ]
+      },
+      "properties": {
+        "id": "poi_alexandria_paneum",
+        "category": "sanctuary",
+        "name_latin": "Paneum",
+        "name_english": "Paneum",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "built": -270,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Alexandrians built this artificial cone-shaped hill as a shrine to Pan, reachable by a spiral path winding to its summit. Strabo climbed it around 25 BCE and described a full panoramic view over the entire city from the top. A park surrounded it, and the grounds doubled as a pleasure garden for Alexandrians. The mound still rose over the district later called Kom el-Dikka in 117 CE.",
+        "sources": [
+          "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Africa/Egypt/_Texts/BEVHOP/4B*.html"
+        ],
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "17.1.10",
+            "note": "Describes the Paneum as an artificial mound shaped like a fir cone, climbed by a spiral path, with a view over the whole city."
+          }
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.889,
+          31.2073
+        ]
+      },
+      "properties": {
+        "id": "poi_alexandria_temple_poseidon",
+        "category": "temple",
+        "name_latin": "Poseidium",
+        "name_english": "Temple of Poseidon",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "built": -250,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Strabo described the Poseidium as a temple projecting like an elbow from the Emporium into the Great Harbor, a sacred landmark for ships entering port. Mark Antony built his retreat, the Timonium, right beside it after his defeat at Actium in 31 BCE. Priests here blessed the merchant fleets carrying Alexandria's grain toward Rome. The temple still marked the harbor entrance when Trajan's fleet sailed for the Parthian campaign.",
+        "sources": [
+          "https://www.loebclassics.com/view/strabo-geography/1917/pb_LCL267.39.xml"
+        ],
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "17.1.9",
+            "note": "Describes the Poseidium as a temple on a promontory projecting from the Emporium into the harbor."
+          }
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.8859,
+          31.2058
+        ]
+      },
+      "properties": {
+        "id": "poi_alexandria_emporium",
+        "category": "market",
+        "name_latin": "Emporium",
+        "name_english": "Emporium of Alexandria",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "built": -331,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The Emporium was Alexandria's customs house and commercial exchange, where Egyptian grain, glass, and papyrus were weighed, taxed, and loaded onto Mediterranean ships. It sat directly on the Great Harbor between the Poseidium and the naval docks. Egypt alone supplied roughly a third of Rome's grain dole by Trajan's reign, and it all passed through buildings like this one. In 117 CE its warehouses and quays remained the busiest waterfront in the empire's second city.",
+        "sources": [
+          "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/17A1*.html"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.8908,
+          31.1793
+        ]
+      },
+      "properties": {
+        "id": "poi_alexandria_lake_mareotis_harbor",
+        "category": "harbor",
+        "name_latin": "Portus Mareoticus",
+        "name_english": "Lake Mareotis Harbor",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "built": -270,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Alexandria faced two waterfronts at once: the Mediterranean to the north and Lake Mareotis to the south, linked to the Nile by canal. Strabo judged the lake harbor even richer than the sea harbor, since it handled the entire flow of Egyptian grain, wine, and glass coming downriver. Warehouses, glass workshops, and vineyards lined its shore for kilometers. The lake port still moved Nile cargo into the city's granaries when Trajan died in 117 CE.",
+        "sources": [
+          "https://www.ancientportsantiques.com/wp-content/uploads/Documents/PLACES/Egypt-Libya/Mareotis-Khalil2010a.pdf"
+        ],
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "17.1.7",
+            "note": "States that the harbor on Lake Mareotis was richer than the sea harbor."
+          }
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9098,
+          31.2038
+        ]
+      },
+      "properties": {
+        "id": "poi_alexandria_great_synagogue",
+        "category": "synagogue",
+        "name_latin": "Diplostoon",
+        "name_english": "Great Synagogue of Alexandria",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "built": -250,
+        "destroyed": 116,
+        "extant_117ce": false,
+        "notes": "Alexandria's Great Synagogue, called the Diplostoon for its double colonnade, was so vast that an attendant waved a flag to cue the congregation's response because voices couldn't carry to the back. The Talmud held that whoever had not seen it had never seen the glory of Israel in exile. Alexandria's Jewish community, among the largest in the ancient world, worshipped here for over three centuries. Roman forces under Marcius Turbo destroyed it in 116 CE while crushing the Kitos War revolt, less than a year before Trajan died.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kitos_War"
+        ],
+        "ancient_sources": [
+          {
+            "author": "Babylonian Talmud",
+            "work": "Sukkah",
+            "ref": "51b",
+            "note": "Describes the Alexandrian synagogue as a great double-colonnaded basilica with seventy-one golden seats."
+          }
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9095,
+          31.2035
+        ]
+      },
+      "properties": {
+        "id": "poi_alexandria_delta_quarter",
+        "category": "vicus",
+        "name_latin": "Regio Delta",
+        "name_english": "Delta Quarter",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt",
+        "built": -331,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Two of Alexandria's five alphabetically named districts, most prominently the Delta quarter in the northeast, housed the largest Jewish community outside Judaea. Philo, writing around 38 CE, described a population dense enough to fill whole neighborhoods with synagogues, workshops, and self-governing courts. By August 117 CE this quarter's Jewish population had been massacred and its institutions gutted, the toll of the previous year's Kitos War revolt and its Roman suppression under Marcius Turbo.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kitos_War",
+          "https://jewishencyclopedia.com/articles/1171-alexandria-egypt-ancient"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.9025,
+          29.5205
+        ]
+      },
+      "properties": {
+        "id": "poi_karanis_south_temple",
+        "category": "temple",
+        "name_latin": "Templum Petesuchi et Pnepherotis",
+        "name_english": "South Temple of Karanis",
+        "province": "Aegyptus",
+        "modern_location": "Kom Aushim, Fayum, Egypt",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Villagers raised this limestone temple to Pnepheros and Petesouchos, two local forms of the crocodile god Sobek, with roots reaching back to the first century BCE. Nero's reign saw it formally rededicated to the same pair of gods. Mummified crocodiles have been found in its inner sanctuary, matching the sacred-animal cult practiced across Faiyum temples. The temple stayed in active use well past 117 CE, into the fourth century.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Karanis"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.903,
+          29.5228
+        ]
+      },
+      "properties": {
+        "id": "poi_karanis_north_temple",
+        "category": "temple",
+        "name_latin": "Templum Septentrionale",
+        "name_english": "North Temple of Karanis",
+        "province": "Aegyptus",
+        "modern_location": "Kom Aushim, Fayum, Egypt",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A second, larger limestone temple stood at the settlement's north end, built in the early Roman period in a purely Egyptian style with only its corner columns showing Greco-Roman influence. Unlike the South Temple it carries almost no relief decoration, an unusually plain design for a Faiyum cult building. It anchored the northern end of Karanis's temple precinct throughout the height of the Roman Empire, including in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Karanis"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.9035,
+          29.521
+        ]
+      },
+      "properties": {
+        "id": "poi_karanis_granary_c123",
+        "category": "warehouse",
+        "name_latin": "Horreum C123",
+        "name_english": "Granary C123",
+        "province": "Aegyptus",
+        "modern_location": "Kom Aushim, Fayum, Egypt",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Granary C123 was built in the first century CE to hold Karanis's wheat surplus before shipment down the Nile. University of Michigan excavators recovered 37 papyrus documents from inside it between 1928 and 1931, records tracking who deposited grain and when. Fayum villages like Karanis fed the Roman grain dole, and buildings like this one formed the first link in that supply chain. The granary was still receiving harvests when Trajan died in August 117 CE.",
+        "sources": [
+          "https://lsa.umich.edu/classics/people/departmental-faculty/verhoogt/papyri-from-karanis--the-granary-c123.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.904,
+          29.5215
+        ]
+      },
+      "properties": {
+        "id": "poi_karanis_residential_quarter",
+        "category": "vicus",
+        "name_latin": "Vicus",
+        "name_english": "Residential Quarter of Karanis",
+        "province": "Aegyptus",
+        "modern_location": "Kom Aushim, Fayum, Egypt",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Karanis's mudbrick houses survived so completely, some still roofed, that they preserve entire room layouts, wall niches, and storage bins intact. The two-story House of the Banker points to real wealth built up inside this farming village. University of Michigan excavators pulled thousands of papyri directly from trash heaps and floor fill inside these houses between 1924 and 1935. The desert climate preserved everyday Roman-Egyptian domestic life here better than almost any other site in the empire.",
+        "sources": [
+          "https://sites.lsa.umich.edu/karanis-collaboratory/um-excavations/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Karanis_026.JPG?width=800",
+        "image_credit": "Photo by Roland Unger · Wikimedia Commons (CC BY-SA 4.0)",
+        "image_alt": "Well-preserved mudbrick ruins at the Karanis archaeological site"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.9018,
+          29.5222
+        ]
+      },
+      "properties": {
+        "id": "poi_karanis_dovecotes",
+        "category": "estate",
+        "name_latin": "Columbaria",
+        "name_english": "Dovecotes of Karanis",
+        "province": "Aegyptus",
+        "modern_location": "Kom Aushim, Fayum, Egypt",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Karanis households built at least six dovecotes, mudbrick towers up to two stories tall lined with nesting jars, some attached to houses and others run as standalone businesses. The two largest towers together housed around 1,250 birds. Villagers sold the squabs as a delicacy and the manure as fertilizer for land the Nile flood couldn't reach, and Roman tax collectors levied a specific tax on every productive nest. These pigeon-houses operated at Karanis from the first century BCE through the fourth century CE, squarely spanning 117 CE.",
+        "sources": [
+          "https://apps.lib.umich.edu/files/collections/papyrus/tools/publications/dovecotes.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.902,
+          29.5218
+        ]
+      },
+      "properties": {
+        "id": "poi_karanis_bath_house",
+        "category": "bath",
+        "name_latin": "Balneum",
+        "name_english": "Bath House of Karanis",
+        "province": "Aegyptus",
+        "modern_location": "Kom Aushim, Fayum, Egypt",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Karanis's Roman bath held a large plastered room with a brick bench running around the walls and a smaller alcove holding the tub itself, its painted wall decoration still visible when excavators uncovered it. Public baths were a hallmark of Roman provincial life, reaching even a farming village deep in the Faiyum. Its construction is generally placed in the second century CE, most likely after Trajan's reign in 117 CE. The dry site preserved its roof and painted plaster far better than most Roman baths anywhere in the empire.",
+        "sources": [
+          "https://sites.lsa.umich.edu/karanis-collaboratory/um-excavations/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.862467,
+          32.822325
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_zeus_cyrene",
+        "category": "temple",
+        "name_latin": "Templum Iovis",
+        "name_english": "Temple of Zeus",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Cyrene (Shahhat), Libya",
+        "built": -500,
+        "destroyed": 115,
+        "extant_117ce": false,
+        "notes": "Cyrene's largest temple was an octastyle Doric giant begun around 500 BCE, larger in floor area than the Parthenon. Its cella once held a colossal marble Zeus modeled on the Olympian original. Jewish rebels tore through the sanctuary in 115 CE, snapping columns and gutting the roof in the opening violence of the Kitos War. On the day Trajan died the ruin still stood untouched, its rebuilding under Hadrian still years away.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Zeus,_Cyrene",
+          "https://followinghadrian.com/2018/11/05/the-rebuilding-of-cyrene-by-hadrian-in-ad-118-9-hadrian1900/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Zeus_in_Cyrene.jpg?width=800",
+        "image_credit": "Wikimedia Commons",
+        "image_alt": "Standing columns of the Temple of Zeus at Cyrene"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.853,
+          32.8233
+        ]
+      },
+      "properties": {
+        "id": "poi_sanctuary_apollo_cyrene",
+        "category": "sanctuary",
+        "name_latin": "Fanum Apollinis",
+        "name_english": "Sanctuary of Apollo",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Cyrene (Shahhat), Libya",
+        "built": -630,
+        "destroyed": 116,
+        "extant_117ce": false,
+        "notes": "Two springs below the acropolis cliff marked, in myth, where Apollo carried off the nymph Cyrene and fathered the city's founder. Herodotus and Pindar both praised this water, and Greeks built their sacred quarter around it from the 7th century BCE. Jewish rebels burned the temple here in 115-116 CE during the Kitos War. By Trajan's death in August 117 CE the terraces stood scorched, though the spring still ran.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cyrene,_Libya"
+        ],
+        "ancient_sources": [
+          {
+            "author": "Herodotus",
+            "work": "Histories",
+            "ref": "4.158",
+            "note": "Mentions the spring of Apollo at Cyrene."
+          },
+          {
+            "author": "Eusebius",
+            "work": "Chronicle",
+            "ref": "on the reign of Trajan",
+            "note": "Names the temple of Apollo among those torn down by Jewish rebels at Cyrene."
+          }
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cyrene_Apollo_temple.jpg?width=800",
+        "image_credit": "Wikimedia Commons",
+        "image_alt": "Ruins of the Temple of Apollo at Cyrene"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.857,
+          32.8228
+        ]
+      },
+      "properties": {
+        "id": "poi_agora_cyrene",
+        "category": "forum",
+        "name_latin": "Agora",
+        "name_english": "Agora of Cyrene",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Cyrene (Shahhat), Libya",
+        "built": -630,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Cyrene's open civic square held the tomb of Battos, the city's 7th-century BCE founder, and a monument to the naval victory at Actium. Shops and long colonnaded stoas ran along its sides while assemblies and trials filled the open ground between. The square had served as Cyrene's political heart for more than 700 years by the time Trajan died in August 117 CE. Fires from the 115-116 CE Jewish revolt had scorched its porticoes only months before.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cyrene,_Libya"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Agora_of_Cyrene.jpg?width=800",
+        "image_credit": "Wikimedia Commons",
+        "image_alt": "Ruins of the agora at Cyrene"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8586,
+          32.8228
+        ]
+      },
+      "properties": {
+        "id": "poi_caesareum_cyrene",
+        "category": "temple",
+        "name_latin": "Caesareum",
+        "name_english": "Caesareum of Cyrene",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Cyrene (Shahhat), Libya",
+        "built": -150,
+        "destroyed": 116,
+        "extant_117ce": false,
+        "notes": "A 2nd-century BCE gymnasium on Cyrene's acropolis ridge was rebuilt under Augustus into a Doric-colonnaded court honoring the deified Caesar. A civil basilica went up alongside it under the later Flavian emperors, turning the complex into the city's second forum. Jewish rebels badly damaged the Caesareum in the destruction of 115-116 CE. It still lay in ruins when Trajan died in August 117 CE, awaiting Hadrian's restoration.",
+        "sources": [
+          "https://www.karwansaraypublishers.com/en-us/blogs/ancient-history-blog/cyrenaica-part-4-cyrene"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/CireneGinnasio1999.jpg?width=800",
+        "image_credit": "Wikimedia Commons",
+        "image_alt": "Remains of the gymnasium-Caesareum complex at Cyrene"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8518,
+          32.8241
+        ]
+      },
+      "properties": {
+        "id": "poi_baths_trajan_cyrene",
+        "category": "bath",
+        "name_latin": "Thermae Traiani",
+        "name_english": "Baths of Trajan",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Cyrene (Shahhat), Libya",
+        "built": 105,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A bath complex rose on the northwest edge of the Sanctuary of Apollo during Trajan's reign, its hypocaust floors still visible today. Bathers here numbered among the last Cyreneans to enjoy the sanctuary before the Jewish revolt convulsed the city in 115-116 CE. The baths were among the newest buildings standing in Cyrene when Trajan died in August 117 CE. Hadrian later enlarged and restored them.",
+        "sources": [
+          "https://vici.org/vici/18026/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.854,
+          32.8245
+        ]
+      },
+      "properties": {
+        "id": "poi_acropolis_cyrene",
+        "category": "monument",
+        "name_latin": "Arx Cyrenensis",
+        "name_english": "Acropolis of Cyrene",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Cyrene (Shahhat), Libya",
+        "built": -630,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Cyrene's acropolis crowned the western ridge where Greek colonists from Thera first settled around 630 BCE, holding the old royal palace and the spring feeding the Sanctuary of Apollo below. Augustus's proconsul Lucanius Proculus restored its buildings in the early 1st century CE. The hilltop had anchored the city for more than 700 years by the time Trajan died in 117 CE. Violence from the recent Jewish revolt had reached its slopes only months earlier.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cyrene,_Libya"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8575,
+          32.823
+        ]
+      },
+      "properties": {
+        "id": "poi_odeon_cyrene",
+        "category": "theater",
+        "name_latin": "Odeum",
+        "name_english": "Odeon of Cyrene",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Cyrene (Shahhat), Libya",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A small roofed theatre stood tucked behind the Stoa of Hermes and Herakles at the edge of Cyrene's agora, built for council business and public readings rather than the spectacles staged at the city's larger theatre. Its compact covered form let meetings continue through Cyrenaica's rainy winters. The odeon had served the agora quarter for generations by August 117 CE, when Trajan died with the empire at its largest extent.",
+        "sources": [
+          "https://madainproject.com/cyrene"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.858,
+          32.8226
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_proculus_cyrene",
+        "category": "forum",
+        "name_latin": "Forum Proculi",
+        "name_english": "Forum of Proculus",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Cyrene (Shahhat), Libya",
+        "built": -75,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A Roman-period forum stood in Cyrene's civic center, named for Proculus, the official credited with building or restoring it. Over a hundred free-standing Doric columns lined its rectangular court, with a small temple at the center and a basilica along one side. Merchants and magistrates used the space daily as Cyrene's second marketplace and law court. It stood exactly as built when Trajan died in August 117 CE.",
+        "sources": [
+          "https://www.alamy.com/cyrene-forum-proculus-libya-image8385514.html"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.856,
+          32.817
+        ]
+      },
+      "properties": {
+        "id": "poi_demeter_persephone_cyrene",
+        "category": "sanctuary",
+        "name_latin": "Sacrarium Cereris et Proserpinae",
+        "name_english": "Sanctuary of Demeter and Persephone",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Cyrene (Shahhat), Libya",
+        "built": -600,
+        "destroyed": 116,
+        "extant_117ce": false,
+        "notes": "Terraces cut into a ravine south of Cyrene's walls, in the Wadi Bel Ghadir valley, held the sanctuary of Demeter and Persephone, founded around 600 BCE and built up across three sloped levels. Pig bones, lamps, and terracotta figurines left by generations of worshippers came out of its soil by the thousand. Jewish rebels tore down this temple along with five others across the city during the revolt of 115-116 CE. It lay wrecked and unrepaired when Trajan died in August 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Extramural_Sanctuary_of_Demeter_and_Persephone,_Cyrene"
+        ],
+        "ancient_sources": [
+          {
+            "author": "Eusebius",
+            "work": "Chronicle",
+            "ref": "on the reign of Trajan",
+            "note": "Names the temple of Demeter among those destroyed by Jewish rebels at Cyrene."
+          }
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8573,
+          32.8231
+        ]
+      },
+      "properties": {
+        "id": "poi_kitos_war_cyrene",
+        "category": "battle",
+        "name_latin": "Tumultus Iudaicus Cyrenensis",
+        "name_english": "Cyrene Revolt of the Kitos War",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Cyrene (Shahhat), Libya",
+        "built": 115,
+        "destroyed": 117,
+        "extant_117ce": false,
+        "notes": "In 115-116 CE Cyrene's Jewish community rose against Rome under a leader named Lukuas, tearing down the temples of Apollo, Artemis, Hecate, Demeter, Isis, and Pluto. Cassius Dio put the death toll at 220,000 non-Jewish residents of the city and region. Quintus Marcius Turbo, sent by Trajan, crushed the revolt through 117 CE, leaving Cyrene a burned, half-empty city. Hadrian later funded its rebuilding with confiscated rebel property.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kitos_War",
+          "https://followinghadrian.com/2018/11/05/the-rebuilding-of-cyrene-by-hadrian-in-ad-118-9-hadrian1900/"
+        ],
+        "ancient_sources": [
+          {
+            "author": "Cassius Dio",
+            "work": "Roman History",
+            "ref": "68.32.1-3",
+            "note": "States that 220,000 people were killed in Cyrene during the revolt, describing atrocities committed by the rebels."
+          }
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.9705,
+          32.9032
+        ]
+      },
+      "properties": {
+        "id": "poi_harbor_apollonia",
+        "category": "harbor",
+        "name_latin": "Portus Apolloniae",
+        "name_english": "Harbor of Apollonia",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Apollonia (Susa), Libya",
+        "built": -600,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Apollonia served as Cyrene's outport from the city's founding, its anchorage sheltered behind a long stone breakwater built into the Mediterranean. Roman fleets used the harbor as a naval base guarding the Cyrenaican coast. Coastal subsidence has since dropped the ancient harbor works nearly 4 meters underwater, so much of what Roman sailors walked on in 117 CE now lies submerged and visible only through clear water.",
+        "sources": [
+          "https://www.ancientportsantiques.com/a-few-ports/apollonia/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Apollonia_Libya.jpg?width=800",
+        "image_credit": "Wikimedia Commons",
+        "image_alt": "View of the ancient port ruins at Apollonia, Cyrenaica"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.972,
+          32.901
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_apollonia",
+        "category": "theater",
+        "name_latin": "Theatrum Apolloniae",
+        "name_english": "Theatre of Apollonia",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Apollonia (Susa), Libya",
+        "built": -300,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A Greek theatre with rows cut into the hillside outside Apollonia's walls had entertained the port town since the 3rd century BCE. Domitian's engineers added a new stone stage building late in the 1st century CE, updating the old Hellenistic cavea for Roman tastes. The theatre still stood in full use facing the sea when Trajan died in August 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Apollonia_(Cyrenaica)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.9695,
+          32.9019
+        ]
+      },
+      "properties": {
+        "id": "poi_walls_apollonia",
+        "category": "wall",
+        "name_latin": "Moenia Apolloniae",
+        "name_english": "City Walls of Apollonia",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Apollonia (Susa), Libya",
+        "built": -400,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Massive Hellenistic fortification walls ran along Apollonia's shoreline, raised to guard the harbor town from the 4th century BCE onward. They enclosed the city through the Roman conquest of Cyrenaica and stood unbreached through Trajan's reign. In August 117 CE these walls still marked the edge of Roman Apollonia, centuries before Byzantine engineers rebuilt them on a grander scale.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Apollonia_(Cyrenaica)"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Apollonia_-_murailles_(1).jpg?width=800",
+        "image_credit": "Wikimedia Commons",
+        "image_alt": "Hellenistic defensive walls at Apollonia, Cyrenaica"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.97,
+          32.9028
+        ]
+      },
+      "properties": {
+        "id": "poi_baths_apollonia",
+        "category": "bath",
+        "name_latin": "Thermae Hadriani Apolloniae",
+        "name_english": "Roman Baths of Apollonia",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Apollonia (Susa), Libya",
+        "built": 120,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A bathhouse rose on Apollonia's waterfront under Hadrian, just after Trajan's death, and was later restored under Caracalla. Its ruins still stand today beside the ancient harbor mole. In August 117 CE this stretch of shore held only older buildings; Hadrian's baths were still years from being built.",
+        "sources": [
+          "https://lsa.umich.edu/kelsey/research/past-field-projects/apollonia-libya.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.965,
+          32.899
+        ]
+      },
+      "properties": {
+        "id": "poi_necropolis_apollonia",
+        "category": "necropolis",
+        "name_latin": "Necropolis Apolloniae",
+        "name_english": "Necropolis of Apollonia",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Apollonia (Susa), Libya",
+        "built": -600,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Tombs cut into the hills around Apollonia held generations of the port city's dead, including rock-hewn hypogea reused for centuries after their first burials. Rescue excavations in 2012 uncovered three such hypogea and twenty rectangular tombs, some floored in mosaic. The cemetery had already served Apollonia for hundreds of years by the time Trajan died in 117 CE.",
+        "sources": [
+          "https://archeologie.culture.gouv.fr/en/apollonia-susa"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.968,
+          32.9015
+        ]
+      },
+      "properties": {
+        "id": "poi_doric_temple_apollonia",
+        "category": "temple",
+        "name_latin": "Templum Doricum Extramurale",
+        "name_english": "Extramural Doric Temple of Apollonia",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Apollonia (Susa), Libya",
+        "built": -620,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Apollonia's oldest religious building was a Doric temple raised outside the city walls, identified by excavators as the port town's first pagan shrine. Greek settlers built it not long after founding Apollonia around 630 BCE. The temple had stood watch over the approach to the harbor for more than seven centuries when Trajan died in August 117 CE.",
+        "sources": [
+          "https://lsa.umich.edu/kelsey/research/past-field-projects/apollonia-libya.html"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.218208,
+          36.422775
+        ]
+      },
+      "properties": {
+        "id": "poi_capitol_dougga",
+        "category": "temple",
+        "name_latin": "Capitolium Thuggae",
+        "name_english": "Capitol of Dougga",
+        "province": "Africa Proconsularis",
+        "modern_location": "Dougga, Tunisia",
+        "built": 166,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The Capitol crowned Thugga's forum with a temple to Jupiter, Juno and Minerva, dedicated in 166 CE under Marcus Aurelius and Lucius Verus. Byzantine soldiers later built it into their fortress wall, which is why six of its Corinthian columns still stand 12 meters tall today. In 117 CE this corner of the forum held only open pavement. The temple that made Dougga famous was still half a century away.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Dougga",
+          "https://vici.org/vici/7877/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_du_Capitole_(Dougga).JPG?width=800",
+        "image_credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.217,
+          36.4237
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_saturn_dougga",
+        "category": "temple",
+        "name_latin": "Templum Saturni",
+        "name_english": "Temple of Saturn",
+        "province": "Africa Proconsularis",
+        "modern_location": "Dougga, Tunisia",
+        "built": 195,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Rome consecrated this hilltop temple to Saturn in 195 CE, but the ground had been sacred for centuries before that. Excavators found a Punic sanctuary to Baal Hammon underneath, its votive pits packed with neo-Punic stelae from the 2nd century BCE. The Romans renamed the god rather than abandon the site. In 117 CE the old Punic shrine still stood; Saturn's temple was 78 years away.",
+        "sources": [
+          "https://madainproject.com/dougga"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_de_Saturne_3.JPG?width=800",
+        "image_credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.220306,
+          36.423806
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_dougga",
+        "category": "theater",
+        "name_latin": "Theatrum Thuggae",
+        "name_english": "Theatre of Dougga",
+        "province": "Africa Proconsularis",
+        "modern_location": "Dougga, Tunisia",
+        "built": 168,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Dougga's theatre seated 3,500 people and was paid for entirely by one local priest, Publius Marcius Quadratus, who dedicated it in 168-169 CE. Carved into the hillside below the future Capitol site, it still hosts a summer festival today. In 117 CE that hillside was bare rock. Marcus Aurelius had not yet even become emperor.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_theatre_of_Dougga"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theater_of_Dougga_By_night.jpg?width=800",
+        "image_credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2155,
+          36.4195
+        ]
+      },
+      "properties": {
+        "id": "poi_licinian_baths_dougga",
+        "category": "bath",
+        "name_latin": "Thermae Licinianae",
+        "name_english": "Licinian Baths",
+        "province": "Africa Proconsularis",
+        "modern_location": "Dougga, Tunisia",
+        "built": 214,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The Licinii family funded these winter baths for Thugga under Caracalla, around 212-217 CE, nearly a century after Trajan's death. Bathers moved through vaulted halls floored in geometric mosaic before a later inscription under Gallienus recorded repairs. In 117 CE this stretch of the lower town was still open ground with houses, no bathhouse in sight.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Licinian_Baths"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mosaics_at_Licinian_Baths.jpg?width=800",
+        "image_credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.216822,
+          36.423278
+        ]
+      },
+      "properties": {
+        "id": "poi_arch_alexander_severus_dougga",
+        "category": "arch",
+        "name_latin": "Arcus Alexandri Severi",
+        "name_english": "Arch of Alexander Severus",
+        "province": "Africa Proconsularis",
+        "modern_location": "Dougga, Tunisia",
+        "built": 228,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Thugga raised this triumphal arch in 228 CE to thank Alexander Severus for imperial favor, framing the road toward Carthage. It formed one of the town's grandest gateways for travelers arriving from the coast. In 117 CE, 111 years earlier, that road ran past open fields with no arch standing over it.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Arch_of_Alexander_Severus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexander_Severus%27s_arch,_Dougga_(8159160242).jpg?width=800",
+        "image_credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2214,
+          36.4218
+        ]
+      },
+      "properties": {
+        "id": "poi_arch_septimius_severus_dougga",
+        "category": "arch",
+        "name_latin": "Arcus Septimii Severi",
+        "name_english": "Arch of Septimius Severus",
+        "province": "Africa Proconsularis",
+        "modern_location": "Dougga, Tunisia",
+        "built": 205,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Septimius Severus elevated Thugga to a municipium, and the town answered in 205 CE with this triumphal arch on its western approach. The dedication doubled as thanks for the town's new civic status. In 117 CE Thugga was still just a civitas of mixed Numidian and Roman citizens, 88 years from that promotion.",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q2091585"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.21556,
+          36.42278
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_juno_caelestis_dougga",
+        "category": "temple",
+        "name_latin": "Templum Iunonis Caelestis",
+        "name_english": "Temple of Juno Caelestis",
+        "province": "Africa Proconsularis",
+        "modern_location": "Dougga, Tunisia",
+        "built": 230,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Built between 222 and 235 CE under Alexander Severus, this temple wrapped a curved portico of two dozen columns around a shrine to Juno Caelestis, the Romanized form of the Punic moon goddess Tanit. It ranks among the best-preserved temples in Roman Africa. In 117 CE the hillside it occupies was empty ground, more than a century before construction began.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Juno_Caelestis_(Dougga)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Juno_Caelestis_(222-235_AD),_Dougga_(8158878783).jpg?width=800",
+        "image_credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2179,
+          36.4229
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_dougga",
+        "category": "forum",
+        "name_latin": "Forum Thuggae",
+        "name_english": "Forum of Dougga",
+        "province": "Africa Proconsularis",
+        "modern_location": "Dougga, Tunisia",
+        "built": 30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Thugga's forum served as the town's civic heart from the early Roman empire onward, a compact square of roughly 924 square meters ringed by porticoes. A Numidian-era temple to King Masinissa, dedicated in 139 BCE, lies buried beneath its paving. By 117 CE the forum had already anchored daily business for generations, decades before the Capitol rose across its northern edge.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Dougga"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2175,
+          36.4224
+        ]
+      },
+      "properties": {
+        "id": "poi_macellum_dougga",
+        "category": "market",
+        "name_latin": "Macellum Thuggae",
+        "name_english": "Macellum of Dougga",
+        "province": "Africa Proconsularis",
+        "modern_location": "Dougga, Tunisia",
+        "built": 54,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Thugga's covered market opened in 54 CE, a colonnaded courtyard of shops ending in an apse where a statue of Mercury watched over trade. Merchants sold meat, fish and produce here for centuries. By 117 CE the macellum had already served the town for 63 years, one of its oldest standing public buildings.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Dougga"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/March%C3%A9_dougga.jpg?width=800",
+        "image_credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2183,
+          36.4231
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_mercury_dougga",
+        "category": "temple",
+        "name_latin": "Templum Mercurii",
+        "name_english": "Temple of Mercury",
+        "province": "Africa Proconsularis",
+        "modern_location": "Dougga, Tunisia",
+        "built": 185,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A small temple to Mercury stood at the northern edge of Thugga's forum, its rectangular cella flanked by two curved exedrae. It belongs to the same late-2nd-century building phase as the neighboring Square of the Winds, raised between 180 and 192 CE under Commodus. In 117 CE that corner of the forum held no temple at all, just open pavement.",
+        "sources": [
+          "https://madainproject.com/dougga"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2192,
+          36.4233
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_pietas_augusta_dougga",
+        "category": "temple",
+        "name_latin": "Templum Pietatis Augustae",
+        "name_english": "Temple of Augustan Piety",
+        "province": "Africa Proconsularis",
+        "modern_location": "Dougga, Tunisia",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Dougga built this small semicircular temple to Pietas Augusta, Imperial Piety, in the 2nd century CE along the street linking the theatre to the Capitol. Two columns and two pilasters framed its curved facade. In 117 CE that stretch of street ran past ordinary houses; the temple was still generations away.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Dougga"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0615,
+          37.057
+        ]
+      },
+      "properties": {
+        "id": "poi_forum_utica",
+        "category": "forum",
+        "name_latin": "Forum Uticense",
+        "name_english": "Forum of Utica",
+        "province": "Africa Proconsularis",
+        "modern_location": "Utica, Tunisia",
+        "built": -140,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Utica's forum grew unusually large after Rome made the city its first African provincial capital in 146 BCE, following Carthage's destruction. Cato the Younger crossed this square in April 46 BCE before withdrawing to end his own life rather than accept Caesar's clemency. Excavators found the pavement rebuilt across some four centuries of continuous use. By 117 CE it had already anchored the city's civic life for 263 years.",
+        "sources": [
+          "https://www.worldhistory.org/Utica/",
+          "https://www.livius.org/articles/place/utica/"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Plutarch",
+            "work": "Life of Cato the Younger",
+            "ref": "66-70",
+            "note": "Describes Cato's final days and suicide at Utica in April 46 BCE, in the city where this forum stood."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0625,
+          37.0545
+        ]
+      },
+      "properties": {
+        "id": "poi_amphitheatre_utica",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum Uticense",
+        "name_english": "Amphitheatre of Utica",
+        "province": "Africa Proconsularis",
+        "modern_location": "Utica, Tunisia",
+        "built": 125,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Utica's amphitheatre was cut into a hillside south of the forum, part of a wave of public building that transformed the city in the 2nd century CE. It joined a theatre, grand baths and a possible circus as the Roman colony reached its height under Hadrian. In 117 CE that hillside was still undeveloped slope; the amphitheater lay years in the future.",
+        "sources": [
+          "https://www.worldhistory.org/Utica/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0608,
+          37.0575
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_utica",
+        "category": "theater",
+        "name_latin": "Theatrum Uticense",
+        "name_english": "Theatre of Utica",
+        "province": "Africa Proconsularis",
+        "modern_location": "Utica, Tunisia",
+        "built": -20,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Utica built an open-air theatre within its Roman grid after Octavian made the city a municipium in 36 BCE. A second, larger theatre would eventually rise on a nearby hillside in the 2nd century CE. By 117 CE this first theatre had already entertained Utica's residents for about 137 years.",
+        "sources": [
+          "https://www.worldhistory.org/Utica/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0603,
+          37.0568
+        ]
+      },
+      "properties": {
+        "id": "poi_baths_utica",
+        "category": "bath",
+        "name_latin": "Thermae Uticenses",
+        "name_english": "Roman Baths of Utica",
+        "province": "Africa Proconsularis",
+        "modern_location": "Utica, Tunisia",
+        "built": 125,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Utica's extensive baths expanded to monumental scale during the 2nd-century building boom that also gave the city its amphitheater. Bathers moved through halls faced with Proconnesian marble shipped in from across the Mediterranean. In 117 CE that marble hall did not exist yet; the baths as they stand were still ahead under Hadrian's patronage.",
+        "sources": [
+          "https://www.worldhistory.org/Utica/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0618,
+          37.0577
+        ]
+      },
+      "properties": {
+        "id": "poi_house_cascade_utica",
+        "category": "domus",
+        "name_latin": "Domus Cataractae",
+        "name_english": "House of the Cascade",
+        "province": "Africa Proconsularis",
+        "modern_location": "Utica, Tunisia",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The House of the Cascade takes its name from a marble-lined pool where water spilled through a fountain in a Roman townhouse built in the 1st century CE. Its floor mosaics of fishing cupids and tritons predate similar scenes elsewhere in Roman Africa by a full century. Archaeologists still count it among the best-preserved private houses at Utica. By 117 CE the house had stood for decades, its cascade still running for a wealthy Uticensian family.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/House_of_the_Cascade"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Les_ruines_d%27Utique_11.jpg?width=800",
+        "image_credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0621,
+          37.0579
+        ]
+      },
+      "properties": {
+        "id": "poi_house_grand_oecus_utica",
+        "category": "domus",
+        "name_latin": "Domus Magni Oeci",
+        "name_english": "House of the Grand Oecus",
+        "province": "Africa Proconsularis",
+        "modern_location": "Utica, Tunisia",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The House of the Grand Oecus was the largest private residence excavated at Utica, its formal reception hall opening onto a garden pool. Wealthy owners occupied it for more than 400 years, from the early empire into late antiquity. Mosaics of fish and dolphins hint at an owner tied to the maritime trade running through Utica's harbor. In 117 CE the house was already an established fixture of the city's elite quarter.",
+        "sources": [
+          "https://madainproject.com/utica"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.057,
+          37.0605
+        ]
+      },
+      "properties": {
+        "id": "poi_harbor_utica",
+        "category": "harbor",
+        "name_latin": "Portus Uticensis",
+        "name_english": "Harbor of Utica",
+        "province": "Africa Proconsularis",
+        "modern_location": "Utica, Tunisia",
+        "built": -700,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Utica's harbor served ships for centuries before the Mejerda River's silt pushed the coastline more than 10 kilometers away, stranding the ancient port far inland. Phoenician sailors had used this anchorage since at least the 8th century BCE, making it older than Carthage's own harbor by tradition. French engineer A. Daux first traced its quays in 1869. In 117 CE the harbor still opened directly onto the Mediterranean, moving grain for Rome's African province.",
+        "sources": [
+          "https://hakaimagazine.com/news/finding-uticas-hidden-harbor/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.064,
+          37.053
+        ]
+      },
+      "properties": {
+        "id": "poi_necropolis_utica",
+        "category": "necropolis",
+        "name_latin": "Necropolis Punica Uticensis",
+        "name_english": "Punic Necropolis of Utica",
+        "province": "Africa Proconsularis",
+        "modern_location": "Utica, Tunisia",
+        "built": -700,
+        "destroyed": -400,
+        "extant_117ce": false,
+        "notes": "Utica's Punic-period cemeteries, known as Ile and La Berge, held cremation burials dating from the 7th to the 5th century BCE. Grave goods and urns recovered here document the city's earliest Phoenician settlers, generations before Carthage rose to prominence nearby. The burial grounds fell out of use long before Rome's arrival. By 117 CE this necropolis had already lain abandoned for roughly 400 years, buried beneath the Roman colony above it.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Utica,_Tunisia"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
