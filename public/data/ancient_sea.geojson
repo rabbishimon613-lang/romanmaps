@@ -34,6 +34,269 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ravenna lagoon (117 CE reconstruction)",
+        "note": "Approximate ancient lagoon shoreline in 117 CE. Roman Ravenna sat directly on a lagoon system on the Adriatic, like early Venice, with Augustus's naval base Classis built on stilts in the water ~4 km southeast of the city. Continuous Po-delta silting has since pushed the coast roughly 9 km further east. Sources: Bondesan et al., geomorphological studies of the Po delta and Venice lagoon; Water Museums of Venice, fossil dune-barrier chronology. Approximate reconstruction — exact 117 CE shoreline is not surveyed, only the direction and rough magnitude of the shift."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [12.20, 44.43],
+            [12.24, 44.44],
+            [12.30, 44.42],
+            [12.34, 44.40],
+            [12.35, 44.37],
+            [12.32, 44.34],
+            [12.27, 44.33],
+            [12.23, 44.35],
+            [12.20, 44.38],
+            [12.19, 44.41],
+            [12.20, 44.43]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ephesus harbor (117 CE reconstruction)",
+        "note": "Approximate ancient harbor embayment in 117 CE. Silting from the Kucuk Menderes (ancient Cayster) river had already forced one relocation of the city and harbor westward around 290 BCE; under Roman rule the harbor near the theater and Arcadiane street was kept open by repeated dredging. The surrounding marine inlet is now several kilometers of dry floodplain west of the ruins. Sources: Kraft, Rapp, Bruckner, Kayan, \"The Geographies of Ancient Ephesus and the Artemision in Anatolia,\" Geoarchaeology (2007); Bruckner, \"Demise of a harbor: a geochemical chronicle from Ephesus.\" This is the most rigorously mapped case of the eleven palaeo-coast patches; exact 117 CE shoreline is still an informed approximation."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [27.340, 37.955],
+            [27.320, 37.965],
+            [27.290, 37.968],
+            [27.270, 37.960],
+            [27.260, 37.945],
+            [27.280, 37.930],
+            [27.310, 37.925],
+            [27.335, 37.935],
+            [27.340, 37.945],
+            [27.340, 37.955]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Miletus harbor (117 CE reconstruction)",
+        "note": "Approximate ancient harbor embayment in 117 CE. Silting from the Buyuk Menderes (Maeander) river had closed most of the wider Latmian Gulf by the early Roman period, but Miletus's own Lion, Theatre and Athena harbors still functioned as a reduced embayment — the city did not fully lose sea access until roughly 1500 CE. Sources: Bruckner et al., \"On the Lion Harbour and other harbours in Miletos\"; Stock, Pint, Horejs, Bruckner, \"From Archipelago to Floodplain\"; Seeliger, Bruckner et al., \"Delta Evolution and Culture\" (Quaternary International). Patch sized conservatively — a residual embayment, not the full earlier gulf."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [27.270, 37.545],
+            [27.300, 37.550],
+            [27.330, 37.545],
+            [27.350, 37.530],
+            [27.340, 37.510],
+            [27.310, 37.500],
+            [27.280, 37.505],
+            [27.265, 37.520],
+            [27.270, 37.545]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Priene tidal inlet (117 CE reconstruction)",
+        "note": "Approximate ancient tidal inlet in 117 CE. Priene's original harbor town was already unusable by the mid-4th century BCE, forcing a relocation onto the slope of Mount Mycale; by Strabo's time (c. 20 CE) the sea had already receded roughly 5 Roman miles from the relocated city. By 117 CE only a narrow marshy tidal channel remained near the city's foot. Sources: Seeliger, Bruckner et al., \"Delta Evolution and Culture — Aspects of Geoarchaeological Research in Miletos and Priene\"; Strabo, Geography 14.1.10; \"Facing the challenges of the siltation of a sea gulf,\" Mediterranean Historical Review 40:1 (2025). Deliberately the smallest, most conservative patch of the set."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [27.295, 37.658],
+            [27.305, 37.660],
+            [27.310, 37.652],
+            [27.305, 37.645],
+            [27.293, 37.645],
+            [27.288, 37.652],
+            [27.295, 37.658]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Latmian Gulf remnant (117 CE reconstruction)",
+        "note": "Approximate surviving arm of the once-large Latmian Gulf in 117 CE, east of Miletus toward what is now the brackish Lake Bafa — the last visible remnant of the gulf the Maeander river filled in. Delta progradation on the gulf's northwest (Priene) and southeast (Miletus) shores was largely complete by 0 CE, but this deeper eastern basin persisted longer. Sources: Kraft, Bruckner et al., \"From the Gulf of Latmos to Lake Bafa\"; CIESM, \"Holocene coastal evolution of western Anatolia.\" Shown as a separate patch from the Miletus and Priene embayments per the source geoarchaeology, though geographically part of the same silted system."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [27.360, 37.520],
+            [27.420, 37.530],
+            [27.460, 37.510],
+            [27.450, 37.480],
+            [27.400, 37.470],
+            [27.360, 37.490],
+            [27.360, 37.520]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Scamander plain, Troy (117 CE reconstruction)",
+        "note": "Approximate residual marsh/floodplain south of Troy (Hisarlik) in 117 CE. The marine embayment that once reached ~10 km inland of the citadel had mostly silted from the Scamander and Simois rivers well before the Roman period — most of the dramatic infilling predates 117 CE, leaving an alluvial plain and marshland rather than open water by Trajan's reign. Sources: Kraft, Rapp, Kayan, \"Geomorphic Reconstructions in the Environs of Ancient Troy,\" Science 209 (1980); Kayan, \"Trojan Plain and Homeric Topography.\" The smallest and most conservative of the Anatolian patches, reflecting how little open water remained by 117 CE."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [26.240, 39.955],
+            [26.260, 39.945],
+            [26.250, 39.920],
+            [26.210, 39.900],
+            [26.180, 39.905],
+            [26.190, 39.930],
+            [26.210, 39.950],
+            [26.240, 39.955]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lacus Flevo, Rhine-Meuse delta (117 CE reconstruction)",
+        "note": "Approximate extent of Lacus Flevo, the freshwater lake ancestor of the later Zuiderzee/IJsselmeer, in 117 CE. Most of modern Flevoland province was open lake water in the Roman period — it is 20th-century reclaimed polder land today, connected to the Rhine by the Roman-dug Fossa Drusiana canal. Sources: Cohen, Hijma et al., \"Paleogeographic evolution and avulsion history of the Holocene Rhine-Meuse delta,\" Netherlands Journal of Geosciences; Vos & de Vries, \"Atlas of the Holocene Netherlands\"; Van Dinter et al., \"Roman limes in the Netherlands: how a delta landscape determined the location of military structures.\" A companion patch below the Helinium estuary covers the Roman-era Meuse/Waal river mouth, now the reclaimed Hoeksche Waard/Goeree-Overflakkee islands."
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [5.15, 52.55],
+              [5.45, 52.58],
+              [5.75, 52.50],
+              [5.70, 52.38],
+              [5.40, 52.35],
+              [5.15, 52.40],
+              [5.15, 52.55]
+            ]
+          ],
+          [
+            [
+              [3.85, 51.83],
+              [4.10, 51.85],
+              [4.35, 51.80],
+              [4.30, 51.68],
+              [4.05, 51.65],
+              [3.85, 51.70],
+              [3.85, 51.83]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Fens (117 CE reconstruction)",
+        "note": "Approximate extent of the wild fen/marsh basin around the Wash in 117 CE. Roman engineers built the Fen Causeway (Peterborough-March-Denver) and the Car Dyke along the fen edge, but these improved access and drained only the fringes — the basin itself stayed reed bed, peat bog and tidal creek until Cornelius Vermuyden's 17th-century \"Great Draining\" and later steam-pump reclamation turned it into farmland. Sources: Institution of Civil Engineers, \"Draining the Fens: Land Reclamation Engineering Solutions\"; Britannica, \"Fens\"; The History Press, \"A short history of the Fens.\" Shown as the full historic basin rather than fine internal wet/dry detail, which no single source maps precisely for 117 CE."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-0.55, 52.90],
+            [-0.10, 53.05],
+            [0.40, 52.90],
+            [0.50, 52.60],
+            [0.20, 52.25],
+            [-0.10, 52.25],
+            [-0.30, 52.40],
+            [-0.45, 52.65],
+            [-0.55, 52.90]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Romney Marsh (117 CE reconstruction)",
+        "note": "Approximate extent of the tidal marsh and inlet in 117 CE, enclosed by a shingle barrier running from Fairlight Head to a foreland near Lympne. The Roman fort of Portus Lemanis (Stutfall Castle) sat directly on this shoreline below Lympne — silting has since stranded it roughly 5 km inland. Some Roman-period reclamation existed at the marsh edges, but the interior stayed tidal marsh until Saxon and later medieval works; the often-cited \"Rhee Wall\" is a 13th-century structure, not Roman. Sources: Eddison, \"The Reclamation of Romney Marsh: Some Aspects Re-considered,\" Archaeologia Cantiana 99; Kent History & Archaeology, \"Romney Marsh in the Roman period.\""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0.60, 50.87],
+            [0.75, 50.96],
+            [0.95, 51.00],
+            [1.03, 51.08],
+            [1.00, 51.02],
+            [0.97, 50.92],
+            [0.85, 50.88],
+            [0.70, 50.88],
+            [0.60, 50.87]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lake Fucinus (117 CE reconstruction)",
+        "note": "Approximate extent of Lake Fucinus, central Italy's third-largest lake until modern drainage, in 117 CE. Claudius's 5-6 km outlet tunnel through Monte Salviano (completed 52 CE) reduced the lake, but the tunnel silted and partly failed soon after his reign, and the lake substantially reflooded — full drainage only came under the Torlonia family, 1862-1875. The historic basin is now the Piana del Fucino agricultural plain. Sources: Suetonius, Life of Claudius 20-21; \"Tunnels of Claudius\" scholarship on the tunnel's post-completion failure; Britannica, \"Fucino Basin.\" Drawn close to the lake's historic maximum extent as a defensible approximation for a reign 45-65 years after Claudius's tunnel, whose exact 117 CE water level is not pinned to a specific figure in the sources found."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [13.40, 42.05],
+            [13.45, 42.09],
+            [13.53, 42.09],
+            [13.60, 42.06],
+            [13.66, 42.02],
+            [13.65, 41.97],
+            [13.58, 41.95],
+            [13.50, 41.96],
+            [13.43, 41.99],
+            [13.40, 42.05]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lake Copais (117 CE reconstruction)",
+        "note": "Approximate extent of Lake Copais, Boeotia's great seasonal lake, in 117 CE. Bronze Age Mycenaeans had drained much of the basin with dams, canals and tunnels, but that system collapsed by the end of the Bronze Age; a Hellenistic attempt by the engineer Crates of Chalcis met mixed success. Strabo, writing close to this period, describes the lake still fluctuating hugely by season — sometimes flooding the whole valley, sometimes shrinking to reed-choked fen — with no strong evidence it was drained again before the modern era (1880s-1930s). Sources: Strabo, Geography 9.2.18; Knauss, Kountouri et al., \"Mysteries of Lake Copais\"; Wikipedia, \"Lake Copais.\" Drawn at roughly a typical wet-season extent, since even ancient sources describe the shoreline as fluctuating rather than fixed."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [22.83, 38.50],
+            [22.95, 38.52],
+            [23.10, 38.50],
+            [23.25, 38.46],
+            [23.28, 38.40],
+            [23.18, 38.36],
+            [23.00, 38.37],
+            [22.87, 38.42],
+            [22.83, 38.50]
+          ]
+        ]
+      }
     }
   ]
 }
