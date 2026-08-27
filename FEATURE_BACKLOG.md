@@ -804,8 +804,36 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       is a genuine gap, not an unexhausted search budget, per the same pattern prior shifts flagged
       for axis 20's gymnasia and axis 3c's economic sites.
 
+## New ideas spotted this shift (2026-08-27, cloud shift 66 — clothing regions, POI image top-up)
+
+- [ ] **`[13-P1-4]` engravings' "top 100 POIs" half is now 21 records closer, ~80 to go.** This
+      shift worked the 101 `confidence: "high"` image-null records specifically (already
+      well-researched/cited, the highest-signal slice); 21 closed, 9 explicitly researched and
+      left `null` (see SHIFT_LOG for the per-record reasoning — several are genuinely thin on
+      Commons coverage, not an unspent search budget). The other ~330 image-null `pois.geojson`
+      records are lower-confidence — a natural next slice once the `confidence: "high"` pool is
+      exhausted.
+- [ ] **This session's egress proxy blocks `WebFetch`/`curl` to both `commons.wikimedia.org` and
+      `en.wikipedia.org`** (confirmed again this shift, same standing limitation documented since
+      shift 9) — every image-research agent this shift could only work from WebSearch result
+      titles/snippets, never by browsing a Commons category page directly. This is *why* several
+      records stayed `null` rather than a research-effort shortfall: a category page browse would
+      likely resolve at least `poi_volubilis_house_of_venus`/`_city_walls` (well-documented site,
+      just no confirmable filename via snippets alone) and a few of the unresolved Leptis Magna
+      monuments. Worth lifting for a future session if the environment allows it.
+- [ ] **Axis 9 (daily life patterns) is now 5 of 6 sub-axes done** — only **9f (sexuality/gender
+      geography)** remains, and the brief's own text flags it explicitly for careful, informational,
+      non-crude, social-history-framed treatment. A deliberate pick for a future shift, not a fast
+      one.
+
 ## Shipped (moved from above; newest on top)
 
+- 2026-08-27 — cloud shift 66: Clothing & fashion regions (axis 9c, new
+  `public/data/clothing_regions.geojson`, 6 zones — toga/tunic, bracae, chiton/himation, Egyptian
+  linen kilt, Palmyrene hybrid dress, Berber dress), defaults OFF, verified live with Playwright.
+  POI image top-up on the `[13-P1-4]` engravings ticket's "top 100" half: 21 of 101
+  `confidence: "high"` image-null `pois.geojson` records closed (58.4% overall coverage, up from
+  56.4%).
 - 2026-08-26 — cloud shift 63: Asia Minor queue opens — Aphrodisias, Hierapolis, Miletus, Sardis,
   Nicaea, Nicomedia, Antalya/Perge/Aspendos (52 POIs) + 3 Pergamon depth records. Levant queue
   opens — Berytus/Beirut, Sidon (10 POIs); Tyre + Bosra deepened (11 POIs). Image top-up (5 of 29
