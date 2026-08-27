@@ -44,6 +44,9 @@ export const SITES: SiteInfo[] = [
     founded: "~350 BCE (castrum)",
     blurb: "Rome's port at the mouth of the Tiber, at its commercial peak under Trajan.",
     today: "An uninhabited archaeological park near Rome's Fiumicino airport; no modern town overlies it, so the ancient street grid, warehouses, and theatre are fully walkable." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ostia_antica_1.JPG?width=800",
+    image_credit: "Modern photograph of the Ostia Antica archaeological site · Wikimedia Commons",
+    image_alt: "General view of the ancient Roman port city ruins at Ostia Antica",
     excavation: [
           { year: "1802-1805", excavator: "Giuseppe Petrini (under Pope Pius VII)", note: "Early papal-era digging around the Capitolium, the Round Temple, the Basilica, and the Forum baths, done without scientific method.", source: "ostia-antica.org: History of the Excavations - The Early 19th Century" },
           { year: "1855-1870", excavator: "Pietro Ercole Visconti and Carlo Ludovico Visconti (under Pope Pius IX)", note: "Excavations aimed mainly at recovering inscriptions, statues, mosaics, and paintings, many of which were carried off to the Vatican and Lateran museums.", source: "ostia-antica.org: History of the Excavations - The Later 19th Century" },
@@ -54,6 +57,9 @@ export const SITES: SiteInfo[] = [
     founded: "6th c. BCE (Oscan)",
     blurb: "Buried 79 CE by Vesuvius. Frozen at that moment — houses, shops, graffiti and all.",
     today: "An uninhabited, fully excavated UNESCO World Heritage site and one of Italy's most-visited attractions, still yielding new discoveries from the 79 CE eruption.",
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Pompeii_Forum_and_Vesuvius_(24124047176).jpg?width=800",
+    image_credit: "Modern photograph of the Pompeii Forum with Mount Vesuvius behind it · Wikimedia Commons",
+    image_alt: "The Forum of Pompeii with Mount Vesuvius rising behind the ruined columns",
     snapshotNote: "Buried by Vesuvius 38 years before this map's 117 CE snapshot. Shown here from its excavated ruins, not as a living city of the empire." ,
     excavation: [
           { year: "1748", excavator: "Rocque Joaquin de Alcubierre (for King Charles III of Naples)", note: "Launched the first organized digging at Pompeii, though early work amounted to treasure hunting — valuable objects were removed and structures were often reburied.", source: "Britannica: Pompeii - History of excavations" },
@@ -65,6 +71,9 @@ export const SITES: SiteInfo[] = [
     founded: "6th c. BCE",
     blurb: "Coastal resort town buried by Vesuvius. Wood, papyri, and food survived under 20m of pyroclastic mud.",
     today: "Only partly excavated; the modern town of Ercolano sits atop much of the unexcavated remains, UNESCO-listed jointly with Pompeii.",
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Engraving_showing_two_putti_using_a_Roman_workbench,_based_on_a_fresco_from_the_ruins_of_Herculaneum.jpg?width=800",
+    image_credit: "18th-century engraving after a Herculaneum fresco · Wikimedia Commons",
+    image_alt: "18th-century engraving of two putti at a Roman workbench, copied from a fresco discovered at Herculaneum",
     snapshotNote: "Buried by Vesuvius 38 years before this map's 117 CE snapshot. Shown here from its excavated ruins, not as a living city of the empire." ,
     excavation: [
           { year: "1709", excavator: "Prince Emmanuel Maurice d'Elbeuf", note: "After a farmer digging a well hit marble fragments, d'Elbeuf tunneled into the spot and, without realizing it, began looting the stage building of Herculaneum's Roman theatre.", source: "historyandarchaeologyonline.com: The Rediscovery and Excavation of Herculaneum" },
@@ -76,6 +85,9 @@ export const SITES: SiteInfo[] = [
     founded: "10th c. BCE (Ionian)",
     blurb: "Capital of the province of Asia, home of the Temple of Artemis (one of the Seven Wonders) and the Library of Celsus.",
     today: "An uninhabited UNESCO World Heritage archaeological site by the town of Selcuk, Turkey, one of the best-preserved ancient cities in the Mediterranean." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ephesus_-_Celsus_Library.jpg?width=800",
+    image_credit: "Modern photograph of the Library of Celsus, Ephesus · Wikimedia Commons",
+    image_alt: "Facade of the Library of Celsus at the ancient city of Ephesus",
     excavation: [
           { year: "1863-1874", excavator: "John Turtle Wood (British engineer, for the British Museum)", note: "Searched for and, after six years, located the remains of the Temple of Artemis, one of the Seven Wonders of the Ancient World.", source: "bestephesustours.com: Ephesus Excavation History" },
           { year: "1895", excavator: "Otto Benndorf, later the Austrian Archaeological Institute (founded 1898)", note: "Began the systematic excavation of Ephesus the Austrian Archaeological Institute has directed ever since, pausing only during the two World Wars.", source: "oeaw.ac.at: Exploring Ephesos - Research History" },
@@ -85,6 +97,9 @@ export const SITES: SiteInfo[] = [
     founded: "100 CE by Trajan",
     blurb: "A veterans' colony founded by Trajan for Legio III Augusta. A textbook Roman grid, 17 years old at our snapshot.",
     today: "Uninhabited since a 7th-century Arab invasion; now a fully excavated, empty UNESCO World Heritage archaeological park in the Aures Mountains near Batna, Algeria." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Timgad_Ruins_Panorama_(banner).jpg?width=800",
+    image_credit: "Modern photograph, panorama of the Timgad ruins · Wikimedia Commons",
+    image_alt: "Panoramic view of the Roman ruins of Timgad, Algeria",
     excavation: [
           { year: "1765", excavator: "James Bruce (Scottish explorer)", note: "Rediscovered the ruins of Timgad, though no systematic excavation followed for well over a century.", source: "Wikipedia: Timgad" },
           { year: "1880s-1900s", excavator: "Albert Ballu and Stephane Gsell (French colonial administration)", note: "Led systematic French excavations beginning in the 1880s that uncovered the well-preserved grid-planned Roman colonia, work that continued under French administration until 1960.", source: "Timgad excavation history, general sources" },
@@ -93,6 +108,9 @@ export const SITES: SiteInfo[] = [
     founded: "96 CE by Nerva",
     blurb: "Mountain colony of veterans (Roman Cuicul), contemporary with Timgad. Its stepped forum climbs the hillside.",
     today: "Uninhabited UNESCO World Heritage Roman ruins on a mountain plateau, prized for their mosaics, near a small namesake village in northern Algeria." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/The_Arch_of_Caracalla,_Cuicul_(Dj%C3%A9mila),_Numidia,_Algeria.jpg?width=800",
+    image_credit: "Modern photograph of the Arch of Caracalla, Djemila (ancient Cuicul) · Wikimedia Commons",
+    image_alt: "The Arch of Caracalla amid the Roman ruins of Djemila, Algeria",
     excavation: [
           { year: "1839", excavator: "Expedition under Ferdinand Philippe (son of King Louis-Philippe of France)", note: "A French military expedition first came across the ruins of ancient Cuicul.", source: "worldhistoryedu.com: Ancient Roman City of Cuicul" },
           { year: "1909 onward", excavator: "French colonial excavation service", note: "Site rediscovered during construction of a modern road, triggering sustained French excavation through the first half of the 20th century.", source: "Djemila excavation history, general sources" },
@@ -102,6 +120,9 @@ export const SITES: SiteInfo[] = [
     founded: "3rd c. BCE (Berber)",
     blurb: "Frontier city at the edge of the empire, only recently annexed (44 CE). Olive-oil boom town.",
     today: "An uninhabited UNESCO World Heritage site near Meknes, Morocco; abandoned in the 11th century, its stones later quarried to help build Meknes." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Volubilis_Arch_of_Caracalla_south_side.jpg?width=800",
+    image_credit: "Modern photograph of the Arch of Caracalla, Volubilis · Wikimedia Commons",
+    image_alt: "Triumphal Arch of Caracalla at the Roman ruins of Volubilis, Morocco",
     excavation: [
           { year: "1887", excavator: "Henri de la Martiniere and later Marcel and Jane Dieulafoy", note: "Conducted early exploratory work at Volubilis before formal French administration of the site began.", source: "Volubilis excavation history, general sources" },
           { year: "1915-1941", excavator: "Louis Chatelain (Service des Antiquites du Maroc, ordered by Resident-General Hubert Lyautey)", note: "Directed systematic French Protectorate-era excavation that uncovered the basilica, Capitoline temple, and many mosaic-floored townhouses; about half the city has been excavated in total.", source: "Wikipedia: Louis Chatelain" },
@@ -110,6 +131,9 @@ export const SITES: SiteInfo[] = [
     founded: "1000 BCE (Phoenician)",
     blurb: "Phoenician foundation, later home of emperor Septimius Severus. Its 2nd-century monumental core was still being planned in 117 CE.",
     today: "An uninhabited UNESCO World Heritage site on Libya's coast, well preserved, and reopening to visitors as Libya's tourism slowly recovers." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Leptis_Magna_Arch_of_Septimius_Severus.jpg?width=800",
+    image_credit: "Modern photograph of the Arch of Septimius Severus, Leptis Magna · Wikimedia Commons",
+    image_alt: "The Arch of Septimius Severus at the ruins of Leptis Magna, Libya",
     excavation: [
           { year: "1816", excavator: "Hanmer George Warrington (British consul-general) with artist Augustus Earle", note: "Obtained permission from the local Ottoman governor to remove dozens of columns, capitals, and inscribed slabs from Leptis Magna for shipment to England.", source: "heritagedaily.com: The Leptis Magna Roman Ruins Near London" },
           { year: "1920s-1930s", excavator: "Italian Antiquities Service, including Pietro Romanelli", note: "Italian colonial-era excavation, beginning in earnest from 1911 and intensifying in the 1920s, uncovered most of the site's main monuments, including the Augustan theatre, the amphitheatre, the Hadrianic baths, and the Severan forum.", source: "Wikipedia: Pietro Romanelli" },
@@ -118,6 +142,9 @@ export const SITES: SiteInfo[] = [
     founded: "5th c. BCE",
     blurb: "One of the three cities of Tripolitania. Its theatre is one of the largest surviving anywhere in North Africa.",
     today: "An uninhabited UNESCO World Heritage site on Libya's coast, placed on UNESCO's List of World Heritage in Danger in 2016 due to conflict-related damage and neglect." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Theatre_of_Sabratha,_Libya.jpg?width=800",
+    image_credit: "Modern photograph of the Roman theatre at Sabratha · Wikimedia Commons",
+    image_alt: "The restored Roman theatre at Sabratha, Libya",
     excavation: [
           { year: "1921-1929", excavator: "Italian Antiquities Service (colonial Libya)", note: "Began exploration and excavation of the Roman coastal city under Italian colonial administration.", source: "africanworldheritagesites.org: Archaeological site of Sabratha" },
           { year: "1923-1928", excavator: "Renato Bartoccini", note: "Began excavating and restoring the amphitheatre (1924-1926) and started clearing the theatre, then just a mound of sand and masonry, in 1927.", source: "Ancient theater of Sabratha, general sources" },
@@ -127,6 +154,9 @@ export const SITES: SiteInfo[] = [
     founded: "170 BCE (Seleucid)",
     blurb: "Best-preserved of the Decapolis cities (Roman Gerasa). Oval forum, colonnaded cardo, Temple of Artemis.",
     today: "A living Jordanian city of around 50,000 whose homes sit alongside ancient Gerasa's ruins, one of the best-preserved Greco-Roman cities outside Italy." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Jerash_Roman_Ruins.jpg?width=800",
+    image_credit: "Modern photograph of the Roman ruins of Jerash · Wikimedia Commons",
+    image_alt: "Colonnaded Roman ruins at Jerash, Jordan",
     excavation: [
           { year: "1928-1934", excavator: "Yale University, with the British School of Archaeology in Jerusalem and the American Schools of Oriental Research", note: "Conducted the first major systematic excavation of Gerasa, with results published in the landmark 1938 report 'Gerasa, City of the Decapolis,' edited by Carl H. Kraeling.", source: "Gerasa, City of the Decapolis (Kraeling, ed., 1938)" },
           { year: "2011-2016", excavator: "Danish-German Jerash Northwest Quarter Project (Aarhus University and Munster/Ruhr University Bochum)", note: "Excavated the previously unexplored Northwest Quarter, the highest point in the walled city, uncovering building phases through the city's destruction in the AD 749 earthquake.", source: "projects.au.dk: The Danish-German Jerash Northwest Quarter Project" },
@@ -135,6 +165,9 @@ export const SITES: SiteInfo[] = [
     founded: "1st c. BCE (Aramean)",
     blurb: "Caravan city on the trade route between Rome and the Silk Road. Great colonnaded street, Temple of Bel.",
     today: "Uninhabited and badly damaged by ISIS occupation from 2015 to 2017, which destroyed the Temple of Bel, the Baalshamin temple, and the Arch of Triumph; restoration efforts continue." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/L.F.Cassas-Palmyra.jpg?width=800",
+    image_credit: "Louis-Francois Cassas, late 18th century · Wikimedia Commons",
+    image_alt: "Late-18th-century drawing by Louis-Francois Cassas depicting the ruins of Palmyra",
     excavation: [
           { year: "1902", excavator: "Otto Puchstein (German expedition)", note: "German archaeologists began the first general excavations at Palmyra in 1902, followed by further German work under Theodor Wiegand in 1917.", source: "culture.gouv.fr: archaeological missions at Palmyra" },
           { year: "1929", excavator: "Henri Seyrig, Directorate General of Antiquities of Syria and Lebanon", note: "Frenchman Henri Seyrig began intensive excavation of the site in 1929, a campaign later interrupted by the Second World War.", source: "Getty Research Institute: The Legacy of Ancient Palmyra" },
@@ -144,6 +177,9 @@ export const SITES: SiteInfo[] = [
     founded: "1st c. BCE (Roman colony)",
     blurb: "Roman Heliopolis. Temple of Jupiter — one of the largest sanctuaries in the empire. Still under construction in Trajan's day.",
     today: "A living Lebanese city of roughly 80,000 in the Bekaa Valley; its UNESCO-listed Roman temples of Jupiter and Bacchus stand within the modern town." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/David_Roberts_-_Baalbec_-_Ruins_of_the_Temple_of_Bacchus_-_Google_Art_Project.jpg?width=800",
+    image_credit: "David Roberts, 1839 · Wikimedia Commons",
+    image_alt: "David Roberts' 1839 painting of the ruins of the Temple of Bacchus at Baalbek",
     excavation: [
           { year: "1898-1904", excavator: "German archaeological mission under Otto Puchstein and Theodor Wiegand", note: "After Kaiser Wilhelm II toured the site in 1898, a German expedition of about a dozen archaeologists with roughly 400 local workers cleared the temple complex, largely complete by 1904.", source: "Wikipedia: Theodor Wiegand; Penn Museum Journal: Baalbek" },
           { year: "1997-2000s", excavator: "German Archaeological Institute (DAI) with Lebanon's Directorate General of Antiquities, led by Margarete van Ess", note: "A renewed Lebanese-German research program dug soundings beneath the Temple of Jupiter podium and found occupation layers reaching back to the Neolithic, well before the Roman temples.", source: "dainst.org: Archaeological and architectural research in Baalbek" },
@@ -152,6 +188,9 @@ export const SITES: SiteInfo[] = [
     founded: "753 BCE (traditional)",
     blurb: "Caput mundi. Around 1 million people in 117 CE — the largest city on earth for centuries either side.",
     today: "Italy's capital of nearly 3 million people; the Colosseum, Forum, and Palatine form a fenced, uninhabited archaeological park inside the UNESCO-listed historic centre." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Claude_-_The_Campo_Vaccino,_Rome_-_Google_Art_Project.jpg?width=800",
+    image_credit: "Claude Lorrain, 1636 · Wikimedia Commons",
+    image_alt: "17th-century painting of the Roman Forum (Campo Vaccino) by Claude Lorrain",
     excavation: [
           { year: "1803", excavator: "Carlo Fea", note: "Fea began clearing debris near the Arch of Septimius Severus in 1803, marking the start of systematic excavation of the Roman Forum.", source: "hmdb.org: Roman Forum, History of the Excavations" },
           { year: "1861-1870", excavator: "Pietro Rosa, patronized by Napoleon III", note: "A decade of excavations on the Palatine Hill, funded by the French emperor, exposed the hill's northern face and the foundations that still form the backdrop to the Forum today.", source: "Wikipedia: Pietro Rosa" },
@@ -162,6 +201,9 @@ export const SITES: SiteInfo[] = [
     founded: "89 CE (legionary fortress)",
     blurb: "Base of Legio II Adiutrix on the Danube frontier. The proconsul Hadrian lived here just before becoming emperor in 117.",
     today: "Buried beneath modern Budapest's Obuda district; an open-air ruin garden and museum preserve excavated sections within the living city." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Aquincum_Amphitheatre_01.jpg?width=800",
+    image_credit: "Modern photograph of the civil amphitheatre at Aquincum · Wikimedia Commons",
+    image_alt: "Ruins of the Roman civil amphitheatre at Aquincum, Budapest",
     excavation: [
           { year: "1778", excavator: "Local discovery (unearthed during construction)", note: "Part of the legionary fortress's bath complex, including Roman underfloor heating, was uncovered in 1778, among the earliest recorded finds at the site.", source: "Hungarian National Digital Archive: Aquincum, Roman ruins" },
           { year: "1860s", excavator: "Gusztav Zsigmondy", note: "Surveyed the visible remains of the Contra Aquincum fort and the baths of the governor's palace in the 1860s.", source: "aquincum.hu: Research and Museum History of Aquincum" },
@@ -171,6 +213,9 @@ export const SITES: SiteInfo[] = [
     founded: "40 CE",
     blurb: "Major Danube legionary base and the civilian city that grew beside it. Marcus Aurelius later wrote parts of the Meditations here.",
     today: "An uninhabited archaeological park and open-air museum near Petronell-Carnuntum, Austria, with reconstructed Roman houses, part of the UNESCO Danube Limes." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Carnuntum_Heidentor.jpg?width=800",
+    image_credit: "Modern photograph of the Heidentor at Carnuntum · Wikimedia Commons",
+    image_alt: "The Heidentor triumphal-arch ruin at Carnuntum, Austria",
     excavation: [
           { year: "1884", excavator: "Carnuntum Association (Alois Hauser, Josef Dell, Carl Tragau)", note: "Founding of the Carnuntum Association in 1884 launched the first large-scale, systematic excavations of the legionary camp and civilian town.", source: "carnuntum.at: The key to antiquity" },
           { year: "1947", excavator: "Erich Swoboda, on behalf of the province of Lower Austria", note: "Resumed excavation of the civilian town, building on work begun in the 1930s; the exposed ruins were restored into an open-air museum in the 1950s.", source: "carnuntum.at: The key to antiquity" },
@@ -180,6 +225,9 @@ export const SITES: SiteInfo[] = [
     founded: "85 CE",
     blurb: "Auxiliary fort south of what became Hadrian's Wall. The wooden Vindolanda tablets — Rome's oldest written documents from Britain — come from around our snapshot.",
     today: "An uninhabited Roman fort site near Hexham, England, on Hadrian's Wall's UNESCO frontier, and still an active dig with volunteer excavations every summer." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Vindolanda_Roman_Fort_-_geograph.org.uk_-_2933753.jpg?width=800",
+    image_credit: "Modern photograph (geograph.org.uk) of Vindolanda Roman fort · Wikimedia Commons",
+    image_alt: "Excavated remains of the Roman fort at Vindolanda, northern England",
     excavation: [
           { year: "1967", excavator: "Robin Birley", note: "Robin Birley began directing excavations at Vindolanda around 1967, a role he held for nearly 50 years until handing over to his son Andrew in 2015.", source: "Wikipedia: Robin Birley (archaeologist)" },
           { year: "1973", excavator: "Robin Birley", note: "In March 1973 Birley's team found the first Vindolanda writing tablets — two thin fragments of wood stuck together — in a deep, waterlogged trench, initially mistaken for wood shavings.", source: "Roman Inscriptions of Britain: Discovery of the Writing-Tablets" },
@@ -189,6 +237,9 @@ export const SITES: SiteInfo[] = [
     founded: "16 BCE by Augustus",
     blurb: "Augusta Treverorum, Roman capital of northern Gaul. Later imperial residence and one of the empire's biggest cities. In 117 CE, a booming provincial capital.",
     today: "A living German city of around 106,000; its Roman monuments, including the Porta Nigra, baths, and bridge, form a UNESCO World Heritage Site standing throughout the modern town." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Trier_Porta_Nigra_BW_1.JPG?width=800",
+    image_credit: "Modern photograph of the Porta Nigra, Trier · Wikimedia Commons",
+    image_alt: "The Roman city gate Porta Nigra in Trier, Germany",
     excavation: [
           { year: "1845", excavator: "Ch. W. Schmidt", note: "Conducted the first survey of the Kaiserthermen (Imperial Baths) in 1845.", source: "German Wikipedia: Kaiserthermen (Trier)" },
           { year: "1912-1920", excavator: "Daniel Krencker", note: "A major structural investigation definitively identified the Kaiserthermen structure as a Roman bath complex.", source: "German Wikipedia: Kaiserthermen (Trier)" },
@@ -198,6 +249,9 @@ export const SITES: SiteInfo[] = [
     founded: "~100 CE by Trajan",
     blurb: "Colonia Ulpia Traiana, a Trajanic colonia on the Rhine named for the emperor. Fresh-built at our 117 CE snapshot — mostly veterans of the Rhine legions.",
     today: "Germany's largest open-air archaeological park, built over Roman Colonia Ulpia Traiana with full-scale reconstructed buildings, part of the UNESCO Lower German Limes." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Amphitheater_Xanten.jpg?width=800",
+    image_credit: "Modern photograph of the reconstructed Roman amphitheatre, Archaeological Park Xanten · Wikimedia Commons",
+    image_alt: "Reconstructed Roman amphitheatre at the Archaeological Park Xanten, Germany",
     excavation: [
           { year: "1819-1844", excavator: "Murray Philipp Houben", note: "A self-taught archaeologist, Houben carried out the first documented systematic excavations of the Roman remains near Xanten at his own expense.", source: "Eupedia: Xanten Travel Guide" },
           { year: "1905-1914 and 1925-1934", excavator: "Hans Lehner (with F. Oelmann in the later phase)", note: "Excavated the fortification walls and central area of the legionary fortress of Vetera in two major campaigns.", source: "Internet Archaeology 17: The Roman Fortress of Vetera I" },
@@ -207,6 +261,9 @@ export const SITES: SiteInfo[] = [
     founded: "44 BCE (re-founded by Caesar)",
     blurb: "Provincial capital of Achaea, re-founded by Caesar over the ruins of the Greek city Rome had destroyed a century earlier.",
     today: "Uninhabited ruins in the village of Ancient Corinth, a few kilometers from the modern city of Corinth; excavations by the American School continue today." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Apollo_in_Corinth.jpg?width=800",
+    image_credit: "Modern photograph of the Temple of Apollo, Corinth · Wikimedia Commons",
+    image_alt: "The Doric columns of the Temple of Apollo at ancient Corinth, Greece",
     excavation: [
           { year: "1896", excavator: "American School of Classical Studies at Athens (ASCSA)", note: "Began excavating ancient Corinth in 1896 and has continued the project with little interruption ever since, one of the longest-running excavations in Greece.", source: "ascsa.edu.gr: History of Corinth" },
           { year: "1896-present", excavator: "American School of Classical Studies at Athens", note: "The excavation archive today holds nearly 1,000 field notebooks and about 125,000 photographs documenting continuous work at the site.", source: "ascsa.edu.gr: Excavation Archives" },
@@ -215,6 +272,9 @@ export const SITES: SiteInfo[] = [
     founded: "1st c. BCE (Roman agora)",
     blurb: "Under Rome but coasting on its glorious past. Hadrian would soon add his Library, arch, and Olympieion.",
     today: "Greece's capital and largest metropolis; the Acropolis and Ancient Agora are fenced UNESCO World Heritage sites within the living city." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/A_view_of_the_eastern_portico_of_the_Parthenon_-_Stuart_James_%26_Revett_Nicholas_-_1787.jpg?width=800",
+    image_credit: "James Stuart & Nicholas Revett, 1787 · Wikimedia Commons",
+    image_alt: "1787 engraving of the eastern portico of the Parthenon from Stuart & Revett's The Antiquities of Athens",
     excavation: [
           { year: "1837-1845", excavator: "Archaeological Society at Athens", note: "Carried out the first excavations of the Roman Agora, unearthing the Tower of the Winds, which had been almost completely buried under centuries of debris.", source: "Wikipedia: Tower of the Winds" },
           { year: "1890-1931", excavator: "Greek Archaeological Society", note: "Returned to excavate the Roman Agora in further campaigns in 1890-91, 1920, and 1930-31.", source: "travelthegreekway.com: The Roman Agora Of Athens" },
@@ -224,6 +284,9 @@ export const SITES: SiteInfo[] = [
     founded: "8th c. BCE",
     blurb: "Sanctuary of Apollo — still a working oracle in 117 CE, though its reputation was fading.",
     today: "An uninhabited archaeological site; the adjacent modern village of Delphi was relocated in 1892 to allow excavation, and the sanctuary is now UNESCO-listed." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Delphi_by_Albert_Tournaire.jpg?width=800",
+    image_credit: "Albert Tournaire, 1894 (archaeological reconstruction painting) · Wikimedia Commons",
+    image_alt: "Reconstruction painting of the Sanctuary of Apollo at Delphi as it appeared in antiquity",
     excavation: [
           { year: "1892-1901", excavator: "French School at Athens, led by Theophile Homolle", note: "This decade-long project, known as the 'Great Excavation,' cleared the entire sanctuary of Apollo, including relocating the modern village of Kastri that sat on top of the ruins.", source: "National Geographic: How the ancient Greek oracle of Delphi was lost and found" },
           { year: "1893", excavator: "French School at Athens", note: "Uncovered the main altar of the Temple of Apollo (the Altar of the Chians) and the Sibyl Rock where the Pythia was said to have given her prophecies.", source: "Portes Magazine: The Great Excavation, Sacred Delphi" },
@@ -232,6 +295,9 @@ export const SITES: SiteInfo[] = [
     founded: "25 BCE by Augustus",
     blurb: "Emerita Augusta, capital of Lusitania, founded for veterans of the Cantabrian wars. Its theatre, amphitheatre, and aqueducts are among Spain's best preserved.",
     today: "A living Spanish city of around 60,000, capital of Extremadura; its extensive Roman ruins, including the theatre, amphitheatre, and aqueduct, are woven through the modern town." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Teatro_romano_de_M%C3%A9rida_en_el_siglo_XIX..jpg?width=800",
+    image_credit: "Juan Laurent, 1867 (historic photograph) · Wikimedia Commons",
+    image_alt: "19th-century photograph of the Roman Theatre of Merida, Spain",
     excavation: [
           { year: "1910-1915", excavator: "Jose Ramon Melida with Maximiliano Macias", note: "The first systematic excavations at Augusta Emerita focused on the Roman theatre, uncovering the cavea and orchestra.", source: "Roman Forum (Merida), general sources" },
           { year: "2023", excavator: "Consortium of the Monumental City of Merida, with University of Granada students", note: "A large, exceptionally well-preserved private bath complex was found inside the House of the Amphitheater, complete with marble plaques, wall paintings, and intact iron window bars.", source: "Archaeology News Online Magazine, July 2023" },
@@ -240,6 +306,9 @@ export const SITES: SiteInfo[] = [
     founded: "206 BCE by Scipio",
     blurb: "Home town of Trajan and Hadrian. In 117 CE it was still the old veteran colony — Hadrian's new quarter, which would double the city, was still to come.",
     today: "An uninhabited archaeological park near Santiponce, Spain, just outside Seville; birthplace of Trajan and Hadrian, with its older quarter still lying under the modern village." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Italica_Roman_Theatre.JPG?width=800",
+    image_credit: "Modern photograph of the Roman theatre at Italica, Spain · Wikimedia Commons",
+    image_alt: "Ruins of the Roman theatre at Italica, near Seville, Spain",
     excavation: [
           { year: "1751-1755", excavator: "Francisco de Bruna", note: "The first organized excavations at Italica were carried out under Francisco de Bruna, beginning the modern archaeological recovery of the site.", source: "spain.info: The archaeological site of Italica in Santiponce" },
           { year: "1989", excavator: "Regional Government of Andalusia", note: "The remains of Italica were formally declared an Archaeological Site by Andalusian regional decree, formalizing its protected status.", source: "spain.info: The archaeological site of Italica in Santiponce" },
@@ -250,6 +319,9 @@ export const SITES: SiteInfo[] = [
     founded: "181 BCE (Latin colony)",
     blurb: "Adriatic gateway to the Danube — a booming port and one of the largest cities in Italy in 117 CE.",
     today: "A small living Italian town of around 3,000 sitting atop a largely unexcavated Roman city; its archaeological area and basilica are a UNESCO World Heritage Site." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/1_porto_fluviale_aquileia.jpg?width=800",
+    image_credit: "Modern photograph of the Roman river port at Aquileia · Wikimedia Commons",
+    image_alt: "Remains of the ancient Roman river port at Aquileia, Italy",
     excavation: [
           { year: "late 19th c.", excavator: "Austrian-era archaeologists (Aquileia was under Habsburg rule until 1918)", note: "Systematic archaeological work and a site museum began in this period; most of the ancient city remains unexcavated beneath surrounding fields even today.", source: "Aquileia excavation history, general sources" },
           { year: "2024", excavator: "Italian archaeological team", note: "A sixth-century basilica built under the Byzantine emperor Justinian I was uncovered — the first large-scale structure found there after decades of excavation in the area.", source: "Archaeology News Online Magazine, Nov 2024" },
@@ -258,6 +330,9 @@ export const SITES: SiteInfo[] = [
     founded: "89 BCE (Roman municipium)",
     blurb: "Prosperous northern-Italy city on the Adige. Its arena, built around 30 CE, was already old when Trajan died.",
     today: "A living city of around 258,000; the Roman arena still hosts a major open-air opera festival each summer, within a UNESCO-listed historic centre." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Porta_Borsari_(Verona).jpg?width=800",
+    image_credit: "Modern photograph of the Porta Borsari, Verona · Wikimedia Commons",
+    image_alt: "The Roman gate Porta Borsari in Verona, Italy",
     excavation: [
           { year: "1834-1844", excavator: "Andrea Monga (private Veronese merchant)", note: "Monga bought the land covering the buried Roman theatre, demolished roughly thirty houses built over it, and personally directed the excavation that first revealed the theatre's remains.", source: "romeartlover.it: Verona Roman Theatre and Amphitheatre" },
           { year: "1904", excavator: "Municipality of Verona", note: "The city took ownership of the Roman theatre complex and continued further excavation and restoration work there.", source: "romeartlover.it: Verona Roman Theatre and Amphitheatre" },
@@ -266,6 +341,9 @@ export const SITES: SiteInfo[] = [
     founded: "1st c. BCE (Roman municipium)",
     blurb: "Base of the Classis Ravennas, the Adriatic fleet, from Augustus onward. In 117 CE Ravenna sat directly on the coast — the shore is now 8 km east.",
     today: "A living Italian city of around 160,000; eight Early Christian and Byzantine monuments with famed mosaics are UNESCO World Heritage, woven into the modern town." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mausoleum_of_Galla_Placidia_mosaics_(Ravenna).jpg?width=800",
+    image_credit: "Modern photograph of the Mausoleum of Galla Placidia interior, Ravenna · Wikimedia Commons",
+    image_alt: "5th-century mosaics inside the Mausoleum of Galla Placidia in Ravenna, Italy",
     excavation: [
           { year: "1897-1906", excavator: "Corrado Ricci, Superintendent of Monuments in Ravenna", note: "Directed restorations at the Basilica of San Vitale and other Byzantine-era monuments, stripping later additions to reveal original sixth-century brickwork and mosaics.", source: "Wikipedia: Corrado Ricci" },
         ] },
@@ -273,6 +351,9 @@ export const SITES: SiteInfo[] = [
     founded: "42 CE by Claudius",
     blurb: "Rome's imperial harbor. Trajan's inner hexagonal basin was finished just before our snapshot — you can still see its outline today.",
     today: "An uninhabited archaeological site near Rome's Fiumicino airport; the hexagonal basin of Trajan's ancient harbor still survives amid the modern town." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Portus_-_Claudius_first_harbour_and_hexagonal_basin_extension_under_Trajan.jpg?width=800",
+    image_credit: "Annotated view of the Claudian harbour and Trajanic hexagonal basin, Portus · Wikimedia Commons",
+    image_alt: "The Claudian harbour basin and Trajan's hexagonal basin at Portus, Rome's imperial port",
     excavation: [
           { year: "1830s-1850s", excavator: "Luigi Canina", note: "Produced systematic maps and restorations of the port, clearing debris from the hexagonal Trajanic basin and identifying key harbor features.", source: "ostia-antica.org: History of the Excavations - the later 19th century" },
           { year: "1863-1869", excavator: "Torlonia family, visited by Rodolfo Lanciani", note: "After the Torlonia family acquired the Portus land in 1856, they conducted digs whose findings Lanciani later wrote up in an influential 1868 article.", source: "ostia-antica.org: Portus - history of the excavations" },
@@ -282,6 +363,9 @@ export const SITES: SiteInfo[] = [
     founded: "traditional 1215 BCE (Sabine)",
     blurb: "Roman Tibur, a hillside retreat above the Aniene falls. Old sanctuary of Hercules Victor, favored by Rome's senatorial class. Hadrian's villa was still on the drawing board.",
     today: "A living town of around 55,000 near Rome, home to two UNESCO sites: the uninhabited ruins of Hadrian's Villa and the Renaissance gardens of Villa d'Este." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Altra_V._del_Tempio_della_Sibilla_in_Tivoli_(Another_view_of_the_Temple_of_the_Sibyl_in_Tivoli)_MET_DP828240.jpg?width=800",
+    image_credit: "Giovanni Battista Piranesi, c. 1761 · Wikimedia Commons",
+    image_alt: "Piranesi's etching of the Temple of the Sibyl (Temple of Vesta) at Tivoli",
     excavation: [
           { year: "1550s-1560s", excavator: "Pirro Ligorio", note: "Ligorio's exploration, naming of areas, and measured drawings of Hadrian's Villa are considered the first large-scale modern archaeological dig at the site.", source: "Wikipedia: Pirro Ligorio" },
           { year: "1950-1955", excavator: "Salvatore Aurigemma", note: "State-led excavations uncovered numerous statues at the Canopus, including copies of the Erechtheion Caryatids and a portrait head of a young Hadrian.", source: "Academia.edu: L'attivita di Salvatore Aurigemma a Villa Adriana" },
@@ -290,6 +374,9 @@ export const SITES: SiteInfo[] = [
     founded: "7th c. BCE",
     blurb: "Roman Praeneste. Home to the Sanctuary of Fortuna Primigenia — a vast terraced complex climbing the hillside, one of the most ambitious pieces of architecture the Republic ever built.",
     today: "A living Italian hill town built directly atop the ancient Temple of Fortuna Primigenia; the sanctuary's terraces underlie it, with a museum in the Palazzo Barberini." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Fortuna_-_Palladio_-_Elevation.jpg?width=800",
+    image_credit: "Andrea Palladio, 16th century (reconstruction elevation drawing) · Wikimedia Commons",
+    image_alt: "Andrea Palladio's reconstruction elevation drawing of the Temple of Fortuna Primigenia at Palestrina",
     excavation: [
           { year: "1738", excavator: "Francesco Ficoroni (discoverer of the Ficoroni Cista)", note: "The find of the bronze Ficoroni Cista in the town's necropolis triggered continuous excavation activity there through the 18th and 19th centuries.", source: "worldhistory.org: Sanctuary of Fortuna Primigenia at Palestrina" },
           { year: "1944-1953", excavator: "Giorgio Gullini and Furio Fasolo", note: "Allied bombing in 1944 damaged Palestrina's historic center but exposed much of the ancient sanctuary terraces, documented in a landmark 1953 report on the Sanctuary of Fortuna Primigenia.", source: "worldhistory.org: Sanctuary of Fortuna Primigenia at Palestrina" },
@@ -298,6 +385,9 @@ export const SITES: SiteInfo[] = [
     founded: "194 BCE (Roman colony)",
     blurb: "Roman Puteoli, Italy's main port for eastern grain and luxury goods before Portus took over. Its Flavian amphitheatre — the third-largest in the empire — was newly built at our snapshot.",
     today: "A living port city of around 77,000 near Naples; Roman ruins including the Serapeo market and amphitheatre sit within the modern town, beside the active Solfatara volcano." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sommer,_Giorgio_(1834-1914)_-_n._2556_-_Pozzuoli_-_Tempio_di_Serapide.jpg?width=800",
+    image_credit: "Giorgio Sommer, 19th century (historic photograph) · Wikimedia Commons",
+    image_alt: "19th-century photograph of the Macellum of Pozzuoli, historically misidentified as the Temple of Serapis",
     excavation: [
           { year: "1750-1753", excavator: "Bourbon-era excavation", note: "The macellum (market building) was first excavated; a statue of Serapis found in 1750 led it to be mistakenly identified as a 'Temple of Serapis' for over a century.", source: "Wikipedia: Macellum of Pozzuoli" },
           { year: "1907", excavator: "Charles Dubois", note: "Established the building's true identity as a macellum (marketplace) rather than a temple, correcting more than a century of misidentification.", source: "Wikipedia: Macellum of Pozzuoli" },
@@ -307,6 +397,9 @@ export const SITES: SiteInfo[] = [
     founded: "2nd c. BCE (resort)",
     blurb: "The emperors' favorite spa. Domed bath halls fed by volcanic hot springs on the Bay of Naples. Trajan and his court would have known it well.",
     today: "Largely submerged; much of the ancient resort now lies underwater in the Bay of Naples, protected as the Baia Underwater Archaeological Park and visited by divers." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_echo_Baiae.JPG?width=800",
+    image_credit: "Modern photograph of the so-called Temple of Mercury (Temple of Echo), Baiae · Wikimedia Commons",
+    image_alt: "Interior of the domed Roman bath hall known as the Temple of Mercury at Baiae",
     excavation: [
           { year: "1959-1960", excavator: "Italian underwater archaeology surveys", note: "The first underwater survey campaign mapped the submerged Roman city off the coast, producing the first archaeological map of what had sunk beneath the Bay of Naples.", source: "Submerged Archaeological Park of Baia — History page" },
           { year: "1980-1984", excavator: "Italian state archaeologists (Soprintendenza)", note: "The first formal underwater excavation uncovered the Nymphaeum of Emperor Claudius and its sculptural complex.", source: "Submerged Archaeological Park of Baia — History page" },
@@ -316,6 +409,9 @@ export const SITES: SiteInfo[] = [
     founded: "8th c. BCE (Euboean Greek)",
     blurb: "The oldest Greek colony in Italy, home of the Cumaean Sibyl. By 117 CE its acropolis temples were already tourist attractions.",
     today: "An uninhabited archaeological park in the Campi Flegrei near Naples, including the Cave of the Cumaean Sibyl and acropolis temples, with no modern settlement on site." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Cuma_-_Antro_della_Sibilla.JPG?width=800",
+    image_credit: "Modern photograph of the Cave of the Sibyl, Cumae · Wikimedia Commons",
+    image_alt: "The Cave of the Sibyl at Cumae, Italy",
     excavation: [
           { year: "1852-1857", excavator: "Prince Leopoldo of Bourbon", note: "The first real systematic excavation campaign at Cumae focused on the Masseria del Gigante area and several necropolises.", source: "Cumae excavation history, general sources" },
           { year: "1924-1934", excavator: "Amedeo Maiuri and Vittorio Spinazzola", note: "Excavated the Temple of Jupiter and, in 1932, identified the roughly 131-meter rock-cut tunnel now shown as the Cave of the Sibyl, based on Virgil's description in the Aeneid.", source: "HeritageDaily: The Cave of the Sibyl" },
@@ -324,6 +420,9 @@ export const SITES: SiteInfo[] = [
     founded: "9th c. BCE (Etruscan)",
     blurb: "Once the second city of Italy, home to a huge amphitheatre that later served as the model for the Colosseum. Its gladiator school was Spartacus's starting point.",
     today: "The ancient city's ruins lie in the modern town of Santa Maria Capua Vetere; its amphitheatre, the second-largest after the Colosseum, was the site of Spartacus's revolt." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Anfiteatro_Campano_(Santa_Maria_di_Capua_Vetere)_47.jpg?width=800",
+    image_credit: "Modern photograph of the Campanian Amphitheatre, Santa Maria Capua Vetere · Wikimedia Commons",
+    image_alt: "Ruins of the Roman amphitheatre at ancient Capua",
     excavation: [
           { year: "1726", excavator: "Early Bourbon-era excavation", note: "The Capua amphitheatre was first excavated starting in September 1726, in front of its southern gate.", source: "Wikipedia: Amphitheatre of Capua" },
           { year: "1922-1924", excavator: "Italian state archaeologists", note: "The Mithraeum of Santa Maria Capua Vetere, with its fresco of Mithras slaying the bull, was discovered by chance during construction in September 1922 and excavated by 1924; it opened to visitors in 1937.", source: "The History Blog: Oldest Mithraeum in the West reopens" },
@@ -332,6 +431,9 @@ export const SITES: SiteInfo[] = [
     founded: "268 BCE (Latin colony)",
     blurb: "Roman Beneventum, terminus of the Via Appia and starting point of the Via Traiana. Trajan's Arch here was dedicated in 114 CE — three years old at our snapshot.",
     today: "A living city of around 55,000 in Campania; the near-intact Arch of Trajan still stands astride a street in the modern town." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/PiranesiArchTrajanBenevento.jpg?width=800",
+    image_credit: "Giovanni Battista Piranesi, 1778 · Wikimedia Commons",
+    image_alt: "Piranesi's engraving of the Arch of Trajan at Benevento",
     excavation: [
           { year: "1890", excavator: "Almerico Meomartini (architect)", note: "Funded and carried out the first excavation of Benevento's Roman theatre at his own expense, effectively rediscovering it.", source: "opencampania.it: The Roman theatre in Benevento" },
           { year: "1957", excavator: "Post-war Italian restoration authorities", note: "After the war the theatre site was used to store statues and stone elements salvaged from bomb-damaged buildings, then was restored and reopened to the public on 26 June 1957.", source: "opencampania.it: The Roman theatre in Benevento" },
@@ -340,6 +442,9 @@ export const SITES: SiteInfo[] = [
     founded: "600 BCE (Greek Poseidonia)",
     blurb: "A Greek colony absorbed into Rome. Its three Doric temples — 500 years old in 117 CE — were already ancient monuments.",
     today: "An uninhabited UNESCO World Heritage archaeological park near Salerno, home to three of the best-preserved ancient Greek temples in the world." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Piranesi-15015.jpg?width=800",
+    image_credit: "Giovanni Battista Piranesi, 1778 · Wikimedia Commons",
+    image_alt: "Piranesi's etching of the Doric temples at Paestum",
     excavation: [
           { year: "1740s", excavator: "Bourbon road-building crews", note: "Paestum's three Greek temples, forgotten for centuries in swampland, were rediscovered when a road crew building a new highway under King Charles VII of Naples cut through the site.", source: "parchipaestumvelia.cultura.gov.it: The Story of Paestum" },
           { year: "1907", excavator: "Vittorio Spinazzola (Superintendent)", note: "The first officially sanctioned, systematic excavations of the site began, after it had gone without formal digging for over a century since its rediscovery.", source: "paestumtickets.com: Archaeological Park of Paestum, History and Facts" },
@@ -348,6 +453,9 @@ export const SITES: SiteInfo[] = [
     founded: "89 BCE (Roman municipium)",
     blurb: "Roman Brixia, a northern-Italy city under the Alps. Vespasian's Capitolium — three temples in one — was newly built and dominated the forum.",
     today: "A living city of around 200,000; its Roman forum and Capitolium temple, part of the UNESCO \"Longobards in Italy\" site, stand in the historic centre." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Brescia_Capitoline_Temple.jpg?width=800",
+    image_credit: "Modern photograph of the Capitolium of Brixia, Brescia · Wikimedia Commons",
+    image_alt: "The Roman Capitolium in Brescia, ancient Brixia",
     excavation: [
           { year: "1823", excavator: "Ateneo di Scienze Lettere e Arti of Brescia", note: "Funded by a public subscription, the Ateneo began excavating the buried Capitolium temple based on fragments that had surfaced on private land.", source: "hisour.com: Capitolium of Brixia, Italy" },
           { year: "1826", excavator: "Ateneo di Scienze Lettere e Arti excavation team", note: "In July 1826 excavators found a hoard of large bronzes hidden between the temple's walls, including the famous Winged Victory statue and six gilded bronze portrait heads.", source: "hisour.com: Capitolium of Brixia, Italy" },
@@ -356,6 +464,9 @@ export const SITES: SiteInfo[] = [
     founded: "590 BCE (Insubres); Roman 222 BCE",
     blurb: "Roman Mediolanum, the largest city in northern Italy. In 117 CE, a booming provincial hub — not yet the imperial residence it would become in the 3rd century.",
     today: "A major living metropolis of around 1.4 million; Roman-era remains like the Columns of San Lorenzo survive as isolated fragments within the modern city." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Colonne_di_san_lorenzo_01.jpg?width=800",
+    image_credit: "Modern photograph of the Colonne di San Lorenzo, Milan · Wikimedia Commons",
+    image_alt: "The Roman-era Corinthian colonnade Colonne di San Lorenzo in Milan, ancient Mediolanum",
     excavation: [
           { year: "1936", excavator: "Alda Levi", note: "Located the site of Milan's long-vanished Roman amphitheatre amid the Porta Ticinese district's urban fabric.", source: "Milan amphitheatre, general sources" },
           { year: "1950s-1970s", excavator: "Alda Levi and successors", note: "Excavation, interrupted by World War II, resumed after the war and continued into the 1970s, uncovering seven of the foundation walls that had supported the amphitheatre's seating.", source: "ancient-history-sites.com: Roman Amphitheatre of Milan" },
@@ -364,6 +475,9 @@ export const SITES: SiteInfo[] = [
     founded: "268 BCE (Latin colony)",
     blurb: "Roman Ariminum, the pivot of Roman north — the Via Flaminia met the Via Aemilia here. Its Arch of Augustus (27 BCE) and Bridge of Tiberius (21 CE) both still stand.",
     today: "A living seaside city of around 150,000; the Arch of Augustus and the Bridge of Tiberius, both still in everyday use, stand within the modern town." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Richard_Wilson,_Il_Ponte_di_Tiberio,_1750_(Rimini,_Museo_della_Citt%C3%A0).JPG?width=800",
+    image_credit: "Richard Wilson, 1750 (period painting) · Wikimedia Commons",
+    image_alt: "1750 painting by Richard Wilson of the Roman bridge of Tiberius at Rimini",
     excavation: [
           { year: "1989", excavator: "Municipal public-works crew / Comune di Rimini archaeologists", note: "The remains of the 'Domus del Chirurgo,' a 2nd-century CE Roman house, came to light in Piazza Ferrari during work on the municipal gardens.", source: "domusrimini.com; Museo della Citta, Rimini" },
           { year: "1989-2006", excavator: "Italian archaeological superintendency", note: "Systematic excavation of the domus continued for roughly 17 years, recovering over 150 surgical instruments that gave the house its 'Surgeon's House' name.", source: "Atlas Obscura: Domus del Chirurgo in Rimini" },
@@ -372,6 +486,9 @@ export const SITES: SiteInfo[] = [
     founded: "387 BCE (Syracusan Greek)",
     blurb: "Adriatic naval harbor. Trajan enlarged its port; his commemorative arch was dedicated in 115 CE, two years before our snapshot.",
     today: "A living port city of around 100,000 on the Adriatic; Trajan's Arch still overlooks the working harbor it was built to commemorate." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ancona_arch_of_Traiano_and_Clementino.JPG?width=800",
+    image_credit: "Modern photograph of the Arch of Trajan, Ancona · Wikimedia Commons",
+    image_alt: "The Roman Arch of Trajan at the harbor of Ancona, Italy",
     excavation: [
           { year: "1810", excavator: "Abbot Antonio Leoni", note: "Identified Roman masonry embedded in the walls and arches of the Bonarelli family's palace, leading to the rediscovery of Ancona's buried Roman amphitheatre.", source: "anconatourism.it: Roman Amphitheater in Ancona" },
           { year: "1929-1937", excavator: "Archaeological Department of Le Marche", note: "The amphitheatre's southern sector was excavated in the 1930s, with findings published by Giuseppe Moretti in 1930 and 1937.", source: "amphi-theatrum.de: Ancona" },
@@ -380,6 +497,9 @@ export const SITES: SiteInfo[] = [
     founded: "177 BCE (Roman colony)",
     blurb: "Roman Luna, the marble port. All the white Carrara marble that clad imperial Rome shipped from here.",
     today: "An uninhabited archaeological park near the Tuscany-Liguria border, abandoned after its harbor silted up in the Middle Ages, with a museum nearby at Ortonovo." ,
+    image_url: "https://commons.wikimedia.org/wiki/Special:FilePath/Anfiteatro-luni.jpg?width=800",
+    image_credit: "Modern photograph of the Roman amphitheatre at Luni · Wikimedia Commons",
+    image_alt: "Ruins of the Roman amphitheatre at ancient Luna",
     excavation: [
           { year: "1950s", excavator: "Italian state archaeological authorities", note: "Proper systematic archaeological excavation of the Roman colony of Luna began in the 1950s, after centuries of the site lying abandoned and buried near the coast.", source: "museiliguria.cultura.gov.it: Luni excavation history" },
           { year: "1970s", excavator: "Antonio Frova (University of Milan, for the Liguria Archaeological Superintendency)", note: "A meticulous, scientific excavation campaign under the Liguria Archaeological Superintendency produced the standard scholarly account of the site.", source: "ScienceDirect: The disappearance of the city of Luni" },
