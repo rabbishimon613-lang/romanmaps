@@ -6647,7 +6647,14 @@
         ]
       },
       "properties": {
-        "id": "poi_mons_claudianus",
+        "id": "poi_mons_claudianus", "ancient_sources": [
+ {
+  "author": "CIL III 25 = ILS 2612 = I.Pan 39",
+  "work": "Dedicatory inscription of the centurion Annius Rufus",
+  "ref": "c. 103-117 CE",
+  "note": "This inscription records that Annius Rufus, a centurion of Legio XV Apollinaris, was placed in charge of the quarrying works at Mons Claudianus by \"the best emperor\" Trajan."
+ }
+],
         "category": "quarry",
         "name_latin": "Mons Claudianus",
         "name_english": "Mons Claudianus Quarries",
@@ -13976,7 +13983,14 @@
         ]
       },
       "properties": {
-        "id": "poi_necropolis_hierapolis",
+        "id": "poi_necropolis_hierapolis", "ancient_sources": [
+ {
+  "author": "Inscription (tomb facade)",
+  "work": "Epitaph of T. Flavius Zeuxis",
+  "ref": "late 1st c. CE",
+  "note": "A merchant's tomb in the necropolis records that he built it for himself and his sons after sailing round Greece's dangerous Cape Malea to Italy seventy-two times over his trading career."
+ }
+],
         "category": "necropolis",
         "name_latin": "Necropolis Hierapolitana",
         "name_english": "Hierapolis Necropolis",
@@ -14004,7 +14018,14 @@
         ]
       },
       "properties": {
-        "id": "poi_valley_of_tombs_palmyra",
+        "id": "poi_valley_of_tombs_palmyra", "ancient_sources": [
+ {
+  "author": "Palmyrene inscription, Tower of Elahbel",
+  "work": "Founder's dedicatory inscription",
+  "ref": "103 CE",
+  "note": "A carved Aramaic inscription on this Valley-of-the-Tombs tower records that it was built by the Palmyrene citizen Marcus Ulpius Elahbel and his three brothers as a family funerary tower."
+ }
+],
         "category": "necropolis",
         "name_latin": "Vallis Sepulcrorum",
         "name_english": "Valley of the Tombs",
@@ -16671,7 +16692,7 @@
           "http://worldimages.sjsu.edu/objects-1/info?page=38&query=Portfolios%3D91"
         ],
         "confidence": "high",
-        "ancient_sources": [],
+        "ancient_sources": [{"author": "CIL VIII", "work": "Career and building dedication of L. Cosinius Primus", "ref": "2nd c. CE", "note": "A stone inscription records the career of the local aedile and duumvir L. Cosinius Primus, who built the market's colonnades, statues, weighing-station, and central tholos together with his brother."}],
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Table%20de%20mesure%20au%20march%C3%A9%20de%20Dj%C3%A9mila.jpg?width=800",
         "image_credit": "Measuring table, Market of Cosinius, Djemila · Wikimedia Commons"
       }
@@ -16703,7 +16724,7 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/GM_Djemila_Roman_Theatre01.jpg?width=800",
         "image_credit": "Roman theatre of Cuicul, Djemila · Wikimedia Commons",
-        "ancient_sources": []
+        "ancient_sources": [{"author": "CIL VIII 8300 = ILS 368", "work": "Theatre dedication inscription", "ref": "161 CE", "note": "The dedication, opening \"to the Harmony of the Emperors,\" names local patrons Gaius Julius Crescens and Gaius Julius Didius Crescentianus and dates the theatre's construction to the joint reign of Marcus Aurelius and Lucius Verus."}]
       }
     },
     {
@@ -16733,7 +16754,7 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Les_grands_thermes_de_Dj%C3%A9mila.jpg?width=800",
         "image_credit": "Great Baths of Djemila · Wikimedia Commons",
-        "ancient_sources": []
+        "ancient_sources": [{"author": "CIL VIII", "work": "Baths dedication inscription", "ref": "183/184 CE", "note": "Two inscriptions found at the Great Baths date their dedication to the reign of Commodus, recording that the town itself, the Respublica Cuiculitanorum, paid for the complex."}]
       }
     },
     {
@@ -16824,7 +16845,7 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Arch_of_Caracalla,_Cuicul_(Dj%C3%A9mila),_Numidia,_Algeria.jpg?width=800",
         "image_credit": "Arch of Caracalla, Cuicul (Djemila) · photo by Carole Raddato · Wikimedia Commons (CC BY-SA 2.0)",
-        "ancient_sources": []
+        "ancient_sources": [{"author": "CIL VIII.1, 8321 + 20137", "work": "Triumphal arch dedication", "ref": "216 CE", "note": "The arch's attic inscription reads \"the town council decreed and the community built this triumphal arch from the ground up,\" dedicating it to Caracalla, his mother Julia Domna, and his deified father Septimius Severus."}]
       }
     },
     {
@@ -16854,7 +16875,7 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Temple_of_the_Gens_Septimia,_Cuicul_(Dj%C3%A9mila),_Numidia,_Algeria_-_52663783387.jpg?width=800",
         "image_credit": "Temple of the Gens Septimia, Cuicul (Djemila) · photo by Carole Raddato · Wikimedia Commons (CC BY-SA 2.0)",
-        "ancient_sources": []
+        "ancient_sources": [{"author": "CIL VIII", "work": "Temple dedication inscription", "ref": "229 CE", "note": "A fragmentary inscription found at the temple dates its dedication, under Severus Alexander, to the Severan imperial dynasty, the Gens Septimia."}]
       }
     },
     {
@@ -17649,7 +17670,7 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jerash_-_The_Temple_of_Artemis.JPG?width=800",
         "image_credit": "The Temple of Artemis, Jerash · Wikimedia Commons (CC BY-SA)",
-        "ancient_sources": []
+        "ancient_sources": [{"author": "Welles 1938, no. 60", "work": "Dedicatory inscription, sanctuary propylaea", "ref": "150 CE", "note": "An inscription on the monumental gateway into the sanctuary records its formal dedication under Antoninus Pius, matching this site's own dating - the temple did not yet exist at this map's 117 CE snapshot."}]
       }
     },
     {
@@ -21327,7 +21348,14 @@
         ]
       },
       "properties": {
-        "id": "poi_pergamon_trajaneum",
+        "id": "poi_pergamon_trajaneum", "ancient_sources": [
+ {
+  "author": "Inscription (temple entrance)",
+  "work": "Honorific dedication naming Trajan",
+  "ref": "early 2nd c. CE",
+  "note": "An inscription found by the temple's entrance hails Trajan as \"lord of the earth and the sea,\" part of the imperial-cult honors built into this temple."
+ }
+],
         "category": "temple",
         "name_latin": "Trajaneum",
         "name_english": "The Temple of Trajan",
@@ -26346,7 +26374,14 @@
         ]
       },
       "properties": {
-        "id": "poi_sebasteion_aphrodisias",
+        "id": "poi_sebasteion_aphrodisias", "ancient_sources": [
+ {
+  "author": "I.Aphrodisias 2007",
+  "work": "Sebasteion dedication inscription",
+  "ref": "mid-1st c. CE (Tiberius-Nero)",
+  "note": "The complex's own dedication reads \"to Aphrodite, the Divine Augusti, and the People,\" naming the local family who paid to build it."
+ }
+],
         "category": "temple",
         "name_latin": "Sebasteion",
         "name_english": "Aphrodisias Sebasteion",
@@ -26376,7 +26411,14 @@
         ]
       },
       "properties": {
-        "id": "poi_stadium_aphrodisias",
+        "id": "poi_stadium_aphrodisias", "ancient_sources": [
+ {
+  "author": "Inscription (seat reservations)",
+  "work": "Topos inscriptions cut into the stadium benches",
+  "ref": "2nd-6th c. CE",
+  "note": "Rows of seats are labeled \"place of...\" for specific trade guilds, including tanners, goldsmiths, and gardeners, showing how the stadium's seating was parceled out by guild."
+ }
+],
         "category": "monument",
         "name_latin": "Stadium Aphrodisiense",
         "name_english": "Aphrodisias Stadium",
@@ -26405,7 +26447,14 @@
         ]
       },
       "properties": {
-        "id": "poi_theatre_aphrodisias",
+        "id": "poi_theatre_aphrodisias", "ancient_sources": [
+ {
+  "author": "I.Aphrodisias 2007, 8.5",
+  "work": "Stage-building dedication of C. Julius Zoilos",
+  "ref": "c. 30-27 BCE",
+  "note": "An inscription cut into the stage building records that Zoilos, a freedman of Augustus who returned home wealthy, personally paid for the stage, its proscenium, and all its decoration."
+ }
+],
         "category": "theater",
         "name_latin": "Theatrum Aphrodisiense",
         "name_english": "Aphrodisias Theatre",
@@ -26548,7 +26597,14 @@
         ]
       },
       "properties": {
-        "id": "poi_baths_of_hadrian_aphrodisias",
+        "id": "poi_baths_of_hadrian_aphrodisias", "ancient_sources": [
+ {
+  "author": "Inscription series (bath architecture)",
+  "work": "Dedicatory inscriptions naming Hadrian Olympios and Panhellenios",
+  "ref": "after 128/129 CE",
+  "note": "Inscriptions carved into the bath complex name Hadrian with two of his special titles, dating the building to well after this map's 117 CE snapshot."
+ }
+],
         "category": "bath",
         "name_latin": "Thermae Hadrianae",
         "name_english": "Aphrodisias Baths of Hadrian",
@@ -26577,7 +26633,14 @@
         ]
       },
       "properties": {
-        "id": "poi_bouleuterion_odeon_aphrodisias",
+        "id": "poi_bouleuterion_odeon_aphrodisias", "ancient_sources": [
+ {
+  "author": "Inscription (statue base)",
+  "work": "Honorific base for L. Antonius Claudius Diogenes Dometeinos",
+  "ref": "c. 200 CE",
+  "note": "A statue base at the council house's entrance honors a prominent local citizen, tying his family's name to a building raised well after 117 CE."
+ }
+],
         "category": "curia",
         "name_latin": "Bouleuterion / Odeum",
         "name_english": "Aphrodisias Bouleuterion",
@@ -26726,7 +26789,14 @@
         ]
       },
       "properties": {
-        "id": "poi_nymphaeum_tritons_hierapolis",
+        "id": "poi_nymphaeum_tritons_hierapolis", "ancient_sources": [
+ {
+  "author": "Inscription (architrave block)",
+  "work": "Dedicatory inscription, Nymphaeum of the Tritons",
+  "ref": "222-235 CE (reign of Severus Alexander)",
+  "note": "An inscription carved into the fountain's architrave dates the monument to over a century after this map's 117 CE snapshot - it did not yet exist at the time."
+ }
+],
         "category": "fountain",
         "name_latin": "Nymphaeum Tritonum",
         "name_english": "Hierapolis Nymphaeum of the Tritons",
@@ -26792,7 +26862,14 @@
         ]
       },
       "properties": {
-        "id": "poi_frontinus_gate_hierapolis",
+        "id": "poi_frontinus_gate_hierapolis", "ancient_sources": [
+ {
+  "author": "Inscription (gate facade, Latin and Greek)",
+  "work": "Dedication to Domitian",
+  "ref": "c. 84-86 CE",
+  "note": "A bilingual inscription records that the Roman governor Sextus Julius Frontinus built the gate and dedicated it to Domitian, whose name was later chiseled out after his assassination."
+ }
+],
         "category": "gate",
         "name_latin": "Porta Domitiani / Via Frontiniana",
         "name_english": "Hierapolis Frontinus Gate",
@@ -26821,7 +26898,14 @@
         ]
       },
       "properties": {
-        "id": "poi_theatre_miletus",
+        "id": "poi_theatre_miletus", "ancient_sources": [
+ {
+  "author": "Inscription (theatre seating block)",
+  "work": "Seat reservation, \"Place of the Jews, who are also called God-fearers\"",
+  "ref": "2nd c. CE",
+  "note": "One row of theatre seats carries a carved label reserving that block for the local Jewish community - direct evidence of who sat where in Roman Miletus."
+ }
+],
         "category": "theater",
         "name_latin": "Theatrum Milesium",
         "name_english": "Miletus Theatre",
@@ -26887,7 +26971,14 @@
         ]
       },
       "properties": {
-        "id": "poi_bouleuterion_miletus",
+        "id": "poi_bouleuterion_miletus", "ancient_sources": [
+ {
+  "author": "Inscription (architrave)",
+  "work": "Dedication by Timarchos and Herakleides for King Antiochus IV Epiphanes",
+  "ref": "175-164 BCE",
+  "note": "The council house's own architrave inscription records two Milesian brothers arranging for the Seleucid king to fund the building as a gift to the city's gods and people."
+ }
+],
         "category": "curia",
         "name_latin": "Bouleuterion Milesium",
         "name_english": "Miletus Bouleuterion",
@@ -27133,7 +27224,14 @@
         ]
       },
       "properties": {
-        "id": "poi_bath_gymnasium_sardis",
+        "id": "poi_bath_gymnasium_sardis", "ancient_sources": [
+ {
+  "author": "Inscription (Marble Court architrave)",
+  "work": "Dedication to Julia Domna, Caracalla, and Geta",
+  "ref": "211-212 CE",
+  "note": "A monumental inscription dedicates the Marble Court's upper story to the emperor's family - Geta's name was later erased after his murder - about a century after this map's 117 CE snapshot."
+ }
+],
         "category": "bathhouse",
         "name_latin": "Thermae et Gymnasium Sardianum",
         "name_english": "Sardis Roman Gymnasium and Bath Complex",
@@ -27688,7 +27786,14 @@
         ]
       },
       "properties": {
-        "id": "poi_harbor_antalya",
+        "id": "poi_harbor_antalya", "ancient_sources": [
+ {
+  "author": "Strabo",
+  "work": "Geography",
+  "ref": "14.4.1",
+  "note": "Strabo describes Attaleia as a city founded by King Attalus II Philadelphus of Pergamon, who also had the harbor's entrance narrowed on his own orders."
+ }
+],
         "category": "harbor",
         "name_latin": "Portus Attaleiae",
         "name_english": "Old Harbor of Antalya",
@@ -27717,7 +27822,14 @@
         ]
       },
       "properties": {
-        "id": "poi_hadrians_gate_antalya",
+        "id": "poi_hadrians_gate_antalya", "ancient_sources": [
+ {
+  "author": "Inscription series (gate facade, gilded bronze letters)",
+  "work": "Dedications to Hadrian naming Trajan",
+  "ref": "after 129 CE",
+  "note": "Two dedications to Hadrian once carried gilded bronze letters spelling out his adoptive father Trajan's name - surviving fragments are now scattered across museums in Vienna, Berlin, London, and Oxford."
+ }
+],
         "category": "gate",
         "name_latin": "Porta Hadriani",
         "name_english": "Hadrian's Gate",
@@ -27804,7 +27916,14 @@
         ]
       },
       "properties": {
-        "id": "poi_gate_perge",
+        "id": "poi_gate_perge", "ancient_sources": [
+ {
+  "author": "Inscription series (statue bases, Latin and Greek)",
+  "work": "Dedications naming Plancia Magna",
+  "ref": "c. 119-122 CE",
+  "note": "Every statue base in the gate's horseshoe courtyard names the wealthy local benefactress Plancia Magna, who paid to renovate the old Hellenistic gate and fill it with statues of gods, ancestors, and the imperial family."
+ }
+],
         "category": "gate",
         "name_latin": "Porta Pergae",
         "name_english": "Hellenistic City Gate of Perge",
@@ -27891,7 +28010,14 @@
         ]
       },
       "properties": {
-        "id": "poi_temple_athena_pergamon",
+        "id": "poi_temple_athena_pergamon", "ancient_sources": [
+ {
+  "author": "Inscription series (7 statue bases)",
+  "work": "Victory dedications of Attalos I to Athena Nikephoros",
+  "ref": "241/240-224/223 BCE",
+  "note": "A run of statue bases set up in the temple square records King Attalos I dedicating his early victories over the Galatians and rival Hellenistic generals to Athena Nikephoros."
+ }
+],
         "category": "temple",
         "name_latin": "Templum Athenae Nicephorae",
         "name_english": "Temple of Athena",
@@ -27978,7 +28104,14 @@
         ]
       },
       "properties": {
-        "id": "poi_baths_berytus",
+        "id": "poi_baths_berytus", "ancient_sources": [
+ {
+  "author": "Flavius Josephus",
+  "work": "Jewish Antiquities",
+  "ref": "19.335-337",
+  "note": "Josephus records that King Herod Agrippa I lavishly rebuilt Berytus with a theatre, an amphitheatre, porticoes, and baths, funding extravagant games to inaugurate them."
+ }
+],
         "category": "bath",
         "name_latin": "Thermae Berytenses",
         "name_english": "Beirut Roman Baths",
@@ -28123,7 +28256,14 @@
         ]
       },
       "properties": {
-        "id": "poi_temple_eshmun_sidon",
+        "id": "poi_temple_eshmun_sidon", "ancient_sources": [
+ {
+  "author": "KAI 15 and KAI 16 (Bodashtart inscriptions)",
+  "work": "Building and restoration dedication of King Bodashtart",
+  "ref": "5th c. BCE",
+  "note": "Phoenician inscriptions carved into the temple's own podium blocks record that King Bodashtart, and later his son and heir Yatonmilk, expanded and restored the sanctuary of Eshmun."
+ }
+],
         "category": "sanctuary",
         "name_latin": "Templum Eshmuni",
         "name_english": "Temple of Eshmun",
@@ -28181,7 +28321,14 @@
         ]
       },
       "properties": {
-        "id": "poi_eshmunazar_sarcophagus_sidon",
+        "id": "poi_eshmunazar_sarcophagus_sidon", "ancient_sources": [
+ {
+  "author": "CIS I 3 / KAI 14",
+  "work": "Royal Phoenician funerary inscription of King Eshmunazar II",
+  "ref": "5th c. BCE",
+  "note": "The sarcophagus lid bears a long Phoenician inscription in which King Eshmunazar II recounts his lineage and building works and pronounces a curse against anyone who disturbs his burial."
+ }
+],
         "category": "tomb",
         "name_latin": "Sarcophagus Eshmunazaris II",
         "name_english": "Tomb of Eshmunazar II",
@@ -28349,7 +28496,14 @@
         ]
       },
       "properties": {
-        "id": "poi_harbor_egyptian_tyre",
+        "id": "poi_harbor_egyptian_tyre", "ancient_sources": [
+ {
+  "author": "Strabo",
+  "work": "Geography",
+  "ref": "16.2.23",
+  "note": "Strabo describes Tyre as having two harbors, an enclosed northern \"Sidonian\" harbor and an open southern one he explicitly calls the \"Egyptian\" harbor."
+ }
+],
         "category": "harbor",
         "name_latin": "Portus Aegyptius",
         "name_english": "Egyptian Harbor, Tyre",
@@ -28471,7 +28625,14 @@
         ]
       },
       "properties": {
-        "id": "poi_via_nova_traiana_bostra",
+        "id": "poi_via_nova_traiana_bostra", "ancient_sources": [
+ {
+  "author": "CIL III 14149",
+  "work": "Roman milestone recording construction of the Via Nova Traiana",
+  "ref": "111 CE",
+  "note": "This Trajanic milestone records the new road built from Bostra to the Red Sea after Rome turned the former Nabataean kingdom into the province of Arabia, with Bostra as the road's starting point for mile-counting."
+ }
+],
         "category": "road",
         "name_latin": "Via Nova Traiana",
         "name_english": "Via Nova Traiana",
