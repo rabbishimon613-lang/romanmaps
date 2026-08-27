@@ -30392,6 +30392,657 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.1242,
+          35.4042
+        ]
+      },
+      "properties": {
+        "id": "poi_theveste_legionary_fortress",
+        "category": "fort",
+        "name_latin": "Castra Legionis III Augustae Thevestis",
+        "name_english": "Legionary Fortress of Legio III Augusta",
+        "province": "Numidia",
+        "modern_location": "Tebessa, Algeria",
+        "built": 75,
+        "destroyed": 128,
+        "extant_117ce": true,
+        "notes": "Emperor Vespasian settled Legio III Augusta into a single permanent fortress here in 75 CE after decades split across smaller Numidian outposts. The camp anchored Rome's desert frontier for over fifty years while veterans retired to farms in the surrounding territory. In August 117 CE the legion still called Theveste home; only under Hadrian did it march west to a new fortress at Lambaesis.",
+        "sources": [
+          "https://www.livius.org/articles/legion/legio-iii-augusta/",
+          "https://en.wikipedia.org/wiki/Legio_III_Augusta",
+          "https://en.wikipedia.org/wiki/Theveste"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.1242,
+          35.4042
+        ]
+      },
+      "properties": {
+        "id": "poi_theveste_colonia_forum",
+        "category": "forum",
+        "name_latin": "Forum Coloniae Thevestinae",
+        "name_english": "Forum of the Colonia of Theveste",
+        "province": "Numidia",
+        "modern_location": "Tebessa, Algeria",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Trajan raised Theveste from legionary settlement to chartered Roman colonia, folding retired soldiers and their farms into full civic status. A forum anchored the new city, seating the magistrates who governed the Tebessa plain. By August 117 CE the colonia was not yet twenty years old, its public buildings modest next to the marble city that later generations built.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Theveste"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.1225,
+          35.4
+        ]
+      },
+      "properties": {
+        "id": "poi_theveste_temple_minerva",
+        "category": "temple",
+        "name_latin": "Templum Minervae",
+        "name_english": "Temple of Minerva",
+        "province": "Numidia",
+        "modern_location": "Tebessa, Algeria",
+        "built": 205,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Built in the early 3rd century CE under the Severan dynasty, this Corinthian temple rises nine meters on a raised podium and survives today as one of the best-preserved Roman temples in Algeria. Its facade still stands almost complete, a rarity for North African religious architecture. In 117 CE the ground where it rose was still open space inside the young colonia, nearly a century before construction began.",
+        "sources": [
+          "https://digitalcollections.nypl.org/items/510d47e4-4cf6-a3d9-e040-e00a18064a99"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.122806,
+          35.404889
+        ]
+      },
+      "properties": {
+        "id": "poi_theveste_arch_caracalla",
+        "category": "arch",
+        "name_latin": "Arcus Caracallae",
+        "name_english": "Arch of Caracalla",
+        "province": "Numidia",
+        "modern_location": "Tebessa, Algeria",
+        "built": 214,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A local prefect named Gaius Cornelius Egrilianus funded this four-fronted triumphal arch by testamentary bequest, and the city dedicated it in 216 CE to Caracalla, Julia Domna, and the deified Septimius Severus. Carved reliefs of Oceanus, Minerva, and the personification of the city still survive on its faces. Byzantine builders later folded the arch into their city wall as a gate. In 117 CE this monument did not yet exist.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Arch_of_Caracalla_(Thebeste)",
+          "https://www.ostia-antica.org/caracalla/travels/algeria.htm"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.124,
+          35.401
+        ]
+      },
+      "properties": {
+        "id": "poi_theveste_amphitheater",
+        "category": "amphitheater",
+        "name_latin": "Amphitheatrum Thevestis",
+        "name_english": "Amphitheater of Theveste",
+        "province": "Numidia",
+        "modern_location": "Tebessa, Algeria",
+        "built": 350,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Builders raised Theveste's amphitheater on the left bank of the Wadi Zarour in the 4th century CE, seating crowds for games on the edge of the colonia. Its arena floor and lower seating tiers still survive among the town's Roman ruins today. In August 117 CE this ground stood empty, two centuries before construction began here.",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q28969519"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.123,
+          35.4045
+        ]
+      },
+      "properties": {
+        "id": "poi_theveste_byzantine_walls",
+        "category": "wall",
+        "name_latin": "Moenia Thevestis",
+        "name_english": "City Walls and Citadel of Theveste",
+        "province": "Numidia",
+        "modern_location": "Tebessa, Algeria",
+        "built": 535,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Justinian's general Solomon rebuilt Theveste behind a massive square citadel wall in the early 6th century, studded with twelve towers and four gates. Roman column drums scavenged from older buildings were built directly into the new Byzantine masonry. The older Arch of Caracalla was absorbed into this wall as a gate. In 117 CE no fortification ring yet enclosed the young colonia.",
+        "sources": [
+          "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Tebessa"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.1269,
+          35.4091
+        ]
+      },
+      "properties": {
+        "id": "poi_theveste_basilica_crispina",
+        "category": "basilica",
+        "name_latin": "Basilica Sanctae Crispinae",
+        "name_english": "Basilica of Saint Crispina",
+        "province": "Numidia",
+        "modern_location": "Tebessa, Algeria",
+        "built": 350,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A sprawling Christian basilica complex grew up at Theveste honoring Crispina, a Numidian noblewoman beheaded near the city in 304 CE for refusing to sacrifice to the emperors. A mosaic inscription dates its central shrine to 350 CE, with further wings added into the 5th century, making it one of the largest basilica complexes in Roman North Africa. In 117 CE neither her cult nor any building here yet existed.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tebessa_Basilica"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.615,
+          36.354
+        ]
+      },
+      "properties": {
+        "id": "poi_cirta_el_hofra_sanctuary",
+        "category": "temple",
+        "name_latin": "Fanum Baal Hammonis (El Hofra)",
+        "name_english": "El Hofra Sanctuary of Baal-Hammon",
+        "province": "Numidia",
+        "modern_location": "Constantine, Algeria",
+        "built": -300,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Numidian kings built this hillside sanctuary to Baal-Hammon just south of Cirta, and under Massinissa's long 2nd-century-BCE reign it grew rich enough that worshippers left behind nearly a thousand carved votive stelae. Rome later folded the god into the cult of Saturn, and Latin dedications joined the older Punic ones on the same hill. By 117 CE the sanctuary had already stood for generations as one of Numidia's great religious sites.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cirta_steles"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6119,
+          36.3675
+        ]
+      },
+      "properties": {
+        "id": "poi_cirta_citadel_ramparts",
+        "category": "wall",
+        "name_latin": "Moenia Cirtae",
+        "name_english": "Ramparts of the Cirta Citadel",
+        "province": "Numidia",
+        "modern_location": "Constantine, Algeria",
+        "built": -203,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Numidian kings fortified Cirta's rock plateau with an embossed ashlar rampart long before Rome arrived, exploiting cliffs that drop over 200 meters into the Rhumel gorge on three sides. Roman Cirta inherited these defenses after Caesar's veteran Publius Sittius settled his men here in 46 BCE, founding the Colonia Sittianorum. Stretches of the ancient walling still stand inside the old citadel today. In 117 CE these walls still guarded one of Numidia's most naturally defensible cities.",
+        "sources": [
+          "https://www.britannica.com/place/Constantine-Algeria",
+          "https://en.wikipedia.org/wiki/Cirta"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6182,
+          36.369
+        ]
+      },
+      "properties": {
+        "id": "poi_cirta_aqueduct_bridge",
+        "category": "aqueduct",
+        "name_latin": "Aquaeductus Cirtae",
+        "name_english": "Roman Aqueduct Bridge of Cirta",
+        "province": "Numidia",
+        "modern_location": "Constantine, Algeria",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Roman engineers carried water into Cirta from the spring at Ain Bou Merzoug, crossing the 200-meter-deep Rhumel gorge on a masonry bridge whose fragmentary arches still stand in the valley below the old town. No inscription records its exact building year, and estimates for its date range across the 2nd century CE. Because the construction date cannot be pinned down with confidence, this entry is flagged as not yet standing at the 117 CE snapshot.",
+        "sources": [
+          "https://jeanclaudegolvin.com/en/gallery/cirta-constantine-the-aqueduct/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9042,
+          36.4
+        ]
+      },
+      "properties": {
+        "id": "poi_thuburbo_forum",
+        "category": "forum",
+        "name_latin": "Forum",
+        "name_english": "Forum of Thuburbo Maius",
+        "province": "Africa Proconsularis",
+        "modern_location": "Thuburbo Maius, Tunisia",
+        "built": 161,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Thuburbo Maius rebuilt its civic forum in 161 CE, laying out a square colonnaded on three sides with shops behind the portico. A wide staircase at its north end climbed straight up to the new Capitol. Its paving stones still show the wear of two centuries of foot traffic. In 117 CE this ground held only an earlier, smaller square, not the piazza that survives today.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Thuburbo_Majus"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Forum_et_ses_annexes_4.JPG?width=800",
+        "image_credit": "Wikimedia Commons",
+        "image_alt": "Colonnaded forum ruins at Thuburbo Maius"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9043,
+          36.4001
+        ]
+      },
+      "properties": {
+        "id": "poi_thuburbo_capitolium",
+        "category": "temple",
+        "name_latin": "Capitolium",
+        "name_english": "Capitol of Thuburbo Maius",
+        "province": "Africa Proconsularis",
+        "modern_location": "Thuburbo Maius, Tunisia",
+        "built": 168,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Under Marcus Aurelius and Commodus, Thuburbo Maius raised a Capitol in 168 CE on a monumental podium reached by a broad flight of stairs from the forum. Excavators found a sandaled marble foot from a cult statue of Jupiter, estimated at 7.5 meters tall. Carved inscriptions on the building name both emperors alongside Jupiter, Juno, and Minerva. In 117 CE this hillside stood empty, more than fifty years before ground was broken.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Thuburbo_Majus"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9044,
+          36.4002
+        ]
+      },
+      "properties": {
+        "id": "poi_thuburbo_temple_mercury",
+        "category": "temple",
+        "name_latin": "Aedes Mercurii",
+        "name_english": "Temple of Mercury",
+        "province": "Africa Proconsularis",
+        "modern_location": "Thuburbo Maius, Tunisia",
+        "built": 175,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A round temple ringed by a peristyle and closed off by four apses honored Mercury, patron of the merchants who passed through Thuburbo Maius on the inland road linking Carthage to Numidia. It rose next to the Capitol under Marcus Aurelius, in the second half of the 2nd century CE. Its circular plan set inside a square precinct is almost unique among Roman temples in Africa. In 117 CE the site was open ground; Mercury's temple was still decades from being built.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Thuburbo_Majus"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_de_Mercure_2.JPG?width=800",
+        "image_credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9057,
+          36.4
+        ]
+      },
+      "properties": {
+        "id": "poi_thuburbo_winter_baths",
+        "category": "bath",
+        "name_latin": "Thermae Hiemales",
+        "name_english": "Winter Baths",
+        "province": "Africa Proconsularis",
+        "modern_location": "Thuburbo Maius, Tunisia",
+        "built": 130,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Thuburbo Maius built its Winter Baths in the 2nd century CE, after Hadrian raised the town to municipium status and gave its citizens a rank worth building for. The complex covered 1,600 square meters and opened onto a public square where two streets crossed. Columns of reddish marble quarried at distant Simitthus framed its entrance. In 117 CE Hadrian had not yet become emperor, and this bath block did not exist.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Thuburbo_Majus"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Thermes_d'hiver_Thuburbo_Majus.JPG?width=800",
+        "image_credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.904,
+          36.3993
+        ]
+      },
+      "properties": {
+        "id": "poi_thuburbo_summer_baths",
+        "category": "bath",
+        "name_latin": "Thermae Aestivae",
+        "name_english": "Summer Baths",
+        "province": "Africa Proconsularis",
+        "modern_location": "Thuburbo Maius, Tunisia",
+        "built": 120,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The larger of Thuburbo Maius's two bathhouses, the Summer Baths spread across roughly 2,800 square meters of cold, warm, and hot rooms fed by three large cisterns. Records show the complex already needed restoration by 136 CE, placing its original construction in the early 2nd century. Emperor Constantius II rebuilt it again in 361 CE to revive the aging town. Its exact founding year was never recorded, so it is marked absent from the 117 CE map.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Thuburbo_Majus"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9042,
+          36.3992
+        ]
+      },
+      "properties": {
+        "id": "poi_thuburbo_palaestra_petronii",
+        "category": "gymnasium",
+        "name_latin": "Palaestra Petroniorum",
+        "name_english": "Palaestra of the Petronii",
+        "province": "Africa Proconsularis",
+        "modern_location": "Thuburbo Maius, Tunisia",
+        "built": 225,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "In 225 CE, Petronius Felix and his sons paid for a colonnaded exercise yard wedged between the two bathhouses of Thuburbo Maius. Wrestlers, boxers, and pankration fighters trained under its Corinthian portico before crossing into the Summer Baths next door. An inscription on site still credits the Petronii family by name. In 117 CE this courtyard was more than a century away from being built.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Thuburbo_Majus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Portique_des_Petronii_(Thuburbo_Majus).jpg?width=800",
+        "image_credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.904,
+          36.4001
+        ]
+      },
+      "properties": {
+        "id": "poi_thuburbo_macellum",
+        "category": "market",
+        "name_latin": "Macellum",
+        "name_english": "Market of Thuburbo Maius",
+        "province": "Africa Proconsularis",
+        "modern_location": "Thuburbo Maius, Tunisia",
+        "built": 175,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Thuburbo Maius built a covered market beside its forum during the town's 2nd-century building boom, giving merchants stalls under a colonnade a short walk from the Capitol. Fragments of its mosaic floor still show the produce once sold there. It served the same trade route that funded the nearby Temple of Mercury. No precise construction year survives, so it is marked absent from the 117 CE map out of caution.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Thuburbo_Majus"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Macellum_2.JPG?width=800",
+        "image_credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9035,
+          36.402
+        ]
+      },
+      "properties": {
+        "id": "poi_thuburbo_temple_saturn",
+        "category": "temple",
+        "name_latin": "Templum Saturni",
+        "name_english": "Temple of Saturn",
+        "province": "Africa Proconsularis",
+        "modern_location": "Thuburbo Maius, Tunisia",
+        "built": 200,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Thuburbo Maius worshipped Baal Hammon on a hill above the town long before Rome arrived; the standing Roman temple that replaced the Punic shrine dates only to the 2nd or 3rd century CE, when the old god was renamed Saturn. Its hilltop position gave the sanctuary a commanding view over the entire settlement below. The renaming pattern repeated at towns across Roman Africa. In 117 CE a Punic-style shrine still occupied this spot, not the Roman temple whose walls survive.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Thuburbo_Majus"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_de_Saturne.jpg?width=800",
+        "image_credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.905,
+          36.399
+        ]
+      },
+      "properties": {
+        "id": "poi_thuburbo_temple_baalat",
+        "category": "temple",
+        "name_latin": "Templum Baalat",
+        "name_english": "Temple of Baalat",
+        "province": "Africa Proconsularis",
+        "modern_location": "Thuburbo Maius, Tunisia",
+        "built": 200,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Southeast of the Summer Baths, Thuburbo Maius kept a small porticoed sanctuary to Baalat, a Punic goddess who was chief deity of Byblos in Phoenicia. The shrine shows how thoroughly Carthaginian religion outlasted Carthage in inland Africa. Its surviving colonnaded form dates to the Roman imperial period, in the 2nd or 3rd century CE. In 117 CE this exact structure had not yet been built, though the cult it served was already centuries old.",
+        "sources": [
+          "https://www.archnet.org/sites/15105"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le_petit_sanctuaire_%C3%A0_portique_2.JPG?width=800",
+        "image_credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1197,
+          35.2403
+        ]
+      },
+      "properties": {
+        "id": "poi_sufetula_forum_capitol",
+        "category": "temple",
+        "name_latin": "Capitolium",
+        "name_english": "Triple Capitol of Sufetula",
+        "province": "Africa Proconsularis",
+        "modern_location": "Sbeitla, Tunisia",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Sufetula's forum opened onto a rarity among Roman towns: three separate temples built side by side, one each for Jupiter, Juno, and Minerva, instead of a single shared Capitol. Bridges linked the three raised cellae so priests could cross between them without stepping down to ground level. The complex belongs to Sufetula's 2nd-century building boom, after the town grew wealthy on olive oil. In 117 CE this forum was a smaller Flavian-era square; the triple temple was still decades away.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sufetula",
+          "https://en.wikipedia.org/wiki/Archaeological_site_of_Sbeitla"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Capitol_temples_-_sbeitla.jpg?width=800",
+        "image_credit": "Wikimedia Commons",
+        "image_alt": "Three adjoining Roman temples of the Sufetula Capitol"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1195,
+          35.2401
+        ]
+      },
+      "properties": {
+        "id": "poi_sufetula_arch_antoninus_pius",
+        "category": "arch",
+        "name_latin": "Arcus Antonini Pii",
+        "name_english": "Arch of Antoninus Pius",
+        "province": "Africa Proconsularis",
+        "modern_location": "Sbeitla, Tunisia",
+        "built": 139,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A triple-arched gateway framed the entrance to Sufetula's forum, dedicated in 139 CE to Emperor Antoninus Pius and his adopted sons Marcus Aurelius and Lucius Verus. Stonecutters left its four Corinthian column shafts unsmoothed, evidence the arch was never fully finished. It is the one structure at Sufetula whose date historians can fix with certainty, thanks to its own inscription. In 117 CE Antoninus Pius was an unknown senator, and this arch was 22 years from being built.",
+        "sources": [
+          "https://structurae.net/en/structures/arch-of-antoninus-pius"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sbeitla_Arch_of_Antoninus_Pius.jpg?width=800",
+        "image_credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.121,
+          35.241
+        ]
+      },
+      "properties": {
+        "id": "poi_sufetula_theatre",
+        "category": "theater",
+        "name_latin": "Theatrum",
+        "name_english": "Theatre of Sufetula",
+        "province": "Africa Proconsularis",
+        "modern_location": "Sbeitla, Tunisia",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Cut into a slope above the Oued Sbeitla, Sufetula's theatre seated roughly 3,500 spectators for plays and civic gatherings. Archaeologists date its standing remains to the 2nd century CE, with rebuilding recorded in the 3rd. It shared its hillside neighborhood with the town's Great Baths, just to the west. In 117 CE Sufetula was still a young Flavian municipium with no stone theatre standing.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Archaeological_site_of_Sbeitla"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1205,
+          35.2405
+        ]
+      },
+      "properties": {
+        "id": "poi_sufetula_great_baths",
+        "category": "bath",
+        "name_latin": "Thermae",
+        "name_english": "Great Baths of Sufetula",
+        "province": "Africa Proconsularis",
+        "modern_location": "Sbeitla, Tunisia",
+        "built": 210,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "East of the forum, Sufetula built a paired bathing complex with separate summer and winter suites linked by a mosaic-floored palaestra measuring 27 by 17 meters. Cruciform hot rooms sat on raised brick piers with clay ducts piping heat beneath bathers' feet. Construction continued into the early 3rd century CE, well after the town's Antonine growth. In 117 CE none of this bathing complex had been built.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Archaeological_site_of_Sbeitla"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.118,
+          35.2415
+        ]
+      },
+      "properties": {
+        "id": "poi_sufetula_arch_diocletian",
+        "category": "arch",
+        "name_latin": "Arcus Diocletiani",
+        "name_english": "Arch of Diocletian",
+        "province": "Africa Proconsularis",
+        "modern_location": "Sbeitla, Tunisia",
+        "built": 293,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "At the edge of Sufetula stands the Triumphal Arch of the Tetrarchy, raised for Diocletian and his three co-emperors around 293 CE. It ranks among the best-preserved tetrarchic arches in North Africa, still framing the road into the ruined city. It commemorated the four-way power-sharing system Diocletian built to stabilize the empire after decades of crisis. In 117 CE this arch was over 175 years from being built, and the tetrarchy did not yet exist even as an idea.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Archaeological_site_of_Sbeitla"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arch_of_Diocletian_or_Triumphal_Arch_of_the_Tetrarchy_-_Sbeitla,_Tunisia_-_18_May_2012.jpg?width=800",
+        "image_credit": "Wikimedia Commons"
+      }
     }
   ]
 }
