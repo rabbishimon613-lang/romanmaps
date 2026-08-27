@@ -754,6 +754,48 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       every new batch's record titles against a quick `grep` of the destination city's existing
       records before merging, not just diffing id strings.
 
+## New ideas spotted this shift (2026-08-27, cloud shift 64 — Egypt & Cyrenaica + North Africa close out the Axis-1 regional queue)
+
+- [ ] **`[06-P1-3]` `building-typology` (BOARD.md) scoped and found not worth a shallow pass.**
+      Checked the real numbers before attempting it: of 48,570 building-footprint features across
+      the 80 `public/data/sites/*_buildings.geojson` files, 45,704 (94%) carry `category: "other"`,
+      and of those, 44,733 have `name: null` — there is no string left to categorize against, so a
+      richer keyword vocabulary (the ticket's "~35-term standard vocabulary, six colour families")
+      would not actually reclassify the vast bulk of them. The one real lever is OSM's own
+      `building=*` tag, which does carry typology independent of `name` (`apartments`: 5,140,
+      `house`: 648, etc.) — but a same-scan found that tag also carries obviously **modern**
+      building types (`church`: 130, `hospital`: 21, `university`: 14, `train_station`: 14,
+      `hotel`: 25, `government`: 3, `museum`: 3) mixed into the same "other" bucket, which is
+      expected and correct per the brief ("modern cities → thousands of modern buildings, that's
+      OK") but means a blanket "reclassify by `building=` tag" pass would mis-paint modern
+      infrastructure as ancient Roman building types on every site where a modern city sits over
+      the ancient core. A real fix needs a per-site ancient/modern discriminator (the `historic=`
+      tag looked promising but is `null` on effectively every "other" record sampled) before the
+      typology vocabulary itself is the bottleneck — that discriminator problem, not the color
+      count, is what a future shift needs to solve first.
+- [ ] **The brief's own Axis-1 regional queue (`SHIFT_BRIEF.md`'s "Gallia → Britannia → Hispania →
+      Germania → Balkans → Greece → Asia Minor → Levant → Egypt & Cyrenaica → North Africa" order)
+      is now fully opened** as of this shift's Egypt/Cyrenaica + North Africa batch (Alexandria
+      deepened, Karanis/Apollonia/Utica opened, Cyrene/Dougga/Bulla Regia deepened) plus a
+      same-shift bonus round on Thuburbo Maius/Sufetula/Theveste/Cirta. There is no next named
+      region left on that list. A future shift wanting more Axis-1 breadth should either (a) go
+      back and deepen an already-opened but thin city (many of the 60+ cities opened since shift
+      57 have only 5-10 curated POIs, versus Rome's 40+ or Ostia's hand-curated building set), or
+      (b) treat Axis 1 as substantially served for now and shift weight toward the still-open axes
+      (2 roadside stations beyond what's already mapped, most of 3's nine sub-categories, 4
+      living-empire people/events, and 5 through 20 — several of which are still fully untouched).
+- [ ] **Image coverage on new POIs from thin/small archaeological sites (Karanis, Cyrene's Roman-
+      period buildings, Apollonia Cyrenaica, most of Dougga/Bulla Regia's 2nd-3rd century
+      buildings) is genuinely harder to close than for major named sites** — of this shift's 61 new
+      `pois.geojson` records, 23 shipped with a confirmed image before a dedicated top-up pass even
+      ran (37%), because many of these buildings are either unexcavated/underground (Karanis's
+      granaries and dovecotes), never rebuilt after the 115-116 CE Kitos War (several Cyrene
+      temples), or simply thin on Commons coverage for a specific named building versus a generic
+      site-overview shot. A same-shift top-up agent pass was run before pushing rather than left for
+      later — see the commit for the closed count — but whatever's still image-less after that pass
+      is a genuine gap, not an unexhausted search budget, per the same pattern prior shifts flagged
+      for axis 20's gymnasia and axis 3c's economic sites.
+
 ## Shipped (moved from above; newest on top)
 
 - 2026-08-26 — cloud shift 63: Asia Minor queue opens — Aphrodisias, Hierapolis, Miletus, Sardis,
