@@ -40,6 +40,7 @@ export type LayerGroupId =
   | "wind-currents"
   | "fauna-sourcing"
   | "clothing"
+  | "gender-sexuality"
   | "satellite";
 
 /** `base: true` marks the five groups that make up the map you see on first load — the
@@ -92,6 +93,7 @@ export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: strin
   { id: "wind-currents", label: "Winds & sailing seasons", mapLayerIds: ["wind-currents-point"] },
   { id: "fauna-sourcing", label: "Arena animal sourcing", mapLayerIds: ["fauna-sourcing-line", "fauna-sourcing-point"] },
   { id: "clothing", label: "Clothing & fashion regions", mapLayerIds: ["clothing-fill", "clothing-line"] },
+  { id: "gender-sexuality", label: "Gender & sexuality geography", mapLayerIds: ["gender-sexuality-point"] },
 ];
 
 /** [10-P1-3] thematic-rooms. Six curated bundles over the 30 thematic (non-base) groups — one
@@ -110,7 +112,7 @@ export const ROOMS: { id: RoomId; label: string; description: string; groups: La
   { id: "money", label: "Money", description: "Crop and craft geography, arena-animal sourcing, housing, food and dress — the material economy.",
     groups: ["agriculture", "crafts", "fauna-sourcing", "housing", "cuisine", "clothing"] },
   { id: "belief", label: "Belief", description: "Temples, imperial cult, death ritual, ethnic pockets and the pre-Roman religions still visible.",
-    groups: ["religions", "imperial-cult", "death-rituals", "ethnic-pockets", "substrate"] },
+    groups: ["religions", "imperial-cult", "death-rituals", "ethnic-pockets", "substrate", "gender-sexuality"] },
   { id: "knowledge", label: "Knowledge", description: "Libraries and schools, letter networks, language belts, sacred landmarks and Rome's neighbors.",
     groups: ["learning", "letters", "languages", "landmarks", "neighbors"] },
   { id: "danger", label: "Danger", description: "117 CE's live wars and revolts, disasters remembered, disease, punishment and the arena.",

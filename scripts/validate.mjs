@@ -64,6 +64,7 @@ const PROFILES = {
   "languages.geojson": "themed",
   "wind_currents.geojson": "themed",
   "fauna_sourcing.geojson": "themed",
+  "gender_sexuality_geography.geojson": "themed",
 };
 
 const errors = [];

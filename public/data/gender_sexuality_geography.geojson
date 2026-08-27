@@ -1,0 +1,128 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [14.4868, 40.7503] },
+      "properties": {
+        "id": "gender_pompeii_lupanar",
+        "name": "The Lupanar of Pompeii",
+        "category": "brothel_site",
+        "one_line": "This two-story building on the Vicolo del Lupanare packed ten small stone-bedded cells behind a plain street door. Frescoes painted above each doorway showed a different scene, doubling as a menu for clients who could not read Latin. Visitors scratched more than 100 graffiti into its plaster walls, recording names, boasts, and prices. Vesuvius buried the building under volcanic ash on 24 August 79 CE — by 117 CE the site had lain sealed and forgotten for thirty-eight years.",
+        "province": "Italia",
+        "modern_location": "Pompeii, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "Wikipedia, \"Lupanar (Pompeii)\"",
+          "Aeon Essays, \"What Pompeii's ruins say about its enslaved, prostituted women\"",
+          "roman-empire.net, \"The Lupanar of Pompeii: Unveiling the Ancient Brothel's Secrets\""
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pompeii Lupanar.jpg?width=800",
+        "image_credit": "Exterior of the Lupanar, Pompeii · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [14.0697, 40.8167] },
+      "properties": {
+        "id": "gender_baiae_resort",
+        "name": "Baiae",
+        "category": "resort_reputation",
+        "one_line": "Villas cascaded down the hillside to private harbors along the Bay of Naples, built by men like Julius Caesar and the gourmet Lucullus, whose name became a byword for excess. Seneca stopped here around 60 CE, left the next day, and wrote home that Baiae was a \"vortex of luxury\" no serious person should linger in. Its sulfur-fed bathing halls drew mixed company at all hours, a scene later emperors from Caligula to Hadrian visited themselves. By 117 CE the resort had already carried this reputation for more than a century.",
+        "province": "Italia",
+        "modern_location": "Baia, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "Seneca, Epistulae Morales ad Lucilium 51",
+          "Wikipedia, \"Baiae\""
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Baiae Natatio.jpg?width=800",
+        "image_credit": "The Natatio bathing hall at Baiae · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.4862, 41.8917] },
+      "properties": {
+        "id": "gender_temple_vesta",
+        "name": "Temple of the Vestals",
+        "category": "female_priesthood",
+        "one_line": "Six Vestal Virgins tended the sacred fire here that Romans believed guarded the survival of their state. Chosen as girls between six and ten years old, each served a thirty-year vow of chastity while living together next door in the House of the Vestals. A Vestal who broke that vow faced live burial in an underground chamber, a sentence carried out only a handful of times across the office's history. In 117 CE the college still held privileges almost no other Roman woman had, including the right to make a will, own property outright, and ride through the city in a carriage.",
+        "province": "Italia",
+        "modern_location": "Roman Forum, Rome, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "Wikipedia, \"Temple of Vesta\"",
+          "Wikipedia, \"Sacred fire of Vesta\"",
+          "History Hit, \"The Temple of Vesta - History and Facts\""
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple Vesta Forum Romanum Rome Italy.jpg?width=800",
+        "image_credit": "Temple of Vesta, Roman Forum · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [14.4883, 40.7492] },
+      "properties": {
+        "id": "gender_temple_isis_pompeii",
+        "name": "Temple of Isis at Pompeii",
+        "category": "female_priesthood",
+        "one_line": "This small sanctuary near Pompeii's theater district was rebuilt entirely at private expense after the earthquake of 62 CE, funded by a freedman named Numerius Popidius Ampliatus on behalf of his six-year-old son. Priestesses in white linen served its rites alongside priests, one of the few cults in the Roman world that gave women formal religious authority equal to men's. Wealthy Pompeian women paid for its statues and altars and had their own names carved into the dedications. Vesuvius buried the finished temple in 79 CE, and by 117 CE it had sat sealed under ash for thirty-eight years.",
+        "province": "Italia",
+        "modern_location": "Pompeii, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "Wikipedia, \"Temple of Isis (Pompeii)\"",
+          "Isiopolis, \"Isis of Pompeii\"",
+          "Connecticut College Open Press, \"Temple of Isis at Pompeii - Religions of Greece and Rome: Site Reports\""
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pompeii, Temple of Isis, East Portico, Harpocrates Niche with a reproduction of a Fresco (48442486262).jpg?width=800",
+        "image_credit": "East portico, Temple of Isis, Pompeii · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.485, 41.88944] },
+      "properties": {
+        "id": "gender_galli_palatine",
+        "name": "Temple of Cybele on the Palatine",
+        "category": "male_priesthood",
+        "one_line": "Rome installed the Great Mother's black meteoric stone on this spot in 204 BCE, after fetching it from Asia Minor on a Senate order meant to help win the war against Hannibal. Her Phrygian priests, the Galli, ritually castrated themselves as a final act of initiation and afterward dressed and lived as women for the rest of their lives. Every April the Megalensia festival filled the street below with drumming, cymbals, and processions, even as Roman law barred citizens themselves from joining the priesthood. Rebuilt by Augustus after a fire, the temple had stood on this terrace above the Circus Maximus for more than three centuries by 117 CE.",
+        "province": "Italia",
+        "modern_location": "Palatine Hill, Rome, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "Wikipedia, \"Galli\"",
+          "Wikipedia, \"Temple of Cybele (Palatine)\"",
+          "English Heritage, \"The Galli: Breaking Roman Gender Norms\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.5833, 39.3314] },
+      "properties": {
+        "id": "gender_galli_pessinus",
+        "name": "Sanctuary of Cybele at Pessinus",
+        "category": "male_priesthood",
+        "one_line": "Perched nearly 950 meters up on the high Phrygian plateau, this sanctuary was Cybele's original home long before Rome ever heard her name. Its priesthood ran the site as a self-governing temple-state, with high priests titled Attis and Battakes controlling its own land and revenue independent of any king. Rome sent a delegation here in 204 BCE and carried the goddess's sacred stone back to a new temple on the Palatine, yet Pessinus kept its own galli and rites running afterward. By 117 CE the sanctuary had been rebuilt in Roman style under Augustus and Tiberius and still functioned inside the province of Galatia as a working cult center.",
+        "province": "Galatia",
+        "modern_location": "Ballihisar, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Wikipedia, \"Pessinus\"",
+          "Livius.org, \"Pessinus (Ballihisar)\"",
+          "University of Waterloo, \"The Temple State of Phrygian Pessinus in the Context of Hellenistic Ruler Cults\""
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/3D reconstruction temple Pessinus Angelo Verlinde.jpg?width=800",
+        "image_credit": "3D reconstruction of the temple at Pessinus, by Angelo Verlinde · Wikimedia Commons"
+      }
+    }
+  ]
+}

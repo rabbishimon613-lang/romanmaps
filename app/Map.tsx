@@ -349,6 +349,7 @@ const THEMATIC_LAYER_ORDER: string[] = [
   "ethnic-pockets-point",
   "clothing-fill",
   "clothing-line",
+  "gender-sexuality-point",
 ];
 
 function restackThematicLayers(map: maplibregl.Map) {
@@ -3066,6 +3067,54 @@ export default function Map() {
                 .addTo(map);
             });
             map.on("mouseleave", "clothing-fill", () => {
+              if (map) map.getCanvas().style.cursor = "";
+            });
+            kick();
+          }
+        });
+
+        // Phase 36: Gender & sexuality geography (public/data/gender_sexuality_geography.geojson)
+        // — axis 9f, the last open sub-axis of daily life patterns. Contextual, museum-label
+        // register throughout (brothel site, resort reputation, female/male priesthoods) — same
+        // circle-point visual family as Phase 12 imperial cult.
+        registerThematic("gender-sexuality", async () => {
+          const genderSexuality = await fetch("/data/gender_sexuality_geography.geojson")
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null);
+          if (!cancelled && map && genderSexuality) {
+            map.addSource("gender-sexuality", { type: "geojson", data: genderSexuality });
+            map.addLayer({
+              id: "gender-sexuality-point",
+              type: "circle",
+              source: "gender-sexuality",
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 3.5, 8, 6.5],
+                "circle-color": "#b0567a",
+                "circle-stroke-color": P.labelHalo,
+                "circle-stroke-width": 1.6,
+              },
+            });
+
+            const genderPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 10 });
+            map.on("mouseenter", "gender-sexuality-point", (e) => {
+              if (!map) return;
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const p: any = f.properties || {};
+              const noteLine = p.one_line ? `<div style="margin-top:4px; max-width:240px;">${escapeHtml(p.one_line)}</div>` : "";
+              genderPopup
+                .setLngLat(e.lngLat)
+                .setHTML(
+                  `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                     <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
+                     <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.category ? prettyCategory(p.category) : "")}</div>
+                     ${noteLine}
+                   </div>`,
+                )
+                .addTo(map);
+            });
+            map.on("mouseleave", "gender-sexuality-point", () => {
               if (map) map.getCanvas().style.cursor = "";
             });
             kick();
