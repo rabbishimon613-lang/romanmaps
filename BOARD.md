@@ -766,8 +766,9 @@ to prevent. Building locally to *test* your own work is expected and fine.
       `map.fire('click', ...)` workaround shift 30 documented.
 - [ ] `[10-P0-2]` **`three-depth-labels`** `deepen` — Tombstone (10w) / label (50w) / panel
       (250–400w) for every place.
-- [ ] `[13-P1-4]` **`engravings`** `illustrate` — Period engravings (Piranesi, Gell, Wood,
-      Cassas, Rossini) for the 40 sites and top 100 POIs. **Standing task.**
+- [~] `[13-P1-4]` **`engravings`** `illustrate` — claimed by cloud shift 65, 2026-08-27 06:15.
+      Period engravings (Piranesi, Gell, Wood, Cassas, Rossini) for the 40 sites and top 100
+      POIs. **Standing task.**
 - [x] `[06-P0-1]` **`phase-banners`** `fix` — Done 2026-08-23 by cloud shift 49. Added
       `SiteInfo.snapshotNote` (`app/sites.ts`), set only for Pompeii and Herculaneum — the two of
       the 40 curated sites whose street-level detail shows a state that predates the 117 CE
