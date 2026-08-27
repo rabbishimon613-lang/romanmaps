@@ -18593,7 +18593,14 @@
         ]
       },
       "properties": {
-        "id": "poi_lepcis_hadrianic_baths",
+        "id": "poi_lepcis_hadrianic_baths", "ancient_sources": [
+ {
+  "author": "IRT 361",
+  "work": "Dedicatory inscription",
+  "ref": "c. 127-128 CE",
+  "note": "Records the governor Publius Valerius Priscus, acting through his legate Popilius Celer, formally opening the bathhouse under Hadrian."
+ }
+],
         "category": "bathhouse",
         "name_latin": "Thermae Hadrianae",
         "name_english": "Hadrianic Baths of Leptis Magna",
@@ -28858,7 +28865,14 @@
         ]
       },
       "properties": {
-        "id": "poi_bulla_regia_temple_isis",
+        "id": "poi_bulla_regia_temple_isis", "ancient_sources": [
+ {
+  "author": "AE 2005, 1690",
+  "work": "Votive altar",
+  "ref": "131-170 CE",
+  "note": "A later votive altar to Isis Augusta dedicated by P. Aelius Privatus and his wife Cocceia Bassa in fulfillment of a vow, set up before the temple podium after the original construction."
+ }
+],
         "category": "temple",
         "name_latin": "Templum Isidis Bullae Regiae",
         "name_english": "Temple of Isis",
@@ -28939,7 +28953,14 @@
         ]
       },
       "properties": {
-        "id": "poi_bulla_regia_memmian_baths",
+        "id": "poi_bulla_regia_memmian_baths", "ancient_sources": [
+ {
+  "author": "ILAfr 454",
+  "work": "Statue base",
+  "ref": "early 3rd century CE",
+  "note": "Praises Julia Memmia for the extraordinary magnificence of the baths she funded for the city's beautification and public health."
+ }
+],
         "category": "bath",
         "name_latin": "Thermae Iuliae Memmiae",
         "name_english": "Memmian Baths",
@@ -30032,7 +30053,14 @@
         ]
       },
       "properties": {
-        "id": "poi_capitol_dougga",
+        "id": "poi_capitol_dougga", "ancient_sources": [
+ {
+  "author": "CIL VIII 26609",
+  "work": "Honorary statue base",
+  "ref": "166-167 CE",
+  "note": "The pagus and civitas of Thugga thank L. Marcius Simplex for donating the Capitol; companion bases at the same find-spot honor his father and brother."
+ }
+],
         "category": "temple",
         "name_latin": "Capitolium Thuggae",
         "name_english": "Capitol of Dougga",
@@ -30230,7 +30258,14 @@
         ]
       },
       "properties": {
-        "id": "poi_forum_dougga",
+        "id": "poi_forum_dougga", "ancient_sources": [
+ {
+  "author": "ILAfr 558",
+  "work": "Dedicatory inscription",
+  "ref": "c. 36-37 CE",
+  "note": "Thugga's earliest dated inscription, recording the paving of the forum and the ground before the Temple of Caesar, plus an altar of Augustus, an early temple of Saturn, and an arch, funded by L. Postumius Chius and his sons."
+ }
+],
         "category": "forum",
         "name_latin": "Forum Thuggae",
         "name_english": "Forum of Dougga",
@@ -30644,7 +30679,14 @@
         ]
       },
       "properties": {
-        "id": "poi_theveste_arch_caracalla",
+        "id": "poi_theveste_arch_caracalla", "ancient_sources": [
+ {
+  "author": "CIL VIII.1 7094-7098",
+  "work": "Dedicatory inscriptions",
+  "ref": "213-214 CE",
+  "note": "Five inscriptions across the arch's attic dedicated to the deified Septimius Severus, to Julia Domna, and to Caracalla."
+ }
+],
         "category": "arch",
         "name_latin": "Arcus Caracallae",
         "name_english": "Arch of Caracalla",
