@@ -31301,6 +31301,388 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arch_of_Diocletian_or_Triumphal_Arch_of_the_Tetrarchy_-_Sbeitla,_Tunisia_-_18_May_2012.jpg?width=800",
         "image_credit": "Wikimedia Commons"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.317397,
+          50.504722
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_rheinbrohl",
+        "category": "signal_tower",
+        "name_latin": "Turris Rheinbrohl",
+        "name_english": "Rheinbrohl Limes Watchtower (Wp 1/1)",
+        "province": "Germania Superior",
+        "modern_location": "Rheinbrohl, Rhineland-Palatinate, Germany",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Watchtower Wp 1/1 marked the caput limitis, the exact point where the Upper Germanic frontier left the Rhine and struck out overland toward the Taunus hills. Soldiers raised the first wooden tower here under Domitian, planting post number one of a chain that would eventually run more than 550 kilometers to the Danube. From its post above the river a sentry watched both boat traffic on the Rhine and the road climbing away from the crossing. Later garrisons rebuilt the tower in stone, but the site kept its role as the anchor point of the entire Upper Germanic-Raetian frontier.",
+        "sources": [
+          "https://de.wikipedia.org/wiki/Kleinkastell_Rheinbrohl",
+          "https://rom-in-deutschland.de/Seiten/limes-wachtposten-wp-1-10-bei-rheinbrohl.html",
+          "https://www.kuladig.de/Objektansicht/KLD-290341"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.08597,
+          49.71972
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_vielbrunn_haspel",
+        "category": "signal_tower",
+        "name_latin": "Turris Oberer Haspel",
+        "name_english": "Vielbrunn Limes Watchtower \"Im Oberen Haspel\" (Wp 10/15)",
+        "province": "Germania Superior",
+        "modern_location": "Michelstadt-Vielbrunn, Hesse, Germany",
+        "built": 98,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman soldiers cut watchtower Wp 10/15 out of the Odenwald forest in 98 CE, the year Trajan's engineers opened the building phase that carried a patrol road and its towers through the hills above Vielbrunn. The wooden tower rose about twelve meters over the tree line, tall enough to relay a signal along a forested ridge where sightlines ran short. It anchored a newly cleared stretch of the frontier road that let couriers move faster than the terrain would otherwise allow. Archaeologists later used the excavated tower base as the model for a full-scale timber reconstruction on the same spot.",
+        "sources": [
+          "https://de.wikipedia.org/wiki/Limesturm_Wp_10/15_%22Im_Oberen_Haspel%22",
+          "https://hk-bauplan.de/documents/Limesturm-Tafel1.pdf",
+          "https://erkunde-deutschland.de/ausflugsziele/hessen/odenwald/limes-wachturm-im-oberen-haspel-roemisches-erbe-mitten-im-odenwald/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.085426,
+          49.713097
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_vielbrunn_nord",
+        "category": "signal_tower",
+        "name_latin": "Turris Bei Vielbrunn",
+        "name_english": "Vielbrunn Limes Watchtower \"Bei Vielbrunn\" (Wp 10/16)",
+        "province": "Germania Superior",
+        "modern_location": "Michelstadt-Vielbrunn, Hesse, Germany",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A second watchtower, Wp 10/16, stood barely half a kilometer from its neighbor at Im Oberen Haspel, part of the dense chain of posts the Roman army planted along the Odenwald frontier road. Its garrison watched a stretch of forest where the hills broke direct sightlines between the larger stations, closing a gap in the signal chain. Excavators found the telltale mound of its collapsed wooden tower along with the low ring bank that once surrounded it. The tower belonged to the same building push that Trajan's engineers carried through the Odenwald in the frontier's opening decade.",
+        "sources": [
+          "https://vici.org/vici/9861/?lang=de",
+          "https://www.limesseiten.de/LIMES/ODENWALD.HTML"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.099444,
+          49.564098
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_kahler_buckel",
+        "category": "signal_tower",
+        "name_latin": "Turris Kahler Buckel",
+        "name_english": "Kahler Buckel Limes Watchtower (Wp 10/33)",
+        "province": "Germania Superior",
+        "modern_location": "Hesseneck, Hesse, Germany",
+        "built": 108,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The watchtower on the Kahler Buckel held the northernmost post on this stretch of the Odenwald limes, standing 530 meters up on a bald summit that gave its garrison a clear line of sight in every direction. A dedication tablet recovered during excavation let archaeologists fix the date of one of its building phases precisely, a rarity among the frontier's hundreds of otherwise anonymous towers. A copy of that inscription now stands on the site while the original is kept in the Badisches Landesmuseum in Karlsruhe. Three superimposed sets of foundation walls, uncovered by excavation, mark where successive towers rose on the same spot.",
+        "sources": [
+          "https://vici.org/vici/9876/?lang=de",
+          "http://www.limesseiten.de/LIMES/ODENWALD/10-33.HTML",
+          "https://commons.wikimedia.org/wiki/Category:Limeswachturm_Wp_10/33"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.106309,
+          49.554688
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_klosterwald",
+        "category": "signal_tower",
+        "name_latin": "Turris Klosterwald",
+        "name_english": "Klosterwald Limes Watchtower (Wp 10/35)",
+        "province": "Germania Superior",
+        "modern_location": "Mudau, Baden-Württemberg, Germany",
+        "built": 108,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Watchtower Wp 10/35 stood in the Klosterwald forest, one link among roughly ninety towers the Roman army raised along the Odenwald limes between the Main and Neckar rivers. Like its neighbors it began as a wooden post spaced about 709 meters from the next tower in the chain, close enough to keep constant visual contact along the forested ridge. Soldiers rebuilt it in stone as the frontier matured. Its excavated foundation still marks the site today, a short walk from the better-known tower at Kahler Buckel.",
+        "sources": [
+          "https://vici.org/vici/9878/?lang=de",
+          "https://rom-in-deutschland.de/Seiten/roemischer-wachturm-am-neckar-odenwald-limes-bei-mudau.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.084319,
+          49.594528
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_vogelbaumhecken",
+        "category": "signal_tower",
+        "name_latin": "Turris Vogelbaumhecken",
+        "name_english": "Vogelbaumhecken Limes Watchtower (Wp 10/30)",
+        "province": "Germania Superior",
+        "modern_location": "Odenwald (near Beerfelden), Hesse, Germany",
+        "built": 108,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The watchtower known as Vogelbaumhecken took its name from the hedge-lined clearing where Roman surveyors set it along the Odenwald limes. Its garrison stood roughly midway between the towers at Kahler Buckel and Vielbrunn, filling a gap along several kilometers of forested frontier. Excavation uncovered the mound of its collapsed wooden tower and the shallow ditch that once ringed it. The post went up during the early second-century building campaign that gave the Odenwald line its full chain of towers.",
+        "sources": [
+          "https://vici.org/vici/9873/?lang=de",
+          "https://www.limesseiten.de/LIMES/ODENWALD.HTML"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.080278,
+          49.74778
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_sellenplatte",
+        "category": "signal_tower",
+        "name_latin": "Turris Sellenplatte",
+        "name_english": "Sellenplatte Limes Watchtower (Wp 10/11)",
+        "province": "Germania Superior",
+        "modern_location": "Lützelbach, Hesse, Germany",
+        "built": 108,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Watchtower Wp 10/11 stood on the Sellenplatte above Lützelbach, one of the northern posts on the Odenwald stretch of the limes. Its crew watched a forested section of frontier where the patrol road climbed between the forts at Seckmauern and Würzberg. The tower began in timber and earth, following the pattern of nearly every post the Roman army raised along this line in the frontier's first decades. Its foundation mound still survives in the forest, visible today to hikers following the marked Limes trail.",
+        "sources": [
+          "https://vici.org/vici/9856/?lang=de",
+          "https://www.limesseiten.de/LIMES/ODENWALD.HTML"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.128319,
+          49.55014
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_schneidershecke",
+        "category": "signal_tower",
+        "name_latin": "Turris Schneidershecke",
+        "name_english": "Schneidershecke Limes Watchtower (Wp 10/37a)",
+        "province": "Germania Superior",
+        "modern_location": "Mudau, Baden-Württemberg, Germany",
+        "built": 105,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The watchtower at Schneidershecke guarded a bend in the Odenwald limes near Mudau, its garrison watching the forest below for movement along the frontier. Roman engineers set it into a chain of towers running the line at intervals of a few hundred meters, close enough that a lit beacon or a shout could carry from post to post. The tower began as a wooden structure typical of the frontier's earliest building phase before a later rebuilding in stone. Its buried foundations still lie under the forest floor near the modern hiking route that traces the ancient patrol road.",
+        "sources": [
+          "https://vici.org/vici/9880/?lang=de"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.077639,
+          49.672779
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_heumatte",
+        "category": "signal_tower",
+        "name_latin": "Turris Heumatte",
+        "name_english": "Heumatte Limes Watchtower (Wp 10/21)",
+        "province": "Germania Superior",
+        "modern_location": "Odenwald, Hesse, Germany",
+        "built": 108,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Watchtower Wp 10/21, known locally as In der Heumatte, held a post on the Odenwald limes between the forts at Hesselbach and Würzberg. Its crew relayed signals along a stretch of frontier where dense forest cut sightlines down to a few hundred meters at a time. The tower started as timber and turf, part of the wave of construction Trajan's army pushed through the Odenwald in the frontier's opening decades. Twentieth-century surveys first mapped its mound and surrounding ditch when archaeologists traced the full course of this limes sector.",
+        "sources": [
+          "https://vici.org/vici/9866/?lang=de",
+          "https://www.limesseiten.de/LIMES/ODENWALD.HTML"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.08444,
+          49.76639
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_breitenbrunner_bannholz",
+        "category": "signal_tower",
+        "name_latin": "Turris Breitenbrunner Bannholz",
+        "name_english": "Breitenbrunner Bannholz Limes Watchtower (Wp 10/9)",
+        "province": "Germania Superior",
+        "modern_location": "Breitenbrunn, Michelstadt, Hesse, Germany",
+        "built": 105,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The watchtower in the Breitenbrunner Bannholz forest carried a double footprint: a substantial mound from its original timber tower plus the rubble of a stone successor built twenty meters to the north. It stood on the Odenwald limes near Breitenbrunn, part of the chain linking the forts at Würzberg and Hesselbach. Roman troops raised the first wooden tower here during the early second-century push that opened the Odenwald frontier under Trajan. Its paired remains make it one of the more legible tower sites on the entire Odenwald line.",
+        "sources": [
+          "https://www.bergstrasse-odenwald.de/detail/id=5f2ba29763033a4560d9a217"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.713611,
+          50.517796
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_gaulskopf",
+        "category": "signal_tower",
+        "name_latin": "Turris Gaulskopf",
+        "name_english": "Gaulskopf Limes Watchtower (Wp 4/16)",
+        "province": "Germania Superior",
+        "modern_location": "Friedberg-Ockstadt, Hesse, Germany",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The stone watchtower on the Gaulskopf stood 397 meters up in the Taunus hills, about three kilometers from the fort at Kapersburg it helped to guard. Rebuilt as a full-scale reconstruction in 1926, it survives today as one of the best-restored towers anywhere on the frontier. Its garrison held sightlines across the eastern Hintertaunus and out over the Wetterau plain below. The tower belonged to the wave of posts Trajan's army raised along this stretch of the limes as the frontier hardened into a permanent line.",
+        "sources": [
+          "https://wetteraukreis.de/tourismus/kultur/archaeologie/limes-projekte/limes-wachtturm-gaulskopf",
+          "https://www.kuladig.de/Objektansicht/KLD-284587",
+          "https://de.wikipedia.org/wiki/Gaulskopf_(Taunus)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.967046,
+          50.252448
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_limeshain",
+        "category": "signal_tower",
+        "name_latin": "Turris Eckartshäuser Unterwald",
+        "name_english": "Limeshain Limes Watchtower \"Eckartshäuser Unterwald\" (Wp 4/103)",
+        "province": "Germania Superior",
+        "modern_location": "Limeshain-Rommelhausen, Hesse, Germany",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Watchtower Wp 4/103 stood in the Eckartshäuser Unterwald forest south of what is now Limeshain-Rommelhausen, one link in the Wetterau chain of the Upper Germanic limes. Excavators could still trace both its wooden and stone tower sites side by side in the terrain, a rare look at how a single post was rebuilt over time. The first timber tower went up around 100 CE as Trajan's army pushed the Wetterau frontier into permanent form. A reconstructed stone tower, raised to a height of 11.46 meters and inaugurated in 2013, now marks the spot using construction methods drawn directly from the excavation.",
+        "sources": [
+          "https://www.roemer-tour.de/roemerspuren/deutschland/hessen/limeswachturm-limeshain-wp-4-103/",
+          "https://tourismus.wetterau.de/kultur/archaeologie/limes-projekte/limes-wachtturm-in-limeshain",
+          "https://vici.org/vici/16551/?lang=en"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.202966,
+          50.190322
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_zugmantel",
+        "category": "signal_tower",
+        "name_latin": "Turris Zugmantel",
+        "name_english": "Zugmantel Limes Watchtower (Wp 3/15)",
+        "province": "Germania Superior",
+        "modern_location": "Taunusstein-Orlen, Hesse, Germany",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Watchtower Wp 3/15 stood beside the cohort fort at Zugmantel on the western Taunus ridge, close enough that its garrison could relay a signal to the fort gates in moments. It formed part of the timber palisade and ditch system that ran the length of this limes sector, fifty meters of which survive in reconstruction today. The tower watched the frontier road as it crossed the forested high ground above what is now Taunusstein-Orlen. Its post dates to the early phase of frontier building that Trajan's engineers carried out along the Taunus crest.",
+        "sources": [
+          "https://www.roemer-tour.de/roemerspuren/deutschland/hessen/wachtposten-kastell-zugmantel-wp-3-15/",
+          "https://en.wikipedia.org/wiki/Kastell_Zugmantel"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.58588,
+          50.4387
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_pulverberg_sayn",
+        "category": "signal_tower",
+        "name_latin": "Turris Pulverberg",
+        "name_english": "Pulverberg Limes Watchtower (Wp 1/54)",
+        "province": "Germania Superior",
+        "modern_location": "Bendorf-Sayn, Rhineland-Palatinate, Germany",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The watchtower on the Pulverberg above Sayn kept watch over the Brexbach valley from a wooded summit east of the Rhine. Local preservationists rebuilt its tower in 1912, one of the earliest Limes reconstructions anywhere in Germany, using the debris mound of the original as their guide. Roman soldiers built the first post here as part of the frontier's push inland from the Rhine in the early second century. Hikers today reach it by the Saynsteig trail, which climbs the same ridge the tower once watched.",
+        "sources": [
+          "https://www.kuladig.de/Objektansicht/O-111618-20150112-2",
+          "https://rom-in-deutschland.de/Seiten/wachtposten-wp-1-54-auf-dem-pulverberg.html",
+          "https://de.wikipedia.org/wiki/Pulverberg_(Rheinland-Pfalz)"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
