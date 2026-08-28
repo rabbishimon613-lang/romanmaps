@@ -32154,6 +32154,207 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.1578,
+          35.3018
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_dionysos_knossos",
+        "category": "villa",
+        "name_latin": "Domus Dionysiaca",
+        "name_english": "Villa Dionysos",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Knossos, Heraklion, Crete, Greece",
+        "built": 50,
+        "destroyed": 200,
+        "extant_117ce": true,
+        "notes": "Wealthy Knossians built this domus beside the old Minoan palace in the 1st century AD, arranging reception rooms around a colonnaded peristyle court. Excavators uncovered eight mosaic floors here, three showing Dionysos and his followers in flowing color, behind walls once lined with marble paneling. By 11 August 117 CE the house stood roughly seventy years old and still hosted banquets under its wine god's gaze. An earthquake toppled it around 200 CE.",
+        "sources": [
+          "https://www.cambridge.org/core/journals/annual-of-the-british-school-at-athens/article/abs/socalled-villa-dionysos-at-knossos/423ED7642653DDFC668CA58CBDB4C1C6",
+          "https://artsweb.cal.bham.ac.uk/aha/kaw/knossos/VillaDionysos.htm"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.95417,
+          32.70889
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_palazzo_colonne_ptolemais",
+        "category": "villa",
+        "name_latin": "Domus Praesidis",
+        "name_english": "Palazzo delle Colonne",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Tolmeita, Cyrenaica, Libya",
+        "built": -150,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Ptolemais's governor lived behind this 165-meter colonnaded facade, raised under the last Ptolemies and fitted out with Roman-style rooms during the 1st century AD. A grand peristyle led to mosaic-floored dining halls where a Medusa mosaic guarded one threshold, alongside a private bath suite and separate women's wing. On 11 August 117 CE the palace still anchored the city beside its agora, a Hellenistic mansion wearing a fresh Roman face. Polish archaeologists began excavating it in 1937.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Palazzo_delle_Colonne",
+          "https://www.academia.edu/1752801/The_Decoration_of_the_Dining_Rooms_at_Ptolemais_in_Cyrenaica_Libya_in_the_Light_of_the_Last_Researches"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palazzo_delle_colonne,_esterno_22.jpg?width=800",
+        "image_credit": "Palazzo delle Colonne, Ptolemais · Wikimedia Commons",
+        "image_alt": "Ruins of the colonnaded peristyle at the Palazzo delle Colonne in Ptolemais, Libya"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.1484,
+          38.1299
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_san_biagio_terme_vigliatore",
+        "category": "villa",
+        "name_latin": "Villa Tyndaritana",
+        "name_english": "Villa Romana di San Biagio",
+        "province": "Sicilia",
+        "modern_location": "Terme Vigliatore, Messina, Sicily, Italy",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A wealthy Roman raised this seaside villa near Tyndaris around 100 BCE, then remodeled its 53 rooms twice more under the early empire. Its frigidarium floor still carries a black-and-white mosaic of dolphins and swordfish chasing across the tiles, fed by baths piped from a spring the Romans dedicated to Venus. By 11 August 117 CE the villa had stood for over two centuries along the coastal road linking Tyndaris to Messina. Excavators brought it back to light in the 1950s.",
+        "sources": [
+          "https://it.wikipedia.org/wiki/Villa_romana_di_San_Biagio",
+          "https://parchiarcheologici.regione.sicilia.it/tindari/en/siti-archeologici/villa-romana-di-san-biagio-terme-di-vigliatore/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa_romana_Terme_V._19_10_2018_10.jpg?width=800",
+        "image_credit": "Villa Romana di San Biagio, Terme Vigliatore · Wikimedia Commons",
+        "image_alt": "Remains of the Roman villa of San Biagio at Terme Vigliatore, Sicily"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.445,
+          37.293
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_durrueli_realmonte",
+        "category": "villa",
+        "name_latin": "Villa Agrigentina",
+        "name_english": "Villa Romana di Durrueli",
+        "province": "Sicilia",
+        "modern_location": "Contrada Durrueli, Realmonte, Agrigento, Sicily, Italy",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A landowner raised this seaside villa above Punta Grande in the 1st century AD, arranging guest rooms around a central peristyle floored in marble slabs and polychrome mosaic. Railway workers cutting a bed for the Castelvetrano-Porto Empedocle line found it by accident in 1907. A second wing with private baths was added in the 2nd century AD, expanding an estate that once ran this stretch of Agrigento's coast. On 11 August 117 CE the original villa had already welcomed guests for decades.",
+        "sources": [
+          "https://it.wikipedia.org/wiki/Villa_romana_di_Realmonte",
+          "https://www.ismed.cnr.it/en/projects/roman-villa-of-durrueli/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villaromanarealmonte.jpg?width=800",
+        "image_credit": "Villa Romana di Durrueli, Realmonte · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman villa of Durrueli overlooking the sea at Realmonte, Sicily"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.3416,
+          37.9396
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_terrace_house_ephesus",
+        "category": "villa",
+        "name_latin": "Domus Ephesiae",
+        "name_english": "Ephesus Terrace Houses",
+        "province": "Asia",
+        "modern_location": "Selcuk, Izmir Province, Turkey",
+        "built": 30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Six wealthy Ephesian families shared this hillside apartment block, built in the second quarter of the 1st century AD along Curetes Street. Each unit opened onto its own Corinthian-columned courtyard, floored with mosaics of Nereids riding hippocamps, beneath frescoed walls showing Eros figures and hunts. By 11 August 117 CE the terrace houses had sheltered Ephesus's leading families for some eighty years, and would stand for centuries more. Hermann Vetters led their excavation from 1960.",
+        "sources": [
+          "https://www.petersommer.com/blog/archaeology-history/ephesus-terrace-house-2",
+          "https://turkisharchaeonews.net/object/terrace-houses-ephesus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Terrace_Houses_in_Ephesus.jpg?width=800",
+        "image_credit": "Terrace Houses, Ephesus · Wikimedia Commons",
+        "image_alt": "Excavated Roman terrace houses at Ephesus with peristyle courtyards and mosaic floors"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.72361,
+          37.70833
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_atrium_house_aphrodisias",
+        "category": "villa",
+        "name_latin": "Domus Atriata",
+        "name_english": "Aphrodisias Atrium House",
+        "province": "Asia",
+        "modern_location": "Geyre, Aydin Province, Turkey",
+        "built": 30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "An Aphrodisian family built this residence north of the Sebasteion in the early 1st century AD, centered on a monumental four-columned Ionic atrium. Later generations kept remodeling it, eventually adding an apsidal courtyard and a second colonnaded wing. On 11 August 117 CE the atrium already stood roughly a century old, home to a family prominent enough to build beside the city's temple to the emperors. Its famous marble shield portraits of philosophers came only in the 5th century.",
+        "sources": [
+          "https://aphrodisias-excavations.com/atriumhouse/",
+          "https://aphrodisias-excavations.com/houses/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.75,
+          36.8825
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_labyrinth_hippo_regius",
+        "category": "villa",
+        "name_latin": "Villa Labyrinthi",
+        "name_english": "Villa of the Labyrinth",
+        "province": "Numidia",
+        "modern_location": "Annaba, Algeria",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Hippo Regius's seafront quarter held this colonnaded villa, named for a labyrinth-pattern mosaic laid into one of its floors. Successive owners repaved its rooms across four centuries, with the earliest phases dating to the 1st century AD beneath later mosaic layers. On 11 August 117 CE the villa looked out over Hippo's harbor, decades before Augustine's mother Monica would be born in the same city. Archaeologists still work out which mosaic belongs to which building phase.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Hippo_Regius",
+          "https://www.researchgate.net/publication/382769927_Urban_Development_in_the_City_of_Hippo_Regius_in_Algeria_according_to_Ancient_Iconography_Case_Study_of_the_Mosaic_of_the_Seafront_Villa"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
