@@ -203,7 +203,7 @@ to prevent. Building locally to *test* your own work is expected and fine.
       `next build` generates all 513 routes cleanly (~18s); Playwright at desktop + 375×812 for
       an image-bearing page and a no-image fallback page; the map round-trip link confirmed
       landing on the right panel.
-- [ ] `[02-P0-1]` **`terrain`** `polish` — Hillshade/relief under the land fill.
+- [~] `[02-P0-1]` **`terrain`** `polish` — claimed by cloud shift 68, 2026-08-28 00:20. Hillshade/relief under the land fill.
 - [ ] `[02-P0-4]` **`self-host-glyphs`** `fix` — **Half done 2026-08-19 by cloud shift 32, half
       still open — see below.** Original scope: stop depending on `demotiles.maplibre.org`, a
       single point of failure that would erase every label on the map.
