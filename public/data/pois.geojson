@@ -31683,6 +31683,224 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.085,
+          49.726391
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_dollchenschneise",
+        "category": "signal_tower",
+        "name_latin": "Turris Döllchenschneise",
+        "name_english": "Döllchenschneise Limes Watchtower (Wp 10/14)",
+        "province": "Germania Superior",
+        "modern_location": "Michelstadt, Hesse, Germany",
+        "built": 105,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Watchtower Wp 10/14 stood an der Döllchenschneise, a forest ride on the Odenwald limes near the fort at Hainhaus. Its garrison kept the chain of signal posts unbroken along a stretch of frontier where dense woodland cut sightlines short. The tower began as timber during the early second-century push that opened the Odenwald line, part of the same building campaign attested at neighboring posts. Records show the post stayed in use until about 159 CE, when the frontier here was eventually abandoned and the line pulled forward.",
+        "sources": [
+          "https://vici.org/vici/9859/",
+          "https://www.limesseiten.de/LIMES/ODENWALD.HTML"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.394444,
+          25.754444
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_didymoi",
+        "category": "auxiliary_fort",
+        "name_latin": "Didymoi",
+        "name_english": "Didymoi Praesidium (Khashm el-Menih)",
+        "province": "Aegyptus",
+        "modern_location": "Khashm el-Menih, Eastern Desert, Egypt",
+        "built": 77,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Didymoi guarded a well on the road linking Koptos to the Red Sea port of Berenike, its garrison keeping caravans of incense, spices, and quarry workers moving safely across 380 kilometers of open desert. Soldiers under Vespasian built the fort around 77 CE, giving traders and imperial convoys alike a defended place to rest and water their animals. Excavators recovered thousands of ostraca here, the daily paperwork of a small desert garrison, covering duty rosters, supply requests, and private letters home. The fort's mudbrick walls and corner towers still stand at Khashm el-Menih, rising from the gravel plain much as they did when Roman troops manned them.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Didymoi",
+          "https://dergipark.org.tr/en/pub/philia/article/441132",
+          "https://grokipedia.com/page/didymoi"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.401161,
+          25.942611
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_krokodilo",
+        "category": "auxiliary_fort",
+        "name_latin": "Krokodilo",
+        "name_english": "Krokodilo Praesidium (El-Muwayh)",
+        "province": "Aegyptus",
+        "modern_location": "El-Muwayh, Eastern Desert, Egypt",
+        "built": 77,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Krokodilo stood on the Koptos-Myos Hormos road at El-Muwayh, one of ten fortified stations spaced along the route that carried Red Sea trade goods inland to the Nile. Soldiers built the fort under Vespasian as part of a security program that put a defended well within a day's march of the next, letting caravans cross the desert without running dry. More than 150 ostraca recovered from its rubbish dumps recorded the daily military correspondence passing between the fort's small garrison and its neighboring posts. Its intramural cisterns, still visible in the ruins, let the garrison store water through the driest stretches of the year.",
+        "sources": [
+          "https://pleiades.stoa.org/places/786054",
+          "https://www.trismegistos.org/place/3655",
+          "https://bmcr.brynmawr.edu/2007/2007.01.29/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.787315,
+          26.001245
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_maximianon",
+        "category": "auxiliary_fort",
+        "name_latin": "Maximianon",
+        "name_english": "Maximianon Praesidium (El-Zarqa)",
+        "province": "Aegyptus",
+        "modern_location": "El-Zarqa, Eastern Desert, Egypt",
+        "built": 77,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Maximianon secured a well at El-Zarqa on the road between Koptos and Myos Hormos, giving the Red Sea trade route a fortified stop roughly a day's march from Krokodilo. Its garrison, part of the chain of praesidia the Roman army built along this desert corridor, watched over caravans carrying goods bound for the Nile and beyond. Excavation of the site recovered ostraca detailing the unit's daily routine, from work rosters to requests for supplies sent up the line. The fort's square mudbrick walls, worn by nearly two thousand years of desert wind, still trace the outline of the original garrison post.",
+        "sources": [
+          "https://pleiades.stoa.org/places/786064",
+          "https://www.trismegistos.org/place/3149"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.263333,
+          25.919444
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_qasr_el_banat",
+        "category": "auxiliary_fort",
+        "name_latin": "Praesidium Qusur al-Banat",
+        "name_english": "Qasr el-Banat Praesidium",
+        "province": "Aegyptus",
+        "modern_location": "Qasr el-Banat, Red Sea Governorate, Egypt",
+        "built": 75,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Qasr el-Banat held a well on the Koptos-Myos Hormos road where travelers had already been watering their animals for over a century before Roman soldiers built a fortified station on the spot. Its garrison gave the desert crossing a defended stop between the quarries and ports of the Red Sea coast and the markets of the Nile valley. The praesidium's stone-and-mudbrick walls enclosed barracks, a well, and storage space for the small unit posted there. Today the ruins sit a short distance from the modern road that still roughly follows the ancient route.",
+        "sources": [
+          "https://pleiades.stoa.org/places/786095",
+          "https://www.trismegistos.org/place/3653",
+          "https://vici.org/vici/7779/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.250121,
+          24.866976
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_xeron_pelagos",
+        "category": "auxiliary_fort",
+        "name_latin": "Xeron Pelagos",
+        "name_english": "Xeron Pelagos Praesidium (Feisaleya)",
+        "province": "Aegyptus",
+        "modern_location": "Feisaleya, Eastern Desert, Egypt",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Xeron Pelagos took its name, 'the dry sea,' from the flat, wind-scoured plain where the Roman army built it between the forts of Dios and Phalakron on the road to Berenike. Its garrison kept watch over one of the loneliest stretches of the desert route, where the absence of any landmark had given the station its name. Archaeologists excavating the site between 2010 and 2013 recovered the postal register of the fort's curator, a rare survival that names the soldiers who passed through the post. The excavated walls at Feisaleya now stand exposed to the same open plain that once made the station's name fitting.",
+        "sources": [
+          "https://www.trismegistos.org/place/8665",
+          "https://www.degruyterbrill.com/document/doi/10.18574/nyu/9781479810680.003.0025/html?lang=en"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.837067,
+          25.328374
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_compasi",
+        "category": "auxiliary_fort",
+        "name_latin": "Compasi",
+        "name_english": "Compasi Praesidium (Wadi Dagbagh)",
+        "province": "Aegyptus",
+        "modern_location": "Wadi Dagbagh (Daghbag), Eastern Desert, Egypt",
+        "built": 75,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Compasi sat on the Koptos-Berenike road roughly 85 Roman miles from Koptos, a fortified well the naturalist Pliny the Elder recorded by name in his account of the route to the Red Sea. Soldiers under the prefect Iulius Ursus built it as part of a chain of praesidia that made the desert crossing to Berenike survivable for merchants and imperial cargo alike. Its garrison held one of the harder stretches of the road, in the sandy country now known as Wadi Dagbagh. The fort's remains still mark the well that gave travelers their reason to stop there.",
+        "sources": [
+          "https://www.researchgate.net/publication/281788371_Security_and_water_on_the_Eastern_Desert_roads_the_prefect_Iulius_Ursus_and_the_construction_of_praesidia_under_Vespasian"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.056443,
+          25.151713
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_dios",
+        "category": "auxiliary_fort",
+        "name_latin": "Dios (Iovis)",
+        "name_english": "Dios Praesidium (Abu Qurayyah)",
+        "province": "Aegyptus",
+        "modern_location": "Abu Qurayyah, Eastern Desert, Egypt",
+        "built": 116,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Soldiers dedicated the fort at Dios in 116 CE, and the Latin inscription recording that date survived nearly two thousand years underground before excavators uncovered it in 2005. The praesidium guarded a well on the Koptos-Berenike road between the stations of Compasi and Xeron Pelagos, its garrison keeping the desert crossing open for the emerald and gemstone trade heading toward the Nile. Excavators also found a shrine inside the fort where soldiers left graffiti and consulted oracles, a rare window into the religious life of a small desert garrison. The dedication makes Dios one of the most precisely dated forts anywhere on Rome's eastern desert frontier.",
+        "sources": [
+          "https://www.researchgate.net/publication/290956081_The_shrine_in_the_praesidium_of_Dios_Eastern_Desert_of_Egypt_Graffiti_and_oracles_in_context",
+          "https://www.trismegistos.org/geo/detail.php?tm=4078"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
