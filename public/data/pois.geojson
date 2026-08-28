@@ -405,6 +405,9 @@
           "https://sites.lsa.umich.edu/regia/"
         ],
         "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Regia_02.JPG?width=800",
+        "image_credit": "Regia, Roman Forum · Wikimedia Commons",
+        "image_alt": "Modern photograph of the excavated foundations of the Regia in the Roman Forum",
         "ancient_sources": [
           {
             "author": "Ovid",
@@ -13046,6 +13049,9 @@
           "https://en.wikipedia.org/wiki/Tomb_of_Priscilla"
         ],
         "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Via%20Appia%2C%20tomb%20of%20Priscilla%20and%20church%20of%20Domine%20Quo%20Vadis%20%28albumen%20print%20by%20Alinari%2C%20Rome%2C%20Italy%29.jpg?width=800",
+        "image_credit": "Tomb of Priscilla, Via Appia Antica · Wikimedia Commons",
+        "image_alt": "19th-century Alinari albumen photograph of the Tomb of Priscilla beside the church of Domine Quo Vadis",
         "ancient_sources": [
           {
             "author": "Statius",
@@ -13328,6 +13334,9 @@
           "https://en.wikipedia.org/wiki/Aulus_Umbricius_Scaurus"
         ],
         "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Necropoli%20di%20Porta%20Ercolano%202.JPG?width=800",
+        "image_credit": "Tomb of Aulus Umbricius Scaurus, Porta Ercolano necropolis, Pompeii · Wikimedia Commons",
+        "image_alt": "Photograph of the tomb of Aulus Umbricius Scaurus in the Herculaneum Gate necropolis at Pompeii",
         "ancient_sources": [
           {
             "author": "CIL X 1024 (unknown/anonymous, funerary inscription)",
@@ -13399,6 +13408,9 @@
           "https://www.wikidata.org/wiki/Q29887294"
         ],
         "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomba%20di%20Caius%20Vestorio%20Prisco%202.jpg?width=800",
+        "image_credit": "Tomb of Vestorius Priscus, Porta Vesuvio necropolis, Pompeii · Wikimedia Commons",
+        "image_alt": "Photograph of the painted tomb enclosure of Gaius Vestorius Priscus at Pompeii",
         "ancient_sources": [
           {
             "author": "AE 1911, 72 (unknown/anonymous, funerary inscription; the tomb was excavated in 1908, after CIL X's 1883 publication, so it first appeared in L'Annee epigraphique rather than CIL)",
@@ -13682,7 +13694,10 @@
           "https://www.turismosevilla.org/en/what-see-and-do/heritage/monuments/archaeological-site-carmona",
           "https://www.livius.org/articles/place/carmo-carmona/carmo-carmona-necropolis/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carmona%20necr%C3%B3polis%20elefante82.JPG?width=800",
+        "image_credit": "Tomb of the Elephant, Carmona Roman Necropolis · Wikimedia Commons",
+        "image_alt": "Interior of the rock-cut Tomb of the Elephant in the Carmona Roman necropolis"
       }
     },
     {
@@ -17050,6 +17065,9 @@
           "https://onlinelibrary.wiley.com/doi/abs/10.1002/arp.1887"
         ],
         "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Volubilis%20mosaic%20Diana%20and%20her%20nymph.jpg?width=800",
+        "image_credit": "Diana mosaic, House of Venus, Volubilis · Wikimedia Commons",
+        "image_alt": "Roman mosaic of Diana bathing with a nymph, from the House of Venus at Volubilis",
         "ancient_sources": []
       }
     },
@@ -18639,7 +18657,9 @@
         "sources": [
           "https://www.judaism-and-rome.org/severan-forum-lepcis-magna-203-ce"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Forum%20Leptis%20Magna%2004.JPG?width=800",
+        "image_credit": "Severan Forum of Leptis Magna · Wikimedia Commons"
       }
     },
     {
@@ -19258,6 +19278,9 @@
           "https://en.wikipedia.org/wiki/Temple_of_Fortuna_Primigenia"
         ],
         "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sanctuary%20of%20Fortuna%20Primigenia%2029.JPG?width=800",
+        "image_credit": "Sanctuary of Fortuna Primigenia, Palestrina · Wikimedia Commons",
+        "image_alt": "Terraced ruins of the Sanctuary of Fortuna Primigenia at Palestrina (ancient Praeneste)",
         "ancient_sources": [
           {
             "author": "Cicero",
@@ -19292,7 +19315,10 @@
           "https://en.wikipedia.org/wiki/Temple_of_Fortuna_Primigenia",
           "https://www.archeopalestrina.it/the-sanctuary-of-fortuna-primigenia/?lang=en"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2012-09-07%20Tempio%20Fortuna%20Primigenia%20plastico.jpg?width=800",
+        "image_credit": "Scale-model reconstruction of the Temple of Fortuna Primigenia, Palestrina Museum · Wikimedia Commons",
+        "image_alt": "Museum scale model reconstructing the ancient terraced Temple of Fortuna Primigenia complex"
       }
     },
     {
@@ -22898,7 +22924,10 @@
           "https://en.wikipedia.org/wiki/Temple_of_Claudius,_Colchester",
           "https://historicengland.org.uk/listing/the-list/list-entry/1002217"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Claudius%2C%20Colchester.svg?width=800",
+        "image_credit": "Temple of Claudius, Colchester · Wikimedia Commons",
+        "image_alt": "Diagram of the Temple of Claudius podium underlying Colchester Castle"
       }
     },
     {
@@ -23814,7 +23843,9 @@
           "https://en.wikipedia.org/wiki/Roman_Theater_(Zaragoza)",
           "https://www.zaragoza.es/sede/portal/museos/teatro/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Antiguo%20teatro%20romano%20de%20Zaragoza%2C%20Espa%C3%B1a%2C%20Spain.jpg?width=800",
+        "image_credit": "Roman Theatre of Caesaraugusta, Zaragoza · Wikimedia Commons"
       }
     },
     {
@@ -23975,7 +24006,9 @@
           "https://en.wikipedia.org/wiki/Acueducto_de_los_Milagros",
           "https://www.consorciomerida.org/conjunto/monumentos/losmilagros"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Acueducto%20de%20los%20Milagros%2001%2C%20M%C3%A9rida.jpg?width=800",
+        "image_credit": "Los Milagros Aqueduct, Mérida · Wikimedia Commons"
       }
     },
     {
@@ -24056,7 +24089,10 @@
           "https://en.wikipedia.org/wiki/Ponte_di_Tiberio_(Rimini)",
           "https://www.travelemiliaromagna.it/en/bridge-of-tiberius-rimini/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Richard%20Wilson%2C%20Il%20Ponte%20di%20Tiberio%2C%201750%20%28Rimini%2C%20Museo%20della%20Citt%C3%A0%29.JPG?width=800",
+        "image_credit": "Richard Wilson, \"Il Ponte di Tiberio\", 1750 · Wikimedia Commons",
+        "image_alt": "18th-century oil painting by Richard Wilson depicting the Ponte di Tiberio at Rimini"
       }
     },
     {
@@ -24110,7 +24146,10 @@
           "https://en.wikipedia.org/wiki/Trajan%27s_Bridge",
           "https://penelope.uchicago.edu/Thayer/e/roman/texts/cassius_dio/68*.html"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trajan%27s%20Bridge%20Across%20the%20Danube%2C%20Modern%20Reconstruction.jpg?width=800",
+        "image_credit": "Trajan's Bridge over the Danube, reconstruction · Wikimedia Commons",
+        "image_alt": "Scholarly reconstruction drawing of Trajan's timber-and-stone bridge across the Danube"
       }
     },
     {
@@ -24137,7 +24176,9 @@
           "https://en.wikipedia.org/wiki/Roman_Bridge_of_Chaves",
           "https://en.wikipedia.org/wiki/Aquae_Flaviae"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ponte%20Romana%20de%20Trajano%20-%20Chaves%20-%20Portugal%20%2810994799385%29.jpg?width=800",
+        "image_credit": "Roman Bridge of Chaves · Wikimedia Commons"
       }
     },
     {
@@ -24191,7 +24232,9 @@
           "https://en.wikipedia.org/wiki/Roman_Theatre_(Mainz)",
           "https://www.livius.org/articles/place/mogontiacum-mainz/mogontiacum-mainz-photos/mainz-theater/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roemisches-Theater-Mainz.jpg?width=800",
+        "image_credit": "Roman Theatre of Mogontiacum, Mainz · Wikimedia Commons"
       }
     },
     {
@@ -24218,7 +24261,10 @@
           "https://en.wikipedia.org/wiki/Great_Mainz_Jupiter_Column",
           "https://www.landesmuseum-mainz.de/ueber/forschungsprojekte/die-grosse-mainzer-jupitersaeule"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jupitersaeule1.jpg?width=800",
+        "image_credit": "Great Mainz Jupiter Column · Wikimedia Commons",
+        "image_alt": "Reconstructed Great Mainz Jupiter Column on display in the Landesmuseum Mainz"
       }
     },
     {
@@ -24272,7 +24318,9 @@
           "https://en.wikipedia.org/wiki/Drususstein",
           "https://www.mainz.de/en/angebote-entdecken/zu-gast-in-mainz/sehenswertes/drususstein"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Cenotaph%20of%20Drusus%20%28Drususstein%29%2C%20an%20empty%20tomb%20raised%20by%20Roman%20troops%20in%209%20AD%20in%20honour%20of%20the%20deceased%20general%20Drusus%2C%20Mogontiacum%20%28Mainz%29%20%289739245693%29.jpg?width=800",
+        "image_credit": "Cenotaph of Drusus (Drususstein), Mainz Citadel · Wikimedia Commons"
       }
     },
     {
@@ -24688,6 +24736,9 @@
           "https://www.academia.edu/39967164/The_Roman_Forum_at_Butrint_Epirus_and_its_Development_from_Hellenistic_to_Mediaeval_Times"
         ],
         "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Albania%20077.Butrint%20Agora.jpg?width=800",
+        "image_credit": "Forum (Agora) of Butrint · Wikimedia Commons",
+        "image_alt": "Ruins of the forum/agora area of the ancient city of Butrint",
         "ancient_sources": [
           {
             "author": "Cicero",
@@ -25697,7 +25748,9 @@
         "sources": [
           "https://galeriuspalace.culture.gr/en/monuments/kamara/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arch%20of%20Galerius%20%28%22Kamara%22%29%2C%20Thessaloniki%2C%20Greece%20%283332897943%29.jpg?width=800",
+        "image_credit": "Arch of Galerius (Kamara), Thessaloniki · Wikimedia Commons"
       }
     },
     {
@@ -25778,6 +25831,8 @@
           "https://diazoma.gr/en/theaters/ancient-theater-nicopolis/"
         ],
         "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicopolis%20Great%20Theatre%20reused%20after%20almost%202000%20years%203.jpg?width=800",
+        "image_credit": "Theatre of Nicopolis, near Preveza · Wikimedia Commons",
         "ancient_sources": [
           {
             "author": "Arrian",
