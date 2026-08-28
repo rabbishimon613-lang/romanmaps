@@ -1739,7 +1739,10 @@
           "https://www.hmdb.org/m.asp?m=281213",
           "https://www.ostia-antica.org/dict/topics/horrea/intro.htm"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Horrea di Hortensius.jpg?width=800",
+        "image_credit": "Photo by Udimu, CC BY-SA 3.0 · Wikimedia Commons",
+        "image_alt": "Courtyard of the Horrea of Hortensius warehouse at Ostia Antica"
       }
     },
     {
@@ -3190,7 +3193,10 @@
           "https://www.britannica.com/place/Villa-of-the-Mysteries",
           "https://smarthistory.org/dionysiac-frieze-villa-of-mysteries-pompeii/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa_of_the_Mysteries_in_Pompeii.jpg?width=800",
+        "image_credit": "Villa of the Mysteries, Pompeii · Wikimedia Commons",
+        "image_alt": "Exterior view of the Villa of the Mysteries at Pompeii"
       }
     },
     {
@@ -3369,7 +3375,10 @@
           "https://en.wikipedia.org/wiki/Villa_of_the_Papyri",
           "https://www.herculaneum.ox.ac.uk/index.php/the-villa-of-the-papyri/ (The Herculaneum Society)"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villaofthepapyri.jpg?width=800",
+        "image_credit": "Excavated ruins of the Villa of the Papyri, Herculaneum · Wikimedia Commons",
+        "image_alt": "Excavated remains of the Villa of the Papyri at Herculaneum"
       }
     },
     {
@@ -10897,7 +10906,10 @@
         "sources": [
           "https://www.capri.com/en/e/villa-damecuta"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa_Damecuta_Anacapri.jpg?width=800",
+        "image_credit": "Villa Damecuta, Anacapri · Wikimedia Commons",
+        "image_alt": "Ruins of the Villa di Damecuta on Capri"
       }
     },
     {
@@ -10949,7 +10961,10 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Villa_of_Domitian"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nymphaeum_-_Villa_of_Domitian_-_Barberini_Gardens_-_Castel_Gandolfo_-_DSC04293.jpg?width=800",
+        "image_credit": "Nymphaeum of the Villa of Domitian, Barberini Gardens, Castel Gandolfo · Wikimedia Commons",
+        "image_alt": "Roman-era nymphaeum ruins of Domitian's Alban Villa in the Barberini Gardens"
       }
     },
     {
@@ -11013,7 +11028,10 @@
           "https://en.wikipedia.org/wiki/Laurentum",
           "https://www.gardenvisit.com/gardens/plinys_villa_at_laurentinum"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/MOSAICO_VILLA_DI_PLINIO_IL_GIOVANE_-_panoramio.jpg?width=800",
+        "image_credit": "Mosaic at the so-called Villa di Plinio, Castel Fusano · Wikimedia Commons",
+        "image_alt": "Roman mosaic floor at the site traditionally identified as Pliny's Laurentine villa"
       }
     },
     {
@@ -11040,7 +11058,10 @@
           "https://en.wikipedia.org/wiki/Roman_Villa_of_Pliny_%22in_Tuscis%22",
           "https://www.keytoumbria.com/Citta_di_Castello/Pliny_Villa.html"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Colle_Plinio_02.JPG?width=800",
+        "image_credit": "Excavations at Colle Plinio, San Giustino · Wikimedia Commons",
+        "image_alt": "Excavated remains at Colle Plinio, site of Pliny the Younger's Tuscan villa"
       }
     },
     {
@@ -11364,7 +11385,10 @@
         "sources": [
           "https://www.albadamare.it/the-roman-villa-in-positano/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa_Romana_di_Positano.jpg?width=800",
+        "image_credit": "Villa Romana di Positano · Wikimedia Commons",
+        "image_alt": "Roman-era remains of the villa beneath Positano"
       }
     },
     {
@@ -11390,7 +11414,10 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Villa_Romana,_Minori"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_villa_(Minori)_(4).jpg?width=800",
+        "image_credit": "Villa Romana di Minori · Wikimedia Commons",
+        "image_alt": "Roman villa remains at Minori"
       }
     },
     {
@@ -11533,7 +11560,10 @@
         "sources": [
           "https://www.cultureoncall.com/the-history-of-rockbourne-roman-villa-lauren-smart/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rockbourne_villa_hypocaustum.JPG?width=800",
+        "image_credit": "Hypocaust, Rockbourne Roman Villa · Wikimedia Commons",
+        "image_alt": "Roman hypocaust remains at Rockbourne Roman Villa"
       }
     },
     {
@@ -11640,7 +11670,10 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Roman_villa_of_Chiragan"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/MSR-ra-28-l-1-DM.jpg?width=800",
+        "image_credit": "Hercules and the Cattle of Geryon relief from the Villa of Chiragan · Musée Saint-Raymond, Toulouse · Wikimedia Commons",
+        "image_alt": "Roman marble relief of Hercules and the Cattle of Geryon, excavated at the Villa of Chiragan"
       }
     },
     {
@@ -11666,7 +11699,10 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Loupian_Roman_villa"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Loupian_Villa_1.JPG?width=800",
+        "image_credit": "Gallo-Roman villa of Loupian · Wikimedia Commons",
+        "image_alt": "Mosaic floor remains at the Gallo-Roman villa of Loupian"
       }
     },
     {
@@ -11721,7 +11757,10 @@
         "sources": [
           "https://www.allaboutportugal.pt/en/torres-novas/monuments/ruinas-romanas-de-vila-cardilio"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vila_Card%C3%ADlio_em_Torres_Novas.jpg?width=800",
+        "image_credit": "Roman ruins of Villa Cardílio, Torres Novas · Wikimedia Commons",
+        "image_alt": "Roman ruins of Villa Cardílio near Torres Novas, Portugal"
       }
     },
     {
@@ -11775,7 +11814,10 @@
         "sources": [
           "https://www.calpe.es/en/discover-calpe/cultural-tourism/museums-and-monuments/monuments/banos-de-la-reina-archaelogical-site"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ba%C3%B1os_de_la_Reina-Calpe-2009_(1).jpg?width=800",
+        "image_credit": "Baños de la Reina, Calpe · Wikimedia Commons",
+        "image_alt": "Roman archaeological remains at Baños de la Reina, Calpe"
       }
     },
     {
@@ -11828,7 +11870,10 @@
         "sources": [
           "https://www.worldhistory.org/image/16791/house-of-orpheus-volubilis/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_House_of_Orpheus_Mosaic_Volubilis_Morocco_-_panoramio.jpg?width=800",
+        "image_credit": "Orpheus mosaic, House of Orpheus, Volubilis · Wikimedia Commons",
+        "image_alt": "Roman mosaic of Orpheus at the House of Orpheus, Volubilis"
       }
     },
     {
@@ -11854,7 +11899,10 @@
         "sources": [
           "https://www.ascsa.edu.gr/uploads/media/hesperia/147437.pdf"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mosaic_with_Dionysos,_AM_of_Corinth,_202950.jpg?width=800",
+        "image_credit": "Dionysos mosaic from the Roman villa at Anaploga, Archaeological Museum of Ancient Corinth · Wikimedia Commons",
+        "image_alt": "Mosaic of Dionysos recovered from the Roman villa at Anaploga, Corinth"
       }
     },
     {
@@ -22145,7 +22193,10 @@
           "https://fr.wikipedia.org/wiki/Mus%C3%A9e_des_docks_romains",
           "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/musee-des-docks-romains-marseille-2eme-en-2791917/"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le musée des docks romains (Marseille) (14214599736).jpg?width=800",
+        "image_credit": "Musée des Docks Romains, Marseille · Wikimedia Commons",
+        "image_alt": "In-situ Roman dolia (storage jars) inside the Musee des Docks Romains, Marseille"
       }
     },
     {
@@ -31900,6 +31951,208 @@
           "https://www.trismegistos.org/geo/detail.php?tm=4078"
         ],
         "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3666,
+          36.5695
+        ]
+      },
+      "properties": {
+        "id": "poi_henchir_mettich_villa",
+        "category": "villa",
+        "name_latin": "Fundus Villae Magnae Varianae",
+        "name_english": "Henchir Mettich Imperial Estate",
+        "province": "Africa Proconsularis",
+        "modern_location": "Henchir Mettich, Bagradas (Medjerda) Valley, Tunisia",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A great imperial olive estate stood in the Bagradas Valley, fifty kilometers from Carthage. In 116 CE, procurators of Trajan carved its farming rules onto stone for the tenant farmers who worked its fields, fixing exactly how much of each harvest went to Rome: a third of the grain, a third of the wine, a fifth of the olive oil. That inscription, the Lex Manciana of Henchir Mettich, remains the fullest surviving record of daily life on a Roman imperial farm.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Henchir_Mettich",
+          "https://en.wikipedia.org/wiki/Lex_Manciana",
+          "https://en.wikipedia.org/wiki/Villamagna_in_Proconsulari"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.88866,
+          47.04521
+        ]
+      },
+      "properties": {
+        "id": "poi_balaca_villa",
+        "category": "villa",
+        "name_latin": "Villa Rustica (Balacapuszta)",
+        "name_english": "Balaca Roman Villa",
+        "province": "Pannonia Superior",
+        "modern_location": "Nemesvamos, Veszprem County, Hungary",
+        "built": 50,
+        "destroyed": 400,
+        "extant_117ce": true,
+        "notes": "A Roman farming estate rose on the hills above Lake Balaton in the 1st century CE. Its main house grew to 2,400 square meters, the largest known residence in the province of Pannonia. Guests crossed a mosaic floor of 62 square meters before reaching painted courtyards and workshop yards beyond. Excavators found it by accident in 1904, buried under a Hungarian wheat field.",
+        "sources": [
+          "https://welovebalaton.hu/en/article/2016/08/05/the-everyday-life-of-a-roman-aristocrat-villa-romana-balaca/",
+          "https://www.blueguides.com/the-roman-villa-at-balacapuszta-balaca-nemesvamos-hungary/",
+          "https://mnm.hu/en/affiliated-museums/mnmkk-mnm-villa-romana-balaca-roman-villa-farm-and-ruin-garden"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa_Romana_Bal%C3%A1ca_01.jpg?width=800",
+        "image_credit": "Villa Romana Balaca, Nemesvamos, Hungary · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8391,
+          48.0136
+        ]
+      },
+      "properties": {
+        "id": "poi_bruckneudorf_villa",
+        "category": "villa",
+        "name_latin": "Murocincta",
+        "name_english": "Bruckneudorf Roman Villa",
+        "province": "Pannonia Superior",
+        "modern_location": "Bruckneudorf, Burgenland, Austria",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A Roman farmstead rose beside the Amber Road in the late 1st century CE, eleven kilometers from the fortress of Carnuntum. Over three centuries it grew into one of the largest estates north of the Alps, its floors eventually covered by 300 square meters of mosaic. Ammianus Marcellinus later called it Murocincta, the walled villa, where the future emperor Valentinian II sheltered in 375 CE after his father's sudden death.",
+        "sources": [
+          "https://www.oeaw.ac.at/en/oeai/research/historical-archaeology/individual-research/villa-von-bruckneudorf",
+          "https://en.wikipedia.org/wiki/Bruckneudorf",
+          "https://de.wikipedia.org/wiki/Kaiservilla_Bruckneudorf"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kaiservilla_Bruckneudorf_02.jpg?width=800",
+        "image_credit": "Kaiservilla Bruckneudorf, Burgenland, Austria · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8661,
+          48.1156
+        ]
+      },
+      "properties": {
+        "id": "poi_carnuntum_villa_urbana",
+        "category": "villa",
+        "name_latin": "Villa Urbana (Carnuntum)",
+        "name_english": "Carnuntum Villa Urbana",
+        "province": "Pannonia Superior",
+        "modern_location": "Petronell-Carnuntum, Lower Austria, Austria",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A timber house went up inside the future civilian town of Carnuntum in the 1st century CE, decades before Hadrian granted the settlement its Roman city charter. Around 200 CE it was rebuilt in wood and stone, and by 300 CE the whole villa stood in stone alone. Archaeologists named it the Villa Urbana for the wealth its later owners piled into it. In 117 CE its walls were still just timber and thatch.",
+        "sources": [
+          "https://www.roamintheempire.com/index.php/2022/11/16/carnuntum-part-iii/",
+          "https://www.historyhit.com/locations/carnuntum/",
+          "https://www.ancient-history-sites.com/sites/carnuntum/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.99,
+          47.793
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_loig",
+        "category": "villa",
+        "name_latin": "Villa Rustica (Loig)",
+        "name_english": "Loig Palace Villa",
+        "province": "Noricum",
+        "modern_location": "Loig, Wals-Siezenheim, Salzburg, Austria",
+        "built": 50,
+        "destroyed": 450,
+        "extant_117ce": true,
+        "notes": "A vast rural estate rose west of Salzburg in the mid-1st century CE, its main house eventually stretching 220 meters, among the largest Roman villas found north of the Alps. Farmers, craftworkers and a wealthy household shared a courtyard that grew to nearly 9 hectares. Discovered by chance in 1815, its floor later yielded a mosaic of Theseus slaying the Minotaur, now held in Vienna's Kunsthistorisches Museum.",
+        "sources": [
+          "https://de.wikipedia.org/wiki/R%C3%B6mische_Villa_Loig",
+          "https://muenzenwoche.de/die-geschichte-der-roemischen-palastvilla-von-loig/",
+          "https://www.sn.at/salzburg/chronik/in-loig-stand-die-groesste-roemische-palastvilla-noerdlich-der-alpen-133741444"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theseus_Mosaic,_discovered_in_the_floor_of_a_Roman_villa_at_the_Loigerfelder_near_Salzburg_%28Austria%29_in_1815,_4th_century_AD,_Kunsthistorisches_Museum_Vienna,_Austria_%2821038303836%29.jpg?width=800",
+        "image_credit": "Theseus Mosaic from the Roman villa at Loigerfelder near Salzburg, Kunsthistorisches Museum Vienna · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2117,
+          46.3325
+        ]
+      },
+      "properties": {
+        "id": "poi_mosnje_villa_rustica",
+        "category": "villa",
+        "name_latin": "Villa Rustica (Mosnje)",
+        "name_english": "Mosnje Roman Villa",
+        "province": "Noricum",
+        "modern_location": "Mosnje, Radovljica, Slovenia",
+        "built": 25,
+        "destroyed": 200,
+        "extant_117ce": true,
+        "notes": "A farming estate rose near Radovljica in the first half of the 1st century CE, its main house holding seven rooms including a private bath suite. The caldarium's hypocaust and hot-water tank still show how its household warmed the mountain air below the Julian Alps. Buried and forgotten for centuries, the villa's stone footings resurfaced only in 2006.",
+        "sources": [
+          "https://www.radolca.si/en/activities-and-experiences/hiking/themed-hiking-trails/mosnje-archeological-trail",
+          "https://www.academia.edu/17119341/3D_Reconstruction_of_a_Balneum_in_a_Roman_Villa_Rustica_Mo%C5%A1nje_Slovenia",
+          "https://en.wikipedia.org/wiki/Mo%C5%A1nje"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.86583,
+          37.05861
+        ]
+      },
+      "properties": {
+        "id": "poi_zeugma_house_of_muses",
+        "category": "villa",
+        "name_latin": "Domus Musarum",
+        "name_english": "House of the Muses",
+        "province": "Syria",
+        "modern_location": "Belkis, Nizip, Gaziantep Province, Turkey",
+        "built": 90,
+        "destroyed": 253,
+        "extant_117ce": true,
+        "notes": "A grand riverside residence rose at Zeugma on the Euphrates in the late 1st century CE, home to an officer or merchant grown wealthy on frontier trade. Its floors were later paved with mosaics of the nine Muses circling Calliope, goddess of epic poetry. The house stood until the Sasanian sack of the city in 252-253 CE. Archaeologists uncovered it only after 2007, just ahead of the rising waters of the Birecik Dam.",
+        "sources": [
+          "https://www.thehistoryblog.com/archives/62026",
+          "https://en.wikipedia.org/wiki/Zeugma_(Commagene)",
+          "https://www.artnews.com/art-news/news/rock-cut-chambers-found-in-ancient-zeugmas-mosaic-laden-house-of-the-muses-1234600259/"
+        ],
+        "confidence": "medium"
       }
     }
   ]
