@@ -7,6 +7,134 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 70 — 2026-08-28 (this shift's own prompt claimed "Shift 3 of four")
+
+Same stale-numbering mismatch every recent shift has flagged (see Shift 67's original note) —
+continuing the real sequential count.
+
+### Git state at session start
+
+`HEAD` was detached one commit behind `origin/main` (local `main` was 13 commits stale, at
+Shift 56's log commit). `git fetch origin main` pulled a forced update onto the local
+`origin/main` ref, then `git checkout -B main origin/main` reset local `main` onto the real tip
+— same fix Shift 69 and others have documented, no data lost, verified `origin/main` and detached
+`HEAD` matched exactly before resetting.
+
+### Board check
+
+Reviewed `BOARD.md`. Every P0 is either flagged too large for one unattended session by multiple
+prior shifts (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild,
+`[02-P0-4]` self-host-glyphs, `[13-P0-2]` image-audit) or blocked (`[15-P0-1]`, `[14-P0-1]` —
+human-blocked; `[02-P0-1]` terrain — claimed by cloud shift 68 at 2026-08-28 00:20, still under
+24h old at this shift's start ~12:45, so left alone per the board's own staleness rule; flagging
+again for whoever picks up the board after 2026-08-29 00:20 if it's still sitting unclaimed in
+practice). `FEATURE_BACKLOG.md`'s P0-P3 sections are confirmed down to one open item (terrain,
+same ticket) — no Track B slot available this shift, consistent with several recent shifts'
+findings; data-only shift per the brief's own allowance ("if you don't have time for track B,
+that's fine — data wins").
+
+Picked Axis 3d (villae) for a fresh regional sweep, plus a POI image top-up pass, both informed
+by real, specific gaps a prior shift had already identified and logged in `FEATURE_BACKLOG.md`
+(the "3 short of 40" villae note and the "33 economic-infrastructure records still need image
+top-up" note) rather than re-discovering them from scratch. Confirmed via `curl` that direct
+network access to Overpass/Wikipedia/Commons/Pleiades is still hard-blocked in this sandbox
+(`CONNECT tunnel failed, response 403` on all four) — same constraint 10+ prior shifts have
+documented — so all research ran through `WebSearch`/the `Agent` tool rather than direct fetch.
+
+### Track A — Axis 3d: villae fresh regional sweep (Africa Proconsularis, Pannonia, Noricum, Syria)
+
+Dispatched a background research agent (WebSearch-only, this sandbox's established method) to
+hunt specifically the four regions `FEATURE_BACKLOG.md` flagged as having zero villa coverage
+despite the axis being otherwise well-stocked (Italia/Britannia/Gallia/Hispania were already
+covered by 35 records). **7 new, real, individually-cited villas**, all verified to predate 11
+August 117 CE:
+
+- **Africa Proconsularis (1)**: the imperial olive estate at Henchir Mettich, dated by its own
+  116 CE Lex Manciana inscription — the fullest surviving tenant-farming contract from a Roman
+  imperial estate anywhere.
+- **Pannonia Superior (3)**: Villa Baláca near Lake Balaton (Hungary, 1st c., largest known
+  residence in the province at 2,400 m²), the Bruckneudorf villa/"Murocincta" on the Amber Road
+  (Austria, late 1st c.), Carnuntum's own Villa Urbana (still timber-and-thatch in 117, rebuilt in
+  stone only after 200 CE — logged honestly as a pre-luxury phase, `confidence: medium` on the
+  imprecise park-level coordinate).
+- **Noricum (2)**: Villa Loig near Salzburg (mid-1st c., 220m main house — among the largest
+  north of the Alps) and Villa Rustica Mošnje near Radovljica, Slovenia (1st c., excavated 2006).
+- **Syria (1)**: the House of the Muses at Zeugma on the Euphrates (late 1st c., destroyed in the
+  252/253 CE Sasanian sack — well past this map's snapshot but the house itself was standing and
+  occupied in 117).
+
+Real research ceiling hit at 7, not padded to the agent's own 8-12 target — the agent's own
+accounting (worth reading if this axis gets picked up again) rejected specific, named candidates
+in the same four regions for postdating 117: Sidi Ghrib and the House of the Laberii (Africa
+Proconsularis, both 2nd-3rd c.+), several Burgenland villa-rustica finds with no confirmed 1st-c.
+phase (Pannonia), and every well-known Apamea/Zeugma/Palmyra mosaic house except the one that
+shipped (Syria — Dura-Europos was excluded outright, since it wasn't under Roman control until
+165 CE). Also ran out of WebSearch budget mid-pass on a second Africa/Syria candidate rather than
+force a shaky one through.
+
+`pois.geojson`'s `villa` category: 42 → 49.
+
+### Track A — image top-up: villae + economic infrastructure
+
+Two more background research agents closed **17 of 50** flagged image-null records (both
+sub-lists sourced directly from `FEATURE_BACKLOG.md`'s own prior-shift notes, not re-derived):
+
+- **Villae (15 of 26 closed)**: Villa of the Mysteries and Villa of the Papyri, Villa di Damecuta,
+  Domitian's Alban Villa (nymphaeum ruins), the traditional Laurentine and Tuscan Pliny villa
+  sites, the Positano and Minori villas, Rockbourne's hypocaust, Chiragan's Geryon relief
+  (Musée Saint-Raymond — no visible on-site ruins remain, so the excavated relief is the closest
+  authentic image), Loupian, Cardílio, Baños de la Reina, Volubilis's Orpheus mosaic, and
+  Anaploga's Dionysos mosaic (Corinth museum). Two of these lean on a museum artifact rather than
+  an on-site photo where no ruin photo could be confirmed — logged per-record in the commit, flag
+  for a future shift with a fresh search budget if an on-site alternative surfaces.
+- **Economic infrastructure (2 of 24 closed)**: Ostia's Horrea Hortensiana and the Musée des
+  Docks Romains, Marseille (Massilia's docks). Low yield — the agent's own accounting shows most
+  of this list (Docimium, Zlatna/Ampelum, Karanis's granary and dovecotes, several Iberian/Gallic
+  kiln and salina sites) has a real Commons *category* for the general site but no filename
+  confirmable via WebSearch snippets as depicting that *specific* structure — flagged as a strong
+  candidate for whoever gets direct Commons API/search access in this sandbox rather than
+  WebSearch-snippet matching.
+
+Full per-id accept/reject accounting for both batches is in the two agents' own reports; not
+duplicated here to keep this entry readable. Caught and fixed one real defect before pushing: 4
+of the 7 new villa records shipped with explicit `"image_url": null, "image_credit": null` (the
+research agent's honest "couldn't confirm one" signal) — `scripts/validate.mjs` correctly warns
+on a present-but-empty `image_url` key (this project's convention is to omit the key entirely
+when there's no image, not null it), so stripped both keys from those 4 records with a targeted
+text-splice fix before the final validate/build/commit rather than shipping the warning.
+
+`pois.geojson`: 1037 → 1044 features. Image coverage 614/1037 (59.2%) → 634/1044 (60.7%).
+`npm run validate`: 0 errors, 17 warnings (unchanged from before this shift — no new warnings).
+`npm run build`: 1144 routes generate cleanly. Pushed in two commits (a small standalone tooling
+commit, then the data batch) — see git log.
+
+### New tooling this shift
+
+`scripts/apply-image-topup.mjs` — a pure-text-splice sibling to the existing
+`scripts/append-geojson-features.mjs`, for the specific shape most image top-up shifts need
+(adding `image_url`/`image_credit`/`image_alt` onto *existing* records by id) rather than
+appending whole new features. Verified with a dry-run round-trip before use on the real file:
+diff was exactly the 3 new lines per record, JSON stays valid, feature count unchanged.
+
+### What's next
+
+- **Villae**: only 1 of 4 target regions (Pannonia) got real depth; Africa Proconsularis and
+  Syria each landed exactly 1 record against real research resistance (both regions' well-known
+  excavated villas skew 2nd-3rd c.+). A future pass with a bigger WebSearch budget on those two
+  regions specifically, or opening a fifth thin region (Cyrenaica, Numidia), is the natural
+  continuation. 15 of the 49 villa records (11 pre-existing + 4 new) still need images.
+- **Economic infrastructure image top-up**: 22 of 24 originally-flagged records are still
+  image-null — see the "real Commons category but no confirmable filename" note above. Same
+  shape as the axis 20 gymnasia gap prior shifts have flagged: the underlying photos likely
+  exist, WebSearch-snippet matching just can't pin an exact filename with confidence.
+- **`[02-P0-1]` terrain** is still `[~]`-claimed by cloud shift 68 with no commits since the claim
+  — now past 12 hours old at this shift's end, will cross the 24h staleness line around
+  2026-08-29 00:20 UTC. Fair game for whoever's next if it's still sitting untouched then.
+- Board and backlog otherwise unchanged from Shift 69's assessment — no new P0/Track-B work
+  surfaced this shift beyond what's noted above.
+
+---
+
 ## Shift 69 — 2026-08-28 (this shift's own prompt claimed "Shift 2 of four")
 
 Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential

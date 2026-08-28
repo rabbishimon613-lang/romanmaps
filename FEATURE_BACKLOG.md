@@ -865,6 +865,48 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       EDCS/Clauss-Slaby database access (blocked at the network level here, same as every other
       direct-fetch target) rather than another WebSearch pass at these same two leads.
 
+## New ideas spotted this shift (2026-08-28, Shift 70 — villae regional sweep, image top-up)
+
+- [ ] **Axis 3d villae: Africa Proconsularis and Syria are still thin (1 record each) after a
+      dedicated sweep this shift** — both regions' well-known excavated villas (Sidi Ghrib, the
+      House of the Laberii, Bulla Regia's houses in Africa; Apamea's and Zeugma's other mosaic
+      houses in Syria) skew 2nd-3rd century, past the 117 CE cutoff. Pannonia (3) and Noricum (2)
+      came in easier. A future pass wanting more from this axis should either budget more
+      WebSearch calls specifically against those two regions, or open a fifth thin region
+      (Cyrenaica, Numidia) instead of re-mining the same two.
+- [ ] **Image top-up: economic infrastructure (kiln/salina/mine/quarry/garum_factory/estate/
+      warehouse) landed at 2 of 24 this shift — a real, not-exhausted gap.** The research agent's
+      own accounting: several of these (Docimium, Zlatna/Ampelum, Karanis's granary C123 and
+      dovecotes) have a real, populated Commons *category* for the general site, but WebSearch
+      snippets alone couldn't confirm which specific file (if any) depicts that exact structure
+      rather than a different building at the same site — same shape as the axis 20 gymnasia gap
+      several prior shifts have flagged. Direct Commons search/API access (still blocked in this
+      sandbox — confirmed again this shift via `curl`, `CONNECT tunnel failed, response 403` on
+      commons.wikimedia.org) would likely close most of it fast. IDs still open: `poi_ostia_grandi_horrea`,
+      `poi_lutudarum`, `poi_pangaion_gold_mines`, `poi_ampelum_zlatna`, `poi_docimium_quarries`,
+      `poi_proconnesian_quarries`, `poi_goktepe_quarries`, `poi_cotta_garum`,
+      `poi_neapolis_sardinia_garum`, `poi_portus_ilicitanus_garum`, `poi_halae_salinae`,
+      `poi_aquileia_grado_salinae`, `poi_ostia_campus_salinarum`, `poi_gades_salinae`,
+      `poi_montans_pottery`, `poi_banassac_pottery`, `poi_tricio_pottery`, `poi_saltus_burunitanus`,
+      `poi_pactolus_gold_sardis`, `poi_murex_hill_sidon`, `poi_karanis_granary_c123`,
+      `poi_karanis_dovecotes`.
+- [ ] **Image top-up: villae landed at 15 of 26 flagged records** (plus 4 of this shift's own 7
+      new records still need one). Still open: `poi_villa_palazzo_a_mare` (name collides with a
+      different Capri villa in search results), `poi_villa_oplontis_b` (only Villa A/Poppaea has a
+      confirmed Commons category), `poi_villa_nero_antium`, `poi_villa_sora_torre_del_greco`
+      (name collides with an unrelated Frascati villa), `poi_villa_gorhambury` (only a line-drawn
+      floor plan found, no photo), `poi_villa_eccles`, `poi_villa_angmering`, `poi_villa_southwick`
+      (genuinely nothing visible remains on site), `poi_villa_juba_caesarea` (only generic
+      Cherchell city/museum photos, none specific to the palace site), `poi_tibur_villa_vopiscus`
+      (a 7-file Commons category confirmed to exist but no exact filename pinned), `poi_mostine_villa_split`,
+      plus new-this-shift `poi_henchir_mettich_villa`, `poi_carnuntum_villa_urbana`,
+      `poi_mosnje_villa_rustica`, `poi_zeugma_house_of_muses`.
+- [x] **New tool: `scripts/apply-image-topup.mjs`** — pure-text-splice sibling to
+      `scripts/append-geojson-features.mjs`, for adding `image_url`/`image_credit`/`image_alt`
+      onto existing records by id without reformatting the rest of the file. Fills a real gap:
+      the existing script only handles brand-new features, but most image top-up shifts need to
+      edit records that already exist.
+
 ## Shipped (moved from above; newest on top)
 
 - 2026-08-28 — Shift 69: Axis 3a military infrastructure — 15 Limes Germanicus signal towers

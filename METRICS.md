@@ -32,14 +32,14 @@ references.)
 
 | Measure | Value | Notes |
 |---|---:|---|
-| POIs in `pois.geojson` | 1037 | the curated place canon |
+| POIs in `pois.geojson` | 1044 | the curated place canon |
 | Records in the 33 thematic files | 1501 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
-| **Curated places, total** | **2,538** | |
-| Description of 60+ words | 1012 · **97.6%** | measured on `notes`; 25 still thin |
-| Has an image | 614 · **59.2%** | |
-| Has an ancient source | 321 · **31.0%** | |
-| — of `confidence: high` POIs | 266 / 453 · **58.7%** | the target set for `[09-P0-1]` |
-| Categories with a "what happened here" paragraph | 53 / 58 · **91.4%** | covers 995/1037 POIs · missing: bath, harbor, domus, vicus, gymnasium |
+| **Curated places, total** | **2,545** | |
+| Description of 60+ words | 1018 · **97.5%** | measured on `notes`; 26 still thin |
+| Has an image | 634 · **60.7%** | |
+| Has an ancient source | 321 · **30.7%** | |
+| — of `confidence: high` POIs | 266 / 456 · **58.3%** | the target set for `[09-P0-1]` |
+| Categories with a "what happened here" paragraph | 53 / 58 · **91.4%** | covers 1002/1044 POIs · missing: bath, harbor, domus, vicus, gymnasium |
 | Sites with curated building descriptions | 36 / 40 · **90.0%** | ancona, aquileia, athens, baalbek, baiae, beneventum, brixia, capua, corinth, cumae, delphi, djemila, ephesus, herculaneum, italica, jerash, leptisMagna, luni, merida, milan, ostia, paestum, palestrina, palmyra, pompeii, portus, pozzuoli, rimini, rome, sabratha, timgad, tivoli, trier, verona, vindolanda, volubilis (`[06-P0-2]`, standing) |
 | Validator errors | **0** | |
 | Validator warnings | 17 | reviewed; see the standing-warnings note |
@@ -278,4 +278,4 @@ references.)
 | 2026-08-25 | 707 | 100.0% | 60.8% | 33.1% | 0 errors |
 | 2026-08-26 | 930 | 98.8% | 56.6% | 29.6% | 0 errors |
 | 2026-08-27 | 1015 | 97.5% | 58.4% | 31.6% | 0 errors |
-| 2026-08-28 | 1037 | 97.6% | 59.2% | 31.0% | 0 errors |
+| 2026-08-28 | 1044 | 97.5% | 60.7% | 30.7% | 0 errors |
