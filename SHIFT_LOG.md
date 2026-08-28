@@ -7,6 +7,174 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 69 — 2026-08-28 (this shift's own prompt claimed "Shift 2 of four")
+
+Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
+count per every prior shift's own precedent (see Shift 67's note).
+
+### Git state at session start
+
+`HEAD` was detached at `7560b08` — the board-claim-only commit `[02-P0-1] terrain for cloud
+shift 68` — with local `main` 12 commits stale (shift 56). `git fetch origin main` confirmed
+`origin/main` matched detached `HEAD` exactly, the same recurring symptom every recent shift has
+documented. Fixed with `git reset --hard origin/main` after confirming local `main` carried no
+commits absent from `origin/main`'s history. No destructive action taken, nothing lost.
+
+**Note on `[02-P0-1]` terrain**: claimed by "cloud shift 68" at 2026-08-28 00:20 UTC, six hours
+before this session started, with no further commits or SHIFT_LOG entry following the claim —
+that shift appears to have ended (or crashed) immediately after claiming, before doing any work.
+The claim is under 24 hours old, so per the board's own rule it isn't stale yet and this shift
+left it alone rather than taking it. Flagging for whoever picks up the board next: if this claim
+is still sitting unclaimed-in-practice after 2026-08-29 00:20 UTC, it's fair game.
+
+### Board check
+
+Reviewed `BOARD.md`. Same standing P0s recent shifts have found too large for one unattended
+session (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[02-P0-1]`
+terrain — claimed by another shift, see above, `[02-P0-4]` self-host-glyphs, `[13-P0-2]`
+image-audit), plus the two explicitly human-blocked tickets (`[15-P0-1]`, `[14-P0-1]`). No
+genuinely single-session P0 was open. Picked two well-scoped, WebSearch-only tasks instead (this
+sandbox's Overpass/Wikipedia/Commons/Nominatim network block, documented by 10+ prior shifts,
+rules out Axis 1 new-cities work entirely): the still-open "top 100 POIs" half of `[13-P1-4]`
+image top-up, and Axis 3a (military infrastructure) — `signal_tower` was the thinnest populated
+category in the whole military family (4 of the brief's other types already near-complete: naval
+bases 9/9 named-in-brief covered, auxiliary forts 28 already spanning Britain/Rhine/Raetia/
+Pannonia/Numidia/Dacia).
+
+Dispatched two parallel background WebSearch research agents at the start of the shift (POI image
+top-up batch, signal-tower survey), then a third follow-up pass on the signal-tower agent once its
+first batch landed short of the axis floor, reusing its already-built context/leads rather than
+starting a fresh agent from zero.
+
+### Track A / B — `[13-P1-4]` POI image top-up (standing task, continued)
+
+21 more high-confidence, image-null `pois.geojson` records got a verified Wikimedia Commons
+`image_url`/`image_credit` (direct fetch to `commons.wikimedia.org` is network-blocked in this
+sandbox, same limitation every prior image batch has hit — verified via WebSearch result
+titles/snippets instead, this project's established due-diligence standard here): Regia, three
+Pompeii/Via-Appia tombs (Priscilla, Umbricius Scaurus, Vestorius Priscus), Carmona's Tomb of the
+Elephant, both the Sanctuary and Temple of Fortuna Primigenia at Praeneste, the Temple of Claudius
+at Colchester, the Theatre of Caesaraugusta, Los Milagros Aqueduct, the Ponte di Tiberio (Richard
+Wilson's 1750 painting), Trajan's Bridge over the Danube, the Roman Bridge of Chaves, the Roman
+Theatre and Jupiter Column at Mogontiacum/Mainz, the Cenotaph of Drusus, Butrint's forum, the Arch
+of Galerius, the Theatre of Nicopolis, the Severan Forum of Leptis Magna, and the House of Venus
+mosaic at Volubilis. 15 candidates researched and rejected for lack of a confirmable site-specific
+filename rather than guessed — notably Leptis Magna's Arch of Tiberius and Arch of Trajan (search
+kept surfacing the more famous Arch of Septimius Severus instead) and Glanum's dam (the actual
+Roman structure was demolished in 1891, so no period photo exists).
+
+`pois.geojson` image coverage: 593 → 614 of 1015 at the time (58.4% → 60.5%; total POI count has
+since grown to 1037 with this shift's own Track A additions — see `METRICS.md`).
+
+Caught and fixed a real tooling mistake mid-shift before it shipped: a first merge attempt used
+Python's `json.dump(..., indent=1)` on the whole file, but `pois.geojson`'s actual house style is
+2-space indent with some older records still carrying single-line-crammed `properties` blocks —
+`indent=1` (guessed from a stale `FEATURE_BACKLOG.md` note that no longer matches the file) and
+even a correctly-set `indent=2` full-file rewrite both produced 700+ line diffs of pure
+reformatting noise around 21 real edits. Fixed by switching to a text-splice approach (regex-
+anchor each target record's `"confidence"` line, insert the new keys right after it with matching
+indentation, never re-serializing the untouched 99%+ of the file) — final diff was a clean 68
+insertions / 13 deletions (the 13 being trailing-comma additions on records where `confidence` was
+previously the last key). Worth updating the stale indent-width note in `FEATURE_BACKLOG.md` for
+whoever next programmatically edits this file.
+
+### Track A — Axis 3a: military infrastructure (signal towers + Eastern Desert praesidia)
+
+22 new features (`signal_tower` 4 → 19, `auxiliary_fort` 28 → 35) against the brief's 40-feature
+floor for a chosen micro-POI sub-category — short, and logged honestly rather than padded, same
+as this project's established practice for a real research ceiling (cf. the villae-axis 37-of-40
+note).
+
+**Limes Germanicus signal towers (15 total, two research passes)**: the Rheinbrohl *caput
+limitis* (Wp 1/1, Domitianic, ~90 CE — the exact point the Upper Germanic frontier leaves the
+Rhine), 4 on the Wetterau/Taunus line, 10 on the Odenwald limes (Wp 10/9 through 10/37a, most
+dated to Trajan's ~98–115 CE building phase via the same Kortüm coin-based re-dating that already
+supports this database's one pre-existing Odenwald tower). Real, individually-excavated,
+individually-sourced (German Wikipedia, vici.org, `rom-in-deutschland.de`, regional heritage
+sites) — not a schematic "somewhere on the line" set.
+
+**Egypt's Eastern Desert praesidia (7, new for this database)**: Didymoi and Krokodilo
+(Vespasianic, ~77 CE, both with published excavation-and-ostraca corpora), Maximianon, Qasr
+el-Banat, Xeron Pelagos, Compasi, and Dios — small forts guarding wells on the Koptos–Myos
+Hormos/Berenike desert roads that carried the emerald and Red Sea trade. Dios is the standout:
+an excavated Latin dedicatory inscription dates it to 116 CE, one year before this map's own
+snapshot. Filed as `auxiliary_fort` rather than `signal_tower` (a real fort with a garrison, not
+a watch post) — same axis-3a military-infrastructure sub-category, just the correct type.
+
+**Real research ceiling hit, not a padding decision** — full rejected-candidate accounting from
+both passes:
+- Britain's remaining Stanegate-adjacent sites (Walltown Turret 45a, Gillalees Beacon) are tied to
+  Hadrianic-era (122+) construction phases via their own inscriptions/context; Throp/Nether
+  Denton/Coalburn are forts already in the database, not distinct towers.
+- Two more Limes Germanicus towers (Wp 3/26 "Dasbacher Höhe", Wp 10/22 "Vogelherdschlag") date
+  specifically to the 145 CE Antonine stone-rebuild phase per their own excavation reports, with
+  no confirmed earlier wooden-tower date — too risky to backdate to 117.
+- **Fossatum Africae** (the brief's own suggested lead) is now dated by current scholarship to
+  Hadrian's 128 CE African tour, not Trajan — postdates the snapshot entirely.
+- Pannonian Danube *burgi* candidates checked are confirmed 4th-century Valentinianic
+  constructions, 250+ years too late.
+- **Dacia's Porolissum watchtower network** is genuinely Trajanic (106+ CE) and individually
+  documented in Romanian heritage records (real LMI registry codes confirmed for several named
+  towers), but no source reachable from this sandbox surfaced a specific tower's own coordinates
+  rather than its parent fort's or a neighboring site's — excluded rather than guessed. This is
+  the single best-value gap for a future pass: it needs the UNESCO "Frontiers of the Roman
+  Empire — Dacia" nomination dossier PDF or direct Romanian RAN database access, not a
+  search-snippet-reachable source. Scholarship suggests 180+ documented watchtowers exist on this
+  frontier alone.
+- Wales has no individually-documented pre-117 signal tower distinct from a fort (Caer y Twr is
+  explicitly late Roman); Scotland's Gask Ridge is Flavian and abandoned by the 90s CE, outside
+  the empire's 117 CE line regardless of its early date.
+- One 8th Eastern Desert praesidium (Simiou/Bir Sayyalah) is confirmed real and Trajanic-era via
+  its Pleiades entry, but no coordinate figure surfaced.
+
+None of the 22 new records carry an `image_url` — no confirmable site-specific Commons filename
+turned up in either research pass; left unset rather than guessed, consistent with invariant 1.6's
+own "verify before pasting" instruction.
+
+### Track A (small, no-result) — `[09-P1-4]` epigraphy, two flagged leads checked
+
+Shift 67 flagged two concrete leads for a fast batch-8 close: Thuburbo Maius's Palaestra of the
+Petronii and Carthage's Antonine Baths, both said to have "real, quotable inscription text already
+found but no confirmed corpus catalog number." Checked both directly this shift (2 WebSearch
+passes each). Confirmed the quotable text is real for the Petronii dedication (a partial
+reconstructed Latin inscription naming three generations of the family) but could not surface a
+CIL/AE catalog number for either inscription in four total searches — this project's own
+`ancient_sources[]` convention keys every epigraphic entry off its corpus number
+(`"author": "CIL VI 945"` etc.), and fabricating one would violate the "real data or don't include
+it" rule. Left both POIs without a new `ancient_sources` entry rather than force a citation that
+can't be checked. A future batch with direct EDCS/Clauss-Slaby access (blocked at the network
+level in this sandbox, same as every other direct-fetch target) would likely close both fast, per
+Shift 67's own diagnosis.
+
+### Verification
+
+`npm run validate` clean after every merge (0 errors; the same 17 pre-existing warnings this
+project has carried and explained in `METRICS.md` for weeks — 4 India/Kushan/Han out-of-envelope
+points, 11 `letters.geojson` route LineStrings that name themselves via `from`/`to`). `npm run
+metrics -- --write` regenerated `METRICS.md` for today. Pre-push build gate passed on all three
+pushes (image top-up, signal-tower batch 1, signal-tower batch 2 + praesidia).
+
+### What's next
+
+- Axis 3a (military infrastructure) has real headroom left specifically in **Dacia's Porolissum
+  watchtower network** (see the rejected-candidates note above) — the highest-value next step is
+  getting hold of the UNESCO Dacia nomination PDF or RAN database access rather than more
+  WebSearch-snippet mining, which has now been tried twice and plateaued.
+- `[13-P1-4]` POI image top-up: still open, `pois.geojson` image coverage now 60%+ but climbing —
+  the remaining high-confidence image-null pool shrank from 80 to 59 this shift (see git history
+  for the exact list); same "real gap, keep chipping" pattern prior batches have logged.
+- `[09-P1-4]` epigraphy: both of Shift 67's flagged leads are now closed-out-negative (see above).
+  No fresh leads identified this shift — a future batch should pick a new region/site cluster
+  rather than continue chasing these two.
+- `[02-P0-1]` terrain remains claimed by "cloud shift 68" with zero delivered work six-plus hours
+  after the claim — see the git-state note above. Check its claim timestamp before starting other
+  work; if it's stale by the time you read this, it's open.
+- Same standing flags every recent shift has repeated: Overpass/Wikipedia/Commons/Nominatim/
+  academic-paper direct fetch is blocked at the network level in this cloud sandbox (WebSearch
+  still works and is how every research batch this shift ran got its sourcing); the board's
+  remaining P0s are all multi-session lifts, not one-shift tickets.
+
+
 ## Shift 67 — 2026-08-27 (this shift's own prompt claimed "Shift 4 of four")
 
 Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential

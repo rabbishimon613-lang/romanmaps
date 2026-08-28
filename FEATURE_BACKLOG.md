@@ -829,8 +829,52 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       carefully" instruction. A future shift wanting more from axis 9 would need to deepen an
       existing sub-axis, not open a new one.
 
+## New ideas spotted this shift (2026-08-28, Shift 69 — signal towers + praesidia, POI image top-up)
+
+- [ ] **The stale "`pois.geojson` uses 1-space indent" note (line ~197, dated Shift 19) is wrong
+      as of this shift — the file is 2-space indent today**, and a `scripts/append-geojson-
+      features.mjs` helper (`npm run append-geojson`, added by a cloud shift 2026-08-22) already
+      exists to detect a target file's real indent width automatically and splice-append without
+      reformatting noise. This shift didn't know about that script going in, hand-rolled the same
+      detect-and-splice logic in a scratch Python script, and got a clean pure-addition diff
+      either way — but a future shift should just use the committed helper instead of re-deriving
+      it. Worth deleting or clearly marking stale the old per-file indent notes scattered through
+      this file (lines ~162, ~197, ~700) now that a tool makes them moot.
+- [ ] **Axis 3a (military infrastructure) has a specific, high-value, well-identified gap: Dacia's
+      Porolissum watchtower network.** Two separate WebSearch research passes this shift confirmed
+      the towers are real, Trajanic (106+ CE), and individually documented in Romania's LMI
+      heritage registry (real registry codes retrieved for several named towers) — but no
+      WebSearch-snippet-reachable source gave a specific tower's own coordinates rather than its
+      parent fort's or a neighboring site's. Scholarship suggests 180+ documented watchtowers on
+      this one frontier. The likely unlock is the UNESCO "Frontiers of the Roman Empire — Dacia"
+      nomination dossier PDF or direct access to Romania's RAN (Repertoriul Arheologic Național)
+      database — both blocked by this sandbox's egress restrictions on direct fetch, so this needs
+      either a different environment or someone to paste the coordinate table in.
+      A future shift with document access could likely add 20-40+ features here in one pass.
+- [ ] **`[13-P1-4]` engravings' "top 100 POIs" half: 21 more closed this shift (614/1015 → the
+      `confidence:"high"` image-null pool is now 59, down from 80).** Same pattern as shift 66's
+      note — remaining gaps are genuinely thin on Commons coverage for several (Leptis Magna's
+      Arch of Tiberius/Arch of Trajan keep losing to search results for the more famous Arch of
+      Septimius Severus; Glanum's dam has no period photo because the real Roman structure was
+      demolished in 1891), not unspent search budget.
+- [ ] **`[09-P1-4]` epigraphy: Shift 67's two flagged leads (Thuburbo Maius's Palaestra of the
+      Petronii, Carthage's Antonine Baths) are now closed-out-negative** — the quotable
+      inscription text is real for the Petronii dedication, but no CIL/AE catalog number surfaced
+      in four WebSearch passes across both sites, and this project's `ancient_sources[]`
+      convention keys every epigraphic entry off its corpus number. A future batch needs direct
+      EDCS/Clauss-Slaby database access (blocked at the network level here, same as every other
+      direct-fetch target) rather than another WebSearch pass at these same two leads.
+
 ## Shipped (moved from above; newest on top)
 
+- 2026-08-28 — Shift 69: Axis 3a military infrastructure — 15 Limes Germanicus signal towers
+  (Rheinbrohl *caput limitis* Wp 1/1, Wetterau/Taunus line, 10 Odenwald towers) + 7 Egypt Eastern
+  Desert praesidia (Didymoi, Krokodilo, Maximianon, Qasr el-Banat, Xeron Pelagos, Compasi, Dios —
+  the last dated to 116 CE by an excavated dedicatory inscription). `signal_tower` 4 → 19,
+  `auxiliary_fort` 28 → 35. Plus 21 more `[13-P1-4]` POI image top-ups (Regia, Pompeii/Via Appia
+  tombs, Praeneste's Fortuna Primigenia sanctuary + temple, Mainz's theatre/Jupiter Column/Drusus
+  cenotaph, and 14 more). `npm run validate` clean throughout; see SHIFT_LOG for full sourcing and
+  rejected-candidate accounting.
 - 2026-08-27 — cloud shift 66: Clothing & fashion regions (axis 9c, new
   `public/data/clothing_regions.geojson`, 6 zones — toga/tunic, bracae, chiton/himation, Egyptian
   linen kilt, Palmyrene hybrid dress, Berber dress), defaults OFF, verified live with Playwright.
