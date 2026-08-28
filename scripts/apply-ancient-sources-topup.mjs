@@ -42,8 +42,23 @@ for (const item of items) {
   const windowEndAbs = windowEnd === -1 ? text.length : windowEnd;
   const searchWindow = text.slice(idIdx, windowEndAbs);
 
-  if (/"ancient_sources"\s*:/.test(searchWindow)) {
+  const existingMatch = searchWindow.match(/( *)"ancient_sources": (\[[^\]]*\]|\[[\s\S]*?\n\1\])/);
+  if (existingMatch && existingMatch[2].replace(/\s/g, "") !== "[]") {
     skipped.push(`${id}: already has ancient_sources`);
+    continue;
+  }
+  if (existingMatch) {
+    // Empty placeholder array ("ancient_sources": []) — replace it in place instead of appending.
+    const indent = existingMatch[1];
+    const nl = text.includes("\r\n") ? "\r\n" : "\n";
+    const body = JSON.stringify(ancient_sources, null, 2)
+      .split("\n")
+      .map((line, i) => (i === 0 ? line : indent + line))
+      .join(nl);
+    const absStart = idIdx + existingMatch.index;
+    const absEnd = absStart + existingMatch[0].length;
+    text = text.slice(0, absStart) + `${indent}"ancient_sources": ${body}` + text.slice(absEnd);
+    applied++;
     continue;
   }
 
