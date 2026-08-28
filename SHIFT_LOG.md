@@ -7,6 +7,158 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 71 — 2026-08-28 (this shift's own prompt claimed "Shift 4 of four")
+
+Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
+count.
+
+### Git state at session start
+
+`HEAD` was detached at `origin/main`'s real tip (Shift 70's own final commit, `2e831d7`); local
+`main` was 15 commits stale (still at Shift 56's log commit, `5093cbe`) because the container's
+initial shallow clone cached an old ref. A first `git checkout -B main origin/main` used that
+stale cached ref by mistake and silently rewound the working tree to Shift 56 — caught immediately
+by comparing `git log -1 -- SHIFT_LOG.md` against the commit the session actually started on,
+before any data was touched. `git fetch origin main` (an explicit network fetch, not the cached
+ref) confirmed the real tip and a second `git checkout -B main origin/main` fixed it. Worth a
+sharper note than prior shifts' version of this same finding: `git ls-remote` and `git rev-parse
+origin/main` before an explicit `fetch` can both return a stale answer in this environment — only
+a real `git fetch` is trustworthy, don't reset `main` off anything less.
+
+### Board check
+
+Every P0 unclaimed and unblocked is one multiple prior shifts have already correctly declined as
+too large for one unattended session (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]`
+card-rebuild, `[13-P0-2]` image-audit, `[02-P0-4]` self-host-glyphs' still-open half). `[02-P0-1]`
+terrain stayed `[~]`-claimed by cloud shift 68 (2026-08-28 00:20) throughout this shift's ~18:15
+start — under the 24h staleness line, left alone. `FEATURE_BACKLOG.md` confirmed down to the same
+one open P0-P3 item (terrain, same ticket) — no Track B slot this shift either, consistent with
+several recent shifts' findings; data-only shift per the brief's own allowance.
+
+Picked `[09-P0-1]` ancient-sources — a standing, always-open board ticket, no claim needed — as
+the shift's primary pick instead of a fresh axis pull, plus a continuation of Shift 70's own
+flagged Axis 3d (villae) gap. Confirmed the standing network finding independently: direct `curl`
+to `overpass-api.de`, `commons.wikimedia.org` both return `CONNECT tunnel failed, response 403`,
+and `WebFetch` to `commons.wikimedia.org` returns a hard `EGRESS_BLOCKED` — but `WebSearch`
+itself returned real, usable Commons file URLs and article snippets directly in its result text
+this session (not just page titles), which is worth other shifts knowing rather than assuming
+WebSearch is snippet-only.
+
+### Track A — `[09-P0-1]` ancient-sources: 67 new citations, high-confidence coverage 58%→73%
+
+Two parallel background research agents, split by category (batch A: amphitheaters, aqueducts,
+arches, bridges, circuses, market, monuments, necropoleis, road; batch B: temples, theaters,
+tombs, forums, walls, asklepieion), targeting the 190-POI pool of `confidence: high` records with
+no `ancient_sources`. 32 of 35 and 35 of 38 respectively landed at least one real, verified
+citation — both agents confirmed every reference against the actual text via WebSearch before
+writing it down, not from memory. 6 skipped honestly across both batches for no defensible
+attestation: `poi_medracen` (pre-Roman Numidian tomb, no surviving text names it),
+`poi_torre_escipiones` (its Scipio attribution is a post-antique legend, not ancient),
+`poi_dolaucothi` (no ancient author names the Welsh mines; two near-miss candidates — Pliny NH
+33.21 on Spanish mining, Tacitus Agricola 12's general remark on British minerals — were
+considered and rejected as misleading if forced), `poi_temple_juno_caelestis_dougga`,
+`poi_thuburbo_capitolium`, `poi_theatre_dougga` (Thugga/Thuburbo Maius are known almost entirely
+from inscriptions, not surviving literature).
+
+Most citations follow this project's established, accepted pattern: a text naming the *city* is a
+valid citation for a building within it, with the `note` field worded honestly to say the passage
+describes the city or an event there, not the specific structure. A real handful are direct hits
+on the actual monument: Trajan's Bridge over the Danube (Cassius Dio 68.13 — names the engineer,
+Apollodorus of Damascus, and the pier count), the Cenotaph of Drusus at Mainz (Suetonius, *Divus
+Claudius* 1 — the army's monument and its annual commemorative race), the Actium Victory Monument
+at Nicopolis (Suetonius + Strabo — the captured warships, the dedication to Neptune/Mars), the
+Temple of Claudius at Camulodunum (Tacitus, *Annals* 14.31-32 — the Boudican revolt), the Temple
+of Fortuna Primigenia at Praeneste (Cicero, *De Divinatione* 2.85-87 — the oracle itself), the
+Temple of Vesta at Tivoli (Horace, *Odes* 1.7), and — the standout find — the Temple of Zeus at
+Cyrene (Eusebius + Cassius Dio 68.32, the 115-117 CE Kitos War revolt that devastated the city,
+directly relevant to this map's own 11 August 117 CE snapshot date).
+
+**Found and fixed a real bug before it cost more than 4 records.** `scripts/apply-ancient-sources-
+topup.mjs` (this shift's own new tool, see below) detected an existing `ancient_sources` key by
+presence alone, so a placeholder `"ancient_sources": []` left over from earlier data entry (41 of
+these exist across `pois.geojson`, not something this shift introduced) read as "already has
+sources" and silently skipped the record instead of filling it. Caught immediately — the topup
+run reported those 4 ids as skipped, which didn't match the input batch — fixed the script to
+distinguish an empty array from a populated one and replace the placeholder in place, then
+regression-tested against a real empty-array record on a scratch copy before re-running on the
+live file. All 4 records now carry their real citations. Worth flagging: this project has 37 more
+`"ancient_sources": []` placeholders sitting in `pois.geojson` right now that any future citation
+research will hit the same way — the fix means they'll be picked up correctly going forward.
+
+`pois.geojson`: coverage of `confidence: high` POIs with `ancient_sources` — 266/456 (58.3%) →
+333/458 (72.7%). Two clean commits (one per research batch, split from a single combined working
+state so each commit's diff is self-contained), plus a third for the script fix.
+
+### Track A — Axis 3d villae: 7 new estates close out the zero-coverage-province gap
+
+Shift 70's own explicit handoff: Africa Proconsularis and Syria (its own two picks) landed only 1
+record each against real research resistance, and it suggested opening fresh, previously-untouched
+provinces instead. A background research agent targeted Numidia, Creta et Cyrenaica, Sicilia,
+Asia, Macedonia, Galatia, and Cappadocia — the seven provinces with zero villa coverage at session
+start. Landed 7: **Creta et Cyrenaica** (2 — Villa Dionysos at Knossos, its Dionysiac mosaics
+still ~70 years old in 117 CE; the Palazzo delle Colonne at Ptolemais, a Hellenistic governor's
+mansion wearing "a fresh Roman face"), **Sicilia** (2 — Villa Romana di San Biagio near Tyndaris,
+Villa Romana di Durrueli at Realmonte, both seaside estates with surviving mosaic floors),
+**Asia** (2 — the Ephesus Terrace Houses, six family units on Curetes Street; the Aphrodisias
+Atrium House, built beside the city's Sebasteion), and **Numidia** (1, `confidence: low` — Villa
+of the Labyrinth at Hippo Regius; the general villa quarter has a confirmed 1st-c. phase but no
+solid independent date for this specific structure, logged honestly rather than inflated to
+medium). **Macedonia, Galatia, and Cappadocia came back genuinely empty** — every candidate villa
+the agent could verify in those three provinces postdates 117 CE (2nd-4th c.); not a research
+shortfall, a real gap in what's excavated and dated that early. Full rejection list (Villa Romana
+del Casale, Villa del Tellaro, the Cappadocia/Nevşehir mosaic villa, several Djemila/Timgad/Tipasa
+Numidia candidates, more) is in the agent's own report.
+
+4 of 7 records shipped with a confirmed `image_url` (Palazzo delle Colonne, Villa di San Biagio,
+Villa di Durrueli, Ephesus Terrace Houses); 3 (Knossos, Aphrodisias, Hippo Regius) omitted the
+image fields entirely rather than guess a filename, per the project's own stated preference.
+
+`pois.geojson` villa category: 49 → 56. One clean commit, isolated from the ancient-sources batch
+above by resetting to the pre-session backup and re-splicing in dependency order (villae first,
+then citations) rather than hand-splitting one combined diff.
+
+### New tooling this shift
+
+`scripts/apply-ancient-sources-topup.mjs` — sibling to the existing `apply-image-topup.mjs`, same
+pure-text-splice principle, for adding `ancient_sources[]` onto existing `pois.geojson` records by
+id without a whole-file reformat. Dry-run tested on a scratch copy before first use; the empty-
+array bug above was caught and fixed the same session, so the version now in the repo handles both
+the "no key at all" and "empty placeholder array" cases correctly.
+
+### State, verification, next
+
+`npm install` was needed this session — `node_modules` wasn't present in the container at start
+(a first `npm run build` failed with `next: not found`). `npm run validate`: 0 errors, 17 warnings
+throughout (same standing set every recent shift has carried, no new warnings from either batch).
+`npm run build`: clean at every push, 1151 routes generate (up from 1144 — the 7 new villa pages).
+`npm run metrics --write` (note: the flag needs a bare `--` before it through `npm run` or it's
+silently swallowed as an npm flag and the file doesn't get written — caught this mid-session):
+1044 → 1051 POIs, description depth held at 97.5%, image coverage held at 60.7% (this shift's work
+was citations and villae text/sourcing, not a dedicated image pass), ancient-source coverage
+30.7% → 36.9% overall / 58.3% → 72.7% on the `[09-P0-1]` target set. Four commits total (one
+standalone tooling addition, one villae batch, one ancient-sources batch, one script bugfix), each
+pushed after a clean `git fetch origin main` (no divergence at any point once the container-start
+stale-ref issue above was resolved) and a clean pre-push build gate.
+
+**Next shift**: `[09-P0-1]` ancient-sources still has real headroom — 125 of 458 high-confidence
+POIs remain uncited, concentrated in shipwrecks (near-zero literary attestation, deprioritize),
+villas, mines/quarries, and single-purpose industrial sites, the same low-yield shape prior
+batches already documented; the temple/theater/forum/wall categories this shift worked are now
+largely exhausted for the specific ids researched, but the pool grows every shift new POIs are
+added, so re-running the same query (`confidence:high` + no `ancient_sources`) against the current
+file will surface a fresh batch, not a repeat. Villae: only Africa Proconsularis and Syria (Shift
+70's picks, still thin at 1 each) and now Macedonia/Galatia/Cappadocia (this shift's confirmed-
+empty picks) remain without real coverage — further villa work should look at deepening existing
+well-covered provinces (Italia, Britannia) rather than re-trying these five, which have now had
+two independent research passes each turn up nothing pre-117. The 37 remaining `"ancient_sources":
+[]` placeholders across `pois.geojson` are worth a dedicated look — some may be real research gaps
+already attempted and abandoned, others may just be unfilled from initial data entry; the fixed
+topup script will now handle them correctly either way. `[02-P0-1]` terrain crosses the 24h
+staleness line around 2026-08-29 00:20 UTC if still sitting untouched by then. Board and backlog
+otherwise unchanged from Shift 70's assessment.
+
+---
+
 ## Shift 70 — 2026-08-28 (this shift's own prompt claimed "Shift 3 of four")
 
 Same stale-numbering mismatch every recent shift has flagged (see Shift 67's original note) —

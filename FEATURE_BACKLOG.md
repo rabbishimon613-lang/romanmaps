@@ -907,8 +907,48 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       the existing script only handles brand-new features, but most image top-up shifts need to
       edit records that already exist.
 
+## New ideas spotted this shift (2026-08-28, Shift 71 — ancient-sources batch, villae close-out)
+
+- [ ] **`pois.geojson` has 37 remaining `"ancient_sources": []` placeholder records** — empty
+      arrays left over from earlier data entry, distinct from records that simply never had the
+      key added. A dedicated pass isn't urgent, but any future ancient-sources research targeting
+      these specific ids should know `scripts/apply-ancient-sources-topup.mjs` now handles them
+      correctly (fixed this shift — it used to silently skip them, see SHIFT_LOG). Worth a quick
+      `grep -c '"ancient_sources": \[\]' public/data/pois.geojson` before assuming a record has
+      never been researched.
+- [ ] **Axis 3d villae: Macedonia, Galatia, and Cappadocia now confirmed empty**, joining Shift
+      70's Africa Proconsularis/Syria as five provinces two independent research passes have found
+      nothing pre-117 in. Further villa work should deepen already-well-covered provinces (Italia,
+      Britannia, Gallia, Hispania) rather than re-mining these five a third time.
+- [ ] **`[09-P0-1]` ancient-sources: 125 of 458 high-confidence POIs still uncited** after this
+      shift's 67-citation batch (72.7% coverage). Remaining pool skews shipwrecks (near-zero
+      literary attestation — the Oxford Roman Economy Project's catalog is archaeological, not
+      textual, so expect a very low hit rate there and deprioritize), villas, mines/quarries, and
+      single-purpose industrial sites — the same low-yield shape prior batches already documented.
+      A category-by-category re-query against the current file (not a fixed list) will surface a
+      fresh batch each time, since new POIs keep landing without citations.
+- [ ] **A cold-container session needs `npm install` before anything else works.** This shift's
+      container had no `node_modules` at all — `npm run build` failed with a bare `next: not
+      found` until `npm install` ran. Not a regression, just worth a line in whatever runbook a
+      future shift reads first: don't assume dependencies are pre-installed even though the repo
+      itself is pre-cloned.
+- [ ] **`git ls-remote`/`git rev-parse origin/main` can both return a stale cached ref in this
+      environment — only an explicit `git fetch origin main` is trustworthy.** This shift's first
+      `git checkout -B main origin/main` used a 15-commits-stale cached ref and silently rewound
+      the working tree; caught by comparing the commit `SHIFT_LOG.md` was actually on against what
+      the session started with, before touching any data. Every prior shift's version of this
+      finding recommended `git fetch` — this shift's sharper addition is that the *read-only*
+      inspection commands aren't reliable either, so don't trust them to decide whether a fetch is
+      even needed.
+
 ## Shipped (moved from above; newest on top)
 
+- 2026-08-28 — Shift 71: `[09-P0-1]` ancient-sources — 67 new citations across two research
+  batches, high-confidence coverage 58.3% → 72.7% (266/456 → 333/458). Found and fixed a real bug
+  in `scripts/apply-ancient-sources-topup.mjs`: empty `"ancient_sources": []` placeholders were
+  read as "already has sources" and silently skipped. Axis 3d villae — 7 new estates close out
+  the zero-coverage-province gap (Creta et Cyrenaica, Sicilia, Asia, Numidia); Macedonia, Galatia,
+  Cappadocia confirmed genuinely empty. `pois.geojson`: 1044 → 1051.
 - 2026-08-28 — Shift 69: Axis 3a military infrastructure — 15 Limes Germanicus signal towers
   (Rheinbrohl *caput limitis* Wp 1/1, Wetterau/Taunus line, 10 Odenwald towers) + 7 Egypt Eastern
   Desert praesidia (Didymoi, Krokodilo, Maximianon, Qasr el-Banat, Xeron Pelagos, Compasi, Dios —

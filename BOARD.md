@@ -1750,3 +1750,13 @@ current by the time you read it.
   working research channel. `[06-P2-6]` stays open and blocked for whoever gets an unblocked
   environment — the Overpass fetch + `sites.ts` wiring is still real, un-started work. Check the
   board fresh — don't assume this note is still current by the time you read it.
+- 2026-08-28 · axis 3d villae · 7 new estates in Creta et Cyrenaica (2), Sicilia (2), Asia (2),
+  and Numidia (1, confidence:low) — the last three zero-coverage provinces this axis had left
+  besides Macedonia/Galatia/Cappadocia, which came back genuinely empty (every candidate villa
+  postdates 117 CE). `pois.geojson` villa category 49 → 56.
+- 2026-08-28 · `[09-P0-1]` ancient-sources · 67 new citations across two parallel batches (35
+  attempted / 32 landed; 38 attempted / 35 landed). High-confidence coverage 58.3% → 72.7%
+  (266/456 → 333/458). Found and fixed a real bug in `apply-ancient-sources-topup.mjs`: a
+  placeholder `"ancient_sources": []` from earlier data entry was being read as "already has
+  sources" and silently skipped — 4 records in this batch hit it before being caught. Script now
+  treats an empty array as absent and replaces it in place.
