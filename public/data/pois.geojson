@@ -804,7 +804,21 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mercati%20di%20Traiano%20-%20panoramio.jpg?width=800",
-        "image_credit": "Trajan's Market, Rome · Wikimedia Commons"
+        "image_credit": "Trajan's Market, Rome · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Cassius Dio",
+            "work": "Roman History",
+            "ref": "69.4",
+            "note": "Credits Apollodorus of Damascus, architect of Trajan's building program in Rome, with constructing the forum and its surrounding structures, the complex that this market building belonged to."
+          },
+          {
+            "author": "Aulus Gellius",
+            "work": "Attic Nights",
+            "ref": "13.25",
+            "note": "Describes gilded statues of horses and military standards displayed along the colonnades of the Forum of Trajan, part of the same imperial complex as this market building."
+          }
+        ]
       }
     },
     {
@@ -2482,7 +2496,15 @@
           "https://traveltolyon.com/lyon-roman-ruins-france/",
           "https://en.wikipedia.org/wiki/Ancient_Theatre_of_Fourvi%C3%A8re"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Seneca",
+            "work": "Epistulae Morales",
+            "ref": "91",
+            "note": "Describes the catastrophic fire of 64 CE that destroyed the colony of Lugdunum (Lyon) in a single night. A citywide account, not a description of the theatre."
+          }
+        ]
       }
     },
     {
@@ -5515,7 +5537,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bacchus%20temple%2C%20Baalbek%2001.jpg?width=800",
-        "image_credit": "Temple of Bacchus, Baalbek · Wikimedia Commons"
+        "image_credit": "Temple of Bacchus, Baalbek · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Macrobius",
+            "work": "Saturnalia",
+            "ref": "1.23",
+            "note": "Describes the great oracular sanctuary of Jupiter Heliopolitanus at Heliopolis (Baalbek), including the prophecy the god gave Trajan in 114 CE about his Parthian campaign. The Temple of Bacchus stood within this same sacred precinct, though Macrobius does not name it separately."
+          }
+        ]
       }
     },
     {
@@ -14167,7 +14197,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palace_Tomb_and_Corinthian_Tomb,_Petra.jpg?width=800",
-        "image_credit": "Photo: Wikimedia Commons contributor"
+        "image_credit": "Photo: Wikimedia Commons contributor",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "16.4.21",
+            "note": "Describes Petra, the Nabataean capital, as a fortified rock city with abundant springs, drawing on the eyewitness account of Athenodorus. A general description of the city, not this specific tomb facade."
+          }
+        ]
       }
     },
     {
@@ -14195,7 +14233,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palace_Tomb,_Petra.jpg?width=800",
-        "image_credit": "Photo: Wikimedia Commons contributor"
+        "image_credit": "Photo: Wikimedia Commons contributor",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "16.4.21",
+            "note": "Describes Petra, the Nabataean capital, as a fortified rock city with abundant springs, drawing on the eyewitness account of Athenodorus. A general description of the city, not this specific tomb facade."
+          }
+        ]
       }
     },
     {
@@ -14305,7 +14351,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Necropolis-of-Cyrene--tomb-Interior-1861.jpg?width=800",
-        "image_credit": "19th-century illustration, Wikimedia Commons"
+        "image_credit": "19th-century illustration, Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Herodotus",
+            "work": "Histories",
+            "ref": "4.150-158",
+            "note": "Recounts the founding of Cyrene by settlers from Thera under the leader Battus, naming the city whose extensive rock-cut necropolis surrounds its ruins."
+          }
+        ]
       }
     },
     {
@@ -14873,7 +14927,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arles-arenes.jpg?width=800",
-        "image_credit": "Arenes d'Arles (Arles Amphitheatre) - Wikimedia Commons"
+        "image_credit": "Arenes d'Arles (Arles Amphitheatre) - Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "3.36",
+            "note": "Lists Arelate as a Roman colony settled by veterans of the Sixth Legion, one of the leading towns of Gallia Narbonensis where this amphitheater stood."
+          }
+        ]
       }
     },
     {
@@ -14939,7 +15001,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pula%20Arena.JPG?width=800",
-        "image_credit": "Pula Arena, Croatia - Wikimedia Commons"
+        "image_credit": "Pula Arena, Croatia - Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "5.1.9",
+            "note": "Describes Pola as a city on a sheltered natural harbor on the Istrian coast, with a legendary founding by Colchian exiles sent in pursuit of Medea, the city where this amphitheater was built."
+          }
+        ]
       }
     },
     {
@@ -15530,7 +15600,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20Julien%2C%20Bonnieux.jpg?width=800",
-        "image_credit": "Pont Julien, Bonnieux · Wikimedia Commons"
+        "image_credit": "Pont Julien, Bonnieux · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "3.36",
+            "note": "Lists Apta Iulia among the towns with Latin rights in Gallia Narbonensis, near which this bridge carries a Roman road across the Calavon river."
+          }
+        ]
       }
     },
     {
@@ -15662,7 +15740,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Puente%20Romano%20sobre%20el%20R%C3%ADo%20Guadiana%2C%20M%C3%A9rida.JPG?width=800",
-        "image_credit": "Roman Bridge over the Guadiana, Mérida · Wikimedia Commons"
+        "image_credit": "Roman Bridge over the Guadiana, Mérida · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "3.2.15",
+            "note": "Names Augusta Emerita as a city jointly settled by military veterans in the territory of the Turduli, the city this bridge connects across the Guadiana river."
+          }
+        ]
       }
     },
     {
@@ -15962,7 +16048,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anfiteatro%20romano%20di%20Ancona.jpg?width=800",
-        "image_credit": "Roman Amphitheatre of Ancona · Wikimedia Commons"
+        "image_credit": "Roman Amphitheatre of Ancona · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Juvenal",
+            "work": "Satires",
+            "ref": "4.39-40",
+            "note": "Opens the satire of the giant turbot by describing Ancona and its hilltop shrine to Venus, naming the city where this amphitheater was built."
+          }
+        ]
       }
     },
     {
@@ -16028,7 +16122,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Benevento-Teatro%20Romano.jpg?width=800",
-        "image_credit": "Roman Theatre, Benevento · Wikimedia Commons"
+        "image_credit": "Roman Theatre, Benevento · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Horace",
+            "work": "Satires",
+            "ref": "1.5.71-76",
+            "note": "Recounts a kitchen fire at an inn in Beneventum during Horace's journey to Brundisium. A passing anecdote about the town, not a description of the theatre."
+          }
+        ]
       }
     },
     {
@@ -16231,7 +16333,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Poseidon%2C%20south%20facade%20-%20Paestum%20-%20Italy%202015.JPG?width=800",
-        "image_credit": "Temple of Neptune (Hera II), south facade, Paestum · Wikimedia Commons (CC BY-SA)"
+        "image_credit": "Temple of Neptune (Hera II), south facade, Paestum · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "6.1.1",
+            "note": "Places Poseidonia (Paestum) near the mouth of the Silarus river, noting the nearby sanctuary of Argive Hera and the city's founding by colonists from Sybaris. Describes the city's setting rather than this specific temple."
+          }
+        ]
       }
     },
     {
@@ -16260,7 +16370,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paestum%20Heratempel%201.jpg?width=800",
-        "image_credit": "First Temple of Hera (the Basilica), Paestum · Wikimedia Commons (CC BY-SA)"
+        "image_credit": "First Temple of Hera (the Basilica), Paestum · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "3.71",
+            "note": "Lists Paestum, called Posidonia by the Greeks, among the towns of Italy's third region (Lucania). A geographic notice of the city rather than a description of this temple."
+          }
+        ]
       }
     },
     {
@@ -16289,7 +16407,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paestum%2C%20Tempio%20di%20Athena%20%28di%20Cerere%29.jpg?width=800",
-        "image_credit": "Temple of Athena (formerly called Temple of Ceres), Paestum · Wikimedia Commons (CC BY-SA)"
+        "image_credit": "Temple of Athena (formerly called Temple of Ceres), Paestum · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "3.71",
+            "note": "Lists Paestum, called Posidonia by the Greeks, among the towns of Italy's third region (Lucania). A geographic notice of the city rather than a description of this temple."
+          }
+        ]
       }
     },
     {
@@ -16316,7 +16442,15 @@
           "https://www.pestum.it/excavations/forum.htm",
           "https://en.wikipedia.org/wiki/Paestum"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "6.1.1",
+            "note": "Places Poseidonia (Paestum) near the mouth of the Silarus river and describes its founding by colonists from Sybaris. Describes the city's setting, not the forum specifically."
+          }
+        ]
       }
     },
     {
@@ -16370,7 +16504,15 @@
           "https://pleiades.stoa.org/places/569006287",
           "https://www.pestum.it/excavations/roman-amphitheatre-paestum.htm"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Virgil",
+            "work": "Georgics",
+            "ref": "4.119",
+            "note": "Praises the rose gardens of Paestum that bloomed twice each year, naming the city that later built this amphitheater."
+          }
+        ]
       }
     },
     {
@@ -16397,7 +16539,15 @@
           "https://parchipaestumvelia.cultura.gov.it/en/scopri-i-parchi/the-wall-of-paestum/",
           "https://www.pestum.it/excavations/city-walls-paestum.htm"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "3.71",
+            "note": "Lists Paestum, called Posidonia by the Greeks, among the towns of Italy's third region (Lucania). A geographic notice of the city, not a description of its walls."
+          }
+        ]
       }
     },
     {
@@ -16534,7 +16684,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Heroon%20a%20Paestum.jpg?width=800",
-        "image_credit": "Heroon, underground founder's shrine, Paestum · Wikimedia Commons (CC BY-SA)"
+        "image_credit": "Heroon, underground founder's shrine, Paestum · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": [
+          {
+            "author": "Virgil",
+            "work": "Georgics",
+            "ref": "4.119",
+            "note": "Praises the twice-blooming rose gardens of Paestum, naming the city where this shrine to the settlement's legendary founder was built."
+          }
+        ]
       }
     },
     {
@@ -17323,7 +17481,14 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Volubilis,Morocco.jpg?width=800",
         "image_credit": "The Capitoline temple, Volubilis · Wikimedia Commons",
-        "ancient_sources": []
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "5.5",
+            "note": "Names Volubilis among the towns of Mauretania Tingitana in his survey of the province. A geographic notice of the city, not a description of the Capitolium."
+          }
+        ]
       }
     },
     {
@@ -17353,7 +17518,14 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Volubilis_Arch_of_Caracalla_looking_southwest.jpg?width=800",
         "image_credit": "The Arch of Caracalla, Volubilis · Wikimedia Commons",
-        "ancient_sources": []
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "5.5",
+            "note": "Locates Volubilis as a free town in Mauretania Tingitana, equidistant from the Mediterranean and Atlantic coasts, the city where this arch was later erected."
+          }
+        ]
       }
     },
     {
@@ -18146,7 +18318,14 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trier_Porta_Nigra_BW_1.JPG?width=800",
         "image_credit": "Porta Nigra, Trier · Wikimedia Commons (CC BY-SA)",
-        "ancient_sources": []
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Annals",
+            "ref": "3.42",
+            "note": "Recounts the revolt of Julius Florus among the Treveri in 21 CE, naming the tribe whose later capital, Augusta Treverorum, this gate guarded."
+          }
+        ]
       }
     },
     {
@@ -18294,7 +18473,14 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Igeler_S%C3%A4ule_(23).jpg?width=800",
         "image_credit": "Igel Column, funerary monument of the Secundinii · Wikimedia Commons (CC BY-SA)",
-        "ancient_sources": []
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Histories",
+            "ref": "4.62-77",
+            "note": "Recounts the fighting around Augusta Treverorum (Trier) during the Batavian revolt of 69-70 CE. Describes the city amid the uprising, not this funerary monument, which was built more than a century later."
+          }
+        ]
       }
     },
     {
@@ -18381,7 +18567,15 @@
           "https://vici.org/vici/55151/",
           "https://pleiades.stoa.org/places/676148653"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "5.27",
+            "note": "Names Great Leptis (Leptis Magna) along the African coast between the two Syrtes. A geographic notice of the city, not a description of the forum."
+          }
+        ]
       }
     },
     {
@@ -18516,7 +18710,15 @@
           "https://www.livius.org/articles/place/lepcis-magna/photos/lepcis-magna-theater/",
           "https://livinglateantiquity.org/exhibits/show/entertainment/item/187"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "5.27",
+            "note": "Names Great Leptis (Leptis Magna) along the African coast between the two Syrtes. A geographic notice of the city, not a description of this temple."
+          }
+        ]
       }
     },
     {
@@ -18707,7 +18909,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Forum%20Leptis%20Magna%2004.JPG?width=800",
-        "image_credit": "Severan Forum of Leptis Magna · Wikimedia Commons"
+        "image_credit": "Severan Forum of Leptis Magna · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "5.27",
+            "note": "Names Great Leptis (Leptis Magna) along the African coast between the two Syrtes. A geographic notice of the city, not a description of the forum."
+          }
+        ]
       }
     },
     {
@@ -18733,7 +18943,15 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Arch_of_Septimius_Severus_(Leptis_Magna)"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Sallust",
+            "work": "Bellum Jugurthinum",
+            "ref": "78",
+            "note": "Recounts the founding of Lepcis by settlers from Sidon and its later appeal to Rome for protection during the Jugurthine War, the city where this arch honors its native-born emperor."
+          }
+        ]
       }
     },
     {
@@ -18882,7 +19100,15 @@
           "https://en.wikipedia.org/wiki/Ancient_theater_of_Sabratha",
           "https://historyandarchaeologyonline.com/the-theatre-of-sabratha/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "5.25",
+            "note": "Lists Sabrata among the towns on the edge of the Lesser Syrtis in Roman Tripolitania. A geographic notice of the city, not the theatre."
+          }
+        ]
       }
     },
     {
@@ -19052,7 +19278,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tempio%20di%20Vesta%20Tivoli%2011.JPG?width=800",
-        "image_credit": "Temple of Vesta, Tivoli · Wikimedia Commons"
+        "image_credit": "Temple of Vesta, Tivoli · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Horace",
+            "work": "Odes",
+            "ref": "1.7.12-14",
+            "note": "Praises Tibur's landscape, singling out the echoing grotto of the Sibyl Albunea by the Anio falls, the site traditionally associated with this round temple, though the building itself is not described."
+          }
+        ]
       }
     },
     {
@@ -19366,7 +19600,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2012-09-07%20Tempio%20Fortuna%20Primigenia%20plastico.jpg?width=800",
         "image_credit": "Scale-model reconstruction of the Temple of Fortuna Primigenia, Palestrina Museum · Wikimedia Commons",
-        "image_alt": "Museum scale model reconstructing the ancient terraced Temple of Fortuna Primigenia complex"
+        "image_alt": "Museum scale model reconstructing the ancient terraced Temple of Fortuna Primigenia complex",
+        "ancient_sources": [
+          {
+            "author": "Cicero",
+            "work": "De Divinatione",
+            "ref": "2.85-87",
+            "note": "Recounts the legendary founding of the oracle of Fortuna Primigenia at Praeneste and the wooden lots (sortes) drawn there by the goddess's priests."
+          }
+        ]
       }
     },
     {
@@ -19570,7 +19812,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anfiteatro%20Campano%20%28Santa%20Maria%20di%20Capua%20Vetere%29%2001.jpg?width=800",
-        "image_credit": "Amphitheatre of Capua · Wikimedia Commons"
+        "image_credit": "Amphitheatre of Capua · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Cicero",
+            "work": "De Lege Agraria",
+            "ref": "2.87",
+            "note": "Argues that Rome's ancestors ranked Capua alongside Carthage and Corinth as one of only three cities in the world grand enough to rival Rome, the city where this amphitheater was later built."
+          }
+        ]
       }
     },
     {
@@ -20013,7 +20263,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tempio Capitolino a Brescia.jpg?width=800",
         "image_credit": "Capitolium of Brescia · Wikimedia Commons",
-        "image_alt": "Colonnaded facade of the Capitoline temple in Brescia"
+        "image_alt": "Colonnaded facade of the Capitoline temple in Brescia",
+        "ancient_sources": [
+          {
+            "author": "Catullus",
+            "work": "Carmina",
+            "ref": "67.34",
+            "note": "Calls Brixia (Brescia) the 'beloved mother' of Verona in a poem about a gossiping door. A passing mention of the city, not a description of the Capitolium."
+          }
+        ]
       }
     },
     {
@@ -20307,7 +20565,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arco d'Augusto, Rimini Italy.jpg?width=800",
         "image_credit": "Arch of Augustus, Rimini · Wikimedia Commons",
-        "image_alt": "Roman triumphal arch of pale stone with a single archway, Rimini"
+        "image_alt": "Roman triumphal arch of pale stone with a single archway, Rimini",
+        "ancient_sources": [
+          {
+            "author": "Julius Caesar",
+            "work": "Commentarii de Bello Civili",
+            "ref": "1.8",
+            "note": "Describes Caesar occupying Ariminum with his troops immediately after crossing the Rubicon in 49 BCE, the city where this arch was later dedicated to Augustus."
+          }
+        ]
       }
     },
     {
@@ -21119,7 +21385,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Guildhall%20Roman%20Amphitheatre,%20London.JPG?width=800",
-        "image_credit": "London's Roman amphitheatre, Guildhall · Wikimedia Commons"
+        "image_credit": "London's Roman amphitheatre, Guildhall · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Annals",
+            "ref": "14.33",
+            "note": "Describes Londinium at the time of the Boudican revolt of 60/61 CE as a town not yet formally a colony but famous for its crowds of merchants and supply traffic, the city where this amphitheater stood."
+          }
+        ]
       }
     },
     {
@@ -21177,7 +21451,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/London%2001%202013%20Roman%20wall%205335.JPG?width=800",
-        "image_credit": "A surviving section of the London Wall · Wikimedia Commons"
+        "image_credit": "A surviving section of the London Wall · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Annals",
+            "ref": "14.33",
+            "note": "Describes Londinium around 60/61 CE as a bustling centre of trade and merchants, though not yet a chartered colony. Describes the settlement, not its later stone wall, which was built well after this period."
+          }
+        ]
       }
     },
     {
@@ -21235,7 +21517,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tarragona%20Amphitheatre.jpg?width=800",
-        "image_credit": "Tarragona Amphitheatre · Wikimedia Commons"
+        "image_credit": "Tarragona Amphitheatre · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "3.21",
+            "note": "Names Tarraco as a colony founded by the Scipios and the capital of the province of Hispania Tarraconensis, the city where this amphitheater overlooks the sea."
+          }
+        ]
       }
     },
     {
@@ -21264,7 +21554,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Circ%20Romà%20de%20Tarragona-1.JPG?width=800",
-        "image_credit": "The Roman Circus of Tarraco · Wikimedia Commons"
+        "image_credit": "The Roman Circus of Tarraco · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "3.21",
+            "note": "Names Tarraco as a colony founded by the Scipios and capital of Hispania Tarraconensis, the city where this circus stood beside the provincial forum."
+          }
+        ]
       }
     },
     {
@@ -21293,7 +21591,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Muralles%20romanes%20(Tarragona)%20-%204.jpg?width=800",
-        "image_credit": "The Roman walls of Tarragona · Wikimedia Commons"
+        "image_credit": "The Roman walls of Tarragona · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "3.21",
+            "note": "Calls Tarraco (Tarragona) 'the work of the Scipios,' comparing its founding to Carthage among the Carthaginians. Describes the city's origins, not the walls specifically."
+          }
+        ]
       }
     },
     {
@@ -21349,7 +21655,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aqüeducte%20de%20les%20Ferreres%20Tarragona%201.jpg?width=800",
-        "image_credit": "Les Ferreres Aqueduct, Tarragona · Wikimedia Commons"
+        "image_credit": "Les Ferreres Aqueduct, Tarragona · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "3.21",
+            "note": "Names Tarraco as a colony founded by the Scipios and capital of Hispania Tarraconensis, the city this aqueduct supplied with water."
+          }
+        ]
       }
     },
     {
@@ -21481,7 +21795,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theatre%20of%20Pergamon.jpg?width=800",
-        "image_credit": "The Hellenistic theatre of Pergamon · Wikimedia Commons"
+        "image_credit": "The Hellenistic theatre of Pergamon · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "13.4.1-2",
+            "note": "Describes Pergamon's rise under the Attalid kings and its site on a cone-shaped hill above the Caicus plain. A description of the city, not the theatre."
+          }
+        ]
       }
     },
     {
@@ -21510,7 +21832,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20de%20Diane%20Nîmes.JPG?width=800",
-        "image_credit": "Temple of Diana, Nimes · Wikimedia Commons"
+        "image_credit": "Temple of Diana, Nimes · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "4.1.12",
+            "note": "Describes Nemausus (Nimes) as the metropolis of the Volcae Arecomici, ruling twenty-four subordinate villages. A description of the city, not this temple."
+          }
+        ]
       }
     },
     {
@@ -21539,7 +21869,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/MK54084%20Tour%20Magne%20(Nîmes).jpg?width=800",
-        "image_credit": "Tour Magne, Nimes · Wikimedia Commons"
+        "image_credit": "Tour Magne, Nimes · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "3.37",
+            "note": "Lists Nemausus among the towns with Latin rights in Gallia Narbonensis, the city whose hilltop this tower crowned before Augustus enclosed it within new city walls."
+          }
+        ]
       }
     },
     {
@@ -21568,7 +21906,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porte%20d'Auguste%20in%20Nimes%2002.jpg?width=800",
-        "image_credit": "Porte d'Auguste, Nimes · Wikimedia Commons"
+        "image_credit": "Porte d'Auguste, Nimes · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "3.37",
+            "note": "Lists Nemausus among the towns with Latin rights in the territory of the Arecomici, the city whose walls this gate once pierced."
+          }
+        ]
       }
     },
     {
@@ -21683,7 +22029,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theatreantique.JPG?width=800",
-        "image_credit": "Roman Theatre of Arles · Wikimedia Commons"
+        "image_credit": "Roman Theatre of Arles · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "3.36",
+            "note": "Lists Arelate (Arles), the station of the Sixth Legion, among the colonies of interior Gallia Narbonensis. A geographic notice, not a description of the theatre."
+          }
+        ]
       }
     },
     {
@@ -21797,7 +22151,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vestiges%20de%20la%20spina%20du%20cirque%20romain.jpg?width=800",
-        "image_credit": "Remains of the spina, Circus of Arles · Wikimedia Commons"
+        "image_credit": "Remains of the spina, Circus of Arles · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "3.36",
+            "note": "Lists Arelate as a colony of veterans of the Sixth Legion, one of the leading towns of Gallia Narbonensis where this circus was built along the Rhone."
+          }
+        ]
       }
     },
     {
@@ -21855,7 +22217,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20d'Auguste%20et%20de%20Livie%20(Vienne)%2001.JPG?width=800",
-        "image_credit": "Temple of Augustus and Livia, Vienne · Wikimedia Commons"
+        "image_credit": "Temple of Augustus and Livia, Vienne · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "4.1.11",
+            "note": "Identifies Vienna (Vienne) as the metropolis of the Allobroges on the Rhone. A city-level notice, not a description of this temple."
+          }
+        ]
       }
     },
     {
@@ -22509,7 +22879,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Frejus-amphitheatre-05.jpg?width=800",
-        "image_credit": "Roman Amphitheatre of Frejus · Wikimedia Commons"
+        "image_credit": "Roman Amphitheatre of Frejus · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Histories",
+            "ref": "3.43",
+            "note": "Describes Forum Iulii as a strategically important naval colony on the Gallic coast during the civil war of 69 CE, the city where this amphitheater stands."
+          }
+        ]
       }
     },
     {
@@ -22591,7 +22969,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arche%20de%20l%27aqueduc%20romain%20de%20Fr%C3%A9jus%20(Var),%20%C3%A0%20l%27entr%C3%A9e%20de%20la%20ville.jpg?width=800",
-        "image_credit": "Roman aqueduct of Frejus · Wikimedia Commons"
+        "image_credit": "Roman aqueduct of Frejus · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Histories",
+            "ref": "3.43",
+            "note": "Describes Forum Iulii as a fortified naval colony on the Gallic coast, the city this aqueduct supplied with water carried down from the hills above Frejus."
+          }
+        ]
       }
     },
     {
@@ -22674,7 +23060,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ar%C3%A8nes%20romaines%20Saintes.JPG?width=800",
-        "image_credit": "Roman Amphitheatre of Saintes · Wikimedia Commons"
+        "image_credit": "Roman Amphitheatre of Saintes · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Ptolemy",
+            "work": "Geography",
+            "ref": "2.7.7",
+            "note": "Lists Mediolanum Santonum as the chief town of the Santones tribe in Gallia Aquitania, the city where this amphitheater was built."
+          }
+        ]
       }
     },
     {
@@ -22978,7 +23372,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Claudius%2C%20Colchester.svg?width=800",
         "image_credit": "Temple of Claudius, Colchester · Wikimedia Commons",
-        "image_alt": "Diagram of the Temple of Claudius podium underlying Colchester Castle"
+        "image_alt": "Diagram of the Temple of Claudius podium underlying Colchester Castle",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Annals",
+            "ref": "14.31-32",
+            "note": "Describes the temple as a hated symbol of servitude to the Britons and records its destruction during Boudica's revolt in 60/61 CE."
+          }
+        ]
       }
     },
     {
@@ -23199,7 +23601,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20amphitheatre,%20Silchester%2023.jpg?width=800",
-        "image_credit": "Silchester Roman amphitheatre · Wikimedia Commons"
+        "image_credit": "Silchester Roman amphitheatre · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Ptolemy",
+            "work": "Geography",
+            "ref": "2.3.26",
+            "note": "Lists Calleva as a town of the Atrebates tribe in Britain, the settlement where this amphitheater stood just outside the town walls."
+          }
+        ]
       }
     },
     {
@@ -24200,7 +24610,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trajan%27s%20Bridge%20Across%20the%20Danube%2C%20Modern%20Reconstruction.jpg?width=800",
         "image_credit": "Trajan's Bridge over the Danube, reconstruction · Wikimedia Commons",
-        "image_alt": "Scholarly reconstruction drawing of Trajan's timber-and-stone bridge across the Danube"
+        "image_alt": "Scholarly reconstruction drawing of Trajan's timber-and-stone bridge across the Danube",
+        "ancient_sources": [
+          {
+            "author": "Cassius Dio",
+            "work": "Roman History",
+            "ref": "68.13",
+            "note": "Describes the stone-piered bridge Trajan built across the Danube for his Dacian campaigns, detailing its twenty piers and the engineering work of Apollodorus of Damascus."
+          }
+        ]
       }
     },
     {
@@ -24371,7 +24789,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Cenotaph%20of%20Drusus%20%28Drususstein%29%2C%20an%20empty%20tomb%20raised%20by%20Roman%20troops%20in%209%20AD%20in%20honour%20of%20the%20deceased%20general%20Drusus%2C%20Mogontiacum%20%28Mainz%29%20%289739245693%29.jpg?width=800",
-        "image_credit": "Cenotaph of Drusus (Drususstein), Mainz Citadel · Wikimedia Commons"
+        "image_credit": "Cenotaph of Drusus (Drususstein), Mainz Citadel · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Suetonius",
+            "work": "Divus Claudius",
+            "ref": "1",
+            "note": "Describes the monument the army raised at Mogontiacum in honor of Drusus, around which soldiers ran a ceremonial race each year while the communities of Gaul performed annual rites."
+          }
+        ]
       }
     },
     {
@@ -24398,7 +24824,15 @@
           "http://www.romanaqueducts.info/aquasite/mainz/index.html",
           "https://www.livius.org/articles/place/mogontiacum-mainz/mogontiacum-mainz-photos/mainz-aqueduct/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Histories",
+            "ref": "4.24",
+            "note": "Names Mogontiacum as a Roman legionary base on the Rhine during the Batavian revolt of 69-70 CE, the city this aqueduct supplied with water."
+          }
+        ]
       }
     },
     {
@@ -24759,7 +25193,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2011_Butrint_03_Prytaneion_and_Asclepios_Sanctuary.jpg?width=800",
-        "image_credit": "Prytaneion and Sanctuary of Asclepius, Butrint, Albania · Wikimedia Commons"
+        "image_credit": "Prytaneion and Sanctuary of Asclepius, Butrint, Albania · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Virgil",
+            "work": "Aeneid",
+            "ref": "3.294-505",
+            "note": "Describes Aeneas's visit to Buthrotum (Butrint), ruled by the Trojan exiles Helenus and Andromache as a miniature replica of Troy. Describes the city, not the sanctuary of Asclepius."
+          }
+        ]
       }
     },
     {
@@ -25643,7 +26085,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Roman_forum.jpg?width=800",
-        "image_credit": "Roman Forum, Thessaloniki, Greece · Wikimedia Commons"
+        "image_credit": "Roman Forum, Thessaloniki, Greece · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Cicero",
+            "work": "Letters to Atticus",
+            "ref": "3.8",
+            "note": "Written by Cicero from Thessalonica during his exile in 58 BCE, recording his stay in the city. Not a description of the forum itself."
+          }
+        ]
       }
     },
     {
@@ -25721,7 +26171,15 @@
         "sources": [
           "https://www.livius.org/articles/place/via-egnatia/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "7.7.4",
+            "note": "Traces the route of the Via Egnatia eastward from Apollonia through Macedonia to Thessalonica and beyond, naming the city as one of the road's principal waypoints."
+          }
+        ]
       }
     },
     {
@@ -25801,7 +26259,21 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arch%20of%20Galerius%20%28%22Kamara%22%29%2C%20Thessaloniki%2C%20Greece%20%283332897943%29.jpg?width=800",
-        "image_credit": "Arch of Galerius (Kamara), Thessaloniki · Wikimedia Commons"
+        "image_credit": "Arch of Galerius (Kamara), Thessaloniki · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Acts of the Apostles",
+            "work": "New Testament",
+            "ref": "17.1",
+            "note": "Records Paul and Silas passing through Amphipolis and Apollonia to reach Thessalonica, where they found a synagogue, naming the city where this arch was later built."
+          },
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "7, fr. 21",
+            "note": "Describes the founding of Thessalonica by Cassander, who settled the population of some twenty-six smaller towns of the Thermaic Gulf into the new city and named it for his wife."
+          }
+        ]
       }
     },
     {
@@ -25827,7 +26299,15 @@
         "sources": [
           "https://actianicopolisarchaeopark.gr/en/nikopolis/the-roman-walls/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "7.7.6",
+            "note": "Describes Nicopolis, founded by Augustus to commemorate his victory at Actium, and its sanctuary of Apollo Actius. Describes the city's foundation, not its walls."
+          }
+        ]
       }
     },
     {
@@ -25855,7 +26335,21 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicopolis,_Augustus_monument.jpg?width=800",
-        "image_credit": "Victory Monument of Augustus, Nicopolis, Greece · Wikimedia Commons"
+        "image_credit": "Victory Monument of Augustus, Nicopolis, Greece · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Suetonius",
+            "work": "Divus Augustus",
+            "ref": "18",
+            "note": "Describes Augustus founding Nicopolis after his victory at Actium and decorating the site of his camp with captured naval trophies, dedicating the monument to Neptune and Mars."
+          },
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "7.7.6",
+            "note": "Describes the sacred precinct above Nicopolis holding this victory monument, adorned with warships captured from the fleet of Antony and Cleopatra."
+          }
+        ]
       }
     },
     {
@@ -27287,7 +27781,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Artemistempel_Sardes.jpg?width=800",
-        "image_credit": "Temple of Artemis, Sardis · Wikimedia Commons"
+        "image_credit": "Temple of Artemis, Sardis · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Herodotus",
+            "work": "Histories",
+            "ref": "1.84",
+            "note": "Recounts the fall of Sardis to Cyrus the Great after a fourteen-day siege. Describes the city's capture, not this temple."
+          }
+        ]
       }
     },
     {
@@ -28081,7 +28583,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Perge_at_eastern_wall_in_2012_3922.jpg?width=800",
-        "image_credit": "The Hellenistic eastern wall of Perge · Wikimedia Commons"
+        "image_credit": "The Hellenistic eastern wall of Perge · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Livy",
+            "work": "History of Rome",
+            "ref": "38.37",
+            "note": "Recounts the Roman commander Gnaeus Manlius Vulso's visit to Perge and its temple of Artemis during his 189 BCE campaign in Asia Minor. Describes the city, not its walls."
+          }
+        ]
       }
     },
     {
@@ -28110,7 +28620,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theatre_Aspendos.jpg?width=800",
-        "image_credit": "The Roman theatre of Aspendos · Wikimedia Commons"
+        "image_credit": "The Roman theatre of Aspendos · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "14.4.2",
+            "note": "Describes Aspendos as an Argive foundation on the Eurymedon river, calling it a considerable city of Pamphylia. A description of the city, not the theatre."
+          }
+        ]
       }
     },
     {
@@ -28421,7 +28939,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexander_Sarcophagus_2020.jpg?width=800",
-        "image_credit": "Alexander Sarcophagus, Istanbul Archaeological Museums · Wikimedia Commons"
+        "image_credit": "Alexander Sarcophagus, Istanbul Archaeological Museums · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "16.2.22",
+            "note": "Describes Sidon as a major Phoenician city renowned for glassmaking and dyed textiles, the city whose royal burial ground this necropolis belongs to."
+          }
+        ]
       }
     },
     {
@@ -29017,7 +29543,15 @@
         "sources": [
           "Wikipedia: Bulla Regia"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "5.22",
+            "note": "Lists Bulla Regia as a free town (liberum oppidum) of Numidia. A geographic notice, not a description of the macellum."
+          }
+        ]
       }
     },
     {
@@ -29046,7 +29580,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Theatre_view_from_above_-_ruin_of_Bulla_Regia.jpg?width=800",
         "image_credit": "Wikimedia Commons",
-        "image_alt": "Aerial view of the ruined Roman theatre at Bulla Regia, Tunisia"
+        "image_alt": "Aerial view of the ruined Roman theatre at Bulla Regia, Tunisia",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "5.22",
+            "note": "Lists Bulla Regia as a free town (liberum oppidum) of Numidia. A geographic notice, not a description of the theatre."
+          }
+        ]
       }
     },
     {
@@ -29707,7 +30249,21 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Zeus_in_Cyrene.jpg?width=800",
         "image_credit": "Wikimedia Commons",
-        "image_alt": "Standing columns of the Temple of Zeus at Cyrene"
+        "image_alt": "Standing columns of the Temple of Zeus at Cyrene",
+        "ancient_sources": [
+          {
+            "author": "Eusebius",
+            "work": "Historia Ecclesiastica",
+            "ref": "4.2",
+            "note": "Describes the Jewish revolt of 115-117 CE that devastated Cyrene under Trajan. A citywide account of the destruction, not a description of the Temple of Zeus itself."
+          },
+          {
+            "author": "Cassius Dio",
+            "work": "Roman History",
+            "ref": "68.32",
+            "note": "Records the scale of the killing in Cyrene during the same revolt. A citywide account, not a description of this temple."
+          }
+        ]
       }
     },
     {
