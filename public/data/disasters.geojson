@@ -236,5 +236,28 @@
    "still_visible_in_117":true,
    "one_line":"Grain shipments failed so badly in 51 CE that Rome had barely fifteen days of food left, and Tacitus credits only a mild winter with averting mass starvation. A crowd cornered Claudius in the Forum while he was hearing legal cases and pelted him with stale bread crusts in protest. The scare pushed Claudius to offer merchants guaranteed compensation for grain-ship losses at sea, a subsidy that helped keep Rome's supply chain running for decades afterward.",
    "sources":["Tac. Ann. 12.43","Suet. Claud. 18"]
- }}
+ }},
+ {
+  "type": "Feature",
+  "geometry": {
+   "type": "Point",
+   "coordinates": [
+    14.4394,
+    46.687
+   ]
+  },
+  "properties": {
+   "id": "disaster_battle_noreia_113bce",
+   "name": "Battle of Noreia",
+   "year": -113,
+   "type": "battle",
+   "still_visible_in_117": true,
+   "one_line": "The Cimbri crushed a Roman army under consul Gnaeus Papirius Carbo near Noreia in 113 BCE, the opening disaster of a migration Roman memory would spend a generation calling the \"Cimbric terror.\" Carbo tried to ambush the Cimbri under a false truce and lost badly, saved from total annihilation only by a storm that scattered both armies. It was the first time Italy itself felt within reach of a northern horde, a fear Trajan-era Romans still measured every frontier war against.",
+   "sources": [
+    "Livy, Periochae 63",
+    "Appian, Celtica frag. 13",
+    "Strabo, Geography 5.1.8"
+   ]
+  }
+ }
 ]}
