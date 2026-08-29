@@ -23563,7 +23563,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Verulamium%20Roman%20Theatre%202.jpg?width=800",
-        "image_credit": "Roman Theatre of Verulamium · Rob Hinkley, Wikimedia Commons (CC BY-SA 2.0)"
+        "image_credit": "Roman Theatre of Verulamium · Rob Hinkley, Wikimedia Commons (CC BY-SA 2.0)",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Annals",
+            "ref": "14.33",
+            "note": "Describes the sack of the municipium of Verulamium during the Boudican revolt, where only the temple held out under a two-day siege before the town was plundered and burned."
+          }
+        ]
       }
     },
     {
@@ -23589,7 +23597,15 @@
         "sources": [
           "https://www.english-heritage.org.uk/visit/places/roman-wall-of-st-albans/history/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Annals",
+            "ref": "14.33",
+            "note": "Describes the sack of the municipium of Verulamium during the Boudican revolt, where only the temple held out under a two-day siege before the town was plundered and burned."
+          }
+        ]
       }
     },
     {
@@ -23766,7 +23782,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Artist%27s%20impression%20of%20the%20Roman%20Circus%20of%20Camulodunum,%20Colchester%20(UK)%20(16704064685).jpg?width=800",
-        "image_credit": "Reconstruction of the Roman Circus of Camulodunum · Carole Raddato, Wikimedia Commons (CC BY-SA 2.0)"
+        "image_credit": "Reconstruction of the Roman Circus of Camulodunum · Carole Raddato, Wikimedia Commons (CC BY-SA 2.0)",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Annals",
+            "ref": "14.31-32",
+            "note": "Describes the unfortified veteran colony of Camulodunum, resented by the dispossessed Trinobantes, and its fall to Boudica's forces after the statue of Victory there fell face-down as an omen."
+          }
+        ]
       }
     },
     {
@@ -23939,7 +23963,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20%22Old%20Work%22%20at%20Viroconium%20Cornoviorum%20(Wroxeter%20Roman%20City)%20-%20geograph.org.uk%20-%204711210.jpg?width=800",
-        "image_credit": "The Old Work, Wroxeter · Jeff Buck, Wikimedia Commons (CC BY-SA 2.0)"
+        "image_credit": "The Old Work, Wroxeter · Jeff Buck, Wikimedia Commons (CC BY-SA 2.0)",
+        "ancient_sources": [
+          {
+            "author": "Ptolemy",
+            "work": "Geography",
+            "ref": "2.2",
+            "note": "Lists Viroconium among the towns of the Cornovii in Britain, alongside Deva, giving its geographic coordinates."
+          }
+        ]
       }
     },
     {
@@ -23969,7 +24001,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bases%20of%20the%20columns%20from%20the%20forum%20building%20at%20Viroconium%20(Wroxeter%20Roman%20City)%20-%20geograph.org.uk%20-%202487166.jpg?width=800",
         "image_credit": "Forum column bases, Viroconium (Wroxeter Roman City) · Wikimedia Commons / geograph.org.uk (CC BY-SA 2.0)",
-        "image_alt": "Surviving column bases of the forum at Viroconium, Wroxeter"
+        "image_alt": "Surviving column bases of the forum at Viroconium, Wroxeter",
+        "ancient_sources": [
+          {
+            "author": "Ptolemy",
+            "work": "Geography",
+            "ref": "2.2",
+            "note": "Lists Viroconium among the towns of the Cornovii in Britain, alongside Deva, giving its geographic coordinates."
+          }
+        ]
       }
     },
     {
@@ -24131,7 +24171,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Capella%20de%20Santa%20%C3%80gata%20i%20torre%20de%20la%20muralla%20romana,%20pl.%20Ramon%20Berenguer%20(Barcelona).jpg?width=800",
         "image_credit": "Roman wall tower, Plaça Ramon Berenguer, Barcelona (ancient Barcino) · Wikimedia Commons",
-        "image_alt": "Surviving tower of the Roman city walls of Barcino at Plaça Ramon Berenguer, Barcelona"
+        "image_alt": "Surviving tower of the Roman city walls of Barcino at Plaça Ramon Berenguer, Barcelona",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "3.21",
+            "note": "Names Barcino, surnamed Faventia, among the coastal colonies of Hispania Tarraconensis."
+          }
+        ]
       }
     },
     {
@@ -24188,7 +24236,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/MUHBA-%20Via%20Sepulcral%20Romana006%20edited.JPG?width=800",
         "image_credit": "Via Sepulcral Romana, Barcelona (ancient Barcino) · Wikimedia Commons / MUHBA",
-        "image_alt": "Roman funerary monuments along the Via Sepulcral Romana, Barcelona"
+        "image_alt": "Roman funerary monuments along the Via Sepulcral Romana, Barcelona",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "3.21",
+            "note": "Names Barcino, surnamed Faventia, among the coastal colonies of Hispania Tarraconensis."
+          }
+        ]
       }
     },
     {
@@ -24299,7 +24355,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Templo%20romano%20-%20C%C3%B3rdoba%20(Espa%C3%B1a).jpg?width=800",
         "image_credit": "Roman Temple of Calle Claudio Marcelo, Córdoba · Wikimedia Commons",
-        "image_alt": "Surviving columns of the Roman temple on Calle Claudio Marcelo, Córdoba"
+        "image_alt": "Surviving columns of the Roman temple on Calle Claudio Marcelo, Córdoba",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "3.2.1",
+            "note": "States that Corduba was founded by Marcellus, was settled from the outset with picked Romans and native Iberians, and was the first Roman colony sent to the region."
+          }
+        ]
       }
     },
     {
@@ -24410,7 +24474,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Monumentos%20funerarios%20de%20la%20Puerta%20de%20Gallegos%20-%20C%C3%B3rdoba%2002.JPG?width=800",
         "image_credit": "Roman funerary mausoleums of Puerta de Gallegos, Córdoba · Wikimedia Commons",
-        "image_alt": "Roman mausoleums at Puerta de Gallegos, Córdoba"
+        "image_alt": "Roman mausoleums at Puerta de Gallegos, Córdoba",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "3.2.1",
+            "note": "States that Corduba was founded by Marcellus, was settled from the outset with picked Romans and native Iberians, and was the first Roman colony sent to the region."
+          }
+        ]
       }
     },
     {
@@ -24542,7 +24614,15 @@
           "https://en.wikipedia.org/wiki/Con%C3%ADmbriga",
           "https://revistatemalivre.com/conimbriga07-html/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "4.113",
+            "note": "Lists Conimbriga among the towns of Lusitania in his account of the region beyond the Durius river."
+          }
+        ]
       }
     },
     {
@@ -24597,7 +24677,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Antiguo%20teatro%20romano%20de%20Zaragoza%2C%20Espa%C3%B1a%2C%20Spain.jpg?width=800",
-        "image_credit": "Roman Theatre of Caesaraugusta, Zaragoza · Wikimedia Commons"
+        "image_credit": "Roman Theatre of Caesaraugusta, Zaragoza · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "3.24",
+            "note": "Describes Caesaraugusta as a tax-exempt colony on the Ebro, formerly the town of Salduba, serving 55 peoples of the surrounding region."
+          }
+        ]
       }
     },
     {
@@ -24627,7 +24715,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Museo%20del%20Foro%20de%20Caesaraugusta.JPG?width=800",
         "image_credit": "Forum Museum of Caesaraugusta, Zaragoza · Wikimedia Commons",
-        "image_alt": "In-situ remains of the Roman forum of Caesaraugusta, Zaragoza"
+        "image_alt": "In-situ remains of the Roman forum of Caesaraugusta, Zaragoza",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "3.24",
+            "note": "Describes Caesaraugusta as a tax-exempt colony on the Ebro, formerly the town of Salduba, serving 55 peoples of the surrounding region."
+          }
+        ]
       }
     },
     {
@@ -24657,7 +24753,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Museo%20de%20las%20Termas%20de%20Zaragoza%202.jpg?width=800",
         "image_credit": "Museum of the Public Baths of Caesaraugusta, Zaragoza · Wikimedia Commons",
-        "image_alt": "Remains of the Roman public baths of Caesaraugusta, Zaragoza"
+        "image_alt": "Remains of the Roman public baths of Caesaraugusta, Zaragoza",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "3.24",
+            "note": "Describes Caesaraugusta as a tax-exempt colony on the Ebro, formerly the town of Salduba, serving 55 peoples of the surrounding region."
+          }
+        ]
       }
     },
     {
@@ -24687,7 +24791,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zaragoza%20-%20Museo%20Puerto%20Fluvial%20-%20Escaleras.jpg?width=800",
         "image_credit": "River Port Museum of Caesaraugusta, Zaragoza · Wikimedia Commons",
-        "image_alt": "Roman river port structure of Caesaraugusta, Zaragoza"
+        "image_alt": "Roman river port structure of Caesaraugusta, Zaragoza",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "3.24",
+            "note": "Describes Caesaraugusta as a tax-exempt colony on the Ebro, formerly the town of Salduba, serving 55 peoples of the surrounding region."
+          }
+        ]
       }
     },
     {
@@ -24769,7 +24881,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Acueducto%20de%20los%20Milagros%2001%2C%20M%C3%A9rida.jpg?width=800",
-        "image_credit": "Los Milagros Aqueduct, Mérida · Wikimedia Commons"
+        "image_credit": "Los Milagros Aqueduct, Mérida · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Cassius Dio",
+            "work": "Roman History",
+            "ref": "53.26",
+            "note": "Records that Augustus, after the Cantabrian War, discharged his older soldiers and let them found the city of Emerita Augusta in Lusitania."
+          }
+        ]
       }
     },
     {
@@ -24799,7 +24919,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Acueducto%20de%20San%20L%C3%A1zaro,%20M%C3%A9rida,%20Espa%C3%B1a%20-%2020041010.jpg?width=800",
         "image_credit": "San Lázaro Aqueduct, Mérida · Wikimedia Commons",
-        "image_alt": "Surviving arches of the Roman San Lázaro Aqueduct, Mérida"
+        "image_alt": "Surviving arches of the Roman San Lázaro Aqueduct, Mérida",
+        "ancient_sources": [
+          {
+            "author": "Cassius Dio",
+            "work": "Roman History",
+            "ref": "53.26",
+            "note": "Records that Augustus, after the Cantabrian War, discharged his older soldiers and let them found the city of Emerita Augusta in Lusitania."
+          }
+        ]
       }
     },
     {
@@ -24829,7 +24957,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Puente%20Romano%20sobre%20el%20R%C3%ADo%20Guadiana,%20M%C3%A9rida.JPG?width=800",
         "image_credit": "Roman Bridge (Puente Romano) over the Guadiana, Mérida · Wikimedia Commons",
-        "image_alt": "The Roman bridge over the Guadiana river at Mérida"
+        "image_alt": "The Roman bridge over the Guadiana river at Mérida",
+        "ancient_sources": [
+          {
+            "author": "Cassius Dio",
+            "work": "Roman History",
+            "ref": "53.26",
+            "note": "Records that Augustus, after the Cantabrian War, discharged his older soldiers and let them found the city of Emerita Augusta in Lusitania."
+          }
+        ]
       }
     },
     {
@@ -24859,7 +24995,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Richard%20Wilson%2C%20Il%20Ponte%20di%20Tiberio%2C%201750%20%28Rimini%2C%20Museo%20della%20Citt%C3%A0%29.JPG?width=800",
         "image_credit": "Richard Wilson, \"Il Ponte di Tiberio\", 1750 · Wikimedia Commons",
-        "image_alt": "18th-century oil painting by Richard Wilson depicting the Ponte di Tiberio at Rimini"
+        "image_alt": "18th-century oil painting by Richard Wilson depicting the Ponte di Tiberio at Rimini",
+        "ancient_sources": [
+          {
+            "author": "CIL",
+            "work": "XI",
+            "ref": "367",
+            "note": "The dedicatory inscription carved on the bridge's parapets, commemorating its construction by Augustus and completion by Tiberius."
+          }
+        ]
       }
     },
     {
@@ -24953,7 +25097,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ponte%20Romana%20de%20Trajano%20-%20Chaves%20-%20Portugal%20%2810994799385%29.jpg?width=800",
-        "image_credit": "Roman Bridge of Chaves · Wikimedia Commons"
+        "image_credit": "Roman Bridge of Chaves · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "CIL",
+            "work": "II",
+            "ref": "2477",
+            "note": "The Padrao dos Povos, a dedicatory inscription set up at the bridge naming ten local Gallaecian civitates that contributed to its construction, dated to Vespasian's reign."
+          }
+        ]
       }
     },
     {
@@ -25009,7 +25161,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roemisches-Theater-Mainz.jpg?width=800",
-        "image_credit": "Roman Theatre of Mogontiacum, Mainz · Wikimedia Commons"
+        "image_credit": "Roman Theatre of Mogontiacum, Mainz · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Histories",
+            "ref": "4.24",
+            "note": "Describes soldiers of the First, Fourth, and Twenty-Second legions marching to relieve the besieged fortress of Mogontiacum during the Batavian revolt."
+          }
+        ]
       }
     },
     {
@@ -25039,7 +25199,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jupitersaeule1.jpg?width=800",
         "image_credit": "Great Mainz Jupiter Column · Wikimedia Commons",
-        "image_alt": "Reconstructed Great Mainz Jupiter Column on display in the Landesmuseum Mainz"
+        "image_alt": "Reconstructed Great Mainz Jupiter Column on display in the Landesmuseum Mainz",
+        "ancient_sources": [
+          {
+            "author": "CIL",
+            "work": "XIII",
+            "ref": "11806",
+            "note": "The column's dedication, set up by the canabae community of Mogontiacum to Jupiter Best and Greatest for the health of Nero."
+          }
+        ]
       }
     },
     {
@@ -25168,7 +25336,15 @@
           "https://www.dependency.uni-bonn.de/en/outreach/roman-bonn-site-descriptions",
           "https://www.academia.edu/11730685/In_front_of_the_gates_of_a_roman_legion_camp_New_Roman_findings_from_the_northern_part_of_Bonn"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Histories",
+            "ref": "4.20",
+            "note": "Names Bonna as the winter camp of the First legion, where Batavian rebels confronted the Roman garrison during the revolt of Civilis."
+          }
+        ]
       }
     },
     {
@@ -25276,7 +25452,15 @@
           "https://www.livius.org/museum/bonn-rheinisches-landesmuseum/",
           "https://www.dependency.uni-bonn.de/en/outreach/roman-bonn-site-descriptions"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Histories",
+            "ref": "4.20",
+            "note": "Names Bonna as the winter camp of the First legion, where Batavian rebels confronted the Roman garrison during the revolt of Civilis."
+          }
+        ]
       }
     },
     {
@@ -25473,7 +25657,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Teatri_i_Butrintit_ne_Shqiperi.jpg?width=800",
-        "image_credit": "Theatre of Butrint, Albania · Wikimedia Commons"
+        "image_credit": "Theatre of Butrint, Albania · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Virgil",
+            "work": "Aeneid",
+            "ref": "3.293-297",
+            "note": "Describes Aeneas landing at Buthrotum and finding it ruled by the Trojan Helenus, who had taken the Greek city and kingdom once held by Pyrrhus."
+          }
+        ]
       }
     },
     {
@@ -25577,7 +25769,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Albania_121_Butrint_Lion_Gate.jpg?width=800",
-        "image_credit": "Lion Gate in the city walls of Butrint, Albania · Wikimedia Commons"
+        "image_credit": "Lion Gate in the city walls of Butrint, Albania · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Virgil",
+            "work": "Aeneid",
+            "ref": "3.293-297",
+            "note": "Describes Aeneas landing at Buthrotum and finding it ruled by the Trojan Helenus, who had taken the Greek city and kingdom once held by Pyrrhus."
+          }
+        ]
       }
     },
     {
@@ -25603,7 +25803,15 @@
         "sources": [
           "https://site.unibo.it/butrint/en/atlas-and-history/roman-baths"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Virgil",
+            "work": "Aeneid",
+            "ref": "3.293-297",
+            "note": "Describes Aeneas landing at Buthrotum and finding it ruled by the Trojan Helenus, who had taken the Greek city and kingdom once held by Pyrrhus."
+          }
+        ]
       }
     },
     {
@@ -25798,7 +26006,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mausoleum_and_cemetery_in_Viminacium,_2018,_17.jpg?width=800",
-        "image_credit": "Necropolis at Viminacium, Serbia · Wikimedia Commons"
+        "image_credit": "Necropolis at Viminacium, Serbia · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Ptolemy",
+            "work": "Geography",
+            "ref": "3.9.3",
+            "note": "Lists Viminacium among the towns of Moesia Superior."
+          }
+        ]
       }
     },
     {
@@ -26170,7 +26386,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porta_Caesarea_(Salona).jpg?width=800",
-        "image_credit": "Porta Caesarea, Salona, Croatia · Wikimedia Commons"
+        "image_credit": "Porta Caesarea, Salona, Croatia · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Caesar",
+            "work": "Civil War",
+            "ref": "3.9",
+            "note": "Describes the siege of Salonae by Marcus Octavius, in which the citizens built wooden towers, armed their slaves, and used women's hair for catapult ropes to hold out until relieved."
+          }
+        ]
       }
     },
     {
@@ -26231,7 +26455,15 @@
           "https://www.croatiatraveller.com/central%20dalmatia/Solin.htm",
           "https://www.romeartlover.it/Salona.html"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Caesar",
+            "work": "Civil War",
+            "ref": "3.9",
+            "note": "Describes the siege of Salonae by Marcus Octavius, in which the citizens built wooden towers, armed their slaves, and used women's hair for catapult ropes to hold out until relieved."
+          }
+        ]
       }
     },
     {
@@ -26260,7 +26492,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aqueduct_of_Salona.JPG?width=800",
-        "image_credit": "Aqueduct of Salona, Croatia · Wikimedia Commons"
+        "image_credit": "Aqueduct of Salona, Croatia · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Caesar",
+            "work": "Civil War",
+            "ref": "3.9",
+            "note": "Describes the siege of Salonae by Marcus Octavius, in which the citizens built wooden towers, armed their slaves, and used women's hair for catapult ropes to hold out until relieved."
+          }
+        ]
       }
     },
     {
@@ -26289,7 +26529,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Salona_amphitheater.jpg?width=800",
-        "image_credit": "Amphitheatre of Salona, Croatia · Wikimedia Commons"
+        "image_credit": "Amphitheatre of Salona, Croatia · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Caesar",
+            "work": "Civil War",
+            "ref": "3.9",
+            "note": "Describes the siege of Salonae by Marcus Octavius, in which the citizens built wooden towers, armed their slaves, and used women's hair for catapult ropes to hold out until relieved."
+          }
+        ]
       }
     },
     {
@@ -26837,7 +27085,15 @@
         "sources": [
           "https://actianicopolisarchaeopark.gr/en/nikopolis/the-baths/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "7.7.6",
+            "note": "Describes Augustus resettling the depopulated Epirote cities into the single city of Nicopolis, named for his victory at Actium."
+          }
+        ]
       }
     },
     {
@@ -27043,7 +27299,15 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Sanctuary_of_Artemis_Orthia"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Pausanias",
+            "work": "Description of Greece",
+            "ref": "3.16.7-11",
+            "note": "Describes the sanctuary of Artemis Orthia at Sparta and the ritual flogging of youths at the altar there, said to have replaced an earlier custom of human sacrifice after quarrels among the founding villages."
+          }
+        ]
       }
     },
     {
@@ -28700,7 +28964,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kale_Kap%C4%B1s%C4%B1,_Antalya.JPG?width=800",
-        "image_credit": "Kale Kapısı, a surviving gate of Antalya's old city walls · Wikimedia Commons"
+        "image_credit": "Kale Kapısı, a surviving gate of Antalya's old city walls · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "14.4.1",
+            "note": "States that Attaleia was founded by Attalus II Philadelphus, king of Pergamon."
+          }
+        ]
       }
     },
     {
@@ -29767,7 +30039,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Capitole_flanc_bulla_regia.jpg?width=800",
         "image_credit": "Photo via Wikimedia Commons",
-        "image_alt": "Side view of the Capitol podium at Bulla Regia"
+        "image_alt": "Side view of the Capitol podium at Bulla Regia",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "5.29",
+            "note": "Names Bulla Regia among the free towns of the African interior."
+          }
+        ]
       }
     },
     {
@@ -31106,7 +31386,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theater_of_Dougga_By_night.jpg?width=800",
-        "image_credit": "Wikimedia Commons"
+        "image_credit": "Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "CIL",
+            "work": "VIII",
+            "ref": "26528",
+            "note": "The theatre's dedicatory inscription recording that Publius Marcius Quadratus built it for his hometown at his own expense in AD 168-169, celebrated with games and public distributions."
+          }
+        ]
       }
     },
     {
@@ -31219,7 +31507,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Juno_Caelestis_(222-235_AD),_Dougga_(8158878783).jpg?width=800",
-        "image_credit": "Wikimedia Commons"
+        "image_credit": "Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "CIL",
+            "work": "VIII",
+            "ref": "1474",
+            "note": "The temple's dedicatory inscription recording its construction and dedication to Caelestis Augusta by Quintus Gabinius Rufus Felix Beatianus."
+          }
+        ]
       }
     },
     {
@@ -32246,7 +32542,15 @@
           "https://rom-in-deutschland.de/Seiten/limes-wachtposten-wp-1-10-bei-rheinbrohl.html",
           "https://www.kuladig.de/Objektansicht/KLD-290341"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Historia Augusta",
+            "work": "Life of Hadrian",
+            "ref": "12.6",
+            "note": "Describes Hadrian separating Roman territory from barbarian lands in regions without a river boundary by driving great timber stakes into the ground and binding them into a continuous palisade, the building program to which this stretch of the Germanic limes belonged."
+          }
+        ]
       }
     },
     {
@@ -32274,7 +32578,15 @@
           "https://hk-bauplan.de/documents/Limesturm-Tafel1.pdf",
           "https://erkunde-deutschland.de/ausflugsziele/hessen/odenwald/limes-wachturm-im-oberen-haspel-roemisches-erbe-mitten-im-odenwald/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Historia Augusta",
+            "work": "Life of Hadrian",
+            "ref": "12.6",
+            "note": "Describes Hadrian separating Roman territory from barbarian lands in regions without a river boundary by driving great timber stakes into the ground and binding them into a continuous palisade, the building program to which this stretch of the Germanic limes belonged."
+          }
+        ]
       }
     },
     {
@@ -32545,7 +32857,15 @@
           "https://tourismus.wetterau.de/kultur/archaeologie/limes-projekte/limes-wachtturm-in-limeshain",
           "https://vici.org/vici/16551/?lang=en"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Historia Augusta",
+            "work": "Life of Hadrian",
+            "ref": "12.6",
+            "note": "Describes Hadrian separating Roman territory from barbarian lands in regions without a river boundary by driving great timber stakes into the ground and binding them into a continuous palisade, the building program to which this stretch of the Germanic limes belonged."
+          }
+        ]
       }
     },
     {
@@ -32655,7 +32975,15 @@
           "https://dergipark.org.tr/en/pub/philia/article/441132",
           "https://grokipedia.com/page/didymoi"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "I.Did.",
+            "work": "Didymoi inscriptions",
+            "ref": "1",
+            "note": "The fort's foundation dedication, recording the construction of the hydreuma, praesidium, and cistern under the prefect Iulius Ursus in the ninth year of Vespasian (AD 76/77)."
+          }
+        ]
       }
     },
     {
