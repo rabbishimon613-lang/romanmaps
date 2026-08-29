@@ -1478,6 +1478,60 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.71583,
+          43.16083
+        ]
+      },
+      "properties": {
+        "id": "euerg_firmum_picenum",
+        "name": "Fermo",
+        "category": "alimenta_town",
+        "one_line": "Firmum Picenum's alimentary children set up a public dedication to the emperor after their food subsidy continued into a new reign. Free-born boys and girls of the town, called pueri et puellae alimentarii, inscribed their thanks on stone around 162 CE. The gift was funded by interest on state loans to local landowners, part of Trajan's Italy-wide child welfare program. Their monument survived to join a small set of similar dedications from across peninsular Italy.",
+        "province": "Italia",
+        "modern_location": "Fermo, Marche, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "CIL IX, 5700",
+          "R. Duncan-Jones, 'The Purpose and Organisation of the Alimenta', Papers of the British School at Rome 32 (1964), 123-146",
+          "https://en.wikipedia.org/wiki/Alimenta"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fermo%20-%20Piazza%20del%20Popolo.jpg?width=800",
+        "image_credit": "Piazza del Popolo, historic center of Fermo (ancient Firmum Picenum) · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.29167,
+          41.75583
+        ]
+      },
+      "properties": {
+        "id": "euerg_ostia",
+        "name": "Ostia",
+        "category": "alimenta_town",
+        "one_line": "Ostia ran its own local alimenta fund under a dedicated magistrate. The port town's cursus honorum lists a citizen, Marcus Antonius Severus, who served as quaestor alimentorum, the officer who controlled the special fund supporting poor children, alongside his duties as duovir and quaestor aerarii. The office shows Trajan's welfare scheme was administered as ordinary town business, run by local elected officials rather than solely by imperial appointees.",
+        "province": "Italia",
+        "modern_location": "Ostia Antica, Rome, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "CIL XIV (Ostia inscriptions)",
+          "R. Meiggs, Roman Ostia, 2nd ed. (Oxford, 1973)",
+          "https://en.wikipedia.org/wiki/Alimenta"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Epigraph%20at%20Ostia%20Antica.jpg?width=800",
+        "image_credit": "A surviving Latin epigraph among the ruins of Ostia Antica · Wikimedia Commons"
+      }
     }
   ]
 }
