@@ -941,6 +941,40 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       inspection commands aren't reliable either, so don't trust them to decide whether a fetch is
       even needed.
 
+## New ideas spotted this shift (2026-08-29, Shift 72 — ancient-sources + image top-up + axis 8c)
+
+- [ ] **Real bug fixed in `scripts/apply-image-topup.mjs`**: it assumed `confidence` was always
+      the last property in a record before the closing brace, so splicing image fields onto a
+      record that already has `ancient_sources` after `confidence` (routine now, two shifts of
+      citation work later) produced invalid JSON — no comma between the new `image_alt` and the
+      existing `ancient_sources` key. Fixed to check the next non-whitespace character after the
+      splice point and add a trailing comma only when another property actually follows. Any
+      script written with this "anchor field is always last" assumption should be re-checked the
+      same way before its next use — `apply-ancient-sources-topup.mjs`'s own tail-anchor insertion
+      path has the same shape of assumption, untested against this specific collision.
+- [ ] **Axis 8c (beneficiarii/courier stations) — real dating trap found for future work.** The
+      brief's own suggested Rhine-limes seed list (Osterburken, Obernburg, Zugmantel, Bad
+      Cannstatt) systematically postdates 117 CE — every dated altar at those sites clusters
+      143–224 CE, decades after this map's snapshot, because that limes sector wasn't pushed
+      forward until Antoninus Pius. A future pass on this axis should work the Dacia/Pannonia/
+      Noricum/Dalmatia corridor (where this shift found real Trajanic-era evidence) rather than
+      the Rhine. Landed at 16 of the 20-25 floor; Drobeta/Trajan's Bridge fort and Crăciunel
+      (Dacia) are real, half-researched leads for closing the gap.
+- [ ] **`[09-P0-1]` ancient-sources confidence:high coverage jumped 72.7% → 88.7%** this shift (75
+      of 113 candidates closed across two parallel research agents). 38 remain genuinely
+      uncited — mostly pottery kilns and villas known only archaeologically, a real ceiling rather
+      than a research gap. A handful of specific CIL/inscription numbers are worth one more
+      targeted search: Henchir Mettich's estate inscription, the Dios fort dedication, and
+      Aphrodisias's tetrapylon all have a plausible citation that just wasn't pinned down before
+      the research budget ran out.
+- [ ] **Image top-up has a much bigger open pool than any single shift's slice suggests.** This
+      shift's dedicated 66-record confidence:high pass closed only 15 before hitting its
+      WebSearch budget — 51 remain in that slice alone, several flagged by the research agent as
+      likely fast wins (limes watchtowers, Bosra, Tyre's harbors, Beirut's forum, Nicopolis all
+      looked well-photographed on Commons but weren't reached). The general non-high-confidence
+      backlog is larger still. Splitting this into more, smaller-budget parallel agents rather
+      than one large pass would probably close more of it per shift.
+
 ## Shipped (moved from above; newest on top)
 
 - 2026-08-28 — Shift 71: `[09-P0-1]` ancient-sources — 67 new citations across two research

@@ -7,6 +7,124 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 72 — 2026-08-29 (this shift's own prompt claimed "Shift 1 of four")
+
+Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
+count. `git fetch origin main` confirmed a clean, non-diverged start at Shift 71's own tip
+(`af9623f`); no detached-HEAD or stale-ref issue this time (`git status` showed a detached HEAD
+at the correct commit, `git checkout -B main origin/main` fixed it in one step).
+
+### Board check
+
+Every P0 unclaimed and unblocked is still one prior shifts have correctly declined as too large
+for one unattended session (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]`
+card-rebuild, `[13-P0-2]` image-audit, `[02-P0-4]` self-host-glyphs' still-open half — unchanged
+from Shift 71's read). `[02-P0-1]` terrain (claimed by cloud shift 68, 2026-08-28 00:20) crossed
+the 24-hour staleness line about nine minutes before this shift reached that check (session start
+~00:29 UTC) — technically clearable, but left alone anyway: it needs a live dev server plus a
+375px dark-mode screenshot gate per invariant 0, real UI-verification overhead this shift didn't
+budget for, and it's the same ticket four-plus consecutive shifts have now independently declined
+for the same reason. Flagging for whoever picks it up next that the claim is now genuinely stale,
+not just close. `FEATURE_BACKLOG.md`'s P0-P3 checklist is still down to the same one open item
+(terrain, same ticket) — no Track B slot this shift either, a data-only shift per the brief's own
+allowance, same as Shift 71.
+
+Picked Shift 71's own explicit "next shift" handoff rather than pulling a fresh axis: continue
+`[09-P0-1]` ancient-sources against the regrown candidate pool, close some of the standing
+image-coverage gap, and open axis 8c (cursus publicus — beneficiarii/courier stations), the one
+sub-part of axis 8 with zero existing records after `mints.geojson` (40) and `conventus.geojson`
+(24) were already well covered by prior shifts.
+
+### Track A — four parallel background research agents
+
+Dispatched four independent research agents at session start rather than working sequentially:
+two on `[09-P0-1]` ancient-sources (split the 113-record confidence:high/no-source pool roughly
+in half), one on image top-up (the 66-record confidence:high/no-image pool), one fresh axis 8c
+research pass. Gave each a pre-computed candidate list (generated with a one-off `node -e` query
+against the live `pois.geojson`, not left for the agent to rediscover) and the same standing
+network-constraint briefing prior shifts' notes established: `WebFetch`/`curl` to Wikipedia,
+Commons, and EDCS return `EGRESS_BLOCKED`/connection errors in this sandbox, but `WebSearch`
+itself returns real, usable snippets and URLs — confirmed true again this session, no change from
+Shift 71's finding.
+
+**Ancient-sources, batch A + B: 75 of 113 candidates closed** (34 + 41). Direct hits naming the
+actual structure: Munigua's civic charter (CIL II² 5, 1052 — Titus's rescript), Volubilis's Edict
+of Claudius stela (IAM 2.448), the Rimini and Chaves bridges' own dedication inscriptions (CIL XI
+367; CIL II 2477), the arch of Germanicus at Saintes (CIL XIII 1036), Verulamium's forum-basilica
+dedication (RIB 3123), the Mainz Jupiter Column (CIL XIII 11806), and Dougga's theatre and Temple
+of Juno Caelestis dedications (CIL VIII 26528, 1474). The rest follow this project's established
+city/event-level citation pattern, honestly worded. 38 of 113 skipped for real lack of
+attestation — see the two commits for the full per-id list (pottery kilns and villas known only
+archaeologically, British/Gaulish sites with no surviving literary mention, a few CIL-catalog
+numbers that couldn't be pinned down before the 200-call WebSearch budget ran out on each agent).
+`pois.geojson` confidence:high ancient-sources coverage: 72.7% → 88.7%.
+
+**Image top-up: 15 of 66 closed.** Real budget constraint, not a research shortfall — the agent
+hit its 200-call WebSearch cap partway through and flagged 51 ids as either genuine dead ends
+(Leptis Magna's Old Forum monuments keep surfacing only the wrong-period Severan arch on Commons,
+correctly avoided) or simply not yet attempted (limes watchtowers, Bosra, Tyre's harbors, Beirut's
+forum, Nicopolis — the agent's own read is these are reasonably well-photographed on Commons and
+likely fast wins for a fresh search budget). **Found and fixed a real bug in
+`scripts/apply-image-topup.mjs`** while applying this batch: it assumed `confidence` was always
+the last property before a record's closing brace, so splicing image fields onto a record that
+already had `ancient_sources` after `confidence` (routine now, after two shifts of citation work)
+produced invalid JSON — a missing comma between the new `image_alt` and the existing
+`ancient_sources` key. Caught immediately by the script's own post-splice `JSON.parse` guard
+(`poi_paestum_forum` was the record that tripped it), fixed to check the next non-whitespace
+character after the splice point and add a trailing comma only when another property actually
+follows, then regression-tested on a scratch copy before touching the live file. `pois.geojson`
+image coverage: 60.7% → 61.2%.
+
+**Axis 8c — 16 new beneficiarii/courier stations, first records for this sub-axis.** Two new
+categories (`beneficiarii_station`, `courier_post`), folded into the existing "Forts &
+fortifications" visual family in `app/poiCategories.ts` rather than adding a new category-chip
+row entry — same reasoning prior shifts used for water infrastructure. Spans Pannonia Inferior
+(Sirmium, Acimincum, Campona), Noricum (Celeia, Virunum), nine sites across freshly-conquered
+Dacia (Ampelum's gold district, Porolissum's mountain pass, Micia, Napoca, Buciumi, Teregova,
+Sarmizegetusa, Samum, Praetorium), Dalmatia (Burnum), and one courier post (Castra Peregrina on
+Rome's Caelian Hill, Trajan's permanent base for speculatores/frumentarii). **Real structural
+finding, worth flagging loudly**: the brief's own suggested seed list for this axis — Osterburken,
+Obernburg, Zugmantel, Bad Cannstatt on the Rhine limes — turns out to systematically postdate
+117 CE. Every dated beneficiarii altar found at those sites clusters 143–224 CE; that sector's
+network wasn't built out until Antoninus Pius pushed the frontier forward decades later. A future
+shift extending this axis should look at Dacia/Pannonia/Noricum/Dalmatia (where the early
+2nd-century evidence actually sits), not the Rhine. Landed at 16 of the 20-25 per-shift floor —
+real, sourced leads left open (Drobeta/Trajan's Bridge fort, Crăciunel in Dacia) rather than
+padded with unverified coordinates. Made two small editorial fixes before merging: `name_english`
+"Budapest" → "Nagytetany" for the Campona station (the find site is a southern suburb, not central
+Budapest — using the capital's name would mislead a map user into expecting a city-center site)
+and "Caelian Hill" → "Castra Peregrina" for the courier post (the hill name is a district, not the
+specific site — matches this project's own precedent of using a landmark's actual name over its
+broader location, e.g. `poi_forum_romanum`'s "Roman Forum").
+
+`pois.geojson`: 1051 → 1067 features. Five commits total (image top-up + script fix,
+ancient-sources batch A, ancient-sources batch B, axis 8c data + category wiring), each verified
+on a scratch copy before touching the live file and validated clean before pushing.
+
+### State, verification, next
+
+`npm install` needed at session start (`node_modules` absent). `npm run validate`: 0 errors, 17
+warnings throughout (same standing set, no new warnings from any of the four batches). `npm run
+build`: clean, 1167 routes generate (up from 1151 — the 16 new place pages). `npm run metrics --
+--write`: 1051 → 1067 POIs, description depth held at 97.6%, image coverage 60.7% → 61.2%,
+ancient-source coverage 36.9% → 43.4% overall / 72.7% → 88.7% on the `[09-P0-1]` target set. Five
+commits, each pushed after a clean `git fetch origin main` (no divergence at any point).
+
+**Next shift**: `[09-P0-1]` still has real headroom — 38 of 113 records this shift's two agents
+couldn't close, concentrated in pottery kilns/villas with no literary attestation (likely a
+genuine ceiling, not a research gap) plus a handful of specific CIL numbers worth one more
+targeted search (Henchir Mettich's estate inscription, the Dios fort dedication, Aphrodisias's
+tetrapylon). Image top-up has a much bigger remaining pool than this shift's 66-record slice
+suggests — 51 of that pool alone, plus the general non-high-confidence backlog. Axis 8c has real
+room to grow past 16: Drobeta and Crăciunel are half-researched leads, and the Dacia/Pannonia/
+Noricum/Dalmatia corridor this shift worked is nowhere near exhausted — a fresh search budget
+aimed at the same region rather than the Rhine limes (confirmed too late for this axis) should
+close the gap to the 20-25 floor easily. `[02-P0-1]` terrain's claim is now genuinely stale (>24h)
+if a future shift has the live-dev-server + screenshot budget this one didn't. Board and backlog
+otherwise unchanged from Shift 71's assessment.
+
+---
+
 ## Shift 71 — 2026-08-28 (this shift's own prompt claimed "Shift 4 of four")
 
 Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
