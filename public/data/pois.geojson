@@ -33551,6 +33551,431 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.6122,
+          44.9765
+        ]
+      },
+      "properties": {
+        "id": "poi_beneficiarii_sirmium",
+        "category": "beneficiarii_station",
+        "name_latin": "Statio Beneficiariorum Sirmium",
+        "name_english": "Sremska Mitrovica",
+        "province": "Pannonia Inferior",
+        "modern_location": "Sremska Mitrovica, Serbia",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A beneficiarii consularis post here policed road and tax traffic along the lower Sava from Trajan's reign onward. Excavators uncovered 84 votive altars in a single sanctuary in 1988, the largest cache of beneficiarius inscriptions found anywhere in the empire. Soldiers detached from the governor's staff at Sirmium dedicated most of the stones to Jupiter for a safe tour of duty. The station anchored security on Pannonia Inferior's busiest river corridor.",
+        "sources": [
+          "https://www.uni-koeln.de/phil-fak/ifa/zpe/downloads/1997/116pdf/116273.pdf",
+          "https://www.roamintheempire.com/index.php/2026/01/21/sirmium-part-ii/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.2683,
+          46.2311
+        ]
+      },
+      "properties": {
+        "id": "poi_beneficiarii_celeia",
+        "category": "beneficiarii_station",
+        "name_latin": "Statio Beneficiariorum Celeia",
+        "name_english": "Celje",
+        "province": "Noricum",
+        "modern_location": "Celje, Slovenia",
+        "built": 110,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A beneficiarii procuratoris post opened at Celeia under Trajan, guarding the road linking Italy to Noricum through the Atrans pass. Its earliest dated altar names a beneficiarius serving around 110 CE under the procurator Prifernius Memmius Apollinaris. The station ran without a break for half a century, with thirteen of Noricum's governors represented among its dedications. Soldiers here answered to the province's procurator rather than a legionary legate.",
+        "sources": [
+          "https://www.uni-koeln.de/phil-fak/ifa/zpe/downloads/1996/113pdf/113286.pdf"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.3444,
+          46.6817
+        ]
+      },
+      "properties": {
+        "id": "poi_beneficiarii_virunum",
+        "category": "beneficiarii_station",
+        "name_latin": "Statio Beneficiariorum Virunum",
+        "name_english": "Maria Saal",
+        "province": "Noricum",
+        "modern_location": "Maria Saal, Austria",
+        "built": 120,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A beneficiarius consularis dedicated an altar at Virunum, the seat of Noricum's governor, around 120 CE. It stands as the only known beneficiarius inscription from a provincial capital among the early stationes network catalogued down to 150 CE. Virunum served as Noricum's administrative hub on the Zollfeld plain from the province's founding until the Marcomannic Wars. Nearby iron workings on imperial land gave the post's soldiers a tax role beyond simple road patrol.",
+        "sources": [
+          "https://www.uni-koeln.de/phil-fak/ifa/zpe/downloads/1997/116pdf/116273.pdf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.2333,
+          45.1333
+        ]
+      },
+      "properties": {
+        "id": "poi_beneficiarii_acimincum",
+        "category": "beneficiarii_station",
+        "name_latin": "Statio Beneficiariorum Acimincum",
+        "name_english": "Stari Slankamen",
+        "province": "Pannonia Inferior",
+        "modern_location": "Stari Slankamen, Serbia",
+        "built": 110,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A beneficiarius consularis manned a statio beside the auxiliary fort at Acimincum, watching the Danube road upriver from Sirmium. Soldiers posted here answered to the governor of Pannonia Inferior rather than to the fort's own auxiliary commander. The post checked travelers and freight moving along the frontier highway between the legionary bases of the Danube limes. It formed one link in a chain of beneficiarius posts that the governor's staff strung along the river.",
+        "sources": [
+          "https://www.uni-koeln.de/phil-fak/ifa/zpe/downloads/1997/116pdf/116273.pdf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9667,
+          47.4
+        ]
+      },
+      "properties": {
+        "id": "poi_beneficiarii_campona",
+        "category": "beneficiarii_station",
+        "name_latin": "Statio Beneficiariorum Campona",
+        "name_english": "Nagytetany",
+        "province": "Pannonia Inferior",
+        "modern_location": "Nagytetany, Budapest, Hungary",
+        "built": 110,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A beneficiarius consularis held a statio at Campona, an auxiliary fort on the Danube road a short ride south of Aquincum. Trajan made Aquincum the seat of Pannonia Inferior's governor in 106 CE, and Campona's post gave that governor eyes on frontier traffic just downriver. Soldiers detached here from the governor's staff worked alongside the fort's own auxiliary cohort but answered up a separate chain of command. The post screened the approach to the new provincial capital.",
+        "sources": [
+          "https://www.uni-koeln.de/phil-fak/ifa/zpe/downloads/1997/116pdf/116273.pdf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.35,
+          46.1167
+        ]
+      },
+      "properties": {
+        "id": "poi_beneficiarii_ampelum",
+        "category": "beneficiarii_station",
+        "name_latin": "Statio Beneficiariorum Ampelum",
+        "name_english": "Zlatna",
+        "province": "Dacia",
+        "modern_location": "Zlatna, Romania",
+        "built": 110,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A beneficiarius post at Ampelum, administrative seat of Rome's newly opened gold district, tracked wagons and workers through the Apuseni mountains after Trajan's conquest of Dacia in 106 CE. At least three beneficiarii of Legio XIII Gemina are attested serving the mining community at nearby Alburnus Maior. Immigrants from Dalmatia, Pannonia, and Noricum worked the gold seams under this military oversight. The post answered to the governor at Apulum, not a local mine official.",
+        "sources": [
+          "https://www.academia.edu/57395418/Mining_Culture_in_Roman_Dacia_Empire_Community_and_Identity_at_the_Gold_Mines_of_Alburnus_Maior_ca_107_270_C_E",
+          "https://hiphi.ubbcluj.ro/written_heritage/Supplement%203%202012%20G%20Cupcea.pdf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.1667,
+          47.1917
+        ]
+      },
+      "properties": {
+        "id": "poi_beneficiarii_porolissum",
+        "category": "beneficiarii_station",
+        "name_latin": "Statio Beneficiariorum Porolissum",
+        "name_english": "Moigrad",
+        "province": "Dacia",
+        "modern_location": "Moigrad, Romania",
+        "built": 106,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Trajan built a fort at Porolissum in 106 CE to guard the main pass through the Carpathians into newly conquered Dacia. Around 5,000 auxiliary troops transferred from Spain, Gaul, and Britain garrisoned the empire's new northern edge here. Beneficiarii detached from the governor's staff worked the road station at this crossing, the busiest gateway on the Dacian frontier. The fort later grew into the capital of the split-off province of Dacia Porolissensis.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Porolissum",
+          "https://www.academia.edu/16444687/POROLISSUM_A_Roman_Fort_and_Town_on_the_Northern_Frontier_of_the_Roman_Empire",
+          "https://hiphi.ubbcluj.ro/written_heritage/Supplement%203%202012%20G%20Cupcea.pdf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.8833,
+          45.8167
+        ]
+      },
+      "properties": {
+        "id": "poi_beneficiarii_micia",
+        "category": "beneficiarii_station",
+        "name_latin": "Statio Beneficiariorum Micia",
+        "name_english": "Vetel",
+        "province": "Dacia",
+        "modern_location": "Vetel, Romania",
+        "built": 106,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "An auxiliary fort at Micia doubled as an administrative post, with a beneficiarius station and a likely customs checkpoint on the western Dacian limes. Troops arrived here as early as Trajan's Dacian Wars, guarding the road and river route toward Partiscum on the Tisza. The beneficiarius post let the governor's staff at Apulum watch river traffic and tax collection at this crossing on the Mures. Milestones found nearby later record repairs to the Apulum-Micia road into the 3rd century.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Micia",
+          "https://archaeologie.phil-fak.uni-koeln.de/en/research/research-projects/the-micia-project-excavations-and-research-at-a-fortified-settlement-on-the-western-dacian-limes"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6236,
+          46.7712
+        ]
+      },
+      "properties": {
+        "id": "poi_beneficiarii_napoca",
+        "category": "beneficiarii_station",
+        "name_latin": "Statio Beneficiariorum Napoca",
+        "name_english": "Cluj-Napoca",
+        "province": "Dacia",
+        "modern_location": "Cluj-Napoca, Romania",
+        "built": 106,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman forces built the castra at Napoca in 105-106 CE during Trajan's second Dacian campaign, and a milestone from nearby Aiton dated 108 CE records the road linking it to Potaissa. Beneficiarii consularis staffed a statio here, one of only three city-based posts recorded anywhere in Roman Dacia. The settlement rose to municipium status only later, under Hadrian in 124 CE. In 117 CE it still functioned chiefly as a fresh military and road hub in the empire's newest province.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Napoca_(castra)",
+          "https://hiphi.ubbcluj.ro/written_heritage/Supplement%203%202012%20G%20Cupcea.pdf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.1667,
+          47.1333
+        ]
+      },
+      "properties": {
+        "id": "poi_beneficiarii_buciumi",
+        "category": "beneficiarii_station",
+        "name_latin": "Statio Beneficiariorum Buciumi",
+        "name_english": "Buciumi",
+        "province": "Dacia",
+        "modern_location": "Buciumi, Salaj County, Romania",
+        "built": 106,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "An auxiliary fort went up at Buciumi under Trajan to help hold the northwestern edge of newly conquered Dacia. Two infantry cohorts, I Brittonum and V Lingonum, later garrisoned the post as part of the limes Porolissensis defensive network. Scholars count Buciumi among Roman Dacia's frontier beneficiarius stations, screening approaches from the Upper Tisza basin alongside the fort at Samum. Decades of excavation since the 1960s have made it one of the best-documented forts in the province.",
+        "sources": [
+          "https://www.barpublishing.com/the-roman-auxiliary-fort-at-buciumi-roman-dacia-romania.html",
+          "https://hiphi.ubbcluj.ro/written_heritage/Supplement%203%202012%20G%20Cupcea.pdf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.25,
+          45.3333
+        ]
+      },
+      "properties": {
+        "id": "poi_beneficiarii_teregova",
+        "category": "beneficiarii_station",
+        "name_latin": "Statio Beneficiariorum Teregova",
+        "name_english": "Teregova",
+        "province": "Dacia",
+        "modern_location": "Teregova, Romania",
+        "built": 110,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A beneficiarii consularis statio operated at Teregova, on the road through the Banat borderland between Dacia and Moesia. The post sat along a route Roman engineers opened after Trajan's conquest of Dacia in 106 CE, in the hill country approaching the Iron Gates of the Danube. Soldiers detached from the governor's staff here checked travelers and freight moving between the two frontier provinces. Votive material recovered at the site confirms the station's presence on this border road.",
+        "sources": [
+          "https://www.researchgate.net/publication/359513941_Une_statio_de_beneficiarii_consularis_a_Teregova_A_Statio_of_Beneficiarii_Consularis_in_Teregova"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9822,
+          43.9822
+        ]
+      },
+      "properties": {
+        "id": "poi_beneficiarii_burnum",
+        "category": "beneficiarii_station",
+        "name_latin": "Statio Beneficiariorum Burnum",
+        "name_english": "Kistanje",
+        "province": "Dalmatia",
+        "modern_location": "Kistanje, Croatia",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legionary troops garrisoned Burnum from the early Principate to the late 1st century CE, and soldiers from that garrison dedicated five surviving altars to Jupiter Optimus Maximus as beneficiarii. The fort sat on the road linking Aquileia to Dyrrachium, the shortest overland route from Italy to the Balkans. No structure of the beneficiarius post has ever been excavated; its existence is inferred from these votive stones. Traffic control on this corridor continued into Trajan's reign.",
+        "sources": [
+          "https://www.bib.irb.hr/973173"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.8867
+        ]
+      },
+      "properties": {
+        "id": "poi_courier_castra_peregrina",
+        "category": "courier_post",
+        "name_latin": "Castra Peregrina",
+        "name_english": "Castra Peregrina",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Trajan gave Rome's speculatores and frumentarii a permanent base on the Caelian Hill, the Castra Peregrina, gathering soldiers detached from provincial legions for courier and liaison duty. Speculatores carried official dispatches as mounted messengers, an early node in the empire's long-distance communications. Frumentarii based here moved between Rome and the provinces on courier business. The site later grew into a full headquarters under the Severan emperors.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Castra_Peregrina",
+          "https://www.tastesofhistory.co.uk/post/rome-s-secret-agents"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7864,
+          45.5006
+        ]
+      },
+      "properties": {
+        "id": "poi_beneficiarii_sarmizegetusa",
+        "category": "beneficiarii_station",
+        "name_latin": "Statio Beneficiariorum Ulpia Traiana Sarmizegetusa",
+        "name_english": "Sarmizegetusa",
+        "province": "Dacia",
+        "modern_location": "Sarmizegetusa, Hunedoara County, Romania",
+        "built": 110,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Ulpia Traiana Sarmizegetusa rose around 108-110 CE as Trajan's new capital for conquered Dacia, replacing the old Dacian royal seat deeper in the mountains. Beneficiarii consularis staffed a station here, one of only three city-based beneficiarius posts recorded anywhere in Roman Dacia. A forum, amphitheater, and road network radiated out from this new colonia within a decade of the conquest. By 117 CE the city anchored Roman civil and military administration for the entire province.",
+        "sources": [
+          "https://hiphi.ubbcluj.ro/written_heritage/Supplement%203%202012%20G%20Cupcea.pdf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.8167,
+          47.1667
+        ]
+      },
+      "properties": {
+        "id": "poi_beneficiarii_samum",
+        "category": "beneficiarii_station",
+        "name_latin": "Statio Beneficiariorum Samum",
+        "name_english": "Caseiu",
+        "province": "Dacia",
+        "modern_location": "Caseiu, Cluj County, Romania",
+        "built": 106,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "An auxiliary fort at Samum helped anchor the limes Porolissensis, the fortified line Trajan's army built to hold northwestern Dacia after the conquest of 106 CE. Scholars count it among Roman Dacia's frontier beneficiarius stations, paired with the fort at Buciumi nearby. Troops here watched the approaches from the Upper Tisza basin into Transylvania alongside a chain of smaller forts and watchtowers. The post stayed garrisoned through the following two centuries of Roman rule in the province.",
+        "sources": [
+          "https://hiphi.ubbcluj.ro/written_heritage/Supplement%203%202012%20G%20Cupcea.pdf",
+          "https://en.wikipedia.org/wiki/Samum_(castrum)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.3667,
+          44.9
+        ]
+      },
+      "properties": {
+        "id": "poi_beneficiarii_praetorium_dacia",
+        "category": "beneficiarii_station",
+        "name_latin": "Statio Beneficiariorum Praetorium",
+        "name_english": "Mehadia",
+        "province": "Dacia",
+        "modern_location": "Mehadia, Caras-Severin County, Romania",
+        "built": 106,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A road station named Praetorium anchored traffic on the route linking Tibiscum to the Danube crossing near Dierna, opened as Trajan pushed into the Banat during the Dacian Wars. Scholars count Praetorium among the small number of beneficiarius posts placed directly on Dacia's main roads rather than at a city or fort. Its name, meaning headquarters or governor's station, marks it as an official waystation. The road it guarded fed troops toward the Iron Gates of the Danube.",
+        "sources": [
+          "https://hiphi.ubbcluj.ro/written_heritage/Supplement%203%202012%20G%20Cupcea.pdf"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
