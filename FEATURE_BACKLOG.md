@@ -1008,6 +1008,41 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       for any axis a future shift finds "already at the floor" — check the brief's own bullet list
       against what's actually on the map before assuming there's nothing left.
 
+## New ideas spotted this shift (2026-08-29, Shift 74 — image top-up + alimenta + ancient-sources)
+
+- [ ] **Axis 8c's "23 of the floor, functionally done" note (directly above) undersold the real
+      gap** — checking the *whole* sub-axis rather than just the newest batch found all 21 records
+      missing `image_url`, not only the 7 flagged. 15 closed this shift; 6 (Campona, Ampelum,
+      Teregova, Samum, Praetorium Dacia, Siscia) are now confirmed dead ends (no thematically-
+      matching Commons photo exists for any of them, checked with an independent second search
+      each) rather than unresearched. Worth the general lesson: a sub-axis flagged "done for now"
+      in one dimension (record count) can still be wide open in another (images/sources) — check
+      both before trusting a prior note's "functionally done."
+- [ ] **Alimenta towns (axis 15) confirmed hard-capped at 28/50 from WebSearch alone**, same
+      finding the 2026-08-23 note above already flagged, now confirmed a second time with a much
+      more targeted approach (checking every name against Duncan-Jones's own known dedication set
+      first, rather than searching candidate town names cold). Every candidate not already in the
+      dataset or in this shift's 2 additions came back with zero citable alimenta-specific source.
+      Closing the rest of the brief's "all 50" needs paywalled access to Duncan-Jones's *The
+      Economy of the Roman Empire* Appendix III (Cambridge Core/JSTOR/academia.edu/archive.org all
+      confirmed unreachable from this sandbox) — not a research-effort problem. Worth updating
+      `SHIFT_BRIEF.md`'s axis 15 minimum itself to reflect this ceiling rather than leaving a
+      future shift to rediscover it a third time.
+- [ ] **`disasters.geojson` has no `confidence` field at all** (unlike `pois.geojson`), so
+      `scripts/apply-image-topup.mjs` can't be reused on it as-is — it anchors its splice point on
+      finding a `confidence` line. Wrote a one-off variant anchored on the `sources` array's
+      closing bracket instead (this shift's scratch dir, not committed to `scripts/` since it was
+      single-use) — a future shift doing another disasters.geojson image/data pass should either
+      reuse that pattern or, better, generalize `apply-image-topup.mjs` to accept a configurable
+      anchor field so every axis file's image top-up can share one tool.
+- [ ] **Hand-picking a small, named-monument candidate list for an agent (rather than handing it
+      "here are 41 open records, go") got 13/15 closed at ~38 WebSearch calls** — a much better
+      hit rate than a cold, unscoped pass over the same pool would likely get, because most of that
+      41-record pool is the already-confirmed shipwreck/villa/kiln dead-end slice. Worth doing this
+      same triage (skim the candidate list first, separate "probably has real sourcing" from
+      "probably doesn't" by category, only dispatch the agent on the former) before the next
+      ancient-sources or image-topup pass, rather than handing over the whole pool.
+
 ## Shipped (moved from above; newest on top)
 
 - 2026-08-28 — Shift 71: `[09-P0-1]` ancient-sources — 67 new citations across two research

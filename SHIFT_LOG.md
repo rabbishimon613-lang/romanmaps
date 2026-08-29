@@ -7,6 +7,124 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 74 — 2026-08-29 (this shift's own prompt claimed "Shift 3 of four")
+
+Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
+count. Clean, non-diverged start this time: `HEAD` was detached exactly at Shift 73's own tip
+(`3af9b7f`), confirmed against `git ls-remote origin` before touching anything. `curl` to
+`en.wikipedia.org`, `overpass-api.de`, and `commons.wikimedia.org` all still return
+`CONNECT tunnel failed` from the egress proxy — the network block every recent shift has logged
+is unchanged; `WebSearch` (and background `Agent` calls using it) remains the only research
+channel, still capped at a shared 200 calls per session per Shift 73's finding.
+
+### Board check
+
+Same read as Shifts 69-73: every unclaimed P0 (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2,
+`[03-P0-2]` card-rebuild, `[13-P0-2]` image-audit, `[02-P0-4]`'s open glyph-PBF half) is one
+prior shifts have correctly declined as too large for one unattended session, and `[02-P0-1]`
+terrain's stale `[~]`-claim (cloud shift 68, since 2026-08-28 00:20) is unchanged — its real
+blocker (network-fetched hillshade tiles) hasn't moved either. No unclaimed board `add` ticket
+exists. `FEATURE_BACKLOG.md`'s P0-P3 lists are now fully checked off except terrain shading (the
+same blocked item). Fell back to the axes, per the board's own instructions, same as every
+recent shift.
+
+### Track A — four streams, three of them dispatched as sequential-ish background research agents
+
+Took Shift 73's own correction seriously: dispatched agents with clearly bounded, non-overlapping
+scopes and pre-built candidate lists (never left an agent to rediscover a list I could generate
+myself), rather than spreading many parallel agents thin against the shared WebSearch pool. Ran
+two agents concurrently first (independent files — `euergetism.geojson` vs. `pois.geojson`/
+`disasters.geojson`, no race risk), then a third only after those two had already returned and
+reported their actual spend, to keep the shared 200-call budget legible. Total spend across all
+three: ~67 + ~56 + ~38 ≈ 161 of 200.
+
+**Axis 11 (disasters) — 1 new record, hand-researched, zero WebSearch.** Added the Battle of
+Noreia (113 BCE), the actual opening disaster of the "Cimbri + Teutones" memory the brief names
+explicitly — Arausio (105 BCE, already on the map since Shift 73) was the second, worse one.
+Cited to Livy's *Periochae* 63, Appian's *Celtica* fragment 13, and Strabo 5.1.8, all well enough
+attested from training knowledge to skip a verification search. Noreia's exact site is genuinely
+disputed among scholars; placed near the Magdalensberg oppidum, a leading candidate, and said so
+plainly in the commit rather than inventing a confidence field this file has no precedent for.
+`disasters.geojson`: 22 → 23.
+
+**Image top-up — 15 axis 8c stations + all 16 image-null disasters.** Checked axis 8c properly
+first rather than trusting Shift 73's "23 records, floor met" as license to skip it: of the
+sub-axis's 21 records, *all* were missing `image_url`, not just the newest 7. Dispatched one
+agent per file-pair (pois.geojson stations, disasters.geojson) with the full candidate lists and
+known modern-site names already supplied. 15/21 stations closed (Virunum, Acimincum, Porolissum,
+Micia, Napoca, Buciumi, Burnum, Castra Peregrina, Sarmizegetusa, Drobeta, Savaria, Salona,
+Viminacium, Narona, Apulum courier post) — 6 genuine dead ends left uncited (Campona, Ampelum,
+Teregova, Samum, Praetorium Dacia, Siscia: no thematically-matching Commons photo found for any
+of them, confirmed by a second independent search each). All 16 disasters closed, with a few
+honestly flagged as thematic fallbacks rather than event-specific depictions (site photos standing
+in for events with no period imagery, horrea photos for the two famine records) — noted plainly in
+the commit rather than presented as more precise than they are. `apply-image-topup.mjs` worked
+as-is for the pois.geojson half; wrote a small one-off splice script for the disasters.geojson half
+since that file has no `confidence` anchor field the existing tool assumes — anchored on the
+`sources` array's closing bracket instead, verified pure-addition diff before committing.
+
+**Axis 15 (alimenta towns) — 2 new towns, real ceiling confirmed, not a budget shortfall.**
+`FEATURE_BACKLOG.md`'s own 2026-08-23 note already warned this would be hard to push past ~26/50
+from WebSearch snippets alone. Confirmed that finding independently: gave the agent Duncan-Jones's
+own known dedication set (CIL IX 5700 Firmum; XI 5395/5956/5957/5989/6002; XIV 4003) plus his
+addendum towns to cross-check against, and every single one of those except Firmum Picenum turned
+out to already be in the existing 26-town dataset under a different modern name (Pitinum Mergens =
+modern Acqualagna, already logged). Closed Firmum Picenum (Fermo) at `confidence: "high"` — CIL IX
+5700, a real *pueri et puellae alimentarii* dedication — and Ostia at `confidence: "medium"` (a
+documented *quaestor alimentorum* magistracy per Meiggs's *Roman Ostia*, but without a pinned
+individual CIL XIV inscription number, said so honestly rather than overclaiming). `euergetism.
+geojson`: 58 → 60 (26 → 28 alimenta towns). Closing the rest of the brief's "all 50" floor needs
+Duncan-Jones's actual Appendix III table, which sits behind Cambridge Core/JSTOR/academia.edu/
+archive.org — all confirmed unreachable from this sandbox, not a WebSearch-budget problem.
+
+**`[09-P0-1]` ancient-sources — 13 more named-monument records closed.** Same pool Shift 73 left
+at 41 open (confidence:high, no `ancient_sources`). Rather than re-run the whole pool cold
+(prior shifts already established the shipwreck/villa/kiln/salina/garum-factory slice as a real
+dead end — no ancient text exists for any of them), hand-picked the 15 famous-monument candidates
+still in that list and told the agent explicitly to skip the rest. 13 of 15 closed — all with
+archaeological/epigraphic dating evidence rather than a 117 CE literary mention, since every one
+of these monuments (Trier's Barbarathermen/Kaiserthermen/Aula Palatina, Carthage's Antonine Baths,
+Serdica's amphitheatre/Rotunda, Aphrodisias's Tetrapylon, Miletus's Faustina Baths, Dougga's Arch
+of Alexander Severus, Thuburbo Maius's Capitolium) postdates 117 CE by decades to centuries — the
+citation each needed was whatever source justifies its `extant_117ce: false`, which is exactly
+what got found (brick-stamp studies, excavation monographs, epigraphic-database records). Autun's
+theatre and gate are the two pre-117 exceptions in the batch, now cited too. 2 of the 15 correctly
+declined: Ponte Lucano's only "ancient" inscription is a documented modern forgery, and the Arles
+obelisk's Constantine-II dating had no citable specific source within budget — both left uncited
+rather than padded. High-confidence coverage: 91.1% → 93.9% (419/460 → 432/460, per `METRICS.md`).
+
+### State, verification, next
+
+`npm install` needed at session start (`node_modules` absent, standing pattern for every fresh
+cloud container). `npm run validate`: 0 errors, 17 warnings throughout every commit — same
+standing set every recent shift has reviewed and accepted (India-region trade/diplomacy points
+genuinely outside the empire envelope, `letters.geojson`'s route LineStrings that name themselves
+via `from`/`to` rather than `name`). `npm run build`: clean before every push, pre-push hook never
+tripped. `npm run metrics -- --write`: `pois.geojson` steady at 1074 (this shift's additions all
+went to axis files, not the curated POI canon, except the 13-record ancient-sources topup and
+15-record image topup which touch existing pois.geojson records without adding new ones); image
+coverage 61.6% → 63.0%; ancient-source coverage overall 44.1% → 45.3%, high-confidence 91.1% →
+93.9%. Five commits total, each verified independently before push (Noreia; image top-up;
+alimenta towns; METRICS.md refresh; ancient-sources topup) — no batching risk taken since each
+was already its own clean logical unit. No Track B slot this shift: `FEATURE_BACKLOG.md`'s P0-P3
+lists are fully checked off except the one blocked terrain item, so there was no unblocked UI
+item to pick — same conclusion Shifts 71-73 reached, now doubly confirmed by actually re-reading
+the whole backlog list rather than assuming.
+
+**Next shift**: ~39 of the shared 200-call WebSearch budget remained unspent this shift — the
+real constraint going forward is genuine research ceilings, not the budget itself, for at least
+two of this shift's three streams (alimenta towns need paywalled Duncan-Jones access; the
+shipwreck/villa/kiln ancient-sources slice has no ancient text to find). The general image-topup
+pool (44 records per Shift 73's count, now smaller after this shift's 15+16) and the general
+ancient-sources pool (28 records left after this shift's 13, mostly the shipwreck/villa/kiln
+dead-end slice) both still have some real headroom — a future shift should hand-pick promising
+named-monument candidates the way this shift did rather than re-running the whole pool cold.
+Axis 8c's 6 remaining image-null stations (Campona, Ampelum, Teregova, Samum, Praetorium Dacia,
+Siscia) are confirmed dead ends for now, not just unresearched. Board and backlog otherwise
+unchanged from Shift 73's assessment.
+
+---
+
 ## Shift 73 — 2026-08-29 (this shift's own prompt claimed "Shift 2 of four")
 
 Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
