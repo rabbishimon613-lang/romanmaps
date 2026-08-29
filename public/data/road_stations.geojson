@@ -11799,6 +11799,149 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.7961,
+          31.7969
+        ]
+      },
+      "properties": {
+        "id": "station_esbus",
+        "category": "mansio",
+        "name": "Esbus",
+        "road": "Via Traiana Nova",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Esbus (biblical Heshbon) sat on the Via Nova Traiana at its junction with the Roman road running west to Livias, Jericho and Jerusalem. Modern Tell Hisban has been excavated since 1968 by the Heshbon Expedition, which uncovered Roman-Byzantine occupation and several milestones from the adjoining Esbus-Livias road.",
+        "sources": [
+          "Blue Guide Jordan, entry for Hesban (Heshbon)",
+          "'The Work of the Heshbon Survey Team, 1973', Ministry Magazine (1974)",
+          "https://en.wikipedia.org/wiki/Heshbon"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.7934,
+          31.7197
+        ]
+      },
+      "properties": {
+        "id": "station_medaba",
+        "category": "mansio",
+        "name": "Medaba",
+        "road": "Via Traiana Nova",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Medaba (modern Madaba) was a sizeable Roman-Byzantine town on the Via Nova Traiana between Esbus and the Wadi Mujib/Arnon crossing toward Rabbathmoba. Its 6th-century mosaic floor map in the Church of St George is the principal ancient visual record of this road's towns.",
+        "sources": [
+          "D.F. Graf, 'The Via Nova Traiana in Arabia Petraea', in The Roman and Byzantine Near East, JRA Supplementary Series 14",
+          "https://en.wikipedia.org/wiki/Madaba_Map"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.7847,
+          31.4881
+        ]
+      },
+      "properties": {
+        "id": "station_dibon",
+        "category": "mansio",
+        "name": "Dibon",
+        "road": "Via Traiana Nova",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Dibon (modern Dhiban), the old Moabite capital, lay on the Via Nova Traiana immediately north of the Wadi Mujib (ancient Arnon) gorge, where the Roman road descended in switchbacks alongside the Iron Age sites of Dhiban, Aroer and Lehun to cross toward Rabbathmoba/Areopolis.",
+        "sources": [
+          "'Making Peoples: The Nabataean Settlement of the Dhiban Plateau and Beyond' (ResearchGate)",
+          "https://en.wikipedia.org/wiki/Dhiban,_Jordan"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.65,
+          30.7153
+        ]
+      },
+      "properties": {
+        "id": "station_arindela",
+        "category": "statio",
+        "name": "Arindela",
+        "road": "Via Traiana Nova",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Arindela (modern Gharandal, Tafilah Governorate, 15 km southeast of Tafilah) had a late-Nabataean or early Roman monumental stone complex, probably a caravanserai, later overbuilt by a Byzantine church. A 2nd-century Latin funerary inscription found there names a soldier of a cohors Ulpia miliaria, evidence of a Trajanic-era garrison on this stretch of the road.",
+        "sources": [
+          "'A New Latin Funerary Inscription from Gharandal (Southern Jordan)' (academia.edu)",
+          "'The Church at Arindela (Gharandal) of Palaestina Tertia' (ResearchGate)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.47,
+          29.85
+        ]
+      },
+      "properties": {
+        "id": "station_khirbet_al_tabieh",
+        "category": "statio",
+        "name": "Khirbet al-Tabieh",
+        "road": "Via Traiana Nova",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "Field survey traced the main Trajanic roadbed running along the west side of Khirbet al-Tabieh as it descends the Ras al-Naqab escarpment toward Humayma (Hauarra); no ancient name for the site is preserved. Coordinates are an approximate placement on the escarpment descent between Zadagatta and Hauarra, pending precise survey coordinates.",
+        "sources": [
+          "F. Abudanah & S. Twaissi, 'The Via Nova Traiana Between Petra and Ayn Al-Qana In Arabia Petraea', Oxford Journal of Archaeology 35(1), 2016"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4,
+          29.92
+        ]
+      },
+      "properties": {
+        "id": "station_rujm_ayn_al_qana",
+        "category": "statio",
+        "name": "Rujm Ayn al-Qana",
+        "road": "Via Traiana Nova",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "A 6x6 m watchtower at Rujm Ayn al-Qana commands the line of the Via Nova Traiana from the lower slopes of the Ras al-Naqab escarpment down to Humayma (Hauarra) and its aqueduct, implying a small detachment guarded this segment of road. No ancient name is attested; its position here is an approximate placement along the escarpment route, pending precise survey coordinates.",
+        "sources": [
+          "F. Abudanah & S. Twaissi, 'The Via Nova Traiana Between Petra and Ayn Al-Qana In Arabia Petraea', Oxford Journal of Archaeology 35(1), 2016"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
