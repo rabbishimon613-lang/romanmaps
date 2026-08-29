@@ -34086,6 +34086,202 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.6597,
+          44.6369
+        ]
+      },
+      "properties": {
+        "id": "poi_beneficiarii_drobeta",
+        "category": "beneficiarii_station",
+        "name_latin": "Statio Beneficiariorum Drobetae",
+        "name_english": "Drobeta-Turnu Severin",
+        "province": "Dacia",
+        "modern_location": "Drobeta-Turnu Severin, Romania",
+        "built": 105,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A beneficiarii post watched over traffic on Trajan's Bridge, the 1,135-meter span that carried Roman legions across the Danube into Dacia in 105 CE. Soldiers detached from Legio V Macedonica pulled duty here, checking travelers and cargo at the empire's newest river crossing. Two of their altars survive, dedicated by men answering to the governor's staff rather than their own legion's officers. The station guarded the single busiest chokepoint on the entire Danube frontier.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Drobeta_(castra)",
+          "https://www.academia.edu/1926340/Officium_consularis_The_Evidence_of_Dacia",
+          "https://www.academia.edu/12103998/Religious_Manifestations_of_beneficiarii_consularis_of_Roman_Dacia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.6218,
+          47.2307
+        ]
+      },
+      "properties": {
+        "id": "poi_beneficiarii_savaria",
+        "category": "beneficiarii_station",
+        "name_latin": "Statio Beneficiariorum Savariae",
+        "name_english": "Szombathely",
+        "province": "Pannonia Superior",
+        "modern_location": "Szombathely, Hungary",
+        "built": 103,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Savaria doubled as home to Pannonia Superior's provincial archive and a beneficiarii consularis post under Trajan. A dated inscription places the station here alongside the tabularium provinciae, tying road security directly to the province's tax paperwork. Soldiers detached from the governor's staff processed records and travel documents in this Amber Road colony rather than at the legionary bases downriver. Few other Danubian stationes combined bureaucratic and security duties so visibly under one roof.",
+        "sources": [
+          "https://www.uni-koeln.de/phil-fak/ifa/zpe/downloads/1997/116pdf/116273.pdf",
+          "https://uni-koeln.de/phil-fak/ifa/zpe/downloads/1997/116pdf/116284.pdf",
+          "https://en.wikipedia.org/wiki/Szombathely"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.4865,
+          43.5378
+        ]
+      },
+      "properties": {
+        "id": "poi_beneficiarii_salona",
+        "category": "beneficiarii_station",
+        "name_latin": "Statio Beneficiariorum Salonae",
+        "name_english": "Solin",
+        "province": "Dalmatia",
+        "modern_location": "Solin, Croatia",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "As capital of Dalmatia, Salona hosted the province's busiest beneficiarii post, with fourteen surviving dedications naming men posted to the governor's staff here, more than any other town in the province. Detachments rotated in chiefly from Legio I Adiutrix, XIV Gemina, and XI Claudia to handle security and paperwork for the entire governorship. A soldier posted here answered to the consular governor directly, bypassing his own legion's centurions. The post anchored a network of seventeen confirmed beneficiarii stations radiating from Salona along Dalmatia's interior roads.",
+        "sources": [
+          "https://hrcak.srce.hr/file/40531",
+          "https://www.academia.edu/120283075/On_the_Salona_inscriptions_of_beneficiarii_consularis_from_legio_X_Gemina",
+          "https://www.researchgate.net/publication/295378882_Beneficiarii_consularis_in_the_territory_of_the_Delmatae"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.223,
+          44.736
+        ]
+      },
+      "properties": {
+        "id": "poi_beneficiarii_viminacium",
+        "category": "beneficiarii_station",
+        "name_latin": "Statio Beneficiariorum Viminacii",
+        "name_english": "Kostolac",
+        "province": "Moesia Superior",
+        "modern_location": "Kostolac, Serbia",
+        "built": 101,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Viminacium served as Trajan's forward headquarters through both Dacian Wars, and its officium consularis kept a beneficiarii post busy processing the tax and travel traffic of an active war zone. Legio VII Claudia's fortress stood beside the provincial governor's seat, giving beneficiarii direct access to both military and civilian administration. One surviving altar records a soldier's promotion from a legate's beneficiarius to a full consular beneficiarius, a career step made at this very post. The station sat where the Danube road met the supply routes feeding two Dacian campaigns.",
+        "sources": [
+          "https://scholar.lib.vt.edu/ejournals/ElAnt/V4N1/dise.html",
+          "https://www.livius.org/articles/place/viminacium/",
+          "https://www.researchgate.net/publication/254187342_The_Provincia_Moesia_Superior_in_Viminacium"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3764,
+          45.4881
+        ]
+      },
+      "properties": {
+        "id": "poi_beneficiarii_siscia",
+        "category": "beneficiarii_station",
+        "name_latin": "Statio Beneficiariorum Sisciae",
+        "name_english": "Sisak",
+        "province": "Pannonia Superior",
+        "modern_location": "Sisak, Croatia",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Siscia kept a beneficiarii consularis post running long after its legion marched off to the Danube frontier in the Flavian era. Soldiers such as Lucius Virilius Pupus dedicated altars here, filling the security gap left by departing troops at this Sava River crossing. The town's road-and-river junction made it a natural chokepoint for tax collection and travel control heading into the second century. Beneficiarii, river-fleet detachments, and passing units made up Siscia's visible Roman military presence for decades after the legion left.",
+        "sources": [
+          "https://www.researchgate.net/publication/320264906_Roman_Military_Inscriptions_from_Siscia_An_Overview",
+          "https://www.ffzg.unizg.hr/romicro/wp-content/uploads/2018/01/Vukov-2017-The-beneficiary-altars-on-the-Danube-limes-in-Croatia.pdf",
+          "http://iza.zrc-sazu.si/pdf/01-Sisciani-Sasel-Kos.pdf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.6667,
+          43.0667
+        ]
+      },
+      "properties": {
+        "id": "poi_beneficiarii_narona",
+        "category": "beneficiarii_station",
+        "name_latin": "Statio Beneficiariorum Naronae",
+        "name_english": "Vid",
+        "province": "Dalmatia",
+        "modern_location": "Vid, Croatia",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Narona ran one of only three judicial assize centers in Dalmatia, and a governor's beneficiarius worked out of the town to keep the southern conventus running smoothly. A surviving altar to Jupiter records a soldier named Claudius Marcus who was promoted from optio straight into a consular governor's beneficiarius post here. The town sat at the head of the navigable Neretva, funneling river and road traffic from the coast into the Balkan interior. Its posting gave a handful of soldiers oversight of one of Dalmatia's three legal and administrative hubs.",
+        "sources": [
+          "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0006%3Aentry%3Dnarona",
+          "https://www.academia.edu/120283072/Singulares_of_the_Dalmatiangovernor",
+          "https://www.researchgate.net/figure/Conventus-iuridici-in-the-province-of-Dalmatia-I-Jadric-Kucan_fig1_298289408"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.5815,
+          46.0728
+        ]
+      },
+      "properties": {
+        "id": "poi_courier_apulum",
+        "category": "courier_post",
+        "name_latin": "Schola Speculatorum Apuli",
+        "name_english": "Alba Iulia",
+        "province": "Dacia",
+        "modern_location": "Alba Iulia, Romania",
+        "built": 106,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Apulum housed Dacia's schola speculatorum, a dedicated barracks for the governor's courier-scouts built inside the fortress of Legio XIII Gemina. A building inscription lists three centurions and two cornicularii overseeing twenty serving speculatores alongside five veterans of the corps. These men carried dispatches and gathered intelligence for the governor's office rather than answering to their legion's own chain of command. The post anchored courier traffic for Dacia, the newest province Trajan had added to the empire.",
+        "sources": [
+          "https://www.academia.edu/403817/Speculatores_In_Dacia",
+          "https://www.academia.edu/1926340/Officium_consularis_The_Evidence_of_Dacia",
+          "https://www.researchgate.net/publication/341671185_The_praetorium_consularis_from_Apulum_A_symbol_of_official_power_in_the_province_of_Dacia"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
