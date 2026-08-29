@@ -975,6 +975,39 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       backlog is larger still. Splitting this into more, smaller-budget parallel agents rather
       than one large pass would probably close more of it per shift.
 
+## New ideas spotted this shift (2026-08-29, Shift 73 — ancient-sources + image top-up + axis 8c + axis 11 disasters)
+
+- [ ] **Correction to Shift 72's note directly above: `WebSearch` is capped at 200 calls per
+      *session*, shared across every background `Agent` the session spawns plus the top-level
+      session's own direct calls — not 200 per agent.** This shift dispatched three parallel
+      research agents (two on ancient-sources/image top-up, one on axis 8c) and hit the shared
+      cap partway through all three, plus lost the direct-search budget for a fourth, self-run
+      research pass. Shift 72's suggestion to split work into *more* parallel agents will not
+      close more of the backlog per shift — it spreads one fixed 200-call pool across more
+      workers, each landing fewer calls before the shared meter reads zero for everyone
+      simultaneously (confirmed: a direct `WebSearch` call from the top-level session itself was
+      refused immediately once the three agents' combined usage hit 200). What would actually
+      help: fewer, sequential WebSearch-heavy passes per shift so each one gets the full budget,
+      or non-search research modes (a model's own well-attested classical knowledge for famous,
+      unambiguous citations — Tacitus/Suetonius/Livy on canonical events — reserving WebSearch
+      for the genuinely obscure epigraphic/Commons-filename lookups that need verification).
+- [ ] **`[09-P0-1]` ancient-sources confidence:high coverage: 88.7% → 91.1%** (11 of 52 candidates
+      closed). Image top-up: 9 of 53 closed, 2 never reached before the shared budget ran out.
+      Both pools still have real remaining headroom (41 and 44 records respectively) — same
+      genuine-ceiling shape Shift 72 found (shipwrecks, rural villas, remote desert forts with no
+      ancient text or Commons photo at all) mixed with budget-limited near-misses worth a
+      dedicated fresh-budget pass.
+- [ ] **Axis 8c now at 23 of the 20-25 floor** (7 more: Drobeta, Savaria, Salona, Viminacium,
+      Siscia, Narona, plus a new Apulum courier_post) — functionally done for this pass. None of
+      these 7 new records have an `image_url` yet (no search budget left after the other two
+      agents); a future image top-up pass should include them in its candidate list.
+- [ ] **Axis 11 (disasters) had real brief-listed material still unused despite already sitting
+      above its 15-record floor** — the brief's own suggestions (famine years, fires under
+      Domitian, Cimbri/Teutones memory, Boudica's revolt beyond the Camulodunum sack already on
+      the map) aren't exhaustively covered just because a floor number is met. Worth remembering
+      for any axis a future shift finds "already at the floor" — check the brief's own bullet list
+      against what's actually on the map before assuming there's nothing left.
+
 ## Shipped (moved from above; newest on top)
 
 - 2026-08-28 — Shift 71: `[09-P0-1]` ancient-sources — 67 new citations across two research

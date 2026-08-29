@@ -32,14 +32,14 @@ references.)
 
 | Measure | Value | Notes |
 |---|---:|---|
-| POIs in `pois.geojson` | 1067 | the curated place canon |
-| Records in the 33 thematic files | 1501 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
-| **Curated places, total** | **2,568** | |
-| Description of 60+ words | 1041 · **97.6%** | measured on `notes`; 26 still thin |
-| Has an image | 653 · **61.2%** | |
-| Has an ancient source | 463 · **43.4%** | |
-| — of `confidence: high` POIs | 408 / 460 · **88.7%** | the target set for `[09-P0-1]` |
-| Categories with a "what happened here" paragraph | 53 / 60 · **88.3%** | covers 1009/1067 POIs · missing: bath, beneficiarii_station, harbor, domus, vicus, gymnasium, courier_post |
+| POIs in `pois.geojson` | 1074 | the curated place canon |
+| Records in the 33 thematic files | 1507 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
+| **Curated places, total** | **2,581** | |
+| Description of 60+ words | 1048 · **97.6%** | measured on `notes`; 26 still thin |
+| Has an image | 662 · **61.6%** | |
+| Has an ancient source | 474 · **44.1%** | |
+| — of `confidence: high` POIs | 419 / 460 · **91.1%** | the target set for `[09-P0-1]` |
+| Categories with a "what happened here" paragraph | 53 / 60 · **88.3%** | covers 1009/1074 POIs · missing: beneficiarii_station, bath, harbor, domus, vicus, gymnasium, courier_post |
 | Sites with curated building descriptions | 36 / 40 · **90.0%** | ancona, aquileia, athens, baalbek, baiae, beneventum, brixia, capua, corinth, cumae, delphi, djemila, ephesus, herculaneum, italica, jerash, leptisMagna, luni, merida, milan, ostia, paestum, palestrina, palmyra, pompeii, portus, pozzuoli, rimini, rome, sabratha, timgad, tivoli, trier, verona, vindolanda, volubilis (`[06-P0-2]`, standing) |
 | Validator errors | **0** | |
 | Validator warnings | 17 | reviewed; see the standing-warnings note |
@@ -297,4 +297,4 @@ references.)
 | 2026-08-26 | 930 | 98.8% | 56.6% | 29.6% | 0 errors |
 | 2026-08-27 | 1015 | 97.5% | 58.4% | 31.6% | 0 errors |
 | 2026-08-28 | 1051 | 97.5% | 60.7% | 36.9% | 0 errors |
-| 2026-08-29 | 1067 | 97.6% | 61.2% | 43.4% | 0 errors |
+| 2026-08-29 | 1074 | 97.6% | 61.6% | 44.1% | 0 errors |

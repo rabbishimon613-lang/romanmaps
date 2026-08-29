@@ -7,6 +7,134 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 73 — 2026-08-29 (this shift's own prompt claimed "Shift 2 of four")
+
+Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
+count. Started from a genuinely confusing repo state worth documenting: the local clone's cached
+`origin/main` ref was stale (pointed at `5093cbe`, "Shift 56 log"), while `HEAD` was correctly
+detached at the real tip (`1b4b467`, Shift 72's own last commit) and `git ls-remote origin` agreed
+with `HEAD`. `git fetch origin main` refreshed the stale ref (logged as a forced update,
+`5093cbe...1b4b467`), then `git checkout main && git reset --hard origin/main` put the local
+branch back in sync before any data was touched. No lost work — this was a stale local ref, not a
+real divergence.
+
+### Board check
+
+Same read as Shifts 69-72: every unclaimed P0 is one prior shifts have correctly declined as too
+large or genuinely network-blocked for one unattended session (`[12-P0-1]` merge-themes,
+`[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[13-P0-2]` image-audit, `[02-P0-4]`
+self-host-glyphs' still-open glyph-PBF half). `[02-P0-1]` terrain is now genuinely stale
+(`[~]`-claimed by cloud shift 68 since 2026-08-28 00:20, five-plus shifts with zero delivered
+work) — read `FEATURE_BACKLOG.md`'s own note on it before picking it up anyway: it isn't just a
+screenshot-budget problem, it needs hillshade tile data this sandbox cannot fetch over the network
+and very likely a new npm raster/DEM dependency against the "don't touch package.json" guardrail.
+Left it alone rather than clearing the stale claim, since nothing about this shift's environment
+changes that verdict. No unclaimed board `add` ticket exists, same as every recent shift — fell
+back to the axes per the board's own instructions.
+
+Picked Shift 72's explicit handoff: continue `[09-P0-1]` ancient-sources and image top-up against
+the regrown candidate pools, and push axis 8c (beneficiarii/courier stations) from 16 toward the
+20-25 floor. Added a third, self-directed stream once those were dispatched: axis 11 (disasters),
+which sat at 16 records against a 15-record floor already met but with real brief-listed material
+still unused.
+
+### Track A — three parallel background research agents, plus one direct research pass
+
+Generated fresh candidate lists myself first (`node -e` queries against the live `pois.geojson`,
+not left for an agent to rediscover, same practice Shift 72 used): 52 confidence-high records
+with no `ancient_sources`, 53 with no `image_url`. Dispatched three independent background agents
+— two continuing `[09-P0-1]`/image-topup against those lists, one fresh axis 8c research pass —
+each instructed to write findings to a scratch JSON file only, never touch the live repo, so all
+three could run concurrently without racing on `pois.geojson`. Applied every batch myself
+afterward via the existing pure-splice tools (`apply-ancient-sources-topup.mjs`,
+`apply-image-topup.mjs`, `append-geojson-features.mjs`), each verified against a pre-edit copy of
+the file and validated before committing.
+
+**Real infrastructure finding, worth flagging loudly for every future shift**: `WebSearch` has a
+hard cap of 200 calls **per session, shared across every background `Agent` this session
+spawns and the top-level session's own direct calls** — not 200 per agent. All three agents plus
+my own follow-up searches exhausted it well before the shift's data ambitions did. This is new
+information; prior shift logs describe WebSearch as "the only working research channel" without
+noting a shared ceiling, so either it wasn't hit before or wasn't diagnosed as shared. A future
+shift dispatching multiple parallel research agents should budget for this — running fewer,
+more targeted agents (or one agent per WebSearch-heavy task, sequentially) will likely close more
+candidates per session than spreading four agents thin against one shared 200-call pool.
+
+**Ancient-sources: 11 of 52 closed.** Henchir Mettich's Lex Manciana inscription (CIL VIII 25902),
+Thuburbo Maius's Palaestra of the Petronii and Sufetula's Arch of Antoninus Pius (both already
+correctly dated `extant_117ce:false` — their own citations are exactly what fixed those dates, not
+a contradiction), the Krokodilo and Dios Eastern Desert forts' ostraca archives, Rheinzabern's
+Antonine Itinerary station "Tabernis", Bruckneudorf and Baláca villas, Ephesus's Terrace House 2
+owner inscription, and the Sirmium/Celeia beneficiarii stations. The other 41 either have no
+ancient text at all (all 9 shipwrecks, most British villas, most pottery kilns — genuine ceilings,
+not a research gap, matching the pattern Shift 72 also found) or hit the shared search-budget wall
+before a promising secondary-source lead (Dougga's Arch of Alexander Severus, Thuburbo Maius's
+Capitolium, Carthage's Antonine Baths, Aphrodisias's Tetrapylon, Miletus's Faustina Baths) could be
+pinned to a citable text. High-confidence coverage: 88.7% → 91.1% (408/460 → 419/460).
+
+**Image top-up: 9 of 53 closed**, budget-limited the same way (2 of 53 never got queried at all
+before the cap hit). Volubilis's and Conimbriga's walls, Bonn's canabae bath building, Nicopolis's
+walls, Theveste's Arch of Caracalla, Thuburbo Maius's Capitolium, both Sirmium/Celeia beneficiarii
+stations, and the Mazara del Vallo shipwreck via its recovered Dancing Satyr statue (flagged
+honestly as the wreck's find, not a wreck photo). 44 stay open, mostly genuine dead ends (remote
+desert forts, rural villas, shipwrecks with nothing on Commons) or near-misses correctly declined
+(Leptis Magna searches keep surfacing the wrong-period Severan arch instead of the Arch of Trajan
+or Tiberius, same trap a prior shift's log already flagged).
+
+**Axis 8c: 7 more beneficiarii/courier stations, sub-axis now at 23 (floor was 20-25).** Drobeta
+(Trajan's Bridge fort, Dacia), Savaria (Pannonia Superior, paired with the province's tabularium),
+Salona (Dalmatia's provincial capital, 14 surviving dedications), Viminacium (Moesia Superior,
+Trajan's Dacian War HQ), Siscia (Pannonia Superior), Narona (Dalmatia conventus center,
+`confidence:low` — honestly flagged, the governor's date isn't firmly pinned to Trajan), and a new
+`courier_post` at Apulum (Dacia's schola speculatorum barracks). Correctly avoided the Rhine limes
+per Shift 72's finding and stayed in the Dacia/Pannonia/Noricum/Dalmatia/Moesia corridor. Checked
+and rejected Shift 72's own flagged lead, Crăciunel — its one dedicant carries a Hadrianic-era
+nomen, the same postdates-117 trap as the Rhine sites — and also rejected Ratiaria, Durostorum,
+Oescus, Novae, Ulmetum, Carnuntum, and Poetovio for the same not-dated-to-Trajan reason. These 7
+new records carry `sources` but no `image_url` yet (this batch was pure data research, no image
+search budget left after the other two agents) — flagging for a future image top-up pass.
+
+**Axis 11 — disasters, 6 new records (16 → 22), done as a direct research pass** (not delegated,
+to keep it off the shared WebSearch pool the other three agents were drawing down): the Boudican
+burning of Londinium and Verulamium (Tac. Ann. 14.33 — matches the same red-clay destruction
+horizon archaeologists find under the City of London), the Battle of Arausio (105 BCE — Livy/
+Orosius's 80,000-soldier disaster, still ranked worse than Cannae in Trajan-era Roman memory), the
+38 CE Alexandria pogrom Philo witnessed and wrote up in *In Flaccum* (a real thematic tie to the
+Kitos War's much larger 115-117 CE violence in the same city, already on the map via
+`events_117.geojson`), the Vitellian burning of the Temple of Jupiter Optimus Maximus (69 CE, Tac.
+Hist. 3.71-72), and the 51 CE grain famine under Claudius (Tac. Ann. 12.43 — Rome down to fifteen
+days of food, a mob cornering the emperor in the Forum). Checked `events_117.geojson` first to
+avoid duplicating its existing Kitos War entries. No image search budget left for this batch
+either; 6/22 disaster records now carry an image, matching the file's existing best-effort (not
+gated) convention.
+
+`pois.geojson`: 1067 → 1074 features. `disasters.geojson`: 16 → 22 features. Four commits total
+(disasters; ancient-sources + image top-up together, since both touched the same file
+sequentially; axis 8c), each verified on a pre-edit copy, validated, and built clean before
+pushing.
+
+### State, verification, next
+
+`npm install` needed at session start (`node_modules` absent, same as Shift 72) — reverted the
+resulting `package-lock.json` diff before committing (pure npm-CLI-version metadata noise, no
+real dependency change, per the "don't touch package.json without justification" guardrail).
+`npm run validate`: 0 errors, 17 warnings throughout (same standing set, no new warnings from any
+batch). `npm run build`: clean on every commit. `npm run metrics -- --write`: 1067 → 1074 POIs,
+description depth held at 97.6%, image coverage 61.2% → 61.6%, ancient-source coverage overall
+43.4% → 44.1%, high-confidence coverage 88.7% → 91.1%. No Track B slot this shift — data-only, per
+the brief's own allowance, same as Shifts 71-72.
+
+**Next shift**: the shared 200-call WebSearch ceiling is the real constraint now, not remaining
+material — both top-up pools (41 ancient-sources, 44 image) still have genuine headroom the way
+Shift 72's pools did, but a fresh session's budget will hit the same wall at roughly the same
+candidate count unless it runs fewer parallel agents. Axis 8c's 7 new records and axis 11's whole
+existing 22-record set are worth a dedicated image-topup pass — none of axis 8c's new stations
+have images yet. `[02-P0-1]` terrain's claim is stale and its underlying blocker (network-fetched
+hillshade tiles, likely a new npm dependency) is unchanged. Board and backlog otherwise unchanged
+from Shift 72's assessment.
+
+---
+
 ## Shift 72 — 2026-08-29 (this shift's own prompt claimed "Shift 1 of four")
 
 Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
