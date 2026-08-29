@@ -7,6 +7,117 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 75 — 2026-08-29 (this shift's own prompt claimed "Shift 4 of four")
+
+Same stale-numbering mismatch every recent shift has flagged (Shifts 69-74 all noted it) —
+continuing the real sequential count. Repo start state was the same shallow-clone-artifact
+symptom Shifts 9-14 and 73 documented: local `main` was stale at "Shift 56" (`5093cbe`) while a
+detached `HEAD` sat correctly at the real tip (`a6fa40c`, Shift 74's own last commit) and
+matched `origin/main` exactly (confirmed byte-identical commit hash, not just "looks recent").
+`git merge-base` found no common ancestor between the stale local `main` and `origin/main` at
+all — genuinely unrelated as far as local history goes, not just behind — consistent with a
+shallow clone rather than any real divergence or force-push. Fixed with `git checkout -B main
+origin/main` (reset the branch pointer, no rebase/merge needed since the working tree was
+already clean and at the right commit). No lost work.
+
+### Board + backlog check
+
+Same conclusion as Shifts 69-74: every open board P0 (`[12-P0-1]` merge-themes, `[03-P0-1]`
+schema-v2, `[03-P0-2]` card-rebuild, `[13-P0-2]` image-audit, `[02-P0-4]`'s glyph-PBF half) is
+still correctly declined as too large for one unattended session, and `[02-P0-1]` terrain's
+`[~]`-claim (cloud shift 68, since 2026-08-28 00:20 — now stale by the board's own 24h rule) is
+left alone rather than cleared: its real blocker is network-fetched hillshade tiles plus a likely
+new npm raster/DEM dependency against the "don't touch package.json" guardrail, confirmed
+unchanged by re-checking `curl`/`WebFetch` against the same hosts this shift (still hard
+`CONNECT`/egress-proxy failures on Wikipedia, Commons, Overpass, and every academic mirror
+tried). No unclaimed board `add` ticket exists. `FEATURE_BACKLOG.md`'s P0-P3 lists are fully
+checked off except the one blocked terrain item — no Track B slot this shift, same as Shifts
+71-74's independently-confirmed conclusion. Fell back to the axes per the board's own instructions.
+
+### Track A — two background research agents, two axes, both applied by hand afterward
+
+Rather than have agents touch the live repo directly, both wrote findings to scratch JSON files
+only; I applied every batch myself via `scripts/append-geojson-features.mjs` (pure-splice, no
+whole-file reformat) after de-duplicating against the live data and validating. Caught and fixed
+a real self-inflicted bug mid-shift: a first attempt to strip empty `image_url`/`image_credit`
+keys used a full `JSON.parse`/`JSON.stringify` round-trip on `pois.geojson`, which — exactly as
+`FEATURE_BACKLOG.md`'s own standing warning about this describes — reformatted the entire
+34,000-plus-line file into a 69,000-line diff. Caught before committing (`git diff --stat`
+showed the damage immediately), reverted with `git checkout --`, and redid it correctly by
+stripping the null keys from the *source* JSON before running the splice tool, keeping the diff
+to pure additions. Lesson re-confirmed rather than newly discovered — worth it as a second data
+point that this trap catches people even when they've read the warning already.
+
+**Axis 3a (military infrastructure) — 34 new Danube-limes forts, Pannonia + Moesia.** The
+existing fort/auxiliary_fort dataset was already deep on Britain, the Rhine/Wetterau limes, the
+Raetian limes, Dacia's Alutus line, and Egypt's Eastern Desert praesidia, but had only 2 points
+(Gerulata, Solva) on the entire Danube stretch through Pannonia and Moesia — a real, sizeable gap
+against the brief's own explicit call-out of this frontier. Hand-built a 37-site candidate list
+from training knowledge (standard, well-documented Danube-limes forts — Ad Flexum, Arrabona,
+Quadrata, Azaum, Crumerum, Cirpi, Ulcisia Castra, Campona, Matrica, Vetus Salina, Annamatia,
+Lussonium, Alta Ripa, Alisca, Lugio, Altinum through Pannonia; Teutoburgium, Cornacum, Cuccium,
+Bononia, Rittium, Burgenae, Taurunum into Serbia; Margum, Lederata, Pincum, Cuppae, Taliata,
+Diana, Pontes, Egeta through the Iron Gates; Ratiaria, Almus, Oescus, Sexaginta Prista into
+Bulgaria) rather than leaving an agent to rediscover names I already had, then dispatched one
+background agent to verify each against a real source, get coordinates/garrison/founding date,
+and check the 117 CE cutoff. Result: 35 of 37 verified (Ad Militare and Ad Novas both dropped —
+excavation dating for both points to Antoninus Pius or later, not extant by 117). Dropped one
+more myself before committing: Oescus, verified as Legio V Macedonica's earlier fortress, but the
+agent's own sourcing showed the legion moved to Troesmis (already on the map) well before 117 and
+the site became the civilian colonia Ulpia Oescus in 106 — including it as an active "fort" would
+have implied V Macedonica had two simultaneous bases. Final: 34 added, `pois.geojson` 1074 → 1108.
+Only 1 (Diana/Karataš) got a verified image — several promising Golubac/Ram hits turned out to be
+the *medieval* fortresses standing on/near the Roman sites, not Roman-era photos, and were
+correctly excluded rather than used as a plausible-looking wrong answer. ~60 WebSearch calls
+spent, no WebFetch/curl succeeded against any primary source (Wikipedia, Wikidata, Pleiades,
+Commons all hard-blocked by the egress proxy) — same standing network constraint every shift
+since the block was first diagnosed.
+
+**Axis 2 (roadside) — Via Traiana Nova, 6 more stations, real ceiling hit honestly.** Asked a
+second agent to push this road from 16 stations toward the 20-30 range using the Antonine
+Itinerary/Peutinger Table/Thomsen milestone corpus. Got 8 candidates back, 2 of which I dropped
+before committing as likely duplicates of stations already on the map under a different modern
+name (Khirbet edh-Dharih sits ~5km from the existing Rujm el-Faridiyyeh; Khirbet el-Fityan ~2km
+from the existing Betthorus — checked by direct coordinate distance, not just eyeballing the
+names). The 6 that shipped: Esbus (Tell Hisban) and Medaba (Madaba) close a genuine ~75km gap
+between Philadelphia and Rabbathmoba that had no station at all; Dibon (Dhiban) sits at the Wadi
+Mujib crossing; Arindela (Gharandal) is epigraphically attested (a *cohors Ulpia miliaria*
+funerary inscription); Khirbet al-Tabieh and Rujm Ayn al-Qana are honestly unidentified,
+low-confidence, approximate-position points per a real 2016 road-survey paper (Abudanah &
+Twaissi), not invented names. `road_stations.geojson` 497 → 503. The agent's own accounting is
+worth trusting here: every WebFetch/curl to Wikipedia, JSTOR, academia.edu, and Antonine
+Itinerary text mirrors was blocked, so it worked from WebSearch snippets only and explicitly
+declined to pad the count with invented distances or speculative station names once primary-text
+access ran out — a real research ceiling under this sandbox's network constraints, not a
+budget or effort shortfall. ~30 WebSearch calls spent.
+
+### State, verification, next
+
+`npm install` needed at session start (fresh cloud container, standing pattern). Reverted a
+`package-lock.json` diff before it could get committed — pure npm-version metadata noise
+(`hasInstallScript`, `libc` field drops) from a locally-run `npm install` against a newer npm
+than whatever generated the committed lockfile, no actual dependency change, so not worth
+touching per the "don't touch package.json without a data-change justifying it" guardrail.
+`npm run validate`: 0 errors both before and after, same 17 warnings the whole session (no new
+ones introduced by either batch). `npm run build`: clean before every push. `npm run metrics --
+write`: 1074 → 1108 POIs, 97.7% deep / 26 thin. Three commits, each independently verified
+(Danube forts; Via Traiana Nova; METRICS.md refresh) — pushed together in one `git push`, pre-push
+build gate passed clean.
+
+**Next shift**: Danube-limes forts have real remaining headroom — the agent flagged **Acumincum**
+(modern Slankamen, Serbia, between Rittium and Taurunum) as a legitimate, well-attested gap it
+didn't research because it wasn't on the candidate list; worth adding directly. 33 of the 34 new
+forts shipped with `image_url` omitted rather than a guessed filename — a fresh image-topup pass
+against this specific batch (35 site names, all in `pois.geojson` now) is a well-bounded task for
+whoever has search budget to spend on it. Via Traiana Nova is very likely at or near its real
+ceiling from this sandbox — closing the rest of the road needs actual full-text access to the
+Antonine Itinerary and Thomsen's 1917 milestone catalog, neither reachable through WebSearch
+snippets alone; a future shift with a different network path (or given the raw text some other
+way) could probably close another 20-30 stations fast. Board and backlog otherwise unchanged from
+Shift 74's assessment — terrain shading is still the only real gap, still blocked the same way.
+
+---
+
 ## Shift 74 — 2026-08-29 (this shift's own prompt claimed "Shift 3 of four")
 
 Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
