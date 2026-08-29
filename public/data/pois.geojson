@@ -3343,7 +3343,15 @@
           "https://ercolano.cultura.gov.it/visitatermesuburbane-2/?lang=en",
           "https://www.academia.edu/9657753/_The_Suburban_Baths_in_Herculaneum_"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Cassius Dio",
+            "work": "Roman History",
+            "ref": "66.23",
+            "note": "Describes the 79 CE eruption of Vesuvius burying the cities of Herculaneum and Pompeii whole."
+          }
+        ]
       }
     },
     {
@@ -4639,7 +4647,15 @@
           "https://en.wikipedia.org/wiki/Pike_Hill_Signal_Tower",
           "https://www.english-heritage.org.uk/visit/places/pike-hill-signal-tower-hadrians-wall/history/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Historia Augusta",
+            "work": "Life of Hadrian",
+            "ref": "11.2",
+            "note": "Records Hadrian's construction of an eighty-mile wall across Britain to separate Romans from barbarians, the frontier system this tower belonged to."
+          }
+        ]
       }
     },
     {
@@ -6239,7 +6255,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Piscina%20Mirabilis%202010-by-RaBoe-13.jpg?width=800",
-        "image_credit": "Piscina Mirabilis, Bacoli · photo by RaBoe, Wikimedia Commons (CC BY-SA 3.0)"
+        "image_credit": "Piscina Mirabilis, Bacoli · photo by RaBoe, Wikimedia Commons (CC BY-SA 3.0)",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Annals",
+            "ref": "4.5",
+            "note": "Names Misenum as home port of one of Rome's two main imperial fleets, the naval base this cistern supplied with fresh water."
+          }
+        ]
       }
     },
     {
@@ -6447,7 +6471,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pithead_gear_at_Dolaucothi_Gold_Mine_-_geograph.org.uk_-_390551.jpg?width=800",
-        "image_credit": "Pithead gear at Dolaucothi Gold Mine · Wikimedia Commons (CC BY-SA 2.0, Geograph)"
+        "image_credit": "Pithead gear at Dolaucothi Gold Mine · Wikimedia Commons (CC BY-SA 2.0, Geograph)",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Agricola",
+            "ref": "12",
+            "note": "States that Britain produces gold, silver, and other metals, the province's mineral wealth that mines such as this one extracted."
+          }
+        ]
       }
     },
     {
@@ -6646,7 +6678,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Munigua_(Municipium_Flavium_Muniguensium),_Baetica,_Spain_(28161572799).jpg?width=800",
-        "image_credit": "Ruins of the Roman mining town of Munigua, Baetica · Wikimedia Commons (CC BY 2.0)"
+        "image_credit": "Ruins of the Roman mining town of Munigua, Baetica · Wikimedia Commons (CC BY 2.0)",
+        "ancient_sources": [
+          {
+            "author": "CIL",
+            "work": "Corpus Inscriptionum Latinarum",
+            "ref": "II *456",
+            "note": "Preserves the emperor Titus's letter of 79 CE responding to Munigua's appeal over a civic debt, addressed directly to the town."
+          }
+        ]
       }
     },
     {
@@ -7507,7 +7547,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa_dei_Volusii_Saturnini_1.jpg?width=800",
-        "image_credit": "Ruins of the Villa dei Volusii Saturnini at Lucus Feroniae · Wikimedia Commons (CC BY-SA)"
+        "image_credit": "Ruins of the Villa dei Volusii Saturnini at Lucus Feroniae · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Annals",
+            "ref": "13.30",
+            "note": "Records the death at ninety-three of Lucius Volusius Saturninus, head of the senatorial family that owned this villa, and praises his long-accumulated wealth."
+          }
+        ]
       }
     },
     {
@@ -11161,7 +11209,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa San Marco 2.JPG?width=800",
-        "image_credit": "Villa San Marco ruins, Stabiae · Wikimedia Commons"
+        "image_credit": "Villa San Marco ruins, Stabiae · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Younger",
+            "work": "Epistulae",
+            "ref": "6.16",
+            "note": "Describes Stabiae, the town where this villa stood, as the destination Pliny the Elder sailed to during the 79 CE eruption."
+          }
+        ]
       }
     },
     {
@@ -11189,7 +11245,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa Arianna (Stabia) WLM 099.JPG?width=800",
-        "image_credit": "Villa Arianna, Stabiae · Wikimedia Commons"
+        "image_credit": "Villa Arianna, Stabiae · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Younger",
+            "work": "Epistulae",
+            "ref": "6.16",
+            "note": "Describes Stabiae, where this villa stood, and the household of Pomponianus that Pliny the Elder joined there during the 79 CE eruption."
+          }
+        ]
       }
     },
     {
@@ -11279,7 +11343,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa di Diomede (Pompei) WLM 004.JPG?width=800",
-        "image_credit": "Villa of Diomedes, Pompeii · Wikimedia Commons"
+        "image_credit": "Villa of Diomedes, Pompeii · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Cassius Dio",
+            "work": "Roman History",
+            "ref": "66.23",
+            "note": "Describes the 79 CE eruption of Vesuvius burying Pompeii, the city in which this villa stood, along with its population."
+          }
+        ]
       }
     },
     {
@@ -11308,7 +11380,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fresco detail - villa at Boscotrecase - MET image.jpg?width=800",
-        "image_credit": "Fresco from the Villa of Agrippa Postumus, Boscotrecase · Wikimedia Commons"
+        "image_credit": "Fresco from the Villa of Agrippa Postumus, Boscotrecase · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Annals",
+            "ref": "1.3",
+            "note": "Records Augustus's banishment of his grandson Agrippa Postumus, this estate's traditional owner, from Rome."
+          }
+        ]
       }
     },
     {
@@ -12297,7 +12377,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Corta da Ribeirinha (50728466078).jpg?width=800",
-        "image_credit": "Corta da Ribeirinha open-pit at the Tres Minas Roman gold mines, Portugal · Wikimedia Commons"
+        "image_credit": "Corta da Ribeirinha open-pit at the Tres Minas Roman gold mines, Portugal · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "33.70-72",
+            "note": "Describes the hydraulic gold-mining galleries dug into mountains in Asturia and Gallaecia, the region where this mine operated."
+          }
+        ]
       }
     },
     {
@@ -12547,7 +12635,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Baalbek-stoneofpregnantwoman.jpg?width=800",
-        "image_credit": "The Stone of the Pregnant Woman, an unmoved ~1,000-tonne monolith still lying in the Baalbek quarry · Wikimedia Commons"
+        "image_credit": "The Stone of the Pregnant Woman, an unmoved ~1,000-tonne monolith still lying in the Baalbek quarry · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Macrobius",
+            "work": "Saturnalia",
+            "ref": "1.23",
+            "note": "Records that the oracle of Jupiter Heliopolitanus at Heliopolis (Baalbek) predicted in 114 CE that Trajan would not return from his Parthian campaign."
+          }
+        ]
       }
     },
     {
@@ -13320,7 +13416,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomb_with_covered_niche_and_planter_with_garland_in_Pompeii_necropolis_by_Luigi_Bazzani.jpg?width=800",
-        "image_credit": "19th-century watercolor by Luigi Bazzani, Wikimedia Commons"
+        "image_credit": "19th-century watercolor by Luigi Bazzani, Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Seneca",
+            "work": "Natural Questions",
+            "ref": "6.1",
+            "note": "Describes the earthquake of 62 CE that struck Pompeii, the city outside whose walls this necropolis lies."
+          }
+        ]
       }
     },
     {
@@ -13348,7 +13452,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Necropoli_di_Porta_Nocera.jpg?width=800",
-        "image_credit": "Photo: Wikimedia Commons contributor, CC BY-SA"
+        "image_credit": "Photo: Wikimedia Commons contributor, CC BY-SA",
+        "ancient_sources": [
+          {
+            "author": "Cassius Dio",
+            "work": "Roman History",
+            "ref": "66.23",
+            "note": "Describes the 79 CE eruption of Vesuvius burying Pompeii, the city outside whose walls this necropolis lies."
+          }
+        ]
       }
     },
     {
@@ -13525,7 +13637,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aquileia_sepolcreto.jpg?width=800",
-        "image_credit": "Photo: Wikimedia Commons contributor"
+        "image_credit": "Photo: Wikimedia Commons contributor",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "5.1.8",
+            "note": "Describes Aquileia as a Roman fortress and trading emporium on the River Natiso."
+          }
+        ]
       }
     },
     {
@@ -13745,7 +13865,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/TarragonaTorreScipioni.jpg?width=800",
-        "image_credit": "Photo: Wikimedia Commons contributor"
+        "image_credit": "Photo: Wikimedia Commons contributor",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "3.21",
+            "note": "Describes Tarraco, near which this tower stands, as a colony founded during the Second Punic War."
+          }
+        ]
       }
     },
     {
@@ -13775,7 +13903,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carmona%20necr%C3%B3polis%20elefante82.JPG?width=800",
         "image_credit": "Tomb of the Elephant, Carmona Roman Necropolis · Wikimedia Commons",
-        "image_alt": "Interior of the rock-cut Tomb of the Elephant in the Carmona Roman necropolis"
+        "image_alt": "Interior of the rock-cut Tomb of the Elephant in the Carmona Roman necropolis",
+        "ancient_sources": [
+          {
+            "author": "Caesar",
+            "work": "Civil War",
+            "ref": "2.19",
+            "note": "Describes Carmo (Carmona) as by far the strongest community in the province of Baetica."
+          }
+        ]
       }
     },
     {
@@ -13803,7 +13939,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carmona-Necr%C3%B3polis_Romana-Cabeza_de_la_estatua_de_Serviliae.-20110916.jpg?width=800",
-        "image_credit": "Photo: Wikimedia Commons contributor, CC BY-SA"
+        "image_credit": "Photo: Wikimedia Commons contributor, CC BY-SA",
+        "ancient_sources": [
+          {
+            "author": "Caesar",
+            "work": "Civil War",
+            "ref": "2.19",
+            "note": "Describes Carmo (Carmona), the city whose necropolis holds this tomb, as by far the strongest community in Baetica."
+          }
+        ]
       }
     },
     {
@@ -14423,7 +14567,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Myra_Rock_Tombs.jpg?width=800",
-        "image_credit": "Photo: Wikimedia Commons contributor"
+        "image_credit": "Photo: Wikimedia Commons contributor",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "14.3.7",
+            "note": "Describes Myra as one of the six leading cities of the Lycian League, entitled to three votes."
+          }
+        ]
       }
     },
     {
@@ -17246,7 +17398,14 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_House_of_Orpheus_Mosaic_Volubilis_Morocco_-_panoramio.jpg?width=800",
         "image_credit": "The Orpheus mosaic, House of Orpheus, Volubilis · Wikimedia Commons",
-        "ancient_sources": []
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "5.1",
+            "note": "Names Volubilis among the towns of Mauretania; the passage describes the town, not this specific house."
+          }
+        ]
       }
     },
     {
@@ -17277,7 +17436,14 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Volubilis%20mosaic%20Diana%20and%20her%20nymph.jpg?width=800",
         "image_credit": "Diana mosaic, House of Venus, Volubilis · Wikimedia Commons",
         "image_alt": "Roman mosaic of Diana bathing with a nymph, from the House of Venus at Volubilis",
-        "ancient_sources": []
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "5.1",
+            "note": "Names Volubilis among the towns of Mauretania; the passage describes the town, not this specific house."
+          }
+        ]
       }
     },
     {
@@ -17337,7 +17503,14 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Inscription_avec_la_transformation_de_Volubilis_en_municipe_romain..jpg?width=800",
         "image_credit": "Inscription recording Volubilis's transformation into a Roman municipium · Wikimedia Commons",
-        "ancient_sources": []
+        "ancient_sources": [
+          {
+            "author": "ILAfr",
+            "work": "Inscriptions Latines d'Afrique",
+            "ref": "634",
+            "note": "Preserves the privileges the emperor Claudius granted to Volubilis, including Roman citizenship and ten years' tax immunity, for its loyalty during Aedemon's revolt."
+          }
+        ]
       }
     },
     {
@@ -17393,7 +17566,14 @@
           "https://www.historyhit.com/locations/volubilis/"
         ],
         "confidence": "high",
-        "ancient_sources": []
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "5.1",
+            "note": "Names Volubilis among the towns of Mauretania; the passage describes the town, not its walls specifically."
+          }
+        ]
       }
     },
     {
@@ -17454,7 +17634,14 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Volubilis-basilica.jpg?width=800",
         "image_credit": "Ruins of the civil basilica, Volubilis · Wikimedia Commons",
-        "ancient_sources": []
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "5.1",
+            "note": "Names Volubilis among the towns of Mauretania; the passage describes the town, not this specific building."
+          }
+        ]
       }
     },
     {
@@ -20106,7 +20293,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arco%20Felice%20%282018%29-6.jpg?width=800",
-        "image_credit": "Arco Felice, Via Domitiana near Cumae · Wikimedia Commons"
+        "image_credit": "Arco Felice, Via Domitiana near Cumae · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Statius",
+            "work": "Silvae",
+            "ref": "4.3",
+            "note": "Celebrates the construction of the Via Domitiana past Cumae, the road whose cutting through Monte Grillo this arch spans."
+          }
+        ]
       }
     },
     {
@@ -20612,7 +20807,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ponte di Tiberio 4569.JPG?width=800",
         "image_credit": "Ponte di Tiberio, Rimini · Wikimedia Commons",
-        "image_alt": "Roman stone bridge with five round arches spanning the Marecchia river"
+        "image_alt": "Roman stone bridge with five round arches spanning the Marecchia river",
+        "ancient_sources": [
+          {
+            "author": "CIL",
+            "work": "Corpus Inscriptionum Latinarum",
+            "ref": "XI 367",
+            "note": "Preserves the bridge's own dedicatory inscription recording its completion under Augustus and Tiberius."
+          }
+        ]
       }
     },
     {
@@ -20642,7 +20845,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Domus del chirurgo, mosaico di 'Orfeo tra gli animali'.jpg?width=800",
         "image_credit": "Orpheus mosaic, Domus del Chirurgo, Rimini · Wikimedia Commons",
-        "image_alt": "Roman floor mosaic of Orpheus playing the lyre surrounded by animals, from the Domus del Chirurgo in Rimini"
+        "image_alt": "Roman floor mosaic of Orpheus playing the lyre surrounded by animals, from the Domus del Chirurgo in Rimini",
+        "ancient_sources": [
+          {
+            "author": "Suetonius",
+            "work": "Divus Julius",
+            "ref": "31",
+            "note": "Describes Caesar's forces reaching Ariminum (Rimini), the city where this house stood, after his crossing of the Rubicon."
+          }
+        ]
       }
     },
     {
@@ -21431,7 +21642,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/London%20Mithraeum%20,%20interior%20view%20-%20geograph.org.uk%20-%205993845.jpg?width=800",
-        "image_credit": "The London Mithraeum · Wikimedia Commons"
+        "image_credit": "The London Mithraeum · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Annals",
+            "ref": "14.33",
+            "note": "Describes Londinium, the city where this mithraeum later stood, as a hub of traders and commerce sacked during the Boudican revolt."
+          }
+        ]
       }
     },
     {
@@ -22371,7 +22590,15 @@
           "https://www.livius.org/articles/place/narbo-narbonne/narbo-narbonne-photos/narbonne-horreum/",
           "https://www.historyhit.com/locations/horreum/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "4.1.6",
+            "note": "Calls Narbo (Narbonne) the emporium of all Gaul, surpassed by no other port in the volume of traffic it received."
+          }
+        ]
       }
     },
     {
@@ -22776,7 +23003,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Reims%20Porte%20de%20Mars%2002.jpg?width=800",
-        "image_credit": "Porte de Mars, Reims · Wikimedia Commons"
+        "image_credit": "Porte de Mars, Reims · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Caesar",
+            "work": "Gallic War",
+            "ref": "6.44",
+            "note": "Names Durocortorum, the city where this gate stood, as the chief town of the Remi."
+          }
+        ]
       }
     },
     {
@@ -22922,7 +23157,15 @@
         "sources": [
           "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_romain_de_Fr%C3%A9jus"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Agricola",
+            "ref": "4",
+            "note": "States that Agricola was born at Forum Iulii (Fréjus), the city where this theatre stood."
+          }
+        ]
       }
     },
     {
@@ -23041,7 +23284,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arc%20de%20Germanicus.JPG?width=800",
-        "image_credit": "Arch of Germanicus, Saintes · Wikimedia Commons"
+        "image_credit": "Arch of Germanicus, Saintes · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "CIL",
+            "work": "Corpus Inscriptionum Latinarum",
+            "ref": "XIII 1036",
+            "note": "Preserves the arch's own dedicatory inscription honoring Tiberius, Drusus Caesar, and Germanicus."
+          }
+        ]
       }
     },
     {
@@ -23159,7 +23410,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20Baths%20in%20Bath%20Spa,%20England%20-%20July%202006.jpg?width=800",
-        "image_credit": "The Great Bath, Bath · Diliff, Wikimedia Commons (CC BY-SA 3.0)"
+        "image_credit": "The Great Bath, Bath · Diliff, Wikimedia Commons (CC BY-SA 3.0)",
+        "ancient_sources": [
+          {
+            "author": "Solinus",
+            "work": "Collectanea Rerum Memorabilium",
+            "ref": "22.10",
+            "note": "Describes the hot springs at Aquae Sulis as sacred to Minerva, with a flame on her altar that never turns to ash."
+          }
+        ]
       }
     },
     {
@@ -23267,7 +23526,15 @@
           "https://en.wikipedia.org/wiki/Verulamium_Forum_inscription",
           "https://romaninscriptionsofbritain.org/inscriptions/3123"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "RIB",
+            "work": "Roman Inscriptions of Britain",
+            "ref": "3123",
+            "note": "Preserves the forum and basilica's own dedicatory inscription to the emperor Titus, erected under governor Agricola."
+          }
+        ]
       }
     },
     {
