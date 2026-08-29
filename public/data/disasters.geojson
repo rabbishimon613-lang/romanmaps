@@ -176,5 +176,65 @@
    "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/Arch%20of%20Titus%20Menorah%2022.jpg?width=800",
    "image_credit":"Arch of Titus relief, Roman soldiers carrying spoils from the Temple \u00b7 Wikimedia Commons",
    "image_alt":"A genuine Roman relief carved c. 81 CE, soon after the event"
+ }},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-0.0895,51.5122]},
+ "properties":{
+   "id":"disaster_londinium_fire_60",
+   "name":"Burning of Londinium",
+   "year":60,
+   "type":"barbarian_raid",
+   "still_visible_in_117":true,
+   "one_line":"Boudica's army swept into the twenty-year-old trading settlement of Londinium in 60 or 61 CE and burned it flat, part of a death toll Tacitus put at seventy thousand across the province's ruined towns. Archaeologists still hit the same half-metre band of red, oxidised clay under the City of London wherever they dig to this depth, a single-episode destruction layer dated to the revolt. The settlement was rebuilt within a few years and had overtaken Camulodunum as Britain's leading town well before 117 CE.",
+   "sources":["Tac. Ann. 14.33"]
+ }},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-0.3565,51.7451]},
+ "properties":{
+   "id":"disaster_verulamium_fire_60",
+   "name":"Burning of Verulamium",
+   "year":60,
+   "type":"barbarian_raid",
+   "still_visible_in_117":true,
+   "one_line":"Boudica's forces destroyed Verulamium in the same campaign that leveled Camulodunum and Londinium, targeting the town for its enthusiastic collaboration with Roman rule. Tacitus records the Britons took no prisoners for ransom, only slaughter, at all three sites combined. Excavation has turned up the same scorched destruction horizon here as at London, matching the single-year date of the revolt. The town recovered to become a flourishing municipium, one of only a few in Roman Britain to hold that status.",
+   "sources":["Tac. Ann. 14.33"]
+ }},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[4.8059,44.1352]},
+ "properties":{
+   "id":"disaster_arausio_105bce",
+   "name":"Battle of Arausio",
+   "year":-105,
+   "type":"military_disaster",
+   "still_visible_in_117":true,
+   "one_line":"Two feuding Roman consuls lost their armies to the Cimbri and Teutones outside Arausio on 6 October 105 BCE, a defeat Livy and Orosius put at 80,000 soldiers and 40,000 camp followers dead in a single afternoon. Romans of Trajan's day still ranked it as the empire's worst battlefield disaster, ahead of Cannae. The catastrophe broke the Senate's grip on military appointments and opened the way for Marius, who reorganized the legions that would go on to conquer Gaul, Africa, and the East.",
+   "sources":["Liv. Perioch. 67","Oros. 5.16"]
+ }},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[29.9187,31.2001]},
+ "properties":{
+   "id":"disaster_alexandria_pogrom_38",
+   "name":"Alexandria pogrom",
+   "year":38,
+   "type":"riot",
+   "still_visible_in_117":true,
+   "one_line":"Mobs in Alexandria attacked the city's Jewish quarter in the summer of 38 CE after the prefect Flaccus stripped Jewish residents of citizenship and packed them into one district, an event the philosopher Philo witnessed and recorded in his In Flaccum. Synagogues were gutted, and Philo describes victims stoned, dragged, and burned through the streets. Flaccus was arrested and later executed, but the episode left a memory of communal violence still current when the far larger Kitos War revolt convulsed the same city's Jewish population in 115-117 CE.",
+   "sources":["Philo, In Flaccum"]
+ }},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[12.4829,41.8933]},
+ "properties":{
+   "id":"disaster_capitoline_fire_69",
+   "name":"Burning of the Capitol",
+   "year":69,
+   "type":"fire",
+   "still_visible_in_117":true,
+   "one_line":"Vitellian troops stormed the Capitoline Hill on 19 December 69 CE and burned the Temple of Jupiter Optimus Maximus, Rome's oldest and most sacred shrine, during the fighting that killed Vitellius's own brother Sabinus inside it. Vespasian personally carried away the first basket of rubble when reconstruction began the following year. His new temple stood barely a decade before burning again in 80 CE, this time by accident, and was rebuilt a third time under Domitian. In 117 CE Rome's skyline still carried that Domitianic temple on the Capitoline.",
+   "sources":["Tac. Hist. 3.71-72","Suet. Vit. 15"]
+ }},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[12.4853,41.8902]},
+ "properties":{
+   "id":"disaster_rome_famine_51",
+   "name":"Famine of 51 CE",
+   "year":51,
+   "type":"famine",
+   "still_visible_in_117":true,
+   "one_line":"Grain shipments failed so badly in 51 CE that Rome had barely fifteen days of food left, and Tacitus credits only a mild winter with averting mass starvation. A crowd cornered Claudius in the Forum while he was hearing legal cases and pelted him with stale bread crusts in protest. The scare pushed Claudius to offer merchants guaranteed compensation for grain-ship losses at sea, a subsidy that helped keep Rome's supply chain running for decades afterward.",
+   "sources":["Tac. Ann. 12.43","Suet. Claud. 18"]
  }}
 ]}
