@@ -18465,7 +18465,14 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roemerbruecke_trier.jpg?width=800",
         "image_credit": "Roman bridge over the Moselle at Trier · Wikimedia Commons (CC BY-SA)",
-        "ancient_sources": []
+        "ancient_sources": [
+          {
+            "author": "Ernst Hollstein",
+            "work": "Mitteleuropäische Eichenchronologie: Trierer dendrochronologische Forschungen zur Archäologie und Kunstgeschichte (Trierer Grabungen und Forschungen, Band XI)",
+            "ref": "Mainz: Philipp von Zabern, 1980",
+            "note": "Foundational tree-ring chronology study for the Rhineland, built from oak piles recovered at the Trier bridge site; it establishes the dated sequence of bridge phases at 17 BCE, 71 CE, and the surviving stone-pier phase of 144-152 CE, fixing the piers as later than the 117 CE snapshot."
+          }
+        ]
       }
     },
     {
@@ -18590,7 +18597,14 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trier_Barbarathermen.jpg?width=800",
         "image_credit": "Barbara Baths, Trier · Wikimedia Commons (CC BY-SA)",
-        "ancient_sources": []
+        "ancient_sources": [
+          {
+            "author": "Michael Dodt",
+            "work": "Gestempelte römische Ziegel aus Trier: zu Neufunden aus Kaiserthermen, Barbarathermen und Basilika",
+            "ref": "Funde und Ausgrabungen im Bezirk Trier 45 (2013), pp. 40-48",
+            "note": "Stamped-brick finds from the Barbarathermen excavation used to place construction in the second half of the 2nd century CE, decades after the 117 CE snapshot."
+          }
+        ]
       }
     },
     {
@@ -18717,7 +18731,14 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trier_Kaiserthermen_BW_1.JPG?width=800",
         "image_credit": "Imperial Baths, Trier · Wikimedia Commons (CC BY-SA)",
-        "ancient_sources": []
+        "ancient_sources": [
+          {
+            "author": "Michael Dodt",
+            "work": "Gestempelte römische Ziegel aus Trier: zu Neufunden aus Kaiserthermen, Barbarathermen und Basilika",
+            "ref": "Funde und Ausgrabungen im Bezirk Trier 45 (2013), pp. 40-48",
+            "note": "Stamped-brick evidence from the Kaiserthermen tying the complex to the early 4th-century Constantius Chlorus building program, nearly two centuries after the 117 CE snapshot."
+          }
+        ]
       }
     },
     {
@@ -18747,7 +18768,14 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trier_Konstantinbasilika_BW_1.JPG?width=800",
         "image_credit": "Konstantinbasilika, Trier · Wikimedia Commons (CC BY-SA)",
-        "ancient_sources": []
+        "ancient_sources": [
+          {
+            "author": "Michael Dodt",
+            "work": "Gestempelte römische Ziegel aus Trier: zu Neufunden aus Kaiserthermen, Barbarathermen und Basilika",
+            "ref": "Funde und Ausgrabungen im Bezirk Trier 45 (2013), pp. 40-48",
+            "note": "Brick-stamp finds from the Basilika (Aula Palatina) that anchor its construction to the Constantinian building campaign of c. 310 CE, two centuries after the 117 CE snapshot."
+          }
+        ]
       }
     },
     {
@@ -21242,7 +21270,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Antonine%20baths%20ruins%20Karthago.JPG?width=800",
-        "image_credit": "Antonine Baths, Carthage · Wikimedia Commons"
+        "image_credit": "Antonine Baths, Carthage · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Alexandre Lézine",
+            "work": "Les thermes d'Antonin à Carthage",
+            "ref": "Tunis: Société tunisienne de diffusion, 1969",
+            "note": "The definitive excavation monograph reconstructing the bath complex and publishing the surviving dedicatory inscription that fixes the start of construction at 145 CE under Antoninus Pius, a full generation after the 117 CE snapshot."
+          }
+        ]
       }
     },
     {
@@ -22872,7 +22908,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Autun%20-%20Porte%20Saint-Andr%C3%A9.jpg?width=800",
-        "image_credit": "Porte Saint-Andre, Autun · Wikimedia Commons"
+        "image_credit": "Porte Saint-Andre, Autun · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Vivien Barrière",
+            "work": "Aux portes d'Augustodunum: architecture, fonction et histoire des portes de l'enceinte antique d'Autun",
+            "ref": "UNA Éditions, 2025",
+            "note": "Architectural and stratigraphic study of Autun's Roman gates, including the Porte Saint-André, placing its construction in the Augustan/early Julio-Claudian period, roughly a century before the 117 CE snapshot."
+          }
+        ]
       }
     },
     {
@@ -22930,7 +22974,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theatre%20autun%20panorama.jpg?width=800",
-        "image_credit": "Roman Theatre of Autun · Wikimedia Commons"
+        "image_credit": "Roman Theatre of Autun · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pierre Wuilleumier",
+            "work": "Le théâtre romain d'Autun",
+            "ref": "Revue des Études Anciennes, Tome 42 (1940), pp. 699-706",
+            "note": "Study of the theatre's 1930s excavation, including a worn as coin of Claudius found in construction fill, supporting a build date in the decades after 70 CE, before the 117 CE snapshot."
+          }
+        ]
       }
     },
     {
@@ -25566,7 +25618,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amphitheatre_of_Serdica_-_General_view.jpg?width=800",
-        "image_credit": "Amphitheatre of Serdica, Sofia · Wikimedia Commons"
+        "image_credit": "Amphitheatre of Serdica, Sofia · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Evgeni Paunov",
+            "work": "Roman Entertainment in Sofia-Serdica",
+            "ref": "Minerva: The International Review of Ancient Art & Archaeology 19 (May-June 2007), pp. 40-41",
+            "note": "Discusses the 2004 rescue excavation of the amphitheater beneath the Arena di Serdica hotel and the coin/artifact evidence dating its construction to the late 3rd-early 4th century under Diocletian and Constantine, long after the 117 CE snapshot."
+          }
+        ]
       }
     },
     {
@@ -25595,7 +25655,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rotunda_Sveti_Georgi,_Sofia.jpg?width=800",
-        "image_credit": "Rotunda of St George, Sofia, part of Serdica's Roman baths · Wikimedia Commons"
+        "image_credit": "Rotunda of St George, Sofia, part of Serdica's Roman baths · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Bogdan Filov",
+            "work": "Софийската църква „Св. Георги\" (The Sofia Church of St. George)",
+            "ref": "Bulgarian Archaeological Institute, 1933; further study 1939-1940",
+            "note": "The excavation studies that first documented the hypocaust and brick construction identifying the Rotunda's original phase as a Roman bath building of the early 4th century, under Constantine, well after the 117 CE snapshot."
+          }
+        ]
       }
     },
     {
@@ -27789,7 +27857,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aphrodisias_Tetrapylon_4593.jpg?width=800",
-        "image_credit": "Tetrapylon, Aphrodisias · Wikimedia Commons"
+        "image_credit": "Tetrapylon, Aphrodisias · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Charlotte Roueché and R. R. R. Smith (eds.)",
+            "work": "Aphrodisias Papers 3: The Setting and Quarries, Mythological and Other Sculptural Decoration, Architectural Development, Portico of Tiberius, and Tetrapylon",
+            "ref": "Journal of Roman Archaeology Supplementary Series 20, 1996",
+            "note": "NYU excavation-team study of the Tetrapylon's architectural development, dating it stylistically to the Antonine-Severan era (c. 200 CE), roughly eighty years after the 117 CE snapshot."
+          }
+        ]
       }
     },
     {
@@ -28350,7 +28426,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sculpture_from_the_Faustina_Baths_in_Miletus.JPG?width=800",
-        "image_credit": "Sculpture from the Faustina Baths, Miletus · Wikimedia Commons"
+        "image_credit": "Sculpture from the Faustina Baths, Miletus · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Armin von Gerkan and Fritz Krischen",
+            "work": "Thermen und Palaestren (Milet: Ergebnisse der Ausgrabungen und Untersuchungen seit dem Jahre 1899, Band I, Heft 9)",
+            "ref": "Berlin: Verlag von Heinrich Keller, 1928",
+            "note": "German Archaeological Institute excavation report on the Faustina Baths, establishing the mid-to-late 2nd century CE construction date under Faustina the Younger, decades after the 117 CE snapshot."
+          }
+        ]
       }
     },
     {
@@ -31472,7 +31556,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexander_Severus%27s_arch,_Dougga_(8159160242).jpg?width=800",
-        "image_credit": "Wikimedia Commons"
+        "image_credit": "Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "PETRAE epigraphic database (Institut Ausonius, Université Bordeaux Montaigne)",
+            "work": "Record for the dedicatory inscription of the Arch of Alexander Severus, Thugga (Dougga)",
+            "ref": "petrae.huma-num.fr, record for Thugga/Dougga (CIL VIII, Africa Proconsularis series)",
+            "note": "Critical edition of the arch's dedicatory inscription, which names Alexander Severus and fixes the monument's erection to 228 CE, more than a century after the 117 CE snapshot."
+          }
+        ]
       }
     },
     {
@@ -32208,7 +32300,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Thuburbo Majus vue vers Capitole.jpg?width=800",
-        "image_credit": "Capitolium of Thuburbo Majus · Wikimedia Commons"
+        "image_credit": "Capitolium of Thuburbo Majus · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pauline Cuzel",
+            "work": "Thuburbo Maius et Carthage sous le Haut-Empire",
+            "ref": "Chroniques d'Archéologie maghrébine (2022), pp. 528-563",
+            "note": "Epigraphic study reconstructing the Capitolium's long dedicatory inscription from recovered marble fragments (preserved in the Bardo Museum), naming Marcus Aurelius and Commodus and dating the temple's dedication to 168 CE, decades after the 117 CE snapshot."
+          }
+        ]
       }
     },
     {
