@@ -16443,6 +16443,9 @@
           "https://en.wikipedia.org/wiki/Paestum"
         ],
         "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Scavi%20archeologici%20di%20Paestum%20WLM%20092.JPG?width=800",
+        "image_credit": "Capitolium temple standing in the Roman forum of Paestum · Wikimedia Commons (Wiki Loves Monuments)",
+        "image_alt": "Roman-era Capitolium temple in the forum of Paestum",
         "ancient_sources": [
           {
             "author": "Strabo",
@@ -17672,6 +17675,9 @@
           "https://www.worldhistory.org/image/9354/the-north-gate-jerash/"
         ],
         "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jerash%20porta%20nord%20HPIM3399.JPG?width=800",
+        "image_credit": "North Gate of Gerasa, Jerash · Wikimedia Commons",
+        "image_alt": "Roman North Gate of ancient Gerasa (Jerash), Jordan",
         "ancient_sources": [
           {
             "author": "Anonymous",
@@ -19635,6 +19641,9 @@
           "https://www.ancient-origins.net/ancient-places-europe/sanctuary-fortuna-primigenia-0013963"
         ],
         "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palestrina%20-%20Santuario%20della%20Fortuna%20Primigenia%20-%20vista%20della%20rampa%20di%20sinistra.jpg?width=800",
+        "image_credit": "Sanctuary of Fortuna Primigenia, Palestrina (Praeneste) · Wikimedia Commons (CC BY-SA 4.0, Ugo Bongarzoni)",
+        "image_alt": "Terraced ramp of the Sanctuary of Fortuna Primigenia at Praeneste (Palestrina)",
         "ancient_sources": [
           {
             "author": "Cicero",
@@ -23690,7 +23699,10 @@
           "https://romaninscriptionsofbritain.org/sites/wroxeter",
           "https://en.wikipedia.org/wiki/Viroconium_Cornoviorum"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bases%20of%20the%20columns%20from%20the%20forum%20building%20at%20Viroconium%20(Wroxeter%20Roman%20City)%20-%20geograph.org.uk%20-%202487166.jpg?width=800",
+        "image_credit": "Forum column bases, Viroconium (Wroxeter Roman City) · Wikimedia Commons / geograph.org.uk (CC BY-SA 2.0)",
+        "image_alt": "Surviving column bases of the forum at Viroconium, Wroxeter"
       }
     },
     {
@@ -23849,7 +23861,10 @@
           "https://en.wikipedia.org/wiki/Roman_walls_of_Barcelona",
           "https://www.barcelonaturisme.com/wv3/en/page/479/wall-and-defence-towers-of-the-roman-city-of-barcino-placa-ramon-berenguer.html"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Capella%20de%20Santa%20%C3%80gata%20i%20torre%20de%20la%20muralla%20romana,%20pl.%20Ramon%20Berenguer%20(Barcelona).jpg?width=800",
+        "image_credit": "Roman wall tower, Plaça Ramon Berenguer, Barcelona (ancient Barcino) · Wikimedia Commons",
+        "image_alt": "Surviving tower of the Roman city walls of Barcino at Plaça Ramon Berenguer, Barcelona"
       }
     },
     {
@@ -23903,7 +23918,10 @@
           "https://en.wikipedia.org/wiki/Via_Sepulcral_Romana",
           "https://www.barcelonaturisme.com/wv3/en/page/492/muhba-via-sepulcral-romana.html"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/MUHBA-%20Via%20Sepulcral%20Romana006%20edited.JPG?width=800",
+        "image_credit": "Via Sepulcral Romana, Barcelona (ancient Barcino) · Wikimedia Commons / MUHBA",
+        "image_alt": "Roman funerary monuments along the Via Sepulcral Romana, Barcelona"
       }
     },
     {
@@ -24011,7 +24029,10 @@
           "https://es.wikipedia.org/wiki/Templo_romano_de_C%C3%B3rdoba",
           "https://dialnet.unirioja.es/servlet/articulo?codigo=5336342"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Templo%20romano%20-%20C%C3%B3rdoba%20(Espa%C3%B1a).jpg?width=800",
+        "image_credit": "Roman Temple of Calle Claudio Marcelo, Córdoba · Wikimedia Commons",
+        "image_alt": "Surviving columns of the Roman temple on Calle Claudio Marcelo, Córdoba"
       }
     },
     {
@@ -24119,7 +24140,10 @@
           "https://es.wikipedia.org/wiki/Mausoleo_romano_(C%C3%B3rdoba)",
           "https://www.turismodecordoba.org/mausoleos-romanos-de-cordoba"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Monumentos%20funerarios%20de%20la%20Puerta%20de%20Gallegos%20-%20C%C3%B3rdoba%2002.JPG?width=800",
+        "image_credit": "Roman funerary mausoleums of Puerta de Gallegos, Córdoba · Wikimedia Commons",
+        "image_alt": "Roman mausoleums at Puerta de Gallegos, Córdoba"
       }
     },
     {
@@ -24333,7 +24357,10 @@
           "https://es.wikipedia.org/wiki/Museo_del_Foro_de_Caesaraugusta",
           "https://www.zaragoza.es/sede/portal/museos/foro/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Museo%20del%20Foro%20de%20Caesaraugusta.JPG?width=800",
+        "image_credit": "Forum Museum of Caesaraugusta, Zaragoza · Wikimedia Commons",
+        "image_alt": "In-situ remains of the Roman forum of Caesaraugusta, Zaragoza"
       }
     },
     {
@@ -24360,7 +24387,10 @@
           "https://es.wikipedia.org/wiki/Termas_romanas_de_Caesaraugusta",
           "https://www.zaragoza.es/sede/portal/museos/termas/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Museo%20de%20las%20Termas%20de%20Zaragoza%202.jpg?width=800",
+        "image_credit": "Museum of the Public Baths of Caesaraugusta, Zaragoza · Wikimedia Commons",
+        "image_alt": "Remains of the Roman public baths of Caesaraugusta, Zaragoza"
       }
     },
     {
@@ -24387,7 +24417,10 @@
           "https://es.wikipedia.org/wiki/Museo_del_Puerto_Fluvial_de_Caesaraugusta",
           "https://www.zaragoza.es/sede/portal/museos/puerto/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zaragoza%20-%20Museo%20Puerto%20Fluvial%20-%20Escaleras.jpg?width=800",
+        "image_credit": "River Port Museum of Caesaraugusta, Zaragoza · Wikimedia Commons",
+        "image_alt": "Roman river port structure of Caesaraugusta, Zaragoza"
       }
     },
     {
@@ -24496,7 +24529,10 @@
           "https://en.wikipedia.org/wiki/San_L%C3%A1zaro_Roman_aqueduct",
           "https://penelope.uchicago.edu/encyclopaedia_romana/hispania/meridasanlazaro.html"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Acueducto%20de%20San%20L%C3%A1zaro,%20M%C3%A9rida,%20Espa%C3%B1a%20-%2020041010.jpg?width=800",
+        "image_credit": "San Lázaro Aqueduct, Mérida · Wikimedia Commons",
+        "image_alt": "Surviving arches of the Roman San Lázaro Aqueduct, Mérida"
       }
     },
     {
@@ -24523,7 +24559,10 @@
           "https://en.wikipedia.org/wiki/Puente_Romano,_M%C3%A9rida",
           "https://pleiades.stoa.org/places/257469"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Puente%20Romano%20sobre%20el%20R%C3%ADo%20Guadiana,%20M%C3%A9rida.JPG?width=800",
+        "image_credit": "Roman Bridge (Puente Romano) over the Guadiana, Mérida · Wikimedia Commons",
+        "image_alt": "The Roman bridge over the Guadiana river at Mérida"
       }
     },
     {
@@ -24825,6 +24864,9 @@
           "https://www.livius.org/articles/place/mogontiacum-mainz/mogontiacum-mainz-photos/mainz-aqueduct/"
         ],
         "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Remains%20of%20the%20Roman%20aqueduct%20of%20Mogontiacum%20(Mainz),%20Germany%20(9679044159).jpg?width=800",
+        "image_credit": "Roman aqueduct of Mogontiacum, Zahlbach valley, Mainz · Wikimedia Commons",
+        "image_alt": "Surviving piers of the Roman aqueduct of Mogontiacum in the Zahlbach valley, Mainz",
         "ancient_sources": [
           {
             "author": "Tacitus",
@@ -25822,6 +25864,9 @@
           "https://en.wikipedia.org/wiki/Siege_of_Salona"
         ],
         "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Porta%20Caesarea,%20gate%20flanked%20by%20two%20octagonal%20towers%20and%20partly%20used%20as%20the%20aqueduct,%20built%20during%20the%20reign%20of%20Augustus,%20Salona%20(12249720375).jpg?width=800",
+        "image_credit": "Porta Caesarea, city walls of Salona (Urbs Vetus), Solin · Wikimedia Commons",
+        "image_alt": "The Augustan-era Porta Caesarea gate in the city walls of Salona",
         "ancient_sources": [
           {
             "author": "Hirtius (attrib.)",

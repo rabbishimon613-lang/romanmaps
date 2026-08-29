@@ -54,10 +54,19 @@ for (const item of items) {
   const alreadyHasComma = confMatch[3] === ",";
   const nl = text.includes("\r\n") ? "\r\n" : "\n";
   const escape = (s) => JSON.stringify(s);
+  const confAbsIdx = idIdx + confMatch.index + confMatch[0].length;
+  // confidence isn't always the record's last property — a record that already has
+  // ancient_sources (or any other field) after it needs a trailing comma on this insertion,
+  // but one right before the closing "}" would itself be invalid JSON. Decide by looking at
+  // the next non-whitespace character after the splice point: a `"` means another property
+  // follows (need the comma), a `}` means this was the last property (must not add one).
+  const rest = text.slice(confAbsIdx);
+  const nextNonWs = rest.match(/\S/);
+  const needsTrailingComma = !!nextNonWs && nextNonWs[0] !== "}";
   let insertion = `${alreadyHasComma ? "" : ","}${nl}${indent}"image_url": ${escape(image_url)},${nl}${indent}"image_credit": ${escape(image_credit)}`;
   if (image_alt) insertion += `,${nl}${indent}"image_alt": ${escape(image_alt)}`;
-  const confAbsIdx = idIdx + confMatch.index + confMatch[0].length;
-  text = text.slice(0, confAbsIdx) + insertion + text.slice(confAbsIdx);
+  if (needsTrailingComma) insertion += ",";
+  text = text.slice(0, confAbsIdx) + insertion + rest;
   applied++;
 }
 
