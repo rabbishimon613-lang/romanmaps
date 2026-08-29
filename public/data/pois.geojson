@@ -34412,6 +34412,927 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alba%20Carolina%20Fortress%202011%20-%20Ruins.jpg?width=800",
         "image_credit": "Roman ruins of Apulum within the Alba Carolina Fortress, Alba Iulia, Romania · Wikimedia Commons"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.2704,
+          47.8751
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_ad_flexum",
+        "category": "auxiliary_fort",
+        "name_latin": "Ad Flexum",
+        "name_english": "Ad Flexum",
+        "province": "Pannonia Superior",
+        "modern_location": "Mosonmagyaróvár, Hungary",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A castrum and vicus stood at a sharp bend of the Danube's Moson branch, giving the post its name meaning 'at the bend.' It guarded the limes road between Carnuntum and Arrabona for over 300 years, into the 5th century. Local trade grew up behind its walls as craftsmen settled near the garrison. Its foundations lie today beneath the town's historic castle grounds.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ad_Flexum",
+          "https://www.wikidata.org/wiki/Q17322776"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.6353,
+          47.6875
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_arrabona",
+        "category": "auxiliary_fort",
+        "name_latin": "Arrabona",
+        "name_english": "Arrabona",
+        "province": "Pannonia Superior",
+        "modern_location": "Győr, Hungary",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "An auxiliary camp for 1,000 men rose on a Celtic river-junction settlement under Claudius, guarding the mouth of the Rába. By the early 2nd century it held the ala Ulpia contariorum milliaria, the only double-strength cavalry unit in Pannonia Superior. Roman-era stonework still sits in the casemates of Győr's later castle. The fort anchored trade between the Danube frontier and the interior for four centuries.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Arrabona",
+          "https://www.wikidata.org/wiki/Q777861"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.3868,
+          47.7361
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_quadrata",
+        "category": "auxiliary_fort",
+        "name_latin": "Quadrata",
+        "name_english": "Quadrata",
+        "province": "Pannonia Superior",
+        "modern_location": "Lébény-Barátföldpuszta, Hungary",
+        "built": 105,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Trajan's engineers raised a timber-and-earth fort roughly midway between Ad Flexum and Arrabona to close a gap in the limes road. Hadrian's visit to Pannonia in 124 CE prompted its rebuild in stone, with a near-perfect 99 x 99.5 meter square plan that later gave the post its name. Excavations exposed a corner tower and the right-hand gate. Its precise identification remains debated among archaeologists, but Barátföldpuszta is the leading candidate.",
+        "sources": [
+          "https://archeodatabase.hnm.hu/hu/node/47262",
+          "https://www.academia.edu/44679508"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.2614,
+          47.7275
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_azaum",
+        "category": "auxiliary_fort",
+        "name_latin": "Azaum",
+        "name_english": "Azaum",
+        "province": "Pannonia Superior",
+        "modern_location": "Almásfüzitő, Hungary",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A castellum sat 6 kilometers east of the legionary base at Brigetio, watching the Danube where two small streams met the river. The 2nd-century Itinerarium Antonini recorded it under the name Azaum, drawn from the local Azali tribe. Rescue excavations in 1959-1960, forced by a hydroelectric project, uncovered its western gateway. A civilian settlement grew alongside the garrison to serve the Brigetio-Aquincum road.",
+        "sources": [
+          "https://hu.wikipedia.org/wiki/Azaum",
+          "https://www.wikidata.org/wiki/Q1648133"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.5372,
+          47.759
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_crumerum",
+        "category": "auxiliary_fort",
+        "name_latin": "Crumerum",
+        "name_english": "Crumerum",
+        "province": "Pannonia Superior",
+        "modern_location": "Nyergesújfalu, Hungary",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Perched on Sánc-hegy hill on the Danube's right bank, this fort sat roughly 27 kilometers east of Brigetio along the limes road toward Aquincum. An 18th-century traveler, Richard Pococke, still found Roman bricks and wall foundations scattered across the site. Later quarrying and 18th-century conflict destroyed most of the visible structure. Aerial surveys today pick out its outline only as shadow marks in the fields.",
+        "sources": [
+          "https://hu.wikipedia.org/wiki/Crumerum",
+          "http://dare.ht.lu.se/places/10857.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.055,
+          47.7827
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_cirpi",
+        "category": "auxiliary_fort",
+        "name_latin": "Cirpi",
+        "name_english": "Cirpi",
+        "province": "Pannonia Superior",
+        "modern_location": "Dunabogdány, Hungary",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A palisade camp measuring 124 by 147 meters went up here around the turn of the 2nd century, the first Pannonia Superior post south of the provincial border along the Danube Bend. The cohors II Alpinorum equitata, previously stationed at Cologne, later garrisoned the site before it was rebuilt in stone. Excavations begun in 1930 by Ákos Szalay have never resumed. Its outline is still visible in the terrain near Tahi today.",
+        "sources": [
+          "https://de.wikipedia.org/wiki/Kastell_Dunabogd%C3%A1ny",
+          "https://www.wikidata.org/wiki/Q1735351"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0729,
+          47.665
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_ulcisia_castra",
+        "category": "auxiliary_fort",
+        "name_latin": "Ulcisia Castra",
+        "name_english": "Ulcisia Castra",
+        "province": "Pannonia Inferior",
+        "modern_location": "Szentendre, Hungary",
+        "built": 106,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Built in the first years of the 2nd century, this 134 by 205 meter camp on the Danube Bend housed up to 1,000 soldiers behind double moats and square towers. Its name is thought to mean 'wolf camp.' The fully excavated principia and stone finds are now displayed in Szentendre's Ferenczy Károly Museum. Emperors Septimius Severus and Caracalla both later passed through the post on Danube campaigns.",
+        "sources": [
+          "https://pleiades.stoa.org/places/197564",
+          "https://iranyszentendre.hu/en/tortenelmunk/ulcisia-castra/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9846,
+          47.3908
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_campona",
+        "category": "auxiliary_fort",
+        "name_latin": "Campona",
+        "name_english": "Campona",
+        "province": "Pannonia Inferior",
+        "modern_location": "Nagytétény, Budapest, Hungary",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The ala I Tungrorum Frontoniana, transferred from Aquincum, built the first palisade camp here under Domitian before it was rebuilt in stone as a 178 by 200 meter fort. Triple ditches and paired corner towers ringed its walls. A Mithraic relief turned up among the finds from its vicus, now buried under modern Nagytétény. The fort's eastern and southern gates remain visible on site today.",
+        "sources": [
+          "https://www.aquincum.hu/en/romaiorokseg/campona-segedcsapat-tabora-nagytetenyben/",
+          "https://www.wikidata.org/wiki/Q973274"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.95,
+          47.2833
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_matrica",
+        "category": "auxiliary_fort",
+        "name_latin": "Matrica",
+        "name_english": "Matrica",
+        "province": "Pannonia Inferior",
+        "modern_location": "Százhalombatta, Hungary",
+        "built": 20,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "An earth-and-timber fort went up on the Danube's west bank early in the 1st century, some 33 kilometers south of Aquincum according to the Itinerarium Antonini. Its stone rebuild came only after the Marcomannic Wars, around the turn of the 3rd century. A military vicus of merchants, craftsmen and soldiers' families grew up beside the camp, mixing with the local Celtic population. A well inside the principia has yielded some of the site's best-studied finds.",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q1659457",
+          "https://www.danubetourism.eu/roman-matrica-fort-and-vicus-szazhalombatta/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8833,
+          47.1333
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_vetus_salina",
+        "category": "auxiliary_fort",
+        "name_latin": "Vetus Salina",
+        "name_english": "Vetus Salina",
+        "province": "Pannonia Inferior",
+        "modern_location": "Adony, Hungary",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Named in Ptolemy's Geography, this Danube-bank camp held the cohors II Alpinorum until it handed over to the cohors III Batavorum around 117-120 CE. A tribune of the Batavian cohort dedicated an altar to the goddess Vagdavercustis, otherwise unknown in Pannonia. A Jupiter Dolichenus sanctuary went up just outside the fort's northwest corner after the Marcomannic Wars. A late Roman cemetery of some 20 graves was later cut into the abandoned camp itself.",
+        "sources": [
+          "https://pleiades.stoa.org/places/197580",
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Dvetus-salina"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9167,
+          46.9
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_annamatia",
+        "category": "auxiliary_fort",
+        "name_latin": "Annamatia",
+        "name_english": "Annamatia",
+        "province": "Pannonia Inferior",
+        "modern_location": "Baracs, Hungary",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Excavations between 1999 and 2005 uncovered a fort garrisoned by the cohors VII Breucorum, whose stamped tiles make up roughly a quarter of all bricks found on site. A bronze miniature sword pendant, one of only 17 known from the entire Roman world, points to soldiers arriving from Germania Superior around 130-132 CE. Two barrack blocks built parallel to the fort wall were traced through several construction phases. A previously unrecorded gate design was uncovered here in 2000-2001.",
+        "sources": [
+          "https://akjournals.com/view/journals/068/41/1-2/article-p55.xml",
+          "https://www.wikidata.org/wiki/Q1265006"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8815,
+          46.6557
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_lussonium",
+        "category": "auxiliary_fort",
+        "name_latin": "Lussonium",
+        "name_english": "Lussonium",
+        "province": "Pannonia Inferior",
+        "modern_location": "Dunakömlőd, Paks, Hungary",
+        "built": 45,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "An auxiliary garrison settled on Bottyán Hill during Claudius's reign, among the earliest forts on this stretch of the Danube limes. A military diploma recovered from the site confirmed decades of later excavation work here. Tolna County's only restored Roman ruin garden now opens the fort's foundations to visitors. It was named a protected heritage site and 'Tolna jewel' in 2020.",
+        "sources": [
+          "https://paks.hu/en/tourism/sights/cultural-institutions-natural-and-built-values/lussonium-ruins-of-the-age-of-the-roman-empire-closed-until-spring-2020.450",
+          "https://vici.org/vici/7250/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.831,
+          46.4465
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_alta_ripa",
+        "category": "auxiliary_fort",
+        "name_latin": "Alta Ripa",
+        "name_english": "Alta Ripa",
+        "province": "Pannonia Inferior",
+        "modern_location": "Tolna, Hungary",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Alta Ripa, 'the high bank,' held a link position in the chain of forts running down the Ripa Pannonica between Lussonium and Alisca. Its name described the site's raised position over the Danube floodplain. Centuries of river erosion have since swallowed most of its remains. It survives today chiefly through its listing in Roman itineraries as a fixed station on the frontier road.",
+        "sources": [
+          "https://it.wikipedia.org/wiki/Alta_Ripa",
+          "http://imperium.ahlfeldt.se/places/10909.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.7579,
+          46.3126
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_alisca",
+        "category": "auxiliary_fort",
+        "name_latin": "Alisca",
+        "name_english": "Alisca",
+        "province": "Pannonia Inferior",
+        "modern_location": "Őcsény, Hungary",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman itineraries list this fort as 'Alisca ad latus,' set on the Báta stream south of Szekszárd on the Danube's right bank. An inscribed stone recorded soldiers likely lost when a unit shipped out to Moesia around 98-99 CE, pointing to a late-1st-century garrison. Its true location was long misplaced at Szekszárd's Kálvária hill before researcher Mór Wosinsky reassigned it to Őcsény. It filled the gap on the limes road between Lugio and Alta Ripa.",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q282806",
+          "https://mek.oszk.hu/03400/03410/html/365.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.7587,
+          46.0817
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_lugio",
+        "category": "auxiliary_fort",
+        "name_latin": "Lugio",
+        "name_english": "Lugio",
+        "province": "Pannonia Inferior",
+        "modern_location": "Dunaszekcső, Hungary",
+        "built": 10,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A tombstone from the site proves the cohors I Alpinorum was already garrisoned here by 17 CE at the latest, making Lugio one of the earliest inscribed Roman posts in eastern Pannonia. The camp sat on Várhegy, a fortified bluff rising 100 meters over a likely Danube crossing point. By the 2nd century the cohors VII Breucorum shared the site with a detachment of legio II Adiutrix. Most of the Roman-era finds now lie beneath the modern village.",
+        "sources": [
+          "https://www.academia.edu/37156082/AN_EARLY_ROMAN_TOMBSTONE_FROM_DUNASZEKCS%C5%90_TRHR_201",
+          "https://www.wikidata.org/wiki/Q964298"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.6839,
+          45.9561
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_altinum",
+        "category": "auxiliary_fort",
+        "name_latin": "Altinum",
+        "name_english": "Altinum",
+        "province": "Pannonia Inferior",
+        "modern_location": "Kölked, Hungary",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This castellum and its attached vicus sat at Hajlokpart on the Danube, marking roughly where Pannonia Inferior's Hungarian limes sector gave way to its Croatian-Serbian continuation. A watchtower at nearby Sátorhely-Törökdomb extended its field of observation along the river. It formed a link in the unbroken line of forts, watchtowers and the limes road running the length of the Pannonian frontier. Little of the site has been excavated compared with neighboring forts.",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q600243",
+          "https://archeodatabase.hnm.hu/en/node/51518"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9877,
+          45.4841
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_teutoburgium",
+        "category": "auxiliary_fort",
+        "name_latin": "Teutoburgium",
+        "name_english": "Teutoburgium",
+        "province": "Pannonia Inferior",
+        "modern_location": "Dalj, Croatia",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Built near the Drava's confluence with the Danube in the 1st century CE, this fort at various times garrisoned the ala II Hispanorum Aravacorum and the ala I civium Romanorum. Stray finds of javelin heads and horse-harness pendants trace its cavalry garrison across the 1st and 2nd centuries. A 19th-century brickyard built directly over the site destroyed most of its structural remains. Ongoing riverbank erosion continues to eat away what is left.",
+        "sources": [
+          "https://pleiades.stoa.org/places/197551",
+          "https://limescroatia.eu/dalj-2/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.099,
+          45.2969
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_cornacum",
+        "category": "auxiliary_fort",
+        "name_latin": "Cornacum",
+        "name_english": "Cornacum",
+        "province": "Pannonia Inferior",
+        "modern_location": "Sotin, Croatia",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Set on the loess plateau of Popino Brdo above the Danube, this was one of the most important bases on Croatia's stretch of the limes from the 1st century CE onward. A recovered Roman spatha, now held in the Zagreb Archaeological Museum, points to the sword-armed cavalry once quartered here. No systematic excavation has ever reached the fort itself, leaving its exact layout unrecovered. Stamped bricks and roof tiles remain the main record of its Roman garrison.",
+        "sources": [
+          "https://topostext.org/place/453191FCor",
+          "https://en.wikipedia.org/wiki/Cornacum"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.3753,
+          45.2219
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_cuccium",
+        "category": "auxiliary_fort",
+        "name_latin": "Cuccium",
+        "name_english": "Cuccium",
+        "province": "Pannonia Inferior",
+        "modern_location": "Ilok, Croatia",
+        "built": 30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A necropolis dated to the first third of the 1st century CE, holding burials of auxiliary soldiers and their dependents, confirms an early Roman military presence on Ilok's hilltop. The fort itself was traditionally placed at the Gornji Grad but its precise footprint was never pinned down. Systematic digs between 2001 and 2007 turned up 3rd-century architectural remains nearby. Later builders recycled some of its stonework into the medieval fortress that replaced it.",
+        "sources": [
+          "https://limescroatia.eu/ilok-2/",
+          "https://en.wikipedia.org/wiki/Cuccium"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.6353,
+          45.2132
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_bononia",
+        "category": "auxiliary_fort",
+        "name_latin": "Bononia",
+        "name_english": "Bononia",
+        "province": "Pannonia Inferior",
+        "modern_location": "Banoštor, Serbia",
+        "built": 1,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Garrisoned by a cohors Alpinorum on the northern slopes of Fruška Gora, this fort doubled as a river port serving Sirmium downstream. Paired with the Onagrinum fort across the Danube at Begeč, it helped Rome control river traffic through the Srem region. Large bath buildings once filled the eastern half of its rectangular plateau site. A sizeable Roman cemetery still lies on the slope just east of the old ramparts.",
+        "sources": [
+          "https://kulturnonasledje.in.rs/wp/language/en/bononia-2/",
+          "https://en.wikipedia.org/wiki/Bononia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.319,
+          45.0747
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_rittium",
+        "category": "auxiliary_fort",
+        "name_latin": "Rittium",
+        "name_english": "Rittium",
+        "province": "Pannonia Inferior",
+        "modern_location": "Surduk, Serbia",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "At the Gradina site on a raised Danube bank, 1955 trenching found a 1st-century settlement layered beneath a later military camp and brick-built tombs. The ala I Augusta Ityraeorum, a cavalry unit originally raised in Syria, garrisoned the post. Coins recovered on site date use of the position back to the 1st century CE. Its Turkish-derived modern name, Surduk, references the cliffs overlooking the river.",
+        "sources": [
+          "https://kulturnonasledje.in.rs/wp/language/en/ritium-2/",
+          "http://imperium.ahlfeldt.se/places/10918.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.2833,
+          44.95
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_burgenae",
+        "category": "auxiliary_fort",
+        "name_latin": "Burgenae",
+        "name_english": "Burgenae",
+        "province": "Pannonia Inferior",
+        "modern_location": "Novi Banovci, Serbia",
+        "built": 10,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This Danube fort sat roughly 16 kilometers south of Rittium, watching the river approach to Taurunum and the Sava confluence. Excavations have reached only limited parts of its defenses, but the distinctive shapes of its surviving towers help date separate building phases. The site remained under some form of occupation from the late Republic through the 7th century. Its Roman name survives directly in the modern village of (Novi) Banovci.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Burgenae",
+          "https://www.trismegistos.org/place/29301"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4011,
+          44.8431
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_taurunum",
+        "category": "auxiliary_fort",
+        "name_latin": "Taurunum",
+        "name_english": "Taurunum",
+        "province": "Pannonia Inferior",
+        "modern_location": "Zemun, Belgrade, Serbia",
+        "built": 15,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Rome absorbed this Celtic river town into Pannonia around 15 CE, turning its position at the Sava-Danube confluence into a naval base for the Classis Flavia Pannonica. Detachments of legio VII Claudia, based across the rivers at Singidunum, manned smaller units posted here. A Roman cemetery beneath Zemun's later Gardoš tower has yielded 3rd- and 4th-century graves. Neither the fort nor the fleet harbor itself has been pinned down archaeologically with certainty.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Taurunum",
+          "https://vici.org/vici/7377/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.062,
+          44.7126
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_margum",
+        "category": "auxiliary_fort",
+        "name_latin": "Margum",
+        "name_english": "Margum",
+        "province": "Moesia Superior",
+        "modern_location": "Dubravica, Serbia",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Positioned where the Great Morava river meets the Danube, this fortified customs post controlled river traffic and trade through the 1st to 4th centuries. Excavations between 1947 and 1949 identified three separate building phases at the site. Roman houses with painted walls and hypocaust heating were later uncovered in its civilian quarter. Marcus Aurelius eventually elevated the growing settlement to a municipium.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Margum",
+          "http://dare.ht.lu.se/places/21368.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.3303,
+          44.8128
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_lederata",
+        "category": "auxiliary_fort",
+        "name_latin": "Lederata",
+        "name_english": "Lederata",
+        "province": "Moesia Superior",
+        "modern_location": "Ram, Serbia",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "One of the largest forts on the Upper Moesian limes, this 200 by 150 meter camp went up on a hilltop overlooking a Danube crossing in the late 1st century. Trajan's army is thought to have used a pontoon bridge here to launch its invasion of Dacia, a crossing depicted at the opening of the reliefs on Trajan's Column in Rome. Builders quarried local green shale for its walls and towers. Justinian later shrank the fort to a 50 by 60 meter fortification in its northeast corner.",
+        "sources": [
+          "https://kulturnonasledje.in.rs/wp/language/en/lederata-2/",
+          "https://www.donau-uni.ac.at/dam/jcr:efd482f8-ca06-40d1-99ed-c4495714b8a0/LDL_Identification%20Pilot%20Sites%20-%20Ram-Lederata_RS.pdf"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.5153,
+          44.7566
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_pincum",
+        "category": "auxiliary_fort",
+        "name_latin": "Pincum",
+        "name_english": "Pincum",
+        "province": "Moesia Superior",
+        "modern_location": "Veliko Gradište, Serbia",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Rome folded this Thracian-Dacian settlement at the mouth of the Pek river into Moesia Superior in the 1st century CE, garrisoning it with troops of legio VII Claudia. It administered the nearby Aeliana Picensia mining district and gave its name to the local Pincenses community recorded by Ptolemy. A 2nd-century marble funerary relief of Achilles dragging Hector around Troy's walls survives from the site. A matching fortification stood across the river to cover the opposite bank.",
+        "sources": [
+          "https://vici.org/vici/42519/",
+          "https://en.wikipedia.org/wiki/Veliko_Gradiste"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.6333,
+          44.65
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_cuppae",
+        "category": "auxiliary_fort",
+        "name_latin": "Cuppae",
+        "name_english": "Cuppae",
+        "province": "Moesia Superior",
+        "modern_location": "Golubac, Serbia",
+        "built": 95,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Vicus Cuppae rose at the western edge of the Iron Gates gorge right at the turn of the 2nd century CE, administered from Viminacium as a stop on the road toward Nicomedia. It housed the praefectus of legio VII Claudia's frontier command in this section of the Danube. The post's Roman-era ruins were later built over by the medieval Golubac Fortress that now dominates the site. Repeated 6th- and 7th-century raids eventually emptied the settlement out.",
+        "sources": [
+          "https://www.trismegistos.org/place/29657",
+          "https://edh.ub.uni-heidelberg.de/edh/geographie/G014907"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.1522,
+          44.4647
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_taliata",
+        "category": "auxiliary_fort",
+        "name_latin": "Taliata",
+        "name_english": "Taliata",
+        "province": "Moesia Superior",
+        "modern_location": "Donji Milanovac, Serbia",
+        "built": 87,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Domitian rebuilt this fort's original earth-and-timber walls in stone in 87 CE, just before his own Dacian War, giving it a 134 by 126 meter footprint. It stood as one link in the tightly spaced chain of forts guarding the Iron Gates section of the Moesian limes. A full restoration followed in the later 3rd century, and semicircular corner towers were added in the 4th. Archaeologists later found an early Christian basilica built within its walls.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Taliata",
+          "https://www.trismegistos.org/place/29655"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.5439,
+          44.6536
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_diana",
+        "category": "auxiliary_fort",
+        "name_latin": "Diana",
+        "name_english": "Diana Fort",
+        "province": "Moesia Superior",
+        "modern_location": "Karataš, Serbia",
+        "built": 45,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Built under Tiberius and Claudius on cliffs above the Danube, this fort was destroyed during Domitian's Dacian War and rebuilt in 100 CE at nearly double its original 1-hectare size for Trajan's own campaign. Detachments from four Moesian legions rotated through alongside the cohors VI Thracum and cohors V Gallorum. The Tabula Traiana, an inscribed slab commemorating Trajan's canal cut through the Iron Gates in 101 CE, was found 150 meters from its walls. It remains one of the best-excavated forts on the entire Moesian limes.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Diana_Fort",
+          "https://www.eagle-network.eu/virtual-exhibition/inscriptions/1.12IronGate.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Diana_Fortress,_built_in_100_AD_during_Trajan's_preparations_for_the_Dacian_wars,_Moesia_Superior,_Serbia_(41353641185).jpg?width=800",
+        "image_credit": "Remains of Diana Fort at Karataš, rebuilt for Trajan's Dacian campaign · Wikimedia Commons",
+        "image_alt": "Stone wall remains of the Roman fort Diana on the Danube bank at Karataš, Serbia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.6692,
+          44.6131
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_pontes",
+        "category": "auxiliary_fort",
+        "name_latin": "Pontes",
+        "name_english": "Pontes",
+        "province": "Moesia Superior",
+        "modern_location": "Kostol, Serbia",
+        "built": 103,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Trajan's architect Apollodorus of Damascus built this 112 by 120 meter fort in 103 CE to guard the southern end of his new Danube bridge, at the time the longest in the Roman world. Crossing the bridge required passing through fortified camps at both ends. A bronze head from a statue of Trajan, once mounted at the bridge entrance, was recovered here and now sits in Belgrade's National Museum. Thick sections of the camp's ramparts still stand above ground today.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pontes_fort",
+          "http://www.danubelimes-serbia.rs/en/archaeological-sites/ponteskostol/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4525,
+          44.4619
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_egeta",
+        "category": "auxiliary_fort",
+        "name_latin": "Egeta",
+        "name_english": "Egeta",
+        "province": "Moesia Superior",
+        "modern_location": "Brza Palanka, Serbia",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Three successive fortifications on this stretch of the Danube, spanning the 1st through 6th centuries, made Egeta one of the longest-used military sites on the Iron Gates limes. By the 2nd century it housed the cohors I Cretum along the road linking Viminacium to Aquae. Excavations recovered cult objects tied to the Syrian god Jupiter Dolichenus from a shrine on site. Its large civilian settlement has since been repeatedly flooded by the Danube.",
+        "sources": [
+          "https://www.academia.edu/44855101/Dolicheneum_and_Dolichenus_cult_objects_from_the_locality_Egeta_Brza_Palanka",
+          "http://imperium.ahlfeldt.se/places/23256.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9078,
+          43.8169
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_ratiaria",
+        "category": "auxiliary_fort",
+        "name_latin": "Colonia Ulpia Traiana Ratiaria",
+        "name_english": "Ratiaria",
+        "province": "Moesia Inferior",
+        "modern_location": "Archar, Bulgaria",
+        "built": 75,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A Roman military base and arsenal grew up on the Danube's right bank in the 1st century, serving as a supply point during Trajan's Dacian Wars. Trajan raised its status to a full Roman colony after his 106 CE victory over Decebalus, naming it Colonia Ulpia Traiana Ratiaria. It later became the seat of a provincial governor and the base of legio XIII Gemina. The site lies 2 kilometers west of the modern village of Archar.",
+        "sources": [
+          "https://archaeologyinbulgaria.com/background-infonotes/fortresses-cities/ratiaria-colonia-ulpia-traiana-ratiaria-archar-bulgaria/",
+          "https://en.wikipedia.org/wiki/Ratiaria"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.2375,
+          43.8256
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_almus",
+        "category": "auxiliary_fort",
+        "name_latin": "Almus",
+        "name_english": "Almus",
+        "province": "Moesia Inferior",
+        "modern_location": "Lom, Bulgaria",
+        "built": 105,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A Roman road station and fort rose on the site of an older Thracian settlement, with the stone fortress itself built at the start of the 2nd century as part of Ratiaria's administrative district. Its pentagon-shaped circuit, roughly 4 hectares in area, carried round towers at each angle. A 1986-1990 excavation by the Lom Museum of History uncovered its structure in detail, and a later rescue dig found the western gate. Bulgaria declared the site a monument of national importance in 1971.",
+        "sources": [
+          "https://archaeologyinbulgaria.com/2015/07/14/bulgarian-archaeologists-discover-gate-of-ancient-roman-city-almus-in-danube-town-of-lom/",
+          "https://pleiades.stoa.org/places/206909"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.9556,
+          43.851
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_sexaginta_prista",
+        "category": "auxiliary_fort",
+        "name_latin": "Sexaginta Prista",
+        "name_english": "Sexaginta Prista",
+        "province": "Moesia Inferior",
+        "modern_location": "Ruse, Bulgaria",
+        "built": 85,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Its name means 'port of sixty ships,' and Domitian made it headquarters of the Classis Flavia Moesica river fleet around 85 CE before Trajan's Dacian conquest shifted the fleet base to Noviodunum. A temple to Apollo and the principia headquarters building were later uncovered on site. A 7-meter stretch of fortress wall from a later Diocletianic rebuild still stands in Ruse today. The Roman city was finally destroyed by Avar and Slavic raids after 596 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Classis_Flavia_Moesica",
+          "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Dsexaginta-prista"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
