@@ -7,7 +7,9 @@
    "type":"earthquake",
    "still_visible_in_117":true,
    "one_line":"An earthquake flattened much of Antioch on 13 December 115 while Trajan wintered there for the Parthian campaign, killing the consul Marcus Pedo Vergilianus and forcing Trajan himself to escape through a window; the city was still under reconstruction when he died two years later.",
-   "sources":["Cass. Dio 68.24-25","John Malalas, Chronographia 11.276"]
+   "sources":["Cass. Dio 68.24-25","John Malalas, Chronographia 11.276"],
+   "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/Antioch%20on%20the%20Orontes,%20Antakya,%20Turkey%20(35863345530).jpg?width=800",
+   "image_credit":"Modern Antakya (ancient Antioch), site of the 115 CE earthquake · Wikimedia Commons"
  }},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[14.4260,40.8214]},
  "properties":{
@@ -43,7 +45,9 @@
    "type":"flood",
    "still_visible_in_117":true,
    "one_line":"The Tiber, swollen by relentless rain, burst its banks across Rome's low ground in 15 CE and destroyed buildings and lives, prompting the Senate to create a standing board of curators to manage the river's banks and channel.",
-   "sources":["Tac. Ann. 1.76","Cass. Dio 57.14.7-8"]
+   "sources":["Tac. Ann. 1.76","Cass. Dio 57.14.7-8"],
+   "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/Tiber%20in%20flood%202.jpg?width=800",
+   "image_credit":"The Tiber river in flood, Rome · Wikimedia Commons"
  }},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[12.4828,41.8933]},
  "properties":{
@@ -53,7 +57,9 @@
    "type":"flood",
    "still_visible_in_117":true,
    "one_line":"In early March 69, amid the civil wars of the Year of the Four Emperors, the Tiber flooded parts of Rome that had never before been touched by high water, an inundation contemporaries read as an omen of that year's turmoil.",
-   "sources":["Tac. Hist. 1.86"]
+   "sources":["Tac. Hist. 1.86"],
+   "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/Tiber%20River,%20Rome%20(48494164807).jpg?width=800",
+   "image_credit":"The Tiber river at Rome · Wikimedia Commons"
  }},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[12.4769,41.8986]},
  "properties":{
@@ -63,7 +69,9 @@
    "type":"fire",
    "still_visible_in_117":true,
    "one_line":"A three-day fire swept Rome in 80 CE, burning from the Capitol to the Pantheon and destroying the Temple of Jupiter Capitolinus and Agrippa's Pantheon, after which Titus and then Domitian rebuilt the district over the following years.",
-   "sources":["Suet. Titus 8","Cass. Dio 66.24"]
+   "sources":["Suet. Titus 8","Cass. Dio 66.24"],
+   "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/0%20Arc%20de%20Titus%20-%20Forum%20Romain%20(3).JPG?width=800",
+   "image_credit":"The Arch of Titus in the Roman Forum, Rome · Wikimedia Commons"
  }},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[12.4924,41.8933]},
  "properties":{
@@ -86,7 +94,9 @@
    "type":"famine",
    "still_visible_in_117":true,
    "one_line":"A severe grain shortage struck Rome in 6 CE, forcing Augustus to expel gladiators and slaves up to a hundred miles from the city, ration the grain dole, and double free distributions from his own funds to quell the unrest it caused.",
-   "sources":["Cass. Dio 55.26-27"]
+   "sources":["Cass. Dio 55.26-27"],
+   "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/Ostia,%20horrea%20epagathiana%2001.JPG?width=800",
+   "image_credit":"Horrea (grain warehouse) at Ostia, Rome's grain port · Wikimedia Commons"
  }},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[0.9035,51.8959]},
  "properties":{
@@ -96,7 +106,9 @@
    "type":"barbarian_raid",
    "still_visible_in_117":true,
    "one_line":"Boudica's Iceni and Trinovantian allies overran Camulodunum in 60 or 61 CE, massacring the population and burning the Temple of Claudius after a garrison of only two hundred men failed to hold the undefended colony.",
-   "sources":["Tac. Ann. 14.31-33"]
+   "sources":["Tac. Ann. 14.31-33"],
+   "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/Camulodunum%20Roman%20Wall,%20Colchester.jpg?width=800",
+   "image_credit":"Roman wall remains at Camulodunum, Colchester, England · Wikimedia Commons"
  }},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[6.4404,51.6553]},
  "properties":{
@@ -106,7 +118,9 @@
    "type":"barbarian_raid",
    "still_visible_in_117":true,
    "one_line":"Julius Civilis and his Batavian rebels besieged the legionary fortress of Castra Vetera from September 69 into 70, starved its two trapped legions into surrender, and burned the camp along with every Roman post north of Mainz.",
-   "sources":["Tac. Hist. 4.21-4.60"]
+   "sources":["Tac. Hist. 4.21-4.60"],
+   "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/City%20wall%20(1)%20(archaeological%20park%20Xanten,%20Germany,%202005-04-23).jpg?width=800",
+   "image_credit":"Roman city wall remains at the archaeological park in Xanten, Germany, near Castra Vetera · Wikimedia Commons"
  }},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[18.5,40.0]},
  "properties":{
@@ -116,7 +130,9 @@
    "type":"shipwreck_disaster",
    "still_visible_in_117":true,
    "one_line":"The ship carrying a 26-year-old Josephus toward Rome sank in the Adriatic Sea around 63 CE with roughly six hundred people aboard; he swam through the night until a passing ship from Cyrene picked up him and eighty other survivors.",
-   "sources":["Joseph. Vita 3.13-16"]
+   "sources":["Joseph. Vita 3.13-16"],
+   "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/Josephusbust.jpg?width=800",
+   "image_credit":"Portrait bust identified as the historian Flavius Josephus · Wikimedia Commons"
  }},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[8.4210,45.3204]},
  "properties":{
@@ -152,7 +168,9 @@
    "type":"fire",
    "still_visible_in_117":true,
    "one_line":"Vespasian's Danubian legions stormed Cremona over four days in late October 69 during the civil war against Vitellius, burning the wealthy city to its temple of Mefitis alone; Vespasian later funded its rebuilding, but Tacitus still described it as diminished.",
-   "sources":["Tac. Hist. 3.32-34"]
+   "sources":["Tac. Hist. 3.32-34"],
+   "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/Cremona,%20vista%20dal%20torrazzo%2004%20piazza%20del%20duomo.JPG?width=800",
+   "image_credit":"The city of Cremona, Italy, site of its 69 CE destruction · Wikimedia Commons"
  }},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[4.8357,45.7640]},
  "properties":{
@@ -162,7 +180,9 @@
    "type":"fire",
    "still_visible_in_117":true,
    "one_line":"A fire destroyed the Roman colony of Lugdunum in a single night around 65 CE, and Nero sent four million sesterces in relief, repaying the city for the money it had earlier donated toward rebuilding Rome after its own great fire.",
-   "sources":["Sen. Ep. 91","Tac. Ann. 16.13"]
+   "sources":["Sen. Ep. 91","Tac. Ann. 16.13"],
+   "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/01.%20Th%C3%A9%C3%A2tre%20romain%20de%20Fourvi%C3%A8re.JPG?width=800",
+   "image_credit":"The Roman theatre of Fourvière, ancient Lugdunum, Lyon, France · Wikimedia Commons"
  }},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[35.2354,31.7767]},
  "properties":{
@@ -185,7 +205,9 @@
    "type":"barbarian_raid",
    "still_visible_in_117":true,
    "one_line":"Boudica's army swept into the twenty-year-old trading settlement of Londinium in 60 or 61 CE and burned it flat, part of a death toll Tacitus put at seventy thousand across the province's ruined towns. Archaeologists still hit the same half-metre band of red, oxidised clay under the City of London wherever they dig to this depth, a single-episode destruction layer dated to the revolt. The settlement was rebuilt within a few years and had overtaken Camulodunum as Britain's leading town well before 117 CE.",
-   "sources":["Tac. Ann. 14.33"]
+   "sources":["Tac. Ann. 14.33"],
+   "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/1237%20Burnt%20daub%20(FindID%20137393).jpg?width=800",
+   "image_credit":"Burnt daub from the Boudican fire destruction layer, Roman Londinium · Wikimedia Commons"
  }},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-0.3565,51.7451]},
  "properties":{
@@ -195,7 +217,9 @@
    "type":"barbarian_raid",
    "still_visible_in_117":true,
    "one_line":"Boudica's forces destroyed Verulamium in the same campaign that leveled Camulodunum and Londinium, targeting the town for its enthusiastic collaboration with Roman rule. Tacitus records the Britons took no prisoners for ransom, only slaughter, at all three sites combined. Excavation has turned up the same scorched destruction horizon here as at London, matching the single-year date of the revolt. The town recovered to become a flourishing municipium, one of only a few in Roman Britain to hold that status.",
-   "sources":["Tac. Ann. 14.33"]
+   "sources":["Tac. Ann. 14.33"],
+   "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/Verulamium%20Roman%20Theatre%202.jpg?width=800",
+   "image_credit":"The Roman theatre of Verulamium, St Albans, England · Wikimedia Commons"
  }},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[4.8059,44.1352]},
  "properties":{
@@ -205,7 +229,9 @@
    "type":"military_disaster",
    "still_visible_in_117":true,
    "one_line":"Two feuding Roman consuls lost their armies to the Cimbri and Teutones outside Arausio on 6 October 105 BCE, a defeat Livy and Orosius put at 80,000 soldiers and 40,000 camp followers dead in a single afternoon. Romans of Trajan's day still ranked it as the empire's worst battlefield disaster, ahead of Cannae. The catastrophe broke the Senate's grip on military appointments and opened the way for Marius, who reorganized the legions that would go on to conquer Gaul, Africa, and the East.",
-   "sources":["Liv. Perioch. 67","Oros. 5.16"]
+   "sources":["Liv. Perioch. 67","Oros. 5.16"],
+   "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/Triumphal%20Arch%20of%20Orange%2002.JPG?width=800",
+   "image_credit":"Roman triumphal arch at Orange (ancient Arausio), France · Wikimedia Commons"
  }},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[29.9187,31.2001]},
  "properties":{
@@ -215,7 +241,9 @@
    "type":"riot",
    "still_visible_in_117":true,
    "one_line":"Mobs in Alexandria attacked the city's Jewish quarter in the summer of 38 CE after the prefect Flaccus stripped Jewish residents of citizenship and packed them into one district, an event the philosopher Philo witnessed and recorded in his In Flaccum. Synagogues were gutted, and Philo describes victims stoned, dragged, and burned through the streets. Flaccus was arrested and later executed, but the episode left a memory of communal violence still current when the far larger Kitos War revolt convulsed the same city's Jewish population in 115-117 CE.",
-   "sources":["Philo, In Flaccum"]
+   "sources":["Philo, In Flaccum"],
+   "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/Philon.jpg?width=800",
+   "image_credit":"Portrait of Philo of Alexandria, who chronicled the 38 CE Alexandria pogrom · Wikimedia Commons"
  }},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[12.4829,41.8933]},
  "properties":{
@@ -225,7 +253,9 @@
    "type":"fire",
    "still_visible_in_117":true,
    "one_line":"Vitellian troops stormed the Capitoline Hill on 19 December 69 CE and burned the Temple of Jupiter Optimus Maximus, Rome's oldest and most sacred shrine, during the fighting that killed Vitellius's own brother Sabinus inside it. Vespasian personally carried away the first basket of rubble when reconstruction began the following year. His new temple stood barely a decade before burning again in 80 CE, this time by accident, and was rebuilt a third time under Domitian. In 117 CE Rome's skyline still carried that Domitianic temple on the Capitoline.",
-   "sources":["Tac. Hist. 3.71-72","Suet. Vit. 15"]
+   "sources":["Tac. Hist. 3.71-72","Suet. Vit. 15"],
+   "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20Jupiter%20Optimus%20Maximus.JPG?width=800",
+   "image_credit":"Ruins of the Temple of Jupiter Optimus Maximus, Capitoline Hill, Rome · Wikimedia Commons"
  }},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[12.4853,41.8902]},
  "properties":{
@@ -235,7 +265,9 @@
    "type":"famine",
    "still_visible_in_117":true,
    "one_line":"Grain shipments failed so badly in 51 CE that Rome had barely fifteen days of food left, and Tacitus credits only a mild winter with averting mass starvation. A crowd cornered Claudius in the Forum while he was hearing legal cases and pelted him with stale bread crusts in protest. The scare pushed Claudius to offer merchants guaranteed compensation for grain-ship losses at sea, a subsidy that helped keep Rome's supply chain running for decades afterward.",
-   "sources":["Tac. Ann. 12.43","Suet. Claud. 18"]
+   "sources":["Tac. Ann. 12.43","Suet. Claud. 18"],
+   "image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/Horrea%20di%20Hortensius.jpg?width=800",
+   "image_credit":"Horrea (grain warehouse) of Hortensius, Ostia, Rome's grain supply · Wikimedia Commons"
  }},
  {
   "type": "Feature",
