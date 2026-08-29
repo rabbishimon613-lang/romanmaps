@@ -7423,7 +7423,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Terra_Sigillata_Museum.jpg?width=800",
-        "image_credit": "The Terra-Sigillata-Museum building in Rheinzabern · Wikimedia Commons (CC BY-SA)"
+        "image_credit": "The Terra-Sigillata-Museum building in Rheinzabern · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": [
+          {
+            "author": "Itinerarium Antonini",
+            "work": "Antonine Itinerary",
+            "ref": "route Argentoratum–Mogontiacum, station 'Tabernis'",
+            "note": "Lists 'Tabernis' as a station 13 Roman miles from Saletio and 11 from Noviomagus on the Rhine valley road — the waystation that grew into the great terra-sigillata-producing town of Rheinzabern."
+          }
+        ]
       }
     },
     {
@@ -10755,7 +10763,10 @@
           "https://en.wikipedia.org/wiki/Mazara_del_Vallo_Roman_shipwreck",
           "https://www.cnn.com/2026/08/10/science/sicily-roman-shipwreck-scli-intl"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Satiro Danzante - Museo del Satiro - Mazara del Vallo - Sicilia Italia - panoramio.jpg?width=800",
+        "image_credit": "Dancing Satyr of Mazara del Vallo, recovered from the sea off Sicily · Wikimedia Commons",
+        "image_alt": "Bronze Dancing Satyr statue recovered from the seabed near Mazara del Vallo"
       }
     },
     {
@@ -17566,6 +17577,9 @@
           "https://www.historyhit.com/locations/volubilis/"
         ],
         "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Volubilis Longshot II.jpg?width=800",
+        "image_credit": "Volubilis archaeological site, Morocco · Wikimedia Commons",
+        "image_alt": "Wide view of the Volubilis ruins including the city's Roman-era walls",
         "ancient_sources": [
           {
             "author": "Pliny the Elder",
@@ -24615,6 +24629,9 @@
           "https://revistatemalivre.com/conimbriga07-html/"
         ],
         "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruinas de Conimbriga.jpg?width=800",
+        "image_credit": "Ruins of Conimbriga, Portugal · Wikimedia Commons",
+        "image_alt": "Roman ruins at Conimbriga including the city's defensive walls",
         "ancient_sources": [
           {
             "author": "Pliny the Elder",
@@ -25337,6 +25354,9 @@
           "https://www.academia.edu/11730685/In_front_of_the_gates_of_a_roman_legion_camp_New_Roman_findings_from_the_northern_part_of_Bonn"
         ],
         "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Badegebäude, vicus bonnensis.JPG?width=800",
+        "image_credit": "Bathing building of the vicus bonnensis (Roman canabae), Bonn · Wikimedia Commons",
+        "image_alt": "Remains of a Roman bathing building in the civilian settlement outside the Bonna fortress",
         "ancient_sources": [
           {
             "author": "Tacitus",
@@ -26860,6 +26880,8 @@
           "https://actianicopolisarchaeopark.gr/en/nikopolis/the-roman-walls/"
         ],
         "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicopolis walls.jpg?width=800",
+        "image_credit": "City walls of ancient Nicopolis · Wikimedia Commons",
         "ancient_sources": [
           {
             "author": "Strabo",
@@ -31970,7 +31992,9 @@
           "https://en.wikipedia.org/wiki/Arch_of_Caracalla_(Thebeste)",
           "https://www.ostia-antica.org/caracalla/travels/algeria.htm"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Caracalla tebessa 3.jpg?width=800",
+        "image_credit": "Arch of Caracalla, Tébessa (ancient Theveste) · Wikimedia Commons"
       }
     },
     {
@@ -32182,7 +32206,9 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Thuburbo_Majus"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Thuburbo Majus vue vers Capitole.jpg?width=800",
+        "image_credit": "Capitolium of Thuburbo Majus · Wikimedia Commons"
       }
     },
     {
@@ -32292,7 +32318,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Portique_des_Petronii_(Thuburbo_Majus).jpg?width=800",
-        "image_credit": "Wikimedia Commons"
+        "image_credit": "Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "ILAfr 271",
+            "work": "dedicatory inscription",
+            "ref": "c. 225 CE",
+            "note": "Records P. Petronius Felix, ex-tribune and primipilaris, and his sons building the palaestra at their own expense, with distributions made to the town's decurions and officials at its dedication."
+          }
+        ]
       }
     },
     {
@@ -32434,7 +32468,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sbeitla_Arch_of_Antoninus_Pius.jpg?width=800",
-        "image_credit": "Wikimedia Commons"
+        "image_credit": "Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "in situ dedicatory inscription",
+            "work": "attic inscription, Arch of Antoninus Pius",
+            "ref": "139 CE",
+            "note": "The arch's own (heavily worn) attic inscription carries Antoninus Pius's imperial titulature; it is the only monument at Sufetula whose construction date is fixed by its own text rather than by excavation alone."
+          }
+        ]
       }
     },
     {
@@ -33011,7 +33053,15 @@
           "https://www.trismegistos.org/place/3655",
           "https://bmcr.brynmawr.edu/2007/2007.01.29/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "O.Krok. 1–151",
+            "work": "military ostraca: correspondence and a daily duty journal",
+            "ref": "praesidium archive, ed. H. Cuvigny 2005",
+            "note": "Greek and Latin ostraca excavated at the fort include an official day-by-day journal of its routine covering 8 February–28 March 109 CE, naming Krokodilo directly as the writing post."
+          }
+        ]
       }
     },
     {
@@ -33146,7 +33196,15 @@
           "https://www.researchgate.net/publication/290956081_The_shrine_in_the_praesidium_of_Dios_Eastern_Desert_of_Egypt_Graffiti_and_oracles_in_context",
           "https://www.trismegistos.org/geo/detail.php?tm=4078"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Itinerarium Antonini",
+            "work": "Antonine Itinerary",
+            "ref": "route Coptos–Berenike",
+            "note": "Lists this desert-road station as 'Iovis'; a Latin dedicatory inscription found at the fort in 2005 gives its foundation date as 115/116 CE, and ostraca recovered there call it Dios."
+          }
+        ]
       }
     },
     {
@@ -33174,7 +33232,15 @@
           "https://en.wikipedia.org/wiki/Lex_Manciana",
           "https://en.wikipedia.org/wiki/Villamagna_in_Proconsulari"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "CIL VIII 25902",
+            "work": "Lex Manciana inscription (Henchir Mettich)",
+            "ref": "116/117 CE",
+            "note": "A bronze/stone copy of estate regulations for the imperial estate Villa Magna Variana sive Mappalia Siga, setting out the coloni's right to work the estate's unused (subseciva) land under the lex Manciana."
+          }
+        ]
       }
     },
     {
@@ -33204,7 +33270,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa_Romana_Bal%C3%A1ca_01.jpg?width=800",
-        "image_credit": "Villa Romana Balaca, Nemesvamos, Hungary · Wikimedia Commons"
+        "image_credit": "Villa Romana Balaca, Nemesvamos, Hungary · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "tile stamp, Balácapuszta villa",
+            "work": "instrumentum domesticum inscription",
+            "ref": "3rd century CE",
+            "note": "A stamped roof tile reading 'X VIKVS AVGVS' (vicus Augusti) recovered at the villa supports identifying the estate as part of an imperial (fiscal) property."
+          }
+        ]
       }
     },
     {
@@ -33234,7 +33308,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kaiservilla_Bruckneudorf_02.jpg?width=800",
-        "image_credit": "Kaiservilla Bruckneudorf, Burgenland, Austria · Wikimedia Commons"
+        "image_credit": "Kaiservilla Bruckneudorf, Burgenland, Austria · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Ammianus Marcellinus",
+            "work": "Res Gestae",
+            "ref": "30.10",
+            "note": "Describes the empress Justina and the infant Valentinian II staying at the imperial villa Murocincta when Valentinian I died nearby at Brigetio in November 375 CE — an estate widely identified with the excavated villa at Bruckneudorf."
+          }
+        ]
       }
     },
     {
@@ -33495,7 +33577,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Terrace_Houses_in_Ephesus.jpg?width=800",
         "image_credit": "Terrace Houses, Ephesus · Wikimedia Commons",
-        "image_alt": "Excavated Roman terrace houses at Ephesus with peristyle courtyards and mosaic floors"
+        "image_alt": "Excavated Roman terrace houses at Ephesus with peristyle courtyards and mosaic floors",
+        "ancient_sources": [
+          {
+            "author": "in situ inscriptions, Terrace House 2 (Dwelling Unit 6)",
+            "work": "honorific / ownership inscriptions",
+            "ref": "mid-2nd century CE",
+            "note": "Inscriptions found within the residence name its owner as Gaius Flavius Furius Aptus, a leading Ephesian citizen who served as alytarch (games president) of the city's Olympic festival."
+          }
+        ]
       }
     },
     {
@@ -33576,7 +33666,17 @@
           "https://www.uni-koeln.de/phil-fak/ifa/zpe/downloads/1997/116pdf/116273.pdf",
           "https://www.roamintheempire.com/index.php/2026/01/21/sirmium-part-ii/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sremska Mitrovica - The ruins of Imperial Palace of Syrmium.JPG?width=800",
+        "image_credit": "Ruins of the Imperial Palace of Sirmium, Sremska Mitrovica · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "AE 1994, 1418",
+            "work": "votive altar",
+            "ref": "2nd–3rd century CE",
+            "note": "One of more than eighty beneficiarius altars unearthed at the Sirmium statio in 1988 — the largest single cache of beneficiarii dedications ever found — this one set up by a beneficiarius consularis to Jupiter and the Genius loci."
+          }
+        ]
       }
     },
     {
@@ -33602,7 +33702,17 @@
         "sources": [
           "https://www.uni-koeln.de/phil-fak/ifa/zpe/downloads/1996/113pdf/113286.pdf"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stadtmauer von Celeia.jpg?width=800",
+        "image_credit": "Roman city wall of Celeia (modern Celje) · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "CIL III 5176",
+            "work": "votive altar",
+            "ref": "2nd–3rd century CE",
+            "note": "Dedicated by C. Mustius Tettianus, a beneficiarius of the procurator Lisinius Sabinus, to Epona Augusta — one of roughly thirty beneficiarii inscriptions attesting the roadside statio at Celeia."
+          }
+        ]
       }
     },
     {
