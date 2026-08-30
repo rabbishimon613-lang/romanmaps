@@ -1978,7 +1978,10 @@
           "https://www.cambridge.org/core/journals/britannia/article/londons-hadrianic-war/BBA576C72A2E609CA16733B5B52A8B2D",
           "https://en.wikipedia.org/wiki/London_Wall"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/London_Wall_the_west_gate_of_Cripplegate_section_of_Roman_wall_01.JPG?width=800",
+        "image_credit": "Surviving Roman wall at Cripplegate fort's west gate, London · Wikimedia Commons",
+        "image_alt": "Surviving section of Roman city wall at the site of Cripplegate fort, London"
       }
     },
     {
@@ -4287,7 +4290,10 @@
           "https://en.wikipedia.org/wiki/Legio_XXII_Deiotariana",
           "http://www.legionaryfortresses.info/alexandria.htm"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plans_of_Catacombs_at_Alexandria_A_Castrum_at_Nicopolis,_%26_Isle_Latonia_-_Pococke_Richard_-_1743.jpg?width=800",
+        "image_credit": "Richard Pococke's 1743 plan of the castrum at Nicopolis, Alexandria · Wikimedia Commons",
+        "image_alt": "18th-century engraved plan showing the Roman castrum at Nicopolis near Alexandria"
       }
     },
     {
@@ -4837,7 +4843,10 @@
           "https://www.roman-britain.co.uk/places/haltwhistle_burn/",
           "https://www.u3ahadrianswall.co.uk/haltwhistle-burn-fortlet/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Befundskizze_KK_Haltwhistle_Burn_2.Jhdt._n.Chr.png?width=800",
+        "image_credit": "Site plan of the Haltwhistle Burn fortlet, 2nd century · Wikimedia Commons",
+        "image_alt": "Archaeological site plan of the Haltwhistle Burn Roman fortlet"
       }
     },
     {
@@ -4865,7 +4874,10 @@
           "https://ancientmonuments.uk/108826-throp-roman-fortlet-upper-denton",
           "Transactions of the Cumberland and Westmorland Antiquarian and Archaeological Society, n.s. vol. 13 (1913)"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/KK_Throp_(GB).png?width=800",
+        "image_credit": "Site plan of the Throp fortlet · Wikimedia Commons",
+        "image_alt": "Archaeological site plan of the Throp Roman fortlet"
       }
     },
     {
@@ -4892,7 +4904,10 @@
           "https://en.wikipedia.org/wiki/Newbrough",
           "https://www.u3ahadrianswall.co.uk/newbrough-roman-fort-on-the-stanegate/"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lageskizze_Kastelle_von_Newbrough.png?width=800",
+        "image_credit": "Site plan of the Roman forts at Newbrough · Wikimedia Commons",
+        "image_alt": "Archaeological site plan of the Newbrough Roman fortlets"
       }
     },
     {
@@ -4946,7 +4961,10 @@
           "https://www.labrujulaverde.com/en/2025/01/saalburg-the-largest-roman-fort-of-the-limes-germanicus/",
           "https://www.saalburgmuseum.de/en/angebote-2/roemerkastell-saalburg/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kastell_Saalburg,_Porta_Praetoria.jpg?width=800",
+        "image_credit": "Reconstructed Porta Praetoria, Saalburg Fort · Wikimedia Commons",
+        "image_alt": "Reconstructed main gate of the Saalburg Roman fort"
       }
     },
     {
@@ -4972,7 +4990,10 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Kastell_Zugmantel"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kastell_Zugmantel_017.JPG?width=800",
+        "image_credit": "Kastell Zugmantel archaeological site · Wikimedia Commons",
+        "image_alt": "Remains at the Zugmantel Roman fort site"
       }
     },
     {
@@ -5000,7 +5021,10 @@
           "https://de.wikipedia.org/wiki/Kastell_Arnsburg",
           "https://www.researchgate.net/publication/384286185_J_M_Koch_The_Arnsburg_Tumulus_and_the_Imagined_Underworld"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Luftbild_Kastell_Arnsburg.jpg?width=800",
+        "image_credit": "Aerial view of the Arnsburg fort site · Wikimedia Commons",
+        "image_alt": "Aerial photograph of the Roman fort site at Arnsburg"
       }
     },
     {
@@ -5027,7 +5051,10 @@
           "https://de.wikipedia.org/wiki/Kastell_Echzell",
           "https://www.deutsche-limeskommission.de/orl/obergermanischer-limes-hessen/20-echzell/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kastellbad_Echzell_01.JPG?width=800",
+        "image_credit": "Bathhouse remains, Echzell Roman fort · Wikimedia Commons",
+        "image_alt": "Remains of the fort bathhouse at Echzell"
       }
     },
     {
@@ -5053,7 +5080,10 @@
         "sources": [
           "https://de.wikipedia.org/wiki/Kastell_Mark%C3%B6bel"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ORL21_Markoebel_Kastellbad.jpg?width=800",
+        "image_credit": "Bathhouse of Kastell Marköbel, Limes survey (ORL) · Wikimedia Commons",
+        "image_alt": "Roman bathhouse remains at the Markobel fort"
       }
     },
     {
@@ -5106,7 +5136,10 @@
           "https://www.schloesser-hessen.de/en/roemerkastell-kapersburg",
           "https://naturpark-taunus.de/sehenswertes/historische-staetten/roemerkastell-kapersburg/2254/"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kapersburg_Steinbau.jpg?width=800",
+        "image_credit": "Stone building remains, Kapersburg fort · Wikimedia Commons",
+        "image_alt": "Stone foundations at the Kapersburg Roman fort"
       }
     },
     {
@@ -5160,7 +5193,10 @@
           "https://en.wikipedia.org/wiki/Biriciana",
           "https://followinghadrianphotography.com/2017/03/28/biriciana-kastell-weisenburg/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kastell_Biriciana_(Wei%C3%9Fenburg_in_Bayern).jpg?width=800",
+        "image_credit": "Biriciana fort remains, Weißenburg in Bayern · Wikimedia Commons",
+        "image_alt": "Roman fort remains at Weißenburg, ancient Biriciana"
       }
     },
     {
@@ -5188,7 +5224,10 @@
           "https://de.wikipedia.org/wiki/Kastell_Gnotzheim",
           "https://www.deutsche-limeskommission.de/en/orl/raetian-limes-bavaria/48-gnotzheim/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/RMW_-_Terra_sigillata_2_Kastell_Gnotzheim.jpg?width=800",
+        "image_credit": "Terra sigillata pottery from Kastell Gnotzheim, Römisches Museum Weißenburg · Wikimedia Commons",
+        "image_alt": "Roman terra sigillata pottery excavated at Gnotzheim fort"
       }
     },
     {
@@ -5217,7 +5256,10 @@
           "http://www.thehistoryblog.com/archives/72725",
           "https://muzeumbratislava.sk/en/ancient-gerulata"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gerulata.jpg?width=800",
+        "image_credit": "Gerulata archaeological site, Rusovce · Wikimedia Commons",
+        "image_alt": "Roman fort site at Gerulata, Rusovce"
       }
     },
     {
@@ -34599,7 +34641,10 @@
           "https://pleiades.stoa.org/places/197564",
           "https://iranyszentendre.hu/en/tortenelmunk/ulcisia-castra/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kastell_Szentendre_-_Ulcisia_Castra_-_r%C3%B6mischer_Ziegelstempel.jpg?width=800",
+        "image_credit": "Roman brick stamp from Ulcisia Castra, Szentendre · Wikimedia Commons",
+        "image_alt": "Roman brick stamp excavated at Ulcisia Castra"
       }
     },
     {
@@ -34626,7 +34671,10 @@
           "https://www.aquincum.hu/en/romaiorokseg/campona-segedcsapat-tabora-nagytetenyben/",
           "https://www.wikidata.org/wiki/Q973274"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kastell_Nagyt%C3%A9t%C3%A9ny_(Campona).png?width=800",
+        "image_credit": "Site plan of the Campona fort, Nagytétény · Wikimedia Commons",
+        "image_alt": "Archaeological site plan of the Campona Roman fort"
       }
     },
     {
@@ -34788,7 +34836,10 @@
           "https://www.wikidata.org/wiki/Q282806",
           "https://mek.oszk.hu/03400/03410/html/365.html"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarcophagus_with_Cupid_and_Psyche.jpg?width=800",
+        "image_credit": "Roman sarcophagus from Alisca (Őcsény), Hungarian National Museum · Wikimedia Commons",
+        "image_alt": "Roman marble sarcophagus depicting Cupid and Psyche, found at Alisca"
       }
     },
     {
@@ -35058,7 +35109,10 @@
           "https://en.wikipedia.org/wiki/Margum",
           "http://dare.ht.lu.se/places/21368.html"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Margum_ausgrabung_2011_(4).JPG?width=800",
+        "image_credit": "Margum excavation, 2011 · Wikimedia Commons",
+        "image_alt": "2011 excavation photograph of the Margum fort site"
       }
     },
     {
@@ -35085,7 +35139,10 @@
           "https://kulturnonasledje.in.rs/wp/language/en/lederata-2/",
           "https://www.donau-uni.ac.at/dam/jcr:efd482f8-ca06-40d1-99ed-c4495714b8a0/LDL_Identification%20Pilot%20Sites%20-%20Ram-Lederata_RS.pdf"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lederata,_archeological_site_in_Veliko_Gradi%C5%A1te.jpg?width=800",
+        "image_credit": "Lederata archaeological site · Wikimedia Commons",
+        "image_alt": "Archaeological remains at the Lederata fort site"
       }
     },
     {
@@ -35223,7 +35280,10 @@
           "https://en.wikipedia.org/wiki/Pontes_fort",
           "http://www.danubelimes-serbia.rs/en/archaeological-sites/ponteskostol/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pontes_in_Kladovo,_remains_of_the_walls.jpg?width=800",
+        "image_credit": "Wall remains of the Pontes fort, Kostol (Kladovo) · Wikimedia Commons",
+        "image_alt": "Surviving wall remains of the Pontes Roman fort"
       }
     },
     {
@@ -35330,6 +35390,40 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Classis_Flavia_Moesica",
           "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Dsexaginta-prista"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sexaginta_Prista_inscription_fragment.jpg?width=800",
+        "image_credit": "Inscription fragment from Sexaginta Prista · Wikimedia Commons",
+        "image_alt": "Roman inscription fragment from the Sexaginta Prista fort"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.26064,
+          45.13739
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_acumincum",
+        "category": "auxiliary_fort",
+        "name_latin": "Acumincum",
+        "name_english": "Acumincum",
+        "province": "Pannonia Inferior",
+        "modern_location": "Stari Slankamen, Serbia",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Acumincum guarded a Danube bend where routes from beyond the Tisza reached the river, anchoring the Pannonian limes between Rittium and Taurunum. The Flavian-era fort first held Cohors I Britannica equitata, then Cohors I Campanorum civium Romanorum, whose tile stamps still turn up in the soil. A 1955-1957 excavation traced the Roman wall buried beneath a medieval fortress built directly over it. Soldiers there worshipped Jupiter Dolichenus, whose carved reliefs surfaced centuries later.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Acumincum",
+          "https://www.wikidata.org/wiki/Q4677883",
+          "https://tvrdjave.rs/en/acumincum/",
+          "https://topostext.org/place/451202UAcu",
+          "https://vojvodina.travel/en/experiences/archeological-site-gradina-stari-slankamen/",
+          "https://whc.unesco.org/en/tentativelists/6475/"
         ],
         "confidence": "medium"
       }
