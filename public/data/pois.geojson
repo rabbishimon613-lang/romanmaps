@@ -35721,6 +35721,635 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.79,
+          37.94
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_hymettus",
+        "category": "quarry",
+        "name_latin": "Mons Hymettus",
+        "name_english": "Hymettus Marble Quarries",
+        "province": "Achaea",
+        "modern_location": "Kareas, near Athens, Greece",
+        "built": -500,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Quarrymen on Mount Hymettus, about 10 kilometers east of Athens, cut a bluish-white marble streaked with parallel gray veins for well over a thousand years. Roman builders favored the stone for columns, paving, and wall veneer rather than fine sculpture, since its coarse grain and greenish tinge suited architecture better than statuary. The Zeze quarry complex on the mountain's slopes still holds monolithic column drums and squared ashlar blocks that Roman-era quarrymen never hauled away. Carts and pack animals carried the cut stone down to ports on the Saronic Gulf for shipment into Athens and across the Aegean.",
+        "sources": [
+          "https://epub.lib.uoa.gr/index.php/aura/article/view/2187",
+          "https://en.wikipedia.org/wiki/Hymettus"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.593,
+          37.297
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_naxos",
+        "category": "quarry",
+        "name_latin": "Naxos",
+        "name_english": "Naxos Marble Quarries",
+        "province": "Insulae Cycladae",
+        "modern_location": "Apollonas and Kinidaros, Naxos, Greece",
+        "built": -700,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Naxos produced the largest-grained, whitest marble in the Cycladic islands, quarried since the Archaic period for colossal statuary and, later, Roman architectural work. An unfinished kouros over 10 meters long still lies abandoned in the quarry above Apollonas, cracked in the bedrock before workers could free it. Quarrying continued into Roman times alongside the older Archaic workings scattered across the island's northern hills near Kinidaros and Melanes. Blocks and column shafts shipped from Naxian harbors reached building sites across the Aegean and beyond.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Naxian_marble",
+          "https://en.wikipedia.org/wiki/Kouros_of_Apollonas"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Naxos_Marble.JPG",
+        "image_credit": "Heiko Gorski (Moonshadow), Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.73,
+          37.72
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_aphrodisias",
+        "category": "quarry",
+        "name_latin": "Aphrodisias",
+        "name_english": "Aphrodisias City Marble Quarries",
+        "province": "Asia",
+        "modern_location": "Geyre, Aydın Province, Turkey",
+        "built": -30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Aphrodisias grew wealthy on marble pulled from hillsides just two to four kilometers from the city, feeding one of the Roman world's most famous sculpture industries. Local white and blue-gray stone supplied the temple, theater, and stadium that Aphrodisias built during its first- and second-century construction boom. City workshops carved the marble into portrait statues and sarcophagi shipped as far as North Africa and Italy. The quarries and the sculptors' workshops they fed later earned Aphrodisias recognition as a single UNESCO World Heritage property.",
+        "sources": [
+          "http://marmoraasiatica.uw.edu.pl/quarries/aphrodisias/",
+          "https://en.wikipedia.org/wiki/Aphrodisias"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.3,
+          38.07
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_karystos_cipollino",
+        "category": "quarry",
+        "name_latin": "Marmor Carystium",
+        "name_english": "Karystos Cipollino Marble Quarries",
+        "province": "Achaea",
+        "modern_location": "between Styra and Karystos, Euboea, Greece",
+        "built": -30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Quarrymen along Euboea's southwest coast between Styra and Karystos cut cipollino, a white marble banded with thick wavy green streaks that Romans called marmor carystium. Some quarry faces still standing there run over 100 meters, evidence of the scale Roman-era extraction reached. Column shafts of Karystian marble traveled as far as Leptis Magna, where builders paired over 400 cipollino monoliths with Aswan granite in the city's forum complex. The green-veined stone also faced Hadrian's Library in Athens and lined the colonnaded main street of Tyre.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cipollino_marble",
+          "https://www.researchgate.net/publication/248546027_Roman_marble_quarrying_near_Karystos_Southern_Euboea"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cipollino_green_of_styra.jpg",
+        "image_credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.48,
+          36.53
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_tainaron_rosso_antico",
+        "category": "quarry",
+        "name_latin": "Taenarum",
+        "name_english": "Cape Tainaron Rosso Antico Quarries",
+        "province": "Achaea",
+        "modern_location": "Agios Kyprianos, Mani Peninsula, Greece",
+        "built": -200,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Quarries above Cape Tainaron, the southernmost point of the Greek mainland, yielded a deep maroon marble mottled with black and white streaks that Romans prized for columns and statue bases. Extraction ran from the 2nd century BCE into the Roman imperial period at a site above the village of Agios Kyprianos. Blocks left the peninsula through Tainaron's natural harbor bound for Rome, where the red stone turned up in temple floors, statuary, and bath complexes. Ancient writers linked the cape's harbor cave to the mythical gate of the underworld, a legend that outlasted the quarry itself.",
+        "sources": [
+          "https://cameo.mfa.org/wiki/Rosso_antico_marble",
+          "https://doi.org/10.3390/min16030294"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.51,
+          39.71
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_thessalian_verde_antico",
+        "category": "quarry",
+        "name_latin": "Lapis Atracius",
+        "name_english": "Thessalian Verde Antico Quarries",
+        "province": "Macedonia",
+        "modern_location": "Chasambali, near Larissa, Greece",
+        "built": 1,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A quarry at Chasambali, 12 kilometers northeast of Larissa, produced a mottled green-and-white breccia that Romans called Lapis Atracius after the nearby town of Atrax. The stone commanded roughly three times the price of plain gray-white marble from Thasos, a measure of how highly Roman buyers rated its swirling pattern. Clasts of serpentinite bound in a calcite matrix gave the marble a look unlike any other colored stone quarried in Roman Greece. Blocks cut here traveled south to decorate villas and public buildings across the Aegean world.",
+        "sources": [
+          "https://onlinelibrary.wiley.com/doi/10.1111/j.1468-0092.2008.00313.x",
+          "https://en.wikipedia.org/wiki/Verd_antique"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.139,
+          38.368
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_chios_portasanta",
+        "category": "quarry",
+        "name_latin": "Marmor Chium",
+        "name_english": "Chios Portasanta Marble Quarries",
+        "province": "Asia",
+        "modern_location": "near Chios town, Chios, Greece",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Quarries near the island's main town produced a mottled red-and-white marble that Romans called marmor chium, among the most expensive stones in the ancient trade. Greek quarrymen had worked the site before Rome, but Roman demand from the 1st century BCE onward pushed extraction to a new scale. The stone later took the name portasanta after builders used it for the door jambs of the Holy Door at St. Peter's Basilica in Rome, centuries after the ancient quarry closed. Roman villas favored it for opus sectile inlay floors laid out in alternating colored panels.",
+        "sources": [
+          "https://www.oum.ox.ac.uk/corsi/files/pdf/Portasanta.pdf",
+          "https://www.ostiaantica.beniculturali.it/en/educational-panels/the-marbles/the-marbles-area-10/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.82,
+          38.19
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_teos_africano",
+        "category": "quarry",
+        "name_latin": "Marmor Luculleum",
+        "name_english": "Teos Africano Marble Quarries",
+        "province": "Asia",
+        "modern_location": "Karagöl, near Sığacık, Izmir Province, Turkey",
+        "built": -70,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Quarries at Karagöl, three kilometers northeast of Teos in Ionia, produced a black marble streaked with white, red, and green veins that Romans called marmor luculleum, or africano, after the general Lucullus who reportedly brought it to Rome's attention in the 1st century BCE. The material's prestige and limited output kept the quarries under close, likely imperial, control. Blocks shipped from Teos's harbor reached Rome and other major cities as accent stone for columns and floor inlay. Modern surveys traced the main extraction site to the shore of the small lake at Karagöl, three kilometers from the ancient city.",
+        "sources": [
+          "https://teos.ankara.edu.tr/en/heritage/marble-quarries/",
+          "https://www.researchgate.net/publication/229585160_POIKILOILITHOI_THE_ANOMALOUS_ECONOMICS_OF_THE_ROMAN_IMPERIAL_MARBLE_QUARRY_AT_TEOS"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7797,
+          41.9564
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_tivoli_travertine",
+        "category": "quarry",
+        "name_latin": "Lapis Tiburtinus",
+        "name_english": "Tivoli Travertine Quarries",
+        "province": "Italia (Regio I)",
+        "modern_location": "Bagni di Tivoli, Lazio, Italy",
+        "built": -150,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Quarries in the sulfur-spring basins around Tivoli, 30 kilometers east of Rome, produced the porous limestone Romans called lapis Tiburtinus, known today as travertine. Workers floated cut blocks downstream on the Aniene River to building sites in the capital, where travertine faced the Colosseum's outer walls, rising roughly 48 meters above the arena floor. The stone was cut both from open pits and from underground galleries dug into the springs and basins where fresh travertine kept forming. These quarries have run almost without interruption for more than two thousand years and are still cut today for churches and monuments abroad.",
+        "sources": [
+          "https://www.washingtontimes.com/news/2026/feb/19/travertine-quarries-tivoli-italy-colosseums-stone-still-cut-today/",
+          "https://engineeringrome.org/travertine-production-process-and-its-use-in-ancient-and-modern-rome/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carrieres_de_Travertin_de_Tivoli.JPG",
+        "image_credit": "LPLT, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.663,
+          41.767
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_alban_peperino",
+        "category": "quarry",
+        "name_latin": "Lapis Albanus",
+        "name_english": "Alban Hills Peperino Quarries",
+        "province": "Italia (Regio I)",
+        "modern_location": "Marino, Alban Hills, Italy",
+        "built": -400,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Quarries at Marino in the Alban Hills southeast of Rome produced a gray volcanic tuff flecked with dark basalt fragments that Romans called lapis Albanus, or peperino for its peppercorn-like inclusions. Builders used the stone from the early Republic onward for temple platforms, fountain basins, and load-bearing elements across the city, valuing its resistance to fire. Its distinct trace-element composition lets modern geochemists tell it apart from Rome's two other major volcanic building stones, lapis Gabinus and Tufo del Palatino. The quarries at Marino remained one of three principal tuff sources supplying the capital throughout the Roman period.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Peperino",
+          "https://www.researchgate.net/publication/390796881_The_Mid-Republican_Temples_at_Largo_Argentina_in_Rome_Quarry_Provenience_and_Construction_History_of_Ancient_Roman_Lapis_Albanus_Tuff"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.92,
+          42.365
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_giglio_granite",
+        "category": "quarry",
+        "name_latin": "Igilium",
+        "name_english": "Giglio Island Granite Quarries",
+        "province": "Italia (Regio VII Etruria)",
+        "modern_location": "Isola del Giglio, Tuscany, Italy",
+        "built": -50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Quarries on the eastern slopes of Isola del Giglio, an island off the Tuscan coast, produced a fine gray granite with a pink cast that Roman workers valued for the ease with which it took a polish. Workers cut columns, basins, and sarcophagi at sites now called Arenella and Piccione, still visible today along the island's coastal path. The granite supplied the seaside villa of the Domitii Ahenobarbi, the imperial family whose estate stretched along Giglio's shore. Columns quarried on the island turned up centuries later, reused in churches and basilicas across Italy.",
+        "sources": [
+          "https://maregiglio.it/en/lily-island/story/the-granite-quarries/",
+          "https://www.researchgate.net/publication/360298681_The_Alteration_of_Giglio_Island_Granite_Relevance_to_the_Conservation_of_Monumental_Architecture"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.194,
+          42.744
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_elba_granite",
+        "category": "quarry",
+        "name_latin": "Ilva",
+        "name_english": "Elba Granite Quarries",
+        "province": "Italia (Regio VII Etruria)",
+        "modern_location": "San Piero in Campo, Elba, Italy",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Quarries on the southern slopes of Monte Capanne, above the village of San Piero, produced a coarse gray granite that Roman workers cut into columns, basins, and sarcophagi for shipment to the Italian mainland. The Roman era marked the most intensive period of extraction across the island's granite deposits, which stretched along the coast from San Piero to Pomonte. Half-finished columns and altars still lie scattered among the quarry faces, abandoned mid-cut. A marked trail today follows the routes quarry workers once used to move blocks down toward the shore.",
+        "sources": [
+          "https://www.elbaworld.com/en/geology/p-397-granite-and-quarries.html",
+          "https://visitelba.info/en/itineraries/mines-granites-and-minerals/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9646,
+          50.601
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_purbeck_marble",
+        "category": "quarry",
+        "name_latin": "Marmor Britannicum",
+        "name_english": "Purbeck Marble Quarries",
+        "province": "Britannia",
+        "modern_location": "Langton Matravers, Isle of Purbeck, Dorset, England",
+        "built": 70,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Quarries on the Isle of Purbeck in Dorset produced a dense fossiliferous limestone, packed with the shells of a freshwater snail, that took a fine polish and passed for marble in Roman Britain. Roman quarrymen were the first to work the stone at real scale, most likely beginning at Wilkswood near Langton Matravers not long after the conquest. Builders across Roman Britain used Purbeck marble for decorative columns, wall veneer, and inscribed tomb slabs in villas and public buildings. The limestone itself formed roughly 145 million years ago in a shallow lagoon, long before any quarryman arrived to cut it.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Purbeck_Marble",
+          "http://www.palmyra.me.uk/pur-quarry.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.1287,
+          50.608
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_kimmeridge_shale",
+        "category": "quarry",
+        "name_latin": "N/A",
+        "name_english": "Kimmeridge Shale Workings",
+        "province": "Britannia",
+        "modern_location": "Kimmeridge, Dorset, England",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Workshops on the Dorset coast at Kimmeridge turned local black bituminous shale into armlets and small turned vessels on simple lathes, a craft carried over from the late Iron Age into Roman Britain. Roman-period bracelets cut from Kimmeridge shale have turned up as far away as Corbridge on Hadrian's Wall, more than 500 kilometers to the north. Workers left behind the waste disks from the lathe-turning process, known today as Kimmeridge coal money, scattered across the shale-working sites. The soft, oil-rich stone came straight from the Kimmeridge Clay exposed along the peninsula's cliffs.",
+        "sources": [
+          "https://bathgeolsoc.org.uk/journal/articles/2001/2001_Kimmeridge_Shale_Dorset.pdf",
+          "https://archaeologydataservice.ac.uk/archives/view/denford_na_2000/overview.cfm"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.6975,
+          42.888
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_saint_beat_marble",
+        "category": "quarry",
+        "name_latin": "Marmor Aquitanicum",
+        "name_english": "Saint-Béat Marble Quarries",
+        "province": "Gallia Aquitania",
+        "modern_location": "Saint-Béat-Lez, Haute-Garonne, France",
+        "built": -25,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Quarries on both banks of the Garonne River at Saint-Béat, in the central Pyrenees, produced white and gray-banded marble that supplied southern Gaul during the Roman period and beyond. Local workshops carved the stone into sarcophagi, architectural ornament, and inscriptions distributed across Aquitania and over the mountains into Hispania. One quarry face still shows a distinctive banded pattern that stonecutters nicknamed the Roman breach. The site remains among the best-preserved ancient marble quarries anywhere in the former Roman Gaul.",
+        "sources": [
+          "https://en.lespyrenees.net/sites-visit/PCUMID031FS00092/detail/saint-beat-lez/marble-quarry?page=38",
+          "https://www.researchgate.net/publication/377310553_Marbles_from_the_French_Pyrenees_Ornamental_and_statuary_material_of_great_interest_in_the_Western_Roman_Empire"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.3564,
+          37.2856
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_macael_marble",
+        "category": "quarry",
+        "name_latin": "N/A",
+        "name_english": "Macael Marble Quarries",
+        "province": "Hispania Baetica",
+        "modern_location": "Macael, Almería, Spain",
+        "built": -50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Quarries in the Sierra de los Filabres near Macael, in the interior of Baetica, became imperial property under Roman rule, producing some of the whitest marble found anywhere in Hispania. Craftsmen used the stone for major public works, including the Roman theater at Mérida, capital of neighboring Lusitania. Roman sculptors also carved individual portraits from Macael marble, among them a head identified as the emperor Vespasian found at Écija. The quarry district groups four separate marble-bearing sites around Macael, Chercos, Cóbdar, and Líjar in the Sierra de los Filabres.",
+        "sources": [
+          "https://turismoalmanzora.com/en/towns/tourism-macael/the-marble-of-macael-2/",
+          "https://www.researchgate.net/publication/318240647_Caracterizacion_de_los_principales_tipos_de_marmol_extraidos_en_la_comarca_de_Macael_Almeria_sureste_de_Espana_y_su_importancia_a_lo_largo_de_la_historia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.58,
+          38.85
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_estremoz_marble",
+        "category": "quarry",
+        "name_latin": "N/A",
+        "name_english": "Estremoz Marble Quarries",
+        "province": "Lusitania",
+        "modern_location": "Estremoz, Évora District, Portugal",
+        "built": 25,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Quarries across the Estremoz Anticline in Lusitania, over 150 kilometers from the coast, opened in the 1st century CE as Roman urban development in the province demanded huge volumes of ornamental stone. White and gray-veined marble from sites like Vigária and Lagoa supplied Augusta Emerita, the provincial capital, and traveled onward to cities across Hispania and North Africa. Grey-banded varieties went mainly into architectural elements, funerary stelae, and inscribed altars. The anticline remains the most heavily worked ancient marble source anywhere on the Iberian Peninsula.",
+        "sources": [
+          "https://bgm.revistas.csic.es/index.php/bgm/article/view/771",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0305440312005559"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.6033,
+          37.9772
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_ephesus_belevi",
+        "category": "quarry",
+        "name_latin": "Belevi",
+        "name_english": "Ephesus Marble Quarries",
+        "province": "Asia",
+        "modern_location": "Belevi, near Selçuk, Izmir Province, Turkey",
+        "built": -25,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Quarries in the hills around Ephesus, including the Belevi site nine kilometers northeast of the city, supplied the marble behind one of the Roman Empire's largest urban building programs. White marble cut from these hills faced the Library of Celsus, the Marble Street, and the great theater that made Ephesus the leading marble-consuming city in Roman Asia Minor. Workers at Belevi also cut a darker banded stone prized for accent work alongside the white variety. Quarrying at Belevi ran from the early Roman period through the 6th century CE.",
+        "sources": [
+          "https://aboutephesus.com/ancient-ephesus-marbles",
+          "https://www.sciencedirect.com/science/article/pii/S0964830500000767"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.5967,
+          37.2814
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_iasos_marble",
+        "category": "quarry",
+        "name_latin": "Iasos",
+        "name_english": "Iasos Marble Quarries",
+        "province": "Asia",
+        "modern_location": "Kıyıkışlacık, Milas, Muğla Province, Turkey",
+        "built": -200,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Quarries near Iasos, a small harbor city on a peninsula in the Gulf of Güllük in Caria, produced a red-and-pink veined marble known as Carian red or cipollino rosso. Iasian marble reached coastal cities across the eastern Mediterranean, appearing in buildings as far away as Roman Palestine and North Africa. Hadrian's reign brought fresh repairs to the city's harbor tower and fortifications in the years just after 117 CE, evidence of continued Roman investment there. Quarry workers exploited outcrops close to the shoreline, keeping the haul to the loading docks short.",
+        "sources": [
+          "https://topostext.org/place/373276UIas",
+          "https://pam-journal.pl/en/issues/32-vol-32-issue-1-special-issue/use-and-aesthetics-of-iasian-marble-in-presbyteries-of-the-6th-century"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.522,
+          38.766
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_skyros_marble",
+        "category": "quarry",
+        "name_latin": "Marmor Scyrium",
+        "name_english": "Skyros Marble Quarries",
+        "province": "Achaea",
+        "modern_location": "Aliko Bay, Skyros, Greece",
+        "built": -30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Quarries at Aliko Bay and on the small islets of Rinia and Koulouri, off the southern tip of Skyros, produced a colorful tectonic breccia Romans called marmor scyrium. Exports peaked in the 1st century BCE, when the stone reached Rome in enough volume to leave a clear mark in the archaeological record of the Augustan period. Surveys estimate the Rinia quarry alone yielded roughly 8,500 cubic meters of white marble, while Koulouri and Aliko produced the prized brecciated stone. In Rome this breccia became known as breccia di Settebasi, named after the villa near the city where excavators first identified it.",
+        "sources": [
+          "https://www.academia.edu/15715788/The_Roman_marble_quarries_of_Aliko_bay_and_of_the_islets_of_Rinia_and_Koulouri_Skyros_Greece_",
+          "https://www.researchgate.net/publication/285935980_Characterisation_of_the_white_marble_of_two_unpublished_ancient_Roman_quarries_on_the_Islands_ofFourni_and_Skyros_Greece"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.9333,
+          24.6333
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_gebel_el_silsila",
+        "category": "quarry",
+        "name_latin": "Silsilis",
+        "name_english": "Gebel el-Silsila Sandstone Quarries",
+        "province": "Aegyptus",
+        "modern_location": "between Edfu and Kom Ombo, Aswan Governorate, Egypt",
+        "built": -1550,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "More than a hundred separate quarries along both banks of the Nile at Gebel el-Silsila, between Edfu and Kom Ombo, supplied the sandstone behind most of Upper Egypt's great temples. Extraction ran continuously from the New Kingdom through the Roman period, when the site was known as Silsilis. Quarry faces still bear tool marks and workers' inscriptions, along with the grooves cut to haul finished blocks straight to waiting river barges. The site's ancient Egyptian name, meaning place of rowing, points to its role as a major loading point on the Nile.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Gebel_el-Silsila",
+          "https://www.friendsofsilsila.org/the-project/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gebel_el-Silsila,_Asuan,_Egypt.JPG",
+        "image_credit": "Pufacz, Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31,
+          27.55
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_hatnub_alabaster",
+        "category": "quarry",
+        "name_latin": "Hatnub",
+        "name_english": "Hatnub Alabaster Quarries",
+        "province": "Aegyptus",
+        "modern_location": "Eastern Desert, near el-Minya, Egypt",
+        "built": -2600,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Quarries at Hatnub, roughly 65 kilometers into the eastern desert from el-Minya, produced the calcite travertine ancient Egyptians called Egyptian alabaster, prized for its translucency and fine grain. Workers had cut stone here since the reign of Khufu, more than two thousand years before Rome absorbed Egypt, and activity continued intermittently into the Roman period. Roman craftsmen turned Hatnub alabaster into vessels and architectural inlay for temples and elite households across the province. The quarries sat far enough into the desert that crews worked from seasonal camps rather than permanent settlements.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Hatnub",
+          "https://hannahpethen.com/2015/09/23/surveying-in-the-mansion-of-gold-the-hatnub-travertine-egyptian-alabaster-quarries-near-minya/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.1206,
+          37.9203
+        ]
+      },
+      "properties": {
+        "id": "poi_quarry_hierapolis_travertine",
+        "category": "quarry",
+        "name_latin": "Hierapolis",
+        "name_english": "Hierapolis Travertine and Alabaster Quarries",
+        "province": "Asia",
+        "modern_location": "Pamukkale, Denizli Province, Turkey",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Quarries on the slopes below Hierapolis, in the Lycus Valley of Phrygia, cut narrow, deep trenches into banded travertine deposited by the region's mineral-rich hot springs. Workers extracted colorful varieties known in antiquity as alabastro fiorito and alabastro listato, streaked white, yellow, brown, and burgundy red. One breccia quarry alone is estimated to have yielded around 3,700 cubic meters of stone, cut for columns, sarcophagi, and paving across the city and beyond. The same geological process that fed the quarries also built Hierapolis's famous white travertine terraces just downhill.",
+        "sources": [
+          "https://doi.org/10.3390/heritage2010035",
+          "https://iugs-geoheritage.org/geoheritage_stones/denizli-travertine/"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
