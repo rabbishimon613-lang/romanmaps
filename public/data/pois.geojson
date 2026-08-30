@@ -20892,7 +20892,7 @@
         "built": 14,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Augustus began this five-arch bridge over the Marecchia in 14 CE, and Tiberius finished it in 21 CE, giving it his name. Cut from solid Istrian stone, it has carried traffic across the river for two thousand years without a single arch collapsing. Blind aedicules frame the piers between its five spans. By 117 CE it had already linked Ariminum to the coastal road toward Ravenna for nearly a century.",
+        "notes": "Augustus began this five-arch bridge over the Marecchia in 14 CE, and Tiberius finished it in 21 CE, giving it his name. Cut from solid Istrian stone, it marked the starting point of the Via Aemilia toward Aquileia and has carried traffic across the river for two thousand years without a single arch collapsing — surviving even reported German demolition charges in the Second World War. Blind aedicules frame the piers between its five spans.",
         "sources": [
           "https://en.wikipedia.org/wiki/Ponte_di_Tiberio_(Rimini)",
           "https://www.visitrimini.com/en/point-of-interest/tiberius-bridge/"
@@ -25084,44 +25084,6 @@
             "work": "Roman History",
             "ref": "53.26",
             "note": "Records that Augustus, after the Cantabrian War, discharged his older soldiers and let them found the city of Emerita Augusta in Lusitania."
-          }
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.5638194,
-          44.0636417
-        ]
-      },
-      "properties": {
-        "id": "poi_bridge_tiberio_rimini",
-        "category": "bridge",
-        "name_latin": "Pons Augusti et Tiberii",
-        "name_english": "Ponte di Tiberio",
-        "province": "Italia",
-        "modern_location": "Rimini, Italy",
-        "built": 14,
-        "destroyed": null,
-        "extant_117ce": true,
-        "notes": "Spanning the Marecchia (ancient Ariminus) at Ariminum, this five-arch bridge of Istrian stone was begun under Augustus in 14 CE and completed and dedicated under Tiberius in 21 CE, as recorded by its own dedicatory inscription naming both emperors. It marked the starting point of the Via Aemilia and connections onward toward Aquileia, cementing Ariminum's role as a road hub. Remarkably durable — it survived antiquity, the Middle Ages, and even reported German demolition charges in the Second World War, and still carries traffic today.",
-        "sources": [
-          "https://en.wikipedia.org/wiki/Ponte_di_Tiberio_(Rimini)",
-          "https://www.travelemiliaromagna.it/en/bridge-of-tiberius-rimini/"
-        ],
-        "confidence": "high",
-        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Richard%20Wilson%2C%20Il%20Ponte%20di%20Tiberio%2C%201750%20%28Rimini%2C%20Museo%20della%20Citt%C3%A0%29.JPG?width=800",
-        "image_credit": "Richard Wilson, \"Il Ponte di Tiberio\", 1750 · Wikimedia Commons",
-        "image_alt": "18th-century oil painting by Richard Wilson depicting the Ponte di Tiberio at Rimini",
-        "ancient_sources": [
-          {
-            "author": "CIL",
-            "work": "XI",
-            "ref": "367",
-            "note": "The dedicatory inscription carved on the bridge's parapets, commemorating its construction by Augustus and completion by Tiberius."
           }
         ]
       }

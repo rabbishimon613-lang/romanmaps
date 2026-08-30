@@ -30,6 +30,14 @@ module.exports = {
         destination: "/place/pantheon",
         permanent: true,
       },
+      // `poi_bridge_tiberio_rimini` was a duplicate of `poi_bridge_tiberius_rimini` (same bridge,
+      // same CIL XI 367 dedication, ~480m coordinate drift) retired from pois.geojson — this
+      // keeps its already-generated/indexed URL landing somewhere real instead of a bare 404.
+      {
+        source: "/place/bridge_tiberio_rimini",
+        destination: "/place/bridge_tiberius_rimini",
+        permanent: true,
+      },
     ];
   },
 };
