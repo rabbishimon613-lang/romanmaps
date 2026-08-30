@@ -38230,6 +38230,384 @@
         "image_credit": "Travertine ship's-prow relief of Aesculapius's serpent, Tiber Island · Wikimedia Commons",
         "image_alt": "Carved stone ship's prow with serpent relief marking the Temple of Aesculapius on Tiber Island"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2888,
+          32.6396
+        ]
+      },
+      "properties": {
+        "id": "poi_curia_leptis_magna",
+        "category": "curia",
+        "name_latin": "Curia",
+        "name_english": "Curia of the Old Forum",
+        "province": "Africa Proconsularis",
+        "modern_location": "Al-Khums, Libya",
+        "built": 125,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Leptis Magna's town council met in a senate house built beside the Old Forum, but scholars disagree on exactly when: a 2018 monograph on the building leans toward Hadrian's reign, after 117 CE, while other accounts place an earlier phase under Trajan. Excavation placed it on the east side of the Old Forum, near the temples of Roma and Augustus and Liber Pater. Given the unresolved dating, this map marks the curia as not yet standing on 11 August 117 CE.",
+        "sources": [
+          "https://www.cambridge.org/core/journals/journal-of-roman-archaeology/article/abs/reconstructing-the-history-and-architecture-of-the-curia-in-the-forum-vetus-at-lepcis-magna-monica-livadiotti-and-giorgio-rocco-with-contributions-by-roberta-belli-pasqua-antonello-fino-giuseppe-mazzilli-and-luciano-piepoli-exornata-aedes-la-curia-del-foro-vecchio-di-leptis-magna-monografie-di-archeologia-libica-xlvi-lerma-di-bretschneider-roma-2018-pp-468-figs-368-7-loose-plans-in-pocket-isbn-988891317438-eur-350/55C87C2DB9EF8915C20691273D768D02",
+          "https://vici.org/vici/26571/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2886,
+          32.6395
+        ]
+      },
+      "properties": {
+        "id": "poi_serapeum_leptis_magna",
+        "category": "temple",
+        "name_latin": "Serapeum",
+        "name_english": "Temple of Serapis",
+        "province": "Africa Proconsularis",
+        "modern_location": "Al-Khums, Libya",
+        "built": 170,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Leptis Magna built this temple to the Egyptian god Serapis under Marcus Aurelius, roughly half a century after Trajan's death. Its columns were carved from a rare blue-veined marble, a striking break from the plain limestone of the city's earlier temples. The cult of Serapis spread through Roman Africa's port cities on Mediterranean trade routes in the decades after Trajan. On 11 August 117 CE the ground where it would rise was still empty, over fifty years before construction began.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Leptis_Magna"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4686,
+          35.485
+        ]
+      },
+      "properties": {
+        "id": "poi_curia_timgad",
+        "category": "curia",
+        "name_latin": "Curia",
+        "name_english": "Curia",
+        "province": "Numidia",
+        "modern_location": "Timgad, Algeria",
+        "built": 116,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Timgad's curia, the council house of a hundred veteran colonists, went up on the forum's north side around 116 CE. Marble-faced walls enclosed three bays where the town's ordo decurionum met to run daily business. Statue bases still lining its portico once held honors for local benefactors. It was among the last pieces of the founding civic core to reach completion, rising in the very years Trajan died in Cilicia. Dated by excavators to about 116-117 CE, essentially contemporary with this map's snapshot date; construction was likely finished or nearly finished by August 117 CE.",
+        "sources": [
+          "https://www.ancient-history-sites.com/sites/timgad/",
+          "https://en.wikipedia.org/wiki/Timgad"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4689,
+          35.4851
+        ]
+      },
+      "properties": {
+        "id": "poi_basilica_timgad",
+        "category": "basilica",
+        "name_latin": "Basilica",
+        "name_english": "Basilica",
+        "province": "Numidia",
+        "modern_location": "Timgad, Algeria",
+        "built": 110,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Timgad's basilica closed the east side of the forum, raised alongside the curia in the first years of the 2nd century CE. Magistrates heard court cases from a raised tribunal set into its apsed end. A colonnaded hall ran the building's length, giving the veteran colony its formal seat of justice a bare generation after Trajan founded the city in 100 CE. It stood finished well before Timgad ever expanded past its original walls. Built as part of the founding forum complex alongside the curia; completed in the early 2nd century, within the colony's first two decades.",
+        "sources": [
+          "https://www.ancient-history-sites.com/sites/timgad/",
+          "https://en.wikipedia.org/wiki/Timgad"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4685,
+          35.4852
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_victory_timgad",
+        "category": "temple",
+        "name_latin": "Templum Victoriae",
+        "name_english": "Temple of Victory",
+        "province": "Numidia",
+        "modern_location": "Timgad, Algeria",
+        "built": 116,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A small tetrastyle temple to Victoria rose at a corner of Timgad's forum as the colony's civic center took shape in the early 2nd century CE. Four columns fronted its shallow porch, scaled to a farming town of a few thousand veterans rather than a provincial capital. It gave Timgad's earliest citizens a place to honor the goddess who had carried Trajan's legions to Dacia and back. The shrine stood complete alongside the curia and basilica by the time of Trajan's death in 117 CE. Part of the original forum complex; completed within the colony's founding decades.",
+        "sources": [
+          "https://www.ancient-history-sites.com/sites/timgad/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4709,
+          35.4851
+        ]
+      },
+      "properties": {
+        "id": "poi_east_gate_timgad",
+        "category": "gate",
+        "name_latin": "Porta Orientalis",
+        "name_english": "East Gate",
+        "province": "Numidia",
+        "modern_location": "Timgad, Algeria",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A plain arched gateway pierced Timgad's eastern wall where the decumanus maximus left the city for Lambaesis, home fortress of the Third Augustan Legion six kilometers south. Built with the rest of the colony's grid in 100 CE, it served as the settlement's main approach for its first decades. Roman builders rebuilt it in more monumental form only in 146 CE, three decades after this map's snapshot. In 117 CE it still stood as the modest opening its first colonists had raised. The original founding-era gate is the structure extant in 117 CE; a more monumental rebuilding of the east gate followed in 146 CE, after this snapshot.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Timgad",
+          "https://madainproject.com/timgad"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4669,
+          35.4851
+        ]
+      },
+      "properties": {
+        "id": "poi_trajans_arch_timgad",
+        "category": "arch",
+        "name_latin": "Arcus Traiani",
+        "name_english": "Trajan's Arch",
+        "province": "Numidia",
+        "modern_location": "Timgad, Algeria",
+        "built": 200,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A triple-arched gateway in gold sandstone came to mark the western end of Timgad's decumanus maximus around 200 CE, a century after the colony's founding. Its inscription still credits Trajan, who chartered the city in 100 CE, though the emperor never saw this particular monument built in his name. The arch rose 12 meters tall, its central passage spanning 6 meters above the roadway. It replaced a plainer western gate that had stood on the same spot since the city's earliest years. Built roughly a century after Trajan founded the colony, most likely under Septimius Severus. Despite the name, this monument was not standing in 117 CE; a simpler original gate occupied the site at the time of this snapshot.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Arch_of_Trajan_(Timgad)",
+          "https://whc.unesco.org/en/list/194/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4688,
+          35.4841
+        ]
+      },
+      "properties": {
+        "id": "poi_theatre_timgad",
+        "category": "theater",
+        "name_latin": "Theatrum",
+        "name_english": "Timgad Theatre",
+        "province": "Numidia",
+        "modern_location": "Timgad, Algeria",
+        "built": 161,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Timgad's theater climbed the hillside south of the forum between 161 and 169 CE, under the joint reign of Marcus Aurelius and Lucius Verus. Its curved seating held roughly 3,500 spectators, a striking scale for a colony of a few thousand veterans and their descendants. Soldiers stripped stone from it in 539 CE to raise a Byzantine citadel nearby. In 117 CE the hillside it now occupies still stood open ground beside the young forum. Built under Marcus Aurelius and Lucius Verus, roughly half a century after this map's snapshot date.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_de_Timgad",
+          "https://madainproject.com/timgad"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4689,
+          35.4856
+        ]
+      },
+      "properties": {
+        "id": "poi_library_timgad",
+        "category": "library",
+        "name_latin": "Bibliotheca",
+        "name_english": "Timgad Library",
+        "province": "Numidia",
+        "modern_location": "Timgad, Algeria",
+        "built": 300,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Timgad's public library, one of the best-preserved in the Roman world, was funded by a local benefactor named Rogatianus with a gift of 400,000 sesterces. It rose in the late 3rd or early 4th century CE, close to two hundred years after Trajan founded the colony. Niches for scroll cases lined its curved reading room, opening onto a small colonnaded court. In 117 CE the plot held nothing more than an ordinary residential block within the original grid. Built roughly 180-220 years after this map's snapshot date, funded by a donor named Marcus Julius Quintianus Flavius Rogatianus per its dedicatory inscription.",
+        "sources": [
+          "https://commons.wikimedia.org/wiki/File:The_Public_Library,_built_in_the_late_3rd_century_or_early_4th_century_AD,_a_certain_Marcus_Julius_Quintianus_Flavius_Rogatianus_gave_his_home_town_400,000_sesterces_to_fund_it,_Timgad_(Thamugadi,_Numidia),_Algeria_-_52485185102.jpg",
+          "https://en.wikipedia.org/wiki/Timgad"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Public_Library,_built_in_the_late_3rd_century_or_early_4th_century_AD,_a_certain_Marcus_Julius_Quintianus_Flavius_Rogatianus_gave_his_home_town_400,000_sesterces_to_fund_it,_Timgad_(Thamugadi,_Numidia),_Algeria_-_52485185102.jpg?width=800",
+        "image_credit": "The Public Library of Timgad, built late 3rd/early 4th century CE · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4665,
+          35.4836
+        ]
+      },
+      "properties": {
+        "id": "poi_capitol_timgad",
+        "category": "temple",
+        "name_latin": "Capitolium",
+        "name_english": "Timgad Capitol",
+        "province": "Numidia",
+        "modern_location": "Timgad, Algeria",
+        "built": 160,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A temple to Jupiter, Juno, and Minerva rose on a high podium at Timgad's southwestern edge starting around 160 CE. Its footprint rivaled the Pantheon in Rome, towering over a colony that had by then grown well past its original 12-hectare grid. Fourteen giant Corinthian columns once framed its approach, fragments of which still stand today. In 117 CE, four decades before ground was broken, veterans still farmed the fields where its podium would eventually rise. Begun around 160 CE under Antoninus Pius, roughly 43 years after this map's snapshot date.",
+        "sources": [
+          "https://madainproject.com/timgad",
+          "https://curate.nd.edu/show/12579s18c46"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.469,
+          35.4862
+        ]
+      },
+      "properties": {
+        "id": "poi_north_baths_timgad",
+        "category": "bathhouse",
+        "name_latin": "Thermae Septentrionales",
+        "name_english": "North Baths",
+        "province": "Numidia",
+        "modern_location": "Timgad, Algeria",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Timgad's largest bathhouse, some 40 rooms in all, rose north of the original walled grid as the colony outgrew its 100 CE boundaries. Bathers moved through mirror-image wings of warm and hot rooms toward a shared central frigidarium and its cold plunge pool. Its scale reflected Timgad's growth over the 2nd and 3rd centuries, far beyond the modest veterans' colony Trajan first chartered. In 117 CE the ground it covers still lay outside the city's newly finished walls. Built outside the colony's original 100 CE wall circuit during its later expansion; no precise construction year is documented, but its position outside the founding grid places it after 117 CE.",
+        "sources": [
+          "https://www.historyhit.com/locations/timgad/",
+          "https://www.ancient-history-sites.com/sites/timgad/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4667,
+          35.4845
+        ]
+      },
+      "properties": {
+        "id": "poi_market_sertius_timgad",
+        "category": "market",
+        "name_latin": "Macellum Sertii",
+        "name_english": "Market of Sertius",
+        "province": "Numidia",
+        "modern_location": "Timgad, Algeria",
+        "built": 200,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A colonnaded market building went up along Timgad's decumanus maximus, southwest of where Trajan's Arch would later stand, covering roughly 1,200 square meters. It took its name from Sertius, a wealthy local citizen whose family also kept a grand townhouse nearby. The complex belongs to Timgad's later growth, built as the colony spread past its original 12-hectare grid in the 3rd and 4th centuries CE. In 117 CE the ground it occupies lay outside the city's first walls. Sources disagree on this building's date: most place the market and its adjoining textile hall in the 3rd-4th century expansion, though at least one summary suggests an early 2nd-century origin. Marked not-yet-built by default per house style given the conflict.",
+        "sources": [
+          "https://followinghadrianphotography.com/2025/04/28/thamugadi-timgad/",
+          "https://archive.aarome.org/subjects/437"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4691,
+          35.4849
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_genius_timgad",
+        "category": "temple",
+        "name_latin": "Templum Genii Coloniae",
+        "name_english": "Temple of the Genius of the Colony",
+        "province": "Numidia",
+        "modern_location": "Timgad, Algeria",
+        "built": 169,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A temple to the Genius Coloniae, the guardian spirit of the colony itself, rose at Timgad in 169 CE under Marcus Aurelius. It gave the city a shrine to its own corporate identity, a common feature of thriving Roman colonies by the later 2nd century. Its construction fell nearly seventy years after Trajan's veterans first laid out the town in 100 CE. In 117 CE the site was still open ground within the fresh colonial grid. Built 52 years after this map's snapshot date, under Marcus Aurelius.",
+        "sources": [
+          "https://vici.org/vici/36147/",
+          "https://madainproject.com/timgad"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4688,
+          35.4849
+        ]
+      },
+      "properties": {
+        "id": "poi_latrines_timgad",
+        "category": "monument",
+        "name_latin": "Latrinae",
+        "name_english": "Timgad Public Latrines",
+        "province": "Numidia",
+        "modern_location": "Timgad, Algeria",
+        "built": 200,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A public latrine seating more than a dozen people at once stood beside Timgad's forum, its stone benches carved with dolphin-shaped armrests. A channel of running water beneath the seats continuously flushed the trench below, standard for Roman civic sanitation. Surviving evidence dates the latrine to the 3rd century CE, as Timgad's public amenities multiplied under the Severan dynasty. In 117 CE the colony's residents still relied on simpler facilities that have left no trace. Dated by its architectural style and setting to the Severan-era 3rd century CE, roughly a century after this map's snapshot date.",
+        "sources": [
+          "https://followinghadrian.com/2013/05/09/how-the-romans-did-their-business-images-of-latrines-throughout-the-roman-world/",
+          "https://timetravelbee.com/places/ancient-ruins-in-timgad-algeria/"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
