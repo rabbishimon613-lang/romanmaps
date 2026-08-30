@@ -1454,6 +1454,533 @@
         "image_credit": "Fresco from the Villa of the Mysteries, Pompeii · Wikimedia Commons",
         "image_alt": "Fresco depicting Dionysiac initiation rites, Villa of the Mysteries, Pompeii"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.856,
+          48.114
+        ]
+      },
+      "properties": {
+        "id": "religion_mithraeum_carnuntum",
+        "name": "Carnuntum",
+        "tradition": "mithraeum",
+        "attestation": "attested_117",
+        "one_line": "A centurion of the Fifteenth Legion raised a stone altar to Mithras on this Danube frontier, the oldest securely dated Mithraic dedication in the Roman West. His unit shipped out for Trajan's Parthian war in 114 CE and never came back, which pins the altar to before that year. Soldiers who fought Parthians and Jews in the East carried the cult home to this Pannonian garrison town. The inscription reads simply: to unconquered Mithras, a vow fulfilled.",
+        "province": "Pannonia Superior",
+        "modern_location": "Petronell-Carnuntum, Austria",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Legio_XV_Apollinaris",
+          "https://www.mithraeum.eu/monument/503"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.47,
+          45.36
+        ]
+      },
+      "properties": {
+        "id": "religion_jewish_panticapaeum",
+        "name": "Kerch",
+        "tradition": "jewish",
+        "attestation": "attested_117",
+        "one_line": "Bosporan Jews freed their slaves inside this city's synagogue and had the ceremony carved in stone, dated by the reigning king's regnal year like a notarized deed. One such manumission, overseen by the congregation, survives from 81 CE. The community used the Greek word proseuche for its prayer house, the same term diaspora synagogues used from Egypt to Rome. Six such inscriptions place a working Jewish congregation on the empire's northern edge decades before Trajan died.",
+        "province": "Bosporan Kingdom",
+        "modern_location": "Kerch, Ukraine",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.mohrsiebeck.com/en/book/the-jewish-manumission-inscriptions-of-the-bosporus-kingdom-9783161587320/",
+          "https://www.haaretz.com/archaeology/2024-11-27/ty-article-magazine/excavations-of-early-synagogue-by-black-sea-find-whole-jewish-neighborhood/00000193-68d0-dd83-afdf-fff229ce0000"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.4305,
+          37.0344
+        ]
+      },
+      "properties": {
+        "id": "religion_jewish_halicarnassus",
+        "name": "Bodrum",
+        "tradition": "jewish",
+        "attestation": "probable",
+        "one_line": "The city council granted its Jewish residents, men and women alike, the right to keep the Sabbath and build a prayer house by the sea, a decree the historian Josephus later copied word for word. The proseuche stood on the waterfront, matching the diaspora custom of praying near water. That civic guarantee outlasted the Hellenistic kings who granted it and still governed the community under Roman rule. Jewish elders kept citing the decree to later officials as legal proof of their rights.",
+        "province": "Asia",
+        "modern_location": "Bodrum, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Halicarnassus",
+          "https://www.internationalstandardbible.com/H/halicarnassus.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.3417,
+          37.9398
+        ]
+      },
+      "properties": {
+        "id": "religion_jewish_ephesus",
+        "name": "Ephesus",
+        "tradition": "jewish",
+        "attestation": "probable",
+        "one_line": "Roman citizens who happened to be Jewish got pulled off a legionary conscription roll here in 49 BCE, exempted because the consul honored their ancestral rights. Marcus Agrippa later guaranteed Ephesian Jews could send temple donations to Jerusalem and keep the Sabbath undisturbed. Josephus copied several of the city's decrees into his own history as legal precedent. Their tombstones, carved in Greek like everyone else's in this Hellenized port, show a community fully at home in the city.",
+        "province": "Asia",
+        "modern_location": "Selcuk, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.jewishencyclopedia.com/articles/5789-ephesus",
+          "https://www.livius.org/articles/concept/diaspora/jewish-rome/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.5667,
+          32.5333
+        ]
+      },
+      "properties": {
+        "id": "religion_jewish_teucheira",
+        "name": "Tocra",
+        "tradition": "jewish",
+        "attestation": "attested_117",
+        "one_line": "Greek epitaphs mark this Cyrenaican port's Jewish graves right through the Flavian decades, part of the four-city Jewish settlement Strabo described across the Libyan Pentapolis. Then the evidence stops. The Jewish revolt of 115 to 117 CE tore through Cyrenaica under a leader named Lukuas, and Roman troops crushed it by slaughtering the very communities that started it, Tocra's included. Trajan died that August with the region's synagogues and Jewish population largely wiped out.",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Tocra, Libya",
+        "extant_117ce": false,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Teucheira",
+          "https://www.judaism-and-rome.org/temple-hecate-and-jewish-riot-cyrene"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.1067,
+          37.8382
+        ]
+      },
+      "properties": {
+        "id": "religion_jewish_laodicea",
+        "name": "Laodicea",
+        "tradition": "jewish",
+        "attestation": "probable",
+        "one_line": "A Roman governor tried to seize the annual gold this city's Jews collected for the Jerusalem Temple, and Cicero's courtroom defense of him is the reason the sum is still on record. The seizure exposed a large, organized, tax-paying Jewish population functioning openly under Roman law. That same fundraising network kept sending contributions every year until the Temple fell in 70 CE. Wool merchants and Jewish elders shared a marketplace in a city famous across the empire for its black fleece.",
+        "province": "Asia",
+        "modern_location": "Denizli, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Laodicea_on_the_Lycus",
+          "https://www.livius.org/sources/content/cicero-pro-flacco/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.3958,
+          35.4167
+        ]
+      },
+      "properties": {
+        "id": "religion_jewish_apamea",
+        "name": "Apamea",
+        "tradition": "jewish",
+        "attestation": "probable",
+        "one_line": "A Roman governor confiscated roughly a hundred pounds of gold from this Syrian city's Jewish community in 62 BCE, money members had spent a year collecting for Jerusalem. Cicero defended the seizure in court, and his surviving speech is the only reason the sum is known at all. That kind of organized, empire-wide fundraising kept running for communities like Apamea's for over a century after. The city sat astride the Orontes at a strategic river crossing, good ground for merchants to prosper.",
+        "province": "Syria",
+        "modern_location": "Qalaat al-Madiq, Syria",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Apamea,_Syria",
+          "https://www.livius.org/sources/content/cicero-pro-flacco/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2877,
+          36.8933
+        ]
+      },
+      "properties": {
+        "id": "religion_jewish_kos",
+        "name": "Kos",
+        "tradition": "jewish",
+        "attestation": "probable",
+        "one_line": "A Roman consul once wrote to this Aegean island naming its Jewish community among a dozen others under official Roman protection, a letter Josephus later preserved word for word. Herod the Great, a client king with money to spend, personally funded the island's gymnasium and kept close ties to its elite. Jewish islanders here traded, worshipped, and buried their dead within sight of the harbor for generations. Later communities kept citing that letter as proof of their standing.",
+        "province": "Asia",
+        "modern_location": "Kos, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kos",
+          "https://www.jewishencyclopedia.com/articles/14160-synagogue"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0865,
+          51.5045
+        ]
+      },
+      "properties": {
+        "id": "religion_isis_londinium",
+        "name": "London",
+        "tradition": "isis",
+        "attestation": "attested_117",
+        "one_line": "Someone scratched 'Londini ad fanum Isidis', at the temple of Isis, London, into a clay wine jug dropped near London Bridge in the first century CE. It is the earliest surviving instance of the city's name in any written record. The temple itself has never been found, but a later inscription confirms a Roman governor rebuilt it after it collapsed from age, proving it stood for generations. London remains the only place in Roman Britain with evidence of Isis worship at all.",
+        "province": "Britannia",
+        "modern_location": "London, United Kingdom",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Isis,_London",
+          "https://exploring-london.com/2026/05/08/lost-london-temple-of-isis/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7735,
+          36.0886
+        ]
+      },
+      "properties": {
+        "id": "religion_isis_baelo_claudia",
+        "name": "Baelo Claudia",
+        "tradition": "isis",
+        "attestation": "attested_117",
+        "one_line": "Fishermen in this tuna-salting boomtown on the Strait of Gibraltar built Isis her own temple beside the city's Capitoline gods, a rare honor in Roman Spain. A votive inscription on its steps records a local man, Marcus Sempronius Maximus, fulfilling a vow to Isis the Lady. Sailors favored her as patron of safe voyages, fitting a town whose economy ran on garum and tuna shipped across dangerous water. It remains the only Isis temple in Spain with its ground plan still intact.",
+        "province": "Baetica",
+        "modern_location": "Bolonia, Spain",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Baelo_Claudia",
+          "https://vici.org/vici/39915/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9444,
+          40.6401
+        ]
+      },
+      "properties": {
+        "id": "religion_isis_thessaloniki",
+        "name": "Thessaloniki",
+        "tradition": "isis",
+        "attestation": "attested_117",
+        "one_line": "This sanctuary to Serapis, Isis, and Anubis had stood for centuries by Trajan's reign, built soon after the city itself was founded around 315 BCE. A 1917 fire accidentally uncovered more than seventy buried Greek inscriptions, most dedicated to Osiris or Isis, alongside statues and a crypt reached by an underground tunnel. Egyptian merchants likely carried the cult here along the trade routes that made the city rich, and worship continued for five centuries straight.",
+        "province": "Macedonia",
+        "modern_location": "Thessaloniki, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://raco.cat/index.php/karanos/article/view/v8-mefsout",
+          "https://www.thearchaeologist.org/blog/an-egyptian-temple-in-thessaloniki-the-mystery-of-the-sarapeion"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9483,
+          35.0611
+        ]
+      },
+      "properties": {
+        "id": "religion_isis_gortyn",
+        "name": "Gortyn",
+        "tradition": "isis",
+        "attestation": "attested_117",
+        "one_line": "A local Cretan woman paid to rebuild this older sanctuary to Isis, Serapis, and Anubis right around Trajan's reign, and had her generosity carved in stone by the entrance. Three separate niches inside held statues of the three gods side by side, above a hidden underground chamber reached by its own staircase. It is the only Egyptian-cult sanctuary ever excavated on Crete. The building sat beside Gortyn's Temple of Apollo, putting Egyptian and Greek gods on the same sacred street.",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Agioi Deka, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.geotour.gr/listing/the-sanctuary-of-the-egyptian-gods-at-gortyn/",
+          "https://www.livius.org/pictures/greece/gortyn/gortyn-temple-of-the-egyptian-deities-isis-and-serapis/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7167,
+          41.7214
+        ]
+      },
+      "properties": {
+        "id": "religion_other_mystery_nemi",
+        "name": "Nemi",
+        "tradition": "other_mystery",
+        "attestation": "attested_117",
+        "one_line": "Runaway slaves could become high priest here by killing the man who already held the job, a duel fought under one sacred oak for over five centuries. The winner took the title King of the Wood, guarding a shrine to Diana of Nemi that drew pilgrims to this crater lake since around 300 BCE. Worshippers threw thousands of model body parts and terracotta babies into the sacred spring, begging for healing or safe childbirth. Emperors left dedications here without ending the priest-killing custom.",
+        "province": "Latium et Campania",
+        "modern_location": "Nemi, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Diana_Nemorensis",
+          "https://en.wikipedia.org/wiki/Rex_Nemorensis"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.9539,
+          36.5281
+        ]
+      },
+      "properties": {
+        "id": "religion_other_mystery_hierapolis_bambyce",
+        "name": "Manbij",
+        "tradition": "other_mystery",
+        "attestation": "attested_117",
+        "one_line": "Two colossal phalli flanked the north gate of Atargatis's temple here, where sacred fish swam in a pool pilgrims were forbidden to touch. The Syrian Goddess ruled fertility and protection from a sanctuary so wealthy the writer Lucian devoted a whole treatise to its rituals. Self-castrated priests called galli danced into ecstatic frenzies during her festivals, fascinating Greek and Roman visitors. The cult had flourished for generations by the time Trajan marched past toward Parthia.",
+        "province": "Syria",
+        "modern_location": "Manbij, Syria",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Atargatis",
+          "https://en.wikipedia.org/wiki/On_the_Syrian_Goddess"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.2746,
+          34.5508
+        ]
+      },
+      "properties": {
+        "id": "religion_other_mystery_palmyra_bel",
+        "name": "Palmyra",
+        "tradition": "other_mystery",
+        "attestation": "attested_117",
+        "one_line": "An inscription in the cella wall dates this desert temple's consecration to a precise year, 32 CE, nearly a century before Trajan died. Bel shared the sanctuary with a moon god and a sun god, a triad letting Palmyrene merchants worship ancestral gods behind a Greco-Roman facade. Caravan wealth from overland trade paid for decades of ongoing construction, adding courtyards and columns into the second century. Palmyra's merchant elite treated the temple as a monument to their own fortune.",
+        "province": "Syria",
+        "modern_location": "Palmyra, Syria",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Bel",
+          "https://smarthistory.org/temple-of-bel-palmyra/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.3253,
+          37.1214
+        ]
+      },
+      "properties": {
+        "id": "religion_other_mystery_doliche",
+        "name": "Doliche",
+        "tradition": "other_mystery",
+        "attestation": "attested_117",
+        "one_line": "Priests had sacrificed to a storm god on this hilltop since roughly 1000 BCE, a millennium of worship by the time Rome absorbed Commagene in 30 BCE. Romans renamed him Jupiter Dolichenus but kept his old iconography nearly unchanged, an armored figure standing on a bull with a lightning bolt in hand. Soldiers on this Syrian frontier carried the cult home, planting his shrines as far as Britain and the Danube. The sanctuary itself stayed in continuous use for roughly 1,300 years.",
+        "province": "Syria",
+        "modern_location": "Gaziantep, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.doliche.uni-muenster.de/en/project-dueluek-baba-tepesi/",
+          "https://en.wikipedia.org/wiki/Jupiter_Dolichenus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jupiter_dolichenus_statuette_Carnuntum.jpg?width=800",
+        "image_credit": "Votive statuette of Jupiter Dolichenus, found at Carnuntum — Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9008,
+          41.8386
+        ]
+      },
+      "properties": {
+        "id": "religion_other_mystery_praeneste",
+        "name": "Palestrina",
+        "tradition": "other_mystery",
+        "attestation": "attested_117",
+        "one_line": "Priests here practiced one of Italy's oldest forms of divination, drawing wooden lots called sortes for pilgrims consulting Fortuna's oracle. Her sanctuary climbed the hillside in seven terraces, one of the largest religious complexes in the Roman world after being rebuilt following Sulla's sack of the city in 82 BCE. Julius Caesar's own family claimed personal devotion to Fortuna Primigenia. The complex doubled as a bank, since Romans trusted temples to guard deposits nobody dared steal.",
+        "province": "Latium et Campania",
+        "modern_location": "Palestrina, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sanctuary_of_Fortuna_Primigenia",
+          "https://en.wikipedia.org/wiki/Praeneste"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.618,
+          42.176
+        ]
+      },
+      "properties": {
+        "id": "religion_other_mystery_lucus_feroniae",
+        "name": "Lucus Feroniae",
+        "tradition": "other_mystery",
+        "attestation": "probable",
+        "one_line": "Slaves who reached this grove and sat on one stone seat inside the temple stood up free, their masters bound by custom to manumit them on the spot. Feronia was an old Italic goddess of freedmen and wild groves, worshipped here before Rome conquered the surrounding Sabine and Faliscan lands. The sanctuary mattered enough that Augustus founded a veteran colony around it, named after her own grove. Merchants gathered at her annual fair, mixing trade with freedom rites under the trees.",
+        "province": "Latium et Campania",
+        "modern_location": "Fiano Romano, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Feronia_(mythology)",
+          "https://en.wikipedia.org/wiki/Lucus_Feroniae"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.2039,
+          34.0059
+        ]
+      },
+      "properties": {
+        "id": "religion_other_mystery_baalbek",
+        "name": "Baalbek",
+        "tradition": "other_mystery",
+        "attestation": "attested_117",
+        "one_line": "Trajan stopped here in 115 CE, en route to invade Parthia, to consult the sanctuary's famous oracle about the campaign's odds. Priests read omens tied to an ancient Semitic sky god the Romans called Jupiter Heliopolitanus, worshipped here long before Rome reached Syria. Augustus had planted a veteran colony nearby and funded a platform built from stones weighing hundreds of tons each. The sanctuary kept growing for two more centuries into one of the largest religious complexes in the empire.",
+        "province": "Syria",
+        "modern_location": "Baalbek, Lebanon",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Baalbek",
+          "https://en.wikipedia.org/wiki/Trajan"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1848,
+          39.1325
+        ]
+      },
+      "properties": {
+        "id": "religion_sabazios_pergamon",
+        "name": "Bergama",
+        "tradition": "sabazios",
+        "attestation": "probable",
+        "one_line": "Sabazios worship spread through the Roman world largely from this city, where inscriptions name his priesthood a civic office, not a fringe cult. Worshippers carried small bronze hands cast in a blessing gesture, covered with tiny pine cones, snakes, and turtles, mounted on staffs for processions. The god fused Phrygian and Thracian sky-father traditions with wine rites, prompting Greeks to compare him to a foreign Dionysus. Dedications here run continuously from the late first century CE.",
+        "province": "Asia",
+        "modern_location": "Bergama, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.stoa.org/texts/2001/01/0008/",
+          "https://en.wikipedia.org/wiki/Sabazios"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4823,
+          41.8763
+        ]
+      },
+      "properties": {
+        "id": "religion_sabazios_rome",
+        "name": "Rome",
+        "tradition": "sabazios",
+        "attestation": "probable",
+        "one_line": "A Roman praetor expelled Sabazios worshippers from the city in 139 BCE, lumping them with astrologers and Jews as a foreign influence, per the historian Valerius Maximus. The crackdown did not work. Bronze votive hands cast in a blessing gesture and dedicated to Sabazios turn up across Italy from the imperial period, proof the cult kept quietly running for centuries after. Immigrants from Phrygia and Thrace kept his mystery rites alive on Rome's margins.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sabazios",
+          "https://www.researchgate.net/publication/328866948_The_hand_gesture_and_symbols_of_Sabazios"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }

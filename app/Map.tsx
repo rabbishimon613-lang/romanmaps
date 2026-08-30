@@ -1940,7 +1940,7 @@ export default function Map() {
                 christian: "Christian community",
                 jewish: "Jewish diaspora community",
                 isis: "Isis cult center",
-                mithraic: "Mithraic community",
+                mithraeum: "Mithraeum",
                 cybele: "Cybele (Magna Mater) center",
                 sabazios: "Sabazios cult center",
                 other_mystery: "Mystery cult sanctuary",
