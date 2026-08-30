@@ -1630,6 +1630,447 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.6167,
+          37.8167
+        ]
+      },
+      "properties": {
+        "id": "mint_tyana",
+        "name": "Kemerhisar",
+        "category": "mint",
+        "metal": "silver, bronze",
+        "role": "civic",
+        "one_line": "Tyana struck a Trajan silver tridrachm stamped with a bundle of grain ears, celebrating the wheatfields of its Cappadocian plain, alongside bronze issues pairing Zeus enthroned with a bull. The city stood at the foot of the Taurus Mountains beside the road linking the Cilician Gates to the interior, a chokepoint every army marching east had to pass through. Its mint ran independently of nearby Caesarea, giving Cappadocia two active civic coinages under Trajan.",
+        "province": "Cappadocia",
+        "modern_location": "Kemerhisar, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Tyana, Cappadocia",
+          "Forum Ancient Coins, Members' Coin Gallery, 'Trajan - Tyana Cappadocia'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.7833,
+          36.7667
+        ]
+      },
+      "properties": {
+        "id": "mint_aegeae",
+        "name": "Yumurtalik",
+        "category": "mint",
+        "metal": "silver, bronze",
+        "role": "civic",
+        "one_line": "Aegeae, a small port on the Bay of Issus, struck silver tetradrachms and bronze coin without a break from 20 BCE onward, including an issue dated to the very transition between Trajan and Hadrian in 117-118 CE. Its dies paired the emperor's portrait with Perseus and the curved harpa he used to behead Medusa. Strabo already described the city as a modest harbor town by the time Rome absorbed Cilicia.",
+        "province": "Cilicia",
+        "modern_location": "Yumurtalik, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 3343, 3349, Aegeae, Cilicia",
+          "Academia.edu, 'Additions and Corrections to the Numismatic Corpus of Aegeae (Cilicia)'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.6533,
+          36.9958
+        ]
+      },
+      "properties": {
+        "id": "mint_mopsuestia",
+        "name": "Yakapinar",
+        "category": "mint",
+        "metal": "silver, bronze",
+        "role": "civic",
+        "one_line": "Mopsuestia struck bronze civic coin on the Pyramus River continuously from Domitian through Caracalla, with silver appearing only in rare exceptional issues. The city claimed the seer Mopsus, son of Apollo, as its legendary founder and namesake. A stone bridge across the Pyramus, rebuilt in the Roman era, still stands at the site today.",
+        "province": "Cilicia",
+        "modern_location": "Yakapinar, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Ancient Numismatic Mythology, 'Coinage of Cilicia', ancientcoinage.org",
+          "WildWinds.com, 'Cilicia, Mopsus'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.39,
+          36.7
+        ]
+      },
+      "properties": {
+        "id": "mint_mallus",
+        "name": "Kiziltahta",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Mallus struck civic bronze under Trajan naming itself devoted to the oracle-hero Amphilochus, whose local shrine supposedly answered questions for a fee of two obols. The city sat where the Pyramus River met the sea, facing its own satellite port of Magarsus across the water. Its coin legends ran continuously from Tiberius through Macrinus, spanning more than a century of civic minting.",
+        "province": "Cilicia",
+        "modern_location": "Kiziltahta, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Ancient Numismatic Mythology, 'Coinage of Cilicia', ancientcoinage.org",
+          "WildWinds.com, 'Cilicia, Mallus'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.8353,
+          40.6499
+        ]
+      },
+      "properties": {
+        "id": "mint_amaseia",
+        "name": "Amasya",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Amaseia struck bronze coin under Trajan showing a five-stepped temple and a legend dated to local year 115, corresponding to 112-113 CE. Strabo, the geographer who wrote the fullest surviving account of the ancient world, was born in this city carved into a gorge of the Iris River. Rock-cut tombs of the old Pontic kings still loom over the site from cliffs above the riverbank.",
+        "province": "Galatia",
+        "modern_location": "Amasya, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 2910, Trajan, Amaseia, Pontus",
+          "Bryn Mawr Classical Review 2024.07.03, 'Roman provincial coinage of Bithynia and Pontus during the reign of Trajan'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9833,
+          39.4242
+        ]
+      },
+      "properties": {
+        "id": "mint_cotiaeum",
+        "name": "Kutahya",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Cotiaeum struck civic bronze under Trajan honoring Zeus Melenos, a local title of the god tied to a mountain shrine outside the city. The Roman proconsul Marcus Scapula, who governed Asia during Trajan's reign, appears named as issuing magistrate on the city's dies. Set on the upper Tembris River, Cotiaeum sat along the road linking Dorylaeum to the road hub at Apamea sixty miles south.",
+        "province": "Asia",
+        "modern_location": "Kutahya, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Numis Forums, 'Off the Beaten Path: Cotiaeum (Phrygia) Zeus'",
+          "WildWinds.com, 'Phrygia, Cotiaeum'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9167,
+          32.6167
+        ]
+      },
+      "properties": {
+        "id": "mint_dora",
+        "name": "Tel Dor",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Dora struck a burst of bronze coin in a single year, 111-112 CE, pairing Trajan's portrait with a turreted Tyche and a river god swimming at her feet. Only eleven examples of that issue are known today, making it one of the rarest civic coinages on the whole Phoenician coast. The old Canaanite port, first settled more than a thousand years before Rome existed, used the coinage to mark a moment of renewed civic standing under Trajan.",
+        "province": "Syria",
+        "modern_location": "Tel Dor, Israel",
+        "extant_117ce": true,
+        "sources": [
+          "RPC Online III 3916, Trajan, Dora"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.2044,
+          37.3086
+        ]
+      },
+      "properties": {
+        "id": "mint_stratonicea",
+        "name": "Eskihisar",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Stratonicea struck bronze coin under Trajan showing Zeus seated on a throne with a patera in hand, a design its Seleucid founders would have recognized on coins struck three centuries earlier. The city took its name from Stratonice, wife of the Seleucid king Antiochus I, and grew wealthy from marble quarries still visible around the site. Its territory held two famous sanctuaries, including one to Zeus Panamaros reachable by a sacred processional road.",
+        "province": "Asia",
+        "modern_location": "Eskihisar, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC Online III 1772, Trajan, Stratonicea, Caria",
+          "WildWinds.com, 'Caria, Stratonikeia'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.95,
+          40.9667
+        ]
+      },
+      "properties": {
+        "id": "mint_perinthus",
+        "name": "Marmara Ereglisi",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Perinthus struck civic bronze under Trajan showing Dionysus pouring wine at a flaming altar, part of a coinage program the city ran as capital of the Roman province of Thrace. Its dies also carried a long-running series on the labors of Heracles, from the Nemean lion to the golden apples. The city's harbor on the Sea of Marmara made it the administrative hub for a province stretching from the Aegean to the Danube foothills.",
+        "province": "Thracia",
+        "modern_location": "Marmara Ereglisi, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC Online III 700, Trajan, Perinthus, Thrace",
+          "Corpus Nummorum, 'Coin Typology of Perinthos'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.95,
+          35.0667
+        ]
+      },
+      "properties": {
+        "id": "mint_gortyna",
+        "name": "Gortyna",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Gortyna struck imperial bronze coin without interruption from Augustus through Trajan's reign, the longest-running civic mint on Crete. The city's law code, carved into massive stone blocks in the 5th century BCE, still stands legible today as the oldest and most complete Greek law code ever recovered. Rome made Gortyna its provincial capital for Crete and Cyrenaica after Pompey's conquest of the island.",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Agioi Deka, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "WildWinds.com, 'Crete, Gortyna'",
+          "Wikimedia Commons, Category: Ancient Roman bronze coins of Gortyna"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4297,
+          37.0733
+        ]
+      },
+      "properties": {
+        "id": "mint_sparta",
+        "name": "Sparti",
+        "category": "mint",
+        "metal": "none (dormant, revived under Hadrian in the 120s CE)",
+        "role": "civic",
+        "one_line": "Sparta's mint sat silent through all of Trajan's reign, its last civic bronze struck under Claudius roughly sixty years earlier. The city famous for its warrior culture would not strike coin again until the 120s CE, after Hadrian visited Achaia in person. In 117 CE Sparta was a market town living off its Classical-era reputation, its coin workshops idle for two generations running.",
+        "province": "Achaia",
+        "modern_location": "Sparti, Greece",
+        "extant_117ce": false,
+        "sources": [
+          "Coin World, 'Sparta and its coinage: Ancients Today'",
+          "Sulla Coins, 'Where are all the Spartan coins?'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.4,
+          42.4667
+        ]
+      },
+      "properties": {
+        "id": "mint_deultum",
+        "name": "Debelt",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Deultum, a colony Vespasian planted for veterans of the Eighth Legion, struck its own bronze coin under Trajan as Colonia Flavia Pacis Deultensium. It was one of only two Roman colonies with minting rights anywhere in the province of Thrace. Its coin legends ran in Latin rather than the Greek used at every civic mint around it, marking the settlement out as a transplanted island of Roman citizens on the Thracian coast.",
+        "province": "Thracia",
+        "modern_location": "Debelt, Bulgaria",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 743, Trajan, Deultum, Thrace",
+          "Academia.edu, 'The Coinage of Deultum'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.6333,
+          42.55
+        ]
+      },
+      "properties": {
+        "id": "mint_anchialus",
+        "name": "Pomorie",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Anchialus received formal city status from Trajan, who folded his own family name into it, and its coins carried the legend 'of the Ulpian Anchialitans' ever after in his honor. Salt pans along its shallow bay had drawn settlers to the site since the 5th century BCE. Within a century of that Trajanic charter, its Black Sea harbor became the busiest trading point in the whole province of Thrace.",
+        "province": "Thracia",
+        "modern_location": "Pomorie, Bulgaria",
+        "extant_117ce": true,
+        "sources": [
+          "WildWinds.com, 'Thrace, Anchialus'",
+          "TrustedAncientCoins.com, 'Architecture on Ancient Greek and Roman Coins Guide'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1333,
+          38.3667
+        ]
+      },
+      "properties": {
+        "id": "mint_chios",
+        "name": "Chios",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Chios struck bronze coin under Trajan and Hadrian carrying the sphinx the island had used as its emblem for nearly nine centuries, one forepaw resting on an amphora or a ship's prow. The island had converted its old Greek denominations to the Roman assarion system a century earlier under Augustus, blending local tradition with imperial bookkeeping. Chian wine, prized across the Mediterranean, funded the civic treasury that kept the mint running.",
+        "province": "Asia",
+        "modern_location": "Chios, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III 4076, Chios, Ionia (Islands)",
+          "Museum of Fine Arts Boston, 'Coin of Chios with sphinx'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.3167,
+          36.2667
+        ]
+      },
+      "properties": {
+        "id": "mint_selinus_traianopolis",
+        "name": "Gazipasa",
+        "category": "mint",
+        "metal": "none (bronze coinage began only after 117 CE, as Traianopolis)",
+        "role": "civic",
+        "one_line": "Trajan died in this small Cilician port in August 117 CE, the first Roman emperor to die outside Italy. Selinus had no mint of its own at the time; the grieving city renamed itself Traianopolis and only began striking bronze coin picturing his temple afterward, output that continued into the 3rd century CE. A single historic moment turned a minor harbor town into a permanent fixture of imperial memory.",
+        "province": "Cilicia",
+        "modern_location": "Gazipasa, Turkey",
+        "extant_117ce": false,
+        "sources": [
+          "FollowingHadrian.com, '8 August AD 117 - Trajan dies at Selinus'",
+          "WildWinds.com, 'Cilicia, Selinus'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0819,
+          32.9281
+        ]
+      },
+      "properties": {
+        "id": "mint_ptolemais_akko",
+        "name": "Acre",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Ptolemais, a Roman colony Claudius upgraded from an old Phoenician port town, struck bronze coin under Trajan pairing his portrait with a turreted Tyche seated on rocks and a river god at her feet. Its full colonial title ran Colonia Claudia Felix Ptolemais Germanica Stabilis, one of the longest city names in the Roman East. Ptolemy II had refounded the older Phoenician city under his own name four centuries earlier, and Rome layered a Latin identity on top of that Hellenistic one.",
+        "province": "Syria",
+        "modern_location": "Acre, Israel",
+        "extant_117ce": true,
+        "sources": [
+          "Zuzim Coins, 'Akko - Ptolemais, Trajan AE, About Extremely Fine, 98-117 C.E.'",
+          "Academia.edu, 'The Mint of Akko through the Ages'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.5833,
+          39.3167
+        ]
+      },
+      "properties": {
+        "id": "mint_pessinus",
+        "name": "Ballihisar",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Pessinus, seat of the Mother Goddess Cybele's most sacred shrine in Asia Minor, struck civic bronze through Trajan's reign under the oversight of Galatia's Roman governor. Its coin types kept returning to Cybele's image, the same goddess whose black meteorite stone Rome had imported to the capital three centuries earlier during the war with Hannibal. Scholars still debate whether Pessinus or neighboring Ancyra was the actual mint site behind some of the province's shared coin issues.",
+        "province": "Galatia",
+        "modern_location": "Ballihisar, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Academia.edu, 'The Coinage of Pessinous: Iconography, Civic Identity and Roman Power'",
+          "WildWinds.com, 'Galatia, Pessinos'"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
