@@ -1121,6 +1121,39 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       echoes ("multiple estates as origin nodes"). Checked this shift before assuming it was a bug
       — worth remembering so a future cleanup pass doesn't "fix" it by deleting one.
 
+## New ideas spotted this shift (2026-08-30, Shift 78 — mints, religious communities, diplomacy, sacred sites)
+
+- [x] **Real cross-file duplicate found and fixed**: `poi_bridge_tiberius_rimini` and
+      `poi_bridge_tiberio_rimini` were the same Rimini bridge under two ids, one violating
+      invariant 1.5 (Italian display name). Merged and redirected, same pattern as the earlier
+      Pantheon fix — see SHIFT_LOG for detail. Flagging the general pattern again since this is at
+      least the third near-identical duplicate a shift has caught by hand rather than tooling —
+      `[12-P0-1]` merge-themes and a systematic exact-coordinate/name-collision sweep (`npm run
+      validate --duplicates` already surfaces 179 candidates) would catch the rest faster than
+      shifts stumbling onto them one at a time while working on something else.
+- [ ] **Axis 3b's "sacred sites beyond the city temple" gap-hunt found the Egyptian big-five
+      temples, Isthmia, Didyma, Hierapolis Bambyce, and Tyre's Melqart temple already on the map**
+      — all filed under `pois.geojson`'s `temple` category, not `sanctuary`/`oracle`/`asklepieion`,
+      which is why a category-filtered check missed them at first. Before any future shift plans a
+      "close this axis's brief-named gaps" pass, check the live `category` breakdown across *all*
+      relevant categories (temple + sanctuary + oracle + asklepieion together), not just the ones
+      the axis description happens to name.
+- [ ] **Axis 6b (religious communities) deliberately left Mithraea alone again this shift**, same
+      caution Shifts before it have flagged — every candidate researched (Sidon, Rome's Santa
+      Prisca/Barberini) turned out to date to the 3rd century or later on closer reading, despite
+      some popular accounts claiming 1st-century origins. The map's single existing mithraeum record
+      is the only one that has ever cleared a genuine pre-117 bar. A future shift with a fresh
+      research budget aimed *specifically* at settling this (rather than a side-check within a
+      broader religions batch) could either confirm a second real candidate or document the ceiling
+      definitively enough to stop it resurfacing.
+- [ ] **Axis 8 (mints) real remaining candidates for a fresh batch**: Priene, Chios, and Samos were
+      researched this shift but dropped for lack of confirmable Trajanic-specific (as opposed to
+      general Hellenistic-through-Roman) minting activity — worth one more focused look with a
+      numismatic-specific source (RPC online directly, if this sandbox's egress ever opens to it)
+      rather than WebSearch snippets of secondary summaries. Do NOT re-attempt Petra, Emesa,
+      Damascus, Iconium, Byblos, or Aphrodisias — all confirmed genuine dating/attestation dead ends
+      this shift, not a search-budget shortfall.
+
 ## Shipped (moved from above; newest on top)
 
 - 2026-08-30 — Shift 77: Axis 3a — 44 new forts across two fresh frontiers: eastern (Arabia,

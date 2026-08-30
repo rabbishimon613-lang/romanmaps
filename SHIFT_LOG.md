@@ -7,6 +7,134 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 78 — 2026-08-30 (this shift's own prompt claimed "Shift 3 of four")
+
+Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
+count. Repo booted on a detached `HEAD` sitting at a stale local `main` ref (`5093cbe`, "Shift 56")
+while `HEAD` itself was already at the real tip (`077de51`, Shift 77's own last commit);
+`git fetch origin main` + `git checkout -B main origin/main` resolved it cleanly with no lost work,
+same pattern documented by a dozen shifts before this one.
+
+### Board + backlog check
+
+Confirmed Shift 77's own conclusion still holds: every open `BOARD.md` P0 ticket is either too
+large for one unattended session (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]`
+card-rebuild, `[13-P0-2]` image-audit), half-blocked on missing tooling (`[02-P0-4]`'s glyph-PBF
+half), or blocked on external setup (`[15-P0-1]`/`[14-P0-1]`, both need Pedro). `[02-P0-1]` terrain's
+`[~]` claim (cloud shift 68, 2026-08-28) is well past the board's 24h staleness window but left
+alone — its real blocker (network-fetched hillshade tiles + a likely new npm raster/DEM dependency)
+is unchanged. Fell back to the axes, same as recent shifts, and deliberately picked axes Shift 77
+had *not* just worked (it did 3a military + axis 4 living-empire) to spread coverage rather than
+re-mine the same ground twice in a row.
+
+### A data-integrity fix before Track A
+
+Found a genuine duplicate while scoping candidates: `poi_bridge_tiberius_rimini` and
+`poi_bridge_tiberio_rimini` were the same five-arch bridge at Rimini (same CIL XI 367 dedication,
+same `built:14`, ~480m coordinate drift), one under the correct English display name and one under
+its Italian name in violation of invariant 1.5. Merged the unique Via Aemilia/WWII-survival detail
+from the Italian-named record into the canonical one, deleted the duplicate, and added a permanent
+redirect for its already-indexed `/place/bridge_tiberio_rimini` URL — same pattern as the earlier
+Pantheon merge under `[12-FIX-3]`. `pois.geojson` 1196 → 1195 before this shift's additions.
+
+### Track A — four axes, four research batches, each reviewed and spliced by hand
+
+Every batch was researched by a background agent scoped to a single scratch JSON file (no repo
+write access, the pattern established by Shifts 75-77); each file was read in full, checked for
+duplicate ids against the live data, spot-checked for schema/voice/invariant-1.5 compliance, and
+spliced in via `scripts/append-geojson-features.mjs` (confirmed byte-identical elsewhere via its
+own reported diff before every commit).
+
+**Axis 8 (money/administration) — 30 more civic mints, past the axis's own low per-shift floor but
+targeted at the brief's specific "~120 civic mints, mostly unexplored" claim** (40 existing before
+this shift). Covered the Troad/Aeolis (Alexandria Troas, Assos, Adramyttium, Cyme, Ilium, Parium),
+Ionia/Caria/Lydia (Miletus, Tralles, both Magnesias, Halicarnassus, Cnidus, Nysa, Thyatira), the
+Aegean islands (Mytilene, Cos, Rhodes), Pisidia/Pamphylia (Sagalassos, Termessos, Side, Attaleia),
+Byzantium, the Levant (Gadara, Gaza, Neapolis, Laodicea ad Mare), and Macedonia/Achaia (Athens,
+Patrae, Thessalonica, Philippi). All sourced to RPC III and named numismatic references, "medium"
+confidence except Laodicea ad Mare ("high" — an explicitly dated CY 162/114-5 CE specimen found).
+Real candidates researched and dropped on a genuine dating gap: Petra, Emesa, Damascus, Iconium,
+Byblos, and Aphrodisias all lack confirmable Trajanic-specific civic bronze output despite being
+otherwise well-documented mints in other periods. `mints.geojson` 40 → 70.
+
+**Axis 6b (religious communities) — 26 more records across five traditions**, past the 25-floor.
+10 more Christian communities drawn straight from primary sources (Ignatius's seven letters, the
+seven churches of Revelation, Paul's epistles): Magnesia, Tralles, Philadelphia, Pergamon, Thyatira,
+Sardis, Laodicea, Colossae, Troas, Cenchreae. 6 more Jewish diaspora communities (Acmonia, Berenice/
+Benghazi, Hierapolis, Nehardea in Parthia — flagged as outside the empire, Pisidian Antioch, and
+Salamis Cyprus — the only one shipped `extant_117ce:false`, its community destroyed in the 116 CE
+Kitos War, matching the "destroyed before 117 → still pin it, mark false" rule). 4 more Isis centers,
+3 more Cybele centers, and a new `sabazios` tradition value with its first entry (Athens, attested
+from the 5th c. BCE) — added to `Map.tsx`'s hover-popup tradition-label map in the same commit so it
+doesn't fall back to a raw enum string. 2 `other_mystery` entries, including Sol Indiges at the
+Circus Maximus — the genuinely ancient Roman sun cult, the research explicitly distinguishing it
+from the anachronistic later Sol Invictus. Every Mithraeum candidate researched (Sidon, Rome's Santa
+Prisca/Barberini) was dropped — none cleared a genuine pre-117 date, exactly the caution the brief's
+own axis 3b/6b notes raise about this cult repeatedly getting mis-dated. `religions_117.geojson`
+27 → 53.
+
+**Axis 14 (foreign relations) — 12 more records, past the 15-floor combined with the above.**
+Aksumite trade at Adulis (the Periplus's Zoscales), Himyarite/Sabaean incense-route diplomacy at
+Zafar (Charibael's "continual embassies"), the Begram Hoard as physical Kushan-Roman contact
+evidence, the 21 BCE Meroe peace treaty, Vespasian's Caucasus client-fortress inscription at Armazi,
+Trajan's own 116 CE Parthamaspates coronation at Ctesiphon, two more named hostages (Italicus of the
+Cherusci, Maroboduus of the Marcomanni), Germanicus's Armenian coronation at Artaxata, an inland
+Indo-Roman trade site at Karur, Socotra's Hoq Cave sailor graffiti, and Domitian's 89 CE Dacian
+peace embassy under Diegis. Dropped rather than forced: a named pre-106 Nabataean hostage (none
+individually documented), Rhapta (real but its location is a live scholarly dispute, no responsible
+coordinates), Farasan Islands garrison inscriptions (144 CE+, after the snapshot), and Hadrian's
+Parthian-throne return (happened after Trajan's 11 August death — past the snapshot moment even
+though it's the very next thing that happens). `diplomacy_117.geojson` 17 → 29.
+
+**Axis 3b (sacred sites beyond the city temple) — 14 more, a shorter batch by design.** The research
+agent's first pass found nearly every brief-named candidate (Karnak, Luxor, Philae, Dendera, Edfu,
+Kom Ombo, Isthmia, Didyma, Hierapolis Bambyce, Tyre's Melqart, Baalbek, Petra's Qasr al-Bint, Aegina's
+Aphaia) already on the map under the `temple` category from earlier shifts — a real finding worth
+recording so the next shift doesn't re-research the same "gap" — and pivoted to a fresh list: Lydney
+Park's Temple of Nodens and Carrawburgh's Coventina's Well (both honestly `extant_117ce:false`, built
+~300 CE and ~130 CE respectively — real Roman-Britain sites, just not yet standing at the snapshot),
+Sounion's Poseidon temple, Rhamnous's Nemesis sanctuary, Bassae's Apollo Epicurius temple, the
+Heraion of Samos, Pisidian Antioch's Men Askaenos sanctuary, the Ptoion's Apollo sanctuary, Zeus
+Baetocaece at Hosn Suleiman, Zeus Panamaros, Thebes's Kabeiroi sanctuary, Allonnes's Mars Mullo
+sanctuary, Labraunda's Zeus sanctuary, and Rome's own Temple of Aesculapius on Tiber Island — a
+genuine Overpass-fetch blind spot, since the site remains unexcavated today. Fixed two invariant-1.5
+violations on review before splicing (parenthetical alternates in two `name_english` fields the
+research agent had written — "Sanctuary of Apollo Ptoios (Ptoion)" and "...Kabeiroi (Kabirion),
+Thebes"). `pois.geojson` 1195 → 1209.
+
+### State, verification, next
+
+`npm install` needed at session start (fresh cloud container, standing pattern); reverted the usual
+`package-lock.json` npm-version metadata noise before committing. `npm run validate`: 0 errors
+before and after every batch; warning count held at the same 17 pre-existing ones except one new,
+expected addition (`diplomacy_karur_roman_trade` sits outside the empire envelope — correct, it's
+an India trade-contact point, same class as the three pre-existing India warnings). `npm run build`:
+clean before every push, six commits total (Rimini dedup fix; mints; religions; diplomacy; sacred
+sites; METRICS.md refresh), each pushed individually as soon as verified. `npm run metrics --
+--write`: 1196 → 1209 POIs net (+13, after the −1 dedup correction and +14 sacred-sites addition),
+plus +30 mints, +26 religions, +12 diplomacy — **82 new sourced features this shift** across four
+axes, comfortably inside the brief's 30-100-per-shift rule of thumb, with every touched axis clearing
+its own per-shift floor. Track B (UI/feature backlog) was skipped this shift for the same reason
+Shift 77 gave: `FEATURE_BACKLOG.md`'s P0-P3 list is down to one open item (terrain shading), already
+explained as blocked on network egress + the package.json guardrail — the Rimini duplicate fix is a
+data-integrity "fix" ticket, not a Track B UI item, so it doesn't substitute, but it used time that
+would otherwise have gone toward a forced, unsafe UI change.
+
+**Next shift**: axis 8's mint pool likely has one more solid batch before hitting the same kind of
+research ceiling axis 3a's eastern frontier hit two shifts ago — Priene/Chios/Samos and a second
+pass at Cilicia/Cappadocia's smaller civic mints are worth a fresh WebSearch budget, though Petra/
+Emesa/Damascus/Byblos should not be re-attempted (confirmed dead ends, see above). Axis 6b has real
+remaining headroom too: this shift deliberately left Mithraea alone per the brief's own caution, but
+a dedicated pass specifically hunting for a securely-pre-117-dated Mithraeum (rather than the
+default "probably too late" assumption) could resolve the question either way instead of leaving it
+perpetually open. Axis 3b's finding that the Egyptian/Isthmia/Didyma/Bambyce/Melqart candidates were
+already mapped under `temple` (not `sanctuary`) is worth remembering before any future shift plans a
+"gap-filling" pass on this axis — check the live category breakdown first, not just a name search.
+Board and backlog otherwise unchanged: alimenta towns (axis 15) remain hard-capped at 28/50 and
+should not be re-attempted without a non-WebSearch source.
+
+---
+
 ## Shift 77 — 2026-08-30 (this shift's own prompt claimed "Shift 2 of four")
 
 Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
