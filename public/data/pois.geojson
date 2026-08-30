@@ -35427,6 +35427,300 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.6906,
+          36.1472
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_auzia",
+        "category": "auxiliary_fort",
+        "name_latin": "Auzia",
+        "name_english": "Auzia",
+        "province": "Mauretania Caesariensis",
+        "modern_location": "Sour El-Ghozlane, Algeria",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Augustus's legions raised a castrum here beside a Berber village named Auzia, planting one of the earliest Roman garrisons in central Mauretania Caesariensis. Tacitus recorded the post as the Castellum Auziense, headquarters for the district commander during the Tacfarinas war. A civilian vicus grew up alongside the fort on the road roughly 150 kilometers southeast of Icosium, and by 117 CE both fort and settlement anchored Rome's inland frontier. Septimius Severus later elevated the town to colonia status as Colonia Septima Aurelia Auziense, decades after Trajan's reign.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Auzia",
+          "https://en.wikipedia.org/wiki/Mauretania_Caesariensis"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.4333,
+          36.1333
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_rapidum",
+        "category": "auxiliary_fort",
+        "name_latin": "Rapidum",
+        "name_english": "Rapidum",
+        "province": "Mauretania Caesariensis",
+        "modern_location": "Sour Djouab, Algeria",
+        "built": 122,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Roman engineers laid out this quadriburgium fort in 122 CE on the Nova Praetentura road linking Numidia to Mauretania Tingitana, roughly 100 kilometers south of Icosium. Its first garrison, the Cohors II Sardorum, watched the frontier zone between Auzia and the Chelif valley. A civilian vicus grew up around the walls and lasted until Berber raiders destroyed it under Aurelian more than a century later. Rapidum's foundation date falls five years after Trajan's death, so on 11 August 117 CE the site was still open ground.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Rapidum"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.647,
+          36.228
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_tigava",
+        "category": "auxiliary_fort",
+        "name_latin": "Tigava Castra",
+        "name_english": "Tigava Castra",
+        "province": "Mauretania Caesariensis",
+        "modern_location": "El Attaf, Algeria",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Tigava Castra guarded a river crossing on the road between Oppidum Novum and Malliana in central Mauretania Caesariensis, two Roman miles from the separate civilian town of Tigava. Ptolemy's Geography and the Antonine Itinerary both list the post as a fixed stop on the province's road network. An amphitheater later rose in the garrison town that grew up around the fort's walls. No surviving inscription records the year the camp itself was raised, though its place in the province's early road system points to an origin well before the second century.",
+        "sources": [
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry=tigava-castra-geo",
+          "https://en.wikipedia.org/wiki/Tigava"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6775,
+          35.8008
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_zarai",
+        "category": "auxiliary_fort",
+        "name_latin": "Zaraï",
+        "name_english": "Zaraï",
+        "province": "Numidia",
+        "modern_location": "Aïn Oulmene area, Algeria",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Zaraï stood on the pre-desert frontier of Numidia at the edge of the Hodna range, where Legio III Augusta and its auxiliaries extended Rome's road network under Trajan. Funerary inscriptions from the site name a soldier of the Cohors VI Commagenorum and a standard-bearer of the Cohors I Flavia Equitata, confirming a garrison town rather than a mere market stop. Emperor Hadrian personally inspected an auxiliary cohort at Zaraï on 7 July 128 CE while touring the African provinces. A later customs post here recorded a detailed tariff of tolls on livestock, hides, and slaves crossing between the desert and the coast, one of only a handful of complete Roman customs schedules to survive.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Zara%C3%AF",
+          "https://www.persee.fr/doc/antaf_0066-4871_2014_num_50_1_1562"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0753,
+          35.7794
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_diana_veteranorum",
+        "category": "auxiliary_fort",
+        "name_latin": "Diana Veteranorum",
+        "name_english": "Diana Veteranorum",
+        "province": "Numidia",
+        "modern_location": "Aïn Zana, Algeria",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Diana Veteranorum took its name from the retired soldiers of Legio III Augusta whom Trajan settled here on land grants in Numidia's high plains. The colony sat 90 kilometers southwest of Cirta and anchored a chain of veteran settlements meant to hold the frontier without full-time garrisons. A monumental arch and other public buildings rose over the following decades as the post grew from a military settlement into a proper town. On 11 August 117 CE its founding veterans, granted land under Trajan's own settlement scheme, still worked those fields.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Diana_Veteranorum",
+          "https://pleiades.stoa.org/places/334536"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1333,
+          35.4167
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_mascula",
+        "category": "auxiliary_fort",
+        "name_latin": "Mascula",
+        "name_english": "Mascula",
+        "province": "Numidia",
+        "modern_location": "Khenchela, Algeria",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Mascula rose on the northern slope of the Aurès at 1,200 meters, guarding the route into the mountains where Numidia met the pre-desert. Trajan's army built the post, and a cohort of Lusitanian auxiliaries held its walls alongside detachments of Legio III Augusta. The fort controlled the most important pass giving Roman Numidia access to the far side of the range. Mascula grew into a full colonia only later in the second century, well after this map's snapshot.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Mascula"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.36,
+          35.02
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_mesarfelta",
+        "category": "auxiliary_fort",
+        "name_latin": "Mesarfelta",
+        "name_english": "Mesarfelta",
+        "province": "Numidia",
+        "modern_location": "near El Outaya, Algeria (identification debated)",
+        "built": 75,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Mesarfelta rose in the second half of the first century CE as a fortified Roman-Berber post on the northern approach to the Aurès massif. Ditches and earthworks of the later Fossatum Africae ran north from here toward Thubunae, tying the post into a chain of watchpoints that tracked seasonal herding across the frontier. Hadrian gave the settlement an amphitheater for its games decades after this map's snapshot. Archaeologists still debate whether Mesarfelta's ruins lie at El-Outaïa or at one of several other candidate sites near the Aurès foothills, so its exact position on this map is approximate.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Mesarfelta"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.3156,
+          35.8883
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_septem",
+        "category": "auxiliary_fort",
+        "name_latin": "Ad Septem Fratres",
+        "name_english": "Septem",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Ceuta",
+        "built": 42,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Emperor Claudius folded this Atlantic gateway into the new province of Mauretania Tingitana in 42 CE, raising a Roman stronghold above the harbor across the strait from Baelo Claudia in Spain. Local fishermen salted and exported tunny from these waters, feeding a trade that tied the fort to ports throughout the western Mediterranean. Roads ran overland from here to both Tingis and Volubilis, linking the coastal garrison to the rest of the province's network. The post took its name, Ad Septem Fratres, from seven hills visible along this stretch of coast.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Septem_(Ceuta)",
+          "https://en.wikipedia.org/wiki/Abyla"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.4097,
+          35.5583
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_tamuda",
+        "category": "auxiliary_fort",
+        "name_latin": "Tamuda",
+        "name_english": "Tamuda",
+        "province": "Mauretania Tingitana",
+        "modern_location": "near Tétouan, Morocco",
+        "built": 42,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman troops built an 80-meter-square castellum at Tamuda in the mid-first century CE, garrisoning a site the Mauretanian Berbers had already held since the third century BCE. Governor Gaius Suetonius Paulinus campaigned through this stretch of the Tingitana coast in 42 CE, the same years the fort's earliest phase took shape. The camp sat on the Martil river six kilometers from where Tétouan stands today, guarding the approach to the coast from the interior. Excavators found the fort's walls overlying the older Mauretanian town, itself built up over centuries before Rome arrived.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tamuda",
+          "https://www.academia.edu/14282625/Los_britones_y_el_castellum_de_Tamuda_en_el_contexto_de_las_Provincias_Mauritanas"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3458,
+          35.3483
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_thubunae",
+        "category": "auxiliary_fort",
+        "name_latin": "Thubunae",
+        "name_english": "Thubunae",
+        "province": "Numidia",
+        "modern_location": "Tobna, Algeria",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Thubunae sat astride the road linking the Aurès forts to Nicivibus, a river crossing important enough that Rome garrisoned it through much of the province's history. A single surviving milestone on that road carries the abbreviated name '[a Thu]bonis,' one of the few inscriptions to confirm the site by its Roman name. Archaeologists trace the earliest Roman-period occupation to the first century CE, though the settlement did not gain municipium status until Septimius Severus's reign nearly a century later. The fortress walls still visible at the site today were rebuilt in the Byzantine period, centuries after Trajan's death, over the remains of the earlier Roman post.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tobna",
+          "https://en.wikipedia.org/wiki/Numidia_(Roman_province)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7104,
+          35.2167
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_calceus_herculis",
+        "category": "auxiliary_fort",
+        "name_latin": "Ad Calceum Herculis",
+        "name_english": "Calceus Herculis",
+        "province": "Numidia",
+        "modern_location": "El Kantara, Algeria",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Ad Calceum Herculis guarded the narrow gorge at El Kantara, a passage only 40 meters wide between walls rising 120 meters, where the road from Lambaesis to Thubunae crossed into the pre-Saharan plains. Legio III Augusta opened this road in the first century CE and posted a garrison at the crossing alongside two sister outposts, Duo Flumina and Ad Aquas Herculis. By the second century the bridge and gorge were held by Syrian archer auxiliaries rather than legionaries. The gorge's dramatic cliffs gave the post its Roman name, the Heel of Hercules.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Calculeus_Herculis",
+          "http://imperium.ahlfeldt.se/places/32479.html"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
