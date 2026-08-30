@@ -35452,7 +35452,10 @@
           "https://en.wikipedia.org/wiki/Auzia",
           "https://en.wikipedia.org/wiki/Mauretania_Caesariensis"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/10-003_Aqueduc_de_Sour_El_Ghozlane_(1).jpg?width=800",
+        "image_credit": "Aqueduct of Sour El-Ghozlane (ancient Auzia), Algeria · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman aqueduct at Sour El-Ghozlane, ancient Auzia"
       }
     },
     {
@@ -35559,7 +35562,10 @@
           "https://en.wikipedia.org/wiki/Diana_Veteranorum",
           "https://pleiades.stoa.org/places/334536"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arc_Diana_Veteranorum.jpg?width=800",
+        "image_credit": "Triumphal arch at Diana Veteranorum (Zana), Algeria · Wikimedia Commons",
+        "image_alt": "Ruins of the triumphal arch at Diana Veteranorum, Zana, Algeria"
       }
     },
     {
@@ -35665,7 +35671,10 @@
           "https://en.wikipedia.org/wiki/Tamuda",
           "https://www.academia.edu/14282625/Los_britones_y_el_castellum_de_Tamuda_en_el_contexto_de_las_Provincias_Mauritanas"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tamuda_northern_gate_of_the_Roman_military_camp_4.jpg?width=800",
+        "image_credit": "Northern gate of the Roman military camp at Tamuda, Morocco · Wikimedia Commons",
+        "image_alt": "Remains of the northern gate of the Roman military camp at Tamuda, Morocco"
       }
     },
     {
@@ -35719,7 +35728,10 @@
           "https://fr.wikipedia.org/wiki/Calculeus_Herculis",
           "http://imperium.ahlfeldt.se/places/32479.html"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Les_gorges_d'El-Kantara_,_(Alg%C3%A9rie).jpg?width=800",
+        "image_credit": "Gorges of El Kantara, Algeria · Wikimedia Commons",
+        "image_alt": "The narrow gorge at El Kantara guarded by Ad Calceum Herculis"
       }
     },
     {
@@ -36347,6 +36359,255 @@
         "sources": [
           "https://doi.org/10.3390/heritage2010035",
           "https://iugs-geoheritage.org/geoheritage_stones/denizli-travertine/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.733,
+          34.833
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_thabudeos",
+        "category": "auxiliary_fort",
+        "name_latin": "Thabudeos",
+        "name_english": "Thabudeos",
+        "province": "Numidia",
+        "modern_location": "Sidi Okba, Algeria",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Thabudeos rose at a desert-edge oasis to anchor the limes line running south of the Aurès mountains, one of the garrison posts Trajan and Hadrian built to seal Numidia's pre-Saharan frontier. Cohors II Hispanorum manned its walls, part of the auxiliary screen that tracked nomadic movement across the plain beyond the mountains. The post later folded into the Fossatum Africae's chain of fortified watchpoints alongside Ad Maiores and Gemellae. Its stone ruins still stand at the oasis beside the modern Algerian village of Sidi Okba.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Thabudeos",
+          "https://en.wikipedia.org/wiki/Tabuda",
+          "https://www.researchgate.net/publication/334119036_The_Roman_Presence_in_Southern_Numidia"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2914,
+          35.4845
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_verecunda",
+        "category": "auxiliary_fort",
+        "name_latin": "Verecunda",
+        "name_english": "Verecunda",
+        "province": "Numidia",
+        "modern_location": "Markouna, Algeria",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Verecunda grew up roughly three kilometers south of Legio III Augusta's camp at Lambaesis, a veterans' vicus serving the legion's daily needs on Numidia's high plains under Trajan. Soldiers and discharged veterans traded and worshipped here long before the settlement gained formal civic status. Decades later, in 172-174 CE, the town raised a monumental triumphal arch that still stands among its ruins at Markouna. Its necropolis preserved dozens of inscriptions naming the legionary veterans who had once called the outpost home.",
+        "sources": [
+          "https://www.trismegistos.org/place/18805",
+          "https://followinghadrianphotography.com/tag/legio-iii-augusta/",
+          "http://imperium.ahlfeldt.se/places/22364.html"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.9143,
+          36.1356
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_thanaramusa",
+        "category": "auxiliary_fort",
+        "name_latin": "Thanaramusa Castra",
+        "name_english": "Thanaramusa Castra",
+        "province": "Mauretania Caesariensis",
+        "modern_location": "Berrouaghia, Algeria",
+        "built": 122,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Roman commanders reinforced the existing settlement of Thanaramusa with a fortified veterans' camp between 122 and 124 CE, adding the name Castra once the new garrison moved in. The post sat in the Chelif basin south of Médéa, part of the same wave of frontier consolidation that produced Rapidum only a few years earlier. Its ruins survive today under the Algerian town of Berrouaghia, which later served as an early Christian bishopric. Thanaramusa Castra's fortification falls five to seven years after Trajan's death, so on 11 August 117 CE only the older, unfortified settlement stood on this ground.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Berrouaghia",
+          "https://www.trismegistos.org/place/20461",
+          "https://jeanyvesthorrignac.fr/wa_files/INFO_20755_20BERROUAGHIA.pdf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9703,
+          36.2652
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_oppidum_novum",
+        "category": "auxiliary_fort",
+        "name_latin": "Oppidum Novum",
+        "name_english": "Oppidum Novum",
+        "province": "Mauretania Caesariensis",
+        "modern_location": "Aïn Defla, Algeria",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Emperor Claudius planted Oppidum Novum as one of his veteran colonies in newly annexed Mauretania, settling discharged soldiers along the road network radiating out from Caesarea. The colony took its place among a handful of Claudian foundations meant to knit the province together after its formal annexation in 44 CE. Roman detachments based at Caesarea continued passing through the settlement on regional security duty into the following century. Its ruins lie beneath the modern Algerian town of Aïn Defla in the Chelif basin.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Oppidum_Novum",
+          "https://asjp.cerist.dz/en/downArticle/167/15/2/99146",
+          "http://imperium.ahlfeldt.se/places/22135.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.8203,
+          34.0067
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_sala",
+        "category": "auxiliary_fort",
+        "name_latin": "Sala Colonia",
+        "name_english": "Sala",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Chellah, Rabat, Morocco",
+        "built": 40,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Sala Colonia held the southernmost fortified position on Mauretania Tingitana's Atlantic coast, its ditch, rampart, and line of watchtowers facing the unconquered tribes beyond the Bou Regreg estuary. Rome absorbed the existing Mauretanian town around 40 CE under Claudius, and by Trajan's reign builders had raised a forum, a monumental fountain, a capitolium, and a triumphal arch along its decumanus maximus. Excavations begun in 1929 uncovered these Trajanic-era structures still standing beneath later fill. The Roman remains now sit inside the walled Marinid necropolis of Chellah on the edge of modern Rabat.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Chellah",
+          "https://followinghadrianphotography.com/2017/02/20/sala-colonia/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.1156,
+          34.6017
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_banasa",
+        "category": "auxiliary_fort",
+        "name_latin": "Iulia Valentia Banasa",
+        "name_english": "Banasa",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Sidi Ali Bou Jenoun, Kénitra Province, Morocco",
+        "built": -25,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Augustus founded Banasa around 33 to 25 BCE as one of three coloniae planted in Mauretania Tingitana for veterans who had fought at Actium, granting them farmland along the Sebou river valley. The town anchored the coastal road connecting Tingis to Sala, giving Rome a garrisoned waypoint deep in the Atlantic province. Marcus Aurelius later upgraded its status to Colonia Aurelia Banasa, decades after this map's snapshot. Its ruins lie at Sidi Ali Bou Jenoun in Morocco's Kénitra region.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Iulia_Valentia_Banasa",
+          "https://followinghadrianphotography.com/2017/03/30/banasa/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4042,
+          36.1921
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_sitifis",
+        "category": "auxiliary_fort",
+        "name_latin": "Sitifis",
+        "name_english": "Sitifis",
+        "province": "Mauretania Caesariensis",
+        "modern_location": "Sétif, Algeria",
+        "built": 97,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Emperor Nerva planted a colony of discharged legionary veterans at Sitifis in 97 CE, formally naming it Colonia Nerviana Augusta Martialis Veteranorum Sitifensium. Standing more than 900 meters above sea level south of the Kabylie range, the settlement anchored the junction where the road from Lambaesis to the coast met the route to Cirta. Two centuries later the town gave its name to an entire province, Mauretania Sitifensis, carved out under Diocletian. Its museum today holds a large Roman mosaic depicting the Triumph of Dionysus, recovered from a private dining room in the ancient city.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Setifis",
+          "https://www.livius.org/articles/place/sitifis/",
+          "https://pleiades.stoa.org/places/305153"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8462,
+          36.6676
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_tubusuctu",
+        "category": "auxiliary_fort",
+        "name_latin": "Tubusuctu",
+        "name_english": "Tubusuctu",
+        "province": "Mauretania Caesariensis",
+        "modern_location": "Tiklat, near El Kseur, Béjaïa Province, Algeria",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Augustus settled veterans of Legio VII at Tubusuctu in the Soummam river valley, giving the colony the formal name Colonia Iulia Augusta Legionis Septimae. Local kilns turned out distinctive amphorae carrying the region's olive oil across the Mediterranean, and examples of these jars have turned up in excavations throughout the Roman world. An aqueduct and a well-preserved bath complex still stand among the ruins at Tiklat, near modern El Kseur. The colony sat inland from its sister port of Saldae, both founded in the same Augustan veteran-settlement program.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tubusuctu",
+          "https://pleiades.stoa.org/places/305171",
+          "https://www.bejaia-guidedepoche.com/quoi-visiter/66-tiklat-antique-tubusuptu"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0642,
+          36.7511
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_saldae",
+        "category": "auxiliary_fort",
+        "name_latin": "Saldae",
+        "name_english": "Saldae",
+        "province": "Mauretania Caesariensis",
+        "modern_location": "Béjaïa, Algeria",
+        "built": -27,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Augustus founded Saldae in 27 or 26 BCE as a colony for veterans of Legio VII, giving it the formal title Colonia Iulia Augusta Salditana on Mauretania's Mediterranean coast. Vespasian reinforced the settlement with a fresh wave of veteran colonists more than a century later, boosting the port's population and standing in the province. The colony shared its Augustan veteran-settlement program with its inland sister town of Tubusuctu, up the Soummam valley. Its ruins lie beneath the modern port city of Béjaïa in Algeria's Kabylia region.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Saldae",
+          "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Dsaldae"
         ],
         "confidence": "medium"
       }
