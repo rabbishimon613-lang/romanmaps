@@ -848,6 +848,788 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Teion-Antik-Kenti-Filyos-1.jpg?width=800",
         "image_credit": "Tios (Tium) ancient city site, Filyos, Turkey · Wikimedia Commons"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1601,
+          39.7581
+        ]
+      },
+      "properties": {
+        "id": "mint_alexandria_troas",
+        "name": "Alexandria Troas",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Alexandria Troas struck its own colonial bronze coinage under a charter granted by Augustus, stamping coins COL AVG TROAS in Latin rather than Greek like its Aegean neighbors. Its dies pictured Apollo Smintheus and a grazing horse, images tied to the Troad's legendary past. The mint kept running through Trajan's reign, one of only a handful of Roman colonies in Asia Minor with the right to strike its own coin.",
+        "province": "Asia",
+        "modern_location": "Dalyan, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Alexandria Troas",
+          "WildWinds.com, 'Troas, Alexandreia'",
+          "Wikipedia, 'Alexandria Troas'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.3419,
+          39.4914
+        ]
+      },
+      "properties": {
+        "id": "mint_assos",
+        "name": "Assos",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Assos struck civic bronze coin from a mint perched above its steep harbor on the Gulf of Edremit, the same acropolis where Aristotle once ran a school of philosophy. Its coinage under the empire carried Athena's helmeted head, matching the temple that still dominates the site's high point. Trajan's portrait appeared on the obverse of Assos issues struck during his reign.",
+        "province": "Asia",
+        "modern_location": "Behramkale, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Assos, Troas",
+          "WildWinds.com, 'Troas, Assos'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.9722,
+          39.4986
+        ]
+      },
+      "properties": {
+        "id": "mint_adramyttium",
+        "name": "Adramyttium",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Adramyttium ran a civic bronze mint on the gulf that still carries its name, serving as the assize center where Roman governors heard legal cases for the surrounding district of Mysia. Its coins under Trajan paired the emperor's portrait with local river-god and Dionysiac types. Founded as an Athenian colony centuries earlier, the city kept striking coin through the second century CE.",
+        "province": "Asia",
+        "modern_location": "Ören, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Adramytteum, Mysia",
+          "Wikipedia, 'Adramyttium'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.9833,
+          38.7667
+        ]
+      },
+      "properties": {
+        "id": "mint_cyme",
+        "name": "Cyme",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Cyme, the largest city of the Aeolian confederacy, struck bronze coin under Trajan showing its eponymous Amazon queen alongside a grazing horse, the same horse type the city had used on its coinage since the fourth century BCE. Strabo ranked Cyme first among the twelve Aeolian cities of the coast. The mint's Roman-period output kept that centuries-old horse emblem alive on Trajanic dies.",
+        "province": "Asia",
+        "modern_location": "Aliağa, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Cyme, Aeolis",
+          "WildWinds.com, 'Aeolis, Kyme'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.2386,
+          39.9576
+        ]
+      },
+      "properties": {
+        "id": "mint_ilium",
+        "name": "Ilium",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Ilium struck bronze coin on the site the Romans revered as the ancestral home of Aeneas and, through him, of Rome itself. Its dies carried the helmeted head of Athena Ilias and a standing statue of the goddess copied from her shrine in the city. Roman emperors treated the mint as a point of dynastic pride, and Ilium's long series of Athena-type bronzes ran continuously through Trajan's reign into the third century CE.",
+        "province": "Asia",
+        "modern_location": "Hisarlik, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Ilium, Troas",
+          "CNG, 'Troas, Ilion - Founded on the Site of Ancient Troy', cngcoins.com",
+          "WildWinds.com, 'Troas, Ilion'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.0764,
+          40.4142
+        ]
+      },
+      "properties": {
+        "id": "mint_parium",
+        "name": "Parium",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Parium struck colonial bronze coin on the Hellespont after veteran soldiers were settled there under the Second Triumvirate, giving it the Latin title Colonia Gemina Iulia Pariana. Its dies showed Aesculapius the healer and Diana Lucifera rather than the Greek civic types used at nearby Cyzicus. Coinage struck for Nerva just before Trajan's accession shows the colony's mint was active going into his reign.",
+        "province": "Asia",
+        "modern_location": "Kemer, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Parium, Mysia",
+          "Wikipedia, 'Parium'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2789,
+          37.5296
+        ]
+      },
+      "properties": {
+        "id": "mint_miletus",
+        "name": "Miletus",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Miletus struck civic bronze under Trajan from a city that had minted coin since the seventh century BCE, among the very first anywhere to do so. Its Roman-period dies carried Apollo Didymaios, patron of the great oracle temple six miles down the Sacred Way at Didyma. The mint's output under Trajan ran alongside a major Roman-funded rebuilding of that same sanctuary.",
+        "province": "Asia",
+        "modern_location": "Balat, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Miletus, Ionia",
+          "WildWinds.com, 'Ionia, Miletos'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.8347,
+          37.8566
+        ]
+      },
+      "properties": {
+        "id": "mint_tralles",
+        "name": "Tralles",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Tralles struck civic bronze on the fertile terraces above the Maeander valley, one of the wealthiest cities of the conventus of Asia under Roman rule. Its coinage carried the cult of Zeus Larasios, worshipped at a nearby sanctuary the city guarded as its own. Trajanic-era issues from the mint paired that local god with the emperor's portrait on the obverse.",
+        "province": "Asia",
+        "modern_location": "Aydin, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Tralles, Caria",
+          "WildWinds.com, 'Lydia, Tralleis'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.4289,
+          38.6191
+        ]
+      },
+      "properties": {
+        "id": "mint_magnesia_ad_sipylum",
+        "name": "Magnesia ad Sipylum",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Magnesia ad Sipylum struck civic bronze from beneath Mount Sipylus, the mountain Homer named as the resting place of the grieving Niobe. Roman rebuilding after a catastrophic earthquake under Tiberius in 17 CE, which leveled twelve cities of Asia in one night, had already reshaped the town by Trajan's reign. Its Trajanic coinage carried the emperor's portrait alongside the city's river-god and mountain personification.",
+        "province": "Asia",
+        "modern_location": "Manisa, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Magnesia ad Sipylum, Lydia",
+          "Wikipedia, 'Magnesia ad Sipylum'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.5322,
+          37.8494
+        ]
+      },
+      "properties": {
+        "id": "mint_magnesia_ad_maeandrum",
+        "name": "Magnesia on the Maeander",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Magnesia on the Maeander struck civic bronze centered on Artemis Leukophryene, whose temple in the city was ranked by ancient writers among the largest in Asia Minor, bigger by measurement than the Parthenon. Its Roman-period coin dies pictured the goddess in her distinctive local cult image. The mint kept producing bronze coin under Trajan alongside the continued upkeep of that temple.",
+        "province": "Asia",
+        "modern_location": "Ortakoy, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Magnesia ad Maeandrum, Ionia",
+          "Wikipedia, 'Magnesia on the Maeander'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.4231,
+          37.0379
+        ]
+      },
+      "properties": {
+        "id": "mint_halicarnassus",
+        "name": "Halicarnassus",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Halicarnassus struck civic bronze from the harbor city that four and a half centuries earlier had built the Mausoleum, one of the Seven Wonders of the ancient world, for its ruler Mausolus. Its Roman-era coin types carried Ares and Aphrodite, deities tied to the city's Carian and Greek double heritage. Trajan's portrait appeared on Halicarnassian bronze struck while the Mausoleum still stood largely intact above the harbor.",
+        "province": "Asia",
+        "modern_location": "Bodrum, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Halicarnassus, Caria",
+          "WildWinds.com, 'Caria, Halikarnassos'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.3653,
+          36.6912
+        ]
+      },
+      "properties": {
+        "id": "mint_cnidus",
+        "name": "Cnidus",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Cnidus struck civic bronze at the tip of a long Carian peninsula, home to the Aphrodite of Cnidus, the first fully nude female statue in Greek sculpture and one of Praxiteles' most famous works. Roman-period coin dies from the city carried Aphrodite's image, drawing tourists and pilgrims to see the original in her round temple. The mint remained active into Trajan's reign, striking coin for a city whose main export by then was its own statue's fame.",
+        "province": "Asia",
+        "modern_location": "Datca, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Cnidus, Caria",
+          "WildWinds.com, 'Caria, Knidos'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.1394,
+          37.8994
+        ]
+      },
+      "properties": {
+        "id": "mint_nysa",
+        "name": "Nysa",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Nysa struck civic bronze coin tied to the nearby sanctuary of Pluto and Kore at Acharaca, where ancient visitors believed a cave led directly into the underworld. Strabo himself described the site's healing rituals in detail. Trajan's portrait appeared on Nysa's bronze issues alongside types honoring that underworld cult, one of the more unusual civic identities struck on any Roman provincial coin.",
+        "province": "Asia",
+        "modern_location": "Sultanhisar, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Nysa, Caria",
+          "Wikipedia, 'Nysa (city)'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.8481,
+          38.9092
+        ]
+      },
+      "properties": {
+        "id": "mint_thyatira",
+        "name": "Thyatira",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Thyatira struck civic bronze in a Lydian textile and dyeing town later named among the seven churches addressed in the Book of Revelation. Its coin dies carried Apollo Tyrimnaios, the local sun-god, mounted on horseback, and referenced the city's active guilds of dyers, bronze-smiths, and wool-workers. Trajan's portrait ran on the obverse of Thyatiran bronze struck while the city's textile trade was at its Roman-period height.",
+        "province": "Asia",
+        "modern_location": "Akhisar, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Thyatira, Lydia",
+          "WildWinds.com, 'Lydia, Thyateira'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.5544,
+          39.1097
+        ]
+      },
+      "properties": {
+        "id": "mint_mytilene",
+        "name": "Mytilene",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Mytilene struck civic bronze as the chief city of Lesbos, a status it had held since Sappho and Alcaeus composed poetry there seven centuries before Trajan. The city held the rare privileged rank of civitas libera, a free ally of Rome exempt from direct provincial taxation. Its Roman-period coinage carried a lyre alongside the emperor's portrait, a nod to the island's literary fame.",
+        "province": "Asia",
+        "modern_location": "Mytilene, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Mytilene, Lesbos",
+          "WildWinds.com, 'Lesbos, Mytilene'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2881,
+          36.8933
+        ]
+      },
+      "properties": {
+        "id": "mint_cos",
+        "name": "Cos",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Cos struck civic bronze on an island whose sanctuary of Asclepius drew the sick from across the Mediterranean, and whose most famous native son, Hippocrates, had founded a school of medicine there five centuries earlier. Roman-period coin dies from the mint carried Asclepius and his serpent staff. Trajan's portrait appeared on Coan bronze struck while the Asclepieion still functioned as one of the busiest healing centers of the ancient world.",
+        "province": "Asia",
+        "modern_location": "Kos, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Cos, Ionia",
+          "Wikipedia, 'Asclepeion of Kos'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.2225,
+          36.4349
+        ]
+      },
+      "properties": {
+        "id": "mint_rhodes",
+        "name": "Rhodes",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Rhodes struck its own civic bronze under Rome, carrying on a coinage tradition that had run since the fifth century BCE and once financed the Colossus, the bronze statue that stood at the harbor mouth until an earthquake toppled it around 226 BCE. Its Roman-period dies kept the radiate head of Helios and the island's signature rose emblem. Rhodes held free-city status under Trajan, striking coin as an ally of Rome rather than a taxed provincial subject.",
+        "province": "Asia",
+        "modern_location": "Rhodes, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Rhodes",
+          "WildWinds.com, 'Rhodes'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.5219,
+          37.6764
+        ]
+      },
+      "properties": {
+        "id": "mint_sagalassos",
+        "name": "Sagalassos",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Sagalassos struck civic bronze from a mountain city set more than 1,500 meters up in the Taurus range of Pisidia, one of the highest urban sites anywhere in the Roman world. Excavations at the site have recovered large quantities of its Roman-period small change, evidence of a busy local economy running on the city's own coin. Trajan's portrait ran on Sagalassian bronze struck during the same decades the city built its monumental fountain house, the Antonine Nymphaeum's predecessor.",
+        "province": "Galatia",
+        "modern_location": "Aglasun, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Sagalassos, Pisidia",
+          "Wikipedia, 'Sagalassos'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.4508,
+          36.9772
+        ]
+      },
+      "properties": {
+        "id": "mint_termessos",
+        "name": "Termessos",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Termessos struck civic bronze from a fortress city wedged into a mountain gorge of Pisidia, a site so defensible that Alexander the Great chose not to attack it in 333 BCE. The Roman Senate had granted the city free and autonomous status in 71 BCE, and its coin dies kept advertising that title, ELEUTHERA AUTONOMOS, on Roman-period issues struck long afterward. Trajan's reign fell within that long stretch of self-governing coinage.",
+        "province": "Lycia et Pamphylia",
+        "modern_location": "Antalya, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "CoinWeek, 'Ancient Coin Profiles: The Independent Bronze Coinage of Roman Termessos'",
+          "Wikipedia, 'Termessos'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.3892,
+          36.7667
+        ]
+      },
+      "properties": {
+        "id": "mint_side",
+        "name": "Side",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Side struck civic bronze from Pamphylia's largest port, its very name meaning pomegranate in the pre-Greek Anatolian language the city's founders once spoke. Its coin dies carried that same pomegranate as a civic badge, stamped on issues for centuries before and after Trajan. The mint's Roman-period output supported a port city that doubled as a major regional slave market under the empire.",
+        "province": "Lycia et Pamphylia",
+        "modern_location": "Manavgat, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Side, Pamphylia",
+          "Wikipedia, 'Side, Turkey'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.7056,
+          36.8841
+        ]
+      },
+      "properties": {
+        "id": "mint_attaleia",
+        "name": "Attaleia",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Attaleia struck civic bronze as capital of the province of Lycia et Pamphylia, founded three centuries earlier by King Attalus II of Pergamon as a naval base for his fleet. Its Roman-period coin types carried Poseidon holding a dolphin, a nod to the harbor that had made the city's fortune. The mint's Trajanic bronze paired that maritime god with the emperor's portrait on the obverse.",
+        "province": "Lycia et Pamphylia",
+        "modern_location": "Antalya, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Attaleia, Pamphylia",
+          "WildWinds.com, 'Pamphylia, Attaleia'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.983,
+          41.013
+        ]
+      },
+      "properties": {
+        "id": "mint_byzantium",
+        "name": "Byzantium",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Byzantium struck civic bronze from the peninsula between the Bosporus and the Golden Horn, a defensive position so strong it survived sieges for a thousand years before Constantine ever chose it as his new capital. Its coin dies carried a bull standing on a dolphin, recalling the legendary cow that guided the city's Megarian founders across the strait. Byzantium was counted among the handful of Bithynian-region cities striking coin without an imperial portrait during Trajan's reign, a mark of its old semi-autonomous standing.",
+        "province": "Bithynia et Pontus",
+        "modern_location": "Istanbul, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "Bryn Mawr Classical Review 2024.07.03, 'Between Roman culture and local tradition: Roman provincial coinage of Bithynia and Pontus during the reign of Trajan (98-117 AD)'",
+          "WildWinds.com, 'Thrace, Byzantium'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.6789,
+          32.6553
+        ]
+      },
+      "properties": {
+        "id": "mint_gadara",
+        "name": "Gadara",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Gadara struck civic bronze as one of the ten Greek cities of the Decapolis, perched on a ridge overlooking the Sea of Galilee and the Yarmuk River gorge. Its coins were dated by a local era counted from 64 BCE, when Pompey freed the city from Hasmonaean rule, so a Trajanic-era coin from Gadara carries a year number well past 160 in its own local reckoning. The city was known in antiquity as a center of Greek learning, home to the poet Meleager and the satirist Menippus.",
+        "province": "Syria",
+        "modern_location": "Umm Qais, Jordan",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Gadara, Decapolis",
+          "WildWinds.com, 'Syria, Decapolis, Gadara'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.4668,
+          31.5017
+        ]
+      },
+      "properties": {
+        "id": "mint_gaza",
+        "name": "Gaza",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Gaza struck civic bronze dated by its own local era counted from 61 BCE, when Aulus Gabinius rebuilt the city after Alexander Jannaeus had razed it decades before. Its coin dies carried Marnas, the city's chief god, worshipped at the Marneion temple that ranked among the largest religious sanctuaries in the region. Gaza's Trajanic-era bronze kept that local calendar running rather than counting years from the emperor's own reign.",
+        "province": "Judaea",
+        "modern_location": "Gaza City, Palestine",
+        "extant_117ce": true,
+        "sources": [
+          "Israel Numismatic Society, Farhi, Y., 'The City of Gaza in the Roman Period'",
+          "Academia.edu, Farhi, Y. (2015), 'Cleopatra in Gaza(?): A Hitherto Unpublished Coin Type from Gaza and the First Year of Coinage in Gaza under Roman Rule', American Journal of Numismatics 27"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2544,
+          32.2211
+        ]
+      },
+      "properties": {
+        "id": "mint_neapolis_samaria",
+        "name": "Neapolis",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Neapolis struck civic bronze from a city Vespasian founded fresh in 72 CE at the foot of Mount Gerizim, the mountain the Samaritans held sacred as their true temple site. Its coin dies carried a detailed rendering of that mountain's summit, staircase, and temple, a landscape portrait almost unique among Roman provincial coin types. The mint's bronze under Trajan continued a local coinage tradition begun barely two decades earlier under Domitian.",
+        "province": "Judaea",
+        "modern_location": "Nablus, West Bank",
+        "extant_117ce": true,
+        "sources": [
+          "Journal of Roman Archaeology, 'A Roman altar on Mount Gerizim: Rediscovering a civic icon on tetradrachms of Neapolis (Samaria)'",
+          "Near Eastern Archaeology 74.3, 'From Mountain to Icon: Mount Gerizim on Roman Provincial Coins from Neapolis, Samaria'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.7915,
+          35.5317
+        ]
+      },
+      "properties": {
+        "id": "mint_laodicea_ad_mare",
+        "name": "Laodicea ad Mare",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Laodicea ad Mare struck civic bronze from a Syrian port city Seleucus I founded and named for his mother, ranked among the four sister cities of the Syrian Tetrapolis alongside Antioch. A dated bronze diassarion from the mint places an issue precisely in 114/115 CE, within Trajan's Parthian campaign years, when Laodicea served as a supply port for the eastern war effort. The city's dies carried Tyche wearing her turreted crown, the standard emblem of Roman Syria's civic mints.",
+        "province": "Syria",
+        "modern_location": "Latakia, Syria",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Laodicea ad Mare, Syria",
+          "Coins Legacy, 'Syria, Seleucis and Pieria, Laodicea ad Mare Mint, Trajan, AE Diassarion, CY 162 = 114/5 AD'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7257,
+          37.9715
+        ]
+      },
+      "properties": {
+        "id": "mint_athens",
+        "name": "Athens",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Athens struck civic bronze under its own magistrates rather than an imperial governor, a privilege tied to the free-city status Rome had granted the city for its classical legacy. Its Roman-period dies kept the owl and olive spray of Athena, the same emblems that had marked Athenian silver coinage six centuries earlier. Excavations of the Athenian Agora have recovered these civic bronzes from Trajan's reign alongside everyday market debris, proof the coin actually circulated where it was struck.",
+        "province": "Achaia",
+        "modern_location": "Athens, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "Kroll, J. H., The Athenian Agora XXVI: The Greek Coins (Princeton, 1993)",
+          "RPC III (Nerva-Hadrian), Athens, Achaia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.7346,
+          38.2466
+        ]
+      },
+      "properties": {
+        "id": "mint_patrae",
+        "name": "Patrae",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Patrae struck colonial bronze coin after Augustus resettled the city with veterans of Actium and renamed it Colonia Augusta Aroe Patrensis, folding in the populations of several smaller neighboring towns. Its Latin-legend coin dies pictured a priest plowing the ritual furrow that marked a Roman colony's founding boundary. The mint's output under Trajan served a city that had grown, under Roman patronage, into the busiest port of western Achaia.",
+        "province": "Achaia",
+        "modern_location": "Patras, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Patrae, Achaia",
+          "Wikipedia, 'Patras'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9444,
+          40.6401
+        ]
+      },
+      "properties": {
+        "id": "mint_thessalonica",
+        "name": "Thessalonica",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Thessalonica struck civic bronze as the seat of Macedonia's Roman governor and the meeting place of the province's koinon, its coin dies carrying the Cabiri, twin gods worshipped locally as protectors of sailors on the Thermaic Gulf. Founded by Cassander in 315 BCE and named for a half-sister of Alexander the Great, the city sat astride the Via Egnatia, the main overland route linking Rome to its eastern provinces. Trajan's portrait ran on Thessalonican bronze struck while that highway carried the empire's traffic east toward the Parthian front.",
+        "province": "Macedonia",
+        "modern_location": "Thessaloniki, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Thessalonica, Macedonia",
+          "Wikipedia, 'Thessalonica'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.2867,
+          41.0138
+        ]
+      },
+      "properties": {
+        "id": "mint_philippi",
+        "name": "Philippi",
+        "category": "mint",
+        "metal": "bronze",
+        "role": "civic",
+        "one_line": "Philippi struck colonial bronze coin after Octavian and Antony resettled the battlefield where they had defeated Caesar's assassins in 42 BCE, planting veteran colonists on the plain below the city's acropolis. Its Latin-legend dies carried three military standards, a direct reference to the legions once stationed there, and the colony's official title, Colonia Iulia Augusta Philippensis. The mint kept striking that same colonial imagery through Trajan's reign, a century and a half after the battle that founded it.",
+        "province": "Macedonia",
+        "modern_location": "Krinides, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "RPC III (Nerva-Hadrian), Philippi, Macedonia",
+          "Wikipedia, 'Philippi'"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
