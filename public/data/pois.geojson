@@ -36892,6 +36892,975 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.2659,
+          53.1373
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_segontium",
+        "category": "auxiliary_fort",
+        "name_latin": "Segontium",
+        "name_english": "Segontium",
+        "province": "Britannia",
+        "modern_location": "Caernarfon, Gwynedd, Wales",
+        "built": 77,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Governor Agricola's engineers raised this fort in 77 CE to anchor Roman control of northwest Wales and watch the crossing to Anglesey. Its garrison held the post for over three centuries, longer than any other fort in Wales, with coin finds showing soldiers still present around 394 CE. By 117 CE its timber barracks were already being rebuilt in stone. A small on-site museum now displays altars and inscriptions left by the auxiliary troops who served here.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Segontium",
+          "https://www.roman-britain.co.uk/places/segontium/",
+          "https://coflein.gov.uk/en/sites/93511"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Segontium_Roman_Fort_-_geograph.org.uk_-_1287434.jpg?width=800",
+        "image_credit": "Photograph via Wikimedia Commons (geograph.org.uk), CC BY-SA 2.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.3167,
+          51.8667
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_moridunum",
+        "category": "auxiliary_fort",
+        "name_latin": "Moridunum",
+        "name_english": "Carmarthen",
+        "province": "Britannia",
+        "modern_location": "Carmarthen, Carmarthenshire, Wales",
+        "built": 75,
+        "destroyed": 120,
+        "extant_117ce": true,
+        "notes": "A cavalry fort was planted around 75 CE to hold the newly conquered Demetae tribal lands of southwest Wales. Its garrison remained until about 120 CE, when the site converted to civilian use and eventually became the tribe's civitas capital. By 117 CE it had already seen four decades of continuous occupation. Later stone walls and a Roman amphitheatre would rise nearby, but in Trajan's day the site was still a working military base.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Moridunum_(Carmarthen)",
+          "https://coflein.gov.uk/en/site/94432/details/",
+          "https://www.roman-britain.co.uk/places/moridunum/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.4517,
+          51.9564
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_ygaer",
+        "category": "auxiliary_fort",
+        "name_latin": "Cicutio",
+        "name_english": "Y Gaer, Brecon",
+        "province": "Britannia",
+        "modern_location": "Aberyscir, near Brecon, Powys, Wales",
+        "built": 75,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Five hundred Spanish cavalrymen recruited from the Vettones tribe garrisoned this earth-and-timber fort at a crossroads in the Usk valley from around 75 CE. Its ramparts were still the original turf and clay in Trajan's reign; a stone rebuild would not come until decades later, under men of the Second Augustan Legion. The site controlled a key junction of Roman roads through the Brecon Beacons. Excavated gateways and wall footings remain visible in the surrounding fields today.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Y_Gaer",
+          "https://www.roman-britain.co.uk/places/brecon-roman-fort/",
+          "https://cadw.gov.wales/visit/places-to-visit/y-gaer-roman-fort"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Y_Gaer_Brecon_-_South_Wall_-_02.JPG?width=800",
+        "image_credit": "Photograph via Wikimedia Commons, CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.9268,
+          52.9299
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_tomenymur",
+        "category": "auxiliary_fort",
+        "name_latin": "Tomen y Mur",
+        "name_english": "Tomen y Mur",
+        "province": "Britannia",
+        "modern_location": "near Trawsfynydd, Gwynedd, Wales",
+        "built": 78,
+        "destroyed": 140,
+        "extant_117ce": true,
+        "notes": "Agricola's army built this remote upland fort in 78 CE to hold down conquered Gwynedd, garrisoning roughly a thousand cavalry on an exposed spur above Llyn Trawsfynydd. Its earthworks enclosed an attached amphitheatre and parade ground, rare survivals at such an isolated post. The fort stood through Trajan's reign before Hadrianic rebuilders shrank it for a smaller infantry garrison, and Rome abandoned the site entirely around 140 CE. Norman lords later raised a castle mound directly over its ruins.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tomen_y_Mur",
+          "https://www.roman-britain.co.uk/places/tomen_y_mur/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Castell_Tomen_y_Mur_-_geograph.org.uk_-_442493.jpg?width=800",
+        "image_credit": "Photograph via Wikimedia Commons (geograph.org.uk), CC BY-SA 2.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.8341,
+          53.2161
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_canovium",
+        "category": "auxiliary_fort",
+        "name_latin": "Canovium",
+        "name_english": "Caerhun",
+        "province": "Britannia",
+        "modern_location": "Caerhun, Conwy Valley, Wales",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This fort guarded the tidal crossing of the River Conwy on the road linking the legionary bases at Chester and Caernarfon. Troops built it around 80 CE and held it in some form for more than three centuries, with coin evidence running to the late fourth century. Around 196 CE its well was deliberately filled in, hinting the garrison briefly marched away before returning. The rectangular earthwork outline survives beside St Mary's Church in the modern village.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Canovium",
+          "https://www.roman-britain.co.uk/places/canovium/",
+          "https://historypoints.org/index.php?page=site-of-canovium-roman-fort-caerhun"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0181,
+          51.8219
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_gobannium",
+        "category": "auxiliary_fort",
+        "name_latin": "Gobannium",
+        "name_english": "Abergavenny",
+        "province": "Britannia",
+        "modern_location": "Abergavenny, Monmouthshire, Wales",
+        "built": 55,
+        "destroyed": 160,
+        "extant_117ce": true,
+        "notes": "A fort was raised here around 55 CE to watch the mountain routes into the Welsh interior, rebuilt at least twice more before 70 CE as unrest continued. It measured some 120 by 110 metres and stayed garrisoned continuously into Trajan's reign. Rome finally withdrew its soldiers around 160 CE as military priorities shifted away from the Welsh Marches. A civilian settlement grew up around the abandoned fort and lasted into the fourth century.",
+        "sources": [
+          "https://ancientmonuments.uk/128008-abergavenny-roman-fort-abergavenny",
+          "https://www.roman-britain.co.uk/places/abergavenny-roman-fort/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.9848,
+          52.1896
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_bremia",
+        "category": "auxiliary_fort",
+        "name_latin": "Bremia",
+        "name_english": "Llanio",
+        "province": "Britannia",
+        "modern_location": "Llanddewi Brefi, Ceredigion, Wales",
+        "built": 75,
+        "destroyed": 125,
+        "extant_117ce": true,
+        "notes": "A cohort of Asturian cavalry from northern Spain garrisoned this nearly square fort in the Teifi valley from around 75 CE. Its rounded corners enclosed a defense some 130 metres across, room for around 500 soldiers watching the upland route into Ceredigion. Pottery from the site suggests the garrison marched out not long after Trajan's death, sometime in the 120s. Its ramparts and an attached bathhouse remain traceable in the fields today.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Bremia_(fort)",
+          "https://www.roman-britain.co.uk/places/llanio/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.9606,
+          52.0473
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_luentinum",
+        "category": "auxiliary_fort",
+        "name_latin": "Luentinum",
+        "name_english": "Pumsaint",
+        "province": "Britannia",
+        "modern_location": "Pumsaint, Carmarthenshire, Wales",
+        "built": 78,
+        "destroyed": 140,
+        "extant_117ce": true,
+        "notes": "Rome planted this fort beside the Dolaucothi gold mines around 78 CE, one of very few garrisons in Britain built explicitly to guard a mining operation. Turf ramparts within double ditches enclosed nearly five acres, holding soldiers who oversaw labor working the underground galleries and hydraulic sluices. The fort remained manned through Trajan's reign and into Hadrian's, finally standing down around 140 CE as the mine's richest seams were worked out. Sections of the aqueduct channels the garrison built to power ore-crushing survive in the surrounding hillsides.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Luentinum",
+          "https://www.roman-britain.co.uk/places/pumsaint/",
+          "https://pleiades.stoa.org/places/79578"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.4114,
+          52.5222
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_caersws",
+        "category": "auxiliary_fort",
+        "name_latin": "Caersws",
+        "name_english": "Caersws",
+        "province": "Britannia",
+        "modern_location": "Caersws, Powys, Wales",
+        "built": 78,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A campaign camp here gave way around 78 CE to a permanent square fort at the junction of five Roman roads in mid-Wales. Its garrison watched over the upper Severn valley through Trajan's reign, even as the surrounding civilian settlement began shrinking in the early second century. Some Roman administrative presence may have lingered here into the fourth century, unusually late for a fort so far from the frontier. Little stands above ground today, but excavation has traced two successive forts on the site.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Caersws_Roman_Forts",
+          "https://www.britainexpress.com/attractions.htm?attraction=809"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.170358,
+          52.582151
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_fordengaer",
+        "category": "auxiliary_fort",
+        "name_latin": "Forden Gaer",
+        "name_english": "Forden Gaer",
+        "province": "Britannia",
+        "modern_location": "Forden, Montgomeryshire, Powys, Wales",
+        "built": 78,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This 6.3-hectare fort guarded an important ford across the River Severn on the road between Caersws and Wroxeter, built around 78 CE. It remained garrisoned through Trajan's reign while a civilian settlement grew up alongside it in the early second century, eventually enclosed by its own triple-ditched boundary. The site would later be destroyed or abandoned around 296 CE, then reoccupied in 343 before a final withdrawal under Valentinian I. Its scale made it one of the largest auxiliary forts in the Welsh Marches.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Forden_Gaer",
+          "https://coflein.gov.uk/en/site/94012/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.3844,
+          52.2557
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_castellcollen",
+        "category": "auxiliary_fort",
+        "name_latin": "Castell Collen",
+        "name_english": "Castell Collen",
+        "province": "Britannia",
+        "modern_location": "near Llandrindod Wells, Powys, Wales",
+        "built": 75,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Perched above the River Ithon near modern Llandrindod Wells, this auxiliary fort was built around 75 CE to hold the central Welsh uplands. Its rectangular, round-cornered defenses originally stretched 182 metres end to end before later builders reduced the enclosure. Occupation was not continuous, but troops were present through Trajan's reign as the fort anchored the road network of mid-Wales. Excavated wall footings and gate positions remain visible on the hillside today.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Castell_Collen",
+          "https://coflein.gov.uk/en/site/95708/",
+          "https://www.roman-britain.co.uk/places/castell_collen/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Castell_Collen_Roman_Fort_-_geograph.org.uk_-_413626.jpg?width=800",
+        "image_credit": "Photograph by David Medcalf via Wikimedia Commons (geograph.org.uk), CC BY-SA 2.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.813,
+          51.6647
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_nidum",
+        "category": "auxiliary_fort",
+        "name_latin": "Nidum",
+        "name_english": "Neath",
+        "province": "Britannia",
+        "modern_location": "Neath, Neath Port Talbot, Wales",
+        "built": 74,
+        "destroyed": 125,
+        "extant_117ce": true,
+        "notes": "Founded around 74 CE on a plateau above the River Neath, this fort originally enclosed over eight acres before being reduced to about six soon after construction. Roughly 500 auxiliary troops garrisoned the earth-and-timber defenses through Trajan's reign, guarding the coastal route into South Wales. The army pulled out around 125 CE, only to return and rebuild the fort in stone about 140 CE. That second phase ended around 170 CE, and the site sat empty for a century before one final period of occupation from 275 to 320 CE.",
+        "sources": [
+          "https://coflein.gov.uk/en/site/301350/details/neath-auxiliary-fort-nidum-neath-roman-fort",
+          "https://en.wikipedia.org/wiki/Nidum",
+          "https://www.roman-britain.co.uk/places/nidum/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.825,
+          53.927
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_olicana",
+        "category": "auxiliary_fort",
+        "name_latin": "Olicana",
+        "name_english": "Ilkley",
+        "province": "Britannia",
+        "modern_location": "Ilkley, West Yorkshire, England",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman troops built this fort around 80 CE on the south bank of the River Wharfe to hold the Brigantian heartland of the Pennines. Earth-and-timber defenses gave way to stone in later rebuilding, and the garrison stayed in place through Trajan's reign and well beyond. Occupation continued in some form until roughly 400 CE, among the longest military tenures in the Pennines. Fragments of its walls survive incorporated into the manor house grounds in the center of modern Ilkley.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ilkley_Roman_Fort",
+          "https://www.yorkshire.com/ilkley/things-to-do/historic-sites/ilkley-roman-fort"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Roman_Fort_of_Olicana_-_geograph.org.uk_-_425458.jpg?width=800",
+        "image_credit": "Photograph via Wikimedia Commons (geograph.org.uk), CC BY-SA 2.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.250891,
+          53.475962
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_mamucium",
+        "category": "auxiliary_fort",
+        "name_latin": "Mamucium",
+        "name_english": "Manchester",
+        "province": "Britannia",
+        "modern_location": "Castlefield, Manchester, England",
+        "built": 79,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "General Agricola's campaigns against the Brigantes brought a turf-and-timber fort to this sandstone bluff above the River Medlock in 79 CE. An auxiliary cohort of roughly 500 infantry garrisoned the post at the junction of roads running to the legionary fortresses at Chester and York and north toward the Stanegate frontier. The original defenses stood through Trajan's reign until a rebuilding around 160 CE. Reconstructed sections of the fort's north gate and walls now stand in Manchester's Castlefield district.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Mamucium",
+          "https://www.roman-britain.co.uk/places/mamucium/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.530828,
+          53.81035
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_bremetennacum",
+        "category": "auxiliary_fort",
+        "name_latin": "Bremetennacum",
+        "name_english": "Ribchester",
+        "province": "Britannia",
+        "modern_location": "Ribchester, Lancashire, England",
+        "built": 73,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Soldiers under governor Petillius Cerialis built a timber fort at this crossing of the River Ribble around 72 CE, decades before the Sarmatian cavalry famous for later garrisoning it ever arrived. Its defenses stood through Trajan's reign, still in their original timber phase, before a stone rebuild came in the second century. Occupation continued for most of the fourth century, among the longest-held forts in northwest England. A Roman bathhouse and museum finds, including cavalry parade armor, are on display in the village today.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Bremetennacum",
+          "https://www.historyhit.com/locations/roman-ribchester/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9688,
+          54.4223
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_galava",
+        "category": "auxiliary_fort",
+        "name_latin": "Galava",
+        "name_english": "Ambleside",
+        "province": "Britannia",
+        "modern_location": "Ambleside, Cumbria, England",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Five hundred infantrymen garrisoned this fort at the head of Lake Windermere from around 90 CE, guarding the road running north through the Lake District toward the frontier. Its turf-and-timber defenses were still standing in Trajan's reign, and pottery from outside the walls shows no break in occupation through this period. Stone rebuilding came only under Hadrian, after 117 CE, following the standard Trajanic-Hadrianic fort plan. The site's granary foundations and defensive ditches remain visible in a lakeside field today.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ambleside_Roman_Fort",
+          "https://www.english-heritage.org.uk/visit/places/ambleside-roman-fort/history/",
+          "https://www.roman-britain.co.uk/places/ambleside/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ambleside_Roman_fort_-_geograph.org.uk_-_1761456.jpg?width=800",
+        "image_credit": "Photograph via Wikimedia Commons (geograph.org.uk), CC BY-SA 2.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7157,
+          54.6526
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_brocavum",
+        "category": "auxiliary_fort",
+        "name_latin": "Brocavum",
+        "name_english": "Brougham",
+        "province": "Britannia",
+        "modern_location": "Brougham, near Penrith, Cumbria, England",
+        "built": 79,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Agricola's forces built this fort around 79 CE where the Rivers Eamont and Lowther meet, at the junction of the main north-south and east-west roads through Cumbria. Covering some 3.4 acres, it remained garrisoned through Trajan's reign and continued in use to the end of the fourth century. A large adjoining civil settlement and extensive cemetery grew up around the fort over its long life. A medieval castle later rose directly beside the Roman remains, reusing the same strategic river crossing.",
+        "sources": [
+          "https://historicengland.org.uk/listing/the-list/list-entry/1007186",
+          "https://www.roman-britain.co.uk/places/brocavum/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.31833,
+          54.52611
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_verterae",
+        "category": "auxiliary_fort",
+        "name_latin": "Verterae",
+        "name_english": "Brough-under-Stainmore",
+        "province": "Britannia",
+        "modern_location": "Brough, Cumbria, England",
+        "built": 79,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This fort held the western end of the Stainmore Pass, the main Roman road linking the legionary fortress at York with the frontier post at Carlisle, from around 79 CE. Its garrison remained through Trajan's reign and for centuries after, with occupation continuing even past the official Roman withdrawal in 410 CE. The fort's control of the only viable Pennine crossing for wheeled traffic made it one of the most consistently garrisoned sites in northern England. A medieval castle keep now stands within its earthwork perimeter.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Verterae",
+          "https://www.u3ahadrianswall.co.uk/brough-roman-fort-verteris/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.0136,
+          54.5167
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_lavatrae",
+        "category": "auxiliary_fort",
+        "name_latin": "Lavatrae",
+        "name_english": "Bowes",
+        "province": "Britannia",
+        "modern_location": "Bowes, County Durham, England",
+        "built": 71,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Governor Petillius Cerialis's invasion of the Pennines brought a wooden-ramparted fort to this bleak stretch of upland in the early 70s CE. Timber defenses held through Trajan's reign before builders finally raised stone walls in the 130s, under Hadrian. Both the fort and its attached civilian settlement stayed occupied until at least the late fourth century. A Norman keep, Bowes Castle, was later built squarely inside the old Roman perimeter, reusing its commanding position over the road to Carlisle.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Lavatrae",
+          "https://historicengland.org.uk/listing/the-list/list-entry/1002316"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6497,
+          54.3842
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_cataractonium",
+        "category": "auxiliary_fort",
+        "name_latin": "Cataractonium",
+        "name_english": "Catterick",
+        "province": "Britannia",
+        "modern_location": "Catterick, North Yorkshire, England",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Military engineers raised a fort on the south bank of the River Swale to secure this crucial crossing on Dere Street, the main road north to the frontier, by the 80s CE. The fort was a distinct military installation, separate from the large civilian town and roadside settlement that grew up alongside it along the highway corridor. Its garrison held the crossing through Trajan's reign as traffic and supplies moved north. Rebuilding phases through the Roman period eventually saw the site grow into one of the largest small towns in Roman Britain.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cataractonium",
+          "https://historicengland.org.uk/listing/the-list/list-entry/1021181",
+          "https://greatnorthroad.co.uk/roman-catterick-cataractonium"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.872,
+          53.654
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_cambodunum",
+        "category": "auxiliary_fort",
+        "name_latin": "Cambodunum",
+        "name_english": "Slack",
+        "province": "Britannia",
+        "modern_location": "Outlane, near Huddersfield, West Yorkshire, England",
+        "built": 80,
+        "destroyed": 140,
+        "extant_117ce": true,
+        "notes": "This fort near modern Huddersfield was built around 80 CE along the road linking the legionary fortresses of Chester and York. It held its garrison at full strength through Trajan's reign before troop numbers were reduced sometime around 122 to 125 CE. The army abandoned the fort entirely within a few decades, sometime between 140 and 160 CE, though its civilian vicus lingered on for generations. Ancient writers recorded the site's name, Cambodunum, in the Antonine Itinerary road survey.",
+        "sources": [
+          "https://historicengland.org.uk/listing/the-list/list-entry/1005804",
+          "https://en.wikipedia.org/wiki/Slack_Roman_Fort",
+          "https://www.roman-britain.co.uk/places/cambodunum/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.003,
+          53.583
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_castleshaw",
+        "category": "auxiliary_fort",
+        "name_latin": "Rigodunum",
+        "name_english": "Castleshaw",
+        "province": "Britannia",
+        "modern_location": "Saddleworth, Greater Manchester, England",
+        "built": 105,
+        "destroyed": 125,
+        "extant_117ce": true,
+        "notes": "The Roman army built its first fort on this Pennine ridge in 79 CE, then demolished it decades later and replaced it with a much smaller fortlet around 105 CE, during Trajan's reign. That reduced garrison post was still standing at Trajan's death in 117 CE, holding the strategic pass on the road between Chester and York. Rome abandoned the site entirely within the following decade, sometime in the 120s. Excavated foundations of both the original fort and its Trajanic successor remain visible on the hillside above Saddleworth.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Castleshaw_Roman_Fort",
+          "https://historicengland.org.uk/listing/the-list/list-entry/1017837"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.98806,
+          53.4525
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_ardotalia",
+        "category": "auxiliary_fort",
+        "name_latin": "Ardotalia",
+        "name_english": "Melandra Castle",
+        "province": "Britannia",
+        "modern_location": "Gamesley, near Glossop, Derbyshire, England",
+        "built": 78,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Agricola's campaigns against the Brigantes brought a turf-and-timber fort to this high ground above Glossop around 78 CE. Its original clay ramparts were still standing in Trajan's reign, unreinforced by the stone walls and gateways builders would add only after 120 CE, under Hadrian. Pottery finds from the Trajanic and Hadrianic periods trace continuous occupation across this transition. The fort's Roman name, meaning roughly the place of the high, dark hill, still describes the commanding position its earthworks occupy today.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ardotalia",
+          "https://glossopheritage.co.uk/ghtarchive/melandra/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.3572,
+          53.4301
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_templeborough",
+        "category": "auxiliary_fort",
+        "name_latin": "Templeborough",
+        "name_english": "Templeborough",
+        "province": "Britannia",
+        "modern_location": "Templeborough, Rotherham, South Yorkshire, England",
+        "built": 55,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A timber-and-earth fort was raised on the north bank of the River Don at Templeborough sometime in the mid-first century CE, guarding a key river crossing in South Yorkshire. Excavators found evidence the fort had burned and been rebuilt at least twice before later builders replaced it with a stone-walled successor defended by an eighteen-foot ditch. The garrison appears to have held this crossing through Trajan's reign and into the following centuries. The entire site was buried beneath a First World War-era steelworks and has never been fully excavated.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Templeborough",
+          "https://roman-empire.net/army/templeborough-roman-fort"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.677,
+          54.676
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_vinovia",
+        "category": "auxiliary_fort",
+        "name_latin": "Vinovia",
+        "name_english": "Binchester",
+        "province": "Britannia",
+        "modern_location": "Binchester, near Bishop Auckland, County Durham, England",
+        "built": 79,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman troops established this fort around 79 CE to guard the crossing of the River Wear on Dere Street, the main road running north to the Stanegate frontier. Its first-phase ditches remained open and in use through Trajan's reign, only being filled in sometime between 125 and 150 CE as the fort was remodeled. Binchester went on to become one of the most extensively excavated Roman military sites in Britain, with University of Durham teams working the site for over a decade. Its excavated bathhouse retains some of the best-preserved Roman under-floor heating in the country.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Vinovia",
+          "https://www.durham.ac.uk/departments/academic/archaeology/research/archaeology-research-projects/binchester-roman-fort/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Binchester_Roman_Fort.jpg?width=800",
+        "image_credit": "Photograph via Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1349,
+          53.5261
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_danum",
+        "category": "auxiliary_fort",
+        "name_latin": "Danum",
+        "name_english": "Doncaster",
+        "province": "Britannia",
+        "modern_location": "Doncaster, South Yorkshire, England",
+        "built": 70,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A timber fort built around 70 CE at the meeting of Ermine Street and the River Don gave Rome control of a key crossing point in South Yorkshire. The garrison temporarily marched north when governor Agricola campaigned into Caledonia in the late 70s and early 80s CE, but troops returned to rebuild and hold the post afterward. By Trajan's reign the fort was fully operational again, and it would go on to be regarrisoned right through to around 390 CE. Its remains today lie buried beneath Doncaster Minster in the heart of the modern town.",
+        "sources": [
+          "https://www.roman-britain.co.uk/places/danum/",
+          "https://brigantesnation.com/sites/world-heritage/brigantia/south-yorkshire/doncaster-roman-fort-danum/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.7903102,
+          54.13619
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_derventio_malton",
+        "category": "auxiliary_fort",
+        "name_latin": "Derventio",
+        "name_english": "Malton",
+        "province": "Britannia",
+        "modern_location": "Malton, North Yorkshire, England",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Governor Agricola's forces built this fort in North Yorkshire between 77 and 83 CE to hold the Brigantian lowlands along the River Derwent. Excavation has revealed a complex sequence of rebuilding, with a major construction phase specifically dated to Trajan's reign. The garrison remained in place from the earliest years of Roman occupation right through to the fifth century, one of the longest continuous military presences in the north. The fort now lies beneath the modern market town, with its Roman collection housed in Malton Museum.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Derventio_Brigantum",
+          "https://www.maltonmuseum.co.uk/collection/roman-collection/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.534,
+          50.722
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_isca_dumnoniorum",
+        "category": "fort",
+        "name_latin": "Isca Dumnoniorum",
+        "name_english": "Exeter",
+        "province": "Britannia",
+        "modern_location": "Exeter, Devon, England",
+        "built": 55,
+        "destroyed": 75,
+        "extant_117ce": false,
+        "notes": "The Second Augustan Legion built this 42-acre fortress around 55 CE, making it their main base in southwest Britain for two decades. Roughly 5,000 legionaries garrisoned the site before marching away around 75 CE to found a new fortress at Caerleon in Wales. Its enormous legionary bathhouse, one of the largest Roman buildings ever raised in Britain, was demolished to make way for a forum and basilica once the army left. By 117 CE the site had been a thriving civilian tribal capital for four decades, with no trace of its military origins visible above ground.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Isca_Dumnoniorum",
+          "https://www.roman-britain.co.uk/places/isca_dumnoniorum/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.96806,
+          51.71889
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_corinium",
+        "category": "fort",
+        "name_latin": "Corinium Dobunnorum",
+        "name_english": "Cirencester",
+        "province": "Britannia",
+        "modern_location": "Cirencester, Gloucestershire, England",
+        "built": 45,
+        "destroyed": 75,
+        "extant_117ce": false,
+        "notes": "A Roman fort was planted here in the mid-40s CE, within a year or two of the invasion, at the point where the Fosse Way frontier road crossed the River Churn. The army evacuated the fort by 70 CE as the conquest pushed further north and west, and the site converted fully to civilian use within a few years afterward. What had been a military outpost grew into the tribal capital of the Dobunni and eventually the second-largest walled town in Roman Britain. By 117 CE the old fort had been gone for over forty years, its ramparts long since built over by streets and houses.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Corinium_Dobunnorum",
+          "https://www.roman-britain.co.uk/places/corinium/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2052,
+          50.8951
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_hodhill",
+        "category": "fort",
+        "name_latin": "Hod Hill",
+        "name_english": "Hod Hill",
+        "province": "Britannia",
+        "modern_location": "Stourpaine, Dorset, England",
+        "built": 44,
+        "destroyed": 51,
+        "extant_117ce": false,
+        "notes": "Roman troops stormed this Iron Age hillfort around 43 to 44 CE, and ballista bolts found embedded near a chieftain's roundhouse still mark where the garrison targeted their commander during the assault. The army then built its own fort in the hillfort's northwest corner, reusing the earlier ramparts to save labor. That garrison marched out again by 51 CE as the frontier moved west into Somerset and Dorset's interior. By 117 CE the site had stood empty of Roman soldiers for over sixty years, though its massive earthworks remain among the best-preserved in Britain.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Hod_Hill",
+          "https://www.historyhit.com/locations/hod-hill/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7856068,
+          50.810394
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_waddonhill",
+        "category": "fort",
+        "name_latin": "Waddon Hill",
+        "name_english": "Waddon Hill",
+        "province": "Britannia",
+        "modern_location": "near Stoke Abbott, Dorset, England",
+        "built": 50,
+        "destroyed": 61,
+        "extant_117ce": false,
+        "notes": "Soldiers of the Second Legion built this small fortlet on a narrow Dorset ridge around 50 CE, five years after the initial invasion, to hold the recently conquered southwest. Its garrison abandoned the post around the time of the Boudican revolt of 60 to 61 CE, as the army consolidated further north. Excavations here recovered some of the best-dated military pottery and equipment from the earliest phase of the Roman conquest. By 117 CE the fortlet had lain empty for more than half a century, its ramparts slowly eroding into the hillside.",
+        "sources": [
+          "https://beaminstermuseum.co.uk/the-waddon-hill-roman-fort-project/",
+          "https://en.wikipedia.org/wiki/Waddon_Hill"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.293634,
+          52.564758
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_longthorpe",
+        "category": "fort",
+        "name_latin": "Longthorpe",
+        "name_english": "Longthorpe",
+        "province": "Britannia",
+        "modern_location": "Longthorpe, Peterborough, Cambridgeshire, England",
+        "built": 44,
+        "destroyed": 65,
+        "extant_117ce": false,
+        "notes": "A vexillation fortress covering some 27 acres was raised at Longthorpe by around 44 CE, likely housing detachments from two legions during the earliest push into the English Midlands. A smaller successor fort of about 11 acres later replaced it before the army abandoned the site entirely by 65 CE, as the frontier moved north out of range of any threat to Peterborough. The fortress was only rediscovered through crop marks photographed from the air in 1961. By 117 CE the site had been quietly reclaimed by farmland for over fifty years; today it lies beneath a golf course.",
+        "sources": [
+          "https://www.cambridge.org/core/journals/britannia/article/abs/roman-fortress-at-longthorpe/F96C0791781DE8D41B66181D5EE93107",
+          "https://www.roman-britain.co.uk/places/longthorpe/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.195,
+          52.07
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_greatchesterford",
+        "category": "fort",
+        "name_latin": "Great Chesterford",
+        "name_english": "Great Chesterford",
+        "province": "Britannia",
+        "modern_location": "Great Chesterford, Essex, England",
+        "built": 43,
+        "destroyed": 70,
+        "extant_117ce": false,
+        "notes": "One of the earliest Roman military sites in Britain, this 13-hectare fort may have been built as early as 43 CE during Aulus Plautius's first campaign season, guarding the River Cam crossing on the road running north from London. The army abandoned the fort within a few decades as the conquest pushed further from the southeast, and a civilian town grew directly on top of its former ramparts. Archaeologists have only been able to reconstruct the fort's outline by piecing together aerial photographs and excavations dug beneath the later Roman walled town. By 117 CE nothing military remained here, only the streets and buildings of an ordinary small Roman town.",
+        "sources": [
+          "https://historicengland.org.uk/listing/the-list/list-entry/1013484",
+          "https://www.roman-britain.co.uk/places/great_chesterford/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.64417,
+          52.67417
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_viroconium",
+        "category": "fort",
+        "name_latin": "Viroconium Cornoviorum",
+        "name_english": "Wroxeter",
+        "province": "Britannia",
+        "modern_location": "Wroxeter, Shropshire, England",
+        "built": 60,
+        "destroyed": 90,
+        "extant_117ce": false,
+        "notes": "The Fourteenth Legion built a fortress here around 60 CE at a strategic crossing of the River Severn, later handed over to the Twentieth Legion around 66 CE. The base was downgraded to a supply depot in the late 70s before the army abandoned it entirely around 90 CE, transferring its garrison to a new fortress at Chester. Wroxeter then grew into the fourth-largest city in Roman Britain, tribal capital of the Cornovii. By 117 CE the old legionary defenses had been gone for a generation, replaced by a forum, bathhouse and civilian streets.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Viroconium_Cornoviorum",
+          "https://www.roman-britain.co.uk/places/viroconivm-cornoviorum-wroxeter-legionary-fort/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.53806,
+          53.23389
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_lindum",
+        "category": "fort",
+        "name_latin": "Lindum Colonia",
+        "name_english": "Lincoln",
+        "province": "Britannia",
+        "modern_location": "Lincoln, Lincolnshire, England",
+        "built": 60,
+        "destroyed": 78,
+        "extant_117ce": false,
+        "notes": "The Ninth Legion Hispana garrisoned a fortress on this hilltop above the River Witham from around 60 CE, before marching north to found York around 71 CE. The Second Legion Adiutrix briefly took their place before it too departed for Chester around 77 to 78 CE, ending seventeen years of continuous legionary occupation. Sometime after 86 CE the emptied fortress was formally refounded as a colonia, a chartered town for retired soldiers. By 117 CE Lincoln had been a civilian colonia for roughly three decades, its legionary ramparts replaced by the walls of a full Roman city.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Lindum_Colonia",
+          "https://www.roman-britain.co.uk/places/lindum/"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
