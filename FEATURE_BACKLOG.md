@@ -1076,8 +1076,60 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       remembering for any future Roman-Britain axis work that a famous name doesn't guarantee a
       pre-117 date, even along an early-established road.
 
+## New ideas spotted this shift (2026-08-30, Shift 77 — eastern forts, Britain forts, living empire)
+
+- [ ] **Roman Britain auxiliary forts went from 13 records (nearly all Stanegate/Vindolanda) to
+      48 in one shift** — Wales and the Pennines had essentially zero coverage before this shift
+      despite being extremely well-documented in English-language sources. Real remaining
+      candidates a fresh WebSearch budget could close: Trawscoed, Cardiff Roman fort, Wall/
+      Letocetum (Staffordshire), Leicester/Ratae, and the Claudian military base under Fishbourne
+      all came up in research but were dropped on genuine dating/sourcing ambiguity, not confirmed
+      absence. Elslack, Broughton-in-Craven and Newton Kyme are real Pennine forts the research
+      agent simply ran out of budget on before reaching them.
+- [ ] **Fort image top-up caught two real wrong-image mismatches before they shipped, worth a
+      standing habit for any future image-topup pass**: a candidate "Legionary Fortress of Legio
+      III Augusta (Lambaesis)" image actually belonged to a *different*, already-imaged record —
+      the image-less one with that generic name is Theveste, the legion's earlier fortress before
+      its move to Lambaesis, a genuinely different site. And an "Acropolis of Praeneste" (citadel)
+      candidate image was actually of the separate Sanctuary of Fortuna Primigenia terraces below
+      it. Both caught by reading the target record's own notes field before applying the image,
+      not just trusting the research agent's name-matching. **Lesson**: when a research agent
+      matches an image to a record purely by name string, re-verify the image's actual subject
+      against that record's own description before splicing — a name match isn't a subject match.
+- [ ] **Fort image backlog is now 60 (was 68), with 3 named near-misses flagged by this shift's
+      own research agent**: Ribchester (Bremetennacum), Hod Hill, and Mamucium (Manchester) all
+      have Commons *category* pages with plausible matching files that weren't isolated to one
+      exact, raw-link-confirmed filename in this shift's search budget — a fast follow-up for
+      whoever has a fresh budget, rather than starting from zero.
+- [ ] **Axis 3a's eastern frontier (Syria/Cappadocia/Arabia/Judaea/Mesopotamia) may be close to a
+      real research ceiling for now.** A dedicated research pass rejected far more candidates than
+      it kept — Hegra and Aila's Roman camps are 2nd-3rd century/Diocletianic, Qasr el-Uweinid is
+      confirmed Severan, Masada's garrison had left by ~115/116, several Cappadocian Euphrates road
+      stations (Zimara, Analiba, Suisa) have no citable garrison date at all. Only 9 new features
+      resulted, well under a normal axis-3 batch, but with real per-candidate sourcing reasons for
+      every drop (see SHIFT_LOG for the full list) rather than a research-effort shortfall.
+- [ ] **Axis 4 (living empire) governor coverage has real remaining gaps for 117 specifically**:
+      Raetia, Noricum, Baetica, Bithynia-Pontus, Lycia-Pamphylia, and Cyprus all lack a governor
+      pinned to that exact year across two separate research passes now — WebSearch snippets don't
+      surface a full enough Fasti (Roman magistrate list) for these smaller/less-studied provinces.
+      Likely needs a source with real prosopographical depth (PIR — Prosopographia Imperii Romani
+      — or a dedicated Fasti compilation) rather than another round of the same search terms.
+- [ ] **`person_pliny_younger` and `person_pliny_younger_tuscan` in `people_117.geojson` look like
+      a duplicate at first glance (same name, twice) but are not** — they're his two distinct
+      villas (Laurentine near Ostia, Tuscan near Tifernum Tiberinum), a deliberate pattern this
+      project's own brief calls for (axis 4a: "pin his Laurentine + Tuscan villas") and axis 19
+      echoes ("multiple estates as origin nodes"). Checked this shift before assuming it was a bug
+      — worth remembering so a future cleanup pass doesn't "fix" it by deleting one.
+
 ## Shipped (moved from above; newest on top)
 
+- 2026-08-30 — Shift 77: Axis 3a — 44 new forts across two fresh frontiers: eastern (Arabia,
+  Judaea, Cappadocia, Mesopotamia — 9) and Roman Britain (Wales, Pennines, Fosse Way — 35), past
+  the 40-feature floor. Axis 4 — 20 new people + 8 new events for the 117 CE living-empire layer,
+  past the 20-feature floor. Plus an 8-record fort image top-up, catching two wrong-image
+  mismatches before they shipped. `pois.geojson` 1152 → 1196, `people_117.geojson` 50 → 70,
+  `events_117.geojson` 17 → 25. Full sourcing, dropped-candidate reasoning, and next-shift
+  pointers in SHIFT_LOG.
 - 2026-08-30 — Shift 76: Axis 3a Numidia/Mauretania frontier — 20 new forts across two research
   passes (Auzia, Rapidum [not yet built in 117], Tigava Castra, Zaraï, Diana Veteranorum,
   Mascula, Mesarfelta, Ad Septem Fratres, Tamuda, Thubunae, Ad Calceum Herculis, Thabudeos,

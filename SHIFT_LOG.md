@@ -7,6 +7,141 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 77 — 2026-08-30 (this shift's own prompt claimed "Shift 2 of four")
+
+Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
+count. Repo booted on a detached `HEAD` pointing at a stale local `main`/`origin/main` (a "Shift
+56" ref); `git fetch origin main` resolved it cleanly to the real tip (`c900a35`, Shift 76's own
+last commit) with no lost work, same pattern documented by Shifts 9-14, 73, 75, 76.
+
+### Board + backlog check
+
+Re-confirmed Shift 76's own conclusion: every open board P0 is still too large or blocked for one
+unattended session (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild,
+`[13-P0-2]` image-audit, `[02-P0-4]`'s glyph-PBF half, `[15-P0-1]`/`[14-P0-1]` both blocked on
+Pedro/external setup). `[02-P0-1]` terrain's `[~]` claim (cloud shift 68, 2026-08-28 00:20) is
+now well past the board's 24h staleness window but left alone anyway — its real blocker (network-
+fetched hillshade tiles + a likely new npm raster/DEM dependency, against the "don't touch
+package.json" guardrail) is unchanged. Checked FEATURE_BACKLOG.md's own accumulated notes before
+picking anything, specifically to avoid re-treading dead ends other shifts already hit: axis 15
+(alimenta towns) is confirmed hard-capped at 28/50 from WebSearch alone (flagged twice, 2026-08-23
+and again more rigorously since), so it was skipped entirely rather than re-attempted for a third
+time. Fell back to the axes, same as the last several shifts.
+
+### Track A — two axes, four research batches, all reviewed and spliced by hand
+
+Every batch was researched by a background agent scoped to a single scratch JSON file (no repo
+write access, per the pattern Shifts 75-76 established); each file was read in full, checked for
+duplicate ids/names against the live data, and spot-verified for internal consistency before
+splicing in via `scripts/append-geojson-features.mjs` (confirmed byte-identical elsewhere via
+`git diff --stat` before every commit) or `scripts/apply-image-topup.mjs`.
+
+**Axis 3a (military infrastructure) — 44 new forts across two genuinely fresh frontiers, past the
+40-feature floor.** Checked existing province coverage first (`pois.geojson` had 25 records for
+Germania Superior, 20+ for Pannonia, but only 2-3 each for Syria/Iudaea/Arabia/Cappadocia and just
+13 for the whole of Roman Britain) before picking targets, rather than re-mining the
+already-worked Numidia/Danube ground Shifts 75-76 had just covered. **First pass — the eastern
+frontier (9 forts)**: Humayma/Hauarra (Via Nova Traiana auxiliary fort, Arabia), Ein Gedi
+(Babatha-archive garrison, Judaea), Caesarea Maritima's Herodian-palace praetorium (the Pilate
+Stone find-site), Dascusa (Euphrates road fort, Cappadocia), Trapezus (classis Pontica naval
+base), and four forts in Trajan's short-lived province of Mesopotamia — Nisibis, Singara, Edessa,
+Dura-Europos — all still garrisoned on 11 August 117 and abandoned within the following year once
+Hadrian gave up the conquest. This pass came back far short of its own 25-40 target: the research
+agent tested and rejected more candidates than it kept (Hegra and Aila's camps are 2nd-3rd century
+and Diocletianic respectively, Qasr el-Uweinid is confirmed Severan, Masada's garrison had already
+left by ~115/116, Herodium/Jericho lack a citable continuing-garrison source) — a real sourcing
+ceiling on this stretch of frontier, not a padding shortfall. **Second pass — Roman Britain (35
+forts)**, picked specifically because the province's near-total English-language documentation
+made it the more promising next target after the East ran thin: 27 forts still garrisoned in 117
+across Wales (Segontium, Moridunum, Y Gaer, Tomen y Mur, Canovium, Gobannium, Bremia, Luentinum,
+Caersws, Forden Gaer, Castell Collen, Nidum) and the Pennines/York-Carlisle road network (Olicana,
+Mamucium, Bremetennacum, Galava, Brocavum, Verterae, Lavatrae, Cataractonium, Cambodunum,
+Castleshaw, Ardotalia, Templeborough, Vinovia, Danum, Derventio/Malton), plus 8 earlier Fosse-Way-
+era forts logged `extant_117ce: false` with a clear abandonment note per this project's standing
+convention (Isca Dumnoniorum/Exeter and Viroconium/Wroxeter — legionary predecessors to Caerleon
+and Chester — Lindum/Lincoln, Corinium/Cirencester, Hod Hill, Waddon Hill, Longthorpe, Great
+Chesterford). 7 of the 35 shipped with verified images. `pois.geojson`: `auxiliary_fort` and
+`fort` categories both grew substantially; total file 1152 → 1196.
+
+**Fort image top-up (8 records applied, on top of the new features)** — a research agent worked
+the 68-strong image-less-fort backlog Shift 76 flagged. It confirmed 10 real filenames but this
+shift only applied 8 after review: the "Legionary Fortress of Legio III Augusta (Lambaesis)"
+candidate image was actually a mismatch — Lambaesis already has its own image, and the
+image-less record with that generic name is actually **Theveste** (the legion's earlier,
+distinct fortress before its move to Lambaesis), so applying a Lambaesis bath-house photo to it
+would have been a wrong-site error; skipped rather than force it. The "Acropolis of Praeneste"
+candidate image was a photo of the separate Sanctuary of Fortuna Primigenia terraces below the
+citadel, not the citadel itself the record actually describes — also skipped. Both drops are
+exactly the kind of image-content mismatch this project has been burned by before (Acumincum's
+medieval-fortress trap, flagged again independently this shift by the same research agent).
+Applied: Banasa, Sala Colonia, Almus, Vetus Salina, Lussonium, Arutela, Buridava, Praetorium
+(Copaceni).
+
+**Axis 4 (living empire) — 20 people + 8 events, past the 20-feature floor.** Two research passes
+against the full existing 60-name/23-event list (handed to each agent explicitly, to avoid
+re-researching or duplicating anyone already mapped). **People**: provincial governors in office
+on 11 August 117 (Julius Quadratus Bassus in Dacia, Rammius Martialis in Egypt, Catilius Severus
+in Cappadocia-Armenia, Claudius Paternus Clementianus in Sardinia/Corsica, Pompeius Falco in Moesia
+Inferior, Bruttius Praesens in Cilicia — the very province Trajan died in — Valerius Severus in
+Achaea), Cyprus revolt leader Artemion, Hadrian's family circle (his brother-in-law Servianus, his
+sister Domitia Paulina, his soon-to-be in-law Pedanius Fuscus Salinator), legion commander and
+future Hadrian's Wall builder Platorius Nepos, Smyrna's Platonist mathematician Theon, three early
+bishops (Sixtus I of Rome, Primus of Alexandria, Papias of Hierapolis), three tannaitic sages
+(Joshua ben Hananiah, Tarfon, Ishmael ben Elisha), and Caucasian client-king Pharasmanes II of
+Iberia. **Events**: Trajan's death at Selinus and the adoption letter reaching Hadrian, the
+abandoned siege of Hatra, Hadrian's accession announced in Alexandria (P.Oxy. 3781), the Senate's
+deification vote, the first recorded unrest on the British frontier, and — reaching just past the
+snapshot moment into the story's next beat — the autumn Roxolani/Iazyges strike on the Danube
+frontier that killed Dacia's governor (already on the map from the first pass) and Hadrian's own
+departure from Antioch to deal with it. **Honestly dropped, not padded in**: Q. Pompeius Falco's
+*Britain* posting (only from 118, a year too late — his 116/117 Moesia Inferior post was kept
+instead), several Erucius Clarus figures (Wikipedia access blocked mid-research, disambiguation
+failed, dropped rather than risk misattributing one of several similarly-named men), Salvius
+Julianus (~7 years old in 117), Neratius Priscus (the one detailed anecdote about him is called
+"fiction" by the Oxford Classical Dictionary itself). `people_117.geojson`: 50 → 70.
+`events_117.geojson`: 17 → 25.
+
+### State, verification, next
+
+`npm install` needed at session start (fresh cloud container, standing pattern); reverted the
+usual `package-lock.json` npm-version metadata noise before committing. `npm run validate`: 0
+errors before and after every batch, same 17 pre-existing warnings throughout — no new ones
+introduced. `npm run build`: clean before every push, six commits total (fort image top-up;
+eastern forts; people/events pass one; Britain forts; people/events pass two; METRICS.md
+refresh), each pushed individually as soon as verified. `npm run metrics -- --write`: 1152 → 1196
+POIs (+44), 50 → 70 people (+20), 17 → 25 events (+8), plus 8 image top-ups on existing records —
+**72 new features this shift**, comfortably past the brief's 30-100-per-shift rule of thumb, with
+both touched axes clearing their own per-axis floor (axis 3: 40 minimum, hit 44; axis 4: 20
+minimum, hit 28) on top of that. Track B (UI/feature backlog) was skipped this shift — scoped it
+first and found nothing safely unblocked: `FEATURE_BACKLOG.md`'s P0-P3 list is down to one open
+item (terrain shading), which is the same board `[02-P0-1]` ticket already explained above as
+blocked on network egress + the package.json guardrail. Per the brief's own allowance ("if you
+don't have time for track B, that's fine — data wins"), this shift used the full budget on Track A
+instead of forcing a UI change with no safe target.
+
+**Next shift**: axis 3a's eastern frontier (Syria/Cappadocia/Arabia/Judaea/Mesopotamia) is likely
+close to this sandbox's real research ceiling for now — the agent that worked it rejected far more
+candidates than it kept, all for genuine dating/sourcing reasons (see above). Roman Britain still
+has real, named headroom a fresh WebSearch budget could close: Trawscoed, Cardiff, Wall/Letocetum,
+Leicester/Ratae, and the Fishbourne-area Claudian base all came up in this shift's research but
+were dropped on dating/sourcing uncertainty rather than confirmed absent; Elslack, Broughton-in-
+Craven and Newton Kyme are real Pennine forts the agent simply ran out of search budget on. 60 of
+this shift's own 44 new Britain/eastern forts still ship without `image_url` (7 of the 35 Britain
+forts got one; all 9 eastern forts minus 2 are image-less) — a dedicated image-only pass has real
+headroom, same shape as this shift's own 8-record top-up. The general fort-image backlog (68 at
+the start of this shift, 60 now) still has candidates flagged by name in this shift's own research
+agent output worth a fresh look: Ribchester, Hod Hill, and Mamucium all have Commons *category*
+pages with likely matching files that just weren't isolated to one exact filename in this shift's
+search budget. Axis 4 could plausibly go further too — governors of Raetia, Noricum, Baetica,
+Bithynia-Pontus, Lycia-Pamphylia and Cyprus for 117 specifically were searched but couldn't be
+pinned down this shift; a source with fuller Fasti (magistrate-list) coverage than WebSearch
+snippets might close some of those. Board and backlog otherwise unchanged from Shift 76's
+assessment — alimenta towns (axis 15) remain hard-capped at 28/50 and should not be re-attempted
+without a non-WebSearch source (Duncan-Jones's own Appendix III, behind a paywall this sandbox
+can't reach).
+
+---
+
 ## Shift 76 — 2026-08-30 (this shift's own prompt claimed "Shift 1 of four")
 
 Same stale-numbering mismatch every recent shift has flagged (Shifts 69-75 all noted it) —
