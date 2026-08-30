@@ -11942,6 +11942,390 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0806,
+          53.9617
+        ]
+      },
+      "properties": {
+        "id": "station_eboracum_dere_street",
+        "category": "mansio",
+        "name": "Eboracum",
+        "road": "Dere Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "extant_117ce": true,
+        "notes": "The fortress of Legio VI Victrix and headquarters of the whole northern command, where Dere Street began its 156-mile run to Bremenium and the far frontier. Roads radiated from here in every direction, but this one carried troops and supplies straight up the eastern flank of the Pennines toward the future line of Hadrian's Wall.",
+        "sources": [
+          "Antonine Itinerary (Iter I)",
+          "https://en.wikipedia.org/wiki/Eboracum",
+          "https://en.wikipedia.org/wiki/Dere_Street"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.3816,
+          54.0908
+        ]
+      },
+      "properties": {
+        "id": "station_isurium_brigantum",
+        "category": "mansio",
+        "name": "Isurium Brigantum",
+        "road": "Dere Street",
+        "distance_from_previous_mp": 17,
+        "identified": true,
+        "extant_117ce": true,
+        "notes": "A market settlement of the Brigantes at modern Aldborough, where Dere Street crossed the River Ure 17 Roman miles north of York. It would later grow into the tribe's civitas capital, but under Trajan it was still a working roadside town serving travelers and troops bound for the frontier.",
+        "sources": [
+          "Antonine Itinerary (Iter I)",
+          "https://en.wikipedia.org/wiki/Isurium_Brigantum",
+          "https://www.english-heritage.org.uk/visit/places/aldborough-roman-site/history/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.669,
+          54.4426
+        ]
+      },
+      "properties": {
+        "id": "station_scotch_corner",
+        "category": "vicus",
+        "name": "Scotch Corner settlement",
+        "road": "Dere Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "extant_117ce": false,
+        "notes": "A trading settlement at the junction where Dere Street met the road running west toward Carlisle over Stainmore. It was founded a decade before the Roman conquest even reached Yorkshire and flourished for only 20 to 30 years before its trade and population shifted south to the new town at Cataractonium. By Trajan's reign the site had stood empty for decades.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Scotch_Corner",
+          "https://archaeologydataservice.ac.uk/archives/view/scotch_a1_2021/",
+          "https://archaeology.co.uk/articles/features/contact-conquest-and-cartimandua.htm"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5056,
+          54.246
+        ]
+      },
+      "properties": {
+        "id": "station_healam_bridge",
+        "category": "vicus",
+        "name": "Healam Bridge",
+        "road": "Dere Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "extant_117ce": false,
+        "notes": "A roadside settlement where Dere Street crossed Healam Beck, roughly midway between Aldborough and Catterick. The road itself had run through here since the late 1st century, but the settlement that grew up beside it is usually dated to the start of Hadrian's reign, just after this snapshot, when it expanded into an 18-hectare spread of timber workshops and yards.",
+        "sources": [
+          "https://ancientmonuments.uk/119401-healam-bridge-roman-fort-and-vicus-kirklington-cum-upsland",
+          "https://archaeologydataservice.ac.uk/archives/view/healam_ha_2017/overview.cfm"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6497,
+          54.3842
+        ]
+      },
+      "properties": {
+        "id": "station_cataractonium",
+        "category": "mansio",
+        "name": "Cataractonium",
+        "road": "Dere Street",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "extant_117ce": true,
+        "notes": "A fort-and-town complex where Dere Street bridged the River Swale, 24 Roman miles north of Aldborough. Founded in 71 CE by governor Quintus Petillius Cerialis, it had grown into a busy leatherworking and supply center for the northern garrisons by Trajan's reign, with enough literate staff on hand to leave behind hundreds of writing styli.",
+        "sources": [
+          "Antonine Itinerary (Iter I)",
+          "https://en.wikipedia.org/wiki/Cataractonium",
+          "https://www.roman-britain.co.uk/places/cataractonium/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6278,
+          54.3715
+        ]
+      },
+      "properties": {
+        "id": "station_bainesse",
+        "category": "vicus",
+        "name": "Bainesse",
+        "road": "Dere Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "extant_117ce": true,
+        "notes": "A satellite settlement two kilometers southeast of Cataractonium, founded under the Flavian emperors as a hub for blacksmiths, bronze-workers and potters serving Dere Street traffic. Its kiln is the only one positively identified anywhere in the Catterick area, and by Trajan's reign stone buildings had begun replacing the original timber ones.",
+        "sources": [
+          "https://historicengland.org.uk/listing/the-list/list-entry/1021209",
+          "https://the-past.com/feature/recent-roman-discoveries-during-the-a1-upgrade-in-north-yorkshire/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.677,
+          54.676
+        ]
+      },
+      "properties": {
+        "id": "station_vinovia",
+        "category": "statio",
+        "name": "Vinovia",
+        "road": "Dere Street",
+        "distance_from_previous_mp": 22,
+        "identified": true,
+        "extant_117ce": true,
+        "notes": "The largest Roman fort in County Durham, raised around 79 CE on a hilltop above the River Wear, 22 Roman miles north of Catterick. Its garrison guarded Dere Street's crossing of the Wear, and centuries later the site would yield the best-preserved Roman military bathhouse found anywhere in Britain.",
+        "sources": [
+          "Antonine Itinerary (Iter I)",
+          "https://en.wikipedia.org/wiki/Vinovia",
+          "https://www.durham.ac.uk/departments/academic/archaeology/research/archaeology-research-projects/binchester-roman-fort/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8385,
+          54.894
+        ]
+      },
+      "properties": {
+        "id": "station_vindomora",
+        "category": "statio",
+        "name": "Vindomora",
+        "road": "Dere Street",
+        "distance_from_previous_mp": 19,
+        "identified": true,
+        "extant_117ce": true,
+        "notes": "A fort at modern Ebchester, built when Dere Street was pushed north from York to Corbridge around 80 CE, 19 Roman miles beyond Binchester. It held roughly 500 auxiliary troops and served as an overnight staging post on the northern road for more than three centuries.",
+        "sources": [
+          "Antonine Itinerary (Iter I)",
+          "https://historicengland.org.uk/listing/the-list/list-entry/1002336",
+          "https://en.wikipedia.org/wiki/Vindomora"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.0293,
+          54.9782
+        ]
+      },
+      "properties": {
+        "id": "station_corstopitum_dere_street",
+        "category": "statio",
+        "name": "Corstopitum",
+        "road": "Dere Street",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "extant_117ce": true,
+        "notes": "The Stanegate's eastern anchor and Dere Street's last major stop before the frontier, nine Roman miles north of Ebchester at the lowest fordable point of the Tyne. By Trajan's death it was already a major supply base and arsenal for the northern army, four decades before Hadrian's Wall was even planned.",
+        "sources": [
+          "Antonine Itinerary (Iter I)",
+          "https://www.english-heritage.org.uk/visit/places/corbridge-roman-town-hadrians-wall/history-and-stories/history/",
+          "https://en.wikipedia.org/wiki/Coria_(Corbridge)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.264,
+          55.281
+        ]
+      },
+      "properties": {
+        "id": "station_bremenium",
+        "category": "statio",
+        "name": "Bremenium",
+        "road": "Dere Street",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "extant_117ce": true,
+        "notes": "The northernmost stop named in the Antonine Itinerary's British road list, 20 Roman miles beyond Corbridge, with a turf-and-timber fort that Trajan's engineers modified in his final years. Excavated pottery shows no occupation here during Hadrian's reign, so whatever garrison held it at Trajan's death did not stay much longer.",
+        "sources": [
+          "Antonine Itinerary (Iter I)",
+          "https://en.wikipedia.org/wiki/Bremenium",
+          "https://www.roman-britain.co.uk/places/bremenium/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.337,
+          55.371
+        ]
+      },
+      "properties": {
+        "id": "station_chew_green",
+        "category": "statio",
+        "name": "Chew Green",
+        "road": "Dere Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "extant_117ce": false,
+        "notes": "A cluster of marching camps, fortlets and a permanent fort where Dere Street crossed the headwaters of the River Coquet, about eight miles north of Bremenium. Its ancient name is disputed, with proposed identifications including Ad Fines and Uysela from the Ravenna Cosmography. The Flavian-period fortlet here had gone out of use before Trajan died, part of the broader pull-back from the far side of the Cheviots.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Chew_Green",
+          "https://en.wikipedia.org/wiki/Ad_Fines",
+          "https://historicengland.org.uk/listing/the-list/list-entry/1015847"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4839,
+          55.4839
+        ]
+      },
+      "properties": {
+        "id": "station_cappuck",
+        "category": "statio",
+        "name": "Cappuck",
+        "road": "Dere Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "extant_117ce": false,
+        "notes": "A small bridgehead fort on the east bank of the Oxnam Water, guarding Dere Street's crossing 11 miles southeast of Newstead. Excavation found two Flavian-Trajanic occupation layers followed by a long gap before the site was rebuilt around 140 CE, so its garrison had already pulled out by the time Trajan died.",
+        "sources": [
+          "https://www.roman-britain.co.uk/places/cappuck/",
+          "https://www.u3ahadrianswall.co.uk/cappuck-roman-fortlet-a-fortlet-on-dere-st-during-agricolian-antininan-invasions/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.687,
+          55.601
+        ]
+      },
+      "properties": {
+        "id": "station_trimontium",
+        "category": "statio",
+        "name": "Trimontium",
+        "road": "Dere Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "extant_117ce": false,
+        "notes": "The most heavily fortified Roman position north of the Cheviots, built by Agricola below the three peaks of the Eildon Hills to control Dere Street's crossing of the Tweed. Fire damage and scattered weapons found in its ditches point to real fighting around 105 CE, when Rome abandoned the fort and pulled its northern garrisons back toward the Tyne-Solway line, a dozen years before this snapshot.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Trimontium_(Newstead)",
+          "https://www.heritagedaily.com/2020/06/trimontium-newstead-the-roman-fort/133895"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8031,
+          55.7736
+        ]
+      },
+      "properties": {
+        "id": "station_oxton",
+        "category": "statio",
+        "name": "Oxton fortlet",
+        "road": "Dere Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "extant_117ce": false,
+        "notes": "A small fortlet on a ridge above Dere Street in the Lammermuir Hills, guarding the road's push north toward the Forth beyond Trimontium. One of its four attached annexes stretched 225 meters along the roadside, but excavation found nothing to suggest occupation survived the pullback that emptied Trimontium and the rest of the Flavian-Trajanic garrison network to its south.",
+        "sources": [
+          "https://ancientmonuments.uk/127778-oxton-roman-fortlet-and-annexes-230m-nne-of-braefoot-cottage-leaderdale-and-melrose-ward",
+          "https://www.roman-britain.co.uk/places/oxton/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0868,
+          55.8944
+        ]
+      },
+      "properties": {
+        "id": "station_elginhaugh",
+        "category": "statio",
+        "name": "Elginhaugh",
+        "road": "Dere Street",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "extant_117ce": false,
+        "notes": "A Flavian fort at the North Esk crossing near Dalkeith, the most completely excavated timber auxiliary fort found anywhere in the Roman Empire. Coin evidence dates its short life to about 79 to 87 CE, after which it was deliberately dismantled — three decades before Trajan even took the throne, let alone died.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Elginhaugh",
+          "https://www.tafac.org.uk/wp-content/uploads/2021/09/FC-p49-58_Hanson.pdf"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
