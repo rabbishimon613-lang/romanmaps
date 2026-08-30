@@ -315,6 +315,45 @@
           "https://the-past.com/feature/backs-against-the-wall-117-113/"
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.265,
+          44.1178
+        ]
+      },
+      "properties": {
+        "id": "event_roxolani_iazyges_invade_danube_frontier",
+        "name": "Roxolani and Iazyges strike the Danube frontier",
+        "date_iso": "117-10-01",
+        "one_line": "In autumn 117 the Sarmatian Roxolani and Iazyges struck the Danube frontier provinces of Moesia Inferior and Pannonia, and the fighting cost the governor of Dacia, Quadratus Bassus, his life.",
+        "sources": [
+          "https://followinghadrian.com/2018/04/18/early-spring-118-ad-hadrian-conducts-negotiations-with-the-king-of-the-roxolani-in-moesia-inferior-hadrian1900/",
+          "https://en.wikipedia.org/wiki/Gaius_Julius_Quadratus_Bassus"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.1603,
+          36.2021
+        ]
+      },
+      "properties": {
+        "id": "event_hadrian_departs_antioch_for_danube",
+        "name": "Hadrian leaves Antioch for the Danube frontier",
+        "date_iso": "117-10-01",
+        "one_line": "Hadrian left Antioch by the overland route rather than sailing for Rome, driven north by news of the Danube crisis, and had reached Mopsucrene in Cilicia by 13 October 117.",
+        "sources": [
+          "https://followinghadrian.com/2017/10/13/13th-october-117-ad-hadrian-travels-back-to-rome-and-reaches-mopsucrene-hadrian1900/"
+        ]
+      }
     }
   ]
 }

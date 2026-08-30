@@ -1382,6 +1382,228 @@
           "https://www.britannica.com/biography/Papias"
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1217,
+          39.2238
+        ]
+      },
+      "properties": {
+        "id": "person_claudius_paternus_clementianus",
+        "name": "Claudius Paternus Clementianus",
+        "role": "Equestrian procurator of Sardinia and Corsica",
+        "role_group": "military",
+        "location_117": "Caralis (modern Cagliari), Sardinia",
+        "one_line": "Ran the imperial finances of Sardinia and Corsica as procurator from 115 to 119, a posting that followed three years administering Roman Judaea and preceded one governing Africa Proconsularis.",
+        "sources": [
+          "http://lupa.at/6415",
+          "http://lupa.at/6431",
+          "https://de.wikipedia.org/wiki/Claudius_Paternus_Clementianus"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.35,
+          43.6166
+        ]
+      },
+      "properties": {
+        "id": "person_quintus_pompeius_falco",
+        "name": "Quintus Pompeius Falco",
+        "role": "Imperial legate (governor) of Moesia Inferior",
+        "role_group": "military",
+        "location_117": "Novae, Moesia Inferior (near modern Svishtov, Bulgaria)",
+        "one_line": "Commanded the Danube legions of Moesia Inferior as governor, a post inscriptions place him in during 116 and 117, a year before Hadrian sent him to put down unrest in Britain.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Quintus_Pompeius_Falco",
+          "https://www.wikidata.org/wiki/Q721898",
+          "https://www.roman-britain.co.uk/people/quintus-pompeius-falco/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8954,
+          36.9179
+        ]
+      },
+      "properties": {
+        "id": "person_gaius_bruttius_praesens",
+        "name": "Gaius Bruttius Praesens",
+        "role": "Imperial legate (governor) of Cilicia",
+        "role_group": "military",
+        "location_117": "Tarsus, Cilicia (modern Turkey)",
+        "one_line": "Governed Cilicia in 117, the very province where Trajan died at Selinus that August, having marched Legio VI Ferrata through deep snow over the Armenian Taurus during the Parthian War two years earlier.",
+        "sources": [
+          "https://oxfordre.com/classics/display/10.1093/acrefore/9780199381135.001.0001/acrefore-9780199381135-e-1187",
+          "https://en.wikipedia.org/wiki/Gaius_Bruttius_Praesens_Lucius_Fulvius_Rusticus"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      },
+      "properties": {
+        "id": "person_domitia_paulina",
+        "name": "Domitia Paulina",
+        "role": "Sister of Emperor Hadrian",
+        "role_group": "imperial",
+        "location_117": "Rome",
+        "one_line": "Saw her only brother proclaimed emperor on 11 August 117 while she remained at Rome as the wife of the senator Lucius Julius Ursus Servianus, whom Trajan himself had chosen as her husband.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Paulina_(sister_of_Hadrian)",
+          "https://www.encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/domitia-paulina-ii-fl-80-100-ce"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      },
+      "properties": {
+        "id": "person_gnaeus_pedanius_fuscus_salinator",
+        "name": "Gnaeus Pedanius Fuscus Salinator",
+        "role": "Senator, married into Hadrian's family",
+        "role_group": "imperial",
+        "location_117": "Rome",
+        "one_line": "Stood a year away from sharing the consulship of 118 with Hadrian himself, having married the new emperor's niece Julia within the circle of friends that had once surrounded Pliny the Younger.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Gnaeus_Pedanius_Fuscus_Salinator_(consul_118)",
+          "https://oxfordre.com/classics/display/10.1093/acrefore/9780199381135.001.0001/acrefore-9780199381135-e-4812"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1428,
+          38.4192
+        ]
+      },
+      "properties": {
+        "id": "person_theon_of_smyrna",
+        "name": "Theon of Smyrna",
+        "role": "Platonist philosopher and mathematician",
+        "role_group": "writer",
+        "location_117": "Smyrna (modern Izmir, Turkey)",
+        "one_line": "Taught Pythagorean and Platonic mathematics at Smyrna, going on to record planetary observations of Mercury and Venus in the 120s and 130s that Ptolemy would later cite by name.",
+        "sources": [
+          "https://mathshistory.st-andrews.ac.uk/Biographies/Theon_of_Smyrna/",
+          "https://en.wikipedia.org/wiki/Theon_of_Smyrna"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8903,
+          31.9467
+        ]
+      },
+      "properties": {
+        "id": "person_rabbi_tarfon",
+        "name": "Rabbi Tarfon",
+        "role": "Tannaitic sage",
+        "role_group": "religious",
+        "location_117": "Lydda, Judaea",
+        "one_line": "Led the rabbinic academy at Lydda, a town whose people had just weathered a Roman siege during the Diaspora revolt, and traveled regularly north to Yavne to sit among the sages of the Sanhedrin.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Rabbi_Tarfon",
+          "https://www.chabad.org/library/article_cdo/aid/112314/jewish/Rabbi-Tarfon.htm"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.05,
+          31.4231
+        ]
+      },
+      "properties": {
+        "id": "person_rabbi_ishmael_ben_elisha",
+        "name": "Rabbi Ishmael ben Elisha",
+        "role": "Tannaitic sage",
+        "role_group": "religious",
+        "location_117": "Kfar Aziz, south of Hebron, Judaea",
+        "one_line": "Taught his thirteen rules for interpreting Torah law from Kfar Aziz south of Hebron, decades after Rabbi Joshua ben Hananiah had ransomed him as a captive boy from Roman hands.",
+        "sources": [
+          "https://www.britannica.com/biography/Ishmael-ben-Elisha",
+          "https://www.chabad.org/library/article_cdo/aid/112326/jewish/Rabbi-Ishmael-Ben-Elisha.htm"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.8779,
+          37.9058
+        ]
+      },
+      "properties": {
+        "id": "person_gaius_valerius_severus",
+        "name": "Gaius Valerius Severus",
+        "role": "Proconsular governor of Achaea",
+        "role_group": "military",
+        "location_117": "Corinth, Achaea (Greece)",
+        "one_line": "Governed the proconsular province of Achaea for the term 117/118, administering Roman Greece from Corinth in the year the confirmed philhellene Hadrian became emperor.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Gaius_Valerius_Severus",
+          "https://www.wikidata.org/wiki/Q12275955"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.7189,
+          41.842
+        ]
+      },
+      "properties": {
+        "id": "person_pharasmanes_ii_of_iberia",
+        "name": "Pharasmanes II of Iberia",
+        "role": "King of Iberia (Caucasus)",
+        "role_group": "imperial",
+        "location_117": "Mtskheta, Kingdom of Iberia (modern Georgia)",
+        "one_line": "Ruled the Caucasian kingdom of Iberia from Mtskheta after succeeding his father Amazasp I around 116, holding Rome's allied buffer throne against Parthia for a reign that would run to 132.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pharasmanes_II",
+          "https://www.wikidata.org/wiki/Q2655106"
+        ]
+      }
     }
   ]
 }
