@@ -1162,6 +1162,226 @@
           "H. Cotton, 'The Guardianship of Jesus Son of Babatha', JRS"
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7873,
+          45.513
+        ]
+      },
+      "properties": {
+        "id": "person_julius_quadratus_bassus",
+        "name": "Gaius Julius Quadratus Bassus",
+        "role": "Governor of Dacia",
+        "role_group": "military",
+        "location_117": "Ulpia Traiana Sarmizegetusa, capital of Roman Dacia (Hunedoara County, Romania)",
+        "one_line": "The 50-year-old governor commanded Dacia from Sarmizegetusa in August 117, having already governed Judaea, Cappadocia, Galatia and Syria for Trajan; within months he was dead in battle against the Roxolani, and his body was carried home to Pergamon for burial.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Gaius_Julius_Quadratus_Bassus",
+          "https://storymaps.arcgis.com/stories/487dafe1a27c416e889da628b088a16e"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9187,
+          31.2001
+        ]
+      },
+      "properties": {
+        "id": "person_rammius_martialis",
+        "name": "Quintus Rammius Martialis",
+        "role": "Prefect of Egypt",
+        "role_group": "military",
+        "location_117": "Alexandria, Egypt",
+        "one_line": "Egypt's prefect governed from Alexandria when Hadrian's accession letter reached him on 25 August 117; he circulated an order, preserved today as the papyrus P.Oxy. 3781, for ten days of garlanded festivals across every Egyptian nome.",
+        "sources": [
+          "https://aquila.zaw.uni-heidelberg.de/hgv/22505",
+          "https://en.wikipedia.org/wiki/Quintus_Rammius_Martialis"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4875,
+          38.7225
+        ]
+      },
+      "properties": {
+        "id": "person_catilius_severus",
+        "name": "Lucius Catilius Severus",
+        "role": "Governor of Cappadocia-Armenia",
+        "role_group": "military",
+        "location_117": "Caesarea Mazaca, capital of the province of Cappadocia (modern Kayseri, Turkey)",
+        "one_line": "The general who had won military decorations fighting Parthia since 114 still held Cappadocia's frontier command in August 117; within weeks Hadrian summoned him to Antioch and installed him as governor of Syria in his own former post.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Lucius_Catilius_Severus",
+          "https://www.wikidata.org/wiki/Q1215819"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9014,
+          35.1892
+        ]
+      },
+      "properties": {
+        "id": "person_artemion",
+        "name": "Artemion",
+        "role": "Leader of the Jewish revolt on Cyprus",
+        "role_group": "military",
+        "location_117": "Salamis, Cyprus",
+        "one_line": "Cassius Dio named Artemion the leader of Cyprus's Jewish revolt out of Salamis, a rising that killed a reported 240,000 people and left the city in ruins before Roman troops crushed it and barred Jews from the island on pain of death.",
+        "sources": [
+          "https://www.jewishencyclopedia.com/articles/1830-artemion",
+          "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/artemion"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      },
+      "properties": {
+        "id": "person_sixtus_i",
+        "name": "Sixtus I",
+        "role": "Bishop of Rome",
+        "role_group": "religious",
+        "location_117": "Rome",
+        "one_line": "Church tradition counted Sixtus I as Rome's sixth bishop by 117, leading the city's small Christian community about a decade after Ignatius of Antioch had passed through Rome under guard on his way to martyrdom.",
+        "sources": [
+          "https://www.newadvent.org/cathen/12272b.htm",
+          "https://en.wikipedia.org/wiki/Pope_Sixtus_I"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      },
+      "properties": {
+        "id": "person_servianus",
+        "name": "Lucius Julius Ursus Servianus",
+        "role": "Senator; Hadrian's brother-in-law",
+        "role_group": "imperial",
+        "location_117": "Rome",
+        "one_line": "Twice consul and married to Hadrian's elder sister Paulina since before 98, the 72-year-old senator was one of Rome's most senior statesmen when word of Trajan's death reached the city in August 117.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Lucius_Julius_Ursus_Servianus",
+          "https://www.britannica.com/biography/Julius-Ursus-Servianus"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.1667,
+          47.7333
+        ]
+      },
+      "properties": {
+        "id": "person_platorius_nepos",
+        "name": "Aulus Platorius Nepos",
+        "role": "Legate of Legio I Adiutrix",
+        "role_group": "military",
+        "location_117": "Brigetio, Pannonia (modern Szony/Komarom, Hungary)",
+        "one_line": "Hadrian's close friend commanded the First Legion Adiutrix on the Danube at Brigetio through the last stretch of Trajan's Parthian War, a posting that led straight to the governorship of Thrace and, five years later, to building Hadrian's Wall in Britain.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Aulus_Platorius_Nepos",
+          "https://oxfordre.com/classics/view/10.1093/acrefore/9780199381135.001.0001/acrefore-9780199381135-e-5119"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3325,
+          32.9836
+        ]
+      },
+      "properties": {
+        "id": "person_joshua_ben_hananiah",
+        "name": "Joshua ben Hananiah",
+        "role": "Tannaitic sage",
+        "role_group": "religious",
+        "location_117": "Peki'in, Galilee",
+        "one_line": "The roughly 80-year-old rabbi, once a Levite singer in the Jerusalem Temple and a needle-maker by trade, taught from the small Galilean town of Peki'in in 117 while the Diaspora revolt against Trajan burned through Judaea's neighboring provinces.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Joshua_ben_Hananiah",
+          "https://www.chabad.org/library/article_cdo/aid/112308/jewish/Rabbi-Joshua-Ben-Hannanya.htm"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9187,
+          31.2001
+        ]
+      },
+      "properties": {
+        "id": "person_primus_alexandria",
+        "name": "Primus of Alexandria",
+        "role": "Bishop of Alexandria",
+        "role_group": "religious",
+        "location_117": "Alexandria, Egypt",
+        "one_line": "Coptic tradition held that Primus had led Alexandria's Christian community since 106, making him bishop of the city for eleven years by the time Hadrian's accession was proclaimed there on 25 August 117.",
+        "sources": [
+          "https://orthodoxwiki.org/List_of_Patriarchs_of_Alexandria",
+          "https://en.wikipedia.org/wiki/Pope_Primus_of_Alexandria"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.1253,
+          37.9242
+        ]
+      },
+      "properties": {
+        "id": "person_papias_hierapolis",
+        "name": "Papias of Hierapolis",
+        "role": "Bishop and writer",
+        "role_group": "religious",
+        "location_117": "Hierapolis, Phrygia (modern Pamukkale, Turkey)",
+        "one_line": "The bishop of Hierapolis spent these years gathering eyewitness testimony about Jesus from aging followers of the apostles, compiling it into a five-book work scholars date to the 110s that now survives only in fragments quoted by later writers.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Papias_of_Hierapolis",
+          "https://www.britannica.com/biography/Papias"
+        ]
+      }
     }
   ]
 }

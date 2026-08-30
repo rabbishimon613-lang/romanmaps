@@ -196,6 +196,125 @@
         "one_line": "A massive earthquake leveled much of Antioch while Trajan was wintering there for the Parthian campaign, killing the consul Marcus Pedo Vergilianus and nearly the emperor himself.",
         "sources": ["Cass. Dio 68.24-25", "https://en.wikipedia.org/wiki/115_Antioch_earthquake"]
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.2847,
+          36.2611
+        ]
+      },
+      "properties": {
+        "id": "event_trajan_death_selinus",
+        "name": "Trajan dies at Selinus",
+        "date_iso": "117-08-08",
+        "one_line": "The 63-year-old emperor died at Selinus in western Cilicia on 8 August 117, worn out and gravely ill weeks after abandoning his failed siege of Hatra; the town was afterward renamed Trajanopolis in his memory.",
+        "sources": [
+          "https://followinghadrian.com/2017/08/08/8th-august-117-ad-trajan-dies-at-selinus-hadrian1900/",
+          "https://en.wikipedia.org/wiki/Selinus_(Cilicia)"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.1763,
+          36.2021
+        ]
+      },
+      "properties": {
+        "id": "event_trajan_adoption_letter",
+        "name": "Trajan's adoption letter reaches Hadrian",
+        "date_iso": "117-08-09",
+        "one_line": "A letter announcing that the dying Trajan had formally adopted Hadrian as son and heir reached Antioch on 9 August 117, two days before the army acclaimed him emperor — a document ancient historians already suspected Trajan's widow Plotina, not Trajan himself, had signed.",
+        "sources": [
+          "https://followinghadrian.com/2017/08/09/9th-august-117-ad-trajans-letter-of-adoption-reaches-hadrian-hadrian1900/",
+          "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/1*.html"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.7183,
+          35.5808
+        ]
+      },
+      "properties": {
+        "id": "event_siege_of_hatra_abandoned",
+        "name": "Trajan abandons the siege of Hatra",
+        "date_iso": "117-04-01",
+        "one_line": "Roman legions besieged the desert fortress of Hatra in spring 117 but withdrew after failing to breach its walls, worn down by heat, thirst and disease in a campaign that left the emperor fatally ill for the journey home.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Trajan",
+          "https://www.iranicaonline.org/articles/hatra/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9187,
+          31.2001
+        ]
+      },
+      "properties": {
+        "id": "event_hadrian_accession_alexandria",
+        "name": "Hadrian's accession announced in Alexandria",
+        "date_iso": "117-08-25",
+        "one_line": "Prefect Rammius Martialis's circular letter reached Alexandria's officials on 25 August 117, ordering ten days of garlanded festivals across every Egyptian nome to mark Hadrian's accession — a document that survives as the papyrus P.Oxy. 3781.",
+        "sources": [
+          "https://aquila.zaw.uni-heidelberg.de/hgv/22505",
+          "https://followinghadrian.com/2017/08/25/25th-august-117-ad-the-announcement-of-hadrians-accession-in-alexandria-hadrian1900/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4839,
+          41.8925
+        ]
+      },
+      "properties": {
+        "id": "event_senate_deifies_trajan",
+        "name": "Senate votes to deify Trajan",
+        "date_iso": "117-09-01",
+        "one_line": "Rome's Senate answered Hadrian's accession letter with a unanimous vote deifying Trajan and granting honors beyond what Hadrian had even requested, a reply that reached him in Antioch by late September 117.",
+        "sources": [
+          "https://followinghadrian.com/2017/09/24/late-september-117-ad-hadrian-receives-the-senates-response-to-his-letter-hadrian1900/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0815,
+          53.9591
+        ]
+      },
+      "properties": {
+        "id": "event_british_unrest_117",
+        "name": "Unrest breaks out on the British frontier",
+        "date_iso": "117-01-01",
+        "one_line": "The Historia Augusta recorded that 'the Britons could not be kept under Roman control' at the very start of Hadrian's reign in 117 (exact month unrecorded) — the earliest sign of the frontier crisis that led, five years later, to the building of Hadrian's Wall.",
+        "sources": [
+          "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Historia_Augusta/Hadrian/1*.html",
+          "https://the-past.com/feature/backs-against-the-wall-117-113/"
+        ]
+      }
     }
   ]
 }
