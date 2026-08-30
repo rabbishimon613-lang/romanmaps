@@ -41,7 +41,8 @@ export type LayerGroupId =
   | "fauna-sourcing"
   | "clothing"
   | "gender-sexuality"
-  | "satellite";
+  | "satellite"
+  | "terrain";
 
 /** `base: true` marks the five groups that make up the map you see on first load — the
  * equivalent of Google's default basemap. Everything else is a thematic overlay and starts
@@ -59,6 +60,10 @@ export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: strin
   // basemap swap, not a GeoJSON overlay, but it follows the same lazy-load/off-by-default
   // pattern as every other thematic group here.
   { id: "satellite", label: "Satellite (today)", mapLayerIds: ["satellite-raster"] },
+  // [02-P0-1] terrain. A basemap texture like satellite above, not a thematic data overlay — see
+  // Map.tsx's registerThematic("terrain", ...) for why it's excluded from THEMATIC_LAYER_ORDER and,
+  // below, from every ROOMS bundle.
+  { id: "terrain", label: "Terrain shading", mapLayerIds: ["hillshade"] },
   { id: "road-stations", label: "Road stations", mapLayerIds: ["road-stations"] },
   // People/event markers are HTML overlays (app/PeopleMarkers.tsx), not native map layers — that
   // component reads this same group's boolean directly via useLayers() to decide whether to
@@ -100,8 +105,9 @@ export const LAYER_GROUPS: { id: LayerGroupId; label: string; mapLayerIds: strin
  * clean partition, every thematic group in exactly one room, so a first-time visitor picks "one
  * of six things to look at" instead of scanning a 30-row checkbox list. Additive to the existing
  * per-group checkboxes below, not a replacement — a room is a fast on-ramp, the flat list is
- * still there for anyone who wants to hand-pick two unrelated layers. `satellite` is a basemap
- * swap, not a theme, so it's deliberately outside every room and unaffected by them. */
+ * still there for anyone who wants to hand-pick two unrelated layers. `satellite` and `terrain`
+ * are basemap textures, not themes, so both are deliberately outside every room and unaffected
+ * by them. */
 export type RoomId = "power" | "movement" | "money" | "belief" | "knowledge" | "danger";
 
 export const ROOMS: { id: RoomId; label: string; description: string; groups: LayerGroupId[] }[] = [

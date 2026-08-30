@@ -15,6 +15,10 @@ const SOURCES: { label: string; href: string }[] = [
 // an imagery provider whose tiles aren't on the map would be misleading the other 99% of the time.
 const SATELLITE_SOURCE = { label: "Esri World Imagery", href: "https://www.esri.com/" };
 
+// [02-P0-1] Same on-only-when-loaded rule for the hillshade layer's Mapzen-assembled elevation
+// tiles (CC-BY — attribution required whenever the data is actually on the map).
+const TERRAIN_SOURCE = { label: "Mapzen Terrain Tiles", href: "https://github.com/tilezen/joerd/blob/master/docs/attribution.md" };
+
 /** Bottom-of-map data-credit row. On desktop it's a thin strip inset past the LeftRail. On a
  * phone the full credit line was a solid white band across the bottom of the screen — wider and
  * louder than anything Google shows — so it collapses to a small "Data ©" chip in the corner
@@ -24,7 +28,11 @@ export default function MapAttribution() {
   const [expanded, setExpanded] = useState(false);
   const layers = useLayers();
 
-  const sources = layers.satellite ? [...SOURCES, SATELLITE_SOURCE] : SOURCES;
+  const sources = [
+    ...SOURCES,
+    ...(layers.satellite ? [SATELLITE_SOURCE] : []),
+    ...(layers.terrain ? [TERRAIN_SOURCE] : []),
+  ];
   const links = sources.map((s, i) => (
     <span key={s.href}>
       {i > 0 ? " · " : null}

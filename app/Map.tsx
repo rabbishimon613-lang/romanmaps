@@ -129,6 +129,8 @@ type Palette = {
   coastline: string;
   provinceHighlight: string;
   winterSea: string;
+  hillshadeShadow: string;
+  hillshadeHighlight: string;
 };
 const LIGHT: Palette = {
   sea: "#a9d1e3",
@@ -147,6 +149,8 @@ const LIGHT: Palette = {
   coastline: "#6b9cb5",
   provinceHighlight: "#b0431a",
   winterSea: "#7c848c",
+  hillshadeShadow: "rgba(92,66,34,0.35)",
+  hillshadeHighlight: "rgba(255,248,228,0.45)",
 };
 const DARK: Palette = {
   sea: "#0f2233",
@@ -165,6 +169,8 @@ const DARK: Palette = {
   coastline: "#4a7a95",
   provinceHighlight: "#e0692f",
   winterSea: "#4a4d50",
+  hillshadeShadow: "rgba(0,0,0,0.55)",
+  hillshadeHighlight: "rgba(140,150,158,0.25)",
 };
 
 // Shoelace-formula ring area in raw lng/lat degrees squared — not a real physical area (no
@@ -1205,6 +1211,54 @@ export default function Map() {
             map.addLayer(
               { id: "satellite-raster", type: "raster", source: "satellite", paint: { "raster-opacity": 1 } },
               map.getLayer("roads-secondary") ? "roads-secondary" : undefined,
+            );
+            kick();
+          }
+        });
+
+        // [02-P0-1] terrain — subtle hillshade relief under the parchment land fill. Public-domain
+        // Terrarium-encoded elevation tiles (SRTM/3DEP/GMTED2010, AWS Open Data "elevation-tiles-
+        // prod" bucket, no API key) feed a native MapLibre raster-dem source — every earlier shift
+        // that looked at this ticket assumed the blocker was "no network-fetched hillshade tiles
+        // reachable from this sandbox" (true for demotiles.maplibre.org, overpass-api.de and
+        // commons.wikimedia.org) without actually trying this specific host; s3.amazonaws.com is
+        // reachable here, confirmed by a live tile fetch before writing this. No new npm dependency
+        // either — `hillshade`/`raster-dem` are core MapLibre GL layer/source types, already present
+        // in the 4.5.0 the project pins. Like satellite-raster, this is a basemap texture, not a
+        // GeoJSON overlay: added once, positioned once (directly above the opaque "land" fill and
+        // below every province/road/label layer, via `provinces-fill` as the `before` anchor, which
+        // is always present from the initial style load) and never touched by
+        // `restackThematicLayers`/`THEMATIC_LAYER_ORDER`. `hillshade-exaggeration` stays low and the
+        // shadow/highlight colors stay translucent so the parchment land color still reads through —
+        // "subtle relief," not a shaded-relief basemap swap. `hillshadeShadow`/`hillshadeHighlight`
+        // are real Palette entries (see LIGHT/DARK above) so a live light/dark toggle re-tints them
+        // automatically through the existing generic `swapPaletteColors` scan, same as every other
+        // literal paint color on the map.
+        registerThematic("terrain", async () => {
+          if (!cancelled && map && !map.getSource("terrain-dem")) {
+            map.addSource("terrain-dem", {
+              type: "raster-dem",
+              tiles: ["https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"],
+              tileSize: 256,
+              encoding: "terrarium",
+              maxzoom: 14,
+              attribution: "Terrain: Mapzen Terrain Tiles (SRTM, 3DEP, GMTED2010) via AWS Open Data",
+            });
+            const dark = getResolvedDark();
+            map.addLayer(
+              {
+                id: "hillshade",
+                type: "hillshade",
+                source: "terrain-dem",
+                paint: {
+                  "hillshade-shadow-color": (dark ? DARK : LIGHT).hillshadeShadow,
+                  "hillshade-highlight-color": (dark ? DARK : LIGHT).hillshadeHighlight,
+                  "hillshade-accent-color": (dark ? DARK : LIGHT).hillshadeShadow,
+                  "hillshade-exaggeration": 0.35,
+                  "hillshade-illumination-direction": 335,
+                },
+              },
+              map.getLayer("provinces-fill") ? "provinces-fill" : undefined,
             );
             kick();
           }
