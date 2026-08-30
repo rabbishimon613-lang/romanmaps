@@ -452,6 +452,306 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Roman_Forum_Rome_italy.jpg?width=800",
         "image_credit": "The Roman Forum, Rome, where foreign hostage princes lived under the emperor's watch · Wikimedia Commons"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.6606,
+          15.2636
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_aksum_adulis_zoscales",
+        "name": "Adulis",
+        "direction": "outbound",
+        "polity": "Aksum",
+        "one_line": "Roman merchants sailed to the Red Sea port of Adulis to trade with King Zoscales of Aksum, exchanging glassware, wine, and fine textiles for ivory, incense, and gold. The Periplus of the Erythraean Sea, written around 40 to 70 CE, named Zoscales the sole ruler over that stretch of coast and described him as stingy in trade but versed in Greek letters. Excavations at Adulis later uncovered Roman amphorae and glass vessels among the port's ruins, confirming steady contact with Roman markets. Ivory that once flowed north to Meroe was rerouted through Adulis instead, giving Aksum control over a key artery of Rome's African trade.",
+        "province": "Aksum (outside the Roman Empire)",
+        "modern_location": "Zula, Eritrea",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Zoskales",
+          "https://en.wikipedia.org/wiki/Adulis"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.4086,
+          14.2114
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_himyar_charibael_embassies",
+        "name": "Zafar (Saphar)",
+        "direction": "inbound",
+        "polity": "Himyar and Saba",
+        "one_line": "Himyarite king Charibael ruled the Homerite and Sabaean peoples from his capital at Saphar and kept peace with Rome through continual embassies and gifts sent to the emperors. The Periplus of the Erythraean Sea, compiled around 40 to 70 CE, named him a personal friend of the emperors and praised his goodwill toward Greek traders passing through his territory. His control over the incense-rich South Arabian coast let Roman merchants sail on toward India by way of ports like Muza under his protection. That protected route carried frankincense and myrrh north into the Roman economy for generations.",
+        "province": "Himyar (outside the Roman Empire)",
+        "modern_location": "Zafar, Yemen",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Charibael",
+          "https://en.wikipedia.org/wiki/Periplus_of_the_Erythraean_Sea"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.255,
+          34.9403
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_begram_hoard_kushan",
+        "name": "Begram",
+        "direction": "outbound",
+        "polity": "Kushan Empire",
+        "one_line": "Kushan rulers stored Roman bronze statuettes and glassware from Roman Egypt inside two sealed treasure rooms at their summer capital of Begram. French archaeologists opened the vaults in 1937 and found the remains of about 180 pieces of Roman glass packed alongside Chinese lacquer bowls and Indian ivory carvings. The mixed hoard showed Kushan territory sitting astride Silk Road traffic that linked Rome, India, and Han China all at once. The vaults were sealed during the 1st or 2nd century CE, preserving the clearest single snapshot of goods moving between Rome and the Kushan realm.",
+        "province": "Kushan Empire (outside the Roman Empire)",
+        "modern_location": "Bagram, Parwan Province, Afghanistan",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Treasure_of_Begram",
+          "https://en.wikipedia.org/wiki/Begram_ivories"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.7264,
+          16.9333
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_meroe_peace_treaty",
+        "name": "Meroe",
+        "direction": "treaty",
+        "polity": "Kingdom of Kush",
+        "one_line": "Kushite queen Amanirenas fought Rome to a standstill after her armies sacked Roman towns in Upper Egypt and tore down statues of Augustus at Syene around 25 BCE. Envoys from Meroe met Augustus on the island of Samos in 21 BCE and struck a peace treaty that fixed the frontier and freed Kush from tribute for the next three centuries. Kushite soldiers had carried one captured bronze head of Augustus home in triumph and buried the 46-centimeter head beneath the steps of Meroe's temple of Amun, so worshippers trod on the emperor's face for generations. Archaeologists excavated the buried head in 1910, and it is now displayed in the British Museum.",
+        "province": "Kingdom of Kush (outside the Roman Empire)",
+        "modern_location": "Meroe, Sudan",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Amanirenas",
+          "https://en.wikipedia.org/wiki/Mero%C3%AB_Head"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.6667,
+          41.8167
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_iberia_harmozica_treaty",
+        "name": "Armazi (Harmozica)",
+        "direction": "treaty",
+        "polity": "Iberia (Caucasus)",
+        "one_line": "Roman emperor Vespasian paid to rebuild the fortress walls of Harmozica for King Mithridates I of Iberia in 75 CE, shoring up a Caucasus ally against raids by the Alans. A bilingual Aramaic and Greek inscription set up at the site called Mithridates 'friend of the Caesars' and king of the Rome-loving Iberians. The alliance gave Rome a foothold on the far side of the Caucasus without stationing a single legion there. Iberia remained a steady Roman client along that frontier for decades afterward, continuing into Hadrian's reign.",
+        "province": "Iberia (Caucasus) (outside the Roman Empire)",
+        "modern_location": "Mtskheta, Georgia",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.judaism-and-rome.org/flavian-emperors-and-walls-iberia-caucasus",
+          "https://en.wikipedia.org/wiki/Mihrdat_I_of_Iberia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.5833,
+          33.0833
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_parthamaspates_ctesiphon_coronation",
+        "name": "Ctesiphon",
+        "direction": "treaty",
+        "polity": "Parthia",
+        "one_line": "Trajan crowned the Parthian noble Parthamaspates as Rome's client king of Parthia outside Ctesiphon in 116 CE, choosing a puppet ruler over outright annexation of the Parthian heartland. Cassius Dio described Parthamaspates performing proskynesis before Trajan as Roman troops looked on, a scene later stamped onto a Roman sestertius reading REX PARTHIS DATUS. It was the only time in Roman history an emperor personally installed a king over the whole Parthian empire. The arrangement collapsed within a year, once the rival claimant Osroes reclaimed the throne after Rome's legions withdrew.",
+        "province": "Parthia (outside the Roman Empire)",
+        "modern_location": "Salman Pak, Iraq",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Parthamaspates_of_Parthia",
+          "https://www.livius.org/articles/person/parthamaspates/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4853,
+          41.8925
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_italicus_cherusci_hostage",
+        "name": "Rome",
+        "direction": "hostage",
+        "polity": "Cherusci (Germania)",
+        "one_line": "Italicus, nephew of the German war leader Arminius, grew up in Rome as a ward of the imperial household, trained in horsemanship by both German and Roman methods. In 47 CE the Cherusci sent envoys asking Claudius to release him as their new king after years of civil war had wiped out their native nobility. Tacitus recorded that Italicus arrived among his father's people looking and speaking like a Roman, and was welcomed at first as a symbol of restored order. His reign proved short-lived once rival nobles turned against a king they judged too Roman to lead them.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Italicus_(chieftain)",
+          "https://www.loebclassics.com/view/tacitus-annals/1931/pb_LCL312.273.xml"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.5764,
+          39.885
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_zeno_artaxias_armenia_coronation",
+        "name": "Artaxata",
+        "direction": "treaty",
+        "polity": "Armenia",
+        "one_line": "Germanicus crowned the Pontic prince Zeno as king of Armenia at Artaxata in 18 CE, with the assembled Armenian nobility and crowds looking on as he took the throne name Artaxias III. Zeno had grown up admiring Armenian customs and language, which Tacitus wrote won him greater favor than any purely Roman candidate could have earned. Rome and Parthia had fought for years over who controlled the Armenian throne, and this joint coronation briefly settled the question without a battle. Artaxias III ruled for sixteen years until his death in 34 CE, after which the throne again became a flashpoint between Rome and Parthia.",
+        "province": "Armenia",
+        "modern_location": "Artashat, Armenia",
+        "extant_117ce": false,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Artaxias_III",
+          "https://www.livius.org/articles/person/artaxias-iii-of-armenia/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.075,
+          10.96
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_karur_roman_trade",
+        "name": "Karur",
+        "direction": "outbound",
+        "polity": "India (Chera Kingdom)",
+        "one_line": "Karur served as the inland capital of the Tamil Chera kings, where Roman gold and silver coins arrived by the hundreds along caravan routes from the western coast. Museum excavations there in 1973, 1977, and 1993 recovered Roman coin hoards alongside Arretine tableware and amphora sherds bearing Roman potters' stamps. Roman traders exchanged wine and Mediterranean glassware for pepper, gemstones, and pearls funneled through Chera territory. The finds mark Karur as a major inland node in the same Indo-Roman trade network that ran through the coastal port of Muziris.",
+        "province": "India (outside the Roman Empire)",
+        "modern_location": "Karur, Tamil Nadu, India",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/History_of_Karur",
+          "https://ar.unesco.org/silkroad/sites/default/files/knowledge-bank-article/roman_contacts_with_tamilnadu.pdf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1997,
+          44.4184
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_maroboduus_ravenna_exile",
+        "name": "Ravenna",
+        "direction": "hostage",
+        "polity": "Marcomanni (Germania)",
+        "one_line": "Maroboduus built the first great confederation of Germanic tribes as king of the Marcomanni, ruling from a fortified base in Bohemia for nearly two decades. Rival nobles drove him out in 18 CE, and when he appealed to Emperor Tiberius for aid, Rome answered by granting him refuge rather than an army. He settled at Ravenna as a guest under Roman oversight, still addressed as king but stripped of any kingdom to rule. Maroboduus spent his final eighteen years there and died in 37 CE, never returning to Germania.",
+        "province": "Italia",
+        "modern_location": "Ravenna, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Maroboduus",
+          "https://www.britannica.com/biography/Maroboduus"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.3542,
+          12.5864
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_socotra_hoq_cave",
+        "name": "Hoq Cave",
+        "direction": "outbound",
+        "polity": "Socotra (Dioscorida)",
+        "one_line": "Greek and Palmyrene sailors carved their names into the walls of Hoq Cave on the remote island the Periplus of the Erythraean Sea called Dioscorida, alongside travelers writing in Indian, South Arabian, and Aksumite scripts. Close to 250 inscriptions and drawings survive there, left by merchants who stopped at the island while sailing the monsoon route between Roman Egypt, South Arabia, and India. The Periplus described the island's inhabitants as subjects of the incense-land king across the strait, who leased its harbor out to foreign traders. Socotra's position astride the entrance to the Gulf of Aden made it a routine waypoint for Roman-era shipping bound for the Indian Ocean.",
+        "province": "Socotra (outside the Roman Empire)",
+        "modern_location": "Hoq Cave, Socotra, Yemen",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Hoq_Cave",
+          "https://en.wikipedia.org/wiki/Periplus_of_the_Erythraean_Sea"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4763,
+          41.906
+        ]
+      },
+      "properties": {
+        "id": "diplomacy_diegis_dacia_rome",
+        "name": "Rome",
+        "direction": "treaty",
+        "polity": "Dacia",
+        "one_line": "Dacian king Decebalus sent his brother Diegis to Rome in 89 CE to seal a peace treaty ending years of war along the Danube frontier. Emperor Domitian placed a diadem on Diegis's head in a public ceremony, a symbolic act asserting that Rome alone held the right to grant Dacia's kingship. In return Domitian promised Decebalus an annual subsidy of eight million sesterces and sent Roman engineers to help fortify his kingdom. The uneasy peace held until Trajan invaded Dacia in 101 CE and annexed it outright by 106.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Diegis",
+          "https://en.wikipedia.org/wiki/Domitian%27s_Dacian_War"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
