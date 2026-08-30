@@ -748,6 +748,712 @@
         "image_credit": "The Arsinoeion, Sanctuary of the Great Gods, Samothrace · Wikimedia Commons",
         "image_alt": "Remains of the Arsinoeion rotunda at the Samothrace sanctuary"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.5272,
+          37.8528
+        ]
+      },
+      "properties": {
+        "id": "religion_christian_magnesia",
+        "name": "Magnesia on the Maeander",
+        "tradition": "christian",
+        "attestation": "attested_117",
+        "one_line": "Ignatius of Antioch wrote to this congregation around 107 CE while being marched to Rome under armed guard, urging its members to submit to their young bishop Damas despite his age. He praised Magnesia's Christians for sending a delegation to meet him at Smyrna, a gesture that moved him to write back at length. The city sat twelve miles from Ephesus along the Maeander valley trade route, keeping it in close contact with the region's other churches. Ignatius warned the community against slipping back into Jewish practice, a sign the two faiths still overlapped here in daily life.",
+        "province": "Asia",
+        "modern_location": "Tekin, Aydin Province, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Epistle_to_the_Magnesians",
+          "https://en.wikipedia.org/wiki/Magnesia_on_the_Maeander"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Zeus%20Sosipolis%20from%20Magnesia%20on%20the%20Maeander%2C%20reconstruction%20of%20the%20western%20front%20with%20original%20fragments%2C%20early%202nd%20century%20BC%2C%20Pergamon%20Museum%20Berlin%20(8405272954).jpg?width=800",
+        "image_credit": "Reconstructed temple facade from Magnesia on the Maeander, Pergamon Museum, Berlin · Wikimedia Commons",
+        "image_alt": "Reconstructed temple facade fragments from ancient Magnesia on the Maeander"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.8453,
+          37.8481
+        ]
+      },
+      "properties": {
+        "id": "religion_christian_tralles",
+        "name": "Tralles",
+        "tradition": "christian",
+        "attestation": "attested_117",
+        "one_line": "Ignatius of Antioch addressed a letter to Tralles around 107 CE, thanking its bishop Polybius for traveling to Smyrna to visit him in chains. He urged the community to stay under its bishop's authority and warned against docetist teachers who denied Christ had suffered in the flesh. Tralles sat inland from Ephesus on the Roman road through the Maeander valley, a Hellenistic city with its own gymnasium and public baths. Ignatius signed off certain he would die in Rome, asking the Trallians to pray for the church in Syria he left behind.",
+        "province": "Asia",
+        "modern_location": "Aydin, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Epistle_to_the_Trallians",
+          "https://en.wikipedia.org/wiki/Tralles"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.5169,
+          38.3535
+        ]
+      },
+      "properties": {
+        "id": "religion_christian_philadelphia",
+        "name": "Alasehir",
+        "tradition": "christian",
+        "attestation": "attested_117",
+        "one_line": "The Book of Revelation praised Philadelphia's Christians around 95 CE as the only one of the seven churches to receive no criticism, promising them an open door no one could shut. Ignatius of Antioch passed through the city around 107 CE and later wrote back warning against a faction that had tried to divide the congregation during his visit. Founded in the second century BCE and prone to earthquakes, Philadelphia's Christians met in a city Roman writers already described as constantly rebuilding after tremors. Its name and its church both survived antiquity, giving Philadelphia a continuous Christian presence longer than almost any other city on this list.",
+        "province": "Asia",
+        "modern_location": "Alasehir, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Epistle_of_Ignatius_to_the_Philadelphians",
+          "https://en.wikipedia.org/wiki/Ala%C5%9Fehir"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Biblical%20Philadelphia%2C%20Ala%C5%9Fehir%2C%20Turkey%20(%E2%80%9CSeven%20Churches%20of%20Revelation%E2%80%9D)%20(51966166907).jpg?width=800",
+        "image_credit": "Site of biblical Philadelphia, Alasehir, Turkey · Wikimedia Commons",
+        "image_alt": "Modern view of Alasehir, ancient Philadelphia, one of the seven churches of Revelation"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1844,
+          39.1325
+        ]
+      },
+      "properties": {
+        "id": "religion_christian_pergamon",
+        "name": "Pergamon",
+        "tradition": "christian",
+        "attestation": "attested_117",
+        "one_line": "Revelation's letter to Pergamon around 95 CE called the city the place \"where Satan's throne is,\" likely a reference to its towering altar of Zeus or its role as a seat of the imperial cult. The text names a martyr, Antipas, killed there before this date, one of the earliest individual Christians recorded outside the apostolic circle. Pergamon served as the seat of Rome's provincial governor in Asia and hosted one of the ancient world's largest libraries, rivaling Alexandria's own. Its small Christian minority worshipped in the shadow of the Asclepion, a healing sanctuary that drew pilgrims from across the Mediterranean.",
+        "province": "Asia",
+        "modern_location": "Bergama, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Church_of_Pergamum",
+          "https://en.wikipedia.org/wiki/Pergamon"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Acropolis%20-%20Bergama%20(Pergamon)%20-%20Turkey%20-%2010%20(5747249729).jpg?width=800",
+        "image_credit": "Acropolis of ancient Pergamon, Bergama, Turkey · Wikimedia Commons",
+        "image_alt": "Ruins on the acropolis of ancient Pergamon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.8461,
+          38.9192
+        ]
+      },
+      "properties": {
+        "id": "religion_christian_thyatira",
+        "name": "Thyatira",
+        "tradition": "christian",
+        "attestation": "attested_117",
+        "one_line": "Revelation singled out Thyatira's church around 95 CE for tolerating a female prophet the text calls \"Jezebel,\" who taught believers they could eat food sacrificed to idols. The city ran on its trade guilds, especially its purple-dye workers, the same trade that later gave the New Testament merchant Lydia her livelihood in Philippi. Thyatira sat on the road linking Pergamon to Sardis, a modest garrison town refounded by the Seleucids around 281 BCE. Its small Christian community left no other surviving written record from the century after Revelation was composed.",
+        "province": "Asia",
+        "modern_location": "Akhisar, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Thyatira",
+          "https://en.wikipedia.org/wiki/Book_of_Revelation"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.0403,
+          38.488
+        ]
+      },
+      "properties": {
+        "id": "religion_christian_sardis",
+        "name": "Sardis",
+        "tradition": "christian",
+        "attestation": "attested_117",
+        "one_line": "Revelation's letter to Sardis around 95 CE accused its Christians of being spiritually dead behind a living reputation, urging the few who had \"not soiled their garments\" to stay watchful. The city had been sacked by surprise attack twice in its history, a memory the text invokes when it warns believers Christ would come \"like a thief\" if they failed to wake up. Sardis's ancient wealth, built on gold panned from the Pactolus River under the Lydian kings, had faded by Roman times into a comfortable provincial capital. Its small Christian congregation shared the city with one of the largest and best-documented Jewish communities in the entire diaspora.",
+        "province": "Asia",
+        "modern_location": "Sart, Manisa Province, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Church_of_Sardis",
+          "https://en.wikipedia.org/wiki/Sardis"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Artemistempel%20Sardes.jpg?width=800",
+        "image_credit": "Temple of Artemis at Sardis · Wikimedia Commons",
+        "image_alt": "Ruins of the Temple of Artemis at ancient Sardis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.1097,
+          37.8351
+        ]
+      },
+      "properties": {
+        "id": "religion_christian_laodicea",
+        "name": "Laodicea",
+        "tradition": "christian",
+        "attestation": "attested_117",
+        "one_line": "Revelation delivered its harshest rebuke to Laodicea around 95 CE, condemning its church as \"lukewarm\" and boasting of riches while spiritually poor and blind. Paul's letter to the Colossians, written a generation earlier, instructed that the letter be passed on and read aloud in Laodicea too, showing the two congregations already exchanged correspondence. The city rebuilt itself after a devastating earthquake in 60 CE without asking Rome for financial aid, a point of civic pride Revelation's author seems to mock. Laodicea's banking houses and famous black wool trade made it one of Phrygia's wealthiest cities by 117 CE.",
+        "province": "Asia",
+        "modern_location": "Denizli, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Church_of_Laodicea",
+          "https://en.wikipedia.org/wiki/Laodicea_on_the_Lycus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Central%20Bath%20Complex%2C%20Laodicea%20on%20the%20Lycus%2C%20Phrygia%2C%20Turkey%20(32067205746).jpg?width=800",
+        "image_credit": "Central Bath Complex, Laodicea on the Lycus, Turkey · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman bath complex at ancient Laodicea"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.1928,
+          37.7583
+        ]
+      },
+      "properties": {
+        "id": "religion_christian_colossae",
+        "name": "Colossae",
+        "tradition": "christian",
+        "attestation": "attested_117",
+        "one_line": "Paul's letter to the Colossians, written around 60 CE, addressed a small congregation founded not by Paul himself but by his associate Epaphras, a native of the city. The letter argued against local teachings blending angel worship, dietary rules, and ascetic practice that Paul warned were leading the church astray. A major earthquake struck the Lycus Valley around the same decade, and by the time Revelation named the region's churches thirty years later, neighboring Laodicea had eclipsed Colossae as the valley's leading city. Colossae's mound has never been formally excavated, leaving its Christian community's fate after 117 CE largely unrecorded.",
+        "province": "Asia",
+        "modern_location": "Honaz, Denizli Province, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Epistle_to_the_Colossians",
+          "https://en.wikipedia.org/wiki/Colossae"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Colossae'den%20Honaz%20g%C3%B6r%C3%BCn%C3%BCm.jpg?width=800",
+        "image_credit": "View from the mound of ancient Colossae toward Honaz, Turkey · Wikimedia Commons",
+        "image_alt": "View from the unexcavated mound of ancient Colossae"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1586,
+          39.7517
+        ]
+      },
+      "properties": {
+        "id": "religion_christian_troas",
+        "name": "Troas",
+        "tradition": "christian",
+        "attestation": "attested_117",
+        "one_line": "Paul raised a young man named Eutychus from the dead in Troas after he fell from a third-story window during an all-night sermon, an episode Acts places around 57 CE. Ignatius of Antioch reached the city around 107 CE under armed guard and used the stopover to dictate three more letters, to Philadelphia, Smyrna, and Polycarp, before soldiers hurried him onto a ship for Macedonia. Troas's harbor made it the main crossing point between Asia Minor and Macedonia, a route both Paul and Ignatius depended on for their journeys. The city would later host a large gymnasium and bath complex funded by Herodes Atticus, built decades after Ignatius passed through in chains.",
+        "province": "Asia",
+        "modern_location": "Dalyan, Canakkale Province, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Alexandria_Troas",
+          "https://en.wikipedia.org/wiki/Ignatius_of_Antioch"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Herodes%20Atticus%20Bath%20near%20Alexandria%20Troas.jpg?width=800",
+        "image_credit": "Bath complex near ancient Alexandria Troas · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman bath complex at Alexandria Troas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9958,
+          37.9053
+        ]
+      },
+      "properties": {
+        "id": "religion_christian_cenchreae",
+        "name": "Kechries",
+        "tradition": "christian",
+        "attestation": "attested_117",
+        "one_line": "Paul's letter to the Romans, written around 57 CE, commended Phoebe, a deaconess of the church at Cenchreae, entrusting her to carry the letter itself to Rome. Cenchreae served as Corinth's eastern port on the Saronic Gulf, roughly six miles from the city center, linking this small congregation to sea traffic from Ephesus and beyond. Paul himself had his hair cut here under a vow before sailing for Syria, a detail Acts records around 52 CE. The port's mixed population of sailors, merchants, and dockworkers gave this small congregation an unusually cosmopolitan reach for its size.",
+        "province": "Achaia",
+        "modern_location": "Kechries, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Phoebe_(biblical_figure)",
+          "https://en.wikipedia.org/wiki/Cenchreae"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Monumental%20Roman%20Tomb%20at%20Kenchreai%2005.JPG?width=800",
+        "image_credit": "Roman-period tomb at ancient Cenchreae, Corinth's eastern port · Wikimedia Commons",
+        "image_alt": "Roman monumental tomb at the archaeological site of Cenchreae"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.7722,
+          38.6647
+        ]
+      },
+      "properties": {
+        "id": "religion_jewish_acmonia",
+        "name": "Acmonia",
+        "tradition": "jewish",
+        "attestation": "attested_117",
+        "one_line": "Around 100 CE, a wealthy citizen of Acmonia named Julia Severa funded the construction of a synagogue building, an act later commemorated by an inscription the community's elders set up in gratitude. Julia Severa herself served as a high priestess of the imperial cult, showing how thoroughly Jewish and civic life intertwined in this Phrygian town. The inscription names three synagogue officials by title, rare evidence for how a diaspora congregation organized itself outside the empire's major cities. Acmonia's Jewish community endured for generations afterward, leaving behind some of Asia Minor's richest funerary inscriptions.",
+        "province": "Asia",
+        "modern_location": "Ahatkoy, Usak Province, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://philipharland.com/greco-roman-associations/145-honors-by-a-judean-synagogue-for-julia-severa-and-others/",
+          "https://en.wikipedia.org/wiki/Acmonia"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Julia%20Severa%20Synagogue%20Inscription.jpg?width=800",
+        "image_credit": "Julia Severa synagogue inscription, Acmonia · Wikimedia Commons",
+        "image_alt": "Inscription recording Julia Severa's construction of the Acmonia synagogue"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.0667,
+          32.1167
+        ]
+      },
+      "properties": {
+        "id": "religion_jewish_berenice",
+        "name": "Benghazi",
+        "tradition": "jewish",
+        "attestation": "attested_117",
+        "one_line": "An inscription dated to 13 BCE names nine Jewish archons who governed Berenice's community as a self-organized politeuma, answering to their own elected officials rather than a single ethnarch. A second inscription from 56 CE records the community's thanks to donors who helped fund and repair its synagogue building. Most of the names honored in both texts are Greek rather than Hebrew, pointing to a highly Hellenized congregation active in civic life. Berenice sat roughly 120 miles east of Cyrene, giving Roman Cyrenaica two separately organized Jewish communities within the same province.",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Benghazi, Libya",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Berenice,_Cyrenaica",
+          "https://www.jewishencyclopedia.com/articles/3048-berenice"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.1264,
+          37.9261
+        ]
+      },
+      "properties": {
+        "id": "religion_jewish_hierapolis",
+        "name": "Hierapolis",
+        "tradition": "jewish",
+        "attestation": "probable",
+        "one_line": "Jewish settlers reportedly arrived in Hierapolis under a resettlement policy of the Seleucid king Antiochos III around 200 BCE, planting a community that outlasted his dynasty by centuries. A funerary inscription from the city's necropolis specifies fines to be paid to \"the group of Jews residing in Hierapolis\" if a family tomb went undisturbed, evidence the community held recognized legal standing. Local trade guilds, including the purple-dyers and carpet-weavers, took on obligations to decorate Jewish graves at Passover and Pentecost, a rare glimpse of Jewish and pagan guild life overlapping. Most of the surviving grave inscriptions naming this community date to the second and third centuries, closer to but after this map's 117 CE snapshot.",
+        "province": "Asia",
+        "modern_location": "Pamukkale, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.judaism-and-rome.org/katoikia-jews-inhabiting-hierapolis",
+          "https://en.wikipedia.org/wiki/Hierapolis"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hyerapolis%2C%20necropoli%2001.JPG?width=800",
+        "image_credit": "Necropolis of ancient Hierapolis, Pamukkale, Turkey · Wikimedia Commons",
+        "image_alt": "Tombs in the necropolis of ancient Hierapolis, where Jewish grave inscriptions were found"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.3125,
+          33.4197
+        ]
+      },
+      "properties": {
+        "id": "religion_jewish_nehardea",
+        "name": "Nehardea",
+        "tradition": "jewish",
+        "attestation": "attested_117",
+        "one_line": "Nehardea's Jewish settlers traced their community's founding to exiles deported from Jerusalem under King Jehoiachin in the sixth century BCE, who reportedly built its synagogue from stones carried out of the fallen Temple itself. Two brothers from the city, Anilai and Asinai, carved out a semi-autonomous Jewish state on the Euphrates in the 20s CE under Parthian sovereignty, an episode the historian Josephus recorded in detail. Around 117 CE, the rabbi Akiva traveled to Nehardea to set the Jewish calendar, confirming the city's standing as a recognized center of religious authority. Nehardea sat outside the Roman Empire's eastern frontier, inside Parthian territory, making it a neighbor of Trajan's empire rather than a subject of it.",
+        "province": "Parthia (outside the Roman Empire)",
+        "modern_location": "near Fallujah, Iraq",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.jewishencyclopedia.com/articles/11421-nehardea-nearda",
+          "https://en.wikipedia.org/wiki/Nehardea"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1892,
+          38.3061
+        ]
+      },
+      "properties": {
+        "id": "religion_jewish_pisidian_antioch",
+        "name": "Pisidian Antioch",
+        "tradition": "jewish",
+        "attestation": "attested_117",
+        "one_line": "Acts places Paul and Barnabas preaching in Pisidian Antioch's synagogue around 47 CE, where Paul's sermon on Jesus as the promised Messiah split the audience between eager converts and furious opponents. Local synagogue leaders, unable to silence Paul themselves, enlisted the city's leading women and officials to have him expelled from the region entirely. The city served as the Roman colonia and administrative capital of the Pisidian district, home to a large resident Jewish population by the time Paul arrived. Its synagogue predated Rome's colonial refoundation of the city under Augustus, giving the community deep local roots by 117 CE.",
+        "province": "Galatia",
+        "modern_location": "Yalvac, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Antioch_of_Pisidia",
+          "https://en.wikipedia.org/wiki/Acts_of_the_Apostles"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Antioch%20in%20Pisidia%20Augustus%20Temple%20Panorama.jpg?width=800",
+        "image_credit": "Ruins of ancient Pisidian Antioch, Yalvac, Turkey · Wikimedia Commons",
+        "image_alt": "Panoramic view of the ruins of Pisidian Antioch"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9019,
+          35.1852
+        ]
+      },
+      "properties": {
+        "id": "religion_jewish_salamis_cyprus",
+        "name": "Salamis",
+        "tradition": "jewish",
+        "attestation": "attested_117",
+        "one_line": "Acts records Paul, Barnabas, and the Cypriot-born John Mark preaching in \"the synagogues of the Jews\" at Salamis around 45 CE, using the plural to describe a community large enough to fill more than one building. Cyprus held one of the diaspora's most substantial Jewish populations by the early second century, concentrated heavily around this port city on the island's east coast. In 116 CE Cypriot Jews rose up under a leader named Artemion during the empire-wide Kitos War, and ancient accounts claim tens of thousands died in the fighting that followed. Rome's suppression by 117 CE was so severe that Jews were reportedly barred from setting foot on Cyprus afterward, ending organized Jewish life on the island for generations.",
+        "province": "Cyprus",
+        "modern_location": "near Famagusta, Cyprus",
+        "extant_117ce": false,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kitos_War",
+          "https://en.wikipedia.org/wiki/Salamis,_Cyprus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Salamis%20Ruins%2C%20Cyprus.jpg?width=800",
+        "image_credit": "Ruins of ancient Salamis, Cyprus · Wikimedia Commons",
+        "image_alt": "Archaeological ruins at ancient Salamis, Cyprus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9958,
+          37.9053
+        ]
+      },
+      "properties": {
+        "id": "religion_isis_cenchreae",
+        "name": "Kechries",
+        "tradition": "isis",
+        "attestation": "probable",
+        "one_line": "Excavators in the 1960s uncovered a temple on the southwest edge of Cenchreae's ancient harbor that many identify as the very sanctuary the novelist Apuleius described his hero Lucius entering as a new initiate of Isis. In Apuleius's account, set in this port, the goddess appeared to the transformed Lucius rising from the sea and instructed him how to become human again during her spring festival, the Navigium Isidis. Cenchreae served as Corinth's gateway to the eastern Mediterranean, a natural landing point for cults arriving from Egypt and the Levant. Isis worship at this harbor likely predates Apuleius's account by generations, riding the same trade routes that carried grain ships from Alexandria.",
+        "province": "Achaia",
+        "modern_location": "Kechries, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Metamorphoses_(Apuleius)",
+          "https://en.wikipedia.org/wiki/Cenchreae"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Isis%20at%20the%20southwest%20side%20of%20the%20ancient%20harbour%20at%20Kenchreai%2C%20one%20of%20the%20two%20ports%20of%20the%20inland%20city-state%20of%20Corinth%2C%20Greece%20(14082672584).jpg?width=800",
+        "image_credit": "Temple of Isis at the ancient harbor of Cenchreae, Greece · Wikimedia Commons",
+        "image_alt": "Remains of the Temple of Isis at the harbor of ancient Cenchreae"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2892,
+          41.7546
+        ]
+      },
+      "properties": {
+        "id": "religion_isis_ostia",
+        "name": "Ostia",
+        "tradition": "isis",
+        "attestation": "probable",
+        "one_line": "Inscriptions found across Ostia record dedications tied to Isis, worshipped alongside Serapis and the Magna Mater, evidence of an organized Egyptian cult community in Rome's own port city. Despite this rich epigraphic record, the actual Iseum building itself has never been located or excavated, and its exact site along the Tiber remains a matter of scholarly reconstruction. Ostia's excavated Serapeum, a separate temple to the male half of the pair, was formally dedicated on Hadrian's birthday in 127 CE, a decade after this map's snapshot. Sailors and merchants passing through Ostia's harbor kept Egyptian cult practice alive here long before that later building went up.",
+        "province": "Italia",
+        "modern_location": "Ostia Antica, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.ostia-antica.org/dict/topics/egypt/egypt-floriani.htm",
+          "https://en.wikipedia.org/wiki/Ostia_Antica"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.8135,
+          35.1413
+        ]
+      },
+      "properties": {
+        "id": "religion_isis_soloi",
+        "name": "Soli",
+        "tradition": "isis",
+        "attestation": "attested_117",
+        "one_line": "The geographer Strabo, writing around the turn of the era, described a shared sanctuary of Aphrodite and Isis at Soloi, evidence Egyptian cult worship had already merged with the city's older goddess cult by the early Roman period. Excavators later confirmed the site, finding linked precincts naming Isis, Serapis, and the Dioskouroi standing alongside two temples to Aphrodite first raised in the third century BCE. Sculpture recovered from the Aphrodite temple dates to the first century CE, confirming the sanctuary complex stayed in active use under Roman rule. Soloi sat on Cyprus's northwestern coast, one of the island's ten ancient city-kingdoms and a minor hub for cults arriving from Egypt.",
+        "province": "Cyprus",
+        "modern_location": "Gemikonagi, Northern Cyprus",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Soli,_Cyprus"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.8794,
+          37.8994
+        ]
+      },
+      "properties": {
+        "id": "religion_isis_corinth",
+        "name": "Acrocorinth",
+        "tradition": "isis",
+        "attestation": "probable",
+        "one_line": "The traveler Pausanias, touring Corinth in the second century CE, counted two separate precincts of Isis on the slope of Acrocorinth, one dedicated to her as \"Pelagian,\" of the sea, the other to \"Egyptian\" Isis, alongside two shrines to Serapis. His description records sanctuaries that had stood for generations by his visit, planted after Julius Caesar refounded Corinth as a Roman colony in 44 BCE. Corinth's mixed population of Italian colonists, Greek residents, and Levantine traders made the city one of Achaea's most receptive markets for imported cults. The Egyptian sanctuaries shared Acrocorinth's steep summit with an older, larger temple to Aphrodite, the mountain's most famous shrine.",
+        "province": "Achaia",
+        "modern_location": "Ancient Corinth, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.theoi.com/Text/Pausanias2A.html",
+          "https://en.wikipedia.org/wiki/Acrocorinth"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Aphrodite%20at%20Acrocorinth.jpg?width=800",
+        "image_credit": "Summit of Acrocorinth, site of Corinth's Isis and Aphrodite sanctuaries · Wikimedia Commons",
+        "image_alt": "Summit of Acrocorinth above ancient Corinth"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.8878,
+          40.3895
+        ]
+      },
+      "properties": {
+        "id": "religion_cybele_kyzikos",
+        "name": "Kyzikos",
+        "tradition": "cybele",
+        "attestation": "attested_117",
+        "one_line": "Ancient tradition credited Kyzikos's cult of the Mother of the Gods to the mythical Argonauts, who supposedly founded her sanctuary on nearby Mount Dindymon during their voyage for the Golden Fleece. The city celebrated her festival with public ceremony grand enough that ancient writers singled it out among Anatolia's leading Cybele cult centers, alongside Pergamon and Pessinus. Kyzikos sat on the Kapidag Peninsula on the Sea of Marmara, a wealthy port city that minted its own celebrated gold coinage for centuries. Within a generation of 117 CE, the city would also raise the largest Greco-Roman temple ever built, dedicated to the emperor Hadrian, on a site already steeped in Cybele's mythology.",
+        "province": "Asia",
+        "modern_location": "Erdek, Balikesir Province, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cyzicus",
+          "https://www.theoi.com/Cult/KybeleCult.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20remains%20of%20the%20Temple%20of%20Hadrian%2C%20Cyzicus%20(Kyzikos)%2C%20the%20eighth%20wonder%20of%20the%20ancient%20world%2C%20Mysia%2C%20Turkey%20-%2053075776374.jpg?width=800",
+        "image_credit": "Ruins at ancient Kyzikos, including the later Temple of Hadrian · Wikimedia Commons",
+        "image_alt": "Remains of monumental temple ruins at the site of ancient Kyzikos"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.0403,
+          38.488
+        ]
+      },
+      "properties": {
+        "id": "religion_cybele_sardis",
+        "name": "Sardis",
+        "tradition": "cybele",
+        "attestation": "attested_117",
+        "one_line": "The historian Herodotus recorded a native cult of Kybebe, a Lydian mother goddess, already established at Sardis when a fire tore through the city's sanctuaries during the Ionian Revolt around 498 BCE. Lydian inscriptions preserve her name centuries before Greek writers began identifying her with the Anatolian Cybele worshipped across the Roman world. Her sanctuary at Sardis has been linked to the gold-refining industry that made the city's Lydian kings famous, tying the goddess to the wealth of the ancient Pactolus riverbed. By 117 CE, Sardis's identity as one of Cybele's oldest and most authentic cult homes had outlasted the Lydian kingdom that first raised her temple by six centuries.",
+        "province": "Asia",
+        "modern_location": "Sart, Manisa Province, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cybele",
+          "https://sardisexpedition.org/en/essays/latw-greenewalt-gods-of-lydia"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Column%20from%20Temple%20of%20Artemis%20at%20Sardis%20by%20Matthew%20Bisanz.JPG?width=800",
+        "image_credit": "Column from the Temple of Artemis at Sardis · Wikimedia Commons",
+        "image_alt": "Carved column from the sanctuary area of ancient Sardis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7215,
+          37.9755
+        ]
+      },
+      "properties": {
+        "id": "religion_cybele_athens_metroon",
+        "name": "Athens",
+        "tradition": "cybele",
+        "attestation": "attested_117",
+        "one_line": "Athens converted its Old Bouleuterion, the council chamber on the west side of the Agora, into a sanctuary for the Mother of the Gods after a new council house replaced it at the end of the fifth century BCE. According to a founding legend the city told about itself, Athenians killed a wandering priest of Cybele who tried to introduce her worship, and built the Metroon only after the goddess punished the city with plague. The building doubled as Athens's state archive, storing official documents under the goddess's protection for centuries. The Metroon remained a working sanctuary and record hall through the Roman period, still standing in the Agora by 117 CE alongside monuments centuries older than Rome's own arrival in Greece.",
+        "province": "Achaia",
+        "modern_location": "Athens, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Metroon"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Remains%20of%20the%20Old%20Bouleuterion%20and%20Metroon%20in%20the%20Ancient%20Agora%20of%20Athens%20on%20March%2023%2C%202021.jpg?width=800",
+        "image_credit": "Remains of the Old Bouleuterion and Metroon, Athens Agora · Wikimedia Commons",
+        "image_alt": "Foundations of the Metroon, sanctuary of the Mother of the Gods, in the Athens Agora"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7215,
+          37.9755
+        ]
+      },
+      "properties": {
+        "id": "religion_sabazios_athens",
+        "name": "Athens",
+        "tradition": "sabazios",
+        "attestation": "attested_117",
+        "one_line": "Athenian inscriptions name dozens of initiates into the cult of Sabazios by 100 BCE, a Phrygian sky and fertility god whose nighttime rites involved ritual purification with mud and a sacred drink. Devotees marked their allegiance with small bronze hands, fingers raised in a gesture of blessing and covered with a snake, pinecone, and thunderbolt, meant to be mounted on poles and carried through the streets in procession. The cult had circulated in Athens since at least the fifth century BCE, mocked by the comic playwright Aristophanes for its foreign, ecstatic style of worship. Sabazios worship spread across the Roman world by the early second century CE, reaching from Attica to Britain, carried by soldiers, merchants, and the god's traveling priests.",
+        "province": "Achaia",
+        "modern_location": "Athens, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sabazius"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/HandOfSabazius.JPG?width=800",
+        "image_credit": "Bronze votive Hand of Sabazius, a ritual object type used across the Roman world, British Museum · Wikimedia Commons",
+        "image_alt": "Bronze votive hand associated with the cult of Sabazios"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4863,
+          41.8858
+        ]
+      },
+      "properties": {
+        "id": "religion_other_sol_indiges",
+        "name": "Circus Maximus",
+        "tradition": "other_mystery",
+        "attestation": "attested_117",
+        "one_line": "Rome's oldest sun cult, Sol Indiges, received an annual public sacrifice every August 9th, a rite ancient tradition credited to the Sabine king Titus Tatius in the city's earliest legendary period. His cult held a shrine on the Quirinal Hill and a separate sanctuary inside the Circus Maximus, where archaeological remains date back to at least the third century BCE. Roman poets equated Sol Indiges with the Greek sun god Helios, but his worship stayed a distinctly homegrown Roman institution, unlike the later Syrian sun cult of Sol Invictus that would not arrive in Rome for another century. By 117 CE, Sol Indiges had already been one of Rome's recognized state gods for centuries, watching over chariot races from his shrine inside the Circus Maximus.",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sol_Indiges",
+          "https://en.wikipedia.org/wiki/Circus_Maximus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rom-Circus%20Maximus.JPG?width=800",
+        "image_credit": "The Circus Maximus, Rome, site of a shrine to Sol Indiges · Wikimedia Commons",
+        "image_alt": "The Circus Maximus in Rome"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4791,
+          40.7509
+        ]
+      },
+      "properties": {
+        "id": "religion_other_dionysian_pompeii",
+        "name": "Villa of the Mysteries",
+        "tradition": "other_mystery",
+        "attestation": "attested_117",
+        "one_line": "The Villa of the Mysteries, on Pompeii's northwestern edge, preserves a nearly life-size fresco cycle showing a woman's initiation into the rites of Dionysus, painted around 60 BCE and buried intact when Vesuvius erupted in 79 CE. The frescoes depict flagellation, ecstatic dance, and a reclining Dionysus himself, the most complete surviving visual record of any Greco-Roman mystery cult's initiation ritual. Unlike the more famous Eleusinian Mysteries, Dionysiac cult groups organized privately in villas and associations rather than around one central sanctuary, spreading informally across Italy for over two centuries before Pompeii's destruction. By 117 CE the villa itself had lain buried under volcanic ash for thirty-eight years, but the Dionysiac mystery worship its frescoes recorded continued in cities across the empire.",
+        "province": "Italia",
+        "modern_location": "Pompeii, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Villa_of_the_Mysteries"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20fresco%20Villa%20dei%20Misteri%20Pompeii%20005.jpg?width=800",
+        "image_credit": "Fresco from the Villa of the Mysteries, Pompeii · Wikimedia Commons",
+        "image_alt": "Fresco depicting Dionysiac initiation rites, Villa of the Mysteries, Pompeii"
+      }
     }
   ]
 }

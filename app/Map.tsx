@@ -1888,6 +1888,7 @@ export default function Map() {
                 isis: "Isis cult center",
                 mithraic: "Mithraic community",
                 cybele: "Cybele (Magna Mater) center",
+                sabazios: "Sabazios cult center",
                 other_mystery: "Mystery cult sanctuary",
               };
               const attestationLabel: Record<string, string> = {
