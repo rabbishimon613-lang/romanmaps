@@ -7,6 +7,161 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 79 — 2026-08-30 (this shift's own prompt claimed "Shift 4 of four")
+
+Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
+count. Repo booted on a detached `HEAD` at the real tip (`8f4e625`, Shift 78's own last commit)
+while local `main`/`origin/main` pointed at a stale `5093cbe` ("Shift 56"); `git fetch origin main`
++ `git reset --hard origin/main` resolved it cleanly with no lost work, same pattern documented by
+a dozen-plus shifts before this one.
+
+### Board + backlog check
+
+Confirmed Shift 78's own conclusion still holds for the big P0 tickets (`[12-P0-1]` merge-themes,
+`[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[13-P0-2]` image-audit — too large for one
+unattended session; `[15-P0-1]`/`[14-P0-1]` blocked on Pedro). But `[02-P0-1]` terrain's `[~]`
+claim (cloud shift 68, 2026-08-28 00:20) was now two days stale with zero commits against it, and
+every shift since has repeated the same "network-fetched hillshade tiles, likely a new npm
+dependency" reasoning for skipping it without anyone actually testing a specific tile host. Tested
+one before assuming: `curl` to `s3.amazonaws.com/elevation-tiles-prod` (AWS's public-domain
+Terrarium DEM tile set) returned real 256×256 PNG tiles at several zoom levels. Cleared the stale
+claim, took it, and built the feature — see Track B below. `FEATURE_BACKLOG.md`'s P0-P3 checklist
+had exactly this one open item, same as the last several shifts reported.
+
+### Track A — four axis batches plus a two-site landmark deepen, five background research agents
+
+Continuing the pattern established by Shifts 75-78: each batch researched by a background agent
+scoped to a single scratch JSON file (no repo write access), reviewed in full, checked for
+duplicate ids and invariant compliance, then spliced in via `scripts/append-geojson-features.mjs`.
+
+**Axis 8 (mints) — 17 more civic mints**, following up Shift 78's own flagged leads (Priene/Chios/
+Samos, more Cilicia/Cappadocia civic mints). Priene and Samos were re-checked and confirmed dead
+ends (no confirmable Trajanic-bridging coinage); Chios cleared (RPC III 4076). New: Tyana, Aegeae,
+Mopsuestia, Mallus (Cilicia/Cappadocia), Amaseia and Pessinus (Galatia/Pontus, the latter
+`confidence:low`), Cotiaeum, Stratonicea, Chios (Asia/Aegean), Perinthus, Deultum, Anchialus
+(Thrace), Gortyna (Crete), Sparta (`extant_117ce:false` — its mint sat silent through all of
+Trajan's reign, a real "why it's not striking" record), Dora and Ptolemais/Akko (Levant). None
+carry `image_url` — the session's shared WebSearch budget (200 calls, spent across every agent
+this shift) ran out before Commons filenames could be verified for this batch specifically.
+`mints.geojson` 70 → 87.
+
+**Axis 6b (religious communities) — 21 more records, including the map's first Mithraeum.** A
+dedicated dating hunt (Shift 78's own flagged lead) checked Nida/Heddernheim, Ostia's Terme del
+Mitra, Caesarea Maritima, and Dura-Europos — all too late or too fuzzily dated — and found one real
+candidate: the altar of centurion C. Sacidius Barbarus at Carnuntum (CIMRM 1718), tied to Legio XV
+Apollinaris, which shipped out for Trajan's Parthian campaign in 114 CE and never returned,
+pinning the dedication to before that year. First `tradition:"mithraeum"` record; fixed a real,
+previously dormant bug in the same commit — `app/Map.tsx`'s hover-popup label map carried a stale
+`mithraic` key that never matched the schema's actual `mithraeum` value used everywhere else in
+the codebase, so this record (and any future one) would have fallen back to a raw enum string in
+the popup. 20 more records beyond the Mithraeum: 7 Jewish diaspora communities (Panticapaeum,
+Halicarnassus, Ephesus, Teucheira — `extant_117ce:false`, destroyed in the Kitos War like the
+existing Salamis Cyprus entry — Laodicea, Apamea, Kos), 4 Isis centers (London/Southwark, Baelo
+Claudia, Thessaloniki, Gortyn), 2 Sabazios sites, 7 `other_mystery` entries (Diana Nemorensis at
+Nemi, Atargatis at Hierapolis Bambyce, the Temple of Bel at Palmyra, Jupiter Dolichenus at Doliche,
+Fortuna Primigenia at Praeneste, Feronia at Lucus Feroniae, and Baalbek — Trajan consulted its
+oracle in 115 CE). Dropped: Malta's Jewish catacombs (too late), Lugdunum's Cybele cult (Antonine,
+not Trajanic). `religions_117.geojson` 53 → 74.
+
+**Axis 13 (political apparatus) — 14 more beneficiarii stationes**, plus two honest negative
+findings on the other two leads the brief names. Alba Longa Praetorian detachment: not added —
+Castra Albana is a genuine Severan-era (c. 197-202 CE) legionary fortress for Legio II Parthica,
+not a formalized older Praetorian post; no pre-Severan installation found. Second vigiles
+excubitorium per cohort: not added — the existing Cohort VII/Trastevere record turns out to itself
+be that cohort's *secondary* station (its main statio, in Regio IX, is unlocated), so even the best
+exemplar in the dataset doesn't give a template for a second identifiable site elsewhere; no second
+guardhouse found for any cohort with a specific, sourced findspot. Beneficiarii consulares — the
+batch's real yield: 14 new stations across 6 provinces not previously represented (Noricum, Raetia,
+Dalmatia ×6, Hispania ×3, Syria, Britannia), with two dating traps correctly avoided along the way
+(Legio III Augusta was still at Theveste, not Lambaesis, in 117 CE; several Hadrian's-Wall-zone
+British altars postdate the 122 CE fort construction). `politics.geojson` 74 → 88.
+
+**Deepen: curated landmark POIs for Leptis Magna and Timgad**, picked up from
+`FEATURE_BACKLOG.md`'s standing note that most of the 40 `sites.ts` sites lack cited `pois.geojson`
+records beyond OSM building outlines. **A real duplicate-avoidance catch worth logging in detail**:
+before dispatching the Leptis Magna research agent, a same-shift substring search for `"leptis"`
+across `pois.geojson` found zero hits and the agent was briefed accordingly — but the file already
+carried 12 curated Leptis Magna records under a `poi_lepcis_*` id prefix (an alternate
+transliteration the search missed entirely). 9 of the agent's 11 researched records turned out to
+already exist under that prefix with equal-or-better sourcing, confidence, and images once
+compared side by side; those 9 were discarded rather than duplicated, and only the two genuinely
+new finds were kept (Curia of the Old Forum, Temple of Serapis, both `extant_117ce:false` on real
+dating grounds). **Flagging clearly for every future shift searching an existing city's coverage
+before dispatching a research agent: grep every plausible transliteration/spelling of the city
+name, not just the one the brief itself uses** — "Leptis" vs "Lepcis" is exactly the kind of gap a
+single substring check will not catch, and this shift only caught it because the splice was
+reviewed line-by-line against the live file before committing rather than trusted blind. Timgad had
+no such collision (only `poi_forum_timgad` existed) — 12 new records, researched with real dating
+discipline per the brief's own warning about this exact trap: only 4 of the 12 are genuinely
+founding-era and `extant_117ce:true` (Curia, Basilica, Temple of Victory, the original plain East
+Gate); the other 8 — including Trajan's Arch itself — postdate 117 CE by 50-200 years, since
+Timgad's real architectural "golden age" was Antonine/Severan, not its 100 CE founding decade. Both
+batches used a simplified name/note/civic-category schema sketch in their task briefs that doesn't
+match the live file's real `name_latin`/`name_english`/`notes`/numeric-`built` schema — the Leptis
+agent caught and self-corrected this on its own; the Timgad batch needed a manual remap
+(categories → the existing taxonomy of curia/basilica/temple/gate/arch/theater/library/bathhouse/
+market/monument, approximate dates → numeric years) before splicing. `pois.geojson` 1209 → 1223.
+
+### Track B — terrain shading, `[02-P0-1]`, finally shipped
+
+Full detail in the `BOARD.md` ticket and the commit itself; summary here. Every shift that looked
+at this ticket since it was created assumed the blocker was "no network-fetched hillshade tiles
+reachable from this sandbox, likely also a new npm dependency" without testing a specific host.
+`s3.amazonaws.com/elevation-tiles-prod` (AWS's public-domain Terrarium DEM tile set) is reachable
+via `curl` here — verified with real tile fetches before writing any code — and `raster-dem`/
+`hillshade` are core MapLibre GL 4.5.0 types already in the project's pin, so no dependency change
+was needed either. New `terrain` layer group, off by default (invariant 0) and excluded from
+`ROOMS` like `satellite` since it's a basemap texture, not a data theme; hillshade layer positioned
+once above the opaque land fill with low exaggeration and translucent, theme-aware shadow/highlight
+colors that re-tint automatically on a live light/dark toggle. **One real open caveat, left
+un-resolved rather than hidden**: this sandbox's own Chromium gets `net::ERR_CONNECTION_RESET`
+fetching this specific S3 endpoint even with the session's egress proxy explicitly configured via
+`--proxy-server` — confirmed via the proxy's own status endpoint (never logs a rejected CONNECT for
+this host, unlike the standard 403 pattern for commons/demotiles/overpass) that this is a Chromium/
+proxy-specific quirk, not a policy block; `curl` through the identical proxy config succeeds every
+single time. Real end-user browsers on the deployed Vercel site never touch this sandbox's proxy at
+all, so this is very likely sandbox-only — the same character of limitation already well documented
+in this repo for Commons image verification — but it means the hillshade texture itself could not
+be visually confirmed rendering in this session. Verified everything that *could* be verified here:
+Playwright screenshots at 375×812 dark and 1280×900 light show the layer toggles on cleanly with no
+layout regression and no new console errors, and a raster-dem source with no successfully-loaded
+tiles degrades gracefully (paints nothing, doesn't break anything else). **A human with a normal
+browser should confirm the actual relief renders** (toggle "Terrain shading" in the Layers panel,
+check the Alps/Pyrenees/Anatolian plateau) before this is fully trusted — flagging exactly per the
+brief's own instruction not to claim success on a UI change without real verification.
+
+### State, verification, next
+
+`npm install` needed at session start (fresh cloud container, standing pattern). `npm run
+validate`: 0 errors before and after every batch; warning count held at the same 18 pre-existing
+ones the whole shift (no new warnings introduced); cross-file collision count moved 179 → 189, the
+known `[12-P0-1]` merge-themes backlog, from new records landing near existing site building
+footprints. `npm run build`: clean before every push, six commits total (terrain feature; religions
++ the mithraic→mithraeum popup-label fix; mints; politics; Leptis Magna + Timgad landmarks;
+METRICS.md refresh), each pushed individually as soon as verified. `npm run metrics -- --write`:
+1209 → 1223 POIs (+14 curated), +17 mints, +21 religions, +14 politics — **86 new/corrected
+sourced features this shift** across four data axes plus one shipped UI feature, comfortably inside
+the brief's 30-100-per-shift rule of thumb.
+
+**Next shift**: the session's shared WebSearch budget (200 calls total, spent across the
+orchestrator and every background research agent combined) ran out before several batches could
+source images — mints' 17 new records, most of religions' 20 non-Mithraeum records, and most of
+Timgad's 11 non-founding-era records all shipped with `image_url` omitted rather than guessed. A
+dedicated image-only top-up pass across these three files (`mints.geojson`, `religions_117.geojson`,
+`politics.geojson`'s 27 beneficiarii records, and the Timgad/Leptis Magna records in `pois.geojson`)
+would meaningfully move the "has an image" metric without needing fresh factual research — worth
+prioritizing early in a fresh session with a full search budget, before spending it on new content.
+Axis 8's mint pool may still have headroom in provinces this shift didn't touch (Hispania,
+Britannia, Gaul civic mints are largely unexplored by any shift so far — the brief's list has
+focused heavily on Asia Minor/Levant). The Leptis Magna transliteration-collision finding above is
+worth internalizing as standing practice, not a one-off: check alternate spellings before trusting
+a "zero hits" search result on any city with a non-standard-English ancient name. `[02-P0-1]`
+terrain needs the human-browser confirmation described above before anyone treats it as fully
+verified, though the code itself, the underlying tile data, and the graceful-degradation path are
+all independently confirmed sound.
+
+---
+
 ## Shift 78 — 2026-08-30 (this shift's own prompt claimed "Shift 3 of four")
 
 Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential

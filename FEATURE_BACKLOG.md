@@ -65,7 +65,7 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
 ## P3 — polish / delight
 
 - [x] **Roman-style typography for POI labels** — Cinzel or Trajan Pro (open-source alternative) for major place labels. *(2026-08-15, Shift 18: Cinzel via `next/font/google`, exposed as `--font-cinzel` and applied through a shared `.roman-label` class — Place details panel titles, `SitesPanel`/`LegionLocator` list rows, and every POI's on-map pin label (`PoiMarkers.tsx`). Deliberately scoped away from native MapLibre map text (city/place labels) — those render through a glyph-PBF pipeline that would need a whole separate generated-tileset lift to support a new font, a materially bigger job than swapping a CSS `font-family` on HTML elements. Verified in-browser at 1280x800 and 390x844: computed font-family resolves to the real Cinzel stack, renders correctly on both panel titles and map pins.)*
-- [ ] **Terrain shading** — subtle hillshade under the parchment layer (Alps, Pyrenees, Anatolian plateau visible).
+- [x] **Terrain shading** — subtle hillshade under the parchment layer (Alps, Pyrenees, Anatolian plateau visible). *(2026-08-30, Shift 79: shipped via `app/Map.tsx`'s new `terrain` layer group — see `BOARD.md` `[02-P0-1]` and SHIFT_LOG.md for full detail, including one open caveat: the hillshade texture itself couldn't be visually confirmed rendering in this sandbox's Chromium due to a proxy-specific `net::ERR_CONNECTION_RESET` on the tile host, not a policy block — a human on a real browser should confirm the relief actually shows before this is fully trusted.)*
 - [x] **Onboarding hint** — first-visit tooltip on the search bar: "Try 'Londinium' or 'Ephesus'." *(2026-08-15, Shift 19: `app/useOnboardingHint.ts` + wired into `app/Chrome.tsx`. Confirmed both example names now resolve in `places_medium.geojson` (Shift 4's gazetteer patch already fixed the "Londinium" gap this item used to be blocked on) before shipping. Dismissible tooltip under the search card, persists dismissal to `localStorage["roman-maps:onboarding-hint-seen"]`, dismisses on typing, focusing the search box, or an explicit close button. Verified in-browser at 1280x800 and 390x844: shows on a fresh localStorage, disappears and stays gone after typing + reload, and the close button works standalone.)*
 - [x] **Dark mode / night-map style** — parchment → dark leather, water dark blue. *(Found already shipped, 2026-08-24 cloud shift: `app/Map.tsx`'s `LIGHT`/`DARK` `Palette` objects (added alongside `app/globals.css`'s chrome token set — see that file's own header comment, "the basemap already follows prefers-color-scheme") drive every base-map paint property — land `#f4ead5` → `#232628`, sea `#a9d1e3` → `#0f2233`, provinces/rivers/lakes/roads/labels all repalette too — off `prefers-color-scheme`, resolved once at map-style construction (`prefersDark()`, line 187). This item's literal ask (parchment↔dark-leather map, light↔dark water) was simply never checked off despite existing; no code changed this pass. Verified live with `next dev` + Playwright, `colorScheme: 'dark'`/`'light'` contexts: desktop 1280×900 light renders the parchment map with light chrome; mobile 375×812 dark renders `map.getPaintProperty('bg','background-color') === "#0f2233"` and `land === "#232628"` (exact `DARK` palette values) with dark chrome — screenshots confirm both. **Known gap, not this item's scope**: the palette is OS-preference-only, computed once at mount — there's no in-app manual light/dark toggle, and repainting one live would mean threading `setPaintProperty` through ~30 layer IDs that currently take their color only from the literal `P.*` value baked in at style-creation time (grepped every callsite before deciding this — MapLibre's dozen circle-layer thematic overlays included). That's a real, separate, materially bigger feature (`app/useTheme.ts` + a settings toggle + a live-repaint pass) than what this checkbox asked for — flagging as a fresh backlog item below rather than attempting it in the same pass as this verification.)*
 
@@ -1153,6 +1153,44 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       rather than WebSearch snippets of secondary summaries. Do NOT re-attempt Petra, Emesa,
       Damascus, Iconium, Byblos, or Aphrodisias — all confirmed genuine dating/attestation dead ends
       this shift, not a search-budget shortfall.
+
+## New ideas spotted this shift (2026-08-30, Shift 79 — terrain shading, mints/religions/politics batches, Leptis Magna + Timgad landmarks)
+
+- [ ] **A same-shift `pois.geojson` search for an existing city's coverage must check every
+      plausible transliteration of the ancient name, not just the one spelling in use.** This
+      shift's own substring search for `"leptis"` came back with zero hits and a research agent
+      was dispatched believing the city had no curated records at all — the file actually already
+      carried 12 under a `poi_lepcis_*` id prefix. Caught only because the splice was reviewed
+      line-by-line against the live file before committing (9 of 11 researched records turned out
+      to be duplicates and were dropped). A city whose ancient name has more than one common
+      English rendering — Leptis/Lepcis Magna is the clearest example already in this repo, but
+      the same risk applies to any Greek-vs-Latin or multiple-transliteration name — needs every
+      spelling checked before a "this city has no coverage yet" brief goes out.
+- [x] **`[02-P0-1]` terrain shading confirmed the standing lesson about untested "blocked" claims
+      compounding across shifts** — see SHIFT_LOG for the full story; the short version is that
+      "network-fetched hillshade tiles, likely blocked like everything else" got repeated by every
+      shift that looked at this ticket for weeks without anyone actually testing a specific host.
+      Worth a standing habit: when a ticket's stated blocker is "network access to X," test the
+      *specific* X before accepting the blocker, since this sandbox's egress restrictions are
+      per-host, not blanket.
+- [ ] **The session's WebSearch budget is shared across the orchestrator and every background
+      research agent it spawns — 200 calls total this shift, not 200 per agent.** Five agents
+      running research batches in the same shift burned through it collectively; several batches
+      (all of mints' 17 records, most of religions' 20 non-Mithraeum records, most of Timgad's 11
+      records) shipped with `image_url` omitted because the budget ran dry before those agents
+      could verify Commons filenames. A future shift running several research agents in one
+      session should budget for this shared pool explicitly — either fewer parallel agents, or a
+      dedicated image-only follow-up pass once the fact-finding agents are done and the budget has
+      reset in a fresh session.
+- [ ] **A research-agent task brief's schema example should be copy-pasted from a real, current
+      record in the live file, never hand-written from memory of the brief's own documentation.**
+      Both the Leptis Magna and Timgad landmark-POI task briefs this shift included a schema sketch
+      that didn't match `pois.geojson`'s real fields (`name` vs. the real `name_latin`/
+      `name_english` pair, `one_line`/`note` vs. the real `notes`, a date string vs. the real
+      numeric `built` year). The Leptis agent caught and self-corrected this independently; the
+      Timgad agent didn't, and its batch needed a manual schema remap before splicing. Cheap to
+      avoid: `cat` a real existing record from the target file into the task prompt instead of
+      writing the schema from memory.
 
 ## Shipped (moved from above; newest on top)
 

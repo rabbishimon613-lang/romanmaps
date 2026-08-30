@@ -203,9 +203,29 @@ to prevent. Building locally to *test* your own work is expected and fine.
       `next build` generates all 513 routes cleanly (~18s); Playwright at desktop + 375×812 for
       an image-bearing page and a no-image fallback page; the map round-trip link confirmed
       landing on the right panel.
-- [~] `[02-P0-1]` **`terrain`** `polish` — claimed by cloud shift 79, 2026-08-30 13:40 (cloud
-      shift 68's claim from 2026-08-28 00:20 was well past the board's 24h staleness window with
-      zero commits against it). Hillshade/relief under the land fill.
+- [x] `[02-P0-1]` **`terrain`** `polish` — Done 2026-08-30 by cloud shift 79. Every prior shift's
+      "network-fetched hillshade tiles, likely a new npm dependency" blocker turned out to be an
+      untested assumption carried forward for two dozen+ shifts: `s3.amazonaws.com/elevation-
+      tiles-prod` (the public-domain AWS Open Data Terrarium DEM tile set) is reachable from this
+      sandbox via `curl` — verified with real PNG tile fetches before writing any code — and
+      `raster-dem`/`hillshade` are core MapLibre GL 4.5.0 source/layer types already in the pin,
+      no new dependency needed. New `terrain` layer group (`app/useLayers.ts`), off by default
+      and excluded from `ROOMS` like `satellite` (a basemap texture, not a data theme); wired in
+      `app/Map.tsx` as a lazy loader, hillshade layer positioned once above the opaque land fill,
+      low exaggeration (0.35) and translucent shadow/highlight colors — both real `Palette`
+      entries so light/dark toggle re-tints them automatically. `app/MapAttribution.tsx` credits
+      Mapzen Terrain Tiles only while the layer is on. **One real open caveat**: this sandbox's
+      own Chromium gets `net::ERR_CONNECTION_RESET` fetching this specific S3 endpoint even
+      through the session's egress proxy explicitly configured — confirmed as a Chromium/proxy
+      quirk rather than a policy block (the proxy's own status endpoint never logs a rejected
+      CONNECT for this host, and `curl` through the identical proxy succeeds every time), so the
+      hillshade texture itself could not be visually confirmed live in-sandbox. Degrades
+      gracefully either way (a source with no loaded tiles just paints nothing, confirmed with
+      Playwright screenshots at 375×812 dark and 1280×900 light — no layout regression, no new
+      console errors). Real end-user browsers on the deployed Vercel site don't go through this
+      proxy, so this is very likely sandbox-only — but a human with a normal browser should
+      confirm the actual relief renders (toggle "Terrain shading" in the Layers panel, check the
+      Alps/Anatolian plateau) before this is fully trusted.
 - [ ] `[02-P0-4]` **`self-host-glyphs`** `fix` — **Half done 2026-08-19 by cloud shift 32, half
       still open — see below.** Original scope: stop depending on `demotiles.maplibre.org`, a
       single point of failure that would erase every label on the map.
