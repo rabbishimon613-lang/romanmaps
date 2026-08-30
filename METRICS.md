@@ -32,18 +32,18 @@ references.)
 
 | Measure | Value | Notes |
 |---|---:|---|
-| POIs in `pois.geojson` | 1196 | the curated place canon |
-| Records in the 33 thematic files | 1559 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
-| **Curated places, total** | **2,755** | |
-| Description of 60+ words | 1170 · **97.8%** | measured on `notes`; 26 still thin |
-| Has an image | 724 · **60.5%** | |
-| Has an ancient source | 487 · **40.7%** | |
-| — of `confidence: high` POIs | 432 / 515 · **83.9%** | the target set for `[09-P0-1]` |
-| Categories with a "what happened here" paragraph | 53 / 60 · **88.3%** | covers 1131/1196 POIs · missing: beneficiarii_station, bath, harbor, domus, vicus, gymnasium, courier_post |
+| POIs in `pois.geojson` | 1209 | the curated place canon |
+| Records in the 33 thematic files | 1627 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
+| **Curated places, total** | **2,836** | |
+| Description of 60+ words | 1183 · **97.8%** | measured on `notes`; 26 still thin |
+| Has an image | 733 · **60.6%** | |
+| Has an ancient source | 486 · **40.2%** | |
+| — of `confidence: high` POIs | 431 / 523 · **82.4%** | the target set for `[09-P0-1]` |
+| Categories with a "what happened here" paragraph | 53 / 60 · **88.3%** | covers 1144/1209 POIs · missing: beneficiarii_station, bath, harbor, domus, vicus, gymnasium, courier_post |
 | Sites with curated building descriptions | 36 / 40 · **90.0%** | ancona, aquileia, athens, baalbek, baiae, beneventum, brixia, capua, corinth, cumae, delphi, djemila, ephesus, herculaneum, italica, jerash, leptisMagna, luni, merida, milan, ostia, paestum, palestrina, palmyra, pompeii, portus, pozzuoli, rimini, rome, sabratha, timgad, tivoli, trier, verona, vindolanda, volubilis (`[06-P0-2]`, standing) |
 | Validator errors | **0** | |
-| Validator warnings | 17 | reviewed; see the standing-warnings note |
-| Cross-file name collisions (<150 m) | 156 | the dedupe backlog `[12-P0-1]` has to resolve |
+| Validator warnings | 18 | reviewed; see the standing-warnings note |
+| Cross-file name collisions (<150 m) | 179 | the dedupe backlog `[12-P0-1]` has to resolve |
 | Cold-load LCP | not measured | needs a dev server; blocked by `[15-P0-1]` |
 
 ## 2026-08-29
@@ -316,4 +316,4 @@ references.)
 | 2026-08-27 | 1015 | 97.5% | 58.4% | 31.6% | 0 errors |
 | 2026-08-28 | 1051 | 97.5% | 60.7% | 36.9% | 0 errors |
 | 2026-08-29 | 1108 | 97.7% | 61.2% | 44.0% | 0 errors |
-| 2026-08-30 | 1196 | 97.8% | 60.5% | 40.7% | 0 errors |
+| 2026-08-30 | 1209 | 97.8% | 60.6% | 40.2% | 0 errors |
