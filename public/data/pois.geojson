@@ -5368,7 +5368,10 @@
           "https://en.wikipedia.org/wiki/Buridava_(castra)",
           "https://www.academia.edu/11391784/The_end_of_the_Roman_habitation_at_Buridava_Stolniceni_V%C3%A2lcea_County_"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Castra_Buridava_00.JPG?width=800",
+        "image_credit": "Ruins of Castra Buridava, Stolniceni, Romania · Wikimedia Commons",
+        "image_alt": "Excavated remains of the Roman fort of Buridava, Stolniceni, Romania"
       }
     },
     {
@@ -5502,7 +5505,10 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Praetorium_I_(Cop%C4%83ceni)"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Praetorium_of_Copaceni_-_Principia_-_Plan.svg?width=800",
+        "image_credit": "Site plan of the principia of the Praetorium fort at Copaceni, Romania · Wikimedia Commons",
+        "image_alt": "Archaeological plan of the principia (headquarters building) of the Praetorium Roman fort"
       }
     },
     {
@@ -5529,7 +5535,10 @@
           "https://en.wikipedia.org/wiki/Arutela",
           "https://visit-valcea.ro/en/monumente/castrul-roman-arutela/"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Castru_Roman_Arutela_01.JPG?width=800",
+        "image_credit": "Ruins of the Roman fort of Arutela, near Calimanesti, Romania · Wikimedia Commons",
+        "image_alt": "Excavated walls of the Roman fort of Arutela on the Limes Alutanus"
       }
     },
     {
@@ -34728,7 +34737,10 @@
           "https://pleiades.stoa.org/places/197580",
           "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Dvetus-salina"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vetus_Salina,_Jupiter-Dolichenus-Heiligtum.png?width=800",
+        "image_credit": "Jupiter Dolichenus sanctuary at the Vetus Salina Roman fort site, Adony, Hungary · Wikimedia Commons",
+        "image_alt": "Jupiter Dolichenus sanctuary associated with the Vetus Salina Roman fort"
       }
     },
     {
@@ -34782,7 +34794,10 @@
           "https://paks.hu/en/tourism/sights/cultural-institutions-natural-and-built-values/lussonium-ruins-of-the-age-of-the-roman-empire-closed-until-spring-2020.450",
           "https://vici.org/vici/7250/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dunak%C3%B6ml%C5%91d_l%C3%A9gifot%C3%B32.jpg?width=800",
+        "image_credit": "Aerial photograph of the Lussonium Roman fort site near Dunakomlod, Hungary · Wikimedia Commons",
+        "image_alt": "Aerial view of the Lussonium Roman fort site on the Danube limes"
       }
     },
     {
@@ -35364,7 +35379,10 @@
           "https://archaeologyinbulgaria.com/2015/07/14/bulgarian-archaeologists-discover-gate-of-ancient-roman-city-almus-in-danube-town-of-lom/",
           "https://pleiades.stoa.org/places/206909"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Almus_lager.2012.JPG?width=800",
+        "image_credit": "Remains of the Roman fort (castra) of Almus, Lom, Bulgaria · Wikimedia Commons",
+        "image_alt": "Excavated remains of the Roman fort of Almus at Lom, Bulgaria"
       }
     },
     {
@@ -36499,7 +36517,10 @@
           "https://en.wikipedia.org/wiki/Chellah",
           "https://followinghadrianphotography.com/2017/02/20/sala-colonia/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Ruins_Zawiya_Chellah_Rabat_Nov25_A7CR_08989.jpg?width=800",
+        "image_credit": "Roman ruins of Sala Colonia within the Chellah necropolis, Rabat, Morocco · Wikimedia Commons",
+        "image_alt": "Roman ruins at the Chellah site, ancient Sala Colonia, Rabat"
       }
     },
     {
@@ -36526,7 +36547,10 @@
           "https://en.wikipedia.org/wiki/Iulia_Valentia_Banasa",
           "https://followinghadrianphotography.com/2017/03/30/banasa/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Iulia_Valentia_Banasa,_Morocco_(32829302951).jpg?width=800",
+        "image_credit": "Ruins of Iulia Valentia Banasa, Morocco · Wikimedia Commons",
+        "image_alt": "Archaeological ruins of the Roman colony of Banasa in Morocco"
       }
     },
     {
