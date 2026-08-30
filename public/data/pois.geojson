@@ -36635,6 +36635,263 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3481,
+          29.9531
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_humayma",
+        "category": "auxiliary_fort",
+        "name_latin": "Hauarra",
+        "name_english": "Humayma Roman Fort",
+        "province": "Arabia",
+        "modern_location": "Humayma (Humeima), Ma'an Governorate, Jordan",
+        "built": 111,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman engineers raised this fort on a slope above the Nabataean caravan town of Hauarra within a few years of Trajan's 106 CE annexation of the Nabataean kingdom. Its playing-card plan, rounded corners included, enclosed roughly three hectares built to garrison a full quingenary auxiliary cohort of five hundred men. The fort anchored the southern stretch of the newly built Via Nova Traiana, the road running from Bostra to the Red Sea port of Aila. Excavators found its headquarters building and granaries preserved beneath centuries of desert sand. In 117 CE its garrison still watched over a frontier province not yet a dozen years in Roman hands.",
+        "sources": [
+          "https://www.academia.edu/41703853/The_Trajanic_Auxiliary_Fort_at_Hawara_modern_Humayma_Jordan",
+          "https://www.asor.org/news/2025/02/ars31-humayma-roman-fort",
+          "https://en.wikipedia.org/wiki/Humayma"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kastell_Hauara,_Principia_und_Horrea,_Limes_Arabicus.svg?width=800",
+        "image_credit": "Mediatus, Wikimedia Commons (CC BY-SA) — plan of the fort's principia and horrea",
+        "image_alt": "Plan drawing of the Roman fort at Hauarra (Humayma), showing its headquarters building and granaries"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3925,
+          31.46139
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_ein_gedi",
+        "category": "auxiliary_fort",
+        "name_latin": "Engaddi",
+        "name_english": "Ein Gedi",
+        "province": "Judaea",
+        "modern_location": "Ein Gedi, Israel (western shore of the Dead Sea)",
+        "built": null,
+        "destroyed": 132,
+        "extant_117ce": true,
+        "notes": "A Roman garrison held this Dead Sea oasis village between the two Jewish revolts, drawn from the thousand-strong cohors I milliaria Thracum. Documents from the Babatha archive name its commanding centurion, Magonius Valens, who counted the oasis's leading Jewish families among his friends before the fighting resumed. The unit camped inside the settlement itself, its quarters bordering directly on a courtyard owned by one of those families. Ein Gedi's balsam groves, among the most valuable crops in the empire, made the posting a rich one. Bar Kokhba's rebels drove the garrison out of the village in 132 CE.",
+        "sources": [
+          "https://journals.sagepub.com/doi/10.1177/1476993X18791425",
+          "https://www.researchgate.net/publication/388765990_Ein_Gedi_between_the_Two_Revolts",
+          "https://en.wikipedia.org/wiki/Ein_Gedi_(archaeological_site)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.89167,
+          32.5
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_caesarea_maritima",
+        "category": "fort",
+        "name_latin": "Caesarea Maritima",
+        "name_english": "Caesarea",
+        "province": "Judaea",
+        "modern_location": "Caesarea, Israel",
+        "built": 6,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Herod the Great's palace on a promontory jutting into his artificial harbor became the praetorium, official residence and headquarters of Rome's governors, once Judaea turned into a province in 6 CE. A limestone block found reused as a stairway step here in 1961 carries the only inscription ever recovered naming Pontius Pilate, prefect of Judaea, who dedicated a Tiberieum on the site. Caesarea's fortifications and barracks housed as many as three thousand auxiliary troops, the backbone of Rome's garrison in the province. The city's harbor, Sebastos, linked that garrison directly to the sea lanes of the eastern Mediterranean. In 117 CE this promontory, not Jerusalem, remained the seat from which Rome governed Judaea.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Caesarea_Maritima",
+          "https://en.wikipedia.org/wiki/Pilate_stone",
+          "https://www.academia.edu/640372/The_Promontory_Palace_at_Caesarea_Maritima_Preliminary_Evidence_for_Herod_s_Praetorium"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pilate%27s_Palace_Courtyard_at_Caesarea_(3863229334).jpg?width=800",
+        "image_credit": "Ian W. Scott, via Flickr / Wikimedia Commons (CC BY 2.0)",
+        "image_alt": "Colonnaded courtyard of Herod's palace (the Roman praetorium) at Caesarea Maritima"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.7333,
+          38.93785
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_dascusa",
+        "category": "auxiliary_fort",
+        "name_latin": "Dascusa",
+        "name_english": "Dascusa (Pagnik Oreni)",
+        "province": "Cappadocia",
+        "modern_location": "near Agin, Elazig Province, Turkey",
+        "built": 82,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A fort on the west bank of the Euphrates here anchored one of the day's-march stations along the Roman military road running from Melitene north to Satala. An inscription dated to 82 CE records a cohort garrisoned at the site under Domitian, alongside the tombstone of a legionary veteran of Helvetian origin who settled there. The Antonine Itinerary placed Dascusa sixty Roman miles from both Zimara and Melitene along the riverbank route. The frontier road it guarded connected two of Cappadocia's legionary fortresses, XII Fulminata at Melitene and XV Apollinaris at Satala. In 117 CE the post still sat on Rome's most direct line of march toward the Armenian and Parthian frontiers.",
+        "sources": [
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry=dascusa",
+          "https://www.iranicaonline.org/articles/cappadocia",
+          "https://www.trismegistos.org/place/16477"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.7178,
+          41.0015
+        ]
+      },
+      "properties": {
+        "id": "poi_naval_trapezus",
+        "category": "naval_base",
+        "name_latin": "Trapezus",
+        "name_english": "Trabzon",
+        "province": "Cappadocia",
+        "modern_location": "Trabzon, Turkey",
+        "built": 64,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Trapezus became home port of the classis Pontica, Rome's Black Sea fleet, after Nero's general Corbulo used the city as a supply base for his Armenian campaign and left a garrison behind. When client Pontus was absorbed into the province of Galatia in 64 CE, its ships passed under direct Roman command and the fleet took the name it kept for the next two centuries. Vespasian's engineers built a new road linking the harbor inland to the legionary fortress at Satala, tying the naval base into Cappadocia's frontier network. From here the fleet patrolled the empire's entire southeastern Black Sea coast and guarded the grain convoys sailing down from Crimean ports. Hadrian's famous stone-built harbor still lay years in the future in 117 CE, when Trapezus was already a working naval station of long standing.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Classis_Pontica",
+          "https://www.researchgate.net/publication/283581886_Roman_fleets_in_the_black_sea_Mysteries_of_the_classis_pontica",
+          "https://military-history.fandom.com/wiki/Trabzon"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2153,
+          37.075
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_nisibis",
+        "category": "fort",
+        "name_latin": "Nisibis",
+        "name_english": "Nusaybin",
+        "province": "Mesopotamia",
+        "modern_location": "Nusaybin, Mardin Province, Turkey",
+        "built": 115,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Trajan's armies took Nisibis without a fight in 115 CE as they swept down from Armenia into northern Mesopotamia. The city became capital of the new province of Mesopotamia, organized the following year and celebrated on freshly minted coins. Roman garrison troops occupied Nisibis, holding one of the most strategically placed road junctions between the Tigris and the old Persian roads west. The province it anchored lasted barely eighteen months. Hadrian ordered Trajan's entire Mesopotamian conquest abandoned within days of taking power in August 117 CE, and Roman troops had withdrawn west to the Euphrates by the following year.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Mesopotamia_(Roman_province)",
+          "https://journalofromanarchaeology.com/wp-content/uploads/2020/04/JRA27_21_Palermo_FINAL.pdf",
+          "https://www.livius.org/articles/place/nisibis-nusaybin/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.8642,
+          36.3225
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_singara",
+        "category": "fort",
+        "name_latin": "Singara",
+        "name_english": "Sinjar",
+        "province": "Mesopotamia",
+        "modern_location": "Sinjar, Nineveh Governorate, Iraq",
+        "built": 115,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Trajan's general Lusius Quietus took Singara from the Parthians in 115 CE, planting a Roman garrison on the southern slope of the Sinjar range beside the Mygdonius watercourse. A milestone dated 116 CE, found near the village of Karsi on the far side of the mountain, marks the military road Roman engineers cut across the range to link the new outpost to the rest of the province. The garrison secured the route running from Edessa east to the Tigris, the empire's furthest reach in this direction. When Trajan died in August 117 CE his conquests east of the Euphrates were given up within the year, and Singara's garrison marched out. Rome would not hold Singara permanently again for another four and a half decades, under Lucius Verus.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Singara",
+          "https://www.ebsco.com/research-starters/military-history-and-science/singara",
+          "https://www.livius.org/articles/place/singara-sinjar/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.7969,
+          37.1591
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_edessa",
+        "category": "fort",
+        "name_latin": "Edessa",
+        "name_english": "Sanliurfa (Urfa)",
+        "province": "Mesopotamia",
+        "modern_location": "Sanliurfa, Turkey",
+        "built": 116,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Trajan's general Lusius Quietus sacked Edessa in 116 CE, ending King Abgar VII's brief resistance and folding the client kingdom of Osroene into the new Roman province of Mesopotamia. A Roman garrison occupied the city that had hosted Trajan himself only months earlier, when Abgar had opened its gates to the emperor as an honored guest. Edessa controlled the strategic pass linking the plain of Harran to the roads running toward the Tigris and the Parthian heartland beyond. Its occupation lasted less than two years. Hadrian restored Osroene to a client king, Parthamaspates, within months of Trajan's death, ending direct Roman rule over the city until the later second century.",
+        "sources": [
+          "https://military-history.fandom.com/wiki/Edessa",
+          "https://www.worldhistory.org/edessa/",
+          "https://en.wikipedia.org/wiki/Osroene"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.73,
+          34.747
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_dura_europos",
+        "category": "fort",
+        "name_latin": "Dura Europos",
+        "name_english": "Dura-Europos",
+        "province": "Mesopotamia",
+        "modern_location": "near Salhiyah, Deir ez-Zor Governorate, Syria",
+        "built": 115,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman forces occupied this fortified caravan city on a bluff forty meters above the Euphrates during Trajan's sweep down the river in 115-116 CE, planting a garrison inside walls the Parthians had held for over two centuries. The city sat on the direct route south from Zeugma toward Ctesiphon, making it a natural staging post for the army's advance into the Parthian heartland. Roman troops still held Dura-Europos when Trajan died in August 117 CE. It was one of the last outposts of the conquered province given up, evacuated by the end of September that year as Hadrian pulled every garrison back across the Euphrates. Rome would not return to hold Dura-Europos for good until 165 CE, under Lucius Verus.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Dura-Europos",
+          "https://www.zocalopublicsquare.org/roman-emperor-hadrian-unwinnable-war/"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
