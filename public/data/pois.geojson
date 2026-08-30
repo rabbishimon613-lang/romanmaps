@@ -37823,6 +37823,413 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.5532,
+          51.7207
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_nodens_lydney_park",
+        "category": "temple",
+        "name_latin": "Templum Nodentis",
+        "name_english": "Temple of Nodens, Lydney Park",
+        "province": "Britannia",
+        "modern_location": "Lydney, Gloucestershire, England",
+        "built": 300,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "In 117 CE this hilltop above the Severn Estuary holds only the earthworks of an old Iron Age fort — the temple that makes the site famous is roughly two centuries away. When it rises around 300 CE inside those same ramparts, the Romano-Celtic shrine serves Nodens, a native god of healing, hunting, and the sea, and pilgrims sleep in an attached guesthouse hoping the god sends a healing dream. Nine bronze and stone statuettes of dogs, animals believed to lick wounds clean, are left as offerings, alongside a lead curse tablet asking Nodens to drain the health of whoever stole a gold ring until it is returned. In 1929 the excavator Mortimer Wheeler connects that curse to a ring found decades earlier and consults his Oxford colleague J.R.R. Tolkien about the name Nodens, a conversation later credited with feeding into the invention of the One Ring.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Lydney_Park",
+          "https://en.wikipedia.org/wiki/Ring_of_Silvianus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Martin_Henig_at_the_entrance_to_Lydney_Roman_temple,_28_April_2019.jpg?width=800",
+        "image_credit": "Entrance to the Roman temple of Nodens, Lydney Park · Wikimedia Commons",
+        "image_alt": "Ruins of the Romano-British temple of Nodens at Lydney Park"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.0247,
+          37.6501
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_poseidon_sounion",
+        "category": "sanctuary",
+        "name_latin": "Templum Poseidonis Sunii",
+        "name_english": "Temple of Poseidon, Sounion",
+        "province": "Achaea",
+        "modern_location": "Cape Sounion, Greece",
+        "built": -444,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Thirty-four Doric columns of white marble ring this temple on a cliff above the Aegean, raised around 444 BCE to watch over every ship rounding Attica's southern tip. Sailors sacrificed to Poseidon here before long voyages, and generations of visitors carved their names into its columns, among them Lord Byron during an 1810 visit. By the time the traveler Pausanias toured the headland in the 2nd century CE, active cult worship had faded from its classical peak, though the temple still stood as a landmark for every vessel passing the cape. Fifteen of the original columns remain standing today, giving Sounion one of the most recognizable skylines to survive from antiquity.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Poseidon,_Sounion",
+          "https://www.athensguide.com/sounion/lord-byron.htm"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Temple_of_Poseidon_at_Sounion_on_June_9,_2018.jpg?width=800",
+        "image_credit": "Temple of Poseidon at Cape Sounion · Wikimedia Commons",
+        "image_alt": "Doric columns of the Temple of Poseidon on the cliffs of Cape Sounion"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.0272,
+          38.2233
+        ]
+      },
+      "properties": {
+        "id": "poi_sanctuary_nemesis_rhamnous",
+        "category": "sanctuary",
+        "name_latin": "Templum Nemesis Rhamnuntis",
+        "name_english": "Sanctuary of Nemesis, Rhamnous",
+        "province": "Achaea",
+        "modern_location": "Rhamnous, Attica, Greece",
+        "built": -430,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This fortified coastal sanctuary on the northeastern edge of Attica holds a fifth-century BCE temple to Nemesis, goddess of retribution against human arrogance, cut from the same Pentelic marble as the Parthenon. Under Roman rule the temple is rededicated to Livia, wife of Augustus, its architrave recut with a fresh inscription honoring her as a living embodiment of the goddess. A walled garrison fort stands on the slope just above, guarding the sea route past Euboea. Sixty kilometers from Athens and hard to reach even now, the sanctuary's isolation has kept its ruins remarkably intact.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Rhamnous",
+          "https://warwick.ac.uk/fac/arts/classics/intranets/students/modules/greekreligion/database/clumaf/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Nemesis_Rhamnous.jpg?width=800",
+        "image_credit": "Temple of Nemesis at Rhamnous · Wikimedia Commons",
+        "image_alt": "Ruined columns of the Temple of Nemesis at Rhamnous"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.9003,
+          37.4297
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_apollo_epicurius_bassae",
+        "category": "temple",
+        "name_latin": "Templum Apollinis Epicurii",
+        "name_english": "Temple of Apollo Epicurius, Bassae",
+        "province": "Achaea",
+        "modern_location": "Bassae, Peloponnese, Greece",
+        "built": -420,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Perched at eleven hundred meters on a windswept Arcadian mountainside, this Doric temple was raised around 420 BCE and credited to Iktinos, architect of the Parthenon, dedicated to Apollo Epikourios, 'the Helper,' for sparing the region from plague. Its inner chamber held the first known Corinthian column capital in Greek architecture, a single ornate exception amid otherwise austere stonework. Roof tiles were still being repaired here in the 2nd century CE, evidence the temple stayed in active use for over five centuries after it was built. The traveler Pausanias, visiting in 174 CE, ranked it the finest temple in the Peloponnese after the one at Tegea.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Apollo_Epicurius_at_Bassae",
+          "https://whc.unesco.org/en/list/392/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Apollo_Bassae_1982.jpg?width=800",
+        "image_credit": "Temple of Apollo Epicurius at Bassae · Wikimedia Commons",
+        "image_alt": "Remote mountain temple of Apollo Epicurius at Bassae"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.8856,
+          37.6719
+        ]
+      },
+      "properties": {
+        "id": "poi_heraion_samos",
+        "category": "sanctuary",
+        "name_latin": "Templum Herae Sami",
+        "name_english": "Heraion of Samos",
+        "province": "Asia",
+        "modern_location": "Pythagoreio, Samos, Greece",
+        "built": -560,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Hera's sanctuary on Samos held the largest temple the Ionian Greeks ever attempted, a forest of 155 marble columns begun under the tyrant Polycrates around 530 BCE and never finished. Rome plundered its treasures and then restored them: Mark Antony carried off statues in 39 BCE, and Augustus later returned most of them, keeping only a colossal bronze Zeus for his own shrine on the Capitoline Hill. Augustus visited Samos repeatedly and declared it a free, tax-exempt city in gratitude for its hospitality, and work on the temple and altar continued under his reign. A single column still stands upright on the site today, the last visible trace of that vast unfinished forest of stone.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Heraion_of_Samos",
+          "https://whc.unesco.org/en/list/595"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Heraion_of_Samos_(Greece),_the_only_standing_column.jpg?width=800",
+        "image_credit": "The single standing column of the Heraion of Samos · Wikimedia Commons",
+        "image_alt": "Lone surviving column of the Heraion of Samos amid the sanctuary ruins"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2332,
+          38.2897
+        ]
+      },
+      "properties": {
+        "id": "poi_sanctuary_men_askaenos_antioch_pisidia",
+        "category": "sanctuary",
+        "name_latin": "Templum Menis Askaeni",
+        "name_english": "Sanctuary of Men Askaenos, Antioch of Pisidia",
+        "province": "Galatia",
+        "modern_location": "Karakuyu Hill, near Yalvaç, Turkey",
+        "built": -150,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "On a ridge three kilometers from Pisidian Antioch, this Ionic temple served Men Askaenos, an Anatolian moon god whose cult predated Rome's arrival by centuries. Built around 150 BCE and measuring 25 by 13 meters, it stood within a rock-cut hilltop complex reached by a processional path up Karakuyu hill. After Augustus planted a colony of army veterans at Antioch around 25 BCE, Roman settlers adopted Men's cult rather than replacing it, keeping his festivals running well into the imperial period. Hundreds of votive inscriptions and coins recovered from the hilltop trace the sanctuary's continuous use across both Hellenistic and Roman centuries.",
+        "sources": [
+          "https://www.cambridge.org/core/journals/journal-of-roman-studies/article/abs/festivals-of-men-askaenos-in-the-roman-colonia-at-antioch-of-pisidia/A81F29FD5C5BF504CBB65168C6C57429",
+          "https://en.wikipedia.org/wiki/Men_(deity)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.2519,
+          38.4592
+        ]
+      },
+      "properties": {
+        "id": "poi_sanctuary_apollo_ptoios_ptoion",
+        "category": "sanctuary",
+        "name_latin": "Templum Apollinis Ptoi",
+        "name_english": "Sanctuary of Apollo Ptoios, Ptoion",
+        "province": "Achaea",
+        "modern_location": "Mount Ptoon, near Akraifnio, Boeotia, Greece",
+        "built": -550,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This oracle of Apollo occupies a rugged slope of Mount Ptoon in Boeotia, where pilgrims drank from the sacred spring of Perdikovrysi before receiving the god's answers. In 479 BCE the Persian general Mardonius sent an envoy here who reportedly received a prophecy in a foreign tongue no one present could understand, one of the oracle's most famous consultations. Excavators recovered at least ninety marble kouroi statues dedicated by worshippers across the Archaic and Classical periods, one of the richest such deposits found anywhere in Greece. Private benefactors kept the mountain sanctuary's festivals running for centuries afterward, with celebrations documented continuing into the late 3rd century CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ptoion",
+          "https://topostext.org/place/385233SPto"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Apollo_Ptoon,_a_fountain,_and_nothing_else,_Boeotia,_central_Greece.jpg?width=800",
+        "image_credit": "Remains of the Temple of Apollo at the Ptoion sanctuary · Wikimedia Commons",
+        "image_alt": "Foundation stones of the Temple of Apollo on Mount Ptoon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.2453,
+          34.9303
+        ]
+      },
+      "properties": {
+        "id": "poi_sanctuary_zeus_baetocaece",
+        "category": "sanctuary",
+        "name_latin": "Templum Iovis Baetocaecensis",
+        "name_english": "Sanctuary of Zeus Baetocaece, Hosn Suleiman",
+        "province": "Syria",
+        "modern_location": "Hosn Suleiman, Tartus Governorate, Syria",
+        "built": -150,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Deep in the mountains above the Syrian coast, this sanctuary of Zeus Baetocaece was raised from stone blocks weighing up to thirty tons, using the same megalithic building tradition as Baalbek. An inscribed dossier displayed at the site preserved a chain of royal grants reaching back to the Seleucid kings, confirming the temple's right to hold tax-free markets twice a month and barring any troops from being stationed in its village. Roman authorities upheld these privileges for centuries, and a later dispute over them was settled by reinscribing the whole dossier under the emperor Valerian in the 250s CE. The sanctuary's remote setting in the mountains kept it largely free of the urban rebuilding that erased so many comparable temples elsewhere.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Hosn_Suleiman",
+          "https://www.judaism-and-rome.org/baetocaece-baitokaike-valerian-and-ancestral-privileges-temple-syria"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Zeus_Baotocecian,_Husn_Suleiman_(%D8%AD%D8%B5%D9%86_%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86),_Syria_-_Temple_and_east_gate_of_peribolos_from_west_-_PHBZ024_2016_2035_-_Dumbarton_Oaks.jpg?width=800",
+        "image_credit": "Temple of Zeus Baetocaece and its peribolos gate, Hosn Suleiman · Wikimedia Commons",
+        "image_alt": "Megalithic temple and gateway of the Zeus Baetocaece sanctuary at Hosn Suleiman"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.0989,
+          37.2678
+        ]
+      },
+      "properties": {
+        "id": "poi_sanctuary_zeus_panamaros",
+        "category": "sanctuary",
+        "name_latin": "Templum Iovis Panamari",
+        "name_english": "Sanctuary of Zeus Panamaros, Panamara",
+        "province": "Asia",
+        "modern_location": "Bağyaka, near Muğla, Turkey",
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This hilltop sanctuary of Zeus Panamaros west of Stratonikeia in Caria began as the shrine of a federation of villages before the city of Stratonikeia absorbed it in the Hellenistic period. In 40 BCE the Roman renegade general Labienus laid siege to the hill for three days, and when his army withdrew, the local demos credited a miraculous epiphany of Zeus with saving the shrine. Stratonikeia used that story to win the sanctuary formal asylum rights from the Roman Senate, a legal privilege protecting anyone who reached its altars. The event was commemorated every year afterward with the Panamareia, a festival that eventually stretched across thirty days of feasting, athletic contests, and secret mysteries.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Panamara",
+          "https://www.attalus.org/docs/other/inscr_7.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.2552,
+          38.3183
+        ]
+      },
+      "properties": {
+        "id": "poi_sanctuary_kabeiroi_thebes",
+        "category": "sanctuary",
+        "name_latin": "Cabirium prope Thebas",
+        "name_english": "Sanctuary of the Kabeiroi, Thebes",
+        "province": "Achaea",
+        "modern_location": "Near Thebes, Boeotia, Greece",
+        "built": -550,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Eight kilometers west of Thebes, this sanctuary hosted the secretive mystery cult of the Kabeiroi, twin gods whose rites initiates were bound never to describe. A Hellenistic theater with an orchestra twenty-six meters across stood in front of the temple, built to seat worshippers gathered to watch the mysteries performed below. Excavators uncovered thousands of small bronze bull figurines left as offerings, a tradition of dedication that runs unbroken from the Archaic period into Roman times. The sanctuary stayed active for roughly a thousand years before finally falling silent in late antiquity.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/The_Kabeiroi",
+          "https://www.namuseum.gr/en/monthly_artefact/the-divine-child-from-the-sanctuary-of-the-kabiroi-in-thebes/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2231,
+          55.0361
+        ]
+      },
+      "properties": {
+        "id": "poi_coventinas_well_carrawburgh",
+        "category": "sanctuary",
+        "name_latin": "Fons Coventinae",
+        "name_english": "Coventina's Well, Carrawburgh",
+        "province": "Britannia",
+        "modern_location": "Carrawburgh, Northumberland, England",
+        "built": 130,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "In 117 CE this spring on the future line of Hadrian's Wall is just an open pool in the Northumberland moorland — the emperor has only just taken power, and the Wall itself is still years from being ordered. Around 130 CE a walled enclosure enfolds the spring, turning it into a formal shrine to the local water goddess Coventina beside the new fort of Carrawburgh. When the antiquarian John Clayton excavates the well in 1876, he recovers more than 13,000 coins along with carved altars and a relief of three water nymphs, one of the richest votive deposits ever found in Roman Britain. Soldiers garrisoned far from home keep throwing offerings into the pool for roughly two and a half centuries, until the cult ends abruptly around 388 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Coventina",
+          "https://historicengland.org.uk/listing/the-list/list-entry/1015914"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1664,
+          47.9686
+        ]
+      },
+      "properties": {
+        "id": "poi_sanctuary_mars_mullo_allonnes",
+        "category": "sanctuary",
+        "name_latin": "Templum Martis Mulloni",
+        "name_english": "Sanctuary of Mars Mullo, Allonnes",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Allonnes, Sarthe, France",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This Gallo-Roman sanctuary on a hilltop above the Sarthe River served the healing god Mars Mullo, whose worshippers came specifically seeking relief from eye ailments. Starting around 80 CE, builders replaced an older Gallic shrine on the same spot with a monumental temple wrapped in colonnaded galleries, modeled on the grand sanctuary architecture then rising in Rome itself. Excavations recovered a large bronze cult-statue base and thousands of votive offerings spanning four centuries of continuous use, from the pre-Roman Gallic period into late antiquity. The sanctuary served the Aulerci Cenomani tribe as one of their principal religious centers until worship there finally ended in the early 4th century CE.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Sanctuaire_de_Mars_Mullo",
+          "https://en.wikipedia.org/wiki/Mullo_(god)"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Site_de_Mars-Mullo.JPG?width=800",
+        "image_credit": "Remains of the Sanctuary of Mars Mullo, Allonnes · Wikimedia Commons",
+        "image_alt": "Excavated foundations of the Gallo-Roman sanctuary of Mars Mullo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.8203,
+          37.4189
+        ]
+      },
+      "properties": {
+        "id": "poi_sanctuary_zeus_labraunda",
+        "category": "sanctuary",
+        "name_latin": "Templum Iovis Labraundi",
+        "name_english": "Sanctuary of Zeus, Labraunda",
+        "province": "Asia",
+        "modern_location": "Near Milas, Turkey",
+        "built": -370,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "High in the mountains above Mylasa, this sanctuary of Zeus Labraundos was transformed by the Carian ruler Mausolus in the 4th century BCE into a showcase of Hecatomnid power, complete with two monumental dining halls, or andrones, where the elite feasted in the god's honor. A sacred spring stocked with tame fish that pilgrims believed could reveal whether a prayer was sincere ran through the site, a detail the geographer Strabo recorded firsthand. The sanctuary kept its sacred status through the Hellenistic period and into Roman rule, with a new well-house added to serve pilgrims as late as the 1st century CE. Reached only by a steep processional road climbing from Mylasa below, Labraunda remained one of Caria's most important shrines for more than five centuries.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Labraunda",
+          "https://www.iranicaonline.org/articles/caria/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Sanctuary_of_Zeus_Labraundos,_Labraunda,_Caria,_Turkey_(31749580400).jpg?width=800",
+        "image_credit": "The Sanctuary of Zeus Labraundos at Labraunda · Wikimedia Commons",
+        "image_alt": "Ruins of the Hecatomnid-era sanctuary of Zeus at Labraunda"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4778,
+          41.8894
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_aesculapius_tiber_island",
+        "category": "asklepieion",
+        "name_latin": "Aedes Aesculapii in Insula Tiberina",
+        "name_english": "Temple of Aesculapius, Tiber Island",
+        "province": "Italia",
+        "modern_location": "Rome, Italy",
+        "built": -291,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Rome dedicated this temple on January 1, 291 BCE, after sending a delegation to Epidaurus during a plague to fetch the healing god Aesculapius in the form of a sacred serpent. Tradition holds that the snake slipped off the returning ship as it passed the Tiber, swam to the island, and marked the very spot where the temple was to rise. Builders faced the island's downstream end in travertine to resemble a ship's prow, carving into the stone a relief of the healing serpent that still survives today. Sick Romans slept inside the sanctuary seeking a healing dream from the god, a practice imported directly from the Greek asklepieia, and in 47 CE the emperor Claudius decreed that any slave abandoned there by an owner unwilling to nurse them became free, since the island had become synonymous with cure.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Asclepius,_Rome",
+          "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Claudius*.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/View_of_the_boat-shaped_Tiber_Island_(Insula_Tiberina)_with_some_remnants_of_the_travertine_boat_including_a_relief_decoration_of_the_snake_of_Aesculapius_(caduceus),_Rome_(36667782203).jpg?width=800",
+        "image_credit": "Travertine ship's-prow relief of Aesculapius's serpent, Tiber Island · Wikimedia Commons",
+        "image_alt": "Carved stone ship's prow with serpent relief marking the Temple of Aesculapius on Tiber Island"
+      }
     }
   ]
 }
