@@ -1855,6 +1855,354 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.055,
+          47.8095
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_iuvavum",
+        "category": "beneficiarii_station",
+        "name": "Salzburg",
+        "one_line": "An altar dedicated by a beneficiarius consularis at Iuvavum around 110 CE placed a soldier of the governor's staff in this Alpine road town squarely within Trajan's own reign, one of the earliest such dated dedications known from Noricum.",
+        "province": "Noricum",
+        "modern_location": "Salzburg, Austria",
+        "extant_117ce": true,
+        "notes": "Iuvavum grew into a substantial market and road town on the route linking Italy to the Danube frontier, and the officium consularis of Noricum's governor kept beneficiarii posted along this corridor to police traffic and dispatches. Its dated altar, CIL III 11759, falls within Trajan's reign itself, making Salzburg one of the more securely Trajanic-era beneficiarii postings on this map rather than one inferred from a later stone.",
+        "sources": [
+          "CIL III 11759",
+          "Wikipedia, s.v. Iuvavum"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.3439,
+          46.6717
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_virunum",
+        "category": "beneficiarii_station",
+        "name": "Maria Saal",
+        "one_line": "Virunum served as Noricum's provincial capital for nearly two centuries, and beneficiarii from its governor's staff watched over the iron-working district nearby, with a Jupiter altar surviving from the site.",
+        "province": "Noricum",
+        "modern_location": "Maria Saal, Austria",
+        "extant_117ce": true,
+        "notes": "Founded under Claudius as Noricum's capital and seat of its officium consularis on the Zollfeld plain, Virunum's beneficiarii most likely worked the province's nearby iron-mining district, probably on imperial estates, from the province's earliest years. Its best-dated altar, CIL III 14362, falls a generation after this map's snapshot, so the Trajanic-era presence is inferred from the capital's continuous administrative role rather than from that stone itself.",
+        "sources": [
+          "CIL III 14362",
+          "Leibniz-Zentrum fur Archaologie, \"Cults and Sanctuaries in Noricum\""
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.7471,
+          47.5031
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_brigantium",
+        "category": "beneficiarii_station",
+        "name": "Bregenz",
+        "one_line": "Brigantium anchored the western end of Raetia at the head of Lake Constance, and a beneficiarius consularis kept a post here to watch this junction of the province's Alpine and lake roads.",
+        "province": "Raetia",
+        "modern_location": "Bregenz, Austria",
+        "extant_117ce": true,
+        "notes": "Founded as a Roman fort and vicus under Augustus and Tiberius around 15 BCE, Brigantium had grown into a well-established road station long before Trajan's reign. Scholarship on the officium consularis network names Brigantium among the stations regularly held by a beneficiarius consularis, though the surviving dedications from the site are not individually dated to 117 CE itself.",
+        "sources": [
+          "R. L. Dise, \"The Assignments of Beneficiarii Consularis\", Zeitschrift fur Papyrologie und Epigraphik 116 (1997)",
+          "Wikipedia, s.v. Brigantium (Bregenz)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.4897,
+          43.5461
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_salona",
+        "category": "beneficiarii_station",
+        "name": "Solin",
+        "one_line": "Salona was Dalmatia's provincial capital, and since the province kept no legion of its own after the first century, its governor drew beneficiarii from as far away as the Danube legions to staff his officium here.",
+        "province": "Dalmatia",
+        "modern_location": "Solin, Croatia",
+        "extant_117ce": true,
+        "notes": "Six stelae and a grave altar from Salona name beneficiarii consulares seconded from Legio X Gemina, then stationed at Vindobona on the Danube, alongside a further dedication from a quarry on the island of Brac. Most of these dedications date from after the mid-second century, but Salona's role as the seat of Dalmatia's governor and his officium reached back to the province's founding under Augustus.",
+        "sources": [
+          "\"On the Salona inscriptions of beneficiarii consularis from legio X Gemina\", VAHD",
+          "Hrcak, \"Beneficiarii consularis in the territory of the Delmatae\""
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.6216,
+          43.0898
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_narona",
+        "category": "beneficiarii_station",
+        "name": "Vid",
+        "one_line": "Narona was one of the fixed beneficiarii consularis stations strung along the coastal road linking Aquileia to Dyrrachium, guarding this old colony's stretch of the Dalmatian highway.",
+        "province": "Dalmatia",
+        "modern_location": "Vid, Croatia",
+        "extant_117ce": true,
+        "notes": "Founded as a Roman colony under Julius Caesar, Narona was already more than a century and a half old by Trajan's reign and controlled river-crossing traffic on the Naro (Neretva). Croatian epigraphic scholarship counts Narona among the confirmed beneficiarii consularis stations of the province, one of eight identified along the Aquileia-Dyrrachium road, though individual dedications from the site are not closely dated.",
+        "sources": [
+          "CROSBI, \"Beneficiarii consularis stationes along the Roman road Aquileia-Dyrrachium\"",
+          "Hrcak, \"Beneficiarii consularis in the territory of the Delmatae\""
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.995,
+          44.005
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_burnum",
+        "category": "beneficiarii_station",
+        "name": "Kistanje",
+        "one_line": "Burnum began as a legionary fortress before its garrison left for the Rhine, and beneficiarii consulares later held a fixed post at this Krka river crossing on the Aquileia-Dyrrachium coastal road.",
+        "province": "Dalmatia",
+        "modern_location": "Kistanje, Croatia",
+        "extant_117ce": true,
+        "notes": "Legio XI Claudia and later Legio IV Flavia Felix garrisoned Burnum until the late first century, and the site kept a substantial amphitheater and military infrastructure long after the legions departed for other frontiers. Croatian epigraphic surveys list Burnum among the province's confirmed beneficiarii consularis stations, though individual dedications are not closely dated to Trajan's reign.",
+        "sources": [
+          "CROSBI, \"Beneficiarii consularis stationes along the Roman road Aquileia-Dyrrachium\"",
+          "Wikipedia, s.v. Burnum"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.2892,
+          42.4808
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_doclea",
+        "category": "beneficiarii_station",
+        "name": "Podgorica",
+        "one_line": "Doclea grew from a native Illyrian hill town into a Flavian-era municipium at the junction of the Zeta and Moraca rivers, and beneficiarii consulares held a fixed post here on Dalmatia's interior road network.",
+        "province": "Dalmatia",
+        "modern_location": "Podgorica, Montenegro",
+        "extant_117ce": true,
+        "notes": "A Flavian emperor raised Doclea to municipium status among the Docleatae, a local Illyrian tribe, making it one of interior Dalmatia's most substantial towns well before Trajan's reign. Croatian epigraphic scholarship counts Doclea among the province's confirmed beneficiarii consularis stations, though the surviving dedications are not individually dated to 117 CE.",
+        "sources": [
+          "CROSBI, \"Beneficiarii consularis stationes along the Roman road Aquileia-Dyrrachium\"",
+          "Wikipedia, s.v. Doclea"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.7167,
+          43.6167
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_pons_tiluri",
+        "category": "beneficiarii_station",
+        "name": "Trilj",
+        "one_line": "Pons Tiluri, named for the Roman bridge that carried the coastal road across the Cetina river here, was one of the beneficiarii consularis stations fixed along the highway linking Aquileia to Dyrrachium in Dalmatia.",
+        "province": "Dalmatia",
+        "modern_location": "Trilj, Croatia",
+        "extant_117ce": true,
+        "notes": "The crossing sat beside Tilurium, an early legionary fortress on the same river, and it remained a bridge and road station for the rest of the province's history. Croatian epigraphic scholarship counts Pons Tiluri among the province's eight confirmed beneficiarii consularis stations along this coastal highway, though the individual dedications from the site are not closely dated.",
+        "sources": [
+          "CROSBI, \"Beneficiarii consularis stationes along the Roman road Aquileia-Dyrrachium\"",
+          "Wikipedia, s.v. Tilurium"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.5464,
+          43.1957
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_bigeste",
+        "category": "beneficiarii_station",
+        "name": "Humac",
+        "one_line": "Bigeste's auxiliary camp watched Dalmatia's interior road network, and dozens of inscriptions from nearby Narona tie its garrison, including beneficiarii, to this inland station.",
+        "province": "Dalmatia",
+        "modern_location": "Ljubuski, Bosnia and Herzegovina",
+        "extant_117ce": true,
+        "notes": "Cohors I Belgarum and Cohors III Alpinorum garrisoned the fort at Bigeste, in the Trebizat valley, from the first century CE onward. Croatian and regional epigraphic scholarship records the site, alongside Salona, among the interior locations where beneficiarii consularis activity in Dalmatia is attested, though individual dedications are not closely dated to Trajan's reign.",
+        "sources": [
+          "Academia.edu, \"The Roman Army in Dalmatia: la presencia de militares en Narona\"",
+          "Hrcak, \"Beneficiarii consularis na podrucju Delmata\""
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2545,
+          41.1189
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_tarraco",
+        "category": "beneficiarii_station",
+        "name": "Tarragona",
+        "one_line": "Tarraco served as the seat of the governor of Hispania Tarraconensis, the only consular-rank Spanish province, and his officium kept a substantial detachment of beneficiarii on hand to run its vast territory.",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Tarragona, Spain",
+        "extant_117ce": true,
+        "notes": "As Rome's oldest and largest Spanish province, Tarraconensis warranted a governor of consular rank backed by an unusually large staff, with scholarship estimating around thirty beneficiarii consulares serving his officium at any time. Tarraco's role as this administrative hub was constant throughout the Principate, though individually dated beneficiarii inscriptions from the city itself are scarce.",
+        "sources": [
+          "R. Haensch, \"Capita provinciarum\" (officia of provincial governors)",
+          "\"The beneficiarii consularis in the western provinces of the Roman Empire\", Oxford University Research Archive"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3433,
+          38.9166
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_emerita",
+        "category": "beneficiarii_station",
+        "name": "Merida",
+        "one_line": "Augusta Emerita, Lusitania's provincial capital, housed the governor's officium consularis, and beneficiarii drawn from this staff are specifically documented serving the province from this seat.",
+        "province": "Lusitania",
+        "modern_location": "Merida, Spain",
+        "extant_117ce": true,
+        "notes": "Founded by Augustus as a colony for veterans of the Cantabrian Wars, Emerita grew into one of Roman Spain's grandest cities and the permanent seat of Lusitania's praetorian governor. Scholarship on the western officium consularis network names Emerita, alongside Tarraco, as a station where beneficiarii consulares are specifically attested serving the provincial governor.",
+        "sources": [
+          "\"The beneficiarii consularis in the western provinces of the Roman Empire\", Oxford University Research Archive",
+          "R. Haensch, \"Capita provinciarum\""
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9862,
+          37.6051
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_carthago_nova",
+        "category": "beneficiarii_station",
+        "name": "Cartagena",
+        "one_line": "A beneficiarius consularis based at Carthago Nova left behind an epitaph for his young wife, who died there suddenly before her twentieth birthday, giving this Mediterranean port a securely identified posting.",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Cartagena, Spain",
+        "extant_117ce": true,
+        "notes": "Carthago Nova's silver and lead mines and busy harbor made it one of Hispania Tarraconensis's most important secondary cities, worth a permanent beneficiarii presence away from the governor's own capital at Tarraco. The funerary inscription naming the soldier and his wife is discussed in dedicated Spanish epigraphic scholarship, though its precise date within the second or third century is debated, so a Trajanic-era presence here is plausible but not proven by this stone alone.",
+        "sources": [
+          "\"Reflexiones sobre la inscripcion del beneficiarius consularis de Carthago Nova\", Hispania Antiqua 37-38 (2013-2014), pp. 165-192"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.1613,
+          36.2023
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_antioch",
+        "category": "beneficiarii_station",
+        "name": "Antakya",
+        "one_line": "Antioch was the seat of Syria's governor, commander of the largest concentration of legions on the eastern frontier, and his officium consularis would have kept beneficiarii on staff to run the province's roads and dispatches.",
+        "province": "Syria",
+        "modern_location": "Antakya, Turkey",
+        "extant_117ce": true,
+        "notes": "Syria's governor ranked among the most senior in the empire, commanding multiple legions from this capital on the Orontes. A governor's officium at a provincial capital of this scale was structurally certain to include beneficiarii, though this research pass did not turn up an individually dated Trajanic-era beneficiarii inscription from Antioch itself, unlike several of the western provinces where such stones survive.",
+        "sources": [
+          "R. Haensch, \"Capita provinciarum\" (officia of provincial governors)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0875,
+          51.5135
+        ]
+      },
+      "properties": {
+        "id": "politics_beneficiarii_londinium",
+        "category": "beneficiarii_station",
+        "name": "London",
+        "one_line": "Londinium was the seat of Britain's governor, and dedicated study of his officium counts roughly sixty beneficiarii consulares among the legionaries seconded to his staff, the largest such contingent in the province.",
+        "province": "Britannia",
+        "modern_location": "London, United Kingdom",
+        "extant_117ce": true,
+        "notes": "As the financial and administrative hub of Roman Britain, Londinium anchored the governor's officium consularis for most of the province's history. British-specific study of the governor's staff puts the beneficiarii consularis contingent at around sixty men, though no individually dated Trajanic-era beneficiarii inscription from Londinium itself turned up in this research pass, and most surviving British beneficiarii altars date from the later second century onward.",
+        "sources": [
+          "\"The governor's men: the officium consularis in provincial administration\"",
+          "R. Haensch, \"Capita provinciarum\""
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
