@@ -1043,7 +1043,50 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       "probably doesn't" by category, only dispatch the agent on the former) before the next
       ancient-sources or image-topup pass, rather than handing over the whole pool.
 
+## New ideas spotted this shift (2026-08-30, Shift 76 — Numidia/Mauretania forts, quarries, Dere Street)
+
+- [ ] **WebSearch's AI-summarized prose fabricates plausible-but-nonexistent Wikimedia Commons
+      filenames often enough that it's now a confirmed, recurring failure mode, not a one-off.**
+      This shift independently caught it three more times across two separate research agents:
+      two invented filenames for Altinum and Cirpi (Danube-limes forts), and a "Late Roman
+      Basilica, Ceuta" filename for Ad Septem Fratres that only ever appeared in synthesized
+      prose, never in a real search-result link. All three were caught by cross-checking the
+      exact filename against raw link text before use, not by trusting the summary — every future
+      image-topup pass should treat "confirm the filename exists in a raw link, not just in
+      AI-summarized prose" as mandatory, not optional due diligence.
+- [ ] **The Numidian/Mauretanian frontier (Roman North Africa west of Egypt) was a real,
+      sizeable gap in `pois.geojson`'s military coverage until this shift** — only 2 of ~90+
+      auxiliary-fort records existed there before (`ad_maiores`, `gemellae`), against deep
+      existing coverage of the Rhine, Danube, Raetian, Dacian, Egyptian, and British frontiers.
+      Now at 22 after two research passes this shift; real remaining headroom flagged by name in
+      SHIFT_LOG (Ad Medias, Bades, Duo Flumina, Vazaivi, Vescera) for whoever picks this up next
+      with a fresh WebSearch budget.
+- [ ] **`quarry` was one of the thinnest axis-3c economic-infrastructure subcategories** (13
+      records, against `mine` at 25 and `garum_factory` at 15) despite being one of the brief's
+      own explicitly-named categories. Now at 36 after this shift's 23-quarry batch; real
+      remaining candidates not chased down for lack of time: Cyzicus, Kozak granite near
+      Pergamon, and other minor Aegean colored-marble sources.
+- [ ] **`road_stations.geojson` had zero coverage of any Roman-Britain road other than Watling
+      Street, Fosse Way, Stanegate, and Ermine Street** — Dere Street (York to the Scottish
+      frontier, one of the most heavily excavated Roman roads anywhere thanks to the A1
+      dualling-project digs) had nothing. Now at 15 stations. A genuinely useful nuance surfaced
+      researching it: several famous-sounding Dere Street forts (Longovicium/Lanchester,
+      Habitancum/Risingham, Onnum/Halton Chesters, the Piercebridge fort, Inveresk, Cramond) are
+      all Hadrianic or Antonine foundations, i.e. *after* this map's 117 CE snapshot — worth
+      remembering for any future Roman-Britain axis work that a famous name doesn't guarantee a
+      pre-117 date, even along an early-established road.
+
 ## Shipped (moved from above; newest on top)
+
+- 2026-08-30 — Shift 76: Axis 3a Numidia/Mauretania frontier — 20 new forts across two research
+  passes (Auzia, Rapidum [not yet built in 117], Tigava Castra, Zaraï, Diana Veteranorum,
+  Mascula, Mesarfelta, Ad Septem Fratres, Tamuda, Thubunae, Ad Calceum Herculis, Thabudeos,
+  Verecunda, Thanaramusa Castra [not yet built], Oppidum Novum, Sala Colonia, Banasa, Sitifis,
+  Tubusuctu, Saldae) plus the Danube-limes Acumincum gap Shift 75 flagged, plus 25 verified
+  Wikimedia Commons images applied to previously image-less fort records. Axis 3c — 23 new
+  quarries empire-wide (13 → 36). Axis 2 — Dere Street, first coverage, 15 stations (York to the
+  pre-Hadrianic Scottish frontier). `pois.geojson` 1108 → 1152, `road_stations.geojson`
+  503 → 518. Full sourcing, dropped-candidate reasoning, and next-shift pointers in SHIFT_LOG.
 
 - 2026-08-28 — Shift 71: `[09-P0-1]` ancient-sources — 67 new citations across two research
   batches, high-confidence coverage 58.3% → 72.7% (266/456 → 333/458). Found and fixed a real bug
