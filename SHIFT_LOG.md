@@ -7,6 +7,168 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 82 — 2026-08-31 (this shift's own prompt claimed "Shift 3 of four")
+
+Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
+count (Shift 81 pushed `26f7900` as its last commit; this shift started there). Repo booted with
+`HEAD` detached at that real tip while local `main` didn't exist yet; `git fetch origin main` +
+`git checkout -B main origin/main` resolved it cleanly, same pattern documented by dozens of
+shifts before this one. `npm install` needed at session start (fresh cloud container) — clean,
+no spurious `package-lock.json` diff.
+
+### Board + backlog check
+
+Grepped `BOARD.md` for every open `- [ ]` ticket (14 total) rather than trusting a prior shift's
+list secondhand. Confirmed the same four P0s are still too large for one unattended session
+(`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[13-P0-2]`
+image-audit) and `[15-P0-1]`/`[14-P0-1]` stay explicitly human-blocked. No stale `[~]` claims.
+Checked the remaining P1/P2 tickets one at a time before picking Track B (see below) —
+`[02-P0-4]`'s glyph-PBF half and `[11-P1-5]` pmtiles both need local tooling unavailable in this
+sandbox; `[11-P1-6]` split-map-tsx (break up the 2,112-line `Map.tsx`) is a real but
+higher-blast-radius refactor better suited to a dedicated pass; `[10-P0-2]` three-depth-labels and
+`[05-P2-6]` i18n are both larger than they read from one line; `[11-P2-11]` next-major-upgrade was
+explicitly filed last shift as "needs a dedicated pass with a full manual smoke test," not a
+mixed-shift item. `research/` (the Overpass-fetch pipeline SHIFT_BRIEF.md's Axis 1 playbook
+points to) is still gitignored and empty in this container, confirming `FEATURE_BACKLOG.md`'s
+standing note — any board ticket assuming that pipeline exists needs its scope re-derived from
+scratch, not "extended."
+
+### Track B — `[06-P1-3]` `building-typology` (commit `7dcb059`)
+
+Picked this over the others because it was the one ticket I could verify was real and bounded
+directly against data already in the repo, rather than trusting the one-line board description.
+`app/Map.tsx`'s `ostia-buildings-fill` layer — the single shared source feeding all 40 curated
+sites' building-footprint color-coding, not just Ostia's despite the layer id — colors buildings
+by a `match` expression on 17 category strings. Diffed that list against every distinct `category`
+value actually present in `public/data/sites_buildings.geojson` (47,499 features) and found a
+real, verifiable gap: 9 categories genuinely in the data — `port` (57 buildings), `villa` (17),
+`library` (12), `amphitheater` (10), `gate` (8), `fountain` (9), `wall` (5), `aqueduct` (4),
+`bridge` (4), 126 buildings total — had no explicit color arm and were silently rendering in the
+flat fallback tan, indistinguishable from genuinely uncategorized OSM buildings. Added all 9,
+organized into a 6-family palette (sacred, civic & public, water & engineering, residential,
+economic & craft, spectacle/death/other) built around the 17 colors already shipped; those 17 are
+untouched, zero regression risk. **Deliberately did not invent the ticket's literal "~35-term"
+target** — `research/`'s categorizer (which would be the source of any additional vocabulary) is
+gitignored and empty here, so inventing categories with no data behind them would be exactly the
+kind of fake feature the project's guardrails rule out. Closed the ticket honestly at 26/26 real
+categories colored rather than leaving it open chasing a number with no data source, noted in
+`BOARD.md` why the count doesn't match the ticket's original phrasing. `npm run validate` (0
+errors, same 7 reviewed warnings) and `npm run build` (2,610 static pages) both clean before
+push.
+
+### Track A — image-coverage top-up, continuing Shift 81's exact handoff (commits `29b130d`, `fe8e6a7`)
+
+Shift 81's own "next shift should pick up" note named this precisely: `trade_routes.geojson`'s 8
+route LineStrings, `politics.geojson`'s remaining 25, `people_117.geojson`'s remaining 8, plus
+small mop-up on `sports.geojson` (5) and `health.geojson` (4) — flagging politics/people_117 as
+"genuinely hard... worth a fresh, focused research pass rather than more reuse-hunting."
+
+**Metrics tooling fix first** (commit `29b130d`) — before spending research budget, fixed the
+blind spot Shift 81 flagged by name: `scripts/metrics.mjs`'s "Has an image" line only ever
+measured `pois.geojson`, so the 106+ image records Shift 81 itself closed across thematic files
+never moved the headline number. Extended `collectThematicCount()` to also tally `image_url`
+presence across the 33 thematic files, added two new METRICS.md rows (thematic-only: 49.9%;
+combined: 53.9%) rather than redefining the existing pois-only row, which stays comparable against
+its own History table trend. Also applied the one legitimate cross-file reuse found while
+auditing the gap list: `health_aquae_patavinae` (Abano Terme) is the same physical site as
+`landmarks_117.geojson`'s already-verified Fontes Aponi entrance photo — reused, zero new research
+spend.
+
+**Two parallel research agents** for the genuine gaps (trade_routes/sports/health as one batch,
+politics/people_117 as a second, split so the harder senator/vigiles list got a dedicated pass
+rather than sharing budget with the easier route-commodity items). Both hit this sandbox's
+standing `commons.wikimedia.org`/`en.wikipedia.org` egress block on direct fetch — reconfirmed
+myself with a direct `WebFetch` test against a candidate URL, same `EGRESS_BLOCKED` every shift
+this month has logged — so every filename was verified through WebSearch snippet triangulation,
+not a live page load. Spot-verified two of the higher-stakes picks myself before applying
+(`Shrine_Caserma_dei_Vigili_Ostia_Antica_2006-09-08.jpg` and `Akiba_ben_joseph_a.jpg` both
+confirmed to really exist via targeted WebSearch) and independently verified the
+Lukuas/Temple-of-Zeus-at-Cyrene claim against a second source (46 columns of the outer colonnade
+undermined and burned in the Kitos War, 115 CE, restored under Marcus Aurelius) before trusting
+it — a check that paid off, since it's exactly the kind of specific historical claim that's easy
+to over-trust from a single search snippet.
+
+Applied (commit `fe8e6a7`): **trade_routes.geojson** 8 records — two different Ostia
+Piazzale-delle-Corporazioni mosaics for the two grain routes (a modius measure, two merchant
+ships), a Baetica-labeled Dressel 20 amphora sherd for the olive route, an African spatheion at
+the Narbo Via museum, Palmyra for the Silk Road's western terminus, Petra for the Incense Road,
+the Neumagen wine-ship funerary relief for the Gaul-Rhine wine route, and Shabwa's ruins. 13 → 5
+missing. **politics.geojson** 24 records — the 6 Rome vigiles cohorts plus the urban cohorts and
+equites singulares all honestly reuse one image apiece (Ostia's own excavated vigiles-barracks
+shrine, the Castra Praetoria wall, the Lateran facade) with captions stating plainly these aren't
+photos of that specific Rome station, which doesn't survive above ground; 9 senator hometowns as
+modern-town/site photos (Samosata's is the Atatürk Dam whose reservoir now covers the ancient
+city — the photo shows the dam, said so); a beneficiarii batch across the Danube/Balkan limes
+(Eining, Ptuj, Trebnje, Podgorica, Trilj, Humac). 25 → 1 missing. **people_117.geojson** 4
+records, including Aulus Platorius Nepos — the same person as `politics_governor_thracia`, one
+image (Milecastle 38's site inscription) applied to both ids for one research spend, not two. 8
+→ 4 missing. **health.geojson** 2 records (Sceaux-du-Gâtinais, Termini Imerese). 4 → 2 missing.
+
+**Genuine remaining gaps, not forced** — both agents independently returned honest NOT FOUNDs
+rather than weak matches, and I spent a little more of my own search budget on the sports.geojson
+gymnasiums specifically (Termessos, Corinth) before accepting the same conclusion: `node_bactra_
+silk`, `node_gaza_incense`, `route_amber_road`, `route_grain_sicily_rome`,
+`route_tin_cornwall_rome`, all 5 sports.geojson gymnasium records (each site has a populated
+Commons category — theatre, bouleuterion, stoa — but no dedicated gymnasium-building photo
+findable through search), `health_aquae_caeretanae`, `politics_beneficiarii_samum`,
+`person_attianus`, `person_statilius_crito`, `person_quintus_pompeius_falco`,
+`person_rabbi_ishmael_ben_elisha`. One item applied at low confidence rather than dropped:
+`person_rabbi_akiva`'s image is a much-later traditional depiction (no period portrait can exist
+under Jewish aniconic tradition), captioned as such — consistent with how the project has handled
+similar symbolic-image cases before, not a new precedent.
+
+Touched axes 4a (people), 6a (trade routes), 13 (political apparatus), 18 (health) plus the
+6-family building-typology deepen on the site-building layer that spans all 40 sites — five areas
+past the two-axis minimum, all `deepen`/`polish` rather than `add`, matching the board's own
+ratio guidance and this stage of the project (per Shift 81's own read: the formal feature backlog
+is exhausted, real work now lives in enrichment). Deliberately did **not** add fabricated new
+axis-20 (sports) content this shift — briefly researched whether the brief's suggested
+Ephesus/Alexandria athletic-guild HQs could be added alongside the existing Rome one, but found
+the Rome guild's own record already correctly flags itself `extant_117ce: false` (founded 143 CE
+under Antoninus Pius, 26 years past the snapshot) and neither of the other two candidate cities
+had a research trail solid enough to date confidently to 117 in the time available — skipped
+rather than force a shaky addition.
+
+### State, verification, next
+
+`npm run validate`: 0 errors on every run this shift, same 7 pre-existing reviewed warnings
+throughout, no new ones introduced. `npm run build`: clean before all three pushes (the pre-push
+hook's own gate). `npm run metrics -- --write`: run after each data commit; final state 1235
+POIs / 1682 thematic records, thematic-file image coverage 839 → 877 of 1682 (49.9% → 52.1%) from
+this shift's two data commits alone.
+
+Commits this shift: `7dcb059` (building-typology, Track B), `29b130d` (metrics.mjs tooling fix +
+one cross-file reuse), `fe8e6a7` (the two-agent image-research batch). All pushed to `main`
+incrementally as each piece validated, not batched to the end.
+
+**Next shift should pick up:**
+- **Track A:** `sports.geojson`'s 5 gymnasium gaps are the one cleanly-bounded piece left on this
+  exact thread — worth a pass with direct Commons category-page browsing rather than WebSearch
+  triangulation if a future environment has that egress open, since all 5 sites have populated
+  photo categories that just couldn't be enumerated through search snippets alone.
+  `politics_beneficiarii_samum`, the 4 remaining `people_117.geojson` figures, and
+  `health_aquae_caeretanae` are the last individually-hard singletons on this particular gap list
+  — small enough now that a future shift might reasonably fold them into a different research pass
+  rather than dedicating a whole session to five records. Beyond image top-up, most axes now have
+  substantial standing coverage (checked feature counts across all 25 thematic files this shift
+  before deciding not to force new axis-20 content — see above); a future Track A shift wanting
+  real `add` work rather than `deepen` should audit which axes are thinnest rather than assuming
+  breadth is still the gap, since the board's own framing (1 add : 2 deepen : 1 polish) suggests
+  this project is past its breadth phase.
+- **Track B:** `[11-P1-6]` split-map-tsx (break the 2,112-line `Map.tsx` into a layer registry) is
+  the most concretely-scoped remaining ticket, but it's a real refactor with real regression risk
+  across every layer on the map — worth a dedicated pass with careful before/after Playwright
+  verification, not a 20-30%-of-shift slot. `[10-P0-2]` three-depth-labels and `[05-P2-6]` i18n
+  both need their actual scope worked out before someone can commit to them mid-shift; neither has
+  enough detail in `BOARD.md`'s one-liner to size confidently.
+- **General:** the `commons.wikimedia.org`/`en.wikipedia.org` egress block is confirmed again this
+  shift (both research agents independently, plus my own direct `WebFetch` test) — this is now
+  well past a dozen shifts logging the identical finding across at least three different
+  environments' worth of research. Still worth someone outside the shift loop actually looking at
+  the network policy.
+
+---
+
 ## Shift 81 — 2026-08-31 (this shift's own prompt claimed "Shift 2 of four")
 
 Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential

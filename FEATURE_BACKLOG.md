@@ -1241,6 +1241,13 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
 
 ## Shipped (moved from above; newest on top)
 
+- 2026-08-31 — Shift 82: Board `[06-P1-3]` building-typology — colored 9 previously-uncategorized
+  building types (port, villa, library, amphitheater, gate, fountain, wall, aqueduct, bridge; 126
+  buildings across the 40 curated sites) that were silently rendering in the flat fallback tan,
+  organized into a 6-family palette. `scripts/metrics.mjs` now measures image coverage across the
+  33 thematic files too, not just `pois.geojson` (a blind spot flagged by name in the last two
+  shift logs). Image top-up across trade_routes/politics/people_117/health (axes 4a/6a/13/18):
+  38 records closed via two parallel research agents plus one cross-file reuse.
 - 2026-08-30 — Shift 77: Axis 3a — 44 new forts across two fresh frontiers: eastern (Arabia,
   Judaea, Cappadocia, Mesopotamia — 9) and Roman Britain (Wales, Pennines, Fosse Way — 35), past
   the 40-feature floor. Axis 4 — 20 new people + 8 new events for the 117 CE living-empire layer,
