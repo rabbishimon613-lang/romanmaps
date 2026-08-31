@@ -1319,6 +1319,7 @@ export default function Map() {
                 .setLngLat(coords as [number, number])
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px;">${escapeHtml(p.road || "")}${p.category ? " · " + escapeHtml(prettyCategory(p.category)) : ""}</div>
                      ${distLine}
@@ -1386,6 +1387,7 @@ export default function Map() {
                 .setLngLat(lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      ${dateLine}
                      ${noteLine}
@@ -1452,6 +1454,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.commodity || "")} · ${escapeHtml(p.direction || "")}</div>
                      ${noteLine}
@@ -1469,6 +1472,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.route || "")}</div>
                      <div style="margin-top:4px; max-width:220px;">${escapeHtml(p.role || "")}</div>
@@ -1523,6 +1527,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 220px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(String(p.year ?? ""))} CE · ${escapeHtml(p.type || "")}</div>
                      <div style="margin-top:4px;">${escapeHtml(p.one_line || "")}</div>
@@ -1577,6 +1582,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(catLabel[p.category] || p.category || "")}</div>
                      ${noteLine}
@@ -1623,6 +1629,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">Mint · ${escapeHtml(p.metal || "")}</div>
                      ${noteLine}
@@ -1674,6 +1681,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(catLabel[p.category] || (p.category ? prettyCategory(p.category) : ""))}${p.first_worshipped ? " · " + escapeHtml(p.first_worshipped) : ""}</div>
                      ${noteLine}
@@ -1731,6 +1739,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(catLabel[p.category] || p.category || "")}</div>
                      ${noteLine}
@@ -1796,6 +1805,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name_english || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.province || "")}${p.extant_117ce === false ? " · not yet built in 117 CE" : ""}</div>
                      ${noteLine}
@@ -1855,6 +1865,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(cultCat)}</div>
                      ${noteLine}
@@ -1909,6 +1920,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(name)}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(catLabel[p.category] || p.category || "")}</div>
                      ${noteLine}
@@ -1970,6 +1982,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(traditionLabel[p.tradition] || p.tradition || "")}${p.attestation ? " · " + escapeHtml(attestationLabel[p.attestation] || p.attestation) : ""}</div>
                      ${noteLine}
@@ -2025,6 +2038,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(subLine)}</div>
                      ${noteLine}
@@ -2079,6 +2093,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(subLine)}</div>
                      ${noteLine}
@@ -2138,6 +2153,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(craftLabel[p.craft] || p.craft || "")}</div>
                      ${noteLine}
@@ -2223,6 +2239,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(subLine)}</div>
                      ${noteLine}
@@ -2241,6 +2258,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.from || "")} &rarr; ${escapeHtml(p.to || "")}</div>
                      ${noteLine}
                    </div>`,
@@ -2300,6 +2318,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(categoryLabel[p.category] || p.category || "")}</div>
                      ${noteLine}
@@ -2356,6 +2375,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(typeLabel[p.type] || p.type || "")}</div>
                      ${noteLine}
@@ -2418,6 +2438,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(relationLabel[p.relation_to_rome] || p.relation_to_rome || "")}</div>
                      ${noteLine}
@@ -2509,6 +2530,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.family || "")}</div>
                      ${noteLine}
@@ -2563,6 +2585,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name_english || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(cultureLabel)} ${escapeHtml(p.type || "")}</div>
                      ${noteLine}
@@ -2610,6 +2633,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">Conventus center · ${escapeHtml(p.province || "")}</div>
                      ${noteLine}
@@ -2681,6 +2705,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(commodityLabel[p.commodity] || p.commodity || "")}</div>
                      ${noteLine}
@@ -2749,6 +2774,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.regions || "")}</div>
                      ${noteLine}
@@ -2809,6 +2835,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.regions || "")}</div>
                      ${noteLine}
@@ -2865,6 +2892,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.regions || "")}</div>
                      ${noteLine}
@@ -2925,6 +2953,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(ethnicGroupLabel[p.group] || p.group || "")}</div>
                      ${noteLine}
@@ -2978,6 +3007,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(windTypeLabel[p.type] || p.type || "")}</div>
                      ${noteLine}
@@ -3039,6 +3069,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.animals || "")}</div>
                      ${noteLine}
@@ -3057,6 +3088,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.animals || "")}</div>
                      ${noteLine}
@@ -3129,6 +3161,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.regions || "")}</div>
                      ${noteLine}
@@ -3177,6 +3210,7 @@ export default function Map() {
                 .setLngLat(e.lngLat)
                 .setHTML(
                   `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 260px;">
+                     ${popupImageHtml(p)}
                      <div style="font-weight: 600;">${escapeHtml(p.name || "")}</div>
                      <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(p.category ? prettyCategory(p.category) : "")}</div>
                      ${noteLine}
@@ -3269,6 +3303,26 @@ function escapeHtml(s: string): string {
   return s.replace(/[&<>"']/g, (c) =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" } as any)[c],
   );
+}
+
+/** Thumbnail + credit line for a thematic-layer hover popup, built from the same `image_url`/
+ * `image_credit` fields every axis file has carried since SHIFT_BRIEF.md §1.6 — those fields
+ * have been researched and populated across ~30 thematic files for many shifts, but the raw-HTML
+ * popups in this file never rendered them (only pois.geojson's PlaceDetails card did). Degrades
+ * the same way PlaceDetails.tsx's hero image does: a failed load hides the `<img>` via `onerror`
+ * rather than leaving a broken-image icon, so a wrong or blocked URL is a soft failure, not a
+ * layout break. Returns "" when a record has no image, so callers can splice it in unconditionally. */
+function popupImageHtml(p: any): string {
+  if (!p || !p.image_url) return "";
+  const credit = p.image_credit
+    ? `<div style="color:#5f6368; font-size:9px; margin-top:2px;">${escapeHtml(p.image_credit)}</div>`
+    : "";
+  return `<div style="margin-bottom:6px;">
+             <img src="${escapeHtml(p.image_url)}" alt="${escapeHtml(p.image_alt || p.name || "")}"
+                  style="width:100%; max-height:110px; object-fit:cover; border-radius:4px; display:block;"
+                  onerror="this.closest('div').style.display='none';" />
+             ${credit}
+           </div>`;
 }
 
 /** Turn a raw snake_case category id into a readable label ("imperial_altar" → "Imperial altar").

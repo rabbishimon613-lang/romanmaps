@@ -90,6 +90,7 @@ export default function PeopleMarkers() {
             .setLngLat([lng, lat])
             .setHTML(
               `<div style="font: 13px Roboto, sans-serif; color: #202124; max-width: 240px;">
+                 ${popupImageHtml(props)}
                  <div style="font-weight: 600;">${escapeHtml(props.name || "")}</div>
                  <div style="color:#5f6368; font-size:11px; margin-top:2px;">${escapeHtml(props.role || "")} · ${escapeHtml(props.location_117 || "")}</div>
                  <div style="margin-top:6px;">${escapeHtml(props.one_line || "")}</div>
@@ -121,4 +122,20 @@ function escapeHtml(s: string): string {
   return String(s).replace(/[&<>"']/g, (c) =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" } as any)[c],
   );
+}
+
+/** Same graceful-degrading thumbnail treatment as app/Map.tsx's thematic-layer popups — see that
+ * file's popupImageHtml for the full rationale (people_117.geojson's image_url research has been
+ * accumulating for many shifts with nothing on the live site ever rendering it). */
+function popupImageHtml(p: any): string {
+  if (!p || !p.image_url) return "";
+  const credit = p.image_credit
+    ? `<div style="color:#5f6368; font-size:9px; margin-top:2px;">${escapeHtml(p.image_credit)}</div>`
+    : "";
+  return `<div style="margin-bottom:6px;">
+             <img src="${escapeHtml(p.image_url)}" alt="${escapeHtml(p.image_alt || p.name || "")}"
+                  style="width:100%; max-height:110px; object-fit:cover; border-radius:4px; display:block;"
+                  onerror="this.closest('div').style.display='none';" />
+             ${credit}
+           </div>`;
 }

@@ -17,6 +17,40 @@ if (!targetPath || !topupPath) {
   process.exit(1);
 }
 
+// Fallback anchor for records with no `confidence` field: locate `"sources": [...]` (string-aware
+// bracket counting, since a source string could in principle contain a literal "[" or "]") and
+// return the indentation to reuse plus whether a trailing comma already follows the array.
+function findSourcesArrayEnd(window) {
+  const startMatch = window.match(/( *)"sources":\s*\[/);
+  if (!startMatch) return null;
+  const indent = startMatch[1];
+  let i = startMatch.index + startMatch[0].length - 1; // position of the opening '['
+  let depth = 0;
+  let inString = false;
+  let escaped = false;
+  for (; i < window.length; i++) {
+    const ch = window[i];
+    if (inString) {
+      if (escaped) escaped = false;
+      else if (ch === "\\") escaped = true;
+      else if (ch === '"') inString = false;
+      continue;
+    }
+    if (ch === '"') inString = true;
+    else if (ch === "[") depth++;
+    else if (ch === "]") {
+      depth--;
+      if (depth === 0) {
+        const endIdx = i + 1;
+        const rest = window.slice(endIdx);
+        const hasComma = /^\s*,/.test(rest);
+        return { indent, endIdx, hasComma };
+      }
+    }
+  }
+  return null;
+}
+
 const raw = readFileSync(targetPath, "utf8");
 const items = JSON.parse(readFileSync(topupPath, "utf8"));
 
@@ -37,24 +71,36 @@ for (const item of items) {
     continue;
   }
   // Find the end of this record's properties block (next "}," at the properties-close depth) —
-  // simpler: find the "confidence" line within a bounded window after the id, since every poi
-  // record has one and it's reliably the last scalar key before image_url/sources tail fields.
+  // simpler: find the "confidence" line within a bounded window after the id, since most records
+  // have one and it's reliably the last scalar key before image_url/sources tail fields. A
+  // schema variant without `confidence` (seen in conventus.geojson/people_117.geojson) falls
+  // back to anchoring right after the `sources` array's closing bracket instead.
   const windowEnd = text.indexOf('"id": "', idIdx + idNeedle.length);
   const searchWindow = text.slice(idIdx, windowEnd === -1 ? text.length : windowEnd);
-  const confMatch = searchWindow.match(/( *)"confidence": "(high|medium|low)"(,?)/);
-  if (!confMatch) {
-    skipped.push(`${id}: no confidence field found nearby`);
-    continue;
-  }
   if (text.indexOf('"image_url"', idIdx) !== -1 && text.indexOf('"image_url"', idIdx) < (windowEnd === -1 ? text.length : windowEnd)) {
     skipped.push(`${id}: already has image_url`);
     continue;
   }
-  const indent = confMatch[1];
-  const alreadyHasComma = confMatch[3] === ",";
+  const confMatch = searchWindow.match(/( *)"confidence": "(high|medium|low)"(,?)/);
   const nl = text.includes("\r\n") ? "\r\n" : "\n";
   const escape = (s) => JSON.stringify(s);
-  const confAbsIdx = idIdx + confMatch.index + confMatch[0].length;
+  let indent;
+  let alreadyHasComma;
+  let confAbsIdx;
+  if (confMatch) {
+    indent = confMatch[1];
+    alreadyHasComma = confMatch[3] === ",";
+    confAbsIdx = idIdx + confMatch.index + confMatch[0].length;
+  } else {
+    const anchor = findSourcesArrayEnd(searchWindow);
+    if (!anchor) {
+      skipped.push(`${id}: no confidence field or sources array found nearby`);
+      continue;
+    }
+    indent = anchor.indent;
+    alreadyHasComma = anchor.hasComma;
+    confAbsIdx = idIdx + anchor.endIdx;
+  }
   // confidence isn't always the record's last property — a record that already has
   // ancient_sources (or any other field) after it needs a trailing comma on this insertion,
   // but one right before the closing "}" would itself be invalid JSON. Decide by looking at

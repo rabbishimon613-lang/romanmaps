@@ -118,7 +118,9 @@
           "Itin. Ant. 61 m.p. ab Urbe",
           "https://pleiades.stoa.org/places/433143"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tempio di Giove Anxur - Galleria.JPG?width=800",
+        "image_credit": "Temple of Jupiter Anxur, Terracina — Wikimedia Commons (reused, same site as euerg_tarracina)"
       }
     },
     {
@@ -933,7 +935,10 @@
           "Itin. Ant. 319.4",
           "https://en.wikipedia.org/wiki/Thessaloniki"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ρωμαϊκή Αγορά της Θεσσαλονίκης, Roman Forum ThessalonikI, Greece.jpg?width=800",
+        "image_credit": "Roman Forum of Thessalonica · Wikimedia Commons (reused, same site as mint_thessalonica)",
+        "image_alt": "Remains of the Roman-era forum in Thessaloniki"
       }
     },
     {
@@ -1029,7 +1034,9 @@
           "Itin. Ant. 320.2",
           "https://en.wikipedia.org/wiki/Philippi"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Philippi_1st_battle_map.jpg?width=800",
+        "image_credit": "Map of the first Battle of Philippi, 42 BCE · Wikimedia Commons (reused, same site as poi_battle_philippi)"
       }
     },
     {
@@ -2446,7 +2453,9 @@
         "sources": [
           "Itin. Ant."
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sagunto Teatro.JPG?width=800",
+        "image_credit": "Roman theatre of Saguntum (Sagunto) · Wikimedia Commons (reused, same site as politics_senator_saguntum)"
       }
     },
     {
@@ -2721,7 +2730,9 @@
         "sources": [
           "Itin. Ant."
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dama_de_Baza_(piedra_caliza_policromada).jpg?width=800",
+        "image_credit": "Lady of Baza, polychrome limestone, National Archaeological Museum of Spain. Wikimedia Commons. (reused, same site as substrate_iberian_baza)"
       }
     },
     {
@@ -2810,7 +2821,9 @@
         "sources": [
           "Itin. Ant."
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/C%C3%A1stulo,_Mosaico_de_los_Amores_-_%C3%81ngel_M._Felic%C3%ADsimo.jpg?width=800",
+        "image_credit": "Mosaic of the Amores, Castulo archaeological site, Linares. Photo by Angel M. Felicisimo, Wikimedia Commons, CC BY-SA. (reused, same site as substrate_iberian_castulo)"
       }
     },
     {
@@ -2991,7 +3004,9 @@
         "sources": [
           "Itin. Ant. 414"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carmona_necr%C3%B3polis_elefante82.JPG?width=800",
+        "image_credit": "Elephant Tomb, Roman necropolis of Carmona. Wikimedia Commons. (reused, same site as substrate_iberian_carmona)"
       }
     },
     {
@@ -3368,7 +3383,10 @@
           "J.P. Oleson et al., \"Preliminary Report of the Humayma Excavation Project 2002, 2004-2005: The Roman Fort\"",
           "Bryn Mawr Classical Review 2012.01.36"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kastell_Hauara,_Principia_und_Horrea,_Limes_Arabicus.svg?width=800",
+        "image_credit": "Mediatus, Wikimedia Commons (CC BY-SA) — plan of the fort's principia and horrea (reused, same site as poi_auxfort_humayma)",
+        "image_alt": "Plan drawing of the Roman fort at Hauarra (Humayma), showing its headquarters building and granaries"
       }
     },
     {
@@ -5684,7 +5702,9 @@
           "Itin. Ant., Iter ab Arimino Placentiam",
           "Itinerarium Burdigalense, civitas Mutena"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marble_bust_of_Mark_Antony_(Vatican_Museums).jpg?width=800",
+        "image_credit": "Marble bust of Mark Antony, Vatican Museums · Wikimedia Commons (reused, same site as poi_battle_mutina)"
       }
     },
     {
@@ -6099,7 +6119,9 @@
           "Tacitus, Histories 2.23-2.45",
           "Wikipedia, \"Calvatone\""
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vittoria_Alata_di_Calvatone,_Archaeological_Museum_San_Lorenzo_(Cremona)_06.jpg?width=800",
+        "image_credit": "Winged Victory of Calvatone, bronze statue found near the Bedriacum battle site, Archaeological Museum San Lorenzo, Cremona · Wikimedia Commons (reused, same site as poi_battle_first_bedriacum)"
       }
     },
     {
@@ -6293,7 +6315,9 @@
           "Itinerarium Antonini (Aquileia-Bononia route, Concordia at 31 m.p.)",
           "Strabo, Geography 5.1.8"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Foro%20Romano%20Aquileia.jpg?width=800",
+        "image_credit": "Roman Forum, Aquileia · Wikimedia Commons (reused, same site as node_aquileia)"
       }
     },
     {
@@ -6462,7 +6486,9 @@
           "Itinerarium Antonini (Via Cassia, cumulative ~CII m.p. ab Urbe)",
           "Livy 2.9"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomba della Pellegrina a Chiusi.JPG?width=800",
+        "image_credit": "Wikimedia Commons, Tomba della Pellegrina near Chiusi (reused, same site as substrate_chiusi)"
       }
     },
     {
@@ -6510,7 +6536,9 @@
           "Itinerarium Antonini (Via Cassia stage)",
           "Pliny, Naturalis Historia 35.160"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arretine_ware_poin%C3%A7on.JPG?width=800",
+        "image_credit": "Arretine ware potter's stamp (poincon) · Wikimedia Commons (CC BY-SA) (reused, same site as poi_arretium_pottery)"
       }
     },
     {
@@ -6743,7 +6771,9 @@
           "Tabula Peutingeriana (Via Clodia terminus)",
           "Livy 39.55"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Terme di Saturnia - Cascate del Mulino-0518.jpg?width=800",
+        "image_credit": "Cascate del Mulino thermal terraces, Saturnia — Wikimedia Commons (reused, same site as euerg_saturnia)"
       }
     },
     {
@@ -6814,7 +6844,9 @@
           "Itinerarium Antonini, Via Aurelia stage",
           "https://en.wikipedia.org/wiki/Pyrgi"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pyrgi tablets.jpg?width=800",
+        "image_credit": "Wikimedia Commons, the Pyrgi gold tablets found at the sanctuary (reused, same site as substrate_pyrgi)"
       }
     },
     {
@@ -7887,7 +7919,10 @@
           "https://en.wikipedia.org/wiki/Margum_(city)",
           "https://topostext.org/work/231"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Margum_ausgrabung_2011_(4).JPG?width=800",
+        "image_credit": "Margum excavation, 2011 · Wikimedia Commons (reused, same site as poi_fort_margum)",
+        "image_alt": "2011 excavation photograph of the Margum fort site"
       }
     },
     {
@@ -9966,7 +10001,9 @@
         "sources": [
           "Antonine Itinerary (Cuntz) 301: Casinum VII"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Casinum Amphitheatre.jpg?width=800",
+        "image_credit": "Roman amphitheatre of Casinum, Cassino · Wikimedia Commons (reused, same site as politics_senator_casinum)"
       }
     },
     {
@@ -10880,7 +10917,9 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Eboracum"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Multangular_Tower_York.jpg?width=800",
+        "image_credit": "The Multangular Tower, surviving corner of the Eboracum (York) legionary fortress walls, Legio IX Hispana base · Wikimedia Commons (reused, same site as poi_fortress_ix_hispana_eboracum)"
       }
     },
     {
@@ -11258,7 +11297,10 @@
           "https://en.wikipedia.org/wiki/Perga",
           "https://en.wikipedia.org/wiki/Via_Sebaste"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Perge_South_Baths_Palaestra_room_V_to_left,_next_IV_and_fragments_in_2012_6905.jpg?width=800",
+        "image_credit": "Perge, Roman thermae, Palaestra · Wikimedia Commons (reused, same site as sport_gymnasium_perge)",
+        "image_alt": "Palaestra rooms of the Roman baths and gymnasium at Perge"
       }
     },
     {
@@ -11966,7 +12008,9 @@
           "https://en.wikipedia.org/wiki/Eboracum",
           "https://en.wikipedia.org/wiki/Dere_Street"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Multangular_Tower_York.jpg?width=800",
+        "image_credit": "The Multangular Tower, surviving corner of the Eboracum (York) legionary fortress walls, Legio IX Hispana base · Wikimedia Commons (reused, same site as poi_fortress_ix_hispana_eboracum)"
       }
     },
     {
@@ -12120,7 +12164,9 @@
           "https://en.wikipedia.org/wiki/Vinovia",
           "https://www.durham.ac.uk/departments/academic/archaeology/research/archaeology-research-projects/binchester-roman-fort/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Binchester_Roman_Fort.jpg?width=800",
+        "image_credit": "Photograph via Wikimedia Commons (reused, same site as poi_auxfort_vinovia)"
       }
     },
     {
