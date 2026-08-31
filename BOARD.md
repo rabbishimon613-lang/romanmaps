@@ -1289,9 +1289,27 @@ to prevent. Building locally to *test* your own work is expected and fine.
       meant the actual glyph rendering itself couldn't be screenshotted here; text-layer syntax
       and data loading were confirmed instead.
 - [ ] `[12-P1-4]` **`fuzzy-dates`** `fix` — `{earliest, latest, display}` date objects.
-- [~] `[11-P2-10]` **`next-upgrade`** `fix` — claimed by cloud shift (scheduled), 2026-08-31 06:xx.
-      `next@14.2.5` advisory flagged in shift 1 and never actioned. Deliberate upgrade with a
-      smoke test.
+- [x] `[11-P2-10]` **`next-upgrade`** `fix` — Done 2026-08-31 by cloud shift (scheduled). Bumped
+      `next` 14.2.5 → **14.2.35**, the latest patch on the same minor line (no App Router /
+      Server Actions / React-19 breaking changes in scope, since this stays inside 14.2.x).
+      `npm install`, `npx tsc --noEmit`, `rm -rf .next && npm run build` (2,610 static pages,
+      clean), and `npm run validate` (0 errors, the same 7 pre-existing reviewed warnings) all
+      ran clean before commit. `next-env.d.ts`'s one-line doc-link comment auto-updated as part
+      of the same `next` version bump; left as-is, it's generated. **Not fully closed**: `npm
+      audit` still reports 2 high-severity advisories against `next`/`postcss` that only resolve
+      on `next@16.3.3` — a major-version jump (React 19, App Router changes) is a materially
+      bigger, riskier lift than a patch bump and out of scope for an unattended "deliberate
+      upgrade with a smoke test" ticket. Filed as a new ticket below (`[11-P2-11]`) rather than
+      attempted here.
+- [ ] `[11-P2-11]` **`next-major-upgrade`** `fix` — `next@14.2.35`'s remaining `npm audit` high-
+      severity advisories (Server Actions DoS/SSRF, middleware cache-poisoning/bypass, RSC cache
+      confusion — see `[11-P2-10]`'s note) only resolve on `next@16.3.3`. This app doesn't use
+      Server Actions, middleware, or i18n routing (grepped `app/` and `next.config.js` before
+      filing this — confirmed none of those APIs are in use), so the practical exposure looks low,
+      but a real major-version upgrade (React 18→19, App Router behavior changes, `next.config.js`
+      option renames) needs a dedicated pass with a full manual smoke test across every route
+      (map, `/site/*`, `/place/*`, `/province/*`, `/hub/*`, sitemap/robots/OG images) — not
+      something to do unattended inside a mixed data+feature shift.
 - [x] `[06-P2-6]` **`priority-cities`** `add` — Verified 2026-08-26 by cloud shift 63. Cloud
       shift 59's "Priority cities: 29 curated POIs for Alexandria, Carthage, Antioch, Caesarea
       Maritima, Londinium, Lugdunum, Tarraco, Pergamon" commit already delivered this ticket's
