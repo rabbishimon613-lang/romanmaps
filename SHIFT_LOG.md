@@ -7,6 +7,175 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 83 — 2026-08-31 (this shift's own prompt claimed "Shift 4 of four")
+
+Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
+count (Shift 82 pushed `7579799` as its last commit; this shift started there). Repo booted with
+`HEAD` detached at that tip while local `main` pointed at a stale `5093cbe` ("Shift 56") from a
+history that had actually diverged entirely (`git merge-base` found no common ancestor with
+current `origin/main` — a rewrite happened upstream of this container's stale local ref at some
+point, not something this shift caused). `git fetch origin main` + `git checkout -B main
+origin/main` resolved it cleanly onto the real tip, same pattern documented by dozens of shifts
+before this one. `npm install` needed at session start (fresh cloud container), clean.
+
+### Board + backlog check
+
+Grepped `BOARD.md` for every open `- [ ]` ticket (14, unchanged from Shift 82's count) and
+confirmed the same read: the four P0s (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2,
+`[03-P0-2]` card-rebuild, `[13-P0-2]` image-audit — the last one's "audit all 303 images" is now
+badly stale against 1,712 actual images and would require viewing every one, impossible without
+image-fetch access in this sandbox anyway) are still too large or infeasible for one unattended
+session, `[15-P0-1]`/`[14-P0-1]` stay human-blocked, and the remaining P1/P2 tickets
+(`[02-P0-4]` glyph-PBF half, `[11-P1-5]` pmtiles, `[11-P1-6]` split-map-tsx, `[10-P0-2]`
+three-depth-labels, `[06-P1-5]` finds, `[05-P2-6]` i18n, `[12-P1-4]` fuzzy-dates,
+`[11-P2-11]` next-major-upgrade) each need local tooling this sandbox doesn't have, or are
+genuinely large refactors better suited to a dedicated pass, or need scope worked out before
+committing mid-shift — the same conclusion at least four prior shifts have independently reached
+on this exact list. No stale `[~]` claims.
+
+### Track B — a real finding, not a ticket: thematic-layer popups never rendered images (commit `15e6a64`)
+
+Before picking a ticket, checked whether the image-research investment this project has been
+pouring into 33 thematic files (politics, mints, religions, imperial_cult, conventus, health,
+euergetism, letters, diplomacy, sports, penal, road_stations, trade_routes, and more — dozens of
+shifts, 900+ `image_url` fields by this point) was actually visible anywhere. It wasn't.
+`app/Map.tsx`'s ~34 thematic-layer hover popups are raw HTML strings built inline per layer, and
+none of them referenced `image_url`/`image_credit` — confirmed with a flat `grep -n "image_url"
+app/Map.tsx` returning zero hits. Only `pois.geojson`, via `PoiMarkers.tsx` → `selectPoi()` →
+`PlaceDetails.tsx`'s full card, ever showed an image; every other axis file's research has been
+landing on disk and rendering nowhere on the live site. `PeopleMarkers.tsx`'s own click popup for
+`people_117.geojson` had the identical gap — its own code comment even says "not the full
+PlaceDetails panel," but never mentions images either.
+
+Fixed both. Added a shared `popupImageHtml(p)` helper (thumbnail + credit caption, `onerror`
+hides the wrapper the same way `PlaceDetails.tsx`'s hero image already degrades on a dead URL)
+and mechanically spliced it into all 34 of `Map.tsx`'s popup templates plus `PeopleMarkers.tsx`'s
+one — verified the splice was safe first by confirming 34 of 35 candidate template-opening lines
+had `const p: any = f.properties || {}` in scope (the 35th is the raw 16k-place gazetteer search
+popup, which has no image data and was correctly left alone). Verified live with Playwright, not
+just `tsc`: hovering a `mints-point` marker at 1280×900 shows the `<img>` tag in the popup DOM
+with the correct `src`/credit, and in this sandbox (`commons.wikimedia.org` egress-blocked,
+reconfirmed via `curl` — same standing limitation every image-touching shift this month has hit)
+the `onerror` handler visibly collapses the image wrapper to `display:none` rather than showing a
+broken-image icon — exactly the intended degrade path. Repeated the check at 375×812 dark mode.
+Logged as `[13-P1-5]` in `BOARD.md` since it wasn't an existing ticket.
+
+### Track A — closing the road_stations.geojson image gap, the largest untouched backlog in the project
+
+Once the fix above meant an image on any thematic file would actually render, audited which of
+the "missing image" counts per file were even real. Two false leads ruled out before spending any
+research budget: `agriculture.geojson` (28/28 missing) and `languages.geojson` (13/13) and
+`lines.geojson` (24/24) all render through simple MapLibre-native hover popups built directly from
+paint properties, not the properties-driven HTML template path — grepped their `registerThematic`
+blocks in `Map.tsx` and confirmed none ever reference `image_url` even after this shift's fix,
+because these are polygon/line zone overlays with their own separate popup code, not per-record
+cards. Their 100%-missing numbers are a metrics-script artifact, not a content gap — didn't touch
+them.
+
+`road_stations.geojson`, by contrast, is a real, large, genuine gap: 518 stations, only 3 had an
+`image_url` before this shift, and none of the ~15 image-top-up shifts before this one had ever
+touched it (`grep`-checked `SHIFT_LOG.md`/`FEATURE_BACKLOG.md` — every prior image batch worked
+`pois.geojson` or one of the other thematic files). Closed 67 of the 419 `identified: true` gap
+(70/518 → 13.5% coverage) across three commits:
+
+1. **21 records via cross-file reuse**, folded into commit `15e6a64` alongside the popup-image
+   fix — matched by *coordinate distance*, not name string alone, after two real false positives
+   surfaced testing
+   the naive name-only approach: `station_praetorium` (Via Augusta, Spain) name-matched
+   `poi_fort_praetorium_i`, a same-named Dacian fort 1,817 km away that also isn't extant in 117
+   CE; `station_atina_lucana` (Via Popilia, Basilicata) name-matched `euerg_atina`, a different
+   Atina in Latium 199 km away. Both dropped. Applied the 21 that passed a ≤40 km sanity check
+   (`station_bedriacum` at 24.1 km kept and verified by reading both records' notes — Bedriacum's
+   exact site is genuinely disputed in the literature, so two shifts' independent coordinate
+   estimates landing 24 km apart for the same historical battle is expected, not a mismatch).
+2. **19 records, Roman Britain roads** (Watling Street, Fosse Way, Stanegate, Dere Street, Ermine
+   Street) via a dedicated WebSearch research agent — commit `e5644f3`.
+3. **27 records, Italian roads radiating from Rome plus Cisalpine roads** (Via Flaminia, Aurelia,
+   Cassia, Salaria, Valeria, Latina, Clodia, Praenestina, Postumia, Aemilia) via a second
+   dedicated agent — commit `b6e23df`. This agent's own report is worth preserving: it caught and
+   rejected three name-collision traps mid-research (a "Cales" Commons hit that was the unrelated
+   Campanian Cales, not Cagli on the Flaminia; a Trieste theatre photo nearly mismatched to
+   Otricoli; a Budapest "Aquincum" hit confused with the Latina town) — the same class of error
+   this shift's own cross-file matching caught, now also showing up inside single-agent research,
+   which argues for keeping the "verify by disambiguating search, not name alone" instruction in
+   any future road-station research prompt.
+
+Both agents were instructed to skip rather than force a match when no site-specific Commons file
+could be confirmed — combined they skipped roughly 100 candidates (minor fortlets, vici, and
+Italian towns with no confirmable image) rather than inventing weak matches. `394 - 27 - 19 - 21 =
+352` `identified: true` road stations remain image-less; every skip is named in the two commits.
+
+Every batch validated end to end before commit: JSON re-parse + feature-count check (built into
+`scripts/apply-image-topup.mjs`), `npm run validate` (0 errors, same 7 reviewed warnings
+throughout), `npm run build` (clean) before each push.
+
+### Tooling — apply-image-topup.mjs's confidence-anchor gap (folded into commit `15e6a64`)
+
+`FEATURE_BACKLOG.md` had this flagged by name from Shift 80: `scripts/apply-image-topup.mjs`
+anchors its insertion point on the record's `confidence` field, and silently no-ops (`skip: no
+confidence field found nearby`) on the handful of `conventus.geojson`/`people_117.geojson`-shaped
+records from an older schema variant that never got one. Added a string-aware `sources`-array-end
+fallback anchor (`findSourcesArrayEnd()`, bracket-depth counting that respects quoted strings) and
+tested it on a scratch copy of `conventus.geojson` before touching real data. Used the fixed
+script for the cross-file-reuse batch below, which is exactly the failure mode it was blocking.
+
+### Track A — image top-up, 34 more records via verified cross-file reuse (commit `58399b2`)
+
+Applied the same distance-verified reuse method to `conventus.geojson` (+2), `diplomacy_117.geojson`
+(+4), `euergetism.geojson` (+3), `imperial_cult.geojson` (+4), `letters.geojson` (+8),
+`religions_117.geojson` (+2), `sports.geojson` (+3), `penal.geojson` (+3), `substrate.geojson`
+(+5). One more rejected match worth logging: `letters_rescript_byzantium_embassies` name/proximity
+-matched `mint_chalcedon`, but Byzantium and Chalcedon are two distinct ancient cities on opposite
+shores of the Bosphorus, and the candidate image was itself a 451 CE Council-of-Chalcedon
+engraving — wrong place and wrong century for a story about Byzantium's embassy costs under
+Trajan. Dropped rather than forced. One caption rewritten rather than reused verbatim:
+`diplomacy_maroboduus_ravenna_exile`'s matched source image described a building "during
+Thumelicus's lifetime" — true for that record's own subject, not for Maroboduus, whose exile and
+likely death predate the building by a few years, so the reused caption was reworded to state only
+what's verifiable (the building's date), not implying a lifetime overlap the record doesn't
+support.
+
+**Explicitly did not** apply this same bulk method to `pois.geojson`'s 501-record gap — tested it
+first and the loose `modern_location` string ("Rome, Italy, Roman Forum") matched `poi_rostra` to
+`poi_curia_julia`'s image and a dozen other adjacent-but-distinct Forum buildings within meters of
+each other. That's fine for a thematic file's city-level record but wrong for `pois.geojson`,
+where every record is one specific named building — reusing a neighbor's photo would misrepresent
+a specific monument as photographed. `pois.geojson`'s gap needs real per-building research (the
+`[13-P1-4]` ticket's still-open "top 100 POIs" half), not proximity reuse; didn't force it.
+
+### State, verification, next
+
+`npm run validate`: 0 errors on every run this shift, same 7 pre-existing reviewed warnings
+throughout. `npm run build`: clean before every push (pre-push hook's own gate). `npm run metrics
+-- --write`: thematic-file image coverage 52.1% → 58.1% (877 → 978 of 1682) this shift; combined
+`pois.geojson` + thematic coverage 55.2% → 58.7%.
+
+Commits this shift, in order: `15e6a64` (popup-image fix + apply-image-topup.mjs tooling fix,
+Track B), `58399b2` (34-record cross-file reuse batch), `8a14127`/`2b40228` (metrics refreshes),
+`475a141` (BOARD.md ticket log), `e5644f3` (19 Britain road stations), `b6e23df` (27 Italy road
+stations). All pushed to `main` incrementally, not batched to the end.
+
+**Next shift should pick up:**
+- **Track A:** `road_stations.geojson` still has ~352 `identified: true` stations with no image —
+  the single largest remaining image backlog in the project, now that it's confirmed to actually
+  render. Good candidate roads for a fresh research pass: Via Egnatia (25 missing), Via Militaris
+  (21), Via Traiana Nova (17), Via Domitia (16), Via de la Plata (8), Via Sebaste (6), Via Cottia
+  (5) — none touched yet this shift. `pois.geojson`'s 501-record gap needs a different, slower
+  per-building research approach (see above) — worth a dedicated shift rather than folding into a
+  mixed data pass.
+- **Track B:** `[11-P1-6]` split-map-tsx (now an even better-motivated refactor — `Map.tsx` is
+  past 3,300 lines and about to keep growing every time a new thematic layer needs its own popup
+  block) is the most concretely-scoped remaining ticket, but still a real refactor needing careful
+  before/after Playwright verification across every layer, not a mixed-shift slot.
+- **General:** the `commons.wikimedia.org`/`en.wikipedia.org` egress block is confirmed again
+  (direct `curl`, both research agents' tool logs) — now well past a dozen shifts across multiple
+  environments logging the identical finding. Worth someone outside the shift loop looking at the
+  network policy directly, since it's now blocking verification of this shift's own popup-image
+  fix in-sandbox (confirmed the degrade path instead, which is real but not the same as seeing the
+  image render).
+
+---
+
 ## Shift 82 — 2026-08-31 (this shift's own prompt claimed "Shift 3 of four")
 
 Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential

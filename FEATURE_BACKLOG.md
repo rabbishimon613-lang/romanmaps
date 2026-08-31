@@ -1239,8 +1239,49 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       of the axis instead (`euergetism.geojson` already has 32 of those, less blocked by this
       exact wall).
 
+## New ideas spotted this shift (2026-08-31, Shift 83 — thematic popups never rendered images; road_stations.geojson image top-up)
+
+- [x] **`app/Map.tsx`'s ~34 thematic-layer hover popups never referenced `image_url`, ever.**
+      Fixed this shift (`[13-P1-5]`) — flagging it here anyway because it's worth knowing this
+      class of bug can exist: a data field can be fully researched, validated, and correctly
+      present in every `.geojson` file, and still never reach a user, because the render path is
+      a second, independent thing a shift has to check. Worth someone doing a similar audit for
+      any *other* field that gets researched into thematic files but might not be wired into
+      their popup templates (e.g. `ancient_sources` — a quick grep of `app/Map.tsx` while fixing
+      this found `sourcesLine`/citation rendering already exists on several but not obviously all
+      34 popups; not audited carefully this shift, just noticed in passing).
+- [ ] **`pois.geojson`'s 501-record image gap needs different tooling than the thematic files'
+      cross-file-reuse trick.** Tested proximity/name-based reuse against it this shift and it
+      produced clearly wrong matches (`poi_rostra` → `poi_curia_julia`'s photo, and a dozen more,
+      because `modern_location` is often a shared string like "Rome, Italy, Roman Forum" across
+      dozens of distinct buildings meters apart). Thematic files are city/region-level records
+      where a shared photo is honest; `pois.geojson` records are individual named buildings where
+      it isn't. This is the same gap `[13-P1-4]`'s "top 100 POIs" half already names — a future
+      shift should budget real per-building WebSearch research for this, not a proximity script.
+- [ ] **Road-name-collision false positives are a recurring research-agent failure mode, not a
+      one-off.** This shift's own cross-file matching and *both* dedicated road-station research
+      agents independently hit and caught the same shape of error — a Latin toponym or a modern
+      place name that coincidentally matches a real but unrelated site (Praetorium in Spain vs.
+      Dacia; Atina in Basilicata vs. Latium; Cales in the Marche vs. Campania; Chalcedon vs.
+      Byzantium). Worth adding this exact caution, with these exact examples, to any future
+      research-agent prompt that does name-based lookups across this dataset — it's cheap
+      insurance against a class of error that's now been caught four separate times.
+
 ## Shipped (moved from above; newest on top)
 
+- 2026-08-31 — Shift 83: Found and fixed `[13-P1-5]` — none of `app/Map.tsx`'s ~34 thematic-layer
+  hover popups (nor `PeopleMarkers.tsx`'s) ever rendered `image_url`, so months of image research
+  across 33 axis files was landing on disk and showing nowhere on the live site. Added a shared
+  `popupImageHtml()` helper and wired it into all 34 templates; verified live with Playwright at
+  1280×900 and 375×812 dark, including the `onerror` degrade path. Also fixed
+  `apply-image-topup.mjs`'s confidence-anchor gap (flagged by Shift 80) and closed `road_stations
+  .geojson`'s image backlog from 3/518 to 70/518 — the largest untouched image gap in the project
+  — via distance-verified cross-file reuse (21) plus two WebSearch research agents (19 Britain
+  stations, 27 Italian stations), catching and rejecting several same-name-different-place false
+  positives along the way. Plus 34 more thematic-file images via the same verified-reuse method
+  (conventus/diplomacy/euergetism/imperial_cult/letters/religions/sports/penal/substrate).
+  Explicitly did not bulk-apply the same reuse trick to `pois.geojson` after testing showed it
+  produces wrong matches there. Thematic-file image coverage 52.1% → 58.1%.
 - 2026-08-31 — Shift 82: Board `[06-P1-3]` building-typology — colored 9 previously-uncategorized
   building types (port, villa, library, amphitheater, gate, fountain, wall, aqueduct, bridge; 126
   buildings across the 40 curated sites) that were silently rendering in the flat fallback tan,
