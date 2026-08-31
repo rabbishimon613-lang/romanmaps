@@ -886,8 +886,27 @@ to prevent. Building locally to *test* your own work is expected and fine.
       `var(--on-accent)`/`var(--accent)` (no literal colors), Overlays counter and Clear button
       track the room's state, second click returns to zero overlays. `npm run build` and
       `npm run validate` both clean.
-- [ ] `[06-P1-3]` **`building-typology`** `deepen` — Extend to the ~35-term standard vocabulary,
-      grouped into six colour families.
+- [x] `[06-P1-3]` **`building-typology`** `deepen` — Done 2026-08-31 by cloud shift (scheduled).
+      `research/` (the OSM Overpass-fetch/categorize pipeline the original ~35-term vocabulary
+      would have come from) is gitignored and empty in every cloud container per
+      `FEATURE_BACKLOG.md`'s standing note, so re-running or extending that categorizer wasn't
+      possible here. Instead audited what `public/data/sites_buildings.geojson` (the single
+      shared 47,499-feature source every one of the 40 sites' building layer draws from) actually
+      contains against `app/Map.tsx`'s `ostia-buildings-fill` color `match` expression, and found
+      a real, verifiable gap: 9 categories genuinely present in the data —
+      `port` (57 buildings), `villa` (17), `library` (12), `amphitheater` (10), `gate` (8),
+      `fountain` (9), `wall` (5), `aqueduct` (4), `bridge` (4), 126 buildings total — had no
+      explicit color arm and were silently rendering in the flat undifferentiated fallback tan
+      alongside genuinely uncategorized OSM buildings, indistinguishable from them. Added all 9,
+      each assigned a color from a coherent 6-family palette (sacred, civic & public, water &
+      engineering, residential, economic & craft, spectacle/death/other) built around the 17
+      colors already shipped, grouped with a one-line comment per family; the 17 existing colors
+      are untouched, zero regression risk. This closes the real gap in the vocabulary that
+      actually exists in the data today (26 of 26 real categories now colored) rather than
+      inventing the fictional remainder of a "~35-term" list with no data behind it — noted here
+      rather than left silent, since the original ticket's number doesn't match what's actually
+      in this dataset. `npm run validate` (0 errors, same 7 reviewed warnings) and `npm run build`
+      (2,610 static pages) both clean.
 - [x] `[06-P1-4]` **`excavation-history`** `deepen` — Done 2026-08-23 by cloud shift 51.
       Real, cited excavation/rediscovery campaigns for every one of the 40 `sites.ts` sites — 1-4
       entries each (named excavator/institution, year, one concrete fact, source hint), researched
