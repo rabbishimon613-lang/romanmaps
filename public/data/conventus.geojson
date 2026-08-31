@@ -353,7 +353,9 @@
           "Pliny the Elder's Natural History 3.7 (conventus lists of Baetica)",
           "https://en.wikipedia.org/wiki/C%C3%A1diz",
           "https://en.wikipedia.org/wiki/Hispania_Baetica"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Estatuillas votivas del templo de Hércules Gaditano.jpg?width=800",
+        "image_credit": "Votive statuettes from the Temple of Hercules Gaditanus, Cadiz · Wikimedia Commons"
       }
     },
     {
@@ -376,7 +378,9 @@
           "Pliny the Elder's Natural History 3.10 (conventus lists of Baetica)",
           "https://en.wikipedia.org/wiki/C%C3%B3rdoba,_Spain",
           "https://en.wikipedia.org/wiki/Hispania_Baetica"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Monumentos funerarios de la Puerta de Gallegos - Córdoba 02.JPG?width=800",
+        "image_credit": "Roman mausoleums of Puerta de Gallegos, Corduba (Cordoba) · Wikimedia Commons"
       }
     },
     {
@@ -445,7 +449,9 @@
           "Pliny the Elder's Natural History 3.18-21 (conventus lists of Tarraconensis)",
           "https://en.wikipedia.org/wiki/Tarraco",
           "https://en.wikipedia.org/wiki/Hispania_Tarraconensis"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Circ Romà de Tarragona-1.JPG?width=800",
+        "image_credit": "Roman Circus of Tarraco (Tarragona) · Wikimedia Commons"
       }
     },
     {
@@ -468,7 +474,9 @@
           "Pliny the Elder's Natural History 3.25; Strabo's Geography 3.2.10",
           "https://en.wikipedia.org/wiki/Carthago_Nova",
           "https://en.wikipedia.org/wiki/Hispania_Carthaginensis"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cartagena Augusteum.jpg?width=800",
+        "image_credit": "The Augusteum of Carthago Nova (Cartagena) · Wikimedia Commons"
       }
     },
     {
@@ -491,7 +499,9 @@
           "Pliny the Elder's Natural History 3.24",
           "https://en.wikipedia.org/wiki/Caesaraugusta",
           "https://en.wikipedia.org/wiki/Zaragoza"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Museo del Foro de Caesaraugusta.JPG?width=800",
+        "image_credit": "Forum of Caesaraugusta (Zaragoza) · Wikimedia Commons"
       }
     },
     {

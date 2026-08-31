@@ -48,7 +48,9 @@
           "https://www.tarragonaturisme.cat/en/monument/temple-imperial-cult-complex",
           "https://followinghadrian.com/2023/01/23/winter-ad-122-3-hadrian-stays-in-tarraco-and-rebuilds-the-temple-of-augustus-hadrian1900/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aqüeducte de les Ferreres Tarragona 1.jpg?width=800",
+        "image_credit": "Les Ferreres Aqueduct, Tarraco (Tarragona) · Wikimedia Commons"
       }
     },
     {
@@ -74,7 +76,9 @@
           "https://imperiumromanum.pl/en/article/augustus-and-beginnings-of-imperial-cult/",
           "https://en.wikipedia.org/wiki/Temple_of_Trajan"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theatre of Pergamon.jpg?width=800",
+        "image_credit": "The Hellenistic Theatre of Pergamon · Wikimedia Commons"
       }
     },
     {
@@ -99,7 +103,9 @@
           "https://www.academia.edu/2348885/Religion_and_religious_buildings_of_Nicomedia_in_the_time_of_Augustus",
           "https://www.bestephesustours.com/blog/the-temple-of-dea-roma-and-divus-julius-caesar-in-ephesus.html"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicomedia_Aqueduct,_Izmit,_Turkey_(27423650659).jpg?width=800",
+        "image_credit": "Roman aqueduct of Nicomedia, Izmit · Wikimedia Commons"
       }
     },
     {
@@ -124,7 +130,9 @@
           "https://en.wikipedia.org/wiki/Temple_of_the_Sebastoi",
           "https://www.judaism-and-rome.org/aphrodisias-and-imperial-temple-ephesus-under-domitian"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Efez Nymphaeum of Trajan RB.jpg?width=800",
+        "image_credit": "Nymphaeum of Trajan, Ephesus · Wikimedia Commons"
       }
     },
     {
@@ -149,7 +157,9 @@
           "https://en.wikipedia.org/wiki/Temple_of_Augustus_and_Rome",
           "https://www.britannica.com/topic/Monumentum-Ancyranum"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The Temple of Augustus and Rome with the Res Gestae Divi Augusti (\"Deeds of the Divine Augustus\") inscribed on the walls of the cella, Ancyra, Ankara (Turkey) (25821691100).jpg?width=800",
+        "image_credit": "Temple of Augustus and Rome, Ancyra (Ankara) · Wikimedia Commons"
       }
     },
     {
@@ -274,7 +284,9 @@
           "https://en.wikipedia.org/wiki/Altar_of_the_Gens_Augusta",
           "https://www.academia.edu/34710817/An_Augustan_Period_Altar_at_Carthage_Freedman_Status_and_Roman_Provincial_Identity"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman amphitheatre of Carthage - inner view south.jpg?width=800",
+        "image_credit": "Roman amphitheatre of Carthage · Wikimedia Commons"
       }
     },
     {
@@ -299,7 +311,9 @@
           "https://www.artencordoba.com/en/roman-cordoba/monuments-of-roman-cordoba/roman-temple-claudio-marcelo/",
           "https://www.academia.edu/35324531/T%C3%A1cito_el_templo_romano_de_la_c_Morer%C3%ADa_C%C3%B3rdoba_y_el_origen_del_culto_provincial_en_Baetica"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Templo romano - Córdoba (España).jpg?width=800",
+        "image_credit": "Roman Temple of Calle Claudio Marcelo, Corduba (Cordoba) · Wikimedia Commons"
       }
     },
     {
@@ -324,7 +338,9 @@
           "https://www.cealex.org/research/excavations-in-the-process-of-being-published/caesareum/",
           "https://alexander-the-great.org/structures/caesareum-of-alexandria"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Evocation Cesareum Alexandrie.jpg?width=800",
+        "image_credit": "The Caesareum of Alexandria, seat of the imperial cult · Wikimedia Commons"
       }
     },
     {
@@ -349,7 +365,9 @@
           "https://ferrelljenkins.blog/2015/02/11/herods-temple-to-roma-and-augustus-at-caesarea-maritima/",
           "https://en.wikipedia.org/wiki/Caesarea_Maritima"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple of Roma and Augustus (Caesarea Maritima) DSC05221.JPG?width=800",
+        "image_credit": "Temple of Roma and Augustus, Caesarea Maritima · Wikimedia Commons"
       }
     },
     {
@@ -608,7 +626,9 @@
           "Cass. Dio 51.20.6-8",
           "https://www.cambridge.org/core/journals/classical-quarterly/article/abs/cassius-dio-and-the-cult-of-ivlivs-and-roma-at-ephesus-and-nicaea-512068/B5E3A3D6A18B0869F6153F0DE1F4EDFC"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The Roman Theatre of Nicaea built during the reign of Trajan, Iznik, Turkey (37742971275).jpg?width=800",
+        "image_credit": "Roman theatre of Nicaea, built under Trajan · Wikimedia Commons"
       }
     },
     {
@@ -634,7 +654,9 @@
           "Tac. Ann. 4.15",
           "https://www.ourcivilisation.com/smartboard/shop/tacitusc/annals/chap4.htm"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Agora_of_Smyrna.jpg?width=800",
+        "image_credit": "Agora of Smyrna · Wikimedia Commons"
       }
     },
     {
@@ -660,7 +682,9 @@
           "https://www.judaism-and-rome.org/dedication-temple-augustus-and-roma-lepcis-magna-ipt-22",
           "https://pleiades.stoa.org/places/676148653"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theatre Leptis Magna 01.JPG?width=800",
+        "image_credit": "Theatre of Leptis Magna · Wikimedia Commons"
       }
     },
     {
@@ -685,7 +709,9 @@
           "IG X 2.1 31, decree mentioning the temple of Caesar and the priest of Imperator Caesar Augustus",
           "https://lextheo.edu/wp-content/uploads/2021/09/j-2-seated-in-gods-temple.pdf"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Roman_forum.jpg?width=800",
+        "image_credit": "Roman Forum of Thessalonica · Wikimedia Commons"
       }
     },
     {
@@ -1026,7 +1052,9 @@
           "https://www.academia.edu/12064336/THE_IMPERIAL_CULT_IN_DALMATIA",
           "https://www.timetravelrome.com/2022/05/28/guide-to-the-roman-dalmatia-top-destinations-hidden-gems/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Salona_amphitheater.jpg?width=800",
+        "image_credit": "Amphitheatre of Salona, near Solin · Wikimedia Commons"
       }
     },
     {

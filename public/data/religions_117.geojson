@@ -799,7 +799,9 @@
           "https://en.wikipedia.org/wiki/Epistle_to_the_Trallians",
           "https://en.wikipedia.org/wiki/Tralles"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tralleis Amphitheater - Tralleis Amfi Tiyatro 02.jpg?width=800",
+        "image_credit": "Ruins of ancient Tralles, Aydin · Wikimedia Commons"
       }
     },
     {
@@ -880,7 +882,9 @@
           "https://en.wikipedia.org/wiki/Thyatira",
           "https://en.wikipedia.org/wiki/Book_of_Revelation"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Akhisar ruins Tempemezari 1.jpg?width=800",
+        "image_credit": "Ruins of ancient Thyatira, Akhisar · Wikimedia Commons"
       }
     },
     {
@@ -1235,7 +1239,9 @@
           "https://www.ostia-antica.org/dict/topics/egypt/egypt-floriani.htm",
           "https://en.wikipedia.org/wiki/Ostia_Antica"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tempio di Augusto e Roma statua.JPG?width=800",
+        "image_credit": "Cult statue, Temple of Roma and Augustus, Ostia · Wikimedia Commons"
       }
     },
     {
@@ -1477,7 +1483,9 @@
           "https://en.wikipedia.org/wiki/Legio_XV_Apollinaris",
           "https://www.mithraeum.eu/monument/503"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Petronell - Heidentor.JPG?width=800",
+        "image_credit": "The Heidentor, Carnuntum · Wikimedia Commons"
       }
     },
     {
@@ -1527,7 +1535,9 @@
           "https://en.wikipedia.org/wiki/Halicarnassus",
           "https://www.internationalstandardbible.com/H/halicarnassus.html"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Halicarnassus Mausoleum.jpg?width=800",
+        "image_credit": "The Mausoleum at Halicarnassus, Bodrum · Wikimedia Commons"
       }
     },
     {
@@ -1552,7 +1562,9 @@
           "https://www.jewishencyclopedia.com/articles/5789-ephesus",
           "https://www.livius.org/articles/concept/diaspora/jewish-rome/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ephesus_odeon.JPG?width=800",
+        "image_credit": "The Odeon of Ephesus · Wikimedia Commons"
       }
     },
     {
@@ -1602,7 +1614,9 @@
           "https://en.wikipedia.org/wiki/Laodicea_on_the_Lycus",
           "https://www.livius.org/sources/content/cicero-pro-flacco/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The Central Bath Complex, Laodicea on the Lycus, Phrygia, Turkey (32067205746).jpg?width=800",
+        "image_credit": "Central Bath Complex, Laodicea on the Lycus · Wikimedia Commons"
       }
     },
     {
@@ -1652,7 +1666,9 @@
           "https://en.wikipedia.org/wiki/Kos",
           "https://www.jewishencyclopedia.com/articles/14160-synagogue"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kos-Archaeological site quarter agora-04ASD.jpg?width=800",
+        "image_credit": "Ancient Agora of Kos · Wikimedia Commons"
       }
     },
     {
@@ -1677,7 +1693,9 @@
           "https://en.wikipedia.org/wiki/Temple_of_Isis,_London",
           "https://exploring-london.com/2026/05/08/lost-london-temple-of-isis/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/London 01 2013 Roman wall 5335.JPG?width=800",
+        "image_credit": "The London Wall, Londinium · Wikimedia Commons"
       }
     },
     {
@@ -1702,7 +1720,9 @@
           "https://en.wikipedia.org/wiki/Baelo_Claudia",
           "https://vici.org/vici/39915/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruinas_Baelo_Claudia-IMG_20230819_111418.jpg?width=800",
+        "image_credit": "Ruins of Baelo Claudia · Wikimedia Commons"
       }
     },
     {
@@ -1727,7 +1747,9 @@
           "https://raco.cat/index.php/karanos/article/view/v8-mefsout",
           "https://www.thearchaeologist.org/blog/an-egyptian-temple-in-thessaloniki-the-mystery-of-the-sarapeion"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Roman_forum.jpg?width=800",
+        "image_credit": "Roman Forum of Thessalonica · Wikimedia Commons"
       }
     },
     {
@@ -1752,7 +1774,9 @@
           "https://www.geotour.gr/listing/the-sanctuary-of-the-egyptian-gods-at-gortyn/",
           "https://www.livius.org/pictures/greece/gortyn/gortyn-temple-of-the-egyptian-deities-isis-and-serapis/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gortys R02.jpg?width=800",
+        "image_credit": "Roman Odeon of Gortyna, Crete · Wikimedia Commons"
       }
     },
     {
@@ -1827,7 +1851,9 @@
           "https://en.wikipedia.org/wiki/Temple_of_Bel",
           "https://smarthistory.org/temple-of-bel-palmyra/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palmyra Bel Temple.jpg?width=800",
+        "image_credit": "Temple of Bel, Palmyra · Wikimedia Commons"
       }
     },
     {
@@ -1879,7 +1905,9 @@
           "https://en.wikipedia.org/wiki/Sanctuary_of_Fortuna_Primigenia",
           "https://en.wikipedia.org/wiki/Praeneste"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palestrina - Santuario della Fortuna Primigenia - vista della rampa di sinistra.jpg?width=800",
+        "image_credit": "Sanctuary of Fortuna Primigenia, Palestrina · Wikimedia Commons"
       }
     },
     {
@@ -1929,7 +1957,9 @@
           "https://en.wikipedia.org/wiki/Baalbek",
           "https://en.wikipedia.org/wiki/Trajan"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Baalbek - Temple of Jupiter.jpg?width=800",
+        "image_credit": "Temple of Jupiter, Baalbek · Wikimedia Commons"
       }
     },
     {
@@ -1954,7 +1984,9 @@
           "https://www.stoa.org/texts/2001/01/0008/",
           "https://en.wikipedia.org/wiki/Sabazios"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pergamon Acropolis.jpg?width=800",
+        "image_credit": "Acropolis of ancient Pergamon · Wikimedia Commons"
       }
     },
     {
