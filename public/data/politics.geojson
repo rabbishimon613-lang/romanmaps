@@ -24,7 +24,10 @@
           "CIL VI 10058",
           "Digital Augustan Rome, s.v. Stabula Factionum"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mosaic green charioteer Massimo.jpg?width=800",
+        "image_credit": "Roman mosaic of a Green faction charioteer, Museo Nazionale Romano (Palazzo Massimo alle Terme), Rome · Wikimedia Commons",
+        "image_alt": "3rd-century Roman mosaic depicting a charioteer of the Green (Prasina) faction"
       }
     },
     {
@@ -49,7 +52,10 @@
           "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stabula IIII Factionum",
           "Digital Augustan Rome, s.v. Stabula Factionum"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mosaic blue charioteer Massimo.jpg?width=800",
+        "image_credit": "Roman mosaic of a Blue faction charioteer, Museo Nazionale Romano (Palazzo Massimo alle Terme), Rome · Wikimedia Commons",
+        "image_alt": "3rd-century Roman mosaic depicting a charioteer of the Blue (Veneta) faction"
       }
     },
     {
@@ -74,7 +80,10 @@
           "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stabula IIII Factionum",
           "John H. Humphrey, Roman Circuses: Arenas for Chariot Racing (1986)"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mosaic red charioteer Massimo.jpg?width=800",
+        "image_credit": "Roman mosaic of a Red faction charioteer, Museo Nazionale Romano (Palazzo Massimo alle Terme), Rome · Wikimedia Commons",
+        "image_alt": "3rd-century Roman mosaic depicting a charioteer of the Red (Russata) faction"
       }
     },
     {
@@ -99,7 +108,10 @@
           "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Stabula IIII Factionum",
           "John H. Humphrey, Roman Circuses: Arenas for Chariot Racing (1986)"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mosaic white charioteer Massimo.jpg?width=800",
+        "image_credit": "Roman mosaic of a White faction charioteer, Museo Nazionale Romano (Palazzo Massimo alle Terme), Rome · Wikimedia Commons",
+        "image_alt": "3rd-century Roman mosaic depicting a charioteer of the White (Albata) faction"
       }
     },
     {
@@ -125,7 +137,10 @@
           "Platner & Ashby, A Topographical Dictionary of Ancient Rome (1929), s.v. Castra Praetoria",
           "Historia Augusta, Hadrian 4, 9"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Castra Praetoria North Wall.JPG?width=800",
+        "image_credit": "Surviving brick-faced wall of the Castra Praetoria, barracks of the Praetorian Guard, Rome · Wikimedia Commons",
+        "image_alt": "Ancient Roman brick wall remains of the Castra Praetoria in Rome"
       }
     },
     {
@@ -201,7 +216,10 @@
           "Musee Gallo-Romain de Lyon-Fourviere, epitaph of an optio of the cohors XIII urbana",
           "Oxford Classical Dictionary, s.v. cohortes urbanae"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman theatre in Lyon.jpg?width=800",
+        "image_credit": "Roman theatre at Fourvière, ancient Lugdunum (Lyon) · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman theatre on the Fourvière hill in Lyon, site of ancient Lugdunum"
       }
     },
     {
@@ -226,7 +244,10 @@
           "Oxford Classical Dictionary, s.v. cohortes urbanae",
           "World History Encyclopedia, Cohortes Urbanae"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Antonine baths ruins Karthago.JPG?width=800",
+        "image_credit": "Ruins of the Antonine Baths, ancient Carthage · Wikimedia Commons",
+        "image_alt": "Roman ruins of the Antonine Baths at Carthage"
       }
     },
     {
@@ -250,7 +271,10 @@
         "sources": [
           "Oxford Classical Dictionary, s.v. cohortes urbanae"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruins of the Sepolcro di Cartilio Poplicola at Ostia Antica.jpg?width=800",
+        "image_credit": "Roman ruins at Ostia Antica · Wikimedia Commons",
+        "image_alt": "Ancient Roman ruins at the archaeological site of Ostia Antica"
       }
     },
     {
@@ -425,7 +449,10 @@
           "Turismo Roma, Excubitorium of the VII Cohort of the Vigiles",
           "Ostia-Antica.org, Vigiles: A Guardhouse in Rome"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Excubitorium in Trastevere.jpg?width=800",
+        "image_credit": "Excubitorium of the Seventh Cohort of the Vigiles, Trastevere, Rome · Wikimedia Commons",
+        "image_alt": "Remains of the guardhouse (excubitorium) of the Seventh Cohort of the Vigiles in Trastevere, Rome"
       }
     },
     {
@@ -450,7 +477,10 @@
           "Prosopographia Imperii Romani, I 507",
           "Wikipedia, Gaius Julius Quadratus Bassus"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pergamon Acropolis.jpg?width=800",
+        "image_credit": "Acropolis of ancient Pergamon · Wikimedia Commons",
+        "image_alt": "Ruins of the acropolis of Pergamon"
       }
     },
     {
@@ -1150,7 +1180,9 @@
           "Oxford Classical Dictionary, s.v. Licinius Sura, Lucius",
           "Pliny, Epistulae 4.30, 7.27"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman amphitheatre, Tarragona 08.JPG?width=800",
+        "image_credit": "Roman amphitheatre of Tarraco, Tarragona · Wikimedia Commons"
       }
     },
     {
@@ -1201,7 +1233,9 @@
           "Oxford Classical Dictionary, s.v. Neratius Priscus, Lucius",
           "Wikipedia, s.v. Lucius Neratius Priscus"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Altilia - il Teatro.JPG?width=800",
+        "image_credit": "Roman theatre of Saepinum (Altilia), Sepino · Wikimedia Commons"
       }
     },
     {
@@ -1226,7 +1260,9 @@
           "roman-britain.co.uk, s.v. Lucius Neratius Marcellus",
           "Roman military discharge diploma, Caerleon, dated 19 January 103"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Altilia - il Teatro.JPG?width=800",
+        "image_credit": "Roman theatre of Saepinum (Altilia), Sepino · Wikimedia Commons"
       }
     },
     {
@@ -1276,7 +1312,9 @@
           "Oxford Classical Dictionary, s.v. Iulius Cornutus Tertullus, Gaius",
           "Journal of Roman Studies, \"Cornutus Tertullus and the Plancii of Perge\""
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hadrian's Gate, Antalya 01.jpg?width=800",
+        "image_credit": "Hadrian's Gate, ancient Attaleia (Antalya) · Wikimedia Commons"
       }
     },
     {
@@ -1351,7 +1389,9 @@
           "Werner Eck, \"Das Ehrenmonument der Colonia Carthago fur L. Minicius Natalis Quadronius Verus in seiner Heimatstadt Barcino\"",
           "Wikipedia, s.v. Lucius Minicius Natalis"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple August Barcelona 20130905 2.JPG?width=800",
+        "image_credit": "Temple of Augustus, Roman Barcino (Barcelona) · Wikimedia Commons"
       }
     },
     {
@@ -1377,7 +1417,9 @@
           "Cassius Dio, Roman History 68.4",
           "Oxford Classical Dictionary, s.v. Trajan"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Italica amphitheatre Santiponce Andalucia Spain.JPG?width=800",
+        "image_credit": "Amphitheatre of Italica, Santiponce · Wikimedia Commons"
       }
     },
     {
@@ -1402,7 +1444,9 @@
           "Historia Augusta, Hadrian 1.3",
           "Wikipedia, s.v. Hadrian"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Italica amphitheatre Santiponce Andalucia Spain.JPG?width=800",
+        "image_credit": "Amphitheatre of Italica, Santiponce · Wikimedia Commons"
       }
     },
     {
@@ -1452,7 +1496,9 @@
           "Wikipedia, \"Titus Julius Maximus Manlianus\"",
           "CIL XII 3167 (Nemausus honorific inscription)"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Maison Carree in Nimes (16).jpg?width=800",
+        "image_credit": "Maison Carrée, Roman temple of Nemausus (Nîmes) · Wikimedia Commons"
       }
     },
     {
@@ -1477,7 +1523,9 @@
           "Wikipedia, \"Gaius Valerius Paullinus\"",
           "Ronald Syme, prosopographical studies on Pliny's correspondents"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Théâtre romain de Fréjus et buste de Léotard.jpg?width=800",
+        "image_credit": "Roman theatre of Forum Julii (Fréjus) · Wikimedia Commons"
       }
     },
     {
@@ -1502,7 +1550,9 @@
           "Pliny the Younger, Epistulae II.13",
           "Oxford Reference, \"Voconius Romanus, Gaius Licinius Marinus\""
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sagunto Teatro.JPG?width=800",
+        "image_credit": "Roman theatre of Saguntum (Sagunto) · Wikimedia Commons"
       }
     },
     {
@@ -1527,7 +1577,9 @@
           "Wikipedia, \"Quintus Glitius Atilius Agricola\"",
           "Oxford Classical Dictionary, s.v. Glitius, Atilius Agricola, Quintus"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Torino - Porta Palatina.jpg?width=800",
+        "image_credit": "Porta Palatina, Roman gate of Augusta Taurinorum (Turin) · Wikimedia Commons"
       }
     },
     {
@@ -1552,7 +1604,9 @@
           "Wikipedia, \"Quintus Marcius Turbo\"",
           "Oxford Classical Dictionary, s.v. Marcius Turbo, Quintus"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cavtat Archeological site1.JPG?width=800",
+        "image_credit": "Archaeological site of Roman Epidaurum, Cavtat · Wikimedia Commons"
       }
     },
     {
@@ -1577,7 +1631,9 @@
           "Wikipedia, \"Marcus Pompeius Macrinus Neos Theophanes\"",
           "Werner Eck, prosopographical dating of Trajanic fasti"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Overzicht theater Mytilini.jpg?width=800",
+        "image_credit": "Ancient theatre of Mytilene, Lesbos · Wikimedia Commons"
       }
     },
     {
@@ -1602,7 +1658,9 @@
           "Prosopographia Imperii Romani, I. 260",
           "Wikipedia, \"Tiberius Julius Celsus Polemaeanus\""
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Artemistempel Sardes.jpg?width=800",
+        "image_credit": "Temple of Artemis at Sardis · Wikimedia Commons"
       }
     },
     {
@@ -1627,7 +1685,9 @@
           "Sigrid Mratschek, \"Images of Domitius Apollinaris in Pliny and Martial\" (2018)",
           "Wikipedia, \"Lucius Domitius Apollinaris\""
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Terme Romane Vercelli, Italy.jpg?width=800",
+        "image_credit": "Roman baths (Terme Romane) of Vercellae, Vercelli · Wikimedia Commons"
       }
     },
     {
@@ -1677,7 +1737,10 @@
           "Halfmann, Die Senatoren aus dem oestlichen Teil des Imperium Romanum (1979)",
           "Wikipedia, \"Gaius Antius Aulus Julius Quadratus\""
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pergamon Acropolis.jpg?width=800",
+        "image_credit": "Acropolis of ancient Pergamon · Wikimedia Commons",
+        "image_alt": "Ruins of the acropolis of Pergamon"
       }
     },
     {
@@ -1727,7 +1790,9 @@
           "Pliny the Younger, Epistulae 7.24",
           "Wikipedia, \"Gaius Ummidius Quadratus Sertorius Severus\""
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Casinum Amphitheatre.jpg?width=800",
+        "image_credit": "Roman amphitheatre of Casinum, Cassino · Wikimedia Commons"
       }
     },
     {
@@ -1752,7 +1817,9 @@
           "Halfmann, Die Senatoren aus dem oestlichen Teil des Imperium Romanum (1979), no. 15",
           "UNESCO World Heritage listing, Xanthos-Letoon"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Entrance into theatre of Xanthos.jpg?width=800",
+        "image_credit": "Roman theatre of Xanthos · Wikimedia Commons"
       }
     },
     {
@@ -1778,7 +1845,9 @@
           "Bean & Mitford, Journeys in Rough Cilicia",
           "OLBA 9 (2004), E. Ertekin"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kastabala Hierapolis, Turkey (27559329219).jpg?width=800",
+        "image_credit": "Ruins of Hierapolis Castabala · Wikimedia Commons"
       }
     },
     {
@@ -1803,7 +1872,9 @@
           "Wikipedia, Senecio Memmius Afer",
           "E. Champlin, fasti scholarship on Trajanic consuls"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple du Capitole (Dougga).JPG?width=800",
+        "image_credit": "Capitol of Thugga (Dougga) · Wikimedia Commons"
       }
     },
     {
@@ -1853,7 +1924,9 @@
           "Wikipedia, Tiberius Claudius Atticus Herodes (consul 133)",
           "Oxford Classical Dictionary, Claudius Atticus Herodes"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Athens Roman Agora.jpg?width=800",
+        "image_credit": "Roman Agora of Athens · Wikimedia Commons"
       }
     },
     {
