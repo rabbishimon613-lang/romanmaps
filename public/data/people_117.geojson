@@ -447,6 +447,9 @@
       "properties": {
         "id": "person_rabbi_akiva",
         "name": "Rabbi Akiva",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Akiba ben joseph a.jpg?width=800",
+        "image_credit": "A much later traditional depiction of Rabbi Akiva — no period portrait exists, consistent with Jewish aniconic tradition · Wikimedia Commons",
+        "image_alt": "Traditional later depiction of Rabbi Akiva, not a period portrait",
         "role": "Rabbinic sage",
         "role_group": "religious",
         "location_117": "Bnei Brak, Judaea",
@@ -591,6 +594,9 @@
       "properties": {
         "id": "person_lukuas",
         "name": "Lukuas",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple of Zeus in Cyrene.jpg?width=800",
+        "image_credit": "The Temple of Zeus at Cyrene, Libya, whose colonnade Lukuas's rebels undermined and burned during the Kitos War in 115 CE — photo shows the later-restored temple, not Lukuas himself · Wikimedia Commons",
+        "image_alt": "Temple of Zeus, Cyrene, damaged by Lukuas's rebels in 115 CE",
         "role": "Rebel leader, self-proclaimed king",
         "role_group": "military",
         "location_117": "Fleeing toward Judaea after the fall of the Cyrenaica-Egypt revolt",
@@ -1394,6 +1400,9 @@
       "properties": {
         "id": "person_platorius_nepos",
         "name": "Aulus Platorius Nepos",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/(The site of) Milecastle 38 - geograph.org.uk - 674778.jpg?width=800",
+        "image_credit": "The site of Milecastle 38 on Hadrian's Wall, where a building inscription (RIB 1638) naming Aulus Platorius Nepos was recovered — depicts his later British governorship, not his 117 post in the East, but the same person as politics_governor_thracia · Wikimedia Commons",
+        "image_alt": "Site of Milecastle 38, Hadrian's Wall, tied to an inscription naming Platorius Nepos",
         "role": "Legate of Legio I Adiutrix",
         "role_group": "military",
         "location_117": "Brigetio, Pannonia (modern Szony/Komarom, Hungary)",
@@ -1416,6 +1425,9 @@
       "properties": {
         "id": "person_joshua_ben_hananiah",
         "name": "Joshua ben Hananiah",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancient Synagogue Peqi'in IMG 9630.JPG?width=800",
+        "image_credit": "Interior of the 19th-century-rebuilt synagogue at Peki'in, Galilee, on the site traditionally associated with Rabbi Joshua ben Hananiah's teaching — a modern building on a traditional site, not a period portrait · Wikimedia Commons",
+        "image_alt": "Modern synagogue at Peki'in, on the site traditionally linked to Joshua ben Hananiah",
         "role": "Tannaitic sage",
         "role_group": "religious",
         "location_117": "Peki'in, Galilee",

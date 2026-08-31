@@ -1256,7 +1256,9 @@
     "sources": [
      "https://www.inrap.fr/fouille-de-l-agglomeration-antique-de-segeta-sceaux-du-gatinais-loiret-17261"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aquis Segeste.JPG?width=800",
+    "image_credit": "Archaeological remains of the Gallo-Roman sanctuary of Segeta (Aquae Segetae), Sceaux-du-Gâtinais, France · Wikimedia Commons"
    }
   },
   {
@@ -1279,7 +1281,10 @@
     "sources": [
      "https://www.researchgate.net/publication/341204100"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/DSC00124 - Tubi di piombo romani - Foto di G. Dall'Orto.jpg?width=800",
+    "image_credit": "Roman lead water pipes from the ancient baths at Termini Imerese, Sicily (Thermae Himerenses) · Wikimedia Commons",
+    "image_alt": "Roman-era lead pipes from the bath complex; a modern hotel now stands over the ancient bath site"
    }
   },
   {

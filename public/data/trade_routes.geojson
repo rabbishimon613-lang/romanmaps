@@ -341,6 +341,9 @@
       "properties": {
         "id": "route_grain_alexandria_rome",
         "name": "Alexandria-Rome grain route",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ostia, piazzale delle corporazioni, mosaici, moggio 01.JPG?width=800",
+        "image_credit": "Grain-measure (modius) mosaic, Piazzale delle Corporazioni, Ostia — the guild square where Rome's overseas grain trade, including the Alexandrian fleet, was represented · Wikimedia Commons",
+        "image_alt": "Black-and-white Roman mosaic of a grain measure at Ostia's merchant-guild square",
         "commodity": "grain",
         "direction": "Alexandria -> Puteoli / Ostia -> Portus",
         "notes": "Egypt was Rome's biggest single grain source - Josephus says it fed the city for four months of the year. The Alexandria run took 10-20 days depending on wind, and the fleet's arrival at Puteoli was a public spectacle: Seneca describes crowds straining to spot the lead ships by their distinctive sail rig. The largest Alexandrian grain carriers, ships like the Isis that Lucian describes at Piraeus, ran some 55 meters long with a cargo capacity near 1,200 tons. By 117 CE most of that traffic had shifted to Trajan's new hexagonal basin at Portus, finished just a few years earlier, though Puteoli kept handling part of the fleet.",
@@ -374,6 +377,9 @@
       "properties": {
         "id": "route_grain_africa_rome",
         "name": "Africa-Rome grain route",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ostia, piazzale delle corporazioni, mosaici, due navi.JPG?width=800",
+        "image_credit": "Mosaic of two merchant ships, Piazzale delle Corporazioni, Ostia — the guild square representing Rome's overseas grain shippers · Wikimedia Commons",
+        "image_alt": "General Ostia grain-trade guild mosaic, not specific to the Carthage route",
         "commodity": "grain",
         "direction": "Carthage -> Ostia -> Portus",
         "notes": "Africa Proconsularis rivaled Egypt as Rome's grain basket, drawing on the rain-fed wheat estates of the Bagradas valley behind Carthage. Josephus credits Africa with feeding Rome for eight months of the year against Egypt's four - a figure modern historians treat as rounded rather than exact, but it captures how the two provinces together carried most of the city's supply. The crossing to Ostia was shorter and less wind-dependent than the Alexandria run, making African grain a steadier year-round supplement to Egypt's seasonal fleet.",
@@ -758,6 +764,8 @@
       "properties": {
         "id": "route_olive_baetica_rome",
         "name": "Baetica-Rome olive oil route",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/A fragment of a Roman ceramic Dressel 20 amphora from the Spanish province of Baetica dating 1st - 3rd century AD. (FindID 587422).jpg?width=800",
+        "image_credit": "Fragment of a Roman Dressel 20 olive-oil amphora from Baetica, Spain, 1st–3rd century AD — the standard vessel of the Baetica-to-Rome oil trade (Portable Antiquities Scheme, FindID 587422) · Wikimedia Commons",
         "commodity": "olive_oil",
         "direction": "Corduba -> Hispalis -> Ostia / Portus -> Rome",
         "notes": "Baetica's oil growers along the Guadalquivir shipped more olive oil to Rome than any other province in the empire, packed into globular Dressel 20 jars painted with the producer's name, the shipper, the tare weight, and the consular date of loading. Pliny rated Baetican oil among the best in the Mediterranean, and by Trajan's reign the trade had grown large enough that Rome dedicated an entire hill, Monte Testaccio, to the empty jars: an estimated 53 million broken amphorae, more than 80 percent of them from Baetica, eventually built a mound over 35 meters tall. Strabo describes seagoing merchant ships sailing straight up the Guadalquivir to load at Hispalis itself rather than trans-shipping at the coast, cutting out a costly extra handling stage. From there ships ran the Straits of Gibraltar and crossed open water to Ostia and Portus, then continued upriver by barge to unload at Rome's own Tiber-side wharves.",
@@ -904,6 +912,9 @@
       "properties": {
         "id": "route_olive_africa_rome",
         "name": "Africa-Rome olive oil route",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amphore spatheion - Narbo Via.jpg?width=800",
+        "image_credit": "Roman spatheion amphora, the type used to ship North African (Byzacena/Tripolitania) olive oil, on display at the Narbo Via museum, France · Wikimedia Commons",
+        "image_alt": "Museum-displayed African oil amphora, not photographed in Tripolitania itself",
         "commodity": "olive_oil",
         "direction": "Tripolitania / Byzacena -> Portus",
         "notes": "Africa Proconsularis was already growing into a major olive oil exporter by 117 CE, with groves spreading across Byzacena and Tripolitania on centuriated grids much like Baetica's. Leptis Magna and Hadrumetum shipped oil packed in African cylindrical amphorae, a distinct shape from Baetica's globular Dressel 20 jars, on a shorter and more predictable Mediterranean crossing than the run from Spain. The African trade was still smaller than Baetica's under Trajan - it would not rival and then surpass Spanish oil until the following two centuries - but its groves were expanding fast enough that Baetica's own producers had reason to watch African competition rising across the sea.",
@@ -1018,6 +1029,8 @@
       "properties": {
         "id": "route_silk_road",
         "name": "Silk Road",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancient Roman theater in Palmyra.JPG?width=800",
+        "image_credit": "Roman theatre at Palmyra, Syria — the western caravan-city terminus of the Silk Road linking Rome with Parthian and Kushan territory · Wikimedia Commons",
         "commodity": "silk",
         "direction": "China to Rome, via Kushan and Parthian territory",
         "notes": "Chinese silk crossed Central Asia through Kushan territory and then Parthian Persia, whose rulers ran the middle stretch as a deliberate monopoly, taxing and re-selling raw silk to Roman buyers while keeping its source a closely guarded secret. Caravans reached Palmyra's markets before the final leg to Antioch, Rome's own gateway to eastern luxury goods. A parallel sea route through the Red Sea to Muziris on India's coast fed Alexandria with additional silk, spices, and gems.",
@@ -1061,6 +1074,8 @@
       "properties": {
         "id": "route_incense_road",
         "name": "Incense Road",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The Treasury, Petra.jpg?width=800",
+        "image_credit": "Al-Khazneh (the Treasury), Petra, Jordan — the Nabataean hub of the frankincense and myrrh caravan route from Arabia Felix toward Gaza and Alexandria · Wikimedia Commons",
         "commodity": "frankincense and myrrh",
         "direction": "Arabia Felix to Gaza and Alexandria",
         "notes": "Camel caravans carried frankincense and myrrh some 1,600 miles from the harvest fields of Hadhramaut, watering and paying toll at oasis stations the whole way north. Petra, the Nabataean capital, taxed and redistributed the cargo before it reached Mediterranean shipping at Gaza and Alexandria — and by 117 CE Petra itself sat inside the Roman province of Arabia, folding the old smuggling route directly into imperial revenue.",
@@ -1231,6 +1246,8 @@
         "id": "node_shabwa_incense",
         "route": "Incense Road",
         "name": "Shabwa",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruins of Shabwa.jpg?width=800",
+        "image_credit": "Ruins of ancient Shabwa, capital of the Hadhramaut kingdom, Yemen · Wikimedia Commons",
         "role": "Shabwa was the capital of the Hadhramaut kingdom and the collection point where frankincense harvested from the surrounding hills was weighed, taxed, and loaded onto northbound caravans.",
         "sources": [
           "https://madainproject.com/cities_trade_points_and_nodes_of_the_incense_trade_route"
@@ -1370,6 +1387,8 @@
       "properties": {
         "id": "route_wine_gaul_rhine",
         "name": "Gaul-Rhine wine route",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Funerary stone monument found in Neumagen in the shape of a rowing ship for transport of wine barrels on the Moselle river, about 220 AD, Rheinisches Landesmuseum Trier, Germany (29411833330).jpg?width=800",
+        "image_credit": "Roman funerary relief of a wine-barrel transport ship, found at Neumagen on the Moselle, c. 220 AD, Rheinisches Landesmuseum Trier — Gallo-Roman wine bound for the Rhine legionary markets · Wikimedia Commons",
         "commodity": "wine",
         "direction": "Gallia Narbonensis -> Lugdunum -> Rhine legionary markets",
         "notes": "By Trajan's reign Gaul had flipped from importing Italian wine to exporting its own: vineyards around Vienna and along the Rhone had matured into a major regional industry, shipped north by river barge through Lugdunum and on toward the Rhine frontier's legionary markets, where soldiers' pay and a captive garrison population made wine a dependable, high-volume trade. Amphora finds at Rhine forts as far north as Nijmegen and Xanten confirm wine reaching the frontier from multiple Mediterranean and Gallic sources at once, not from a single monopoly route. The Moselle valley's own famous vineyards around Trier, celebrated later by the poet Ausonius, were still generations away in 117 CE; this snapshot's Trier is a redistribution market on the supply road, not yet a wine-growing district itself.",

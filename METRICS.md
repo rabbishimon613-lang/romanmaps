@@ -37,8 +37,8 @@ references.)
 | **Curated places, total** | **2,917** | |
 | Description of 60+ words | 1209 · **97.9%** | measured on `notes`; 26 still thin |
 | Has an image | 734 · **59.4%** | `pois.geojson` only — see below for the thematic files |
-| Has an image — thematic files | 839 · **49.9%** | the 33 files this metric used to skip entirely |
-| Has an image — all curated places | 1573 · **53.9%** | `pois.geojson` + thematic files combined |
+| Has an image — thematic files | 877 · **52.1%** | the 33 files this metric used to skip entirely |
+| Has an image — all curated places | 1611 · **55.2%** | `pois.geojson` + thematic files combined |
 | Has an ancient source | 486 · **39.4%** | |
 | — of `confidence: high` POIs | 431 / 534 · **80.7%** | the target set for `[09-P0-1]` |
 | Categories with a "what happened here" paragraph | 53 / 60 · **88.3%** | covers 1169/1235 POIs · missing: beneficiarii_station, bath, harbor, domus, vicus, gymnasium, courier_post |
