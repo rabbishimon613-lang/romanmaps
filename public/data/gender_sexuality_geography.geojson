@@ -100,7 +100,10 @@
           "Wikipedia, \"Temple of Cybele (Palatine)\"",
           "English Heritage, \"The Galli: Breaking Roman Gender Norms\""
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_the_Magna_Mater_01.jpg?width=800",
+        "image_credit": "Temple of Magna Mater (Cybele), Palatine Hill, Rome · Wikimedia Commons",
+        "image_alt": "Ruins of the Temple of Cybele on the Palatine Hill"
       }
     },
     {

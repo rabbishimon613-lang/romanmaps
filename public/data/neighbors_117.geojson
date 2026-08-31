@@ -74,7 +74,10 @@
           "https://en.wikipedia.org/wiki/Caucasian_Albania",
           "https://en.wikipedia.org/wiki/Roman_influence_in_Caucasian_Albania"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kabalaka.jpg?width=800",
+        "image_credit": "Kabalaka, ancient capital of Caucasian Albania, Azerbaijan · Wikimedia Commons (CC BY-SA 4.0)",
+        "image_alt": "Ruins of Kabalaka, capital of Caucasian Albania"
       }
     },
     {

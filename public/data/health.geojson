@@ -474,7 +474,10 @@
      "https://en.wikipedia.org/wiki/Archigenes",
      "https://link.springer.com/article/10.1007/s00381-016-3191-2"
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Colonnade_at_Apamea,_Apamea,_Syria.jpg?width=800",
+    "image_credit": "Great Colonnade at Apamea, Syria — Archigenes' hometown · Wikimedia Commons (CC BY 4.0)",
+    "image_alt": "Roman colonnaded street at Apamea, Syria"
    }
   },
   {
@@ -1071,7 +1074,10 @@
     "sources": [
      "https://www.researchgate.net/publication/310954082"
     ],
-    "confidence": "low"
+    "confidence": "low",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Germisara_thermal_baths.jpg?width=800",
+    "image_credit": "Roman thermal baths of Germisara, Geoagiu-Bai, Romania · Wikimedia Commons",
+    "image_alt": "Ruins of Roman baths at Germisara, Dacia"
    }
   },
   {

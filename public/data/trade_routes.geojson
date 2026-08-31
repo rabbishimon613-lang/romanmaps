@@ -124,6 +124,9 @@
         "id": "node_amber_baltic_source",
         "route": "Amber Road",
         "name": "Sambia Peninsula",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/SvetlogorskRauschen_05-2017_img10_beach.jpg?width=800",
+        "image_credit": "Amber Coast beach, Sambia Peninsula, Kaliningrad — the Baltic amber source region, not an ancient structure · Wikimedia Commons",
+        "image_alt": "Baltic Sea beach on the Sambia Peninsula, source of Baltic amber",
         "role": "The Sambia Peninsula and its adjoining shore were the source zone where the Aesti people gathered raw amber from the shallows and beach, according to Tacitus, lying entirely outside Roman territory as a trading-partner region rather than annexed land.",
         "sources": [
           "Tac. Germania 45",
@@ -167,6 +170,9 @@
         "id": "node_scarbantia",
         "route": "Amber Road",
         "name": "Sopron",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sopron_Fabricius-h%C3%A1z.JPG?width=800",
+        "image_credit": "Fabricius House, Sopron, above the Roman lapidarium of ancient Scarbantia · Wikimedia Commons",
+        "image_alt": "Fabricius House in Sopron, above the Roman ruins of Scarbantia",
         "role": "Scarbantia grew from an early trading post on the Amber Road into Municipium Flavium Scarbantia under the Flavian emperors, standing in Pannonia Superior midway between Savaria and Carnuntum.",
         "sources": [
           "https://en.wikipedia.org/wiki/Sopron",
@@ -232,6 +238,9 @@
         "id": "node_poetovio",
         "route": "Amber Road",
         "name": "Ptuj",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ptuj,_Orpheus_monument_01.jpg?width=800",
+        "image_credit": "Roman Orpheus Monument, Ptuj (ancient Poetovio) · Wikimedia Commons",
+        "image_alt": "Roman-era Orpheus monument in situ at Ptuj",
         "role": "Poetovio grew from a legionary base into Colonia Ulpia Traiana Poetovio under Trajan and served as headquarters of the portorium Illyrici, the customs office that taxed goods, including amber, moving along the Danube frontier.",
         "sources": [
           "https://en.wikipedia.org/wiki/Ptuj",
@@ -274,6 +283,9 @@
         "id": "node_emona",
         "route": "Amber Road",
         "name": "Ljubljana",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_wall,_Ljubljana_(4).jpg?width=800",
+        "image_credit": "Roman city wall of Emona, Ljubljana · Wikimedia Commons",
+        "image_alt": "Remains of the Roman wall of Emona in Ljubljana",
         "role": "Emona was founded as a Roman colony under Augustus at the head of the Ljubljanica valley, the first major town the Amber Road reached after crossing the Julian Alps from Aquileia.",
         "sources": [
           "https://en.wikipedia.org/wiki/Emona",
@@ -485,6 +497,9 @@
         "id": "node_grain_lilybaeum",
         "route": "Grain routes",
         "name": "Marsala",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Punic.prow.JPG?width=800",
+        "image_credit": "Punic warship prow, Baglio Anselmi Museum, Marsala (ancient Lilybaeum) · Wikimedia Commons",
+        "image_alt": "Prow of the Punic ship recovered near Marsala",
         "role": "Lilybaeum, at Sicily's western tip, was one of the island's main tithe-collection assize centers and a short crossing from Africa and Puteoli alike.",
         "sources": [
           "Cic. Verr. 2.3",
@@ -548,6 +563,9 @@
         "id": "node_grain_portus",
         "route": "Grain routes",
         "name": "Portus",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Portus_-_Claudius_first_harbour_and_hexagonal_basin_extension_under_Trajan.jpg?width=800",
+        "image_credit": "Hexagonal basin of Trajan's harbour, Portus · Wikimedia Commons (CC BY-SA 3.0)",
+        "image_alt": "The hexagonal harbour basin at Portus near Rome",
         "role": "Trajan's new hexagonal inner basin at Portus, finished only a few years before this map's 117 CE snapshot, had already taken over most of the grain fleet's big-ship traffic from Ostia's silted river channel. This node duplicates the town's own site entry elsewhere on the map; here it marks its role on the grain route.",
         "sources": [
           "Suet. Claud. 18-20"
@@ -609,6 +627,9 @@
         "id": "node_ictis",
         "route": "Cornwall-Rome tin route",
         "name": "St Michael's Mount",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/St_Michael's_Mount_43005.JPG?width=800",
+        "image_credit": "St Michael's Mount, Cornwall — a candidate site for ancient Ictis · Wikimedia Commons",
+        "image_alt": "St Michael's Mount off the Cornish coast",
         "role": "St Michael's Mount is the most widely accepted candidate for Diodorus's Ictis, a tidal island Britons could reach on foot at low tide to load ingots of Cornish tin onto merchants' carts. Cornwall's tin streams, worked since the Bronze Age, made this stretch of coast the main source of tin the classical Mediterranean world knew. The identification is debated, but the site's tidal causeway matches Diodorus's description more closely than rival candidates like the Isle of Wight or Mount Batten.",
         "sources": [
           "Diod. Sic. 5.22",
@@ -630,6 +651,9 @@
         "id": "node_darioritum",
         "route": "Cornwall-Rome tin route",
         "name": "Vannes",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vannes_remparts_romains.JPG?width=800",
+        "image_credit": "Roman ramparts of Vannes (ancient Darioritum) · Wikimedia Commons",
+        "image_alt": "Roman-era city walls of Vannes",
         "role": "Darioritum was the chief town of the Veneti, the Armorican seafaring people Caesar found controlling the Channel trade with Britain and had to crush in a major naval battle in 56 BCE before Rome could bring the tin route under its own control. After the conquest, Armorica's harbors remained the natural landing point for tin ferried across from Cornwall before the thirty-day overland leg into Gaul began.",
         "sources": [
           "Caes. BGall. 3.8",
@@ -781,6 +805,9 @@
         "id": "node_hispalis",
         "route": "Baetica-Rome olive oil route",
         "name": "Seville",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Columnas_romanas_(Sevilla)_02.jpg?width=800",
+        "image_credit": "Roman columns, Calle Marmoles, Seville (ancient Hispalis) · Wikimedia Commons",
+        "image_alt": "Roman columns on Calle Marmoles in Seville",
         "role": "Hispalis was Baetica's main river port and the point where the Guadalquivir's oil traffic met open-water shipping; Strabo says seagoing merchant vessels sailed all the way upriver to load here rather than trans-shipping at the coast. Its wharves handled the bulk of the province's Dressel 20 amphora traffic bound for Rome, making it the single busiest node in the empire's olive oil supply chain.",
         "sources": [
           "Strabo, Geography 3.2.6",
@@ -822,6 +849,9 @@
         "id": "node_portus_oil",
         "route": "Baetica-Rome olive oil route",
         "name": "Portus",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Portus_-_Claudius_first_harbour_and_hexagonal_basin_extension_under_Trajan.jpg?width=800",
+        "image_credit": "Hexagonal basin of Trajan's harbour, Portus · Wikimedia Commons (CC BY-SA 3.0)",
+        "image_alt": "The hexagonal harbour basin at Portus near Rome",
         "role": "Trajan's new hexagonal basin at Portus, finished only a few years before 117 CE, gave Baetican oil ships a purpose-built harbor to unload into barges bound upriver for Rome. This node duplicates the harbor's role on the map's grain routes; here it marks its place in the olive oil supply chain specifically.",
         "sources": [
           "Suet. Claud. 18-20"
@@ -841,6 +871,9 @@
         "id": "node_monte_testaccio",
         "route": "Baetica-Rome olive oil route",
         "name": "Monte Testaccio",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Monte_Testaccio.jpg?width=800",
+        "image_credit": "Monte Testaccio, Rome · Wikimedia Commons",
+        "image_alt": "Monte Testaccio, the ancient hill of broken amphorae",
         "role": "Monte Testaccio was Rome's dump for the empty Dressel 20 jars that arrived full of Baetican oil, stacked and broken in an orderly enough fashion that archaeologists can still read the tituli picti painted on the sherds: the producer's name, the oil's weight, the shipper, and the exact consular year each jar was loaded. By the time dumping finally stopped in the 3rd century, the mound held an estimated 53 million amphorae and stood more than 35 meters tall, over 80 percent of it Baetican in origin. In 117 CE the hill was already a recognizable landmark next to Rome's river port south of the Aventine, having grown for roughly a century by then.",
         "sources": [
           "https://en.wikipedia.org/wiki/Monte_Testaccio",
@@ -916,6 +949,9 @@
         "id": "node_hadrumetum",
         "route": "Africa-Rome olive oil route",
         "name": "Sousse",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Archaeological_Museum_of_Sousse_07042013.jpg?width=800",
+        "image_credit": "Archaeological Museum of Sousse (ancient Hadrumetum) · Wikimedia Commons",
+        "image_alt": "The Archaeological Museum of Sousse, Tunisia",
         "role": "Hadrumetum served Byzacena's olive groves as their main Mediterranean outlet, a Phoenician-founded harbor city that predated Carthage itself and kept trading on through the Roman period. Its oil moved north in African cylindrical amphorae, a regional jar type distinct from the Dressel 20 shape Baetica used.",
         "sources": [
           "https://en.wikipedia.org/wiki/Hadrumetum"
@@ -935,6 +971,9 @@
         "id": "node_portus_africa_oil",
         "route": "Africa-Rome olive oil route",
         "name": "Portus",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Portus_-_Claudius_first_harbour_and_hexagonal_basin_extension_under_Trajan.jpg?width=800",
+        "image_credit": "Hexagonal basin of Trajan's harbour, Portus · Wikimedia Commons (CC BY-SA 3.0)",
+        "image_alt": "The hexagonal harbour basin at Portus near Rome",
         "role": "Portus received African oil shipments alongside the larger Baetican and Egyptian grain fleets, its Trajanic hexagonal basin only a few years old in 117 CE. This node duplicates the harbor's role on the map's other trade routes; here it marks its place in the African olive oil trade specifically.",
         "sources": [
           "Suet. Claud. 18-20"
@@ -1129,6 +1168,9 @@
         "id": "node_ecbatana_silk",
         "route": "Silk Road",
         "name": "Ecbatana",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ecbatane_-_the_walls.jpg?width=800",
+        "image_credit": "Walls of ancient Ecbatana, Hamadan, Iran · Wikimedia Commons",
+        "image_alt": "Excavated walls at the Ecbatana (Hegmataneh) site",
         "role": "An old Median capital turned Parthian summer residence, Ecbatana anchored the caravan road as it climbed onto the Iranian plateau east of Mesopotamia.",
         "sources": [
           "https://www.thecollector.com/four-empires-silk-road/"
@@ -1148,6 +1190,9 @@
         "id": "node_merv_silk",
         "route": "Silk Road",
         "name": "Merv",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Kyz_Kala_in_2006_(cropped).jpg?width=800",
+        "image_credit": "Great Kyz Kala, ancient Merv, Turkmenistan · Wikimedia Commons",
+        "image_alt": "The Great Kyz Kala fortress at Merv",
         "role": "Merv was a major oasis city where the Silk Road's Parthian and Kushan-controlled stretches met, a resupply point for caravans crossing Central Asia's deserts.",
         "sources": [
           "https://www.thecollector.com/four-empires-silk-road/"
@@ -1205,6 +1250,9 @@
         "id": "node_najran_incense",
         "route": "Incense Road",
         "name": "Najran",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancient_site_of_al-Ukhdud,_Najran,_Saudi_Arabia_(63).jpg?width=800",
+        "image_credit": "Ancient site of al-Ukhdud, Najran, Saudi Arabia · Wikimedia Commons",
+        "image_alt": "Ruins at the al-Ukhdud archaeological site near Najran",
         "role": "Najran was a major watering stop where the incense caravan route crossed a key north-south trade axis in the Arabian interior.",
         "sources": [
           "https://madainproject.com/cities_trade_points_and_nodes_of_the_incense_trade_route"
@@ -1224,6 +1272,9 @@
         "id": "node_dedan_incense",
         "route": "Incense Road",
         "name": "Dedan",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dadanite_Statues_in_Al-Ula,_Saudi_Arabia.jpg?width=800",
+        "image_credit": "Dadanite statues at the Dadan (Dedan) site, Al-Ula · Wikimedia Commons",
+        "image_alt": "Ancient Dadanite statues at the Dedan archaeological site",
         "role": "Dedan was a long-established oasis kingdom in the Hejaz, its wells and markets a fixed stop for caravans on the incense route long before Rome ever taxed the trade.",
         "sources": [
           "https://madainproject.com/cities_trade_points_and_nodes_of_the_incense_trade_route"
@@ -1243,6 +1294,9 @@
         "id": "node_hegra_incense",
         "route": "Incense Road",
         "name": "Hegra",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Qasr_al-Farid,_Hegra_(Madain_Salih),_1st_cent._CE,_Saudi_Arabia_(5).jpg?width=800",
+        "image_credit": "Qasr al-Farid tomb, Hegra (Madain Salih), Saudi Arabia · Wikimedia Commons",
+        "image_alt": "The Nabataean tomb of Qasr al-Farid at Hegra",
         "role": "Hegra was the Nabataeans' second city after Petra, its rock-cut tombs marking the wealth the incense trade brought even to a stop deep in the desert.",
         "sources": [
           "https://madainproject.com/cities_trade_points_and_nodes_of_the_incense_trade_route"

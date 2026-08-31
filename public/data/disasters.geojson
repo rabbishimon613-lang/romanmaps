@@ -281,6 +281,9 @@
   "properties": {
    "id": "disaster_battle_noreia_113bce",
    "name": "Battle of Noreia",
+   "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Magdalensberg_Archaeologischer_Park_Baderaum_02062016_2377.jpg?width=800",
+   "image_credit": "Magdalensberg archaeological park, Noricum — a leading candidate site for ancient Noreia, whose exact location remains debated · Wikimedia Commons",
+   "image_alt": "Roman bath room ruins at Magdalensberg, Austria",
    "year": -113,
    "type": "battle",
    "still_visible_in_117": true,
