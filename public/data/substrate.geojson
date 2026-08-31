@@ -1174,7 +1174,9 @@
           "https://phoenicians.es/almunecar.html",
           "https://www.academia.edu/4046900/The_Phoenician_inscription_on_an_alabaster_urn_from_the_Laurita_Necropolis_in_Almu%C3%B1%C3%A9car_Granada_Spain_A_new_edition_and_interpretation"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/F%C3%A1brica_de_salaz%C3%B3n_de_pescado_(Firmun_Lulium_Sexi)._Piletas.jpg?width=800",
+        "image_credit": "Fish-salting factory (Firmum Iulium Sexi) tanks at El Majuelo, Almunecar · Wikimedia Commons (CC BY-SA) (reused, same site as poi_sexi_almunecar_garum)"
       }
     },
     {
@@ -1200,7 +1202,9 @@
           "https://www.visit-andalucia.com/phoenician-roman-necropolis-baria/",
           "https://en.wikipedia.org/wiki/Villaricos_Phoenician_stele"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lord of the Horses - Old Iberian god - Villaricos (Almeria) - Museu d'Arqueologia de Catalunya - Barcelona 2014.JPG?width=800",
+        "image_credit": "Iberian sculpture from Villaricos (ancient Baria), Almería · Museu d'Arqueologia de Catalunya, Wikimedia Commons (reused, same site as poi_baria_villaricos_garum)"
       }
     },
     {
@@ -3141,7 +3145,9 @@
           "https://en.wikipedia.org/wiki/Tarraco",
           "https://en.wikipedia.org/wiki/Cessetani"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aqüeducte de les Ferreres Tarragona 1.jpg?width=800",
+        "image_credit": "Les Ferreres Aqueduct, Tarraco (Tarragona) · Wikimedia Commons (reused, same site as cult_tarraco)"
       }
     },
     {
@@ -3377,7 +3383,9 @@
           "https://museedupatrimoine.fr/musee-de-l-oppidum-d-enserune-herault/34203.html",
           "https://www.enserune.fr/en/discover/focus-on-the-collections"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/F10 09.Oppidum d'Ensérune.0101.JPG?width=800",
+        "image_credit": "Excavated house foundations and silos at the Oppidum d'Enserune, Wikimedia Commons (reused, same site as substrate_celtic_enserune)"
       }
     },
     {
@@ -3737,7 +3745,10 @@
           "https://en.wikipedia.org/wiki/Characene",
           "https://kops.uni-konstanz.de/server/api/core/bitstreams/15d71f0b-4894-4eb0-9b2e-8bf914cc1ec2/content"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Coin%20of%20Hyspaosines,%20minted%20at%20Charax%20Spasinu%20in%20129-8%20BC.jpg?width=800",
+        "image_credit": "Coin of Hyspaosines, minted at Charax Spasinu · Wikimedia Commons (reused, same site as craft_pearl_charax)",
+        "image_alt": "Ancient coin minted at Charax Spasinu"
       }
     },
     {

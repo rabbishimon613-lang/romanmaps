@@ -330,7 +330,10 @@
           "https://en.wikipedia.org/wiki/Philadelphia_(Asia_Minor)",
           "https://www.sevenchurches.org/wp-content/uploads/2020/03/Geography-Philadelphia-Wilson-LGC.pdf"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ala%C5%9Fehir%20Church%20of%20St.%20John.jpg?width=800",
+        "image_credit": "Ruins of the Basilica of St John, Alasehir, on the site of ancient Philadelphia · Wikimedia Commons (reused, same site as letters_ignatius_philadelphia)",
+        "image_alt": "Brick ruins of a later basilica at the site of ancient Philadelphia"
       }
     },
     {
@@ -426,7 +429,10 @@
           "Pliny the Elder's Natural History 3.11 (conventus lists of Baetica)",
           "https://en.wikipedia.org/wiki/Seville",
           "https://en.wikipedia.org/wiki/Hispania_Baetica"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Columnas_romanas_(Sevilla)_02.jpg?width=800",
+        "image_credit": "Roman columns, Calle Marmoles, Seville (ancient Hispalis) · Wikimedia Commons (reused, same site as node_hispalis)",
+        "image_alt": "Roman columns on Calle Marmoles in Seville"
       }
     },
     {

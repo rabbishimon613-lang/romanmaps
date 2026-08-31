@@ -1126,7 +1126,9 @@
           "Plin. Ep. 10.71 (Trajan's reply)",
           "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bursa_Archaeological_Museum_Roman_sculpture_7637.jpg?width=800",
+        "image_credit": "Roman sculpture, Bursa Archaeological Museum · Wikimedia Commons (reused, same site as mint_prusa_ad_olympum)"
       }
     },
     {
@@ -1153,7 +1155,9 @@
           "Plin. Ep. 10.91 (Trajan's reply)",
           "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Balatlarchurch.JPG?width=800",
+        "image_credit": "Balatlar Church, a Roman-era bath building, Sinop, Turkey · Wikimedia Commons (reused, same site as mint_sinope)"
       }
     },
     {
@@ -1180,7 +1184,10 @@
           "Plin. Ep. 10.93 (Trajan's reply)",
           "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Karaburun%20-%20Black%20Sea%20-%20Turkey.jpg?width=800",
+        "image_credit": "Black Sea coast of Pontus, northern Turkey · Wikimedia Commons (reused, same site as religion_christian_bithynia)",
+        "image_alt": "Black Sea coastline near ancient Pontus and Bithynia"
       }
     },
     {
@@ -1207,7 +1214,9 @@
           "Plin. Ep. 10.48 (Trajan's reply)",
           "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mudanya panorama.jpg?width=800",
+        "image_credit": "Panoramic view of modern Mudanya, Turkey, near the site of ancient Apamea in Bithynia · Wikimedia Commons (reused, same site as politics_senator_apamea)"
       }
     },
     {
@@ -1288,7 +1297,9 @@
           "Plin. Ep. 10.99 (Trajan's reply)",
           "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amasra.JPG?width=800",
+        "image_credit": "Amasra (ancient Amastris), Turkey · Wikimedia Commons (reused, same site as mint_amastris)"
       }
     },
     {
@@ -1315,7 +1326,9 @@
           "Plin. Ep. 10.97 (Trajan's reply)",
           "https://en.wikipedia.org/wiki/Pliny_the_Younger_on_Christians"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicomedia Aqueduct, Izmit, Turkey (39171950052).jpg?width=800",
+        "image_credit": "Roman aqueduct of Nicomedia, Izmit · Wikimedia Commons (reused, same site as letters_rescript_nicomedia_fire_brigade)"
       }
     },
     {
@@ -1342,7 +1355,9 @@
           "Plin. Ep. 10.32 (Trajan's reply)",
           "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicomedia Aqueduct, Izmit, Turkey (39171950052).jpg?width=800",
+        "image_credit": "Roman aqueduct of Nicomedia, Izmit · Wikimedia Commons (reused, same site as letters_rescript_nicomedia_fire_brigade)"
       }
     },
     {
@@ -1369,7 +1384,9 @@
           "Plin. Ep. 10.66 (Trajan's reply)",
           "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicomedia Aqueduct, Izmit, Turkey (39171950052).jpg?width=800",
+        "image_credit": "Roman aqueduct of Nicomedia, Izmit · Wikimedia Commons (reused, same site as letters_rescript_nicomedia_fire_brigade)"
       }
     }
   ]

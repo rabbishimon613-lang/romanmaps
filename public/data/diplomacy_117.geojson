@@ -575,7 +575,9 @@
           "https://www.judaism-and-rome.org/flavian-emperors-and-walls-iberia-caucasus",
           "https://en.wikipedia.org/wiki/Mihrdat_I_of_Iberia"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mtskheta,_Svetitskhoveli_Cathedral_(36092332115).jpg?width=800",
+        "image_credit": "Mtskheta, capital of the ancient Kingdom of Iberia (cathedral site postdates 117 CE) · Wikimedia Commons (reused, same site as neighbor_kingdom_of_iberia)"
       }
     },
     {
@@ -600,7 +602,9 @@
           "https://en.wikipedia.org/wiki/Parthamaspates_of_Parthia",
           "https://www.livius.org/articles/person/parthamaspates/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ctesiphon-ruin 1864.jpg?width=800",
+        "image_credit": "1864 photograph of the ancient ruins near Ctesiphon, Wikimedia Commons, public domain (reused, same site as substrate_mesopotamian_ctesiphon)"
       }
     },
     {
@@ -650,7 +654,9 @@
           "https://en.wikipedia.org/wiki/Artaxias_III",
           "https://www.livius.org/articles/person/artaxias-iii-of-armenia/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Khor_Virap_Monastery_and_Mount_Ararat,_Armenia.jpg?width=800",
+        "image_credit": "The Ararat plain near Artaxata, Armenia's ancient capital (monastery postdates 117 CE) · Wikimedia Commons (reused, same site as neighbor_armenia_117)"
       }
     },
     {
@@ -700,7 +706,9 @@
           "https://en.wikipedia.org/wiki/Maroboduus",
           "https://www.britannica.com/biography/Maroboduus"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Frammenti_della_porta_aurea_di_ravenna,_43_dc,_01.jpg?width=800",
+        "image_credit": "Fragment of Ravenna's Roman-era Porta Aurea (built 42 CE) · Wikimedia Commons"
       }
     },
     {

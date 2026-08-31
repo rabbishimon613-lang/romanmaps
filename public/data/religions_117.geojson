@@ -1801,7 +1801,9 @@
           "https://en.wikipedia.org/wiki/Diana_Nemorensis",
           "https://en.wikipedia.org/wiki/Rex_Nemorensis"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Diana_Nemorensis,_an_Italic_form_of_the_goddess,_her_sanctuary_was_on_the_northern_shore_of_Lake_Nemi,_Ny_Carlsberg_Glyptotek,_Copenhagen_(12949229403).jpg?width=800",
+        "image_credit": "Statue of Diana Nemorensis from her sanctuary at Nemi · Wikimedia Commons (reused, same site as poi_temple_diana_nemorensis_nemi)"
       }
     },
     {
@@ -1826,7 +1828,9 @@
           "https://en.wikipedia.org/wiki/Atargatis",
           "https://en.wikipedia.org/wiki/On_the_Syrian_Goddess"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Coin_of_Atargatis.jpg?width=800",
+        "image_credit": "Coin of Atargatis, goddess of Hierapolis Bambyce · Wikimedia Commons (reused, same site as poi_temple_atargatis_hierapolis)"
       }
     },
     {

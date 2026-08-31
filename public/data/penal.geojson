@@ -444,7 +444,9 @@
           "Dario Del Bufalo, Red Imperial Porphyry: Power and Religion (2nd ed., Allemandi, 2018)",
           "https://en.wikipedia.org/wiki/Mons_Porphyrites"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/\"Imperial Porphyry\" - porphyritic metadacite to porphyritic meta-andesite (Dokhan Volcanics, Neoproterozoic, ~593-602 Ma; Mons Porphyrites, Red Sea Mountains, Egypt) 1 (25869817093).jpg?width=800",
+        "image_credit": "Imperial porphyry stone sample from the Mons Porphyrites quarries, Egypt · Wikimedia Commons (photo: James St. John) (reused, same site as poi_mons_porphyrites)"
       }
     },
     {
@@ -614,7 +616,9 @@
           "https://en.wikipedia.org/wiki/Halkyn_Mountain",
           "RIB 2404 (Roman lead pig inscriptions, north Wales)"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Halkyn_Mountain_-_geograph.org.uk_-_99060.jpg?width=800",
+        "image_credit": "View of Halkyn Mountain · Wikimedia Commons (CC BY-SA 2.0, Geograph) (reused, same site as poi_halkyn_mountain)"
       }
     },
     {
@@ -668,7 +672,9 @@
           "https://en.wikipedia.org/wiki/Mons_Claudianus",
           "https://www.trismegistos.org/place/2783"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/MonsClaudianus02_83.jpg?width=800",
+        "image_credit": "View of the Mons Claudianus quarry site · Wikimedia Commons (CC BY-SA) (reused, same site as poi_mons_claudianus)"
       }
     }
   ]

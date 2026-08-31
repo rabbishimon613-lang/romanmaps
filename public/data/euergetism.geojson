@@ -1018,7 +1018,9 @@
           "Dio Chrysostom, Orationes 40, 45, 47, 48",
           "Pliny the Younger, Epistulae X.81-82"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bursa_Archaeological_Museum_Roman_sculpture_7637.jpg?width=800",
+        "image_credit": "Roman sculpture, Bursa Archaeological Museum · Wikimedia Commons (reused, same site as mint_prusa_ad_olympum)"
       }
     },
     {
@@ -1146,7 +1148,9 @@
           "Building inscription of the Ionic stoa fronting the Capito Baths, Miletus, c. 47-54 CE",
           "https://www.cambridge.org/core/journals/anatolian-studies/article/abs/cosmopolitan-capito-architectural-benefaction-by-a-roman-official-in-late-julioclaudian-miletus/A55BA822B610CFC8C1DF3F303D20A408"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Miletus - Ancient Greek theatre 01.jpg?width=800",
+        "image_credit": "Theatre of Miletus · Wikimedia Commons (reused, same site as mint_miletus)"
       }
     },
     {
@@ -1170,7 +1174,9 @@
           "IRT 324",
           "https://irt2021.inslib.kcl.ac.uk/en/inscriptions/IRT0324.html"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Leptis Magna market place April 2004.jpg?width=800",
+        "image_credit": "Market (Macellum) of Leptis Magna — Wikimedia Commons (reused, same site as euerg_lepcis_magna_market)"
       }
     },
     {

@@ -184,7 +184,9 @@
           "https://www.judaism-and-rome.org/sebasteion-aphrodisias-20-60-ce",
           "https://www.aphrodisias.org/en/sebasteion-2"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aphrodisias Museum Zoilos monument part 044.jpg?width=800",
+        "image_credit": "Reliefs from the tomb monument of Gaius Julius Zoilos, Aphrodisias Museum — Wikimedia Commons (reused, same site as euerg_aphrodisias_zoilos)"
       }
     },
     {
@@ -209,7 +211,10 @@
           "https://vici.org/vici/12017/",
           "https://vici.org/vici/32727/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Antioch%20in%20Pisidia%20Augustus%20Temple%20Panorama.jpg?width=800",
+        "image_credit": "Ruins of ancient Pisidian Antioch, Yalvac, Turkey · Wikimedia Commons (reused, same site as religion_jewish_pisidian_antioch)",
+        "image_alt": "Panoramic view of the ruins of Pisidian Antioch"
       }
     },
     {
@@ -234,7 +239,10 @@
           "https://www.judaism-and-rome.org/dedication-imperial-cult-narbo-cil-xii-4333",
           "https://www.judaism-and-rome.org/altar-augustan-peace-narbo-cil-xii-4335"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman Horreum, Narbonne (19347913742).jpg?width=800",
+        "image_credit": "Underground galleries of the Horreum, Narbonne (Narbo Martius) · Wikimedia Commons (reused, same site as poi_narbo_horreum)",
+        "image_alt": "Roman underground warehouse galleries at the Horreum of Narbonne"
       }
     },
     {
@@ -974,7 +982,9 @@
           "https://www.romeartlover.it/Savaria.html",
           "https://www1.rgzm.de/transformation/noricum/nw_pannonia_kult/kulte_pannonia_nordwest_english.htm"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2016%20Szombathely%20Iseum.jpg?width=800",
+        "image_credit": "The reconstructed Iseum (Temple of Isis) at Savaria, Szombathely, Hungary · Wikimedia Commons (reused, same site as poi_beneficiarii_savaria)"
       }
     },
     {

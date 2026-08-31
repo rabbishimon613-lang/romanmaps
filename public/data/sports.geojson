@@ -929,7 +929,10 @@
           "https://www.ascsa.edu.gr/uploads/media/hesperia/147615.pdf",
           "https://corinth.ascsa.net/id/corinth/monument/gymnasium"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Temple%20of%20Apollo%20(6th%20century%20B.C.)%20in%20Corinth%20on%203%20June%202018.jpg?width=800",
+        "image_credit": "Temple of Apollo, ancient Corinth · Wikimedia Commons (reused, same site as religion_christian_corinth)",
+        "image_alt": "Ruins of the Temple of Apollo at ancient Corinth"
       }
     },
     {
@@ -953,7 +956,10 @@
           "https://www.turkishmuseums.com/museum/detail/1974-antalya-termessos-archeological-site/1974/4",
           "http://www.dlir.org/archive/archive/files/arkeoloji_dergisi_v-5_p111-144_e7b4d32cb4.pdf"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Termessos - Theater.jpg?width=800",
+        "image_credit": "Theatre of Termessos · Wikimedia Commons (reused, same site as mint_termessos)",
+        "image_alt": "Ruins of the mountaintop theatre at Termessos, Turkey"
       }
     },
     {
@@ -977,7 +983,9 @@
           "https://turkisharchaeonews.net/site/magnesia-meander",
           "https://kulturenvanteri.com/en/yer/magnesia/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ionic chapital of the Temple of Artemis Leukophryene at Magnesia on the Maeander, Pergamon Museum.jpg?width=800",
+        "image_credit": "Ionic capital from the Temple of Artemis Leukophryene, Magnesia on the Maeander (Pergamon Museum) · Wikimedia Commons (reused, same site as letters_ignatius_magnesia)"
       }
     },
     {
