@@ -7,6 +7,9 @@
       "properties": {
         "id": "event_hadrian_acclamation_antioch",
         "name": "Hadrian acclaimed emperor at Antioch",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tyche%20Antioch%20Vatican%20Inv2672.jpg?width=800",
+        "image_credit": "Roman marble copy of Eutychides' Tyche of Antioch, Vatican Museums · Wikimedia Commons",
+        "image_alt": "Marble statue personifying the city of Antioch, crowned with a mural crown",
         "date_iso": "117-08-11",
         "one_line": "The legions at Antioch proclaimed Hadrian emperor on 11 August, the exact day this map is set — news of Trajan's death two days earlier having just reached the city.",
         "sources": ["HA Hadr. 4.7", "https://en.wikipedia.org/wiki/Hadrian"]
@@ -21,6 +24,8 @@
       "properties": {
         "id": "event_kitos_war_cyrenaica",
         "name": "Kitos War — Cyrenaica revolt",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Zeus_in_Cyrene.jpg?width=800",
+        "image_credit": "Temple of Zeus, Cyrene, Libya · Wikimedia Commons",
         "date_iso": "115/117",
         "one_line": "Jewish rebels under Lukuas devastated Cyrenaica so thoroughly that Hadrian later had to send fresh colonists to resettle the depopulated province.",
         "sources": ["Cass. Dio 68.32", "https://en.wikipedia.org/wiki/Kitos_War"]
@@ -32,6 +37,9 @@
       "properties": {
         "id": "event_kitos_war_egypt",
         "name": "Kitos War — Egypt suppression",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Great_Library_of_Alexandria,_O._Von_Corven,_19th_century.jpg?width=800",
+        "image_credit": "O. Von Corven, 19th-century engraving imagining ancient Alexandria's public buildings · Wikimedia Commons",
+        "image_alt": "19th-century engraving imagining the grand public buildings of ancient Alexandria",
         "date_iso": "116/117",
         "one_line": "Marcius Turbo's combined land and naval force retook Alexandria from Lukuas's rebels and pacified the Egyptian countryside by autumn 117.",
         "sources": ["Cass. Dio 68.32", "Eusebius, Hist. Eccl. 4.2", "https://en.wikipedia.org/wiki/Kitos_War"]
@@ -43,6 +51,9 @@
       "properties": {
         "id": "event_kitos_war_cyprus",
         "name": "Kitos War — Cyprus revolt at Salamis",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Salamis%20Ruins%2C%20Cyprus.jpg?width=800",
+        "image_credit": "Ruins of ancient Salamis, Cyprus · Wikimedia Commons",
+        "image_alt": "Archaeological ruins at ancient Salamis, Cyprus",
         "date_iso": "116",
         "one_line": "Jewish rebels under Artemion razed Salamis, the provincial capital of Cyprus, prompting Rome to ban Jews from the island afterward, even shipwreck survivors.",
         "sources": ["Cass. Dio 68.32", "https://en.wikipedia.org/wiki/Kitos_War"]
@@ -57,6 +68,8 @@
       "properties": {
         "id": "event_kitos_war_mesopotamia",
         "name": "Kitos War — Mesopotamia and Babylonia revolt",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ctesiphon-ruin 1864.jpg?width=800",
+        "image_credit": "1864 photograph of the ancient ruins near Ctesiphon · Wikimedia Commons, public domain",
         "date_iso": "116/117",
         "one_line": "Jewish communities across newly-conquered Mesopotamia rose against Rome in the rear of Trajan's Parthian campaign, and were suppressed by Lusius Quietus before he moved on to Judaea.",
         "sources": ["Eusebius, Hist. Eccl. 4.2", "https://en.wikipedia.org/wiki/Lusius_Quietus"]
@@ -68,6 +81,8 @@
       "properties": {
         "id": "event_kitos_war_lydda_siege",
         "name": "Siege of Lydda",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lod_Mosaic,_12_-_Carole_Raddato.jpg?width=800",
+        "image_credit": "The Lod Mosaic, a Roman-period floor mosaic found at Lod (ancient Lydda) — a later find from the same town, photo by Carole Raddato · Wikimedia Commons",
         "date_iso": "117",
         "one_line": "Lusius Quietus besieged the Judaean town of Lydda, where rebels had gathered under Julianus and Pappus and Rabban Gamaliel II was trapped inside.",
         "sources": ["https://www.jewishencyclopedia.com/articles/11897-pappus"]
@@ -79,6 +94,8 @@
       "properties": {
         "id": "event_martyrs_of_lydda",
         "name": "Execution of the Martyrs of Lydda",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lod_Mosaic,_12_-_Carole_Raddato.jpg?width=800",
+        "image_credit": "The Lod Mosaic, a Roman-period floor mosaic found at Lod (ancient Lydda) — a later find from the same town, photo by Carole Raddato · Wikimedia Commons",
         "date_iso": "117",
         "one_line": "Rebel leaders Julianus and Pappus were captured and executed at Lydda, remembered afterward in rabbinic sources as the \"slain of Lydda.\"",
         "sources": ["https://www.jewishencyclopedia.com/articles/11897-pappus", "b. Ta'anit 18b"]
@@ -90,6 +107,8 @@
       "properties": {
         "id": "event_parthian_ctesiphon_capture",
         "name": "Trajan captures Ctesiphon",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ctesiphon-ruin 1864.jpg?width=800",
+        "image_credit": "1864 photograph of the ancient ruins near Ctesiphon · Wikimedia Commons, public domain",
         "date_iso": "116",
         "one_line": "Trajan took the Parthian capital Ctesiphon in 116, briefly installing a puppet king and forming the short-lived province of Mesopotamia.",
         "sources": ["Cass. Dio 68.28", "https://en.wikipedia.org/wiki/Trajan%27s_Parthian_campaign"]
@@ -115,6 +134,8 @@
       "properties": {
         "id": "event_dacia_sarmizegetusa_colonia",
         "name": "Colonia Ulpia Traiana Augusta Dacica Sarmizegetusa founded",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amfiteatrul de la Ulpia Traiana Sarmizegetusa.jpg?width=800",
+        "image_credit": "Amphitheatre of Ulpia Traiana Sarmizegetusa · Wikimedia Commons",
         "date_iso": "108/117",
         "one_line": "The new provincial capital of Dacia, built from scratch after the 106 conquest and named for Trajan, was by 117 a going colonia with forum, amphitheater, and governor's palace.",
         "sources": ["https://en.wikipedia.org/wiki/Ulpia_Traiana_Sarmizegetusa"]
@@ -126,6 +147,8 @@
       "properties": {
         "id": "event_dacia_alburnus_maior_gold",
         "name": "Gold rush at Alburnus Maior",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rosia_Montana_Roman_Gold_Mines_2011_-_Galleries.jpg?width=800",
+        "image_credit": "Roman gallery at the Rosia Montana gold mines · Wikimedia Commons (CC BY-SA)",
         "date_iso": "106/117",
         "one_line": "Illyrian colonists worked Rome's new Dacian gold mines at Alburnus Maior, the wealth that had driven Trajan's two Dacian wars in the first place.",
         "sources": ["https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0006%3Aentry%3Dalburnus-maior"]
@@ -137,6 +160,9 @@
       "properties": {
         "id": "event_nabataea_petra",
         "name": "Petra under Roman rule",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Al_Khazneh_(The_Treasury)_in_Petra.jpg?width=800",
+        "image_credit": "Al-Khazneh (the Treasury), Petra · Wikimedia Commons",
+        "image_alt": "Rock-cut facade of Al-Khazneh at Petra, carved into pink sandstone cliffs",
         "date_iso": "106",
         "one_line": "The former Nabataean royal capital lost its political status when Trajan annexed the kingdom in 106, though it remained the province's religious center.",
         "sources": ["https://en.wikipedia.org/wiki/Arabia_Petraea"]
@@ -159,6 +185,8 @@
       "properties": {
         "id": "event_trajans_column_dedicated",
         "name": "Trajan's Column dedicated",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trajan%27s%20Column%20from%20north-east%20%28cropped%29.jpg?width=800",
+        "image_credit": "Trajan's Column, Rome, dedicated 113 CE · Wikimedia Commons",
         "date_iso": "113-05-12",
         "one_line": "The 30-meter marble column narrating the Dacian Wars in a spiraling relief was dedicated in Trajan's new forum on 12 May 113.",
         "sources": ["https://en.wikipedia.org/wiki/Trajan%27s_Column"]
@@ -170,6 +198,8 @@
       "properties": {
         "id": "event_trajans_forum_markets_dedicated",
         "name": "Forum and Markets of Trajan dedicated",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mercati%20di%20Traiano%20-%20panoramio.jpg?width=800",
+        "image_credit": "Trajan's Market, Rome · Wikimedia Commons",
         "date_iso": "112-01",
         "one_line": "Apollodorus of Damascus's vast new forum complex, funded by the spoils of the Dacian Wars, was dedicated in January 112 alongside its adjoining market halls.",
         "sources": ["https://en.wikipedia.org/wiki/Trajan%27s_Forum", "https://en.wikipedia.org/wiki/Trajan%27s_Market"]
@@ -192,6 +222,9 @@
       "properties": {
         "id": "event_antioch_earthquake_115",
         "name": "Antioch earthquake",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/So-called Antioch Mosaic.jpg?width=800",
+        "image_credit": "Roman-era mosaic excavated at Antioch · Wikimedia Commons",
+        "image_alt": "Roman mosaic floor from Antioch",
         "date_iso": "115-12-13",
         "one_line": "A massive earthquake leveled much of Antioch while Trajan was wintering there for the Parthian campaign, killing the consul Marcus Pedo Vergilianus and nearly the emperor himself.",
         "sources": ["Cass. Dio 68.24-25", "https://en.wikipedia.org/wiki/115_Antioch_earthquake"]
@@ -249,6 +282,8 @@
       "properties": {
         "id": "event_siege_of_hatra_abandoned",
         "name": "Trajan abandons the siege of Hatra",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hatra ruins.jpg?width=800",
+        "image_credit": "Ruins of Hatra, Iraq · Wikimedia Commons",
         "date_iso": "117-04-01",
         "one_line": "Roman legions besieged the desert fortress of Hatra in spring 117 but withdrew after failing to breach its walls, worn down by heat, thirst and disease in a campaign that left the emperor fatally ill for the journey home.",
         "sources": [
@@ -269,6 +304,9 @@
       "properties": {
         "id": "event_hadrian_accession_alexandria",
         "name": "Hadrian's accession announced in Alexandria",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Philip%20Galle%20-%20Lighthouse%20of%20Alexandria%20(Pharos%20of%20Alexandria)%20-%201572.jpg?width=800",
+        "image_credit": "Engraving by Philip Galle, 1572, imagining the Lighthouse of Alexandria · Wikimedia Commons",
+        "image_alt": "16th-century imagined engraving of the Lighthouse of Alexandria",
         "date_iso": "117-08-25",
         "one_line": "Prefect Rammius Martialis's circular letter reached Alexandria's officials on 25 August 117, ordering ten days of garlanded festivals across every Egyptian nome to mark Hadrian's accession — a document that survives as the papyrus P.Oxy. 3781.",
         "sources": [
@@ -289,6 +327,8 @@
       "properties": {
         "id": "event_senate_deifies_trajan",
         "name": "Senate votes to deify Trajan",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Curia%20iulia.jpg?width=800",
+        "image_credit": "Curia Julia, Roman Forum, meeting place of the Senate · Wikimedia Commons",
         "date_iso": "117-09-01",
         "one_line": "Rome's Senate answered Hadrian's accession letter with a unanimous vote deifying Trajan and granting honors beyond what Hadrian had even requested, a reply that reached him in Antioch by late September 117.",
         "sources": [
@@ -308,6 +348,8 @@
       "properties": {
         "id": "event_british_unrest_117",
         "name": "Unrest breaks out on the British frontier",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vindolanda%20Roman%20Fort%20-%20geograph.org.uk%20-%202933753.jpg?width=800",
+        "image_credit": "The excavated fort and vicus at Vindolanda, on the northern British frontier · Wikimedia Commons",
         "date_iso": "117-01-01",
         "one_line": "The Historia Augusta recorded that 'the Britons could not be kept under Roman control' at the very start of Hadrian's reign in 117 (exact month unrecorded) — the earliest sign of the frontier crisis that led, five years later, to the building of Hadrian's Wall.",
         "sources": [
@@ -328,6 +370,8 @@
       "properties": {
         "id": "event_roxolani_iazyges_invade_danube_frontier",
         "name": "Roxolani and Iazyges strike the Danube frontier",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Petronell_-_Heidentor.JPG?width=800",
+        "image_credit": "Heidentor triumphal arch at Carnuntum, a fortress on the Danube frontier · Wikimedia Commons",
         "date_iso": "117-10-01",
         "one_line": "In autumn 117 the Sarmatian Roxolani and Iazyges struck the Danube frontier provinces of Moesia Inferior and Pannonia, and the fighting cost the governor of Dacia, Quadratus Bassus, his life.",
         "sources": [
@@ -348,6 +392,9 @@
       "properties": {
         "id": "event_hadrian_departs_antioch_for_danube",
         "name": "Hadrian leaves Antioch for the Danube frontier",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/So-called Antioch Mosaic.jpg?width=800",
+        "image_credit": "Roman-era mosaic excavated at Antioch · Wikimedia Commons",
+        "image_alt": "Roman mosaic floor from Antioch",
         "date_iso": "117-10-01",
         "one_line": "Hadrian left Antioch by the overland route rather than sailing for Rome, driven north by news of the Danube crisis, and had reached Mopsucrene in Cilicia by 13 October 117.",
         "sources": [

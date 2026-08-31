@@ -145,6 +145,8 @@
         "id": "node_carnuntum_amber",
         "route": "Amber Road",
         "name": "Carnuntum",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Petronell_-_Heidentor.JPG?width=800",
+        "image_credit": "Heidentor triumphal arch at Carnuntum, near the Legio XIV Gemina legionary fortress · Wikimedia Commons (reused from the fortress's own pois.geojson record)",
         "role": "Carnuntum was the Danube crossing and legionary base where the Amber Road entered firmly Roman territory, lying some 600 Roman miles south of the Baltic amber coast by Pliny's count. This node duplicates the town's full site entry elsewhere on the map; here it marks its role as an Amber Road station.",
         "sources": [
           "Plin. NH 37.45",
@@ -185,6 +187,8 @@
         "id": "node_savaria",
         "route": "Amber Road",
         "name": "Szombathely",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2016%20Szombathely%20Iseum.jpg?width=800",
+        "image_credit": "The reconstructed Iseum (Temple of Isis) at Savaria, Szombathely, Hungary · Wikimedia Commons",
         "role": "Savaria was founded as Colonia Claudia Savariensium for army veterans under Claudius in 43 CE and grew into the junction where the Amber Road met roads running west into Noricum.",
         "sources": [
           "https://en.wikipedia.org/wiki/Szombathely",
@@ -205,6 +209,9 @@
         "id": "node_sala",
         "route": "Amber Road",
         "name": "Sala",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Ruins_Zawiya_Chellah_Rabat_Nov25_A7CR_08989.jpg?width=800",
+        "image_credit": "Roman ruins of Sala Colonia within the Chellah necropolis, Rabat, Morocco · Wikimedia Commons",
+        "image_alt": "Roman ruins at the Chellah site, ancient Sala Colonia, Rabat",
         "role": "Sala was a Pannonian road station between Poetovio and Savaria recorded in the Itinerarium Antonini, identified today with the archaeological site at Zalalövő, Hungary.",
         "sources": [
           "Itin. Ant.",
@@ -245,6 +252,8 @@
         "id": "node_celeia",
         "route": "Amber Road",
         "name": "Celje",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stadtmauer von Celeia.jpg?width=800",
+        "image_credit": "Roman city wall of Celeia (modern Celje) · Wikimedia Commons",
         "role": "Celeia became Municipium Claudium Celeia under Claudius, one of the first towns in Noricum to gain that status, and stood on the Amber Road between Emona and Poetovio.",
         "sources": [
           "https://en.wikipedia.org/wiki/Celje",
@@ -285,6 +294,8 @@
         "id": "node_aquileia",
         "route": "Amber Road",
         "name": "Aquileia",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Foro%20Romano%20Aquileia.jpg?width=800",
+        "image_credit": "Roman Forum, Aquileia · Wikimedia Commons",
         "role": "Aquileia was the Amber Road's southern terminus and the empire's chief Adriatic gateway for northern trade, home to workshops that carved raw Baltic amber into finished ornaments. This node duplicates the town's full site entry elsewhere on the map; here it marks its role as the Amber Road's terminus.",
         "sources": [
           "Plin. NH 37.45",
@@ -409,6 +420,9 @@
         "id": "node_grain_alexandria",
         "route": "Grain routes",
         "name": "Alexandria",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Philip%20Galle%20-%20Lighthouse%20of%20Alexandria%20(Pharos%20of%20Alexandria)%20-%201572.jpg?width=800",
+        "image_credit": "Engraving by Philip Galle, 1572, imagining the Lighthouse of Alexandria · Wikimedia Commons",
+        "image_alt": "16th-century imagined engraving of the Lighthouse of Alexandria",
         "role": "Alexandria was Rome's single biggest grain terminal, its harbor loading the great Egyptian fleet each sailing season. This node duplicates the city's own gazetteer entry elsewhere on the map; here it marks its role as the grain route's Egyptian terminus.",
         "sources": [
           "Joseph. BJ 2.383-386"
@@ -428,6 +442,8 @@
         "id": "node_grain_carthage",
         "route": "Grain routes",
         "name": "Carthage",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carthage%20-%20Punic%20port.jpg?width=800",
+        "image_credit": "The Punic ports, Carthage · Wikimedia Commons",
         "role": "Carthage shipped the wheat of the Bagradas valley's estates to Rome, making Africa Proconsularis the empire's other great grain province alongside Egypt. This node duplicates the city's own gazetteer entry elsewhere on the map; here it marks its role as the grain route's African terminus.",
         "sources": [
           "Joseph. BJ 2.383-386"
@@ -447,6 +463,9 @@
         "id": "node_grain_syracuse",
         "route": "Grain routes",
         "name": "Syracuse",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fonte%20Aretusa%20e%20papiro.jpg?width=800",
+        "image_credit": "The Fountain of Arethusa, Ortygia, Syracuse · Wikimedia Commons",
+        "image_alt": "Photograph of the Fountain of Arethusa on Ortygia island, ringed with papyrus",
         "role": "Syracuse was one of Sicily's chief grain-tithe collection ports under the Republican decuma system, the oldest link in Rome's grain supply.",
         "sources": [
           "Cic. Verr. 2.3"
@@ -486,6 +505,9 @@
         "id": "node_grain_puteoli",
         "route": "Grain routes",
         "name": "Pozzuoli",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Serapium%20pozzuoli%202005.jpg?width=800",
+        "image_credit": "Macellum of Pozzuoli (Temple of Serapis) · Wikimedia Commons",
+        "image_alt": "Ruins of the Macellum of Pozzuoli",
         "role": "Puteoli was Rome's main grain terminal before Trajan's Portus basin took over most of the traffic; Seneca describes crowds at its harbor spotting the incoming Alexandrian fleet by its sail rig. This node duplicates the town's own site entry elsewhere on the map; here it marks its role on the grain route.",
         "sources": [
           "Sen. Ep. 77.1-2"
@@ -505,6 +527,8 @@
         "id": "node_grain_ostia",
         "route": "Grain routes",
         "name": "Ostia",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tempio di Augusto e Roma statua.JPG?width=800",
+        "image_credit": "Cult statue, Temple of Roma and Augustus, Ostia · Wikimedia Commons",
         "role": "Ostia was Rome's river-mouth port and grain-storage hub at the Tiber's silted mouth, ringed with horrea warehouses that held the city's incoming supply before barges carried it upriver. This node duplicates the town's own site entry elsewhere on the map; here it marks its role on the grain route.",
         "sources": [
           "Rickman, The Corn Supply of Ancient Rome (1980)"
@@ -627,6 +651,8 @@
         "id": "node_arelate_tin",
         "route": "Cornwall-Rome tin route",
         "name": "Arles",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theatreantique.JPG?width=800",
+        "image_credit": "Roman Theatre of Arles · Wikimedia Commons",
         "role": "Arelate sat at the point where the tin road's overland leg through Gaul reached the Rhone, the destination Diodorus names for the merchants' thirty-day trek on foot. From here the route shifted from pack-horse to river and coastal shipping for the run down toward Massilia. This node duplicates the town's role on other trade corridors elsewhere on the map; here it marks its place as the tin road's Rhone-mouth transfer point.",
         "sources": [
           "Diod. Sic. 5.22",
@@ -647,6 +673,9 @@
         "id": "node_massilia_tin",
         "route": "Cornwall-Rome tin route",
         "name": "Marseille",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le musée des docks romains (Marseille) (14214599736).jpg?width=800",
+        "image_credit": "Musée des Docks Romains, Marseille · Wikimedia Commons",
+        "image_alt": "In-situ Roman dolia (storage jars) inside the Musee des Docks Romains, Marseille",
         "role": "Massilia was the Greek-founded port where Gaulish tin entered full Mediterranean shipping lanes, its merchants controlling much of the overland trade Strabo describes moving down from Britain through Gaul. The city's trade ties with the Gallic interior, built up since its founding around 600 BCE, made it the natural clearinghouse before tin ingots sailed on for Italy.",
         "sources": [
           "Strabo, Geography 4.6.2",
@@ -667,6 +696,8 @@
         "id": "node_rome_tin",
         "route": "Cornwall-Rome tin route",
         "name": "Rome",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20Forum%20from%20Palatine%20Hill.jpg?width=800",
+        "image_credit": "Roman Forum from Palatine Hill · Wikimedia Commons (CC BY-SA)",
         "role": "Rome was the tin road's final market, where smiths alloyed Cornish tin with copper into bronze and with lead into pewter for tableware, fittings, and coinage alloys sold across the capital. Tin itself left no monumental trace the way grain or oil did, but its presence in nearly every bronze object in the city makes this one of the least visible yet most essential trade routes on this map.",
         "sources": [
           "Plin. NH 34.156-158"
@@ -728,6 +759,8 @@
         "id": "node_corduba",
         "route": "Baetica-Rome olive oil route",
         "name": "Cordoba",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Monumentos funerarios de la Puerta de Gallegos - Córdoba 02.JPG?width=800",
+        "image_credit": "Roman mausoleums of Puerta de Gallegos, Corduba (Cordoba) · Wikimedia Commons",
         "role": "Corduba anchored the upper Guadalquivir stretch of Baetica's olive belt, a valley so densely planted with groves that its oil, alongside grain and wine, made the province one of the wealthiest in the empire. Barges carried its estates' Dressel 20 jars downriver to Hispalis for onward shipment to Rome. This node duplicates the town's role in the region's craft economy documented elsewhere on the map; here it marks its place as an olive oil route origin point.",
         "sources": [
           "https://en.wikipedia.org/wiki/Hispania_Baetica",
@@ -768,6 +801,8 @@
         "id": "node_ostia_oil",
         "route": "Baetica-Rome olive oil route",
         "name": "Ostia",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tempio di Augusto e Roma statua.JPG?width=800",
+        "image_credit": "Cult statue, Temple of Roma and Augustus, Ostia · Wikimedia Commons",
         "role": "Ostia received Baetican oil ships alongside Rome's grain fleet, its horrea warehouses handling amphorae before Trajan's newer Portus basin took over the largest cargo runs. This node duplicates the town's role on the map's grain routes; here it marks its place in the olive oil supply chain specifically.",
         "sources": [
           "Rickman, The Corn Supply of Ancient Rome (1980)"
@@ -859,6 +894,8 @@
         "id": "node_leptismagna_oil",
         "route": "Africa-Rome olive oil route",
         "name": "Leptis Magna",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Leptis Magna market place April 2004.jpg?width=800",
+        "image_credit": "Market (Macellum) of Leptis Magna · Wikimedia Commons",
         "role": "Leptis Magna anchored Tripolitania's growing olive oil trade, its hinterland planted with groves on a centuriated grid that Roman surveyors laid out through the pre-desert zone. The city's harbor shipped oil north on the short Mediterranean crossing to Rome, a trade that expanded enormously in the century after Trajan's death. This node duplicates the city's own gazetteer entry elsewhere on the map; here it marks its role as an olive oil route origin point.",
         "sources": [
           "https://en.wikipedia.org/wiki/Leptis_Magna",
@@ -1007,6 +1044,9 @@
         "id": "node_antioch_silk",
         "route": "Silk Road",
         "name": "Antioch",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tyche%20Antioch%20Vatican%20Inv2672.jpg?width=800",
+        "image_credit": "Roman marble copy of Eutychides' Tyche of Antioch, Vatican Museums · Wikimedia Commons",
+        "image_alt": "Marble statue personifying the city of Antioch, crowned with a mural crown",
         "role": "Antioch was the Silk Road's Roman terminus, where caravan goods off-loaded from Palmyra entered the empire's own Mediterranean shipping network.",
         "sources": [
           "https://www.thecollector.com/four-empires-silk-road/"
@@ -1026,6 +1066,8 @@
         "id": "node_palmyra_silk",
         "route": "Silk Road",
         "name": "Palmyra",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palmyra%20Bel%20Temple.jpg?width=800",
+        "image_credit": "Temple of Bel, Palmyra (pre-2015) · Wikimedia Commons",
         "role": "Palmyra grew rich as the last great caravan market before the Roman frontier, taxing Silk Road goods as they crossed from Parthian territory into the empire.",
         "sources": [
           "https://www.thecollector.com/four-empires-silk-road/"
@@ -1045,6 +1087,8 @@
         "id": "node_dura_europos_silk",
         "route": "Silk Road",
         "name": "Dura-Europos",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dura Europos, Euphrates (6362405375).jpg?width=800",
+        "image_credit": "Dura-Europos overlooking the Euphrates · Wikimedia Commons",
         "role": "This fortified Euphrates river town sat on the contested edge between Roman Syria and Parthia, changing hands repeatedly as a garrison and customs post on the eastern caravan route.",
         "sources": [
           "https://www.thecollector.com/four-empires-silk-road/"
@@ -1064,6 +1108,8 @@
         "id": "node_ctesiphon_silk",
         "route": "Silk Road",
         "name": "Ctesiphon",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ctesiphon-ruin 1864.jpg?width=800",
+        "image_credit": "1864 photograph of the ancient ruins near Ctesiphon · Wikimedia Commons, public domain",
         "role": "The Parthian capital on the Tigris controlled the silk trade's middle stretch, taxing and re-selling Chinese goods to Roman buyers without ever letting them deal directly with the source.",
         "sources": [
           "https://www.thecollector.com/four-empires-silk-road/"
@@ -1216,6 +1262,9 @@
         "id": "node_petra_incense",
         "route": "Incense Road",
         "name": "Petra",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Al_Khazneh_(The_Treasury)_in_Petra.jpg?width=800",
+        "image_credit": "Al-Khazneh (the Treasury), Petra · Wikimedia Commons",
+        "image_alt": "Rock-cut facade of Al-Khazneh at Petra, carved into pink sandstone cliffs",
         "role": "Petra was the Nabataean capital that built its fortune taxing and redistributing incense caravans, a role it kept after Rome annexed the kingdom as the province of Arabia in 106.",
         "sources": [
           "https://www.livius.org/articles/place/incense-route/"
@@ -1290,6 +1339,8 @@
         "id": "node_wine_vienna",
         "route": "Gaul-Rhine wine route",
         "name": "Vienne",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Théâtre%20antique%20de%20Vienne.%20019.JPG?width=800",
+        "image_credit": "Roman Theatre of Vienne · Wikimedia Commons",
         "role": "Vienna, capital of the Allobroges before Rome and a colony after, sat on some of Gallia Narbonensis's best vine-growing slopes above the Rhone. Its wine had a strong enough reputation by the 1st century CE that Pliny the Elder singled it out by name among Gaul's best.",
         "sources": [
           "Plin. NH 14.18",
@@ -1310,6 +1361,9 @@
         "id": "node_wine_lugdunum",
         "route": "Gaul-Rhine wine route",
         "name": "Lyon",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/03.%20Amphith%C3%A9%C3%A2tre%20des%20Trois%20Gaules.JPG?width=800",
+        "image_credit": "Amphitheatre of the Three Gauls, Lyon · Wikimedia Commons",
+        "image_alt": "Excavated remains of the Amphitheatre of the Three Gauls at Lyon",
         "role": "Lugdunum, capital of Gallia Lugdunensis, sat at the Rhone and Saone's confluence, the hinge where southbound goods from the Mediterranean and northbound wine from Narbonensis both changed boats for the onward legs of their journeys. This node duplicates the city's own gazetteer entry elsewhere on the map; here it marks its role as the wine route's river hub.",
         "sources": [
           "https://en.wikipedia.org/wiki/Lugdunum"
@@ -1329,6 +1383,8 @@
         "id": "node_wine_augusta_treverorum",
         "route": "Gaul-Rhine wine route",
         "name": "Trier",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trier_Porta_Nigra_BW_1.JPG?width=800",
+        "image_credit": "Porta Nigra, Trier · Wikimedia Commons (CC BY-SA)",
         "role": "Augusta Treverorum, provincial capital of Gallia Belgica, stood on the Moselle a short haul from the Rhine and did brisk business redistributing wine to the frontier garrisons upriver. Its own famous Moselle vineyards, made legendary by Ausonius, belong to the following two centuries, not to 117 CE.",
         "sources": [
           "https://en.wikipedia.org/wiki/Trier"
@@ -1348,6 +1404,9 @@
         "id": "node_wine_colonia_agrippina",
         "route": "Gaul-Rhine wine route",
         "name": "Cologne",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B6misch-Germanisches%20Museum%20K%C3%B6ln%20(2514-16).jpg?width=800",
+        "image_credit": "Romisch-Germanisches Museum, Cologne · Wikimedia Commons",
+        "image_alt": "Romano-Germanic Museum in Cologne",
         "role": "Colonia Claudia Ara Agrippinensium, capital of Germania Inferior and headquarters of its garrison, was the wine route's practical endpoint - a walled Rhine river port where wine, oil, and pottery from across the Mediterranean and Gaul alike reached the empire's most demanding captive market: its own soldiers.",
         "sources": [
           "https://en.wikipedia.org/wiki/Colonia_Claudia_Ara_Agrippinensium"
