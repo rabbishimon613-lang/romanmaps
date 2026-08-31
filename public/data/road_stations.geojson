@@ -5124,7 +5124,10 @@
           "Itin. Ant. 56 m.p. ab Urbe",
           "https://en.wikipedia.org/wiki/Narni"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ponte di Augusto -Narni-Terni-Umbria.jpg?width=800",
+        "image_credit": "Ponte d'Augusto, the Roman bridge at Narni · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman Ponte d'Augusto arch at Narni"
       }
     },
     {
@@ -5172,7 +5175,10 @@
           "Itin. Ant. 83 m.p. ab Urbe (Interamna branch)",
           "https://en.wikipedia.org/wiki/Spoleto"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Spoleto, Ponte sanguinario. Ingresso.jpg?width=800",
+        "image_credit": "Ponte Sanguinario, the Augustan-era Roman bridge at Spoleto · Wikimedia Commons",
+        "image_alt": "Entrance to the Roman Ponte Sanguinario, Spoleto"
       }
     },
     {
@@ -5367,7 +5373,10 @@
           "Itinerarium Hierosolymitanum; Tabula Peutingeriana, mutatio Ad Intercisa, 9 m.p. a Foro Sempronii",
           "https://en.wikipedia.org/wiki/Furlo_Pass"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Furlo Tunnel Inside.jpg?width=800",
+        "image_credit": "Interior of the Vespasian-era Roman road tunnel through the Furlo Pass · Wikimedia Commons",
+        "image_alt": "Passo del Furlo Roman road tunnel, interior view"
       }
     },
     {
@@ -5415,7 +5424,10 @@
           "Itin. Ant. 185 m.p. ab Urbe",
           "https://en.wikipedia.org/wiki/Fano"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arco d'augusto (Fano) 1.jpg?width=800",
+        "image_credit": "Arco d'Augusto, the gate where the Via Flaminia entered Fano · Wikimedia Commons",
+        "image_alt": "Arch of Augustus, Fano"
       }
     },
     {
@@ -5559,7 +5571,10 @@
           "Itin. Ant., Iter ab Arimino Placentiam",
           "Itinerarium Burdigalense, civitas Faventia"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mappa Faenza Romana.jpg?width=800",
+        "image_credit": "Map of Roman-era Faenza (Faventia) · Wikimedia Commons",
+        "image_alt": "Historical map of Roman Faventia"
       }
     },
     {
@@ -5608,7 +5623,10 @@
           "Itinerarium Burdigalense, civitas Claterno",
           "https://en.wikipedia.org/wiki/Claternae"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa romana claterna.JPG?width=800",
+        "image_credit": "Excavated remains at the Claterna archaeological site, Ozzano dell'Emilia · Wikimedia Commons",
+        "image_alt": "Roman villa remains at Claterna"
       }
     },
     {
@@ -5970,7 +5988,10 @@
           "Tabula Peutingeriana, segment III",
           "Pleiades place 383694"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Libarna (Serravalle Scrivia)-area archeologica e rinvenimenti città romana21.jpg?width=800",
+        "image_credit": "Archaeological area of Libarna, Serravalle Scrivia · Wikimedia Commons",
+        "image_alt": "Excavated remains of the Roman town of Libarna"
       }
     },
     {
@@ -6169,7 +6190,10 @@
           "Itinerarium Antonini",
           "Tabula Peutingeriana"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Verona Arena (Arena di Verona).jpg?width=800",
+        "image_credit": "The Roman Arena of Verona · Wikimedia Commons",
+        "image_alt": "Roman amphitheatre, Verona"
       }
     },
     {
@@ -6218,7 +6242,10 @@
           "Itinerarium Antonini",
           "Itinerarium Burdigalense"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Criptoportico romano (Vicenza) 10.jpg?width=800",
+        "image_credit": "Roman cryptoporticus beneath Vicenza (ancient Vicetia) · Wikimedia Commons",
+        "image_alt": "Underground Roman gallery, Vicenza"
       }
     },
     {
@@ -6291,7 +6318,10 @@
           "Wikipedia, \"Concordia Sagittaria\"",
           "Treccani, Enciclopedia Italiana, s.v. \"Postumia, via\""
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Concordia Sagittaria Lemene.jpg?width=800",
+        "image_credit": "Modern view along the Lemene river at Concordia Sagittaria, site of the Roman colony Iulia Concordia · Wikimedia Commons",
+        "image_alt": "Lemene riverside at Concordia Sagittaria"
       }
     },
     {
@@ -6365,7 +6395,10 @@
           "Itinerarium Antonini (Sutrium-Baccanas XII)",
           "Livy 6.3"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sutri - Anfiteatro 3.JPG?width=800",
+        "image_credit": "The rock-cut Roman amphitheatre at Sutri · Wikimedia Commons",
+        "image_alt": "Roman amphitheatre carved from tufa, Sutri"
       }
     },
     {
@@ -6462,7 +6495,10 @@
           "Itinerarium Antonini (Via Cassia, cumulative LXXII m.p. ab Urbe)",
           "Pliny, Naturalis Historia 2.53.140"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trono delle pantere, usato per riti orgiastici, da casa delle pitture di volsinii, distrutto nel 186 a.c. 01.JPG?width=800",
+        "image_credit": "Museum artifact from the House of Paintings at Volsinii, Bolsena archaeological museum · Wikimedia Commons",
+        "image_alt": "Carved stone throne fragment from Volsinii"
       }
     },
     {
@@ -6723,7 +6759,10 @@
         "sources": [
           "Tabula Peutingeriana"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomba con portico Tuscania Pian di Mola.jpg?width=800",
+        "image_credit": "Etruscan house-tomb with portico, Pian di Mola necropolis at Tuscania · Wikimedia Commons",
+        "image_alt": "Etruscan rock-cut tomb near Tuscania"
       }
     },
     {
@@ -6894,7 +6933,10 @@
           "Itinerarium Antonini, Via Aurelia stage",
           "https://en.wikipedia.org/wiki/Civitavecchia"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Teatro Traiano - Civitavecchia.jpg?width=800",
+        "image_credit": "Teatro Traiano, a Roman theatre at Civitavecchia (ancient Centumcellae) · Wikimedia Commons",
+        "image_alt": "Roman theatre remains at Civitavecchia"
       }
     },
     {
@@ -6965,7 +7007,10 @@
           "Itinerarium Antonini, Via Aurelia stage",
           "https://en.wikipedia.org/wiki/Cosa"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ansedonia, torre di san pancrazio vista dall'acropoli di cosa.jpg?width=800",
+        "image_credit": "View from the ancient acropolis of Cosa, Ansedonia · Wikimedia Commons",
+        "image_alt": "View from the acropolis of Cosa"
       }
     },
     {
@@ -6988,7 +7033,10 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Talamone"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Museo archeologico di Firenze, frontone di Talamone 1.JPG?width=800",
+        "image_credit": "Temple pediment from Talamone (ancient Telamon), Florence Archaeological Museum · Wikimedia Commons",
+        "image_alt": "Hellenistic-era temple pediment relief from Telamon"
       }
     },
     {
@@ -7011,7 +7059,10 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Populonia"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Populonia Necropoli Delle Grotte Overview.jpg?width=800",
+        "image_credit": "Necropoli delle Grotte, part of the Baratti-Populonia necropolis below ancient Populonium · Wikimedia Commons",
+        "image_alt": "Etruscan-Roman necropolis at Populonia"
       }
     },
     {
@@ -7081,7 +7132,10 @@
           "Itinerarium Antonini, Via Aurelia stage",
           "https://en.wikipedia.org/wiki/Pisa"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bagni di nerone, pisa, 01.JPG?width=800",
+        "image_credit": "Bagni di Nerone, the only standing Roman remains in Pisa · Wikimedia Commons",
+        "image_alt": "Ruins of the Baths of Nero, Pisa"
       }
     },
     {
@@ -7223,7 +7277,10 @@
           "Itinerarium Antonini 307.3",
           "https://en.wikipedia.org/wiki/Rieti"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ponte Romano di Rieti - dalla riva, 2.jpg?width=800",
+        "image_credit": "The Roman bridge at Rieti (ancient Reate) · Wikimedia Commons",
+        "image_alt": "Roman bridge over the Velino at Rieti"
       }
     },
     {
@@ -7411,7 +7468,10 @@
           "Itinerarium Antonini 307.9",
           "https://en.wikipedia.org/wiki/Ascoli_Piceno"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ponte Romano di Solestà Ascoli Piceno.jpg?width=800",
+        "image_credit": "Ponte di Solestà, the Roman bridge over the Tronto at Ascoli Piceno · Wikimedia Commons",
+        "image_alt": "Roman bridge at Ascoli Piceno"
       }
     },
     {
@@ -9015,7 +9075,10 @@
           "https://www.historyhit.com/locations/alba-fucens/",
           "https://en.wikipedia.org/wiki/Alba_Fucens"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman Amphitheatre Alba Fucens Italy.jpg?width=800",
+        "image_credit": "Roman amphitheatre at Alba Fucens · Wikimedia Commons",
+        "image_alt": "Amphitheatre ruins at Alba Fucens"
       }
     },
     {
@@ -9038,7 +9101,10 @@
         "sources": [
           "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry%3Dvia-valeria-geo"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/San Benedetto dei Marsi anfiteatro 8 2016.jpg?width=800",
+        "image_credit": "Roman amphitheatre at Marruvium, San Benedetto dei Marsi · Wikimedia Commons",
+        "image_alt": "Amphitheatre ruins of Marruvium"
       }
     },
     {
@@ -9718,7 +9784,10 @@
           "Itinerarium Antonini (Cuntz) 301: Gabii XII",
           "Gabii Project, sites.lsa.umich.edu"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Agrippa Gabii Louvre Ma1208.jpg?width=800",
+        "image_credit": "Bronze portrait bust found at Gabii, now in the Louvre · Wikimedia Commons",
+        "image_alt": "Roman bronze bust excavated at Gabii"
       }
     },
     {
@@ -9907,7 +9976,10 @@
         "sources": [
           "Antonine Itinerary (Cuntz) 301: Frusino VII"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anfiteatro romano di frosinone 2021.jpg?width=800",
+        "image_credit": "Roman amphitheatre of Frosinone (ancient Frusino) · Wikimedia Commons",
+        "image_alt": "Roman amphitheatre remains, Frosinone"
       }
     },
     {
@@ -10049,7 +10121,10 @@
         "sources": [
           "Antonine Itinerary (Cuntz) 301: Teanum XVIII"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Teatro Romano di Teano.jpg?width=800",
+        "image_credit": "Roman theatre of Teano (ancient Teanum Sidicinum) · Wikimedia Commons",
+        "image_alt": "Roman theatre ruins at Teano"
       }
     },
     {
@@ -10072,7 +10147,10 @@
         "sources": [
           "Antonine Itinerary (Cuntz) 301: Alifae XVII"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alife - Accesso al Criptoportico romano.jpg?width=800",
+        "image_credit": "Entrance to the Roman cryptoporticus at Alife (ancient Alifae) · Wikimedia Commons",
+        "image_alt": "Roman underground gallery at Alife"
       }
     },
     {
@@ -10095,7 +10173,10 @@
         "sources": [
           "Antonine Itinerary (Cuntz) 301: Telesia XXV"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anfiteatro Telesia.jpg?width=800",
+        "image_credit": "Roman amphitheatre at Telesia, near San Salvatore Telesino · Wikimedia Commons",
+        "image_alt": "Amphitheatre ruins at Telesia"
       }
     },
     {
