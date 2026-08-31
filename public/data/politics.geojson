@@ -1192,7 +1192,10 @@
           "Grokipedia, \"Quadragesima Galliarum\"",
           "Perseus, Princeton Encyclopedia of Classical Sites, s.v. Genava"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lac_L%C3%A9man.jpg?width=800",
+        "image_credit": "Lac Leman (Lake Geneva), by whose shore the Rhone bridge and customs post stood · Wikimedia Commons",
+        "image_alt": "View across Lake Geneva toward the Alps"
       }
     },
     {
@@ -1246,7 +1249,9 @@
           "CIL V 5262",
           "Pliny, Panegyricus (delivered on his consulship, 100 CE)"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Como - Dom - Fassade - Plinius der Juengere.jpg?width=800",
+        "image_credit": "Statue of Pliny the Younger, Como Cathedral facade — Como's most famous native son · Wikimedia Commons"
       }
     },
     {
@@ -2016,7 +2021,9 @@
           "CIL III 14362",
           "Leibniz-Zentrum fur Archaologie, \"Cults and Sanctuaries in Noricum\""
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Maria%20Saal%20Zollfeld%20Virunum%20Arena%20Nordteil%2022092006%2001.jpg?width=800",
+        "image_credit": "Roman arena remains at Virunum, Zollfeld, Austria · Wikimedia Commons"
       }
     },
     {
@@ -2041,7 +2048,10 @@
           "R. L. Dise, \"The Assignments of Beneficiarii Consularis\", Zeitschrift fur Papyrologie und Epigraphik 116 (1997)",
           "Wikipedia, s.v. Brigantium (Bregenz)"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bodensee_satellit.jpg?width=800",
+        "image_credit": "Satellite image of Lake Constance (Bodensee), on whose shore Brigantium stood · Wikimedia Commons",
+        "image_alt": "Satellite view of Lake Constance on the Alpine frontier"
       }
     },
     {
@@ -2093,7 +2103,9 @@
           "CROSBI, \"Beneficiarii consularis stationes along the Roman road Aquileia-Dyrrachium\"",
           "Hrcak, \"Beneficiarii consularis in the territory of the Delmatae\""
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20temple%20Augustum%20in%20Narona,%201.%20cent.,%20Vid,%20Metkovic,%20Croatia%202010.JPG?width=800",
+        "image_credit": "Temple of Augustus (Augusteum) at Narona, Vid, Croatia · Wikimedia Commons"
       }
     },
     {
@@ -2118,7 +2130,9 @@
           "CROSBI, \"Beneficiarii consularis stationes along the Roman road Aquileia-Dyrrachium\"",
           "Wikipedia, s.v. Burnum"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arches%20of%20the%20Burnum%20principium%20(or%20Forum),%20Burnum%20legionary%20camp,%20Dalmatia%20(10379394316).jpg?width=800",
+        "image_credit": "Arches of the principium at the Roman legionary camp of Burnum, Croatia · Wikimedia Commons"
       }
     },
     {

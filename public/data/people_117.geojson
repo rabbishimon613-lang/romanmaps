@@ -332,6 +332,8 @@
       "properties": {
         "id": "person_rufus_ephesus",
         "name": "Rufus of Ephesus",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ephesus_odeon.JPG?width=800",
+        "image_credit": "The Odeon at Ephesus · Wikimedia Commons",
         "role": "Physician, medical writer",
         "role_group": "writer",
         "location_117": "Ephesus",
@@ -353,6 +355,8 @@
       "properties": {
         "id": "person_soranus_ephesus",
         "name": "Soranus of Ephesus",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Colosseum%20exterior.jpg?width=800",
+        "image_credit": "The Colosseum, Rome, where Soranus practiced medicine · Wikimedia Commons",
         "role": "Physician, gynecological writer",
         "role_group": "writer",
         "location_117": "Rome",
@@ -374,6 +378,8 @@
       "properties": {
         "id": "person_arrian",
         "name": "Arrian",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicopolis%2C%20Augustus%20monument.jpg?width=800",
+        "image_credit": "Augustus's Actium victory monument, Nicopolis, seat of Arrian's teacher Epictetus's school · Wikimedia Commons",
         "role": "Student, future historian and general",
         "role_group": "writer",
         "location_117": "Nicopolis, Epirus",
@@ -396,6 +402,8 @@
       "properties": {
         "id": "person_favorinus",
         "name": "Favorinus of Arles",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Colosseum%20exterior.jpg?width=800",
+        "image_credit": "The Colosseum, Rome, where Favorinus taught and lectured · Wikimedia Commons",
         "role": "Sophist, philosopher",
         "role_group": "writer",
         "location_117": "Rome",
@@ -460,6 +468,8 @@
       "properties": {
         "id": "person_gamaliel_ii",
         "name": "Rabban Gamaliel II",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lod_Mosaic,_12_-_Carole_Raddato.jpg?width=800",
+        "image_credit": "The Lod Mosaic, a Roman-period floor mosaic found at Lod (ancient Lydda) — a later find from the same town, photo by Carole Raddato · Wikimedia Commons",
         "role": "Nasi of the Sanhedrin",
         "role_group": "religious",
         "location_117": "Lydda, Judaea",
@@ -482,6 +492,9 @@
       "properties": {
         "id": "person_ignatius_antioch",
         "name": "Ignatius of Antioch",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Good%20Shepherd%20Catacomb%20of%20Priscilla.jpg?width=800",
+        "image_credit": "Good Shepherd fresco, Catacomb of Priscilla, Rome — site of the early Christian community Ignatius wrote to · Wikimedia Commons",
+        "image_alt": "Early Christian fresco of the Good Shepherd in the Catacomb of Priscilla, Rome",
         "role": "Bishop of Antioch",
         "role_group": "religious",
         "location_117": "Rome (site of martyrdom; died c. 108, roughly a decade before this snapshot)",
@@ -504,6 +517,8 @@
       "properties": {
         "id": "person_polycarp_smyrna",
         "name": "Polycarp of Smyrna",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Agora_of_Smyrna.jpg?width=800",
+        "image_credit": "The Agora of Smyrna · Wikimedia Commons",
         "role": "Bishop of Smyrna",
         "role_group": "religious",
         "location_117": "Smyrna",
@@ -551,6 +566,9 @@
       "properties": {
         "id": "person_marcius_turbo",
         "name": "Quintus Marcius Turbo",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexandria%20-%20Pompey's%20Pillar%20-%20view%20of%20ruins.JPG?width=800",
+        "image_credit": "Pompey's Pillar, Alexandria · Wikimedia Commons",
+        "image_alt": "Pompey's Pillar in Alexandria, Egypt",
         "role": "General",
         "role_group": "military",
         "location_117": "Alexandria, Egypt",
@@ -821,6 +839,8 @@
       "properties": {
         "id": "person_tiberius_claudius_maximus",
         "name": "Tiberius Claudius Maximus",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Forum%2C%20Philippi%20(7272451296).jpg?width=800",
+        "image_credit": "The Forum of Philippi · Wikimedia Commons",
         "role": "Cavalry decurion, veteran of the Dacian Wars",
         "role_group": "military",
         "location_117": "Philippi, Macedonia (modern Filippoi, Greece)",
@@ -845,6 +865,9 @@
       "properties": {
         "id": "person_ulpius_phaedimus",
         "name": "Marcus Ulpius Phaedimus",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The so-called Şekerhane Köşkü, a cenotaph for the deceased emperor Trajan, Selinus, Cilicia, Turkey (36132970036).jpg?width=800",
+        "image_credit": "Cenotaph of Emperor Trajan at Selinus, where Phaedimus attended the dying emperor · Wikimedia Commons",
+        "image_alt": "The Şekerhane Köşkü, a Roman cenotaph built for Trajan, who died at Selinus in 117 CE",
         "role": "Imperial freedman, Trajan's personal attendant",
         "role_group": "ordinary",
         "location_117": "Selinus, Cilicia (modern Gazipasa, Turkey)",
@@ -869,6 +892,9 @@
       "properties": {
         "id": "person_claudius_terentianus",
         "name": "Claudius Terentianus",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexandria%20-%20Pompey's%20Pillar%20-%20view%20of%20ruins.JPG?width=800",
+        "image_credit": "Pompey's Pillar, Alexandria · Wikimedia Commons",
+        "image_alt": "Pompey's Pillar in Alexandria, Egypt",
         "role": "Sailor of the Alexandrian fleet, later legionary",
         "role_group": "military",
         "location_117": "Nikopolis, near Alexandria, Aegyptus (modern Egypt)",
@@ -892,6 +918,9 @@
       "properties": {
         "id": "person_claudius_tiberianus",
         "name": "Claudius Tiberianus",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Karanis_026.JPG?width=800",
+        "image_credit": "Well-preserved mudbrick ruins at Karanis, Egypt · Wikimedia Commons (CC BY-SA 4.0)",
+        "image_alt": "Well-preserved mudbrick ruins at the Karanis archaeological site",
         "role": "Army veteran, former speculator (legionary courier)",
         "role_group": "military",
         "location_117": "Karanis, Aegyptus (modern Kom Aushim, Egypt)",
@@ -915,6 +944,8 @@
       "properties": {
         "id": "person_julius_apollinarius",
         "name": "Gaius Julius Apollinarius",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Theatre_in_Bosra.jpg?width=800",
+        "image_credit": "Roman theatre, Bosra, built over the Nabataean-era city · Wikimedia Commons",
         "role": "Legionary, Third Legion Cyrenaica",
         "role_group": "military",
         "location_117": "Bostra, Arabia Petraea (modern Bosra, Syria)",
@@ -938,6 +969,9 @@
       "properties": {
         "id": "person_apion_antonius_maximus",
         "name": "Apion (Antonius Maximus)",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Piscina%20Mirabilis%202010-by-RaBoe-13.jpg?width=800",
+        "image_credit": "The Piscina Mirabilis cistern, Bacoli, which supplied the Misenum fleet · Wikimedia Commons",
+        "image_alt": "Interior of the Piscina Mirabilis, the great cistern that supplied the Roman fleet at Misenum",
         "role": "Naval recruit, fleet at Misenum",
         "role_group": "military",
         "location_117": "Misenum, Italia (modern Miseno, Italy)",
@@ -1213,6 +1247,8 @@
       "properties": {
         "id": "person_julius_quadratus_bassus",
         "name": "Gaius Julius Quadratus Bassus",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amfiteatrul%20de%20la%20Ulpia%20Traiana%20Sarmizegetusa.jpg?width=800",
+        "image_credit": "Amphitheatre at Ulpia Traiana Sarmizegetusa, Romania · Wikimedia Commons",
         "role": "Governor of Dacia",
         "role_group": "military",
         "location_117": "Ulpia Traiana Sarmizegetusa, capital of Roman Dacia (Hunedoara County, Romania)",
@@ -1235,6 +1271,9 @@
       "properties": {
         "id": "person_rammius_martialis",
         "name": "Quintus Rammius Martialis",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexandria%20-%20Pompey's%20Pillar%20-%20view%20of%20ruins.JPG?width=800",
+        "image_credit": "Pompey's Pillar, Alexandria · Wikimedia Commons",
+        "image_alt": "Pompey's Pillar in Alexandria, Egypt",
         "role": "Prefect of Egypt",
         "role_group": "military",
         "location_117": "Alexandria, Egypt",
@@ -1257,6 +1296,8 @@
       "properties": {
         "id": "person_catilius_severus",
         "name": "Lucius Catilius Severus",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Erciyes Dağı Kayseri.JPG?width=800",
+        "image_credit": "Mount Erciyes (ancient Mount Argaeus) above Caesarea Cappadociae (Kayseri) · Wikimedia Commons",
         "role": "Governor of Cappadocia-Armenia",
         "role_group": "military",
         "location_117": "Caesarea Mazaca, capital of the province of Cappadocia (modern Kayseri, Turkey)",
@@ -1279,6 +1320,9 @@
       "properties": {
         "id": "person_artemion",
         "name": "Artemion",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Salamis%20Ruins%2C%20Cyprus.jpg?width=800",
+        "image_credit": "Ruins of ancient Salamis, Cyprus · Wikimedia Commons",
+        "image_alt": "Archaeological ruins at ancient Salamis, Cyprus",
         "role": "Leader of the Jewish revolt on Cyprus",
         "role_group": "military",
         "location_117": "Salamis, Cyprus",
@@ -1301,6 +1345,9 @@
       "properties": {
         "id": "person_sixtus_i",
         "name": "Sixtus I",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Good%20Shepherd%20Catacomb%20of%20Priscilla.jpg?width=800",
+        "image_credit": "Good Shepherd fresco, Catacomb of Priscilla, Rome · Wikimedia Commons",
+        "image_alt": "Early Christian fresco of the Good Shepherd in the Catacomb of Priscilla, Rome",
         "role": "Bishop of Rome",
         "role_group": "religious",
         "location_117": "Rome",
@@ -1323,6 +1370,8 @@
       "properties": {
         "id": "person_servianus",
         "name": "Lucius Julius Ursus Servianus",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20Forum%20from%20Palatine%20Hill.jpg?width=800",
+        "image_credit": "Roman Forum from Palatine Hill · Wikimedia Commons (CC BY-SA)",
         "role": "Senator; Hadrian's brother-in-law",
         "role_group": "imperial",
         "location_117": "Rome",
@@ -1389,6 +1438,9 @@
       "properties": {
         "id": "person_primus_alexandria",
         "name": "Primus of Alexandria",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexandria%20-%20Pompey's%20Pillar%20-%20view%20of%20ruins.JPG?width=800",
+        "image_credit": "Pompey's Pillar, Alexandria · Wikimedia Commons",
+        "image_alt": "Pompey's Pillar in Alexandria, Egypt",
         "role": "Bishop of Alexandria",
         "role_group": "religious",
         "location_117": "Alexandria, Egypt",
@@ -1411,6 +1463,9 @@
       "properties": {
         "id": "person_papias_hierapolis",
         "name": "Papias of Hierapolis",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pamukkale%20Hierapolis%20Travertine%20pools.JPG?width=800",
+        "image_credit": "White travertine terrace pools at Pamukkale, next to Hierapolis · Wikimedia Commons",
+        "image_alt": "Photograph of white mineral travertine terraces and pools at Pamukkale",
         "role": "Bishop and writer",
         "role_group": "religious",
         "location_117": "Hierapolis, Phrygia (modern Pamukkale, Turkey)",
@@ -1433,6 +1488,8 @@
       "properties": {
         "id": "person_claudius_paternus_clementianus",
         "name": "Claudius Paternus Clementianus",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Necropoli di Tuvixeddu.jpg?width=800",
+        "image_credit": "The Tuvixeddu necropolis, Cagliari (ancient Caralis) · Wikimedia Commons",
         "role": "Equestrian procurator of Sardinia and Corsica",
         "role_group": "military",
         "location_117": "Caralis (modern Cagliari), Sardinia",
@@ -1479,6 +1536,8 @@
       "properties": {
         "id": "person_gaius_bruttius_praesens",
         "name": "Gaius Bruttius Praesens",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cleopatra Gate in Tarsus.JPG?width=800",
+        "image_credit": "Cleopatra's Gate, Tarsus · Wikimedia Commons",
         "role": "Imperial legate (governor) of Cilicia",
         "role_group": "military",
         "location_117": "Tarsus, Cilicia (modern Turkey)",
@@ -1501,6 +1560,8 @@
       "properties": {
         "id": "person_domitia_paulina",
         "name": "Domitia Paulina",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20Forum%20from%20Palatine%20Hill.jpg?width=800",
+        "image_credit": "Roman Forum from Palatine Hill · Wikimedia Commons (CC BY-SA)",
         "role": "Sister of Emperor Hadrian",
         "role_group": "imperial",
         "location_117": "Rome",
@@ -1523,6 +1584,8 @@
       "properties": {
         "id": "person_gnaeus_pedanius_fuscus_salinator",
         "name": "Gnaeus Pedanius Fuscus Salinator",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20Forum%20from%20Palatine%20Hill.jpg?width=800",
+        "image_credit": "Roman Forum from Palatine Hill · Wikimedia Commons (CC BY-SA)",
         "role": "Senator, married into Hadrian's family",
         "role_group": "imperial",
         "location_117": "Rome",
@@ -1545,6 +1608,8 @@
       "properties": {
         "id": "person_theon_of_smyrna",
         "name": "Theon of Smyrna",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Agora_of_Smyrna.jpg?width=800",
+        "image_credit": "The Agora of Smyrna · Wikimedia Commons",
         "role": "Platonist philosopher and mathematician",
         "role_group": "writer",
         "location_117": "Smyrna (modern Izmir, Turkey)",
@@ -1567,6 +1632,8 @@
       "properties": {
         "id": "person_rabbi_tarfon",
         "name": "Rabbi Tarfon",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lod_Mosaic,_12_-_Carole_Raddato.jpg?width=800",
+        "image_credit": "The Lod Mosaic, a Roman-period floor mosaic found at Lod (ancient Lydda) — a later find from the same town, photo by Carole Raddato · Wikimedia Commons",
         "role": "Tannaitic sage",
         "role_group": "religious",
         "location_117": "Lydda, Judaea",
@@ -1611,6 +1678,9 @@
       "properties": {
         "id": "person_gaius_valerius_severus",
         "name": "Gaius Valerius Severus",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Statuette%20of%20enthroned%20Asklepios%2C%20AM%20of%20Corinth%2C%20202799.jpg?width=800",
+        "image_credit": "Statuette of enthroned Asklepios, Archaeological Museum of Corinth · Wikimedia Commons",
+        "image_alt": "A museum statuette from Corinth's Asklepieion, not a photo of the sanctuary ruins",
         "role": "Proconsular governor of Achaea",
         "role_group": "military",
         "location_117": "Corinth, Achaea (Greece)",
@@ -1633,6 +1703,8 @@
       "properties": {
         "id": "person_pharasmanes_ii_of_iberia",
         "name": "Pharasmanes II of Iberia",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mtskheta,_Svetitskhoveli_Cathedral_(36092332115).jpg?width=800",
+        "image_credit": "Mtskheta, capital of the ancient Kingdom of Iberia (cathedral site postdates 117 CE) · Wikimedia Commons",
         "role": "King of Iberia (Caucasus)",
         "role_group": "imperial",
         "location_117": "Mtskheta, Kingdom of Iberia (modern Georgia)",
