@@ -1289,8 +1289,9 @@ to prevent. Building locally to *test* your own work is expected and fine.
       meant the actual glyph rendering itself couldn't be screenshotted here; text-layer syntax
       and data loading were confirmed instead.
 - [ ] `[12-P1-4]` **`fuzzy-dates`** `fix` — `{earliest, latest, display}` date objects.
-- [ ] `[11-P2-10]` **`next-upgrade`** `fix` — `next@14.2.5` advisory flagged in shift 1 and never
-      actioned. Deliberate upgrade with a smoke test.
+- [~] `[11-P2-10]` **`next-upgrade`** `fix` — claimed by cloud shift (scheduled), 2026-08-31 06:xx.
+      `next@14.2.5` advisory flagged in shift 1 and never actioned. Deliberate upgrade with a
+      smoke test.
 - [x] `[06-P2-6]` **`priority-cities`** `add` — Verified 2026-08-26 by cloud shift 63. Cloud
       shift 59's "Priority cities: 29 curated POIs for Alexandria, Carthage, Antioch, Caesarea
       Maritima, Londinium, Lugdunum, Tarraco, Pergamon" commit already delivered this ticket's
