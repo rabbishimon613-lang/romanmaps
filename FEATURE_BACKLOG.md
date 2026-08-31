@@ -1192,6 +1192,53 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       avoid: `cat` a real existing record from the target file into the task prompt instead of
       writing the schema from memory.
 
+## New ideas spotted this shift (2026-08-31, Shift 80 — image top-up across 7 axis files, Baiae landmarks, Lusitania conventus)
+
+- [ ] **`scripts/metrics.mjs`'s "Has an image" line only measures `pois.geojson`, not the other 32
+      thematic files.** This shift spent most of its Track A time closing large image-coverage
+      gaps in `mints.geojson` (23%→85%), `politics.geojson` (0%→65%), `religions_117.geojson`
+      (65%→87%), `imperial_cult.geojson` (39%→70%), `letters.geojson` (44%→56%),
+      `conventus.geojson` (41%→59%), and `people_117.geojson` (19%→46%) — real, individually
+      verified work — and `METRICS.md`'s headline image percentage didn't move at all, because it
+      only ever looked at `pois.geojson`. Worth extending the script to report image coverage
+      per thematic file (or a combined total) so this kind of work is visible in the tracked
+      history table, not just in SHIFT_LOG prose.
+- [ ] **Cross-file image reuse is a real, fast, zero-search-budget way to close image gaps — check
+      it before dispatching a research agent.** Most of this shift's image top-up (60+ of ~120
+      applied images) came from noticing that a record's city already had a verified Commons URL
+      sitting in a *different* axis file (a beneficiarii station's town is also a `sites.ts` city
+      with curated landmarks; a provincial governor's seat already has an imperial-cult temple
+      photo). A simple grep across `public/data/*.geojson` for `modern_location`/`name` matches
+      with an existing `image_url` finds these in seconds, and several turned out to be better,
+      more specific matches than a fresh search would likely find (a governor-of-Iudaea record
+      landing on a photo of Herod's Promontory Palace — which literally became the Roman
+      governor's praetorium — rather than a generic "ruins of Caesarea" photo). Do this pass
+      *before* spending WebSearch budget on a record that might already have a match two files
+      away.
+- [ ] **`apply-image-topup.mjs` only works on records that already have a `confidence` field** —
+      it anchors the splice point there. `conventus.geojson` and `people_117.geojson` both have
+      records without one (an older/simpler schema variant), which the script silently reports as
+      `skip: no confidence field found nearby` rather than erroring loudly. Hit this twice this
+      shift; worked around it both times with a small one-off script anchoring on the `sources`
+      array's closing bracket instead (not committed — scratchpad only). Worth either extending
+      the real script to fall back to anchoring after `sources` when `confidence` is absent, or
+      documenting the two possible anchor points so a future shift doesn't have to rediscover the
+      workaround.
+- [ ] **The alimenta-towns research thread (axis 15) hit a real, confirmed environment wall, not
+      a dead end in the sources themselves.** Every domain that would actually settle "which
+      Italian towns are attested in the alimenta scheme beyond the 28 already in
+      `euergetism.geojson`" — `en.wikipedia.org`, `veleia.it` (Nicola Criniti's critical edition
+      PDFs, cited repeatedly as the real source), `judaism-and-rome.org`, `cambridge.org` — is
+      blocked by this environment's egress proxy for direct `WebFetch`/`curl`, leaving only
+      `WebSearch`'s own summarized snippets, which are not reliable enough to cite as a primary
+      source (one summary conflated the tablet's modern museum location, Parma, with an actual
+      ancient beneficiary town — caught and not added, but it's exactly the kind of error this
+      corpus's search-summary layer will keep producing). A future attempt needs either a
+      different environment with broader egress, or to accept this specific research question is
+      not answerable from here and redirect axis-15 effort toward the benefactor-inscription half
+      of the axis instead (`euergetism.geojson` already has 32 of those, less blocked by this
+      exact wall).
+
 ## Shipped (moved from above; newest on top)
 
 - 2026-08-30 — Shift 77: Axis 3a — 44 new forts across two fresh frontiers: eastern (Arabia,

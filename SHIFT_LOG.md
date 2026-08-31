@@ -7,6 +7,182 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 80 — 2026-08-31 (this shift's own prompt claimed "Shift 1 of four")
+
+Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
+count. Repo booted on a detached `HEAD` sitting at the real tip (`f357d75`, Shift 79's own last
+commit) while local `main`/`origin/main` pointed at a stale `5093cbe` ("Shift 56"); `git fetch
+origin main` + `git checkout main && git reset --hard origin/main` resolved it cleanly with no
+lost work, the same pattern documented by dozens of shifts before this one.
+
+### Board + backlog check
+
+Confirmed the standing conclusion every recent shift has reached: the big `BOARD.md` P0 tickets
+(`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[13-P0-2]`
+image-audit, `[02-P0-4]`'s glyph-PBF half) are too large for one unattended session, and
+`[15-P0-1]`/`[14-P0-1]` stay explicitly human-blocked. No `[~]` claims were stale or active.
+Fell back to the axes/FEATURE_BACKLOG, same as recent shifts, weighting Track A toward `deepen`
+work this shift specifically because Shift 79's own log flagged an image-coverage gap as the
+clear next priority and this shift had a fresh WebSearch budget to spend on it.
+
+### A find worth logging up front: the shared WebSearch budget is real and tight
+
+Dispatched five parallel background research agents at the top of the shift (two mint-image
+batches, two politics-image batches, one alimenta-towns research task). All five independently
+hit a **session-wide 200-call WebSearch cap partway through**, several explicitly reporting
+"200 of 200 calls used" mid-task — confirming this budget is shared across every concurrent
+agent, not allocated per-agent. Yield was still substantial (mints 30+22 of 67, politics 22+9
+of 88) but every agent's own report flagged real remaining work cut short by the cap, not by a
+research dead end. Worth internalizing for any future shift dispatching several search-heavy
+agents in parallel: stagger them, or expect partial completion and plan a manual follow-up pass
+with the orchestrator's own (separately-budgeted, it turned out) WebSearch access — that's
+exactly what closed most of the remaining gap this shift, detailed below.
+
+### Track A — deepen: closing the image-coverage gap across seven axis files
+
+Shift 79's own "next shift" note named this the top priority (mints' 17 new records and most of
+religions' 20 non-Mithraeum records shipped with `image_url` omitted when its own search budget
+ran out). Investigating turned up a much bigger gap than that one note implied: `politics.geojson`
+had **zero** image coverage across all 88 records — worse than any other axis file checked — and
+`people_117.geojson` was at 19% (57/70 missing), the worst ratio for any file relative to its
+prominence (Axis 4, "the living empire," is a flagship axis).
+
+**Phase 1 — dedicated research agents (mints, politics).** Reviewed all five agent outputs in
+full before applying anything (never trust an agent's own image pick blind — this project's own
+FEATURE_BACKLOG has a standing note about wrong-period photos slipping through). Caught and
+excluded one real problem before splicing: an agent proposed the Hippodrome's Serpent Column for
+`mint_byzantium`, but that column was moved to Constantinople from Delphi by Constantine in 324
+CE — it simply wasn't at Byzantium in 117 CE, a location error, not just a later-period photo
+(several other agent picks, like Hadrian's Gate at Antalya or the Antonine Baths at Carthage, are
+later buildings but *correctly labeled as such* in their credit line, so they were kept — the
+brief's own model description ships a photo of the ruin as it exists today, not a claim the
+specific building stood in 117 CE). Applied via the existing `scripts/apply-image-topup.mjs`
+(byte-clean splice, verified before/after feature counts on every file). `mints.geojson`
+67→13 missing; `politics.geojson` 88→32 missing (the agents got through all 4 chariot factions,
+the Castra Praetoria, most urban cohorts, the one excavated vigiles station, and 22 of 32 senator
+hometowns before the budget ran out).
+
+**Phase 2 — orchestrator-level reuse pass (the actual budget-multiplier).** Rather than dispatch
+more search-heavy agents into the same shared cap, cross-referenced every remaining missing-image
+record against every *already-verified* Commons URL already sitting in the repo — a beneficiarii
+station in a city that's also a `sites.ts` archaeological park, or a provincial governor's seat
+that already has a curated `pois.geojson` landmark, very often already has a real, checked image
+two files away. This closed **25 more politics.geojson records** (14 beneficiarii + 10 governors +
+1 follow-up) and **3 more mints** (a handful of direct searches for the truly untouched ones:
+Gortyna, Pessinus, Stratonicea) with zero additional WebSearch spend, several as genuine upgrades
+over a generic "ruins" photo — `cult_ancyra`/`politics_governor_galatia_cappadocia` now point at
+the actual Temple of Augustus and Rome at Ancyra (the Res Gestae inscription temple), and
+`religion_other_mystery_palmyra_bel` points at the real Temple of Bel. Ran the same reuse pass
+across `religions_117.geojson` (26→10 missing), `imperial_cult.geojson` (27→13 missing),
+`conventus.geojson` (16→11 missing — 5 of these records had no `confidence` field for the topup
+script to anchor on, so spliced by hand after `sources` instead, verifying JSON parse + feature
+count before writing each time), and `letters.geojson` (27→21 missing, six of them the Ignatius/
+rescript records now pointing at Nicomedia/Nicaea/Magnesia/Smyrna images already sitting in
+`mints.geojson`/`imperial_cult.geojson`). Wrote a small one-off script
+(`apply_after_sources.mjs`, scratchpad-only, not committed) for the no-`confidence`-field case
+before hitting it a second time on `people_117.geojson`.
+
+**`people_117.geojson` — the best single find of the pass.** Most of its 57 missing-image records
+are minor figures attested by exactly one surviving document — a Vindolanda tablet, an Egyptian
+papyrus, the Babatha archive — where no portrait exists or could be honest. But the *document*
+that names them is itself a real, well-photographed artifact. Closed two full clusters this way:
+the 9 Vindolanda-tablet people (Batavian troopers, a slave, a cornicularius, an aquilifer, all
+already citing a specific `Tab. Vindol.` reference) now point at photographed tablets in the
+British Museum; the 10 Babatha/Cave-of-Letters archive people (landowners and guardians from
+Maoza and En-Gedi) point at Babatha's own scroll or the cave findspot itself. 57→38 missing.
+
+**A real fix found in passing.** While in `letters.geojson` for the image pass, noticed the same
+11 "no name field" warnings `npm run validate` has printed on every run this whole shift (and, per
+SHIFT_LOG, many shifts before it) were trivially fixable — all 11 are the file's `LineString`
+route records (7 Pliny correspondence routes, 4 Ignatius martyrdom-journey legs), which had
+`from`/`to`/`note` but no `name`, the field a hover tooltip actually reads. Added a short
+descriptive name to each (`"Como to Rome — Pliny and Tacitus"`, `"Antioch to Smyrna — Ignatius's
+journey to martyrdom"`). Validator warnings 18→7; the remaining 7 are the pre-existing, already-
+reviewed India/China envelope-boundary warnings, unrelated.
+
+### Track A — add: Baiae's landmark POIs, and Lusitania's conventus system
+
+**Baiae (12 new `pois.geojson` records).** A slug-vs-display-name audit across all 40 `sites.ts`
+sites (matching `modern_location`/`id` against each site's display name, correcting for the
+Leptis/Lepcis transliteration trap Shift 79 flagged) found Baiae was the one genuine zero-coverage
+site — every other site had at least a few curated landmark records. Researched via a background
+agent, reviewed record-by-record: covers the bath-complex domes folk-named "Temple of Mercury/
+Venus/Diana" (correctly categorized `bathhouse`, not `temple`, and correctly dated — Mercury is
+late-Republican and `extant_117ce:true`, but Venus is Hadrianic (c. 125) and Diana is Severus
+Alexander's (c. 225), both correctly `extant_117ce:false` with the notes saying so plainly),
+Portus Julius, the Villa of the Pisoni, the Punta Epitaffio nymphaeum, Nero's unfinished canal,
+and more. No images — the agent's own WebSearch budget ran out before any could be verified;
+flagged for a future pass, same as several other new-content batches this shift.
+
+**Lusitania's conventus system (3 new `conventus.geojson` records, axis 8b).** `conventus.geojson`
+already had Asia's 13 assize centers and Baetica's + Tarraconensis's 11 combined — Lusitania was
+the one well-documented province still entirely missing. Pliny the Elder names its three
+jurisdictions explicitly (*Natural History* 4.117): "the whole of this province is divided into
+three associations, centred at Emerita, Pax and Scalabis." Added Merida (Emerita Augusta, the
+provincial capital), Santarem (Scalabis), and Beja (Pax Iulia). Merida reuses an already-verified
+theatre image; the other two ship without one — a search for Beja's obvious hit, the Torre de
+Menagem, turned out to be a medieval Gothic keep, not Roman, so it was deliberately left out
+rather than misdate a photo, matching the same discipline the Baalbek/Baiae dating work has used
+all shift.
+
+**Alimenta towns — the one genuine negative finding this shift, logged honestly.** The brief
+frames "add the remaining ~20 alimenta towns" as an axis-15 target; `euergetism.geojson` already
+had 28 of the ~39-50 attested (secondary-source counts vary: one search found "39 towns... at
+which government alimenta are attested or implied," another cited Duncan-Jones's ~45-town
+appendix). A dedicated research agent found **zero** new towns it could verify — every specific
+name it turned up (Nomentum, Pisaurum, Industria, etc.) was already in the file under its modern
+name, and the two primary bronze tables (CIL XI 1147 Veleia, CIL IX 1455 Ligures Baebiani) are
+both behind domains this environment's egress proxy blocks outright (`en.wikipedia.org`,
+`veleia.it`, `judaism-and-rome.org`, `cambridge.org` all returned `EGRESS_BLOCKED` on direct
+fetch — confirmed independently by the agent and again by the orchestrator). A follow-up
+orchestrator-level search surfaced one live secondary-source claim naming Parma and Lucca as
+possible additional beneficiary towns, but it read as an AI-search-summary conflation of the
+tablet's *modern museum location* (Parma) with an actual ancient beneficiary — not confirmed
+against a primary citation, so **not added**, per the project's own standing "real data or don't
+include it" rule. This axis needs either a fresh search budget spent specifically hunting a
+mirror/cache of the Criniti critical edition (cited repeatedly as the actual source for a full
+town list) or accepting that this environment's blocked-domain list makes primary verification
+of this specific corpus infeasible from here.
+
+### State, verification, next
+
+`npm install` needed at session start (fresh cloud container). `npm run validate`: 0 errors on
+every run; warnings dropped 18→7 (the letters.geojson fix, no new warnings introduced anywhere
+else); cross-file collision count moved 189→190 (one point from the new Baiae/conventus records
+landing near existing coverage — expected, the known `[12-P0-1]` merge backlog). `npm run build`:
+clean before every one of eight pushes. `npm run metrics -- --write` run after every batch — note
+for whoever reads `METRICS.md` next: **its "Has an image" line only measures `pois.geojson`**, not
+the other 32 thematic files, so this shift's large image-coverage gains on
+`mints`/`politics`/`religions_117`/`imperial_cult`/`conventus`/`letters`/`people_117` don't move
+that headline number at all despite being real, verified work — worth extending `scripts/
+metrics.mjs` to report thematic-file image coverage too, now that a full shift's worth of work
+went into exactly that and left no trace in the tracked metric. Final per-file image coverage this
+shift left behind: `mints.geojson` 85.1%, `religions_117.geojson` 86.5%, `politics.geojson` 64.8%,
+`imperial_cult.geojson` 70.5%, `letters.geojson` 56.3%, `conventus.geojson` 59.3%,
+`people_117.geojson` 45.7% (up from 0%, 71%, 23%, 39%, 44%, 41%, and 19% respectively — every one
+of these moved by 20-70 points in one session). Eight commits total, each individually validated
+and built before push.
+
+**Next shift**: `politics.geojson`'s remaining 32 gaps are now the genuinely hard ones — 6 of 7
+individual vigiles cohort stations (no excavated findspot beyond Cohort VII, confirmed by direct
+search this shift, not just the earlier agent's report), 8 minor beneficiarii towns (Eining, Ptuj,
+Trebnje, Caseiu, Geneva, Maria Saal, Bregenz, Vid, Kistanje, Podgorica, Trilj, Humac), and a
+handful of senator hometowns — worth a fresh, focused search pass rather than more reuse-hunting,
+since the easy reuse wins are now spent. `people_117.geojson`'s remaining 38 are true one-offs
+(Trajan's inner circle, philosophers, bishops, individual Egyptian-papyri figures) without a
+shared-artifact shortcut — real portrait/artifact research, not reuse. The alimenta-towns dead end
+above is worth a fresh attempt with a full search budget specifically targeting the Criniti
+edition or a working mirror of the primary tables. `sports.geojson` (5 missing), `health.geojson`
+(6 missing), `disasters.geojson`/`landmarks_117.geojson`/`neighbors_117.geojson`/`gender_
+sexuality_geography.geojson` (1 each) are all now down to single-digit stragglers — a quick
+mop-up pass would plausibly close several axis files to 100% image coverage in under an hour.
+`events_117.geojson` (22/22 missing) and `trade_routes.geojson` (46/46 missing on their Point
+features) are the two files this shift never touched at all — `trade_routes`' Points are likely
+route-endpoint markers that could mostly reuse an already-covered city's image the same way this
+shift's reuse pass worked elsewhere; `events_117` would need real per-event research.
+
+---
+
 ## Shift 79 — 2026-08-30 (this shift's own prompt claimed "Shift 4 of four")
 
 Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
