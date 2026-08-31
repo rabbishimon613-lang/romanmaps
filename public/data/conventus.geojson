@@ -585,6 +585,80 @@
           "https://en.wikipedia.org/wiki/Conventus_Bracarensis"
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3453,
+          38.9165
+        ]
+      },
+      "properties": {
+        "id": "conventus_emerita",
+        "name": "Merida",
+        "province": "Lusitania",
+        "modern_location": "Merida, Spain",
+        "extant_117ce": true,
+        "notes": "Emerita Augusta was Lusitania's provincial capital and the seat of its largest conventus, hearing cases from the wealthiest and most Romanized third of the province. Pliny the Elder named it first of the three jurisdictions when he described Lusitania's court system. Governors and their staff worked from the city's forum, a short walk from the theatre where advocates built their reputations.",
+        "sources": [
+          "Pliny the Elder, Natural History 4.117",
+          "https://en.wikipedia.org/wiki/Conventus_iuridicus",
+          "https://en.wikipedia.org/wiki/M%C3%A9rida,_Spain"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Merida Roman Theatre1.jpg?width=800",
+        "image_credit": "Roman Theatre of Emerita Augusta, Merida · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.6864,
+          39.2362
+        ]
+      },
+      "properties": {
+        "id": "conventus_scalabis",
+        "name": "Santarem",
+        "province": "Lusitania",
+        "modern_location": "Santarem, Portugal",
+        "extant_117ce": true,
+        "notes": "Scalabis, refounded as a Caesarian colony on a bluff above the Tagus, governed Lusitania's western jurisdiction. Pliny the Elder listed it alongside Emerita and Pax as one of the province's three assize seats, drawing litigants from the towns strung along the river toward the Atlantic. A Roman temple podium still standing in the old citadel today marks the civic core its magistrates once worked from.",
+        "sources": [
+          "Pliny the Elder, Natural History 4.117",
+          "https://en.wikipedia.org/wiki/Scalabis",
+          "https://en.wikipedia.org/wiki/Conventus_iuridicus"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.8632,
+          38.0151
+        ]
+      },
+      "properties": {
+        "id": "conventus_pax_iulia",
+        "name": "Beja",
+        "province": "Lusitania",
+        "modern_location": "Beja, Portugal",
+        "extant_117ce": true,
+        "notes": "Pax Iulia governed Lusitania's southern jurisdiction, the district covering the grain- and olive-rich plains toward the Guadiana. Pliny the Elder named it the third of the province's three courts, alongside Emerita and Scalabis. Surrounding villas like the one at nearby Pisoes shipped their produce through the town on the way to the wider Roman market.",
+        "sources": [
+          "Pliny the Elder, Natural History 4.117",
+          "https://en.wikipedia.org/wiki/Pax_Julia",
+          "https://en.wikipedia.org/wiki/Conventus_iuridicus"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
