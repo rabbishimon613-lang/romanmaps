@@ -38608,6 +38608,335 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0827,
+          40.8218
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_mercury_baiae",
+        "category": "bathhouse",
+        "name_latin": "Balneum (Frigidarium) Baiarum",
+        "name_english": "Temple of Mercury, Baiae",
+        "province": "Italia",
+        "modern_location": "Baiae, Italy",
+        "built": -80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Despite its name, this was never a temple: it was the frigidarium of a public bath, its 21-meter concrete dome the oldest of that scale to survive from Rome. Locals also called it the Temple of the Echo, since a shout under the coffered vault rings back clearly. An oculus cut into the crown lit the cold plunge pool below, decades before Hadrian's Pantheon reused the same idea. Built in the late Republic, it stood in full working use in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Baiae",
+          "https://lavocenegliantichispazi.it/en/temple-of-mercury-baia-bacoli-naples/",
+          "https://www.heritagedaily.com/2020/11/baiae-the-hedonistic-harbour-of-vice/136094"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0836,
+          40.8221
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_venus_baiae",
+        "category": "bathhouse",
+        "name_latin": "Balneum Octagonum",
+        "name_english": "Temple of Venus, Baiae",
+        "province": "Italia",
+        "modern_location": "Baiae, Italy",
+        "built": 125,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The folk name is a myth: this octagonal domed hall was a heated bathing room in a bath-and-villa complex, named for a statue of Venus found in its rubble. Excavators date the structure to Hadrian's reign, its dome ranked among antiquity's largest after the Pantheon and Diana's hall nearby. Bathers moved through its warm chamber toward the shore-facing baths over the bay. Built under Hadrian, this hall postdates Trajan's death and did not exist at this map's 117 CE snapshot.",
+        "sources": [
+          "https://www.britannica.com/topic/Temple-of-Venus-building-Baiae-Italy",
+          "https://www.thetravel.com/what-happened-to-the-city-of-baiae/",
+          "http://www.naplesldm.com/venustemp.php"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0841,
+          40.8226
+        ]
+      },
+      "properties": {
+        "id": "poi_temple_diana_baiae",
+        "category": "bathhouse",
+        "name_latin": "Balneum Rotundum Maximum",
+        "name_english": "Temple of Diana, Baiae",
+        "province": "Italia",
+        "modern_location": "Baiae, Italy",
+        "built": 225,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Baiae's largest dome, nearly 30 meters across, crowned a bath hall rather than any shrine to Diana, whose statue simply gave the ruin its later name. Engineers thinned the vault toward its crown and cut deep coffers into the ceiling to shed weight without losing span. Excavators credit its construction to the emperor Severus Alexander in the 220s CE. Built over a century after Trajan's death on 11 August 117 CE, it did not yet exist at this map's snapshot.",
+        "sources": [
+          "https://www.tandfonline.com/doi/full/10.1080/15583058.2020.1870777",
+          "https://www.thetravel.com/what-happened-to-the-city-of-baiae/",
+          "http://engineeringrome.org/roman-dome-progression/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.083,
+          40.8214
+        ]
+      },
+      "properties": {
+        "id": "poi_sosandra_baths_baiae",
+        "category": "bathhouse",
+        "name_latin": "Thermae Sosandrae",
+        "name_english": "Sosandra Terrace Baths, Baiae",
+        "province": "Italia",
+        "modern_location": "Baiae, Italy",
+        "built": 70,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A wide colonnaded terrace stepped up Baiae's hillside as one bathing sector of the sprawling thermal complex, taking its modern name from a copy of the Greek Sosandra statue type unearthed there. Vaulted service rooms and heated chambers ran beneath the open portico, part of the mineral-spring bathing quarter that made Baiae Rome's most fashionable resort. The terrace belonged to a 1st-century-CE expansion, already generations old by Trajan's reign, and stayed in full use through 117 CE.",
+        "sources": [
+          "https://www.parcoarcheologicosommersodibaia.it/en/history/",
+          "https://en.wikipedia.org/wiki/Baiae"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0748,
+          40.8268
+        ]
+      },
+      "properties": {
+        "id": "poi_portus_julius_baiae",
+        "category": "port",
+        "name_latin": "Portus Julius",
+        "name_english": "Portus Julius, Baiae",
+        "province": "Italia",
+        "modern_location": "Baiae, Italy",
+        "built": -37,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Agrippa carved this hidden naval base out of Lake Lucrinus and Lake Avernus in 37 BCE, cutting canals to the sea so Octavian could train a fleet against Sextus Pompey unseen. The ruse worked: that fleet broke cover to win the Battle of Naulochus in 36 BCE. Within decades silt had choked its channels and the fleet relocated to Misenum. By 117 CE its moles and quays stood as a landlocked relic, their outlines still traceable in the shallow water that has since claimed most of the site.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Portus_Julius",
+          "https://www.parcoarcheologicosommersodibaia.it/en/le-immersioni/portus-julius/",
+          "https://www.romanports.org/en/the-ports/598-portus-iulius-italy.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0862,
+          40.8155
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_pisoni_baiae",
+        "category": "villa",
+        "name_latin": "Villa Pisonum",
+        "name_english": "Villa of the Pisoni, Baiae",
+        "province": "Italia",
+        "modern_location": "Baiae, Italy",
+        "built": -50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This sprawling seafront villa belonged to the Calpurnii Pisones, the patrician family whose head organized the failed conspiracy against Nero in 65 CE. Terraces, quays, a fishpond, and a colonnaded viridarium garden spread across the shore, with a private bath wing in the residential quarter. When the plot collapsed, Nero confiscated the estate for the imperial household. Bradyseism has since dropped much of it underwater, but at 117 CE it stood on dry ground as a working seaside residence.",
+        "sources": [
+          "https://doi.org/10.3390/heritage3040066",
+          "https://www.parcoarcheologicosommersodibaia.it/en/the-dives/the-pisonian-villa/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0865,
+          40.8138
+        ]
+      },
+      "properties": {
+        "id": "poi_nymphaeum_epitaffio_baiae",
+        "category": "fountain",
+        "name_latin": "Nymphaeum Claudianum",
+        "name_english": "Nymphaeum of Punta Epitaffio, Baiae",
+        "province": "Italia",
+        "modern_location": "Baiae, Italy",
+        "built": 45,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Built into an imperial villa on this headland, an apsed grotto-fountain staged a sculpture gallery around its pool: a portrait of Antonia Minor, a group of Ulysses drugging the Cyclops Polyphemus, and more, arranged as a Julio-Claudian dynastic display. The villa is linked to the emperor Claudius, whose reign matches the sculptures' style and date. Bradyseism sank the complex intact, and 1980s divers found the statues still standing in their niches. In 117 CE it sat on solid, dry shoreline.",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q18747381",
+          "https://www.parcoarcheologicosommersodibaia.it/en/history/",
+          "https://news.artnet.com/art-world/baia-underwater-archaeological-park-2029596"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0823,
+          40.8209
+        ]
+      },
+      "properties": {
+        "id": "poi_ambulatio_villa_baiae",
+        "category": "villa",
+        "name_latin": "Villa Ambulationis",
+        "name_english": "Villa of the Ambulatio, Baiae",
+        "province": "Italia",
+        "modern_location": "Baiae, Italy",
+        "built": 30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A raised, roofed portico gave this hillside villa sector its modern name, ambulatio, a covered gallery for walking and taking in the bay view in any weather. Terraced against the slope beside Baiae's bathing quarter, it formed part of the dense villa district packing the hillside above the harbor. Excavation has traced its colonnades and service rooms through several building phases of the early Empire. The terrace stood occupied through 117 CE, part of the resort's still-thriving villa belt.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Baiae",
+          "https://www.parcoarcheologicosommersodibaia.it/en/history/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0795,
+          40.8245
+        ]
+      },
+      "properties": {
+        "id": "poi_nero_canal_baiae",
+        "category": "canal",
+        "name_latin": "Fossa Neronis",
+        "name_english": "Nero's Canal, Baiae",
+        "province": "Italia",
+        "modern_location": "Baiae, Italy",
+        "built": 64,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "After the fire of Rome in 64 CE, Nero ordered a navigable canal dug from Lake Avernus near Baiae to the Tiber at Ostia, some 260 kilometers meant to spare grain fleets the open sea. Tacitus and Suetonius record the project's ambition and its ruinous cost in forced labor. Only a short stretch near Avernus was ever cut before Nero's death in 68 CE ended the scheme. In 117 CE the abandoned trench near Baiae still scarred the ground, unfinished and never completed as a canal.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Baiae",
+          "https://en.wikipedia.org/wiki/Nero"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0735,
+          40.8272
+        ]
+      },
+      "properties": {
+        "id": "poi_lucrine_oyster_beds_baiae",
+        "category": "harbor",
+        "name_latin": "Ostrearum Vivaria Lucrina",
+        "name_english": "Lucrine Oyster Beds, Baiae",
+        "province": "Italia",
+        "modern_location": "Baiae, Italy",
+        "built": -95,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "On Lake Lucrinus's shallow water, Sergius Orata built the Roman world's first commercial oyster farms around 95 BCE, driving wooden piles into the lakebed to raise cultivation beds. Pliny the Elder credits him with inventing oyster farming purely for profit, and Lucrine oysters became a byword for luxury dining that Martial and Horace kept naming for two centuries. The lake later fed the Portus Julius naval base built beside it. The beds were still worked and famous when Trajan died in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Lacus_Lucrinus",
+          "https://en.wikipedia.org/wiki/Sergius_Orata"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.086,
+          40.7935
+        ]
+      },
+      "properties": {
+        "id": "poi_hortensius_fishponds_baiae",
+        "category": "villa",
+        "name_latin": "Villa Hortensii",
+        "name_english": "Villa of Hortensius, Baiae",
+        "province": "Italia",
+        "modern_location": "Baiae, Italy",
+        "built": -70,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The orator Quintus Hortensius, Cicero's courtroom rival, kept a villa on this coast with fishponds so lavish that Varro recorded him weeping over a dead pet moray eel. Pliny the Elder later used the story to mock Rome's fishpond-owning elite, a class so common on this shore that Cicero coined the label piscinarii for its members. The ponds needed constant seawater exchange through rock-cut channels. Such fishpond villas on the Baiae shore stayed in aristocratic hands into the imperial period.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Quintus_Hortensius",
+          "https://en.wikipedia.org/wiki/Baiae"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0812,
+          40.8231
+        ]
+      },
+      "properties": {
+        "id": "poi_republican_terrace_baiae",
+        "category": "bathhouse",
+        "name_latin": "Balnea Baiana Antiquiora",
+        "name_english": "Republican Terrace Baths, Baiae",
+        "province": "Italia",
+        "modern_location": "Baiae, Italy",
+        "built": -150,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The lowest, oldest terrace of the Baiae baths dates to the 2nd century BCE, when the hot springs first drew Roman bathers, a generation before Sulla or Caesar set foot there. Small barrel-vaulted rooms and plain plunge basins from this phase underlie the grander domed halls the site is now known for. Strabo already described Baiae as crowded with bathing establishments by the late Republic. By 117 CE these rooms were folded into a larger complex, their walls still standing as its oldest core.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Baiae",
+          "https://www.around-naples.com/en/ancient-roman-baths-of-baie.html"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
