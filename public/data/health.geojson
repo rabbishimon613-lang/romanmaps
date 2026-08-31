@@ -1026,7 +1026,10 @@
      "https://en.wikipedia.org/wiki/Abano_Bagni",
      "https://www.aquaepatavinae.it/portale/?lang=en"
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ingresso%20Parco%20Montirone%20%28Abano%20Terme%29%2001.JPG?width=800",
+    "image_credit": "Entrance to the Montirone archaeological park, site of the Roman-era Fontes Aponi springs, Abano Terme · Wikimedia Commons",
+    "image_alt": "Entrance to the Montirone archaeological park at Abano Terme"
    }
   },
   {

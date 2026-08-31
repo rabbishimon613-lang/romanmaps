@@ -83,6 +83,7 @@ function collectPoiMetrics() {
 function collectThematicCount() {
   let records = 0;
   let files = 0;
+  let withImage = 0;
   for (const name of readdirSync(DATA_DIR)) {
     if (!name.endsWith(".geojson") || NOT_THEMATIC.has(name)) continue;
     if (statSync(join(DATA_DIR, name)).isDirectory()) continue;
@@ -91,11 +92,15 @@ function collectThematicCount() {
       if (!Array.isArray(fc.features)) continue;
       records += fc.features.length;
       files += 1;
+      for (const f of fc.features) {
+        const url = f.properties?.image_url;
+        if (typeof url === "string" && url.trim()) withImage += 1;
+      }
     } catch {
       /* the validator is what reports an unreadable file; metrics just skips it */
     }
   }
-  return { records, files };
+  return { records, files, withImage };
 }
 
 /** How many POI categories have a "What happened here" paragraph, and — the number that
@@ -169,7 +174,9 @@ const section = [
   `| Records in the ${thematic.files} thematic files | ${thematic.records} | pre-merge; not searchable or card-able yet (\`[12-P0-1]\`) |`,
   `| **Curated places, total** | **${(poi.total + thematic.records).toLocaleString("en-US")}** | |`,
   `| Description of ${DEEP_WORDS}+ words | ${fmtPct(poi.deep, poi.total)} | measured on \`notes\`; ${poi.thin.length} still thin |`,
-  `| Has an image | ${fmtPct(poi.withImage, poi.total)} | |`,
+  `| Has an image | ${fmtPct(poi.withImage, poi.total)} | \`pois.geojson\` only — see below for the thematic files |`,
+  `| Has an image — thematic files | ${fmtPct(thematic.withImage, thematic.records)} | the ${thematic.files} files this metric used to skip entirely |`,
+  `| Has an image — all curated places | ${fmtPct(poi.withImage + thematic.withImage, poi.total + thematic.records)} | \`pois.geojson\` + thematic files combined |`,
   `| Has an ancient source | ${fmtPct(poi.withAncient, poi.total)} | |`,
   `| — of \`confidence: high\` POIs | ${poi.highWithAncient} / ${poi.high} · **${pct(poi.highWithAncient, poi.high).toFixed(1)}%** | the target set for \`[09-P0-1]\` |`,
   life
