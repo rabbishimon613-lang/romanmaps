@@ -840,6 +840,20 @@ to prevent. Building locally to *test* your own work is expected and fine.
       clean. **Still open: the "top 100 POIs" half** — this batch only touched `sites.ts`, not
       `pois.geojson`'s existing `image_url` field on individual monuments, which already has its
       own separate image-sourcing history (56.4% coverage per METRICS.md) untouched by this batch.*
+- [x] `[13-P1-5]` **`surface-thematic-images`** `fix` — Done 2026-08-31 by cloud shift (scheduled).
+      Found that none of `app/Map.tsx`'s ~34 thematic-layer hover popups (politics, mints,
+      religions, imperial_cult, conventus, health, euergetism, letters, diplomacy, sports, penal,
+      road_stations, trade_routes, and more) or `PeopleMarkers.tsx`'s click popup ever referenced
+      `image_url`/`image_credit` — only `pois.geojson`'s `PlaceDetails` card did, via a completely
+      separate render path. Every image this ticket's own `[13-P1-4]` and every image-top-up shift
+      before it researched into those 33 thematic files (900+ `image_url` fields by this point)
+      has been landing on disk and rendering nowhere on the live site. Added a shared
+      `popupImageHtml(p)` helper (thumbnail + credit caption, `onerror`-hides itself the same way
+      `PlaceDetails.tsx`'s hero image degrades) and spliced it into all 34 templates, skipping only
+      the one raw-gazetteer search popup with no image data. Verified live with Playwright: the
+      `<img>` tag renders with the correct `src`/credit in the popup DOM at 1280×900 and 375×812
+      dark; in this sandbox (`commons.wikimedia.org` egress-blocked) the `onerror` handler visibly
+      collapses the wrapper as designed rather than showing a broken-image icon.
 - [x] `[06-P0-1]` **`phase-banners`** `fix` — Done 2026-08-23 by cloud shift 49. Added
       `SiteInfo.snapshotNote` (`app/sites.ts`), set only for Pompeii and Herculaneum — the two of
       the 40 curated sites whose street-level detail shows a state that predates the 117 CE
