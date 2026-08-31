@@ -19,7 +19,9 @@
           "NGC Ancients: Mints of the Roman Empire, ngccoin.com/news/article/8151",
           "Ostia-Antica.org, 'The Maxentian Mint at Ostia' (Rome mint topography note)"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman Forum, Rome.jpg?width=800",
+        "image_credit": "The Roman Forum, Rome · Wikimedia Commons"
       }
     },
     {
@@ -40,7 +42,9 @@
           "Aeternitas Numismatics, 'Knowing the Roman imperial mints: VIII - Lugdunum', aeternitas-numismatics.com",
           "Cambridge, Journal of Roman Studies, 'The Mints of the Empire: Vespasian to Diocletian'"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lyon 5 - Théâtre antique de Fourvière 02.jpg?width=800",
+        "image_credit": "Roman theatre of Fourvière, Lyon (ancient Lugdunum) · Wikimedia Commons"
       }
     },
     {
@@ -61,7 +65,10 @@
           "McAlee, R., The Coinage of Antioch",
           "Ancient Coin Traders, Trajan AR Tetradrachm, Antioch 98-99 CE, RPC/Prieur plate coin"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/So-called Antioch Mosaic.jpg?width=800",
+        "image_credit": "Ancient Roman mosaic excavated at Antioch · Wikimedia Commons",
+        "image_alt": "Roman mosaic floor from Antioch"
       }
     },
     {
@@ -81,7 +88,9 @@
           "Howgego, C., 'Coinage and the Roman Economy in the Antonine Period: the view from Egypt', Oxford Roman Economy Project, oxrep.classics.ox.ac.uk",
           "Bryn Mawr Classical Review 2005.07.64, 'Coinage in Roman Egypt: The Hoard Evidence'"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexandria - Pompey's Pillar - view of ruins.JPG?width=800",
+        "image_credit": "Pompey's Pillar, Alexandria · Wikimedia Commons"
       }
     },
     {
@@ -101,7 +110,9 @@
           "RPC III 3954, Trajan, Caesarea Maritima AE",
           "Wikipedia, 'Procuratorial coinage of Roman Judaea'"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/92482 caesarea amphitheater PikiWiki Israel.jpg?width=800",
+        "image_credit": "Roman theater ruins, Caesarea Maritima · Wikimedia Commons (PikiWiki Israel)"
       }
     },
     {
@@ -121,7 +132,10 @@
           "Butcher, K. & Ponting, M., Numismatic Chronicle 175 (2015), silver coinage of Cappadocia, warwick.ac.uk offprint",
           "Vcoins, Trajan AR Drachm, Caesarea Cappadocia, Arabia standing type"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Erciyes Dağı Kayseri.JPG?width=800",
+        "image_credit": "Mount Erciyes (ancient Mount Argaeus) above Caesarea Cappadociae (Kayseri) · Wikimedia Commons",
+        "image_alt": "Mount Erciyes, the sacred volcano depicted on coins of Caesarea Cappadociae"
       }
     },
     {
@@ -141,7 +155,9 @@
           "Bryn Mawr Classical Review 2024.07.03, 'Between Roman culture and local tradition: Roman provincial coinage of Bithynia and Pontus during the reign of Trajan (98-117 AD)'",
           "Academia.edu, 'The Roman Imperial Coinage Model for Some Provincial Coins of Bithynia and Pontus Struck During the Reign of Trajan (98-117)'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicomedia Aqueduct, Izmit, Turkey (39171950052).jpg?width=800",
+        "image_credit": "Roman aqueduct of Nicomedia, Izmit · Wikimedia Commons"
       }
     },
     {
@@ -162,7 +178,9 @@
           "American Numismatic Society, 'Attalid Cistophori and Roman Foreign Affairs in Asia Minor', numismatics.org/pocketchange/attalids",
           "Academia.edu, 'The Introduction of Roman Coinages in Asia (133 BC-1st Century AD)'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The Temple of Trajan, Pergamon.jpg?width=800",
+        "image_credit": "Ruins of the Temple of Trajan (Trajaneum), Pergamon · Wikimedia Commons"
       }
     },
     {
@@ -183,7 +201,9 @@
           "Coin World, 'Cistophori of Roman emperor Hadrian began with overstriking of older coins'",
           "Wikipedia, 'Cistophorus'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ephesus Library of Celsus.jpg?width=800",
+        "image_credit": "Library of Celsus, Ephesus · Wikimedia Commons"
       }
     },
     {
@@ -204,7 +224,9 @@
           "Art Institute of Chicago, 'Coin Depicting the God Zeus Akraios'",
           "Museum of Fine Arts Boston, 'Coin of Smyrna with bust of Zeus Akraios'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Agora of İzmir fragment.jpg?width=800",
+        "image_credit": "Ruins of the Agora of Smyrna, Izmir · Wikimedia Commons"
       }
     },
     {
@@ -225,7 +247,9 @@
           "RPC Online I 2997a",
           "Numista, 'The Bronze Coinage of Lydia, Sardes (Sardis), Tripolis'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Column from Temple of Artemis at Sardis by Matthew Bisanz.JPG?width=800",
+        "image_credit": "Column of the Temple of Artemis, Sardis · Wikimedia Commons (photo by Matthew Bisanz)"
       }
     },
     {
@@ -245,7 +269,9 @@
           "RPC II 754, Trajan, Tarsus AR Tetradrachm",
           "Ancient Numismatic Mythology, 'Coinage of Cilicia', ancientcoinage.org"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cleopatra Gate in Tarsus.JPG?width=800",
+        "image_credit": "Cleopatra's Gate, Tarsus · Wikimedia Commons"
       }
     },
     {
@@ -265,7 +291,9 @@
           "RPC III 1154 and 1059, Trajan, Nicaea",
           "Academia.edu, 'Coins of the Bithynian Mint of Nicaea from the Viminacium Necropolis of Pecine'"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Iznik Wall at Sarayi Gate 8191.jpg?width=800",
+        "image_credit": "Ancient city walls of Nicaea, Iznik · Wikimedia Commons"
       }
     },
     {
@@ -305,7 +333,9 @@
           "RPC III 2320, Plotina, Laodicea ad Lycum",
           "Numista, 'Items from Laodicea ad Lycum'"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The Central Bath Complex, Laodicea on the Lycus, Phrygia, Turkey (32067205746).jpg?width=800",
+        "image_credit": "Central Bath Complex, Laodicea on the Lycus · Wikimedia Commons"
       }
     },
     {
@@ -346,7 +376,9 @@
           "WildWinds.com, 'Phoenicia, Tyre'",
           "Grokipedia, 'Tyrian shekel'"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman Hippodrome, Tyre, Lebanon.jpg?width=800",
+        "image_credit": "Roman Hippodrome, Tyre · Wikimedia Commons"
       }
     },
     {
@@ -366,7 +398,9 @@
           "Forum Ancient Coins NumisWiki, 'phoenicia'",
           "WildWinds.com, 'Sidon, Phoenicia'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eshmun - Sidon.jpg?width=800",
+        "image_credit": "Temple of Eshmun near Sidon · Wikimedia Commons"
       }
     },
     {
@@ -386,7 +420,9 @@
           "WildWinds.com, 'Berytos, Phoenicia'",
           "Forum Ancient Coins NumisWiki, 'berytus'"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman bath Beirut lebanon 026.jpg?width=800",
+        "image_credit": "Roman Baths of Berytus (Beirut) · Wikimedia Commons"
       }
     },
     {
@@ -406,7 +442,9 @@
           "RPC III 3998, 4004, 4014, 4018, Ascalon",
           "Forum Ancient Coins, 'Pseudo-Autonomous Roman Provincial Coins'"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/PikiWiki Israel 55015 mosaic from ashkelon excavations.jpg?width=800",
+        "image_credit": "Mosaic from the Ashkelon (ancient Ascalon) excavations · Wikimedia Commons (PikiWiki Israel)"
       }
     },
 {
@@ -873,7 +911,9 @@
           "WildWinds.com, 'Troas, Alexandreia'",
           "Wikipedia, 'Alexandria Troas'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Herodes Atticus Bath near Alexandria Troas.jpg?width=800",
+        "image_credit": "Bath of Herodes Atticus, Alexandria Troas · Wikimedia Commons"
       }
     },
     {
@@ -899,7 +939,9 @@
           "RPC III (Nerva-Hadrian), Assos, Troas",
           "WildWinds.com, 'Troas, Assos'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple of Athena, Assos 1.jpg?width=800",
+        "image_credit": "Temple of Athena, Assos · Wikimedia Commons"
       }
     },
     {
@@ -951,7 +993,9 @@
           "RPC III (Nerva-Hadrian), Cyme, Aeolis",
           "WildWinds.com, 'Aeolis, Kyme'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancient City Cyme-4.jpg?width=800",
+        "image_credit": "Ruins of ancient Cyme, Aeolis · Wikimedia Commons"
       }
     },
     {
@@ -978,7 +1022,9 @@
           "CNG, 'Troas, Ilion - Founded on the Site of Ancient Troy', cngcoins.com",
           "WildWinds.com, 'Troas, Ilion'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Troy archaeological site and a Trojan horse (8709564440).jpg?width=800",
+        "image_credit": "Archaeological site of Troy/Ilium, Hisarlik · Wikimedia Commons"
       }
     },
     {
@@ -1030,7 +1076,9 @@
           "RPC III (Nerva-Hadrian), Miletus, Ionia",
           "WildWinds.com, 'Ionia, Miletos'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Miletus - Ancient Greek theatre 01.jpg?width=800",
+        "image_credit": "Theatre of Miletus · Wikimedia Commons"
       }
     },
     {
@@ -1056,7 +1104,9 @@
           "RPC III (Nerva-Hadrian), Tralles, Caria",
           "WildWinds.com, 'Lydia, Tralleis'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tralleis Amphitheater - Tralleis Amfi Tiyatro 02.jpg?width=800",
+        "image_credit": "Ruins of the theatre at Tralles, Aydin · Wikimedia Commons"
       }
     },
     {
@@ -1082,7 +1132,10 @@
           "RPC III (Nerva-Hadrian), Magnesia ad Sipylum, Lydia",
           "Wikipedia, 'Magnesia ad Sipylum'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/KybeleManisa.JPG?width=800",
+        "image_credit": "Rock relief of Cybele (Manisa relief) on Mount Sipylus, near Magnesia ad Sipylum · Wikimedia Commons",
+        "image_alt": "Ancient rock-cut relief carved into the cliff of Mount Sipylus near Manisa"
       }
     },
     {
@@ -1108,7 +1161,9 @@
           "RPC III (Nerva-Hadrian), Magnesia ad Maeandrum, Ionia",
           "Wikipedia, 'Magnesia on the Maeander'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ionic chapital of the Temple of Artemis Leukophryene at Magnesia on the Maeander, Pergamon Museum.jpg?width=800",
+        "image_credit": "Ionic capital from the Temple of Artemis Leukophryene, Magnesia on the Maeander (Pergamon Museum) · Wikimedia Commons"
       }
     },
     {
@@ -1134,7 +1189,9 @@
           "RPC III (Nerva-Hadrian), Halicarnassus, Caria",
           "WildWinds.com, 'Caria, Halikarnassos'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Halicarnassus Mausoleum.jpg?width=800",
+        "image_credit": "The Mausoleum at Halicarnassus, Bodrum · Wikimedia Commons"
       }
     },
     {
@@ -1160,7 +1217,9 @@
           "RPC III (Nerva-Hadrian), Cnidus, Caria",
           "WildWinds.com, 'Caria, Knidos'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Knidos 05831-05844.jpg?width=800",
+        "image_credit": "Panoramic view of the ancient site of Cnidus (Knidos) · Wikimedia Commons"
       }
     },
     {
@@ -1186,7 +1245,9 @@
           "RPC III (Nerva-Hadrian), Nysa, Caria",
           "Wikipedia, 'Nysa (city)'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nysa theater from SW (1991).jpg?width=800",
+        "image_credit": "Theatre of Nysa on the Maeander, Sultanhisar · Wikimedia Commons"
       }
     },
     {
@@ -1212,7 +1273,9 @@
           "RPC III (Nerva-Hadrian), Thyatira, Lydia",
           "WildWinds.com, 'Lydia, Thyateira'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Akhisar ruins Tempemezari 1.jpg?width=800",
+        "image_credit": "Ruins of ancient Thyatira, Akhisar · Wikimedia Commons"
       }
     },
     {
@@ -1238,7 +1301,10 @@
           "RPC III (Nerva-Hadrian), Mytilene, Lesbos",
           "WildWinds.com, 'Lesbos, Mytilene'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Overzicht theater Mytilini.jpg?width=800",
+        "image_credit": "Ancient theatre of Mytilene · Wikimedia Commons",
+        "image_alt": "Remains of the ancient Greek/Roman theatre of Mytilene on Lesbos"
       }
     },
     {
@@ -1264,7 +1330,10 @@
           "RPC III (Nerva-Hadrian), Cos, Ionia",
           "Wikipedia, 'Asclepeion of Kos'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kos-Archaeological site quarter agora-04ASD.jpg?width=800",
+        "image_credit": "Ancient Agora of Kos · Wikimedia Commons",
+        "image_alt": "Ruins of the ancient agora archaeological site in Kos town"
       }
     },
     {
@@ -1290,7 +1359,10 @@
           "RPC III (Nerva-Hadrian), Rhodes",
           "WildWinds.com, 'Rhodes'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Acropolis Lindos Rhodes 1.jpg?width=800",
+        "image_credit": "Acropolis of Lindos, Rhodes · Wikimedia Commons",
+        "image_alt": "Ancient acropolis and Temple of Athena Lindia at Lindos, Rhodes"
       }
     },
     {
@@ -1316,7 +1388,10 @@
           "RPC III (Nerva-Hadrian), Sagalassos, Pisidia",
           "Wikipedia, 'Sagalassos'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sagalassos Antik Kenti 03.jpg?width=800",
+        "image_credit": "Ancient city of Sagalassos · Wikimedia Commons",
+        "image_alt": "Ruins of the ancient city of Sagalassos, Turkey"
       }
     },
     {
@@ -1342,7 +1417,10 @@
           "CoinWeek, 'Ancient Coin Profiles: The Independent Bronze Coinage of Roman Termessos'",
           "Wikipedia, 'Termessos'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Termessos - Theater.jpg?width=800",
+        "image_credit": "Theatre of Termessos · Wikimedia Commons",
+        "image_alt": "Ruins of the mountaintop theatre at Termessos, Turkey"
       }
     },
     {
@@ -1368,7 +1446,10 @@
           "RPC III (Nerva-Hadrian), Side, Pamphylia",
           "Wikipedia, 'Side, Turkey'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman Amphitheatre, Side, Turkey.jpg?width=800",
+        "image_credit": "Roman theatre of Side · Wikimedia Commons",
+        "image_alt": "Large Roman theatre at Side, Turkey"
       }
     },
     {
@@ -1394,7 +1475,10 @@
           "RPC III (Nerva-Hadrian), Attaleia, Pamphylia",
           "WildWinds.com, 'Pamphylia, Attaleia'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hadrian's Gate, Antalya 01.jpg?width=800",
+        "image_credit": "Hadrian's Gate, Antalya (ancient Attaleia) · Wikimedia Commons",
+        "image_alt": "Roman triumphal gate in Antalya, ancient Attaleia"
       }
     },
     {
@@ -1446,7 +1530,10 @@
           "RPC III (Nerva-Hadrian), Gadara, Decapolis",
           "WildWinds.com, 'Syria, Decapolis, Gadara'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Umm Qais wlm 44.jpg?width=800",
+        "image_credit": "West Theatre of Gadara, Umm Qais · Wikimedia Commons",
+        "image_alt": "Basalt Roman theatre at Umm Qais, ancient Gadara"
       }
     },
     {
@@ -1524,7 +1611,10 @@
           "RPC III (Nerva-Hadrian), Laodicea ad Mare, Syria",
           "Coins Legacy, 'Syria, Seleucis and Pieria, Laodicea ad Mare Mint, Trajan, AE Diassarion, CY 162 = 114/5 AD'"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Latakia Tetraporticus 4034.jpg?width=800",
+        "image_credit": "Tetraporticus of Latakia (ancient Laodicea ad Mare) · Wikimedia Commons",
+        "image_alt": "Roman tetrapylon arch in Latakia, ancient Laodicea ad Mare"
       }
     },
     {
@@ -1550,7 +1640,10 @@
           "Kroll, J. H., The Athenian Agora XXVI: The Greek Coins (Princeton, 1993)",
           "RPC III (Nerva-Hadrian), Athens, Achaia"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Acropolis Parthenon Athens Greece.jpg?width=800",
+        "image_credit": "Parthenon, Acropolis of Athens · Wikimedia Commons",
+        "image_alt": "The Parthenon temple on the Acropolis of Athens"
       }
     },
     {
@@ -1602,7 +1695,10 @@
           "RPC III (Nerva-Hadrian), Thessalonica, Macedonia",
           "Wikipedia, 'Thessalonica'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ρωμαϊκή Αγορά της Θεσσαλονίκης, Roman Forum ThessalonikI, Greece.jpg?width=800",
+        "image_credit": "Roman Forum of Thessalonica · Wikimedia Commons",
+        "image_alt": "Remains of the Roman-era forum in Thessaloniki"
       }
     },
     {
@@ -1628,7 +1724,10 @@
           "RPC III (Nerva-Hadrian), Philippi, Macedonia",
           "Wikipedia, 'Philippi'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Archaeological site of Philippi BW 2017-10-05 12-40-34.jpg?width=800",
+        "image_credit": "Archaeological site of Philippi · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman city of Philippi, Greece"
       }
     },
     {
@@ -1654,7 +1753,10 @@
           "RPC III (Nerva-Hadrian), Tyana, Cappadocia",
           "Forum Ancient Coins, Members' Coin Gallery, 'Trajan - Tyana Cappadocia'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tuwanuwa - Tyana - Kemerhisar.jpg?width=800",
+        "image_credit": "Roman aqueduct at Tyana, Kemerhisar · Wikimedia Commons",
+        "image_alt": "Remains of the Roman aqueduct built under Trajan and Hadrian at Tyana"
       }
     },
     {
@@ -1706,7 +1808,10 @@
           "Ancient Numismatic Mythology, 'Coinage of Cilicia', ancientcoinage.org",
           "WildWinds.com, 'Cilicia, Mopsus'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Misis Bridge - Misis Köprüsü 10.JPG?width=800",
+        "image_credit": "Roman bridge at Misis (ancient Mopsuestia) · Wikimedia Commons",
+        "image_alt": "Ancient stone arch bridge over the Ceyhan River at Misis, ancient Mopsuestia"
       }
     },
     {
@@ -1732,7 +1837,10 @@
           "Ancient Numismatic Mythology, 'Coinage of Cilicia', ancientcoinage.org",
           "WildWinds.com, 'Cilicia, Mallus'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cilicia Mallos 6897.jpg?width=800",
+        "image_credit": "Ancient bronze coin from the mint of Mallus, Cilicia · Wikimedia Commons",
+        "image_alt": "Roman-period coin struck at Mallus in Cilicia"
       }
     },
     {
@@ -1758,7 +1866,10 @@
           "RPC III 2910, Trajan, Amaseia, Pontus",
           "Bryn Mawr Classical Review 2024.07.03, 'Roman provincial coinage of Bithynia and Pontus during the reign of Trajan'"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombs of the kings of Pontus at night in Amsaya, Turkey.JPG?width=800",
+        "image_credit": "Rock-cut Tombs of the Kings of Pontus, Amasya (ancient Amaseia) · Wikimedia Commons",
+        "image_alt": "Rock-cut royal tombs above the city of Amasya, ancient Amaseia"
       }
     },
     {
@@ -1809,7 +1920,10 @@
         "sources": [
           "RPC Online III 3916, Trajan, Dora"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/PikiWiki Israel 45391 Tel Dor.JPG?width=800",
+        "image_credit": "Tel Dor archaeological site · Wikimedia Commons",
+        "image_alt": "The ancient tell of Dor on Israel's Carmel coast"
       }
     },
     {
@@ -1913,7 +2027,10 @@
           "Coin World, 'Sparta and its coinage: Ancients Today'",
           "Sulla Coins, 'Where are all the Spartan coins?'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancient sparta theater.jpg?width=800",
+        "image_credit": "Ancient theatre of Sparta · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman-era theatre of Sparta"
       }
     },
     {
@@ -1939,7 +2056,10 @@
           "RPC III 743, Trajan, Deultum, Thrace",
           "Academia.edu, 'The Coinage of Deultum'"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Debelt (Дебелт) - ruins of Deultum.JPG?width=800",
+        "image_credit": "Ruins of Deultum, near Debelt, Bulgaria · Wikimedia Commons",
+        "image_alt": "Excavated ruins of the Roman colony of Deultum"
       }
     },
     {
@@ -2017,7 +2137,10 @@
           "FollowingHadrian.com, '8 August AD 117 - Trajan dies at Selinus'",
           "WildWinds.com, 'Cilicia, Selinus'"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The so-called Şekerhane Köşkü, a cenotaph for the deceased emperor Trajan, Selinus, Cilicia, Turkey (36132970036).jpg?width=800",
+        "image_credit": "Cenotaph of Emperor Trajan at Selinus (later Traianopolis) · Wikimedia Commons",
+        "image_alt": "The Şekerhane Köşkü, a Roman cenotaph built for Trajan, who died at Selinus in 117 CE"
       }
     },
     {
@@ -2043,7 +2166,10 @@
           "Zuzim Coins, 'Akko - Ptolemais, Trajan AE, About Extremely Fine, 98-117 C.E.'",
           "Academia.edu, 'The Mint of Akko through the Ages'"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/View over Akko (Acre) from Old City Walls - Akko - Israel (5693252457).jpg?width=800",
+        "image_credit": "Old City walls of Akko/Acre (ancient Ptolemais) · Wikimedia Commons",
+        "image_alt": "View from the old city walls of Akko, ancient Ptolemais"
       }
     },
     {
