@@ -1949,7 +1949,9 @@
           "RPC Online III 1772, Trajan, Stratonicea, Caria",
           "WildWinds.com, 'Caria, Stratonikeia'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stratonicea Gymnasium Elaeothesium in 2015 4052.jpg?width=800",
+        "image_credit": "Gymnasium (Elaeothesium) of Stratonicea, Eskihisar · Wikimedia Commons"
       }
     },
     {
@@ -2001,7 +2003,9 @@
           "WildWinds.com, 'Crete, Gortyna'",
           "Wikimedia Commons, Category: Ancient Roman bronze coins of Gortyna"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gortys R02.jpg?width=800",
+        "image_credit": "Roman Odeon of Gortyna, Crete · Wikimedia Commons"
       }
     },
     {
@@ -2195,7 +2199,9 @@
           "Academia.edu, 'The Coinage of Pessinous: Iconography, Civic Identity and Roman Power'",
           "WildWinds.com, 'Galatia, Pessinos'"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrew Gough at the ruins of Pessinus, Turkey.jpg?width=800",
+        "image_credit": "Ruins of Pessinus, Turkey · Wikimedia Commons"
       }
     }
   ]

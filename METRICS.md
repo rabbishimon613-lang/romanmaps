@@ -28,6 +28,24 @@ references.)
 
 ---
 
+## 2026-08-31
+
+| Measure | Value | Notes |
+|---|---:|---|
+| POIs in `pois.geojson` | 1235 | the curated place canon |
+| Records in the 33 thematic files | 1679 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
+| **Curated places, total** | **2,914** | |
+| Description of 60+ words | 1209 · **97.9%** | measured on `notes`; 26 still thin |
+| Has an image | 734 · **59.4%** | |
+| Has an ancient source | 486 · **39.4%** | |
+| — of `confidence: high` POIs | 431 / 534 · **80.7%** | the target set for `[09-P0-1]` |
+| Categories with a "what happened here" paragraph | 53 / 60 · **88.3%** | covers 1169/1235 POIs · missing: beneficiarii_station, bath, harbor, domus, vicus, gymnasium, courier_post |
+| Sites with curated building descriptions | 36 / 40 · **90.0%** | ancona, aquileia, athens, baalbek, baiae, beneventum, brixia, capua, corinth, cumae, delphi, djemila, ephesus, herculaneum, italica, jerash, leptisMagna, luni, merida, milan, ostia, paestum, palestrina, palmyra, pompeii, portus, pozzuoli, rimini, rome, sabratha, timgad, tivoli, trier, verona, vindolanda, volubilis (`[06-P0-2]`, standing) |
+| Validator errors | **0** | |
+| Validator warnings | 18 | reviewed; see the standing-warnings note |
+| Cross-file name collisions (<150 m) | 189 | the dedupe backlog `[12-P0-1]` has to resolve |
+| Cold-load LCP | not measured | needs a dev server; blocked by `[15-P0-1]` |
+
 ## 2026-08-30
 
 | Measure | Value | Notes |
@@ -317,3 +335,4 @@ references.)
 | 2026-08-28 | 1051 | 97.5% | 60.7% | 36.9% | 0 errors |
 | 2026-08-29 | 1108 | 97.7% | 61.2% | 44.0% | 0 errors |
 | 2026-08-30 | 1223 | 97.9% | 60.0% | 39.7% | 0 errors |
+| 2026-08-31 | 1235 | 97.9% | 59.4% | 39.4% | 0 errors |
