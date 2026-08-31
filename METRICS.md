@@ -42,7 +42,7 @@ references.)
 | Categories with a "what happened here" paragraph | 53 / 60 · **88.3%** | covers 1169/1235 POIs · missing: beneficiarii_station, bath, harbor, domus, vicus, gymnasium, courier_post |
 | Sites with curated building descriptions | 36 / 40 · **90.0%** | ancona, aquileia, athens, baalbek, baiae, beneventum, brixia, capua, corinth, cumae, delphi, djemila, ephesus, herculaneum, italica, jerash, leptisMagna, luni, merida, milan, ostia, paestum, palestrina, palmyra, pompeii, portus, pozzuoli, rimini, rome, sabratha, timgad, tivoli, trier, verona, vindolanda, volubilis (`[06-P0-2]`, standing) |
 | Validator errors | **0** | |
-| Validator warnings | 18 | reviewed; see the standing-warnings note |
+| Validator warnings | 7 | reviewed; see the standing-warnings note |
 | Cross-file name collisions (<150 m) | 190 | the dedupe backlog `[12-P0-1]` has to resolve |
 | Cold-load LCP | not measured | needs a dev server; blocked by `[15-P0-1]` |
 

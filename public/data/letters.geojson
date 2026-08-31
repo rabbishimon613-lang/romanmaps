@@ -414,6 +414,7 @@
       },
       "properties": {
         "id": "letters_route_comum_rome_tacitus",
+        "name": "Como to Rome — Pliny and Tacitus",
         "from": "Como",
         "to": "Rome",
         "note": "Pliny and Tacitus exchanged letters across the length of Italy for close to two decades, including the two famous eyewitness letters describing the eruption of Vesuvius.",
@@ -442,6 +443,7 @@
       },
       "properties": {
         "id": "letters_route_laurentum_bithynia",
+        "name": "Italy to Bithynia — Pliny's governorship dispatches",
         "from": "Pliny's Laurentine Villa",
         "to": "Nicomedia",
         "note": "Traces the roughly 1,500-mile span of Book 10: official dispatches Pliny sent from his governor's seat at Nicomedia in Bithynia-Pontus, and Trajan's replies, shown here against Pliny's usual Italian home base.",
@@ -468,6 +470,7 @@
       },
       "properties": {
         "id": "letters_route_comum_rome_suetonius",
+        "name": "Como to Rome — Pliny and Suetonius",
         "from": "Como",
         "to": "Rome",
         "note": "Pliny mentored the young biographer Suetonius from early in his career, helping him buy property in Italy and later asking Trajan to grant him special legal privileges.",
@@ -495,6 +498,7 @@
       },
       "properties": {
         "id": "letters_route_comum_saguntum",
+        "name": "Como to Saguntum — Pliny and Voconius Romanus",
         "from": "Como",
         "to": "Saguntum",
         "note": "Pliny stayed in lifelong contact with his schoolboy friend Voconius Romanus in Spain, campaigning twice to raise his official rank.",
@@ -521,6 +525,7 @@
       },
       "properties": {
         "id": "letters_route_comum_rome_septicius",
+        "name": "Como to Rome — Pliny and Septicius Clarus",
         "from": "Como",
         "to": "Rome",
         "note": "Septicius Clarus's urging is credited with persuading Pliny to publish his letter collection, which opens with a letter addressed to him.",
@@ -546,6 +551,7 @@
       },
       "properties": {
         "id": "letters_route_comum_bergomum",
+        "name": "Como to Bergamo — Pliny and Cornelius Minicianus",
         "from": "Como",
         "to": "Bergamo",
         "note": "Pliny corresponded with Cornelius Minicianus, a leading citizen of nearby Bergomum, about patronage requests and the Classicus corruption trial.",
@@ -572,6 +578,7 @@
       },
       "properties": {
         "id": "letters_route_rome_comum_calpurnia",
+        "name": "Rome to Como — Pliny and Calpurnia",
         "from": "Rome",
         "to": "Como",
         "note": "Pliny wrote his wife Calpurnia longing letters from Rome while she recovered from illness at her grandfather's estate near Comum.",
@@ -690,7 +697,9 @@
         "sources": [
           "Ign. Magn. 2-3, 6-7"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ionic chapital of the Temple of Artemis Leukophryene at Magnesia on the Maeander, Pergamon Museum.jpg?width=800",
+        "image_credit": "Ionic capital from the Temple of Artemis Leukophryene, Magnesia on the Maeander (Pergamon Museum) · Wikimedia Commons"
       }
     },
     {
@@ -798,7 +807,9 @@
         "sources": [
           "Ign. Poly. 1, 7-8"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Agora of İzmir fragment.jpg?width=800",
+        "image_credit": "Ruins of the Agora of Smyrna, Izmir · Wikimedia Commons"
       }
     },
     {
@@ -879,6 +890,7 @@
       },
       "properties": {
         "id": "letters_ignatius_route_antioch_smyrna",
+        "name": "Antioch to Smyrna — Ignatius's journey to martyrdom",
         "from": "Antioch",
         "to": "Smyrna",
         "note": "Ignatius marched overland under military guard from Antioch across Asia Minor, stopping to address the congregation at Philadelphia in person before reaching Smyrna, where delegates from three more churches met him.",
@@ -905,6 +917,7 @@
       },
       "properties": {
         "id": "letters_ignatius_route_smyrna_troas",
+        "name": "Smyrna to Troas — Ignatius's journey to martyrdom",
         "from": "Smyrna",
         "to": "Troas",
         "note": "From Smyrna, Ignatius's escort marched him north toward Alexandria Troas on the Aegean coast, where he had a brief window before his ship sailed to write three final letters.",
@@ -936,6 +949,7 @@
       },
       "properties": {
         "id": "letters_ignatius_route_troas_philippi",
+        "name": "Troas to Philippi — Ignatius's journey to martyrdom",
         "from": "Troas",
         "to": "Philippi",
         "note": "Ignatius sailed from Troas to Neapolis, the port of Philippi, then continued the short distance inland to Philippi itself; the Philippians later asked Polycarp to send them copies of Ignatius's letters, a request that survives in Polycarp's own reply.",
@@ -962,6 +976,7 @@
       },
       "properties": {
         "id": "letters_ignatius_route_philippi_rome",
+        "name": "Philippi to Rome — Ignatius's journey to martyrdom",
         "from": "Philippi",
         "to": "Rome",
         "note": "From Philippi, Ignatius's guards took him overland along the Via Egnatia and on toward Italy, where he was thrown to the beasts in a Roman arena -- the exact venue was never recorded, though tradition points to the Colosseum.",
@@ -995,7 +1010,9 @@
           "Plin. Ep. 10.34 (Trajan's reply)",
           "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicomedia Aqueduct, Izmit, Turkey (39171950052).jpg?width=800",
+        "image_credit": "Roman aqueduct of Nicomedia, Izmit · Wikimedia Commons"
       }
     },
     {
@@ -1022,7 +1039,9 @@
           "Plin. Ep. 10.38 (Trajan's reply)",
           "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicomedia_Aqueduct,_Izmit,_Turkey_(27423650659).jpg?width=800",
+        "image_credit": "Roman aqueduct of Nicomedia, Izmit · Wikimedia Commons"
       }
     },
     {
@@ -1049,7 +1068,9 @@
           "Plin. Ep. 10.42 (Trajan's reply)",
           "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicomedia Aqueduct, Izmit, Turkey (39171950052).jpg?width=800",
+        "image_credit": "Roman aqueduct of Nicomedia, Izmit · Wikimedia Commons"
       }
     },
     {
@@ -1076,7 +1097,9 @@
           "Plin. Ep. 10.40 (Trajan's reply)",
           "https://en.wikipedia.org/wiki/Epistulae_(Pliny)"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The Roman Theatre of Nicaea built during the reign of Trajan, Iznik, Turkey (37742971275).jpg?width=800",
+        "image_credit": "Roman theatre of Nicaea, built under Trajan · Wikimedia Commons"
       }
     },
     {
