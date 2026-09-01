@@ -7,6 +7,139 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 86 — 2026-09-01 (this shift's own prompt claimed "Shift 3 of four")
+
+Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
+count (Shift 85 pushed `94eff09` as its last commit; this shift started there). Repo booted
+clean this time: `git status` reported `main` already up to date with `origin/main`, no detached
+`HEAD`, no stale local ref — the cleanest boot logged in several shifts. `npm install` clean
+(fresh cloud container, no `package-lock.json` drift).
+
+### Board + network check
+
+Grepped `BOARD.md`: 14 open `- [ ]` tickets, no stale `[~]` claims, same read as the last five
+shifts running — the four P0s (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]`
+card-rebuild, `[13-P0-2]` image-audit) are too large for one unattended session,
+`[15-P0-1]`/`[14-P0-1]` stay human-blocked, `[02-P0-4]`/`[11-P1-5]`/`[11-P1-6]` need local
+tooling or a bigger dedicated pass, and `[10-P0-2]`/`[05-P2-6]`/`[12-P1-4]`/`[11-P2-11]` are
+still underspecified one-liners with no backing report (`research/reports/` confirmed
+gitignored/empty in this container again). `FEATURE_BACKLOG.md`'s P0–P3 sections are still
+entirely checked off — no real Track B target existed, same conclusion the last two shifts
+reached. Worked from `SHIFT_BRIEF.md`'s axes per its own fallback rule.
+
+Reconfirmed the standing network limitation directly rather than trusting prior shifts' notes
+secondhand: `curl` to `overpass-api.de`, `en.wikipedia.org`, and `commons.wikimedia.org` all
+fail with the proxy's `connect_rejected` (organization policy) — Axis 1 (more cities, needs
+Overpass) stays infeasible here. `WebSearch` remains the only working research path.
+
+### Track A — image top-up: 23 records across four research rounds, 12 agents, five commits
+
+Picked up Shift 85's own handoff: `road_stations.geojson`'s four largest named-road gaps and
+`pois.geojson`'s `auxiliary_fort`/`temple` categories. Computed every gap fresh from the live
+files rather than trusting the prior shift's numbers secondhand — good thing, since Shift 85's
+own "Next" note claimed Via Claudia Augusta was "down to 4" remaining; the live data showed
+12/12 missing, i.e. that road was never actually touched despite the commit message listing it.
+Flagging this plainly: a shift's own handoff note is not a substitute for recomputing the gap
+before starting.
+
+Applied the shared-WebSearch-budget lesson Shift 85 documented: capped every batch at 3 parallel
+agents, ~25-30 WebSearch calls each, and ran each batch to completion before dispatching the
+next rather than firing all 12 agents at once.
+
+**Round 1** (Via Agrippa ×2 + Via Augusta, commit `c802484`): 7/65 confirmed. Two name-collision
+traps re-confirmed rather than re-attempted (Blaye's Vauban citadel, Vichy's spa pavilion — both
+already declined by a prior shift). One genuinely interesting find kept as-is: Gesoriacum's only
+image is a 1550 depiction of the Roman lighthouse that collapsed into the sea in 1644 — no photo
+can exist, so a period engraving is the honest option, labeled plainly as a depiction in
+`image_alt`, following this project's established anachronism-disclosure pattern.
+
+**Round 2** (Via Augusta remainder, Via Popilia + Via Claudia Augusta, auxiliary_fort Britannia,
+commit `864fa45`): 8/50 confirmed. Caught one collision: a near-identical Commons filename for
+"Augsburger Siegesaltar" showed a museum *replica* at the Saalburg fort, not the Augsburg
+original — correctly rejected in favor of the real one.
+
+**Round 3** (Via Popilia retry, Via Claudia Augusta + Via Traiana Nova, temples in
+Italy/Hispania/Gaul/Britain, commits `90347e3`): 5/33 confirmed, all from the temple batch — both
+road batches came back at 0/24 and 0/24. This surfaced a real, distinct failure mode from budget
+exhaustion: WebSearch's snippet-only results can name a real Commons *category* (e.g. Trento's
+`Category:S.A.S.S.`, Zoara's `Category:Museum at the Lowest Place on Earth`) without ever
+surfacing an actual `File:` page inside it, so an agent correctly following "skip rather than
+guess" has no way to extract a verified exact filename — this isn't under-research, it's a
+structural limit of search-snippet access without direct Commons browsing.
+
+**Round 4** (temples Africa/Numidia, temples Greece/Asia/Egypt, auxiliary_fort Danube limes,
+commit `2d5d09f`): 3/33 confirmed, same category-name-without-filename pattern hit repeatedly
+(Timgad's Capitol category has 102 files, Ratiaria's has 147, Jerash's Dionysos propylaeum and
+Hierapolis's Apollo sanctuary both evidently have coverage) — none convertible to a verified
+filename via search snippets alone. One era-honesty catch worth recording: the Danube-forts
+agent found a photographed "fortress" at both Cuppae/Golubac and Acumincum/Slankamen but declined
+both — the standing structures there are medieval, not Roman, and the source captions said so
+explicitly.
+
+Every batch validated end to end: JSON re-parse + feature-count check
+(`scripts/apply-image-topup.mjs`, 0 skipped across all four rounds — every id existed, none
+already had an image), `npm run validate` (0 errors, same 7 pre-existing reviewed warnings before
+and after each round), `npm run build` clean via the pre-push hook before each of the five
+pushes.
+
+Final tallies: `road_stations.geojson` 134/518 → 145/518 (25.9% → 28.0%). `pois.geojson` image
+coverage 753/1236 → 765/1236 (60.9% → 61.9%); `auxiliary_fort` category 67 → 63 missing of 501,
+`temple` category 35 → 29 missing of 501.
+
+### Track B
+
+No UI/feature-backlog item attempted, same honest call the last two shifts made:
+`FEATURE_BACKLOG.md`'s P0–P3 sections are fully checked off, and the only open lines are
+tooling-nit notes from early shifts, not shippable features on their own. This was four Track A
+research rounds across two axes (2/roadside, 3a/military + 3b/sacred), not a Track A/Track B
+split.
+
+### State, verification, next
+
+`npm run validate`: 0 errors, same 7 pre-existing reviewed warnings, checked before and after
+every one of the four rounds. `npm run build`: clean via the pre-push hook on all five pushes,
+never skipped. `npm run metrics -- --write`: pois.geojson image coverage 60.9% → 61.9% (commit
+below).
+
+Commits this shift, in order: `c802484` (7 road-station images), `864fa45` (8 more: road
+stations + auxfort Britannia), `90347e3` (5 temple images), `2d5d09f` (3 more: Sabratha temple +
+2 Danube forts), plus this log entry's metrics-refresh commit. All pushed to `main`.
+
+**Next shift should pick up:**
+
+- **Track A, road stations:** Via Agrippa still has real gaps (`station_asa_paulini`,
+  `station_cabillonum`, `station_tullum`, `station_verbinum` all have text-confirmed Roman
+  content — a mosaic, ramparts, a museum, a theatre — but no filename pinned down within this
+  shift's budget). Via Militaris (21 missing) remains a two-shift-confirmed dead end for
+  English-language WebSearch specifically — try a different-language search pass, not a third
+  identical English one. Via Popilia and Via Claudia Augusta + Via Traiana Nova are now a
+  *three-agent-confirmed* dead end via WebSearch-snippet-only research (0/24, 0/24 across two
+  independent attempts each) — this is a genuine method ceiling, not laziness; a session with
+  real Commons category-browsing access (not just WebSearch summaries) would likely close
+  several of these quickly: Trento/Tridentum's `Category:S.A.S.S.`, Zoara's `Category:Museum at
+  the Lowest Place on Earth`, Udhruh, and Consentia's Museo dei Brettii e degli Enotri room 9-10
+  were all specifically identified as real, promising, unconfirmed leads.
+- **Track A, pois.geojson:** `auxiliary_fort` down to 63 missing (Danube-limes Pannonia
+  Inferior/Moesia/Dacia stretch still has ~19 untouched candidates — Cirpi, Ratiaria (147-file
+  Commons category, just needs a filename), Cornacum, Acumincum flagged as promising),
+  `temple` down to 29 missing (Timgad's Capitol — 102-file category — and Volubilis's Temple of
+  Saturn are the best-documented remaining leads). Same category-name-without-filename ceiling
+  applies to all of these — see above.
+- **General, new finding this shift:** beyond the already-documented shared-WebSearch-budget
+  cap (2-3 parallel agents, ~25-30 calls each — confirmed again, held up fine across four
+  rounds), there's a second, distinct constraint worth flagging: WebSearch's snippet-only access
+  can confirm a Commons *category* exists and is well-populated without ever exposing an actual
+  filename inside it, so "skip rather than guess" repeatedly produces correctly-cautious empty
+  results even when real images almost certainly exist. Any shift with access to a working
+  direct Commons fetch (not proxy-blocked) should prioritize the specific leads named above —
+  they're pre-researched, just not filename-verified.
+- Standing items unchanged: `research/` stays gitignored/empty in every cloud container;
+  `en.wikipedia.org`/`commons.wikimedia.org`/`overpass-api.de` direct egress stays blocked;
+  `WebSearch` remains the only working research path; the board's remaining 14 tickets are all
+  still either human-blocked, too large for a mixed shift, or underspecified.
+
+---
+
 ## Shift 85 — 2026-09-01 (this shift's own prompt claimed "Shift 2 of four")
 
 Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
