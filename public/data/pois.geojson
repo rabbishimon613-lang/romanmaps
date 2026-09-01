@@ -19464,7 +19464,10 @@
         "sources": [
           "https://www.ancient-history-sites.com/sites/sabratha/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Podium_Antonine_Temple_Sabratha.JPG?width=800",
+        "image_credit": "Wikimedia Commons contributor",
+        "image_alt": "Podium and standing columns of the Antonine Temple, Sabratha"
       }
     },
     {
@@ -34711,7 +34714,10 @@
           "https://www.wikidata.org/wiki/Q1659457",
           "https://www.danubetourism.eu/roman-matrica-fort-and-vicus-szazhalombatta/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Altarstein%20des%20Aelius%20Victor%2C%20Matrica%2C%20RIU%206%20Nr.%201429.jpg?width=800",
+        "image_credit": "Photo via Wikimedia Commons",
+        "image_alt": "Roman votive altar stone of Aelius Victor from the fort of Matrica (Százhalombatta)"
       }
     },
     {
@@ -35104,7 +35110,10 @@
           "https://en.wikipedia.org/wiki/Taurunum",
           "https://vici.org/vici/7377/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20sarcophagus%20Zemun.JPG?width=800",
+        "image_credit": "Photo via Wikimedia Commons",
+        "image_alt": "Roman-era sarcophagus found at Taurunum (Zemun), now displayed locally"
       }
     },
     {
