@@ -33,12 +33,12 @@ references.)
 | Measure | Value | Notes |
 |---|---:|---|
 | POIs in `pois.geojson` | 1236 | the curated place canon |
-| Records in the 33 thematic files | 1682 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
-| **Curated places, total** | **2,918** | |
+| Records in the 33 thematic files | 1688 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
+| **Curated places, total** | **2,924** | |
 | Description of 60+ words | 1210 · **97.9%** | measured on `notes`; 26 still thin |
-| Has an image | 765 · **61.9%** | `pois.geojson` only — see below for the thematic files |
-| Has an image — thematic files | 1053 · **62.6%** | the 33 files this metric used to skip entirely |
-| Has an image — all curated places | 1818 · **62.3%** | `pois.geojson` + thematic files combined |
+| Has an image | 769 · **62.2%** | `pois.geojson` only — see below for the thematic files |
+| Has an image — thematic files | 1058 · **62.7%** | the 33 files this metric used to skip entirely |
+| Has an image — all curated places | 1827 · **62.5%** | `pois.geojson` + thematic files combined |
 | Has an ancient source | 486 · **39.3%** | |
 | — of `confidence: high` POIs | 431 / 534 · **80.7%** | the target set for `[09-P0-1]` |
 | Categories with a "what happened here" paragraph | 53 / 60 · **88.3%** | covers 1170/1236 POIs · missing: beneficiarii_station, bath, harbor, domus, vicus, gymnasium, courier_post |
@@ -358,4 +358,4 @@ references.)
 | 2026-08-29 | 1108 | 97.7% | 61.2% | 44.0% | 0 errors |
 | 2026-08-30 | 1223 | 97.9% | 60.0% | 39.7% | 0 errors |
 | 2026-08-31 | 1235 | 97.9% | 59.4% | 39.4% | 0 errors |
-| 2026-09-01 | 1236 | 97.9% | 61.9% | 39.3% | 0 errors |
+| 2026-09-01 | 1236 | 97.9% | 62.2% | 39.3% | 0 errors |
