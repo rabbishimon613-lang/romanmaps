@@ -7,6 +7,136 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 87 — 2026-09-01 (this shift's own prompt claimed "Shift 4 of four")
+
+Same stale-numbering mismatch every recent shift has flagged — real sequential count continues
+from Shift 86's last commit (`720b3d8`). Repo booted into the now-familiar detached-`HEAD`
+symptom (local `main`/`origin/main` both stale, `HEAD` detached at `720b3d8`, matching GitHub's
+real tip per `git ls-remote`) — resolved with `git branch -f main HEAD` +
+`git symbolic-ref HEAD refs/heads/main` (no checkout/reset needed since the detached commit was
+already a strict descendant of local `main`), then `git fetch origin main` to clear a second,
+independent staleness in the cached `refs/remotes/origin/main` (it lagged one commit behind the
+real remote tip even after the first fix — worth noting as a distinct wrinkle from the usual
+"stale local main" writeup: fetch, don't just re-point the local branch). `npm install` clean.
+
+### Board + network check
+
+Reconfirmed the standing network limitation directly: `curl` to `overpass-api.de`,
+`en.wikipedia.org`, and `commons.wikimedia.org` all still fail with the proxy's
+`connect_rejected` — Axis 1 (more cities) stays infeasible here, `WebSearch` remains the only
+working research path. `BOARD.md`'s open tickets are the same 14 from the last several shifts,
+same read: four P0s too large for one unattended session, two human-blocked, several needing
+local tooling (`pmtiles`/tippecanoe, `split-map-tsx`) or a dedicated pass, a few underspecified
+one-liners with no backing report. `FEATURE_BACKLOG.md`'s P0–P3 sections are still entirely
+checked off — verified directly again (grepped every `- [ ]` under the P0–P3 headers, all zero)
+rather than trusting the last three shifts' notes secondhand — so no real Track B target existed
+this shift either.
+
+### Track A — two parallel efforts: image top-up (4 confirmed) + new axis-6 content (6 features)
+
+Computed current gaps fresh from the live files rather than trusting Shift 86's handoff numbers
+secondhand (good practice the last few shifts have converged on): `pois.geojson`'s
+`auxiliary_fort` category had 61/120 missing images, `temple` had 29/133 missing.
+`learning_117.geojson` (axis 6, intellectual centers) had only 13 features despite the brief
+calling for "religious communities + attestation OR full learning-center set" as a shift minimum
+— thin enough to be a legitimate target for genuinely new content rather than another
+image-only pass.
+
+Dispatched 3 parallel research agents (general-purpose, WebSearch-only, capped ~25-30 calls each
+— the shared-budget lesson prior shifts documented): one on Danube-limes `auxiliary_fort` images
+(26 candidates), one on Africa/Levant `temple` images (28 candidates), one on new
+`learning_117.geojson` entries.
+
+**Image top-up: 4/54 confirmed** (`c802484`-style round, this shift's commit `b7bc60b`) —
+`poi_fort_ad_flexum`, `poi_fort_ratiaria`, `poi_capitol_timgad`, `poi_theveste_temple_minerva`.
+Same structural ceiling every recent shift has hit and re-confirmed: WebSearch snippets can
+name a real, well-populated Commons *category* (Ratiaria's ~147 files, Timgad's Capitol ~102)
+without ever exposing an actual `File:` page inside it, so a correctly-cautious "skip rather
+than guess" produces a low hit rate even when real images almost certainly exist. Two
+previously-flagged era-mismatch traps (Cuppae/Golubac and Acumincum/Slankamen — both have a
+photographed "fortress" that's medieval, not Roman) were re-confirmed and correctly declined
+again rather than re-researched from scratch.
+
+**New content: 6 features added to `learning_117.geojson`** (commit `f8ace45`) — Library of
+Pergamon (distinct from the already-listed Asklepieion), the Strabo-attested Stoic/philosophy
+schools of Tarsus, the Asklepieion of Cos (medical), Smyrna's rhetoric schools (Nicetes of
+Smyrna, pre-117 per Philostratus), the Library of Celsus at Ephesus (construction began after
+110 CE, most reconstructions place completion right around 117 — an unusually good on-snapshot
+find), and Rufus of Ephesus's medical teaching (Rufus is named explicitly in `SHIFT_BRIEF.md`'s
+axis-4a living-empire roster as an active physician in 117 CE, so this doubles as axis 4
+material). Rejected two candidates on era grounds: Nisibis (its famous school is ~350 CE
+Christian-era, centuries too late) and Gadara (well-known as philosophers' *birthplace*, no
+evidence of a functioning institution there in 117 CE itself). learning_117.geojson: 13 → 19
+features. Five of six shipped with verified Commons images; Rufus's entry ships with the
+`image_url` key omitted entirely (not `null` — see bug note below) rather than reuse the Celsus
+Library photo for a physically different site half a mile away.
+
+**Bug caught before pushing**: the new Rufus entry's drafted `image_url`/`image_credit`/
+`image_alt` were `null` (following the source research agent's own JSON), which `npm run
+validate` correctly flagged as a new warning ("image_url key present but empty; drop the key
+instead") — confirmed via grep that every other file's convention is to omit the key entirely
+for a missing image, not set it `null`; `learning_117.geojson` was the only file in the whole
+`public/data/` tree with a literal `"image_url": null`. Fixed before committing.
+
+### Track B
+
+No UI/feature-backlog item attempted — same honest call the last three shifts made after
+independently re-verifying `FEATURE_BACKLOG.md`'s P0–P3 sections are fully checked off. Scoped
+`[11-P1-6]` (`split-map-tsx`, breaking the 2,112-line `Map.tsx` into a layer registry) as a
+possible candidate but declined: the board itself flags it as needing "local tooling or a
+bigger dedicated pass," and a large structural refactor of the file every map layer depends on,
+attempted unattended with no live human to catch a regression before it ships to production via
+Vercel auto-deploy, is exactly the kind of high-blast-radius change this shift's own judgment
+said to avoid rather than rush.
+
+### State, verification, next
+
+`npm run validate`: 0 errors both before and after every change; 7 pre-existing reviewed
+warnings before, briefly 8 after the first draft of the Rufus entry (the `image_url: null`
+issue above), back to 7 after the fix. `npm run build`: clean via the pre-push hook on all three
+pushes. `npm run metrics -- --write`: 1236 POIs, 97.9% deep, 26 thin (unchanged shape from
+Shift 86 — this shift's additions were in `pois.geojson` image fields and a different file
+entirely, not new `pois.geojson` records).
+
+Commits this shift, in order: `b7bc60b` (4 pois.geojson images), `f8ace45` (6 new
+learning_117.geojson features), `a260892` (metrics refresh), plus this log entry's commit. All
+pushed to `main`.
+
+**Next shift should pick up:**
+
+- **Track A, pois.geojson images:** `auxiliary_fort` down to 59 missing of 120, `temple` down to
+  27 missing of 133. Same category-without-filename ceiling documented across the last four
+  shifts applies to essentially every remaining candidate — this axis needs either a session
+  with real Commons category-browsing access (not just WebSearch snippets) or acceptance that
+  ~50-60% coverage is close to this environment's real ceiling for these two categories.
+- **Track A, new content:** `learning_117.geojson` (axis 6) is now at 19 features and in
+  reasonable shape against the brief's "full learning-center set" bar, but a fresh pass could
+  still add a few more well-attested candidates this shift didn't reach for lack of budget —
+  Carthage's rhetoric tradition, Nemausus, or a second Alexandria-adjacent medical figure are
+  plausible next leads, though diminishing returns are real here too (Nisibis and Gadara were
+  both rejected this shift on era/sourcing grounds, so not every "obvious" candidate pans out).
+  More generally: given how mature most axis data files now are (`substrate.geojson` at 148,
+  `politics.geojson` at 88 and already meeting its per-category minimums, `sports.geojson` at 38,
+  `letters.geojson` at 48), a future shift doing a fresh sweep across `public/data/*.geojson`
+  feature counts before picking a target (the way this shift did) is worth the five minutes it
+  takes — several axes this shift checked turned out to already be complete against the brief's
+  own stated minimum (death_rituals's 5 regional zones, wind_currents's 7 named winds,
+  politics's senator/vigiles/chariot-faction counts) and would have been wasted effort to pad
+  further.
+- **Track B:** still genuinely empty against `FEATURE_BACKLOG.md`'s P0–P3 lists. `[11-P1-6]`
+  (`split-map-tsx`) and `[11-P1-5]` (`pmtiles`) are the only two P1-tier items left on `BOARD.md`,
+  both explicitly flagged as needing more than a normal Track B slot — a shift with a wider time
+  budget (or a human available to sanity-check a live-site change before it ships) should be the
+  one to take either on, not another unattended pass.
+- Standing items unchanged: `research/` stays gitignored/empty in every cloud container;
+  `en.wikipedia.org`/`commons.wikimedia.org`/`overpass-api.de` direct egress stays blocked;
+  `WebSearch` remains the only working research path; this shift hit a second, distinct flavor
+  of the stale-git-ref symptom (a stale cached `refs/remotes/origin/main` that survived
+  re-pointing local `main`, needing an explicit `git fetch origin main` on top of the usual fix)
+  — worth checking for on top of the usual detached-HEAD fix, not assuming one fix covers both.
+
+---
+
 ## Shift 86 — 2026-09-01 (this shift's own prompt claimed "Shift 3 of four")
 
 Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential

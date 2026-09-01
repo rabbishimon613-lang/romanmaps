@@ -1267,6 +1267,35 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       research-agent prompt that does name-based lookups across this dataset — it's cheap
       insurance against a class of error that's now been caught four separate times.
 
+## New ideas spotted this shift (2026-09-01, Shift 87 — learning_117 expansion, image top-up)
+
+- [ ] **A quick `public/data/*.geojson` feature-count sweep before picking a Track A target is
+      worth the five minutes.** This shift checked every axis data file's feature count before
+      committing to a target and found several already effectively complete against
+      `SHIFT_BRIEF.md`'s own stated per-shift minimum — `death_rituals.geojson`'s 5 regional
+      burial-rite zones, `wind_currents.geojson`'s 7 named classical winds,
+      `politics.geojson`'s senator-hometown/vigiles-station/chariot-faction-HQ counts. Padding
+      any of these further with weaker candidates would have been effort spent for no real gain.
+      `learning_117.geojson` (axis 6, only 13 features going in) was the one file this sweep
+      flagged as genuinely thin relative to its axis's own bar, and it's where this shift's new
+      content landed.
+- [ ] **`learning_117.geojson` was the only file in the whole `public/data/` tree using a literal
+      `"image_url": null`** instead of omitting the key for a missing image — caught by
+      `npm run validate`'s new warning ("image_url key present but empty; drop the key instead")
+      when a drafted feature (Rufus of Ephesus, no confirmable Commons image) carried `null`
+      straight through from a research agent's JSON output. Fixed before committing. Worth a
+      standing reminder for any future append into a file with `image_url`-style optional fields:
+      check the file's own null-vs-omitted convention before splicing in agent output verbatim,
+      don't assume `null` is safe just because it validates as JSON.
+- [ ] **Second, distinct flavor of the stale-git-ref symptom this shift**: after the usual
+      `git branch -f main HEAD` + `git symbolic-ref HEAD refs/heads/main` fix for detached HEAD,
+      `git log origin/main..HEAD` still showed 6 "ahead" commits that were actually already on
+      the real remote — the local *cached* `refs/remotes/origin/main` ref was itself one commit
+      stale, separate from the local `main` branch pointer issue every recent shift has
+      documented. An explicit `git fetch origin main` cleared it. Future shifts hitting a
+      surprising "ahead by N" count right after fixing detached HEAD should try a fetch before
+      assuming something's wrong with the fix itself.
+
 ## Shipped (moved from above; newest on top)
 
 - 2026-08-31 — Shift 83: Found and fixed `[13-P1-5]` — none of `app/Map.tsx`'s ~34 thematic-layer
