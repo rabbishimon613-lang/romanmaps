@@ -22,7 +22,10 @@
           "Itin. Ant. (Roma-Aricia stage)",
           "https://en.wikipedia.org/wiki/Bovillae"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruins%20of%20the%20Circus%20of%20Bovillae.jpg?width=800",
+        "image_credit": "Ruins of the Circus of Bovillae, Via Appia · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman circus at Bovillae"
       }
     },
     {
@@ -46,7 +49,10 @@
           "Itin. Ant. 16 m.p. ab Urbe",
           "https://www.livius.org/articles/place/aricia/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ariccia%20-%20particolare%20resti%20archeologici.JPG?width=800",
+        "image_credit": "Archaeological remains of ancient Aricia, Ariccia · Wikimedia Commons",
+        "image_alt": "Archaeological remains at Ariccia, site of ancient Aricia"
       }
     },
     {
@@ -168,7 +174,10 @@
           "Itin. Ant. 90 m.p. ab Urbe",
           "https://en.wikipedia.org/wiki/Formia"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20so-called%20Tomb%20of%20Cicero,%20Formia%20(14358511388).jpg?width=800",
+        "image_credit": "The so-called Tomb of Cicero, Formia (ancient Formiae), Via Appia · Wikimedia Commons",
+        "image_alt": "Roman mausoleum known as the Tomb of Cicero, at Formia"
       }
     },
     {
@@ -217,7 +226,10 @@
           "https://topostext.org/place/411139USin",
           "Statius, Silvae 4.3 (Via Domitiana's construction, forking from the Appia here)"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Venere%20di%20Sinuessa,%20da%20Mondragone,%20s.n.,%2002.JPG?width=800",
+        "image_credit": "Venus of Sinuessa, found at ancient Sinuessa (Mondragone) · Naples Archaeological Museum · Wikimedia Commons",
+        "image_alt": "Marble Venus statue excavated at the site of Sinuessa"
       }
     },
     {
@@ -313,7 +325,10 @@
           "Itin. Ant. (Capua-Beneventum stage)",
           "https://topostext.org/place/410144UCal"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Un%20segmento%20delle%20antiche%20mura%20di%20Calatia%20nei%20pressi%20della%20Appia%20Antica.jpg?width=800",
+        "image_credit": "Segment of the ancient walls of Calatia, near the Via Appia · Wikimedia Commons",
+        "image_alt": "Surviving wall segment of ancient Calatia"
       }
     },
     {
@@ -456,7 +471,10 @@
           "Itin. Ant. 120 (Beneventum-Tarentum stage)",
           "https://pleiades.stoa.org/places/442847"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anfiteatro%20di%20epoca%20romana%20(Venosa).jpg?width=800",
+        "image_credit": "Roman-era amphitheatre of Venusia, Venosa · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman amphitheatre at Venosa, site of ancient Venusia"
       }
     },
     {
@@ -575,7 +593,10 @@
           "Itin. Ant. 121 (Beneventum-Tarentum stage, 157 m.p.)",
           "https://en.wikipedia.org/wiki/Taranto"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mosaique%20Tarente%20Chasse%20sanglier.JPG?width=800",
+        "image_credit": "Roman mosaic from ancient Tarentum · Museo Archeologico Nazionale di Taranto · Wikimedia Commons",
+        "image_alt": "Roman boar-hunt mosaic from the archaeological museum of Taranto"
       }
     },
     {
@@ -623,7 +644,10 @@
           "Itin. Ant. 119 (Tarentum-Brundisium ad latus, 44 m.p.)",
           "https://en.wikipedia.org/wiki/Brindisi"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20due%20colonne%20terminali%20della%20Via%20Appia%20in%20Brindisi.jpg?width=800",
+        "image_credit": "The Roman columns marking the end of the Via Appia, Brindisi (ancient Brundisium) · Wikimedia Commons",
+        "image_alt": "Roman terminal columns of the Via Appia at Brindisi"
       }
     },
     {
@@ -1765,7 +1789,10 @@
           "Itin. Ant. 343",
           "https://en.wikipedia.org/wiki/Apt"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Pont%20Julien%20(Julian%20bridge)%20France,%20view%20from%20west,%20by%20Rosier.jpg?width=800",
+        "image_credit": "Pont Julien, near Apta Julia (Apt) · Wikimedia Commons",
+        "image_alt": "The Roman Pont Julien bridge near Apta Julia, viewed from the west"
       }
     },
     {
@@ -1789,7 +1816,10 @@
           "Itin. Ant. 343",
           "https://en.wikipedia.org/wiki/Cavaillon"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arc_romain_de_Cavaillon_02.JPG?width=800",
+        "image_credit": "Roman arch, Cavaillon (ancient Cabellio) · Wikimedia Commons",
+        "image_alt": "Roman commemorative arch in Cavaillon"
       }
     },
     {
@@ -1813,7 +1843,10 @@
           "Itin. Ant. (Item ab Arelate Narbonem)",
           "https://en.wikipedia.org/wiki/Ambrussum"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ambrussum_pont_Ambroix.JPG?width=800",
+        "image_credit": "Pont Ambroix, Ambrussum · Wikimedia Commons",
+        "image_alt": "Surviving arch of the Roman Pont Ambroix at the Ambrussum way-station"
       }
     },
     {
@@ -1933,7 +1966,10 @@
           "Itin. Ant. (Item ab Arelate Narbonem)",
           "https://en.wikipedia.org/wiki/Narbonne"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Via_Domitia_(Narbonne).jpg?width=800",
+        "image_credit": "Via Domitia paving, Narbonne (ancient Narbo) · Wikimedia Commons",
+        "image_alt": "Exposed Roman road pavement of the Via Domitia in central Narbonne"
       }
     },
     {
@@ -1981,7 +2017,10 @@
           "Itin. Ant. (Narbo-Ruscino stage)",
           "https://en.wikipedia.org/wiki/Château-Roussillon"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruines_romaines,_Castel_Ruscino,_Perpignan,_1909_(5953846565).jpg?width=800",
+        "image_credit": "Roman ruins at Château-Roussillon, site of ancient Ruscino, photographed 1909 · Wikimedia Commons",
+        "image_alt": "1909 photograph of the Roman ruins of Ruscino near Perpignan"
       }
     },
     {
@@ -3329,7 +3368,10 @@
           "Tabula Peutingeriana",
           "Princeton Encyclopedia of Classical Sites, s.v. \"Rabbathmoba\""
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rabba_(Roman_and_Byzantine_Ruins).jpg?width=800",
+        "image_credit": "Roman and Byzantine ruins, Rabba (ancient Rabbathmoba) · Wikimedia Commons",
+        "image_alt": "Roman and Byzantine ruins at Rabba, Jordan"
       }
     },
     {
@@ -3524,7 +3566,10 @@
           "Wikipedia, \"El-Lejjun\"",
           "S. Thomas Parker, Limes Arabicus Project excavation reports (1980-89)"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Betthorus_-_Lajjun_(2).jpg?width=800",
+        "image_credit": "Legionary fortress of Betthorus, el-Lejjun · Wikimedia Commons",
+        "image_alt": "Remains of the Roman legionary fortress at el-Lejjun (ancient Betthorus)"
       }
     },
     {
@@ -12125,7 +12170,10 @@
           "'The Work of the Heshbon Survey Team, 1973', Ministry Magazine (1974)",
           "https://en.wikipedia.org/wiki/Heshbon"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tell_Hesban_(Column).jpg?width=800",
+        "image_credit": "Roman column, Tell Hesban (ancient Esbus) · Wikimedia Commons",
+        "image_alt": "Roman-era column at Tell Hesban, site of ancient Esbus"
       }
     },
     {
@@ -12149,7 +12197,10 @@
           "D.F. Graf, 'The Via Nova Traiana in Arabia Petraea', in The Roman and Byzantine Near East, JRA Supplementary Series 14",
           "https://en.wikipedia.org/wiki/Madaba_Map"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Madaba_Apostelkirche_Innen_Mosaik_5.JPG?width=800",
+        "image_credit": "Mosaic, Church of the Apostles, Madaba (ancient Medaba) · Wikimedia Commons",
+        "image_alt": "Byzantine mosaic inside the Church of the Apostles at Madaba"
       }
     },
     {
@@ -12173,7 +12224,10 @@
           "'Making Peoples: The Nabataean Settlement of the Dhiban Plateau and Beyond' (ResearchGate)",
           "https://en.wikipedia.org/wiki/Dhiban,_Jordan"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dhiban%20(Close%20Up%20of%20Ruins).jpg?width=800",
+        "image_credit": "Ancient ruins at Dhiban, site of Roman-era Dibon · Wikimedia Commons",
+        "image_alt": "Close-up of the ancient ruins at Dhiban, Jordan"
       }
     },
     {
