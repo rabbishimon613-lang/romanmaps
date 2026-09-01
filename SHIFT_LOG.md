@@ -7,6 +7,138 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 84 — 2026-09-01 (this shift's own prompt claimed "Shift 1 of four")
+
+Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
+count (Shift 83 pushed `b85c5ea` as its last commit; this shift started there). Repo booted with
+`HEAD` detached at that real tip while local `main` pointed at a stale `5093cbe` ("Shift 56")
+from a history that had actually diverged — same pattern as Shift 83's own note, and resolved
+the same way: `git fetch origin main` (the stale ref was just a cache-timing artifact of the
+first fetch in this container, not a real divergence — `origin/main` immediately reported
+`b85c5ea` once fetched fresh) + `git checkout main` + `git reset --hard origin/main`. `npm
+install` needed at session start (fresh cloud container), clean.
+
+### Board check
+
+Grepped `BOARD.md` for every open `- [ ]` ticket: still the same 14 as Shift 82/83 counted,
+independently re-confirmed each one against the actual repo state rather than trusting the
+prior tally secondhand — the four P0s (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2,
+`[03-P0-2]` card-rebuild, `[13-P0-2]` image-audit) are still too large for one unattended
+session, `[15-P0-1]`/`[14-P0-1]` stay human-blocked, `[02-P0-4]`/`[11-P1-5]`/`[11-P1-6]` need
+local tooling or are a bigger refactor than a mixed shift slot, `[10-P0-2]`/`[05-P2-6]`/
+`[12-P1-4]`/`[11-P2-11]` are each underspecified one-liners that need scope worked out before
+committing mid-shift (same conclusion at least five prior shifts have independently reached on
+this list), and `[06-P1-5]` (`finds` — "3–8 artefacts per site with images and museum") has no
+backing spec since `research/reports/` is gitignored and empty in this container (confirmed
+again — `ls research/` errors, matches every prior shift's note). No stale `[~]` claims to clear.
+Given nothing on the board was actually pickable, worked from the axes per `SHIFT_BRIEF.md`'s
+own fallback rule ("valid source of work when the board has nothing that fits").
+
+### Track A — road_stations.geojson image top-up: 46 more stations (commits `9ef1a6a`, `d693016`)
+
+Picked up exactly where Shift 83's own handoff note pointed: `road_stations.geojson`'s image
+gap, the largest untouched backlog in the project (70/518 stations had an image_url going into
+this shift). Ran the coverage query fresh rather than trusting the prior count and found one road
+Shift 83 hadn't flagged — Via Agrippa (Gaul, 56 missing, the single largest gap of any road) —
+alongside the four it did name.
+
+Dispatched three parallel WebSearch research agents (direct `en.wikipedia.org`/
+`commons.wikimedia.org` fetch confirmed blocked again in this sandbox, same standing limitation
+every image-touching shift this month has hit — `WebSearch` with `site:commons.wikimedia.org`
+queries works fine and was the only path used):
+1. Via Agrippa (56 candidates) → 18 confirmed.
+2. Via Augusta + Via Popilia (48 candidates) → 15 confirmed.
+3. Via Egnatia + Via Militaris (45 candidates) → 13 confirmed, all from Via Egnatia — Via
+   Militaris's 20 candidates are minor mutationes/stationes with no confirmable site-specific
+   Commons photo, and the agent skipped every one of them rather than substitute a nearby city's
+   image. Worth flagging for whoever picks up road-station images next: Via Militaris looks like
+   a dead end for this WebSearch-only method specifically, not just under-researched — a
+   different source (e.g. an EDCS epigraphy search, or a Serbian/Bulgarian-language search pass)
+   might do better than another English-language attempt.
+
+Each agent was instructed to skip rather than force a match, and to watch for name-collision
+traps specifically — this shift's brief called out the same failure class Shift 83 documented
+(a wrong-place Commons hit sharing a name with the real target). Real ones caught and rejected
+this round: two distinct "Apollonia" stations on Via Egnatia (Illyrian coast vs. Mygdonia,
+inland Greece) kept separate; "Atina" on Via Popilia (Atena Lucana) not cross-matched to the
+different Atina in Latium; "Rhegion" near Byzantium not cross-matched to Regium/Reggio Calabria
+in Italy despite the near-identical name; Blaye's 17th-century Vauban citadel and Vichy's
+19th-century spa pavilion both declined as not Roman-era despite being the only photographed
+structures at those sites. Combined the three agents skipped roughly 120 of 149 candidates
+outright rather than force a weak match.
+
+One judgment call worth recording: `station_byzantium`'s only confirmable image is the Theodosian
+Walls of Constantinople, a 5th-century structure — centuries past this map's 117 CE snapshot.
+Followed this project's own established precedent (`health.geojson`'s Aquae Mattiacae/Wiesbaden
+record ships a modern-pavilion photo with an `image_alt` disclaiming it isn't Roman-era) rather
+than drop the station's only lead entirely: kept it, but named the anachronism plainly in both
+`image_credit` and `image_alt` so nobody reading the card mistakes it for a 117 CE structure.
+
+Verified every id against the live file before applying — 46/46 unique, all existed in
+`road_stations.geojson`, none already had an `image_url` — via `scripts/apply-image-topup.mjs`
+(0 skipped). `road_stations.geojson` image coverage: 70/518 → 116/518 (13.5% → 22.4%). ~306
+`identified: true` stations remain image-less, per-road remaining-gap list in "Next" below.
+
+### Track B — one verified new POI: Villa dei Quintili (commit `bf372f6`)
+
+Checked `SHIFT_BRIEF.md`'s axis 3d/3e (named villas + tombs) against what's actually in
+`pois.geojson` before assuming a gap existed — grepped for eight candidate names the brief lists
+(Villa dei Quintili, Fishbourne, Munatius Plancus's tomb, Pliny's Laurentine/Tuscan villas,
+Sublaqueum, Piazza Armerina, Chedworth, Bignor). Six were already present; the last two
+(Piazza Armerina, Chedworth/Bignor) are 3rd/4th-century constructions with no genuine 117 CE
+story to tell and were correctly left out. Villa dei Quintili was the one real gap. Its dating
+needed care: every source (Wikipedia, a Cambridge/*Antiquity* paper on the villa's imperial
+winery, archaeomortar studies) attributes the villa's construction and fame to the Quintilii
+brothers, joint consuls in 151 CE — 34 years after this map's snapshot. One 18th-century
+antiquarian's speculation about an earlier villa on the site isn't solid ground for a 117 CE
+claim. Followed this project's own precedent for exactly this shape of problem (`poi_mausoleum_
+hadrian`'s `extant_117ce: false` treatment) — added the record with `extant_117ce: false`,
+`built: 130`, and a note that says plainly the hill was still open ground on 11 August 117 CE.
+Didn't pad the batch with the weaker candidates the villa/tomb research agent also checked and
+declined (see its own report for the full accounting) — one solid, correctly-dated record beats
+several rushed ones.
+
+This shift did not attempt a UI/feature-backlog item (the usual Track B shape). Every board
+ticket concretely small enough for a mixed shift was either already checked (villa/tomb gaps,
+above) or has no real spec to build against (`[06-P1-5]` finds — see Board check). Logging this
+plainly rather than force a UI change with no real ticket behind it: this shift was two Track A
+passes (image top-up + one new-content gap-fill), not a Track A/Track B split.
+
+### State, verification, next
+
+`npm run validate`: 0 errors, same 7 pre-existing reviewed warnings, both before and after each
+batch. `npm run build`: clean before both pushes (pre-push hook's own gate ran it for real, not
+skipped). `npm run metrics -- --write`: 1235 → 1236 POIs, 97.9% deep / 26 thin (commit `d693016`).
+
+Commits this shift, in order: `bf372f6` (Villa dei Quintili), `9ef1a6a` (46-station image
+top-up, amended once pre-push to fix a coverage number I'd misstated before checking it against
+the file — always compute the before/after count, don't estimate it), `d693016` (metrics
+refresh). All pushed to `main`.
+
+**Next shift should pick up:**
+- **Track A:** `road_stations.geojson` still has ~306 `identified: true` stations with no image.
+  Remaining named-road gaps of size worth a dedicated pass: Via Traiana Nova (17), Via Domitia
+  (16), Via Appia (19), Via Claudia Augusta (12), Via Traiana (11), Via de la Plata (8), Via
+  Sebaste (6), Via Cottia (5) — none touched this shift. Via Militaris (20) is the one road two
+  shifts running have now failed to find any Commons coverage for via English-language WebSearch
+  — worth a different method (EDCS epigraphy search, or a Serbian/Bulgarian-language pass) rather
+  than a third identical attempt. `pois.geojson`'s ~500-record image gap still needs the slower
+  per-building research approach Shift 83 flagged, not proximity reuse.
+- **Track B:** the board's remaining 14 open tickets are, once again, all either human-blocked,
+  too large for an unattended mixed shift, or underspecified one-liners with no backing research
+  report (`research/reports/` stays gitignored/empty in every cloud container checked so far —
+  six shifts in a row now). Whoever next has time for a dedicated (non-mixed) session should
+  either write the missing spec for `[06-P1-5]`/`[10-P0-2]`/`[12-P1-4]` before a shift attempts
+  them, or tackle `[11-P1-6]` split-map-tsx properly with full before/after Playwright coverage.
+- **General:** `en.wikipedia.org`/`commons.wikimedia.org` egress block reconfirmed again in this
+  container (direct `curl`/`WebFetch` both fail with the proxy's `EGRESS_BLOCKED`/403); WebSearch
+  with `site:commons.wikimedia.org` remains the only working path to real Commons filenames and
+  was sufficient for all of this shift's research. Also reconfirmed `research/` is gitignored and
+  absent in this container — any board ticket assuming Axis 1's Overpass-fetch pipeline exists
+  still needs its scope rebuilt from scratch, not extended.
+
+---
+
 ## Shift 83 — 2026-08-31 (this shift's own prompt claimed "Shift 4 of four")
 
 Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
