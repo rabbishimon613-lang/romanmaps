@@ -7,6 +7,138 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 85 — 2026-09-01 (this shift's own prompt claimed "Shift 2 of four")
+
+Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
+count (Shift 84 pushed `3c9f3a2` as its last commit; this shift started there). Repo booted with
+`HEAD` detached at that real tip; `git fetch origin main` + `git checkout -B main origin/main`
+landed cleanly on `origin/main` with no divergence this time (a cleaner boot than several recent
+shifts logged). `npm install` clean (fresh cloud container).
+
+### Board check
+
+Grepped `BOARD.md` for every open `- [ ]` ticket: the same 14 as Shift 82/83/84 counted,
+independently re-confirmed against the repo rather than trusted secondhand. Same read as three
+shifts running: the four P0s (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]`
+card-rebuild, `[13-P0-2]` image-audit) are still too large for one unattended session,
+`[15-P0-1]`/`[14-P0-1]` stay human-blocked, `[02-P0-4]`/`[11-P1-5]`/`[11-P1-6]` need local
+tooling or are a bigger refactor than a mixed shift slot, and `[10-P0-2]`/`[05-P2-6]`/`[12-P1-4]`/
+`[11-P2-11]` are still underspecified one-liners with no backing report (`research/reports/`
+confirmed gitignored/empty in this container again — matches every prior shift). No stale `[~]`
+claims. Worked from `SHIFT_BRIEF.md`'s axes per its own fallback rule, same as the last several
+shifts.
+
+Also reconfirmed the standing network limitation before starting: `curl` to `overpass-api.de`,
+`en.wikipedia.org`, and `commons.wikimedia.org` all fail with the proxy's `CONNECT tunnel failed,
+response 403` — Axis 1 (more cities, needs the Overpass pipeline) stays infeasible in this
+sandbox, same conclusion every shift touching this has reached. `WebSearch` with
+`site:commons.wikimedia.org` queries remains the only working research path.
+
+### Track A — image top-up: 36 records across road_stations.geojson + pois.geojson (commits `2800ee8`, `9ed188d`, `94eff09`)
+
+Surveyed the two largest untouched image gaps before picking targets: `road_stations.geojson`'s
+Shift 84 handoff (four named-road gaps: Via Traiana Nova 17, Via Domitia 16, Via Appia 19, Via
+Claudia Augusta 12 — 64 candidates) and `pois.geojson`'s largest two missing-image categories,
+`auxiliary_fort` (78 of 501 missing) and `temple` (42 of 501 missing).
+
+Dispatched **seven parallel WebSearch research agents** in one batch — two for the road-station
+groups, three for auxiliary forts split by region (Britannia, Danube limes, Africa/Eastern), two
+for temples (Western/Italian, African/Eastern). This ran into a real, previously-undocumented
+constraint: the WebSearch tool's per-session call budget (200 calls) is **shared across
+concurrently-running subagents**, not allocated per-agent. Every agent independently reported
+hitting "200 of 200" partway through its list, at wildly different points depending on how much
+of the shared pool other agents had already burned when its own calls landed — the
+African/Eastern temple agent (dispatched last in the batch) got zero usable searches before the
+pool was already exhausted. **Worth flagging plainly for whoever runs parallel WebSearch research
+next: don't launch more than 2-3 parallel agents that each expect a full search budget — either
+serialize the batches, or budget ~25-30 searches per agent going in.**
+
+Combined agent yield: 8/33 (Via Traiana Nova + Domitia), 8/31 (Via Appia + Via Claudia Augusta),
+5/21 (Britannia forts), 4/31 (Danube-limes forts, 2 with only moderate filename confidence — see
+below), 2/25 (Africa/Eastern forts, both moderate confidence), 3/15 (Western temples), 0/27
+(African/Eastern temples — budget exhausted before any confirmed hit). 30 confirmed total.
+
+My own top-level session turned out to hold a **separate** WebSearch budget from the subagents'
+(tested directly — a query succeeded immediately after agents were reporting "budget exhausted"),
+so spent it chasing the specific promising leads each agent's report flagged but couldn't close:
+confirmed exact Commons filenames for Apta Julia (Pont Julien), Dibon (Dhiban ruins), Ostia's
+Capitolium and Temple of Roma and Augustus, Italica's Traianeum, and Timgad's Temple of the
+Genius of the Colony — 6 more, verified against a second independent search each before merging
+(caught and corrected one case where the Danube-fort agent's `poi_fort_lugio` filename looked
+unverified in its own report — a fresh search confirmed the exact file, "Dunaszekcső légifotó.jpg"
+at 2083×1439px, genuinely exists in Category:Lugio/Florentia, so kept it as filed). Also
+independently verified the two Danube-agent and two Africa-agent "moderate confidence" filenames
+it flagged as unable to byte-verify (Munningen, Annamatia, Thabudeos, Tubusuctu) — all four
+confirmed real via a second targeted search before merging, none dropped.
+
+**Judgment calls on what got skipped, not just what got confirmed:**
+- `station_characmoba`/`station_negla_shoubak` (Via Traiana Nova) — both identified with real
+  modern towns (al-Karak, Shoubak), but the only Commons photos at either are of the medieval
+  Crusader-era castles that now stand there, not Roman-period remains. Skipped rather than
+  mislabel a Crusader fortress as a Roman mansio.
+- The seven Egyptian Eastern Desert praesidia (Didymoi, Krokodilo, Maximianon, Qasr el-Banat,
+  Xeron Pelagos, Compasi, Dios) — well-documented archaeologically (Hélène Cuvigny's IFAO
+  excavation corpus), but no Commons photo coverage turned up for any of them despite several
+  searches. A genuine research dead end for this method, not a skipped opportunity — flagging for
+  whoever tries next in case a different source (IFAO's own site, if reachable) has usable images.
+- Bosra's Temple of Dushara and Temple of Baalshamin, and Thessaloniki's Sarapeion — each has only
+  a generic "ruins of the city" Commons photo, not an image specific to that building. Skipped
+  rather than force a caption claiming a generic site photo shows one specific temple.
+- Narbo's Capitolium — the only Commons hit is a 19th-century architectural plan of the
+  Archbishop's Palace showing where the capitolium's foundations *would have* determined the
+  later building's layout, not a photo of the temple itself. Too indirect to caption honestly.
+
+Verified every id against the live files before applying, via `scripts/apply-image-topup.mjs` (0
+skipped on either file — 18/18 road_stations, 18/18 pois). `road_stations.geojson` image
+coverage: 116/518 → 134/518 (22.4% → 25.9%). `pois.geojson`: 735/1236 → 753/1236 (59.5% → 60.9%).
+
+### Track B
+
+No UI/feature-backlog item attempted this shift. Checked `FEATURE_BACKLOG.md`'s P0–P3 sections
+end to end — every item is checked off; the only open lines are small "new ideas spotted" notes
+from much earlier shifts (tooling nits, not shippable features on their own). Same honest call
+Shift 84 made: this was two Track A passes (two distinct data files, three axis-3 subcategories:
+2/roadside, 3a/military, 3b/sacred), not a Track A/Track B split — no real Track B target existed
+to force.
+
+### State, verification, next
+
+`npm run validate`: 0 errors, same 7 pre-existing reviewed warnings (India trade points and
+Kushan/Han neighbor labels intentionally outside the empire envelope), both before and after each
+batch. `npm run build`: clean via the pre-push hook, not skipped. `npm run metrics -- --write`:
+image coverage (pois.geojson) 59.5% → 60.9%, all-curated-places 60.3% → 61.5%.
+
+Commits this shift, in order: `2800ee8` (18 road-station images), `9ed188d` (18 pois.geojson
+images — forts + temples), `94eff09` (metrics refresh). All pushed to `main`.
+
+**Next shift should pick up:**
+- **Track A:** `road_stations.geojson` is at 134/518 (25.9%) — Via Traiana Nova (down to 15
+  candidates), Via Domitia (down to 8), Via Appia (down to 11), Via Claudia Augusta (down to 4)
+  all still have real remaining gaps within the road groups this shift touched, on top of the
+  untouched roads Shift 84 already listed (Via Cottia, Via Sebaste, Via de la Plata, Via
+  Traiana). `pois.geojson`'s `auxiliary_fort` (down to 67 missing) and `temple` (down to 39
+  missing) categories are the two biggest remaining single-category gaps — the Pannonia
+  Inferior/Moesia/Dacia stretch of the Danube-limes fort list (Teutoburgium through Rusidava, 15
+  never even searched) and the African/Eastern temple pool (still 0 confirmed, 27 candidates
+  listed in this shift's own agent dispatch, most never actually searched) are the most promising
+  next targets — both had a full, already-researched candidate list this shift produced but ran
+  out of shared search budget before finishing.
+- **General — new finding, worth acting on:** the WebSearch tool's call budget is shared across
+  all concurrently-running subagents in a session, not per-agent. Launching many parallel
+  research agents in one batch (this shift tried 7) means later-dispatched agents can get
+  starved to zero before they run a single useful search. Recommend either capping parallel
+  research dispatches at 2-3 per batch, or explicitly telling each agent a smaller per-agent
+  search budget (~25) up front so it paces itself instead of assuming a full 200. The top-level
+  session's own WebSearch budget appears to be tracked separately from subagents' — useful for a
+  final mop-up pass on the specific filenames agents flagged as promising-but-unconfirmed, as
+  done this shift.
+- Standing items unchanged from Shift 84's note: `research/` stays gitignored/empty in every
+  cloud container; `en.wikipedia.org`/`commons.wikimedia.org`/`overpass-api.de` direct egress
+  stays blocked; `WebSearch` with `site:commons.wikimedia.org` remains the only working research
+  path.
+
+---
+
 ## Shift 84 — 2026-09-01 (this shift's own prompt claimed "Shift 1 of four")
 
 Same stale-numbering mismatch every recent shift has flagged — continuing the real sequential
