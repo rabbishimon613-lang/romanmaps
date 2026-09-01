@@ -354,6 +354,171 @@
         "image_credit": "Roman funerary relief of a teacher with three pupils, Rheinisches Landesmuseum Trier · Wikimedia Commons",
         "image_alt": "Roman relief carving depicting a schoolteacher instructing three pupils"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1842,
+          39.1325
+        ]
+      },
+      "properties": {
+        "id": "learning_pergamon_library",
+        "name": "The Library of Pergamon",
+        "category": "library",
+        "one_line": "Eumenes II founded this library in the early 2nd century BCE within the Sanctuary of Athena on Pergamon's acropolis, building a collection meant to rival Alexandria's. Ancient writers put its holdings near 200,000 parchment rolls, ranking it, by report, the second-largest library in the ancient world. Plutarch's tale that Mark Antony stripped its shelves bare and shipped the lot to Cleopatra in 43 BCE reads more like later political slander than settled fact, and the sanctuary itself stayed in use under Rome. In 117 CE its halls still stood on the citadel above the city, a separate institution from the medical Asklepieion down in the plain.",
+        "province": "Asia",
+        "modern_location": "Bergama, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Library_of_Pergamum",
+          "https://www.worldhistory.org/Library_of_Pergamon/",
+          "https://brewminate.com/king-eumenes-ii-and-the-ancient-library-of-pergamon/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pergamon%20Sanctuary%20of%20Athena%20from%20SW.jpg?width=800",
+        "image_credit": "The Sanctuary of Athena on the Pergamon acropolis, site of the ancient library · Wikimedia Commons",
+        "image_alt": "Ruins of the Sanctuary of Athena at Pergamon, viewed from the southwest"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8964,
+          36.9081
+        ]
+      },
+      "properties": {
+        "id": "learning_tarsus_philosophy",
+        "name": "The Schools of Tarsus",
+        "category": "philosophy_school",
+        "one_line": "Strabo, writing under Augustus, said the people of Tarsus threw themselves into philosophy and general schooling with such enthusiasm they surpassed even Athens and Alexandria. The city produced Athenodorus Cananites, the Stoic who tutored young Octavian and later came home to reform Tarsus's own council, and Nestor of Tarsus, tutor to Marcus Antonius's son. Its lecture halls stood out for training native Tarsians almost exclusively, unlike Athens, which drew wandering foreign students from across the Mediterranean. By 117 CE the free Cilician city still carried this reputation as a working seat of Stoic instruction, sending its own trained teachers out to Rome and beyond.",
+        "province": "Cilicia",
+        "modern_location": "Tarsus, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/14E*.html",
+          "https://en.wikipedia.org/wiki/Athenodorus_Cananites",
+          "https://en.wikipedia.org/wiki/Nestor_of_Tarsus"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20road%20in%20Tarsus%2C%20Mersin%20Province.jpg?width=800",
+        "image_credit": "Excavated Roman road in Tarsus, Mersin Province, Turkey · Wikimedia Commons",
+        "image_alt": "Remains of a Roman-period paved road in ancient Tarsus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.257,
+          36.8757
+        ]
+      },
+      "properties": {
+        "id": "learning_cos_asklepieion",
+        "name": "The Asklepieion of Cos",
+        "category": "medical_school",
+        "one_line": "Legend held that Hippocrates himself trained here, and the sanctuary of Asclepius on Cos grew into a working medical school that opened the profession beyond the sons of priest-physicians to any qualified student. Built across three rising terraces, with a Doric temple of Asclepius crowning the highest, it paired temple healing with hands-on clinical instruction at the patient's bedside. Its methods, close observation, bedside attendance, and a code of professional ethics, defined the Hippocratic approach that doctors across the Roman world still studied by 117 CE. The sanctuary remained an active pilgrimage and teaching site under Roman rule, its Hellenistic terraces still the ones a visitor climbed in Trajan's reign.",
+        "province": "Asia",
+        "modern_location": "Kos, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Asclepeion_of_Kos",
+          "http://asclepieion.mpl.uoa.gr/parko/marketos2.htm",
+          "https://www.discoveringkos.com/destination-item/hippocrates-of-kos-biography/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Asklepion%2C%20Kos%2C%20Greece%20%285652978891%29.jpg?width=800",
+        "image_credit": "Ruins of the Asklepieion sanctuary and medical school on Kos · Wikimedia Commons",
+        "image_alt": "Terraced ruins of the Asklepieion healing sanctuary on the island of Kos"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1428,
+          38.4192
+        ]
+      },
+      "properties": {
+        "id": "learning_smyrna_rhetoric",
+        "name": "The Rhetoric Schools of Smyrna",
+        "category": "rhetoric_school",
+        "one_line": "Nicetes of Smyrna, teaching in the later 1st century CE, is named by the biographer Philostratus as the founding figure of the rhetorical revival later called the Second Sophistic, and Smyrna carried that reputation into the next generation. The city ranked alongside Pergamon and Ephesus as one of Roman Asia's three great sophistic centers, its teachers drawing fee-paying students from across the Greek East. A young Antonius Polemon, born around 88 CE, had already come to Smyrna to study rhetoric by this period and would soon open his own school there, a rise that later brought him a famous audience with Hadrian in 124 CE. In 117 CE Smyrna's schools were an established going concern, ahead of their Hadrianic peak but well underway.",
+        "province": "Asia",
+        "modern_location": "Izmir, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Second_Sophistic",
+          "https://www.britannica.com/topic/Second-Sophistic-school",
+          "https://followinghadrianphotography.com/2019/03/18/smyrna/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Agora%20of%20%C4%B0zmir%20fragment.jpg?width=800",
+        "image_credit": "Remains of the ancient agora of Smyrna, Izmir · Wikimedia Commons",
+        "image_alt": "Ruins of the ancient agora at Smyrna, modern Izmir"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.3417,
+          37.9394
+        ]
+      },
+      "properties": {
+        "id": "learning_ephesus_celsus_library",
+        "name": "The Library of Celsus",
+        "category": "library",
+        "one_line": "Tiberius Julius Aquila, a former Roman consul, began this library shortly after 110 CE as a monumental tomb and memorial to his father Celsus Polemaeanus, proconsul of Asia, whose sarcophagus rests beneath the reading-room floor. Ancient estimates put its shelving capacity near 12,000 scrolls, making it the third-largest library in the empire behind only Alexandria and Pergamon. Aquila died before the building was finished and left funds in his will to complete it; most reconstructions place that completion right around 117 CE, though some evidence pushes final work into Hadrian's early reign. Either way, Ephesus gained a working library exactly in this era, its tiered facade rising over the city's main street as a new rival to Pergamon's older collection.",
+        "province": "Asia",
+        "modern_location": "Selçuk, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Library_of_Celsus",
+          "https://www.worldhistory.org/Library_of_Celsus/",
+          "https://madainproject.com/library_of_celsus"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ephesus%20Library%20of%20Celsus.jpg?width=800",
+        "image_credit": "The reconstructed facade of the Library of Celsus at Ephesus · Wikimedia Commons",
+        "image_alt": "The monumental facade of the Library of Celsus in ancient Ephesus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.345,
+          37.941
+        ]
+      },
+      "properties": {
+        "id": "learning_ephesus_rufus",
+        "name": "Rufus of Ephesus's Medical Teaching",
+        "category": "medical_school",
+        "one_line": "Rufus of Ephesus, active through the reign of Trajan down to 117 CE, trained in Alexandria before returning to practice and teach in his native Ephesus, one of Roman Asia's leading medical centers. He wrote roughly 96 treatises, an unusual output for the period, including an anatomical vocabulary for students that paired a living demonstrator's visible parts with a dissected monkey's for the hidden ones. His descriptions of the crossing optic nerves and his split between nerves of motion and of sensation grew directly out of this teaching. Rufus worked as a private practitioner rather than a salaried professor, so his following was less a formal institution than a circle of pupils and widely copied texts that Galen and later physicians kept citing for centuries.",
+        "province": "Asia",
+        "modern_location": "Selçuk, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://hekint.org/2020/08/17/ephesus-and-its-renowned-physicians/",
+          "https://jamanetwork.com/journals/jama/fullarticle/330043",
+          "https://acnr.co.uk/articles/rufus-of-ephesus/"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
