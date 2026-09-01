@@ -2282,7 +2282,10 @@
           "Itin. Ant.",
           "Catalan Via Augusta scholarship"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Puente del Diablo, Martorell, Catalonia, Spain. Pic 06.jpg?width=800",
+        "image_credit": "Wikimedia Commons",
+        "image_alt": "Pont del Diable at Martorell, spanning the Llobregat on the original Roman Via Augusta bridge foundations at the Ad Fines station (visible structure is a 1960s reconstruction of the 1283 Gothic bridge built over the Roman base)"
       }
     },
     {
@@ -2494,7 +2497,10 @@
           "Itin. Ant. 399.6",
           "Arasa, \"La mansio Ildum de la Via Augusta\""
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/L'Hostalot i la mansio Ildum (espacio de protección arqueológica) (Vilanova d'Alcolea).jpg?width=800",
+        "image_credit": "Wikimedia Commons",
+        "image_alt": "L'Hostalot archaeological protection area at Vilanova d'Alcolea (Castellón), site of the Via Augusta mansio Ildum"
       }
     },
     {
@@ -9038,7 +9044,10 @@
         "sources": [
           "https://www.suedtirol.info/en/en/experiences-and-events/plp-experiences/experiences-south-tyrol/pdp-experience.smgpoi87540d0f1bd3291fd3d8cca75ffb15d1.roman-milestone-of-the-via-claudia-augusta.rabla-rabland"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bozen Stadtmuseum Meilenstein von Rabland.jpg?width=800",
+        "image_credit": "Wikimedia Commons, Category:Stadtmuseum (Bozen)",
+        "image_alt": "Roman milestone of Emperor Claudius (46 CE), found at Rabland in 1552, now preserved in the Stadtmuseum Bozen/Bolzano — the oldest inscribed Roman monument in the Alps referring to construction of the Via Claudia Augusta"
       }
     },
     {
@@ -9110,7 +9119,10 @@
           "https://en.wikipedia.org/wiki/Via_Claudia_Augusta",
           "https://www.hmdb.org/m.asp?m=217418"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Augsburger Siegesaltar, eradierte Stelle mit Nennung des Konsuls Honoratianus.jpg?width=800",
+        "image_credit": "Wikimedia Commons, Category:Augsburger Siegesaltar / Römisches Museum Augsburg",
+        "image_alt": "Detail of the Augsburg Victory Altar (dedicated 260 CE, found 1992), the Roman altar to Victoria commemorating the defeat of the Juthungi near Augusta Vindelicum, now in the Römisches Museum Augsburg"
       }
     },
     {

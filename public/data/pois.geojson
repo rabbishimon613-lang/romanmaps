@@ -37118,7 +37118,10 @@
           "https://www.roman-britain.co.uk/places/pumsaint/",
           "https://pleiades.stoa.org/places/79578"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carreg Pumsaint - geograph.org.uk - 396874.jpg?width=800",
+        "image_credit": "Carreg Pumsaint, the grooved Roman stone anvil block used for crushing gold ore at the Dolaucothi mines near the Luentinum fort, via Geograph/Wikimedia Commons",
+        "image_alt": "Grooved stone block (Carreg Pumsaint) used by Roman miners to crush gold ore near Pumsaint"
       }
     },
     {
@@ -37519,7 +37522,10 @@
           "https://en.wikipedia.org/wiki/Castleshaw_Roman_Fort",
           "https://historicengland.org.uk/listing/the-list/list-entry/1017837"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Castleshaw Roman Fort Entrance - geograph.org.uk - 7257212.jpg?width=800",
+        "image_credit": "Entrance earthworks of Castleshaw Roman fort, Saddleworth, via Geograph/Wikimedia Commons",
+        "image_alt": "Grassy earthwork remains marking the entrance of Castleshaw Roman fort"
       }
     },
     {
@@ -37546,7 +37552,10 @@
           "https://en.wikipedia.org/wiki/Ardotalia",
           "https://glossopheritage.co.uk/ghtarchive/melandra/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ardotalia 5581.JPG?width=800",
+        "image_credit": "The earthwork remains of Ardotalia (Melandra Castle) Roman fort at Gamesley, Derbyshire, via Wikimedia Commons",
+        "image_alt": "Earthwork remains of the Ardotalia (Melandra Castle) Roman fort site"
       }
     },
     {
@@ -37629,7 +37638,10 @@
           "https://www.roman-britain.co.uk/places/danum/",
           "https://brigantesnation.com/sites/world-heritage/brigantia/south-yorkshire/doncaster-roman-fort-danum/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Danum shield.png?width=800",
+        "image_credit": "The Danum shield, a 1st-century Roman shield excavated at the Danum fort site in Doncaster, via Wikimedia Commons",
+        "image_alt": "Illustration of the Roman-era Danum shield found at the Doncaster fort site"
       }
     },
     {
