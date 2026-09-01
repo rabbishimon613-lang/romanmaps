@@ -32102,7 +32102,10 @@
         "sources": [
           "https://digitalcollections.nypl.org/items/510d47e4-4cf6-a3d9-e040-e00a18064a99"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple.of.Minerva01.jpg?width=800",
+        "image_credit": "Temple of Minerva at Theveste (Tébessa), Algeria · Wikimedia Commons",
+        "image_alt": "Facade and columns of the Roman Temple of Minerva at Tébessa, Algeria"
       }
     },
     {
@@ -34489,7 +34492,10 @@
           "https://en.wikipedia.org/wiki/Ad_Flexum",
           "https://www.wikidata.org/wiki/Q17322776"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stone_with_plaque,_Ad_Flexum_Shopping_Center,_2017_Mosonmagyar%C3%B3v%C3%A1r.jpg?width=800",
+        "image_credit": "Roman inscribed stone found at the Ad Flexum shopping-center excavation site, Mosonmagyaróvár · Wikimedia Commons",
+        "image_alt": "Roman-era inscribed stone with plaque, unearthed at the site of the Ad Flexum fort in Mosonmagyaróvár, Hungary"
       }
     },
     {
@@ -35368,7 +35374,10 @@
           "https://archaeologyinbulgaria.com/background-infonotes/fortresses-cities/ratiaria-colonia-ulpia-traiana-ratiaria-archar-bulgaria/",
           "https://en.wikipedia.org/wiki/Ratiaria"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ratiaria,_Archar,_Bulgaria_-_22.12.2020.jpg?width=800",
+        "image_credit": "Ruins of the Roman city of Ratiaria near Archar, Bulgaria · Wikimedia Commons",
+        "image_alt": "Archaeological remains of the Roman city of Ratiaria near Archar, Bulgaria"
       }
     },
     {
@@ -38585,7 +38594,10 @@
           "https://madainproject.com/timgad",
           "https://curate.nd.edu/show/12579s18c46"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Capitolio_Timgad_3.jpg?width=800",
+        "image_credit": "Ruins of the Capitolium (Capitol) of Roman Timgad, Algeria · Wikimedia Commons",
+        "image_alt": "Columns and remains of the Capitolium temple at Timgad, Algeria"
       }
     },
     {
