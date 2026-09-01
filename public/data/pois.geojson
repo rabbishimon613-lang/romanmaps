@@ -38937,6 +38937,36 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5525,
+          41.8314
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_quintili",
+        "category": "villa",
+        "name_latin": "Villa Quintiliorum",
+        "name_english": "Villa dei Quintili",
+        "province": "Italia",
+        "modern_location": "Via Appia Nuova, Rome, Italy",
+        "built": 130,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The largest private villa in Roman suburbia, spread across roughly 24 hectares beside the fifth milestone of the Via Appia. It took its name from brothers Sextus Quintilius Condianus and Valerius Maximus, joint consuls in 151 CE, whose grounds held a private hippodrome, baths, and vast cisterns. Commodus later executed both brothers and seized the estate. On 11 August 117 CE none of this stood yet; the hill was still open ground, with construction starting only once Hadrian's reign began.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Villa_of_the_Quintilii",
+          "https://www.cambridge.org/core/journals/antiquity/article/spectacle-of-production-a-roman-imperial-winery-at-the-villa-of-the-quintilii-rome/C3BFAFED7E6C5F14DBAFEB443EDB6CC2"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Panoramica%20di%20villa%20dei%20Quintili.jpg?width=800",
+        "image_credit": "Panoramic view of the Villa dei Quintili ruins, Via Appia · Wikimedia Commons",
+        "image_alt": "Ruins of the monumental Villa dei Quintili along the Via Appia outside Rome"
+      }
     }
   ]
 }
