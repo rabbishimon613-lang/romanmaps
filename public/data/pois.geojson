@@ -1576,7 +1576,10 @@
           "https://www.ostia-antica.org/dict/topics/golden/golden-5.htm",
           "https://ostiaforumproject.com/2021-2022-chapter-1/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Capitolium_Ostia_Antica.JPG?width=800",
+        "image_credit": "Capitolium, Ostia Antica · Wikimedia Commons",
+        "image_alt": "The Capitolium temple in the forum at Ostia Antica"
       }
     },
     {
@@ -1604,7 +1607,10 @@
           "https://ostiaantica.cultura.gov.it/en/educational-panels-and-maps/the-central-area-and-the-official-complexes/tempio-di-roma-e-augusto/",
           "Russell Meiggs, Roman Ostia (Oxford, 2nd ed. 1973)"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Roma.jpg?width=800",
+        "image_credit": "Temple of Roma and Augustus, Ostia Antica · Wikimedia Commons",
+        "image_alt": "Remains of the Temple of Roma and Augustus at Ostia Antica"
       }
     },
     {
@@ -2304,7 +2310,10 @@
           "https://en.wikipedia.org/wiki/Temple_of_Hadrian",
           "https://www.worldhistory.org/ephesus/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Hadrian%20Ephesus.JPG?width=800",
+        "image_credit": "Temple of Hadrian, Ephesus · Wikimedia Commons",
+        "image_alt": "Facade of the Temple of Hadrian on Curetes Street, Ephesus"
       }
     },
     {
@@ -3043,6 +3052,9 @@
           "https://pompeiiarchaeologicalpark.com/the-temple-of-apollo/"
         ],
         "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Apollo%20(Pompeii)%20(02).jpg?width=800",
+        "image_credit": "Temple of Apollo, Pompeii · Wikimedia Commons",
+        "image_alt": "Colonnade and podium of the Temple of Apollo in Pompeii",
         "ancient_sources": [
           {
             "author": "CIL X 787",
@@ -5166,7 +5178,10 @@
           "https://www.wikidata.org/wiki/Q27926486",
           "https://de.wikipedia.org/wiki/Kastell_Munningen"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kastell_Munningen,_ORL_68a,_1906-2008.svg?width=800",
+        "image_credit": "Kastell Munningen excavation plan (ORL 68a) · Wikimedia Commons",
+        "image_alt": "Site plan of the Roman auxiliary fort at Munningen, Raetia"
       }
     },
     {
@@ -20530,7 +20545,10 @@
           "https://pleiades.stoa.org/places/627230788",
           "https://whc.unesco.org/en/tentativelists/6376/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ITALICA%20Espagne%20Temple%20Traianeum.jpg?width=800",
+        "image_credit": "Traianeum, Italica · Wikimedia Commons",
+        "image_alt": "Foundations of the Traianeum, the temple dedicated to Trajan at Italica"
       }
     },
     {
@@ -24323,7 +24341,10 @@
           "https://en.wikipedia.org/wiki/Temple_of_Augustus,_Barcelona",
           "https://www.historyhit.com/locations/temple-of-augustus-barcelona/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/4%20Columnes%20Barcelona.JPG?width=800",
+        "image_credit": "Surviving columns of the Temple of Augustus, Barcelona (Barcino) · Wikimedia Commons",
+        "image_alt": "Four surviving Corinthian columns of the Roman Temple of Augustus in Barcelona's Gothic Quarter"
       }
     },
     {
@@ -34558,7 +34579,10 @@
           "https://hu.wikipedia.org/wiki/Crumerum",
           "http://dare.ht.lu.se/places/10857.html"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nyerges%C3%BAjfalu_-_place_of_the_Roman_Castrum,_aerial_view.jpg?width=800",
+        "image_credit": "Nyergesújfalu, site of the Roman fort of Crumerum · Wikimedia Commons",
+        "image_alt": "Aerial view of the site of the Roman fort of Crumerum near Nyergesújfalu"
       }
     },
     {
@@ -34729,7 +34753,10 @@
           "https://akjournals.com/view/journals/068/41/1-2/article-p55.xml",
           "https://www.wikidata.org/wiki/Q1265006"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/CIL_III_10639_%E2%80%93_Meilenstein_aus_Baracs.png?width=800",
+        "image_credit": "Roman milestone (CIL III 10639) from Baracs · Wikimedia Commons",
+        "image_alt": "Roman milestone found at Baracs, site of the fort of Annamatia"
       }
     },
     {
@@ -34843,7 +34870,10 @@
           "https://www.academia.edu/37156082/AN_EARLY_ROMAN_TOMBSTONE_FROM_DUNASZEKCS%C5%90_TRHR_201",
           "https://www.wikidata.org/wiki/Q964298"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dunaszekcs%C5%91_l%C3%A9gifot%C3%B3.jpg?width=800",
+        "image_credit": "Dunaszekcső aerial photograph, site of the Roman fort of Lugio · Wikimedia Commons",
+        "image_alt": "Aerial view of Dunaszekcső, site of the Roman fort of Lugio"
       }
     },
     {
@@ -36368,7 +36398,10 @@
           "https://en.wikipedia.org/wiki/Tabuda",
           "https://www.researchgate.net/publication/334119036_The_Roman_Presence_in_Southern_Numidia"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_ruins_of_THOUDA_Biskra_Algeria_01.jpg?width=800",
+        "image_credit": "Thabudeos (Thouda/Tabuda), Biskra Province, Algeria · Wikimedia Commons",
+        "image_alt": "Ruins of Thouda (Roman Thabudeos), Biskra Province, Algeria"
       }
     },
     {
@@ -36568,7 +36601,10 @@
           "https://pleiades.stoa.org/places/305171",
           "https://www.bejaia-guidedepoche.com/quoi-visiter/66-tiklat-antique-tubusuptu"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruines_romaine_de_Tubusuptu,_Tiklat,_El_Kseur.jpg?width=800",
+        "image_credit": "Tubusuctu, Tiklat (El Kseur), Béjaïa Province, Algeria · Wikimedia Commons",
+        "image_alt": "Roman ruins of Tubusuctu at Tiklat, near El Kseur, Algeria"
       }
     },
     {
@@ -36910,7 +36946,10 @@
           "https://coflein.gov.uk/en/site/94432/details/",
           "https://www.roman-britain.co.uk/places/moridunum/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amphitheatre_Moridunum_-_geograph.org.uk_-_777546.jpg?width=800",
+        "image_credit": "Carmarthen Roman Amphitheatre, Moridunum · Wikimedia Commons",
+        "image_alt": "Site of the Roman amphitheatre at Moridunum, Carmarthen"
       }
     },
     {
@@ -37106,7 +37145,10 @@
           "https://en.wikipedia.org/wiki/Caersws_Roman_Forts",
           "https://www.britainexpress.com/attractions.htm?attraction=809"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Fort_-_but_hard_to_see%5E_-_geograph.org.uk_-_1294237.jpg?width=800",
+        "image_credit": "Site of the Roman fort at Caersws · Wikimedia Commons",
+        "image_alt": "Earthwork platform of the Roman fort at Caersws, Powys"
       }
     },
     {
@@ -37191,7 +37233,10 @@
           "https://en.wikipedia.org/wiki/Nidum",
           "https://www.roman-britain.co.uk/places/nidum/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Remains_of_Roman_Fort_of_Nidum_(Neath)_-_geograph.org.uk_-_202248.jpg?width=800",
+        "image_credit": "Remains of the Roman fort of Nidum, Neath · Wikimedia Commons",
+        "image_alt": "Excavated remains of the Roman fort of Nidum at Neath"
       }
     },
     {
@@ -37247,7 +37292,10 @@
           "https://en.wikipedia.org/wiki/Mamucium",
           "https://www.roman-britain.co.uk/places/mamucium/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Romeinse_ruines_(2).jpg?width=800",
+        "image_credit": "Mamucium Roman fort remains, Castlefield, Manchester · Wikimedia Commons",
+        "image_alt": "Reconstructed/excavated wall of the Mamucium Roman fort, Castlefield"
       }
     },
     {
@@ -37274,7 +37322,10 @@
           "https://en.wikipedia.org/wiki/Bremetennacum",
           "https://www.historyhit.com/locations/roman-ribchester/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Relics_Ribchester_01.JPG?width=800",
+        "image_credit": "Roman-era finds from Bremetennacum, Ribchester Roman Museum · Wikimedia Commons",
+        "image_alt": "Roman finds from Bremetennacum displayed at Ribchester Roman Museum"
       }
     },
     {
@@ -38579,7 +38630,10 @@
           "https://vici.org/vici/36147/",
           "https://madainproject.com/timgad"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruines%20romaines%20de%20Timgad.Temple%20du%20G%C3%A9nie%20de%20la%20Colonie.jpg?width=800",
+        "image_credit": "Temple of the Genius of the Colony, Timgad · Wikimedia Commons",
+        "image_alt": "Ruins of the Temple of the Genius of the Colony at Timgad"
       }
     },
     {
