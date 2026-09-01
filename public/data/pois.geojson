@@ -17005,7 +17005,10 @@
           "https://www.roamintheempire.com/index.php/2020/10/21/paestum-ii/",
           "https://izi.travel/en/2515-comitium-curia-temple-peace/en"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Capitolium%20(Paestum).jpg?width=800",
+        "image_credit": "Photo via Wikimedia Commons, Category:Capitolium (Paestum)",
+        "image_alt": "Podium of the Roman temple on the north side of the Paestum forum, historically labelled 'Capitolium' but now identified by scholars as the Temple of Mens Bona (its single cella rules out a true Capitoline-triad Capitolium)"
       }
     },
     {
@@ -19614,6 +19617,9 @@
           "https://madainproject.com/temple_of_sibyl_(tivoli)"
         ],
         "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tempio%20della%20Sibilla%2010.JPG?width=800",
+        "image_credit": "Photo via Wikimedia Commons, Category:Temple of the Sibyl (Tivoli)",
+        "image_alt": "The round Temple of the Sibyl (Tempio della Sibilla) on the acropolis of Tivoli, overlooking the Aniene gorge",
         "ancient_sources": [
           {
             "author": "Horace",
@@ -20316,7 +20322,10 @@
           "https://www.around-naples.com/en/archaeological-excavations-of-cumae.html",
           "https://madainproject.com/archaeological_site_of_ancient_cuma"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tempio%20di%20Giove%20(Cuma).jpg?width=800",
+        "image_credit": "Photo via Wikimedia Commons, Category:Temple of Jupiter (Cumae)",
+        "image_alt": "Remains of the so-called Temple of Jupiter on the highest terrace of the acropolis of Cumae, later converted into a Christian basilica"
       }
     },
     {
@@ -21108,7 +21117,10 @@
           "https://oxfordre.com/classics/classics/view/10.1093/acrefore/9780199381135.001.0001/acrefore-9780199381135-e-3794",
           "https://www.treccani.it/enciclopedia/luni_res-36f790db-8c62-11dc-8e9d-0016357eee51_(Enciclopedia-dell'-Arte-Antica)/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Luna%20Lunatempel%201.jpg?width=800",
+        "image_credit": "Photo via Wikimedia Commons, Category:Luni Antica",
+        "image_alt": "Remains of the podium and portico courtyard of the great forum temple at ancient Luna (Luni), generally identified as the city's Capitolium"
       }
     },
     {
@@ -22829,7 +22841,10 @@
           "https://www.livius.org/articles/place/narbo-narbonne/",
           "https://fr.wikipedia.org/wiki/Narbo_Martius"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Narbonne%20Capitole%20antique%20Franck%20Devedjian%202019%20ok.jpg?width=800",
+        "image_credit": "Photo by Franck Devedjian (2019), via Wikimedia Commons, Category:Monuments historiques in Narbonne",
+        "image_alt": "Excavated remains of the ancient Capitolium (Capitole antique) of Narbo Martius, Narbonne"
       }
     },
     {
