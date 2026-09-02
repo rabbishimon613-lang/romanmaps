@@ -40378,6 +40378,731 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5386,
+          41.8358
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_rabirii",
+        "category": "tomb",
+        "name_latin": "Sepulcrum Rabiriorum",
+        "name_english": "Tomb of the Rabirii",
+        "province": "Italia",
+        "modern_location": "Via Appia Antica, near the 4th mile, Rome, Italy",
+        "built": -30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A freedman named Gaius Rabirius Hermodorus raised this temple-fronted tomb beside the Appian Way for himself, his wife Rabiria Demaris, and a priestess of Isis named Usia Prima. Its concrete and flint core rose over twelve metres, faced in travertine carved with three lifelike portrait busts more than nine metres wide. Built in the early Augustan years, it stood among the road's grandest freedman monuments, a former slave's answer to noble ancestry.",
+        "sources": [
+          "https://www.livius.org/pictures/italy/rome/rome-via_appia/rome-via-appia-026r-tomb-of-the-rabirii/",
+          "https://www.wikidata.org/wiki/Q110838877"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grave_monument_of_Gaius_Rabirius_Hermodorus,_Rabiria_Demaris,_and_Usia_Prima.jpg?width=800",
+        "image_credit": "Grave relief from the Tomb of the Rabirii, Via Appia, Rome, Wikimedia Commons",
+        "image_alt": "Marble relief portrait busts of Gaius Rabirius Hermodorus, Rabiria Demaris, and Usia Prima"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.536342,
+          41.838024
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_hilarus_fuscus",
+        "category": "tomb",
+        "name_latin": "Sepulcrum Hilari Fusci",
+        "name_english": "Tomb of Hilarus Fuscus",
+        "province": "Italia",
+        "modern_location": "Via Appia Antica, near the 4th mile, Rome, Italy",
+        "built": -30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Carved portraits of a freedman's family once looked out from this tomb's facade toward every traveler entering Rome from the south. Hairstyles on the female figures date the monument to the last years of the Republic, right as Augustus was consolidating power. An inscription once named the family, though it vanished from the ruin sometime in the late twentieth century. The surviving reliefs are plaster copies; the originals now sit in the Baths of Diocletian museum.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tomb_of_Hilarus_Fuscus",
+          "https://www.livius.org/pictures/italy/rome/rome-via_appia/rome-via-appia-020r-tomb-of-hilarius-fuscus/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomb_of_Ilario_Fusco_(P9190021).jpg?width=800",
+        "image_credit": "The Tomb of Hilarus Fuscus on the Via Appia, Rome, Wikimedia Commons",
+        "image_alt": "Ruined brick and travertine tomb facade of Hilarus Fuscus on the Appian Way"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5389,
+          41.835
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_frontispiece",
+        "category": "tomb",
+        "name_latin": "Sepulcrum in forma aediculae \"Frontespizio\"",
+        "name_english": "Tomb of the Frontispiece",
+        "province": "Italia",
+        "modern_location": "Via Appia Antica 219, near the 4th mile, Rome, Italy",
+        "built": -150,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Shaped like a miniature temple, this shrine-form tomb carried a marble pediment centered on a carved rosette above a long relief of four family busts. It stood roughly a hundred metres south of the Rabirii tomb along the same stretch of the Appian Way. No inscription survived to name its owners, only the family portrait clasping hands in the traditional dextrarum iunctio. Built in the second century BCE, it ranks among the oldest funerary monuments on this stretch of road.",
+        "sources": [
+          "https://madainproject.com/list_of_tombs_along_the_appian_way",
+          "https://www.parcoarcheologicoappiaantica.it/luoghi/via-appia-antica/sepolcri-dei-festoni-e-del-frontespizio/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5306,
+          41.8496
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_servilii",
+        "category": "tomb",
+        "name_latin": "Sepulcrum Serviliorum",
+        "name_english": "Tomb of the Servilii",
+        "province": "Italia",
+        "modern_location": "Via Appia Antica, near the Circus of Maxentius, Rome, Italy",
+        "built": 1,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A square concrete base topped by a drum of burial niches marked this family tomb of the Servilii on the Appian Way long before Maxentius built his circus around it two centuries later. Its funeral chamber still keeps traces of decorative stucco inside. Inscriptions and fragments naming the family surfaced in 1808 and were placed on public display at state expense. Raised in the Augustan era, it predates every later structure built around it.",
+        "sources": [
+          "https://commons.wikimedia.org/wiki/Category:Tomba_dei_Servilii",
+          "https://madainproject.com/list_of_tombs_along_the_appian_way"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5465,
+          41.8293
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_pyramid_via_appia",
+        "category": "tomb",
+        "name_latin": "Sepulcrum pyramidale Viae Appiae",
+        "name_english": "Pyramid Tomb of the Appian Way",
+        "province": "Italia",
+        "modern_location": "Via Appia Antica, Rome, Italy",
+        "built": -280,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A concrete pyramid core rose over this tomb only a generation or two after the Appian Way itself was laid down in 312 BCE, making it one of the oldest funerary monuments standing on the road. Its burial chamber later became a wheel of cheese-aging storage for a medieval farmhouse and a fortress outpost for the counts of Tusculum. By 117 CE it had already stood for roughly four centuries, its original marble facing long since gone. Only the masonry skeleton survives today.",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q114773163",
+          "https://commons.wikimedia.org/wiki/Category:Pyramid_of_via_Appia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.53297,
+          41.84117
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_seneca",
+        "category": "tomb",
+        "name_latin": "Sepulcrum Senecae (traditio)",
+        "name_english": "Tomb of Seneca",
+        "province": "Italia",
+        "modern_location": "Via Appia Antica, near the 4th mile, Rome, Italy",
+        "built": 65,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A single brick pillar, stripped of every marble fragment once set into it, marks the traditional site where the Stoic philosopher Seneca kept a villa at the fourth milestone of the Appian Way. Nero ordered his old tutor to take his own life here in 65 CE after implicating him in a conspiracy. Local tradition fixed his tomb to this spot, though the modest brick core reflects the plain style Seneca preached rather than senatorial grandeur. Half a century later the pillar still stood beside the road.",
+        "sources": [
+          "https://madainproject.com/list_of_tombs_along_the_appian_way",
+          "https://www.loquis.com/en/loquis/146744/Seneca+and+his+Mausoleum"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.552,
+          41.828
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_tiberius_claudius_secundus",
+        "category": "tomb",
+        "name_latin": "Sepulcrum Tiberii Claudii Secundi Philippiani",
+        "name_english": "Tomb of Tiberius Claudius Secundus Philippianus",
+        "province": "Italia",
+        "modern_location": "Via Appia Antica, near the 5th mile, Rome, Italy",
+        "built": -10,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A round drum tomb held the ashes of Tiberius Claudius Secundus Philippianus, his wife Flavia Irene, and their two children in a travertine-clad underground chamber lined with niches for cinerary urns. Built in the late Republican or early Augustan years, its subterranean vault survived largely intact beneath the ruined superstructure above. The family name marks it as belonging to a household of imperial freedmen, common among the Appian Way's more modest funerary monuments. It still stood, half-buried, in 117 CE.",
+        "sources": [
+          "https://evendo.com/locations/italy/via-francigena/attraction/sepolcro-di-tiberio-claudio-secondo-filippiano",
+          "https://madainproject.com/list_of_tombs_along_the_appian_way"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.538,
+          41.836
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_sons_of_sextus_pompeius",
+        "category": "tomb",
+        "name_latin": "Sepulcrum filiorum Sexti Pompei Iusti",
+        "name_english": "Tomb of the Children of Sextus Pompeius Iustus",
+        "province": "Italia",
+        "modern_location": "Via Appia Antica, near the 4th mile, Rome, Italy",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A grieving father named Sextus Pompeius Iustus built this brick and marble tomb for his two children, Pompeia Eleutheris and Sextus Pompeius, who died before him. Eight elegiac couplets carved across the facade addressed passersby directly, mourning lost potential rather than celebrating rank or office. Archaeologists later reassembled the long inscription from thirty-five broken fragments. Raised in the first century CE, it stood a century later as one of the Appian Way's rare purely personal, non-aristocratic epitaphs.",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q97623608",
+          "https://vici.org/vici/14977/?lang=en"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.537,
+          41.837
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_quintus_apuleius",
+        "category": "tomb",
+        "name_latin": "Sepulcrum Quinti Apuleii",
+        "name_english": "Tomb of Quintus Apuleius",
+        "province": "Italia",
+        "modern_location": "Via Appia Antica, near the 4th mile, Rome, Italy",
+        "built": 20,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A rectangular chamber under a semicircular vaulted roof held the remains of Quintus Apuleius, one of the comparatively few tomb owners on the Appian Way whose name survives on the stone itself. Built in the early first century CE, the tomb ranked among the more modest brick monuments crowding this stretch of road outside Rome. Its inscription gave later travelers a name to attach to an otherwise anonymous ruin. It was already a century old by Trajan's death in 117.",
+        "sources": [
+          "https://madainproject.com/list_of_tombs_along_the_appian_way"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.524,
+          41.858
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_annia_regilla",
+        "category": "tomb",
+        "name_latin": "Sepulcrum Anniae Regillae",
+        "name_english": "Tomb of Annia Regilla",
+        "province": "Italia",
+        "modern_location": "Caffarella Park, near the Via Appia, Rome, Italy",
+        "built": 161,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The Greek senator and sophist Herodes Atticus built this brick cenotaph for his wife Annia Regilla after her death in 160 CE, on land the couple owned beside the Appian Way. For centuries visitors mistook the building for a pagan temple to a minor god called Rediculus, until scholars reidentified its true purpose. Its coffered brick vaulting still ranks among the best-preserved of its kind in Rome. It did not yet exist in 117 CE, rising more than four decades after Trajan's death.",
+        "sources": [
+          "https://www.italia.it/en/lazio/rome/sepulchral-monument-of-annia-regilla",
+          "https://www.turismoroma.it/en/places/sepolcro-di-annia-regilla-gia-detto-tempio-del-dio-redicolo"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.943,
+          32.706
+        ]
+      },
+      "properties": {
+        "id": "poi_mausoleum_ptolemais_royal",
+        "category": "mausoleum",
+        "name_latin": "Mausoleum Ptolemaidis",
+        "name_english": "Royal Mausoleum of Ptolemais",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Western quarry necropolis, Tolmeita, Libya",
+        "built": -150,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A tower tomb roughly twelve metres square rose over fourteen metres above the western quarries of Ptolemais, taller than any other funerary monument in Cyrenaica. Locals came to call it Gasr al-Phira'oun, Pharaoh's Castle, long after its Hellenistic builders were forgotten. European travelers began recording the ruin in the eighteenth century, struck by its scale and lonely survival among the quarry cuttings. Raised around 150 BCE, it had already stood for nearly three centuries when Ptolemais fell under Roman provincial rule.",
+        "sources": [
+          "https://www.academia.edu/5980636/The_Mausoleum_at_Ptolemais_in_Travellers_Accounts_ArcheologiaWarsz_58_2007_p_75_88",
+          "https://en.wikipedia.org/wiki/Ptolemais,_Cyrenaica"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.958,
+          32.708
+        ]
+      },
+      "properties": {
+        "id": "poi_necropolis_ptolemais",
+        "category": "necropolis",
+        "name_latin": "Necropolis Ptolemaidis",
+        "name_english": "Ptolemais Necropolis",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Eastern and western quarries around Tolmeita, Libya",
+        "built": -300,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Ancient quarrymen at Ptolemais cut stone for the city's walls and buildings, then generations of families cut tombs into the same abandoned rock faces. Surveys have recorded roughly four hundred burial structures ringing the city, including one hundred forty-nine rock-cut chamber tombs mapped in a single 2009 study. Tower tombs, cist graves, and carved sarcophagi sit alongside the chamber tombs, spanning Hellenistic through Roman use. Funerary inscriptions found here name Libyan, Greek, Roman, and Jewish residents of the city.",
+        "sources": [
+          "https://www.gju.edu.jo/sites/default/files/School%20of%20Architecture%20and%20Built%20Environment/Department%20of%20Architecture%20and%20Interior%20Architecture/facultypublications/art_00362_weber_berger_libya_antiqua_2016.pdf",
+          "https://en.wikipedia.org/wiki/Ptolemais,_Cyrenaica"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.454,
+          30.334
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_turkmaniyya",
+        "category": "tomb",
+        "name_latin": "Sepulcrum Turkmaniyyae",
+        "name_english": "Turkmaniyya Tomb",
+        "province": "Arabia Petraea",
+        "modern_location": "Petra, near the Back Exit Road, Jordan",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The longest Nabataean inscription ever found at Petra runs across this tomb's facade, invoking the god Dushara to watch over the graves, chambers, gardens, dining hall, and cisterns of the estate it once described. A large outer hall likely served as a dining room, opening onto a narrower passage leading to the burial hall behind. Off the main tourist paths, it survived largely undisturbed. Roughly a century old when Trajan died in 117 CE, it remained a working part of Petra's elite necropolis.",
+        "sources": [
+          "http://ascs.org.au/news/ascs32/Wadeson.pdf",
+          "https://madainproject.com/tombs_in_petra"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4448,
+          30.3216
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_renaissance_petra",
+        "category": "tomb",
+        "name_latin": "Sepulcrum \"Renascentiae\" (nomen recens)",
+        "name_english": "Renaissance Tomb",
+        "province": "Arabia Petraea",
+        "modern_location": "Wadi al-Farasa, Petra, Jordan",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Nineteenth-century European visitors named this tomb for the six ornamental jars and urn-topped archivolt crowning its eight-metre facade, which reminded them of Italian Renaissance flourishes rather than anything Nabataean. Carved into red sandstone in Wadi al-Farasa, its triangular pediment rests on an entablature framed by engaged corner columns with Nabataean capitals. It faces the Petra Royal Tombs across the valley but stands as an entirely separate monument. Cut around the turn of the second century CE, it had settled into the cliff face well before 117.",
+        "sources": [
+          "https://universes.art/en/art-destinations/jordan/petra/wadi-farasa/renaissance-tomb",
+          "https://www.visitpetra.jo/en/Location/133"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Petra_Renaissance_Tomb_1879.jpg?width=800",
+        "image_credit": "The Renaissance Tomb, Wadi al-Farasa, Petra, Wikimedia Commons",
+        "image_alt": "Rock-cut facade of the Renaissance Tomb in Wadi al-Farasa, Petra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.44458,
+          30.322258
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_broken_pediment",
+        "category": "tomb",
+        "name_latin": "Sepulcrum fastigii fracti",
+        "name_english": "Broken Pediment Tomb",
+        "province": "Arabia Petraea",
+        "modern_location": "Wadi al-Farasa, Petra, Jordan",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Nabataean masons split this tomb's pediment deliberately, leaving its centre cut away so the two triangular halves stand apart, a style borrowed from Ptolemaic Alexandria. Behind the nearly square facade a chamber roughly eight and a half by ten metres holds a two-storey colonnade of engaged pilasters lining one wall. Three burial niches were cut into the back of that colonnade for the family interred there. Carved in the first century CE, it had already served as a tomb for decades by the time Trajan died.",
+        "sources": [
+          "https://universes.art/en/art-destinations/jordan/petra/wadi-farasa/broken-pediment-tomb",
+          "https://vici.org/vici/31572/?lang=en"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/20100926_petra175.JPG?width=800",
+        "image_credit": "The Broken Pediment Tomb, Wadi al-Farasa, Petra, Wikimedia Commons",
+        "image_alt": "Rock-cut facade of the Broken Pediment Tomb with its split triangular pediment"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.449074,
+          30.324465
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_uneishu",
+        "category": "tomb",
+        "name_latin": "Sepulcrum Uneishu",
+        "name_english": "Tomb of Uneishu",
+        "province": "Arabia Petraea",
+        "modern_location": "Street of Facades, Petra, Jordan",
+        "built": 76,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "An inscription found near this tomb preserves the single name Uneishu, believed to be the brother and chief minister of the Nabataean queen Shaqilath II. Its tall facade rises above the Street of Facades on the western slope of Jabal al-Khubtha, framed by two columns beneath a double cornice. Historians date the tomb to around 76 CE, built for a man who stood at the center of Nabataean royal power under King Malichus II. It had stood for over forty years by the time of Trajan's death.",
+        "sources": [
+          "https://madainproject.com/tombs_in_petra",
+          "https://www.researchgate.net/figure/Plans-of-the-Tomb-of-Uneishu-and-the-Lion-Triclinium-on-Jebel-ad---Deir-showing_fig9_277310505"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aneisho_Tomb_in_Petra,_Jordan._(5661296793).jpg?width=800",
+        "image_credit": "The Tomb of Uneishu on the Street of Facades, Petra, Wikimedia Commons",
+        "image_alt": "Rock-cut facade of the Tomb of Uneishu above the Street of Facades in Petra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4438,
+          30.3283
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_sextus_florentinus",
+        "category": "tomb",
+        "name_latin": "Sepulcrum Sexti Florentini",
+        "name_english": "Tomb of Sextius Florentinus",
+        "province": "Arabia Petraea",
+        "modern_location": "Petra, near the Royal Tombs, Jordan",
+        "built": 128,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Sextius Florentinus governed the Roman province of Arabia under Hadrian, and when he died around 129 CE his son honored his final request to be buried at Petra rather than carried home to Rome. A Latin inscription above the doorway names the son as builder, an unusual Roman insertion into a facade otherwise carved in purely Nabataean style. The tomb rose near the city's Royal Tombs, built between roughly 126 and 130 CE. It postdates the 117 CE snapshot by about a decade, since Florentinus only became governor in 127.",
+        "sources": [
+          "https://www.livius.org/pictures/jordan/petra/petra-tomb-of-sextius-florentinus/tomb-of-sextius-florentinus/",
+          "https://en.wikipedia.org/wiki/Sextius_Florentinus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Petra_Tomb_of_Sextus_Florentinus_2086.jpg?width=800",
+        "image_credit": "The Tomb of Sextius Florentinus at Petra, Wikimedia Commons",
+        "image_alt": "Rock-cut facade of the Tomb of Sextius Florentinus at Petra with its Latin inscription"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.431389,
+          30.317223
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_snake_monument_petra",
+        "category": "tomb",
+        "name_latin": "Monumentum Anguis",
+        "name_english": "Snake Monument",
+        "province": "Arabia Petraea",
+        "modern_location": "Ath-Thughrah, south of Petra, Jordan",
+        "built": -190,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A carved snake coils across the top of this cube-shaped block tomb south of the city center, guarding it in a Nabataean religious tradition where serpents symbolized protection. Local legend held the snake would strike any grave robber who came near. Cut in the early second century BCE, it ranks among the earliest surviving sculptural monuments in Petra, related in style to the Djinn Blocks near Bab al-Siq. It sat along the caravan route entering Petra from the Negev and Sinai, already three centuries old by 117 CE.",
+        "sources": [
+          "https://www.visitpetra.jo/en/Location/68",
+          "https://en.wikipedia.org/wiki/Ath_Thughrah"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.27419,
+          49.99211
+        ]
+      },
+      "properties": {
+        "id": "poi_mausoleum_drususstein",
+        "category": "mausoleum",
+        "name_latin": "Cenotaphium Drusi",
+        "name_english": "Cenotaph of Drusus",
+        "province": "Germania Superior",
+        "modern_location": "Citadel of Mainz, Germany",
+        "built": -9,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman soldiers stationed at Mogontiacum built this nearly twenty-metre masonry tower in 9 BCE to honor their general Drusus, who died of injuries from a fall while campaigning beyond the Rhine. His body was carried to Rome for burial, but the legions raised this empty monument on the spot where they had first mourned him. Originally cased in marble, it anchored an annual memorial ceremony and the imperial cult at the fortress. Alongside the Igel Column, it remains one of only two Roman funerary monuments still standing above ground north of the Alps.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Drususstein",
+          "https://www.livius.org/articles/place/mogontiacum-mainz/mogontiacum-mainz-photos/mainz-drususstein/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Drususstein_Gesamt_2011.jpg?width=800",
+        "image_credit": "The Drususstein, cenotaph of Drusus, in the citadel of Mainz, Wikimedia Commons",
+        "image_alt": "Tall masonry tower of the Drususstein cenotaph within the Mainz citadel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8161,
+          45.755
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_turpio_lyon",
+        "category": "tomb",
+        "name_latin": "Sepulcrum Turpionis",
+        "name_english": "Tomb of Turpio",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Place Eugene-Wernert, Lyon, France",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Wealthy families of Roman Lugdunum buried their dead along the Aquitaine road at Trion, where this limestone mausoleum survives as the best-preserved of the group. Railway workers uncovered it and nine neighboring tombs in 1885 during construction through the old necropolis. Authorities dismantled and reassembled five of them, this one included, at Place Eugene-Wernert to save them from destruction. Built in the first century CE, it commemorated a Gallo-Roman notable of Lugdunum named Turpio.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Tombeau_de_Turpio",
+          "https://www.historyhit.com/locations/the-lyon-gallo-roman-tombs/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lyon_-_Mausolee_de_Trion_-_Satrius.JPG?width=800",
+        "image_credit": "Roman mausoleum from the Trion necropolis, Place Eugene-Wernert, Lyon, Wikimedia Commons",
+        "image_alt": "Reassembled stone Roman mausoleum from the Trion necropolis in Lyon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8162,
+          45.755
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_satrius_lyon",
+        "category": "tomb",
+        "name_latin": "Sepulcrum Satrii",
+        "name_english": "Mausoleum of Satrius",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Place Eugene-Wernert, Lyon, France",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A frieze of decorated discs and carved bull's heads crowns this limestone mausoleum, one of five Roman tombs moved stone by stone from the Trion crossroads necropolis to their present spot in 1885. It commemorated a Lugdunum notable named Satrius, whose descendants would have paid for such a monument to keep his memory before the traveling public. Trion lay just outside the walls of Roman Lyon, along the road toward Aquitaine, where custom forbade burying the dead within city limits. Built in the first century CE, it stood as one of the necropolis's grandest markers.",
+        "sources": [
+          "https://www.lyonhistorique.fr/eugene-wernert-mausolees/",
+          "https://www.historyhit.com/locations/the-lyon-gallo-roman-tombs/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.816,
+          45.7551
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_julia_valerius_severianus_lyon",
+        "category": "tomb",
+        "name_latin": "Sepulcrum Iuliae, Quinti Valerii et Iulii Severiani",
+        "name_english": "Triple Tomb of Julia, Valerius and Severianus",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Place Eugene-Wernert, Lyon, France",
+        "built": 60,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Three tombs stand joined together at Trion, built side by side for a woman named Julia, a man named Quintus Valerius, and Julius Severianus, likely members of a single Gallo-Roman family. Discovered in 1885 during railway excavation at the old crossroads necropolis outside Lugdunum, the triple monument was dismantled and rebuilt at Place Eugene-Wernert. French authorities classified the group as a historic monument in 1905. Raised in the first century CE, it reflected a funerary custom reserved for the city's most prominent families.",
+        "sources": [
+          "https://www.patrimoine-lyon.org/secteur_unesco/fourviere/saint-irenee/les-3-tombeaux-du-1er-siecle",
+          "https://tribunedelyon.fr/patrimoine/histoire-necropoles-trion-lyon/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.872,
+          45.526
+        ]
+      },
+      "properties": {
+        "id": "poi_mausoleum_saint_romain_en_gal",
+        "category": "mausoleum",
+        "name_latin": "Mausoleum ad Viennam",
+        "name_english": "Saint-Romain-en-Gal Mausoleum",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Saint-Romain-en-Gal, near Vienne, France",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Excavators announced this Roman mound mausoleum in 2025 as the best-preserved of only eighteen such monuments known in France, built in the style of the Mausoleum of Augustus in Rome. Its ring wall spans fifteen metres across and would have stood over six metres tall, visible to anyone arriving by the Rhone at the colony of Vienne. Whoever lay inside has not been identified, but the scale of the tomb marks an aristocrat of real standing in Roman Gaul. Raised around 50 CE, it had watched the river traffic for nearly seventy years by the time Trajan died.",
+        "sources": [
+          "https://www.finestresullarte.info/en/archaeology/france-roman-mausoleum-discovered-near-lyon-exceptional-according-to-archaeologists",
+          "https://www.thehistoryblog.com/archives/73975"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.8245,
+          50.9386
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_weiden_cologne",
+        "category": "tomb",
+        "name_latin": "Sepulcrum Villae Weiden",
+        "name_english": "Weiden Roman Burial Chamber",
+        "province": "Germania Inferior",
+        "modern_location": "Cologne-Weiden, Germany",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A wealthy family from Roman Colonia Agrippina built this barrel-vaulted burial chamber beside the road to Belgica, one of the best-preserved tombs of its kind north of the Alps. Farm workers rediscovered it by accident in 1843 while digging foundations, still holding grave goods after seventeen centuries underground. It served the family from the middle of the second century through the fourth. Construction dates to roughly 150 CE, more than three decades after Trajan's death, so it did not yet exist at the 117 CE mark.",
+        "sources": [
+          "https://www.historyhit.com/locations/weiden-roman-burial-chamber/",
+          "https://www.roemisch-germanisches-museum.de/Roemische-Grabkammer-Koeln-Weiden"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.377,
+          51.811
+        ]
+      },
+      "properties": {
+        "id": "poi_mausoleum_rothamsted",
+        "category": "mausoleum",
+        "name_latin": "Mausoleum Rothamstedense",
+        "name_english": "Rothamsted Roman Mausoleum",
+        "province": "Britannia",
+        "modern_location": "Harpenden, Hertfordshire, England",
+        "built": 137,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A circular mausoleum roughly five and a half metres across once stood inside a walled precinct at Rothamsted, built for a single high-status Romano-British family. Excavators in 1936 and 1937 uncovered its flint foundations and two pilasters that likely flanked the entrance doorway, along with grave goods dating construction to the second quarter of the second century CE. Archaeologist Anthony Lowther first identified the ruin, now recognized as a rare surviving example of Romano-British elite funerary architecture. It rose one to two decades after Trajan's death, so it postdates the 117 CE snapshot.",
+        "sources": [
+          "https://www.stalbanshistory.org/archaeology/the-societys-contribution-to-archaeology/a-roman-style-mausoleum-at-rothamsted",
+          "https://ancientmonuments.uk/116585-rothamsted-romano-british-cemetery-harpenden-rural"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0937,
+          51.4954
+        ]
+      },
+      "properties": {
+        "id": "poi_mausoleum_southwark_london",
+        "category": "mausoleum",
+        "name_latin": "Mausoleum Londinii",
+        "name_english": "Southwark Roman Mausoleum",
+        "province": "Britannia",
+        "modern_location": "The Liberty of Southwark, London, England",
+        "built": 190,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Archaeologists working near Borough Market in 2022 uncovered the most intact Roman mausoleum ever found in Britain, its interior floor and mosaic still standing on a raised platform where burials once rested. More than eighty surrounding graves held copper bracelets and glass beads belonging to the Roman community of Southwark. The largest mosaic panel dates to the late second or early third century CE, placing the mausoleum's main construction phase after that point. It had not yet been built when Trajan died in 117 CE.",
+        "sources": [
+          "https://www.mola.org.uk/discoveries/news/first-its-kind-roman-mausoleum-unearthed-london-development-site",
+          "https://www.livescience.com/archaeology/romans/completely-unique-roman-mausoleum-discovered-in-rubble-of-london-building-site"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
