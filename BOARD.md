@@ -1269,7 +1269,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       Twitter card upgraded to `summary_large_image` on both routes now that a card image always
       exists. Verified against the built production server: both routes return real 200 image/png
       responses with the correct layout.
-- [ ] `[05-P2-6]` **`i18n`** `polish` — `strings.ts` scaffold; English + Italian.
+- [~] `[05-P2-6]` **`i18n`** `polish` — `strings.ts` scaffold; English + Italian. — claimed by
+      cloud shift (scheduled), 2026-09-02 00:15.
 - [x] `[04-P2-9]` **`manifest`** `polish` — Done 2026-08-21 by cloud shift 41. `app/manifest.ts`
       + `app/icon.tsx`/`apple-icon.tsx` (Next.js file convention, 32px/180px) + two route
       handlers `app/icon-192.png`, `app/icon-512.png` for the manifest's PWA sizes, each with
