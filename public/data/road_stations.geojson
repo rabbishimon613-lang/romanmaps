@@ -12760,6 +12760,290 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.367302,
+          42.119115
+        ]
+      },
+      "properties": {
+        "id": "station_ad_vacanas",
+        "category": "mansio",
+        "name": "Ad Vacanas (Baccanae)",
+        "road": "Via Amerina",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Travelers heading north from Rome reached this posting station in the Baccano valley at the 21st milestone, where the road split: the Via Cassia carried on into Etruria while the Via Amerina turned off toward Falerii and Umbria. Excavations at Baccano uncovered a paved stretch of the ancient road alongside remains of the mansio itself. The station sat inside an extinct volcanic crater, its rim still visible in the surrounding farmland.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "https://www.parchilazio.it/schede-344-antica_stazione_di_posta_di_baccano",
+          "https://www.lazioturismo.it/asp/scheda_archeo.asp?id=85"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.347616,
+          42.242991
+        ]
+      },
+      "properties": {
+        "id": "station_nepet",
+        "category": "vicus",
+        "name": "Nepet (Nepi)",
+        "road": "Via Amerina",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Nepi was the first Faliscan town the Via Amerina reached, an Etruscan hill settlement Rome turned into a Latin colony in the fourth century BCE. The road hit it nine Roman miles beyond the Baccano junction, and its catacombs and Roman-era aqueduct still trace the ancient layout. Deep gorges wrap three sides of the town, the same natural defenses that made it worth holding.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "https://pleiades.stoa.org/places/413224",
+          "https://it.wikipedia.org/wiki/Via_Amerina"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aqueduct%20of%20Nepi%2C%20Italy.jpg?width=800",
+        "image_credit": "Roman aqueduct at Nepi · Wikimedia Commons",
+        "image_alt": "Ancient Roman aqueduct arches at Nepi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.355625,
+          42.277952
+        ]
+      },
+      "properties": {
+        "id": "station_tre_ponti_bridge",
+        "category": "milestone",
+        "name": "Ponte Romano dei Tre Ponti",
+        "road": "Via Amerina",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A short way north of Nepi, the Via Amerina crossed the Fosso dei Tre Ponti on a Roman bridge that still carries the deep wheel ruts of the ancient roadbed. Faliscan and Roman-era tombs cut into the tufa cliffs line both banks of the stream. It's one of the best-preserved single-span crossings surviving anywhere on the road.",
+        "sources": [
+          "https://www.museociviconepi.it/monumenti/la-via-amerina-e-la-necropoli-di-tre-ponti/",
+          "https://www.iluoghidelsilenzio.it/ponte-romano-sul-fosso-dei-tre-ponti-antica-via-amerina-fabrica-di-roma-vt/",
+          "https://vici.org/vici/11742/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.359533,
+          42.299722
+        ]
+      },
+      "properties": {
+        "id": "station_falerii_novi",
+        "category": "vicus",
+        "name": "Falerii Novi",
+        "road": "Via Amerina",
+        "distance_from_previous_mp": 5,
+        "identified": true,
+        "notes": "Rome resettled the defeated Falisci here in 241 BCE after razing their hilltop capital, and the new town rose along the road with its own forum, theater, and baths. Its walls, still standing nearly to full height, enclose fifty hectares that no later town ever built over. The Porta di Giove gate ranks among the best-preserved Republican-era city gates in Italy.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "https://en.wikipedia.org/wiki/Falerii_Novi",
+          "https://it.wikipedia.org/wiki/Via_Amerina"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Falerii%20novi.JPG?width=800",
+        "image_credit": "Porta di Giove, Falerii Novi · Wikimedia Commons",
+        "image_alt": "Roman city gate and walls of Falerii Novi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4101,
+          42.2962
+        ]
+      },
+      "properties": {
+        "id": "station_falerii_veteres",
+        "category": "vicus",
+        "name": "Falerii Veteres (Civita Castellana)",
+        "road": "Via Amerina",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "The old Faliscan capital lost its population when Rome forced the move to Falerii Novi in 241 BCE, but the site didn't go empty. The sanctuary of Juno Curitis in the valley below kept drawing worshippers well into the imperial period, and a small settlement lingered on the tufa plateau that later became Civita Castellana, just off the Via Amerina's course.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Falerii_Veteres",
+          "https://www.archeologiaviva.it/2979/falerii-veteres-e-gli-splendidi-guerrieri-dei-sassi-caduti/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Civita%20Castellana%20-%20Forte%20Sangallo%202.JPG?width=800",
+        "image_credit": "Forte Sangallo, built on the ancient Falerii Veteres acropolis · Wikimedia Commons",
+        "image_alt": "Fortress standing on the plateau of ancient Falerii Veteres"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.35639,
+          42.34583
+        ]
+      },
+      "properties": {
+        "id": "station_fescennium",
+        "category": "vicus",
+        "name": "Fescennium",
+        "road": "Via Amerina",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "One of the Falisci's principal towns stood on the plateau just north of modern Corchiano, inside the branch of the Via Amerina that ran through Faliscan territory. Ancient writers credited the place as the source of the coarse fescennine verses sung at Roman weddings and harvests. Its ruins remain unexcavated, known mainly through tomb finds in the surrounding ravines.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Fescennium",
+          "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/_Periods/Roman/Archaic/Etruscan/_Texts/DENETR*/8.html"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.299,
+          42.489
+        ]
+      },
+      "properties": {
+        "id": "station_castellum_amerinum",
+        "category": "statio",
+        "name": "Castellum Amerinum",
+        "road": "Via Amerina",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "Twelve Roman miles past Falerii, the road reached a fortified landing on the Tiber that handled traffic and goods bound upstream toward Umbria. The Tabula Peutingeriana marks it as Castellum Amerinum, a walled post between Falerii Novi and Ameria, but which riverside village holds the actual remains is still argued over. Bassano in Teverina and the Palazzolo district of Vasanello both claim the identification.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "https://www.roma.com/vicino-roma-bassano-in-teverina-centro-di-origine-etrusca-nel-cuore-della-tuscia/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.386423,
+          42.460326
+        ]
+      },
+      "properties": {
+        "id": "station_horta",
+        "category": "vicus",
+        "name": "Horta (Orte)",
+        "road": "Via Amerina",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Orte's Etruscan hilltop, ringed on three sides by river gorges, became a stop on the Via Amerina as the road ran up the Tiber's left bank before crossing over into Umbria. Roman armies had already fought twice near here for control of the crossing against Etruscan Volsinii before the town's fortunes turned to trade and travel. The medieval hill town still occupies the same defensible perch the Romans valued.",
+        "sources": [
+          "https://pleiades.stoa.org/places/413172",
+          "https://it.wikivoyage.org/wiki/Orte"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.413401,
+          42.5571739
+        ]
+      },
+      "properties": {
+        "id": "station_ameria",
+        "category": "vicus",
+        "name": "Ameria (Amelia)",
+        "road": "Via Amerina",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Ameria gave the whole road its name and sat fifty-five Roman miles from Rome by the Peutinger Table's count, the first Umbrian town the Via Amerina reached. Its walls of massive uncemented polygonal blocks, still standing over six meters high in places, predate the Roman conquest by centuries. Cicero defended a local client from here in one of his earliest surviving courtroom speeches.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "https://pleiades.stoa.org/places/413012",
+          "https://www.turismoamelia.it/en/exploring-amelia/the-historical-monuments/the-roman-road/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mura%20amelia.JPG?width=800",
+        "image_credit": "Polygonal walls of Amelia · Wikimedia Commons",
+        "image_alt": "Massive pre-Roman polygonal wall blocks at Amelia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4084,
+          42.7802
+        ]
+      },
+      "properties": {
+        "id": "station_tuder",
+        "category": "vicus",
+        "name": "Tuder (Todi)",
+        "road": "Via Amerina",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "North of Amelia the road climbed to Tuder, an Umbrian hill town Rome elevated to colony status under Augustus as Colonia Julia Fida Tuder. Its temples and forum crowned one of the most commanding sites on the whole route, visible for miles across the Tiber valley. From here the Via Amerina kept climbing north toward Perugia.",
+        "sources": [
+          "https://pleiades.stoa.org/places/",
+          "https://en.wikipedia.org/wiki/Todi"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/06059%20Todi%2C%20Province%20of%20Perugia%2C%20Italy%20-%20panoramio%20(1).jpg?width=800",
+        "image_credit": "View of Todi · Wikimedia Commons",
+        "image_alt": "Hilltop town of Todi in Umbria"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4853735,
+          43.013786
+        ]
+      },
+      "properties": {
+        "id": "station_vettona",
+        "category": "vicus",
+        "name": "Vettona (Bettona)",
+        "road": "Via Amerina",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Bettona sits on a ridge above the Chiascio and Topino rivers, an Umbrian hill town the Via Amerina's northern extension reached on the final stretch toward Perugia. Rome absorbed it as a municipium in the fourth century BCE, and Pliny the Elder later counted it among Umbria's fifteen recognized peoples. Etruscan-style walls still ring the old town center.",
+        "sources": [
+          "https://pleiades.stoa.org/places/413377",
+          "https://en.wikipedia.org/wiki/Bettona"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
