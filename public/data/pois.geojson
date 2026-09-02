@@ -35886,7 +35886,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cipollino_green_of_styra.jpg",
-        "image_credit": "Wikimedia Commons"
+        "image_credit": "Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "36.48",
+            "note": "Names Carystian marble columns as one of the first uses of solid marble columns in a private Roman house (Mamurra's)."
+          }
+        ]
       }
     },
     {
@@ -36023,7 +36031,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carrieres_de_Travertin_de_Tivoli.JPG",
-        "image_credit": "LPLT, Wikimedia Commons"
+        "image_credit": "LPLT, Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Vitruvius",
+            "work": "De Architectura",
+            "ref": "2.7.1-2",
+            "note": "Names Tiburtine stone (lapis Tiburtinus) among Rome's building stones and describes its resistance to loads and weather but vulnerability to fire."
+          }
+        ]
       }
     },
     {
@@ -36050,7 +36066,15 @@
           "https://en.wikipedia.org/wiki/Peperino",
           "https://www.researchgate.net/publication/390796881_The_Mid-Republican_Temples_at_Largo_Argentina_in_Rome_Quarry_Provenience_and_Construction_History_of_Ancient_Roman_Lapis_Albanus_Tuff"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Vitruvius",
+            "work": "De Architectura",
+            "ref": "2.7.1",
+            "note": "Lists the Alban quarries (lapidicinae Albanae) among the soft building stones used around Rome."
+          }
+        ]
       }
     },
     {
@@ -36754,7 +36778,21 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pilate%27s_Palace_Courtyard_at_Caesarea_(3863229334).jpg?width=800",
         "image_credit": "Ian W. Scott, via Flickr / Wikimedia Commons (CC BY 2.0)",
-        "image_alt": "Colonnaded courtyard of Herod's palace (the Roman praetorium) at Caesarea Maritima"
+        "image_alt": "Colonnaded courtyard of Herod's palace (the Roman praetorium) at Caesarea Maritima",
+        "ancient_sources": [
+          {
+            "author": "Josephus",
+            "work": "Jewish War",
+            "ref": "1.408-415",
+            "note": "Describes Herod's building of Caesarea's harbor (Sebastos), palace, and city."
+          },
+          {
+            "author": "Josephus",
+            "work": "Jewish Antiquities",
+            "ref": "15.331-341",
+            "note": "Parallel account of Herod's construction of Caesarea and its harbor."
+          }
+        ]
       }
     },
     {
@@ -37728,7 +37766,15 @@
           "https://en.wikipedia.org/wiki/Isca_Dumnoniorum",
           "https://www.roman-britain.co.uk/places/isca_dumnoniorum/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Ptolemy",
+            "work": "Geography",
+            "ref": "2.3",
+            "note": "Lists Isca, with coordinates, as a town of the Dumnonii in Britain."
+          }
+        ]
       }
     },
     {
@@ -37755,7 +37801,15 @@
           "https://en.wikipedia.org/wiki/Corinium_Dobunnorum",
           "https://www.roman-britain.co.uk/places/corinium/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Ptolemy",
+            "work": "Geography",
+            "ref": "2.3",
+            "note": "Lists Corinium among the towns of the Dobunni."
+          }
+        ]
       }
     },
     {
@@ -37890,7 +37944,15 @@
           "https://en.wikipedia.org/wiki/Viroconium_Cornoviorum",
           "https://www.roman-britain.co.uk/places/viroconivm-cornoviorum-wroxeter-legionary-fort/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Ptolemy",
+            "work": "Geography",
+            "ref": "2.3",
+            "note": "Lists Viroconium among the towns of the Cornovii."
+          }
+        ]
       }
     },
     {
@@ -37917,7 +37979,15 @@
           "https://en.wikipedia.org/wiki/Lindum_Colonia",
           "https://www.roman-britain.co.uk/places/lindum/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Ptolemy",
+            "work": "Geography",
+            "ref": "2.3",
+            "note": "Lists Lindum among the towns of the Coritani (Corieltavi)."
+          }
+        ]
       }
     },
     {
@@ -38007,7 +38077,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Nemesis_Rhamnous.jpg?width=800",
         "image_credit": "Temple of Nemesis at Rhamnous · Wikimedia Commons",
-        "image_alt": "Ruined columns of the Temple of Nemesis at Rhamnous"
+        "image_alt": "Ruined columns of the Temple of Nemesis at Rhamnous",
+        "ancient_sources": [
+          {
+            "author": "Pausanias",
+            "work": "Description of Greece",
+            "ref": "1.33.2-8",
+            "note": "Describes the sanctuary and the cult statue of Nemesis at Rhamnous made from Parian marble."
+          }
+        ]
       }
     },
     {
@@ -38037,7 +38115,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Apollo_Bassae_1982.jpg?width=800",
         "image_credit": "Temple of Apollo Epicurius at Bassae · Wikimedia Commons",
-        "image_alt": "Remote mountain temple of Apollo Epicurius at Bassae"
+        "image_alt": "Remote mountain temple of Apollo Epicurius at Bassae",
+        "ancient_sources": [
+          {
+            "author": "Pausanias",
+            "work": "Description of Greece",
+            "ref": "8.41.7-9",
+            "note": "Describes the temple of Apollo Epikourios at Bassae/Phigaleia and credits its design to Iktinos."
+          }
+        ]
       }
     },
     {
@@ -38067,7 +38153,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Heraion_of_Samos_(Greece),_the_only_standing_column.jpg?width=800",
         "image_credit": "The single standing column of the Heraion of Samos · Wikimedia Commons",
-        "image_alt": "Lone surviving column of the Heraion of Samos amid the sanctuary ruins"
+        "image_alt": "Lone surviving column of the Heraion of Samos amid the sanctuary ruins",
+        "ancient_sources": [
+          {
+            "author": "Herodotus",
+            "work": "Histories",
+            "ref": "3.60",
+            "note": "Names the great Heraion temple as one of the three greatest works of the Samians."
+          }
+        ]
       }
     },
     {
@@ -38124,7 +38218,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Apollo_Ptoon,_a_fountain,_and_nothing_else,_Boeotia,_central_Greece.jpg?width=800",
         "image_credit": "Remains of the Temple of Apollo at the Ptoion sanctuary · Wikimedia Commons",
-        "image_alt": "Foundation stones of the Temple of Apollo on Mount Ptoon"
+        "image_alt": "Foundation stones of the Temple of Apollo on Mount Ptoon",
+        "ancient_sources": [
+          {
+            "author": "Herodotus",
+            "work": "Histories",
+            "ref": "8.135",
+            "note": "Recounts Mardonius sending his agent Mys to consult the oracle of Ptoan Apollo above Lake Copais."
+          }
+        ]
       }
     },
     {
@@ -38294,7 +38396,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Sanctuary_of_Zeus_Labraundos,_Labraunda,_Caria,_Turkey_(31749580400).jpg?width=800",
         "image_credit": "The Sanctuary of Zeus Labraundos at Labraunda · Wikimedia Commons",
-        "image_alt": "Ruins of the Hecatomnid-era sanctuary of Zeus at Labraunda"
+        "image_alt": "Ruins of the Hecatomnid-era sanctuary of Zeus at Labraunda",
+        "ancient_sources": [
+          {
+            "author": "Herodotus",
+            "work": "Histories",
+            "ref": "5.119",
+            "note": "Describes Carian survivors taking refuge in the sacred grove of Zeus Stratios at Labraunda."
+          }
+        ]
       }
     },
     {
@@ -38324,7 +38434,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/View_of_the_boat-shaped_Tiber_Island_(Insula_Tiberina)_with_some_remnants_of_the_travertine_boat_including_a_relief_decoration_of_the_snake_of_Aesculapius_(caduceus),_Rome_(36667782203).jpg?width=800",
         "image_credit": "Travertine ship's-prow relief of Aesculapius's serpent, Tiber Island · Wikimedia Commons",
-        "image_alt": "Carved stone ship's prow with serpent relief marking the Temple of Aesculapius on Tiber Island"
+        "image_alt": "Carved stone ship's prow with serpent relief marking the Temple of Aesculapius on Tiber Island",
+        "ancient_sources": [
+          {
+            "author": "Ovid",
+            "work": "Metamorphoses",
+            "ref": "15.622-744",
+            "note": "Tells how the sacred snake of Aesculapius chose Tiber Island as the site of Rome's temple."
+          }
+        ]
       }
     },
     {
@@ -38847,7 +38965,15 @@
           "https://www.parcoarcheologicosommersodibaia.it/en/le-immersioni/portus-julius/",
           "https://www.romanports.org/en/the-ports/598-portus-iulius-italy.html"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Suetonius",
+            "work": "Divus Augustus",
+            "ref": "16",
+            "note": "Records Augustus/Agrippa forming the Julian harbour by admitting the sea into the Lucrine Lake and Avernus."
+          }
+        ]
       }
     },
     {
@@ -38874,7 +39000,15 @@
           "https://doi.org/10.3390/heritage3040066",
           "https://www.parcoarcheologicosommersodibaia.it/en/the-dives/the-pisonian-villa/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Annals",
+            "ref": "15.52",
+            "note": "Describes the conspirators' plan to kill Nero at Piso's villa at Baiae, which Piso refused as a breach of hospitality."
+          }
+        ]
       }
     },
     {
@@ -38956,7 +39090,21 @@
           "https://en.wikipedia.org/wiki/Baiae",
           "https://en.wikipedia.org/wiki/Nero"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Annals",
+            "ref": "15.42",
+            "note": "Describes Nero's engineers Severus and Celer attempting a navigable canal from Avernus to the Tiber's mouth."
+          },
+          {
+            "author": "Suetonius",
+            "work": "Nero",
+            "ref": "31",
+            "note": "Describes Nero's planned 160-mile canal from Avernus to Ostia wide enough for ships to pass."
+          }
+        ]
       }
     },
     {
