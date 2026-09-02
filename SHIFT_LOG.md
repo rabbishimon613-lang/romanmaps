@@ -7,6 +7,173 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 90 — 2026-09-02 (this shift's own prompt claimed "Shift 3 of four")
+
+Same stale-numbering mismatch every recent shift has flagged — continuing the real count from
+Shift 89's last commit (`9a1bc26`). Repo booted with `HEAD` detached 25 commits ahead of local
+`main`/`origin/main` (not behind — `git ls-remote` confirmed detached `HEAD` matched GitHub's
+real tip); `git checkout main && git pull` fast-forwarded cleanly, no data loss. `npm install`
+clean (fresh container). Reconfirmed the standing network limitation directly: `curl` to
+`overpass-api.de`, `en.wikipedia.org`, `commons.wikimedia.org`, `pleiades.stoa.org` all still
+fail with the proxy's `connect_rejected` — `WebSearch` remains the only working research path,
+which also means Axis 1 (more cities, needs Overpass building-outline fetches) stays out of
+reach from this sandbox.
+
+### Board + axis triage
+
+Read `BOARD.md` in full. Every open P0 ticket is the same short list prior shifts already
+triaged as oversized-for-one-session or blocked (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2,
+`[03-P0-2]` card-rebuild, `[13-P0-2]` image-audit, `[02-P0-4]` self-host-glyphs half-done,
+`[15-P0-1]`/`[14-P0-1]` both explicitly blocked). `FEATURE_BACKLOG.md`'s P0–P3 sections are now
+**fully checked off** — no open UI feature ticket exists anywhere in that file's structured
+sections; everything remaining there is prior shifts' "lessons learned" notes, not undone work.
+Scanned P1/P2 board tickets too: the only unclaimed ones left (`[10-P0-2]` three-depth-labels,
+`[11-P1-5]` pmtiles, `[11-P1-6]` split-map-tsx, `[06-P1-5]` finds) are all large, vaguely-scoped,
+or need tooling (tippecanoe) unlikely to be present in this sandbox. Concluded, same as Shift 89
+before it, that there is no small unattended-session-tractable Track B item on the board this
+pass — noted here rather than forcing a shaky pick. Went all-in on Track A across two axes
+instead, using five parallel background WebSearch research agents so axis-3 and axis-2 research
+could run concurrently with the ancient-sources deepen pass rather than serially.
+
+### Track A — axis 3 (micro-POIs): 46 new features, clearing the 40-floor
+
+**Axis 3e, tombs/mausolea/necropoleis — 26 new records**, closing out the four specific leads
+Shift 89's own predecessor note (`FEATURE_BACKLOG.md`) flagged as real remaining headroom: 9 more
+named tombs on the Via Appia's first five miles south of Rome (Rabirii, Hilarus Fuscus, the
+Frontispiece, Servilii, the Pyramid Tomb, Seneca's traditional tomb site, Tiberius Claudius
+Secundus Philippianus, the sons of Sextus Pompeius Iustus — plus Herodes Atticus's cenotaph for
+Annia Regilla, correctly logged `extant_117ce:false` since it wasn't built until c. 160 CE);
+Ptolemais's royal tower mausoleum and wider rock-cut necropolis in Cyrenaica (thin — English-
+language sourcing on individual Ptolemais tombs is genuinely scarce, flagging for a future pass
+with journal access); 6 more named Petra tombs (Turkmaniyya — carries Petra's longest surviving
+Nabataean inscription, Renaissance, Broken Pediment, Uneishu, Sextius Florentinus — correctly
+`false`, built 126–130 CE under a governor who only took office in 127 — and the Snake Monument);
+and provincial elite tombs in Germania Superior/Gaul (the Drususstein at Mainz, three individually
+named Trion-necropolis mausolea in Lyon, the newly excavated 2025 Saint-Romain-en-Gal mausoleum
+near Vienne) plus three honestly-post-117 British/German finds shipped anyway as "frontier system,
+not yet" entries (Weiden, Rothamsted, Southwark — the last a 2022 dig find near Borough Market).
+`pois.geojson`: 1268 → 1294. Commit `2d13cec`.
+
+**Axis 3a, signal towers — 20 new records**, correcting a real geographic skew: the file's
+existing 19 signal-tower records were almost entirely one cluster (16 Germania Superior Rhine-
+limes ORL towers + 3 Britannia Stanegate towers). Dispatched a research agent against 5 specific
+underrepresented frontier zones; it came back with an important correction to two of the brief's
+own assumptions rather than padding the count to fit them. First: SHIFT_BRIEF.md's axis-3a text
+says Fossatum Africae is "Trajanic (105–117), so it's fresh" — the research found this wrong,
+construction only began after Hadrian's 122 CE visit to the province, so both new El Kantara
+defile watchtowers ship `extant_117ce:false` with the correction stated plainly in `notes`.
+Second: the 11 new Gask Ridge (Scotland) entries are Rome's earliest fortified land frontier
+anywhere in the empire and extremely well-documented (real NGR-derived coordinates, individual
+excavation histories), but the whole system was abandoned in 87 CE — 30 years *before* this
+snapshot, not after — so all 11 are `false` too, for the opposite reason from every other
+`false` record in this batch. Only one of the 20 (Dalkingen's Trajanic wooden watchtower
+predecessor, before the famous stone Limes Gate replaced it c. 190) is a clean `true`. 3 more
+Raetian limes towers and 4 Hungarian Danube-limes burgi (Commodus-era, 180s CE) round out the
+batch, also correctly `false`. `pois.geojson`: 1294 → 1314. Flagging the SHIFT_BRIEF.md axis-3a
+Fossatum Africae dating claim as worth a direct correction in the brief itself for a future
+editorial pass — it's stated as settled fact there and isn't. Commit `aa61631`.
+
+### Track A — axis 2 (roadside): Via Praenestina closed out, honestly thin
+
+Picked Via Praenestina (Rome → Praeneste → merge with Via Latina near Anagnia) since it had
+exactly 1 station in `road_stations.geojson` going in. Research came back with an honest, useful
+negative result rather than padding: the Antonine Itinerary lists only 3 named stops for this
+whole road (Gabii — already present — Praeneste itself — already a full city in `sites.ts`,
+correctly excluded per the standing convention — and Sub Anagniae, which turned out to already
+be in the data under Via Latina's own `station_compitum_anagninum`, sourced to the identical
+Itinerary line). The one genuine gap was Ad Nonum, a 9th-milestone station at the Ponte di Nona
+site, documented independently by the Barrington Atlas and a 1985 excavation report of a
+Republican healing sanctuary there (8,000+ terracotta votive offerings before 1960s quarrying
+destroyed most of the site). Added it alone rather than inventing unattested intermediate stops
+to hit a bigger number — this road is genuinely short and sparse in the primary sources, not
+incompletely researched. `road_stations.geojson`: 518 → 519. Commit `fd85cb4`.
+
+### Track A — deepen: ancient-sources (standing `[09-P0-1]`) + villa image top-up
+
+**11 new ancient-source citations**, dispatched against a hand-picked 21-POI candidate list drawn
+from the `confidence:high` uncited pool's highest-yield categories (auxiliary forts, temples,
+sanctuaries — the categories prior shifts have repeatedly found outperform their reputation,
+since Ptolemy/the Itinerary/RIB name forts and shrines directly), explicitly excluding 5 already-
+documented dead ends (Cirpi, Taliata, Segontium, Olicana, Derventio) so the agent's search budget
+went to fresh ground. Real hits: RIB inscriptions for 6 Welsh/Cumbrian auxiliary forts (Tomen y
+Mur, Castell Collen, Galava — its tombstone is the only known Roman-era record anywhere in the
+empire of soldiers killed by enemies inside a fort — Castleshaw, Ardotalia, plus the Nodens
+temple's famous Silvianus curse tablet at Lydney Park and one of Coventina's Well's ~24 votive
+altars at Carrawburgh); the Tabula Peutingeriana's own station listing for Lederata on the
+Danube-Dacia crossing road; and three CIL/AE-attested Timgad building dedications (Trajan's Arch,
+the theatre, the library's Rogatianus benefaction inscription) — all three correctly land on
+records already marked `extant_117ce:false` (built 160s–200 CE), so the citations document real
+epigraphy without contradicting the snapshot dating. 10 more candidates (Medracen, the Timgad
+Capitol, Hod Hill, and others) came back genuine clean misses — no inscription exists, or the one
+that does is a documented modern forgery (Ponte Lucano) — logged so a future pass doesn't repeat
+the same searches. `confidence:high` uncited pool: 73 → 62. Commit `b2dcd35`.
+
+**7 more villa images**, closing real Commons hits for Oplontis Villa B, Villa Sora, House of the
+Hunt (Bulla Regia), House of the Cascade (Utica), House of Industrius (Uthina), House of the
+Trifolium (Dougga), and the Villa of the Aviary (Carthage). 28 of the pool's 35 missing-image
+villae remain — same documented ceiling prior shifts have hit repeatedly on this specific pool:
+most have only a generic Commons category page with no individually confirmable filename, not an
+unresearched gap. Commit `0e1358e`.
+
+### State, verification, next
+
+`npm run validate`: 0 errors, same 7 pre-existing reviewed warnings, unchanged through every
+commit this shift. `npx tsc --noEmit` clean. `npm run build` clean via the pre-push hook on every
+push (each push's build took noticeably longer than a typical shift's single push — pushed after
+every batch rather than once at the end, per the "batch commits, not one-at-a-time" rule, so the
+full `next build` ran 5 times this shift; a future shift under real time pressure could reasonably
+batch more commits per push instead). `npm run metrics -- --write`: 1314 POIs (+46 from Shift 89's
+1268), 98.0% deep, image coverage 61.6% (`pois.geojson` only, continuing the gradual dip new
+un-imaged batches always cause before a later top-up pass catches up), ancient-sources coverage on
+`confidence:high` POIs 87.0% (482/554, up from 86.6%).
+
+Commits this shift, in order: `b2dcd35` (11 ancient-source citations), `2d13cec` (26 tomb/
+mausoleum/necropolis POIs), `fd85cb4` (Via Praenestina's Ad Nonum station), `0e1358e` (7 villa
+image top-ups), `aa61631` (20 signal-tower POIs), plus this log entry's commit and a final
+`METRICS.md` refresh. All pushed to `main`.
+
+**Next shift should pick up:**
+
+- **Track A, ancient-sources:** 62 `confidence:high` POIs remain uncited, now even more heavily
+  concentrated in the historically-0-hit-rate categories (villa, shipwreck, quarry — the
+  auxiliary_fort/temple/sanctuary vein this shift mined is close to exhausted for now, though a
+  future batch with EDCS/IMS direct access rather than WebSearch snippets could likely close the
+  `poi_fort_diana` near-miss this shift found but couldn't cite — a real Totovitio altar exists,
+  just no catalog number surfaced in search results).
+- **Track A, axis 3e tombs:** Ptolemais necropolis (Cyrenaica) is the one target this shift's
+  research came back thin on — individually named tombs there are poorly attested in
+  English-language sources; a pass with direct access to the Weber/Berger Libya Antiqua survey
+  would likely do much better than another WebSearch round.
+- **Track A, axis 3a signal towers:** now geographically broader (Raetia, Scotland, Pannonia,
+  Numidia added to the existing Rhine/Stanegate cluster) but correspondingly thinner on
+  `extant_117ce:true` records — only Dalkingen qualifies from this batch. A future pass
+  specifically hunting Trajanic-or-earlier (not Hadrianic+) frontier towers would add more
+  on-snapshot content rather than more honestly-not-yet entries.
+- **Track A, villae images:** 28 of 35 still open, same real ceiling (generic Commons categories,
+  no confirmable individual filename) three shifts running now — probably worth accepting as
+  near-final for this specific pool rather than re-attempting with WebSearch again.
+- **Track B:** `FEATURE_BACKLOG.md`'s structured P0–P3 sections are now fully checked off — there
+  is no small, well-scoped, unclaimed UI feature ticket left in the normal backlog flow. Future
+  Track B work needs to come from `BOARD.md`'s P1/P2 tickets instead, several of which
+  (`[10-P0-2]` three-depth-labels, `[06-P1-5]` finds) are real but need either a fuller spec or a
+  bigger time budget than a quick pass affords — worth a dedicated scoping session rather than
+  another "nothing tractable" conclusion next time.
+- Standing items unchanged: `research/` stays gitignored/empty in every cloud container;
+  `en.wikipedia.org`/`commons.wikimedia.org`/`overpass-api.de`/`pleiades.stoa.org` direct egress
+  stays blocked, confirmed again this shift; `WebSearch` remains the only working research path
+  (this shift ran 5 parallel background agents, on the higher end of recent shifts' self-imposed
+  budget — worth tracking if a future shift notices rate-limiting); the stale/detached-`HEAD` boot
+  symptom recurs nearly every shift, though this time it was detached-ahead rather than
+  detached-behind — `git ls-remote origin` before any destructive-looking recovery step remains
+  the right first move either way.
+- **Correction worth flagging for the brief itself**: `SHIFT_BRIEF.md`'s axis-3a section states
+  Fossatum Africae is "Trajanic (105–117 CE)... so it's fresh" — this shift's research found that
+  claim wrong (construction began after Hadrian's 122 CE African tour). The two Fossatum records
+  added this shift carry the correction in their own `notes`, but the brief's source text is still
+  stated as settled fact for whoever reads it next.
+
+---
+
 ## Shift 89 — 2026-09-02 (this shift's own prompt claimed "Shift 2 of four")
 
 Same stale-numbering mismatch every recent shift has flagged — continuing the real count from
