@@ -325,6 +325,24 @@ to prevent. Building locally to *test* your own work is expected and fine.
       Sargetia river hoard near Sarmizegetusa, not this mine), Tomb of Eurysaces, Lugdunum's
       theatre. Confirms the wall is real — worth waiting for `[09-P1-4]` epigraphy before another
       literary-only pass on this pool.*
+      *Batch 7 done 2026-09-02 by cloud shift 91: 7 new citations from a 39-candidate list
+      targeting the categories this ticket has historically hit best (auxiliary forts, quarries,
+      tombs), explicitly excluding 5 dead ends a prior shift had already exhausted. Real hits:
+      CIL VI 2246 (Tomb of the Rabirii), CIL XIII 1941 (Tomb of Turpio, Lugdunum), the Petra tomb
+      inscription for Sextius Florentinus, a published Danube-limes altar closing a near-miss a
+      prior shift had flagged but couldn't cite (Diana Fort's garrison), Pliny NH 36.10 on Naxian
+      whetstones, Strabo 9.5.16 on Scyros marble, and the Ravenna Cosmography's Lavobrinta for
+      Forden Gaer. 32 other candidates researched and correctly rejected, including one
+      documented modern forgery (the inscription commonly credited to Ponte Lucano actually
+      belongs to the neighboring Tomb of the Plautii). Checked the remaining pool afterward: it's
+      now almost entirely candidates two consecutive shifts have already searched and confirmed
+      as dead ends (Cirpi, Taliata, Segontium, Olicana, Derventio, Teos Africano, Elba Granite,
+      Glanum Dam, Nemausus castellum, all three Baiae "temples", Annia Regilla, Timgad Capitol,
+      Gebel el-Silsila, Hatnub, Hod Hill) — declined to re-run an identical search a third time
+      rather than burn budget for a near-certain zero. A future batch would do better mining this
+      same shift's ~58 newly-added economic-infrastructure POIs (mostly confidence:medium/low, so
+      outside this ticket's high-confidence scope today, but worth a look once more of them
+      mature) than repeating this exact search.*
 - [x] `[06-P0-2]` **`curate-buildings`** `deepen` — Ostia-depth curated descriptions for the
       other 39 sites, ~10 buildings/day. **Standing task, never "done".**
       *Pompeii done 2026-08-16 by cloud shift 3: 28 buildings in `app/pompeiiDescriptions.ts`

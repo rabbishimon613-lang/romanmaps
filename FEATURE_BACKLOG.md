@@ -1330,6 +1330,50 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       case a future shift or the human editorial pass wants to weigh in on which call is right;
       not silently overriding the earlier decision without saying so.
 
+## New ideas spotted this shift (2026-09-02, Shift 91 — Via Amerina/Annia, economic infra, ancient-sources)
+
+- [ ] **Boot checklist gap: `npm install` and `core.hooksPath` aren't guaranteed set at container
+      start.** This shift found `node_modules` empty and `git config core.hooksPath` unset at
+      boot — every push until the end-of-shift wrap-up went out without the pre-push build gate
+      actually running (data was still validated via `npm run validate` at merge time each round,
+      and a final `npm run build` at wrap-up came back clean, so nothing broken slipped through,
+      but it was luck plus discipline, not the gate, that caught it). `npm install`'s own
+      `postinstall` re-wires `core.hooksPath`, so running it first fixes both at once. Worth a
+      one-line addition to `SHIFT_BRIEF.md`'s boot instructions rather than relying on this log
+      being read carefully shift-to-shift.
+- [ ] **A road's name is not evidence of its date — verify before researching stations, not
+      after.** This shift assumed "Via Herculia" was Trajanic (a plausible-sounding guess) and
+      only discovered via real research that it's actually Diocletianic, built ~175 years after
+      117 CE (named for Maximian's Herculius title, not Hercules generically) — had to discard a
+      full 12-station research batch. The fix that worked: every subsequent road this shift
+      researched (Via Amerina, Via Annia) got an explicit "verify the dating with real sources
+      before compiling stations" instruction in the research brief, and both came back with
+      genuine, cited confirmation rather than assumption. Future axis-2 work should build that
+      verification step in from the start rather than discover it's needed after the fact.
+- [ ] **Check a research batch's candidates against the live data by exact ID/coordinates before
+      merging, not just by name — two different failure shapes turned up in the same shift.**
+      (1) A signal-tower research pass returned 7 candidates; 5 were the *same physical Egyptian
+      Eastern Desert praesidia and Arabian fort* this project already has as `auxiliary_fort`
+      records from an earlier shift, just re-described as their watchtower component — caught by
+      checking exact coordinates, not by the names looking different (Didymoi/Krokodilo/
+      Maximianon/Dios/Humayma all matched existing records within meters). (2) A road-station
+      batch produced `station_altinum` and `station_ad_nonum`, both of which already existed
+      under *different* roads (Via Claudia Augusta and Via Praenestina respectively) — a real
+      `append-geojson-features.mjs` ID collision, not a content duplicate, since Altinum
+      genuinely sits at a junction of two roads and "ad Nonum" is a generic Latin name two
+      unrelated sites happen to share. Fixed by renaming rather than by picking one road's claim
+      over the other. Both shapes are worth an explicit ID/coordinate cross-check step before any
+      future merge, not just a visual read of the research agent's own summary.
+- [ ] **A prior batch's own research is a resource for catching new errors, not just a
+      duplicate-avoidance list.** This shift's ancient-sources batch found that the only
+      inscription naming Ponte Lucano's builders is a documented modern forgery (the genuine
+      inscriptions on site belong to the neighboring Tomb of the Plautii). A *separate*,
+      independently-run road-station research batch later asserted that same forged inscription
+      as fact in its own Ponte Lucano entry — caught only because both batches' outputs were read
+      by the same reviewer before merging. Worth remembering when running several research agents
+      in parallel on related ground: their outputs can silently contradict each other, and only a
+      human (or reviewing agent) reading all of them together catches it.
+
 ## New ideas spotted this shift (2026-09-02, Shift 90 — axis 3 tombs + signal towers, Via Praenestina, ancient-sources)
 
 - [ ] **`FEATURE_BACKLOG.md`'s structured P0–P3 sections are now fully checked off** — confirmed
