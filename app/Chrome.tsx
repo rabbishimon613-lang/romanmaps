@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import maplibregl from "maplibre-gl";
 import type { Map as MLMap } from "maplibre-gl";
 import { useUnits } from "./useUnits";
+import { useLocale } from "./useLocale";
+import { LOCALES } from "./strings";
 import { loadPlaces, loadPois, searchPlaces, type Place } from "./places";
 import { activeRoom, clearOverlays, countActiveOverlays, LAYER_GROUPS, ROOMS, toggleLayer, toggleRoom, useLayers } from "./useLayers";
 import { CATEGORY_GROUPS } from "./poiCategories";
@@ -26,6 +28,7 @@ import { motionDuration } from "./reducedMotion";
 export default function Chrome() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [units, setUnits] = useUnits();
+  const [locale, setLocale, t] = useLocale();
   const menuRef = useRef<HTMLDivElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
 
@@ -241,7 +244,7 @@ export default function Chrome() {
         <div style={{ display: "flex", alignItems: "center", height: isMobile ? 46 : 48, padding: isMobile ? "0 6px" : "0 4px 0 14px" }}>
           {headerMode ? (
             <>
-              <IconBtn label="Back to search" onClick={() => clearPoi()}>
+              <IconBtn label={t("backToSearch")} onClick={() => clearPoi()}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--icon)">
                   <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
                 </svg>
@@ -265,15 +268,15 @@ export default function Chrome() {
           ) : (
             <>
               {/* Menu (hamburger) */}
-              <IconBtn label="Menu" onClick={() => setMenuOpen((o) => !o)}>
+              <IconBtn label={t("menu")} onClick={() => setMenuOpen((o) => !o)}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--icon)">
                   <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
                 </svg>
               </IconBtn>
               <input
                 ref={searchInputRef}
-                placeholder="Search Roman Maps"
-                title="Search Roman Maps (press / to focus)"
+                placeholder={t("searchPlaceholder")}
+                title={t("searchTitle")}
                 value={query}
                 onChange={(e) => onQueryChange(e.target.value)}
                 onFocus={() => {
@@ -292,7 +295,7 @@ export default function Chrome() {
                   background: "transparent",
                 }}
               />
-              <IconBtn label="Search" onClick={() => results[0] && flyToPlace(results[0])}>
+              <IconBtn label={t("search")} onClick={() => results[0] && flyToPlace(results[0])}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent)">
                   <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
                 </svg>
@@ -321,10 +324,10 @@ export default function Chrome() {
           }}
         >
           <span style={{ flex: 1, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-            Try &ldquo;Londinium&rdquo; or &ldquo;Ephesus&rdquo;
+            {t("onboardingHint")}
           </span>
           <button
-            title="Dismiss"
+            title={t("dismiss")}
             onClick={onboardingHint.dismiss}
             style={{
               width: 22,
@@ -355,7 +358,7 @@ export default function Chrome() {
         >
           {results.map((p, i) => {
             const name = p.latin || p.modern || "Unknown";
-            const subtitle = p.modern && p.modern !== p.latin ? `Today: ${p.modern}` : "";
+            const subtitle = p.modern && p.modern !== p.latin ? `${t("today")}: ${p.modern}` : "";
             return (
               <button
                 key={p.id}
@@ -404,7 +407,7 @@ export default function Chrome() {
           }}
         >
           <div style={{ padding: "6px 16px 10px", fontSize: 13, fontWeight: 600, color: "var(--text-strong)" }}>
-            Distance units
+            {t("distanceUnits")}
           </div>
           <div style={{ display: "flex", gap: 8, padding: "0 12px 8px" }}>
             {(["km", "mi"] as const).map((u) => (
@@ -421,7 +424,30 @@ export default function Chrome() {
                   color: units === u ? "var(--accent)" : "var(--text-strong)",
                 }}
               >
-                {u === "km" ? "Kilometers" : "Miles"}
+                {u === "km" ? t("kilometers") : t("miles")}
+              </button>
+            ))}
+          </div>
+
+          <div style={{ padding: "6px 16px 10px", fontSize: 13, fontWeight: 600, color: "var(--text-strong)" }}>
+            {t("language")}
+          </div>
+          <div style={{ display: "flex", gap: 8, padding: "0 12px 8px" }}>
+            {LOCALES.map(({ value, label }) => (
+              <button
+                key={value}
+                onClick={() => setLocale(value)}
+                style={{
+                  flex: 1,
+                  height: 34,
+                  borderRadius: 6,
+                  fontSize: 13,
+                  fontWeight: 600,
+                  background: locale === value ? "var(--accent-bg)" : "var(--surface-2)",
+                  color: locale === value ? "var(--accent)" : "var(--text-strong)",
+                }}
+              >
+                {label}
               </button>
             ))}
           </div>
@@ -451,7 +477,7 @@ export default function Chrome() {
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--icon)" style={{ flexShrink: 0 }}>
                   <path d="M21.71 2.29a1 1 0 0 0-1.42 0L2.29 20.29a1 1 0 1 0 1.42 1.42L5 20.41l1.29 1.3a1 1 0 0 0 1.42-1.42L6.41 19l2-2 1.3 1.29a1 1 0 0 0 1.4-1.4L9.83 15.6l2-2 1.29 1.29a1 1 0 0 0 1.42-1.42L13.24 12.17l2-2 1.29 1.29a1 1 0 0 0 1.42-1.42L16.66 8.75l2-2 1.29 1.3a1 1 0 0 0 1.42-1.43L20.07 5.3l1.64-1.63a1 1 0 0 0 0-1.38z" />
                 </svg>
-                Measure distance
+                {t("measureDistance")}
               </button>
               <button
                 onClick={() => {
@@ -473,7 +499,7 @@ export default function Chrome() {
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--icon)" style={{ flexShrink: 0 }}>
                   <path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z" />
                 </svg>
-                Guided tours
+                {t("guidedTours")}
               </button>
               <button
                 onClick={() => {
@@ -495,7 +521,7 @@ export default function Chrome() {
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--icon)" style={{ flexShrink: 0 }}>
                   <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z" />
                 </svg>
-                Places in view
+                {t("placesInView")}
               </button>
             </>
           )}
@@ -509,7 +535,7 @@ export default function Chrome() {
 
       {/* Bottom-left: epoch pill — click opens the "Why 117 CE?" explainer */}
       <button
-        title="Why 117 CE?"
+        title={t("whyEpoch")}
         onClick={() => setEpochModalOpen(true)}
         style={{
           position: "absolute",
@@ -529,9 +555,9 @@ export default function Chrome() {
         }}
       >
         <span style={{ width: 8, height: 8, borderRadius: 999, background: "#b0431a" }} />
-        <strong style={{ fontWeight: 600 }}>117 CE</strong>
+        <strong style={{ fontWeight: 600 }}>{t("epochLabel")}</strong>
         {/* The tagline is the first thing to go on a phone — the pill has to stay a pill. */}
-        {!isMobile && <span style={{ color: "var(--text-2)" }}>· The Empire at its peak</span>}
+        {!isMobile && <span style={{ color: "var(--text-2)" }}>· {t("epochTagline")}</span>}
       </button>
       {epochModalOpen && <EpochModal onClose={() => setEpochModalOpen(false)} />}
       {entrance.visible && <Entrance onClose={entrance.dismiss} />}
