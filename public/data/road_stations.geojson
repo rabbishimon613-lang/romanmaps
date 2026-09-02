@@ -12735,6 +12735,31 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6588,
+          41.8915
+        ]
+      },
+      "properties": {
+        "id": "station_ad_nonum",
+        "category": "statio",
+        "name": "Ad Nonum",
+        "road": "Via Praenestina",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Ad Nonum sat at the ninth Roman mile out of the city, where the Via Praenestina crossed a ravine on the seven-arch Ponte di Nona bridge. Excavations here in 1975 and 1976 uncovered a Republican-era rural healing sanctuary that had produced more than 8,000 terracotta votive offerings, many shaped as afflicted hands and feet, before the site was largely destroyed by pozzolana quarrying in the 1960s. The Barrington Atlas records it as a named road station on the stretch before Gabii.",
+        "sources": [
+          "Barrington Atlas of the Greek and Roman World, Map 43 (Latium Vetus)",
+          "Potter, T.W. and Wells, C., 'A Republican Healing-Sanctuary at Ponte di Nona near Rome', Journal of the British Archaeological Association 138 (1985)",
+          "Pleiades place 823844102 (Ponte di Nona)"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
