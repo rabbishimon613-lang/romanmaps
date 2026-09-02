@@ -13154,6 +13154,283 @@
         "image_credit": "Ponte Lucano over the Aniene, with the Tomb of the Plautii · Wikimedia Commons",
         "image_alt": "Ponte Lucano Roman bridge and the round Tomb of the Plautii"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0537,
+          45.0503
+        ]
+      },
+      "properties": {
+        "id": "station_hatria_adria",
+        "category": "vicus",
+        "name": "Hatria (Adria)",
+        "road": "Via Annia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Hatria anchored the southern end of the Via Annia, the road praetor Titus Annius Rufus cut north to Aquileia in 131 BCE. The old Adriatic port, once Etruscan and Greek, gave the sea itself its name. From here the new road struck north across the Po delta toward Patavium, 25 unattested miles away.",
+        "sources": [
+          "Itin. Burd. 560,3 (road terminus context)",
+          "https://en.wikipedia.org/wiki/Via_Annia",
+          "https://adria.italiani.it/adria-e-le-strade-romane/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8768,
+          45.4064
+        ]
+      },
+      "properties": {
+        "id": "station_patavium",
+        "category": "vicus",
+        "name": "Patavium (Padua)",
+        "road": "Via Annia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Patavium was the wealthiest city in Cisalpine Gaul, and the Via Annia used it as the pivot point for its final 82-mile push to Aquileia. The historian Livy was born within its walls. No ancient itinerary records a named station on the 25-mile stretch south to Adria, leaving that leg of the road undocumented by name.",
+        "sources": [
+          "Itin. Burd. 560,3",
+          "https://en.wikipedia.org/wiki/Via_Annia",
+          "https://padovacultura.padovanet.it/it/musei/annia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0986,
+          45.4119
+        ]
+      },
+      "properties": {
+        "id": "station_ad_duodecimum",
+        "category": "mansio",
+        "name": "Mansio ad Duodecimum (Sambruson)",
+        "road": "Via Annia",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Ad Duodecimum took its name straight from its distance: 12 Roman miles north of Padua. Travelers changed horses here, at the exact spot where the Meduacus river forked and where the Via Annia met the coastal road running down from Ravenna. A milestone naming Constantine, unearthed at Sambruson in 1887, shows the post still worked four centuries after the road was cut.",
+        "sources": [
+          "Itin. Burd. 560,4 (mutatio ad Duodecimum, XII m.p.)",
+          "Tabula Peutingeriana (mansio Maio Meduaco)",
+          "https://www.sambrusonlastoria.it/index.php?option=com_content&view=article&id=75:sambruson-sito-24-via-annia",
+          "https://pleiades.stoa.org/places/393366"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2246,
+          45.4639
+        ]
+      },
+      "properties": {
+        "id": "station_ad_nonum_marghera",
+        "category": "mutatio",
+        "name": "Mutatio ad Nonum (Marghera)",
+        "road": "Via Annia",
+        "distance_from_previous_mp": 11,
+        "identified": true,
+        "notes": "Ad Nonum sat 9 Roman miles short of Altinum, on the marshy shoreline that later became the industrial port of Marghera. The Itinerarium Burdigalense lists it as a bare mutatio, a horse-change stop with no town attached to it. Travelers passed through on a raised roadbed built to survive the lagoon floods.",
+        "sources": [
+          "Itin. Burd. 560,5 (mutatio ad Nonum, XI m.p.)",
+          "https://ecoistituto-italia.org/cms-4/un-ponte-un-canale-e-lantica-posta-di-mestre-sintesi/",
+          "https://en.wikipedia.org/wiki/Via_Annia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.367,
+          45.583
+        ]
+      },
+      "properties": {
+        "id": "station_altinum_annia",
+        "category": "vicus",
+        "name": "Altinum",
+        "road": "Via Annia",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Altinum was a thriving lagoon port where the Via Annia met ferry routes into the islands that later became Venice. Wealthy Roman villas lined its canals, and the town's own coinage circulated across the northern Adriatic. Its final approach from Marghera ran 9 Roman miles along an embanked causeway built to outlast the marsh.",
+        "sources": [
+          "Itin. Burd. 560,6 (civitas Altino, VIIII m.p.)",
+          "https://pleiades.stoa.org/places/216700",
+          "https://en.wikipedia.org/wiki/Via_Annia"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Via%20Annia%20in%20Altinum%20(Altino,%20Quarto%20d'Altino).jpg?width=800",
+        "image_credit": "Wikimedia Commons contributor",
+        "image_alt": "Paved remains of the Via Annia within the archaeological area of Altinum"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.633,
+          45.683
+        ]
+      },
+      "properties": {
+        "id": "station_ceggia_milestones",
+        "category": "milestone",
+        "name": "Piave Crossing Milestones (Ceggia)",
+        "road": "Via Annia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Multiple imperial-era milestones turned up around Ceggia, marking where the Via Annia crossed the Piave river on its way to Concordia. One names Caesar Flavius Julius Crispus, son of Constantine, who held that title for less than a decade before his execution in 326 CE. Others honor Valentinian, Theodosius and Arcadius, evidence the crossing stayed in repair for four centuries.",
+        "sources": [
+          "http://www.fondazionepremioaltino.it/la%20via%20annia/la%20via%20Annia%20i%20ritrovamenti.htm",
+          "https://en.wikipedia.org/wiki/Via_Annia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.617,
+          45.717
+        ]
+      },
+      "properties": {
+        "id": "station_sanos",
+        "category": "mutatio",
+        "name": "Mutatio Sanos",
+        "road": "Via Annia",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Mutatio Sanos marked the Via Annia's crossing of the Livenza river, 10 Roman miles past Altinum on the road to Concordia. The Itinerarium Burdigalense records it as nothing more than a horse-change post, one of the anonymous relay stops that kept the cursus publicus running. Modern scholarship places it near Sant'Anastasio, a hamlet that still sits beside the river.",
+        "sources": [
+          "Itin. Burd. 560,7 (mutatio Sanos, X m.p.)",
+          "https://topostext.org/work/231"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.85,
+          45.767
+        ]
+      },
+      "properties": {
+        "id": "station_iulia_concordia",
+        "category": "vicus",
+        "name": "Iulia Concordia (Concordia Sagittaria)",
+        "road": "Via Annia",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Iulia Concordia grew out of a Via Annia relay station roughly midway between Altinum and Aquileia, then became a full Roman colony in 42 BCE. The road entered town over a bridge whose stone piers still stand today. Sitting at the junction with the Via Postumia, Concordia funneled traffic between the Alps, the Adriatic and Aquileia.",
+        "sources": [
+          "Itin. Burd. 560,8 (civitas Iulia Concordia, VIIII m.p.)",
+          "https://pleiades.stoa.org/places/393441",
+          "https://en.wikipedia.org/wiki/Via_Annia"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Via%20Annia%20in%20Julia%20Concordia.jpg?width=800",
+        "image_credit": "Wikimedia Commons contributor",
+        "image_alt": "Paved section of the Via Annia preserved at Iulia Concordia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9931,
+          45.7917
+        ]
+      },
+      "properties": {
+        "id": "station_apicilia",
+        "category": "mutatio",
+        "name": "Mutatio Apicilia (Latisanotta)",
+        "road": "Via Annia",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Mutatio Apicilia, also transmitted as ad Paciliam, sat 9 Roman miles east of Concordia at a crossing on a minor branch of the Tagliamento. The stop survives today in the hamlet name Latisanotta, still perched by the same river ford it once guarded. Like most mutationes on this stretch it existed for one job: swapping tired horses for the cursus publicus.",
+        "sources": [
+          "Itin. Burd. 560,9 (mutatio Apicilia, VIIII m.p.)",
+          "https://www.vegal.net/catalogo/web/allegati/RELAZIONE%20VIA%20ANNIA.pdf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0925,
+          45.8078
+        ]
+      },
+      "properties": {
+        "id": "station_palazzolo_milestones",
+        "category": "milestone",
+        "name": "Palazzolo dello Stella Milestones",
+        "road": "Via Annia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A cluster of Roman milestones turned up around Palazzolo dello Stella, including one dedicated to Constantine after 312 CE. The finds mark a well-maintained stretch of the Via Annia's final approach to Aquileia, where the road crossed the marshy delta of the Stella river. Additional milestones nearby name later fourth-century emperors, showing the route stayed under active repair for generations.",
+        "sources": [
+          "http://viaannia.veneto.to/minisito/ViaAnnia/dettaglio?path=/Company+Home/Turismo/Preview-OnLine/OnLine/Minisiti/ViaAnnia/GdSitonumero07",
+          "https://en.wikipedia.org/wiki/Via_Annia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2619,
+          45.815
+        ]
+      },
+      "properties": {
+        "id": "station_ad_undecimum",
+        "category": "mutatio",
+        "name": "Mutatio ad Undecimum (Chiarisacco)",
+        "road": "Via Annia",
+        "distance_from_previous_mp": 11,
+        "identified": true,
+        "notes": "Mutatio ad Undecimum stood exactly 11 Roman miles from Aquileia, at the site now called Chiarisacco near Malisana. Excavators recovered five milestones there, including two naming co-emperors Valentinian and Valens and one naming the usurper Magnentius. That dense cluster of inscriptions makes it one of the best-documented relay points on the whole road.",
+        "sources": [
+          "Itin. Burd. 560,10 (mutatio ad Undecimum, XI m.p.)",
+          "https://www.openstarts.units.it/server/api/core/bitstreams/6573ec20-dffd-42d6-adc4-243d66cffc6a/content"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
