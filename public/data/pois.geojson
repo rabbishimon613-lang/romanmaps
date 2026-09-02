@@ -42840,6 +42840,60 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.12614,
+          25.89276
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_phoinikon",
+        "category": "signal_tower",
+        "name_latin": "Turris Phoenicon",
+        "name_english": "Phoinikon Watchtower",
+        "province": "Aegyptus",
+        "modern_location": "Laqeita, Eastern Desert, Qena Governorate, Egypt",
+        "built": 72,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "An inscription dated around 72 CE makes this one of the earliest Flavian watch-posts on the Koptos-Berenike road, built barely two years into Vespasian's reign. Its garrison tracked caravans and travelers crossing the desert toward the Red Sea port. The post stayed manned for nearly two centuries after its founding.",
+        "sources": [
+          "https://www.trismegistos.org/place/5036",
+          "https://journals.sagepub.com/doi/full/10.1177/03075133241273454"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.031,
+          44.525
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_gospodin_vir",
+        "category": "signal_tower",
+        "name_latin": "Turris Gospodini Viri",
+        "name_english": "Gospođin Vir Watchtower",
+        "province": "Moesia Superior",
+        "modern_location": "Gospođin Vir gorge, near Boljetin, Majdanpek, Serbia (submerged beneath the Đerdap I reservoir)",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This watchtower controlled Trajan's cliff-cut military road through the Iron Gates and kept watch on the Danube's far bank, finished around 100 CE alongside the road commemorated on the nearby Tabula Traiana. It stood ready for the legions Trajan ferried upriver for both Dacian campaigns. The Đerdap I hydroelectric dam flooded the site in the 1970s, and its exact footprint now lies under the reservoir.",
+        "sources": [
+          "http://danube-cooperation.com/danubius/2012/06/12/roman-limes-frontier-line-of-the-roman-empire-in-the-iron-gate-area/",
+          "https://en.wikipedia.org/wiki/Tabula_Traiana"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
