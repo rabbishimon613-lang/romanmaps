@@ -1330,6 +1330,38 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       case a future shift or the human editorial pass wants to weigh in on which call is right;
       not silently overriding the earlier decision without saying so.
 
+## New ideas spotted this shift (2026-09-02, Shift 90 — axis 3 tombs + signal towers, Via Praenestina, ancient-sources)
+
+- [ ] **`FEATURE_BACKLOG.md`'s structured P0–P3 sections are now fully checked off** — confirmed
+      by reading the whole file top to bottom before picking Track B. Every remaining `- [ ]` line
+      in the file lives in a dated "New ideas spotted" section (a lessons-learned log, not a task
+      queue). A future shift looking for Track B work should go straight to `BOARD.md`'s P1/P2
+      tickets instead of re-scanning this file's early sections hoping something was missed —
+      there isn't.
+- [ ] **`SHIFT_BRIEF.md`'s axis-3a Fossatum Africae claim was wrong and is now corrected in the
+      brief itself** (see the two edited lines under "Auxiliary forts" and "Frontier lines as
+      continuous features"). It said Fossatum Africae was "Trajanic so it's fresh" — real research
+      this shift found construction only began after Hadrian's 122 CE tour of Africa. Any future
+      Fossatum Africae feature (the frontier ditch/wall itself, or more watchtowers beyond this
+      shift's 2) needs `extant_117ce: false` with that dating stated in `notes`, not treated as an
+      on-snapshot highlight.
+- [ ] **Signal towers logged `extant_117ce: false` split into two structurally different reasons,
+      worth distinguishing in any future review of this axis.** Most `false` records (Raetian
+      limes, Danube burgi, Fossatum Africae) are false because construction came *after* 117 CE.
+      This shift's 11 new Gask Ridge (Scotland) entries are false for the opposite reason — the
+      whole signal-tower system was already abandoned in 87 CE, three decades *before* this
+      snapshot. Both are correctly "not standing in 117," but a reader skimming just the boolean
+      would miss that they're not standing for opposite reasons — the `notes` field is doing real
+      work here and shouldn't get trimmed to something generic in a future editing pass.
+- [ ] **Dispatching multiple background WebSearch research agents in parallel (this shift ran 5)
+      works well for splitting Track A across two axes without serializing the research time** —
+      each agent got a tightly-scoped target list (specific POI ids, specific research leads
+      already identified from a gap-scan of the existing data) rather than an open-ended "go
+      research axis X" brief, which kept results high-precision and easy to merge via
+      `scripts/append-geojson-features.mjs`/`apply-ancient-sources-topup.mjs`/
+      `apply-image-topup.mjs` without manual reformatting. Worth continuing as the default pattern
+      for future multi-axis shifts rather than one research pass at a time.
+
 ## Shipped (moved from above; newest on top)
 
 - 2026-08-31 — Shift 83: Found and fixed `[13-P1-5]` — none of `app/Map.tsx`'s ~34 thematic-layer
