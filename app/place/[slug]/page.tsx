@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { SITE_URL } from "../../siteUrl";
 import { colorForCategory } from "../../poiCategories";
 import { lifeForCategory } from "../../categoryLife";
+import { resolveDateLine, type FuzzyDate } from "../../dates";
 
 /** Every curated POI (`public/data/pois.geojson`, ~467 records with real notes/sources/images —
  * not the 16k-point raw gazetteer, which `sitemap.ts` explicitly keeps out of scope) gets a real,
@@ -22,6 +23,8 @@ type PoiProps = {
   modern_location?: string;
   built?: number | string;
   destroyed?: number | string;
+  built_date?: FuzzyDate;
+  destroyed_date?: FuzzyDate;
   extant_117ce?: boolean;
   notes?: string;
   sources?: string[];
@@ -91,13 +94,6 @@ export function generateStaticParams() {
   return loadPois().map((f) => ({ slug: slugFor(f.properties.id) }));
 }
 
-function formatYear(y: number | string | undefined): string {
-  if (y === null || y === undefined || y === "") return "";
-  const n = Number(y);
-  if (Number.isNaN(n)) return String(y);
-  return n < 0 ? `${-n} BCE` : `${n} CE`;
-}
-
 function titleCase(s: string): string {
   return s.replace(/_/g, " ").replace(/(^|\s)\w/g, (c) => c.toUpperCase());
 }
@@ -145,8 +141,8 @@ export default function PlacePage({ params }: { params: { slug: string } }) {
   const color = colorForCategory(category);
   const categoryLife = lifeForCategory(category);
 
-  const built = formatYear(p.built);
-  const destroyed = formatYear(p.destroyed);
+  const built = resolveDateLine(p.built, p.built_date);
+  const destroyed = resolveDateLine(p.destroyed, p.destroyed_date);
   const dateLine = built ? (destroyed ? `Built ${built} · Destroyed ${destroyed}` : `Built ${built}`) : "";
   const locationLine = [p.province, p.modern_location].filter(Boolean).join(" · ");
 

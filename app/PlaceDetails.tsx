@@ -11,19 +11,13 @@ import { useNearbyPois } from "./useNearby";
 import { useUnits, formatDistance } from "./useUnits";
 import { setDirectionsDestination } from "./useDirections";
 import { motionDuration } from "./reducedMotion";
+import { resolveDateLine } from "./dates";
 
 const CONFIDENCE_COLOR: Record<string, string> = {
   high: "var(--ok)",
   medium: "var(--warn-text)",
   low: "var(--text-2)",
 };
-
-function formatYear(y: any): string {
-  if (y === null || y === undefined || y === "") return "";
-  const n = Number(y);
-  if (Number.isNaN(n)) return String(y);
-  return n < 0 ? `${-n} BCE` : `${n} CE`;
-}
 
 function titleCase(s: string): string {
   return s.replace(/(^|\s|-)\w/g, (c) => c.toUpperCase());
@@ -212,8 +206,8 @@ export default function PlaceDetails() {
   const category: string = p.category || "";
   const color = colorForCategory(category);
 
-  const built = formatYear(p.built);
-  const destroyed = formatYear(p.destroyed);
+  const built = resolveDateLine(p.built, p.built_date);
+  const destroyed = resolveDateLine(p.destroyed, p.destroyed_date);
   const dateLine = built ? (destroyed ? `Built ${built} · Destroyed ${destroyed}` : `Built ${built}`) : "";
 
   const locationLine = [p.province, p.modern_location].filter(Boolean).join(" · ");

@@ -14913,6 +14913,7 @@
       },
       "properties": {
         "id": "poi_ludus_alexandria",
+        "built_date": {"display":"By the late 1st century CE"},
         "category": "ludus",
         "name_latin": "Ludus Alexandrinus",
         "name_english": "Gladiator School of Alexandria",
@@ -16018,6 +16019,7 @@
       },
       "properties": {
         "id": "poi_ermita_virgen_pilar_dam",
+        "built_date": {"earliest":1,"latest":200},
         "category": "dam",
         "name_latin": "Ermita de la Virgen del Pilar Dam",
         "name_english": "Ermita de la Virgen del Pilar Dam",
@@ -20110,6 +20112,7 @@
       },
       "properties": {
         "id": "poi_amphitheatre_capua",
+        "built_date": {"display":"Augustan era, or a century later — sources disagree"},
         "category": "amphitheater",
         "name_latin": "Amphitheatrum Campanum",
         "name_english": "Amphitheatre of Capua",
@@ -20275,6 +20278,7 @@
       },
       "properties": {
         "id": "poi_temple_apollo_cumae",
+        "built_date": {"earliest":-27,"latest":14},
         "category": "temple",
         "name_latin": "Templum Apollinis Cumanum",
         "name_english": "Temple of Apollo at Cumae",
@@ -20490,6 +20494,7 @@
       },
       "properties": {
         "id": "poi_amphitheater_cumae",
+        "built_date": {"earliest":-200,"latest":-100},
         "category": "amphitheater",
         "name_latin": "Amphitheatrum Cumanum",
         "name_english": "Amphitheater of Cumae",
@@ -27666,6 +27671,7 @@
       },
       "properties": {
         "id": "poi_theatre_stadium_aegina",
+        "built_date": {"display":"5th–4th century BCE (Classical period)"},
         "category": "theater",
         "name_latin": "",
         "name_english": "Theatre and Stadium of Aegina",
@@ -39873,6 +39879,7 @@
       },
       "properties": {
         "id": "poi_villa_dar_buc_ammera_zliten",
+        "built_date": {"earliest":90,"latest":235,"display":"Flavian era (c. 100 CE) or Severan era (disputed)"},
         "category": "villa",
         "name_english": "Villa Dar Buc Ammera",
         "province": "Africa Proconsularis",
