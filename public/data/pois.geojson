@@ -39217,6 +39217,318 @@
         "image_credit": "Panoramic view of the Villa dei Quintili ruins, Via Appia · Wikimedia Commons",
         "image_alt": "Ruins of the monumental Villa dei Quintili along the Via Appia outside Rome"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3235,
+          36.8546
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_aviary_carthage",
+        "category": "villa",
+        "name_english": "Villa of the Aviary, Carthage",
+        "province": "Africa Proconsularis",
+        "modern_location": "Carthage, Tunisia (Roman Villas archaeological park, near the Antonine Baths) — approximate location within the park, confidence medium",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Excavators in the 1960s uncovered this Carthage townhouse's showpiece: a peristyle floor mosaic packed with ducks, squirrels, and long-tailed peacocks around an octagonal garden. The mosaic dates to the 2nd century AD, decades after Trajan died in 117 CE, so the villa did not yet exist at the empire's widest extent. Workers reused columns from nearby ruins to rebuild the courtyard for modern visitors. The site sits inside Carthage's Roman Villas park near the Antonine Baths.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Archaeological_site_of_Carthage",
+          "https://www.historyhit.com/locations/carthage-roman-villas-and-kobba-bent-el-rey/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7558,
+          36.5581
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_house_of_the_hunt_bulla_regia",
+        "category": "villa",
+        "name_english": "House of the Hunt, Bulla Regia",
+        "province": "Africa Proconsularis",
+        "modern_location": "Bulla Regia, near Jendouba, Tunisia",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Romans at Bulla Regia dug their grandest houses half underground to escape the North African heat, and the House of the Hunt is the best-preserved example. Builders raised it mostly in the 2nd and 3rd centuries AD, postdating Trajan's death in 117 CE by decades. Excavators in 1904 found its sunken courtyard ringed by eight columns beneath a groin vault of hollow terracotta tubes, still cool on the hottest days. The house is named for a mosaic of a hunting scene found in one room.",
+        "sources": [
+          "https://www.historyhit.com/locations/bulla-regia/",
+          "https://www.worldhistory.org/article/2811/treasures-of-roman-tunisia/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1975,
+          36.6217
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_house_of_the_laberii",
+        "category": "villa",
+        "name_english": "House of the Laberii, Oudna",
+        "province": "Africa Proconsularis",
+        "modern_location": "Oudna (ancient Uthina), about 30 km south of Tunis, Tunisia",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Wealthy Romans built this townhouse at Uthina in the late 1st or early 2nd century AD, decades before Trajan died in 117 CE, so it already stood at the empire's greatest extent. The Laberii family kept decorating its floors for two centuries, commissioning a mosaic of Orpheus charming the animals and, later, a hunting scene finished around 300 AD. Fragments of its pavements were later pulled out and now sit in separate museums. Uthina today is a quiet park south of Tunis.",
+        "sources": [
+          "https://www.romeartlover.it/Uthina.html",
+          "https://www.livius.org/articles/place/uthina/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.95,
+          36.735
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_sidi_ghrib",
+        "category": "villa",
+        "name_english": "Sidi Ghrib Villa",
+        "province": "Africa Proconsularis",
+        "modern_location": "Near Borj El Amri, Tunisia (about 40 km southwest of Carthage) — coordinates approximate",
+        "built": 380,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Archaeologists surveying near Borj El Amri in 1975 found a rural estate with its own bath complex covering 780 square meters around a colonnaded frigidarium. Builders raised the villa in the late 4th or early 5th century AD, roughly three hundred years after Trajan died, alongside olive presses that show it also worked as a farm. Its best-known mosaic shows the lady of the house at her toilette, flanked by maids holding a mirror and jewels. That mosaic now hangs in the Bardo Museum in Tunis.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sidi_Ghrib",
+          "https://muse.jhu.edu/article/653271/summary"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.1355,
+          36.1264
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_atrium_house_daphne",
+        "category": "villa",
+        "name_english": "Atrium House, Daphne",
+        "province": "Syria",
+        "modern_location": "Harbiye (ancient Daphne, suburb of Antioch), near Antakya, Turkey — general suburb location, exact find-spot not pinpointed",
+        "built": 50,
+        "destroyed": 115,
+        "extant_117ce": false,
+        "notes": "Princeton's 1932 dig at Daphne, Antioch's leafy suburb, found this house's dining-room floor still holding mosaic panels of a drinking contest between Herakles and Dionysos. Built in the 1st century AD, the house stood when a magnitude-7.5 earthquake flattened Daphne on 13 December 115 CE and nearly killed Trajan, then wintering in Antioch. Its mosaics survived to be split among four museums, Princeton and the Louvre included. Two years later, when Trajan died, the suburb was still rebuilding.",
+        "sources": [
+          "https://antiochmuseumofart.org/atrium-house/",
+          "https://en.wikipedia.org/wiki/115_Antioch_earthquake"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.1385,
+          36.1245
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_house_of_menander_daphne",
+        "category": "villa",
+        "name_english": "House of Menander, Daphne",
+        "province": "Syria",
+        "modern_location": "Harbiye (ancient Daphne, suburb of Antioch), near Antakya, Turkey — general suburb location, offset slightly from the Atrium House entry to avoid an exact-coordinate stack; exact find-spot not pinpointed",
+        "built": 280,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Excavators at Daphne named this elite house for a set of mosaic panels illustrating scenes from Menander's comedies. Built in the late 3rd century AD, the villa rose more than 160 years after Trajan died at Antioch in 117 CE, though it incorporated older mosaic panels salvaged from a 2nd-century building. Its rooms opened onto a peristyle garden typical of Antioch's wealthiest suburb. The mosaics are now divided among the Princeton University Art Museum and other Antioch-expedition collections.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/House_of_Menander",
+          "https://antiochmuseumofart.org/house-of-menander/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.8792,
+          37.0592
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_poseidon_house_zeugma",
+        "category": "villa",
+        "name_english": "Poseidon House, Zeugma",
+        "province": "Syria",
+        "modern_location": "Belkis village, near Nizip, Gaziantep Province, Turkey",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "At Zeugma, a Roman garrison town on the Euphrates, a family paved their courtyard pool with a mosaic of Poseidon riding a golden chariot pulled by hippocamps. The Poseidon House dates to the 2nd or 3rd century AD, rising after Trajan's death in 117 CE even though Rome had held Zeugma since Augustus stationed a legion there. Rescue crews pulled the mosaic from the ground before the Birecik Dam flooded much of the city in 2000. It anchors the Zeugma Mosaic Museum in Gaziantep today.",
+        "sources": [
+          "https://akmed.ku.edu.tr/en/the-triumph-of-poseidon/",
+          "https://sailingstonetravel.com/antep-guide-zeugma-mosaic-museum/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.2033,
+          40.5233
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_rustica_beroia",
+        "category": "villa",
+        "name_english": "Beroia Roman Farm Villa",
+        "province": "Macedonia",
+        "modern_location": "Near Veroia, Imathia, Greece — exact find-spot along the Egnatia Odos route not pinpointed, coordinates approximate",
+        "built": -50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Highway crews building the new Egnatia Odos near Veroia in 1999 struck a working Roman farm, its storerooms still lined with wine pithoi. Founded in the 1st century BC, the estate stayed in use until the 4th century AD, so it had produced wine for over 150 years by the time Trajan died in 117 CE. One cistern doubled as a vivarium, a stocked fish tank, inside an 800-square-meter complex of presses and tanks. The find gave archaeologists a rare look at Macedonia's rural estates.",
+        "sources": [
+          "https://www.academia.edu/110915799/Villae_rusticae_at_the_Beroia_countryside_Macedonia_Greece_",
+          "https://books.ub.uni-heidelberg.de/propylaeum/catalog/book/999/chapter/13364"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.68,
+          40.67
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_amyntaio",
+        "category": "villa",
+        "name_english": "Amyntaio Roman Villa",
+        "province": "Macedonia",
+        "modern_location": "Near Amyntaio, Florina, Greece (Livadia site, within the Petres archaeological area) — general area, exact footprint not pinpointed",
+        "built": 200,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Archaeologists digging near ancient Petres in 2017 uncovered one of the largest Roman villas found in Greece, a complex eventually reaching more than 5,100 square meters and roughly 96 rooms. Its Europa Hall mosaic names the owners, a couple called Alexandros and Memmia, in a floor inscription. The villa dates to the Late Roman period, from the 2nd through 5th centuries AD, so its earliest rooms rose after Trajan died in 117 CE. Greece began a 2.5-million-euro restoration of the site in 2026.",
+        "sources": [
+          "https://www.thenationalherald.com/spectacular-roman-villa-being-restored-in-amyntaio-florina/",
+          "https://greekreporter.com/2026/03/23/greece-restores-massive-175-room-roman-villa-amyntaio/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4794,
+          40.1725
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_dionysus_dion",
+        "category": "villa",
+        "name_english": "Dionysus Villa, Dion",
+        "province": "Macedonia",
+        "modern_location": "Dion, Pieria, Greece",
+        "built": 200,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Excavators at Dion, the sanctuary city below Mount Olympus, found a banquet-hall mosaic in 1987 showing Dionysus arriving in triumph on a chariot pulled by panthers. Builders raised the villa around 200 AD, more than eighty years after Trajan died, joining five courtyards into one sprawling home before it was later split into three houses. Its floors also carried a Medusa mosaic in a circular frame. The Dionysus mosaic remains on view at the Dion Archaeological Museum.",
+        "sources": [
+          "https://www.worldhistory.org/image/14071/dion-dionysus-villa-greece/",
+          "https://ancient-greece.org/archaeology/dion-archaeological-park/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.9958,
+          39.6497
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_gordion_peristyle_house",
+        "category": "villa",
+        "name_english": "Gordion Roman Peristyle House",
+        "province": "Galatia",
+        "modern_location": "Yassihoyuk (ancient Gordion), Polatli district, Ankara Province, Turkey — general site location, exact structure not pinpointed",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "On the old citadel mound at Gordion, Roman settlers raised a house with a colonnaded peristyle courtyard between the Flavian and Trajanic periods, so it stood complete before Trajan died in 117 CE. Archaeologists who mapped it call it the only excavated rural residence known from Roman Galatia's former territory. The University of Pennsylvania Museum has dug there since 1950, finding a colonnaded street alongside it. Galatia's countryside was mostly villages and estates, rarely excavated houses.",
+        "sources": [
+          "https://www.penn.museum/sites/gordion/history/roman-gordion/",
+          "https://www.antiquity.ac.uk/projGall/bennett315/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1833,
+          38.6333
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_sadacora_incesu",
+        "category": "villa",
+        "name_english": "Sadacora Roman Villa",
+        "province": "Cappadocia",
+        "modern_location": "Incesu, Kayseri Province, Turkey",
+        "built": 350,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Archaeologists near Incesu in Kayseri uncovered a villa identified with ancient Sadacora, its floors covered by 600 square meters of mosaic across roughly 33 rooms. Builders raised it in the 4th century AD, over two hundred years after Trajan died in 117 CE, likely for a high-ranking administrator. One reception hall carries a rare Latin inscription beside Greek text, a bilingual flourish deep in Anatolia. People kept living there through Byzantine times and after the Turkish conquest.",
+        "sources": [
+          "https://www.labrujulaverde.com/en/2023/11/unveiling-splendor-ancient-sadacora-reveals-a-roman-villa-adorned-with-600-square-meters-of-mesmerizing-mosaics/",
+          "https://www.ancient-origins.net/news-history-archaeology/floor-mosaic-cappadocia-0019800"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
