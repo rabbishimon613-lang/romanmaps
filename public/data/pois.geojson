@@ -35381,7 +35381,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Diana_Fortress,_built_in_100_AD_during_Trajan's_preparations_for_the_Dacian_wars,_Moesia_Superior,_Serbia_(41353641185).jpg?width=800",
         "image_credit": "Remains of Diana Fort at Karataš, rebuilt for Trajan's Dacian campaign · Wikimedia Commons",
-        "image_alt": "Stone wall remains of the Roman fort Diana on the Danube bank at Karataš, Serbia"
+        "image_alt": "Stone wall remains of the Roman fort Diana on the Danube bank at Karataš, Serbia",
+        "ancient_sources": [
+          {
+            "author": "Votive altar (Karataš/Đerdap)",
+            "work": "published in D. Grbić, \"The Thracian Hero on the Danube: New Interpretation of an Inscription from Diana\", Balcanica XLIV (2013), 7-20",
+            "ref": "Balcanica XLIV (2013), 7-20",
+            "note": "Latin altar dedicated by Aurelius Agathominus, a soldier 'stationis Dianae' (of the garrison/station of Diana), i.e. explicitly names this fort as statio Diana(e); found at the fort's site at Karataš in the Iron Gates gorge."
+          }
+        ]
       }
     },
     {
@@ -35929,7 +35937,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Naxos_Marble.JPG",
-        "image_credit": "Heiko Gorski (Moonshadow), Wikimedia Commons"
+        "image_credit": "Heiko Gorski (Moonshadow), Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "36.10",
+            "note": "Names Naxos as the source of 'Naxian stone' (cos Naxia), the whetstones long favored for smoothing marble statues and engraving/polishing gems, before Armenian stone displaced it."
+          }
+        ]
       }
     },
     {
@@ -36443,7 +36459,15 @@
           "https://www.academia.edu/15715788/The_Roman_marble_quarries_of_Aliko_bay_and_of_the_islets_of_Rinia_and_Koulouri_Skyros_Greece_",
           "https://www.researchgate.net/publication/285935980_Characterisation_of_the_white_marble_of_two_unpublished_ancient_Roman_quarries_on_the_Islands_ofFourni_and_Skyros_Greece"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "9.5.16",
+            "note": "Names Scyros (Skyros) as a source of prized variegated marble comparable to Carystian, Docimaean/Synnadic, and Hierapolitic marbles, used at Rome for monolithic columns and slabs."
+          }
+        ]
       }
     },
     {
@@ -37405,7 +37429,15 @@
           "https://en.wikipedia.org/wiki/Forden_Gaer",
           "https://coflein.gov.uk/en/site/94012/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Ravenna Cosmography",
+            "work": "Cosmographia",
+            "ref": "R&C #80 (Lavobrinta)",
+            "note": "Lists the station 'Lavobrinta' between Viroconium Cornoviorum (Wroxeter) and the next station on the road network; conventionally identified by scholars with Forden Gaer based on its position on that route."
+          }
+        ]
       }
     },
     {
@@ -40427,7 +40459,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grave_monument_of_Gaius_Rabirius_Hermodorus,_Rabiria_Demaris,_and_Usia_Prima.jpg?width=800",
         "image_credit": "Grave relief from the Tomb of the Rabirii, Via Appia, Rome, Wikimedia Commons",
-        "image_alt": "Marble relief portrait busts of Gaius Rabirius Hermodorus, Rabiria Demaris, and Usia Prima"
+        "image_alt": "Marble relief portrait busts of Gaius Rabirius Hermodorus, Rabiria Demaris, and Usia Prima",
+        "ancient_sources": [
+          {
+            "author": "CIL",
+            "work": "Corpus Inscriptionum Latinarum",
+            "ref": "CIL VI 2246",
+            "note": "Funerary inscription on the tomb naming Gaius Rabirius Hermodorus (freedman of Postumus), Rabiria Demaris, and Usia Prima, the individuals depicted and buried in this monument on the Via Appia."
+          }
+        ]
       }
     },
     {
@@ -40873,7 +40913,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Petra_Tomb_of_Sextus_Florentinus_2086.jpg?width=800",
         "image_credit": "The Tomb of Sextius Florentinus at Petra, Wikimedia Commons",
-        "image_alt": "Rock-cut facade of the Tomb of Sextius Florentinus at Petra with its Latin inscription"
+        "image_alt": "Rock-cut facade of the Tomb of Sextius Florentinus at Petra with its Latin inscription",
+        "ancient_sources": [
+          {
+            "author": "Brünnow & Domaszewski",
+            "work": "Die Provincia Arabia I (1904), catalogue no. BD 763",
+            "ref": "BD 763",
+            "note": "Latin dedicatory inscription above the tomb doorway at Petra, recording that L. Aninius Sextius Florentinus (governor of Provincia Arabia, d. c.129 CE) was buried here by order of his son."
+          }
+        ]
       }
     },
     {
@@ -40960,7 +41008,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lyon_-_Mausolee_de_Trion_-_Satrius.JPG?width=800",
         "image_credit": "Roman mausoleum from the Trion necropolis, Place Eugene-Wernert, Lyon, Wikimedia Commons",
-        "image_alt": "Reassembled stone Roman mausoleum from the Trion necropolis in Lyon"
+        "image_alt": "Reassembled stone Roman mausoleum from the Trion necropolis in Lyon",
+        "ancient_sources": [
+          {
+            "author": "CIL",
+            "work": "Corpus Inscriptionum Latinarum",
+            "ref": "CIL XIII 1941",
+            "note": "Funerary dedication on the tomb of the sevir augustalis Turpio, one of the Saint-Just necropolis monuments outside Lugdunum, naming Turpio and his freedmen as dedicatees."
+          }
+        ]
       }
     },
     {
