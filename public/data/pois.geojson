@@ -42409,6 +42409,437 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4842,
+          32.7922
+        ]
+      },
+      "properties": {
+        "id": "poi_sabratha_garum",
+        "category": "garum_factory",
+        "name_latin": "Sabratha",
+        "name_english": "Sabratha Fish-Salting Workshops",
+        "province": "Africa Proconsularis",
+        "modern_location": "Sabratah, Libya",
+        "built": 25,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Eighteen fish-salting workshops lined Sabratha's shoreline, their 49 vats scaled for neighborhood trade rather than export on the scale of Baetica's mega-factories. Workers packed sardines and mackerel between layers of salt inside masonry tanks averaging two cubic meters, yielding an estimated 16,000 amphorae of salted fish and garum a year. The cramped layout, with barely room for anything but the vats themselves, closely mirrors small household-scale garum operations recently found at Pompeii. Fishing income here supplemented the olive oil that made Sabratha rich.",
+        "sources": [
+          "Wilson, A. 'Fish-salting workshops in Sabratha', academia.edu",
+          "'Commerce and Industry in Roman Sabratha', Libyan Studies (Cambridge)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4849,
+          40.7495
+        ]
+      },
+      "properties": {
+        "id": "poi_pompeii_umbricius_scaurus_garum",
+        "category": "garum_factory",
+        "name_latin": "Officina Umbricii Scauri",
+        "name_english": "Garum Workshop of Umbricius Scaurus",
+        "province": "Italia (Regio I Campania)",
+        "modern_location": "Pompeii, Italy",
+        "built": 25,
+        "destroyed": 79,
+        "extant_117ce": false,
+        "notes": "Aulus Umbricius Scaurus built Pompeii's biggest fish-sauce fortune here, and made sure everyone knew it: his atrium floor bears four amphora mosaics, three naming him personally as the source of the city's finest garum and liquamen. His townhouse near the Porta Marina held a fishpond, private baths, and the workshop where slaves fermented anchovy and mackerel guts in brine for months. Vesuvius buried the operation whole in August 79 CE, so by Trajan's reign it survived only as ash and memory, not a working business. Excavated jars still carry his titulus pictus labels today.",
+        "sources": [
+          "Wikipedia, 'Aulus Umbricius Scaurus'",
+          "pompeiiinpictures.com, VII.16.15 Casa di Umbricius Scaurus"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7347,
+          36.4542
+        ]
+      },
+      "properties": {
+        "id": "poi_neapolis_nabeul_garum",
+        "category": "garum_factory",
+        "name_latin": "Neapolis",
+        "name_english": "Neapolis Garum Works",
+        "province": "Africa Proconsularis",
+        "modern_location": "Nabeul, Tunisia",
+        "built": 1,
+        "destroyed": 365,
+        "extant_117ce": true,
+        "notes": "Divers surveying the seabed off Nabeul in 2017 found more than 100 rock-cut vats scattered across 20 submerged hectares, probably the largest garum-making complex the Roman world ever built. Individual tanks held up to 138 cubic meters of fermenting fish, with sardine and mackerel intestines liquefying under the Tunisian sun for months. Pliny rated Neapolis among the empire's best garum sources, and amphorae recovered from the site still hold gritty residue of sauce, fish bones, and tiny vertebrae. A fourth-century tsunami eventually swallowed the waterfront, but in Trajan's day the factory was running at full capacity.",
+        "sources": [
+          "Archaeology.org, 'Ancient Sunken City Found Off the Coast of Tunisia' (2017)",
+          "Slim, Bonifay, Piton, Sternberg, 'Fish salteries in Africa Proconsularis: the officinae of Neapolis', in Cetariae 2005, BAR IS 1686"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.56,
+          31.68
+        ]
+      },
+      "properties": {
+        "id": "poi_er_rasm_ashkelon_garum",
+        "category": "garum_factory",
+        "name_latin": "Er Rasm",
+        "name_english": "Er Rasm Garum Installation",
+        "province": "Iudaea",
+        "modern_location": "near Ashkelon, Israel",
+        "built": 1,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Two kilometers from Ashkelon's walls, a first-century estate combined vineyards with a small garum operation, plastered vats and fish pools tucked onto a sandstone ridge safely downwind of the city. It's one of the only identified fish-sauce factories found anywhere in the eastern Mediterranean, proof that Rome's fermented-fish habit reached deep into provincial Judaea. Excavators noted the smell alone explained why it sat so far from town. The estate also grew wine, working as an integrated farm rather than a dedicated cannery.",
+        "sources": [
+          "Times of Israel, 'Factory for Romans' favorite funky fish sauce discovered near Ashkelon' (2019)",
+          "academia.edu, 'The Good Life: Evidence for the Production of Wine and Garum in an Early Roman Estate...South of Ashkelon'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.9767,
+          38.4815
+        ]
+      },
+      "properties": {
+        "id": "poi_creiro_garum",
+        "category": "garum_factory",
+        "name_latin": "Creiro",
+        "name_english": "Creiro Fish-Salting Factory",
+        "province": "Lusitania",
+        "modern_location": "Sesimbra, Portugal",
+        "built": -25,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Above a secluded beach in the Arrábida hills, Creiro packed a fish-salting workshop, warehouses, housing, and baths inside one walled compound overlooking the Sado estuary's mackerel runs. It's one of roughly twenty salting factories that made the Setúbal coast the Roman Empire's busiest hub for cured fish and garum. Archaeologists working here since 1987 have mapped the complete factory plan, down to the brine vats where the catch was packed in salt. The site was first identified in 1907 by antiquarian António Inácio Marques da Costa.",
+        "sources": [
+          "Wikipedia, 'Roman ruins of Creiro'",
+          "selodemar.com, 'Creiro (Arrábida)'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.883,
+          42.5706
+        ]
+      },
+      "properties": {
+        "id": "poi_praia_do_naso_garum",
+        "category": "garum_factory",
+        "name_latin": "(unnamed, Praia do Naso)",
+        "name_english": "Praia do Naso Salting Factory",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Illa de Arousa, Pontevedra, Spain",
+        "built": 1,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "On a narrow beach on the island of Arousa, Galician fishermen ran a salting works that left behind stone vats and rubble walls, now studied under the EU-funded Galtfish project on ancient Gallaecia. Pottery and glass recovered here date the operation across the first through early third centuries CE, squarely inside Trajan's Galicia. DNA extracted from the fish waste recently confirmed what the amphorae always implied: European sardines were the raw material, processed just steps from where they were caught. It sits within a dense cluster of Roman salteries ringing the Rías Baixas.",
+        "sources": [
+          "Rodríguez Nóvoa et al., 'La factoría de salazón romana de Praia do Naso (Illa de Arousa, Pontevedra)', researchgate.net",
+          "Cambridge, Antiquity journal, 'Roman Atlantic garum: DNA confirms sardine use...'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1781,
+          32.7094
+        ]
+      },
+      "properties": {
+        "id": "poi_silin_leptis_garum",
+        "category": "garum_factory",
+        "name_latin": "(villa near Leptis Magna, Silin)",
+        "name_english": "Silin Coastal Villa Fish-Salting Vats",
+        "province": "Africa Proconsularis",
+        "modern_location": "Silin, Libya (west of Leptis Magna)",
+        "built": 1,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A coastal survey west of Leptis Magna mapped fish-salting vats built into one of the elite villas strung along this stretch of Tripolitanian shore, alongside olive presses and pottery kilns serving the same wealthy households. The Silin villa, famous today for its mosaics, sat inside a working landscape where Rome's richest African families ran salting operations alongside farming. Fifty-two ancient sites turned up along a single stretch of coastline in the 2010 survey, showing how thoroughly this shore was developed for export industry. Pliny's praise of Leptis's own garum likely drew on exactly this hinterland.",
+        "sources": [
+          "researchgate.net, 'A topographic research sample in the territory of Lepcis Magna: Silin'",
+          "Schorle, 'Report on the preliminary season of the Lepcis Magna Coastal Survey', ancientportsantiques.com"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.5453,
+          31.0447
+        ]
+      },
+      "properties": {
+        "id": "poi_pelusium_garum",
+        "category": "garum_factory",
+        "name_latin": "Pelusium",
+        "name_english": "Pelusium Fish-Sauce Works",
+        "province": "Aegyptus",
+        "modern_location": "Tell el-Farama, Egypt",
+        "built": -259,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Guarding Egypt's easternmost Nile mouth, Pelusium ran a fish-salting and garum trade old enough to appear in a customs papyrus from 259 BCE, centuries before Trajan. Egyptian and British excavators later uncovered round and square processing tanks built for exactly this purpose, physical proof behind the papyri. The port taxed and shipped salted fish and sauce alongside grain and beer, making it one of the empire's steadiest eastern suppliers of the condiment. Its position on the coastal road guaranteed the product reached both Alexandria and the Levant.",
+        "sources": [
+          "Archaeology.org archive, 'Pelusium: Gateway to Egypt'",
+          "Wikipedia, 'Pelusium'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.5236,
+          53.0667
+        ]
+      },
+      "properties": {
+        "id": "poi_nantwich_salina",
+        "category": "salina",
+        "name_latin": "(salinae, Nantwich)",
+        "name_english": "Nantwich Salt Works",
+        "province": "Britannia",
+        "modern_location": "Nantwich, Cheshire, England",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Nantwich sat on one of Britain's richest natural brine springs, and Roman engineers moved fast, building fresh salt works on open ground rather than reusing the Iron Age pits nearby. Excavations at Kingsley Fields uncovered two large timber-lined evaporation tanks and basket-lined pits, preserved almost intact in waterlogged Cheshire clay. The town's name, from Old English for 'salt town', outlived the empire by a thousand years. Lead pans here boiled brine down into blocks light enough to cart across the province.",
+        "sources": [
+          "BAR Publishing, 'Roman Nantwich: A Salt-Making Settlement'",
+          "academia.edu, 'Brine in Britannia: Recent Archaeological Work on the Roman Salt Industry in Cheshire'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.3167,
+          53.1898
+        ]
+      },
+      "properties": {
+        "id": "poi_ingoldmells_salina",
+        "category": "salina",
+        "name_latin": "(salterns, Fenland edge)",
+        "name_english": "Ingoldmells Fenland Salterns",
+        "province": "Britannia",
+        "modern_location": "Ingoldmells, Lincolnshire, England",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Along the marshy arc where the Lincolnshire Fens met the sea, Roman salt-makers inherited and expanded an Iron Age industry already centuries old at Ingoldmells. More than 300 salterns are recorded across the Fenland edge, their broken briquetage pans still turning up on the beach at low tide. Workers evaporated seawater over fires in disposable clay vessels, smashing each batch open to reach the salt block inside. The scale here rivaled Roman Cheshire's, built from mud and reeds rather than timber and lead.",
+        "sources": [
+          "Heritage Lincolnshire, 'A Millennium of Saltmaking'",
+          "researchframeworks.org, 'The Roman period' (East Midlands Research Framework, Lincolnshire)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.8672,
+          42.4478
+        ]
+      },
+      "properties": {
+        "id": "poi_a_lanzada_salina",
+        "category": "salina",
+        "name_latin": "(salinae, A Lanzada)",
+        "name_english": "A Lanzada Salt and Fish Works",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "Sanxenxo, Pontevedra, Spain",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The sandy spit at A Lanzada has produced salt since at least the second century BCE, and its Roman-period remains point to a combined salting and fishing operation working the Rías Baixas' famously rich waters. It is one of at least eleven salt sites now catalogued between the Douro and Pontevedra by researchers on the Galtfish project mapping ancient Galician industry. The long occupation makes it hard to isolate exactly which building phases are Roman rather than earlier or later. Even so, this coastline is now considered the best-documented salt-production landscape in the whole empire.",
+        "sources": [
+          "turismoriasbaixas.com, 'A historic canning industry'",
+          "academia.edu, 'Salt, Fishing and Salted Fish in the Pitiusas in Antiquity' (regional context)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.8919,
+          51.8959
+        ]
+      },
+      "properties": {
+        "id": "poi_colchester_samian_kiln",
+        "category": "kiln",
+        "name_latin": "Camulodunum",
+        "name_english": "Colchester Samian Ware Kilns",
+        "province": "Britannia",
+        "modern_location": "Colchester, Essex, England",
+        "built": 60,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Colchester was the only place in Roman Britain that ever tried making its own Samian ware, and excavators found the proof in 1933: a bank of kilns buried five to eight feet under waste from the venture. Four kilns fired coarse jugs and mortaria while a separate, walled-off cluster produced glossy red tableware copying the Gaulish imports everyone wanted. Production began under Nero and never matched continental quality, but the coarseware side of the industry kept supplying the colonia and its garrison well into the second century. It remains Britain's only known attempt at homegrown Samian.",
+        "sources": [
+          "Colchester Heritage, 'The Roman Potters' Kilns of Colchester'",
+          "Nature, 'Romano-British Pottery at Colchester'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2892,
+          51.6247
+        ]
+      },
+      "properties": {
+        "id": "poi_brockley_hill_kiln",
+        "category": "kiln",
+        "name_latin": "Sulloniacae",
+        "name_english": "Brockley Hill Mortaria Kilns",
+        "province": "Britannia",
+        "modern_location": "Elstree / Stanmore, Middlesex, England",
+        "built": 60,
+        "destroyed": 160,
+        "extant_117ce": true,
+        "notes": "Fourteen kilns strung along Watling Street at Brockley Hill turned this Middlesex ridge into Roman Britain's mortaria capital, supplying roughly half of the grinding bowls used across the province at its peak. Production started around 60 CE, twelve miles from Londinium on the road to Verulamium, exactly where the itinerary places the lost posting-station of Sulloniacae. Before these kilns were excavated, scholars assumed Britain imported every mortarium it used from the continent. Trajan's reign found the site past its peak but still working; output finally tailed off after 120 CE and stopped by 160.",
+        "sources": [
+          "UCL, 'Verulamium Region White Ware Production at the Roman kiln site of Brockley Hill'",
+          "Perseus, Princeton Encyclopedia of Classical Sites, 'Sulloniacae'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.6732,
+          30.988
+        ]
+      },
+      "properties": {
+        "id": "poi_marea_akademia_kiln",
+        "category": "kiln",
+        "name_latin": "(figlinae, Marea)",
+        "name_english": "Marea Amphora Kilns",
+        "province": "Aegyptus",
+        "modern_location": "Lake Mariout, near Alexandria, Egypt",
+        "built": -50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "On the shore of Lake Mareotis, potters at Akademia fired the amphorae that carried Alexandria's celebrated wine across the empire, using kilns up to 12 meters wide capable of firing several hundred vessels at once. Strabo praised Mareotic wine as worth aging, and the trade needed a matching flood of containers, which these workshops supplied for the better part of a millennium. Waste dumps of kiln wasters and ceramic slag mark the site alongside the wine presses that fed it. This shore held one of Roman Egypt's densest concentrations of pottery and wine production west of Alexandria.",
+        "sources": [
+          "researchgate.net, ''Marea' on Lake Mareotis: A Roman Amphorae Dump...'",
+          "Khalil, E., 'Mareotis' Waterfront', ancientportsantiques.com"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.97,
+          38.03
+        ]
+      },
+      "properties": {
+        "id": "poi_isturgi_andujar_kiln",
+        "category": "kiln",
+        "name_latin": "Isturgi",
+        "name_english": "Isturgi Terra Sigillata Workshops",
+        "province": "Baetica",
+        "modern_location": "Los Villares de Andújar, Jaén, Spain",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Isturgi ran one of only two major terra sigillata hispanica production complexes on the Iberian peninsula, the other being Tricio, and forty years of digging at Los Villares de Andújar have made it the best understood of the two. Its glossy red tableware turns up everywhere Roman soldiers and settlers lived across Baetica and spilled over into North Africa. Excavators have recovered kilns, wasters, and whole sets of decorated pottery molds documenting exactly how the stamped patterns were made. Production ran through the first and second centuries, putting Trajan's reign right in its productive prime.",
+        "sources": [
+          "dialnet.unirioja.es, 'The production center of hispanic terra sigillata in the Baetica'",
+          "academia.edu, 'El centro de producción de Terra Sigillata Hispánica altoimperial de Andújar'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8697,
+          46.42
+        ]
+      },
+      "properties": {
+        "id": "poi_poetovio_kiln",
+        "category": "kiln",
+        "name_latin": "Poetovio",
+        "name_english": "Poetovio Pottery Workshops",
+        "province": "Pannonia Superior",
+        "modern_location": "Ptuj, Slovenia",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "When Legio XIII Gemina marched into Poetovio from Vindonissa under Claudius, its veterans and camp followers brought a demand for Roman-style tableware that local potters rushed to fill. By the mid-first century, workshops here were turning out fine ware, plain tableware, and oil lamps modeled directly on Italian imports rather than local Celtic forms. The industry served the legionary base and the growing river-crossing town around it on the Drava, one of several such centers, alongside Emona and Celeia, that sprang up along Pannonia's new roads. Western Pannonian production of this kind continued into the later second century.",
+        "sources": [
+          "researchgate.net, 'Roads and Rivers, Pots and Potters in Pannonia - interactions, analogies and differences'"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
