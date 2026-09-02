@@ -1845,3 +1845,17 @@ current by the time you read it.
   placeholder `"ancient_sources": []` from earlier data entry was being read as "already has
   sources" and silently skipped — 4 records in this batch hit it before being caught. Script now
   treats an empty array as absent and replaces it in place.
+- 2026-09-02 · `[09-P0-1]` ancient-sources · 32 new citations across two rounds this shift: 17
+  from civic/religious monuments and economic infrastructure (14+3 of 35+33 attempted), then 15
+  from the 35-record `auxiliary_fort` pool the first round had deliberately skipped as expected
+  low-yield — it outperformed that guess, via Ptolemy's Geography (5), Cassius Dio naming Pontes
+  directly in his Danube-bridge account, and 9 Romano-British forts identified by their own
+  Antonine Itinerary station names. Uncited `confidence:high` pool: 103 → 71.
+- 2026-09-02 · axis 3d villae · 22 new records across two rounds this shift, all in provinces
+  prior shifts flagged thin: 14 in Africa Proconsularis (4 then 10 more once the first round
+  found real spare headroom), 3 in Syria, 3 in Macedonia, 1 each in Galatia and Cappadocia — the
+  last two confirmed at their real ceiling per the literature (Gordion's peristyle house is
+  Roman Galatia's only excavated rural residence per the Penn Museum's own scholarship;
+  Cappadocia's Roman remains skew almost entirely military/infrastructure). `pois.geojson` villa
+  category and total feature count both up; see `SHIFT_LOG.md` for the per-record breakdown.
+- 2026-09-02 · `[05-P2-6]` i18n · closed, see the ticket note above.

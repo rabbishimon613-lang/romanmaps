@@ -122,32 +122,70 @@ looks like a passing-but-doing-nothing test. Filtered on both y (<60) and x (≥
 60px dark rail) to land on the real one. Any future Playwright verification against this header
 should do the same rather than rediscover it a third time.
 
+### Track A, round 2 — pushed further since the shift's own throughput minimum wasn't hit yet
+
+The brief is explicit that the 30-100-features/shift rule of thumb and the axis minimums are
+floors, not targets to stop at once touched — round 1 above landed only 12 new features plus 17
+citations, short of that floor, so this shift kept going with two more parallel agents rather
+than close out early.
+
+**Ancient-sources, the pool round 1 deliberately skipped: 15/35 hits, beating expectations.**
+Explicitly flagged round 1's own guess (that `auxiliary_fort` would be low-yield since forts are
+mostly diploma/inscription-attested) as worth testing rather than trusting untested — it turned
+out wrong in the useful direction. Ptolemy's Geography named five Danube/African/Arabian forts
+directly (Arrabona, Vetus Salina, Lugio, Sitifis, Humayma/Hauarra); Cassius Dio names Pontes
+outright while describing Trajan's Danube bridge (68.13.6); and nine Romano-British forts were
+identified by their own Antonine Itinerary station names (Gobannium, Ygaer/Burrium, Mamucium,
+Bremetennacum, Cambodunum, Verterae, Lavatrae, Vinovia, Brocavum) — fixed one convention slip
+before merging, the research agent's draft used `"author": "Anonymous"` for these where the
+file's existing convention (checked by grep first) is `"author": "Antonine Itinerary"`, the
+work's own name. Real near-misses declined again: Cirpi/"Carpis" and Taliata/"Tanatis" are
+disputed scholarly conjectures, not clean textual matches; Segontium was kept clear of Ptolemy's
+"Setantii," a different tribe entirely (this project's own documented name-confusion trap
+shape). `confidence:high` uncited pool: 86 → 71. Commit `6378b5e`.
+
+**Villae, the province round 1 flagged as having spare headroom: 10 more in Africa
+Proconsularis.** Three El Jem/Thysdrus mansions (House of the Peacock, House of Africa, House
+of the Months), two Hadrumetum/Sousse houses (Sorothus's Neptune Triumph mosaic, predates 117;
+the Virgil-and-muses house, doesn't), Utica's House of the Cascade (predates 117), Acholla's
+Villa of the Triumph of Neptune (inscription-dated to 184 CE by its own builder, senator Asinius
+Rufinus), Dougga's House of Dionysus and Ulysses, Zliten's gladiator-mosaic Villa Dar Buc Ammera
+(coastal Libya, catalogued under this province; its Flavian-vs-Severan dating dispute resolved
+to `extant_117ce:false` per the "when in doubt" rule), and Thuburbo Majus's House of Neptune.
+Checked all 10 new ids against the existing file first, no collisions with round 1's four.
+3 of 10 shipped a verified Commons `image_url`; the rest omitted the field, same "skip rather
+than guess" convention as round 1. `pois.geojson`: 1248 → 1258 features. Commit `cb7adde`.
+
 ### State, verification, next
 
 `npm run validate`: 0 errors, same 7 pre-existing reviewed warnings (the India/China
-diplomacy/neighbor points that sit outside the empire envelope by design) both before and after
-every change — no new warnings introduced by either the citation splices or the new villa
-features. `npm run build` clean on every commit via the pre-push hook. `npm run metrics --
---write`: 1248 POIs, 97.9% deep, 26 thin (the 12 new villae without images are part of that
+diplomacy/neighbor points that sit outside the empire envelope by design) unchanged through
+every commit this shift — no new warnings from any citation splice or new feature batch.
+`npm run build` clean via the pre-push hook on every push. `npm run metrics -- --write`: 1258
+POIs, 97.9% deep, 26 thin (the 22 new villae without images across both rounds are part of that
 thin count, expected).
 
 Commits this shift, in order: `3d9411d` (BOARD.md claim), `13fdac4` (17 ancient-sources
-citations), `e2b7480` (12 new villae), `8093536` (i18n scaffold), plus this log entry's commit
-and a `METRICS.md`/`BOARD.md` refresh. All pushed to `main`.
+citations), `e2b7480` (12 new villae), `8093536` (i18n scaffold), `3a840f8` (round-1 log +
+metrics/board), `6378b5e` (15 more ancient-sources citations), `cb7adde` (10 more villae), plus
+this log entry's commit and a final `METRICS.md` refresh. All pushed to `main`.
 
 **Next shift should pick up:**
 
-- **Track A, ancient-sources:** 86 `confidence:high` POIs remain uncited. This shift deliberately
-  skipped the 35-record `auxiliary_fort` pool as low-yield literary-citation territory —
-  legitimate to try again if a future shift has budget to spare and wants to confirm that call,
-  but temples/civic monuments and named individual sites remain the better-yielding target based
-  on this and prior batches' hit rates.
-- **Track A, villae:** Africa Proconsularis still has real headroom (the research agent found
-  more candidates than it used this round). Galatia and Cappadocia are near their real ceiling
-  per the literature — don't re-spend budget re-searching them without a new angle. The 12 new
-  records all shipped with `image_url` omitted — a dedicated image-only top-up pass across them
-  (and the other ~26 thin records `npm run metrics` tracks) would move real coverage without
-  needing fresh factual research.
+- **Track A, ancient-sources:** 71 `confidence:high` POIs remain uncited — the pool is now
+  dominated by the categories every prior batch (this shift included) has found hardest: tombs,
+  villas, shipwrecks, single-purpose industrial sites. This shift's own auxiliary_fort result
+  (15/35, well above the assumed low yield) is worth remembering before writing off any
+  remaining pool as not worth trying.
+- **Track A, villae:** Africa Proconsularis got 14 new records across this shift's two rounds
+  and may still have some headroom (El Jem/Thysdrus alone has more mosaic-named houses than
+  either round reached), but returns are visibly diminishing — a future shift should sanity-check
+  remaining candidates aren't already-mapped before spending research budget. Galatia and
+  Cappadocia are at their real ceiling per the literature, confirmed twice now — don't re-search
+  them without a genuinely new angle (a different site type, not more villae). All 22 of this
+  shift's new villae shipped with `image_url` omitted or partial — a dedicated image-only top-up
+  pass across them (and the broader ~26 thin records `npm run metrics` tracks) would move real
+  coverage without needing fresh factual research.
 - **Track B:** `BOARD.md` is back down to the same short list of blocked/oversized/spec-missing
   tickets this and several prior shifts have already triaged (`[12-P0-1]`, `[03-P0-1]`,
   `[03-P0-2]` — still no spec, `[13-P0-2]`, `[02-P0-4]`'s glyph-PBF half, `[11-P1-5]`,
