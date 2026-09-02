@@ -35256,7 +35256,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lederata,_archeological_site_in_Veliko_Gradi%C5%A1te.jpg?width=800",
         "image_credit": "Lederata archaeological site · Wikimedia Commons",
-        "image_alt": "Archaeological remains at the Lederata fort site"
+        "image_alt": "Archaeological remains at the Lederata fort site",
+        "ancient_sources": [
+          {
+            "author": "Anonymous (late antique Roman cartographic source)",
+            "work": "Tabula Peutingeriana",
+            "ref": "Danube-Dacia branch road station list: Viminacium - Lederata - Apo Flumen - Arcidava",
+            "note": "Lederata (modern Ram, Serbia) appears as a named station on the road branching from Viminacium toward Dacia on the Peutinger Table; it is the crossing point Trajan is believed to have used to launch the Dacian Wars."
+          }
+        ]
       }
     },
     {
@@ -37188,7 +37196,16 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Castell_Tomen_y_Mur_-_geograph.org.uk_-_442493.jpg?width=800",
-        "image_credit": "Photograph via Wikimedia Commons (geograph.org.uk), CC BY-SA 2.0"
+        "image_credit": "Photograph via Wikimedia Commons (geograph.org.uk), CC BY-SA 2.0",
+        "ancient_sources": [
+          {
+            "author": "Anonymous Roman legionary/auxiliary builders",
+            "work": "Roman Inscriptions of Britain (RIB)",
+            "ref": "RIB 421",
+            "note": "Centurial building-stone found at Tomen-y-Mur itself, built into the fort's stone defences, recording the century of Julius Mansuetus; part of a set of 8 centurial stones documenting the Hadrianic-period rebuilding of the fort in stone.",
+            "quote": "(centuria) Iuli Mans(ueti)"
+          }
+        ]
       }
     },
     {
@@ -37412,7 +37429,16 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Castell_Collen_Roman_Fort_-_geograph.org.uk_-_413626.jpg?width=800",
-        "image_credit": "Photograph by David Medcalf via Wikimedia Commons (geograph.org.uk), CC BY-SA 2.0"
+        "image_credit": "Photograph by David Medcalf via Wikimedia Commons (geograph.org.uk), CC BY-SA 2.0",
+        "ancient_sources": [
+          {
+            "author": "Anonymous (Legio II Augusta vexillation)",
+            "work": "Roman Inscriptions of Britain (RIB)",
+            "ref": "RIB 414",
+            "note": "Fragmentary Antonine-period building inscription found built into the wall of the principia at the center of Castell Collen fort, recording construction by a detachment of Legio II Augusta.",
+            "quote": "VE[XILLATIO] [LEG II] [AVG F(ECIT)]"
+          }
+        ]
       }
     },
     {
@@ -37586,7 +37612,16 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ambleside_Roman_fort_-_geograph.org.uk_-_1761456.jpg?width=800",
-        "image_credit": "Photograph via Wikimedia Commons (geograph.org.uk), CC BY-SA 2.0"
+        "image_credit": "Photograph via Wikimedia Commons (geograph.org.uk), CC BY-SA 2.0",
+        "ancient_sources": [
+          {
+            "author": "Anonymous (funerary dedicant)",
+            "work": "Roman Inscriptions of Britain (RIB)",
+            "ref": "RIB 3218",
+            "note": "Tombstone found near the fort's east gate at Ambleside (Galava) for Flavius Fuscinus and Flavius Romanus, uniquely recording that they were killed in the fort by enemies.",
+            "quote": "...interfectus a hostibus intra finem"
+          }
+        ]
       }
     },
     {
@@ -37785,7 +37820,16 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Castleshaw Roman Fort Entrance - geograph.org.uk - 7257212.jpg?width=800",
         "image_credit": "Entrance earthworks of Castleshaw Roman fort, Saddleworth, via Geograph/Wikimedia Commons",
-        "image_alt": "Grassy earthwork remains marking the entrance of Castleshaw Roman fort"
+        "image_alt": "Grassy earthwork remains marking the entrance of Castleshaw Roman fort",
+        "ancient_sources": [
+          {
+            "author": "Valerius Rufus",
+            "work": "Roman Inscriptions of Britain (RIB)",
+            "ref": "RIB 582",
+            "note": "Silver votive plaque dedicated to the Victory of Legio VI Victrix, found at Tunshill Farm associated with the Castleshaw fort context.",
+            "quote": "Victoriae leg(ionis) VI Vic(tricis) Val(erius) Rufus v(otum) s(olvit) l(ibens) m(erito)"
+          }
+        ]
       }
     },
     {
@@ -37815,7 +37859,16 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ardotalia 5581.JPG?width=800",
         "image_credit": "The earthwork remains of Ardotalia (Melandra Castle) Roman fort at Gamesley, Derbyshire, via Wikimedia Commons",
-        "image_alt": "Earthwork remains of the Ardotalia (Melandra Castle) Roman fort site"
+        "image_alt": "Earthwork remains of the Ardotalia (Melandra Castle) Roman fort site",
+        "ancient_sources": [
+          {
+            "author": "Anonymous (Cohors I Frisiavonum)",
+            "work": "Roman Inscriptions of Britain (RIB)",
+            "ref": "RIB 279",
+            "note": "Centurial building-stone found at Melandra Castle (Ardotalia) itself, near the east angle of the fort, recording construction work by the century of Valerius Vitalis of Cohors I Frisiavonum.",
+            "quote": "c(o)ho(rtis) I Frisiavo(num) (centuria) Val(eri) Vitalis"
+          }
+        ]
       }
     },
     {
@@ -38214,7 +38267,16 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Martin_Henig_at_the_entrance_to_Lydney_Roman_temple,_28_April_2019.jpg?width=800",
         "image_credit": "Entrance to the Roman temple of Nodens, Lydney Park · Wikimedia Commons",
-        "image_alt": "Ruins of the Romano-British temple of Nodens at Lydney Park"
+        "image_alt": "Ruins of the Romano-British temple of Nodens at Lydney Park",
+        "ancient_sources": [
+          {
+            "author": "Silvianus (dedicant)",
+            "work": "Roman Inscriptions of Britain (RIB)",
+            "ref": "RIB 306",
+            "note": "The lead curse tablet found within the temple complex at Lydney Park, in which Silvianus, having lost a ring, dedicates half its value to the god Nodens and curses the thief Senicianus until the ring is returned to the Temple of Nodens.",
+            "quote": "...inter quibus nomen Senicianum nolis intellegere donec perferat usque templum Nodentis"
+          }
+        ]
       }
     },
     {
@@ -38541,7 +38603,16 @@
           "https://en.wikipedia.org/wiki/Coventina",
           "https://historicengland.org.uk/listing/the-list/list-entry/1015914"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Mausaeus (dedicant, optio of Cohors I Frixiavonum)",
+            "work": "Roman Inscriptions of Britain (RIB)",
+            "ref": "RIB 1523",
+            "note": "One of roughly two dozen votive altars recovered from Coventina's Well during John Clayton's 1876 excavation, dedicated to the goddess Coventina by an optio of the First Cohort of Frixiavones.",
+            "quote": "Deae Coventinae Mausaeus optio coh(ortis) I Frixiavo(num) v(otum) s(olvit)"
+          }
+        ]
       }
     },
     {
@@ -38834,7 +38905,15 @@
           "https://en.wikipedia.org/wiki/Arch_of_Trajan_(Timgad)",
           "https://whc.unesco.org/en/list/194/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Colonial administration of Thamugadi",
+            "work": "Corpus Inscriptionum Latinarum VIII",
+            "ref": "CIL VIII 2355",
+            "note": "A tabula-ansata inscription recording the foundation of the colony of Thamugadi by Trajan in 100 CE, found near the arch and generally, though not certainly, associated with it."
+          }
+        ]
       }
     },
     {
@@ -38861,7 +38940,15 @@
           "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_de_Timgad",
           "https://madainproject.com/timgad"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Marcus Lucceius Torquatus Bassianus",
+            "work": "Corpus Inscriptionum Latinarum VIII",
+            "ref": "CIL VIII 17869",
+            "note": "Dedicatory inscription on the theatre's entablature, dated 168 CE under the joint reign of Marcus Aurelius and Lucius Verus, naming the governor and patron who funded the theatre and its porticoes."
+          }
+        ]
       }
     },
     {
@@ -38890,7 +38977,16 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Public_Library,_built_in_the_late_3rd_century_or_early_4th_century_AD,_a_certain_Marcus_Julius_Quintianus_Flavius_Rogatianus_gave_his_home_town_400,000_sesterces_to_fund_it,_Timgad_(Thamugadi,_Numidia),_Algeria_-_52485185102.jpg?width=800",
-        "image_credit": "The Public Library of Timgad, built late 3rd/early 4th century CE · Wikimedia Commons"
+        "image_credit": "The Public Library of Timgad, built late 3rd/early 4th century CE · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Marcus Julius Quintianus Flavius Rogatianus",
+            "work": "L'Annee Epigraphique",
+            "ref": "AE 1908, 12",
+            "note": "Dedicatory inscription on the library building recording that Rogatianus, a vir clarissimae memoriae, bequeathed 400,000 sesterces in his will to fund the library's construction.",
+            "quote": "Ex liberalitate M. Iuli(i) Quintiani Flavi(i) Rogatiani c(larissimae) m(emoriae) v(iri) quam testamento suo Reipublicae Coloniae Thamugadensium patriae suae legavit opus bibliothecae ex sestertium CCCC mil(ibus) num(mum) curante Republica perfectum est."
+          }
+        ]
       }
     },
     {
