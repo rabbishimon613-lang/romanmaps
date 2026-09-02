@@ -40024,6 +40024,264 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.70502,
+          35.289829
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_sollertiana_domus_thysdrus",
+        "category": "villa",
+        "name_latin": "Domus Sollertiana",
+        "name_english": "Sollertiana Domus",
+        "province": "Africa Proconsularis",
+        "modern_location": "El Jem, Tunisia",
+        "built": 210,
+        "extant_117ce": false,
+        "notes": "This patrician house in Thysdrus took its name from an inscription reading Sollertius set into a mosaic threshold. Its floor packed an entire amphitheater scene into one room: five bears and six spotted African cats mauling condemned prisoners, blood spatters picked out in red-brown tesserae. Builders raised the house in the early 3rd century AD, nearly a century after Trajan's death, as El Jem's olive-oil wealth funded its giant amphitheater nearby. The mosaic now hangs in the town's museum.",
+        "sources": [
+          "https://www.researchgate.net/figure/Mosaic-of-damnatio-ad-bestias-Sollertiana-domus-El-Jem-photo-A-Kalinowski_fig9_340907433",
+          "https://www.worldhistory.org/image/19160/damnatio-ad-bestias-mosaic/",
+          "https://vici.org/vici/90714/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.701982,
+          35.289906
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_house_of_the_dionysiac_procession_thysdrus",
+        "category": "villa",
+        "name_english": "House of the Dionysiac Procession",
+        "province": "Africa Proconsularis",
+        "modern_location": "El Jem, Tunisia, about 800 m southwest of the amphitheater",
+        "built": 150,
+        "extant_117ce": false,
+        "notes": "A wealthy household in Thysdrus laid this house's showpiece floor around 150 AD: Dionysus riding a lion in a drunken parade, a tambourine-playing maenad, two satyrs, and Silenus swaying atop a camel. A landowner named Belhareth turned the mosaic up on his own property in 1959, and archaeologist Louis Foucher excavated it the same year. Its floor postdates this map's 117 CE snapshot by more than three decades. The mosaic is now displayed at the El Jem Archaeological Museum.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Maison_de_la_procession_dionysiaque",
+          "https://vici.org/vici/90718/",
+          "https://commons.wikimedia.org/wiki/Category:Mosaic_from_the_house_of_the_dionysian_procession_(El_Jem)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/El%20Jem%20Museum%20mosaic%20dionysos%20detail.jpg?width=800",
+        "image_credit": "El Jem Museum mosaic, Dionysiac procession detail · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.70467,
+          35.290668
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_house_of_the_dolphins_thysdrus",
+        "category": "villa",
+        "name_english": "House of the Dolphins",
+        "province": "Africa Proconsularis",
+        "modern_location": "El Jem, Tunisia",
+        "built": 200,
+        "extant_117ce": false,
+        "notes": "The largest known house at Thysdrus sprawled across roughly 3,500 square meters around a sunken peristyle garden 16 meters square, with a curved marble basin set into one wall facing the main reception room. Excavators named it for a mosaic of dolphins found among its floors. Builders raised it during the town's 2nd- to 3rd-century boom, when olive-oil money was turning El Jem into one of Africa's richest cities, decades after Trajan's 117 CE death.",
+        "sources": [
+          "https://vici.org/vici/90716/",
+          "https://roman-gardens.github.io/province/africa_proconsularis/thysdrus/house_of_the_dolphins/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.75308,
+          36.561562
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_house_of_amphitrite_bulla_regia",
+        "category": "villa",
+        "name_english": "House of Amphitrite",
+        "province": "Africa Proconsularis",
+        "modern_location": "Bulla Regia, near Jendouba, Tunisia",
+        "built": 220,
+        "extant_117ce": false,
+        "notes": "Bulla Regia's most photographed mosaic once passed for the sea-goddess Amphitrite but is now read as the birth of Venus, who rides ashore on two fish-tailed centaurs while cupids ride dolphins beneath her. Craftsmen laid the floor in the 3rd century AD, roughly a century after Trajan's death fixed this map's date. It capped one of the underground reception suites Bulla Regia built to beat Tunisia's summer heat. The house gave its name to the whole excavated quarter.",
+        "sources": [
+          "https://commons.wikimedia.org/wiki/Category:Mosaic_of_the_Marine_Venus_in_Bulla_Regia_(Tunisia)",
+          "https://www.livius.org/pictures/tunisia/jendouba-bulla-regia/bulla-regia-house-of-amphitrite-triumph-of-venus/",
+          "https://vici.org/vici/96879/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Maison%20d'Amphitrite,%20Bulla%20Regia,%20Tunisie,%2017%20ao%C3%BBt%202013.jpg?width=800",
+        "image_credit": "Maison d'Amphitrite, Bulla Regia · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7538,
+          36.560719
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_house_of_fishing_bulla_regia",
+        "category": "villa",
+        "name_english": "House of Fishing",
+        "province": "Africa Proconsularis",
+        "modern_location": "Bulla Regia, near Jendouba, Tunisia",
+        "extant_117ce": false,
+        "notes": "At over 1,700 square meters, this was the largest house ever excavated at Bulla Regia, built around a courtyard sunk partly below ground and lined with marble columns quarried at nearby Simitthus (Chemtou). It took its name from a mosaic of cupids fishing found in its dining room. Archaeologists have traced nine separate building phases here; the underground mansion form the house is known for took shape well after Trajan's 117 CE death.",
+        "sources": [
+          "https://vici.org/vici/96878/",
+          "https://www.academia.edu/40661502/Understanding_the_House_of_Fishing_Bulla_Regia_Tunisia_Stratigraphic_analysis_of_the_building_interpretation_and_modelling_of_the_phase_plans"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.5622,
+          36.3926
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_house_of_the_black_and_white_triclinium_pupput",
+        "category": "villa",
+        "name_english": "House of the Black and White Triclinium",
+        "province": "Africa Proconsularis",
+        "modern_location": "Pupput archaeological park, Yasmine Hammamet, Tunisia — coordinates approximate within the excavated area",
+        "built": 180,
+        "extant_117ce": false,
+        "notes": "This house at Pupput, the seaside town Romans knew on the coast near modern Hammamet, centered on a dining room paved in black-and-white mosaic octagons, squares and hexagons laid out for three reclining couches. A curved marble basin punctuated the colonnaded garden court facing it. Builders raised the house in the late 2nd or early 3rd century AD, decades after this map's 117 CE snapshot. Rescue excavations recovered it in the 1960s during hotel construction along Hammamet's coast.",
+        "sources": [
+          "https://www.patrimoinedetunisie.com.tn/sites/pupput/",
+          "http://zaherkammoun.com/2018/02/20/le-site-archeologique-de-pupput/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.5619,
+          36.3928
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_house_of_the_figured_peristyle_pupput",
+        "category": "villa",
+        "name_english": "House of the Figured Peristyle",
+        "province": "Africa Proconsularis",
+        "modern_location": "Pupput archaeological park, Yasmine Hammamet, Tunisia — coordinates approximate within the excavated area",
+        "built": 420,
+        "extant_117ce": false,
+        "notes": "A mosaic floor at this Pupput house painted an optical trick underfoot: the shadow cast by its own surrounding portico columns, ringed around a small lighthouse wishing sailors safe passage. Small private baths opened off its northeast corner. Archaeologists date the house to the 4th or 5th century AD, roughly three centuries after Trajan's death set this map's snapshot. Like its neighbors, it surfaced in 1960s rescue digs ahead of hotel development on the Hammamet coast.",
+        "sources": [
+          "https://www.patrimoinedetunisie.com.tn/sites/pupput/",
+          "https://roman-gardens.github.io/place/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.903303,
+          36.401203
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_house_of_the_labyrinth_thuburbo_majus",
+        "category": "villa",
+        "name_english": "House of the Labyrinth",
+        "province": "Africa Proconsularis",
+        "modern_location": "Thuburbo Majus, near El Fahs, Tunisia",
+        "built": 290,
+        "extant_117ce": false,
+        "notes": "This house near Thuburbo Majus's forum took its name from a floor mosaic of Theseus gripping the Minotaur's horn mid-blow inside a geometric maze, human remains scattered at his feet. Craftsmen laid the pavement at the end of the 3rd century AD, nearly two centuries after Trajan's death. Thuburbo Majus itself only became a municipium under Hadrian in 128 CE, just over a decade past this map's snapshot. The mosaic now hangs in the Bardo Museum in Tunis.",
+        "sources": [
+          "https://zaherkammoun.com/2017/02/27/la-mosaique-de-combat-de-thesee-et-du-minotaure-de-thuburbo-majus/",
+          "https://www.voyagevirtuel.co.uk/tunisie/pages/thuburbo-majus-maison-du-labyrinthe-mosaique-79.php"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.17361,
+          36.60694
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_house_of_industrius_uthina",
+        "category": "villa",
+        "name_english": "House of Industrius",
+        "province": "Africa Proconsularis",
+        "modern_location": "Oudna (ancient Uthina), about 30 km south of Tunis, Tunisia — coordinates approximate within the excavated area",
+        "built": 290,
+        "extant_117ce": false,
+        "notes": "A house owner named Industrius stamped his name into a mosaic inscription at this roughly 700-square-meter peristyle house at Uthina, and archaeologists still call the place after him. Its ceremonial hall floor showed Venus Anadyomene rising from the sea, flanked by two nude nymphs holding basins for her bath. Builders raised the house toward the end of the 3rd century AD, about two centuries after Trajan's 117 CE death. The Venus mosaic now hangs in the Bardo Museum.",
+        "sources": [
+          "https://steemit.com/photography/@aymenkhemakhem/the-archaeological-site-of-outhna-tunisia",
+          "https://www.nachoua.com/English/mosaiques.htm"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.218772,
+          36.422151
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_house_of_the_trifolium_dougga",
+        "category": "villa",
+        "name_english": "House of the Trifolium",
+        "province": "Africa Proconsularis",
+        "modern_location": "Dougga (ancient Thugga), Tunisia",
+        "built": 220,
+        "extant_117ce": false,
+        "notes": "The largest and best-preserved private house excavated at Dougga takes its name from a trefoil-shaped suite of three rounded rooms opening off its colonnaded garden courtyard, a plan some archaeologists have read as a private bath or even an inn. Builders raised it in the 3rd century AD, more than a hundred years after Trajan's death fixed this map's 117 CE snapshot. It sits within Dougga's UNESCO World Heritage core, uphill from the Capitol and forum.",
+        "sources": [
+          "https://commons.wikimedia.org/wiki/Category:House_of_the_Trifolium",
+          "https://www.wikidata.org/wiki/Q9090018",
+          "https://zaherkammoun.com/2017/03/11/la-maison-du-trifolium-de-dougga/"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
