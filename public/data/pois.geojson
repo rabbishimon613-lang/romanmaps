@@ -39649,6 +39649,274 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7128,
+          35.2903
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_house_of_the_peacock_thysdrus",
+        "category": "villa",
+        "name_english": "House of the Peacock",
+        "province": "Africa Proconsularis",
+        "modern_location": "El Jem, Tunisia",
+        "built": 170,
+        "extant_117ce": false,
+        "notes": "Builders raised this Thysdrus mansion around AD 170 in the city's wealthy southeastern quarter. Its floors carried a vivid peacock mosaic, the bird's tail rendered in hundreds of tiny colored tesserae. The house anchors an archaeological park alongside the House of Africa and the Sollertiana Domus. Excavators freed it from centuries of silt only in the 1990s, near El Jem's amphitheater.",
+        "sources": [
+          "https://www.patrimoinedetunisie.com.tn/en/museums/the-el-jem-museum/overview/",
+          "https://www.doaks.org/resources/north-africa/urbanism/el-jem",
+          "https://www.romeartlover.it/Thysdru2.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7135,
+          35.2908
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_house_of_africa_thysdrus",
+        "category": "villa",
+        "name_english": "House of Africa",
+        "province": "Africa Proconsularis",
+        "modern_location": "El Jem, Tunisia",
+        "built": 170,
+        "extant_117ce": false,
+        "notes": "This Thysdrus villa, built around AD 170, sprawled across some 3,000 square meters with its own private baths. Two medallion mosaics gave it its name, one showing the goddess Africa crowned with an elephant-skin headdress, among the only known ancient depictions of the personified continent. Excavators uncovered the house in the 1990s and moved its floors to the El Jem Archaeological Museum. The Africa medallion remains one of the rarest mosaic subjects found in Roman Tunisia.",
+        "sources": [
+          "https://www.amazon.com/house-africa-thysdrus-Discovery-Reconstruction/dp/9973954114",
+          "https://zaherkammoun.com/2017/04/21/les-mosaiques-de-la-maison-dafrica-a-el-jem/",
+          "https://www.doaks.org/resources/north-africa/urbanism/el-jem"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7167,
+          35.2967
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_house_of_the_months_thysdrus",
+        "category": "villa",
+        "name_english": "House of the Months",
+        "province": "Africa Proconsularis",
+        "modern_location": "El Jem, Tunisia",
+        "built": 225,
+        "extant_117ce": false,
+        "notes": "Sometime in the first half of the third century, a Thysdrus household paved a room with sixteen panels charting the twelve months and four seasons. The calendar mosaic is one of only two known ancient examples anywhere that name the months outright. Looters and time scattered its panels over the centuries; surviving pieces now sit split between the Sousse and Bardo museums. The house itself vanished under modern El Jem, known today only through this floor.",
+        "sources": [
+          "https://www.researchgate.net/figure/The-Mosaic-of-the-Months-House-of-the-Months-Thysdrus-modern-El-Djem-third-century_fig1_365894834",
+          "https://commons.wikimedia.org/wiki/File:Mosaic_with_the_months_of_the_year,_starting_with_the_Roman_first_month_March,_from_Thysdrus_(El_Jem),_1st_half_of_the_3rd_century_AD,_Sousse_Archaeological_Museum,_Tunisia.jpg",
+          "https://www.doaks.org/resources/north-africa/urbanism/el-jem"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.642,
+          35.828
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_house_of_sorothus_hadrumetum",
+        "category": "villa",
+        "name_english": "House of Sorothus",
+        "province": "Africa Proconsularis",
+        "modern_location": "Sousse, Tunisia",
+        "built": 100,
+        "extant_117ce": true,
+        "notes": "Soldiers under General Bertrand stumbled onto this Hadrumetum house while digging in Sousse in 1886. Its floor held 56 medallions of half-bird creatures, Nereids, and mermaids playing instruments around a central panel of Neptune riding a chariot of four sea beasts. The mosaic dates to the first or second century, making it one of the earliest large marine floors in Roman Africa. It now hangs vertically in the Bardo Museum, too big to lie flat in its old gallery.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Neptune_Triumph_and_the_House_of_Sorothus_mosaic",
+          "https://www.wikidata.org/wiki/Q89032052"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Triumph_of_Neptunus_mosaic_in_the_Bardo_National_Museum_from_Sousse.jpg?width=800",
+        "image_credit": "Triumph of Neptune mosaic, House of Sorothus, Bardo National Museum · Wikimedia Commons",
+        "image_alt": "Roman mosaic of Neptune riding a chariot pulled by sea creatures, surrounded by medallions of Nereids and marine monsters"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.6404,
+          35.8232
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_house_of_virgil_hadrumetum",
+        "category": "villa",
+        "name_english": "House of Virgil",
+        "province": "Africa Proconsularis",
+        "modern_location": "Sousse, Tunisia",
+        "built": 250,
+        "extant_117ce": false,
+        "notes": "Workers uncovered this Hadrumetum house in 1896 and found a floor unlike any other in Roman Africa. It showed the poet Virgil seated between the muses Clio and Melpomene, an open scroll of the Aeneid across his knees. The floor dates to the third century, more than a century after Trajan's death, and now fills a room of its own in the Bardo Museum. No inscription names the owner, but the literary program marks a household of real ambition.",
+        "sources": [
+          "https://sharinghistory.museumwnf.org/database_item.php?id=object%3BAWE%3Btn%3B91%3Ben",
+          "https://www.livius.org/pictures/tunisia/sousse-hadrumetum/hadrumetum-house-of-virgil-mosaic-of-virgil/",
+          "https://digitalcollections.nypl.org/items/9e97f1c0-1418-0131-25fc-58d385a7b928"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0632,
+          37.0704
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_house_of_the_cascade_utica",
+        "category": "villa",
+        "name_english": "House of the Cascade",
+        "province": "Africa Proconsularis",
+        "modern_location": "Utica, Tunisia",
+        "built": 100,
+        "extant_117ce": true,
+        "notes": "Utica's House of the Cascade took its name from a fountain in a northern room, its basin paved with Eros fishing from a boat amid darting fish. Dated to the first or second century, the mosaic predates comparable fishing scenes elsewhere in Roman Africa by roughly a century. The house filled most of insula II, its rooms arranged around a central courtyard. No inscription names an owner, but its scale suggests a family enriched by Utica's fish trade.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/House_of_the_Cascade",
+          "https://madainproject.com/house_of_the_cascade",
+          "https://www.mosaicnorthafrica.com/utica-tunisia-coastal-archaeological-site/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0206,
+          35.0796
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_triumph_of_neptune_acholla",
+        "category": "villa",
+        "name_english": "Villa of the Triumph of Neptune",
+        "province": "Africa Proconsularis",
+        "modern_location": "Henchir Botria (ancient Acholla), near Chebba, Tunisia",
+        "built": 184,
+        "extant_117ce": false,
+        "notes": "An inscription found inside named its builder outright: Asinius Rufinus, an Acholla-born senator whom Commodus made consul in AD 184, the year he raised this seaside villa. Its peristyle held three semicircular fountains lined with marine mosaics, facing a room paved with a Bacchic procession and Neptune's triumph. French and Tunisian teams excavated the site starting in 1954. The villa had lain abandoned on the coast south of Cape Kaboudia for over 1,700 years.",
+        "sources": [
+          "https://www.cambridge.org/core/journals/classical-review/article/abs/triumph-of-neptune-s-gozlan-la-maison-du-triomphe-de-neptune-a-acholla-botria-tunisie-1-les-mosaiques-etude-ceramique-par-ariane-bourgeois-collection-de-lcole-francaise-de-rome-160-pp-xviii308-72-figs-2-folding-plans-103-plates-rome-ecole-francaise-de-rome-institut-national-ddarcheologie-et-ddart-de-tunis-1992-paper/3E5A6DECB305A70A08B072F991B890EC",
+          "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Dacholla"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2183,
+          36.4223
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_dionysus_ulysses_dougga",
+        "category": "villa",
+        "name_english": "House of Dionysus and Ulysses",
+        "province": "Africa Proconsularis",
+        "modern_location": "Dougga (ancient Thugga), Tunisia",
+        "built": 260,
+        "extant_117ce": false,
+        "notes": "Thugga's wealthiest residents built this house south of the Caracalla Baths in the second half of the third century. Excavators pulled nine mosaics from its rooms, one showing Dionysus overwhelming the Tyrrhenian pirates, another showing Ulysses lashed to his mast while the sirens sang. The artist packed real tension into the sailors' faces despite a tiny field of tesserae to work with. Seven of the nine mosaics now hang in the Bardo Museum; two remain in storage.",
+        "sources": [
+          "https://www.romeartlover.it/Thugga3.html",
+          "https://www.inp2020.tn/en/2020/04/08/_dougga/",
+          "https://www.academia.edu/37642296/Dionysus_Mosaic_of_Dougga"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bardo_Mosaic_Ulysses.jpg?width=800",
+        "image_credit": "Ulysses and the Sirens mosaic, House of Dionysus and Ulysses, Bardo National Museum · Wikimedia Commons",
+        "image_alt": "Roman mosaic of Ulysses tied to a ship's mast while sirens sing nearby"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5583,
+          32.4983
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_dar_buc_ammera_zliten",
+        "category": "villa",
+        "name_english": "Villa Dar Buc Ammera",
+        "province": "Africa Proconsularis",
+        "modern_location": "Zliten, Libya",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Italian archaeologist Salvatore Aurigemma dug into this seaside villa near Leptis Magna in 1913 and found a floor unlike anything else in Roman Libya. Its mosaic strung together gladiators in combat, condemned men facing leopards, and musicians in one continuous strip of arena spectacle. Scholars have argued over its date for over a century, some placing it under the Flavians around AD 100, others generations later under the Severans. The mosaic now anchors the Archaeological Museum of Tripoli.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Zliten_mosaic",
+          "https://www.livius.org/articles/place/villa-dar-buc-ammera/",
+          "https://vici.org/vici/7043/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gladiators_from_the_Zliten_mosaic.jpg?width=800",
+        "image_credit": "Gladiators from the Zliten mosaic, Villa Dar Buc Ammera · Wikimedia Commons",
+        "image_alt": "Roman floor mosaic showing armed gladiators fighting in combat"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.8719,
+          36.4028
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_house_of_neptune_thuburbo_majus",
+        "category": "villa",
+        "name_english": "House of Neptune",
+        "province": "Africa Proconsularis",
+        "modern_location": "Thuburbo Majus, Tunisia",
+        "built": 210,
+        "extant_117ce": false,
+        "notes": "Thuburbo Majus's House of Neptune wrapped four porticoes on twelve columns around a central peristyle garden when it went up in the early third century. Restorers left its geometric floors in place but shipped the finer figural panels to the Bardo Museum, since figural mosaics were rare among Thuburbo's mostly geometric houses. The city itself started as an Augustan veteran colony in 27 BC, two centuries earlier. It remains one of the best-preserved houses on the site today.",
+        "sources": [
+          "https://www.romeartlover.it/Thuburbo.html",
+          "https://www.college-de-france.fr/en/agenda/guest-lecturer/the-mosaic-houses-of-thuburbo-majus-tunisia",
+          "https://followinghadrianphotography.com/2025/04/05/thuburbo-majus/"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
