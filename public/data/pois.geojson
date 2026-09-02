@@ -41739,6 +41739,676 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.1546,
+          52.2704
+        ]
+      },
+      "properties": {
+        "id": "poi_droitwich_salinae",
+        "category": "salina",
+        "name_latin": "Salinae",
+        "name_english": "Droitwich Salt Works",
+        "province": "Britannia",
+        "modern_location": "Droitwich Spa, Worcestershire, England",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Brine springs gave this Worcestershire town its Roman name outright, Salinae, and a fort at nearby Dodderhill went up largely to guard the trade. Waterlogged ground preserved wooden troughs, hearths, and mountains of briquetage, the crude fired-clay containers workers used to dry and ship the salt. Production here ran unbroken from the Iron Age through the Roman occupation and on into the Middle Ages. A villa overlooking the springs likely housed the official who oversaw the whole operation.",
+        "sources": [
+          "https://historicengland.org.uk/listing/the-list/list-entry/1020256",
+          "https://www.museumsworcestershire.org.uk/avada_portfolio/roman-worcestershire/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Droitwich_Spa_Vines_Park_1.jpg?width=800",
+        "image_credit": "Vines Park, Droitwich Spa, site of the Roman brine springs · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4409,
+          53.1928
+        ]
+      },
+      "properties": {
+        "id": "poi_middlewich_salinae",
+        "category": "salina",
+        "name_latin": "Salinae",
+        "name_english": "Middlewich Salt Works",
+        "province": "Britannia",
+        "modern_location": "Middlewich, Cheshire, England",
+        "built": -50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Cheshire's brine reserves earned this settlement the same functional name, Salinae, as its sister town Droitwich, and it gives up some of Roman Britain's best physical evidence for how salt actually got made. Excavated brine pits, twin evaporation kilns, and storage dolia have all turned up at a single worker's yard here. Waterlogging preserved timber equipment intact, letting archaeologists reconstruct the whole process from pit to finished block. The trade already had Iron Age roots before Rome arrived and never let up under occupation.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_Middlewich",
+          "https://www.researchgate.net/publication/287122456_Excavations_on_a_Roman_Salt-working_Site_at_Jersey_Way_Middlewich_Cheshire"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.607,
+          51.535
+        ]
+      },
+      "properties": {
+        "id": "poi_canvey_island_saltern",
+        "category": "salina",
+        "name_latin": null,
+        "name_english": "Canvey Island Red Hill Saltern",
+        "province": "Britannia",
+        "modern_location": "Canvey Island, Essex, England",
+        "built": -100,
+        "destroyed": 300,
+        "extant_117ce": true,
+        "notes": "Fire-scorched clay gave this low Thames-estuary mound its telltale rust color, one of hundreds of so-called Red Hills that once ringed the Essex coast. Workers dug shallow lagoons to trap seawater, then boiled the brine down over hearths inside clay-walled furnaces until only salt cakes remained. A scheduled saltern survives southeast of Great Russell Head Farm, its buried tanks and briquetage still legible in the marsh soil. Essex once held over three hundred such mounds.",
+        "sources": [
+          "https://historicengland.org.uk/listing/the-list/list-entry/1019038",
+          "https://en.wikipedia.org/wiki/Red_hill_(salt_making)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.361,
+          30.426
+        ]
+      },
+      "properties": {
+        "id": "poi_wadi_natrun",
+        "category": "salina",
+        "name_latin": "Scetis / Nitriae",
+        "name_english": "Wadi Natrun Natron Works",
+        "province": "Aegyptus",
+        "modern_location": "Wadi El Natrun, Beheira Governorate, Egypt",
+        "built": -3000,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A chain of alkaline lakes sunk twenty-three meters below sea level in Egypt's western desert supplied natron, the sodium salt that dried and preserved mummies for millennia before Rome ever arrived. Glass factories sprang up right beside the lakes, since natron was also the flux glassmakers needed to melt sand into glass, tying this remote valley into Mediterranean trade. Harvesting ran on an industrial scale, caravanned out to the Nile and beyond.",
+        "sources": [
+          "https://www.saltworkconsultants.com/wadi-el-natrun-depression-egypt/",
+          "https://www.researchgate.net/publication/229535892_THe_Evaporitic_Deposits_Of_Lake_Fazda_Wadi_Natrun_Egypt_And_Their_Use_In_Roman_Glass_Production"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Wadi_El_Natrun_lake.jpg?width=800",
+        "image_credit": "One of the natron lakes of Wadi El Natrun · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.6417,
+          42.5581
+        ]
+      },
+      "properties": {
+        "id": "poi_anchialos_pomorie_salinae",
+        "category": "salina",
+        "name_latin": "Anchialus",
+        "name_english": "Pomorie Salt Pans",
+        "province": "Thracia",
+        "modern_location": "Pomorie, Burgas Province, Bulgaria",
+        "built": -400,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Founded by colonists from Apollonia on a narrow peninsula whose very name meant 'near the salt,' this Black Sea town built its fortune on shallow lagoon salt pans still worked today. Rome absorbed it into Thrace around 45 CE, and under Trajan the town grew enough to win city status and mint its own coins. Roman house foundations and heaps of amphora sherds have turned up across the settlement. Salt harvested here later supplied Constantinople itself.",
+        "sources": [
+          "https://bnr.bg/en/post/100867758/black-seas-pomorie-a-historical-place-to-revisit",
+          "https://en.wikipedia.org/wiki/Salt_Museum,_Pomorie"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pomorie_saltpans.jpg?width=800",
+        "image_credit": "The Pomorie salt pans, Bulgaria · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.959979,
+          36.52
+        ]
+      },
+      "properties": {
+        "id": "poi_giufi_salaria",
+        "category": "salina",
+        "name_latin": "Giufi Salaria",
+        "name_english": "Giufi Salaria Salt Town",
+        "province": "Africa Proconsularis",
+        "modern_location": "Henchir Bir Mcherga, Zaghouan Governorate, Tunisia",
+        "built": -30,
+        "destroyed": 650,
+        "extant_117ce": true,
+        "notes": "This Numidian civitas carried the epithet Salaria, salt-related, right in its official Roman name, distinguishing it from another African town called plain Giufi. It sat beside the shallow salt pan now known as Sebkha-El-Coursia, whose flats still work by the same solar-evaporation process Roman-era residents relied on. Two of its bishops are recorded attending church councils at Carthage in the fifth and seventh centuries, proof the town endured for centuries after Trajan's reign.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sebkha-El-Coursia",
+          "https://www.trismegistos.org/place/17073"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1466,
+          39.2459
+        ]
+      },
+      "properties": {
+        "id": "poi_molentargius_salinae",
+        "category": "salina",
+        "name_latin": "Salinae Carales",
+        "name_english": "Molentargius Salt Pans",
+        "province": "Sardinia et Corsica",
+        "modern_location": "Cagliari, Sardinia, Italy",
+        "built": -300,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Phoenician settlers first worked the shallow lagoon east of Carales, and Roman-era operators kept the evaporation ponds running as one of Sardinia's richest sea-salt sources. The wetland basin here, now a protected park between Cagliari and Quartu Sant'Elena, drew its later name from the donkeys, molenti, that once hauled the harvested salt to market. Flamingos have replaced the salt-rakers, but the same eleven-hundred-hectare basin survives largely intact, worked without a real break until 1985.",
+        "sources": [
+          "https://www.sardegnaturismo.it/en/explore/park-molentargius-saline",
+          "https://www.parks.it/parco.molentargius/Epun_dettaglio.php?id_pun=320"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Molentargius-Saline.jpg?width=800",
+        "image_credit": "Molentargius salt pans near Cagliari, Sardinia · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.1806,
+          44.2411
+        ]
+      },
+      "properties": {
+        "id": "poi_aenona_nin_salinae",
+        "category": "salina",
+        "name_latin": "Aenona",
+        "name_english": "Nin Salt Works",
+        "province": "Dalmatia",
+        "modern_location": "Nin, Zadar County, Croatia",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This small tidal-island town joined the empire in 9 CE after Rome crushed the Great Illyrian Revolt, gaining causeway bridges and a road to nearby Iader. Shallow lagoons around Aenona made it one of many eastern Adriatic towns whose villas and townsfolk worked their own saltpans, a pattern archaeologists have traced up and down this coast. Rising seas have swallowed much of the ancient evidence, but Nin's saltpans still work the same ground today.",
+        "sources": [
+          "https://link.springer.com/article/10.1007/s11457-021-09322-z",
+          "https://en.wikipedia.org/wiki/Nin,_Croatia"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.4933,
+          44.6117
+        ]
+      },
+      "properties": {
+        "id": "poi_chersonesus_salinae",
+        "category": "salina",
+        "name_latin": "Chersonesus Taurica",
+        "name_english": "Chersonesus Salt Lakes",
+        "province": "Chersonesus Taurica (free city, Roman protectorate)",
+        "modern_location": "Sevastopol, Crimea",
+        "built": -400,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Strabo described a lagoon of saltworks above the gulf beside this Greek colony on Crimea's southwestern tip, and the orator Dio Chrysostom wrote of vast pans supplying salt to Greeks and Scythians alike. Rome took the city under its protection from the late Republic onward and, under Vespasian, garrisoned nearby Charax to guard the Bosporan trade routes its salt exports moved along. By 117 CE the city stood as a free but Roman-protected hub for Black Sea salt and grain shipping.",
+        "sources": [
+          "http://www.attalus.org/names/c/chersonesus.html",
+          "https://en.wikipedia.org/wiki/Chersonesus"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.6681456,
+          37.6158112
+        ]
+      },
+      "properties": {
+        "id": "poi_arva_kilns",
+        "category": "kiln",
+        "name_latin": "Arva",
+        "name_english": "Arva Amphora Kilns",
+        "province": "Hispania Baetica",
+        "modern_location": "Alcolea del Río, Seville Province, Spain",
+        "built": 40,
+        "destroyed": 250,
+        "extant_117ce": true,
+        "notes": "Three kilns dedicated to firing Dressel 20 olive-oil amphorae turned up beside the Roman river town of Arva during a 1991 excavation near its bathhouse. Barges loaded these globular jars straight onto the Guadalquivir for the run down to Hispalis and out to Ostia and the rest of the empire. One of the kilns dates squarely to the Flavian-Trajanic years, meaning it was firing amphorae right around 117 CE. Stamped handles from the workshop have surfaced at find-spots strung along the river valley.",
+        "sources": [
+          "https://www.turismosevilla.org/en/what-see-and-do/heritage/monuments/roman-town-arva",
+          "http://amphorae.icac.cat/amphora/dressel-20-guadalquivir-valley"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.0880998,
+          37.592469
+        ]
+      },
+      "properties": {
+        "id": "poi_las_delicias_kilns",
+        "category": "kiln",
+        "name_latin": "Astigi (vicinity)",
+        "name_english": "Las Delicias Amphora Kilns",
+        "province": "Hispania Baetica",
+        "modern_location": "Écija, Seville Province, Spain",
+        "built": 30,
+        "destroyed": 250,
+        "extant_117ce": true,
+        "notes": "Three kilns on a bend of the Genil river turned out little besides Dressel 20 olive-oil amphorae for over two centuries, backed by an attached villa and refuse dumps covering some four thousand square meters. Rare potters' stamps from this workshop have been traced to find-spots scattered along the Genil and Guadalquivir. Production ran continuously from the Julio-Claudian period into the third century CE, squarely bracketing 117 CE.",
+        "sources": [
+          "https://figlinaehispanae.icac.cat/yacimiento/alfar-de-las-delicias/",
+          "https://www.researchgate.net/publication/322163231_Investigacion_arqueologica_en_el_alfar_de_anforas_Dressel_20_de_Las_Delicias_Ecija_Sevilla_2013-2015_un_primer_balance"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.201347,
+          37.660331
+        ]
+      },
+      "properties": {
+        "id": "poi_embalse_judio_kilns",
+        "category": "kiln",
+        "name_latin": null,
+        "name_english": "Embalse del Judío Amphora Kilns",
+        "province": "Hispania Baetica",
+        "modern_location": "near Palma del Río, Córdoba Province, Spain",
+        "built": 100,
+        "destroyed": 400,
+        "extant_117ce": true,
+        "notes": "A pottery workshop on the Genil's left bank turned out Dressel 20 oil amphorae alongside plain wares, roof tiles, and bricks, judging by the overfired wasters littering the site. Two handles bearing previously unpublished stamps came out of the densest concentration of ceramic debris found here. The site sits within the Guadalquivir valley's dense cluster of Baetican oil-amphora workshops, active from roughly the 1st through 4th centuries CE.",
+        "sources": [
+          "https://figlinaehispanae.icac.cat/yacimiento/embalse-del-judio-ribera-izquierda/",
+          "https://figlinaehispanae.icac.cat/yacimiento/embalse-del-judio-ribera-derecha/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.93697,
+          43.27353
+        ]
+      },
+      "properties": {
+        "id": "poi_salleles_daude_amphoralis",
+        "category": "kiln",
+        "name_latin": "Officina figuli, Salsulae (vicinity)",
+        "name_english": "Amphoralis Pottery Workshops",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Sallèles-d'Aude, Aude, France",
+        "built": 10,
+        "destroyed": 300,
+        "extant_117ce": true,
+        "notes": "Kilns here, some big enough to hold seventy cubic meters of pottery per firing, turned out the flat-bottomed Gauloise 4 amphora that carried Narbonensis wine across the empire's western provinces. Discovered starting in 1976 twelve kilometers north of Narbo Martius, the workshop also produced roof tiles and tableware through its centuries of operation. Gauloise 4 output took off from the mid-1st century CE and was still running full tilt when Trajan died in 117.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Atelier_de_poterie_antique_de_Sall%C3%A8les-d'Aude",
+          "https://musees-occitanie.fr/musee/amphoralis/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amphoralis_04.jpg?width=800",
+        "image_credit": "Excavated kilns at the Amphoralis site, Sallèles-d'Aude · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.449853,
+          43.566134
+        ]
+      },
+      "properties": {
+        "id": "poi_saint_bezard_aspiran",
+        "category": "kiln",
+        "name_latin": "Villa of Quintus Iulius Priscus",
+        "name_english": "Saint-Bézard Pottery and Wine Estate",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Aspiran, Hérault, France",
+        "built": -10,
+        "destroyed": 250,
+        "extant_117ce": true,
+        "notes": "An Italian settler from the Bay of Naples named Quintus Iulius Priscus founded this combined wine estate and pottery works in the Hérault valley at the start of the 1st century CE. Its kilns fired several Gaulish amphora types, Gauloise 4, 7, and 9 among them, while the estate's own vineyards supplied the wine those jars carried to market. A colonnaded courtyard villa of some twenty-five hundred square meters anchored the complex, still working when Trajan died in 117 CE.",
+        "sources": [
+          "https://journals.openedition.org/pallas/3383",
+          "https://www.persee.fr/doc/ran_0557-7705_2012_num_45_1_1830"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4017,
+          43.7228
+        ]
+      },
+      "properties": {
+        "id": "poi_pisae_sigillata",
+        "category": "kiln",
+        "name_latin": "Pisae",
+        "name_english": "Pisa Fine-Ware Workshops",
+        "province": "Italia",
+        "modern_location": "Pisa, Tuscany, Italy",
+        "built": 1,
+        "destroyed": 150,
+        "extant_117ce": true,
+        "notes": "As Arretium's sigillata boom faded after Augustus, this Tuscan port city inherited much of the trade, becoming the leading Italian source of glossy red-slip tableware through the 1st century CE. Chemical testing of pottery from the Roman base at Haltern in Germany traced fully thirty percent of its fine ware to Pisan workshops, three times what came from Arezzo. Potters here worked the same industrial molded-relief tradition, just shifted downriver to a busier port.",
+        "sources": [
+          "https://potsherd.net/atlas/Ware/ITTS.html",
+          "https://www.terredipisa.it/en/attrazione/the-ceramics-tradition-in-the-terre-di-pisa/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.122,
+          40.8241
+        ]
+      },
+      "properties": {
+        "id": "poi_puteoli_sigillata",
+        "category": "kiln",
+        "name_latin": "Puteoli",
+        "name_english": "Puteoli Fine-Ware Workshops",
+        "province": "Italia",
+        "modern_location": "Pozzuoli, Naples Province, Italy",
+        "built": -30,
+        "destroyed": 150,
+        "extant_117ce": true,
+        "notes": "A huge cache of vessels and molds unearthed here in 1873-74 revealed a Bay of Naples workshop turning out glossy red-slip sigillata for export across the western Mediterranean. Puteoli was already the empire's busiest commercial harbor before Ostia eclipsed it, giving its potters a ready-made shipping network. Production drew on Apennine clay hauled in from as far as Salerno, feeding a fine-ware industry that ran alongside the port's glass and grain trades into Trajan's reign.",
+        "sources": [
+          "https://facem.at/img/pdf/Gassner_Sigillata_2012_12_06.pdf",
+          "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0006%3Aentry%3Dputeoli"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.828,
+          45.769
+        ]
+      },
+      "properties": {
+        "id": "poi_lugdunum_la_muette",
+        "category": "kiln",
+        "name_latin": "Lugdunum (vicus figulinarum)",
+        "name_english": "La Muette Pottery Workshop, Lyon",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Lyon, Rhone, France",
+        "built": -15,
+        "destroyed": 110,
+        "extant_117ce": false,
+        "notes": "Discovered by chance on Lyon's Saone quays in 1966, this workshop turned out molded sigillata so close to Arretine originals that scholars mistook its wares for genuine Italian imports for decades. At least sixty individual potters' names are known from stamps found here, several tied to branch craftsmen who relocated from Arezzo. Chemical testing of pottery from the Roman fort at Haltern in Germany credited half its fine ware to this workshop. Its run ended in the early 2nd century, already cold by 117 CE.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Atelier_de_poterie_antique_de_Lyon-la_Muette",
+          "https://www.persee.fr/doc/racf_0035-0753_1968_num_7_1_1419"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.312556,
+          36.502403
+        ]
+      },
+      "properties": {
+        "id": "poi_fundus_neronianus",
+        "category": "estate",
+        "name_latin": "Saltus/Fundus Neronianus",
+        "name_english": "Ain el-Djemala Imperial Estate",
+        "province": "Africa Proconsularis",
+        "modern_location": "Bagradas Valley, near Testour, Tunisia",
+        "built": 60,
+        "destroyed": 250,
+        "extant_117ce": true,
+        "notes": "This Bagradas valley property took its name, Fundus Neronianus, from Nero, whose confiscations after the great fire and various conspiracies swelled North Africa's imperial estates in the 60s CE. A Hadrianic-era inscription found here preserves a procurators' letter applying the lex Manciana, letting tenant farmers break new ground on unused imperial land for a crop share. The rescript itself dates just after Trajan's death, but it reaffirmed tenure the estate had run under for decades.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Lex_Manciana",
+          "https://www.researchgate.net/publication/335525005_Il_sito_di_Ain_Wassel_e_il_contesto_rurale_inquadramento_della_ricerca"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Sermo procuratorum (imperial procurators' rescript)",
+            "work": "CIL VIII 25943",
+            "ref": "25943",
+            "note": "A Hadrianic-period inscription from Ain el-Djemala records a letter of the imperial procurators applying the lex Manciana to the fundus Neronianus, distinguishing its saltus (a portion of the larger fundus) and authorizing coloni to bring unused land under cultivation for a share of the harvest."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.923353,
+          35.451475
+        ]
+      },
+      "properties": {
+        "id": "poi_saltus_beguensis",
+        "category": "estate",
+        "name_latin": "Saltus Beguensis",
+        "name_english": "Saltus Beguensis Estate",
+        "province": "Africa Proconsularis",
+        "modern_location": "Henchir el-Begar, Kasserine Governorate, Tunisia",
+        "built": -50,
+        "destroyed": 250,
+        "extant_117ce": true,
+        "notes": "Casae, the estate village at the heart of this senatorial saltus southwest of Sufes, won imperial permission for a fortnightly market under a senate decree of 138 CE preserved on stone. The estate belonged to senator Lucilius Africanus, and the market grant recognized a rural economy already well established. African saltus estates like this one were being surveyed and worked for elite absentee owners as far back as the 1st century BCE, meaning Casae was long since a working farm center by 117 CE.",
+        "sources": [
+          "https://oxrep.classics.ox.ac.uk/popup.php?ste=89",
+          "https://www.trismegistos.org/place/17230"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1116417,
+          41.6826306
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_magna_anagni",
+        "category": "estate",
+        "name_latin": "Villa Magna",
+        "name_english": "Villa Magna",
+        "province": "Italia",
+        "modern_location": "Anagni, Frosinone Province, Italy",
+        "built": -30,
+        "destroyed": 400,
+        "extant_117ce": true,
+        "notes": "This sprawling estate in the Sacco valley likely passed into imperial hands after the sons of Pompey the Great died out, making it crown property already a century old by Trajan's reign. Its most famous moment came a generation later, in 144-45 CE, when the young Marcus Aurelius wrote to his tutor Fronto describing two days spent here hunting and treading grapes with his adoptive father Antoninus Pius. Excavations from 2006-2010 uncovered an imperial winery with its own bath complex, built over a Republican-era villa rustica.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Villa_Magna",
+          "https://www.penn.museum/sites/expedition/wine-slaves-and-the-emperor-at-villa-magna/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa_Magna_Anagni.jpg?width=800",
+        "image_credit": "Excavated remains of Villa Magna near Anagni · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.5641194,
+          29.3478694
+        ]
+      },
+      "properties": {
+        "id": "poi_theadelphia_ousiac_land",
+        "category": "estate",
+        "name_latin": "Theadelphia (ousiake ge)",
+        "name_english": "Theadelphia Imperial Estate Land",
+        "province": "Aegyptus",
+        "modern_location": "Batn Ihrit, Faiyum Governorate, Egypt",
+        "built": -25,
+        "destroyed": 350,
+        "extant_117ce": true,
+        "notes": "Parcels of ousiake ge, imperial estate land, were scattered through the fields worked by this Fayum farming village on the desert edge of Lake Moeris, inherited from confiscated Julio-Claudian family property. Egypt's ousiai worked differently than estates elsewhere in the empire, run through a centralized ousiakos logos account and leased out in fragments rather than farmed as one block. A petition from Trajan's own second year on the throne shows this accounting system still functioning around 117 CE.",
+        "sources": [
+          "https://www.trismegistos.org/ousia/about.php",
+          "https://www.thebritishacademy.ac.uk/documents/3878/96p159.pdf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.49362,
+          42.00208
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_of_livia",
+        "category": "estate",
+        "name_latin": "Villa ad Gallinas Albas",
+        "name_english": "Villa of Livia, Prima Porta",
+        "province": "Italia",
+        "modern_location": "Prima Porta, Rome, Italy",
+        "built": -38,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Livia is said to have brought this property into her marriage to the future Augustus as part of her dowry, and it stayed in imperial hands for generations after. Roughly half its grounds were gardens and open courtyards, including the famous frescoed Garden Room painted with fruit trees, flowers, and birds. Its orchards and vineyards fed the imperial household from a working farm twelve kilometers north of Rome, long after Livia's own death in 29 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Villa_of_Livia",
+          "https://www.turismoroma.it/en/places/villa-livia-prima-porta"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Giardino_dipinto,_da_villa_di_livia_a_prima_porta,_02.jpg?width=800",
+        "image_credit": "Painted Garden Room fresco from the Villa of Livia · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.62009,
+          41.44749
+        ]
+      },
+      "properties": {
+        "id": "poi_antium_imperial_villa",
+        "category": "estate",
+        "name_latin": "Villa Antiana",
+        "name_english": "Imperial Villa at Antium",
+        "province": "Italia",
+        "modern_location": "Anzio, Rome Province, Italy",
+        "built": -20,
+        "destroyed": 250,
+        "extant_117ce": true,
+        "notes": "Emperor after emperor kept up this coastal estate south of Rome, an eight-hundred-meter stretch of shoreline inherited by Nero from his family the Octavii and rebuilt on a grander scale after his birth there in 37 CE. Cisterns, quays, and warehouses recovered at the site once stored the olive oil and wine that made Antium a working supply port as well as a retreat. Augustus is recorded using an earlier villa on this shore as far back as 2 BCE, and the estate stayed imperial through the Severans, a century after Trajan.",
+        "sources": [
+          "https://www.ostia-antica.org/dict/topics/antium/presentation/antium-imperial-villa.htm",
+          "https://en.wikipedia.org/wiki/Villa_of_Nero"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.16028,
+          41.85444
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_of_trajan_arcinazzo",
+        "category": "estate",
+        "name_latin": "Villa Traiani",
+        "name_english": "Villa of Trajan, Arcinazzo",
+        "province": "Italia",
+        "modern_location": "Arcinazzo Romano, Rome Province, Italy",
+        "built": 98,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Trajan built this palatial summer residence and hunting lodge on a high wooded plateau at the very start of his reign in 98 CE, seeking cooler air than Rome offered in summer. Spread across roughly five hectares at the foot of Monte Altuino, it lies two kilometers from the Aniene river that carried water down to the capital. Excavators have recovered richly decorated rooms despite centuries of marble-robbing. It stood as the emperor's own personal estate at the exact moment this map is set, 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Villa_of_Trajan",
+          "https://www.researchgate.net/publication/326350994_La_villa_pulcherrima_di_Traiano_a_Centumcellae_Una_proposta_Aceptado"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
