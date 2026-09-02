@@ -13044,6 +13044,116 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6423,
+          42.0337
+        ]
+      },
+      "properties": {
+        "id": "station_nomentum",
+        "category": "mansio",
+        "name": "Nomentum",
+        "road": "Via Nomentana",
+        "distance_from_previous_mp": 14,
+        "identified": true,
+        "notes": "Nomentum crowned a low ridge fourteen and a half Roman miles up the Via Nomentana, the market town that gave the road its name and its endpoint. Tuff-block walls from the fourth century BCE still trace its old acropolis on Montedoro hill above modern Mentana. Strabo placed it on the road linking Rome to the Sabine country, and the poet Martial owned a farm nearby he wrote about constantly. Rome absorbed it as a subject town with limited citizenship after 338 BCE.",
+        "sources": [
+          "Strabo, Geographica 5.3.11",
+          "https://pleiades.stoa.org/places/422986",
+          "https://en.wikipedia.org/wiki/Nomentum"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mentana.JPG?width=800",
+        "image_credit": "General view of Mentana, built over ancient Nomentum · Wikimedia Commons",
+        "image_alt": "View of the modern town of Mentana on the site of ancient Nomentum"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5325,
+          41.9336
+        ]
+      },
+      "properties": {
+        "id": "station_ponte_nomentano",
+        "category": "statio",
+        "name": "Ponte Nomentano",
+        "road": "Via Nomentana",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "The Via Nomentana crossed the Aniene here on a stone bridge built around 100 BCE, not quite four kilometers past Rome's northern gate. The Ostrogothic king Totila tore it down in 547 CE during the siege of Rome, and the general Narses rebuilt it five years later once the city was retaken. A squat medieval tower still guards the crossing today, standing on Roman arches laid some six centuries before it. It was the first landmark travelers passed leaving Rome for Sabine country.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ponte_Nomentano",
+          "https://vici.org/vici/12027/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ponte%20Nomentano%2000234.JPG?width=800",
+        "image_credit": "Ponte Nomentano, the Roman-and-medieval bridge over the Aniene · Wikimedia Commons",
+        "image_alt": "Ponte Nomentano bridge with its medieval tower over the Aniene river"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6224,
+          41.9389
+        ]
+      },
+      "properties": {
+        "id": "station_ad_nonas",
+        "category": "statio",
+        "name": "Ad Nonas (Settecamini)",
+        "road": "Via Tiburtina",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "A milestone reading IX from Rome gave this post station its name, Ad Nonas, roughly halfway along the Via Tiburtina to Tibur. Archaeologists uncovered it in 1951 at Settecamini: a portico onto a paved courtyard, a well, and a semicircular corridor built for fast horse changes. Floor mosaics and reticulate brickwork date the complex to the first century BCE, with use continuing into the fifth. A long stretch of the original basalt paving survives beside it, still rutted from cart wheels.",
+        "sources": [
+          "https://cultura.gov.it/evento/la-tiburtina-in-cammino-a-settecamini",
+          "https://it.wikipedia.org/wiki/Area_archeologica_di_Settecamini",
+          "https://www.sovraintendenzaroma.it/i_luoghi/roma_antica/aree_archeologiche/area_archeologica_di_settecamini"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Via%20Tiburtina.JPG?width=800",
+        "image_credit": "The Via Tiburtina near Rome · Wikimedia Commons",
+        "image_alt": "The modern Via Tiburtina roadway near Rome, tracing the ancient route"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7618,
+          41.9549
+        ]
+      },
+      "properties": {
+        "id": "station_ponte_lucano",
+        "category": "statio",
+        "name": "Ponte Lucano",
+        "road": "Via Tiburtina",
+        "distance_from_previous_mp": 14,
+        "identified": true,
+        "notes": "This seven-arched bridge carried the Via Tiburtina over the Aniene at the road's fourteenth Roman mile, right where travelers made their final climb into Tibur. Its neighbor is the drum-shaped Tomb of the Plautii, raised in the first century BCE, whose own inscriptions are sometimes wrongly credited to the bridge itself. The span carried traffic without a break into the twentieth century, its Roman core still standing under later medieval rebuilding.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ponte_Lucano",
+          "https://pleiades.stoa.org/places/791702428"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ponte%20Lucano.jpg?width=800",
+        "image_credit": "Ponte Lucano over the Aniene, with the Tomb of the Plautii · Wikimedia Commons",
+        "image_alt": "Ponte Lucano Roman bridge and the round Tomb of the Plautii"
+      }
     }
   ]
 }
