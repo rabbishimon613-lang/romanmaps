@@ -34670,6 +34670,14 @@
       },
       "properties": {
         "id": "poi_fort_ulcisia_castra",
+        "ancient_sources": [
+          {
+            "author": "Antonine Itinerary",
+            "work": "Antonine Itinerary",
+            "ref": "266",
+            "note": "Lists Ulcisia castra as the first station, 9 miles, on the Danube-bank road running from Aquincum to Crumerum, immediately before Cirpi."
+          }
+        ],
         "category": "auxiliary_fort",
         "name_latin": "Ulcisia Castra",
         "name_english": "Ulcisia Castra",
@@ -34700,6 +34708,14 @@
       },
       "properties": {
         "id": "poi_fort_campona",
+        "ancient_sources": [
+          {
+            "author": "Antonine Itinerary",
+            "work": "Antonine Itinerary",
+            "ref": "245",
+            "note": "Names Campona as a station on the right-bank Danube road in Pannonia Inferior, between Matrica and Aquincum."
+          }
+        ],
         "category": "auxiliary_fort",
         "name_latin": "Campona",
         "name_english": "Campona",
@@ -34798,6 +34814,14 @@
       },
       "properties": {
         "id": "poi_fort_annamatia",
+        "ancient_sources": [
+          {
+            "author": "Antonine Itinerary",
+            "work": "Antonine Itinerary",
+            "ref": "245",
+            "note": "Names Annamatia as a station on the right-bank Danube road in Pannonia Inferior, between Intercisa and Vetus Salina."
+          }
+        ],
         "category": "auxiliary_fort",
         "name_latin": "Annamatia",
         "name_english": "Annamatia",
@@ -34828,6 +34852,20 @@
       },
       "properties": {
         "id": "poi_fort_lussonium",
+        "ancient_sources": [
+          {
+            "author": "Ptolemy",
+            "work": "Geography",
+            "ref": "2.15",
+            "note": "Lists Lussonium among the towns of Pannonia Inferior below the Danube, between Salinum (Vetus Salina) and Lugio."
+          },
+          {
+            "author": "Antonine Itinerary",
+            "work": "Antonine Itinerary",
+            "ref": "245",
+            "note": "Names Lussonium (Lussonio) as a station on the right-bank Danube road in Pannonia Inferior, between Annamatia and Alta Ripa."
+          }
+        ],
         "category": "auxiliary_fort",
         "name_latin": "Lussonium",
         "name_english": "Lussonium",
@@ -37164,6 +37202,14 @@
       },
       "properties": {
         "id": "poi_auxfort_canovium",
+        "ancient_sources": [
+          {
+            "author": "Antonine Itinerary",
+            "work": "Antonine Itinerary",
+            "ref": "Iter XI",
+            "note": "Lists Conovio (Canovium/Caerhun) as the first station, 24 miles from Segontium, on the road from Segontium to Deva."
+          }
+        ],
         "category": "auxiliary_fort",
         "name_latin": "Canovium",
         "name_english": "Caerhun",
@@ -37254,6 +37300,14 @@
       },
       "properties": {
         "id": "poi_auxfort_luentinum",
+        "ancient_sources": [
+          {
+            "author": "Ptolemy",
+            "work": "Geography",
+            "ref": "2.3",
+            "note": "Assigns the town Luentinum, alongside Moridunum, to the Demetae tribe of south-west Wales; the name (from a Brittonic root for 'washing') is conventionally linked to the gold-washing works at the adjoining Dolaucothi mines this fort guarded."
+          }
+        ],
         "category": "auxiliary_fort",
         "name_latin": "Luentinum",
         "name_english": "Pumsaint",
@@ -37372,6 +37426,14 @@
       },
       "properties": {
         "id": "poi_auxfort_nidum",
+        "ancient_sources": [
+          {
+            "author": "Antonine Itinerary",
+            "work": "Antonine Itinerary",
+            "ref": "Iter XII",
+            "note": "Lists Nido (Nidum/Neath) as a station 15 miles from Leucarum and 15 miles from Bomium, on the road from Moridunum to Viroconium."
+          }
+        ],
         "category": "auxiliary_fort",
         "name_latin": "Nidum",
         "name_english": "Neath",
@@ -38166,6 +38228,14 @@
       },
       "properties": {
         "id": "poi_temple_poseidon_sounion",
+        "ancient_sources": [
+          {
+            "author": "Pausanias",
+            "work": "Description of Greece",
+            "ref": "1.1.1",
+            "note": "Describes rounding the headland at Sounion and finding a harbor and a temple on its peak, with bronze statues of Poseidon, Amphitrite, and a sea-creature inside — though Pausanias's own text names the building a temple of Athena, an attribution later corrected by inscriptions recovered at the site."
+          }
+        ],
         "category": "sanctuary",
         "name_latin": "Templum Poseidonis Sunii",
         "name_english": "Temple of Poseidon, Sounion",
