@@ -1332,7 +1332,7 @@ to prevent. Building locally to *test* your own work is expected and fine.
       egress block on `demotiles.maplibre.org` (same as every text layer already on this map)
       meant the actual glyph rendering itself couldn't be screenshotted here; text-layer syntax
       and data loading were confirmed instead.
-- [ ] `[12-P1-4]` **`fuzzy-dates`** `fix` — `{earliest, latest, display}` date objects.
+- [~] `[12-P1-4]` **`fuzzy-dates`** `fix` — `{earliest, latest, display}` date objects. — claimed by cloud shift, 2026-09-02 06:00
 - [x] `[11-P2-10]` **`next-upgrade`** `fix` — Done 2026-08-31 by cloud shift (scheduled). Bumped
       `next` 14.2.5 → **14.2.35**, the latest patch on the same minor line (no App Router /
       Server Actions / React-19 breaking changes in scope, since this stays inside 14.2.x).
