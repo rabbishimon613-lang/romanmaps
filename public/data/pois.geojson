@@ -11654,6 +11654,9 @@
       },
       "properties": {
         "id": "poi_villa_gorhambury",
+        "image_alt": "Archaeological floor plan of the Gorhambury Roman villa",
+        "image_credit": "Floor plan drawing of the Roman villa at Gorhambury · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa gorhambury draw.jpg?width=800",
         "category": "villa",
         "name_latin": null,
         "name_english": "Gorhambury Roman Villa",
@@ -33491,6 +33494,8 @@
       },
       "properties": {
         "id": "poi_carnuntum_villa_urbana",
+        "image_credit": "Garden side of the reconstructed Villa Urbana, Carnuntum Archaeological Park · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carnuntum Villa urbana Gartenseite.JPG?width=800",
         "category": "villa",
         "name_latin": "Villa Urbana (Carnuntum)",
         "name_english": "Carnuntum Villa Urbana",
@@ -33549,6 +33554,8 @@
       },
       "properties": {
         "id": "poi_mosnje_villa_rustica",
+        "image_credit": "Excavated remains of the Mošnje Roman villa rustica · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Radovljica Mošnje Villa Rustica 28082012 688.jpg?width=800",
         "category": "villa",
         "name_latin": "Villa Rustica (Mosnje)",
         "name_english": "Mosnje Roman Villa",
@@ -33760,6 +33767,8 @@
       },
       "properties": {
         "id": "poi_villa_atrium_house_aphrodisias",
+        "image_credit": "Atrium House north of the Sebasteion, Aphrodisias, 1991 excavation photo · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aphrodisias atrium house N of Sebasteion (1991) 02.jpg?width=800",
         "category": "villa",
         "name_latin": "Domus Atriata",
         "name_english": "Aphrodisias Atrium House",
@@ -39176,6 +39185,8 @@
       },
       "properties": {
         "id": "poi_ambulatio_villa_baiae",
+        "image_credit": "Terraces of the Villa of the Ambulatio, Archaeological Park of Baiae · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa dell'Ambulatio 1.JPG?width=800",
         "category": "villa",
         "name_latin": "Villa Ambulationis",
         "name_english": "Villa of the Ambulatio, Baiae",
@@ -39407,6 +39418,8 @@
       },
       "properties": {
         "id": "poi_villa_house_of_the_laberii",
+        "image_credit": "Mosaic from the House of the Laberii, Uthina (Oudna) · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mosaïque maison Laberii 01.jpg?width=800",
         "category": "villa",
         "name_english": "House of the Laberii, Oudna",
         "province": "Africa Proconsularis",
@@ -39433,6 +39446,8 @@
       },
       "properties": {
         "id": "poi_villa_sidi_ghrib",
+        "image_credit": "\"Matron at her toilette\" mosaic from the baths of the Sidi Ghrib villa, Bardo National Museum · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mosaique de matrone à sa toilette thermes de Sidi Ghrib.jpg?width=800",
         "category": "villa",
         "name_english": "Sidi Ghrib Villa",
         "province": "Africa Proconsularis",
@@ -39511,6 +39526,8 @@
       },
       "properties": {
         "id": "poi_villa_poseidon_house_zeugma",
+        "image_credit": "Poseidon mosaic from the House of Poseidon, Zeugma, Zeugma Mosaic Museum, Gaziantep · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mosaic of Poseidon - 2-3 Century - Zeugma Mosaic Museum - Gaziantep - Turkey - (5771947353).jpg?width=800",
         "category": "villa",
         "name_english": "Poseidon House, Zeugma",
         "province": "Syria",
@@ -39589,6 +39606,9 @@
       },
       "properties": {
         "id": "poi_villa_dionysus_dion",
+        "image_alt": "Mosaic depicting the head of Medusa from the Villa of Dionysos at Dion",
+        "image_credit": "Medusa-head mosaic emblema from the Villa of Dionysos, Dion · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mosaïque de la Villa de Dionysos à Dion - La tête de Méduse..JPG?width=800",
         "category": "villa",
         "name_english": "Dionysus Villa, Dion",
         "province": "Macedonia",
@@ -39693,6 +39713,9 @@
       },
       "properties": {
         "id": "poi_villa_house_of_africa_thysdrus",
+        "image_alt": "Roman mosaic bust of the goddess Africa wearing an elephant-hide headdress",
+        "image_credit": "Africa mosaic from the House of Africa, Thysdrus, El Jem Archaeological Museum · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/El Jem Museum (6).JPG?width=800",
         "category": "villa",
         "name_english": "House of Africa",
         "province": "Africa Proconsularis",
@@ -39719,6 +39742,8 @@
       },
       "properties": {
         "id": "poi_villa_house_of_the_months_thysdrus",
+        "image_credit": "Months-of-the-year mosaic from the House of the Months, Thysdrus (El Jem), Sousse Archaeological Museum · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mosaic with the months of the year, starting with the Roman first month March, from Thysdrus (El Jem), 1st half of the 3rd century AD, Sousse Archaeological Museum, Tunisia.jpg?width=800",
         "category": "villa",
         "name_english": "House of the Months",
         "province": "Africa Proconsularis",
@@ -39773,6 +39798,9 @@
       },
       "properties": {
         "id": "poi_villa_house_of_virgil_hadrumetum",
+        "image_alt": "Mosaic of the poet Virgil seated between the muses Clio and Melpomene",
+        "image_credit": "Virgil mosaic from the House of Virgil, Hadrumetum (Sousse), Bardo National Museum · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Virgil mosaic in the Bardo National Museum (Tunis) (12241228546).jpg?width=800",
         "category": "villa",
         "name_english": "House of Virgil",
         "province": "Africa Proconsularis",
@@ -39825,6 +39853,8 @@
       },
       "properties": {
         "id": "poi_villa_triumph_of_neptune_acholla",
+        "image_credit": "Mosaic from the House of the Triumph of Neptune, Acholla · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Maison de neptune.jpg?width=800",
         "category": "villa",
         "name_english": "Villa of the Triumph of Neptune",
         "province": "Africa Proconsularis",
