@@ -1332,7 +1332,23 @@ to prevent. Building locally to *test* your own work is expected and fine.
       egress block on `demotiles.maplibre.org` (same as every text layer already on this map)
       meant the actual glyph rendering itself couldn't be screenshotted here; text-layer syntax
       and data loading were confirmed instead.
-- [~] `[12-P1-4]` **`fuzzy-dates`** `fix` — `{earliest, latest, display}` date objects. — claimed by cloud shift, 2026-09-02 06:00
+- [x] `[12-P1-4]` **`fuzzy-dates`** `fix` — Done 2026-09-02 by cloud shift. New `app/dates.ts`
+      (`resolveDateLine`), additive and backward-compatible: any POI can now carry an optional
+      `built_date`/`destroyed_date` object shaped `{earliest, latest, display}` alongside the
+      existing scalar `built`/`destroyed` year, which every record without one still renders
+      unchanged. `display` wins outright when present (for a hand-written line like a disputed-
+      attribution case); an `earliest`+`latest` pair auto-formats as a year range, correctly
+      spanning the BCE/CE boundary (`"27 BCE – 14 CE"`) or staying same-era (`"200–100 BCE"`,
+      `"1–200 CE"`); a lone bound renders "After X"/"Before X". Wired into both the map card
+      (`PlaceDetails.tsx`) and the static `/place/[slug]` page, handling MapLibre's click-query
+      object-to-JSON-string flattening the same way the existing `asArray()` helper already does
+      for array fields. Applied to 7 real `pois.geojson` records whose notes already carried an
+      unstructured date range a scalar `built` year couldn't express honestly (Zliten's Villa Dar
+      Buc Ammera's Flavian-vs-Severan dating dispute among them) — see SHIFT_LOG for the full
+      list. `npx tsc --noEmit`/`npm run build`/`npm run validate` all clean; verified live with
+      Playwright against the production build at 1280×900 light and 375×812 dark, all four date
+      shapes rendering correctly with no layout regression, on both the static page and the
+      interactive map card's stringified-property path.
 - [x] `[11-P2-10]` **`next-upgrade`** `fix` — Done 2026-08-31 by cloud shift (scheduled). Bumped
       `next` 14.2.5 → **14.2.35**, the latest patch on the same minor line (no App Router /
       Server Actions / React-19 breaking changes in scope, since this stays inside 14.2.x).
