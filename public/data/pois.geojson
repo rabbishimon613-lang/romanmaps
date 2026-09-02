@@ -41124,6 +41124,565 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.155611,
+          48.926861
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_dalkingen",
+        "category": "signal_tower",
+        "name_latin": "Limeswachturm Wp 12/81",
+        "name_english": "Dalkingen Limes Watchtower (Wp 12/81)",
+        "province": "Raetia",
+        "modern_location": "Rainau-Dalkingen, Ostalbkreis, Baden-Wurttemberg, Germany",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A square wooden watchtower with a wattle-and-daub fence rose here on the Raetian limes under Trajan, one of the earliest lookout posts anchoring the still-forming frontier between the Rhine and Danube. Roman engineers folded the tower into the continuous timber palisade added a generation later under Hadrian, then replaced it entirely around 190 CE with a monumental stone gatehouse nearly 15 meters square, the only such gate known anywhere on the German limes. In 117 CE it stood as a simple manned lookout, decades before that transformation.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Limes_Gate_Dalkingen",
+          "https://vici.org/vici/5081/?lang=en"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Limestor Dalkingen Suedwestansicht.jpg?width=800",
+        "image_credit": "Reconstructed remains of the Limes Gate at Dalkingen · Wikimedia Commons",
+        "image_alt": "Reconstructed remains of the Limes Gate at Dalkingen, built on the site of the Trajanic-era watchtower"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.13084,
+          48.915829
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_wp12_77",
+        "category": "signal_tower",
+        "name_latin": "Limeswachturm Wp 12/77",
+        "name_english": "Rainau-Buch Limes Watchtower (Wp 12/77)",
+        "province": "Raetia",
+        "modern_location": "Mahdholz woods, Rainau-Schwabsberg, Baden-Wurttemberg, Germany",
+        "built": 130,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Archaeologists found the foundations of two successive stone towers here in the Mahdholz woods above the fort at Buch, evidence of at least three separate building phases across the tower's working life. Dendrochronology places its palisade timbers around 165 CE, decades after this stretch of frontier existed only as a cleared watch-track. A faithful wooden reconstruction now stands 3 meters tall on the excavated footings, with the fort's bathhouse and civilian quarter surviving nearby in the same Limes Park.",
+        "sources": [
+          "https://de.wikipedia.org/wiki/Kastell_Buch",
+          "https://vici.org/vici/4590/"
+        ],
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Wp12_77 Rekonstruktion.jpg?width=800",
+        "image_credit": "Reconstructed wooden watchtower Wp 12/77 near Rainau-Buch · Wikimedia Commons",
+        "image_alt": "Reconstructed wooden watchtower Wp 12/77 near Rainau-Buch on the Raetian limes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.97057,
+          49.03154
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_wp14_4_gunzenhausen",
+        "category": "signal_tower",
+        "name_latin": "Limeswachturm Wp 14/4",
+        "name_english": "Gunzenhausen Limes Watchtower (Wp 14/4)",
+        "province": "Raetia",
+        "modern_location": "Vorderer Schlossbuck, Gunzenhausen, Bavaria, Germany",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The tower on the Vorderer Schlossbuck above Gunzenhausen measured a modest 4.7 by 6.3 meters, set into a stretch of the Raetian limes that ran alongside an older prehistoric ring wall. District archaeologist Ludwig Eidam first excavated the site in 1887, and Bavaria's state monument office returned in 1980 to re-examine and reconstruct its ground plan. Like most of the Raetian watchtower line, it belongs to the stone-built phase of the frontier and postdates this snapshot by decades.",
+        "sources": [
+          "https://www.gunzenhausen.info/sehenswertes/turmstelle_wp_144-gunzenhausen-2104",
+          "https://www.weissenburg.de/sehenswertes/turmstelle_wp_144-gunzenhausen-2104/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.70558,
+          56.34943
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_ardunie",
+        "category": "signal_tower",
+        "name_latin": "Turris Ardunie",
+        "name_english": "Ardunie Roman Signal Station",
+        "province": "Britannia",
+        "modern_location": "near Auchterarder, Perthshire, Scotland",
+        "built": 80,
+        "destroyed": 87,
+        "extant_117ce": false,
+        "notes": "Professor O.G.S. Crawford uncovered this signal tower in 1937, finding a circular timber platform about 12 meters across set just south of the Roman road running along the Gask Ridge. It formed one link in the earliest fortified frontier line anywhere in the Roman Empire, built to watch the country north of the Forth-Clyde isthmus during Rome's brief advance into the Scottish Highlands. Only the ditch and outer bank survive today; the army abandoned the whole Gask system in 87 CE, three decades before this snapshot, when it pulled back from Scotland entirely.",
+        "sources": [
+          "https://www.historicenvironment.scot/visit-a-place/places/ardunie-roman-signal-station/",
+          "https://canmore.org.uk/site/26019"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ardunie_Roman_Signal_Station_20090617.jpg?width=800",
+        "image_credit": "Earthworks of the Ardunie Roman signal station, Gask Ridge · Wikimedia Commons",
+        "image_alt": "Earthworks of the Ardunie Roman signal station on the Gask Ridge, Perthshire"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6486972,
+          56.3522083
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_muir_o_fauld",
+        "category": "signal_tower",
+        "name_latin": "Turris Muir o' Fauld",
+        "name_english": "Muir o' Fauld Roman Signal Station",
+        "province": "Britannia",
+        "modern_location": "near Fowlis Wester, Perthshire, Scotland",
+        "built": 80,
+        "destroyed": 87,
+        "extant_117ce": false,
+        "notes": "A square timber tower once stood inside the 15.7-meter circular earthwork that still survives here, one of the best-preserved posts on the Gask Ridge frontier. A causeway led fifteen meters north from the mound to join the Roman road it watched over, part of a chain of towers built to hold visual contact along the empire's earliest known land frontier. The Roman army abandoned the whole system in 87 CE when it withdrew from Scotland, thirty years before this snapshot.",
+        "sources": [
+          "https://www.historicenvironment.scot/visit-a-place/places/muir-ofauld-roman-signal-station/",
+          "https://www.historicenvironment.scot/visit-a-place/places/muir-ofauld-roman-signal-station/history/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Muir_O'Fauld_watchtower_-_geograph.org.uk_-_94961.jpg?width=800",
+        "image_credit": "The earthwork mound of Muir o' Fauld Roman signal station, Gask Ridge · Wikimedia Commons",
+        "image_alt": "The earthwork mound of Muir o' Fauld Roman signal station on the Gask Ridge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.75418,
+          56.34703
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_parkneuk",
+        "category": "signal_tower",
+        "name_latin": "Turris Parkneuk",
+        "name_english": "Parkneuk Signal Tower",
+        "province": "Britannia",
+        "modern_location": "Innerpeffray Wood, near Crieff, Perthshire, Scotland",
+        "built": 80,
+        "destroyed": 87,
+        "extant_117ce": false,
+        "notes": "Excavators in March 1968 uncovered a small wooden tower here, roughly 3 by 3.7 meters, ringed by a clay rampart and a single ditch with a causeway facing the road on its north side. Standing near the western end of the Gask Ridge chain, it kept visual contact with its neighbors along Rome's earliest fortified land frontier. The post went out of use in 87 CE when the army abandoned Scotland altogether, decades before this snapshot.",
+        "sources": [
+          "https://www.theromangaskproject.org/parkneuk-tower/",
+          "https://www.roman-britain.co.uk/places/parkneuk/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.68812,
+          56.35063
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_roundlaw",
+        "category": "signal_tower",
+        "name_latin": "Turris Roundlaw",
+        "name_english": "Roundlaw Signal Station",
+        "province": "Britannia",
+        "modern_location": "Trinity Gask, Perthshire, Scotland",
+        "built": 80,
+        "destroyed": 87,
+        "extant_117ce": false,
+        "notes": "The Hunterian Museum's 1972 excavation found a rock-cut tower base here about 3.7 by 4.3 meters, encircled by a distinctive V-profile ditch some 14.6 meters in overall diameter. It was one of roughly a dozen linked lookout posts spaced about 1.3 kilometers apart along the Gask Ridge road, Rome's first attempt at a fortified land frontier anywhere in the empire. Troops abandoned the post in 87 CE, long before this snapshot, when the army pulled back south.",
+        "sources": [
+          "https://www.trove.scot/place/25966",
+          "https://canmore.org.uk/site/25966/roundlaw"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/BS Wachturm Roundlaw (Gask Ridge).png?width=800",
+        "image_credit": "Reconstruction drawing of the Roundlaw signal tower, Gask Ridge · Wikimedia Commons",
+        "image_alt": "Reconstruction drawing of the Roundlaw signal tower on the Gask Ridge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.63732,
+          56.35339
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_gask_house",
+        "category": "signal_tower",
+        "name_latin": "Turris Gask House",
+        "name_english": "Gask House Signal Station",
+        "province": "Britannia",
+        "modern_location": "Trinity Gask, Perthshire, Scotland",
+        "built": 80,
+        "destroyed": 87,
+        "extant_117ce": false,
+        "notes": "Excavated first in 1900 and again in 1965, the signal station at Gask House measured 23 meters across its outer earthworks and gave the whole Gask Ridge frontier system its modern name. A mortarium rim recovered from the site dates the tower firmly to the Flavian period, when Rome pushed its frontier into the Scottish Highlands. Like the rest of the chain it fell out of use in 87 CE, decades before this snapshot, when the legions withdrew south.",
+        "sources": [
+          "https://www.trove.scot/place/25977",
+          "https://www.roman-britain.co.uk/places/gask_house/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.62583,
+          56.35652
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_witch_knowe",
+        "category": "signal_tower",
+        "name_latin": "Turris Witch Knowe",
+        "name_english": "Witch Knowe Signal Station",
+        "province": "Britannia",
+        "modern_location": "near Gask House, Trinity Gask, Perthshire, Scotland",
+        "built": 80,
+        "destroyed": 87,
+        "extant_117ce": false,
+        "notes": "Excavation around 1900 revealed a circular timber-tower platform here about 13.4 meters across, ringed by a ditch nearly 2 meters deep with an entrance causeway facing the Roman road to the south. It stood roughly 650 meters northeast of the Gask House tower, part of a signalling chain built along the ridge in the late first century CE. Rome abandoned the post in 87 CE together with the rest of the Gask frontier, three decades before this snapshot.",
+        "sources": [
+          "https://ancientmonuments.uk/125936-witch-knowe-roman-signal-station-650m-nne-of-gask-house-almond-and-earn-ward",
+          "https://canmore.org.uk/site/25991/witch-knowe"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/BS Wachturm Witch Knowe (Gask Ridge).png?width=800",
+        "image_credit": "Reconstruction drawing of the Witch Knowe signal tower, Gask Ridge · Wikimedia Commons",
+        "image_alt": "Reconstruction drawing of the Witch Knowe signal tower on the Gask Ridge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.67303,
+          56.35017
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_kirkhill_gask",
+        "category": "signal_tower",
+        "name_latin": "Turris Kirkhill",
+        "name_english": "Kirkhill Roman Signal Station",
+        "province": "Britannia",
+        "modern_location": "near Auchterarder, Perthshire, Scotland",
+        "built": 80,
+        "destroyed": 87,
+        "extant_117ce": false,
+        "notes": "One of the best-preserved watchtowers on the Gask Ridge, Kirkhill was excavated in 1909 and found to hold a circular platform about 14 meters across surrounded by a ditch and outer bank. It formed part of the relay chain running the length of the ridge road, letting the garrison signal along Rome's earliest fortified land frontier. The post was abandoned in 87 CE when the army withdrew from Scotland, thirty years before this snapshot.",
+        "sources": [
+          "https://www.roman-britain.co.uk/places/kirkhill/",
+          "https://ancientmonuments.uk/124146-kirkhillroman-signal-station-400m-nne-of-almond-and-earn-ward"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kirkhill_Roman_watchtower_-_geograph.org.uk_-_94957.jpg?width=800",
+        "image_credit": "The earthworks of Kirkhill Roman signal station, Gask Ridge · Wikimedia Commons",
+        "image_alt": "The earthworks of Kirkhill Roman signal station on the Gask Ridge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.587,
+          56.36601
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_thorny_hill",
+        "category": "signal_tower",
+        "name_latin": "Turris Thorny Hill",
+        "name_english": "Thorny Hill Signal Station",
+        "province": "Britannia",
+        "modern_location": "Findo Gask, Perthshire, Scotland",
+        "built": 80,
+        "destroyed": 87,
+        "extant_117ce": false,
+        "notes": "Set on the western edge of a natural hillock, the Thorny Hill tower's ditch enclosed a sub-circular platform about 13 by 11 meters, with a narrow causewayed entrance facing south toward the Roman road. Local tradition also knows the site as Mayfield, Midgate, or Clathymore, reflecting the patchwork of farms that grew up around it over the centuries. It went out of use in 87 CE along with the rest of the Gask Ridge chain, decades before this snapshot.",
+        "sources": [
+          "https://canmore.org.uk/site/26952/thorny-hill",
+          "https://www.roman-britain.co.uk/places/thorny_hill/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.858,
+          56.28254
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_shielhill_south",
+        "category": "signal_tower",
+        "name_latin": "Turris Shielhill",
+        "name_english": "Shielhill South Signal Tower",
+        "province": "Britannia",
+        "modern_location": "near Ardoch, Perthshire, Scotland",
+        "built": 80,
+        "destroyed": 87,
+        "extant_117ce": false,
+        "notes": "Set on the crest of a low glacial ridge with clear views in every direction, Shielhill South was one of two paired watchtowers flanking the Roman road, its counterpart standing across the highway to the north. David Woolliscroft and Birgitta Hoffmann excavated the site in 1973 and again in 1996, confirming its place in the Gask Ridge signalling chain near the frontier's western anchor at Ardoch. The tower was abandoned in 87 CE, decades before this snapshot, when Rome withdrew from Scotland.",
+        "sources": [
+          "https://www.roman-britain.co.uk/places/shiehill/",
+          "https://www.theromangaskproject.org/shielhill-south-tower/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.82195,
+          56.28214
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_westerton_gask",
+        "category": "signal_tower",
+        "name_latin": "Turris Westerton",
+        "name_english": "Westerton Watchtower",
+        "province": "Britannia",
+        "modern_location": "near Ardoch, Perthshire, Scotland",
+        "built": 80,
+        "destroyed": 87,
+        "extant_117ce": false,
+        "notes": "Aerial photography first revealed Westerton as a cropmark in 1951, and excavation in 1979 uncovered a four-post timber tower inside a single ditched enclosure about 14 meters across. A sherd of Flavian pottery recovered from the ditch confirmed its place in the Gask Ridge chain, and the postholes showed clear signs the tower had been deliberately dismantled rather than left to rot. That demolition came in 87 CE as Rome pulled back from Scotland, thirty years before this snapshot.",
+        "sources": [
+          "http://journals.socantscot.org/index.php/psas/article/download/9895/9862",
+          "https://www.roman-britain.co.uk/places/westerton/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.60974,
+          56.36015
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_moss_side_gask",
+        "category": "signal_tower",
+        "name_latin": "Turris Moss Side",
+        "name_english": "Moss Side Signal Station",
+        "province": "Britannia",
+        "modern_location": "Findo Gask, Perthshire, Scotland",
+        "built": 80,
+        "destroyed": 87,
+        "extant_117ce": false,
+        "notes": "Antiquarian David Christison excavated this tower in the nineteenth century and found four postholes marking its square timber frame, along with an unusual inner rampart that survived even after ploughing had already destroyed the outer ditch and bank. It sat among the closely spaced watch-posts of the Gask Ridge, each keeping the next in sight along Rome's earliest fortified frontier. Like its neighbors, it was abandoned in 87 CE, decades before this snapshot, when the legions withdrew south.",
+        "sources": [
+          "https://www.trove.scot/place/26613",
+          "https://www.theromangaskproject.org/?page_id=228"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.91797,
+          46.80889
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_dunafoldvar_burgus",
+        "category": "signal_tower",
+        "name_latin": "Burgus Annamatia VI",
+        "name_english": "Dunafoldvar Danube Watchtower",
+        "province": "Pannonia Inferior",
+        "modern_location": "Dunafoldvar, Tolna County, Hungary",
+        "built": 184,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "This riverbank watchtower stood on a hill above the Danube, one link in the chain of burgi that Hungarian surveyors later catalogued along the ripa Pannonica between Aquincum and Intercisa. A series of inscriptions from the reign of Commodus records the emperor's engineers building these fortified watch-posts and praesidia along this stretch of river in the 180s CE. The tower therefore postdates this snapshot by more than six decades; in 117 CE the Danube bank here was still watched only by patrols from the nearest auxiliary forts.",
+        "sources": [
+          "https://www.academia.edu/44679508/The_Danube_Limes_in_Hungary_Archaeological_research_conducted_in_2015_2020",
+          "https://en.wikipedia.org/wiki/Pannonian_Limes"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.96,
+          46.7411
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_bolcske_burgus",
+        "category": "signal_tower",
+        "name_latin": "Burgus Annamatia",
+        "name_english": "Bolcske Danube Watchtower",
+        "province": "Pannonia Inferior",
+        "modern_location": "near Bolcske, Tolna County, Hungary",
+        "built": 184,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Archaeologists surveying the Hungarian Danube bank recorded this watchtower near the village of Bolcske, part of the same fortified relay that once linked Aquincum to Intercisa downstream. Commodus-era building inscriptions found along this stretch of river date the stone watchtower program to the 180s CE, some seven decades after this snapshot. In 117 CE this reach of the frontier still relied on river patrols rather than a fixed chain of towers.",
+        "sources": [
+          "https://www.academia.edu/44679508/The_Danube_Limes_in_Hungary_Archaeological_research_conducted_in_2015_2020",
+          "https://en.wikipedia.org/wiki/Limes_Pannonicus"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.77167,
+          46.1264
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_bata_burgus",
+        "category": "signal_tower",
+        "name_latin": "Burgus Ad Statuas II",
+        "name_english": "Bata Danube Watchtower",
+        "province": "Pannonia Inferior",
+        "modern_location": "near Bata, Tolna County, Hungary",
+        "built": 184,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Survey teams mapping the Hungarian Danube limes identified this burgus near Bata as the second in a numbered sequence built out from the fort at Ad Statuas, further downriver toward Mursa. Like its neighbors along this stretch, it belongs to the wave of stone watchtower construction attested by Commodus's building inscriptions in the 180s CE. That places its construction some seventy years after this snapshot, when the frontier here was still an unfortified riverbank patrolled from the nearest garrison.",
+        "sources": [
+          "https://www.academia.edu/44679508/The_Danube_Limes_in_Hungary_Archaeological_research_conducted_in_2015_2020"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.75009,
+          46.4148
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_tolna_mozs_burgus",
+        "category": "signal_tower",
+        "name_latin": "Burgus Mozs",
+        "name_english": "Tolna-Mozs Danube Watchtower",
+        "province": "Pannonia Inferior",
+        "modern_location": "near Mozs, Tolna County, Hungary",
+        "built": 184,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Excavators located this Danube-bank watchtower near the hamlet of Mozs, one node in the Hungarian survey of the ripa Pannonica's burgus chain. The broader program of stone watchtower construction along this stretch of river is attested by Commodus's building inscriptions of the 180s CE. In 117 CE, decades before that program began, this bend of the Danube was watched only by boat patrols and the nearest auxiliary garrisons.",
+        "sources": [
+          "https://www.academia.edu/44679508/The_Danube_Limes_in_Hungary_Archaeological_research_conducted_in_2015_2020"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7103,
+          35.2167
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_burgus_commodianum",
+        "category": "signal_tower",
+        "name_latin": "Burgus Speculatorium Commodianum",
+        "name_english": "Ksar Sidi El Hadj Watchtower",
+        "province": "Numidia",
+        "modern_location": "El Kantara defile, Biskra Province, Algeria",
+        "built": 185,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "An inscription at Ksar Sidi El Hadj names this lookout post a burgus speculatorium, a watchtower built under Commodus to guard travelers along the road through the narrow El Kantara defile, the main gap through the Aures mountains linking Numidia to the pre-desert south. It formed part of the Fossatum Africae, the linear system of ditches, walls, and watchtowers Rome built to control movement rather than repel invasion along its African frontier. That system began taking shape only after Hadrian's visit to the province in 122 CE, so in 117 CE this stretch of frontier had no fixed defenses at all.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Fossatum_Africae",
+          "https://en.wikipedia.org/wiki/El_Kantara"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.715,
+          35.22
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_burgus_antoninianum",
+        "category": "signal_tower",
+        "name_latin": "Burgus Speculatorium Antoninianum",
+        "name_english": "Kherbet el-Borj Watchtower",
+        "province": "Numidia",
+        "modern_location": "El Kantara defile, Biskra Province, Algeria",
+        "built": 210,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A dedicatory inscription found at Kherbet el-Borj, known locally as Loth Bordj, names this second watchtower of the El Kantara defile a burgus speculatorium raised under an Antonine-dynasty emperor and dedicated by the provincial governor Marcus Valerius Senecio. It stood a short distance from its sister tower at Ksar Sidi El Hadj, together covering both approaches to the narrow pass linking Numidia to the desert frontier. Both towers belong to the Fossatum Africae system that took shape only after 122 CE, so in 117 CE this defile had no Roman watchtower at all.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Fossatum_Africae",
+          "https://en.wikipedia.org/wiki/El_Kantara"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
