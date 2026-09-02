@@ -1296,6 +1296,40 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       surprising "ahead by N" count right after fixing detached HEAD should try a fetch before
       assuming something's wrong with the fix itself.
 
+## New ideas spotted this shift (2026-09-02, Shift 89 — fuzzy-dates feature, ancient-sources, villae)
+
+- [ ] **`pois.geojson`'s object-valued fields (`ancient_sources[]`, and now `built_date`/
+      `destroyed_date`) are pretty-printed multi-line in this file, not compact single-line
+      JSON** — confirmed by grepping several pre-existing `ancient_sources` entries before
+      writing new ones. A naive `JSON.stringify(obj)` splice (compact, one line per object) still
+      produces valid JSON but reads as a formatting regression against the rest of the file the
+      next time someone diffs it. Match the file's own multi-line convention (one key per line,
+      matching indent) when splicing a new object-valued field into an existing record, the same
+      lesson prior shifts already learned the hard way for whole-file `indent`/`ensure_ascii`
+      reformatting.
+- [ ] **A full-file `JSON.parse` + `JSON.stringify(..., null, 2)` round-trip silently reformats
+      any pre-existing record that happens to have its properties crammed onto one line** — hit
+      this firsthand this shift on `pois.geojson`: a handful of older records (`poi_baths_titus`,
+      `poi_porta_maggiore_aqueducts`, others) had their `image_url`/`image_credit`/`image_alt`
+      keys on the same line as `"id"`, an artifact from whatever produced them originally.
+      Round-tripping the whole file through `JSON.stringify` reflowed those onto separate lines,
+      turning a 7-record patch into a 700-line diff. Caught before committing by checking
+      `git diff --stat` for a suspiciously large change relative to the edit's actual size — worth
+      making that check a reflex before every programmatic splice into a large data file, not
+      just for the already-documented `indent`/`ensure_ascii` traps. The fix: patch via targeted
+      line-insertion (find the record's `"id"` line, splice new lines directly after it) instead
+      of a parse/stringify round-trip, whenever the file might contain such pre-existing
+      formatting quirks.
+- [ ] **A prior shift's explicit rejection of a citation is worth a second look, not automatic
+      deference.** Batch 2 of `[09-P0-1]` (see `BOARD.md`) declined a Pausanias citation for the
+      Temple of Poseidon at Sounion because Pausanias's own text names the building Athena's, not
+      Poseidon's. This shift's research turned up the same passage but with the fuller context —
+      it's a recognized textual/attribution crux at one physical building (on-site inscriptions
+      independently confirm Poseidon), not evidence of two different buildings — and included it
+      with the crux stated plainly in the citation's own `note` field. Flagged in `SHIFT_LOG` in
+      case a future shift or the human editorial pass wants to weigh in on which call is right;
+      not silently overriding the earlier decision without saying so.
+
 ## Shipped (moved from above; newest on top)
 
 - 2026-08-31 — Shift 83: Found and fixed `[13-P1-5]` — none of `app/Map.tsx`'s ~34 thematic-layer

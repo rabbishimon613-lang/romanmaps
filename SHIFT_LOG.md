@@ -7,6 +7,155 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 89 — 2026-09-02 (this shift's own prompt claimed "Shift 2 of four")
+
+Same stale-numbering mismatch every recent shift has flagged — continuing the real count from
+Shift 88's last commit (`4298d83`). Repo booted with local `main` behind `origin/main` (not
+detached this time, just stale) — `git fetch origin main && git checkout -B main origin/main`
+fixed it. `npm install` clean (fresh container).
+
+### Board + network check
+
+Reconfirmed the standing network limitation directly: `curl` to `overpass-api.de`,
+`en.wikipedia.org`, and `commons.wikimedia.org` all still fail with the proxy's
+`connect_rejected` — `WebSearch` remains the only working research path. Read `BOARD.md` in
+full: same short list of P0/P1 tickets several recent shifts have already triaged as blocked,
+oversized for one unattended session, or missing their own spec — except `[12-P1-4]`
+`fuzzy-dates`, which Shift 88's own handoff note flagged as "probably the next-most-tractable
+one for an unattended session" since it has a concrete shape (`{earliest, latest, display}`)
+even without a full spec. Claimed it (commit `d7125d4`), built it as Track B, and it's now the
+first item this board has marked `[x]` in a while — see the board entry for the full writeup.
+
+### Track B — `[12-P1-4]` fuzzy-dates, claimed and shipped
+
+New `app/dates.ts` (`resolveDateLine`), replacing the near-identical `formatYear` that
+`PlaceDetails.tsx` and `place/[slug]/page.tsx` each maintained their own copy of. Additive and
+backward-compatible by construction: a record with no `built_date`/`destroyed_date` renders
+exactly as before via the plain scalar year. A record can now add an optional
+`{earliest, latest, display}` object — `display` wins outright for a hand-written line like a
+disputed-attribution case, an `earliest`+`latest` pair auto-formats as a year range spanning the
+BCE/CE boundary correctly (`"27 BCE – 14 CE"`), and a lone bound renders "After X"/"Before X".
+Handled the same MapLibre click-query object→JSON-string flattening `asArray()` already handles
+for array fields, so the same object works whether the record arrives via a map click or a
+direct geojson fetch — verified both paths live.
+
+Applied it to 7 real `pois.geojson` records whose `notes` text already carried an unstructured
+date range or dating dispute that a scalar `built` year couldn't express honestly:
+`poi_ludus_alexandria` ("by the late 1st century CE"), `poi_ermita_virgen_pilar_dam` ("1st or
+2nd century CE"), `poi_amphitheatre_capua` (Augustan vs. a century later — the city's own
+heritage authority disagrees with the ancient inscriptions), `poi_theatre_stadium_aegina`
+(Classical period, no Roman-era renovation attested), `poi_temple_apollo_cumae` (rebuilt under
+Augustus), `poi_amphitheater_cumae` (turn of the 2nd–1st century BCE), and
+`poi_villa_dar_buc_ammera_zliten` (the mosaic's own Flavian-vs-Severan scholarly dating dispute).
+No new research needed — every one just structures a date range the prose already stated.
+
+`npx tsc --noEmit` and `npm run build` clean; `npm run validate` clean (0 errors, same 7
+pre-existing reviewed warnings). **Verified live**, not just by code review: built the production
+bundle, drove it with Playwright against the pre-installed Chromium
+(`/opt/pw-browsers/chromium-1194/chrome-linux/chrome`) at 1280×900 light and 375×812 dark, and
+confirmed all four date shapes render correctly (a `display`-only string, a same-era range, a
+mixed-era range, and a range+display combo) on both the static `/place/[slug]` page and the
+interactive map card's stringified-property path — no layout regression. Commit `332310d`.
+
+### Track A — three parallel research passes, all reviewed and merged personally
+
+**1. `[09-P0-1]` ancient-sources (standing task) — 8 new citations, 9 total.** Dispatched one
+background WebSearch agent against the open `confidence:high` pool (79 uncited going in — the
+pool grows as other shifts add POIs, so trusted a fresh count over Shift 88's stale "71").
+4/4 hits on Pannonia Inferior Danube-limes forts (Ulcisia Castra, Campona, Annamatia, Lussonium
+— all directly named stations in the Antonine Itinerary's Aquincum–Mursa road, Lussonium doubly
+attested in Ptolemy 2.15) and 3/3 on Welsh auxiliary forts (Canovium/Caerhun, Nidum/Neath via the
+Itinerary; Luentinum/Pumsaint via Ptolemy 2.3, the name itself tying to the adjoining Dolaucothi
+gold mines it guarded) — continuing this project's repeated finding that `auxiliary_fort` outperforms
+its low-expected-yield reputation because Ptolemy and the Itinerary name forts directly. One more:
+the Temple of Poseidon at Sounion via Pausanias 1.1.1 — a prior shift (see `[09-P0-1]` batch 2 in
+`BOARD.md`) had explicitly declined this exact citation because Pausanias's own text names the
+building Athena's, not Poseidon's; this round included it anyway, but honestly, with the crux
+stated in the citation's own `note` field rather than silently asserting one reading — the
+scholarly consensus is that this is a textual/attribution crux at a single physical building
+(inscriptions recovered on-site independently confirm Poseidon), not two different buildings, so
+naming the crux is more complete than omitting the citation altogether. Flagging the reversal
+explicitly here in case a future shift disagrees with this call. Same dead zone every recent
+batch has hit (0/~20 on tombs, villas, shipwrecks, industrial sites) confirmed again, plus several
+new negative results worth remembering (Cirpi/Taliata/Segontium already-known dead ends
+re-confirmed, not re-attempted; Olicana/Ilkley and Derventio/Malton both have disputed modern
+identifications in the scholarship, skipped as unresolved rather than picking a side; Naxos and
+Teos quarry citations both had a real Pliny passage but for the wrong product/place). `confidence:
+high` uncited pool: 79 → 71. Commit `1f52974`.
+
+**2. Image top-up — 13 of 40 open `villa` POIs.** Dispatched a second background agent in
+parallel against every `villa`-category POI missing an `image_url`. Confirmed, specific Commons
+`File:` pages for 13 (mostly mosaic photographs from the Bardo/El Jem/Sousse/Zeugma museums, plus
+site photos for Gorhambury, Mošnje, and Carnuntum's reconstructed Villa Urbana). 6 more had a
+real Commons category but no confirmable individual filename inside it (same structural ceiling
+this project has documented repeatedly) — left `image_url` unset rather than guess, per standing
+convention. Decoded the agent's percent-encoded URLs (`%20`, `%C3%A9`, etc.) back to literal
+UTF-8 before merging, matching this file's existing convention (spaces and accented characters
+written literally, confirmed by checking several pre-existing `image_url` values first) rather
+than introducing a second encoding style. `pois.geojson`'s villa image coverage moved from
+0/40-missing-tracked to 27/40 still open. Commit `b964ecf`.
+
+**3. New content — 10 more villae in Africa Proconsularis.** Shift 88's own handoff flagged real
+remaining headroom in this province, specifically El Jem/Thysdrus. Dispatched a third background
+agent, checking the existing 15-record Africa Proconsularis villa list first to avoid duplicates.
+3 more at El Jem/Thysdrus (Sollertiana Domus's damnatio ad bestias mosaic, the Dionysiac
+Procession house, the 3,500 sq m House of the Dolphins — the largest known house on the site), 2
+more at Bulla Regia (House of Amphitrite's Marine Venus mosaic, the 1,700 sq m House of Fishing),
+the first 2 villas from Pupput/Hammamet (a site with none before this batch), and one more each
+at Thuburbo Majus, Uthina, and Dougga. All 10 ship `extant_117ce:false` — every one dates to the
+province's 2nd–4th century mosaic-villa boom, the same pattern the last two shifts already
+established here, so none of this batch closes new "genuinely stood in 117" ground, only fills
+out the honestly-postdates-the-snapshot picture. Two candidates correctly dropped: "House of the
+Muses" at Thuburbo Majus turned out to be a Zeugma (Turkey) building misattributed in a search
+snippet, not a real Tunisian match; House of Bacchus (El Jem) and House of Bacchus and Ariadne
+(Thuburbo Majus) are both real but had no confirmable in-site coordinates within the research
+budget. Checked every new id and coordinate against the existing file before merging — no id
+collisions, no exact-coordinate duplicates (a few sit within Dougga's already-dense monument
+cluster, ordinary same-city proximity already covered by the validator's existing 190-collision
+`[12-P0-1]` backlog, not a new stacking bug). `pois.geojson`: 1258 → 1268 features. Commit
+`d4fa434`.
+
+### State, verification, next
+
+`npm run validate`: 0 errors, same 7 pre-existing reviewed warnings (the India/China
+diplomacy/neighbor points outside the empire envelope by design) unchanged through every commit
+this shift. `npm run build` clean via the pre-push hook on every push. `npm run metrics --
+--write`: 1268 POIs, 97.9% deep, 26 thin, image coverage 62.1% (`pois.geojson` only, a slight dip
+from 62.4% since this shift's 10 new villae mostly shipped without images — the 13 image top-ups
+landed in the same file and are already counted), ancient-sources coverage on `confidence:high`
+POIs 86.6% (471/544, up from 85.4%).
+
+Commits this shift, in order: `d7125d4` (BOARD.md claim), `332310d` (fuzzy-dates feature + 7
+records), `b964ecf` (13 villa images), `3301509` (metrics refresh), `17e7f95` (board: fuzzy-dates
+marked done), `1f52974` (8 ancient-source citations), `d4fa434` (10 new villae), plus this log
+entry's commit and a final `METRICS.md` refresh. All pushed to `main`.
+
+**Next shift should pick up:**
+
+- **Track A, ancient-sources:** 71 `confidence:high` POIs remain uncited, still dominated by
+  tombs/villas/shipwrecks/industrial sites (consistent 0-hit-rate zone across many batches now).
+  This shift's Sounion reversal (see above) is worth a second opinion from a future shift or the
+  human editorial pass — it's a defensible call (the crux is stated honestly, not hidden) but it
+  does reverse an earlier shift's explicit rejection of the same citation.
+- **Track A, villae:** 27 of 40 `villa` POIs still lack a confirmable image — the remaining ones
+  mostly have a real Commons category but no pinned-down filename, so a future pass needs either
+  a fresh search angle or to accept the "skip rather than guess" ceiling as final for this batch.
+  Africa Proconsularis itself is now getting crowded (25 villae total across three shifts) —
+  probably near a real ceiling for that specific province; a future shift chasing more villae
+  content should look at a different underrepresented region instead of re-mining Tunisia.
+- **Track B:** `BOARD.md` is back down to the same blocked/oversized/spec-missing tickets prior
+  shifts triaged, now minus `[12-P1-4]`. Nothing else looked unattended-session-tractable on this
+  pass; a future shift should re-scan rather than assume this list is final, since new tickets
+  get added when work reveals them.
+- Standing items unchanged: `research/` stays gitignored/empty in every cloud container;
+  `en.wikipedia.org`/`commons.wikimedia.org`/`overpass-api.de`/`pleiades.stoa.org` direct egress
+  stays blocked; `WebSearch` remains the only working research path with a shared session-wide
+  budget (this shift used roughly 150 calls across three background agents — on the high side of
+  what recent shifts have self-imposed, worth budgeting a little tighter next time); the
+  stale/detached-`HEAD` boot symptom and its fix recur nearly every shift.
+
+---
+
 ## Shift 88 — 2026-09-02 (this shift's own prompt claimed "Shift 1 of four")
 
 Same stale-numbering mismatch every recent shift has flagged (own prompt claims a shift count
