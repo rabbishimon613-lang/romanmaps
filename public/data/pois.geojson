@@ -34522,7 +34522,15 @@
           "https://en.wikipedia.org/wiki/Arrabona",
           "https://www.wikidata.org/wiki/Q777861"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Ptolemy",
+            "work": "Geography",
+            "ref": "2.14",
+            "note": "Lists Arrabona as a town of Pannonia Superior at the confluence of the Arrabo (Raba) and the Danube."
+          }
+        ]
       }
     },
     {
@@ -34753,7 +34761,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vetus_Salina,_Jupiter-Dolichenus-Heiligtum.png?width=800",
         "image_credit": "Jupiter Dolichenus sanctuary at the Vetus Salina Roman fort site, Adony, Hungary · Wikimedia Commons",
-        "image_alt": "Jupiter Dolichenus sanctuary associated with the Vetus Salina Roman fort"
+        "image_alt": "Jupiter Dolichenus sanctuary associated with the Vetus Salina Roman fort",
+        "ancient_sources": [
+          {
+            "author": "Ptolemy",
+            "work": "Geography",
+            "ref": "2.15.3",
+            "note": "Names Vetus Salina among the towns of Pannonia Inferior on the Danube."
+          }
+        ]
       }
     },
     {
@@ -34900,7 +34916,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dunaszekcs%C5%91_l%C3%A9gifot%C3%B3.jpg?width=800",
         "image_credit": "Dunaszekcső aerial photograph, site of the Roman fort of Lugio · Wikimedia Commons",
-        "image_alt": "Aerial view of Dunaszekcső, site of the Roman fort of Lugio"
+        "image_alt": "Aerial view of Dunaszekcső, site of the Roman fort of Lugio",
+        "ancient_sources": [
+          {
+            "author": "Ptolemy",
+            "work": "Geography",
+            "ref": "2.16.5",
+            "note": "Names Lugionum (Lugio), the district capital in southern Pannonia Inferior on the Danube."
+          }
+        ]
       }
     },
     {
@@ -35320,7 +35344,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pontes_in_Kladovo,_remains_of_the_walls.jpg?width=800",
         "image_credit": "Wall remains of the Pontes fort, Kostol (Kladovo) · Wikimedia Commons",
-        "image_alt": "Surviving wall remains of the Pontes Roman fort"
+        "image_alt": "Surviving wall remains of the Pontes Roman fort",
+        "ancient_sources": [
+          {
+            "author": "Cassius Dio",
+            "work": "Roman History",
+            "ref": "68.13.6",
+            "note": "Names the fort directly while describing Trajan's Danube bridge: 'not far from Zanes there is a fort, Pontes by name.'"
+          }
+        ]
       }
     },
     {
@@ -36630,7 +36662,15 @@
           "https://www.livius.org/articles/place/sitifis/",
           "https://pleiades.stoa.org/places/305153"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Ptolemy",
+            "work": "Geography",
+            "ref": "4.2.34",
+            "note": "Lists Sitifis (as Sitifa) among the towns of Mauretania Caesariensis."
+          }
+        ]
       }
     },
     {
@@ -36719,7 +36759,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kastell_Hauara,_Principia_und_Horrea,_Limes_Arabicus.svg?width=800",
         "image_credit": "Mediatus, Wikimedia Commons (CC BY-SA) — plan of the fort's principia and horrea",
-        "image_alt": "Plan drawing of the Roman fort at Hauarra (Humayma), showing its headquarters building and granaries"
+        "image_alt": "Plan drawing of the Roman fort at Hauarra (Humayma), showing its headquarters building and granaries",
+        "ancient_sources": [
+          {
+            "author": "Ptolemy",
+            "work": "Geography",
+            "ref": "5.16",
+            "note": "Names Hauarra (Auara), the Nabataean settlement the fort was built to overlook, among the towns of Arabia Petraea."
+          }
+        ]
       }
     },
     {
@@ -37050,7 +37098,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Y_Gaer_Brecon_-_South_Wall_-_02.JPG?width=800",
-        "image_credit": "Photograph via Wikimedia Commons, CC BY-SA 4.0"
+        "image_credit": "Photograph via Wikimedia Commons, CC BY-SA 4.0",
+        "ancient_sources": [
+          {
+            "author": "Antonine Itinerary",
+            "work": "Antonine Itinerary",
+            "ref": "Iter XII",
+            "note": "Lists Burrio (Burrium), the Usk-valley station 9 Roman miles from Isca Silurum on the road north to Gobannio."
+          }
+        ]
       }
     },
     {
@@ -37134,7 +37190,15 @@
           "https://ancientmonuments.uk/128008-abergavenny-roman-fort-abergavenny",
           "https://www.roman-britain.co.uk/places/abergavenny-roman-fort/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Antonine Itinerary",
+            "work": "Antonine Itinerary",
+            "ref": "Iter XII",
+            "note": "Lists Gobannio (Gobannium) 12 Roman miles from Burrium on the road from Moridunum to Viroconium."
+          }
+        ]
       }
     },
     {
@@ -37369,7 +37433,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Romeinse_ruines_(2).jpg?width=800",
         "image_credit": "Mamucium Roman fort remains, Castlefield, Manchester · Wikimedia Commons",
-        "image_alt": "Reconstructed/excavated wall of the Mamucium Roman fort, Castlefield"
+        "image_alt": "Reconstructed/excavated wall of the Mamucium Roman fort, Castlefield",
+        "ancient_sources": [
+          {
+            "author": "Antonine Itinerary",
+            "work": "Antonine Itinerary",
+            "ref": "Iter II / Iter X",
+            "note": "Lists the station at Manchester as Mamucio in Iter II and Mancunio in Iter X."
+          }
+        ]
       }
     },
     {
@@ -37399,7 +37471,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Relics_Ribchester_01.JPG?width=800",
         "image_credit": "Roman-era finds from Bremetennacum, Ribchester Roman Museum · Wikimedia Commons",
-        "image_alt": "Roman finds from Bremetennacum displayed at Ribchester Roman Museum"
+        "image_alt": "Roman finds from Bremetennacum displayed at Ribchester Roman Museum",
+        "ancient_sources": [
+          {
+            "author": "Antonine Itinerary",
+            "work": "Antonine Itinerary",
+            "ref": "Iter X",
+            "note": "Lists Bremetonaci (Bremetennacum), the Ribble-crossing fort, between Coccium and Mamucium."
+          }
+        ]
       }
     },
     {
@@ -37456,7 +37536,15 @@
           "https://historicengland.org.uk/listing/the-list/list-entry/1007186",
           "https://www.roman-britain.co.uk/places/brocavum/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Antonine Itinerary",
+            "work": "Antonine Itinerary",
+            "ref": "Iter II",
+            "note": "Lists Brocavo (Brocavum, Brougham) on the York-Carlisle road."
+          }
+        ]
       }
     },
     {
@@ -37483,7 +37571,15 @@
           "https://en.wikipedia.org/wiki/Verterae",
           "https://www.u3ahadrianswall.co.uk/brough-roman-fort-verteris/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Antonine Itinerary",
+            "work": "Antonine Itinerary",
+            "ref": "Iter II",
+            "note": "Lists Verteris (Verterae, Brough-under-Stainmore) 14 Roman miles from Lavatris."
+          }
+        ]
       }
     },
     {
@@ -37510,7 +37606,15 @@
           "https://en.wikipedia.org/wiki/Lavatrae",
           "https://historicengland.org.uk/listing/the-list/list-entry/1002316"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Antonine Itinerary",
+            "work": "Antonine Itinerary",
+            "ref": "Iter II",
+            "note": "Lists Lavatris (Lavatrae, Bowes) 16 Roman miles from Cataractonium."
+          }
+        ]
       }
     },
     {
@@ -37566,7 +37670,15 @@
           "https://en.wikipedia.org/wiki/Slack_Roman_Fort",
           "https://www.roman-britain.co.uk/places/cambodunum/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Antonine Itinerary",
+            "work": "Antonine Itinerary",
+            "ref": "Iter II",
+            "note": "Lists Camboduno on the road south from Eburacum (York), matching the fort near modern Slack/Huddersfield."
+          }
+        ]
       }
     },
     {
@@ -37682,7 +37794,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Binchester_Roman_Fort.jpg?width=800",
-        "image_credit": "Photograph via Wikimedia Commons"
+        "image_credit": "Photograph via Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Antonine Itinerary",
+            "work": "Antonine Itinerary",
+            "ref": "Iter II",
+            "note": "Lists Vinovia (Binchester) on Dere Street, 19 Roman miles from Cataractonium."
+          }
+        ]
       }
     },
     {
