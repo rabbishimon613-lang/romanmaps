@@ -7,6 +7,160 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 88 — 2026-09-02 (this shift's own prompt claimed "Shift 1 of four")
+
+Same stale-numbering mismatch every recent shift has flagged (own prompt claims a shift count
+that resets independently of the real sequence) — continuing the real count from Shift 87's
+last commit (`0f9bf6e`). Repo booted into the familiar detached-`HEAD` symptom again (local
+`main` behind, `HEAD` detached at the real remote tip) — fixed the same way as every recent
+shift: `git branch -f main HEAD` + `git symbolic-ref HEAD refs/heads/main` + `git fetch origin
+main`. `npm install` clean (fresh container, `node_modules` wasn't present until this ran —
+worth remembering `npx tsc`/`playwright` calls fail confusingly until this happens first).
+
+### Board + network check
+
+Reconfirmed the standing network limitation directly: `curl` to `overpass-api.de`,
+`en.wikipedia.org`, `commons.wikimedia.org`, and `pleiades.stoa.org` all still fail with the
+proxy's `connect_rejected` — `WebSearch` remains the only working research path, and its budget
+is session-wide and shared (documented by Shift 72/76: ~200 calls total across the orchestrator
+and every background agent combined), so this shift capped itself at 3 parallel research agents,
+~25-30 WebSearch calls each, matching the convention several recent shifts converged on.
+
+Read `BOARD.md` in full rather than trusting a prior shift's summary: 15 open tickets, no stale
+`[~]` claims found. Claimed and closed `[05-P2-6]` `i18n` (see Track B below) — the only P0/P1/P2
+ticket left that wasn't already blocked (human: `[15-P0-1]`, `[14-P0-1]`), needing local tooling
+this sandbox doesn't have (`[02-P0-4]`'s glyph-PBF half, `[11-P1-5]` pmtiles), a bigger dedicated
+pass several shifts have already declined for good reason (`[12-P0-1]` merge-themes, `[03-P0-1]`
+schema-v2, `[11-P1-6]` split-map-tsx), or missing its own spec entirely (`[03-P0-2]` card-rebuild
+— confirmed again, `research/reports/` is still gitignored/empty in this container, so the
+"eleven-block order" it references has no definition anywhere reachable here).
+
+### Track A — two parallel research passes, both reviewed and merged personally
+
+Ran a fresh feature-count sweep across `public/data/*.geojson` before picking targets (the habit
+Shift 87 flagged as worth the five minutes) rather than trusting old handoff notes. Most small
+axis files turned out complete or near-complete against the brief's own minimums (confirmed by
+spot-checking `ethnic_pockets.geojson`/`neighbors_117.geojson`/`religions_117.geojson` against
+the brief's named lists — e.g. axis 5c's "Jewish diaspora communities" turned out to already
+have 24 entries in `religions_117.geojson`, not zero, so adding it to `ethnic_pockets.geojson`
+too would have been duplicate work). Picked two genuinely open pools instead:
+
+**1. `[09-P0-1]` ancient-sources (standing task) — 17 new citations.** Split `pois.geojson`'s 103
+`confidence:high` records with no `ancient_sources` into three pools by expected yield and
+dispatched two parallel WebSearch agents (deliberately skipped the third, largest pool —
+35 `auxiliary_fort` records — as low-probability-of-hit literary-citation territory per this
+project's own prior findings on inscription-vs-literature attestation, in favor of spending the
+shared budget on the other two): 14/35 hits on civic/religious monuments (Ptolemy's Geography on
+four Romano-British towns, Pausanias on Rhamnous and Bassae, Herodotus on Samos/Ptoion/Labraunda,
+Ovid on the Tiber Island Aesculapius temple, Suetonius and Tacitus on three Baiae sites) and 3/33
+on economic infrastructure (Vitruvius on the Tivoli and Alban quarries, Pliny the Elder on
+Carystian marble at poi_quarry_karystos_cipollino). Both agents correctly declined near-misses
+rather than force them — notably `poi_temple_poseidon_sounion`: Pausanias 1.1.1 actually names
+the Sounion temple as Athena's, not Poseidon's (a real scholarly crux), so no citation was
+attached rather than assert a wrong one. 33 WebSearch calls combined, well under budget.
+`pois.geojson`'s confidence:high uncited pool: 103 → 86. Commit `13fdac4`.
+
+**2. New axis-3d content — 12 villae in five underrepresented provinces.** Prior shifts flagged
+Africa Proconsularis, Syria, Macedonia, Galatia, and Cappadocia as thin-to-empty for villae.
+Dispatched one WebSearch agent per province cluster (used ~40 calls, over its own 25-30 budget
+target — flagging this as the shift's one real scope miss, though still within the combined
+~200-call session total): 4 in Africa Proconsularis (real headroom left there — the research
+found more candidates than it used), 3 in Syria, 3 in Macedonia, and 1 each in Galatia and
+Cappadocia. The last two aren't under-research: the agent's own sources (Penn Museum's Gordion
+project, Mitchell's Galatia scholarship) state Gordion's peristyle house is the *only* excavated
+rural residence known from Roman Galatia, and Cappadocia's Roman-era remains skew toward
+military/infrastructure with almost no excavated villas at all — both provinces are genuinely
+near their ceiling from the literature, not from budget exhaustion. 117 CE dating checked
+per-record: 3 of the 12 (Uthina's House of the Laberii, a Beroia farm villa, Gordion's peristyle
+house) predate Trajan's death and ship `extant_117ce: true`; the other 9 postdate it and say so
+plainly in `notes` rather than hedge — one, Daphne's Atrium House, was destroyed by name in the
+115 CE Antioch earthquake two years before this map's snapshot. Caught one exact-coordinate
+collision before committing (Daphne's Atrium House and House of Menander, both "general suburb,
+exact find-spot not pinpointed") and nudged one by ~150m so the map doesn't render an occluding
+stack — the kind of thing `[12-FIX-2]`'s stacked-pins fix already established as a standing
+concern for this project. No `image_url` on any of the 12 — the research repeatedly surfaced
+Commons *category* pages, never a confirmable `File:` filename, so every image field was omitted
+rather than guessed, per this project's own long-documented "skip rather than guess" convention.
+`pois.geojson`: 1236 → 1248 features. Commit `e2b7480`.
+
+### Track B — `[05-P2-6]` i18n scaffold, claimed and shipped
+
+Claimed on `BOARD.md` first (commit `3d9411d`, pushed alone per the claim protocol) before
+touching code. New `app/strings.ts` (EN/IT dictionaries — `TranslationKey` is derived from the
+English dictionary's own keys, so a locale missing a key is a compile error, not a silent
+fallback) and `app/useLocale.ts`, copying `useUnits.ts`'s exact `useSyncExternalStore` +
+localStorage pattern (`roman-maps:locale`, defaults to English, no SSR/hydration mismatch).
+
+**Scope call, logged per the brief's own rule for ambiguous tickets**: the ticket text is just
+"`strings.ts` scaffold; English + Italian" with no further spec, and multiple recent shifts'
+`SHIFT_LOG` entries list it among tickets skipped for being underspecified. Rather than skip it
+again or invent a full i18n-routing architecture (locale-prefixed URLs, `next-intl`, etc. — a
+much bigger lift that would touch `next.config.js`, against the brief's own "don't touch deploy
+config" guardrail), scoped it to what "scaffold" plainly supports: wire the dictionary through
+`Chrome.tsx`'s visible chrome (search placeholder/title, results' "Today:" label, the hamburger
+menu's Distance-units section, a new Language section right below it, Measure distance/Guided
+tours/Places in view, the onboarding hint, and the epoch pill's label+tagline) and ship the
+language switcher itself. `CurrencyConverter.tsx`, `SailingSeason.tsx`, `ThemeToggle.tsx`, and
+the other ~25 components stay English-only — a future pass can extend the same dictionary
+incrementally rather than needing a second architectural decision.
+
+No new hardcoded colors (every string swap was a literal→literal replacement, no new markup);
+`npx tsc --noEmit` and `npm run build` both clean. **Verified live**, not just by code review:
+ran `next dev`, drove it with Playwright against the pre-installed Chromium
+(`/opt/pw-browsers/chromium-1194/chrome-linux/chrome` — the versioned subdirectory, matching
+prior shifts' note that the unversioned path doesn't exist) at 1280×900 light and 375×812 dark,
+toggled the new Language control, and confirmed every wired string actually flips EN→IT
+(`"Search Roman Maps"` → `"Cerca su Roman Maps"`, `"117 CE · The Empire at its peak"` →
+`"117 d.C. · L'Impero al suo apice"`) with no layout regression on either screenshot.
+
+**Real bug hit while building the verification script, not a product bug, but worth flagging
+again since it bit this shift too**: `FEATURE_BACKLOG.md` already documents that `LeftRail.tsx`
+and `Chrome.tsx` both render a button titled `"Menu"` at nearly the same y-coordinate on
+desktop — the left rail's is decorative/unwired, Chrome's is the real one. A naive
+`page.locator('button[title="Menu"]').first()` silently drives the wrong (no-op) button and
+looks like a passing-but-doing-nothing test. Filtered on both y (<60) and x (≥60, outside the
+60px dark rail) to land on the real one. Any future Playwright verification against this header
+should do the same rather than rediscover it a third time.
+
+### State, verification, next
+
+`npm run validate`: 0 errors, same 7 pre-existing reviewed warnings (the India/China
+diplomacy/neighbor points that sit outside the empire envelope by design) both before and after
+every change — no new warnings introduced by either the citation splices or the new villa
+features. `npm run build` clean on every commit via the pre-push hook. `npm run metrics --
+--write`: 1248 POIs, 97.9% deep, 26 thin (the 12 new villae without images are part of that
+thin count, expected).
+
+Commits this shift, in order: `3d9411d` (BOARD.md claim), `13fdac4` (17 ancient-sources
+citations), `e2b7480` (12 new villae), `8093536` (i18n scaffold), plus this log entry's commit
+and a `METRICS.md`/`BOARD.md` refresh. All pushed to `main`.
+
+**Next shift should pick up:**
+
+- **Track A, ancient-sources:** 86 `confidence:high` POIs remain uncited. This shift deliberately
+  skipped the 35-record `auxiliary_fort` pool as low-yield literary-citation territory —
+  legitimate to try again if a future shift has budget to spare and wants to confirm that call,
+  but temples/civic monuments and named individual sites remain the better-yielding target based
+  on this and prior batches' hit rates.
+- **Track A, villae:** Africa Proconsularis still has real headroom (the research agent found
+  more candidates than it used this round). Galatia and Cappadocia are near their real ceiling
+  per the literature — don't re-spend budget re-searching them without a new angle. The 12 new
+  records all shipped with `image_url` omitted — a dedicated image-only top-up pass across them
+  (and the other ~26 thin records `npm run metrics` tracks) would move real coverage without
+  needing fresh factual research.
+- **Track B:** `BOARD.md` is back down to the same short list of blocked/oversized/spec-missing
+  tickets this and several prior shifts have already triaged (`[12-P0-1]`, `[03-P0-1]`,
+  `[03-P0-2]` — still no spec, `[13-P0-2]`, `[02-P0-4]`'s glyph-PBF half, `[11-P1-5]`,
+  `[11-P1-6]`, `[12-P1-4]` fuzzy-dates, `[06-P1-5]` finds). `[12-P1-4]` fuzzy-dates is probably
+  the next-most-tractable one for an unattended session — it has a concrete shape
+  (`{earliest, latest, display}`) even without a full spec, unlike card-rebuild.
+- Standing items unchanged: `research/` stays gitignored/empty in every cloud container;
+  `en.wikipedia.org`/`commons.wikimedia.org`/`overpass-api.de`/`pleiades.stoa.org` direct egress
+  stays blocked; `WebSearch` remains the only working research path with a shared ~200-call
+  session budget; the detached-`HEAD` boot symptom and its fix recur nearly every shift.
+
+---
+
 ## Shift 87 — 2026-09-01 (this shift's own prompt claimed "Shift 4 of four")
 
 Same stale-numbering mismatch every recent shift has flagged — real sequential count continues

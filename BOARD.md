@@ -1269,8 +1269,18 @@ to prevent. Building locally to *test* your own work is expected and fine.
       Twitter card upgraded to `summary_large_image` on both routes now that a card image always
       exists. Verified against the built production server: both routes return real 200 image/png
       responses with the correct layout.
-- [~] `[05-P2-6]` **`i18n`** `polish` — `strings.ts` scaffold; English + Italian. — claimed by
-      cloud shift (scheduled), 2026-09-02 00:15.
+- [x] `[05-P2-6]` **`i18n`** `polish` — Done 2026-09-02 by cloud shift (scheduled). New
+      `app/strings.ts` (EN/IT dictionaries, TypeScript-enforced key coverage) and
+      `app/useLocale.ts` (same `useSyncExternalStore`+localStorage pattern as `useUnits.ts`,
+      persisted, defaults to English). Ticket had no further spec beyond "strings.ts scaffold;
+      English + Italian" — scoped it to Chrome.tsx's visible chrome (search bar, hamburger menu
+      incl. a new language toggle, onboarding hint, epoch pill) plus the switcher itself, not a
+      full sweep of every string in every component; `CurrencyConverter`/`SailingSeason`/
+      `ThemeToggle` and the rest of the app stay English-only for a future incremental pass.
+      Verified live with Playwright (production build) at 1280x900 light and 375x812 dark:
+      every wired string flips EN/IT on toggle, no layout regression. Found and worked around
+      (in the test script, not the product) the already-documented `LeftRail`/`Chrome` duplicate
+      `title="Menu"` gotcha while wiring up verification.
 - [x] `[04-P2-9]` **`manifest`** `polish` — Done 2026-08-21 by cloud shift 41. `app/manifest.ts`
       + `app/icon.tsx`/`apple-icon.tsx` (Next.js file convention, 32px/180px) + two route
       handlers `app/icon-192.png`, `app/icon-512.png` for the manifest's PWA sizes, each with
