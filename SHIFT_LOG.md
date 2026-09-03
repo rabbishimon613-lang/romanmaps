@@ -7,6 +7,192 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 93 — 2026-09-03 (this shift's own prompt claimed "Shift 2 of four")
+
+Continuing the real count from Shift 92's last commit (`86f42dd`). Repo booted with `HEAD`
+detached 50 commits ahead of the local `main` ref — same recurring boot symptom every recent
+shift has flagged. `git checkout main && git reset --hard origin/main` recovered cleanly (the
+local `main` ref itself was stale at `7f3478b`, ~50 commits behind; `origin/main` already matched
+the detached `HEAD` exactly, so no data was at risk). `npm install` wired `core.hooksPath` to
+`.githooks` before the first push. Confirmed the standing network limitation: `overpass-api.de`
+still fails direct `curl`; `WebSearch` is the only working research path.
+
+### Board + Track B
+
+Read `BOARD.md` in full. Same short, already-triaged P0 list every recent shift has found
+(merge-themes, schema-v2, card-rebuild, image-audit, self-host-glyphs half-done, two
+blocked-on-human tickets). `[06-P1-5]` `finds` (Shift 92's own start) remained the best
+genuinely-tractable Track B pick — 7 of ~40 sites done, real headroom, no live-browser
+dependency. Picked up 4 more sites directly (parent-session `WebSearch`, not delegated, after
+Shift 92's own finding that a delegated agent's budget can run out mid-task):
+
+- **Volubilis** (`4988af0`): bronze busts of Juba II (~25 BCE) and Cato the Younger (60 CE, House
+  of Venus), the Ephebe Crowned with Ivy (late Hellenistic bronze, House of the Ephebe). All three
+  Commons-image-confirmed for the first two; the Ephebe shipped without an image after a Commons
+  search came up empty rather than guess a filename.
+- **Leptis Magna** (`4988af0`): the Flavian-dated Zliten mosaic (image confirmed —
+  `Gladiators_from_the_Zliten_mosaic.jpg`), the Tiberian-era Ceres Augusta/Livia cult statue
+  (35-36 CE), a Claudian-era portrait statue (~50 CE). Deliberately did NOT reach for the site's
+  most famous pieces — the Severan Forum's 70 Medusa masks and the Arch of Septimius Severus
+  reliefs are 203 CE, 86 years past this map's snapshot.
+- **Aquileia** (`4988af0`): the city's own founding-ritual relief (sulcus primigenius, 1st c.
+  BCE/early 1st c. CE — literally Aquileia's "birth certificate in stone"), the Aquileia Dish
+  (silver-gilt, ~30 BCE, now Kunsthistorisches Museum Vienna, possibly a veiled Cleopatra/Antony
+  portrait), and the museum's 6,000+-piece amber/gem collection (largest of its kind, drawn from
+  the city's own necropolis and workshops).
+- **Corinth** (`8955092`): only 2 of the usual 3-8 floor — Statue of Augustus Capite Velato and
+  the Gaius/Lucius Caesar group, both from the Julian Basilica's Julio-Claudian statuary (per the
+  Corinth Excavations' own 2023 publication, "the largest group of Julio-Claudian statues outside
+  Rome"). Ran out of this session's own `WebSearch` budget mid-research for a third item before
+  finding one that cleared both the "confidently dated" and "distinct from the first two" bars —
+  logged as a strong lead for next shift rather than padded with a weak one.
+
+**Two real research dead ends, logged loudly so a future shift doesn't re-spend the budget:**
+Timgad and Djemila (both newly founded Trajanic/Nervan colonies, 96-100 CE) looked like obvious
+finds candidates — both have excavated on-site museums — but essentially everything individually
+dated in English-language sources for either site turns out to be 2nd-3rd century CE. A city
+founded under Trajan needs a generation or two of accumulated wealth before it produces the kind
+of individually-dated, published museum piece this feature wants, and by then the snapshot has
+usually passed. Older/wealthier cities are consistently the better hunting ground. Also caught:
+Palmyra's famous bilingual Tariff stele (now in the Hermitage) — a prior shift flagged it as an
+obvious Palmyra finds lead needing only a museum-location check, but live research this shift
+found the stele itself is dated 137 CE, 20 years after this map's snapshot. Dropped.
+
+BOARD.md's `[06-P1-5]` note updated with all of the above; still left `[ ]` (10 of ~40 sites now
+populated, real headroom left — see BOARD.md for the full accounting).
+
+### Track A — axis 2 (roadside): a new road, 11 stations
+
+**Via a Carthagine Cirtam** (`b48c7c0`) — a genuinely new road corridor, dispatched to a
+background research agent since prior shifts found this parallelizes well. Sourced from the
+Antonine Itinerary's *Iter a Carthagine Hippone Regio* and *Iter a Musti Cirtam* entries across
+Africa Proconsularis/Numidia. The label itself is a modern descriptive tag, not a single attested
+ancient road name (flagged as such in the data, unlike "Via Appia" etc.) — logged rather than
+hidden. The agent rejected the alternative Carthage-Theveste road as the primary pick: its only
+dated construction inscription (CIL VIII 22173) places it at 123 CE, after Trajan's death; this
+corridor instead has Trajanic-era attestation (a 112 CE bridge project near Sicca Veneria, a
+Trajanic Cereres temple at Musti). Two stations (Unuca, Sicilibba) carry `confidence: "low"` —
+named only in the itinerary text with no confirmed find-spot, positions interpolated along the
+route from mileage rather than invented. Dropped two speculative Commons image filenames
+(`Musti ruins.jpg`, `Thagaste 01.jpg`) the agent itself flagged as unverified — a follow-up
+WebSearch couldn't confirm either one, so they were stripped before merging (see the JSON
+round-trip note below for how that nearly went wrong). Station count came in at 11, below the
+brief's usual 20-50 floor for "one complete road" — a real reflection of how thin the corridor's
+record gets once the four already-mapped endpoint cities (Carthage, Hippo Regius, Cirta, Sicca
+Veneria) are excluded, not a shortcut; the agent explicitly declined to pad with invented
+milestones or guessed vici.
+
+`road_stations.geojson`: 571 → 582.
+
+### Track A — axis 3e (tombs/necropoleis): 20 new features
+
+Also dispatched to a background agent, following up Shift 92's own flagged leads plus fresh
+research (`73defa6`). Bartlow Hills (Britain) and the Gallo-Roman Mausoleum of Faverolles (Gaul)
+confirmed and added. Three Palmyra tower tombs added with independently inscribed foundation
+dates — Tower of Iamblichus (83 CE), Tower of Atenatan (9 BCE, the earliest securely dated tomb
+in the whole Palmyrene necropolis), Tower of Kitot (40 CE). Two other Shift-92-flagged leads were
+researched and dropped rather than forced in: the Pile de Cinq-Mars dates to the late 2nd/early
+3rd century CE per archaeomagnetic dating of its brickwork, and the Mausoleo de Fabara to the
+Antonine period (c. 136-190 CE) — both after this map's snapshot. Ptolemais's necropolis turned
+out to be already fully represented under two existing records, nothing to add without
+duplicating.
+
+15 further tombs researched independently: four in Jerusalem (Jason's Tomb, Cave of Nicanor,
+Tombs of the Sanhedrin, Herod's Family Tomb — all Hasmonean/Herodian-era, standing well before
+117 CE), the Heroon of Pericles at Limyra (Lycian dynastic tomb, 370 BCE), the Mausoleum of Gasr
+Doga (Tripolitania frontier), Mausoleo Candia (Aquileia, reconstructed 1956 from genuine
+recovered blocks), the Tomb of Battus inside Cyrene's own agora (the city founder's grave, a rare
+honor), the Tombs of the Kings at Paphos, the Thracian Tomb of Kazanlak, two more Alexandria tomb
+complexes (Anfushi, Wardian), the Royal Mausoleum of Syphax (Numidia), and two major pre-Roman
+Macedonian royal tombs that were sealed and *undiscovered* in 117 CE — Philip II's tomb at
+Vergina (opened 1977) and the Kasta Tomb at Amphipolis (opened 2014) — using the same "physically
+existed, unopened, at the snapshot date" logic this dataset already applies to its Etruscan
+tombs. Checked every candidate's id and coordinates against the existing dataset before merging;
+no collisions.
+
+`pois.geojson` (this batch): 1382 → 1402.
+
+### Track A — axis 3c (economic infrastructure): 3 quarries, and a real WebSearch-budget finding
+
+A third background agent was dispatched to chase two specific quarry leads a prior shift flagged
+(Cyzicus, Kozak granite near Pergamon) plus 15-20 more economic-infrastructure sites. It hit "200
+of 200 WebSearch calls used" after only 9 queries and could not proceed — a materially different
+result from Shift 92's own finding that a fresh subagent gets its own 200-call budget independent
+of the parent session. This shift's *parent* session hit the same wall directly a short time
+later, mid-research on a Corinth finds item (see above). Whatever the actual quota mechanism is,
+it did **not** behave as "each dispatched agent gets a fresh 200" this time — worth flagging
+loudly for whoever picks up research-heavy work next, since planning around per-agent-fresh
+budgets (as this shift initially did, dispatching three agents expecting three full budgets) may
+not be reliable. The agent's WebFetch calls were also fully blocked (`EGRESS_BLOCKED`) for every
+domain tried, consistent with the standing network limitation.
+
+Despite the early cutoff, it returned three usable candidates. Kozak Granite Quarries (near
+Pergamon, `Marmor Misium` in modern geological literature, sourced to two peer-reviewed studies)
+shipped at `confidence: "high"`. Cyzicus Quarries and the Troad Granite Quarries (near Assos)
+shipped at `"low"`/`"medium"` — both notes say plainly that the coordinates mark a general
+district, not a surveyed quarry face, rather than implying precision the sourcing doesn't
+support. A handful of other candidates (Iberian garum sites, Sardinian mines) were flagged by the
+agent as likely duplicates of existing records and were not added either way without
+confirmation.
+
+`pois.geojson` (this batch): 1402 → 1405.
+
+### A JSON round-trip trap this shift hit and fixed before it reached origin
+
+Needed to strip two unverified `image_url`/`image_credit` fields from two `road_stations.geojson`
+records after merging. `road_stations.geojson` is one of the files prior shifts confirmed is
+uniformly 2-space-indented (unlike `pois.geojson`), so a full `json.load`/`json.dump(...,
+indent=2)` round-trip should have been safe per that standing note. It wasn't, for a different
+reason: Python's `json.dump` defaults to `ensure_ascii=True`, which silently escaped every `·`
+and `—` character already in the file to `\uXXXX`, touching every line that happened to contain
+one — a 526-insertion/263-deletion diff for what should have been a 2-line change. Caught by
+`git diff --stat` before committing (the standing "diff before you commit" habit this log has
+flagged before), fixed by reverting to the clean insertion-only state and using a targeted `Edit`
+on just the two properties instead of any full-file round-trip. Logged in FEATURE_BACKLOG.md:
+"file is uniformly formatted" is necessary but not sufficient for a round-trip to be safe — the
+serializer's own defaults matter too.
+
+### State, verification, next
+
+`npm run validate`: 0 errors throughout, same 7 pre-existing reviewed warnings (India/China points
+flagged as outside the empire envelope — known, not touched this shift). `npm run build`: clean
+at every push (7 pushes this shift, each gated by the pre-push hook). `npm run metrics --
+--write`: 1405 POIs, 582 road stations, 97.2% deep, image coverage 58.7% on `pois.geojson` alone,
+ancient-sources coverage on `confidence: high` POIs 82.7% (492/595) — both image and
+ancient-source percentages ticked down slightly this shift since several of the new tomb/road
+records shipped without a verifiable image or an inline ancient-source citation rather than guess
+one.
+
+Commits this shift, in order: `4988af0` (3 sites' finds), `b48c7c0` (Via a Carthagine Cirtam, 11
+stations), `73defa6` (20 tomb-family POIs), `8955092` (Corinth finds + BOARD/FEATURE_BACKLOG
+notes), `a1383cb` (3 quarries), `2f08c70` (metrics refresh). Plus this log entry's own commit. All
+pushed to `main`.
+
+**Next shift should pick up:**
+
+- **Track B, `[06-P1-5]` finds**: 30 of ~40 sites still open. Corinth needs one more confidently-
+  dated, distinct museum piece to clear the usual floor (see above — its Julian Basilica lead is
+  strong, just needs a fresh search budget). Timgad and Djemila are confirmed dead ends for this
+  feature specifically — don't re-spend research budget there without a genuinely new lead.
+- **Track A, axis 2**: Via a Carthagine Cirtam is a real but thin corridor (11 stations); a
+  different, richer Iberian or Balkan road not yet touched likely has more headroom per Roman
+  mile of research spent.
+- **Track A, axis 3c**: economic infrastructure now at 72 records (mine/quarry/garum_factory/
+  salina/kiln/estate). The three-quarry batch this shift only scratched the surface of what a
+  fuller WebSearch budget could confirm — Cyzicus and Troad in particular need tighter coordinate
+  sourcing than this shift could provide.
+- **Whoever plans research-agent dispatch next**: don't assume a freshly-dispatched agent gets
+  its own independent 200-call WebSearch budget — this shift's own direct experience contradicts
+  Shift 92's finding on that exact point. Treat the budget as a shared, session-wide resource
+  until proven otherwise on a given day, and budget accordingly (fewer, better-scoped research
+  dispatches rather than several broad ones in parallel).
+- Standing items unchanged: `research/` stays gitignored/empty in cloud containers;
+  `en.wikipedia.org`/`commons.wikimedia.org`/`overpass-api.de`/`pleiades.stoa.org` direct `curl`
+  and `WebFetch` egress stays blocked; `WebSearch` remains the only working research path, subject
+  to the budget caveat above.
+
+---
+
 ## Shift 92 — 2026-09-03 (this shift's own prompt claimed "Shift 1 of four")
 
 Continuing the real count from Shift 91's last commit (`f74a1b7`). Same recurring boot symptom
