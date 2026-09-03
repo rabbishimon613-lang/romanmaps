@@ -7,6 +7,179 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 95 — 2026-09-03 (this shift's own prompt claimed "Shift 4 of four")
+
+Continuing the real count from Shift 94's last commit (`d30016b`). Repo booted with local `main`
+stuck at Shift 85's tip (`7f3478b`) while `HEAD` was detached far ahead — the same recurring boot
+symptom every recent shift has flagged. `git fetch origin main` showed `origin/main` had already
+moved to match the detached `HEAD` exactly (`d30016b`), so `git checkout -B main origin/main`
+recovered cleanly with nothing at risk. `npm install` wired `core.hooksPath` to `.githooks` before
+the first push.
+
+### Board + Track B — `[06-P1-5]` finds, 8 more sites
+
+Read `BOARD.md`. No stale `[~]` claims outstanding. `[06-P1-5]` `finds` remained the best
+genuinely-tractable pick — same conclusion four prior shifts have reached independently — claimed
+it (`845d121`), then researched and added 8 more sites directly via parent-session `WebSearch`
+(the approach recent shifts have found more reliable than delegating a whole site to an agent):
+
+- **Sabratha** (`f27ac26`): the marble head of Flavia Domitilla — Vespasian's daughter, born at
+  Sabratha to Italic colonists — stolen from the site museum in a 1990 break-in, sold at a
+  Christie's auction before Italy tracked it down and repatriated it in 2012; the 3rd-century
+  Three Graces mosaic; the Triumph of Bacchus and Ariadne mosaic from the Temple of Liber Pater.
+- **Carnuntum** (`f27ac26`): the 1894-excavated Mithras-killing-the-bull relief (one of five known
+  Mithraic shrines here — more than any other findspot north of the Alps); a bronze Thraex
+  gladiator statuette from the amphitheatre district; a commander's cuirassed statue bearing
+  Jupiter Heliopolitanus on the breastplate.
+- **Xanten** (`f27ac26`): the bronze Xanten Youth (fished from the Rhine at Luttingen in 1858,
+  Neues Museum Berlin); the excavated river ferry now suspended 12m above the LVR-Römermuseum
+  floor; a silver-gilt 1st-century cavalry parade helmet (LVR-LandesMuseum Bonn).
+- **Verona** (`f27ac26`): a 3rd-century gladiator combat mosaic (retiarius, myrmillo, secutor and
+  referee all individually identifiable); the Tomb of the Doctor's bronze surgical instrument set,
+  buried with two gold coins for Charon's fare; the single bronze coin that dated the Arena's
+  construction to 30-42 CE, a generation older than the Colosseum.
+- **Rimini** (`f27ac26`): the Domus del Chirurgo's 150+ bronze surgical instruments (the world's
+  largest such collection by type and number); the Port Scene mosaic showing Ariminum's own
+  harbor and Adriatic catch; a bronze votive hand dedicated to Jupiter Dolichenus.
+- **Portus** (`f18d049`): the Torlonia Harbor Relief (a marble panorama of the hexagonal basin, dug
+  up 1863); the colossal 5.57m cuirassed Trajan statue that overlooked the basin entrance (Vatican
+  Museums, Museo Chiaramonti); a second Torlonia relief showing a dockside clerk logging cargo
+  while workers unload a ship.
+- **Beneventum** (`f18d049`): three pieces from Domitian's 88-89 CE Iseum, now at the Museo del
+  Sannio — the diorite pharaoh-style statue of Domitian, the temple's sphinxes, and a marble prow
+  from a statue of Isis Pelagia.
+- **Pozzuoli** (`ed6dd15`): the Statue of Serapis (found 1750, so convincing it got the whole
+  macellum misidentified as a "Temple of Serapis" for over a century); the amphitheatre's
+  Scabillarii Mosaic, naming a musician called Pulveris; the Puteoli Marble Block (Penn Museum) —
+  a Trajanic arch relief on one face, Domitian's own damnatio-erased dedication on the other.
+
+Also researched **Ancona** and **Cumae** and found both genuinely thin — Ancona's Arch of Trajan
+lost its bronze statues to Saracen raiders in 848 CE (only modern museum copies exist), and its
+Archaeological Museum's other headline piece (the Civitalba frieze) turns out to belong to a
+different site near Sassoferrato, not Ancona; Cumae's strongest candidates were a 2018-discovered
+painted tomb (2nd c. BCE banquet fresco) and a colossal 1st-century Jupiter bust from the "Temple
+of the Giant," but a real search for a third distinct piece came up empty before the session's
+WebSearch budget ran out. Neither logged with a `finds` field — below the ticket's 3-item floor,
+per this ticket's own established practice (see Baalbek/Tivoli, Shift 94) of not padding with a
+weak second or third item. Worth a fresh pass, not a confirmed dead end like Timgad/Djemila.
+
+`app/sites.ts`: **26 of 40 sites now have a `finds` array (up from 18)**. `npx tsc --noEmit` clean
+at every edit. Updated `BOARD.md`'s standing `[06-P1-5]` note with the full site list and current
+open-site list, then reset the ticket to `[ ]` (`6470b2b`) — it's a standing task, never "done".
+
+### Track A — axis 16 crafts top-up, plus three image-top-up batches, two axes touched
+
+Dispatched three background research agents in sequence/parallel across the shift (crafts, POI
+images, road-station images), then a fourth for a fresh living-empire axis late in the shift that
+came back empty-handed once the session's shared `WebSearch` budget ran dry — see below.
+
+**Axis 16 — crafts.geojson top-up** (`df9e4ed`): **4 new sites**, `crafts.geojson` 49 → 53 —
+Berenike (Red Sea pearl fishery, sourced to an 11 CE rock-cut dedication naming the prefect's dual
+role over mines and pearling — a genuinely different site from the already-covered Persian Gulf/
+Bahrain entries), Cadiz (a second Baetican-wool entry distinct from the existing Corduba one —
+Columella's own account of his uncle's Mauretanian-ram × Tarentine-ewe breeding experiment there),
+and two of Pliny the Elder's four named Delta linen grades — Tanis (Tanitic) and Pelusium
+(Pelusiac) — beyond the Alexandria/Akhmim/Beit Shean entries already on the map. Six candidates
+correctly rejected: Muza and Myos Hormos (no real pearling evidence, matching Shift 94's own prior
+rejection of Muza), Saguntum (wrong province — Tarraconensis, not Baetica), and Bouto/Tentyra (the
+other two Pliny linen towns, left open for a future pass rather than force-added on thin sourcing).
+
+**`pois.geojson` image top-up** (`4d23ffd`): 14 of 111 `confidence: high` image-null records
+closed — Timgad's Arch of Trajan and Theatre, 5 Britannia forts/sites (Wroxeter, Cirencester,
+Lincoln's Newport Arch, Malton, the Vielbrunn Limes watchtower), Baiae's Temple of Mercury/Echo,
+Temple of Diana and Portus Julius, Coventina's Well, Athens's Philopappos Monument, and the
+Banditaccia/Monterozzi Etruscan necropoleis. Five Leptis Magna candidates and Salona's theatre
+deliberately skipped — every search kept surfacing a different, wrong monument at the same site
+(the exact mismatch risk the brief warns about), so they were left open rather than guessed.
+Feature count confirmed unchanged (1405) before merge. High-confidence null-image pool 111 → 97.
+
+**`road_stations.geojson` image top-up** (`d59d7be`): 6 of 426 image-null stations closed —
+Segusio/Susa, Albintimilium/Ventimiglia, Cemenelum/Cimiez-Nice, Forum Iulii/Fréjus, Arelate's Via
+Aurelia station, Glanum — all Alpine/Provençal stations with real standing Roman monuments (arches,
+amphitheatres, a mausoleum), a 6/6 hit rate on everything the agent got through. **Real, useful
+process finding**: the agent pre-filtered all 426 image-null stations down to an 86-candidate
+shortlist by keyword-scoring `notes` for signs of surviving remains, then hit this session's shared
+`WebSearch` call cap (200/200) after only ~11 searches — confirming Shift 93's original warning
+that concurrent agents share one search budget, this time costing real yield rather than staying
+theoretical. The agent's own shortlist of ~15 more promising unsearched candidates (Canosa's Arch
+of Trajan, Egnazia, Minturnae's theatre, Arco Felice Vecchio, Ponte di Nona, and others) is
+preserved in this log for whoever picks the budget back up:
+Canosa di Puglia/`station_canusium`, Egnazia/`station_egnatia`, Minturnae/`station_minturnae`,
+Arco Felice Vecchio/`station_in_vineis`, Ponte di Nona/`station_ad_nonum`,
+Aquino/`station_aquinum`, Albenga/`station_albingaunum`, Nepi's Tre Ponti/
+`station_tre_ponti_bridge`, Ponte Mammolo/`station_ponte_mammolo`, the Klimax mansio in Turkey/
+`station_mansio_klimax`, Musti/`station_musti`, Herdonia/`station_herdonia`, Forum Sempronii/
+`station_forum_sempronii`, Ocriculum/`station_ocriculum`.
+
+**Axis 4b — Kitos War top-up, zero result (budget exhaustion, not a research failure)**: dispatched
+a fourth agent to find named Cyrenaica/Mesopotamia engagements for the Kitos War, closing a real gap
+`FEATURE_BACKLOG.md` had flagged (those two revolt zones only carry a province-wide polygon, no
+named point event, unlike Judaea's Lydda siege and Cyprus's Salamis). By the time this agent ran,
+the session's shared `WebSearch` budget was fully spent (200/200) — every search it tried, plus
+fallback `WebFetch`/`curl` attempts against livius.org, jewishencyclopedia.com, perseus.tufts.edu
+and others, came back blocked. Correctly declined to write anything from training-data recall alone
+rather than risk unverified content in a production dataset (it named two plausible candidates —
+Eusebius's Chronicle list of Cyrene monuments destroyed in the revolt, and Lusius Quietus's 116
+recapture of Nisibis — but couldn't confirm exact wording, dating, or in Nisibis's case whether the
+fighting is actually attested as part of the *Jewish* revolt versus the separate general
+Mesopotamian anti-Roman uprising). `events_117.geojson` untouched; the gap stays open for a shift
+with a fresh search budget.
+
+### State, verification, next
+
+`npm run validate`: 0 errors, same 7 pre-existing reviewed warnings throughout (India/China points
+outside the empire envelope, known and untouched); cross-file name collisions 198 → 199 (expected —
+the crafts batch's Cadiz wool entry reuses the existing purple-dye site's coordinates). `npm run
+build`: clean at every push. `npx tsc --noEmit`: clean after every `sites.ts` edit. `npm run
+metrics -- --write` (`8eabb27`): 1405 POIs unchanged, curated places total 3,189 → 3,193, image
+coverage across all curated places 60.1% → 60.8%.
+
+Commits this shift, in order: `845d121` (claim), `f27ac26` (5 sites' finds), `df9e4ed` (crafts +4),
+`f18d049` (2 more sites' finds), `4d23ffd` (pois.geojson image top-up), `ed6dd15` (Pozzuoli finds),
+`6470b2b` (BOARD.md note + unclaim), `d59d7be` (road_stations image top-up), `8eabb27` (metrics
+refresh). Plus this log entry's own commit. All pushed to `main`.
+
+**Next shift should pick up:**
+
+- **Track B, `[06-P1-5]` finds**: 14 of 40 sites still open — baalbek, baiae, brescia, capua,
+  cumae, djemila, jerash, luni, milan, palmyra, ravenna, timgad, tivoli, plus ancona (all
+  thin-or-unresearched, not confirmed dead like timgad/djemila). Baiae has a strong, not-yet-fully-
+  confirmed lead from this shift's own research (before the search budget ran out): the Nymphaeum
+  of Punta Epitaffio, an underwater-excavated (1970s) triclinium with marble statues of a drunken
+  Polyphemus, Ulysses and a companion offering wine — worth a WebSearch pass to nail down the
+  current museum home (very likely the Museo Archeologico dei Campi Flegrei at Baia Castle) and
+  find 2 more Baiae pieces to clear the floor.
+- **Track A — a hard, project-wide constraint, not specific to one axis**: this session's shared
+  `WebSearch` budget (200 calls total, shared across the parent session and every dispatched
+  subagent) ran out partway through this shift and stayed exhausted for the rest of it — the
+  parent session's own direct searches started failing with "budget used" from roughly the halfway
+  point onward, and two of the four dispatched agents (road-station images, Kitos War events) hit
+  the same wall mid-task. This is a harder version of Shift 93's original shared-budget warning:
+  it's not just about how many agents run concurrently, it's a hard per-session cap that *will* be
+  hit within a single 6-hour shift doing this kind of WebSearch-heavy work, regardless of dispatch
+  pattern. Whoever administers these scheduled sessions should look at raising
+  `CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION` if these shifts are meant to sustain a full 6 hours of
+  research-heavy work — a future shift hitting this same wall early should budget its searches
+  accordingly (front-load the most valuable research, expect later hours to be constrained to
+  non-search work like validation, review, and writing up findings).
+- **Axis 16 crafts.geojson**: still genuinely open per the brief's own list — Bouto and Tentyra
+  (Pliny's remaining two named Egyptian linen towns), further Baetica wool centers beyond Cordoba/
+  Cadiz, more glass/jewelry centers.
+- **Axis 4b Kitos War**: Cyrenaica and Mesopotamia fronts still only carry province-wide polygons,
+  no named point engagement — see this shift's dispatched agent's notes above for the two
+  candidates (Cyrene monument destruction per Eusebius's Chronicle; Lusius Quietus's Nisibis
+  recapture) that need verification, not blind insertion.
+- **`road_stations.geojson` image top-up**: 420 of 582 still image-null; this shift's pre-filtered
+  86-candidate shortlist (15 of them listed above by station id) is a ready-made head start once
+  search budget is available again.
+- Standing items unchanged: `research/` stays gitignored/empty in cloud containers; direct `curl`/
+  `WebFetch` to `en.wikipedia.org`/`commons.wikimedia.org`/`overpass-api.de`/`pleiades.stoa.org`/
+  `academia.edu`/`archive.org`/EDH/EDR and effectively every other scholarly domain stays blocked;
+  `WebSearch` remains the only working research path — and, per the above, a *rate-limited* one
+  within a single shift's session, which is new information this shift surfaced.
+
+---
+
 ## Shift 94 — 2026-09-03 (this shift's own prompt claimed "Shift 3 of four")
 
 Continuing the real count from Shift 93's last commit (`94509de`). Same recurring boot symptom

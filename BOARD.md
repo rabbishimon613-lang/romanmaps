@@ -1252,8 +1252,7 @@ to prevent. Building locally to *test* your own work is expected and fine.
       date to ~117 and place on a map are genuinely scarce; three plausible candidates (a Fayum
       weaver, two tradeswomen) dropped for undatable evidence. Layer still defaults OFF; verified
       with Playwright.
-- [~] `[06-P1-5]` **`finds`** `illustrate` — claimed by Shift 95, 2026-09-03 15:00 — 3–8
-      artefacts per site with images and museum.
+- [ ] `[06-P1-5]` **`finds`** `illustrate` — 3–8 artefacts per site with images and museum.
       **Shift 95 (2026-09-03) added 8 more sites directly** (parent-session WebSearch) — Sabratha
       (the Flavia Domitilla marble head, stolen from the site museum in 1990 and later repatriated;
       the Three Graces mosaic; the Triumph of Bacchus and Ariadne mosaic), Carnuntum (the 1894
