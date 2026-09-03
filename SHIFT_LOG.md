@@ -7,6 +7,161 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 94 — 2026-09-03 (this shift's own prompt claimed "Shift 3 of four")
+
+Continuing the real count from Shift 93's last commit (`94509de`). Same recurring boot symptom
+every recent shift has flagged: repo booted with local `main` stuck at `7f3478b` (Shift 85) while
+`HEAD` was detached 50 commits ahead; `git checkout main` then `git reset --hard origin/main`
+recovered cleanly after confirming `origin/main` matched the detached `HEAD` exactly (`git log
+origin/main` showed the same tip) — no `merge-base` existed between the stale local ref and
+`origin/main`, consistent with prior shifts' notes that this repo's remote history gets rewritten
+between sessions rather than the local clone just falling behind. `npm install` wired
+`core.hooksPath` to `.githooks` before the first push.
+
+### Board + Track B — `[06-P1-5]` finds, 7 more sites
+
+Read `BOARD.md`. No `[~]` claims outstanding, same short P0 list every recent shift has found
+already triaged. `[06-P1-5]` `finds` remained the best genuinely-tractable pick (Shift 93's own
+assessment, still true) — claimed it (`4c3f480`), then researched and added 7 more sites directly
+via parent-session `WebSearch` (the approach Shift 93 found more reliable than delegating, since a
+dispatched agent's budget can run dry mid-task and the parent's own budget is shared with it
+anyway):
+
+- **Ostia** (`c3c8121`): Statue of Trajan and Perseus with the Head of Medusa (both from the
+  Ostiense Museum, no confirmable Commons image so shipped without one), the 160 CE Iliad
+  sarcophagus from the Pianabella necropolis (image confirmed), and the Sarcophagus of the Muses —
+  recovered from would-be looters at Isola Sacra in 2008.
+- **Merida** (`c3c8121`): the theatre's Ceres and "Pluto" (now identified as Serapis) statues, the
+  2nd-century Mosaic of the Poet and the Muses — rare for being signed by its own makers, Seleucus
+  and Anthus — and the Casa del Mitreo's Cosmological Mosaic, uncovered still in its original floor
+  in 1966.
+- **Italica** (`c3c8121`): the colossal Trajan statue (dug up 1788, actually erected under Hadrian),
+  Diana of Italica (Parian marble, from the theatre's upper seating), and the House of the Birds
+  mosaic (33 individually identifiable birds, excavated 1930-32).
+- **Paestum** (`c3c8121`): the Tomb of the Diver (480-470 BCE, the only complete figured painting
+  to survive from the Greek world of that date), the Sele metopes (570-560 BCE, survived because a
+  Roman farm building was built over the ruined sanctuary), and the Lucanian "Return of the
+  Warrior" fresco (330-320 BCE).
+- **Trier** (`c3c8121`): the Neumagen wine ship and school relief (both from the same wine-merchant
+  town on the Moselle, 180-220 CE), and the 1993 Trier Gold Hoard — 2,650 aurei, 18.5 kg, the
+  largest Roman gold hoard ever recovered.
+- **Aquincum** (`c3c8121`): the 228 CE water organ (world's oldest known, since reconstructed and
+  playable), the Boxers Mosaic, and a late-1st-century Albertfalva military discharge diploma.
+- **Palestrina** (`d708cc5`): the Nile Mosaic (c. 100 BCE), the head of the Fortuna Primigenia cult
+  statue (found near the sanctuary's own oracle well), and the Ficoroni Cista — a bronze bridal
+  casket signed by its engraver Novios Plautios, 340-330 BCE.
+
+Also closed Shift 93's own explicitly flagged gap: Corinth's finds list needed a third piece to
+clear this ticket's floor, and its own Julian Basilica lead was confirmed real — a cuirassed statue
+identified as Germanicus, one of at least eleven imperial statues that stood in the same building
+as the already-listed Augustus and Gaius/Lucius Caesar group (`c3c8121`).
+
+**Two real, logged dead ends** — Baalbek and Tivoli each turned up only one confidently-distinct,
+sourceable museum piece in a genuine search (a Jupiter Heliopolitanus stele for Baalbek, a
+pseudo-athlete portrait statue for Tivoli's Sanctuary of Hercules Victor), short of this ticket's
+own 3-item floor. Logged rather than padded with a second weak or undated item.
+
+`app/sites.ts`: 18 of 40 sites now have a `finds` array (up from 11). `npx tsc --noEmit` clean at
+every edit. Updated `BOARD.md`'s standing `[06-P1-5]` note with the full site list, the two dead
+ends, and the current open-site list, then reset the ticket to `[ ]` (`fe2f4af`) — it's a standing
+task, never "done".
+
+### Track A — axis 15 (welfare) and axis 16 (crafts), two parallel background agents
+
+Dispatched two research agents in parallel rather than in sequence, on the theory (contra Shift
+93's own cautionary note about shared WebSearch budgets) that two well-scoped, single-file-writing
+agents running concurrently would be more efficient than doing both serially in the parent session
+— this worked cleanly this time: both agents completed in ~16 minutes with a combined 209 tool
+calls and no budget exhaustion, a different outcome from Shift 93's dispatch experience. Worth
+noting for whoever plans dispatch next: the shared-budget risk Shift 93 hit is real but not
+universal — two agents editing two different files with no parent-session WebSearch calls
+in flight at the same time seems to be the safer pattern, vs. Shift 93's three-agents-plus-parent-
+research-simultaneously shape.
+
+**Axis 15 — welfare/euergetism, alimenta towns** (`2e79422`): landed only **1** new town (Amelia/
+Ameria, Umbria, via CIL XI 4351 — a Trajanic dedication where the alimenta-supported children
+styled themselves "pueri puellaeque Ulpiani" in Trajan's honor), against a 15-22 target and the
+brief's own "all 50" floor. **Root cause, not a research failure**: the dispatched agent confirmed
+this sandbox's egress policy blocks direct access to every scholarly domain it tried — Wikipedia,
+EDH, EDR, Academia.edu, JSTOR, archive.org, Cambridge, ResearchGate, even Commons — leaving
+`WebSearch`'s own synthesized snippets as the only channel, and those snippets overwhelmingly
+recycle the same two bronze tables (Veleia, Ligures Baebiani) rather than surfacing the ~39 further
+towns Duncan-Jones's own Appendix III cites from scattered local inscriptions. The agent ran 45+
+targeted queries (by region, by epigraphic marker — *quaestor/praefectus/curator alimentorum*,
+*pueri et puellae alimentarii*, *arca alimentaria*) and checked and rejected on point: Aeclanum,
+Praeneste, Setia, Cora, Norba, Signia, Anagnia, Aletrium, Casinum, Aquinum, Interamna Lirenas,
+Trebula Suffenas, Trebula Mutuesca, Reate, Amiternum, Carsioli, Alba Fucens, Interamna Nahars,
+Spoletium, Hispellum, Mevania, Fulginiae, Vettona, Tuder, Narnia, Ostra, Suasa, Sentinum, Ricina,
+Trea, Septempeda, Falerio, Cupra Maritima, Sarsina, Ariminum, Larinum, Histonium, Teate, Peltuinum,
+Aufinum, Canusium, Venusia, Falerii Novi, Ticinum, Bergomum, Brixia, Eporedia, Caere. One near-miss
+correctly not double-counted: a "pueri et puellae alimentarii" Hadrian dedication published from a
+conference held at Atina itself, so almost certainly belongs to the already-listed Atina rather
+than a distinct town. **29 of ~50 alimenta towns now on the map** — whoever picks this back up
+needs either a network-unblocked environment or direct CIL/EDH/EDR/Duncan-Jones-text access to
+close the remaining ~20; re-running the same WebSearch-only approach against the same corpus is a
+near-certain repeat of this shortfall, not a fresh chance at it.
+
+**Axis 16 — textile + luxury craft geography** (`2e79422`, wording polish in `60bdb47`): **21 new
+sites**, `crafts.geojson` 28 → 49 — purple_dye +4 (Kythira's Porphyroussa murex mounds, Essaouira/
+Mogador's Juba II factory, Cadiz's Teatro Comico kiln ~800 BCE, Taranto's Mare Piccolo shell mounds
+— Pliny ranked it second only to Tyrian purple), wool +4 (Laodicea's famous black wool per Strabo,
+Colossae, Cirencester/Corinium in Britain, Canosa/Canusium's tawny wool named by Pliny), silk +3
+(Merv, Dura-Europos, Damascus — all Silk Road caravan waypoints east of Palmyra), linen +1 (Beit
+Shean/Scythopolis), pearl +1 (Muharraq/Tylos, Bahrain, shipped without an image — no confirmable
+Commons file found), perfume +2 (Amathus's Aphrodite-temple censers, Capua's Seplasia perfume
+market), glass +2 (Beirut, one of the earliest known glass furnaces; Aquileia's 6,000+-gem
+secondary industry), bronze +2 (Palestrina's Ficoroni Cista workshops and Orvieto/Volsinii's
+looted-in-264-BCE bronze industry — both correctly `extant_117ce: false`, the craft itself long
+dead by Trajan's reign), jewelry +2 (Sardis's exhausted Pactolus gold refinery, also
+`extant_117ce: false`; Petra's Nabataean goldsmiths). Six candidates researched and correctly
+rejected for insufficient evidence: Malta murex, Kerkennah/Cercina murex, Chalcis bronze (myth/
+etymology only, no production evidence), Delos bronze (finds attest presence, not local casting),
+Rome's Via Sacra amber shops (no specific citation beyond generic jewelers' inscriptions), Muza/
+Yemen Red Sea pearls (the only source passage is actually about Indian/Barygaza trade).
+
+### State, verification, next
+
+`npm run validate`: 0 errors, same 7 pre-existing reviewed warnings (India/China points outside the
+empire envelope, known and untouched). `npm run build`: clean at every push. `npx tsc --noEmit`:
+clean after every `sites.ts` edit. `npm run metrics -- --write`: 1405 POIs unchanged (this shift's
+work was all in the thematic files + `sites.ts`, not `pois.geojson`), curated places total
+3,167 → 3,189, thematic-file image coverage 60.8% → 61.3%, cross-file name collisions 194 → 198
+(expected — new craft/euergetism sites reuse city coordinates already on the map elsewhere; still
+`[12-P0-1]`'s backlog to resolve, not a defect in this shift's data).
+
+Commits this shift, in order: `4c3f480` (claim), `c3c8121` (6 sites' finds + Corinth's 3rd item),
+`d708cc5` (Palestrina finds), `fe2f4af` (BOARD.md note + unclaim), `2e79422` (1 alimenta town + 21
+craft sites, checkpoint), `60bdb47` (crafts wording polish), `f3b172b` (metrics refresh). Plus this
+log entry's own commit. All pushed to `main`.
+
+**Next shift should pick up:**
+
+- **Track B, `[06-P1-5]` finds**: 22 of 40 sites still open — ancona, baalbek, baiae, beneventum,
+  brescia, capua, carnuntum, cumae, djemila, jerash, luni, milan, palmyra, portus, pozzuoli,
+  ravenna, rimini, sabratha, timgad, tivoli, verona, xanten. Timgad and Djemila are confirmed dead
+  ends (Shift 93); Baalbek and Tivoli are now confirmed thin (this shift, one item each) — a future
+  pass could still ship them as 1-2-item exceptions if the ticket's floor is read as a target, not
+  a hard gate, but don't re-spend a full research budget expecting a third item to appear.
+- **Track A, axis 15**: alimenta towns are blocked on network access, not on research effort — see
+  above. Don't re-run a WebSearch-only pass against the same ~45-query space; either a different
+  environment or a way to reach CIL/EDH/EDR/Duncan-Jones's actual text is needed to close the
+  remaining ~20 towns.
+- **Track A, axis 16**: crafts.geojson is at 49; genuinely still open per the brief's own list —
+  more pearl fisheries (Red Sea specifically, Muza needs a cleaner source than this shift found),
+  more wool centers (general Baetica beyond Cordoba), more Egyptian linen towns beyond
+  Alexandria/Akhmim/Beit Shean.
+- **A finding worth testing again, not assuming**: this shift ran two research agents concurrently
+  (different files, no parent-session WebSearch overlap) with no budget exhaustion, contradicting
+  Shift 93's serial/overlapping-dispatch experience. Not proof the shared-budget risk is gone —
+  just a second data point suggesting *how* agents are dispatched (concurrent vs. overlapping with
+  parent research) matters as much as how many.
+- Standing items unchanged: `research/` stays gitignored/empty in cloud containers; direct `curl`/
+  `WebFetch` to `en.wikipedia.org`/`commons.wikimedia.org`/`overpass-api.de`/`pleiades.stoa.org`/
+  `academia.edu`/`archive.org`/EDH/EDR and effectively every other scholarly domain stays blocked;
+  `WebSearch` remains the only working research path.
+
+---
+
 ## Shift 93 — 2026-09-03 (this shift's own prompt claimed "Shift 2 of four")
 
 Continuing the real count from Shift 92's last commit (`86f42dd`). Repo booted with `HEAD`
