@@ -1252,7 +1252,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       date to ~117 and place on a map are genuinely scarce; three plausible candidates (a Fayum
       weaver, two tradeswomen) dropped for undatable evidence. Layer still defaults OFF; verified
       with Playwright.
-- [ ] `[06-P1-5]` **`finds`** `illustrate` — 3–8 artefacts per site with images and museum.
+- [~] `[06-P1-5]` **`finds`** `illustrate` — claimed by Shift 95, 2026-09-03 15:00 — 3–8
+      artefacts per site with images and museum.
       **Shift 94 (2026-09-03) added 7 more sites directly** (parent-session WebSearch, same
       approach Shift 93 found most reliable) — Ostia (Statue of Trajan, Perseus with the Head of
       Medusa, the 160 CE Iliad sarcophagus, the Sarcophagus of the Muses recovered from looters in
