@@ -1317,6 +1317,111 @@
         "image_credit": "Al-Khazneh (The Treasury), Petra, Jordan, by Vyacheslav Argenberg · Wikimedia Commons",
         "image_alt": "The Treasury facade at Petra"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4737,
+          23.9103
+        ]
+      },
+      "properties": {
+        "id": "craft_pearl_berenike",
+        "name": "Berenike",
+        "craft": "pearl",
+        "one_line": "Berenike anchored Rome's grip on the Red Sea's pearl beds through a documented office: Publius Iuventius Rufus, prefect of Berenike and archimetallarches (commander of mines and quarries), held responsibility for pearl fishing alongside the region's emerald and topaz mines. A rock-cut dedication at the Paneion of Ophiates in Wadi Umm Wikala, dated to Augustus's fortieth regnal year (11 CE), names Rufus in that combined post. Founded around 275 BCE by Ptolemy II and still a working emporium under Trajan, the port funneled Red Sea and Indian Ocean luxury goods toward the Nile and on to Rome, pearls included, through the same desert road network as its emeralds.",
+        "province": "Aegyptus",
+        "modern_location": "Berenike, Red Sea Governorate, Egypt",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.academia.edu/2652731/Pearls_Power_and_Profit_Mercantile_Networks_and_Economic_Considerations_of_the_Pearl_Trade_in_the_Roman_Empire_In_F_De_Romanis_and_M_Maiuro_eds_Across_the_Ocean_Nine_Essays_on_Indo_Mediterranean_Trade_Brill_Leiden_Boston_43_54",
+          "https://www.researchgate.net/publication/361926795_From_the_sea_to_the_river_throught_the_desert_Some_issues_regarding_the_emerald_trade_network_in_Roman_Egypt"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/WELLSTED(1838)%20p2.827%20RUINS%20AT%20BERENICE.jpg?width=800",
+        "image_credit": "Ruins at Berenice, from J.R. Wellsted's Travels in Arabia (1838) · Wikimedia Commons",
+        "image_alt": "19th-century engraving of ruins at ancient Berenike on the Red Sea coast"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2924,
+          36.5297
+        ]
+      },
+      "properties": {
+        "id": "craft_wool_gades",
+        "name": "Cadiz",
+        "craft": "wool",
+        "one_line": "Gades bred the empire's most talked-about designer sheep. Columella's uncle, Marcus Columella, a Gades native he called a clever and exceptional farmer, bought wild, vividly colored rams shipped from Mauretania for the arena and crossed them with fine Tarentine ewes on his own Baetican estate. The resulting flock kept its sires' rare coloring for two generations, wool striking enough that Columella devoted his own De Re Rustica to the experiment. The breeding program ran alongside Gades's older purple-dye works, making the city a hub for two very different luxury fibers at once.",
+        "province": "Baetica",
+        "modern_location": "Cadiz, Spain",
+        "extant_117ce": true,
+        "sources": [
+          "https://bahs.org.uk/AGHR/ARTICLES/40n2a5.pdf",
+          "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2008.01.0504"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Teatro%20Romano%20de%20C%C3%A1diz%20-%20Grader%C3%ADo.JPG?width=800",
+        "image_credit": "Roman Theatre of Cadiz · Wikimedia Commons",
+        "image_alt": "Seating tiers of the Roman theatre at Cadiz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.88,
+          30.9769
+        ]
+      },
+      "properties": {
+        "id": "craft_linen_tanis",
+        "name": "Tanis",
+        "craft": "linen",
+        "one_line": "Tanis lent its name to one of the four grades of Egyptian linen Pliny the Elder catalogued in his Natural History, ranking Tanitic cloth alongside Pelusiac, Butic, and Tentyritic varieties by the Delta town each was grown and woven in. The city sat on its own since-silted Tanitic branch of the Nile, with flax fields worked right along the riverbank. Once a royal capital under the pharaohs, Tanis had faded into a lesser Delta town by Roman times but stayed inhabited and productive enough to give a named linen grade currency into Pliny's own lifetime. Houses from the Roman period, later excavated by Flinders Petrie, still overlie its older pharaonic ruins.",
+        "province": "Aegyptus",
+        "modern_location": "San El Hagar, Egypt",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Aabo%3Aphi%2C0978%2C001%3A19",
+          "https://en.wikipedia.org/wiki/Tanis"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruins%20of%20Tanis.jpg?width=800",
+        "image_credit": "Ruins of Tanis · Wikimedia Commons",
+        "image_alt": "Fallen stone ruins at the ancient site of Tanis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.545,
+          31.0417
+        ]
+      },
+      "properties": {
+        "id": "craft_linen_pelusium",
+        "name": "Pelusium",
+        "craft": "linen",
+        "one_line": "Pelusium gave its name to Pelusiac linen, one of four regional grades of Egyptian flax cloth Pliny the Elder listed by name alongside Tanitic, Butic, and Tentyritic varieties. Sited on the Nile's easternmost mouth, the city controlled Egypt's main land gateway from Syria and Judaea, a customs post and fortress as much as a weaving town. Flax grown in the surrounding marshland fed workshops that kept the Pelusiac name recognizable across the Roman world alongside Alexandria's own linen. Roman-period baths with mosaic floors and a theater still stand today at Tell el-Farama, the ancient city's modern name.",
+        "province": "Aegyptus",
+        "modern_location": "Tell el-Farama, Egypt",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Aabo%3Aphi%2C0978%2C001%3A19",
+          "https://pcma.uw.edu.pl/en/2019/02/10/pelusium-tell-farama/"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
