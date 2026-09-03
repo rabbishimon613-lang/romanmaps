@@ -1252,7 +1252,7 @@ to prevent. Building locally to *test* your own work is expected and fine.
       date to ~117 and place on a map are genuinely scarce; three plausible candidates (a Fayum
       weaver, two tradeswomen) dropped for undatable evidence. Layer still defaults OFF; verified
       with Playwright.
-- [ ] `[06-P1-5]` **`finds`** `illustrate` — 3–8 artefacts per site with images and museum.
+- [~] `[06-P1-5]` **`finds`** `illustrate` — claimed by cloud shift (Shift 94), 2026-09-03 12:00 — 3–8 artefacts per site with images and museum.
       **Started 2026-09-03 by cloud shift (Shift 92) — schema + UI shipped, 7 of 40 sites
       populated, real headroom left.** **Shift 93 (2026-09-03) added 3 more sites directly** —
       Volubilis (Juba II and Cato the Younger bronze busts, the Ephebe Crowned with Ivy),
