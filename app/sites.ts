@@ -37,6 +37,20 @@ export type SiteInfo = {
   image_url?: string;
   image_credit?: string;
   image_alt?: string;
+  /** Notable individual artefacts recovered from this site — 3-8 real, individually-identifiable
+   * finds (a named statue, mosaic, hoard, inscription, fresco), each with its own image and
+   * current museum home. Distinct from the site's own hero `image_url` (the ruin/park itself) and
+   * from `pois.geojson` (standing structures) — this is the portable, museum-held material culture
+   * a visitor would actually go see indoors. Rendered as a "Notable finds" grid on /site/[slug].
+   * Board [06-P1-5]. */
+  finds?: {
+    name: string;
+    note: string;       // 1-2 sentence Google-Business-voice description, same voice rules as pois.geojson
+    museum: string;      // current museum/collection, e.g. "Naples National Archaeological Museum"
+    image_url?: string;
+    image_credit?: string;
+    source?: string;
+  }[];
 };
 
 export const SITES: SiteInfo[] = [

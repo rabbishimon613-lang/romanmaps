@@ -152,6 +152,32 @@ export default function SitePage({ params }: { params: { slug: string } }) {
           </div>
         )}
 
+        {site.finds && site.finds.length > 0 && (
+          <div style={{ margin: "0 0 36px" }}>
+            <h2 style={{ fontSize: 15, letterSpacing: "0.06em", textTransform: "uppercase", color: "#8a7a60", margin: "0 0 14px" }}>
+              Notable finds
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 16 }}>
+              {site.finds.map((f, i) => (
+                <div key={i} style={{ background: "#fdf6e8", borderRadius: 8, overflow: "hidden", border: "1px solid #e6d9bd" }}>
+                  {f.image_url && (
+                    <img
+                      src={f.image_url}
+                      alt={f.name}
+                      style={{ display: "block", width: "100%", height: 140, objectFit: "cover" }}
+                    />
+                  )}
+                  <div style={{ padding: "10px 12px" }}>
+                    <div style={{ fontWeight: 600, fontSize: 14.5, marginBottom: 4 }}>{f.name}</div>
+                    <div style={{ fontSize: 13.5, lineHeight: 1.5, color: "#5a4c38", marginBottom: 6 }}>{f.note}</div>
+                    <div style={{ fontSize: 12, color: "#8a7a60" }}>{f.museum}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         <a
           href={mapHref}
           style={{
