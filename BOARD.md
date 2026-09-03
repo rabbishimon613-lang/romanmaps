@@ -1252,7 +1252,25 @@ to prevent. Building locally to *test* your own work is expected and fine.
       date to ~117 and place on a map are genuinely scarce; three plausible candidates (a Fayum
       weaver, two tradeswomen) dropped for undatable evidence. Layer still defaults OFF; verified
       with Playwright.
-- [~] `[06-P1-5]` **`finds`** `illustrate` — claimed by cloud shift (Shift 94), 2026-09-03 12:00 — 3–8 artefacts per site with images and museum.
+- [ ] `[06-P1-5]` **`finds`** `illustrate` — 3–8 artefacts per site with images and museum.
+      **Shift 94 (2026-09-03) added 7 more sites directly** (parent-session WebSearch, same
+      approach Shift 93 found most reliable) — Ostia (Statue of Trajan, Perseus with the Head of
+      Medusa, the 160 CE Iliad sarcophagus, the Sarcophagus of the Muses recovered from looters in
+      2008), Merida (the theatre's Ceres and Serapis statues, the signed Seleucus/Anthus mosaic,
+      the Casa del Mitreo cosmological mosaic), Italica (the colossal Trajan statue, Diana of
+      Italica, the House of the Birds mosaic), Paestum (the Tomb of the Diver, the Sele metopes,
+      the Lucanian "Return of the Warrior" fresco), Trier (the Neumagen wine ship and school
+      relief, the 1993 2,650-aureus gold hoard), Aquincum (the 228 CE water organ, the Boxers
+      mosaic, an Albertfalva military diploma), Palestrina (the Nile Mosaic, the Fortuna
+      Primigenia cult-statue head, the Ficoroni Cista). Also closed Shift 93's own flagged Corinth
+      gap with a third Julian Basilica piece (a cuirassed statue identified as Germanicus).
+      Genuinely thin dead end this shift: Baalbek and Tivoli both turned up only one confidently-
+      distinct museum piece each in a real search — not enough to clear this ticket's own 3-item
+      floor, logged rather than padded with a weak second item. **18 of 40 sites now populated**
+      (up from 11) — ancona, baalbek, baiae, beneventum, brescia, capua, carnuntum, cumae, djemila,
+      jerash, luni, milan, palmyra, portus, pozzuoli, ravenna, rimini, sabratha, timgad, tivoli,
+      verona, xanten still open (22); Timgad/Djemila remain confirmed dead ends per Shift 93.
+      `npx tsc --noEmit` clean at every commit.
       **Started 2026-09-03 by cloud shift (Shift 92) — schema + UI shipped, 7 of 40 sites
       populated, real headroom left.** **Shift 93 (2026-09-03) added 3 more sites directly** —
       Volubilis (Juba II and Cato the Younger bronze busts, the Ephebe Crowned with Ivy),
