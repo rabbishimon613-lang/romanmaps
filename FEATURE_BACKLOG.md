@@ -1406,7 +1406,54 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       `apply-image-topup.mjs` without manual reformatting. Worth continuing as the default pattern
       for future multi-axis shifts rather than one research pass at a time.
 
+## New ideas spotted this shift (2026-09-03, Shift 92 — finds feature, Via Aurelia/gap, econ infra, tombs)
+
+- [ ] **A dispatched research subagent's WebSearch quota is scoped per-subagent-conversation, not
+      truly session-wide, despite the error text.** Two agents this shift hit "this session has
+      used its web search budget (200 of 200 WebSearch calls)" partway through their task and
+      correctly refused to fabricate sources rather than continue — good behavior, but it meant
+      their whole draft output had to be discarded. The *parent* session's own direct `WebSearch`
+      calls kept working fine immediately afterward. If a dispatched agent reports the budget
+      exhausted, don't retry the same agent or assume research is blocked for the rest of the
+      shift — dispatch a fresh agent (it gets its own 200), or for a small, well-scoped batch, run
+      the research directly in the parent session instead of delegating.
+- [ ] **A research agent given a task with no live search access will still produce
+      confident-sounding, specific-looking output (museum names, dates, coordinates) built purely
+      from trained knowledge, unless explicitly told to flag what it couldn't verify.** Both
+      WebSearch-exhausted agents this shift did self-flag every unverified claim when the prompt
+      explicitly demanded it ("say so plainly rather than asserting a confident-sounding answer")
+      — worth keeping that exact instruction in any future research-agent prompt, and worth a
+      parent-session habit of cross-checking a "trained knowledge only" batch against the parent's
+      own judgment (or a fresh live-search pass) before merging any of it, same as this shift did
+      for the tombs batch (kept 14 of 34 candidates).
+- [ ] **`pois.geojson` is not uniformly formatted — some records have several properties squashed
+      onto one line from an earlier shift's regex-based edit script.** A full `json.load`/
+      `json.dump(..., indent=2)` round-trip is *content-correct* but normalizes every line in the
+      file to one style, producing an 86,000-line diff for a 12-feature addition (`road_stations.
+      geojson` and `sports.geojson` don't have this problem — they really are uniform, plain
+      `json.dump` is safe on those two). Fix: splice new features in as raw text before the file's
+      exact closing `  ]\n}\n`, touching nothing else. Caught this shift via the "diff before
+      committing" habit `FEATURE_BACKLOG.md` has flagged before — a `git reset --soft` undid the
+      bad commit before it ever reached origin.
+- [ ] **Board `[06-P1-5]` `finds` is genuinely tractable Track B work, same shape as `[06-P0-2]`
+      curate-buildings — a good default pick whenever the board's P0 queue is all oversized or
+      blocked and P1/P2 has nothing else obviously small.** 7 of 40 sites done this shift
+      (Pompeii, Herculaneum, Rome, Ephesus, Athens, Delphi, Vindolanda); 34 open. New
+      `SiteInfo.finds[]` field + a card-grid render on `/site/[slug]` under "Notable finds" —
+      see `app/sites.ts`/`app/site/[slug]/page.tsx` for the pattern to extend.
+
 ## Shipped (moved from above; newest on top)
+
+- 2026-09-03 — Shift 92: Board `[06-P1-5]` `finds` — new `SiteInfo.finds[]` field + "Notable
+  finds" card grid on `/site/[slug]`, populated for 7 of 40 sites (31 artefacts: Pompeii,
+  Herculaneum, Rome, Ephesus, Athens, Delphi, Vindolanda). Via Aurelia extended into Gaul (24
+  stations, Luna → Arelate) and its gap to Via Domitia closed (Glanum + Ad Fines, sourced to the
+  Antonine Itinerary's Cottian-Alps route) — `road_stations.geojson` 545 → 571. Axis 3c economic
+  infrastructure +12 (one African imperial estate, 11 Britain/Gaul pottery kilns). Axis 20 bonus:
+  10 more gymnasia, redirected there after finding the original 25-gymnasia target already past
+  its floor. Axis 3e tombs +14, cross-checked down from 34 research candidates after a subagent's
+  WebSearch quota ran out mid-task (see the "New ideas" entries above for the full finding).
+  `pois.geojson` 1356 → 1382, `sports.geojson` 38 → 48.
 
 - 2026-08-31 — Shift 83: Found and fixed `[13-P1-5]` — none of `app/Map.tsx`'s ~34 thematic-layer
   hover popups (nor `PeopleMarkers.tsx`'s) ever rendered `image_url`, so months of image research

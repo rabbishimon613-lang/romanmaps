@@ -1252,8 +1252,28 @@ to prevent. Building locally to *test* your own work is expected and fine.
       date to ~117 and place on a map are genuinely scarce; three plausible candidates (a Fayum
       weaver, two tradeswomen) dropped for undatable evidence. Layer still defaults OFF; verified
       with Playwright.
-- [~] `[06-P1-5]` **`finds`** `illustrate` — 3–8 artefacts per site with images and museum. —
-      claimed by cloud shift (Shift 92), 2026-09-03 00:20
+- [ ] `[06-P1-5]` **`finds`** `illustrate` — 3–8 artefacts per site with images and museum.
+      **Started 2026-09-03 by cloud shift (Shift 92) — schema + UI shipped, 7 of 40 sites
+      populated, real headroom left.** New `SiteInfo.finds[]` (`app/sites.ts`) — name, note,
+      museum, optional image_url/image_credit, source — rendered as a card grid on
+      `/site/[slug]` under a new "Notable finds" heading, mirroring the existing `excavation[]`
+      pattern (same file, same page, no new component). 27 artefacts across Pompeii, Herculaneum,
+      Rome, Ephesus, Athens and Delphi, plus 4 more for Vindolanda researched separately and
+      verified live. **A real research-integrity finding from this pass, worth knowing before
+      picking this back up**: a subagent given this task without live search access will return
+      confident-sounding museum locations and Commons filenames built entirely from trained
+      knowledge, self-flagged as unverified only if explicitly instructed to flag that — two
+      research agents this shift hit an exhausted session WebSearch quota (200/200) and, to their
+      credit, said so plainly rather than inventing citations; their entire draft batches (Rome/
+      Ephesus/Athens/Delphi finds researched a second time, Palmyra/Leptis Magna/Aquileia/Baalbek
+      finds, and 34 tomb candidates for `[09-P0-1]`-adjacent axis 3e) were discarded rather than
+      published unverified. Direct WebSearch calls from the *parent* session still worked after
+      that quota message (confirmed live — the Vindolanda batch was researched this way), so the
+      quota is scoped per-subagent-conversation, not truly session-wide as the error text claims;
+      a future shift low on Track A budget could route research through the parent session's own
+      WebSearch instead of spawning agents, at the cost of spending the parent's own context.
+      **34 sites still have no finds[] data** — same multi-shift shape as `[06-P0-2]`
+      curate-buildings, pick one or two per shift with real, verified sources.
 - [x] `[10-P1-4]` **`entrance`** `polish` — Done 2026-08-22 by a cloud shift. New `app/Entrance.tsx`
       + `app/useEntrance.ts`, same modal chrome as `EpochModal.tsx` and the same once-per-browser
       localStorage pattern as `useOnboardingHint.ts`. One sentence framing the map, three doors —

@@ -7,6 +7,217 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 92 — 2026-09-03 (this shift's own prompt claimed "Shift 1 of four")
+
+Continuing the real count from Shift 91's last commit (`f74a1b7`). Same recurring boot symptom
+every recent shift has flagged: repo booted with `HEAD` detached 40 commits ahead of local
+`main`/`origin/main`; `git checkout main && git pull` fast-forwarded cleanly, no data loss.
+`npm install` clean, confirmed `git config --get core.hooksPath` prints `.githooks` before the
+first push (Shift 91's own flagged checklist item). Reconfirmed the standing network limitation:
+`overpass-api.de`/`en.wikipedia.org`/`commons.wikimedia.org`/`pleiades.stoa.org` direct `curl`
+all still fail `connect_rejected`.
+
+### Board + Track B
+
+Read `BOARD.md` in full. Every open P0 ticket was the same short, already-triaged list prior
+shifts found (merge-themes, schema-v2, card-rebuild, image-audit, self-host-glyphs half-done,
+two blocked-on-human tickets) — oversized or blocked for a single unattended session. Went one
+level down into P1 and found `[06-P1-5]` `finds` (3–8 artefacts per site with images and museum)
+genuinely tractable and unclaimed: no live-browser testing dependency, a clear small schema
+addition, and a natural home on the already-existing `/site/[slug]` static page. Claimed it
+(`c038c2b`), then built it: new `SiteInfo.finds[]` field in `app/sites.ts` (name/note/museum/
+optional image_url+credit/source) rendered as a card grid under a "Notable finds" heading in
+`app/site/[slug]/page.tsx`, mirroring the existing `excavation[]` field/render pattern exactly —
+no new component, no client-side JS (this page has no `"use client"` directive, so a first
+attempt at an `onError` image-fallback handler was reverted; the hero image above it has never
+had one either, same convention). `npx tsc --noEmit` clean at every step.
+
+Populated it for 7 of 40 sites, 31 artefacts total: Pompeii (5), Herculaneum (4), Rome (5),
+Ephesus (4), Athens (5), Delphi (5) from a research agent's first pass, plus Vindolanda (4)
+researched directly by this session itself later in the shift (see the WebSearch-quota finding
+below). Only 11 of the 31 carry a confirmed `image_url` — every other field shipped
+`image_url`-less rather than guess a Commons filename. Board ticket left `[ ]`, not `[x]` — see
+its own entry for the full accounting; 34 sites still have zero `finds[]` data, real headroom in
+the same multi-shift shape as `[06-P0-2]` curate-buildings.
+
+### A real finding worth flagging loudly: WebSearch quota is scoped per-subagent, not per-session
+
+Two research subagents dispatched this shift (a second attempt at Rome/Ephesus/Athens/Delphi/
+Palmyra/Leptis Magna/Aquileia/Baalbek finds, and a 40-tomb axis-3e batch) both hit "this session
+has used its web search budget (200 of 200 WebSearch calls)" partway through and, to their real
+credit, said so plainly and refused to fabricate museum locations or Commons filenames rather
+than paper over the gap — their entire draft output was discarded here rather than published.
+But the *parent* session's own direct `WebSearch` calls kept working fine afterward (confirmed
+live — the Vindolanda batch a few paragraphs up was researched exactly this way, after both
+subagent failures). So "200 of 200" is a per-subagent-conversation cap, not a real session-wide
+budget despite what the error text says. Whoever picks up more finds/axis research next: if a
+dispatched agent reports the budget exhausted, don't retry the same agent — either dispatch a
+fresh one (it gets its own 200) or, for smaller batches, run the research directly in the parent
+session instead of delegating, at the cost of spending the parent's own context on it.
+
+### Track A — axis 2 (roadside): 26 new stations, one road extended + one gap closed
+
+**Via Aurelia extended into Gaul — 24 stations, Luna to Arelate** (`c8ce713`). Picked up Shift
+91's own handoff ("Via Aurelia's continuation into Gaul, already 15 stations short of the
+coast"). Sourced from the Antonine Itinerary's "Iter a Vintimilio Arelate usque" (the Via Julia
+Augusta continuation) along the Ligurian coast — Genua, Vada Sabatia, Albingaunum, Albintimilium
+— across the Alpes Maritimae boundary at La Turbie (Alpe Summa / Tropaeum Alpium, Augustus's 6
+BCE victory monument), through Provence via Cemenelum, Forum Iulii, Aquae Sextiae, Massilia, to
+Arelate. Three stations (Pullopice, Tegulata, Calcaria) carry `confidence: "low"` — each is
+disputed in the scholarship between two named candidate villages, not archaeologically fixed;
+logged as such rather than picking one silently. Dropped a would-be Genua entry from the batch:
+the city is already pinned on Via Postumia at effectively the same coordinates, and duplicating
+it under a second road name would just stack two pins on one physical junction — same shape as
+Shift 91's own signal-tower dedup call.
+
+**Closed the Via Aurelia–Domitia gap — Glanum + Ad Fines, Via Domitia** (`ba411bf`). A follow-up
+research pass found the real route is neither of the two hypotheses this shift started with
+(not via Avenio/Tarusco) — it's the Antonine Itinerary's "A Mediolano Arelate per Alpes Cottias",
+the *same* itinerary already sourcing this project's Apta Julia–Cabellio stretch, continuing
+Cabellio → Glanum (16 mp) → Ernaginum (12 mp) → Arelate (7 mp). Glanum was a genuine gap despite
+being a major excavated site (its Les Antiques mausoleum-and-arch pair still stands) — added.
+Ad Fines fills a second real gap between Apta Julia and Cabellio. Did not add a second Ernaginum
+pin: it's already mapped (`station_ernaginum`, Via Agrippa) at a physically real shared road
+junction, not a distinct station — Glanum's own notes point onward through the existing pin
+instead of duplicating it. The two ancient sources for this stretch disagree on total mileage
+(Itin. Ant.: 35 mp Arelate–Cabellio; the Vicarello Beakers, inscribed 1st-century silver cups
+giving the Gades–Rome route: ~27 mp) — used the Itin. Ant. figures for consistency with the rest
+of the chain, logged the Vicarello variant rather than picking one silently.
+
+`road_stations.geojson`: 545 → 571.
+
+### Track A — axis 3c (economic infrastructure): 12 new features
+
+Per Shift 91's own handoff ("African saltus estates or British/Gaulish pottery kilns"). One
+African imperial estate (Saltus Massipianus, Dorsal highlands near Thala, boundary fixed by CIL
+VIII 587) and 11 pottery/amphora kilns across Roman Britain and Gaul (Les Martres-de-Veyre,
+Highgate Wood, Alice Holt, Savernake Forest, Upchurch, the Legio XX works-depot at Holt, Corfe
+Mullen, Velaux, Corneilhan, Radlett, Bricket Wood).
+
+Three real research errors caught before merging, not after: Sallèles d'Aude turned out to
+already exist in the dataset under a different id (`poi_salleles_daude_amphoralis`) — exact same
+site, dropped rather than duplicated. Hartshill-Mancetter dropped outright — its documented
+production only starts under the potter Sarrius after 135 CE, and the research agent's own
+"modest early phase likely existed" hedge was too thin to call `extant_117ce: true` on. Six
+proposed Bagradas-valley saltus (Blandianus, Udensis, Tuzritanus, Lamianus, Domitianus,
+Thibaritanus) were dropped entirely after checking the research agent's own methodology note: it
+had generated their coordinates by jittering ~1-2km around the one real findspot they're all
+actually attested at (the same inscription already backing this dataset's `Fundus Neronianus`
+entry) — fabricated precision, not real data, regardless of how plausible the resulting pins
+looked on a map.
+
+`pois.geojson` (this batch): 1356 → 1368.
+
+### Track A — axis 20 bonus: 10 more gymnasia
+
+Originally dispatched as a fresh 25-gymnasia research pass before checking the live data —
+`sports.geojson` already had 29 gymnasium entries, well past the 25-feature floor. Rather than
+waste the already-in-flight research, redirected the same agent to a genuinely under-covered
+axis (3c, above) and cross-checked the gymnasia agent's output for anything not already on the
+map: 15 of 25 candidates were exact duplicates (Delos, Epidaurus, Eretria, Priene, Pergamon,
+Messene, Olympia, Delphi, Kos, the Lyceum of Athens, Salamis, Stratonicea, Rhodes, Corinth,
+Assos), 10 were genuinely new — Amphipolis (the only fully-excavated Macedonian gymnasium),
+Miletus, two more distinct Athens gymnasia (the Academy and the Diogeneion), Elis, Argos's
+Kylarabis gymnasium, Megalopolis, Mieza (where Philip II installed Aristotle to tutor Alexander),
+Beroea, and Sicyon.
+
+`sports.geojson`: 38 → 48.
+
+### Track A — axis 3e (tombs/necropoleis): 14 new features, 20 dropped for coordinate/date risk
+
+A dedicated research pass (see the WebSearch-quota section above) returned 34 candidates built
+entirely from trained knowledge with no live verification, several self-flagged "approximate,
+not measured" coordinates and explicit low-confidence dates. Rather than merge the batch
+wholesale, cross-checked every candidate against this session's own knowledge and kept only the
+14 independently confirmable with real confidence: Ad-Deir at Petra, the Belevi Mausoleum,
+Xanthos's Harpy Tomb and Tomb of Payava, Athens's Philopappos Monument (raised 114–116 CE, almost
+exactly contemporary with this map's snapshot) and Monument of Dexileos, five Etruscan-tradition
+tombs at Cerveteri/Tarquinia/Vulci still standing and visited in 117 CE, Hierapolis's Tomb of
+Flavius Zeuxis (epitaph: 72 Cape Malea crossings), and Palmyra's Hypogeum of Yarhai (dated 108 CE
+by its own foundation inscription). Dropped 20: coordinates the agent itself called imprecise,
+dating too close to or past the 117 CE cutoff to call safely, or (three Palmyra tower tombs)
+specific inscribed dates this session couldn't independently confirm. No `image_url` on any of
+the 14 — this batch had no live verification pass, and "never guess a filename" applies as much
+to a model's own recall as to a research agent's.
+
+`pois.geojson` (this batch): 1368 → 1382.
+
+### A JSON-formatting trap this shift fell into and fixed before pushing — worth repeating loudly
+
+`pois.geojson` is NOT uniformly 2-space-indented the way `road_stations.geojson`/`sports.geojson`
+are — some scattered records elsewhere in the file (from an earlier shift's regex-based
+image-field edit script) squash several properties onto one line. A first attempt at merging the
+economic-infrastructure batch used `json.load`/`json.dump(..., indent=2)`, which round-trips
+correctly but *normalizes every line in the file* to one consistent style — an 86,000-line diff
+for a 12-feature addition, caught by diffing before committing (not after, per the standing
+`FEATURE_BACKLOG.md` habit) and undone with `git reset --soft` before it ever reached origin.
+Fixed by switching to a surgical byte-level text splice — read the file as raw bytes, assert the
+exact expected tail (`  ]\n}\n`), insert new hand-formatted feature blocks before it, leave every
+other byte in the file untouched. Both `pois.geojson` batches this shift (economic infra, tombs)
+used this method afterward; diffs came back clean (insertions only, zero deletions) both times.
+Whoever next writes a script that loads and re-dumps `pois.geojson` specifically (not
+`road_stations.geojson` or `sports.geojson`, which really are uniform) should use the same
+splice approach, or at minimum diff before committing.
+
+### State, verification, next
+
+`npm run validate`: 0 errors throughout, same 7 pre-existing reviewed warnings. `npm run build`:
+clean at every push (7 pushes this shift, each gated by the same pre-push hook). `npm run
+metrics -- --write`: 1382 POIs (+26 net this shift's `pois.geojson` batches — economic infra +12,
+tombs +14; some earlier count arithmetic in this log's own per-batch subtotals reflects the
+sequence they were researched in, not final order merged), 571 road stations (+26), 48 sports
+records (+10), 98.0% deep, image coverage ~59.6% on `pois.geojson` alone (this shift's ~26 new
+POIs mostly shipped without images — see the individual batch notes above for why), ancient-
+sources coverage on `confidence: high` POIs 85.3% (489/573).
+
+Commits this shift, in order: `c038c2b` (claim `[06-P1-5]`), `2e285a0` (finds schema + UI),
+`c8ce713` (Via Aurelia → Gaul, 24 stations), `9ddb4da` (12 economic-infra POIs), `3cfafe1` (10
+gymnasia), `6ce04db` (27 finds artefacts, 6 sites), `3173113` (metrics refresh), `ba411bf`
+(Glanum + Ad Fines, closing the Via Aurelia–Domitia gap), `3bbf58c` (14 tomb-family POIs),
+`1db8664` (Vindolanda finds, 4 artefacts). Plus this log entry's own commit and a final metrics
+refresh. All pushed to `main`.
+
+**Next shift should pick up:**
+
+- **Track B, `[06-P1-5]` finds**: 34 of 40 sites still open. Good next picks with likely-strong
+  material: Leptis Magna (started this shift — the Zliten/gladiator mosaic is real, verified,
+  Flavian-dated (~70–100 CE, safely pre-117), museum confirmed as Tripoli's National Museum /
+  Al-Saraya al-Hamra, Commons filename `Gladiators_from_the_Zliten_mosaic.jpg` confirmed live —
+  but wasn't merged this shift for lack of a second and third item to clear the 3-artefact floor;
+  the site's other famous pieces (Severan Forum Medusa reliefs, Arch of Septimius Severus panels)
+  are all Severan-era, ~203 CE, nearly a century past this map's snapshot, so don't reach for
+  them just to pad the count), Timgad, Baalbek, Aquileia (has its own on-site national museum
+  with real named highlight pieces per this shift's own now-discarded research — worth a fresh,
+  *directly-run* (not delegated) verification pass rather than trusting the trained-knowledge
+  draft), Palmyra (same caveat — Lion of Al-lat and the Palmyrene Tariff inscription are both
+  real and well-documented, but current post-2015 museum locations need live confirmation, not
+  recall).
+- **Track A, axis 2**: Via Aurelia (now including its Gaul extension) and the Aurelia–Domitia
+  connector are both complete. Via Clodia (8 stations, flagged twice now as having room to
+  deepen) is still open. A fresh Iberian or Balkan road not yet touched remains the best
+  totally-new pick.
+- **Track A, axis 3c**: economic infrastructure went from 25 to 57 records two shifts ago, +12
+  more this shift (69 total across estate/kiln/garum_factory/salina). Real remaining leads per
+  this shift's research: more African saltus with an *independently surveyed* location (not
+  jittered from one findspot — see this log's dropped-Bagradas-estates note above) would need a
+  different primary source than the Aïn el-Djemala/Aïn Wassel inscription corpus this dataset has
+  already mined four times over.
+- **Track A, axis 3e**: 20 real, named tomb-monument leads were surfaced but not confirmable this
+  session (see above) — Britannia (Bartlow Hills), Gaul (Pile de Cinq-Mars, Mausoleum of
+  Faverolles), Hispania (Mausoleo de Fabara), more Palmyra tower tombs (Iamblichus, Atenatan,
+  Kitot — real towers, this session just couldn't pin their exact inscribed dates), and
+  Cyrenaica's Ptolemais necropolis specifically (flagged by the research agent as needing a
+  dedicated pass through Society for Libyan Studies / Joyce Reynolds excavation literature this
+  session had no access to). A future shift with working search access on these specific queries
+  could close most of this list fast rather than re-researching from scratch.
+- Standing items unchanged: `research/` stays gitignored/empty in every cloud container;
+  `en.wikipedia.org`/`commons.wikimedia.org`/`overpass-api.de`/`pleiades.stoa.org` direct `curl`
+  egress stays blocked; `WebSearch` remains the only working research path for the parent
+  session, **and now confirmed to also work for a fresh subagent that hasn't yet spent its own
+  200-call budget** — see this shift's dedicated finding above.
+
+---
+
 ## Shift 91 — 2026-09-02 (this shift's own prompt claimed "Shift 4 of four")
 
 Continuing the real count from Shift 90's last commit (`79c47ad`). `git checkout main && git pull`
