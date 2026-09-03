@@ -13431,6 +13431,580 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5719,
+          44.3653
+        ]
+      },
+      "properties": {
+        "id": "station_ad_navalia",
+        "category": "mansio",
+        "name": "Ad Navalia",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Ad Navalia sat on the Ligurian coast road at modern Varazze, its name meaning \"at the shipyards.\" The station marked a Roman naval building yard on this stretch of coast, part of the string of small ports and stopping points the Via Julia Augusta strung together between Genua and Vada Sabatia.",
+        "sources": [
+          "Tabula Peutingeriana (Liguria segment)",
+          "https://www.ponentevarazzino.com/wp-content/uploads/2022/01/Riscoprire-il-nostro-passato-Ad-Navalia-prima-parte.pdf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.506,
+          44.334
+        ]
+      },
+      "properties": {
+        "id": "station_alba_docilia",
+        "category": "mansio",
+        "name": "Alba Docilia",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Alba Docilia stood at modern Albisola Superiore, named for the Ligurian tribe of the Docilii. Excavators found its remains near the town's railway station in the late 1800s, a 2nd-century way-stop on the cursus publicus between Genua and Vada Sabatia.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "https://en.wikipedia.org/wiki/Alba_Docilia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.4394,
+          44.2661
+        ]
+      },
+      "properties": {
+        "id": "station_vada_sabatia",
+        "category": "mansio",
+        "name": "Vada Sabatia",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 33,
+        "identified": true,
+        "notes": "Vada Sabatia, at modern Vado Ligure next to Savona, marked the point where the coast road met the inland route to Aquae Statiellae. The Antonine Itinerary places it 33 Roman miles from Genua, making it a major junction on the Ligurian coast.",
+        "sources": [
+          "Itin. Ant. (cumulative mile figures)",
+          "https://tuttatoscana.net/storia-e-microstoria-2/la-via-aurelia-ed-aemilia-scauri-primo-itinerario-la-tirrenia-di-strabone/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.239,
+          44.159
+        ]
+      },
+      "properties": {
+        "id": "station_pullopice",
+        "category": "mansio",
+        "name": "Pullopice",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "Pullopice was a mansio the Antonine Itinerary places 12 miles past Vada Sabatia, on the stretch of coast now split between Borgio Verezzi and Finale Ligure. No excavation has fixed its exact find-spot, so its location is a best estimate rather than a confirmed dig.",
+        "sources": [
+          "Itin. Ant. (Vada Sabatia-Albingaunum stage)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2144,
+          44.0508
+        ]
+      },
+      "properties": {
+        "id": "station_albingaunum",
+        "category": "mansio",
+        "name": "Albingaunum",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 8,
+        "identified": true,
+        "notes": "Albingaunum, modern Albenga, was chief town of the Ligurian Ingauni and still shows a Roman amphitheater among its standing remains. The Via Julia Augusta left the town through the Porta d'Arroscia, and a stretch of its original paving survives on the road toward Alassio.",
+        "sources": [
+          "Itin. Ant.",
+          "https://www.romanoimpero.com/2018/05/via-iulia-augusta.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0847,
+          43.9083
+        ]
+      },
+      "properties": {
+        "id": "station_lucus_bormani",
+        "category": "mansio",
+        "name": "Lucus Bormani",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 15,
+        "identified": true,
+        "notes": "Lucus Bormani, at modern Diano Marina, took its name from Bormanus, a Ligurian god of sacred springs. Travelers broke their journey here between Capo Berta and Capo Cervo, a wooded refreshment stop rather than a walled town.",
+        "sources": [
+          "Itin. Ant.",
+          "Tabula Peutingeriana",
+          "https://www.agriturismolegirandole.com/en/blog/history-gulf-dianese/lucus-bormani-diano-marina/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7783,
+          43.8347
+        ]
+      },
+      "properties": {
+        "id": "station_costa_balenae",
+        "category": "mansio",
+        "name": "Costa Balenae",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Costa Balenae was a coastal landing station at the mouth of the Argentina river, excavated today as the Capo Don archaeological area near Riva Ligure. Both the Antonine Itinerary and the Peutinger Table record it on the run toward Albintimilium.",
+        "sources": [
+          "Itin. Ant.",
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6083,
+          43.7903
+        ]
+      },
+      "properties": {
+        "id": "station_albintimilium",
+        "category": "mansio",
+        "name": "Albintimilium",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Albintimilium, modern Ventimiglia, was the chief town of the Intemelii and the last major Italian station before the road climbed into the Maritime Alps. Its Roman theater still stands, along with the excavated street grid of a working municipium.",
+        "sources": [
+          "Itin. Ant.",
+          "http://iicenturione.blogspot.com/2008/07/albintimilium-ventimiglia.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.4989,
+          43.7639
+        ]
+      },
+      "properties": {
+        "id": "station_lumone",
+        "category": "mansio",
+        "name": "Lumone",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Lumone, now Roquebrune-Cap-Martin's Carnolès quarter, was a mansio administered from Albintimilium. Its 1st-century funerary mausoleum, three vaulted arches carrying traces of frescoed plaster, still stands beside the old road and gave the station its name.",
+        "sources": [
+          "Itin. Ant.",
+          "https://evendo.com/locations/monaco/la-colle/attraction/tombeau-romain-de-lumone-roquebrune-cap-martin"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.4056,
+          43.7422
+        ]
+      },
+      "properties": {
+        "id": "station_alpe_summa",
+        "category": "mansio",
+        "name": "Alpe Summa (Tropaeum Alpium)",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 6,
+        "identified": true,
+        "notes": "Alpe Summa, at modern La Turbie, marked the point the Antonine Itinerary itself calls where Italy ends and Gaul begins. Augustus raised the great Tropaeum Alpium here in 6 BCE to commemorate his conquest of the Alpine tribes, and its ruined tower still crowns the pass over Monaco.",
+        "sources": [
+          "Itin. Ant.",
+          "https://frenchmoments.eu/the-trophy-of-augustus-le-trophee-des-alpes-in-la-turbie/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2733,
+          43.7208
+        ]
+      },
+      "properties": {
+        "id": "station_cemenelum",
+        "category": "mansio",
+        "name": "Cemenelum",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Cemenelum, now the Cimiez district of Nice, was capital of the small province of Alpes Maritimae, deliberately sited above the older Greek port of Nikaia rather than through it. Its amphitheater and bath complex still stand among the best-preserved Roman remains on the French coast.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1961,
+          43.665
+        ]
+      },
+      "properties": {
+        "id": "station_ad_varum",
+        "category": "statio",
+        "name": "Ad Varum",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 6,
+        "identified": true,
+        "notes": "Ad Varum marked the crossing of the Varus river, the boundary the Itinerary tracks between Cemenelum and Antipolis. It was a ford rather than a town, and the river's mouth has since shifted, so its pin sits at the crossing's approximate historical location near modern Saint-Laurent-du-Var.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1256,
+          43.5808
+        ]
+      },
+      "properties": {
+        "id": "station_antipolis",
+        "category": "mansio",
+        "name": "Antipolis",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Antipolis, today's Antibes, began as a Greek colony of Massilia before becoming a Roman town on the coast road. Sections of its ancient ramparts still stand, alongside a small museum built into a later fort on the original Roman site.",
+        "sources": [
+          "Itin. Ant.",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9386,
+          43.5386
+        ]
+      },
+      "properties": {
+        "id": "station_ad_horrea",
+        "category": "mansio",
+        "name": "Ad Horrea",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Ad Horrea, \"at the granaries,\" stood at modern Mandelieu-La Napoule. Excavators found extensive grain-storage remains matching the Itinerary's distance readings from both Antipolis and Forum Iulii, confirming a supply depot on the coast road.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7367,
+          43.4331
+        ]
+      },
+      "properties": {
+        "id": "station_forum_iulii",
+        "category": "mansio",
+        "name": "Forum Iulii",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Forum Iulii, modern Fréjus, was Augustus's own naval colony, home port to part of the fleet that had fought at Actium. Its amphitheater, aqueduct and harbor works still rank among the best-preserved Roman military infrastructure on the French coast.",
+        "sources": [
+          "Itin. Ant. (Iter a Vintimilio Arelate usque)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.3417,
+          43.4275
+        ]
+      },
+      "properties": {
+        "id": "station_forum_voconii",
+        "category": "vicus",
+        "name": "Forum Voconii",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Forum Voconii was a roadside vicus occupied from roughly 50 BCE into the early 3rd century CE, now identified near the Les Blais hamlet by Le Cannet-des-Maures. Its location was disputed among several nearby villages for decades before excavation finally pinned it down.",
+        "sources": [
+          "Itin. Ant.",
+          "Tabula Peutingeriana",
+          "https://fr.wikipedia.org/wiki/Forum_Voconii",
+          "https://www.persee.fr/doc/ran_0557-7705_2002_num_35_1_1099"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2725,
+          43.4394
+        ]
+      },
+      "properties": {
+        "id": "station_matavonium",
+        "category": "mansio",
+        "name": "Matavonium",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Matavonium, at modern Cabasse in the Var, is confirmed by Roman milestones and inscriptions found on site. It sat on the coast road midway between Forum Voconii and Ad Turrem.",
+        "sources": [
+          "Itin. Ant.",
+          "https://www.beyond.fr/villages/cabasse-provence-france.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9236,
+          43.4419
+        ]
+      },
+      "properties": {
+        "id": "station_ad_turrem_via_aurelia",
+        "category": "mansio",
+        "name": "Ad Turrem",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 14,
+        "identified": true,
+        "notes": "Ad Turrem, modern Tourves in the Var, is fixed by Roman milestones recovered along the old road bed. It was the last stop before the road climbed toward Tegulata and the approach to Aquae Sextiae.",
+        "sources": [
+          "Itin. Ant.",
+          "https://saintmaximin2008.fr/PAGESWEB/HISTOIRE/ARCHEOLOGIE/galloromain/viaaurelia/viaaurelia.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7192,
+          43.4919
+        ]
+      },
+      "properties": {
+        "id": "station_tegulata",
+        "category": "mansio",
+        "name": "Tegulata",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 16,
+        "identified": false,
+        "notes": "Tegulata is placed by the Antonine Itinerary and the Peutinger Table between Ad Turrem and Aquae Sextiae, with Pourrières and neighboring Puyloubier both proposed as its find-spot. No excavation has settled which of the two candidate villages is correct.",
+        "sources": [
+          "Itin. Ant.",
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4474,
+          43.5297
+        ]
+      },
+      "properties": {
+        "id": "station_aquae_sextiae",
+        "category": "mansio",
+        "name": "Aquae Sextiae",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Aquae Sextiae, today's Aix-en-Provence, was the oldest Roman settlement in Gaul, founded in 122 BCE by the consul Sextius Calvinus around its thermal springs. Marius crushed the Teutones outside its walls in 102 BCE, a battle still remembered on the road two centuries later.",
+        "sources": [
+          "Itin. Ant."
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3698,
+          43.2965
+        ]
+      },
+      "properties": {
+        "id": "station_massilia",
+        "category": "vicus",
+        "name": "Massilia",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Massilia, modern Marseille, was the great Phocaean Greek colony that kept its own civic identity as an allied city under Rome rather than becoming a colonia. The coastal Itinerary route from Vintimilium to Arelate runs directly through it, not around it.",
+        "sources": [
+          "Itin. Ant. (Iter a Vintimilio Arelate usque)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3167,
+          43.4667
+        ]
+      },
+      "properties": {
+        "id": "station_calcaria",
+        "category": "mansio",
+        "name": "Calcaria",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": 14,
+        "identified": false,
+        "notes": "Calcaria, \"the lime-works,\" was a quarrying and lime-burning station on the road skirting the north shore of the Etang de Berre between Massilia and Arelate. Vitrolles and Les Pennes-Mirabeau are the two competing candidates for its exact site, neither confirmed by excavation.",
+        "sources": [
+          "Itin. Ant.",
+          "Tabula Peutingeriana",
+          "Ravenna Cosmography"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9436,
+          43.4394
+        ]
+      },
+      "properties": {
+        "id": "station_fossae_marianae",
+        "category": "statio",
+        "name": "Fossae Marianae",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Fossae Marianae, modern Fos-sur-Mer, grew up around the canal Marius's troops cut in 102 BCE to link the Rhone to the sea, later worked commercially by Massilia and then Arelate. It served as one of Arelate's outports at the delta's edge.",
+        "sources": [
+          "Itin. Ant.",
+          "Strabo, Geography",
+          "Pliny the Elder, Natural History",
+          "https://www.ancientportsantiques.com/a-few-ports/marius-canal-fossae-marianae/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.628,
+          43.6767
+        ]
+      },
+      "properties": {
+        "id": "station_arelate_via_aurelia",
+        "category": "mansio",
+        "name": "Arelate",
+        "road": "Via Aurelia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Arelate, modern Arles, is the named endpoint of the Antonine Itinerary's coastal route from Vintimilium. Caesar settled it with veterans in 46 BCE, and its amphitheater, theater and forum were all long complete by Trajan's reign.",
+        "sources": [
+          "Itin. Ant. (Iter a Vintimilio Arelate usque)"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
