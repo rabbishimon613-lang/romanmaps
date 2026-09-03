@@ -44182,5 +44182,87 @@
         "image_credit": "G. Eric and Edith Matson Photograph Collection, Library of Congress"
       }
     }
+,
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.95,
+          39.266
+        ]
+      },
+      "properties": {
+        "id": "poi_kozak_granite_quarries",
+        "category": "quarry",
+        "name_latin": "Marmor Misium",
+        "name_english": "Kozak Granite Quarries",
+        "province": "Asia",
+        "modern_location": "Kozak Plateau, near Bergama, Izmir Province, Turkey",
+        "built": -150,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Cutters in the granite hills above Pergamon worked a mottled pink-and-black stone that masons shaped into columns and paving slabs for building projects across the Mediterranean. Local crews had opened the outcrops by the late Hellenistic kingdom of Pergamon, and large-scale export to Rome and other imperial cities took off around the end of the 1st century CE. Modern geologists still call the stone Marmor Misium, after Mysia, the ancient region surrounding these quarries.",
+        "sources": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S129620740000162X",
+          "https://www.researchgate.net/publication/248545707_The_genesis_and_characterisation_of_'Marmor_Misium'_from_Kozak_Turkey_a_granite_used_in_antiquity"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.83,
+          40.4
+        ]
+      },
+      "properties": {
+        "id": "poi_cyzicus_quarries",
+        "category": "quarry",
+        "name_latin": "Cyzicus (lapicidinae)",
+        "name_english": "Cyzicus Quarries",
+        "province": "Asia",
+        "modern_location": "Kapidag Peninsula, near Erdek, Balikesir Province, Turkey",
+        "built": -200,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Quarrymen on the hills above Cyzicus cut colored marble and a local granite that the city's noted sculptors' workshops turned into palace fittings, temple elements, and tomb reliefs traded across the Aegean. This is distinct from the separately mapped Proconnesus marble quarries on nearby Marmara Island. Coordinates here mark the general district, not a single surveyed quarry face — no modern archaeological source has pinpointed the exact working face.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cyzicus",
+          "https://www.livius.org/articles/place/cyzicus/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.35,
+          39.52
+        ]
+      },
+      "properties": {
+        "id": "poi_troad_granite_quarries",
+        "category": "quarry",
+        "name_latin": "Marmor Troadense",
+        "name_english": "Troad Granite Quarries",
+        "province": "Asia",
+        "modern_location": "Cigri Dag, near Assos, Canakkale Province, Turkey",
+        "built": 50,
+        "destroyed": 500,
+        "extant_117ce": true,
+        "notes": "Roman quarrymen on Cigri Dag in the Troad opened working faces cutting a grey granite streaked with violet that shipped as monolithic column shafts across the empire. Demand for the stone ran heaviest between the 2nd and 6th centuries CE, putting Trajan's reign at the start of the quarry's busiest stretch. Geologists group the stone with the granites of Aswan and Mons Claudianus as one of antiquity's handful of major monolithic-column sources.",
+        "sources": [
+          "https://www.researchgate.net/publication/338289725_Classification_of_The_Monolithic_Columns_Produced_in_Troad_and_Mysia_Region_Ancient_Granite_Quarries_in_Northwestern_Anatolia_via_Soft_Decision-Making",
+          "https://artofmaking.ac.uk/explore/materials/26/Troad-Granite"
+        ],
+        "confidence": "medium"
+      }
+    }
   ]
 }
