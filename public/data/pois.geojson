@@ -42895,5 +42895,337 @@
         "confidence": "low"
       }
     }
+,
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.789,
+          35.567
+        ]
+      },
+      "properties": {
+        "id": "poi_saltus_massipianus",
+        "category": "estate",
+        "name_latin": "Saltus Massipianus",
+        "name_english": "Massipianus Imperial Estate",
+        "province": "Africa Proconsularis",
+        "modern_location": "Henchir Safsaf, near Thala, Kasserine Governorate, Tunisia",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This imperial estate spread across the forested highlands east of Thala, its boundary fixed by an inscribed stone separating Roman land from the territory of the Musulamii tribe. A freedman procurator running the property ordered its tenant farmers to repair buildings and raise new arches, work recorded on a stone found close to that same boundary marker. Unlike the olive estates of the Bagradas valley to the north, Massipianus lived on the Dorsal highlands' timber and pasture as much as its cropland.",
+        "sources": [
+          "https://www.academia.edu/8247514/Saltus",
+          "https://en.wikipedia.org/wiki/Musulamii"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "CIL",
+            "work": "Corpus Inscriptionum Latinarum",
+            "ref": "VIII 587",
+            "note": "Boundary inscription recording the saltus Massipianus under the imperial procurator."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.1906,
+          45.685
+        ]
+      },
+      "properties": {
+        "id": "poi_les_martres_de_veyre_kiln",
+        "category": "kiln",
+        "name_latin": "Officina figulina, Martrae ad Veram",
+        "name_english": "Les Martres-de-Veyre Sigillata Workshops",
+        "province": "Gallia Aquitania",
+        "modern_location": "Les Martres-de-Veyre, Puy-de-Dome, France",
+        "built": 105,
+        "destroyed": 125,
+        "extant_117ce": true,
+        "notes": "Central Gaul's second great sigillata factory rose beside the Allier river, its potters stamping fine red-gloss bowls and cups with names like Igocatus and Libertus. Nearly all of the workshop's export wares left the kilns between 100 and 125 CE, a tight window that makes surviving pieces useful dating markers for archaeologists across the empire. Its bright orange-red gloss carried this pottery as far as Britain and the Danube frontier.",
+        "sources": [
+          "https://potsherd.net/atlas/ware/cgts",
+          "https://intarch.ac.uk/journal/issue40/1/3-2-3-4.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1473,
+          51.5777
+        ]
+      },
+      "properties": {
+        "id": "poi_highgate_wood_kiln",
+        "category": "kiln",
+        "name_latin": "Figlinae, silva ad Londinium",
+        "name_english": "Highgate Wood Pottery Kilns",
+        "province": "Britannia",
+        "modern_location": "Highgate Wood, London, England",
+        "built": 70,
+        "destroyed": 160,
+        "extant_117ce": true,
+        "notes": "Potters dug clay from the gravel terraces of a wooded hilltop north of Londinium and fired at least ten kilns to supply the growing capital with everyday grey cooking pots. Excavations here recovered more than 40,000 pottery fragments from a production run lasting from roughly 50 to 160 CE. One kiln survived so intact that conservators later lifted and restored it for public display.",
+        "sources": [
+          "https://www.cityoflondon.gov.uk/things-to-do/green-spaces/highgate-wood/roman-kilns-in-highgate-wood",
+          "https://londonist.com/london/museums-and-galleries/roman-kiln-highgate-wood"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.837,
+          51.17
+        ]
+      },
+      "properties": {
+        "id": "poi_alice_holt_kiln",
+        "category": "kiln",
+        "name_latin": "Figlinae Alicenses",
+        "name_english": "Alice Holt Forest Pottery Kilns",
+        "province": "Britannia",
+        "modern_location": "Alice Holt Forest, Hampshire/Surrey border, England",
+        "built": 60,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Potters working the clay-rich forest straddling the Hampshire-Surrey border built a pottery industry around 60 CE that outlasted the Roman occupation of Britain by centuries. Alice Holt kilns fired sturdy grey cooking pots and storage jars in clamp and updraught kilns dug straight into the forest floor. By Trajan's reign the industry was already supplying markets well beyond its own district.",
+        "sources": [
+          "https://potsherd.net/atlas/Ware/AHGW.html",
+          "https://hampshirearchaeology.wordpress.com/2017/10/23/buried-in-time-and-alice-holt-forest-a-romano-british-pottery-industry/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.68,
+          51.383
+        ]
+      },
+      "properties": {
+        "id": "poi_savernake_forest_kiln",
+        "category": "kiln",
+        "name_latin": "Figlinae Savernacenses",
+        "name_english": "Savernake Forest Pottery Kilns",
+        "province": "Britannia",
+        "modern_location": "Savernake Forest, near Cunetio, Wiltshire, England",
+        "built": 70,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Potters working the clay beds of Savernake Forest, four to six kilometers from the Roman town of Cunetio, fired grey jars, bowls and dishes with roots reaching back into the pre-Roman Iron Age. Excavation around Bitham Pond on Column Ride uncovered several of their kilns, and the ware stayed in circulation across Wiltshire for roughly two centuries. The exact kiln locations and earliest firing dates are not tightly fixed, so this pin sits at an approximate position in the forest.",
+        "sources": [
+          "https://www.cambridge.org/core/journals/britannia/article/abs/oare-reconsidered-and-the-origins-of-savernake-ware-in-wiltshire/8F9D789EA8DE7A8507D3C446E22FBC6C",
+          "https://www.british-history.ac.uk/vch/wilts/vol16/pp207-215"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.648114,
+          51.375704
+        ]
+      },
+      "properties": {
+        "id": "poi_upchurch_kiln",
+        "category": "kiln",
+        "name_latin": "Figlinae Upcircenses",
+        "name_english": "Upchurch Marshes Pottery Industry",
+        "province": "Britannia",
+        "modern_location": "Upchurch, Medway estuary, Kent, England",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Potters working the tidal saltmarsh at Upchurch fired coarse grey and black-surfaced pottery that London's markets consumed by the barge-load. At least eighteen kiln sites have been identified in the marsh, several carrying techniques straight from Late Iron Age traditions. Ships loaded jars, beakers and flagons directly from the marsh's own creeks for the short run up the Thames estuary to Londinium.",
+        "sources": [
+          "https://tedconnell.org.uk/AFW/03/00.htm",
+          "http://www.rainham-history.co.uk/latest/upchurch-pottery-in-rainham"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8803,
+          53.0779
+        ]
+      },
+      "properties": {
+        "id": "poi_holt_legionary_kiln",
+        "category": "kiln",
+        "name_latin": "Figlinae Legionis XX, Bovium",
+        "name_english": "Holt Legionary Works-Depot",
+        "province": "Britannia",
+        "modern_location": "Holt, Wrexham, Wales",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Soldiers of the Twentieth Legion Valeria Victrix built an entire industrial works-depot on the River Dee, seven miles from their fortress at Chester, complete with kilns, barracks and a bathhouse for the men stationed there. They fired both pottery and the legion's own stamped roof tiles here through the Trajanic and Hadrianic years, supplying material for the fortress itself. Excavations in the 1920s uncovered one of the most complete legionary production sites found anywhere in Roman Britain.",
+        "sources": [
+          "https://www.roman-britain.co.uk/places/holt/",
+          "https://www.researchgate.net/publication/311789557_The_Roman_works-depot_of_Legio_XX_VV_at_Holt"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.021,
+          50.784
+        ]
+      },
+      "properties": {
+        "id": "poi_corfe_mullen_kiln",
+        "category": "kiln",
+        "name_latin": "Figlinae Corfienses",
+        "name_english": "Corfe Mullen Military Kiln",
+        "province": "Britannia",
+        "modern_location": "Corfe Mullen, near Poole Harbour, Dorset, England",
+        "built": 45,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A pottery kiln built beside the road linking Poole Harbour to Badbury Rings fired coarseware for the Roman army within a few years of the 43 CE invasion. It stood near a military stores base in the Stour valley, serving the legions campaigning through Dorset in the conquest's opening decades. Dated to the Claudian period, it ranks among the earliest datable Romano-British pottery kilns anywhere in the south.",
+        "sources": [
+          "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/51DE6B0C1397AF43980324CA58433805/S0003581500049568a.pdf/an_early_romanobritish_kiln_at_corfe_mullen_dorset.pdf"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2564,
+          43.5286
+        ]
+      },
+      "properties": {
+        "id": "poi_velaux_kiln",
+        "category": "kiln",
+        "name_latin": "Officina figulina, Vallis Auriaca",
+        "name_english": "Velaux Amphora Workshops",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Velaux, Bouches-du-Rhone, France",
+        "built": 20,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Potters on the Arc river at Velaux ran a cluster of five workshops making wine amphorae for the lower Rhone valley, the largest kiln site alone covering fifty by seventy-five meters along the riverbank. They specialized in Gauloise 2 and Gauloise 5 jars that carried Provencal wine across the western Mediterranean through the first and second centuries. Their riverside position let workshop owners load finished amphorae straight onto barges bound for the coast.",
+        "sources": [
+          "https://www.researchgate.net/publication/317982056_Mise_en_evidence_de_cinq_ateliers_inedits_d'amphores_gauloises_dans_la_region_d'Arles",
+          "https://www.persee.fr/doc/efr_0000-0000_1977_act_32_1_4693"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.1931,
+          43.4008
+        ]
+      },
+      "properties": {
+        "id": "poi_corneilhan_kiln",
+        "category": "kiln",
+        "name_latin": "Officina figulina, Corneliana (La Teularie)",
+        "name_english": "Corneilhan Amphora Workshop",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Corneilhan, Herault, France",
+        "built": 20,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Potters at Corneilhan near Beziers fired Gauloise 3 wine amphorae holding roughly thirty liters apiece, part of the wave of workshops that sprang up across Narbonensis to bottle its booming wine export trade. The workshop, known locally as La Teularie, turned out tile and coarse domestic ware alongside its amphorae from one riverside site in the Herault valley. Its position just off the Via Domitia gave it easy overland distribution.",
+        "sources": [
+          "http://amphorae.icac.cat/amphora/gauloise-4-tarraconensis-northern-coastal-area/bibliography",
+          "https://intarch.ac.uk/journal/issue1/tyers/GAUL.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.31768,
+          51.68437
+        ]
+      },
+      "properties": {
+        "id": "poi_radlett_kiln",
+        "category": "kiln",
+        "name_latin": "Figlinae Radletenses",
+        "name_english": "Radlett Pottery Kilns",
+        "province": "Britannia",
+        "modern_location": "Radlett, Hertfordshire, England",
+        "built": 60,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Potters at Radlett fired flagons, mortaria and coarseware just two miles from their better-known neighbors at Brockley Hill, part of the Verulamium region's pottery industry supplying Londinium along Watling Street. Analysis of the clay fabric proved Radlett's wares chemically distinct from Brockley Hill's, confirming the two ran as separate workshops rather than one sprawling complex. Production here exploited clay pits still visible today around Cobden Hill.",
+        "sources": [
+          "https://discovery.ucl.ac.uk/1471695/7/Quinn_1471695_Verulamium%20Region%20White%20Ware%20production%28red%29_2015.pdf",
+          "https://potsherd.net/atlas/Ware/VRW"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.357,
+          51.693
+        ]
+      },
+      "properties": {
+        "id": "poi_bricket_wood_kiln",
+        "category": "kiln",
+        "name_latin": "Figlinae Britoveldenses",
+        "name_english": "Bricket Wood Mortaria Kilns",
+        "province": "Britannia",
+        "modern_location": "Little Munden Farm, Bricket Wood, Hertfordshire, England",
+        "built": 55,
+        "destroyed": 155,
+        "extant_117ce": true,
+        "notes": "Potters at Little Munden Farm began firing mortaria before the Boudican revolt swept the region in 60 CE, making this one of the earliest workshops in the Verulamium region's Watling Street pottery industry. Kilns here kept stamping mortaria with individual makers' marks for almost a century, alongside sister workshops at Brockley Hill and Radlett. Its position deep in the wooded Colne valley gave potters ready clay and timber fuel just a few miles from Verulamium's walls.",
+        "sources": [
+          "https://archaeologydataservice.ac.uk/archives/view/1004227/industry_description.cfm?industry=VRW",
+          "https://discovery.ucl.ac.uk/1471695/7/Quinn_1471695_Verulamium%20Region%20White%20Ware%20production%28red%29_2015.pdf"
+        ],
+        "confidence": "medium"
+      }
+    }
   ]
 }
