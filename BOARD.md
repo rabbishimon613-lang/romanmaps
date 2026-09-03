@@ -1252,7 +1252,8 @@ to prevent. Building locally to *test* your own work is expected and fine.
       date to ~117 and place on a map are genuinely scarce; three plausible candidates (a Fayum
       weaver, two tradeswomen) dropped for undatable evidence. Layer still defaults OFF; verified
       with Playwright.
-- [ ] `[06-P1-5]` **`finds`** `illustrate` — 3–8 artefacts per site with images and museum.
+- [~] `[06-P1-5]` **`finds`** `illustrate` — 3–8 artefacts per site with images and museum. —
+      claimed by cloud shift (Shift 92), 2026-09-03 00:20
 - [x] `[10-P1-4]` **`entrance`** `polish` — Done 2026-08-22 by a cloud shift. New `app/Entrance.tsx`
       + `app/useEntrance.ts`, same modal chrome as `EpochModal.tsx` and the same once-per-browser
       localStorage pattern as `useOnboardingHint.ts`. One sentence framing the map, three doors —
