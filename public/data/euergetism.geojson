@@ -1538,6 +1538,33 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Epigraph%20at%20Ostia%20Antica.jpg?width=800",
         "image_credit": "A surviving Latin epigraph among the ruins of Ostia Antica · Wikimedia Commons"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4147,
+          42.5544
+        ]
+      },
+      "properties": {
+        "id": "euerg_ameria",
+        "name": "Amelia",
+        "category": "alimenta_town",
+        "one_line": "Around 103 CE the alimenta children of Ameria set up a dedication to Trajan and styled themselves pueri puellaeque Ulpiani, the 'Ulpian boys and girls,' after the emperor whose loan fund fed them. It is one of only a handful of surviving inscriptions outside the great Veleia and Ligures Baebiani bronze tables to name Trajan's welfare scheme directly. The town they lived in was already six centuries old: Ameria's massive polygonal walls, built from huge unmortared limestone blocks, still ringed it in 117 CE and rank among the oldest fortifications standing anywhere in Italy.",
+        "province": "Italia",
+        "modern_location": "Amelia, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "CIL XI 4351",
+          "R. Duncan-Jones, 'The Purpose and Organisation of the Alimenta', PBSR 32 (1964)",
+          "G. Woolf, 'Food, Poverty and Patronage', PBSR 58 (1990)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mura amelia.JPG?width=800",
+        "image_credit": "Polygonal walls of Amelia (Ameria) · R. Passagrilli via Wikimedia Commons"
+      }
     }
   ]
 }

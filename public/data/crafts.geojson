@@ -756,6 +756,567 @@
         "image_credit": "Mosaic of the Judgment of Paris, from Antioch, Louvre Museum · Wikimedia Commons",
         "image_alt": "Roman mosaic from Antioch depicting the Judgment of Paris"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9958,
+          36.1467
+        ]
+      },
+      "properties": {
+        "id": "craft_purple_kythira",
+        "name": "Kythira",
+        "craft": "purple_dye",
+        "one_line": "Kythira's ancient name, Porphyroussa, meant simply ‘the purple island’ — a name that stuck for a shoreline littered with crushed murex shell. Fishermen worked the same banded dye-murex prized at Tyre and Sidon, hauling snails from rocky coves for more than a thousand years. The island's remote position between Crete and the Peloponnese made this small outpost surprisingly rich. Archaeologists have traced the dye works back to the Bronze Age, still running when Rome ruled the Aegean.",
+        "province": "Achaea",
+        "modern_location": "Kythira, Greece",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kythira",
+          "https://dl.tufts.edu/downloads/cn69mg58z?filename=t148fv24d.pdf"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cythera%20Capital%20and%20the%20Castle.jpg?width=800",
+        "image_credit": "Cythera Capital and the Castle · Wikimedia Commons",
+        "image_alt": "View of Chora, the capital of Kythira, and its castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.7595,
+          31.5085
+        ]
+      },
+      "properties": {
+        "id": "craft_purple_mogador",
+        "name": "Essaouira",
+        "craft": "purple_dye",
+        "one_line": "Client king Juba II built a purple-dye factory on the islets off Mogador around 25 BCE, turning this Atlantic coastline into a dye-producing outpost far beyond the Mediterranean core. Workers crushed murex and purpura shells gathered from tidal rocks between the islands and the mainland. The operation ran for roughly three centuries, supplying the purple stripe worn on Roman senatorial togas. Pliny the Elder listed the site by name among the empire's dye sources.",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Essaouira, Morocco",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Iles_Purpuraires",
+          "https://www.researchgate.net/publication/321808385_Murex-Purple_Dye_The_Archaeology_behind_the_Production_and_an_Overview_of_Sites_in_the_Northwest_Maghreb_Region"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ramparts%20of%20Essaouira.JPG?width=800",
+        "image_credit": "Ramparts of Essaouira, near the ancient Purple Islands · Wikimedia Commons",
+        "image_alt": "Ramparts of Essaouira on Morocco's Atlantic coast"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2924,
+          36.5297
+        ]
+      },
+      "properties": {
+        "id": "craft_purple_gades",
+        "name": "Cadiz",
+        "craft": "purple_dye",
+        "one_line": "Cadiz was already dyeing purple from murex trunculus by 800 BCE, when Phoenician settlers built a shellfish-crushing kiln unearthed beneath the city's old Teatro Cómico. That shellstone-lined workshop is the earliest known purple-dye facility on Europe's Atlantic coast. Roman-era Gades kept the trade running, drawing on the same beds just outside the Pillars of Hercules. Its harbor, already the empire's gateway to Atlantic Iberia, doubled as an outlet for the pigment.",
+        "province": "Baetica",
+        "modern_location": "Cadiz, Spain",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.academia.edu/1512420/Arquitectura_y_urbanismo_de_la_Gadir_fenicia_el_yacimiento_del_Teatro_C%C3%B3mico_de_C%C3%A1diz_Architecture_and_Urbanism_in_Phoenician_Gadir_the_Site_of_the_Teatro_C%C3%B3mico_C%C3%A1diz_",
+          "https://en.wikipedia.org/wiki/Tyrian_purple"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Teatro%20Romano%20de%20C%C3%A1diz%20-%20Grader%C3%ADo.JPG?width=800",
+        "image_credit": "Roman Theatre of Cadiz · Wikimedia Commons",
+        "image_alt": "Seating tiers of the Roman theatre at Cadiz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.247,
+          40.4644
+        ]
+      },
+      "properties": {
+        "id": "craft_purple_tarentum",
+        "name": "Taranto",
+        "craft": "purple_dye",
+        "one_line": "Tarentum ran a purple-dye industry so large that mounds of crushed murex shell still rise along the Mare Piccolo lagoon shore. Pliny the Elder ranked Tarentine purple second only to Tyrian, once the most fashionable dye money could buy in Rome. Workshops crushed shellfish hauled from the lagoon's sheltered waters, later famous for oyster farming instead. Tyrian dibapha, selling for some 1,000 denarii a pound, eventually eclipsed it, but Tarentine dye works kept running regardless.",
+        "province": "Italia",
+        "modern_location": "Taranto, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0064%3Aentry%3Dtarentum-geo",
+          "https://en.wikipedia.org/wiki/Tyrian_purple"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Colonne%20Doriche%20Tempio%20di%20Poseidone%20Taranto.jpg?width=800",
+        "image_credit": "Doric columns of the Temple of Poseidon, Taranto · Wikimedia Commons",
+        "image_alt": "Doric columns of an ancient temple in Taranto"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.1097,
+          37.8351
+        ]
+      },
+      "properties": {
+        "id": "craft_wool_laodicea",
+        "name": "Laodicea",
+        "craft": "wool",
+        "one_line": "Laodicea grew rich on wool so black and glossy that Strabo credited the fertility of its pastures for the color. Local flocks produced a raven-black fleece unlike anything else in Asia Minor, woven into garments called trimita and sold across the Roman world. The wealth it brought made the city a byword for self-satisfied prosperity. Two rival textile towns, Hierapolis and Colossae, sat within 12 miles, making the Lycus valley one dense cluster of Roman wool production.",
+        "province": "Asia",
+        "modern_location": "Denizli, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.ebsco.com/research-starters/history/laodicea-lycus/",
+          "https://biblemapper.com/blog/index.php/2021/10/04/cities-of-the-lycus-valley/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Laodicea%2C%20Western%20Theatre%2C%202021.jpg?width=800",
+        "image_credit": "Western Theatre, Laodicea on the Lycus · Wikimedia Commons",
+        "image_alt": "Ruins of the western theatre at Laodicea on the Lycus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.1897,
+          37.7861
+        ]
+      },
+      "properties": {
+        "id": "craft_wool_colossae",
+        "name": "Colossae",
+        "craft": "wool",
+        "one_line": "Colossae lent its own name to a color: colossinus, a dark reddish-purple wool dye Pliny the Elder compared to a cyclamen flower. The city's wool was dyed on-site into this signature hue and exported as a recognizable brand across the Roman world. Colossae sat in the Lycus valley beside two rival wool towns, Laodicea and Hierapolis, each with its own specialty color. By 117 CE it had already begun losing ground to its larger neighbor, though its dye still carried its own name.",
+        "province": "Asia",
+        "modern_location": "Honaz, Turkey",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Colossae",
+          "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Colossae"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/TR%20Colossae%20site%20asv2020-02%20img08.jpg?width=800",
+        "image_credit": "Colossae archaeological site · Wikimedia Commons",
+        "image_alt": "The mound of ancient Colossae in the Lycus valley"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9682,
+          51.719
+        ]
+      },
+      "properties": {
+        "id": "craft_wool_corinium",
+        "name": "Cirencester",
+        "craft": "wool",
+        "one_line": "Corinium grew into Roman Britain's second-largest town partly on its wool trade, with nearby graves yielding wool combs marking out wealthy merchants. Villas around the settlement ran sheep across the same grassland that later built the medieval Cotswold wool fortunes. As capital of the Dobunni tribe's new civitas, the town collected taxes partly in raw fleece. Britain's hooded wool cloaks, prized enough for their own listing in a later price edict, had roots in pastures like these.",
+        "province": "Britannia",
+        "modern_location": "Cirencester, England, United Kingdom",
+        "extant_117ce": true,
+        "sources": [
+          "https://coriniummuseum.org/wp-content/uploads/2018/02/englishshortguide.pdf",
+          "https://en.wikipedia.org/wiki/Corinium_Dobunnorum"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cirencester%20Amphitheatre.jpg?width=800",
+        "image_credit": "Cirencester Roman Amphitheatre · Wikimedia Commons",
+        "image_alt": "Grassy earthworks of the Roman amphitheatre at Cirencester"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.0664,
+          41.2202
+        ]
+      },
+      "properties": {
+        "id": "craft_wool_canusium",
+        "name": "Canosa di Puglia",
+        "craft": "wool",
+        "one_line": "Canusium turned its tawny-brown fleece into a wool so recognizable that Pliny the Elder named the color after the town itself. Garments cut from it, called canusinae, were prized for their durability as much as their warmth. The city sat close enough to Tarentum's famous flocks that Roman writers ranked the two wool centers together as Apulia's finest. Canusium later added a triumphal arch, raised around 109 CE under Trajan, a mark of the wealth its wool trade helped build.",
+        "province": "Italia",
+        "modern_location": "Canosa di Puglia, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0006%3Aentry%3Dcanusium",
+          "https://en.wikipedia.org/wiki/Arch_of_Trajan_(Canosa)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arch%20of%20Traianus%20(Canosa%20di%20Puglia)%2001.jpg?width=800",
+        "image_credit": "Arch of Trajan, Canosa di Puglia · Wikimedia Commons",
+        "image_alt": "The Roman Arch of Trajan at Canosa di Puglia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          62.19,
+          37.66
+        ]
+      },
+      "properties": {
+        "id": "craft_silk_merv",
+        "name": "Merv",
+        "craft": "silk",
+        "one_line": "Merv sat where every branch of the Silk Road converged before splitting toward Parthia, Mesopotamia, and eventually Rome. Han Chinese silk crossed this Central Asian oasis on its way west, changing hands long before it touched ports like Palmyra or Alexandria. Canals fed by the Murghab River made the oasis rich enough to be called the largest city on the route. Alexander the Great founded a city here four centuries earlier; by 117 CE it thrived as a Parthian hub beyond Rome's frontier.",
+        "modern_location": "Mary, Turkmenistan",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Merv",
+          "https://www.cyark.org/projects/ancient-merv/in-depth"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great%20Kyz%20Kala%20in%202006%20(cropped).jpg?width=800",
+        "image_credit": "Great Kyz Kala, ancient Merv · Wikimedia Commons",
+        "image_alt": "The ruined fortress of Great Kyz Kala at Merv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.7297,
+          34.7492
+        ]
+      },
+      "properties": {
+        "id": "craft_silk_dura_europos",
+        "name": "Dura-Europos",
+        "craft": "silk",
+        "one_line": "Dura-Europos perched above the Euphrates at the junction of the river route and the great east-west caravan road, a natural stop for silk moving toward Roman Syria. Palmyrene merchants kept a permanent presence in the city from at least 33 BCE, using it as a forward post for the caravan trade they dominated. Deep ravines flanking two sides made it easy to defend and hard to bypass. Later called the 'Pompeii of the Syrian desert,' it preserved its warehouses in remarkable detail under the sand.",
+        "modern_location": "Deir ez-Zor Governorate, Syria",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Dura-Europos",
+          "http://www.silkroadfoundation.org/newsletter/2004vol2num1/Palmyra.htm"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dura%20Europos%2C%20Euphrates%20(6362405375).jpg?width=800",
+        "image_credit": "Dura-Europos overlooking the Euphrates · Wikimedia Commons",
+        "image_alt": "The ruins of Dura-Europos above the Euphrates river"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.2765,
+          33.5138
+        ]
+      },
+      "properties": {
+        "id": "craft_silk_damascus",
+        "name": "Damascus",
+        "craft": "silk",
+        "one_line": "Damascus became the spot where Asia's silk caravans handed their cargo to Mediterranean-bound traders, the place East and West did business face to face. Rome had governed it since Pompey annexed it in 64 BCE, and by Trajan's day its temple to Jupiter was redesigned by Apollodorus of Damascus, the same architect who later raised Trajan's Forum in Rome. Caravans loaded with silk, Indian spice, and Arabian perfume passed through toward the sea, a pattern that outlasted Roman rule by centuries.",
+        "province": "Syria",
+        "modern_location": "Damascus, Syria",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Temple_of_Jupiter,_Damascus",
+          "https://www.worldhistory.org/article/1761/the-eastern-trade-network-of-ancient-rome/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Umayyad%20Mosque%2C%20Damascus%2C%20Syria.JPG?width=800",
+        "image_credit": "Umayyad Mosque, built over the Roman Temple of Jupiter, Damascus · Wikimedia Commons",
+        "image_alt": "The Umayyad Mosque in Damascus, site of the Roman Temple of Jupiter"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4993,
+          32.4977
+        ]
+      },
+      "properties": {
+        "id": "craft_linen_scythopolis",
+        "name": "Beit Shean",
+        "craft": "linen",
+        "one_line": "Scythopolis wove linen so fine that the Jerusalem Talmud singled it out by name as a source of prized fabric. Jewish weavers dominated the trade, and Diocletian's price edict later ranked the city's textiles in its top quality class. As the only Decapolis city west of the Jordan River, Scythopolis paired a Greek civic identity with a workforce famous for weaving. Its Roman theater, built to seat roughly 7,000 spectators, still measures how much wealth that linen trade brought.",
+        "province": "Judaea",
+        "modern_location": "Beit Shean, Israel",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.livius.org/articles/place/scythopolis-beth-shean/",
+          "https://www.biblicalarchaeology.org/daily/bas-onsite/onsite-beth-shean/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Overview%20of%20Theater%20Beit%20Shean%20Israel.jpg?width=800",
+        "image_credit": "Roman theatre at Beit Shean (Scythopolis) · Wikimedia Commons",
+        "image_alt": "The Roman theatre at Beit Shean"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.6119,
+          26.2572
+        ]
+      },
+      "properties": {
+        "id": "craft_pearl_tylos",
+        "name": "Muharraq",
+        "craft": "pearl",
+        "one_line": "Tylos, the ancient name for the island now called Bahrain, produced pearls Pliny the Elder ranked as the finest from the Persian Gulf. Isidore of Charax described divers working these waters a century before Pliny wrote, plunging from rafts to depths of twenty fathoms. The island's oyster beds fed a gulf-wide pearl trade that funneled outward through ports like Charax Spasinou toward Roman buyers. Divers here worked the same beds their descendants still harvested into the 20th century.",
+        "modern_location": "Muharraq, Bahrain",
+        "extant_117ce": true,
+        "sources": [
+          "https://ancientarabia.huma-num.fr/dictionary/definition/pearl",
+          "https://journals.openedition.org/arabianhumanities/14290?lang=en"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.1333,
+          34.7167
+        ]
+      },
+      "properties": {
+        "id": "craft_perfume_amathus",
+        "name": "Amathus",
+        "craft": "perfume",
+        "one_line": "Amathus burned incense and pressed scented oils at its temple of Aphrodite so long that censers there show unbroken use into the Byzantine period. As one of Cyprus's oldest royal cities, ruled independently for over a thousand years before Rome absorbed the island, it tied perfume-making to Aphrodite's own birthplace. Craftsmen used an olive-oil base infused with oak moss, bergamot, and labdanum resin from rockrose flowers. Its own harbor let scented oils leave Cyprus without routing through Paphos.",
+        "province": "Cyprus",
+        "modern_location": "Agios Tychonas, Cyprus",
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Amathus",
+          "https://www.museicapitolini.org/en/mostra-evento/i-profumi-di-afrodite-e-il-segreto-dell%E2%80%99olio"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%205th%20century%20BC%20Amathus%20sarcophagus.jpg?width=800",
+        "image_credit": "The Amathus sarcophagus, Metropolitan Museum of Art · Wikimedia Commons",
+        "image_alt": "Painted limestone sarcophagus from Amathus, Cyprus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2483,
+          41.0864
+        ]
+      },
+      "properties": {
+        "id": "craft_perfume_capua",
+        "name": "Capua",
+        "craft": "perfume",
+        "one_line": "Capua ran an entire marketplace, the Seplasia, dedicated to nothing but perfumes and unguents. Campania's fields grew roses so abundantly that its rose oil, Rhodinum italicum, eclipsed the older Rhodinon once favored from Phaselis in Lycia. Pliny the Elder praised Capuan roses by name, ranking Campania's perfume trade second only to Egypt's. The city's wealth from wine and unguents made it Italy's second city by reputation, even after Rome punished it in 211 BCE for siding with Hannibal.",
+        "province": "Italia",
+        "modern_location": "Capua, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.electimuss.com/blogs/journal/fragrant-capua-the-heart-of-roman-perfumery",
+          "https://www.attalus.org/pliny/hn13a.html"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Amphitheatre%20of%20Santa%20Maria%20Capua%20Vetere%20003.jpg?width=800",
+        "image_credit": "Amphitheatre of Santa Maria Capua Vetere · Wikimedia Commons",
+        "image_alt": "Roman amphitheatre at Santa Maria Capua Vetere"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5018,
+          33.8938
+        ]
+      },
+      "properties": {
+        "id": "craft_glass_berytus",
+        "name": "Beirut",
+        "craft": "glass",
+        "one_line": "Berytus ran one of the Mediterranean's earliest glass furnaces, a production site excavated beneath the modern city and dated to the mid-1st century CE. Augustus had already refounded the city as a veterans' colony, funding the industries that grew up around it. Unlike centers that only reworked imported material, Berytus melted its own colored glass from scratch in purpose-built furnaces. Sidon may have invented glassblowing, but Berytus built its own furnaces to compete.",
+        "province": "Syria",
+        "modern_location": "Beirut, Lebanon",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.academia.edu/47785386/A_Pottery_and_Glass_Production_Site_in_Beirut_BEY_015",
+          "https://aub.edu/fas/histarc/Pages/Berytus.aspx"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20bath%20Beirut%20lebanon%20026.jpg?width=800",
+        "image_credit": "Roman Baths, Beirut · Wikimedia Commons",
+        "image_alt": "Remains of the Roman baths in Beirut"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3711,
+          45.7686
+        ]
+      },
+      "properties": {
+        "id": "craft_glass_aquileia",
+        "name": "Aquileia",
+        "craft": "glass",
+        "one_line": "Aquileia didn't just carve Baltic amber, it blew and cast glass on a serious scale too, leaving behind more than 6,000 carved glass gems in the city's museum. Workshops here remelted raw glass imported from the Levant and Egypt into finished vessels for northern Adriatic markets. Excavated melting-chamber fragments and tools confirm the furnaces ran through the 2nd and 3rd centuries. Aquileia sat at the head of the Amber Road and the top of the Adriatic, working two entirely different luxury materials.",
+        "province": "Italia",
+        "modern_location": "Aquileia, Italy",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.sciencedirect.com/science/article/pii/S2352409X23002420",
+          "https://www.researchgate.net/publication/359298141_Production_technology_for_Roman_mosaic_glass_vessels_new_data_from_the_domus_of_Tito_Macro_in_Aquileia_Italy"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Foro%20Romano%20Aquileia.jpg?width=800",
+        "image_credit": "Roman Forum, Aquileia · Wikimedia Commons",
+        "image_alt": "Remains of the Roman forum at Aquileia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9058,
+          41.8383
+        ]
+      },
+      "properties": {
+        "id": "craft_bronze_praeneste",
+        "name": "Palestrina",
+        "craft": "bronze",
+        "one_line": "Praeneste turned out bronze cistae, cylindrical boxes engraved with mythological scenes, so refined that one surviving example, the Ficoroni Cista, names its own maker. Workshops paired these with pear-shaped bronze mirrors in a distinctive local style, neither fully Etruscan nor fully Roman. The craft peaked in the 4th and 3rd centuries BCE, well before Rome's empire took shape. By 117 CE the cista workshops were long silent, though the hill town still drew pilgrims to its huge Sanctuary of Fortuna.",
+        "province": "Italia",
+        "modern_location": "Palestrina, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "https://www.metmuseum.org/essays/the-praenestine-cistae",
+          "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0006%3Aentry%3Dpraeneste"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palestrina%20-%20Santuario%20della%20Fortuna%20Primigenia%20-%20vista%20della%20rampa%20di%20sinistra.jpg?width=800",
+        "image_credit": "Sanctuary of Fortuna Primigenia, Palestrina · Wikimedia Commons",
+        "image_alt": "Terraced ramps of the Sanctuary of Fortuna Primigenia at Palestrina"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1108,
+          42.7186
+        ]
+      },
+      "properties": {
+        "id": "craft_bronze_volsinii",
+        "name": "Orvieto",
+        "craft": "bronze",
+        "one_line": "Volsinii ran one of Etruria's biggest bronze industries, casting cookware and devotional statues in vast quantity. When Rome sacked the city in 264 BCE, its soldiers reportedly hauled off more than 2,000 bronze statues, melting many down into Roman coinage. The destruction was so total that the population was resettled near modern Bolsena, ending independent Etruscan rule for good. By 117 CE the old bronze-casting hilltop, now Orvieto, stood as a shadow of its former power.",
+        "province": "Italia",
+        "modern_location": "Orvieto, Italy",
+        "extant_117ce": false,
+        "sources": [
+          "https://www.worldhistory.org/volsinii/",
+          "https://brewminate.com/volsinii-a-lost-ancient-etruscan-culture-consumed-by-rome/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Orvieto%20Tempio%20Etrusco%20Del%20Belvedere.JPG?width=800",
+        "image_credit": "Etruscan Temple of Belvedere, Orvieto · Wikimedia Commons",
+        "image_alt": "Remains of the Etruscan Temple of Belvedere at Orvieto"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.0453,
+          38.4886
+        ]
+      },
+      "properties": {
+        "id": "craft_jewelry_sardis",
+        "name": "Sardis",
+        "craft": "jewelry",
+        "one_line": "Sardis built its legendary wealth on gold panned from the Pactolus River, refined at a workshop that turned Lydian ore into the world's first true gold coinage under King Croesus. Archaeologists excavating Pactolus North uncovered the refinery itself, with the salt-cementation process used to purify the metal. That gold rush was already six centuries in the past by Trajan's reign, the river's placer deposits long since panned out. Sardis kept its reputation for riches anyway, 'rich as Croesus' outliving the mine.",
+        "province": "Asia",
+        "modern_location": "Sart, Turkey",
+        "extant_117ce": false,
+        "sources": [
+          "https://sardisexpedition.org/en/essays/latw-greenewalt-gold-silver-refining",
+          "https://en.wikipedia.org/wiki/Pactolus"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Artemistempel%20Sardes.jpg?width=800",
+        "image_credit": "Temple of Artemis, Sardis · Wikimedia Commons",
+        "image_alt": "Columns of the Temple of Artemis at Sardis"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4444,
+          30.3285
+        ]
+      },
+      "properties": {
+        "id": "craft_jewelry_petra",
+        "name": "Petra",
+        "craft": "jewelry",
+        "one_line": "Petra's Nabataean goldsmiths worked gold, silver, bronze, and iron into elaborate jewelry despite having no local source for precious metals — everything arrived by trade. Women here were buried wearing gold earrings and sometimes a gold nose ring, tied to piercing customs meant to ward off bad luck. Strabo remarked on how much silver and gold the Nabataeans held despite mining none of it. Rome's 106 CE annexation folded this goldworking tradition into the new province of Arabia.",
+        "province": "Arabia",
+        "modern_location": "Petra, Jordan",
+        "extant_117ce": true,
+        "sources": [
+          "https://www.researchgate.net/publication/265946686_Nabataean_Jewellery_and_Accessories",
+          "https://dsfantiquejewelry.com/blogs/journal/secrets-of-the-desert-the-fascinating-world-of-nabataean-jewels"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Al-Khazneh%20(The%20Treasury)%2C%20Petra%2C%20Jordan.jpg?width=800",
+        "image_credit": "Al-Khazneh (The Treasury), Petra, Jordan, by Vyacheslav Argenberg · Wikimedia Commons",
+        "image_alt": "The Treasury facade at Petra"
+      }
     }
   ]
 }
