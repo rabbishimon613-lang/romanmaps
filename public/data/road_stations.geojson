@@ -14005,6 +14005,53 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8329,
+          43.7735
+        ]
+      },
+      "properties": {
+        "id": "station_glanum",
+        "category": "mansio",
+        "name": "Glanum",
+        "road": "Via Domitia",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Glanum, just south of modern Saint-Remy-de-Provence, sat on the stretch of road linking Cabellio to Arelate. Its mausoleum and arch, known locally as Les Antiques, still stand together beside the site, among the best-preserved Roman monuments anywhere in Provence. The road continued east from here to the Rhone crossing at Ernaginum before reaching Arelate.",
+        "sources": [
+          "Itin. Ant. (A Mediolano Arelate per Alpes Cottias)",
+          "Vicarello Beakers (Gades-Rome route, as \"CLANVM\")"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2449,
+          43.8682
+        ]
+      },
+      "properties": {
+        "id": "station_ad_fines_via_domitia",
+        "category": "mutatio",
+        "name": "Ad Fines",
+        "road": "Via Domitia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Ad Fines, \"at the boundary,\" marked a territorial edge on the road between Apta Julia and Cabellio, its name a common Roman label for a station sitting on a border between civic territories.",
+        "sources": [
+          "Itin. Ant. (A Mediolano Arelate per Alpes Cottias)"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
