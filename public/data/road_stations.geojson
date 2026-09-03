@@ -1550,7 +1550,10 @@
           "Itin. Ant. 341 (Item a Mediolano per Alpes Cottias)",
           "https://en.wikipedia.org/wiki/Susa,_Piedmont"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Augustan%20Arch,%20Susa.JPG?width=800",
+        "image_credit": "Arch of Augustus, Susa (ancient Segusio) · Wikimedia Commons",
+        "image_alt": "The Roman Arch of Augustus still standing at Susa, ancient Segusio"
       }
     },
     {
@@ -13621,7 +13624,10 @@
           "Itin. Ant.",
           "http://iicenturione.blogspot.com/2008/07/albintimilium-ventimiglia.html"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Teatro%20di%20Ventimiglia%201.JPG?width=800",
+        "image_credit": "Roman theatre of Albintimilium, Ventimiglia · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman theatre at Ventimiglia, ancient Albintimilium"
       }
     },
     {
@@ -13692,7 +13698,10 @@
         "sources": [
           "Itin. Ant."
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ar%C3%A8nes%20de%20Cimiez,%20Nice,%20France.jpg?width=800",
+        "image_credit": "Roman amphitheatre of Cemenelum, Cimiez district of Nice · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman amphitheatre (arènes de Cimiez) at Cemenelum, Nice"
       }
     },
     {
@@ -13785,7 +13794,10 @@
         "sources": [
           "Itin. Ant. (Iter a Vintimilio Arelate usque)"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Frejus-amphitheatre-05.jpg?width=800",
+        "image_credit": "Roman amphitheatre of Forum Iulii, Fréjus · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman amphitheatre at Fréjus, ancient Forum Iulii"
       }
     },
     {
@@ -14003,7 +14015,10 @@
         "sources": [
           "Itin. Ant. (Iter a Vintimilio Arelate usque)"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arenes%20arles.JPG?width=800",
+        "image_credit": "Roman amphitheatre of Arelate, Arles · Wikimedia Commons",
+        "image_alt": "The Roman amphitheatre at Arles, ancient Arelate"
       }
     },
     {
@@ -14027,7 +14042,10 @@
           "Itin. Ant. (A Mediolano Arelate per Alpes Cottias)",
           "Vicarello Beakers (Gades-Rome route, as \"CLANVM\")"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mausol%C3%A9e%20de%20Glanum.JPG?width=800",
+        "image_credit": "Mausoleum of the Julii at Glanum, Les Antiques, near Saint-Rémy-de-Provence · Wikimedia Commons",
+        "image_alt": "The Roman mausoleum of the Julii still standing at Glanum"
       }
     },
     {
