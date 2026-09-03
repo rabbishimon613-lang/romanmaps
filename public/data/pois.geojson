@@ -43592,5 +43592,595 @@
         "confidence": "medium"
       }
     }
+,
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.3137,
+          52.0796
+        ]
+      },
+      "properties": {
+        "id": "poi_necropolis_bartlow_hills",
+        "category": "necropolis",
+        "name_latin": "",
+        "name_english": "Bartlow Hills",
+        "province": "Britannia",
+        "modern_location": "Bartlow, Cambridgeshire, England",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Seven earthen mounds rose in two rows beside a Roman road around 100 CE, a burial ground for Romanized British aristocrats who kept an Iron Age habit of mound-building well into the imperial period. The tallest cone reached 15 meters, the largest Roman barrow north of the Alps. Excavators pulled Samian ware, glass unguent bottles, and an iron lamp still holding its half-burned wick from oak chests sealed inside.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Bartlow_Hills",
+          "https://historicengland.org.uk/listing/the-list/list-entry/1018974"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2497,
+          47.9575
+        ]
+      },
+      "properties": {
+        "id": "poi_mausoleum_faverolles",
+        "category": "mausoleum",
+        "name_latin": "",
+        "name_english": "Gallo-Roman Mausoleum of Faverolles",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Faverolles, Haute-Marne, France",
+        "built": -20,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A limestone tower tomb rose nearly 26 meters above the road linking Langres to the Blaise valley, raised around 20 BCE for a wealthy family of the Lingones. Relief carvings recovered from its collapsed remains show gladiatorial games and portraits of the dead, imagery unmatched by any other known tomb in Roman Gaul north of Lyon.",
+        "sources": [
+          "https://corvinus.nl/2020/05/21/the-gallo-roman-mausoleum-of-faverolles/",
+          "https://fr.wikipedia.org/wiki/Site_arch%C3%A9ologique_de_Faverolles"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.2525,
+          34.548
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_iamblichus_palmyra",
+        "category": "mausoleum",
+        "name_latin": "Turris Iamblichi",
+        "name_english": "Tower of Iamblichus",
+        "province": "Syria",
+        "modern_location": "Valley of the Tombs, Palmyra, Syria",
+        "built": 83,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A dedicatory inscription fixed this tower's completion at 83 CE, one of several securely dated giants that once studded the valley west of Palmyra's colonnade. It rose in tiers of loculi that held hundreds of the dead behind sealed relief portraits. Its stone core, nearly four stories tall, survived close to two thousand years of desert wind before militants dynamited it in 2015.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Valley_of_the_Tombs",
+          "https://en.wikipedia.org/wiki/Tower_of_Elahbel"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Inscription",
+            "work": "Dedicatory inscription, Tower of Iamblichus",
+            "ref": "83 CE",
+            "note": "The tower's own foundation inscription fixes its completion date."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.254,
+          34.5495
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_atenatan_palmyra",
+        "category": "mausoleum",
+        "name_latin": "Turris Atenatani",
+        "name_english": "Tower of Atenatan",
+        "province": "Syria",
+        "modern_location": "Valley of the Tombs, Palmyra, Syria",
+        "built": -9,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A bilingual Greek and Palmyrene inscription over its stone door dates this squat, tapering tower to 9 BCE, the earliest securely dated tomb in the Palmyrene necropolis. Its panelled door still turned on stone pivots that had swung for generations of the same family, more than a century before this map's 117 CE snapshot.",
+        "sources": [
+          "https://users.stlcc.edu/mfuller/palmyratombs.html",
+          "https://en.wikipedia.org/wiki/Valley_of_the_Tombs"
+        ],
+        "confidence": "medium",
+        "ancient_sources": [
+          {
+            "author": "Inscription",
+            "work": "Bilingual Greek/Palmyrene foundation inscription",
+            "ref": "9 BCE",
+            "note": "The earliest dated funerary inscription known from Palmyra, carved above the tomb's stone door."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.257057,
+          34.554512
+        ]
+      },
+      "properties": {
+        "id": "poi_tower_kitot_palmyra",
+        "category": "mausoleum",
+        "name_latin": "Turris Kitot",
+        "name_english": "Tower of Kitot",
+        "province": "Syria",
+        "modern_location": "Valley of the Tombs, Palmyra, Syria",
+        "built": 40,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Founded in 40 CE, this tower held one of the oldest known examples of the Palmyrene funerary banquet relief, a scene of the dead reclining at an eternal feast that became the city's signature image. Multiple stories of burial niches climbed above a ground floor lined with sculpted family portraits, until ISIL destroyed it in 2015.",
+        "sources": [
+          "https://vici.org/vici/24637/?lang=en",
+          "https://en.wikipedia.org/wiki/Valley_of_the_Tombs"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Inscription",
+            "work": "Foundation inscription, Tower of Kitot",
+            "ref": "40 CE",
+            "note": "Names the tower's founding date, from which it takes its modern designation."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.213133,
+          31.773133
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_jason_jerusalem",
+        "category": "tomb",
+        "name_latin": "",
+        "name_english": "Jason's Tomb",
+        "province": "Judaea",
+        "modern_location": "Rehavia, Jerusalem",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A courtyard tomb cut into Jerusalem limestone during the reign of the Hasmonean king Alexander Jannaeus carried a pyramid-shaped roof over its porch, a form borrowed from Hellenistic funerary architecture. Charcoal graffiti on its walls included a drawing of a warship and an Aramaic lament for the buried Jason, giving the tomb its modern name. Burial there had ended by the early first century CE, but the carved facade and courtyard still stood when Trajan died in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Jason's_Tomb"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jason's_Tomb_P8020030.JPG?width=800",
+        "image_credit": "Jason's Tomb, Jerusalem · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Anonymous graffiti",
+            "work": "Charcoal inscriptions inside Jason's Tomb",
+            "ref": "Aramaic lament and ship drawing, porch wall",
+            "note": "Mourning graffiti naming Jason gave the tomb its modern identification."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2448778,
+          31.7931889
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_nicanor_mount_scopus",
+        "category": "tomb",
+        "name_latin": "",
+        "name_english": "Cave of Nicanor",
+        "province": "Judaea",
+        "modern_location": "Mount Scopus, Jerusalem",
+        "built": 30,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Forty burial chambers opened off a rock-cut courtyard on Mount Scopus, one of the most elaborate Jewish tombs found in Jerusalem. An ossuary from the cave carries a Greek inscription naming the bones of Nicanor of Alexandria, the donor Jewish tradition credits with casting the bronze gates of the Second Temple's Court of Women. Its dressed facade and columned courtyard had stood for roughly a lifetime by the time Trajan died in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cave_of_Nicanor"
+        ],
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Inscription",
+            "work": "Ossuary inscription, Cave of Nicanor",
+            "ref": "Greek: bones of Nicanor the Alexandrian who made the doors",
+            "note": "Identifies the tomb owner with the Temple gate-donor named in Josephus and Talmudic sources."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.171289,
+          36.343873
+        ]
+      },
+      "properties": {
+        "id": "poi_mausoleum_pericles_limyra",
+        "category": "mausoleum",
+        "name_latin": "Heroon Periclis",
+        "name_english": "Heroon of Pericles",
+        "province": "Lycia et Pamphylia",
+        "modern_location": "Limyra, near Turunçova, Antalya Province, Turkey",
+        "built": -370,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The Lycian dynast Pericles raised this Ionic temple tomb against the acropolis wall of Limyra around 370 BCE, capping his rule over a briefly unified Lycia won in defiance of Persian satraps. Caryatid-like female figures held up its roofline while pediment reliefs showed Perseus beheading Medusa, a mythic claim to heroic descent. The temple tomb still crowned its hillside more than four centuries later, by then absorbed into Roman Lycia et Pamphylia.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pericles,_Dynast_of_Lycia",
+          "https://www.livius.org/articles/place/limyra/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.220805,
+          31.798379
+        ]
+      },
+      "properties": {
+        "id": "poi_necropolis_sanhedria_jerusalem",
+        "category": "necropolis",
+        "name_latin": "",
+        "name_english": "Tombs of the Sanhedrin",
+        "province": "Judaea",
+        "modern_location": "Sanhedria, Jerusalem",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Wealthy Jewish families of the Second Temple period cut roughly 1,000 burial caves into a hillside north of Jerusalem's walls. Its most elaborate single chamber held 63 rock-cut burial niches, a number close to the seventy-one seats of the Great Sanhedrin that later gave the necropolis its name. Triangular pediments and carved acroteria dressed up entrances leading to plain, cool chambers below.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tombs_of_the_Sanhedrin"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sanhedrin1.jpg?width=800",
+        "image_credit": "Tombs of the Sanhedrin, Jerusalem · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.698806,
+          32.488028
+        ]
+      },
+      "properties": {
+        "id": "poi_mausoleum_gasr_doga",
+        "category": "mausoleum",
+        "name_latin": "",
+        "name_english": "Mausoleum of Gasr Doga",
+        "province": "Africa Proconsularis",
+        "modern_location": "Tarhuna Gebel, Libya",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A Libyco-Punic notable raised this monumental tower tomb on the contested frontier between the territories of Leptis Magna and Oea. Its carved decoration fused local Libyan tradition with motifs imported from Italy, echoing the tomb architecture of the old Numidian kings farther west. It already stood as a landmark on the Tripolitanian plateau when Trajan died in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Mausoleum_of_Gasr_Doga"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3664,
+          45.7727
+        ]
+      },
+      "properties": {
+        "id": "poi_mausoleum_candia_aquileia",
+        "category": "mausoleum",
+        "name_latin": "",
+        "name_english": "Mausoleo Candia",
+        "province": "Italia",
+        "modern_location": "Aquileia, Italy",
+        "built": 1,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A 17-meter funerary tower crowned with a round aedicula and flanked by carved stone lions once marked the road from Aquileia toward Tergeste, raised for a prominent local family in the early Empire. Its scattered stones lay quarried away for centuries until archaeologists gathered enough surviving original blocks to rebuild the monument in 1956 near the ancient city's Roman gate.",
+        "sources": [
+          "https://aquileia.arte.it/guida-arte/aquileia/da-vedere/monumenti/mausoleo-candia-5266"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.856262,
+          32.819021
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_battus_cyrene",
+        "category": "tomb",
+        "name_latin": "Sepulcrum Batti",
+        "name_english": "Tomb of Battus",
+        "province": "Creta et Cyrenaica",
+        "modern_location": "Cyrene (Shahhat), Libya",
+        "built": -600,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Cyrene's founder-king Battus received the rare honor of a grave inside the city's own agora, the ceremonial heart normally reserved for gods and civic monuments. Ancient tradition held that a colony's founder's tomb anchored its identity, and Battus's resting place served that role through more than seven centuries of Cyrenaican history, including its absorption into Roman Crete and Cyrenaica.",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q104776650",
+          "https://slsgazetteer.org/1330/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.4069,
+          34.775
+        ]
+      },
+      "properties": {
+        "id": "poi_necropolis_tombs_of_kings_paphos",
+        "category": "necropolis",
+        "name_latin": "",
+        "name_english": "Tombs of the Kings",
+        "province": "Cyprus",
+        "modern_location": "Paphos, Cyprus",
+        "built": -300,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Paphian aristocrats and high officials, not actual kings, filled this cliffside necropolis with tombs carved to imitate the houses of the living, some centered on open peristyle courtyards ringed by Doric columns cut straight from the bedrock. Burials continued here from the early Hellenistic third century BCE through the Roman era. By 117 CE the necropolis had already served Paphos for more than three hundred years.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tombs_of_the_Kings_(Paphos)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cyprus-Paphos-Tombs-of-the-Kings-14204.jpg?width=800",
+        "image_credit": "Tombs of the Kings, Paphos · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.39919,
+          42.62576
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_kazanlak_thracian",
+        "category": "tomb",
+        "name_latin": "",
+        "name_english": "Thracian Tomb of Kazanlak",
+        "province": "Thracia",
+        "modern_location": "Kazanlak, Stara Zagora Province, Bulgaria",
+        "built": -300,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A narrow corridor led into a round, domed burial chamber near the Thracian capital of Seuthopolis, its walls wrapped in murals of a funeral procession and a couple's farewell banquet. Painted in the final decades of the 4th century BCE, the frescoes rank among the finest surviving examples of Hellenistic painting anywhere. The tomb lay sealed beneath its earthen mound through Rome's annexation of Thracia, undisturbed until soldiers digging a shelter broke into it in 1944.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Thracian_Tomb_of_Kazanlak",
+          "https://whc.unesco.org/en/list/44/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kazanluk_1.jpg?width=800",
+        "image_credit": "Interior fresco, Thracian Tomb of Kazanlak · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.874055,
+          31.202195
+        ]
+      },
+      "properties": {
+        "id": "poi_necropolis_anfushi_alexandria",
+        "category": "necropolis",
+        "name_latin": "",
+        "name_english": "Anfushi Tombs",
+        "province": "Aegyptus",
+        "modern_location": "Anfushi, Alexandria, Egypt",
+        "built": -250,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Five rock-cut tombs opened off sunlit courtyards in Alexandria's western necropolis, their walls painted to imitate colorful marble veneer in a style unique to Ptolemaic Egypt. Construction spanned the transition from Ptolemaic to Roman rule, with one chamber's decoration updated for later Roman-period burials while another kept its original third-century-BCE plan intact.",
+        "sources": [
+          "https://travel2egypt.org/necropolis-of-anfushi/",
+          "https://www.wikidata.org/wiki/Q20424374"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/AlexAnfushiTombs.jpg?width=800",
+        "image_credit": "Anfushi Tombs, Alexandria · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.317,
+          40.483
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_philip_ii_vergina",
+        "category": "tomb",
+        "name_latin": "",
+        "name_english": "Tomb of Philip II, Vergina",
+        "province": "Macedonia",
+        "modern_location": "Vergina, Central Macedonia, Greece",
+        "built": -336,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Four royal burial chambers lay hidden beneath a 110-meter earthen mound at ancient Aigai, sealed since a member of the Macedonian royal house, most likely Philip II, was cremated and interred there around 336 BCE. Grave goods packed into the marble-doored chamber included a gold larnax, an iron-and-gold ceremonial breastplate, and a beaten gold funerary wreath, all untouched by looters. The tumulus stood unopened through the entire span of the Roman Empire and for eighteen centuries afterward, until archaeologists broke into it in 1977.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Museum_of_the_Royal_Tombs_of_Aigai_(Vergina)",
+          "https://www.worldhistory.org/article/1490/the-royal-macedonian-tombs-at-vergina/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Facade_of_Philip_II_tomb_Vergina_Greece.jpg?width=800",
+        "image_credit": "Facade of the Tomb of Philip II, Vergina · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.43098,
+          35.26318
+        ]
+      },
+      "properties": {
+        "id": "poi_mausoleum_syphax_beni_saf",
+        "category": "mausoleum",
+        "name_latin": "",
+        "name_english": "Royal Mausoleum of Syphax",
+        "province": "Mauretania Caesariensis",
+        "modern_location": "Beni Saf, Ain Temouchent Province, Algeria",
+        "built": -205,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A stepped stone monument crowned a ridge 220 meters above the Tafna valley, overlooking the coast near Siga, capital of the Numidian king Syphax. Tradition attributes the tomb to Syphax himself, the Masaesyli ruler whose shifting alliances in the Second Punic War ended with his capture by Rome in 203 BCE. Its stark, tiered profile echoes the same Numido-Punic architectural tradition later scaled up at Medracen.",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q65643733",
+          "https://commons.wikimedia.org/wiki/Category:Royal_Mausoleum_of_Syphax"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Mausoleum_of_Syphax_01.jpg?width=800",
+        "image_credit": "Royal Mausoleum of Syphax, Beni Saf · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.86333,
+          40.83972
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_kasta_amphipolis",
+        "category": "tomb",
+        "name_latin": "",
+        "name_english": "Kasta Tomb",
+        "province": "Macedonia",
+        "modern_location": "Amphipolis, Central Macedonia, Greece",
+        "built": -325,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A retaining wall nearly 500 meters around enclosed the largest burial mound ever found in Macedonia, a tumulus more than 30 meters high built for an unidentified aristocrat in the turbulent years after Alexander the Great's death. Two headless marble sphinxes and a pair of caryatid-like female figures guarded chambers decorated with a mosaic of Persephone's abduction by Pluto. Romans later dismantled sections of its outer wall for building stone, but left the sealed mound itself intact for another two thousand years.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kasta_Tomb"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kasta_entrance_with_Karyatids.jpg?width=800",
+        "image_credit": "Entrance of the Kasta Tomb, Amphipolis · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.892954,
+          31.178558
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_wardian_alexandria",
+        "category": "tomb",
+        "name_latin": "",
+        "name_english": "Wardian Tombs",
+        "province": "Aegyptus",
+        "modern_location": "Alexandria, Egypt (western necropolis)",
+        "built": -300,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Two rock-cut tombs anchored Alexandria's western necropolis, cut into the limestone ridge above the harbor around 300 BCE at the dawn of Ptolemaic rule. One chamber kept its early Hellenistic plan while the other was remodeled for burials under Roman administration, a rare side-by-side record of three centuries of changing funerary fashion.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Wardian_Tombs"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.224056,
+          31.774
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_herod_family_jerusalem",
+        "category": "tomb",
+        "name_latin": "",
+        "name_english": "Herod's Family Tomb",
+        "province": "Judaea",
+        "modern_location": "near the King David Hotel, Jerusalem",
+        "built": -20,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Five cross-shaped chambers cut from precisely dressed Herodian ashlar masonry held the burials of King Herod's relatives, including two carved sarcophagi still found in place inside. Tradition names Herod's wife Mariamne among those interred here, distinct from Herod's own burial place at Herodium far to the south. It had held its Herodian-era dead for well over a century by the time Trajan died in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Herod's_family_tomb"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Herod's_family_tomb_in_Nikoforieh,_Jerusalem._Tomb_of_Mariamne_LOC_matpc.23199.jpg?width=800",
+        "image_credit": "G. Eric and Edith Matson Photograph Collection, Library of Congress"
+      }
+    }
   ]
 }
