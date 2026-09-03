@@ -1036,6 +1036,284 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.843,
+          40.817
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_amphipolis",
+        "name": "Amphipolis",
+        "category": "gymnasium",
+        "one_line": "Amphipolis holds the only fully excavated Macedonian gymnasium found anywhere in northern Greece. Teenagers between 16 and 18 studied here under a formal ephebarchic law inscribed on stone, training in classrooms set beside open exercise yards. A stele dated to the Augustan era shows the building still running youth education generations into Roman rule.",
+        "province": "Macedonia",
+        "modern_location": "Amphipolis, Greece",
+        "built": -320,
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Amphipolis"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amphipolis_Gymnasion.jpg?width=800",
+        "image_credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2777,
+          37.5297
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_miletus",
+        "name": "Miletus",
+        "category": "gymnasium",
+        "one_line": "A wealthy citizen named Eudemos personally funded Miletus's central gymnasium, giving the city a 19-by-35-meter training yard ringed by a Doric colonnade. Visitors entered through a monumental gate raised on a five-step platform beside the North Agora. Roman engineers later borrowed its symmetrical layout wholesale when they built the neighboring Capito Baths, proof the older building was still standing and respected.",
+        "province": "Asia",
+        "modern_location": "Miletus, Turkey",
+        "built": -180,
+        "extant_117ce": true,
+        "sources": [
+          "https://www.fhw.gr/choros/miletus/en/elinistiko_gimnasio.php"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.706,
+          37.9932
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_academy_athens",
+        "name": "Academy of Athens",
+        "category": "gymnasium",
+        "one_line": "A public gymnasium ran on this ground long before Plato claimed a corner of it for his philosophical school in 387 BCE. Its shaded colonnaded walkways framed an exercise yard beside the buildings where students studied logic and mathematics for centuries. Sulla's siege of Athens stripped the grove's trees for siege engines in 86 BCE, yet the site kept functioning afterward, closing only under Justinian in 529 CE.",
+        "province": "Achaea",
+        "modern_location": "Akadimia Platonos, Athens, Greece",
+        "built": -560,
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Akadimia_Platonos"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Athens_Plato_Academy_Archaeological_Site_2.jpg?width=800",
+        "image_credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.729,
+          37.9737
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_diogeneion_athens",
+        "name": "Diogeneion, Athens",
+        "category": "gymnasium",
+        "one_line": "Athens named this gymnasium for the Macedonian general Diogenes, who handed the port of Piraeus back to Athenian control in 229 BCE. It became the official headquarters of the ephebate, the institution that trained young citizens for civic and military life, and inscribed lists of ephebes name it well into the Roman Imperial period. Its exact foundations near the Tower of the Winds have never been located archaeologically, so this pin is approximate.",
+        "province": "Achaea",
+        "modern_location": "Plaka, Athens, Greece",
+        "built": -229,
+        "extant_117ce": true,
+        "sources": [
+          "https://www.atticinscriptions.com/papers/aio-papers-12/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.3751,
+          37.8923
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_elis",
+        "name": "Elis",
+        "category": "gymnasium",
+        "one_line": "Every athlete entering the Olympic Games first survived a full month of compulsory training here, making Elis by far the largest gymnasium in Greece. Plane trees lined its walled enclosure, the Xystus, where officials matched wrestlers by age and skill inside a hall called the Plethrium. Pausanias described the complex in detail in the mid-2nd century CE, but the building itself still lies unexcavated beneath the modern site.",
+        "province": "Achaea",
+        "modern_location": "Ancient Elis, Greece",
+        "built": -400,
+        "extant_117ce": true,
+        "sources": [
+          "https://www.theoi.com/Text/Pausanias6B.html"
+        ],
+        "confidence": "low",
+        "ancient_sources": [
+          {
+            "author": "Pausanias",
+            "work": "Description of Greece",
+            "ref": "6.23.1",
+            "note": "Describes the gymnasium's plane-tree-lined Xystus and the Plethrium where wrestlers were matched by age and skill."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7217,
+          37.6304
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_argos_kylarabis",
+        "name": "Kylarabis Gymnasium, Argos",
+        "category": "gymnasium",
+        "one_line": "Argos named its gymnasium for Kylarabes, a legendary son of the hero Sthenelos, the same tradition that gave Athens its Academy and Lyceum named for local heroes. Pausanias found both men's graves still marked inside the grounds when he visited, alongside a cult statue of Athena. No systematic excavation has yet pinned down the building's exact footprint within the modern town.",
+        "province": "Achaea",
+        "modern_location": "Argos, Greece",
+        "built": -400,
+        "extant_117ce": true,
+        "sources": [
+          "https://www.theoi.com/Text/Pausanias2B.html"
+        ],
+        "confidence": "low",
+        "ancient_sources": [
+          {
+            "author": "Pausanias",
+            "work": "Description of Greece",
+            "ref": "2.22.8",
+            "note": "Describes the gymnasium named for Kylarabes and the graves of Sthenelos and Kylarabes marked within it."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.1329,
+          37.4021
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_megalopolis",
+        "name": "Megalopolis",
+        "category": "gymnasium",
+        "one_line": "Megalopolis built its gymnasium onto the west side of its market square as part of the ambitious new city the Theban general Epaminondas founded in 368 BCE to unite Arcadia against Sparta. Pausanias walked past it on his way through the agora, describing it standing beside a Philippeium portico and a sanctuary of Zeus the Savior. By his visit the city around it had already shrunk far below its founders' ambitions.",
+        "province": "Achaea",
+        "modern_location": "Megalopolis, Greece",
+        "built": -368,
+        "extant_117ce": true,
+        "sources": [
+          "https://www.theoi.com/Text/Pausanias8B.html"
+        ],
+        "confidence": "low",
+        "ancient_sources": [
+          {
+            "author": "Pausanias",
+            "work": "Description of Greece",
+            "ref": "8.30.6",
+            "note": "Describes the gymnasium standing beside the Philippeium portico in the Megalopolis agora."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.0984,
+          40.6307
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_mieza",
+        "name": "Mieza (School of Aristotle)",
+        "category": "gymnasium",
+        "one_line": "King Philip II of Macedon picked this site to install Aristotle as personal tutor to his thirteen-year-old son, the future Alexander the Great, in 343 BCE. Masons cut three enormous terraces straight into the limestone bedrock, linking a palaestra to a two-story covered running track nearly 200 meters long. A farmer accidentally rediscovered the site in 1965 while uprooting a tree and finding stone steps underneath.",
+        "province": "Macedonia",
+        "modern_location": "near Naousa, Greece",
+        "built": -343,
+        "extant_117ce": true,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Mieza_(Macedonia)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/20160518_092_mieza_nympheum.jpg?width=800",
+        "image_credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.2038,
+          40.5183
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_beroea",
+        "name": "Beroea",
+        "category": "gymnasium",
+        "one_line": "Beroea's gymnasium is known chiefly through a marble stele inscribed on both sides with the city's full gymnasiarchal law, spelling out in exhaustive detail how the institution was to be run, down to fines and floggings for members who broke house rules. Before this stele surfaced, historians had only pieced together Hellenistic gymnasium administration from scattered decrees across the Greek world. Only salvage digs, never a full excavation, have touched the actual building site in modern Veria.",
+        "province": "Macedonia",
+        "modern_location": "Veria, Greece",
+        "built": -180,
+        "extant_117ce": true,
+        "sources": [
+          "https://www.academia.edu/29913119/The_Gymnasiarchical_law_of_Beroea_first_third_of_second_century_B_C_"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7118,
+          37.9842
+        ]
+      },
+      "properties": {
+        "id": "sport_gymnasium_sicyon",
+        "name": "Gymnasium of Kleinias, Sicyon",
+        "category": "gymnasium",
+        "one_line": "Sicyon's leading citizen Kleinias, father of the statesman Aratus, personally funded this gymnasium at the foot of the city's Hellenistic acropolis. Pausanias found a stone statue of Heracles carved by the sculptor Scopas standing inside its grounds when he passed through. The complex spread across two terraces linked by three staircases, its lower level alone measuring 72 by 36 meters.",
+        "province": "Achaea",
+        "modern_location": "Sicyon, Greece",
+        "built": -275,
+        "extant_117ce": true,
+        "sources": [
+          "https://www.theoi.com/Text/Pausanias2A.html"
+        ],
+        "confidence": "low",
+        "ancient_sources": [
+          {
+            "author": "Pausanias",
+            "work": "Description of Greece",
+            "ref": "2.10.1",
+            "note": "Describes the gymnasium Kleinias built and the Scopas statue of Heracles standing within it."
+          }
+        ]
+      }
     }
   ]
 }
