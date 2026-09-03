@@ -1254,6 +1254,27 @@ to prevent. Building locally to *test* your own work is expected and fine.
       with Playwright.
 - [~] `[06-P1-5]` **`finds`** `illustrate` — claimed by Shift 95, 2026-09-03 15:00 — 3–8
       artefacts per site with images and museum.
+      **Shift 95 (2026-09-03) added 8 more sites directly** (parent-session WebSearch) — Sabratha
+      (the Flavia Domitilla marble head, stolen from the site museum in 1990 and later repatriated;
+      the Three Graces mosaic; the Triumph of Bacchus and Ariadne mosaic), Carnuntum (the 1894
+      Mithras-killing-the-bull relief; a bronze Thraex gladiator statuette; a commander's cuirassed
+      statue bearing Jupiter Heliopolitanus), Xanten (the bronze Xanten Youth, Neues Museum Berlin;
+      the suspended river ship at the LVR-Römermuseum; a silver-gilt cavalry parade helmet at the
+      LVR-LandesMuseum Bonn), Verona (a 3rd-c. gladiator combat mosaic; the Tomb of the Doctor's
+      bronze surgical kit; the bronze coin that dated the Arena to 30-42 CE), Rimini (the Domus del
+      Chirurgo's 150+ surgical instruments; the Port Scene mosaic; a bronze votive hand to Jupiter
+      Dolichenus), Portus (the Torlonia Harbor Relief; the colossal 5.57m cuirassed Trajan statue,
+      Vatican Museums; a second Torlonia relief of a dockside clerk logging cargo), Beneventum
+      (three pieces from Domitian's 88-89 CE Iseum at the Museo del Sannio — the diorite
+      pharaoh-style statue of Domitian, the temple's sphinxes, a marble prow from a statue of Isis
+      Pelagia), Pozzuoli (the Statue of Serapis that got the whole macellum misnamed a "Temple of
+      Serapis" for a century; the amphitheatre's Scabillarii Mosaic; the Puteoli Marble Block at
+      the Penn Museum, carrying both a Trajanic arch relief and Domitian's damnatio-erased
+      dedication on its two faces). **26 of 40 sites now populated** (up from 18) — baalbek,
+      baiae, brescia, capua, cumae, djemila, jerash, luni, milan, palmyra, ravenna, timgad, tivoli
+      still open (13); ancona and cumae researched this shift and found thin (see SHIFT_LOG for
+      the specific dead-end search trail — worth a fresh pass, not confirmed dead like Timgad/
+      Djemila). `npx tsc --noEmit` clean at every commit.
       **Shift 94 (2026-09-03) added 7 more sites directly** (parent-session WebSearch, same
       approach Shift 93 found most reliable) — Ostia (Statue of Trajan, Perseus with the Head of
       Medusa, the 160 CE Iliad sarcophagus, the Sarcophagus of the Muses recovered from looters in
