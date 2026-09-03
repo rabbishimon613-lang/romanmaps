@@ -1254,7 +1254,21 @@ to prevent. Building locally to *test* your own work is expected and fine.
       with Playwright.
 - [ ] `[06-P1-5]` **`finds`** `illustrate` — 3–8 artefacts per site with images and museum.
       **Started 2026-09-03 by cloud shift (Shift 92) — schema + UI shipped, 7 of 40 sites
-      populated, real headroom left.** New `SiteInfo.finds[]` (`app/sites.ts`) — name, note,
+      populated, real headroom left.** **Shift 93 (2026-09-03) added 3 more sites directly** —
+      Volubilis (Juba II and Cato the Younger bronze busts, the Ephebe Crowned with Ivy),
+      Leptis Magna (the Flavian-dated Zliten mosaic, a Tiberian-era Ceres Augusta/Livia cult
+      statue, a Claudian portrait statue), Aquileia (the city's own founding-ritual relief, the
+      Aquileia Dish, its amber/gem collection) — 10 of ~40 sites now populated, 30 still open.
+      Researched directly (not delegated), each candidate checked against the 117 CE snapshot
+      rule before shipping — dropped Timgad and Djemila for lack of confirmable pre-117 material
+      (both are Trajanic/Nervan-era colonies whose surviving museum pieces are 2nd-3rd century),
+      and dropped several tempting Leptis Magna/Palmyra/Jerash candidates for postdating the
+      snapshot by 20-140 years (Severan Leptis reliefs, Palmyra's 137 CE tariff stele, Jerash's
+      Hadrianic/Antonine statues) — see SHIFT_LOG for the full accounting. Corinth was started
+      but not finished (a strong Julio-Claudian imperial-statuary lead at the Julian Basilica,
+      "the largest group of Julio-Claudian statues outside Rome," all 1st-century CE — but a
+      second and third item never got confirmed with a real century date in the time available;
+      worth a fresh pass). New `SiteInfo.finds[]` (`app/sites.ts`) — name, note,
       museum, optional image_url/image_credit, source — rendered as a card grid on
       `/site/[slug]` under a new "Notable finds" heading, mirroring the existing `excavation[]`
       pattern (same file, same page, no new component). 27 artefacts across Pompeii, Herculaneum,

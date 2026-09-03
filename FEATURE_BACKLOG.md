@@ -1442,6 +1442,49 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       `SiteInfo.finds[]` field + a card-grid render on `/site/[slug]` under "Notable finds" —
       see `app/sites.ts`/`app/site/[slug]/page.tsx` for the pattern to extend.
 
+## New ideas spotted this shift (2026-09-03, Shift 93 — Carthage-Cirta road, tombs, finds)
+
+- [ ] **The Palmyrene Tariff (the famous bilingual tax-law stele, now in the Hermitage) is dated
+      137 CE, not pre-117 — a real trap for anyone reaching for it as an "obviously real and
+      well-documented" Palmyra find.** A prior shift's handoff note flagged it as a strong Palmyra
+      finds candidate needing only a museum-location check; live research this shift found the
+      stele itself was erected 20 years after this map's 117 CE snapshot. Dropped rather than
+      shipped. Worth remembering: "well-documented" is not the same as "pre-117" — check the
+      object's *own* date, not just its fame, even for a lead a previous shift already vetted for
+      something else (museum location, in that case).
+- [ ] **Newly founded Trajanic/Nervan colonies (Timgad, founded 100 CE; Djemila/Cuicul, founded
+      ~96-98 CE under Nerva) are a real dead end for axis Board `[06-P1-5]` finds research** —
+      both have excavated museums packed with mosaics and statuary, but essentially everything
+      individually dated in English-language sources for either site is 2nd-3rd century CE
+      (Severan-era wealth, decades after 117). A city founded under Trajan is not automatically a
+      good bet for *pre-117* portable finds — it takes a generation or two of accumulated wealth
+      to produce the museum-piece-grade material culture that actually gets individually dated and
+      published, and by then the snapshot has usually passed. Don't reach for these two sites on a
+      future finds pass without a specific new lead; older/wealthier cities (Ephesus, Corinth,
+      Aquileia, Leptis Magna's Julio-Claudian-era pieces) are consistently better hunting grounds.
+- [ ] **Corinth is a strong `[06-P1-5]` finds lead not yet finished** — the Julian Basilica held
+      "the largest group of Julio-Claudian statues outside Rome" (11+ statues, all securely dated
+      1st century CE, per the Corinth Excavations' own 2023 publication), a single collective find
+      as strong as this dataset's existing "Herculaneum Papyri" entry. This shift confirmed that
+      much but ran out of time finding a second and third distinct, confidently-dated item to clear
+      the 3-artefact floor — the museum's Roman mosaics turned out to be 2nd-3rd century CE
+      (too late), and an Erastus-inscription lead is in-situ pavement, not a portable museum find,
+      so it's a better fit for `pois.geojson` than for `SiteInfo.finds[]`. Good next pick.
+- [ ] **A byte-splice merge into a uniformly-formatted file (`road_stations.geojson`,
+      `sports.geojson`) still needs the same "diff before committing" discipline as the
+      known-non-uniform `pois.geojson` case** — this shift added 11 stations cleanly with a
+      `JSON.parse`/`.push()`/`JSON.stringify(data, null, 2)` round-trip (safe on this file per the
+      existing note above), then needed to drop two unverified image fields afterward. Doing that
+      second edit with the same full-file `json.load`/`json.dump` round-trip in Python produced a
+      526-insertion/263-deletion diff out of a 2-line intended change — Python's `json.dump`
+      defaults to `ensure_ascii=True` and escaped every `·`/`—` character in the file to `\uXXXX`,
+      touching every line that had one. Caught by `git diff --stat` before committing, fixed by
+      reverting and using a targeted `Edit` on just the two properties instead. Lesson: *any*
+      full-file JSON round-trip is a reformatting risk if the language's JSON serializer has
+      different defaults than what produced the file originally — not just the indent-width case
+      already documented above — so diff-before-commit is the real safety net, not "this file is
+      uniform so a round-trip is safe."
+
 ## Shipped (moved from above; newest on top)
 
 - 2026-09-03 — Shift 92: Board `[06-P1-5]` `finds` — new `SiteInfo.finds[]` field + "Notable
