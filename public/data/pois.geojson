@@ -43227,5 +43227,370 @@
         "confidence": "medium"
       }
     }
+,
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4361,
+          30.3395
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_ad_deir_petra",
+        "category": "tomb",
+        "name_latin": "Ad Deir",
+        "name_english": "Ad-Deir (The Monastery)",
+        "province": "Arabia Petraea",
+        "modern_location": "Petra, Jordan",
+        "built": 25,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Carved into a sandstone cliff above Petra, this monumental facade stretches nearly 50 meters wide, one of the largest rock-cut tombs in the Nabataean city. More than 800 steps climb to reach it from the valley floor below. A single stone urn crowns its pediment, giving the monument its Bedouin name, the Monastery, from a much later Christian-era reuse of the chamber inside.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ad_Deir"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.404,
+          37.972
+        ]
+      },
+      "properties": {
+        "id": "poi_belevi_mausoleum",
+        "category": "mausoleum",
+        "name_latin": "Mausoleum Belevi",
+        "name_english": "Belevi Mausoleum",
+        "province": "Asia",
+        "modern_location": "near Selcuk, Turkey",
+        "built": -280,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This stepped tomb near Ephesus ranks among the largest funerary monuments the Hellenistic world built, its upper story ringed by colossal carved figures holding up the roofline. A base nearly 30 meters square anchors the structure on a hillside north of the city. Historians still debate whether it was raised for a Seleucid king or a local dynast, but its scale went unmatched anywhere else in Roman Asia outside the Mausoleum at Halicarnassus.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Belevi_Mausoleum"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.3419,
+          36.3567
+        ]
+      },
+      "properties": {
+        "id": "poi_harpy_tomb_xanthos",
+        "category": "tomb",
+        "name_latin": "Sepulcrum Harpyiarum",
+        "name_english": "Harpy Tomb",
+        "province": "Lycia et Pamphylia",
+        "modern_location": "Xanthos, Turkey",
+        "built": -480,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A tall stone pillar tomb rises at the heart of ancient Xanthos, its summit chamber carved with relief panels of winged female figures once mistaken for harpies carrying off the dead. British excavators removed the original marble panels to London in the 1840s, but the pillar itself still stands on its ancient base, fitted today with plaster casts of the missing reliefs.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Harpy_Tomb"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.3421,
+          36.3565
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_payava_xanthos",
+        "category": "tomb",
+        "name_latin": "Sepulcrum Payavae",
+        "name_english": "Tomb of Payava",
+        "province": "Lycia et Pamphylia",
+        "modern_location": "Xanthos, Turkey",
+        "built": -360,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Carved to resemble a timber house with a vaulted roof, this stone sarcophagus tomb belonged to the Lycian dynast Payava and stood among the monumental tombs of Xanthos. Its reliefs show the deceased receiving visitors in Persian dress, blending Lycian, Greek, and Achaemenid style in one monument. The carved sarcophagus was later shipped to the British Museum, though its base remains at the site.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tomb_of_Payava"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7211,
+          37.9686
+        ]
+      },
+      "properties": {
+        "id": "poi_philopappos_monument",
+        "category": "mausoleum",
+        "name_latin": "Monumentum Philopappi",
+        "name_english": "Philopappos Monument",
+        "province": "Achaea",
+        "modern_location": "Athens, Greece",
+        "built": 115,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Raised on the hill facing the Acropolis between 114 and 116 CE, this marble tomb honors Gaius Julius Antiochus Epiphanes Philopappos, an exiled prince of Commagene who became a Roman senator and Athenian benefactor. Its facade carried a seated statue of Philopappos flanked by reliefs of his royal ancestors, with his full Roman and royal titles carved beneath. The monument was barely finished by this map's snapshot, going up in the very last years of Trajan's reign.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Philopappos_Monument"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7217,
+          37.9776
+        ]
+      },
+      "properties": {
+        "id": "poi_monument_dexileos",
+        "category": "tomb",
+        "name_latin": "Monumentum Dexileos",
+        "name_english": "Monument of Dexileos",
+        "province": "Achaea",
+        "modern_location": "Kerameikos, Athens, Greece",
+        "built": -394,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This carved marble relief tomb stood along the Street of Tombs in Athens's Kerameikos cemetery, showing the young cavalryman Dexileos striking down a fallen enemy from horseback. Its inscription recorded his birth and death with unusual precision, noting he died at Corinth in 394 BCE at the age of twenty. The Kerameikos remained Athens's principal burial ground and a visited landmark straight through the Roman period.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kerameikos"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1039,
+          42.0058
+        ]
+      },
+      "properties": {
+        "id": "poi_banditaccia_necropolis",
+        "category": "necropolis",
+        "name_latin": "Necropolis Banditaccia",
+        "name_english": "Banditaccia Necropolis",
+        "province": "Italia",
+        "modern_location": "Cerveteri, Lazio, Italy",
+        "built": -650,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This vast cemetery outside ancient Caere spread stone tumulus tombs across a plateau, some over 40 meters wide, laid out with streets and blocks that mirror the plan of a living town. Carved doorways and internal chambers imitate the timber-and-thatch houses of the Etruscan world they were built to outlast. The tumuli remained a fixture of the Etrurian countryside long after Caere's political power faded under Rome.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Necropolis_of_Cerveteri"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1035,
+          42.0055
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_of_the_reliefs",
+        "category": "tomb",
+        "name_latin": "Tumulus Reliquiarum",
+        "name_english": "Tomb of the Reliefs",
+        "province": "Italia",
+        "modern_location": "Cerveteri, Lazio, Italy",
+        "built": -350,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Carved and plastered to look like a furnished Etruscan house, this chamber tomb inside the Banditaccia necropolis molded household objects in relief across its walls and pillars, down to cushions, shields, and kitchen tools. It ranks among the best-preserved painted and sculpted tomb interiors to survive from the ancient world. Visitors touring the necropolis in 117 CE would have found it already four centuries old.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tomb_of_the_Reliefs"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7712,
+          42.2434
+        ]
+      },
+      "properties": {
+        "id": "poi_monterozzi_necropolis",
+        "category": "necropolis",
+        "name_latin": "Necropolis Monterotii",
+        "name_english": "Monterozzi Necropolis",
+        "province": "Italia",
+        "modern_location": "Tarquinia, Lazio, Italy",
+        "built": -650,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A hillside cemetery above ancient Tarquinii held some 6,000 tomb chambers cut into the rock, roughly 200 of them painted, making it the richest surviving collection of pre-Roman tomb art in Italy. The site remained a visible, undisturbed feature of Etruria's landscape throughout Roman rule.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Necropolis_of_Monterozzi"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7715,
+          42.243
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_of_the_leopards",
+        "category": "tomb",
+        "name_latin": "Tumulus Pardorum",
+        "name_english": "Tomb of the Leopards",
+        "province": "Italia",
+        "modern_location": "Tarquinia, Lazio, Italy",
+        "built": -470,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A single painted chamber inside the Monterozzi necropolis carries a vivid banquet fresco of reclining diners and musicians beneath a pediment flanked by two spotted leopards facing each other. It remains one of the most reproduced images in Etruscan art, its colors still bright after more than five centuries underground by the time of this map's snapshot.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tomb_of_the_Leopards"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7718,
+          42.2432
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_of_the_triclinium",
+        "category": "tomb",
+        "name_latin": "Tumulus Triclinii",
+        "name_english": "Tomb of the Triclinium",
+        "province": "Italia",
+        "modern_location": "Tarquinia, Lazio, Italy",
+        "built": -470,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This painted chamber at Tarquinia depicted a symposium of banqueters reclining on couches beneath garlands, its ochre and blue pigments giving the tomb its modern name after the Roman dining arrangement the scene resembles. The original frescoes were later detached for conservation, but the excavated rock-cut chamber remains at the site.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tomb_of_the_Triclinium"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6294,
+          42.4106
+        ]
+      },
+      "properties": {
+        "id": "poi_francois_tomb_vulci",
+        "category": "tomb",
+        "name_latin": "Tumulus Francois",
+        "name_english": "Francois Tomb",
+        "province": "Italia",
+        "modern_location": "Vulci, Lazio, Italy",
+        "built": -350,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Discovered in 1857 near ancient Vulci, this chamber tomb carries an unusually large painted fresco cycle mixing mythological and historical scenes, including a rare depiction naming early Roman kings alongside Etruscan and Greek figures. The frescoes were detached and moved to Rome's Torlonia collection in the nineteenth century, but the rock-cut chamber itself remains at the site.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Tomb"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.128,
+          37.929
+        ]
+      },
+      "properties": {
+        "id": "poi_tomb_flavius_zeuxis_hierapolis",
+        "category": "tomb",
+        "name_latin": "Sepulcrum Flavii Zeuxidis",
+        "name_english": "Tomb of Flavius Zeuxis",
+        "province": "Asia",
+        "modern_location": "Hierapolis necropolis, Pamukkale, Turkey",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "One tomb among the roughly 1,200 that line Hierapolis's necropolis belonged to Flavius Zeuxis, a merchant whose epitaph boasted of sailing around Cape Malea to Italy seventy-two times over his trading career. Historians cite the inscription as some of the best direct evidence for how often Roman-era ships actually made the run between the Aegean and Italy.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Hierapolis"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.2578,
+          34.5406
+        ]
+      },
+      "properties": {
+        "id": "poi_hypogeum_yarhai_palmyra",
+        "category": "mausoleum",
+        "name_latin": "Hypogeum Yarhai",
+        "name_english": "Hypogeum of Yarhai",
+        "province": "Syria",
+        "modern_location": "Valley of the Tombs, Palmyra, Syria",
+        "built": 108,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "This underground family tomb was cut into the rock south of Palmyra's colonnade in 108 CE, its walls lined with painted limestone busts of the dead set above their burial niches. Excavation in the 1930s recovered dozens of these portrait reliefs, among the best-preserved funerary sculpture to survive from Roman Syria.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Palmyra"
+        ],
+        "confidence": "medium"
+      }
+    }
   ]
 }
