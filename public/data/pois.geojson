@@ -32791,6 +32791,8 @@
           "https://erkunde-deutschland.de/ausflugsziele/hessen/odenwald/limes-wachturm-im-oberen-haspel-roemisches-erbe-mitten-im-odenwald/"
         ],
         "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Limeswachturm%20Vielbrunn-01.jpg?width=800",
+        "image_credit": "Reconstructed Limes watchtower Wp 10/15, Vielbrunn \"Im Oberen Haspel\" · Wikimedia Commons",
         "ancient_sources": [
           {
             "author": "Historia Augusta",
@@ -38027,7 +38029,9 @@
           "https://en.wikipedia.org/wiki/Derventio_Brigantum",
           "https://www.maltonmuseum.co.uk/collection/roman-collection/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Derventio%20-%20geograph.org.uk%20-%2011868.jpg?width=800",
+        "image_credit": "Site of the Derventio Roman fort, Malton · Wikimedia Commons"
       }
     },
     {
@@ -38090,6 +38094,8 @@
           "https://www.roman-britain.co.uk/places/corinium/"
         ],
         "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cirencester%20Amphitheatre.jpg?width=800",
+        "image_credit": "Cirencester Roman Amphitheatre, Corinium Dobunnorum · Wikimedia Commons",
         "ancient_sources": [
           {
             "author": "Ptolemy",
@@ -38233,6 +38239,8 @@
           "https://www.roman-britain.co.uk/places/viroconivm-cornoviorum-wroxeter-legionary-fort/"
         ],
         "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Wroxeter%20Roman%20City%20remains.JPG?width=800",
+        "image_credit": "Remains of the baths basilica wall ('the Old Work'), Wroxeter Roman City · Wikimedia Commons",
         "ancient_sources": [
           {
             "author": "Ptolemy",
@@ -38268,6 +38276,8 @@
           "https://www.roman-britain.co.uk/places/lindum/"
         ],
         "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lincoln%20gate.jpg?width=800",
+        "image_credit": "Newport Arch, the north gate of Roman Lincoln (Lindum Colonia) · Wikimedia Commons",
         "ancient_sources": [
           {
             "author": "Ptolemy",
@@ -38650,7 +38660,9 @@
             "note": "One of roughly two dozen votive altars recovered from Coventina's Well during John Clayton's 1876 excavation, dedicated to the goddess Coventina by an optio of the First Cohort of Frixiavones.",
             "quote": "Deae Coventinae Mausaeus optio coh(ortis) I Frixiavo(num) v(otum) s(olvit)"
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Coventina%27s%20Well%20-%20geograph.org.uk%20-%201129249.jpg?width=800",
+        "image_credit": "Coventina's Well, Carrawburgh · Wikimedia Commons"
       }
     },
     {
@@ -38951,7 +38963,9 @@
             "ref": "CIL VIII 2355",
             "note": "A tabula-ansata inscription recording the foundation of the colony of Thamugadi by Trajan in 100 CE, found near the arch and generally, though not certainly, associated with it."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Timgad%20Trajan.jpg?width=800",
+        "image_credit": "Arch of Trajan, Timgad · Wikimedia Commons"
       }
     },
     {
@@ -38986,7 +39000,9 @@
             "ref": "CIL VIII 17869",
             "note": "Dedicatory inscription on the theatre's entablature, dated 168 CE under the joint reign of Marcus Aurelius and Lucius Verus, naming the governor and patron who funded the theatre and its porticoes."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancient%20Roman%20theater%20in%20Timgad%20121.JPG?width=800",
+        "image_credit": "Roman theatre, Timgad · Wikimedia Commons"
       }
     },
     {
@@ -39193,7 +39209,9 @@
           "https://lavocenegliantichispazi.it/en/temple-of-mercury-baia-bacoli-naples/",
           "https://www.heritagedaily.com/2020/11/baiae-the-hedonistic-harbour-of-vice/136094"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tempio%20di%20Mercurio%20%28Baia%29%201.JPG?width=800",
+        "image_credit": "Frigidarium of the so-called 'Temple of Mercury' (Temple of Echo), Baiae · Wikimedia Commons"
       }
     },
     {
@@ -39249,7 +39267,9 @@
           "https://www.thetravel.com/what-happened-to-the-city-of-baiae/",
           "http://engineeringrome.org/roman-dome-progression/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Baia%2C%20Tempio%20di%20Diana.jpg?width=800",
+        "image_credit": "So-called 'Temple of Diana' bath hall, Baiae · Wikimedia Commons"
       }
     },
     {
@@ -39312,7 +39332,9 @@
             "ref": "16",
             "note": "Records Augustus/Agrippa forming the Julian harbour by admitting the sea into the Lucrine Lake and Avernus."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Parco%20archeologico%20di%20Baia%20-%20portus%20Julius%203.jpg?width=800",
+        "image_credit": "Submerged remains of Portus Julius, Underwater Archaeological Park of Baiae · Wikimedia Commons"
       }
     },
     {
@@ -43355,7 +43377,9 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Philopappos_Monument"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Philopappos%20monument%2C%20Athens%2C%20080555.jpg?width=800",
+        "image_credit": "Philopappos Monument, Athens · Wikimedia Commons"
       }
     },
     {
@@ -43407,7 +43431,9 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Necropolis_of_Cerveteri"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2010-08-13%20Cerveteri%20Necropoli%20Banditaccia%20100%200360%20Tumulo.jpg?width=800",
+        "image_credit": "Tumulus tomb, Banditaccia necropolis, Cerveteri · Wikimedia Commons"
       }
     },
     {
@@ -43459,7 +43485,9 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Necropolis_of_Monterozzi"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomb%20of%20hunting%20and%20fishing%2C%20Monterozzi%20necropolis%2C%20Tarquinia%2C%20Italy.jpg?width=800",
+        "image_credit": "Tomb of Hunting and Fishing, Monterozzi necropolis, Tarquinia · Wikimedia Commons"
       }
     },
     {
