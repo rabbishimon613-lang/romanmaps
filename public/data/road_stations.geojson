@@ -9202,7 +9202,7 @@
         "type": "Point",
         "coordinates": [
           12.8631,
-          42.0
+          42
         ]
       },
       "properties": {
@@ -14049,6 +14049,269 @@
         "notes": "Ad Fines, \"at the boundary,\" marked a territorial edge on the road between Apta Julia and Cabellio, its name a common Roman label for a station sitting on a border between civic territories.",
         "sources": [
           "Itin. Ant. (A Mediolano Arelate per Alpes Cottias)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.115375,
+          36.781395
+        ]
+      },
+      "properties": {
+        "id": "station_pertusa",
+        "category": "mansio",
+        "name": "Pertusa",
+        "road": "Via a Carthagine Cirtam",
+        "distance_from_previous_mp": 14,
+        "identified": true,
+        "notes": "Pertusa stood 14 Roman miles from Carthage on the road to Hippo Regius, the first stage travelers reached leaving the provincial capital. The town grew into a Christian bishopric answering to Carthage. Its remains are identified with El-Haouaria, now a western suburb of Tunis.",
+        "sources": [
+          "Itin. Ant. (Iter a Carthagine Hippone Regio)",
+          "https://en.wikipedia.org/wiki/Pertusa_(Africa)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0205,
+          36.7563
+        ]
+      },
+      "properties": {
+        "id": "station_unuca",
+        "category": "mutatio",
+        "name": "Unuca",
+        "road": "Via a Carthagine Cirtam",
+        "distance_from_previous_mp": 7,
+        "identified": false,
+        "notes": "Unuca appears in the Antonine Itinerary as a stop 7 Roman miles beyond Pertusa on the road to Hippo Regius. No ruin or inscription has ever been matched to the name — its plotted position here comes from the itinerary's mileage alone, interpolated between its better-documented neighbors.",
+        "sources": [
+          "Itin. Ant. (Iter a Carthagine Hippone Regio)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.8438,
+          36.7096
+        ]
+      },
+      "properties": {
+        "id": "station_sicilibba",
+        "category": "mansio",
+        "name": "Sicilibba",
+        "road": "Via a Carthagine Cirtam",
+        "distance_from_previous_mp": 13,
+        "identified": false,
+        "notes": "Sicilibba sat 13 Roman miles from Unuca on the road to Hippo Regius and held its own bishopric under the Church of Carthage. Later scholarship tentatively places its ruins at Alaouine in the Tunisian interior, but the site has never been excavated to confirm it.",
+        "sources": [
+          "Itin. Ant. (Iter a Carthagine Hippone Regio)",
+          "https://en.wikipedia.org/wiki/Sicilibba"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.613446,
+          36.648688
+        ]
+      },
+      "properties": {
+        "id": "station_membressa",
+        "category": "mansio",
+        "name": "Membressa",
+        "road": "Via a Carthagine Cirtam",
+        "distance_from_previous_mp": 17,
+        "identified": true,
+        "notes": "Membressa stood 17 Roman miles from Sicilibba on the road to Hippo Regius, at a crossing of the Bagradas river. The town lasted into the Byzantine period and gave its name to a 536 CE battle fought there. Its site is occupied today by the Tunisian town of Medjez el-Bab.",
+        "sources": [
+          "Itin. Ant. (Iter a Carthagine Hippone Regio)",
+          "https://en.wikipedia.org/wiki/Majaz_al_Bab"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.08333,
+          36.41
+        ]
+      },
+      "properties": {
+        "id": "station_musti",
+        "category": "mansio",
+        "name": "Musti",
+        "road": "Via a Carthagine Cirtam",
+        "distance_from_previous_mp": 35,
+        "identified": true,
+        "notes": "Musti stood 35 Roman miles from Membressa on the road to Hippo Regius and already held municipium status under Augustus. Under Trajan the town built a temple to the Cereres and travelers crossed the Bagradas there on a stone bridge. Its forum and temples still stand at the site of El Krib.",
+        "sources": [
+          "Itin. Ant. (Iter a Carthagine Hippone Regio)",
+          "https://en.wikipedia.org/wiki/Musti_(Tunisia)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.356079,
+          36.223438
+        ]
+      },
+      "properties": {
+        "id": "station_naraggara",
+        "category": "mansio",
+        "name": "Naraggara",
+        "road": "Via a Carthagine Cirtam",
+        "distance_from_previous_mp": 32,
+        "identified": true,
+        "notes": "Naraggara stood 32 Roman miles from Sicca Veneria at the junction where the road to Hippo Regius split from the inland road to Cirta. Livy placed the final battle of the Second Punic War, fought between Scipio Africanus and Hannibal in 202 BCE, in its immediate vicinity. The site is identified with modern Sakiet Sidi Youssef on the Tunisian-Algerian border.",
+        "sources": [
+          "Itin. Ant. (Iter a Carthagine Hippone Regio; the Iter a Musti Cirtam gives the adjoining Sicca-Naraggara leg as 30 mp, a manuscript variant)",
+          "https://en.wikipedia.org/wiki/Naraggara"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.95111,
+          36.28639
+        ]
+      },
+      "properties": {
+        "id": "station_thagaste",
+        "category": "mansio",
+        "name": "Thagaste",
+        "road": "Via a Carthagine Cirtam",
+        "distance_from_previous_mp": 25,
+        "identified": true,
+        "notes": "Thagaste lay 25 Roman miles from Naraggara and 53 miles short of Hippo Regius on the inland road through Numidia. The Berber-Roman town later became famous as the birthplace of Augustine of Hippo in 354 CE. Its ancient remains lie largely unexcavated beneath the modern Algerian city of Souk Ahras.",
+        "sources": [
+          "Itin. Ant. (Iter a Carthagine Hippone Regio)",
+          "https://en.wikipedia.org/wiki/Thagaste"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.044696,
+          36.174195
+        ]
+      },
+      "properties": {
+        "id": "station_thagora",
+        "category": "mansio",
+        "name": "Thagora",
+        "road": "Via a Carthagine Cirtam",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "Thagora branched off 20 Roman miles from Naraggara on the road running inland from Musti to Cirta. Originally a Carthaginian trading post, it minted its own bronze coinage before becoming a Roman civitas. Its ruins near Taoura, Algeria include a bath complex and a later fortress.",
+        "sources": [
+          "Itin. Ant. (Iter a Musti Cirtam)",
+          "https://en.wikipedia.org/wiki/Thagora"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.75,
+          36.25
+        ]
+      },
+      "properties": {
+        "id": "station_tipasa_numidia",
+        "category": "mansio",
+        "name": "Tipasa in Numidia",
+        "road": "Via a Carthagine Cirtam",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "Tipasa in Numidia lay 24 Roman miles from Thagora on the road from Musti to Cirta, in the Numidian highlands. Not to be confused with the better-known coastal Tipasa in Mauretania, its Punic name meant a stopover or place of passage, a role the station kept under Rome. Its fortress walls still stand near modern Tiffech.",
+        "sources": [
+          "Itin. Ant. (Iter a Musti Cirtam)",
+          "https://en.wikipedia.org/wiki/Tipasa_in_Numidia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.259903,
+          36.082691
+        ]
+      },
+      "properties": {
+        "id": "station_gasaufula",
+        "category": "mansio",
+        "name": "Gasaufula",
+        "road": "Via a Carthagine Cirtam",
+        "distance_from_previous_mp": 35,
+        "identified": true,
+        "notes": "Gasaufula stood 35 Roman miles from Tipasa on the road from Musti to Cirta and is identified with the Roman town of Gadiaufala. The settlement grew into a bishopric under the Metropolitan of Cirta. Its remains lie at Ksar Sbahi in Algeria's Oum El Bouaghi Province.",
+        "sources": [
+          "Itin. Ant. (Iter a Musti Cirtam)",
+          "https://en.wikipedia.org/wiki/Ksar_Sbahi"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.783,
+          36.117
+        ]
+      },
+      "properties": {
+        "id": "station_sigus",
+        "category": "mansio",
+        "name": "Sigus",
+        "road": "Via a Carthagine Cirtam",
+        "distance_from_previous_mp": 33,
+        "identified": true,
+        "notes": "Sigus stood 33 Roman miles from Gasaufula and 25 miles short of Cirta on the final stretch of the road from Musti. The town's surviving Latin inscriptions document a busy Roman civic life. Its site is occupied today by the Algerian commune of the same name in Oum El Bouaghi Province.",
+        "sources": [
+          "Itin. Ant. (Iter a Musti Cirtam)",
+          "https://en.wikipedia.org/wiki/Sigus"
         ],
         "confidence": "medium"
       }
