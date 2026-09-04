@@ -1264,10 +1264,23 @@ to prevent. Building locally to *test* your own work is expected and fine.
       date to ~117 and place on a map are genuinely scarce; three plausible candidates (a Fayum
       weaver, two tradeswomen) dropped for undatable evidence. Layer still defaults OFF; verified
       with Playwright.
-- [~] `[06-P1-5]` **`finds`** `illustrate` — claimed by cloud shift (2026-09-04), continuing from
-      26/40 to the remaining 14: Timgad, Djemila, Jerash, Palmyra, Baalbek, Ravenna, Tivoli,
-      Baiae, Cumae, Capua, Brescia, Milan, Ancona, Luni.
-      3–8 artefacts per site with images and museum.
+- [x] `[06-P1-5]` **`finds`** `illustrate` — **Closed 2026-09-04 (cloud shift): 40/40 sites now
+      have a `finds` array.** Two parallel research agents split the last 14 (Timgad, Djemila,
+      Jerash, Palmyra, Baalbek, Ravenna, Tivoli, Baiae, Cumae, Capua, Brescia, Milan, Ancona,
+      Luni), 3-5 items each, all with sources and several with verified Commons images. Cumae and
+      Ancona had stumped Shift 95's WebSearch budget short of the 3-item floor — briefed the
+      agent on those specific dead ends up front (see SHIFT_LOG) and it found real replacements
+      for both rather than repeating the same search paths. **Judgment call for future reference**:
+      Shift 93 originally called Timgad/Djemila dead ends because their only confirmable museum
+      pieces are 2nd-3rd century, i.e. post-117 — this batch shipped them anyway (3rd-c. mosaics,
+      a Severan-era bust) on the precedent Shifts 94/95 already set by shipping Sabratha's 3rd-c.
+      mosaics and Ostia's 160 CE sarcophagus without incident: `SiteInfo.finds[]` is a museum-
+      highlights sidebar, not subject to the `extant_117ce` snapshot rule the map's structures
+      follow — same category as the `excavation`/`today` fields, which already describe
+      post-117/modern facts. `npx tsc --noEmit`, `npm run validate`, `npm run build` all clean.
+      This is a standing task per its own note above (illustrate more/deepen existing entries),
+      never fully "done" in the sense of no further work — but the ticket's original ask (every
+      site populated) is met.
       **Shift 95 (2026-09-03) added 8 more sites directly** (parent-session WebSearch) — Sabratha
       (the Flavia Domitilla marble head, stolen from the site museum in 1990 and later repatriated;
       the Three Graces mosaic; the Triumph of Bacchus and Ariadne mosaic), Carnuntum (the 1894

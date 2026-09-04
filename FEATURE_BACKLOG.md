@@ -1487,6 +1487,15 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
 
 ## Shipped (moved from above; newest on top)
 
+- 2026-09-04 — Shift 96: Board `[06-P1-5]` `finds` — ticket closed, all 40/40 `sites.ts` entries
+  now have a `finds` array (last 14: Timgad, Djemila, Jerash, Palmyra, Baalbek, Ravenna, Tivoli,
+  Baiae, Cumae, Capua, Brescia, Milan, Ancona, Luni, 3-5 sourced items each via two parallel
+  research agents). Board `[13-P0-2]` `image-audit` partial pass: fixed the ticket's own named
+  test case (Rio Tinto's `image_url` was a modern-highway photo, swapped for a verified image of
+  the actual mine) and keyword-scanned every axis file for similar modern-infrastructure images —
+  no other real hits, full 303-image visual audit stays open (blocked on this sandbox's egress
+  block to Wikimedia). Full sourcing and a judgment-call note (finds isn't bound by the
+  `extant_117ce` snapshot rule the same way `pois.geojson` structures are) in `SHIFT_LOG.md`.
 - 2026-09-03 — Shift 92: Board `[06-P1-5]` `finds` — new `SiteInfo.finds[]` field + "Notable
   finds" card grid on `/site/[slug]`, populated for 7 of 40 sites (31 artefacts: Pompeii,
   Herculaneum, Rome, Ephesus, Athens, Delphi, Vindolanda). Via Aurelia extended into Gaul (24

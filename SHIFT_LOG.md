@@ -7,6 +7,130 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 96 — 2026-09-04 (this shift's own prompt claimed "Shift 1 of four")
+
+Continuing the real count from Shift 95's last commit (`53affe9`). Repo booted with local `main`
+stuck at Shift 85's tip while `HEAD` was detached 50 commits ahead — the same recurring boot
+symptom every recent shift has flagged (see `FEATURE_BACKLOG.md`'s standing note on it). This
+time it briefly looked worse than usual: `git merge-base` found no common ancestor between local
+`main` and `HEAD` at all (both are shallow clones grafted at different points, so that's expected,
+not data loss). A fresh `git fetch origin main` showed `origin/main` had already moved to match
+`HEAD` exactly (someone else had pushed in the interim) — `git checkout -B main origin/main`
+recovered cleanly with nothing at risk. `npm install` had never been run in this container either
+(`core.hooksPath` was empty, so the pre-push build gate was silently inert) — fixed early, and the
+first two pushes this shift went out *before* that fix landed. Confirmed after the fact that both
+were fine (`npm run build` passes clean on the resulting tree), but flagging honestly: **a future
+shift booting into a fresh container should run `npm install` before its first push**, not
+assume the hook is armed just because `.githooks/pre-push` exists on disk.
+
+### Track A — `[06-P1-5]` finds: ticket closed, 40/40 sites
+
+Read `BOARD.md`. Board's 11 open tickets are all P0, and every one is either flagged "big, may
+take several passes" (`merge-themes`, `schema-v2`), genuinely blocked (`gsc-verify` on a human,
+`self-host-glyphs`'s remaining half needs a new npm dependency the brief forbids adding without
+justification), or a 303-image visual audit with no working text-search substitute in this
+sandbox (`image-audit` — see Track B below for the partial pass that constraint still allows).
+
+`[06-P1-5]` `finds` was the one genuinely tractable, unclaimed, high-value pick — same conclusion
+four straight prior shifts reached independently. Claimed it (`67990aa`), then split the remaining
+14 sites across two parallel background research agents (7 each, `WebSearch`-only — `WebFetch` to
+`commons.wikimedia.org`/`en.wikipedia.org` returns `EGRESS_BLOCKED` in this environment, same
+standing limitation every image-research shift has hit). Mid-run, sent batch 2's agent a follow-up
+message with the specific dead-end search trail Shift 95 hit on Cumae and Ancona (see its log
+entry below), so it wouldn't waste its own budget rediscovering the same walls — it found real
+replacements for both instead of repeating the search.
+
+**All 14 remaining sites landed (`8aabed9`), each with 3-5 sourced items:**
+
+- **Timgad** (5): Neptune in His Chariot mosaic, Mosaic of the Sea Monsters, the library's
+  400,000-sesterce donation inscription, Artemis and Actaeon mosaic, Venus on a Marine Centaur.
+- **Djemila** (5): the Legend of Dionysos mosaic, a colossal Severan-era head, the Toilet of
+  Venus mosaic, the Asinus Nica ("Conquering Ass") wine mosaic, a bust of Julia Domna.
+- **Jerash** (5): a 154 CE-dedicated Aphrodite, a Hadrian-visit statue, seven Muses and a Zeus
+  and Cybele/Dionysus group all from the same 2016-2018 Eastern Baths dig — 27 statues total.
+- **Palmyra** (5): the Lion of al-Lat (smashed by Islamic State 2015, half-rebuilt from the
+  fragments, back on display in Damascus 2017); the bilingual 137 CE tax tariff (sawn into four
+  pieces in 1881 to ship to St. Petersburg); the "Beauty of Palmyra" funerary bust; the Haliphat
+  and Aqmat funerary reliefs, both safely abroad since before 1917.
+- **Baalbek** (3): the Sursock bronze Jupiter Heliopolitanus (Louvre AO19534); a Roman gold
+  funerary mask; the enthroned Venus Heliopolitana cult statue.
+- **Ravenna** (4): a shipbuilders' funerary stele; the 1993 car-park-dig mosaic floors; plus two
+  deliberately post-117 pieces (the Throne of Maximian, ~550 CE; the Traditio Legis sarcophagus,
+  5th c.) included with the anachronism stated plainly in-line rather than omitted, since Ravenna's
+  real museum highlights only clear the 3-item floor by reaching past 117 CE — same "finds isn't
+  bound to extant_117ce" call as the Timgad/Djemila reversal below.
+- **Tivoli** (5): all five out of Hadrian's Villa — the Doves of Pliny mosaic, the Furietti
+  Centaurs, an Osiris-Antinous statue, the Townley Discobolus, a Wounded Amazon signed by Sosikles.
+- **Baiae** (5): the looted-then-repatriated Getty Zeus; two statues divers pulled from Emperor
+  Claudius's submerged nymphaeum (Antonia Minor, Ulysses); an Aphrodite Sosandra; a 1954 hoard of
+  400+ plaster casts proving Baiae ran its own Greek-bronze copying workshop.
+  Baiae's underwater park runs `[13-P0-1]`-in-waiting: mostly recovered by real archaeological
+  diving, not looting — a clean visual for a future "underwater archaeology" callout if anyone
+  wants one.
+- **Cumae** (4): the acrolithic colossal Jupiter bust, a Diomedes-stealing-the-Palladium statue,
+  the 2018-excavated painted banquet tomb, and a fratria dedication inscription — the two new
+  items (Diomedes, fratria) are what cleared the floor Shift 95 couldn't reach.
+- **Capua** (4): the 1726-recovered Hadrianic amphitheatre restoration inscription (Hadrian
+  personally funded new statues in 119 CE, Antoninus Pius dedicated it 155); the 200+-statue
+  Matres Matutae collection; the amphitheatre's carved arch-key busts; the Mithraeum's tauroctony
+  fresco.
+- **Brescia** (4): the Winged Victory of Brescia and its five companion gilded busts, all hidden
+  in one Capitolium wall cavity and found together in 1826; the Dama Flavia bronze bust; a
+  Dionysus mosaic from the Domus dell'Ortaglia.
+- **Milan** (3): the Patera di Parabiago (a gilt-silver Cybele/Attis ceremonial dish); the Via
+  Circo domus mosaics; the sarcophagus of lawyer Gaius Valerius Petronianus.
+- **Ancona** (3): an Augustus *capite velato* portrait dug up in 1863 directly under the museum
+  site (Ancona's own Roman forum); grave goods from the city's Hellenistic-Roman necropolis; the
+  Villarey-necropolis funerary stelae. Confirmed and dropped one candidate along the way — the
+  "Sarcofago del Vinaio" sometimes linked to Ancona's museum turns out to have been found in
+  15th-century Rome and only transferred there in 1927, so it fails the "recovered from the site"
+  test and isn't in the dataset.
+- **Luni** (4): a two-faced Medusa/Silenus corridor mosaic (the museum's own logo); an Oceanus
+  mosaic; a dedication base to the city's namesake goddess Luna; bronze torch fragments from her
+  cult statue, misidentified as table legs when first dug up in 1953.
+
+**`app/sites.ts`: all 40 of 40 sites now have a `finds` array** — ticket closed (`BOARD.md`).
+Formatting generated programmatically (a small one-off Node script reading a JSON intermediate,
+`JSON.stringify`-escaping every field into the file's existing TS-literal style) rather than typed
+by hand across 14 multi-thousand-line insertion points — spot-checked the diff before committing,
+and `npx tsc --noEmit` / `npm run validate` / `npm run build` all ran clean on the result.
+
+One judgment call worth flagging for whoever reads this next: Shift 93 originally left Timgad and
+Djemila as confirmed dead ends specifically because their only real museum pieces are 2nd-3rd
+century, i.e. minted after this map's 117 CE snapshot. This shift shipped them anyway, on the
+precedent Shifts 94/95 already set without objection (Sabratha's 3rd-c. mosaics, Ostia's 160 CE
+sarcophagus) — `SiteInfo.finds[]` reads as a real site's museum-highlights sidebar, not a
+`pois.geojson`-style structure bound by `extant_117ce`, same category as the already-existing
+`excavation`/`today` fields which routinely describe centuries-later facts. Noted in `BOARD.md`
+so a future shift doesn't have to re-derive this the way I did.
+
+### Track B — `[13-P0-2]` image-audit, partial pass
+
+Board's only other realistically-scoped open ticket. Full scope (visually audit 303 images) isn't
+buildable here — this sandbox's `WebFetch`/`curl` to `commons.wikimedia.org` returns
+`EGRESS_BLOCKED`, so there's no way to actually look at the pictures, only their filenames/credit
+text. Did what that constraint allows: fixed the ticket's own named test case
+(`poi_rio_tinto_mines`'s `image_url` was literally titled "Río Tinto, Huelva - Carretera A-461.jpg"
+— a modern highway photo) with a verified Commons file of Corta Atalaya, the actual open-pit mine;
+then ran a keyword scan (highway/motorway/parking/billboard/apartment block/construction
+crane/etc.) across every `public/data/*.geojson` `image_url`/`image_credit` field. Two more hits,
+both false positives ("Tramonto" — Italian for sunset — tripping a `tram` substring match).
+Ticket stays open in `BOARD.md` with this finding recorded; a real audit needs either a human with
+a browser or a future environment where the egress block is lifted.
+
+### Recovery note
+
+`npm install`/`core.hooksPath` gap aside (see top), this shift found `origin/main` and this
+container's `HEAD` already in sync on arrival — no rescue needed, unlike the scare the "Shift 1 of
+four" framing plus a stale local `main` briefly suggested. Worth restating for the next fresh
+container: **run `git fetch origin main` and compare before assuming anything is lost.** Real
+count is 96 shifts and climbing on a project whose board is now down to 11 open tickets, all
+either large multi-pass refactors or genuinely blocked — worth a fresh top-to-bottom look at
+whether new axis work (`SHIFT_BRIEF.md`'s 20 axes) should get a bigger share of future shifts
+again now that the board's "add" backlog has thinned out this far.
+
+---
+
 ## Shift 95 — 2026-09-03 (this shift's own prompt claimed "Shift 4 of four")
 
 Continuing the real count from Shift 94's last commit (`d30016b`). Repo booted with local `main`
