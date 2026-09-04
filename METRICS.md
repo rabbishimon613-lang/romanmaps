@@ -36,9 +36,9 @@ references.)
 | Records in the 33 thematic files | 1801 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
 | **Curated places, total** | **3,206** | |
 | Description of 60+ words | 1405 · **100.0%** | measured on `notes`; 0 still thin |
-| Has an image | 887 · **63.1%** | `pois.geojson` only — see below for the thematic files |
-| Has an image — thematic files | 1118 · **62.1%** | the 33 files this metric used to skip entirely |
-| Has an image — all curated places | 2005 · **62.5%** | `pois.geojson` + thematic files combined |
+| Has an image | 891 · **63.4%** | `pois.geojson` only — see below for the thematic files |
+| Has an image — thematic files | 1129 · **62.7%** | the 33 files this metric used to skip entirely |
+| Has an image — all curated places | 2020 · **63.0%** | `pois.geojson` + thematic files combined |
 | Has an ancient source | 551 · **39.2%** | |
 | — of `confidence: high` POIs | 492 / 595 · **82.7%** | the target set for `[09-P0-1]` |
 | Categories with a "what happened here" paragraph | 53 / 60 · **88.3%** | covers 1339/1405 POIs · missing: beneficiarii_station, bath, harbor, domus, vicus, gymnasium, courier_post |
@@ -421,4 +421,4 @@ references.)
 | 2026-09-01 | 1236 | 97.9% | 62.2% | 39.3% | 0 errors |
 | 2026-09-02 | 1356 | 98.0% | 60.2% | 40.2% | 0 errors |
 | 2026-09-03 | 1405 | 97.2% | 59.7% | 39.2% | 0 errors |
-| 2026-09-04 | 1405 | 100.0% | 63.1% | 39.2% | 0 errors |
+| 2026-09-04 | 1405 | 100.0% | 63.4% | 39.2% | 0 errors |

@@ -7,6 +7,123 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 99 — 2026-09-04 (this shift's own prompt claimed "Shift 4 of four")
+
+### Boot: a real git scare that turned out to be a stale fetch cache, not data loss
+
+Booted detached-HEAD as usual, but this time the symptom looked serious: `git fetch origin main`
+reported `origin/main` at `7f3478b` ("Shift 85 log"), while local detached `HEAD` sat 50 commits
+ahead at `af07b92` ("Shift 98 log") — i.e. it looked like **13 shifts (86–98) of work had never
+reached GitHub**, only ever committed inside this container. Did not act on that reading blind:
+cross-checked against the GitHub API directly (`mcp__github__list_commits` on the real repo, not
+the local git remote) before touching anything. The API's actual default-branch tip was
+`af07b92` — matching local `HEAD` exactly. A second `git fetch origin main -v` right after
+confirmed it: the remote-tracking ref updated from `7f3478b` to `af07b92` on retry, logged as a
+"forced update." **The first `git fetch` in this container returned a stale cached ref, not the
+real GitHub state** — probably a proxy/mirror lag specific to this sandbox's outbound git path,
+distinct from the already-well-documented "local `main` branch pointer is behind detached HEAD"
+symptom Shifts 9–14 and 96–98 logged (that one's real and still happens; this was a new, scarier-
+looking variant of it). **Actionable for a future shift that sees this**: before concluding any
+push was lost, verify against the GitHub API or `git ls-remote origin` (which returned the
+correct current tip immediately, no staleness) rather than trusting the first `git fetch`'s
+`origin/main` ref alone. No data was actually at risk this time; `git checkout -B main
+origin/main` after the corrected fetch landed cleanly on the true tip with zero divergence.
+`npm install` clean (fresh container, `node_modules` absent as usual).
+
+### Board + backlog check
+
+Same landscape three shifts running now (96, 97, 98, this one all independently confirm it):
+`BOARD.md`'s open P0/P1 tickets are either flagged explicitly big/multi-pass (`merge-themes`,
+`schema-v2`, `card-rebuild`, `pmtiles`, `split-map-tsx`), blocked on a human (`gsc-verify`,
+`unattended-screenshot-gate`), or need tooling this sandbox doesn't have (`self-host-glyphs`,
+`image-audit`'s full pass). `FEATURE_BACKLOG.md`'s P0–P3 sections are still 100% checked off —
+Track B skipped again, same justification three prior shifts gave. Axis 1 (more cities) remains
+network-blocked: fresh `curl` probes to `overpass-api.de` and `nominatim.openstreetmap.org` both
+still return `connect_rejected` in this container.
+
+### Track A — road_stations.geojson + pois.geojson image top-up (14 records)
+
+Picked up Shift 98's own explicit handoff: 305 `road_stations.geojson` candidates
+(`identified:true`, `confidence:high|medium`, no `image_url`) still sitting ready, plus
+`pois.geojson`'s ongoing 329-candidate backlog in the historically-good categories (temple,
+forum, theater, villa, tomb, wall, gate, quarry, amphitheater, bath, aqueduct, arch, basilica,
+circus, palace, mine, fort, sanctuary, port). Split 90 road-station + 60 POI candidates across
+**5 parallel WebSearch research agents** (3 + 2) — a wider fan-out than Shift 95–98's 3-agent
+batches.
+
+**Finding, confirming and sharpening Shift 98's own note**: 5 concurrent agents thinned the
+shared 200-call session budget noticeably harder than 3 does — 2 of the 5 agents explicitly hit
+"200/200" partway through their 30-item list (one after ~20 searched, one very early), leaving a
+real number of legitimately-researchable candidates (the agents flagged several, e.g. Ad Quintum,
+Eburodunum, Alabontia, several Leptis Magna/Sabratha/Tibur/Beneventum POIs) unresearched rather
+than guessed. **Sharper actionable than Shift 98's**: cap parallel WebSearch-heavy agents at
+**3 per wave**, not 5 — the marginal 4th/5th agent mostly just starves the later items in its own
+list rather than adding net throughput, since the pool is shared, not per-agent.
+
+Combined yield: 16 of 150 resolved with a confirmed Commons filename (7+3+3 road stations,
+2+1 POIs); two more (Silvium, Edessa) came back flagged low-confidence by their own agent
+(an unverified-off-the-file-page filename, and a modern-waterfall photo standing in for a site
+with no surviving Roman remains) — dropped from the merge rather than shipped, matching the
+brief's "wrong image worse than no image" rule. Real wrong-image traps the agents caught and
+correctly declined: Characmoba/Negla's only Commons photos are the *medieval* Crusader castles at
+Kerak/Shoubak on the same spot, not Roman remains; Panissars/Summum Pyrenaeum's top hit is a
+17th-c. Vauban fort; Segustero/Sisteron's citadel is 13th–16th century; Ostia's "Terme di porta
+marina" search hits are actually Pompeii's Suburban Baths (same gate name, different city);
+Docimium's only tagged Commons file is the Rome Pantheon's interior. Merged via
+`scripts/apply-image-topup.mjs` (surgical splice, not a full rewrite) — `git diff --stat` showed
+only the targeted insertions. `npm run validate`/`build` both clean. `pois.geojson` image
+coverage 63.1% → 63.3%; `road_stations.geojson` +11. Commit `ea5aaa2`.
+
+### Track A — 1 verified cross-file image reuse, and why the other 65 candidates got rejected
+
+Tried a zero-WebSearch-cost approach next, once the shared budget looked spent: programmatically
+matched every image-null `pois.geojson`/`road_stations.geojson` record against every *already-
+imaged* record across all 13 point-feature files, by name overlap + distance (≤1.5km). Got 66
+candidates back — and on inspection, almost all of them were a **different monument that happens
+to sit in the same city** as an already-imaged record (a `gladiator school of alexandria` record
+matching on proximity to a `silk craft, alexandria` record; Leptis Magna's chalcidicum matching
+its separate Roma/Augustus temple; Ostia's Porta Marina matching a generic Ostia euergetism
+record) — exactly the wrong-image trap the brief names explicitly, just automated instead of
+manual. Rejected all of those. Kept exactly **one**: `poi_ephesus_library_celsus` and
+`learning_117.geojson`'s `learning_ephesus_celsus_library` are verifiably the same named monument
+("Library of Celsus") under two different schemas, a genuine case of the same feature indexed
+twice — reused that image rather than re-searching it. **Actionable for a future shift**: this
+proximity+name-match technique is a fast way to *generate candidates*, but each one still needs a
+same-feature check, not just a same-city check, before applying — don't bulk-apply without that
+filter. Commit `c0b522e`.
+
+### Track B — skipped, same justification as Shifts 96–98
+
+`FEATURE_BACKLOG.md` P0–P3 100% checked off; the one open item there (`[10-P0-2]`
+`three-depth-labels`) is a whole-dataset deepening pass, not a single-shift slot. `BOARD.md`'s
+open tickets are unchanged from the last three shifts' assessment.
+
+### What's next
+
+- **`road_stations.geojson` still has ~283 image-null identified/high-or-medium-confidence
+  candidates** (305 minus this shift's 11 minus the low-confidence-dropped Silvium/Edessa still
+  counted as attempted-but-open) and **`pois.geojson` has ~326** in the good-hit-rate categories.
+  A fresh session (fresh WebSearch pool) should pick these back up — same reusable filter Shift 98
+  documented, still valid:
+  ```js
+  d.features.filter(f => !f.properties.image_url && f.properties.identified === true
+    && (f.properties.confidence === "high" || f.properties.confidence === "medium"))
+  ```
+- **Cap parallel WebSearch research agents at 3, not 5** — this shift's own finding, sharpening
+  Shift 98's softer "budget roughly 6 batches" note into a concrete per-wave ceiling.
+- **The git-fetch-staleness scare above is worth a permanent habit**, not just a one-off: if a
+  fresh container's first `git fetch origin main` ever looks alarmingly behind local `HEAD`,
+  cross-check with `git ls-remote origin` or the GitHub API before assuming any push failed —
+  don't let a caching artifact read as data loss.
+- Board's topmost unclaimed tickets are unchanged from Shift 98's list: `[12-P0-1]`
+  merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[13-P0-2]` image-audit,
+  `[02-P0-4]` self-host-glyphs, `[15-P0-1]`/`[14-P0-1]` (human-blocked), `[10-P0-2]`
+  three-depth-labels, `[11-P1-5]` pmtiles, `[11-P1-6]` split-map-tsx, `[11-P2-11]`
+  next-major-upgrade.
+- Axis 1 (more cities) stays network-blocked in this sandbox — confirmed again this shift.
+
+---
+
 ## Shift 98 — 2026-09-04 (this shift's own prompt claimed "Shift 3 of four")
 
 Booted detached-HEAD, local `main` stuck at Shift 85's tip while `origin/main` had already moved

@@ -1503,8 +1503,42 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       `WebSearch`-heavy agents in one shift, the shared budget noticeably thinned by the third
       batch even though it didn't fully exhaust.
 
+## New ideas spotted this shift (2026-09-04, Shift 99 — image top-up + a git-fetch scare)
+
+- [ ] **A fresh container's first `git fetch origin main` can return a stale cached ref, not the
+      real GitHub state.** This shift booted, fetched, and saw `origin/main` sitting 50 commits
+      *behind* local detached `HEAD` — looked exactly like 13 shifts of unpushed work about to be
+      lost. Cross-checking with the GitHub API (`mcp__github__list_commits`) and a second
+      `git fetch -v` (which logged `[forced update]` on retry) showed the real remote tip matched
+      local `HEAD` all along; the first fetch was just stale. Distinct from the already-documented
+      "local `main` branch pointer lags detached HEAD" symptom (real, still happens, `git checkout
+      -B main origin/main` fixes it) — this was the *tracking ref itself* lying on the first call.
+      **Before ever concluding a push was lost, verify with `git ls-remote origin` or the GitHub
+      API, not the first `git fetch`'s `origin/main` alone.**
+- [ ] **5 parallel WebSearch research agents thin the shared 200-call session budget harder than
+      3 does.** Shift 95-98 all independently settled on 3 parallel agents per wave; this shift
+      tried 5 (3 road-station + 2 POI image batches) and 2 of the 5 hit "200/200" partway through
+      their own 30-item list — real, verifiable candidates went unresearched that a smaller wave
+      would likely have reached. Cap it at 3.
+- [ ] **A programmatic "reuse an already-verified image from elsewhere in the dataset" pass needs
+      a same-feature check, not just a same-city-within-1.5km check.** Tried this as a zero-
+      WebSearch-cost image top-up technique this shift: matched image-null records against every
+      already-imaged record by name-overlap + proximity, got 66 candidates, and on inspection
+      ~65 of them were a *different monument that happens to be near* an imaged record (a
+      gladiator-school record matching a silk-craft record on proximity, Leptis Magna's
+      chalcidicum matching its separate Roma/Augustus temple) — the exact wrong-image trap the
+      brief warns about, just automated. Only kept the one genuine same-monument-under-two-
+      schemas match (Ephesus's Library of Celsus, indexed in both `pois.geojson` and
+      `learning_117.geojson`). The candidate-generation technique is fast and reusable; the
+      apply step still needs a human/agent judgment call per candidate, not a bulk merge.
+
 ## Shipped (moved from above; newest on top)
 
+- 2026-09-04 — Shift 99: Image top-up — 14 records via 5 parallel WebSearch agents (11
+  `road_stations.geojson`, 3 `pois.geojson`) plus 1 verified cross-file reuse (Ephesus's Library
+  of Celsus). A git-fetch-staleness scare at boot resolved as a false alarm (see "New ideas"
+  below and `SHIFT_LOG.md`) — no data was ever at risk. `pois.geojson` image coverage 63.1% →
+  63.3%.
 - 2026-09-04 — Shift 97: Axis 6a trade routes — Roman slave trade route system (Dacian War,
   Judaean War, and British captives; 3 LineStrings + 10 named nodes, 13 features), the one
   commodity from the brief's axis-6a list previously absent from `trade_routes.geojson`. Plus a
