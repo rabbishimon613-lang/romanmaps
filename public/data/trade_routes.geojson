@@ -1485,6 +1485,319 @@
           "https://en.wikipedia.org/wiki/Colonia_Claudia_Ara_Agrippinensium"
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            23.3093,
+            45.6219
+          ],
+          [
+            21.2256,
+            44.737
+          ],
+          [
+            12.4853,
+            41.8894
+          ]
+        ]
+      },
+      "properties": {
+        "id": "route_slave_trade_dacia",
+        "name": "Roman Slave Trade — Dacian War Captives",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarmizegetusa Regia.JPG?width=800",
+        "image_credit": "Sarmizegetusa Regia, the fallen Dacian capital · Wikimedia Commons",
+        "commodity": "captives (Dacian Wars, 101–106 CE)",
+        "direction": "Sarmizegetusa Regia to Rome via the Danube frontier and the Balkan road network",
+        "notes": "Trajan's second Dacian war broke Decebalus's kingdom in 106 CE. Ancient tallies put the captives marched south in chains at around 100,000, while thousands of the strongest were kept back for the 123 days of gladiatorial games Trajan threw in Rome to celebrate the conquest. The column of the defeated crossed the Danube frontier at the legionary fortress of Viminacium before continuing down the imperial road network to the slave markets of the capital.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Trajan%27s_Dacian_Wars",
+          "https://historiamag.com/human-trafficking-slave-trading-roman-industry/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.3093,
+          45.6219
+        ]
+      },
+      "properties": {
+        "id": "node_slave_sarmizegetusa_regia",
+        "route": "Roman Slave Trade — Dacian War Captives",
+        "name": "Sarmizegetusa Regia",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarmizegetusa Regia.JPG?width=800",
+        "image_credit": "Sarmizegetusa Regia · Wikimedia Commons",
+        "role": "The mountain stronghold of the Dacian kings, 1,030 meters up in the Orăștie range, fell to Trajan's legions in 106 CE. Its capture and King Decebalus's suicide broke organized Dacian resistance and sent a generation of prisoners south into the Roman slave system.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sarmizegetusa_Regia"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.2256,
+          44.737
+        ]
+      },
+      "properties": {
+        "id": "node_slave_viminacium",
+        "route": "Roman Slave Trade — Dacian War Captives",
+        "name": "Viminacium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Viminacium kostolac pozarevac3.JPG?width=800",
+        "image_credit": "Viminacium archaeological site, Serbia · Wikimedia Commons",
+        "role": "This legionary fortress and capital of Moesia Superior sat on the main Danube road, and its garrison town was the last major waypoint where captives from the Dacian campaigns were counted and re-formed into marching columns before the road turned south for Italy.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Viminacium"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4853,
+          41.8894
+        ]
+      },
+      "properties": {
+        "id": "node_slave_rome_dacia",
+        "route": "Roman Slave Trade — Dacian War Captives",
+        "name": "Rome",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roma-pantheon-frontfacade.jpg?width=800",
+        "image_credit": "Campus Martius, Rome, near the site of the Saepta Julia slave market · Wikimedia Commons",
+        "role": "Captives who survived the march were sold at Rome's biggest slave markets, chiefly the Saepta Julia in the Campus Martius and the stalls by the Temple of Castor and Pollux in the Forum, where dealers stood buyers on a raised platform to inspect teeth, limbs, and posture before the sale.",
+        "sources": [
+          "https://historiamag.com/human-trafficking-slave-trading-roman-industry/"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            35.2137,
+            31.7683
+          ],
+          [
+            34.8913,
+            32.5
+          ],
+          [
+            14.121,
+            40.826
+          ],
+          [
+            12.4853,
+            41.8894
+          ]
+        ]
+      },
+      "properties": {
+        "id": "route_slave_trade_judaea",
+        "name": "Roman Slave Trade — Judaean War Captives",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jerusalem Western Wall BW 5.JPG?width=800",
+        "image_credit": "The Western Wall, Jerusalem, a retaining wall of Herod's Temple Mount · Wikimedia Commons",
+        "commodity": "captives (Jewish War, 66–70 CE; Kitos War, 115–117 CE)",
+        "direction": "Jerusalem to Rome via Caesarea Maritima and Puteoli",
+        "notes": "When Titus's legions broke through Jerusalem's walls in 70 CE, the historian Josephus — who watched the siege from the Roman camp — put the number marched into slavery at 97,000, with the tallest and strongest held back to die fighting beasts and each other in celebratory games at Caesarea and Antioch. The revolt reopened in 115–117 CE as the Kitos War, and Lucius Quietus was still putting down the Judaean fighting when Trajan died in August 117. Ships carried captives from Caesarea's harbor to Puteoli, Italy's main eastern port, for the final overland leg to Rome.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/First_Jewish%E2%80%93Roman_War",
+          "https://en.wikipedia.org/wiki/Kitos_War"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2137,
+          31.7683
+        ]
+      },
+      "properties": {
+        "id": "node_slave_jerusalem",
+        "route": "Roman Slave Trade — Judaean War Captives",
+        "name": "Jerusalem",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jerusalem Western Wall BW 5.JPG?width=800",
+        "image_credit": "The Western Wall, Jerusalem · Wikimedia Commons",
+        "role": "The Second Temple burned and the city's walls came down in 70 CE, and the defeated of Jerusalem became the largest single intake the Roman slave trade had seen in a generation.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/First_Jewish%E2%80%93Roman_War"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8913,
+          32.5
+        ]
+      },
+      "properties": {
+        "id": "node_slave_caesarea_maritima",
+        "route": "Roman Slave Trade — Judaean War Captives",
+        "name": "Caesarea Maritima",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple of Roma and Augustus (Caesarea Maritima) DSC05221.JPG?width=800",
+        "image_credit": "Caesarea Maritima, Herod's artificial harbor city · Wikimedia Commons",
+        "role": "Judaea's Roman capital had the province's best harbor, built by Herod with imported volcanic concrete, and it doubled as a marshaling point where Titus staged gladiatorial games with Jewish captives before shipping the rest west.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Caesarea_Maritima"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.121,
+          40.826
+        ]
+      },
+      "properties": {
+        "id": "node_slave_puteoli",
+        "route": "Roman Slave Trade — Judaean War Captives",
+        "name": "Puteoli",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Serapium pozzuoli 2005.jpg?width=800",
+        "image_credit": "Macellum of Pozzuoli (Puteoli) · Wikimedia Commons",
+        "role": "Puteoli was Italy's main terminal for eastern shipping before Trajan's Portus basin took over — the grain fleet, luxury cargo, and human cargo from the eastern provinces all came ashore at the same busy harbor.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Pozzuoli"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4853,
+          41.8894
+        ]
+      },
+      "properties": {
+        "id": "node_slave_rome_judaea",
+        "route": "Roman Slave Trade — Judaean War Captives",
+        "name": "Rome",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/7 Rome View of the Arch of Titus.jpg?width=800",
+        "image_credit": "The Arch of Titus, dedicated after the fall of Jerusalem · Wikimedia Commons",
+        "role": "The arch still standing over the Via Sacra in 117 CE carries a carved relief of soldiers parading the Temple's menorah and silver trumpets through the city — the same triumph that marched Jerusalem's captured population to the slave dealers' stalls.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Arch_of_Titus"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.0875,
+            51.5135
+          ],
+          [
+            1.615115,
+            50.726252
+          ],
+          [
+            12.4853,
+            41.8894
+          ]
+        ]
+      },
+      "properties": {
+        "id": "route_slave_trade_britain",
+        "name": "Roman Slave Trade — British Captives",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/London 01 2013 Roman wall 5335.JPG?width=800",
+        "image_credit": "The London Wall, Londinium · Wikimedia Commons",
+        "commodity": "captives (Britannia)",
+        "direction": "Londinium to Rome via Gesoriacum and Gaul",
+        "notes": "Writing during Caesar's first landing in 54 BCE, Cicero joked to a friend not to expect any of the captured Britons to know letters or music — Roman buyers had a low opinion of British slaves more than a century before the island became a province. The conquest under Claudius and the wars that followed, including Boudica's revolt in 60 CE and the ongoing Caledonian campaigns, kept a steady flow of captives moving the other way: shipped across the Channel from the naval base at Gesoriacum, then marched the length of Gaul toward the slave markets of Italy.",
+        "sources": [
+          "https://en.wikisource.org/wiki/Letters_to_Atticus/2.8",
+          "https://www.unrv.com/articles/slavery-and-servants-in-roman-britain.php"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0875,
+          51.5135
+        ]
+      },
+      "properties": {
+        "id": "node_slave_londinium",
+        "route": "Roman Slave Trade — British Captives",
+        "name": "Londinium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/London 01 2013 Roman wall 5335.JPG?width=800",
+        "image_credit": "The London Wall, Londinium · Wikimedia Commons",
+        "role": "Britannia's largest town and river port was the natural collection point for captives taken in the province's frontier wars before they were shipped south across the Channel.",
+        "sources": [
+          "https://www.unrv.com/articles/slavery-and-servants-in-roman-britain.php"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.615115,
+          50.726252
+        ]
+      },
+      "properties": {
+        "id": "node_slave_gesoriacum",
+        "route": "Roman Slave Trade — British Captives",
+        "name": "Gesoriacum",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/La Tour d'Odre en 1550, Boulogne-sur-Mer..jpg?width=800",
+        "image_credit": "The Tour d'Ordre, Gesoriacum's Roman lighthouse, in a 1550 depiction · Wikimedia Commons",
+        "role": "Home base of the Classis Britannica, Gesoriacum was the Channel's main crossing point — everything moving between Britain and the continent, captives included, passed through its harbor beneath the great lighthouse Caligula built there.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Boulogne-sur-Mer"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4853,
+          41.8894
+        ]
+      },
+      "properties": {
+        "id": "node_slave_rome_britain",
+        "route": "Roman Slave Trade — British Captives",
+        "name": "Rome",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roma-pantheon-frontfacade.jpg?width=800",
+        "image_credit": "Campus Martius, Rome, near the site of the Saepta Julia slave market · Wikimedia Commons",
+        "role": "After the overland haul through Gaul and across the Alps, British captives reached the same Roman markets that sold slaves from every other frontier of the empire.",
+        "sources": [
+          "https://historiamag.com/human-trafficking-slave-trading-roman-industry/"
+        ]
+      }
     }
   ]
 }
