@@ -7,6 +7,128 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 97 — 2026-09-04 (this shift's own prompt claimed "Shift 2 of four")
+
+Booted into the same recurring symptom Shift 96 and others have flagged: `HEAD` detached 1 commit
+ahead of a stale local `main`. `git fetch origin main && git checkout -B main origin/main` fixed
+it in seconds — origin was current, nothing at risk. `node_modules` was also missing (fresh
+container), so `npm install` ran before any push, arming `.githooks/pre-push`'s build gate from
+the start this time.
+
+### A finding worth stating plainly before the Track A summary
+
+Before picking work, I read `SHIFT_BRIEF.md` in full (all 20 axes) and then spent a large chunk
+of this shift's budget auditing actual coverage against it — not just skimming feature counts, but
+cross-checking specific named entities the brief itself lists (client kingdoms, conventus centers,
+gladiator schools, named villas, named tombs, aqueducts, alimenta towns, learning centers, sacred
+sites, auxiliary forts, signal towers, battles...) against what's actually in each axis's
+`public/data/*.geojson` file. Result: **every axis I checked (5, 6b/6c/6d, 8b, 9a/9b, 10, 13, 15,
+16, 17, 18, 3a/3b/3d/3e/3g/3h) already contains every single named example the brief itself
+suggests, usually with 2-4x more added beyond the brief's list.** `neighbors_117.geojson` is
+22/22 against the brief's client-kingdom list. `conventus.geojson` matches Pliny's actual
+per-province conventus counts (Baetica 4, Tarraconensis 7, Lusitania 3, Asia 13) exactly.
+`crafts.geojson`'s only brief-named gap was "amber crafting at Rome" (fixed this shift, see
+below). Villae, tombs, auxiliary forts, and signal towers all read like someone worked the
+brief's own paragraphs into a checklist and cleared it. `FEATURE_BACKLOG.md`'s structured P0-P3
+sections are **100% checked off** — the "new ideas spotted this shift" sections beneath them are
+now a running changelog, not an actionable backlog.
+
+This isn't a reason to stop — the empire is still enormous and the brief's own lists were never
+meant as ceilings — but it does mean **"grep the brief's bullet list, add what's missing" no
+longer reliably finds 40-feature batches** the way it did for the first ~60 shifts. What it found
+this shift was one real, specific, non-redundant gap (below). Flagging this now so a future shift
+doesn't burn its own research budget re-discovering the same saturation from scratch — see "what's
+next" for where the real remaining headroom is.
+
+### Track A — axis 6a: the Roman slave trade (new gap, 13 features)
+
+`trade_routes.geojson` had seven of `SHIFT_BRIEF.md`'s eight named axis-6a commodities (amber,
+grain, tin, olive oil ×2, silk, incense, wine) — **slave routes were the one completely absent
+from the file.** Added three sourced sub-routes as LineStrings + named Point nodes, following the
+file's existing schema exactly:
+
+- **Dacian War captives** — Sarmizegetusa Regia → Viminacium → Rome. ~100,000 captives marched
+  south after the 106 CE fall of the Dacian capital (Wikipedia's *Trajan's Dacian Wars*, corroborated
+  independently); some of the strongest were held back for the 123 days of games Trajan threw to
+  celebrate the conquest.
+- **Judaean War captives** — Jerusalem → Caesarea Maritima → Puteoli → Rome. Josephus's own figure
+  of 97,000 from the fall of Jerusalem (70 CE), plus the Kitos War (115-117) reopening the same
+  trade in the map's own snapshot year. Reused Caesarea Maritima's and Puteoli's coordinates/images
+  already verified and used elsewhere in the dataset (`imperial_cult.geojson`, `trade_routes.geojson`'s
+  own grain-route Pozzuoli node) rather than re-researching them.
+- **British captives** — Londinium → Gesoriacum → Rome, with Cicero's 54 BCE joke to Atticus (not
+  to expect any of Caesar's British captives to know letters or music) as the one arresting period
+  detail, cited to Wikisource's *Letters to Atticus* 2.8.
+
+Every coordinate and Commons image was verified via `WebSearch` this shift (Sarmizegetusa Regia,
+Viminacium, the Arch of Titus, the Jerusalem Western Wall, the Boulogne lighthouse, the London
+Wall — full list and URLs in the commit). `npm run validate` and `npm run build` both clean.
+Commit `e6a1941`.
+
+### Track A / deepen — pois.geojson image top-up (25 records)
+
+`pois.geojson` has 566 of 1405 records with no `image_url` — a real, large, already-recognized
+backlog (`METRICS.md` tracks it; many prior shifts' Track A sections are exactly this same kind of
+top-up batch). Picked 76 candidates from well-photographed categories (forum/temple/theater/
+villa/mausoleum/tomb/wall/gate/quarry/necropolis) at sites already otherwise well-covered on the
+map, split three ways across parallel background research agents (`WebSearch`-only, since
+`WebFetch`/`curl` to `commons.wikimedia.org` is still `EGRESS_BLOCKED` in this sandbox — the same
+standing limitation every prior shift's notes describe). **25 of 76 resolved with a confidently
+verified Commons filename**; the other 51 were skipped rather than guessed — the agents'
+consistent finding was that lower-profile sites (individual quarries, garum factories, one gate
+among four at a single city) often have a Commons *category* but no single confidently-titled file
+surfaceable through search snippets alone in this environment. That's a real ceiling, not
+laziness — see "what's next."
+
+Found and fixed a real, unrelated formatting bug while merging the results: my first pass at both
+this batch and the trade-routes batch used `JSON.stringify(d)` with no indent argument, which
+would have collapsed 1400+ lines of `pois.geojson`/`trade_routes.geojson` into one line and
+produced a ~1500-line diff of pure noise (`FEATURE_BACKLOG.md` has a standing note about exactly
+this trap from Shift 14/15). Caught before committing, redone with `JSON.stringify(d, null, 2)` to
+match each file's existing 2-space indent, and verified byte-for-byte that every record's content
+outside the intentionally-touched ids is unchanged (only whitespace differs, from a few pre-existing
+records an earlier shift had crammed onto one line — reformatted along with everything else, no
+data lost). Commit `10a9591`. `METRICS.md` refreshed (`33c93db`): `pois.geojson` image coverage
+59.7% → 61.5%.
+
+### Track B
+
+Skipped this shift. `FEATURE_BACKLOG.md`'s P0-P3 sections are fully checked off, and `BOARD.md`'s
+only open, unclaimed, unblocked UI ticket is `[03-P0-2]` `card-rebuild` — which every shift that's
+looked at it (this one included) has correctly declined to touch, because its own ticket text
+references an "eleven-block order" spec that doesn't exist anywhere in this repo (`research/` is
+gitignored and empty in every cloud container, confirmed again this shift). Inventing that spec
+from scratch rather than deferring it would mean guessing at someone else's design intent, not
+implementing a known one. Data won over a Track B item I'd have had to design myself from nothing.
+
+### What's next
+
+- **The real remaining Track A headroom is image top-up, not new axis content.** `pois.geojson`
+  still has 541 image-null records; `road_stations.geojson` has 420 of 582. Both are large, honest,
+  already-recognized backlogs (not a padding decision) — a future shift with a fresh `WebSearch`
+  budget should keep chipping at them the same way this shift, and many before it, did. This
+  session's own shared search budget (used across the parent session and 3 background agents this
+  shift) was not exhausted, but ran noticeably thinner by the third agent's batch — pace batch size
+  accordingly rather than spawning more than ~3 parallel `WebSearch`-heavy agents at once.
+- **If picking a *new* axis-content batch, don't start from the brief's own bullet lists** — see
+  the saturation finding above. Cross-check what's actually in the relevant `.geojson` file first;
+  the productive move now looks more like "verify/deepen a named entity the brief didn't think to
+  list" (this shift's slave-trade-route find) than "work down the brief's paragraph."
+- Board's topmost unclaimed tickets are unchanged and still genuinely large or blocked:
+  `[12-P0-1]` merge-themes (`fix`, flagged big), `[03-P0-1]` schema-v2 (`fix`), `[03-P0-2]`
+  card-rebuild (`polish`, no spec — see Track B above), `[13-P0-2]` image-audit (`illustrate`,
+  needs either a human or working Commons fetch access), `[02-P0-4]` self-host-glyphs (half done,
+  needs a new npm dependency the brief says to avoid without justification), `[15-P0-1]`
+  unattended-screenshot-gate and `[14-P0-1]` gsc-verify (both blocked on a human/Pedro).
+  `[10-P0-2]` three-depth-labels, `[11-P1-5]` pmtiles, `[11-P1-6]` split-map-tsx, and
+  `[11-P2-11]` next-major-upgrade are further down and unclaimed too — worth a look for a shift
+  with a full 6 hours to spend on one of the "big" tickets rather than data batches.
+- Axis 1 (more cities) remains blocked at the network level — `overpass-api.de` and
+  `nominatim.openstreetmap.org` are egress-blocked in this sandbox, confirmed again by the trail
+  of prior shifts' notes (not re-tested this shift, no reason to expect it changed).
+
+---
+
 ## Shift 96 — 2026-09-04 (this shift's own prompt claimed "Shift 1 of four")
 
 Continuing the real count from Shift 95's last commit (`53affe9`). Repo booted with local `main`

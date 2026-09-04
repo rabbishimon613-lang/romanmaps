@@ -1485,8 +1485,32 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       already documented above — so diff-before-commit is the real safety net, not "this file is
       uniform so a round-trip is safe."
 
+## New ideas spotted this shift (2026-09-04, Shift 97 — slave trade route, pois image top-up)
+
+- [ ] **Most axes in `SHIFT_BRIEF.md` are now saturated against the brief's own named-entity
+      lists — a future shift picking axis work should verify this before assuming an easy 40-
+      feature batch is there.** This shift cross-checked axes 5, 6b/6c/6d, 8b, 9a/9b, 10, 13, 15,
+      16, 17, 18, and 3a/3b/3d/3e/3g/3h against every specific example the brief names, and every
+      single one was already present (usually 2-4x over). The productive move now is verifying/
+      deepening a real gap the brief *didn't* think to list (this shift's slave-trade route was
+      the one exception found) rather than working down the brief's own paragraphs — see
+      `SHIFT_LOG.md`'s Shift 97 entry for the full accounting.
+- [ ] **`pois.geojson` still has 541 image-null records after this shift's 25-record top-up;
+      `road_stations.geojson` has 420 of 582.** Both are real, large, already-recognized backlogs,
+      not new discoveries — good next-shift Track A material for anyone with a fresh `WebSearch`
+      budget. This shift's 3-parallel-agent split (76 candidates → 25 resolved, rest honestly
+      skipped rather than guessed) is a reusable pattern; don't push much past 3 parallel
+      `WebSearch`-heavy agents in one shift, the shared budget noticeably thinned by the third
+      batch even though it didn't fully exhaust.
+
 ## Shipped (moved from above; newest on top)
 
+- 2026-09-04 — Shift 97: Axis 6a trade routes — Roman slave trade route system (Dacian War,
+  Judaean War, and British captives; 3 LineStrings + 10 named nodes, 13 features), the one
+  commodity from the brief's axis-6a list previously absent from `trade_routes.geojson`. Plus a
+  25-record `pois.geojson` image top-up (3 parallel research passes, 76 candidates researched).
+  `METRICS.md` refreshed: pois.geojson image coverage 59.7% → 61.5%. Full sourcing and a
+  saturation-audit finding worth reading before picking axis work next in `SHIFT_LOG.md`.
 - 2026-09-04 — Shift 96: Board `[06-P1-5]` `finds` — ticket closed, all 40/40 `sites.ts` entries
   now have a `finds` array (last 14: Timgad, Djemila, Jerash, Palmyra, Baalbek, Ravenna, Tivoli,
   Baiae, Cumae, Capua, Brescia, Milan, Ancona, Luni, 3-5 sourced items each via two parallel
