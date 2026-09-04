@@ -7,6 +7,135 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 98 — 2026-09-04 (this shift's own prompt claimed "Shift 3 of four")
+
+Booted detached-HEAD, local `main` stuck at Shift 85's tip while `origin/main` had already moved
+50 commits ahead (the same recurring boot symptom every recent shift flags — see Shift 96/97's
+notes). `git fetch origin main && git checkout -B main origin/main` fixed it in seconds, nothing
+at risk. `node_modules` was also missing (fresh container) — ran `npm install` before any push,
+same lesson Shift 96 already logged.
+
+### A real, concrete finding: the WebSearch budget is a hard 200-call cap shared across the whole
+### session, not per-agent
+
+Prior shifts (95, 97) noted the shared research budget "ran thinner" over several parallel agents
+but described it as soft/fuzzy. This shift hit the actual wall and got an explicit number back
+from the tool itself: **`WebSearch` is capped at 200 calls total for the entire session — every
+background agent spawned in this conversation draws from the SAME pool**, not a fresh 200 each.
+After 6 research agents (3 for the depth batch, 3 for a `pois.geojson` image batch) had run, two
+further image-research agents (for `road_stations.geojson`) got zero real searches — every call
+returned "this session has used its web search budget," 200/200. Both agents did the right thing
+(reported all 32 candidates `NOT_FOUND` rather than guess), but the batch was a wash.
+**Actionable for future shifts:** budget roughly 6 WebSearch-heavy parallel-agent batches (at
+~30 items each) as the ceiling for one shift's *entire* research budget, not per wave. Front-load
+the highest-value batch first — this shift did depth-batch (guaranteed win, small pool) before
+image top-up (lower hit rate, bigger pool), which was the right order in hindsight. Once a
+"budget exhausted" response comes back, every further WebSearch agent this session is dead —
+switch immediately to non-search work (data merging, validation, code, logs) rather than spawning
+more agents hoping the budget refreshes; it doesn't, mid-session.
+
+### Track A — `[10-P0-3]` flagship-depth, batch 6 (deepen, standing task)
+
+Read `SHIFT_BRIEF.md` in full and `BOARD.md`'s open-ticket list (`grep '^- \[ \]'`): every
+top-priority unclaimed ticket is either flagged big/multi-pass (`merge-themes`, `schema-v2`,
+`three-depth-labels`, `split-map-tsx`, `pmtiles`), blocked on a human (`gsc-verify`,
+`unattended-screenshot-gate`), or needs tooling this sandbox doesn't have (`self-host-glyphs`'s
+remaining half, `image-audit`'s full pass) — the same landscape Shift 97 already mapped and
+correctly declined to re-litigate.
+
+`METRICS.md` showed a live, small, well-scoped gap instead: 40 of 1405 `pois.geojson` records
+had drifted back under the 60-word depth floor `[10-P0-3]` closed to zero on 2026-08-19, since
+the file grew 3x (469 → 1405 records) in the six and a half months since that "closing" batch.
+Pulled the 40 thin records' full text + sources, split across 3 parallel WebSearch agents
+(13-14 each), each told: find ONE genuinely new, verifiable fact per record (an excavation date,
+an exact measurement, a named excavator, an inscription detail), weave it into the existing
+Google-Business-voice text, never contradict the existing `built`/`extant_117ce` calls, never
+invent. All 40 landed with real new facts (e.g., the François Tomb's exact 1857 excavation story,
+Dougga's macellum inscription dating construction to an 8-month window in 54 CE, Hierapolis's
+Nymphaeum of the Tritons' 60m/70m dimensions, Miletus theatre's Jewish-seating inscription).
+Merged via a small Node script (not manual JSON editing) that only touches the 40 targeted
+records' `notes`/`sources` fields — `git diff --stat` confirmed a surgical 104-insertion/
+72-deletion diff, no collateral reformatting. `npm run validate` and `npm run build` both clean.
+Depth 97.2% → **100.0%**, thin tail 40 → 0. Commit `7ac8b71`.
+
+### Track A — `pois.geojson` image top-up (23 records closed)
+
+Same backlog every recent shift has chipped at: 541 of 1405 `pois.geojson` records had no
+`image_url`. Picked 96 candidates from the historically best-yielding categories (temple, forum,
+theater, villa, mausoleum, tomb, wall, gate, quarry, necropolis, amphitheater, bath/bathhouse,
+aqueduct, arch, basilica, circus, palace), round-robined across categories for balance, split
+3 ways across parallel WebSearch-only agents (`commons.wikimedia.org`/`en.wikipedia.org` remain
+`EGRESS_BLOCKED` via direct fetch in this sandbox, confirmed again this shift with a fresh `curl`
+probe against Overpass/Nominatim/Commons/Wikipedia — all four still `connect_rejected`).
+
+23 of 96 came back with a confidently verified Commons filename; the rest correctly reported
+`NOT_FOUND`. I additionally dropped 4 of the agents' own "found" results on my own review, for the
+brief's own "a wrong image is worse than no image" reason: `poi_ostia_porta_romana`'s only lead
+was a generically-named "Porta Romana 01.jpg" with no confirmation it's Ostia's gate rather than
+one of the many other Italian gates sharing that exact name (Milan's is the most famous); the only
+lead for `poi_forum_cumae` was captioned "Terme del Foro" — Cumae's *forum baths*, a different
+building from the forum itself; `poi_volubilis_flavian_baths`'s only lead was labeled "North
+Baths," which at Volubilis is conventionally the Gallienus-era (3rd c.) complex, not this record's
+Flavian date; and `poi_villa_nero_antium`'s lead was a generic "Villa of Nero 01.jpg" with no
+location confirmation, risky since Nero had documented villas at Antium, Subiaco, and Baiae alike.
+Image coverage: `pois.geojson` 61.5% → 63.1%. `npm run validate`/`build` clean. Commit `17abd9d`.
+
+### Track A — `road_stations.geojson` image top-up: attempted, blank due to budget exhaustion
+
+Picked 64 well-identified (`identified:true`, `confidence:high|medium`) road-station candidates —
+real modern towns like Minturnae, Aeclanum, Beziers/Baeterrae, Chalon-sur-Saône/Cabillonum,
+Ecija/Astigi — and split them across 2 more parallel agents. Both hit the exhausted 200-call
+session budget (see finding above) before running a single real search; both correctly reported
+everything `NOT_FOUND` rather than guess, and one flagged explicitly that several of its
+candidates (Minturnae's amphitheater, Fondi's polygonal walls, Perinthus's necropolis finds) are
+"plausible real hits a working search session would likely resolve." **This candidate list is
+reusable, not wasted**: the two batches of 32 are listed in this shift's own agent-prompt text in
+the conversation transcript, but since that doesn't persist to a future shift's container, here's
+how to regenerate the same shortlist in under a minute:
+```js
+const d = JSON.parse(fs.readFileSync("public/data/road_stations.geojson"));
+d.features.filter(f => !f.properties.image_url && f.properties.identified === true
+  && (f.properties.confidence === "high" || f.properties.confidence === "medium"))
+```
+That's 305 candidates; this shift only reached the first 64 alphabetically-by-file-order before
+running out of budget. A future shift with a fresh session should pick this back up first, before
+spending budget on a fresh `pois.geojson` category sweep.
+
+### Track B — skipped, same justification Shift 97 gave
+
+`FEATURE_BACKLOG.md`'s P0-P3 sections remain 100% checked off (confirmed again this shift).
+`BOARD.md`'s open tickets are unchanged from Shift 97's assessment — all either explicitly
+flagged "big, may take several passes," blocked on a human/Pedro, or need tooling unavailable in
+this sandbox. Chose not to gamble the shift's one UI-risk budget on a large, hard-to-verify
+refactor (`split-map-tsx` touches the file that renders the entire live map) with no fresh
+WebSearch left to fall back on if something needed a fact-check mid-implementation. Data work
+that was verifiable start-to-finish with the budget actually available won instead.
+
+### What's next
+
+- **Reusable, ready-to-go**: the `road_stations.geojson` image candidate list above (241 more
+  identified/high-or-medium-confidence stations beyond the 64 this shift picked) — a fresh session
+  should burn its WebSearch budget on this before anything else, since it was interrupted mid-batch
+  rather than genuinely exhausted for lack of leads.
+- **`[10-P0-3]` flagship-depth will keep regrowing** as `pois.geojson` keeps growing — it's a
+  standing task, not a one-time fix. Re-run `npm run metrics` each shift; if the thin count is
+  non-zero and small (this shift's was 40), it's a fast, low-risk, high-certainty win worth taking
+  before anything riskier.
+- **Budget WebSearch-heavy agent waves conservatively**: ~6 batches of ~30 items per shift is
+  this shift's empirically-found ceiling for the *entire* 200-call session pool, not per wave.
+  Spend it on the highest-certainty win first (a small, well-defined enrichment pool) before a
+  large, low-hit-rate image sweep.
+- Board's topmost unclaimed tickets are unchanged from Shift 97's list and still genuinely large
+  or blocked: `[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild (no spec),
+  `[13-P0-2]` image-audit (needs human/Commons access), `[02-P0-4]` self-host-glyphs (needs a new
+  npm dependency), `[15-P0-1]`/`[14-P0-1]` (blocked on a human), `[10-P0-2]` three-depth-labels,
+  `[11-P1-5]` pmtiles, `[11-P1-6]` split-map-tsx, `[11-P2-11]` next-major-upgrade.
+- Axis 1 (more cities) remains blocked at the network level — `overpass-api.de` and
+  `nominatim.openstreetmap.org` both returned `connect_rejected` on a fresh `curl` probe this
+  shift, consistent with every prior shift's notes.
+
+---
+
 ## Shift 97 — 2026-09-04 (this shift's own prompt claimed "Shift 2 of four")
 
 Booted into the same recurring symptom Shift 96 and others have flagged: `HEAD` detached 1 commit
