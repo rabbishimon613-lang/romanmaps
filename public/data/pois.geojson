@@ -948,7 +948,10 @@
         ]
       },
       "properties": {
-        "id": "poi_baths_titus", "image_alt": "Remains of the Baths of Titus near the Colosseum", "image_credit": "Ruins of the Baths of Titus, Oppian Hill, Rome · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Terme di tito a colle oppio 051218-01.JPG?width=800",
+        "id": "poi_baths_titus",
+        "image_alt": "Remains of the Baths of Titus near the Colosseum",
+        "image_credit": "Ruins of the Baths of Titus, Oppian Hill, Rome · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Terme di tito a colle oppio 051218-01.JPG?width=800",
         "category": "bathhouse",
         "name_latin": "Thermae Titi",
         "name_english": "Baths of Titus",
@@ -1193,7 +1196,10 @@
           "https://en.wikipedia.org/wiki/Castel_Sant%27Angelo",
           "https://www.open.edu/openlearn/history-the-arts/hadrians-rome/content-section-5.6"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Engelenburcht te Rome Veduta del Mausoleo d'Elio Adriano (ora chiamato Castello S. Angelo) nella parte opposta alla Facciata dentro al Castello (titel op object) Gezichten op Rome (serietitel) Vedute di Roma disegnate, RP-P-1941-572.jpg?width=800",
+        "image_credit": "18th-century engraved view of the Mausoleum of Hadrian (Castel Sant'Angelo) · Wikimedia Commons",
+        "image_alt": "18th-century engraved view of the Mausoleum of Hadrian / Castel Sant'Angelo"
       }
     },
     {
@@ -1276,7 +1282,10 @@
         ]
       },
       "properties": {
-        "id": "poi_porta_maggiore_aqueducts", "image_alt": "Porta Maggiore showing the twin aqueduct channels", "image_credit": "Porta Maggiore, Rome, where the Aqua Claudia and Anio Novus cross · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porta Maggiore Roma.JPG?width=800",
+        "id": "poi_porta_maggiore_aqueducts",
+        "image_alt": "Porta Maggiore showing the twin aqueduct channels",
+        "image_credit": "Porta Maggiore, Rome, where the Aqua Claudia and Anio Novus cross · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porta Maggiore Roma.JPG?width=800",
         "category": "aqueduct",
         "name_latin": "Aquae Claudia et Anio Novus (ad Portam Maiorem)",
         "name_english": "Aqua Claudia / Anio Novus crossing at Porta Maggiore",
@@ -1374,7 +1383,10 @@
         ]
       },
       "properties": {
-        "id": "poi_portus_trajani_hexagon", "image_alt": "Illustrated plan of Portus and the hexagonal basin", "image_credit": "Reconstruction plan of Portus, showing the Claudian harbor and Trajan's hexagonal basin · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Portus - Claudius first harbour and hexagonal basin extension under Trajan.jpg?width=800",
+        "id": "poi_portus_trajani_hexagon",
+        "image_alt": "Illustrated plan of Portus and the hexagonal basin",
+        "image_credit": "Reconstruction plan of Portus, showing the Claudian harbor and Trajan's hexagonal basin · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Portus - Claudius first harbour and hexagonal basin extension under Trajan.jpg?width=800",
         "category": "port",
         "name_latin": "Portus Traiani (Portus Traiani Felicis)",
         "name_english": "Hexagonal basin of Trajan, Portus",
@@ -1512,7 +1524,10 @@
           "https://ostiaantica.cultura.gov.it/en/sites/necropolis-of-portus-in-the-isola-sacra/",
           "http://www.ostia-antica.org/dahp/cd2/cementum/projectt.htm"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Necropoli di Porto 03.JPG?width=800",
+        "image_credit": "Tomb rows at the Isola Sacra necropolis, between Ostia and Portus · Wikimedia Commons",
+        "image_alt": "Roman brick tomb structures at the Isola Sacra necropolis"
       }
     },
     {
@@ -1548,7 +1563,10 @@
             "ref": "late 1st c. BCE",
             "note": "The local benefactor Publius Lucilius Gamala records paving a street beside the Forum in stone and funding repairs to its temples and a marble tribunal there; the original stone is lost, the text preserved through 16th-century antiquarian copies."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Forum, Ostia Antica (46763671462).jpg?width=800",
+        "image_credit": "The Forum at Ostia Antica · Wikimedia Commons",
+        "image_alt": "Ruins of the forum at Ostia Antica"
       }
     },
     {
@@ -1674,7 +1692,10 @@
             "ref": "18/17 BCE",
             "note": "Names Marcus Agrippa as builder of the original theatre, dated by his tribunician power — the Augustan-era building still standing in 117 CE, decades before Commodus enlarged it."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Panoramica Teatro di Ostia.jpg?width=800",
+        "image_credit": "Panoramic view of the Roman theatre of Ostia Antica · Wikimedia Commons",
+        "image_alt": "Ancient Roman theatre at Ostia Antica"
       }
     },
     {
@@ -1702,7 +1723,10 @@
           "https://www.ostia-antica.org/regio2/4/4-2.htm",
           "https://en.wikipedia.org/wiki/Baths_at_Ostia"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ostia Antica Baths of Neptune.jpg?width=800",
+        "image_credit": "Main hall of the Baths of Neptune, Ostia Antica · Wikimedia Commons",
+        "image_alt": "Interior of the Baths of Neptune at Ostia Antica"
       }
     },
     {
@@ -2493,7 +2517,10 @@
         ]
       },
       "properties": {
-        "id": "poi_lugdunum_theatre", "image_alt": "Ancient Roman theatre carved into Fourvière hill, Lyon", "image_credit": "Roman Theatre of Fourvière, Lyon · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lyon 5 - Théâtre antique de Fourvière 02.jpg?width=800",
+        "id": "poi_lugdunum_theatre",
+        "image_alt": "Ancient Roman theatre carved into Fourvière hill, Lyon",
+        "image_credit": "Roman Theatre of Fourvière, Lyon · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lyon 5 - Théâtre antique de Fourvière 02.jpg?width=800",
         "category": "theater",
         "name_latin": "Theatrum Lugdunense",
         "name_english": "Roman Theatre of Fourvière",
@@ -2586,7 +2613,10 @@
         ]
       },
       "properties": {
-        "id": "poi_carthagonova_theatre", "image_alt": "Restored tiered seating of the Roman theatre at Cartagena", "image_credit": "Roman Theatre of Cartagena (Carthago Nova) · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Teatro romano cartagena.jpg?width=800",
+        "id": "poi_carthagonova_theatre",
+        "image_alt": "Restored tiered seating of the Roman theatre at Cartagena",
+        "image_credit": "Roman Theatre of Cartagena (Carthago Nova) · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Teatro romano cartagena.jpg?width=800",
         "category": "theater",
         "name_latin": "Theatrum Carthaginis Novae",
         "name_english": "Roman Theatre of Cartagena",
@@ -2839,7 +2869,10 @@
           "https://www.roemisch-germanisches-museum.de/THE-ROMAN-CITY-WALL",
           "https://imperiumromanum.pl/en/guest-posts/roman-walls-in-cologne/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roemerturm Koeln2007.jpg?width=800",
+        "image_credit": "Romerturm, the surviving corner tower of Cologne's Roman city wall · Wikimedia Commons",
+        "image_alt": "Roman tower, part of the Roman city wall of Cologne"
       }
     },
     {
@@ -2866,7 +2899,10 @@
           "https://www.cologne-tourism.com/arts-culture/sights/detail/ubier-monument",
           "https://www.megalithic.co.uk/article.php?sid=47168"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ubiermonument 3.JPG?width=800",
+        "image_credit": "The Ubiermonument, Cologne's oldest Roman stone structure · Wikimedia Commons",
+        "image_alt": "Remains of the Ubiermonument harbor defense tower in Cologne"
       }
     },
     {
@@ -2879,7 +2915,10 @@
         ]
       },
       "properties": {
-        "id": "poi_pompeii_city", "image_alt": "Overview of the Pompeii ruins with Vesuvius in the background", "image_credit": "Ruins of Pompeii with Mount Vesuvius beyond · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/View of vesuvius over the ruins of pompeii.jpg?width=800",
+        "id": "poi_pompeii_city",
+        "image_alt": "Overview of the Pompeii ruins with Vesuvius in the background",
+        "image_credit": "Ruins of Pompeii with Mount Vesuvius beyond · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/View of vesuvius over the ruins of pompeii.jpg?width=800",
         "category": "city",
         "name_latin": "Pompeii",
         "name_english": "Pompeii",
@@ -3075,7 +3114,10 @@
         ]
       },
       "properties": {
-        "id": "poi_pompeii_basilica", "image_alt": "Ruins of the Basilica on the Forum of Pompeii", "image_credit": "Basilica of Pompeii · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Basilica of Pompeii.jpg?width=800",
+        "id": "poi_pompeii_basilica",
+        "image_alt": "Ruins of the Basilica on the Forum of Pompeii",
+        "image_credit": "Basilica of Pompeii · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Basilica of Pompeii.jpg?width=800",
         "category": "basilica",
         "name_latin": "Basilica Pompeiana",
         "name_english": "Basilica of Pompeii",
@@ -3162,7 +3204,10 @@
           "https://madainproject.com/theater_complex_of_pompeii",
           "https://pompeiiarchaeologicalpark.com/the-large-theater-and-odeon-of-pompeii/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Scavi Archeologici di Pompei - Teatro Grande.JPG?width=800",
+        "image_credit": "The Large Theatre (Teatro Grande) at Pompeii · Wikimedia Commons",
+        "image_alt": "Ancient Roman large theatre ruins at Pompeii"
       }
     },
     {
@@ -3260,7 +3305,10 @@
           "https://www.thetraveler.org/the-story-of-porta-marina-pompeii/",
           "https://madainproject.com/city_gates_of_ancient_pompeii"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porta Marina (7238355224).jpg?width=800",
+        "image_credit": "Porta Marina, the Marine Gate of Pompeii · Wikimedia Commons",
+        "image_alt": "Ancient Roman marine gate ruins at Pompeii"
       }
     },
     {
@@ -3273,7 +3321,10 @@
         ]
       },
       "properties": {
-        "id": "poi_herculaneum_city", "image_alt": "Overview of the ancient city of Herculaneum", "image_credit": "General view of the Herculaneum excavations · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Antigua ciudad de Herculano, Italia, 2023-03-27, DD 141.jpg?width=800",
+        "id": "poi_herculaneum_city",
+        "image_alt": "Overview of the ancient city of Herculaneum",
+        "image_credit": "General view of the Herculaneum excavations · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Antigua ciudad de Herculano, Italia, 2023-03-27, DD 141.jpg?width=800",
         "category": "city",
         "name_latin": "Herculaneum",
         "name_english": "Herculaneum",
@@ -3344,7 +3395,10 @@
         ]
       },
       "properties": {
-        "id": "poi_herculaneum_suburban_baths", "image_alt": "Exterior of the Suburban Baths at Herculaneum", "image_credit": "Suburban Baths of Herculaneum, exterior · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Herculaneo-vorstadtthermen-aussen.JPG?width=800",
+        "id": "poi_herculaneum_suburban_baths",
+        "image_alt": "Exterior of the Suburban Baths at Herculaneum",
+        "image_credit": "Suburban Baths of Herculaneum, exterior · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Herculaneo-vorstadtthermen-aussen.JPG?width=800",
         "category": "bathhouse",
         "name_latin": "Thermae Suburbanae",
         "name_english": "Suburban Baths",
@@ -4806,7 +4860,10 @@
         ]
       },
       "properties": {
-        "id": "poi_fort_corbridge", "image_alt": "Excavated remains of Corbridge Roman fort and town", "image_credit": "Corbridge Roman Site (Coria), Northumberland · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Corbridge Roman Site - geograph.org.uk - 3653736.jpg?width=800",
+        "id": "poi_fort_corbridge",
+        "image_alt": "Excavated remains of Corbridge Roman fort and town",
+        "image_credit": "Corbridge Roman Site (Coria), Northumberland · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Corbridge Roman Site - geograph.org.uk - 3653736.jpg?width=800",
         "category": "auxiliary_fort",
         "name_latin": "Coria",
         "name_english": "Corbridge Roman Fort",
@@ -6795,14 +6852,15 @@
         ]
       },
       "properties": {
-        "id": "poi_mons_claudianus", "ancient_sources": [
- {
-  "author": "CIL III 25 = ILS 2612 = I.Pan 39",
-  "work": "Dedicatory inscription of the centurion Annius Rufus",
-  "ref": "c. 103-117 CE",
-  "note": "This inscription records that Annius Rufus, a centurion of Legio XV Apollinaris, was placed in charge of the quarrying works at Mons Claudianus by \"the best emperor\" Trajan."
- }
-],
+        "id": "poi_mons_claudianus",
+        "ancient_sources": [
+          {
+            "author": "CIL III 25 = ILS 2612 = I.Pan 39",
+            "work": "Dedicatory inscription of the centurion Annius Rufus",
+            "ref": "c. 103-117 CE",
+            "note": "This inscription records that Annius Rufus, a centurion of Legio XV Apollinaris, was placed in charge of the quarrying works at Mons Claudianus by \"the best emperor\" Trajan."
+          }
+        ],
         "category": "quarry",
         "name_latin": "Mons Claudianus",
         "name_english": "Mons Claudianus Quarries",
@@ -13375,7 +13433,10 @@
           "https://pleiades.stoa.org/places/423083",
           "https://en.wikipedia.org/wiki/Horatii_and_Curiatii"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Albano Laziale Sepolcro degli Orazi e Curiazi.JPG?width=800",
+        "image_credit": "Tomb of the Horatii and Curiatii, Albano Laziale · Wikimedia Commons",
+        "image_alt": "Roman conical tomb with tower-like drums near Albano Laziale"
       }
     },
     {
@@ -13437,7 +13498,10 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Columbaria_of_Vigna_Codini"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Columbaria in the Vigna Codini.jpg?width=800",
+        "image_credit": "Interior of the Columbaria of Vigna Codini, Rome · Wikimedia Commons",
+        "image_alt": "Underground Roman columbarium with rows of burial niches"
       }
     },
     {
@@ -14183,7 +14247,10 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Tomb_of_Zechariah"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zkharia Hezir tombs.JPG?width=800",
+        "image_credit": "Tomb of Zechariah, Kidron Valley, Jerusalem · Wikimedia Commons",
+        "image_alt": "Monolithic rock-cut pyramid-roofed tomb in the Kidron Valley"
       }
     },
     {
@@ -14306,14 +14373,15 @@
         ]
       },
       "properties": {
-        "id": "poi_necropolis_hierapolis", "ancient_sources": [
- {
-  "author": "Inscription (tomb facade)",
-  "work": "Epitaph of T. Flavius Zeuxis",
-  "ref": "late 1st c. CE",
-  "note": "A merchant's tomb in the necropolis records that he built it for himself and his sons after sailing round Greece's dangerous Cape Malea to Italy seventy-two times over his trading career."
- }
-],
+        "id": "poi_necropolis_hierapolis",
+        "ancient_sources": [
+          {
+            "author": "Inscription (tomb facade)",
+            "work": "Epitaph of T. Flavius Zeuxis",
+            "ref": "late 1st c. CE",
+            "note": "A merchant's tomb in the necropolis records that he built it for himself and his sons after sailing round Greece's dangerous Cape Malea to Italy seventy-two times over his trading career."
+          }
+        ],
         "category": "necropolis",
         "name_latin": "Necropolis Hierapolitana",
         "name_english": "Hierapolis Necropolis",
@@ -14341,14 +14409,15 @@
         ]
       },
       "properties": {
-        "id": "poi_valley_of_tombs_palmyra", "ancient_sources": [
- {
-  "author": "Palmyrene inscription, Tower of Elahbel",
-  "work": "Founder's dedicatory inscription",
-  "ref": "103 CE",
-  "note": "A carved Aramaic inscription on this Valley-of-the-Tombs tower records that it was built by the Palmyrene citizen Marcus Ulpius Elahbel and his three brothers as a family funerary tower."
- }
-],
+        "id": "poi_valley_of_tombs_palmyra",
+        "ancient_sources": [
+          {
+            "author": "Palmyrene inscription, Tower of Elahbel",
+            "work": "Founder's dedicatory inscription",
+            "ref": "103 CE",
+            "note": "A carved Aramaic inscription on this Valley-of-the-Tombs tower records that it was built by the Palmyrene citizen Marcus Ulpius Elahbel and his three brothers as a family funerary tower."
+          }
+        ],
         "category": "necropolis",
         "name_latin": "Vallis Sepulcrorum",
         "name_english": "Valley of the Tombs",
@@ -14922,7 +14991,9 @@
       },
       "properties": {
         "id": "poi_ludus_alexandria",
-        "built_date": {"display":"By the late 1st century CE"},
+        "built_date": {
+          "display": "By the late 1st century CE"
+        },
         "category": "ludus",
         "name_latin": "Ludus Alexandrinus",
         "name_english": "Gladiator School of Alexandria",
@@ -16028,7 +16099,10 @@
       },
       "properties": {
         "id": "poi_ermita_virgen_pilar_dam",
-        "built_date": {"earliest":1,"latest":200},
+        "built_date": {
+          "earliest": 1,
+          "latest": 200
+        },
         "category": "dam",
         "name_latin": "Ermita de la Virgen del Pilar Dam",
         "name_english": "Ermita de la Virgen del Pilar Dam",
@@ -16492,7 +16566,10 @@
           "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Dbeneventum",
           "https://italyastheromansdid.it/2025/01/18/roman-benevento-beneventum/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Benevento-Mura longobarde.jpg?width=800",
+        "image_credit": "Ancient city walls of Benevento · Wikimedia Commons",
+        "image_alt": "Stretch of the old defensive walls of Benevento"
       }
     },
     {
@@ -16733,7 +16810,10 @@
         ]
       },
       "properties": {
-        "id": "poi_paestum_amphitheater", "image_alt": "Ruins of the Roman amphitheater at Paestum", "image_credit": "Amphitheater of Paestum · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anfiteatro Paestum 06.JPG?width=800",
+        "id": "poi_paestum_amphitheater",
+        "image_alt": "Ruins of the Roman amphitheater at Paestum",
+        "image_credit": "Amphitheater of Paestum · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anfiteatro Paestum 06.JPG?width=800",
         "category": "amphitheater",
         "name_latin": "Amphitheatrum Paestanum",
         "name_english": "Paestum Amphitheater",
@@ -16768,7 +16848,10 @@
         ]
       },
       "properties": {
-        "id": "poi_paestum_walls", "image_alt": "Section of the ancient city walls of Paestum", "image_credit": "City walls of Paestum · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paestum muralla 03.JPG?width=800",
+        "id": "poi_paestum_walls",
+        "image_alt": "Section of the ancient city walls of Paestum",
+        "image_credit": "City walls of Paestum · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paestum muralla 03.JPG?width=800",
         "category": "wall",
         "name_latin": "Moenia Paestana",
         "name_english": "City Walls of Paestum",
@@ -16817,7 +16900,10 @@
           "https://www.wikidata.org/wiki/Q28000651",
           "https://parchipaestumvelia.cultura.gov.it/en/scopri-i-parchi/the-wall-of-paestum/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porta Sirena (Paestum).jpg?width=800",
+        "image_credit": "Porta Sirena, the eastern gate of Paestum · Wikimedia Commons",
+        "image_alt": "Ancient stone city gate of Paestum"
       }
     },
     {
@@ -17159,7 +17245,14 @@
           "http://worldimages.sjsu.edu/objects-1/info?page=38&query=Portfolios%3D91"
         ],
         "confidence": "high",
-        "ancient_sources": [{"author": "CIL VIII", "work": "Career and building dedication of L. Cosinius Primus", "ref": "2nd c. CE", "note": "A stone inscription records the career of the local aedile and duumvir L. Cosinius Primus, who built the market's colonnades, statues, weighing-station, and central tholos together with his brother."}],
+        "ancient_sources": [
+          {
+            "author": "CIL VIII",
+            "work": "Career and building dedication of L. Cosinius Primus",
+            "ref": "2nd c. CE",
+            "note": "A stone inscription records the career of the local aedile and duumvir L. Cosinius Primus, who built the market's colonnades, statues, weighing-station, and central tholos together with his brother."
+          }
+        ],
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Table%20de%20mesure%20au%20march%C3%A9%20de%20Dj%C3%A9mila.jpg?width=800",
         "image_credit": "Measuring table, Market of Cosinius, Djemila · Wikimedia Commons"
       }
@@ -17191,7 +17284,14 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/GM_Djemila_Roman_Theatre01.jpg?width=800",
         "image_credit": "Roman theatre of Cuicul, Djemila · Wikimedia Commons",
-        "ancient_sources": [{"author": "CIL VIII 8300 = ILS 368", "work": "Theatre dedication inscription", "ref": "161 CE", "note": "The dedication, opening \"to the Harmony of the Emperors,\" names local patrons Gaius Julius Crescens and Gaius Julius Didius Crescentianus and dates the theatre's construction to the joint reign of Marcus Aurelius and Lucius Verus."}]
+        "ancient_sources": [
+          {
+            "author": "CIL VIII 8300 = ILS 368",
+            "work": "Theatre dedication inscription",
+            "ref": "161 CE",
+            "note": "The dedication, opening \"to the Harmony of the Emperors,\" names local patrons Gaius Julius Crescens and Gaius Julius Didius Crescentianus and dates the theatre's construction to the joint reign of Marcus Aurelius and Lucius Verus."
+          }
+        ]
       }
     },
     {
@@ -17221,7 +17321,14 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Les_grands_thermes_de_Dj%C3%A9mila.jpg?width=800",
         "image_credit": "Great Baths of Djemila · Wikimedia Commons",
-        "ancient_sources": [{"author": "CIL VIII", "work": "Baths dedication inscription", "ref": "183/184 CE", "note": "Two inscriptions found at the Great Baths date their dedication to the reign of Commodus, recording that the town itself, the Respublica Cuiculitanorum, paid for the complex."}]
+        "ancient_sources": [
+          {
+            "author": "CIL VIII",
+            "work": "Baths dedication inscription",
+            "ref": "183/184 CE",
+            "note": "Two inscriptions found at the Great Baths date their dedication to the reign of Commodus, recording that the town itself, the Respublica Cuiculitanorum, paid for the complex."
+          }
+        ]
       }
     },
     {
@@ -17312,7 +17419,14 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Arch_of_Caracalla,_Cuicul_(Dj%C3%A9mila),_Numidia,_Algeria.jpg?width=800",
         "image_credit": "Arch of Caracalla, Cuicul (Djemila) · photo by Carole Raddato · Wikimedia Commons (CC BY-SA 2.0)",
-        "ancient_sources": [{"author": "CIL VIII.1, 8321 + 20137", "work": "Triumphal arch dedication", "ref": "216 CE", "note": "The arch's attic inscription reads \"the town council decreed and the community built this triumphal arch from the ground up,\" dedicating it to Caracalla, his mother Julia Domna, and his deified father Septimius Severus."}]
+        "ancient_sources": [
+          {
+            "author": "CIL VIII.1, 8321 + 20137",
+            "work": "Triumphal arch dedication",
+            "ref": "216 CE",
+            "note": "The arch's attic inscription reads \"the town council decreed and the community built this triumphal arch from the ground up,\" dedicating it to Caracalla, his mother Julia Domna, and his deified father Septimius Severus."
+          }
+        ]
       }
     },
     {
@@ -17342,7 +17456,14 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Temple_of_the_Gens_Septimia,_Cuicul_(Dj%C3%A9mila),_Numidia,_Algeria_-_52663783387.jpg?width=800",
         "image_credit": "Temple of the Gens Septimia, Cuicul (Djemila) · photo by Carole Raddato · Wikimedia Commons (CC BY-SA 2.0)",
-        "ancient_sources": [{"author": "CIL VIII", "work": "Temple dedication inscription", "ref": "229 CE", "note": "A fragmentary inscription found at the temple dates its dedication, under Severus Alexander, to the Severan imperial dynasty, the Gens Septimia."}]
+        "ancient_sources": [
+          {
+            "author": "CIL VIII",
+            "work": "Temple dedication inscription",
+            "ref": "229 CE",
+            "note": "A fragmentary inscription found at the temple dates its dedication, under Severus Alexander, to the Severan imperial dynasty, the Gens Septimia."
+          }
+        ]
       }
     },
     {
@@ -18195,7 +18316,14 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jerash_-_The_Temple_of_Artemis.JPG?width=800",
         "image_credit": "The Temple of Artemis, Jerash · Wikimedia Commons (CC BY-SA)",
-        "ancient_sources": [{"author": "Welles 1938, no. 60", "work": "Dedicatory inscription, sanctuary propylaea", "ref": "150 CE", "note": "An inscription on the monumental gateway into the sanctuary records its formal dedication under Antoninus Pius, matching this site's own dating - the temple did not yet exist at this map's 117 CE snapshot."}]
+        "ancient_sources": [
+          {
+            "author": "Welles 1938, no. 60",
+            "work": "Dedicatory inscription, sanctuary propylaea",
+            "ref": "150 CE",
+            "note": "An inscription on the monumental gateway into the sanctuary records its formal dedication under Antoninus Pius, matching this site's own dating - the temple did not yet exist at this map's 117 CE snapshot."
+          }
+        ]
       }
     },
     {
@@ -18647,7 +18775,10 @@
           "https://www.romeartlover.it/Trier.html"
         ],
         "confidence": "medium",
-        "ancient_sources": []
+        "ancient_sources": [],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trier Porta Nigra BW 5.JPG?width=800",
+        "image_credit": "Porta Nigra, the best-preserved surviving gate of Augusta Treverorum's city walls · Wikimedia Commons",
+        "image_alt": "The Porta Nigra Roman city gate in Trier"
       }
     },
     {
@@ -18868,7 +18999,10 @@
         ]
       },
       "properties": {
-        "id": "poi_lepcis_old_forum", "image_alt": "Colonnaded ruins of the Old Forum at Leptis Magna", "image_credit": "Old Forum, Leptis Magna · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Forum Leptis Magna 04.JPG?width=800",
+        "id": "poi_lepcis_old_forum",
+        "image_alt": "Colonnaded ruins of the Old Forum at Leptis Magna",
+        "image_credit": "Old Forum, Leptis Magna · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Forum Leptis Magna 04.JPG?width=800",
         "category": "forum",
         "name_latin": "Forum Vetus Lepcis Magnae",
         "name_english": "Old Forum of Leptis Magna",
@@ -19107,7 +19241,10 @@
         ]
       },
       "properties": {
-        "id": "poi_lepcis_amphitheatre", "image_alt": "Aerial view of the Roman amphitheatre at Leptis Magna", "image_credit": "Amphitheatre of Leptis Magna · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Leptis Magna amphitheatre - panoramio.jpg?width=800",
+        "id": "poi_lepcis_amphitheatre",
+        "image_alt": "Aerial view of the Roman amphitheatre at Leptis Magna",
+        "image_credit": "Amphitheatre of Leptis Magna · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Leptis Magna amphitheatre - panoramio.jpg?width=800",
         "category": "amphitheater",
         "name_latin": "Amphitheatrum",
         "name_english": "Amphitheatre of Leptis Magna",
@@ -19176,14 +19313,15 @@
         ]
       },
       "properties": {
-        "id": "poi_lepcis_hadrianic_baths", "ancient_sources": [
- {
-  "author": "IRT 361",
-  "work": "Dedicatory inscription",
-  "ref": "c. 127-128 CE",
-  "note": "Records the governor Publius Valerius Priscus, acting through his legate Popilius Celer, formally opening the bathhouse under Hadrian."
- }
-],
+        "id": "poi_lepcis_hadrianic_baths",
+        "ancient_sources": [
+          {
+            "author": "IRT 361",
+            "work": "Dedicatory inscription",
+            "ref": "c. 127-128 CE",
+            "note": "Records the governor Publius Valerius Priscus, acting through his legate Popilius Celer, formally opening the bathhouse under Hadrian."
+          }
+        ],
         "category": "bathhouse",
         "name_latin": "Thermae Hadrianae",
         "name_english": "Hadrianic Baths of Leptis Magna",
@@ -19245,7 +19383,10 @@
         ]
       },
       "properties": {
-        "id": "poi_lepcis_arch_septimius_severus", "image_alt": "The tetrapylon Arch of Septimius Severus at Leptis Magna", "image_credit": "Arch of Septimius Severus, Leptis Magna · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The Arch of Septimius Severus (Leptis Magna).jpg?width=800",
+        "id": "poi_lepcis_arch_septimius_severus",
+        "image_alt": "The tetrapylon Arch of Septimius Severus at Leptis Magna",
+        "image_credit": "Arch of Septimius Severus, Leptis Magna · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The Arch of Septimius Severus (Leptis Magna).jpg?width=800",
         "category": "arch",
         "name_latin": "Arcus Septimii Severi",
         "name_english": "Arch of Septimius Severus",
@@ -19401,7 +19542,10 @@
         ]
       },
       "properties": {
-        "id": "poi_sabratha_theatre", "image_alt": "The restored scaenae frons of the Roman theatre at Sabratha", "image_credit": "Roman Theatre of Sabratha · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theatre of Sabratha, Libya.jpg?width=800",
+        "id": "poi_sabratha_theatre",
+        "image_alt": "The restored scaenae frons of the Roman theatre at Sabratha",
+        "image_credit": "Roman Theatre of Sabratha · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theatre of Sabratha, Libya.jpg?width=800",
         "category": "theater",
         "name_latin": "Theatrum",
         "name_english": "Theatre of Sabratha",
@@ -19806,7 +19950,10 @@
         ]
       },
       "properties": {
-        "id": "poi_tibur_hadrians_villa", "image_alt": "The Canopus canal and Serapeum at Hadrian's Villa", "image_credit": "The Canopus and Serapeum, Hadrian's Villa, Tivoli · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The so-called Serapeum, The so-called Serapeum was a monumental summer cenatio with nymphaeum set at the southern end of the Canopus, Hadrian's Villa (37679255384).jpg?width=800",
+        "id": "poi_tibur_hadrians_villa",
+        "image_alt": "The Canopus canal and Serapeum at Hadrian's Villa",
+        "image_credit": "The Canopus and Serapeum, Hadrian's Villa, Tivoli · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The so-called Serapeum, The so-called Serapeum was a monumental summer cenatio with nymphaeum set at the southern end of the Canopus, Hadrian's Villa (37679255384).jpg?width=800",
         "category": "villa",
         "name_latin": "Villa Hadriana",
         "name_english": "Hadrian's Villa",
@@ -20107,7 +20254,10 @@
           "https://corvinus.nl/2018/12/24/palestrina-the-duomo/",
           "https://en.wikipedia.org/wiki/Palestrina_Cathedral"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Basilica and Aula Absidata in Palestrina 1.JPG?width=800",
+        "image_credit": "Remains of the Basilica and Aula Absidata in the forum area of ancient Praeneste · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman basilica at Palestrina (ancient Praeneste)"
       }
     },
     {
@@ -20121,7 +20271,9 @@
       },
       "properties": {
         "id": "poi_amphitheatre_capua",
-        "built_date": {"display":"Augustan era, or a century later — sources disagree"},
+        "built_date": {
+          "display": "Augustan era, or a century later — sources disagree"
+        },
         "category": "amphitheater",
         "name_latin": "Amphitheatrum Campanum",
         "name_english": "Amphitheatre of Capua",
@@ -20236,7 +20388,10 @@
           "https://museocampanocapua.it/post/la-dea-diana-e-il-suo-tempio",
           "https://en.wikipedia.org/wiki/Sant%27Angelo_in_Formis"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Abbazia Benedettina - S. Angelo in Formis.jpg?width=800",
+        "image_credit": "The Basilica of Sant'Angelo in Formis, built on the podium of the Temple of Diana Tifatina · Wikimedia Commons",
+        "image_alt": "The Basilica of Sant'Angelo in Formis on the site of the Temple of Diana Tifatina"
       }
     },
     {
@@ -20287,7 +20442,10 @@
       },
       "properties": {
         "id": "poi_temple_apollo_cumae",
-        "built_date": {"earliest":-27,"latest":14},
+        "built_date": {
+          "earliest": -27,
+          "latest": 14
+        },
         "category": "temple",
         "name_latin": "Templum Apollinis Cumanum",
         "name_english": "Temple of Apollo at Cumae",
@@ -20368,7 +20526,10 @@
           "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Cumae",
           "https://www.britannica.com/place/Cumae"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cumae acropolis wall AvL.JPG?width=800",
+        "image_credit": "Surviving section of the ancient city walls at Cumae's acropolis · Wikimedia Commons",
+        "image_alt": "Ancient wall of the Cumae acropolis"
       }
     },
     {
@@ -20503,7 +20664,10 @@
       },
       "properties": {
         "id": "poi_amphitheater_cumae",
-        "built_date": {"earliest":-200,"latest":-100},
+        "built_date": {
+          "earliest": -200,
+          "latest": -100
+        },
         "category": "amphitheater",
         "name_latin": "Amphitheatrum Cumanum",
         "name_english": "Amphitheater of Cumae",
@@ -21077,7 +21241,10 @@
           "https://www.travelemiliaromagna.it/en/ancient-roman-ariminum/",
           "https://riminiturismo.it/en/what-see/art-and-culture/piazzas-loggias-and-historical-routes/piazza-tre-martiri"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rimini, piazza tre martiri, lastricato romano.JPG?width=800",
+        "image_credit": "Roman paving of the ancient forum of Ariminum, preserved in Piazza Tre Martiri, Rimini · Wikimedia Commons",
+        "image_alt": "Roman forum paving stones in Piazza Tre Martiri, Rimini"
       }
     },
     {
@@ -22002,7 +22169,10 @@
           "https://en.wikipedia.org/wiki/Provincial_forum_of_Tarraco",
           "https://followinghadrian.com/2023/01/23/winter-ad-122-3-hadrian-stays-in-tarraco-and-rebuilds-the-temple-of-augustus-hadrian1900/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Placa del Forum - Tarragona I.JPG?width=800",
+        "image_credit": "Remains of the Provincial Forum of Tarraco in Placa del Forum, Tarragona · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman provincial forum in Tarragona"
       }
     },
     {
@@ -22119,14 +22289,15 @@
         ]
       },
       "properties": {
-        "id": "poi_pergamon_trajaneum", "ancient_sources": [
- {
-  "author": "Inscription (temple entrance)",
-  "work": "Honorific dedication naming Trajan",
-  "ref": "early 2nd c. CE",
-  "note": "An inscription found by the temple's entrance hails Trajan as \"lord of the earth and the sea,\" part of the imperial-cult honors built into this temple."
- }
-],
+        "id": "poi_pergamon_trajaneum",
+        "ancient_sources": [
+          {
+            "author": "Inscription (temple entrance)",
+            "work": "Honorific dedication naming Trajan",
+            "ref": "early 2nd c. CE",
+            "note": "An inscription found by the temple's entrance hails Trajan as \"lord of the earth and the sea,\" part of the imperial-cult honors built into this temple."
+          }
+        ],
         "category": "temple",
         "name_latin": "Trajaneum",
         "name_english": "The Temple of Trajan",
@@ -22317,7 +22488,10 @@
           "https://www.wikidata.org/wiki/Q3399042",
           "https://www.persee.fr/doc/galia_0016-4119_2002_num_59_1_3050"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porte de France, one of the Roman gates of Nemausus, Nimes (14791662918).jpg?width=800",
+        "image_credit": "Porte de France, one of the surviving Roman gates of ancient Nemausus, Nimes · Wikimedia Commons",
+        "image_alt": "The Roman Porte de France gate in Nimes"
       }
     },
     {
@@ -22469,7 +22643,10 @@
           "https://en.wikipedia.org/wiki/Arles,_Roman_and_Romanesque_Monuments",
           "https://www.roamintheempire.com/index.php/2019/08/28/arelate-part-i/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Forum d'Arles 1.JPG?width=800",
+        "image_credit": "Remains of the Roman forum of Arelate (Arles), visible in Place du Forum · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman forum in Arles"
       }
     },
     {
@@ -22684,7 +22861,10 @@
           "https://en.vienne-condrieu.com/patrimoine-culturel/cybele-archaeological-garden-vienne-2/",
           "https://www.auvergnerhonealpes-tourisme.com/en/fiches/cybele-archaeological-garden/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin Archeologique de Cybele Vienne 02.jpg?width=800",
+        "image_credit": "Remains of the Roman forum precinct at the Jardin Archeologique de Cybele, Vienne · Wikimedia Commons",
+        "image_alt": "Roman ruins at the Cybele archaeological garden in Vienne"
       }
     },
     {
@@ -22724,7 +22904,10 @@
         ]
       },
       "properties": {
-        "id": "poi_narbo_horreum", "image_alt": "Roman underground warehouse galleries at the Horreum of Narbonne", "image_credit": "Underground galleries of the Horreum, Narbonne (Narbo Martius) · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman Horreum, Narbonne (19347913742).jpg?width=800",
+        "id": "poi_narbo_horreum",
+        "image_alt": "Roman underground warehouse galleries at the Horreum of Narbonne",
+        "image_credit": "Underground galleries of the Horreum, Narbonne (Narbo Martius) · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman Horreum, Narbonne (19347913742).jpg?width=800",
         "category": "warehouse",
         "name_latin": "Horreum",
         "name_english": "The Horreum of Narbonne",
@@ -22874,7 +23057,10 @@
         ]
       },
       "properties": {
-        "id": "poi_massilia_ramparts_porte_italie", "image_alt": "Excavated Hellenistic-era ramparts of ancient Massalia", "image_credit": "Jardin des Vestiges — Hellenistic ramparts of ancient Massalia, Marseille · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marseille - Le jardin des vestiges.JPG?width=800",
+        "id": "poi_massilia_ramparts_porte_italie",
+        "image_alt": "Excavated Hellenistic-era ramparts of ancient Massalia",
+        "image_credit": "Jardin des Vestiges — Hellenistic ramparts of ancient Massalia, Marseille · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marseille - Le jardin des vestiges.JPG?width=800",
         "category": "wall",
         "name_latin": "Teichea Massalias (reconstructed)",
         "name_english": "Hellenistic Ramparts and Porte d'Italie",
@@ -23234,7 +23420,10 @@
           "https://fr.wikipedia.org/wiki/Porte_Baz%C3%A9e",
           "https://www.fondation-patrimoine.org/les-projets/porte-bazee-a-reims/85229"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porte Brazee Reims 022.jpg?width=800",
+        "image_credit": "Porte Bazee, remnant of a Roman-era gate incorporated into Reims's later fortifications · Wikimedia Commons",
+        "image_alt": "The Porte Bazee gate remnant in Reims"
       }
     },
     {
@@ -23311,7 +23500,10 @@
         ]
       },
       "properties": {
-        "id": "poi_theatre_frejus", "image_alt": "Ruins of the Roman theatre at Fréjus", "image_credit": "Roman Theatre of Fréjus (Forum Julii) · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Théâtre romain de Fréjus et buste de Léotard.jpg?width=800",
+        "id": "poi_theatre_frejus",
+        "image_alt": "Ruins of the Roman theatre at Fréjus",
+        "image_credit": "Roman Theatre of Fréjus (Forum Julii) · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Théâtre romain de Fréjus et buste de Léotard.jpg?width=800",
         "category": "theater",
         "name_latin": "Theatrum Forum Iulii",
         "name_english": "Roman Theatre of Frejus",
@@ -23422,7 +23614,10 @@
         "sources": [
           "https://www.persee.fr/doc/ran_0557-7705_1990_num_23_1_1356"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Frejus - Porte d'Oree - 1.jpg?width=800",
+        "image_credit": "Porte Doree, surviving arches of the Roman baths complex at Forum Julii, Frejus · Wikimedia Commons",
+        "image_alt": "Roman arches of the Porte Doree in Frejus"
       }
     },
     {
@@ -23679,7 +23874,10 @@
         ]
       },
       "properties": {
-        "id": "poi_forum_basilica_verulamium", "image_alt": "Reconstruction illustration of the Roman forum at Verulamium", "image_credit": "Artist's impression of the Forum of Verulamium · Wikimedia Commons", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Artist impression of the Forum of Verulamium (16207649850).jpg?width=800",
+        "id": "poi_forum_basilica_verulamium",
+        "image_alt": "Reconstruction illustration of the Roman forum at Verulamium",
+        "image_credit": "Artist's impression of the Forum of Verulamium · Wikimedia Commons",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Artist impression of the Forum of Verulamium (16207649850).jpg?width=800",
         "category": "forum",
         "name_latin": "Forum et Basilica Verulamii",
         "name_english": "Forum and Basilica of Verulamium",
@@ -27680,7 +27878,9 @@
       },
       "properties": {
         "id": "poi_theatre_stadium_aegina",
-        "built_date": {"display":"5th–4th century BCE (Classical period)"},
+        "built_date": {
+          "display": "5th–4th century BCE (Classical period)"
+        },
         "category": "theater",
         "name_latin": "",
         "name_english": "Theatre and Stadium of Aegina",
@@ -27714,14 +27914,15 @@
         ]
       },
       "properties": {
-        "id": "poi_sebasteion_aphrodisias", "ancient_sources": [
- {
-  "author": "I.Aphrodisias 2007",
-  "work": "Sebasteion dedication inscription",
-  "ref": "mid-1st c. CE (Tiberius-Nero)",
-  "note": "The complex's own dedication reads \"to Aphrodite, the Divine Augusti, and the People,\" naming the local family who paid to build it."
- }
-],
+        "id": "poi_sebasteion_aphrodisias",
+        "ancient_sources": [
+          {
+            "author": "I.Aphrodisias 2007",
+            "work": "Sebasteion dedication inscription",
+            "ref": "mid-1st c. CE (Tiberius-Nero)",
+            "note": "The complex's own dedication reads \"to Aphrodite, the Divine Augusti, and the People,\" naming the local family who paid to build it."
+          }
+        ],
         "category": "temple",
         "name_latin": "Sebasteion",
         "name_english": "Aphrodisias Sebasteion",
@@ -27751,14 +27952,15 @@
         ]
       },
       "properties": {
-        "id": "poi_stadium_aphrodisias", "ancient_sources": [
- {
-  "author": "Inscription (seat reservations)",
-  "work": "Topos inscriptions cut into the stadium benches",
-  "ref": "2nd-6th c. CE",
-  "note": "Rows of seats are labeled \"place of...\" for specific trade guilds, including tanners, goldsmiths, and gardeners, showing how the stadium's seating was parceled out by guild."
- }
-],
+        "id": "poi_stadium_aphrodisias",
+        "ancient_sources": [
+          {
+            "author": "Inscription (seat reservations)",
+            "work": "Topos inscriptions cut into the stadium benches",
+            "ref": "2nd-6th c. CE",
+            "note": "Rows of seats are labeled \"place of...\" for specific trade guilds, including tanners, goldsmiths, and gardeners, showing how the stadium's seating was parceled out by guild."
+          }
+        ],
         "category": "monument",
         "name_latin": "Stadium Aphrodisiense",
         "name_english": "Aphrodisias Stadium",
@@ -27787,14 +27989,15 @@
         ]
       },
       "properties": {
-        "id": "poi_theatre_aphrodisias", "ancient_sources": [
- {
-  "author": "I.Aphrodisias 2007, 8.5",
-  "work": "Stage-building dedication of C. Julius Zoilos",
-  "ref": "c. 30-27 BCE",
-  "note": "An inscription cut into the stage building records that Zoilos, a freedman of Augustus who returned home wealthy, personally paid for the stage, its proscenium, and all its decoration."
- }
-],
+        "id": "poi_theatre_aphrodisias",
+        "ancient_sources": [
+          {
+            "author": "I.Aphrodisias 2007, 8.5",
+            "work": "Stage-building dedication of C. Julius Zoilos",
+            "ref": "c. 30-27 BCE",
+            "note": "An inscription cut into the stage building records that Zoilos, a freedman of Augustus who returned home wealthy, personally paid for the stage, its proscenium, and all its decoration."
+          }
+        ],
         "category": "theater",
         "name_latin": "Theatrum Aphrodisiense",
         "name_english": "Aphrodisias Theatre",
@@ -27945,14 +28148,15 @@
         ]
       },
       "properties": {
-        "id": "poi_baths_of_hadrian_aphrodisias", "ancient_sources": [
- {
-  "author": "Inscription series (bath architecture)",
-  "work": "Dedicatory inscriptions naming Hadrian Olympios and Panhellenios",
-  "ref": "after 128/129 CE",
-  "note": "Inscriptions carved into the bath complex name Hadrian with two of his special titles, dating the building to well after this map's 117 CE snapshot."
- }
-],
+        "id": "poi_baths_of_hadrian_aphrodisias",
+        "ancient_sources": [
+          {
+            "author": "Inscription series (bath architecture)",
+            "work": "Dedicatory inscriptions naming Hadrian Olympios and Panhellenios",
+            "ref": "after 128/129 CE",
+            "note": "Inscriptions carved into the bath complex name Hadrian with two of his special titles, dating the building to well after this map's 117 CE snapshot."
+          }
+        ],
         "category": "bath",
         "name_latin": "Thermae Hadrianae",
         "name_english": "Aphrodisias Baths of Hadrian",
@@ -27981,14 +28185,15 @@
         ]
       },
       "properties": {
-        "id": "poi_bouleuterion_odeon_aphrodisias", "ancient_sources": [
- {
-  "author": "Inscription (statue base)",
-  "work": "Honorific base for L. Antonius Claudius Diogenes Dometeinos",
-  "ref": "c. 200 CE",
-  "note": "A statue base at the council house's entrance honors a prominent local citizen, tying his family's name to a building raised well after 117 CE."
- }
-],
+        "id": "poi_bouleuterion_odeon_aphrodisias",
+        "ancient_sources": [
+          {
+            "author": "Inscription (statue base)",
+            "work": "Honorific base for L. Antonius Claudius Diogenes Dometeinos",
+            "ref": "c. 200 CE",
+            "note": "A statue base at the council house's entrance honors a prominent local citizen, tying his family's name to a building raised well after 117 CE."
+          }
+        ],
         "category": "curia",
         "name_latin": "Bouleuterion / Odeum",
         "name_english": "Aphrodisias Bouleuterion",
@@ -28137,14 +28342,15 @@
         ]
       },
       "properties": {
-        "id": "poi_nymphaeum_tritons_hierapolis", "ancient_sources": [
- {
-  "author": "Inscription (architrave block)",
-  "work": "Dedicatory inscription, Nymphaeum of the Tritons",
-  "ref": "222-235 CE (reign of Severus Alexander)",
-  "note": "An inscription carved into the fountain's architrave dates the monument to over a century after this map's 117 CE snapshot - it did not yet exist at the time."
- }
-],
+        "id": "poi_nymphaeum_tritons_hierapolis",
+        "ancient_sources": [
+          {
+            "author": "Inscription (architrave block)",
+            "work": "Dedicatory inscription, Nymphaeum of the Tritons",
+            "ref": "222-235 CE (reign of Severus Alexander)",
+            "note": "An inscription carved into the fountain's architrave dates the monument to over a century after this map's 117 CE snapshot - it did not yet exist at the time."
+          }
+        ],
         "category": "fountain",
         "name_latin": "Nymphaeum Tritonum",
         "name_english": "Hierapolis Nymphaeum of the Tritons",
@@ -28210,14 +28416,15 @@
         ]
       },
       "properties": {
-        "id": "poi_frontinus_gate_hierapolis", "ancient_sources": [
- {
-  "author": "Inscription (gate facade, Latin and Greek)",
-  "work": "Dedication to Domitian",
-  "ref": "c. 84-86 CE",
-  "note": "A bilingual inscription records that the Roman governor Sextus Julius Frontinus built the gate and dedicated it to Domitian, whose name was later chiseled out after his assassination."
- }
-],
+        "id": "poi_frontinus_gate_hierapolis",
+        "ancient_sources": [
+          {
+            "author": "Inscription (gate facade, Latin and Greek)",
+            "work": "Dedication to Domitian",
+            "ref": "c. 84-86 CE",
+            "note": "A bilingual inscription records that the Roman governor Sextus Julius Frontinus built the gate and dedicated it to Domitian, whose name was later chiseled out after his assassination."
+          }
+        ],
         "category": "gate",
         "name_latin": "Porta Domitiani / Via Frontiniana",
         "name_english": "Hierapolis Frontinus Gate",
@@ -28246,14 +28453,15 @@
         ]
       },
       "properties": {
-        "id": "poi_theatre_miletus", "ancient_sources": [
- {
-  "author": "Inscription (theatre seating block)",
-  "work": "Seat reservation, \"Place of the Jews, who are also called God-fearers\"",
-  "ref": "2nd c. CE",
-  "note": "One row of theatre seats carries a carved label reserving that block for the local Jewish community - direct evidence of who sat where in Roman Miletus."
- }
-],
+        "id": "poi_theatre_miletus",
+        "ancient_sources": [
+          {
+            "author": "Inscription (theatre seating block)",
+            "work": "Seat reservation, \"Place of the Jews, who are also called God-fearers\"",
+            "ref": "2nd c. CE",
+            "note": "One row of theatre seats carries a carved label reserving that block for the local Jewish community - direct evidence of who sat where in Roman Miletus."
+          }
+        ],
         "category": "theater",
         "name_latin": "Theatrum Milesium",
         "name_english": "Miletus Theatre",
@@ -28319,14 +28527,15 @@
         ]
       },
       "properties": {
-        "id": "poi_bouleuterion_miletus", "ancient_sources": [
- {
-  "author": "Inscription (architrave)",
-  "work": "Dedication by Timarchos and Herakleides for King Antiochus IV Epiphanes",
-  "ref": "175-164 BCE",
-  "note": "The council house's own architrave inscription records two Milesian brothers arranging for the Seleucid king to fund the building as a gift to the city's gods and people."
- }
-],
+        "id": "poi_bouleuterion_miletus",
+        "ancient_sources": [
+          {
+            "author": "Inscription (architrave)",
+            "work": "Dedication by Timarchos and Herakleides for King Antiochus IV Epiphanes",
+            "ref": "175-164 BCE",
+            "note": "The council house's own architrave inscription records two Milesian brothers arranging for the Seleucid king to fund the building as a gift to the city's gods and people."
+          }
+        ],
         "category": "curia",
         "name_latin": "Bouleuterion Milesium",
         "name_english": "Miletus Bouleuterion",
@@ -28588,14 +28797,15 @@
         ]
       },
       "properties": {
-        "id": "poi_bath_gymnasium_sardis", "ancient_sources": [
- {
-  "author": "Inscription (Marble Court architrave)",
-  "work": "Dedication to Julia Domna, Caracalla, and Geta",
-  "ref": "211-212 CE",
-  "note": "A monumental inscription dedicates the Marble Court's upper story to the emperor's family - Geta's name was later erased after his murder - about a century after this map's 117 CE snapshot."
- }
-],
+        "id": "poi_bath_gymnasium_sardis",
+        "ancient_sources": [
+          {
+            "author": "Inscription (Marble Court architrave)",
+            "work": "Dedication to Julia Domna, Caracalla, and Geta",
+            "ref": "211-212 CE",
+            "note": "A monumental inscription dedicates the Marble Court's upper story to the emperor's family - Geta's name was later erased after his murder - about a century after this map's 117 CE snapshot."
+          }
+        ],
         "category": "bathhouse",
         "name_latin": "Thermae et Gymnasium Sardianum",
         "name_english": "Sardis Roman Gymnasium and Bath Complex",
@@ -29158,14 +29368,15 @@
         ]
       },
       "properties": {
-        "id": "poi_harbor_antalya", "ancient_sources": [
- {
-  "author": "Strabo",
-  "work": "Geography",
-  "ref": "14.4.1",
-  "note": "Strabo describes Attaleia as a city founded by King Attalus II Philadelphus of Pergamon, who also had the harbor's entrance narrowed on his own orders."
- }
-],
+        "id": "poi_harbor_antalya",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "14.4.1",
+            "note": "Strabo describes Attaleia as a city founded by King Attalus II Philadelphus of Pergamon, who also had the harbor's entrance narrowed on his own orders."
+          }
+        ],
         "category": "harbor",
         "name_latin": "Portus Attaleiae",
         "name_english": "Old Harbor of Antalya",
@@ -29194,14 +29405,15 @@
         ]
       },
       "properties": {
-        "id": "poi_hadrians_gate_antalya", "ancient_sources": [
- {
-  "author": "Inscription series (gate facade, gilded bronze letters)",
-  "work": "Dedications to Hadrian naming Trajan",
-  "ref": "after 129 CE",
-  "note": "Two dedications to Hadrian once carried gilded bronze letters spelling out his adoptive father Trajan's name - surviving fragments are now scattered across museums in Vienna, Berlin, London, and Oxford."
- }
-],
+        "id": "poi_hadrians_gate_antalya",
+        "ancient_sources": [
+          {
+            "author": "Inscription series (gate facade, gilded bronze letters)",
+            "work": "Dedications to Hadrian naming Trajan",
+            "ref": "after 129 CE",
+            "note": "Two dedications to Hadrian once carried gilded bronze letters spelling out his adoptive father Trajan's name - surviving fragments are now scattered across museums in Vienna, Berlin, London, and Oxford."
+          }
+        ],
         "category": "gate",
         "name_latin": "Porta Hadriani",
         "name_english": "Hadrian's Gate",
@@ -29288,14 +29500,15 @@
         ]
       },
       "properties": {
-        "id": "poi_gate_perge", "ancient_sources": [
- {
-  "author": "Inscription series (statue bases, Latin and Greek)",
-  "work": "Dedications naming Plancia Magna",
-  "ref": "c. 119-122 CE",
-  "note": "Every statue base in the gate's horseshoe courtyard names the wealthy local benefactress Plancia Magna, who paid to renovate the old Hellenistic gate and fill it with statues of gods, ancestors, and the imperial family."
- }
-],
+        "id": "poi_gate_perge",
+        "ancient_sources": [
+          {
+            "author": "Inscription series (statue bases, Latin and Greek)",
+            "work": "Dedications naming Plancia Magna",
+            "ref": "c. 119-122 CE",
+            "note": "Every statue base in the gate's horseshoe courtyard names the wealthy local benefactress Plancia Magna, who paid to renovate the old Hellenistic gate and fill it with statues of gods, ancestors, and the imperial family."
+          }
+        ],
         "category": "gate",
         "name_latin": "Porta Pergae",
         "name_english": "Hellenistic City Gate of Perge",
@@ -29398,14 +29611,15 @@
         ]
       },
       "properties": {
-        "id": "poi_temple_athena_pergamon", "ancient_sources": [
- {
-  "author": "Inscription series (7 statue bases)",
-  "work": "Victory dedications of Attalos I to Athena Nikephoros",
-  "ref": "241/240-224/223 BCE",
-  "note": "A run of statue bases set up in the temple square records King Attalos I dedicating his early victories over the Galatians and rival Hellenistic generals to Athena Nikephoros."
- }
-],
+        "id": "poi_temple_athena_pergamon",
+        "ancient_sources": [
+          {
+            "author": "Inscription series (7 statue bases)",
+            "work": "Victory dedications of Attalos I to Athena Nikephoros",
+            "ref": "241/240-224/223 BCE",
+            "note": "A run of statue bases set up in the temple square records King Attalos I dedicating his early victories over the Galatians and rival Hellenistic generals to Athena Nikephoros."
+          }
+        ],
         "category": "temple",
         "name_latin": "Templum Athenae Nicephorae",
         "name_english": "Temple of Athena",
@@ -29492,14 +29706,15 @@
         ]
       },
       "properties": {
-        "id": "poi_baths_berytus", "ancient_sources": [
- {
-  "author": "Flavius Josephus",
-  "work": "Jewish Antiquities",
-  "ref": "19.335-337",
-  "note": "Josephus records that King Herod Agrippa I lavishly rebuilt Berytus with a theatre, an amphitheatre, porticoes, and baths, funding extravagant games to inaugurate them."
- }
-],
+        "id": "poi_baths_berytus",
+        "ancient_sources": [
+          {
+            "author": "Flavius Josephus",
+            "work": "Jewish Antiquities",
+            "ref": "19.335-337",
+            "note": "Josephus records that King Herod Agrippa I lavishly rebuilt Berytus with a theatre, an amphitheatre, porticoes, and baths, funding extravagant games to inaugurate them."
+          }
+        ],
         "category": "bath",
         "name_latin": "Thermae Berytenses",
         "name_english": "Beirut Roman Baths",
@@ -29644,14 +29859,15 @@
         ]
       },
       "properties": {
-        "id": "poi_temple_eshmun_sidon", "ancient_sources": [
- {
-  "author": "KAI 15 and KAI 16 (Bodashtart inscriptions)",
-  "work": "Building and restoration dedication of King Bodashtart",
-  "ref": "5th c. BCE",
-  "note": "Phoenician inscriptions carved into the temple's own podium blocks record that King Bodashtart, and later his son and heir Yatonmilk, expanded and restored the sanctuary of Eshmun."
- }
-],
+        "id": "poi_temple_eshmun_sidon",
+        "ancient_sources": [
+          {
+            "author": "KAI 15 and KAI 16 (Bodashtart inscriptions)",
+            "work": "Building and restoration dedication of King Bodashtart",
+            "ref": "5th c. BCE",
+            "note": "Phoenician inscriptions carved into the temple's own podium blocks record that King Bodashtart, and later his son and heir Yatonmilk, expanded and restored the sanctuary of Eshmun."
+          }
+        ],
         "category": "sanctuary",
         "name_latin": "Templum Eshmuni",
         "name_english": "Temple of Eshmun",
@@ -29717,14 +29933,15 @@
         ]
       },
       "properties": {
-        "id": "poi_eshmunazar_sarcophagus_sidon", "ancient_sources": [
- {
-  "author": "CIS I 3 / KAI 14",
-  "work": "Royal Phoenician funerary inscription of King Eshmunazar II",
-  "ref": "5th c. BCE",
-  "note": "The sarcophagus lid bears a long Phoenician inscription in which King Eshmunazar II recounts his lineage and building works and pronounces a curse against anyone who disturbs his burial."
- }
-],
+        "id": "poi_eshmunazar_sarcophagus_sidon",
+        "ancient_sources": [
+          {
+            "author": "CIS I 3 / KAI 14",
+            "work": "Royal Phoenician funerary inscription of King Eshmunazar II",
+            "ref": "5th c. BCE",
+            "note": "The sarcophagus lid bears a long Phoenician inscription in which King Eshmunazar II recounts his lineage and building works and pronounces a curse against anyone who disturbs his burial."
+          }
+        ],
         "category": "tomb",
         "name_latin": "Sarcophagus Eshmunazaris II",
         "name_english": "Tomb of Eshmunazar II",
@@ -29892,14 +30109,15 @@
         ]
       },
       "properties": {
-        "id": "poi_harbor_egyptian_tyre", "ancient_sources": [
- {
-  "author": "Strabo",
-  "work": "Geography",
-  "ref": "16.2.23",
-  "note": "Strabo describes Tyre as having two harbors, an enclosed northern \"Sidonian\" harbor and an open southern one he explicitly calls the \"Egyptian\" harbor."
- }
-],
+        "id": "poi_harbor_egyptian_tyre",
+        "ancient_sources": [
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "16.2.23",
+            "note": "Strabo describes Tyre as having two harbors, an enclosed northern \"Sidonian\" harbor and an open southern one he explicitly calls the \"Egyptian\" harbor."
+          }
+        ],
         "category": "harbor",
         "name_latin": "Portus Aegyptius",
         "name_english": "Egyptian Harbor, Tyre",
@@ -30021,14 +30239,15 @@
         ]
       },
       "properties": {
-        "id": "poi_via_nova_traiana_bostra", "ancient_sources": [
- {
-  "author": "CIL III 14149",
-  "work": "Roman milestone recording construction of the Via Nova Traiana",
-  "ref": "111 CE",
-  "note": "This Trajanic milestone records the new road built from Bostra to the Red Sea after Rome turned the former Nabataean kingdom into the province of Arabia, with Bostra as the road's starting point for mile-counting."
- }
-],
+        "id": "poi_via_nova_traiana_bostra",
+        "ancient_sources": [
+          {
+            "author": "CIL III 14149",
+            "work": "Roman milestone recording construction of the Via Nova Traiana",
+            "ref": "111 CE",
+            "note": "This Trajanic milestone records the new road built from Bostra to the Red Sea after Rome turned the former Nabataean kingdom into the province of Arabia, with Bostra as the road's starting point for mile-counting."
+          }
+        ],
         "category": "road",
         "name_latin": "Via Nova Traiana",
         "name_english": "Via Nova Traiana",
@@ -30262,14 +30481,15 @@
         ]
       },
       "properties": {
-        "id": "poi_bulla_regia_temple_isis", "ancient_sources": [
- {
-  "author": "AE 2005, 1690",
-  "work": "Votive altar",
-  "ref": "131-170 CE",
-  "note": "A later votive altar to Isis Augusta dedicated by P. Aelius Privatus and his wife Cocceia Bassa in fulfillment of a vow, set up before the temple podium after the original construction."
- }
-],
+        "id": "poi_bulla_regia_temple_isis",
+        "ancient_sources": [
+          {
+            "author": "AE 2005, 1690",
+            "work": "Votive altar",
+            "ref": "131-170 CE",
+            "note": "A later votive altar to Isis Augusta dedicated by P. Aelius Privatus and his wife Cocceia Bassa in fulfillment of a vow, set up before the temple podium after the original construction."
+          }
+        ],
         "category": "temple",
         "name_latin": "Templum Isidis Bullae Regiae",
         "name_english": "Temple of Isis",
@@ -30366,14 +30586,15 @@
         ]
       },
       "properties": {
-        "id": "poi_bulla_regia_memmian_baths", "ancient_sources": [
- {
-  "author": "ILAfr 454",
-  "work": "Statue base",
-  "ref": "early 3rd century CE",
-  "note": "Praises Julia Memmia for the extraordinary magnificence of the baths she funded for the city's beautification and public health."
- }
-],
+        "id": "poi_bulla_regia_memmian_baths",
+        "ancient_sources": [
+          {
+            "author": "ILAfr 454",
+            "work": "Statue base",
+            "ref": "early 3rd century CE",
+            "note": "Praises Julia Memmia for the extraordinary magnificence of the baths she funded for the city's beautification and public health."
+          }
+        ],
         "category": "bath",
         "name_latin": "Thermae Iuliae Memmiae",
         "name_english": "Memmian Baths",
@@ -31480,14 +31701,15 @@
         ]
       },
       "properties": {
-        "id": "poi_capitol_dougga", "ancient_sources": [
- {
-  "author": "CIL VIII 26609",
-  "work": "Honorary statue base",
-  "ref": "166-167 CE",
-  "note": "The pagus and civitas of Thugga thank L. Marcius Simplex for donating the Capitol; companion bases at the same find-spot honor his father and brother."
- }
-],
+        "id": "poi_capitol_dougga",
+        "ancient_sources": [
+          {
+            "author": "CIL VIII 26609",
+            "work": "Honorary statue base",
+            "ref": "166-167 CE",
+            "note": "The pagus and civitas of Thugga thank L. Marcius Simplex for donating the Capitol; companion bases at the same find-spot honor his father and brother."
+          }
+        ],
         "category": "temple",
         "name_latin": "Capitolium Thuggae",
         "name_english": "Capitol of Dougga",
@@ -31709,14 +31931,15 @@
         ]
       },
       "properties": {
-        "id": "poi_forum_dougga", "ancient_sources": [
- {
-  "author": "ILAfr 558",
-  "work": "Dedicatory inscription",
-  "ref": "c. 36-37 CE",
-  "note": "Thugga's earliest dated inscription, recording the paving of the forum and the ground before the Temple of Caesar, plus an altar of Augustus, an early temple of Saturn, and an arch, funded by L. Postumius Chius and his sons."
- }
-],
+        "id": "poi_forum_dougga",
+        "ancient_sources": [
+          {
+            "author": "ILAfr 558",
+            "work": "Dedicatory inscription",
+            "ref": "c. 36-37 CE",
+            "note": "Thugga's earliest dated inscription, recording the paving of the forum and the ground before the Temple of Caesar, plus an altar of Augustus, an early temple of Saturn, and an arch, funded by L. Postumius Chius and his sons."
+          }
+        ],
         "category": "forum",
         "name_latin": "Forum Thuggae",
         "name_english": "Forum of Dougga",
@@ -32133,14 +32356,15 @@
         ]
       },
       "properties": {
-        "id": "poi_theveste_arch_caracalla", "ancient_sources": [
- {
-  "author": "CIL VIII.1 7094-7098",
-  "work": "Dedicatory inscriptions",
-  "ref": "213-214 CE",
-  "note": "Five inscriptions across the arch's attic dedicated to the deified Septimius Severus, to Julia Domna, and to Caracalla."
- }
-],
+        "id": "poi_theveste_arch_caracalla",
+        "ancient_sources": [
+          {
+            "author": "CIL VIII.1 7094-7098",
+            "work": "Dedicatory inscriptions",
+            "ref": "213-214 CE",
+            "note": "Five inscriptions across the arch's attic dedicated to the deified Septimius Severus, to Julia Domna, and to Caracalla."
+          }
+        ],
         "category": "arch",
         "name_latin": "Arcus Caracallae",
         "name_english": "Arch of Caracalla",
@@ -40144,7 +40368,11 @@
       },
       "properties": {
         "id": "poi_villa_dar_buc_ammera_zliten",
-        "built_date": {"earliest":90,"latest":235,"display":"Flavian era (c. 100 CE) or Severan era (disputed)"},
+        "built_date": {
+          "earliest": 90,
+          "latest": 235,
+          "display": "Flavian era (c. 100 CE) or Severan era (disputed)"
+        },
         "category": "villa",
         "name_english": "Villa Dar Buc Ammera",
         "province": "Africa Proconsularis",
@@ -42916,8 +43144,7 @@
         ],
         "confidence": "low"
       }
-    }
-,
+    },
     {
       "type": "Feature",
       "geometry": {
@@ -43248,8 +43475,7 @@
         ],
         "confidence": "medium"
       }
-    }
-,
+    },
     {
       "type": "Feature",
       "geometry": {
@@ -43619,8 +43845,7 @@
         ],
         "confidence": "medium"
       }
-    }
-,
+    },
     {
       "type": "Feature",
       "geometry": {
@@ -44209,8 +44434,7 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Herod's_family_tomb_in_Nikoforieh,_Jerusalem._Tomb_of_Mariamne_LOC_matpc.23199.jpg?width=800",
         "image_credit": "G. Eric and Edith Matson Photograph Collection, Library of Congress"
       }
-    }
-,
+    },
     {
       "type": "Feature",
       "geometry": {
