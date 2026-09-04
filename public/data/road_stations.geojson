@@ -7368,7 +7368,9 @@
           "Itinerarium Antonini, Via Aurelia stage",
           "https://en.wikipedia.org/wiki/Luni,_Italy"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anfiteatro-luni.jpg?width=800",
+        "image_credit": "Amphitheatre of Luna (Luni), the city the road station sat beside · Wikimedia Commons"
       }
     },
     {
@@ -11320,7 +11322,9 @@
           "Antonine Itinerary (Iter VIII)",
           "https://roman-britain.co.uk/places/danum"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Danum shield.png?width=800",
+        "image_credit": "The Danum shield, a 1st-century Roman shield excavated at the Danum fort/station site, Doncaster · Wikimedia Commons"
       }
     },
     {
@@ -13941,7 +13945,9 @@
         "sources": [
           "Itin. Ant. (Iter a Vintimilio Arelate usque)"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le musée des docks romains (Marseille) (14214599736).jpg?width=800",
+        "image_credit": "Musée des Docks Romains, Marseille (ancient Massilia) · Wikimedia Commons"
       }
     },
     {
