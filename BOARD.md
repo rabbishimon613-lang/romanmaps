@@ -712,6 +712,15 @@ to prevent. Building locally to *test* your own work is expected and fine.
       naming on the Tabula Peutingeriana with its mileage to neighboring stations. Depth 98.9% →
       **100.0%, thin tail 5 → 0** — the standing task's thin-description queue is now empty.
       `npm run metrics` confirms 469/469 at 60+ words.*
+      *Batch 6 done 2026-09-04 by a cloud shift: `pois.geojson` grew from 469 to 1405 records in
+      the 6.5 months since batch 5's "closing" note, quietly regrowing a 40-record sub-60-word
+      tail (necropoleis/tombs at Tarquinia/Vulci/Palmyra/Alexandria, several Dougga/Apollonia/
+      Utica/Hierapolis/Theveste/Nicopolis civic buildings honestly `extant_117ce:false`). Same
+      standing-task pattern as batches 1-5, three parallel WebSearch passes, one genuinely new
+      researched fact per record (an excavation year, an exact measurement, a named excavator, an
+      inscription detail), sources merged not replaced, existing `built`/`extant_117ce` calls left
+      untouched. Depth 97.2% → **100.0% again, thin tail 40 → 0**. Standing task — will keep
+      regrowing as the file keeps growing; re-run `npm run metrics` periodically to catch it.*
 - [ ] `[15-P0-1]` **`unattended-screenshot-gate`** `fix` — ⚠️ **This blocks the daily pass from
       taking any UI ticket at all.** The gate below requires a screenshot at 375×812 dark and at
       desktop light, but the 09:30 editorial pass runs unattended and a dev server cannot be
