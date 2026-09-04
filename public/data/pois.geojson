@@ -1378,7 +1378,10 @@
           "https://en.wikipedia.org/wiki/Portus",
           "Simon Keay, Martin Millett, Kristian Strutt, Portus: An Archaeological Survey of the Port of Imperial Rome (British School at Rome, 2005)"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Portus - Claudius first harbour and hexagonal basin extension under Trajan.jpg?width=800",
+        "image_credit": "Reconstruction diagram of Portus's Claudian harbour and Trajanic hexagonal basin extension · Wikimedia Commons",
+        "image_alt": "Diagram showing the shape of Claudius's original harbour basin at Portus and Trajan's later hexagonal basin extension"
       }
     },
     {
@@ -2704,7 +2707,10 @@
           "https://www.timetravelrome.com/2023/12/04/carthago-nova-molinete-roman-forum-museum/",
           "https://www.wikidata.org/wiki/Q5721119"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Foro Romano de Cartagena 1.jpg?width=800",
+        "image_credit": "Roman forum district on the Molinete hill, Cartagena · Wikimedia Commons",
+        "image_alt": "Excavated remains of the Roman forum district on the Molinete hill in Cartagena, Spain"
       }
     },
     {
@@ -17511,6 +17517,9 @@
           "https://en.wikipedia.org/wiki/Dj%C3%A9mila"
         ],
         "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Baptistère (Djemila).jpg?width=800",
+        "image_credit": "Baptistery of the Christian quarter, Djemila (ancient Cuicul) · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman-era baptistery in the Christian quarter of Djemila, Algeria",
         "ancient_sources": []
       }
     },
