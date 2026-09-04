@@ -169,6 +169,18 @@ to prevent. Building locally to *test* your own work is expected and fine.
       at 375×812 in both light and dark, plus desktop light (unaffected — sheet is mobile-only).
 - [ ] `[13-P0-2]` **`image-audit`** `illustrate` — Audit all 303 existing images; flag and
       replace any modern photograph showing modern infrastructure. Cotinae is the test case.
+      **Partial pass 2026-09-04 (cloud shift):** fixed the named test case — `poi_rio_tinto_mines`
+      carried "Río Tinto, Huelva - Carretera A-461.jpg" (a modern highway photo, confirmed by its
+      own filename), replaced with the verified Commons file "Corta Atalaya-yacimiento.jpg" (the
+      actual open-pit mine Rome worked). Also ran a keyword scan (highway/parking/motorway/
+      billboard/apartment block/construction crane/etc.) across every `public/data/*.geojson`
+      `image_url`/`image_credit` field — only 2 more hits, both false positives ("Tramonto",
+      Italian for sunset, tripped a `tram` substring match). **Still fully open**: a real visual
+      audit of the other ~300 images needs either human eyes or working Commons image-fetch —
+      this environment's `WebFetch`/`curl` to `commons.wikimedia.org`/`en.wikipedia.org` return
+      `EGRESS_BLOCKED` (consistent with every prior shift's notes on this), so filename/credit
+      text is the only signal available here and it will miss anything not named after its own
+      modern content.
 - [x] `[05-P0-1]` **`places-in-view-list`** `polish` — Done 2026-08-18 by cloud shift 28. New
       `PlacesInViewList.tsx`: an accessible, keyboard-navigable listbox of every curated POI and
       site inside the current viewport, sorted by distance from the map center, live-updated on
