@@ -650,7 +650,9 @@
             "ref": "4.2",
             "note": "Statius, describing a banquet in Domitian's new palace hall, calls it vast enough to need \"as many columns as could shoulder the gods and the sky\" rather than the hundred columns of an ordinary great hall."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/1900 Reconstruction of the Domus Flavia by G Tognetti.jpg?width=800",
+        "image_credit": "1900 reconstruction drawing of the Domus Flavia, Palatine Hill, by G. Tognetti · Wikimedia Commons"
       }
     },
     {
@@ -1125,7 +1127,9 @@
             "ref": "20",
             "note": "The surviving summary of Livy's lost Book 20 records that Gaius Flaminius, as censor in 220 BCE, paved the Via Flaminia and built the Circus Flaminius in the same term of office."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Circus Flaminius by Giacomo Lauro.jpg?width=800",
+        "image_credit": "Circus Flaminius, Rome · 17th-c. engraving by Giacomo Lauro · Wikimedia Commons"
       }
     },
     {
@@ -1269,7 +1273,9 @@
             "ref": "31.2",
             "note": "Suetonius reports Nero's only comment on dedicating his finished palace: that he could at last begin to live like a human being."
           }
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Domus Aurea, Neros Golden House (36453906275).jpg?width=800",
+        "image_credit": "Domus Aurea (Nero's Golden House), Rome · Wikimedia Commons"
       }
     },
     {
@@ -1340,7 +1346,9 @@
           "https://en.wikipedia.org/wiki/Aqua_Virgo",
           "https://romanhistory.org/structures/aqua-virgo"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aqua virgo planrome.PNG?width=800",
+        "image_credit": "Route plan of the Aqua Virgo aqueduct in Rome · Wikimedia Commons"
       }
     },
     {
@@ -2600,7 +2608,9 @@
           "https://en.wikipedia.org/wiki/Aqueduct_of_the_Gier",
           "http://www.romanaqueducts.info/aquasite/gier1/index.html"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aqueduc du Gier-Chaponost-Plat de lAir-Conduite sur arc.JPG?width=800",
+        "image_credit": "Surviving arcades of the Aqueduct of the Gier at Chaponost, near Lyon · Wikimedia Commons"
       }
     },
     {
@@ -2842,7 +2852,9 @@
           "https://allthatsinteresting.com/cologne-germany-ancient-roman-ruins",
           "https://www.livius.org/articles/place/colonia-claudia-ara-agrippinensium-koln/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The Praetorium, the Roman Governors Palace of Lower Germania, Cologne (15759020064).jpg?width=800",
+        "image_credit": "Praetorium (Roman governor's palace) remains, Cologne, Germany · Wikimedia Commons"
       }
     },
     {
@@ -14123,7 +14135,9 @@
         "sources": [
           "https://www.sciencedaily.com/releases/2013/05/130510075521.htm"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carmona-Necropolis Romana-Elefante-20110916.jpg?width=800",
+        "image_credit": "Elephant Tomb, Roman Necropolis of Carmona, Spain · Wikimedia Commons"
       }
     },
     {
@@ -14149,7 +14163,9 @@
         "sources": [
           "https://www.spain.info/en/places-of-interest/area-funeraria-columbarios/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Columbarios romanos 01.jpg?width=800",
+        "image_credit": "Los Columbarios Roman necropolis, Merida, Spain · Wikimedia Commons"
       }
     },
     {
@@ -14622,7 +14638,9 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Tomb_of_the_Roman_Soldier"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman Soldier Tomb Facade Petra Jordan1410.jpg?width=800",
+        "image_credit": "Tomb of the Roman Soldier, Wadi Farasa, Petra, Jordan · Wikimedia Commons"
       }
     },
     {
@@ -17161,7 +17179,9 @@
           "https://en.wikipedia.org/wiki/Dj%C3%A9mila"
         ],
         "confidence": "medium",
-        "ancient_sources": []
+        "ancient_sources": [],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Colonnades du Forum, vestiges de de la cite antique Cuicul - A61522.jpg?width=800",
+        "image_credit": "Forum colonnades of Cuicul (Djemila), Algeria · Wikimedia Commons"
       }
     },
     {
@@ -19593,7 +19613,9 @@
         "sources": [
           "https://heroesofadventure.com/listing/roman-amphitheater-of-sabratha-unesco-libya/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amphitheatre, Sabratha (50144698711).jpg?width=800",
+        "image_credit": "Roman amphitheatre of Sabratha, Libya · Wikimedia Commons"
       }
     },
     {
@@ -19648,7 +19670,9 @@
         "sources": [
           "https://digital.kenyon.edu/baly/1027/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Remains of the Basilica of Justinian in Sabratha - Libya.JPG?width=800",
+        "image_credit": "Remains of the Basilica of Justinian, Sabratha, Libya · Wikimedia Commons"
       }
     },
     {
@@ -20000,7 +20024,9 @@
         "sources": [
           "https://www.tibursuperbum.it/eng/monumenti/Anfiteatro.htm"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anfiteatro di Bleso a Tivoli.jpg?width=800",
+        "image_credit": "Remains of the Amphitheatre of Bleso, Tivoli, Italy · Wikimedia Commons"
       }
     },
     {
@@ -20708,7 +20734,9 @@
           "https://en.wikipedia.org/wiki/Roman_amphitheatre_of_Italica",
           "https://whc.unesco.org/en/tentativelists/6376/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Italica amphitheatre Santiponce Andalucia Spain.JPG?width=800",
+        "image_credit": "Roman amphitheatre of Italica, Santiponce, Spain · Wikimedia Commons"
       }
     },
     {
@@ -23450,7 +23478,9 @@
           "https://fr.wikipedia.org/wiki/Aqueduc_de_Reims",
           "https://pop.culture.gouv.fr/notice/merimee/PA00097846"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aqueduc de Reims 08967.jpg?width=800",
+        "image_credit": "Remains of the Roman aqueduct of Reims, France · Wikimedia Commons"
       }
     },
     {
@@ -23716,7 +23746,9 @@
         "sources": [
           "https://fr.wikipedia.org/wiki/Thermes_de_Saint-Saloine_de_Saintes"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Thermes de St - Saloine, Saintes, Nouvelle-Aquitaine, France - panoramio.jpg?width=800",
+        "image_credit": "Saint-Saloine Baths (Thermes Saint-Saloine), Saintes, France · Wikimedia Commons"
       }
     },
     {
@@ -23743,7 +23775,9 @@
           "https://en.saintes-tourisme.fr/gallo-roman-aqueducts/",
           "https://pop.culture.gouv.fr/notice/merimee/PA00105313"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aqueduc romain de Saintes.jpg?width=800",
+        "image_credit": "Roman aqueduct (Pont des Arcs), Saintes, France · Wikimedia Commons"
       }
     },
     {
@@ -24454,7 +24488,9 @@
           "https://archaeology.org/news/2016/11/02/161102-segovia-aqueduct-coin/",
           "https://imperiumromanum.pl/en/discoveries/coin-indicates-different-date-when-famous-segovia-aqueduct-was-built/"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aqueduct of Segovia 02.jpg?width=800",
+        "image_credit": "Aqueduct of Segovia, Spain · Wikimedia Commons"
       }
     },
     {
@@ -24639,7 +24675,9 @@
           "http://www.romanaqueducts.info/aquasite/barcino/index.html",
           "https://link.springer.com/content/pdf/10.1007/s12685-013-0090-2.pdf"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Placa Nova, Barcelona, restored Roman aqueduct.JPG?width=800",
+        "image_credit": "Reconstructed arches of the Roman aqueduct of Barcino, Placa Nova, Barcelona · Wikimedia Commons"
       }
     },
     {
@@ -24758,7 +24796,9 @@
           "https://es.wikipedia.org/wiki/Teatro_romano_de_C%C3%B3rdoba",
           "https://en.wikipedia.org/wiki/Archaeological_and_Ethnological_Museum_of_C%C3%B3rdoba"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancient Roman theater in Cordoba (5).JPG?width=800",
+        "image_credit": "Roman Theatre of Corduba (Cordoba), Spain · Wikimedia Commons"
       }
     },
     {
@@ -27329,7 +27369,9 @@
           "https://en.wikipedia.org/wiki/Nicopolis",
           "https://diazoma.gr/en/theaters/roman-odeion-nicopolis/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman odeum Nicopolis, Greece.jpg?width=800",
+        "image_credit": "Roman Odeon of Nicopolis, near Preveza, Greece · Wikimedia Commons"
       }
     },
     {
@@ -32475,7 +32517,9 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Tebessa_Basilica"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Basilique tebessa 171422.jpg?width=800",
+        "image_credit": "Basilica of Saint Crispina, Theveste (Tebessa), Algeria · Wikimedia Commons"
       }
     },
     {
@@ -36152,7 +36196,9 @@
           "https://epub.lib.uoa.gr/index.php/aura/article/view/2187",
           "https://en.wikipedia.org/wiki/Hymettus"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hymettos Zeze quarry 01.jpg?width=800",
+        "image_credit": "Marble quarry on Mount Hymettus, Greece · Wikimedia Commons"
       }
     },
     {
