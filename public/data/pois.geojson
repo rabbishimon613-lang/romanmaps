@@ -25846,10 +25846,11 @@
         "built": 176,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "Costoboci raiders sacked Serdica around 170 CE during the Marcomannic Wars, and Marcus Aurelius's engineers answered by raising the town's first stone circuit, four gates and all, finishing by 180 CE. This first fortification predated the far larger Constantinian-era wall tourists walk today, but it still rose six decades after Trajan's death in 117 CE.",
+        "notes": "Costoboci raiders sacked Serdica around 170 CE during the Marcomannic Wars, and Marcus Aurelius's engineers answered by raising the town's first stone circuit, four gates and all, finishing by 180 CE. Pentagon-shaped turrets guarded each gateway, and a secondary wall two meters thick stood twenty meters out in front of the main fortification as an extra line of defense. This first fortification predated the far larger Constantinian-era wall tourists walk today, but it still rose six decades after Trajan's death in 117 CE.",
         "sources": [
           "https://archaeologyinbulgaria.com/background-infonotes/fortresses-cities/serdica-sredets-sofia-bulgaria/",
-          "https://www.roamintheempire.com/index.php/2021/05/05/serdica-part-i/"
+          "https://www.roamintheempire.com/index.php/2021/05/05/serdica-part-i/",
+          "https://ulpiaserdica.com/west_gate_en.html"
         ],
         "confidence": "medium",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sofia-Rimskata-stena-3.jpg?width=800",
@@ -25912,10 +25913,11 @@
         "built": 300,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "Constantine's building program raised this domed red-brick hall as part of a Roman bath complex in the early 4th century, making it the oldest standing building in Sofia today. It later hosted sessions of the Council of Serdica in 343 CE after conversion to a church. Nothing about it predates Hadrian's accession, let alone Trajan's death in 117 CE.",
+        "notes": "Constantine's building program raised this domed red-brick hall as part of a Roman bath complex in the early 4th century, making it the oldest standing building in Sofia today. The cylindrical drum measures 9.75 meters across at its base, its brick walls 1.4 meters thick, and the dome climbs nearly 13.7 meters overhead. It later hosted sessions of the Council of Serdica in 343 CE after conversion to a church. Nothing about it predates Hadrian's accession, let alone Trajan's death in 117 CE.",
         "sources": [
           "https://www.thebyzantinelegacy.com/rotunda-serdica",
-          "https://en.wikipedia.org/wiki/Church_of_Saint_George,_Sofia"
+          "https://en.wikipedia.org/wiki/Church_of_Saint_George,_Sofia",
+          "https://visitbulgaria.com/the-rotunda-st-george-sofia/"
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rotunda_Sveti_Georgi,_Sofia.jpg?width=800",
@@ -26579,7 +26581,7 @@
         "built": 100,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Colonia Flavia Sirmium's forum anchored the young colony's civic core, its colonnades carrying Corinthian capitals carved between the Flavian decades and the early 2nd century, modeled on workshops across the Adriatic in Dalmatia. This was the square where the colony's magistrates conducted business just as Trajan was naming Sirmium capital of Pannonia Inferior around 103.",
+        "notes": "Colonia Flavia Sirmium's forum anchored the young colony's civic core, its colonnades carrying Corinthian capitals carved between the Flavian decades and the early 2nd century, modeled on workshops across the Adriatic in Dalmatia. Carved from local limestone rafted down the river from nearby quarries, the surviving capitals show two rings of eight acanthus mollis leaves apiece on their kalathos baskets. This was the square where the colony's magistrates conducted business just as Trajan was naming Sirmium capital of Pannonia Inferior around 103.",
         "sources": [
           "https://www.researchgate.net/publication/275676603_Roman_capitals_from_Sirmium_Sremska_Mitrovica_Serbia",
           "https://ai.ac.rs/en/7729/"
@@ -27165,9 +27167,10 @@
         "built": 298,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "This eight-pier triumphal arch celebrated Galerius's victory over Persia in 298 CE and was raised as part of his new imperial palace complex between 298 and 305 CE. It postdates the 117 CE snapshot by nearly two centuries and belongs to a different city — a later imperial tetrarchic capital, not the Antonine-era provincial seat this map captures.",
+        "notes": "This eight-pier triumphal arch celebrated Galerius's victory over Persia in 298 CE and was raised as part of his new imperial palace complex between 298 and 305 CE, its central opening spanning 9.7 meters wide and 12.5 meters high. Marble relief panels sculpted onto the piers depict battle scenes from the Persian campaign and the submission of defeated enemies, alongside a panel showing the imperial family at a ceremonial sacrifice. It postdates the 117 CE snapshot by nearly two centuries and belongs to a different city — a later imperial tetrarchic capital, not the Antonine-era provincial seat this map captures.",
         "sources": [
-          "https://galeriuspalace.culture.gr/en/monuments/kamara/"
+          "https://galeriuspalace.culture.gr/en/monuments/kamara/",
+          "https://www.judaism-and-rome.org/arch-galerius-thessaloniki-298-299-ce"
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arch%20of%20Galerius%20%28%22Kamara%22%29%2C%20Thessaloniki%2C%20Greece%20%283332897943%29.jpg?width=800",
@@ -27321,9 +27324,10 @@
         "built": -27,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "This smaller covered theatre went up alongside the main theatre, stadium and gymnasium in Augustus's founding building program for the new Victory City. It served musical contests tied to the Actia festival and smaller civic gatherings that didn't need the main theatre's capacity. Its Augustan core was already a century and a half old by 117 CE.",
+        "notes": "This smaller covered theatre went up alongside the main theatre, stadium and gymnasium in Augustus's founding building program for the new Victory City. Nineteen rows of stone seating, split by a single horizontal corridor, gave the odeon a capacity of roughly 1,600, a fraction of the open-air theatre's crowds. It served musical contests tied to the Actia festival and smaller civic gatherings that didn't need the main theatre's capacity. Its Augustan core was already a century and a half old by 117 CE.",
         "sources": [
-          "https://en.wikipedia.org/wiki/Nicopolis"
+          "https://en.wikipedia.org/wiki/Nicopolis",
+          "https://diazoma.gr/en/theaters/roman-odeion-nicopolis/"
         ],
         "confidence": "medium"
       }
@@ -27435,9 +27439,10 @@
         "built": 190,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "This large bathing complex, with its natatio pool, frigidarium, tepidarium, caldarium and surviving hypocaust, dates on architectural grounds to the reign of Septimius Severus around the turn of the 3rd century CE. That places its construction roughly eight decades after the 117 CE snapshot — a straightforward dating trap despite being the best-preserved bath structure on the site today.",
+        "notes": "This large bathing complex, with its natatio pool, frigidarium, tepidarium, caldarium and surviving hypocaust, dates on architectural grounds to the reign of Septimius Severus around the turn of the 3rd century CE. A furnace kept fire burning continuously beneath the floors, and the hot air it produced rose through earthen pipes walled into the chambers to heat the warm and hot rooms in sequence. That places its construction roughly eight decades after the 117 CE snapshot — a straightforward dating trap despite being the best-preserved bath structure on the site today.",
         "sources": [
-          "https://actianicopolisarchaeopark.gr/en/nikopolis/the-baths/"
+          "https://actianicopolisarchaeopark.gr/en/nikopolis/the-baths/",
+          "https://www.roamintheempire.com/index.php/2022/05/04/nicopolis-epirus-ii/"
         ],
         "confidence": "high",
         "ancient_sources": [
@@ -28165,7 +28170,7 @@
         "built": 125,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "A monumental marble bath complex dedicated to the emperor Hadrian, who reigned from August 117 CE. Construction began after his accession, so the block was still occupied by older shops and houses on the day Trajan died. This is a textbook post-117 dating trap: 'Hadrianic' at Aphrodisias always means built under Hadrian, not before him.",
+        "notes": "A monumental marble bath complex dedicated to the emperor Hadrian, who reigned from August 117 CE, and the largest public bath building ever raised at Aphrodisias. Construction began after his accession, centered on an open-air marble pool ornamented with statues and corner pillars, so the block was still occupied by older shops and houses on the day Trajan died. This is a textbook post-117 dating trap: 'Hadrianic' at Aphrodisias always means built under Hadrian, not before him.",
         "sources": [
           "https://followinghadrian.com/2015/04/20/the-hadrianic-baths-at-aphrodisias-caria-turkey/",
           "https://www.aphrodisias.org/en/bathrooms-and-hadrian"
@@ -28359,7 +28364,7 @@
         "built": 225,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "One of the longest monumental fountains in the Roman world, stretching 60 meters along the colonnaded main street. An inscription on its architrave dates it firmly to the reign of Severus Alexander, around 222 to 235 CE, roughly a century after Trajan's death. It replaced whatever more modest water feature stood on Frontinus Street in 117 CE.",
+        "notes": "One of the longest monumental fountains in the Roman world, its façade stretching 60 meters along the colonnaded main street above a reservoir basin some 70 meters long. An inscription on its architrave dates it firmly to the reign of Severus Alexander, around 222 to 235 CE, roughly a century after Trajan's death. It replaced whatever more modest water feature stood on Frontinus Street in 117 CE.",
         "sources": [
           "https://en.wikipedia.org/wiki/Hierapolis",
           "https://madainproject.com/hierapolis"
@@ -28433,10 +28438,11 @@
         "built": 85,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "A monumental triple gate flanked by two round towers, dedicated to Domitian by Sextus Julius Frontinus, proconsul of Asia, around 84 to 86 CE. It opened onto Frontinus Street, the city's 14-meter-wide colonnaded main artery running north-south through its center. Already three decades old and a fixed civic landmark by the time Trajan died in 117 CE.",
+        "notes": "A monumental triple gate flanked by two round towers, dedicated to Domitian by Sextus Julius Frontinus, proconsul of Asia, around 84 to 86 CE. The better-preserved tower still stands 8.17 meters tall with an outer diameter of 10.2 meters, built of squared travertine blocks with masonry arches. It opened onto Frontinus Street, the city's 14-meter-wide colonnaded main artery running north-south through its center. Already three decades old and a fixed civic landmark by the time Trajan died in 117 CE.",
         "sources": [
           "https://kulturenvanteri.com/en/yer/hierapolis-frontinus-kapisi/",
-          "https://nomadicniko.com/2011/11/01/hierapolis-frontinus-street/"
+          "https://nomadicniko.com/2011/11/01/hierapolis-frontinus-street/",
+          "https://www.mdpi.com/2076-3417/10/17/5821"
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hierapolis_Frontinus_Gate_5035.jpg?width=800",
@@ -28470,10 +28476,11 @@
         "built": -300,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "A Hellenistic theatre reborn as one of Roman Asia's biggest stages. Trajan's engineers spent his whole reign rebuilding it to hold 15,000 spectators, triple the old Greek capacity, with a three-story columned stage front. By 117 CE the vast Roman cavea dominated the skyline above the Theatre Harbor.",
+        "notes": "A Hellenistic theatre reborn as one of Roman Asia's biggest stages. Trajan's engineers spent his whole reign rebuilding it to hold 15,000 spectators, triple the old Greek capacity, with a three-story columned stage front. One seat block on the fifth row still carries a four-foot-long inscription reserving that spot for Jews and God-fearers, physical proof of a Jewish community using the building. By 117 CE the vast Roman cavea dominated the skyline above the Theatre Harbor, its long rebuilding essentially complete after two decades of imperial funding.",
         "sources": [
           "https://en.wikipedia.org/wiki/Miletus",
-          "https://www.miletgrabung.uni-hamburg.de/en/milet-tour/tour-stadtzentrum.html"
+          "https://www.miletgrabung.uni-hamburg.de/en/milet-tour/tour-stadtzentrum.html",
+          "https://leonmauldin.blog/2010/04/22/jewish-inscription-at-miletus-theater/"
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Miletus_-_Ancient_Greek_theatre_01.jpg?width=800",
@@ -28499,7 +28506,7 @@
         "built": -450,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Miletus's chief civic sanctuary, sacred to Apollo Delphinios since the city's earliest days. An open courtyard ringed by Doric colonnades doubled as the state archive, holding over 150 inscribed decrees and treaties. The city's chief magistrates, the prytaneis, governed from offices inside its walls. Still the ritual heart of the city in 117 CE.",
+        "notes": "Miletus's chief civic sanctuary, sacred to Apollo Delphinios since the city's earliest days. Persian forces sacked it along with the rest of the city in 494 BCE, and Milesians rebuilt it once liberation came around 479 BCE. An open courtyard ringed by Doric colonnades doubled as the state archive, holding over 150 inscribed decrees and treaties spanning archaic to Roman times. The city's chief magistrates, the prytaneis, governed from offices inside its walls. Still the ritual heart of the city in 117 CE, its walls carrying inscriptions accumulated across six centuries of continuous use.",
         "sources": [
           "https://www.miletgrabung.uni-hamburg.de/en/milet-tour/tour-stadtzentrum/delphinion.html",
           "https://en.wikipedia.org/wiki/Delphinion"
@@ -31603,9 +31610,10 @@
         "built": -400,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Massive Hellenistic fortification walls ran along Apollonia's shoreline, raised to guard the harbor town from the 4th century BCE onward. They enclosed the city through the Roman conquest of Cyrenaica and stood unbreached through Trajan's reign. In August 117 CE these walls still marked the edge of Roman Apollonia, centuries before Byzantine engineers rebuilt them on a grander scale.",
+        "notes": "Massive Hellenistic fortification walls ran along Apollonia's shoreline, raised to guard the harbor town from the 4th century BCE onward; potsherds from the lowest excavated strata pin construction of one round tower to the final quarter of that century. They enclosed the city through the Roman conquest of Cyrenaica and stood unbreached through Trajan's reign, set back about a hundred yards from today's beach. In August 117 CE these walls still marked the edge of Roman Apollonia, centuries before Byzantine engineers rebuilt them on a grander scale.",
         "sources": [
-          "https://en.wikipedia.org/wiki/Apollonia_(Cyrenaica)"
+          "https://en.wikipedia.org/wiki/Apollonia_(Cyrenaica)",
+          "https://www.livius.org/articles/place/apollonia/apollonia-photos/apollonia-wall/"
         ],
         "confidence": "medium",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Apollonia_-_murailles_(1).jpg?width=800",
@@ -31632,9 +31640,10 @@
         "built": 120,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "A bathhouse rose on Apollonia's waterfront under Hadrian, just after Trajan's death, and was later restored under Caracalla. Its ruins still stand today beside the ancient harbor mole. In August 117 CE this stretch of shore held only older buildings; Hadrian's baths were still years from being built.",
+        "notes": "A bathhouse rose on Apollonia's waterfront under Hadrian, just after Trajan's death, and was later restored under Caracalla. A French archaeological mission has excavated the site since 1976, mapping the baths, the ramparts, and the harbor itself, including underwater surveys of the submerged port begun in 1986. Its ruins still stand today beside the ancient harbor mole. In August 117 CE this stretch of shore held only older buildings; Hadrian's baths were still years from being built.",
         "sources": [
-          "https://lsa.umich.edu/kelsey/research/past-field-projects/apollonia-libya.html"
+          "https://lsa.umich.edu/kelsey/research/past-field-projects/apollonia-libya.html",
+          "https://www.ancientportsantiques.com/a-few-ports/apollonia/"
         ],
         "confidence": "medium"
       }
@@ -31658,7 +31667,7 @@
         "built": -600,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Tombs cut into the hills around Apollonia held generations of the port city's dead, including rock-hewn hypogea reused for centuries after their first burials. Rescue excavations in 2012 uncovered three such hypogea and twenty rectangular tombs, some floored in mosaic. The cemetery had already served Apollonia for hundreds of years by the time Trajan died in 117 CE.",
+        "notes": "Tombs cut into the hills around Apollonia held generations of the port city's dead, including rock-hewn hypogea reused for centuries after their first burials. Rescue excavations in 2012, prompted by coastal erosion and nearby development, uncovered three such hypogea and twenty rectangular tombs, some floored in mosaic. Roughly a third of ancient Apollonia now lies beneath the Mediterranean, the same waters that have long threatened the western necropolis. The cemetery had already served the city for hundreds of years by the time Trajan died in August 117 CE.",
         "sources": [
           "https://archeologie.culture.gouv.fr/en/apollonia-susa"
         ],
@@ -31684,7 +31693,7 @@
         "built": -620,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Apollonia's oldest religious building was a Doric temple raised outside the city walls, identified by excavators as the port town's first pagan shrine. Greek settlers built it not long after founding Apollonia around 630 BCE. The temple had stood watch over the approach to the harbor for more than seven centuries when Trajan died in August 117 CE.",
+        "notes": "Apollonia's oldest religious building was a Doric temple raised outside the city walls, identified by excavators as the port town's first pagan shrine. Greek settlers built it not long after founding Apollonia around 630 BCE, laying out a hexastyle plan with six columns across its front porch. Study of its surviving capital has helped archaeologists reconstruct how the whole elevation once looked. The temple had stood watch over the approach to the harbor for more than seven centuries when Trajan died in August 117 CE.",
         "sources": [
           "https://lsa.umich.edu/kelsey/research/past-field-projects/apollonia-libya.html"
         ],
@@ -31775,9 +31784,10 @@
         "built": 168,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "Dougga's theatre seated 3,500 people and was paid for entirely by one local priest, Publius Marcius Quadratus, who dedicated it in 168-169 CE. Carved into the hillside below the future Capitol site, it still hosts a summer festival today. In 117 CE that hillside was bare rock. Marcus Aurelius had not yet even become emperor.",
+        "notes": "Dougga's theatre seated 3,500 people across 19 semicircular tiers and was paid for entirely by one local priest, Publius Marcius Quadratus, who dedicated it in 168-169 CE. A long inscription across the stage building's frieze names him flamen for life and town decurion, dedicating the building to the health of co-emperors Marcus Aurelius and Lucius Verus. Carved into the hillside below the future Capitol site, it still hosts a summer festival today. In 117 CE that hillside was bare rock. Marcus Aurelius had not yet even become emperor.",
         "sources": [
-          "https://en.wikipedia.org/wiki/Roman_theatre_of_Dougga"
+          "https://en.wikipedia.org/wiki/Roman_theatre_of_Dougga",
+          "https://theatrum.de/803.html"
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Theater_of_Dougga_By_night.jpg?width=800",
@@ -31811,9 +31821,10 @@
         "built": 214,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "The Licinii family funded these winter baths for Thugga under Caracalla, around 212-217 CE, nearly a century after Trajan's death. Bathers moved through vaulted halls floored in geometric mosaic before a later inscription under Gallienus recorded repairs. In 117 CE this stretch of the lower town was still open ground with houses, no bathhouse in sight.",
+        "notes": "The Licinii family funded these winter baths for Thugga under Caracalla, around 212-217 CE, nearly a century after Trajan's death. The complex takes its name from a later inscription honoring Gallienus, a member of the same Licinian clan, who elevated the town to full colonia status in 261 CE. Bathers moved through halls faced in marble and floored in geometric mosaic, passing through a small vestibule into a richly decorated central frigidarium, before a further inscription recorded repairs under Gallienus. In 117 CE this stretch of the lower town was still open ground with houses, no bathhouse in sight.",
         "sources": [
-          "https://en.wikipedia.org/wiki/Licinian_Baths"
+          "https://en.wikipedia.org/wiki/Licinian_Baths",
+          "https://pluk.vici.org/vici/31171/"
         ],
         "confidence": "medium",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mosaics_at_Licinian_Baths.jpg?width=800",
@@ -31839,9 +31850,10 @@
         "built": 228,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "Thugga raised this triumphal arch in 228 CE to thank Alexander Severus for imperial favor, framing the road toward Carthage. It formed one of the town's grandest gateways for travelers arriving from the coast. In 117 CE, 111 years earlier, that road ran past open fields with no arch standing over it.",
+        "notes": "Thugga raised this triumphal arch in 228 CE to thank Alexander Severus for imperial favor, framing the road toward Carthage. Only a single vault survives today, its arcade about four meters wide and four meters tall, one of the town's grandest gateways for travelers arriving from the coast. In 117 CE, 111 years earlier, that road ran past open fields with no arch standing over it.",
         "sources": [
-          "https://en.wikipedia.org/wiki/Arch_of_Alexander_Severus"
+          "https://en.wikipedia.org/wiki/Arch_of_Alexander_Severus",
+          "https://madainproject.com/dougga"
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexander_Severus%27s_arch,_Dougga_(8159160242).jpg?width=800",
@@ -31875,9 +31887,10 @@
         "built": 205,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "Septimius Severus elevated Thugga to a municipium, and the town answered in 205 CE with this triumphal arch on its western approach. The dedication doubled as thanks for the town's new civic status. In 117 CE Thugga was still just a civitas of mixed Numidian and Roman citizens, 88 years from that promotion.",
+        "notes": "Septimius Severus elevated Thugga to a municipium, and the town answered in 205 CE with this triumphal arch on its western approach, framing a limestone-paved road five meters wide that carried travelers toward Carthage. The dedication doubled as thanks for the town's new civic status. In 117 CE Thugga was still just a civitas of mixed Numidian and Roman citizens, 88 years from that promotion, and no such gateway yet marked the road.",
         "sources": [
-          "https://www.wikidata.org/wiki/Q2091585"
+          "https://www.wikidata.org/wiki/Q2091585",
+          "https://followinghadrianphotography.com/2025/03/04/thugga-dougga/"
         ],
         "confidence": "medium",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arch_of_Septimius_Severus,_Dougga,_Tunisia.jpg?width=800",
@@ -31977,9 +31990,10 @@
         "built": 54,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Thugga's covered market opened in 54 CE, a colonnaded courtyard of shops ending in an apse where a statue of Mercury watched over trade. Merchants sold meat, fish and produce here for centuries. By 117 CE the macellum had already served the town for 63 years, one of its oldest standing public buildings.",
+        "notes": "Thugga's covered market opened in 54 CE, a colonnaded courtyard of shops ending in an apse where a statue of Mercury watched over trade. A dedicatory inscription pins construction to a narrow eight-month window that year, between 25 January and 13 October, paid for by the wealthy patron Marcus Licinius Rufus. Merchants sold meat, fish and produce here for centuries before a Byzantine fort buried much of the building; archaeologists uncovered what survives in 1918 and 1919. By 117 CE the macellum had already served the town for 63 years, one of its oldest standing public buildings.",
         "sources": [
-          "https://en.wikipedia.org/wiki/Dougga"
+          "https://en.wikipedia.org/wiki/Dougga",
+          "https://followinghadrianphotography.com/2025/03/04/thugga-dougga/"
         ],
         "confidence": "medium",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/March%C3%A9_dougga.jpg?width=800",
@@ -32034,9 +32048,10 @@
         "built": 150,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "Dougga built this small semicircular temple to Pietas Augusta, Imperial Piety, in the 2nd century CE along the street linking the theatre to the Capitol. Two columns and two pilasters framed its curved facade. In 117 CE that stretch of street ran past ordinary houses; the temple was still generations away.",
+        "notes": "Dougga built this small semicircular temple to Pietas Augusta, Imperial Piety, in the 2nd century CE along the street linking the theatre to the Capitol, spending 30,000 sesterces on the modest structure. Two columns and two pilasters framed its curved facade, one of the smallest shrines in the town's crowded religious quarter. In 117 CE that stretch of street ran past ordinary houses; the temple was still generations away, its dedication not yet cut into any stone here.",
         "sources": [
-          "https://en.wikipedia.org/wiki/Dougga"
+          "https://en.wikipedia.org/wiki/Dougga",
+          "https://www.romeartlover.it/Thugga.html"
         ],
         "confidence": "low",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_pi%C3%A9t%C3%A9_auguste_dougga.jpg?width=800",
@@ -32124,9 +32139,10 @@
         "built": -20,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Utica built an open-air theatre within its Roman grid after Octavian made the city a municipium in 36 BCE. A second, larger theatre would eventually rise on a nearby hillside in the 2nd century CE. By 117 CE this first theatre had already entertained Utica's residents for about 137 years.",
+        "notes": "Utica built an open-air theatre within its Roman grid after Octavian made the city a municipium in 36 BCE. A second, larger theatre would eventually rise on a nearby hillside in the 2nd century CE, its seating cut straight into the slope. Full colonia status came only later still, under Hadrian, when the city took the title Colonia Julia Aelia Hadriana Augusta Utica. By 117 CE this first theatre had already entertained Utica's residents for about 137 years, the city still a working municipium rather than a colonia.",
         "sources": [
-          "https://www.worldhistory.org/Utica/"
+          "https://www.worldhistory.org/Utica/",
+          "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Utica_(North_Africa)"
         ],
         "confidence": "low"
       }
@@ -32150,7 +32166,7 @@
         "built": 125,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "Utica's extensive baths expanded to monumental scale during the 2nd-century building boom that also gave the city its amphitheater. Bathers moved through halls faced with Proconnesian marble shipped in from across the Mediterranean. In 117 CE that marble hall did not exist yet; the baths as they stand were still ahead under Hadrian's patronage.",
+        "notes": "Utica's extensive baths expanded to monumental scale during the 2nd-century building boom that also gave the city its amphitheater, eventually covering more than 26,000 square meters when archaeologists uncovered them between 1949 and 1951. Bathers moved through halls faced with Proconnesian marble shipped in from across the Mediterranean. In 117 CE that marble hall did not exist yet; the baths as they stand were still ahead under Hadrian's patronage, decades away from their full footprint.",
         "sources": [
           "https://www.worldhistory.org/Utica/"
         ],
@@ -32310,9 +32326,10 @@
         "built": 100,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Trajan raised Theveste from legionary settlement to chartered Roman colonia, folding retired soldiers and their farms into full civic status. A forum anchored the new city, seating the magistrates who governed the Tebessa plain. By August 117 CE the colonia was not yet twenty years old, its public buildings modest next to the marble city that later generations built.",
+        "notes": "Trajan raised Theveste from legionary settlement to chartered Roman colonia, folding retired soldiers and their farms into full civic status. Legio III Augusta had camped here since 75 CE and would not relocate to Lambaesis for another decade past Trajan's death; many of its veterans stayed behind as farmers on the Tebessa plain. A forum anchored the new city, seating the magistrates who governed it. By August 117 CE the colonia was not yet twenty years old, its public buildings modest next to the marble city of nearly 30,000 people that later generations built under Septimius Severus.",
         "sources": [
-          "https://en.wikipedia.org/wiki/Theveste"
+          "https://en.wikipedia.org/wiki/Theveste",
+          "https://specialcollections.luc.edu/exhibits/show/schoder-romanafrica/romanafrica-intro/theveste"
         ],
         "confidence": "low"
       }
@@ -32402,7 +32419,7 @@
         "built": 350,
         "destroyed": null,
         "extant_117ce": false,
-        "notes": "Builders raised Theveste's amphitheater on the left bank of the Wadi Zarour in the 4th century CE, seating crowds for games on the edge of the colonia. Its arena floor and lower seating tiers still survive among the town's Roman ruins today. In August 117 CE this ground stood empty, two centuries before construction began here.",
+        "notes": "Builders raised Theveste's amphitheater on the left bank of the Wadi Zarour in the 4th century CE, an oval arena measuring roughly 86 by 80 meters with its seating tiers cut and banked directly into the ground rather than carried on vaulted substructures. It seated crowds for games on the edge of the colonia, and its arena floor and lower seating tiers still survive among the town's Roman ruins today. In August 117 CE this ground stood empty, two centuries before construction began here.",
         "sources": [
           "https://www.wikidata.org/wiki/Q28969519"
         ],
@@ -33796,11 +33813,12 @@
         "built": 25,
         "destroyed": 200,
         "extant_117ce": true,
-        "notes": "A farming estate rose near Radovljica in the first half of the 1st century CE, its main house holding seven rooms including a private bath suite. The caldarium's hypocaust and hot-water tank still show how its household warmed the mountain air below the Julian Alps. Buried and forgotten for centuries, the villa's stone footings resurfaced only in 2006.",
+        "notes": "A farming estate rose near Radovljica in the first half of the 1st century CE, five stone buildings together forming one working unit beneath the Julian Alps. Its main residence held seven rooms including a private bath suite of caldarium, tepidarium, and frigidarium, the hot room paved in a black-and-white mosaic and warmed by a hypocaust and its own hot-water tank. Buried and forgotten for centuries, the villa's stone footings resurfaced only in 2006.",
         "sources": [
           "https://www.radolca.si/en/activities-and-experiences/hiking/themed-hiking-trails/mosnje-archeological-trail",
           "https://www.academia.edu/17119341/3D_Reconstruction_of_a_Balneum_in_a_Roman_Villa_Rustica_Mo%C5%A1nje_Slovenia",
-          "https://en.wikipedia.org/wiki/Mo%C5%A1nje"
+          "https://en.wikipedia.org/wiki/Mo%C5%A1nje",
+          "https://www.researchgate.net/publication/300410134_3D_reconstruction_of_a_balneum_in_a_Roman_Villa_Rustica_Mosnje_Slovenia"
         ],
         "confidence": "medium"
       }
@@ -43110,10 +43128,11 @@
         "built": 72,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "An inscription dated around 72 CE makes this one of the earliest Flavian watch-posts on the Koptos-Berenike road, built barely two years into Vespasian's reign. Its garrison tracked caravans and travelers crossing the desert toward the Red Sea port. The post stayed manned for nearly two centuries after its founding.",
+        "notes": "An inscription dated around 72 CE makes this one of the earliest Flavian watch-posts on the Koptos-Berenike road, built barely two years into Vespasian's reign as part of a wider network of desert praesidia overseen by the prefect Iulius Ursus. Its garrison tracked caravans and travelers crossing the desert toward the Red Sea port, leaving behind pottery ostraca of the kind that make up the roughly 15,000 such texts recovered from the network's forts. The post stayed manned for nearly two centuries after its founding.",
         "sources": [
           "https://www.trismegistos.org/place/5036",
-          "https://journals.sagepub.com/doi/full/10.1177/03075133241273454"
+          "https://journals.sagepub.com/doi/full/10.1177/03075133241273454",
+          "https://www.researchgate.net/publication/281788371_Security_and_water_on_the_Eastern_Desert_roads_the_prefect_Iulius_Ursus_and_the_construction_of_praesidia_under_Vespasian"
         ],
         "confidence": "medium"
       }
@@ -43707,9 +43726,10 @@
         "built": -650,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "A hillside cemetery above ancient Tarquinii held some 6,000 tomb chambers cut into the rock, roughly 200 of them painted, making it the richest surviving collection of pre-Roman tomb art in Italy. The site remained a visible, undisturbed feature of Etruria's landscape throughout Roman rule.",
+        "notes": "A hillside cemetery above ancient Tarquinii held some 6,000 tomb chambers cut into the rock, roughly 200 of them painted, making it the richest surviving collection of pre-Roman tomb art in Italy. The oldest graves date to the 7th century BC, and the site remained a visible, undisturbed feature of Etruria's landscape throughout Roman rule. Archaeologists were still finding new painted chambers here in 2023, when a figurative frieze surfaced for the first time in a century, proof of how much the hill still holds underground.",
         "sources": [
-          "https://en.wikipedia.org/wiki/Necropolis_of_Monterozzi"
+          "https://en.wikipedia.org/wiki/Necropolis_of_Monterozzi",
+          "https://www.heritagedaily.com/2025/02/painted-tomb-uncovered-in-etruscan-necropolis/154436"
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomb%20of%20hunting%20and%20fishing%2C%20Monterozzi%20necropolis%2C%20Tarquinia%2C%20Italy.jpg?width=800",
@@ -43735,9 +43755,10 @@
         "built": -470,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "A single painted chamber inside the Monterozzi necropolis carries a vivid banquet fresco of reclining diners and musicians beneath a pediment flanked by two spotted leopards facing each other. It remains one of the most reproduced images in Etruscan art, its colors still bright after more than five centuries underground by the time of this map's snapshot.",
+        "notes": "A single painted chamber inside the Monterozzi necropolis, unearthed in 1875, carries a vivid banquet fresco of reclining diners and musicians beneath a pediment flanked by two spotted leopards facing each other. The chamber measures barely 3.5 by 3.3 meters, yet it remains one of the most reproduced images in Etruscan art, its colors still bright after more than five centuries underground by the time of this map's snapshot.",
         "sources": [
-          "https://en.wikipedia.org/wiki/Tomb_of_the_Leopards"
+          "https://en.wikipedia.org/wiki/Tomb_of_the_Leopards",
+          "https://vici.org/vici/23386/"
         ],
         "confidence": "high"
       }
@@ -43761,9 +43782,10 @@
         "built": -470,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "This painted chamber at Tarquinia depicted a symposium of banqueters reclining on couches beneath garlands, its ochre and blue pigments giving the tomb its modern name after the Roman dining arrangement the scene resembles. The original frescoes were later detached for conservation, but the excavated rock-cut chamber remains at the site.",
+        "notes": "This painted chamber at Tarquinia depicted a symposium of banqueters reclining on couches beneath garlands, its ochre and blue pigments giving the tomb its modern name after the Roman dining arrangement the scene resembles. Discovered intact in 1830, it was first recorded the following year by the archaeological artist Carlo Ruspi, whose watercolor copies preserved details later lost to decay. The original frescoes were detached for conservation in 1949 and moved to Tarquinia's museum, but the excavated rock-cut chamber remains at the site.",
         "sources": [
-          "https://en.wikipedia.org/wiki/Tomb_of_the_Triclinium"
+          "https://en.wikipedia.org/wiki/Tomb_of_the_Triclinium",
+          "https://tarquiniaturismo.com/tomb-of-the-triclinium/?lang=en"
         ],
         "confidence": "medium"
       }
@@ -43787,9 +43809,10 @@
         "built": -350,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Discovered in 1857 near ancient Vulci, this chamber tomb carries an unusually large painted fresco cycle mixing mythological and historical scenes, including a rare depiction naming early Roman kings alongside Etruscan and Greek figures. The frescoes were detached and moved to Rome's Torlonia collection in the nineteenth century, but the rock-cut chamber itself remains at the site.",
+        "notes": "Discovered on May 1, 1857, near ancient Vulci, this chamber tomb carries an unusually large painted fresco cycle of 37 panels mixing mythological and historical scenes, including a rare depiction naming early Roman kings alongside Etruscan and Greek figures. Excavator Alessandro François and historian Adolphe Noël des Vergers spent over two weeks clearing rubble from the blocked entrance before finding Etruscan warriors still lying on their funeral couches inside. The frescoes were detached and moved to Rome's Torlonia collection in the nineteenth century, but the rock-cut chamber itself remains at the site.",
         "sources": [
-          "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Tomb"
+          "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Tomb",
+          "https://www.worldhistory.org/Francois_Tomb/"
         ],
         "confidence": "medium"
       }
@@ -43813,9 +43836,10 @@
         "built": 100,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "One tomb among the roughly 1,200 that line Hierapolis's necropolis belonged to Flavius Zeuxis, a merchant whose epitaph boasted of sailing around Cape Malea to Italy seventy-two times over his trading career. Historians cite the inscription as some of the best direct evidence for how often Roman-era ships actually made the run between the Aegean and Italy.",
+        "notes": "One tomb among the roughly 1,200 that line Hierapolis's necropolis belonged to Flavius Zeuxis, a merchant whose epitaph boasted of sailing around Cape Malea to Italy seventy-two times over his trading career. Standing west of the city's North Gate, the tomb carries a carved Doric frieze above its doorway and dates to the late 1st century CE. The inscription stands as some of the best direct evidence for how often Roman-era ships actually made the run between the Aegean and Italy, a voyage the Greeks themselves warned was so dangerous that sailors rounding Cape Malea were told to write their wills first.",
         "sources": [
-          "https://en.wikipedia.org/wiki/Hierapolis"
+          "https://en.wikipedia.org/wiki/Hierapolis",
+          "https://leonmauldin.blog/2014/06/26/travel-in-bible-times-tome-of-merchant-flavius-zeuxis/"
         ],
         "confidence": "medium"
       }
@@ -43839,9 +43863,10 @@
         "built": 108,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "This underground family tomb was cut into the rock south of Palmyra's colonnade in 108 CE, its walls lined with painted limestone busts of the dead set above their burial niches. Excavation in the 1930s recovered dozens of these portrait reliefs, among the best-preserved funerary sculpture to survive from Roman Syria.",
+        "notes": "This underground family tomb was cut into the rock south of Palmyra's colonnade in 108 CE, its walls lined with painted limestone busts of the dead set above their burial niches. Robert Amy and Henri Seyrig excavated the hypogeum in 1936 under the French Mandate antiquities service, recovering dozens of these portrait reliefs before moving them to the National Museum of Damascus, among the best-preserved funerary sculpture to survive from Roman Syria.",
         "sources": [
-          "https://en.wikipedia.org/wiki/Palmyra"
+          "https://en.wikipedia.org/wiki/Palmyra",
+          "https://projects.au.dk/archivearcheology/cultural-heritage-resources/virtual-exhibition-excavating-archives-narratives-from-20th-century-palmyra/excavating-archives-narratives-from-20th-century-palmyra/10-palmyrene-funerary-culture"
         ],
         "confidence": "medium"
       }
@@ -43892,10 +43917,11 @@
         "built": -20,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "A limestone tower tomb rose nearly 26 meters above the road linking Langres to the Blaise valley, raised around 20 BCE for a wealthy family of the Lingones. Relief carvings recovered from its collapsed remains show gladiatorial games and portraits of the dead, imagery unmatched by any other known tomb in Roman Gaul north of Lyon.",
+        "notes": "A limestone tower tomb rose nearly 26 meters above the road linking Langres to the Blaise valley, raised around 20 BCE for a wealthy family of the Lingones. Buried and forgotten, the ruin was rediscovered only in 1980, when excavation recovered relief carvings of gladiatorial games, life-size lions, and marine centaurs with human busts and fish tails alongside portraits of the dead. That sculpture, unmatched by any other known tomb in Roman Gaul north of Lyon, is now displayed in a museum built beside the excavated foundations.",
         "sources": [
           "https://corvinus.nl/2020/05/21/the-gallo-roman-mausoleum-of-faverolles/",
-          "https://fr.wikipedia.org/wiki/Site_arch%C3%A9ologique_de_Faverolles"
+          "https://fr.wikipedia.org/wiki/Site_arch%C3%A9ologique_de_Faverolles",
+          "https://www.persee.fr/doc/sracf_1159-7151_1993_act_6_1_922"
         ],
         "confidence": "high"
       }
@@ -43954,10 +43980,11 @@
         "built": -9,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "A bilingual Greek and Palmyrene inscription over its stone door dates this squat, tapering tower to 9 BCE, the earliest securely dated tomb in the Palmyrene necropolis. Its panelled door still turned on stone pivots that had swung for generations of the same family, more than a century before this map's 117 CE snapshot.",
+        "notes": "A bilingual Greek and Palmyrene inscription over its stone door dates this squat, tapering tower to 9 BCE, the earliest securely dated tomb in the Palmyrene necropolis, naming Attenan's sons Kohlu and Hiran as the family it was built for. Rising some 12 meters, its four or five floors of burial niches were reached through a panelled door that still turned on stone pivots that had swung for generations of the same family, more than a century before this map's 117 CE snapshot.",
         "sources": [
           "https://users.stlcc.edu/mfuller/palmyratombs.html",
-          "https://en.wikipedia.org/wiki/Valley_of_the_Tombs"
+          "https://en.wikipedia.org/wiki/Valley_of_the_Tombs",
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0006%3Aentry%3Dpalmyra"
         ],
         "confidence": "medium",
         "ancient_sources": [
@@ -43989,10 +44016,11 @@
         "built": 40,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Founded in 40 CE, this tower held one of the oldest known examples of the Palmyrene funerary banquet relief, a scene of the dead reclining at an eternal feast that became the city's signature image. Multiple stories of burial niches climbed above a ground floor lined with sculpted family portraits, until ISIL destroyed it in 2015.",
+        "notes": "Founded in 40 CE, this tower held one of the oldest known examples of the Palmyrene funerary banquet relief, set in a niche ten meters above the ground, a scene of the dead reclining at an eternal feast that became the city's signature image. Uniquely for the genre, the founder's wife stands rather than sits beside him, a detail no later banquet relief repeated. Multiple stories of burial niches climbed above a ground floor lined with sculpted family portraits, until ISIL destroyed it in 2015.",
         "sources": [
           "https://vici.org/vici/24637/?lang=en",
-          "https://en.wikipedia.org/wiki/Valley_of_the_Tombs"
+          "https://en.wikipedia.org/wiki/Valley_of_the_Tombs",
+          "https://www.academia.edu/5833019/The_Tower_Tombs_of_Palmyra_Chronology_Architecture_and_Decoration"
         ],
         "confidence": "high",
         "ancient_sources": [
@@ -44149,9 +44177,10 @@
         "built": 50,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "A Libyco-Punic notable raised this monumental tower tomb on the contested frontier between the territories of Leptis Magna and Oea. Its carved decoration fused local Libyan tradition with motifs imported from Italy, echoing the tomb architecture of the old Numidian kings farther west. It already stood as a landmark on the Tripolitanian plateau when Trajan died in 117 CE.",
+        "notes": "A Libyco-Punic notable raised this monumental tower tomb, some 16 meters long and 9 meters high in two ashlar-built storeys, on the contested frontier between the territories of Leptis Magna and Oea. Fragments of its dedicatory inscription, carved in Neo-Punic script, were recovered from the rubble and helped date the tomb to the early first century CE. Its carved decoration fused local Libyan tradition with motifs imported from Italy, echoing the tomb architecture of the old Numidian kings farther west. It already stood as a landmark on the Tripolitanian plateau when Trajan died in 117 CE.",
         "sources": [
-          "https://en.wikipedia.org/wiki/Mausoleum_of_Gasr_Doga"
+          "https://en.wikipedia.org/wiki/Mausoleum_of_Gasr_Doga",
+          "https://www.academia.edu/4150083/The_Mausoleum_of_Gasr_Doga"
         ],
         "confidence": "medium"
       }
@@ -44201,10 +44230,11 @@
         "built": -600,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Cyrene's founder-king Battus received the rare honor of a grave inside the city's own agora, the ceremonial heart normally reserved for gods and civic monuments. Ancient tradition held that a colony's founder's tomb anchored its identity, and Battus's resting place served that role through more than seven centuries of Cyrenaican history, including its absorption into Roman Crete and Cyrenaica.",
+        "notes": "Cyrene's founder-king Battus received the rare honor of a grave inside the city's own agora, the ceremonial heart normally reserved for gods and civic monuments. Pindar's odes, composed around 462 BC, already described his burial there, and twentieth-century excavation of the site in the 1960s confirmed a monument standing behind the agora's naval memorial. Ancient tradition held that a colony founder's tomb anchored its identity, and Battus's resting place served that role through more than seven centuries of Cyrenaican history, including its absorption into Roman Crete and Cyrenaica.",
         "sources": [
           "https://www.wikidata.org/wiki/Q104776650",
-          "https://slsgazetteer.org/1330/"
+          "https://slsgazetteer.org/1330/",
+          "https://www.ascs.org.au/news/prizes_awards/aust_essay_comp/First%20Prize%202010%20Harrison%20Jones.pdf"
         ],
         "confidence": "medium"
       }
@@ -44285,10 +44315,11 @@
         "built": -250,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Five rock-cut tombs opened off sunlit courtyards in Alexandria's western necropolis, their walls painted to imitate colorful marble veneer in a style unique to Ptolemaic Egypt. Construction spanned the transition from Ptolemaic to Roman rule, with one chamber's decoration updated for later Roman-period burials while another kept its original third-century-BCE plan intact.",
+        "notes": "Five rock-cut tombs opened off sunlit courtyards in Alexandria's western necropolis, their walls painted to imitate colorful marble veneer in a style unique to Ptolemaic Egypt. Archaeologists uncovered them in stages between 1901 and 1921, the fifth and final chamber emerging two decades after the first. Construction spanned the transition from Ptolemaic to Roman rule, with one chamber's decoration updated for later Roman-period burials while another kept its original third-century-BCE plan intact.",
         "sources": [
           "https://travel2egypt.org/necropolis-of-anfushi/",
-          "https://www.wikidata.org/wiki/Q20424374"
+          "https://www.wikidata.org/wiki/Q20424374",
+          "https://www.touregypt.net/alanfush.htm"
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/AlexAnfushiTombs.jpg?width=800",
@@ -44400,9 +44431,10 @@
         "built": -300,
         "destroyed": null,
         "extant_117ce": true,
-        "notes": "Two rock-cut tombs anchored Alexandria's western necropolis, cut into the limestone ridge above the harbor around 300 BCE at the dawn of Ptolemaic rule. One chamber kept its early Hellenistic plan while the other was remodeled for burials under Roman administration, a rare side-by-side record of three centuries of changing funerary fashion.",
+        "notes": "Two rock-cut tombs anchored Alexandria's western necropolis, cut into the limestone ridge above the harbor around 300 BCE at the dawn of Ptolemaic rule. Napoleon's expedition scholars first recorded them in 1799, though archaeologist Evaristo Breccia only excavated the site properly in the early twentieth century, after which the tombs were relocated to the open-air gallery at Kom el-Shoqafa for preservation. One chamber kept its early Hellenistic plan while the other was remodeled for burials under Roman administration, a rare side-by-side record of three centuries of changing funerary fashion.",
         "sources": [
-          "https://en.wikipedia.org/wiki/Wardian_Tombs"
+          "https://en.wikipedia.org/wiki/Wardian_Tombs",
+          "https://www.archaeology.wiki/blog/2019/03/13/the-reconstruction-and-conservation-the-two-tombs-of-el-wardian/"
         ],
         "confidence": "medium"
       }
