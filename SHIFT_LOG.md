@@ -7,6 +7,132 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 100 — 2026-09-05 (this shift's own prompt claimed "Shift 1 of four")
+
+### Boot
+
+Detached-HEAD-behind-stale-local-`main` again, same recurring symptom every recent shift logs —
+`git fetch origin main` + `git checkout -B main origin/main` landed cleanly on the true tip
+(`3b5dd13`, matching Shift 99's last commit) with zero divergence. `npm install` clean (fresh
+container). Confirmed the standing network picture is unchanged: direct `curl`/`WebFetch` to
+`overpass-api.de`, `nominatim.openstreetmap.org`, `commons.wikimedia.org`, `en.wikipedia.org` all
+still `connect_rejected`/`EGRESS_BLOCKED` in this sandbox (agent-proxy status endpoint confirms
+policy denial, not a transient error) — Axis 1 (new cities via Overpass) stays off the table here,
+same as every shift back through the high 80s. `WebSearch`/the `Agent` tool are not subject to
+that block (they don't go through the local egress proxy), so research work is still possible.
+
+Read `SHIFT_BRIEF.md` in full and `BOARD.md`'s open-ticket list. Same landscape recent shifts have
+independently confirmed: every top-priority unclaimed ticket is flagged big/multi-pass
+(`merge-themes`, `schema-v2`, `card-rebuild`, `three-depth-labels`, `pmtiles`, `split-map-tsx`),
+blocked on a human (`gsc-verify`, `unattended-screenshot-gate`), or needs tooling this sandbox
+doesn't have (`self-host-glyphs`'s remaining half, `image-audit`'s full pass — both need to fetch
+files from blocked hosts). `FEATURE_BACKLOG.md` P0–P3 sections are still 100% checked off; Track B
+skipped again, same justification as Shifts 96–99. Spent real time checking whether several axes
+FEATURE_BACKLOG flagged as having open headroom (axis 10 substrate's five "still needed" cultures,
+axis 4 people, axis 2's brief-listed roads) actually still do — they don't. `substrate.geojson`
+already has all six cultures (etruscan 22, punic 28, celtic 26, egyptian_pharaonic 16, iberian 32,
+mesopotamian 24 = 148 total); `people_117.geojson` already covers every named individual the brief
+lists plus dozens more from papyri/tablets (70 total, only 4 image-null); every road the brief's
+own Axis 2 playbook names (Via Appia, Via Egnatia, Via Domitia, Via Augusta, Via Traiana Nova, Via
+Agrippa) was already in `road_stations.geojson` before this shift touched anything. **Worth a
+standing note for whoever reads this next**: FEATURE_BACKLOG.md's older "still open" axis notes
+are now stale in several places — the project is much more mature after ~100 shifts than those
+notes suggest. Check the actual data file before trusting an old backlog note that something needs
+doing.
+
+### Track A — Via Aquitania: a genuinely new road (Axis 2)
+
+With the brief's named roads all already covered, went looking for a well-documented Roman road
+still absent from `road_stations.geojson` entirely, rather than padding an already-covered one. A
+research agent's first candidate (Via Iulia Augusta, coastal Liguria→Gaul) turned out to be a dead
+end — every one of its stations was already in the file under "Via Aurelia"/"Via Postumia" — so it
+switched to **Via Aquitania** (Burdigala/Bordeaux → Tolosa/Toulouse → toward Narbo), sourced from
+the *Itinerarium Burdigalense* (333 CE) and the Tabula Peutingeriana. Landed **15 new stations**
+(`station_burdigala` through `station_hosuerbas`), confidence rated honestly — high for the
+well-anchored civitates (Bordeaux, Eauze, Toulouse, Baziège, Bram, Carcassonne), low for a few
+genuinely-attested but imprecisely-located mutationes (Ad Sextum, Ad Iovem, Hosuerbas). Narbo
+itself correctly omitted since it already exists in the file under Via Domitia at the same
+coordinates — checked for that collision before appending, not after. Fixed one display-name slip
+before committing (`Isle-Jourdain` → `L'Isle-Jourdain`, invariant 1.5's "no abbreviations" reading
+applied to the elided article). Appended via `scripts/append-geojson-features.mjs` (`git diff
+--stat` confirmed a pure 362-line insertion, nothing else touched). `npm run validate`/`build`
+clean. Only Bordeaux got a verified image (Palais Gallien amphitheatre) in the same pass — the
+other 14 need a follow-up image search, noted below. Commit `d4972a2`.
+
+### Track A — two waves of image top-up across `road_stations.geojson`, `pois.geojson`, and five smaller thematic files (Axis 2/3, standing task)
+
+Same backlog every recent shift has chipped at, extended this shift to files beyond the usual two:
+`mints.geojson`, `imperial_cult.geojson`, `euergetism.geojson`, `conventus.geojson`,
+`diplomacy_117.geojson`, and `sports.geojson` were all sitting at single-digit-to-teens
+image-null counts (13, 9, 10, 9, 8, 9 respectively) — small enough that nobody had bothered
+batching them before, but real, uncounted backlog all the same.
+
+**Wave 1** (3 parallel WebSearch agents, capped per Shift 99's own finding): 35 `road_stations`
+candidates, 35 `pois` candidates. Yielded 10 + 8 confirmed images; both merged via
+`scripts/apply-image-topup.mjs`, `npm run validate`/`build` clean, commit `eea2288`. Dropped one
+agent-flagged shaky candidate (Capua's Pons Vulturni bridge — the visible span is a 20th-century
+reconstruction on the original piers, not confirmed to show real Roman fabric) rather than ship
+it.
+
+**Wave 2** (3 more parallel agents once wave 1 landed): a fresh 35-candidate `road_stations` batch,
+a fresh 35-candidate `pois` batch, and one batch covering the six smaller thematic files' entire
+remaining image-null backlog (58 candidates) in a single agent. Yielded 3 + 4 + 6 confirmed images
+(mints: Byzantium, Patrae; imperial_cult: Camulodunum/Colchester, Temple of Vespasian and Titus;
+euergetism: Asisium, Libarna), merged the same way, commit `3d75abc`. Dropped two more
+agent-flagged shaky candidates: an "unverified obverse/reverse type and uploader" coin plate for
+Apamea Cibotus, and Placentia's only lead being a generic modern piazza photo with no connection to
+the Roman-era euergetism story the record is actually about.
+
+**A real, concrete finding, sharpening Shift 98's own note further**: the third wave-2 agent (the
+58-candidate mixed-thematic-file batch) hit the shared session WebSearch budget wall partway
+through — it completed real, cited research on `mints.geojson` and `imperial_cult.geojson`, made it
+partway into `euergetism.geojson`, and returned `conventus.geojson`/`diplomacy_117.geojson`/
+`sports.geojson` entirely as `not_found` with an explicit "not researched, budget exhausted" note
+rather than false negatives claimed as real findings — the right failure mode, distinguishable in
+the output from an actual "searched and found nothing." **Actionable**: those three files' 8 + 9 +
+9 = 26 candidates (`conventus_apameia` through `sport_gymnasium_sicyon` — see this shift's own
+agent transcript or just re-run the same candidate-generation query in `METRICS.md`'s style against
+those three files for missing `image_url` + non-thematic-junk categories) are untested against
+Commons, not confirmed absent — a fresh session's WebSearch budget should go there first, since
+Iasos/Knidos/Miletus gymnasia are flagged as well-photographed sites likely to close fast.
+Stopped spawning further research agents for the rest of this shift once that budget-exhaustion
+signal came back, per Shift 98's established rule.
+
+Combined this shift: **road_stations.geojson** 582 → 597 features (+15 new, +13 images across the
+two waves), **pois.geojson** image count +12, five smaller thematic files +10 images total.
+`METRICS.md` refreshed: image coverage `pois.geojson` 63.4% → 64.3%, thematic files 62.7% → 63.3%,
+combined 63.0% → 63.7%.
+
+### Track B — skipped, same justification as Shifts 96–99
+
+`FEATURE_BACKLOG.md` P0–P3 100% checked off; `BOARD.md`'s open tickets are unchanged from the last
+several shifts' assessment (all big/multi-pass or blocked, see Boot section above).
+
+### What's next
+
+- **`conventus.geojson`/`diplomacy_117.geojson`/`sports.geojson`'s image-null backlog (26
+  candidates total) is untested, not confirmed absent** — see the finding above. Highest-value
+  next target given a fresh WebSearch budget.
+- **Via Aquitania's other 14 stations still need images** — only Bordeaux got one this shift.
+- **`road_stations.geojson` still has a large image-null backlog** (roughly 260 candidates,
+  `identified:true` + `confidence:high|medium`) and **`pois.geojson`** likewise (roughly 305 in the
+  historically good-hit-rate categories) — same reusable filter Shift 98/99 documented:
+  ```js
+  d.features.filter(f => !f.properties.image_url && f.properties.identified === true
+    && (f.properties.confidence === "high" || f.properties.confidence === "medium"))
+  ```
+- **The project is much more mature than FEATURE_BACKLOG.md's older notes suggest** — verify a
+  "still open" claim against the actual data file before spending a shift on it (this shift did,
+  for axis 10 substrate and axis 4 people, and both were already complete).
+- Axis 1 (more cities) stays network-blocked in this sandbox — confirmed again this shift via a
+  fresh `curl`/proxy-status check.
+- Board's topmost unclaimed tickets are unchanged: `[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2,
+  `[03-P0-2]` card-rebuild, `[13-P0-2]` image-audit, `[02-P0-4]` self-host-glyphs, `[15-P0-1]`/
+  `[14-P0-1]` (human-blocked), `[10-P0-2]` three-depth-labels, `[11-P1-5]` pmtiles, `[11-P1-6]`
+  split-map-tsx, `[11-P2-11]` next-major-upgrade.
+
+---
+
 ## Shift 99 — 2026-09-04 (this shift's own prompt claimed "Shift 4 of four")
 
 ### Boot: a real git scare that turned out to be a stale fetch cache, not data loss

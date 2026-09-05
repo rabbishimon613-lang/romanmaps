@@ -1532,6 +1532,43 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       `learning_117.geojson`). The candidate-generation technique is fast and reusable; the
       apply step still needs a human/agent judgment call per candidate, not a bulk merge.
 
+## New ideas spotted this shift (2026-09-05, Shift 100 — Via Aquitania, image top-up across 5 thematic files)
+
+- [ ] **Several FEATURE_BACKLOG.md "still open" axis notes are now stale after ~100 shifts of
+      work.** This shift checked two before spending research budget on them: axis 10 substrate
+      (an older note listed five cultures as "still needed" — `substrate.geojson` already has all
+      six, 148 features total) and axis 4 people (the brief's whole named-individual list was
+      already pinned in `people_117.geojson`, plus dozens more from papyri/tablets). Worth a quick
+      grep-the-actual-file check before trusting an old note that something needs doing, especially
+      one more than a few weeks old.
+- [ ] **The brief's own Axis 2 "regional queue" road list is fully covered — a fresh road needs
+      hunting outside it, and the first guess can still be a dead end.** All six roads
+      `SHIFT_BRIEF.md` names by name (Via Appia, Via Egnatia, Via Domitia, Via Augusta, Via Traiana
+      Nova, Via Agrippa) were already in `road_stations.geojson`. This shift's first candidate for
+      a genuinely new road (Via Iulia Augusta, coastal Liguria→Gaul) turned out to already be fully
+      present under two *different* road names (Via Aurelia, Via Postumia) — checked every station
+      name against the file before writing anything, which is what caught it. Switched to Via
+      Aquitania instead, which really was absent. **Check candidate station names against the
+      existing file's `name`/`id` fields before committing to a "new" road**, not just the road
+      name itself — the same physical stretch of road can be filed under a different historical
+      name than the one you expect.
+- [ ] **Small thematic files (mints/imperial_cult/euergetism/conventus/diplomacy_117/sports) each
+      carry a modest but real image-null backlog (roughly 8-13 apiece) that nobody had batched
+      before** — every prior image-top-up shift logged in SHIFT_LOG.md targeted only
+      `road_stations.geojson`/`pois.geojson`. Worth continuing across the other ~25 thematic files
+      too; the per-file backlog is small enough that batching 4-6 files together in one agent
+      wave (as this shift did) is more efficient than one file at a time.
+- [ ] **A single agent given a 58-item candidate list across 6 different files can burn through
+      the shared WebSearch budget before finishing** — this shift's mixed-thematic-file batch
+      completed real research on 2 of 6 files, got partway through a third, and returned the last
+      three files' ~26 candidates as blanket `not_found` with an explicit "budget exhausted, not
+      researched" note. The agent's own honesty about *why* it came back empty (rather than
+      silently reporting false negatives) is what makes those 26 candidates identifiable as a
+      fresh-budget follow-up rather than a confirmed dead end — worth explicitly asking future
+      research-agent prompts to distinguish "searched, found nothing" from "ran out of budget
+      before searching" in their own not_found notes, since this shift's prompts didn't ask for
+      that distinction and got it anyway only because the agent volunteered it.
+
 ## Shipped (moved from above; newest on top)
 
 - 2026-09-04 — Shift 99: Image top-up — 14 records via 5 parallel WebSearch agents (11
