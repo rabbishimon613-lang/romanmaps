@@ -13994,7 +13994,10 @@
         "sources": [
           "Itin. Ant."
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarcophage_Aquae_Sextiae.JPG?width=800",
+        "image_credit": "Roman sarcophagus from Aquae Sextiae · Wikimedia Commons",
+        "image_alt": "Ancient Roman sarcophagus excavated at Aquae Sextiae (Aix-en-Provence)"
       }
     },
     {
@@ -14484,7 +14487,10 @@
           "Itinerarium Burdigalense",
           "https://en.wikipedia.org/wiki/Eauze"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eauze_-_Musée_archéologique_-1.JPG?width=800",
+        "image_credit": "Musée archéologique du Trésor d'Eauze · Wikimedia Commons",
+        "image_alt": "The archaeological museum at Eauze, built on the site of Elusa's Roman houses and home to the Eauze treasure of 28,000 coins"
       }
     },
     {
@@ -14627,7 +14633,10 @@
           "Itinerarium Burdigalense",
           "https://en.wikipedia.org/wiki/Toulouse"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Enceinte_gallo-romaine_-_Toulouse_-_PA00094679.jpg?width=800",
+        "image_credit": "Gallo-Roman rampart, Toulouse (1st c. CE) · Wikimedia Commons",
+        "image_alt": "Surviving section of the 1st-century Gallo-Roman rampart and tower of Tolosa (Toulouse), built of brick and limestone ashlar"
       }
     },
     {
@@ -14747,7 +14756,10 @@
           "Itinerarium Burdigalense",
           "https://citedecarcassonne.culture.gouv.fr/fr/la-ville-romaine-de-carcaso"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cité_de_Carcassonne.jpg?width=800",
+        "image_credit": "The Cité de Carcassonne · Wikimedia Commons",
+        "image_alt": "Panoramic view of the fortified hilltop city of Carcassonne, whose inner rampart incorporates Gallo-Roman wall footings and towers"
       }
     },
     {
