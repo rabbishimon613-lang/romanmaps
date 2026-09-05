@@ -17150,6 +17150,229 @@
         "image_credit": "Excavated remains at Viminacium, near Kostolac · Wikimedia Commons",
         "image_alt": "Archaeological remains at the Roman city and legionary fortress of Viminacium, near Kostolac, Serbia"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.15,
+          45.167
+        ]
+      },
+      "properties": {
+        "id": "station_ulmus",
+        "category": "mansio",
+        "name": "Ulmus",
+        "road": "Sirmium-Savaria Road (via Sopianae)",
+        "distance_from_previous_mp": 26,
+        "identified": true,
+        "notes": "Ulmus stood twenty-six Roman miles west of Sirmium, the first stage on the inland road climbing away from the Sava valley toward Sopianae. Modern Tovarnik occupies the site today, straddling the Croatia-Serbia border crossing that still funnels traffic along the ancient line. The station's name recalled the elm groves once common on the Syrmian plain. In 117 CE it served troops and couriers moving between Sirmium's legionary base and the Pannonian interior.",
+        "sources": [
+          "Itin. Ant. (Sirmium-Ulmos, XXVI m.p.)",
+          "https://en.wikipedia.org/wiki/Tovarnik",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8042,
+          45.2881
+        ]
+      },
+      "properties": {
+        "id": "station_cibalae",
+        "category": "mansio",
+        "name": "Cibalae",
+        "road": "Sirmium-Savaria Road (via Sopianae)",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "Cibalae rose twenty-four Roman miles beyond Ulmus as a colonia on the road to Sopianae, its street grid and bath complex still traceable beneath modern Vinkovci. Constantine crushed Licinius's army outside its walls in 316, and the town later produced two native-born emperors, Valentinian I and Valens. Its bishop Eusebius died a martyr in the persecutions under Valerian. In 117 CE the settlement already anchored trade along the Bosut valley within Trajan's Pannonian road network.",
+        "sources": [
+          "Itin. Ant. (Ulmos-Cibalis, XXIIII m.p.)",
+          "https://en.wikipedia.org/wiki/Vinkovci",
+          "https://en.wikipedia.org/wiki/Battle_of_Cibalae"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.6955,
+          45.555
+        ]
+      },
+      "properties": {
+        "id": "station_mursa",
+        "category": "mansio",
+        "name": "Mursa",
+        "road": "Sirmium-Savaria Road (via Sopianae)",
+        "distance_from_previous_mp": 22,
+        "identified": true,
+        "notes": "Mursa lay twenty-two Roman miles beyond Cibalae, commanding the Drava river crossing into the Pannonian interior. The settlement soon rose to colonia status under Hadrian and later hosted one of the bloodiest civil-war battles of the fourth century, when Constantius II's army reportedly lost over thirty thousand men outside its walls in 351. Modern Osijek's Tvrđa fortress district sits atop the old river port. In 117 CE the crossing was already a garrisoned waypoint on the Sirmium-Sopianae road.",
+        "sources": [
+          "Itin. Ant. (Cibalis-Mursa, XXII m.p.)",
+          "https://en.wikipedia.org/wiki/Mursa",
+          "https://en.wikipedia.org/wiki/Battle_of_Mursa_Major"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.7331,
+          45.7503
+        ]
+      },
+      "properties": {
+        "id": "station_antianae",
+        "category": "mansio",
+        "name": "Antianae",
+        "road": "Sirmium-Savaria Road (via Sopianae)",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "Antianae marked the next stage twenty-four Roman miles past Mursa, set in the Baranja plain between the Drava and Danube rivers. The name survived antiquity almost unchanged, recorded as the oldest attested name of the modern village of Kneževi Vinogradi. Sopianae's crossroads lay another thirty Roman miles to the northwest. In 117 CE the station served travelers and couriers crossing Pannonia Inferior's agricultural interior toward the province's rising hill-country towns.",
+        "sources": [
+          "Itin. Ant. (Mursa-Antianis, XXIIII m.p.)",
+          "https://en.wikipedia.org/wiki/Kne%C5%BEevi_Vinogradi",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.2323,
+          46.0727
+        ]
+      },
+      "properties": {
+        "id": "station_sopianae",
+        "category": "mansio",
+        "name": "Sopianae",
+        "road": "Sirmium-Savaria Road (via Sopianae)",
+        "distance_from_previous_mp": 30,
+        "identified": true,
+        "notes": "Sopianae stood thirty Roman miles beyond Antianae, founded in the early second century where roads from Sirmium, Aquincum, and Brigetio converged. The town grew into a walled hub drawing settlers from Pannonia's hill country and eventually anchored the province of Valeria. Two centuries later its cemetery became the largest Christian burial complex outside Italy, its painted chambers surviving beneath modern Pécs. In 117 CE the settlement was a newly planted road station only beginning its rise.",
+        "sources": [
+          "Itin. Ant. (Antianis-Sopianis, XXX m.p.)",
+          "https://en.wikipedia.org/wiki/P%C3%A9cs",
+          "https://whc.unesco.org/en/list/853/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.875,
+          46.302
+        ]
+      },
+      "properties": {
+        "id": "station_limusa",
+        "category": "mutatio",
+        "name": "Limusa",
+        "road": "Sirmium-Savaria Road (via Sopianae)",
+        "distance_from_previous_mp": 22,
+        "identified": false,
+        "notes": "Limusa appears in the Antonine Itinerary twenty-two Roman miles past Sopianae on the road toward Savaria, yet no modern town has been securely matched to the name. Researchers place it somewhere in the Somogy County countryside northwest of Pécs, near the general line later shadowed by roads toward Kaposvár. The station's remains have never been excavated. Its coordinates here mark an estimated point along the itinerary's cumulative mileage, not a verified find-spot.",
+        "sources": [
+          "Itin. Ant. (Sopianis-Limusa, XXII m.p.) [location estimated by interpolation, not independently confirmed]",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.617,
+          46.466
+        ]
+      },
+      "properties": {
+        "id": "station_silacenis",
+        "category": "mutatio",
+        "name": "Silacenis",
+        "road": "Sirmium-Savaria Road (via Sopianae)",
+        "distance_from_previous_mp": 16,
+        "identified": false,
+        "notes": "Silacenis followed sixteen Roman miles beyond Limusa on the same interior road, one of the more obscure entries in the Antonine Itinerary's Pannonian stretch. No archaeological site in modern Somogy County has been conclusively linked to the name. Scholars place it somewhere between the Kapos and Zala river valleys based on the itinerary's cumulative distances alone. The coordinates given here are an interpolated estimate, not a confirmed location.",
+        "sources": [
+          "Itin. Ant. (Limusa-Silacenis, XVI m.p.) [location estimated by interpolation, not independently confirmed]",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.2419,
+          46.7088
+        ]
+      },
+      "properties": {
+        "id": "station_valco",
+        "category": "mansio",
+        "name": "Valco",
+        "road": "Sirmium-Savaria Road (via Sopianae)",
+        "distance_from_previous_mp": 23,
+        "identified": true,
+        "notes": "Valco lay twenty-three Roman miles past Silacenis, generally matched to the fortified site of Fenékpuszta on Lake Balaton's southwestern shore. A Roman-era inscription found there names the municipium Volgum, an identification the Barrington Atlas follows, though one scholar has argued instead for a site near Somogyvár. The fort later grew into one of five inner-Pannonian strongholds guarding Valeria's reserve line. In 117 CE the crossing served as a modest lakeside relay station.",
+        "sources": [
+          "Itin. Ant. (Silacenis-Valle, XXIII m.p.)",
+          "https://www.wikidata.org/wiki/Q23301433",
+          "https://en.wikipedia.org/wiki/Keszthely"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.0814,
+          46.9404
+        ]
+      },
+      "properties": {
+        "id": "station_mogetiana",
+        "category": "mansio",
+        "name": "Mogetiana",
+        "road": "Sirmium-Savaria Road (via Sopianae)",
+        "distance_from_previous_mp": 30,
+        "identified": false,
+        "notes": "Mogetiana stood thirty Roman miles beyond Valco, with Savaria another thirty-six miles further on. Older scholarship placed it at Keszthely or at Tüskevár near Somlóvásárhely, while a newer distance-based analysis argues instead for Zalaszentgrót in the Zala valley. No candidate site has produced an inscription naming the station outright. The identification and coordinates used here follow the newer mileage-based argument but remain disputed among Pannonian road specialists.",
+        "sources": [
+          "Itin. Ant. (Valle-Mogetiana, XXX m.p.; Mogetiana-Sabaria, XXXVI m.p.)",
+          "https://en.wikipedia.org/wiki/Zalaszentgr%C3%B3t",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
