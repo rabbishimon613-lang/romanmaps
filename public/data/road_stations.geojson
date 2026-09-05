@@ -16152,7 +16152,10 @@
           "Itin. Ant. (Iter a Carthagine Tacapas)",
           "https://en.wikipedia.org/wiki/Pupput"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tunisie_Pupput_monument_Satyre.jpg?width=800",
+        "image_credit": "Building of the Satyr and the Nymph, Pupput archaeological site, Hammamet · Wikimedia Commons",
+        "image_alt": "Roman columns and remains of a monument at the Pupput archaeological site near Hammamet"
       }
     },
     {
@@ -16200,7 +16203,10 @@
           "Itin. Ant. (Iter a Carthagine Tacapas)",
           "https://en.wikipedia.org/wiki/Leptis_Parva"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Amphitheatre_of_Leptis_Minor.JPG?width=800",
+        "image_credit": "Roman amphitheater of Leptis Minor (Leptiminus), Lamta · Wikimedia Commons (CC BY-SA 3.0)",
+        "image_alt": "Excavated remains of the Roman amphitheater at Leptis Minor in Lamta, Tunisia"
       }
     },
     {
@@ -16224,7 +16230,10 @@
           "Itin. Ant. (Iter a Carthagine Tacapas)",
           "https://en.wikipedia.org/wiki/Thysdrus"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mosaic_with_the_months_of_the_year,_starting_with_the_Roman_first_month_March,_from_Thysdrus_(El_Jem),_1st_half_of_the_3rd_century_AD,_Sousse_Archaeological_Museum,_Tunisia.jpg?width=800",
+        "image_credit": "Roman mosaic of the months of the year, excavated at Thysdrus (El Djem), Sousse Archaeological Museum · Wikimedia Commons",
+        "image_alt": "Roman mosaic depicting the months of the year, excavated at Thysdrus"
       }
     },
     {
@@ -16391,7 +16400,10 @@
           "Itin. Ant. (Iter a Tacapis per Gigthim Sabratam)",
           "https://en.wikipedia.org/wiki/Gigthis"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Capitolium,_standing_west_of_the_forum_on_a_podium_3.3_m_high,_Gigthis,_Tunisia_-_52710036954.jpg?width=800",
+        "image_credit": "The Capitolium of Gigthis, on its 3.3m podium west of the forum, Bou Ghrara · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman Capitolium temple at Gigthis, Tunisia"
       }
     },
     {
