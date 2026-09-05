@@ -174,7 +174,7 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
 - [x] **The sequential `await` chain settle-time concern is obsolete** — superseded by `[11-P0-2]`'s lazy overlay loading (see the resolved note above). Thematic layers are no longer fetched on cold load at all, so there is no multi-phase chain to settle; the cold-load cost is now just the two base phases. The `Promise.all` fix Shift 13 proposed is moot — lazy per-group loading solved the same problem more completely.
 - [ ] **`public/data/substrate.geojson`'s `province` field intentionally departs from `pois.geojson`'s convention.** Every existing Italian `pois.geojson` entry uses `province: "Italia"`; the new Etruscan substrate layer instead uses the historically precise regional name (`"Etruria"`, `"Cisalpine Gaul"`) since a substrate/culture layer's whole point is showing pre-Roman regional identity. This is a deliberate, logged choice (see SHIFT_LOG Shift 16), not an oversight — flagging here too so a future consistency audit doesn't "fix" it back to "Italia" without checking this note first.
 - [ ] **Wrong-period-photo risk applies beyond Mithraea/Hadrianic temples.** This shift caught a proposed image for a 117 CE "conventus center" entry (Philadelphia/Alaşehir) that was actually a photo of a 6th/7th-century Byzantine church — a real building at the right site, just 500+ years too late. Worth a standing habit for any future axis pinning "the famous building at this ancient site": a quick dating check on the image's own subject, not just on the site's founding date, before treating a Commons hit as safe to use.
-- [ ] **Axis 10 (historical substrate) now has a working schema and one culture done (10b, Etruscan).** `public/data/substrate.geojson`'s `culture` field is ready to extend with the other five substrate cultures the brief lists: 10c (Phoenician/Punic — Carthage, Utica, Gades, Motya, Nora/Tharros/Sulci, Baria), 10d (Celtic — Alesia, Bibracte, Gergovia, Avaricum, British hillforts, Iberian castros, Galatian centers), 10e (Iberian/Basque), 10f (Egyptian pharaonic — Giza, the Sphinx, Valley of the Kings, Colossi of Memnon), 10g (Mesopotamian — Babylon, Nineveh, Ur, Hatra). A future shift can reuse the same Map.tsx wiring pattern (ghosted dashed-outline circle layer) and just add features with a new `culture` value.
+- [x] **Axis 10 (historical substrate) now has a working schema and one culture done (10b, Etruscan).** `public/data/substrate.geojson`'s `culture` field is ready to extend with the other five substrate cultures the brief lists: 10c (Phoenician/Punic — Carthage, Utica, Gades, Motya, Nora/Tharros/Sulci, Baria), 10d (Celtic — Alesia, Bibracte, Gergovia, Avaricum, British hillforts, Iberian castros, Galatian centers), 10e (Iberian/Basque), 10f (Egyptian pharaonic — Giza, the Sphinx, Valley of the Kings, Colossi of Memnon), 10g (Mesopotamian — Babylon, Nineveh, Ur, Hatra). A future shift can reuse the same Map.tsx wiring pattern (ghosted dashed-outline circle layer) and just add features with a new `culture` value. **Correction, 2026-09-05, Shift 102: stale.** Checked `public/data/substrate.geojson` directly — all six cultures already exist (etruscan 22, punic 28, celtic 26, egyptian_pharaonic 16, iberian 32, mesopotamian 24; 148 features total). Some later shift closed this without checking the box here. Axis 10 does not need more work.
 
 ## New ideas spotted this shift (2026-08-15, Shift 17)
 
@@ -1568,6 +1568,37 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
       research-agent prompts to distinguish "searched, found nothing" from "ran out of budget
       before searching" in their own not_found notes, since this shift's prompts didn't ask for
       that distinction and got it anyway only because the agent volunteered it.
+
+## New ideas spotted this shift (2026-09-05, Shift 102 — Rhine + African coastal roads)
+
+- [ ] **A standalone pre-push `npm run build` racing the pre-push hook's own `next build` on the
+      same `.next` directory silently stalls rather than erroring.** Hit this firsthand: ran
+      `npm run build` in the background to pre-validate, then started `git push` (whose
+      `.githooks/pre-push` also runs `next build`) before the first one finished. The second
+      build didn't crash — `ps` showed it alive for 12+ minutes with only single-digit seconds of
+      accumulated CPU time and zero files written to `.next` for multi-minute stretches (checked
+      via `find .next -newermt '2 minutes ago'`), i.e. sleeping/deadlocked, not working. A clean,
+      uncontended build on this repo's current page count does show steady CPU usage and file
+      writes throughout — confirmed by contrast immediately after `kill -9`-ing the stuck process
+      tree and `rm -rf .next .next-dev`-ing before retrying. This is a different flavor of the
+      already-documented `next dev` + `next build` collision below — build+build on the shared
+      production `.next` dir, not dev+build. Fix/habit: never background a `git push` while a
+      manual `npm run build` might still be running against the same `.next` dir — wait for the
+      manual build's own completion first, or just skip manual pre-validation and let the push's
+      hook build once.
+- [ ] **`substrate.geojson`'s "5 more cultures needed" backlog note (below, in the P0 section)
+      was stale** — some later shift closed out all six substrate cultures (148 features total)
+      without ever checking that box. Marked `[x]` with a correction note this shift. Worth a
+      standing reminder: before picking up an old open backlog item that names a specific data
+      file, grep/count that file directly rather than trusting the item's own "still open" claim
+      — it may have been closed by a shift that didn't loop back to mark it.
+- [ ] **Two more road-network gaps spotted but not researched this shift**: further Danube
+      stations past Aquincum (upstream toward Vindobona/downstream past the existing
+      Aquileia-Aquincum coverage — needs a fresh collision-check, not assumed empty), and an
+      inland Numidia/Mauretania road network beyond the existing single `Via a Carthagine Cirtam`
+      corridor. The collision-check technique that found this shift's two corridors (grep every
+      existing `road` name in `road_stations.geojson` for candidate place names before spending a
+      research agent) is cheap and worth repeating before picking the next corridor.
 
 ## Shipped (moved from above; newest on top)
 

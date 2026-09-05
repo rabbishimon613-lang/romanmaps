@@ -7,6 +7,139 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 102 — 2026-09-05 (this shift's own prompt claimed "Shift 3 of four")
+
+### Boot
+
+Container started on a stale, shallow-clone local `main` (`7f3478b`, back at Shift 85) while
+`origin/main` had advanced to Shift 101's tip (`21c9902`) — the now-familiar
+detached-HEAD/stale-tracking-ref symptom several prior shifts have hit and documented in
+`FEATURE_BACKLOG.md`. `git merge-base --is-ancestor` reported "not an ancestor" at first, which
+looked like real divergence, but the repo is a `--depth 50` shallow clone, so that check can't
+see far enough back to find the true common ancestor — confirmed with `git rev-parse
+--is-shallow-repository` before concluding it was safe to `git reset --hard origin/main` rather
+than something needing a manual merge. `npm install` + `npm run validate` clean baseline (0
+errors, the same 7 reviewed warnings) before touching anything.
+
+Read `BOARD.md` in full: no ticket has a `[~]` claim, and the topmost unclaimed P0 items
+(`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2) are the same multi-pass migrations five-plus
+prior shifts in a row have passed over as too large to gamble on unattended. Spot-checked
+`FEATURE_BACKLOG.md`'s P0-P3 — still 100% checked off, consistent with Shift 101's own
+independent re-verification. Track B skipped again on that basis; Track A only this shift.
+
+### Track A — two new road corridors + image top-up (Axis 2)
+
+**1. Trajan's Danube Bridge dedup** (commit `7e7d1b5`) — Shift 101 had flagged but not fixed a
+near-duplicate pair in `pois.geojson` (`poi_trajans_danube_bridge` / `poi_bridge_trajan_danube`,
+~5m apart, same bridge). Merged the dropped record's `destroyed: 117` field and `image_alt` into
+the canonical one, added a redirect in `next.config.js` for the retired record's already-indexed
+URL — same playbook as the earlier `[12-FIX-3]` Pantheon dedup.
+
+**2. Rhine frontier road, two segments** (commits `fc33530`, `735e887`) — grepped every existing
+road name in `road_stations.geojson` for Rhine-adjacent place names first and confirmed a
+complete gap: Cologne exists as a Via Agrippa endpoint, but nothing links the Rhine legionary
+fortress chain itself. Two parallel research agents (Antonine Itinerary + Tabula Peutingeriana +
+Pleiades, WebSearch-only — WebFetch to Wikipedia/Pleiades/topostext is still blocked in this
+sandbox) produced:
+  - **Upper Rhine Road (Strasbourg-Mainz)** — 7 stations: Argentoratum, Saletio, Tabernae
+    (Rheinzabern — confirmed distinct from the Via Appia's Tres Tabernae), Noviomagus Nemetum
+    (Speyer), Borbetomagus (Worms), Bauconica (Nierstein, disputed exact site), Mogontiacum
+    (Mainz).
+  - **Rhine Limes Road (Mainz-Nijmegen)** — 18 stations along the Lower Germanic Limes (a UNESCO
+    corridor): Bingium, Vosolvia, Baudobriga, Confluentes, Antunnacum, Rigomagus, Bonna,
+    Durnomagus, Burungum, Novaesium, Gelduba, Asciburgium, Vetera + Colonia Ulpia Traiana
+    (Xanten, listed as two separate itinerary stations 1 mile apart), Burginatium, Harenatium,
+    Carvium, Noviomagus Batavorum (Nijmegen). Cologne itself skipped — already mapped. Six
+    Neuss-Nijmegen leg distances are the research agent's own great-circle estimates rather than
+    itinerary figures, flagged as such in each station's `sources`, since the surviving
+    Antonine Itinerary/Peutinger mileages for that specific stretch are internally inconsistent
+    in the secondary literature.
+  25 new stations total. Strasbourg and Mainz already exist as legionary-fortress POIs in
+  `pois.geojson` — same established pattern as Carnuntum/Aquincum coexisting as both a road
+  station and a full city elsewhere in the data, not a collision to avoid.
+
+**3. African Coastal Road, Carthage to Leptis Magna** (commit `2fa7434`) — a second confirmed
+gap: the only existing Carthage-area road (`Via a Carthagine Cirtam`) runs inland to Cirta;
+nothing covers the coastal route that carried Byzacena's grain and Africa's olive oil to Rome.
+21 new stations from the Antonine Itinerary's three linked stages: Maxula (Rades), Vina, Pupput
+(Hammamet), Horrea Caelia (Hergla), Leptis Minus (Lamta), Thysdrus (El Djem), Usula, Thaenae
+(Thyna), Macomades Minores (Younga), Cellae, Tacapae (Gabes), Agma, Gigthis (Bou Ghrara), Zitha,
+Villa Magna, Pisida (Abu Kammash — anchored by an actual milestone find, 54 mp from Sabratha,
+matching the Itinerary exactly), Casas, Vax, Oea (Tripoli), Megradi, Minna. Endpoints Sabratha
+and Leptis Magna are already full flagship sites and weren't duplicated; Carthage and
+Hadrumetum/Sousse already have POI coverage and were treated as existing rather than re-added.
+Six stations are unidentified private-estate waypoints (villa Aniciorum, villa Repentina, etc.)
+with no ruin ever matched — plotted by itinerary-mileage interpolation, `identified: false`,
+`confidence: "low"`, the same convention the file already used for its own previously-unlocated
+stations. One real id collision caught before appending: a `station_cellae` already existed on
+Via Egnatia in Greece (different site, same name) — the new one is `station_cellae_africa`.
+
+**4. Image top-up, two batches** (commits `c56867e`, `e3278a8`) — 21 of the 46 new stations
+(46% — better than this file's ~50% baseline for image-null-on-arrival features) now carry a
+verified `image_url`. One deliberate reject: a real, confirmed Commons photo existed for Oea
+(Tripoli)'s Arch of Marcus Aurelius, but that arch was erected c. 165 CE, well past this map's
+117 CE snapshot — `road_stations.geojson` has no `extant_117ce` field to hedge a claim the way
+`pois.geojson` does, so it was left image-null rather than shipped with an inline caveat.
+Consistent with prior shifts (Shift 101's Timgad/Trier rejections, the euergetism.geojson
+Philadelphia note in `FEATURE_BACKLOG.md`) treating "real image, wrong period" as a reject, not
+a caveat-and-ship.
+
+Combined this shift: **road_stations.geojson** 622 → 668 features (+46 across two new
+corridors), 21 of those 46 now imaged; **pois.geojson** 1405 → 1404 (net −1 from the dedup).
+`METRICS.md` refreshed (`npm run metrics -- --write`): curated places 3,246 → 3,291, thematic-file
+image coverage 63.3% → 62.9% (expected dip — 25 of the 46 new stations are still image-null,
+pulling the denominator up faster than this shift's top-up pulled the numerator).
+
+### A real operational finding: build+build collision on `.next`, not just dev+build
+
+`FEATURE_BACKLOG.md` already documents `next dev` colliding with `next build` on a shared
+`.next` directory. This shift hit a variant of the same bug: running a standalone `npm run
+build` (to pre-validate before pushing) and then starting `git push` — whose pre-push hook also
+runs `next build` — without waiting for the first to finish let both target the same production
+`.next` dir at once. The second build didn't error, it just silently stalled: `ps` showed a
+`next build` process alive for 12+ minutes accumulating single-digit seconds of CPU time, no
+files written to `.next` for minutes at a stretch — sleeping, not crashed, not progressing.
+Diagnosed by checking `find .next -newermt '2 minutes ago'` (zero hits) and process CPU%
+alongside elapsed time before concluding it was genuinely stuck rather than just slow (a clean,
+uncontended build on this repo's ~2,600+ pages does show real CPU usage and steady file writes
+throughout, confirmed by contrast right after). Fix: `kill -9` the whole stalled process tree,
+`rm -rf .next .next-dev`, then run exactly one build to completion before ever starting the
+push. Every push after that first collision went cleanly. **Worth a standing habit for future
+shifts: never run a manual pre-push `npm run build` and then immediately background a `git
+push` — either wait for the manual build's own completion notification first, or skip the
+manual pre-validation step and just let the push's own hook build once.**
+
+### What's next
+
+- **21 of 46 new road stations still lack an image** — 8 on the Rhine corridors (Saletio,
+  Bingium, Vosolvia, Rigomagus, Durnomagus, Harenatium, Carvium — genuinely thin Commons
+  coverage per two research passes now) and 13 on the African corridor (all but the four that
+  landed this shift, plus the six unidentified villa waypoints which have no ruin to photograph
+  at all — don't re-research those six).
+- **Two more road-network gaps identified but not yet researched**: a Danube road continuing
+  past Aquincum toward Brigetio/Vindobona wasn't re-checked this shift (Shift 101 already filled
+  Aquileia-Aquincum; further downstream/upstream Danube stretches may still be open — worth a
+  fresh collision-check pass, same technique used to find this shift's two corridors: grep every
+  existing road name in `road_stations.geojson` for candidate place names before researching).
+  An inland Numidia/Mauretania road network beyond the existing `Via a Carthagine Cirtam` is
+  also plausibly still open.
+- Checked several other axes for real gaps before settling on Axis 2 twice: `substrate.geojson`
+  (Axis 10, flagged as needing 5 more cultures in an old `FEATURE_BACKLOG.md` note) is actually
+  already complete at 148 features across all 6 cultures — that note is stale, worth deleting
+  next time someone's in that file. `housing_styles.geojson`/`cuisine_regions.geojson`/
+  `clothing_regions.geojson`/etc. (Axis 9 sub-areas) looked thin by feature count (5-7 records
+  each) but are correctly-scoped one-polygon-per-typology overlays matching the brief's own
+  itemized lists 1:1 — not a gap, don't pad them. `pois.geojson`'s villa category is at 92
+  records, far past the brief's named list — also saturated.
+- Track B: still no small unblocked win found on independent re-check, same board tickets open
+  as Shift 101 listed. `split-map-tsx` remains the most plausible next Track B pick for a shift
+  with more wall-clock budget than one slot, per Shift 101's own note.
+- Axis 1 (more cities) stays network-blocked in this sandbox (Overpass/Nominatim unreachable,
+  confirmed again by inheritance — not independently re-tested this shift since no Axis 1 work
+  was attempted).
+
+---
+
 ## Shift 101 — 2026-09-05 (this shift's own prompt claimed "Shift 2 of four")
 
 ### Boot
