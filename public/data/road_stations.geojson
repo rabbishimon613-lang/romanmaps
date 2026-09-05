@@ -15758,7 +15758,10 @@
           "https://www.remagen.de/images/004_2019_Tourismus/GeschichteUNESCOWelterbe/An_extract_from_the_history_of_Remagen.pdf",
           "Roman milestone, Tongeren (CIL XIII 9158)"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kastell%20Rigomagus.jpg?width=800",
+        "image_credit": "In-situ Roman fort remains, Römisches Museum Remagen (Rigomagus) · Wikimedia Commons",
+        "image_alt": "Preserved Roman fort remains displayed at the Roman Museum in Remagen, built over the ancient Rigomagus principia"
       }
     },
     {
@@ -15947,7 +15950,10 @@
           "https://www.livius.org/articles/place/xanten/",
           "Tabula Peutingeriana, Segment II (Asciburgium-Vetera)"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hypokaust%20thermen%20arch%20park%20xanten.jpg?width=800",
+        "image_credit": "Hypocaust of the Roman thermae, Archaeological Park Xanten (Vetera) · Wikimedia Commons",
+        "image_alt": "Hypocaust underfloor heating remains of the Roman baths at the Archaeological Park Xanten"
       }
     },
     {
