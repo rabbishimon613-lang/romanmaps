@@ -6590,7 +6590,10 @@
           "Itinerarium Antonini (Luca-Roma stage list, Baccanas-Roma XXI)",
           "Itinerarium Burdigalense"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/0 Mosaïque (Baccano) - Muse - Pal. Massimo alle Terme.JPG?width=800",
+        "image_credit": "Mosaic from the Roman villa at Baccano, Mansio ad Vacanas, Palazzo Massimo alle Terme · Wikimedia Commons",
+        "image_alt": "Roman mosaic excavated at Baccano, near the Via Cassia mansio of Ad Vacanas, now in the Palazzo Massimo alle Terme."
       }
     },
     {
@@ -8915,7 +8918,10 @@
           "https://en.wikipedia.org/wiki/Via_Claudia_Augusta",
           "https://www.viaclaudia.org/en/storys/the-history-of-the-via-claudia-augusta"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Altino scavi.JPG?width=800",
+        "image_credit": "Excavations at Altinum (Altino) · Wikimedia Commons",
+        "image_alt": "Archaeological excavations at the Roman city of Altinum on the Via Claudia Augusta, near Venice."
       }
     },
     {
@@ -9207,7 +9213,10 @@
         "sources": [
           "https://www.romaincampagna.it/en/itineraristorici/la-via-tiburtina/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ponte Mammolo - Plate 081 - Giuseppe Vasi.jpg?width=800",
+        "image_credit": "Ponte Mammolo, engraving by Giuseppe Vasi, 18th century · Wikimedia Commons",
+        "image_alt": "18th-century Giuseppe Vasi engraving of Ponte Mammolo, the Roman-era bridge carrying the Via Tiburtina over the Aniene."
       }
     },
     {
@@ -10198,7 +10207,10 @@
         "sources": [
           "Antonine Itinerary (Cuntz) 301: Ferentinum VIII"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ferentino - Salendo verso l'Acropoli - panoramio.jpg?width=800",
+        "image_credit": "Acropolis of Ferentino (ancient Ferentinum) · Wikimedia Commons",
+        "image_alt": "Path climbing toward the ancient acropolis of Ferentino, the Roman Ferentinum on the Via Latina."
       }
     },
     {
@@ -10248,7 +10260,10 @@
           "Antonine Itinerary (Cuntz) 301: Fregellanum XIV",
           "DAI e-Forschungsberichte on Fregellae"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fregellae, Roman baths 2.jpg?width=800",
+        "image_credit": "Roman baths at Fregellae · Wikimedia Commons",
+        "image_alt": "Excavated remains of the Roman baths at Fregellae, the destroyed Latin colony on the Via Latina."
       }
     },
     {
@@ -10272,7 +10287,10 @@
           "Antonine Itinerary (Cuntz) 301: Fabrateria III",
           "Wikidata, Fabrateria Nova"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ritratto di livia, 58 ac., 29 dc, da san giovanni incarico.JPG?width=800",
+        "image_credit": "Portrait of Livia found at San Giovanni Incarico, site of Fabrateria Nova · Wikimedia Commons",
+        "image_alt": "Roman marble portrait of Livia excavated at San Giovanni Incarico, the site of ancient Fabrateria Nova."
       }
     },
     {
@@ -10295,7 +10313,10 @@
         "sources": [
           "Antonine Itinerary (Cuntz) 301: Aquinum VIII"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arco trionfale di marcantonio.jpg?width=800",
+        "image_credit": "Arch of Mark Antony, Aquino, ancient Aquinum · Wikimedia Commons",
+        "image_alt": "The Roman triumphal Arch of Mark Antony still standing in Aquino, ancient Aquinum on the Via Latina."
       }
     },
     {
@@ -11115,7 +11136,10 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Stanegate"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stanegate, Newbrough - geograph.org.uk - 1067318.jpg?width=800",
+        "image_credit": "The Stanegate at Newbrough · Wikimedia Commons (Geograph)",
+        "image_alt": "The route of the Roman Stanegate road passing Newbrough, site of a small Roman fort on the frontier road."
       }
     },
     {
@@ -11307,7 +11331,10 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Petuaria"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/HER Museum 6 July 2018 Petuaria 3.jpg?width=800",
+        "image_credit": "Petuaria finds, Hull and East Riding Museum · Wikimedia Commons",
+        "image_alt": "Roman-era finds from Petuaria (Brough-on-Humber) on display at the Hull and East Riding Museum."
       }
     },
     {
@@ -11527,7 +11554,10 @@
           "https://en.wikipedia.org/wiki/Via_Sebaste",
           "https://en.wikipedia.org/wiki/Antioch_of_Pisidia"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Antioch of Pisidia 2862.jpg?width=800",
+        "image_credit": "Antioch of Pisidia (Antiochia Caesarea), street from the West Gate · Wikimedia Commons",
+        "image_alt": "Ruins of the colonnaded street near the West Gate at Antioch of Pisidia, the terminus of the Via Sebaste."
       }
     },
     {

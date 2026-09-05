@@ -257,6 +257,9 @@
           "https://colosseo.it/en/marvels/temple-of-vesta-and-vestal-house-atrium-vestae/"
         ],
         "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/House_of_the_Vestal_Virgins_(Atrium_Vestae),_Upper_Via_Sacra,_Rome_(9114141425).jpg?width=800",
+        "image_credit": "House of the Vestals, Roman Forum · Wikimedia Commons (photo: Carole Raddato, CC BY-SA 2.0)",
+        "image_alt": "Ruins of the atrium and pool of the House of the Vestals in the Roman Forum",
         "ancient_sources": [
           {
             "author": "Ovid",
@@ -443,6 +446,9 @@
           "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/Rostra_Augusti.html"
         ],
         "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rostra_foro_romano.JPG?width=800",
+        "image_credit": "The Rostra, Roman Forum · Wikimedia Commons",
+        "image_alt": "The Rostra speakers' platform in the Roman Forum, Rome",
         "ancient_sources": [
           {
             "author": "Cassius Dio",
@@ -1003,6 +1009,9 @@
           "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Europe/Italy/Lazio/Roma/Rome/_Texts/PLATOP*/Thermae_Neronianae.html"
         ],
         "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Two_columns_of_Aswan_granite_from_the_Baths_of_Nero_(Thermae_Neronis,_later_Thermae_Alexandrinae)_set_up_on_via_di_Sant'Eustachio,_Rome_(32083756960).jpg?width=800",
+        "image_credit": "Surviving columns of the Baths of Nero, Rome · Wikimedia Commons (photo: Carole Raddato, CC BY-SA 2.0)",
+        "image_alt": "Two granite columns from the Baths of Nero re-erected on Via di Sant'Eustachio, Rome",
         "ancient_sources": [
           {
             "author": "Martial",
@@ -19966,6 +19975,9 @@
           "https://en.wikipedia.org/wiki/Tiburtine_Sibyl"
         ],
         "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Giacomo_Caneva_-_Tivoli,_Aniene_Waterfall_-_Google_Art_Project.jpg?width=800",
+        "image_credit": "Aniene Waterfall, Tivoli · Wikimedia Commons, photograph by Giacomo Caneva (c. 1850s)",
+        "image_alt": "Historic photograph of the Aniene waterfall plunging through the gorge at Tivoli",
         "ancient_sources": [
           {
             "author": "Horace",
@@ -20265,7 +20277,10 @@
           "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Praeneste",
           "https://www.romeartlover.it/Prenest3.html"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sanctuary_of_Fortuna_Primigenia_29.JPG?width=800",
+        "image_credit": "Sanctuary of Fortuna Primigenia, Praeneste (Palestrina) · Wikimedia Commons",
+        "image_alt": "Terraced ruins of the Sanctuary of Fortuna Primigenia on the acropolis of ancient Praeneste, Palestrina"
       }
     },
     {
@@ -23149,7 +23164,10 @@
           "https://www.worldhistory.org/massilia/",
           "https://www.romanports.org/en/articles/ports-in-focus/839-massilia-la-cite-phoceenne-eng.html"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vieux_port_de_Marseille.jpg?width=800",
+        "image_credit": "Vieux-Port of Marseille, site of the ancient Lacydon harbour · Wikimedia Commons",
+        "image_alt": "The Old Port of Marseille, the inlet that was the ancient Greek/Roman harbour of Lacydon"
       }
     },
     {
@@ -24954,7 +24972,10 @@
         "sources": [
           "http://www.romanaqueducts.info/aquasite/conimbriga/index.html"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Castellum_de_Alcabideque_visto_das_Alminhas_em_Alcabideque.jpg?width=800",
+        "image_credit": "Castellum of the Roman aqueduct of Conimbriga, Alcabideque · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman aqueduct castellum (collecting basin) at Alcabideque, source of the Conimbriga aqueduct"
       }
     },
     {
@@ -26447,7 +26468,10 @@
           "https://vici.org/vici/55368/",
           "http://viminacium.org.rs/en/arheoloski-park/mauzolej-i-grobnice/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mausoleum_and_cemetery_in_Viminacium,_2018,_17.jpg?width=800",
+        "image_credit": "Mausoleum and cemetery, Viminacium Archaeological Park · Wikimedia Commons",
+        "image_alt": "Roman mausoleum and cemetery remains at the Viminacium archaeological park"
       }
     },
     {
