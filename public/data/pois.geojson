@@ -44619,6 +44619,234 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.57222,
+          41.55972
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_apsarus",
+        "category": "auxiliary_fort",
+        "name_latin": "Apsarus",
+        "name_english": "Gonio Fortress",
+        "province": "Cappadocia",
+        "modern_location": "Gonio, Adjara, Georgia",
+        "built": 75,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman engineers built this fort at the mouth of the Chorokhi River in the 70s CE, anchoring the northern end of Rome's Black Sea garrison chain along the Colchian coast. Its walls enclosed four and a half hectares, the largest Roman stronghold on that shore. Governor Arrian inspected the base in 131 CE and found five cohorts stationed there, an unusually heavy garrison for a frontier post. Excavators have since uncovered its bathhouses, barracks, and headquarters building on the site.",
+        "sources": [
+          "Arrian, Periplus Ponti Euxini 6",
+          "Pliny the Elder, Natural History 6.4",
+          "https://www.brepolsonline.net/content/books/10.1484/M.WSA-EB.5.149700",
+          "https://military-history.fandom.com/wiki/Gonio_Fortress",
+          "https://www.researchgate.net/publication/377210330_NEW_AND_REVISED_TILE_STAMPS_FROM_THE_ROMAN_FORT_OF_APSAROS_GONIO_GEORGIA"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gonio-Apsaros_Fortress_(9458300619).jpg?width=800",
+        "image_credit": "Gonio-Apsaros Fortress, Adjara, Georgia · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.05,
+          40.933
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_hyssos_limen",
+        "category": "auxiliary_fort",
+        "name_latin": "Hyssos Limen",
+        "name_english": "Hyssos Limen",
+        "province": "Cappadocia",
+        "modern_location": "near Araklı, Trabzon Province, Turkey",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A small Roman garrison held this fortified harbor at the mouth of the Hyssos River, roughly 34 kilometers east of Trapezus on the Black Sea coast. The cohors Apuleia civium Romanorum manned its walls, guarding an anchorage on the coastal road running east from Trapezus. Governor Arrian stopped here during his 131 CE inspection tour of the Pontic garrisons and watched the soldiers drill with javelins. The site is now identified with the harbor at Araklı, near Sürmene.",
+        "sources": [
+          "Arrian, Periplus Ponti Euxini 3",
+          "https://en.wikipedia.org/wiki/Hyssus",
+          "https://dergipark.org.tr/en/pub/odusobiad/issue/27574/290185"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.6725,
+          42.1385
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_phasis",
+        "category": "auxiliary_fort",
+        "name_latin": "Phasis",
+        "name_english": "Phasis",
+        "province": "Cappadocia",
+        "modern_location": "near Poti, Georgia (site traditionally called Najikhuri)",
+        "built": 64,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman troops built this fort where the Phasis River met the Black Sea, part of the garrison network Rome planted along the Colchian coast from the 60s CE onward. Arrian described digging a defensive ditch around the base during his 131 CE tour of the Pontic garrisons. Local tradition places its remains at a site called Najikhuri, east of modern Poti, though the river's shifting course has obscured the footprint. The post marked Rome's furthest garrison up the Caucasus coast.",
+        "sources": [
+          "Arrian, Periplus Ponti Euxini 9",
+          "https://en.wikipedia.org/wiki/Phasis_(town)",
+          "http://imperium.ahlfeldt.se/places/21795.html"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.0192,
+          43.0036
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_sebastopolis_colchis",
+        "category": "auxiliary_fort",
+        "name_latin": "Sebastopolis",
+        "name_english": "Sukhumi",
+        "province": "Cappadocia",
+        "modern_location": "Sukhumi, Abkhazia, Georgia",
+        "built": 64,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Augustus renamed the old Greek trading post of Dioscurias in his own honor, and by the early 2nd century a Roman garrison with its cavalry held the site as the empire's northernmost camp on the Black Sea's eastern shore. Arrian called it the last Roman-held ground before unconquered tribal territory when he toured the coast in 131 CE. Pliny the Elder had earlier described the town as nearly deserted, yet the garrison still functioned there decades on. Modern Sukhumi occupies the site today.",
+        "sources": [
+          "Arrian, Periplus Ponti Euxini 10",
+          "Pliny the Elder, Natural History 6.5",
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry=dioscurias",
+          "http://imperium.ahlfeldt.se/places/22021.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.375939,
+          39.412813
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_zimara",
+        "category": "auxiliary_fort",
+        "name_latin": "Zimara",
+        "name_english": "Zimara",
+        "province": "Cappadocia",
+        "modern_location": "near the Euphrates, Erzincan Province, Turkey",
+        "built": 75,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A Roman fort here guarded a station on the Euphrates road Vespasian's engineers built between Melitene and Satala after annexing Armenia Minor in 72 CE. The Antonine Itinerary placed it exactly sixty Roman miles from both neighboring garrisons, Dascusa and Melitene, a full day's march to each. Its troops watched a river frontier separating Cappadocia from unconquered lands beyond, part of the same road that later carried Trajan's armies toward Armenia. The site's exact ruins remain unexcavated.",
+        "sources": [
+          "Antonine Itinerary 208-209",
+          "https://pleiades.stoa.org/places/629106",
+          "https://www.alaturka.info/en/history/antiquity/5512-the-euphrates-limes-the-roman-border-security-in-the-east"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.76667,
+          38.41611
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_tomisa",
+        "category": "auxiliary_fort",
+        "name_latin": "Tomisa",
+        "name_english": "Tomisa",
+        "province": "Cappadocia",
+        "modern_location": "near Kale, Malatya Province, Turkey (exact site disputed)",
+        "built": 72,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman troops garrisoned this Euphrates crossing into Sophene, a river gateway Polybius once measured at four hundred fifty stadia from Samosata. Vespasian brought it under direct control in 72 CE, guarding the central road from Caesarea to Melitene. A modern dam has since flooded the valley, and archaeologists still dispute which ruin near the town of Kale marks the actual fort. The crossing still carried Roman traffic when Trajan's legions marched through decades later.",
+        "sources": [
+          "Strabo, Geography 12.2.1",
+          "Polybius, Histories (Cappadocia-Samosata distance fragment)",
+          "https://academic.oup.com/book/41611/chapter/353417918",
+          "https://www.wikidata.org/wiki/Q11952068"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.10528,
+          39.94583
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_elegeia",
+        "category": "auxiliary_fort",
+        "name_latin": "Elegeia",
+        "name_english": "Elegeia",
+        "province": "Cappadocia",
+        "modern_location": "near Ilıca, Erzurum Province, Turkey",
+        "built": 114,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Trajan received the Armenian prince Parthamasiris here in 114 CE, accepting his crown's surrender and folding Armenia into a new Roman province on the spot. Soldiers built a camp near the site, its earthworks lying today near modern Ilica between Erzurum and Askale. Archaeologists have not yet excavated the remains, and modern farming keeps eroding what survives. Hadrian gave up direct rule of Armenia within a year of Trajan's death, ending the post's brief life.",
+        "sources": [
+          "Cassius Dio, Roman History 68.20",
+          "https://en.wikipedia.org/wiki/Elegeia",
+          "https://www.livius.org/articles/person/parthamasiris-of-armenia/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.95,
+          39.9
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_carsaga",
+        "category": "auxiliary_fort",
+        "name_latin": "Carsaga",
+        "name_english": "Carsaga",
+        "province": "Cappadocia",
+        "modern_location": "near Refahiye, Erzincan Province, Turkey",
+        "built": 76,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A Roman milestone found here, raised in 76 CE by governor Gnaeus Pompeius Collega, records construction of the frontier road linking Rome's new bases in Cappadocia and Armenia Minor. The station sat roughly ten Roman miles east of modern Refahiye, on the route running toward Satala. Its garrison would have policed a stretch of highland road built barely four years after Vespasian annexed the region's client kingdoms. No structural remains beyond the milestone have been securely identified.",
+        "sources": [
+          "https://www.cambridge.org/core/journals/journal-of-roman-studies/article/abs/some-inscriptions-from-the-cappadocian-limes/7C5A6D7FEABCAAA55E1391B2598F0B23"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
