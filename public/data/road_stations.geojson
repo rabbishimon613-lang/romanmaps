@@ -150,7 +150,10 @@
           "Itin. Ant. 77 m.p. ab Urbe",
           "https://pleiades.stoa.org/places/432855"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fondi_mura_megalitiche.JPG?width=800",
+        "image_credit": "Ancient polygonal walls of Fundi (Fondi) · Photograph by Gobbler, 2011 · Wikimedia Commons",
+        "image_alt": "Megalithic/polygonal walls of ancient Fundi"
       }
     },
     {
@@ -15400,6 +15403,189 @@
           "Tabula Peutingeriana, Segment VII"
         ],
         "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7513,
+          48.5817
+        ]
+      },
+      "properties": {
+        "id": "station_argentoratum",
+        "category": "vicus",
+        "name": "Strasbourg",
+        "road": "Upper Rhine Road (Strasbourg-Mainz)",
+        "identified": true,
+        "notes": "Legio VIII Augusta manned this Rhine-frontier fortress from 90 CE, holding the border directly across from Germanic tribal territory. Nero Claudius Drusus had founded the outpost generations earlier, naming it Argentoratum, silver fort. Its Roman cardo and decumanus survive today as Strasbourg's Rue du Dome and Rue des Hallebardes, still crossing at a right angle beneath the medieval cathedral quarter.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Argentoratum",
+          "https://www.livius.org/articles/place/argentoratum-strasbourg/",
+          "Itin. Ant. 350 (Item a Mediolano per Alpes Ferminas Mogontiacum)",
+          "Tabula Peutingeriana, Segment II"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.106201,
+          48.895055
+        ]
+      },
+      "properties": {
+        "id": "station_saletio",
+        "category": "vicus",
+        "name": "Seltz",
+        "road": "Upper Rhine Road (Strasbourg-Mainz)",
+        "distance_from_previous_mp": 7,
+        "identified": true,
+        "notes": "This Celtic river town, once called Saliso, became the Roman road station Saletio where travelers crossed the Rhine opposite modern Rastatt. Occupied from 30 BCE onward, it linked Argentoratum to the chain of Rhine forts guarding Germania Superior's frontier. Its ancient name endures almost unchanged in the modern town of Seltz.",
+        "sources": [
+          "https://pleiades.stoa.org/places/109317",
+          "Itin. Ant. 350",
+          "https://de.wikipedia.org/wiki/R%C3%B6mische_Rheintalstra%C3%9Fe",
+          "https://en.wikipedia.org/wiki/Seltz"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.278086,
+          49.119313
+        ]
+      },
+      "properties": {
+        "id": "station_tabernae_rheni",
+        "category": "vicus",
+        "name": "Rheinzabern",
+        "road": "Upper Rhine Road (Strasbourg-Mainz)",
+        "distance_from_previous_mp": 13,
+        "identified": true,
+        "notes": "Roman engineers laid out this way station on the Rhine road around 10 CE, and within a century it was firing tile and pottery bound for the legions upriver. Its Latin name, Tabernae, meaning shops or stalls, passed almost unchanged into the modern town of Rheinzabern. This frontier Tabernae stood a world away from the far more famous Tres Tabernae on Italy's Via Appia.",
+        "sources": [
+          "https://pleiades.stoa.org/places/109362",
+          "https://de.wikipedia.org/wiki/Tabernae_(Rheinzabern)",
+          "Itin. Ant. 350",
+          "Notitia Dignitatum, Occ. XLI (Dux Mogontiacensis prefecture list)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.4424,
+          49.3172
+        ]
+      },
+      "properties": {
+        "id": "station_noviomagus_nemetum",
+        "category": "mansio",
+        "name": "Speyer",
+        "road": "Upper Rhine Road (Strasbourg-Mainz)",
+        "distance_from_previous_mp": 11,
+        "identified": true,
+        "notes": "Rome built this civitas capital for the Nemetes tribe on the Rhine's west bank, naming it Noviomagus, new market in Celtic. It stood 11 Roman miles north of Tabernae on the road running the length of Germania Superior's frontier. Modern Speyer grew directly over its Roman streets, preserving the ancient town's footprint at the heart of the Rhineland's oldest cathedral city.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Noviomagus_Nemetum",
+          "https://de.wikipedia.org/wiki/Noviomagus_(Speyer)",
+          "Itin. Ant. 350",
+          "https://www.trismegistos.org/place/27863"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.3588465,
+          49.630359
+        ]
+      },
+      "properties": {
+        "id": "station_borbetomagus",
+        "category": "mansio",
+        "name": "Worms",
+        "road": "Upper Rhine Road (Strasbourg-Mainz)",
+        "distance_from_previous_mp": 14,
+        "identified": true,
+        "notes": "Roman soldiers built an early garrison here among the Vangiones around 14 BCE, and the tribe's civilian capital grew up beside it on the Rhine's west bank. Locals called it Borbetomagus, a Celtic name meaning roughly field by bubbling water. Worms, one of Germany's oldest continuously inhabited cities, still carries its cathedral on the same hilltop the Romans once fortified.",
+        "sources": [
+          "https://pleiades.stoa.org/places/108820",
+          "https://de.wikipedia.org/wiki/Borbetomagus",
+          "https://en.wikipedia.org/wiki/Worms,_Germany",
+          "Itin. Ant. 350"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.344365,
+          49.871456
+        ]
+      },
+      "properties": {
+        "id": "station_bauconica",
+        "category": "vicus",
+        "name": "Nierstein",
+        "road": "Upper Rhine Road (Strasbourg-Mainz)",
+        "distance_from_previous_mp": 13,
+        "identified": false,
+        "notes": "A Roman vicus grew up here on the Rhine road 13 miles north of Borbetomagus, its cemetery stretching from a temple of Mercury to a shrine of the healing goddess Sirona. Ancient sources and the Peutinger Table called the settlement Bauconica. The exact center of the site remains disputed among Nierstein, Oppenheim, and neighboring Dienheim, though Nierstein is the conventional identification.",
+        "sources": [
+          "https://pleiades.stoa.org/places/108835",
+          "https://de.wikipedia.org/wiki/Buconica",
+          "Tabula Peutingeriana, Segment II",
+          "Itin. Ant. 350"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.266,
+          49.9978
+        ]
+      },
+      "properties": {
+        "id": "station_mogontiacum",
+        "category": "vicus",
+        "name": "Mainz",
+        "road": "Upper Rhine Road (Strasbourg-Mainz)",
+        "distance_from_previous_mp": 11,
+        "identified": true,
+        "notes": "Nero Claudius Drusus founded this double legionary fortress in 13 BCE, and it grew into the seat of the governor of Germania Superior. Legio XXII Primigenia alone held the massive Kastrich camp by Trajan's death, its sister legion long since withdrawn. The general's own cenotaph, the towering Drususstein, still stands within the later citadel walls.",
+        "sources": [
+          "https://pleiades.stoa.org/places/109169",
+          "https://www.livius.org/articles/place/mogontiacum-mainz/",
+          "https://en.wikipedia.org/wiki/Mogontiacum",
+          "Itin. Ant. 350"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zitadelle_Mainz_Drususstein.jpg?width=800",
+        "image_credit": "Drususstein, the Roman cenotaph of Drusus (erected 9 BCE), inside the Mainz Citadel grounds · Wikimedia Commons"
       }
     }
   ]
