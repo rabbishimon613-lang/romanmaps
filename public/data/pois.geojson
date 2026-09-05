@@ -44847,6 +44847,35 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.5764,
+          39.885
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_artaxata",
+        "category": "fort",
+        "name_latin": "Artaxata",
+        "name_english": "Artashat",
+        "province": "Armenia",
+        "modern_location": "near Khor Virap monastery, Ararat Province, Armenia",
+        "built": 114,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Artaxata was already Armenia's ancient royal capital when Trajan folded it into his new province in 114 CE, planting Legio IV Scythica in garrison. Roman engineers built the empire's easternmost known aqueduct here, carrying water into the city between 114 and 117. A soldier of the Fourth Legion left an inscription now on display in Yerevan's history museum. Local resistance and Hadrian's retreat from the eastern conquests ended the garrison within three years.",
+        "sources": [
+          "Cassius Dio, Roman History 68.20",
+          "https://www.livius.org/articles/place/artaxata/",
+          "https://eurasianet.org/roman-empires-easternmost-aqueduct-discovered-in-armenia",
+          "https://en.wikipedia.org/wiki/Artaxata"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
