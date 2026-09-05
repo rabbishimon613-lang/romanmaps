@@ -15106,6 +15106,301 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.66806,
+          44.625
+        ]
+      },
+      "properties": {
+        "id": "station_drobeta",
+        "category": "mansio",
+        "name": "Drobeta-Turnu Severin",
+        "road": "Dacian Trunk Road (Drobeta-Porolissum)",
+        "identified": true,
+        "notes": "Drobeta was the fortified bridgehead where Trajan's road into conquered Dacia began, right beside the great Danube crossing that Apollodorus of Damascus finished in 105 CE. Its castrum and adjoining civilian town controlled the only permanent bridge over the lower Danube and doubled as a customs post for goods entering the new province. Nearby, the Tabula Traiana rock inscription above the Iron Gates gorge still commemorates the road-cutting that let Trajan's army push north from here.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Drobeta_(castra)",
+          "https://en.wikipedia.org/wiki/Trajan%27s_Bridge",
+          "https://en.wikipedia.org/wiki/Tabula_Traiana"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4142,
+          44.8786
+        ]
+      },
+      "properties": {
+        "id": "station_ad_mediam",
+        "category": "mansio",
+        "name": "Baile Herculane",
+        "road": "Dacian Trunk Road (Drobeta-Porolissum)",
+        "identified": true,
+        "notes": "Ad Mediam sat in the Cerna valley on the road linking the Danube crossings to Tibiscum, its name meaning roughly \"the halfway point\" on that stretch. Sixteen thermal springs made the site a dedicated healing sanctuary of Hercules, and travelers as well as soldiers stopped here to bathe and take the waters on the way inland. A separate garrison fort called Praetorium stood a short way north at Mehadia to watch over this section of road.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/B%C4%83ile_Herculane",
+          "https://en.wikipedia.org/wiki/Praetorium_(castra_of_Mehadia)",
+          "Itin. Ant. 218.5 (Ad Mediam, Dierna-Tibiscum stage)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.1895,
+          45.4663
+        ]
+      },
+      "properties": {
+        "id": "station_tibiscum",
+        "category": "vicus",
+        "name": "Jupa",
+        "road": "Dacian Trunk Road (Drobeta-Porolissum)",
+        "identified": true,
+        "notes": "Tibiscum was the hinge of the whole Dacian road network, the point where the two roads climbing up from the Danube (one via Drobeta and the Cerna valley, one via Lederata and the Bega valley) met the road running on to Sarmizegetusa. An auxiliary fort and a large civilian vicus of mixed Palmyrene, Illyrian, and local settlers grew up together on the Timiș river here. Ptolemy lists the town among the settlements of Dacia, and it was later raised to municipium rank under Marcus Aurelius.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tibiscum",
+          "Ptolemy, Geography 3.8",
+          "Tabula Peutingeriana, Segment VII"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7873,
+          45.513
+        ]
+      },
+      "properties": {
+        "id": "station_sarmizegetusa_ulpia",
+        "category": "mansio",
+        "name": "Sarmizegetusa",
+        "road": "Dacian Trunk Road (Drobeta-Porolissum)",
+        "distance_from_previous_mp": 37,
+        "identified": true,
+        "notes": "This is Colonia Ulpia Traiana Augusta Dacica Sarmizegetusa, the brand-new provincial capital Trajan founded on the plain after 106 CE, a full day's travel from the old Dacian royal stronghold of the same name in the mountains to the east. By 117 it had a forum, an amphitheater, and a governor's palace, and stood at the junction where the road from the Danube crossings turned north for Apulum. The Tabula Peutingeriana traces the road up from Tibiscum in three stages totaling 37 Roman miles.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ulpia_Traiana_Sarmizegetusa",
+          "Tabula Peutingeriana, Segment VII",
+          "Ptolemy, Geography 3.8"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.0247,
+          45.7319
+        ]
+      },
+      "properties": {
+        "id": "station_ad_aquas",
+        "category": "mansio",
+        "name": "Calan",
+        "road": "Dacian Trunk Road (Drobeta-Porolissum)",
+        "distance_from_previous_mp": 13,
+        "identified": true,
+        "notes": "Ad Aquas was a thermal way-station on the road climbing northeast from the new capital toward Apulum, its hot springs still flowing at Călan today. It is one of only a handful of Dacian stops the Tabula Peutingeriana bothers to illustrate with its own little spa vignette, a sign of how well-known the baths were to Roman travelers. A rock-cut pool from the Roman bathing complex survives on the Strei river just north of the modern town.",
+        "sources": [
+          "Tabula Peutingeriana, Segment VII",
+          "https://en.wikipedia.org/wiki/C%C4%83lan",
+          "Itin. Ant. 168 (Sarmizegetusa-Apulum stage)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.190211,
+          45.89378
+        ]
+      },
+      "properties": {
+        "id": "station_germisara",
+        "category": "mansio",
+        "name": "Geoagiu-Bai",
+        "road": "Dacian Trunk Road (Drobeta-Porolissum)",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Germisara took its name from a Dacian phrase for hot water, and its springs kept drawing visitors straight through the Roman takeover of the region. Both Ptolemy and the Tabula Peutingeriana record the site, and a small fort backed up the resort and the road station beside it. Wooden votive plaques thrown into the sacred spring by grateful bathers are among the best-preserved organic finds from Roman Dacia. (The Peutinger distance below is a combined figure across the intervening station of Petris, which is not separately mapped here.)",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Germisara_(castra)",
+          "Ptolemy, Geography 3.8",
+          "Tabula Peutingeriana, Segment VII"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.383,
+          45.967
+        ]
+      },
+      "properties": {
+        "id": "station_blandiana",
+        "category": "vicus",
+        "name": "Blandiana",
+        "road": "Dacian Trunk Road (Drobeta-Porolissum)",
+        "distance_from_previous_mp": 8,
+        "identified": true,
+        "notes": "Blandiana was the last stop before the road reached the legionary capital at Apulum, and the modern Alba County village on the site has kept the ancient name almost unchanged for nineteen centuries. The Tabula Peutingeriana places it eight Roman miles short of Apulum, and scattered Roman-period finds around the village confirm a roadside settlement here, though its exact plan has not been fully excavated.",
+        "sources": [
+          "Tabula Peutingeriana, Segment VII",
+          "https://en.wikipedia.org/wiki/Blandiana"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.56667,
+          46.04722
+        ]
+      },
+      "properties": {
+        "id": "station_apulum",
+        "category": "mansio",
+        "name": "Alba Iulia",
+        "road": "Dacian Trunk Road (Drobeta-Porolissum)",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Apulum was the largest Roman military base in Dacia, a 37-hectare fortress Trajan built for Legio XIII Gemina right after the conquest, with a sprawling civilian town growing up around its canabae. By 117 it was already the province's busiest crossroads, sitting on the trunk road between Sarmizegetusa and Napoca and controlling routes east into the Mureș valley gold country. It would go on to become the largest urban center in Roman Dacia, eventually earning colonia status.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Apulum_(castra)",
+          "Ptolemy, Geography 3.8",
+          "Tabula Peutingeriana, Segment VII"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7724,
+          46.5706
+        ]
+      },
+      "properties": {
+        "id": "station_potaissa",
+        "category": "vicus",
+        "name": "Turda",
+        "road": "Dacian Trunk Road (Drobeta-Porolissum)",
+        "distance_from_previous_mp": 48,
+        "identified": true,
+        "notes": "Potaissa sat on the trunk road roughly halfway between Apulum and Napoca, and in 117 it was still an auxiliary-garrisoned road vicus rather than the great fortress city it would later become. A milestone found at nearby Aiton, dated to 108 CE, records a cohort of Spanish auxiliaries building the very road segment linking Potaissa to Napoca under Trajan. Six decades after this snapshot, Legio V Macedonica would move here and turn the site into one of the largest legionary bases in the province.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Potaissa_(castra)",
+          "Tabula Peutingeriana, Segment VII",
+          "CIL III 1627 (Milliarium of Aiton, 108 CE)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.5889,
+          46.7703
+        ]
+      },
+      "properties": {
+        "id": "station_napoca",
+        "category": "vicus",
+        "name": "Cluj-Napoca",
+        "road": "Dacian Trunk Road (Drobeta-Porolissum)",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Napoca grew up as a civilian road vicus soon after the conquest, settled by veterans and traders along the trunk road running north to the frontier at Porolissum. Ptolemy already lists it among the notable towns of Dacia, though in 117 it had not yet been raised to formal municipium status, an honor Hadrian would grant around 124. The Aiton milestone of 108 CE, found on the road toward Potaissa, is among the clearest dated evidence for this stretch of highway under Trajan.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Napoca_(castra)",
+          "Ptolemy, Geography 3.8",
+          "CIL III 1627 (Milliarium of Aiton, 108 CE)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.2404,
+          46.9866
+        ]
+      },
+      "properties": {
+        "id": "station_optatiana",
+        "category": "vicus",
+        "name": "Sutoru",
+        "road": "Dacian Trunk Road (Drobeta-Porolissum)",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Optatiana was a small wood-and-earth watch post on the last leg of the road before it reached the frontier fortress of Porolissum, part of the chain of forts along the Limes Porolissensis. Its first fort dates to the very end of Trajan's reign or just after, guarding the road and the Almaș valley approach. The Tabula Peutingeriana lists it as a waypoint sixteen Roman miles out of Napoca.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Optatiana_(castra)",
+          "Tabula Peutingeriana, Segment VII"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.1573,
+          47.1793
+        ]
+      },
+      "properties": {
+        "id": "station_porolissum",
+        "category": "mansio",
+        "name": "Moigrad",
+        "road": "Dacian Trunk Road (Drobeta-Porolissum)",
+        "distance_from_previous_mp": 31,
+        "identified": true,
+        "notes": "Porolissum was the empire's northernmost outpost in this corner of Dacia, a fort Trajan raised in 106 CE at the start of his second war to hold the main pass through the Meses Mountains. Five thousand auxiliary troops from Spain, Gaul, and Britain garrisoned it in the years after conquest, and a civilian settlement was already forming outside its walls by 117, though it would not become the seat of its own province, Dacia Porolissensis, until Hadrian's reorganization in 124. The distance below is a combined figure across the intervening stations of Largiana and Certiae, which are not separately mapped here.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Porolissum",
+          "https://en.wikipedia.org/wiki/Limes_Porolissensis",
+          "Tabula Peutingeriana, Segment VII"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
