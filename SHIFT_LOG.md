@@ -7,6 +7,143 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 103 — 2026-09-05 (this shift's own prompt claimed "Shift 4 of four")
+
+### Boot
+
+Container started on a stale local `main` (`7f3478b`, Shift 85's tip) while `origin/main` had
+advanced to Shift 102's tip (`dc52bb8`) — the same detached-HEAD/stale-tracking-ref symptom every
+recent shift has hit. `git reset --hard origin/main` (no local unpushed commits existed, confirmed
+before resetting). `npm install` + `npm run validate` clean baseline (0 errors, the same 7 reviewed
+warnings) before touching anything. Re-confirmed the standing network picture directly rather than
+trusting inheritance: `curl` to `overpass-api.de`, `en.wikipedia.org`, `pleiades.stoa.org` all still
+`connect_rejected` via the agent-proxy. Axis 1 (cities via Overpass) stays off the table. `WebSearch`
+via the `Agent` tool remains the only viable research path, same as every shift back through the
+high 80s.
+
+Read `BOARD.md` in full: zero `[~]` claims, and every unclaimed ticket is one of the same
+multi-pass migrations (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild,
+`[13-P0-2]` image-audit), human-blocked items (`[15-P0-1]`, `[14-P0-1]` gsc-verify), or large
+refactors (`[11-P1-6]` split-map-tsx, `[11-P1-5]` pmtiles, `[11-P2-11]` next-major-upgrade) that
+15+ prior shifts in a row have declined to gamble on unattended. Also spot-checked feature counts
+across nearly every thematic file myself before picking an axis (`node -e` counts over
+`public/data/*.geojson`) rather than trusting log inheritance alone: mints (87), conventus (27 —
+Asia's 13 + Baetica's 4 + Tarraconensis's 7 + Lusitania's 3, matching Pliny's attested lists
+exactly), health (51), penal (23, all 9 brief-listed exile islands present), sports.geojson (48,
+already well past the 25-gymnasia minimum), all 28 legionary fortresses present (one per legion).
+Confirmed these axes are genuinely saturated, not just log-inherited assumptions. Track B skipped
+again on the same basis as Shifts 96-102.
+
+### Track A — two road corridors, 8 new eastern-frontier forts, 1 companion fort record, 3 image top-up batches (Axes 2, 3a)
+
+Five parallel/staged `Agent`-tool WebSearch research passes this shift, each briefed with the exact
+target-file schema, the Google-Business voice rules, the banned-phrase list, and a pre-exported
+list of every existing id in the target file to collision-check against. I did all merging,
+validation, building, and committing myself — agents only wrote JSON + a caveats file to the
+scratchpad, never touched the working tree.
+
+**1. Danube Limes Road extension, Aquincum to Viminacium** (commit `143bd0b`) — grepped every
+existing road name in `road_stations.geojson` first and confirmed the existing "Danube Limes Road
+(Carnuntum-Aquincum)" segment stops at Aquincum with a real gap continuing downstream. 21 new
+stations across two honestly-split sub-roads (same convention as the existing Amber Road / Danube
+Limes Road split): **Danube Limes Road (Aquincum-Viminacium)** — 19 riverside fort-chain stations
+(Campona, Matrica, Vetus Salina, Intercisa, Lussonium, Alta Ripa, Lugio, Altinum, Ad Militare,
+Teutoburgium, Cornacum, Cuccium, Bononia/Malata, Acumincum, Rittium, Burgenae, Taurunum,
+Singidunum, Viminacium) whose Viminacium terminus connects into the existing Via Militaris
+segment (which already had the Singidunum-Viminacium intermediates but was missing both
+endpoints); **Sirmium Road (Bononia-Taurunum)** — 2 stations (Sirmium, Bassianae), the inland
+Syrmia shortcut. Mursa and Cibalae were deliberately excluded — the research agent found they
+belong to a separate, internally-consistent inland itinerary table, not this river chain — and
+flagged as a distinct follow-up rather than force-fit here. Two real id collisions caught before
+merging: `station_intercisa` and `station_altinum` already existed at different sites (Via
+Flaminia's Furlo Pass gorge; Via Claudia Augusta's Venice lagoon) — disambiguated with a
+`_pannonia` suffix.
+
+**2. Sirmium-Savaria Road (via Sopianae)** (commit `a845bd6`) — the exact follow-up flagged above.
+9 stations completing the western Pannonian half of the Itin. Ant.'s "a Sirmio Treveris usque"
+table: Sirmium → Ulmus → Cibalae → Mursa → Antianae → Sopianae → Limusa → Silacenis → Valco →
+Mogetiana → terminating at the already-existing `station_savaria`, itself part of the Amber Road
+corridor — a genuine, itinerary-sourced connection between two of this shift's and a prior shift's
+road networks, not a forced one. 5 of 9 stations have independently re-verified Itin. Ant. mileages;
+Limusa and Silacenis are real itinerary names with no secure modern identification in scholarship
+(plotted by mileage interpolation, `identified: false`); Valco and Mogetiana are each disputed among
+2-3 candidate sites in the literature and flagged medium/low confidence rather than presented as
+settled.
+
+**3. Eastern-frontier auxiliary forts, Cappadocia-Armenia-Black Sea** (commits `5ca05a5`,
+`6065e63`) — a fresh axis for this shift (3a, military infrastructure), not another road corridor.
+Checked `pois.geojson`'s 120 `auxiliary_fort` records geographically first: only ~11 sit east of
+25°E despite the Cappadocian-Armenian frontier being the single most on-theme frontier for this
+map's exact snapshot (Trajan's Parthian War is the live event the 117 CE timestamp sits inside).
+Most of the brief's own named candidates (Trapezus, Dascusa, Zeugma, Melitene, Satala, Edessa,
+Nisibis, Singara, Dura-Europos) turned out already mapped under other categories/ids — the research
+agent checked all 1404 existing ids, not just the auxiliary_fort subset, before concluding what was
+actually missing. 8 genuinely new, distinct forts landed: Apsarus (Gonio Fortress, Georgia — the
+best-attested, excavated, with an Arrian eyewitness account), Hyssos Limen, Phasis, Sebastopolis/
+Dioscurias (Sukhumi — the Colchian coastal one; the inland Cappadocian "Sebastopolis" near Sulusaray
+was researched and rejected for having only 4th-century garrison evidence), Zimara, Tomisa, Elegeia
+(where Trajan accepted Parthamasiris's Armenian surrender in 114 CE), Carsaga. Added one more record
+as a direct follow-up from the same research pass: **Artaxata** (Trajan's short-lived Armenian
+provincial capital, Legio IV Scythica garrison) under category `"fort"` rather than
+`"auxiliary_fort"`, matching the existing convention already used for Edessa/Nisibis/Singara/
+Dura-Europos (legionary vexillation garrisons, not auxiliary cohorts).
+
+**A real gap flagged but deliberately NOT acted on this shift**: the research agent found Samosata
+(Legio XVI Flavia Firma's base under Hadrian, arriving right at this snapshot) is not among the 28
+existing `poi_fortress_*` legionary-fortress records. I did not add a 29th legionary fortress
+myself — the site's "28 legions in 117 CE" framing is baked into ~15+ prior shifts of legionary-
+fortress work and the 28-vs-29-vs-30-legion count is a genuinely disputed point in Roman military
+historiography (Ritterling's classic count vs. alternative reconstructions that include XVI Flavia
+Firma). Changing that framing needs a deliberate, single pass across the whole legionary-fortress
+set with a clear editorial decision, not a side-effect of an unrelated auxiliary-fort task — flagging
+for a future shift or human review rather than unilaterally re-opening a settled count.
+
+**4. Three image top-up batches** (commits `f2c4dbf`, `874e77a`, plus Artaxata/eastern-forts left
+image-null) — 2 of the 25 image-less stations flagged in Shift 102's log (Rigomagus/Remagen,
+Vetera/Xanten) now carry verified images; 9 of this shift's own 21 new Danube stations (Campona,
+Matrica, Vetus Salina, Intercisa, Lussonium, Sirmium, Taurunum, Singidunum, Viminacium) likewise.
+Consistent rejections applied across all three image research passes: wrong-period material (Ilok's
+medieval castle for Cuccium, an Avar-era cemetery for Altinum, a modern reenactment photo for Lugio,
+a modern playground for Alta Ripa, an 1691 battle/medieval fortress for Acumincum) was rejected
+rather than shipped with a caveat, same standard Shift 101/102 applied to Timgad/Trier/Oea. All 8
+new eastern-frontier forts and the remaining 12 Danube stations stay image-null — genuinely thin or
+nonexistent Commons coverage for largely unexcavated sites, not a research shortfall (each pass
+logged its specific rejection reason per site rather than just reporting a bare miss count).
+
+Combined this shift: **road_stations.geojson** 668 → 698 features (+30 across two new corridors, 11
+newly imaged including 2 backlog carryovers); **pois.geojson** 1404 → 1413 (+9: 8 auxiliary forts +
+1 fort). `METRICS.md` refreshed: curated places 3,291 → 3,330, `pois.geojson` image coverage 64.6% →
+64.3% (expected dip, same dynamic as every recent shift — new image-null records outpace the
+top-up).
+
+### What's next
+
+- **12 of the 21 new Danube-corridor stations and all 8 new eastern-frontier forts still lack an
+  image** — the Danube dozen (Ad Militare, Teutoburgium, Cornacum, Bononia/Malata, Bassianae,
+  Acumincum, Rittium, Burgenae) had no verifiable Commons `File:` page turn up at all across two
+  research passes now; don't keep re-researching them without a different search strategy. The
+  eastern forts (Hyssos Limen, Phasis, Sebastopolis, Zimara, Tomisa, Elegeia, Carsaga) are mostly
+  unexcavated sites — genuinely thin source material, same conclusion twice.
+- **Samosata as a 29th legionary fortress** — flagged above, needs a deliberate single-pass
+  decision on the site's "28 legions" framing (Ritterling's classic count vs. reconstructions that
+  include Legio XVI Flavia Firma), not a drive-by add. Worth a dedicated ticket rather than folding
+  into the next axis-2/axis-3 shift.
+- **Two more Danube-adjacent road gaps surfaced but not researched**: Sopianae has two other
+  attested roads (toward Aquincum, toward Brigetio) that a research agent explicitly declined to
+  build this shift since they're separate corridors from the Sirmium-Savaria spur requested — real
+  candidates for a future shift. An inland Numidia/Mauretania road network beyond the existing `Via
+  a Carthagine Cirtam` (flagged by Shift 102, not re-checked this shift) is also still plausibly
+  open.
+- Track B: still no small unblocked win found — spot-checked myself rather than trusting
+  inheritance (see Boot section), same board tickets open as every recent shift. `split-map-tsx`
+  remains the most plausible next Track B pick for a shift with more wall-clock budget than one
+  slot.
+- Axis 1 (more cities) stays network-blocked in this sandbox — independently re-tested this shift
+  (direct `curl` to `overpass-api.de` and `en.wikipedia.org`, both `connect_rejected`), not just
+  inherited from prior logs.
+
+---
+
 ## Shift 102 — 2026-09-05 (this shift's own prompt claimed "Shift 3 of four")
 
 ### Boot
