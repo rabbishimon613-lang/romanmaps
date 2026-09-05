@@ -15587,6 +15587,462 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zitadelle_Mainz_Drususstein.jpg?width=800",
         "image_credit": "Drususstein, the Roman cenotaph of Drusus (erected 9 BCE), inside the Mainz Citadel grounds · Wikimedia Commons"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.895,
+          49.964
+        ]
+      },
+      "properties": {
+        "id": "station_bingium",
+        "category": "vicus",
+        "name": "Bingen am Rhein",
+        "road": "Rhine Limes Road (Mainz-Nijmegen)",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Drusus founded a fort here in 13 BCE where the Nahe meets the Rhine, guarding the entrance to the Rhine gorge. Roman engineers raised a stone bridge across the Nahe around 70 CE, among the oldest built anywhere in Germany. Bingium anchored the start of the road to Trier, and a Roman-era graveyard turned up here during 1850s railway construction.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Bingen_am_Rhein",
+          "Roman milestone, Tongeren (CIL XIII 9158)",
+          "Itin. Ant. (Bingium-Mogontiacum stage)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7264,
+          50.1075
+        ]
+      },
+      "properties": {
+        "id": "station_vosolvia",
+        "category": "mansio",
+        "name": "Oberwesel",
+        "road": "Rhine Limes Road (Mainz-Nijmegen)",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Vosolvia served as a way station on the Rhine road midway between Bingen and Boppard, named on a Roman milestone found at Tongeren. Travelers covered the twelve miles down from Bingium to this stop in a single day's stage. The station sat on a narrow shelf of land squeezed between the river and steep vineyard slopes, with little of the Roman post surviving beneath the medieval town that grew over it.",
+        "sources": [
+          "Roman milestone, Tongeren (CIL XIII 9158)",
+          "https://en.wikipedia.org/wiki/Oberwesel",
+          "https://en.wikipedia.org/wiki/Middle_Rhine_Valley"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5917,
+          50.231
+        ]
+      },
+      "properties": {
+        "id": "station_baudobriga",
+        "category": "vicus",
+        "name": "Boppard",
+        "road": "Rhine Limes Road (Mainz-Nijmegen)",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Boppard began as a Roman way station called Baudobriga on the Rhine road under Augustus. Its later fortification walls, built for a garrison of roughly 600 soldiers, rank among the best-preserved Roman fortifications standing in Germany today. In 117 CE the settlement was still the open riverside vicus a traveler on the Rhine road would have known.",
+        "sources": [
+          "https://de.wikipedia.org/wiki/Kastell_Boppard",
+          "https://www.boppard-tourismus.de/en/sightseeing/the-roman-fort/",
+          "Roman milestone, Tongeren (CIL XIII 9158)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B6merkastell_Boppard.jpg?width=800",
+        "image_credit": "Romerkastell Boppard · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.599486,
+          50.356728
+        ]
+      },
+      "properties": {
+        "id": "station_confluentes",
+        "category": "vicus",
+        "name": "Koblenz",
+        "road": "Rhine Limes Road (Mainz-Nijmegen)",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Confluentes took its name from its position where the Moselle empties into the Rhine. Roman troops built an auxiliary fort here by the reign of Tiberius to guard the river crossing, its ditch uncovered under Koblenz's Munzplatz in 1952. The fort watched over the strategic confluence that gave the modern city its name.",
+        "sources": [
+          "https://pleiades.stoa.org/places/108903",
+          "https://www.alaturka.info/en/germany/rhineland-palatinate/5910-koblenz-the-origin-was-the-castellum-apud-confluentes",
+          "Roman milestone, Tongeren (CIL XIII 9158)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3975,
+          50.4401
+        ]
+      },
+      "properties": {
+        "id": "station_antunnacum",
+        "category": "vicus",
+        "name": "Andernach",
+        "road": "Rhine Limes Road (Mainz-Nijmegen)",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Andernach grew from a Roman post that Drusus established on a flood-safe rise called the Hugelchen at the river's edge. A cohort of Raeti auxiliaries likely garrisoned the site, attested by a soldier's gravestone found nearby. Antunnacum stood on the great road linking Bonn to Bingen, and its vicus later became an important Rhine trading post.",
+        "sources": [
+          "https://de.wikipedia.org/wiki/Antunnacum",
+          "https://en.wikisource.org/wiki/Dictionary_of_Greek_and_Roman_Geography/Antunnacum",
+          "Roman milestone, Tongeren (CIL XIII 9158)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2306,
+          50.5786
+        ]
+      },
+      "properties": {
+        "id": "station_rigomagus",
+        "category": "vicus",
+        "name": "Remagen",
+        "road": "Rhine Limes Road (Mainz-Nijmegen)",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Rigomagus, Celtic for royal market, became a Roman auxiliary fort under Claudius, holding around 500 soldiers who guarded the mouth of the Ahr valley. Bricks and gravestones there record five different cohorts rotating through its garrison over the centuries. Remagen's Roman museum still displays a working hypocaust recovered from the fort.",
+        "sources": [
+          "https://www.livius.org/articles/place/rigomagus-remagen",
+          "https://www.remagen.de/images/004_2019_Tourismus/GeschichteUNESCOWelterbe/An_extract_from_the_history_of_Remagen.pdf",
+          "Roman milestone, Tongeren (CIL XIII 9158)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.096251,
+          50.732632
+        ]
+      },
+      "properties": {
+        "id": "station_bonna",
+        "category": "vicus",
+        "name": "Bonn",
+        "road": "Rhine Limes Road (Mainz-Nijmegen)",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Bonna anchored the Rhine frontier as one of the empire's largest legionary bases, its walls enclosing roughly 524 by 526 meters. Legio I Minervia, raised by Domitian in 82 CE, made this fortress its home from the 80s CE onward, with around 7,000 soldiers and camp followers living here at its height. The base stayed continuously garrisoned from 35 CE all the way to 430 CE.",
+        "sources": [
+          "https://pleiades.stoa.org/places/108818",
+          "https://www.livius.org/articles/place/bonna-bonn/",
+          "Roman milestone, Tongeren (CIL XIII 9158)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.8406,
+          51.0925
+        ]
+      },
+      "properties": {
+        "id": "station_durnomagus",
+        "category": "vicus",
+        "name": "Dormagen",
+        "road": "Rhine Limes Road (Mainz-Nijmegen)",
+        "distance_from_previous_mp": 10.5,
+        "identified": true,
+        "notes": "Durnomagus housed a 500-strong cavalry squadron, the ala Noricorum recruited from Noricum, as a rapid-response force along the Rhine. Excavators found pits that once collected horse urine, physical proof of the stables that once stood here. Today's B9 highway through Dormagen still follows the old Roman road bed.",
+        "sources": [
+          "https://www.livius.org/articles/place/durnomagus-dormagen/",
+          "Itin. Ant. (Colonia Agrippina-Durnomagus-Burungum-Novaesium stage)",
+          "https://www.dormagen.de/fileadmin/user_upload/HeimatBlickpunkte/Flyer_Limes_0524_englisch.pdf"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.8733,
+          51.1297
+        ]
+      },
+      "properties": {
+        "id": "station_burungum",
+        "category": "vicus",
+        "name": "Monheim am Rhein",
+        "road": "Rhine Limes Road (Mainz-Nijmegen)",
+        "distance_from_previous_mp": 7.5,
+        "identified": true,
+        "notes": "Burungum guarded the Rhine road between Cologne and Neuss on what was then the river's west bank; the Rhine only shifted to its present course in 1374, leaving the fort stranded on the east bank today. A Roman milestone from Tongeren places Burungum five leagues from Durnomagus, and its later stone fort held about 150 soldiers behind twelve round towers.",
+        "sources": [
+          "https://www.livius.org/articles/place/burungum-haus-burgel/",
+          "Itin. Ant. (Colonia Agrippina-Durnomagus-Burungum-Novaesium stage)",
+          "https://hausbuergel.de/english/haus-buergel/history"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Haus_B%C3%BCrgel_-_Arch%C3%A4ologisches_Museum.JPG?width=800",
+        "image_credit": "Haus Burgel Archaologisches Museum · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.721944,
+          51.183889
+        ]
+      },
+      "properties": {
+        "id": "station_novaesium",
+        "category": "vicus",
+        "name": "Neuss",
+        "road": "Rhine Limes Road (Mainz-Nijmegen)",
+        "distance_from_previous_mp": 7.5,
+        "identified": true,
+        "notes": "Novaesium hosted a succession of Roman legions guarding the Rhine, including V Alaudae, XVI Gallica, and VI Victrix. Its stone-walled fortress, excavated by Constantin Koenen between 1887 and 1900, gave archaeology its first complete plan of a legionary base. The site anchored a Roman military presence at Neuss for over three centuries, from a camp founded in 16 BCE to its 4th-century abandonment.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Novaesium",
+          "https://www.livius.org/articles/place/novaesium-neuss/",
+          "Itin. Ant. (Colonia Agrippina-Durnomagus-Burungum-Novaesium stage)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6768,
+          51.3308
+        ]
+      },
+      "properties": {
+        "id": "station_gelduba",
+        "category": "vicus",
+        "name": "Krefeld-Gellep",
+        "road": "Rhine Limes Road (Mainz-Nijmegen)",
+        "distance_from_previous_mp": 13.5,
+        "identified": true,
+        "notes": "Gelduba witnessed one of the fiercest fights of the Batavian Revolt in 69 CE, when about 20,000 Roman and rebel troops clashed nearby. Archaeologists have pulled more than 300 horse skeletons from the battlefield, likely casualties of that fight. Its cemetery holds over 6,000 excavated graves spanning from Nero's reign into the 8th century.",
+        "sources": [
+          "https://www.livius.org/articles/place/gelduba-krefeld-gellep/",
+          "Itin. Ant. (Novesium-Gelduba stage)",
+          "https://www.roemer.nrw/en/krefeld-gellep"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6645,
+          51.4349
+        ]
+      },
+      "properties": {
+        "id": "station_asciburgium",
+        "category": "vicus",
+        "name": "Moers-Asberg",
+        "road": "Rhine Limes Road (Mainz-Nijmegen)",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Asciburgium, whose name meant fort of the ash wood, was founded by Drusus around 12 BCE opposite the mouth of the Ruhr. Its garrison grew from a tented earth-and-timber camp into a permanent cavalry base by the mid-1st century CE. Tacitus claimed the site as old as Ulysses's wanderings, calling it one of the Rhine's oldest settlements, and a civilian vicus continued here long after the military left in the 80s CE.",
+        "sources": [
+          "https://pleiades.stoa.org/places/108761",
+          "https://www.livius.org/articles/place/asciburgium-moers-asberg/",
+          "Tabula Peutingeriana, Segment II (Novesium-Asciburgium-Vetera)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.47,
+          51.6464
+        ]
+      },
+      "properties": {
+        "id": "station_vetera",
+        "category": "vicus",
+        "name": "Xanten (Vetera)",
+        "road": "Rhine Limes Road (Mainz-Nijmegen)",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "Vetera anchored the Lower Rhine as a double legionary fortress from around 13 BCE, garrisoned for decades by up to two legions at once. Legio V Alaudae and Legio XV Primigenia held the base until Batavian rebels besieged and destroyed it in 69-70 CE. Rome rebuilt a fortress nearby, Vetera II, which housed Legio XXX Ulpia Victrix by Trajan's reign, and the Furstenberg hill outside Xanten still marks the original site.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Vetera",
+          "https://www.livius.org/articles/place/xanten/",
+          "Tabula Peutingeriana, Segment II (Asciburgium-Vetera)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4539,
+          51.6622
+        ]
+      },
+      "properties": {
+        "id": "station_colonia_ulpia_traiana",
+        "category": "vicus",
+        "name": "Xanten (Colonia Ulpia Traiana)",
+        "road": "Rhine Limes Road (Mainz-Nijmegen)",
+        "distance_from_previous_mp": 1,
+        "identified": true,
+        "notes": "Trajan elevated this Rhine-side settlement to colonia status around 98-100 CE, renaming it Colonia Ulpia Traiana after himself. The chartered city covered roughly 73 hectares behind a new defensive wall, laid out on a grid plan with its own harbor, just a mile from the Vetera II fortress that protected it. The Xanten Archaeological Park preserves its footprint today.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Colonia_Ulpia_Traiana",
+          "https://www.livius.org/articles/place/xanten/xanten-cut/",
+          "Itin. Ant. (Burginatium-Colonia Traiana-Veteres stage)"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amphitheater_Xanten.jpg?width=800",
+        "image_credit": "Reconstructed Roman amphitheatre, Archaeological Park Xanten · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2833,
+          51.7167
+        ]
+      },
+      "properties": {
+        "id": "station_burginatium",
+        "category": "vicus",
+        "name": "Alt-Kalkar",
+        "road": "Rhine Limes Road (Mainz-Nijmegen)",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Burginatium guarded the Rhine road in the territory of the Cugerni tribe as a cavalry fort built under Tiberius. Its garrison later became the Ala Afrorum, a cavalry wing recruited in North Africa, stationed here into the early 2nd century. Archaeologists have traced its civilian vicus, street grid, and burial ground across five centuries of use.",
+        "sources": [
+          "https://www.livius.org/articles/place/burginatium-alt-kalkar/",
+          "https://www.roemer.nrw/en/kalkar-altkalkar",
+          "Itin. Ant. (Burginatium-Colonia Traiana-Veteres stage)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.125456,
+          51.812301
+        ]
+      },
+      "properties": {
+        "id": "station_harenatium",
+        "category": "vicus",
+        "name": "Kleve-Rindern",
+        "road": "Rhine Limes Road (Mainz-Nijmegen)",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Harenatium became the winter camp of Legio X Gemina after Roman forces crushed the Batavian Revolt in 70 CE, according to Tacitus. The Antonine Itinerary later lists it as a cavalry base guarding this stretch of the Rhine, its name shifting across sources from Arenacium in Tacitus to Arenatio on the Peutinger Table. The church of St. Willibrord in Rindern marks the settlement's old center today.",
+        "sources": [
+          "https://pleiades.stoa.org/places/98976",
+          "https://www.livius.org/articles/place/arenacum-rindern/",
+          "Itin. Ant."
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0994,
+          51.8856
+        ]
+      },
+      "properties": {
+        "id": "station_carvium",
+        "category": "vicus",
+        "name": "Herwen",
+        "road": "Rhine Limes Road (Mainz-Nijmegen)",
+        "distance_from_previous_mp": 6,
+        "identified": true,
+        "notes": "Carvium guarded a Rhine dam that Drusus built around the turn of the era to divert more water into the river and keep it navigable. Archaeologists identified the site from a memorial stone naming a legionary of Legio I Germanica buried here, alongside a silver-plated sword sheath belonging to a centurion and an altar dedicated to Jupiter. The fort's ditches turned up just 250 meters from Herwen in 2018.",
+        "sources": [
+          "https://www.livius.org/articles/place/carvium-herwen/",
+          "https://www.romeinen.nl/weten/nederland-in-de-romeinse-tijd/gelderland-in-de-romeinse-tijd/herwen-de-bijland",
+          "Itin. Ant."
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8478,
+          51.8518
+        ]
+      },
+      "properties": {
+        "id": "station_noviomagus_batavorum",
+        "category": "vicus",
+        "name": "Nijmegen",
+        "road": "Rhine Limes Road (Mainz-Nijmegen)",
+        "distance_from_previous_mp": 13,
+        "identified": true,
+        "notes": "Trajan granted this Batavian town chartered status around 104 CE, renaming it Ulpia Noviomagus after his own family name. Soldiers of Legio X Gemina helped build the new town two kilometers west of the older settlement before the legion shipped out to Trajan's Dacian campaigns. Roman Nijmegen held about 5,000 residents at its height and anchored the northern end of this Rhine road.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ulpia_Noviomagus_Batavorum",
+          "https://www.livius.org/articles/place/noviomagus/",
+          "https://en.intonijmegen.com/discover/history/historicaltimeline/the-roman-cities-oppidum-batavorum-and-ulpia-noviomagus"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
