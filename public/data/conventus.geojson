@@ -204,7 +204,10 @@
           "https://en.wikipedia.org/wiki/Apamea_(Phrygia)",
           "https://www.attalus.org/pliny/hn5b.html"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/8.23_Apameia.jpg?width=800",
+        "image_credit": "Apamea (Celaenae), Phrygia · Wikimedia Commons",
+        "image_alt": "View of the ancient site of Apamea (Celaenae) in Phrygia"
       }
     },
     {
@@ -228,7 +231,10 @@
           "https://en.wikipedia.org/wiki/Synnada",
           "https://www.attalus.org/pliny/hn5b.html"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dionysos_from_Synnada.jpg?width=800",
+        "image_credit": "Roman statue of Dionysos from Synnada, Istanbul Archaeological Museum · Wikimedia Commons",
+        "image_alt": "Roman marble statue of Dionysos excavated at Synnada"
       }
     },
     {
@@ -406,7 +412,10 @@
           "Pliny the Elder's Natural History 3.11 (conventus lists of Baetica)",
           "https://en.wikipedia.org/wiki/%C3%89cija",
           "https://www.ancientportsantiques.com/wp-content/uploads/Documents/AUTHORS/Martin2016-OliveOil.pdf"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amazona_herida_de_%C3%89cija_(Espa%C3%B1a).jpg?width=800",
+        "image_credit": "Wounded Amazon of Écija (Astigi), Museo Histórico Municipal de Écija · Wikimedia Commons",
+        "image_alt": "Roman marble statue of a wounded Amazon found at Astigi (Écija)"
       }
     },
     {
@@ -530,7 +539,10 @@
           "Pliny the Elder's Natural History 3.26-27 (conventus lists of Tarraconensis)",
           "https://en.wikipedia.org/wiki/Clunia",
           "https://en.wikipedia.org/wiki/Conventus_iuridicus"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Teatro_de_Clunia_01.JPG?width=800",
+        "image_credit": "Roman theatre of Clunia · Wikimedia Commons",
+        "image_alt": "Ruins of the rock-cut Roman theatre at Colonia Clunia Sulpicia"
       }
     },
     {
@@ -553,7 +565,10 @@
           "Pliny the Elder's Natural History 33.78 (gold output); 3.28 (conventus lists)",
           "https://en.wikipedia.org/wiki/Asturica_Augusta",
           "https://en.wikipedia.org/wiki/Las_M%C3%A9dulas"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Muralla_de_Astorga,_lienzo_sur.jpg?width=800",
+        "image_credit": "Roman wall of Asturica Augusta (Astorga), south stretch · Wikimedia Commons",
+        "image_alt": "Surviving stretch of the Roman city wall of Astorga"
       }
     },
     {
@@ -576,7 +591,10 @@
           "Pliny the Elder's Natural History 3.28 (conventus lists of Tarraconensis)",
           "https://en.wikipedia.org/wiki/Lugo",
           "https://en.wikipedia.org/wiki/Conventus_Lucensis"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_walls,_Lugo.jpg?width=800",
+        "image_credit": "Roman walls of Lucus Augusti (Lugo) · Wikimedia Commons",
+        "image_alt": "Intact Roman defensive walls encircling Lugo"
       }
     },
     {
@@ -599,7 +617,10 @@
           "Pliny the Elder's Natural History 3.28 (conventus lists of Tarraconensis)",
           "https://en.wikipedia.org/wiki/Braga",
           "https://en.wikipedia.org/wiki/Conventus_Bracarensis"
-        ]
+        ],
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Termas_de_Maximinos.JPG?width=800",
+        "image_credit": "Roman Thermae of Maximinus, Bracara Augusta (Braga) · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman public baths of Maximinus in Braga"
       }
     },
     {
@@ -673,7 +694,10 @@
           "https://en.wikipedia.org/wiki/Pax_Julia",
           "https://en.wikipedia.org/wiki/Conventus_iuridicus"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Villa_of_Pis%C3%B5es,_Portugal_(16800306972).jpg?width=800",
+        "image_credit": "Roman villa of Pisões, near Pax Iulia (Beja) · Wikimedia Commons",
+        "image_alt": "Ruins of the Roman villa rustica of Pisões near Beja"
       }
     }
   ]

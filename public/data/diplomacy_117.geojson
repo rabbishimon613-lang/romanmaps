@@ -475,7 +475,10 @@
           "https://en.wikipedia.org/wiki/Zoskales",
           "https://en.wikipedia.org/wiki/Adulis"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Adulis_Kingdom.jpg?width=800",
+        "image_credit": "Site of ancient Adulis, Eritrea · Wikimedia Commons",
+        "image_alt": "The ancient Red Sea port site of Adulis"
       }
     },
     {
@@ -525,7 +528,10 @@
           "https://en.wikipedia.org/wiki/Treasure_of_Begram",
           "https://en.wikipedia.org/wiki/Begram_ivories"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/BegramGladiator.JPG?width=800",
+        "image_credit": "Roman glass beaker from the Begram Hoard, Musée Guimet · Wikimedia Commons",
+        "image_alt": "Painted Roman glass vessel from the Begram treasure"
       }
     },
     {
@@ -550,7 +556,10 @@
           "https://en.wikipedia.org/wiki/Amanirenas",
           "https://en.wikipedia.org/wiki/Mero%C3%AB_Head"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Augustus_head_at_the_British_Museum.jpg?width=800",
+        "image_credit": "Meroë Head of Augustus, British Museum · Wikimedia Commons",
+        "image_alt": "Bronze head of Augustus looted from Meroe and buried beneath a temple's steps"
       }
     },
     {
@@ -733,7 +742,10 @@
           "https://en.wikipedia.org/wiki/Hoq_Cave",
           "https://en.wikipedia.org/wiki/Periplus_of_the_Erythraean_Sea"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Al_Hoq_Cave_with_Brahmi_Greek_Aramaic_and_other_inscriptions,_Socotra_Yemen_01.jpg?width=800",
+        "image_credit": "Inscriptions in Hoq Cave, Socotra · Wikimedia Commons",
+        "image_alt": "Ancient sailors' inscriptions in Brahmi, Greek, and Aramaic scripts inside Hoq Cave"
       }
     },
     {
