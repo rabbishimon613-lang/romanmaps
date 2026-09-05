@@ -16082,6 +16082,509 @@
         "image_credit": "The Nijmegen cavalry helmet, a 1st-century Roman iron parade mask sheathed in bronze and silver, found near Nijmegen (Noviomagus Batavorum), Museum het Valkhof · Wikimedia Commons",
         "image_alt": "Roman iron cavalry parade helmet with bronze and silver sheathing, found near Nijmegen"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2756,
+          36.7683
+        ]
+      },
+      "properties": {
+        "id": "station_maxula",
+        "category": "mansio",
+        "name": "Rades",
+        "road": "African Coastal Road (Carthage-Leptis Magna)",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Maxula stood 18 Roman miles south of Carthage on the road looping around the Gulf of Tunis. Wealthy Carthaginian families built villas there as a seaside retreat from the capital. The town later anchored its own Christian bishopric under Carthage. Its remains lie beneath the port town of Rades, Tunisia.",
+        "sources": [
+          "Itin. Ant. (Iter a Carthagine Tacapas)",
+          "https://en.wikipedia.org/wiki/Rad%C3%A8s"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.476,
+          36.505
+        ]
+      },
+      "properties": {
+        "id": "station_vina",
+        "category": "mansio",
+        "name": "Henchir-El-Meden",
+        "road": "African Coastal Road (Carthage-Leptis Magna)",
+        "distance_from_previous_mp": 28,
+        "identified": true,
+        "notes": "Vina stood 28 Roman miles south of Maxula, a market town serving Cap Bon's farms and orchards. Its citizens raised an amphitheater dedicated jointly to Marcus Aurelius and Lucius Verus. The settlement later held its own Christian bishopric answering to Carthage. Its ruins survive at Henchir-El-Meden, Tunisia.",
+        "sources": [
+          "Itin. Ant. (Iter a Carthagine Tacapas)",
+          "https://en.wikipedia.org/wiki/Henchir-El-Meden"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.5621,
+          36.3928
+        ]
+      },
+      "properties": {
+        "id": "station_pupput",
+        "category": "vicus",
+        "name": "Hammamet",
+        "road": "African Coastal Road (Carthage-Leptis Magna)",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Pupput served travelers 12 Roman miles past Vina, wedged between two seasonal streams on the coast near Hammamet. Excavators there uncovered bath complexes floored in mosaic and a necropolis crowded with carved sarcophagi. The vicus grew wealthy enough to strike its own bronze coinage. Its ruins form an open archaeological park at Hammamet today.",
+        "sources": [
+          "Itin. Ant. (Iter a Carthagine Tacapas)",
+          "https://en.wikipedia.org/wiki/Pupput"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.517,
+          36.0207
+        ]
+      },
+      "properties": {
+        "id": "station_horrea_caelia",
+        "category": "vicus",
+        "name": "Hergla",
+        "road": "African Coastal Road (Carthage-Leptis Magna)",
+        "distance_from_previous_mp": 30,
+        "identified": true,
+        "notes": "Horrea Caelia, the Warehouses of the Sky, stood 30 Roman miles past Pupput on the Gulf of Hammamet. Grain and oil from the Sahel hinterland passed through its harbor bound for Rome. The vicus kept functioning as a trading post well into the Byzantine period. Its remains lie beneath the fishing town of Hergla, Tunisia.",
+        "sources": [
+          "Itin. Ant. (Iter a Carthagine Tacapas)",
+          "https://en.wikipedia.org/wiki/Hergla"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.8806,
+          35.6753
+        ]
+      },
+      "properties": {
+        "id": "station_leptis_minus",
+        "category": "mansio",
+        "name": "Lamta",
+        "road": "African Coastal Road (Carthage-Leptis Magna)",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Leptis Minus stood 18 Roman miles south of Hadrumetum on a headland in the Gulf of Hammamet. Trajan raised the port to colonial status under the title Colonia Ulpia Lepti Minus. Kilns ringing the town turned out amphorae by the thousand to carry its oil and garum abroad. Its ruins lie at Lamta, Tunisia.",
+        "sources": [
+          "Itin. Ant. (Iter a Carthagine Tacapas)",
+          "https://en.wikipedia.org/wiki/Leptis_Parva"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7128,
+          35.2967
+        ]
+      },
+      "properties": {
+        "id": "station_thysdrus",
+        "category": "mansio",
+        "name": "El Djem",
+        "road": "African Coastal Road (Carthage-Leptis Magna)",
+        "distance_from_previous_mp": 33,
+        "identified": true,
+        "notes": "Thysdrus stood 33 Roman miles south of Leptis Minus at the heart of Byzacena's olive belt. Its oil merchants grew rich enough to floor private houses in elaborate mosaic well before the town's famous amphitheater rose. The road south linked its presses directly to the coast for export. Its ruins surround the modern town of El Djem, Tunisia.",
+        "sources": [
+          "Itin. Ant. (Iter a Carthagine Tacapas)",
+          "https://en.wikipedia.org/wiki/Thysdrus"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.717,
+          34.972
+        ]
+      },
+      "properties": {
+        "id": "station_usula",
+        "category": "mansio",
+        "name": "Henchir Inchilla",
+        "road": "African Coastal Road (Carthage-Leptis Magna)",
+        "distance_from_previous_mp": 32,
+        "identified": true,
+        "notes": "Usula stood 32 Roman miles south of Thysdrus, a civitas serving Byzacena's olive-growing interior. Ptolemy recorded the town by name, and it later reappears on the Tabula Peutingeriana's African coast road. Its bishops sat among Byzacena's delegates at church councils for generations. Its ruins near Henchir Inchilla, Tunisia, include a Byzantine-era basilica.",
+        "sources": [
+          "Itin. Ant. (Iter a Carthagine Tacapas)",
+          "Tabula Peutingeriana, North African segment",
+          "https://en.wikipedia.org/wiki/Usilla"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7205,
+          34.6873
+        ]
+      },
+      "properties": {
+        "id": "station_thaenae",
+        "category": "mansio",
+        "name": "Thyna",
+        "road": "African Coastal Road (Carthage-Leptis Magna)",
+        "distance_from_previous_mp": 28,
+        "identified": true,
+        "notes": "Thaenae stood 28 Roman miles south of Usula on the low coastal plain where Sfax later grew up. Phoenician settlers founded the town before Carthage absorbed it into its trading network. Rome kept it running as a working port on the coast road south. Its ruins sit today inside Thyna, a southern suburb of Sfax.",
+        "sources": [
+          "Itin. Ant. (Iter a Carthagine Tacapas)",
+          "https://en.wikipedia.org/wiki/Thyna"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4131,
+          34.4683
+        ]
+      },
+      "properties": {
+        "id": "station_macomades_minores",
+        "category": "mansio",
+        "name": "Younga",
+        "road": "African Coastal Road (Carthage-Leptis Magna)",
+        "distance_from_previous_mp": 28,
+        "identified": true,
+        "notes": "Macomades Minores stood 28 Roman miles south of Thaenae, a Punic trading post the Romans kept running as a municipium on the coast road. Its name came from the Punic Maqom Hadash, meaning simply New Place. The settlement stayed active long enough to send its own bishop to church councils in later centuries. Its ruins lie at Younga, Tunisia, beneath a Byzantine-era fort.",
+        "sources": [
+          "Itin. Ant. (Iter a Carthagine Tacapas)",
+          "https://en.wikipedia.org/wiki/Ounga,_Tunisia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.267,
+          34.196
+        ]
+      },
+      "properties": {
+        "id": "station_cellae_africa",
+        "category": "vicus",
+        "name": "Cellae",
+        "road": "African Coastal Road (Carthage-Leptis Magna)",
+        "distance_from_previous_mp": 26,
+        "identified": false,
+        "notes": "Cellae appears in the Antonine Itinerary as a vicus 26 Roman miles south of Macomades Minores on the final stretch of coast road into Tacapae. No ruin or inscription has been matched conclusively to the name. Its plotted position here comes from the itinerary's mileage alone, interpolated between its better-documented neighbors on the Gulf of Gabes shore.",
+        "sources": [
+          "Itin. Ant. (Iter a Carthagine Tacapas)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0982,
+          33.8815
+        ]
+      },
+      "properties": {
+        "id": "station_tacapae",
+        "category": "mansio",
+        "name": "Gabes",
+        "road": "African Coastal Road (Carthage-Leptis Magna)",
+        "distance_from_previous_mp": 30,
+        "identified": true,
+        "notes": "Tacapae stood 30 Roman miles south of Cellae at the head of the Gulf of Gabes, where a natural oasis met the sea. Freshwater springs there let the town grow dates and market-garden crops alongside its seaborne trade. Roads from the Sahara's caravan routes converged on it from the interior. Its site is occupied today by Gabes, Tunisia.",
+        "sources": [
+          "Itin. Ant. (Iter a Carthagine Tacapas)",
+          "https://en.wikipedia.org/wiki/Gab%C3%A8s"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.386,
+          33.71
+        ]
+      },
+      "properties": {
+        "id": "station_agma",
+        "category": "mutatio",
+        "name": "Agma",
+        "road": "African Coastal Road (Carthage-Leptis Magna)",
+        "distance_from_previous_mp": 25,
+        "identified": false,
+        "notes": "Agma, also recorded as Fulgurita villa, appears in the Antonine Itinerary as the first stop 25 Roman miles south of Tacapae on the road toward Gigthis. No ruin has been matched to the name with confidence, and its plotted position here is interpolated between its two better-attested neighbors along the Gulf of Gabes coast.",
+        "sources": [
+          "Itin. Ant. (Iter a Tacapis per Gigthim Sabratam)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.6733,
+          33.5389
+        ]
+      },
+      "properties": {
+        "id": "station_gigthis",
+        "category": "mansio",
+        "name": "Bou Ghrara",
+        "road": "African Coastal Road (Carthage-Leptis Magna)",
+        "distance_from_previous_mp": 25,
+        "identified": true,
+        "notes": "Gigthis stood 25 Roman miles south of Agma at the head of a shallow gulf facing the island of Djerba. Its citizens petitioned Rome for municipal status and raised a forum, a capitolium, and porticoed streets to match. The town traded directly with Djerba across the water. Its ruins survive at Bou Ghrara, Tunisia.",
+        "sources": [
+          "Itin. Ant. (Iter a Tacapis per Gigthim Sabratam)",
+          "https://en.wikipedia.org/wiki/Gigthis"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0229,
+          33.5058
+        ]
+      },
+      "properties": {
+        "id": "station_zitha",
+        "category": "mansio",
+        "name": "Henchir Ziane",
+        "road": "African Coastal Road (Carthage-Leptis Magna)",
+        "distance_from_previous_mp": 35,
+        "identified": true,
+        "notes": "Pons Zita, also called Zitha, stood 35 Roman miles south of Gigthis on the Zarzis peninsula. Its Punic name meant simply City of Olives, a trade the town kept under Roman rule. Excavated remains there include a forum and a capitol built in the local African tradition. Its ruins survive at Henchir Ziane, Tunisia.",
+        "sources": [
+          "Itin. Ant. (Iter a Tacapis per Gigthim Sabratam)",
+          "Tabula Peutingeriana, North African segment",
+          "https://en.wikipedia.org/wiki/Henchir_Ziane"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.651,
+          33.208
+        ]
+      },
+      "properties": {
+        "id": "station_villa_magna",
+        "category": "mutatio",
+        "name": "Villa Magna",
+        "road": "African Coastal Road (Carthage-Leptis Magna)",
+        "distance_from_previous_mp": 30,
+        "identified": false,
+        "notes": "Villa Magna, paired in the Antonine Itinerary with a neighboring stop called Villa Privata, marked a waypoint 30 Roman miles south of Pons Zita on the road toward Tripolitania. Neither ruin has been matched to a known site. The pair's plotted position here is interpolated along the coast road between Pons Zita and Pisida using the itinerary's mileage alone.",
+        "sources": [
+          "Itin. Ant. (Iter a Tacapis per Gigthim Sabratam)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.28,
+          32.92
+        ]
+      },
+      "properties": {
+        "id": "station_pisida",
+        "category": "vicus",
+        "name": "Abu Kammash",
+        "road": "African Coastal Road (Carthage-Leptis Magna)",
+        "distance_from_previous_mp": 31,
+        "identified": true,
+        "notes": "Fisida, recorded elsewhere as Pisida, stood on the coast road near the boundary between Africa Proconsularis and Tripolitania. A milestone found at Abu Kammash confirms the spot, reading 54 Roman miles from Sabratha exactly as the Antonine Itinerary predicts. The find anchors this stretch of road to real ground rather than interpolation alone.",
+        "sources": [
+          "Itin. Ant. (Iter a Tacapis per Gigthim Sabratam)",
+          "Tabula Peutingeriana, North African segment",
+          "Libyan Studies: \"Una postazione di miliari presso Abu Kammash (Tripolitania)\""
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.389,
+          32.854
+        ]
+      },
+      "properties": {
+        "id": "station_casas",
+        "category": "mutatio",
+        "name": "Casas",
+        "road": "African Coastal Road (Carthage-Leptis Magna)",
+        "distance_from_previous_mp": 26,
+        "identified": false,
+        "notes": "Casas, called villa Aniciorum in the Antonine Itinerary, marked a waypoint 26 Roman miles south of Fisida on the final approach to Sabratha. Its name identifies it as a private roadside estate rather than a market town or civic settlement. No ruin has been matched to the site, and its plotted position here is interpolated along the coast road using the itinerary's mileage alone.",
+        "sources": [
+          "Itin. Ant. (Iter a Tacapis per Gigthim Sabratam)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.832,
+          32.845
+        ]
+      },
+      "properties": {
+        "id": "station_vax",
+        "category": "mutatio",
+        "name": "Vax",
+        "road": "African Coastal Road (Carthage-Leptis Magna)",
+        "distance_from_previous_mp": 27,
+        "identified": false,
+        "notes": "Vax, called villa Repentina in the Antonine Itinerary, marked the first stop 27 Roman miles east of Sabratha on the coast road toward Oea. Like its neighboring waypoints it took its name from a private estate rather than a town. No ruin has been matched to the site, and its plotted position here is interpolated between Sabratha and Oea using the itinerary's mileage alone.",
+        "sources": [
+          "Itin. Ant. (Iter a Sabrata Oeam et Leptim Magnam)",
+          "Libyan Studies: \"The periphery of Lepcis Magna: new data related to the ancient road network and land partition\""
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1913,
+          32.8872
+        ]
+      },
+      "properties": {
+        "id": "station_oea",
+        "category": "mansio",
+        "name": "Tripoli",
+        "road": "African Coastal Road (Carthage-Leptis Magna)",
+        "distance_from_previous_mp": 28,
+        "identified": true,
+        "notes": "Oea stood 28 Roman miles east of Vax on a natural harbor between Sabratha and Leptis Magna, the third city of the Tripolitanian coast that gave the region its name. Punic in origin, it passed to Rome and grew into a trading hub for goods moving between the desert interior and the sea. Its ancient remains lie buried beneath the heart of modern Tripoli, Libya.",
+        "sources": [
+          "Itin. Ant. (Iter a Sabrata Oeam et Leptim Magnam)",
+          "https://en.wikipedia.org/wiki/Oea"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.523,
+          32.812
+        ]
+      },
+      "properties": {
+        "id": "station_megradi",
+        "category": "mutatio",
+        "name": "Megradi",
+        "road": "African Coastal Road (Carthage-Leptis Magna)",
+        "distance_from_previous_mp": 25,
+        "identified": false,
+        "notes": "Megradi, called villa Aniciorum in the Antonine Itinerary, marked a waypoint 25 Roman miles east of Oea on the coast road toward Leptis Magna. Like Casas farther west it took its name from a private roadside estate rather than a civic settlement. No ruin has been matched to the site, and its plotted position here is interpolated using the itinerary's mileage alone.",
+        "sources": [
+          "Itin. Ant. (Iter a Sabrata Oeam et Leptim Magnam)",
+          "Libyan Studies: \"The periphery of Lepcis Magna: new data related to the ancient road network and land partition\""
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.908,
+          32.725
+        ]
+      },
+      "properties": {
+        "id": "station_minna",
+        "category": "mutatio",
+        "name": "Minna",
+        "road": "African Coastal Road (Carthage-Leptis Magna)",
+        "distance_from_previous_mp": 29,
+        "identified": false,
+        "notes": "Minna, called villa Marsi in the Antonine Itinerary, marked the final waypoint 29 Roman miles east of Megradi before the road reached Leptis Magna. Its name again points to a private estate serving travelers on the last stretch of the Tripolitanian coast road. No ruin has been matched to the site, and its plotted position here is interpolated along the coast between Oea and Leptis Magna.",
+        "sources": [
+          "Itin. Ant. (Iter a Sabrata Oeam et Leptim Magnam)",
+          "Libyan Studies: \"The periphery of Lepcis Magna: new data related to the ancient road network and land partition\""
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
