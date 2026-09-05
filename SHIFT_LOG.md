@@ -7,6 +7,148 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 101 — 2026-09-05 (this shift's own prompt claimed "Shift 2 of four")
+
+### Boot
+
+`git fetch origin main` + `git checkout -B main origin/main` landed cleanly on Shift 100's tip
+(`6dcb43f`), no divergence. Confirmed the standing network picture is unchanged: direct
+`curl`/`WebFetch` to `overpass-api.de`, `en.wikipedia.org` both still `connect_rejected` via the
+agent-proxy status endpoint — Axis 1 (new cities via Overpass) stays off the table here, same as
+every shift back through the high 80s. `WebSearch`/the `Agent` tool are unaffected and did all of
+this shift's real sourcing work. `npm install` clean, `npm run validate` clean baseline (7
+pre-existing reviewed warnings, unchanged) before touching anything.
+
+### Track B — skipped, independently re-verified rather than just trusting the log
+
+Spent real time checking this myself rather than taking Shifts 96–100's "nothing left" conclusion
+on faith. Read `BOARD.md`'s full open-ticket list (11 unclaimed items) and `FEATURE_BACKLOG.md`'s
+P0–P3 sections. Confirmed independently: P0–P3 are 100% checked off, and every specific "still
+open" idea I could find in `FEATURE_BACKLOG.md`'s "new ideas spotted" notes (per-category POI
+Layers-panel toggles, a manual light/dark theme toggle) turned out to already be shipped
+(`app/useHiddenCategories.ts`, `app/useTheme.ts` + `app/ThemeToggle.tsx`) — grepped for both before
+concluding that. Every open `BOARD.md` ticket is genuinely one of: requires a full multi-pass
+content migration (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild,
+`[10-P0-2]` three-depth-labels), blocked on network/tooling this sandbox doesn't have
+(`[13-P0-2]` image-audit's full pass, `[02-P0-4]` self-host-glyphs' remaining PBF-generation half),
+blocked on a human (`[15-P0-1]`, `[14-P0-1]`), or a large refactor/major-version-upgrade
+(`[11-P1-6]` split-map-tsx, `[11-P1-5]` pmtiles, `[11-P2-11]` next-major-upgrade) that a single
+unattended shift shouldn't gamble on shipping straight to production with no human review gate —
+consistent with why five prior shifts in a row made the same call. Track B stays skipped again
+this shift on that basis.
+
+### Track A — three new road corridors + four image top-up batches (Axes 2, 8, 14, 20)
+
+Four parallel/staged WebSearch research agents this shift (max 3 concurrent at a time, per Shift
+100's own shared-WebSearch-budget-wall finding — never hit that wall this run). All research
+handed back as JSON for me to collision-check, apply via the existing
+`append-geojson-features.mjs`/`apply-image-topup.mjs` scripts, validate, build, and commit myself
+rather than letting agents touch the working tree directly — avoided any risk of concurrent writes
+to the same file corrupting it (two of the four research streams both targeted
+`road_stations.geojson`).
+
+**1. Amber Road + Danube Limes Road** (commit `12eefbb`) — checked all 35 existing named roads in
+`road_stations.geojson` first and confirmed the entire Aquileia-to-Aquincum Pannonian corridor
+(Emona, Celeia, Poetovio, Savaria, Scarbantia, Carnuntum, Vindobona, Arrabona, Brigetio, Aquincum)
+had zero coverage under any name. 13 new stations, sourced from the Antonine Itinerary (261-262,
+266) and the Tabula Peutingeriana. The research agent caught a real geography error in the brief's
+own text — its listed order "Carnuntum → Vindobona → Brigetio" isn't a straight line (Vindobona
+sits upstream/west of Carnuntum, Brigetio downstream/east) — and split the corridor into two
+honestly-labeled segments ("Amber Road (Aquileia-Carnuntum)" / "Danube Limes Road
+(Carnuntum-Aquincum)") rather than force one name onto stations with no single attested route name
+across the whole stretch. Dropped one disputed station (Halicanum) for lack of a defensible
+coordinate rather than guess. **Caught one real schema mistake before committing**: the first
+append attempt used `"image_url": null` for image-less stations, which `npm run validate` flagged
+as a warning ("present but empty; drop the key instead") — the file's actual convention (confirmed
+by grepping an existing null-image station) is to omit the key entirely. Reverted, regenerated the
+feature JSON with the keys stripped, re-applied cleanly.
+
+**2. Dacian Trunk Road** (commit `8608740`) — a second new corridor, Drobeta-Turnu Severin
+(Trajan's Danube bridgehead) through Sarmizegetusa (the new provincial capital) to
+Porolissum (the frontier post), sourced from Ptolemy's *Geography* 3.8, the Tabula Peutingeriana,
+and the 108 CE Milliarium of Aiton (CIL III 1627) — a road-building milestone that independently
+dates this exact stretch under Trajan. Extremely period-fresh: built 105–117, i.e. finished
+literally in the years leading up to this map's snapshot. 12 new stations. Per-station 117 CE
+accuracy checked individually (Napoca/Potaissa described as the civilian vici they actually were
+in 117, not the municipium/legionary-fortress status they only reached in 124/168). Sarmizegetusa's
+coordinate deliberately reused from the existing `events_117.geojson` record for the same place
+rather than duplicated with coordinate drift. Applied the lesson from corridor 1 immediately —
+no stray `image_url: null` keys this time, validate clean on the first pass.
+
+**3. Image top-up, four files** (commits `9daa63d`, `bac8b4e`, `6848236`) — closed most of Shift
+100's own flagged 26-candidate backlog (`conventus.geojson` 8/9, `diplomacy_117.geojson` 4/8) plus
+4 more `road_stations.geojson` hits (3 of Via Aquitania's 14 image-null stations, 1 general-backlog
+hit) and a fresh 5-hit batch against `pois.geojson`'s ~400-record backlog. `sports.geojson`'s 9
+gymnasia candidates yielded zero — the research agent found only generic site-category pages, never
+a filename specific to the gymnasium/palaestra structure itself, and four of the nine are
+explicitly unexcavated per their own `notes` fields, so `not_found` is the honest result there, not
+a skipped search. **Two more wrong-period traps caught and rejected, not shipped**: Trier's
+71-140s wooden-bridge record vs. the only confirmable Commons photos being of the 140s-CE
+basalt-pier successor bridge; Timgad's east-gate record explicit that the monumental Arch of
+Trajan wasn't built until 146 CE, 30 years past this snapshot — a strong image hit for that exact
+arch existed and was rejected anyway. Also rejected: Zaragoza's wall (photo shows a 3rd/4th-century
+rebuild phase, not the Augustan-Tiberian phase the record maps — the record's own notes already
+warned about this), Beirut's hippodrome (the only clean hit is almost certainly the modern
+operating horse-racing track, not the Roman circus), and Himyar/Charibael's only findable image
+(a 6th-century Christian-era Himyarite king portrait, ~450 years past the 1st-century ruler the
+record is about).
+
+Combined this shift: **road_stations.geojson** 597 → 622 features (+25 across two new roads),
+image count +4; **pois.geojson** image count +5; **conventus.geojson** +8 images;
+**diplomacy_117.geojson** +4 images. `METRICS.md` refreshed twice (after each batch): curated
+places 3,221 → 3,246, `pois.geojson` image coverage 63.4% → 64.6%, thematic-file image coverage
+62.7% → 63.3% (net change small since new road stations without images pulled the denominator up
+faster than image top-up pulled the numerator up — expected, not a regression).
+
+Every commit ran `npm run validate` + `npm run build` clean before pushing; three of the six
+pushes this shift hit the sandbox's 120s command timeout on the pre-push build gate (static-page
+count is now 2,600+) and had to be picked up as background tasks rather than failing — not a real
+problem, just slower than earlier shifts, worth knowing if a future shift sees the same thing and
+wonders whether the hook is stuck.
+
+### What's next
+
+- **`sports.geojson`'s 9 gymnasia stay image-null** — 4 are explicitly unexcavated (Diogeneion,
+  Elis, Argos Kylarabis, Megalopolis — no legitimate photo can exist), the other 5 (Iasos, Knidos,
+  Miletus, Beroea, Sicyon) have real Commons site categories but no filename a search pass could
+  confirm as specifically the gymnasium/palaestra rather than the theatre/agora/other landmark at
+  the same site — would need either a wider agent budget per site or accepting these as a real
+  ceiling.
+- **Via Aquitania still has 11 image-null stations** — mostly low-confidence mutationes two
+  independent research passes (Shift 100 and this shift) have now confirmed genuinely lack any
+  standing remains or confirmable imagery (station_ad_sextum_aquitania, station_hungunuerro,
+  station_ad_iovem, station_hosuerbas, station_bucconis, station_badera,
+  station_elusio_naurouze, station_sostomagus, station_eburomagus) plus 2 real cities worth one
+  more try with a fresh search budget (station_vasatas/Bazas, station_ausci/Auch — both only
+  turned up wrong-period Gothic/19th-century imagery so far, real Roman-era remains may still
+  exist unphotographed-on-Commons or just need a sharper query).
+- **`road_stations.geojson`'s general backlog is still large** — was 291 candidates
+  (identified + confidence high/medium, no image) before this shift's small dent; the two new
+  roads added 25 more stations, most without images, so the real number is closer to 310 now.
+  **`pois.geojson`** similarly still has ~400 candidates after this shift's 5-hit dent.
+- **Two more genuinely new road corridors exist and haven't been touched**: this shift found
+  Pannonia/Dacia was a complete gap (now filled) by grepping all 35 (now 37) road names in the
+  file against candidate place names before researching — that same technique would work well for
+  checking, e.g., a Rhine-frontier road (Cologne-Mainz-Strasbourg, currently only touched
+  piecemeal via Via Agrippa's branches — worth a dedicated collision-check pass) or a
+  North African coastal road east of Carthage.
+- **`pois.geojson` has two separate, near-duplicate POIs for Trajan's Bridge** over the Danube
+  (`poi_trajans_danube_bridge` and `poi_bridge_trajan_danube`, ~5m apart per this shift's Dacia
+  research agent's own collision check) — found but not fixed, out of this shift's scope
+  (`[12-P0-1]`-adjacent dedup work, not a road-station task). Worth a quick standalone fix.
+- Track B: still no small unblocked win exists per this shift's own independent re-check (see
+  above) — the topmost unclaimed BOARD tickets are unchanged: `[12-P0-1]` merge-themes,
+  `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[13-P0-2]` image-audit, `[02-P0-4]`
+  self-host-glyphs, `[15-P0-1]`/`[14-P0-1]` (human-blocked), `[10-P0-2]` three-depth-labels,
+  `[11-P1-5]` pmtiles, `[11-P1-6]` split-map-tsx, `[11-P2-11]` next-major-upgrade. A future shift
+  with more wall-clock budget than a single 6-hour slot could reasonably start on `split-map-tsx`
+  (no network needed, mechanical, high long-term value) if it commits to finishing or leaving a
+  clean partial state rather than a half-refactored `Map.tsx` — that's the main reason it's kept
+  getting passed over.
+- Axis 1 (more cities) stays network-blocked in this sandbox — confirmed again this shift.
+
+---
+
 ## Shift 100 — 2026-09-05 (this shift's own prompt claimed "Shift 1 of four")
 
 ### Boot
