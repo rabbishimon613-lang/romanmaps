@@ -38,6 +38,14 @@ module.exports = {
         destination: "/place/bridge_tiberius_rimini",
         permanent: true,
       },
+      // `poi_bridge_trajan_danube` was a duplicate of `poi_trajans_danube_bridge` (same bridge,
+      // ~5m coordinate drift) retired from pois.geojson — this keeps its already-generated/
+      // indexed URL landing somewhere real instead of a bare 404.
+      {
+        source: "/place/bridge_trajan_danube",
+        destination: "/place/trajans_danube_bridge",
+        permanent: true,
+      },
     ];
   },
 };

@@ -6483,9 +6483,9 @@
         "province": "Dacia",
         "modern_location": "Drobeta-Turnu Severin, Romania",
         "built": 105,
-        "destroyed": null,
+        "destroyed": 117,
         "extant_117ce": true,
-        "notes": "Apollodorus of Damascus built this bridge across the Danube in just two years, finishing in 105 CE so Trajan's legions could cross freely during the Dacian conquest. Twenty stone piers over 40 meters tall carried wooden arches spanning 1,135 meters in total, the longest bridge built anywhere for a thousand years afterward. It still stood at full length in 117 CE. Hadrian later dismantled its wooden superstructure, but the stone piers endured, and several still break the Danube's surface today.",
+        "notes": "Apollodorus of Damascus built this bridge across the Danube in just two years, finishing in 105 CE so Trajan's legions could cross freely during the Dacian conquest. Twenty stone piers over 40 meters tall carried wooden arches spanning 1,135 meters in total, the longest bridge built anywhere for a thousand years afterward. It still stood at full length in 117 CE. Hadrian later dismantled its wooden superstructure, but the stone piers endured, and several still break the Danube's surface today. Hadrian dismantled the wooden superstructure shortly after becoming emperor in 117, so it stood at full length through this map's snapshot.",
         "sources": [
           "https://en.wikipedia.org/wiki/Trajan%27s_Bridge",
           "https://www.icpdr.org/publications/danube-watch-2-2018-rediscovering-trajans-bridge-over-danube"
@@ -6500,7 +6500,8 @@
             "ref": "68.13",
             "note": "Twenty piers of squared stone carrying arches across the Danube — the work Dio rates above everything else Trajan built, given the depth and the current."
           }
-        ]
+        ],
+        "image_alt": "Scholarly reconstruction drawing of Trajan's timber-and-stone bridge across the Danube"
       }
     },
     {
@@ -25455,44 +25456,6 @@
           "https://structurae.net/en/structures/alconetar-bridge-1"
         ],
         "confidence": "medium"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          22.66705,
-          44.623769
-        ]
-      },
-      "properties": {
-        "id": "poi_bridge_trajan_danube",
-        "category": "bridge",
-        "name_latin": "Pons Traiani",
-        "name_english": "Trajan's Bridge over the Danube",
-        "province": "Moesia Superior",
-        "modern_location": "Drobeta-Turnu Severin, Romania / Kladovo, Serbia",
-        "built": 105,
-        "destroyed": 117,
-        "extant_117ce": true,
-        "notes": "Designed by Trajan's chief engineer Apollodorus of Damascus and built in just two years (103-105 CE) to move Roman forces across the lower Danube for the Second Dacian War, this was for over a millennium the longest arch bridge ever built — roughly 1,135 meters long, twenty masonry piers up to 19 meters high carrying wooden arches spanning about 38 meters each. At the exact moment this map is frozen, its wooden superstructure was almost certainly still standing: Cassius Dio records that Hadrian had it dismantled shortly after becoming emperor, so its destruction falls right at or just after 11 August 117 CE. The twenty masonry piers survived far longer and remain traceable archaeologically today.",
-        "sources": [
-          "https://en.wikipedia.org/wiki/Trajan%27s_Bridge",
-          "https://penelope.uchicago.edu/Thayer/e/roman/texts/cassius_dio/68*.html"
-        ],
-        "confidence": "high",
-        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trajan%27s%20Bridge%20Across%20the%20Danube%2C%20Modern%20Reconstruction.jpg?width=800",
-        "image_credit": "Trajan's Bridge over the Danube, reconstruction · Wikimedia Commons",
-        "image_alt": "Scholarly reconstruction drawing of Trajan's timber-and-stone bridge across the Danube",
-        "ancient_sources": [
-          {
-            "author": "Cassius Dio",
-            "work": "Roman History",
-            "ref": "68.13",
-            "note": "Describes the stone-piered bridge Trajan built across the Danube for his Dacian campaigns, detailing its twenty piers and the engineering work of Apollodorus of Damascus."
-          }
-        ]
       }
     },
     {
