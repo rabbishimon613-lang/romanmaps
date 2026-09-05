@@ -7766,7 +7766,10 @@
           "Antonine Itinerary 112 (Capua-Beneventum-Aequum Tuticum)",
           "Wikipedia: Aequum Tuticum"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aequum_Tuticum_area_archeologica.jpeg?width=800",
+        "image_credit": "Aequum Tuticum archaeological area, Ariano Irpino · Wikimedia Commons",
+        "image_alt": "Remains of the Roman archaeological area at Aequum Tuticum, a station on the Via Traiana"
       }
     },
     {
@@ -9240,7 +9243,10 @@
           "https://en.wikipedia.org/wiki/Albulae_Aquae",
           "http://himetop.wikidot.com/aquae-albulae-tivoli"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tivoli_Aquae_Albulae_-_Lago_della_Regina.jpg?width=800",
+        "image_credit": "Aquae Albulae thermal springs, Bagni di Tivoli · Wikimedia Commons",
+        "image_alt": "Lago della Regina, one of the sulphurous Aquae Albulae springs near Tivoli on the Via Tiburtina"
       }
     },
     {
@@ -11506,7 +11512,10 @@
           "Seneca, Epistulae 86",
           "Pleiades/Barrington Atlas Map 44"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruins_of_Liternum,_Lago_Patria.jpg?width=800",
+        "image_credit": "Ruins of Liternum, Lago Patria · Wikimedia Commons",
+        "image_alt": "Ancient Roman ruins at Liternum near Lago Patria, on the Via Domitiana"
       }
     },
     {

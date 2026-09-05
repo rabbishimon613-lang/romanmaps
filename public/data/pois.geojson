@@ -1240,6 +1240,9 @@
           "https://ajaonline.org/online-museum-review/370/"
         ],
         "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ara_Pacis_Rom.jpg?width=800",
+        "image_credit": "Manfred Heyde · Wikimedia Commons (CC BY-SA 3.0)",
+        "image_alt": "Exterior view of the Ara Pacis Augustae in Rome",
         "ancient_sources": [
           {
             "author": "Augustus",
@@ -4839,7 +4842,10 @@
           "https://de.wikipedia.org/wiki/Limeswachturm_Wp_4/49",
           "https://followinghadrian.com/2020/09/23/ad-120-the-army-erects-a-wooden-palisade-on-the-german-frontier-hadrian1900/"
         ],
-        "confidence": "low"
+        "confidence": "low",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Turmstelle_Wp._4-49_(4).JPG?width=800",
+        "image_credit": "Reconstructed Limes watchtower Wp 4/49, Pohlheim · Wikimedia Commons",
+        "image_alt": "Reconstructed Limes watchtower Wp 4/49 near Grüningen, Pohlheim, Germany"
       }
     },
     {
@@ -17084,7 +17090,10 @@
           "https://en.wikipedia.org/wiki/Ekklesiasterion",
           "https://www.roamintheempire.com/index.php/2020/10/21/paestum-ii/"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ekklesiasterion_(Paestum).jpg?width=800",
+        "image_credit": "Ekklesiasterion, Paestum · Wikimedia Commons",
+        "image_alt": "The circular ekklesiasterion assembly hall at Paestum"
       }
     },
     {
@@ -41089,7 +41098,10 @@
           "https://www.academia.edu/5980636/The_Mausoleum_at_Ptolemais_in_Travellers_Accounts_ArcheologiaWarsz_58_2007_p_75_88",
           "https://en.wikipedia.org/wiki/Ptolemais,_Cyrenaica"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_main_Mausoleum.JPG?width=800",
+        "image_credit": "The Royal Mausoleum, Ptolemais, Libya · Wikimedia Commons",
+        "image_alt": "The Hellenistic tower-tomb (Royal Mausoleum) at Ptolemais, Libya"
       }
     },
     {

@@ -898,7 +898,10 @@
         "sources": [
           "Smith's Dictionary of Greek and Roman Antiquities, Alimentarii Pueri et Puellae"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Assisi,_tempio_di_minerva_02.JPG?width=800",
+        "image_credit": "Temple of Minerva, Assisi (ancient Asisium) · Wikimedia Commons",
+        "image_alt": "Facade of the Temple of Minerva in Assisi, ancient Asisium"
       }
     },
     {
@@ -1482,7 +1485,10 @@
           "R. Duncan-Jones, The Economy of the Roman Empire (1974)",
           "https://en.wikipedia.org/wiki/Amphitheatre_of_Libarna"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Libarna_(Serravalle_Scrivia)-area_archeologica_e_rinvenimenti_citt%C3%A0_romana21.jpg?width=800",
+        "image_credit": "Archaeological area of Libarna, Serravalle Scrivia · Wikimedia Commons",
+        "image_alt": "Excavated ruins of the Roman city of Libarna"
       }
     },
     {

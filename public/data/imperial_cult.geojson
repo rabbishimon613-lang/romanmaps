@@ -23,7 +23,10 @@
           "https://en.wikipedia.org/wiki/Temple_of_Claudius,_Colchester",
           "https://imperiumromanum.pl/en/roman-art-and-culture/roman-architecture/roman-buildings/temple-of-claudius-in-colonia-claudia-victricensis-camulodunum/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Colchester_Castle.jpg?width=800",
+        "image_credit": "Colchester Castle, built on the surviving podium of the Roman Temple of Claudius · Wikimedia Commons",
+        "image_alt": "Colchester Castle, standing on the Roman podium of the Temple of Claudius"
       }
     },
     {
@@ -448,7 +451,10 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Temple_of_Vespasian_and_Titus"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Vespasian_and_Titus.jpg?width=800",
+        "image_credit": "Temple of Vespasian and Titus, Roman Forum · Wikimedia Commons",
+        "image_alt": "The three surviving columns of the Temple of Vespasian and Titus in the Roman Forum"
       }
     },
     {

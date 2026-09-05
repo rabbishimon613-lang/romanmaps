@@ -1504,7 +1504,10 @@
           "Bryn Mawr Classical Review 2024.07.03, 'Between Roman culture and local tradition: Roman provincial coinage of Bithynia and Pontus during the reign of Trajan (98-117 AD)'",
           "WildWinds.com, 'Thrace, Byzantium'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Byzantion_-_250-219_BC_-_silver_tetradrachm_-_head_of_Demeter_-_Poseidon_with_aphlaston_and_trident_-_Berlin_MK_AM.jpg?width=800",
+        "image_credit": "Silver tetradrachm of Byzantium, Munzkabinett Berlin, photo by ArchaiOptix · Wikimedia Commons (CC BY-SA 4.0)",
+        "image_alt": "Silver tetradrachm of Byzantium, head of Demeter and Poseidon with trident"
       }
     },
     {
@@ -1669,7 +1672,10 @@
           "RPC III (Nerva-Hadrian), Patrae, Achaia",
           "Wikipedia, 'Patras'"
         ],
-        "confidence": "medium"
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Patras_(Ancient_Patrae)_Achaia_engraving_by_William_Miller_after_H_W_Williams.jpg?width=800",
+        "image_credit": "Engraving of ancient Patrae by William Miller after H. W. Williams · Wikimedia Commons",
+        "image_alt": "19th-century engraving of ancient Patrae (Patras), Achaia"
       }
     },
     {
