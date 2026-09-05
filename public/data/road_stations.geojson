@@ -14785,6 +14785,327 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2944,
+          45.9667
+        ]
+      },
+      "properties": {
+        "id": "station_nauportus",
+        "category": "mansio",
+        "name": "Vrhnika",
+        "road": "Amber Road (Aquileia-Carnuntum)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Vrhnika occupies the site of Nauportus, a Roman river-port town where the Ljubljanica met the road descending from the Julian Alps toward Aquileia. Goods were transferred here between road wagons and barges bound for the Sava and Danube network, and excavations along the riverbank at Dolge njive have uncovered warehouses, a timber bridge, and Republican-era trade goods. The settlement predates nearby Emona and served as the area's main trading post before that colony was founded a few miles east.",
+        "sources": [
+          "Antonine Itinerary (Aquileia-Nauportus-Emona route)",
+          "Tabula Peutingeriana",
+          "Wikipedia, \"Nauportus\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4978,
+          46.043
+        ]
+      },
+      "properties": {
+        "id": "station_emona",
+        "category": "mansio",
+        "name": "Ljubljana",
+        "road": "Amber Road (Aquileia-Carnuntum)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Ljubljana's old town sits directly over Emona, a rectangular walled colony founded under Augustus around 14-15 CE where the road from Aquileia met the Ljubljanica river. The Antonine Itinerary and the Peutinger map both list it as the main station between the Alps and the Sava valley, and stretches of its six-to-eight-meter city wall still stand in the Mirje district and elsewhere around the modern city. Emona anchored the western end of the road network that continued northeast toward Celeia and Poetovio.",
+        "sources": [
+          "Antonine Itinerary (Aquileia-Emona route)",
+          "Tabula Peutingeriana",
+          "Wikipedia, \"Emona\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.883,
+          46.1881
+        ]
+      },
+      "properties": {
+        "id": "station_atrans",
+        "category": "statio",
+        "name": "Trojane",
+        "road": "Amber Road (Aquileia-Carnuntum)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "The village of Trojane sits on the mountain pass the Romans called Atrans, a fortified customs post on the Illyrian tariff border between Italy and the Pannonian provinces. Excavations have uncovered the foundations of more than a dozen buildings there, including a heated customs office, a possible mansio, a workshop, and votive altars left by travelers crossing the pass. It marked the road's climb out of the Ljubljana basin on the way to Celeia.",
+        "sources": [
+          "Antonine Itinerary (Emona-Celeia route)",
+          "Wikipedia, \"Atrans\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.265,
+          46.2309
+        ]
+      },
+      "properties": {
+        "id": "station_celeia",
+        "category": "mansio",
+        "name": "Celje",
+        "road": "Amber Road (Aquileia-Carnuntum)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Celje grew up on the site of Celeia, a Celtic settlement the Romans raised to municipium status under Claudius that became one of the wealthiest towns in Noricum. The road running northeast from Emona passed straight through it on the way to Poetovio, and the largest stretch of paved Roman road surviving in Slovenia has been excavated within the modern town. Celje's regional museum, housed in a Renaissance-era mansion, now displays the bulk of its Roman-era finds.",
+        "sources": [
+          "Antonine Itinerary (Emona-Celeia-Poetovio route)",
+          "Wikipedia, \"Celeia\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.87,
+          46.4199
+        ]
+      },
+      "properties": {
+        "id": "station_poetovio",
+        "category": "mansio",
+        "name": "Ptuj",
+        "road": "Amber Road (Aquileia-Carnuntum)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Ptuj occupies Poetovio, a legionary base founded under Augustus that grew into one of Pannonia's largest cities after Trajan raised it to a colonia around 103 CE. It sat astride the Drava river crossing where the road from Aquileia and Celeia forked toward Savaria and the Danube stations of the Amber Road. Ptuj's Poetovio Archaeological Park preserves the city's Mithraic shrines, forum remains, and a stretch of the original paved Roman road.",
+        "sources": [
+          "Antonine Itinerary (It. Ant. 261-262, Poetovio-Carnuntum route)",
+          "Tabula Peutingeriana",
+          "Wikipedia, \"Poetovio\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.5843,
+          46.8464
+        ]
+      },
+      "properties": {
+        "id": "station_salla",
+        "category": "mansio",
+        "name": "Zalalövő",
+        "road": "Amber Road (Aquileia-Carnuntum)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Zalalövő stands on Salla, a Roman fort on the Zala river where the Amber Road divided, with one branch continuing toward Savaria and Scarbantia and another running more directly toward the Danube. Hadrian granted the settlement town rights around 124 CE as Municipium Aelium Salla, and excavations have exposed its street grid, forum, and defensive works. The Antonine Itinerary lists it among the stations on the long Poetovio-Carnuntum stretch of the route.",
+        "sources": [
+          "Antonine Itinerary (It. Ant. 261-262, Poetovio-Salla-Savaria-Scarbantia-Carnuntum)",
+          "Wikipedia, \"Zalalövő\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.6142,
+          47.2331
+        ]
+      },
+      "properties": {
+        "id": "station_savaria",
+        "category": "mansio",
+        "name": "Szombathely",
+        "road": "Amber Road (Aquileia-Carnuntum)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Szombathely grew up directly on Savaria, a colony Claudius founded around 43 CE that became the capital of Pannonia Superior and, later, of Pannonia Prima. The Amber Road's main north-south leg ran through its forum, and today the Iseum Savariense ruin garden displays one of the best-preserved Roman-era Isis sanctuaries north of the Alps alongside a stretch of the ancient road surface. From here the route continued toward Scarbantia and the Danube frontier at Carnuntum.",
+        "sources": [
+          "Antonine Itinerary (It. Ant. 261-262)",
+          "Tabula Peutingeriana",
+          "Wikipedia, \"Savaria\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.5845,
+          47.6822
+        ]
+      },
+      "properties": {
+        "id": "station_scarbantia",
+        "category": "mansio",
+        "name": "Sopron",
+        "road": "Amber Road (Aquileia-Carnuntum)",
+        "distance_from_previous_mp": 34,
+        "identified": true,
+        "notes": "Sopron's main square, Fő tér, sits four and a half meters above the forum of Scarbantia, a Celtic settlement the Romans made a municipium under Hadrian. The town anchored the Amber Road's approach to the Danube, with routes branching from here toward both Carnuntum and Vindobona. A basement exhibition beneath the square, the Forum Scarbantiae, displays the excavated paving and column bases of the 2nd-century forum in place.",
+        "sources": [
+          "Antonine Itinerary (It. Ant. 261, Savaria-Scarbantia-Carnuntum stages)",
+          "\"Geographical mobility along the Amber Road\", Veleia (ojs.ehu.eus)",
+          "Wikipedia, \"Scarbantia\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.877,
+          48.116
+        ]
+      },
+      "properties": {
+        "id": "station_carnuntum",
+        "category": "mansio",
+        "name": "Carnuntum",
+        "road": "Amber Road (Aquileia-Carnuntum)",
+        "distance_from_previous_mp": 38,
+        "identified": true,
+        "notes": "Carnuntum, near Petronell-Deutsch-Altenburg on the Danube, was one of Pannonia's two legionary capitals and the point where the Amber Road met the river frontier road. Trajan raised it to municipium status early in the 2nd century, and the surviving Heidentor arch and open-air museum now sit within one of central Europe's largest archaeological parks. Roads led east and west along the Danube limes and south back down the Amber Road toward Poetovio and Aquileia.",
+        "sources": [
+          "Antonine Itinerary (It. Ant. 261, Scarbantia-Carnuntum)",
+          "Tabula Peutingeriana",
+          "Wikipedia, \"Carnuntum\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3739,
+          48.2107
+        ]
+      },
+      "properties": {
+        "id": "station_vindobona",
+        "category": "mansio",
+        "name": "Vienna",
+        "road": "Danube Limes Road (Carnuntum-Aquincum)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Vienna's Hoher Markt square sits over the headquarters building of Vindobona, a legionary fortress established on the Danube to garrison Legio XIII and later Legio X Gemina. It anchored the limes road running downstream toward Carnuntum and upriver into Noricum, and a small museum beneath the square displays the excavated foundations of the camp's officers' quarters in place. Vindobona stood roughly forty kilometers upriver from Carnuntum along the Danube frontier.",
+        "sources": [
+          "Wikipedia, \"Vindobona\"",
+          "Tabula Peutingeriana",
+          "Antonine Itinerary (Danube limes route, It. Ant. 266)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.63,
+          47.6889
+        ]
+      },
+      "properties": {
+        "id": "station_arrabona",
+        "category": "mansio",
+        "name": "Győr",
+        "road": "Danube Limes Road (Carnuntum-Aquincum)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Győr's cathedral hill, Káptalan Hill, occupies the site of Arrabona, a Roman fort built where the Rába river meets the Danube's Moson branch. It guarded the limes road linking Carnuntum to Brigetio downstream and also anchored a diagonal road running south into the interior of the province toward Savaria and Sopianae. The Antonine Itinerary records Arrabona as lying thirty Roman miles from Brigetio, a figure that still roughly matches the real distance between the two sites.",
+        "sources": [
+          "Antonine Itinerary (Arrabona-Brigetio, XXX m.p.)",
+          "Wikipedia, \"Arrabona\"",
+          "Princeton Encyclopedia of Classical Sites, s.v. \"Arrabona\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.1667,
+          47.7333
+        ]
+      },
+      "properties": {
+        "id": "station_brigetio",
+        "category": "mansio",
+        "name": "Brigetio",
+        "road": "Danube Limes Road (Carnuntum-Aquincum)",
+        "distance_from_previous_mp": 30,
+        "identified": true,
+        "notes": "Brigetio was one of Pannonia's four legionary fortress complexes, garrisoned successively by Legio XI Claudia and Legio I Adiutrix on the Danube's southern bank in what is now the Szőny district of Komárom, Hungary. Its adjoining civilian town grew into a full municipium and later a colonia, and excavations underway since the 1990s have uncovered its street grid, houses, and an aqueduct. The site is presented to visitors today through the Brigetio Heritage exhibition rather than under any modern place-name.",
+        "sources": [
+          "Antonine Itinerary (It. Ant. 262, Savaria-Brigetio and Arrabona-Brigetio stages)",
+          "Wikipedia, \"Brigetio\""
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.048,
+          47.567
+        ]
+      },
+      "properties": {
+        "id": "station_aquincum",
+        "category": "mansio",
+        "name": "Aquincum",
+        "road": "Danube Limes Road (Carnuntum-Aquincum)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Aquincum, now an archaeological park within Budapest's Óbuda district, was the capital of Pannonia Inferior and later Pannonia Valeria, anchored by a legionary fortress on the Danube's west bank. It marked the downstream end of the Danube limes road from Carnuntum and Vindobona as well as the eastern terminus of a direct road from Savaria via Brigetio. The site's civilian town, amphitheatre, and governor's palace remains are preserved today as an open-air museum.",
+        "sources": [
+          "Antonine Itinerary (It. Ant. 262, Savaria-Aquincum)",
+          "Tabula Peutingeriana",
+          "Wikipedia, \"Aquincum\""
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
