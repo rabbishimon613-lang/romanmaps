@@ -14402,6 +14402,368 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5792,
+          44.8378
+        ]
+      },
+      "properties": {
+        "id": "station_burdigala",
+        "category": "vicus",
+        "name": "Bordeaux",
+        "road": "Via Aquitania",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Burdigala anchored the western end of the Via Aquitania on the Garonne, shipping wine and pottery out through a harbor busy enough to draw the notice of the poet Ausonius. The road left the city gate and struck south across the Landes toward the Pyrenean foothills and, eventually, the Mediterranean. Its amphitheater held roughly 15,000 spectators. The Palais Gallien ruins still stand where its arena once did.",
+        "sources": [
+          "Itinerarium Burdigalense (Burdigala departure point)",
+          "https://en.wikipedia.org/wiki/Burdigala"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amphithéâtre de Bordeaux Ruine.jpg?width=800",
+        "image_credit": "Palais Gallien, the Roman amphitheatre of Burdigala, Bordeaux · Wikimedia Commons",
+        "image_alt": "Ruined arches of the Palais Gallien, the Roman amphitheatre of ancient Burdigala in Bordeaux"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2114,
+          44.4372
+        ]
+      },
+      "properties": {
+        "id": "station_vasatas",
+        "category": "vicus",
+        "name": "Bazas",
+        "road": "Via Aquitania",
+        "distance_from_previous_mp": 42,
+        "identified": true,
+        "notes": "Vasatas served the Vasates tribe as their civitas capital and gave its name to the whole surrounding Bazadais district. Travelers leaving Burdigala changed horses at two relay posts before reaching this walled town on its limestone spur above the Beuve valley. Its cathedral square now covers the old Roman core.",
+        "sources": [
+          "Itinerarium Burdigalense",
+          "https://en.wikipedia.org/wiki/Vasates_(tribe)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1075,
+          43.8814
+        ]
+      },
+      "properties": {
+        "id": "station_elusa",
+        "category": "vicus",
+        "name": "Eauze",
+        "road": "Via Aquitania",
+        "distance_from_previous_mp": 44,
+        "identified": true,
+        "notes": "Elusa grew into the wealthiest town of Novempopulana and later its provincial capital, a status its Roman walls and townhouses still reflect. Workmen digging a cellar in 1985 turned up the Eauze treasure, a hoard of 28,000 silver coins and gold jewelry buried around 261 CE. The finds now fill a purpose-built museum on the site of a Roman house.",
+        "sources": [
+          "Itinerarium Burdigalense",
+          "https://en.wikipedia.org/wiki/Eauze"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.5866,
+          43.6461
+        ]
+      },
+      "properties": {
+        "id": "station_ausci",
+        "category": "vicus",
+        "name": "Auch",
+        "road": "Via Aquitania",
+        "distance_from_previous_mp": 27,
+        "identified": true,
+        "notes": "Ausci, capital of the Auscii, sat on a hill over the Gers river where the pilgrim road from Burdigala bent east toward Tolosa. The Antonine geographer Ptolemy and the Bordeaux pilgrim both marked it as a full civitas stop rather than a mere relay. Roman foundations still turn up under the old town's stepped stairways.",
+        "sources": [
+          "Itinerarium Burdigalense",
+          "https://en.wikipedia.org/wiki/Auch"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.6614,
+          43.5719
+        ]
+      },
+      "properties": {
+        "id": "station_ad_sextum_aquitania",
+        "category": "mutatio",
+        "name": "Marsan",
+        "road": "Via Aquitania",
+        "distance_from_previous_mp": 7,
+        "identified": false,
+        "notes": "Ad Sextum took its name from its position six leagues out of Ausci, a plain distance-marker rather than a proper town. The Bordeaux pilgrim's 333 CE itinerary logged it as a routine horse-change on the long haul toward Tolosa. Archaeologists have narrowed its footprint to the streams south of modern Marsan without pinning an exact building.",
+        "sources": [
+          "Itinerarium Burdigalense"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.8536,
+          43.6236
+        ]
+      },
+      "properties": {
+        "id": "station_hungunuerro",
+        "category": "mutatio",
+        "name": "Gimont",
+        "road": "Via Aquitania",
+        "distance_from_previous_mp": 14,
+        "identified": true,
+        "notes": "Hungunuerro broke the road partway between Ausci and Tolosa, one of the relay names the Bordeaux pilgrim recorded without further comment in 333 CE. Local antiquarians place it at Gimont, on the Gimone river the modern bastide town still straddles. No standing Roman masonry has been confirmed at the exact spot.",
+        "sources": [
+          "Itinerarium Burdigalense",
+          "http://www.stephanebonneel.com/TOTO19.html"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.0833,
+          43.6167
+        ]
+      },
+      "properties": {
+        "id": "station_bucconis",
+        "category": "mutatio",
+        "name": "L'Isle-Jourdain",
+        "road": "Via Aquitania",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Bucconis stood seven leagues from Ausci at a spot called La Gravette south of what is now L'Isle-Jourdain. Excavations there turned up the relay's foundations and confirmed a working horse-change on the Tolosa road since the early Roman conquest. The Bordeaux pilgrim recorded it by name on his 333 CE march east.",
+        "sources": [
+          "Itinerarium Burdigalense",
+          "https://encyclopedie.arbre-celtique.com/bucconis-6882.htm"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.1667,
+          43.6153
+        ]
+      },
+      "properties": {
+        "id": "station_ad_iovem",
+        "category": "mutatio",
+        "name": "Leguevin",
+        "road": "Via Aquitania",
+        "distance_from_previous_mp": 9,
+        "identified": false,
+        "notes": "Ad Iovem, named for a wayside shrine to Jupiter, was the last change of horses before travelers reached Tolosa. Local tradition and the sequence of leagues in the Bordeaux pilgrim's itinerary set it at modern Leguevin, a short ride out of the city. No temple foundation has surfaced to confirm the dedication behind the name.",
+        "sources": [
+          "Itinerarium Burdigalense",
+          "http://www.stephanebonneel.com/TOTO19.html"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4442,
+          43.6047
+        ]
+      },
+      "properties": {
+        "id": "station_tolosa",
+        "category": "vicus",
+        "name": "Toulouse",
+        "road": "Via Aquitania",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Tolosa was the great hinge of the Via Aquitania, a Volcae Tectosages stronghold the Romans turned into the largest city in Gaul after Narbo lost ground. Its temple treasury was famous enough that a Roman general's plundering of it in 106 BCE spawned the proverbial phrase aurum Tolosanum, ill-gotten gold. From here the road ran on toward Narbo and the sea.",
+        "sources": [
+          "Itinerarium Burdigalense",
+          "https://en.wikipedia.org/wiki/Toulouse"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.6167,
+          43.4667
+        ]
+      },
+      "properties": {
+        "id": "station_badera",
+        "category": "mansio",
+        "name": "Baziege",
+        "road": "Via Aquitania",
+        "distance_from_previous_mp": 15,
+        "identified": true,
+        "notes": "Badera was the first stop east of Tolosa, fixed at 15 Roman miles by both the Peutinger Table and a milestone still kept inside the parish church of Saint-Etienne. First-century wine-amphora debris found near its cemetery points to a busy trade in imported Italian wine. The settlement sat where the road crossed the Hers river.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "https://ville-baziege.fr/sortir-bouger-decouvrir/sommaire-histoire/la-badera-gallo-romaine"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.7961,
+          43.4297
+        ]
+      },
+      "properties": {
+        "id": "station_elusio_naurouze",
+        "category": "mutatio",
+        "name": "Col de Naurouze",
+        "road": "Via Aquitania",
+        "distance_from_previous_mp": 14,
+        "identified": true,
+        "notes": "Elusio sat at the low pass of Naurouze, the watershed ridge where roads and later canals switched between draining to the Atlantic and to the Mediterranean. Cicero mentioned the place in a courtroom speech of 69 BCE, decades before Rome paved the road past it. By the time the Peutinger Table was drawn the stop had already faded from the map.",
+        "sources": [
+          "Cicero, Pro Fonteio",
+          "https://journals.openedition.org/gallia/614?lang=en"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9515,
+          43.3236
+        ]
+      },
+      "properties": {
+        "id": "station_sostomagus",
+        "category": "mutatio",
+        "name": "Castelnaudary",
+        "road": "Via Aquitania",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Sostomagus marked the 38th Roman milestone out of Tolosa on the road east to Narbo, a Gaulish market name meaning roughly clean or pure market. The Bordeaux pilgrim's itinerary of 333 CE logged it as a routine change station on the day's ride toward Carcaso. Modern Castelnaudary grew over the same crossing on the Fresquel river.",
+        "sources": [
+          "Itinerarium Burdigalense",
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Dsostomagus"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1147,
+          43.2436
+        ]
+      },
+      "properties": {
+        "id": "station_eburomagus",
+        "category": "vicus",
+        "name": "Bram",
+        "road": "Via Aquitania",
+        "distance_from_previous_mp": 14,
+        "identified": true,
+        "notes": "Eburomagus, its Gaulish name meaning yew-tree market, grew into the busiest roadside settlement between Tolosa and Narbo. Excavations along the old road bed have traced its street grid running straight out from the town's western gate. Medieval Bram later rebuilt itself as a near-perfect circle of houses ringing the same ancient site.",
+        "sources": [
+          "Itinerarium Burdigalense",
+          "https://en.wikipedia.org/wiki/Bram,_Aude"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3491,
+          43.213
+        ]
+      },
+      "properties": {
+        "id": "station_carcaso",
+        "category": "vicus",
+        "name": "Carcassonne",
+        "road": "Via Aquitania",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Carcaso held a fortified hilltop above the Aude river where the Via Aquitania crossed paths with the north-south route into the mountains. Roman-era wall footings still underlie stretches of the medieval Cite's inner defenses, reused stone upon reused stone. The name itself survived every rebuilding to reach the modern city unchanged.",
+        "sources": [
+          "Itinerarium Burdigalense",
+          "https://citedecarcassonne.culture.gouv.fr/fr/la-ville-romaine-de-carcaso"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.7597,
+          43.1936
+        ]
+      },
+      "properties": {
+        "id": "station_hosuerbas",
+        "category": "mutatio",
+        "name": "Lezignan-Corbieres",
+        "road": "Via Aquitania",
+        "distance_from_previous_mp": 20,
+        "identified": false,
+        "notes": "Hosuerbas was the last change of horses before Narbo, set down by the Bordeaux pilgrim some 15 Roman miles short of that city. Later surveys of the road bed place its footprint near the hamlet of Gaujac by modern Lezignan-Corbieres. Nothing of the relay stands above ground today.",
+        "sources": [
+          "Itinerarium Burdigalense",
+          "http://voies.archeo-rome.com/voies04.html"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
