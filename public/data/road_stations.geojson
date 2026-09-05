@@ -16603,6 +16603,526 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9865,
+          47.4015
+        ]
+      },
+      "properties": {
+        "id": "station_campona",
+        "category": "mansio",
+        "name": "Campona",
+        "road": "Danube Limes Road (Aquincum-Viminacium)",
+        "distance_from_previous_mp": 11,
+        "identified": true,
+        "notes": "Campona anchored the Danube road eleven Roman miles south of Aquincum, guarding a river crossing below today's Nagytétény district. The cavalry unit ala I Tungrorum Frontoniana built its first wooden fort here under Domitian, later rebuilt in stone. Nineteenth-century road builders dug up Roman milestones that fixed the site for archaeologists ever since. A civilian vicus of traders and veterans grew along its walls.",
+        "sources": [
+          "Itin. Ant. 245 (Aquincum-Campona-Matrica, Campona listed as media/halfway)",
+          "https://hu.wikipedia.org/wiki/Campona_(r%C3%B3mai_er%C5%91d)",
+          "https://www.aquincum.hu/en/romaiorokseg/campona-segedcsapat-tabora-nagytetenyben/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8891,
+          47.3161
+        ]
+      },
+      "properties": {
+        "id": "station_matrica",
+        "category": "mansio",
+        "name": "Matrica",
+        "road": "Danube Limes Road (Aquincum-Viminacium)",
+        "distance_from_previous_mp": 11,
+        "identified": true,
+        "notes": "Matrica's fort sat on a Danube bluff at Százhalombatta, eleven Roman miles south of Campona along the frontier road. Archaeologists excavating its principia uncovered a well built directly into the headquarters courtyard, an unusual feature for a Pannonian auxiliary camp. The site's name survives in the local Matrica Museum, built over part of the vicus. Roman milestones found near Budapest confirmed the identification in the nineteenth century.",
+        "sources": [
+          "Itin. Ant. 245 (Campona-Matrica leg, distance interpolated from Aquincum-Matrica total)",
+          "https://www.danubetourism.eu/roman-matrica-fort-and-vicus-szazhalombatta/",
+          "https://www.academia.edu/41133031/THE_ROMAN_WELL_IN_THE_PRINCIPIA_AT_MATRICA"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8657,
+          47.1152
+        ]
+      },
+      "properties": {
+        "id": "station_vetus_salina",
+        "category": "mutatio",
+        "name": "Vetus Salina",
+        "road": "Danube Limes Road (Aquincum-Viminacium)",
+        "distance_from_previous_mp": 14,
+        "identified": true,
+        "notes": "Vetus Salina held the Danube bank at Adony, garrisoned from 102 CE by the cohors II Alpinorum during Trajan's Dacian campaigns. The unit's pottery matched wares common around Aquincum, tracing supply lines running up the frontier road. Around 117 CE the cohors III Batavorum took over the post. Its short camp wall, about 176 meters long, matched the same design used downstream at Intercisa.",
+        "sources": [
+          "Itin. Ant. 245 (Matrica-Vetus Salina-Intercisa; leg distance interpolated, total Matrica-Intercisa cited near 26 m.p.)",
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry=vetus-salina",
+          "https://www.danube-limes.eu/userfiles/downloads/frontiers01.pdf"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9424,
+          46.9619
+        ]
+      },
+      "properties": {
+        "id": "station_intercisa_pannonia",
+        "category": "mansio",
+        "name": "Intercisa",
+        "road": "Danube Limes Road (Aquincum-Viminacium)",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Intercisa's fort rose on a Danube terrace at what is now Dunaújváros, twelve Roman miles below Vetus Salina. Syrian archers of the cohors Hemesenorum garrisoned the post before Dalmatian units took over, and a river-hugging camp wall enclosed the base. A civilian town grew wealthy enough to earn colonia rank under Septimius Severus. A distinctive style of Late Roman ridge helmet, the Intercisa type, takes its name from finds unearthed here.",
+        "sources": [
+          "Itin. Ant. 245-246 (Vetus Salina-Intercisa-Aquincum leg cited as Intercisa 23-24 m.p. from Aquincum)",
+          "https://www.danube-limes.eu/userfiles/downloads/frontiers01.pdf",
+          "https://en.wikipedia.org/wiki/Roman-era_Pannonia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8815,
+          46.6557
+        ]
+      },
+      "properties": {
+        "id": "station_lussonium",
+        "category": "mansio",
+        "name": "Lussonium",
+        "road": "Danube Limes Road (Aquincum-Viminacium)",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "Lussonium's fort held the Danube bend at Dunakömlőd, twenty-four Roman miles downstream of Intercisa. Archaeologists have traced its stone walls and a bath complex serving the garrison and its riverside vicus. The site sits within what is now the Gemenc forest reserve near Paks, protected as a rare intact stretch of the Pannonian limes. Cohort-strength auxiliary units held the post through the second and third centuries.",
+        "sources": [
+          "Itin. Ant. 245.5 (Intercisa-Lussonium, XXIIII m.p.)",
+          "https://www.heritagedaily.com/2020/07/lussonium-the-frontier-fortress/134260",
+          "https://vici.org/vici/7250/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.831,
+          46.4466
+        ]
+      },
+      "properties": {
+        "id": "station_alta_ripa",
+        "category": "statio",
+        "name": "Alta Ripa",
+        "road": "Danube Limes Road (Aquincum-Viminacium)",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Alta Ripa, \"the high bank,\" took its name from the Danube bluff it watched eighteen Roman miles below Lussonium. The Danube itself later ate away much of the fort, leaving only fragmentary traces on the Janicsárdomb rise in Tolna's Mözs district. A watchtower rather than a full auxiliary camp, it relayed signals along the frontier road toward Lugio. A guesthouse in modern Tolna now borrows its ancient name.",
+        "sources": [
+          "Itin. Ant. 245.6 (Lussonium-Alta Ripa, XVIII m.p.)",
+          "https://vici.org/vici/13263/",
+          "http://imperium.ahlfeldt.se/places/10909.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.7442,
+          46.0879
+        ]
+      },
+      "properties": {
+        "id": "station_lugio",
+        "category": "mansio",
+        "name": "Lugio (Florentia)",
+        "road": "Danube Limes Road (Aquincum-Viminacium)",
+        "distance_from_previous_mp": 29,
+        "identified": true,
+        "notes": "Lugio commanded a Danube crossing at Dunaszekcső, twenty-nine Roman miles below Alta Ripa, and later took the honorific name Florentia. Its fort and civilian town controlled one of the frontier's few natural fords, making it a customs point for river traffic. The settlement's status held enough weight that the Notitia Dignitatum still listed a garrison there in the late fourth century. Excavated cemeteries around the site have yielded some of Pannonia's richest funerary finds.",
+        "sources": [
+          "Itin. Ant. 245.7 (Alta Ripa-Lugio, XXVIIII m.p.)",
+          "https://www.danube-limes.eu/userfiles/downloads/frontiers01.pdf",
+          "https://en.wikipedia.org/wiki/Danubian_Limes"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.7717,
+          45.9636
+        ]
+      },
+      "properties": {
+        "id": "station_altinum_pannonia",
+        "category": "mutatio",
+        "name": "Altinum",
+        "road": "Danube Limes Road (Aquincum-Viminacium)",
+        "distance_from_previous_mp": 25,
+        "identified": true,
+        "notes": "Altinum held the Danube bank at Kölked, twenty-five Roman miles east of Lugio, where the frontier road curved with the river toward its southward bend. Its garrison watched a stretch opposite the marshy Drava-Danube confluence lands. The fort's name survives only through the Antonine Itinerary and the Tabula Peutingeriana, since no inscription from the site confirms it. Modern Kölked preserves early medieval cemeteries near the presumed fort ground.",
+        "sources": [
+          "Itin. Ant. 245.8 (Lugio-Altinum, XXV m.p.)",
+          "https://en.wikipedia.org/wiki/Leuconium_(Pannonia)",
+          "https://en.wikipedia.org/wiki/Danubian_Limes"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8385,
+          45.9075
+        ]
+      },
+      "properties": {
+        "id": "station_ad_militare",
+        "category": "statio",
+        "name": "Ad Militare",
+        "road": "Danube Limes Road (Aquincum-Viminacium)",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Ad Militare, literally \"at the military post,\" guarded the Danube at Batina on the Pannonian stretch of the frontier road. The name itself, unusually blunt among limes stations, described the fort's sole function rather than any local place-name. It anchored the northern end of Croatia's 188-kilometer stretch of the Danube limes, running south to Ilok. Archaeological survey has confirmed the fort's outline beneath the modern village.",
+        "sources": [
+          "Tabula Peutingeriana (Ad Militare, Danube limes segment)",
+          "https://en.wikipedia.org/wiki/Roman-era_Pannonia",
+          "distance estimated from modern road distance Kölked-Batina; no confirmed Itin. Ant. figure recovered"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9676,
+          45.5719
+        ]
+      },
+      "properties": {
+        "id": "station_teutoburgium",
+        "category": "mansio",
+        "name": "Teutoburgium",
+        "road": "Danube Limes Road (Aquincum-Viminacium)",
+        "distance_from_previous_mp": 37,
+        "identified": true,
+        "notes": "Teutoburgium's fort stood at Dalj, on the road linking the Danube crossings to Mursa's Drava port. Early garrisons included the ala II Hispanorum et Aravacorum and the ala praetoria civium Romanorum. The Notitia Dignitatum still recorded it four centuries later as headquarters for a prefect of Legio V Herculia. Finds of military equipment from the site rank among the richest of Croatia's Danube limes forts.",
+        "sources": [
+          "Itin. Ant. (Item a Tauruno Mursa route, Teutoburgium-Mursa XVI m.p., used here for identification only)",
+          "https://www.academia.edu/512279/Finds_of_Roman_Military_Equipment_from_Teutoburgium",
+          "https://fr.wikipedia.org/wiki/Teutoburgium",
+          "distance from Ad Militare estimated from modern road distance; not a confirmed itinerary figure"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0075,
+          45.4756
+        ]
+      },
+      "properties": {
+        "id": "station_cornacum",
+        "category": "mutatio",
+        "name": "Cornacum",
+        "road": "Danube Limes Road (Aquincum-Viminacium)",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Cornacum occupied a loess bluff at Sotin, sixteen Roman miles from Teutoburgium, chosen precisely because it gave direct sightlines to the neighboring forts at Dalj and Ilok. That visual chain let signal fires relay warnings along the Danube frontier without a blind stretch. Stamped bricks and roof tiles recovered from the site name the units that built and rebuilt it. The fort controlled river traffic passing below its bluff.",
+        "sources": [
+          "Itin. Ant. (Item a Tauruno Mursa route: Cornacum-Teutoburgium, XVI m.p.)",
+          "https://www.researchgate.net/publication/27203004_Pecati_na_antickim_opekama_i_krovnim_crepovima_iz_Sotina_Cornacum",
+          "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry=limes-pannoniae-2"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.3714,
+          45.2264
+        ]
+      },
+      "properties": {
+        "id": "station_cuccium",
+        "category": "mansio",
+        "name": "Cuccium",
+        "road": "Danube Limes Road (Aquincum-Viminacium)",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Cuccium grew into one of the Danube limes's substantial towns at Ilok, sixteen Roman miles from Cornacum. Its fort anchored the southern end of Croatia's stretch of the frontier road before the route crossed into what is now Serbia. Its river port handled traffic bound onward for Sirmium. Ilok's hilltop position, fortified again in the medieval and Ottoman periods, first drew Roman engineers for the same defensive logic.",
+        "sources": [
+          "Itin. Ant. (Item a Tauruno Mursa route: Cuccium-Cornacum, XVI m.p.)",
+          "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry=limes-pannoniae-2",
+          "https://en.wikipedia.org/wiki/Roman-era_Pannonia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.5497,
+          45.1936
+        ]
+      },
+      "properties": {
+        "id": "station_bononia_malata",
+        "category": "mansio",
+        "name": "Bononia (Malata)",
+        "road": "Danube Limes Road (Aquincum-Viminacium)",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Bononia, also recorded as Malata, served as Sirmium's Danube port at Banoštor, sixteen Roman miles from Cuccium. Goods bound for the provincial capital transferred here from river barges onto the inland road running south. The fort and its harbor installations controlled the last Danube crossing before travelers turned toward Sirmium itself. Archaeological remains near Banoštor confirm a substantial riverside settlement rather than a minor waystation.",
+        "sources": [
+          "Itin. Ant. (Item a Tauruno Mursa route: Bononia-Cuccium, XVI m.p.)",
+          "https://www.ebsco.com/research-starters/military-history-and-science/bononia-malata",
+          "https://www.trismegistos.org/place/29279"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.6122,
+          44.9764
+        ]
+      },
+      "properties": {
+        "id": "station_sirmium",
+        "category": "mansio",
+        "name": "Sirmium",
+        "road": "Sirmium Road (Bononia-Taurunum)",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "Sirmium ranked among the Roman Empire's great provincial capitals, seated on the Sava River about twenty Roman miles inland from its Danube port at Bononia. The city later became one of four capitals of the Tetrarchy and a favored imperial residence. Its hippodrome, palace remains, and city walls still lie beneath modern Sremska Mitrovica. In 117 CE it governed Pannonia Inferior as the seat of the provincial legate.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sirmium",
+          "https://en.wikipedia.org/wiki/Pannonia_Secunda",
+          "distance from Bononia estimated from modern road distance; no confirmed Itin. Ant. figure recovered for this spur"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.772,
+          45.034
+        ]
+      },
+      "properties": {
+        "id": "station_bassianae",
+        "category": "mansio",
+        "name": "Bassianae",
+        "road": "Sirmium Road (Bononia-Taurunum)",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Bassianae stood eighteen Roman miles from Sirmium on the inland road cutting across Syrmia toward Taurunum. The settlement grew prominent enough to serve as a Christian bishopric by the fourth century. Its ruins near the village of Donji Petrovci include remnants of substantial public buildings, though systematic excavation there began only in recent decades. The road onward from Bassianae covered thirty Roman miles to reach the Danube crossing at Taurunum.",
+        "sources": [
+          "Itin. Ant. (Sirmium civitas-Bassiana civitas, XVIII m.p.; Bassiana-Taurunum classis, XXX m.p.)",
+          "https://www.researchgate.net/publication/317168899_Florin-Gheorghe_FODOREAN_Praetorium_and_the_Emona-Siscia-Sirmium-Tauruno_road_in_the_ancient_geographical_and_epigraphic_sources"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.2229,
+          45.1319
+        ]
+      },
+      "properties": {
+        "id": "station_acumincum",
+        "category": "mansio",
+        "name": "Acumincum",
+        "road": "Danube Limes Road (Aquincum-Viminacium)",
+        "distance_from_previous_mp": 36,
+        "identified": true,
+        "notes": "Acumincum guarded a hilltop bend of the Danube at Stari Slankamen, roughly thirty-six Roman miles from Bononia along the frontier road. Its position atop a loess cliff gave the garrison a commanding view over a wide stretch of river. The fortifications were rebuilt repeatedly through the second and third centuries as the frontier came under growing pressure. A local vineyard today borrows the ancient name for its label.",
+        "sources": [
+          "Itin. Ant. (Item a Tauruno Mursa route, Aciminci XXXVI m.p. leg)",
+          "https://en.wikipedia.org/wiki/Acumincum",
+          "https://en.wikipedia.org/wiki/Stari_Slankamen"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.2678,
+          45.0793
+        ]
+      },
+      "properties": {
+        "id": "station_rittium",
+        "category": "mutatio",
+        "name": "Rittium",
+        "road": "Danube Limes Road (Aquincum-Viminacium)",
+        "distance_from_previous_mp": 5,
+        "identified": true,
+        "notes": "Rittium held the Danube bank at Surduk, a short seven kilometers downstream from Acumincum along the limes road. The fort filled a gap between the larger garrisons at Stari Slankamen and Novi Banovci, keeping the river chain of forts unbroken. Little of the site has been excavated compared to its larger neighbors. Its exact garrison history remains poorly documented next to Acumincum and Burgenae.",
+        "sources": [
+          "distance estimated from modern road distance Stari Slankamen-Surduk (approx. 7 km); no confirmed Itin. Ant. figure recovered",
+          "https://en.wikipedia.org/wiki/Roman-era_Pannonia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.3762,
+          44.9437
+        ]
+      },
+      "properties": {
+        "id": "station_burgenae",
+        "category": "statio",
+        "name": "Burgenae",
+        "road": "Danube Limes Road (Aquincum-Viminacium)",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Burgenae anchored the Danube frontier at Novi Banovci, fourteen kilometers below Rittium and twenty short of Taurunum. Its name comes from the Latin burgus, a small watchtower fort typical of the frontier system. The fort filled the last gap in the river chain before the road reached the fleet base at Taurunum.",
+        "sources": [
+          "distance estimated from modern road distance Surduk-Novi Banovci (approx. 14 km); no confirmed Itin. Ant. figure recovered",
+          "https://grokipedia.com/page/stari_banovci"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4013,
+          44.8433
+        ]
+      },
+      "properties": {
+        "id": "station_taurunum",
+        "category": "mansio",
+        "name": "Taurunum",
+        "road": "Danube Limes Road (Aquincum-Viminacium)",
+        "distance_from_previous_mp": 14,
+        "identified": true,
+        "notes": "Taurunum served as a Roman river fleet base at Zemun, just four Roman miles from Singidunum across the mouth of the Sava. The classis Flavia Pannonica likely used its harbor to patrol the Danube-Sava confluence. Its position made it the last stop before travelers crossed into Moesia at Singidunum. Zemun's old town today sits directly over the ancient settlement's core.",
+        "sources": [
+          "Itin. Ant. (Bassiana civitas-Taurunum classis, XXX m.p.; Taurunum classis-Singidunum castra, IIII m.p.)",
+          "distance from Burgenae estimated from modern road distance; no confirmed Itin. Ant. figure recovered for that leg"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4508,
+          44.8236
+        ]
+      },
+      "properties": {
+        "id": "station_singidunum",
+        "category": "mansio",
+        "name": "Singidunum",
+        "road": "Danube Limes Road (Aquincum-Viminacium)",
+        "distance_from_previous_mp": 4,
+        "identified": true,
+        "notes": "Singidunum crowned the bluff now occupied by Belgrade's Kalemegdan fortress, home to Legio IV Flavia Felix by Trajan's reign. It stood four Roman miles from the river port at Taurunum and thirty-four from Viminacium downstream. Trajan used the fortress as a staging base during the Dacian Wars, and the future emperor Jovian was born within its walls decades later. The site remains under Belgrade's continuously occupied fortress hill today.",
+        "sources": [
+          "Itin. Ant. (Taurunum classis-Singidunum castra, IIII m.p.; Singidunum castra-Aureus mons, XXIIII m.p.)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.2211,
+          44.7341
+        ]
+      },
+      "properties": {
+        "id": "station_viminacium",
+        "category": "mansio",
+        "name": "Viminacium",
+        "road": "Danube Limes Road (Aquincum-Viminacium)",
+        "distance_from_previous_mp": 34,
+        "identified": true,
+        "notes": "Viminacium served as the capital of Moesia Superior and home to Legio VII Claudia, thirty-four Roman miles east of Singidunum via Mons Aureus and Margum. Its amphitheater and street grid survive beneath farmland near modern Kostolac, inside an open-air park. Excavators have logged more than 14,000 graves in its necropolises. Two woolly mammoths, unearthed in the same mining pit that exposed the ruins, now share the exhibit halls with the Roman remains.",
+        "sources": [
+          "Itin. Ant. (Singidunum castra-Aureus mons, XXIIII m.p.; Aureus mons-Viminacium via Vinceia and Margum, X m.p.)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
