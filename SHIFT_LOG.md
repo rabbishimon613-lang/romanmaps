@@ -7,6 +7,135 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 107 — 2026-09-06 (this shift's own prompt claimed "Shift 4 of four")
+
+### Boot
+
+Container started detached at `8c8d1ee` (Shift 106's tip); `git fetch origin main` confirmed
+`origin/main` matched, `git checkout -B main origin/main` was a safe sync. `npm run validate`
+clean baseline (0 errors, same 7 reviewed warnings) before touching anything. Re-verified network
+egress directly rather than trusting inheritance: `curl` to `en.wikipedia.org`, `overpass-api.de`,
+`pleiades.stoa.org` all `connect_rejected` via the agent-proxy — Axis 1 (cities via Overpass) stays
+off the table, same as every recent shift. `WebSearch` (direct and via background `Agent` calls)
+remains the only working research channel.
+
+Read `BOARD.md` in full and independently re-verified rather than inheriting Shift 106's
+conclusion: `grep -n "^\- \[ \]"` confirms every remaining unclaimed ticket is one of the same
+large multi-pass migrations (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]`
+card-rebuild, `[13-P0-2]` image-audit) or a human/network-blocked item (`[02-P0-4]` glyph
+self-hosting, `[14-P0-1]` blocked on Pedro, `[15-P0-1]` unattended-screenshot-gate — which
+explicitly blocks *any* UI/`polish` ticket from an unattended session like this one, so Track B
+stayed off the table for the same structural reason the last several shifts logged, not a
+re-guess). No Track B picked.
+
+### Track A — Axis 2 (road stations, four new regions)
+
+Shift 106's own "next shift should pick up" note named four untouched regions after its own
+category census: Sardinia/Corsica, Cyprus, Judaea's interior road network, and Cappadocia/Galatia's
+Euphrates-frontier supply roads. Verified all four were genuinely at zero coverage first
+(`python3` scan of `road_stations.geojson`'s `road`/`name` fields, cross-checked against `pois.geojson`/
+`roads_main.geojson`/`roads_secondary.geojson` for city-name collisions) rather than assuming the
+prior shift's list was still accurate — confirmed zero real stations for all four. Dispatched four
+background WebSearch research agents in two waves of two (Sardinia/Corsica + Judaea first, Cyprus +
+Cappadocia/Galatia once those landed), reviewed each output for schema validity, id collisions
+against the full ~19,900-id project-wide gazetteer, and coordinate/mileage sanity before merging.
+**`road_stations.geojson`: 838 → 913 features (+75), first coverage for all four regions.**
+
+**Sardinia/Corsica (commit `1b0c64c`) — 25 stations.** Sardinia's Antonine Itinerary section (Iter
+Sardiniae) radiates five corridors from Karales (Cagliari): the interior trunk to Turris Libisonis,
+the interior route to Olbia (via Forum Traiani, Ad Medias, Molaria, Hafa, Luguidonis castra), the
+west-coast road (Bosa-Cornus-Tharros-Othoca), the southern coastal loop (Neapolis-Metalla-Sulci-
+Tegula-Nora), and a thinly-attested Tibula fork. Corsica contributed its one and only Itinerary
+route (Iter Corsicae, Mariana-Aleria-Praesidium-Portus Favonii-Pallas, 125 mp) — confirmed as a real
+ceiling, not a research shortfall. Caught one real id collision before merging: the agent's
+`station_ad_medias` would have overwritten an existing, unrelated Via Aemilia mutatio of the same
+generic "midpoint" name — renamed to `station_ad_medias_sardinia`, the same class of trap Shift 106's
+own Edessa/Macedonia-vs-Mesopotamia collision was. A genuine ~260mp Sardinian east-coast route (the
+litoranea orientale) was researched but dropped — only unverifiable station names surfaced via
+noisy search-snippet synthesis, no primary-text confirmation reachable in this sandbox.
+
+**Judaea's interior road network (commit `dce6468`) — 15 stations.** Via Maris coastal segment
+(Ptolemais-Caesarea, from the Bordeaux Itinerary), the Caesarea-Jerusalem road (Antipatris, Beeroth,
+Emmaus), Jerusalem-Jericho (the Good Samaritan Inn/Maledomni site), a Jericho-Scythopolis Jordan
+Valley spur pinning the two Herodian date-palm estates Archelais and Phasaelis, Jerusalem-Neapolis
+(Bethel, Gophna), Jerusalem-Hebron (Beth-Zur), and the Hebron-Negev corridor toward the Arabia
+frontier (Malatha). Two dating corrections applied to stay inside the 117 CE snapshot: "Emmaus" not
+the anachronistic "Nicopolis" (renamed ~221 CE) and "Jerusalem" not "Aelia Capitolina" (refounded 130
+CE) — both traps a source written centuries later (the Bordeaux Itinerary, 333 CE) would otherwise
+launder into the record silently. `station_betaro_junction` shipped honestly uncertain
+(`confidence: low`) rather than resolved: two ancient sources cite a similarly-named station near
+Caesarea and the agent could not confirm from search snippets alone whether they're the same place —
+also flagged against confusion with the unrelated Bar Kokhba-era fortress Betar (132-135 CE, postdates
+this snapshot). No confirmed station found south of Malatha toward Petra — logged as a real gap, not
+a dead end, since the corridor plainly continues via the Via Nova Traiana.
+
+**Cyprus (commit `041254b`) — 4 stations, honest thin result.** Confirmed the Antonine Itinerary has
+*no* Cyprus section at all (a genuine dead end, not a research gap — don't re-check). The Tabula
+Peutingeriana does cover Cyprus but only as city-to-city mileage hops with no named intermediate
+mansio distinct from the cities. Shipped instead the real sub-city evidence that exists: 4 inscribed
+milestones from T. B. Mitford's 1939 JRS corpus (Paphos-Curium x2, Paphos-Arsinoe, the disputed
+Hogarth reading on Salamis-Lapethus), all `category: milestone`, `identified: false`,
+`confidence: low`. One real source conflict flagged rather than smoothed over: the Peutinger Table's
+33mp Paphos-Soloi figure doesn't reconcile with the milestone-derived 24mp Paphos-Arsinoe leg on the
+same coast.
+
+**Cappadocia/Galatia's Euphrates-frontier supply roads (commit `dba388c`) — 31 stations, the
+shift's largest batch.** Four Antonine Itinerary corridors, each internally verified (every
+corridor's station-by-station mileage sums exactly to the itinerary's own stated grand total —
+Ancyra-Caesarea 198mp/7 stations, Caesarea-Melitene 228mp/9 stations, Caesarea-Satala 324mp/10
+stations, Tavium-Sebastopolis-Sebastia 166mp/4 stations) — real, load-bearing infrastructure for
+Trajan's ongoing Parthian War, since Caesarea-Melitene fed XII Fulminata's Euphrates crossing and
+Caesarea-Satala supplied XV Apollinaris on the Armenian frontier. Plus one bonus non-mansio feature,
+the Karamagara Bridge near Ağın (now submerged under the Keban Dam since 1975), shipped with its
+exact road corridor marked provisional since the agent couldn't reconcile its approach direction
+with the researched Caesarea-Melitene alignment. Three high-collision-risk names qualified in the id
+itself before merging (`station_parnassus_cappadociae`, `station_nyssa_cappadociae`,
+`station_comana_cappadociae`) to keep them apart from the unrelated, more famous Parnassus/Nysa/
+Comana Pontica elsewhere in the classical world — checked against the full gazetteer, no actual
+collisions found. Two manuscript-tradition mileage disagreements (Coduzalaba-Comana,
+Armaxa-Sebastia) flagged in-feature rather than silently picking one figure.
+
+`METRICS.md` regenerated twice via `npm run metrics -- --write` (after the Sardinia/Corsica+Judaea
+pair, and again after Cyprus+Cappadocia/Galatia) — thematic-file record count 2057 → 2097 (+40 from
+the first pair) reflects correctly; `road_stations.geojson` itself isn't part of the POI metric so
+the headline 1462/100%/0-thin numbers are unchanged, as expected. `npm run validate` clean at every
+merge (0 errors, same 7 pre-existing out-of-envelope warnings, cross-file-collision count unchanged
+at 218 across all four batches — none of the 75 new points landed within 150m of an existing
+feature). `npm run build` clean at every push.
+
+### Track B
+
+Confirmed, independently, the same conclusion as Shifts 104-106: `FEATURE_BACKLOG.md`'s P0-P3
+sections are 100% checked off, and `BOARD.md` has no unclaimed ticket smaller than a multi-pass
+migration or not blocked on network/human access/the unattended-screenshot gate. No Track B picked
+this shift either.
+
+### Next shift should pick up
+
+- **Track A:** Road stations are still the most reliable source of quantifiable headroom, but this
+  shift likely closed out the easy regional gaps a same-day category census can find — a future
+  shift should re-run the census (`grep -o '"road": "[^"]*"' public/data/road_stations.geojson |
+  sort -u`, now 88 distinct corridor strings across 913 stations) and check genuinely obscure
+  candidates rather than assuming another whole untouched region is waiting: Cyrenaica's interior
+  roads (Cyrene-Apollonia-Ptolemais), Mauretania Tingitana beyond the already-covered Volubilis
+  corridor, or a second pass at Cyprus's south-coast Kition-Amathus-Kourion stretch IF a way is
+  found around the JSTOR paywall blocking Mitford's full milestone corpus (flagged as a real, not
+  yet closed, gap by this shift's own Cyprus agent). Also worth trying: the Malatha-to-Petra gap
+  this shift's Judaea batch left open, and the Ancyra-Tavium stretch this shift's Cappadocia batch
+  found zero attested intermediate stations for.
+- **Axis 15 (alimenta towns)** still needs journal access (Woolf 1990 Appendix III), not more
+  WebSearch budget — Shift 106's finding, unchanged.
+- **Axis 1 (more cities)** stays network-blocked — reconfirmed directly this shift, not just
+  inherited.
+- **Track B:** still nothing unblocked in `FEATURE_BACKLOG.md` or `BOARD.md`. `[15-P0-1]`
+  unattended-screenshot-gate remains the actual root blocker keeping every `polish`/UI ticket
+  unreachable from this shift structure — worth fixing (a static component harness rendered at
+  build time, per the ticket's own suggestion) rather than re-logging every shift. `[11-P1-6]`
+  split-map-tsx remains the most plausible pick for a shift with more wall-clock budget than one
+  slot allows for exploratory refactoring without visual verification.
+
+---
+
 ## Shift 106 — 2026-09-06 (this shift's own prompt claimed "Shift 3 of four")
 
 ### Boot
