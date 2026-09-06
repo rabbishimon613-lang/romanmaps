@@ -17373,6 +17373,208 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.14217,
+          46.38196
+        ]
+      },
+      "properties": {
+        "id": "station_pons_sociorum",
+        "category": "mansio",
+        "name": "Pons Sociorum",
+        "road": "Sopianae-Aquincum Road",
+        "distance_from_previous_mp": 25,
+        "identified": true,
+        "notes": "Pons Sociorum bridged the Kapos river twenty-five Roman miles north of Sopianae, the first stage on the road toward Aquincum. Modern Dombóvár occupies the same river crossing today. Roman engineers raised the span to carry traffic over ground that flooded every spring. In 117 CE wagons and couriers crossed here moving north out of the Sopianae mining district toward the Sárvíz valley.",
+        "sources": [
+          "Itin. Ant. 264,4 (Iter a Sopianis Aquinco)",
+          "https://en.wikipedia.org/wiki/Dombóvár",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.62441,
+          46.56215
+        ]
+      },
+      "properties": {
+        "id": "station_valle_cariniana",
+        "category": "mutatio",
+        "name": "Valle Cariniana",
+        "road": "Sopianae-Aquincum Road",
+        "distance_from_previous_mp": 30,
+        "identified": true,
+        "notes": "Valle Cariniana stood thirty Roman miles beyond Pons Sociorum, set low in the Sió river valley. Fieldwork points to farmland near modern Kajdacs as its footprint, though no inscription names the spot outright. Wagons on this stretch carried grain and timber out of the Sárvíz basin toward the road hub at Gorsium. Its Latin name records the valley itself rather than any town.",
+        "sources": [
+          "Itin. Ant. 264,4 (Iter a Sopianis Aquinco)",
+          "https://doktori.btk.elte.hu/hist/bodocs/thesis.pdf",
+          "https://en.wikipedia.org/wiki/Kajdacs"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.40509,
+          47.07933
+        ]
+      },
+      "properties": {
+        "id": "station_gorsium",
+        "category": "mansio",
+        "name": "Gorsium",
+        "road": "Sopianae-Aquincum Road",
+        "distance_from_previous_mp": 30,
+        "identified": true,
+        "notes": "Gorsium stood thirty Roman miles north of Valle Cariniana, where the Sopianae-Aquincum road crossed the route running toward Brigetio. A military camp had held the junction since the mid-first century, and a full town grew up around it soon after. Excavators have since uncovered its forum, temples, and a theater at the Gorsium Archaeological Park outside modern Tác. Later reforms renamed the town Herculia and made it the assembly seat of Pannonia Inferior.",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/T%C3%A1c,_Gorsium.jpg?width=800",
+        "image_credit": "Wikimedia Commons",
+        "sources": [
+          "Itin. Ant. 264,4 (Iter a Sopianis Aquinco)",
+          "https://en.wikipedia.org/wiki/Tác",
+          "https://hu.wikipedia.org/wiki/Gorsium"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.756995,
+          47.287439
+        ]
+      },
+      "properties": {
+        "id": "station_iasulones",
+        "category": "mutatio",
+        "name": "Iasulones",
+        "road": "Sopianae-Aquincum Road",
+        "distance_from_previous_mp": 25,
+        "identified": false,
+        "notes": "Iasulones marked the last stage before Aquincum, twenty-five Roman miles out from Gorsium and twenty-five short of the provincial capital. Distance reckoning from the Antonine Itinerary places it near modern Baracska, but no excavation has confirmed a Roman-period site there. Travelers on this leg were already within reach of the Danube bend and its garrison towns. The point plotted here is interpolated along the road corridor at the itinerary's stated distance rather than fixed by any find.",
+        "sources": [
+          "Itin. Ant. 264,4 (Iter a Sopianis Aquinco)",
+          "https://en.wikipedia.org/wiki/Baracska",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0916332,
+          46.4436639
+        ]
+      },
+      "properties": {
+        "id": "station_iovia_pannonia",
+        "category": "mansio",
+        "name": "Iovia",
+        "road": "Sopianae-Brigetio Road",
+        "distance_from_previous_mp": 32,
+        "identified": true,
+        "notes": "Iovia opened the road from Sopianae to Brigetio, thirty-two Roman miles out into the Kapos valley. The name is tied to the fortified late-Roman site at Alsóhetény, near Kapospula, where a hexagonal mausoleum still stands among the ruins. An earlier, more modest mansio on the same ground served travelers before that fort was ever built. The road to Aquincum ran only a few miles to the south before the two routes diverged further north.",
+        "sources": [
+          "Itin. Ant. (Iter a Sopianis Brigetione)",
+          "https://en.wikipedia.org/wiki/Iovia",
+          "https://btk.ppke.hu/en/iovia-late-roman-settlement"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.54754,
+          46.75408
+        ]
+      },
+      "properties": {
+        "id": "station_fortiana",
+        "category": "mansio",
+        "name": "Fortiana",
+        "road": "Sopianae-Brigetio Road",
+        "distance_from_previous_mp": 25,
+        "identified": true,
+        "notes": "Fortiana stood twenty-five Roman miles north of Iovia, holding a crossing of the Sió river on the road to Brigetio. The name is most often tied to modern Simontornya, where a ford and a later medieval castle mark the same strategic bend. Rival sites at Ozora and Felsőnyék compete for the identification, a question archaeology has not settled. The station kept supplies moving north out of the mining district around Sopianae.",
+        "sources": [
+          "Itin. Ant. (Iter a Sopianis Brigetione)",
+          "https://en.wikipedia.org/wiki/Simontornya",
+          "https://mek.oszk.hu/03400/03410/html/3203.html"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.41509,
+          47.08683
+        ]
+      },
+      "properties": {
+        "id": "station_herculia",
+        "category": "mansio",
+        "name": "Herculia",
+        "road": "Sopianae-Brigetio Road",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "Herculia marked the midpoint of the road from Sopianae to Brigetio, twenty Roman miles beyond Fortiana. It was the same town as Gorsium on the neighboring road to Aquincum, renamed when imperial reform made it the assembly seat of Pannonia Inferior. The Antonine Itinerary recorded the one settlement under two names because two different roads reached it from two directions. From here the routes split, one branch running north to Brigetio and the other northeast to Aquincum.",
+        "sources": [
+          "Itin. Ant. (Iter a Sopianis Brigetione)",
+          "https://en.wikipedia.org/wiki/Tác",
+          "https://hu.wikipedia.org/wiki/Gorsium_Herculia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.46049,
+          47.39332
+        ]
+      },
+      "properties": {
+        "id": "station_floriana",
+        "category": "mansio",
+        "name": "Floriana",
+        "road": "Sopianae-Brigetio Road",
+        "distance_from_previous_mp": 15,
+        "identified": true,
+        "notes": "Floriana lay fifteen Roman miles north of Herculia, at the point where the Sopianae-Brigetio road crossed the older route linking Savaria and Aquincum. Modern Csákvár occupies the site, an identification built on distance calculation rather than a found inscription. A garrison here controlled traffic moving in four directions through the crossroads. Eight Roman miles further on, the road reached the legionary fortress at Brigetio.",
+        "sources": [
+          "Itin. Ant. (Iter a Sopianis Brigetione)",
+          "https://en.wikipedia.org/wiki/Csákvár",
+          "https://mek.oszk.hu/03400/03410/html/3203.html"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
