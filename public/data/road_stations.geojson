@@ -21960,6 +21960,766 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.8264,
+          39.6867
+        ]
+      },
+      "properties": {
+        "id": "station_gorbeus",
+        "category": "mansio",
+        "name": "Gorbeus (Corbeus)",
+        "road": "Ancyra-Caesarea Road (via Nysa)",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "City of the Tectosages in Galatia; residence of the dynast Castor, destroyed by Deiotarus in the 1st c. BCE, later an Antonine Itinerary station 24 mp (or 20 mp per Wikipedia's paraphrase) east/south of Ancyra. Identified with modern Oğulbey (Gölbaşı district, Ankara Province) on the strength of Wikipedia's Gorbeus article; exact archaeological confirmation is not strong, so treat the pinpoint as approximate (district center used, not a confirmed find-spot). COLLISION FLAG: a fairly common ancient toponym pattern (Gorbeus/Corbeus/Gorbeious) - check for existing entries under any spelling variant.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Ancyra-Nysa-Caesarea, 198 mp total",
+          "https://topostext.org/work/687",
+          "https://en.wikipedia.org/wiki/Gorbeus"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.0546,
+          39.5044
+        ]
+      },
+      "properties": {
+        "id": "station_orsologiacum",
+        "category": "mansio",
+        "name": "Orsologiacum (Rosologiacum)",
+        "road": "Ancyra-Caesarea Road (via Nysa)",
+        "distance_from_previous_mp": 18,
+        "identified": false,
+        "notes": "Antonine Itinerary station between Gorbeus and Aspona on the Ancyra-Caesarea road. No confident modern identification found in the sources consulted. Coordinates are a straight-line interpolation between Gorbeus (Oğulbey) and Aspona (Sarıhüyük) at the itinerary's proportional distance (18 of 38 mp of that stretch) - NOT a real find-spot, only a rough placeholder along the plausible road corridor.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Ancyra-Nysa-Caesarea, 198 mp total",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.3078,
+          39.3022
+        ]
+      },
+      "properties": {
+        "id": "station_aspona",
+        "category": "mansio",
+        "name": "Aspona",
+        "road": "Ancyra-Caesarea Road (via Nysa)",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "Roman/Byzantine city and later bishopric (civitas from the 4th c.) on the Ancyra-Caesarea road, ~80 km SE of Ankara. Identified with modern Sarıhüyük (earlier Şedithüyük), Bala district, Ankara Province; two low mounds mark the site. Well-attested and precisely located.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Ancyra-Nysa-Caesarea, 198 mp total",
+          "https://topostext.org/work/687",
+          "https://en.wikipedia.org/wiki/Aspona"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.5847,
+          39.055
+        ]
+      },
+      "properties": {
+        "id": "station_parnassus_cappadociae",
+        "category": "mansio",
+        "name": "Parnassus (Cappadociae)",
+        "road": "Ancyra-Caesarea Road (via Nysa)",
+        "distance_from_previous_mp": 22,
+        "identified": true,
+        "notes": "Town in northern Cappadocia/Galatia borderland on the right bank of the Halys, on the Ancyra-Caesarea/Archelais road; later a bishopric. Identified with modern Parlasan, Şereflikoçhisar district, Ankara Province. COLLISION FLAG (HIGH PRIORITY): 'Parnassus' is an extremely generic classical toponym (cf. Mount Parnassus in Phocis, Greece) - if this project has any other 'Parnassus' entry, disambiguate carefully; this one MUST carry the '(Cappadociae)' qualifier or a distinguishing id.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Ancyra-Nysa-Caesarea, 198 mp total",
+          "https://topostext.org/work/687",
+          "https://en.wikipedia.org/wiki/Parnassus_(Cappadocia)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9489,
+          38.9344
+        ]
+      },
+      "properties": {
+        "id": "station_nyssa_cappadociae",
+        "category": "mansio",
+        "name": "Nyssa (Cappadociae)",
+        "road": "Ancyra-Caesarea Road (via Nysa)",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "Cappadocian town on the Ancyra-Caesarea road, between Parnassus and Osiana/Asiana; seat of the 4th-c. bishop Gregory of Nyssa. Majority modern identification is with Harmandalı (Ortaköy district, Aksaray Province - two tells, Büyükkale/Küçükkale), though an older, now largely rejected, theory placed it at Nevşehir - flagged as disputed. COLLISION FLAG (HIGH PRIORITY): 'Nyssa'/'Nysa' is a very common Greco-Roman toponym pattern (e.g. Nysa on the Maeander in Caria is a much more famous, unrelated city) - disambiguate strictly by the '(Cappadociae)' qualifier and coordinates; do not merge with any unrelated 'Nysa' entry.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Ancyra-Nysa-Caesarea, 198 mp total",
+          "https://topostext.org/work/687",
+          "https://en.wikipedia.org/wiki/Nyssa_(Cappadocia)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.4929,
+          38.8583
+        ]
+      },
+      "properties": {
+        "id": "station_osiana",
+        "category": "mansio",
+        "name": "Osiana (Asiana)",
+        "road": "Ancyra-Caesarea Road (via Nysa)",
+        "distance_from_previous_mp": 32,
+        "identified": false,
+        "notes": "Antonine Itinerary station between Nyssa and Saccasena on the Ancyra-Caesarea road (given as 'Osiana' in the mileage list, 'Asiana' in the descriptive gloss placing Nyssa between Parnassos and Asiana - likely the same station under a manuscript variant spelling). No confident modern identification found. Coordinates are a straight-line interpolation between Nyssa (Harmandalı) and Caesarea (Kayseri) at the proportional itinerary distance - a rough placeholder only, not a find-spot.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Ancyra-Nysa-Caesarea, 198 mp total",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9688,
+          38.7918
+        ]
+      },
+      "properties": {
+        "id": "station_saccasena",
+        "category": "mansio",
+        "name": "Saccasena",
+        "road": "Ancyra-Caesarea Road (via Nysa)",
+        "distance_from_previous_mp": 28,
+        "identified": false,
+        "notes": "Antonine Itinerary station between Osiana and Caesarea on the Ancyra-Caesarea road, the last stop before Caesarea itself (30 mp further). No confident modern identification found. Coordinates are a straight-line interpolation between Nyssa (Harmandalı) and Caesarea (Kayseri) at the proportional itinerary distance - a rough placeholder only.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Ancyra-Nysa-Caesarea, 198 mp total",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.7531,
+          38.5941
+        ]
+      },
+      "properties": {
+        "id": "station_arasaxa",
+        "category": "mansio",
+        "name": "Arasaxa",
+        "road": "Caesarea-Melitene Road",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "First station east of Caesarea on the direct road to Melitene. The Antonine Itinerary mileage list gives this station's name as 'Artaxata' (24 mp from Caesarea) - almost certainly a scribal confusion with the far-away Armenian royal city of the same name, since gazetteers (Barrington Atlas Map 64 B3; Digital Atlas of the Roman Empire) instead equate the real Cappadocian station here with Arasaxa/Arathia/Arassaxa, sited near modern Akmescit in Kayseri Province, ~27 Roman miles east of Caesarea. Precise coordinates for the Akmescit in question could not be independently verified in this search session (several unrelated villages named Akmescit exist elsewhere in Turkey); the point given is a straight-line interpolation along the Caesarea-Comana stretch at the itinerary's proportional distance, not a confirmed find-spot. COLLISION FLAG: do not confuse with, or accidentally merge into, any entry for the actual Artaxata in Armenia - they are different places sharing a corrupted name in the manuscript tradition.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Caesarea-Melitene, 228 mp total",
+          "https://topostext.org/work/687",
+          "https://en.wikipedia.org/wiki/Arasaxa",
+          "Barrington Atlas Map 64 (Caesarea-Melitene), compiled T.B. Mitford 1996"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.0274,
+          38.4676
+        ]
+      },
+      "properties": {
+        "id": "station_coduzalaba",
+        "category": "mansio",
+        "name": "Coduzalaba",
+        "road": "Caesarea-Melitene Road",
+        "distance_from_previous_mp": 24,
+        "identified": false,
+        "notes": "Antonine Itinerary station between Arasaxa and Comana on the Caesarea-Melitene road (also appears, with a slightly different mileage figure, on a separate Sebastia-Cocusus itinerary that shares this stretch - a known cross-attestation rather than an error). No confident modern identification found. Coordinates are a straight-line interpolation between Caesarea (Kayseri) and Comana (Şarköy) at the proportional itinerary distance - a rough placeholder only.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Caesarea-Melitene, 228 mp total",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.3247,
+          38.3306
+        ]
+      },
+      "properties": {
+        "id": "station_comana_cappadociae",
+        "category": "mansio",
+        "name": "Comana (Cappadociae)",
+        "road": "Caesarea-Melitene Road",
+        "distance_from_previous_mp": 26,
+        "identified": true,
+        "notes": "Major Cappadocian temple-city (cult of Ma/Enyo) and Antonine Itinerary/Tabula Peutingeriana station on the direct Caesarea-Melitene road. Securely identified with the ruins at Şarköy (Tufanbeyli district, Adana Province), in the Göksu/Sarız valley; the identification is confirmed by both itineraries showing it on this exact route. COLLISION FLAG (HIGH PRIORITY): 'Comana' is a duplicated Anatolian toponym - Comana Pontica (a different, more famous temple-city near modern Gümenek/Tokat) is a wholly separate place; make sure any existing project entry for 'Comana' is Pontica and not this one (Cappadociae) before merging, and keep the qualifier in the name/id.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Caesarea-Melitene, 228 mp total",
+          "https://topostext.org/work/687",
+          "https://en.wikipedia.org/wiki/Comana_(Cappadocia)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.69,
+          38.25
+        ]
+      },
+      "properties": {
+        "id": "station_siricae",
+        "category": "mansio",
+        "name": "Siricae (Siricis)",
+        "road": "Caesarea-Melitene Road",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "Cappadocian town on the road from Comana to Melitene, per Smith's Dictionary/Wikipedia sited near modern Keklikoluk, a settlement on the western side of the Binboğa Mountains in Sarız district, Kayseri Province, about 20 km west of Afşin. Coordinates here are estimated from that relative description (approx. 20 km W of Afşin), not a precise geocode of Keklikoluk itself, and are cross-consistent with the itinerary-distance interpolation. Also transmitted as 'Saricha' in some sources.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Caesarea-Melitene, 228 mp total",
+          "https://topostext.org/work/687",
+          "https://en.wikipedia.org/wiki/Siricae"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.7816,
+          38.2658
+        ]
+      },
+      "properties": {
+        "id": "station_ptandaris",
+        "category": "mansio",
+        "name": "Ptandaris (Ptandari)",
+        "road": "Caesarea-Melitene Road",
+        "distance_from_previous_mp": 16,
+        "identified": false,
+        "notes": "Antonine Itinerary station between Siricae and Arabissus on the Caesarea-Melitene road; also the point where a branch itinerary diverges south toward Cocusus. No confident modern identification found. Coordinates are a straight-line interpolation between Comana (Şarköy) and Arabissus (Afşin) at the proportional itinerary distance - a rough placeholder only.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Caesarea-Melitene, 228 mp total",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.9186,
+          38.2464
+        ]
+      },
+      "properties": {
+        "id": "station_arabissus",
+        "category": "mansio",
+        "name": "Arabissus (Arabissos)",
+        "road": "Caesarea-Melitene Road",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Cappadocian city on the Caesarea-Melitene road, later a city of the Armenia II Hexapolis and birthplace (539 CE) of the Byzantine emperor Maurice. Securely identified with modern Afşin (formerly Yarpuz), Kahramanmaraş Province. COLLISION FLAG: a real, sizeable ancient city (not just a wayside halt) - check whether this project already has an Afşin/Arabissus point from a different research pass before merging.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Caesarea-Melitene, 228 mp total",
+          "https://topostext.org/work/687",
+          "https://en.wikipedia.org/wiki/Arabissus"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.3158,
+          38.2948
+        ]
+      },
+      "properties": {
+        "id": "station_osdara",
+        "category": "mansio",
+        "name": "Osdara (Asdara)",
+        "road": "Caesarea-Melitene Road",
+        "distance_from_previous_mp": 28,
+        "identified": false,
+        "notes": "Antonine Itinerary station between Arabissus and Dandexena on the Caesarea-Melitene road. The Barrington Atlas Map-by-Map Directory tentatively suggests modern Demircilik, but marks the equation with a question mark - too uncertain to treat as a confirmed identification. Coordinates are a straight-line interpolation between Arabissus (Afşin) and Melitene (Battalgazi) at the proportional itinerary distance - a rough placeholder only, not the (unverified) Demircilik location.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Caesarea-Melitene, 228 mp total",
+          "https://topostext.org/work/687",
+          "https://pleiades.stoa.org/places/629049/osdara",
+          "Barrington Atlas Map 64 (Caesarea-Melitene), compiled T.B. Mitford 1996"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.6563,
+          38.3363
+        ]
+      },
+      "properties": {
+        "id": "station_dandexena",
+        "category": "mansio",
+        "name": "Dandexena (Dandaxina)",
+        "road": "Caesarea-Melitene Road",
+        "distance_from_previous_mp": 24,
+        "identified": false,
+        "notes": "Antonine Itinerary station between Osdara and Arcas on the Caesarea-Melitene road, close to Melitene itself. No confident modern identification found. Coordinates are a straight-line interpolation between Arabissus (Afşin) and Melitene (Battalgazi) at the proportional itinerary distance - a rough placeholder only.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Caesarea-Melitene, 228 mp total",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.9686,
+          38.3744
+        ]
+      },
+      "properties": {
+        "id": "station_arcas",
+        "category": "mansio",
+        "name": "Arcas",
+        "road": "Caesarea-Melitene Road",
+        "distance_from_previous_mp": 22,
+        "identified": false,
+        "notes": "Last Antonine Itinerary station before Melitene on the Caesarea-Melitene road (28 mp short of Melitene). No confident modern identification found. Coordinates are a straight-line interpolation between Arabissus (Afşin) and Melitene (Battalgazi) at the proportional itinerary distance - a rough placeholder only. COLLISION FLAG: 'Arcas' is a short, generic-sounding name (also a figure of Greek myth, ancestor of the Arcadians) - double check against unrelated entries before merging.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Caesarea-Melitene, 228 mp total",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.8676,
+          39.0259
+        ]
+      },
+      "properties": {
+        "id": "station_eulepa",
+        "category": "mansio",
+        "name": "Eulepa",
+        "road": "Caesarea-Satala Road",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "First station north/east of Caesarea on the Caesarea-Satala military road (the road serving XV Apollinaris at Satala and the Armenian frontier). Ancient site located near the village of Palas (formerly Gölova), Sarıoğlan district, Kayseri Province.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Caesarea-Satala, 324 mp total",
+          "https://topostext.org/work/687",
+          "https://en.wikipedia.org/wiki/Eulepa"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.0681,
+          39.1819
+        ]
+      },
+      "properties": {
+        "id": "station_armaxa",
+        "category": "mansio",
+        "name": "Armaxa (Armaza)",
+        "road": "Caesarea-Satala Road",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "Cappadocian town on the Caesarea-Satala road, between Eulepa and Marandara. Sited near modern Gemerek, Sivas Province (coordinates given are the town center, since the precise ancient find-spot near Gemerek is not pinpointed in the sources consulted).",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Caesarea-Satala, 324 mp total",
+          "https://topostext.org/work/687",
+          "https://en.wikipedia.org/wiki/Armaxa"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.348,
+          39.3487
+        ]
+      },
+      "properties": {
+        "id": "station_marandara",
+        "category": "mansio",
+        "name": "Marandara (Malandara)",
+        "road": "Caesarea-Satala Road",
+        "distance_from_previous_mp": 28,
+        "identified": false,
+        "notes": "Antonine Itinerary station between Armaxa and Scanatus on the Caesarea-Satala road; also attested (as 'Malandara', with a slightly different mileage figure) on a parallel Sebastia-Caesarea-Cocusus itinerary entry covering the same stretch in reverse. No confident modern identification found. Coordinates are a straight-line interpolation between Armaxa (Gemerek) and Sebastia (Sivas) at the proportional itinerary distance - a rough placeholder only.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Caesarea-Satala, 324 mp total",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.738,
+          39.581
+        ]
+      },
+      "properties": {
+        "id": "station_scanatus",
+        "category": "mansio",
+        "name": "Scanatus (Scanatu)",
+        "road": "Caesarea-Satala Road",
+        "distance_from_previous_mp": 39,
+        "identified": false,
+        "notes": "Last Antonine Itinerary station before Sebastia on the Caesarea-Satala road. Note: this stretch's mileage figure (39 mp) differs from the same stretch quoted in reverse on a parallel itinerary entry (28 mp) - a genuine manuscript-tradition inconsistency, not resolved here; the 39 mp figure is used because it is the one belonging to the itinerary whose station-by-station total matches the stated 324 mp grand total exactly. No confident modern identification found for the station itself. Coordinates are a straight-line interpolation between Armaxa (Gemerek) and Sebastia (Sivas) at the proportional itinerary distance - a rough placeholder only.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Caesarea-Satala, 324 mp total",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.459,
+          39.8361
+        ]
+      },
+      "properties": {
+        "id": "station_camisa",
+        "category": "mansio",
+        "name": "Camisa",
+        "road": "Caesarea-Satala Road",
+        "distance_from_previous_mp": 27,
+        "identified": false,
+        "notes": "Town of Lesser Armenia on the upper Halys, east of Sebastia (modern Sivas), on the Caesarea-Satala road between Sebastia and Zara. Only a general region ('east of Sivas, upper Halys valley') is attested in the sources consulted, with no specific modern village identified. Coordinates are a straight-line interpolation between Sebastia (Sivas) and Zara at the proportional itinerary distance - a rough placeholder only.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Caesarea-Satala, 324 mp total",
+          "https://topostext.org/work/687",
+          "https://en.wikipedia.org/wiki/Camisa"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.7531,
+          39.895
+        ]
+      },
+      "properties": {
+        "id": "station_zara",
+        "category": "mansio",
+        "name": "Zara",
+        "road": "Caesarea-Satala Road",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Roman/Byzantine station on the Caesarea-Satala road between Camisa and Dagalassus. Unusually for this corridor, the ancient name survives essentially unchanged as the modern town of Zara, Sivas Province - a direct toponymic continuity, giving high confidence in both identification and coordinates. COLLISION FLAG (IMPORTANT): the modern Turkish town's name is coincidentally identical to the historic Italian/Venetian name 'Zara' for Zadar, Croatia, an entirely unrelated Roman-era city (Iader) on the Dalmatian coast - if this project has any other 'Zara' entry, make certain it is not conflated with this one.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Caesarea-Satala, 324 mp total",
+          "https://topostext.org/work/687",
+          "https://en.wikipedia.org/wiki/Zara,_Turkey"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.7883,
+          40.0815
+        ]
+      },
+      "properties": {
+        "id": "station_dagalassus",
+        "category": "mansio",
+        "name": "Dagalassus",
+        "road": "Caesarea-Satala Road",
+        "distance_from_previous_mp": 20,
+        "identified": false,
+        "notes": "Antonine Itinerary station between Zara and Nicopolis on the Caesarea-Satala road. No confident modern identification found. Coordinates are a straight-line interpolation between Zara and Nicopolis (Koyulhisar) at the proportional itinerary distance - a rough placeholder only.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Caesarea-Satala, 324 mp total",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.2548,
+          40.2387
+        ]
+      },
+      "properties": {
+        "id": "station_olotoedariza",
+        "category": "mansio",
+        "name": "Olotoedariza",
+        "road": "Caesarea-Satala Road",
+        "distance_from_previous_mp": 24,
+        "identified": false,
+        "notes": "Antonine Itinerary station between Nicopolis and Dracontes on the Caesarea-Satala road (this Nicopolis-Satala stretch is also independently attested as the tail end of a shorter Arabissus-Satala route, 268 mp total). No confident modern identification found. Coordinates are a straight-line interpolation between Nicopolis (Koyulhisar) and Satala (Sadak) at the proportional itinerary distance - a rough placeholder only.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Caesarea-Satala, 324 mp total",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.7143,
+          40.1665
+        ]
+      },
+      "properties": {
+        "id": "station_dracontes",
+        "category": "mansio",
+        "name": "Dracontes (Ad Dracones)",
+        "road": "Caesarea-Satala Road",
+        "distance_from_previous_mp": 26,
+        "identified": false,
+        "notes": "Antonine Itinerary station between Olotoedariza and Haza on the final approach to Satala. No confident modern identification found. Coordinates are a straight-line interpolation between Nicopolis (Koyulhisar) and Satala (Sadak) at the proportional itinerary distance - a rough placeholder only.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Caesarea-Satala, 324 mp total",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1384,
+          40.0999
+        ]
+      },
+      "properties": {
+        "id": "station_haza",
+        "category": "mansio",
+        "name": "Haza",
+        "road": "Caesarea-Satala Road",
+        "distance_from_previous_mp": 24,
+        "identified": false,
+        "notes": "Last Antonine Itinerary station before Satala (legionary base of XV Apollinaris), 26 mp short of it. No confident modern identification found. Coordinates are a straight-line interpolation between Nicopolis (Koyulhisar) and Satala (Sadak) at the proportional itinerary distance - a rough placeholder only.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Caesarea-Satala, 324 mp total",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0174,
+          39.9023
+        ]
+      },
+      "properties": {
+        "id": "station_mogarum",
+        "category": "mansio",
+        "name": "Mogarum",
+        "road": "Tavium-Sebastopolis-Sebastia Road",
+        "distance_from_previous_mp": 30,
+        "identified": false,
+        "notes": "First Antonine Itinerary station east of Tavium on the Tavium-Sebastopolis-Sebastia road (a lateral route linking Galatia to the Cappadocia/Pontus-Satala corridor at Sebastia). No confident modern identification found. Coordinates are a straight-line interpolation between Tavium (Büyüknefes) and Sebastopolis (Sulusaray) at the proportional itinerary distance - a rough placeholder only.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Tavia-Sebastopolis-Sebastia, 166 mp total",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4173,
+          39.9377
+        ]
+      },
+      "properties": {
+        "id": "station_dorano",
+        "category": "mansio",
+        "name": "Dorano",
+        "road": "Tavium-Sebastopolis-Sebastia Road",
+        "distance_from_previous_mp": 24,
+        "identified": false,
+        "notes": "Antonine Itinerary station between Mogarum and Sebastopolis on the Tavium-Sebastopolis-Sebastia road. No confident modern identification found. Coordinates are a straight-line interpolation between Tavium (Büyüknefes) and Sebastopolis (Sulusaray) at the proportional itinerary distance - a rough placeholder only.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Tavia-Sebastopolis-Sebastia, 166 mp total",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.5072,
+          40.0836
+        ]
+      },
+      "properties": {
+        "id": "station_verisa",
+        "category": "mansio",
+        "name": "Verisa (Berissa)",
+        "road": "Tavium-Sebastopolis-Sebastia Road",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "City of Roman/Late Roman Pontus Polemoniacus on the Sebastopolis-Sebastia road, between Sebastopolis and Fiarasi. Identified with the modern village of Baulus (also 'Bolus'), about 25 km SW of Tokat. Transmitted under several spellings: Berissa/Berisa/Verisa/Verissa.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Tavia-Sebastopolis-Sebastia, 166 mp total",
+          "https://topostext.org/work/687",
+          "https://en.wikipedia.org/wiki/Berissa"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.5506,
+          39.8722
+        ]
+      },
+      "properties": {
+        "id": "station_fiarasi",
+        "category": "mansio",
+        "name": "Fiarasi",
+        "road": "Tavium-Sebastopolis-Sebastia Road",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "Last Antonine Itinerary station before Sebastia on the Tavium-Sebastopolis-Sebastia road. No confident modern identification found. Coordinates are a straight-line interpolation between Sebastopolis (Sulusaray) and Sebastia (Sivas) at the proportional itinerary distance - a rough placeholder only.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.) route Tavia-Sebastopolis-Sebastia, 166 mp total",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.6585,
+          38.925
+        ]
+      },
+      "properties": {
+        "id": "bridge_karamagara",
+        "category": "bridge",
+        "name": "Karamagara Bridge",
+        "road": "Melitene vicinity road (exact corridor uncertain)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Roman/Late Roman single-span bridge (possibly the earliest known pointed-arch bridge) carrying a Roman road to Melitene across the Arapgir Çayı, a Euphrates tributary, near modern Ağın, Elazığ Province. The road it carried approached Melitene from the north/northwest (the Arapgir/Kemaliye direction), which does not match the Caesarea-Melitene itinerary stations researched above (which approach from the west via Arcas) - it more likely belonged to a Melitene-Nicopolis/Satala lateral link or a Melitene-Arapgir local route; the exact corridor identity is not resolved here, so treat the 'road' field as provisional. The bridge and river gorge have been submerged since the 1975 completion of the Keban Dam. Included as a genuine, well-documented physical waypoint on 'a Roman road to Melitene' even though it is not itself a named mansio/mutatio/statio - category is 'bridge', not 'mansio'.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Karamagara_Bridge",
+          "https://pleiades.stoa.org/places/629685"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
