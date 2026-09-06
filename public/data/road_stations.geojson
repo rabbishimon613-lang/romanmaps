@@ -21863,6 +21863,103 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.6317,
+          34.7142
+        ]
+      },
+      "properties": {
+        "id": "station_paphos_curium_mp_xv",
+        "category": "milestone",
+        "name": "Miliarium XV a Paphos (15th milestone from Paphos)",
+        "road": "Paphos-Curium Road (west/south coast road)",
+        "distance_from_previous_mp": 15,
+        "identified": false,
+        "notes": "An inscribed Roman milestone recording XV (15) Roman miles from Paphos on the Paphos–Curium (Kourion) road, discussed by T. B. Mitford in his 1939 corpus of western-Cyprus milestones (described in secondary summaries as unpublished/newly reported at the time). No firm modern findspot village is confirmed from the sources consulted here; coordinates are a straight-line interpolation 15/32 of the way from Nea Paphos toward Kourion (the road's attested total length — see the XXIV/VIII milestone below), NOT a surveyed findspot. The real road hugged the coast through Palaepaphos (Kouklia) and Achelia rather than running straight, so this point should be read as 'somewhere along that stretch,' not a precise location. Likely built/maintained under the Augustus-Titus phase of imperial road sponsorship on Cyprus, i.e. still the operative road in 117 CE.",
+        "sources": [
+          "T. B. Mitford, 'Milestones in Western Cyprus,' Journal of Roman Studies 29 (1939), pp. 184-198",
+          "https://www.cambridge.org/core/journals/journal-of-roman-studies/article/abs/milestones-in-western-cyprus1/6BA82ACCF9991AE59315584899F28409"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.7667,
+          34.6885
+        ]
+      },
+      "properties": {
+        "id": "station_paphos_curium_mp_xxiv",
+        "category": "milestone",
+        "name": "Miliarium XXIV a Paphos / VIII a Curio (24th milestone from Paphos, 8th from Curium)",
+        "road": "Paphos-Curium Road (west/south coast road)",
+        "distance_from_previous_mp": 24,
+        "identified": false,
+        "notes": "Mitford's milestone evidence for this road gives a stone reading XXIV (24) miles from Paphos, reconciled with a separate reckoning of VIII (8) miles from Curium (Kourion) — the two figures sum exactly to a total road length of c. 32 Roman miles between the two cities, which is how the overall length of this road is established. Coordinates here are a straight-line interpolation at 24/32 of the distance from Paphos to Kourion; the real coastal road (attested to run 'straight as a die' below Kouklia toward Akhelia in one stretch, per secondary description) was not a straight chord, so treat this as approximate. Confirms the Paphos-Curium road was a fixed, measured Roman route well before 117 CE.",
+        "sources": [
+          "T. B. Mitford, 'Milestones in Western Cyprus,' Journal of Roman Studies 29 (1939), pp. 184-198",
+          "https://www.cambridge.org/core/journals/journal-of-roman-studies/article/abs/milestones-in-western-cyprus1/6BA82ACCF9991AE59315584899F28409"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.4166,
+          34.8607
+        ]
+      },
+      "properties": {
+        "id": "station_paphos_arsinoe_mp_ix",
+        "category": "milestone",
+        "name": "Miliarium IX a Paphos / XV ab Arsinoe (9th milestone from Paphos, 15th from Arsinoe)",
+        "road": "Paphos-Arsinoe (Marion) Road (northwest coastal road)",
+        "distance_from_previous_mp": 9,
+        "identified": false,
+        "notes": "Mitford's western-Cyprus milestone evidence gives a stone/pair of readings of IX (9) miles from Paphos and XV (15) miles from Arsinoe (Marion, near modern Polis Chrysochous) on the coastal road linking the two — again summing exactly to a total of c. 24 Roman miles, which pins the length of this road. Placed here at 9/24 of the straight-line distance from Paphos toward Arsinoe; actual road followed the coast, so exact position is approximate. Note the Tabula Peutingeriana's own figure for the neighboring Paphos-Soloi stretch (33 mp in the Peutinger list) sits oddly against this milestone-derived 24 mp Paphos-Arsinoe leg — secondary commentary notes the literary itinerary distances 'run short' compared to the milestone evidence on this coast, i.e. the two source types do not fully agree and neither should be taken as more than approximate.",
+        "sources": [
+          "T. B. Mitford, 'Milestones in Western Cyprus,' Journal of Roman Studies 29 (1939), pp. 184-198",
+          "https://www.cambridge.org/core/journals/journal-of-roman-studies/article/abs/milestones-in-western-cyprus1/6BA82ACCF9991AE59315584899F28409"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.3596,
+          35.3016
+        ]
+      },
+      "properties": {
+        "id": "station_salamis_lapethus_mp_xxxv",
+        "category": "milestone",
+        "name": "Miliarium XXXV a Salamine (35th [disputed] milestone from Salamis)",
+        "road": "Salamis-Lapethus Road (crossing the Kyrenia/Northern Range, via Chytroi)",
+        "distance_from_previous_mp": 35,
+        "identified": false,
+        "notes": "A milestone whose last legible line D. G. Hogarth read as the Greek numeral ΛΕ (35), which he took to mark the 35th Roman mile on the road from Salamis to Lapethus — a reading Mitford's 1939 corpus revisits but treats as uncertain ('considered ... in all probability'). The findspot itself is reported as lying 31-32 English miles in a direct line from Salamis; since the actual road climbed through either the Kyrenia pass or the Lefkoniko pass across the Northern Range to reach it, the true routed distance (35 mp) exceeds the straight-line figure, and the road 'must have diverged considerably' from a direct line at this point. Coordinates given here are only a rough straight-line projection toward Lapethos at ~75% of that chord (matching the 31-32 mile direct-distance report), landing in the Kyrenia range interior — this is explicitly a low-confidence approximation of a mountain-crossing stretch, not a real findspot fix. This road is the same route the Tabula Peutingeriana implies by routing Salamis to the north coast via Chytroi and over the range before turning west through Kyrenia, Lapethos, and Soloi toward Arsinoe/Paphos.",
+        "sources": [
+          "D. G. Hogarth (reading), as discussed in T. B. Mitford, 'Milestones in Western Cyprus,' Journal of Roman Studies 29 (1939), pp. 184-198",
+          "https://www.cambridge.org/core/journals/journal-of-roman-studies/article/abs/milestones-in-western-cyprus1/6BA82ACCF9991AE59315584899F28409",
+          "https://en.wikipedia.org/wiki/Chytri"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
