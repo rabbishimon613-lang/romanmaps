@@ -18905,6 +18905,420 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.5925,
+          30.9011
+        ]
+      },
+      "properties": {
+        "id": "station_naukratis",
+        "category": "vicus",
+        "name": "Naukratis",
+        "road": "Nile Valley Road (Alexandria-Syene)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Greek merchants settled Naukratis on the Canopic branch of the Nile back in the 7th century BCE, and Pharaoh Amasis later made it Egypt's sole legal port for Greek trade. By 117 CE it sat well inland of Alexandria on the western Delta route, still minting its own coins and running a customs house. Excavators pulled thousands of Greek pottery fragments and dedications to Aphrodite and Apollo out of its ruins. Its river-and-road position made it a natural first stop for traffic working up the Canopic branch toward Sais and the Delta interior.",
+        "sources": [
+          "https://pleiades.stoa.org/places/727169",
+          "https://en.wikipedia.org/wiki/Naucratis",
+          "https://topostext.org/place/309306UNau"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.7683,
+          30.9647
+        ]
+      },
+      "properties": {
+        "id": "station_sais",
+        "category": "vicus",
+        "name": "Sais",
+        "road": "Nile Valley Road (Alexandria-Syene)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Sais ruled all of Egypt as the 26th Dynasty capital and gave its name to the fifth Lower Egyptian nome, whose governor still sat there under Rome. Herodotus described its great temple of Neith with lakeside mysteries staged after dark. By Trajan's reign the town had faded from royal capital to provincial nome seat, but the temple precinct and its famous library tradition kept it on the map. It anchored the western Delta road roughly 16 kilometers from Naukratis on the way toward Memphis.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sais,_Egypt",
+          "https://www.trismegistos.org/geo/detail.php?tm=1345"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2551,
+          29.8495
+        ]
+      },
+      "properties": {
+        "id": "station_memphis_nile_road",
+        "category": "vicus",
+        "name": "Memphis",
+        "road": "Nile Valley Road (Alexandria-Syene)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Memphis had ruled Egypt for three thousand years before Rome arrived, and under Trajan it still functioned as the last major Delta-facing stop before the Nile Valley narrowed south of the apex. Strabo visited and described its temple of Ptah and its sacred Apis bull cult still drawing pilgrims in the early Roman period. The city sat at the point where river traffic and the desert roads to the Faiyum and the pyramid fields converged, making it the real gateway to Upper Egypt. This entry marks it strictly as the Nile Valley Road waypoint; the city's broader record as one of antiquity's great capitals likely belongs to a separate major-city entry elsewhere in this project.",
+        "sources": [
+          "https://pleiades.stoa.org/places/736963",
+          "https://en.wikipedia.org/wiki/Memphis,_Egypt"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.9346,
+          29.0855
+        ]
+      },
+      "properties": {
+        "id": "station_herakleopolis_magna",
+        "category": "vicus",
+        "name": "Herakleopolis Magna",
+        "road": "Nile Valley Road (Alexandria-Syene)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Herakleopolis Magna governed the 20th nome of Upper Egypt from a site the Egyptians called Nen-nesu, home to a ram-headed Herishef cult temple that drew Greek settlers who equated the god with Herakles. The city had briefly ruled all Egypt during the troubled First Intermediate Period a couple thousand years before Trajan. Papyri from the Roman-period necropolis at nearby Sedment name resident veterans and tax officials tied to the nome capital. It sat roughly 15 kilometers west of modern Beni Suef, a full day's stop between Memphis and the Fayyum-facing stretch of the valley road.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Heracleopolis_Magna",
+          "https://www.trismegistos.org/place/801"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.647,
+          28.531
+        ]
+      },
+      "properties": {
+        "id": "station_oxyrhynchus",
+        "category": "vicus",
+        "name": "Oxyrhynchus",
+        "road": "Nile Valley Road (Alexandria-Syene)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Oxyrhynchus capitaled the 19th Upper Egyptian nome and sat on a Nile side-channel that dried into a rubbish-heap paradise for later papyrologists, ultimately yielding over half a million papyrus fragments. Under Trajan the town ran its own gymnasium, baths, and theater and paid taxes recorded in Greek on the very trash that preserved its name. Grenfell and Hunt's excavations there from 1896 recovered lost works of Menander, Sappho, and early Christian gospel fragments buried in its dumps. Its nome-capital status made it a mandatory administrative stop on the west-bank road between Herakleopolis and Hermopolis.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Oxyrhynchus",
+          "https://www.trismegistos.org/place/1524"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.8039,
+          27.7814
+        ]
+      },
+      "properties": {
+        "id": "station_hermopolis_magna",
+        "category": "vicus",
+        "name": "Hermopolis Magna",
+        "road": "Nile Valley Road (Alexandria-Syene)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Hermopolis Magna capitaled the 15th Upper Egyptian nome and worshipped Thoth, whom the Greeks equated with Hermes and honored with a temple precinct excavators later found still standing to a considerable height. The city sat directly across the Nile from the spot Hadrian would choose in 130 CE to found Antinoopolis, a full generation after this map's date. Its Roman-period agora and temple of Ptolemy III Euergetes drew heavy building activity through the second century. As one of Middle Egypt's few genuinely large cities, it was an obligatory overnight stop on the west-bank valley road.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Hermopolis",
+          "https://www.trismegistos.org/geo/detail.php?tm=816"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/AshmuneinMerenptahTemple.jpg?width=800",
+        "image_credit": "Roland Unger, via Wikimedia Commons (CC BY-SA)",
+        "image_alt": "Ruins of the Merenptah temple precinct at Hermopolis Magna (el-Ashmunein)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1825,
+          27.1814
+        ]
+      },
+      "properties": {
+        "id": "station_lycopolis",
+        "category": "vicus",
+        "name": "Lycopolis",
+        "road": "Nile Valley Road (Alexandria-Syene)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Lycopolis, ancient Zawty, capitaled the 13th nome of Upper Egypt and took its Greek name from the jackal-headed god Wepwawet, whom settlers read as a wolf. Sitting at modern Asyut on the west bank, it commanded the shortest desert road to the Kharga and Dakhla oases, making it a real crossroads rather than just a riverside stop. Roman-period tombs cut into the cliffs above the town held officials who administered the nome under Trajan. Its position roughly midway between the Delta and Thebes made it a natural overnight halt on the long valley run south.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Asyut",
+          "https://www.trismegistos.org/place/1271"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.8158,
+          25.9964
+        ]
+      },
+      "properties": {
+        "id": "station_koptos_nile_road",
+        "category": "mansio",
+        "name": "Koptos",
+        "road": "Nile Valley Road (Alexandria-Syene)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Koptos capitaled the fifth nome of Upper Egypt and doubled as the single busiest transshipment point in the whole Roman trade system with India, since every caravan road east to Myos Hormos and Berenike started at its riverbank. A Roman-period customs tariff carved on stone there in 90 CE lists the fees charged on prostitutes, sailors, and pack animals passing through. Its temple of Min and Isis, rebuilt under the Ptolemies, stood at the exact hinge where the Eastern Desert praesidia roads met Nile river traffic. Every boat and caravan bound between the Red Sea and Alexandria passed through this single town, making it arguably the most economically vital stop on the entire valley road.",
+        "sources": [
+          "https://pleiades.stoa.org/places/785944",
+          "https://en.wikipedia.org/wiki/Qift",
+          "https://www.trismegistos.org/place/1159"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Colossal_Statue_of_the_God_Min,_Koptos,_Predynastic_Period,_about_3300_BCE._Ashmolean_Museum.jpg?width=800",
+        "image_credit": "Following Hadrian / Ashmolean Museum, via Wikimedia Commons (CC BY-SA)",
+        "image_alt": "Colossal statue of the god Min from the temple at Koptos"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.8028,
+          26.4774
+        ]
+      },
+      "properties": {
+        "id": "station_ptolemais_hermiou",
+        "category": "vicus",
+        "name": "Ptolemais Hermiou",
+        "road": "Nile Valley Road (Alexandria-Syene)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Ptolemy I founded Ptolemais Hermiou as a genuine Greek polis in Upper Egypt, complete with a boule and demos, the only such self-governing Greek city south of Alexandria. Strabo called it the largest city in the Thebaid and larger than Thebes itself by his day. Under Trajan it kept its Greek civic institutions even as most of Egypt was run through Roman-appointed strategoi rather than city councils. Its unique legal status as a chartered Greek city made it a required administrative stop between Abydos and points further north on the valley road.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ptolemais_Hermiou",
+          "https://pleiades.stoa.org/places/756635"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.9189,
+          26.185
+        ]
+      },
+      "properties": {
+        "id": "station_abydos",
+        "category": "vicus",
+        "name": "Abydos",
+        "road": "Nile Valley Road (Alexandria-Syene)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Abydos held the cult center of Osiris and had drawn pilgrim burials for three thousand years by the time Trajan ruled, with Seti I's temple and its famous king list still standing as a major destination. The site actually sits about 11 kilometers back from the river itself, connected to the Nile road by a short spur track rather than sitting directly on the bank. Strabo mentioned it was already largely deserted as a town even as the temple cult continued drawing visitors. Its enduring religious pull kept it marked as a named stop on itineraries even after its urban population had thinned out.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Abydos,_Egypt",
+          "https://pleiades.stoa.org/places/785964"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Seti_I,_Abydos,_Egypt.jpg?width=800",
+        "image_credit": "Wikimedia Commons contributor (CC BY-SA)",
+        "image_alt": "The Temple of Seti I at Abydos"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.6572,
+          25.7188
+        ]
+      },
+      "properties": {
+        "id": "station_diospolis_magna",
+        "category": "vicus",
+        "name": "Diospolis Magna (Thebes)",
+        "road": "Nile Valley Road (Alexandria-Syene)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Diospolis Magna was the Greek name for Thebes, capital of the New Kingdom empire and still capital of the fourth Upper Egyptian nome under Trajan, its Karnak temple precinct sprawling across more than 100 hectares. Strabo toured the ruins around 25 BCE and reported the city already reduced to scattered villages even as its monuments awed him. A pair of colossal seated statues on its west bank, the so-called Colossi of Memnon, had cracked in the earthquake of 27 BCE and were drawing tourists who came to hear the stone reportedly sing at dawn. As the largest religious complex in the Thebaid it remained an essential valley-road waypoint even in urban decline.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Thebes,_Egypt",
+          "https://pleiades.stoa.org/places/836839127/diospolis-magna-thebai"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Karnak_Temples.jpg?width=800",
+        "image_credit": "Wikimedia Commons contributor (CC BY-SA 4.0)",
+        "image_alt": "The Karnak temple complex at ancient Thebes (Diospolis Magna)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.5562,
+          25.2935
+        ]
+      },
+      "properties": {
+        "id": "station_latopolis",
+        "category": "vicus",
+        "name": "Latopolis",
+        "road": "Nile Valley Road (Alexandria-Syene)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Latopolis capitaled the third nome of Upper Egypt and took its Greek name from the Nile perch, sacred to Neith, that locals refused to eat. The ram-god Khnum's temple there was rebuilt extensively under Roman emperors, with inscriptions naming Claudius, Vespasian, and Trajan himself among the builders of its later halls. Sitting about 55 kilometers south of Thebes on the west bank, the town controlled a key ferry crossing and desert road junction toward the Western Desert. Its continuous Roman-era temple construction shows it stayed a functioning administrative center straight through Trajan's reign.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Esna",
+          "https://www.trismegistos.org/place/1227"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_khnum_esna.jpg?width=800",
+        "image_credit": "Wikimedia Commons contributor (CC BY-SA)",
+        "image_alt": "The Temple of Khnum at Esna (ancient Latopolis)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.8724,
+          24.9779
+        ]
+      },
+      "properties": {
+        "id": "station_apollonopolis_magna",
+        "category": "vicus",
+        "name": "Apollonopolis Magna",
+        "road": "Nile Valley Road (Alexandria-Syene)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Apollonopolis Magna capitaled the second nome of Upper Egypt and worshipped the falcon god Horus, equated by the Greeks with Apollo, in a temple whose current standing structure was under construction across the second and first centuries BCE. Ptolemaic and Roman texts record the town's long ritual rivalry with crocodile-worshipping Ombos further south, described by Juvenal as an actual armed brawl between the two towns' populations. Sitting on the west bank roughly 100 kilometers south of Thebes, it controlled river traffic and a caravan road east toward Berenike alternate to the Koptos route. Its size and temple wealth made it one of the largest towns of Roman Upper Egypt.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Apollonopolis_Magna",
+          "https://pleiades.stoa.org/places/785974"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Edfu_temple_Horus_02.jpg?width=800",
+        "image_credit": "Wikimedia Commons contributor (CC BY-SA)",
+        "image_alt": "The Temple of Horus at Edfu (ancient Apollonopolis Magna)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.9282,
+          24.4521
+        ]
+      },
+      "properties": {
+        "id": "station_ombos",
+        "category": "vicus",
+        "name": "Ombos",
+        "road": "Nile Valley Road (Alexandria-Syene)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Ombos sat on a promontory on the Nile's east bank and became capital of its own Ombite nome carved out during the Ptolemaic period, worshipping the crocodile god Sobek alongside the falcon god Haroeris in a single unusual double temple. Juvenal's fifteenth Satire describes a real riot that broke out here against neighboring Apollonopolis Magna over the two towns' rival animal cults. The temple visible today was largely built under Ptolemaic and early Roman patronage, with a Roman-era mammisi and nilometer added to the complex. Its position commanding both the river and the roads north from Nubia made it a natural checkpoint on the approach to Syene.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kom_Ombo",
+          "https://en.wikipedia.org/wiki/Ombos"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sobek_and_Hathor_-_Kom_Ombo_Temple.jpg?width=800",
+        "image_credit": "Wikimedia Commons contributor (CC BY-SA)",
+        "image_alt": "Reliefs at the double temple of Kom Ombo (ancient Ombos)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.898,
+          24.0812
+        ]
+      },
+      "properties": {
+        "id": "station_syene",
+        "category": "mansio",
+        "name": "Syene",
+        "road": "Nile Valley Road (Alexandria-Syene)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Syene marked Rome's actual southern frontier post in Egypt in 117 CE, sitting just below the First Cataract where the Nile stopped being reliably navigable by large freight boats. The town supplied the famous rose granite used across the empire, quarried from pits still visible today including one holding an unfinished obelisk over 41 meters long. Strabo visited around 25 BCE with the prefect Aelius Gallus and reported a Roman garrison already stationed there facing the Kingdom of Meroe to the south. As the terminus of the great valley road, every soldier, official, and trader heading further south had to pass through or around Syene first.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Aswan",
+          "https://www.trismegistos.org/place/2207",
+          "https://pleiades.stoa.org/places/785952"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nile_River,_Feluccas,_Aswan,_Egypt.jpg?width=800",
+        "image_credit": "Wikimedia Commons contributor (CC BY-SA)",
+        "image_alt": "The Nile at Aswan, ancient Syene"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.89,
+          24.09
+        ]
+      },
+      "properties": {
+        "id": "station_elephantine",
+        "category": "statio",
+        "name": "Elephantine",
+        "road": "Nile Valley Road (Alexandria-Syene)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Elephantine occupied an island directly opposite Syene at the head of the First Cataract and had garrisoned Egypt's southern border since Pharaonic times, its name recalling the ivory trade that once passed through its docks. A Jewish military colony had been stationed there under Persian rule centuries earlier, leaving behind the Elephantine papyri that document one of the oldest known Jewish communities outside Judea. Roman-period Nilometers cut into the island's rock measured the annual flood that determined the whole empire's Egyptian grain tax. As the actual garrisoned frontier post facing Nubia, it functioned as the true endpoint fortress of the valley road, with Syene serving as its mainland counterpart.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Elephantine",
+          "https://pleiades.stoa.org/places/786021"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aswan_Elephantine_Island_R05.jpg?width=800",
+        "image_credit": "Wikimedia Commons contributor (CC BY 3.0)",
+        "image_alt": "Elephantine Island at Aswan, Rome's southern frontier garrison in Egypt"
+      }
     }
   ]
 }
