@@ -20873,6 +20873,610 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1113,
+          39.2145
+        ]
+      },
+      "properties": {
+        "id": "station_karales_sardinia",
+        "category": "civitas",
+        "name": "Karales (Caralis)",
+        "road": "Hub — terminus of all Iter Sardiniae routes",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Caralis (modern Cagliari) was the capital of the provincia Sardinia et Corsica in 117 CE and the hub from which every road recorded in the Sardinian section of the Antonine Itinerary radiates. The Itinerary's Iter Sardiniae is a single continuous entry (It. Ant. pp. 78-85 in the standard Parthey-Pinder/Cuntz numbering) describing roughly seven overlapping routes; Caralis is named as an endpoint or waypoint on at least four of them, so it is flagged here as an id likely to need disambiguation against any other 'Caralis'/'station_karales' entries already in the project.",
+        "sources": [
+          "Itin. Ant. (Iter Sardiniae, pp. 78-85)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.focusardegna.com/index.php/focus/sardinia-antiqua/594-i-percorsi-sardi-dell-itinerario-antoniniano"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.4028,
+          40.8409
+        ]
+      },
+      "properties": {
+        "id": "station_turris_libisonis",
+        "category": "civitas",
+        "name": "Turris Libisonis",
+        "road": "Via a Karalibus Turrem (Caralis-Turris Libisonis interior road)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Turris Libisonis (modern Porto Torres) was a Caesarian colony (founded 46 BCE) on Sardinia's north coast and the island's main port toward Ostia/Rome. It is the northern terminus of the interior trunk road from Caralis attested by a long run of milestones (an 'a Karalibus Turrem' / 'a Turre Karalis' series) found along the modern SS131 corridor. The exact literary-Itinerary mile total for the full Caralis-Turris run was not confirmed in this research pass; only the epigraphic mid-route figures (see station_mulargia_molaria) were recoverable.",
+        "sources": [
+          "Itin. Ant. (Iter Sardiniae)",
+          "https://www.sardegnaturismo.it/en/explore/turris-libisonis",
+          "https://www.romanports.org/en/the-ports/257-turris-libisonis.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.505,
+          40.9236
+        ]
+      },
+      "properties": {
+        "id": "station_olbia_sardinia",
+        "category": "civitas",
+        "name": "Olbia (Ulbia)",
+        "road": "Via a Karalibus Olbiam (Caralis-Olbia interior road)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Olbia, on Sardinia's north-east coast, is named 'Ulbia' in the Itinerary and is the endpoint of an interior route from Caralis distinct from the coastal 'litoranea orientale' that also reached Olbia via Tibula. The last named mansio before Olbia on the interior route, Luguidonis castra, is well attested, but a confirmed mile figure for the final Luguidonis-Olbia leg was not found in available sources — flagged as a real gap rather than guessed.",
+        "sources": [
+          "Itin. Ant. (Iter Sardiniae)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0116,
+          38.9903
+        ]
+      },
+      "properties": {
+        "id": "station_nora_sardinia",
+        "category": "mansio",
+        "name": "Nora (Nura)",
+        "road": "Via a Karalibus Noram / coastal loop road",
+        "distance_from_previous_mp": 22,
+        "identified": true,
+        "notes": "Nora, near modern Pula, was one of Sardinia's oldest Phoenician-Punic-Roman towns and a named terminus of two attested itinerary segments: a short direct road from Caralis, and the long coastal loop coming around the south of the island via Tegula. Sources disagree on the exact Caralis-Nora figure — one reading gives 22 Roman miles, another (from a differently segmented reading of the same corpus) gives 32 — so the mileage here is marked medium-reliability even though the station's identification is not in doubt.",
+        "sources": [
+          "Itin. Ant. (Iter Sardiniae)",
+          "https://en.wikisource.org/wiki/Page:Dictionary_of_Greek_and_Roman_Geography_Volume_II.djvu/932",
+          "https://strictlysardinia.com/ancient-city-of-nora-sardinia/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.4467,
+          39.0742
+        ]
+      },
+      "properties": {
+        "id": "station_sulci_sardinia",
+        "category": "civitas",
+        "name": "Sulci",
+        "road": "Caralis coastal loop road (Othoca-Neapolis-Sulci-Tegula-Nora-Caralis)",
+        "distance_from_previous_mp": 30,
+        "identified": true,
+        "notes": "Sulci (modern Sant'Antioco, on the island of the same name) was a major Punic and then Roman town and mining-export port in south-west Sardinia. It sits on the itinerary's coastal loop, 30 Roman miles beyond Metalla (Neapolis-Metalla and Metalla-Sulci are each independently attested as ~30 mp legs, consistent with a separately reported 60 mp Neapolis-Sulci total), and roughly 30 mp further on to Tegula on the road rounding the southern tip of the island toward Nora and Caralis.",
+        "sources": [
+          "Itin. Ant. (Iter Sardiniae)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.4386,
+          39.8703
+        ]
+      },
+      "properties": {
+        "id": "station_tharros",
+        "category": "civitas",
+        "name": "Tharros",
+        "road": "West coast road (Turris Libisonis-Bosa-Cornus-Tharros-Othoca)",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Tharros, on the Sinis peninsula near modern Cabras, was among Sardinia's most important Punic-Roman coastal cities, controlling the Gulf of Oristano. The Itinerary places it 18 Roman miles from Cornus (the same figure given for Cornus-Bosa) on the west-coast road, and roughly 12 mp short of Othoca where that road met the interior route to Caralis.",
+        "sources": [
+          "Itin. Ant. (Iter Sardiniae)",
+          "https://en.wikisource.org/wiki/Page:Dictionary_of_Greek_and_Roman_Geography_Volume_II.djvu/932"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5936,
+          39.8797
+        ]
+      },
+      "properties": {
+        "id": "station_othoca",
+        "category": "mansio",
+        "name": "Othoca",
+        "road": "Via a Karalibus Olbiam / west coast road junction",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Othoca, identified with the site under modern Santa Giusta immediately south of Oristano, was the junction where the west-coast road from Turris Libisonis via Bosa, Cornus and Tharros met the interior route running east to Forum Traiani and on to Caralis. It is named twice in the Itinerary's Sardinian corpus (once on each road), which the secondary literature flags explicitly as one of several Sardinian stations repeated across routes.",
+        "sources": [
+          "Itin. Ant. (Iter Sardiniae)",
+          "https://en.wikisource.org/wiki/Page:Dictionary_of_Greek_and_Roman_Geography_Volume_II.djvu/932"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.4974,
+          40.2989
+        ]
+      },
+      "properties": {
+        "id": "station_bosa",
+        "category": "mansio",
+        "name": "Bosa",
+        "road": "West coast road (Turris Libisonis-Bosa-Cornus-Tharros-Othoca)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Bosa, at the mouth of the Temo river, is named in the Itinerary as a stop on the west-coast road between Turris Libisonis and Cornus (Cornus is given as 18 mp from Bosa). The Turris Libisonis-Bosa leg's own mile figure was not recoverable from the sources reached in this research session, so it is left null rather than guessed.",
+        "sources": [
+          "Itin. Ant. (Iter Sardiniae)",
+          "https://en.wikisource.org/wiki/Page:Dictionary_of_Greek_and_Roman_Geography_Volume_II.djvu/932"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.605,
+          40.166
+        ]
+      },
+      "properties": {
+        "id": "station_cornus",
+        "category": "mansio",
+        "name": "Cornus",
+        "road": "West coast road (Turris Libisonis-Bosa-Cornus-Tharros-Othoca)",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Cornus, a Punic-Roman town whose remains (including the later Columbaris Christian cemetery basilica) lie on the Campu 'e Corra plateau near Cuglieri, is placed by the Itinerary 18 Roman miles from Bosa and again 18 mp from Tharros on the west-coast road.",
+        "sources": [
+          "Itin. Ant. (Iter Sardiniae)",
+          "https://en.wikipedia.org/wiki/Cornus,_Sardinia",
+          "https://en.wikisource.org/wiki/Page:Dictionary_of_Greek_and_Roman_Geography_Volume_II.djvu/932"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.9675,
+          39.999
+        ]
+      },
+      "properties": {
+        "id": "station_forum_traiani_sardinia",
+        "category": "mansio",
+        "name": "Forum Traiani",
+        "road": "Via a Karalibus Olbiam (Caralis-Olbia interior road)",
+        "distance_from_previous_mp": 15,
+        "identified": true,
+        "notes": "Forum Traiani, modern Fordongianus on the Tirso river, was a market/administrative foundation named for Trajan and sat on the interior road between Othoca and Ad Medias. NOTE ON ID COLLISION RISK: 'Forum Traiani' as a toponym pattern (Forum + emperor name) recurs in other provinces under other emperors' names, and this exact settlement is sometimes confused in gazetteers with unrelated 'Forum Traiani/Traianum' entries elsewhere — double check for a naming clash against any existing cross-provincial 'Forum X' records before merging.",
+        "sources": [
+          "Itin. Ant. (Iter Sardiniae)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.953,
+          39.615
+        ]
+      },
+      "properties": {
+        "id": "station_aquae_neapolitanae",
+        "category": "mansio",
+        "name": "Aquae Neapolitanae",
+        "road": "Via a Karalibus Olbiam (Caralis-Olbia interior road)",
+        "distance_from_previous_mp": 36,
+        "identified": true,
+        "notes": "Aquae Neapolitanae was a thermal-spring station (the modern Terme di Sardara / Santa Maria Is Acquas area near Sardara) on the interior road, 36 Roman miles short of Caralis and 16 mp beyond Othoca per the Itinerary. Its name ('waters of Neapolis') references the coastal town of Neapolis on the separate southern loop road, not physical proximity — the two are on different roads and should not be conflated. Generic-pattern caution: 'Aquae [X]' spa-station names are common empire-wide (Aquae Sulis, Aquae Calidae, etc.), so the bare name 'Aquae Neapolitanae' is disambiguating enough on its own but worth a quick check against any existing 'Aquae' entries.",
+        "sources": [
+          "Itin. Ant. (Iter Sardiniae)",
+          "https://en.wikipedia.org/wiki/Aquae_Neapolitanae"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.51,
+          39.635
+        ]
+      },
+      "properties": {
+        "id": "station_neapolis_sardinia",
+        "category": "civitas",
+        "name": "Neapolis (Sardinia)",
+        "road": "Caralis coastal loop road (Othoca-Neapolis-Sulci-Tegula-Nora-Caralis)",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Neapolis, a Punic foundation on the south side of the Gulf of Oristano identified with the site of Santa Maria di Nabui in the comune of Guspini, is placed 18 Roman miles from Othoca and roughly 30 mp from Metalla on the southern coastal loop road. ID COLLISION FLAG: 'Neapolis' is one of the most reused Greco-Roman town names in the empire (Naples, Neapolis in Palestine/Nablus, Neapolis in Africa Proconsularis, Neapolis in Crete, etc.) — the slug is qualified '_sardinia' here specifically to avoid collision, and any merge script should confirm no bare 'station_neapolis' id already exists.",
+        "sources": [
+          "Itin. Ant. (Iter Sardiniae)",
+          "https://en.wikipedia.org/wiki/Neapolis_(Sardinia)",
+          "https://www.sardegnacultura.it/en/articles/guspini-citta-fenicio-punica-di-neapolis"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.4936,
+          39.4265
+        ]
+      },
+      "properties": {
+        "id": "station_metalla",
+        "category": "mansio",
+        "name": "Metalla",
+        "road": "Caralis coastal loop road (Othoca-Neapolis-Sulci-Tegula-Nora-Caralis)",
+        "distance_from_previous_mp": 30,
+        "identified": true,
+        "notes": "Metalla was the Roman mining district/settlement of the Iglesiente, its name meaning simply 'the mines' (Christian sources also record 'damnati ad Metalla' — convicts sentenced to labor there). Scholarship most often places it at or near Fluminimaggiore in the Antas valley, on the strength of the Itinerary's Neapolis-Metalla and Metalla-Sulci legs both being about 30 Roman miles, consistent with that site's position, though a precise urban center has not been excavated — treated here as identified with medium confidence rather than pinpointed.",
+        "sources": [
+          "Itin. Ant. (Iter Sardiniae)",
+          "https://en.wikipedia.org/wiki/Metalla",
+          "https://www.mdpi.com/2075-163X/11/9/964"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7719,
+          38.9686
+        ]
+      },
+      "properties": {
+        "id": "station_tegula",
+        "category": "mansio",
+        "name": "Tegula",
+        "road": "Caralis coastal loop road (Othoca-Neapolis-Sulci-Tegula-Nora-Caralis)",
+        "distance_from_previous_mp": 34,
+        "identified": true,
+        "notes": "Tegula, a station named for its terracotta/tile production, is generally placed at or near the isthmus of Cape Teulada (whose modern name preserves the Latin), 34 Roman miles from Sulci and 35 mp short of Nora on the road rounding the southern tip of Sardinia.",
+        "sources": [
+          "Itin. Ant. (Iter Sardiniae)",
+          "https://en.wikipedia.org/wiki/Tegula",
+          "https://en.wikipedia.org/wiki/Teulada,_Sardinia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.85,
+          40.37
+        ]
+      },
+      "properties": {
+        "id": "station_mulargia_molaria",
+        "category": "mansio",
+        "name": "Molaria",
+        "road": "Via a Karalibus Turrem (Caralis-Turris Libisonis interior road)",
+        "distance_from_previous_mp": 100,
+        "identified": true,
+        "notes": "Molaria is identified with the Mulargia locality near Bonorva, on the interior trunk road toward Turris Libisonis. Unlike most entries here, its distance is fixed not from the literary Itinerary text (which gives Molaria-Hafa as 24 mp on the separate Caralis-Olbia branch, see station_hafa) but from a run of surviving milestones recording it at the 100th mile from Caralis, with further milestones continuing north (109 mp at the Campeda plateau summit, up through ~119 mp) toward Turris. This is a road junction: the trunk to Turris Libisonis and the branch toward Hafa/Olbia both pass through or near this point. Coordinates are approximate (Mulargia locality, Bonorva).",
+        "sources": [
+          "Itin. Ant. (Iter Sardiniae)",
+          "https://virtualarchaeology.sardegnacultura.it/index.php/en/archaeological-sites/periodo-nuragico/necropoli-di-sant-andrea-priu/reperti/3774-miliario-cxv-localita-mura-menteda-333-335-d-c"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7561,
+          40.545
+        ]
+      },
+      "properties": {
+        "id": "station_hafa",
+        "category": "mansio",
+        "name": "Hafa",
+        "road": "Via a Karalibus Olbiam (Caralis-Olbia interior road)",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "Hafa is generally identified with the area of modern Mores (some scholarship narrows this to the specific site of Monte Zuighe nearby), 24 Roman miles from Molaria/Mulargia and 24 mp short of Luguidonis castra per the Itinerary's Caralis-Olbia interior branch. A specialist monograph (Sechi, 'La viabilità nella Sardegna romana tra le stationes di Hafa e Molaria') is devoted specifically to this stretch of road, indicating real but narrow scholarly attention — worth chasing down directly if higher precision is needed later.",
+        "sources": [
+          "Itin. Ant. (Iter Sardiniae)",
+          "https://www.amazon.it/viabilit%C3%A0-Sardegna-romana-stationes-Molaria-ebook/dp/B00NEIP5Z0"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1119,
+          40.7106
+        ]
+      },
+      "properties": {
+        "id": "station_luguidonis_castra",
+        "category": "mansio",
+        "name": "Luguidonis castra",
+        "road": "Via a Karalibus Olbiam (Caralis-Olbia interior road)",
+        "distance_from_previous_mp": 25,
+        "identified": true,
+        "notes": "Luguidonis castra ('the fort/camp of the Luguidonenses') is identified with the site of Nostra Signora di Castro near modern Oschiri, and corresponds to the civitas Luguidonensium known independently from inscriptions. It stood 25 Roman miles beyond Hafa on the interior road, near where routes toward Tibula (via Gemellas) and toward Olbia diverged. Coordinates given are approximate, centered on Oschiri.",
+        "sources": [
+          "Itin. Ant. (Iter Sardiniae)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.05,
+          40.95
+        ]
+      },
+      "properties": {
+        "id": "station_gemellas",
+        "category": "mansio",
+        "name": "Gemellas",
+        "road": "Via a Tibula Caralim (Tibula fork of the interior road)",
+        "distance_from_previous_mp": 25,
+        "identified": false,
+        "notes": "Gemellas ('the twins') is named in the Itinerary's Tibula-Caralis interior route, 25 Roman miles from Tibula and 25 mp short of Lugudunec (Luguidonis castra) — implying it sat on a northern fork of the interior road distinct from the Caralis-Olbia branch, splitting off toward Tibula near the Luguidonis crossroads. No confident modern identification was found in this research pass. Coordinates are a rough interpolation along the presumed Santa Teresa Gallura-Oschiri corridor at the correct proportional distance from Tibula, NOT an excavated or attested findspot — treat as a placeholder pending better sourcing.",
+        "sources": [
+          "Itin. Ant. (Iter Sardiniae)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.83,
+          40.13
+        ]
+      },
+      "properties": {
+        "id": "station_ad_medias_sardinia",
+        "category": "mansio",
+        "name": "Ad Medias",
+        "road": "Via a Karalibus Olbiam (Caralis-Olbia interior road)",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "Ad Medias ('at the midpoint') lay on the interior road between Forum Traiani and Molaria, 12 Roman miles from Forum Traiani per the Itinerary. The name itself suggests a midpoint marker rather than an existing settlement, and no confident modern identification was found in this research pass (candidates loosely mentioned in passing near the Abbasanta/Ghilarza area were not independently verifiable here). Coordinates are an approximate interpolation along the road path at the correct proportional distance, not an attested findspot.",
+        "sources": [
+          "Itin. Ant. (Iter Sardiniae)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.19,
+          41.245
+        ]
+      },
+      "properties": {
+        "id": "station_tibula",
+        "category": "mansio",
+        "name": "Tibula",
+        "road": "Via a Tibula Caralim (Tibula fork of interior road) / East coast litoranea",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "Tibula, at Sardinia's northern tip, was the customary landing point for ships from Corsica and Italy, and is the starting point named for no fewer than four routes in the Itinerary's Sardinian corpus. Its precise location is genuinely disputed between the Santa Teresa Gallura/Capo Testa area (associated with Roman granite quarrying) and a candidate site near Castelsardo further west; neither location has produced excavation evidence decisive enough to settle the question, so it is marked unidentified here despite the name and general area (extreme north Sardinia) being certain. Coordinates plot the more commonly cited Capo Testa/Santa Teresa candidate.",
+        "sources": [
+          "Itin. Ant. (Iter Sardiniae)",
+          "https://www.roamintheempire.com/index.php/2020/09/23/tibula/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.4599,
+          42.6217
+        ]
+      },
+      "properties": {
+        "id": "station_mariana_corsica",
+        "category": "civitas",
+        "name": "Mariana",
+        "road": "Corsica coastal road (Mariana-Aleria-Praesidium-Portus Favonii-Pallas)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Mariana, near modern Lucciana south of Bastia on the La Marana coastal plain by the Biguglia lagoon, was a colony founded by Marius in 93 BCE and is the northern terminus of Corsica's single attested Itinerary route (It. Ant., Iter Corsicae, Mariana-Pallas, 125 mp total). Corsica's record in the Itinerary is far thinner than Sardinia's — this is the only continuous route the Antonine Itinerary gives for the island.",
+        "sources": [
+          "Itin. Ant. (Iter Corsicae)",
+          "https://en.wikipedia.org/wiki/Mariana,_Corsica"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5106,
+          42.1039
+        ]
+      },
+      "properties": {
+        "id": "station_aleria",
+        "category": "civitas",
+        "name": "Aleria",
+        "road": "Corsica coastal road (Mariana-Aleria-Praesidium-Portus Favonii-Pallas)",
+        "distance_from_previous_mp": 40,
+        "identified": true,
+        "notes": "Aleria, on Corsica's central east coast, was the island's principal Roman colony (colonia founded under Sulla, refounded under Augustus) and its best-excavated Roman site. The Itinerary places it 40 Roman miles south of Mariana and 30 mp north of Praesidium.",
+        "sources": [
+          "Itin. Ant. (Iter Corsicae)",
+          "https://corsicalovers.fr/en/visit-aleria-corsica-roman-ruins/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.42,
+          41.9
+        ]
+      },
+      "properties": {
+        "id": "station_praesidium_corsica",
+        "category": "mansio",
+        "name": "Praesidium",
+        "road": "Corsica coastal road (Mariana-Aleria-Praesidium-Portus Favonii-Pallas)",
+        "distance_from_previous_mp": 30,
+        "identified": false,
+        "notes": "Praesidium ('the garrison/outpost') sat midway between Aleria and Portus Favonii, 30 Roman miles from each per the Itinerary. Its generic, functional name (rather than an ethnic or geographic one) is itself taken by commentators as a sign it was a minor military way-station rather than a town, and no confident modern identification exists — candidates near modern Solenzara are plausible on geographic grounds (it sits roughly at the right distance down Corsica's east coast) but are not confirmed by any source found in this research pass. Coordinates are an interpolation at the correct proportional distance along the coast between Aleria and the Portus Favonii site, not an attested findspot.",
+        "sources": [
+          "Itin. Ant. (Iter Corsicae)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3467,
+          41.6975
+        ]
+      },
+      "properties": {
+        "id": "station_portus_favonii",
+        "category": "mansio",
+        "name": "Portus Favonii",
+        "road": "Corsica coastal road (Mariana-Aleria-Praesidium-Portus Favonii-Pallas)",
+        "distance_from_previous_mp": 30,
+        "identified": true,
+        "notes": "Portus Favonii (also written Favonis) is identified with the modern hamlet of Favone on Corsica's south-east coast, and is probably the same place as the 'Philoniou limen' (Philonius harbor) mentioned by Ptolemy. It stood 30 Roman miles from Praesidium and 25 mp short of Pallas, the route's southern terminus. One classical-geography reference (Pauly-Wissowa RE) separately describes it as roughly 30 miles south of Aleria in a straight reckoning, which does not quite match the Itinerary's cumulative 60 mp via Praesidium — flagged as a minor internal inconsistency worth checking against a critical edition rather than a confirmed error.",
+        "sources": [
+          "Itin. Ant. (Iter Corsicae)",
+          "http://imperium.ahlfeldt.se/places/32848.html",
+          "https://de.wikisource.org/wiki/RE:Favonii_portus"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1594,
+          41.413
+        ]
+      },
+      "properties": {
+        "id": "station_pallas_corsica",
+        "category": "mansio",
+        "name": "Pallas",
+        "road": "Corsica coastal road (Mariana-Aleria-Praesidium-Portus Favonii-Pallas)",
+        "distance_from_previous_mp": 25,
+        "identified": false,
+        "notes": "Pallas (also transliterated Pallae) is the southern terminus of Corsica's only Itinerary route, 25 Roman miles beyond Portus Favonii, which would put it in the far south of the island near the Strait of Bonifacio — but no source found in this research pass offered a confirmed modern identification (a link to Bonifacio itself is geographically plausible given the terminal position facing Sardinia, but is speculative, not attested). Coordinates plot an approximate position near modern Bonifacio at roughly the right proportional distance; this should be treated as a placeholder, not a located site.",
+        "sources": [
+          "Itin. Ant. (Iter Corsicae)"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
