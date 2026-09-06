@@ -44906,6 +44906,141 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Murallas_de_Le%C3%B3n_01.JPG?width=800",
         "image_credit": "Roman-era walls of León, built by Legio VII Gemina · Wikimedia Commons"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5,
+          45.6
+        ]
+      },
+      "properties": {
+        "id": "poi_shipwreck_grado",
+        "category": "shipwreck",
+        "name_latin": "Navis Gradensis",
+        "name_english": "Grado Wreck",
+        "province": "Italia (Regio X Venetia et Histria)",
+        "modern_location": "Off Grado, Italy",
+        "built": 110,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "This Roman merchantman sank in the northern Adriatic about six miles off Grado during Trajan's reign, its hold packed with roughly 600 amphorae of processed fish sauce weighing some 24 tons. Divers recovered the wreck in 1999, exposing a 13-meter hull built shell-first with mortise-and-tenon joints. A lead pipe near the keel, once fitted to a suction pump, kept the bilge clear on runs down from Aquileia. A coin of Trajan found in the wreckage anchors the ship in the empire's high tide.",
+        "sources": [
+          "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1095-9270.2006.00115.x",
+          "https://en.wikipedia.org/wiki/Grado,_Friuli-Venezia_Giulia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.2,
+          39.02
+        ]
+      },
+      "properties": {
+        "id": "poi_shipwreck_cala_cicala",
+        "category": "shipwreck",
+        "name_latin": "Navis Cicalae",
+        "name_english": "Cala Cicala Wreck",
+        "province": "Italia (Regio III Bruttium et Lucania)",
+        "modern_location": "Off Capo Colonna, Crotone, Italy",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A Roman stone-carrier went down in six meters of water off Capo Colonna near Crotone, its hold loaded with 36 marble blocks and pillars weighing about 180 tons combined. Researchers from the University of Calabria traced the stone in 2017 to the Aliki and Vathy quarries on the Greek island of Thasos. Some monoliths ran longer than six meters, evidence of a heavy coastal stone trade running up Italy's Ionian shore.",
+        "sources": [
+          "https://iris.unical.it/handle/20.500.11770/347675",
+          "https://fastionline.org/files/original/dba76513fab0c11d0cc54ed8c2e6d7924b162235.pdf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.24256,
+          38.26075
+        ]
+      },
+      "properties": {
+        "id": "poi_shipwreck_kizilburun",
+        "category": "shipwreck",
+        "name_latin": "Navis Columnaria Kizilburunensis",
+        "name_english": "Kizilburun Column Wreck",
+        "province": "Asia",
+        "modern_location": "Off Kizilburun, near Selcuk, Turkey",
+        "built": -70,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A Roman stone-carrier sank off Turkey's Aegean coast around 70 BCE, its hold weighed down by a single 60-ton marble column: eight drums and a Doric capital quarried on Proconnesus in the Sea of Marmara. The Institute of Nautical Archaeology spent six seasons, 2005 to 2011, lifting the drums from 45 meters of water without disturbing the waterlogged hull beneath. The column had been bound for the Temple of Apollo at Claros, just 50 kilometers short of delivery.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Kizilburun_shipwreck",
+          "https://nauticalarch.org/projects/kizilburun-column-wreck-excavation/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.22,
+          38.512
+        ]
+      },
+      "properties": {
+        "id": "poi_shipwreck_bou_ferrer",
+        "category": "shipwreck",
+        "name_latin": "Navis Bou Ferrer",
+        "name_english": "Bou Ferrer Wreck",
+        "province": "Hispania Citerior",
+        "modern_location": "Off La Vila Joiosa, Alicante, Spain",
+        "built": 65,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "This 30-meter merchantman sank a kilometer off Villajoyosa on Spain's Costa Blanca in the first century CE, carrying roughly 2,500 amphorae of Baetican garum alongside lead ingots destined for rebuilding Rome after Nero's fire. Divers Jose Bou and Antonio Ferrer found the wreck in 1999 lying 25 meters down, and it remains the largest Roman wreck under excavation anywhere in the Mediterranean. It is also the only ancient shipwreck in Spain open to recreational divers.",
+        "sources": [
+          "https://www.bouferrer.org/en/about",
+          "https://murciatoday.com/the-bou-ferrer-roman-shipwreck-in-villajoyosa_1573642-a.html"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.317,
+          42.315
+        ]
+      },
+      "properties": {
+        "id": "poi_shipwreck_culip_iv",
+        "category": "shipwreck",
+        "name_latin": "Navis Culip IV",
+        "name_english": "Culip IV Wreck",
+        "province": "Hispania Citerior",
+        "modern_location": "Cala Culip, Cap de Creus, Spain",
+        "built": 75,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A Roman trader sank in Cala Culip on Spain's Costa Brava around 75 CE, its hold loaded with fine red-gloss terra sigillata tableware made in southern Gaul. Excavators recovered a remarkable concentration of Drag. 24 cups and bowls, stamped by dozens of named Gaulish potters. The wreck sits among at least six other ancient ships lost in the same small bay near Cap de Creus, a graveyard carved out by the region's fierce Tramontane wind.",
+        "sources": [
+          "https://www.abc.se/~pa/mar/culip4.htm",
+          "https://www.cambridge.org/core/journals/journal-of-roman-archaeology/article/abs/samian-from-the-sea-cala-culip-shipwreck-iv/1495AE21F4FDB1812DF4E1D7277F03F7"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
