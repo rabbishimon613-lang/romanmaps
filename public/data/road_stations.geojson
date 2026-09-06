@@ -17575,6 +17575,268 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.1167,
+          35.4
+        ]
+      },
+      "properties": {
+        "id": "station_theveste",
+        "category": "mansio",
+        "name": "Theveste",
+        "road": "Via Theveste-Lambaesim-Sitifim",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Theveste anchored the western end of a military road climbing through the Aurès Mountains toward Lambaesis and Sitifis. Rome founded the colony around 75 CE at the edge of the range, and the Third Augustan Legion made its camp here for decades before moving on. A triple-bayed arch raised for Caracalla still marks its forum. Its ruins spread across modern Tébessa, Algeria.",
+        "sources": [
+          "Itin. Ant. 34.3 (Iter a Theveste per Lambaesim Sitifim)",
+          "https://en.wikipedia.org/wiki/Theveste"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.360908,
+          35.290424
+        ]
+      },
+      "properties": {
+        "id": "station_vazaivi",
+        "category": "mutatio",
+        "name": "Vazaivi",
+        "road": "Via Theveste-Lambaesim-Sitifim",
+        "distance_from_previous_mp": 22,
+        "identified": true,
+        "notes": "Vazaivi stood 22 Roman miles out of Theveste as the first stop on the road climbing toward Mascula and the Aurès passes. Some manuscripts of the itinerary render its name as Tinfadi, a variant spelling of the same waystation. Its garrison inscription styled it a statio, a small guarded relay rather than a full town. The site is identified with modern Aïn Zoui, Algeria.",
+        "sources": [
+          "Itin. Ant. 34.3",
+          "https://pleiades.stoa.org/places/334660"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.485505,
+          35.37199
+        ]
+      },
+      "properties": {
+        "id": "station_vegesela",
+        "category": "mansio",
+        "name": "Vegesela",
+        "road": "Via Theveste-Lambaesim-Sitifim",
+        "distance_from_previous_mp": 20,
+        "identified": false,
+        "notes": "Vegesela sat 20 Roman miles beyond Vazaivi on the imperial estate lands between Theveste and Mascula, and its bishop later took part in Church councils under the Donatist controversy. Scholars have never settled its exact footprint, weighing three Algerian ruin fields as candidates. The likeliest match, Ksar-El-Kelb, still carries a name meaning fortress of the dog.",
+        "sources": [
+          "Itin. Ant. 34.3",
+          "https://en.wikipedia.org/wiki/Vegesela_in_Numidia"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1333,
+          35.4167
+        ]
+      },
+      "properties": {
+        "id": "station_mascula",
+        "category": "mansio",
+        "name": "Mascula",
+        "road": "Via Theveste-Lambaesim-Sitifim",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Mascula sat 18 Roman miles past Vegesela at 1,200 meters in the Aurès Mountains, one of the coldest garrison posts in Numidia. Trajan raised it as a castrum and stationed a company of Lusitanian auxiliaries there to hold the road between Theveste and Sitifis. Its colonial charter followed within a generation. The modern city of Khenchela, Algeria occupies the site today.",
+        "sources": [
+          "Itin. Ant. 34.3",
+          "https://en.wikipedia.org/wiki/Mascula"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.801,
+          35.4502
+        ]
+      },
+      "properties": {
+        "id": "station_claudi",
+        "category": "praesidium",
+        "name": "Claudi",
+        "road": "Via Theveste-Lambaesim-Sitifim",
+        "distance_from_previous_mp": 22,
+        "identified": false,
+        "notes": "Claudi lay 22 Roman miles east of Mascula, one of a chain of small forts the Antonine Itinerary lists guarding this stretch of the Aurès road. No inscription or ruin has ever been matched to the name, and its position here is interpolated from the surviving mileage between its better-known neighbors. Its Latin name suggests an origin tied to a Julio-Claudian veteran settlement or officer.",
+        "sources": [
+          "Itin. Ant. 34.3"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.468611,
+          35.484167
+        ]
+      },
+      "properties": {
+        "id": "station_thamugadi",
+        "category": "mansio",
+        "name": "Thamugadi",
+        "road": "Via Theveste-Lambaesim-Sitifim",
+        "distance_from_previous_mp": 22,
+        "identified": true,
+        "notes": "Thamugadi rose 22 Roman miles from Claudi at a crossroads where six roads met, founded by Trajan in 100 CE as a colony for discharged soldiers of the Third Augustan Legion. Its grid of streets, forum, theater, and library still stand almost intact beneath the Sahara's edge. The site, now called Timgad, was named a UNESCO World Heritage site in 1982.",
+        "sources": [
+          "Itin. Ant. 34.3",
+          "https://en.wikipedia.org/wiki/Timgad"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.25583,
+          35.48889
+        ]
+      },
+      "properties": {
+        "id": "station_lambaesis",
+        "category": "mansio",
+        "name": "Lambaesis",
+        "road": "Via Theveste-Lambaesim-Sitifim",
+        "distance_from_previous_mp": 14,
+        "identified": true,
+        "notes": "Lambaesis lay 14 Roman miles from Thamugadi at the edge of the Aurès range, already an army post controlling the corridor between the Sahara and the Mediterranean. Within a few years of this map's date Hadrian would make it the permanent camp of the Third Augustan Legion, the only legion garrisoned in Africa. Its parade ground, praetorium, and barracks still stand near the Algerian village of Tazoult.",
+        "sources": [
+          "Itin. Ant. 34.3",
+          "https://en.wikipedia.org/wiki/Lambaesis"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0753,
+          35.7794
+        ]
+      },
+      "properties": {
+        "id": "station_diana_veteranorum",
+        "category": "mansio",
+        "name": "Diana Veteranorum",
+        "road": "Via Theveste-Lambaesim-Sitifim",
+        "distance_from_previous_mp": 33,
+        "identified": true,
+        "notes": "Diana Veteranorum stood 33 Roman miles north of Lambaesis, founded as a colony for discharged soldiers of the Third Augustan Legion under Trajan. Its citizens were enrolled in Trajan's own Papirian voting tribe, a mark of imperial favor. A paved forum, cisterns, and oil presses served the surrounding veteran farmland. The ruins lie at Ain Zana, Algeria, roughly midway between Lambaesis and Cirta.",
+        "sources": [
+          "Itin. Ant. 34.3",
+          "https://en.wikipedia.org/wiki/Diana_Veteranorum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.92,
+          35.8723
+        ]
+      },
+      "properties": {
+        "id": "station_novapetra",
+        "category": "mutatio",
+        "name": "Nova Petra",
+        "road": "Via Theveste-Lambaesim-Sitifim",
+        "distance_from_previous_mp": 14,
+        "identified": false,
+        "notes": "Nova Petra stood 14 Roman miles beyond Diana Veteranorum on the road descending toward Sitifis, and later gave its name to a titular bishopric. Its ruins have been tentatively linked to the site of Encedda in the Algerian highlands, but no excavation has confirmed the match. Its plotted position here is interpolated from the itinerary's surviving mileage.",
+        "sources": [
+          "Itin. Ant. 34.3"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6769,
+          36.0177
+        ]
+      },
+      "properties": {
+        "id": "station_gemellae_numidia",
+        "category": "mansio",
+        "name": "Gemellae",
+        "road": "Via Theveste-Lambaesim-Sitifim",
+        "distance_from_previous_mp": 22,
+        "identified": false,
+        "notes": "This Gemellae stood 22 Roman miles from Nova Petra on the final stretch before Sitifis, a separate waystation from the better-known desert fort of the same name far to the south near Biskra. Church records later counted it as its own bishopric, distinct from Gemellae in the pre-Saharan limes. Its precise ruin field in the Hodna highlands has never been pinned down.",
+        "sources": [
+          "Itin. Ant. 34.3",
+          "https://www.catholic-hierarchy.org/diocese/d2g22.html"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4,
+          36.1833
+        ]
+      },
+      "properties": {
+        "id": "station_sitifis",
+        "category": "mansio",
+        "name": "Sitifis",
+        "road": "Via Theveste-Lambaesim-Sitifim",
+        "distance_from_previous_mp": 25,
+        "identified": true,
+        "notes": "Sitifis stood 25 Roman miles from Gemellae at the western terminus of this road, founded in 97 CE under Nerva as Colonia Nerviana Augusta Martialis Veteranorum Sitifensium for legionary veterans. Its position at a natural crossroads later made it capital of its own province, Mauretania Sitifensis. Mosaics and a Roman cemetery survive beneath the modern city of Sétif, Algeria.",
+        "sources": [
+          "Itin. Ant. 34.3",
+          "https://en.wikipedia.org/wiki/Setifis"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
