@@ -1220,6 +1220,37 @@ to prevent. Building locally to *test* your own work is expected and fine.
 
 ## P2
 
+- [ ] `[08-P2-8]` **`vi-ferrata-caparcotna-dating`** `verify` — Shift 1 of 2026-09-06's four-shift
+      run, researching whether Samosata should get a Legio XVI Flavia Firma fortress record
+      (declined — see below), found a real complication with an *existing* record instead:
+      `poi_fortress_vi_ferrata_caparcotna`'s move to Judaea is conventionally tied to Hadrian's
+      reign (commonly linked to the Bar Kokhba war, 132–135 CE), which would put it 15-18 years
+      past this map's 117 CE snapshot — the same kind of anachronism `[08-P1-6]` baalbek-dating
+      already corrected for the Temple of Bacchus. One line of scholarship instead has VI Ferrata
+      still garrisoning Samosata itself in 117 (after returning there post-Trajan's 114 Armenian
+      campaign), which would mean the existing Caparcotna record is both mis-dated *and* possibly
+      mis-located for this snapshot. Needs a dedicated research pass across both candidate
+      locations and firm dates before touching the existing record — flagging rather than fixing
+      as a side effect, same principle Shift 103 applied to the Samosata question itself.
+- [ ] `[03-P2-9]` **`shipwreck-snapshot-policy`** `fix` — Shift 1 of 2026-09-06's four-shift run
+      researched 18 new candidate shipwrecks for the `shipwreck` POI category (Axis 3i) and found
+      13 of them — real, well-documented, individually named wrecks (Blackfriars Ship 1, the
+      Zwammerdam river barges, the Black Sea MAP wreck, the Asterix wreck, Pudding Pan, County
+      Hall, and 7 more) — are dated 150–390 CE, decades to nearly three centuries past this map's
+      117 CE snapshot. Checked both existing event-like categories exempted from the
+      `extant_117ce` render gate (`battle` and `shipwreck` in `PoiMarkers.tsx`) and found every
+      single one of the 22 existing shipwrecks and every one of the ~40 `battle` records already
+      in `pois.geojson` tops out at 90 CE and exactly 117 CE respectively — neither category has
+      ever carried a post-snapshot date before now. Only the 5 candidates dated ≤117 CE were added
+      this shift (`poi_shipwreck_grado`, `_cala_cicala`, `_kizilburun`, `_bou_ferrer`, `_culip_iv`);
+      the other 13's full researched records (id/coords/date/notes/sources) are preserved in this
+      shift's SHIFT_LOG entry, ready to paste in once this ticket is resolved either way. This
+      needs a deliberate editorial decision, not another shift quietly picking a side: either (a)
+      rule the shipwreck layer strictly snapshot-bound like every other event category and
+      classify those 13 as out of scope for this project entirely, or (b) give it an explicit
+      "archaeological trade evidence, not living-memory" framing distinct from `battle` (e.g. a
+      legend note, or a `beyond_snapshot: true` field the card can render honestly) and unblock
+      adding them and any future finds like them.
 - [x] `[07-P1-3]` **`prices`** `deepen` — Done 2026-08-19 by cloud shift 32. New "What things
       cost" section in `app/CurrencyConverter.tsx`, five well-attested period prices/wages, each
       with a real citation and no Diocletian's-Edict anachronism (that's 301 CE, 184 years past
