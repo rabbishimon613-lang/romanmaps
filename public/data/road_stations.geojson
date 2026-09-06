@@ -18447,6 +18447,87 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.374227,
+          35.711899
+        ]
+      },
+      "properties": {
+        "id": "station_tadutti_numidia",
+        "category": "mansio",
+        "name": "Tadutti",
+        "road": "Lamasba-Zarai-Sitifis Road",
+        "distance_from_previous_mp": 28,
+        "identified": true,
+        "notes": "Tadutti served as the first stop on the Antonine Itinerary's 62-mile run from Thamugadi to Lamasba, sitting 28 miles out on the high plains northwest of Lambaesis. Roman veterans from Legio III Augusta settled here alongside the sister colonies of Diana Veteranorum and Lamasba, turning a road stop into farmland for retired soldiers. Milestones recovered in the district anchored the itinerary's distance figures to the ground. The exact ruin field remains debated, but its position on this military road is not.",
+        "sources": [
+          "Antonine Itinerary (Itin. Ant.) 34-35, Cuntz ed.: Item a Thamugadi Lamasba m.p. LXII: Tadutti m.p. XXVIII, Diana Veteranorum m.p. XVI, Lamasba m.p. XVIII",
+          "https://pleiades.stoa.org/places/334627",
+          "Pierre Salama, Les Voies romaines de l'Afrique du Nord (Algiers, 1951)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.91058,
+          35.6283625
+        ]
+      },
+      "properties": {
+        "id": "station_lamasba_numidia",
+        "category": "mansio",
+        "name": "Lamasba",
+        "road": "Lamasba-Zarai-Sitifis Road",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Lamasba anchored the fertile Bellezma plain 18 miles beyond Diana Veteranorum and doubled as the junction where the Thamugadi road met the route north to Zarai and Sitifis. Farmers here ran one of the most sophisticated irrigation schedules in Roman Africa, recorded on a bronze-inscribed schedule (CIL VIII 18587) that allotted named plot owners specific hours and days of water from a shared channel. The regulation, discovered by E. Masqueray in 1877, still names dozens of individual landholders and their water shares. Veteran settlement swelled the town alongside Diana Veteranorum and Lambiridi on the same high plains. Its ruins survive at Henchir Merouana, under the modern town of Merouana.",
+        "sources": [
+          "Antonine Itinerary (Itin. Ant.) 35, Cuntz ed.: Item a Thamugadi Lamasba m.p. LXII (Lamasba m.p. XVIII from Diana Veteranorum); Item a Lamasba Sitifi m.p. LXII",
+          "CIL VIII 18587 (Lamasba irrigation regulation)",
+          "https://pleiades.stoa.org/places/334569",
+          "https://www.trismegistos.org/place/18439",
+          "B.D. Shaw, 'Water and Society in the Ancient Maghrib: Technology, Property and Development', Antiquites africaines 20 (1984)",
+          "https://www.persee.fr/doc/antaf_0066-4871_1996_num_32_1_1254"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6775,
+          35.8008
+        ]
+      },
+      "properties": {
+        "id": "station_zarai_numidia",
+        "category": "statio",
+        "name": "Zarai",
+        "road": "Lamasba-Zarai-Sitifis Road",
+        "distance_from_previous_mp": 25,
+        "identified": true,
+        "notes": "Zarai stood 25 miles north of Lamasba at the seam between the fertile Tell and the pre-Saharan pastoral zone, making it the natural place to tax goods moving between the two economic worlds. A stone tariff set up in 202 CE and unearthed during mill construction in 1858 lists the actual duties collected here: fixed rates per slave, per amphora of wine, per sheep, mule, and hide passing the customs post. The inscription, now catalogued as CIL VIII 4508, remains one of the fullest surviving customs schedules from the Roman world. The station sat 12 miles short of Perdices on the final leg into Sitifis, and lay near the line of the Fossatum Africae frontier works. Its ruins, known locally as Henchir Zraïa, lie within the modern town of Aïn Oulmene.",
+        "sources": [
+          "CIL VIII 4508 (Tariff of Zarai / Lex portus)",
+          "Antonine Itinerary (Itin. Ant.) 36, Cuntz ed.: Item a Lamasba Sitifi m.p. LXII: Zarai m.p. XXV, Perdicibus m.p. XII, Sitifi m.p. XXV",
+          "https://pleiades.stoa.org/places/21068",
+          "https://www.trismegistos.org/place/20390",
+          "https://www.persee.fr/doc/antaf_0066-4871_2002_num_38_1_1373",
+          "Barrington Atlas of the Greek and Roman World (2000), Map 34, grid D2"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
