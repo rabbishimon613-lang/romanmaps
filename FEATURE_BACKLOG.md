@@ -1745,4 +1745,32 @@ Shifts pick top **unblocked** item, ship it, check it off, then push. Add new it
 - 2026-08-11 — Shift 2: First `pois.geojson` layer — 35 Rome landmarks, wired into Map.tsx with click popups
 - 2026-08-11 — Google-Maps-style search bar chrome (mock only, no search yet)
 - 2026-08-11 — 117 CE epoch pill
+
+## New ideas spotted this shift (2026-09-06, Shift 105 — VI Ferrata/shipwreck-policy board tickets, Numidia/Via Sebaste roads, Danube/Mauretania forts)
+
+- [ ] **`pois.geojson` and `road_stations.geojson` both use 2-space JSON indentation, not
+      1-space.** Nearly committed a whole-file reformat (45,000+ line diff on a two-record change)
+      this shift after misreading a truncated tool preview of the file. Caught it with
+      `git diff --stat` before staging — a two-line intended change should produce a two-line-ish
+      diff; anything in the thousands means the indent (or `ensure_ascii`, per Shift 14's older
+      note on the same failure shape) doesn't match the file's actual on-disk convention. Worth a
+      standing habit line next to that older note: **always `git diff --stat` immediately after
+      any programmatic rewrite of a `.geojson` file, before `git add`.**
+- [ ] **Axis 3's nine sub-categories are now saturated well past `SHIFT_BRIEF.md`'s own named
+      examples**, confirmed by a full category/count audit this shift rather than assumed: 128
+      auxiliary forts, 61 sacred sites (sanctuary/oracle/asklepieion), 156 economic-infrastructure
+      records (quarry/mine/salina/kiln/garum_factory/estate), 92 villas, 95 tomb/necropolis
+      records, all naval bases and all Rhine-limes forts the brief names by name, and the entire
+      pre-Hadrianic-Wall Stanegate fort system in Britain. A shift picking axis 3 should expect to
+      need real research past the brief's own bullet points (deeper gazetteers, milestone corpora,
+      excavation-survey literature) to find genuinely new, non-duplicate material — re-reading the
+      brief's own named list and checking it off will find almost nothing left.
+- [ ] **A researched-but-near-duplicate feature can hide behind a different `id` and category.**
+      This shift's Danube/Mauretania fort batch included a `poi_fort_noviodunum_istrum` record
+      that, on a 3km proximity + name cross-check against every other file, turned out to
+      duplicate the existing `poi_naval_classis_moesica_noviodunum` almost verbatim (same site
+      2.5km away, same Classis Flavia Moesica narrative) — well outside the validator's 150m
+      auto-flagged collision radius, so it would have shipped silently. Worth running a wider
+      (multi-km) proximity + name scan against a research batch before merging, not just relying
+      on `npm run validate`'s tighter collision check.
 - 2026-08-11 — Base map: land/coasts/provinces/rivers/lakes/roads deployed

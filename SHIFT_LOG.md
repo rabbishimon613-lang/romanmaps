@@ -7,6 +7,149 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 105 — 2026-09-06 (this shift's own prompt claimed "Shift 2 of four")
+
+### Boot
+
+Container started detached at `814e24f` (Shift 104's tip) with the same stale-local-`main`
+symptom every recent shift has documented — `git fetch origin main` confirmed `origin/main`
+already matched the detached HEAD, so `git checkout main && git reset --hard origin/main` was a
+safe sync. `npm run validate` clean baseline (0 errors, 7 reviewed warnings) before touching
+anything. Read `SHIFT_BRIEF.md` in full, then `BOARD.md` — found two ready-made, well-scoped
+tickets Shift 104 had opened for itself and left for a follow-up (`[08-P2-8]`
+vi-ferrata-caparcotna-dating, `[03-P2-9]` shipwreck-snapshot-policy), claimed both immediately per
+the board's claim-before-work protocol, pushed the claim commit before starting any research.
+Re-verified Track B independently rather than trusting inheritance: `FEATURE_BACKLOG.md`'s P0-P3
+sections are still 100% checked off, and `BOARD.md`'s remaining `[ ]` tickets are the same large
+multi-pass migrations (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild,
+`[13-P0-2]` image-audit) and human-blocked items 15+ prior shifts have declined to gamble on
+unattended — no Track B picked this shift either, same basis as the last several.
+
+### Board tickets resolved
+
+**`[08-P2-8]` vi-ferrata-caparcotna-dating (commit `e0f5862`).** Dedicated research pass (Kennedy,
+*Legio VI Ferrata: The Annexation and Early Garrison of Arabia*, HSCP 84 (1980); Ritterling's
+"Legio" RE article; the Jezreel Valley Regional Project's excavation reports) found no real 117 CE
+case for the existing `poi_fortress_vi_ferrata_caparcotna` record at all — Ritterling's earliest
+solid epigraphic attestation at Caparcotna is 152 CE, and Kennedy traces the legion Samosata →
+Arabia → Syria Palaestina, reaching Judaea only around or after the Bar Kokhba War (132-136). The
+"117 CE" figure repeated by tertiary sources (Wikipedia, Livius.org, x-legio) traces to a
+19th-century source that elsewhere argues for the later date — a corrupted transmission, not a
+primary-source date. Also confirmed the likely mechanism: the record's "second permanent legion...
+in the aftermath of the Kitos War" framing is `poi_fortress_ii_traiana_fortis_caparcotna`'s own
+narrative (independently checked, correct on its own terms), absorbed into VI Ferrata's record in
+error at some earlier point. Fixed: `extant_117ce` true → false, `built` 117 → 135, notes rewritten
+plainly, sources swapped to the citations that actually settled it. Added
+`poi_fortress_vi_ferrata_samosata` for the legion's actual last-attested Trajanic station on the
+Euphrates (confidence medium — the exact posting during Hadrian's early-117/118 eastern withdrawal
+isn't pinned down precisely) — no image, since the site is now under the Ataturk Dam reservoir and
+no genuine Commons photo of the ancient camp exists to find.
+
+**`[03-P2-9]` shipwreck-snapshot-policy (commit `e0f5862`).** Ruled decision (a): the `shipwreck`
+POI category stays strictly bound to on-or-before 117 CE, same as `battle` — both are exempted from
+`PoiMarkers.tsx`'s `extant_117ce` render gate on the theory that they're historical-memory markers,
+but a memory only exists for something that has already happened by the snapshot instant. Framing
+(b) from the original ticket ("archaeological trade evidence, not living memory") would have made
+shipwreck the only category on the map showing the future rather than the past or present — not a
+distinction worth a schema field against the project's own "one frozen snapshot in time, not a
+timeline" premise. Shift 104's 13 deferred candidates (Blackfriars Ship 1, Zwammerdam, the Black
+Sea MAP wreck, and 10 more, all real but dated 150-390 CE) are **permanently declined**, not
+parked — don't re-propose them without overturning this decision first. Enforced going forward, not
+just written down: `scripts/validate.mjs`'s `checkPoi` now warns if a `battle`/`shipwreck` record's
+`built` year is after 117 (0 fired against the existing 68 records at the time), and
+`PoiMarkers.tsx`'s render-gate comment states the policy explicitly for whoever reads the code next.
+
+### Track A — Axis 2 (road stations) + Axis 3a (military infrastructure)
+
+Checked category/road/province coverage across every `public/data/*.geojson` file before picking
+scope, to avoid re-treading ground 104 prior shifts have already worked: **every axis-3
+sub-category is now saturated well past the brief's own named examples** (auxiliary forts 128,
+sanctuaries+oracles+asklepieia 61, quarries/mines/salinae/kilns/garum factories 156, villas 92,
+tombs+necropoleis 95, all naval bases from the brief's own list already present, all Rhine-limes
+forts named in the brief already present, all Britain forts including the full pre-Hadrianic-Wall
+Stanegate system already present). Confirming this cost real time but avoided duplicating three
+prior shifts' worth of work sight-unseen.
+
+**Numidia road network extension (commit `425cf4f`)** — 20 new stations across two corridors,
+closing the exact gap Shift 104 flagged in its own "what's next": the Cirta-Sitifis-Auzia stretch
+(Mileum and Cuiculi/Djemila filling the Cirta-Sitifis gap on the Antonine Itinerary's own attested
+uniform 25 mp stages — independently re-verified via a live WebSearch quote of the itinerary text,
+not just taken from the research agent's word — plus the Sitifis-Auzia leg via Perdices-Cellas-
+Macri-Zabi-Aras-Tatilti-Auzia, whose 25/18/25/30/18/18/44 mp stage total matches the real
+Sétif-to-Sour El Ghozlane road distance) and a pre-Saharan praesidia chain anchored by two firmly
+Trajanic points (Ad Maiores/Besseriani, built 104-105 CE per CIL VIII 2478-2479, and the
+Lambaesis-El Kantara crossing road from the Peutinger Table). Declined rather than padded in:
+Rapidum (122 CE, Hadrianic), Castellum Dimmidi (Severan), the Tighanimine gorge road (145 CE,
+Antonine), and Zarai (real, well-documented, but on a separate Lamasba-Zarai-Sitifis branch —
+flagged below for a follow-up rather than conflated into this corridor's topology).
+
+**Via Sebaste completion (commit `d518ef0`)** — only 5 stations, deliberately smaller than most
+road-station passes: Neapolis (Kıyakdede, fixed by a surviving Augustan milestone reading a clean
+"XXX"), the disputed-site Parlais (`identified: false` — sources split Barla vs. Uzumlu Monastir),
+Lystra (site confirmed by an 1885 inscription), Iconium (on the eastern Antioch-Lystra branch, not
+yet a colony at 117 CE — noted honestly), and Lyrboton Kome (the excavated village the road crosses
+descending from the Klimax pass toward Perge). Four further candidates (Baris, Tymandus,
+Kormasa/Conana, Milias/Melli) were researched and dropped: the first two sit on a different route
+toward Philomelium entirely, and the routing through the other two is either conflated with Comama
+itself or explicitly called unsettled by the one source that addresses it. A shorter accurate list
+over a padded one, per the brief's own "real data or don't include it" guardrail.
+
+**37 auxiliary forts beyond the brief's own named list (commit `cc21b00`)** — Axis 3a, going past
+saturation on the brief's own examples into the wider corpus: 27 Danube-limes forts spanning Raetia
+through Moesia Inferior (including the full Trajanic Dobrogea chain — Axiopolis, Carsium, Capidava,
+Aegyssus, Barboși — and Oescus's legion-to-colonia transition), plus 10 Mauretania forts (Tingitana
++ Caesariensis), a frontier region with essentially no prior coverage beyond Volubilis's own
+street-level site: the Gharb-plain ring of forts around Volubilis (Thamusida, Aïn Schkour, Sidi
+Said, Sidi Moussa, Tocolosida, Souk El Arbaa) plus four Caesariensis posts on the Severan-era Nova
+Praetentura line, honestly dated `extant_117ce: false` where they postdate Trajan (Ala Miliaria 201
+CE, Numerus Syrorum/Altava Severan). Reviewed all 38 researched features against both the existing
+`pois.geojson` id list and a 3km proximity scan against every other file before merging, and
+**dropped one before committing**: a proposed `poi_fort_noviodunum_istrum` record duplicated the
+existing `poi_naval_classis_moesica_noviodunum` almost verbatim — same site 2.5km away, same
+Classis Flavia Moesica narrative — so the naval-base record stays the only one for that town. The
+several nearby-Volubilis "close" hits the proximity scan also flagged (Sidi Said's fort sits
+1.3-1.9km from Volubilis's own forum/baths/houses) are not duplicates — a satellite garrison fort is
+a genuinely distinct feature from a city's civic buildings, same pattern as Ostia/Portus.
+
+Combined this shift: **road_stations.geojson** 717 → 742 (+25 across two corridors);
+**pois.geojson** 1423 → 1461 (+38: 1 from the VI Ferrata board-ticket fix, 37 from the Danube/
+Mauretania batch). `METRICS.md` refreshed: 0 validator errors, same 7 reviewed warnings (plus the
+new [03-P2-9] policy check, which fired 0 times against the existing data), cross-file collisions
+215 → 216 (one new station sits near an existing fort at the same real place — expected, the
+established Carnuntum/Aquincum pattern `[12-P0-1]` will eventually resolve, not a new bug).
+
+### A process note for future shifts
+
+Both `pois.geojson` and `road_stations.geojson` use 2-space JSON indentation, not 1-space — I
+mis-read a truncated `Read` tool preview earlier this shift and nearly committed a whole-file
+reformat (45,000+ line diff) before catching it with `git diff --stat` and re-doing the edit with
+the correct indent. **Always check `git diff --stat` immediately after any programmatic rewrite of
+a `.geojson` file, before staging** — a two-line intended change should produce a two-line-ish diff;
+anything in the thousands means the indent (or `ensure_ascii`, per Shift 14's older note) doesn't
+match the file's actual on-disk convention, not that the edit script did something clever.
+
+### Next shift should pick up
+
+- **Track A:** Zarai (real, on a separate Lamasba-Zarai-Sitifis branch, flagged above — a clean,
+  well-bounded next road-station pass). Beyond that, this shift's own survey found every axis-3
+  sub-category saturated against the brief's own named lists — the sustainable pattern for
+  continued Track A work is what this shift and Shift 104 both did: research past the brief's own
+  bullet points into the wider real corpus (French's Anatolian milestone catalog, the UNESCO Danube
+  Limes nomination documents, Akerraz's Mauretanian camp surveys, etc.) rather than re-treading the
+  same ~20 named examples per sub-category. Road stations (Axis 2) remain the most reliably
+  inexhaustible category — the empire's real road network had many thousands of named stations
+  across roughly 250 named roads, of which perhaps 50-60 are logged here so far.
+- **Track B:** Still no small unblocked win in `FEATURE_BACKLOG.md`'s P0-P3 (100% checked off,
+  independently re-verified a second time this shift) or `BOARD.md` (same large-migration tickets
+  16+ shifts have now declined). `split-map-tsx` remains the most plausible pick for a shift with
+  more wall-clock budget than one slot.
+- Axis 1 (more cities) stays network-blocked in this sandbox — not re-tested this shift, but no
+  reason to expect it changed; Shift 104 confirmed it directly last shift.
+- Axis 4 (people/events) confirmed saturated by Shift 104 (70 records, past every named figure in
+  the brief) — not re-touched this shift either.
+
+---
+
 ## Shift 104 — 2026-09-06 (this shift's own prompt claimed "Shift 1 of four")
 
 ### Boot
