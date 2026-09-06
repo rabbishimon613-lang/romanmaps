@@ -18528,6 +18528,383 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.25,
+          25.75
+        ]
+      },
+      "properties": {
+        "id": "station_phoinikon",
+        "category": "praesidium",
+        "name": "Phoinikon (Laqeita)",
+        "road": "Koptos-Myos Hormos Road",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "Camel drivers hit this palm grove 24 Roman miles out of Koptos and knew they'd cleared the first, easiest stretch of desert. Phoinikon sat at the fork where the Myos Hormos and Berenice roads split, so every soldier, merchant, and quarry worker heading into the Eastern Desert passed through here first. Its name simply meant 'the palm grove,' a rare patch of green that made it the obvious first watering halt out of the Nile valley. The Antonine Itinerary still lists it under the Latinized spelling Poeniconon in the road's mile-by-mile stage list.",
+        "sources": [
+          "Antonine Itinerary 172,1 (Coptos-Berenice stages)",
+          "Pleiades: Phoinikon, https://pleiades.stoa.org/places/786091",
+          "Trismegistos Geo 5036, Phoinikon (Laqeita)",
+          "H. Cuvigny (ed.), La Route de Myos Hormos, IFAO 48 (2003)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.397573,
+          25.903737
+        ]
+      },
+      "properties": {
+        "id": "station_krokodilo",
+        "category": "praesidium",
+        "name": "Krokodilo (El-Muwayh)",
+        "road": "Koptos-Myos Hormos Road",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "Diggers pulled roughly 800 ostraca out of the rubbish heap here, nearly all of them dated to Trajan's reign and Hadrian's opening years. A garrison of only three to five cavalrymen and eight to ten infantry held the fort, yet their letters still survive complaining about barbaroi raiders harassing the road in exactly this period. Sitting 63 Roman miles east of Koptos on the shorter run to Myos Hormos, Krokodilo relayed water and mail along a route that never had a natural spring for eighty kilometers in either direction. The name means 'crocodile station,' though no crocodile ever lived in this stretch of bone-dry desert.",
+        "sources": [
+          "H. Cuvigny, Ostraca de Krokodilô. O.Krok. 1-151, IFAO 51 (2005)",
+          "BMCR review 2007.01.29, https://bmcr.brynmawr.edu/2007/2007.01.29/",
+          "Trismegistos Geo 3655, Krokodilo (El-Muwayh)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.568897,
+          25.950983
+        ]
+      },
+      "properties": {
+        "id": "station_persou",
+        "category": "praesidium",
+        "name": "Persou",
+        "road": "Koptos-Myos Hormos Road",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Persou grew vegetables, aromatic herbs, and salad greens and shipped them down the line to the hungry garrisons at Krokodilo and Maximianon, a rare farm-to-fort supply chain in the middle of a desert with no rainfall at all. It sat roughly 24 kilometers east of Krokodilo on the road to Myos Hormos, almost exactly halfway between the Nile and the Red Sea coast. Later mining activity badly disturbed the site, and archaeologists still argue over whether the modern locality of Bir Umm Fawakhir preserves the actual Roman praesidium or a later Byzantine gold-mining settlement built over it. Ostraca from the wider Myos Hormos road corpus mention the fort's produce trade directly.",
+        "sources": [
+          "Trismegistos Geo 2837, Persou (Bir Umm Fawakhir)",
+          "H. Cuvigny (ed.), La Route de Myos Hormos, IFAO 48 (2003)",
+          "ISAC/University of Chicago, Bir Umm Fawakhir Project, https://isac.uchicago.edu/research/projects/bir-umm-fawakhir-project"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.79387415,
+          25.98068485
+        ]
+      },
+      "properties": {
+        "id": "station_maximianon",
+        "category": "praesidium",
+        "name": "Maximianon (El-Zarqa)",
+        "road": "Koptos-Myos Hormos Road",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Vespasian's prefect Iulius Ursus ordered this fort dug and walled in 76/77 CE as part of a single, dated building campaign that fortified the whole road to the Red Sea in one go. Excavation seasons in 1994 and 1995 uncovered its ostraca archive alongside Krokodilo's, and the letters found there still complain about raiding bands of barbaroi active under Trajan and into Hadrian's reign. The name honored Maximianus, likely the officer who oversaw its construction rather than a later co-emperor. Its position west of Bir Sayyala kept it as a live link on the Myos Hormos road for well over a century.",
+        "sources": [
+          "J.-P. Brun, 'Le praesidium romain de Maximianon (Al-Zarqa), fouilles 1994-1995,' Topoi 6/2 (1996)",
+          "Trismegistos Geo 3149, Maximianon (El-Zarqa)",
+          "H. Cuvigny (ed.), La Route de Myos Hormos, IFAO 48 (2003)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.2421,
+          26.1567
+        ]
+      },
+      "properties": {
+        "id": "station_myos_hormos",
+        "category": "praesidium",
+        "name": "Myos Hormos (Quseir al-Qadim)",
+        "road": "Koptos-Myos Hormos Road",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "This Red Sea harbor closed the 180-kilometer desert crossing from Koptos and put ships bound for Arabia and India within reach of the Nile in a single week's caravan ride. University of Chicago teams dug here through 1982 and a Southampton expedition returned in 1999-2003, only then confirming that this site, not a spot further south, was the real Myos Hormos of the ancient sources. The Nicanor archive of transport receipts, written on ostraca at this end of the road, tracks a single family's forwarding business moving goods between here and Koptos across three generations. Its Greek name meant 'mussel harbor,' a plain fisherman's name for what became Rome's gateway to the spice trade.",
+        "sources": [
+          "D. Peacock & L. Blue (eds.), Myos Hormos-Quseir al-Qadim: Survey and Excavations 1999-2003",
+          "D. Whitcomb, 'Quseir al-Qadim and the Location of Myos Hormos,' Topoi 6/2 (1996)",
+          "Pleiades/Trismegistos Geo 3156, Myos Hormos (Quseir el-Qadim)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.39444,
+          25.75444
+        ]
+      },
+      "properties": {
+        "id": "station_didymoi",
+        "category": "praesidium",
+        "name": "Didymoi (Khashm al-Minayh)",
+        "road": "Koptos-Berenice Road",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "A dated Latin inscription records that this fort's well was rebuilt in Trajan's nineteenth regnal year, 115/116 CE, barely a year and a half before his death, making Didymoi one of the very last building projects of his reign anywhere in the empire. The garrison itself went back further, founded in 76/77 CE under Vespasian by the prefect Lucius Iulius Ursus as part of the same road-wide building drive that raised Compasi and Maximianon. Excavators recovered ostraca describing a fort holding a few dozen cavalry and infantry who policed traffic on the Berenice road. The name Didymoi, 'the twins,' likely referred to a pair of nearby hills or wells that gave the station its landmark.",
+        "sources": [
+          "Wikipedia: Didymoi, https://en.wikipedia.org/wiki/Didymoi",
+          "B. Redon & H. Cuvigny, Didymoi: une garnison romaine dans le désert oriental d'Egypte II, IFAO 67 (2011)",
+          "BMCR review 2012.11.29, https://bmcr.brynmawr.edu/2012/2012.11.29/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.623553,
+          25.6058972
+        ]
+      },
+      "properties": {
+        "id": "station_aphrodito",
+        "category": "praesidium",
+        "name": "Aphrodites (Bir Menih)",
+        "road": "Koptos-Berenice Road",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "This praesidium sat in the Wadi Menih el-Heir 20 Roman miles past Didymoi, guarding one of the few defensible passes on the long haul to Berenice. Its full ancient name, 'Aphrodites of the desert,' distinguished it from the many Nile-valley towns sharing the goddess's name, and Cuvigny's survey work catalogued its remains alongside the rest of the Berenice-road chain. Soldiers stationed this deep into the Eastern Desert relied entirely on the fort's cistern, since no natural water source existed for tens of kilometers around. The Antonine Itinerary records it as Afroditum, sandwiched between Didyme and Compasi in the road's official stage list.",
+        "sources": [
+          "Trismegistos Geo 235, Aphrodites",
+          "H. Cuvigny, Le désert oriental d'Egypte durant la periode greco-romaine, Collège de France (2018), pp.105-173",
+          "Antonine Itinerary 172,1-172,5"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.837067,
+          25.328374
+        ]
+      },
+      "properties": {
+        "id": "station_compasi",
+        "category": "praesidium",
+        "name": "Compasi (Daghbag)",
+        "road": "Koptos-Berenice Road",
+        "distance_from_previous_mp": 22,
+        "identified": true,
+        "notes": "A dedicatory inscription found on site fixes the fort's founding to 76/77 CE, naming the hydreuma, the praesidium, and the lacus, or reservoir, as one dated building package. The fortlet measured a compact 24 by roughly 35 meters and mounted two semicircular towers flanking its single north-facing gate, a defensive layout repeated up and down the Berenice road. Twenty-two Roman miles separated it from Aphrodites, keeping soldiers within a hard day's march of the next water point. Its Greek name, Kompasi, survived into Latin almost unchanged as Compasi in the Antonine Itinerary's stage list.",
+        "sources": [
+          "Trismegistos Geo 5306, Kompasi (Daghbag)",
+          "M. Reddé, 'Fortins routiers du désert oriental d'Egypte,' UNA Editions, https://una-editions.fr/7-fortins-routiers-du-desert-oriental-degypte/",
+          "Antonine Itinerary 172,3"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.056443,
+          25.151713
+        ]
+      },
+      "properties": {
+        "id": "station_dios",
+        "category": "praesidium",
+        "name": "Dios / Iovis (Abu Qurayya)",
+        "road": "Koptos-Berenice Road",
+        "distance_from_previous_mp": 23,
+        "identified": true,
+        "notes": "Excavators uncovered a shrine at this fort in 2007 covered in graffiti and oracle questions, giving a rare direct window into what off-duty soldiers actually prayed for on this stretch of desert. The site carried two names in antiquity, Greek Dios and Latin Iovis, both simply meaning 'of Jupiter,' and modern scholarship treats them as the same station rather than two forts. It stood fifth in line on the Koptos-Berenice road, 23 Roman miles past Compasi, at a point where the route began climbing into rougher terrain. Its name honored the sky-god whose favor a desert garrison, far from any spring, had every reason to court.",
+        "sources": [
+          "J.-P. Brun & T. Faucher, 'The shrine in the praesidium of Dios: graffiti and oracles in context,' https://www.researchgate.net/publication/290956081",
+          "Trismegistos Geo 4078, Dios (Abu Qurayyah)",
+          "Antonine Itinerary 172,4"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.250121,
+          24.866976
+        ]
+      },
+      "properties": {
+        "id": "station_xeron_pelagos",
+        "category": "praesidium",
+        "name": "Xeron Pelagos / Aristonis (Feisaleya)",
+        "road": "Koptos-Berenice Road",
+        "distance_from_previous_mp": 25,
+        "identified": true,
+        "notes": "January 2012 excavations turned up a remarkably well-preserved aedes, a small shrine, inside this 45-by-34-meter fort, tucked into a single north gate flanked by semicircular towers. Its pottery shows the garrison arrived no earlier than the very end of the first century CE, meaning the fort was still fresh construction when Trajan came to the throne in 98. Ancient sources knew the spot under two different names, Greek Xeron Pelagos ('dry sea,' for the flat plain around it) and a Latin form behind the Antonine Itinerary's corrupted 'Aristonis.' Sitting 25 Roman miles past Dios, it held the mid-point of the long grind toward Berenice.",
+        "sources": [
+          "M. Reddé, 'L'aedes du praesidium de Xéron pelagos (Égypte),' https://una-editions.fr/10-aedes-du-praesidium-de-xeron-pelagos/",
+          "HAL-SHS halshs-01410124, L'aedes du praesidium de Xèron Pelagos",
+          "Trismegistos Geo 8665, Xeron Pelagos (Feisaleya)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7481,
+          24.4983
+        ]
+      },
+      "properties": {
+        "id": "station_apollonos_hydreuma",
+        "category": "praesidium",
+        "name": "Apollonos Hydreuma",
+        "road": "Koptos-Berenice Road",
+        "distance_from_previous_mp": 48,
+        "identified": true,
+        "notes": "An inscription found at this watering station records that the prefect of the Berenice desert, Marcus Trebonius Valens, personally ordered the praesidium here enlarged and strengthened, direct proof that Rome kept actively upgrading these desert forts rather than letting them decay. The station carried the sun-god's name because its well, like Apollo's oracles, was reputed never to run dry even in the worst of the summer heat. It lay 48 Roman miles past Xeron Pelagos on the standard reckoning, a stretch that swallowed up the intervening station of Phalakron on the way. Caravans treated it as the last reliable water stop before the final push to the coast.",
+        "sources": [
+          "Wikipedia: Apollonos Hydreium, https://en.wikipedia.org/wiki/Apollonos_Hydreium",
+          "Antonine Itinerary 172,7-172,8",
+          "Trismegistos GeoRef 232907"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.054235,
+          24.373556
+        ]
+      },
+      "properties": {
+        "id": "station_kabalsi",
+        "category": "praesidium",
+        "name": "Kabalsi (Abu Ghusun)",
+        "road": "Koptos-Berenice Road",
+        "distance_from_previous_mp": 27,
+        "identified": true,
+        "notes": "Kabalsi held the second-to-last relay before Berenice, set 27 Roman miles past Apollonos Hydreuma and another 27 short of Kainon Hydreuma further on. Its modern name, Abu Ghusun, still marks the same stretch of coastal hill country in Egypt's Red Sea Governorate today. The Antonine Itinerary preserves it as Cabalsi in a run of stage-by-stage distances that together total 258 Roman miles from Koptos to the harbor. Little of its garrison correspondence has surfaced compared to Didymoi or Krokodilo, leaving its daily routine far less documented than its better-excavated neighbors.",
+        "sources": [
+          "Antonine Itinerary 172,8-172,9",
+          "Trismegistos Geo 4690, Kabalsi (Abu Ghusun)",
+          "Pleiades: Cabalsi, https://pleiades.stoa.org/places/786003"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2347791,
+          24.1842341
+        ]
+      },
+      "properties": {
+        "id": "station_kainon_hydreuma",
+        "category": "praesidium",
+        "name": "Kainon Hydreuma (Wadi Khashir)",
+        "road": "Koptos-Berenice Road",
+        "distance_from_previous_mp": 27,
+        "identified": true,
+        "notes": "The name simply meant 'new well' in Greek, distinguishing this station from the older Vetus Hydreuma a short march further down the road toward Berenice. Rome clearly rated the site highly: surveyors found the main fort enlarged over time and counted four smaller forts clustered around it in the immediate vicinity, an unusual concentration of defensive building for one stretch of desert. It sat 27 Roman miles past Kabalsi according to the Antonine Itinerary's stage count, with only the final short hops to Vetus Hydreuma and Berenice left to go. Pliny the Elder's Natural History independently confirms the station under its Latin name, Novum Hydreuma.",
+        "sources": [
+          "Pliny the Elder, Natural History 6.102-103",
+          "Antonine Itinerary 172,9-172,10",
+          "Pleiades: Novum Hydreuma, https://pleiades.stoa.org/places/786076",
+          "S. Sidebotham et al., 'Some Ptolemaic and Roman Sites in the Central Eastern Desert,' JARCE 58 (2022)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.289192,
+          24.05276
+        ]
+      },
+      "properties": {
+        "id": "station_vetus_hydreuma",
+        "category": "praesidium",
+        "name": "Vetus Hydreuma (Wadi Abu Greiya)",
+        "road": "Koptos-Berenice Road",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Pliny the Elder placed this 'Old Hydreuma, also called Troglodyticum,' just seven Roman miles beyond the New Hydreuma on the final approach to Berenice, and archaeologists still call it by that same Latin name today. Survey teams found it wasn't a single isolated fort but the anchor of a cluster of five forts of different sizes packed into the Wadi Abu Greiya, showing how much manpower Rome concentrated on this last, driest leg of the journey. Its older name, kept even after the newer well was dug nearby, hints that this watering point had already served Ptolemaic caravans before Rome ever fortified it. From here, soldiers and merchants alike could smell the sea on the final stretch to the harbor.",
+        "sources": [
+          "Pliny the Elder, Natural History 6.102-103",
+          "Pleiades: Vetus Hydreuma, https://pleiades.stoa.org/places/786142",
+          "Trismegistos GeoRef 232907, hydreuma vetus Troglodyticum"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4737,
+          23.9103
+        ]
+      },
+      "properties": {
+        "id": "station_berenice",
+        "category": "praesidium",
+        "name": "Berenice Troglodytica (Baranis)",
+        "road": "Koptos-Berenice Road",
+        "distance_from_previous_mp": 11,
+        "identified": true,
+        "notes": "Ptolemy II founded this Red Sea port in the third century BCE and named it for his mother, and by the Roman period it anchored a 380-kilometer desert supply line stretching all the way back to Koptos on the Nile. University of Delaware and Polish teams under Steven Sidebotham have excavated here since 1994, pulling out everything from Indian pepper and sapphires to a much-discussed pet cemetery of buried cats and dogs. The full run from Koptos totaled 258 Roman miles by the Antonine Itinerary's count, a week or more of desert travel each way for every trader chasing the India trade. Berenice's harbor made it the single busiest gateway for eastern luxury goods entering the Roman Empire under Trajan.",
+        "sources": [
+          "Wikipedia: Berenice Troglodytica, https://en.wikipedia.org/wiki/Berenice_Troglodytica",
+          "S. Sidebotham & I. Zych, Berenike 2008-2009: Report on the Excavations at Berenike",
+          "Antonine Itinerary 172,10"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
