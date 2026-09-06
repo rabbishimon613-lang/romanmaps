@@ -46210,6 +46210,41 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.2172,
+          37.0792
+        ]
+      },
+      "properties": {
+        "id": "poi_kitos_war_mesopotamia_nisibis",
+        "category": "battle",
+        "name_latin": "Rebellio Mesopotamiae",
+        "name_english": "Mesopotamian Revolt of the Kitos War",
+        "province": "Mesopotamia",
+        "modern_location": "Nusaybin, Turkey",
+        "built": 116,
+        "destroyed": 116,
+        "extant_117ce": false,
+        "notes": "Nisibis, Edessa, and Seleucia rose against Rome's newly declared province of Mesopotamia in 116, the fourth front of the empire-wide Kitos War alongside Cyrenaica, Egypt, and Cyprus. Trajan's Moorish cavalry general Lusius Quietus stormed Nisibis, then took Edessa street by street and burned it after fierce resistance. Quietus's brutal success here won him the governorship of Judaea, where he crushed that province's own revolt the following year.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Lusius_Quietus",
+          "https://en.wikipedia.org/wiki/Kitos_War"
+        ],
+        "ancient_sources": [
+          {
+            "author": "Cassius Dio",
+            "work": "Roman History",
+            "ref": "68.30",
+            "note": "Describes the Mesopotamian cities' revolt and Lusius Quietus's recapture and sack of Nisibis and Edessa."
+          }
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
