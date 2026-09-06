@@ -45041,6 +45041,118 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.22972,
+          30.00611
+        ]
+      },
+      "properties": {
+        "id": "poi_canal_amnis_traianus",
+        "category": "canal",
+        "name_latin": "Amnis Traianus",
+        "name_english": "Trajan's Canal (Canal of the Pharaohs, restored)",
+        "province": "Aegyptus",
+        "modern_location": "Old Cairo (Coptic Cairo), Egypt",
+        "built": 112,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Trajan reopened the old Nile-to-Red-Sea waterway first cut under the Pharaohs and renamed it after himself. Engineers moved its Nile mouth south to a new stone-lined intake at Babylon fortress, walls six meters thick and forty meters apart, whose footings still sit under Cairo's Coptic churches. The channel ran through the Wadi Tumilat to the Red Sea port of Clysma, sparing Arabian and Indian cargo the long overland haul to Alexandria. Barges were already working the restored route by the time Trajan died in 117 CE.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Canal_of_the_Pharaohs",
+          "https://en.wikipedia.org/wiki/Clysma",
+          "https://en.wikipedia.org/wiki/Babylon_Fortress"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.355,
+          52.07
+        ]
+      },
+      "properties": {
+        "id": "poi_canal_fossa_corbulonis",
+        "category": "canal",
+        "name_latin": "Fossa Corbulonis",
+        "name_english": "Corbulo's Canal",
+        "province": "Germania Inferior",
+        "modern_location": "Voorburg, Netherlands",
+        "built": 47,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The general Corbulo put his idle legions to work in 47 CE cutting a 23-mile channel between the Rhine and the Meuse, sparing troop convoys the storms of the open North Sea. Tacitus recorded it three meters deep and wide enough for two ships abreast, dug as much for discipline as for transport. Forum Hadriani, the Cananefates' Roman town at modern Voorburg, grew up along its banks with its own inland harbor and timber quays. Hadrian had the channel repaired on his visit in 121 CE, proof it still carried traffic decades after Corbulo dug it.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Fossa_Corbulonis",
+          "https://www.livius.org/articles/place/fossa-corbulonis/",
+          "https://en.wikipedia.org/wiki/Forum_Hadriani"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9486,
+          43.4403
+        ]
+      },
+      "properties": {
+        "id": "poi_canal_fossa_mariana",
+        "category": "canal",
+        "name_latin": "Fossa Mariana",
+        "name_english": "Marius's Canal",
+        "province": "Gallia Narbonensis",
+        "modern_location": "Fos-sur-Mer, France",
+        "built": -102,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Marius set his legions digging this channel over the winter of 103-102 BCE, routing shipping around the silt-choked mouths of the Rhone. The finished cut ran about 16 Roman miles from the river to the Gulf of Fos, giving grain and wine fleets a dependable path to the sea. Massilia later received the canal as a gift and taxed its traffic for two centuries of steady revenue. Strabo, Pliny, and Plutarch all mention the waterway, and archaeologists have traced its silted course beneath the modern port of Fos-sur-Mer.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Fossa_Mariana",
+          "https://www.ancientportsantiques.com/a-few-ports/marius-canal-fossae-marianae/",
+          "https://fr.wikipedia.org/wiki/Fosses_mariennes"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2113,
+          44.4068
+        ]
+      },
+      "properties": {
+        "id": "poi_canal_fossa_augusta",
+        "category": "canal",
+        "name_latin": "Fossa Augusta",
+        "name_english": "Augustus's Canal, Ravenna",
+        "province": "Italia",
+        "modern_location": "Ravenna, Italy",
+        "built": -20,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Augustus ordered this four-mile channel cut in the 20s BCE to link Ravenna to a new naval harbor down the coast at Classe, home port of his Adriatic fleet. The canal fed a Po tributary's fresh water down to the shore, and shipyards eventually lined some 22 kilometers of its banks. The classis Ravennas it served held up to 250 warships and 10,000 marines. Centuries of silting have since pushed the ancient coastline nine kilometers inland, but in 117 CE the Fossa Augusta still ran open water straight from Ravenna to the sea.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Classe,_ancient_port_of_Ravenna",
+          "https://en.wikipedia.org/wiki/Classis_Ravennas",
+          "https://www.romanports.org/en/the-ports/110-ravenna-civitas-classis-italy.html"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
