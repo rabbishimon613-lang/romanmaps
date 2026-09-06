@@ -7,6 +7,183 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 104 — 2026-09-06 (this shift's own prompt claimed "Shift 1 of four")
+
+### Boot
+
+Container started with local `main` detached at `cb1904b` (Shift 103's tip) while a stale local
+tracking ref showed `main` behind at `7f3478b` — the same recurring symptom every recent shift
+has documented (`git fetch origin main` confirmed `origin/main` was already at the detached HEAD's
+commit, so `git checkout main && git reset --hard origin/main` was a safe sync, no unpushed work
+lost). `npm run validate` clean baseline (0 errors, the same 7 reviewed warnings) before touching
+anything. Re-tested the network picture directly rather than trusting inheritance: `curl` to
+`overpass-api.de`, `en.wikipedia.org`, `pleiades.stoa.org` all still `connect_rejected` via the
+agent-proxy — Axis 1 (cities via Overpass) stays off the table, same as every shift back through
+the high 80s. `WebSearch` (both directly and via the `Agent` tool) remains the only viable research
+path.
+
+Read `BOARD.md` in full: still zero unclaimed tickets outside the same multi-pass migrations
+(`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[13-P0-2]`
+image-audit), human-blocked items, and large refactors 15+ prior shifts have declined to gamble on
+unattended. `FEATURE_BACKLOG.md`'s P0-P3 sections are still 100% checked off — independently
+re-verified, not inherited. No Track B picked this shift either, on the same basis.
+
+### Track A — six parallel research passes across Axes 2, 3a, 3f/6a, 3i
+
+Ran research through both direct `WebSearch` calls and six background `Agent`-tool WebSearch
+research passes, each briefed with the exact target-file schema, Google-Business voice rules, the
+banned-phrase list, and an exported list of every existing id in the target file to collision-check
+against. All merging, id-collision checks, validation, building, and committing was done directly
+against the working tree — agents only wrote JSON + notes to the scratchpad, never touched
+`/home/user/romanmaps`.
+
+**1. Sopianae's two missing roads** (commit `58ddf9b`) — Shift 103 flagged that Sopianae (on the
+already-mapped Sirmium-Savaria Road) had two more Antonine-Itinerary roads never built: Sopianae→
+Aquincum and Sopianae→Brigetio. 8 new stations: Pons Sociorum, Valle Cariniana, Gorsium, Iasulones
+on the Aquincum road; Iovia, Fortiana, Herculia, Floriana on the Brigetio road. Gorsium and Herculia
+turned out to be the *same* excavated town (Tác) attested under two different names on the two
+itineraries — kept as two distinct records (each name is separately sourced) but offset Herculia's
+marker ~1.1km from Gorsium's, since MapLibre's `icon-allow-overlap:false` collision detection would
+otherwise have silently dropped one of two pixel-identical symbol markers from ever rendering.
+Confidence is honest about the gaps: `identified: false` for Iasulones (distance-interpolated, no
+excavated find); Fortiana has three rival candidate towns in the literature.
+
+**2. Inland Numidia — Theveste-Lambaesis-Sitifis road** (commits `8b10ade`, `a69f2b3`) — the other
+flagged gap (Shift 102: "an inland Numidia/Mauretania road network beyond the existing Via a
+Carthagine Cirtam"). Mapped Itin. Ant. 34.3, 212 mp across 10 legs: Theveste → Vazaivi → Vegesela
+→ Mascula → Claudi → Thamugadi (Timgad, already one of the 40 street-level sites) → Lambaesis →
+Diana Veteranorum → Nova Petra → Gemellae (Numidia — confirmed via its own titular-bishopric record
+as a *distinct* place from the well-known desert fort of the same name near Biskra, not a
+duplicate) → Sitifis. 11 stations, cumulative mileage matches the itinerary's own 212 mp total.
+**Found and fixed a real pre-existing contradiction while researching this**: `pois.geojson`'s
+`poi_fortress_iii_augusta_lambaesis` claimed "by 117 CE it is at Lambaesis" while the separate
+`poi_theveste_legionary_fortress` record said "In August 117 CE the legion still called Theveste
+home; only under Hadrian did it march west to a new fortress at Lambaesis" — both `extant_117ce:
+true`, describing Legio III Augusta's one headquarters in two different cities on the same date. A
+fresh WebSearch settled it: Trajan pushed a forward camp onto the Lambaesis plateau around 100 CE,
+but the legion's own headquarters didn't formally transfer until Hadrian's reign (sources split
+115-129 CE for the full transfer). Rewrote the Lambaesis record's notes only — `built`/`destroyed`/
+`extant_117ce` didn't need to change, just the prose overclaiming Lambaesis was already the seat.
+
+**3. Legio VII Gemina at León** (commit `a1c3e9e`) — a side effect of researching a fourth item
+(Samosata, next). Found the project's 28 `poi_fortress_*` records undercount Rome's 30 standing
+legions in 117 CE (Trajan's own total after raising II Traiana Fortis and XXX Ulpia Victrix in
+105), not from any real historiographical dispute but from two simple missing fortresses. Added
+the first: Legio VII Gemina, permanently at León (Hispania Tarraconensis) since 74 CE with no
+Samosata-style timing complication — confirmed via Morillo's JRA article and UCM archaeological
+publications. The legion's camp name "Legio" is literally where "León" comes from.
+
+**4. Samosata declined** (documented in `BOARD.md`, no data change) — researched whether Legio XVI
+Flavia Firma's Samosata fortress should become the 29th record. Declined: every source (Wikipedia,
+Livius.org, x-legio, Military History Fandom) dates the move to Hadrian's reign, after 11 August
+117 — the legion was still at Satala or in the field on the Parthian campaign at the snapshot
+instant. A real complication surfaced along the way and was **not** fixed here, flagged instead as
+`[08-P2-8]` in `BOARD.md`: `poi_fortress_vi_ferrata_caparcotna`'s move to Judaea is conventionally
+tied to Hadrian's reign too (often linked to the Bar Kokhba war, 132-135), and one line of
+scholarship has VI Ferrata still garrisoning Samosata itself in 117 instead — meaning the existing
+Caparcotna record may be both mis-dated *and* mis-located for this snapshot. Needs its own dedicated
+research pass across both candidate sites, not a side-effect fix.
+
+**5. 5 new shipwrecks, 13 more deferred on a policy question** (commit `96ee6db`) — researched 18
+candidates beyond the existing 22 (all Western Mediterranean), reaching new geography: Adriatic,
+Aegean, Levant, North Africa, Iberia, Britain/Thames, the Rhine, the Black Sea. Checked both event
+categories `PoiMarkers.tsx` exempts from the `extant_117ce` render gate (`battle` and `shipwreck`)
+and found every existing record in both — 22 shipwrecks, ~40 battles — already tops out at 90 CE
+and exactly 117 CE respectively; neither has ever carried a post-snapshot date. Only added the 5
+that sank on or before 117 CE: Grado (110, Trajanic, the brief's own named target), Cala Cicala
+(100), Kizilburun (-70), Bou Ferrer (65), Culip IV (75). Flagged the other 13 — real, well-sourced,
+individually named wrecks dated 150-390 CE — as `[03-P2-9]` `shipwreck-snapshot-policy` in
+`BOARD.md` rather than deciding solo whether this layer should stay strictly snapshot-bound or get
+an explicit "archaeological evidence, not living memory" framing. Full records preserved below so
+a future shift can paste them in directly once that's settled either way.
+
+**6. 4 new canals** (commit `17f24aa`) — `pois.geojson`'s `canal` category had only 3 records.
+Headline addition: `poi_canal_amnis_traianus`, Trajan's own reopening of the Nile-to-Red-Sea
+waterway (the Ptolemaic/Persian "Canal of the Pharaohs"), completed c. 112 CE — genuinely fresh and
+on-theme for the emperor whose death defines this map's date. Also added Fossa Corbulonis
+(Rhine-Meuse, 47 CE), Fossa Mariana (Rhône mouth, 102 BCE), Fossa Augusta (Ravenna-Classe naval
+canal, 20s BCE). Checked the existing 3 first — `poi_fossa_traiana` (a different Trajanic canal, at
+Portus), `poi_nero_canal_baiae` (already covers Fossa Neronis correctly), `poi_canal_project_
+nicomedia`. Car Dyke (Britain) was investigated and deliberately excluded: mainstream dating puts
+its construction under Hadrian, c. 125 CE, after this map's snapshot.
+
+Combined this shift: **road_stations.geojson** 698 → 717 (+19 across two corridors); **pois.geojson**
+1405 → 1423 (+18: 1 fortress, 5 shipwrecks, 4 canals, plus the pre-existing 8 auxiliary
+forts/fort from Shift 103 already counted — see METRICS.md for the exact day-over-day number).
+One real pre-existing data contradiction found and fixed (Lambaesis/Theveste). Two new BOARD.md
+tickets opened for questions this shift declined to settle unilaterally. `METRICS.md` refreshed:
+0 validator errors, same 7 reviewed warnings, cross-file collisions 213→215 (expected — new road
+stations sit near existing city/fort POIs at the same real places, the established
+Carnuntum/Aquincum pattern, not a new bug; `[12-P0-1]` merge-themes is still the ticket that
+resolves this backlog properly).
+
+Axis 4 (living empire — people/events) was spot-checked before committing to Axis 2/3 work this
+shift: `people_117.geojson` already has 70 records, well past the 20/shift minimum and covering
+every named figure in the brief's own list (including both of Pliny the Younger's villas as
+separate, intentional records — not a duplicate). Confirmed saturated, skipped rather than
+padded.
+
+### The 13 deferred post-117 shipwrecks (for whoever resolves `[03-P2-9]`)
+
+Full records, ready to paste into `pois.geojson`'s features array once the snapshot-policy
+question is settled in favor of adding them:
+
+```json
+[
+  {"type":"Feature","geometry":{"type":"Point","coordinates":[15.30,37.02]},
+   "properties":{"id":"poi_shipwreck_plemmirio_b","category":"shipwreck","name_latin":"Navis Plemmirii","name_english":"Plemmirio B Wreck","province":"Sicilia","modern_location":"Off Plemmirio, Siracusa, Sicily, Italy","built":200,"destroyed":null,"extant_117ce":false,"notes":"This merchant ship sank around 200 CE off the Plemmirio headland south of Syracuse, hauling nearly 200 North African amphorae of olive oil and fish sauce alongside almost a ton of iron bars. Teams from Bristol and Cambridge excavated the site through the 1980s, tracing the cargo's clay back to kilns near Sullecthum on the Tunisian coast. The wreck became the reference site for a wave of Severan-era amphora exports out of Africa Proconsularis, one of twenty known wrecks of its type.","sources":["https://www.tandfonline.com/doi/abs/10.1080/00438240120048653","https://www.tandfonline.com/doi/abs/10.1111/j.1095-9270.1986.tb01154.x"],"confidence":"high"}},
+  {"type":"Feature","geometry":{"type":"Point","coordinates":[16.928,40.516]},
+   "properties":{"id":"poi_shipwreck_torre_sgarrata","category":"shipwreck","name_latin":"Navis Sgarratae","name_english":"Torre Sgarrata Wreck","province":"Italia (Regio II Apulia et Calabria)","modern_location":"Off Torre Sgarrata, near Taranto, Italy","built":190,"destroyed":null,"extant_117ce":false,"notes":"This stone-carrier sank off Taranto's Ionian coast around 190 CE, its hold stacked with 18 marble sarcophagi and 17 marble blocks quarried on the island of Thasos. Salvage diver Peter Throckmorton recovered the cargo between 1965 and 1967, raising pieces cut from both the Phanari and Vathy quarries. A coin bearing Emperor Commodus's portrait helped fix the sinking to the twilight of the Antonine dynasty. Fifteen of the sarcophagi still sit in a Taranto warehouse today.","sources":["https://www.researchgate.net/publication/311273465_The_Torre_Sgarrata_wreck_characterization_and_provenance_of_white_marbles_artefacts_in_the_cargo","https://www.academia.edu/10866988/The_Torre_Sgarrata_wreck_South_Italy_Marble_artefacts_in_the_cargo"],"confidence":"high"}},
+  {"type":"Feature","geometry":{"type":"Point","coordinates":[27.351,37.014]},
+   "properties":{"id":"poi_shipwreck_yassiada_late_roman","category":"shipwreck","name_latin":"Navis Iasiadensis","name_english":"Yassiada Late Roman Wreck","province":"Asia","modern_location":"Off Yassiada, near Bodrum, Turkey","built":390,"destroyed":null,"extant_117ce":false,"notes":"This 19-meter trader went down near the island of Yassiada off Bodrum in the late fourth century, its cypress hull built keel-first in a style bridging ancient and medieval shipbuilding. George Bass and a University Museum team excavated the site in 1967 and 1969, recovering galley wares and rigging fittings from 36 to 42 meters down. Its widely spaced mortise-and-tenon joints show Roman shipwrights already loosening their grip on the old shell-first method.","sources":["https://nauticalarch.org/projects/yassiada-roman-shipwreck-excavation/","https://www.academia.edu/24489879/The_4th_century_wreck_at_Yassi_Ada_An_interim_report_on_the_hull"],"confidence":"high"}},
+  {"type":"Feature","geometry":{"type":"Point","coordinates":[34.842,32.400]},
+   "properties":{"id":"poi_shipwreck_beit_yanai","category":"shipwreck","name_latin":"Navis Marmorea Iudaeae","name_english":"Beit Yanai Marble Wreck","province":"Judaea","modern_location":"Off Beit Yanai, Israel","built":200,"destroyed":null,"extant_117ce":false,"notes":"A swimmer spotted this wreck's cargo 200 meters off Beit Yanai beach in central Israel in 2016, after winter storms stripped away the sand covering 44 tons of unfinished marble architecture. Corinthian capitals, column drums, and a six-meter architrave lay scattered across the seabed, quarried in the Aegean or on the Sea of Marmara. The stone was headed for a port at Ashkelon, Gaza, or Alexandria when the ship went down, the oldest cargo of its kind found in the eastern Mediterranean.","sources":["https://www.timesofisrael.com/swimmer-discovers-precious-marble-cargo-from-1800-year-old-mediterranean-shipwreck/","https://www.heritagedaily.com/2023/05/roman-shipwreck-carrying-architectural-marble-found-off-israeli-coast/147298"],"confidence":"medium"}},
+  {"type":"Feature","geometry":{"type":"Point","coordinates":[21.02,32.70]},
+   "properties":{"id":"poi_shipwreck_ptolemais_libya","category":"shipwreck","name_latin":"Naufragia Ptolemaidis","name_english":"Ptolemais Wreck Field","province":"Creta et Cyrenaica","modern_location":"Off Tolmeita (ancient Ptolemais), Libya","built":150,"destroyed":null,"extant_117ce":false,"notes":"Polish archaeologists returned to the waters east of ancient Ptolemais in 2026 and mapped a scatter of wreckage spread across more than 100 meters of seabed: amphorae, anchors, and ship timbers from repeated wrecks on this hazardous stretch of Cyrenaican coast. One amphora still held wine, crystallized after roughly two thousand years underwater. Among the finds was a bronze balance-weight cast as a woman's head, used by merchants trading through the harbor below.","sources":["https://www.jpost.com/archaeology/article-889977","https://www.heritagedaily.com/2026/03/ancient-shipwrecks-discovered-near-libyan-port-city-of-ptolemais/157365"],"confidence":"low"}},
+  {"type":"Feature","geometry":{"type":"Point","coordinates":[2.93,39.14]},
+   "properties":{"id":"poi_shipwreck_cabrera_xiv","category":"shipwreck","name_latin":"Navis Cabrerae XIV","name_english":"Cabrera XIV Wreck","province":"Hispania Citerior","modern_location":"Off Cabrera island, Balearic Islands, Spain","built":350,"destroyed":null,"extant_117ce":false,"notes":"Fishermen tipped off archaeologists to this wreck near the island of Cabrera, south of Mallorca, after amphora fragments turned up in their nets in 2016. The 20-meter ship, undisturbed at 70 meters since the 3rd or 4th century, carried between 1,000 and 2,000 amphorae of garum made in North Africa and southern Spain. Divers photographed the site in October 2016, the first close look at a wreck that had sat untouched on the seabed for some 1,700 years.","sources":["https://www.thehistoryblog.com/archives/45819","https://www.romanports.org/en/news/152-roman-wreck-cabrera.html"],"confidence":"medium"}},
+  {"type":"Feature","geometry":{"type":"Point","coordinates":[2.75,39.52]},
+   "properties":{"id":"poi_shipwreck_ses_fontanelles","category":"shipwreck","name_latin":"Navis Ses Fontanelles","name_english":"Ses Fontanelles Wreck","province":"Hispania Citerior","modern_location":"Off Playa de Palma, Mallorca, Spain","built":340,"destroyed":null,"extant_117ce":false,"notes":"A storm exposed this ship's timbers in the shallows off Palma de Mallorca in 2019, resting just two meters down and 65 meters from the beach. Its hold still held some 320 amphorae of garum and olive oil, stacked two layers deep and dated to the mid-4th century. Eighty-four of the jars carry painted inscriptions naming their contents, weight, and merchant — the largest such collection found in Spain and one of the richest in the Roman world outside Rome's Monte Testaccio.","sources":["https://memoir.icrea.cat/2022/scientific-highlights/the-exceptional-late-roman-shipwreck-of-ses-fontanelles-mallorca-spain/","https://link.springer.com/article/10.1007/s12520-024-01952-3"],"confidence":"high"}},
+  {"type":"Feature","geometry":{"type":"Point","coordinates":[-0.103,51.511]},
+   "properties":{"id":"poi_shipwreck_blackfriars_1","category":"shipwreck","name_latin":"Navis Blackfriars I","name_english":"Blackfriars Ship 1","province":"Britannia","modern_location":"River Thames off Blackfriars, London, England","built":150,"destroyed":null,"extant_117ce":false,"notes":"This flat-bottomed trader wrecked in the Thames off Blackfriars around 150 CE while hauling 26 tons of Kentish ragstone upriver toward London. Archaeologist Peter Marsden excavated the hull in 1962, uncovering the earliest known seagoing sailing ship built in northern Europe. The stone had traveled down the Medway from quarries near Maidstone, part of a supply chain that eventually shipped enough ragstone to raise London's third-century city wall.","sources":["https://en.wikipedia.org/wiki/Blackfriars_shipwrecks","https://mass.cultureelerfgoed.nl/blackfriars-ship-1"],"confidence":"high","image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/Blackfriars_I_ship_model.jpg?width=800","image_credit":"Museum of London ship model, via Wikimedia Commons"}},
+  {"type":"Feature","geometry":{"type":"Point","coordinates":[-0.1197,51.501]},
+   "properties":{"id":"poi_shipwreck_county_hall","category":"shipwreck","name_latin":"Navis Aulae Comitatus","name_english":"County Hall Ship","province":"Britannia","modern_location":"River Thames off Westminster, London, England","built":300,"destroyed":null,"extant_117ce":false,"notes":"Workers digging the foundations for London's County Hall in 1910 struck the buried hull of a Roman trading vessel on the Thames foreshore near Westminster Bridge. The ship, about 20 meters long and decked, was built of English oak around 300 CE and had sunk on the marshy foreshore, its cargo lost to time and to the excavation's haste. Workers hauled the surviving 12-meter section onto a horse-drawn carriage in 1911 and carted it off to the London Museum.","sources":["https://www.researchgate.net/publication/230215982_The_County_Hall_ship_London","https://en.wikipedia.org/wiki/Blackfriars_shipwrecks"],"confidence":"medium"}},
+  {"type":"Feature","geometry":{"type":"Point","coordinates":[1.13,51.42]},
+   "properties":{"id":"poi_shipwreck_pudding_pan","category":"shipwreck","name_latin":"Navis Puddingpanae","name_english":"Pudding Pan Wreck","province":"Britannia","modern_location":"Thames Estuary off Herne Bay, Kent, England","built":180,"destroyed":null,"extant_117ce":false,"notes":"A Roman ship carrying tableware from the potteries of Lezoux in central Gaul wrecked in the Thames Estuary off Herne Bay around 180 CE, its cargo settling near a sandbank still called Pudding Pan. Oyster dredgers have hauled up samian ware from the site for more than 300 years; over 285 vessels are now catalogued, bearing the stamps of 37 different potters. The wreck itself has never been found — only its scattered cargo, undamaged after two millennia in the mud.","sources":["https://britisharchaeology.ashmus.ox.ac.uk/highlights/pudding-pan.html","https://www.sal.org.uk/museum-collection/unlocking-our-collections/pudding-pan-samian-ware"],"confidence":"high"}},
+  {"type":"Feature","geometry":{"type":"Point","coordinates":[-2.535,49.455]},
+   "properties":{"id":"poi_shipwreck_asterix","category":"shipwreck","name_latin":"Navis Asterix","name_english":"Asterix Wreck","province":"Gallia Lugdunensis","modern_location":"St Peter Port harbour, Guernsey, Channel Islands","built":280,"destroyed":null,"extant_117ce":false,"notes":"This Gallo-Roman trader caught fire and sank in St Peter Port harbour, Guernsey, around 280 CE, coming to rest between the harbour's two piers. Diver Richard Keen found it on Christmas Day 1982, and excavation between 1984 and 1987 recovered coins, cordage, storage barrels, and a bronze bilge pump. Conservators at England's Mary Rose Trust spent over a decade treating the oak timbers before their return to Guernsey in 2015 — the most complete Roman seagoing hull found outside the Mediterranean.","sources":["https://en.wikipedia.org/wiki/Asterix_(shipwreck)","https://museums.gov.gg/romanship"],"confidence":"high"}},
+  {"type":"Feature","geometry":{"type":"Point","coordinates":[4.712,52.128]},
+   "properties":{"id":"poi_shipwreck_zwammerdam","category":"shipwreck","name_latin":"Naves Zwammerdamenses","name_english":"Zwammerdam Boats","province":"Germania Inferior","modern_location":"Zwammerdam, Netherlands","built":195,"destroyed":null,"extant_117ce":false,"notes":"Roman river barges and dugout canoes turned up during building work at Zwammerdam, Netherlands, in the early 1970s, buried in timber shoring beside the Rhine fort of Nigrum Pullum. The largest barges ran 20 to 34 meters long, flat-bottomed and keel-less, built to haul bulk cargo through shallow water while poled or towed by animals along the bank. One barge, felled around 195 CE, shows the Roman military supply network on the Rhine frontier still moving heavy freight generations after Trajan.","sources":["https://www.universiteitleiden.nl/en/news/2016/11/boats-from-zwammerdam-harbour-wealth-of-knowledge","https://www.livius.org/articles/place/nigrum-pullum-zwammerdam/"],"confidence":"high","image_url":"https://commons.wikimedia.org/wiki/Special:FilePath/Platbodem_Zwammerdam_2_presentatie_restauratiewerf_Archeon_20170518_fotoCThunnissen.jpg?width=800","image_credit":"Restored Zwammerdam barge at Archeon, via Wikimedia Commons"}},
+  {"type":"Feature","geometry":{"type":"Point","coordinates":[28.7,42.9]},
+   "properties":{"id":"poi_shipwreck_black_sea_map_roman","category":"shipwreck","name_latin":"Navis Ponti Euxini","name_english":"Black Sea MAP Roman Wreck","province":"N/A (open sea)","modern_location":"Black Sea, off Bulgaria's continental shelf","built":320,"destroyed":null,"extant_117ce":false,"notes":"Survey teams using deep-sea robots found this Late Roman trader lying over 2,000 meters down on Bulgaria's Black Sea shelf in 2017, its mast still standing and both steering oars still lashed in place. The anoxic depths preserved amphorae in the bow, cooking pots from the galley, and a wooden capstan previously known only from ancient illustrations. Researchers dated the wreck to the early 4th century, the most complete Late Roman trading vessel found anywhere outside the Mediterranean.","sources":["https://archaeologyinbulgaria.com/2017/10/15/archaeologists-discover-perfectly-preserved-2000-year-old-roman-ship-20-shipwrecks-black-sea-off-bulgarias-coast/","https://oceannews.com/news/subsea-and-survey/unique-antique-shipwrecks-detected-in-the-black-sea/"],"confidence":"low"}}
+]
+```
+
+### What's next
+
+- **`[08-P2-8]` vi-ferrata-caparcotna-dating** — needs a dedicated research pass on whether
+  `poi_fortress_vi_ferrata_caparcotna` is dated/located correctly for 117 CE, same class of issue
+  as the Lambaesis fix this shift made. Don't fold it into an unrelated task.
+- **`[03-P2-9]` shipwreck-snapshot-policy** — the 13 records above are ready to go the moment this
+  is resolved either way (strictly snapshot-bound, or an explicit beyond-snapshot framing).
+- **12 of Shift 103's Danube-corridor stations and all 8 of its eastern-frontier forts still lack
+  an image** (carried forward, not re-attempted this shift — see Shift 103's own log for the
+  per-site rejection reasons).
+- **Sopianae's road network is now fully mapped** (all three attested corridors); the Numidia/
+  Mauretania network still has headroom beyond this shift's Theveste-Lambaesis-Sitifis road — the
+  Cirta-Sitifis-Auzia stretch and the pre-Saharan praesidia chain were noted but not researched.
+- Track B: still no small unblocked win found in `FEATURE_BACKLOG.md`'s P0-P3 (100% checked off,
+  independently re-verified) or `BOARD.md` (same large-migration tickets 15+ shifts have declined).
+  `split-map-tsx` remains the most plausible pick for a shift with more wall-clock budget than one
+  slot, or a shift willing to gamble on `[12-P0-1]` merge-themes despite its size.
+- Axis 1 (more cities) stays network-blocked in this sandbox — re-tested this shift, not just
+  inherited.
+- Axis 4 (people/events) confirmed saturated (70 records, past every named figure in the brief) —
+  don't re-research it without a genuinely new angle (a named figure the brief doesn't list, not
+  more of the same roster).
+
+---
+
 ## Shift 103 — 2026-09-05 (this shift's own prompt claimed "Shift 4 of four")
 
 ### Boot
