@@ -17548,7 +17548,9 @@
           "https://en.wikipedia.org/wiki/Tác",
           "https://hu.wikipedia.org/wiki/Gorsium_Herculia"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/T%C3%A1c,_Gorsium,_Decumanus_Maximus,_f%C5%91utca.JPG?width=800",
+        "image_credit": "Decumanus Maximus, Gorsium/Herculia archaeological park, Tác · Wikimedia Commons"
       }
     },
     {
@@ -17597,7 +17599,9 @@
           "Itin. Ant. 34.3 (Iter a Theveste per Lambaesim Sitifim)",
           "https://en.wikipedia.org/wiki/Theveste"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porte_Caracalla_et_enceinte_Byzantine_2,_Tebessa.jpg?width=800",
+        "image_credit": "Arch of Caracalla and Byzantine wall, Tébessa (ancient Theveste) · Wikimedia Commons"
       }
     },
     {
@@ -17716,7 +17720,9 @@
           "Itin. Ant. 34.3",
           "https://en.wikipedia.org/wiki/Timgad"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Arch_of_Trajan_at_Thamugadi_(Timgad),_Algeria_04966r.jpg?width=800",
+        "image_credit": "Arch of Trajan, Timgad (ancient Thamugadi) · Wikimedia Commons"
       }
     },
     {
@@ -17740,7 +17746,9 @@
           "Itin. Ant. 34.3",
           "https://en.wikipedia.org/wiki/Lambaesis"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Praetorium_of_Lambaesis_%E2%80%93_Headquarters_of_the_Legio_III_Augusta_in_Roman_Numidia_1.jpg?width=800",
+        "image_credit": "Praetorium of Lambaesis, headquarters of Legio III Augusta · Wikimedia Commons (reused from poi_fortress_iii_augusta_lambaesis, same site)"
       }
     },
     {
@@ -17764,7 +17772,9 @@
           "Itin. Ant. 34.3",
           "https://en.wikipedia.org/wiki/Diana_Veteranorum"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Diana_Veteranorum_Zana_34.JPG?width=800",
+        "image_credit": "Ruins of Diana Veteranorum, Aïn Zana, Algeria · Wikimedia Commons"
       }
     },
     {
@@ -17835,7 +17845,9 @@
           "Itin. Ant. 34.3",
           "https://en.wikipedia.org/wiki/Setifis"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/TriomphedeDionysosSetifis.jpg?width=800",
+        "image_credit": "Triumph of Dionysos mosaic from Sitifis, Sétif Archaeological Museum · Wikimedia Commons"
       }
     }
   ]

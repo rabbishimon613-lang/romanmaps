@@ -45067,7 +45067,9 @@
           "https://en.wikipedia.org/wiki/Clysma",
           "https://en.wikipedia.org/wiki/Babylon_Fortress"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Babylon_Fortress_(Roman_Tower),_Old_Cairo,_Egypt1.jpg?width=800",
+        "image_credit": "Roman tower of the Babylon Fortress, Old Cairo (canal's Nile intake) · Wikimedia Commons"
       }
     },
     {
@@ -45095,7 +45097,9 @@
           "https://www.livius.org/articles/place/fossa-corbulonis/",
           "https://en.wikipedia.org/wiki/Forum_Hadriani"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Forum_Hadriani_gedenkpaal.JPG?width=800",
+        "image_credit": "Commemorative marker for Forum Hadriani, Arentsburgh park, Voorburg (town on the canal) · Wikimedia Commons"
       }
     },
     {
