@@ -17849,6 +17849,477 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/TriomphedeDionysosSetifis.jpg?width=800",
         "image_credit": "Triumph of Dionysos mosaic from Sitifis, Sétif Archaeological Museum · Wikimedia Commons"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2647,
+          36.45
+        ]
+      },
+      "properties": {
+        "id": "station_mileum_numidia",
+        "category": "mansio",
+        "name": "Mileum",
+        "road": "Cirta-Sitifis-Auzia Road",
+        "distance_from_previous_mp": 25,
+        "identified": true,
+        "notes": "Legionaries and merchants left Cirta and covered a flat 25-mile stretch along the Wadi Rhumel to reach Mileum, the first stop on the road toward Sitifis. Byzantine builders later stripped the Roman town for stone, and columns from its forum still hold up Mila's Great Mosque today. The Antonine Itinerary logged the stage plainly, listing only its name and its distance from Cirta. Grain from the surrounding valley kept traffic on this road moving year-round.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Carthage-Caesarea route: Cirta-Mileum XXV",
+          "https://en.wikipedia.org/wiki/Mila_(city)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.999,
+          36.3834
+        ]
+      },
+      "properties": {
+        "id": "station_idicra_numidia",
+        "category": "mansio",
+        "name": "Idicra",
+        "road": "Cirta-Sitifis-Auzia Road",
+        "distance_from_previous_mp": 25,
+        "identified": false,
+        "notes": "Idicra sat exactly 25 miles past Mileum and another 25 short of Cuiculi, filling the middle slot of the Cirta-Sitifis run in the Antonine Itinerary's list. No standing ruin carries its name today, and it drops out of every later Roman record after this single entry. Its dot on this map splits the distance evenly between its two better-known neighbors along the old road bed between Mila and Djemila. Whatever building stood at the stage served travelers on one of the busier legs of the Numidian road network.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Carthage-Caesarea route: Mileum-Idicra XXV, Idicra-Cuiculi XXV"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7333,
+          36.3167
+        ]
+      },
+      "properties": {
+        "id": "station_cuiculi_djemila",
+        "category": "mansio",
+        "name": "Cuiculi",
+        "road": "Cirta-Sitifis-Auzia Road",
+        "distance_from_previous_mp": 25,
+        "identified": true,
+        "notes": "Veteran soldiers built Cuiculi on a narrow triangular plateau wedged between two ravines, a site so tight that its later forum had to spill onto a separate terrace downhill. The Antonine Itinerary placed the town 25 miles from Idicra on the road running toward Sitifis. Its street grid, market, theater, and triumphal arch still stand above the modern village of Djemila, among the best-preserved Roman remains anywhere in North Africa. UNESCO added the whole hillside to its World Heritage list in 1982.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Carthage-Caesarea route: Idicra-Cuiculi XXV",
+          "https://en.wikipedia.org/wiki/Dj%C3%A9mila"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1674,
+          36.1834
+        ]
+      },
+      "properties": {
+        "id": "station_perdices_numidia",
+        "category": "mansio",
+        "name": "Perdices",
+        "road": "Cirta-Sitifis-Auzia Road",
+        "distance_from_previous_mp": 25,
+        "identified": false,
+        "notes": "Perdices marked the first stage out of Sitifis on the long haul toward Auzia, a 25-mile leg recorded plainly in the Antonine Itinerary. A station of the same name has been tied to ruins near Zarai on a neighboring road, but this westbound stage's own footprint has never been pinned to the ground. Its spot on this map comes from splitting the itinerary's mileage along the modern road corridor running from Sétif into the Hodna basin. Imperial estates covered much of the farmland along this stretch of road.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Sitifi-Auzia route: Sitifi-Perdices XXV"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9936,
+          36.1788
+        ]
+      },
+      "properties": {
+        "id": "station_cellas_numidia",
+        "category": "mansio",
+        "name": "Cellas",
+        "road": "Cirta-Sitifis-Auzia Road",
+        "distance_from_previous_mp": 18,
+        "identified": false,
+        "notes": "Cellas came next on the Sitifis-Auzia road, 18 miles past Perdices, one of the shorter stages on the whole route. Its name points to storerooms or granary cells, fitting for a waystation moving grain south into the Hodna basin. No ruin in the region carries a matching name today, so its dot sits at the mileage-interpolated point along the old route rather than at an excavated find. Travelers on this leg crossed some of the flattest, most exposed ground on the entire road to Auzia.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Sitifi-Auzia route: Perdices-Cellas XVIII"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7526,
+          36.1725
+        ]
+      },
+      "properties": {
+        "id": "station_macri_numidia",
+        "category": "mansio",
+        "name": "Macri",
+        "road": "Cirta-Sitifis-Auzia Road",
+        "distance_from_previous_mp": 25,
+        "identified": false,
+        "notes": "Macri sat 25 miles past Cellas on the road toward Auzia, a stage recorded only by name and distance in the Antonine Itinerary. This stretch runs through the western edge of the Hodna, a wide basin ringed by salt flats that slowed travel even on a paved road. No survey has matched the name to a specific ruin field, so its position here is stretched proportionally along the itinerary's own mileage count. Whoever staffed this stage watered horses on some of the driest ground on the whole Numidian road network.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Sitifi-Auzia route: Cellas-Macri XXV"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4631,
+          36.1648
+        ]
+      },
+      "properties": {
+        "id": "station_zabi_numidia",
+        "category": "mansio",
+        "name": "Zabi",
+        "road": "Cirta-Sitifis-Auzia Road",
+        "distance_from_previous_mp": 30,
+        "identified": false,
+        "notes": "Zabi held the middle of the Sitifis-Auzia road with a 30-mile run from Macri, the longest single stage on the whole stretch. Its name survives as the root of Zab, the very word still used for the oasis belt south of the Aures today. The station sat in the western Hodna region, on a road corridor later folded into the wider limes system that expanded on this Trajanic network. No excavation has confirmed its exact footprint, so its dot here is interpolated from the itinerary's own numbers.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Sitifi-Auzia route: Macri-Zabi XXX"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2892,
+          36.1602
+        ]
+      },
+      "properties": {
+        "id": "station_aras_numidia",
+        "category": "mansio",
+        "name": "Aras",
+        "road": "Cirta-Sitifis-Auzia Road",
+        "distance_from_previous_mp": 18,
+        "identified": false,
+        "notes": "Aras followed Zabi after an 18-mile ride, one of the shorter legs on the long haul from Sitifis to Auzia. The Antonine Itinerary gives nothing beyond its name and its neighboring stages, leaving the site itself unlocated on modern maps. Its position here splits the difference along the mileage chain rather than marking a dig or a standing wall. Travelers on this leg were already more than a hundred Roman miles out from Sitifis.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Sitifi-Auzia route: Zabi-Aras XVIII"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.1156,
+          36.1556
+        ]
+      },
+      "properties": {
+        "id": "station_tatilti_numidia",
+        "category": "mansio",
+        "name": "Tatilti",
+        "road": "Cirta-Sitifis-Auzia Road",
+        "distance_from_previous_mp": 18,
+        "identified": false,
+        "notes": "Tatilti sat 18 miles past Aras and one stage short of Auzia, closing out the run of minor stops on this road. The name has drawn attempts to tie it to villages in the same corner of the Hodna, but nothing has been confirmed on the ground. Its spot on this map is stretched along the itinerary's mileage total rather than fixed to a known ruin. From here the final push to Auzia covered a full 44 miles, the single longest stage anywhere on the route.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Sitifi-Auzia route: Aras-Tatilti XVIII"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.6913,
+          36.1444
+        ]
+      },
+      "properties": {
+        "id": "station_auzia_numidia",
+        "category": "mansio",
+        "name": "Auzia",
+        "road": "Cirta-Sitifis-Auzia Road",
+        "distance_from_previous_mp": 44,
+        "identified": true,
+        "notes": "Auzia anchored the western end of this road, 44 miles past Tatilti and roughly 150 Roman miles from Sitifis by the itinerary's count. Veterans of Legio III Augusta settled here as a colony, and the town later held off a long siege in 372 during the revolt of Firmus. Modern Sour El-Ghozlane sits directly over the ancient site, and inscriptions naming local magistrates and soldiers keep turning up in its streets and gardens. The road pressed on from here toward Rapidum and Caesarea, though that leg only took shape after Hadrian came to power.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Sitifi-Auzia route: Tatilti-Auzia XLIV",
+          "https://pleiades.stoa.org/places/295221",
+          "https://en.wikipedia.org/wiki/Auzia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1167,
+          35.4167
+        ]
+      },
+      "properties": {
+        "id": "station_basilicam_diadumene",
+        "category": "mansio",
+        "name": "Ad Basilicam Diadumene",
+        "road": "Numidian Pre-Saharan Praesidia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Ad Basilicam Diadumene marked the first stage south out of Lambaesis on the road Trajan's soldiers cut toward the Sahara through the Aures. Its name, tied to a basilica and to a man called Diadumenus, hints at a building the garrison itself put up rather than a native town. The Peutinger Table lists it as the anchor point for the two stages that follow, each measured out in exact Roman miles. Legio III Augusta needed this road finished before 117 to keep watch on the desert edge below the fortress at Lambaesis.",
+        "sources": [
+          "Tabula Peutingeriana, Segmentum II",
+          "https://pleiades.stoa.org/places/334472"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9122,
+          35.3193
+        ]
+      },
+      "properties": {
+        "id": "station_symmachi_numidia",
+        "category": "mansio",
+        "name": "Symmachi",
+        "road": "Numidian Pre-Saharan Praesidia",
+        "distance_from_previous_mp": 15,
+        "identified": false,
+        "notes": "Symmachi came 15 miles south of Ad Basilicam Diadumene on the road descending toward the Sahara, a distance the Peutinger Table records without any elaboration. The name likely preserves a local family or estate owner rather than a military term, suggesting a small settlement grew up around the waystation. No excavation has tied the name to a specific ruin field in the Aures foothills. Its position here is stretched along the road's course between its two better-fixed neighbors.",
+        "sources": [
+          "Tabula Peutingeriana, Segmentum II: Ad Basilicam Diadumene-Symmachi XV"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7894,
+          35.2609
+        ]
+      },
+      "properties": {
+        "id": "station_ad_duo_flumina",
+        "category": "mansio",
+        "name": "Ad Duo Flumina",
+        "road": "Numidian Pre-Saharan Praesidia",
+        "distance_from_previous_mp": 9,
+        "identified": false,
+        "notes": "Ad Duo Flumina, at the two rivers, sat 9 miles past Symmachi where the road crossed a pair of Aures streams before dropping into the gorge country toward El Kantara. The name tells the whole story on its own: no temple, no fort, just a river crossing worth marking on a road map. The Peutinger Table lists it as the last stage before the road entered the Calceus Herculis defile. Its exact spot has never been pinned to a specific streambed, so it sits here interpolated along the route.",
+        "sources": [
+          "Tabula Peutingeriana, Segmentum II: Symmachi-Ad duo flumina VIIII"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.707622,
+          35.221955
+        ]
+      },
+      "properties": {
+        "id": "station_calceum_herculis",
+        "category": "mansio",
+        "name": "Ad Calceum Herculis",
+        "road": "Numidian Pre-Saharan Praesidia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Soldiers of Legio III Augusta nicknamed this gorge Calceus Herculis, Hercules' Boot, and threw an arched bridge across the river at its narrowest point so army convoys could pass without breaking stride. The crossing carried the only practical route from Lambaesis down to Vescera and the pre-Saharan forts beyond, and Trajan's engineers finished the fortress at Lambaesis around 115-117 partly to guard it. French engineers rebuilt the bridge in 1862 on the same Roman footings, so the crossing point hasn't shifted in two thousand years. The gorge still splits the Tell from the Sahara today exactly as it did for Roman traffic.",
+        "sources": [
+          "Tabula Peutingeriana, Segmentum II",
+          "https://pleiades.stoa.org/places/334473",
+          "https://en.wikipedia.org/wiki/El_Kantara"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7281,
+          34.8481
+        ]
+      },
+      "properties": {
+        "id": "station_vescera_numidia",
+        "category": "mansio",
+        "name": "Vescera",
+        "road": "Numidian Pre-Saharan Praesidia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Trajan's army planted a garrison at Vescera to anchor the western end of the fort line running toward Ad Maiores, sealing the gap where raiders could otherwise slip around the end of the Aures. The post sat right at the desert edge on the Wadi Biskra, and its later name, Ad Piscinam, points to a bathing pool built around a local sulfur spring. Modern Biskra grew directly on top of the site, so almost nothing of the Roman garrison survives above ground. Full colony status came only decades later under Septimius Severus, but the military post was already doing its job by Trajan's last years.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Vescera_(Ad_Piscinam)",
+          "Countrystudies.us / Library of Congress country study, Algeria: The Roman Era (Trajan's Vescera-Ad Maiores fort line)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3667,
+          34.7333
+        ]
+      },
+      "properties": {
+        "id": "station_mesarfelta_numidia",
+        "category": "mansio",
+        "name": "Mesarfelta",
+        "road": "Numidian Pre-Saharan Praesidia",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "Mesarfelta went up as a fortified post with an attached vicus in the second half of the first century, decades before Trajan pushed the frontier further south, making it one of the oldest army-linked settlements anywhere on this pre-Saharan line. Its ruins have never been pinned down for certain, with candidates scattered across El-Outaïa, Tolga, and other oasis towns in the Ziban. The town later carried a bishop and an amphitheater by Hadrian's reign, proof it kept growing long after its founding. This map places it near Tolga, in the heart of the oasis belt the post likely watched over.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Mesarfelta"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9086,
+          34.7333
+        ]
+      },
+      "properties": {
+        "id": "station_thabudeos_numidia",
+        "category": "mansio",
+        "name": "Thabudeos",
+        "road": "Numidian Pre-Saharan Praesidia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Thabudeos held the road running south from Vescera into the pre-Saharan chain, part of the fort line Legio III Augusta strung out to close the desert approaches below the Aures. The Roman-Berber settlement grew into a proper colonia in later centuries, but its military role on this stretch reached back to the frontier push under Trajan. Its ruins sit at the oasis by modern Sidi Okba, a town still built around date palms and irrigation channels descended from the Roman-era system. The road here ran on to Ad Maiores further southeast.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tabuda",
+          "Roman Presence in Southern Numidia (pre-Saharan limes fort chain, Vescera-Thabudeos-Ad Maiores)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9648,
+          34.5411
+        ]
+      },
+      "properties": {
+        "id": "station_ad_medias_numidia",
+        "category": "mansio",
+        "name": "Ad Medias",
+        "road": "Numidian Pre-Saharan Praesidia",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "Ad Medias held the middle spot on the pre-Saharan fort line raised south of the Aures, sitting between Thabudeos and Badias. The Latin name means simply at the middle stations, about as plain a label as a Roman surveyor ever gave a post. Nothing has been excavated at the presumed site near modern Tadart, so its dot here sits interpolated between its two better-fixed neighbors on the fort chain. Small garrisons like this one gave the legion eyes on the whole stretch of desert edge below the mountains.",
+        "sources": [
+          "Roman Presence in Southern Numidia (Trajan/Hadrian-era pre-Saharan limes chain: Ad Maiores-Ad Medias-Badias-Thabudeos)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4365,
+          34.6372
+        ]
+      },
+      "properties": {
+        "id": "station_badias_numidia",
+        "category": "mansio",
+        "name": "Badias",
+        "road": "Numidian Pre-Saharan Praesidia",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "Badias sat on the same fort chain as Ad Medias and Thabudeos, watching the desert edge south of the Aures alongside its neighboring posts. The name survives almost unchanged in the modern village of Bades in the same corner of Biskra province. No dig has confirmed a Roman-era wall or garrison building on the ground, so the site's precise footprint remains unmarked. The chain gave Legio III Augusta a continuous line of watch-posts between Ad Maiores and the Hodna basin, in place well before Hadrian's later wall-and-ditch project tied the frontier together.",
+        "sources": [
+          "Roman Presence in Southern Numidia (Trajan/Hadrian-era pre-Saharan limes chain)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.4926,
+          34.4452
+        ]
+      },
+      "properties": {
+        "id": "station_ad_maiores_numidia",
+        "category": "mansio",
+        "name": "Ad Maiores",
+        "road": "Numidian Pre-Saharan Praesidia",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Minicius Natalis, legate of Legio III Augusta, built the camp at Ad Maiores in 104 or 105, anchoring the eastern end of Trajan's pre-Saharan fort line five kilometers south of the Negrine oasis. A detachment of the Second Cohort of Spaniards later reinforced the garrison, and stamped bricks from that unit still turn up among the ruins at Henchir Besseriani. The fort sat right where the Nemencha massif drops into the Sahara, guarding the road running west through Ad Medias and Badias toward Thabudeos and Vescera. Two inscriptions recovered from the site record the building date down to the year.",
+        "sources": [
+          "CIL VIII 2478-2479 = 17969-17971",
+          "https://pleiades.stoa.org/places/334599",
+          "https://journals.openedition.org/encyclopedieberbere/1701"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
