@@ -7,6 +7,134 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 106 — 2026-09-06 (this shift's own prompt claimed "Shift 3 of four")
+
+### Boot
+
+Container started detached at `f4a30ec` (Shift 105's tip), same recurring symptom every recent
+shift has documented — `git fetch origin main` confirmed `origin/main` already matched the
+detached HEAD, so `git checkout -B main origin/main` was a safe sync, no unpushed work lost.
+`npm run validate` clean baseline (0 errors, 7 reviewed warnings) before touching anything.
+Re-tested the network picture directly rather than trusting inheritance: `curl` to
+`overpass-api.de`, `en.wikipedia.org`, `commons.wikimedia.org` all still `connect_rejected` via
+the agent-proxy, and `WebFetch` on a live Wikipedia URL confirmed `EGRESS_BLOCKED` too — Axis 1
+(cities via Overpass) stays off the table. `WebSearch` (direct and via background `Agent` calls)
+remains the only working research channel, same as every recent shift.
+
+Read `BOARD.md` in full: zero unclaimed tickets outside the same large migrations
+(`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]` card-rebuild, `[13-P0-2]`
+image-audit) and human/network-blocked items (`[02-P0-4]` glyph self-hosting needs a font-PBF
+generator not installable here, `[14-P0-1]` blocked on Pedro, `[15-P0-1]` needs a working
+unattended screenshot gate). No claim taken — nothing new to claim. `FEATURE_BACKLOG.md`'s P0-P3
+sections independently re-verified 100% checked off; the long unchecked tail below that is
+process notes/gotchas, not open work items, confirmed by reading its own header rule ("pick top
+unblocked item... check it off").
+
+Rather than guess at which content axis still has headroom, ran a category/count census across
+every `public/data/*.geojson` file before picking scope (the exact habit Shift 105's own log
+recommended for whoever picked this up next): checked disasters, languages, neighbors_117,
+conventus, penal, learning_117, euergetism, trade_routes, and sports against `SHIFT_BRIEF.md`'s
+own named examples. All of them are saturated at or past the brief's own list — this project is
+far deeper than a "shift 3 of four" framing suggests. The two genuine gaps the census surfaced:
+**zero `road_stations.geojson` coverage for Syria/Mesopotamia or Sicily** despite ~50 named roads
+already logged for every other region, and **`euergetism.geojson`'s alimenta-town count sitting
+at 29 of the brief's "all 50" target**, unrevisited since whichever shift first ran fully into
+its own research-budget wall.
+
+### Track A — Axis 2 (road stations, two new regions) + Axis 15 (welfare, honest ceiling check)
+
+Dispatched two parallel background research agents (WebSearch-only, this sandbox's standing
+constraint) rather than researching serially, since the two tasks share no data.
+
+**Syria/Mesopotamia + Sicily road stations (commit `22f52f2`) — 62 new stations, first map
+presence for either region.** Three Syrian corridors: the Antioch-Edessa road via the Zeugma and
+Samosata Euphrates crossings (Trajan's own 116 invasion route into Mesopotamia, and Hadrian's
+117 withdrawal route — Beroea, Cyrrus, Zeugma, Samosata, Doliche, Hierapolis Bambyce, Carrhae,
+Edessa, plus 9 name-only mutationes kept at `confidence: low`/`identified: false` per the brief's
+own "somewhere on this stretch" convention rather than dropped or guessed firm); the
+Antioch-Palmyra road via Apamea and Emesa; and the Palmyra-Sura road tying the Palmyrene desert
+crossing into the Euphrates garrison line. Three Sicilian corridors from the Antonine Itinerary's
+own dedicated Sicilian section: the north coast (Messana-Panormus-Lilybaeum via Tyndaris,
+Halaesa, Cephaloedium, Thermae, Soluntum, Drepana), the south coast (Messana-Syracusae-Agrigentum
+via Tauromenium, Catina), and the interior route through Philosophiana — an excavated mansio with
+its own bath complex, serving the estate whose owner later built the Villa del Casale mosaics.
+Antioch, Damascus, and Palmyra deliberately excluded as road stations: Antioch and Palmyra
+already have points elsewhere (`learning_117.geojson`, `app/sites.ts`), Damascus is a route
+terminus — the same "don't re-pin a city that already exists" precedent the Nile Valley Road
+batch set for Alexandria. One real id collision caught before merging: the research agent's
+Mesopotamian "Edessa" would have overwritten an existing, unrelated `station_edessa` — Edessa in
+Macedonia on the Via Egnatia, different city, same name — renamed to `station_edessa_osroene`
+before committing. Disputed identifications (Agathyrnum's conflicting Itinerary/Peutinger
+mileage, "Hybla" naming multiple candidate Sicilian towns) shipped honestly as
+`identified: false` rather than picked arbitrarily. No `image_url` on this batch — this file
+already runs at 31% image coverage across its existing 776 stations, so this adds to that known
+backlog rather than creating a new one; flagging for a future image top-up pass.
+
+**Alimenta towns — real negative result, not a gap (Axis 15, no commit).** Dispatched a second
+agent to close `euergetism.geojson`'s 29-of-50 alimenta-town count. It came back honest rather
+than padded: the two scholarly appendices that would list the full ~45-53 town roster (Duncan-
+Jones's *PBSR* 32 (1964) and Woolf's *PBSR* 58 (1990) Appendix III) are paywalled, and every
+search-snippet lead it chased — Aeclanum, Casinum, Interamna Lirenas, Puteoli, Capua, Anagnia,
+Praeneste, and 24 more candidates — came back with no citable inscription, only generic regional
+context. The one concrete result Woolf's abstract surfaced (a six-town list: Nomentum, Pisaurum,
+Saturnia, Industria, Formiae, Capena) turned out to be **six towns already in the existing 29**,
+which is itself informative: it suggests the file's current roster already captures the
+well-documented academic core, and the brief's "50 known towns" figure is likely a rounded
+scholarly estimate rather than a citable list of 50 named sites reachable without journal access.
+Checked the specific epigraphic details (CIL numbers, benefactor names) the agent surfaced for
+Terracina/Caelia Macrina, Cupramontana, Pitinum Mergens, Atina, and Ferentino against the
+existing records before writing anything — every one of them was already fully present and
+already cited in the file, so there was nothing to add, not an oversight to fix. Declining rather
+than padding, per the project's own standing rule: this axis is at its real research ceiling in
+this sandbox. **Flagging for whoever has JSTOR/library access**: pulling Woolf 1990's Appendix III
+directly would very likely close this gap in one pass; not worth another agent-hour here without
+that access.
+
+**Kitos War's last unpinned front (commit `8300ae0`).** `FEATURE_BACKLOG.md` had flagged that the
+Kitos War's four revolt zones (Cyrenaica, Egypt, Cyprus, Mesopotamia) only had engagements pinned
+for three of them. Verified via WebSearch (Cassius Dio 68.30, cross-checked against two secondary
+summaries) and added `poi_kitos_war_mesopotamia_nisibis`: Nisibis, Edessa, and Seleucia rose
+against Rome's month-old Mesopotamian province in 116, and Lusius Quietus's storming of Nisibis
+and burning of Edessa is the engagement that won him the governorship of Judaea the following
+year — a real connective thread to two records already on the map (Quietus himself in
+`people_117.geojson`, the Judaea revolt entries in `pois.geojson`). Pinned at Nisibis since Edessa
+already carries this shift's own new road-station point.
+
+`METRICS.md` regenerated via `npm run metrics -- --write` after the pois.geojson addition:
+1461 → 1462 POIs, cross-file collisions 217 → 218 (one new station sits near an existing feature
+at the same real place — the established, expected pattern `[12-P0-1]` will eventually resolve).
+`npm run validate` clean throughout (0 errors, same 7 reviewed warnings); `npm run build` clean
+on both pushes.
+
+### Track B
+
+Same conclusion as Shift 104 and 105, independently re-checked rather than inherited:
+`FEATURE_BACKLOG.md`'s P0-P3 sections are 100% checked off, and `BOARD.md` has no unclaimed
+ticket smaller than a multi-pass migration or not blocked on network/human access. No Track B
+picked this shift.
+
+### Next shift should pick up
+
+- **Track A:** Road stations remain the most reliable source of real, quantifiable headroom —
+  this shift's own census found two regions with zero prior coverage on the first pass; a future
+  shift should run the same check (`grep -o '"road": "[^"]*"' public/data/road_stations.geojson |
+  sort -u` cross-referenced against which provinces/islands never show up) before assuming
+  everything's covered. Untouched candidates spotted but not researched this shift: Sardinia/
+  Corsica (Antonine Itinerary has a dedicated Sardinian section, same pattern as Sicily), Cyprus,
+  Judaea's interior road network (Via Maris, Caesarea-Jerusalem), and Cappadocia/Galatia's supply
+  roads toward the Euphrates frontier.
+- **Axis 15 (alimenta towns) needs journal access, not more WebSearch budget** — see above. Don't
+  re-dispatch a research agent at this specific sub-task without a different access path; the
+  existing 29 are the real ceiling reachable from search snippets alone.
+- **Axis 1 (more cities) stays network-blocked** — reconfirmed directly this shift (`overpass-api.de`
+  connect_rejected, `WebFetch` to Wikipedia returns `EGRESS_BLOCKED`), not just inherited from
+  prior shifts' notes.
+- **Track B:** still nothing unblocked in `FEATURE_BACKLOG.md` or `BOARD.md`. `[11-P1-6]`
+  split-map-tsx remains the most plausible pick for a shift with more wall-clock budget than one
+  slot allows for exploratory refactoring.
+
+---
+
 ## Shift 105 — 2026-09-06 (this shift's own prompt claimed "Shift 2 of four")
 
 ### Boot
