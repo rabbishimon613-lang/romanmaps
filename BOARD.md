@@ -1220,7 +1220,7 @@ to prevent. Building locally to *test* your own work is expected and fine.
 
 ## P2
 
-- [ ] `[08-P2-8]` **`vi-ferrata-caparcotna-dating`** `verify` — Shift 1 of 2026-09-06's four-shift
+- [~] `[08-P2-8]` **`vi-ferrata-caparcotna-dating`** `verify` — claimed by cloud shift 105, 2026-09-06 06:00. Shift 1 of 2026-09-06's four-shift
       run, researching whether Samosata should get a Legio XVI Flavia Firma fortress record
       (declined — see below), found a real complication with an *existing* record instead:
       `poi_fortress_vi_ferrata_caparcotna`'s move to Judaea is conventionally tied to Hadrian's
@@ -1232,7 +1232,7 @@ to prevent. Building locally to *test* your own work is expected and fine.
       mis-located for this snapshot. Needs a dedicated research pass across both candidate
       locations and firm dates before touching the existing record — flagging rather than fixing
       as a side effect, same principle Shift 103 applied to the Samosata question itself.
-- [ ] `[03-P2-9]` **`shipwreck-snapshot-policy`** `fix` — Shift 1 of 2026-09-06's four-shift run
+- [~] `[03-P2-9]` **`shipwreck-snapshot-policy`** `fix` — claimed by cloud shift 105, 2026-09-06 06:00. Shift 1 of 2026-09-06's four-shift run
       researched 18 new candidate shipwrecks for the `shipwreck` POI category (Axis 3i) and found
       13 of them — real, well-documented, individually named wrecks (Blackfriars Ship 1, the
       Zwammerdam river barges, the Black Sea MAP wreck, the Asterix wreck, Pudding Pan, County
