@@ -19319,6 +19319,1560 @@
         "image_credit": "Wikimedia Commons contributor (CC BY 3.0)",
         "image_alt": "Elephantine Island at Aswan, Rome's southern frontier garrison in Egypt"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.15,
+          36.2
+        ]
+      },
+      "properties": {
+        "id": "station_beroea_aleppo",
+        "category": "vicus",
+        "name": "Beroea",
+        "road": "Antioch-Edessa Road (Zeugma-Samosata Crossing)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Beroea sat on the road east from Antioch toward the Euphrates crossings, a junction town on the route Trajan's armies used advancing into Mesopotamia in 116. It kept its own civic life under Roman rule long before it grew into a much later medieval and Islamic capital.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.05,
+          36.75
+        ]
+      },
+      "properties": {
+        "id": "station_cyrrus",
+        "category": "vicus",
+        "name": "Cyrrus",
+        "road": "Antioch-Edessa Road (Zeugma-Samosata Crossing)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Cyrrus guarded the northern approach to the Euphrates crossings as the fortress-city of the old client kingdom of Commagene before Rome absorbed it. Its garrison watched the same frontier Trajan's legions marched through on the way to Zeugma.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.0,
+          36.9
+        ]
+      },
+      "properties": {
+        "id": "station_ciliza",
+        "category": "mutatio",
+        "name": "Ciliza (Urmagiganti)",
+        "road": "Antioch-Edessa Road (Zeugma-Samosata Crossing)",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "A minor changing station named in the Antonine Itinerary twelve miles from Cyrrus on the road toward the Euphrates; no modern site has been securely matched to it.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.4,
+          36.95
+        ]
+      },
+      "properties": {
+        "id": "station_abarara",
+        "category": "mutatio",
+        "name": "Abarara",
+        "road": "Antioch-Edessa Road (Zeugma-Samosata Crossing)",
+        "distance_from_previous_mp": 10,
+        "identified": false,
+        "notes": "A waystation on the approach to Zeugma named only in the Itinerary's mile count; its exact location is lost.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.876,
+          37.056
+        ]
+      },
+      "properties": {
+        "id": "station_zeugma",
+        "category": "vicus",
+        "name": "Zeugma",
+        "road": "Antioch-Edessa Road (Zeugma-Samosata Crossing)",
+        "distance_from_previous_mp": 22,
+        "identified": true,
+        "notes": "Zeugma's pontoon bridge over the Euphrates was the main crossing point for Trajan's 116 invasion of Mesopotamia, held by Legio IIII Scythica. Rescue excavations ahead of a modern dam flood uncovered its famous floor mosaics, including the so-called Gypsy Girl, just before the site went under the reservoir.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.515,
+          37.578
+        ]
+      },
+      "properties": {
+        "id": "station_samosata",
+        "category": "vicus",
+        "name": "Samosata",
+        "road": "Antioch-Edessa Road (Zeugma-Samosata Crossing)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Once the royal capital of client-kingdom Commagene until Vespasian annexed it in 72 CE, Samosata anchored the northern Euphrates crossing and garrisoned Legio XVI Flavia Firma. Cassius Dio has Trajan's forces fording the river here as well as at Zeugma during the 116 advance. The ancient site now lies under the reservoir of the Ataturk Dam.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.279,
+          37.765
+        ]
+      },
+      "properties": {
+        "id": "station_perre",
+        "category": "vicus",
+        "name": "Perre",
+        "road": "Antioch-Edessa Road (Zeugma-Samosata Crossing)",
+        "distance_from_previous_mp": 27,
+        "identified": true,
+        "notes": "Perre served as one of Commagene's royal-cult centers, its hillside still marked by rock-cut tombs and tumuli from the old dynasty. It sat on the road linking Melitene to Samosata, part of the wider network feeding Trajan's eastern campaign.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.0,
+          38.0
+        ]
+      },
+      "properties": {
+        "id": "station_mesena",
+        "category": "mutatio",
+        "name": "Mesena",
+        "road": "Antioch-Edessa Road (Zeugma-Samosata Crossing)",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "A first-stage changing post on the Melitene-Samosata road, known only from the Itinerary's distance figures.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.15,
+          38.1
+        ]
+      },
+      "properties": {
+        "id": "station_lacotena",
+        "category": "mutatio",
+        "name": "Lacotena",
+        "road": "Antioch-Edessa Road (Zeugma-Samosata Crossing)",
+        "distance_from_previous_mp": 28,
+        "identified": false,
+        "notes": "A waystation on the Melitene-Samosata road named in the Itinerary; no ruins have been identified with it.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.467,
+          37.133
+        ]
+      },
+      "properties": {
+        "id": "station_doliche",
+        "category": "vicus",
+        "name": "Doliche",
+        "road": "Antioch-Edessa Road (Zeugma-Samosata Crossing)",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "Doliche's hilltop sanctuary of Jupiter Dolichenus became one of the empire's most widely exported cults, carried by soldiers who had garrisoned here to bases from Britain to the Danube. The town sat squarely on the road east from Zeugma toward Edessa.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.2,
+          37.05
+        ]
+      },
+      "properties": {
+        "id": "station_bemmaris",
+        "category": "mutatio",
+        "name": "Bemmaris (Bemmari Canna)",
+        "road": "Antioch-Edessa Road (Zeugma-Samosata Crossing)",
+        "distance_from_previous_mp": 40,
+        "identified": false,
+        "notes": "A station on the Harran plain named in the Itinerary's Zeugma-Edessa stage list; its exact site is unidentified.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.418,
+          36.968
+        ]
+      },
+      "properties": {
+        "id": "station_batnae_anthemusia",
+        "category": "vicus",
+        "name": "Batnae",
+        "road": "Antioch-Edessa Road (Zeugma-Samosata Crossing)",
+        "distance_from_previous_mp": 8,
+        "identified": false,
+        "notes": "Batnae, in the district the Greeks called Anthemusia, later became a renowned fair town on the road to Edessa, though only its general location on the Harran plain is known today.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.955,
+          36.528
+        ]
+      },
+      "properties": {
+        "id": "station_hierapolis_bambyce",
+        "category": "vicus",
+        "name": "Hierapolis (Bambyce)",
+        "road": "Antioch-Edessa Road (Zeugma-Samosata Crossing)",
+        "distance_from_previous_mp": 22,
+        "identified": true,
+        "notes": "Hierapolis Bambyce housed one of Syria's grandest temples, dedicated to the Syrian goddess Atargatis and described in detail by the satirist Lucian. The city sat on the road linking the Euphrates crossings to Carrhae and the Mesopotamian frontier.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.7,
+          36.85
+        ]
+      },
+      "properties": {
+        "id": "station_thilaticomum",
+        "category": "mutatio",
+        "name": "Thilaticomum",
+        "road": "Antioch-Edessa Road (Zeugma-Samosata Crossing)",
+        "distance_from_previous_mp": 22,
+        "identified": false,
+        "notes": "A waystation between Hierapolis and Carrhae named only in the Itinerary's mile count.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.033,
+          36.867
+        ]
+      },
+      "properties": {
+        "id": "station_carrhae",
+        "category": "vicus",
+        "name": "Carrhae",
+        "road": "Antioch-Edessa Road (Zeugma-Samosata Crossing)",
+        "distance_from_previous_mp": 30,
+        "identified": true,
+        "notes": "Carrhae was already infamous a century and a half before this map's date as the site of Crassus's catastrophic defeat by Parthian cataphracts and horse archers in 53 BCE. In 117 CE it lay directly on Rome's line of withdrawal from Trajan's newly conquered, soon-abandoned Mesopotamian province.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.797,
+          37.159
+        ]
+      },
+      "properties": {
+        "id": "station_edessa_osroene",
+        "category": "vicus",
+        "name": "Edessa",
+        "road": "Antioch-Edessa Road (Zeugma-Samosata Crossing)",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Edessa was the seat of the client kingdom of Osroene under King Abgar VII, briefly folded into direct Roman rule during Trajan's 116 annexation of Mesopotamia before Hadrian restored its client status the following year. The city sat astride the road linking the Euphrates crossings to the rest of the Mesopotamian frontier.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.25,
+          35.95
+        ]
+      },
+      "properties": {
+        "id": "station_niaccaba",
+        "category": "mutatio",
+        "name": "Niaccaba",
+        "road": "Antioch-Palmyra Road",
+        "distance_from_previous_mp": 25,
+        "identified": false,
+        "notes": "A waystation in the Orontes valley on the road south from Antioch, known only from the Itinerary's distance figures.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.32,
+          35.75
+        ]
+      },
+      "properties": {
+        "id": "station_caperturi",
+        "category": "mutatio",
+        "name": "Caperturi",
+        "road": "Antioch-Palmyra Road",
+        "distance_from_previous_mp": 24,
+        "identified": false,
+        "notes": "A station on the Antioch-Apamea road named in the Itinerary; no ruins have been matched to it.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.398,
+          35.419
+        ]
+      },
+      "properties": {
+        "id": "station_apamea_syria",
+        "category": "vicus",
+        "name": "Apamea",
+        "road": "Antioch-Palmyra Road",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "Apamea's two-kilometer colonnaded main street and hippodrome still stand as some of the best-preserved Roman civic architecture in Syria. The city commanded the point where the road from Antioch split toward Emesa and, beyond it, Palmyra.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.55,
+          35.267
+        ]
+      },
+      "properties": {
+        "id": "station_larissa_syria",
+        "category": "vicus",
+        "name": "Larissa (Shaizar)",
+        "road": "Antioch-Palmyra Road",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Larissa held a fortified bend of the Orontes on the road between Apamea and Emesa, its position later reused for a medieval citadel.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.75,
+          35.132
+        ]
+      },
+      "properties": {
+        "id": "station_epiphania_syria",
+        "category": "vicus",
+        "name": "Epiphania (Hama)",
+        "road": "Antioch-Palmyra Road",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Epiphania stood on the Orontes at the site later famous for its giant wooden waterwheels, the norias, which still turn on the riverbank today.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.733,
+          34.917
+        ]
+      },
+      "properties": {
+        "id": "station_arethusa_syria",
+        "category": "vicus",
+        "name": "Arethusa",
+        "road": "Antioch-Palmyra Road",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Arethusa marked a stage on the road between Epiphania and Emesa, one of several Hellenistic-founded towns strung along the Orontes corridor.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.714,
+          34.732
+        ]
+      },
+      "properties": {
+        "id": "station_emesa",
+        "category": "vicus",
+        "name": "Emesa",
+        "road": "Antioch-Palmyra Road",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Emesa was home to a hereditary line of priest-kings who served the sun-god Elagabal, worshipped here in the form of a sacred black stone. The city was the road hub where routes to Palmyra, Damascus, and the Mediterranean coast all met.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.65,
+          35.05
+        ]
+      },
+      "properties": {
+        "id": "station_theleda",
+        "category": "mutatio",
+        "name": "Theleda",
+        "road": "Antioch-Palmyra Road",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "A station on the Tabula Peutingeriana's Apamea-Palmyra road; its precise site is unidentified.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.0,
+          35.0
+        ]
+      },
+      "properties": {
+        "id": "station_occaraba",
+        "category": "mutatio",
+        "name": "Occaraba",
+        "road": "Antioch-Palmyra Road",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "A waystation named on the desert road toward Palmyra; no ruins have been matched to it.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.4,
+          34.9
+        ]
+      },
+      "properties": {
+        "id": "station_centum_putea",
+        "category": "statio",
+        "name": "Centum Putea",
+        "road": "Antioch-Palmyra Road",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "Its Latin name means \"the hundred wells\" — a watering station on the dry stretch of road crossing the steppe toward Palmyra.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.733,
+          34.033
+        ]
+      },
+      "properties": {
+        "id": "station_casama",
+        "category": "vicus",
+        "name": "Casama (An-Nabk)",
+        "road": "Antioch-Palmyra Road",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Casama lay on the road linking Damascus to Palmyra across the edge of the Syrian steppe.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.233,
+          34.233
+        ]
+      },
+      "properties": {
+        "id": "station_nezala",
+        "category": "vicus",
+        "name": "Nezala (Al-Qaryatayn)",
+        "road": "Antioch-Palmyra Road",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "Nezala sat twenty Roman miles from Danaba on the Damascus-Palmyra road, one of a handful of oasis stops that made the desert crossing possible.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.0,
+          34.3
+        ]
+      },
+      "properties": {
+        "id": "station_danaba",
+        "category": "statio",
+        "name": "Danaba",
+        "road": "Antioch-Palmyra Road",
+        "distance_from_previous_mp": 20,
+        "identified": false,
+        "notes": "Danaba served as a Roman military station on the desert road between Damascus and Palmyra; its exact ruins have not been firmly located.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Danaba",
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.0,
+          34.9
+        ]
+      },
+      "properties": {
+        "id": "station_palmyra_sura_harae",
+        "category": "mutatio",
+        "name": "Harae",
+        "road": "Palmyra-Sura Road",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "A waystation on the desert road linking Palmyra to the Euphrates garrison at Sura; unidentified on the ground.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.3,
+          35.1
+        ]
+      },
+      "properties": {
+        "id": "station_oruba",
+        "category": "mutatio",
+        "name": "Oruba",
+        "road": "Palmyra-Sura Road",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "A station on the Palmyra-Sura road named only in the itinerary sources.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.5,
+          35.3
+        ]
+      },
+      "properties": {
+        "id": "station_cholle",
+        "category": "mutatio",
+        "name": "Cholle",
+        "road": "Palmyra-Sura Road",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "A waypoint on the desert crossing between Palmyra and the Euphrates; site unidentified.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.75,
+          35.633
+        ]
+      },
+      "properties": {
+        "id": "station_resafa",
+        "category": "vicus",
+        "name": "Resafa (Rusafa)",
+        "road": "Palmyra-Sura Road",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Resafa sat on the desert road linking Palmyra to the Euphrates frontier, centuries before it grew famous as the pilgrimage city of Sergiopolis. In 117 CE it was a waystation serving the same military corridor Trajan's Mesopotamian campaign depended on.",
+        "sources": [
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.858,
+          35.883
+        ]
+      },
+      "properties": {
+        "id": "station_sura_euphrates",
+        "category": "vicus",
+        "name": "Sura",
+        "road": "Palmyra-Sura Road",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Sura sat directly on the Euphrates, tying the Palmyrene desert road into the river-line network of forts and crossing points that carried supplies for Trajan's Mesopotamian campaign, the same logistical corridor as Zeugma and Samosata further north.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sura,_Syria",
+          "Itin. Ant. (Syria-Mesopotamia stages)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://topostext.org/work/687"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.554,
+          38.194
+        ]
+      },
+      "properties": {
+        "id": "station_messana",
+        "category": "vicus",
+        "name": "Messana",
+        "road": "Via Valeria Sicula (Messana-Panormus-Lilybaeum)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Messana guarded the narrow strait separating Sicily from Italy, the crossing point every traveler and legion used to reach the island in 117 CE.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.045,
+          38.139
+        ]
+      },
+      "properties": {
+        "id": "station_tyndaris",
+        "category": "vicus",
+        "name": "Tyndaris",
+        "road": "Via Valeria Sicula (Messana-Panormus-Lilybaeum)",
+        "distance_from_previous_mp": 36,
+        "identified": true,
+        "notes": "Tyndaris was refounded as an Augustan colony on a headland above the Tyrrhenian Sea, its sanctuary of Diana Tyndaritana drawing worshippers from across northern Sicily.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.617,
+          38.033
+        ]
+      },
+      "properties": {
+        "id": "station_agathyrnum",
+        "category": "vicus",
+        "name": "Agathyrnum",
+        "road": "Via Valeria Sicula (Messana-Panormus-Lilybaeum)",
+        "distance_from_previous_mp": 28,
+        "identified": false,
+        "notes": "Agathyrnum's exact position along the north coast road has long been disputed, since the Antonine Itinerary and the Tabula Peutingeriana give slightly different mileages for it.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.467,
+          38.017
+        ]
+      },
+      "properties": {
+        "id": "station_caleacte",
+        "category": "vicus",
+        "name": "Caleacte",
+        "road": "Via Valeria Sicula (Messana-Panormus-Lilybaeum)",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "Caleacte, whose Greek name means \"beautiful shore,\" was a fifth-century BCE foundation still functioning as a coastal waystation on Sicily's north road under Rome.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.283,
+          37.983
+        ]
+      },
+      "properties": {
+        "id": "station_halaesa",
+        "category": "vicus",
+        "name": "Halaesa",
+        "road": "Via Valeria Sicula (Messana-Panormus-Lilybaeum)",
+        "distance_from_previous_mp": 28,
+        "identified": true,
+        "notes": "Halaesa's hilltop agora has yielded bronze-inscribed civic decrees, giving historians an unusually detailed record of how a Sicilian town governed itself under Roman rule.",
+        "sources": [
+          "https://topostext.org/place/380143PHal",
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.023,
+          38.039
+        ]
+      },
+      "properties": {
+        "id": "station_cephaloedium",
+        "category": "vicus",
+        "name": "Cephaloedium",
+        "road": "Via Valeria Sicula (Messana-Panormus-Lilybaeum)",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "Cephaloedium took its name from the headland it sits beneath, a stop on the coast road between Halaesa and the thermal town of Thermae.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7,
+          37.983
+        ]
+      },
+      "properties": {
+        "id": "station_thermae_himeraeae",
+        "category": "vicus",
+        "name": "Thermae Himeraeae",
+        "road": "Via Valeria Sicula (Messana-Panormus-Lilybaeum)",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Thermae's hot springs gave the town its name and drew bathers from across Sicily, rising near the ruins of Himera, the Greek city Carthage had destroyed centuries earlier.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.533,
+          38.117
+        ]
+      },
+      "properties": {
+        "id": "station_soluntum",
+        "category": "vicus",
+        "name": "Soluntum",
+        "road": "Via Valeria Sicula (Messana-Panormus-Lilybaeum)",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Soluntum's hillside street grid, still traceable underfoot today, survives as one of the best-preserved Hellenistic-Roman town plans anywhere on the island.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.362,
+          38.116
+        ]
+      },
+      "properties": {
+        "id": "station_panormus",
+        "category": "vicus",
+        "name": "Panormus",
+        "road": "Via Valeria Sicula (Messana-Panormus-Lilybaeum)",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Panormus was Sicily's great western harbor city, its name meaning simply \"all-harbor\" in Greek, a hub on the road linking the island's north coast to its western tip.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.167,
+          38.133
+        ]
+      },
+      "properties": {
+        "id": "station_hyccara",
+        "category": "vicus",
+        "name": "Hyccara",
+        "road": "Via Valeria Sicula (Messana-Panormus-Lilybaeum)",
+        "distance_from_previous_mp": 8,
+        "identified": true,
+        "notes": "Hyccara was already ancient history by 117 CE, remembered chiefly for the Athenian fleet's sack of the town in 415 BCE during the Sicilian Expedition.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.117,
+          38.045
+        ]
+      },
+      "properties": {
+        "id": "station_parthenicum",
+        "category": "mutatio",
+        "name": "Parthenicum",
+        "road": "Via Valeria Sicula (Messana-Panormus-Lilybaeum)",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "A minor stop on the road west of Panormus, its name plausibly surviving in the modern town of Partinico nearby.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.883,
+          38.017
+        ]
+      },
+      "properties": {
+        "id": "station_aquae_segestanae",
+        "category": "vicus",
+        "name": "Aquae Segestanae",
+        "road": "Via Valeria Sicula (Messana-Panormus-Lilybaeum)",
+        "distance_from_previous_mp": 14,
+        "identified": true,
+        "notes": "These thermal springs near Segesta gave travelers on the western road a bathing stop before the final push to Lilybaeum.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.537,
+          38.018
+        ]
+      },
+      "properties": {
+        "id": "station_drepana",
+        "category": "vicus",
+        "name": "Drepana",
+        "road": "Via Valeria Sicula (Messana-Panormus-Lilybaeum)",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Drepana's harbor was the scene of a rare Carthaginian naval victory over Rome in 249 BCE during the First Punic War, long before the town settled into quiet life as a Roman port.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.432,
+          37.801
+        ]
+      },
+      "properties": {
+        "id": "station_lilybaeum",
+        "category": "vicus",
+        "name": "Lilybaeum",
+        "road": "Via Valeria Sicula (Messana-Panormus-Lilybaeum)",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Lilybaeum was the last Carthaginian stronghold in Sicily to fall to Rome, holding out until 241 BCE, and remained the island's principal link to Africa under the empire.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.289,
+          37.853
+        ]
+      },
+      "properties": {
+        "id": "station_tauromenium",
+        "category": "vicus",
+        "name": "Tauromenium",
+        "road": "Via Pompeia (Messana-Syracusae-Agrigentum)",
+        "distance_from_previous_mp": 32,
+        "identified": true,
+        "notes": "Tauromenium's Greek theater, cut into the hillside with a view straight at Etna, held out against Roman control longer than almost any other Sicilian city, only fully absorbed in 36 BCE.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.083,
+          37.508
+        ]
+      },
+      "properties": {
+        "id": "station_catina",
+        "category": "vicus",
+        "name": "Catina",
+        "road": "Via Pompeia (Messana-Syracusae-Agrigentum)",
+        "distance_from_previous_mp": 32,
+        "identified": true,
+        "notes": "Catina sat in the shadow of Etna, repeatedly damaged by the volcano's eruptions and earthquakes over the centuries, yet always rebuilt on the same fertile ground.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.287,
+          37.076
+        ]
+      },
+      "properties": {
+        "id": "station_syracusae",
+        "category": "vicus",
+        "name": "Syracusae",
+        "road": "Via Pompeia (Messana-Syracusae-Agrigentum)",
+        "distance_from_previous_mp": 44,
+        "identified": true,
+        "notes": "Syracusae was Archimedes' home city, besieged and finally taken by the Roman general Marcellus in 212 BCE despite the defenses the mathematician himself had designed.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.9,
+          37.05
+        ]
+      },
+      "properties": {
+        "id": "station_agrae_sicilia",
+        "category": "mutatio",
+        "name": "Agrae",
+        "road": "Via Pompeia (Messana-Syracusae-Agrigentum)",
+        "distance_from_previous_mp": 18,
+        "identified": false,
+        "notes": "A minor stop in the Syracusan hinterland named in the Itinerary; unidentified on the ground.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.65,
+          37.15
+        ]
+      },
+      "properties": {
+        "id": "station_hybla_sicilia",
+        "category": "mutatio",
+        "name": "Hybla",
+        "road": "Via Pompeia (Messana-Syracusae-Agrigentum)",
+        "distance_from_previous_mp": 24,
+        "identified": false,
+        "notes": "Several ancient Sicilian towns carried the name Hybla, and scholars have never settled which one the Itinerary means at this stage of the road.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0,
+          37.2
+        ]
+      },
+      "properties": {
+        "id": "station_calvisiana",
+        "category": "mutatio",
+        "name": "Calvisiana",
+        "road": "Via Pompeia (Messana-Syracusae-Agrigentum)",
+        "distance_from_previous_mp": 40,
+        "identified": false,
+        "notes": "An interior waystation on the road toward Agrigentum, known only from the Itinerary's mile count.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.577,
+          37.311
+        ]
+      },
+      "properties": {
+        "id": "station_agrigentum",
+        "category": "vicus",
+        "name": "Agrigentum",
+        "road": "Via Pompeia (Messana-Syracusae-Agrigentum)",
+        "distance_from_previous_mp": 40,
+        "identified": true,
+        "notes": "Agrigentum's Doric temples, raised on a ridge above the sea, rank among the best-preserved Greek religious architecture anywhere in the ancient world.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.09,
+          37.508
+        ]
+      },
+      "properties": {
+        "id": "station_aquae_larodis",
+        "category": "vicus",
+        "name": "Aquae Larodis",
+        "road": "Via Pompeia (Messana-Syracusae-Agrigentum)",
+        "distance_from_previous_mp": 46,
+        "identified": false,
+        "notes": "These hot springs, likely the ones later known at Sciacca, gave travelers a last bathing stop before Lilybaeum on the south coast road.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.276,
+          37.828
+        ]
+      },
+      "properties": {
+        "id": "station_naxus_sicilia",
+        "category": "vicus",
+        "name": "Naxus",
+        "road": "Sicilian Interior Road (Traiectum-Lilybaeum)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Naxus holds the distinction of being the very first Greek colony founded in Sicily, in 734 BCE, long before Rome ever set foot on the island.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.15,
+          37.55
+        ]
+      },
+      "properties": {
+        "id": "station_acium",
+        "category": "mutatio",
+        "name": "Acium",
+        "road": "Sicilian Interior Road (Traiectum-Lilybaeum)",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "A minor coastal stop south of Tauromenium whose name plausibly survives in the modern town of Aci nearby.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.7,
+          37.4
+        ]
+      },
+      "properties": {
+        "id": "station_capitoniana",
+        "category": "mutatio",
+        "name": "Capitoniana",
+        "road": "Sicilian Interior Road (Traiectum-Lilybaeum)",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "An interior waystation named in the Itinerary's Sicilian section; unidentified on the ground.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.248,
+          37.068
+        ]
+      },
+      "properties": {
+        "id": "station_gelasium",
+        "category": "vicus",
+        "name": "Gela",
+        "road": "Sicilian Interior Road (Traiectum-Lilybaeum)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Gela was a major Greek foundation on Sicily's south coast, its road connecting the island's interior route to the Agrigentum road.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.367,
+          37.333
+        ]
+      },
+      "properties": {
+        "id": "station_philosophiana",
+        "category": "vicus",
+        "name": "Philosophiana",
+        "road": "Sicilian Interior Road (Traiectum-Lilybaeum)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Excavations at Philosophiana have uncovered a full roadside mansio with its own bath complex, built to serve travelers and the vast agricultural estate whose owner would later fill the nearby Villa del Casale with its famous mosaics.",
+        "sources": [
+          "https://www.cambridge.org/core/journals/journal-of-roman-archaeology/article/abs/preliminary-report-on-sofianamansio-philosophiana-in-the-hinterland-of-piazza-armerina/18EBF20FF40506820EEBF5F28324FC8E",
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.85,
+          37.35
+        ]
+      },
+      "properties": {
+        "id": "station_petiliana",
+        "category": "mutatio",
+        "name": "Petiliana",
+        "road": "Sicilian Interior Road (Traiectum-Lilybaeum)",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "A waystation in the Agrigento hinterland named in the Itinerary's interior route; site unidentified.",
+        "sources": [
+          "Itin. Ant. (Sicilia)",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://www.smarteducationunescosicilia.it/en/approfondimenti/antonine-itinerary-2/"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
