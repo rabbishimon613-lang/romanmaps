@@ -18320,6 +18320,133 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.5333,
+          37.9333
+        ]
+      },
+      "properties": {
+        "id": "station_neapolis_pisidia",
+        "category": "mansio",
+        "name": "Neapolis",
+        "road": "Via Sebaste",
+        "distance_from_previous_mp": 30,
+        "identified": true,
+        "notes": "Farmers dragged five Augustan milestones in from the surrounding fields and stacked them by the mosque in the center of Kıyakdede village. One reads a clean XXX in Latin numerals, fixing this spot exactly 30 Roman miles down the Via Sebaste from Antioch. The town itself amounted to little more than a waypoint between the two bigger colonies, but its milestones did more to nail down the road's true course than any ruin nearby. Wagons and legionaries passed through here roughly two-thirds of the way from Antioch to Apollonia. The site sits in open farmland southwest of the mountains that ring Pisidian Antioch.",
+        "sources": [
+          "Pleiades: Neapolis (Pisidia) https://pleiades.stoa.org/places/639008",
+          "Pleiades: Via Sebaste: Apollonia ↔ Antiochia ↔ Neapolis https://pleiades.stoa.org/places/33128252",
+          "Wikipedia: Neapolis (Pisidia)",
+          "Bilkent University repository: 'Pisidia Apolloniası'ndan Via Sebaste'ye ait yeni bir mil taşı' https://repository.bilkent.edu.tr/items/d0ebb87f-ba22-41ef-a547-1db55312ae84"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.7828,
+          38.0178
+        ]
+      },
+      "properties": {
+        "id": "station_parlais",
+        "category": "colonia",
+        "name": "Parlais (Colonia Iulia Augusta Parlais)",
+        "road": "Via Sebaste",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "Augustus planted this colony as one of five military outposts ringing Pisidian Antioch, alongside Cremna, Comama, Olbasa, and Lystra, and connected it to the capital with its own dedicated road. Its mint struck coins reading Colonia Iulia Augusta Parlais for more than two centuries after the founding. Nineteenth-century geographers placed the city at the lakeside village of Barla near Eğirdir, but no inscription found there has ever confirmed the name on the ground. A rival identification instead points to ruins several miles away. Either way, the colony's coinage and its road link to Antioch are certain; only the exact stones remain unfound.",
+        "sources": [
+          "Wikipedia: Parlais",
+          "Mitchell, S., Anatolia: Land, Men, and Gods in Asia Minor, vol. 1 (1993), on the five Augustan military colonies of Pisidia",
+          "Levick, B., Roman Colonies in Southern Asia Minor (Oxford, 1967)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.3384,
+          37.6017
+        ]
+      },
+      "properties": {
+        "id": "station_lystra",
+        "category": "colonia",
+        "name": "Lystra (Colonia Iulia Felix Gemina Lustra)",
+        "road": "Via Sebaste",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Augustus founded this colony around 6 BCE and linked it to Antioch by a direct military road that bypassed Iconium entirely. In 1885 an excavator dug a stone block out of a mound called Zoldere and found the words DIVVM AVG COL IVL FELIX GEMINA LVSTRA CONSECRAVIT cut into its face, nailing down the site for good. Paul and Barnabas preached here on their first missionary journey, and a crowd mistook Paul for the god Hermes after he healed a crippled man. The colony sat roughly 18 Roman miles beyond Iconium on the road running east from Antioch. Wheat fields and low mounds now cover what was once a working Roman garrison town.",
+        "sources": [
+          "Wikipedia: Lystra",
+          "Pleiades: Lystra / Col. Iulia Felix Gemina https://pleiades.stoa.org/places/648699",
+          "Sterrett, J.R.S., An Epigraphical Journey in Asia Minor (Boston, 1888), Zoldera/Lystra inscription",
+          "Acts 14:8-19"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.4833,
+          37.8667
+        ]
+      },
+      "properties": {
+        "id": "station_iconium",
+        "category": "civitas",
+        "name": "Iconium",
+        "road": "Via Sebaste",
+        "distance_from_previous_mp": 93,
+        "identified": true,
+        "notes": "This Lycaonian city sat 93 Roman miles east of Pisidian Antioch on the branch of the Via Sebaste running on to Lystra. Paul and Barnabas preached in its synagogue on their first journey and fled town after a plot formed to stone them. At the moment this map is set, in 117 CE, Iconium was still a free Greek city rather than a colony; that honor came only under Hadrian a decade later. Its old mound, Alaeddin Tepesi, still rises over the center of modern Konya. The road continued east another 18 miles or so from here to reach Lystra.",
+        "sources": [
+          "Wikipedia: Via Sebaste (eastern branch to Iconium and Lystra)",
+          "Pleiades: Iconium https://pleiades.stoa.org/places/648647",
+          "Acts 13:51-14:6"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.724989,
+          36.998063
+        ]
+      },
+      "properties": {
+        "id": "station_lyrboton_kome",
+        "category": "mansio",
+        "name": "Lyrboton Kome",
+        "road": "Via Sebaste",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "The Via Sebaste dropped out of the Klimax pass, ran through Döşemealtı, and crossed this hilltop olive-farming village on its final stretch down to Perge. Excavators uncovered houses, baths, a church, an olive press, and more than eighty tombs before opening the site to visitors in 2018. Farmers here had been pressing olive oil for roughly 2,200 years by the time archaeologists cleared the wild scrub off the hill above Antalya. A carved tower called Arete still stands watch over the ruins. Travelers on the last leg of the road up from the Pamphylian coast would have passed straight through it.",
+        "sources": [
+          "Tüner Önen, N., 'Via Sebaste: Anadolu'nun En İyi Korunmuş Roma Yolu'nun Varsak'tan Geçen Güzergâhı' https://www.academia.edu/4006374",
+          "Turkish Archaeological News: Lyrboton Kome https://turkisharchaeonews.net/site/lyrboton-kome",
+          "Vici.org: Lyrboton Kome https://vici.org/vici/24364/"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
