@@ -33,19 +33,19 @@ references.)
 | Measure | Value | Notes |
 |---|---:|---|
 | POIs in `pois.geojson` | 1461 | the curated place canon |
-| Records in the 33 thematic files | 1961 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
-| **Curated places, total** | **3,422** | |
+| Records in the 33 thematic files | 1995 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
+| **Curated places, total** | **3,456** | |
 | Description of 60+ words | 1461 · **100.0%** | measured on `notes`; 0 still thin |
 | Has an image | 916 · **62.7%** | `pois.geojson` only — see below for the thematic files |
-| Has an image — thematic files | 1205 · **61.4%** | the 33 files this metric used to skip entirely |
-| Has an image — all curated places | 2121 · **62.0%** | `pois.geojson` + thematic files combined |
+| Has an image — thematic files | 1214 · **60.9%** | the 33 files this metric used to skip entirely |
+| Has an image — all curated places | 2130 · **61.6%** | `pois.geojson` + thematic files combined |
 | Has an ancient source | 550 · **37.6%** | |
 | — of `confidence: high` POIs | 491 / 615 · **79.8%** | the target set for `[09-P0-1]` |
 | Categories with a "what happened here" paragraph | 53 / 60 · **88.3%** | covers 1395/1461 POIs · missing: beneficiarii_station, bath, harbor, domus, vicus, gymnasium, courier_post |
 | Sites with curated building descriptions | 36 / 40 · **90.0%** | ancona, aquileia, athens, baalbek, baiae, beneventum, brixia, capua, corinth, cumae, delphi, djemila, ephesus, herculaneum, italica, jerash, leptisMagna, luni, merida, milan, ostia, paestum, palestrina, palmyra, pompeii, portus, pozzuoli, rimini, rome, sabratha, timgad, tivoli, trier, verona, vindolanda, volubilis (`[06-P0-2]`, standing) |
 | Validator errors | **0** | |
 | Validator warnings | 7 | reviewed; see the standing-warnings note |
-| Cross-file name collisions (<150 m) | 216 | the dedupe backlog `[12-P0-1]` has to resolve |
+| Cross-file name collisions (<150 m) | 217 | the dedupe backlog `[12-P0-1]` has to resolve |
 | Cold-load LCP | not measured | needs a dev server; blocked by `[15-P0-1]` |
 
 ## 2026-09-05

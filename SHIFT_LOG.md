@@ -128,21 +128,71 @@ a `.geojson` file, before staging** — a two-line intended change should produc
 anything in the thousands means the indent (or `ensure_ascii`, per Shift 14's older note) doesn't
 match the file's actual on-disk convention, not that the edit script did something clever.
 
+### Addendum — three more road-station batches (commits `9b0d51e`, `7b97a51`, `2e0b246`)
+
+Kept going past the initial two-axis minimum rather than stopping at it, per the brief's "these are
+floors, not maximums" instruction. Closed the exact gap this shift's own log flagged above (Zarai),
+then found and mapped Egypt's entire road-station gap from scratch — the project had zero
+`road_stations.geojson` coverage for Egypt before this addendum, despite 60 existing `pois.geojson`
+records there (Alexandria and other city-level entries).
+
+**Lamasba-Zarai-Sitifis road (3 stations)** — the third and final Numidian corridor this shift
+opened. Honestly short of the usual batch size: the Antonine Itinerary only names six waypoints on
+this route (Tadutti, Diana Veteranorum, Lamasba, Zarai, Perdices, Sitifis) and three of them
+(Diana Veteranorum, Perdices, Sitifis) were already in the file from the shift's earlier
+corridors — Perdices in particular is the identical physical junction shared with the
+Theveste-Lambaesis-Sitifis road, not a coincidence worth re-adding. No filler mutationes invented
+for the unattested mid-leg gaps. Zarai carries CIL VIII 4508, the Tariff of Zarai — an itemized
+customs schedule for slaves, wine, livestock, and hides that is one of the best-preserved pieces of
+everyday Roman provincial administration to survive anywhere.
+
+**Egyptian Eastern Desert praesidia (15 stations, new `praesidium` category)** — the fortified
+watering stations linking the Nile at Koptos to the Red Sea ports of Myos Hormos and Berenice,
+carrying the India/Arabia luxury trade. Extremely well-documented thanks to huge ostraca caches
+excavated at the stations themselves (Cuvigny's *La Route de Myos Hormos*, the O.Did./O.Krok.
+corpora). On-snapshot highlight: Didymoi's well was rebuilt in Trajan's 19th regnal year (115/116
+CE), about eighteen months before this map's 11 August 117 date — one of the last building projects
+anywhere in the empire under his reign. Two candidates (Phalakron, Simiou/Bir Sayyala) were dropped
+after repeated searches returned mutually contradictory coordinates, rather than picking one
+arbitrarily.
+
+**Nile Valley road (16 stations)** — the parallel land route from Alexandria to Syene/Aswan at the
+First Cataract, Rome's southern Egyptian frontier in 117 CE: Naukratis, Sais, Memphis, Herakleopolis
+Magna, Oxyrhynchus, Hermopolis Magna, Lycopolis, Koptos (confirmed missing from the file despite
+being the exact pivot point where the Eastern Desert roads above meet the Nile), Ptolemais Hermiou,
+Abydos, Diospolis Magna/Thebes, Latopolis, Apollonopolis Magna, Ombos, Syene, and Elephantine
+(tagged as the actual garrison island per Strabo, a separate entry from the town of Syene itself).
+Antinoopolis correctly excluded — Hadrian doesn't found it until 130 CE. No distances given on any
+of these 16: no surviving Antonine Itinerary segment covers this stretch, so none were fabricated.
+Alexandria itself was deliberately left out as a road waypoint — it sits on the coast/Canopic
+branch, not this artery, and already exists as a major city elsewhere in the project.
+
+Final shift totals: **road_stations.geojson** 717 → 776 (+59 across five corridors: two in Numidia
+plus the Lamasba branch, Via Sebaste, and two entirely new Egyptian roads); **pois.geojson**
+1423 → 1461 (+38, net of the one duplicate dropped before merging). Two board tickets resolved and
+closed. `METRICS.md` refreshed a second time this shift to reflect the final numbers.
+
 ### Next shift should pick up
 
-- **Track A:** Zarai (real, on a separate Lamasba-Zarai-Sitifis branch, flagged above — a clean,
-  well-bounded next road-station pass). Beyond that, this shift's own survey found every axis-3
-  sub-category saturated against the brief's own named lists — the sustainable pattern for
-  continued Track A work is what this shift and Shift 104 both did: research past the brief's own
-  bullet points into the wider real corpus (French's Anatolian milestone catalog, the UNESCO Danube
-  Limes nomination documents, Akerraz's Mauretanian camp surveys, etc.) rather than re-treading the
-  same ~20 named examples per sub-category. Road stations (Axis 2) remain the most reliably
-  inexhaustible category — the empire's real road network had many thousands of named stations
-  across roughly 250 named roads, of which perhaps 50-60 are logged here so far.
+- **Track A:** Every axis-3 sub-category (military, sacred, economic, villae, tombs, water, games,
+  battlefields, shipwrecks) is now saturated against `SHIFT_BRIEF.md`'s own named examples — a
+  full category/count audit this shift confirmed it, not an assumption carried from Shift 104. The
+  sustainable pattern for continued Track A work, demonstrated repeatedly this shift, is research
+  past the brief's own bullet points into the wider real corpus a sub-topic actually has (French's
+  Anatolian milestone catalog, Cuvigny's Eastern Desert ostraca publications, Akerraz's Mauretanian
+  camp surveys, the nome-capital list for Egypt, etc.) rather than re-treading the same ~20 named
+  examples per sub-category — there is real, well-documented headroom almost everywhere once you
+  look past the brief's own bullet points. Road stations (Axis 2) remain the most reliably
+  inexhaustible category on quantity alone: the empire's real road network had many thousands of
+  named stations across roughly 250 named roads, of which perhaps 55-65 are logged here now. A
+  natural next pick in the same vein as this shift's Egypt work: the empire had other regions with
+  zero road-station coverage at all — worth a quick census (`grep -o '"road": "[^"]*"'` across
+  `road_stations.geojson`, cross-referenced against province coverage in `pois.geojson`) before
+  picking, the same check that surfaced Egypt's gap this shift.
 - **Track B:** Still no small unblocked win in `FEATURE_BACKLOG.md`'s P0-P3 (100% checked off,
-  independently re-verified a second time this shift) or `BOARD.md` (same large-migration tickets
-  16+ shifts have now declined). `split-map-tsx` remains the most plausible pick for a shift with
-  more wall-clock budget than one slot.
+  independently re-verified twice this shift) or `BOARD.md` (same large-migration tickets 16+
+  shifts have now declined). `split-map-tsx` remains the most plausible pick for a shift with more
+  wall-clock budget than one slot.
 - Axis 1 (more cities) stays network-blocked in this sandbox — not re-tested this shift, but no
   reason to expect it changed; Shift 104 confirmed it directly last shift.
 - Axis 4 (people/events) confirmed saturated by Shift 104 (70 records, past every named figure in
