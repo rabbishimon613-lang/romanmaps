@@ -44876,6 +44876,36 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5708,
+          42.6008
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_vii_gemina_leon",
+        "category": "fort",
+        "name_latin": "Legio",
+        "name_english": "Fortress of Legio VII Gemina (León)",
+        "province": "Hispania Tarraconensis",
+        "modern_location": "León, Spain",
+        "built": 74,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio VII Gemina, raised by Galba in 68 CE, built this stone fortress in 74 CE atop an earlier camp of Legio VI Victrix. The 20-hectare, playing-card-shaped enclosure held roughly 5,000 legionaries and anchored Rome's grip on the gold-rich mountains of northwestern Hispania. Its rectangular walls and rounded corners still trace the streets of León's old town, and the fortress gave the city its very name: Legio became León. The legion never left, garrisoning this same ground for over three centuries.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Legio_VII_Gemina",
+          "https://journalofromanarchaeology.com/wp-content/uploads/2020/04/v16_13_Morillo.pdf",
+          "https://es.wikipedia.org/wiki/Murallas_de_Le%C3%B3n"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Murallas_de_Le%C3%B3n_01.JPG?width=800",
+        "image_credit": "Roman-era walls of León, built by Legio VII Gemina · Wikimedia Commons"
+      }
     }
   ]
 }
