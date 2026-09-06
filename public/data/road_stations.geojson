@@ -21477,6 +21477,392 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.985,
+          32.829
+        ]
+      },
+      "properties": {
+        "id": "station_calamon_via_maris",
+        "category": "mutatio",
+        "name": "Calamon",
+        "road": "Via Maris (Ptolemais-Caesarea coastal segment)",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "A change-station (mutatio) on the coastal road between Ptolemais (Akko) and Caesarea Maritima, listed in the Itinerarium Burdigalense (Bordeaux Itinerary, 333 CE) as 12 Roman miles from civitas Ptolemaida, followed by the halt at Sycaminos 3 miles further on. No confident modern identification was found in available sources. Placed here at an approximate point along the coast between Akko and Haifa, proportionally spaced per the itinerary's stated mileage — this is an estimated position, not an excavated site. Dating caveat: attested in a 4th-century source; the station itself likely predates 117 CE (Via Maris was Rome's main north-south coastal artery from the 1st century CE) but explicit 2nd-century attestation is lacking.",
+        "sources": [
+          "Itin. Burdig. (Itinerarium Burdigalense) 583-584",
+          "https://en.wikipedia.org/wiki/Itinerarium_Burdigalense",
+          "https://topostext.org/work/231"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9611,
+          32.8036
+        ]
+      },
+      "properties": {
+        "id": "station_sycaminum",
+        "category": "mansio",
+        "name": "Sycaminum (Sycaminos / Sycaminopolis)",
+        "road": "Via Maris (Ptolemais-Caesarea coastal segment)",
+        "distance_from_previous_mp": 3,
+        "identified": true,
+        "notes": "A halt (mansio, called an 'inn' in some translations) on the Via Maris at the foot of Mt Carmel, 3 Roman miles beyond Calamon per the Bordeaux Itinerary. Conventionally identified with Tel Shiqmona at the southern edge of modern Haifa. FLAG: Haifa/Sycaminum is a real, independently significant Roman-period town (not merely a wayside stop) — check whether this project already has a Haifa-area/Sycaminum city POI elsewhere before adding this as a new point.",
+        "sources": [
+          "Itin. Burdig. 584",
+          "https://en.wikipedia.org/wiki/Itinerarium_Burdigalense",
+          "https://topostext.org/work/231"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.94,
+          32.713
+        ]
+      },
+      "properties": {
+        "id": "station_certa",
+        "category": "mutatio",
+        "name": "Certa",
+        "road": "Via Maris (Ptolemais-Caesarea coastal segment)",
+        "distance_from_previous_mp": 8,
+        "identified": false,
+        "notes": "A change-station on the coastal road, 8 Roman miles south of Sycaminum per the Bordeaux Itinerary, described there as marking the boundary between the provinces of Syria/Phoenice and Palaestina. No confident modern identification found; placed here as an approximate proportional point along the coast between Haifa and Caesarea (near modern Atlit), not an excavated location. This provincial-boundary role would postdate Judaea's absorption into a reorganized Syria-Palaestina arrangement — by 117 CE the relevant boundary was Syria/Judaea, not yet 'Palaestina' as a province name (that comes after 135 CE), so the Bordeaux-era administrative framing should not be read back onto 117 CE without caveat.",
+        "sources": [
+          "Itin. Burdig. 584",
+          "https://en.wikipedia.org/wiki/Itinerarium_Burdigalense"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9,
+          32.26
+        ]
+      },
+      "properties": {
+        "id": "station_betaro_junction",
+        "category": "mutatio",
+        "name": "Betarum / Betthar (uncertain — possibly two distinct stations)",
+        "road": "Via Maris / Caesarea-Jerusalem Road (near Caesarea)",
+        "distance_from_previous_mp": 16,
+        "identified": false,
+        "notes": "Two separate ancient sources cite a similarly-named station a comparable distance south/southeast of Caesarea, and it is genuinely unclear from available search-derived sources whether they are the same place: (1) the Antonine Itinerary's Iter from Caesarea gives 'Betarum' as 20 Roman miles from Caesarea en route to Diospolis (Lydda) on the southbound Via Maris; (2) the Itinerarium Burdigalense gives a change-station 'Betthar', cited in search snippets as roughly 16 Roman miles from Caesarea and 10 miles before Antipatris, on the inland Caesarea-Jerusalem road. Both may reflect one real waystation near where the coastal and inland roads diverged, or two distinct, similarly-transliterated places. WEBFETCH WAS BLOCKED IN THIS RESEARCH SESSION so the primary Latin text could not be checked directly to resolve this — flagged honestly rather than guessed. IMPORTANT ID-COLLISION WARNING: do not confuse either of these with Betar/Beitar (Khirbet el-Yahud, near modern Battir, SW of Jerusalem), the Bar Kokhba revolt fortress of 132-135 CE — a real, well-known, but geographically distinct site that postdates 117 CE. Coordinates here are an approximate interpolation along the Caesarea-Antipatris road at the stated mileage, not an excavated find-spot.",
+        "sources": [
+          "Antonine Itinerary, It. Ant. §150 (per topostext.org/work/687 synthesis)",
+          "Itin. Burdig. (search-derived, exact passage not independently verified)",
+          "https://topostext.org/work/687",
+          "https://en.wikipedia.org/wiki/Antonine_Itinerary",
+          "https://en.wikipedia.org/wiki/Itinerarium_Burdigalense"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9339,
+          32.1014
+        ]
+      },
+      "properties": {
+        "id": "station_antipatris",
+        "category": "civitas",
+        "name": "Antipatris",
+        "road": "Caesarea-Jerusalem Road",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Herod the Great founded Antipatris c. 9 BCE, naming it for his father Antipater, at the strong perennial springs of the Yarkon (biblical Aphek). It stood at the junction of the roads from Caesarea, Lydda and Jerusalem, on the narrow pass forced by the springs between the hill country and the coast, and was firmly in place and functioning in 117 CE. Modern identification with Tel Afek/Ras al-Ain is essentially certain. Distances cited: ~10 Roman miles from the station 'Betthar' toward Caesarea, and ~10 Roman miles further to Diospolis/Lydda, per the Bordeaux Itinerary's Caesarea-Jerusalem route; a separate, more direct Jerusalem-Antipatris road (used e.g. by Paul's overnight escort in Acts 23:31, mid-1st c. CE) is cited elsewhere as about 30 Roman miles from Jerusalem and 27 from Caesarea — the two figures describe different road alignments (a direct route vs. the longer Nicopolis/Lydda route), not a contradiction. FLAG: Antipatris is a well-known, independently notable place (Herod's building program, Acts 23) — check whether it already exists as a POI elsewhere in this project before merging.",
+        "sources": [
+          "Itin. Burdig. (Bordeaux Itinerary)",
+          "Acts 23:31",
+          "https://en.wikipedia.org/wiki/Antipatris",
+          "https://www.biblewalks.com/afeksharon/",
+          "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/antipatris"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.217,
+          31.908
+        ]
+      },
+      "properties": {
+        "id": "station_beeroth",
+        "category": "statio",
+        "name": "Beeroth",
+        "road": "Caesarea-Jerusalem Road (via Nicopolis/Emmaus)",
+        "distance_from_previous_mp": 7,
+        "identified": true,
+        "notes": "Eusebius' Onomasticon (composed before 324 CE, describing a road pattern likely much older) places Beeroth 7 Roman miles from Jerusalem on the road to Nicopolis (i.e. Emmaus), a village seen 'in passing' by travelers on that route. Traditionally identified with El-Bireh, but modern scholarship (Associates for Biblical Research) flags a real distance problem: El-Bireh is roughly 10 Roman miles from Jerusalem, not 7, and Eusebius describes the road as going west/slightly north rather than the more northerly road toward El-Bireh/Neapolis — so the El-Bireh identification is disputed rather than settled. Coordinates given are for the traditional El-Bireh identification; treat the exact find-spot as uncertain.",
+        "sources": [
+          "Eusebius, Onomasticon",
+          "https://biblearchaeology.org/research/founders-corner/3572-further-considerations-on-the-location-of-bethel-at-elbireh",
+          "https://www.biblicalcyclopedia.com/B/beeroth.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9871,
+          31.8378
+        ]
+      },
+      "properties": {
+        "id": "station_emmaus_nicopolis",
+        "category": "mansio",
+        "name": "Emmaus",
+        "road": "Caesarea-Jerusalem Road",
+        "distance_from_previous_mp": 22,
+        "identified": true,
+        "notes": "A village at the foot of the Judaean hills at the mouth of the Ayalon Valley, on the road between Jerusalem and Lydda/the coast. The Itinerarium Burdigalense (as 'Nicopoli') gives it as 22 Roman miles from Jerusalem and 10 from Lydda; the Peutinger Table gives roughly 19 miles from Jerusalem and Ptolemy's Geography about 20 — sources cluster consistently around 19-22 Roman miles. IMPORTANT NAMING/DATING NOTE: in 117 CE this place was simply the village 'Emmaus' — it was not renamed 'Nicopolis' until the early 3rd century CE (traditionally under Elagabalus, c. 221 CE, when it was granted city status); the Itinerarium Burdigalense (333 CE) and later sources use the anachronistic 'Nicopolis' name that postdates our target date, so 'Emmaus' is used here per project convention. Modern identification with Imwas/Amwas, near Latrun, is well established. FLAG: 'Emmaus' is also the name of the famous post-resurrection narrative site (Luke 24) from the 30s CE — a different context from this Roman-road waystation entry; check for a naming collision if this project has any NT-narrative-linked POIs.",
+        "sources": [
+          "Itin. Burdig. (as 'Nicopoli')",
+          "Tabula Peutingeriana",
+          "Ptolemy, Geography",
+          "https://www.emmaus-nicopolis.org/english/history-of-emmaus/early-roman-period",
+          "https://en.wikipedia.org/wiki/Emmaus"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.132,
+          32.043
+        ]
+      },
+      "properties": {
+        "id": "station_thamna",
+        "category": "statio",
+        "name": "Thamna",
+        "road": "Judaea interior road network (exact alignment/mileage not established)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Thamna (biblical Timnath-serah/Timnath-heres) was the administrative seat of one of the eleven toparchies (regional districts) into which Josephus describes Judaea being divided in the 1st century CE, and remained an active settlement through the Roman period, controlling one of the routes from the coastal plain up to Jerusalem. Well identified with Khirbet Tibnah in the Samarian hill country. No itinerary (Antonine, Bordeaux, or Peutinger) mileage figure for Thamna was found in available sources, so distance_from_previous_mp is left null rather than estimated — this is a genuine gap, not an oversight.",
+        "sources": [
+          "Josephus, Jewish War III.55 (toparchy list)",
+          "https://www.biblewalks.com/tibneh/",
+          "https://en.wikipedia.org/wiki/Khirbet_Tibnah"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.403,
+          31.832
+        ]
+      },
+      "properties": {
+        "id": "station_maledomni",
+        "category": "statio",
+        "name": "Maledomni (Ascent of Adummim garrison-station)",
+        "road": "Jerusalem-Jericho Road",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Eusebius' Onomasticon (pre-324 CE) describes 'Maledomni' — from Hebrew ma'ale adummim, 'ascent of blood/red' — as a garrisoned way-station on the descent from Jerusalem to Jericho, at the midpoint of that 18-Roman-mile road; the Notitia Dignitatum (early 5th c.) later lists a Cohors I Salutaris stationed there. Conventionally identified with the site of the later Byzantine 'Inn of the Good Samaritan' / Khan al-Ahmar, where excavations found occupation remains from the 1st century BCE-1st century CE in addition to the well-known Byzantine church and mosaics. DATING CAVEAT: the explicit textual attestation (Eusebius, the Notitia) is 3rd-5th century, and the formal garrison is only clearly documented from around 400 CE; whether a named Roman way-station already existed here specifically in 117 CE (as opposed to just a natural resting point on an already-ancient road) is plausible but not independently confirmed for that exact date. Coordinates are for the Good Samaritan Inn/Khan al-Ahmar site, positioned at roughly the midpoint of the attested 18-mile Jerusalem-Jericho distance (Bordeaux Itinerary), which is itself suggestive rather than proof of an exact ancient station there.",
+        "sources": [
+          "Eusebius, Onomasticon",
+          "Notitia Dignitatum Or. 34.47-48 (or similar; cited in secondary synthesis)",
+          "Itin. Burdig. (Jerusalem-Jericho = 18 miles)",
+          "https://en.wikipedia.org/wiki/Inn_of_the_Good_Samaritan",
+          "https://en.wikipedia.org/wiki/Adummim"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4718,
+          31.9662
+        ]
+      },
+      "properties": {
+        "id": "station_archelais",
+        "category": "statio",
+        "name": "Archelais",
+        "road": "Jericho-Scythopolis Road (Jordan Valley)",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Archelais was a Herodian-dynasty agricultural estate/town in the Jordan Valley north of Jericho, founded c. 4 BCE by Herod Archelaus, later part of the toparchy held by Herod's sister Salome and then by Livia — a functioning settlement well within our 117 CE window (Judaea was by then a Roman province, but the Jordan-valley date-palm estates around Jericho continued in operation). Positioned on the road from Jericho north to Scythopolis (Beit She'an). The Tabula Peutingeriana and the (much later) Madaba Map both place it 12 Roman miles north of Jericho. Identified with Khirbet el-Beiyudat, where excavations found a fortified Hasmonean/Herodian-period administrative center with an aqueduct fed from the spring of Ein Auja.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "Madaba Map",
+          "Josephus",
+          "https://en.wikipedia.org/wiki/Archelais",
+          "https://topostext.org/place/320355UArc",
+          "https://library.biblicalarchaeology.org/book/the-new-encyclopedia-of-archaeological-excavations-in-the-holy-land/beiyudat-khirbet-el-archelais/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3903,
+          32.0028
+        ]
+      },
+      "properties": {
+        "id": "station_phasaelis",
+        "category": "statio",
+        "name": "Phasaelis",
+        "road": "Jericho-Scythopolis Road (Jordan Valley)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Phasaelis was a Herodian estate/settlement in the Jordan Valley, founded by Herod the Great c. 8 BCE and named for his elder brother Phasael, renowned for its palm groves; it lay on the same Jericho-Scythopolis (Beit She'an) road as Archelais and remained inhabited through the Roman and Byzantine periods. Identified with Khirbet Fasayil (modern Fasayil village), about 14 km northwest of Jericho. No ancient-itinerary mile figure specifically for Phasaelis (as opposed to Archelais) was found in available sources, so distance_from_previous_mp is left null; the 14 km figure available is a modern-measured distance, not an ancient-attested Roman-mile citation, so it is not converted and asserted here as such.",
+        "sources": [
+          "Josephus, Jewish War I.418 / Antiquities XVI.145",
+          "https://en.wikipedia.org/wiki/Fasayil",
+          "https://topostext.org/place/320354UPha"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2378,
+          31.9337
+        ]
+      },
+      "properties": {
+        "id": "station_bethel",
+        "category": "statio",
+        "name": "Bethel",
+        "road": "Jerusalem-Neapolis Road",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Both Eusebius and Jerome state that Bethel lay near the 12th Roman milestone north of Jerusalem/Aelia on the road to Neapolis (Nablus/Shechem) — a distance-from-Jerusalem citation rather than a distance from a prior interior station, since Jerusalem is the road's starting point. Identified with the village of Beitin. FLAG: Bethel is an independently very well-known biblical (patriarchal-era) site; check whether it already exists in this project under a different (non-Roman-road) context before merging as a new point.",
+        "sources": [
+          "Eusebius, Onomasticon",
+          "Jerome",
+          "https://biblearchaeology.org/research/founders-corner/2702-locating-biblical-bethel",
+          "https://www.bibleplaces.com/bethel/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2231,
+          31.9539
+        ]
+      },
+      "properties": {
+        "id": "station_gophna",
+        "category": "statio",
+        "name": "Gophna",
+        "road": "Jerusalem-Neapolis Road",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Gophna was a Jewish village and toparchy capital in the Judaean hill country north of Jerusalem, on the road to Neapolis; it is also historically notable as a detention site during the Jewish revolts. A milestone found near the site has been read by different scholars as marking either the 13th or the 15th/16th Roman mile from Jerusalem (Clermont-Ganneau argued for 15, matching Eusebius' figure, against an initial reading of 13) — genuine scholarly disagreement, not resolved here. distance_from_previous_mp is left null given this dispute rather than asserting one contested figure as settled; see notes on station_bethel for the clearer 12-mile figure immediately to its south. Identified with the modern village of Jifna.",
+        "sources": [
+          "Eusebius, Onomasticon",
+          "https://en.wikipedia.org/wiki/Jifna",
+          "https://biblearchaeology.org/research/founders-corner/3572-further-considerations-on-the-location-of-bethel-at-elbireh"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.101,
+          31.586
+        ]
+      },
+      "properties": {
+        "id": "station_bethzur",
+        "category": "statio",
+        "name": "Beth-Zur (Bethsura)",
+        "road": "Jerusalem-Hebron Road",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "Beth-Zur was a fortified hilltop site on the Jerusalem-Hebron road (the ancient 'Way of the Patriarchs', roughly the line of the modern Route 60), commanding the approach to the Judaean plateau from the south/southwest and from the Elah Valley. Ancient sources place it 20 Roman miles from Jerusalem and about 2 miles short of Hebron. A full survey has recorded roughly 29 milestones along the Roman road between Hebron and Jerusalem generally. Identified with Khirbet et-Tubeiqa, near modern Halhul.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Beth-zur",
+          "https://www.biblicalcyclopedia.com/B/bethzur.html",
+          "https://www.haaretz.com/israel-news/travel/2024-03-08/ty-article-magazine/.premium/roman-roads-connected-gaza-hebron-jerusalem-and-tiberias-what-is-left-of-them-today/0000018e-18fe-d8fb-abff-5dfee1380000"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.024,
+          31.197
+        ]
+      },
+      "properties": {
+        "id": "station_malatha",
+        "category": "statio",
+        "name": "Malatha",
+        "road": "Hebron-Negev/Arabia Road (toward Petra frontier)",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "Malatha (an Idumaean-founded fortress reused by Rome) lay on the road running south from the Hebron hills into the northern Negev, roughly 20 Roman miles from Hebron and about 4 miles from Arad — part of the corridor linking Judaea's interior to the desert frontier and, further on via Mampsis/Elusa and the Arabah, toward the newly annexed province of Arabia and Petra (Via Nova Traiana, completed 110/111 CE under Trajan). DATING CAVEAT: the clearest garrison attestation (Cohors I Flavia) comes from later Roman military lists rather than a 117 CE-specific source; the site's function as a road station on this route is well attested for the Roman period generally, but its precise status in 117 CE itself is inferred rather than directly documented. No further named, confidently-identified station further south toward Petra/Zoar could be corroborated with a specific mileage figure in the sources available for this research pass — treat the Malatha-to-Petra stretch as a real gap rather than a confirmed dead-end.",
+        "sources": [
+          "https://milestones.kinneret.ac.il/en/excavation-along-the-roman-road-segment-between-hebron-and-mampsis-near-har-amasa/",
+          "https://en.wikipedia.org/wiki/Arabia_Petraea",
+          "https://en.wikipedia.org/wiki/Via_Traiana_Nova"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
