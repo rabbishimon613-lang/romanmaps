@@ -3932,14 +3932,14 @@
         "name_english": "Fortress of Legio VI Ferrata (Legio/Caparcotna)",
         "province": "Iudaea",
         "modern_location": "Legio/Kefar 'Otnay, near Megiddo Junction, Israel",
-        "built": 117,
+        "built": 135,
         "destroyed": null,
-        "extant_117ce": true,
-        "notes": "Legio VI Ferrata was brought into Judaea as its second permanent legion (alongside X Fretensis at Jerusalem) in the aftermath of the Kitos War, founding a camp on a hill above the Jezreel Valley near Kefar 'Otnay/Caparcotna (which gave the later settlement its name, 'Legio', and eventually modern Lajjun/Megiddo). Sources consistently cite 117 CE for this establishment, though the user's brief flags — and archaeological/epigraphic work (Tel Aviv University/Jezreel Valley Regional Project excavations) leaves open — that the stone fortress construction and full garrison strength may date slightly later, c. 117-120 CE, into Hadrian's reign. May have briefly overlapped in the area with II Traiana Fortis (see separate entry) during this same transitional year before that legion moved on toward Egypt.",
+        "extant_117ce": false,
+        "notes": "Legio VI Ferrata's permanent camp on this Jezreel Valley hill above Kefar 'Otnay gave the later settlement its name, Legio, and eventually modern Lajjun and Megiddo Junction. The legion did not arrive here until decades after Trajan's death, moving in only after the Bar Kokhba War of 132-136 shifted Rome's Judaean garrison, with an inscription fixing its presence by 152. At the moment of this map's snapshot the legion was still stationed on the Euphrates at Samosata, and the camp here was empty ground.",
         "sources": [
-          "https://popular-archaeology.com/article/the-legionary-base-of-the-roman-sixth-ferrata-legion-at-legio-israel/",
-          "https://www.biblicalarchaeology.org/daily/biblical-sites-places/biblical-archaeology-sites/legio/",
-          "https://www.worldhistory.org/article/1943/legions-of-judea/"
+          "David Kennedy, \"Legio VI Ferrata: The Annexation and Early Garrison of Arabia\", Harvard Studies in Classical Philology 84 (1980)",
+          "Ritterling, \"Legio\", Realencyclopadie der classischen Altertumswissenschaft",
+          "https://en.wikipedia.org/wiki/Legio_(Roman_camp)"
         ],
         "confidence": "medium",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Legion_VI_Megiddo_070715_02.jpg?width=800",
@@ -45154,6 +45154,34 @@
           "https://en.wikipedia.org/wiki/Classe,_ancient_port_of_Ravenna",
           "https://en.wikipedia.org/wiki/Classis_Ravennas",
           "https://www.romanports.org/en/the-ports/110-ravenna-civitas-classis-italy.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.5628,
+          37.5814
+        ]
+      },
+      "properties": {
+        "id": "poi_fortress_vi_ferrata_samosata",
+        "category": "fort",
+        "name_latin": "Samosata",
+        "name_english": "Legio VI Ferrata's camp at Samosata",
+        "province": "Syria",
+        "modern_location": "Samsat, Adiyaman Province, Turkey (site now submerged under the Ataturk Dam reservoir)",
+        "built": -60,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Samosata guarded the Euphrates crossing that carried the great trade road east, and Rome kept a legion on the mound above the river from the mid-first century onward. Legio VI Ferrata held this post through Trajan's Armenian and Parthian campaigns of 114-116, and the best-supported reading has the legion still here, not yet posted to Judaea, at Trajan's death. The mound itself rose 50 meters over the plain and carried a citadel of magazines, baths, and barrack halls; it disappeared under the Ataturk Dam's reservoir in the 1990s, so nothing of the camp can be visited today.",
+        "sources": [
+          "David Kennedy, \"Legio VI Ferrata: The Annexation and Early Garrison of Arabia\", Harvard Studies in Classical Philology 84 (1980)",
+          "https://en.wikipedia.org/wiki/Samsat",
+          "https://topostext.org/place/375385USam"
         ],
         "confidence": "medium"
       }

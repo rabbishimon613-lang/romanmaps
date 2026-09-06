@@ -1220,37 +1220,42 @@ to prevent. Building locally to *test* your own work is expected and fine.
 
 ## P2
 
-- [~] `[08-P2-8]` **`vi-ferrata-caparcotna-dating`** `verify` — claimed by cloud shift 105, 2026-09-06 06:00. Shift 1 of 2026-09-06's four-shift
-      run, researching whether Samosata should get a Legio XVI Flavia Firma fortress record
-      (declined — see below), found a real complication with an *existing* record instead:
-      `poi_fortress_vi_ferrata_caparcotna`'s move to Judaea is conventionally tied to Hadrian's
-      reign (commonly linked to the Bar Kokhba war, 132–135 CE), which would put it 15-18 years
-      past this map's 117 CE snapshot — the same kind of anachronism `[08-P1-6]` baalbek-dating
-      already corrected for the Temple of Bacchus. One line of scholarship instead has VI Ferrata
-      still garrisoning Samosata itself in 117 (after returning there post-Trajan's 114 Armenian
-      campaign), which would mean the existing Caparcotna record is both mis-dated *and* possibly
-      mis-located for this snapshot. Needs a dedicated research pass across both candidate
-      locations and firm dates before touching the existing record — flagging rather than fixing
-      as a side effect, same principle Shift 103 applied to the Samosata question itself.
-- [~] `[03-P2-9]` **`shipwreck-snapshot-policy`** `fix` — claimed by cloud shift 105, 2026-09-06 06:00. Shift 1 of 2026-09-06's four-shift run
-      researched 18 new candidate shipwrecks for the `shipwreck` POI category (Axis 3i) and found
-      13 of them — real, well-documented, individually named wrecks (Blackfriars Ship 1, the
-      Zwammerdam river barges, the Black Sea MAP wreck, the Asterix wreck, Pudding Pan, County
-      Hall, and 7 more) — are dated 150–390 CE, decades to nearly three centuries past this map's
-      117 CE snapshot. Checked both existing event-like categories exempted from the
-      `extant_117ce` render gate (`battle` and `shipwreck` in `PoiMarkers.tsx`) and found every
-      single one of the 22 existing shipwrecks and every one of the ~40 `battle` records already
-      in `pois.geojson` tops out at 90 CE and exactly 117 CE respectively — neither category has
-      ever carried a post-snapshot date before now. Only the 5 candidates dated ≤117 CE were added
-      this shift (`poi_shipwreck_grado`, `_cala_cicala`, `_kizilburun`, `_bou_ferrer`, `_culip_iv`);
-      the other 13's full researched records (id/coords/date/notes/sources) are preserved in this
-      shift's SHIFT_LOG entry, ready to paste in once this ticket is resolved either way. This
-      needs a deliberate editorial decision, not another shift quietly picking a side: either (a)
-      rule the shipwreck layer strictly snapshot-bound like every other event category and
-      classify those 13 as out of scope for this project entirely, or (b) give it an explicit
-      "archaeological trade evidence, not living-memory" framing distinct from `battle` (e.g. a
-      legend note, or a `beyond_snapshot: true` field the card can render honestly) and unblock
-      adding them and any future finds like them.
+- [x] `[08-P2-8]` **`vi-ferrata-caparcotna-dating`** `verify` — Resolved 2026-09-06 by cloud
+      shift 105. Dedicated research pass (Kennedy, "Legio VI Ferrata: The Annexation and Early
+      Garrison of Arabia", *HSCP* 84 (1980); Ritterling's "Legio" article; Tepper/Adams/David's
+      Jezreel Valley Regional Project excavation reports) found no real 117 CE case for Caparcotna
+      at all: Ritterling's earliest solid epigraphic attestation there is 152 CE, and Kennedy
+      traces the legion Samosata → Arabia → Syria Palaestina, reaching Judaea only around or after
+      the Bar Kokhba War (132–136) — the popular "117 CE" figure repeated by tertiary sources
+      (Wikipedia, Livius.org, x-legio) traces to a 19th-century source that elsewhere argues for
+      the *later* date, i.e. a corrupted transmission, not a real primary-source date. Also found
+      the likely garbling: the existing record's "second permanent legion... in the aftermath of
+      the Kitos War" framing is `poi_fortress_ii_traiana_fortis_caparcotna`'s own narrative
+      (confirmed correct on its own terms), absorbed into VI Ferrata's record in error. Fixed:
+      `poi_fortress_vi_ferrata_caparcotna`'s `extant_117ce` flipped true → false, `built` corrected
+      117 → 135, notes rewritten to state the Hadrianic/Bar-Kokhba-era garrison plainly and drop
+      the Kitos War framing, sources swapped to the citations that actually settled it. Added a new
+      record, `poi_fortress_vi_ferrata_samosata` (`extant_117ce: true`, confidence medium), for the
+      legion's actual last well-attested Trajanic station on the Euphrates — no image found for a
+      site now submerged under the Ataturk Dam reservoir, shipped without one rather than force a
+      wrong photo. `npm run validate` clean.
+- [x] `[03-P2-9]` **`shipwreck-snapshot-policy`** `fix` — Resolved 2026-09-06 by cloud shift 105:
+      **decision (a), strictly snapshot-bound.** `battle` and `shipwreck` are exempted from the
+      `extant_117ce` render gate on the theory that they're historical-memory markers, not
+      structures — but a memory only exists for something that has already happened by the
+      snapshot instant. A battle looks backward by construction (every one of the ~40 existing
+      records is ≤117 CE, several within living memory). A shipwreck dated 150–390 CE is not a
+      memory in 117 CE — the ship was, as far as anyone alive at the snapshot knew, still afloat.
+      Framing (b) ("archaeological trade evidence, not living memory") would have made shipwreck
+      the only category on the map showing the future rather than the past or present, breaking
+      the "one frozen snapshot in time, not a timeline" premise `SHIFT_BRIEF.md` opens with — not
+      a distinction worth a schema field. The 13 deferred records from the prior shift's research
+      (Blackfriars Ship 1, Zwammerdam, the Black Sea MAP wreck, Asterix, Pudding Pan, County Hall,
+      and 7 more, all real and well-sourced but dated 150–390 CE) are **permanently declined**,
+      not parked — do not re-propose adding them without overturning this decision first. Enforced
+      going forward, not just documented: `scripts/validate.mjs`'s `checkPoi` now warns if a
+      `battle`/`shipwreck` record's `built` year is after 117 (0 fired against the existing 68
+      records), and `PoiMarkers.tsx`'s render-gate comment states the policy explicitly.
 - [x] `[07-P1-3]` **`prices`** `deepen` — Done 2026-08-19 by cloud shift 32. New "What things
       cost" section in `app/CurrencyConverter.tsx`, five well-attested period prices/wages, each
       with a real citation and no Diocletian's-Edict anachronism (that's 301 CE, 184 years past

@@ -238,6 +238,15 @@ function checkPoi(file, f, i) {
   if (Number.isFinite(built) && Number.isFinite(destroyed) && destroyed < built) {
     err(file, `${label} — destroyed (${p.destroyed}) is before built (${p.built})`);
   }
+  // [03-P2-9]: "battle" and "shipwreck" are the two categories PoiMarkers.tsx exempts from the
+  // extant_117ce render gate, on the theory that they're historical-memory markers looking
+  // backward from the snapshot, not structures. That only holds if every record actually predates
+  // the snapshot — a battle or wreck dated after 11 Aug 117 hasn't happened yet at the snapshot
+  // instant, so it can't be a memory. Warn rather than err since "built" is an approximate year
+  // for a shipwreck's sinking, not a hard field this schema originally defined for events.
+  if ((p.category === "battle" || p.category === "shipwreck") && Number.isFinite(built) && built > 117) {
+    warn(file, `${label} — ${p.category} dated ${p.built}, after the 117 CE snapshot; both categories are snapshot-bound (see BOARD.md [03-P2-9])`);
+  }
   checkSources(file, label, p);
   checkConfidence(file, label, p, true);
   checkImage(file, label, p);

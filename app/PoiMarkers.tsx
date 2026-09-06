@@ -59,7 +59,10 @@ export default function PoiMarkers() {
         if (f.geometry?.type !== "Point") return false;
         // "extant_117ce" gates standing structures — a destroyed/not-yet-built building
         // shouldn't get a pin. Battles and shipwrecks are historical-memory event markers, not
-        // structures (almost never "extant"), so they're exempt from that gate.
+        // structures (almost never "extant"), so they're exempt from that gate. That only holds
+        // looking backward, though: per BOARD.md [03-P2-9], both categories are strictly bound to
+        // on-or-before 11 August 117 CE, same as every other record on this map — a battle or
+        // wreck dated after the snapshot hasn't happened yet and doesn't belong here.
         return p.extant_117ce === true || p.category === "battle" || p.category === "shipwreck";
       });
       featuresRef.current = feats;
