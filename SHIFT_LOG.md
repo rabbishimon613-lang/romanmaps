@@ -159,6 +159,18 @@ question is settled in favor of adding them:
 ]
 ```
 
+### Addendum — image top-up on this shift's own new records (commits `dd8e22b`, `5723829`)
+
+After closing the log above, ran one more research pass against this shift's own 27 image-less
+records (18 road stations, 9 POIs) rather than leaving them for a future shift to rediscover.
+Found real, verified Commons images for 8: road stations Herculia, Theveste, Thamugadi, Lambaesis
+(reusing the exact photo already verified on `poi_fortress_iii_augusta_lambaesis` — same site),
+Diana Veteranorum, Sitifis; and canals Amnis Traianus, Fossa Corbulonis. The other 19 stay
+image-null after a genuine search — two are worth flagging specifically: `station_mascula` and
+`station_fortiana` each turned up a real Commons photo, but of a *different*, nearby site (Aquae
+Flavianae for the former, a medieval castle for the latter) — declined both rather than mislabel.
+`METRICS.md` image coverage 62.8% → 63.0% (all curated places).
+
 ### What's next
 
 - **`[08-P2-8]` vi-ferrata-caparcotna-dating** — needs a dedicated research pass on whether
