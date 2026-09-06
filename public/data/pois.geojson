@@ -45185,6 +45185,1031 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7719,
+          48.8656
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_abusina",
+        "category": "auxiliary_fort",
+        "name_latin": "Abusina",
+        "name_english": "Eining Roman Fort",
+        "province": "Raetia",
+        "modern_location": "Eining, Neustadt an der Donau, Germany",
+        "built": 80,
+        "destroyed": 254,
+        "extant_117ce": true,
+        "notes": "Cohors IV Gallorum raised Abusina's first timber-and-earth rampart around AD 80 at the exact spot where the Danube road split from the Raetian limes road running south. The fort guarded a river crossing 30 kilometers southwest of Regensburg for well over a century before Alemanni raiders overran the frontier in 233. Soldiers here spent their days watching barge traffic on the Danube rather than fighting, and finds from the site include imported Samian ware and a small bathhouse built for off-duty comfort. Rome finally pulled the garrison in 254 as the Raetian limes collapsed.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Abusina",
+          "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0006%3Aentry%3Dabusina",
+          "https://followinghadrianphotography.com/2020/09/23/abusina/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5956,
+          48.8878
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_sorviodurum",
+        "category": "auxiliary_fort",
+        "name_latin": "Sorviodurum",
+        "name_english": "Straubing Roman Fort",
+        "province": "Raetia",
+        "modern_location": "Straubing, Germany",
+        "built": 75,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman engineers took a Celtic river-crossing name and built a garrison fort on it in the second half of the 1st century AD, anchoring the Raetian Danube frontier at Straubing. The base ran for roughly 300 years, only getting proper stone walls under Antoninus Pius decades after Trajan's death. Soldiers, traders, and craftsmen built up a lively vicus around the ramparts, and archaeologists still turn up Roman coins and pottery across the modern town center. Straubing's museum today displays a hoard of Roman parade masks found nearby, among the finest ever recovered from the empire.",
+        "sources": [
+          "https://www.limesstrasse.de/en/deutsche-limes-strasse/limes-road/mitgliedsorte/straubing",
+          "https://www.wikidata.org/wiki/Q1528907"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.825272,
+          48.647484
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_submuntorium",
+        "category": "auxiliary_fort",
+        "name_latin": "Submuntorium",
+        "name_english": "Burghöfe Roman Fort",
+        "province": "Raetia",
+        "modern_location": "Burghöfe, Mertingen, Germany",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legionaries planted this garrison on a promontory above the meeting point of the Danube and Lech rivers around AD 50, giving Rome eyes on both waterways 30 kilometers north of Augsburg. The timber fort anchored one of Raetia's most important early military sites and kept soldiers stationed there for more than three and a half centuries. Munich archaeologists spent 2001 to 2007 excavating the site and turned up successive phases of barracks and a civilian vicus that grew up alongside the garrison. A late Roman fortification eventually replaced the original camp around 300, long after the fort's first Trajanic-era occupants had moved on.",
+        "sources": [
+          "https://www.vfp-archaeologie.uni-muenchen.de/forschung/provinzial/abgprov/burghoefe/index.html",
+          "https://vici.org/vici/9744/?lang=en",
+          "https://de.wikipedia.org/wiki/Submuntorium"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.409438,
+          48.562546
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_phoebiana",
+        "category": "auxiliary_fort",
+        "name_latin": "Phoebiana",
+        "name_english": "Faimingen Roman Fort",
+        "province": "Raetia",
+        "modern_location": "Faimingen, Lauingen, Germany",
+        "built": 90,
+        "destroyed": 120,
+        "extant_117ce": true,
+        "notes": "A cohort fort went up at Faimingen in AD 90 to hold the Danube line and protect a crossing point that grew into a real trading settlement. Soldiers here still manned the ramparts on the day Trajan died in August 117, though the garrison would abandon the post within three years as troop dispositions shifted. The vicus that formed around the fort outlived the military presence and later became home to a substantial temple to Apollo Grannus, drawing pilgrims from across the region. A second, larger cavalry fort rose on the same ground more than a century later, in 233, after the original site had sat quiet for decades.",
+        "sources": [
+          "https://vici.org/vici/9742/?lang=en",
+          "https://vici.org/vici/9949/?lang=en",
+          "https://followinghadrian.com/2022/02/28/winter-ad-121-2-hadrian-inspects-the-northern-frontiers-part-2-raetia-hadrian1900/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.27133,
+          48.45267
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_guntia",
+        "category": "auxiliary_fort",
+        "name_latin": "Guntia",
+        "name_english": "Günzburg Roman Fort",
+        "province": "Raetia",
+        "modern_location": "Günzburg, Germany",
+        "built": 77,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Rome planted a cavalry garrison at the confluence of the Günz and Danube rivers around AD 77 to lock down a key river crossing on the Raetian frontier. Riders stationed here spent decades patrolling the water approach into the province rather than facing pitched battles. The base gave its name to the modern town that grew from its vicus, and the crossing itself stayed strategically important long after Trajan's reign, still guarded as the transitus guntiensis into the late Roman period. Günzburg's town center sits directly over ground its Roman garrison once patrolled.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Cohors_I_Raetorum",
+          "https://www.kupi.com/en-ae/explore/germany/gunzburg/history"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4622,
+          48.5697
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_boiodurum",
+        "category": "auxiliary_fort",
+        "name_latin": "Boiodurum",
+        "name_english": "Passau-Innstadt Roman Fort",
+        "province": "Noricum",
+        "modern_location": "Passau-Innstadt, Germany",
+        "built": 85,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Emperor Domitian's engineers raised this small castellum on the Noric bank of the Inn river, right where Noricum met Raetia at the westernmost edge of the Danube frontier. The fort sat directly across the water from where a much larger Batavian cohort base would rise decades later, splitting the border town of Passau between two provinces long before it became one city. Its garrison watched over a critical river junction where the Inn, Ilz, and Danube all meet. Modern Passau's Roman museum, built over the old fort site, now walks visitors through a reconstructed timeline of the frontier post.",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q2739859",
+          "https://www.academia.edu/85446587/M_Bloier_The_Noric_fort_of_Boiodurum_Passau_Innstadt_Attempt_at_a_virtual_reconstruction_361_368",
+          "https://www.discover-bavaria.com/destinations/roman-museum-passau"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.5964,
+          48.3811
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_favianis",
+        "category": "auxiliary_fort",
+        "name_latin": "Favianis",
+        "name_english": "Mautern Roman Fort",
+        "province": "Noricum",
+        "modern_location": "Mautern an der Donau, Austria",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman auxiliaries dug the first moat-and-rampart camp at Favianis in the 1st century AD, planting a permanent garrison on the Noric Danube limes. Stone walls replaced the earthwork defenses in the following century, and the base anchored this stretch of frontier for hundreds of years afterward. A horseshoe-shaped tower from the fort's western defenses still stands today, one of the best-preserved pieces of Roman military architecture on the whole Austrian Danube. The Renaissance building known as the Göttweigisches Haus in modern Mautern was built directly on top of the old Roman ramparts.",
+        "sources": [
+          "https://www.donau.com/en/wachau-nibelungengau-kremstal/imx/excursion-and-recreation/mautern-the-ancient-favianis/",
+          "http://imperium.ahlfeldt.se/places/6141.html",
+          "https://www.academia.edu/6479422/Contextual_Archaeology_the_Late_Antique_Fort_and_Vicus_Favianis_Mautern_Methods_and_Results"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mautern_an_der_Donau_-_Kastell_Favianis,_westlicher_Hufeisenturm.JPG?width=800",
+        "image_credit": "Wikimedia Commons",
+        "image_alt": "Surviving horseshoe tower of the Favianis fort at Mautern an der Donau"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.1958,
+          48.2075
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_arelape",
+        "category": "auxiliary_fort",
+        "name_latin": "Arelape",
+        "name_english": "Pöchlarn Roman Fort",
+        "province": "Noricum",
+        "modern_location": "Pöchlarn, Austria",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The cohors I Astrum gave Arelape its name and built the first wood-and-earth fort here in the closing decades of the 1st century AD. A military diploma dated to AD 106 lists that same cohort among the units serving in Noricum, confirming a garrison was still in place a decade before Trajan's death. Troops held this Danube post continuously for roughly 400 years, from the 1st century clear through the 5th. Archaeologists have since documented the site so thoroughly that an entire monograph in the Austrian limes series is devoted to Arelape alone.",
+        "sources": [
+          "https://followinghadrian.com/2022/04/06/winter-ad-121-2-hadrian-inspects-the-northern-frontiers-part-3-noricum-hadrian1900/",
+          "https://www.amazon.com/Norische-Donaukastell-Pochlarn-Romische-Osterreich/dp/3700183682"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.0575,
+          48.3283
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_comagena",
+        "category": "auxiliary_fort",
+        "name_latin": "Comagena",
+        "name_english": "Tulln Roman Fort",
+        "province": "Noricum",
+        "modern_location": "Tulln an der Donau, Austria",
+        "built": 85,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Emperor Domitian's army built Comagena as an earth-and-timber camp for a full cavalry wing of 500 riders, the ala I Commagenorum, guarding a militarily vital Danube ford. Engineers replaced the ramparts with stone in the early 2nd century, right as Trajan's reign was ending. The fort covered five to six hectares and controlled river traffic and the lowlands for miles in both directions along the valley. Tulln's Roman Museum now sits on the town's main square directly above the old camp, and the fort later even hosted a Roman river fleet.",
+        "sources": [
+          "https://military-history.fandom.com/wiki/Comagena",
+          "https://www.tulln.at/en/experience/city-culture/roman/tulln-is-comagena-1",
+          "https://en.wikipedia.org/wiki/Fort_Ala_Nova"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.1763,
+          48.3286
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_cannabiaca",
+        "category": "auxiliary_fort",
+        "name_latin": "Cannabiaca",
+        "name_english": "Zeiselmauer Roman Fort",
+        "province": "Noricum",
+        "modern_location": "Zeiselmauer, Austria",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman soldiers raised Cannabiaca around AD 80 on a gravel terrace set halfway between the neighboring camps at Tulln and Klosterneuburg, making it Noricum's easternmost fort on the whole Danube limes. The two-hectare enclosure was sized for a standard 500-man cohort, first built in timber and rebuilt in stone at the start of the 2nd century. A late Roman burgus added centuries later still stands here today, unmatched anywhere else along the Austrian Danube. The site earned UNESCO World Heritage status in 2021 as part of the Danube Limes inscription.",
+        "sources": [
+          "https://www.cannabiaca.com/en/roemische-geschichte/",
+          "http://danubelimesbrand.org/sites/austria/zeiselmauer-cannabiaca/",
+          "https://www.wikidata.org/wiki/Q1156633"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zeiselmauer_-_Burgus.JPG?width=800",
+        "image_credit": "Wikimedia Commons",
+        "image_alt": "Late Roman burgus tower at the Cannabiaca fort site, Zeiselmauer"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3272,
+          48.3062
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_klosterneuburg",
+        "category": "auxiliary_fort",
+        "name_latin": "Arrianis (disputed)",
+        "name_english": "Klosterneuburg Roman Fort",
+        "province": "Pannonia Superior",
+        "modern_location": "Klosterneuburg, Austria",
+        "built": 90,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A Roman garrison fort sat on the Danube directly upstream from Vindobona, one link in the chain of camps guarding the river approach to Vienna. Historians still argue over whether ancient writers meant this spot when they wrote of a place called Arrianis, since the identification rests on circumstantial geography rather than an inscription found on site. The fort belonged administratively to Pannonia rather than Noricum, sitting just east of the provincial boundary marked by Zeiselmauer. Klosterneuburg's medieval abbey and vineyards now cover the ground its Roman garrison once held.",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q1735390",
+          "https://www1.leiza.de/transformation/noricum/struktur/noricum_struktur_englisch.htm"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9167,
+          48.35
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_zwentendorf",
+        "category": "auxiliary_fort",
+        "name_latin": "Piro Torto",
+        "name_english": "Zwentendorf Roman Fort",
+        "province": "Noricum",
+        "modern_location": "Zwentendorf an der Donau, Austria",
+        "built": 300,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "The Tabula Peutingeriana records a station called Piro Torto sitting exactly 8 Roman miles from both Comagena and Traismauer on the Vindobona-Lauriacum road, and researchers matched that distance to modern Zwentendorf. Unlike its Domitianic-era neighbors along this stretch of the Danube, the fort here belongs to the late Roman building program, going up roughly two centuries after Trajan's death. Excavations in the late 1950s and early 1960s uncovered one of the better-documented late Roman forts on the whole Austrian limes. UNESCO folded the site into the Danube Limes World Heritage listing in 2021.",
+        "sources": [
+          "https://de.wikipedia.org/wiki/Kastell_Zwentendorf",
+          "https://austria-forum.org/af/AustriaWiki/Kastell_Zwentendorf"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9333,
+          47.0
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_intercisa",
+        "category": "auxiliary_fort",
+        "name_latin": "Intercisa",
+        "name_english": "Dunaújváros Roman Fort",
+        "province": "Pannonia Inferior",
+        "modern_location": "Dunaújváros, Hungary",
+        "built": 100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Trajan's engineers raised the first palisade fort at Intercisa on a 165-meter-wide plan, planting a garrison on the Pannonian limes that would later host the famous Syrian archer unit, the cohors I milliaria Hemesenorum. The stone fort that replaced it kept troops here for generations, and the attached vicus grew into a real riverside town. Intercisa is now counted among the most thoroughly excavated Roman forts on the entire Danube frontier. Its Mithraeum finds and prismatic glass bottles fill display cases in Hungarian museums today.",
+        "sources": [
+          "https://www.akjournals.com/view/journals/072/75/2/article-p215.xml",
+          "https://www.mithraeum.eu/place/42",
+          "https://www.danubetourism.eu/intercisa-roman-fort-and-vicus-dunaujvaros/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0333,
+          47.4167
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_albertfalva",
+        "category": "auxiliary_fort",
+        "name_latin": "Albertfalva",
+        "name_english": "Budapest-Albertfalva Roman Fort",
+        "province": "Pannonia Inferior",
+        "modern_location": "Budapest (District XI), Hungary",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A palisade fort with double ditches and towers went up on the Albertfalva plain in the mid-1st century AD, sized to hold a full 500-strong cavalry unit guarding the gap between Aquincum and Campona. Builders rebuilt the whole camp in stone after AD 106, just as Trajan was wrapping up the Dacian wars a few years before his death. Sarmatian raiders from across the Danube destroyed the fort more than once, and each time Roman troops rebuilt it rather than abandon the post. The vicus that grew up around the garrison eventually sprawled across an enormous 72-hectare area.",
+        "sources": [
+          "https://www.aquincum.hu/en/romaiorokseg/az-albertfalvi-romai-tabor-es-telepules/",
+          "https://www.wikidata.org/wiki/Q578687"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.9,
+          47.6833
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_ad_statuas",
+        "category": "auxiliary_fort",
+        "name_latin": "Ad Statuas",
+        "name_english": "Ács Roman Fort",
+        "province": "Pannonia Superior",
+        "modern_location": "Ács, Hungary",
+        "built": 175,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Roman troops threw up Ad Statuas as a wood-and-earth fort in the final quarter of the 2nd century, filling a gap on the road between Arrabona and Brigetio after the Marcomannic Wars had exposed the frontier. Builders finished the stone version under Emperor Caracalla, decades after the war that prompted the fort in the first place. This stretch of the Pannonian limes had gone unfortified in Trajan's day, since the threat that built Ad Statuas didn't materialize until the 170s. Recent fieldwork on the northern ripa Pannonica has significantly sharpened the picture of the site's layout.",
+        "sources": [
+          "https://www.academia.edu/118805561/The_fort_of_Ad_Mures_%C3%81cs_Kom%C3%A1rom_Esztergom_County_Hungary_New_investigations_on_the_northern_section_of_the_ripa_Pannonica",
+          "https://www.wikidata.org/wiki/Q1735438"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0513,
+          47.4926
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_contra_aquincum",
+        "category": "auxiliary_fort",
+        "name_latin": "Contra Aquincum",
+        "name_english": "Pest Bridgehead Fort",
+        "province": "Pannonia Inferior",
+        "modern_location": "Budapest (Március 15 tér), Hungary",
+        "built": 300,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Rome fortified the east bank of the Danube opposite Aquincum with a diamond-shaped bridgehead fort measuring 84 by 86 meters, its walls a solid 3.5 meters thick. Builders raised the stone defenses in the 4th century, roughly two hundred years after Trajan's death, to anchor a bridge linking the two banks and defend the crossing from Sarmatian territory to the east. The site sits today under Március 15 Square on the Pest side, right beside the Elizabeth Bridge, where visible foundations still poke through the modern pavement. Whatever earlier watch post may have stood here under Trajan left no confirmed trace.",
+        "sources": [
+          "https://www.aquincum.hu/en/romaiorokseg/contra-aquincum/",
+          "https://www.livius.org/articles/place/aquincum/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.59278,
+          44.29222
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_aquae_moesiae",
+        "category": "auxiliary_fort",
+        "name_latin": "Aquae",
+        "name_english": "Prahovo Roman Fort",
+        "province": "Moesia Superior",
+        "modern_location": "Prahovo, Serbia",
+        "built": 101,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Rome built Aquae right where the Timok river empties into the Danube, turning the spot into both a military strongpoint and a river port during the campaigns that conquered Dacia. The station sat downstream of the Iron Gates on the road linking Singidunum and Ratiaria, giving troops and supplies a fast route toward the new province across the river. Mining traffic from the interior passed through here too, layering commercial importance on top of the military one. The site later grew into one of the largest urban centers of the province of Dacia Ripensis during late antiquity.",
+        "sources": [
+          "https://www.degruyterbrill.com/document/doi/10.1515/opar-2018-0025/html?lang=en",
+          "https://www.academia.edu/67684448/The_Aquae_Station_on_the_Roman_Danube_Limes_Road_in_Upper_Moesia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.90944,
+          44.63806
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_saldum",
+        "category": "auxiliary_fort",
+        "name_latin": "Saldum",
+        "name_english": "Saldum Iron Gates Fort",
+        "province": "Moesia Superior",
+        "modern_location": "Near Dobra, Golubac, Serbia",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Flavian-era troops founded Saldum at the mouth of the Kožica brook to guard the entrance to the Upper Gorge of the Iron Gates, one link in the chain of forts controlling the Danube's most dangerous stretch. The square fort measured 140 by 120 meters and bristled with 14 towers along rounded corners, a design that archaeologists have traced through five distinct building phases spanning the 1st through 6th centuries. Rome's engineers here worked hard to tame a river the Danube itself made nearly unnavigable. The Đerdap I hydroelectric dam eventually flooded the site, submerging the fort beneath the reservoir it helped inspire modern engineers to build over.",
+        "sources": [
+          "https://www.academia.edu/9939285/Roman_fort_Saldum_on_the_Middle_Danube_and_connections_with_the_province_of_Dacia",
+          "https://www.academia.edu/9815970/Late_Roman_and_Early_Byzantine_Pottery_from_the_Fort_of_Saldum_on_the_Middle_Danube_limes"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.583,
+          44.767
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_ad_herculem",
+        "category": "auxiliary_fort",
+        "name_latin": "Ad Herculem (or Castra Herculis)",
+        "name_english": "Pojejena Roman Fort",
+        "province": "Moesia Superior",
+        "modern_location": "Pojejena, Romania",
+        "built": 95,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Roman troops built this fort near the entrance to the Iron Gates gorge at the end of the 1st century AD, right where the un-navigable rocky stretch of the Danube begins. Geophysical surveys have since mapped its embankment, wall, and ditch in detail without settling every question archaeologists have about it. Historians still debate whether the garrison here answered to the governor of Moesia or of newly conquered Dacia, since the fort sat almost exactly on the border between the two. Its ancient name survives only as a best guess, reconstructed from fragmentary references to a place called Ad Herculem or Castra Herculis.",
+        "sources": [
+          "https://scienceinpoland.pl/en/news/news,31667,romania-scientists-have-determined-layout-roman-fort-pojejena.html",
+          "https://www.archaeology.wiki/blog/2018/11/14/scientists-have-determined-the-layout-of-the-roman-fort-in-pojejena/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.483,
+          43.7
+        ]
+      },
+      "properties": {
+        "id": "poi_fort_oescus",
+        "category": "fort",
+        "name_latin": "Oescus",
+        "name_english": "Ulpia Oescus",
+        "province": "Moesia Inferior",
+        "modern_location": "Gigen, Bulgaria",
+        "built": 10,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Legio V Macedonica held this fortress at the meeting of the Iskar river and the Danube on and off from around AD 10, making it one of the oldest continuously garrisoned legionary bases on the whole Moesian frontier. The legion marched off toward Troesmis in 101 to fight in Trajan's Dacian campaigns, and Trajan rewarded the site by elevating it to Colonia Ulpia Oescensium in AD 106, naming it in honor of his victory. By 117 the old fortress had become a full Roman city rather than a working military camp, complete with its own civic institutions. Excavations have since recovered a mosaic of Menander's comedies and inscribed statue bases now housed in the Pleven regional museum.",
+        "sources": [
+          "https://www.academia.edu/406078/_Oescus_from_castra_to_colonia_In_Archaeologia_bulgarica_XII_2008_3_69_76",
+          "https://archaeologyinbulgaria.com/background-infonotes/fortresses-cities/ulpia-oescus-gigen-bulgaria/",
+          "https://en.wikipedia.org/wiki/Legio_V_Macedonica"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Colonia_Ulpia_Oescus,_Moesia_Inferior,_Bulgaria_(41347393362).jpg?width=800",
+        "image_credit": "Wikimedia Commons",
+        "image_alt": "Ruins of Colonia Ulpia Oescus at Gigen, Bulgaria"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.117,
+          43.664
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_dimum",
+        "category": "auxiliary_fort",
+        "name_latin": "Dimum",
+        "name_english": "Belene Roman Fort",
+        "province": "Moesia Inferior",
+        "modern_location": "Belene, Bulgaria",
+        "built": 75,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Dimum started life as a customs station marking the northeastern edge of Roman Moesia under Augustus, then grew into a proper stone-and-earth fort during the Flavian dynasty. Rome rebuilt the defenses here five separate times over the site's long life, a testament to how seriously the garrison at this Danube crossing was taken. A cavalry regiment took up residence in the early 2nd century and likely oversaw one of those rebuilding projects. The fort sat in the northern part of what is now the town of Belene, guarding river traffic for over 600 years of continuous use.",
+        "sources": [
+          "https://belene.bg/en/tourism/antient-customs-dimum/",
+          "http://visit.guide-bulgaria.com/a/757/roman_military_castle_dimum.htm"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.6122,
+          44.0489
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_transmarisca",
+        "category": "auxiliary_fort",
+        "name_latin": "Transmarisca",
+        "name_english": "Tutrakan Roman Fort",
+        "province": "Moesia Inferior",
+        "modern_location": "Tutrakan, Bulgaria",
+        "built": 60,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A Roman settlement took root at Transmarisca around AD 40 to 50, and the military upgraded its defenses under both Vespasian and Trajan to keep pace with the growing importance of this stretch of the Moesian limes. Sitting directly across the Danube from Oltenița, the garrison here manned a permanent post for well over two centuries before Diocletian later rebuilt the whole complex into one of the largest strongholds on the lower Danube. An inscription from 294 records part of Legio XI Claudia stationed here, long after the original auxiliary garrison first took up the post. The fort also doubled as an important road station on the route linking Danube crossings.",
+        "sources": [
+          "https://archaeologyinbulgaria.com/background-infonotes/fortresses-cities/transmarisca-fortress-tutrakan-bulgaria/",
+          "http://danubelimesbrand.org/sites/bulgaria/tutrakan-transmarisca/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.0219,
+          44.3319
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_axiopolis",
+        "category": "auxiliary_fort",
+        "name_latin": "Axiopolis",
+        "name_english": "Cernavodă Roman Fort",
+        "province": "Moesia Inferior",
+        "modern_location": "Cernavodă, Romania",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Greek traders founded a post here in the 4th century BC to deal with local Dacian tribes, and Rome later folded the site into its Danubian defensive network as part of the Moesian limes. The fort sat on high ground 80 meters above the river, giving its garrison a commanding view over one of the most important Danube crossings in Dobrogea. Rome rebuilt and reinforced the site repeatedly over the centuries as the frontier's needs shifted. Cernavodă today still carries the ancient name in slightly altered form, a rare case of continuous toponymic survival on this stretch of river.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Axiopolis_(castra)",
+          "https://www.rri.ro/en/features-and-reports/rri-encyclopaedia/axiopolis-id811486.html"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.9522,
+          44.6814
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_carsium",
+        "category": "auxiliary_fort",
+        "name_latin": "Carsium",
+        "name_english": "Hârșova Roman Fort",
+        "province": "Moesia Inferior",
+        "modern_location": "Hârșova, Romania",
+        "built": 103,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Trajan's army built Carsium in AD 103 to guard one of the most important Danube crossings on this stretch of frontier, right on the road heading into newly contested Dacian territory. The cavalry unit ala II Hispanorum et Aravacorum eventually took over the garrison, following an earlier detachment already recorded here between 98 and 117. A naval detachment of the Classis Moesica shared the site, giving Rome both river and land coverage at this single strongpoint. The fort anchored the defensive system of the Limes Moesiae for generations after Trajan's death.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Carsium_(castra)",
+          "https://archeologie.culture.gouv.fr/harsova/en/roman-byzantine-city-carsium"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.0903,
+          44.4936
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_capidava",
+        "category": "auxiliary_fort",
+        "name_latin": "Capidava",
+        "name_english": "Capidava Roman Fort",
+        "province": "Moesia Inferior",
+        "modern_location": "Capidava, Constanța County, Romania",
+        "built": 105,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Soldiers from Legio V Macedonica and Legio XI Claudia built Capidava's fortifications in the early 2nd century under Trajan, overlooking a forested bend of the Danube 25 kilometers north of Cernavodă. The fort anchored the Moesian limes and doubled as a civil and military hub once the surrounding province settled into peacetime administration. A cavalry detachment called the cuneus equitum Solensium later held the post, according to the Notitia Dignitatum. The site stayed inhabited for nearly 900 years, from its founding all the way through the early medieval period.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Capidava",
+          "https://www.romania-insider.com/romania-photo-day-dreamstime-capidava-fortress-sept-8-2022"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cetatea_Capidava-CT-I-m-A-02600.01.JPG?width=800",
+        "image_credit": "Wikimedia Commons",
+        "image_alt": "Ruins of the Roman fort at Capidava on the Danube"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.8152,
+          45.1855
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_aegyssus",
+        "category": "auxiliary_fort",
+        "name_latin": "Aegyssus",
+        "name_english": "Tulcea Roman Fort",
+        "province": "Moesia Inferior",
+        "modern_location": "Tulcea, Romania",
+        "built": 106,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Rome folded this hilltop stronghold into the Moesian defensive frontier right after Trajan's Dacian Wars wrapped up in the early 2nd century, turning a site with roots stretching back to the 4th century BC into a working Roman garrison and port. The fort sat on the Colnicul Hora promontory, giving its defenders a clear view over the Danube approach to the delta. A detachment of the Classis Flavia Moesica used the harbor here alongside the land garrison, mirroring the arrangement at nearby Noviodunum. The site remained one of the most continuously important points in Dobrogea for the next thousand years, straight through the Middle Ages.",
+        "sources": [
+          "https://www.arheo.ro/en/2026/04/07/aegyssus-2/",
+          "https://topostext.org/place/452288UAig"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.9896,
+          45.4049
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_barbosi",
+        "category": "auxiliary_fort",
+        "name_latin": "Tirighina-Bărboși",
+        "name_english": "Galați Bridgehead Fort",
+        "province": "Moesia Inferior",
+        "modern_location": "Tirighina, Galați, Romania",
+        "built": 105,
+        "destroyed": 275,
+        "extant_117ce": true,
+        "notes": "Roman troops raised a fort on the Tirighina hill right where the Siret river meets the Danube, building over an earlier Dacian earthwork during Trajan's push into Dacia. The pentagonal stone fortification and rectangular Roman camp together covered roughly 10 hectares, making this bridgehead one of the larger outposts on this stretch of frontier. Its position north of the main river put it at the very edge of secured territory, watching the approaches into conquered Dacian land. Rome abandoned the post at the end of the 3rd century as troop dispositions shifted, and archaeologists only rediscovered the site during excavations in 1959 to 1962.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Castra_of_Tirighina-B%C4%83rbo%C8%99i",
+          "https://historia.ro/sectiune/general/castrul-de-la-tirighina-barbosi-avanpostul-roman-571897.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.490479,
+          34.334964
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_thamusida",
+        "category": "auxiliary_fort",
+        "name_latin": "Thamusida",
+        "name_english": "Thamusida Roman Camp",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Sidi Ali ben Ahmed, near Kenitra, Morocco",
+        "built": 80,
+        "destroyed": 280,
+        "extant_117ce": true,
+        "notes": "The cohors II Syrorum civium Romanorum built a camp on the left bank of the Sebou river in the late 1st century AD, and stamped bricks found on site confirm exactly which unit did the work. At two hectares, the camp ranked among the largest military installations in the whole province, its rampart studded with 14 interior towers and four gates flanked by projecting towers. Roman soldiers held the post for roughly two centuries, watching river traffic 15 kilometers north of Kenitra. Rome finally pulled the garrison out sometime between 274 and 285, likely as part of a broader military withdrawal from the province's interior.",
+        "sources": [
+          "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Dthamusida",
+          "https://en.wikipedia.org/wiki/Thamusida",
+          "https://www.ancient-history-sites.com/sites/thamusida/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Thamusida,_Mauretania_Tingitana,_Morocco_(38384660375).jpg?width=800",
+        "image_credit": "Wikimedia Commons",
+        "image_alt": "Ruins of the Roman military camp at Thamusida, Morocco"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5503,
+          34.1041
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_ain_schkour",
+        "category": "auxiliary_fort",
+        "name_latin": "Castellum at Aïn Schkour",
+        "name_english": "Aïn Schkour Roman Fort",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Aïn Schkour, near Volubilis, Morocco",
+        "built": 70,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "The cohors I Asturum et Callaecorum, a unit raised in Roman Spain, garrisoned this castellum through the 1st and into the 2nd century AD, standing guard three kilometers north of Volubilis. The fort formed one link in a ring of camps protecting the provincial capital from raids across the nearby Limes Africanus. Stone quarries on the slopes of the Jebel Zerhoun just east of the fort supplied much of the building material later used to construct Volubilis itself. The cohors IV Tungrorum rebuilt the whole post in the 3rd century, long after the original Spanish garrison had moved on.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/A%C3%AFn_Schkor",
+          "https://en.wikipedia.org/wiki/Cohors_I_Asturum_et_Callaecorum",
+          "https://www.wikidata.org/wiki/Q30692860"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5694,
+          34.0711
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_sidi_said",
+        "category": "auxiliary_fort",
+        "name_latin": "Castra at Sidi Said",
+        "name_english": "Sidi Said Roman Fort",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Sidi Said, Meknès Prefecture, Morocco",
+        "built": 150,
+        "destroyed": 500,
+        "extant_117ce": false,
+        "notes": "Rome garrisoned this castra with the cohors IV Gallorum equitata, a cavalry cohort from Gaul, as one of five camps ringing Volubilis against raiders crossing the Limes Africanus. Builders put the fort up during the 2nd century AD, part of a wider reinforcement of the Volubilis frontier that fell largely outside Trajan's reign. The garrison held the post for more than four centuries before Rome abandoned it around the 6th century AD, remarkably late for a Mauretanian frontier fort. Sidi Said today is little more than a hamlet, its Roman past visible only in scattered foundation stones.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sidi_Said,_Morocco",
+          "https://dbpedia.org/page/Sidi_Said,_Morocco"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.4952,
+          34.107
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_sidi_moussa",
+        "category": "auxiliary_fort",
+        "name_latin": "Castra at Sidi Moussa Bou Fri",
+        "name_english": "Sidi Moussa Roman Fort",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Sidi Moussa, Karmet Ben Salem, Meknès Prefecture, Morocco",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "An unusual Parthian cohort held this castra, one of five camps that together guarded Volubilis from tribal incursions across the nearby Limes Africanus. Archaeologists date the fort to the 2nd century AD, placing its construction outside Trajan's reign and likely tied to Hadrian's reorganization of the Mauretanian frontier after 117. The tiny modern hamlet built over the site counted just 63 residents in Morocco's 2004 census. Little else about the garrison survives beyond its identification as one link in the ring of Volubilis defenses.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sidi_Moussa_(Fes-Meknes)",
+          "https://en.wikipedia.org/wiki/Karmet_Ben_Salem"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5811,
+          34.0381
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_tocolosida",
+        "category": "auxiliary_fort",
+        "name_latin": "Tocolosida",
+        "name_english": "Tocolosida Roman Camp",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Sidi Saïd (El-Jezira), near Volubilis, Morocco",
+        "built": 145,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Emperor Antoninus Pius ordered this castra built southeast of Volubilis to house squadrons of Gallic and Syrian cavalry defending the provincial capital, work that took place more than two decades after Trajan died in 117. The fort even earned a mention on the Antonine Itinerary and in Ptolemy's Geography, unusual documentary attention for a Mauretanian outpost. An aqueduct once carried water into the camp, and French archaeologists first excavated the ruins in the early 20th century. Tocolosida guarded the frontier for centuries afterward, remaining active into the 3rd century AD.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Tocolsida",
+          "https://www.wikidata.org/wiki/Q30692864"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.98,
+          34.68
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_souk_el_arbaa",
+        "category": "auxiliary_fort",
+        "name_latin": "Tabernae (identification debated)",
+        "name_english": "Souk El Arbaa Roman Camp",
+        "province": "Mauretania Tingitana",
+        "modern_location": "Souk El Arbaa du Gharb, Morocco",
+        "built": 80,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "Archaeologists uncovered the eastern section of a 100-meter-square Roman camp here in 1954 and 1955, at a site known locally as Ferme Biarnay in the fertile Gharb plain. Ancient sources placed a station called Tabernae on the road between Tingi and Volubilis, and this camp is one of the leading candidates for that identification, though scholars have never fully settled the question. A railroad trench dug for the Rabat-Tangiers line destroyed the western half of the camp before its full extent could be recorded. Roman baths found nearby suggest the camp anchored a real settlement rather than a bare-bones garrison post.",
+        "sources": [
+          "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0006%3Aalphabetic+letter%3DT%3Aentry+group%3D6%3Aentry%3Dtremuli",
+          "https://fr.wikipedia.org/wiki/Souk_El_Arbaa_du_Gharb"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1,
+          34.95
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_altava",
+        "category": "auxiliary_fort",
+        "name_latin": "Altava",
+        "name_english": "Altava Roman Fort",
+        "province": "Mauretania Caesariensis",
+        "modern_location": "Ouled Mimoun, Algeria",
+        "built": 200,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Rome garrisoned Altava with the cohors II Sardorum as part of Septimius Severus's push to move the frontier of Mauretania Caesariensis south from the Mediterranean coast, work that happened nearly a century after Trajan's death. The new defensive road called the Nova Praetentura ran through here, connecting Rapidum in Numidia all the way to the province's western edge. A vicus grew up independently around the garrison fort, eventually building a huge forum and a pagan temple later converted into a church. Altava's Roman garrison would eventually give way to something far larger: after 429 the town became capital of an independent Berber kingdom that outlasted Rome's presence in the region entirely.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Altava",
+          "https://en.wikipedia.org/wiki/Kingdom_of_Altava"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.3167,
+          34.8828
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_pomaria",
+        "category": "auxiliary_fort",
+        "name_latin": "Pomaria",
+        "name_english": "Tlemcen Roman Fort",
+        "province": "Mauretania Caesariensis",
+        "modern_location": "Tlemcen, Algeria",
+        "built": 150,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "Roman soldiers founded a military outpost here in the 2nd century AD, drawn to the site's fertile land and reliable water sources on the western edge of Mauretania Caesariensis. The name Pomaria simply means orchards, a fitting label for a garrison post that grew into a real agricultural settlement around it. A civilian town grew up in the shadow of the camp and eventually gave its name to the whole area, later resurfacing as the medieval city of Tlemcen. Little firm evidence pins down exactly which unit garrisoned Pomaria or precisely when in the 2nd century the fort first went up.",
+        "sources": [
+          "https://www.kupi.com/en-ae/explore/algeria/tlemcen/history",
+          "https://www.catholic.com/encyclopedia/pomaria"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2294,
+          35.0993
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_ala_miliaria",
+        "category": "auxiliary_fort",
+        "name_latin": "Ala Miliaria",
+        "name_english": "Beniane Roman Fort",
+        "province": "Mauretania Caesariensis",
+        "modern_location": "Beniane, Mascara Province, Algeria",
+        "built": 201,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A cavalry unit called the Ala Miliaria gave this fort its name and established the garrison in the year 201, nearly a century after Trajan's death, making it a clearly Severan-period addition to the Mauretanian frontier. Inscriptions document soldiers from this post turning up at other sites across the province, including Cherchell, Portus Magnus, and Sig, tracing personnel movements across the whole military network. The fort was important enough to later become a bishopric under the metropolitan see of Caesarea, with two named Donatist bishops recorded in the early 5th century. Early 20th-century excavations at Beniane uncovered the inscriptions that let historians reconstruct this whole picture.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Beniane",
+          "https://journals.openedition.org/encyclopedieberbere/2407?lang=en"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.7167,
+          34.85
+        ]
+      },
+      "properties": {
+        "id": "poi_auxfort_numerus_syrorum",
+        "category": "auxiliary_fort",
+        "name_latin": "Numerus Syrorum",
+        "name_english": "Maghnia Roman Fort",
+        "province": "Mauretania Caesariensis",
+        "modern_location": "Maghnia, Algeria",
+        "built": 200,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A unit of Syrian archers called the numerus Severianus Alexandrinus Syrorum held this outpost, the westernmost garrison in all of Mauretania Caesariensis, right at the edge of the border with Tingitana. The French army rediscovered the site's remains in 1836 near modern Maghnia, long buried and forgotten. The fort belonged to the Severan-era Nova Praetentura frontier system, built roughly a century after Trajan's reign as Rome pushed its defensive line south and west. A later Roman road built under Emperor Macrinus in 217-18 traced the nearby Tafna river, following almost exactly where the Tingitana-Caesariensis provincial border ran.",
+        "sources": [
+          "http://imperium.ahlfeldt.se/places/34098.html",
+          "https://assets.press.princeton.edu/B_ATLAS/BATL029_.pdf"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
