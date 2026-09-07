@@ -25015,6 +25015,254 @@
         ],
         "confidence": "high"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.62,
+          45.87
+        ]
+      },
+      "properties": {
+        "id": "station_ad_fornolus",
+        "category": "mutatio",
+        "name": "Ad Fornolus",
+        "road": "Amber Road (Aquileia-Carnuntum)",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "Ad Fornolus was a change-station on the road climbing out of Aquileia into the Vipava valley toward Emona. Travelers changed horses here twelve miles out, per the Bordeaux Pilgrim's 333 CE itinerary. Its exact site along the route through the Karst has not been pinned down archaeologically.",
+        "sources": [
+          "Itinerarium Burdigalense (It. Burd. 560.1)",
+          "https://www.academia.edu/46903629/Roman_road_network_and_secondary_settlements_in_the_hinterland_of_Caput_Adriae"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.9111,
+          45.8886
+        ]
+      },
+      "properties": {
+        "id": "station_fluvio_frigido",
+        "category": "mansio",
+        "name": "Fluvio Frigido (Castra)",
+        "road": "Amber Road (Aquileia-Carnuntum)",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Fluvio Frigido was the mansio at the ford of the cold river that gave the station its name, serving travelers on the Aquileia-Emona road from the 1st century BC onward. The Roman army built the fort of Castra beside it in the late 3rd century to guard Italy's eastern approach. The site grew into the modern town of Ajdovščina, where fortress walls still stand.",
+        "sources": [
+          "Antonine Itinerary (It. Ant. 128.3)",
+          "Tabula Peutingeriana",
+          "https://en.wikipedia.org/wiki/Castra_ad_Fluvium_Frigidum",
+          "https://www.goriskimuzej.si/en/permanent-exhibitions/museum-collection-ajdovscina/fluvio-frigido-castra-flovius-ajdovscina"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0333,
+          45.85
+        ]
+      },
+      "properties": {
+        "id": "station_ad_pirum",
+        "category": "statio",
+        "name": "Ad Pirum",
+        "road": "Amber Road (Aquileia-Carnuntum)",
+        "distance_from_previous_mp": 9,
+        "identified": true,
+        "notes": "Ad Pirum stood at the 858-meter summit of the Hrušica pass, the highest point on the road between Aquileia and Emona. A postal and customs station operated there from the reign of Augustus, and the site became an oval fort of the Claustra Alpium Iuliarum defense line in the 320s CE. Excavated walls and towers survive at Hrušica near Ajdovščina today.",
+        "sources": [
+          "Itinerarium Burdigalense (It. Burd. 560.3)",
+          "https://en.wikipedia.org/wiki/Ad_Pirum",
+          "https://claustra.org/lokacije/hrusica-ad-pirum/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2333,
+          45.9167
+        ]
+      },
+      "properties": {
+        "id": "station_longaticum",
+        "category": "mansio",
+        "name": "Longaticum",
+        "road": "Amber Road (Aquileia-Carnuntum)",
+        "distance_from_previous_mp": 10,
+        "identified": true,
+        "notes": "Longaticum was a roadside inn on the descent from the Julian Alps toward Emona, ten miles past the Ad Pirum summit station. The Bordeaux Pilgrim recorded it as a mansio in 333 CE. The station gave its name to the modern town of Logatec, which grew up on the same site.",
+        "sources": [
+          "Itinerarium Burdigalense (It. Burd. 560.4)",
+          "Antonine Itinerary (It. Ant. 128.4)",
+          "https://en.wikipedia.org/wiki/Logatec"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.78,
+          46.2
+        ]
+      },
+      "properties": {
+        "id": "station_ad_publicanos",
+        "category": "statio",
+        "name": "Ad Publicanos",
+        "road": "Amber Road (Aquileia-Carnuntum)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Ad Publicanos was a customs post on the Emona-Celeia road, its name marking it as a station of the publicani who collected the Illyrian customs duty. The Tabula Peutingeriana placed it six miles from Atrans and eleven miles from the Sava river crossing. Excavated remains of a multi-phase settlement and Roman-era graves at Blagovica match that position.",
+        "sources": [
+          "Tabula Peutingeriana",
+          "Pleiades: https://pleiades.stoa.org/places/197081",
+          "M. Šašel Kos, on the Italy-Noricum-Pannonia border stations"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.96,
+          46.25
+        ]
+      },
+      "properties": {
+        "id": "station_ad_medias_noricum_pannonia_border",
+        "category": "mutatio",
+        "name": "Ad Medias",
+        "road": "Amber Road (Aquileia-Carnuntum)",
+        "distance_from_previous_mp": 13,
+        "identified": false,
+        "notes": "Ad Medias was a change-station the Bordeaux Pilgrim placed thirteen miles east of Atrans and another thirteen miles short of Celeia, at the midpoint of that stretch of road. Neither the Antonine Itinerary nor the Peutinger Table records it, so it is known only from the 333 CE pilgrim account. Its site has not been pinned down, with Vransko, Ločica pri Vranskem and Gomilsko all proposed.",
+        "sources": [
+          "Itinerarium Burdigalense (It. Burd. 561.2)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.3644,
+          46.3633
+        ]
+      },
+      "properties": {
+        "id": "station_ad_lotodos",
+        "category": "mutatio",
+        "name": "Ad Lotodos",
+        "road": "Amber Road (Aquileia-Carnuntum)",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "Ad Lotodos was a change-station the Bordeaux Pilgrim recorded twelve miles east of Celeia on the road to Poetovio. Pleiades places its representative point near Slovenske Konjice, in the valley the Roman road followed. No excavated remains have been tied to the name.",
+        "sources": [
+          "Itinerarium Burdigalense (It. Burd. 561.4)",
+          "Pleiades: https://pleiades.stoa.org/places/197069"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.47,
+          46.38
+        ]
+      },
+      "properties": {
+        "id": "station_ragindone",
+        "category": "mansio",
+        "name": "Ragindone",
+        "road": "Amber Road (Aquileia-Carnuntum)",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "Ragindone was an inn the Bordeaux Pilgrim placed twelve miles east of Ad Lotodos and another twelve miles short of Poetovio, roughly midway along the Celeia-Poetovio road. The Antonine Itinerary and the Peutinger Table also list the station, under the variant spelling Ragando. Its exact site along the Dravinja valley has not been identified.",
+        "sources": [
+          "Itinerarium Burdigalense (It. Burd. 562.1)",
+          "Antonine Itinerary (It. Ant. 129.5)",
+          "Tabula Peutingeriana",
+          "Vici.org: https://vici.org/vici/1974/"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.57,
+          46.4
+        ]
+      },
+      "properties": {
+        "id": "station_pultovia",
+        "category": "vicus",
+        "name": "Pultovia",
+        "road": "Amber Road (Aquileia-Carnuntum)",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Pultovia was the last change-station before Poetovio, twelve miles out on the road from Celeia. Archaeologists place the vicus at Slovenska Bistrica, and a Roman milestone found nearby at Starše records the same road. Travelers would have paused here before the final approach into the legionary city.",
+        "sources": [
+          "Itinerarium Burdigalense (It. Burd. 562.2)",
+          "CIL III 17-04-01, no. 138 (milestone, Starše)",
+          "Vici.org: https://vici.org/vici/56782/"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.5389,
+          46.5486
+        ]
+      },
+      "properties": {
+        "id": "station_halicanum",
+        "category": "statio",
+        "name": "Halicanum",
+        "road": "Amber Road (Aquileia-Carnuntum)",
+        "distance_from_previous_mp": 31,
+        "identified": true,
+        "notes": "Halicanum was a road station on the route from Poetovio toward Savaria, thirty-one miles out of the city. The Antonine Itinerary and the Ravenna Cosmography both name it, and an inscription from Aquincum suggests it later held municipium status under Hadrian. Archaeologists identify the site with Sveti Martin na Muri, on the Mura river in modern Croatia.",
+        "sources": [
+          "Antonine Itinerary (It. Ant. 261.6)",
+          "Ravenna Cosmography",
+          "https://www.researchgate.net/publication/264375520_The_Roman_Army_along_the_Amber_Road_between_Poetovio_and_Carnuntum"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
