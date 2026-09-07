@@ -24257,6 +24257,79 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.317,
+          37.867
+        ]
+      },
+      "properties": {
+        "id": "station_calpurniana_baetica",
+        "category": "mansio",
+        "name": "Calpurniana",
+        "road": "Corduba-Castulo Mining Road",
+        "distance_from_previous_mp": 25,
+        "identified": false,
+        "notes": "Calpurniana was the first stop out of Corduba on the alternate southern road to the silver and lead mines around Castulo, a route that ran along the left bank of the Guadalquivir rather than the main highway through Epora. Roman-era tombs, coins, millstones, and lead piping have turned up around Cañete de las Torres and Bujalance in the area where the station is thought to have stood, though no inscription has pinned down the exact site.",
+        "sources": [
+          "Itin. Ant. 402.1",
+          "https://www.andalucia.com/province/cordoba/canete-de-las-torres/home.htm"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.0569,
+          37.935
+        ]
+      },
+      "properties": {
+        "id": "station_vircao_baetica",
+        "category": "mansio",
+        "name": "Vircao",
+        "road": "Corduba-Castulo Mining Road",
+        "distance_from_previous_mp": 20,
+        "identified": true,
+        "notes": "Vircao, also written Vircaone in the itinerary manuscripts, was the mansio at Urgavo, a sizeable Iberian and Roman town on the road that carried ore traffic from the Sierra Morena mines down to Corduba. The site is identified with modern Arjona, where Urgavo minted its own coinage and later held municipal status as Municipium Albense Urgavonense.",
+        "sources": [
+          "Itin. Ant. 402.2",
+          "http://dare.ht.lu.se/places/26955.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.756,
+          37.9647
+        ]
+      },
+      "properties": {
+        "id": "station_iliturgis_baetica",
+        "category": "mansio",
+        "name": "Iliturgis",
+        "road": "Corduba-Castulo Mining Road",
+        "distance_from_previous_mp": 34,
+        "identified": true,
+        "notes": "Iliturgis stood on a fortified plateau on the south bank of the Guadalquivir at the point where the road up from Corduba turned north for the final leg to the Castulo mining district. Pliny the Elder called it Forum Iulium for its importance as a river-trade market, and excavations at Cerro Máquiz have uncovered its walls, an aqueduct, cisterns, and a large paved public plaza with a small temple.",
+        "sources": [
+          "Itin. Ant. 402.4",
+          "https://topostext.org/place/380000UIli",
+          "https://www.andalucia.org/listing/yacimiento-arqueol%C3%B3gico-de-la-iliturgi-romana-(cerro-maquiz)/25024102/"
+        ],
+        "confidence": "high"
+      }
     }
   ]
 }
