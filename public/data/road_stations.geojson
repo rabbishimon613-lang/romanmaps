@@ -22918,6 +22918,293 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.8901,
+          35.5809
+        ]
+      },
+      "properties": {
+        "id": "station_ad_mercurii_tingitana",
+        "category": "statio",
+        "name": "Ad Mercurii (junction; possibly Bled Mers)",
+        "road": "Tingis-Volubilis Road (inland) / Tingis-Sala Coastal Road (junction)",
+        "distance_from_previous_mp": 18,
+        "identified": false,
+        "notes": "A road-junction station 18 Roman miles south of Tingis where the inland road to Volubilis and the coastal road to Sala and Lixus split, named for a roadside shrine of Mercury. Some scholarship tentatively equates it with a site called Bled Mers, unconfirmed by excavation, so the exact modern findspot is unlocated.",
+        "sources": [
+          "Antonine Itinerary, Mauretania Tingitana routes (It. Ant. 7-8)",
+          "Barrington Atlas Map 28 (Mauretania Tingitana), compiled M. Euzennat, 1995"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.8937,
+          35.423
+        ]
+      },
+      "properties": {
+        "id": "station_ad_novas_tingitana",
+        "category": "mansio",
+        "name": "Ad Novas",
+        "road": "Tingis-Volubilis Road (inland)",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "A station on the inland Tingis-Volubilis road, 12 Roman miles beyond the Ad Mercurii junction and 32 miles before Oppidum Novum. No secure modern identification; an old, unverified proposal places it near the Beni Aros massif north of Ouezzane.",
+        "sources": [
+          "Antonine Itinerary, Mauretania Tingitana routes (It. Ant. 7-8)",
+          "Barrington Atlas Map 28 (Mauretania Tingitana), compiled M. Euzennat, 1995"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9028,
+          34.9989
+        ]
+      },
+      "properties": {
+        "id": "station_oppidum_novum_tingitana",
+        "category": "civitas",
+        "name": "Oppidum Novum (Ksar-el-Kebir)",
+        "road": "Tingis-Volubilis Road (inland)",
+        "distance_from_previous_mp": 32,
+        "identified": true,
+        "notes": "A native town on the inland Tingis-Volubilis road at the strategic crossing of the Wadi Loukkos, identified with modern Ksar-el-Kebir on the strength of two funerary inscriptions, a since-lost bronze statuette, and Roman-period remains on the town's north and west outskirts. It lay 32 Roman miles from Ad Novas and 12 miles before Tremulis.",
+        "sources": [
+          "Antonine Itinerary, Mauretania Tingitana routes",
+          "Princeton Encyclopedia of Classical Sites, 'Ksar-el-Kebir (Oppidum novum)'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.98,
+          34.68
+        ]
+      },
+      "properties": {
+        "id": "station_tremulis_tingitana",
+        "category": "praesidium",
+        "name": "Tremulis (Souk el-Arba du Gharb)",
+        "road": "Tingis-Volubilis Road (inland)",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Identified with Souk el-Arba du Gharb, where the ancient name is attested on stamped tegulae found at the site. It was fortified from the 2nd century CE as part of the strengthened Sebou-basin frontier alongside Thamusida and Banasa, and sits on the inland road between Oppidum Novum and Viposcianis.",
+        "sources": [
+          "Antonine Itinerary, Mauretania Tingitana routes",
+          "Princeton Encyclopedia of Classical Sites, 'Tremuli (Souk el Arba du Gharb)'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.8533,
+          34.4705
+        ]
+      },
+      "properties": {
+        "id": "station_viposcianis_tingitana",
+        "category": "mansio",
+        "name": "Viposcianis (Vopisciana)",
+        "road": "Tingis-Volubilis Road (inland)",
+        "distance_from_previous_mp": 19,
+        "identified": false,
+        "notes": "An inland station on the Tingis-Volubilis road between Tremulis and Gilda, also transmitted as Vopisciana. Older scholarship has tentatively proposed a location near Sidi Larbi Boujemaa, but no precise modern findspot is confirmed.",
+        "sources": [
+          "Antonine Itinerary, Mauretania Tingitana routes",
+          "Princeton Encyclopedia of Classical Sites, entry naming 'Sidi Larbi Boujemaa (Vopisciana)'"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7,
+          34.2167
+        ]
+      },
+      "properties": {
+        "id": "station_gilda_tingitana",
+        "category": "mansio",
+        "name": "Gilda (near Souk el-Arba de Sidi Slimane)",
+        "road": "Tingis-Volubilis Road (inland)",
+        "distance_from_previous_mp": 23,
+        "identified": true,
+        "notes": "A Roman-period settlement in a loop of the Wadi Beht near Souk el-Arba de Sidi Slimane, where the name is attested on stamped tegulae. It sat on the inland Tingis-Volubilis road, 23 Roman miles from Viposcianis and 12 miles before Aquae Dacicae.",
+        "sources": [
+          "Antonine Itinerary, Mauretania Tingitana routes",
+          "Princeton Encyclopedia of Classical Sites, 'Gilda (Souk el Arba de Sidi-Slimane)'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.6374,
+          34.1561
+        ]
+      },
+      "properties": {
+        "id": "station_aquae_dacicae_tingitana",
+        "category": "mansio",
+        "name": "Aquae Dacicae",
+        "road": "Tingis-Volubilis Road (inland)",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "Named in the Antonine Itinerary 16 Roman miles before Volubilis on the inland road from Tingis. Older scholarship proposed the Moulay Yacoub hot springs near Fez, but that site lies on the wrong side of Volubilis relative to the itinerary's direction of travel, so the identification is not used here as geographically implausible.",
+        "sources": [
+          "Antonine Itinerary, Mauretania Tingitana routes",
+          "Princeton Encyclopedia of Classical Sites, 'Aquae Dacicae (Sidi Moulay Yakoub)' - identification disputed here"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5813,
+          34.038
+        ]
+      },
+      "properties": {
+        "id": "station_tocolosida_tingitana",
+        "category": "praesidium",
+        "name": "Tocolosida (Bled Takourart)",
+        "road": "Volubilis-Tocolosida Frontier Road",
+        "distance_from_previous_mp": 4,
+        "identified": true,
+        "notes": "A fort on the Wadi R'dem in the Atlas foothills, 4 Roman miles south of Volubilis, one of five castra ringing and protecting the provincial capital. It marks the terminus of the inland Antonine Itinerary route from Tingis and the effective southern limit of that road system.",
+        "sources": [
+          "Antonine Itinerary, Mauretania Tingitana routes (It. Ant. 23-24)",
+          "Trismegistos Places, 'Tocolosida (Ej Jezira)'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9158,
+          35.5214
+        ]
+      },
+      "properties": {
+        "id": "station_zilis_tingitana",
+        "category": "colonia",
+        "name": "Zilis (Iulia Constantia Zilil, Dchar Jdid)",
+        "road": "Tingis-Sala Coastal Road",
+        "distance_from_previous_mp": 6,
+        "identified": true,
+        "notes": "Iulia Constantia Zilil was one of three Augustan colonies of veterans settled in Mauretania Tingitana around 33-25 BCE, at the site of Dchar Jdid near modern Asilah. It stood on the coastal road between Tingis and Lixus/Sala, was enclosed by walls in the later 2nd century CE, and is named as a stop in the Antonine Itinerary.",
+        "sources": [
+          "Antonine Itinerary, Mauretania Tingitana routes",
+          "Wikipedia, 'Iulia Constantia Zilil'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.0063,
+          35.3719
+        ]
+      },
+      "properties": {
+        "id": "station_tabernae_tingitana",
+        "category": "mansio",
+        "name": "Tabernae",
+        "road": "Tingis-Sala Coastal Road",
+        "distance_from_previous_mp": 14,
+        "identified": false,
+        "notes": "A station on the coastal road between Zilis and Lixus, conventionally identified with the locality of Lalla Djillalia in older scholarship, though no precise modern coordinates for that identification could be confirmed.",
+        "sources": [
+          "Antonine Itinerary, Mauretania Tingitana routes",
+          "Princeton Encyclopedia of Classical Sites, 'Tabernae (Lalla Djillalia)'"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.1121,
+          34.9613
+        ]
+      },
+      "properties": {
+        "id": "station_frigidis_tingitana",
+        "category": "mansio",
+        "name": "Frigidis",
+        "road": "Tingis-Sala Coastal Road",
+        "distance_from_previous_mp": 16,
+        "identified": false,
+        "notes": "A station whose name means 'cold springs', on the coastal road between Lixus and Banasa, 16 Roman miles from Lixus per the Antonine Itinerary. No secure modern identification or excavated site is known.",
+        "sources": [
+          "Antonine Itinerary, Mauretania Tingitana routes"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.833,
+          33.8011
+        ]
+      },
+      "properties": {
+        "id": "station_exploratio_ad_mercurios_tingitana",
+        "category": "praesidium",
+        "name": "Exploratio ad Mercurios",
+        "road": "Sala-Frontier Road",
+        "distance_from_previous_mp": 16,
+        "identified": false,
+        "notes": "A Roman military watch-post 16 Roman miles south of Sala Colonia, described in modern scholarship as the southernmost Roman military installation yet identified in Mauretania Tingitana, marking the effective edge of direct Roman control in the era of the Tabula Banasitana. Its precise excavated location has not been pinpointed.",
+        "sources": [
+          "Akerraz, A., 'Exploratio ad Mercurios', Bulletin d'Archeologie Marocaine (2002)",
+          "Akerraz, 'Les fortifications de la Mauritanie Tingitane', CRAI 154 (2010)"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
