@@ -7,6 +7,168 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 109 — 2026-09-07 (this shift's own prompt claimed "Shift 2 of four")
+
+### Boot
+
+Container started detached at `a49b8a8` (Shift 108's tip); `git fetch origin main` confirmed
+`origin/main` matched, `git checkout -B main origin/main` was a safe sync. `npm run validate`
+clean baseline (0 errors, same 7 reviewed warnings) before touching anything. Re-verified network
+egress directly rather than trusting inheritance: `curl` to `en.wikipedia.org` and
+`overpass-api.de` both `connect_rejected` via the agent-proxy — Axis 1 (cities via Overpass) stays
+off the table, same as every recent shift. `WebSearch` (direct and via background `Agent` calls)
+remains the only working research channel. Read `BOARD.md` in full (2043 lines, all P0/P1/P2
+sections): confirmed the same conclusion as Shifts 104-108 — every unclaimed ticket is either a
+large multi-pass migration (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]`
+card-rebuild, `[13-P0-2]` image-audit, `[11-P1-6]` split-map-tsx on a now-3369-line `Map.tsx`,
+`[11-P1-5]` pmtiles) or human/network-blocked (`[02-P0-4]`, `[14-P0-1]`, `[15-P0-1]`). No Track B
+ticket picked, same structural reason the last several shifts logged — see "Track B" below for the
+full accounting this shift did before reaching that conclusion.
+
+### Track A — Axis 2 (road stations, five new regions) + Axis 3d (villae, Gallia Belgica/Lugdunensis) + ancient-sources deepen
+
+Ran six background WebSearch research agents this shift, each reviewed for schema validity, id
+collisions and 150m-proximity against the full project-wide gazetteer, and coordinate/mileage
+sanity before merging via `scripts/append-geojson-features.mjs` /
+`scripts/apply-ancient-sources-topup.mjs`. **`road_stations.geojson`: 940 → 1008 (+68, comfortably
+over the axis-2 "60 miscellaneous stations" per-shift floor).** **`pois.geojson`: 1465 → 1475
+(+10 villae), plus 21 `ancient_sources` citations spliced onto existing high-confidence records.**
+
+**Crete road stations (commit `8232e9f`) — 12 new, first coverage for the island.** Real finding
+that reshaped the research: the Antonine Itinerary has no Cretan section at all — Crete's entire
+road network here comes from the Peutinger Table (via the Pazarli/Livieratos/Boutoura 2007
+cartometric reconstruction) cross-checked against Strabo and the Stadiasmus Maris Magni. Seven
+corridors radiating from Gortyn: the requested Gortyn-Knossos-Lyttos interior road, its
+Lyttos-Arkades-Biannos continuation, the Gortyn-Inatos-Hierapytna south-coast alternate, both of
+Gortyn's harbor roads (Lebena, Lasaia/Fair Havens), the Gortyn-Phaistos-Matala western route, and a
+short Knossos-Heracleium port spur. Phaistos ships `identified:false`/`confidence:low` since Strabo
+gives only the Gortyn-Matalum total distance, not a named milestone at Phaistos itself.
+
+**Isauria/Cilicia mountain roads (commit `3ed33fe`) — 13 new, first coverage for the region.** No
+Antonine Itinerary section covers this corridor at all (confirmed, not assumed) — sourced from
+Pleiades, epigraphic site identifications, and modern milestone-survey scholarship instead, cited
+honestly as such. Main corridor Seleucia ad Calycadnum-Claudiopolis-Laranda-Isaura Nova/Vetus, plus
+a Corycus-Diocaesarea coastal feeder, a western Germanicopolis-Zenopolis branch, and a second
+Taurus crossing (Laranda-Cybistra) toward Cappadocia. One search-synthesis artifact caught and
+rejected: an AI-search summary claimed an Itin. Ant. route placing Laranda near Cocusus, which is
+geographically impossible (Cocusus is deep in Cataonia, nowhere near Lycaonian Laranda).
+
+**Epirus/Nicopolis hinterland (commit `98a89b2`) — 11 new, first coverage for the region.**
+Cross-checked against this project's own itiner-e-sourced `roads_main.geojson`/
+`roads_secondary.geojson`, which carries real Itin. Ant./Peutinger attestation flags per segment —
+used to separate genuinely-attested stations from purely modern topographic reconstruction. Four
+corridors: Nicopolis-Ambracia, the Nicopolis-Dyrrachium Adriatic coastal road (Aulon, the
+Ceraunian headland, Phoenice, Buthrotum, Ad Dianam, Glykys Limen), the Apollonia-Nicopolis interior
+road via the Vjosë valley (Byllis, Hadrianopolis), and a southern hinterland road toward Naupaktos
+(Dioryktos, Konope Arsinoeia). Buthrotum's transmitted 56-mile figure from Phoenice was kept as-is
+(far longer than the ~11-mile straight-line distance) rather than silently corrected. The
+Nicopolis-Dodona road is a known corridor with no attested named station — left unpadded.
+
+**Baetica interior, Corduba-Castulo southern mining road (commit `f744349`) — 3 new, honest thin
+result.** The originally-requested Corduba-Astigi-Hispalis and main Corduba-Castulo corridors
+turned out to be station-for-station duplicates of the existing "Via Augusta" data — skipped
+rather than double-counted. What's genuinely new: a second, distinct Antonine Itinerary route
+(Itin. Ant. 402) running the Guadalquivir's south bank via Calpurniana, Vircao (Urgavo/Arjona) and
+Iliturgis (Pliny's Forum Iulium, excavated at Cerro Máquiz).
+
+**Noricum interior (commit `4583e91`) — 29 new, first coverage for the province.** The biggest
+single batch this shift, and Noricum had zero road-station coverage of any kind before it. Eight
+corridors: Aquileia-Virunum via the Julian Alps (Camporosso Pass), Virunum-Teurnia-Aguntum, the
+Radstädter Tauern crossing to Iuvavum/Salzburg, Aquileia-Aguntum via Iulium Carnicum and the Carnic
+Alps, the Norican Highway (Virunum-Ovilava-Lauriacum via the Pyhrn Pass), the Danube frontier
+approach (Cetium-Arlape-Lauriacum), a short Iuvavum-Ovilava link, and a Virunum-Celeia connector.
+19 of 29 stations are identified findspots; the other 10 sit on a stretch of scholarship the
+research agent found genuinely contested in the literature (the "middle Norican highway" has
+dedicated academic papers specifically because several of its stations remain unlocated), not
+guessed. One geographic misfit caught and dropped: Littamum, the itinerary's next stop past
+Aguntum, plots into Raetia rather than Noricum.
+
+**Gallia Belgica/Lugdunensis villae (commit `906b179`) — 10 new estates, first coverage for
+either province, `pois.geojson` villa category 95 → 105.** Skewed 7 Belgica / 3 Lugdunensis
+(denser excavation literature in Belgica's Trier/Rhineland hinterland). 9 of 10 stood by 117 CE;
+Mané-Véchen (Plouhinec, Morbihan) ships honestly `extant_117ce:false` — built end of 2nd century,
+the site was open coastline at the snapshot. Two real dating traps caught: Nennig's famous
+gladiator mosaic and Villa Borg's palatial form both postdate 117 by ~80 years even though a
+simpler farmhouse already stood on each spot at the snapshot date — both ship `true` with the
+distinction made explicit in the notes rather than either overclaiming or dropping the record.
+Vichten (Luxembourg's Muses-mosaic villa) researched and rejected: only the mosaic's date could be
+confirmed, not the villa's own construction date, and guessing one would violate the "real data or
+don't include it" rule.
+
+**Ancient-sources deepen, batch 8 (commit `5a408b3`) — 21 new citations from a 31-candidate list,
+68% hit rate, well above the ~18-20% this standing task's last few batches logged.** Explicitly
+excluded the dead-end list documented in batch 7 (Cirpi, Olicana, Derventio, Hod Hill, Timgad
+Capitol, Elba Granite, Glanum Dam, Nemausus castellum, all three Baiae "temples", Annia Regilla,
+Gebel el-Silsila, Hatnub, Teos Africano, Segontium, Taliata) and targeted a fresh pool instead:
+Danube/Black Sea auxiliary forts (Ptolemy and the Notitia Dignitatum name most of them directly;
+Apsarus/Gonio got a first-hand hit from Arrian's own Periplus Ponti Euxini, written as governor of
+Cappadocia), two canals with strong literary hits (Corbulo's Rhine-Meuse canal in Tacitus, Ann.
+11.20; Marius's Rhône canal in both Plutarch and Strabo), and three famous-owner villas (Fronto's
+own letters on Villa Magna's grape harvest, Pliny the Elder on Livia's laurel-omen villa at Prima
+Porta). One real correction-in-progress caught: Ponte Lucano's traditionally-cited restoration
+inscription is now recognized in the literature as a modern forgery, confirming (not just
+repeating) what a prior batch had already flagged for a neighboring monument. Settefinestre's
+tempting Cicero connection was rejected as the same wrong-attribution shape this project has been
+burned by before — scholarship is split between two different owning families.
+
+`METRICS.md` regenerated twice via `npm run metrics -- --write` (commits `818d7d5`, `3a381a6`)
+after the road-station/villa batches and again after Noricum — 1475 POIs, 100.0% deep, 0 thin
+throughout (villae/citations/road-stations don't move that number). `npm run validate` clean at
+every merge (0 errors, same 7 pre-existing out-of-envelope warnings, cross-file-collision count
+held at 218 — none of the 78 new features this shift landed within 150m of an existing curated
+feature; the handful of >150m/<600m near-hits, e.g. Buthrotum's road-station marker sitting a few
+hundred meters from its own building-level POIs, are expected and not collisions). `npm run build`
+clean at every push via the pre-push hook.
+
+### Track B
+
+Read `BOARD.md` end to end this time (prior shifts' partial reads were sufficient to reach the same
+conclusion, but this shift verified it directly rather than trusting the pattern): 11 unclaimed
+tickets total, zero of them a small, safe, genuinely-unblocked pick. Checked whether this cloud
+shift's own sandbox could actually clear `[15-P0-1]`'s stated blocker (no dev server from an
+unattended session) — confirmed this session does have full Bash access and a pre-installed
+Chromium, matching what earlier cloud shifts (2026-08-19, 2026-08-25) used to ship real `polish`
+tickets — but every currently-unclaimed `polish`/`fix` ticket is either a big multi-file migration
+(`merge-themes` across ~25 files, `split-map-tsx` on a 3369-line file, `card-rebuild`) or explicitly
+flagged human/network-blocked (`self-host-glyphs`'s remaining half needs a font-to-PBF pipeline
+unavailable here without a new npm dependency; `gsc-verify` needs a Google account only Pedro
+holds). Attempting one of the big migrations cold, in a single shift, without the multi-pass budget
+the board itself says they need, risked shipping something broken to `main` — decided against it
+rather than force a Track B pick for its own sake. No Track B taken this shift; same conclusion as
+Shifts 104-108, reached independently rather than assumed.
+
+### Next shift should pick up
+
+- **Track A, road stations:** 68 new this shift, the strongest single-shift count in recent
+  memory, but every region touched (Crete, Isauria/Cilicia, Epirus, Baetica interior, Noricum) is
+  now either complete or at its honest ceiling for this pass. Fresh territory worth checking next:
+  Cyprus's interior (only two coastal corridors exist today — Paphos-Arsinoe, Salamis-Lapethus via
+  Chytroi — the island's interior copper-mining roads around Tamassos/Soloi are untouched), Numidia
+  beyond the existing Pre-Saharan Praesidia line, or a second Pannonia Superior pass (the existing
+  corridors are mostly Pannonia Inferior/Danube-front; Poetovio-Emona's own hinterland is thin).
+  Re-run the census first (`grep -o '"road": "[^"]*"' public/data/road_stations.geojson | sort -u`,
+  now ~110 distinct corridor strings across 1008 stations) rather than assuming a region is empty —
+  this shift caught itself nearly duplicating Via Augusta before checking.
+- **Villae (axis 3d)** — Gallia Belgica/Lugdunensis gap now closed (10 new). Remaining real
+  headroom per Shift 108's own note: Arabia (only Nabataean agricultural surveys, "almost
+  completely unexcavated") and Numidia/Mauretania's rural estates, both thin on excavated,
+  precisely-dated candidates rather than unresearched.
+- **Ancient-sources**: uncited high-confidence pool now ~104 (was 125 before this shift's 21-hit
+  batch) — still worth another pass given this batch's unusually high 68% hit rate on forts/canals/
+  named-owner villas, categories the pool still has more of (check remaining Danube auxiliary forts
+  not yet tried, e.g. Ad Enum, Boiodurum, and any remaining aqueduct/canal features).
+- **Axis 1 (more cities)** stays network-blocked — reconfirmed directly this shift (`curl` to
+  `overpass-api.de` and `en.wikipedia.org` both `connect_rejected`).
+- **Track B:** still nothing unblocked smaller than a multi-pass migration. `[15-P0-1]` itself
+  (giving the *unattended Mac-side* routine a static harness) remains unsolved by any cloud shift's
+  work, since cloud shifts have a real dev server available and the Mac routine doesn't — that's a
+  different problem from what any Track A/B shift can fix in passing. If a future cloud shift has a
+  full slot free of Track A momentum, `[11-P1-6]` split-map-tsx is the least risky of the big
+  migrations to attempt (mechanical extraction, testable incrementally with `npm run build` after
+  each layer moved) — but budget the whole shift for it, not a leftover 20%.
+
+---
+
 ## Shift 108 — 2026-09-07 (this shift's own prompt claimed "Shift 1 of four")
 
 ### Boot
