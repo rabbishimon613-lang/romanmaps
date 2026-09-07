@@ -23205,6 +23205,176 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.064,
+          31.025
+        ]
+      },
+      "properties": {
+        "id": "station_mampsis_negev_incense_road",
+        "category": "civitas",
+        "name": "Mampsis (Mamshit/Kurnub)",
+        "road": "Negev Incense Road (Malatha-Mampsis-Scorpions' Ascent-Tamara branch toward the Arabah)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A Nabataean caravan town founded in the 1st century BCE, about 19 km south of Malatha, that kept functioning as a major waystation on the incense-trade network after Rome annexed Nabataea in 106 CE. Most of its surviving monumental architecture - the walled town, villas, reservoirs - belongs to the 2nd-century building boom that followed annexation, so it was an active, still-developing station in 117 CE. It anchors the branch of the route running south via the Scorpions' Ascent to Tamara in the Arabah, distinct from the separately-documented Via Nova Traiana highway further east. No milestone-based distance from Malatha survives, so that figure is left out rather than guessed.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Mampsis",
+          "T. Erickson-Gini, 'Excavating the Nabataean Incense Road'",
+          "https://www.biblewalks.com/mamshit/"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1305,
+          30.8993
+        ]
+      },
+      "properties": {
+        "id": "station_rogem_zafir_negev_incense_road",
+        "category": "praesidium",
+        "name": "Rogem Zafir (foot of the Scorpions' Ascent)",
+        "road": "Negev Incense Road (Malatha-Mampsis-Scorpions' Ascent-Tamara branch toward the Arabah)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A fortress and caravanserai excavated at the base of the Roman-cut Scorpions' Ascent (Ma'ale Akrabim), the steep rock-cut road linking the Negev highlands down to the Arabah in a run of switchbacks about 2.5 km long. The ascent's engineering dates to the late 1st century CE, so the road itself was plausibly in service by 117 CE, though the standing fortress walls include later Roman rebuilding. It guarded travelers on the Mampsis-to-Tamara stretch, about 19 km from Mampsis.",
+        "sources": [
+          "https://www.biblewalks.com/maaleakrabim/",
+          "https://pleiades.stoa.org/places/688017"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2448,
+          30.8089
+        ]
+      },
+      "properties": {
+        "id": "station_tamara_negev_incense_road",
+        "category": "praesidium",
+        "name": "Tamara (Ein Hatzeva)",
+        "road": "Negev Incense Road (Malatha-Mampsis-Scorpions' Ascent-Tamara branch toward the Arabah)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A perennial oasis in the Arabah used as a Nabataean caravan halt well before Roman annexation, so the site was already a working waystation on this corridor by 117 CE. The fortified installation visible today, though, belongs to the later Diocletianic military buildup on the frontier and should not be read as a Trajanic-era garrison - only the oasis stop itself, not the standing fort, is on-snapshot. From here the route crosses the Arabah toward the Via Nova Traiana stations further east, such as Zoara.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Hatzeva",
+          "https://jewishvirtuallibrary.org/jsource/Archaeology/Hatzeva.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.1907,
+          39.9576
+        ]
+      },
+      "properties": {
+        "id": "station_bolegasgus_galatia",
+        "category": "mansio",
+        "name": "Bolegasgus",
+        "road": "Ancyra-Tavium Road",
+        "distance_from_previous_mp": 24,
+        "identified": false,
+        "notes": "The first named stop on the Antonine Itinerary's direct Ancyra-Tavium road, 24 Roman miles east of Ancyra. Two competing modern identifications have been proposed - an older guess near the Ancyra-Kalecik road, and a more recent one near Yesildere/Elmadag - but neither is confirmed by excavation.",
+        "sources": [
+          "Antonine Itinerary (Itin. Ant.)",
+          "Smith, Dictionary of Greek and Roman Geography"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.4619,
+          39.9099
+        ]
+      },
+      "properties": {
+        "id": "station_sarmalius_galatia",
+        "category": "mansio",
+        "name": "Sarmalius",
+        "road": "Ancyra-Tavium Road",
+        "distance_from_previous_mp": 24,
+        "identified": false,
+        "notes": "The second station on the Ancyra-Tavium road, 24 Roman miles beyond Bolegasgus and 48 from Ancyra. Consistently placed near Kirikkale by Smith's Dictionary, the Barrington Atlas and Pleiades, but no specific excavated findspot has been pinned down within the modern city.",
+        "sources": [
+          "https://pleiades.stoa.org/places/619255",
+          "Antonine Itinerary (Itin. Ant.)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.73,
+          40.01
+        ]
+      },
+      "properties": {
+        "id": "station_ecobrogis_galatia",
+        "category": "vicus",
+        "name": "Ecobrogis (Eccobriga)",
+        "road": "Ancyra-Tavium Road",
+        "distance_from_previous_mp": 20,
+        "identified": false,
+        "notes": "A Galatian settlement of the Trocmi tribe, attested both in the Antonine Itinerary (20 Roman miles beyond Sarmalius, 68 from Ancyra) and as a station on the Peutinger Table - one of the better-attested names on this road. Modern identification is contested between two candidate sites near Kirikkale, so the coordinates given are a representative point rather than a confirmed excavated location.",
+        "sources": [
+          "https://pleiades.stoa.org/places/619153",
+          "https://en.wikipedia.org/wiki/Ecobriga",
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.62,
+          39.96
+        ]
+      },
+      "properties": {
+        "id": "station_adapera_galatia",
+        "category": "mansio",
+        "name": "Adapera",
+        "road": "Ancyra-Tavium Road",
+        "distance_from_previous_mp": 24,
+        "identified": false,
+        "notes": "The final named stop before Tavium on the Antonine Itinerary's Ancyra-Tavium list, 24 Roman miles beyond Ecobrogis and 24 short of Tavium itself (92 of a 116-mile total). No modern site identification exists in the sources consulted - it is placed by scholars only relationally, between Ecobrogis and Tavium - so the coordinates here are an interpolation along the itinerary sequence, not a location backed by excavation or toponymy.",
+        "sources": [
+          "Antonine Itinerary (Itin. Ant.)",
+          "https://www.trismegistos.org/place/40665"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
