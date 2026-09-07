@@ -7,6 +7,159 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 110 — 2026-09-07 (this shift's own prompt claimed "Shift 3 of four")
+
+### Boot
+
+Container started detached at `a9fc46a` (Shift 109's tip); local `main` was actually stale at
+`7f3478b` (Shift 85) from a prior container image, so `git reset --hard origin/main` resynced
+before touching anything (no local-only commits existed to lose — verified with `git log` first).
+`npm run validate` clean baseline (0 errors, same 7 reviewed warnings). Re-verified network egress
+directly: `curl` to `en.wikipedia.org`, `overpass-api.de`, and `commons.wikimedia.org` all timed out
+(`000`) via the agent-proxy — same block every recent shift has documented, Axis 1 (cities via
+Overpass) stays off the table. `WebSearch` via background `Agent` calls remains the only working
+research channel. Read `SHIFT_BRIEF.md` in full and `BOARD.md`'s claiming protocol + open P0
+tickets: same conclusion as Shifts 104-109 — every unclaimed ticket is either a large multi-pass
+migration (`merge-themes`, `schema-v2`, `card-rebuild`, `image-audit`, `split-map-tsx` on now-3369-
+line `Map.tsx`) or human/network-blocked. No Track B ticket picked.
+
+### Track A — Axis 2 (road stations, four new provinces/corridors) + Axis 3d (5 named villas) + ancient-sources deepen
+
+Ran six background WebSearch research agents this shift (reviewed for schema validity, id
+collisions, and cross-file proximity before merging via `scripts/append-geojson-features.mjs` /
+`scripts/apply-ancient-sources-topup.mjs`). **`road_stations.geojson`: 1008 → 1068 (+60, exactly
+meeting the axis-2 "60 miscellaneous stations" floor).** **`pois.geojson`: 1475 → 1480 (+5 villas),
+plus 10 `ancient_sources` citations spliced onto existing high-confidence records.**
+
+**Amber Road interior mutationes (commit `c7f6abf`) — 10 new, Aquileia-Poetovio stretch.** Started
+as a suspected first-coverage gap ("Poetovio-Emona hinterland") based on a `road` field grep that
+missed the existing "Amber Road (Aquileia-Carnuntum)" corridor — that corridor already had the
+major city stops (Nauportus, Emona, Atrans, Celeia, Poetovio, Salla, Savaria, Scarbantia,
+Carnuntum), just none of the Itinerarium Burdigalense's much denser intermediate stations. Caught
+the near-duplication before merging: three of the research agent's finds (Nauportus, Atrans, Salla)
+were exact re-finds of existing stations and were dropped rather than duplicated; the new "Ad
+Medias" collided by id with an unrelated Via Aemilia station and was disambiguated. What shipped:
+Ad Fornolus, Fluvio Frigido/Castra (Ajdovščina), Ad Pirum (Hrušica pass fort), Longaticum
+(Logatec), Ad Publicanos (Blagovica customs post), Ad Medias, Ad Lotodos, Ragindone, Pultovia
+(Slovenska Bistrica), and Halicanum (Sveti Martin na Muri) — all relabeled to the existing "Amber
+Road" name for corridor consistency. **Lesson for future shifts**: a `road` field grep alone isn't
+enough to confirm a "gap" — check whether the endpoint cities already appear as road stations under
+a *different* road label before commissioning research.
+
+**Bithynia-Pontus (commit `1ce9b18`) — 20 new, first coverage for the province.** Confirmed empty
+by grep before starting (zero hits for Nicomedia/Nicaea/Prusa/Chalcedon/Amastris/Sinope across the
+whole file). Three corridors: the Chalcedon-Nicomedia coastal road around the Gulf of Izmit (9
+stations anchored by the Antonine Itinerary's Chalcedon-Pantichium(4mp)-Libyssa(15mp)-
+Nicomedia(24mp) sequence), the Nicomedia-Nicaea road continuing inland toward Ancyra via
+Claudiopolis (7 stations), and the Black Sea coastal road (Heraclea Pontica, Tieion, Amastris,
+Sinope). Two direct hits from Pliny the Younger's own Bithynia correspondence (*Epistulae* 10,
+written as governor c. 111-113 CE): Juliopolis, the town he told Trajan nearly every provincial
+traveler had to pass through (Hadrian is independently attested passing through the same town in
+November 117 CE, weeks after this map's snapshot), and Amastris, where Pliny asked Trajan for
+funds to cover what he called the city's prettiest street, which was really an open sewer. Sinope
+ships `confidence:low` with an honest note that scholarship disputes whether a continuous coastal
+road ever linked it to Amastris by land, rather than dropping a real port or overstating the
+connection.
+
+**Cyprus interior copper road (commit `c7bd615`) — 4 new, first coverage inland.** Small batch by
+design, not by padding: the Antonine Itinerary has no Cyprus section at all (confirmed, not
+assumed), so this leaned on the Tabula Peutingeriana's cross-island route (Salamis-18mp-Thremitus-
+24mp-Tamassos-29mp-Soloi) and Bekker-Nielsen's 2004 standard reconstruction, which turned out to
+corroborate this project's own `roads_secondary.geojson` (already carrying a digitized version of
+this network from an earlier shift). Idalion, Golgoi, Tremithus (identified, high confidence), and
+Melabron (unlocated Soloi-Lapethos branch toponym, `identified:false`). No station survives on the
+direct Soloi-Tamassos leg itself — left unpadded rather than invented.
+
+**Mauretania Caesariensis (commit `1717efc`) — 26 new, first coverage for the province, the
+shift's biggest single batch.** Confirmed empty by grep (the province sits between Tingitana's
+Tingis-Volubilis road and Numidia's 46-station network, itself untouched). The Antonine Itinerary
+preserves a complete, internally consistent mileage chain covering the whole province, supporting
+three connected roads: the Portus Magnus-Saldae coastal road (18 stations, including the
+provincial capital Caesarea/Cherchell, Icosium/Algiers, and Saldae/Béjaïa), an interior alternate
+for the Rusuccurum-Saldae stretch (3 stations, itself itinerary-attested as a second route), and
+the Auzia-Caesarea interior road (5 stations) connecting directly into the existing Numidian
+network via `station_auzia_numidia`. 15 of 26 sit on archaeologically accepted sites; 11 are real
+named itinerary stops placed by mileage-interpolation between confirmed neighbors
+(`identified:false`, `confidence:low`), matching the project's existing convention for unlocated
+Numidian stations. A tempting "Sufasar = Amourah" identification was rejected as geographically
+implausible (~250km too far south for a 16-mile stage). The coastal Tipasa disambiguates itself
+from the already-logged inland Numidian station of the same name.
+
+**Villae (commit `c0262d8`) — 5 named villas from the brief's own hunting list, honestly dated.**
+Targeted three sites the brief names explicitly but which grep confirmed were still missing after
+109 shifts: Chedworth, Bignor, and Piazza Armerina. Chedworth (first walls ~120 CE) and Bignor
+(first structure ~190 CE) both ship `extant_117ce:false` with the pre-villa landscape stated
+plainly. Piazza Armerina is the interesting call: the famous 4th-century mosaic palace is centuries
+post-117, but excavation literature (Pensabene/Gallocchio) documents a plainer 1st-century rustic
+villa on the same hillside that the palace was later built over — ships `extant_117ce:true` with
+the distinction made explicit rather than either overclaiming the palace or dropping the record.
+Brading (Isle of Wight, South Range c. 100 CE) is a genuine positive case, added alongside. Great
+Witcombe (c. 150-250 CE) ships `false`. Woodchester and North Leigh were researched and rejected —
+both have only an imprecise "early 2nd century" date for their earliest phase, too coarse to place
+confidently on either side of the cutoff.
+
+**Ancient-sources deepen, batch 9 (commit `b1f7be8`) — 10 new citations from ~45 candidates
+checked, ~22% hit rate.** Prioritized categories likelier to hit (named-owner villas, forts, tombs
+of known individuals) over ones unlikely to (kilns, salinae, quarries) per prior batches' own
+findings. Hits: Settefinestre (Cicero, *Ad Atticum* 15.27.1, on the Sestius Cosa estate), the Tomb
+of Annia Regilla (Marcellus of Side's own epitaph, IG XIV 1389 — notable since a prior batch's
+"dead-end list" had included this one, and a more thorough pass this time found it), the Tomb of
+Philip II at Vergina (Diodorus Siculus 16.92-95 on the funeral at Aegae), Fort Cirpi (Antonine
+Itinerary 266.3 — also on that same prior dead-end list), Umbricius Scaurus's garum workshop and
+the Houses of Sorothus and the Laberii (all three via their own in-situ owner-naming mosaic
+inscriptions), Middlewich and Droitwich salinae (both "Salinis" in the Ravenna Cosmography), and
+Herod's family tomb in Jerusalem (Josephus, *Jewish War* 5.3.2). Real rejections, not silently
+skipped — see the commit message for the full list (Medracen's Pomponius Mela mix-up, the disputed
+Kasta Tomb occupant, Hatnub's debunked Pliny link, Ponte Lucano's forged inscription, and more).
+
+`METRICS.md` regenerated once via `npm run metrics -- --write` (commit `06bfea7`) after all six
+batches — 1480 POIs, 100.0% deep, 0 thin. `npm run validate` clean at every merge (0 errors, same 7
+pre-existing envelope warnings; cross-file collision count 218 → 219, the one new collision being
+`poi_fort_rapidum`/`station_rapidum` sharing a site, the same accepted "fort doubles as road
+station" shape as several pre-existing entries). `npm run build` clean at every push via the
+pre-push hook.
+
+### Track B
+
+Read `BOARD.md`'s P0 section and re-confirmed the same structural conclusion Shifts 104-109 each
+reached independently: every unclaimed ticket is either a large multi-pass migration or explicitly
+human/network-blocked. Did not re-derive this from scratch in as much depth as Shift 109's full
+2043-line read since that shift's conclusion is recent and nothing in this shift's work touched
+UI/schema code that would change it. No Track B taken.
+
+### Next shift should pick up
+
+- **Road stations**: 60 new this shift across four regions, all now either complete for their
+  scoped corridor or at an honest ceiling. A real methodology lesson from this shift: before
+  commissioning research for a suspected "gap," grep isn't enough — check whether the corridor's
+  endpoint cities already exist as road stations under a *different* road-name label (this shift
+  nearly duplicated the Amber Road's Pannonia stretch this way; caught before merging, but it cost
+  the agent a wasted research pass). Fresh untouched-province candidates confirmed empty by grep
+  this shift but not yet researched: Thrace/Moesia proper (Via Militaris already covers the
+  Belgrade-Sofia-Constantinople trunk, but provincial-capital hinterlands off that trunk are
+  unchecked), Lycia (Via Sebaste covers Pamphylia but not Lycia's own coast — Xanthos, Patara,
+  Myra as a corridor), Armenia/Osroene/Mesopotamia (freshly-and-briefly Roman in 117, genuinely
+  obscure sourcing — approach with extra skepticism), Cappadocia's Trajan-era Armenian frontier
+  extension.
+- **Villae**: the brief's own named-candidate list is now exhausted for Britain (Fishbourne,
+  Angmering, Eccles, Gorhambury, Lullingstone, Rockbourne, Southwick, Chedworth, Bignor, Brading,
+  Great Witcombe all present). Remaining real headroom is the same as Shift 109 flagged: Arabia and
+  Numidia/Mauretania rural estates, both thin on excavated, precisely-dated candidates rather than
+  unresearched.
+- **Ancient-sources**: uncited high-confidence pool now ~96 (was 106 before this shift's batch,
+  after accounting for the ~45 checked this round). Untouched portion of the pool skews toward the
+  low-hit categories (kilns, salinae, quarries, shipwrecks) that this batch deliberately
+  deprioritized — a future batch should expect a lower hit rate than this one's 22% unless it finds
+  a fresh angle (e.g., checking Notitia Dignitatum entries for the untried forts specifically).
+- **Axis 1 (more cities)** stays network-blocked — reconfirmed directly this shift (`curl` to
+  `overpass-api.de`, `en.wikipedia.org`, `commons.wikimedia.org` all timed out).
+- **Track B**: still nothing unblocked smaller than a multi-pass migration. If a future cloud shift
+  has a full slot free of Track A momentum, `[11-P1-6]` split-map-tsx remains the least risky of the
+  big migrations to attempt (mechanical extraction, testable incrementally) — budget the whole
+  shift for it, not a leftover 20%.
+
+---
+
 ## Shift 109 — 2026-09-07 (this shift's own prompt claimed "Shift 2 of four")
 
 ### Boot
