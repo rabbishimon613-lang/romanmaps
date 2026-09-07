@@ -46283,6 +46283,90 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.573,
+          46.009
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_oarda_bulza",
+        "category": "villa",
+        "name_latin": "unattested (villa rustica of Apulum's territorium)",
+        "name_english": "Oarda-Bulza Roman Villa",
+        "province": "Dacia",
+        "modern_location": "Oarda, Alba County, Romania, about 6 km from Apulum (Alba Iulia)",
+        "built": null,
+        "destroyed": null,
+        "extant_117ce": false,
+        "notes": "A rural estate rose on a river terrace above the Sebes, six kilometers from the legionary fortress at Apulum in newly conquered Dacia. Geophysical survey mapped five structures inside its enclosure — an elite residence, worker housing, two granaries — the largest villa complex yet identified in the province. Excavators date its construction only to the first half of the 2nd century, too imprecise to confirm it already stood when Trajan died in 117 CE, so it is pinned as a fresh arrival in the years just after his death rather than a certainty on this snapshot.",
+        "sources": [
+          "M. Egri, A. Popa, M.-M. Ciuta et al., 'Provincializing Roman Dacia: The Canadian-Romanian Apulum Roman Villa Project, 2018-2019', Mouseion 18.3 (2021)",
+          "Cronica cercetarilor arheologice din Romania, campania 2019, entry 'Oarda, com. Alba Iulia, jud. Alba, Punct: Bulza', Institutul de Arheologie 'Vasile Parvan', 2020, pp. 255-257"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.0895,
+          37.4457
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_el_ruedo",
+        "category": "villa",
+        "name_latin": "unattested (modern find-spot name)",
+        "name_english": "Villa of El Ruedo",
+        "province": "Hispania Baetica",
+        "modern_location": "Almedinilla, Cordoba province, Spain",
+        "built": 50,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A working farm with a separate residential wing rose on a hillside above the Caicena valley around the middle of the 1st century CE, decades before Trajan, a native son of Baetica, took the throne. The house was rebuilt across four major phases between the 1st and 5th centuries. A marble sculpture of a sleeping Eros and a fish-pond mosaic pulled from its reception rooms rank among the finest domestic art found in rural Cordoba province. By 117 CE the villa had already stood for roughly six decades, with three more centuries still ahead of it.",
+        "sources": [
+          "Desiderio Vaquerizo, 'La villa romana de El Ruedo (Almedinilla, Cordoba), paradigma de asentamiento rural en Baetica', Anales de Arqueologia Cordobesa",
+          "D. Vaquerizo and J.M. Noguera Celdran, La villa romana de El Ruedo (Almedinilla, Cordoba): decoracion escultorica e interpretacion, Diputacion de Cordoba, 1997"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa_romana_de_El_Ruedo_(7957840622).jpg?width=800",
+        "image_credit": "Roman Villa of El Ruedo, Almedinilla, Cordoba · Wikimedia Commons (CC BY-SA 2.0)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.386,
+          31.4605
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_en_gedi_royal_estate",
+        "category": "villa",
+        "name_latin": "Engada",
+        "name_english": "En Gedi Royal Estate",
+        "province": "Judaea",
+        "modern_location": "Tel Goren, En Gedi, Dead Sea shore, Israel",
+        "built": -100,
+        "destroyed": null,
+        "extant_117ce": true,
+        "notes": "A royal balsam plantation on the Dead Sea's western shore supplied Rome with opobalsamum, an aromatic resin Pliny the Elder ranked as antiquity's costliest perfume ingredient and one that grew nowhere else on earth. Excavations at Tel Goren uncovered perfume-manufacturing workshops and a fortified settlement spanning Hasmonean, Herodian, and early Roman occupation layers. Legal papyri later stashed nearby in the Cave of Letters show En Gedi still operating as crown land, its rents paid straight into the Roman treasury on the eve of the Bar Kokhba revolt. In 117 CE, the year Trajan died, its balsam groves were already imperial property, worked for Rome rather than Judaea's vanished kings.",
+        "sources": [
+          "Pliny the Elder, Naturalis Historia 12.111-123",
+          "Benjamin Mazar and Immanuel Dunayevsky, 'En-Gedi: Third Season of Excavation', Israel Exploration Journal 14 (1964), pp. 121-130",
+          "Hannah M. Cotton and Ada Yardeni (eds.), Aramaic, Hebrew and Greek Documentary Texts from Nahal Hever and Other Sites (Discoveries in the Judaean Desert XXVII), Oxford, 1997"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
