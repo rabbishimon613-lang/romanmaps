@@ -23674,6 +23674,316 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9322,
+          36.3761
+        ]
+      },
+      "properties": {
+        "id": "station_seleucia_ad_calycadnum_isauria",
+        "category": "civitas",
+        "name": "Seleucia ad Calycadnum",
+        "road": "Cilicia Trachea-Isauria Mountain Road (Seleucia ad Calycadnum-Claudiopolis-Laranda-Isaura Nova)",
+        "distance_from_previous_mp": 0,
+        "identified": true,
+        "notes": "Seleucia ad Calycadnum sits on the Calycadnus river a few miles from the coast and serves as the trading gateway between Cilicia Trachea's Mediterranean ports and the Isaurian highlands. Two routes climb from here into the interior, one following the river gorge directly to Claudiopolis and the other cutting inland past the sanctuary city of Olba before rejoining it.",
+        "sources": [
+          "https://pleiades.stoa.org/places/648771",
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry%3Dseleucia-ad-calycadnum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.1486,
+          36.4672
+        ]
+      },
+      "properties": {
+        "id": "station_corycus_cilicia",
+        "category": "vicus",
+        "name": "Corycus",
+        "road": "Corycus-Diocaesarea Coastal Road (Cilicia Trachea)",
+        "distance_from_previous_mp": 0,
+        "identified": true,
+        "notes": "Corycus is a harbor town on the Cilicia Trachea coast famous for the saffron grown around its great sea cave. A mountain road climbs north from its port through the Cilician massif to reach Olba-Diocaesarea, feeding traffic into the Isaurian road network roughly 19 Roman miles inland.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Corycus",
+          "http://nomisma.org/id/corycus"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9261,
+          36.5827
+        ]
+      },
+      "properties": {
+        "id": "station_diocaesarea_olba_isauria",
+        "category": "civitas",
+        "name": "Diocaesarea (Olba)",
+        "road": "Cilicia Trachea-Isauria Mountain Road (Seleucia ad Calycadnum-Claudiopolis-Laranda-Isaura Nova)",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Diocaesarea grew up around the extra-urban sanctuary of Zeus Olbios and took its imperial name under Vespasian while the older priestly town of Olba stood alongside it. Its temple and colonnaded street mark the junction where the Corycus mountain road meets the highland route running on to Claudiopolis.",
+        "sources": [
+          "https://pleiades.stoa.org/places/648623",
+          "https://en.wikipedia.org/wiki/Diocaesarea_(Isauria)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.4394,
+          36.6425
+        ]
+      },
+      "properties": {
+        "id": "station_claudiopolis_ninica_isauria",
+        "category": "colonia",
+        "name": "Claudiopolis (Colonia Iulia Augusta Felix Ninica)",
+        "road": "Cilicia Trachea-Isauria Mountain Road (Seleucia ad Calycadnum-Claudiopolis-Laranda-Isaura Nova)",
+        "distance_from_previous_mp": 23,
+        "identified": true,
+        "notes": "Claudiopolis was founded as a Roman colony on the site of the older town of Ninica and later gave its name to the district when Isauria became a separate province. It is the hinge of the whole corridor, where the river route from Seleucia, the mountain road from Olba, and the highland track to Laranda all converge.",
+        "sources": [
+          "https://pleiades.stoa.org/places/648723",
+          "https://en.wikipedia.org/wiki/Claudiopolis_(Cilicia)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.44,
+          36.678
+        ]
+      },
+      "properties": {
+        "id": "station_dalisandus_isauria",
+        "category": "vicus",
+        "name": "Dalisandus",
+        "road": "Cilicia Trachea-Isauria Mountain Road (Seleucia ad Calycadnum-Claudiopolis-Laranda-Isaura Nova)",
+        "distance_from_previous_mp": 4,
+        "identified": true,
+        "notes": "Dalisandus is a small hill town a short ride north of Claudiopolis, later counted among the ten cities of the Isaurian Decapolis. Its ruins at Ardıştepe, with rock-cut tombs and cisterns, sit close enough to Claudiopolis to have functioned as its satellite stop on the road north.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Dalisandus_(Isauria)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.5136,
+          36.7448
+        ]
+      },
+      "properties": {
+        "id": "station_coropissus_isauria",
+        "category": "mutatio",
+        "name": "Coropissus",
+        "road": "Cilicia Trachea-Isauria Mountain Road (Seleucia ad Calycadnum-Claudiopolis-Laranda-Isaura Nova)",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "Coropissus was the market center of the mountain canton of Cetis and later a small bishopric of Isauria, known mainly from an inscription copied near Mut. No excavated site fixes its position, so it is placed here by interpolation along the Claudiopolis-Laranda road at roughly the distance the epigraphic find-spot implies.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Coropassus"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.2216,
+          37.1785
+        ]
+      },
+      "properties": {
+        "id": "station_laranda_isauria",
+        "category": "civitas",
+        "name": "Laranda",
+        "road": "Cilicia Trachea-Isauria Mountain Road (Seleucia ad Calycadnum-Claudiopolis-Laranda-Isaura Nova)",
+        "distance_from_previous_mp": 47,
+        "identified": true,
+        "notes": "Laranda is the chief city of southern Lycaonia and the natural staging point where the Claudiopolis mountain road meets the routes running north to Iconium and east to Cybistra. Its position on the edge of the Konya plain made it the last major supply base before travelers pushed on into the Isaurian massif.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Laranda",
+          "https://www.trismegistos.org/place/34335"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.0272,
+          37.1979
+        ]
+      },
+      "properties": {
+        "id": "station_ilistra_isauria",
+        "category": "mansio",
+        "name": "Ilistra",
+        "road": "Cilicia Trachea-Isauria Mountain Road (Seleucia ad Calycadnum-Claudiopolis-Laranda-Isaura Nova)",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Ilistra was one of the six cities of the Lycaonian League and stood directly on the road linking Laranda to Isaura, a stretch travelers still use today. It gave later Byzantine travelers a bishopric and a resting point roughly a third of the way across the highland gap between the two cities.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ilistra",
+          "https://www.wikidata.org/wiki/Q85768994"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.3424,
+          37.1936
+        ]
+      },
+      "properties": {
+        "id": "station_isaura_nova",
+        "category": "civitas",
+        "name": "Isaura Nova",
+        "road": "Cilicia Trachea-Isauria Mountain Road (Seleucia ad Calycadnum-Claudiopolis-Laranda-Isaura Nova)",
+        "distance_from_previous_mp": 55,
+        "identified": true,
+        "notes": "Isaura Nova rose on the crag now called Zengibar Kalesi after Rome sacked its predecessor city and gave the whole rugged district its name and its reputation for banditry. It anchors the western end of the mountain road from Cilicia and marks the point where routes fork north toward Lystra and Iconium.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Isaura_Nea",
+          "https://www.trismegistos.org/place/16348"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.24503,
+          37.190126
+        ]
+      },
+      "properties": {
+        "id": "station_isaura_vetus",
+        "category": "vicus",
+        "name": "Isaura Vetus",
+        "road": "Cilicia Trachea-Isauria Mountain Road (Seleucia ad Calycadnum-Claudiopolis-Laranda-Isaura Nova)",
+        "distance_from_previous_mp": 6,
+        "identified": true,
+        "notes": "Isaura Vetus was the older of the twin Isaurian strongholds, leveled by Servilius Isauricus in the 70s BC before the new city took over its name and status a short distance away. Scholars still argue over which ruin field is which, since French places Isaura Vetus around Bozkır itself rather than at Zengibar Kalesi.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Isaura_Palaea",
+          "https://pleiades.stoa.org/places/648652"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.9005,
+          36.6347
+        ]
+      },
+      "properties": {
+        "id": "station_germanicopolis_isauria",
+        "category": "civitas",
+        "name": "Germanicopolis",
+        "road": "Germanicopolis-Isaura Nova Road (Western Isauria)",
+        "distance_from_previous_mp": 0,
+        "identified": true,
+        "notes": "Germanicopolis is a highland town of western Isauria counted among the region's ten federated cities, sited in the deep valleys around modern Ermenek. A rough track runs from here across the mountains to Isaura Nova, giving the western Isaurian cantons their own link into the main road system rather than routing everything through Claudiopolis.",
+        "sources": [
+          "https://www.trismegistos.org/place/16318",
+          "https://en.wikipedia.org/wiki/Isaurian_Decapolis"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.6905,
+          36.6998
+        ]
+      },
+      "properties": {
+        "id": "station_zenopolis_isauria",
+        "category": "vicus",
+        "name": "Zenopolis",
+        "road": "Germanicopolis-Isaura Nova Road (Western Isauria)",
+        "distance_from_previous_mp": 15,
+        "identified": true,
+        "notes": "Zenopolis lies in the hills west of Germanicopolis and sits close by the mountain track heading toward Isaura Nova. Though its imperial name and Decapolis status came later under the Isaurian-born emperor Zeno, the settlement itself already occupied this spot on the western Isaurian road network in the early empire.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Zenopolis_(Isauria)",
+          "https://www.wikidata.org/wiki/Q189792"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.1528,
+          37.5897
+        ]
+      },
+      "properties": {
+        "id": "station_cybistra_isauria",
+        "category": "civitas",
+        "name": "Cybistra",
+        "road": "Laranda-Cybistra Road (Lycaonia-Cappadocia Taurus Crossing)",
+        "distance_from_previous_mp": 35,
+        "identified": true,
+        "notes": "Cybistra sits at the northern foot of the Taurus on the Cappadocian side, giving Laranda and the Isaurian road system a second mountain crossing besides the main Cilician Gates route further east. Its mound at Kara Höyük near Ereğli has long anchored the site's identification, though the exact modern coordinates still vary between surveys.",
+        "sources": [
+          "https://www.trismegistos.org/place/34155",
+          "https://en.wikipedia.org/wiki/Heraclea_Cybistra"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
