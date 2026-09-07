@@ -25744,6 +25744,108 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.4229,
+          35.0196
+        ]
+      },
+      "properties": {
+        "id": "station_idalion_tamassos_kition",
+        "category": "vicus",
+        "name": "Idalion (Idalium)",
+        "road": "Kition-Tamassos Road (Cyprus interior copper road via Idalion)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Idalion sat inland on the road linking the copper port of Kition to the mines around Tamassos. It had been a rich copper-working city-kingdom in its own right before Kition's kings seized it in the fourth century BC, and it kept processing ore and hosting its sanctuary of Aphrodite and Athena through the Roman period. Its location made it a natural stop for anyone moving copper or goods between the coast and the interior mining district.",
+        "sources": [
+          "Bekker-Nielsen, The Roads of Ancient Cyprus (2004, Museum Tusculanum Press)",
+          "Bekker-Nielsen & Winther-Jacobsen, 'Ancient roads in the copper mining region of North-central Cyprus,' Cahiers du Centre d'Etudes Chypriotes 55 (2025), pp. 241-265",
+          "Pleiades: Idalion, https://pleiades.stoa.org/places/707519",
+          "Barrington Atlas of the Greek and Roman World, Map 72 Cyprus (D. Rupp, 1994)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.5478,
+          35.0731
+        ]
+      },
+      "properties": {
+        "id": "station_golgoi_tamassos_salamis",
+        "category": "vicus",
+        "name": "Golgoi",
+        "road": "Salamis-Tamassos Road (Cyprus interior copper road, Tabula Peutingeriana)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Golgoi lay on the inland route between Idalion and Tremithus, roughly on the line the copper road followed toward the coast. It was known across the Roman world for its sanctuary of Aphrodite Golgia, a cult that writers such as Catullus and Pausanias treated as older than the famous shrine at Paphos, and the settlement stayed occupied from the Archaic period into Roman times.",
+        "sources": [
+          "Pleiades: Golgoi, https://pleiades.stoa.org/places/707512",
+          "Bekker-Nielsen, The Roads of Ancient Cyprus (2004, Museum Tusculanum Press)",
+          "Barrington Atlas of the Greek and Roman World, Map 72 Cyprus (D. Rupp, 1994)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.6106,
+          35.0864
+        ]
+      },
+      "properties": {
+        "id": "station_tremithous_mp_xviii",
+        "category": "vicus",
+        "name": "Tremithus (Thremitus / Tremithous)",
+        "road": "Salamis-Tamassos Road (Cyprus interior copper road, Tabula Peutingeriana)",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Tremithus stood on the great cross-island road the Peutinger Table records running from Salamis through the interior to the copper towns of Tamassos and Soloi, set down 18 Roman miles out of Salamis and roughly 24 miles short of Tamassos. It grew into a real town with its own bishop by late antiquity, and its name survives almost unchanged in the modern village of Tremetousia on the same spot.",
+        "sources": [
+          "Tabula Peutingeriana, Segmentum X (Cyprus)",
+          "Bekker-Nielsen & Winther-Jacobsen, 'Ancient roads in the copper mining region of North-central Cyprus,' Cahiers du Centre d'Etudes Chypriotes 55 (2025), pp. 241-265",
+          "Trismegistos Places: Tremithous, https://www.trismegistos.org/place/3667",
+          "Bekker-Nielsen, The Roads of Ancient Cyprus (2004, Museum Tusculanum Press)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.9425,
+          35.3041
+        ]
+      },
+      "properties": {
+        "id": "station_melabron_soloi_lapethos",
+        "category": "vicus",
+        "name": "Melabron",
+        "road": "Soloi-Lapethos Road (Cyprus interior copper road, Soloi hinterland branch)",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "Melabron was a small place on the branch road that carried traffic from the Soloi copper district around to Lapethos on the north coast. Ancient sources locate a rural sanctuary called Panakron somewhere between Melabron and Lapethos, which places Melabron along this stretch of road, but the settlement's exact site has not been pinned archaeologically.",
+        "sources": [
+          "Barrington Atlas of the Greek and Roman World, Map 72 Cyprus (D. Rupp, 1994)",
+          "Bekker-Nielsen & Winther-Jacobsen, 'Ancient roads in the copper mining region of North-central Cyprus,' Cahiers du Centre d'Etudes Chypriotes 55 (2025), pp. 241-265",
+          "Bekker-Nielsen, The Roads of Ancient Cyprus (2004, Museum Tusculanum Press)"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
