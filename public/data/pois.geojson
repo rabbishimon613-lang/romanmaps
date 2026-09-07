@@ -46367,6 +46367,264 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.81,
+          50.28
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_anthee",
+        "category": "villa",
+        "name_english": "Villa of Anthée",
+        "province": "Gallia Belgica",
+        "modern_location": "Anthée, Onhaye, Namur province, Belgium",
+        "built": 80,
+        "extant_117ce": true,
+        "notes": "The villa at Anthée grew into the largest Roman country estate in Wallonia, its residential wing and working farm stretching 642 meters end to end along the road linking Bavay to Trier. Namur archaeologists first uncovered the site in 1863, and later digs exposed colonnaded rooms finished with mosaics, painted stucco, and marble marquetry. A bath suite with several hypocaust-heated rooms served the household through the following centuries. Established already in the 1st century CE, the estate stood roughly four decades old by 117 CE, with most of its long working life still ahead of it.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Anth%C3%A9e_(Belgique)",
+          "https://www.rtbf.be/article/2000-ans-plus-tard-la-villa-romaine-d-anthee-marque-toujours-le-cadastre-10060491"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.61,
+          50.73
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_basse_wavre",
+        "category": "villa",
+        "name_english": "Villa of Basse-Wavre (l'Hosté)",
+        "province": "Gallia Belgica",
+        "modern_location": "Basse-Wavre, Wavre, Walloon Brabant, Belgium",
+        "built": 40,
+        "extant_117ce": true,
+        "notes": "Farmers at Basse-Wavre worked an estate known locally as l'Hosté, one of the largest and most influential Roman villas of northern Gaul. Its main residence first rose beside the Dyle valley under Tiberius or Claudius, decades before Trajan's reign. Excavators from the Brussels Archaeological Society uncovered its foundations between 1904 and 1914, then reburied them, leaving the plan preserved underground to this day. Already about eight decades old in 117 CE, the villa continued in use until it burned during the Germanic invasions of 257-266.",
+        "sources": [
+          "https://www.dhnet.be/regions/brabant/2024/10/08/decouvrir-la-villa-gallo-romaine-de-basse-wavre-un-tresor-archeologique-enfoui-TKLD3T46PVG4JNHQ2RVKVPKMHM/",
+          "http://villaromainewavre.blogspot.com/2010/01/la-plus-grande-villa-gallo-romaine.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.12,
+          50.326
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_champion_rosdia",
+        "category": "villa",
+        "name_english": "Villa of Champion (Rosdia baths)",
+        "province": "Gallia Belgica",
+        "modern_location": "Champion, Hamois (Emptinne), Namur province, Belgium",
+        "built": 55,
+        "extant_117ce": true,
+        "notes": "The Rosdia estate at Champion ran a mixed farm economy centered on livestock, its buildings spread across two hectares of Condrusian countryside. Young archaeologists from the Archéolo-J service began ten excavation campaigns there in 1983, tracing the site's life from the mid-1st century to the early 4th century. Its private baths alone covered 340 square meters, heated by a hypocaust and ranked among the largest domestic bathing complexes found in the region. The house and bath wing already stood in 117 CE, roughly sixty years into the estate's working life.",
+        "sources": [
+          "https://archeolo-j.be/documentation/publications/un-ensemble-balneaire-de-lepoque-romaine-champion-emptinne-hamois",
+          "https://orbi.uliege.be/handle/2268/122595"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.41,
+          49.806
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_echternach",
+        "category": "villa",
+        "name_english": "Villa of Echternach",
+        "province": "Gallia Belgica",
+        "modern_location": "Echternach, Grevenmacher, Luxembourg",
+        "built": 70,
+        "extant_117ce": true,
+        "notes": "The villa at Echternach rose around 70 CE beside the Sûre river and grew into one of the largest Roman country houses north of the Alps. Its owners lined walls in marble, floored rooms in mosaic, and warmed the residence with a hypocaust beneath a private bath suite. Earthmoving for a new lake in 1975 exposed the buried foundations, and excavations that followed through 1976 revealed one of the wealthiest agricultural estates in the hinterland of Trier. Already close to fifty years old in 117 CE, the estate remained in use for centuries more, into the 5th century.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Villa_romaine_d'Echternach",
+          "https://www.chronicle.lu/category/history-archaeology/56229-archaeology-in-luxembourg-roman-villa-in-echternach"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Romeinse_villa_Echternach.JPG?width=800",
+        "image_credit": "Queeste, via Wikimedia Commons, CC BY-SA 4.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.3847,
+          49.529
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_nennig",
+        "category": "villa",
+        "name_english": "Villa of Nennig",
+        "province": "Gallia Belgica",
+        "modern_location": "Nennig, Perl, Saarland, Germany",
+        "built": 80,
+        "extant_117ce": true,
+        "notes": "A modest Roman farmhouse rose at Nennig, on the Moselle across from Remich, during the 1st century CE, one of many estates supplying Trier's hinterland. Coins, fibulae, and pottery recovered from the earliest layers date this first building phase. Decades later, around 200 CE, the property was rebuilt into a palatial villa whose floor bore the gladiator mosaic now ranked among the most important Roman artworks north of the Alps, its 160-square-meter surface crowded with musicians, hunters, and armed fighters. In 117 CE only the earlier, simpler farmhouse stood on the site; the grand villa and its famous mosaic still lay roughly eighty years in the future.",
+        "sources": [
+          "https://followinghadrian.com/2013/08/04/the-gladiator-mosaic-at-nennig-germany/",
+          "https://www.timetravelrome.com/2021/04/26/roman-villa-of-nennig-and-its-gladiatorial-mosaic/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_villa_in_Nennig,_Germany_(9288916709).jpg?width=800",
+        "image_credit": "Carole Raddato, via Wikimedia Commons, CC BY-SA 2.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4582,
+          49.4962
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_borg",
+        "category": "villa",
+        "name_english": "Villa Borg",
+        "province": "Gallia Belgica",
+        "modern_location": "Borg, Perl, Saarland, Germany",
+        "built": 15,
+        "extant_117ce": true,
+        "notes": "Villa Borg began as a small timber farmhouse roughly 9 meters square, raised near the Nied valley at the start of the 1st century CE. A stone building replaced it by mid-century, the first of four rebuilding phases archaeologists traced by finding each predecessor demolished down to its footings before the next version rose on top. A local schoolteacher named Johann Schneider first noticed the site's telltale mounds around 1900, though full excavation waited until the late 1980s. By 117 CE the estate had already stood in stone for roughly six decades, long before the reconstructed villa park opened to visitors in 1999.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Roman_Villa_Borg",
+          "https://www.villa-borg.de/geschichte/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Villa_Borg,_Germany_(9293534672).jpg?width=800",
+        "image_credit": "Carole Raddato, via Wikimedia Commons, CC BY-SA 2.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.656,
+          48.097
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_damblain",
+        "category": "villa",
+        "name_english": "Villa of Damblain",
+        "province": "Gallia Belgica",
+        "modern_location": "Damblain, Vosges, France",
+        "built": 70,
+        "extant_117ce": true,
+        "notes": "The bath wing of the villa at Damblain went up during the second half of the 1st century CE, serving a master's residence at the heart of a large farming estate in Leuci territory. INRAP excavators working two seasons, in 2008 and 2009, found its rooms finished with opus sectile floors, marble veneers, painted plaster, and mosaic pavements. The estate stayed in use into the 3rd century before the buildings fell into disrepair and the land returned to farmland. In 117 CE the bath suite had already stood for several decades, hidden until archaeologists found it beneath a former NATO air base runway nearly two thousand years later.",
+        "sources": [
+          "https://www.inrap.fr/une-villa-gallo-romaine-damblain-dans-les-vosges-4992",
+          "https://books.openedition.org/artehis/7758?lang=fr"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.502,
+          47.44
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_nort_sur_erdre",
+        "category": "villa",
+        "name_english": "Villa of Nort-sur-Erdre (La Motte Saint-Georges)",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Nort-sur-Erdre, Loire-Atlantique, France",
+        "built": 70,
+        "extant_117ce": true,
+        "notes": "The villa above the Erdre valley at Nort-sur-Erdre yielded the first completely mapped residential plan of any Roman country house in western France. Its residential quarter spread across roughly 6,400 square meters, arranged around a central courtyard with a double gallery built in a Mediterranean style rare so far from the Mediterranean itself. Archaeologists excavated the site over the winter of 2005-2006 ahead of new development, though the mounds had been noted since the 19th century. The estate's working life ran from the 1st through the 3rd century, meaning its courtyard house already stood above the Erdre valley in 117 CE.",
+        "sources": [
+          "https://www.persee.fr/doc/aremo_1955-6713_2010_num_4_1_885",
+          "https://journals.openedition.org/adlfi/35694?lang=fr"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.39,
+          47.34
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_tiron_saint_patrice",
+        "category": "villa",
+        "name_english": "Villa of Tiron",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Saint-Patrice, Coteaux-sur-Loire, Indre-et-Loire, France",
+        "built": 70,
+        "extant_117ce": true,
+        "notes": "The villa at Tiron overlooked the Loire from a mid-slope terrace between Tours and the border of Maine-et-Loire, its masonry laid directly over an older farmstead's storage pits by the second half of the 1st century CE. Archaeologists excavated the site ahead of the A85 motorway's construction, recording its full plan before the road destroyed the remains. The estate stayed occupied for roughly a century and a half, until the start of the 3rd century, working land alongside five or six other villas strung along the same riverbank. In 117 CE the house had already stood on its terrace above the river for decades.",
+        "sources": [
+          "https://www.persee.fr/doc/racf_0220-6617_2003_num_42_1_2936",
+          "https://fr.wikipedia.org/wiki/Villa_gallo-romaine_de_Tiron"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.21,
+          47.685
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_mane_vechen",
+        "category": "villa",
+        "name_english": "Villa of Mané-Véchen",
+        "province": "Gallia Lugdunensis",
+        "modern_location": "Plouhinec, Morbihan, France",
+        "built": 190,
+        "extant_117ce": false,
+        "notes": "A wealthy Gallo-Roman merchant of the Veneti raised the maritime villa of Mané-Véchen on the Ria d'Etel around the end of the 2nd century CE, decades after the period this map depicts. Its reception halls were heated beneath the floor, and one room held three built-in benches arranged around a hypocaust for warmth. A fire closed the villa at the end of the 3rd century, and although squatters briefly moved back in, the site was finally abandoned early in the 4th century. In 117 CE this stretch of coast above the ria was still open land, roughly eighty years before the villa's first walls went up.",
+        "sources": [
+          "https://fr.wikipedia.org/wiki/Domaine_arch%C3%A9ologique_de_Man%C3%A9-V%C3%A9chen",
+          "https://www.persee.fr/doc/aremo_1955-6713_2007_num_1_1_854"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa_gallo-romaine_de_Man%C3%A9-Vechen.jpg?width=800",
+        "image_credit": "Zabador (Caroline Larboulette), via Wikimedia Commons, CC BY-SA 3.0"
+      }
     }
   ]
 }
