@@ -7,6 +7,135 @@ New entries go on top. Each shift appends its own section.
 
 ---
 
+## Shift 108 — 2026-09-07 (this shift's own prompt claimed "Shift 1 of four")
+
+### Boot
+
+Container started detached at `11dfa00` (Shift 107's tip); `git fetch origin main` confirmed
+`origin/main` matched, `git checkout -B main origin/main` was a safe sync. `npm run validate`
+clean baseline (0 errors, same 7 reviewed warnings) before touching anything. Re-verified network
+egress directly rather than trusting inheritance: `curl` to `en.wikipedia.org`, `overpass-api.de`,
+and `commons.wikimedia.org` all `connect_rejected`/`403` via the agent-proxy, and `WebFetch` on a
+live Commons URL returned `EGRESS_BLOCKED` too — same block every recent shift has documented.
+`WebSearch` (direct and via background `Agent` calls) remains the only working research channel.
+
+Read `SHIFT_BRIEF.md` in full, then `BOARD.md`: every unclaimed ticket is still one of the same
+large multi-pass migrations (`[12-P0-1]` merge-themes, `[03-P0-1]` schema-v2, `[03-P0-2]`
+card-rebuild, `[13-P0-2]` image-audit) or human/network-blocked (`[02-P0-4]`, `[14-P0-1]`,
+`[15-P0-1]`). `FEATURE_BACKLOG.md`'s P0-P3 sections are still 100% checked off. No Track B picked,
+same structural reason the last several shifts logged.
+
+### Track A — Axis 2 (road stations, three new regions/gaps) + Axis 3d (villae, deepen)
+
+Ran four background WebSearch research agents this shift, each reviewed for schema validity,
+id collisions against the full project-wide gazetteer, and coordinate/mileage sanity before
+merging via `scripts/append-geojson-features.mjs`. **`road_stations.geojson`: 913 → 940 (+27).**
+**`pois.geojson`: 1462 → 1465 (+3 villae), plus 4 `ancient_sources` citations spliced onto
+existing high-confidence records via `scripts/apply-ancient-sources-topup.mjs`.**
+
+**Cyrenaica (commit `5d0664b`) — 8 stations, first coverage for the Pentapolis.** Two documented
+corridors from Ptolemais to Cyrene: the Antonine Itinerary's interior route via Semeros and
+Lasamices, and the Peutinger Table's parallel route via Balagrae (Al Bayda) and Messa, plus the
+coastal extension east of Apollonia toward Darnis (Limnias, Naustathmus, Erythron) and the
+Berenice-Taucheira waystation Adriane. One dating trap caught: Adriane's later name
+"Hadrianopolis" and city-status promotion are anachronistic for 11 August 117 CE specifically,
+since Hadrian became emperor on that exact date — the road stop itself predates him.
+
+**Mauretania Tingitana (commit `df0f913`) — 12 stations, Tingis-Volubilis-Sala network.** Both
+Antonine Itinerary routes for the province: the inland Tingis-Volubilis road (Ad Mercurii, Ad
+Novas, Oppidum Novum/Ksar-el-Kebir, Tremulis, Viposcianis, Gilda, Aquae Dacicae, Tocolosida) and
+the coastal Tingis-Sala road (Zilis, Tabernae, Frigidis, plus the frontier watch-post Exploratio
+ad Mercurios beyond Sala). The research agent caught and flagged (without touching) two existing
+data-quality issues worth a follow-up: the anchor coordinates for Banasa and Thamusida it was
+given in the research prompt don't match this project's own `poi_fort_banasa`/`poi_auxfort_thamusida`
+records — it used the correct in-project values for its own interpolation instead. 6 of 12 new
+stations ship `identified:false`/`confidence:low` (itinerary-distance interpolations, not
+excavated findspots). One identification rejected as geographically implausible rather than
+shipped anyway: the traditional "Aquae Dacicae = Moulay Yacoub" equation puts the site on the
+wrong side of Volubilis at roughly twice the itinerary's stated distance.
+
+**Negev incense road + Ancyra-Tavium (commit `dfa2e2b`) — 7 stations, closing two gaps Shift 107
+flagged.** The Malatha-toward-Petra stretch turned out not to be a single road at all — the real
+corridor is a Negev/Incense Road branch (Malatha-Mampsis/Mamshit-the Roman-cut Scorpions'
+Ascent, guarded by the Rogem Zafir fortress-Tamara/Ein Hatzeva in the Arabah), which meets the
+already-documented Via Nova Traiana network near Zoara rather than running to Petra directly.
+Dating trap flagged: Tamara's standing fort is Diocletianic, two centuries past this snapshot,
+even though the oasis stop itself was already functioning in 117 CE. Ancyra-Tavium, assumed by
+Shift 107 to have "zero attested intermediate stations," actually does — the Antonine Itinerary
+names four (Bolegasgus, Sarmalius, Ecobrogis, Adapera) — all four ship `identified:false` since
+none has a securely excavated modern findspot.
+
+**Villae deepen (commit `b700944`) — 3 new estates, `pois.geojson` villa category 92 → 95.**
+Researched six thin/zero-coverage provinces (Dacia, Pannonia Inferior, Moesia Superior/Inferior,
+Judaea, Arabia, Cyrenaica, Numidia). El Ruedo (Hispania Baetica, mid-1st c. CE, high confidence)
+and the En Gedi royal balsam estate (Judaea, attested by Pliny NH 12.111-123 and the Nahal Hever
+papyri as imperial crown land) both landed clean. Oarda-Bulza (Dacia, near Apulum) shipped
+`extant_117ce:false` on a judgment call — its excavators only narrow construction to "first half
+of the 2nd century," too imprecise to confirm it already stood the week Trajan died, so it's
+pinned as a fresh arrival just after his death rather than a certainty on this snapshot. Pannonia
+Inferior, Moesia Superior/Inferior, Arabia, Cyrenaica, and Numidia came back genuinely empty —
+every candidate either postdates 117 CE or lacks a firm excavated date, per the scholarship
+itself (Danube-Balkan rural villas are described as predominantly 2nd-4th century).
+
+**Ancient-sources deepen (commit `4312305`) — 4 real citations, 23 honest skips.** Researched 27
+uncited high-confidence POIs (quarries, kilns, villae, forts, a dam, a bridge, garum/salinae
+sites) for genuine ancient literary or epigraphic citations. Found real ones for Taliata (Peutinger
+Table), the Teos africano-marble quarry (Pliny, NH 36.49-50), Gebel el-Silsila's own Augustan
+quarry inscriptions, and Segontium (Antonine Itinerary + RIB 2264). The other 23 came back
+genuinely empty — most quarries/kilns/villae in this pool are known only from modern archaeology
+(petrographic sourcing, potter stamps, excavation), never named in a surviving ancient text. One
+near-miss caught and dropped: secondary literature commonly attributes a Narses bridge-restoration
+inscription to Ponte Lucano, but the actual CIL-recorded inscription belongs to Ponte Salario
+instead — flagged and not shipped rather than risking a wrong attribution.
+
+`METRICS.md` regenerated once via `npm run metrics -- --write` (commit `cb6dd1e`) after all five
+data batches — 1465 POIs, 100.0% deep, 0 thin (unchanged shape; villae/citations don't move that
+number since 100%/0-thin was already the state). `npm run validate` clean at every merge (0
+errors, same 7 pre-existing out-of-envelope warnings, cross-file-collision count unchanged at 218
+— none of the new points landed within 150m of an existing feature). `npm run build` clean at
+every push via the pre-push hook.
+
+### Track A — considered and deliberately not pursued further
+
+Checked `health.geojson` (51 features), `crafts.geojson` (53), `euergetism.geojson` (61),
+`mints.geojson` (87), and `diplomacy_117.geojson` (29) as candidates for a third axis batch —
+all already thoroughly worked by prior shifts, and a rushed addition without the same
+collision/dating diligence this shift gave the four batches above would have been lower quality
+than stopping here. Two full axes (2 and 3d) done properly beats three done carelessly.
+
+### Track B
+
+Confirmed the same conclusion as Shifts 104-107: `FEATURE_BACKLOG.md`'s P0-P3 sections are 100%
+checked off, `BOARD.md` has no unclaimed ticket smaller than a multi-pass migration or not
+blocked on network/human access/the unattended-screenshot gate. No Track B picked.
+
+### Next shift should pick up
+
+- **Track A, road stations:** the census-and-fill approach is getting real but diminishing
+  returns — 27 stations this shift across 3 regions/gaps, down from 75 last shift. Two flagged
+  gaps closed (Malatha-Petra corridor, Ancyra-Tavium). Genuinely fresh territory worth checking
+  next: Isauria's mountain roads (Cilicia), Epirus (Nicopolis hinterland), Thrace (Serdica-Byzantium),
+  Crete's interior road (Gortyn-Knossos-Lyttos), or a second Baetica interior pass beyond Via
+  Augusta. Re-run the category census first (`grep -o '"road": "[^"]*"' public/data/road_stations.geojson
+  | sort -u`, now 91 distinct corridor strings across 940 stations) rather than assuming.
+- **Villae (axis 3d)** is close to its real ceiling in the Danube/Balkan provinces specifically —
+  the scholarship itself dates that region's rural-villa boom to after 117 CE. Remaining
+  real headroom: Arabia (only Nabataean agricultural surveys, described as "almost completely
+  unexcavated" — worth a dedicated pass if a source ever surfaces a named excavated site) and
+  a wider Gallia Lugdunensis/Belgica sweep (untouched by this shift, unlike Aquitania/Narbonensis).
+- **Ancient-sources**: uncited high-confidence pool is now 121 (grew from 71 on 2026-09-02 as new
+  POIs landed without citations in the meantime, not a regression) — still a working pipeline via
+  `scripts/apply-ancient-sources-topup.mjs`, but the easy 60-80% hit-rate categories (forts,
+  civic monuments) are mostly cleared; expect a lower hit rate on what's left (quarries, kilns,
+  shipwrecks — many are genuinely unattested in ancient text).
+- **Axis 1 (more cities)** stays network-blocked — reconfirmed directly this shift.
+- **Track B:** still nothing unblocked in `FEATURE_BACKLOG.md` or `BOARD.md`. `[15-P0-1]`
+  unattended-screenshot-gate remains the root blocker for `polish`/UI tickets from an unattended
+  session. `[11-P1-6]` split-map-tsx remains the most plausible pick for a shift with more
+  wall-clock budget than one slot allows for exploratory refactoring without visual verification.
+
+---
+
 ## Shift 107 — 2026-09-06 (this shift's own prompt claimed "Shift 4 of four")
 
 ### Boot
