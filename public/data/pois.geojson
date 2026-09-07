@@ -41356,7 +41356,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Drususstein_Gesamt_2011.jpg?width=800",
         "image_credit": "The Drususstein, cenotaph of Drusus, in the citadel of Mainz, Wikimedia Commons",
-        "image_alt": "Tall masonry tower of the Drususstein cenotaph within the Mainz citadel"
+        "image_alt": "Tall masonry tower of the Drususstein cenotaph within the Mainz citadel",
+        "ancient_sources": [
+          {
+            "author": "Suetonius",
+            "work": "Life of Claudius",
+            "ref": "1",
+            "note": "Records that after the death of Nero Claudius Drusus in Germany in 9 BCE, the army raised a cenotaph in his honor at Mogontiacum (Mainz), around which soldiers performed annual commemorative rites — identified by scholars with the surviving Drususstein monument."
+          }
+        ]
       }
     },
     {
@@ -42675,7 +42683,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa_Magna_Anagni.jpg?width=800",
-        "image_credit": "Excavated remains of Villa Magna near Anagni · Wikimedia Commons"
+        "image_credit": "Excavated remains of Villa Magna near Anagni · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Marcus Cornelius Fronto (letters of Marcus Aurelius)",
+            "work": "Correspondence (Ad M. Caesarem)",
+            "ref": "Book 4, letters describing the vintage at Villa Magna (c. 143-145 CE)",
+            "note": "The future emperor Marcus Aurelius writes to his tutor Fronto describing two days spent at the imperial estate of Villa Magna near Anagnia, including hunting, reading Cato's De Agricultura, and personally helping harvest the grapes — a first-hand literary description naming the estate."
+          }
+        ]
       }
     },
     {
@@ -42731,7 +42747,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Giardino_dipinto,_da_villa_di_livia_a_prima_porta,_02.jpg?width=800",
-        "image_credit": "Painted Garden Room fresco from the Villa of Livia · Wikimedia Commons"
+        "image_credit": "Painted Garden Room fresco from the Villa of Livia · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Natural History",
+            "ref": "15.136-137",
+            "note": "Recounts the omen of a white hen dropping a laurel branch into Livia's lap at her villa, and how the resulting laurel grove (from which emperors' triumphal laurels were later cut) gave the estate its ancient name 'ad Gallinas Albas' — the villa excavated at Prima Porta."
+          }
+        ]
       }
     },
     {
@@ -42785,7 +42809,15 @@
           "https://en.wikipedia.org/wiki/Villa_of_Trajan",
           "https://www.researchgate.net/publication/326350994_La_villa_pulcherrima_di_Traiano_a_Centumcellae_Una_proposta_Aceptado"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Inscribed lead water pipes (fistulae plumbeae) from the site",
+            "work": "epigraphic find, unpublished CIL/AE-type stamped fistula inscriptions",
+            "ref": "fistula inscriptions reading '...Caesaris Nervae Traiani Optimi Aug. Germanici Dacici...'",
+            "note": "Lead water pipes excavated at the villa carry Trajan's imperial titulature (without the later title 'Parthicus'), directly and specifically identifying the complex at Arcinazzo Romano as an imperial property of Trajan built early in his reign (98-116 CE)."
+          }
+        ]
       }
     },
     {
@@ -43734,7 +43766,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Philopappos%20monument%2C%20Athens%2C%20080555.jpg?width=800",
-        "image_credit": "Philopappos Monument, Athens · Wikimedia Commons"
+        "image_credit": "Philopappos Monument, Athens · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Pausanias",
+            "work": "Description of Greece",
+            "ref": "1.25.8",
+            "note": "Describes the Mouseion Hill opposite the Acropolis and mentions the grand tomb-monument built there for a 'Syrian man' (a diplomatic circumlocution for Gaius Julius Antiochus Philopappus, the deposed Commagenian prince and Roman consul) — the monument still standing on the hill today."
+          }
+        ]
       }
     },
     {
@@ -43760,7 +43800,15 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Kerameikos"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Funerary inscription (epigraphic)",
+            "work": "IG II² 6217",
+            "ref": "IG II² 6217",
+            "note": "The inscribed base of the surviving grave stele in the Kerameikos names Dexileos son of Lysanias of Thorikos, gives his birth and death archon-years (414/3-394/3 BCE), and states he died at Corinth as one of five cavalrymen — a genuine, in-situ funerary inscription directly naming this monument's subject."
+          }
+        ]
       }
     },
     {
@@ -44687,7 +44735,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gonio-Apsaros_Fortress_(9458300619).jpg?width=800",
-        "image_credit": "Gonio-Apsaros Fortress, Adjara, Georgia · Wikimedia Commons"
+        "image_credit": "Gonio-Apsaros Fortress, Adjara, Georgia · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Arrian",
+            "work": "Periplus Ponti Euxini (Periplus of the Euxine Sea)",
+            "ref": "sec. 6-7",
+            "note": "In his tour of the Black Sea coast as governor of Cappadocia (c. 131/132 CE), Arrian names Apsarus directly and reports that five Roman cohorts were stationed there and that he personally paid their wages — a first-hand description of the garrison at the site now called Gonio."
+          }
+        ]
       }
     },
     {
@@ -44942,7 +44998,21 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Murallas_de_Le%C3%B3n_01.JPG?width=800",
-        "image_credit": "Roman-era walls of León, built by Legio VII Gemina · Wikimedia Commons"
+        "image_credit": "Roman-era walls of León, built by Legio VII Gemina · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Suetonius",
+            "work": "Life of Galba",
+            "ref": "10",
+            "note": "Describes Galba, as governor of Hispania Tarraconensis, levying a new legion (which became Legio VII Gemina) in 68 CE to support his revolt against Nero — the origin of the unit later garrisoned at León."
+          },
+          {
+            "author": "Ptolemy",
+            "work": "Geography",
+            "ref": "2.6 (Hispania Tarraconensis, Asturum towns)",
+            "note": "Lists 'Legio VII Gemina' itself as a named town/settlement in the territory of the Astures, confirming the legionary base gave its name to the site that became León."
+          }
+        ]
       }
     },
     {
@@ -45107,7 +45177,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Babylon_Fortress_(Roman_Tower),_Old_Cairo,_Egypt1.jpg?width=800",
-        "image_credit": "Roman tower of the Babylon Fortress, Old Cairo (canal's Nile intake) · Wikimedia Commons"
+        "image_credit": "Roman tower of the Babylon Fortress, Old Cairo (canal's Nile intake) · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Ptolemy",
+            "work": "Geography",
+            "ref": "4.5 (Aegyptus, description of the Nile branches/canal)",
+            "note": "Refers to the Nile-to-Red-Sea canal restored under Trajan as the 'River of Trajan' (Amnis Traianus/Trajanou potamos), the earliest surviving naming of Trajan's reopened and renamed canal."
+          }
+        ]
       }
     },
     {
@@ -45137,7 +45215,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Forum_Hadriani_gedenkpaal.JPG?width=800",
-        "image_credit": "Commemorative marker for Forum Hadriani, Arentsburgh park, Voorburg (town on the canal) · Wikimedia Commons"
+        "image_credit": "Commemorative marker for Forum Hadriani, Arentsburgh park, Voorburg (town on the canal) · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Tacitus",
+            "work": "Annals",
+            "ref": "11.20",
+            "note": "Directly describes Gnaeus Domitius Corbulo, while campaigning on the lower Rhine in 47 CE, having his troops dig a 23-mile canal connecting the Rhine and Meuse to allow ships to avoid the hazards of the open sea — the ancient literary basis for the Fossa Corbulonis."
+          }
+        ]
       }
     },
     {
@@ -45165,7 +45251,21 @@
           "https://www.ancientportsantiques.com/a-few-ports/marius-canal-fossae-marianae/",
           "https://fr.wikipedia.org/wiki/Fosses_mariennes"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Plutarch",
+            "work": "Life of Marius",
+            "ref": "15",
+            "note": "Describes Marius, while his army was idle in Gaul (104-102 BCE), having his soldiers dig a new, deep-water canal from the Rhône to the sea near its silted mouths, avoiding the difficult natural outlets — later granted to Massilia and known as the Fossae Marianae."
+          },
+          {
+            "author": "Strabo",
+            "work": "Geography",
+            "ref": "4.1.8",
+            "note": "Also describes the canal dug by Marius diverting a large part of the Rhône's flow to a safer harbor mouth, corroborating Plutarch's account of the same works."
+          }
+        ]
       }
     },
     {
@@ -45249,7 +45349,15 @@
           "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0006%3Aentry%3Dabusina",
           "https://followinghadrianphotography.com/2020/09/23/abusina/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Anonymous (Roman state)",
+            "work": "Itinerarium Antonini",
+            "ref": "route Augusta Vindelicum–Castra Regina segment",
+            "note": "Lists the station 'Abusina' on the Danube road, confirming the Roman name of the fort at modern Eining (the name derives from the Abens river). The same name-forms (Abusina/Ad Abusinam) also appear on the Tabula Peutingeriana and in the Notitia Dignitatum's Pannonian/Raetian troop lists."
+          }
+        ]
       }
     },
     {
@@ -45418,7 +45526,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mautern_an_der_Donau_-_Kastell_Favianis,_westlicher_Hufeisenturm.JPG?width=800",
         "image_credit": "Wikimedia Commons",
-        "image_alt": "Surviving horseshoe tower of the Favianis fort at Mautern an der Donau"
+        "image_alt": "Surviving horseshoe tower of the Favianis fort at Mautern an der Donau",
+        "ancient_sources": [
+          {
+            "author": "Eugippius",
+            "work": "Vita Sancti Severini",
+            "ref": "passim (e.g. cc. 4, 20, 40)",
+            "note": "This early-6th-century hagiography of St Severinus of Noricum repeatedly names Favianis (identified with Mautern on the Danube) as the fortified Danube town where Severinus based his community; it is the principal ancient source establishing the place-name and its role as a still-garrisoned riverside stronghold in the late 5th century."
+          }
+        ]
       }
     },
     {
@@ -45473,7 +45589,15 @@
           "https://www.tulln.at/en/experience/city-culture/roman/tulln-is-comagena-1",
           "https://en.wikipedia.org/wiki/Fort_Ala_Nova"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Anonymous (Roman state)",
+            "work": "Itinerarium Antonini",
+            "ref": "Vindobona–Lauriacum route (Comagenis)",
+            "note": "Names 'Comagenis' as a road station between Vindobona and Cetium, matching the fort at Tulln; the same name (Comagenis/Comagena) also appears on the Tabula Peutingeriana and in the Notitia Dignitatum's Noricum garrison list."
+          }
+        ]
       }
     },
     {
@@ -45504,7 +45628,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zeiselmauer_-_Burgus.JPG?width=800",
         "image_credit": "Wikimedia Commons",
-        "image_alt": "Late Roman burgus tower at the Cannabiaca fort site, Zeiselmauer"
+        "image_alt": "Late Roman burgus tower at the Cannabiaca fort site, Zeiselmauer",
+        "ancient_sources": [
+          {
+            "author": "Anonymous (Roman state)",
+            "work": "Notitia Dignitatum",
+            "ref": "Occ. XXXIV.45-46",
+            "note": "Lists 'Cannabiaca' as the easternmost garrisoned fort of Noricum Ripense on the Danube, matching the site at Zeiselmauer; this is the direct ancient attestation of the fort's Roman name."
+          }
+        ]
       }
     },
     {
@@ -45586,7 +45718,15 @@
           "https://www.mithraeum.eu/place/42",
           "https://www.danubetourism.eu/intercisa-roman-fort-and-vicus-dunaujvaros/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Anonymous (Roman state)",
+            "work": "Notitia Dignitatum",
+            "ref": "Occitalic Pannonian garrison list (Dux Valeriae ripensis section)",
+            "note": "Lists 'Intercisa' as the station of a late Roman cavalry unit (cuneus equitum) on the Pannonian Danube limes, corresponding to the fort at Dunaújváros; the name is also attested on numerous locally-found milestones and unit inscriptions."
+          }
+        ]
       }
     },
     {
@@ -45779,7 +45919,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Colonia_Ulpia_Oescus,_Moesia_Inferior,_Bulgaria_(41347393362).jpg?width=800",
         "image_credit": "Wikimedia Commons",
-        "image_alt": "Ruins of Colonia Ulpia Oescus at Gigen, Bulgaria"
+        "image_alt": "Ruins of Colonia Ulpia Oescus at Gigen, Bulgaria",
+        "ancient_sources": [
+          {
+            "author": "Ptolemy",
+            "work": "Geography",
+            "ref": "3.10 (Moesia Inferior)",
+            "note": "Lists Oescus among the towns of Lower Moesia on the Danube, confirming the Roman-era name and location of the legionary base/colonia (Ulpia Oescus) at modern Gigen."
+          }
+        ]
       }
     },
     {
@@ -45887,7 +46035,15 @@
           "https://en.wikipedia.org/wiki/Carsium_(castra)",
           "https://archeologie.culture.gouv.fr/harsova/en/roman-byzantine-city-carsium"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Ptolemy",
+            "work": "Geography",
+            "ref": "3.10 (Moesia Inferior, Danube towns)",
+            "note": "Lists 'Carsium' as a Danube town in Lower Moesia, matching the fort at Hârșova; the name (Carsium/Carsum) is also attested continuously from the 2nd to 7th centuries on the Tabula Peutingeriana, in the Itinerarium Antonini and the Notitia Dignitatum."
+          }
+        ]
       }
     },
     {
@@ -45917,7 +46073,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cetatea_Capidava-CT-I-m-A-02600.01.JPG?width=800",
         "image_credit": "Wikimedia Commons",
-        "image_alt": "Ruins of the Roman fort at Capidava on the Danube"
+        "image_alt": "Ruins of the Roman fort at Capidava on the Danube",
+        "ancient_sources": [
+          {
+            "author": "Anonymous (Roman state)",
+            "work": "Notitia Dignitatum",
+            "ref": "Or. XXXIX.13",
+            "note": "Lists the 'Cuneus equitum Solensium' as garrisoned at Capidava under the Dux Scythiae, directly naming the fort on the Danube in Scythia Minor (modern Capidava, Romania)."
+          }
+        ]
       }
     },
     {
@@ -46002,7 +46166,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Thamusida,_Mauretania_Tingitana,_Morocco_(38384660375).jpg?width=800",
         "image_credit": "Wikimedia Commons",
-        "image_alt": "Ruins of the Roman military camp at Thamusida, Morocco"
+        "image_alt": "Ruins of the Roman military camp at Thamusida, Morocco",
+        "ancient_sources": [
+          {
+            "author": "Ptolemy",
+            "work": "Geography",
+            "ref": "Mauretania Tingitana town list",
+            "note": "Names Thamusida as a town of Mauretania Tingitana on the road from Tingi to Sala; the name is also attested in the Itinerarium Antonini and the Geographer of Ravenna, confirming the site's Roman-era identity at modern Sidi Ali ben Ahmed."
+          }
+        ]
       }
     },
     {
@@ -46111,7 +46283,15 @@
           "https://en.wikipedia.org/wiki/Tocolsida",
           "https://www.wikidata.org/wiki/Q30692864"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Anonymous (Roman state)",
+            "work": "Itinerarium Antonini",
+            "ref": "Tocolosida–Tingis route entry",
+            "note": "Names 'Tocolosida' as a station on the road to Tingis, matching the Roman camp near Volubilis in Mauretania Tingitana; the place is also listed by Ptolemy among the towns of the province."
+          }
+        ]
       }
     },
     {
