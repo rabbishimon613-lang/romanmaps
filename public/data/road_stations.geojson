@@ -23984,6 +23984,279 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9875,
+          39.1592
+        ]
+      },
+      "properties": {
+        "id": "station_ambracia",
+        "category": "mansio",
+        "name": "Ambracia",
+        "road": "Nicopolis-Ambracia Road",
+        "distance_from_previous_mp": 19,
+        "identified": true,
+        "notes": "Ambracia was the old Molossian capital that King Pyrrhus once ruled from, sitting on the Arachthos river north of the Ambracian Gulf. Augustus stripped the city of most of its population to found Nicopolis after Actium, leaving it as a secondary town on the road linking the new provincial capital to the interior.",
+        "sources": [
+          "Tabula Peutingeriana (Ambracia-Nicopolis Actium link)",
+          "TIB 3",
+          "TIR Athens-Epirus"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.4842,
+          40.4715
+        ]
+      },
+      "properties": {
+        "id": "station_aulon",
+        "category": "mansio",
+        "name": "Aulon",
+        "road": "Nicopolis-Dyrrachium Coastal Road",
+        "distance_from_previous_mp": 0,
+        "identified": true,
+        "notes": "Aulon was the Adriatic port where travelers crossing from Hydruntum in Italy first set foot in Epirus and picked up the coastal road running south to Nicopolis. Its sheltered bay and lagoon channel gave the town its name and kept it a standard stop on the sea route between Italy and Greece.",
+        "sources": [
+          "Itin. Ant. (Hydruntum-Aulon crossing, Aulon-Actia Nicopolis coastal stage list)",
+          "https://en.wikipedia.org/wiki/Aulon"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.297,
+          40.414
+        ]
+      },
+      "properties": {
+        "id": "station_acroceraunia",
+        "category": "mansio",
+        "name": "Acroceraunia",
+        "road": "Nicopolis-Dyrrachium Coastal Road",
+        "distance_from_previous_mp": 33,
+        "identified": false,
+        "notes": "Acroceraunia marked the stormy headland of the Ceraunian Mountains where the coastal road from Aulon rounded the Karaburun peninsula on its way south into Epirus. Ancient sailors dreaded the cape's sudden squalls, and the itinerary used it as a fixed distance marker on this exposed stretch of coast.",
+        "sources": [
+          "Itin. Ant. (Aulon-Actia Nicopolis coastal stage list)",
+          "https://en.wikipedia.org/wiki/Ceraunian_Mountains"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.0398,
+          39.92
+        ]
+      },
+      "properties": {
+        "id": "station_phoenice",
+        "category": "mansio",
+        "name": "Phoenice",
+        "road": "Nicopolis-Dyrrachium Coastal Road",
+        "distance_from_previous_mp": 41,
+        "identified": true,
+        "notes": "Phoenice was the wealthy capital of the Chaonian tribe and by most accounts the richest city in Hellenistic Epirus before Rome absorbed the region. Its position on the coastal road made it a natural stop between the Ceraunian headland and Buthrotum.",
+        "sources": [
+          "Itin. Ant. (Aulon-Actia Nicopolis coastal stage list)",
+          "https://en.wikipedia.org/wiki/Phoenice"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.0234,
+          39.746
+        ]
+      },
+      "properties": {
+        "id": "station_buthrotum",
+        "category": "mansio",
+        "name": "Buthrotum",
+        "road": "Nicopolis-Dyrrachium Coastal Road",
+        "distance_from_previous_mp": 56,
+        "identified": true,
+        "notes": "Buthrotum was a Roman colony planted opposite Corcyra at the mouth of a narrow strait, later cast by Virgil as a miniature Troy refounded by Trojan exiles. The coastal road ran south from here toward Nicopolis and north toward Phoenice and the Illyrian coast.",
+        "sources": [
+          "Itin. Ant. (Aulon-Actia Nicopolis coastal stage list)",
+          "Giorgi, E. and Bogdani, J. (2012)",
+          "Giorgi, E. (2017)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.2166,
+          39.5936
+        ]
+      },
+      "properties": {
+        "id": "station_ad_dianam_epirus",
+        "category": "mansio",
+        "name": "Ad Dianam",
+        "road": "Nicopolis-Dyrrachium Coastal Road",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Ad Dianam took its name from a roadside sanctuary of Diana on the coastal route between Buthrotum and the mouth of the Acheron. It gave travelers moving between Thesprotia's harbor towns and Nicopolis a fixed point roughly midway along the journey.",
+        "sources": [
+          "Tabula Peutingeriana, Itinerarium Antonini (Ad Dianam-Buthrotum stage)",
+          "Hammond, N.G.L. (1967)",
+          "Giorgi, E. (2017)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.5239,
+          39.2233
+        ]
+      },
+      "properties": {
+        "id": "station_glykys_limen",
+        "category": "mansio",
+        "name": "Glykys Limen",
+        "road": "Nicopolis-Dyrrachium Coastal Road",
+        "distance_from_previous_mp": 41,
+        "identified": true,
+        "notes": "Glykys Limen, the 'Sweet Harbor,' sat at the mouth of the Acheron river, where fresh water pouring in from the river and the Acherusian Lake kept the bay's water sweet even this close to the sea. Ancient sources place it about 20 Roman miles from Nicopolis on the final stretch of the coastal road.",
+        "sources": [
+          "Itin. Ant. (Aulon-Actia Nicopolis coastal stage list)",
+          "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry%3DGlycys-Limen-geo"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.7395,
+          40.5526
+        ]
+      },
+      "properties": {
+        "id": "station_byllis",
+        "category": "mansio",
+        "name": "Byllis",
+        "road": "Apollonia-Nicopolis Interior Road",
+        "distance_from_previous_mp": 19,
+        "identified": true,
+        "notes": "Byllis was the hilltop federal capital of the Bylliones, raised to colonial status after Actium and still ringed by its terraced walls above the Vjose valley. The inland road south from Apollonia climbed to Byllis before dropping toward Hadrianopolis and the Epirote interior.",
+        "sources": [
+          "Tabula Peutingeriana (Apollonia-Byllis link)",
+          "TIR Naissus",
+          "TIB 3"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.2233,
+          39.9958
+        ]
+      },
+      "properties": {
+        "id": "station_hadrianopolis_epirus",
+        "category": "mansio",
+        "name": "Hadrianopolis",
+        "road": "Apollonia-Nicopolis Interior Road",
+        "distance_from_previous_mp": 62,
+        "identified": true,
+        "notes": "Hadrianopolis was a planned city the emperor Hadrian founded in the Dropull valley to anchor Roman control over the southern Illyrian-Epirote borderlands. It sat on the inland road linking Byllis and Apollonia to Dodona and the Epirote heartland around Nicopolis.",
+        "sources": [
+          "Tabula Peutingeriana (Byllis-Hadrianopolis and Hadrianopolis-Dodona links)",
+          "TIR Naissus",
+          "TIB 3",
+          "Giorgi and Bogdani (2012)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.7456,
+          38.8221
+        ]
+      },
+      "properties": {
+        "id": "station_dioryktos",
+        "category": "mansio",
+        "name": "Dioryktos",
+        "road": "Nicopolis-Naupaktos Road",
+        "distance_from_previous_mp": 24,
+        "identified": false,
+        "notes": "Dioryktos, 'the cut-through,' marked a channel dug across a narrow neck of land on the road linking Nicopolis to Aetolia and the Corinthian Gulf. The name preserves the memory of engineering work that let travelers bypass a headland on the way toward Naupaktos.",
+        "sources": [
+          "Tabula Peutingeriana (Dioryktos-Nicopolis Actium link)",
+          "TIB 1",
+          "Pritchett, W.K. (1980)",
+          "TIR Athens-Epirus"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.2917,
+          38.5732
+        ]
+      },
+      "properties": {
+        "id": "station_konope_arsinoeia",
+        "category": "mansio",
+        "name": "Konope Arsinoeia",
+        "road": "Nicopolis-Naupaktos Road",
+        "distance_from_previous_mp": 59,
+        "identified": true,
+        "notes": "Konope was an old Acarnanian town on the Achelous river that the Ptolemies refounded and renamed Arsinoeia for a Ptolemaic queen. It stood on the road connecting Nicopolis's hinterland to Naupaktos and the cities along the Corinthian Gulf.",
+        "sources": [
+          "Tabula Peutingeriana, Itinerarium Antonini (Naupaktos-Konope Arsinoeia link)",
+          "TIB 1",
+          "Pritchett, W.K. (1980)"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
