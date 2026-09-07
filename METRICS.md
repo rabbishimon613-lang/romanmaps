@@ -32,20 +32,20 @@ references.)
 
 | Measure | Value | Notes |
 |---|---:|---|
-| POIs in `pois.geojson` | 1475 | the curated place canon |
-| Records in the 33 thematic files | 2227 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
-| **Curated places, total** | **3,702** | |
-| Description of 60+ words | 1475 · **100.0%** | measured on `notes`; 0 still thin |
-| Has an image | 921 · **62.4%** | `pois.geojson` only — see below for the thematic files |
-| Has an image — thematic files | 1214 · **54.5%** | the 33 files this metric used to skip entirely |
-| Has an image — all curated places | 2135 · **57.7%** | `pois.geojson` + thematic files combined |
-| Has an ancient source | 576 · **39.1%** | |
-| — of `confidence: high` POIs | 516 / 620 · **83.2%** | the target set for `[09-P0-1]` |
-| Categories with a "what happened here" paragraph | 53 / 60 · **88.3%** | covers 1409/1475 POIs · missing: beneficiarii_station, bath, harbor, domus, vicus, gymnasium, courier_post |
+| POIs in `pois.geojson` | 1480 | the curated place canon |
+| Records in the 33 thematic files | 2287 | pre-merge; not searchable or card-able yet (`[12-P0-1]`) |
+| **Curated places, total** | **3,767** | |
+| Description of 60+ words | 1480 · **100.0%** | measured on `notes`; 0 still thin |
+| Has an image | 926 · **62.6%** | `pois.geojson` only — see below for the thematic files |
+| Has an image — thematic files | 1214 · **53.1%** | the 33 files this metric used to skip entirely |
+| Has an image — all curated places | 2140 · **56.8%** | `pois.geojson` + thematic files combined |
+| Has an ancient source | 586 · **39.6%** | |
+| — of `confidence: high` POIs | 526 / 622 · **84.6%** | the target set for `[09-P0-1]` |
+| Categories with a "what happened here" paragraph | 53 / 60 · **88.3%** | covers 1414/1480 POIs · missing: beneficiarii_station, bath, harbor, domus, vicus, gymnasium, courier_post |
 | Sites with curated building descriptions | 36 / 40 · **90.0%** | ancona, aquileia, athens, baalbek, baiae, beneventum, brixia, capua, corinth, cumae, delphi, djemila, ephesus, herculaneum, italica, jerash, leptisMagna, luni, merida, milan, ostia, paestum, palestrina, palmyra, pompeii, portus, pozzuoli, rimini, rome, sabratha, timgad, tivoli, trier, verona, vindolanda, volubilis (`[06-P0-2]`, standing) |
 | Validator errors | **0** | |
 | Validator warnings | 7 | reviewed; see the standing-warnings note |
-| Cross-file name collisions (<150 m) | 218 | the dedupe backlog `[12-P0-1]` has to resolve |
+| Cross-file name collisions (<150 m) | 219 | the dedupe backlog `[12-P0-1]` has to resolve |
 | Cold-load LCP | not measured | needs a dev server; blocked by `[15-P0-1]` |
 
 ## 2026-09-06
@@ -484,4 +484,4 @@ references.)
 | 2026-09-04 | 1405 | 100.0% | 63.4% | 39.2% | 0 errors |
 | 2026-09-05 | 1413 | 100.0% | 64.3% | 38.9% | 0 errors |
 | 2026-09-06 | 1462 | 100.0% | 62.7% | 37.7% | 0 errors |
-| 2026-09-07 | 1475 | 100.0% | 62.4% | 39.1% | 0 errors |
+| 2026-09-07 | 1480 | 100.0% | 62.6% | 39.6% | 0 errors |
