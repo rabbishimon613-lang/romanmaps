@@ -46805,6 +46805,141 @@
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa_gallo-romaine_de_Man%C3%A9-Vechen.jpg?width=800",
         "image_credit": "Zabador (Caroline Larboulette), via Wikimedia Commons, CC BY-SA 3.0"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.924555,
+          51.819786
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_chedworth",
+        "category": "villa",
+        "name_english": "Chedworth Roman Villa",
+        "province": "Britannia",
+        "modern_location": "Chedworth, Gloucestershire, England, United Kingdom (Cotswolds)",
+        "built": 120,
+        "extant_117ce": false,
+        "notes": "Chedworth grew into one of the largest Roman villas in Britain, passing through at least six building phases before reaching its 4th-century peak of bath suites, a dining hall, and courtyard mosaics. The first farm buildings on the site went up around 120 CE, three plain ranges and a bathhouse for a working Romano-British estate. A fire in the early 3rd century forced a rebuild, and the grand villa visitors see today only took shape in the 300s. On the day Trajan died in August 117 CE the hillside above the River Coln was still open Cotswold pasture; Chedworth's first walls rose just a few years later.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Chedworth_Roman_Villa",
+          "https://www.nationaltrust.org.uk/visit/gloucestershire-cotswolds/chedworth-roman-villa/history-of-chedworth-roman-villa"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chedworth Roman Villa 2012 - West bath house tepidarium mosaic.jpg?width=800",
+        "image_credit": "West bath house tepidarium mosaic, Chedworth Roman Villa · Wikimedia Commons (photo: Pasicles)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.59475,
+          50.92325
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_bignor",
+        "category": "villa",
+        "name_english": "Bignor Roman Villa",
+        "province": "Britannia",
+        "modern_location": "Bignor, West Sussex, England, United Kingdom",
+        "built": 190,
+        "extant_117ce": false,
+        "notes": "Bignor grew into a sprawling 65-room courtyard villa famed for the longest Roman mosaic corridor in Britain, a 24-metre run of Greek-key pattern leading to floors of Ganymede, Venus, and gladiator cupids. The first confirmed building on the site was a plain timber farmhouse raised around 190 CE, replaced by a four-room masonry house by 250 CE and then transformed by 350 CE into the lavish estate visitors see today. Nothing about grandeur marked this stretch of the South Downs early on; it stayed unbuilt farmland for the better part of a century before that first timber farmhouse appeared. In 117 CE, decades before any structure went up, the Bignor site was open Sussex countryside with no Roman building on it.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Bignor_Roman_Villa",
+          "https://www.roman-britain.co.uk/places/bignor-roman-villa/"
+        ],
+        "confidence": "high",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bignor Roman Villa MMB 10.jpg?width=800",
+        "image_credit": "Bignor Roman Villa mosaic floor · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.33472,
+          37.36472
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_piazza_armerina",
+        "category": "villa",
+        "name_english": "Villa Romana del Casale (Piazza Armerina)",
+        "province": "Sicilia",
+        "modern_location": "Piazza Armerina, Province of Enna, Sicily, Italy",
+        "built": 50,
+        "extant_117ce": true,
+        "notes": "The Villa Romana del Casale is Sicily's largest and best-preserved Roman villa, its 3,500 square metres of still-vivid mosaics including the famous Bikini Girls athletes floor laid across more than 60 rooms. That grand palace was built in the early 4th century, around 310 to 340 CE, after an earthquake destroyed an earlier, far plainer rustic villa on the same hillside. Archaeologists traced that earlier building back to the 1st century CE, meaning a modest working Roman farm villa stood on this spot in 117 CE, not the mosaic palace later Roman elites would enjoy. On the day Trajan died, a plain countryside farmhouse occupied the site; the palace of colonnades and hunting mosaics familiar today lay two centuries in the future.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Villa_Romana_del_Casale",
+          "https://www.penn.museum/sites/expedition/the-villa-del-casale-of-piazza-armerina/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Casale Bikini.jpg?width=800",
+        "image_credit": "\"Bikini Girls\" mosaic, Villa Romana del Casale · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1544,
+          50.6728
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_brading",
+        "category": "villa",
+        "name_english": "Brading Roman Villa",
+        "province": "Britannia",
+        "modern_location": "Brading, Isle of Wight, England, United Kingdom",
+        "built": 100,
+        "extant_117ce": true,
+        "notes": "Brading grew from a single Roman-British farm building into a three-range courtyard villa on the Isle of Wight, its 3rd- and 4th-century mosaics showing Orpheus, Medusa, and a strange cockerel-headed man. The South Range, the villa's first building, was raised around 100 CE as a working farmhouse; the larger North Range followed a century later, and the ornate West Range with its mosaics did not arrive until the 300s. A 3rd-century fire barely slowed the estate down, with farming there continuing for another hundred years and coins showing occupation lasting until around 395 CE. By 117 CE, Brading's South Range had already stood on the island for about seventeen years, making it one of the earliest Roman farm buildings on the Isle of Wight.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Brading_Roman_Villa",
+          "https://bradingromanvilla.org.uk/the-museum/the-building/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Brading Roman Villa, Isle of Wight 06.jpg?width=800",
+        "image_credit": "Brading Roman Villa, Isle of Wight · Wikimedia Commons"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.1474,
+          51.8267
+        ]
+      },
+      "properties": {
+        "id": "poi_villa_great_witcombe",
+        "category": "villa",
+        "name_english": "Great Witcombe Roman Villa",
+        "province": "Britannia",
+        "modern_location": "Great Witcombe, near Gloucester, Gloucestershire, England, United Kingdom",
+        "built": 175,
+        "extant_117ce": false,
+        "notes": "Great Witcombe perches on a steep, spring-fed hillside below Birdlip Hill, its unusual U-shaped courtyard plan built to follow the slope instead of fighting it. Construction began sometime between about 150 and 250 CE, with a bath suite later extended beneath the courtyard and protected by a cross-wall. The estate kept expanding through the late 3rd and 4th centuries and stayed occupied into the early 5th century, long after Roman rule in Britain ended. In 117 CE the hillside was still untouched Cotswold slope; Great Witcombe's builders would not break ground there for at least another generation.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Great_Witcombe_Roman_Villa",
+          "https://www.english-heritage.org.uk/visit/places/great-witcombe-roman-villa/history/"
+        ],
+        "confidence": "medium",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great Witcombe Roman Villa - from the south - geograph.org.uk - 485595.jpg?width=800",
+        "image_credit": "Great Witcombe Roman Villa, view from the south · Wikimedia Commons (geograph.org.uk)"
+      }
     }
   ]
 }
