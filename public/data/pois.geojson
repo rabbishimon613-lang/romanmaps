@@ -35659,7 +35659,15 @@
           "https://en.wikipedia.org/wiki/Taliata",
           "https://www.trismegistos.org/place/29655"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Tabula Peutingeriana",
+            "work": "Roman road map (Peutinger Table)",
+            "ref": "Segment VII",
+            "note": "Lists Taliata as a named station on the Danube road through the Iron Gates."
+          }
+        ]
       }
     },
     {
@@ -36427,7 +36435,15 @@
           "https://teos.ankara.edu.tr/en/heritage/marble-quarries/",
           "https://www.researchgate.net/publication/229585160_POIKILOILITHOI_THE_ANOMALOUS_ECONOMICS_OF_THE_ROMAN_IMPERIAL_MARBLE_QUARRY_AT_TEOS"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Pliny the Elder",
+            "work": "Naturalis Historia",
+            "ref": "36.49-50",
+            "note": "Describes the black-and-red 'Lucullean marble' introduced to Rome by Lucullus, identified by a Teos quarry inscription as africano marble cut here."
+          }
+        ]
       }
     },
     {
@@ -36806,7 +36822,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gebel_el-Silsila,_Asuan,_Egypt.JPG",
-        "image_credit": "Pufacz, Wikimedia Commons"
+        "image_credit": "Pufacz, Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Gebel el-Silsila quarry inscriptions",
+            "work": "Demotic and Greek quarry texts, East bank Quarry Q34",
+            "ref": "Augustan-period corpus, c. 27 BCE-14 CE",
+            "note": "On-site quarry marks record stone cut here for Roman-era building work at Dendera under Augustus."
+          }
+        ]
       }
     },
     {
@@ -37438,7 +37462,21 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Segontium_Roman_Fort_-_geograph.org.uk_-_1287434.jpg?width=800",
-        "image_credit": "Photograph via Wikimedia Commons (geograph.org.uk), CC BY-SA 2.0"
+        "image_credit": "Photograph via Wikimedia Commons (geograph.org.uk), CC BY-SA 2.0",
+        "ancient_sources": [
+          {
+            "author": "Antonine Itinerary",
+            "work": "Itinerarium Antonini",
+            "ref": "Iter XI",
+            "note": "Lists the station Segontio on the road route through north Wales."
+          },
+          {
+            "author": "RIB",
+            "work": "Roman Inscriptions of Britain",
+            "ref": "RIB 2264",
+            "note": "Milestone found near the fort naming the emperor Caracalla, AD 212-217."
+          }
+        ]
       }
     },
     {
