@@ -7624,7 +7624,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Settefinestre_lower_terrace_wall.png?width=800",
-        "image_credit": "Lower terrace wall of the Roman villa of Settefinestre · Wikimedia Commons (CC BY-SA)"
+        "image_credit": "Lower terrace wall of the Roman villa of Settefinestre · Wikimedia Commons (CC BY-SA)",
+        "ancient_sources": [
+          {
+            "author": "Cicero",
+            "work": "Letters to Atticus (Epistulae ad Atticum)",
+            "ref": "15.27.1",
+            "quote": "Cicero refers to his friend P. Sestius's estate at Cosa; archaeologists identify this ager Cosanus property with Settefinestre on the strength of the Sestius (SES/SEST) amphora stamps found there and elsewhere."
+          }
+        ]
       }
     },
     {
@@ -34970,7 +34978,15 @@
           "https://de.wikipedia.org/wiki/Kastell_Dunabogd%C3%A1ny",
           "https://www.wikidata.org/wiki/Q1735351"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Anonymous",
+            "work": "Antonine Itinerary (Itinerarium Antonini)",
+            "ref": "266.3 (route Aquincum-Crumerum)",
+            "quote": "Lists 'Cirpi' as a station 12 Roman miles from Ulcisia Castra and 12 miles from Ad Herculem on the Pannonian limes road."
+          }
+        ]
       }
     },
     {
@@ -40013,7 +40029,15 @@
           "https://www.romeartlover.it/Uthina.html",
           "https://www.livius.org/articles/place/uthina/"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Unknown (signed by the mosaicist Masurius)",
+            "work": "Hunting mosaic, House of the Laberii, Uthina (Oudna)",
+            "ref": "in situ mosaic inscription, 2nd c. CE",
+            "quote": "'Masuri in praedis Laberiorum Laberianus et Paulinus' - names the estate of the owners Laberianus and Paulinus Laberius."
+          }
+        ]
       }
     },
     {
@@ -40365,7 +40389,15 @@
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Triumph_of_Neptunus_mosaic_in_the_Bardo_National_Museum_from_Sousse.jpg?width=800",
         "image_credit": "Triumph of Neptune mosaic, House of Sorothus, Bardo National Museum · Wikimedia Commons",
-        "image_alt": "Roman mosaic of Neptune riding a chariot pulled by sea creatures, surrounded by medallions of Nereids and marine monsters"
+        "image_alt": "Roman mosaic of Neptune riding a chariot pulled by sea creatures, surrounded by medallions of Nereids and marine monsters",
+        "ancient_sources": [
+          {
+            "author": "Unknown (mosaic titulus)",
+            "work": "Racehorse mosaic, House of Sorothus, Hadrumetum",
+            "ref": "in situ mosaic inscription, 2nd-3rd c. CE (Sousse/Bardo Museum)",
+            "quote": "The winning horses on the mosaic are branded with the name 'Soro(thus)', identifying the stock-breeder who owned the house."
+          }
+        ]
       }
     },
     {
@@ -41087,7 +41119,15 @@
           "https://www.italia.it/en/lazio/rome/sepulchral-monument-of-annia-regilla",
           "https://www.turismoroma.it/en/places/sepolcro-di-annia-regilla-gia-detto-tempio-del-dio-redicolo"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Marcellus of Side",
+            "work": "Epitaph for Regilla",
+            "ref": "IG XIV 1389",
+            "quote": "A Greek elegiac inscription on marble stelae from Herodes Atticus's Triopion estate on the Via Appia, mourning Annia Regilla as 'she of the beautiful ankles ... neither mortal, nor divine.'"
+          }
+        ]
       }
     },
     {
@@ -42152,7 +42192,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Droitwich_Spa_Vines_Park_1.jpg?width=800",
-        "image_credit": "Vines Park, Droitwich Spa, site of the Roman brine springs · Wikimedia Commons"
+        "image_credit": "Vines Park, Droitwich Spa, site of the Roman brine springs · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Anonymous (Ravenna cosmographer)",
+            "work": "Ravenna Cosmography",
+            "ref": "R&C entry 'Salinis' (Britannia list, Dobunnic section)",
+            "quote": "Records 'Salinis' for the Dobunnic salt-working settlement identified with Droitwich."
+          }
+        ]
       }
     },
     {
@@ -42179,7 +42227,15 @@
           "https://en.wikipedia.org/wiki/Roman_Middlewich",
           "https://www.researchgate.net/publication/287122456_Excavations_on_a_Roman_Salt-working_Site_at_Jersey_Way_Middlewich_Cheshire"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Anonymous (Ravenna cosmographer)",
+            "work": "Ravenna Cosmography (Ravennatis Anonymi Cosmographia)",
+            "ref": "R&C entry 'Salinis' (Britannia list, between Derventio and Condate)",
+            "quote": "Lists 'Salinis' among the towns of Britain; generally identified with the Cornovian salt-working settlement at Middlewich."
+          }
+        ]
       }
     },
     {
@@ -42871,7 +42927,15 @@
           "Wikipedia, 'Aulus Umbricius Scaurus'",
           "pompeiiinpictures.com, VII.16.15 Casa di Umbricius Scaurus"
         ],
-        "confidence": "high"
+        "confidence": "high",
+        "ancient_sources": [
+          {
+            "author": "Unknown (workshop tituli picti)",
+            "work": "Inscribed garum-jar mosaic, House of A. Umbricius Scaurus, Pompeii",
+            "ref": "CIL IV (Pompeii inscriptions corpus)",
+            "quote": "G(ari) F(los) SCOM SCAURI EX OFFICINA SCAURI - 'the flower of garum, from the workshop of Scaurus' - inscribed on mosaic urns set in his own atrium floor."
+          }
+        ]
       }
     },
     {
@@ -44510,7 +44574,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Facade_of_Philip_II_tomb_Vergina_Greece.jpg?width=800",
-        "image_credit": "Facade of the Tomb of Philip II, Vergina · Wikimedia Commons"
+        "image_credit": "Facade of the Tomb of Philip II, Vergina · Wikimedia Commons",
+        "ancient_sources": [
+          {
+            "author": "Diodorus Siculus",
+            "work": "Bibliotheca Historica",
+            "ref": "16.92-95",
+            "quote": "Describes the assassination of Philip II at Aegae during the wedding festivities of 336 BCE and the elaborate funeral honors that followed."
+          }
+        ]
       }
     },
     {
@@ -44622,7 +44694,15 @@
         ],
         "confidence": "high",
         "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Herod's_family_tomb_in_Nikoforieh,_Jerusalem._Tomb_of_Mariamne_LOC_matpc.23199.jpg?width=800",
-        "image_credit": "G. Eric and Edith Matson Photograph Collection, Library of Congress"
+        "image_credit": "G. Eric and Edith Matson Photograph Collection, Library of Congress",
+        "ancient_sources": [
+          {
+            "author": "Flavius Josephus",
+            "work": "The Jewish War",
+            "ref": "5.3.2 (§108)",
+            "quote": "Describes Titus's forces levelling the ground from Scopus 'as far as Herod's monuments,' a landmark by the Serpents' Pool used to mark the Roman camp during the siege of 70 CE."
+          }
+        ]
       }
     },
     {
