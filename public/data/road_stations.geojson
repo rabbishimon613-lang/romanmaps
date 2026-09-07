@@ -25263,6 +25263,487 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.0273,
+          40.9908
+        ]
+      },
+      "properties": {
+        "id": "station_chalcedon",
+        "category": "statio",
+        "name": "Chalcedon",
+        "road": "Chalcedon-Nicomedia Coastal Road (Sinus Astacenus)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Chalcedon anchored the western end of the coastal road along the Gulf of Izmit, opposite Byzantium across the Bosporus strait. Travelers crossed by ferry here before continuing east toward Nicomedia. The Antonine Itinerary opened its Bithynia route at this city, counting the first stage onward to Pantichium at four Roman miles.",
+        "sources": [
+          "Antonine Itinerary (Itinerarium Antonini)",
+          "Wikipedia: Chalcedon"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.235,
+          40.8747
+        ]
+      },
+      "properties": {
+        "id": "station_pantichium",
+        "category": "statio",
+        "name": "Pantichium",
+        "road": "Chalcedon-Nicomedia Coastal Road (Sinus Astacenus)",
+        "distance_from_previous_mp": 4,
+        "identified": true,
+        "notes": "Pantichium sat on the coastal road four Roman miles east of Chalcedon, at the site of modern Pendik. The Antonine Itinerary recorded it as the first stage out of Chalcedon on the road to Nicomedia. Its harbor served travelers moving along the northern shore of the Gulf of Izmit.",
+        "sources": [
+          "Antonine Itinerary (Itinerarium Antonini)",
+          "Wikipedia: Pantichium"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.0956,
+          40.9583
+        ]
+      },
+      "properties": {
+        "id": "station_poleatikon",
+        "category": "vicus",
+        "name": "Poleatikon",
+        "road": "Chalcedon-Nicomedia Coastal Road (Sinus Astacenus)",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "Poleatikon was a small coastal town on the road between Libyssa and Chalcedon, tentatively placed near modern Bostanci. It sat along the Gulf of Izmit shoreline between Pantichium and Nassete. No mile figure survives for its distance from neighboring stations.",
+        "sources": [
+          "Wikipedia: Poleatikon",
+          "Barrington Atlas 52 (Byzantium)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.1311,
+          40.9247
+        ]
+      },
+      "properties": {
+        "id": "station_nassete",
+        "category": "vicus",
+        "name": "Nassete",
+        "road": "Chalcedon-Nicomedia Coastal Road (Sinus Astacenus)",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "Nassete was a coastal settlement on the same road from Libyssa to Chalcedon, tentatively located near modern Maltepe. It lay between Poleatikon and Pantichium along the shoreline route into Nicomedia.",
+        "sources": [
+          "Wikipedia: Nassete",
+          "Barrington Atlas 52 (Byzantium)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.3798,
+          40.7984
+        ]
+      },
+      "properties": {
+        "id": "station_potamoi",
+        "category": "statio",
+        "name": "Potamoi",
+        "road": "Chalcedon-Nicomedia Coastal Road (Sinus Astacenus)",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "Potamoi marked a station on the coastal road east of Pantichium, between Pendik and Dacibyza along the Gulf of Izmit. Its Greek name meant 'rivers,' pointing to a site where streams crossed the coast road. The Barrington Atlas places it just east of modern Pendik.",
+        "sources": [
+          "Pleiades: Potamoi (511371)",
+          "Wikipedia: Potamoi (Bithynia)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.43,
+          40.8
+        ]
+      },
+      "properties": {
+        "id": "station_dacibyza",
+        "category": "mansio",
+        "name": "Dacibyza",
+        "road": "Chalcedon-Nicomedia Coastal Road (Sinus Astacenus)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Dacibyza functioned as a mansio on the road between Chalcedon and Nicomedia, at the site of modern Gebze. The Antonine Itinerary, the Itinerarium Burdigalense, the Peutinger Table, and the Ravenna Cosmography all named it as a stop on this route. Surveys at the site recorded harbor structures, a cistern, and traces of the Roman road.",
+        "sources": [
+          "Antonine Itinerary",
+          "Itinerarium Burdigalense",
+          "Tabula Peutingeriana",
+          "Ravenna Cosmography",
+          "Wikipedia: Dacibyza"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.535,
+          40.7797
+        ]
+      },
+      "properties": {
+        "id": "station_libyssa",
+        "category": "mansio",
+        "name": "Libyssa",
+        "road": "Chalcedon-Nicomedia Coastal Road (Sinus Astacenus)",
+        "distance_from_previous_mp": 15,
+        "identified": false,
+        "notes": "Libyssa stood on the Chalcedon-to-Nicomedia road, fifteen Roman miles beyond Pantichium according to the Antonine Itinerary. Hannibal died and was buried here in 183 BCE while fleeing extradition to Rome, according to Plutarch and Cornelius Nepos. Modern research favors Dilovasi as the site, though earlier scholarship pointed to nearby Gebze.",
+        "sources": [
+          "Antonine Itinerary",
+          "Pliny the Elder, Natural History 5.148",
+          "Wikipedia: Libyssa"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.6137,
+          40.789
+        ]
+      },
+      "properties": {
+        "id": "station_charax_bithynia",
+        "category": "statio",
+        "name": "Charax",
+        "road": "Chalcedon-Nicomedia Coastal Road (Sinus Astacenus)",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "Charax was a small port on the north shore of the Gulf of Izmit, on the road between Nicomedia and Libyssa, near modern Hereke. It handled local coastal traffic feeding into the main road toward Nicomedia.",
+        "sources": [
+          "Wikipedia: Charax (Bithynia)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.733,
+          40.783
+        ]
+      },
+      "properties": {
+        "id": "station_brunca",
+        "category": "mansio",
+        "name": "Brunca",
+        "road": "Chalcedon-Nicomedia Coastal Road (Sinus Astacenus)",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "Brunca lay on the Propontis coast on the road from Nicomedia to Libyssa, twelve Roman miles from Libyssa and thirteen from Nicomedia. Its tentative location near Hereke or Yarimca placed it on the final stretch of coast road before Nicomedia.",
+        "sources": [
+          "Wikipedia: Brunca (Bithynia)"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.6659,
+          40.5577
+        ]
+      },
+      "properties": {
+        "id": "station_liada",
+        "category": "mansio",
+        "name": "Liada",
+        "road": "Nicomedia-Nicaea Road",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "Liada stood on the road connecting Nicomedia and Nicaea, tentatively placed near modern Sariagil in the Iznik district. It served travelers on the final approach into Nicaea from the northeast.",
+        "sources": [
+          "Wikipedia: Liada"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.6861,
+          40.6317
+        ]
+      },
+      "properties": {
+        "id": "station_libum",
+        "category": "mansio",
+        "name": "Libum",
+        "road": "Nicomedia-Nicaea Road",
+        "distance_from_previous_mp": 22,
+        "identified": false,
+        "notes": "Libum sat twenty-two Roman miles from Nicomedia on the road to Nicaea, with Nicaea itself a further twenty-one miles beyond, according to the Antonine Itinerary. Its site is placed near modern Senaiye. The Pleiades gazetteer catalogs the location under a surveyed coordinate.",
+        "sources": [
+          "Antonine Itinerary",
+          "Pleiades: Libum (511304)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.0976,
+          40.7211
+        ]
+      },
+      "properties": {
+        "id": "station_dekaton_bithynia",
+        "category": "mutatio",
+        "name": "Dekaton",
+        "road": "Nicomedia-Ancyra Road (via Claudiopolis)",
+        "distance_from_previous_mp": 10,
+        "identified": false,
+        "notes": "Dekaton took its name from its position ten Roman miles east of Nicomedia on the road toward the interior of Bithynia and onward to Galatia. It marked the first stage out of the provincial capital on this inland route. Its Greek name simply meant 'the tenth milestone.'",
+        "sources": [
+          "Pleiades: Dekaton (511229)",
+          "Wikipedia: Dekaton (Bithynia)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.248,
+          40.7532
+        ]
+      },
+      "properties": {
+        "id": "station_prindea",
+        "category": "vicus",
+        "name": "Prindea",
+        "road": "Nicomedia-Ancyra Road (via Claudiopolis)",
+        "distance_from_previous_mp": null,
+        "identified": false,
+        "notes": "Prindea was a town on the road east of Nicomedia, further along the route toward Claudiopolis and Galatia. Its name survives only through epigraphic and gazetteer evidence rather than literary sources. Its site is tentatively placed near modern Hamidiye.",
+        "sources": [
+          "Pleiades: Prindea (511376)",
+          "Wikipedia: Prindea"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.1649,
+          40.8121
+        ]
+      },
+      "properties": {
+        "id": "station_cratia",
+        "category": "statio",
+        "name": "Cratia (Flaviopolis)",
+        "road": "Nicomedia-Ancyra Road (via Claudiopolis)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Cratia, also called Flaviopolis, sat on the great road linking Claudiopolis to Ancyra, twenty-four Roman miles from Claudiopolis according to the Antonine Itinerary. The site corresponds to modern Gerede in Bolu province. It worked as a crossroads town connecting Bithynia, Galatia, and the Black Sea coast through Paphlagonia.",
+        "sources": [
+          "Antonine Itinerary",
+          "Wikipedia: Cratia (Bithynia)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.2042,
+          40.4824
+        ]
+      },
+      "properties": {
+        "id": "station_carus_vicus",
+        "category": "vicus",
+        "name": "Carus Vicus",
+        "road": "Nicomedia-Ancyra Road (via Claudiopolis)",
+        "distance_from_previous_mp": 30,
+        "identified": false,
+        "notes": "Carus Vicus lay thirty Roman miles beyond Cratia on the road to Ancyra, per the Antonine Itinerary. Its site is placed near modern Cukuroren in the hills between Bithynia and Galatia. Two more stages, Legna and Crentius, carried travelers on to Ancyra.",
+        "sources": [
+          "Antonine Itinerary",
+          "Pleiades: Carus Vicus (844886)"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.5624,
+          40.1275
+        ]
+      },
+      "properties": {
+        "id": "station_juliopolis",
+        "category": "statio",
+        "name": "Juliopolis",
+        "road": "Nicomedia-Ancyra Road (via Claudiopolis)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Juliopolis marked the eastern gateway into Bithynia, the town Pliny told Trajan that nearly every traveler entering the province had to pass through. Pliny asked Trajan to station a centurion there to ease the burden its small population bore hosting official traffic, but Trajan declined, citing the precedent it would set. Hadrian himself passed through Juliopolis in November 117 CE, weeks after Trajan's death.",
+        "sources": [
+          "Pliny the Younger, Letters 10.77-10.78",
+          "Wikipedia: Juliopolis"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.426,
+          41.287
+        ]
+      },
+      "properties": {
+        "id": "station_heraclea_pontica",
+        "category": "statio",
+        "name": "Heraclea Pontica",
+        "road": "Black Sea Coastal Road (Heraclea Pontica-Amastris-Sinope)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Heraclea Pontica anchored the western end of the Black Sea coastal road, a Megarian colony turned major Roman port at modern Karadeniz Eregli. Roads ran from here east toward Tieion and Amastris, and inland toward Bithynia's interior cities. Milestones recovered near the city attest to its Roman-period road network.",
+        "sources": [
+          "Wikipedia: Heraclea Pontica",
+          "ToposText: Heraclea Pontica (Pontus)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.0315,
+          41.5712
+        ]
+      },
+      "properties": {
+        "id": "station_tieion",
+        "category": "mansio",
+        "name": "Tieion (Tios)",
+        "road": "Black Sea Coastal Road (Heraclea Pontica-Amastris-Sinope)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Tieion sat at the mouth of the Billaios River, on the boundary between Bithynia and Paphlagonia, linking the coastal road to inland routes toward Claudiopolis. Archaeologists recovered two milestones near the city, one erected under Septimius Severus recording the governor Quintus Tineius Sacerdos's repair of the province's roads. Roman road remains are still traceable running from the site toward Amastris.",
+        "sources": [
+          "Ozturk, 'Two New Milestones from Tios/Tieion in the Karadeniz Eregli Museum', Philia 2 (2016) 83-91",
+          "Wikipedia: Filyos"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.3903,
+          41.7458
+        ]
+      },
+      "properties": {
+        "id": "station_amastris",
+        "category": "statio",
+        "name": "Amastris",
+        "road": "Black Sea Coastal Road (Heraclea Pontica-Amastris-Sinope)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Amastris was a major harbor city on the Black Sea coast, formed by the merger of four smaller settlements around 300 BCE. Pliny the Younger, as governor of Bithynia and Pontus, described its most attractive street running alongside what was really an open sewer and asked Trajan for funds to cover it. The coastal road connected the city westward to Tieion and Heraclea Pontica.",
+        "sources": [
+          "Pliny the Younger, Letters 10.98-10.99",
+          "Wikipedia: Amasra"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1531,
+          42.0231
+        ]
+      },
+      "properties": {
+        "id": "station_sinope",
+        "category": "statio",
+        "name": "Sinope",
+        "road": "Black Sea Coastal Road (Heraclea Pontica-Amastris-Sinope)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Sinope was the principal Roman port on the central Black Sea coast, the birthplace of Diogenes the Cynic and a Julian colony under Rome. Whether a continuous coastal road linked it by land to Amastris and Heraclea Pontica remains disputed among specialists, given the difficult terrain along this stretch of shore. Most travel and trade between these cities likely moved by sea instead.",
+        "sources": [
+          "Wikipedia: Sinope",
+          "Scholarship questioning land-route continuity between Sinope and Heraclea Pontica on the Tabula Peutingeriana"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
