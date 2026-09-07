@@ -25846,6 +25846,630 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2667,
+          35.8
+        ]
+      },
+      "properties": {
+        "id": "station_portus_magnus_mauretania",
+        "category": "mansio",
+        "name": "Portus Magnus",
+        "road": "Caesarea-Saldae Coastal Road (Mauretania Caesariensis)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Portus Magnus served as the westernmost Roman port on this stretch of the Mauretanian coast, sited on the Gulf of Arzew near modern Bethioua. Excavated remains span roughly 36 hectares, including rainwater cisterns, street sections, and a small forum measuring 50 by 40 meters. The Antonine Itinerary placed it on the coastal road running east toward Caesarea.",
+        "sources": [
+          "Itinerarium Antonini (Cuntz ed.), Mauretania Caesariensis coastal route",
+          "Princeton Encyclopedia of Classical Sites: Portus Magnus (Bettioua)",
+          "https://en.wikipedia.org/wiki/Portus_Magnus,_Algeria"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2667,
+          36.0258
+        ]
+      },
+      "properties": {
+        "id": "station_quiza_caesariensis",
+        "category": "mansio",
+        "name": "Quiza",
+        "road": "Caesarea-Saldae Coastal Road (Mauretania Caesariensis)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "Quiza held municipium status and sat on the coast between Portus Magnus and Arsenaria, in what is now Mostaganem Province. Pliny the Elder recorded it as Quiza Xenitana, distinguishing it from other North African towns of the same name. The Antonine Itinerary logged it as a stop on the road linking Portus Magnus to Caesarea.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Mauretania Caesariensis coastal route: Quiza-Arsenaria XL",
+          "https://en.wikipedia.org/wiki/Quiza_Xenitana",
+          "Pliny the Elder, Naturalis Historia V.2"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.8731,
+          36.3343
+        ]
+      },
+      "properties": {
+        "id": "station_arsenaria_caesariensis",
+        "category": "mansio",
+        "name": "Arsenaria",
+        "road": "Caesarea-Saldae Coastal Road (Mauretania Caesariensis)",
+        "distance_from_previous_mp": 40,
+        "identified": false,
+        "notes": "Arsenaria stood 40 miles east of Quiza on the itinerary's coastal road, at a site now tentatively placed at Bou-Ras. The town served as an episcopal see into late antiquity before the settlement dropped out of the record. Its ruins have not been definitively excavated, so this point marks the itinerary's mileage position rather than a confirmed dig.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Mauretania Caesariensis coastal route: Quiza-Arsenaria XL",
+          "https://en.wikipedia.org/wiki/Arsennaria"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3,
+          36.5167
+        ]
+      },
+      "properties": {
+        "id": "station_cartennae",
+        "category": "mansio",
+        "name": "Cartennae",
+        "road": "Caesarea-Saldae Coastal Road (Mauretania Caesariensis)",
+        "distance_from_previous_mp": 40,
+        "identified": true,
+        "notes": "Cartennae grew from a Phoenician trading post into a full Roman colony under Augustus, who settled veterans there and gave it the honorific title Colonia Augusti. The city built a forum, theater, baths, and aqueducts, and its old necropolis came to light after a section of coastal cliff collapsed. Modern Ténès occupies the same site on the Mauretanian coast.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Mauretania Caesariensis coastal route: Arsenaria-Cartenna XL",
+          "https://en.wikipedia.org/wiki/Cartennae"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.6016,
+          36.5439
+        ]
+      },
+      "properties": {
+        "id": "station_lari_castellum",
+        "category": "mansio",
+        "name": "Lar Castellum",
+        "road": "Caesarea-Saldae Coastal Road (Mauretania Caesariensis)",
+        "distance_from_previous_mp": 18,
+        "identified": false,
+        "notes": "Lar Castellum marked a fortified waypoint 18 miles east of Cartennae on the coastal itinerary, in hill country later associated with the diocese of Lari Castellum. No excavated ruins have been tied conclusively to the name, so this point sits along the road's mileage chain between Cartennae and Cartili. The see survives today only as a titular bishopric of the Catholic Church.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Mauretania Caesariensis coastal route: Cartenna-Lar XVIII",
+          "https://en.wikipedia.org/wiki/Lari_Castellum"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.7523,
+          36.5574
+        ]
+      },
+      "properties": {
+        "id": "station_cartili",
+        "category": "mansio",
+        "name": "Cartili",
+        "road": "Caesarea-Saldae Coastal Road (Mauretania Caesariensis)",
+        "distance_from_previous_mp": 24,
+        "identified": false,
+        "notes": "Cartili followed Lar Castellum after a 24-mile stretch, one of the shorter, sparsely documented stages on the road to Caesarea. The Antonine Itinerary preserves only its name and its distances to its neighbors, with no ruins confirmed on the ground. Its position here splits the mileage chain between Lar Castellum and Gunugu.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Mauretania Caesariensis coastal route: Lar-Cartili XXIV"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9031,
+          36.571
+        ]
+      },
+      "properties": {
+        "id": "station_gunugu",
+        "category": "mansio",
+        "name": "Gunugu",
+        "road": "Caesarea-Saldae Coastal Road (Mauretania Caesariensis)",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Gunugu began as a Punic and Berber settlement before Rome planted a colony of veteran soldiers there after the Punic Wars. The site lies near modern Gouraya in Tipaza Province, close enough to Caesarea that the two towns shared the same stretch of coastline. The Antonine Itinerary placed it just 12 miles short of the provincial capital.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Mauretania Caesariensis coastal route: Cartili-Gunucus XII",
+          "https://en.wikipedia.org/wiki/Gunugus"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1944,
+          36.6058
+        ]
+      },
+      "properties": {
+        "id": "station_caesarea_mauretaniae",
+        "category": "mansio",
+        "name": "Caesarea",
+        "road": "Caesarea-Saldae Coastal Road (Mauretania Caesariensis)",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Caesarea served as the capital of Mauretania Caesariensis, rebuilt by King Juba II from the Punic town of Iol and renamed for Augustus. The Antonine Itinerary treated it as the hub where the coastal road from Portus Magnus met the interior road arriving from Auzia and Rapidum. Modern Cherchell preserves substantial remains, including a theater, an amphitheater, and an archaeological museum built from finds at the site.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Mauretania Caesariensis coastal route",
+          "https://en.wikipedia.org/wiki/Caesarea_in_Mauretania",
+          "https://pleiades.stoa.org/places/295374"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4467,
+          36.5919
+        ]
+      },
+      "properties": {
+        "id": "station_tipasa_caesariensis",
+        "category": "mansio",
+        "name": "Tipasa",
+        "road": "Caesarea-Saldae Coastal Road (Mauretania Caesariensis)",
+        "distance_from_previous_mp": 22,
+        "identified": true,
+        "notes": "This Tipasa sat on the Mauretanian coast 22 miles east of Caesarea and is a separate place from the inland Numidian station of the same name already logged on the Cirta-Sitifis-Auzia road. Rome raised it to colonial status under Claudius, and its surviving ruins, now a UNESCO World Heritage site, include a forum, basilicas, and a large coastal cemetery. The Antonine Itinerary listed it between Caesarea and Casae Calbenti.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Mauretania Caesariensis coastal route: Caesarea-Tipasa XXII",
+          "https://en.wikipedia.org/wiki/Tipaza",
+          "https://pleiades.stoa.org/places/295431"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.7581,
+          36.6907
+        ]
+      },
+      "properties": {
+        "id": "station_casae_calbenti",
+        "category": "mansio",
+        "name": "Casae Calbenti",
+        "road": "Caesarea-Saldae Coastal Road (Mauretania Caesariensis)",
+        "distance_from_previous_mp": 16,
+        "identified": false,
+        "notes": "Casae Calbenti appeared on both the Antonine Itinerary and the Tabula Peutingeriana as a stop 16 miles east of Tipasa and 15 miles short of Icosium. The Barrington Atlas records it only by grid reference, with no confirmed modern ruin matched to the name. Its position here follows the itinerary's mileage split between Tipasa and Icosium.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Mauretania Caesariensis coastal route: Tipasa-Casae Calbenti XVI",
+          "Tabula Peutingeriana, segment showing Casae Calbenti XV mpm from Icosium"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.0588,
+          36.7853
+        ]
+      },
+      "properties": {
+        "id": "station_icosium",
+        "category": "mansio",
+        "name": "Icosium",
+        "road": "Caesarea-Saldae Coastal Road (Mauretania Caesariensis)",
+        "distance_from_previous_mp": 15,
+        "identified": true,
+        "notes": "Icosium grew from a Phoenician and Punic port into a Roman municipium and later colonia under Vespasian, sitting on the bay that became the harbor of Algiers. The Antonine Itinerary placed it 15 miles east of Casae Calbenti, marking it as the largest town between Caesarea and Saldae. The modern Casbah of Algiers stands directly over the ancient settlement.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Mauretania Caesariensis coastal route: Casae Calbenti-Icosium XV",
+          "https://en.wikipedia.org/wiki/Icosium",
+          "https://pleiades.stoa.org/places/295291"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.2379,
+          36.7991
+        ]
+      },
+      "properties": {
+        "id": "station_rusguniae",
+        "category": "mansio",
+        "name": "Rusguniae",
+        "road": "Caesarea-Saldae Coastal Road (Mauretania Caesariensis)",
+        "distance_from_previous_mp": 33,
+        "identified": true,
+        "notes": "Rusguniae held colonial status and stood across the Bay of Algiers from Icosium, on the site of modern Tamentfoust. Archaeologists have traced the settlement along roughly 1,500 meters of coastline, with a fort and museum now marking the spot. The Antonine Itinerary set it 33 miles beyond Icosium on the road running toward Saldae.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Mauretania Caesariensis coastal route: Icosium-Rusguniae XXXIII",
+          "https://en.wikipedia.org/wiki/Rusguniae_(ruins)"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.566,
+          36.802
+        ]
+      },
+      "properties": {
+        "id": "station_rusubbicari",
+        "category": "mansio",
+        "name": "Rusubbicari",
+        "road": "Caesarea-Saldae Coastal Road (Mauretania Caesariensis)",
+        "distance_from_previous_mp": 15,
+        "identified": true,
+        "notes": "Rusubbicari began as a Phoenician and Carthaginian trading post before passing into Roman hands, and archaeologists have tentatively matched it to ruins at Zemmouri El Bahri. Excavations there have turned up Roman coins alongside later medieval pottery and structures. The Antonine Itinerary placed it 15 miles east of Rusguniae on the coastal road.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Mauretania Caesariensis coastal route: Rusguniae-Rusubbicari XV",
+          "https://en.wikipedia.org/wiki/Rusubbicari"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7167,
+          36.8667
+        ]
+      },
+      "properties": {
+        "id": "station_cissi",
+        "category": "mansio",
+        "name": "Cissi",
+        "road": "Caesarea-Saldae Coastal Road (Mauretania Caesariensis)",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "Cissi held municipium rank and sat on the coast at modern Djinet, near the mouth of the Isser River and Cape Djinet. Inscriptions from the neighboring towns of Iomnium and Rusuccurum name Cissi's genius loci, pointing to regular contact between the three ports. The Antonine Itinerary logged it 24 miles past Rusubbicari.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Mauretania Caesariensis coastal route: Rusubbicari-Cisi XXIV",
+          "https://en.wikipedia.org/wiki/Djinet"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.9151,
+          36.9147
+        ]
+      },
+      "properties": {
+        "id": "station_rusuccurum",
+        "category": "mansio",
+        "name": "Rusuccurum",
+        "road": "Caesarea-Saldae Coastal Road (Mauretania Caesariensis)",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Rusuccurum reached municipium status under Septimius Severus, though earlier sources still called it a colonia, and the Antonine Itinerary counted it 12 miles east of Cissi. Eighteenth-century visitors described extensive Roman ruins on the site before French colonial expansion built directly over them. Modern Dellys still carries a Roman wall built into its technical college, and a Christian sarcophagus from the site is now in the Algiers museum.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Mauretania Caesariensis coastal route: Cisi-Rusuccurum XII",
+          "https://en.wikipedia.org/wiki/Dellys"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.1264,
+          36.8886
+        ]
+      },
+      "properties": {
+        "id": "station_iomnium",
+        "category": "mansio",
+        "name": "Iomnium",
+        "road": "Caesarea-Saldae Coastal Road (Mauretania Caesariensis)",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "Iomnium served as a Phoenician, Carthaginian, and Roman port on the site of modern Tigzirt, 12 miles east of Rusuccurum on the itinerary's coastal road. The town sat in what became the wilaya of Tizi Ouzou, in the coastal foothills of Kabylia. Roman-era remains at Tigzirt include a basilica that was later reused as a Byzantine and medieval church.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Mauretania Caesariensis coastal route: Rusuccurum-Iomnium XII",
+          "https://en.wikipedia.org/wiki/Iomnium"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4167,
+          36.9
+        ]
+      },
+      "properties": {
+        "id": "station_rusazus",
+        "category": "mansio",
+        "name": "Rusazis",
+        "road": "Caesarea-Saldae Coastal Road (Mauretania Caesariensis)",
+        "distance_from_previous_mp": 18,
+        "identified": true,
+        "notes": "Rusazus stood near Cape Corbelin and was refounded as a Roman colony under Augustus, taking the title Rusazus Colonia Augusti. Excavations at modern Azeffoun have uncovered a necropolis, baths, temples, and Roman embankments along the shore. The Antonine Itinerary placed it 18 miles past Iomnium and 38 miles short of Saldae.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Mauretania Caesariensis coastal route: Iomnium-Rusazis XVIII",
+          "https://en.wikipedia.org/wiki/Rusazus"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0842,
+          36.7525
+        ]
+      },
+      "properties": {
+        "id": "station_saldae",
+        "category": "mansio",
+        "name": "Saldae",
+        "road": "Caesarea-Saldae Coastal Road (Mauretania Caesariensis)",
+        "distance_from_previous_mp": 38,
+        "identified": true,
+        "notes": "Saldae began as a Numidian and Punic port before Vespasian settled a colony of army veterans there, making it one of the province's key harbors. The Antonine Itinerary recorded two ways to reach it from Rusuccurum: the direct coastal road through Rusazus at 38 miles, and a longer inland road through Tigisi, Bidil, and Tubusuptus. Modern Béjaïa retains its role as the region's main port on the Gulf of Béjaïa.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Mauretania Caesariensis coastal route: Rusazis-Saldis XXXVIII",
+          "https://en.wikipedia.org/wiki/Bejaia"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.0566,
+          36.8771
+        ]
+      },
+      "properties": {
+        "id": "station_tigisi_mauretania",
+        "category": "mansio",
+        "name": "Tigisi",
+        "road": "Rusuccurum-Saldae Interior Road (Mauretania Caesariensis)",
+        "distance_from_previous_mp": 12,
+        "identified": false,
+        "notes": "Tigisi opened the inland alternate route from Rusuccurum to Saldae, 12 miles inland from the coast at Dellys. Later sources place its ruins somewhere between Dellys and Taourga, in the mountainous Kabylia interior, though no site has been firmly excavated under the name. This point marks its position along the itinerary's mileage chain rather than a fixed ruin.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Rusuccurum-Saldis interior route: Rusuccurum-Tigisi XII",
+          "https://en.wikipedia.org/wiki/Tigisis_in_Mauretania"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3751,
+          36.7926
+        ]
+      },
+      "properties": {
+        "id": "station_bidil",
+        "category": "mansio",
+        "name": "Bidil",
+        "road": "Rusuccurum-Saldae Interior Road (Mauretania Caesariensis)",
+        "distance_from_previous_mp": 27,
+        "identified": false,
+        "notes": "Bidil held municipium rank and marked the longest single stage of the inland Rusuccurum-Saldae road, 27 miles past Tigisi through the Kabylia hills. No excavated ruins have been matched to the name, so its position here follows the itinerary's mileage total toward Tubusuptus. The road cut south from the coast before rejoining the Soummam valley near Saldae.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Rusuccurum-Saldis interior route: Tigisi-Bidil XXVII"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8462,
+          36.6676
+        ]
+      },
+      "properties": {
+        "id": "station_tubusuptus",
+        "category": "mansio",
+        "name": "Tubusuptus",
+        "road": "Rusuccurum-Saldae Interior Road (Mauretania Caesariensis)",
+        "distance_from_previous_mp": 40,
+        "identified": true,
+        "notes": "Tubusuctu carried the title Colonia Iulia Augusta Legionis VII, founded by Augustus for army veterans and known in antiquity for its olive oil. The site sits on the left bank of the Soummam River near modern El Kseur, where excavators have documented baths and a set of fifteen interconnected cistern basins. The Antonine Itinerary placed it 40 miles past Bidil and 18 miles short of Saldae on the inland road.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Rusuccurum-Saldis interior route: Bidil-Tubusuptus XL",
+          "https://en.wikipedia.org/wiki/Tubusuctu"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.4333,
+          36.1333
+        ]
+      },
+      "properties": {
+        "id": "station_rapidum",
+        "category": "mansio",
+        "name": "Rapidum",
+        "road": "Auzia-Caesarea Road (Mauretania Caesariensis-Numidia)",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "Rapidum began as a military fort built between Castellum Tingitanum and Auzia to secure Rome's hold on the interior, then grew into a civilian municipium under Hadrian along the road called the Nova Praetentura. Inscriptions found at modern Sour Djouab confirm both the ancient name and the town's municipal rank. The Antonine Itinerary set it 16 miles east of Auzia on the road running to Caesarea.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Auzia-Caesaream route: Auzia-Rapidi XVI",
+          "https://en.wikipedia.org/wiki/Rapidum"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.1438,
+          36.2437
+        ]
+      },
+      "properties": {
+        "id": "station_tiranadi",
+        "category": "mansio",
+        "name": "Tiranadi",
+        "road": "Auzia-Caesarea Road (Mauretania Caesariensis-Numidia)",
+        "distance_from_previous_mp": 25,
+        "identified": false,
+        "notes": "Tiranadi marked a 25-mile stage on the interior road linking Rapidum to Caesarea, one of the longer legs on that route. The Antonine Itinerary preserves only its name and its distances to its neighbors, with no ruins confirmed under the name. Its position here follows the mileage chain between Rapidum and Caput Cilani.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Auzia-Caesaream route: Rapidi-Tiranadi XXV"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8543,
+          36.3541
+        ]
+      },
+      "properties": {
+        "id": "station_caput_cilani",
+        "category": "mansio",
+        "name": "Caput Cilani",
+        "road": "Auzia-Caesarea Road (Mauretania Caesariensis-Numidia)",
+        "distance_from_previous_mp": 25,
+        "identified": false,
+        "notes": "Caput Cilani followed Tiranadi after another 25-mile stretch on the interior road through the Tell Atlas foothills toward Caesarea. No excavated site has been matched to the name, so this point splits the itinerary's mileage between Tiranadi and Sufasar. The stage fell roughly midway along the full 123-mile run from Auzia to the provincial capital.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Auzia-Caesaream route: Tiranadi-Caput Cilani XXV"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6691,
+          36.4247
+        ]
+      },
+      "properties": {
+        "id": "station_sufasar",
+        "category": "mansio",
+        "name": "Sufasar",
+        "road": "Auzia-Caesarea Road (Mauretania Caesariensis-Numidia)",
+        "distance_from_previous_mp": 16,
+        "identified": false,
+        "notes": "Sufasar later became the seat of a bishopric under the Metropolitan of Caesarea Mauretaniae, though its Roman-era location has not been pinned down with confidence. The Antonine Itinerary set it 16 miles past Caput Cilani and 16 miles short of the station called Aquae. Its position here follows the itinerary's mileage chain toward Caesarea rather than a confirmed excavation.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Auzia-Caesaream route: Caput Cilani-Sufasar XVI",
+          "https://en.wikipedia.org/wiki/Sufasar"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4837,
+          36.4955
+        ]
+      },
+      "properties": {
+        "id": "station_aquae_caesariensis",
+        "category": "mansio",
+        "name": "Aquae",
+        "road": "Auzia-Caesarea Road (Mauretania Caesariensis-Numidia)",
+        "distance_from_previous_mp": 16,
+        "identified": false,
+        "notes": "Aquae marked the final stage before Caesarea on the interior road from Auzia, sitting 16 miles past Sufasar and 25 miles short of the provincial capital. The name points to a thermal spring, a naming pattern common to Roman waypoints across the hot-spring-rich Tell Atlas region. No excavated site has been confirmed under this specific name, so its position here follows the itinerary's mileage chain.",
+        "sources": [
+          "Itin. Ant. (Cuntz ed.), Auzia-Caesaream route: Sufasar-Aquae XVI"
+        ],
+        "confidence": "low"
+      }
     }
   ]
 }
