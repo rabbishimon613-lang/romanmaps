@@ -23375,6 +23375,305 @@
         ],
         "confidence": "low"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.1629,
+          35.298
+        ]
+      },
+      "properties": {
+        "id": "station_knossos_creta",
+        "category": "mansio",
+        "name": "Knossos",
+        "road": "Gortyn-Knossos-Lyttos Road",
+        "distance_from_previous_mp": 29,
+        "identified": true,
+        "notes": "This stop marked the Roman road's crossing point at Knossos, the old Minoan capital refounded as a Roman colony and the first major hub on the route north from Gortyn.",
+        "sources": [
+          "Tab. Peut. (Insula Cretica)",
+          "Pazarli, Livieratos & Boutoura, 'Road network of Crete in Tabula Peutingeriana', e-Perimetron 2(4) 2007, 245-260",
+          "https://pleiades.stoa.org/places/238779098"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.372,
+          35.318
+        ]
+      },
+      "properties": {
+        "id": "station_chersonesos_creta",
+        "category": "mansio",
+        "name": "Chersonesos",
+        "road": "Gortyn-Knossos-Lyttos Road",
+        "distance_from_previous_mp": 17,
+        "identified": true,
+        "notes": "This coastal station served as the harbor of Lyttos on Crete's north shore, carrying the sea traffic that fed the interior road back toward Gortyn.",
+        "sources": [
+          "Tab. Peut. (Insula Cretica)",
+          "Pazarli, Livieratos & Boutoura 2007, e-Perimetron 2(4), 245-260",
+          "https://explorecrete.com/hersonissos/EN-Hersonissos-history.html"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.313,
+          35.165
+        ]
+      },
+      "properties": {
+        "id": "station_lyttos_creta",
+        "category": "mansio",
+        "name": "Lyttos",
+        "road": "Gortyn-Knossos-Lyttos Road",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "This station covered Lyttos, a powerful Dorian city whose long rivalry with Knossos made it one of Crete's key inland road hubs under Roman rule.",
+        "sources": [
+          "Tab. Peut. (Insula Cretica)",
+          "Pazarli, Livieratos & Boutoura 2007, e-Perimetron 2(4), 245-260",
+          "https://en.wikipedia.org/wiki/Lyctus"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.3536,
+          35.1075
+        ]
+      },
+      "properties": {
+        "id": "station_arkades_creta",
+        "category": "mansio",
+        "name": "Arkades",
+        "road": "Lyttos-Arkades-Biannos Road",
+        "distance_from_previous_mp": 16,
+        "identified": true,
+        "notes": "This stop served the hill town of Arkades, a stage on the road running east from Lyttos toward the Hierapytna coast.",
+        "sources": [
+          "Tab. Peut. (Insula Cretica)",
+          "Pazarli, Livieratos & Boutoura 2007, e-Perimetron 2(4), 245-260",
+          "https://topostext.org/place/351253PArk"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.4067,
+          35.0517
+        ]
+      },
+      "properties": {
+        "id": "station_biannos_creta",
+        "category": "mansio",
+        "name": "Biannos",
+        "road": "Lyttos-Arkades-Biannos Road",
+        "distance_from_previous_mp": 29,
+        "identified": true,
+        "notes": "This station covered Biannos, an inland town whose position between Arkades and Hierapytna made it a natural overnight stop on the eastern crossing of Crete.",
+        "sources": [
+          "Tab. Peut. (Insula Cretica)",
+          "Pazarli, Livieratos & Boutoura 2007, e-Perimetron 2(4), 245-260",
+          "https://topostext.org/place/351254PBia"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.2093,
+          35.0075
+        ]
+      },
+      "properties": {
+        "id": "station_inatos_creta",
+        "category": "mansio",
+        "name": "Inatos",
+        "road": "Gortyn-Inatos-Hierapytna Road",
+        "distance_from_previous_mp": 24,
+        "identified": true,
+        "notes": "This south-coast stop marked Inatos, a sanctuary town sacred to the birth-goddess Eileithyia and a fixed waypoint on the road linking Gortyn to Hierapytna.",
+        "sources": [
+          "Tab. Peut.: Inatos set XXIIII m.p. from the preceding coastal station, per Smith, Dictionary of Greek and Roman Geography s.v. Inatus",
+          "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry=inatus-geo",
+          "https://en.wikipedia.org/wiki/Inatus"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.7388,
+          35.0095
+        ]
+      },
+      "properties": {
+        "id": "station_hierapytna_creta",
+        "category": "mansio",
+        "name": "Hierapytna",
+        "road": "Gortyn-Inatos-Hierapytna Road",
+        "distance_from_previous_mp": 32,
+        "identified": true,
+        "notes": "This station covered Hierapytna, the dominant city of eastern Crete and the terminus of the south-coast road from Gortyn, standing at the island's narrowest point.",
+        "sources": [
+          "Tab. Peut.: Inatos-Hierapytna XXXII m.p., per Smith, Dictionary of Greek and Roman Geography s.v. Inatus / Hierapytna",
+          "https://en.wikipedia.org/wiki/Hierapytna",
+          "https://pleiades.stoa.org/places/589807"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.8283,
+          34.9219
+        ]
+      },
+      "properties": {
+        "id": "station_lebena_creta",
+        "category": "mansio",
+        "name": "Lebena",
+        "road": "Gortyn-Lebena Road",
+        "distance_from_previous_mp": 11,
+        "identified": true,
+        "notes": "This port station served Lebena, Gortyn's main harbor on the Libyan Sea and home to a busy Asclepius sanctuary that drew visitors from across Crete and North Africa.",
+        "sources": [
+          "Strabo, Geography 10.4.11 (Gortyn 90 stadia from Lebena)",
+          "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/10d*.html",
+          "https://www.trismegistos.org/place/11889"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.8064,
+          34.9139
+        ]
+      },
+      "properties": {
+        "id": "station_lasea_creta",
+        "category": "mansio",
+        "name": "Lasea",
+        "road": "Gortyn-Lasaia Road",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "This stop covered Lasea, a small south-coast port next to the bay later known as Fair Havens and one of Gortyn's two outlets to the Libyan Sea.",
+        "sources": [
+          "Tab. Peut. (Insula Cretica), Pazarli, Livieratos & Boutoura 2007, e-Perimetron 2(4), 245-260",
+          "https://en.wikipedia.org/wiki/Lasaea",
+          "https://pleiades.stoa.org/places/589834"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.8138,
+          35.0512
+        ]
+      },
+      "properties": {
+        "id": "station_phaistos_creta",
+        "category": "mansio",
+        "name": "Phaistos",
+        "road": "Gortyn-Phaistos-Matala Road",
+        "distance_from_previous_mp": 9,
+        "identified": false,
+        "notes": "This waypoint sat at Phaistos, the old Minoan palace town whose hill commands the only practical route between Gortyn and its western harbor at Matala.",
+        "sources": [
+          "Strabo, Geography 10.4.11 (Gortyn-Matalum 130 stadia total; Phaistos position interpolated along the route)",
+          "https://topostext.org/place/351248PPha"
+        ],
+        "confidence": "low"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7494,
+          34.9925
+        ]
+      },
+      "properties": {
+        "id": "station_matala_creta",
+        "category": "mansio",
+        "name": "Matalum",
+        "road": "Gortyn-Phaistos-Matala Road",
+        "distance_from_previous_mp": 7,
+        "identified": true,
+        "notes": "This port station served Matalum, Gortyn's western harbor on the Libyan Sea and the endpoint of the road running down from the Messara plain.",
+        "sources": [
+          "Strabo, Geography 10.4.11 (Gortyn 130 stadia from Matalum)",
+          "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/10d*.html",
+          "https://pleiades.stoa.org/places/589925"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.147,
+          35.343
+        ]
+      },
+      "properties": {
+        "id": "station_heracleium_creta",
+        "category": "mansio",
+        "name": "Heracleium",
+        "road": "Knossos-Heracleium Road",
+        "distance_from_previous_mp": 3,
+        "identified": true,
+        "notes": "This short spur linked Knossos to its own port at Heracleium on the north coast, the site later built over by the modern city of Heraklion.",
+        "sources": [
+          "Stadiasmus Maris Magni (Heracleium 20 stadia from Knossos)",
+          "https://en.wikipedia.org/wiki/Heracleium",
+          "https://www.cambridge.org/core/journals/annual-of-the-british-school-at-athens/article/abs/four-inscriptions-from-greater-knossos-and-the-road-to-its-port-at-heraklion-crete/B01DAB8D5B9780AD96EDDF9771DCE41E"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
