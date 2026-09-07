@@ -22720,6 +22720,204 @@
         ],
         "confidence": "medium"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.306644,
+          32.35043
+        ]
+      },
+      "properties": {
+        "id": "station_adriane_hadrianopolis_cyrenaica",
+        "category": "mansio",
+        "name": "Adriane (later Hadrianopolis, modern Driana)",
+        "road": "Cyrenaica Coastal Road (Berenice-Taucheira-Ptolemais-Apollonia-Cyrene)",
+        "distance_from_previous_mp": 30,
+        "identified": true,
+        "notes": "A coastal waystation between Berenice and Taucheira, listed as Adriane 30 Roman miles from Berenice in the Antonine Itinerary. Identified with modern Driana. The Peutinger Table instead calls it Hadrianopolis, part of a later Hexapolis tradition after its promotion under Hadrian - since Hadrian only became emperor on 11 August 117 CE, that city status and name are anachronistic for this snapshot date, though the road stop itself already existed.",
+        "sources": [
+          "Antonine Itinerary (Itinerarium Antonini) 67",
+          "Tabula Peutingeriana, Segment VIII (Cyrenaica/Pentapolis list)",
+          "Trismegistos Place 10968, 'Hadrianopolis (Driana)'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.40417,
+          32.48306
+        ]
+      },
+      "properties": {
+        "id": "station_semeros_cyrenaica",
+        "category": "mansio",
+        "name": "Semeros (near modern Marawa)",
+        "road": "Cyrenaica Interior Road (Ptolemais-Semeros-Lasamices-Cyrene)",
+        "distance_from_previous_mp": 32,
+        "identified": true,
+        "notes": "An inland waystation on the alternate, more southerly Antonine Itinerary route linking Ptolemais to Cyrene through the interior rather than along the coast. Scholarly reconstruction identifies it with modern Marawa. The Itinerary's numerals for this whole Ptolemais-Cyrene stretch are noted by scholars as textually corrupt, so treat this figure as approximate.",
+        "sources": [
+          "Antonine Itinerary 67",
+          "D.J. Mattingly, Barrington Atlas Map 38 'Cyrene' Directory (Princeton, 1996)",
+          "Wikipedia, 'Marawa, Libya'"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.71583,
+          32.59028
+        ]
+      },
+      "properties": {
+        "id": "station_lasamices_cyrenaica",
+        "category": "mansio",
+        "name": "Lasamices (modern Slonta)",
+        "road": "Cyrenaica Interior Road (Ptolemais-Semeros-Lasamices-Cyrene)",
+        "distance_from_previous_mp": 26,
+        "identified": true,
+        "notes": "Cyrene's closest rural neighbor to the south on the interior road from Ptolemais. Identified with modern Slonta, home to a well-known rock-cut Libyan shrine. Synesius of Cyrene owned a rural estate in this immediate area a century after this snapshot, referencing an already-established settlement.",
+        "sources": [
+          "Antonine Itinerary 67",
+          "R.G. Goodchild, 'Roman Milestones in Cyrenaica', Papers of the British School at Rome 18 (1950)",
+          "Livius.org, 'Slonta'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.7551,
+          32.7627
+        ]
+      },
+      "properties": {
+        "id": "station_balagrae_cyrenaica",
+        "category": "mansio",
+        "name": "Balagrae (modern Al Bayda)",
+        "road": "Cyrenaica Interior Road (Ptolemais-Caenopolis-Balagrae-Cyrene)",
+        "distance_from_previous_mp": 12,
+        "identified": true,
+        "notes": "A Cyrenaican town famous for its sanctuary of Asclepius and as the birthplace of the 5th-century bishop Synesius of Cyrene. The Peutinger Table places it 12 Roman miles from Cyrene on the main road from Ptolemais, a figure Goodchild confirmed on the ground by tracing the surviving rock-cut road to Cyrene's south gate.",
+        "sources": [
+          "Tabula Peutingeriana, Segment VIII",
+          "R.G. Goodchild, 'Roman Milestones in Cyrenaica', PBSR 18 (1950)",
+          "Synesius of Cyrene, Epistulae"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.6267,
+          32.7519
+        ]
+      },
+      "properties": {
+        "id": "station_messa_artamis_cyrenaica",
+        "category": "mansio",
+        "name": "Messa (Artamis Kome)",
+        "road": "Cyrenaica Interior Road (Ptolemais-Caenopolis-Balagrae-Messa-Cyrene)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "The point where the Ptolemais-Cyrene road climbs onto the second, higher plateau of the Jabal Akhdar, west of Balagrae. A Greek-period rural settlement here continued supplying Cyrene with water and arable land into the Roman period. No ancient itinerary numeral survives for this specific leg.",
+        "sources": [
+          "R.G. Goodchild's description of the Ptolemais-Cyrene road reaching the plateau at Messa",
+          "Academic source on rural settlements of Cyrenaica giving Artamis Kome/Messa coordinates"
+        ],
+        "confidence": "medium"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.14306,
+          32.77889
+        ]
+      },
+      "properties": {
+        "id": "station_limnias_cyrenaica",
+        "category": "statio",
+        "name": "Limnias (modern Lamluda)",
+        "road": "Cyrenaica Coastal Road (Cyrene-Limnias-Darnis)",
+        "distance_from_previous_mp": 25,
+        "identified": true,
+        "notes": "A fortified post on the Cyrenaican frontier east of Cyrene, on the road continuing toward Darnis and ultimately Egypt. Identified with modern Lamluda, where a Roman fort has been excavated. The Antonine Itinerary places it 25 Roman miles east of Cyrene, roughly 21 miles before Darnis.",
+        "sources": [
+          "Antonine Itinerary 67",
+          "O. Menozzi, 'Limes Cyrenaicus: A Pluri-Stratified System' (2021)",
+          "Wikipedia, 'Lamluda'"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.1803,
+          32.883
+        ]
+      },
+      "properties": {
+        "id": "station_naustathmus_cyrenaica",
+        "category": "statio",
+        "name": "Naustathmus (modern Ras al-Hilal)",
+        "road": "Cyrenaica Coastal Road (Apollonia-Naustathmus-Erythron toward Darnis)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A promontory and anchorage - a 'naval station' - on the coast east of Apollonia, marking where the direct coast road toward Marmarica and Egypt diverged from an inland route into the Green Mountains. Identified with modern Ras al-Hilal. No ancient itinerary gives a Roman-mile figure for this leg.",
+        "sources": [
+          "Livius.org, 'Naustathmus (Ras al-Hillal)'",
+          "Strabo, Geography 17.3.20",
+          "Tabula Peutingeriana"
+        ],
+        "confidence": "high"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.267,
+          32.867
+        ]
+      },
+      "properties": {
+        "id": "station_erythron_cyrenaica",
+        "category": "statio",
+        "name": "Erythron (modern Al-Athrun)",
+        "road": "Cyrenaica Coastal Road (Apollonia-Naustathmus-Erythron toward Darnis)",
+        "distance_from_previous_mp": null,
+        "identified": true,
+        "notes": "A coastal settlement east of Naustathmus on the same road continuing toward Darnis, its name derived from the reddish local soil. Identified with modern Al-Athrun. No ancient itinerary numeral survives for this leg.",
+        "sources": [
+          "Wikipedia, 'Erythrum' and 'Al-Athrun'",
+          "Ptolemy, Geography 4.4"
+        ],
+        "confidence": "medium"
+      }
     }
   ]
 }
